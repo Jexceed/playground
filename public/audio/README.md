@@ -85,10 +85,10 @@ pnpm generate:f5-voices -- --ref-audio /path/to/ref.wav --ref-text "参考音频
 Run this to generate optional local mp3 segments for long prompt lines:
 
 ```bash
-pnpm generate:voice-segments -- --threshold 34 --voice zh-CN-XiaoyiNeural --rate -10% --pitch +4Hz --quiet --retries 8 --python /path/to/python-with-edge-tts
+pnpm generate:voice-segments -- --threshold 34 --voice zh-CN-XiaoxiaoNeural --rate -12% --pitch +2Hz --quiet --retries 8 --python /path/to/python-with-edge-tts
 ```
 
-This writes `segmentEntries` into `public/audio/voice/manifest.json`. The main 1495-entry manifest remains unchanged.
+This writes `segmentEntries` into `public/audio/voice/manifest.json`. The main manifest entries remain unchanged.
 
 Use `--limit 80` only when generating a small audition pack. Useful alternatives on this Mac include:
 

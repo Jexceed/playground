@@ -237,10 +237,12 @@ const phraseMap: Record<string, TokenMeta> = {
   "不能重合": { label: "不能重合", kind: "none" },
   "能确定": { label: "能确定", kind: "certain" },
   "还不能确定": { label: "还不能确定", kind: "notYet" },
+  "证据已经够了": { label: "证据已经够了", kind: "certain" },
+  "还需要更多线索": { label: "还需要更多线索", kind: "notYet" },
+  "不用再看线索": { label: "不用再看线索", kind: "none" },
+  "不用再找线索": { label: "不用再找线索", kind: "none" },
   "一定是小狗": { label: "一定是小狗", kind: "dog" },
   "一定是小猫": { label: "一定是小猫", kind: "cat" },
-  "一定不是小狗": { label: "一定不是小狗", kind: "notYet" },
-  "一定不是小猫": { label: "一定不是小猫", kind: "notYet" },
 };
 
 const clueRules: Array<[RegExp, TokenMeta]> = [

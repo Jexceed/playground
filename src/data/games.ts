@@ -440,9 +440,9 @@ function makeCountingRounds(): RoundInput[] {
     const token = allCountTokens[(count - 1) % allCountTokens.length];
     rounds.push({
       level: count <= 3 ? "L1" : count <= 6 ? "L2" : "L3",
-      prompt: `数一数有几${unitOf(token)}${countNames[token]}？`,
+      prompt: `请数一数，一共有几${unitOf(token)}${countNames[token]}？`,
       instruction: count <= 5 ? "用手指点着数，再选答案。" : "数慢一点，每个只数一次。",
-      visualGroups: [{ label: `数一数有几${unitOf(token)}${countNames[token]}`, items: repeat(token, count) }],
+      visualGroups: [{ label: `一共有几${unitOf(token)}${countNames[token]}`, items: repeat(token, count) }],
       choices: numberChoices(count, 1, 10),
       answer: String(count),
       success: `对，最后数到 ${count}，所以一共有 ${count} 个。`,
@@ -493,8 +493,8 @@ function makeSubitizeRounds(): RoundInput[] {
   ];
   return layouts.map((layout) => ({
     level: layout.count <= 3 ? "L2" : layout.count <= 5 ? "L3" : "L4",
-    prompt: "这一眼有几个？",
-    instruction: "先看整体，不急着一个个点。",
+    prompt: "看一眼，这里有几个？",
+    instruction: "图案会遮住，先记整体形状。",
     visualGroups: [{ label: "看一眼", items: subitizePattern(layout.count, layout.token, layout.variant), layout: "subitize" }],
     choices: numberChoices(layout.count, 1, 6),
     answer: String(layout.count),
@@ -851,8 +851,8 @@ function makeSorterRounds(): RoundInput[] {
   const twoConditionCases = [
     { prompt: "规则是红色，而且要圆形。选哪一个？", items: ["🔴", "🟦", "🟢"], answer: "🔴", success: "红色圆片同时满足红色和圆形。" },
     { prompt: "规则是蓝色，而且要方形。选哪一个？", items: ["🔵", "🟦", "🟡"], answer: "🟦", success: "蓝色方块同时满足蓝色和方形。" },
-    { prompt: "规则是圆形，但不要红色。选哪一个？", items: ["🔴", "🔵", "🟦"], answer: "🔵", success: "蓝色圆片是圆形，也不是红色。" },
-    { prompt: "规则是方形，但不要蓝色。选哪一个？", items: ["🟦", "⬜", "🟡"], answer: "⬜", success: "空位这张是方形，也不是蓝色。" },
+    { prompt: "规则是蓝色，而且要圆形。选哪一个？", items: ["🔴", "🔵", "🟦"], answer: "🔵", success: "蓝色圆片同时满足蓝色和圆形。" },
+    { prompt: "规则是黄色，而且要圆形。选哪一个？", items: ["🟦", "⬜", "🟡"], answer: "🟡", success: "黄色圆片同时满足黄色和圆形。" },
   ];
   twoConditionCases.forEach((item) => {
     rounds.push({
@@ -1215,7 +1215,7 @@ function makeStoryEvidenceRounds(): RoundInput[] {
       prompt: "只知道“小猫在厨房”，能确定是小猫吃了吗？",
       instruction: "有些线索不够强，不能马上确定。",
       sceneImage: storyScenes.catKitchenWeakClue,
-      choices: [{ label: "一定是小猫", value: "cat-certain" }, { label: "还不能确定", value: "not-yet" }, { label: "一定不是小猫", value: "cat-not" }],
+      choices: [{ label: "证据已经够了", value: "enough" }, { label: "还需要更多线索", value: "not-yet" }, { label: "不用再看线索", value: "skip-clues" }],
       answer: "not-yet",
       success: "只在厨房还不够，需要更多证据。",
       retry: "在厨房只是线索，还不是足够的证据。",
@@ -1266,7 +1266,7 @@ function makeStoryEvidenceRounds(): RoundInput[] {
       prompt: "只知道“小狗在房间里”，能确定是小狗弄乱玩具吗？",
       instruction: "一个线索不一定够。",
       sceneImage: storyScenes.dogRoomWeakClue,
-      choices: [{ label: "一定是小狗", value: "dog-certain" }, { label: "还不能确定", value: "not-yet" }, { label: "一定不是小狗", value: "dog-not" }],
+      choices: [{ label: "证据已经够了", value: "enough" }, { label: "还需要更多线索", value: "not-yet" }, { label: "不用再看线索", value: "skip-clues" }],
       answer: "not-yet",
       success: "只在房间里还不够，需要更多线索。",
       retry: "在房间里只是线索，不是足够证据。",
@@ -1384,7 +1384,7 @@ function makeConditionDetectiveRounds(): RoundInput[] {
       instruction: "线索不够强时，不要急着下结论。",
       difficultyNote: "弱证据判断：出现地点不是直接证据。",
       sceneImage: scenes.catKitchenWeakClue,
-      choices: [{ label: "还不能确定", value: "not-yet" }, { label: "一定是小猫", value: "cat" }, { label: "一定不是小猫", value: "not-cat" }],
+      choices: [{ label: "还需要更多线索", value: "not-yet" }, { label: "证据已经够了", value: "enough" }, { label: "不用再看线索", value: "skip-clues" }],
       answer: "not-yet",
       success: "只知道在厨房还不够，还需要奶油、脚印这样的更强线索。",
       retry: "在同一个地方只是线索，不是足够证据。",
@@ -1423,7 +1423,7 @@ function makeConditionDetectiveRounds(): RoundInput[] {
       instruction: "要分清“可能”和“确定”。",
       difficultyNote: "证据不足：只有地点线索，不能推出行为一定发生。",
       sceneImage: scenes.dogRoomWeakClue,
-      choices: [{ label: "还不能确定", value: "not-yet" }, { label: "一定是小狗", value: "dog" }, { label: "一定不是小狗", value: "not-dog" }],
+      choices: [{ label: "还需要更多线索", value: "not-yet" }, { label: "证据已经够了", value: "enough" }, { label: "不用再看线索", value: "skip-clues" }],
       answer: "not-yet",
       success: "小狗在房间里只是可能，还缺更直接的线索。",
       retry: "在房间里不等于一定弄乱了玩具。",
@@ -1556,7 +1556,7 @@ function makeFixPlanRounds(): RoundInput[] {
       instruction: "地点线索不等于强证据。",
       difficultyNote: "结论过早修正：从确定改成还不能确定。",
       sceneImage: scenes.catKitchenWeakClue,
-      choices: [{ label: "还不能确定", value: "not-yet" }, { label: "一定是小猫", value: "cat" }, { label: "一定不是小猫", value: "not-cat" }],
+      choices: [{ label: "还需要更多线索", value: "not-yet" }, { label: "证据已经够了", value: "enough" }, { label: "不用再看线索", value: "skip-clues" }],
       answer: "not-yet",
       success: "错在太早下结论，只在厨房还不能确定。",
       retry: "还缺奶油、脚印这样的更强线索。",
@@ -1783,7 +1783,7 @@ function makePriorityChoiceRounds(): RoundInput[] {
       instruction: "证据不够时，先补线索。",
       difficultyNote: "证据不足优先：先补证据，再下结论。",
       sceneImage: scenes.dogRoomWeakClue,
-      choices: [{ label: "先找更多线索", value: "more-clues" }, { label: "直接说小狗弄乱", value: "dog-certain" }, { label: "直接说不是小狗", value: "not-dog" }],
+      choices: [{ label: "先找更多线索", value: "more-clues" }, { label: "直接说小狗弄乱", value: "dog-certain" }, { label: "不用再找线索", value: "skip-clues" }],
       answer: "more-clues",
       success: "证据还不够，先找更多线索，再下结论。",
       retry: "在房间里只是可能，还不能直接确定。",

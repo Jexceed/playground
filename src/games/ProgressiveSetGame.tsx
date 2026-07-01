@@ -26,6 +26,7 @@ export function ProgressiveSetGame({
   const [completedOnce, setCompletedOnce] = useState(false);
   const [voiceReady, setVoiceReady] = useState(false);
   const [memoryCovered, setMemoryCovered] = useState(false);
+  const [subitizeVisible, setSubitizeVisible] = useState(true);
 
   useEffect(() => {
     setRoundIndex(0);
@@ -34,6 +35,7 @@ export function ProgressiveSetGame({
     setRetryMessage(null);
     setCompletedOnce(false);
     setMemoryCovered(false);
+    setSubitizeVisible(true);
   }, [game.id]);
 
   useEffect(() => {
@@ -44,16 +46,24 @@ export function ProgressiveSetGame({
     setAnswered(false);
     setRetryMessage(null);
     setMemoryCovered(false);
+    setSubitizeVisible(true);
     setVoiceReady(true);
   }, [game.rounds.length, requestedRoundIndex, roundIndex]);
 
   const round = game.rounds[roundIndex];
   const isCorrect = answered && selected === round.answer;
   const isLastRound = roundIndex === game.rounds.length - 1;
+  const isSubitizeRound = game.id === "math-subitize-match";
 
   useEffect(() => {
     if (voiceReady) speak(joinVoiceLine(round.prompt, round.instruction));
   }, [round.id, round.instruction, round.prompt, voiceReady]);
+
+  useEffect(() => {
+    if (!isSubitizeRound || !subitizeVisible) return;
+    const timer = window.setTimeout(() => setSubitizeVisible(false), 1250);
+    return () => window.clearTimeout(timer);
+  }, [isSubitizeRound, round.id, subitizeVisible]);
 
   const completedTags = useMemo(
     () => Array.from(new Set(game.rounds.slice(0, roundIndex + (isCorrect ? 1 : 0)).flatMap((item) => item.abilityTags))),
@@ -107,6 +117,7 @@ export function ProgressiveSetGame({
     setAnswered(false);
     setRetryMessage(null);
     setMemoryCovered(false);
+    setSubitizeVisible(true);
   }
 
   function resetGame() {
@@ -117,6 +128,7 @@ export function ProgressiveSetGame({
     setRetryMessage(null);
     setCompletedOnce(false);
     setMemoryCovered(false);
+    setSubitizeVisible(true);
   }
 
   return (
@@ -150,11 +162,20 @@ export function ProgressiveSetGame({
         gameId={game.id}
         memoryCovered={memoryCovered}
         round={round}
+        subitizeVisible={!isSubitizeRound || subitizeVisible}
         onCoverMemory={() => {
           setMemoryCovered(true);
           playTone("notice");
           speak("遮住啦。现在想一想，再选答案。");
         }}
+        onSubitizePeek={
+          isSubitizeRound
+            ? () => {
+                setSubitizeVisible(true);
+                playTone("notice");
+              }
+            : undefined
+        }
       />
 
       <div className="choice-grid answer-grid">
@@ -279,13 +300,17 @@ function labelForVoice(label: string) {
 function RoundBoard({
   gameId,
   memoryCovered,
+  subitizeVisible,
   round,
   onCoverMemory,
+  onSubitizePeek,
 }: {
   gameId: string;
   memoryCovered: boolean;
+  subitizeVisible: boolean;
   round: GameRound;
   onCoverMemory: () => void;
+  onSubitizePeek?: () => void;
 }) {
   const scene = sceneForGame(gameId);
   const boardClasses = [
@@ -324,7 +349,9 @@ function RoundBoard({
           {round.visualGroups.map((group) => (
             <div className="visual-group" key={group.label}>
               <strong>{group.label}</strong>
-              {group.layout === "subitize" ? <SubitizeFrame items={group.items} /> : (
+              {group.layout === "subitize" ? (
+                <SubitizeFrame items={group.items} visible={subitizeVisible} onPeek={onSubitizePeek} />
+              ) : (
                 <div className="object-row">
                   {group.items.map((item, index) => (
                     <VisualToken key={`${item}-${index}`} value={item} />
@@ -339,21 +366,28 @@ function RoundBoard({
   );
 }
 
-function SubitizeFrame({ items }: { items: string[] }) {
+function SubitizeFrame({ items, visible, onPeek }: { items: string[]; visible: boolean; onPeek?: () => void }) {
   return (
-    <div className="subitize-frame" aria-label="一眼看数量的点阵">
-      {items.map((item, index) => {
-        const meta = item ? visualMetaFor(item) : null;
-        return (
-          <div className={`subitize-cell ${item ? "" : "subitize-cell-empty"}`} key={`${item || "empty"}-${index}`}>
-            {item && (
-              <button className="subitize-dot" type="button" onClick={() => speak(meta?.label ?? item)} aria-label={meta?.label ?? item}>
-                {meta ? <VisualGlyph kind={meta.kind} small /> : <span aria-hidden="true">{item}</span>}
-              </button>
-            )}
-          </div>
-        );
-      })}
+    <div className={`subitize-peek ${visible ? "" : "covered"}`}>
+      <div className="subitize-frame" aria-label="一眼看数量的点阵">
+        {items.map((item, index) => {
+          const meta = item ? visualMetaFor(item) : null;
+          return (
+            <div className={`subitize-cell ${item ? "" : "subitize-cell-empty"}`} key={`${item || "empty"}-${index}`}>
+              {item && visible && (
+                <button className="subitize-dot" type="button" onClick={() => speak(meta?.label ?? item)} aria-label={meta?.label ?? item}>
+                  {meta ? <VisualGlyph kind={meta.kind} small /> : <span aria-hidden="true">{item}</span>}
+                </button>
+              )}
+            </div>
+          );
+        })}
+      </div>
+      {!visible && onPeek && (
+        <button className="subitize-peek-button" type="button" onClick={onPeek}>
+          再看一眼
+        </button>
+      )}
     </div>
   );
 }

@@ -863,6 +863,12 @@ button:focus-visible {
   text-align: center;
 }
 
+.subitize-peek {
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+}
+
 .subitize-frame {
   display: grid;
   grid-template-columns: repeat(3, 62px);
@@ -886,6 +892,26 @@ button:focus-visible {
 .subitize-cell-empty {
   border-radius: 999px;
   background: rgba(231, 222, 207, 0.34);
+}
+
+.subitize-peek.covered .subitize-cell {
+  border-radius: 999px;
+  background: repeating-linear-gradient(135deg, #eee3d1 0 8px, #f8f0df 8px 16px);
+}
+
+.subitize-peek.covered .subitize-cell-empty {
+  background: rgba(231, 222, 207, 0.34);
+}
+
+.subitize-peek-button {
+  min-height: 42px;
+  padding: 8px 14px;
+  border: 2px solid #d99b38;
+  border-radius: 8px;
+  color: #5b3b11;
+  background: #fff0c8;
+  font-weight: 950;
+  cursor: pointer;
 }
 
 .subitize-dot {

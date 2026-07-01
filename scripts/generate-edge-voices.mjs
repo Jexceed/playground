@@ -4,9 +4,9 @@ import { tmpdir } from "node:os";
 import { spawnFile } from "./lib/spawn-file.mjs";
 
 const args = parseArgs(process.argv.slice(2));
-const voice = args.voice ?? "zh-CN-XiaoyiNeural";
-const rate = args.rate ?? "-10%";
-const pitch = args.pitch ?? "+4Hz";
+const voice = args.voice ?? "zh-CN-XiaoxiaoNeural";
+const rate = args.rate ?? "-12%";
+const pitch = args.pitch ?? "+2Hz";
 const limit = args.limit ? Number(args.limit) : Number.POSITIVE_INFINITY;
 const includeParent = args["include-parent"] !== "false";
 const quiet = Boolean(args.quiet);

@@ -46,6 +46,9 @@ const forbiddenTextPatterns = [
   { pattern: /数一数小路/, reason: "the counting game title should stay concise" },
   { pattern: /草莓篮/, reason: "do not mention baskets when no basket is shown" },
   { pattern: /不是[红蓝绿黄]色的/, reason: "use clearer comparison wording for young children" },
+  { pattern: /但不要[红蓝绿黄]/, reason: "avoid negative color conditions for preschoolers" },
+  { pattern: /一定不是/, reason: "avoid abstract negative certainty choices" },
+  { pattern: /直接说不是/, reason: "avoid double-negative conclusion choices" },
 ];
 const counts = games.reduce(
   (acc, game) => {

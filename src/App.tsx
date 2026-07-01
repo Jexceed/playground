@@ -1,9 +1,9 @@
 import { Check, RotateCcw } from "lucide-react";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { games, worlds } from "./data/games";
 import { ProgressiveSetGame } from "./games/ProgressiveSetGame";
 import { addCompletion, addRoundCompletion, readProgress, saveProgress } from "./storage";
-import { speak } from "./speech";
+import { speak, warmVoiceManifest } from "./speech";
 import type { GameConfig, GameRound, ProgressLog, WorldId } from "./types";
 
 export function App() {
@@ -11,6 +11,10 @@ export function App() {
   const [selectedGameId, setSelectedGameId] = useState(games[0].id);
   const [requestedRoundIndex, setRequestedRoundIndex] = useState(0);
   const [progress, setProgress] = useState<ProgressLog>(() => readProgress());
+
+  useEffect(() => {
+    warmVoiceManifest();
+  }, []);
 
   const selectedGame = useMemo(
     () => games.find((game) => game.id === selectedGameId) ?? games[0],

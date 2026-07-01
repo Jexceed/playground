@@ -38,20 +38,20 @@ export async function speak(text: string, lang = "zh-CN") {
     const audio = new Audio(src);
     const run = speechRun;
     let fellBack = false;
-    const fallbackToSpeechSynthesis = () => {
+    const fallbackToSpeechSynthesis = (reason = "local-audio-failed") => {
       if (fellBack || run !== speechRun || !("speechSynthesis" in window)) return;
       fellBack = true;
-      recordSpeechFallback("local-audio-failed");
+      recordSpeechFallback(reason);
       recordSpeechSource("speechSynthesis");
       void speakChunks(splitSpeechText(clean), lang, run);
     };
     activeAudio = audio;
     audio.volume = 0.9;
-    audio.onerror = fallbackToSpeechSynthesis;
+    audio.onerror = () => fallbackToSpeechSynthesis(`local-audio-error:${audio.error?.code ?? "unknown"}`);
     try {
       await audio.play();
-    } catch {
-      fallbackToSpeechSynthesis();
+    } catch (error) {
+      fallbackToSpeechSynthesis(`local-audio-play:${error instanceof Error ? error.name : "unknown"}`);
     }
     return;
   }
@@ -67,6 +67,10 @@ export async function speak(text: string, lang = "zh-CN") {
 
   recordSpeechSource("tone");
   playTone(clean.includes("对") || clean.includes("完成") || clean.includes("成功") ? "success" : "notice");
+}
+
+export function warmVoiceManifest() {
+  void loadVoiceManifest();
 }
 
 async function loadVoiceManifest() {
