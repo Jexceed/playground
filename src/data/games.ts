@@ -475,27 +475,27 @@ function makeCountingRounds(): RoundInput[] {
 
 function makeSubitizeRounds(): RoundInput[] {
   const layouts = [
-    { count: 2, items: ["⭐", "⭐"], hint: "两个在一起" },
-    { count: 3, items: ["⭐", "⭐", "⭐"], hint: "三个像小三角" },
-    { count: 4, items: ["🍬", "🍬", "🍬", "🍬"], hint: "上面两个，下面两个" },
-    { count: 5, items: ["🟡", "🟡", "🟡", "🟡", "🟡"], hint: "四个角加中间一个" },
-    { count: 6, items: ["🟢", "🟢", "🟢", "🟢", "🟢", "🟢"], hint: "三和三合起来" },
-    { count: 2, items: ["🍓", "🍓"], hint: "两个并排" },
-    { count: 3, items: ["🍪", "🍪", "🍪"], hint: "一排三个" },
-    { count: 4, items: ["🍎", "🍎", "🍎", "🍎"], hint: "两排，每排两个" },
-    { count: 5, items: ["⭐", "⭐", "⭐", "⭐", "⭐"], hint: "先看四个，再加一个" },
-    { count: 6, items: ["🍬", "🍬", "🍬", "🍬", "🍬", "🍬"], hint: "两个三个合起来" },
-    { count: 4, items: ["🟦", "🟦", "🟦", "🟦"], hint: "像一个小方阵" },
-    { count: 5, items: ["🍊", "🍊", "🍊", "🍊", "🍊"], hint: "一排五个" },
-    { count: 6, items: ["🐟", "🐟", "🐟", "🐟", "🐟", "🐟"], hint: "五个再加一个" },
-    { count: 3, items: ["🐦", "🐦", "🐦"], hint: "两个加一个" },
-    { count: 4, items: ["🧱", "🧱", "🧱", "🧱"], hint: "上面两个，下面两个" },
+    { count: 2, token: "🟡", variant: "diagonal", hint: "斜着两个" },
+    { count: 3, token: "🟡", variant: "diagonal", hint: "斜线三个" },
+    { count: 4, token: "🔵", variant: "corners", hint: "四个角" },
+    { count: 5, token: "🟢", variant: "corners-center", hint: "四个角加中间一个" },
+    { count: 6, token: "🟣", variant: "columns", hint: "左边三个，右边三个" },
+    { count: 2, token: "🍓", variant: "diagonal", hint: "斜角两个" },
+    { count: 3, token: "🍪", variant: "triangle", hint: "像一个小三角" },
+    { count: 4, token: "🍎", variant: "corners", hint: "四个角" },
+    { count: 5, token: "⭐", variant: "corners-center", hint: "四个角加中间一个" },
+    { count: 6, token: "🍬", variant: "columns", hint: "两列，每列三个" },
+    { count: 4, token: "🟦", variant: "square", hint: "像一个小方阵" },
+    { count: 5, token: "🍊", variant: "x", hint: "像一个叉形" },
+    { count: 6, token: "🐟", variant: "rows", hint: "上面三个，下面三个" },
+    { count: 3, token: "🐦", variant: "triangle", hint: "像一个小三角" },
+    { count: 4, token: "🧱", variant: "square", hint: "两行两列" },
   ];
   return layouts.map((layout) => ({
     level: layout.count <= 3 ? "L2" : layout.count <= 5 ? "L3" : "L4",
     prompt: "你能一眼看出有几个吗？",
     instruction: layout.hint,
-    visualGroups: [{ label: "看一眼", items: layout.items }],
+    visualGroups: [{ label: "看一眼", items: subitizePattern(layout.count, layout.token, layout.variant), layout: "subitize" }],
     choices: numberChoices(layout.count, 1, 6),
     answer: String(layout.count),
     success: `是 ${layout.count} 个。${layout.hint}。`,
@@ -503,6 +503,21 @@ function makeSubitizeRounds(): RoundInput[] {
     parentPrompt: "问她：你看到了哪两小堆？它们合起来是几？",
     abilityTags: ["小数量辨认", "数量结构"],
   }));
+}
+
+function subitizePattern(count: number, token: string, variant: string) {
+  const patterns: Record<string, number[]> = {
+    diagonal: count === 2 ? [0, 8] : [0, 4, 8],
+    triangle: [1, 6, 8],
+    corners: [0, 2, 6, 8],
+    "corners-center": [0, 2, 4, 6, 8],
+    columns: [0, 2, 3, 5, 6, 8],
+    square: [0, 1, 3, 4],
+    x: [0, 2, 4, 6, 8],
+    rows: [0, 1, 2, 6, 7, 8],
+  };
+  const filled = new Set(patterns[variant] ?? Array.from({ length: count }, (_, index) => index));
+  return Array.from({ length: 9 }, (_, index) => (filled.has(index) ? token : ""));
 }
 
 function makeCompareRounds(): RoundInput[] {

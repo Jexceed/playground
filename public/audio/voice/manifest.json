@@ -1,18 +1,20 @@
 {
-  "generatedAt": "2026-07-01T16:51:30.117Z",
-  "provider": "mixed existing audio + macOS say fallback",
-  "voice": "Tingting",
-  "rate": 160,
-  "format": "wav",
-  "count": 1538,
-  "requestedCount": 1538,
+  "generatedAt": "2026-07-01T17:07:10.797Z",
+  "provider": "edge-tts Python package",
+  "voice": "zh-CN-XiaoyiNeural",
+  "rate": "-10%",
+  "pitch": "+4Hz",
+  "includeParent": true,
+  "format": "mp3",
+  "count": 1532,
+  "requestedCount": 1532,
   "failures": [],
   "entries": [
     {
       "id": "game-title-数一数",
       "kind": "game-title",
       "text": "数一数",
-      "src": "/audio/voice/zh-CN/macos-tingting/game-title-%E6%95%B0%E4%B8%80%E6%95%B0.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/game-title-%E6%95%B0%E4%B8%80%E6%95%B0.mp3"
     },
     {
       "id": "game-goal-建立一一对应-基数理解和-1-10-的数量感",
@@ -24,7 +26,7 @@
       "id": "prompt-数一数有几个草莓-用手指点着数-再选答案",
       "kind": "prompt",
       "text": "数一数有几个草莓？用手指点着数，再选答案。",
-      "src": "/audio/voice/zh-CN/macos-tingting/prompt-%E6%95%B0%E4%B8%80%E6%95%B0%E6%9C%89%E5%87%A0%E4%B8%AA%E8%8D%89%E8%8E%93-%E7%94%A8%E6%89%8B%E6%8C%87%E7%82%B9%E7%9D%80%E6%95%B0-%E5%86%8D%E9%80%89%E7%AD%94%E6%A1%88.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/prompt-%E6%95%B0%E4%B8%80%E6%95%B0%E6%9C%89%E5%87%A0%E4%B8%AA%E8%8D%89%E8%8E%93-%E7%94%A8%E6%89%8B%E6%8C%87%E7%82%B9%E7%9D%80%E6%95%B0-%E5%86%8D%E9%80%89%E7%AD%94%E6%A1%88.mp3"
     },
     {
       "id": "success-对-最后数到-1-所以一共有-1-个",
@@ -72,7 +74,7 @@
       "id": "prompt-数一数有几个饼干-用手指点着数-再选答案",
       "kind": "prompt",
       "text": "数一数有几个饼干？用手指点着数，再选答案。",
-      "src": "/audio/voice/zh-CN/macos-tingting/prompt-%E6%95%B0%E4%B8%80%E6%95%B0%E6%9C%89%E5%87%A0%E4%B8%AA%E9%A5%BC%E5%B9%B2-%E7%94%A8%E6%89%8B%E6%8C%87%E7%82%B9%E7%9D%80%E6%95%B0-%E5%86%8D%E9%80%89%E7%AD%94%E6%A1%88.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/prompt-%E6%95%B0%E4%B8%80%E6%95%B0%E6%9C%89%E5%87%A0%E4%B8%AA%E9%A5%BC%E5%B9%B2-%E7%94%A8%E6%89%8B%E6%8C%87%E7%82%B9%E7%9D%80%E6%95%B0-%E5%86%8D%E9%80%89%E7%AD%94%E6%A1%88.mp3"
     },
     {
       "id": "success-对-最后数到-2-所以一共有-2-个",
@@ -90,7 +92,7 @@
       "id": "prompt-数一数有几个苹果-用手指点着数-再选答案",
       "kind": "prompt",
       "text": "数一数有几个苹果？用手指点着数，再选答案。",
-      "src": "/audio/voice/zh-CN/macos-tingting/prompt-%E6%95%B0%E4%B8%80%E6%95%B0%E6%9C%89%E5%87%A0%E4%B8%AA%E8%8B%B9%E6%9E%9C-%E7%94%A8%E6%89%8B%E6%8C%87%E7%82%B9%E7%9D%80%E6%95%B0-%E5%86%8D%E9%80%89%E7%AD%94%E6%A1%88.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/prompt-%E6%95%B0%E4%B8%80%E6%95%B0%E6%9C%89%E5%87%A0%E4%B8%AA%E8%8B%B9%E6%9E%9C-%E7%94%A8%E6%89%8B%E6%8C%87%E7%82%B9%E7%9D%80%E6%95%B0-%E5%86%8D%E9%80%89%E7%AD%94%E6%A1%88.mp3"
     },
     {
       "id": "success-对-最后数到-3-所以一共有-3-个",
@@ -114,7 +116,7 @@
       "id": "prompt-数一数有几个橘子-用手指点着数-再选答案",
       "kind": "prompt",
       "text": "数一数有几个橘子？用手指点着数，再选答案。",
-      "src": "/audio/voice/zh-CN/macos-tingting/prompt-%E6%95%B0%E4%B8%80%E6%95%B0%E6%9C%89%E5%87%A0%E4%B8%AA%E6%A9%98%E5%AD%90-%E7%94%A8%E6%89%8B%E6%8C%87%E7%82%B9%E7%9D%80%E6%95%B0-%E5%86%8D%E9%80%89%E7%AD%94%E6%A1%88.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/prompt-%E6%95%B0%E4%B8%80%E6%95%B0%E6%9C%89%E5%87%A0%E4%B8%AA%E6%A9%98%E5%AD%90-%E7%94%A8%E6%89%8B%E6%8C%87%E7%82%B9%E7%9D%80%E6%95%B0-%E5%86%8D%E9%80%89%E7%AD%94%E6%A1%88.mp3"
     },
     {
       "id": "success-对-最后数到-4-所以一共有-4-个",
@@ -138,7 +140,7 @@
       "id": "prompt-数一数有几个积木-用手指点着数-再选答案",
       "kind": "prompt",
       "text": "数一数有几个积木？用手指点着数，再选答案。",
-      "src": "/audio/voice/zh-CN/macos-tingting/prompt-%E6%95%B0%E4%B8%80%E6%95%B0%E6%9C%89%E5%87%A0%E4%B8%AA%E7%A7%AF%E6%9C%A8-%E7%94%A8%E6%89%8B%E6%8C%87%E7%82%B9%E7%9D%80%E6%95%B0-%E5%86%8D%E9%80%89%E7%AD%94%E6%A1%88.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/prompt-%E6%95%B0%E4%B8%80%E6%95%B0%E6%9C%89%E5%87%A0%E4%B8%AA%E7%A7%AF%E6%9C%A8-%E7%94%A8%E6%89%8B%E6%8C%87%E7%82%B9%E7%9D%80%E6%95%B0-%E5%86%8D%E9%80%89%E7%AD%94%E6%A1%88.mp3"
     },
     {
       "id": "success-对-最后数到-5-所以一共有-5-个",
@@ -162,7 +164,7 @@
       "id": "prompt-数一数有几颗星星-数慢一点-每个只数一次",
       "kind": "prompt",
       "text": "数一数有几颗星星？数慢一点，每个只数一次。",
-      "src": "/audio/voice/zh-CN/macos-tingting/prompt-%E6%95%B0%E4%B8%80%E6%95%B0%E6%9C%89%E5%87%A0%E9%A2%97%E6%98%9F%E6%98%9F-%E6%95%B0%E6%85%A2%E4%B8%80%E7%82%B9-%E6%AF%8F%E4%B8%AA%E5%8F%AA%E6%95%B0%E4%B8%80%E6%AC%A1.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/prompt-%E6%95%B0%E4%B8%80%E6%95%B0%E6%9C%89%E5%87%A0%E9%A2%97%E6%98%9F%E6%98%9F-%E6%95%B0%E6%85%A2%E4%B8%80%E7%82%B9-%E6%AF%8F%E4%B8%AA%E5%8F%AA%E6%95%B0%E4%B8%80%E6%AC%A1.mp3"
     },
     {
       "id": "success-对-最后数到-6-所以一共有-6-个",
@@ -186,7 +188,7 @@
       "id": "prompt-数一数有几个糖果-数慢一点-每个只数一次",
       "kind": "prompt",
       "text": "数一数有几个糖果？数慢一点，每个只数一次。",
-      "src": "/audio/voice/zh-CN/macos-tingting/prompt-%E6%95%B0%E4%B8%80%E6%95%B0%E6%9C%89%E5%87%A0%E4%B8%AA%E7%B3%96%E6%9E%9C-%E6%95%B0%E6%85%A2%E4%B8%80%E7%82%B9-%E6%AF%8F%E4%B8%AA%E5%8F%AA%E6%95%B0%E4%B8%80%E6%AC%A1.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/prompt-%E6%95%B0%E4%B8%80%E6%95%B0%E6%9C%89%E5%87%A0%E4%B8%AA%E7%B3%96%E6%9E%9C-%E6%95%B0%E6%85%A2%E4%B8%80%E7%82%B9-%E6%AF%8F%E4%B8%AA%E5%8F%AA%E6%95%B0%E4%B8%80%E6%AC%A1.mp3"
     },
     {
       "id": "success-对-最后数到-7-所以一共有-7-个",
@@ -210,7 +212,7 @@
       "id": "prompt-数一数有几条小鱼-数慢一点-每个只数一次",
       "kind": "prompt",
       "text": "数一数有几条小鱼？数慢一点，每个只数一次。",
-      "src": "/audio/voice/zh-CN/macos-tingting/prompt-%E6%95%B0%E4%B8%80%E6%95%B0%E6%9C%89%E5%87%A0%E6%9D%A1%E5%B0%8F%E9%B1%BC-%E6%95%B0%E6%85%A2%E4%B8%80%E7%82%B9-%E6%AF%8F%E4%B8%AA%E5%8F%AA%E6%95%B0%E4%B8%80%E6%AC%A1.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/prompt-%E6%95%B0%E4%B8%80%E6%95%B0%E6%9C%89%E5%87%A0%E6%9D%A1%E5%B0%8F%E9%B1%BC-%E6%95%B0%E6%85%A2%E4%B8%80%E7%82%B9-%E6%AF%8F%E4%B8%AA%E5%8F%AA%E6%95%B0%E4%B8%80%E6%AC%A1.mp3"
     },
     {
       "id": "success-对-最后数到-8-所以一共有-8-个",
@@ -234,7 +236,7 @@
       "id": "prompt-数一数有几只小鸟-数慢一点-每个只数一次",
       "kind": "prompt",
       "text": "数一数有几只小鸟？数慢一点，每个只数一次。",
-      "src": "/audio/voice/zh-CN/macos-tingting/prompt-%E6%95%B0%E4%B8%80%E6%95%B0%E6%9C%89%E5%87%A0%E5%8F%AA%E5%B0%8F%E9%B8%9F-%E6%95%B0%E6%85%A2%E4%B8%80%E7%82%B9-%E6%AF%8F%E4%B8%AA%E5%8F%AA%E6%95%B0%E4%B8%80%E6%AC%A1.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/prompt-%E6%95%B0%E4%B8%80%E6%95%B0%E6%9C%89%E5%87%A0%E5%8F%AA%E5%B0%8F%E9%B8%9F-%E6%95%B0%E6%85%A2%E4%B8%80%E7%82%B9-%E6%AF%8F%E4%B8%AA%E5%8F%AA%E6%95%B0%E4%B8%80%E6%AC%A1.mp3"
     },
     {
       "id": "success-对-最后数到-9-所以一共有-9-个",
@@ -258,7 +260,7 @@
       "id": "prompt-数一数有几个草莓-数慢一点-每个只数一次",
       "kind": "prompt",
       "text": "数一数有几个草莓？数慢一点，每个只数一次。",
-      "src": "/audio/voice/zh-CN/macos-tingting/prompt-%E6%95%B0%E4%B8%80%E6%95%B0%E6%9C%89%E5%87%A0%E4%B8%AA%E8%8D%89%E8%8E%93-%E6%95%B0%E6%85%A2%E4%B8%80%E7%82%B9-%E6%AF%8F%E4%B8%AA%E5%8F%AA%E6%95%B0%E4%B8%80%E6%AC%A1.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/prompt-%E6%95%B0%E4%B8%80%E6%95%B0%E6%9C%89%E5%87%A0%E4%B8%AA%E8%8D%89%E8%8E%93-%E6%95%B0%E6%85%A2%E4%B8%80%E7%82%B9-%E6%AF%8F%E4%B8%AA%E5%8F%AA%E6%95%B0%E4%B8%80%E6%AC%A1.mp3"
     },
     {
       "id": "success-对-最后数到-10-所以一共有-10-个",
@@ -447,22 +449,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/game-goal-%E8%AE%AD%E7%BB%83-2-6-%E7%9A%84%E5%B0%8F%E6%95%B0%E9%87%8F%E8%BE%A8%E8%AE%A4-%E6%95%B0%E5%BD%A2%E8%BF%9E%E6%8E%A5%E5%92%8C%E6%95%B0%E9%87%8F%E7%BB%93%E6%9E%84.mp3"
     },
     {
-      "id": "prompt-你能一眼看出有几个吗-两个在一起",
+      "id": "prompt-你能一眼看出有几个吗-斜着两个",
       "kind": "prompt",
-      "text": "你能一眼看出有几个吗？两个在一起",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/prompt-%E4%BD%A0%E8%83%BD%E4%B8%80%E7%9C%BC%E7%9C%8B%E5%87%BA%E6%9C%89%E5%87%A0%E4%B8%AA%E5%90%97-%E4%B8%A4%E4%B8%AA%E5%9C%A8%E4%B8%80%E8%B5%B7.mp3"
+      "text": "你能一眼看出有几个吗？斜着两个",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/prompt-%E4%BD%A0%E8%83%BD%E4%B8%80%E7%9C%BC%E7%9C%8B%E5%87%BA%E6%9C%89%E5%87%A0%E4%B8%AA%E5%90%97-%E6%96%9C%E7%9D%80%E4%B8%A4%E4%B8%AA.mp3"
     },
     {
-      "id": "success-是-2-个-两个在一起",
+      "id": "success-是-2-个-斜着两个",
       "kind": "success",
-      "text": "是 2 个。两个在一起。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-%E6%98%AF-2-%E4%B8%AA-%E4%B8%A4%E4%B8%AA%E5%9C%A8%E4%B8%80%E8%B5%B7.mp3"
+      "text": "是 2 个。斜着两个。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-%E6%98%AF-2-%E4%B8%AA-%E6%96%9C%E7%9D%80%E4%B8%A4%E4%B8%AA.mp3"
     },
     {
-      "id": "retry-可以先看成-两个在一起-再确认",
+      "id": "retry-可以先看成-斜着两个-再确认",
       "kind": "retry",
-      "text": "可以先看成 两个在一起，再确认。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/retry-%E5%8F%AF%E4%BB%A5%E5%85%88%E7%9C%8B%E6%88%90-%E4%B8%A4%E4%B8%AA%E5%9C%A8%E4%B8%80%E8%B5%B7-%E5%86%8D%E7%A1%AE%E8%AE%A4.mp3"
+      "text": "可以先看成 斜着两个，再确认。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/retry-%E5%8F%AF%E4%BB%A5%E5%85%88%E7%9C%8B%E6%88%90-%E6%96%9C%E7%9D%80%E4%B8%A4%E4%B8%AA-%E5%86%8D%E7%A1%AE%E8%AE%A4.mp3"
     },
     {
       "id": "parent-问她-你看到了哪两小堆-它们合起来是几",
@@ -471,40 +473,52 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/parent-%E9%97%AE%E5%A5%B9-%E4%BD%A0%E7%9C%8B%E5%88%B0%E4%BA%86%E5%93%AA%E4%B8%A4%E5%B0%8F%E5%A0%86-%E5%AE%83%E4%BB%AC%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0.mp3"
     },
     {
-      "id": "prompt-你能一眼看出有几个吗-三个像小三角",
+      "id": "object-黄色圆片",
+      "kind": "object",
+      "text": "黄色圆片",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/object-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87.mp3"
+    },
+    {
+      "id": "prompt-你能一眼看出有几个吗-斜线三个",
       "kind": "prompt",
-      "text": "你能一眼看出有几个吗？三个像小三角",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/prompt-%E4%BD%A0%E8%83%BD%E4%B8%80%E7%9C%BC%E7%9C%8B%E5%87%BA%E6%9C%89%E5%87%A0%E4%B8%AA%E5%90%97-%E4%B8%89%E4%B8%AA%E5%83%8F%E5%B0%8F%E4%B8%89%E8%A7%92.mp3"
+      "text": "你能一眼看出有几个吗？斜线三个",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/prompt-%E4%BD%A0%E8%83%BD%E4%B8%80%E7%9C%BC%E7%9C%8B%E5%87%BA%E6%9C%89%E5%87%A0%E4%B8%AA%E5%90%97-%E6%96%9C%E7%BA%BF%E4%B8%89%E4%B8%AA.mp3"
     },
     {
-      "id": "success-是-3-个-三个像小三角",
+      "id": "success-是-3-个-斜线三个",
       "kind": "success",
-      "text": "是 3 个。三个像小三角。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-%E6%98%AF-3-%E4%B8%AA-%E4%B8%89%E4%B8%AA%E5%83%8F%E5%B0%8F%E4%B8%89%E8%A7%92.mp3"
+      "text": "是 3 个。斜线三个。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-%E6%98%AF-3-%E4%B8%AA-%E6%96%9C%E7%BA%BF%E4%B8%89%E4%B8%AA.mp3"
     },
     {
-      "id": "retry-可以先看成-三个像小三角-再确认",
+      "id": "retry-可以先看成-斜线三个-再确认",
       "kind": "retry",
-      "text": "可以先看成 三个像小三角，再确认。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/retry-%E5%8F%AF%E4%BB%A5%E5%85%88%E7%9C%8B%E6%88%90-%E4%B8%89%E4%B8%AA%E5%83%8F%E5%B0%8F%E4%B8%89%E8%A7%92-%E5%86%8D%E7%A1%AE%E8%AE%A4.mp3"
+      "text": "可以先看成 斜线三个，再确认。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/retry-%E5%8F%AF%E4%BB%A5%E5%85%88%E7%9C%8B%E6%88%90-%E6%96%9C%E7%BA%BF%E4%B8%89%E4%B8%AA-%E5%86%8D%E7%A1%AE%E8%AE%A4.mp3"
     },
     {
-      "id": "prompt-你能一眼看出有几个吗-上面两个-下面两个",
+      "id": "prompt-你能一眼看出有几个吗-四个角",
       "kind": "prompt",
-      "text": "你能一眼看出有几个吗？上面两个，下面两个",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/prompt-%E4%BD%A0%E8%83%BD%E4%B8%80%E7%9C%BC%E7%9C%8B%E5%87%BA%E6%9C%89%E5%87%A0%E4%B8%AA%E5%90%97-%E4%B8%8A%E9%9D%A2%E4%B8%A4%E4%B8%AA-%E4%B8%8B%E9%9D%A2%E4%B8%A4%E4%B8%AA.mp3"
+      "text": "你能一眼看出有几个吗？四个角",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/prompt-%E4%BD%A0%E8%83%BD%E4%B8%80%E7%9C%BC%E7%9C%8B%E5%87%BA%E6%9C%89%E5%87%A0%E4%B8%AA%E5%90%97-%E5%9B%9B%E4%B8%AA%E8%A7%92.mp3"
     },
     {
-      "id": "success-是-4-个-上面两个-下面两个",
+      "id": "success-是-4-个-四个角",
       "kind": "success",
-      "text": "是 4 个。上面两个，下面两个。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-%E6%98%AF-4-%E4%B8%AA-%E4%B8%8A%E9%9D%A2%E4%B8%A4%E4%B8%AA-%E4%B8%8B%E9%9D%A2%E4%B8%A4%E4%B8%AA.mp3"
+      "text": "是 4 个。四个角。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-%E6%98%AF-4-%E4%B8%AA-%E5%9B%9B%E4%B8%AA%E8%A7%92.mp3"
     },
     {
-      "id": "retry-可以先看成-上面两个-下面两个-再确认",
+      "id": "retry-可以先看成-四个角-再确认",
       "kind": "retry",
-      "text": "可以先看成 上面两个，下面两个，再确认。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/retry-%E5%8F%AF%E4%BB%A5%E5%85%88%E7%9C%8B%E6%88%90-%E4%B8%8A%E9%9D%A2%E4%B8%A4%E4%B8%AA-%E4%B8%8B%E9%9D%A2%E4%B8%A4%E4%B8%AA-%E5%86%8D%E7%A1%AE%E8%AE%A4.mp3"
+      "text": "可以先看成 四个角，再确认。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/retry-%E5%8F%AF%E4%BB%A5%E5%85%88%E7%9C%8B%E6%88%90-%E5%9B%9B%E4%B8%AA%E8%A7%92-%E5%86%8D%E7%A1%AE%E8%AE%A4.mp3"
+    },
+    {
+      "id": "object-蓝色圆片",
+      "kind": "object",
+      "text": "蓝色圆片",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/object-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87.mp3"
     },
     {
       "id": "prompt-你能一眼看出有几个吗-四个角加中间一个",
@@ -525,142 +539,106 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/retry-%E5%8F%AF%E4%BB%A5%E5%85%88%E7%9C%8B%E6%88%90-%E5%9B%9B%E4%B8%AA%E8%A7%92%E5%8A%A0%E4%B8%AD%E9%97%B4%E4%B8%80%E4%B8%AA-%E5%86%8D%E7%A1%AE%E8%AE%A4.mp3"
     },
     {
-      "id": "object-黄色圆片",
-      "kind": "object",
-      "text": "黄色圆片",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/object-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87.mp3"
-    },
-    {
-      "id": "prompt-你能一眼看出有几个吗-三和三合起来",
-      "kind": "prompt",
-      "text": "你能一眼看出有几个吗？三和三合起来",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/prompt-%E4%BD%A0%E8%83%BD%E4%B8%80%E7%9C%BC%E7%9C%8B%E5%87%BA%E6%9C%89%E5%87%A0%E4%B8%AA%E5%90%97-%E4%B8%89%E5%92%8C%E4%B8%89%E5%90%88%E8%B5%B7%E6%9D%A5.mp3"
-    },
-    {
-      "id": "success-是-6-个-三和三合起来",
-      "kind": "success",
-      "text": "是 6 个。三和三合起来。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-%E6%98%AF-6-%E4%B8%AA-%E4%B8%89%E5%92%8C%E4%B8%89%E5%90%88%E8%B5%B7%E6%9D%A5.mp3"
-    },
-    {
-      "id": "retry-可以先看成-三和三合起来-再确认",
-      "kind": "retry",
-      "text": "可以先看成 三和三合起来，再确认。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/retry-%E5%8F%AF%E4%BB%A5%E5%85%88%E7%9C%8B%E6%88%90-%E4%B8%89%E5%92%8C%E4%B8%89%E5%90%88%E8%B5%B7%E6%9D%A5-%E5%86%8D%E7%A1%AE%E8%AE%A4.mp3"
-    },
-    {
       "id": "object-绿色圆片",
       "kind": "object",
       "text": "绿色圆片",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/object-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87.mp3"
     },
     {
-      "id": "prompt-你能一眼看出有几个吗-两个并排",
+      "id": "prompt-你能一眼看出有几个吗-左边三个-右边三个",
       "kind": "prompt",
-      "text": "你能一眼看出有几个吗？两个并排",
-      "src": "/audio/voice/zh-CN/macos-tingting/prompt-%E4%BD%A0%E8%83%BD%E4%B8%80%E7%9C%BC%E7%9C%8B%E5%87%BA%E6%9C%89%E5%87%A0%E4%B8%AA%E5%90%97-%E4%B8%A4%E4%B8%AA%E5%B9%B6%E6%8E%92.wav"
+      "text": "你能一眼看出有几个吗？左边三个，右边三个",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/prompt-%E4%BD%A0%E8%83%BD%E4%B8%80%E7%9C%BC%E7%9C%8B%E5%87%BA%E6%9C%89%E5%87%A0%E4%B8%AA%E5%90%97-%E5%B7%A6%E8%BE%B9%E4%B8%89%E4%B8%AA-%E5%8F%B3%E8%BE%B9%E4%B8%89%E4%B8%AA.mp3"
     },
     {
-      "id": "success-是-2-个-两个并排",
+      "id": "success-是-6-个-左边三个-右边三个",
       "kind": "success",
-      "text": "是 2 个。两个并排。",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-%E6%98%AF-2-%E4%B8%AA-%E4%B8%A4%E4%B8%AA%E5%B9%B6%E6%8E%92.wav"
+      "text": "是 6 个。左边三个，右边三个。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-%E6%98%AF-6-%E4%B8%AA-%E5%B7%A6%E8%BE%B9%E4%B8%89%E4%B8%AA-%E5%8F%B3%E8%BE%B9%E4%B8%89%E4%B8%AA.mp3"
     },
     {
-      "id": "retry-可以先看成-两个并排-再确认",
+      "id": "retry-可以先看成-左边三个-右边三个-再确认",
       "kind": "retry",
-      "text": "可以先看成 两个并排，再确认。",
-      "src": "/audio/voice/zh-CN/macos-tingting/retry-%E5%8F%AF%E4%BB%A5%E5%85%88%E7%9C%8B%E6%88%90-%E4%B8%A4%E4%B8%AA%E5%B9%B6%E6%8E%92-%E5%86%8D%E7%A1%AE%E8%AE%A4.wav"
+      "text": "可以先看成 左边三个，右边三个，再确认。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/retry-%E5%8F%AF%E4%BB%A5%E5%85%88%E7%9C%8B%E6%88%90-%E5%B7%A6%E8%BE%B9%E4%B8%89%E4%B8%AA-%E5%8F%B3%E8%BE%B9%E4%B8%89%E4%B8%AA-%E5%86%8D%E7%A1%AE%E8%AE%A4.mp3"
     },
     {
-      "id": "prompt-你能一眼看出有几个吗-一排三个",
+      "id": "object-紫色圆片",
+      "kind": "object",
+      "text": "紫色圆片",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/object-%E7%B4%AB%E8%89%B2%E5%9C%86%E7%89%87.mp3"
+    },
+    {
+      "id": "prompt-你能一眼看出有几个吗-斜角两个",
       "kind": "prompt",
-      "text": "你能一眼看出有几个吗？一排三个",
-      "src": "/audio/voice/zh-CN/macos-tingting/prompt-%E4%BD%A0%E8%83%BD%E4%B8%80%E7%9C%BC%E7%9C%8B%E5%87%BA%E6%9C%89%E5%87%A0%E4%B8%AA%E5%90%97-%E4%B8%80%E6%8E%92%E4%B8%89%E4%B8%AA.wav"
+      "text": "你能一眼看出有几个吗？斜角两个",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/prompt-%E4%BD%A0%E8%83%BD%E4%B8%80%E7%9C%BC%E7%9C%8B%E5%87%BA%E6%9C%89%E5%87%A0%E4%B8%AA%E5%90%97-%E6%96%9C%E8%A7%92%E4%B8%A4%E4%B8%AA.mp3"
     },
     {
-      "id": "success-是-3-个-一排三个",
+      "id": "success-是-2-个-斜角两个",
       "kind": "success",
-      "text": "是 3 个。一排三个。",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-%E6%98%AF-3-%E4%B8%AA-%E4%B8%80%E6%8E%92%E4%B8%89%E4%B8%AA.wav"
+      "text": "是 2 个。斜角两个。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-%E6%98%AF-2-%E4%B8%AA-%E6%96%9C%E8%A7%92%E4%B8%A4%E4%B8%AA.mp3"
     },
     {
-      "id": "retry-可以先看成-一排三个-再确认",
+      "id": "retry-可以先看成-斜角两个-再确认",
       "kind": "retry",
-      "text": "可以先看成 一排三个，再确认。",
-      "src": "/audio/voice/zh-CN/macos-tingting/retry-%E5%8F%AF%E4%BB%A5%E5%85%88%E7%9C%8B%E6%88%90-%E4%B8%80%E6%8E%92%E4%B8%89%E4%B8%AA-%E5%86%8D%E7%A1%AE%E8%AE%A4.wav"
+      "text": "可以先看成 斜角两个，再确认。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/retry-%E5%8F%AF%E4%BB%A5%E5%85%88%E7%9C%8B%E6%88%90-%E6%96%9C%E8%A7%92%E4%B8%A4%E4%B8%AA-%E5%86%8D%E7%A1%AE%E8%AE%A4.mp3"
     },
     {
-      "id": "prompt-你能一眼看出有几个吗-两排-每排两个",
+      "id": "prompt-你能一眼看出有几个吗-像一个小三角",
       "kind": "prompt",
-      "text": "你能一眼看出有几个吗？两排，每排两个",
-      "src": "/audio/voice/zh-CN/macos-tingting/prompt-%E4%BD%A0%E8%83%BD%E4%B8%80%E7%9C%BC%E7%9C%8B%E5%87%BA%E6%9C%89%E5%87%A0%E4%B8%AA%E5%90%97-%E4%B8%A4%E6%8E%92-%E6%AF%8F%E6%8E%92%E4%B8%A4%E4%B8%AA.wav"
+      "text": "你能一眼看出有几个吗？像一个小三角",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/prompt-%E4%BD%A0%E8%83%BD%E4%B8%80%E7%9C%BC%E7%9C%8B%E5%87%BA%E6%9C%89%E5%87%A0%E4%B8%AA%E5%90%97-%E5%83%8F%E4%B8%80%E4%B8%AA%E5%B0%8F%E4%B8%89%E8%A7%92.mp3"
     },
     {
-      "id": "success-是-4-个-两排-每排两个",
+      "id": "success-是-3-个-像一个小三角",
       "kind": "success",
-      "text": "是 4 个。两排，每排两个。",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-%E6%98%AF-4-%E4%B8%AA-%E4%B8%A4%E6%8E%92-%E6%AF%8F%E6%8E%92%E4%B8%A4%E4%B8%AA.wav"
+      "text": "是 3 个。像一个小三角。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-%E6%98%AF-3-%E4%B8%AA-%E5%83%8F%E4%B8%80%E4%B8%AA%E5%B0%8F%E4%B8%89%E8%A7%92.mp3"
     },
     {
-      "id": "retry-可以先看成-两排-每排两个-再确认",
+      "id": "retry-可以先看成-像一个小三角-再确认",
       "kind": "retry",
-      "text": "可以先看成 两排，每排两个，再确认。",
-      "src": "/audio/voice/zh-CN/macos-tingting/retry-%E5%8F%AF%E4%BB%A5%E5%85%88%E7%9C%8B%E6%88%90-%E4%B8%A4%E6%8E%92-%E6%AF%8F%E6%8E%92%E4%B8%A4%E4%B8%AA-%E5%86%8D%E7%A1%AE%E8%AE%A4.wav"
+      "text": "可以先看成 像一个小三角，再确认。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/retry-%E5%8F%AF%E4%BB%A5%E5%85%88%E7%9C%8B%E6%88%90-%E5%83%8F%E4%B8%80%E4%B8%AA%E5%B0%8F%E4%B8%89%E8%A7%92-%E5%86%8D%E7%A1%AE%E8%AE%A4.mp3"
     },
     {
-      "id": "prompt-你能一眼看出有几个吗-先看四个-再加一个",
+      "id": "prompt-你能一眼看出有几个吗-两列-每列三个",
       "kind": "prompt",
-      "text": "你能一眼看出有几个吗？先看四个，再加一个",
-      "src": "/audio/voice/zh-CN/macos-tingting/prompt-%E4%BD%A0%E8%83%BD%E4%B8%80%E7%9C%BC%E7%9C%8B%E5%87%BA%E6%9C%89%E5%87%A0%E4%B8%AA%E5%90%97-%E5%85%88%E7%9C%8B%E5%9B%9B%E4%B8%AA-%E5%86%8D%E5%8A%A0%E4%B8%80%E4%B8%AA.wav"
+      "text": "你能一眼看出有几个吗？两列，每列三个",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/prompt-%E4%BD%A0%E8%83%BD%E4%B8%80%E7%9C%BC%E7%9C%8B%E5%87%BA%E6%9C%89%E5%87%A0%E4%B8%AA%E5%90%97-%E4%B8%A4%E5%88%97-%E6%AF%8F%E5%88%97%E4%B8%89%E4%B8%AA.mp3"
     },
     {
-      "id": "success-是-5-个-先看四个-再加一个",
+      "id": "success-是-6-个-两列-每列三个",
       "kind": "success",
-      "text": "是 5 个。先看四个，再加一个。",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-%E6%98%AF-5-%E4%B8%AA-%E5%85%88%E7%9C%8B%E5%9B%9B%E4%B8%AA-%E5%86%8D%E5%8A%A0%E4%B8%80%E4%B8%AA.wav"
+      "text": "是 6 个。两列，每列三个。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-%E6%98%AF-6-%E4%B8%AA-%E4%B8%A4%E5%88%97-%E6%AF%8F%E5%88%97%E4%B8%89%E4%B8%AA.mp3"
     },
     {
-      "id": "retry-可以先看成-先看四个-再加一个-再确认",
+      "id": "retry-可以先看成-两列-每列三个-再确认",
       "kind": "retry",
-      "text": "可以先看成 先看四个，再加一个，再确认。",
-      "src": "/audio/voice/zh-CN/macos-tingting/retry-%E5%8F%AF%E4%BB%A5%E5%85%88%E7%9C%8B%E6%88%90-%E5%85%88%E7%9C%8B%E5%9B%9B%E4%B8%AA-%E5%86%8D%E5%8A%A0%E4%B8%80%E4%B8%AA-%E5%86%8D%E7%A1%AE%E8%AE%A4.wav"
-    },
-    {
-      "id": "prompt-你能一眼看出有几个吗-两个三个合起来",
-      "kind": "prompt",
-      "text": "你能一眼看出有几个吗？两个三个合起来",
-      "src": "/audio/voice/zh-CN/macos-tingting/prompt-%E4%BD%A0%E8%83%BD%E4%B8%80%E7%9C%BC%E7%9C%8B%E5%87%BA%E6%9C%89%E5%87%A0%E4%B8%AA%E5%90%97-%E4%B8%A4%E4%B8%AA%E4%B8%89%E4%B8%AA%E5%90%88%E8%B5%B7%E6%9D%A5.wav"
-    },
-    {
-      "id": "success-是-6-个-两个三个合起来",
-      "kind": "success",
-      "text": "是 6 个。两个三个合起来。",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-%E6%98%AF-6-%E4%B8%AA-%E4%B8%A4%E4%B8%AA%E4%B8%89%E4%B8%AA%E5%90%88%E8%B5%B7%E6%9D%A5.wav"
-    },
-    {
-      "id": "retry-可以先看成-两个三个合起来-再确认",
-      "kind": "retry",
-      "text": "可以先看成 两个三个合起来，再确认。",
-      "src": "/audio/voice/zh-CN/macos-tingting/retry-%E5%8F%AF%E4%BB%A5%E5%85%88%E7%9C%8B%E6%88%90-%E4%B8%A4%E4%B8%AA%E4%B8%89%E4%B8%AA%E5%90%88%E8%B5%B7%E6%9D%A5-%E5%86%8D%E7%A1%AE%E8%AE%A4.wav"
+      "text": "可以先看成 两列，每列三个，再确认。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/retry-%E5%8F%AF%E4%BB%A5%E5%85%88%E7%9C%8B%E6%88%90-%E4%B8%A4%E5%88%97-%E6%AF%8F%E5%88%97%E4%B8%89%E4%B8%AA-%E5%86%8D%E7%A1%AE%E8%AE%A4.mp3"
     },
     {
       "id": "prompt-你能一眼看出有几个吗-像一个小方阵",
       "kind": "prompt",
       "text": "你能一眼看出有几个吗？像一个小方阵",
-      "src": "/audio/voice/zh-CN/macos-tingting/prompt-%E4%BD%A0%E8%83%BD%E4%B8%80%E7%9C%BC%E7%9C%8B%E5%87%BA%E6%9C%89%E5%87%A0%E4%B8%AA%E5%90%97-%E5%83%8F%E4%B8%80%E4%B8%AA%E5%B0%8F%E6%96%B9%E9%98%B5.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/prompt-%E4%BD%A0%E8%83%BD%E4%B8%80%E7%9C%BC%E7%9C%8B%E5%87%BA%E6%9C%89%E5%87%A0%E4%B8%AA%E5%90%97-%E5%83%8F%E4%B8%80%E4%B8%AA%E5%B0%8F%E6%96%B9%E9%98%B5.mp3"
     },
     {
       "id": "success-是-4-个-像一个小方阵",
       "kind": "success",
       "text": "是 4 个。像一个小方阵。",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-%E6%98%AF-4-%E4%B8%AA-%E5%83%8F%E4%B8%80%E4%B8%AA%E5%B0%8F%E6%96%B9%E9%98%B5.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-%E6%98%AF-4-%E4%B8%AA-%E5%83%8F%E4%B8%80%E4%B8%AA%E5%B0%8F%E6%96%B9%E9%98%B5.mp3"
     },
     {
       "id": "retry-可以先看成-像一个小方阵-再确认",
       "kind": "retry",
       "text": "可以先看成 像一个小方阵，再确认。",
-      "src": "/audio/voice/zh-CN/macos-tingting/retry-%E5%8F%AF%E4%BB%A5%E5%85%88%E7%9C%8B%E6%88%90-%E5%83%8F%E4%B8%80%E4%B8%AA%E5%B0%8F%E6%96%B9%E9%98%B5-%E5%86%8D%E7%A1%AE%E8%AE%A4.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/retry-%E5%8F%AF%E4%BB%A5%E5%85%88%E7%9C%8B%E6%88%90-%E5%83%8F%E4%B8%80%E4%B8%AA%E5%B0%8F%E6%96%B9%E9%98%B5-%E5%86%8D%E7%A1%AE%E8%AE%A4.mp3"
     },
     {
       "id": "object-蓝色方块",
@@ -669,58 +647,58 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/object-%E8%93%9D%E8%89%B2%E6%96%B9%E5%9D%97.mp3"
     },
     {
-      "id": "prompt-你能一眼看出有几个吗-一排五个",
+      "id": "prompt-你能一眼看出有几个吗-像一个叉形",
       "kind": "prompt",
-      "text": "你能一眼看出有几个吗？一排五个",
-      "src": "/audio/voice/zh-CN/macos-tingting/prompt-%E4%BD%A0%E8%83%BD%E4%B8%80%E7%9C%BC%E7%9C%8B%E5%87%BA%E6%9C%89%E5%87%A0%E4%B8%AA%E5%90%97-%E4%B8%80%E6%8E%92%E4%BA%94%E4%B8%AA.wav"
+      "text": "你能一眼看出有几个吗？像一个叉形",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/prompt-%E4%BD%A0%E8%83%BD%E4%B8%80%E7%9C%BC%E7%9C%8B%E5%87%BA%E6%9C%89%E5%87%A0%E4%B8%AA%E5%90%97-%E5%83%8F%E4%B8%80%E4%B8%AA%E5%8F%89%E5%BD%A2.mp3"
     },
     {
-      "id": "success-是-5-个-一排五个",
+      "id": "success-是-5-个-像一个叉形",
       "kind": "success",
-      "text": "是 5 个。一排五个。",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-%E6%98%AF-5-%E4%B8%AA-%E4%B8%80%E6%8E%92%E4%BA%94%E4%B8%AA.wav"
+      "text": "是 5 个。像一个叉形。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-%E6%98%AF-5-%E4%B8%AA-%E5%83%8F%E4%B8%80%E4%B8%AA%E5%8F%89%E5%BD%A2.mp3"
     },
     {
-      "id": "retry-可以先看成-一排五个-再确认",
+      "id": "retry-可以先看成-像一个叉形-再确认",
       "kind": "retry",
-      "text": "可以先看成 一排五个，再确认。",
-      "src": "/audio/voice/zh-CN/macos-tingting/retry-%E5%8F%AF%E4%BB%A5%E5%85%88%E7%9C%8B%E6%88%90-%E4%B8%80%E6%8E%92%E4%BA%94%E4%B8%AA-%E5%86%8D%E7%A1%AE%E8%AE%A4.wav"
+      "text": "可以先看成 像一个叉形，再确认。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/retry-%E5%8F%AF%E4%BB%A5%E5%85%88%E7%9C%8B%E6%88%90-%E5%83%8F%E4%B8%80%E4%B8%AA%E5%8F%89%E5%BD%A2-%E5%86%8D%E7%A1%AE%E8%AE%A4.mp3"
     },
     {
-      "id": "prompt-你能一眼看出有几个吗-五个再加一个",
+      "id": "prompt-你能一眼看出有几个吗-上面三个-下面三个",
       "kind": "prompt",
-      "text": "你能一眼看出有几个吗？五个再加一个",
-      "src": "/audio/voice/zh-CN/macos-tingting/prompt-%E4%BD%A0%E8%83%BD%E4%B8%80%E7%9C%BC%E7%9C%8B%E5%87%BA%E6%9C%89%E5%87%A0%E4%B8%AA%E5%90%97-%E4%BA%94%E4%B8%AA%E5%86%8D%E5%8A%A0%E4%B8%80%E4%B8%AA.wav"
+      "text": "你能一眼看出有几个吗？上面三个，下面三个",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/prompt-%E4%BD%A0%E8%83%BD%E4%B8%80%E7%9C%BC%E7%9C%8B%E5%87%BA%E6%9C%89%E5%87%A0%E4%B8%AA%E5%90%97-%E4%B8%8A%E9%9D%A2%E4%B8%89%E4%B8%AA-%E4%B8%8B%E9%9D%A2%E4%B8%89%E4%B8%AA.mp3"
     },
     {
-      "id": "success-是-6-个-五个再加一个",
+      "id": "success-是-6-个-上面三个-下面三个",
       "kind": "success",
-      "text": "是 6 个。五个再加一个。",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-%E6%98%AF-6-%E4%B8%AA-%E4%BA%94%E4%B8%AA%E5%86%8D%E5%8A%A0%E4%B8%80%E4%B8%AA.wav"
+      "text": "是 6 个。上面三个，下面三个。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-%E6%98%AF-6-%E4%B8%AA-%E4%B8%8A%E9%9D%A2%E4%B8%89%E4%B8%AA-%E4%B8%8B%E9%9D%A2%E4%B8%89%E4%B8%AA.mp3"
     },
     {
-      "id": "retry-可以先看成-五个再加一个-再确认",
+      "id": "retry-可以先看成-上面三个-下面三个-再确认",
       "kind": "retry",
-      "text": "可以先看成 五个再加一个，再确认。",
-      "src": "/audio/voice/zh-CN/macos-tingting/retry-%E5%8F%AF%E4%BB%A5%E5%85%88%E7%9C%8B%E6%88%90-%E4%BA%94%E4%B8%AA%E5%86%8D%E5%8A%A0%E4%B8%80%E4%B8%AA-%E5%86%8D%E7%A1%AE%E8%AE%A4.wav"
+      "text": "可以先看成 上面三个，下面三个，再确认。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/retry-%E5%8F%AF%E4%BB%A5%E5%85%88%E7%9C%8B%E6%88%90-%E4%B8%8A%E9%9D%A2%E4%B8%89%E4%B8%AA-%E4%B8%8B%E9%9D%A2%E4%B8%89%E4%B8%AA-%E5%86%8D%E7%A1%AE%E8%AE%A4.mp3"
     },
     {
-      "id": "prompt-你能一眼看出有几个吗-两个加一个",
+      "id": "prompt-你能一眼看出有几个吗-两行两列",
       "kind": "prompt",
-      "text": "你能一眼看出有几个吗？两个加一个",
-      "src": "/audio/voice/zh-CN/macos-tingting/prompt-%E4%BD%A0%E8%83%BD%E4%B8%80%E7%9C%BC%E7%9C%8B%E5%87%BA%E6%9C%89%E5%87%A0%E4%B8%AA%E5%90%97-%E4%B8%A4%E4%B8%AA%E5%8A%A0%E4%B8%80%E4%B8%AA.wav"
+      "text": "你能一眼看出有几个吗？两行两列",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/prompt-%E4%BD%A0%E8%83%BD%E4%B8%80%E7%9C%BC%E7%9C%8B%E5%87%BA%E6%9C%89%E5%87%A0%E4%B8%AA%E5%90%97-%E4%B8%A4%E8%A1%8C%E4%B8%A4%E5%88%97.mp3"
     },
     {
-      "id": "success-是-3-个-两个加一个",
+      "id": "success-是-4-个-两行两列",
       "kind": "success",
-      "text": "是 3 个。两个加一个。",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-%E6%98%AF-3-%E4%B8%AA-%E4%B8%A4%E4%B8%AA%E5%8A%A0%E4%B8%80%E4%B8%AA.wav"
+      "text": "是 4 个。两行两列。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-%E6%98%AF-4-%E4%B8%AA-%E4%B8%A4%E8%A1%8C%E4%B8%A4%E5%88%97.mp3"
     },
     {
-      "id": "retry-可以先看成-两个加一个-再确认",
+      "id": "retry-可以先看成-两行两列-再确认",
       "kind": "retry",
-      "text": "可以先看成 两个加一个，再确认。",
-      "src": "/audio/voice/zh-CN/macos-tingting/retry-%E5%8F%AF%E4%BB%A5%E5%85%88%E7%9C%8B%E6%88%90-%E4%B8%A4%E4%B8%AA%E5%8A%A0%E4%B8%80%E4%B8%AA-%E5%86%8D%E7%A1%AE%E8%AE%A4.wav"
+      "text": "可以先看成 两行两列，再确认。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/retry-%E5%8F%AF%E4%BB%A5%E5%85%88%E7%9C%8B%E6%88%90-%E4%B8%A4%E8%A1%8C%E4%B8%A4%E5%88%97-%E5%86%8D%E7%A1%AE%E8%AE%A4.mp3"
     },
     {
       "id": "game-title-多一点-少一点",
@@ -1710,13 +1688,13 @@
       "id": "prompt-2-条小鱼分给-2-个小朋友-每人一样多-每人几个-可以一个一个轮流分",
       "kind": "prompt",
       "text": "2 条小鱼分给 2 个小朋友，每人一样多，每人几个？可以一个一个轮流分。",
-      "src": "/audio/voice/zh-CN/macos-tingting/prompt-2-%E6%9D%A1%E5%B0%8F%E9%B1%BC%E5%88%86%E7%BB%99-2-%E4%B8%AA%E5%B0%8F%E6%9C%8B%E5%8F%8B-%E6%AF%8F%E4%BA%BA%E4%B8%80%E6%A0%B7%E5%A4%9A-%E6%AF%8F%E4%BA%BA%E5%87%A0%E4%B8%AA-%E5%8F%AF%E4%BB%A5%E4%B8%80%E4%B8%AA%E4%B8%80%E4%B8%AA%E8%BD%AE%E6%B5%81%E5%88%86.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/prompt-2-%E6%9D%A1%E5%B0%8F%E9%B1%BC%E5%88%86%E7%BB%99-2-%E4%B8%AA%E5%B0%8F%E6%9C%8B%E5%8F%8B-%E6%AF%8F%E4%BA%BA%E4%B8%80%E6%A0%B7%E5%A4%9A-%E6%AF%8F%E4%BA%BA%E5%87%A0%E4%B8%AA-%E5%8F%AF%E4%BB%A5%E4%B8%80%E4%B8%AA%E4%B8%80%E4%B8%AA%E8%BD%AE%E6%B5%81%E5%88%86.mp3"
     },
     {
       "id": "success-2-条小鱼分给-2-个-每人-1-个-正好一样多",
       "kind": "success",
       "text": "2 条小鱼分给 2 个，每人 1 个，正好一样多。",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-2-%E6%9D%A1%E5%B0%8F%E9%B1%BC%E5%88%86%E7%BB%99-2-%E4%B8%AA-%E6%AF%8F%E4%BA%BA-1-%E4%B8%AA-%E6%AD%A3%E5%A5%BD%E4%B8%80%E6%A0%B7%E5%A4%9A.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-2-%E6%9D%A1%E5%B0%8F%E9%B1%BC%E5%88%86%E7%BB%99-2-%E4%B8%AA-%E6%AF%8F%E4%BA%BA-1-%E4%B8%AA-%E6%AD%A3%E5%A5%BD%E4%B8%80%E6%A0%B7%E5%A4%9A.mp3"
     },
     {
       "id": "retry-轮流分-每个人先-1-个-再每个人-1-个",
@@ -1740,13 +1718,13 @@
       "id": "prompt-4-条小鱼分给-2-个小朋友-每人一样多-每人几个-可以一个一个轮流分",
       "kind": "prompt",
       "text": "4 条小鱼分给 2 个小朋友，每人一样多，每人几个？可以一个一个轮流分。",
-      "src": "/audio/voice/zh-CN/macos-tingting/prompt-4-%E6%9D%A1%E5%B0%8F%E9%B1%BC%E5%88%86%E7%BB%99-2-%E4%B8%AA%E5%B0%8F%E6%9C%8B%E5%8F%8B-%E6%AF%8F%E4%BA%BA%E4%B8%80%E6%A0%B7%E5%A4%9A-%E6%AF%8F%E4%BA%BA%E5%87%A0%E4%B8%AA-%E5%8F%AF%E4%BB%A5%E4%B8%80%E4%B8%AA%E4%B8%80%E4%B8%AA%E8%BD%AE%E6%B5%81%E5%88%86.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/prompt-4-%E6%9D%A1%E5%B0%8F%E9%B1%BC%E5%88%86%E7%BB%99-2-%E4%B8%AA%E5%B0%8F%E6%9C%8B%E5%8F%8B-%E6%AF%8F%E4%BA%BA%E4%B8%80%E6%A0%B7%E5%A4%9A-%E6%AF%8F%E4%BA%BA%E5%87%A0%E4%B8%AA-%E5%8F%AF%E4%BB%A5%E4%B8%80%E4%B8%AA%E4%B8%80%E4%B8%AA%E8%BD%AE%E6%B5%81%E5%88%86.mp3"
     },
     {
       "id": "success-4-条小鱼分给-2-个-每人-2-个-正好一样多",
       "kind": "success",
       "text": "4 条小鱼分给 2 个，每人 2 个，正好一样多。",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-4-%E6%9D%A1%E5%B0%8F%E9%B1%BC%E5%88%86%E7%BB%99-2-%E4%B8%AA-%E6%AF%8F%E4%BA%BA-2-%E4%B8%AA-%E6%AD%A3%E5%A5%BD%E4%B8%80%E6%A0%B7%E5%A4%9A.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-4-%E6%9D%A1%E5%B0%8F%E9%B1%BC%E5%88%86%E7%BB%99-2-%E4%B8%AA-%E6%AF%8F%E4%BA%BA-2-%E4%B8%AA-%E6%AD%A3%E5%A5%BD%E4%B8%80%E6%A0%B7%E5%A4%9A.mp3"
     },
     {
       "id": "prompt-6-个饼干分给-2-个小朋友-每人一样多-每人几个-可以一个一个轮流分",
@@ -1758,7 +1736,7 @@
       "id": "success-6-个饼干分给-2-个-每人-3-个-正好一样多",
       "kind": "success",
       "text": "6 个饼干分给 2 个，每人 3 个，正好一样多。",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-6-%E4%B8%AA%E9%A5%BC%E5%B9%B2%E5%88%86%E7%BB%99-2-%E4%B8%AA-%E6%AF%8F%E4%BA%BA-3-%E4%B8%AA-%E6%AD%A3%E5%A5%BD%E4%B8%80%E6%A0%B7%E5%A4%9A.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-6-%E4%B8%AA%E9%A5%BC%E5%B9%B2%E5%88%86%E7%BB%99-2-%E4%B8%AA-%E6%AF%8F%E4%BA%BA-3-%E4%B8%AA-%E6%AD%A3%E5%A5%BD%E4%B8%80%E6%A0%B7%E5%A4%9A.mp3"
     },
     {
       "id": "object-盘子",
@@ -1776,7 +1754,7 @@
       "id": "success-8-个糖果分给-2-个-每人-4-个-正好一样多",
       "kind": "success",
       "text": "8 个糖果分给 2 个，每人 4 个，正好一样多。",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-8-%E4%B8%AA%E7%B3%96%E6%9E%9C%E5%88%86%E7%BB%99-2-%E4%B8%AA-%E6%AF%8F%E4%BA%BA-4-%E4%B8%AA-%E6%AD%A3%E5%A5%BD%E4%B8%80%E6%A0%B7%E5%A4%9A.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-8-%E4%B8%AA%E7%B3%96%E6%9E%9C%E5%88%86%E7%BB%99-2-%E4%B8%AA-%E6%AF%8F%E4%BA%BA-4-%E4%B8%AA-%E6%AD%A3%E5%A5%BD%E4%B8%80%E6%A0%B7%E5%A4%9A.mp3"
     },
     {
       "id": "object-小朋友",
@@ -1794,7 +1772,7 @@
       "id": "success-6-个糖果分给-3-个-每人-2-个-正好一样多",
       "kind": "success",
       "text": "6 个糖果分给 3 个，每人 2 个，正好一样多。",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-6-%E4%B8%AA%E7%B3%96%E6%9E%9C%E5%88%86%E7%BB%99-3-%E4%B8%AA-%E6%AF%8F%E4%BA%BA-2-%E4%B8%AA-%E6%AD%A3%E5%A5%BD%E4%B8%80%E6%A0%B7%E5%A4%9A.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-6-%E4%B8%AA%E7%B3%96%E6%9E%9C%E5%88%86%E7%BB%99-3-%E4%B8%AA-%E6%AF%8F%E4%BA%BA-2-%E4%B8%AA-%E6%AD%A3%E5%A5%BD%E4%B8%80%E6%A0%B7%E5%A4%9A.mp3"
     },
     {
       "id": "prompt-9-个饼干分给-3-个小朋友-每人一样多-每人几个-可以一个一个轮流分",
@@ -1806,7 +1784,7 @@
       "id": "success-9-个饼干分给-3-个-每人-3-个-正好一样多",
       "kind": "success",
       "text": "9 个饼干分给 3 个，每人 3 个，正好一样多。",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-9-%E4%B8%AA%E9%A5%BC%E5%B9%B2%E5%88%86%E7%BB%99-3-%E4%B8%AA-%E6%AF%8F%E4%BA%BA-3-%E4%B8%AA-%E6%AD%A3%E5%A5%BD%E4%B8%80%E6%A0%B7%E5%A4%9A.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-9-%E4%B8%AA%E9%A5%BC%E5%B9%B2%E5%88%86%E7%BB%99-3-%E4%B8%AA-%E6%AF%8F%E4%BA%BA-3-%E4%B8%AA-%E6%AD%A3%E5%A5%BD%E4%B8%80%E6%A0%B7%E5%A4%9A.mp3"
     },
     {
       "id": "prompt-10-个草莓分给-5-个小朋友-每人一样多-每人几个-可以一个一个轮流分",
@@ -1818,7 +1796,7 @@
       "id": "success-10-个草莓分给-5-个-每人-2-个-正好一样多",
       "kind": "success",
       "text": "10 个草莓分给 5 个，每人 2 个，正好一样多。",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-10-%E4%B8%AA%E8%8D%89%E8%8E%93%E5%88%86%E7%BB%99-5-%E4%B8%AA-%E6%AF%8F%E4%BA%BA-2-%E4%B8%AA-%E6%AD%A3%E5%A5%BD%E4%B8%80%E6%A0%B7%E5%A4%9A.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-10-%E4%B8%AA%E8%8D%89%E8%8E%93%E5%88%86%E7%BB%99-5-%E4%B8%AA-%E6%AF%8F%E4%BA%BA-2-%E4%B8%AA-%E6%AD%A3%E5%A5%BD%E4%B8%80%E6%A0%B7%E5%A4%9A.mp3"
     },
     {
       "id": "prompt-12-个积木分给-3-个小朋友-每人一样多-每人几个-可以一个一个轮流分",
@@ -1830,7 +1808,7 @@
       "id": "success-12-个积木分给-3-个-每人-4-个-正好一样多",
       "kind": "success",
       "text": "12 个积木分给 3 个，每人 4 个，正好一样多。",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-12-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%88%86%E7%BB%99-3-%E4%B8%AA-%E6%AF%8F%E4%BA%BA-4-%E4%B8%AA-%E6%AD%A3%E5%A5%BD%E4%B8%80%E6%A0%B7%E5%A4%9A.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-12-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%88%86%E7%BB%99-3-%E4%B8%AA-%E6%AF%8F%E4%BA%BA-4-%E4%B8%AA-%E6%AD%A3%E5%A5%BD%E4%B8%80%E6%A0%B7%E5%A4%9A.mp3"
     },
     {
       "id": "prompt-12-个糖果分给-4-个小朋友-每人一样多-每人几个-可以一个一个轮流分",
@@ -1842,7 +1820,7 @@
       "id": "success-12-个糖果分给-4-个-每人-3-个-正好一样多",
       "kind": "success",
       "text": "12 个糖果分给 4 个，每人 3 个，正好一样多。",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-12-%E4%B8%AA%E7%B3%96%E6%9E%9C%E5%88%86%E7%BB%99-4-%E4%B8%AA-%E6%AF%8F%E4%BA%BA-3-%E4%B8%AA-%E6%AD%A3%E5%A5%BD%E4%B8%80%E6%A0%B7%E5%A4%9A.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-12-%E4%B8%AA%E7%B3%96%E6%9E%9C%E5%88%86%E7%BB%99-4-%E4%B8%AA-%E6%AF%8F%E4%BA%BA-3-%E4%B8%AA-%E6%AD%A3%E5%A5%BD%E4%B8%80%E6%A0%B7%E5%A4%9A.mp3"
     },
     {
       "id": "prompt-5-条小鱼分给-2-只小猫-每只先一样多-最多每只几条-先公平分-最后可能会剩下",
@@ -1896,127 +1874,127 @@
       "id": "game-title-几个几个数",
       "kind": "game-title",
       "text": "几个几个数",
-      "src": "/audio/voice/zh-CN/macos-tingting/game-title-%E5%87%A0%E4%B8%AA%E5%87%A0%E4%B8%AA%E6%95%B0.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/game-title-%E5%87%A0%E4%B8%AA%E5%87%A0%E4%B8%AA%E6%95%B0.mp3"
     },
     {
       "id": "game-goal-建立成组计数和早期乘法直觉",
       "kind": "game-goal",
       "text": "建立成组计数和早期乘法直觉。",
-      "src": "/audio/voice/zh-CN/macos-tingting/game-goal-%E5%BB%BA%E7%AB%8B%E6%88%90%E7%BB%84%E8%AE%A1%E6%95%B0%E5%92%8C%E6%97%A9%E6%9C%9F%E4%B9%98%E6%B3%95%E7%9B%B4%E8%A7%89.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/game-goal-%E5%BB%BA%E7%AB%8B%E6%88%90%E7%BB%84%E8%AE%A1%E6%95%B0%E5%92%8C%E6%97%A9%E6%9C%9F%E4%B9%98%E6%B3%95%E7%9B%B4%E8%A7%89.mp3"
     },
     {
       "id": "prompt-每组放-2-个草莓-有-2-组-一共有多少个草莓-2-个一组地数-也可以先看有几组",
       "kind": "prompt",
       "text": "每组放 2 个草莓，有 2 组，一共有多少个草莓？2 个一组地数，也可以先看有几组。",
-      "src": "/audio/voice/zh-CN/macos-tingting/prompt-%E6%AF%8F%E7%BB%84%E6%94%BE-2-%E4%B8%AA%E8%8D%89%E8%8E%93-%E6%9C%89-2-%E7%BB%84-%E4%B8%80%E5%85%B1%E6%9C%89%E5%A4%9A%E5%B0%91%E4%B8%AA%E8%8D%89%E8%8E%93-2-%E4%B8%AA%E4%B8%80%E7%BB%84%E5%9C%B0%E6%95%B0-%E4%B9%9F%E5%8F%AF%E4%BB%A5%E5%85%88%E7%9C%8B%E6%9C%89%E5%87%A0%E7%BB%84.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/prompt-%E6%AF%8F%E7%BB%84%E6%94%BE-2-%E4%B8%AA%E8%8D%89%E8%8E%93-%E6%9C%89-2-%E7%BB%84-%E4%B8%80%E5%85%B1%E6%9C%89%E5%A4%9A%E5%B0%91%E4%B8%AA%E8%8D%89%E8%8E%93-2-%E4%B8%AA%E4%B8%80%E7%BB%84%E5%9C%B0%E6%95%B0-%E4%B9%9F%E5%8F%AF%E4%BB%A5%E5%85%88%E7%9C%8B%E6%9C%89%E5%87%A0%E7%BB%84.mp3"
     },
     {
       "id": "success-2-组-每组-2-个草莓-一共有-4-个草莓",
       "kind": "success",
       "text": "2 组，每组 2 个草莓，一共有 4 个草莓。",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-2-%E7%BB%84-%E6%AF%8F%E7%BB%84-2-%E4%B8%AA%E8%8D%89%E8%8E%93-%E4%B8%80%E5%85%B1%E6%9C%89-4-%E4%B8%AA%E8%8D%89%E8%8E%93.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-2-%E7%BB%84-%E6%AF%8F%E7%BB%84-2-%E4%B8%AA%E8%8D%89%E8%8E%93-%E4%B8%80%E5%85%B1%E6%9C%89-4-%E4%B8%AA%E8%8D%89%E8%8E%93.mp3"
     },
     {
       "id": "retry-先数一组是-2-个草莓-再数有-2-组",
       "kind": "retry",
       "text": "先数一组是 2 个草莓，再数有 2 组。",
-      "src": "/audio/voice/zh-CN/macos-tingting/retry-%E5%85%88%E6%95%B0%E4%B8%80%E7%BB%84%E6%98%AF-2-%E4%B8%AA%E8%8D%89%E8%8E%93-%E5%86%8D%E6%95%B0%E6%9C%89-2-%E7%BB%84.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/retry-%E5%85%88%E6%95%B0%E4%B8%80%E7%BB%84%E6%98%AF-2-%E4%B8%AA%E8%8D%89%E8%8E%93-%E5%86%8D%E6%95%B0%E6%9C%89-2-%E7%BB%84.mp3"
     },
     {
       "id": "parent-问她-每组几个-一共有几组-可以几个几个地数",
       "kind": "parent",
       "text": "问她：每组几个？一共有几组？可以几个几个地数？",
-      "src": "/audio/voice/zh-CN/macos-tingting/parent-%E9%97%AE%E5%A5%B9-%E6%AF%8F%E7%BB%84%E5%87%A0%E4%B8%AA-%E4%B8%80%E5%85%B1%E6%9C%89%E5%87%A0%E7%BB%84-%E5%8F%AF%E4%BB%A5%E5%87%A0%E4%B8%AA%E5%87%A0%E4%B8%AA%E5%9C%B0%E6%95%B0.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/parent-%E9%97%AE%E5%A5%B9-%E6%AF%8F%E7%BB%84%E5%87%A0%E4%B8%AA-%E4%B8%80%E5%85%B1%E6%9C%89%E5%87%A0%E7%BB%84-%E5%8F%AF%E4%BB%A5%E5%87%A0%E4%B8%AA%E5%87%A0%E4%B8%AA%E5%9C%B0%E6%95%B0.mp3"
     },
     {
       "id": "prompt-每组放-2-个饼干-有-3-组-一共有多少个饼干-2-个一组地数-也可以先看有几组",
       "kind": "prompt",
       "text": "每组放 2 个饼干，有 3 组，一共有多少个饼干？2 个一组地数，也可以先看有几组。",
-      "src": "/audio/voice/zh-CN/macos-tingting/prompt-%E6%AF%8F%E7%BB%84%E6%94%BE-2-%E4%B8%AA%E9%A5%BC%E5%B9%B2-%E6%9C%89-3-%E7%BB%84-%E4%B8%80%E5%85%B1%E6%9C%89%E5%A4%9A%E5%B0%91%E4%B8%AA%E9%A5%BC%E5%B9%B2-2-%E4%B8%AA%E4%B8%80%E7%BB%84%E5%9C%B0%E6%95%B0-%E4%B9%9F%E5%8F%AF%E4%BB%A5%E5%85%88%E7%9C%8B%E6%9C%89%E5%87%A0%E7%BB%84.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/prompt-%E6%AF%8F%E7%BB%84%E6%94%BE-2-%E4%B8%AA%E9%A5%BC%E5%B9%B2-%E6%9C%89-3-%E7%BB%84-%E4%B8%80%E5%85%B1%E6%9C%89%E5%A4%9A%E5%B0%91%E4%B8%AA%E9%A5%BC%E5%B9%B2-2-%E4%B8%AA%E4%B8%80%E7%BB%84%E5%9C%B0%E6%95%B0-%E4%B9%9F%E5%8F%AF%E4%BB%A5%E5%85%88%E7%9C%8B%E6%9C%89%E5%87%A0%E7%BB%84.mp3"
     },
     {
       "id": "success-3-组-每组-2-个饼干-一共有-6-个饼干",
       "kind": "success",
       "text": "3 组，每组 2 个饼干，一共有 6 个饼干。",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-3-%E7%BB%84-%E6%AF%8F%E7%BB%84-2-%E4%B8%AA%E9%A5%BC%E5%B9%B2-%E4%B8%80%E5%85%B1%E6%9C%89-6-%E4%B8%AA%E9%A5%BC%E5%B9%B2.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-3-%E7%BB%84-%E6%AF%8F%E7%BB%84-2-%E4%B8%AA%E9%A5%BC%E5%B9%B2-%E4%B8%80%E5%85%B1%E6%9C%89-6-%E4%B8%AA%E9%A5%BC%E5%B9%B2.mp3"
     },
     {
       "id": "retry-先数一组是-2-个饼干-再数有-3-组",
       "kind": "retry",
       "text": "先数一组是 2 个饼干，再数有 3 组。",
-      "src": "/audio/voice/zh-CN/macos-tingting/retry-%E5%85%88%E6%95%B0%E4%B8%80%E7%BB%84%E6%98%AF-2-%E4%B8%AA%E9%A5%BC%E5%B9%B2-%E5%86%8D%E6%95%B0%E6%9C%89-3-%E7%BB%84.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/retry-%E5%85%88%E6%95%B0%E4%B8%80%E7%BB%84%E6%98%AF-2-%E4%B8%AA%E9%A5%BC%E5%B9%B2-%E5%86%8D%E6%95%B0%E6%9C%89-3-%E7%BB%84.mp3"
     },
     {
       "id": "prompt-每组放-2-颗星星-有-4-组-一共有多少颗星星-2-颗一组地数-也可以先看有几组",
       "kind": "prompt",
       "text": "每组放 2 颗星星，有 4 组，一共有多少颗星星？2 颗一组地数，也可以先看有几组。",
-      "src": "/audio/voice/zh-CN/macos-tingting/prompt-%E6%AF%8F%E7%BB%84%E6%94%BE-2-%E9%A2%97%E6%98%9F%E6%98%9F-%E6%9C%89-4-%E7%BB%84-%E4%B8%80%E5%85%B1%E6%9C%89%E5%A4%9A%E5%B0%91%E9%A2%97%E6%98%9F%E6%98%9F-2-%E9%A2%97%E4%B8%80%E7%BB%84%E5%9C%B0%E6%95%B0-%E4%B9%9F%E5%8F%AF%E4%BB%A5%E5%85%88%E7%9C%8B%E6%9C%89%E5%87%A0%E7%BB%84.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/prompt-%E6%AF%8F%E7%BB%84%E6%94%BE-2-%E9%A2%97%E6%98%9F%E6%98%9F-%E6%9C%89-4-%E7%BB%84-%E4%B8%80%E5%85%B1%E6%9C%89%E5%A4%9A%E5%B0%91%E9%A2%97%E6%98%9F%E6%98%9F-2-%E9%A2%97%E4%B8%80%E7%BB%84%E5%9C%B0%E6%95%B0-%E4%B9%9F%E5%8F%AF%E4%BB%A5%E5%85%88%E7%9C%8B%E6%9C%89%E5%87%A0%E7%BB%84.mp3"
     },
     {
       "id": "success-4-组-每组-2-颗星星-一共有-8-颗星星",
       "kind": "success",
       "text": "4 组，每组 2 颗星星，一共有 8 颗星星。",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-4-%E7%BB%84-%E6%AF%8F%E7%BB%84-2-%E9%A2%97%E6%98%9F%E6%98%9F-%E4%B8%80%E5%85%B1%E6%9C%89-8-%E9%A2%97%E6%98%9F%E6%98%9F.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-4-%E7%BB%84-%E6%AF%8F%E7%BB%84-2-%E9%A2%97%E6%98%9F%E6%98%9F-%E4%B8%80%E5%85%B1%E6%9C%89-8-%E9%A2%97%E6%98%9F%E6%98%9F.mp3"
     },
     {
       "id": "retry-先数一组是-2-颗星星-再数有-4-组",
       "kind": "retry",
       "text": "先数一组是 2 颗星星，再数有 4 组。",
-      "src": "/audio/voice/zh-CN/macos-tingting/retry-%E5%85%88%E6%95%B0%E4%B8%80%E7%BB%84%E6%98%AF-2-%E9%A2%97%E6%98%9F%E6%98%9F-%E5%86%8D%E6%95%B0%E6%9C%89-4-%E7%BB%84.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/retry-%E5%85%88%E6%95%B0%E4%B8%80%E7%BB%84%E6%98%AF-2-%E9%A2%97%E6%98%9F%E6%98%9F-%E5%86%8D%E6%95%B0%E6%9C%89-4-%E7%BB%84.mp3"
     },
     {
       "id": "prompt-每组放-3-个苹果-有-2-组-一共有多少个苹果-3-个一组地数-也可以先看有几组",
       "kind": "prompt",
       "text": "每组放 3 个苹果，有 2 组，一共有多少个苹果？3 个一组地数，也可以先看有几组。",
-      "src": "/audio/voice/zh-CN/macos-tingting/prompt-%E6%AF%8F%E7%BB%84%E6%94%BE-3-%E4%B8%AA%E8%8B%B9%E6%9E%9C-%E6%9C%89-2-%E7%BB%84-%E4%B8%80%E5%85%B1%E6%9C%89%E5%A4%9A%E5%B0%91%E4%B8%AA%E8%8B%B9%E6%9E%9C-3-%E4%B8%AA%E4%B8%80%E7%BB%84%E5%9C%B0%E6%95%B0-%E4%B9%9F%E5%8F%AF%E4%BB%A5%E5%85%88%E7%9C%8B%E6%9C%89%E5%87%A0%E7%BB%84.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/prompt-%E6%AF%8F%E7%BB%84%E6%94%BE-3-%E4%B8%AA%E8%8B%B9%E6%9E%9C-%E6%9C%89-2-%E7%BB%84-%E4%B8%80%E5%85%B1%E6%9C%89%E5%A4%9A%E5%B0%91%E4%B8%AA%E8%8B%B9%E6%9E%9C-3-%E4%B8%AA%E4%B8%80%E7%BB%84%E5%9C%B0%E6%95%B0-%E4%B9%9F%E5%8F%AF%E4%BB%A5%E5%85%88%E7%9C%8B%E6%9C%89%E5%87%A0%E7%BB%84.mp3"
     },
     {
       "id": "success-2-组-每组-3-个苹果-一共有-6-个苹果",
       "kind": "success",
       "text": "2 组，每组 3 个苹果，一共有 6 个苹果。",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-2-%E7%BB%84-%E6%AF%8F%E7%BB%84-3-%E4%B8%AA%E8%8B%B9%E6%9E%9C-%E4%B8%80%E5%85%B1%E6%9C%89-6-%E4%B8%AA%E8%8B%B9%E6%9E%9C.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-2-%E7%BB%84-%E6%AF%8F%E7%BB%84-3-%E4%B8%AA%E8%8B%B9%E6%9E%9C-%E4%B8%80%E5%85%B1%E6%9C%89-6-%E4%B8%AA%E8%8B%B9%E6%9E%9C.mp3"
     },
     {
       "id": "retry-先数一组是-3-个苹果-再数有-2-组",
       "kind": "retry",
       "text": "先数一组是 3 个苹果，再数有 2 组。",
-      "src": "/audio/voice/zh-CN/macos-tingting/retry-%E5%85%88%E6%95%B0%E4%B8%80%E7%BB%84%E6%98%AF-3-%E4%B8%AA%E8%8B%B9%E6%9E%9C-%E5%86%8D%E6%95%B0%E6%9C%89-2-%E7%BB%84.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/retry-%E5%85%88%E6%95%B0%E4%B8%80%E7%BB%84%E6%98%AF-3-%E4%B8%AA%E8%8B%B9%E6%9E%9C-%E5%86%8D%E6%95%B0%E6%9C%89-2-%E7%BB%84.mp3"
     },
     {
       "id": "prompt-每组放-3-个橘子-有-3-组-一共有多少个橘子-3-个一组地数-也可以先看有几组",
       "kind": "prompt",
       "text": "每组放 3 个橘子，有 3 组，一共有多少个橘子？3 个一组地数，也可以先看有几组。",
-      "src": "/audio/voice/zh-CN/macos-tingting/prompt-%E6%AF%8F%E7%BB%84%E6%94%BE-3-%E4%B8%AA%E6%A9%98%E5%AD%90-%E6%9C%89-3-%E7%BB%84-%E4%B8%80%E5%85%B1%E6%9C%89%E5%A4%9A%E5%B0%91%E4%B8%AA%E6%A9%98%E5%AD%90-3-%E4%B8%AA%E4%B8%80%E7%BB%84%E5%9C%B0%E6%95%B0-%E4%B9%9F%E5%8F%AF%E4%BB%A5%E5%85%88%E7%9C%8B%E6%9C%89%E5%87%A0%E7%BB%84.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/prompt-%E6%AF%8F%E7%BB%84%E6%94%BE-3-%E4%B8%AA%E6%A9%98%E5%AD%90-%E6%9C%89-3-%E7%BB%84-%E4%B8%80%E5%85%B1%E6%9C%89%E5%A4%9A%E5%B0%91%E4%B8%AA%E6%A9%98%E5%AD%90-3-%E4%B8%AA%E4%B8%80%E7%BB%84%E5%9C%B0%E6%95%B0-%E4%B9%9F%E5%8F%AF%E4%BB%A5%E5%85%88%E7%9C%8B%E6%9C%89%E5%87%A0%E7%BB%84.mp3"
     },
     {
       "id": "success-3-组-每组-3-个橘子-一共有-9-个橘子",
       "kind": "success",
       "text": "3 组，每组 3 个橘子，一共有 9 个橘子。",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-3-%E7%BB%84-%E6%AF%8F%E7%BB%84-3-%E4%B8%AA%E6%A9%98%E5%AD%90-%E4%B8%80%E5%85%B1%E6%9C%89-9-%E4%B8%AA%E6%A9%98%E5%AD%90.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-3-%E7%BB%84-%E6%AF%8F%E7%BB%84-3-%E4%B8%AA%E6%A9%98%E5%AD%90-%E4%B8%80%E5%85%B1%E6%9C%89-9-%E4%B8%AA%E6%A9%98%E5%AD%90.mp3"
     },
     {
       "id": "retry-先数一组是-3-个橘子-再数有-3-组",
       "kind": "retry",
       "text": "先数一组是 3 个橘子，再数有 3 组。",
-      "src": "/audio/voice/zh-CN/macos-tingting/retry-%E5%85%88%E6%95%B0%E4%B8%80%E7%BB%84%E6%98%AF-3-%E4%B8%AA%E6%A9%98%E5%AD%90-%E5%86%8D%E6%95%B0%E6%9C%89-3-%E7%BB%84.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/retry-%E5%85%88%E6%95%B0%E4%B8%80%E7%BB%84%E6%98%AF-3-%E4%B8%AA%E6%A9%98%E5%AD%90-%E5%86%8D%E6%95%B0%E6%9C%89-3-%E7%BB%84.mp3"
     },
     {
       "id": "prompt-每组放-3-个积木-有-4-组-一共有多少个积木-3-个一组地数-也可以先看有几组",
       "kind": "prompt",
       "text": "每组放 3 个积木，有 4 组，一共有多少个积木？3 个一组地数，也可以先看有几组。",
-      "src": "/audio/voice/zh-CN/macos-tingting/prompt-%E6%AF%8F%E7%BB%84%E6%94%BE-3-%E4%B8%AA%E7%A7%AF%E6%9C%A8-%E6%9C%89-4-%E7%BB%84-%E4%B8%80%E5%85%B1%E6%9C%89%E5%A4%9A%E5%B0%91%E4%B8%AA%E7%A7%AF%E6%9C%A8-3-%E4%B8%AA%E4%B8%80%E7%BB%84%E5%9C%B0%E6%95%B0-%E4%B9%9F%E5%8F%AF%E4%BB%A5%E5%85%88%E7%9C%8B%E6%9C%89%E5%87%A0%E7%BB%84.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/prompt-%E6%AF%8F%E7%BB%84%E6%94%BE-3-%E4%B8%AA%E7%A7%AF%E6%9C%A8-%E6%9C%89-4-%E7%BB%84-%E4%B8%80%E5%85%B1%E6%9C%89%E5%A4%9A%E5%B0%91%E4%B8%AA%E7%A7%AF%E6%9C%A8-3-%E4%B8%AA%E4%B8%80%E7%BB%84%E5%9C%B0%E6%95%B0-%E4%B9%9F%E5%8F%AF%E4%BB%A5%E5%85%88%E7%9C%8B%E6%9C%89%E5%87%A0%E7%BB%84.mp3"
     },
     {
       "id": "success-4-组-每组-3-个积木-一共有-12-个积木",
       "kind": "success",
       "text": "4 组，每组 3 个积木，一共有 12 个积木。",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-4-%E7%BB%84-%E6%AF%8F%E7%BB%84-3-%E4%B8%AA%E7%A7%AF%E6%9C%A8-%E4%B8%80%E5%85%B1%E6%9C%89-12-%E4%B8%AA%E7%A7%AF%E6%9C%A8.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-4-%E7%BB%84-%E6%AF%8F%E7%BB%84-3-%E4%B8%AA%E7%A7%AF%E6%9C%A8-%E4%B8%80%E5%85%B1%E6%9C%89-12-%E4%B8%AA%E7%A7%AF%E6%9C%A8.mp3"
     },
     {
       "id": "retry-先数一组是-3-个积木-再数有-4-组",
       "kind": "retry",
       "text": "先数一组是 3 个积木，再数有 4 组。",
-      "src": "/audio/voice/zh-CN/macos-tingting/retry-%E5%85%88%E6%95%B0%E4%B8%80%E7%BB%84%E6%98%AF-3-%E4%B8%AA%E7%A7%AF%E6%9C%A8-%E5%86%8D%E6%95%B0%E6%9C%89-4-%E7%BB%84.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/retry-%E5%85%88%E6%95%B0%E4%B8%80%E7%BB%84%E6%98%AF-3-%E4%B8%AA%E7%A7%AF%E6%9C%A8-%E5%86%8D%E6%95%B0%E6%9C%89-4-%E7%BB%84.mp3"
     },
     {
       "id": "choice-11",
@@ -2034,139 +2012,139 @@
       "id": "choice-13",
       "kind": "choice",
       "text": "13",
-      "src": "/audio/voice/zh-CN/macos-tingting/choice-13.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/choice-13.mp3"
     },
     {
       "id": "prompt-每组放-4-个糖果-有-2-组-一共有多少个糖果-4-个一组地数-也可以先看有几组",
       "kind": "prompt",
       "text": "每组放 4 个糖果，有 2 组，一共有多少个糖果？4 个一组地数，也可以先看有几组。",
-      "src": "/audio/voice/zh-CN/macos-tingting/prompt-%E6%AF%8F%E7%BB%84%E6%94%BE-4-%E4%B8%AA%E7%B3%96%E6%9E%9C-%E6%9C%89-2-%E7%BB%84-%E4%B8%80%E5%85%B1%E6%9C%89%E5%A4%9A%E5%B0%91%E4%B8%AA%E7%B3%96%E6%9E%9C-4-%E4%B8%AA%E4%B8%80%E7%BB%84%E5%9C%B0%E6%95%B0-%E4%B9%9F%E5%8F%AF%E4%BB%A5%E5%85%88%E7%9C%8B%E6%9C%89%E5%87%A0%E7%BB%84.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/prompt-%E6%AF%8F%E7%BB%84%E6%94%BE-4-%E4%B8%AA%E7%B3%96%E6%9E%9C-%E6%9C%89-2-%E7%BB%84-%E4%B8%80%E5%85%B1%E6%9C%89%E5%A4%9A%E5%B0%91%E4%B8%AA%E7%B3%96%E6%9E%9C-4-%E4%B8%AA%E4%B8%80%E7%BB%84%E5%9C%B0%E6%95%B0-%E4%B9%9F%E5%8F%AF%E4%BB%A5%E5%85%88%E7%9C%8B%E6%9C%89%E5%87%A0%E7%BB%84.mp3"
     },
     {
       "id": "success-2-组-每组-4-个糖果-一共有-8-个糖果",
       "kind": "success",
       "text": "2 组，每组 4 个糖果，一共有 8 个糖果。",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-2-%E7%BB%84-%E6%AF%8F%E7%BB%84-4-%E4%B8%AA%E7%B3%96%E6%9E%9C-%E4%B8%80%E5%85%B1%E6%9C%89-8-%E4%B8%AA%E7%B3%96%E6%9E%9C.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-2-%E7%BB%84-%E6%AF%8F%E7%BB%84-4-%E4%B8%AA%E7%B3%96%E6%9E%9C-%E4%B8%80%E5%85%B1%E6%9C%89-8-%E4%B8%AA%E7%B3%96%E6%9E%9C.mp3"
     },
     {
       "id": "retry-先数一组是-4-个糖果-再数有-2-组",
       "kind": "retry",
       "text": "先数一组是 4 个糖果，再数有 2 组。",
-      "src": "/audio/voice/zh-CN/macos-tingting/retry-%E5%85%88%E6%95%B0%E4%B8%80%E7%BB%84%E6%98%AF-4-%E4%B8%AA%E7%B3%96%E6%9E%9C-%E5%86%8D%E6%95%B0%E6%9C%89-2-%E7%BB%84.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/retry-%E5%85%88%E6%95%B0%E4%B8%80%E7%BB%84%E6%98%AF-4-%E4%B8%AA%E7%B3%96%E6%9E%9C-%E5%86%8D%E6%95%B0%E6%9C%89-2-%E7%BB%84.mp3"
     },
     {
       "id": "prompt-每组放-4-条小鱼-有-3-组-一共有多少条小鱼-4-条一组地数-也可以先看有几组",
       "kind": "prompt",
       "text": "每组放 4 条小鱼，有 3 组，一共有多少条小鱼？4 条一组地数，也可以先看有几组。",
-      "src": "/audio/voice/zh-CN/macos-tingting/prompt-%E6%AF%8F%E7%BB%84%E6%94%BE-4-%E6%9D%A1%E5%B0%8F%E9%B1%BC-%E6%9C%89-3-%E7%BB%84-%E4%B8%80%E5%85%B1%E6%9C%89%E5%A4%9A%E5%B0%91%E6%9D%A1%E5%B0%8F%E9%B1%BC-4-%E6%9D%A1%E4%B8%80%E7%BB%84%E5%9C%B0%E6%95%B0-%E4%B9%9F%E5%8F%AF%E4%BB%A5%E5%85%88%E7%9C%8B%E6%9C%89%E5%87%A0%E7%BB%84.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/prompt-%E6%AF%8F%E7%BB%84%E6%94%BE-4-%E6%9D%A1%E5%B0%8F%E9%B1%BC-%E6%9C%89-3-%E7%BB%84-%E4%B8%80%E5%85%B1%E6%9C%89%E5%A4%9A%E5%B0%91%E6%9D%A1%E5%B0%8F%E9%B1%BC-4-%E6%9D%A1%E4%B8%80%E7%BB%84%E5%9C%B0%E6%95%B0-%E4%B9%9F%E5%8F%AF%E4%BB%A5%E5%85%88%E7%9C%8B%E6%9C%89%E5%87%A0%E7%BB%84.mp3"
     },
     {
       "id": "success-3-组-每组-4-条小鱼-一共有-12-条小鱼",
       "kind": "success",
       "text": "3 组，每组 4 条小鱼，一共有 12 条小鱼。",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-3-%E7%BB%84-%E6%AF%8F%E7%BB%84-4-%E6%9D%A1%E5%B0%8F%E9%B1%BC-%E4%B8%80%E5%85%B1%E6%9C%89-12-%E6%9D%A1%E5%B0%8F%E9%B1%BC.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-3-%E7%BB%84-%E6%AF%8F%E7%BB%84-4-%E6%9D%A1%E5%B0%8F%E9%B1%BC-%E4%B8%80%E5%85%B1%E6%9C%89-12-%E6%9D%A1%E5%B0%8F%E9%B1%BC.mp3"
     },
     {
       "id": "retry-先数一组是-4-条小鱼-再数有-3-组",
       "kind": "retry",
       "text": "先数一组是 4 条小鱼，再数有 3 组。",
-      "src": "/audio/voice/zh-CN/macos-tingting/retry-%E5%85%88%E6%95%B0%E4%B8%80%E7%BB%84%E6%98%AF-4-%E6%9D%A1%E5%B0%8F%E9%B1%BC-%E5%86%8D%E6%95%B0%E6%9C%89-3-%E7%BB%84.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/retry-%E5%85%88%E6%95%B0%E4%B8%80%E7%BB%84%E6%98%AF-4-%E6%9D%A1%E5%B0%8F%E9%B1%BC-%E5%86%8D%E6%95%B0%E6%9C%89-3-%E7%BB%84.mp3"
     },
     {
       "id": "prompt-每组放-5-只小鸟-有-2-组-一共有多少只小鸟-5-只一组地数-也可以先看有几组",
       "kind": "prompt",
       "text": "每组放 5 只小鸟，有 2 组，一共有多少只小鸟？5 只一组地数，也可以先看有几组。",
-      "src": "/audio/voice/zh-CN/macos-tingting/prompt-%E6%AF%8F%E7%BB%84%E6%94%BE-5-%E5%8F%AA%E5%B0%8F%E9%B8%9F-%E6%9C%89-2-%E7%BB%84-%E4%B8%80%E5%85%B1%E6%9C%89%E5%A4%9A%E5%B0%91%E5%8F%AA%E5%B0%8F%E9%B8%9F-5-%E5%8F%AA%E4%B8%80%E7%BB%84%E5%9C%B0%E6%95%B0-%E4%B9%9F%E5%8F%AF%E4%BB%A5%E5%85%88%E7%9C%8B%E6%9C%89%E5%87%A0%E7%BB%84.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/prompt-%E6%AF%8F%E7%BB%84%E6%94%BE-5-%E5%8F%AA%E5%B0%8F%E9%B8%9F-%E6%9C%89-2-%E7%BB%84-%E4%B8%80%E5%85%B1%E6%9C%89%E5%A4%9A%E5%B0%91%E5%8F%AA%E5%B0%8F%E9%B8%9F-5-%E5%8F%AA%E4%B8%80%E7%BB%84%E5%9C%B0%E6%95%B0-%E4%B9%9F%E5%8F%AF%E4%BB%A5%E5%85%88%E7%9C%8B%E6%9C%89%E5%87%A0%E7%BB%84.mp3"
     },
     {
       "id": "success-2-组-每组-5-只小鸟-一共有-10-只小鸟",
       "kind": "success",
       "text": "2 组，每组 5 只小鸟，一共有 10 只小鸟。",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-2-%E7%BB%84-%E6%AF%8F%E7%BB%84-5-%E5%8F%AA%E5%B0%8F%E9%B8%9F-%E4%B8%80%E5%85%B1%E6%9C%89-10-%E5%8F%AA%E5%B0%8F%E9%B8%9F.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-2-%E7%BB%84-%E6%AF%8F%E7%BB%84-5-%E5%8F%AA%E5%B0%8F%E9%B8%9F-%E4%B8%80%E5%85%B1%E6%9C%89-10-%E5%8F%AA%E5%B0%8F%E9%B8%9F.mp3"
     },
     {
       "id": "retry-先数一组是-5-只小鸟-再数有-2-组",
       "kind": "retry",
       "text": "先数一组是 5 只小鸟，再数有 2 组。",
-      "src": "/audio/voice/zh-CN/macos-tingting/retry-%E5%85%88%E6%95%B0%E4%B8%80%E7%BB%84%E6%98%AF-5-%E5%8F%AA%E5%B0%8F%E9%B8%9F-%E5%86%8D%E6%95%B0%E6%9C%89-2-%E7%BB%84.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/retry-%E5%85%88%E6%95%B0%E4%B8%80%E7%BB%84%E6%98%AF-5-%E5%8F%AA%E5%B0%8F%E9%B8%9F-%E5%86%8D%E6%95%B0%E6%9C%89-2-%E7%BB%84.mp3"
     },
     {
       "id": "prompt-每组放-2-个草莓-有-5-组-一共有多少个草莓-2-个一组地数-也可以先看有几组",
       "kind": "prompt",
       "text": "每组放 2 个草莓，有 5 组，一共有多少个草莓？2 个一组地数，也可以先看有几组。",
-      "src": "/audio/voice/zh-CN/macos-tingting/prompt-%E6%AF%8F%E7%BB%84%E6%94%BE-2-%E4%B8%AA%E8%8D%89%E8%8E%93-%E6%9C%89-5-%E7%BB%84-%E4%B8%80%E5%85%B1%E6%9C%89%E5%A4%9A%E5%B0%91%E4%B8%AA%E8%8D%89%E8%8E%93-2-%E4%B8%AA%E4%B8%80%E7%BB%84%E5%9C%B0%E6%95%B0-%E4%B9%9F%E5%8F%AF%E4%BB%A5%E5%85%88%E7%9C%8B%E6%9C%89%E5%87%A0%E7%BB%84.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/prompt-%E6%AF%8F%E7%BB%84%E6%94%BE-2-%E4%B8%AA%E8%8D%89%E8%8E%93-%E6%9C%89-5-%E7%BB%84-%E4%B8%80%E5%85%B1%E6%9C%89%E5%A4%9A%E5%B0%91%E4%B8%AA%E8%8D%89%E8%8E%93-2-%E4%B8%AA%E4%B8%80%E7%BB%84%E5%9C%B0%E6%95%B0-%E4%B9%9F%E5%8F%AF%E4%BB%A5%E5%85%88%E7%9C%8B%E6%9C%89%E5%87%A0%E7%BB%84.mp3"
     },
     {
       "id": "success-5-组-每组-2-个草莓-一共有-10-个草莓",
       "kind": "success",
       "text": "5 组，每组 2 个草莓，一共有 10 个草莓。",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-5-%E7%BB%84-%E6%AF%8F%E7%BB%84-2-%E4%B8%AA%E8%8D%89%E8%8E%93-%E4%B8%80%E5%85%B1%E6%9C%89-10-%E4%B8%AA%E8%8D%89%E8%8E%93.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-5-%E7%BB%84-%E6%AF%8F%E7%BB%84-2-%E4%B8%AA%E8%8D%89%E8%8E%93-%E4%B8%80%E5%85%B1%E6%9C%89-10-%E4%B8%AA%E8%8D%89%E8%8E%93.mp3"
     },
     {
       "id": "retry-先数一组是-2-个草莓-再数有-5-组",
       "kind": "retry",
       "text": "先数一组是 2 个草莓，再数有 5 组。",
-      "src": "/audio/voice/zh-CN/macos-tingting/retry-%E5%85%88%E6%95%B0%E4%B8%80%E7%BB%84%E6%98%AF-2-%E4%B8%AA%E8%8D%89%E8%8E%93-%E5%86%8D%E6%95%B0%E6%9C%89-5-%E7%BB%84.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/retry-%E5%85%88%E6%95%B0%E4%B8%80%E7%BB%84%E6%98%AF-2-%E4%B8%AA%E8%8D%89%E8%8E%93-%E5%86%8D%E6%95%B0%E6%9C%89-5-%E7%BB%84.mp3"
     },
     {
       "id": "prompt-每组放-3-个积木-有-5-组-一共有多少个积木-3-个一组地数-也可以先看有几组",
       "kind": "prompt",
       "text": "每组放 3 个积木，有 5 组，一共有多少个积木？3 个一组地数，也可以先看有几组。",
-      "src": "/audio/voice/zh-CN/macos-tingting/prompt-%E6%AF%8F%E7%BB%84%E6%94%BE-3-%E4%B8%AA%E7%A7%AF%E6%9C%A8-%E6%9C%89-5-%E7%BB%84-%E4%B8%80%E5%85%B1%E6%9C%89%E5%A4%9A%E5%B0%91%E4%B8%AA%E7%A7%AF%E6%9C%A8-3-%E4%B8%AA%E4%B8%80%E7%BB%84%E5%9C%B0%E6%95%B0-%E4%B9%9F%E5%8F%AF%E4%BB%A5%E5%85%88%E7%9C%8B%E6%9C%89%E5%87%A0%E7%BB%84.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/prompt-%E6%AF%8F%E7%BB%84%E6%94%BE-3-%E4%B8%AA%E7%A7%AF%E6%9C%A8-%E6%9C%89-5-%E7%BB%84-%E4%B8%80%E5%85%B1%E6%9C%89%E5%A4%9A%E5%B0%91%E4%B8%AA%E7%A7%AF%E6%9C%A8-3-%E4%B8%AA%E4%B8%80%E7%BB%84%E5%9C%B0%E6%95%B0-%E4%B9%9F%E5%8F%AF%E4%BB%A5%E5%85%88%E7%9C%8B%E6%9C%89%E5%87%A0%E7%BB%84.mp3"
     },
     {
       "id": "success-5-组-每组-3-个积木-一共有-15-个积木",
       "kind": "success",
       "text": "5 组，每组 3 个积木，一共有 15 个积木。",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-5-%E7%BB%84-%E6%AF%8F%E7%BB%84-3-%E4%B8%AA%E7%A7%AF%E6%9C%A8-%E4%B8%80%E5%85%B1%E6%9C%89-15-%E4%B8%AA%E7%A7%AF%E6%9C%A8.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-5-%E7%BB%84-%E6%AF%8F%E7%BB%84-3-%E4%B8%AA%E7%A7%AF%E6%9C%A8-%E4%B8%80%E5%85%B1%E6%9C%89-15-%E4%B8%AA%E7%A7%AF%E6%9C%A8.mp3"
     },
     {
       "id": "retry-先数一组是-3-个积木-再数有-5-组",
       "kind": "retry",
       "text": "先数一组是 3 个积木，再数有 5 组。",
-      "src": "/audio/voice/zh-CN/macos-tingting/retry-%E5%85%88%E6%95%B0%E4%B8%80%E7%BB%84%E6%98%AF-3-%E4%B8%AA%E7%A7%AF%E6%9C%A8-%E5%86%8D%E6%95%B0%E6%9C%89-5-%E7%BB%84.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/retry-%E5%85%88%E6%95%B0%E4%B8%80%E7%BB%84%E6%98%AF-3-%E4%B8%AA%E7%A7%AF%E6%9C%A8-%E5%86%8D%E6%95%B0%E6%9C%89-5-%E7%BB%84.mp3"
     },
     {
       "id": "choice-14",
       "kind": "choice",
       "text": "14",
-      "src": "/audio/voice/zh-CN/macos-tingting/choice-14.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/choice-14.mp3"
     },
     {
       "id": "choice-15",
       "kind": "choice",
       "text": "15",
-      "src": "/audio/voice/zh-CN/macos-tingting/choice-15.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/choice-15.mp3"
     },
     {
       "id": "choice-16",
       "kind": "choice",
       "text": "16",
-      "src": "/audio/voice/zh-CN/macos-tingting/choice-16.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/choice-16.mp3"
     },
     {
       "id": "prompt-每组放-4-颗星星-有-4-组-一共有多少颗星星-4-颗一组地数-也可以先看有几组",
       "kind": "prompt",
       "text": "每组放 4 颗星星，有 4 组，一共有多少颗星星？4 颗一组地数，也可以先看有几组。",
-      "src": "/audio/voice/zh-CN/macos-tingting/prompt-%E6%AF%8F%E7%BB%84%E6%94%BE-4-%E9%A2%97%E6%98%9F%E6%98%9F-%E6%9C%89-4-%E7%BB%84-%E4%B8%80%E5%85%B1%E6%9C%89%E5%A4%9A%E5%B0%91%E9%A2%97%E6%98%9F%E6%98%9F-4-%E9%A2%97%E4%B8%80%E7%BB%84%E5%9C%B0%E6%95%B0-%E4%B9%9F%E5%8F%AF%E4%BB%A5%E5%85%88%E7%9C%8B%E6%9C%89%E5%87%A0%E7%BB%84.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/prompt-%E6%AF%8F%E7%BB%84%E6%94%BE-4-%E9%A2%97%E6%98%9F%E6%98%9F-%E6%9C%89-4-%E7%BB%84-%E4%B8%80%E5%85%B1%E6%9C%89%E5%A4%9A%E5%B0%91%E9%A2%97%E6%98%9F%E6%98%9F-4-%E9%A2%97%E4%B8%80%E7%BB%84%E5%9C%B0%E6%95%B0-%E4%B9%9F%E5%8F%AF%E4%BB%A5%E5%85%88%E7%9C%8B%E6%9C%89%E5%87%A0%E7%BB%84.mp3"
     },
     {
       "id": "success-4-组-每组-4-颗星星-一共有-16-颗星星",
       "kind": "success",
       "text": "4 组，每组 4 颗星星，一共有 16 颗星星。",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-4-%E7%BB%84-%E6%AF%8F%E7%BB%84-4-%E9%A2%97%E6%98%9F%E6%98%9F-%E4%B8%80%E5%85%B1%E6%9C%89-16-%E9%A2%97%E6%98%9F%E6%98%9F.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-4-%E7%BB%84-%E6%AF%8F%E7%BB%84-4-%E9%A2%97%E6%98%9F%E6%98%9F-%E4%B8%80%E5%85%B1%E6%9C%89-16-%E9%A2%97%E6%98%9F%E6%98%9F.mp3"
     },
     {
       "id": "retry-先数一组是-4-颗星星-再数有-4-组",
       "kind": "retry",
       "text": "先数一组是 4 颗星星，再数有 4 组。",
-      "src": "/audio/voice/zh-CN/macos-tingting/retry-%E5%85%88%E6%95%B0%E4%B8%80%E7%BB%84%E6%98%AF-4-%E9%A2%97%E6%98%9F%E6%98%9F-%E5%86%8D%E6%95%B0%E6%9C%89-4-%E7%BB%84.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/retry-%E5%85%88%E6%95%B0%E4%B8%80%E7%BB%84%E6%98%AF-4-%E9%A2%97%E6%98%9F%E6%98%9F-%E5%86%8D%E6%95%B0%E6%9C%89-4-%E7%BB%84.mp3"
     },
     {
       "id": "choice-17",
       "kind": "choice",
       "text": "17",
-      "src": "/audio/voice/zh-CN/macos-tingting/choice-17.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/choice-17.mp3"
     },
     {
       "id": "game-title-找规律火车",
@@ -2184,19 +2162,19 @@
       "id": "prompt-找规律-接下来是什么-先说出重复顺序-再选空格里的图",
       "kind": "prompt",
       "text": "找规律，接下来是什么？先说出重复顺序，再选空格里的图。",
-      "src": "/audio/voice/zh-CN/macos-tingting/prompt-%E6%89%BE%E8%A7%84%E5%BE%8B-%E6%8E%A5%E4%B8%8B%E6%9D%A5%E6%98%AF%E4%BB%80%E4%B9%88-%E5%85%88%E8%AF%B4%E5%87%BA%E9%87%8D%E5%A4%8D%E9%A1%BA%E5%BA%8F-%E5%86%8D%E9%80%89%E7%A9%BA%E6%A0%BC%E9%87%8C%E7%9A%84%E5%9B%BE.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/prompt-%E6%89%BE%E8%A7%84%E5%BE%8B-%E6%8E%A5%E4%B8%8B%E6%9D%A5%E6%98%AF%E4%BB%80%E4%B9%88-%E5%85%88%E8%AF%B4%E5%87%BA%E9%87%8D%E5%A4%8D%E9%A1%BA%E5%BA%8F-%E5%86%8D%E9%80%89%E7%A9%BA%E6%A0%BC%E9%87%8C%E7%9A%84%E5%9B%BE.mp3"
     },
     {
       "id": "success-规律是-红-蓝-这里应该是蓝色圆片",
       "kind": "success",
       "text": "规律是 红、蓝，这里应该是蓝色圆片。",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-%E8%A7%84%E5%BE%8B%E6%98%AF-%E7%BA%A2-%E8%93%9D-%E8%BF%99%E9%87%8C%E5%BA%94%E8%AF%A5%E6%98%AF%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-%E8%A7%84%E5%BE%8B%E6%98%AF-%E7%BA%A2-%E8%93%9D-%E8%BF%99%E9%87%8C%E5%BA%94%E8%AF%A5%E6%98%AF%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87.mp3"
     },
     {
       "id": "retry-从头念一念-按同样的顺序找空格",
       "kind": "retry",
       "text": "从头念一念，按同样的顺序找空格。",
-      "src": "/audio/voice/zh-CN/macos-tingting/retry-%E4%BB%8E%E5%A4%B4%E5%BF%B5%E4%B8%80%E5%BF%B5-%E6%8C%89%E5%90%8C%E6%A0%B7%E7%9A%84%E9%A1%BA%E5%BA%8F%E6%89%BE%E7%A9%BA%E6%A0%BC.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/retry-%E4%BB%8E%E5%A4%B4%E5%BF%B5%E4%B8%80%E5%BF%B5-%E6%8C%89%E5%90%8C%E6%A0%B7%E7%9A%84%E9%A1%BA%E5%BA%8F%E6%89%BE%E7%A9%BA%E6%A0%BC.mp3"
     },
     {
       "id": "parent-问她-这一组里有几个-它怎么重复",
@@ -2229,12 +2207,6 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/object-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87.mp3"
     },
     {
-      "id": "object-蓝色圆片",
-      "kind": "object",
-      "text": "蓝色圆片",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/object-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87.mp3"
-    },
-    {
       "id": "object-待补位置",
       "kind": "object",
       "text": "待补位置",
@@ -2244,19 +2216,19 @@
       "id": "prompt-找规律-空格里是什么-先说出重复顺序-再选空格里的图",
       "kind": "prompt",
       "text": "找规律，空格里是什么？先说出重复顺序，再选空格里的图。",
-      "src": "/audio/voice/zh-CN/macos-tingting/prompt-%E6%89%BE%E8%A7%84%E5%BE%8B-%E7%A9%BA%E6%A0%BC%E9%87%8C%E6%98%AF%E4%BB%80%E4%B9%88-%E5%85%88%E8%AF%B4%E5%87%BA%E9%87%8D%E5%A4%8D%E9%A1%BA%E5%BA%8F-%E5%86%8D%E9%80%89%E7%A9%BA%E6%A0%BC%E9%87%8C%E7%9A%84%E5%9B%BE.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/prompt-%E6%89%BE%E8%A7%84%E5%BE%8B-%E7%A9%BA%E6%A0%BC%E9%87%8C%E6%98%AF%E4%BB%80%E4%B9%88-%E5%85%88%E8%AF%B4%E5%87%BA%E9%87%8D%E5%A4%8D%E9%A1%BA%E5%BA%8F-%E5%86%8D%E9%80%89%E7%A9%BA%E6%A0%BC%E9%87%8C%E7%9A%84%E5%9B%BE.mp3"
     },
     {
       "id": "success-规律是-红-蓝-这里应该是红色圆片",
       "kind": "success",
       "text": "规律是 红、蓝，这里应该是红色圆片。",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-%E8%A7%84%E5%BE%8B%E6%98%AF-%E7%BA%A2-%E8%93%9D-%E8%BF%99%E9%87%8C%E5%BA%94%E8%AF%A5%E6%98%AF%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-%E8%A7%84%E5%BE%8B%E6%98%AF-%E7%BA%A2-%E8%93%9D-%E8%BF%99%E9%87%8C%E5%BA%94%E8%AF%A5%E6%98%AF%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87.mp3"
     },
     {
       "id": "success-规律是-黄-绿-这里应该是绿色圆片",
       "kind": "success",
       "text": "规律是 黄、绿，这里应该是绿色圆片。",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-%E8%A7%84%E5%BE%8B%E6%98%AF-%E9%BB%84-%E7%BB%BF-%E8%BF%99%E9%87%8C%E5%BA%94%E8%AF%A5%E6%98%AF%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-%E8%A7%84%E5%BE%8B%E6%98%AF-%E9%BB%84-%E7%BB%BF-%E8%BF%99%E9%87%8C%E5%BA%94%E8%AF%A5%E6%98%AF%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87.mp3"
     },
     {
       "id": "choice-绿色圆片",
@@ -2268,13 +2240,13 @@
       "id": "success-规律是-黄-绿-这里应该是黄色圆片",
       "kind": "success",
       "text": "规律是 黄、绿，这里应该是黄色圆片。",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-%E8%A7%84%E5%BE%8B%E6%98%AF-%E9%BB%84-%E7%BB%BF-%E8%BF%99%E9%87%8C%E5%BA%94%E8%AF%A5%E6%98%AF%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-%E8%A7%84%E5%BE%8B%E6%98%AF-%E9%BB%84-%E7%BB%BF-%E8%BF%99%E9%87%8C%E5%BA%94%E8%AF%A5%E6%98%AF%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87.mp3"
     },
     {
       "id": "success-规律是-太阳-月亮-这里应该是月亮",
       "kind": "success",
       "text": "规律是 太阳、月亮，这里应该是月亮。",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-%E8%A7%84%E5%BE%8B%E6%98%AF-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E8%BF%99%E9%87%8C%E5%BA%94%E8%AF%A5%E6%98%AF%E6%9C%88%E4%BA%AE.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-%E8%A7%84%E5%BE%8B%E6%98%AF-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E8%BF%99%E9%87%8C%E5%BA%94%E8%AF%A5%E6%98%AF%E6%9C%88%E4%BA%AE.mp3"
     },
     {
       "id": "choice-月亮",
@@ -2298,7 +2270,7 @@
       "id": "success-规律是-太阳-月亮-这里应该是太阳",
       "kind": "success",
       "text": "规律是 太阳、月亮，这里应该是太阳。",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-%E8%A7%84%E5%BE%8B%E6%98%AF-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E8%BF%99%E9%87%8C%E5%BA%94%E8%AF%A5%E6%98%AF%E5%A4%AA%E9%98%B3.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-%E8%A7%84%E5%BE%8B%E6%98%AF-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E8%BF%99%E9%87%8C%E5%BA%94%E8%AF%A5%E6%98%AF%E5%A4%AA%E9%98%B3.mp3"
     },
     {
       "id": "choice-太阳",
@@ -2310,7 +2282,7 @@
       "id": "success-规律是-一大两小-这里应该是小圆",
       "kind": "success",
       "text": "规律是 一大两小，这里应该是小圆。",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-%E8%A7%84%E5%BE%8B%E6%98%AF-%E4%B8%80%E5%A4%A7%E4%B8%A4%E5%B0%8F-%E8%BF%99%E9%87%8C%E5%BA%94%E8%AF%A5%E6%98%AF%E5%B0%8F%E5%9C%86.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-%E8%A7%84%E5%BE%8B%E6%98%AF-%E4%B8%80%E5%A4%A7%E4%B8%A4%E5%B0%8F-%E8%BF%99%E9%87%8C%E5%BA%94%E8%AF%A5%E6%98%AF%E5%B0%8F%E5%9C%86.mp3"
     },
     {
       "id": "choice-小圆",
@@ -2334,7 +2306,7 @@
       "id": "success-规律是-一大两小-这里应该是大圆",
       "kind": "success",
       "text": "规律是 一大两小，这里应该是大圆。",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-%E8%A7%84%E5%BE%8B%E6%98%AF-%E4%B8%80%E5%A4%A7%E4%B8%A4%E5%B0%8F-%E8%BF%99%E9%87%8C%E5%BA%94%E8%AF%A5%E6%98%AF%E5%A4%A7%E5%9C%86.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-%E8%A7%84%E5%BE%8B%E6%98%AF-%E4%B8%80%E5%A4%A7%E4%B8%A4%E5%B0%8F-%E8%BF%99%E9%87%8C%E5%BA%94%E8%AF%A5%E6%98%AF%E5%A4%A7%E5%9C%86.mp3"
     },
     {
       "id": "choice-大圆",
@@ -2346,7 +2318,7 @@
       "id": "success-规律是-太阳-月亮-星星-这里应该是星星",
       "kind": "success",
       "text": "规律是 太阳、月亮、星星，这里应该是星星。",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-%E8%A7%84%E5%BE%8B%E6%98%AF-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F-%E8%BF%99%E9%87%8C%E5%BA%94%E8%AF%A5%E6%98%AF%E6%98%9F%E6%98%9F.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-%E8%A7%84%E5%BE%8B%E6%98%AF-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F-%E8%BF%99%E9%87%8C%E5%BA%94%E8%AF%A5%E6%98%AF%E6%98%9F%E6%98%9F.mp3"
     },
     {
       "id": "choice-星星",
@@ -2358,13 +2330,13 @@
       "id": "success-规律是-太阳-月亮-星星-这里应该是太阳",
       "kind": "success",
       "text": "规律是 太阳、月亮、星星，这里应该是太阳。",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-%E8%A7%84%E5%BE%8B%E6%98%AF-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F-%E8%BF%99%E9%87%8C%E5%BA%94%E8%AF%A5%E6%98%AF%E5%A4%AA%E9%98%B3.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-%E8%A7%84%E5%BE%8B%E6%98%AF-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F-%E8%BF%99%E9%87%8C%E5%BA%94%E8%AF%A5%E6%98%AF%E5%A4%AA%E9%98%B3.mp3"
     },
     {
       "id": "success-规律是-草莓-饼干-草莓-这里应该是草莓",
       "kind": "success",
       "text": "规律是 草莓、饼干、草莓，这里应该是草莓。",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-%E8%A7%84%E5%BE%8B%E6%98%AF-%E8%8D%89%E8%8E%93-%E9%A5%BC%E5%B9%B2-%E8%8D%89%E8%8E%93-%E8%BF%99%E9%87%8C%E5%BA%94%E8%AF%A5%E6%98%AF%E8%8D%89%E8%8E%93.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-%E8%A7%84%E5%BE%8B%E6%98%AF-%E8%8D%89%E8%8E%93-%E9%A5%BC%E5%B9%B2-%E8%8D%89%E8%8E%93-%E8%BF%99%E9%87%8C%E5%BA%94%E8%AF%A5%E6%98%AF%E8%8D%89%E8%8E%93.mp3"
     },
     {
       "id": "choice-草莓",
@@ -2508,7 +2480,7 @@
       "id": "choice-三角形篮子",
       "kind": "choice",
       "text": "三角形篮子",
-      "src": "/audio/voice/zh-CN/macos-tingting/choice-%E4%B8%89%E8%A7%92%E5%BD%A2%E7%AF%AE%E5%AD%90.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/choice-%E4%B8%89%E8%A7%92%E5%BD%A2%E7%AF%AE%E5%AD%90.mp3"
     },
     {
       "id": "prompt-规则变了-按形状分-方形放哪里-不要被颜色带走-只看形状",
@@ -2556,13 +2528,13 @@
       "id": "prompt-哪一张不是红色的-先看清楚-题目要找的不是这个颜色",
       "kind": "prompt",
       "text": "哪一张不是红色的？先看清楚：题目要找的不是这个颜色。",
-      "src": "/audio/voice/zh-CN/macos-tingting/prompt-%E5%93%AA%E4%B8%80%E5%BC%A0%E4%B8%8D%E6%98%AF%E7%BA%A2%E8%89%B2%E7%9A%84-%E5%85%88%E7%9C%8B%E6%B8%85%E6%A5%9A-%E9%A2%98%E7%9B%AE%E8%A6%81%E6%89%BE%E7%9A%84%E4%B8%8D%E6%98%AF%E8%BF%99%E4%B8%AA%E9%A2%9C%E8%89%B2.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/prompt-%E5%93%AA%E4%B8%80%E5%BC%A0%E4%B8%8D%E6%98%AF%E7%BA%A2%E8%89%B2%E7%9A%84-%E5%85%88%E7%9C%8B%E6%B8%85%E6%A5%9A-%E9%A2%98%E7%9B%AE%E8%A6%81%E6%89%BE%E7%9A%84%E4%B8%8D%E6%98%AF%E8%BF%99%E4%B8%AA%E9%A2%9C%E8%89%B2.mp3"
     },
     {
       "id": "success-对-这个不是红色的",
       "kind": "success",
       "text": "对，这个不是红色的。",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-%E5%AF%B9-%E8%BF%99%E4%B8%AA%E4%B8%8D%E6%98%AF%E7%BA%A2%E8%89%B2%E7%9A%84.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-%E5%AF%B9-%E8%BF%99%E4%B8%AA%E4%B8%8D%E6%98%AF%E7%BA%A2%E8%89%B2%E7%9A%84.mp3"
     },
     {
       "id": "retry-看到-不是-要先停一下再选",
@@ -2580,37 +2552,37 @@
       "id": "prompt-哪一张不是蓝色的-先看清楚-题目要找的不是这个颜色",
       "kind": "prompt",
       "text": "哪一张不是蓝色的？先看清楚：题目要找的不是这个颜色。",
-      "src": "/audio/voice/zh-CN/macos-tingting/prompt-%E5%93%AA%E4%B8%80%E5%BC%A0%E4%B8%8D%E6%98%AF%E8%93%9D%E8%89%B2%E7%9A%84-%E5%85%88%E7%9C%8B%E6%B8%85%E6%A5%9A-%E9%A2%98%E7%9B%AE%E8%A6%81%E6%89%BE%E7%9A%84%E4%B8%8D%E6%98%AF%E8%BF%99%E4%B8%AA%E9%A2%9C%E8%89%B2.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/prompt-%E5%93%AA%E4%B8%80%E5%BC%A0%E4%B8%8D%E6%98%AF%E8%93%9D%E8%89%B2%E7%9A%84-%E5%85%88%E7%9C%8B%E6%B8%85%E6%A5%9A-%E9%A2%98%E7%9B%AE%E8%A6%81%E6%89%BE%E7%9A%84%E4%B8%8D%E6%98%AF%E8%BF%99%E4%B8%AA%E9%A2%9C%E8%89%B2.mp3"
     },
     {
       "id": "success-对-这个不是蓝色的",
       "kind": "success",
       "text": "对，这个不是蓝色的。",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-%E5%AF%B9-%E8%BF%99%E4%B8%AA%E4%B8%8D%E6%98%AF%E8%93%9D%E8%89%B2%E7%9A%84.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-%E5%AF%B9-%E8%BF%99%E4%B8%AA%E4%B8%8D%E6%98%AF%E8%93%9D%E8%89%B2%E7%9A%84.mp3"
     },
     {
       "id": "prompt-哪一张不是绿色的-先看清楚-题目要找的不是这个颜色",
       "kind": "prompt",
       "text": "哪一张不是绿色的？先看清楚：题目要找的不是这个颜色。",
-      "src": "/audio/voice/zh-CN/macos-tingting/prompt-%E5%93%AA%E4%B8%80%E5%BC%A0%E4%B8%8D%E6%98%AF%E7%BB%BF%E8%89%B2%E7%9A%84-%E5%85%88%E7%9C%8B%E6%B8%85%E6%A5%9A-%E9%A2%98%E7%9B%AE%E8%A6%81%E6%89%BE%E7%9A%84%E4%B8%8D%E6%98%AF%E8%BF%99%E4%B8%AA%E9%A2%9C%E8%89%B2.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/prompt-%E5%93%AA%E4%B8%80%E5%BC%A0%E4%B8%8D%E6%98%AF%E7%BB%BF%E8%89%B2%E7%9A%84-%E5%85%88%E7%9C%8B%E6%B8%85%E6%A5%9A-%E9%A2%98%E7%9B%AE%E8%A6%81%E6%89%BE%E7%9A%84%E4%B8%8D%E6%98%AF%E8%BF%99%E4%B8%AA%E9%A2%9C%E8%89%B2.mp3"
     },
     {
       "id": "success-对-这个不是绿色的",
       "kind": "success",
       "text": "对，这个不是绿色的。",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-%E5%AF%B9-%E8%BF%99%E4%B8%AA%E4%B8%8D%E6%98%AF%E7%BB%BF%E8%89%B2%E7%9A%84.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-%E5%AF%B9-%E8%BF%99%E4%B8%AA%E4%B8%8D%E6%98%AF%E7%BB%BF%E8%89%B2%E7%9A%84.mp3"
     },
     {
       "id": "prompt-哪一张不是黄色的-先看清楚-题目要找的不是这个颜色",
       "kind": "prompt",
       "text": "哪一张不是黄色的？先看清楚：题目要找的不是这个颜色。",
-      "src": "/audio/voice/zh-CN/macos-tingting/prompt-%E5%93%AA%E4%B8%80%E5%BC%A0%E4%B8%8D%E6%98%AF%E9%BB%84%E8%89%B2%E7%9A%84-%E5%85%88%E7%9C%8B%E6%B8%85%E6%A5%9A-%E9%A2%98%E7%9B%AE%E8%A6%81%E6%89%BE%E7%9A%84%E4%B8%8D%E6%98%AF%E8%BF%99%E4%B8%AA%E9%A2%9C%E8%89%B2.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/prompt-%E5%93%AA%E4%B8%80%E5%BC%A0%E4%B8%8D%E6%98%AF%E9%BB%84%E8%89%B2%E7%9A%84-%E5%85%88%E7%9C%8B%E6%B8%85%E6%A5%9A-%E9%A2%98%E7%9B%AE%E8%A6%81%E6%89%BE%E7%9A%84%E4%B8%8D%E6%98%AF%E8%BF%99%E4%B8%AA%E9%A2%9C%E8%89%B2.mp3"
     },
     {
       "id": "success-对-这个不是黄色的",
       "kind": "success",
       "text": "对，这个不是黄色的。",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-%E5%AF%B9-%E8%BF%99%E4%B8%AA%E4%B8%8D%E6%98%AF%E9%BB%84%E8%89%B2%E7%9A%84.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-%E5%AF%B9-%E8%BF%99%E4%B8%AA%E4%B8%8D%E6%98%AF%E9%BB%84%E8%89%B2%E7%9A%84.mp3"
     },
     {
       "id": "game-title-停一下再行动",
@@ -2628,25 +2600,25 @@
       "id": "prompt-绿灯亮了-小兔应该怎么做-看灯的颜色-再选动作",
       "kind": "prompt",
       "text": "绿灯亮了，小兔应该怎么做？看灯的颜色，再选动作。",
-      "src": "/audio/voice/zh-CN/macos-tingting/prompt-%E7%BB%BF%E7%81%AF%E4%BA%AE%E4%BA%86-%E5%B0%8F%E5%85%94%E5%BA%94%E8%AF%A5%E6%80%8E%E4%B9%88%E5%81%9A-%E7%9C%8B%E7%81%AF%E7%9A%84%E9%A2%9C%E8%89%B2-%E5%86%8D%E9%80%89%E5%8A%A8%E4%BD%9C.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/prompt-%E7%BB%BF%E7%81%AF%E4%BA%AE%E4%BA%86-%E5%B0%8F%E5%85%94%E5%BA%94%E8%AF%A5%E6%80%8E%E4%B9%88%E5%81%9A-%E7%9C%8B%E7%81%AF%E7%9A%84%E9%A2%9C%E8%89%B2-%E5%86%8D%E9%80%89%E5%8A%A8%E4%BD%9C.mp3"
     },
     {
       "id": "success-绿灯亮了-小兔要走",
       "kind": "success",
       "text": "绿灯亮了，小兔要走。",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-%E7%BB%BF%E7%81%AF%E4%BA%AE%E4%BA%86-%E5%B0%8F%E5%85%94%E8%A6%81%E8%B5%B0.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-%E7%BB%BF%E7%81%AF%E4%BA%AE%E4%BA%86-%E5%B0%8F%E5%85%94%E8%A6%81%E8%B5%B0.mp3"
     },
     {
       "id": "retry-先停一下-把这次的玩法再听一遍",
       "kind": "retry",
       "text": "先停一下，把这次的玩法再听一遍。",
-      "src": "/audio/voice/zh-CN/macos-tingting/retry-%E5%85%88%E5%81%9C%E4%B8%80%E4%B8%8B-%E6%8A%8A%E8%BF%99%E6%AC%A1%E7%9A%84%E7%8E%A9%E6%B3%95%E5%86%8D%E5%90%AC%E4%B8%80%E9%81%8D.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/retry-%E5%85%88%E5%81%9C%E4%B8%80%E4%B8%8B-%E6%8A%8A%E8%BF%99%E6%AC%A1%E7%9A%84%E7%8E%A9%E6%B3%95%E5%86%8D%E5%90%AC%E4%B8%80%E9%81%8D.mp3"
     },
     {
       "id": "parent-问她-这一次是按红绿灯走-还是玩法变了",
       "kind": "parent",
       "text": "问她：这一次是按红绿灯走，还是玩法变了？",
-      "src": "/audio/voice/zh-CN/macos-tingting/parent-%E9%97%AE%E5%A5%B9-%E8%BF%99%E4%B8%80%E6%AC%A1%E6%98%AF%E6%8C%89%E7%BA%A2%E7%BB%BF%E7%81%AF%E8%B5%B0-%E8%BF%98%E6%98%AF%E7%8E%A9%E6%B3%95%E5%8F%98%E4%BA%86.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/parent-%E9%97%AE%E5%A5%B9-%E8%BF%99%E4%B8%80%E6%AC%A1%E6%98%AF%E6%8C%89%E7%BA%A2%E7%BB%BF%E7%81%AF%E8%B5%B0-%E8%BF%98%E6%98%AF%E7%8E%A9%E6%B3%95%E5%8F%98%E4%BA%86.mp3"
     },
     {
       "id": "choice-走",
@@ -2670,7 +2642,7 @@
       "id": "object-按红绿灯走",
       "kind": "object",
       "text": "按红绿灯走",
-      "src": "/audio/voice/zh-CN/macos-tingting/object-%E6%8C%89%E7%BA%A2%E7%BB%BF%E7%81%AF%E8%B5%B0.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/object-%E6%8C%89%E7%BA%A2%E7%BB%BF%E7%81%AF%E8%B5%B0.mp3"
     },
     {
       "id": "object-小兔",
@@ -2682,55 +2654,55 @@
       "id": "prompt-红灯亮了-小兔应该怎么做-看灯的颜色-再选动作",
       "kind": "prompt",
       "text": "红灯亮了，小兔应该怎么做？看灯的颜色，再选动作。",
-      "src": "/audio/voice/zh-CN/macos-tingting/prompt-%E7%BA%A2%E7%81%AF%E4%BA%AE%E4%BA%86-%E5%B0%8F%E5%85%94%E5%BA%94%E8%AF%A5%E6%80%8E%E4%B9%88%E5%81%9A-%E7%9C%8B%E7%81%AF%E7%9A%84%E9%A2%9C%E8%89%B2-%E5%86%8D%E9%80%89%E5%8A%A8%E4%BD%9C.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/prompt-%E7%BA%A2%E7%81%AF%E4%BA%AE%E4%BA%86-%E5%B0%8F%E5%85%94%E5%BA%94%E8%AF%A5%E6%80%8E%E4%B9%88%E5%81%9A-%E7%9C%8B%E7%81%AF%E7%9A%84%E9%A2%9C%E8%89%B2-%E5%86%8D%E9%80%89%E5%8A%A8%E4%BD%9C.mp3"
     },
     {
       "id": "success-红灯亮了-小兔要停",
       "kind": "success",
       "text": "红灯亮了，小兔要停。",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-%E7%BA%A2%E7%81%AF%E4%BA%AE%E4%BA%86-%E5%B0%8F%E5%85%94%E8%A6%81%E5%81%9C.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-%E7%BA%A2%E7%81%AF%E4%BA%AE%E4%BA%86-%E5%B0%8F%E5%85%94%E8%A6%81%E5%81%9C.mp3"
     },
     {
       "id": "prompt-现在玩反口令-绿灯亮了-小兔应该怎么做-玩法变了-先停一下再想",
       "kind": "prompt",
       "text": "现在玩反口令：绿灯亮了，小兔应该怎么做？玩法变了，先停一下再想。",
-      "src": "/audio/voice/zh-CN/macos-tingting/prompt-%E7%8E%B0%E5%9C%A8%E7%8E%A9%E5%8F%8D%E5%8F%A3%E4%BB%A4-%E7%BB%BF%E7%81%AF%E4%BA%AE%E4%BA%86-%E5%B0%8F%E5%85%94%E5%BA%94%E8%AF%A5%E6%80%8E%E4%B9%88%E5%81%9A-%E7%8E%A9%E6%B3%95%E5%8F%98%E4%BA%86-%E5%85%88%E5%81%9C%E4%B8%80%E4%B8%8B%E5%86%8D%E6%83%B3.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/prompt-%E7%8E%B0%E5%9C%A8%E7%8E%A9%E5%8F%8D%E5%8F%A3%E4%BB%A4-%E7%BB%BF%E7%81%AF%E4%BA%AE%E4%BA%86-%E5%B0%8F%E5%85%94%E5%BA%94%E8%AF%A5%E6%80%8E%E4%B9%88%E5%81%9A-%E7%8E%A9%E6%B3%95%E5%8F%98%E4%BA%86-%E5%85%88%E5%81%9C%E4%B8%80%E4%B8%8B%E5%86%8D%E6%83%B3.mp3"
     },
     {
       "id": "success-绿灯亮了-小兔要停",
       "kind": "success",
       "text": "绿灯亮了，小兔要停。",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-%E7%BB%BF%E7%81%AF%E4%BA%AE%E4%BA%86-%E5%B0%8F%E5%85%94%E8%A6%81%E5%81%9C.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-%E7%BB%BF%E7%81%AF%E4%BA%AE%E4%BA%86-%E5%B0%8F%E5%85%94%E8%A6%81%E5%81%9C.mp3"
     },
     {
       "id": "object-玩反口令",
       "kind": "object",
       "text": "玩反口令",
-      "src": "/audio/voice/zh-CN/macos-tingting/object-%E7%8E%A9%E5%8F%8D%E5%8F%A3%E4%BB%A4.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/object-%E7%8E%A9%E5%8F%8D%E5%8F%A3%E4%BB%A4.mp3"
     },
     {
       "id": "prompt-现在玩反口令-红灯亮了-小兔应该怎么做-玩法变了-先停一下再想",
       "kind": "prompt",
       "text": "现在玩反口令：红灯亮了，小兔应该怎么做？玩法变了，先停一下再想。",
-      "src": "/audio/voice/zh-CN/macos-tingting/prompt-%E7%8E%B0%E5%9C%A8%E7%8E%A9%E5%8F%8D%E5%8F%A3%E4%BB%A4-%E7%BA%A2%E7%81%AF%E4%BA%AE%E4%BA%86-%E5%B0%8F%E5%85%94%E5%BA%94%E8%AF%A5%E6%80%8E%E4%B9%88%E5%81%9A-%E7%8E%A9%E6%B3%95%E5%8F%98%E4%BA%86-%E5%85%88%E5%81%9C%E4%B8%80%E4%B8%8B%E5%86%8D%E6%83%B3.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/prompt-%E7%8E%B0%E5%9C%A8%E7%8E%A9%E5%8F%8D%E5%8F%A3%E4%BB%A4-%E7%BA%A2%E7%81%AF%E4%BA%AE%E4%BA%86-%E5%B0%8F%E5%85%94%E5%BA%94%E8%AF%A5%E6%80%8E%E4%B9%88%E5%81%9A-%E7%8E%A9%E6%B3%95%E5%8F%98%E4%BA%86-%E5%85%88%E5%81%9C%E4%B8%80%E4%B8%8B%E5%86%8D%E6%83%B3.mp3"
     },
     {
       "id": "success-红灯亮了-小兔要走",
       "kind": "success",
       "text": "红灯亮了，小兔要走。",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-%E7%BA%A2%E7%81%AF%E4%BA%AE%E4%BA%86-%E5%B0%8F%E5%85%94%E8%A6%81%E8%B5%B0.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-%E7%BA%A2%E7%81%AF%E4%BA%AE%E4%BA%86-%E5%B0%8F%E5%85%94%E8%A6%81%E8%B5%B0.mp3"
     },
     {
       "id": "prompt-这次听到绿灯也要慢慢走-小兔应该怎么做-玩法变了-先停一下再想",
       "kind": "prompt",
       "text": "这次听到绿灯也要慢慢走，小兔应该怎么做？玩法变了，先停一下再想。",
-      "src": "/audio/voice/zh-CN/macos-tingting/prompt-%E8%BF%99%E6%AC%A1%E5%90%AC%E5%88%B0%E7%BB%BF%E7%81%AF%E4%B9%9F%E8%A6%81%E6%85%A2%E6%85%A2%E8%B5%B0-%E5%B0%8F%E5%85%94%E5%BA%94%E8%AF%A5%E6%80%8E%E4%B9%88%E5%81%9A-%E7%8E%A9%E6%B3%95%E5%8F%98%E4%BA%86-%E5%85%88%E5%81%9C%E4%B8%80%E4%B8%8B%E5%86%8D%E6%83%B3.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/prompt-%E8%BF%99%E6%AC%A1%E5%90%AC%E5%88%B0%E7%BB%BF%E7%81%AF%E4%B9%9F%E8%A6%81%E6%85%A2%E6%85%A2%E8%B5%B0-%E5%B0%8F%E5%85%94%E5%BA%94%E8%AF%A5%E6%80%8E%E4%B9%88%E5%81%9A-%E7%8E%A9%E6%B3%95%E5%8F%98%E4%BA%86-%E5%85%88%E5%81%9C%E4%B8%80%E4%B8%8B%E5%86%8D%E6%83%B3.mp3"
     },
     {
       "id": "success-绿灯亮了-小兔要慢慢走",
       "kind": "success",
       "text": "绿灯亮了，小兔要慢慢走。",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-%E7%BB%BF%E7%81%AF%E4%BA%AE%E4%BA%86-%E5%B0%8F%E5%85%94%E8%A6%81%E6%85%A2%E6%85%A2%E8%B5%B0.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-%E7%BB%BF%E7%81%AF%E4%BA%AE%E4%BA%86-%E5%B0%8F%E5%85%94%E8%A6%81%E6%85%A2%E6%85%A2%E8%B5%B0.mp3"
     },
     {
       "id": "choice-拍手",
@@ -2742,19 +2714,19 @@
       "id": "object-慢慢走",
       "kind": "object",
       "text": "慢慢走",
-      "src": "/audio/voice/zh-CN/macos-tingting/object-%E6%85%A2%E6%85%A2%E8%B5%B0.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/object-%E6%85%A2%E6%85%A2%E8%B5%B0.mp3"
     },
     {
       "id": "prompt-这次红灯亮了要先拍手-小兔应该怎么做-玩法变了-先停一下再想",
       "kind": "prompt",
       "text": "这次红灯亮了要先拍手，小兔应该怎么做？玩法变了，先停一下再想。",
-      "src": "/audio/voice/zh-CN/macos-tingting/prompt-%E8%BF%99%E6%AC%A1%E7%BA%A2%E7%81%AF%E4%BA%AE%E4%BA%86%E8%A6%81%E5%85%88%E6%8B%8D%E6%89%8B-%E5%B0%8F%E5%85%94%E5%BA%94%E8%AF%A5%E6%80%8E%E4%B9%88%E5%81%9A-%E7%8E%A9%E6%B3%95%E5%8F%98%E4%BA%86-%E5%85%88%E5%81%9C%E4%B8%80%E4%B8%8B%E5%86%8D%E6%83%B3.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/prompt-%E8%BF%99%E6%AC%A1%E7%BA%A2%E7%81%AF%E4%BA%AE%E4%BA%86%E8%A6%81%E5%85%88%E6%8B%8D%E6%89%8B-%E5%B0%8F%E5%85%94%E5%BA%94%E8%AF%A5%E6%80%8E%E4%B9%88%E5%81%9A-%E7%8E%A9%E6%B3%95%E5%8F%98%E4%BA%86-%E5%85%88%E5%81%9C%E4%B8%80%E4%B8%8B%E5%86%8D%E6%83%B3.mp3"
     },
     {
       "id": "success-红灯亮了-小兔要拍手",
       "kind": "success",
       "text": "红灯亮了，小兔要拍手。",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-%E7%BA%A2%E7%81%AF%E4%BA%AE%E4%BA%86-%E5%B0%8F%E5%85%94%E8%A6%81%E6%8B%8D%E6%89%8B.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/success-%E7%BA%A2%E7%81%AF%E4%BA%AE%E4%BA%86-%E5%B0%8F%E5%85%94%E8%A6%81%E6%8B%8D%E6%89%8B.mp3"
     },
     {
       "id": "object-先拍手",
@@ -2778,7 +2750,7 @@
       "id": "prompt-小兔口渴了-想喝水-先做什么-先看目标-再想第一步",
       "kind": "prompt",
       "text": "小兔口渴了，想喝水，先做什么？先看目标，再想第一步。",
-      "src": "/audio/voice/zh-CN/macos-tingting/prompt-%E5%B0%8F%E5%85%94%E5%8F%A3%E6%B8%B4%E4%BA%86-%E6%83%B3%E5%96%9D%E6%B0%B4-%E5%85%88%E5%81%9A%E4%BB%80%E4%B9%88-%E5%85%88%E7%9C%8B%E7%9B%AE%E6%A0%87-%E5%86%8D%E6%83%B3%E7%AC%AC%E4%B8%80%E6%AD%A5.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/prompt-%E5%B0%8F%E5%85%94%E5%8F%A3%E6%B8%B4%E4%BA%86-%E6%83%B3%E5%96%9D%E6%B0%B4-%E5%85%88%E5%81%9A%E4%BB%80%E4%B9%88-%E5%85%88%E7%9C%8B%E7%9B%AE%E6%A0%87-%E5%86%8D%E6%83%B3%E7%AC%AC%E4%B8%80%E6%AD%A5.mp3"
     },
     {
       "id": "success-先拿杯子-才好倒水喝水",
@@ -2826,19 +2798,19 @@
       "id": "object-倒水",
       "kind": "object",
       "text": "倒水",
-      "src": "/audio/voice/zh-CN/macos-tingting/object-%E5%80%92%E6%B0%B4.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/object-%E5%80%92%E6%B0%B4.mp3"
     },
     {
       "id": "object-喝水",
       "kind": "object",
       "text": "喝水",
-      "src": "/audio/voice/zh-CN/macos-tingting/object-%E5%96%9D%E6%B0%B4.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/object-%E5%96%9D%E6%B0%B4.mp3"
     },
     {
       "id": "prompt-门关着-要开门进去-先做什么-先看目标-再想第一步",
       "kind": "prompt",
       "text": "门关着，要开门进去，先做什么？先看目标，再想第一步。",
-      "src": "/audio/voice/zh-CN/macos-tingting/prompt-%E9%97%A8%E5%85%B3%E7%9D%80-%E8%A6%81%E5%BC%80%E9%97%A8%E8%BF%9B%E5%8E%BB-%E5%85%88%E5%81%9A%E4%BB%80%E4%B9%88-%E5%85%88%E7%9C%8B%E7%9B%AE%E6%A0%87-%E5%86%8D%E6%83%B3%E7%AC%AC%E4%B8%80%E6%AD%A5.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/prompt-%E9%97%A8%E5%85%B3%E7%9D%80-%E8%A6%81%E5%BC%80%E9%97%A8%E8%BF%9B%E5%8E%BB-%E5%85%88%E5%81%9A%E4%BB%80%E4%B9%88-%E5%85%88%E7%9C%8B%E7%9B%AE%E6%A0%87-%E5%86%8D%E6%83%B3%E7%AC%AC%E4%B8%80%E6%AD%A5.mp3"
     },
     {
       "id": "success-先找钥匙-才能开门进屋",
@@ -2868,7 +2840,7 @@
       "id": "object-门关着",
       "kind": "object",
       "text": "门关着",
-      "src": "/audio/voice/zh-CN/macos-tingting/object-%E9%97%A8%E5%85%B3%E7%9D%80.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/object-%E9%97%A8%E5%85%B3%E7%9D%80.mp3"
     },
     {
       "id": "object-开门",
@@ -2880,7 +2852,7 @@
       "id": "object-进屋",
       "kind": "object",
       "text": "进屋",
-      "src": "/audio/voice/zh-CN/macos-tingting/object-%E8%BF%9B%E5%B1%8B.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/object-%E8%BF%9B%E5%B1%8B.mp3"
     },
     {
       "id": "prompt-小鱼离开水了-先做什么-先看目标-再想第一步",
@@ -6841,12 +6813,6 @@
       "kind": "object",
       "text": "黄色圆片、绿色圆片",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/object-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87.mp3"
-    },
-    {
-      "id": "object-紫色圆片",
-      "kind": "object",
-      "text": "紫色圆片",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoyineural/object-%E7%B4%AB%E8%89%B2%E5%9C%86%E7%89%87.mp3"
     },
     {
       "id": "success-每一行都是第一个-第二个-再回到第一个",

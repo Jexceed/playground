@@ -324,16 +324,37 @@ function RoundBoard({
           {round.visualGroups.map((group) => (
             <div className="visual-group" key={group.label}>
               <strong>{group.label}</strong>
-              <div className="object-row">
-                {group.items.map((item, index) => (
-                  <VisualToken key={`${item}-${index}`} value={item} />
-                ))}
-              </div>
+              {group.layout === "subitize" ? <SubitizeFrame items={group.items} /> : (
+                <div className="object-row">
+                  {group.items.map((item, index) => (
+                    <VisualToken key={`${item}-${index}`} value={item} />
+                  ))}
+                </div>
+              )}
             </div>
           ))}
         </div>
       )}
     </section>
+  );
+}
+
+function SubitizeFrame({ items }: { items: string[] }) {
+  return (
+    <div className="subitize-frame" aria-label="一眼看数量的点阵">
+      {items.map((item, index) => {
+        const meta = item ? visualMetaFor(item) : null;
+        return (
+          <div className={`subitize-cell ${item ? "" : "subitize-cell-empty"}`} key={`${item || "empty"}-${index}`}>
+            {item && (
+              <button className="subitize-dot" type="button" onClick={() => speak(meta?.label ?? item)} aria-label={meta?.label ?? item}>
+                {meta ? <VisualGlyph kind={meta.kind} small /> : <span aria-hidden="true">{item}</span>}
+              </button>
+            )}
+          </div>
+        );
+      })}
+    </div>
   );
 }
 

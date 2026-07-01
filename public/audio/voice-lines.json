@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-01T16:51:30.541Z",
+  "generatedAt": "2026-07-01T17:06:20.543Z",
   "recommendedVoice": "warm adult female Mandarin, smiling, preschool teacher, 0.85 speed, crisp consonants",
-  "lineCount": 1538,
+  "lineCount": 1532,
   "lines": [
     {
       "id": "game-title-数一数",
@@ -1492,11 +1492,6 @@
         "math-counting-cardinality/math-counting-cardinality-18",
         "math-counting-cardinality/math-counting-cardinality-18",
         "math-counting-cardinality/math-counting-cardinality-18",
-        "math-subitize-match/math-subitize-match-1",
-        "math-subitize-match/math-subitize-match-1",
-        "math-subitize-match/math-subitize-match-2",
-        "math-subitize-match/math-subitize-match-2",
-        "math-subitize-match/math-subitize-match-2",
         "math-subitize-match/math-subitize-match-9",
         "math-subitize-match/math-subitize-match-9",
         "math-subitize-match/math-subitize-match-9",
@@ -1670,10 +1665,6 @@
         "math-counting-cardinality/math-counting-cardinality-16",
         "math-counting-cardinality/math-counting-cardinality-16",
         "math-counting-cardinality/math-counting-cardinality-16",
-        "math-subitize-match/math-subitize-match-3",
-        "math-subitize-match/math-subitize-match-3",
-        "math-subitize-match/math-subitize-match-3",
-        "math-subitize-match/math-subitize-match-3",
         "math-subitize-match/math-subitize-match-10",
         "math-subitize-match/math-subitize-match-10",
         "math-subitize-match/math-subitize-match-10",
@@ -2509,27 +2500,27 @@
       ]
     },
     {
-      "id": "prompt-你能一眼看出有几个吗-两个在一起",
+      "id": "prompt-你能一眼看出有几个吗-斜着两个",
       "kind": "prompt",
-      "text": "你能一眼看出有几个吗？两个在一起",
+      "text": "你能一眼看出有几个吗？斜着两个",
       "tone": "friendly, clear, playful",
       "contexts": [
         "math-subitize-match/math-subitize-match-1"
       ]
     },
     {
-      "id": "success-是-2-个-两个在一起",
+      "id": "success-是-2-个-斜着两个",
       "kind": "success",
-      "text": "是 2 个。两个在一起。",
+      "text": "是 2 个。斜着两个。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "math-subitize-match/math-subitize-match-1"
       ]
     },
     {
-      "id": "retry-可以先看成-两个在一起-再确认",
+      "id": "retry-可以先看成-斜着两个-再确认",
       "kind": "retry",
-      "text": "可以先看成 两个在一起，再确认。",
+      "text": "可以先看成 斜着两个，再确认。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
         "math-subitize-match/math-subitize-match-1"
@@ -2559,100 +2550,16 @@
       ]
     },
     {
-      "id": "prompt-你能一眼看出有几个吗-三个像小三角",
-      "kind": "prompt",
-      "text": "你能一眼看出有几个吗？三个像小三角",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "math-subitize-match/math-subitize-match-2"
-      ]
-    },
-    {
-      "id": "success-是-3-个-三个像小三角",
-      "kind": "success",
-      "text": "是 3 个。三个像小三角。",
-      "tone": "warm, delighted, clear",
-      "contexts": [
-        "math-subitize-match/math-subitize-match-2"
-      ]
-    },
-    {
-      "id": "retry-可以先看成-三个像小三角-再确认",
-      "kind": "retry",
-      "text": "可以先看成 三个像小三角，再确认。",
-      "tone": "gentle, encouraging, slow",
-      "contexts": [
-        "math-subitize-match/math-subitize-match-2"
-      ]
-    },
-    {
-      "id": "prompt-你能一眼看出有几个吗-上面两个-下面两个",
-      "kind": "prompt",
-      "text": "你能一眼看出有几个吗？上面两个，下面两个",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "math-subitize-match/math-subitize-match-3",
-        "math-subitize-match/math-subitize-match-15"
-      ]
-    },
-    {
-      "id": "success-是-4-个-上面两个-下面两个",
-      "kind": "success",
-      "text": "是 4 个。上面两个，下面两个。",
-      "tone": "warm, delighted, clear",
-      "contexts": [
-        "math-subitize-match/math-subitize-match-3",
-        "math-subitize-match/math-subitize-match-15"
-      ]
-    },
-    {
-      "id": "retry-可以先看成-上面两个-下面两个-再确认",
-      "kind": "retry",
-      "text": "可以先看成 上面两个，下面两个，再确认。",
-      "tone": "gentle, encouraging, slow",
-      "contexts": [
-        "math-subitize-match/math-subitize-match-3",
-        "math-subitize-match/math-subitize-match-15"
-      ]
-    },
-    {
-      "id": "prompt-你能一眼看出有几个吗-四个角加中间一个",
-      "kind": "prompt",
-      "text": "你能一眼看出有几个吗？四个角加中间一个",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "math-subitize-match/math-subitize-match-4"
-      ]
-    },
-    {
-      "id": "success-是-5-个-四个角加中间一个",
-      "kind": "success",
-      "text": "是 5 个。四个角加中间一个。",
-      "tone": "warm, delighted, clear",
-      "contexts": [
-        "math-subitize-match/math-subitize-match-4"
-      ]
-    },
-    {
-      "id": "retry-可以先看成-四个角加中间一个-再确认",
-      "kind": "retry",
-      "text": "可以先看成 四个角加中间一个，再确认。",
-      "tone": "gentle, encouraging, slow",
-      "contexts": [
-        "math-subitize-match/math-subitize-match-4"
-      ]
-    },
-    {
       "id": "object-黄色圆片",
       "kind": "object",
       "text": "黄色圆片",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "math-subitize-match/math-subitize-match-4",
-        "math-subitize-match/math-subitize-match-4",
-        "math-subitize-match/math-subitize-match-4",
-        "math-subitize-match/math-subitize-match-4",
-        "math-subitize-match/math-subitize-match-4",
+        "math-subitize-match/math-subitize-match-1",
+        "math-subitize-match/math-subitize-match-1",
+        "math-subitize-match/math-subitize-match-2",
+        "math-subitize-match/math-subitize-match-2",
+        "math-subitize-match/math-subitize-match-2",
         "logic-pattern-train/logic-pattern-train-4",
         "logic-pattern-train/logic-pattern-train-4",
         "logic-pattern-train/logic-pattern-train-4",
@@ -2692,30 +2599,143 @@
       ]
     },
     {
-      "id": "prompt-你能一眼看出有几个吗-三和三合起来",
+      "id": "prompt-你能一眼看出有几个吗-斜线三个",
       "kind": "prompt",
-      "text": "你能一眼看出有几个吗？三和三合起来",
+      "text": "你能一眼看出有几个吗？斜线三个",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "math-subitize-match/math-subitize-match-5"
+        "math-subitize-match/math-subitize-match-2"
       ]
     },
     {
-      "id": "success-是-6-个-三和三合起来",
+      "id": "success-是-3-个-斜线三个",
       "kind": "success",
-      "text": "是 6 个。三和三合起来。",
+      "text": "是 3 个。斜线三个。",
       "tone": "warm, delighted, clear",
       "contexts": [
-        "math-subitize-match/math-subitize-match-5"
+        "math-subitize-match/math-subitize-match-2"
       ]
     },
     {
-      "id": "retry-可以先看成-三和三合起来-再确认",
+      "id": "retry-可以先看成-斜线三个-再确认",
       "kind": "retry",
-      "text": "可以先看成 三和三合起来，再确认。",
+      "text": "可以先看成 斜线三个，再确认。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
-        "math-subitize-match/math-subitize-match-5"
+        "math-subitize-match/math-subitize-match-2"
+      ]
+    },
+    {
+      "id": "prompt-你能一眼看出有几个吗-四个角",
+      "kind": "prompt",
+      "text": "你能一眼看出有几个吗？四个角",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-subitize-match/math-subitize-match-3",
+        "math-subitize-match/math-subitize-match-8"
+      ]
+    },
+    {
+      "id": "success-是-4-个-四个角",
+      "kind": "success",
+      "text": "是 4 个。四个角。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "math-subitize-match/math-subitize-match-3",
+        "math-subitize-match/math-subitize-match-8"
+      ]
+    },
+    {
+      "id": "retry-可以先看成-四个角-再确认",
+      "kind": "retry",
+      "text": "可以先看成 四个角，再确认。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "math-subitize-match/math-subitize-match-3",
+        "math-subitize-match/math-subitize-match-8"
+      ]
+    },
+    {
+      "id": "object-蓝色圆片",
+      "kind": "object",
+      "text": "蓝色圆片",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-subitize-match/math-subitize-match-3",
+        "math-subitize-match/math-subitize-match-3",
+        "math-subitize-match/math-subitize-match-3",
+        "math-subitize-match/math-subitize-match-3",
+        "logic-pattern-train/logic-pattern-train-1",
+        "logic-pattern-train/logic-pattern-train-1",
+        "logic-pattern-train/logic-pattern-train-2",
+        "logic-pattern-train/logic-pattern-train-2",
+        "logic-pattern-train/logic-pattern-train-3",
+        "logic-pattern-train/logic-pattern-train-3",
+        "logic-pattern-train/logic-pattern-train-3",
+        "logic-sorter-switch/round-2",
+        "logic-sorter-switch/round-5",
+        "logic-sorter-switch/round-6",
+        "logic-sorter-switch/round-7",
+        "logic-sorter-switch/round-8",
+        "logic-sorter-switch/round-9",
+        "logic-sorter-switch/round-10",
+        "logic-sorter-switch/round-10",
+        "logic-sorter-switch/round-14",
+        "logic-sorter-switch/round-17",
+        "logic-sorter-switch/round-18",
+        "logic-sorter-switch/round-19",
+        "logic-sorter-switch/round-20",
+        "logic-sorter-switch/round-21",
+        "logic-sorter-switch/round-22",
+        "logic-sorter-switch/round-22",
+        "logic-matrix-puzzle/round-1",
+        "logic-matrix-puzzle/round-2",
+        "logic-matrix-puzzle/round-7",
+        "logic-matrix-puzzle/round-8",
+        "logic-matrix-puzzle/round-13",
+        "logic-matrix-puzzle/round-14",
+        "logic-part-whole-puzzle/round-4",
+        "logic-part-whole-puzzle/round-10",
+        "logic-part-whole-puzzle/round-16",
+        "logic-mirror-fold/round-1",
+        "logic-mirror-fold/round-1",
+        "logic-mirror-fold/round-6",
+        "logic-mirror-fold/round-6",
+        "logic-mirror-fold/round-12",
+        "logic-mirror-fold/round-13",
+        "logic-mirror-fold/round-13",
+        "logic-mirror-fold/round-18",
+        "logic-mirror-fold/round-18"
+      ]
+    },
+    {
+      "id": "prompt-你能一眼看出有几个吗-四个角加中间一个",
+      "kind": "prompt",
+      "text": "你能一眼看出有几个吗？四个角加中间一个",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-subitize-match/math-subitize-match-4",
+        "math-subitize-match/math-subitize-match-9"
+      ]
+    },
+    {
+      "id": "success-是-5-个-四个角加中间一个",
+      "kind": "success",
+      "text": "是 5 个。四个角加中间一个。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "math-subitize-match/math-subitize-match-4",
+        "math-subitize-match/math-subitize-match-9"
+      ]
+    },
+    {
+      "id": "retry-可以先看成-四个角加中间一个-再确认",
+      "kind": "retry",
+      "text": "可以先看成 四个角加中间一个，再确认。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "math-subitize-match/math-subitize-match-4",
+        "math-subitize-match/math-subitize-match-9"
       ]
     },
     {
@@ -2724,12 +2744,11 @@
       "text": "绿色圆片",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "math-subitize-match/math-subitize-match-5",
-        "math-subitize-match/math-subitize-match-5",
-        "math-subitize-match/math-subitize-match-5",
-        "math-subitize-match/math-subitize-match-5",
-        "math-subitize-match/math-subitize-match-5",
-        "math-subitize-match/math-subitize-match-5",
+        "math-subitize-match/math-subitize-match-4",
+        "math-subitize-match/math-subitize-match-4",
+        "math-subitize-match/math-subitize-match-4",
+        "math-subitize-match/math-subitize-match-4",
+        "math-subitize-match/math-subitize-match-4",
         "logic-pattern-train/logic-pattern-train-4",
         "logic-pattern-train/logic-pattern-train-4",
         "logic-pattern-train/logic-pattern-train-5",
@@ -2778,135 +2797,128 @@
       ]
     },
     {
-      "id": "prompt-你能一眼看出有几个吗-两个并排",
+      "id": "prompt-你能一眼看出有几个吗-左边三个-右边三个",
       "kind": "prompt",
-      "text": "你能一眼看出有几个吗？两个并排",
+      "text": "你能一眼看出有几个吗？左边三个，右边三个",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-subitize-match/math-subitize-match-5"
+      ]
+    },
+    {
+      "id": "success-是-6-个-左边三个-右边三个",
+      "kind": "success",
+      "text": "是 6 个。左边三个，右边三个。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "math-subitize-match/math-subitize-match-5"
+      ]
+    },
+    {
+      "id": "retry-可以先看成-左边三个-右边三个-再确认",
+      "kind": "retry",
+      "text": "可以先看成 左边三个，右边三个，再确认。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "math-subitize-match/math-subitize-match-5"
+      ]
+    },
+    {
+      "id": "object-紫色圆片",
+      "kind": "object",
+      "text": "紫色圆片",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-subitize-match/math-subitize-match-5",
+        "math-subitize-match/math-subitize-match-5",
+        "math-subitize-match/math-subitize-match-5",
+        "math-subitize-match/math-subitize-match-5",
+        "math-subitize-match/math-subitize-match-5",
+        "math-subitize-match/math-subitize-match-5",
+        "logic-matrix-puzzle/round-1",
+        "logic-matrix-puzzle/round-7",
+        "logic-matrix-puzzle/round-13"
+      ]
+    },
+    {
+      "id": "prompt-你能一眼看出有几个吗-斜角两个",
+      "kind": "prompt",
+      "text": "你能一眼看出有几个吗？斜角两个",
       "tone": "friendly, clear, playful",
       "contexts": [
         "math-subitize-match/math-subitize-match-6"
       ]
     },
     {
-      "id": "success-是-2-个-两个并排",
+      "id": "success-是-2-个-斜角两个",
       "kind": "success",
-      "text": "是 2 个。两个并排。",
+      "text": "是 2 个。斜角两个。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "math-subitize-match/math-subitize-match-6"
       ]
     },
     {
-      "id": "retry-可以先看成-两个并排-再确认",
+      "id": "retry-可以先看成-斜角两个-再确认",
       "kind": "retry",
-      "text": "可以先看成 两个并排，再确认。",
+      "text": "可以先看成 斜角两个，再确认。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
         "math-subitize-match/math-subitize-match-6"
       ]
     },
     {
-      "id": "prompt-你能一眼看出有几个吗-一排三个",
+      "id": "prompt-你能一眼看出有几个吗-像一个小三角",
       "kind": "prompt",
-      "text": "你能一眼看出有几个吗？一排三个",
+      "text": "你能一眼看出有几个吗？像一个小三角",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "math-subitize-match/math-subitize-match-7"
+        "math-subitize-match/math-subitize-match-7",
+        "math-subitize-match/math-subitize-match-14"
       ]
     },
     {
-      "id": "success-是-3-个-一排三个",
+      "id": "success-是-3-个-像一个小三角",
       "kind": "success",
-      "text": "是 3 个。一排三个。",
+      "text": "是 3 个。像一个小三角。",
       "tone": "warm, delighted, clear",
       "contexts": [
-        "math-subitize-match/math-subitize-match-7"
+        "math-subitize-match/math-subitize-match-7",
+        "math-subitize-match/math-subitize-match-14"
       ]
     },
     {
-      "id": "retry-可以先看成-一排三个-再确认",
+      "id": "retry-可以先看成-像一个小三角-再确认",
       "kind": "retry",
-      "text": "可以先看成 一排三个，再确认。",
+      "text": "可以先看成 像一个小三角，再确认。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
-        "math-subitize-match/math-subitize-match-7"
+        "math-subitize-match/math-subitize-match-7",
+        "math-subitize-match/math-subitize-match-14"
       ]
     },
     {
-      "id": "prompt-你能一眼看出有几个吗-两排-每排两个",
+      "id": "prompt-你能一眼看出有几个吗-两列-每列三个",
       "kind": "prompt",
-      "text": "你能一眼看出有几个吗？两排，每排两个",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "math-subitize-match/math-subitize-match-8"
-      ]
-    },
-    {
-      "id": "success-是-4-个-两排-每排两个",
-      "kind": "success",
-      "text": "是 4 个。两排，每排两个。",
-      "tone": "warm, delighted, clear",
-      "contexts": [
-        "math-subitize-match/math-subitize-match-8"
-      ]
-    },
-    {
-      "id": "retry-可以先看成-两排-每排两个-再确认",
-      "kind": "retry",
-      "text": "可以先看成 两排，每排两个，再确认。",
-      "tone": "gentle, encouraging, slow",
-      "contexts": [
-        "math-subitize-match/math-subitize-match-8"
-      ]
-    },
-    {
-      "id": "prompt-你能一眼看出有几个吗-先看四个-再加一个",
-      "kind": "prompt",
-      "text": "你能一眼看出有几个吗？先看四个，再加一个",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "math-subitize-match/math-subitize-match-9"
-      ]
-    },
-    {
-      "id": "success-是-5-个-先看四个-再加一个",
-      "kind": "success",
-      "text": "是 5 个。先看四个，再加一个。",
-      "tone": "warm, delighted, clear",
-      "contexts": [
-        "math-subitize-match/math-subitize-match-9"
-      ]
-    },
-    {
-      "id": "retry-可以先看成-先看四个-再加一个-再确认",
-      "kind": "retry",
-      "text": "可以先看成 先看四个，再加一个，再确认。",
-      "tone": "gentle, encouraging, slow",
-      "contexts": [
-        "math-subitize-match/math-subitize-match-9"
-      ]
-    },
-    {
-      "id": "prompt-你能一眼看出有几个吗-两个三个合起来",
-      "kind": "prompt",
-      "text": "你能一眼看出有几个吗？两个三个合起来",
+      "text": "你能一眼看出有几个吗？两列，每列三个",
       "tone": "friendly, clear, playful",
       "contexts": [
         "math-subitize-match/math-subitize-match-10"
       ]
     },
     {
-      "id": "success-是-6-个-两个三个合起来",
+      "id": "success-是-6-个-两列-每列三个",
       "kind": "success",
-      "text": "是 6 个。两个三个合起来。",
+      "text": "是 6 个。两列，每列三个。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "math-subitize-match/math-subitize-match-10"
       ]
     },
     {
-      "id": "retry-可以先看成-两个三个合起来-再确认",
+      "id": "retry-可以先看成-两列-每列三个-再确认",
       "kind": "retry",
-      "text": "可以先看成 两个三个合起来，再确认。",
+      "text": "可以先看成 两列，每列三个，再确认。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
         "math-subitize-match/math-subitize-match-10"
@@ -2982,84 +2994,84 @@
       ]
     },
     {
-      "id": "prompt-你能一眼看出有几个吗-一排五个",
+      "id": "prompt-你能一眼看出有几个吗-像一个叉形",
       "kind": "prompt",
-      "text": "你能一眼看出有几个吗？一排五个",
+      "text": "你能一眼看出有几个吗？像一个叉形",
       "tone": "friendly, clear, playful",
       "contexts": [
         "math-subitize-match/math-subitize-match-12"
       ]
     },
     {
-      "id": "success-是-5-个-一排五个",
+      "id": "success-是-5-个-像一个叉形",
       "kind": "success",
-      "text": "是 5 个。一排五个。",
+      "text": "是 5 个。像一个叉形。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "math-subitize-match/math-subitize-match-12"
       ]
     },
     {
-      "id": "retry-可以先看成-一排五个-再确认",
+      "id": "retry-可以先看成-像一个叉形-再确认",
       "kind": "retry",
-      "text": "可以先看成 一排五个，再确认。",
+      "text": "可以先看成 像一个叉形，再确认。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
         "math-subitize-match/math-subitize-match-12"
       ]
     },
     {
-      "id": "prompt-你能一眼看出有几个吗-五个再加一个",
+      "id": "prompt-你能一眼看出有几个吗-上面三个-下面三个",
       "kind": "prompt",
-      "text": "你能一眼看出有几个吗？五个再加一个",
+      "text": "你能一眼看出有几个吗？上面三个，下面三个",
       "tone": "friendly, clear, playful",
       "contexts": [
         "math-subitize-match/math-subitize-match-13"
       ]
     },
     {
-      "id": "success-是-6-个-五个再加一个",
+      "id": "success-是-6-个-上面三个-下面三个",
       "kind": "success",
-      "text": "是 6 个。五个再加一个。",
+      "text": "是 6 个。上面三个，下面三个。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "math-subitize-match/math-subitize-match-13"
       ]
     },
     {
-      "id": "retry-可以先看成-五个再加一个-再确认",
+      "id": "retry-可以先看成-上面三个-下面三个-再确认",
       "kind": "retry",
-      "text": "可以先看成 五个再加一个，再确认。",
+      "text": "可以先看成 上面三个，下面三个，再确认。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
         "math-subitize-match/math-subitize-match-13"
       ]
     },
     {
-      "id": "prompt-你能一眼看出有几个吗-两个加一个",
+      "id": "prompt-你能一眼看出有几个吗-两行两列",
       "kind": "prompt",
-      "text": "你能一眼看出有几个吗？两个加一个",
+      "text": "你能一眼看出有几个吗？两行两列",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "math-subitize-match/math-subitize-match-14"
+        "math-subitize-match/math-subitize-match-15"
       ]
     },
     {
-      "id": "success-是-3-个-两个加一个",
+      "id": "success-是-4-个-两行两列",
       "kind": "success",
-      "text": "是 3 个。两个加一个。",
+      "text": "是 4 个。两行两列。",
       "tone": "warm, delighted, clear",
       "contexts": [
-        "math-subitize-match/math-subitize-match-14"
+        "math-subitize-match/math-subitize-match-15"
       ]
     },
     {
-      "id": "retry-可以先看成-两个加一个-再确认",
+      "id": "retry-可以先看成-两行两列-再确认",
       "kind": "retry",
-      "text": "可以先看成 两个加一个，再确认。",
+      "text": "可以先看成 两行两列，再确认。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
-        "math-subitize-match/math-subitize-match-14"
+        "math-subitize-match/math-subitize-match-15"
       ]
     },
     {
@@ -5992,55 +6004,6 @@
         "logic-mirror-fold/round-6",
         "logic-mirror-fold/round-7",
         "logic-mirror-fold/round-10",
-        "logic-mirror-fold/round-13",
-        "logic-mirror-fold/round-13",
-        "logic-mirror-fold/round-18",
-        "logic-mirror-fold/round-18"
-      ]
-    },
-    {
-      "id": "object-蓝色圆片",
-      "kind": "object",
-      "text": "蓝色圆片",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-pattern-train/logic-pattern-train-1",
-        "logic-pattern-train/logic-pattern-train-1",
-        "logic-pattern-train/logic-pattern-train-2",
-        "logic-pattern-train/logic-pattern-train-2",
-        "logic-pattern-train/logic-pattern-train-3",
-        "logic-pattern-train/logic-pattern-train-3",
-        "logic-pattern-train/logic-pattern-train-3",
-        "logic-sorter-switch/round-2",
-        "logic-sorter-switch/round-5",
-        "logic-sorter-switch/round-6",
-        "logic-sorter-switch/round-7",
-        "logic-sorter-switch/round-8",
-        "logic-sorter-switch/round-9",
-        "logic-sorter-switch/round-10",
-        "logic-sorter-switch/round-10",
-        "logic-sorter-switch/round-14",
-        "logic-sorter-switch/round-17",
-        "logic-sorter-switch/round-18",
-        "logic-sorter-switch/round-19",
-        "logic-sorter-switch/round-20",
-        "logic-sorter-switch/round-21",
-        "logic-sorter-switch/round-22",
-        "logic-sorter-switch/round-22",
-        "logic-matrix-puzzle/round-1",
-        "logic-matrix-puzzle/round-2",
-        "logic-matrix-puzzle/round-7",
-        "logic-matrix-puzzle/round-8",
-        "logic-matrix-puzzle/round-13",
-        "logic-matrix-puzzle/round-14",
-        "logic-part-whole-puzzle/round-4",
-        "logic-part-whole-puzzle/round-10",
-        "logic-part-whole-puzzle/round-16",
-        "logic-mirror-fold/round-1",
-        "logic-mirror-fold/round-1",
-        "logic-mirror-fold/round-6",
-        "logic-mirror-fold/round-6",
-        "logic-mirror-fold/round-12",
         "logic-mirror-fold/round-13",
         "logic-mirror-fold/round-13",
         "logic-mirror-fold/round-18",
@@ -16032,17 +15995,6 @@
         "logic-visual-match/round-8",
         "logic-visual-match/round-8",
         "logic-visual-match/round-14"
-      ]
-    },
-    {
-      "id": "object-紫色圆片",
-      "kind": "object",
-      "text": "紫色圆片",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-matrix-puzzle/round-1",
-        "logic-matrix-puzzle/round-7",
-        "logic-matrix-puzzle/round-13"
       ]
     },
     {
