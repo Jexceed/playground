@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-07-01T18:29:53.745Z",
+  "generatedAt": "2026-07-01T18:39:22.113Z",
   "provider": "edge-tts Python package",
   "voice": "zh-CN-XiaoxiaoNeural",
   "rate": "-12%",
   "pitch": "+2Hz",
   "includeParent": true,
   "format": "mp3",
-  "count": 1579,
-  "requestedCount": 1579,
+  "count": 1582,
+  "requestedCount": 1582,
   "failures": [],
   "entries": [
     {
@@ -7919,10 +7919,10 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%93%AA%E4%B8%80%E5%BC%A0%E5%92%8C%E5%8F%A6%E5%A4%96%E4%B8%A4%E5%BC%A0%E4%B8%8D%E4%B8%80%E6%A0%B7-%E5%85%88%E6%89%BE%E4%B8%A4%E5%BC%A0%E5%AE%8C%E5%85%A8%E4%B8%80%E6%A0%B7%E7%9A%84-%E5%86%8D%E7%9C%8B%E5%89%A9%E4%B8%8B%E7%9A%84%E4%B8%80%E5%BC%A0.mp3"
     },
     {
-      "id": "success-这一张顺序反了",
+      "id": "success-右边这张顺序反了",
       "kind": "success",
-      "text": "这一张顺序反了。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%BF%99%E4%B8%80%E5%BC%A0%E9%A1%BA%E5%BA%8F%E5%8F%8D%E4%BA%86.mp3"
+      "text": "右边这张顺序反了。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%8F%B3%E8%BE%B9%E8%BF%99%E5%BC%A0%E9%A1%BA%E5%BA%8F%E5%8F%8D%E4%BA%86.mp3"
     },
     {
       "id": "retry-找到两张一样的-剩下的就是不一样的",
@@ -7937,16 +7937,34 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E5%93%AA%E4%B8%A4%E5%BC%A0%E6%98%AF%E4%B8%80%E5%AF%B9-%E5%89%A9%E4%B8%8B%E9%82%A3%E5%BC%A0%E5%93%AA%E9%87%8C%E4%B8%8D%E5%90%8C.mp3"
     },
     {
+      "id": "choice-左边这张",
+      "kind": "choice",
+      "text": "左边这张",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%B7%A6%E8%BE%B9%E8%BF%99%E5%BC%A0.mp3"
+    },
+    {
+      "id": "choice-中间这张",
+      "kind": "choice",
+      "text": "中间这张",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E4%B8%AD%E9%97%B4%E8%BF%99%E5%BC%A0.mp3"
+    },
+    {
+      "id": "choice-右边这张",
+      "kind": "choice",
+      "text": "右边这张",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%8F%B3%E8%BE%B9%E8%BF%99%E5%BC%A0.mp3"
+    },
+    {
       "id": "object-蓝色方块-红色圆片",
       "kind": "object",
       "text": "蓝色方块、红色圆片",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E8%93%9D%E8%89%B2%E6%96%B9%E5%9D%97-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87.mp3"
     },
     {
-      "id": "success-这一张第二个颜色不一样",
+      "id": "success-中间这张第二个颜色不一样",
       "kind": "success",
-      "text": "这一张第二个颜色不一样。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%BF%99%E4%B8%80%E5%BC%A0%E7%AC%AC%E4%BA%8C%E4%B8%AA%E9%A2%9C%E8%89%B2%E4%B8%8D%E4%B8%80%E6%A0%B7.mp3"
+      "text": "中间这张第二个颜色不一样。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E4%B8%AD%E9%97%B4%E8%BF%99%E5%BC%A0%E7%AC%AC%E4%BA%8C%E4%B8%AA%E9%A2%9C%E8%89%B2%E4%B8%8D%E4%B8%80%E6%A0%B7.mp3"
     },
     {
       "id": "object-黄色圆片-蓝色圆片",
@@ -7955,10 +7973,10 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87.mp3"
     },
     {
-      "id": "success-这一张水果顺序不一样",
+      "id": "success-右边这张水果顺序不一样",
       "kind": "success",
-      "text": "这一张水果顺序不一样。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%BF%99%E4%B8%80%E5%BC%A0%E6%B0%B4%E6%9E%9C%E9%A1%BA%E5%BA%8F%E4%B8%8D%E4%B8%80%E6%A0%B7.mp3"
+      "text": "右边这张水果顺序不一样。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%8F%B3%E8%BE%B9%E8%BF%99%E5%BC%A0%E6%B0%B4%E6%9E%9C%E9%A1%BA%E5%BA%8F%E4%B8%8D%E4%B8%80%E6%A0%B7.mp3"
     },
     {
       "id": "object-橘子-苹果",
@@ -7967,10 +7985,10 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E6%A9%98%E5%AD%90-%E8%8B%B9%E6%9E%9C.mp3"
     },
     {
-      "id": "success-这一张第二个小动物不一样",
+      "id": "success-中间这张第二个小动物不一样",
       "kind": "success",
-      "text": "这一张第二个小动物不一样。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%BF%99%E4%B8%80%E5%BC%A0%E7%AC%AC%E4%BA%8C%E4%B8%AA%E5%B0%8F%E5%8A%A8%E7%89%A9%E4%B8%8D%E4%B8%80%E6%A0%B7.mp3"
+      "text": "中间这张第二个小动物不一样。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E4%B8%AD%E9%97%B4%E8%BF%99%E5%BC%A0%E7%AC%AC%E4%BA%8C%E4%B8%AA%E5%B0%8F%E5%8A%A8%E7%89%A9%E4%B8%8D%E4%B8%80%E6%A0%B7.mp3"
     },
     {
       "id": "object-小猫-小兔",
@@ -7979,10 +7997,10 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%B0%8F%E7%8C%AB-%E5%B0%8F%E5%85%94.mp3"
     },
     {
-      "id": "success-后两块位置换了",
+      "id": "success-右边这张后两块位置换了",
       "kind": "success",
-      "text": "后两块位置换了。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%90%8E%E4%B8%A4%E5%9D%97%E4%BD%8D%E7%BD%AE%E6%8D%A2%E4%BA%86.mp3"
+      "text": "右边这张后两块位置换了。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%8F%B3%E8%BE%B9%E8%BF%99%E5%BC%A0%E5%90%8E%E4%B8%A4%E5%9D%97%E4%BD%8D%E7%BD%AE%E6%8D%A2%E4%BA%86.mp3"
     },
     {
       "id": "object-红色圆片-星星-蓝色方块",
@@ -7991,10 +8009,10 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E6%98%9F%E6%98%9F-%E8%93%9D%E8%89%B2%E6%96%B9%E5%9D%97.mp3"
     },
     {
-      "id": "success-饼干和糖果的位置换了",
+      "id": "success-中间这张饼干和糖果的位置换了",
       "kind": "success",
-      "text": "饼干和糖果的位置换了。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E9%A5%BC%E5%B9%B2%E5%92%8C%E7%B3%96%E6%9E%9C%E7%9A%84%E4%BD%8D%E7%BD%AE%E6%8D%A2%E4%BA%86.mp3"
+      "text": "中间这张饼干和糖果的位置换了。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E4%B8%AD%E9%97%B4%E8%BF%99%E5%BC%A0%E9%A5%BC%E5%B9%B2%E5%92%8C%E7%B3%96%E6%9E%9C%E7%9A%84%E4%BD%8D%E7%BD%AE%E6%8D%A2%E4%BA%86.mp3"
     },
     {
       "id": "object-草莓-糖果-饼干",

@@ -2945,18 +2945,22 @@ function makeVisualMatchRounds(): RoundInput[] {
   }));
 
   const oddCases = [
-    { items: ["🔴🟦", "🔴🟦", "🟦🔴"], answer: "🟦🔴", reason: "这一张顺序反了。" },
-    { items: ["🟡🟢", "🟡🔵", "🟡🟢"], answer: "🟡🔵", reason: "这一张第二个颜色不一样。" },
-    { items: ["🍎🍊", "🍎🍊", "🍊🍎"], answer: "🍊🍎", reason: "这一张水果顺序不一样。" },
-    { items: ["🐱🐶", "🐱🐰", "🐱🐶"], answer: "🐱🐰", reason: "这一张第二个小动物不一样。" },
-    { items: ["🔴🟦⭐", "🔴🟦⭐", "🔴⭐🟦"], answer: "🔴⭐🟦", reason: "后两块位置换了。" },
-    { items: ["🍓🍪🍬", "🍓🍬🍪", "🍓🍪🍬"], answer: "🍓🍬🍪", reason: "饼干和糖果的位置换了。" },
+    { items: ["🔴🟦", "🔴🟦", "🟦🔴"], answer: "right", reason: "右边这张顺序反了。" },
+    { items: ["🟡🟢", "🟡🔵", "🟡🟢"], answer: "middle", reason: "中间这张第二个颜色不一样。" },
+    { items: ["🍎🍊", "🍎🍊", "🍊🍎"], answer: "right", reason: "右边这张水果顺序不一样。" },
+    { items: ["🐱🐶", "🐱🐰", "🐱🐶"], answer: "middle", reason: "中间这张第二个小动物不一样。" },
+    { items: ["🔴🟦⭐", "🔴🟦⭐", "🔴⭐🟦"], answer: "right", reason: "右边这张后两块位置换了。" },
+    { items: ["🍓🍪🍬", "🍓🍬🍪", "🍓🍪🍬"], answer: "middle", reason: "中间这张饼干和糖果的位置换了。" },
   ].map((item, index) => ({
     level: index < 4 ? "L5" as AbilityLevel : "L6" as AbilityLevel,
     prompt: "哪一张和另外两张不一样？",
     instruction: "先找两张完全一样的，再看剩下的一张。",
     visualGroups: [{ label: "三张小卡", items: item.items }],
-    choices: choiceSet(item.items),
+    choices: [
+      { label: "左边这张", value: "left" },
+      { label: "中间这张", value: "middle" },
+      { label: "右边这张", value: "right" },
+    ],
     answer: item.answer,
     success: item.reason,
     retry: "找到两张一样的，剩下的就是不一样的。",

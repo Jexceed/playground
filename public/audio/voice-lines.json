@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-01T18:29:35.839Z",
+  "generatedAt": "2026-07-01T18:39:09.581Z",
   "recommendedVoice": "warm adult female Mandarin, smiling, preschool teacher, 0.85 speed, crisp consonants",
-  "lineCount": 1579,
+  "lineCount": 1582,
   "lines": [
     {
       "id": "game-title-数一数",
@@ -14644,9 +14644,7 @@
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-matrix-puzzle/logic-matrix-puzzle-1",
-        "logic-visual-match/logic-visual-match-2",
-        "logic-visual-match/logic-visual-match-8",
-        "logic-visual-match/logic-visual-match-8"
+        "logic-visual-match/logic-visual-match-2"
       ]
     },
     {
@@ -15753,9 +15751,7 @@
       "text": "红色圆片、蓝色方块",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-visual-match/logic-visual-match-1",
-        "logic-visual-match/logic-visual-match-7",
-        "logic-visual-match/logic-visual-match-7"
+        "logic-visual-match/logic-visual-match-1"
       ]
     },
     {
@@ -15764,8 +15760,7 @@
       "text": "蓝色方块、红色圆片",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-visual-match/logic-visual-match-1",
-        "logic-visual-match/logic-visual-match-7"
+        "logic-visual-match/logic-visual-match-1"
       ]
     },
     {
@@ -15812,8 +15807,7 @@
       "text": "黄色圆片、蓝色圆片",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-visual-match/logic-visual-match-2",
-        "logic-visual-match/logic-visual-match-8"
+        "logic-visual-match/logic-visual-match-2"
       ]
     },
     {
@@ -15832,7 +15826,6 @@
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-visual-match/logic-visual-match-3",
-        "logic-visual-match/logic-visual-match-9",
         "logic-mirror-fold/logic-mirror-fold-8"
       ]
     },
@@ -15843,8 +15836,6 @@
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-visual-match/logic-visual-match-3",
-        "logic-visual-match/logic-visual-match-9",
-        "logic-visual-match/logic-visual-match-9",
         "logic-mirror-fold/logic-mirror-fold-8"
       ]
     },
@@ -15884,8 +15875,6 @@
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-visual-match/logic-visual-match-4",
-        "logic-visual-match/logic-visual-match-10",
-        "logic-visual-match/logic-visual-match-10",
         "logic-mirror-fold/logic-mirror-fold-9"
       ]
     },
@@ -15905,8 +15894,7 @@
       "text": "小猫、小兔",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-visual-match/logic-visual-match-4",
-        "logic-visual-match/logic-visual-match-10"
+        "logic-visual-match/logic-visual-match-4"
       ]
     },
     {
@@ -15935,9 +15923,7 @@
       "text": "红色圆片、蓝色方块、星星",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-visual-match/logic-visual-match-5",
-        "logic-visual-match/logic-visual-match-11",
-        "logic-visual-match/logic-visual-match-11"
+        "logic-visual-match/logic-visual-match-5"
       ]
     },
     {
@@ -15947,7 +15933,6 @@
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-visual-match/logic-visual-match-5",
-        "logic-visual-match/logic-visual-match-11",
         "logic-mirror-fold/logic-mirror-fold-10"
       ]
     },
@@ -15989,8 +15974,6 @@
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-visual-match/logic-visual-match-6",
-        "logic-visual-match/logic-visual-match-12",
-        "logic-visual-match/logic-visual-match-12",
         "logic-mirror-fold/logic-mirror-fold-11"
       ]
     },
@@ -16009,8 +15992,7 @@
       "text": "草莓、糖果、饼干",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-visual-match/logic-visual-match-6",
-        "logic-visual-match/logic-visual-match-12"
+        "logic-visual-match/logic-visual-match-6"
       ]
     },
     {
@@ -16039,9 +16021,9 @@
       ]
     },
     {
-      "id": "success-这一张顺序反了",
+      "id": "success-右边这张顺序反了",
       "kind": "success",
-      "text": "这一张顺序反了。",
+      "text": "右边这张顺序反了。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-visual-match/logic-visual-match-7"
@@ -16076,6 +16058,48 @@
       ]
     },
     {
+      "id": "choice-左边这张",
+      "kind": "choice",
+      "text": "左边这张",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-visual-match/logic-visual-match-7",
+        "logic-visual-match/logic-visual-match-8",
+        "logic-visual-match/logic-visual-match-9",
+        "logic-visual-match/logic-visual-match-10",
+        "logic-visual-match/logic-visual-match-11",
+        "logic-visual-match/logic-visual-match-12"
+      ]
+    },
+    {
+      "id": "choice-中间这张",
+      "kind": "choice",
+      "text": "中间这张",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-visual-match/logic-visual-match-7",
+        "logic-visual-match/logic-visual-match-8",
+        "logic-visual-match/logic-visual-match-9",
+        "logic-visual-match/logic-visual-match-10",
+        "logic-visual-match/logic-visual-match-11",
+        "logic-visual-match/logic-visual-match-12"
+      ]
+    },
+    {
+      "id": "choice-右边这张",
+      "kind": "choice",
+      "text": "右边这张",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-visual-match/logic-visual-match-7",
+        "logic-visual-match/logic-visual-match-8",
+        "logic-visual-match/logic-visual-match-9",
+        "logic-visual-match/logic-visual-match-10",
+        "logic-visual-match/logic-visual-match-11",
+        "logic-visual-match/logic-visual-match-12"
+      ]
+    },
+    {
       "id": "object-蓝色方块-红色圆片",
       "kind": "object",
       "text": "蓝色方块、红色圆片",
@@ -16085,9 +16109,9 @@
       ]
     },
     {
-      "id": "success-这一张第二个颜色不一样",
+      "id": "success-中间这张第二个颜色不一样",
       "kind": "success",
-      "text": "这一张第二个颜色不一样。",
+      "text": "中间这张第二个颜色不一样。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-visual-match/logic-visual-match-8"
@@ -16103,9 +16127,9 @@
       ]
     },
     {
-      "id": "success-这一张水果顺序不一样",
+      "id": "success-右边这张水果顺序不一样",
       "kind": "success",
-      "text": "这一张水果顺序不一样。",
+      "text": "右边这张水果顺序不一样。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-visual-match/logic-visual-match-9"
@@ -16121,9 +16145,9 @@
       ]
     },
     {
-      "id": "success-这一张第二个小动物不一样",
+      "id": "success-中间这张第二个小动物不一样",
       "kind": "success",
-      "text": "这一张第二个小动物不一样。",
+      "text": "中间这张第二个小动物不一样。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-visual-match/logic-visual-match-10"
@@ -16139,9 +16163,9 @@
       ]
     },
     {
-      "id": "success-后两块位置换了",
+      "id": "success-右边这张后两块位置换了",
       "kind": "success",
-      "text": "后两块位置换了。",
+      "text": "右边这张后两块位置换了。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-visual-match/logic-visual-match-11"
@@ -16157,9 +16181,9 @@
       ]
     },
     {
-      "id": "success-饼干和糖果的位置换了",
+      "id": "success-中间这张饼干和糖果的位置换了",
       "kind": "success",
-      "text": "饼干和糖果的位置换了。",
+      "text": "中间这张饼干和糖果的位置换了。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-visual-match/logic-visual-match-12"

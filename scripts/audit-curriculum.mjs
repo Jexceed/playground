@@ -92,6 +92,14 @@ for (const game of games) {
     if (!round.choices.some((choice) => choice.value === round.answer)) {
       problems.push(`${context}: answer is not in choices`);
     }
+    const choiceLabels = round.choices.map((choice) => choice.label);
+    const choiceValues = round.choices.map((choice) => choice.value);
+    if (new Set(choiceLabels).size !== choiceLabels.length) {
+      problems.push(`${context}: duplicate choice labels`);
+    }
+    if (new Set(choiceValues).size !== choiceValues.length) {
+      problems.push(`${context}: duplicate choice values`);
+    }
     if (!round.sceneImage && !round.sequence && !round.visualGroups && !round.grid && !round.matrix && !round.memory) {
       problems.push(`${context}: missing visual surface`);
     }
