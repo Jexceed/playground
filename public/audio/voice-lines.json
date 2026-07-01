@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-07-01T02:00:11.955Z",
+  "generatedAt": "2026-07-01T16:51:30.541Z",
   "recommendedVoice": "warm adult female Mandarin, smiling, preschool teacher, 0.85 speed, crisp consonants",
-  "lineCount": 1495,
+  "lineCount": 1538,
   "lines": [
     {
-      "id": "game-title-数一数小路",
+      "id": "game-title-数一数",
       "kind": "game-title",
-      "text": "数一数小路",
+      "text": "数一数",
       "tone": "friendly, clear, playful",
       "contexts": [
         "math-counting-cardinality"
@@ -22,9 +22,9 @@
       ]
     },
     {
-      "id": "prompt-这里有几个草莓-用手指点着数-再选答案",
+      "id": "prompt-数一数有几个草莓-用手指点着数-再选答案",
       "kind": "prompt",
-      "text": "这里有几个草莓？用手指点着数，再选答案。",
+      "text": "数一数有几个草莓？用手指点着数，再选答案。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "math-counting-cardinality/math-counting-cardinality-1"
@@ -88,10 +88,7 @@
         "math-subitize-match/math-subitize-match-5",
         "math-subitize-match/math-subitize-match-6",
         "math-subitize-match/math-subitize-match-10",
-        "math-subitize-match/math-subitize-match-11",
-        "math-subitize-match/math-subitize-match-15",
-        "math-subitize-match/math-subitize-match-16",
-        "math-subitize-match/math-subitize-match-20",
+        "math-subitize-match/math-subitize-match-13",
         "math-story-operations/math-story-operations-1",
         "math-story-operations/math-story-operations-21",
         "math-story-operations/math-story-operations-23",
@@ -126,10 +123,7 @@
         "math-subitize-match/math-subitize-match-2",
         "math-subitize-match/math-subitize-match-6",
         "math-subitize-match/math-subitize-match-7",
-        "math-subitize-match/math-subitize-match-11",
-        "math-subitize-match/math-subitize-match-12",
-        "math-subitize-match/math-subitize-match-16",
-        "math-subitize-match/math-subitize-match-17",
+        "math-subitize-match/math-subitize-match-14",
         "math-compose-decompose/math-compose-decompose-1",
         "math-compose-decompose/math-compose-decompose-2",
         "math-story-operations/math-story-operations-1",
@@ -180,11 +174,8 @@
         "math-subitize-match/math-subitize-match-7",
         "math-subitize-match/math-subitize-match-8",
         "math-subitize-match/math-subitize-match-11",
-        "math-subitize-match/math-subitize-match-12",
-        "math-subitize-match/math-subitize-match-13",
-        "math-subitize-match/math-subitize-match-16",
-        "math-subitize-match/math-subitize-match-17",
-        "math-subitize-match/math-subitize-match-18",
+        "math-subitize-match/math-subitize-match-14",
+        "math-subitize-match/math-subitize-match-15",
         "math-compose-decompose/math-compose-decompose-1",
         "math-compose-decompose/math-compose-decompose-2",
         "math-compose-decompose/math-compose-decompose-3",
@@ -219,6 +210,7 @@
         "math-fair-share/math-fair-share-11",
         "math-fair-share/math-fair-share-12",
         "math-fair-share/math-fair-share-13",
+        "math-group-counting/math-group-counting-1",
         "logic-number-pattern-trail/logic-number-pattern-trail-3",
         "logic-number-pattern-trail/logic-number-pattern-trail-6",
         "logic-number-pattern-trail/logic-number-pattern-trail-8",
@@ -250,6 +242,8 @@
         "math-counting-cardinality/math-counting-cardinality-10",
         "math-counting-cardinality/math-counting-cardinality-10",
         "math-counting-cardinality/math-counting-cardinality-10",
+        "math-subitize-match/math-subitize-match-6",
+        "math-subitize-match/math-subitize-match-6",
         "math-fair-share/math-fair-share-7",
         "math-fair-share/math-fair-share-7",
         "math-fair-share/math-fair-share-7",
@@ -260,6 +254,29 @@
         "math-fair-share/math-fair-share-7",
         "math-fair-share/math-fair-share-7",
         "math-fair-share/math-fair-share-7",
+        "math-group-counting/math-group-counting-1",
+        "math-group-counting/math-group-counting-1",
+        "math-group-counting/math-group-counting-1",
+        "math-group-counting/math-group-counting-1",
+        "math-group-counting/math-group-counting-10",
+        "math-group-counting/math-group-counting-10",
+        "math-group-counting/math-group-counting-10",
+        "math-group-counting/math-group-counting-10",
+        "math-group-counting/math-group-counting-10",
+        "math-group-counting/math-group-counting-10",
+        "math-group-counting/math-group-counting-10",
+        "math-group-counting/math-group-counting-10",
+        "math-group-counting/math-group-counting-10",
+        "math-group-counting/math-group-counting-10",
+        "logic-pattern-train/logic-pattern-train-16",
+        "logic-pattern-train/logic-pattern-train-16",
+        "logic-pattern-train/logic-pattern-train-16",
+        "logic-pattern-train/logic-pattern-train-17",
+        "logic-pattern-train/logic-pattern-train-17",
+        "logic-pattern-train/logic-pattern-train-17",
+        "logic-pattern-train/logic-pattern-train-18",
+        "logic-pattern-train/logic-pattern-train-18",
+        "logic-pattern-train/logic-pattern-train-18",
         "logic-same-kind-detective/round-1",
         "logic-same-kind-detective/round-13",
         "logic-address-map/round-5",
@@ -299,9 +316,9 @@
       ]
     },
     {
-      "id": "prompt-这里有几个饼干-用手指点着数-再选答案",
+      "id": "prompt-数一数有几个饼干-用手指点着数-再选答案",
       "kind": "prompt",
-      "text": "这里有几个饼干？用手指点着数，再选答案。",
+      "text": "数一数有几个饼干？用手指点着数，再选答案。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "math-counting-cardinality/math-counting-cardinality-2"
@@ -324,6 +341,9 @@
       "contexts": [
         "math-counting-cardinality/math-counting-cardinality-2",
         "math-counting-cardinality/math-counting-cardinality-2",
+        "math-subitize-match/math-subitize-match-7",
+        "math-subitize-match/math-subitize-match-7",
+        "math-subitize-match/math-subitize-match-7",
         "math-fair-share/math-fair-share-3",
         "math-fair-share/math-fair-share-3",
         "math-fair-share/math-fair-share-3",
@@ -339,6 +359,18 @@
         "math-fair-share/math-fair-share-6",
         "math-fair-share/math-fair-share-6",
         "math-fair-share/math-fair-share-6",
+        "math-group-counting/math-group-counting-2",
+        "math-group-counting/math-group-counting-2",
+        "math-group-counting/math-group-counting-2",
+        "math-group-counting/math-group-counting-2",
+        "math-group-counting/math-group-counting-2",
+        "math-group-counting/math-group-counting-2",
+        "logic-pattern-train/logic-pattern-train-16",
+        "logic-pattern-train/logic-pattern-train-16",
+        "logic-pattern-train/logic-pattern-train-17",
+        "logic-pattern-train/logic-pattern-train-17",
+        "logic-pattern-train/logic-pattern-train-18",
+        "logic-pattern-train/logic-pattern-train-18",
         "logic-relation-pairs/pencil-case-pencil-2",
         "logic-relation-pairs/lunchbox-cookie-3",
         "logic-relation-pairs/schoolbag-book-analogy-7",
@@ -382,9 +414,9 @@
       ]
     },
     {
-      "id": "prompt-这里有几个苹果-用手指点着数-再选答案",
+      "id": "prompt-数一数有几个苹果-用手指点着数-再选答案",
       "kind": "prompt",
-      "text": "这里有几个苹果？用手指点着数，再选答案。",
+      "text": "数一数有几个苹果？用手指点着数，再选答案。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "math-counting-cardinality/math-counting-cardinality-3"
@@ -414,12 +446,10 @@
         "math-subitize-match/math-subitize-match-7",
         "math-subitize-match/math-subitize-match-8",
         "math-subitize-match/math-subitize-match-9",
+        "math-subitize-match/math-subitize-match-11",
         "math-subitize-match/math-subitize-match-12",
-        "math-subitize-match/math-subitize-match-13",
         "math-subitize-match/math-subitize-match-14",
-        "math-subitize-match/math-subitize-match-17",
-        "math-subitize-match/math-subitize-match-18",
-        "math-subitize-match/math-subitize-match-19",
+        "math-subitize-match/math-subitize-match-15",
         "math-compose-decompose/math-compose-decompose-1",
         "math-compose-decompose/math-compose-decompose-2",
         "math-compose-decompose/math-compose-decompose-3",
@@ -450,6 +480,7 @@
         "math-fair-share/math-fair-share-8",
         "math-fair-share/math-fair-share-9",
         "math-fair-share/math-fair-share-12",
+        "math-group-counting/math-group-counting-1",
         "logic-number-pattern-trail/logic-number-pattern-trail-1",
         "logic-number-pattern-trail/logic-number-pattern-trail-7",
         "logic-number-pattern-trail/logic-number-pattern-trail-8",
@@ -474,6 +505,10 @@
         "math-counting-cardinality/math-counting-cardinality-3",
         "math-counting-cardinality/math-counting-cardinality-3",
         "math-counting-cardinality/math-counting-cardinality-3",
+        "math-subitize-match/math-subitize-match-8",
+        "math-subitize-match/math-subitize-match-8",
+        "math-subitize-match/math-subitize-match-8",
+        "math-subitize-match/math-subitize-match-8",
         "math-compare-equalize/math-compare-equalize-1",
         "math-compare-equalize/math-compare-equalize-1",
         "math-compare-equalize/math-compare-equalize-1",
@@ -594,6 +629,12 @@
         "math-compare-equalize/math-compare-equalize-12",
         "math-compare-equalize/math-compare-equalize-12",
         "math-compare-equalize/math-compare-equalize-12",
+        "math-group-counting/math-group-counting-4",
+        "math-group-counting/math-group-counting-4",
+        "math-group-counting/math-group-counting-4",
+        "math-group-counting/math-group-counting-4",
+        "math-group-counting/math-group-counting-4",
+        "math-group-counting/math-group-counting-4",
         "logic-same-kind-detective/round-1",
         "logic-same-kind-detective/round-7",
         "logic-same-kind-detective/round-13",
@@ -647,9 +688,9 @@
       ]
     },
     {
-      "id": "prompt-这里有几个橘子-用手指点着数-再选答案",
+      "id": "prompt-数一数有几个橘子-用手指点着数-再选答案",
       "kind": "prompt",
-      "text": "这里有几个橘子？用手指点着数，再选答案。",
+      "text": "数一数有几个橘子？用手指点着数，再选答案。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "math-counting-cardinality/math-counting-cardinality-4"
@@ -679,12 +720,10 @@
         "math-subitize-match/math-subitize-match-8",
         "math-subitize-match/math-subitize-match-9",
         "math-subitize-match/math-subitize-match-10",
+        "math-subitize-match/math-subitize-match-11",
+        "math-subitize-match/math-subitize-match-12",
         "math-subitize-match/math-subitize-match-13",
-        "math-subitize-match/math-subitize-match-14",
         "math-subitize-match/math-subitize-match-15",
-        "math-subitize-match/math-subitize-match-18",
-        "math-subitize-match/math-subitize-match-19",
-        "math-subitize-match/math-subitize-match-20",
         "math-compose-decompose/math-compose-decompose-3",
         "math-compose-decompose/math-compose-decompose-4",
         "math-compose-decompose/math-compose-decompose-5",
@@ -713,6 +752,9 @@
         "math-story-operations/math-story-operations-36",
         "math-fair-share/math-fair-share-4",
         "math-fair-share/math-fair-share-8",
+        "math-group-counting/math-group-counting-1",
+        "math-group-counting/math-group-counting-2",
+        "math-group-counting/math-group-counting-4",
         "logic-number-pattern-trail/logic-number-pattern-trail-1",
         "logic-number-pattern-trail/logic-number-pattern-trail-7",
         "logic-number-pattern-trail/logic-number-pattern-trail-8",
@@ -741,6 +783,11 @@
         "math-counting-cardinality/math-counting-cardinality-4",
         "math-counting-cardinality/math-counting-cardinality-4",
         "math-counting-cardinality/math-counting-cardinality-4",
+        "math-subitize-match/math-subitize-match-12",
+        "math-subitize-match/math-subitize-match-12",
+        "math-subitize-match/math-subitize-match-12",
+        "math-subitize-match/math-subitize-match-12",
+        "math-subitize-match/math-subitize-match-12",
         "math-story-operations/math-story-operations-1",
         "math-story-operations/math-story-operations-1",
         "math-story-operations/math-story-operations-2",
@@ -886,6 +933,15 @@
         "math-story-operations/math-story-operations-23",
         "math-story-operations/math-story-operations-23",
         "math-story-operations/math-story-operations-23",
+        "math-group-counting/math-group-counting-5",
+        "math-group-counting/math-group-counting-5",
+        "math-group-counting/math-group-counting-5",
+        "math-group-counting/math-group-counting-5",
+        "math-group-counting/math-group-counting-5",
+        "math-group-counting/math-group-counting-5",
+        "math-group-counting/math-group-counting-5",
+        "math-group-counting/math-group-counting-5",
+        "math-group-counting/math-group-counting-5",
         "logic-same-kind-detective/round-1",
         "logic-same-kind-detective/round-5",
         "logic-same-kind-detective/round-7",
@@ -927,9 +983,9 @@
       ]
     },
     {
-      "id": "prompt-这里有几个积木-用手指点着数-再选答案",
+      "id": "prompt-数一数有几个积木-用手指点着数-再选答案",
       "kind": "prompt",
-      "text": "这里有几个积木？用手指点着数，再选答案。",
+      "text": "数一数有几个积木？用手指点着数，再选答案。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "math-counting-cardinality/math-counting-cardinality-5"
@@ -957,10 +1013,8 @@
         "math-subitize-match/math-subitize-match-5",
         "math-subitize-match/math-subitize-match-9",
         "math-subitize-match/math-subitize-match-10",
-        "math-subitize-match/math-subitize-match-14",
-        "math-subitize-match/math-subitize-match-15",
-        "math-subitize-match/math-subitize-match-19",
-        "math-subitize-match/math-subitize-match-20",
+        "math-subitize-match/math-subitize-match-12",
+        "math-subitize-match/math-subitize-match-13",
         "math-compose-decompose/math-compose-decompose-6",
         "math-compose-decompose/math-compose-decompose-7",
         "math-compose-decompose/math-compose-decompose-8",
@@ -988,6 +1042,8 @@
         "math-story-operations/math-story-operations-32",
         "math-story-operations/math-story-operations-35",
         "math-story-operations/math-story-operations-36",
+        "math-group-counting/math-group-counting-2",
+        "math-group-counting/math-group-counting-4",
         "logic-number-pattern-trail/logic-number-pattern-trail-1",
         "logic-number-pattern-trail/logic-number-pattern-trail-7",
         "logic-number-pattern-trail/logic-number-pattern-trail-9",
@@ -1070,6 +1126,10 @@
         "math-counting-cardinality/math-counting-cardinality-17",
         "math-counting-cardinality/math-counting-cardinality-17",
         "math-counting-cardinality/math-counting-cardinality-17",
+        "math-subitize-match/math-subitize-match-15",
+        "math-subitize-match/math-subitize-match-15",
+        "math-subitize-match/math-subitize-match-15",
+        "math-subitize-match/math-subitize-match-15",
         "math-compose-decompose/math-compose-decompose-1",
         "math-compose-decompose/math-compose-decompose-1",
         "math-compose-decompose/math-compose-decompose-1",
@@ -1258,13 +1318,40 @@
         "math-fair-share/math-fair-share-8",
         "math-fair-share/math-fair-share-8",
         "math-fair-share/math-fair-share-8",
-        "math-fair-share/math-fair-share-8"
+        "math-fair-share/math-fair-share-8",
+        "math-group-counting/math-group-counting-6",
+        "math-group-counting/math-group-counting-6",
+        "math-group-counting/math-group-counting-6",
+        "math-group-counting/math-group-counting-6",
+        "math-group-counting/math-group-counting-6",
+        "math-group-counting/math-group-counting-6",
+        "math-group-counting/math-group-counting-6",
+        "math-group-counting/math-group-counting-6",
+        "math-group-counting/math-group-counting-6",
+        "math-group-counting/math-group-counting-6",
+        "math-group-counting/math-group-counting-6",
+        "math-group-counting/math-group-counting-6",
+        "math-group-counting/math-group-counting-11",
+        "math-group-counting/math-group-counting-11",
+        "math-group-counting/math-group-counting-11",
+        "math-group-counting/math-group-counting-11",
+        "math-group-counting/math-group-counting-11",
+        "math-group-counting/math-group-counting-11",
+        "math-group-counting/math-group-counting-11",
+        "math-group-counting/math-group-counting-11",
+        "math-group-counting/math-group-counting-11",
+        "math-group-counting/math-group-counting-11",
+        "math-group-counting/math-group-counting-11",
+        "math-group-counting/math-group-counting-11",
+        "math-group-counting/math-group-counting-11",
+        "math-group-counting/math-group-counting-11",
+        "math-group-counting/math-group-counting-11"
       ]
     },
     {
-      "id": "prompt-这里有几颗星星-数慢一点-每个只数一次",
+      "id": "prompt-数一数有几颗星星-数慢一点-每个只数一次",
       "kind": "prompt",
-      "text": "这里有几颗星星？数慢一点，每个只数一次。",
+      "text": "数一数有几颗星星？数慢一点，每个只数一次。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "math-counting-cardinality/math-counting-cardinality-6"
@@ -1314,6 +1401,10 @@
         "math-story-operations/math-story-operations-17",
         "math-story-operations/math-story-operations-19",
         "math-story-operations/math-story-operations-35",
+        "math-group-counting/math-group-counting-2",
+        "math-group-counting/math-group-counting-3",
+        "math-group-counting/math-group-counting-4",
+        "math-group-counting/math-group-counting-7",
         "logic-number-pattern-trail/logic-number-pattern-trail-9",
         "logic-number-pattern-trail/logic-number-pattern-trail-10",
         "logic-block-height-map/round-3",
@@ -1406,29 +1497,40 @@
         "math-subitize-match/math-subitize-match-2",
         "math-subitize-match/math-subitize-match-2",
         "math-subitize-match/math-subitize-match-2",
-        "math-subitize-match/math-subitize-match-6",
-        "math-subitize-match/math-subitize-match-6",
-        "math-subitize-match/math-subitize-match-7",
-        "math-subitize-match/math-subitize-match-7",
-        "math-subitize-match/math-subitize-match-7",
-        "math-subitize-match/math-subitize-match-11",
-        "math-subitize-match/math-subitize-match-11",
-        "math-subitize-match/math-subitize-match-12",
-        "math-subitize-match/math-subitize-match-12",
-        "math-subitize-match/math-subitize-match-12",
-        "math-subitize-match/math-subitize-match-16",
-        "math-subitize-match/math-subitize-match-16",
-        "math-subitize-match/math-subitize-match-17",
-        "math-subitize-match/math-subitize-match-17",
-        "math-subitize-match/math-subitize-match-17",
-        "logic-pattern-train/logic-pattern-train-21",
-        "logic-pattern-train/logic-pattern-train-22",
-        "logic-pattern-train/logic-pattern-train-22",
-        "logic-pattern-train/logic-pattern-train-23",
-        "logic-pattern-train/logic-pattern-train-23",
-        "logic-pattern-train/logic-pattern-train-24",
-        "logic-pattern-train/logic-pattern-train-25",
-        "logic-pattern-train/logic-pattern-train-25",
+        "math-subitize-match/math-subitize-match-9",
+        "math-subitize-match/math-subitize-match-9",
+        "math-subitize-match/math-subitize-match-9",
+        "math-subitize-match/math-subitize-match-9",
+        "math-subitize-match/math-subitize-match-9",
+        "math-group-counting/math-group-counting-3",
+        "math-group-counting/math-group-counting-3",
+        "math-group-counting/math-group-counting-3",
+        "math-group-counting/math-group-counting-3",
+        "math-group-counting/math-group-counting-3",
+        "math-group-counting/math-group-counting-3",
+        "math-group-counting/math-group-counting-3",
+        "math-group-counting/math-group-counting-3",
+        "math-group-counting/math-group-counting-12",
+        "math-group-counting/math-group-counting-12",
+        "math-group-counting/math-group-counting-12",
+        "math-group-counting/math-group-counting-12",
+        "math-group-counting/math-group-counting-12",
+        "math-group-counting/math-group-counting-12",
+        "math-group-counting/math-group-counting-12",
+        "math-group-counting/math-group-counting-12",
+        "math-group-counting/math-group-counting-12",
+        "math-group-counting/math-group-counting-12",
+        "math-group-counting/math-group-counting-12",
+        "math-group-counting/math-group-counting-12",
+        "math-group-counting/math-group-counting-12",
+        "math-group-counting/math-group-counting-12",
+        "math-group-counting/math-group-counting-12",
+        "math-group-counting/math-group-counting-12",
+        "logic-pattern-train/logic-pattern-train-13",
+        "logic-pattern-train/logic-pattern-train-14",
+        "logic-pattern-train/logic-pattern-train-14",
+        "logic-pattern-train/logic-pattern-train-15",
+        "logic-pattern-train/logic-pattern-train-15",
         "logic-part-whole-puzzle/round-5",
         "logic-part-whole-puzzle/round-7",
         "logic-part-whole-puzzle/round-11",
@@ -1457,9 +1559,9 @@
       ]
     },
     {
-      "id": "prompt-这里有几个糖果-数慢一点-每个只数一次",
+      "id": "prompt-数一数有几个糖果-数慢一点-每个只数一次",
       "kind": "prompt",
-      "text": "这里有几个糖果？数慢一点，每个只数一次。",
+      "text": "数一数有几个糖果？数慢一点，每个只数一次。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "math-counting-cardinality/math-counting-cardinality-7"
@@ -1506,6 +1608,9 @@
         "math-story-operations/math-story-operations-19",
         "math-story-operations/math-story-operations-20",
         "math-story-operations/math-story-operations-22",
+        "math-group-counting/math-group-counting-3",
+        "math-group-counting/math-group-counting-5",
+        "math-group-counting/math-group-counting-7",
         "logic-number-pattern-trail/logic-number-pattern-trail-4",
         "logic-block-height-map/round-6",
         "logic-block-height-map/round-7",
@@ -1569,18 +1674,12 @@
         "math-subitize-match/math-subitize-match-3",
         "math-subitize-match/math-subitize-match-3",
         "math-subitize-match/math-subitize-match-3",
-        "math-subitize-match/math-subitize-match-8",
-        "math-subitize-match/math-subitize-match-8",
-        "math-subitize-match/math-subitize-match-8",
-        "math-subitize-match/math-subitize-match-8",
-        "math-subitize-match/math-subitize-match-13",
-        "math-subitize-match/math-subitize-match-13",
-        "math-subitize-match/math-subitize-match-13",
-        "math-subitize-match/math-subitize-match-13",
-        "math-subitize-match/math-subitize-match-18",
-        "math-subitize-match/math-subitize-match-18",
-        "math-subitize-match/math-subitize-match-18",
-        "math-subitize-match/math-subitize-match-18",
+        "math-subitize-match/math-subitize-match-10",
+        "math-subitize-match/math-subitize-match-10",
+        "math-subitize-match/math-subitize-match-10",
+        "math-subitize-match/math-subitize-match-10",
+        "math-subitize-match/math-subitize-match-10",
+        "math-subitize-match/math-subitize-match-10",
         "math-fair-share/math-fair-share-4",
         "math-fair-share/math-fair-share-4",
         "math-fair-share/math-fair-share-4",
@@ -1607,6 +1706,14 @@
         "math-fair-share/math-fair-share-9",
         "math-fair-share/math-fair-share-9",
         "math-fair-share/math-fair-share-9",
+        "math-group-counting/math-group-counting-7",
+        "math-group-counting/math-group-counting-7",
+        "math-group-counting/math-group-counting-7",
+        "math-group-counting/math-group-counting-7",
+        "math-group-counting/math-group-counting-7",
+        "math-group-counting/math-group-counting-7",
+        "math-group-counting/math-group-counting-7",
+        "math-group-counting/math-group-counting-7",
         "logic-same-kind-detective/round-6",
         "logic-same-kind-detective/round-18",
         "logic-part-whole-puzzle/round-5",
@@ -1628,9 +1735,9 @@
       ]
     },
     {
-      "id": "prompt-这里有几条小鱼-数慢一点-每个只数一次",
+      "id": "prompt-数一数有几条小鱼-数慢一点-每个只数一次",
       "kind": "prompt",
-      "text": "这里有几条小鱼？数慢一点，每个只数一次。",
+      "text": "数一数有几条小鱼？数慢一点，每个只数一次。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "math-counting-cardinality/math-counting-cardinality-8"
@@ -1670,6 +1777,11 @@
         "math-story-operations/math-story-operations-21",
         "math-story-operations/math-story-operations-22",
         "math-story-operations/math-story-operations-23",
+        "math-group-counting/math-group-counting-3",
+        "math-group-counting/math-group-counting-5",
+        "math-group-counting/math-group-counting-7",
+        "math-group-counting/math-group-counting-9",
+        "math-group-counting/math-group-counting-10",
         "logic-number-pattern-trail/logic-number-pattern-trail-2",
         "logic-number-pattern-trail/logic-number-pattern-trail-4",
         "logic-number-pattern-trail/logic-number-pattern-trail-5",
@@ -1691,6 +1803,12 @@
         "math-counting-cardinality/math-counting-cardinality-8",
         "math-counting-cardinality/math-counting-cardinality-8",
         "math-counting-cardinality/math-counting-cardinality-8",
+        "math-subitize-match/math-subitize-match-13",
+        "math-subitize-match/math-subitize-match-13",
+        "math-subitize-match/math-subitize-match-13",
+        "math-subitize-match/math-subitize-match-13",
+        "math-subitize-match/math-subitize-match-13",
+        "math-subitize-match/math-subitize-match-13",
         "math-fair-share/math-fair-share-1",
         "math-fair-share/math-fair-share-1",
         "math-fair-share/math-fair-share-2",
@@ -1730,6 +1848,18 @@
         "math-fair-share/math-fair-share-13",
         "math-fair-share/math-fair-share-13",
         "math-fair-share/math-fair-share-13",
+        "math-group-counting/math-group-counting-8",
+        "math-group-counting/math-group-counting-8",
+        "math-group-counting/math-group-counting-8",
+        "math-group-counting/math-group-counting-8",
+        "math-group-counting/math-group-counting-8",
+        "math-group-counting/math-group-counting-8",
+        "math-group-counting/math-group-counting-8",
+        "math-group-counting/math-group-counting-8",
+        "math-group-counting/math-group-counting-8",
+        "math-group-counting/math-group-counting-8",
+        "math-group-counting/math-group-counting-8",
+        "math-group-counting/math-group-counting-8",
         "logic-relation-pairs/fish-river-4",
         "logic-relation-pairs/fish-bird-analogy-9",
         "logic-relation-pairs/fish-river-20",
@@ -1806,9 +1936,9 @@
       ]
     },
     {
-      "id": "prompt-这里有几只小鸟-数慢一点-每个只数一次",
+      "id": "prompt-数一数有几只小鸟-数慢一点-每个只数一次",
       "kind": "prompt",
-      "text": "这里有几只小鸟？数慢一点，每个只数一次。",
+      "text": "数一数有几只小鸟？数慢一点，每个只数一次。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "math-counting-cardinality/math-counting-cardinality-9"
@@ -1839,6 +1969,9 @@
         "math-story-operations/math-story-operations-21",
         "math-story-operations/math-story-operations-22",
         "math-story-operations/math-story-operations-23",
+        "math-group-counting/math-group-counting-5",
+        "math-group-counting/math-group-counting-9",
+        "math-group-counting/math-group-counting-10",
         "logic-number-pattern-trail/logic-number-pattern-trail-2",
         "logic-number-pattern-trail/logic-number-pattern-trail-4",
         "logic-number-pattern-trail/logic-number-pattern-trail-5",
@@ -1861,6 +1994,9 @@
         "math-counting-cardinality/math-counting-cardinality-9",
         "math-counting-cardinality/math-counting-cardinality-9",
         "math-counting-cardinality/math-counting-cardinality-9",
+        "math-subitize-match/math-subitize-match-14",
+        "math-subitize-match/math-subitize-match-14",
+        "math-subitize-match/math-subitize-match-14",
         "math-story-operations/math-story-operations-24",
         "math-story-operations/math-story-operations-24",
         "math-story-operations/math-story-operations-24",
@@ -1950,6 +2086,16 @@
         "math-story-operations/math-story-operations-36",
         "math-story-operations/math-story-operations-36",
         "math-story-operations/math-story-operations-36",
+        "math-group-counting/math-group-counting-9",
+        "math-group-counting/math-group-counting-9",
+        "math-group-counting/math-group-counting-9",
+        "math-group-counting/math-group-counting-9",
+        "math-group-counting/math-group-counting-9",
+        "math-group-counting/math-group-counting-9",
+        "math-group-counting/math-group-counting-9",
+        "math-group-counting/math-group-counting-9",
+        "math-group-counting/math-group-counting-9",
+        "math-group-counting/math-group-counting-9",
         "logic-relation-pairs/bird-sky-5",
         "logic-relation-pairs/fish-bird-analogy-9",
         "logic-relation-pairs/best-reason-16",
@@ -2023,9 +2169,9 @@
       ]
     },
     {
-      "id": "prompt-这里有几个草莓-数慢一点-每个只数一次",
+      "id": "prompt-数一数有几个草莓-数慢一点-每个只数一次",
       "kind": "prompt",
-      "text": "这里有几个草莓？数慢一点，每个只数一次。",
+      "text": "数一数有几个草莓？数慢一点，每个只数一次。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "math-counting-cardinality/math-counting-cardinality-10"
@@ -2096,7 +2242,15 @@
         "math-counting-cardinality/math-counting-cardinality-15",
         "math-counting-cardinality/math-counting-cardinality-16",
         "math-counting-cardinality/math-counting-cardinality-17",
-        "math-counting-cardinality/math-counting-cardinality-18"
+        "math-counting-cardinality/math-counting-cardinality-18",
+        "logic-sorter-switch/round-9",
+        "logic-sorter-switch/round-10",
+        "logic-sorter-switch/round-11",
+        "logic-sorter-switch/round-12",
+        "logic-sorter-switch/round-21",
+        "logic-sorter-switch/round-22",
+        "logic-sorter-switch/round-23",
+        "logic-sorter-switch/round-24"
       ]
     },
     {
@@ -2112,7 +2266,15 @@
         "math-counting-cardinality/math-counting-cardinality-15",
         "math-counting-cardinality/math-counting-cardinality-16",
         "math-counting-cardinality/math-counting-cardinality-17",
-        "math-counting-cardinality/math-counting-cardinality-18"
+        "math-counting-cardinality/math-counting-cardinality-18",
+        "logic-sorter-switch/round-9",
+        "logic-sorter-switch/round-10",
+        "logic-sorter-switch/round-11",
+        "logic-sorter-switch/round-12",
+        "logic-sorter-switch/round-21",
+        "logic-sorter-switch/round-22",
+        "logic-sorter-switch/round-23",
+        "logic-sorter-switch/round-24"
       ]
     },
     {
@@ -2128,7 +2290,15 @@
         "math-counting-cardinality/math-counting-cardinality-15",
         "math-counting-cardinality/math-counting-cardinality-16",
         "math-counting-cardinality/math-counting-cardinality-17",
-        "math-counting-cardinality/math-counting-cardinality-18"
+        "math-counting-cardinality/math-counting-cardinality-18",
+        "logic-sorter-switch/round-9",
+        "logic-sorter-switch/round-10",
+        "logic-sorter-switch/round-11",
+        "logic-sorter-switch/round-12",
+        "logic-sorter-switch/round-21",
+        "logic-sorter-switch/round-22",
+        "logic-sorter-switch/round-23",
+        "logic-sorter-switch/round-24"
       ]
     },
     {
@@ -2344,10 +2514,7 @@
       "text": "你能一眼看出有几个吗？两个在一起",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "math-subitize-match/math-subitize-match-1",
-        "math-subitize-match/math-subitize-match-6",
-        "math-subitize-match/math-subitize-match-11",
-        "math-subitize-match/math-subitize-match-16"
+        "math-subitize-match/math-subitize-match-1"
       ]
     },
     {
@@ -2356,10 +2523,7 @@
       "text": "是 2 个。两个在一起。",
       "tone": "warm, delighted, clear",
       "contexts": [
-        "math-subitize-match/math-subitize-match-1",
-        "math-subitize-match/math-subitize-match-6",
-        "math-subitize-match/math-subitize-match-11",
-        "math-subitize-match/math-subitize-match-16"
+        "math-subitize-match/math-subitize-match-1"
       ]
     },
     {
@@ -2368,10 +2532,7 @@
       "text": "可以先看成 两个在一起，再确认。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
-        "math-subitize-match/math-subitize-match-1",
-        "math-subitize-match/math-subitize-match-6",
-        "math-subitize-match/math-subitize-match-11",
-        "math-subitize-match/math-subitize-match-16"
+        "math-subitize-match/math-subitize-match-1"
       ]
     },
     {
@@ -2394,12 +2555,7 @@
         "math-subitize-match/math-subitize-match-12",
         "math-subitize-match/math-subitize-match-13",
         "math-subitize-match/math-subitize-match-14",
-        "math-subitize-match/math-subitize-match-15",
-        "math-subitize-match/math-subitize-match-16",
-        "math-subitize-match/math-subitize-match-17",
-        "math-subitize-match/math-subitize-match-18",
-        "math-subitize-match/math-subitize-match-19",
-        "math-subitize-match/math-subitize-match-20"
+        "math-subitize-match/math-subitize-match-15"
       ]
     },
     {
@@ -2408,10 +2564,7 @@
       "text": "你能一眼看出有几个吗？三个像小三角",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "math-subitize-match/math-subitize-match-2",
-        "math-subitize-match/math-subitize-match-7",
-        "math-subitize-match/math-subitize-match-12",
-        "math-subitize-match/math-subitize-match-17"
+        "math-subitize-match/math-subitize-match-2"
       ]
     },
     {
@@ -2420,10 +2573,7 @@
       "text": "是 3 个。三个像小三角。",
       "tone": "warm, delighted, clear",
       "contexts": [
-        "math-subitize-match/math-subitize-match-2",
-        "math-subitize-match/math-subitize-match-7",
-        "math-subitize-match/math-subitize-match-12",
-        "math-subitize-match/math-subitize-match-17"
+        "math-subitize-match/math-subitize-match-2"
       ]
     },
     {
@@ -2432,10 +2582,7 @@
       "text": "可以先看成 三个像小三角，再确认。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
-        "math-subitize-match/math-subitize-match-2",
-        "math-subitize-match/math-subitize-match-7",
-        "math-subitize-match/math-subitize-match-12",
-        "math-subitize-match/math-subitize-match-17"
+        "math-subitize-match/math-subitize-match-2"
       ]
     },
     {
@@ -2445,9 +2592,7 @@
       "tone": "friendly, clear, playful",
       "contexts": [
         "math-subitize-match/math-subitize-match-3",
-        "math-subitize-match/math-subitize-match-8",
-        "math-subitize-match/math-subitize-match-13",
-        "math-subitize-match/math-subitize-match-18"
+        "math-subitize-match/math-subitize-match-15"
       ]
     },
     {
@@ -2457,9 +2602,7 @@
       "tone": "warm, delighted, clear",
       "contexts": [
         "math-subitize-match/math-subitize-match-3",
-        "math-subitize-match/math-subitize-match-8",
-        "math-subitize-match/math-subitize-match-13",
-        "math-subitize-match/math-subitize-match-18"
+        "math-subitize-match/math-subitize-match-15"
       ]
     },
     {
@@ -2469,9 +2612,7 @@
       "tone": "gentle, encouraging, slow",
       "contexts": [
         "math-subitize-match/math-subitize-match-3",
-        "math-subitize-match/math-subitize-match-8",
-        "math-subitize-match/math-subitize-match-13",
-        "math-subitize-match/math-subitize-match-18"
+        "math-subitize-match/math-subitize-match-15"
       ]
     },
     {
@@ -2480,10 +2621,7 @@
       "text": "你能一眼看出有几个吗？四个角加中间一个",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "math-subitize-match/math-subitize-match-4",
-        "math-subitize-match/math-subitize-match-9",
-        "math-subitize-match/math-subitize-match-14",
-        "math-subitize-match/math-subitize-match-19"
+        "math-subitize-match/math-subitize-match-4"
       ]
     },
     {
@@ -2492,10 +2630,7 @@
       "text": "是 5 个。四个角加中间一个。",
       "tone": "warm, delighted, clear",
       "contexts": [
-        "math-subitize-match/math-subitize-match-4",
-        "math-subitize-match/math-subitize-match-9",
-        "math-subitize-match/math-subitize-match-14",
-        "math-subitize-match/math-subitize-match-19"
+        "math-subitize-match/math-subitize-match-4"
       ]
     },
     {
@@ -2504,10 +2639,7 @@
       "text": "可以先看成 四个角加中间一个，再确认。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
-        "math-subitize-match/math-subitize-match-4",
-        "math-subitize-match/math-subitize-match-9",
-        "math-subitize-match/math-subitize-match-14",
-        "math-subitize-match/math-subitize-match-19"
+        "math-subitize-match/math-subitize-match-4"
       ]
     },
     {
@@ -2521,40 +2653,23 @@
         "math-subitize-match/math-subitize-match-4",
         "math-subitize-match/math-subitize-match-4",
         "math-subitize-match/math-subitize-match-4",
-        "math-subitize-match/math-subitize-match-9",
-        "math-subitize-match/math-subitize-match-9",
-        "math-subitize-match/math-subitize-match-9",
-        "math-subitize-match/math-subitize-match-9",
-        "math-subitize-match/math-subitize-match-9",
-        "math-subitize-match/math-subitize-match-14",
-        "math-subitize-match/math-subitize-match-14",
-        "math-subitize-match/math-subitize-match-14",
-        "math-subitize-match/math-subitize-match-14",
-        "math-subitize-match/math-subitize-match-14",
-        "math-subitize-match/math-subitize-match-19",
-        "math-subitize-match/math-subitize-match-19",
-        "math-subitize-match/math-subitize-match-19",
-        "math-subitize-match/math-subitize-match-19",
-        "math-subitize-match/math-subitize-match-19",
+        "logic-pattern-train/logic-pattern-train-4",
+        "logic-pattern-train/logic-pattern-train-4",
+        "logic-pattern-train/logic-pattern-train-4",
+        "logic-pattern-train/logic-pattern-train-5",
+        "logic-pattern-train/logic-pattern-train-5",
+        "logic-pattern-train/logic-pattern-train-5",
         "logic-pattern-train/logic-pattern-train-6",
         "logic-pattern-train/logic-pattern-train-6",
-        "logic-pattern-train/logic-pattern-train-7",
-        "logic-pattern-train/logic-pattern-train-8",
-        "logic-pattern-train/logic-pattern-train-8",
-        "logic-pattern-train/logic-pattern-train-9",
-        "logic-pattern-train/logic-pattern-train-10",
-        "logic-pattern-train/logic-pattern-train-10",
         "logic-sorter-switch/round-4",
         "logic-sorter-switch/round-7",
-        "logic-sorter-switch/round-9",
-        "logic-sorter-switch/round-10",
         "logic-sorter-switch/round-11",
+        "logic-sorter-switch/round-12",
         "logic-sorter-switch/round-12",
         "logic-sorter-switch/round-16",
         "logic-sorter-switch/round-19",
-        "logic-sorter-switch/round-21",
-        "logic-sorter-switch/round-22",
         "logic-sorter-switch/round-23",
+        "logic-sorter-switch/round-24",
         "logic-sorter-switch/round-24",
         "logic-matrix-puzzle/round-1",
         "logic-matrix-puzzle/round-4",
@@ -2582,10 +2697,7 @@
       "text": "你能一眼看出有几个吗？三和三合起来",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "math-subitize-match/math-subitize-match-5",
-        "math-subitize-match/math-subitize-match-10",
-        "math-subitize-match/math-subitize-match-15",
-        "math-subitize-match/math-subitize-match-20"
+        "math-subitize-match/math-subitize-match-5"
       ]
     },
     {
@@ -2594,10 +2706,7 @@
       "text": "是 6 个。三和三合起来。",
       "tone": "warm, delighted, clear",
       "contexts": [
-        "math-subitize-match/math-subitize-match-5",
-        "math-subitize-match/math-subitize-match-10",
-        "math-subitize-match/math-subitize-match-15",
-        "math-subitize-match/math-subitize-match-20"
+        "math-subitize-match/math-subitize-match-5"
       ]
     },
     {
@@ -2606,10 +2715,7 @@
       "text": "可以先看成 三和三合起来，再确认。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
-        "math-subitize-match/math-subitize-match-5",
-        "math-subitize-match/math-subitize-match-10",
-        "math-subitize-match/math-subitize-match-15",
-        "math-subitize-match/math-subitize-match-20"
+        "math-subitize-match/math-subitize-match-5"
       ]
     },
     {
@@ -2624,64 +2730,32 @@
         "math-subitize-match/math-subitize-match-5",
         "math-subitize-match/math-subitize-match-5",
         "math-subitize-match/math-subitize-match-5",
-        "math-subitize-match/math-subitize-match-10",
-        "math-subitize-match/math-subitize-match-10",
-        "math-subitize-match/math-subitize-match-10",
-        "math-subitize-match/math-subitize-match-10",
-        "math-subitize-match/math-subitize-match-10",
-        "math-subitize-match/math-subitize-match-10",
-        "math-subitize-match/math-subitize-match-15",
-        "math-subitize-match/math-subitize-match-15",
-        "math-subitize-match/math-subitize-match-15",
-        "math-subitize-match/math-subitize-match-15",
-        "math-subitize-match/math-subitize-match-15",
-        "math-subitize-match/math-subitize-match-15",
-        "math-subitize-match/math-subitize-match-20",
-        "math-subitize-match/math-subitize-match-20",
-        "math-subitize-match/math-subitize-match-20",
-        "math-subitize-match/math-subitize-match-20",
-        "math-subitize-match/math-subitize-match-20",
-        "math-subitize-match/math-subitize-match-20",
+        "logic-pattern-train/logic-pattern-train-4",
+        "logic-pattern-train/logic-pattern-train-4",
+        "logic-pattern-train/logic-pattern-train-5",
+        "logic-pattern-train/logic-pattern-train-5",
         "logic-pattern-train/logic-pattern-train-6",
         "logic-pattern-train/logic-pattern-train-6",
-        "logic-pattern-train/logic-pattern-train-7",
-        "logic-pattern-train/logic-pattern-train-7",
-        "logic-pattern-train/logic-pattern-train-8",
-        "logic-pattern-train/logic-pattern-train-8",
-        "logic-pattern-train/logic-pattern-train-9",
-        "logic-pattern-train/logic-pattern-train-9",
-        "logic-pattern-train/logic-pattern-train-10",
-        "logic-pattern-train/logic-pattern-train-10",
+        "logic-pattern-train/logic-pattern-train-6",
         "logic-sorter-switch/round-1",
         "logic-sorter-switch/round-2",
         "logic-sorter-switch/round-3",
         "logic-sorter-switch/round-3",
         "logic-sorter-switch/round-4",
-        "logic-sorter-switch/round-9",
         "logic-sorter-switch/round-10",
         "logic-sorter-switch/round-11",
-        "logic-sorter-switch/round-12",
+        "logic-sorter-switch/round-11",
         "logic-sorter-switch/round-13",
         "logic-sorter-switch/round-14",
         "logic-sorter-switch/round-15",
         "logic-sorter-switch/round-15",
         "logic-sorter-switch/round-16",
-        "logic-sorter-switch/round-21",
         "logic-sorter-switch/round-22",
         "logic-sorter-switch/round-23",
-        "logic-sorter-switch/round-24",
+        "logic-sorter-switch/round-23",
         "logic-stop-think/logic-stop-think-1",
         "logic-stop-think/logic-stop-think-3",
         "logic-stop-think/logic-stop-think-5",
-        "logic-stop-think/logic-stop-think-7",
-        "logic-stop-think/logic-stop-think-9",
-        "logic-stop-think/logic-stop-think-11",
-        "logic-stop-think/logic-stop-think-13",
-        "logic-stop-think/logic-stop-think-15",
-        "logic-stop-think/logic-stop-think-17",
-        "logic-stop-think/logic-stop-think-19",
-        "logic-stop-think/logic-stop-think-21",
-        "logic-stop-think/logic-stop-think-23",
         "logic-condition-detective/round-3",
         "logic-condition-detective/round-15",
         "logic-fix-plan/round-3",
@@ -2701,6 +2775,291 @@
         "logic-part-whole-puzzle/round-10",
         "logic-mirror-fold/round-2",
         "logic-mirror-fold/round-14"
+      ]
+    },
+    {
+      "id": "prompt-你能一眼看出有几个吗-两个并排",
+      "kind": "prompt",
+      "text": "你能一眼看出有几个吗？两个并排",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-subitize-match/math-subitize-match-6"
+      ]
+    },
+    {
+      "id": "success-是-2-个-两个并排",
+      "kind": "success",
+      "text": "是 2 个。两个并排。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "math-subitize-match/math-subitize-match-6"
+      ]
+    },
+    {
+      "id": "retry-可以先看成-两个并排-再确认",
+      "kind": "retry",
+      "text": "可以先看成 两个并排，再确认。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "math-subitize-match/math-subitize-match-6"
+      ]
+    },
+    {
+      "id": "prompt-你能一眼看出有几个吗-一排三个",
+      "kind": "prompt",
+      "text": "你能一眼看出有几个吗？一排三个",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-subitize-match/math-subitize-match-7"
+      ]
+    },
+    {
+      "id": "success-是-3-个-一排三个",
+      "kind": "success",
+      "text": "是 3 个。一排三个。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "math-subitize-match/math-subitize-match-7"
+      ]
+    },
+    {
+      "id": "retry-可以先看成-一排三个-再确认",
+      "kind": "retry",
+      "text": "可以先看成 一排三个，再确认。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "math-subitize-match/math-subitize-match-7"
+      ]
+    },
+    {
+      "id": "prompt-你能一眼看出有几个吗-两排-每排两个",
+      "kind": "prompt",
+      "text": "你能一眼看出有几个吗？两排，每排两个",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-subitize-match/math-subitize-match-8"
+      ]
+    },
+    {
+      "id": "success-是-4-个-两排-每排两个",
+      "kind": "success",
+      "text": "是 4 个。两排，每排两个。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "math-subitize-match/math-subitize-match-8"
+      ]
+    },
+    {
+      "id": "retry-可以先看成-两排-每排两个-再确认",
+      "kind": "retry",
+      "text": "可以先看成 两排，每排两个，再确认。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "math-subitize-match/math-subitize-match-8"
+      ]
+    },
+    {
+      "id": "prompt-你能一眼看出有几个吗-先看四个-再加一个",
+      "kind": "prompt",
+      "text": "你能一眼看出有几个吗？先看四个，再加一个",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-subitize-match/math-subitize-match-9"
+      ]
+    },
+    {
+      "id": "success-是-5-个-先看四个-再加一个",
+      "kind": "success",
+      "text": "是 5 个。先看四个，再加一个。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "math-subitize-match/math-subitize-match-9"
+      ]
+    },
+    {
+      "id": "retry-可以先看成-先看四个-再加一个-再确认",
+      "kind": "retry",
+      "text": "可以先看成 先看四个，再加一个，再确认。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "math-subitize-match/math-subitize-match-9"
+      ]
+    },
+    {
+      "id": "prompt-你能一眼看出有几个吗-两个三个合起来",
+      "kind": "prompt",
+      "text": "你能一眼看出有几个吗？两个三个合起来",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-subitize-match/math-subitize-match-10"
+      ]
+    },
+    {
+      "id": "success-是-6-个-两个三个合起来",
+      "kind": "success",
+      "text": "是 6 个。两个三个合起来。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "math-subitize-match/math-subitize-match-10"
+      ]
+    },
+    {
+      "id": "retry-可以先看成-两个三个合起来-再确认",
+      "kind": "retry",
+      "text": "可以先看成 两个三个合起来，再确认。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "math-subitize-match/math-subitize-match-10"
+      ]
+    },
+    {
+      "id": "prompt-你能一眼看出有几个吗-像一个小方阵",
+      "kind": "prompt",
+      "text": "你能一眼看出有几个吗？像一个小方阵",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-subitize-match/math-subitize-match-11"
+      ]
+    },
+    {
+      "id": "success-是-4-个-像一个小方阵",
+      "kind": "success",
+      "text": "是 4 个。像一个小方阵。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "math-subitize-match/math-subitize-match-11"
+      ]
+    },
+    {
+      "id": "retry-可以先看成-像一个小方阵-再确认",
+      "kind": "retry",
+      "text": "可以先看成 像一个小方阵，再确认。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "math-subitize-match/math-subitize-match-11"
+      ]
+    },
+    {
+      "id": "object-蓝色方块",
+      "kind": "object",
+      "text": "蓝色方块",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-subitize-match/math-subitize-match-11",
+        "math-subitize-match/math-subitize-match-11",
+        "math-subitize-match/math-subitize-match-11",
+        "math-subitize-match/math-subitize-match-11",
+        "logic-sorter-switch/round-1",
+        "logic-sorter-switch/round-2",
+        "logic-sorter-switch/round-3",
+        "logic-sorter-switch/round-4",
+        "logic-sorter-switch/round-5",
+        "logic-sorter-switch/round-6",
+        "logic-sorter-switch/round-6",
+        "logic-sorter-switch/round-7",
+        "logic-sorter-switch/round-8",
+        "logic-sorter-switch/round-13",
+        "logic-sorter-switch/round-14",
+        "logic-sorter-switch/round-15",
+        "logic-sorter-switch/round-16",
+        "logic-sorter-switch/round-17",
+        "logic-sorter-switch/round-18",
+        "logic-sorter-switch/round-18",
+        "logic-sorter-switch/round-19",
+        "logic-sorter-switch/round-20",
+        "logic-part-whole-puzzle/round-1",
+        "logic-part-whole-puzzle/round-7",
+        "logic-part-whole-puzzle/round-13",
+        "logic-mirror-fold/round-5",
+        "logic-mirror-fold/round-5",
+        "logic-mirror-fold/round-5",
+        "logic-mirror-fold/round-5",
+        "logic-mirror-fold/round-10",
+        "logic-mirror-fold/round-17",
+        "logic-mirror-fold/round-17",
+        "logic-mirror-fold/round-17",
+        "logic-mirror-fold/round-17"
+      ]
+    },
+    {
+      "id": "prompt-你能一眼看出有几个吗-一排五个",
+      "kind": "prompt",
+      "text": "你能一眼看出有几个吗？一排五个",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-subitize-match/math-subitize-match-12"
+      ]
+    },
+    {
+      "id": "success-是-5-个-一排五个",
+      "kind": "success",
+      "text": "是 5 个。一排五个。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "math-subitize-match/math-subitize-match-12"
+      ]
+    },
+    {
+      "id": "retry-可以先看成-一排五个-再确认",
+      "kind": "retry",
+      "text": "可以先看成 一排五个，再确认。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "math-subitize-match/math-subitize-match-12"
+      ]
+    },
+    {
+      "id": "prompt-你能一眼看出有几个吗-五个再加一个",
+      "kind": "prompt",
+      "text": "你能一眼看出有几个吗？五个再加一个",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-subitize-match/math-subitize-match-13"
+      ]
+    },
+    {
+      "id": "success-是-6-个-五个再加一个",
+      "kind": "success",
+      "text": "是 6 个。五个再加一个。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "math-subitize-match/math-subitize-match-13"
+      ]
+    },
+    {
+      "id": "retry-可以先看成-五个再加一个-再确认",
+      "kind": "retry",
+      "text": "可以先看成 五个再加一个，再确认。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "math-subitize-match/math-subitize-match-13"
+      ]
+    },
+    {
+      "id": "prompt-你能一眼看出有几个吗-两个加一个",
+      "kind": "prompt",
+      "text": "你能一眼看出有几个吗？两个加一个",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-subitize-match/math-subitize-match-14"
+      ]
+    },
+    {
+      "id": "success-是-3-个-两个加一个",
+      "kind": "success",
+      "text": "是 3 个。两个加一个。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "math-subitize-match/math-subitize-match-14"
+      ]
+    },
+    {
+      "id": "retry-可以先看成-两个加一个-再确认",
+      "kind": "retry",
+      "text": "可以先看成 两个加一个，再确认。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "math-subitize-match/math-subitize-match-14"
       ]
     },
     {
@@ -4545,18 +4904,18 @@
       ]
     },
     {
-      "id": "prompt-2-个小鱼分给-2-个小朋友-每人一样多-每人几个-可以一个一个轮流分",
+      "id": "prompt-2-条小鱼分给-2-个小朋友-每人一样多-每人几个-可以一个一个轮流分",
       "kind": "prompt",
-      "text": "2 个小鱼分给 2 个小朋友，每人一样多，每人几个？可以一个一个轮流分。",
+      "text": "2 条小鱼分给 2 个小朋友，每人一样多，每人几个？可以一个一个轮流分。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "math-fair-share/math-fair-share-1"
       ]
     },
     {
-      "id": "success-2-个分给-2-个-每人-1-个-正好一样多",
+      "id": "success-2-条小鱼分给-2-个-每人-1-个-正好一样多",
       "kind": "success",
-      "text": "2 个分给 2 个，每人 1 个，正好一样多。",
+      "text": "2 条小鱼分给 2 个，每人 1 个，正好一样多。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "math-fair-share/math-fair-share-1"
@@ -4619,12 +4978,6 @@
         "math-fair-share/math-fair-share-13",
         "math-fair-share/math-fair-share-13",
         "math-fair-share/math-fair-share-13",
-        "logic-stop-think/logic-stop-think-19",
-        "logic-stop-think/logic-stop-think-20",
-        "logic-stop-think/logic-stop-think-21",
-        "logic-stop-think/logic-stop-think-22",
-        "logic-stop-think/logic-stop-think-23",
-        "logic-stop-think/logic-stop-think-24",
         "logic-order-plan/round-9",
         "logic-order-plan/round-21",
         "logic-space-bridge/round-6",
@@ -4695,18 +5048,18 @@
       ]
     },
     {
-      "id": "prompt-4-个小鱼分给-2-个小朋友-每人一样多-每人几个-可以一个一个轮流分",
+      "id": "prompt-4-条小鱼分给-2-个小朋友-每人一样多-每人几个-可以一个一个轮流分",
       "kind": "prompt",
-      "text": "4 个小鱼分给 2 个小朋友，每人一样多，每人几个？可以一个一个轮流分。",
+      "text": "4 条小鱼分给 2 个小朋友，每人一样多，每人几个？可以一个一个轮流分。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "math-fair-share/math-fair-share-2"
       ]
     },
     {
-      "id": "success-4-个分给-2-个-每人-2-个-正好一样多",
+      "id": "success-4-条小鱼分给-2-个-每人-2-个-正好一样多",
       "kind": "success",
-      "text": "4 个分给 2 个，每人 2 个，正好一样多。",
+      "text": "4 条小鱼分给 2 个，每人 2 个，正好一样多。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "math-fair-share/math-fair-share-2"
@@ -4722,9 +5075,9 @@
       ]
     },
     {
-      "id": "success-6-个分给-2-个-每人-3-个-正好一样多",
+      "id": "success-6-个饼干分给-2-个-每人-3-个-正好一样多",
       "kind": "success",
-      "text": "6 个分给 2 个，每人 3 个，正好一样多。",
+      "text": "6 个饼干分给 2 个，每人 3 个，正好一样多。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "math-fair-share/math-fair-share-3"
@@ -4753,9 +5106,9 @@
       ]
     },
     {
-      "id": "success-8-个分给-2-个-每人-4-个-正好一样多",
+      "id": "success-8-个糖果分给-2-个-每人-4-个-正好一样多",
       "kind": "success",
-      "text": "8 个分给 2 个，每人 4 个，正好一样多。",
+      "text": "8 个糖果分给 2 个，每人 4 个，正好一样多。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "math-fair-share/math-fair-share-4"
@@ -4796,9 +5149,9 @@
       ]
     },
     {
-      "id": "success-6-个分给-3-个-每人-2-个-正好一样多",
+      "id": "success-6-个糖果分给-3-个-每人-2-个-正好一样多",
       "kind": "success",
-      "text": "6 个分给 3 个，每人 2 个，正好一样多。",
+      "text": "6 个糖果分给 3 个，每人 2 个，正好一样多。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "math-fair-share/math-fair-share-5"
@@ -4814,9 +5167,9 @@
       ]
     },
     {
-      "id": "success-9-个分给-3-个-每人-3-个-正好一样多",
+      "id": "success-9-个饼干分给-3-个-每人-3-个-正好一样多",
       "kind": "success",
-      "text": "9 个分给 3 个，每人 3 个，正好一样多。",
+      "text": "9 个饼干分给 3 个，每人 3 个，正好一样多。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "math-fair-share/math-fair-share-6"
@@ -4832,9 +5185,9 @@
       ]
     },
     {
-      "id": "success-10-个分给-5-个-每人-2-个-正好一样多",
+      "id": "success-10-个草莓分给-5-个-每人-2-个-正好一样多",
       "kind": "success",
-      "text": "10 个分给 5 个，每人 2 个，正好一样多。",
+      "text": "10 个草莓分给 5 个，每人 2 个，正好一样多。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "math-fair-share/math-fair-share-7"
@@ -4850,9 +5203,9 @@
       ]
     },
     {
-      "id": "success-12-个分给-3-个-每人-4-个-正好一样多",
+      "id": "success-12-个积木分给-3-个-每人-4-个-正好一样多",
       "kind": "success",
-      "text": "12 个分给 3 个，每人 4 个，正好一样多。",
+      "text": "12 个积木分给 3 个，每人 4 个，正好一样多。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "math-fair-share/math-fair-share-8"
@@ -4868,9 +5221,9 @@
       ]
     },
     {
-      "id": "success-12-个分给-4-个-每人-3-个-正好一样多",
+      "id": "success-12-个糖果分给-4-个-每人-3-个-正好一样多",
       "kind": "success",
-      "text": "12 个分给 4 个，每人 3 个，正好一样多。",
+      "text": "12 个糖果分给 4 个，每人 3 个，正好一样多。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "math-fair-share/math-fair-share-9"
@@ -4957,6 +5310,444 @@
       ]
     },
     {
+      "id": "game-title-几个几个数",
+      "kind": "game-title",
+      "text": "几个几个数",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-group-counting"
+      ]
+    },
+    {
+      "id": "game-goal-建立成组计数和早期乘法直觉",
+      "kind": "game-goal",
+      "text": "建立成组计数和早期乘法直觉。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-group-counting"
+      ]
+    },
+    {
+      "id": "prompt-每组放-2-个草莓-有-2-组-一共有多少个草莓-2-个一组地数-也可以先看有几组",
+      "kind": "prompt",
+      "text": "每组放 2 个草莓，有 2 组，一共有多少个草莓？2 个一组地数，也可以先看有几组。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-group-counting/math-group-counting-1"
+      ]
+    },
+    {
+      "id": "success-2-组-每组-2-个草莓-一共有-4-个草莓",
+      "kind": "success",
+      "text": "2 组，每组 2 个草莓，一共有 4 个草莓。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "math-group-counting/math-group-counting-1"
+      ]
+    },
+    {
+      "id": "retry-先数一组是-2-个草莓-再数有-2-组",
+      "kind": "retry",
+      "text": "先数一组是 2 个草莓，再数有 2 组。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "math-group-counting/math-group-counting-1"
+      ]
+    },
+    {
+      "id": "parent-问她-每组几个-一共有几组-可以几个几个地数",
+      "kind": "parent",
+      "text": "问她：每组几个？一共有几组？可以几个几个地数？",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-group-counting/math-group-counting-1",
+        "math-group-counting/math-group-counting-2",
+        "math-group-counting/math-group-counting-3",
+        "math-group-counting/math-group-counting-4",
+        "math-group-counting/math-group-counting-5",
+        "math-group-counting/math-group-counting-6",
+        "math-group-counting/math-group-counting-7",
+        "math-group-counting/math-group-counting-8",
+        "math-group-counting/math-group-counting-9",
+        "math-group-counting/math-group-counting-10",
+        "math-group-counting/math-group-counting-11",
+        "math-group-counting/math-group-counting-12"
+      ]
+    },
+    {
+      "id": "prompt-每组放-2-个饼干-有-3-组-一共有多少个饼干-2-个一组地数-也可以先看有几组",
+      "kind": "prompt",
+      "text": "每组放 2 个饼干，有 3 组，一共有多少个饼干？2 个一组地数，也可以先看有几组。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-group-counting/math-group-counting-2"
+      ]
+    },
+    {
+      "id": "success-3-组-每组-2-个饼干-一共有-6-个饼干",
+      "kind": "success",
+      "text": "3 组，每组 2 个饼干，一共有 6 个饼干。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "math-group-counting/math-group-counting-2"
+      ]
+    },
+    {
+      "id": "retry-先数一组是-2-个饼干-再数有-3-组",
+      "kind": "retry",
+      "text": "先数一组是 2 个饼干，再数有 3 组。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "math-group-counting/math-group-counting-2"
+      ]
+    },
+    {
+      "id": "prompt-每组放-2-颗星星-有-4-组-一共有多少颗星星-2-颗一组地数-也可以先看有几组",
+      "kind": "prompt",
+      "text": "每组放 2 颗星星，有 4 组，一共有多少颗星星？2 颗一组地数，也可以先看有几组。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-group-counting/math-group-counting-3"
+      ]
+    },
+    {
+      "id": "success-4-组-每组-2-颗星星-一共有-8-颗星星",
+      "kind": "success",
+      "text": "4 组，每组 2 颗星星，一共有 8 颗星星。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "math-group-counting/math-group-counting-3"
+      ]
+    },
+    {
+      "id": "retry-先数一组是-2-颗星星-再数有-4-组",
+      "kind": "retry",
+      "text": "先数一组是 2 颗星星，再数有 4 组。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "math-group-counting/math-group-counting-3"
+      ]
+    },
+    {
+      "id": "prompt-每组放-3-个苹果-有-2-组-一共有多少个苹果-3-个一组地数-也可以先看有几组",
+      "kind": "prompt",
+      "text": "每组放 3 个苹果，有 2 组，一共有多少个苹果？3 个一组地数，也可以先看有几组。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-group-counting/math-group-counting-4"
+      ]
+    },
+    {
+      "id": "success-2-组-每组-3-个苹果-一共有-6-个苹果",
+      "kind": "success",
+      "text": "2 组，每组 3 个苹果，一共有 6 个苹果。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "math-group-counting/math-group-counting-4"
+      ]
+    },
+    {
+      "id": "retry-先数一组是-3-个苹果-再数有-2-组",
+      "kind": "retry",
+      "text": "先数一组是 3 个苹果，再数有 2 组。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "math-group-counting/math-group-counting-4"
+      ]
+    },
+    {
+      "id": "prompt-每组放-3-个橘子-有-3-组-一共有多少个橘子-3-个一组地数-也可以先看有几组",
+      "kind": "prompt",
+      "text": "每组放 3 个橘子，有 3 组，一共有多少个橘子？3 个一组地数，也可以先看有几组。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-group-counting/math-group-counting-5"
+      ]
+    },
+    {
+      "id": "success-3-组-每组-3-个橘子-一共有-9-个橘子",
+      "kind": "success",
+      "text": "3 组，每组 3 个橘子，一共有 9 个橘子。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "math-group-counting/math-group-counting-5"
+      ]
+    },
+    {
+      "id": "retry-先数一组是-3-个橘子-再数有-3-组",
+      "kind": "retry",
+      "text": "先数一组是 3 个橘子，再数有 3 组。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "math-group-counting/math-group-counting-5"
+      ]
+    },
+    {
+      "id": "prompt-每组放-3-个积木-有-4-组-一共有多少个积木-3-个一组地数-也可以先看有几组",
+      "kind": "prompt",
+      "text": "每组放 3 个积木，有 4 组，一共有多少个积木？3 个一组地数，也可以先看有几组。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-group-counting/math-group-counting-6"
+      ]
+    },
+    {
+      "id": "success-4-组-每组-3-个积木-一共有-12-个积木",
+      "kind": "success",
+      "text": "4 组，每组 3 个积木，一共有 12 个积木。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "math-group-counting/math-group-counting-6"
+      ]
+    },
+    {
+      "id": "retry-先数一组是-3-个积木-再数有-4-组",
+      "kind": "retry",
+      "text": "先数一组是 3 个积木，再数有 4 组。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "math-group-counting/math-group-counting-6"
+      ]
+    },
+    {
+      "id": "choice-11",
+      "kind": "choice",
+      "text": "11",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-group-counting/math-group-counting-6",
+        "math-group-counting/math-group-counting-8",
+        "math-group-counting/math-group-counting-9",
+        "math-group-counting/math-group-counting-10",
+        "logic-number-pattern-trail/logic-number-pattern-trail-2",
+        "logic-number-pattern-trail/logic-number-pattern-trail-5",
+        "logic-number-pattern-trail/logic-number-pattern-trail-12",
+        "logic-block-height-map/round-8",
+        "logic-block-height-map/round-9"
+      ]
+    },
+    {
+      "id": "choice-12",
+      "kind": "choice",
+      "text": "12",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-group-counting/math-group-counting-6",
+        "math-group-counting/math-group-counting-8",
+        "logic-number-pattern-trail/logic-number-pattern-trail-12"
+      ]
+    },
+    {
+      "id": "choice-13",
+      "kind": "choice",
+      "text": "13",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-group-counting/math-group-counting-6",
+        "math-group-counting/math-group-counting-8"
+      ]
+    },
+    {
+      "id": "prompt-每组放-4-个糖果-有-2-组-一共有多少个糖果-4-个一组地数-也可以先看有几组",
+      "kind": "prompt",
+      "text": "每组放 4 个糖果，有 2 组，一共有多少个糖果？4 个一组地数，也可以先看有几组。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-group-counting/math-group-counting-7"
+      ]
+    },
+    {
+      "id": "success-2-组-每组-4-个糖果-一共有-8-个糖果",
+      "kind": "success",
+      "text": "2 组，每组 4 个糖果，一共有 8 个糖果。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "math-group-counting/math-group-counting-7"
+      ]
+    },
+    {
+      "id": "retry-先数一组是-4-个糖果-再数有-2-组",
+      "kind": "retry",
+      "text": "先数一组是 4 个糖果，再数有 2 组。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "math-group-counting/math-group-counting-7"
+      ]
+    },
+    {
+      "id": "prompt-每组放-4-条小鱼-有-3-组-一共有多少条小鱼-4-条一组地数-也可以先看有几组",
+      "kind": "prompt",
+      "text": "每组放 4 条小鱼，有 3 组，一共有多少条小鱼？4 条一组地数，也可以先看有几组。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-group-counting/math-group-counting-8"
+      ]
+    },
+    {
+      "id": "success-3-组-每组-4-条小鱼-一共有-12-条小鱼",
+      "kind": "success",
+      "text": "3 组，每组 4 条小鱼，一共有 12 条小鱼。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "math-group-counting/math-group-counting-8"
+      ]
+    },
+    {
+      "id": "retry-先数一组是-4-条小鱼-再数有-3-组",
+      "kind": "retry",
+      "text": "先数一组是 4 条小鱼，再数有 3 组。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "math-group-counting/math-group-counting-8"
+      ]
+    },
+    {
+      "id": "prompt-每组放-5-只小鸟-有-2-组-一共有多少只小鸟-5-只一组地数-也可以先看有几组",
+      "kind": "prompt",
+      "text": "每组放 5 只小鸟，有 2 组，一共有多少只小鸟？5 只一组地数，也可以先看有几组。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-group-counting/math-group-counting-9"
+      ]
+    },
+    {
+      "id": "success-2-组-每组-5-只小鸟-一共有-10-只小鸟",
+      "kind": "success",
+      "text": "2 组，每组 5 只小鸟，一共有 10 只小鸟。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "math-group-counting/math-group-counting-9"
+      ]
+    },
+    {
+      "id": "retry-先数一组是-5-只小鸟-再数有-2-组",
+      "kind": "retry",
+      "text": "先数一组是 5 只小鸟，再数有 2 组。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "math-group-counting/math-group-counting-9"
+      ]
+    },
+    {
+      "id": "prompt-每组放-2-个草莓-有-5-组-一共有多少个草莓-2-个一组地数-也可以先看有几组",
+      "kind": "prompt",
+      "text": "每组放 2 个草莓，有 5 组，一共有多少个草莓？2 个一组地数，也可以先看有几组。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-group-counting/math-group-counting-10"
+      ]
+    },
+    {
+      "id": "success-5-组-每组-2-个草莓-一共有-10-个草莓",
+      "kind": "success",
+      "text": "5 组，每组 2 个草莓，一共有 10 个草莓。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "math-group-counting/math-group-counting-10"
+      ]
+    },
+    {
+      "id": "retry-先数一组是-2-个草莓-再数有-5-组",
+      "kind": "retry",
+      "text": "先数一组是 2 个草莓，再数有 5 组。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "math-group-counting/math-group-counting-10"
+      ]
+    },
+    {
+      "id": "prompt-每组放-3-个积木-有-5-组-一共有多少个积木-3-个一组地数-也可以先看有几组",
+      "kind": "prompt",
+      "text": "每组放 3 个积木，有 5 组，一共有多少个积木？3 个一组地数，也可以先看有几组。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-group-counting/math-group-counting-11"
+      ]
+    },
+    {
+      "id": "success-5-组-每组-3-个积木-一共有-15-个积木",
+      "kind": "success",
+      "text": "5 组，每组 3 个积木，一共有 15 个积木。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "math-group-counting/math-group-counting-11"
+      ]
+    },
+    {
+      "id": "retry-先数一组是-3-个积木-再数有-5-组",
+      "kind": "retry",
+      "text": "先数一组是 3 个积木，再数有 5 组。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "math-group-counting/math-group-counting-11"
+      ]
+    },
+    {
+      "id": "choice-14",
+      "kind": "choice",
+      "text": "14",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-group-counting/math-group-counting-11"
+      ]
+    },
+    {
+      "id": "choice-15",
+      "kind": "choice",
+      "text": "15",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-group-counting/math-group-counting-11",
+        "math-group-counting/math-group-counting-12"
+      ]
+    },
+    {
+      "id": "choice-16",
+      "kind": "choice",
+      "text": "16",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-group-counting/math-group-counting-11",
+        "math-group-counting/math-group-counting-12"
+      ]
+    },
+    {
+      "id": "prompt-每组放-4-颗星星-有-4-组-一共有多少颗星星-4-颗一组地数-也可以先看有几组",
+      "kind": "prompt",
+      "text": "每组放 4 颗星星，有 4 组，一共有多少颗星星？4 颗一组地数，也可以先看有几组。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-group-counting/math-group-counting-12"
+      ]
+    },
+    {
+      "id": "success-4-组-每组-4-颗星星-一共有-16-颗星星",
+      "kind": "success",
+      "text": "4 组，每组 4 颗星星，一共有 16 颗星星。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "math-group-counting/math-group-counting-12"
+      ]
+    },
+    {
+      "id": "retry-先数一组是-4-颗星星-再数有-4-组",
+      "kind": "retry",
+      "text": "先数一组是 4 颗星星，再数有 4 组。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "math-group-counting/math-group-counting-12"
+      ]
+    },
+    {
+      "id": "choice-17",
+      "kind": "choice",
+      "text": "17",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-group-counting/math-group-counting-12"
+      ]
+    },
+    {
       "id": "game-title-找规律火车",
       "kind": "game-title",
       "text": "找规律火车",
@@ -4975,33 +5766,33 @@
       ]
     },
     {
-      "id": "prompt-红-蓝-接下来是什么-找一找重复的小组",
+      "id": "prompt-找规律-接下来是什么-先说出重复顺序-再选空格里的图",
       "kind": "prompt",
-      "text": "红、蓝，接下来是什么？找一找重复的小组。",
+      "text": "找规律，接下来是什么？先说出重复顺序，再选空格里的图。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-pattern-train/logic-pattern-train-1",
-        "logic-pattern-train/logic-pattern-train-2",
-        "logic-pattern-train/logic-pattern-train-3",
         "logic-pattern-train/logic-pattern-train-4",
-        "logic-pattern-train/logic-pattern-train-5"
+        "logic-pattern-train/logic-pattern-train-7",
+        "logic-pattern-train/logic-pattern-train-10",
+        "logic-pattern-train/logic-pattern-train-13",
+        "logic-pattern-train/logic-pattern-train-16"
       ]
     },
     {
-      "id": "success-规律是-红-蓝-所以下一个是蓝色圆片",
+      "id": "success-规律是-红-蓝-这里应该是蓝色圆片",
       "kind": "success",
-      "text": "规律是 红、蓝，所以下一个是蓝色圆片。",
+      "text": "规律是 红、蓝，这里应该是蓝色圆片。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-pattern-train/logic-pattern-train-1",
-        "logic-pattern-train/logic-pattern-train-3",
-        "logic-pattern-train/logic-pattern-train-5"
+        "logic-pattern-train/logic-pattern-train-2"
       ]
     },
     {
-      "id": "retry-从头念一念-找到重复的小组",
+      "id": "retry-从头念一念-按同样的顺序找空格",
       "kind": "retry",
-      "text": "从头念一念，找到重复的小组。",
+      "text": "从头念一念，按同样的顺序找空格。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
         "logic-pattern-train/logic-pattern-train-1",
@@ -5021,14 +5812,7 @@
         "logic-pattern-train/logic-pattern-train-15",
         "logic-pattern-train/logic-pattern-train-16",
         "logic-pattern-train/logic-pattern-train-17",
-        "logic-pattern-train/logic-pattern-train-18",
-        "logic-pattern-train/logic-pattern-train-19",
-        "logic-pattern-train/logic-pattern-train-20",
-        "logic-pattern-train/logic-pattern-train-21",
-        "logic-pattern-train/logic-pattern-train-22",
-        "logic-pattern-train/logic-pattern-train-23",
-        "logic-pattern-train/logic-pattern-train-24",
-        "logic-pattern-train/logic-pattern-train-25"
+        "logic-pattern-train/logic-pattern-train-18"
       ]
     },
     {
@@ -5054,14 +5838,7 @@
         "logic-pattern-train/logic-pattern-train-15",
         "logic-pattern-train/logic-pattern-train-16",
         "logic-pattern-train/logic-pattern-train-17",
-        "logic-pattern-train/logic-pattern-train-18",
-        "logic-pattern-train/logic-pattern-train-19",
-        "logic-pattern-train/logic-pattern-train-20",
-        "logic-pattern-train/logic-pattern-train-21",
-        "logic-pattern-train/logic-pattern-train-22",
-        "logic-pattern-train/logic-pattern-train-23",
-        "logic-pattern-train/logic-pattern-train-24",
-        "logic-pattern-train/logic-pattern-train-25"
+        "logic-pattern-train/logic-pattern-train-18"
       ]
     },
     {
@@ -5088,13 +5865,6 @@
         "logic-pattern-train/logic-pattern-train-16",
         "logic-pattern-train/logic-pattern-train-17",
         "logic-pattern-train/logic-pattern-train-18",
-        "logic-pattern-train/logic-pattern-train-19",
-        "logic-pattern-train/logic-pattern-train-20",
-        "logic-pattern-train/logic-pattern-train-21",
-        "logic-pattern-train/logic-pattern-train-22",
-        "logic-pattern-train/logic-pattern-train-23",
-        "logic-pattern-train/logic-pattern-train-24",
-        "logic-pattern-train/logic-pattern-train-25",
         "logic-matrix-puzzle/round-2",
         "logic-matrix-puzzle/round-4",
         "logic-matrix-puzzle/round-8",
@@ -5128,13 +5898,6 @@
         "logic-pattern-train/logic-pattern-train-16",
         "logic-pattern-train/logic-pattern-train-17",
         "logic-pattern-train/logic-pattern-train-18",
-        "logic-pattern-train/logic-pattern-train-19",
-        "logic-pattern-train/logic-pattern-train-20",
-        "logic-pattern-train/logic-pattern-train-21",
-        "logic-pattern-train/logic-pattern-train-22",
-        "logic-pattern-train/logic-pattern-train-23",
-        "logic-pattern-train/logic-pattern-train-24",
-        "logic-pattern-train/logic-pattern-train-25",
         "logic-matrix-puzzle/round-2",
         "logic-matrix-puzzle/round-8",
         "logic-matrix-puzzle/round-14",
@@ -5153,10 +5916,7 @@
         "logic-pattern-train/logic-pattern-train-1",
         "logic-pattern-train/logic-pattern-train-2",
         "logic-pattern-train/logic-pattern-train-3",
-        "logic-pattern-train/logic-pattern-train-4",
-        "logic-pattern-train/logic-pattern-train-5",
-        "logic-pattern-train/logic-pattern-train-7",
-        "logic-pattern-train/logic-pattern-train-9",
+        "logic-pattern-train/logic-pattern-train-6",
         "logic-matrix-puzzle/round-2",
         "logic-matrix-puzzle/round-4",
         "logic-matrix-puzzle/round-8",
@@ -5177,36 +5937,25 @@
       "contexts": [
         "logic-pattern-train/logic-pattern-train-1",
         "logic-pattern-train/logic-pattern-train-1",
+        "logic-pattern-train/logic-pattern-train-1",
+        "logic-pattern-train/logic-pattern-train-2",
+        "logic-pattern-train/logic-pattern-train-2",
         "logic-pattern-train/logic-pattern-train-2",
         "logic-pattern-train/logic-pattern-train-3",
         "logic-pattern-train/logic-pattern-train-3",
-        "logic-pattern-train/logic-pattern-train-4",
-        "logic-pattern-train/logic-pattern-train-5",
-        "logic-pattern-train/logic-pattern-train-5",
         "logic-sorter-switch/round-1",
         "logic-sorter-switch/round-5",
         "logic-sorter-switch/round-9",
-        "logic-sorter-switch/round-10",
-        "logic-sorter-switch/round-11",
+        "logic-sorter-switch/round-9",
         "logic-sorter-switch/round-12",
         "logic-sorter-switch/round-13",
         "logic-sorter-switch/round-17",
         "logic-sorter-switch/round-21",
-        "logic-sorter-switch/round-22",
-        "logic-sorter-switch/round-23",
+        "logic-sorter-switch/round-21",
         "logic-sorter-switch/round-24",
         "logic-stop-think/logic-stop-think-2",
         "logic-stop-think/logic-stop-think-4",
         "logic-stop-think/logic-stop-think-6",
-        "logic-stop-think/logic-stop-think-8",
-        "logic-stop-think/logic-stop-think-10",
-        "logic-stop-think/logic-stop-think-12",
-        "logic-stop-think/logic-stop-think-14",
-        "logic-stop-think/logic-stop-think-16",
-        "logic-stop-think/logic-stop-think-18",
-        "logic-stop-think/logic-stop-think-20",
-        "logic-stop-think/logic-stop-think-22",
-        "logic-stop-think/logic-stop-think-24",
         "logic-condition-detective/round-2",
         "logic-condition-detective/round-14",
         "logic-fix-plan/round-2",
@@ -5261,10 +6010,7 @@
         "logic-pattern-train/logic-pattern-train-2",
         "logic-pattern-train/logic-pattern-train-3",
         "logic-pattern-train/logic-pattern-train-3",
-        "logic-pattern-train/logic-pattern-train-4",
-        "logic-pattern-train/logic-pattern-train-4",
-        "logic-pattern-train/logic-pattern-train-5",
-        "logic-pattern-train/logic-pattern-train-5",
+        "logic-pattern-train/logic-pattern-train-3",
         "logic-sorter-switch/round-2",
         "logic-sorter-switch/round-5",
         "logic-sorter-switch/round-6",
@@ -5272,8 +6018,7 @@
         "logic-sorter-switch/round-8",
         "logic-sorter-switch/round-9",
         "logic-sorter-switch/round-10",
-        "logic-sorter-switch/round-11",
-        "logic-sorter-switch/round-12",
+        "logic-sorter-switch/round-10",
         "logic-sorter-switch/round-14",
         "logic-sorter-switch/round-17",
         "logic-sorter-switch/round-18",
@@ -5281,8 +6026,7 @@
         "logic-sorter-switch/round-20",
         "logic-sorter-switch/round-21",
         "logic-sorter-switch/round-22",
-        "logic-sorter-switch/round-23",
-        "logic-sorter-switch/round-24",
+        "logic-sorter-switch/round-22",
         "logic-matrix-puzzle/round-1",
         "logic-matrix-puzzle/round-2",
         "logic-matrix-puzzle/round-7",
@@ -5327,37 +6071,12 @@
         "logic-pattern-train/logic-pattern-train-16",
         "logic-pattern-train/logic-pattern-train-17",
         "logic-pattern-train/logic-pattern-train-18",
-        "logic-pattern-train/logic-pattern-train-19",
-        "logic-pattern-train/logic-pattern-train-20",
-        "logic-pattern-train/logic-pattern-train-21",
-        "logic-pattern-train/logic-pattern-train-22",
-        "logic-pattern-train/logic-pattern-train-23",
-        "logic-pattern-train/logic-pattern-train-24",
-        "logic-pattern-train/logic-pattern-train-25",
         "logic-stop-think/logic-stop-think-1",
         "logic-stop-think/logic-stop-think-2",
         "logic-stop-think/logic-stop-think-3",
         "logic-stop-think/logic-stop-think-4",
         "logic-stop-think/logic-stop-think-5",
         "logic-stop-think/logic-stop-think-6",
-        "logic-stop-think/logic-stop-think-7",
-        "logic-stop-think/logic-stop-think-8",
-        "logic-stop-think/logic-stop-think-9",
-        "logic-stop-think/logic-stop-think-10",
-        "logic-stop-think/logic-stop-think-11",
-        "logic-stop-think/logic-stop-think-12",
-        "logic-stop-think/logic-stop-think-13",
-        "logic-stop-think/logic-stop-think-14",
-        "logic-stop-think/logic-stop-think-15",
-        "logic-stop-think/logic-stop-think-16",
-        "logic-stop-think/logic-stop-think-17",
-        "logic-stop-think/logic-stop-think-18",
-        "logic-stop-think/logic-stop-think-19",
-        "logic-stop-think/logic-stop-think-20",
-        "logic-stop-think/logic-stop-think-21",
-        "logic-stop-think/logic-stop-think-22",
-        "logic-stop-think/logic-stop-think-23",
-        "logic-stop-think/logic-stop-think-24",
         "logic-order-plan/round-1",
         "logic-order-plan/round-2",
         "logic-order-plan/round-3",
@@ -5479,37 +6198,42 @@
       ]
     },
     {
-      "id": "success-规律是-红-蓝-所以下一个是红色圆片",
-      "kind": "success",
-      "text": "规律是 红、蓝，所以下一个是红色圆片。",
-      "tone": "warm, delighted, clear",
-      "contexts": [
-        "logic-pattern-train/logic-pattern-train-2",
-        "logic-pattern-train/logic-pattern-train-4"
-      ]
-    },
-    {
-      "id": "prompt-黄-绿-接下来是什么-找一找重复的小组",
+      "id": "prompt-找规律-空格里是什么-先说出重复顺序-再选空格里的图",
       "kind": "prompt",
-      "text": "黄、绿，接下来是什么？找一找重复的小组。",
+      "text": "找规律，空格里是什么？先说出重复顺序，再选空格里的图。",
       "tone": "friendly, clear, playful",
       "contexts": [
+        "logic-pattern-train/logic-pattern-train-2",
+        "logic-pattern-train/logic-pattern-train-3",
+        "logic-pattern-train/logic-pattern-train-5",
         "logic-pattern-train/logic-pattern-train-6",
-        "logic-pattern-train/logic-pattern-train-7",
         "logic-pattern-train/logic-pattern-train-8",
         "logic-pattern-train/logic-pattern-train-9",
-        "logic-pattern-train/logic-pattern-train-10"
+        "logic-pattern-train/logic-pattern-train-11",
+        "logic-pattern-train/logic-pattern-train-12",
+        "logic-pattern-train/logic-pattern-train-14",
+        "logic-pattern-train/logic-pattern-train-15",
+        "logic-pattern-train/logic-pattern-train-17",
+        "logic-pattern-train/logic-pattern-train-18"
       ]
     },
     {
-      "id": "success-规律是-黄-绿-所以下一个是绿色圆片",
+      "id": "success-规律是-红-蓝-这里应该是红色圆片",
       "kind": "success",
-      "text": "规律是 黄、绿，所以下一个是绿色圆片。",
+      "text": "规律是 红、蓝，这里应该是红色圆片。",
       "tone": "warm, delighted, clear",
       "contexts": [
-        "logic-pattern-train/logic-pattern-train-6",
-        "logic-pattern-train/logic-pattern-train-8",
-        "logic-pattern-train/logic-pattern-train-10"
+        "logic-pattern-train/logic-pattern-train-3"
+      ]
+    },
+    {
+      "id": "success-规律是-黄-绿-这里应该是绿色圆片",
+      "kind": "success",
+      "text": "规律是 黄、绿，这里应该是绿色圆片。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-pattern-train/logic-pattern-train-4",
+        "logic-pattern-train/logic-pattern-train-5"
       ]
     },
     {
@@ -5518,9 +6242,8 @@
       "text": "绿色圆片",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-pattern-train/logic-pattern-train-6",
-        "logic-pattern-train/logic-pattern-train-8",
-        "logic-pattern-train/logic-pattern-train-10",
+        "logic-pattern-train/logic-pattern-train-4",
+        "logic-pattern-train/logic-pattern-train-5",
         "logic-matrix-puzzle/round-4",
         "logic-matrix-puzzle/round-10",
         "logic-matrix-puzzle/round-16",
@@ -5532,37 +6255,22 @@
       ]
     },
     {
-      "id": "success-规律是-黄-绿-所以下一个是黄色圆片",
+      "id": "success-规律是-黄-绿-这里应该是黄色圆片",
       "kind": "success",
-      "text": "规律是 黄、绿，所以下一个是黄色圆片。",
+      "text": "规律是 黄、绿，这里应该是黄色圆片。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-pattern-train/logic-pattern-train-6"
+      ]
+    },
+    {
+      "id": "success-规律是-太阳-月亮-这里应该是月亮",
+      "kind": "success",
+      "text": "规律是 太阳、月亮，这里应该是月亮。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-pattern-train/logic-pattern-train-7",
-        "logic-pattern-train/logic-pattern-train-9"
-      ]
-    },
-    {
-      "id": "prompt-太阳-月亮-接下来是什么-找一找重复的小组",
-      "kind": "prompt",
-      "text": "太阳、月亮，接下来是什么？找一找重复的小组。",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-pattern-train/logic-pattern-train-11",
-        "logic-pattern-train/logic-pattern-train-12",
-        "logic-pattern-train/logic-pattern-train-13",
-        "logic-pattern-train/logic-pattern-train-14",
-        "logic-pattern-train/logic-pattern-train-15"
-      ]
-    },
-    {
-      "id": "success-规律是-太阳-月亮-所以下一个是月亮",
-      "kind": "success",
-      "text": "规律是 太阳、月亮，所以下一个是月亮。",
-      "tone": "warm, delighted, clear",
-      "contexts": [
-        "logic-pattern-train/logic-pattern-train-11",
-        "logic-pattern-train/logic-pattern-train-13",
-        "logic-pattern-train/logic-pattern-train-15"
+        "logic-pattern-train/logic-pattern-train-8"
       ]
     },
     {
@@ -5571,10 +6279,8 @@
       "text": "月亮",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-pattern-train/logic-pattern-train-11",
-        "logic-pattern-train/logic-pattern-train-13",
-        "logic-pattern-train/logic-pattern-train-15",
-        "logic-pattern-train/logic-pattern-train-23"
+        "logic-pattern-train/logic-pattern-train-7",
+        "logic-pattern-train/logic-pattern-train-8"
       ]
     },
     {
@@ -5583,21 +6289,18 @@
       "text": "太阳",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-pattern-train/logic-pattern-train-11",
-        "logic-pattern-train/logic-pattern-train-11",
-        "logic-pattern-train/logic-pattern-train-12",
+        "logic-pattern-train/logic-pattern-train-7",
+        "logic-pattern-train/logic-pattern-train-7",
+        "logic-pattern-train/logic-pattern-train-7",
+        "logic-pattern-train/logic-pattern-train-8",
+        "logic-pattern-train/logic-pattern-train-8",
+        "logic-pattern-train/logic-pattern-train-8",
+        "logic-pattern-train/logic-pattern-train-9",
+        "logic-pattern-train/logic-pattern-train-9",
         "logic-pattern-train/logic-pattern-train-13",
         "logic-pattern-train/logic-pattern-train-13",
         "logic-pattern-train/logic-pattern-train-14",
         "logic-pattern-train/logic-pattern-train-15",
-        "logic-pattern-train/logic-pattern-train-15",
-        "logic-pattern-train/logic-pattern-train-21",
-        "logic-pattern-train/logic-pattern-train-21",
-        "logic-pattern-train/logic-pattern-train-22",
-        "logic-pattern-train/logic-pattern-train-23",
-        "logic-pattern-train/logic-pattern-train-24",
-        "logic-pattern-train/logic-pattern-train-24",
-        "logic-pattern-train/logic-pattern-train-25",
         "logic-relation-pairs/sun-raincoat-analogy-10"
       ]
     },
@@ -5607,35 +6310,28 @@
       "text": "月亮",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-pattern-train/logic-pattern-train-11",
-        "logic-pattern-train/logic-pattern-train-11",
-        "logic-pattern-train/logic-pattern-train-12",
-        "logic-pattern-train/logic-pattern-train-12",
+        "logic-pattern-train/logic-pattern-train-7",
+        "logic-pattern-train/logic-pattern-train-7",
+        "logic-pattern-train/logic-pattern-train-8",
+        "logic-pattern-train/logic-pattern-train-8",
+        "logic-pattern-train/logic-pattern-train-9",
+        "logic-pattern-train/logic-pattern-train-9",
+        "logic-pattern-train/logic-pattern-train-9",
         "logic-pattern-train/logic-pattern-train-13",
         "logic-pattern-train/logic-pattern-train-13",
         "logic-pattern-train/logic-pattern-train-14",
         "logic-pattern-train/logic-pattern-train-14",
         "logic-pattern-train/logic-pattern-train-15",
-        "logic-pattern-train/logic-pattern-train-15",
-        "logic-pattern-train/logic-pattern-train-21",
-        "logic-pattern-train/logic-pattern-train-21",
-        "logic-pattern-train/logic-pattern-train-22",
-        "logic-pattern-train/logic-pattern-train-22",
-        "logic-pattern-train/logic-pattern-train-23",
-        "logic-pattern-train/logic-pattern-train-24",
-        "logic-pattern-train/logic-pattern-train-24",
-        "logic-pattern-train/logic-pattern-train-25",
-        "logic-pattern-train/logic-pattern-train-25"
+        "logic-pattern-train/logic-pattern-train-15"
       ]
     },
     {
-      "id": "success-规律是-太阳-月亮-所以下一个是太阳",
+      "id": "success-规律是-太阳-月亮-这里应该是太阳",
       "kind": "success",
-      "text": "规律是 太阳、月亮，所以下一个是太阳。",
+      "text": "规律是 太阳、月亮，这里应该是太阳。",
       "tone": "warm, delighted, clear",
       "contexts": [
-        "logic-pattern-train/logic-pattern-train-12",
-        "logic-pattern-train/logic-pattern-train-14"
+        "logic-pattern-train/logic-pattern-train-9"
       ]
     },
     {
@@ -5644,34 +6340,18 @@
       "text": "太阳",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-pattern-train/logic-pattern-train-12",
+        "logic-pattern-train/logic-pattern-train-9",
         "logic-pattern-train/logic-pattern-train-14",
-        "logic-pattern-train/logic-pattern-train-22",
-        "logic-pattern-train/logic-pattern-train-25"
+        "logic-pattern-train/logic-pattern-train-15"
       ]
     },
     {
-      "id": "prompt-一大两小-接下来是什么-找一找重复的小组",
-      "kind": "prompt",
-      "text": "一大两小，接下来是什么？找一找重复的小组。",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-pattern-train/logic-pattern-train-16",
-        "logic-pattern-train/logic-pattern-train-17",
-        "logic-pattern-train/logic-pattern-train-18",
-        "logic-pattern-train/logic-pattern-train-19",
-        "logic-pattern-train/logic-pattern-train-20"
-      ]
-    },
-    {
-      "id": "success-规律是-一大两小-所以下一个是小圆",
+      "id": "success-规律是-一大两小-这里应该是小圆",
       "kind": "success",
-      "text": "规律是 一大两小，所以下一个是小圆。",
+      "text": "规律是 一大两小，这里应该是小圆。",
       "tone": "warm, delighted, clear",
       "contexts": [
-        "logic-pattern-train/logic-pattern-train-16",
-        "logic-pattern-train/logic-pattern-train-18",
-        "logic-pattern-train/logic-pattern-train-19"
+        "logic-pattern-train/logic-pattern-train-10"
       ]
     },
     {
@@ -5680,9 +6360,7 @@
       "text": "小圆",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-pattern-train/logic-pattern-train-16",
-        "logic-pattern-train/logic-pattern-train-18",
-        "logic-pattern-train/logic-pattern-train-19"
+        "logic-pattern-train/logic-pattern-train-10"
       ]
     },
     {
@@ -5691,13 +6369,10 @@
       "text": "大圆",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-pattern-train/logic-pattern-train-16",
-        "logic-pattern-train/logic-pattern-train-16",
-        "logic-pattern-train/logic-pattern-train-17",
-        "logic-pattern-train/logic-pattern-train-18",
-        "logic-pattern-train/logic-pattern-train-19",
-        "logic-pattern-train/logic-pattern-train-19",
-        "logic-pattern-train/logic-pattern-train-20",
+        "logic-pattern-train/logic-pattern-train-10",
+        "logic-pattern-train/logic-pattern-train-10",
+        "logic-pattern-train/logic-pattern-train-11",
+        "logic-pattern-train/logic-pattern-train-12",
         "logic-matrix-puzzle/round-3",
         "logic-matrix-puzzle/round-3",
         "logic-matrix-puzzle/round-9",
@@ -5712,36 +6387,30 @@
       "text": "小圆",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-pattern-train/logic-pattern-train-16",
-        "logic-pattern-train/logic-pattern-train-16",
-        "logic-pattern-train/logic-pattern-train-16",
-        "logic-pattern-train/logic-pattern-train-17",
-        "logic-pattern-train/logic-pattern-train-17",
-        "logic-pattern-train/logic-pattern-train-17",
-        "logic-pattern-train/logic-pattern-train-17",
-        "logic-pattern-train/logic-pattern-train-18",
-        "logic-pattern-train/logic-pattern-train-18",
-        "logic-pattern-train/logic-pattern-train-18",
-        "logic-pattern-train/logic-pattern-train-19",
-        "logic-pattern-train/logic-pattern-train-19",
-        "logic-pattern-train/logic-pattern-train-19",
-        "logic-pattern-train/logic-pattern-train-20",
-        "logic-pattern-train/logic-pattern-train-20",
-        "logic-pattern-train/logic-pattern-train-20",
-        "logic-pattern-train/logic-pattern-train-20",
+        "logic-pattern-train/logic-pattern-train-10",
+        "logic-pattern-train/logic-pattern-train-10",
+        "logic-pattern-train/logic-pattern-train-10",
+        "logic-pattern-train/logic-pattern-train-11",
+        "logic-pattern-train/logic-pattern-train-11",
+        "logic-pattern-train/logic-pattern-train-11",
+        "logic-pattern-train/logic-pattern-train-11",
+        "logic-pattern-train/logic-pattern-train-12",
+        "logic-pattern-train/logic-pattern-train-12",
+        "logic-pattern-train/logic-pattern-train-12",
+        "logic-pattern-train/logic-pattern-train-12",
         "logic-matrix-puzzle/round-3",
         "logic-matrix-puzzle/round-9",
         "logic-matrix-puzzle/round-15"
       ]
     },
     {
-      "id": "success-规律是-一大两小-所以下一个是大圆",
+      "id": "success-规律是-一大两小-这里应该是大圆",
       "kind": "success",
-      "text": "规律是 一大两小，所以下一个是大圆。",
+      "text": "规律是 一大两小，这里应该是大圆。",
       "tone": "warm, delighted, clear",
       "contexts": [
-        "logic-pattern-train/logic-pattern-train-17",
-        "logic-pattern-train/logic-pattern-train-20"
+        "logic-pattern-train/logic-pattern-train-11",
+        "logic-pattern-train/logic-pattern-train-12"
       ]
     },
     {
@@ -5750,31 +6419,17 @@
       "text": "大圆",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-pattern-train/logic-pattern-train-17",
-        "logic-pattern-train/logic-pattern-train-20"
+        "logic-pattern-train/logic-pattern-train-11",
+        "logic-pattern-train/logic-pattern-train-12"
       ]
     },
     {
-      "id": "prompt-太阳-月亮-星星-接下来是什么-找一找重复的小组",
-      "kind": "prompt",
-      "text": "太阳、月亮、星星，接下来是什么？找一找重复的小组。",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-pattern-train/logic-pattern-train-21",
-        "logic-pattern-train/logic-pattern-train-22",
-        "logic-pattern-train/logic-pattern-train-23",
-        "logic-pattern-train/logic-pattern-train-24",
-        "logic-pattern-train/logic-pattern-train-25"
-      ]
-    },
-    {
-      "id": "success-规律是-太阳-月亮-星星-所以下一个是星星",
+      "id": "success-规律是-太阳-月亮-星星-这里应该是星星",
       "kind": "success",
-      "text": "规律是 太阳、月亮、星星，所以下一个是星星。",
+      "text": "规律是 太阳、月亮、星星，这里应该是星星。",
       "tone": "warm, delighted, clear",
       "contexts": [
-        "logic-pattern-train/logic-pattern-train-21",
-        "logic-pattern-train/logic-pattern-train-24"
+        "logic-pattern-train/logic-pattern-train-13"
       ]
     },
     {
@@ -5783,8 +6438,7 @@
       "text": "星星",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-pattern-train/logic-pattern-train-21",
-        "logic-pattern-train/logic-pattern-train-24",
+        "logic-pattern-train/logic-pattern-train-13",
         "logic-part-whole-puzzle/round-1",
         "logic-part-whole-puzzle/round-7",
         "logic-part-whole-puzzle/round-11",
@@ -5794,22 +6448,46 @@
       ]
     },
     {
-      "id": "success-规律是-太阳-月亮-星星-所以下一个是太阳",
+      "id": "success-规律是-太阳-月亮-星星-这里应该是太阳",
       "kind": "success",
-      "text": "规律是 太阳、月亮、星星，所以下一个是太阳。",
+      "text": "规律是 太阳、月亮、星星，这里应该是太阳。",
       "tone": "warm, delighted, clear",
       "contexts": [
-        "logic-pattern-train/logic-pattern-train-22",
-        "logic-pattern-train/logic-pattern-train-25"
+        "logic-pattern-train/logic-pattern-train-14",
+        "logic-pattern-train/logic-pattern-train-15"
       ]
     },
     {
-      "id": "success-规律是-太阳-月亮-星星-所以下一个是月亮",
+      "id": "success-规律是-草莓-饼干-草莓-这里应该是草莓",
       "kind": "success",
-      "text": "规律是 太阳、月亮、星星，所以下一个是月亮。",
+      "text": "规律是 草莓、饼干、草莓，这里应该是草莓。",
       "tone": "warm, delighted, clear",
       "contexts": [
-        "logic-pattern-train/logic-pattern-train-23"
+        "logic-pattern-train/logic-pattern-train-16",
+        "logic-pattern-train/logic-pattern-train-17",
+        "logic-pattern-train/logic-pattern-train-18"
+      ]
+    },
+    {
+      "id": "choice-草莓",
+      "kind": "choice",
+      "text": "草莓",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-pattern-train/logic-pattern-train-16",
+        "logic-pattern-train/logic-pattern-train-17",
+        "logic-pattern-train/logic-pattern-train-18",
+        "logic-address-map/round-8",
+        "logic-address-map/round-20",
+        "logic-difference-detective/round-4",
+        "logic-difference-detective/round-8",
+        "logic-difference-detective/round-10",
+        "logic-difference-detective/round-16",
+        "logic-part-whole-puzzle/round-2",
+        "logic-part-whole-puzzle/round-8",
+        "logic-part-whole-puzzle/round-14",
+        "logic-balance-swap/round-1",
+        "logic-balance-swap/round-11"
       ]
     },
     {
@@ -5889,21 +6567,19 @@
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-sorter-switch/round-1",
-        "logic-sorter-switch/round-5",
-        "logic-sorter-switch/round-6",
-        "logic-sorter-switch/round-7",
-        "logic-sorter-switch/round-8",
+        "logic-sorter-switch/round-2",
+        "logic-sorter-switch/round-3",
+        "logic-sorter-switch/round-4",
         "logic-sorter-switch/round-13",
-        "logic-sorter-switch/round-17",
-        "logic-sorter-switch/round-18",
-        "logic-sorter-switch/round-19",
-        "logic-sorter-switch/round-20"
+        "logic-sorter-switch/round-14",
+        "logic-sorter-switch/round-15",
+        "logic-sorter-switch/round-16"
       ]
     },
     {
-      "id": "choice-形状篮子",
+      "id": "choice-蓝色篮子",
       "kind": "choice",
-      "text": "形状篮子",
+      "text": "蓝色篮子",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-sorter-switch/round-1",
@@ -5917,57 +6593,17 @@
       ]
     },
     {
-      "id": "choice-不要放",
+      "id": "choice-绿色篮子",
       "kind": "choice",
-      "text": "不要放",
+      "text": "绿色篮子",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-sorter-switch/round-1",
         "logic-sorter-switch/round-2",
         "logic-sorter-switch/round-3",
-        "logic-sorter-switch/round-4",
         "logic-sorter-switch/round-13",
         "logic-sorter-switch/round-14",
-        "logic-sorter-switch/round-15",
-        "logic-sorter-switch/round-16"
-      ]
-    },
-    {
-      "id": "object-蓝色方块",
-      "kind": "object",
-      "text": "蓝色方块",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-sorter-switch/round-1",
-        "logic-sorter-switch/round-2",
-        "logic-sorter-switch/round-3",
-        "logic-sorter-switch/round-4",
-        "logic-sorter-switch/round-5",
-        "logic-sorter-switch/round-6",
-        "logic-sorter-switch/round-6",
-        "logic-sorter-switch/round-7",
-        "logic-sorter-switch/round-8",
-        "logic-sorter-switch/round-13",
-        "logic-sorter-switch/round-14",
-        "logic-sorter-switch/round-15",
-        "logic-sorter-switch/round-16",
-        "logic-sorter-switch/round-17",
-        "logic-sorter-switch/round-18",
-        "logic-sorter-switch/round-18",
-        "logic-sorter-switch/round-19",
-        "logic-sorter-switch/round-20",
-        "logic-part-whole-puzzle/round-1",
-        "logic-part-whole-puzzle/round-7",
-        "logic-part-whole-puzzle/round-13",
-        "logic-mirror-fold/round-5",
-        "logic-mirror-fold/round-5",
-        "logic-mirror-fold/round-5",
-        "logic-mirror-fold/round-5",
-        "logic-mirror-fold/round-10",
-        "logic-mirror-fold/round-17",
-        "logic-mirror-fold/round-17",
-        "logic-mirror-fold/round-17",
-        "logic-mirror-fold/round-17"
+        "logic-sorter-switch/round-15"
       ]
     },
     {
@@ -5991,16 +6627,6 @@
       ]
     },
     {
-      "id": "choice-蓝色篮子",
-      "kind": "choice",
-      "text": "蓝色篮子",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-sorter-switch/round-2",
-        "logic-sorter-switch/round-14"
-      ]
-    },
-    {
       "id": "prompt-按颜色分-绿色的应该放哪里-这次只看颜色",
       "kind": "prompt",
       "text": "按颜色分，绿色的应该放哪里？这次只看颜色。",
@@ -6015,16 +6641,6 @@
       "kind": "success",
       "text": "规则是按颜色分，所以放进绿色篮子。",
       "tone": "warm, delighted, clear",
-      "contexts": [
-        "logic-sorter-switch/round-3",
-        "logic-sorter-switch/round-15"
-      ]
-    },
-    {
-      "id": "choice-绿色篮子",
-      "kind": "choice",
-      "text": "绿色篮子",
-      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-sorter-switch/round-3",
         "logic-sorter-switch/round-15"
@@ -6145,6 +6761,22 @@
       ]
     },
     {
+      "id": "choice-三角形篮子",
+      "kind": "choice",
+      "text": "三角形篮子",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-sorter-switch/round-5",
+        "logic-sorter-switch/round-6",
+        "logic-sorter-switch/round-7",
+        "logic-sorter-switch/round-8",
+        "logic-sorter-switch/round-17",
+        "logic-sorter-switch/round-18",
+        "logic-sorter-switch/round-19",
+        "logic-sorter-switch/round-20"
+      ]
+    },
+    {
       "id": "prompt-规则变了-按形状分-方形放哪里-不要被颜色带走-只看形状",
       "kind": "prompt",
       "text": "规则变了：按形状分。方形放哪里？不要被颜色带走，只看形状。",
@@ -6215,9 +6847,9 @@
       ]
     },
     {
-      "id": "prompt-这次找不是红色的-先停一下-题目说的是-不是",
+      "id": "prompt-哪一张不是红色的-先看清楚-题目要找的不是这个颜色",
       "kind": "prompt",
-      "text": "这次找不是红色的。先停一下，题目说的是“不是”。",
+      "text": "哪一张不是红色的？先看清楚：题目要找的不是这个颜色。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-sorter-switch/round-9",
@@ -6225,9 +6857,9 @@
       ]
     },
     {
-      "id": "success-对-要找不是红色的",
+      "id": "success-对-这个不是红色的",
       "kind": "success",
-      "text": "对，要找不是红色的。",
+      "text": "对，这个不是红色的。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-sorter-switch/round-9",
@@ -6267,45 +6899,9 @@
       ]
     },
     {
-      "id": "choice-红色",
-      "kind": "choice",
-      "text": "红色",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-sorter-switch/round-9",
-        "logic-sorter-switch/round-21"
-      ]
-    },
-    {
-      "id": "choice-不是红色的",
-      "kind": "choice",
-      "text": "不是红色的",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-sorter-switch/round-9",
-        "logic-sorter-switch/round-21"
-      ]
-    },
-    {
-      "id": "choice-都不要",
-      "kind": "choice",
-      "text": "都不要",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-sorter-switch/round-9",
-        "logic-sorter-switch/round-10",
-        "logic-sorter-switch/round-11",
-        "logic-sorter-switch/round-12",
-        "logic-sorter-switch/round-21",
-        "logic-sorter-switch/round-22",
-        "logic-sorter-switch/round-23",
-        "logic-sorter-switch/round-24"
-      ]
-    },
-    {
-      "id": "prompt-这次找不是蓝色的-先停一下-题目说的是-不是",
+      "id": "prompt-哪一张不是蓝色的-先看清楚-题目要找的不是这个颜色",
       "kind": "prompt",
-      "text": "这次找不是蓝色的。先停一下，题目说的是“不是”。",
+      "text": "哪一张不是蓝色的？先看清楚：题目要找的不是这个颜色。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-sorter-switch/round-10",
@@ -6313,9 +6909,9 @@
       ]
     },
     {
-      "id": "success-对-要找不是蓝色的",
+      "id": "success-对-这个不是蓝色的",
       "kind": "success",
-      "text": "对，要找不是蓝色的。",
+      "text": "对，这个不是蓝色的。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-sorter-switch/round-10",
@@ -6323,29 +6919,9 @@
       ]
     },
     {
-      "id": "choice-蓝色",
-      "kind": "choice",
-      "text": "蓝色",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-sorter-switch/round-10",
-        "logic-sorter-switch/round-22"
-      ]
-    },
-    {
-      "id": "choice-不是蓝色的",
-      "kind": "choice",
-      "text": "不是蓝色的",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-sorter-switch/round-10",
-        "logic-sorter-switch/round-22"
-      ]
-    },
-    {
-      "id": "prompt-这次找不是绿色的-先停一下-题目说的是-不是",
+      "id": "prompt-哪一张不是绿色的-先看清楚-题目要找的不是这个颜色",
       "kind": "prompt",
-      "text": "这次找不是绿色的。先停一下，题目说的是“不是”。",
+      "text": "哪一张不是绿色的？先看清楚：题目要找的不是这个颜色。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-sorter-switch/round-11",
@@ -6353,9 +6929,9 @@
       ]
     },
     {
-      "id": "success-对-要找不是绿色的",
+      "id": "success-对-这个不是绿色的",
       "kind": "success",
-      "text": "对，要找不是绿色的。",
+      "text": "对，这个不是绿色的。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-sorter-switch/round-11",
@@ -6363,29 +6939,9 @@
       ]
     },
     {
-      "id": "choice-绿色",
-      "kind": "choice",
-      "text": "绿色",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-sorter-switch/round-11",
-        "logic-sorter-switch/round-23"
-      ]
-    },
-    {
-      "id": "choice-不是绿色的",
-      "kind": "choice",
-      "text": "不是绿色的",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-sorter-switch/round-11",
-        "logic-sorter-switch/round-23"
-      ]
-    },
-    {
-      "id": "prompt-这次找不是黄色的-先停一下-题目说的是-不是",
+      "id": "prompt-哪一张不是黄色的-先看清楚-题目要找的不是这个颜色",
       "kind": "prompt",
-      "text": "这次找不是黄色的。先停一下，题目说的是“不是”。",
+      "text": "哪一张不是黄色的？先看清楚：题目要找的不是这个颜色。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-sorter-switch/round-12",
@@ -6393,30 +6949,10 @@
       ]
     },
     {
-      "id": "success-对-要找不是黄色的",
+      "id": "success-对-这个不是黄色的",
       "kind": "success",
-      "text": "对，要找不是黄色的。",
+      "text": "对，这个不是黄色的。",
       "tone": "warm, delighted, clear",
-      "contexts": [
-        "logic-sorter-switch/round-12",
-        "logic-sorter-switch/round-24"
-      ]
-    },
-    {
-      "id": "choice-黄色",
-      "kind": "choice",
-      "text": "黄色",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-sorter-switch/round-12",
-        "logic-sorter-switch/round-24"
-      ]
-    },
-    {
-      "id": "choice-不是黄色的",
-      "kind": "choice",
-      "text": "不是黄色的",
-      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-sorter-switch/round-12",
         "logic-sorter-switch/round-24"
@@ -6441,30 +6977,27 @@
       ]
     },
     {
-      "id": "prompt-平常规则-绿灯亮了-小兔应该做什么-先听规则-再点答案",
+      "id": "prompt-绿灯亮了-小兔应该怎么做-看灯的颜色-再选动作",
       "kind": "prompt",
-      "text": "平常规则：绿灯亮了，小兔应该做什么？先听规则，再点答案。",
+      "text": "绿灯亮了，小兔应该怎么做？看灯的颜色，再选动作。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-stop-think/logic-stop-think-1"
       ]
     },
     {
-      "id": "success-平常规则时-绿灯要走",
+      "id": "success-绿灯亮了-小兔要走",
       "kind": "success",
-      "text": "平常规则时，绿灯要走。",
+      "text": "绿灯亮了，小兔要走。",
       "tone": "warm, delighted, clear",
       "contexts": [
-        "logic-stop-think/logic-stop-think-1",
-        "logic-stop-think/logic-stop-think-7",
-        "logic-stop-think/logic-stop-think-13",
-        "logic-stop-think/logic-stop-think-19"
+        "logic-stop-think/logic-stop-think-1"
       ]
     },
     {
-      "id": "retry-先停一下-重新听规则",
+      "id": "retry-先停一下-把这次的玩法再听一遍",
       "kind": "retry",
-      "text": "先停一下，重新听规则。",
+      "text": "先停一下，把这次的玩法再听一遍。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
         "logic-stop-think/logic-stop-think-1",
@@ -6472,31 +7005,13 @@
         "logic-stop-think/logic-stop-think-3",
         "logic-stop-think/logic-stop-think-4",
         "logic-stop-think/logic-stop-think-5",
-        "logic-stop-think/logic-stop-think-6",
-        "logic-stop-think/logic-stop-think-7",
-        "logic-stop-think/logic-stop-think-8",
-        "logic-stop-think/logic-stop-think-9",
-        "logic-stop-think/logic-stop-think-10",
-        "logic-stop-think/logic-stop-think-11",
-        "logic-stop-think/logic-stop-think-12",
-        "logic-stop-think/logic-stop-think-13",
-        "logic-stop-think/logic-stop-think-14",
-        "logic-stop-think/logic-stop-think-15",
-        "logic-stop-think/logic-stop-think-16",
-        "logic-stop-think/logic-stop-think-17",
-        "logic-stop-think/logic-stop-think-18",
-        "logic-stop-think/logic-stop-think-19",
-        "logic-stop-think/logic-stop-think-20",
-        "logic-stop-think/logic-stop-think-21",
-        "logic-stop-think/logic-stop-think-22",
-        "logic-stop-think/logic-stop-think-23",
-        "logic-stop-think/logic-stop-think-24"
+        "logic-stop-think/logic-stop-think-6"
       ]
     },
     {
-      "id": "parent-问她-平常规则是什么-这一次规则有没有变",
+      "id": "parent-问她-这一次是按红绿灯走-还是玩法变了",
       "kind": "parent",
-      "text": "问她：平常规则是什么？这一次规则有没有变？",
+      "text": "问她：这一次是按红绿灯走，还是玩法变了？",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-stop-think/logic-stop-think-1",
@@ -6504,25 +7019,7 @@
         "logic-stop-think/logic-stop-think-3",
         "logic-stop-think/logic-stop-think-4",
         "logic-stop-think/logic-stop-think-5",
-        "logic-stop-think/logic-stop-think-6",
-        "logic-stop-think/logic-stop-think-7",
-        "logic-stop-think/logic-stop-think-8",
-        "logic-stop-think/logic-stop-think-9",
-        "logic-stop-think/logic-stop-think-10",
-        "logic-stop-think/logic-stop-think-11",
-        "logic-stop-think/logic-stop-think-12",
-        "logic-stop-think/logic-stop-think-13",
-        "logic-stop-think/logic-stop-think-14",
-        "logic-stop-think/logic-stop-think-15",
-        "logic-stop-think/logic-stop-think-16",
-        "logic-stop-think/logic-stop-think-17",
-        "logic-stop-think/logic-stop-think-18",
-        "logic-stop-think/logic-stop-think-19",
-        "logic-stop-think/logic-stop-think-20",
-        "logic-stop-think/logic-stop-think-21",
-        "logic-stop-think/logic-stop-think-22",
-        "logic-stop-think/logic-stop-think-23",
-        "logic-stop-think/logic-stop-think-24"
+        "logic-stop-think/logic-stop-think-6"
       ]
     },
     {
@@ -6535,18 +7032,6 @@
         "logic-stop-think/logic-stop-think-2",
         "logic-stop-think/logic-stop-think-3",
         "logic-stop-think/logic-stop-think-4",
-        "logic-stop-think/logic-stop-think-7",
-        "logic-stop-think/logic-stop-think-8",
-        "logic-stop-think/logic-stop-think-9",
-        "logic-stop-think/logic-stop-think-10",
-        "logic-stop-think/logic-stop-think-13",
-        "logic-stop-think/logic-stop-think-14",
-        "logic-stop-think/logic-stop-think-15",
-        "logic-stop-think/logic-stop-think-16",
-        "logic-stop-think/logic-stop-think-19",
-        "logic-stop-think/logic-stop-think-20",
-        "logic-stop-think/logic-stop-think-21",
-        "logic-stop-think/logic-stop-think-22",
         "logic-condition-detective/round-2",
         "logic-condition-detective/round-14"
       ]
@@ -6563,24 +7048,6 @@
         "logic-stop-think/logic-stop-think-4",
         "logic-stop-think/logic-stop-think-5",
         "logic-stop-think/logic-stop-think-6",
-        "logic-stop-think/logic-stop-think-7",
-        "logic-stop-think/logic-stop-think-8",
-        "logic-stop-think/logic-stop-think-9",
-        "logic-stop-think/logic-stop-think-10",
-        "logic-stop-think/logic-stop-think-11",
-        "logic-stop-think/logic-stop-think-12",
-        "logic-stop-think/logic-stop-think-13",
-        "logic-stop-think/logic-stop-think-14",
-        "logic-stop-think/logic-stop-think-15",
-        "logic-stop-think/logic-stop-think-16",
-        "logic-stop-think/logic-stop-think-17",
-        "logic-stop-think/logic-stop-think-18",
-        "logic-stop-think/logic-stop-think-19",
-        "logic-stop-think/logic-stop-think-20",
-        "logic-stop-think/logic-stop-think-21",
-        "logic-stop-think/logic-stop-think-22",
-        "logic-stop-think/logic-stop-think-23",
-        "logic-stop-think/logic-stop-think-24",
         "logic-condition-detective/round-2",
         "logic-condition-detective/round-14"
       ]
@@ -6597,42 +7064,18 @@
         "logic-stop-think/logic-stop-think-4",
         "logic-stop-think/logic-stop-think-5",
         "logic-stop-think/logic-stop-think-6",
-        "logic-stop-think/logic-stop-think-7",
-        "logic-stop-think/logic-stop-think-8",
-        "logic-stop-think/logic-stop-think-9",
-        "logic-stop-think/logic-stop-think-10",
-        "logic-stop-think/logic-stop-think-11",
-        "logic-stop-think/logic-stop-think-12",
-        "logic-stop-think/logic-stop-think-13",
-        "logic-stop-think/logic-stop-think-14",
-        "logic-stop-think/logic-stop-think-15",
-        "logic-stop-think/logic-stop-think-16",
-        "logic-stop-think/logic-stop-think-17",
-        "logic-stop-think/logic-stop-think-18",
-        "logic-stop-think/logic-stop-think-19",
-        "logic-stop-think/logic-stop-think-20",
-        "logic-stop-think/logic-stop-think-21",
-        "logic-stop-think/logic-stop-think-22",
-        "logic-stop-think/logic-stop-think-23",
-        "logic-stop-think/logic-stop-think-24",
         "logic-condition-detective/round-2",
         "logic-condition-detective/round-14"
       ]
     },
     {
-      "id": "object-平常规则",
+      "id": "object-按红绿灯走",
       "kind": "object",
-      "text": "平常规则",
+      "text": "按红绿灯走",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-stop-think/logic-stop-think-1",
-        "logic-stop-think/logic-stop-think-2",
-        "logic-stop-think/logic-stop-think-7",
-        "logic-stop-think/logic-stop-think-8",
-        "logic-stop-think/logic-stop-think-13",
-        "logic-stop-think/logic-stop-think-14",
-        "logic-stop-think/logic-stop-think-19",
-        "logic-stop-think/logic-stop-think-20"
+        "logic-stop-think/logic-stop-think-2"
       ]
     },
     {
@@ -6678,103 +7121,85 @@
       ]
     },
     {
-      "id": "prompt-平常规则-红灯亮了-小兔应该做什么-先听规则-再点答案",
+      "id": "prompt-红灯亮了-小兔应该怎么做-看灯的颜色-再选动作",
       "kind": "prompt",
-      "text": "平常规则：红灯亮了，小兔应该做什么？先听规则，再点答案。",
+      "text": "红灯亮了，小兔应该怎么做？看灯的颜色，再选动作。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-stop-think/logic-stop-think-2"
       ]
     },
     {
-      "id": "success-平常规则时-红灯要停",
+      "id": "success-红灯亮了-小兔要停",
       "kind": "success",
-      "text": "平常规则时，红灯要停。",
+      "text": "红灯亮了，小兔要停。",
       "tone": "warm, delighted, clear",
       "contexts": [
-        "logic-stop-think/logic-stop-think-2",
-        "logic-stop-think/logic-stop-think-8",
-        "logic-stop-think/logic-stop-think-14",
-        "logic-stop-think/logic-stop-think-20"
+        "logic-stop-think/logic-stop-think-2"
       ]
     },
     {
-      "id": "prompt-反着来-绿灯亮了-小兔应该做什么-规则变了-要先停一下再想",
+      "id": "prompt-现在玩反口令-绿灯亮了-小兔应该怎么做-玩法变了-先停一下再想",
       "kind": "prompt",
-      "text": "反着来：绿灯亮了，小兔应该做什么？规则变了，要先停一下再想。",
+      "text": "现在玩反口令：绿灯亮了，小兔应该怎么做？玩法变了，先停一下再想。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-stop-think/logic-stop-think-3"
       ]
     },
     {
-      "id": "success-反着来时-绿灯要停",
+      "id": "success-绿灯亮了-小兔要停",
       "kind": "success",
-      "text": "反着来时，绿灯要停。",
+      "text": "绿灯亮了，小兔要停。",
       "tone": "warm, delighted, clear",
       "contexts": [
-        "logic-stop-think/logic-stop-think-3",
-        "logic-stop-think/logic-stop-think-9",
-        "logic-stop-think/logic-stop-think-15",
-        "logic-stop-think/logic-stop-think-21"
+        "logic-stop-think/logic-stop-think-3"
       ]
     },
     {
-      "id": "object-反着来",
+      "id": "object-玩反口令",
       "kind": "object",
-      "text": "反着来",
+      "text": "玩反口令",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-stop-think/logic-stop-think-3",
-        "logic-stop-think/logic-stop-think-4",
-        "logic-stop-think/logic-stop-think-9",
-        "logic-stop-think/logic-stop-think-10",
-        "logic-stop-think/logic-stop-think-15",
-        "logic-stop-think/logic-stop-think-16",
-        "logic-stop-think/logic-stop-think-21",
-        "logic-stop-think/logic-stop-think-22"
+        "logic-stop-think/logic-stop-think-4"
       ]
     },
     {
-      "id": "prompt-反着来-红灯亮了-小兔应该做什么-规则变了-要先停一下再想",
+      "id": "prompt-现在玩反口令-红灯亮了-小兔应该怎么做-玩法变了-先停一下再想",
       "kind": "prompt",
-      "text": "反着来：红灯亮了，小兔应该做什么？规则变了，要先停一下再想。",
+      "text": "现在玩反口令：红灯亮了，小兔应该怎么做？玩法变了，先停一下再想。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-stop-think/logic-stop-think-4"
       ]
     },
     {
-      "id": "success-反着来时-红灯要走",
+      "id": "success-红灯亮了-小兔要走",
       "kind": "success",
-      "text": "反着来时，红灯要走。",
+      "text": "红灯亮了，小兔要走。",
       "tone": "warm, delighted, clear",
       "contexts": [
-        "logic-stop-think/logic-stop-think-4",
-        "logic-stop-think/logic-stop-think-10",
-        "logic-stop-think/logic-stop-think-16",
-        "logic-stop-think/logic-stop-think-22"
+        "logic-stop-think/logic-stop-think-4"
       ]
     },
     {
-      "id": "prompt-慢慢来-绿灯亮了-小兔应该做什么-规则变了-要先停一下再想",
+      "id": "prompt-这次听到绿灯也要慢慢走-小兔应该怎么做-玩法变了-先停一下再想",
       "kind": "prompt",
-      "text": "慢慢来：绿灯亮了，小兔应该做什么？规则变了，要先停一下再想。",
+      "text": "这次听到绿灯也要慢慢走，小兔应该怎么做？玩法变了，先停一下再想。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-stop-think/logic-stop-think-5"
       ]
     },
     {
-      "id": "success-慢慢来时-绿灯要慢慢走",
+      "id": "success-绿灯亮了-小兔要慢慢走",
       "kind": "success",
-      "text": "慢慢来时，绿灯要慢慢走。",
+      "text": "绿灯亮了，小兔要慢慢走。",
       "tone": "warm, delighted, clear",
       "contexts": [
-        "logic-stop-think/logic-stop-think-5",
-        "logic-stop-think/logic-stop-think-11",
-        "logic-stop-think/logic-stop-think-17",
-        "logic-stop-think/logic-stop-think-23"
+        "logic-stop-think/logic-stop-think-5"
       ]
     },
     {
@@ -6784,46 +7209,34 @@
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-stop-think/logic-stop-think-5",
-        "logic-stop-think/logic-stop-think-6",
-        "logic-stop-think/logic-stop-think-11",
-        "logic-stop-think/logic-stop-think-12",
-        "logic-stop-think/logic-stop-think-17",
-        "logic-stop-think/logic-stop-think-18",
-        "logic-stop-think/logic-stop-think-23",
-        "logic-stop-think/logic-stop-think-24"
+        "logic-stop-think/logic-stop-think-6"
       ]
     },
     {
-      "id": "object-慢慢来",
+      "id": "object-慢慢走",
       "kind": "object",
-      "text": "慢慢来",
+      "text": "慢慢走",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-stop-think/logic-stop-think-5",
-        "logic-stop-think/logic-stop-think-11",
-        "logic-stop-think/logic-stop-think-17",
-        "logic-stop-think/logic-stop-think-23"
+        "logic-stop-think/logic-stop-think-5"
       ]
     },
     {
-      "id": "prompt-先拍手-红灯亮了-小兔应该做什么-规则变了-要先停一下再想",
+      "id": "prompt-这次红灯亮了要先拍手-小兔应该怎么做-玩法变了-先停一下再想",
       "kind": "prompt",
-      "text": "先拍手：红灯亮了，小兔应该做什么？规则变了，要先停一下再想。",
+      "text": "这次红灯亮了要先拍手，小兔应该怎么做？玩法变了，先停一下再想。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-stop-think/logic-stop-think-6"
       ]
     },
     {
-      "id": "success-先拍手时-红灯要拍手",
+      "id": "success-红灯亮了-小兔要拍手",
       "kind": "success",
-      "text": "先拍手时，红灯要拍手。",
+      "text": "红灯亮了，小兔要拍手。",
       "tone": "warm, delighted, clear",
       "contexts": [
-        "logic-stop-think/logic-stop-think-6",
-        "logic-stop-think/logic-stop-think-12",
-        "logic-stop-think/logic-stop-think-18",
-        "logic-stop-think/logic-stop-think-24"
+        "logic-stop-think/logic-stop-think-6"
       ]
     },
     {
@@ -6832,309 +7245,7 @@
       "text": "先拍手",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-stop-think/logic-stop-think-6",
-        "logic-stop-think/logic-stop-think-12",
-        "logic-stop-think/logic-stop-think-18",
-        "logic-stop-think/logic-stop-think-24"
-      ]
-    },
-    {
-      "id": "prompt-平常规则-绿灯亮了-小狗应该做什么-先听规则-再点答案",
-      "kind": "prompt",
-      "text": "平常规则：绿灯亮了，小狗应该做什么？先听规则，再点答案。",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-stop-think/logic-stop-think-7"
-      ]
-    },
-    {
-      "id": "object-小狗",
-      "kind": "object",
-      "text": "小狗",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-stop-think/logic-stop-think-7",
-        "logic-stop-think/logic-stop-think-8",
-        "logic-stop-think/logic-stop-think-9",
-        "logic-stop-think/logic-stop-think-10",
-        "logic-stop-think/logic-stop-think-11",
-        "logic-stop-think/logic-stop-think-12",
-        "logic-space-bridge/round-5",
-        "logic-space-bridge/round-13",
-        "logic-space-bridge/round-21",
-        "logic-same-kind-detective/round-4",
-        "logic-same-kind-detective/round-10",
-        "logic-same-kind-detective/round-16",
-        "logic-same-kind-detective/round-22",
-        "logic-address-map/round-1",
-        "logic-address-map/round-2",
-        "logic-address-map/round-3",
-        "logic-address-map/round-4",
-        "logic-address-map/round-5",
-        "logic-address-map/round-6",
-        "logic-address-map/round-7",
-        "logic-address-map/round-8",
-        "logic-address-map/round-9",
-        "logic-address-map/round-10",
-        "logic-address-map/round-11",
-        "logic-address-map/round-12",
-        "logic-address-map/round-13",
-        "logic-address-map/round-14",
-        "logic-address-map/round-15",
-        "logic-address-map/round-16",
-        "logic-address-map/round-17",
-        "logic-address-map/round-18",
-        "logic-address-map/round-19",
-        "logic-address-map/round-20",
-        "logic-address-map/round-21",
-        "logic-address-map/round-22",
-        "logic-address-map/round-23",
-        "logic-address-map/round-24",
-        "logic-matrix-puzzle/round-2",
-        "logic-matrix-puzzle/round-6",
-        "logic-matrix-puzzle/round-8",
-        "logic-matrix-puzzle/round-12",
-        "logic-matrix-puzzle/round-14",
-        "logic-matrix-puzzle/round-18",
-        "logic-position-map/round-1",
-        "logic-position-map/round-2",
-        "logic-position-map/round-5",
-        "logic-position-map/round-6",
-        "logic-position-map/round-7",
-        "logic-position-map/round-8",
-        "logic-position-map/round-9",
-        "logic-position-map/round-11",
-        "logic-position-map/round-12",
-        "logic-position-map/round-13",
-        "logic-position-map/round-14",
-        "logic-position-map/round-17",
-        "logic-position-map/round-18",
-        "logic-memory-camera/round-4",
-        "logic-memory-camera/round-5",
-        "logic-memory-camera/round-9",
-        "logic-memory-camera/round-16",
-        "logic-memory-camera/round-17",
-        "logic-difference-detective/round-2",
-        "logic-difference-detective/round-2",
-        "logic-difference-detective/round-7",
-        "logic-difference-detective/round-7",
-        "logic-difference-detective/round-11",
-        "logic-difference-detective/round-14",
-        "logic-difference-detective/round-14",
-        "logic-part-whole-puzzle/round-3",
-        "logic-part-whole-puzzle/round-9",
-        "logic-part-whole-puzzle/round-15",
-        "logic-mirror-fold/round-4",
-        "logic-mirror-fold/round-4",
-        "logic-mirror-fold/round-9",
-        "logic-mirror-fold/round-16",
-        "logic-mirror-fold/round-16",
-        "logic-route-steps/round-1",
-        "logic-route-steps/round-2",
-        "logic-route-steps/round-3",
-        "logic-route-steps/round-4",
-        "logic-route-steps/round-5",
-        "logic-route-steps/round-6",
-        "logic-route-steps/round-7",
-        "logic-route-steps/round-8",
-        "logic-route-steps/round-9",
-        "logic-route-steps/round-10",
-        "logic-route-steps/round-11",
-        "logic-route-steps/round-12",
-        "logic-route-steps/round-13",
-        "logic-route-steps/round-14",
-        "logic-route-steps/round-15",
-        "logic-route-steps/round-16",
-        "logic-route-steps/round-17",
-        "logic-route-steps/round-18"
-      ]
-    },
-    {
-      "id": "prompt-平常规则-红灯亮了-小狗应该做什么-先听规则-再点答案",
-      "kind": "prompt",
-      "text": "平常规则：红灯亮了，小狗应该做什么？先听规则，再点答案。",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-stop-think/logic-stop-think-8"
-      ]
-    },
-    {
-      "id": "prompt-反着来-绿灯亮了-小狗应该做什么-规则变了-要先停一下再想",
-      "kind": "prompt",
-      "text": "反着来：绿灯亮了，小狗应该做什么？规则变了，要先停一下再想。",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-stop-think/logic-stop-think-9"
-      ]
-    },
-    {
-      "id": "prompt-反着来-红灯亮了-小狗应该做什么-规则变了-要先停一下再想",
-      "kind": "prompt",
-      "text": "反着来：红灯亮了，小狗应该做什么？规则变了，要先停一下再想。",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-stop-think/logic-stop-think-10"
-      ]
-    },
-    {
-      "id": "prompt-慢慢来-绿灯亮了-小狗应该做什么-规则变了-要先停一下再想",
-      "kind": "prompt",
-      "text": "慢慢来：绿灯亮了，小狗应该做什么？规则变了，要先停一下再想。",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-stop-think/logic-stop-think-11"
-      ]
-    },
-    {
-      "id": "prompt-先拍手-红灯亮了-小狗应该做什么-规则变了-要先停一下再想",
-      "kind": "prompt",
-      "text": "先拍手：红灯亮了，小狗应该做什么？规则变了，要先停一下再想。",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-stop-think/logic-stop-think-12"
-      ]
-    },
-    {
-      "id": "prompt-平常规则-绿灯亮了-小熊应该做什么-先听规则-再点答案",
-      "kind": "prompt",
-      "text": "平常规则：绿灯亮了，小熊应该做什么？先听规则，再点答案。",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-stop-think/logic-stop-think-13"
-      ]
-    },
-    {
-      "id": "object-小熊",
-      "kind": "object",
-      "text": "小熊",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-stop-think/logic-stop-think-13",
-        "logic-stop-think/logic-stop-think-14",
-        "logic-stop-think/logic-stop-think-15",
-        "logic-stop-think/logic-stop-think-16",
-        "logic-stop-think/logic-stop-think-17",
-        "logic-stop-think/logic-stop-think-18",
-        "logic-space-bridge/round-1",
-        "logic-space-bridge/round-2",
-        "logic-space-bridge/round-7",
-        "logic-space-bridge/round-9",
-        "logic-space-bridge/round-10",
-        "logic-space-bridge/round-15",
-        "logic-space-bridge/round-17",
-        "logic-space-bridge/round-18",
-        "logic-space-bridge/round-23",
-        "logic-address-map/round-5",
-        "logic-address-map/round-6",
-        "logic-address-map/round-7",
-        "logic-address-map/round-8",
-        "logic-address-map/round-11",
-        "logic-address-map/round-12",
-        "logic-address-map/round-17",
-        "logic-address-map/round-18",
-        "logic-address-map/round-19",
-        "logic-address-map/round-20",
-        "logic-address-map/round-23",
-        "logic-address-map/round-24"
-      ]
-    },
-    {
-      "id": "prompt-平常规则-红灯亮了-小熊应该做什么-先听规则-再点答案",
-      "kind": "prompt",
-      "text": "平常规则：红灯亮了，小熊应该做什么？先听规则，再点答案。",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-stop-think/logic-stop-think-14"
-      ]
-    },
-    {
-      "id": "prompt-反着来-绿灯亮了-小熊应该做什么-规则变了-要先停一下再想",
-      "kind": "prompt",
-      "text": "反着来：绿灯亮了，小熊应该做什么？规则变了，要先停一下再想。",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-stop-think/logic-stop-think-15"
-      ]
-    },
-    {
-      "id": "prompt-反着来-红灯亮了-小熊应该做什么-规则变了-要先停一下再想",
-      "kind": "prompt",
-      "text": "反着来：红灯亮了，小熊应该做什么？规则变了，要先停一下再想。",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-stop-think/logic-stop-think-16"
-      ]
-    },
-    {
-      "id": "prompt-慢慢来-绿灯亮了-小熊应该做什么-规则变了-要先停一下再想",
-      "kind": "prompt",
-      "text": "慢慢来：绿灯亮了，小熊应该做什么？规则变了，要先停一下再想。",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-stop-think/logic-stop-think-17"
-      ]
-    },
-    {
-      "id": "prompt-先拍手-红灯亮了-小熊应该做什么-规则变了-要先停一下再想",
-      "kind": "prompt",
-      "text": "先拍手：红灯亮了，小熊应该做什么？规则变了，要先停一下再想。",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-stop-think/logic-stop-think-18"
-      ]
-    },
-    {
-      "id": "prompt-平常规则-绿灯亮了-小猫应该做什么-先听规则-再点答案",
-      "kind": "prompt",
-      "text": "平常规则：绿灯亮了，小猫应该做什么？先听规则，再点答案。",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-stop-think/logic-stop-think-19"
-      ]
-    },
-    {
-      "id": "prompt-平常规则-红灯亮了-小猫应该做什么-先听规则-再点答案",
-      "kind": "prompt",
-      "text": "平常规则：红灯亮了，小猫应该做什么？先听规则，再点答案。",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-stop-think/logic-stop-think-20"
-      ]
-    },
-    {
-      "id": "prompt-反着来-绿灯亮了-小猫应该做什么-规则变了-要先停一下再想",
-      "kind": "prompt",
-      "text": "反着来：绿灯亮了，小猫应该做什么？规则变了，要先停一下再想。",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-stop-think/logic-stop-think-21"
-      ]
-    },
-    {
-      "id": "prompt-反着来-红灯亮了-小猫应该做什么-规则变了-要先停一下再想",
-      "kind": "prompt",
-      "text": "反着来：红灯亮了，小猫应该做什么？规则变了，要先停一下再想。",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-stop-think/logic-stop-think-22"
-      ]
-    },
-    {
-      "id": "prompt-慢慢来-绿灯亮了-小猫应该做什么-规则变了-要先停一下再想",
-      "kind": "prompt",
-      "text": "慢慢来：绿灯亮了，小猫应该做什么？规则变了，要先停一下再想。",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-stop-think/logic-stop-think-23"
-      ]
-    },
-    {
-      "id": "prompt-先拍手-红灯亮了-小猫应该做什么-规则变了-要先停一下再想",
-      "kind": "prompt",
-      "text": "先拍手：红灯亮了，小猫应该做什么？规则变了，要先停一下再想。",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-stop-think/logic-stop-think-24"
+        "logic-stop-think/logic-stop-think-6"
       ]
     },
     {
@@ -7156,9 +7267,9 @@
       ]
     },
     {
-      "id": "prompt-要喝水-第一步做什么-先看目标-再想第一步",
+      "id": "prompt-小兔口渴了-想喝水-先做什么-先看目标-再想第一步",
       "kind": "prompt",
-      "text": "要喝水，第一步做什么？先看目标，再想第一步。",
+      "text": "小兔口渴了，想喝水，先做什么？先看目标，再想第一步。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/round-1",
@@ -7264,42 +7375,29 @@
       ]
     },
     {
-      "id": "object-杯子",
+      "id": "object-倒水",
       "kind": "object",
-      "text": "杯子",
+      "text": "倒水",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/round-1",
-        "logic-order-plan/round-9",
-        "logic-order-plan/round-13",
-        "logic-order-plan/round-21",
-        "logic-same-kind-detective/round-10",
-        "logic-same-kind-detective/round-22",
-        "logic-address-map/round-5",
-        "logic-address-map/round-6",
-        "logic-address-map/round-7",
-        "logic-address-map/round-8",
-        "logic-address-map/round-11",
-        "logic-address-map/round-12",
-        "logic-address-map/round-17",
-        "logic-address-map/round-18",
-        "logic-address-map/round-19",
-        "logic-address-map/round-20",
-        "logic-address-map/round-23",
-        "logic-address-map/round-24",
-        "logic-memory-camera/round-8",
-        "logic-difference-detective/round-4",
-        "logic-difference-detective/round-4",
-        "logic-difference-detective/round-10",
-        "logic-difference-detective/round-10",
-        "logic-difference-detective/round-16",
-        "logic-difference-detective/round-16"
+        "logic-order-plan/round-13"
       ]
     },
     {
-      "id": "prompt-看到门但进不去-先做什么-先看目标-再想第一步",
+      "id": "object-喝水",
+      "kind": "object",
+      "text": "喝水",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-order-plan/round-1",
+        "logic-order-plan/round-13"
+      ]
+    },
+    {
+      "id": "prompt-门关着-要开门进去-先做什么-先看目标-再想第一步",
       "kind": "prompt",
-      "text": "看到门但进不去，先做什么？先看目标，再想第一步。",
+      "text": "门关着，要开门进去，先做什么？先看目标，再想第一步。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/round-2",
@@ -7347,9 +7445,9 @@
       ]
     },
     {
-      "id": "object-看到门",
+      "id": "object-门关着",
       "kind": "object",
-      "text": "看到门",
+      "text": "门关着",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/round-2",
@@ -7360,6 +7458,16 @@
       "id": "object-开门",
       "kind": "object",
       "text": "开门",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-order-plan/round-2",
+        "logic-order-plan/round-14"
+      ]
+    },
+    {
+      "id": "object-进屋",
+      "kind": "object",
+      "text": "进屋",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/round-2",
@@ -8023,6 +8131,37 @@
       "contexts": [
         "logic-order-plan/round-9",
         "logic-order-plan/round-21"
+      ]
+    },
+    {
+      "id": "object-杯子",
+      "kind": "object",
+      "text": "杯子",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-order-plan/round-9",
+        "logic-order-plan/round-21",
+        "logic-same-kind-detective/round-10",
+        "logic-same-kind-detective/round-22",
+        "logic-address-map/round-5",
+        "logic-address-map/round-6",
+        "logic-address-map/round-7",
+        "logic-address-map/round-8",
+        "logic-address-map/round-11",
+        "logic-address-map/round-12",
+        "logic-address-map/round-17",
+        "logic-address-map/round-18",
+        "logic-address-map/round-19",
+        "logic-address-map/round-20",
+        "logic-address-map/round-23",
+        "logic-address-map/round-24",
+        "logic-memory-camera/round-8",
+        "logic-difference-detective/round-4",
+        "logic-difference-detective/round-4",
+        "logic-difference-detective/round-10",
+        "logic-difference-detective/round-10",
+        "logic-difference-detective/round-16",
+        "logic-difference-detective/round-16"
       ]
     },
     {
@@ -13413,6 +13552,35 @@
       ]
     },
     {
+      "id": "object-小熊",
+      "kind": "object",
+      "text": "小熊",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-space-bridge/round-1",
+        "logic-space-bridge/round-2",
+        "logic-space-bridge/round-7",
+        "logic-space-bridge/round-9",
+        "logic-space-bridge/round-10",
+        "logic-space-bridge/round-15",
+        "logic-space-bridge/round-17",
+        "logic-space-bridge/round-18",
+        "logic-space-bridge/round-23",
+        "logic-address-map/round-5",
+        "logic-address-map/round-6",
+        "logic-address-map/round-7",
+        "logic-address-map/round-8",
+        "logic-address-map/round-11",
+        "logic-address-map/round-12",
+        "logic-address-map/round-17",
+        "logic-address-map/round-18",
+        "logic-address-map/round-19",
+        "logic-address-map/round-20",
+        "logic-address-map/round-23",
+        "logic-address-map/round-24"
+      ]
+    },
+    {
       "id": "prompt-河变宽了-一块木板不够-怎么办-可以把两块木板接起来",
       "kind": "prompt",
       "text": "河变宽了，一块木板不够。怎么办？可以把两块木板接起来。",
@@ -13750,6 +13918,102 @@
         "logic-space-bridge/round-16",
         "logic-space-bridge/round-21",
         "logic-space-bridge/round-24"
+      ]
+    },
+    {
+      "id": "object-小狗",
+      "kind": "object",
+      "text": "小狗",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-space-bridge/round-5",
+        "logic-space-bridge/round-13",
+        "logic-space-bridge/round-21",
+        "logic-same-kind-detective/round-4",
+        "logic-same-kind-detective/round-10",
+        "logic-same-kind-detective/round-16",
+        "logic-same-kind-detective/round-22",
+        "logic-address-map/round-1",
+        "logic-address-map/round-2",
+        "logic-address-map/round-3",
+        "logic-address-map/round-4",
+        "logic-address-map/round-5",
+        "logic-address-map/round-6",
+        "logic-address-map/round-7",
+        "logic-address-map/round-8",
+        "logic-address-map/round-9",
+        "logic-address-map/round-10",
+        "logic-address-map/round-11",
+        "logic-address-map/round-12",
+        "logic-address-map/round-13",
+        "logic-address-map/round-14",
+        "logic-address-map/round-15",
+        "logic-address-map/round-16",
+        "logic-address-map/round-17",
+        "logic-address-map/round-18",
+        "logic-address-map/round-19",
+        "logic-address-map/round-20",
+        "logic-address-map/round-21",
+        "logic-address-map/round-22",
+        "logic-address-map/round-23",
+        "logic-address-map/round-24",
+        "logic-matrix-puzzle/round-2",
+        "logic-matrix-puzzle/round-6",
+        "logic-matrix-puzzle/round-8",
+        "logic-matrix-puzzle/round-12",
+        "logic-matrix-puzzle/round-14",
+        "logic-matrix-puzzle/round-18",
+        "logic-position-map/round-1",
+        "logic-position-map/round-2",
+        "logic-position-map/round-5",
+        "logic-position-map/round-6",
+        "logic-position-map/round-7",
+        "logic-position-map/round-8",
+        "logic-position-map/round-9",
+        "logic-position-map/round-11",
+        "logic-position-map/round-12",
+        "logic-position-map/round-13",
+        "logic-position-map/round-14",
+        "logic-position-map/round-17",
+        "logic-position-map/round-18",
+        "logic-memory-camera/round-4",
+        "logic-memory-camera/round-5",
+        "logic-memory-camera/round-9",
+        "logic-memory-camera/round-16",
+        "logic-memory-camera/round-17",
+        "logic-difference-detective/round-2",
+        "logic-difference-detective/round-2",
+        "logic-difference-detective/round-7",
+        "logic-difference-detective/round-7",
+        "logic-difference-detective/round-11",
+        "logic-difference-detective/round-14",
+        "logic-difference-detective/round-14",
+        "logic-part-whole-puzzle/round-3",
+        "logic-part-whole-puzzle/round-9",
+        "logic-part-whole-puzzle/round-15",
+        "logic-mirror-fold/round-4",
+        "logic-mirror-fold/round-4",
+        "logic-mirror-fold/round-9",
+        "logic-mirror-fold/round-16",
+        "logic-mirror-fold/round-16",
+        "logic-route-steps/round-1",
+        "logic-route-steps/round-2",
+        "logic-route-steps/round-3",
+        "logic-route-steps/round-4",
+        "logic-route-steps/round-5",
+        "logic-route-steps/round-6",
+        "logic-route-steps/round-7",
+        "logic-route-steps/round-8",
+        "logic-route-steps/round-9",
+        "logic-route-steps/round-10",
+        "logic-route-steps/round-11",
+        "logic-route-steps/round-12",
+        "logic-route-steps/round-13",
+        "logic-route-steps/round-14",
+        "logic-route-steps/round-15",
+        "logic-route-steps/round-16",
+        "logic-route-steps/round-17",
+        "logic-route-steps/round-18"
       ]
     },
     {
@@ -14952,19 +15216,6 @@
       ]
     },
     {
-      "id": "choice-11",
-      "kind": "choice",
-      "text": "11",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-number-pattern-trail/logic-number-pattern-trail-2",
-        "logic-number-pattern-trail/logic-number-pattern-trail-5",
-        "logic-number-pattern-trail/logic-number-pattern-trail-12",
-        "logic-block-height-map/round-8",
-        "logic-block-height-map/round-9"
-      ]
-    },
-    {
       "id": "object-6",
       "kind": "object",
       "text": "6",
@@ -15113,15 +15364,6 @@
       "kind": "success",
       "text": "每次多 2。",
       "tone": "warm, delighted, clear",
-      "contexts": [
-        "logic-number-pattern-trail/logic-number-pattern-trail-12"
-      ]
-    },
-    {
-      "id": "choice-12",
-      "kind": "choice",
-      "text": "12",
-      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-number-pattern-trail/logic-number-pattern-trail-12"
       ]
@@ -15420,25 +15662,6 @@
       "contexts": [
         "logic-address-map/round-8",
         "logic-address-map/round-20"
-      ]
-    },
-    {
-      "id": "choice-草莓",
-      "kind": "choice",
-      "text": "草莓",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-address-map/round-8",
-        "logic-address-map/round-20",
-        "logic-difference-detective/round-4",
-        "logic-difference-detective/round-8",
-        "logic-difference-detective/round-10",
-        "logic-difference-detective/round-16",
-        "logic-part-whole-puzzle/round-2",
-        "logic-part-whole-puzzle/round-8",
-        "logic-part-whole-puzzle/round-14",
-        "logic-balance-swap/round-1",
-        "logic-balance-swap/round-11"
       ]
     },
     {

@@ -1,4 +1,4 @@
-import { Check, RotateCcw, Volume2 } from "lucide-react";
+import { Check, RotateCcw } from "lucide-react";
 import { useMemo, useState } from "react";
 import { games, worlds } from "./data/games";
 import { ProgressiveSetGame } from "./games/ProgressiveSetGame";
@@ -53,18 +53,12 @@ export function App() {
 
   return (
     <main className="app-shell">
-      <section className="topbar" aria-label="今日探险">
-        <div>
-          <p className="eyebrow">今日探险</p>
-          <h1>小小思考岛</h1>
-        </div>
-        <button className="icon-button" type="button" onClick={() => speak(selectedGame.goal)} aria-label="朗读目标">
-          <Volume2 size={22} />
-        </button>
-      </section>
-
       <section className="layout">
         <nav className="world-nav" aria-label="主题地图">
+          <div className="sidebar-brand">
+            <p className="eyebrow">今日探险</p>
+            <h1>小小思考岛</h1>
+          </div>
           {worlds.map((world) => (
             <button
               className={`world-button ${activeWorld === world.id ? "active" : ""}`}

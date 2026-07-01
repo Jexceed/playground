@@ -29,7 +29,7 @@ export const games: GameConfig[] = [
   makeSet({
     id: "math-counting-cardinality",
     world: "math",
-    title: "数一数小路",
+    title: "数一数",
     subtitle: "一边点图，一边数到最后，知道最后一个数就是总数。",
     goal: "建立一一对应、基数理解和 1-10 的数量感。",
     parentPrompt: "请她指着每一个物品数，问：最后数到几？所以一共有几个？",
@@ -91,6 +91,17 @@ export const games: GameConfig[] = [
     abilityTags: ["公平分配", "平均分", "早期除法直觉"],
     level: "L6",
     rounds: makeShareRounds(),
+  }),
+  makeSet({
+    id: "math-group-counting",
+    world: "math",
+    title: "几个几个数",
+    subtitle: "把一样多的小组放在一起，练习 2 个一组、3 个一组地数。",
+    goal: "建立成组计数和早期乘法直觉。",
+    parentPrompt: "可以问：每组几个？一共有几组？几个几个数到多少？",
+    abilityTags: ["成组计数", "早期乘法直觉", "跳数"],
+    level: "L5",
+    rounds: makeGroupCountingRounds(),
   }),
   makeSet({
     id: "logic-pattern-train",
@@ -381,7 +392,7 @@ export const games: GameConfig[] = [
 ];
 
 export const worlds = [
-  { id: "math", name: "数字岛", icon: "🧮", summary: "数数、比较、加减、分配" },
+  { id: "math", name: "数字岛", icon: "🧮", summary: "数数、比较、加减、分组" },
   { id: "logic", name: "逻辑屋", icon: "🗝️", summary: "规律、顺序、规则、计划" },
 ] as const;
 
@@ -429,9 +440,9 @@ function makeCountingRounds(): RoundInput[] {
     const token = allCountTokens[(count - 1) % allCountTokens.length];
     rounds.push({
       level: count <= 3 ? "L1" : count <= 6 ? "L2" : "L3",
-      prompt: `这里有几${unitOf(token)}${countNames[token]}？`,
+      prompt: `数一数有几${unitOf(token)}${countNames[token]}？`,
       instruction: count <= 5 ? "用手指点着数，再选答案。" : "数慢一点，每个只数一次。",
-      visualGroups: [{ label: `${countNames[token]}篮`, items: repeat(token, count) }],
+      visualGroups: [{ label: `数一数有几${unitOf(token)}${countNames[token]}`, items: repeat(token, count) }],
       choices: numberChoices(count, 1, 10),
       answer: String(count),
       success: `对，最后数到 ${count}，所以一共有 ${count} 个。`,
@@ -469,25 +480,29 @@ function makeSubitizeRounds(): RoundInput[] {
     { count: 4, items: ["🍬", "🍬", "🍬", "🍬"], hint: "上面两个，下面两个" },
     { count: 5, items: ["🟡", "🟡", "🟡", "🟡", "🟡"], hint: "四个角加中间一个" },
     { count: 6, items: ["🟢", "🟢", "🟢", "🟢", "🟢", "🟢"], hint: "三和三合起来" },
+    { count: 2, items: ["🍓", "🍓"], hint: "两个并排" },
+    { count: 3, items: ["🍪", "🍪", "🍪"], hint: "一排三个" },
+    { count: 4, items: ["🍎", "🍎", "🍎", "🍎"], hint: "两排，每排两个" },
+    { count: 5, items: ["⭐", "⭐", "⭐", "⭐", "⭐"], hint: "先看四个，再加一个" },
+    { count: 6, items: ["🍬", "🍬", "🍬", "🍬", "🍬", "🍬"], hint: "两个三个合起来" },
+    { count: 4, items: ["🟦", "🟦", "🟦", "🟦"], hint: "像一个小方阵" },
+    { count: 5, items: ["🍊", "🍊", "🍊", "🍊", "🍊"], hint: "一排五个" },
+    { count: 6, items: ["🐟", "🐟", "🐟", "🐟", "🐟", "🐟"], hint: "五个再加一个" },
+    { count: 3, items: ["🐦", "🐦", "🐦"], hint: "两个加一个" },
+    { count: 4, items: ["🧱", "🧱", "🧱", "🧱"], hint: "上面两个，下面两个" },
   ];
-  const rounds: RoundInput[] = [];
-  for (let cycle = 0; cycle < 4; cycle++) {
-    for (const layout of layouts) {
-      rounds.push({
-        level: layout.count <= 3 ? "L2" : layout.count <= 5 ? "L3" : "L4",
-        prompt: `你能一眼看出有几个吗？`,
-        instruction: layout.hint,
-        visualGroups: [{ label: "小卡片", items: layout.items }],
-        choices: numberChoices(layout.count, 1, 6),
-        answer: String(layout.count),
-        success: `是 ${layout.count} 个。${layout.hint}。`,
-        retry: `可以先看成 ${layout.hint}，再确认。`,
-        parentPrompt: "问她：你看到了哪两小堆？它们合起来是几？",
-        abilityTags: ["小数量辨认", "数量结构"],
-      });
-    }
-  }
-  return rounds;
+  return layouts.map((layout) => ({
+    level: layout.count <= 3 ? "L2" : layout.count <= 5 ? "L3" : "L4",
+    prompt: "你能一眼看出有几个吗？",
+    instruction: layout.hint,
+    visualGroups: [{ label: "看一眼", items: layout.items }],
+    choices: numberChoices(layout.count, 1, 6),
+    answer: String(layout.count),
+    success: `是 ${layout.count} 个。${layout.hint}。`,
+    retry: `可以先看成 ${layout.hint}，再确认。`,
+    parentPrompt: "问她：你看到了哪两小堆？它们合起来是几？",
+    abilityTags: ["小数量辨认", "数量结构"],
+  }));
 }
 
 function makeCompareRounds(): RoundInput[] {
@@ -632,7 +647,7 @@ function makeShareRounds(): RoundInput[] {
     const each = items / people;
     rounds.push({
       level: index < 4 ? "L4" : index < 7 ? "L5" : "L6",
-      prompt: `${items} 个${countNames[itemToken] ?? "东西"}分给 ${people} 个小朋友，每人一样多，每人几个？`,
+      prompt: `${countedItem(itemToken, items)}分给 ${people} 个小朋友，每人一样多，每人几个？`,
       instruction: "可以一个一个轮流分。",
       visualGroups: [
         { label: "要分的东西", items: repeat(itemToken, items) },
@@ -640,7 +655,7 @@ function makeShareRounds(): RoundInput[] {
       ],
       choices: numberChoices(each, 1, 6),
       answer: String(each),
-      success: `${items} 个分给 ${people} 个，每人 ${each} 个，正好一样多。`,
+      success: `${countedItem(itemToken, items)}分给 ${people} 个，每人 ${each} 个，正好一样多。`,
       retry: "轮流分：每个人先 1 个，再每个人 1 个。",
       parentPrompt: "请她用手指做轮流分的动作。",
       abilityTags: ["公平分配", "平均分"],
@@ -667,32 +682,74 @@ function makeShareRounds(): RoundInput[] {
   return rounds;
 }
 
+function makeGroupCountingRounds(): RoundInput[] {
+  const cases = [
+    { groups: 2, size: 2, token: "🍓" },
+    { groups: 3, size: 2, token: "🍪" },
+    { groups: 4, size: 2, token: "⭐" },
+    { groups: 2, size: 3, token: "🍎" },
+    { groups: 3, size: 3, token: "🍊" },
+    { groups: 4, size: 3, token: "🧱" },
+    { groups: 2, size: 4, token: "🍬" },
+    { groups: 3, size: 4, token: "🐟" },
+    { groups: 2, size: 5, token: "🐦" },
+    { groups: 5, size: 2, token: "🍓" },
+    { groups: 5, size: 3, token: "🧱" },
+    { groups: 4, size: 4, token: "⭐" },
+  ];
+
+  return cases.map(({ groups, size, token }, index) => {
+    const total = groups * size;
+    const itemName = countNames[token] ?? "东西";
+    return {
+      level: total <= 8 ? "L4" as AbilityLevel : total <= 12 ? "L5" as AbilityLevel : "L6" as AbilityLevel,
+      prompt: `每组放 ${countedItem(token, size)}，有 ${groups} 组，一共有多少${unitOf(token)}${itemName}？`,
+      instruction: `${size} ${unitOf(token)}一组地数，也可以先看有几组。`,
+      visualGroups: Array.from({ length: groups }, (_, groupIndex) => ({
+        label: `第 ${groupIndex + 1} 组`,
+        items: repeat(token, size),
+      })),
+      choices: numberChoices(total, 2, 20),
+      answer: String(total),
+      success: `${groups} 组，每组 ${countedItem(token, size)}，一共有 ${countedItem(token, total)}。`,
+      retry: `先数一组是 ${countedItem(token, size)}，再数有 ${groups} 组。`,
+      parentPrompt: "问她：每组几个？一共有几组？可以几个几个地数？",
+      abilityTags: ["成组计数", index < 6 ? "跳数" : "早期乘法直觉"],
+    };
+  });
+}
+
 function makePatternRounds(): RoundInput[] {
   const patterns = [
-    { unit: ["🔴", "🔵"], answer: "🔴", label: "红、蓝" },
-    { unit: ["🟡", "🟢"], answer: "🟡", label: "黄、绿" },
-    { unit: ["☀️", "🌙"], answer: "☀️", label: "太阳、月亮" },
-    { unit: ["⬤", "•", "•"], answer: "⬤", label: "一大两小" },
-    { unit: ["☀️", "🌙", "⭐"], answer: "⭐", label: "太阳、月亮、星星" },
+    { unit: ["🔴", "🔵"], label: "红、蓝" },
+    { unit: ["🟡", "🟢"], label: "黄、绿" },
+    { unit: ["☀️", "🌙"], label: "太阳、月亮" },
+    { unit: ["⬤", "•", "•"], label: "一大两小" },
+    { unit: ["☀️", "🌙", "⭐"], label: "太阳、月亮、星星" },
+    { unit: ["🍓", "🍪", "🍓"], label: "草莓、饼干、草莓" },
   ];
+  const questionKinds = ["next", "middle", "front"] as const;
   const rounds: RoundInput[] = [];
   patterns.forEach((pattern, index) => {
-    for (let shift = 0; shift < 5; shift++) {
-      const sequence = [...pattern.unit, ...pattern.unit].slice(shift % pattern.unit.length, shift % pattern.unit.length + 5);
-      const answer = pattern.unit[(shift + 5) % pattern.unit.length];
+    questionKinds.forEach((kind) => {
+      const full = repeatPattern(pattern.unit, 7);
+      const missingIndex = kind === "next" ? 5 : kind === "middle" ? 3 : 0;
+      const answer = full[missingIndex];
+      const sequence = full.slice(0, 6);
+      sequence[missingIndex] = "?";
       rounds.push({
         level: index < 2 ? "L3" : index < 4 ? "L4" : "L5",
-        prompt: `${pattern.label}，接下来是什么？`,
-        instruction: "找一找重复的小组。",
-        sequence: [...sequence, "?"],
+        prompt: kind === "next" ? "找规律，接下来是什么？" : "找规律，空格里是什么？",
+        instruction: "先说出重复顺序，再选空格里的图。",
+        sequence,
         choices: patternChoices(answer),
         answer,
-        success: `规律是 ${pattern.label}，所以下一个是${labelFor(answer)}。`,
-        retry: "从头念一念，找到重复的小组。",
+        success: `规律是 ${pattern.label}，这里应该是${labelFor(answer)}。`,
+        retry: "从头念一念，按同样的顺序找空格。",
         parentPrompt: "问她：这一组里有几个？它怎么重复？",
         abilityTags: ["模式识别", "预测"],
       });
-    }
+    });
   });
   return rounds;
 }
@@ -703,6 +760,7 @@ function makeSorterRounds(): RoundInput[] {
     ["红色", "🔴", "red"], ["蓝色", "🔵", "blue"], ["绿色", "🟢", "green"], ["黄色", "🟡", "yellow"],
   ];
   colorCases.forEach(([name, token, value]) => {
+    const basketChoices = colorCases.filter(([candidateName]) => candidateName !== name).slice(0, 2);
     rounds.push({
       level: "L3",
       prompt: `按颜色分，${name}的应该放哪里？`,
@@ -710,8 +768,7 @@ function makeSorterRounds(): RoundInput[] {
       visualGroups: [{ label: "分类机", items: [token, "🟦", "🟢"] }],
       choices: [
         { label: `${name}篮子`, value },
-        { label: "形状篮子", value: "shape" },
-        { label: "不要放", value: "none" },
+        ...basketChoices.map(([candidateName, , candidateValue]) => ({ label: `${candidateName}篮子`, value: candidateValue })),
       ],
       answer: value,
       success: `规则是按颜色分，所以放进${name}篮子。`,
@@ -721,7 +778,7 @@ function makeSorterRounds(): RoundInput[] {
     });
   });
   const shapeCases = [
-    ["圆形", "🔴", "circle"], ["方形", "🟦", "square"], ["小圆点", "🟡", "circle"], ["空位", "⬜", "empty"],
+    ["圆形", "🔴", "circle"], ["方形", "🟦", "square"], ["小圆点", "🟡", "circle"], ["空位", "⬜", "square"],
   ];
   shapeCases.forEach(([name, token, value]) => {
     rounds.push({
@@ -732,9 +789,9 @@ function makeSorterRounds(): RoundInput[] {
       choices: [
         { label: "圆形篮子", value: "circle" },
         { label: "方形篮子", value: "square" },
-        { label: "红色篮子", value: "red" },
+        { label: "三角形篮子", value: "triangle" },
       ],
-      answer: value === "empty" ? "square" : value,
+      answer: value,
       success: `这次按形状分，${name}要看形状。`,
       retry: "规则换了，现在不是找颜色。",
       parentPrompt: "问她：同一个东西，为什么能按不同规则分？",
@@ -742,19 +799,24 @@ function makeSorterRounds(): RoundInput[] {
     });
   });
   ["红色", "蓝色", "绿色", "黄色"].forEach((name, index) => {
-    const values = ["red", "blue", "green", "yellow"];
+    const tokens = ["🔴", "🔵", "🟢", "🟡"];
+    const answerIndex = (index + 1) % tokens.length;
     rounds.push({
       level: "L5",
-      prompt: `这次找不是${name}的。`,
-      instruction: "先停一下，题目说的是“不是”。",
-      visualGroups: [{ label: "物品", items: ["🔴", "🔵", "🟢", "🟡"] }],
-      choices: [
-        { label: name, value: values[index] },
-        { label: `不是${name}的`, value: `not-${values[index]}` },
-        { label: "都不要", value: "none" },
+      prompt: `哪一张不是${name}的？`,
+      instruction: "先看清楚：题目要找的不是这个颜色。",
+      visualGroups: [
+        { label: "A", items: [tokens[index]] },
+        { label: "B", items: [tokens[answerIndex]] },
+        { label: "C", items: [tokens[index]] },
       ],
-      answer: `not-${values[index]}`,
-      success: `对，要找不是${name}的。`,
+      choices: [
+        { label: "A", value: "A" },
+        { label: "B", value: "B" },
+        { label: "C", value: "C" },
+      ],
+      answer: "B",
+      success: `对，这个不是${name}的。`,
       retry: "看到“不是”，要先停一下再选。",
       parentPrompt: "问她：你是不是很想点题目里说的那个颜色？",
       abilityTags: ["认知灵活性"],
@@ -765,46 +827,40 @@ function makeSorterRounds(): RoundInput[] {
 
 function makeStopThinkRounds(): RoundInput[] {
   const trafficScene = imageGallery.scenes.trafficCrosswalk;
-  const animals = [["小兔", "🐰"], ["小狗", "🐶"], ["小熊", "🐻"], ["小猫", "🐱"]] as const;
-  const rounds: RoundInput[] = [];
-  animals.forEach(([animalName, animal]) => {
-    [
-      { color: "绿灯", token: "🟢", mode: "平常规则", answer: "go", action: "走" },
-      { color: "红灯", token: "🔴", mode: "平常规则", answer: "stop", action: "停" },
-      { color: "绿灯", token: "🟢", mode: "反着来", answer: "stop", action: "停" },
-      { color: "红灯", token: "🔴", mode: "反着来", answer: "go", action: "走" },
-      { color: "绿灯", token: "🟢", mode: "慢慢来", answer: "slow", action: "慢慢走" },
-      { color: "红灯", token: "🔴", mode: "先拍手", answer: "clap", action: "拍手" },
-    ].forEach((rule, index) => {
-      rounds.push({
-        level: index < 2 ? "L3" : index < 4 ? "L5" : "L6",
-        prompt: `${rule.mode}：${rule.color}亮了，${animalName}应该做什么？`,
-        instruction: index < 2 ? "先听规则，再点答案。" : "规则变了，要先停一下再想。",
-        sceneImage: trafficScene,
-        sequence: [rule.mode, rule.token, animal, "?"],
-        choices: [
-          { label: "走", value: "go" },
-          { label: "停", value: "stop" },
-          { label: "慢慢走", value: "slow" },
-          { label: "拍手", value: "clap" },
-        ].slice(index < 4 ? 0 : 1, index < 4 ? 3 : 4),
-        answer: rule.answer,
-        success: `${rule.mode}时，${rule.color}要${rule.action}。`,
-        retry: "先停一下，重新听规则。",
-        parentPrompt: "问她：平常规则是什么？这一次规则有没有变？",
-        abilityTags: [index < 2 ? "规则执行" : index < 4 ? "反着来" : "工作记忆"],
-      });
-    });
-  });
-  return rounds;
+  const rules = [
+    { color: "绿灯", token: "🟢", mode: "按红绿灯走", prompt: "绿灯亮了，小兔应该怎么做？", answer: "go", action: "走", level: "L3" as AbilityLevel },
+    { color: "红灯", token: "🔴", mode: "按红绿灯走", prompt: "红灯亮了，小兔应该怎么做？", answer: "stop", action: "停", level: "L3" as AbilityLevel },
+    { color: "绿灯", token: "🟢", mode: "玩反口令", prompt: "现在玩反口令：绿灯亮了，小兔应该怎么做？", answer: "stop", action: "停", level: "L5" as AbilityLevel },
+    { color: "红灯", token: "🔴", mode: "玩反口令", prompt: "现在玩反口令：红灯亮了，小兔应该怎么做？", answer: "go", action: "走", level: "L5" as AbilityLevel },
+    { color: "绿灯", token: "🟢", mode: "慢慢走", prompt: "这次听到绿灯也要慢慢走，小兔应该怎么做？", answer: "slow", action: "慢慢走", level: "L6" as AbilityLevel },
+    { color: "红灯", token: "🔴", mode: "先拍手", prompt: "这次红灯亮了要先拍手，小兔应该怎么做？", answer: "clap", action: "拍手", level: "L6" as AbilityLevel },
+  ];
+  return rules.map((rule, index) => ({
+    level: rule.level,
+    prompt: rule.prompt,
+    instruction: index < 2 ? "看灯的颜色，再选动作。" : "玩法变了，先停一下再想。",
+    sceneImage: trafficScene,
+    sequence: [rule.mode, rule.token, "🐰", "?"],
+    choices: [
+      { label: "走", value: "go" },
+      { label: "停", value: "stop" },
+      { label: "慢慢走", value: "slow" },
+      { label: "拍手", value: "clap" },
+    ].slice(index < 4 ? 0 : 1, index < 4 ? 3 : 4),
+    answer: rule.answer,
+    success: `${rule.color}亮了，小兔要${rule.action}。`,
+    retry: "先停一下，把这次的玩法再听一遍。",
+    parentPrompt: "问她：这一次是按红绿灯走，还是玩法变了？",
+    abilityTags: [index < 2 ? "规则执行" : index < 4 ? "反口令" : "工作记忆"],
+  }));
 }
 
 function makeOrderRounds(): RoundInput[] {
   const orderScenes = imageGallery.scenes;
   const twoStep = [
     {
-      prompt: "要喝水，第一步做什么？",
-      seq: ["口渴", "?", "🥤"],
+      prompt: "小兔口渴了，想喝水，先做什么？",
+      seq: ["口渴", "?", "倒水", "喝水"],
       sceneImage: orderScenes.snackWashHands,
       answer: "cup",
       choices: [["先拿杯子", "cup"], ["先倒水", "pour"], ["直接喝水", "drink"]],
@@ -812,8 +868,8 @@ function makeOrderRounds(): RoundInput[] {
       note: "2 步直接因果：判断目标前必须先做的准备动作。",
     },
     {
-      prompt: "看到门但进不去，先做什么？",
-      seq: ["看到门", "?", "开门"],
+      prompt: "门关着，要开门进去，先做什么？",
+      seq: ["门关着", "?", "开门", "进屋"],
       sceneImage: orderScenes.keyDoorEntry,
       answer: "key",
       choices: [["先找钥匙", "key"], ["先推门", "push"], ["先敲门", "knock"]],
@@ -3372,6 +3428,10 @@ function repeat(token: string, count: number) {
   return Array.from({ length: count }, () => token);
 }
 
+function repeatPattern<T>(unit: T[], count: number) {
+  return Array.from({ length: count }, (_, index) => unit[index % unit.length]);
+}
+
 function repeatTo(rounds: RoundInput[], target: number) {
   const output: RoundInput[] = [];
   for (let index = 0; output.length < target; index++) {
@@ -3406,4 +3466,8 @@ function unitOf(token: string) {
   if (token === "🐦") return "只";
   if (token === "⭐") return "颗";
   return "个";
+}
+
+function countedItem(token: string, count: number) {
+  return `${count} ${unitOf(token)}${countNames[token] ?? "东西"}`;
 }

@@ -139,9 +139,8 @@ const phraseMap: Record<string, TokenMeta> = {
   "黄色篮子": { label: "黄色篮子", kind: "yellowDot" },
   "圆形篮子": { label: "圆形篮子", kind: "bigDot" },
   "方形篮子": { label: "方形篮子", kind: "bigSquare" },
-  "形状篮子": { label: "形状篮子", kind: "sortToys" },
-  "不要放": { label: "不要放", kind: "none" },
-  "平常规则": { label: "平常规则", kind: "normalRule" },
+  "按红绿灯走": { label: "按红绿灯走", kind: "normalRule" },
+  "玩反口令": { label: "玩反口令", kind: "reverseRule" },
   "反着来": { label: "反着来", kind: "reverseRule" },
   "慢慢来": { label: "慢慢来", kind: "slowRule" },
   "先拍手": { label: "先拍手", kind: "clap" },
@@ -150,8 +149,12 @@ const phraseMap: Record<string, TokenMeta> = {
   "慢慢走": { label: "慢慢走", kind: "slowRule" },
   "拍手": { label: "拍手", kind: "clap" },
   "看到门": { label: "看到门", kind: "door" },
+  "门关着": { label: "门关着", kind: "door" },
   "开门": { label: "开门", kind: "openDoor" },
+  "进屋": { label: "进屋", kind: "home" },
   "口渴": { label: "口渴", kind: "cup" },
+  "倒水": { label: "倒水", kind: "pourWater" },
+  "喝水": { label: "喝水", kind: "cup" },
   "小鱼在岸上": { label: "小鱼在岸上", kind: "fishWater" },
   "小岛": { label: "小岛", kind: "stone" },
   "先拿杯子": { label: "先拿杯子", kind: "cup" },
@@ -299,9 +302,9 @@ function TokenButton({ compact, label, kind }: { compact?: boolean; label: strin
 }
 
 function Illustration({ kind, small = false }: { kind: string; small?: boolean }) {
-  const avatar = avatarForKind(kind);
-  if (avatar) {
-    return <img className={`kid-illustration kid-avatar ${small ? "small" : ""}`} src={avatar.src} alt="" aria-hidden="true" />;
+  const raster = rasterForKind(kind);
+  if (raster) {
+    return <img className={`kid-illustration kid-avatar ${small ? "small" : ""}`} src={raster.src} alt="" aria-hidden="true" />;
   }
 
   return (
@@ -312,11 +315,20 @@ function Illustration({ kind, small = false }: { kind: string; small?: boolean }
   );
 }
 
-function avatarForKind(kind: string) {
+function rasterForKind(kind: string) {
   if (kind === "cat" || kind === "orangeCat") return imageGallery.avatars.cat;
   if (kind === "dog") return imageGallery.avatars.dog;
   if (kind === "rabbit") return imageGallery.avatars.rabbit;
   if (kind === "bear") return imageGallery.avatars.bear;
+  if (kind === "strawberry") return imageGallery.items.strawberry;
+  if (kind === "apple") return imageGallery.items.apple;
+  if (kind === "orange") return imageGallery.items.orange;
+  if (kind === "cookie") return imageGallery.items.cookie;
+  if (kind === "candy") return imageGallery.items.candy;
+  if (kind === "block") return imageGallery.items.block;
+  if (kind === "star" || kind === "smallStar") return imageGallery.items.star;
+  if (kind === "fish") return imageGallery.items.fish;
+  if (kind === "bird") return imageGallery.items.bird;
   return null;
 }
 

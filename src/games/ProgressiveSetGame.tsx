@@ -128,9 +128,11 @@ export function ProgressiveSetGame({
             <span
               className="difficulty-badge"
               title={`难度判定：${difficultyText(round)}`}
+              data-tooltip={`难度判定：${difficultyText(round)}`}
               aria-label={`难度 ${round.level}，${difficultyText(round)}`}
+              tabIndex={0}
             >
-              {round.level}
+              难度 {round.level}
             </span>
           </p>
           <h3>{round.prompt}</h3>

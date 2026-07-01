@@ -35,9 +35,22 @@ export async function speak(text: string, lang = "zh-CN") {
     window.speechSynthesis?.cancel();
     recordSpeechSource(src);
     const audio = new Audio(src);
+    const run = speechRun;
+    let fellBack = false;
+    const fallbackToSpeechSynthesis = () => {
+      if (fellBack || run !== speechRun || !("speechSynthesis" in window)) return;
+      fellBack = true;
+      recordSpeechSource("speechSynthesis");
+      void speakChunks(splitSpeechText(clean), lang, run);
+    };
     activeAudio = audio;
     audio.volume = 0.9;
-    await audio.play();
+    audio.onerror = fallbackToSpeechSynthesis;
+    try {
+      await audio.play();
+    } catch {
+      fallbackToSpeechSynthesis();
+    }
     return;
   }
 

@@ -54,26 +54,24 @@ button:focus-visible {
   padding: 18px;
 }
 
-.topbar {
-  display: flex;
-  align-items: end;
-  justify-content: space-between;
-  gap: 16px;
-  max-width: 1320px;
-  margin: 0 auto 14px;
-}
-
-.topbar h1,
+.sidebar-brand h1,
 .stage-header h2,
 .round-toolbar h3 {
   margin: 0;
   letter-spacing: 0;
 }
 
-.topbar h1 {
+.sidebar-brand {
+  padding: 12px;
+  border: 2px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 253, 247, 0.9);
+}
+
+.sidebar-brand h1 {
   color: var(--ink);
-  font-size: clamp(2rem, 5vw, 3.2rem);
-  line-height: 0.96;
+  font-size: 1.65rem;
+  line-height: 1.02;
 }
 
 .eyebrow {
@@ -337,6 +335,7 @@ button:focus-visible {
 }
 
 .difficulty-badge {
+  position: relative;
   display: inline-flex;
   align-items: center;
   min-height: 24px;
@@ -348,6 +347,26 @@ button:focus-visible {
   font-size: 0.78rem;
   font-weight: 800;
   cursor: help;
+}
+
+.difficulty-badge:hover::after,
+.difficulty-badge:focus-visible::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  z-index: 20;
+  left: 0;
+  top: calc(100% + 8px);
+  width: min(360px, calc(100vw - 48px));
+  padding: 9px 10px;
+  border: 1px solid #e4d5bd;
+  border-radius: 8px;
+  color: #4c3c24;
+  background: #fffdf7;
+  box-shadow: 0 10px 24px rgba(51, 45, 34, 0.16);
+  font-size: 0.82rem;
+  font-weight: 800;
+  line-height: 1.45;
+  white-space: normal;
 }
 
 .round-navigator {
@@ -769,6 +788,13 @@ button:focus-visible {
   align-items: center;
 }
 
+.visual-group .object-row {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(64px, 86px));
+  justify-content: start;
+  align-items: start;
+}
+
 .sequence-row {
   justify-content: center;
 }
@@ -1117,14 +1143,6 @@ button:focus-visible {
     padding: 12px;
   }
 
-  .topbar {
-    align-items: center;
-  }
-
-  .topbar h1 {
-    font-size: 2.2rem;
-  }
-
   .layout {
     display: block;
   }
@@ -1133,6 +1151,14 @@ button:focus-visible {
     display: flex;
     overflow-x: auto;
     margin-bottom: 10px;
+  }
+
+  .sidebar-brand {
+    min-width: 188px;
+  }
+
+  .sidebar-brand h1 {
+    font-size: 1.45rem;
   }
 
   .world-button {
@@ -1264,10 +1290,6 @@ button:focus-visible {
 }
 
 @media (max-width: 430px) {
-  .topbar h1 {
-    font-size: 1.9rem;
-  }
-
   .stage-header {
     padding: 14px 12px 10px;
   }
@@ -1275,6 +1297,10 @@ button:focus-visible {
   .visual-token {
     min-width: 62px;
     min-height: 62px;
+  }
+
+  .visual-group .object-row {
+    grid-template-columns: repeat(5, minmax(46px, 1fr));
   }
 
   .token-mark {

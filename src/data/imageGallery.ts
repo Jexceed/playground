@@ -120,7 +120,46 @@ export const imageGallery = {
       alt: "小熊头像",
     },
   },
+  items: {
+    strawberry: {
+      src: "/images/items/strawberry.png",
+      alt: "草莓",
+    },
+    apple: {
+      src: "/images/items/apple.png",
+      alt: "苹果",
+    },
+    orange: {
+      src: "/images/items/orange.png",
+      alt: "橘子",
+    },
+    cookie: {
+      src: "/images/items/cookie.png",
+      alt: "饼干",
+    },
+    candy: {
+      src: "/images/items/candy.png",
+      alt: "糖果",
+    },
+    block: {
+      src: "/images/items/block.png",
+      alt: "积木",
+    },
+    star: {
+      src: "/images/items/star.png",
+      alt: "星星",
+    },
+    fish: {
+      src: "/images/items/fish.png",
+      alt: "小鱼",
+    },
+    bird: {
+      src: "/images/items/bird.png",
+      alt: "小鸟",
+    },
+  },
 } satisfies {
   scenes: Record<string, GalleryImage>;
   avatars: Record<string, GalleryImage>;
+  items: Record<string, GalleryImage>;
 };
