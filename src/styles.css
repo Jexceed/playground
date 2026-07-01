@@ -62,16 +62,64 @@ button:focus-visible {
 }
 
 .sidebar-brand {
+  display: grid;
+  grid-template-columns: 50px minmax(0, 1fr);
+  gap: 10px;
+  align-items: center;
   padding: 12px;
   border: 2px solid var(--line);
   border-radius: 8px;
-  background: rgba(255, 253, 247, 0.9);
+  background:
+    linear-gradient(135deg, #fff8e8 0%, #eff7ed 100%);
+  box-shadow: 0 10px 24px rgba(51, 45, 34, 0.09);
 }
 
 .sidebar-brand h1 {
   color: var(--ink);
-  font-size: 1.65rem;
-  line-height: 1.02;
+  font-size: 1.35rem;
+  line-height: 1.08;
+}
+
+.sidebar-brand p {
+  margin: 4px 0 0;
+  color: #6a5b46;
+  font-size: 0.78rem;
+  font-weight: 900;
+}
+
+.brand-mark {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #d99b38;
+  border-radius: 12px;
+  background: #fffdf7;
+  box-shadow: inset 0 -6px 0 rgba(217, 155, 56, 0.12);
+}
+
+.brand-mark span {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  border: 2px solid #293241;
+  border-radius: 50%;
+}
+
+.brand-mark span:nth-child(1) {
+  transform: translate(-10px, -8px);
+  background: var(--coral);
+}
+
+.brand-mark span:nth-child(2) {
+  transform: translate(9px, -2px);
+  background: var(--gold);
+}
+
+.brand-mark span:nth-child(3) {
+  transform: translate(-2px, 12px);
+  background: var(--mint);
 }
 
 .eyebrow {
@@ -84,9 +132,9 @@ button:focus-visible {
 
 .layout {
   display: grid;
-  grid-template-columns: 220px minmax(0, 1fr) 280px;
-  gap: 14px;
-  max-width: 1320px;
+  grid-template-columns: 210px minmax(0, 1fr) 260px;
+  gap: 18px;
+  max-width: 1440px;
   margin: 0 auto;
   align-items: start;
 }
@@ -211,7 +259,7 @@ button:focus-visible {
 
 .game-column {
   display: grid;
-  gap: 10px;
+  gap: 14px;
 }
 
 .game-picker {
@@ -295,8 +343,8 @@ button:focus-visible {
 .play-area {
   display: grid;
   grid-template-rows: auto minmax(210px, auto) auto auto auto;
-  gap: 10px;
-  padding: 12px 16px 16px;
+  gap: 16px;
+  padding: 16px 18px 18px;
 }
 
 .round-toolbar {
@@ -437,9 +485,9 @@ button:focus-visible {
   overflow: hidden;
   display: grid;
   align-content: center;
-  gap: 14px;
-  min-height: 220px;
-  padding: 14px;
+  gap: 16px;
+  min-height: 250px;
+  padding: 16px;
   border: 2px solid #d9e3d4;
   border-radius: 8px;
   background:
@@ -533,15 +581,15 @@ button:focus-visible {
   display: block;
   width: 100%;
   height: auto;
-  max-height: clamp(150px, 22vw, 230px);
+  max-height: clamp(210px, 30vw, 360px);
   object-fit: contain;
   object-position: center;
 }
 
 .round-board-with-image {
-  gap: 6px;
-  min-height: 0;
-  padding: 8px;
+  gap: 14px;
+  min-height: 330px;
+  padding: 14px;
 }
 
 .round-board-with-image .sequence-row {
@@ -575,28 +623,28 @@ button:focus-visible {
 }
 
 .round-board-image-groups .scene-image-card {
-  width: min(100%, 760px);
+  width: min(100%, 820px);
   min-height: 0;
   height: auto;
 }
 
 .round-board-image-groups .scene-image-card img {
   height: auto;
-  max-height: clamp(170px, 24vw, 260px);
+  max-height: clamp(240px, 32vw, 390px);
   min-height: 0;
   object-fit: contain;
 }
 
 .round-board-image-groups .visual-groups {
   align-self: stretch;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 6px;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr));
+  gap: 10px;
 }
 
 .round-board-image-groups .visual-group {
   min-height: 0;
-  padding: 8px;
-  gap: 6px;
+  padding: 10px;
+  gap: 8px;
 }
 
 .round-board-image-groups .visual-group strong {
@@ -628,8 +676,8 @@ button:focus-visible {
 
 .visual-groups {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr));
+  gap: 14px;
 }
 
 .visual-group {
@@ -790,9 +838,29 @@ button:focus-visible {
 
 .visual-group .object-row {
   display: grid;
-  grid-template-columns: repeat(5, minmax(64px, 86px));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   justify-content: start;
   align-items: start;
+  width: 100%;
+}
+
+.visual-group .object-row .visual-token {
+  width: 100%;
+  min-width: 0;
+  min-height: 84px;
+  padding: 6px 4px 18px;
+}
+
+.visual-group .object-row .kid-illustration {
+  width: 52px;
+  height: 52px;
+}
+
+.visual-group .object-row .visual-token small {
+  max-width: 100%;
+  font-size: 0.68rem;
+  line-height: 1.1;
+  text-align: center;
 }
 
 .subitize-frame {
@@ -1172,7 +1240,7 @@ button:focus-visible {
   color: var(--muted);
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1220px) {
   .layout {
     grid-template-columns: 190px minmax(0, 1fr);
   }
@@ -1230,11 +1298,11 @@ button:focus-visible {
   .play-area {
     grid-template-rows: auto auto auto auto auto;
     padding: 12px;
-    gap: 8px;
+    gap: 12px;
   }
 
   .round-board {
-    min-height: 190px;
+    min-height: 220px;
     padding: 10px;
   }
 
@@ -1249,7 +1317,7 @@ button:focus-visible {
 
   .round-board-image-groups .scene-image-card img {
     height: auto;
-    max-height: clamp(150px, 42vw, 220px);
+    max-height: clamp(190px, 48vw, 320px);
     min-height: 0;
     object-fit: contain;
   }

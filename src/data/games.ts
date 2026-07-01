@@ -773,7 +773,13 @@ function makeSorterRounds(): RoundInput[] {
   const rounds: RoundInput[] = [];
   const colorCases = [
     ["红色", "🔴", "red"], ["蓝色", "🔵", "blue"], ["绿色", "🟢", "green"], ["黄色", "🟡", "yellow"],
-  ];
+  ] as const;
+  const colorTokenByName: Record<string, string> = {
+    红色: "🔴",
+    蓝色: "🔵",
+    绿色: "🟢",
+    黄色: "🟡",
+  };
   colorCases.forEach(([name, token, value]) => {
     const basketChoices = colorCases.filter(([candidateName]) => candidateName !== name).slice(0, 2);
     rounds.push({
@@ -794,7 +800,7 @@ function makeSorterRounds(): RoundInput[] {
   });
   const shapeCases = [
     ["圆形", "🔴", "circle"], ["方形", "🟦", "square"], ["小圆点", "🟡", "circle"], ["空位", "⬜", "square"],
-  ];
+  ] as const;
   shapeCases.forEach(([name, token, value]) => {
     rounds.push({
       level: "L4",
@@ -813,17 +819,71 @@ function makeSorterRounds(): RoundInput[] {
       abilityTags: ["规则切换"],
     });
   });
-  ["红色", "蓝色", "绿色", "黄色"].forEach((name, index) => {
-    const tokens = ["🔴", "🔵", "🟢", "🟡"];
-    const answerIndex = (index + 1) % tokens.length;
+
+  const mixedRuleCases = [
+    { rule: "先按颜色分", item: "🔴", answer: "red", choices: ["红色篮子", "圆形篮子", "方形篮子"], success: "这次先听颜色规则，所以红色圆片进红色篮子。" },
+    { rule: "先按形状分", item: "🔴", answer: "circle", choices: ["圆形篮子", "红色篮子", "方形篮子"], success: "这次先听形状规则，所以红色圆片进圆形篮子。" },
+    { rule: "先按颜色分", item: "🟦", answer: "blue", choices: ["蓝色篮子", "方形篮子", "圆形篮子"], success: "这次先听颜色规则，所以蓝色方块进蓝色篮子。" },
+    { rule: "先按形状分", item: "🟦", answer: "square", choices: ["方形篮子", "蓝色篮子", "圆形篮子"], success: "这次先听形状规则，所以蓝色方块进方形篮子。" },
+    { rule: "规则换成颜色", item: "🟡", answer: "yellow", choices: ["黄色篮子", "圆形篮子", "方形篮子"], success: "规则换成颜色，就先看黄色。" },
+    { rule: "规则换成形状", item: "🟡", answer: "circle", choices: ["圆形篮子", "黄色篮子", "方形篮子"], success: "规则换成形状，就先看圆形。" },
+    { rule: "规则换成颜色", item: "🟢", answer: "green", choices: ["绿色篮子", "圆形篮子", "方形篮子"], success: "规则换成颜色，就先看绿色。" },
+    { rule: "规则换成形状", item: "⬜", answer: "square", choices: ["方形篮子", "圆形篮子", "黄色篮子"], success: "规则换成形状，空位这张是方形。" },
+  ];
+  mixedRuleCases.forEach((item, index) => {
+    rounds.push({
+      level: index < 4 ? "L4" : "L5",
+      prompt: `${item.rule}，这张应该放哪里？`,
+      instruction: "先听规则，再看这张图。",
+      visualGroups: [{ label: "要分类的图", items: [item.item] }],
+      choices: item.choices.map((label) => ({
+        label,
+        value: label.startsWith("红色") ? "red" : label.startsWith("蓝色") ? "blue" : label.startsWith("绿色") ? "green" : label.startsWith("黄色") ? "yellow" : label.startsWith("圆形") ? "circle" : "square",
+      })),
+      answer: item.answer,
+      success: item.success,
+      retry: "不要只看最显眼的地方，先把这次的规则说一遍。",
+      parentPrompt: "问她：如果规则换了，同一张图会不会去不同篮子？",
+      abilityTags: ["规则切换", "分类"],
+    });
+  });
+
+  const twoConditionCases = [
+    { prompt: "规则是红色，而且要圆形。选哪一个？", items: ["🔴", "🟦", "🟢"], answer: "🔴", success: "红色圆片同时满足红色和圆形。" },
+    { prompt: "规则是蓝色，而且要方形。选哪一个？", items: ["🔵", "🟦", "🟡"], answer: "🟦", success: "蓝色方块同时满足蓝色和方形。" },
+    { prompt: "规则是圆形，但不要红色。选哪一个？", items: ["🔴", "🔵", "🟦"], answer: "🔵", success: "蓝色圆片是圆形，也不是红色。" },
+    { prompt: "规则是方形，但不要蓝色。选哪一个？", items: ["🟦", "⬜", "🟡"], answer: "⬜", success: "空位这张是方形，也不是蓝色。" },
+  ];
+  twoConditionCases.forEach((item) => {
     rounds.push({
       level: "L5",
-      prompt: `哪一张不是${name}的？`,
-      instruction: "先看清楚：题目要找的不是这个颜色。",
+      prompt: item.prompt,
+      instruction: "两个条件都要满足，少一个都不行。",
+      visualGroups: item.items.map((token, index) => ({ label: ["A", "B", "C"][index], items: [token] })),
+      choices: [
+        { label: "A", value: item.items[0] },
+        { label: "B", value: item.items[1] },
+        { label: "C", value: item.items[2] },
+      ],
+      answer: item.answer,
+      success: item.success,
+      retry: "先看第一个条件，再看第二个条件。",
+      parentPrompt: "问她：它满足了哪两个条件？哪个选项只满足了一个？",
+      abilityTags: ["多条件判断", "分类"],
+    });
+  });
+
+  ["红色", "蓝色", "绿色", "黄色"].forEach((name, index) => {
+    const tokens = ["🔴", "🔵", "🟢", "🟡"];
+    const differentToken = tokens[(index + 1) % tokens.length];
+    rounds.push({
+      level: "L5",
+      prompt: `A 和 C 都是${name}。哪一张颜色不一样？`,
+      instruction: "先找到一样的两张，再找不一样的那张。",
       visualGroups: [
-        { label: "A", items: [tokens[index]] },
-        { label: "B", items: [tokens[answerIndex]] },
-        { label: "C", items: [tokens[index]] },
+        { label: "A", items: [colorTokenByName[name]] },
+        { label: "B", items: [differentToken] },
+        { label: "C", items: [colorTokenByName[name]] },
       ],
       choices: [
         { label: "A", value: "A" },
@@ -831,13 +891,13 @@ function makeSorterRounds(): RoundInput[] {
         { label: "C", value: "C" },
       ],
       answer: "B",
-      success: `对，这个不是${name}的。`,
-      retry: "看到“不是”，要先停一下再选。",
-      parentPrompt: "问她：你是不是很想点题目里说的那个颜色？",
+      success: `B 的颜色不一样。A 和 C 都是${name}。`,
+      retry: "先比 A 和 C，再看 B 的颜色是不是不同。",
+      parentPrompt: "问她：哪两张颜色一样？哪一张不一样？",
       abilityTags: ["认知灵活性"],
     });
   });
-  return repeatTo(rounds, 24);
+  return rounds;
 }
 
 function makeStopThinkRounds(): RoundInput[] {
@@ -892,11 +952,11 @@ function makeOrderRounds(): RoundInput[] {
       note: "2 步必要条件：找到开门工具，再完成目标。",
     },
     {
-      prompt: "小鱼离开水了，先做什么？",
+      prompt: "小鱼在岸上，需要回到水里，先做什么？",
       seq: ["小鱼在岸上", "?", "🌊"],
       sceneImage: orderScenes.animalHabitatPairs,
       answer: "carry",
-      choices: [["轻轻放回水里", "carry"], ["先找小河", "find-water"], ["先用杯子装水", "cup-water"]],
+      choices: [["轻轻放回水里", "carry"], ["继续看着", "watch"], ["拿杯子接水", "cup-water"]],
       success: "先轻轻放回水里，小鱼才安全。",
       note: "2 步生活常识：先处理最紧急的需要。",
     },
@@ -904,11 +964,11 @@ function makeOrderRounds(): RoundInput[] {
 
   const threeStep = [
     {
-      prompt: "想让花开出来，待补位置应该是什么？",
-      seq: ["?", "🌱", "🌼"],
+      prompt: "花盆是空的，想让花开出来，第一步做什么？",
+      seq: ["空花盆", "?", "🌱", "🌼"],
       sceneImage: orderScenes.plantGrowthGarden,
       answer: "seed",
-      choices: [["种下种子", "seed"], ["先浇水", "water"], ["先摘花", "pick-flower"]],
+      choices: [["种下种子", "seed"], ["只给空土浇水", "water"], ["直接等开花", "wait-flower"]],
       success: "先种下种子，然后发芽，最后开花。",
       note: "3 步自然顺序：起点、变化、结果要连起来。",
     },
@@ -934,11 +994,11 @@ function makeOrderRounds(): RoundInput[] {
 
   const fourStep = [
     {
-      prompt: "玩具散了，下一步应该做什么？",
+      prompt: "玩具散了，想按种类收好，先做什么？",
       seq: ["玩具散了", "?", "放进盒子", "整齐"],
       sceneImage: orderScenes.tidyPlayroomBlocks,
       answer: "sort",
-      choices: [["先分类", "sort"], ["先放进盒子", "box"], ["先摆整齐", "tidy"]],
+      choices: [["先分类", "sort"], ["随便塞进盒子", "box"], ["重新弄乱", "mess"]],
       success: "先分类，再放进盒子，最后变整齐。",
       note: "4 步整理流程：先按类别处理，再收纳到目标位置。",
     },
@@ -952,11 +1012,11 @@ function makeOrderRounds(): RoundInput[] {
       note: "4 步安全流程：先观察信号，再决定行动。",
     },
     {
-      prompt: "小猫要喝水，中间少了哪一步？",
-      seq: ["🐱", "先拿杯子", "?", "🥤"],
+      prompt: "小猫要喝水，拿到杯子后还缺哪一步？",
+      seq: ["🐱", "先拿杯子", "?", "喝水"],
       sceneImage: orderScenes.snackWashHands,
       answer: "pour",
-      choices: [["先倒水", "pour"], ["再拿杯子", "cup-again"], ["直接给空杯子", "empty-cup"]],
+      choices: [["先倒水", "pour"], ["再拿一个杯子", "cup-again"], ["端空杯子过去", "empty-cup"]],
       success: "先拿杯子，再倒水，小猫才能喝。",
       note: "4 步工具流程：先准备容器，再加入需要的东西。",
     },
@@ -992,7 +1052,118 @@ function makeOrderRounds(): RoundInput[] {
     },
   ];
 
-  return repeatTo([...twoStep, ...threeStep, ...fourStep, ...fiveStep].map((scene, index) => {
+  const dailyPlans = [
+    {
+      prompt: "上课要写字，先拿什么最合适？",
+      seq: ["上课", "?", "写字"],
+      sceneImage: orderScenes.schoolbagPacking,
+      answer: "pencil",
+      choices: [["铅笔", "pencil"], ["玩具车", "car"], ["帽子", "hat"]],
+      success: "写字前先拿铅笔最合适。",
+      note: "2 步用途判断：先找和目标动作最直接相关的工具。",
+    },
+    {
+      prompt: "书要带去学校，应该先放进哪里？",
+      seq: ["书本", "?", "去学校"],
+      sceneImage: orderScenes.schoolbagPacking,
+      answer: "bag",
+      choices: [["书包", "bag"], ["饭盒", "lunch"], ["水壶", "bottle"]],
+      success: "书本要先放进书包，才方便带去学校。",
+      note: "2 步容器关系：先找能装目标物的地方。",
+    },
+    {
+      prompt: "下雨要出门，先准备什么？",
+      seq: ["下雨", "?", "出门"],
+      sceneImage: orderScenes.schoolbagPacking,
+      answer: "raincoat",
+      choices: [["雨衣", "raincoat"], ["帽子", "hat"], ["足球", "ball"]],
+      success: "下雨出门先准备雨衣，身体才不容易淋湿。",
+      note: "2 步生活条件：根据天气先准备合适物品。",
+    },
+    {
+      prompt: "桌上有饼干，想干净地吃，先拿什么？",
+      seq: ["饼干", "?", "吃"],
+      sceneImage: orderScenes.snackWashHands,
+      answer: "plate",
+      choices: [["拿盘子", "plate"], ["拿足球", "ball"], ["拿雨衣", "raincoat"]],
+      success: "先拿盘子，再拿饼干吃更干净。",
+      note: "3 步工具准备：先准备承接食物的工具。",
+    },
+    {
+      prompt: "手上有泥，想拿点心，第一步是什么？",
+      seq: ["手脏", "?", "拿饼干"],
+      sceneImage: orderScenes.snackWashHands,
+      answer: "wash",
+      choices: [["先洗手", "wash"], ["先拿饼干", "cookie"], ["先吃饼干", "eat"]],
+      success: "手脏了先洗手，再拿点心。",
+      note: "3 步卫生流程：先满足卫生条件，再接触食物。",
+    },
+    {
+      prompt: "杯子是空的，想喝水，先做什么？",
+      seq: ["杯子", "?", "喝水"],
+      sceneImage: orderScenes.snackWashHands,
+      answer: "pour",
+      choices: [["先倒水", "pour"], ["再拿一个杯子", "cup-again"], ["端空杯子过去", "empty-cup"]],
+      success: "空杯子要先倒水，才能喝。",
+      note: "3 步工具流程：容器准备好后，还要加入需要的东西。",
+    },
+    {
+      prompt: "路口是红灯，想安全过马路，先做什么？",
+      seq: ["路口", "🔴", "?"],
+      sceneImage: orderScenes.trafficCrosswalk,
+      answer: "stop",
+      choices: [["停", "stop"], ["走", "go"], ["拍手", "clap"]],
+      success: "红灯时先停，等能走的时候再过马路。",
+      note: "3 步安全流程：先按信号停下，再等待条件变化。",
+    },
+    {
+      prompt: "路口要过马路，第一步先看什么？",
+      seq: ["路口", "?", "走过去"],
+      sceneImage: orderScenes.trafficCrosswalk,
+      answer: "look",
+      choices: [["先看灯", "look"], ["直接走过去", "walk"], ["闭眼往前走", "blind"]],
+      success: "过马路前先看灯，再决定能不能走。",
+      note: "3 步安全流程：先观察，再行动。",
+    },
+    {
+      prompt: "积木散在地上，想重新搭塔，先做什么？",
+      seq: ["🧱倒了", "?", "高塔"],
+      sceneImage: orderScenes.blockTowerRebuild,
+      answer: "pick",
+      choices: [["先捡积木", "pick"], ["直接搭高塔", "build"], ["重新弄乱", "mess"]],
+      success: "先把积木捡起来，才好重新搭塔。",
+      note: "3 步修复流程：先整理材料，再完成目标。",
+    },
+    {
+      prompt: "小兔在河边，胡萝卜在对岸，先解决什么？",
+      seq: ["🐰", "🌊", "?", "🥕"],
+      sceneImage: orderScenes.bridgeRiverPlanks,
+      answer: "bridge",
+      choices: [["先搭桥", "bridge"], ["先拿胡萝卜", "carrot"], ["站在岸边等", "wait"]],
+      success: "小河挡住了路，要先搭桥。",
+      note: "4 步障碍流程：先处理挡路条件，再去拿目标物。",
+    },
+    {
+      prompt: "花园里要照顾小芽，下一步做什么更合适？",
+      seq: ["🌱", "?", "🌼"],
+      sceneImage: orderScenes.plantGrowthGarden,
+      answer: "water",
+      choices: [["先浇水", "water"], ["先摘花", "pick"], ["直接等开花", "wait"]],
+      success: "小芽需要照顾，浇水以后更可能长成花。",
+      note: "3 步自然流程：已有小芽时，下一步是照顾它继续长。",
+    },
+    {
+      prompt: "玩具已经分好类了，下一步做什么？",
+      seq: ["先分类", "?", "整齐"],
+      sceneImage: orderScenes.tidyPlayroomBlocks,
+      answer: "box",
+      choices: [["先放进盒子", "box"], ["重新弄乱", "mess"], ["先拿饼干", "cookie"]],
+      success: "已经分类了，下一步放进盒子，房间就更整齐。",
+      note: "4 步整理流程：保留已经完成的步骤，再做下一步。",
+    },
+  ];
+
+  return [...twoStep, ...threeStep, ...fourStep, ...fiveStep, ...dailyPlans].map((scene, index) => {
     const stepCount = Number(scene.note.match(/^(\d+)/)?.[1] ?? scene.seq.length);
     const sceneImage = "sceneImage" in scene ? scene.sceneImage : undefined;
     return {
@@ -1009,7 +1180,7 @@ function makeOrderRounds(): RoundInput[] {
       parentPrompt: `请她用“先、然后、再、最后”复述这 ${stepCount} 步。`,
       abilityTags: ["顺序推理", stepCount >= 5 ? "多步计划" : stepCount >= 4 ? "生活流程" : "两步计划"],
     };
-  }), 24);
+  });
 }
 
 function makeStoryEvidenceRounds(): RoundInput[] {

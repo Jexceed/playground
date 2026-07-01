@@ -56,8 +56,15 @@ export function App() {
       <section className="layout">
         <nav className="world-nav" aria-label="主题地图">
           <div className="sidebar-brand">
-            <p className="eyebrow">今日探险</p>
-            <h1>小小思考岛</h1>
+            <span className="brand-mark" aria-hidden="true">
+              <span />
+              <span />
+              <span />
+            </span>
+            <div>
+              <h1>小小思考岛</h1>
+              <p>亲子思维游戏</p>
+            </div>
           </div>
           {worlds.map((world) => (
             <button

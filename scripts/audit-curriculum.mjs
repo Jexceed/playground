@@ -40,6 +40,20 @@ const visualRuleHints = [
 ];
 
 const problems = [];
+const forbiddenTextPatterns = [
+  { pattern: /平常规则/, reason: "use natural wording such as 按红绿灯走" },
+  { pattern: /小卡片/, reason: "avoid vague filler labels" },
+  { pattern: /数一数小路/, reason: "the counting game title should stay concise" },
+  { pattern: /草莓篮/, reason: "do not mention baskets when no basket is shown" },
+  { pattern: /不是[红蓝绿黄]色的/, reason: "use clearer comparison wording for young children" },
+];
+const duplicateSensitiveGameIds = new Set([
+  "math-subitize-match",
+  "logic-pattern-train",
+  "logic-sorter-switch",
+  "logic-stop-think",
+  "logic-order-plan",
+]);
 const counts = games.reduce(
   (acc, game) => {
     acc.totalGames += 1;
@@ -52,10 +66,30 @@ const counts = games.reduce(
 
 for (const game of games) {
   if (!game.rounds.length) problems.push(`${game.id}: no rounds`);
+  const roundSignatures = new Map();
   for (const round of game.rounds) {
     const context = `${game.id}/${round.id}`;
+    if (duplicateSensitiveGameIds.has(game.id)) {
+      const signature = JSON.stringify([
+        round.prompt,
+        round.instruction,
+        round.sequence,
+        round.visualGroups,
+        round.choices.map((choice) => choice.label),
+        round.answer,
+      ]);
+      const firstSeen = roundSignatures.get(signature);
+      if (firstSeen) {
+        problems.push(`${context}: duplicates ${firstSeen}`);
+      } else {
+        roundSignatures.set(signature, context);
+      }
+    }
     for (const field of ["prompt", "instruction", "success", "retry", "parentPrompt"]) {
       if (!round[field]?.trim()) problems.push(`${context}: missing ${field}`);
+      for (const { pattern, reason } of forbiddenTextPatterns) {
+        if (pattern.test(round[field] ?? "")) problems.push(`${context}: forbidden wording in ${field}: ${reason}`);
+      }
     }
     if (!round.difficultyNote?.trim()) problems.push(`${context}: missing difficultyNote`);
     if (!round.choices.some((choice) => choice.value === round.answer)) {

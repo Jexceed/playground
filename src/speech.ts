@@ -19,20 +19,21 @@ export async function speak(text: string, lang = "zh-CN") {
   await loadVoiceManifest();
   const src = voiceMap[clean] ?? voiceMap[text];
   const segmentSrcs = voiceSegments[clean] ?? voiceSegments[text];
-  const useChunkedSpeech = shouldSplitLongLocalAudio(clean);
   speechRun += 1;
   activeAudio?.pause();
   activeAudio = null;
 
   if (segmentSrcs?.length) {
     window.speechSynthesis?.cancel();
+    recordLocalVoiceHit("voice-segments");
     recordSpeechSource("voice-segments");
     void playAudioSegments(segmentSrcs, speechRun);
     return;
   }
 
-  if (src && (!useChunkedSpeech || !("speechSynthesis" in window))) {
+  if (src) {
     window.speechSynthesis?.cancel();
+    recordLocalVoiceHit(src);
     recordSpeechSource(src);
     const audio = new Audio(src);
     const run = speechRun;
@@ -40,6 +41,7 @@ export async function speak(text: string, lang = "zh-CN") {
     const fallbackToSpeechSynthesis = () => {
       if (fellBack || run !== speechRun || !("speechSynthesis" in window)) return;
       fellBack = true;
+      recordSpeechFallback("local-audio-failed");
       recordSpeechSource("speechSynthesis");
       void speakChunks(splitSpeechText(clean), lang, run);
     };
@@ -56,6 +58,7 @@ export async function speak(text: string, lang = "zh-CN") {
 
   if ("speechSynthesis" in window) {
     const run = speechRun;
+    recordSpeechFallback(src ? "local-audio-skipped" : "no-local-audio");
     recordSpeechSource("speechSynthesis");
     window.speechSynthesis.cancel();
     void speakChunks(splitSpeechText(clean), lang, run);
@@ -64,11 +67,6 @@ export async function speak(text: string, lang = "zh-CN") {
 
   recordSpeechSource("tone");
   playTone(clean.includes("对") || clean.includes("完成") || clean.includes("成功") ? "success" : "notice");
-}
-
-function shouldSplitLongLocalAudio(text: string) {
-  if (Array.from(text).length <= 34) return false;
-  return splitSpeechText(text).length > 1;
 }
 
 async function loadVoiceManifest() {
@@ -276,6 +274,17 @@ function delay(ms: number) {
 function recordSpeechSource(source: string) {
   if (typeof document === "undefined") return;
   document.documentElement.dataset.lastSpeechSource = source;
+}
+
+function recordLocalVoiceHit(source: string) {
+  if (typeof document === "undefined") return;
+  document.documentElement.dataset.lastLocalVoiceSource = source;
+  delete document.documentElement.dataset.lastSpeechFallback;
+}
+
+function recordSpeechFallback(reason: string) {
+  if (typeof document === "undefined") return;
+  document.documentElement.dataset.lastSpeechFallback = reason;
 }
 
 type VoiceManifest = {
