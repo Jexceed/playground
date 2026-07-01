@@ -7,21 +7,30 @@
 - 题目要像成年人自然对孩子说话，避免“平常规则”“小卡片”这类含糊说法。
 - 题干、图面、选项必须指向同一件事；如果图里没有篮子，文案里不要写“草莓篮”。
 - 干扰项要代表常见误判或次优选择，不能靠绕口令、双重否定或故意刁难。
-- `math-subitize-match`、`logic-pattern-train`、`logic-sorter-switch`、`logic-stop-think`、`logic-order-plan` 不允许用完全相同题面复制凑数。
+- 所有题组都不允许用完全相同题面复制凑数；题量宁可少，也不要靠重复制造规模。
+- `repeatTo` 只负责去重后取目标数量，不再循环复制题目。
 - 数数图卡每行固定 5 个，帮助孩子按 5 或 10 建立数量记忆。
 
 ## 语音
 
-- 当前统一声音是 Edge TTS `zh-CN-XiaoyiNeural`。
+- 当前可审计语音包可以来自两条链路：Edge TTS 固定声库，或 `local-tts/GENERATION.md` 描述的本地 F5-TTS 参考音色生成。
+- 如果使用 Edge TTS，优先用更清楚的 `zh-CN-XiaoxiaoNeural`；不要混用多个 Edge voice。
 - 题库文案变更后必须运行：
 
 ```bash
 pnpm export:voice-lines
-pnpm generate:edge-voices -- --python ./local-tts/.venv/bin/python --quiet --retries 3
+pnpm generate:edge-voices -- --voice zh-CN-XiaoxiaoNeural --rate -12% --pitch +2Hz --python ./local-tts/.venv/bin/python --quiet --retries 3
+```
+
+- 如果使用 F5-TTS，必须先准备 3-15 秒清晰参考音频和完全准确的参考文本，再运行：
+
+```bash
+pnpm export:voice-lines
+pnpm generate:f5-voices -- --ref-audio /path/to/ref.wav --ref-text "参考音频里实际说的话" --voice family-teacher --quiet
 ```
 
 - 应用运行时只要本地 mp3 存在，就优先播放本地 mp3；浏览器 TTS 只作为缺文件时的兜底。
-- `local-tts/GENERATION.md` 的 F5-TTS 方案只有在有稳定参考音频和精确参考文本时使用；没有参考声音时不要混入不同音色。
+- `local-tts/GENERATION.md` 的 F5-TTS 方案可以生成同一参考音色，但参考文本不准时会明显跑偏；没有可靠参考声音时不要伪装成 F5 生成。
 
 ## 图片
 
@@ -47,8 +56,8 @@ pnpm audit:curriculum
 
 并检查：
 
-- `public/audio/voice/manifest.json` 的 `provider` 仍是 `edge-tts Python package`。
-- `voice` 仍是 `zh-CN-XiaoyiNeural`。
+- `public/audio/voice/manifest.json` 的 `provider` 是 `edge-tts Python package` 或 `F5-TTS local`。
+- Edge 包不要混用多个 `voice`；F5 包必须写入 `referenceAudio` 和 `referenceText`。
 - `count` 和 `requestedCount` 一致。
 - `failures` 为空。
 

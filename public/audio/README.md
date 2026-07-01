@@ -38,11 +38,8 @@ Current voice coverage:
 
 Current generated voice pack:
 
-- 1495 Mandarin mp3 entries referenced in the current Edge TTS manifest.
-- Voice: `zh-CN-XiaoyiNeural`.
-- Rate: `-10%`.
-- Pitch: `+4Hz`.
-- Coverage: all 1495 exported curriculum and app-level voice lines.
+- Mandarin entries referenced in the current voice manifest.
+- Supported providers: Edge TTS fixed voice pack, or local F5-TTS reference-voice pack.
 - Current manifest has 0 skipped lines. The browser speech-synthesis fallback remains only as a safety net.
 - Long local prompt lines are not played as one uninterrupted mp3. The app can use optional `segmentEntries` from the manifest; if no segment mp3 pack is available, long prompt lines fall back to the existing split-sentence browser speech path so a child does not have to listen to a 10+ second single clip.
 
@@ -70,13 +67,19 @@ Run this to generate online neural Mandarin mp3 files:
 
 ```bash
 python3 -m pip install --user --upgrade edge-tts
-pnpm generate:edge-voices -- --voice zh-CN-XiaoyiNeural --rate -10% --pitch +4Hz --quiet --retries 8
+pnpm generate:edge-voices -- --voice zh-CN-XiaoxiaoNeural --rate -12% --pitch +2Hz --quiet --retries 8
 ```
 
-`zh-CN-XiaoyiNeural` is a more cartoon-like Mandarin voice. `zh-CN-XiaoxiaoNeural` is clearer and more teacher-like:
+`zh-CN-XiaoyiNeural` is more cartoon-like. `zh-CN-XiaoxiaoNeural` is clearer and more teacher-like:
 
 ```bash
 pnpm generate:edge-voices -- --voice zh-CN-XiaoxiaoNeural --rate -12% --pitch +2Hz --quiet --retries 8
+```
+
+Run this to generate a local F5-TTS reference-voice pack. F5 needs an accurate transcript of the reference audio; do not guess it:
+
+```bash
+pnpm generate:f5-voices -- --ref-audio /path/to/ref.wav --ref-text "参考音频里实际说的话" --voice family-teacher --quiet
 ```
 
 Run this to generate optional local mp3 segments for long prompt lines:

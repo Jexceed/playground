@@ -493,13 +493,13 @@ function makeSubitizeRounds(): RoundInput[] {
   ];
   return layouts.map((layout) => ({
     level: layout.count <= 3 ? "L2" : layout.count <= 5 ? "L3" : "L4",
-    prompt: "你能一眼看出有几个吗？",
-    instruction: layout.hint,
+    prompt: "这一眼有几个？",
+    instruction: "先看整体，不急着一个个点。",
     visualGroups: [{ label: "看一眼", items: subitizePattern(layout.count, layout.token, layout.variant), layout: "subitize" }],
     choices: numberChoices(layout.count, 1, 6),
     answer: String(layout.count),
-    success: `是 ${layout.count} 个。${layout.hint}。`,
-    retry: `可以先看成 ${layout.hint}，再确认。`,
+    success: `是 ${layout.count} 个。你可以看成${layout.hint}。`,
+    retry: `再看整体形状：${layout.hint}。`,
     parentPrompt: "问她：你看到了哪两小堆？它们合起来是几？",
     abilityTags: ["小数量辨认", "数量结构"],
   }));
@@ -2514,7 +2514,7 @@ function makeNumberPatternRounds(): RoundInput[] {
     { seq: ["2", "4", "6", "8", "?"], answer: "10", rule: "每次跳 2 格。", level: "L5" },
     { seq: ["5", "4", "3", "2", "?"], answer: "1", rule: "每次少 1。", level: "L4" },
     { seq: ["1", "3", "5", "7", "?"], answer: "9", rule: "隔一个数看，是单数小路。", level: "L6" },
-    { seq: ["2", "4", "6", "8", "?"], answer: "10", rule: "这些都是双数，每次多 2。", level: "L6" },
+    { seq: ["0", "2", "4", "6", "?"], answer: "8", rule: "这些都是双数，每次多 2。", level: "L6" },
     { seq: ["1", "2", "1", "2", "?"], answer: "1", rule: "1 和 2 轮流出现。", level: "L4" },
     { seq: ["3", "3", "4", "4", "?"], answer: "5", rule: "每个数出现两次，再换下一个。", level: "L5" },
     { seq: ["1", "1", "2", "3", "3", "?"], answer: "4", rule: "先看颜色，再看数字往前走。", level: "L6" },
@@ -3620,10 +3620,29 @@ function repeatPattern<T>(unit: T[], count: number) {
 
 function repeatTo(rounds: RoundInput[], target: number) {
   const output: RoundInput[] = [];
-  for (let index = 0; output.length < target; index++) {
-    output.push({ ...rounds[index % rounds.length], id: `${rounds[index % rounds.length].id ?? "round"}-${index + 1}` });
+  const seen = new Set<string>();
+  for (const round of rounds) {
+    const signature = roundSignature(round);
+    if (seen.has(signature)) continue;
+    seen.add(signature);
+    output.push(round);
+    if (output.length >= target) break;
   }
   return output;
+}
+
+function roundSignature(round: RoundInput) {
+  return JSON.stringify([
+    round.prompt,
+    round.instruction,
+    round.sequence,
+    round.visualGroups,
+    round.grid,
+    round.matrix,
+    round.memory,
+    round.choices.map((choice) => choice.label),
+    round.answer,
+  ]);
 }
 
 function choice(value: string) {

@@ -47,13 +47,6 @@ const forbiddenTextPatterns = [
   { pattern: /草莓篮/, reason: "do not mention baskets when no basket is shown" },
   { pattern: /不是[红蓝绿黄]色的/, reason: "use clearer comparison wording for young children" },
 ];
-const duplicateSensitiveGameIds = new Set([
-  "math-subitize-match",
-  "logic-pattern-train",
-  "logic-sorter-switch",
-  "logic-stop-think",
-  "logic-order-plan",
-]);
 const counts = games.reduce(
   (acc, game) => {
     acc.totalGames += 1;
@@ -69,21 +62,22 @@ for (const game of games) {
   const roundSignatures = new Map();
   for (const round of game.rounds) {
     const context = `${game.id}/${round.id}`;
-    if (duplicateSensitiveGameIds.has(game.id)) {
-      const signature = JSON.stringify([
-        round.prompt,
-        round.instruction,
-        round.sequence,
-        round.visualGroups,
-        round.choices.map((choice) => choice.label),
-        round.answer,
-      ]);
-      const firstSeen = roundSignatures.get(signature);
-      if (firstSeen) {
-        problems.push(`${context}: duplicates ${firstSeen}`);
-      } else {
-        roundSignatures.set(signature, context);
-      }
+    const signature = JSON.stringify([
+      round.prompt,
+      round.instruction,
+      round.sequence,
+      round.visualGroups,
+      round.grid,
+      round.matrix,
+      round.memory,
+      round.choices.map((choice) => choice.label),
+      round.answer,
+    ]);
+    const firstSeen = roundSignatures.get(signature);
+    if (firstSeen) {
+      problems.push(`${context}: duplicates ${firstSeen}`);
+    } else {
+      roundSignatures.set(signature, context);
     }
     for (const field of ["prompt", "instruction", "success", "retry", "parentPrompt"]) {
       if (!round[field]?.trim()) problems.push(`${context}: missing ${field}`);
@@ -129,6 +123,14 @@ if (existsSync("public/audio/voice-lines.json")) {
 
 if (existsSync("public/audio/voice/manifest.json")) {
   const manifest = JSON.parse(readFileSync("public/audio/voice/manifest.json", "utf8"));
+  const allowedVoiceProviders = new Set(["edge-tts Python package", "F5-TTS local"]);
+  if (!allowedVoiceProviders.has(manifest.provider)) {
+    problems.push(`audio manifest provider is not an approved local pack generator: ${manifest.provider ?? "missing"}`);
+  }
+  if (manifest.provider === "F5-TTS local") {
+    if (!manifest.referenceAudio?.trim()) problems.push("F5 audio manifest missing referenceAudio");
+    if (!manifest.referenceText?.trim()) problems.push("F5 audio manifest missing referenceText");
+  }
   if (!Array.isArray(manifest.entries)) {
     problems.push("audio manifest has no entries array");
   } else {

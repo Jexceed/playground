@@ -12,6 +12,7 @@
     "export:voice-lines": "node scripts/export-voice-lines.mjs",
     "generate:mac-voices": "node scripts/generate-mac-voices.mjs",
     "generate:edge-voices": "node scripts/generate-edge-voices.mjs",
+    "generate:f5-voices": "node scripts/generate-f5-voices.mjs",
     "generate:voice-segments": "node scripts/generate-voice-segments.mjs"
   },
   "dependencies": {
