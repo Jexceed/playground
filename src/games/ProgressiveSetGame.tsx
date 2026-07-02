@@ -354,7 +354,7 @@ function RoundBoard({
       )}
 
       {round.visualGroups && (
-        <div className="visual-groups">
+        <div className={visualGroupClasses(round.visualGroups)}>
           {round.visualGroups.map((group) => (
             <div className="visual-group" key={group.label}>
               <strong>{group.label}</strong>
@@ -377,6 +377,15 @@ function RoundBoard({
       )}
     </section>
   );
+}
+
+function visualGroupClasses(groups: NonNullable<GameRound["visualGroups"]>) {
+  const allCounting = groups.every((group) => group.layout === "counting");
+  return [
+    "visual-groups",
+    allCounting && groups.length === 1 ? "visual-groups-counting-single" : "",
+    allCounting && groups.length > 1 ? "visual-groups-counting-choice" : "",
+  ].filter(Boolean).join(" ");
 }
 
 function CountingToken({ value }: { value: string }) {
