@@ -723,22 +723,22 @@ button:focus-visible {
 }
 
 .visual-groups-counting-choice {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   align-items: stretch;
-  gap: 12px;
+  gap: 10px;
 }
 
 .visual-groups-counting-choice .visual-group {
   min-height: 0;
-  padding: 12px 14px 14px;
+  padding: 10px 8px 12px;
   border-color: rgba(216, 208, 194, 0.58);
   background: rgba(255, 253, 247, 0.7);
 }
 
 .visual-groups-counting-choice .visual-group:nth-child(3):last-child {
-  grid-column: 1 / -1;
-  width: calc((100% - 12px) / 2);
-  justify-self: center;
+  grid-column: auto;
+  width: auto;
+  justify-self: stretch;
 }
 
 .visual-groups-counting-choice .visual-group strong {
@@ -907,6 +907,11 @@ button:focus-visible {
   gap: 7px 9px;
 }
 
+.visual-groups-counting-choice .object-row-counting {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 6px 4px;
+}
+
 .visual-group .object-row .visual-token {
   width: 100%;
   min-width: 0;
@@ -930,6 +935,8 @@ button:focus-visible {
   display: grid;
   place-items: center;
   width: 100%;
+  min-width: 0;
+  min-height: 0;
   aspect-ratio: 1;
   padding: 0;
   border: 0;
@@ -951,8 +958,8 @@ button:focus-visible {
 }
 
 .visual-groups-counting-choice .counting-token .kid-illustration {
-  width: min(54px, 100%);
-  height: min(54px, 100%);
+  width: min(42px, 100%);
+  height: min(42px, 100%);
 }
 
 .subitize-peek {
@@ -1434,12 +1441,26 @@ button:focus-visible {
   }
 
   .visual-groups-counting-choice {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 6px;
+  }
+
+  .visual-groups-counting-choice .visual-group {
+    padding: 8px 4px 10px;
+  }
+
+  .visual-groups-counting-choice .object-row-counting {
+    gap: 4px 2px;
+  }
+
+  .visual-groups-counting-choice .counting-token .kid-illustration {
+    width: min(30px, 100%);
+    height: min(30px, 100%);
   }
 
   .visual-groups-counting-choice .visual-group:nth-child(3):last-child {
     grid-column: auto;
-    width: 100%;
+    width: auto;
   }
 
   .round-board-image-groups {
@@ -1564,6 +1585,16 @@ button:focus-visible {
   .visual-group .object-row-counting {
     grid-template-columns: repeat(5, minmax(38px, 1fr));
     gap: 6px;
+  }
+
+  .visual-groups-counting-choice .object-row-counting {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 3px 1px;
+  }
+
+  .visual-groups-counting-choice .counting-token .kid-illustration {
+    width: min(24px, 100%);
+    height: min(24px, 100%);
   }
 
   .visual-group .object-row .visual-token {
