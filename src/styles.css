@@ -568,28 +568,41 @@ button:focus-visible {
 .scene-image-card {
   overflow: hidden;
   width: min(100%, 760px);
+  aspect-ratio: 16 / 9;
   margin: 0 auto;
   display: grid;
   place-items: center;
-  border: 2px solid rgba(216, 208, 194, 0.86);
+  border: 0;
   border-radius: 8px;
-  background: #fffdf7;
-  box-shadow: 0 8px 18px rgba(51, 45, 34, 0.1);
+  background: transparent;
+  box-shadow: none;
 }
 
 .scene-image-card img {
   display: block;
   width: 100%;
-  height: auto;
-  max-height: clamp(210px, 30vw, 360px);
-  object-fit: contain;
+  height: 100%;
+  max-height: none;
+  object-fit: cover;
   object-position: center;
 }
 
 .round-board-with-image {
   gap: 14px;
   min-height: 330px;
-  padding: 14px;
+  padding: 12px;
+  background: #f5ead8;
+}
+
+.round-board-image-only {
+  min-height: 0;
+  padding: 0;
+  background: transparent;
+}
+
+.round-board-image-only .scene-image-card {
+  width: 100%;
+  border-radius: 6px;
 }
 
 .round-board-with-image .sequence-row {
@@ -623,16 +636,16 @@ button:focus-visible {
 }
 
 .round-board-image-groups .scene-image-card {
-  width: min(100%, 820px);
+  width: min(100%, 860px);
   min-height: 0;
   height: auto;
 }
 
 .round-board-image-groups .scene-image-card img {
-  height: auto;
-  max-height: clamp(240px, 32vw, 390px);
+  height: 100%;
+  max-height: none;
   min-height: 0;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .round-board-image-groups .visual-groups {
@@ -1332,6 +1345,11 @@ button:focus-visible {
     padding: 10px;
   }
 
+  .round-board.round-board-image-only {
+    min-height: 0;
+    padding: 0;
+  }
+
   .round-board-image-groups {
     grid-template-columns: 1fr;
   }
@@ -1342,10 +1360,10 @@ button:focus-visible {
   }
 
   .round-board-image-groups .scene-image-card img {
-    height: auto;
-    max-height: clamp(190px, 48vw, 320px);
+    height: 100%;
+    max-height: none;
     min-height: 0;
-    object-fit: contain;
+    object-fit: cover;
   }
 
   .stage-header {

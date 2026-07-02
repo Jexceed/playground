@@ -313,15 +313,24 @@ function RoundBoard({
   onSubitizePeek?: () => void;
 }) {
   const scene = sceneForGame(gameId);
+  const hasOnlySceneImage = Boolean(
+    round.sceneImage &&
+      !round.visualGroups &&
+      !round.sequence &&
+      !round.grid &&
+      !round.matrix &&
+      !round.memory,
+  );
   const boardClasses = [
     "round-board",
     `round-scene-${scene}`,
     round.sceneImage ? "round-board-with-image" : "",
+    hasOnlySceneImage ? "round-board-image-only" : "",
     round.sceneImage && round.visualGroups ? "round-board-image-groups" : "",
   ].filter(Boolean).join(" ");
   return (
     <section className={boardClasses} aria-label="题目画面">
-      <SceneBackdrop scene={scene} />
+      {!round.sceneImage && <SceneBackdrop scene={scene} />}
       {round.sceneImage && (
         <figure className="scene-image-card">
           <img src={round.sceneImage.src} alt={round.sceneImage.alt} />
