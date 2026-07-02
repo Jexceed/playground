@@ -12,7 +12,7 @@ export type RoundOption = {
 export type RoundVisualGroup = {
   label: string;
   items: string[];
-  layout?: "subitize";
+  layout?: "counting" | "subitize";
 };
 
 export type RoundGrid = {

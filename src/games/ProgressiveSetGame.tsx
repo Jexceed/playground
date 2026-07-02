@@ -361,9 +361,13 @@ function RoundBoard({
               {group.layout === "subitize" ? (
                 <SubitizeFrame items={group.items} visible={subitizeVisible} onPeek={onSubitizePeek} />
               ) : (
-                <div className="object-row">
+                <div className={`object-row ${group.layout === "counting" ? "object-row-counting" : ""}`}>
                   {group.items.map((item, index) => (
-                    <VisualToken key={`${item}-${index}`} value={item} />
+                    group.layout === "counting" ? (
+                      <CountingToken key={`${item}-${index}`} value={item} />
+                    ) : (
+                      <VisualToken key={`${item}-${index}`} value={item} />
+                    )
                   ))}
                 </div>
               )}
@@ -372,6 +376,16 @@ function RoundBoard({
         </div>
       )}
     </section>
+  );
+}
+
+function CountingToken({ value }: { value: string }) {
+  const meta = visualMetaFor(value);
+  const label = meta?.label ?? value;
+  return (
+    <button className="counting-token" type="button" onClick={() => speak(label)} aria-label={label}>
+      {meta ? <VisualGlyph kind={meta.kind} /> : <span aria-hidden="true">{value}</span>}
+    </button>
   );
 }
 

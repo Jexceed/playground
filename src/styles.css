@@ -857,6 +857,12 @@ button:focus-visible {
   width: 100%;
 }
 
+.visual-group .object-row-counting {
+  grid-template-columns: repeat(5, minmax(44px, 58px));
+  justify-content: center;
+  gap: 8px;
+}
+
 .visual-group .object-row .visual-token {
   width: 100%;
   min-width: 0;
@@ -874,6 +880,28 @@ button:focus-visible {
   font-size: 0.68rem;
   line-height: 1.1;
   text-align: center;
+}
+
+.counting-token {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  aspect-ratio: 1;
+  padding: 0;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.counting-token:hover {
+  background: rgba(255, 240, 200, 0.58);
+}
+
+.counting-token .kid-illustration {
+  width: min(58px, 100%);
+  height: min(58px, 100%);
 }
 
 .subitize-peek {
@@ -1469,6 +1497,11 @@ button:focus-visible {
     gap: 6px;
   }
 
+  .visual-group .object-row-counting {
+    grid-template-columns: repeat(5, minmax(38px, 1fr));
+    gap: 6px;
+  }
+
   .visual-group .object-row .visual-token {
     min-height: 78px;
     padding-inline: 2px;
@@ -1477,6 +1510,11 @@ button:focus-visible {
   .visual-group .object-row .kid-illustration {
     width: 48px;
     height: 48px;
+  }
+
+  .counting-token .kid-illustration {
+    width: min(48px, 100%);
+    height: min(48px, 100%);
   }
 
   .visual-group .object-row .visual-token small {
