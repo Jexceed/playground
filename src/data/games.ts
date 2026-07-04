@@ -2589,38 +2589,46 @@ function makeAddressMapRounds(): RoundInput[] {
     { grid: bigGrid, address: "B3", answer: "积木塔", level: "L5" },
     { grid: bigGrid, address: "C2", answer: "小鱼", level: "L6" },
     { grid: bigGrid, address: "D4", answer: "草莓", level: "L6" },
-  ].map((item) => ({
-    level: item.level as AbilityLevel,
-    prompt: `${item.address} 里藏着什么？`,
-    instruction: "先找字母行，再找数字列。",
-    sceneImage,
-    grid: item.grid,
-    choices: choiceSet([item.answer, ...gridDistractors(item.grid, item.answer)]),
-    answer: item.answer,
-    success: `${item.address} 的格子里是${item.answer}。`,
-    retry: "先用手指找到字母，再横着找到数字。",
-    parentPrompt: "请她说：我先找哪一行，再找哪一列。",
-    abilityTags: ["二维定位", "行列对应"],
-  }));
+  ].map((item) => {
+    const row = item.address[0];
+    const column = item.address.slice(1);
+    return {
+      level: item.level as AbilityLevel,
+      prompt: `${item.address} 里藏着什么？`,
+      instruction: "先找字母行，再找数字列。",
+      sceneImage,
+      grid: item.grid,
+      choices: choiceSet([item.answer, ...gridDistractors(item.grid, item.answer)]),
+      answer: item.answer,
+      success: `${item.address} 是 ${row} 行 ${column} 列，格子里是${item.answer}。`,
+      retry: `先找到 ${row} 行，再横着找到 ${column} 列，不要先猜物品。`,
+      parentPrompt: `请她指着 ${row} 行和 ${column} 列交叉的格子，说为什么是${item.answer}。`,
+      abilityTags: ["二维定位", "行列对应"],
+    };
+  });
 
   const findAddress = [
     { grid: smallGrid, target: "小狗", answer: "A2", choices: ["A2", "B1", "C2"], level: "L5" },
     { grid: smallGrid, target: "葡萄", answer: "C3", choices: ["A3", "B3", "C3"], level: "L5" },
     { grid: bigGrid, target: "足球", answer: "A3", choices: ["A3", "B3", "C3"], level: "L6" },
     { grid: bigGrid, target: "蛋糕", answer: "D3", choices: ["C3", "D3", "D4"], level: "L6" },
-  ].map((item) => ({
-    level: item.level as AbilityLevel,
-    prompt: `${item.target}住在哪个地址？`,
-    instruction: "先找到物品，再读左边字母和上面数字。",
-    sceneImage,
-    grid: item.grid,
-    choices: choiceSet(item.choices),
-    answer: item.answer,
-    success: `${item.target}住在 ${item.answer}。`,
-    retry: "找到物品以后，先看这一行的字母，再看这一列的数字。",
-    parentPrompt: "问她：这个地址为什么先说字母，再说数字？",
-    abilityTags: ["位置表达", "二维定位"],
-  }));
+  ].map((item) => {
+    const row = item.answer[0];
+    const column = item.answer.slice(1);
+    return {
+      level: item.level as AbilityLevel,
+      prompt: `${item.target}住在哪个地址？`,
+      instruction: "先找到物品，再读左边字母和上面数字。",
+      sceneImage,
+      grid: item.grid,
+      choices: choiceSet(item.choices),
+      answer: item.answer,
+      success: `${item.target}在 ${row} 行 ${column} 列，所以地址是 ${item.answer}。`,
+      retry: `先在图里找到${item.target}，再读这一行的字母和这一列的数字。`,
+      parentPrompt: `请她指着${item.target}，说它在 ${row} 行、${column} 列，所以地址是 ${item.answer}。`,
+      abilityTags: ["位置表达", "二维定位"],
+    };
+  });
 
   return repeatTo([...findObject, ...findAddress], 24);
 }

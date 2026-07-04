@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-04T15:24:11.872Z",
+  "generatedAt": "2026-07-04T15:35:47.074Z",
   "recommendedVoice": "warm adult female Mandarin, smiling, preschool teacher, 0.85 speed, crisp consonants",
-  "lineCount": 1552,
+  "lineCount": 1572,
   "lines": [
     {
       "id": "game-title-数一数",
@@ -13191,44 +13191,30 @@
       ]
     },
     {
-      "id": "success-a1-的格子里是小鸟",
+      "id": "success-a1-是-a-行-1-列-格子里是小鸟",
       "kind": "success",
-      "text": "A1 的格子里是小鸟。",
+      "text": "A1 是 A 行 1 列，格子里是小鸟。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-address-map/logic-address-map-1"
       ]
     },
     {
-      "id": "retry-先用手指找到字母-再横着找到数字",
+      "id": "retry-先找到-a-行-再横着找到-1-列-不要先猜物品",
       "kind": "retry",
-      "text": "先用手指找到字母，再横着找到数字。",
+      "text": "先找到 A 行，再横着找到 1 列，不要先猜物品。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
-        "logic-address-map/logic-address-map-1",
-        "logic-address-map/logic-address-map-2",
-        "logic-address-map/logic-address-map-3",
-        "logic-address-map/logic-address-map-4",
-        "logic-address-map/logic-address-map-5",
-        "logic-address-map/logic-address-map-6",
-        "logic-address-map/logic-address-map-7",
-        "logic-address-map/logic-address-map-8"
+        "logic-address-map/logic-address-map-1"
       ]
     },
     {
-      "id": "parent-请她说-我先找哪一行-再找哪一列",
+      "id": "parent-请她指着-a-行和-1-列交叉的格子-说为什么是小鸟",
       "kind": "parent",
-      "text": "请她说：我先找哪一行，再找哪一列。",
+      "text": "请她指着 A 行和 1 列交叉的格子，说为什么是小鸟。",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-address-map/logic-address-map-1",
-        "logic-address-map/logic-address-map-2",
-        "logic-address-map/logic-address-map-3",
-        "logic-address-map/logic-address-map-4",
-        "logic-address-map/logic-address-map-5",
-        "logic-address-map/logic-address-map-6",
-        "logic-address-map/logic-address-map-7",
-        "logic-address-map/logic-address-map-8"
+        "logic-address-map/logic-address-map-1"
       ]
     },
     {
@@ -13261,10 +13247,28 @@
       ]
     },
     {
-      "id": "success-a3-的格子里是积木塔",
+      "id": "success-a3-是-a-行-3-列-格子里是积木塔",
       "kind": "success",
-      "text": "A3 的格子里是积木塔。",
+      "text": "A3 是 A 行 3 列，格子里是积木塔。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-address-map/logic-address-map-2"
+      ]
+    },
+    {
+      "id": "retry-先找到-a-行-再横着找到-3-列-不要先猜物品",
+      "kind": "retry",
+      "text": "先找到 A 行，再横着找到 3 列，不要先猜物品。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-address-map/logic-address-map-2"
+      ]
+    },
+    {
+      "id": "parent-请她指着-a-行和-3-列交叉的格子-说为什么是积木塔",
+      "kind": "parent",
+      "text": "请她指着 A 行和 3 列交叉的格子，说为什么是积木塔。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-address-map/logic-address-map-2"
       ]
@@ -13279,10 +13283,28 @@
       ]
     },
     {
-      "id": "success-b2-的格子里是小猫",
+      "id": "success-b2-是-b-行-2-列-格子里是小猫",
       "kind": "success",
-      "text": "B2 的格子里是小猫。",
+      "text": "B2 是 B 行 2 列，格子里是小猫。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-address-map/logic-address-map-3"
+      ]
+    },
+    {
+      "id": "retry-先找到-b-行-再横着找到-2-列-不要先猜物品",
+      "kind": "retry",
+      "text": "先找到 B 行，再横着找到 2 列，不要先猜物品。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-address-map/logic-address-map-3"
+      ]
+    },
+    {
+      "id": "parent-请她指着-b-行和-2-列交叉的格子-说为什么是小猫",
+      "kind": "parent",
+      "text": "请她指着 B 行和 2 列交叉的格子，说为什么是小猫。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-address-map/logic-address-map-3"
       ]
@@ -13297,10 +13319,28 @@
       ]
     },
     {
-      "id": "success-c1-的格子里是书包",
+      "id": "success-c1-是-c-行-1-列-格子里是书包",
       "kind": "success",
-      "text": "C1 的格子里是书包。",
+      "text": "C1 是 C 行 1 列，格子里是书包。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-address-map/logic-address-map-4"
+      ]
+    },
+    {
+      "id": "retry-先找到-c-行-再横着找到-1-列-不要先猜物品",
+      "kind": "retry",
+      "text": "先找到 C 行，再横着找到 1 列，不要先猜物品。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-address-map/logic-address-map-4"
+      ]
+    },
+    {
+      "id": "parent-请她指着-c-行和-1-列交叉的格子-说为什么是书包",
+      "kind": "parent",
+      "text": "请她指着 C 行和 1 列交叉的格子，说为什么是书包。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-address-map/logic-address-map-4"
       ]
@@ -13315,10 +13355,28 @@
       ]
     },
     {
-      "id": "success-a4-的格子里是铅笔",
+      "id": "success-a4-是-a-行-4-列-格子里是铅笔",
       "kind": "success",
-      "text": "A4 的格子里是铅笔。",
+      "text": "A4 是 A 行 4 列，格子里是铅笔。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-address-map/logic-address-map-5"
+      ]
+    },
+    {
+      "id": "retry-先找到-a-行-再横着找到-4-列-不要先猜物品",
+      "kind": "retry",
+      "text": "先找到 A 行，再横着找到 4 列，不要先猜物品。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-address-map/logic-address-map-5"
+      ]
+    },
+    {
+      "id": "parent-请她指着-a-行和-4-列交叉的格子-说为什么是铅笔",
+      "kind": "parent",
+      "text": "请她指着 A 行和 4 列交叉的格子，说为什么是铅笔。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-address-map/logic-address-map-5"
       ]
@@ -13360,10 +13418,28 @@
       ]
     },
     {
-      "id": "success-b3-的格子里是积木塔",
+      "id": "success-b3-是-b-行-3-列-格子里是积木塔",
       "kind": "success",
-      "text": "B3 的格子里是积木塔。",
+      "text": "B3 是 B 行 3 列，格子里是积木塔。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-address-map/logic-address-map-6"
+      ]
+    },
+    {
+      "id": "retry-先找到-b-行-再横着找到-3-列-不要先猜物品",
+      "kind": "retry",
+      "text": "先找到 B 行，再横着找到 3 列，不要先猜物品。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-address-map/logic-address-map-6"
+      ]
+    },
+    {
+      "id": "parent-请她指着-b-行和-3-列交叉的格子-说为什么是积木塔",
+      "kind": "parent",
+      "text": "请她指着 B 行和 3 列交叉的格子，说为什么是积木塔。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-address-map/logic-address-map-6"
       ]
@@ -13378,10 +13454,28 @@
       ]
     },
     {
-      "id": "success-c2-的格子里是小鱼",
+      "id": "success-c2-是-c-行-2-列-格子里是小鱼",
       "kind": "success",
-      "text": "C2 的格子里是小鱼。",
+      "text": "C2 是 C 行 2 列，格子里是小鱼。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-address-map/logic-address-map-7"
+      ]
+    },
+    {
+      "id": "retry-先找到-c-行-再横着找到-2-列-不要先猜物品",
+      "kind": "retry",
+      "text": "先找到 C 行，再横着找到 2 列，不要先猜物品。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-address-map/logic-address-map-7"
+      ]
+    },
+    {
+      "id": "parent-请她指着-c-行和-2-列交叉的格子-说为什么是小鱼",
+      "kind": "parent",
+      "text": "请她指着 C 行和 2 列交叉的格子，说为什么是小鱼。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-address-map/logic-address-map-7"
       ]
@@ -13396,10 +13490,28 @@
       ]
     },
     {
-      "id": "success-d4-的格子里是草莓",
+      "id": "success-d4-是-d-行-4-列-格子里是草莓",
       "kind": "success",
-      "text": "D4 的格子里是草莓。",
+      "text": "D4 是 D 行 4 列，格子里是草莓。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-address-map/logic-address-map-8"
+      ]
+    },
+    {
+      "id": "retry-先找到-d-行-再横着找到-4-列-不要先猜物品",
+      "kind": "retry",
+      "text": "先找到 D 行，再横着找到 4 列，不要先猜物品。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-address-map/logic-address-map-8"
+      ]
+    },
+    {
+      "id": "parent-请她指着-d-行和-4-列交叉的格子-说为什么是草莓",
+      "kind": "parent",
+      "text": "请她指着 D 行和 4 列交叉的格子，说为什么是草莓。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-address-map/logic-address-map-8"
       ]
@@ -13414,36 +13526,30 @@
       ]
     },
     {
-      "id": "success-小狗住在-a2",
+      "id": "success-小狗在-a-行-2-列-所以地址是-a2",
       "kind": "success",
-      "text": "小狗住在 A2。",
+      "text": "小狗在 A 行 2 列，所以地址是 A2。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-address-map/logic-address-map-9"
       ]
     },
     {
-      "id": "retry-找到物品以后-先看这一行的字母-再看这一列的数字",
+      "id": "retry-先在图里找到小狗-再读这一行的字母和这一列的数字",
       "kind": "retry",
-      "text": "找到物品以后，先看这一行的字母，再看这一列的数字。",
+      "text": "先在图里找到小狗，再读这一行的字母和这一列的数字。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
-        "logic-address-map/logic-address-map-9",
-        "logic-address-map/logic-address-map-10",
-        "logic-address-map/logic-address-map-11",
-        "logic-address-map/logic-address-map-12"
+        "logic-address-map/logic-address-map-9"
       ]
     },
     {
-      "id": "parent-问她-这个地址为什么先说字母-再说数字",
+      "id": "parent-请她指着小狗-说它在-a-行-2-列-所以地址是-a2",
       "kind": "parent",
-      "text": "问她：这个地址为什么先说字母，再说数字？",
+      "text": "请她指着小狗，说它在 A 行、2 列，所以地址是 A2。",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-address-map/logic-address-map-9",
-        "logic-address-map/logic-address-map-10",
-        "logic-address-map/logic-address-map-11",
-        "logic-address-map/logic-address-map-12"
+        "logic-address-map/logic-address-map-9"
       ]
     },
     {
@@ -13483,10 +13589,28 @@
       ]
     },
     {
-      "id": "success-葡萄住在-c3",
+      "id": "success-葡萄在-c-行-3-列-所以地址是-c3",
       "kind": "success",
-      "text": "葡萄住在 C3。",
+      "text": "葡萄在 C 行 3 列，所以地址是 C3。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-address-map/logic-address-map-10"
+      ]
+    },
+    {
+      "id": "retry-先在图里找到葡萄-再读这一行的字母和这一列的数字",
+      "kind": "retry",
+      "text": "先在图里找到葡萄，再读这一行的字母和这一列的数字。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-address-map/logic-address-map-10"
+      ]
+    },
+    {
+      "id": "parent-请她指着葡萄-说它在-c-行-3-列-所以地址是-c3",
+      "kind": "parent",
+      "text": "请她指着葡萄，说它在 C 行、3 列，所以地址是 C3。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-address-map/logic-address-map-10"
       ]
@@ -13532,10 +13656,28 @@
       ]
     },
     {
-      "id": "success-足球住在-a3",
+      "id": "success-足球在-a-行-3-列-所以地址是-a3",
       "kind": "success",
-      "text": "足球住在 A3。",
+      "text": "足球在 A 行 3 列，所以地址是 A3。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-address-map/logic-address-map-11"
+      ]
+    },
+    {
+      "id": "retry-先在图里找到足球-再读这一行的字母和这一列的数字",
+      "kind": "retry",
+      "text": "先在图里找到足球，再读这一行的字母和这一列的数字。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-address-map/logic-address-map-11"
+      ]
+    },
+    {
+      "id": "parent-请她指着足球-说它在-a-行-3-列-所以地址是-a3",
+      "kind": "parent",
+      "text": "请她指着足球，说它在 A 行、3 列，所以地址是 A3。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-address-map/logic-address-map-11"
       ]
@@ -13550,10 +13692,28 @@
       ]
     },
     {
-      "id": "success-蛋糕住在-d3",
+      "id": "success-蛋糕在-d-行-3-列-所以地址是-d3",
       "kind": "success",
-      "text": "蛋糕住在 D3。",
+      "text": "蛋糕在 D 行 3 列，所以地址是 D3。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-address-map/logic-address-map-12"
+      ]
+    },
+    {
+      "id": "retry-先在图里找到蛋糕-再读这一行的字母和这一列的数字",
+      "kind": "retry",
+      "text": "先在图里找到蛋糕，再读这一行的字母和这一列的数字。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-address-map/logic-address-map-12"
+      ]
+    },
+    {
+      "id": "parent-请她指着蛋糕-说它在-d-行-3-列-所以地址是-d3",
+      "kind": "parent",
+      "text": "请她指着蛋糕，说它在 D 行、3 列，所以地址是 D3。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-address-map/logic-address-map-12"
       ]

@@ -68,6 +68,16 @@ grouped by date.
   spot, and final destination.
 - Exported updated voice lines and regenerated the local Edge voice manifest for
   the rewritten route-step content.
+- Added the `009-address-map-quality` Spec Kit feature for row-column address
+  map reasoning quality.
+- Expanded the curriculum audit with address-map checks that compute hidden
+  objects from addresses, compute addresses from target objects, and require
+  row-column explanation text.
+- Reworked `logic-address-map` success feedback, retry guidance, and parent
+  prompts so each round names the row, column, crossing cell, object, and final
+  address where relevant.
+- Exported updated voice lines and regenerated the local Edge voice manifest for
+  the rewritten address-map content.
 - Initialized GitHub Spec Kit with Codex skills integration.
 - Established the project constitution in `.specify/memory/constitution.md`.
 - Expanded `AGENTS.md` with project overview, source-of-truth rules,

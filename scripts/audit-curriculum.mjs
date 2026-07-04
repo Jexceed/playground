@@ -177,6 +177,9 @@ for (const game of games) {
     if (game.id === "logic-route-steps") {
       checkRouteStepRoundQuality(round, context);
     }
+    if (game.id === "logic-address-map") {
+      checkAddressMapRoundQuality(round, context);
+    }
     if (!round.sceneImage && !round.sequence && !round.visualGroups && !round.grid && !round.matrix && !round.memory) {
       problems.push(`${context}: missing visual surface`);
     }
@@ -1045,6 +1048,123 @@ function traceRoute(cells, startPosition, moves) {
     route.push({ row, column, item: cells[row][column] });
   }
   return route;
+}
+
+function checkAddressMapRoundQuality(round, context) {
+  const grid = round.grid;
+  if (!isAddressMapGrid(grid)) {
+    problems.push(`${context}: address-map round should show a rectangular row-column grid`);
+    return;
+  }
+
+  const addressMatch = round.prompt.match(/^([A-Z]\d+)\s*里藏着什么/);
+  if (addressMatch) {
+    checkAddressToObjectRound(round, context, grid, addressMatch[1]);
+    return;
+  }
+
+  const targetMatch = round.prompt.match(/^(.+?)住在哪个地址/);
+  if (targetMatch) {
+    checkObjectToAddressRound(round, context, grid, targetMatch[1]);
+    return;
+  }
+
+  problems.push(`${context}: address-map prompt should ask for an object at an address or an address for an object`);
+}
+
+function checkAddressToObjectRound(round, context, grid, address) {
+  const cell = cellAtAddress(grid, address);
+  if (!cell) {
+    problems.push(`${context}: address-map address prompt should use an address present in the grid`);
+    return;
+  }
+
+  const { row, column } = addressParts(address);
+  if (round.answer !== cell) {
+    problems.push(`${context}: address-map address answer should equal the grid cell at the address`);
+  }
+
+  const matchingChoices = round.choices.filter((choice) => choice.value === cell);
+  if (matchingChoices.length !== 1) {
+    problems.push(`${context}: address-map address choices should include the grid cell exactly once`);
+  }
+
+  if (!round.success.includes(address) || !round.success.includes(cell) || !mentionsRowColumn(round.success, row, column)) {
+    problems.push(`${context}: address-map address success should name address, row, column, and hidden object`);
+  }
+  if (!mentionsRowColumn(round.retry, row, column) || !/先/.test(round.retry) || !/再/.test(round.retry)) {
+    problems.push(`${context}: address-map address retry should ask for row first, then column`);
+  }
+  if (!mentionsRowColumn(round.parentPrompt, row, column) || !round.parentPrompt.includes(cell) || !/指|点/.test(round.parentPrompt) || !/交叉|格子/.test(round.parentPrompt)) {
+    problems.push(`${context}: address-map address parentPrompt should ask the child to point to the row-column intersection`);
+  }
+}
+
+function checkObjectToAddressRound(round, context, grid, target) {
+  const positions = findGridPositions(grid.cells, target);
+  if (positions.length !== 1) {
+    problems.push(`${context}: address-map target prompt should name one visible grid item`);
+    return;
+  }
+
+  const [rowIndex, columnIndex] = positions[0];
+  const row = grid.rows[rowIndex];
+  const column = grid.columns[columnIndex];
+  const address = `${row}${column}`;
+
+  if (round.answer !== address) {
+    problems.push(`${context}: address-map target answer should equal the target row-column address`);
+  }
+
+  const matchingChoices = round.choices.filter((choice) => choice.value === address);
+  if (matchingChoices.length !== 1) {
+    problems.push(`${context}: address-map target choices should include the computed address exactly once`);
+  }
+
+  if (!round.success.includes(target) || !round.success.includes(address) || !mentionsRowColumn(round.success, row, column)) {
+    problems.push(`${context}: address-map target success should name target, row, column, and address`);
+  }
+  if (!round.retry.includes(target) || !/行/.test(round.retry) || !/列/.test(round.retry) || !/字母/.test(round.retry) || !/数字/.test(round.retry)) {
+    problems.push(`${context}: address-map target retry should ask for the item, then row and column`);
+  }
+  if (!round.parentPrompt.includes(target) || !round.parentPrompt.includes(address) || !mentionsRowColumn(round.parentPrompt, row, column)) {
+    problems.push(`${context}: address-map target parentPrompt should ask the child to explain row letter and column number`);
+  }
+}
+
+function isAddressMapGrid(grid) {
+  if (!grid || !Array.isArray(grid.rows) || !Array.isArray(grid.columns) || !Array.isArray(grid.cells)) return false;
+  if (!grid.rows.length || !grid.columns.length || grid.cells.length !== grid.rows.length) return false;
+  if (!grid.rows.every(isNonBlankString) || !grid.columns.every(isNonBlankString)) return false;
+  return grid.cells.every((row) => Array.isArray(row) && row.length === grid.columns.length && row.every(isNonBlankString)) && hasRectangularRows(grid.cells);
+}
+
+function isNonBlankString(value) {
+  return typeof value === "string" && value.trim().length > 0;
+}
+
+function addressParts(address) {
+  const match = address.match(/^([A-Z])(\d+)$/);
+  return {
+    row: match?.[1] ?? "",
+    column: match?.[2] ?? "",
+  };
+}
+
+function cellAtAddress(grid, address) {
+  const { row, column } = addressParts(address);
+  const rowIndex = grid.rows.indexOf(row);
+  const columnIndex = grid.columns.indexOf(column);
+  if (rowIndex === -1 || columnIndex === -1) return null;
+  return grid.cells[rowIndex]?.[columnIndex] ?? null;
+}
+
+function mentionsRowColumn(text, row, column) {
+  return new RegExp(`${escapeRegex(row)}\\s*行`).test(text) && new RegExp(`${escapeRegex(column)}\\s*列`).test(text);
+}
+
+function escapeRegex(value) {
+  return String(value).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
 function checkLogicDifficultyNote(round, context) {

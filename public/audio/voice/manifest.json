@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-07-04T15:25:15.092Z",
+  "generatedAt": "2026-07-04T15:37:10.346Z",
   "provider": "edge-tts Python package",
   "voice": "zh-CN-XiaoxiaoNeural",
   "rate": "-12%",
   "pitch": "+2Hz",
   "includeParent": true,
   "format": "mp3",
-  "count": 1552,
-  "requestedCount": 1552,
+  "count": 1572,
+  "requestedCount": 1572,
   "failures": [],
   "entries": [
     {
@@ -6551,22 +6551,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-a1-%E9%87%8C%E8%97%8F%E7%9D%80%E4%BB%80%E4%B9%88-%E5%85%88%E6%89%BE%E5%AD%97%E6%AF%8D%E8%A1%8C-%E5%86%8D%E6%89%BE%E6%95%B0%E5%AD%97%E5%88%97.mp3"
     },
     {
-      "id": "success-a1-的格子里是小鸟",
+      "id": "success-a1-是-a-行-1-列-格子里是小鸟",
       "kind": "success",
-      "text": "A1 的格子里是小鸟。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-a1-%E7%9A%84%E6%A0%BC%E5%AD%90%E9%87%8C%E6%98%AF%E5%B0%8F%E9%B8%9F.mp3"
+      "text": "A1 是 A 行 1 列，格子里是小鸟。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-a1-%E6%98%AF-a-%E8%A1%8C-1-%E5%88%97-%E6%A0%BC%E5%AD%90%E9%87%8C%E6%98%AF%E5%B0%8F%E9%B8%9F.mp3"
     },
     {
-      "id": "retry-先用手指找到字母-再横着找到数字",
+      "id": "retry-先找到-a-行-再横着找到-1-列-不要先猜物品",
       "kind": "retry",
-      "text": "先用手指找到字母，再横着找到数字。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E7%94%A8%E6%89%8B%E6%8C%87%E6%89%BE%E5%88%B0%E5%AD%97%E6%AF%8D-%E5%86%8D%E6%A8%AA%E7%9D%80%E6%89%BE%E5%88%B0%E6%95%B0%E5%AD%97.mp3"
+      "text": "先找到 A 行，再横着找到 1 列，不要先猜物品。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E6%89%BE%E5%88%B0-a-%E8%A1%8C-%E5%86%8D%E6%A8%AA%E7%9D%80%E6%89%BE%E5%88%B0-1-%E5%88%97-%E4%B8%8D%E8%A6%81%E5%85%88%E7%8C%9C%E7%89%A9%E5%93%81.mp3"
     },
     {
-      "id": "parent-请她说-我先找哪一行-再找哪一列",
+      "id": "parent-请她指着-a-行和-1-列交叉的格子-说为什么是小鸟",
       "kind": "parent",
-      "text": "请她说：我先找哪一行，再找哪一列。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E8%AF%B4-%E6%88%91%E5%85%88%E6%89%BE%E5%93%AA%E4%B8%80%E8%A1%8C-%E5%86%8D%E6%89%BE%E5%93%AA%E4%B8%80%E5%88%97.mp3"
+      "text": "请她指着 A 行和 1 列交叉的格子，说为什么是小鸟。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80-a-%E8%A1%8C%E5%92%8C-1-%E5%88%97%E4%BA%A4%E5%8F%89%E7%9A%84%E6%A0%BC%E5%AD%90-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E5%B0%8F%E9%B8%9F.mp3"
     },
     {
       "id": "object-积木塔",
@@ -6581,10 +6581,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-a3-%E9%87%8C%E8%97%8F%E7%9D%80%E4%BB%80%E4%B9%88-%E5%85%88%E6%89%BE%E5%AD%97%E6%AF%8D%E8%A1%8C-%E5%86%8D%E6%89%BE%E6%95%B0%E5%AD%97%E5%88%97.mp3"
     },
     {
-      "id": "success-a3-的格子里是积木塔",
+      "id": "success-a3-是-a-行-3-列-格子里是积木塔",
       "kind": "success",
-      "text": "A3 的格子里是积木塔。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-a3-%E7%9A%84%E6%A0%BC%E5%AD%90%E9%87%8C%E6%98%AF%E7%A7%AF%E6%9C%A8%E5%A1%94.mp3"
+      "text": "A3 是 A 行 3 列，格子里是积木塔。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-a3-%E6%98%AF-a-%E8%A1%8C-3-%E5%88%97-%E6%A0%BC%E5%AD%90%E9%87%8C%E6%98%AF%E7%A7%AF%E6%9C%A8%E5%A1%94.mp3"
+    },
+    {
+      "id": "retry-先找到-a-行-再横着找到-3-列-不要先猜物品",
+      "kind": "retry",
+      "text": "先找到 A 行，再横着找到 3 列，不要先猜物品。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E6%89%BE%E5%88%B0-a-%E8%A1%8C-%E5%86%8D%E6%A8%AA%E7%9D%80%E6%89%BE%E5%88%B0-3-%E5%88%97-%E4%B8%8D%E8%A6%81%E5%85%88%E7%8C%9C%E7%89%A9%E5%93%81.mp3"
+    },
+    {
+      "id": "parent-请她指着-a-行和-3-列交叉的格子-说为什么是积木塔",
+      "kind": "parent",
+      "text": "请她指着 A 行和 3 列交叉的格子，说为什么是积木塔。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80-a-%E8%A1%8C%E5%92%8C-3-%E5%88%97%E4%BA%A4%E5%8F%89%E7%9A%84%E6%A0%BC%E5%AD%90-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E7%A7%AF%E6%9C%A8%E5%A1%94.mp3"
     },
     {
       "id": "prompt-b2-里藏着什么-先找字母行-再找数字列",
@@ -6593,10 +6605,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-b2-%E9%87%8C%E8%97%8F%E7%9D%80%E4%BB%80%E4%B9%88-%E5%85%88%E6%89%BE%E5%AD%97%E6%AF%8D%E8%A1%8C-%E5%86%8D%E6%89%BE%E6%95%B0%E5%AD%97%E5%88%97.mp3"
     },
     {
-      "id": "success-b2-的格子里是小猫",
+      "id": "success-b2-是-b-行-2-列-格子里是小猫",
       "kind": "success",
-      "text": "B2 的格子里是小猫。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-b2-%E7%9A%84%E6%A0%BC%E5%AD%90%E9%87%8C%E6%98%AF%E5%B0%8F%E7%8C%AB.mp3"
+      "text": "B2 是 B 行 2 列，格子里是小猫。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-b2-%E6%98%AF-b-%E8%A1%8C-2-%E5%88%97-%E6%A0%BC%E5%AD%90%E9%87%8C%E6%98%AF%E5%B0%8F%E7%8C%AB.mp3"
+    },
+    {
+      "id": "retry-先找到-b-行-再横着找到-2-列-不要先猜物品",
+      "kind": "retry",
+      "text": "先找到 B 行，再横着找到 2 列，不要先猜物品。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E6%89%BE%E5%88%B0-b-%E8%A1%8C-%E5%86%8D%E6%A8%AA%E7%9D%80%E6%89%BE%E5%88%B0-2-%E5%88%97-%E4%B8%8D%E8%A6%81%E5%85%88%E7%8C%9C%E7%89%A9%E5%93%81.mp3"
+    },
+    {
+      "id": "parent-请她指着-b-行和-2-列交叉的格子-说为什么是小猫",
+      "kind": "parent",
+      "text": "请她指着 B 行和 2 列交叉的格子，说为什么是小猫。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80-b-%E8%A1%8C%E5%92%8C-2-%E5%88%97%E4%BA%A4%E5%8F%89%E7%9A%84%E6%A0%BC%E5%AD%90-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E5%B0%8F%E7%8C%AB.mp3"
     },
     {
       "id": "prompt-c1-里藏着什么-先找字母行-再找数字列",
@@ -6605,10 +6629,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-c1-%E9%87%8C%E8%97%8F%E7%9D%80%E4%BB%80%E4%B9%88-%E5%85%88%E6%89%BE%E5%AD%97%E6%AF%8D%E8%A1%8C-%E5%86%8D%E6%89%BE%E6%95%B0%E5%AD%97%E5%88%97.mp3"
     },
     {
-      "id": "success-c1-的格子里是书包",
+      "id": "success-c1-是-c-行-1-列-格子里是书包",
       "kind": "success",
-      "text": "C1 的格子里是书包。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-c1-%E7%9A%84%E6%A0%BC%E5%AD%90%E9%87%8C%E6%98%AF%E4%B9%A6%E5%8C%85.mp3"
+      "text": "C1 是 C 行 1 列，格子里是书包。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-c1-%E6%98%AF-c-%E8%A1%8C-1-%E5%88%97-%E6%A0%BC%E5%AD%90%E9%87%8C%E6%98%AF%E4%B9%A6%E5%8C%85.mp3"
+    },
+    {
+      "id": "retry-先找到-c-行-再横着找到-1-列-不要先猜物品",
+      "kind": "retry",
+      "text": "先找到 C 行，再横着找到 1 列，不要先猜物品。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E6%89%BE%E5%88%B0-c-%E8%A1%8C-%E5%86%8D%E6%A8%AA%E7%9D%80%E6%89%BE%E5%88%B0-1-%E5%88%97-%E4%B8%8D%E8%A6%81%E5%85%88%E7%8C%9C%E7%89%A9%E5%93%81.mp3"
+    },
+    {
+      "id": "parent-请她指着-c-行和-1-列交叉的格子-说为什么是书包",
+      "kind": "parent",
+      "text": "请她指着 C 行和 1 列交叉的格子，说为什么是书包。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80-c-%E8%A1%8C%E5%92%8C-1-%E5%88%97%E4%BA%A4%E5%8F%89%E7%9A%84%E6%A0%BC%E5%AD%90-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E4%B9%A6%E5%8C%85.mp3"
     },
     {
       "id": "prompt-a4-里藏着什么-先找字母行-再找数字列",
@@ -6617,10 +6653,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-a4-%E9%87%8C%E8%97%8F%E7%9D%80%E4%BB%80%E4%B9%88-%E5%85%88%E6%89%BE%E5%AD%97%E6%AF%8D%E8%A1%8C-%E5%86%8D%E6%89%BE%E6%95%B0%E5%AD%97%E5%88%97.mp3"
     },
     {
-      "id": "success-a4-的格子里是铅笔",
+      "id": "success-a4-是-a-行-4-列-格子里是铅笔",
       "kind": "success",
-      "text": "A4 的格子里是铅笔。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-a4-%E7%9A%84%E6%A0%BC%E5%AD%90%E9%87%8C%E6%98%AF%E9%93%85%E7%AC%94.mp3"
+      "text": "A4 是 A 行 4 列，格子里是铅笔。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-a4-%E6%98%AF-a-%E8%A1%8C-4-%E5%88%97-%E6%A0%BC%E5%AD%90%E9%87%8C%E6%98%AF%E9%93%85%E7%AC%94.mp3"
+    },
+    {
+      "id": "retry-先找到-a-行-再横着找到-4-列-不要先猜物品",
+      "kind": "retry",
+      "text": "先找到 A 行，再横着找到 4 列，不要先猜物品。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E6%89%BE%E5%88%B0-a-%E8%A1%8C-%E5%86%8D%E6%A8%AA%E7%9D%80%E6%89%BE%E5%88%B0-4-%E5%88%97-%E4%B8%8D%E8%A6%81%E5%85%88%E7%8C%9C%E7%89%A9%E5%93%81.mp3"
+    },
+    {
+      "id": "parent-请她指着-a-行和-4-列交叉的格子-说为什么是铅笔",
+      "kind": "parent",
+      "text": "请她指着 A 行和 4 列交叉的格子，说为什么是铅笔。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80-a-%E8%A1%8C%E5%92%8C-4-%E5%88%97%E4%BA%A4%E5%8F%89%E7%9A%84%E6%A0%BC%E5%AD%90-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E9%93%85%E7%AC%94.mp3"
     },
     {
       "id": "choice-三角尺",
@@ -6641,10 +6689,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-b3-%E9%87%8C%E8%97%8F%E7%9D%80%E4%BB%80%E4%B9%88-%E5%85%88%E6%89%BE%E5%AD%97%E6%AF%8D%E8%A1%8C-%E5%86%8D%E6%89%BE%E6%95%B0%E5%AD%97%E5%88%97.mp3"
     },
     {
-      "id": "success-b3-的格子里是积木塔",
+      "id": "success-b3-是-b-行-3-列-格子里是积木塔",
       "kind": "success",
-      "text": "B3 的格子里是积木塔。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-b3-%E7%9A%84%E6%A0%BC%E5%AD%90%E9%87%8C%E6%98%AF%E7%A7%AF%E6%9C%A8%E5%A1%94.mp3"
+      "text": "B3 是 B 行 3 列，格子里是积木塔。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-b3-%E6%98%AF-b-%E8%A1%8C-3-%E5%88%97-%E6%A0%BC%E5%AD%90%E9%87%8C%E6%98%AF%E7%A7%AF%E6%9C%A8%E5%A1%94.mp3"
+    },
+    {
+      "id": "retry-先找到-b-行-再横着找到-3-列-不要先猜物品",
+      "kind": "retry",
+      "text": "先找到 B 行，再横着找到 3 列，不要先猜物品。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E6%89%BE%E5%88%B0-b-%E8%A1%8C-%E5%86%8D%E6%A8%AA%E7%9D%80%E6%89%BE%E5%88%B0-3-%E5%88%97-%E4%B8%8D%E8%A6%81%E5%85%88%E7%8C%9C%E7%89%A9%E5%93%81.mp3"
+    },
+    {
+      "id": "parent-请她指着-b-行和-3-列交叉的格子-说为什么是积木塔",
+      "kind": "parent",
+      "text": "请她指着 B 行和 3 列交叉的格子，说为什么是积木塔。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80-b-%E8%A1%8C%E5%92%8C-3-%E5%88%97%E4%BA%A4%E5%8F%89%E7%9A%84%E6%A0%BC%E5%AD%90-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E7%A7%AF%E6%9C%A8%E5%A1%94.mp3"
     },
     {
       "id": "prompt-c2-里藏着什么-先找字母行-再找数字列",
@@ -6653,10 +6713,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-c2-%E9%87%8C%E8%97%8F%E7%9D%80%E4%BB%80%E4%B9%88-%E5%85%88%E6%89%BE%E5%AD%97%E6%AF%8D%E8%A1%8C-%E5%86%8D%E6%89%BE%E6%95%B0%E5%AD%97%E5%88%97.mp3"
     },
     {
-      "id": "success-c2-的格子里是小鱼",
+      "id": "success-c2-是-c-行-2-列-格子里是小鱼",
       "kind": "success",
-      "text": "C2 的格子里是小鱼。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-c2-%E7%9A%84%E6%A0%BC%E5%AD%90%E9%87%8C%E6%98%AF%E5%B0%8F%E9%B1%BC.mp3"
+      "text": "C2 是 C 行 2 列，格子里是小鱼。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-c2-%E6%98%AF-c-%E8%A1%8C-2-%E5%88%97-%E6%A0%BC%E5%AD%90%E9%87%8C%E6%98%AF%E5%B0%8F%E9%B1%BC.mp3"
+    },
+    {
+      "id": "retry-先找到-c-行-再横着找到-2-列-不要先猜物品",
+      "kind": "retry",
+      "text": "先找到 C 行，再横着找到 2 列，不要先猜物品。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E6%89%BE%E5%88%B0-c-%E8%A1%8C-%E5%86%8D%E6%A8%AA%E7%9D%80%E6%89%BE%E5%88%B0-2-%E5%88%97-%E4%B8%8D%E8%A6%81%E5%85%88%E7%8C%9C%E7%89%A9%E5%93%81.mp3"
+    },
+    {
+      "id": "parent-请她指着-c-行和-2-列交叉的格子-说为什么是小鱼",
+      "kind": "parent",
+      "text": "请她指着 C 行和 2 列交叉的格子，说为什么是小鱼。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80-c-%E8%A1%8C%E5%92%8C-2-%E5%88%97%E4%BA%A4%E5%8F%89%E7%9A%84%E6%A0%BC%E5%AD%90-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E5%B0%8F%E9%B1%BC.mp3"
     },
     {
       "id": "prompt-d4-里藏着什么-先找字母行-再找数字列",
@@ -6665,10 +6737,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-d4-%E9%87%8C%E8%97%8F%E7%9D%80%E4%BB%80%E4%B9%88-%E5%85%88%E6%89%BE%E5%AD%97%E6%AF%8D%E8%A1%8C-%E5%86%8D%E6%89%BE%E6%95%B0%E5%AD%97%E5%88%97.mp3"
     },
     {
-      "id": "success-d4-的格子里是草莓",
+      "id": "success-d4-是-d-行-4-列-格子里是草莓",
       "kind": "success",
-      "text": "D4 的格子里是草莓。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-d4-%E7%9A%84%E6%A0%BC%E5%AD%90%E9%87%8C%E6%98%AF%E8%8D%89%E8%8E%93.mp3"
+      "text": "D4 是 D 行 4 列，格子里是草莓。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-d4-%E6%98%AF-d-%E8%A1%8C-4-%E5%88%97-%E6%A0%BC%E5%AD%90%E9%87%8C%E6%98%AF%E8%8D%89%E8%8E%93.mp3"
+    },
+    {
+      "id": "retry-先找到-d-行-再横着找到-4-列-不要先猜物品",
+      "kind": "retry",
+      "text": "先找到 D 行，再横着找到 4 列，不要先猜物品。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E6%89%BE%E5%88%B0-d-%E8%A1%8C-%E5%86%8D%E6%A8%AA%E7%9D%80%E6%89%BE%E5%88%B0-4-%E5%88%97-%E4%B8%8D%E8%A6%81%E5%85%88%E7%8C%9C%E7%89%A9%E5%93%81.mp3"
+    },
+    {
+      "id": "parent-请她指着-d-行和-4-列交叉的格子-说为什么是草莓",
+      "kind": "parent",
+      "text": "请她指着 D 行和 4 列交叉的格子，说为什么是草莓。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80-d-%E8%A1%8C%E5%92%8C-4-%E5%88%97%E4%BA%A4%E5%8F%89%E7%9A%84%E6%A0%BC%E5%AD%90-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E8%8D%89%E8%8E%93.mp3"
     },
     {
       "id": "prompt-小狗住在哪个地址-先找到物品-再读左边字母和上面数字",
@@ -6677,22 +6761,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%B0%8F%E7%8B%97%E4%BD%8F%E5%9C%A8%E5%93%AA%E4%B8%AA%E5%9C%B0%E5%9D%80-%E5%85%88%E6%89%BE%E5%88%B0%E7%89%A9%E5%93%81-%E5%86%8D%E8%AF%BB%E5%B7%A6%E8%BE%B9%E5%AD%97%E6%AF%8D%E5%92%8C%E4%B8%8A%E9%9D%A2%E6%95%B0%E5%AD%97.mp3"
     },
     {
-      "id": "success-小狗住在-a2",
+      "id": "success-小狗在-a-行-2-列-所以地址是-a2",
       "kind": "success",
-      "text": "小狗住在 A2。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%B0%8F%E7%8B%97%E4%BD%8F%E5%9C%A8-a2.mp3"
+      "text": "小狗在 A 行 2 列，所以地址是 A2。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%B0%8F%E7%8B%97%E5%9C%A8-a-%E8%A1%8C-2-%E5%88%97-%E6%89%80%E4%BB%A5%E5%9C%B0%E5%9D%80%E6%98%AF-a2.mp3"
     },
     {
-      "id": "retry-找到物品以后-先看这一行的字母-再看这一列的数字",
+      "id": "retry-先在图里找到小狗-再读这一行的字母和这一列的数字",
       "kind": "retry",
-      "text": "找到物品以后，先看这一行的字母，再看这一列的数字。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E6%89%BE%E5%88%B0%E7%89%A9%E5%93%81%E4%BB%A5%E5%90%8E-%E5%85%88%E7%9C%8B%E8%BF%99%E4%B8%80%E8%A1%8C%E7%9A%84%E5%AD%97%E6%AF%8D-%E5%86%8D%E7%9C%8B%E8%BF%99%E4%B8%80%E5%88%97%E7%9A%84%E6%95%B0%E5%AD%97.mp3"
+      "text": "先在图里找到小狗，再读这一行的字母和这一列的数字。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E5%9C%A8%E5%9B%BE%E9%87%8C%E6%89%BE%E5%88%B0%E5%B0%8F%E7%8B%97-%E5%86%8D%E8%AF%BB%E8%BF%99%E4%B8%80%E8%A1%8C%E7%9A%84%E5%AD%97%E6%AF%8D%E5%92%8C%E8%BF%99%E4%B8%80%E5%88%97%E7%9A%84%E6%95%B0%E5%AD%97.mp3"
     },
     {
-      "id": "parent-问她-这个地址为什么先说字母-再说数字",
+      "id": "parent-请她指着小狗-说它在-a-行-2-列-所以地址是-a2",
       "kind": "parent",
-      "text": "问她：这个地址为什么先说字母，再说数字？",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E8%BF%99%E4%B8%AA%E5%9C%B0%E5%9D%80%E4%B8%BA%E4%BB%80%E4%B9%88%E5%85%88%E8%AF%B4%E5%AD%97%E6%AF%8D-%E5%86%8D%E8%AF%B4%E6%95%B0%E5%AD%97.mp3"
+      "text": "请她指着小狗，说它在 A 行、2 列，所以地址是 A2。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E5%B0%8F%E7%8B%97-%E8%AF%B4%E5%AE%83%E5%9C%A8-a-%E8%A1%8C-2-%E5%88%97-%E6%89%80%E4%BB%A5%E5%9C%B0%E5%9D%80%E6%98%AF-a2.mp3"
     },
     {
       "id": "choice-a2",
@@ -6719,10 +6803,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%91%A1%E8%90%84%E4%BD%8F%E5%9C%A8%E5%93%AA%E4%B8%AA%E5%9C%B0%E5%9D%80-%E5%85%88%E6%89%BE%E5%88%B0%E7%89%A9%E5%93%81-%E5%86%8D%E8%AF%BB%E5%B7%A6%E8%BE%B9%E5%AD%97%E6%AF%8D%E5%92%8C%E4%B8%8A%E9%9D%A2%E6%95%B0%E5%AD%97.mp3"
     },
     {
-      "id": "success-葡萄住在-c3",
+      "id": "success-葡萄在-c-行-3-列-所以地址是-c3",
       "kind": "success",
-      "text": "葡萄住在 C3。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%91%A1%E8%90%84%E4%BD%8F%E5%9C%A8-c3.mp3"
+      "text": "葡萄在 C 行 3 列，所以地址是 C3。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%91%A1%E8%90%84%E5%9C%A8-c-%E8%A1%8C-3-%E5%88%97-%E6%89%80%E4%BB%A5%E5%9C%B0%E5%9D%80%E6%98%AF-c3.mp3"
+    },
+    {
+      "id": "retry-先在图里找到葡萄-再读这一行的字母和这一列的数字",
+      "kind": "retry",
+      "text": "先在图里找到葡萄，再读这一行的字母和这一列的数字。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E5%9C%A8%E5%9B%BE%E9%87%8C%E6%89%BE%E5%88%B0%E8%91%A1%E8%90%84-%E5%86%8D%E8%AF%BB%E8%BF%99%E4%B8%80%E8%A1%8C%E7%9A%84%E5%AD%97%E6%AF%8D%E5%92%8C%E8%BF%99%E4%B8%80%E5%88%97%E7%9A%84%E6%95%B0%E5%AD%97.mp3"
+    },
+    {
+      "id": "parent-请她指着葡萄-说它在-c-行-3-列-所以地址是-c3",
+      "kind": "parent",
+      "text": "请她指着葡萄，说它在 C 行、3 列，所以地址是 C3。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E8%91%A1%E8%90%84-%E8%AF%B4%E5%AE%83%E5%9C%A8-c-%E8%A1%8C-3-%E5%88%97-%E6%89%80%E4%BB%A5%E5%9C%B0%E5%9D%80%E6%98%AF-c3.mp3"
     },
     {
       "id": "choice-a3",
@@ -6749,10 +6845,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%B6%B3%E7%90%83%E4%BD%8F%E5%9C%A8%E5%93%AA%E4%B8%AA%E5%9C%B0%E5%9D%80-%E5%85%88%E6%89%BE%E5%88%B0%E7%89%A9%E5%93%81-%E5%86%8D%E8%AF%BB%E5%B7%A6%E8%BE%B9%E5%AD%97%E6%AF%8D%E5%92%8C%E4%B8%8A%E9%9D%A2%E6%95%B0%E5%AD%97.mp3"
     },
     {
-      "id": "success-足球住在-a3",
+      "id": "success-足球在-a-行-3-列-所以地址是-a3",
       "kind": "success",
-      "text": "足球住在 A3。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%B6%B3%E7%90%83%E4%BD%8F%E5%9C%A8-a3.mp3"
+      "text": "足球在 A 行 3 列，所以地址是 A3。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%B6%B3%E7%90%83%E5%9C%A8-a-%E8%A1%8C-3-%E5%88%97-%E6%89%80%E4%BB%A5%E5%9C%B0%E5%9D%80%E6%98%AF-a3.mp3"
+    },
+    {
+      "id": "retry-先在图里找到足球-再读这一行的字母和这一列的数字",
+      "kind": "retry",
+      "text": "先在图里找到足球，再读这一行的字母和这一列的数字。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E5%9C%A8%E5%9B%BE%E9%87%8C%E6%89%BE%E5%88%B0%E8%B6%B3%E7%90%83-%E5%86%8D%E8%AF%BB%E8%BF%99%E4%B8%80%E8%A1%8C%E7%9A%84%E5%AD%97%E6%AF%8D%E5%92%8C%E8%BF%99%E4%B8%80%E5%88%97%E7%9A%84%E6%95%B0%E5%AD%97.mp3"
+    },
+    {
+      "id": "parent-请她指着足球-说它在-a-行-3-列-所以地址是-a3",
+      "kind": "parent",
+      "text": "请她指着足球，说它在 A 行、3 列，所以地址是 A3。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E8%B6%B3%E7%90%83-%E8%AF%B4%E5%AE%83%E5%9C%A8-a-%E8%A1%8C-3-%E5%88%97-%E6%89%80%E4%BB%A5%E5%9C%B0%E5%9D%80%E6%98%AF-a3.mp3"
     },
     {
       "id": "prompt-蛋糕住在哪个地址-先找到物品-再读左边字母和上面数字",
@@ -6761,10 +6869,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%9B%8B%E7%B3%95%E4%BD%8F%E5%9C%A8%E5%93%AA%E4%B8%AA%E5%9C%B0%E5%9D%80-%E5%85%88%E6%89%BE%E5%88%B0%E7%89%A9%E5%93%81-%E5%86%8D%E8%AF%BB%E5%B7%A6%E8%BE%B9%E5%AD%97%E6%AF%8D%E5%92%8C%E4%B8%8A%E9%9D%A2%E6%95%B0%E5%AD%97.mp3"
     },
     {
-      "id": "success-蛋糕住在-d3",
+      "id": "success-蛋糕在-d-行-3-列-所以地址是-d3",
       "kind": "success",
-      "text": "蛋糕住在 D3。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%9B%8B%E7%B3%95%E4%BD%8F%E5%9C%A8-d3.mp3"
+      "text": "蛋糕在 D 行 3 列，所以地址是 D3。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%9B%8B%E7%B3%95%E5%9C%A8-d-%E8%A1%8C-3-%E5%88%97-%E6%89%80%E4%BB%A5%E5%9C%B0%E5%9D%80%E6%98%AF-d3.mp3"
+    },
+    {
+      "id": "retry-先在图里找到蛋糕-再读这一行的字母和这一列的数字",
+      "kind": "retry",
+      "text": "先在图里找到蛋糕，再读这一行的字母和这一列的数字。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E5%9C%A8%E5%9B%BE%E9%87%8C%E6%89%BE%E5%88%B0%E8%9B%8B%E7%B3%95-%E5%86%8D%E8%AF%BB%E8%BF%99%E4%B8%80%E8%A1%8C%E7%9A%84%E5%AD%97%E6%AF%8D%E5%92%8C%E8%BF%99%E4%B8%80%E5%88%97%E7%9A%84%E6%95%B0%E5%AD%97.mp3"
+    },
+    {
+      "id": "parent-请她指着蛋糕-说它在-d-行-3-列-所以地址是-d3",
+      "kind": "parent",
+      "text": "请她指着蛋糕，说它在 D 行、3 列，所以地址是 D3。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E8%9B%8B%E7%B3%95-%E8%AF%B4%E5%AE%83%E5%9C%A8-d-%E8%A1%8C-3-%E5%88%97-%E6%89%80%E4%BB%A5%E5%9C%B0%E5%9D%80%E6%98%AF-d3.mp3"
     },
     {
       "id": "choice-d3",
