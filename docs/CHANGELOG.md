@@ -87,6 +87,16 @@ grouped by date.
   and the final answer.
 - Exported updated voice lines and regenerated the local Edge voice manifest for
   the rewritten matrix-puzzle content.
+- Added the `011-position-map-quality` Spec Kit feature for spatial position,
+  inside/outside, and viewpoint-relative direction quality.
+- Expanded the curriculum audit with position-map checks that compute neighbor
+  items from visible grids, validate inside/outside group membership, and derive
+  relative directions from the named source item.
+- Reworked `logic-position-map` success feedback, retry guidance, and parent
+  prompts so each round names the reference item, direction or group contrast,
+  answer, and child-pointing explanation.
+- Exported updated voice lines and regenerated the local Edge voice manifest for
+  the rewritten position-map content.
 - Initialized GitHub Spec Kit with Codex skills integration.
 - Established the project constitution in `.specify/memory/constitution.md`.
 - Expanded `AGENTS.md` with project overview, source-of-truth rules,

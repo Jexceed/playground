@@ -183,6 +183,9 @@ for (const game of games) {
     if (game.id === "logic-matrix-puzzle") {
       checkMatrixPuzzleRoundQuality(round, context);
     }
+    if (game.id === "logic-position-map") {
+      checkPositionMapRoundQuality(round, context);
+    }
     if (!round.sceneImage && !round.sequence && !round.visualGroups && !round.grid && !round.matrix && !round.memory) {
       problems.push(`${context}: missing visual surface`);
     }
@@ -1051,6 +1054,159 @@ function traceRoute(cells, startPosition, moves) {
     route.push({ row, column, item: cells[row][column] });
   }
   return route;
+}
+
+function checkPositionMapRoundQuality(round, context) {
+  const relativeMatch = round.prompt.match(/^(.+?)看(.+?)，\2在\1的哪边/);
+  if (relativeMatch) {
+    checkPositionRelativeRound(round, context, relativeMatch[1], relativeMatch[2]);
+    return;
+  }
+
+  const neighborMatch = round.prompt.match(/^(?:谁在(.+?)的(左边|右边|上面|下面)|(.+?)的(左边|右边|上面|下面)是什么)/);
+  if (neighborMatch) {
+    checkPositionNeighborRound(round, context, neighborMatch[1] ?? neighborMatch[3], neighborMatch[2] ?? neighborMatch[4]);
+    return;
+  }
+
+  const insideOutsideMatch = round.prompt.match(/^谁在盒子(里面|外面)/);
+  if (insideOutsideMatch) {
+    checkPositionInsideOutsideRound(round, context, insideOutsideMatch[1]);
+    return;
+  }
+
+  problems.push(`${context}: position-map prompt should be a supported neighbor, inside/outside, or relative direction question`);
+}
+
+function checkPositionNeighborRound(round, context, target, direction) {
+  const cells = round.grid?.cells;
+  if (!isPositionMapGrid(cells)) {
+    problems.push(`${context}: position-map neighbor round should show a rectangular grid`);
+    return;
+  }
+
+  const targetPositions = findGridPositions(cells, target);
+  if (targetPositions.length !== 1) {
+    problems.push(`${context}: position-map neighbor target should appear exactly once in the grid`);
+    return;
+  }
+
+  const delta = positionDirectionDelta(direction);
+  const [targetRow, targetColumn] = targetPositions[0];
+  const neighbor = cells[targetRow + delta[0]]?.[targetColumn + delta[1]];
+  if (!neighbor) {
+    problems.push(`${context}: position-map neighbor direction should stay inside the grid`);
+    return;
+  }
+
+  if (round.answer !== neighbor) {
+    problems.push(`${context}: position-map neighbor answer should equal the one-cell ${direction} item`);
+  }
+
+  const matchingChoices = round.choices.filter((choice) => choice.value === neighbor);
+  if (matchingChoices.length !== 1) {
+    problems.push(`${context}: position-map neighbor choices should include the computed item exactly once`);
+  }
+
+  if (!round.success.includes(target) || !round.success.includes(direction) || !round.success.includes(neighbor) || !/一格/.test(round.success)) {
+    problems.push(`${context}: position-map neighbor success should name target, direction, one-cell move, and answer`);
+  }
+  if (!round.retry.includes(target) || !round.retry.includes(direction) || !round.retry.includes(neighbor) || !/先/.test(round.retry) || !/一格|指|点/.test(round.retry)) {
+    problems.push(`${context}: position-map neighbor retry should ask the child to start at the target and move one cell`);
+  }
+  if (!round.parentPrompt.includes(target) || !round.parentPrompt.includes(direction) || !round.parentPrompt.includes(neighbor) || !/指|点|一格|为什么/.test(round.parentPrompt)) {
+    problems.push(`${context}: position-map neighbor parentPrompt should ask for a pointed one-cell explanation`);
+  }
+}
+
+function checkPositionInsideOutsideRound(round, context, requestedSide) {
+  const insideGroup = round.visualGroups?.find((group) => group.label === "盒子里面");
+  const outsideGroup = round.visualGroups?.find((group) => group.label === "盒子外面");
+  if (!insideGroup || !outsideGroup) {
+    problems.push(`${context}: position-map inside/outside round should show box inside and outside groups`);
+    return;
+  }
+
+  const requestedItems = requestedSide === "里面" ? insideGroup.items : outsideGroup.items;
+  if (!requestedItems.includes(round.answer)) {
+    problems.push(`${context}: position-map inside/outside answer should belong to the requested group`);
+  }
+
+  const matchingChoices = round.choices.filter((choice) => choice.value === round.answer);
+  if (matchingChoices.length !== 1) {
+    problems.push(`${context}: position-map inside/outside choices should include the answer exactly once`);
+  }
+
+  if (!round.success.includes("盒子") || !round.success.includes(round.answer) || !/里面/.test(round.success) || !/外面/.test(round.success)) {
+    problems.push(`${context}: position-map inside/outside success should name answer and contrast inside with outside`);
+  }
+  if (!round.retry.includes(round.answer) || !/里面/.test(round.retry) || !/外面/.test(round.retry)) {
+    problems.push(`${context}: position-map inside/outside retry should compare inside and outside groups`);
+  }
+  if (!round.parentPrompt.includes(round.answer) || !/里面/.test(round.parentPrompt) || !/外面/.test(round.parentPrompt) || !/指|点|说/.test(round.parentPrompt)) {
+    problems.push(`${context}: position-map inside/outside parentPrompt should ask for a pointed inside/outside explanation`);
+  }
+}
+
+function checkPositionRelativeRound(round, context, source, target) {
+  const cells = round.grid?.cells;
+  if (!isPositionMapGrid(cells)) {
+    problems.push(`${context}: position-map relative round should show a rectangular grid`);
+    return;
+  }
+
+  const sourcePositions = findGridPositions(cells, source);
+  const targetPositions = findGridPositions(cells, target);
+  if (sourcePositions.length !== 1 || targetPositions.length !== 1) {
+    problems.push(`${context}: position-map relative source and target should each appear exactly once in the grid`);
+    return;
+  }
+
+  const expectedDirection = relativeDirectionBetween(sourcePositions[0], targetPositions[0]);
+  if (!expectedDirection) {
+    problems.push(`${context}: position-map relative source and target should share a row or column`);
+    return;
+  }
+
+  if (round.answer !== expectedDirection) {
+    problems.push(`${context}: position-map relative answer should be computed from source to target`);
+  }
+
+  const matchingChoices = round.choices.filter((choice) => choice.value === expectedDirection);
+  if (matchingChoices.length !== 1) {
+    problems.push(`${context}: position-map relative choices should include the computed direction exactly once`);
+  }
+
+  if (!round.success.includes(source) || !round.success.includes(target) || !round.success.includes(expectedDirection) || !/出发|开始|先指/.test(round.success)) {
+    problems.push(`${context}: position-map relative success should name source, target, answer, and start-from-source strategy`);
+  }
+  if (!round.retry.includes(source) || !round.retry.includes(target) || !round.retry.includes(expectedDirection) || !/从|先/.test(round.retry)) {
+    problems.push(`${context}: position-map relative retry should ask the child to start from the source viewpoint`);
+  }
+  if (!round.parentPrompt.includes(source) || !round.parentPrompt.includes(target) || !round.parentPrompt.includes(expectedDirection) || !/指|点|从/.test(round.parentPrompt)) {
+    problems.push(`${context}: position-map relative parentPrompt should ask for a pointed source-to-target explanation`);
+  }
+}
+
+function isPositionMapGrid(cells) {
+  return Array.isArray(cells) && cells.length > 0 && cells.every((row) => Array.isArray(row) && row.length > 0 && row.every(isNonBlankString)) && hasRectangularRows(cells);
+}
+
+function positionDirectionDelta(direction) {
+  return {
+    右边: [0, 1],
+    左边: [0, -1],
+    上面: [-1, 0],
+    下面: [1, 0],
+  }[direction] ?? [0, 0];
+}
+
+function relativeDirectionBetween(sourcePosition, targetPosition) {
+  const [sourceRow, sourceColumn] = sourcePosition;
+  const [targetRow, targetColumn] = targetPosition;
+  if (sourceRow === targetRow) return targetColumn > sourceColumn ? "右边" : "左边";
+  if (sourceColumn === targetColumn) return targetRow > sourceRow ? "下面" : "上面";
+  return null;
 }
 
 function checkAddressMapRoundQuality(round, context) {
