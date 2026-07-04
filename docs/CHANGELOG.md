@@ -30,6 +30,15 @@ grouped by date.
   matching pair before the different card.
 - Exported updated voice lines and regenerated the local Edge voice manifest for
   the rewritten visual-match content.
+- Added the `005-difference-detective-quality` Spec Kit feature for changed,
+  extra, and missing item comparison quality.
+- Expanded the curriculum audit with difference-detective checks for left/right
+  row structure, changed positions, shared-item matching, and feedback clarity.
+- Reworked `logic-difference-detective` feedback, retry guidance, and parent
+  prompts so changed-item, extra-item, and missing-item rounds explain the
+  visible comparison evidence.
+- Exported updated voice lines and regenerated the local Edge voice manifest for
+  the rewritten difference-detective content.
 - Initialized GitHub Spec Kit with Codex skills integration.
 - Established the project constitution in `.specify/memory/constitution.md`.
 - Expanded `AGENTS.md` with project overview, source-of-truth rules,

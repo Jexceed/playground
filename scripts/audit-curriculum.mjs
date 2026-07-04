@@ -165,6 +165,9 @@ for (const game of games) {
     if (game.id === "logic-visual-match") {
       checkVisualMatchRoundQuality(round, context);
     }
+    if (game.id === "logic-difference-detective") {
+      checkDifferenceDetectiveRoundQuality(round, context);
+    }
     if (!round.sceneImage && !round.sequence && !round.visualGroups && !round.grid && !round.matrix && !round.memory) {
       problems.push(`${context}: missing visual surface`);
     }
@@ -530,6 +533,122 @@ function positionLabel(position) {
     middle: "中间",
     right: "右边",
   }[position] ?? "";
+}
+
+function checkDifferenceDetectiveRoundQuality(round, context) {
+  const leftGroup = round.visualGroups?.find((group) => group.label === "左图");
+  const rightGroup = round.visualGroups?.find((group) => group.label === "右图");
+  if (!leftGroup || !rightGroup) {
+    problems.push(`${context}: difference round should show left and right picture groups`);
+    return;
+  }
+
+  const left = leftGroup.items;
+  const right = rightGroup.items;
+  if (/变了/.test(round.prompt)) {
+    checkChangedDifferenceRound(round, context, left, right);
+    return;
+  }
+  if (/多了/.test(round.prompt)) {
+    checkExtraDifferenceRound(round, context, left, right);
+    return;
+  }
+  if (/少了/.test(round.prompt)) {
+    checkMissingDifferenceRound(round, context, left, right);
+  }
+}
+
+function checkChangedDifferenceRound(round, context, left, right) {
+  const changedIndexes = left
+    .map((item, index) => (item !== right[index] ? index : -1))
+    .filter((index) => index !== -1);
+  if (left.length !== right.length || changedIndexes.length !== 1) {
+    problems.push(`${context}: changed-item round should have exactly one changed position`);
+    return;
+  }
+  const changedIndex = changedIndexes[0];
+  const oldItem = left[changedIndex];
+  const newItem = right[changedIndex];
+  const position = ordinalPosition(changedIndex, left.length);
+  if (round.answer !== newItem) {
+    problems.push(`${context}: changed-item answer should be the right-picture item at the changed position`);
+  }
+  if (!round.success.includes(position) || !round.success.includes(oldItem) || !round.success.includes(newItem)) {
+    problems.push(`${context}: changed-item success should name position, old item, and new item`);
+  }
+  if (!/从左到右|第一个|第二个|最后一个|一个一个/.test(round.retry)) {
+    problems.push(`${context}: changed-item retry should guide ordered left-to-right comparison`);
+  }
+  if (!/左图/.test(round.parentPrompt) || !/右图/.test(round.parentPrompt) || !/变成|变了/.test(round.parentPrompt)) {
+    problems.push(`${context}: changed-item parentPrompt should ask for a left/right explanation`);
+  }
+}
+
+function checkExtraDifferenceRound(round, context, left, right) {
+  const extraItems = unmatchedItems(right, left);
+  if (right.length !== left.length + 1 || extraItems.length !== 1) {
+    problems.push(`${context}: extra-item round should have exactly one extra right-picture item`);
+    return;
+  }
+  const extraItem = extraItems[0];
+  if (round.answer !== extraItem) {
+    problems.push(`${context}: extra-item answer should be the unmatched right-picture item`);
+  }
+  if (!round.success.includes(extraItem) || !/多/.test(round.success) || !allItemsMentioned(round.success, left)) {
+    problems.push(`${context}: extra-item success should name shared items before the extra item`);
+  }
+  if (!/左图/.test(round.retry) || !/右图/.test(round.retry) || !/找|配|剩/.test(round.retry)) {
+    problems.push(`${context}: extra-item retry should ask the child to match left-picture items first`);
+  }
+  if (!/左图/.test(round.parentPrompt) || !/右图/.test(round.parentPrompt) || !/剩|多|还/.test(round.parentPrompt)) {
+    problems.push(`${context}: extra-item parentPrompt should ask what was matched and what remains`);
+  }
+}
+
+function checkMissingDifferenceRound(round, context, left, right) {
+  const missingItems = unmatchedItems(left, right);
+  if (left.length !== right.length + 1 || missingItems.length !== 1) {
+    problems.push(`${context}: missing-item round should have exactly one missing left-picture item`);
+    return;
+  }
+  const missingItem = missingItems[0];
+  if (round.answer !== missingItem) {
+    problems.push(`${context}: missing-item answer should be the unmatched left-picture item`);
+  }
+  if (!round.success.includes(missingItem) || !/少|没有|找不到/.test(round.success) || !allItemsMentioned(round.success, right)) {
+    problems.push(`${context}: missing-item success should name shared items before the missing item`);
+  }
+  if (!/左图/.test(round.retry) || !/右图/.test(round.retry) || !/每一个|第一个|找/.test(round.retry)) {
+    problems.push(`${context}: missing-item retry should ask the child to check each left-picture item`);
+  }
+  if (!/有|找到/.test(round.parentPrompt) || !/没有|少|找不到/.test(round.parentPrompt)) {
+    problems.push(`${context}: missing-item parentPrompt should ask what was found and what is missing`);
+  }
+}
+
+function unmatchedItems(source, target) {
+  const remaining = [...target];
+  const unmatched = [];
+  for (const item of source) {
+    const matchedIndex = remaining.indexOf(item);
+    if (matchedIndex === -1) {
+      unmatched.push(item);
+    } else {
+      remaining.splice(matchedIndex, 1);
+    }
+  }
+  return unmatched;
+}
+
+function allItemsMentioned(text, items) {
+  return items.every((item) => text.includes(item));
+}
+
+function ordinalPosition(index, length) {
+  const names = ["第一个", "第二个", "第三个", "第四个", "第五个"];
+  if (index === 0) return "第一个";
+  if (index === length - 1) return "最后一个";
+  return names[index] ?? `第${index + 1}个`;
 }
 
 function checkLogicDifficultyNote(round, context) {

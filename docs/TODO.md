@@ -15,9 +15,9 @@ small enough to turn into a Spec Kit feature.
 - Review remaining text-only `VisualToken` fallbacks and decide which need
   raster assets.
 - Continue logic-house cluster reviews after `logic-sorter-switch`,
-  `logic-same-kind-detective`, and `logic-visual-match`, prioritizing
-  text-heavy or abstract clusters such as difference detective, block height
-  maps, and three-view blocks.
+  `logic-same-kind-detective`, `logic-visual-match`, and
+  `logic-difference-detective`, prioritizing abstract spatial clusters such as
+  block height maps and three-view blocks.
 
 ## P2
 

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-04T14:30:04.962Z",
+  "generatedAt": "2026-07-04T14:39:17.344Z",
   "recommendedVoice": "warm adult female Mandarin, smiling, preschool teacher, 0.85 speed, crisp consonants",
   "lineCount": 1538,
   "lines": [
@@ -7452,7 +7452,6 @@
         "logic-position-map/logic-position-map-6",
         "logic-position-map/logic-position-map-9",
         "logic-memory-camera/logic-memory-camera-5",
-        "logic-difference-detective/logic-difference-detective-1",
         "logic-difference-detective/logic-difference-detective-11",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-9",
         "logic-route-steps/logic-route-steps-5",
@@ -12497,6 +12496,7 @@
         "logic-same-kind-detective/logic-same-kind-detective-7",
         "logic-memory-camera/logic-memory-camera-1",
         "logic-memory-camera/logic-memory-camera-9",
+        "logic-difference-detective/logic-difference-detective-1",
         "logic-difference-detective/logic-difference-detective-8",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-5",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-8",
@@ -15243,9 +15243,9 @@
       ]
     },
     {
-      "id": "prompt-右图里哪一个变了-左图和右图从左到右慢慢比",
+      "id": "prompt-右图里哪一个变了-左图和右图从左到右慢慢比-找右图变成了谁",
       "kind": "prompt",
-      "text": "右图里哪一个变了？左图和右图从左到右慢慢比。",
+      "text": "右图里哪一个变了？左图和右图从左到右慢慢比，找右图变成了谁。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-difference-detective/logic-difference-detective-1",
@@ -15257,18 +15257,18 @@
       ]
     },
     {
-      "id": "success-左图中间是苹果-右图中间变成橘子",
+      "id": "success-第二个位置变了-左图是苹果-右图变成橘子",
       "kind": "success",
-      "text": "左图中间是苹果，右图中间变成橘子。",
+      "text": "第二个位置变了：左图是苹果，右图变成橘子。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-difference-detective/logic-difference-detective-1"
       ]
     },
     {
-      "id": "retry-不要跳着看-先比第一个-再比第二个",
+      "id": "retry-不要跳着看-从左到右一个一个比-先比第一个-再比第二个",
       "kind": "retry",
-      "text": "不要跳着看，先比第一个，再比第二个。",
+      "text": "不要跳着看，从左到右一个一个比，先比第一个，再比第二个。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
         "logic-difference-detective/logic-difference-detective-1",
@@ -15280,9 +15280,9 @@
       ]
     },
     {
-      "id": "parent-请她说完整句-左图是-右图变成了",
+      "id": "parent-请她说完整句-左图第几个是哪个-右图第几个变成了哪个",
       "kind": "parent",
-      "text": "请她说完整句：左图是……右图变成了……",
+      "text": "请她说完整句：左图第几个是哪个，右图第几个变成了哪个？",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-difference-detective/logic-difference-detective-1",
@@ -15294,45 +15294,45 @@
       ]
     },
     {
-      "id": "success-右图把足球换成了风筝",
+      "id": "success-第二个位置变了-左图是足球-右图变成风筝",
       "kind": "success",
-      "text": "右图把足球换成了风筝。",
+      "text": "第二个位置变了：左图是足球，右图变成风筝。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-difference-detective/logic-difference-detective-2"
       ]
     },
     {
-      "id": "success-最后一个从尺子变成了书本",
+      "id": "success-最后一个位置变了-左图是尺子-右图变成书本",
       "kind": "success",
-      "text": "最后一个从尺子变成了书本。",
+      "text": "最后一个位置变了：左图是尺子，右图变成书本。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-difference-detective/logic-difference-detective-3"
       ]
     },
     {
-      "id": "success-中间的草莓变成了葡萄",
+      "id": "success-第二个位置变了-左图是草莓-右图变成葡萄",
       "kind": "success",
-      "text": "中间的草莓变成了葡萄。",
+      "text": "第二个位置变了：左图是草莓，右图变成葡萄。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-difference-detective/logic-difference-detective-4"
       ]
     },
     {
-      "id": "success-中间从天空变成了小河",
+      "id": "success-第二个位置变了-左图是天空-右图变成小河",
       "kind": "success",
-      "text": "中间从天空变成了小河。",
+      "text": "第二个位置变了：左图是天空，右图变成小河。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-difference-detective/logic-difference-detective-5"
       ]
     },
     {
-      "id": "success-最后一个从自行车变成了飞机",
+      "id": "success-最后一个位置变了-左图是自行车-右图变成飞机",
       "kind": "success",
-      "text": "最后一个从自行车变成了飞机。",
+      "text": "最后一个位置变了：左图是自行车，右图变成飞机。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-difference-detective/logic-difference-detective-6"
@@ -15350,18 +15350,18 @@
       ]
     },
     {
-      "id": "success-右图多了风筝",
+      "id": "success-小狗和足球在右图里都找到了-右图还多了风筝",
       "kind": "success",
-      "text": "右图多了风筝。",
+      "text": "小狗和足球在右图里都找到了，右图还多了风筝。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-difference-detective/logic-difference-detective-7"
       ]
     },
     {
-      "id": "retry-把左图里的东西在右图里一个个找到",
+      "id": "retry-把左图里的东西在右图里一个个找到-剩下那一个就是多出来的",
       "kind": "retry",
-      "text": "把左图里的东西在右图里一个个找到。",
+      "text": "把左图里的东西在右图里一个个找到，剩下那一个就是多出来的。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
         "logic-difference-detective/logic-difference-detective-7",
@@ -15370,9 +15370,9 @@
       ]
     },
     {
-      "id": "parent-问她-左图里的两个都找到了吗-右图还剩什么",
+      "id": "parent-问她-左图里的两个在右图里都找到了吗-右图还多了什么",
       "kind": "parent",
-      "text": "问她：左图里的两个都找到了吗？右图还剩什么？",
+      "text": "问她：左图里的两个在右图里都找到了吗？右图还多了什么？",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-difference-detective/logic-difference-detective-7",
@@ -15381,18 +15381,18 @@
       ]
     },
     {
-      "id": "success-右图多了草莓",
+      "id": "success-苹果和橘子在右图里都找到了-右图还多了草莓",
       "kind": "success",
-      "text": "右图多了草莓。",
+      "text": "苹果和橘子在右图里都找到了，右图还多了草莓。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-difference-detective/logic-difference-detective-8"
       ]
     },
     {
-      "id": "success-右图多了尺子",
+      "id": "success-铅笔和书包在右图里都找到了-右图还多了尺子",
       "kind": "success",
-      "text": "右图多了尺子。",
+      "text": "铅笔和书包在右图里都找到了，右图还多了尺子。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-difference-detective/logic-difference-detective-9"
@@ -15410,18 +15410,18 @@
       ]
     },
     {
-      "id": "success-右图少了草莓",
+      "id": "success-蛋糕和杯子在右图里都找到了-右图少了草莓",
       "kind": "success",
-      "text": "右图少了草莓。",
+      "text": "蛋糕和杯子在右图里都找到了，右图少了草莓。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-difference-detective/logic-difference-detective-10"
       ]
     },
     {
-      "id": "retry-从左图第一个开始-在右图里找一找",
+      "id": "retry-从左图第一个开始-每一个都到右图里找一找",
       "kind": "retry",
-      "text": "从左图第一个开始，在右图里找一找。",
+      "text": "从左图第一个开始，每一个都到右图里找一找。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
         "logic-difference-detective/logic-difference-detective-10",
@@ -15430,9 +15430,9 @@
       ]
     },
     {
-      "id": "parent-请她边指边说-这个有-这个有-哪一个没有",
+      "id": "parent-请她边指边说-哪些在右图里找到了-哪一个没有",
       "kind": "parent",
-      "text": "请她边指边说：这个有，这个有，哪一个没有？",
+      "text": "请她边指边说：哪些在右图里找到了？哪一个没有？",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-difference-detective/logic-difference-detective-10",
@@ -15441,18 +15441,18 @@
       ]
     },
     {
-      "id": "success-右图少了小狗",
+      "id": "success-小猫和小兔在右图里都找到了-右图少了小狗",
       "kind": "success",
-      "text": "右图少了小狗。",
+      "text": "小猫和小兔在右图里都找到了，右图少了小狗。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-difference-detective/logic-difference-detective-11"
       ]
     },
     {
-      "id": "success-右图少了铅笔",
+      "id": "success-书本和尺子在右图里都找到了-右图少了铅笔",
       "kind": "success",
-      "text": "右图少了铅笔。",
+      "text": "书本和尺子在右图里都找到了，右图少了铅笔。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-difference-detective/logic-difference-detective-12"

@@ -3017,16 +3017,52 @@ function makeVisualMatchRounds(): RoundInput[] {
 
 function makeDifferenceDetectiveRounds(): RoundInput[] {
   const changedCases = [
-    { left: ["小猫", "苹果", "书包"], right: ["小猫", "橘子", "书包"], answer: "橘子", choices: ["橘子", "小猫", "书包"], success: "左图中间是苹果，右图中间变成橘子。" },
-    { left: ["小狗", "足球", "飞机"], right: ["小狗", "风筝", "飞机"], answer: "风筝", choices: ["风筝", "足球", "飞机"], success: "右图把足球换成了风筝。" },
-    { left: ["铅笔", "书包", "尺子"], right: ["铅笔", "书包", "书本"], answer: "书本", choices: ["书本", "书包", "尺子"], success: "最后一个从尺子变成了书本。" },
-    { left: ["蛋糕", "草莓", "杯子"], right: ["蛋糕", "葡萄", "杯子"], answer: "葡萄", choices: ["葡萄", "草莓", "杯子"], success: "中间的草莓变成了葡萄。" },
-    { left: ["小鸟", "天空", "小鱼"], right: ["小鸟", "小河", "小鱼"], answer: "小河", choices: ["小河", "天空", "小鱼"], success: "中间从天空变成了小河。" },
-    { left: ["小汽车", "公交车", "自行车"], right: ["小汽车", "公交车", "飞机"], answer: "飞机", choices: ["飞机", "公交车", "自行车"], success: "最后一个从自行车变成了飞机。" },
+    {
+      left: ["小猫", "苹果", "书包"],
+      right: ["小猫", "橘子", "书包"],
+      answer: "橘子",
+      choices: ["橘子", "苹果", "书包"],
+      success: "第二个位置变了：左图是苹果，右图变成橘子。",
+    },
+    {
+      left: ["小狗", "足球", "飞机"],
+      right: ["小狗", "风筝", "飞机"],
+      answer: "风筝",
+      choices: ["风筝", "足球", "飞机"],
+      success: "第二个位置变了：左图是足球，右图变成风筝。",
+    },
+    {
+      left: ["铅笔", "书包", "尺子"],
+      right: ["铅笔", "书包", "书本"],
+      answer: "书本",
+      choices: ["书本", "尺子", "书包"],
+      success: "最后一个位置变了：左图是尺子，右图变成书本。",
+    },
+    {
+      left: ["蛋糕", "草莓", "杯子"],
+      right: ["蛋糕", "葡萄", "杯子"],
+      answer: "葡萄",
+      choices: ["葡萄", "草莓", "杯子"],
+      success: "第二个位置变了：左图是草莓，右图变成葡萄。",
+    },
+    {
+      left: ["小鸟", "天空", "小鱼"],
+      right: ["小鸟", "小河", "小鱼"],
+      answer: "小河",
+      choices: ["小河", "天空", "小鱼"],
+      success: "第二个位置变了：左图是天空，右图变成小河。",
+    },
+    {
+      left: ["小汽车", "公交车", "自行车"],
+      right: ["小汽车", "公交车", "飞机"],
+      answer: "飞机",
+      choices: ["飞机", "自行车", "公交车"],
+      success: "最后一个位置变了：左图是自行车，右图变成飞机。",
+    },
   ].map((item, index) => ({
     level: index < 4 ? "L4" as AbilityLevel : "L5" as AbilityLevel,
     prompt: "右图里哪一个变了？",
-    instruction: "左图和右图从左到右慢慢比。",
+    instruction: "左图和右图从左到右慢慢比，找右图变成了谁。",
     visualGroups: [
       { label: "左图", items: item.left },
       { label: "右图", items: item.right },
@@ -3034,15 +3070,33 @@ function makeDifferenceDetectiveRounds(): RoundInput[] {
     choices: choiceSet(item.choices),
     answer: item.answer,
     success: item.success,
-    retry: "不要跳着看，先比第一个，再比第二个。",
-    parentPrompt: "请她说完整句：左图是……右图变成了……",
+    retry: "不要跳着看，从左到右一个一个比，先比第一个，再比第二个。",
+    parentPrompt: "请她说完整句：左图第几个是哪个，右图第几个变成了哪个？",
     abilityTags: ["找不同", "细节比较"],
   }));
 
   const extraCases = [
-    { left: ["小狗", "足球"], right: ["小狗", "足球", "风筝"], answer: "风筝", choices: ["风筝", "足球", "小狗"], success: "右图多了风筝。" },
-    { left: ["苹果", "橘子"], right: ["苹果", "橘子", "草莓"], answer: "草莓", choices: ["草莓", "苹果", "橘子"], success: "右图多了草莓。" },
-    { left: ["铅笔", "书包"], right: ["铅笔", "书包", "尺子"], answer: "尺子", choices: ["尺子", "铅笔", "书包"], success: "右图多了尺子。" },
+    {
+      left: ["小狗", "足球"],
+      right: ["小狗", "足球", "风筝"],
+      answer: "风筝",
+      choices: ["风筝", "足球", "小狗"],
+      success: "小狗和足球在右图里都找到了，右图还多了风筝。",
+    },
+    {
+      left: ["苹果", "橘子"],
+      right: ["苹果", "橘子", "草莓"],
+      answer: "草莓",
+      choices: ["草莓", "苹果", "橘子"],
+      success: "苹果和橘子在右图里都找到了，右图还多了草莓。",
+    },
+    {
+      left: ["铅笔", "书包"],
+      right: ["铅笔", "书包", "尺子"],
+      answer: "尺子",
+      choices: ["尺子", "铅笔", "书包"],
+      success: "铅笔和书包在右图里都找到了，右图还多了尺子。",
+    },
   ].map((item) => ({
     level: "L5" as AbilityLevel,
     prompt: "右图比左图多了什么？",
@@ -3054,15 +3108,33 @@ function makeDifferenceDetectiveRounds(): RoundInput[] {
     choices: choiceSet(item.choices),
     answer: item.answer,
     success: item.success,
-    retry: "把左图里的东西在右图里一个个找到。",
-    parentPrompt: "问她：左图里的两个都找到了吗？右图还剩什么？",
+    retry: "把左图里的东西在右图里一个个找到，剩下那一个就是多出来的。",
+    parentPrompt: "问她：左图里的两个在右图里都找到了吗？右图还多了什么？",
     abilityTags: ["找不同", "排除法"],
   }));
 
   const missingCases = [
-    { left: ["蛋糕", "草莓", "杯子"], right: ["蛋糕", "杯子"], answer: "草莓", choices: ["草莓", "蛋糕", "杯子"], success: "右图少了草莓。" },
-    { left: ["小猫", "小狗", "小兔"], right: ["小猫", "小兔"], answer: "小狗", choices: ["小狗", "小猫", "小兔"], success: "右图少了小狗。" },
-    { left: ["书本", "铅笔", "尺子"], right: ["书本", "尺子"], answer: "铅笔", choices: ["铅笔", "书本", "尺子"], success: "右图少了铅笔。" },
+    {
+      left: ["蛋糕", "草莓", "杯子"],
+      right: ["蛋糕", "杯子"],
+      answer: "草莓",
+      choices: ["草莓", "蛋糕", "杯子"],
+      success: "蛋糕和杯子在右图里都找到了，右图少了草莓。",
+    },
+    {
+      left: ["小猫", "小狗", "小兔"],
+      right: ["小猫", "小兔"],
+      answer: "小狗",
+      choices: ["小狗", "小猫", "小兔"],
+      success: "小猫和小兔在右图里都找到了，右图少了小狗。",
+    },
+    {
+      left: ["书本", "铅笔", "尺子"],
+      right: ["书本", "尺子"],
+      answer: "铅笔",
+      choices: ["铅笔", "书本", "尺子"],
+      success: "书本和尺子在右图里都找到了，右图少了铅笔。",
+    },
   ].map((item) => ({
     level: "L5" as AbilityLevel,
     prompt: "右图比左图少了什么？",
@@ -3074,8 +3146,8 @@ function makeDifferenceDetectiveRounds(): RoundInput[] {
     choices: choiceSet(item.choices),
     answer: item.answer,
     success: item.success,
-    retry: "从左图第一个开始，在右图里找一找。",
-    parentPrompt: "请她边指边说：这个有，这个有，哪一个没有？",
+    retry: "从左图第一个开始，每一个都到右图里找一找。",
+    parentPrompt: "请她边指边说：哪些在右图里找到了？哪一个没有？",
     abilityTags: ["找不同", "有序观察"],
   }));
 
