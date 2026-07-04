@@ -3652,10 +3652,10 @@ function makeRouteStepRounds(): RoundInput[] {
   };
 
   const oneStep = [
-    { start: "小狗", move: "往右一步", answer: "苹果", choices: ["苹果", "足球", "小鸟"], success: "从小狗往右一步到苹果。" },
-    { start: "盒子", move: "往上一步", answer: "苹果", choices: ["苹果", "足球", "蛋糕"], success: "盒子上面是苹果。" },
-    { start: "盒子", move: "往下一步", answer: "蛋糕", choices: ["苹果", "蛋糕", "书包"], success: "盒子下面是蛋糕。" },
-    { start: "书包", move: "往左一步", answer: "盒子", choices: ["盒子", "小鸟", "终点"], success: "书包左边是盒子。" },
+    { start: "小狗", move: "往右一步", answer: "苹果", choices: ["苹果", "足球", "小鸟"] },
+    { start: "盒子", move: "往上一步", answer: "苹果", choices: ["苹果", "足球", "蛋糕"] },
+    { start: "盒子", move: "往下一步", answer: "蛋糕", choices: ["苹果", "蛋糕", "书包"] },
+    { start: "书包", move: "往左一步", answer: "盒子", choices: ["盒子", "小鸟", "终点"] },
   ].map((item) => ({
     level: "L4" as AbilityLevel,
     prompt: `从${item.start}出发，${item.move}到哪里？`,
@@ -3664,30 +3664,30 @@ function makeRouteStepRounds(): RoundInput[] {
     grid: routeGrid,
     choices: choiceSet(item.choices),
     answer: item.answer,
-    success: item.success,
-    retry: "先别跳格子，只走一步。",
-    parentPrompt: "请她用手指从起点移动一步。",
+    success: `从${item.start}出发，${item.move}到${item.answer}。`,
+    retry: `先找到${item.start}，再${item.move}，只走一格。`,
+    parentPrompt: `请她用手指点住${item.start}，${item.move}走一格，说到${item.answer}。`,
     abilityTags: ["方向执行", "一步路线"],
   }));
 
   const twoStep = [
-    { start: "起点", moves: "先往右一步，再往下一步", answer: "盒子", choices: ["小猫", "盒子", "足球"], success: "从起点先到小猫，再往下到盒子。" },
-    { start: "小猫", moves: "先往右一步，再往右一步", answer: "小鸟", choices: ["风筝", "小鸟", "飞机"], success: "从小猫往右到风筝，再往右到小鸟。" },
-    { start: "盒子", moves: "先往右一步，再往下一步", answer: "小狗", choices: ["书包", "小狗", "飞机"], success: "从盒子到书包，再往下到小狗。" },
-    { start: "书包", moves: "先往右一步，再往下一步", answer: "终点", choices: ["终点", "飞机", "小狗"], success: "从书包到飞机，再往下到终点。" },
-    { start: "蛋糕", moves: "先往右一步，再往右一步", answer: "终点", choices: ["小狗", "终点", "盒子"], success: "从蛋糕到小狗，再到终点。" },
-    { start: "足球", moves: "先往右一步，再往上一步", answer: "小猫", choices: ["盒子", "小猫", "起点"], success: "从足球到盒子，再往上到小猫。" },
+    { start: "起点", firstMove: "往右一步", secondMove: "往下一步", first: "小猫", answer: "盒子", choices: ["小猫", "盒子", "足球"] },
+    { start: "小猫", firstMove: "往右一步", secondMove: "往右一步", first: "风筝", answer: "小鸟", choices: ["风筝", "小鸟", "飞机"] },
+    { start: "盒子", firstMove: "往右一步", secondMove: "往下一步", first: "书包", answer: "小狗", choices: ["书包", "小狗", "飞机"] },
+    { start: "书包", firstMove: "往右一步", secondMove: "往下一步", first: "飞机", answer: "终点", choices: ["终点", "飞机", "小狗"] },
+    { start: "蛋糕", firstMove: "往右一步", secondMove: "往右一步", first: "小狗", answer: "终点", choices: ["小狗", "终点", "盒子"] },
+    { start: "足球", firstMove: "往右一步", secondMove: "往上一步", first: "盒子", answer: "小猫", choices: ["盒子", "小猫", "起点"] },
   ].map((item, index) => ({
     level: index < 3 ? "L5" as AbilityLevel : "L6" as AbilityLevel,
-    prompt: `从${item.start}出发，${item.moves}，到哪里？`,
+    prompt: `从${item.start}出发，先${item.firstMove}，再${item.secondMove}，到哪里？`,
     instruction: "把两步都记住，按顺序走。",
     sceneImage,
     grid: parkGrid,
     choices: choiceSet(item.choices),
     answer: item.answer,
-    success: item.success,
-    retry: "先做第一步，再做第二步，不要一下子猜。",
-    parentPrompt: "问她：第一步到了哪里？第二步又到了哪里？",
+    success: `从${item.start}出发，先${item.firstMove}到${item.first}，再${item.secondMove}到${item.answer}，答案是${item.answer}。`,
+    retry: `先${item.firstMove}，说第一步到哪里；再${item.secondMove}，说第二步到哪里。`,
+    parentPrompt: `请她从${item.start}出发，先说第一步到${item.first}，再说第二步到${item.answer}，最后答案是${item.answer}。`,
     abilityTags: ["两步路线", "工作记忆"],
   }));
 

@@ -174,6 +174,9 @@ for (const game of games) {
     if (game.id === "logic-three-view-blocks") {
       checkThreeViewBlockRoundQuality(round, context);
     }
+    if (game.id === "logic-route-steps") {
+      checkRouteStepRoundQuality(round, context);
+    }
     if (!round.sceneImage && !round.sequence && !round.visualGroups && !round.grid && !round.matrix && !round.memory) {
       problems.push(`${context}: missing visual surface`);
     }
@@ -907,6 +910,141 @@ function heightSequenceLength(value) {
     return parts.every(isNumericText) ? parts.length : 0;
   }
   return 0;
+}
+
+function checkRouteStepRoundQuality(round, context) {
+  const cells = round.grid?.cells;
+  if (!isRouteGrid(cells)) {
+    problems.push(`${context}: route-step round should show a rectangular grid`);
+    return;
+  }
+
+  const start = parseRouteStart(round.prompt);
+  if (!start) {
+    problems.push(`${context}: route-step prompt should name a grid start item`);
+    return;
+  }
+
+  const startPositions = findGridPositions(cells, start);
+  if (startPositions.length !== 1) {
+    problems.push(`${context}: route-step start item should appear exactly once in the grid`);
+    return;
+  }
+
+  const moves = parseRouteMoves(round.prompt);
+  if (moves.length < 1 || moves.length > 2) {
+    problems.push(`${context}: route-step prompt should contain one or two supported one-cell moves`);
+    return;
+  }
+
+  const route = traceRoute(cells, startPositions[0], moves);
+  if (!route) {
+    problems.push(`${context}: route-step move should stay inside the grid`);
+    return;
+  }
+
+  const finalDestination = route[route.length - 1].item;
+  if (round.answer !== finalDestination) {
+    problems.push(`${context}: route-step answer should equal the computed destination`);
+  }
+
+  const matchingChoices = round.choices.filter((choice) => choice.value === finalDestination);
+  if (matchingChoices.length !== 1) {
+    problems.push(`${context}: route-step choices should include the computed destination exactly once`);
+  }
+
+  if (moves.length === 1) {
+    checkRouteOneStepWording(round, context, start, moves[0], finalDestination);
+  } else {
+    checkRouteTwoStepWording(round, context, start, moves, route);
+  }
+}
+
+function checkRouteOneStepWording(round, context, start, move, destination) {
+  if (!round.success.includes(start) || !round.success.includes(move.text) || !round.success.includes(destination)) {
+    problems.push(`${context}: route-step one-step success should name start, direction, and destination`);
+  }
+  if (!round.retry.includes(start) || !round.retry.includes(move.text) || !/一步|一格/.test(round.retry)) {
+    problems.push(`${context}: route-step one-step retry should ask for exactly one move from the start`);
+  }
+  if (!round.parentPrompt.includes(start) || !round.parentPrompt.includes(move.text) || !/指|点|移动|走/.test(round.parentPrompt)) {
+    problems.push(`${context}: route-step one-step parentPrompt should ask the child to point one move from the start`);
+  }
+}
+
+function checkRouteTwoStepWording(round, context, start, moves, route) {
+  const firstDestination = route[0].item;
+  const finalDestination = route[1].item;
+  if (
+    !round.success.includes(start) ||
+    !round.success.includes(moves[0].text) ||
+    !round.success.includes(firstDestination) ||
+    !round.success.includes(moves[1].text) ||
+    !round.success.includes(finalDestination) ||
+    !/先|第一步/.test(round.success) ||
+    !/再|第二步/.test(round.success)
+  ) {
+    problems.push(`${context}: route-step two-step success should name start, first destination, second move, and final destination`);
+  }
+  if (!round.retry.includes(moves[0].text) || !round.retry.includes(moves[1].text) || !/第一步|先/.test(round.retry) || !/第二步|再/.test(round.retry)) {
+    problems.push(`${context}: route-step two-step retry should ask for first destination before second move`);
+  }
+  if (
+    !round.parentPrompt.includes(start) ||
+    !round.parentPrompt.includes(firstDestination) ||
+    !round.parentPrompt.includes(finalDestination) ||
+    !/第一步|先/.test(round.parentPrompt) ||
+    !/第二步|最后|再/.test(round.parentPrompt)
+  ) {
+    problems.push(`${context}: route-step two-step parentPrompt should ask for first destination, second destination, and final answer`);
+  }
+}
+
+function isRouteGrid(cells) {
+  return Array.isArray(cells) && cells.length > 0 && cells.every((row) => Array.isArray(row) && row.length > 0 && row.every((item) => typeof item === "string" && item.trim())) && hasRectangularRows(cells);
+}
+
+function parseRouteStart(prompt) {
+  return prompt.match(/^从(.+?)出发/)?.[1] ?? null;
+}
+
+function parseRouteMoves(prompt) {
+  return [...prompt.matchAll(/往(右|左|上|下)一步/g)].map((match) => ({
+    direction: match[1],
+    text: `往${match[1]}一步`,
+    delta: routeDirectionDelta(match[1]),
+  })).filter((move) => move.delta);
+}
+
+function routeDirectionDelta(direction) {
+  return {
+    右: [0, 1],
+    左: [0, -1],
+    上: [-1, 0],
+    下: [1, 0],
+  }[direction] ?? null;
+}
+
+function findGridPositions(cells, item) {
+  const positions = [];
+  cells.forEach((row, rowIndex) => {
+    row.forEach((cell, columnIndex) => {
+      if (cell === item) positions.push([rowIndex, columnIndex]);
+    });
+  });
+  return positions;
+}
+
+function traceRoute(cells, startPosition, moves) {
+  let [row, column] = startPosition;
+  const route = [];
+  for (const move of moves) {
+    row += move.delta[0];
+    column += move.delta[1];
+    if (!cells[row]?.[column]) return null;
+    route.push({ row, column, item: cells[row][column] });
+  }
+  return route;
 }
 
 function checkLogicDifficultyNote(round, context) {

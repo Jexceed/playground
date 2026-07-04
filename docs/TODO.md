@@ -17,8 +17,9 @@ small enough to turn into a Spec Kit feature.
 - Run a broader logic-house completion review after `logic-sorter-switch`,
   `logic-same-kind-detective`, `logic-visual-match`,
   `logic-difference-detective`, `logic-block-height-map`, and
-  `logic-three-view-blocks`; add targeted audits for any remaining cluster whose
-  picture, text, audio, option quality, or parent explanation is still weak.
+  `logic-three-view-blocks`, and `logic-route-steps`; add targeted audits for
+  any remaining cluster whose picture, text, audio, option quality, or parent
+  explanation is still weak.
 
 ## P2
 

@@ -58,6 +58,16 @@ grouped by date.
   and uses one height per visible column or row.
 - Exported updated voice lines and regenerated the local Edge voice manifest for
   the rewritten three-view content.
+- Added the `008-route-steps-quality` Spec Kit feature for one-step and two-step
+  route reasoning quality.
+- Expanded the curriculum audit with route-step checks that compute destinations
+  from visible grids, validate ordered moves, and require start/intermediate/final
+  explanation text.
+- Reworked `logic-route-steps` success feedback, retry guidance, and parent
+  prompts so each round names the start item, direction moves, first landing
+  spot, and final destination.
+- Exported updated voice lines and regenerated the local Edge voice manifest for
+  the rewritten route-step content.
 - Initialized GitHub Spec Kit with Codex skills integration.
 - Established the project constitution in `.specify/memory/constitution.md`.
 - Expanded `AGENTS.md` with project overview, source-of-truth rules,

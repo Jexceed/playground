@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-04T15:13:23.043Z",
+  "generatedAt": "2026-07-04T15:24:11.872Z",
   "recommendedVoice": "warm adult female Mandarin, smiling, preschool teacher, 0.85 speed, crisp consonants",
-  "lineCount": 1539,
+  "lineCount": 1552,
   "lines": [
     {
       "id": "game-title-数一数",
@@ -17517,36 +17517,30 @@
       ]
     },
     {
-      "id": "success-从小狗往右一步到苹果",
+      "id": "success-从小狗出发-往右一步到苹果",
       "kind": "success",
-      "text": "从小狗往右一步到苹果。",
+      "text": "从小狗出发，往右一步到苹果。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-route-steps/logic-route-steps-1"
       ]
     },
     {
-      "id": "retry-先别跳格子-只走一步",
+      "id": "retry-先找到小狗-再往右一步-只走一格",
       "kind": "retry",
-      "text": "先别跳格子，只走一步。",
+      "text": "先找到小狗，再往右一步，只走一格。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
-        "logic-route-steps/logic-route-steps-1",
-        "logic-route-steps/logic-route-steps-2",
-        "logic-route-steps/logic-route-steps-3",
-        "logic-route-steps/logic-route-steps-4"
+        "logic-route-steps/logic-route-steps-1"
       ]
     },
     {
-      "id": "parent-请她用手指从起点移动一步",
+      "id": "parent-请她用手指点住小狗-往右一步走一格-说到苹果",
       "kind": "parent",
-      "text": "请她用手指从起点移动一步。",
+      "text": "请她用手指点住小狗，往右一步走一格，说到苹果。",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-route-steps/logic-route-steps-1",
-        "logic-route-steps/logic-route-steps-2",
-        "logic-route-steps/logic-route-steps-3",
-        "logic-route-steps/logic-route-steps-4"
+        "logic-route-steps/logic-route-steps-1"
       ]
     },
     {
@@ -17559,10 +17553,28 @@
       ]
     },
     {
-      "id": "success-盒子上面是苹果",
+      "id": "success-从盒子出发-往上一步到苹果",
       "kind": "success",
-      "text": "盒子上面是苹果。",
+      "text": "从盒子出发，往上一步到苹果。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-route-steps/logic-route-steps-2"
+      ]
+    },
+    {
+      "id": "retry-先找到盒子-再往上一步-只走一格",
+      "kind": "retry",
+      "text": "先找到盒子，再往上一步，只走一格。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-route-steps/logic-route-steps-2"
+      ]
+    },
+    {
+      "id": "parent-请她用手指点住盒子-往上一步走一格-说到苹果",
+      "kind": "parent",
+      "text": "请她用手指点住盒子，往上一步走一格，说到苹果。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-route-steps/logic-route-steps-2"
       ]
@@ -17577,10 +17589,28 @@
       ]
     },
     {
-      "id": "success-盒子下面是蛋糕",
+      "id": "success-从盒子出发-往下一步到蛋糕",
       "kind": "success",
-      "text": "盒子下面是蛋糕。",
+      "text": "从盒子出发，往下一步到蛋糕。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-route-steps/logic-route-steps-3"
+      ]
+    },
+    {
+      "id": "retry-先找到盒子-再往下一步-只走一格",
+      "kind": "retry",
+      "text": "先找到盒子，再往下一步，只走一格。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-route-steps/logic-route-steps-3"
+      ]
+    },
+    {
+      "id": "parent-请她用手指点住盒子-往下一步走一格-说到蛋糕",
+      "kind": "parent",
+      "text": "请她用手指点住盒子，往下一步走一格，说到蛋糕。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-route-steps/logic-route-steps-3"
       ]
@@ -17595,10 +17625,28 @@
       ]
     },
     {
-      "id": "success-书包左边是盒子",
+      "id": "success-从书包出发-往左一步到盒子",
       "kind": "success",
-      "text": "书包左边是盒子。",
+      "text": "从书包出发，往左一步到盒子。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-route-steps/logic-route-steps-4"
+      ]
+    },
+    {
+      "id": "retry-先找到书包-再往左一步-只走一格",
+      "kind": "retry",
+      "text": "先找到书包，再往左一步，只走一格。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-route-steps/logic-route-steps-4"
+      ]
+    },
+    {
+      "id": "parent-请她用手指点住书包-往左一步走一格-说到盒子",
+      "kind": "parent",
+      "text": "请她用手指点住书包，往左一步走一格，说到盒子。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-route-steps/logic-route-steps-4"
       ]
@@ -17624,40 +17672,32 @@
       ]
     },
     {
-      "id": "success-从起点先到小猫-再往下到盒子",
+      "id": "success-从起点出发-先往右一步到小猫-再往下一步到盒子-答案是盒子",
       "kind": "success",
-      "text": "从起点先到小猫，再往下到盒子。",
+      "text": "从起点出发，先往右一步到小猫，再往下一步到盒子，答案是盒子。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-route-steps/logic-route-steps-5"
       ]
     },
     {
-      "id": "retry-先做第一步-再做第二步-不要一下子猜",
+      "id": "retry-先往右一步-说第一步到哪里-再往下一步-说第二步到哪里",
       "kind": "retry",
-      "text": "先做第一步，再做第二步，不要一下子猜。",
+      "text": "先往右一步，说第一步到哪里；再往下一步，说第二步到哪里。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
         "logic-route-steps/logic-route-steps-5",
-        "logic-route-steps/logic-route-steps-6",
         "logic-route-steps/logic-route-steps-7",
-        "logic-route-steps/logic-route-steps-8",
-        "logic-route-steps/logic-route-steps-9",
-        "logic-route-steps/logic-route-steps-10"
+        "logic-route-steps/logic-route-steps-8"
       ]
     },
     {
-      "id": "parent-问她-第一步到了哪里-第二步又到了哪里",
+      "id": "parent-请她从起点出发-先说第一步到小猫-再说第二步到盒子-最后答案是盒子",
       "kind": "parent",
-      "text": "问她：第一步到了哪里？第二步又到了哪里？",
+      "text": "请她从起点出发，先说第一步到小猫，再说第二步到盒子，最后答案是盒子。",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-route-steps/logic-route-steps-5",
-        "logic-route-steps/logic-route-steps-6",
-        "logic-route-steps/logic-route-steps-7",
-        "logic-route-steps/logic-route-steps-8",
-        "logic-route-steps/logic-route-steps-9",
-        "logic-route-steps/logic-route-steps-10"
+        "logic-route-steps/logic-route-steps-5"
       ]
     },
     {
@@ -17684,10 +17724,29 @@
       ]
     },
     {
-      "id": "success-从小猫往右到风筝-再往右到小鸟",
+      "id": "success-从小猫出发-先往右一步到风筝-再往右一步到小鸟-答案是小鸟",
       "kind": "success",
-      "text": "从小猫往右到风筝，再往右到小鸟。",
+      "text": "从小猫出发，先往右一步到风筝，再往右一步到小鸟，答案是小鸟。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-route-steps/logic-route-steps-6"
+      ]
+    },
+    {
+      "id": "retry-先往右一步-说第一步到哪里-再往右一步-说第二步到哪里",
+      "kind": "retry",
+      "text": "先往右一步，说第一步到哪里；再往右一步，说第二步到哪里。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-route-steps/logic-route-steps-6",
+        "logic-route-steps/logic-route-steps-9"
+      ]
+    },
+    {
+      "id": "parent-请她从小猫出发-先说第一步到风筝-再说第二步到小鸟-最后答案是小鸟",
+      "kind": "parent",
+      "text": "请她从小猫出发，先说第一步到风筝，再说第二步到小鸟，最后答案是小鸟。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-route-steps/logic-route-steps-6"
       ]
@@ -17702,10 +17761,19 @@
       ]
     },
     {
-      "id": "success-从盒子到书包-再往下到小狗",
+      "id": "success-从盒子出发-先往右一步到书包-再往下一步到小狗-答案是小狗",
       "kind": "success",
-      "text": "从盒子到书包，再往下到小狗。",
+      "text": "从盒子出发，先往右一步到书包，再往下一步到小狗，答案是小狗。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-route-steps/logic-route-steps-7"
+      ]
+    },
+    {
+      "id": "parent-请她从盒子出发-先说第一步到书包-再说第二步到小狗-最后答案是小狗",
+      "kind": "parent",
+      "text": "请她从盒子出发，先说第一步到书包，再说第二步到小狗，最后答案是小狗。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-route-steps/logic-route-steps-7"
       ]
@@ -17720,10 +17788,19 @@
       ]
     },
     {
-      "id": "success-从书包到飞机-再往下到终点",
+      "id": "success-从书包出发-先往右一步到飞机-再往下一步到终点-答案是终点",
       "kind": "success",
-      "text": "从书包到飞机，再往下到终点。",
+      "text": "从书包出发，先往右一步到飞机，再往下一步到终点，答案是终点。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-route-steps/logic-route-steps-8"
+      ]
+    },
+    {
+      "id": "parent-请她从书包出发-先说第一步到飞机-再说第二步到终点-最后答案是终点",
+      "kind": "parent",
+      "text": "请她从书包出发，先说第一步到飞机，再说第二步到终点，最后答案是终点。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-route-steps/logic-route-steps-8"
       ]
@@ -17738,10 +17815,19 @@
       ]
     },
     {
-      "id": "success-从蛋糕到小狗-再到终点",
+      "id": "success-从蛋糕出发-先往右一步到小狗-再往右一步到终点-答案是终点",
       "kind": "success",
-      "text": "从蛋糕到小狗，再到终点。",
+      "text": "从蛋糕出发，先往右一步到小狗，再往右一步到终点，答案是终点。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-route-steps/logic-route-steps-9"
+      ]
+    },
+    {
+      "id": "parent-请她从蛋糕出发-先说第一步到小狗-再说第二步到终点-最后答案是终点",
+      "kind": "parent",
+      "text": "请她从蛋糕出发，先说第一步到小狗，再说第二步到终点，最后答案是终点。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-route-steps/logic-route-steps-9"
       ]
@@ -17756,10 +17842,28 @@
       ]
     },
     {
-      "id": "success-从足球到盒子-再往上到小猫",
+      "id": "success-从足球出发-先往右一步到盒子-再往上一步到小猫-答案是小猫",
       "kind": "success",
-      "text": "从足球到盒子，再往上到小猫。",
+      "text": "从足球出发，先往右一步到盒子，再往上一步到小猫，答案是小猫。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-route-steps/logic-route-steps-10"
+      ]
+    },
+    {
+      "id": "retry-先往右一步-说第一步到哪里-再往上一步-说第二步到哪里",
+      "kind": "retry",
+      "text": "先往右一步，说第一步到哪里；再往上一步，说第二步到哪里。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-route-steps/logic-route-steps-10"
+      ]
+    },
+    {
+      "id": "parent-请她从足球出发-先说第一步到盒子-再说第二步到小猫-最后答案是小猫",
+      "kind": "parent",
+      "text": "请她从足球出发，先说第一步到盒子，再说第二步到小猫，最后答案是小猫。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-route-steps/logic-route-steps-10"
       ]
