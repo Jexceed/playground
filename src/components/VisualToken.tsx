@@ -342,10 +342,10 @@ function Illustration({ kind, small = false }: { kind: string; small?: boolean }
 }
 
 function rasterForKind(kind: string) {
-  if (kind === "cat" || kind === "orangeCat") return imageGallery.avatars.cat;
-  if (kind === "dog") return imageGallery.avatars.dog;
-  if (kind === "rabbit") return imageGallery.avatars.rabbit;
-  if (kind === "bear") return imageGallery.avatars.bear;
+  if (kind === "cat" || kind === "orangeCat") return imageGallery.characters.cat;
+  if (kind === "dog") return imageGallery.characters.dog;
+  if (kind === "rabbit") return imageGallery.characters.rabbit;
+  if (kind === "bear") return imageGallery.characters.bear;
   if (kind === "strawberry") return imageGallery.items.strawberry;
   if (kind === "apple") return imageGallery.items.apple;
   if (kind === "orange") return imageGallery.items.orange;

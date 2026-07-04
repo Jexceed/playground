@@ -1,4 +1,4 @@
-# 小小思考岛构建与生成规范
+# 小小思考屋构建与生成规范
 
 这份规范用于每次大更新后的统一生成、检查和提交。
 
@@ -37,8 +37,10 @@ pnpm generate:f5-voices -- --ref-audio /path/to/ref.wav --ref-text "参考音频
 
 - 场景图放在 `public/images/scenes/`，注册到 `src/data/imageGallery.ts`。
 - 场景图必须是 1200x675 PNG，并保留 `source/` 原图。
-- 高频对象图优先用 `public/images/items/` 或 `public/images/avatars/` 的统一 raster 资产；只有缺资产时才用内置 SVG 图卡。
+- 角色头像放在 `public/images/characters/`，不要混入物品目录。
+- 高频物体和动作图放在 `public/images/items/`；只有缺资产时才用内置 SVG 图卡。
 - 场景图要尽量撑满题面，但不能裁掉关键线索。
+- 资源目录和 `imageGallery` 分类必须一致：`brand`、`characters`、`items`、`scenes`。
 
 ## UI
 

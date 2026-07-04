@@ -114,21 +114,21 @@ export const imageGallery = {
       alt: "野餐桌上几个孩子面前有盘子，中间有点心，正在一个一个轮流分。",
     },
   },
-  avatars: {
+  characters: {
     cat: {
-      src: "/images/avatars/cat.png",
+      src: "/images/characters/cat.png",
       alt: "小猫头像",
     },
     dog: {
-      src: "/images/avatars/dog.png",
+      src: "/images/characters/dog.png",
       alt: "小狗头像",
     },
     rabbit: {
-      src: "/images/avatars/rabbit.png",
+      src: "/images/characters/rabbit.png",
       alt: "小兔头像",
     },
     bear: {
-      src: "/images/avatars/bear.png",
+      src: "/images/characters/bear.png",
       alt: "小熊头像",
     },
   },
@@ -312,6 +312,6 @@ export const imageGallery = {
   },
 } satisfies {
   scenes: Record<string, GalleryImage>;
-  avatars: Record<string, GalleryImage>;
+  characters: Record<string, GalleryImage>;
   items: Record<string, GalleryImage>;
 };
