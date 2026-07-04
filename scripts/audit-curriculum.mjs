@@ -197,6 +197,9 @@ for (const game of games) {
     if (game.id === "logic-memory-camera") {
       checkMemoryCameraRoundQuality(round, context);
     }
+    if (game.id === "logic-order-plan") {
+      checkOrderPlanRoundQuality(round, context);
+    }
     if (!round.sceneImage && !round.sequence && !round.visualGroups && !round.grid && !round.matrix && !round.memory) {
       problems.push(`${context}: missing visual surface`);
     }
@@ -1340,6 +1343,52 @@ function memoryOrdinalIndex(ordinal, length) {
     第三个: 2,
     最后一个: length - 1,
   }[ordinal] ?? -1;
+}
+
+function checkOrderPlanRoundQuality(round, context) {
+  const sequence = round.sequence;
+  if (!Array.isArray(sequence) || sequence.length === 0) {
+    problems.push(`${context}: order-plan round should show a sequence`);
+    return;
+  }
+
+  const missingCount = sequence.filter((item) => item === "?").length;
+  if (missingCount !== 1) {
+    problems.push(`${context}: order-plan sequence should contain exactly one missing step`);
+    return;
+  }
+
+  const answerChoices = round.choices.filter((choice) => choice.value === round.answer);
+  if (answerChoices.length !== 1) {
+    problems.push(`${context}: order-plan choices should include the answer exactly once`);
+    return;
+  }
+
+  const answerLabel = answerChoices[0].label;
+  const filledSequence = sequence.map((item) => (item === "?" ? answerLabel : orderPlanStepLabel(item)));
+  if (!allItemsMentioned(round.success, filledSequence) || !round.success.includes(answerLabel) || !/顺序|缺少|所以|先|然后|再|最后/.test(round.success)) {
+    problems.push(`${context}: order-plan success should name filled sequence and answer`);
+  }
+  if (!allItemsMentioned(round.retry, filledSequence) || !round.retry.includes(answerLabel) || !/从左到右|顺序|缺少|先|然后|再|最后/.test(round.retry)) {
+    problems.push(`${context}: order-plan retry should name filled sequence, answer, and replay strategy`);
+  }
+  if (!allItemsMentioned(round.parentPrompt, filledSequence) || !round.parentPrompt.includes(answerLabel) || !/复述|说|指|为什么|解释/.test(round.parentPrompt)) {
+    problems.push(`${context}: order-plan parentPrompt should ask for a child explanation of the filled sequence`);
+  }
+}
+
+function orderPlanStepLabel(item) {
+  return {
+    "🧒": "小朋友",
+    "🌊": "小河",
+    "🌱": "小芽",
+    "🌼": "花",
+    "🥕": "胡萝卜",
+    "🏁": "小旗",
+    "🔴": "红灯",
+    "🟢": "绿灯",
+    "🧱倒了": "积木倒了",
+  }[item] ?? item;
 }
 
 function checkAddressMapRoundQuality(round, context) {

@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-04T16:08:41.081Z",
+  "generatedAt": "2026-07-04T16:18:12.077Z",
   "recommendedVoice": "warm adult female Mandarin, smiling, preschool teacher, 0.85 speed, crisp consonants",
-  "lineCount": 1600,
+  "lineCount": 1640,
   "lines": [
     {
       "id": "game-title-数一数",
@@ -5847,58 +5847,30 @@
       ]
     },
     {
-      "id": "success-先拿杯子-才好倒水喝水",
+      "id": "success-按顺序是口渴-先拿杯子-倒水-喝水-所以缺少的是先拿杯子",
       "kind": "success",
-      "text": "先拿杯子，才好倒水喝水。",
+      "text": "按顺序是口渴、先拿杯子、倒水、喝水，所以缺少的是先拿杯子。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-order-plan/logic-order-plan-1"
       ]
     },
     {
-      "id": "retry-先从生活目标往前想-没有这一步-后面的事能不能发生",
+      "id": "retry-先从左到右按顺序说-口渴-先拿杯子-倒水-喝水-再想缺少的先拿杯子让后面能继续",
       "kind": "retry",
-      "text": "先从生活目标往前想：没有这一步，后面的事能不能发生？",
+      "text": "先从左到右按顺序说：口渴、先拿杯子、倒水、喝水，再想缺少的先拿杯子让后面能继续。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
-        "logic-order-plan/logic-order-plan-1",
-        "logic-order-plan/logic-order-plan-2",
-        "logic-order-plan/logic-order-plan-3",
-        "logic-order-plan/logic-order-plan-4",
-        "logic-order-plan/logic-order-plan-5",
-        "logic-order-plan/logic-order-plan-6",
-        "logic-order-plan/logic-order-plan-7",
-        "logic-order-plan/logic-order-plan-8",
-        "logic-order-plan/logic-order-plan-9",
-        "logic-order-plan/logic-order-plan-10",
-        "logic-order-plan/logic-order-plan-11",
-        "logic-order-plan/logic-order-plan-12",
-        "logic-order-plan/logic-order-plan-13",
-        "logic-order-plan/logic-order-plan-14",
-        "logic-order-plan/logic-order-plan-15",
-        "logic-order-plan/logic-order-plan-16",
-        "logic-order-plan/logic-order-plan-17",
-        "logic-order-plan/logic-order-plan-18",
-        "logic-order-plan/logic-order-plan-19",
-        "logic-order-plan/logic-order-plan-20",
-        "logic-order-plan/logic-order-plan-21",
-        "logic-order-plan/logic-order-plan-22",
-        "logic-order-plan/logic-order-plan-23",
-        "logic-order-plan/logic-order-plan-24"
+        "logic-order-plan/logic-order-plan-1"
       ]
     },
     {
-      "id": "parent-请她用-先-然后-再-最后-复述这-2-步",
+      "id": "parent-请她指着图卡复述口渴-先拿杯子-倒水-喝水-说为什么缺少先拿杯子",
       "kind": "parent",
-      "text": "请她用“先、然后、再、最后”复述这 2 步。",
+      "text": "请她指着图卡复述口渴、先拿杯子、倒水、喝水，说为什么缺少先拿杯子。",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-order-plan/logic-order-plan-1",
-        "logic-order-plan/logic-order-plan-2",
-        "logic-order-plan/logic-order-plan-3",
-        "logic-order-plan/logic-order-plan-13",
-        "logic-order-plan/logic-order-plan-14",
-        "logic-order-plan/logic-order-plan-15"
+        "logic-order-plan/logic-order-plan-1"
       ]
     },
     {
@@ -5969,10 +5941,28 @@
       ]
     },
     {
-      "id": "success-先找钥匙-才能开门进屋",
+      "id": "success-按顺序是门关着-先找钥匙-开门-进屋-所以缺少的是先找钥匙",
       "kind": "success",
-      "text": "先找钥匙，才能开门进屋。",
+      "text": "按顺序是门关着、先找钥匙、开门、进屋，所以缺少的是先找钥匙。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-2"
+      ]
+    },
+    {
+      "id": "retry-先从左到右按顺序说-门关着-先找钥匙-开门-进屋-再想缺少的先找钥匙让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：门关着、先找钥匙、开门、进屋，再想缺少的先找钥匙让后面能继续。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-2"
+      ]
+    },
+    {
+      "id": "parent-请她指着图卡复述门关着-先找钥匙-开门-进屋-说为什么缺少先找钥匙",
+      "kind": "parent",
+      "text": "请她指着图卡复述门关着、先找钥匙、开门、进屋，说为什么缺少先找钥匙。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-2"
       ]
@@ -6041,10 +6031,28 @@
       ]
     },
     {
-      "id": "success-先轻轻放回水里-小鱼才安全",
+      "id": "success-按顺序是小鱼在岸上-轻轻放回水里-小河-所以缺少的是轻轻放回水里",
       "kind": "success",
-      "text": "先轻轻放回水里，小鱼才安全。",
+      "text": "按顺序是小鱼在岸上、轻轻放回水里、小河，所以缺少的是轻轻放回水里。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-3"
+      ]
+    },
+    {
+      "id": "retry-先从左到右按顺序说-小鱼在岸上-轻轻放回水里-小河-再想缺少的轻轻放回水里让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：小鱼在岸上、轻轻放回水里、小河，再想缺少的轻轻放回水里让后面能继续。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-3"
+      ]
+    },
+    {
+      "id": "parent-请她指着图卡复述小鱼在岸上-轻轻放回水里-小河-说为什么缺少轻轻放回水里",
+      "kind": "parent",
+      "text": "请她指着图卡复述小鱼在岸上、轻轻放回水里、小河，说为什么缺少轻轻放回水里。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-3"
       ]
@@ -6121,30 +6129,30 @@
       ]
     },
     {
-      "id": "success-先种下种子-然后发芽-最后开花",
+      "id": "success-按顺序是空花盆-种下种子-小芽-花-所以缺少的是种下种子",
       "kind": "success",
-      "text": "先种下种子，然后发芽，最后开花。",
+      "text": "按顺序是空花盆、种下种子、小芽、花，所以缺少的是种下种子。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-order-plan/logic-order-plan-4"
       ]
     },
     {
-      "id": "parent-请她用-先-然后-再-最后-复述这-3-步",
+      "id": "retry-先从左到右按顺序说-空花盆-种下种子-小芽-花-再想缺少的种下种子让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：空花盆、种下种子、小芽、花，再想缺少的种下种子让后面能继续。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-4"
+      ]
+    },
+    {
+      "id": "parent-请她指着图卡复述空花盆-种下种子-小芽-花-说为什么缺少种下种子",
       "kind": "parent",
-      "text": "请她用“先、然后、再、最后”复述这 3 步。",
+      "text": "请她指着图卡复述空花盆、种下种子、小芽、花，说为什么缺少种下种子。",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-order-plan/logic-order-plan-4",
-        "logic-order-plan/logic-order-plan-5",
-        "logic-order-plan/logic-order-plan-6",
-        "logic-order-plan/logic-order-plan-16",
-        "logic-order-plan/logic-order-plan-17",
-        "logic-order-plan/logic-order-plan-18",
-        "logic-order-plan/logic-order-plan-19",
-        "logic-order-plan/logic-order-plan-20",
-        "logic-order-plan/logic-order-plan-21",
-        "logic-order-plan/logic-order-plan-23"
+        "logic-order-plan/logic-order-plan-4"
       ]
     },
     {
@@ -6214,10 +6222,28 @@
       ]
     },
     {
-      "id": "success-手脏了先洗手-再拿饼干吃",
+      "id": "success-按顺序是手脏-先洗手-拿饼干-吃-所以缺少的是先洗手",
       "kind": "success",
-      "text": "手脏了先洗手，再拿饼干吃。",
+      "text": "按顺序是手脏、先洗手、拿饼干、吃，所以缺少的是先洗手。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-5"
+      ]
+    },
+    {
+      "id": "retry-先从左到右按顺序说-手脏-先洗手-拿饼干-吃-再想缺少的先洗手让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：手脏、先洗手、拿饼干、吃，再想缺少的先洗手让后面能继续。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-5"
+      ]
+    },
+    {
+      "id": "parent-请她指着图卡复述手脏-先洗手-拿饼干-吃-说为什么缺少先洗手",
+      "kind": "parent",
+      "text": "请她指着图卡复述手脏、先洗手、拿饼干、吃，说为什么缺少先洗手。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-5"
       ]
@@ -6314,12 +6340,33 @@
       ]
     },
     {
-      "id": "success-先捡积木-再一块一块搭高",
+      "id": "success-按顺序是积木倒了-先捡积木-高塔-所以缺少的是先捡积木",
       "kind": "success",
-      "text": "先捡积木，再一块一块搭高。",
+      "text": "按顺序是积木倒了、先捡积木、高塔，所以缺少的是先捡积木。",
       "tone": "warm, delighted, clear",
       "contexts": [
-        "logic-order-plan/logic-order-plan-6"
+        "logic-order-plan/logic-order-plan-6",
+        "logic-order-plan/logic-order-plan-21"
+      ]
+    },
+    {
+      "id": "retry-先从左到右按顺序说-积木倒了-先捡积木-高塔-再想缺少的先捡积木让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：积木倒了、先捡积木、高塔，再想缺少的先捡积木让后面能继续。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-6",
+        "logic-order-plan/logic-order-plan-21"
+      ]
+    },
+    {
+      "id": "parent-请她指着图卡复述积木倒了-先捡积木-高塔-说为什么缺少先捡积木",
+      "kind": "parent",
+      "text": "请她指着图卡复述积木倒了、先捡积木、高塔，说为什么缺少先捡积木。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-6",
+        "logic-order-plan/logic-order-plan-21"
       ]
     },
     {
@@ -6385,25 +6432,30 @@
       ]
     },
     {
-      "id": "success-先分类-再放进盒子-最后变整齐",
+      "id": "success-按顺序是玩具散了-先分类-放进盒子-整齐-所以缺少的是先分类",
       "kind": "success",
-      "text": "先分类，再放进盒子，最后变整齐。",
+      "text": "按顺序是玩具散了、先分类、放进盒子、整齐，所以缺少的是先分类。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-order-plan/logic-order-plan-7"
       ]
     },
     {
-      "id": "parent-请她用-先-然后-再-最后-复述这-4-步",
+      "id": "retry-先从左到右按顺序说-玩具散了-先分类-放进盒子-整齐-再想缺少的先分类让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：玩具散了、先分类、放进盒子、整齐，再想缺少的先分类让后面能继续。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-7"
+      ]
+    },
+    {
+      "id": "parent-请她指着图卡复述玩具散了-先分类-放进盒子-整齐-说为什么缺少先分类",
       "kind": "parent",
-      "text": "请她用“先、然后、再、最后”复述这 4 步。",
+      "text": "请她指着图卡复述玩具散了、先分类、放进盒子、整齐，说为什么缺少先分类。",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-order-plan/logic-order-plan-7",
-        "logic-order-plan/logic-order-plan-8",
-        "logic-order-plan/logic-order-plan-9",
-        "logic-order-plan/logic-order-plan-22",
-        "logic-order-plan/logic-order-plan-24"
+        "logic-order-plan/logic-order-plan-7"
       ]
     },
     {
@@ -6492,10 +6544,28 @@
       ]
     },
     {
-      "id": "success-先看灯-等绿灯-再安全走过去",
+      "id": "success-按顺序是路口-先看灯-绿灯-走过去-所以缺少的是先看灯",
       "kind": "success",
-      "text": "先看灯，等绿灯，再安全走过去。",
+      "text": "按顺序是路口、先看灯、绿灯、走过去，所以缺少的是先看灯。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-8"
+      ]
+    },
+    {
+      "id": "retry-先从左到右按顺序说-路口-先看灯-绿灯-走过去-再想缺少的先看灯让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：路口、先看灯、绿灯、走过去，再想缺少的先看灯让后面能继续。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-8"
+      ]
+    },
+    {
+      "id": "parent-请她指着图卡复述路口-先看灯-绿灯-走过去-说为什么缺少先看灯",
+      "kind": "parent",
+      "text": "请她指着图卡复述路口、先看灯、绿灯、走过去，说为什么缺少先看灯。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-8"
       ]
@@ -6580,10 +6650,28 @@
       ]
     },
     {
-      "id": "success-先拿杯子-再倒水-小朋友才能喝",
+      "id": "success-按顺序是小朋友-先拿杯子-先倒水-喝水-所以缺少的是先倒水",
       "kind": "success",
-      "text": "先拿杯子，再倒水，小朋友才能喝。",
+      "text": "按顺序是小朋友、先拿杯子、先倒水、喝水，所以缺少的是先倒水。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-9"
+      ]
+    },
+    {
+      "id": "retry-先从左到右按顺序说-小朋友-先拿杯子-先倒水-喝水-再想缺少的先倒水让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：小朋友、先拿杯子、先倒水、喝水，再想缺少的先倒水让后面能继续。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-9"
+      ]
+    },
+    {
+      "id": "parent-请她指着图卡复述小朋友-先拿杯子-先倒水-喝水-说为什么缺少先倒水",
+      "kind": "parent",
+      "text": "请她指着图卡复述小朋友、先拿杯子、先倒水、喝水，说为什么缺少先倒水。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-9"
       ]
@@ -6627,23 +6715,30 @@
       ]
     },
     {
-      "id": "success-手脏了先洗手-再拿盘子和饼干-最后吃",
+      "id": "success-按顺序是手脏-先洗手-拿盘子-拿饼干-吃-所以缺少的是先洗手",
       "kind": "success",
-      "text": "手脏了先洗手，再拿盘子和饼干，最后吃。",
+      "text": "按顺序是手脏、先洗手、拿盘子、拿饼干、吃，所以缺少的是先洗手。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-order-plan/logic-order-plan-10"
       ]
     },
     {
-      "id": "parent-请她用-先-然后-再-最后-复述这-5-步",
+      "id": "retry-先从左到右按顺序说-手脏-先洗手-拿盘子-拿饼干-吃-再想缺少的先洗手让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：手脏、先洗手、拿盘子、拿饼干、吃，再想缺少的先洗手让后面能继续。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-10"
+      ]
+    },
+    {
+      "id": "parent-请她指着图卡复述手脏-先洗手-拿盘子-拿饼干-吃-说为什么缺少先洗手",
       "kind": "parent",
-      "text": "请她用“先、然后、再、最后”复述这 5 步。",
+      "text": "请她指着图卡复述手脏、先洗手、拿盘子、拿饼干、吃，说为什么缺少先洗手。",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-order-plan/logic-order-plan-10",
-        "logic-order-plan/logic-order-plan-11",
-        "logic-order-plan/logic-order-plan-12"
+        "logic-order-plan/logic-order-plan-10"
       ]
     },
     {
@@ -6676,10 +6771,28 @@
       ]
     },
     {
-      "id": "success-有小河时先搭桥-走过去以后才能拿胡萝卜",
+      "id": "success-按顺序是小河-先搭桥-走过去-胡萝卜-所以缺少的是先搭桥",
       "kind": "success",
-      "text": "有小河时先搭桥，走过去以后才能拿胡萝卜。",
+      "text": "按顺序是小河、先搭桥、走过去、胡萝卜，所以缺少的是先搭桥。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-11"
+      ]
+    },
+    {
+      "id": "retry-先从左到右按顺序说-小河-先搭桥-走过去-胡萝卜-再想缺少的先搭桥让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：小河、先搭桥、走过去、胡萝卜，再想缺少的先搭桥让后面能继续。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-11"
+      ]
+    },
+    {
+      "id": "parent-请她指着图卡复述小河-先搭桥-走过去-胡萝卜-说为什么缺少先搭桥",
+      "kind": "parent",
+      "text": "请她指着图卡复述小河、先搭桥、走过去、胡萝卜，说为什么缺少先搭桥。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-11"
       ]
@@ -6737,10 +6850,28 @@
       ]
     },
     {
-      "id": "success-先捡起来-再分类-才能更容易搭好收整齐",
+      "id": "success-按顺序是积木倒了-先捡积木-先分类-高塔-整齐-所以缺少的是先分类",
       "kind": "success",
-      "text": "先捡起来，再分类，才能更容易搭好收整齐。",
+      "text": "按顺序是积木倒了、先捡积木、先分类、高塔、整齐，所以缺少的是先分类。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-12"
+      ]
+    },
+    {
+      "id": "retry-先从左到右按顺序说-积木倒了-先捡积木-先分类-高塔-整齐-再想缺少的先分类让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：积木倒了、先捡积木、先分类、高塔、整齐，再想缺少的先分类让后面能继续。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-12"
+      ]
+    },
+    {
+      "id": "parent-请她指着图卡复述积木倒了-先捡积木-先分类-高塔-整齐-说为什么缺少先分类",
+      "kind": "parent",
+      "text": "请她指着图卡复述积木倒了、先捡积木、先分类、高塔、整齐，说为什么缺少先分类。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-12"
       ]
@@ -6764,10 +6895,28 @@
       ]
     },
     {
-      "id": "success-写字前先拿铅笔最合适",
+      "id": "success-按顺序是上课-铅笔-写字-所以缺少的是铅笔",
       "kind": "success",
-      "text": "写字前先拿铅笔最合适。",
+      "text": "按顺序是上课、铅笔、写字，所以缺少的是铅笔。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-13"
+      ]
+    },
+    {
+      "id": "retry-先从左到右按顺序说-上课-铅笔-写字-再想缺少的铅笔让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：上课、铅笔、写字，再想缺少的铅笔让后面能继续。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-13"
+      ]
+    },
+    {
+      "id": "parent-请她指着图卡复述上课-铅笔-写字-说为什么缺少铅笔",
+      "kind": "parent",
+      "text": "请她指着图卡复述上课、铅笔、写字，说为什么缺少铅笔。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-13"
       ]
@@ -6854,10 +7003,28 @@
       ]
     },
     {
-      "id": "success-书本要先放进书包-才方便带去学校",
+      "id": "success-按顺序是书本-书包-去学校-所以缺少的是书包",
       "kind": "success",
-      "text": "书本要先放进书包，才方便带去学校。",
+      "text": "按顺序是书本、书包、去学校，所以缺少的是书包。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-14"
+      ]
+    },
+    {
+      "id": "retry-先从左到右按顺序说-书本-书包-去学校-再想缺少的书包让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：书本、书包、去学校，再想缺少的书包让后面能继续。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-14"
+      ]
+    },
+    {
+      "id": "parent-请她指着图卡复述书本-书包-去学校-说为什么缺少书包",
+      "kind": "parent",
+      "text": "请她指着图卡复述书本、书包、去学校，说为什么缺少书包。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-14"
       ]
@@ -6976,10 +7143,28 @@
       ]
     },
     {
-      "id": "success-下雨出门先准备雨衣-身体才不容易淋湿",
+      "id": "success-按顺序是下雨-雨衣-出门-所以缺少的是雨衣",
       "kind": "success",
-      "text": "下雨出门先准备雨衣，身体才不容易淋湿。",
+      "text": "按顺序是下雨、雨衣、出门，所以缺少的是雨衣。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-15"
+      ]
+    },
+    {
+      "id": "retry-先从左到右按顺序说-下雨-雨衣-出门-再想缺少的雨衣让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：下雨、雨衣、出门，再想缺少的雨衣让后面能继续。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-15"
+      ]
+    },
+    {
+      "id": "parent-请她指着图卡复述下雨-雨衣-出门-说为什么缺少雨衣",
+      "kind": "parent",
+      "text": "请她指着图卡复述下雨、雨衣、出门，说为什么缺少雨衣。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-15"
       ]
@@ -7050,10 +7235,28 @@
       ]
     },
     {
-      "id": "success-先拿盘子-再拿饼干吃更干净",
+      "id": "success-按顺序是饼干-拿盘子-吃-所以缺少的是拿盘子",
       "kind": "success",
-      "text": "先拿盘子，再拿饼干吃更干净。",
+      "text": "按顺序是饼干、拿盘子、吃，所以缺少的是拿盘子。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-16"
+      ]
+    },
+    {
+      "id": "retry-先从左到右按顺序说-饼干-拿盘子-吃-再想缺少的拿盘子让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：饼干、拿盘子、吃，再想缺少的拿盘子让后面能继续。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-16"
+      ]
+    },
+    {
+      "id": "parent-请她指着图卡复述饼干-拿盘子-吃-说为什么缺少拿盘子",
+      "kind": "parent",
+      "text": "请她指着图卡复述饼干、拿盘子、吃，说为什么缺少拿盘子。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-16"
       ]
@@ -7098,10 +7301,28 @@
       ]
     },
     {
-      "id": "success-手脏了先洗手-再拿点心",
+      "id": "success-按顺序是手脏-先洗手-拿饼干-所以缺少的是先洗手",
       "kind": "success",
-      "text": "手脏了先洗手，再拿点心。",
+      "text": "按顺序是手脏、先洗手、拿饼干，所以缺少的是先洗手。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-17"
+      ]
+    },
+    {
+      "id": "retry-先从左到右按顺序说-手脏-先洗手-拿饼干-再想缺少的先洗手让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：手脏、先洗手、拿饼干，再想缺少的先洗手让后面能继续。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-17"
+      ]
+    },
+    {
+      "id": "parent-请她指着图卡复述手脏-先洗手-拿饼干-说为什么缺少先洗手",
+      "kind": "parent",
+      "text": "请她指着图卡复述手脏、先洗手、拿饼干，说为什么缺少先洗手。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-17"
       ]
@@ -7116,10 +7337,28 @@
       ]
     },
     {
-      "id": "success-空杯子要先倒水-才能喝",
+      "id": "success-按顺序是杯子-先倒水-喝水-所以缺少的是先倒水",
       "kind": "success",
-      "text": "空杯子要先倒水，才能喝。",
+      "text": "按顺序是杯子、先倒水、喝水，所以缺少的是先倒水。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-18"
+      ]
+    },
+    {
+      "id": "retry-先从左到右按顺序说-杯子-先倒水-喝水-再想缺少的先倒水让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：杯子、先倒水、喝水，再想缺少的先倒水让后面能继续。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-18"
+      ]
+    },
+    {
+      "id": "parent-请她指着图卡复述杯子-先倒水-喝水-说为什么缺少先倒水",
+      "kind": "parent",
+      "text": "请她指着图卡复述杯子、先倒水、喝水，说为什么缺少先倒水。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-18"
       ]
@@ -7155,10 +7394,28 @@
       ]
     },
     {
-      "id": "success-红灯时先停-等能走的时候再过马路",
+      "id": "success-按顺序是路口-红灯-停-所以缺少的是停",
       "kind": "success",
-      "text": "红灯时先停，等能走的时候再过马路。",
+      "text": "按顺序是路口、红灯、停，所以缺少的是停。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-19"
+      ]
+    },
+    {
+      "id": "retry-先从左到右按顺序说-路口-红灯-停-再想缺少的停让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：路口、红灯、停，再想缺少的停让后面能继续。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-19"
+      ]
+    },
+    {
+      "id": "parent-请她指着图卡复述路口-红灯-停-说为什么缺少停",
+      "kind": "parent",
+      "text": "请她指着图卡复述路口、红灯、停，说为什么缺少停。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-19"
       ]
@@ -7202,10 +7459,28 @@
       ]
     },
     {
-      "id": "success-过马路前先看灯-再决定能不能走",
+      "id": "success-按顺序是路口-先看灯-走过去-所以缺少的是先看灯",
       "kind": "success",
-      "text": "过马路前先看灯，再决定能不能走。",
+      "text": "按顺序是路口、先看灯、走过去，所以缺少的是先看灯。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-20"
+      ]
+    },
+    {
+      "id": "retry-先从左到右按顺序说-路口-先看灯-走过去-再想缺少的先看灯让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：路口、先看灯、走过去，再想缺少的先看灯让后面能继续。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-20"
+      ]
+    },
+    {
+      "id": "parent-请她指着图卡复述路口-先看灯-走过去-说为什么缺少先看灯",
+      "kind": "parent",
+      "text": "请她指着图卡复述路口、先看灯、走过去，说为什么缺少先看灯。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-20"
       ]
@@ -7229,15 +7504,6 @@
       ]
     },
     {
-      "id": "success-先把积木捡起来-才好重新搭塔",
-      "kind": "success",
-      "text": "先把积木捡起来，才好重新搭塔。",
-      "tone": "warm, delighted, clear",
-      "contexts": [
-        "logic-order-plan/logic-order-plan-21"
-      ]
-    },
-    {
       "id": "choice-直接搭高塔",
       "kind": "choice",
       "text": "直接搭高塔",
@@ -7256,10 +7522,28 @@
       ]
     },
     {
-      "id": "success-小河挡住了路-要先搭桥",
+      "id": "success-按顺序是小河-先搭桥-小旗-所以缺少的是先搭桥",
       "kind": "success",
-      "text": "小河挡住了路，要先搭桥。",
+      "text": "按顺序是小河、先搭桥、小旗，所以缺少的是先搭桥。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-22"
+      ]
+    },
+    {
+      "id": "retry-先从左到右按顺序说-小河-先搭桥-小旗-再想缺少的先搭桥让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：小河、先搭桥、小旗，再想缺少的先搭桥让后面能继续。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-22"
+      ]
+    },
+    {
+      "id": "parent-请她指着图卡复述小河-先搭桥-小旗-说为什么缺少先搭桥",
+      "kind": "parent",
+      "text": "请她指着图卡复述小河、先搭桥、小旗，说为什么缺少先搭桥。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-22"
       ]
@@ -7324,10 +7608,28 @@
       ]
     },
     {
-      "id": "success-小芽需要照顾-浇水以后更可能长成花",
+      "id": "success-按顺序是小芽-先浇水-花-所以缺少的是先浇水",
       "kind": "success",
-      "text": "小芽需要照顾，浇水以后更可能长成花。",
+      "text": "按顺序是小芽、先浇水、花，所以缺少的是先浇水。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-23"
+      ]
+    },
+    {
+      "id": "retry-先从左到右按顺序说-小芽-先浇水-花-再想缺少的先浇水让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：小芽、先浇水、花，再想缺少的先浇水让后面能继续。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-23"
+      ]
+    },
+    {
+      "id": "parent-请她指着图卡复述小芽-先浇水-花-说为什么缺少先浇水",
+      "kind": "parent",
+      "text": "请她指着图卡复述小芽、先浇水、花，说为什么缺少先浇水。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-23"
       ]
@@ -7360,10 +7662,28 @@
       ]
     },
     {
-      "id": "success-已经分类了-下一步放进盒子-房间就更整齐",
+      "id": "success-按顺序是先分类-先放进盒子-整齐-所以缺少的是先放进盒子",
       "kind": "success",
-      "text": "已经分类了，下一步放进盒子，房间就更整齐。",
+      "text": "按顺序是先分类、先放进盒子、整齐，所以缺少的是先放进盒子。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-24"
+      ]
+    },
+    {
+      "id": "retry-先从左到右按顺序说-先分类-先放进盒子-整齐-再想缺少的先放进盒子让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：先分类、先放进盒子、整齐，再想缺少的先放进盒子让后面能继续。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-24"
+      ]
+    },
+    {
+      "id": "parent-请她指着图卡复述先分类-先放进盒子-整齐-说为什么缺少先放进盒子",
+      "kind": "parent",
+      "text": "请她指着图卡复述先分类、先放进盒子、整齐，说为什么缺少先放进盒子。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-24"
       ]

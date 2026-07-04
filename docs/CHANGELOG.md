@@ -15,6 +15,16 @@ grouped by date.
   exclusion, or sequence reasoning.
 - Exported updated voice lines and regenerated the local Edge voice manifest for
   the rewritten memory-camera content.
+- Added the `013-order-plan-quality` Spec Kit feature for missing-step sequence
+  planning quality.
+- Expanded the curriculum audit with order-plan checks that validate a single
+  missing sequence slot, unique answer choice, and filled-sequence explanation
+  text.
+- Reworked `logic-order-plan` success feedback, retry guidance, and parent
+  prompts so each round names the completed flow, the missing answer, and a
+  left-to-right replay strategy.
+- Exported updated voice lines and regenerated the local Edge voice manifest for
+  the rewritten order-plan content.
 
 ## 2026-07-04
 

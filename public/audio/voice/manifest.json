@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-07-04T16:10:21.615Z",
+  "generatedAt": "2026-07-04T16:20:53.108Z",
   "provider": "edge-tts Python package",
   "voice": "zh-CN-XiaoxiaoNeural",
   "rate": "-12%",
   "pitch": "+2Hz",
   "includeParent": true,
   "format": "mp3",
-  "count": 1600,
-  "requestedCount": 1600,
+  "count": 1640,
+  "requestedCount": 1640,
   "failures": [],
   "entries": [
     {
@@ -2489,22 +2489,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%B0%8F%E6%9C%8B%E5%8F%8B%E5%8F%A3%E6%B8%B4%E4%BA%86-%E6%83%B3%E5%96%9D%E6%B0%B4-%E5%85%88%E5%81%9A%E4%BB%80%E4%B9%88-%E5%85%88%E7%9C%8B%E7%9B%AE%E6%A0%87-%E5%86%8D%E6%83%B3%E7%AC%AC%E4%B8%80%E6%AD%A5.mp3"
     },
     {
-      "id": "success-先拿杯子-才好倒水喝水",
+      "id": "success-按顺序是口渴-先拿杯子-倒水-喝水-所以缺少的是先拿杯子",
       "kind": "success",
-      "text": "先拿杯子，才好倒水喝水。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%85%88%E6%8B%BF%E6%9D%AF%E5%AD%90-%E6%89%8D%E5%A5%BD%E5%80%92%E6%B0%B4%E5%96%9D%E6%B0%B4.mp3"
+      "text": "按顺序是口渴、先拿杯子、倒水、喝水，所以缺少的是先拿杯子。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%98%AF%E5%8F%A3%E6%B8%B4-%E5%85%88%E6%8B%BF%E6%9D%AF%E5%AD%90-%E5%80%92%E6%B0%B4-%E5%96%9D%E6%B0%B4-%E6%89%80%E4%BB%A5%E7%BC%BA%E5%B0%91%E7%9A%84%E6%98%AF%E5%85%88%E6%8B%BF%E6%9D%AF%E5%AD%90.mp3"
     },
     {
-      "id": "retry-先从生活目标往前想-没有这一步-后面的事能不能发生",
+      "id": "retry-先从左到右按顺序说-口渴-先拿杯子-倒水-喝水-再想缺少的先拿杯子让后面能继续",
       "kind": "retry",
-      "text": "先从生活目标往前想：没有这一步，后面的事能不能发生？",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E4%BB%8E%E7%94%9F%E6%B4%BB%E7%9B%AE%E6%A0%87%E5%BE%80%E5%89%8D%E6%83%B3-%E6%B2%A1%E6%9C%89%E8%BF%99%E4%B8%80%E6%AD%A5-%E5%90%8E%E9%9D%A2%E7%9A%84%E4%BA%8B%E8%83%BD%E4%B8%8D%E8%83%BD%E5%8F%91%E7%94%9F.mp3"
+      "text": "先从左到右按顺序说：口渴、先拿杯子、倒水、喝水，再想缺少的先拿杯子让后面能继续。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E6%8C%89%E9%A1%BA%E5%BA%8F%E8%AF%B4-%E5%8F%A3%E6%B8%B4-%E5%85%88%E6%8B%BF%E6%9D%AF%E5%AD%90-%E5%80%92%E6%B0%B4-%E5%96%9D%E6%B0%B4-%E5%86%8D%E6%83%B3%E7%BC%BA%E5%B0%91%E7%9A%84%E5%85%88%E6%8B%BF%E6%9D%AF%E5%AD%90%E8%AE%A9%E5%90%8E%E9%9D%A2%E8%83%BD%E7%BB%A7%E7%BB%AD.mp3"
     },
     {
-      "id": "parent-请她用-先-然后-再-最后-复述这-2-步",
+      "id": "parent-请她指着图卡复述口渴-先拿杯子-倒水-喝水-说为什么缺少先拿杯子",
       "kind": "parent",
-      "text": "请她用“先、然后、再、最后”复述这 2 步。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E7%94%A8-%E5%85%88-%E7%84%B6%E5%90%8E-%E5%86%8D-%E6%9C%80%E5%90%8E-%E5%A4%8D%E8%BF%B0%E8%BF%99-2-%E6%AD%A5.mp3"
+      "text": "请她指着图卡复述口渴、先拿杯子、倒水、喝水，说为什么缺少先拿杯子。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E5%9B%BE%E5%8D%A1%E5%A4%8D%E8%BF%B0%E5%8F%A3%E6%B8%B4-%E5%85%88%E6%8B%BF%E6%9D%AF%E5%AD%90-%E5%80%92%E6%B0%B4-%E5%96%9D%E6%B0%B4-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%BC%BA%E5%B0%91%E5%85%88%E6%8B%BF%E6%9D%AF%E5%AD%90.mp3"
     },
     {
       "id": "choice-先拿杯子",
@@ -2549,10 +2549,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E9%97%A8%E5%85%B3%E7%9D%80-%E8%A6%81%E5%BC%80%E9%97%A8%E8%BF%9B%E5%8E%BB-%E5%85%88%E5%81%9A%E4%BB%80%E4%B9%88-%E5%85%88%E7%9C%8B%E7%9B%AE%E6%A0%87-%E5%86%8D%E6%83%B3%E7%AC%AC%E4%B8%80%E6%AD%A5.mp3"
     },
     {
-      "id": "success-先找钥匙-才能开门进屋",
+      "id": "success-按顺序是门关着-先找钥匙-开门-进屋-所以缺少的是先找钥匙",
       "kind": "success",
-      "text": "先找钥匙，才能开门进屋。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%85%88%E6%89%BE%E9%92%A5%E5%8C%99-%E6%89%8D%E8%83%BD%E5%BC%80%E9%97%A8%E8%BF%9B%E5%B1%8B.mp3"
+      "text": "按顺序是门关着、先找钥匙、开门、进屋，所以缺少的是先找钥匙。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%98%AF%E9%97%A8%E5%85%B3%E7%9D%80-%E5%85%88%E6%89%BE%E9%92%A5%E5%8C%99-%E5%BC%80%E9%97%A8-%E8%BF%9B%E5%B1%8B-%E6%89%80%E4%BB%A5%E7%BC%BA%E5%B0%91%E7%9A%84%E6%98%AF%E5%85%88%E6%89%BE%E9%92%A5%E5%8C%99.mp3"
+    },
+    {
+      "id": "retry-先从左到右按顺序说-门关着-先找钥匙-开门-进屋-再想缺少的先找钥匙让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：门关着、先找钥匙、开门、进屋，再想缺少的先找钥匙让后面能继续。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E6%8C%89%E9%A1%BA%E5%BA%8F%E8%AF%B4-%E9%97%A8%E5%85%B3%E7%9D%80-%E5%85%88%E6%89%BE%E9%92%A5%E5%8C%99-%E5%BC%80%E9%97%A8-%E8%BF%9B%E5%B1%8B-%E5%86%8D%E6%83%B3%E7%BC%BA%E5%B0%91%E7%9A%84%E5%85%88%E6%89%BE%E9%92%A5%E5%8C%99%E8%AE%A9%E5%90%8E%E9%9D%A2%E8%83%BD%E7%BB%A7%E7%BB%AD.mp3"
+    },
+    {
+      "id": "parent-请她指着图卡复述门关着-先找钥匙-开门-进屋-说为什么缺少先找钥匙",
+      "kind": "parent",
+      "text": "请她指着图卡复述门关着、先找钥匙、开门、进屋，说为什么缺少先找钥匙。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E5%9B%BE%E5%8D%A1%E5%A4%8D%E8%BF%B0%E9%97%A8%E5%85%B3%E7%9D%80-%E5%85%88%E6%89%BE%E9%92%A5%E5%8C%99-%E5%BC%80%E9%97%A8-%E8%BF%9B%E5%B1%8B-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%BC%BA%E5%B0%91%E5%85%88%E6%89%BE%E9%92%A5%E5%8C%99.mp3"
     },
     {
       "id": "choice-先找钥匙",
@@ -2597,10 +2609,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%B0%8F%E9%B1%BC%E5%9C%A8%E5%B2%B8%E4%B8%8A-%E9%9C%80%E8%A6%81%E5%9B%9E%E5%88%B0%E6%B0%B4%E9%87%8C-%E5%85%88%E5%81%9A%E4%BB%80%E4%B9%88-%E5%85%88%E7%9C%8B%E7%9B%AE%E6%A0%87-%E5%86%8D%E6%83%B3%E7%AC%AC%E4%B8%80%E6%AD%A5.mp3"
     },
     {
-      "id": "success-先轻轻放回水里-小鱼才安全",
+      "id": "success-按顺序是小鱼在岸上-轻轻放回水里-小河-所以缺少的是轻轻放回水里",
       "kind": "success",
-      "text": "先轻轻放回水里，小鱼才安全。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%85%88%E8%BD%BB%E8%BD%BB%E6%94%BE%E5%9B%9E%E6%B0%B4%E9%87%8C-%E5%B0%8F%E9%B1%BC%E6%89%8D%E5%AE%89%E5%85%A8.mp3"
+      "text": "按顺序是小鱼在岸上、轻轻放回水里、小河，所以缺少的是轻轻放回水里。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%98%AF%E5%B0%8F%E9%B1%BC%E5%9C%A8%E5%B2%B8%E4%B8%8A-%E8%BD%BB%E8%BD%BB%E6%94%BE%E5%9B%9E%E6%B0%B4%E9%87%8C-%E5%B0%8F%E6%B2%B3-%E6%89%80%E4%BB%A5%E7%BC%BA%E5%B0%91%E7%9A%84%E6%98%AF%E8%BD%BB%E8%BD%BB%E6%94%BE%E5%9B%9E%E6%B0%B4%E9%87%8C.mp3"
+    },
+    {
+      "id": "retry-先从左到右按顺序说-小鱼在岸上-轻轻放回水里-小河-再想缺少的轻轻放回水里让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：小鱼在岸上、轻轻放回水里、小河，再想缺少的轻轻放回水里让后面能继续。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E6%8C%89%E9%A1%BA%E5%BA%8F%E8%AF%B4-%E5%B0%8F%E9%B1%BC%E5%9C%A8%E5%B2%B8%E4%B8%8A-%E8%BD%BB%E8%BD%BB%E6%94%BE%E5%9B%9E%E6%B0%B4%E9%87%8C-%E5%B0%8F%E6%B2%B3-%E5%86%8D%E6%83%B3%E7%BC%BA%E5%B0%91%E7%9A%84%E8%BD%BB%E8%BD%BB%E6%94%BE%E5%9B%9E%E6%B0%B4%E9%87%8C%E8%AE%A9%E5%90%8E%E9%9D%A2%E8%83%BD%E7%BB%A7%E7%BB%AD.mp3"
+    },
+    {
+      "id": "parent-请她指着图卡复述小鱼在岸上-轻轻放回水里-小河-说为什么缺少轻轻放回水里",
+      "kind": "parent",
+      "text": "请她指着图卡复述小鱼在岸上、轻轻放回水里、小河，说为什么缺少轻轻放回水里。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E5%9B%BE%E5%8D%A1%E5%A4%8D%E8%BF%B0%E5%B0%8F%E9%B1%BC%E5%9C%A8%E5%B2%B8%E4%B8%8A-%E8%BD%BB%E8%BD%BB%E6%94%BE%E5%9B%9E%E6%B0%B4%E9%87%8C-%E5%B0%8F%E6%B2%B3-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%BC%BA%E5%B0%91%E8%BD%BB%E8%BD%BB%E6%94%BE%E5%9B%9E%E6%B0%B4%E9%87%8C.mp3"
     },
     {
       "id": "choice-轻轻放回水里",
@@ -2639,16 +2663,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%8A%B1%E7%9B%86%E6%98%AF%E7%A9%BA%E7%9A%84-%E6%83%B3%E8%AE%A9%E8%8A%B1%E5%BC%80%E5%87%BA%E6%9D%A5-%E7%AC%AC%E4%B8%80%E6%AD%A5%E5%81%9A%E4%BB%80%E4%B9%88-%E8%BF%99%E6%98%AF-3-%E6%AD%A5%E6%B5%81%E7%A8%8B-%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%89%BE%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
     },
     {
-      "id": "success-先种下种子-然后发芽-最后开花",
+      "id": "success-按顺序是空花盆-种下种子-小芽-花-所以缺少的是种下种子",
       "kind": "success",
-      "text": "先种下种子，然后发芽，最后开花。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%85%88%E7%A7%8D%E4%B8%8B%E7%A7%8D%E5%AD%90-%E7%84%B6%E5%90%8E%E5%8F%91%E8%8A%BD-%E6%9C%80%E5%90%8E%E5%BC%80%E8%8A%B1.mp3"
+      "text": "按顺序是空花盆、种下种子、小芽、花，所以缺少的是种下种子。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%98%AF%E7%A9%BA%E8%8A%B1%E7%9B%86-%E7%A7%8D%E4%B8%8B%E7%A7%8D%E5%AD%90-%E5%B0%8F%E8%8A%BD-%E8%8A%B1-%E6%89%80%E4%BB%A5%E7%BC%BA%E5%B0%91%E7%9A%84%E6%98%AF%E7%A7%8D%E4%B8%8B%E7%A7%8D%E5%AD%90.mp3"
     },
     {
-      "id": "parent-请她用-先-然后-再-最后-复述这-3-步",
+      "id": "retry-先从左到右按顺序说-空花盆-种下种子-小芽-花-再想缺少的种下种子让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：空花盆、种下种子、小芽、花，再想缺少的种下种子让后面能继续。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E6%8C%89%E9%A1%BA%E5%BA%8F%E8%AF%B4-%E7%A9%BA%E8%8A%B1%E7%9B%86-%E7%A7%8D%E4%B8%8B%E7%A7%8D%E5%AD%90-%E5%B0%8F%E8%8A%BD-%E8%8A%B1-%E5%86%8D%E6%83%B3%E7%BC%BA%E5%B0%91%E7%9A%84%E7%A7%8D%E4%B8%8B%E7%A7%8D%E5%AD%90%E8%AE%A9%E5%90%8E%E9%9D%A2%E8%83%BD%E7%BB%A7%E7%BB%AD.mp3"
+    },
+    {
+      "id": "parent-请她指着图卡复述空花盆-种下种子-小芽-花-说为什么缺少种下种子",
       "kind": "parent",
-      "text": "请她用“先、然后、再、最后”复述这 3 步。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E7%94%A8-%E5%85%88-%E7%84%B6%E5%90%8E-%E5%86%8D-%E6%9C%80%E5%90%8E-%E5%A4%8D%E8%BF%B0%E8%BF%99-3-%E6%AD%A5.mp3"
+      "text": "请她指着图卡复述空花盆、种下种子、小芽、花，说为什么缺少种下种子。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E5%9B%BE%E5%8D%A1%E5%A4%8D%E8%BF%B0%E7%A9%BA%E8%8A%B1%E7%9B%86-%E7%A7%8D%E4%B8%8B%E7%A7%8D%E5%AD%90-%E5%B0%8F%E8%8A%BD-%E8%8A%B1-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%BC%BA%E5%B0%91%E7%A7%8D%E4%B8%8B%E7%A7%8D%E5%AD%90.mp3"
     },
     {
       "id": "choice-种下种子",
@@ -2693,10 +2723,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%90%83%E9%A5%BC%E5%B9%B2%E5%89%8D-%E5%BE%85%E8%A1%A5%E4%BD%8D%E7%BD%AE%E5%BA%94%E8%AF%A5%E6%98%AF%E4%BB%80%E4%B9%88-%E8%BF%99%E6%98%AF-3-%E6%AD%A5%E6%B5%81%E7%A8%8B-%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%89%BE%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
     },
     {
-      "id": "success-手脏了先洗手-再拿饼干吃",
+      "id": "success-按顺序是手脏-先洗手-拿饼干-吃-所以缺少的是先洗手",
       "kind": "success",
-      "text": "手脏了先洗手，再拿饼干吃。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%89%8B%E8%84%8F%E4%BA%86%E5%85%88%E6%B4%97%E6%89%8B-%E5%86%8D%E6%8B%BF%E9%A5%BC%E5%B9%B2%E5%90%83.mp3"
+      "text": "按顺序是手脏、先洗手、拿饼干、吃，所以缺少的是先洗手。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%98%AF%E6%89%8B%E8%84%8F-%E5%85%88%E6%B4%97%E6%89%8B-%E6%8B%BF%E9%A5%BC%E5%B9%B2-%E5%90%83-%E6%89%80%E4%BB%A5%E7%BC%BA%E5%B0%91%E7%9A%84%E6%98%AF%E5%85%88%E6%B4%97%E6%89%8B.mp3"
+    },
+    {
+      "id": "retry-先从左到右按顺序说-手脏-先洗手-拿饼干-吃-再想缺少的先洗手让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：手脏、先洗手、拿饼干、吃，再想缺少的先洗手让后面能继续。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E6%8C%89%E9%A1%BA%E5%BA%8F%E8%AF%B4-%E6%89%8B%E8%84%8F-%E5%85%88%E6%B4%97%E6%89%8B-%E6%8B%BF%E9%A5%BC%E5%B9%B2-%E5%90%83-%E5%86%8D%E6%83%B3%E7%BC%BA%E5%B0%91%E7%9A%84%E5%85%88%E6%B4%97%E6%89%8B%E8%AE%A9%E5%90%8E%E9%9D%A2%E8%83%BD%E7%BB%A7%E7%BB%AD.mp3"
+    },
+    {
+      "id": "parent-请她指着图卡复述手脏-先洗手-拿饼干-吃-说为什么缺少先洗手",
+      "kind": "parent",
+      "text": "请她指着图卡复述手脏、先洗手、拿饼干、吃，说为什么缺少先洗手。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E5%9B%BE%E5%8D%A1%E5%A4%8D%E8%BF%B0%E6%89%8B%E8%84%8F-%E5%85%88%E6%B4%97%E6%89%8B-%E6%8B%BF%E9%A5%BC%E5%B9%B2-%E5%90%83-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%BC%BA%E5%B0%91%E5%85%88%E6%B4%97%E6%89%8B.mp3"
     },
     {
       "id": "choice-先洗手",
@@ -2741,10 +2783,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%A7%AF%E6%9C%A8%E5%80%92%E4%BA%86-%E8%A6%81%E9%87%8D%E6%96%B0%E6%90%AD%E9%AB%98-%E5%85%88%E5%81%9A%E4%BB%80%E4%B9%88-%E8%BF%99%E6%98%AF-3-%E6%AD%A5%E6%B5%81%E7%A8%8B-%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%89%BE%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
     },
     {
-      "id": "success-先捡积木-再一块一块搭高",
+      "id": "success-按顺序是积木倒了-先捡积木-高塔-所以缺少的是先捡积木",
       "kind": "success",
-      "text": "先捡积木，再一块一块搭高。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%85%88%E6%8D%A1%E7%A7%AF%E6%9C%A8-%E5%86%8D%E4%B8%80%E5%9D%97%E4%B8%80%E5%9D%97%E6%90%AD%E9%AB%98.mp3"
+      "text": "按顺序是积木倒了、先捡积木、高塔，所以缺少的是先捡积木。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%98%AF%E7%A7%AF%E6%9C%A8%E5%80%92%E4%BA%86-%E5%85%88%E6%8D%A1%E7%A7%AF%E6%9C%A8-%E9%AB%98%E5%A1%94-%E6%89%80%E4%BB%A5%E7%BC%BA%E5%B0%91%E7%9A%84%E6%98%AF%E5%85%88%E6%8D%A1%E7%A7%AF%E6%9C%A8.mp3"
+    },
+    {
+      "id": "retry-先从左到右按顺序说-积木倒了-先捡积木-高塔-再想缺少的先捡积木让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：积木倒了、先捡积木、高塔，再想缺少的先捡积木让后面能继续。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E6%8C%89%E9%A1%BA%E5%BA%8F%E8%AF%B4-%E7%A7%AF%E6%9C%A8%E5%80%92%E4%BA%86-%E5%85%88%E6%8D%A1%E7%A7%AF%E6%9C%A8-%E9%AB%98%E5%A1%94-%E5%86%8D%E6%83%B3%E7%BC%BA%E5%B0%91%E7%9A%84%E5%85%88%E6%8D%A1%E7%A7%AF%E6%9C%A8%E8%AE%A9%E5%90%8E%E9%9D%A2%E8%83%BD%E7%BB%A7%E7%BB%AD.mp3"
+    },
+    {
+      "id": "parent-请她指着图卡复述积木倒了-先捡积木-高塔-说为什么缺少先捡积木",
+      "kind": "parent",
+      "text": "请她指着图卡复述积木倒了、先捡积木、高塔，说为什么缺少先捡积木。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E5%9B%BE%E5%8D%A1%E5%A4%8D%E8%BF%B0%E7%A7%AF%E6%9C%A8%E5%80%92%E4%BA%86-%E5%85%88%E6%8D%A1%E7%A7%AF%E6%9C%A8-%E9%AB%98%E5%A1%94-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%BC%BA%E5%B0%91%E5%85%88%E6%8D%A1%E7%A7%AF%E6%9C%A8.mp3"
     },
     {
       "id": "choice-先捡积木",
@@ -2783,16 +2837,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%8E%A9%E5%85%B7%E6%95%A3%E4%BA%86-%E6%83%B3%E6%8C%89%E7%A7%8D%E7%B1%BB%E6%94%B6%E5%A5%BD-%E5%85%88%E5%81%9A%E4%BB%80%E4%B9%88-%E8%BF%99%E6%98%AF-4-%E6%AD%A5%E6%B5%81%E7%A8%8B-%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%89%BE%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
     },
     {
-      "id": "success-先分类-再放进盒子-最后变整齐",
+      "id": "success-按顺序是玩具散了-先分类-放进盒子-整齐-所以缺少的是先分类",
       "kind": "success",
-      "text": "先分类，再放进盒子，最后变整齐。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%85%88%E5%88%86%E7%B1%BB-%E5%86%8D%E6%94%BE%E8%BF%9B%E7%9B%92%E5%AD%90-%E6%9C%80%E5%90%8E%E5%8F%98%E6%95%B4%E9%BD%90.mp3"
+      "text": "按顺序是玩具散了、先分类、放进盒子、整齐，所以缺少的是先分类。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%98%AF%E7%8E%A9%E5%85%B7%E6%95%A3%E4%BA%86-%E5%85%88%E5%88%86%E7%B1%BB-%E6%94%BE%E8%BF%9B%E7%9B%92%E5%AD%90-%E6%95%B4%E9%BD%90-%E6%89%80%E4%BB%A5%E7%BC%BA%E5%B0%91%E7%9A%84%E6%98%AF%E5%85%88%E5%88%86%E7%B1%BB.mp3"
     },
     {
-      "id": "parent-请她用-先-然后-再-最后-复述这-4-步",
+      "id": "retry-先从左到右按顺序说-玩具散了-先分类-放进盒子-整齐-再想缺少的先分类让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：玩具散了、先分类、放进盒子、整齐，再想缺少的先分类让后面能继续。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E6%8C%89%E9%A1%BA%E5%BA%8F%E8%AF%B4-%E7%8E%A9%E5%85%B7%E6%95%A3%E4%BA%86-%E5%85%88%E5%88%86%E7%B1%BB-%E6%94%BE%E8%BF%9B%E7%9B%92%E5%AD%90-%E6%95%B4%E9%BD%90-%E5%86%8D%E6%83%B3%E7%BC%BA%E5%B0%91%E7%9A%84%E5%85%88%E5%88%86%E7%B1%BB%E8%AE%A9%E5%90%8E%E9%9D%A2%E8%83%BD%E7%BB%A7%E7%BB%AD.mp3"
+    },
+    {
+      "id": "parent-请她指着图卡复述玩具散了-先分类-放进盒子-整齐-说为什么缺少先分类",
       "kind": "parent",
-      "text": "请她用“先、然后、再、最后”复述这 4 步。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E7%94%A8-%E5%85%88-%E7%84%B6%E5%90%8E-%E5%86%8D-%E6%9C%80%E5%90%8E-%E5%A4%8D%E8%BF%B0%E8%BF%99-4-%E6%AD%A5.mp3"
+      "text": "请她指着图卡复述玩具散了、先分类、放进盒子、整齐，说为什么缺少先分类。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E5%9B%BE%E5%8D%A1%E5%A4%8D%E8%BF%B0%E7%8E%A9%E5%85%B7%E6%95%A3%E4%BA%86-%E5%85%88%E5%88%86%E7%B1%BB-%E6%94%BE%E8%BF%9B%E7%9B%92%E5%AD%90-%E6%95%B4%E9%BD%90-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%BC%BA%E5%B0%91%E5%85%88%E5%88%86%E7%B1%BB.mp3"
     },
     {
       "id": "choice-先分类",
@@ -2837,10 +2897,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%BF%87%E9%A9%AC%E8%B7%AF%E6%97%B6-%E5%BE%85%E8%A1%A5%E4%BD%8D%E7%BD%AE%E5%BA%94%E8%AF%A5%E6%98%AF%E4%BB%80%E4%B9%88-%E8%BF%99%E6%98%AF-4-%E6%AD%A5%E6%B5%81%E7%A8%8B-%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%89%BE%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
     },
     {
-      "id": "success-先看灯-等绿灯-再安全走过去",
+      "id": "success-按顺序是路口-先看灯-绿灯-走过去-所以缺少的是先看灯",
       "kind": "success",
-      "text": "先看灯，等绿灯，再安全走过去。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%85%88%E7%9C%8B%E7%81%AF-%E7%AD%89%E7%BB%BF%E7%81%AF-%E5%86%8D%E5%AE%89%E5%85%A8%E8%B5%B0%E8%BF%87%E5%8E%BB.mp3"
+      "text": "按顺序是路口、先看灯、绿灯、走过去，所以缺少的是先看灯。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%98%AF%E8%B7%AF%E5%8F%A3-%E5%85%88%E7%9C%8B%E7%81%AF-%E7%BB%BF%E7%81%AF-%E8%B5%B0%E8%BF%87%E5%8E%BB-%E6%89%80%E4%BB%A5%E7%BC%BA%E5%B0%91%E7%9A%84%E6%98%AF%E5%85%88%E7%9C%8B%E7%81%AF.mp3"
+    },
+    {
+      "id": "retry-先从左到右按顺序说-路口-先看灯-绿灯-走过去-再想缺少的先看灯让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：路口、先看灯、绿灯、走过去，再想缺少的先看灯让后面能继续。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E6%8C%89%E9%A1%BA%E5%BA%8F%E8%AF%B4-%E8%B7%AF%E5%8F%A3-%E5%85%88%E7%9C%8B%E7%81%AF-%E7%BB%BF%E7%81%AF-%E8%B5%B0%E8%BF%87%E5%8E%BB-%E5%86%8D%E6%83%B3%E7%BC%BA%E5%B0%91%E7%9A%84%E5%85%88%E7%9C%8B%E7%81%AF%E8%AE%A9%E5%90%8E%E9%9D%A2%E8%83%BD%E7%BB%A7%E7%BB%AD.mp3"
+    },
+    {
+      "id": "parent-请她指着图卡复述路口-先看灯-绿灯-走过去-说为什么缺少先看灯",
+      "kind": "parent",
+      "text": "请她指着图卡复述路口、先看灯、绿灯、走过去，说为什么缺少先看灯。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E5%9B%BE%E5%8D%A1%E5%A4%8D%E8%BF%B0%E8%B7%AF%E5%8F%A3-%E5%85%88%E7%9C%8B%E7%81%AF-%E7%BB%BF%E7%81%AF-%E8%B5%B0%E8%BF%87%E5%8E%BB-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%BC%BA%E5%B0%91%E5%85%88%E7%9C%8B%E7%81%AF.mp3"
     },
     {
       "id": "choice-先看灯",
@@ -2885,10 +2957,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%B0%8F%E6%9C%8B%E5%8F%8B%E8%A6%81%E5%96%9D%E6%B0%B4-%E6%8B%BF%E5%88%B0%E6%9D%AF%E5%AD%90%E5%90%8E%E8%BF%98%E7%BC%BA%E5%93%AA%E4%B8%80%E6%AD%A5-%E8%BF%99%E6%98%AF-4-%E6%AD%A5%E6%B5%81%E7%A8%8B-%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%89%BE%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
     },
     {
-      "id": "success-先拿杯子-再倒水-小朋友才能喝",
+      "id": "success-按顺序是小朋友-先拿杯子-先倒水-喝水-所以缺少的是先倒水",
       "kind": "success",
-      "text": "先拿杯子，再倒水，小朋友才能喝。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%85%88%E6%8B%BF%E6%9D%AF%E5%AD%90-%E5%86%8D%E5%80%92%E6%B0%B4-%E5%B0%8F%E6%9C%8B%E5%8F%8B%E6%89%8D%E8%83%BD%E5%96%9D.mp3"
+      "text": "按顺序是小朋友、先拿杯子、先倒水、喝水，所以缺少的是先倒水。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%98%AF%E5%B0%8F%E6%9C%8B%E5%8F%8B-%E5%85%88%E6%8B%BF%E6%9D%AF%E5%AD%90-%E5%85%88%E5%80%92%E6%B0%B4-%E5%96%9D%E6%B0%B4-%E6%89%80%E4%BB%A5%E7%BC%BA%E5%B0%91%E7%9A%84%E6%98%AF%E5%85%88%E5%80%92%E6%B0%B4.mp3"
+    },
+    {
+      "id": "retry-先从左到右按顺序说-小朋友-先拿杯子-先倒水-喝水-再想缺少的先倒水让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：小朋友、先拿杯子、先倒水、喝水，再想缺少的先倒水让后面能继续。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E6%8C%89%E9%A1%BA%E5%BA%8F%E8%AF%B4-%E5%B0%8F%E6%9C%8B%E5%8F%8B-%E5%85%88%E6%8B%BF%E6%9D%AF%E5%AD%90-%E5%85%88%E5%80%92%E6%B0%B4-%E5%96%9D%E6%B0%B4-%E5%86%8D%E6%83%B3%E7%BC%BA%E5%B0%91%E7%9A%84%E5%85%88%E5%80%92%E6%B0%B4%E8%AE%A9%E5%90%8E%E9%9D%A2%E8%83%BD%E7%BB%A7%E7%BB%AD.mp3"
+    },
+    {
+      "id": "parent-请她指着图卡复述小朋友-先拿杯子-先倒水-喝水-说为什么缺少先倒水",
+      "kind": "parent",
+      "text": "请她指着图卡复述小朋友、先拿杯子、先倒水、喝水，说为什么缺少先倒水。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E5%9B%BE%E5%8D%A1%E5%A4%8D%E8%BF%B0%E5%B0%8F%E6%9C%8B%E5%8F%8B-%E5%85%88%E6%8B%BF%E6%9D%AF%E5%AD%90-%E5%85%88%E5%80%92%E6%B0%B4-%E5%96%9D%E6%B0%B4-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%BC%BA%E5%B0%91%E5%85%88%E5%80%92%E6%B0%B4.mp3"
     },
     {
       "id": "choice-再拿一个杯子",
@@ -2915,16 +2999,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%90%83%E7%82%B9%E5%BF%83%E7%9A%84%E6%B5%81%E7%A8%8B%E9%87%8C-%E5%BE%85%E8%A1%A5%E4%BD%8D%E7%BD%AE%E5%BA%94%E8%AF%A5%E6%98%AF%E4%BB%80%E4%B9%88-%E8%BF%99%E6%98%AF-5-%E6%AD%A5%E6%B5%81%E7%A8%8B-%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%89%BE%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
     },
     {
-      "id": "success-手脏了先洗手-再拿盘子和饼干-最后吃",
+      "id": "success-按顺序是手脏-先洗手-拿盘子-拿饼干-吃-所以缺少的是先洗手",
       "kind": "success",
-      "text": "手脏了先洗手，再拿盘子和饼干，最后吃。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%89%8B%E8%84%8F%E4%BA%86%E5%85%88%E6%B4%97%E6%89%8B-%E5%86%8D%E6%8B%BF%E7%9B%98%E5%AD%90%E5%92%8C%E9%A5%BC%E5%B9%B2-%E6%9C%80%E5%90%8E%E5%90%83.mp3"
+      "text": "按顺序是手脏、先洗手、拿盘子、拿饼干、吃，所以缺少的是先洗手。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%98%AF%E6%89%8B%E8%84%8F-%E5%85%88%E6%B4%97%E6%89%8B-%E6%8B%BF%E7%9B%98%E5%AD%90-%E6%8B%BF%E9%A5%BC%E5%B9%B2-%E5%90%83-%E6%89%80%E4%BB%A5%E7%BC%BA%E5%B0%91%E7%9A%84%E6%98%AF%E5%85%88%E6%B4%97%E6%89%8B.mp3"
     },
     {
-      "id": "parent-请她用-先-然后-再-最后-复述这-5-步",
+      "id": "retry-先从左到右按顺序说-手脏-先洗手-拿盘子-拿饼干-吃-再想缺少的先洗手让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：手脏、先洗手、拿盘子、拿饼干、吃，再想缺少的先洗手让后面能继续。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E6%8C%89%E9%A1%BA%E5%BA%8F%E8%AF%B4-%E6%89%8B%E8%84%8F-%E5%85%88%E6%B4%97%E6%89%8B-%E6%8B%BF%E7%9B%98%E5%AD%90-%E6%8B%BF%E9%A5%BC%E5%B9%B2-%E5%90%83-%E5%86%8D%E6%83%B3%E7%BC%BA%E5%B0%91%E7%9A%84%E5%85%88%E6%B4%97%E6%89%8B%E8%AE%A9%E5%90%8E%E9%9D%A2%E8%83%BD%E7%BB%A7%E7%BB%AD.mp3"
+    },
+    {
+      "id": "parent-请她指着图卡复述手脏-先洗手-拿盘子-拿饼干-吃-说为什么缺少先洗手",
       "kind": "parent",
-      "text": "请她用“先、然后、再、最后”复述这 5 步。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E7%94%A8-%E5%85%88-%E7%84%B6%E5%90%8E-%E5%86%8D-%E6%9C%80%E5%90%8E-%E5%A4%8D%E8%BF%B0%E8%BF%99-5-%E6%AD%A5.mp3"
+      "text": "请她指着图卡复述手脏、先洗手、拿盘子、拿饼干、吃，说为什么缺少先洗手。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E5%9B%BE%E5%8D%A1%E5%A4%8D%E8%BF%B0%E6%89%8B%E8%84%8F-%E5%85%88%E6%B4%97%E6%89%8B-%E6%8B%BF%E7%9B%98%E5%AD%90-%E6%8B%BF%E9%A5%BC%E5%B9%B2-%E5%90%83-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%BC%BA%E5%B0%91%E5%85%88%E6%B4%97%E6%89%8B.mp3"
     },
     {
       "id": "choice-先拿盘子",
@@ -2945,10 +3035,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%AF%B9%E5%B2%B8%E6%9C%89%E8%83%A1%E8%90%9D%E5%8D%9C-%E4%B8%AD%E9%97%B4%E6%9C%89%E5%B0%8F%E6%B2%B3-%E7%BC%BA%E5%B0%91%E5%93%AA%E4%B8%80%E6%AD%A5-%E8%BF%99%E6%98%AF-5-%E6%AD%A5%E6%B5%81%E7%A8%8B-%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%89%BE%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
     },
     {
-      "id": "success-有小河时先搭桥-走过去以后才能拿胡萝卜",
+      "id": "success-按顺序是小河-先搭桥-走过去-胡萝卜-所以缺少的是先搭桥",
       "kind": "success",
-      "text": "有小河时先搭桥，走过去以后才能拿胡萝卜。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%9C%89%E5%B0%8F%E6%B2%B3%E6%97%B6%E5%85%88%E6%90%AD%E6%A1%A5-%E8%B5%B0%E8%BF%87%E5%8E%BB%E4%BB%A5%E5%90%8E%E6%89%8D%E8%83%BD%E6%8B%BF%E8%83%A1%E8%90%9D%E5%8D%9C.mp3"
+      "text": "按顺序是小河、先搭桥、走过去、胡萝卜，所以缺少的是先搭桥。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%98%AF%E5%B0%8F%E6%B2%B3-%E5%85%88%E6%90%AD%E6%A1%A5-%E8%B5%B0%E8%BF%87%E5%8E%BB-%E8%83%A1%E8%90%9D%E5%8D%9C-%E6%89%80%E4%BB%A5%E7%BC%BA%E5%B0%91%E7%9A%84%E6%98%AF%E5%85%88%E6%90%AD%E6%A1%A5.mp3"
+    },
+    {
+      "id": "retry-先从左到右按顺序说-小河-先搭桥-走过去-胡萝卜-再想缺少的先搭桥让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：小河、先搭桥、走过去、胡萝卜，再想缺少的先搭桥让后面能继续。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E6%8C%89%E9%A1%BA%E5%BA%8F%E8%AF%B4-%E5%B0%8F%E6%B2%B3-%E5%85%88%E6%90%AD%E6%A1%A5-%E8%B5%B0%E8%BF%87%E5%8E%BB-%E8%83%A1%E8%90%9D%E5%8D%9C-%E5%86%8D%E6%83%B3%E7%BC%BA%E5%B0%91%E7%9A%84%E5%85%88%E6%90%AD%E6%A1%A5%E8%AE%A9%E5%90%8E%E9%9D%A2%E8%83%BD%E7%BB%A7%E7%BB%AD.mp3"
+    },
+    {
+      "id": "parent-请她指着图卡复述小河-先搭桥-走过去-胡萝卜-说为什么缺少先搭桥",
+      "kind": "parent",
+      "text": "请她指着图卡复述小河、先搭桥、走过去、胡萝卜，说为什么缺少先搭桥。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E5%9B%BE%E5%8D%A1%E5%A4%8D%E8%BF%B0%E5%B0%8F%E6%B2%B3-%E5%85%88%E6%90%AD%E6%A1%A5-%E8%B5%B0%E8%BF%87%E5%8E%BB-%E8%83%A1%E8%90%9D%E5%8D%9C-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%BC%BA%E5%B0%91%E5%85%88%E6%90%AD%E6%A1%A5.mp3"
     },
     {
       "id": "choice-先搭桥",
@@ -2981,10 +3083,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%94%B6%E6%8B%BE%E7%A7%AF%E6%9C%A8%E5%88%B0%E6%95%B4%E9%BD%90-%E5%BE%85%E8%A1%A5%E4%BD%8D%E7%BD%AE%E5%BA%94%E8%AF%A5%E6%98%AF%E4%BB%80%E4%B9%88-%E8%BF%99%E6%98%AF-5-%E6%AD%A5%E6%B5%81%E7%A8%8B-%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%89%BE%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
     },
     {
-      "id": "success-先捡起来-再分类-才能更容易搭好收整齐",
+      "id": "success-按顺序是积木倒了-先捡积木-先分类-高塔-整齐-所以缺少的是先分类",
       "kind": "success",
-      "text": "先捡起来，再分类，才能更容易搭好收整齐。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%85%88%E6%8D%A1%E8%B5%B7%E6%9D%A5-%E5%86%8D%E5%88%86%E7%B1%BB-%E6%89%8D%E8%83%BD%E6%9B%B4%E5%AE%B9%E6%98%93%E6%90%AD%E5%A5%BD%E6%94%B6%E6%95%B4%E9%BD%90.mp3"
+      "text": "按顺序是积木倒了、先捡积木、先分类、高塔、整齐，所以缺少的是先分类。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%98%AF%E7%A7%AF%E6%9C%A8%E5%80%92%E4%BA%86-%E5%85%88%E6%8D%A1%E7%A7%AF%E6%9C%A8-%E5%85%88%E5%88%86%E7%B1%BB-%E9%AB%98%E5%A1%94-%E6%95%B4%E9%BD%90-%E6%89%80%E4%BB%A5%E7%BC%BA%E5%B0%91%E7%9A%84%E6%98%AF%E5%85%88%E5%88%86%E7%B1%BB.mp3"
+    },
+    {
+      "id": "retry-先从左到右按顺序说-积木倒了-先捡积木-先分类-高塔-整齐-再想缺少的先分类让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：积木倒了、先捡积木、先分类、高塔、整齐，再想缺少的先分类让后面能继续。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E6%8C%89%E9%A1%BA%E5%BA%8F%E8%AF%B4-%E7%A7%AF%E6%9C%A8%E5%80%92%E4%BA%86-%E5%85%88%E6%8D%A1%E7%A7%AF%E6%9C%A8-%E5%85%88%E5%88%86%E7%B1%BB-%E9%AB%98%E5%A1%94-%E6%95%B4%E9%BD%90-%E5%86%8D%E6%83%B3%E7%BC%BA%E5%B0%91%E7%9A%84%E5%85%88%E5%88%86%E7%B1%BB%E8%AE%A9%E5%90%8E%E9%9D%A2%E8%83%BD%E7%BB%A7%E7%BB%AD.mp3"
+    },
+    {
+      "id": "parent-请她指着图卡复述积木倒了-先捡积木-先分类-高塔-整齐-说为什么缺少先分类",
+      "kind": "parent",
+      "text": "请她指着图卡复述积木倒了、先捡积木、先分类、高塔、整齐，说为什么缺少先分类。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E5%9B%BE%E5%8D%A1%E5%A4%8D%E8%BF%B0%E7%A7%AF%E6%9C%A8%E5%80%92%E4%BA%86-%E5%85%88%E6%8D%A1%E7%A7%AF%E6%9C%A8-%E5%85%88%E5%88%86%E7%B1%BB-%E9%AB%98%E5%A1%94-%E6%95%B4%E9%BD%90-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%BC%BA%E5%B0%91%E5%85%88%E5%88%86%E7%B1%BB.mp3"
     },
     {
       "id": "object-先捡积木",
@@ -2999,10 +3113,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E4%B8%8A%E8%AF%BE%E8%A6%81%E5%86%99%E5%AD%97-%E5%85%88%E6%8B%BF%E4%BB%80%E4%B9%88%E6%9C%80%E5%90%88%E9%80%82-%E5%85%88%E7%9C%8B%E7%9B%AE%E6%A0%87-%E5%86%8D%E6%83%B3%E7%AC%AC%E4%B8%80%E6%AD%A5.mp3"
     },
     {
-      "id": "success-写字前先拿铅笔最合适",
+      "id": "success-按顺序是上课-铅笔-写字-所以缺少的是铅笔",
       "kind": "success",
-      "text": "写字前先拿铅笔最合适。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%86%99%E5%AD%97%E5%89%8D%E5%85%88%E6%8B%BF%E9%93%85%E7%AC%94%E6%9C%80%E5%90%88%E9%80%82.mp3"
+      "text": "按顺序是上课、铅笔、写字，所以缺少的是铅笔。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%98%AF%E4%B8%8A%E8%AF%BE-%E9%93%85%E7%AC%94-%E5%86%99%E5%AD%97-%E6%89%80%E4%BB%A5%E7%BC%BA%E5%B0%91%E7%9A%84%E6%98%AF%E9%93%85%E7%AC%94.mp3"
+    },
+    {
+      "id": "retry-先从左到右按顺序说-上课-铅笔-写字-再想缺少的铅笔让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：上课、铅笔、写字，再想缺少的铅笔让后面能继续。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E6%8C%89%E9%A1%BA%E5%BA%8F%E8%AF%B4-%E4%B8%8A%E8%AF%BE-%E9%93%85%E7%AC%94-%E5%86%99%E5%AD%97-%E5%86%8D%E6%83%B3%E7%BC%BA%E5%B0%91%E7%9A%84%E9%93%85%E7%AC%94%E8%AE%A9%E5%90%8E%E9%9D%A2%E8%83%BD%E7%BB%A7%E7%BB%AD.mp3"
+    },
+    {
+      "id": "parent-请她指着图卡复述上课-铅笔-写字-说为什么缺少铅笔",
+      "kind": "parent",
+      "text": "请她指着图卡复述上课、铅笔、写字，说为什么缺少铅笔。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E5%9B%BE%E5%8D%A1%E5%A4%8D%E8%BF%B0%E4%B8%8A%E8%AF%BE-%E9%93%85%E7%AC%94-%E5%86%99%E5%AD%97-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%BC%BA%E5%B0%91%E9%93%85%E7%AC%94.mp3"
     },
     {
       "id": "choice-铅笔",
@@ -3041,10 +3167,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E4%B9%A6%E8%A6%81%E5%B8%A6%E5%8E%BB%E5%AD%A6%E6%A0%A1-%E5%BA%94%E8%AF%A5%E5%85%88%E6%94%BE%E8%BF%9B%E5%93%AA%E9%87%8C-%E5%85%88%E7%9C%8B%E7%9B%AE%E6%A0%87-%E5%86%8D%E6%83%B3%E7%AC%AC%E4%B8%80%E6%AD%A5.mp3"
     },
     {
-      "id": "success-书本要先放进书包-才方便带去学校",
+      "id": "success-按顺序是书本-书包-去学校-所以缺少的是书包",
       "kind": "success",
-      "text": "书本要先放进书包，才方便带去学校。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E4%B9%A6%E6%9C%AC%E8%A6%81%E5%85%88%E6%94%BE%E8%BF%9B%E4%B9%A6%E5%8C%85-%E6%89%8D%E6%96%B9%E4%BE%BF%E5%B8%A6%E5%8E%BB%E5%AD%A6%E6%A0%A1.mp3"
+      "text": "按顺序是书本、书包、去学校，所以缺少的是书包。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%98%AF%E4%B9%A6%E6%9C%AC-%E4%B9%A6%E5%8C%85-%E5%8E%BB%E5%AD%A6%E6%A0%A1-%E6%89%80%E4%BB%A5%E7%BC%BA%E5%B0%91%E7%9A%84%E6%98%AF%E4%B9%A6%E5%8C%85.mp3"
+    },
+    {
+      "id": "retry-先从左到右按顺序说-书本-书包-去学校-再想缺少的书包让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：书本、书包、去学校，再想缺少的书包让后面能继续。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E6%8C%89%E9%A1%BA%E5%BA%8F%E8%AF%B4-%E4%B9%A6%E6%9C%AC-%E4%B9%A6%E5%8C%85-%E5%8E%BB%E5%AD%A6%E6%A0%A1-%E5%86%8D%E6%83%B3%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B9%A6%E5%8C%85%E8%AE%A9%E5%90%8E%E9%9D%A2%E8%83%BD%E7%BB%A7%E7%BB%AD.mp3"
+    },
+    {
+      "id": "parent-请她指着图卡复述书本-书包-去学校-说为什么缺少书包",
+      "kind": "parent",
+      "text": "请她指着图卡复述书本、书包、去学校，说为什么缺少书包。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E5%9B%BE%E5%8D%A1%E5%A4%8D%E8%BF%B0%E4%B9%A6%E6%9C%AC-%E4%B9%A6%E5%8C%85-%E5%8E%BB%E5%AD%A6%E6%A0%A1-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%BC%BA%E5%B0%91%E4%B9%A6%E5%8C%85.mp3"
     },
     {
       "id": "choice-书包",
@@ -3083,10 +3221,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E4%B8%8B%E9%9B%A8%E8%A6%81%E5%87%BA%E9%97%A8-%E5%85%88%E5%87%86%E5%A4%87%E4%BB%80%E4%B9%88-%E5%85%88%E7%9C%8B%E7%9B%AE%E6%A0%87-%E5%86%8D%E6%83%B3%E7%AC%AC%E4%B8%80%E6%AD%A5.mp3"
     },
     {
-      "id": "success-下雨出门先准备雨衣-身体才不容易淋湿",
+      "id": "success-按顺序是下雨-雨衣-出门-所以缺少的是雨衣",
       "kind": "success",
-      "text": "下雨出门先准备雨衣，身体才不容易淋湿。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E4%B8%8B%E9%9B%A8%E5%87%BA%E9%97%A8%E5%85%88%E5%87%86%E5%A4%87%E9%9B%A8%E8%A1%A3-%E8%BA%AB%E4%BD%93%E6%89%8D%E4%B8%8D%E5%AE%B9%E6%98%93%E6%B7%8B%E6%B9%BF.mp3"
+      "text": "按顺序是下雨、雨衣、出门，所以缺少的是雨衣。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%98%AF%E4%B8%8B%E9%9B%A8-%E9%9B%A8%E8%A1%A3-%E5%87%BA%E9%97%A8-%E6%89%80%E4%BB%A5%E7%BC%BA%E5%B0%91%E7%9A%84%E6%98%AF%E9%9B%A8%E8%A1%A3.mp3"
+    },
+    {
+      "id": "retry-先从左到右按顺序说-下雨-雨衣-出门-再想缺少的雨衣让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：下雨、雨衣、出门，再想缺少的雨衣让后面能继续。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E6%8C%89%E9%A1%BA%E5%BA%8F%E8%AF%B4-%E4%B8%8B%E9%9B%A8-%E9%9B%A8%E8%A1%A3-%E5%87%BA%E9%97%A8-%E5%86%8D%E6%83%B3%E7%BC%BA%E5%B0%91%E7%9A%84%E9%9B%A8%E8%A1%A3%E8%AE%A9%E5%90%8E%E9%9D%A2%E8%83%BD%E7%BB%A7%E7%BB%AD.mp3"
+    },
+    {
+      "id": "parent-请她指着图卡复述下雨-雨衣-出门-说为什么缺少雨衣",
+      "kind": "parent",
+      "text": "请她指着图卡复述下雨、雨衣、出门，说为什么缺少雨衣。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E5%9B%BE%E5%8D%A1%E5%A4%8D%E8%BF%B0%E4%B8%8B%E9%9B%A8-%E9%9B%A8%E8%A1%A3-%E5%87%BA%E9%97%A8-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%BC%BA%E5%B0%91%E9%9B%A8%E8%A1%A3.mp3"
     },
     {
       "id": "choice-雨衣",
@@ -3119,10 +3269,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%A1%8C%E4%B8%8A%E6%9C%89%E9%A5%BC%E5%B9%B2-%E6%83%B3%E5%B9%B2%E5%87%80%E5%9C%B0%E5%90%83-%E5%85%88%E6%8B%BF%E4%BB%80%E4%B9%88-%E8%BF%99%E6%98%AF-3-%E6%AD%A5%E6%B5%81%E7%A8%8B-%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%89%BE%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
     },
     {
-      "id": "success-先拿盘子-再拿饼干吃更干净",
+      "id": "success-按顺序是饼干-拿盘子-吃-所以缺少的是拿盘子",
       "kind": "success",
-      "text": "先拿盘子，再拿饼干吃更干净。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%85%88%E6%8B%BF%E7%9B%98%E5%AD%90-%E5%86%8D%E6%8B%BF%E9%A5%BC%E5%B9%B2%E5%90%83%E6%9B%B4%E5%B9%B2%E5%87%80.mp3"
+      "text": "按顺序是饼干、拿盘子、吃，所以缺少的是拿盘子。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%98%AF%E9%A5%BC%E5%B9%B2-%E6%8B%BF%E7%9B%98%E5%AD%90-%E5%90%83-%E6%89%80%E4%BB%A5%E7%BC%BA%E5%B0%91%E7%9A%84%E6%98%AF%E6%8B%BF%E7%9B%98%E5%AD%90.mp3"
+    },
+    {
+      "id": "retry-先从左到右按顺序说-饼干-拿盘子-吃-再想缺少的拿盘子让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：饼干、拿盘子、吃，再想缺少的拿盘子让后面能继续。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E6%8C%89%E9%A1%BA%E5%BA%8F%E8%AF%B4-%E9%A5%BC%E5%B9%B2-%E6%8B%BF%E7%9B%98%E5%AD%90-%E5%90%83-%E5%86%8D%E6%83%B3%E7%BC%BA%E5%B0%91%E7%9A%84%E6%8B%BF%E7%9B%98%E5%AD%90%E8%AE%A9%E5%90%8E%E9%9D%A2%E8%83%BD%E7%BB%A7%E7%BB%AD.mp3"
+    },
+    {
+      "id": "parent-请她指着图卡复述饼干-拿盘子-吃-说为什么缺少拿盘子",
+      "kind": "parent",
+      "text": "请她指着图卡复述饼干、拿盘子、吃，说为什么缺少拿盘子。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E5%9B%BE%E5%8D%A1%E5%A4%8D%E8%BF%B0%E9%A5%BC%E5%B9%B2-%E6%8B%BF%E7%9B%98%E5%AD%90-%E5%90%83-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%BC%BA%E5%B0%91%E6%8B%BF%E7%9B%98%E5%AD%90.mp3"
     },
     {
       "id": "choice-拿盘子",
@@ -3149,10 +3311,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%89%8B%E4%B8%8A%E6%9C%89%E6%B3%A5-%E6%83%B3%E6%8B%BF%E7%82%B9%E5%BF%83-%E7%AC%AC%E4%B8%80%E6%AD%A5%E6%98%AF%E4%BB%80%E4%B9%88-%E8%BF%99%E6%98%AF-3-%E6%AD%A5%E6%B5%81%E7%A8%8B-%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%89%BE%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
     },
     {
-      "id": "success-手脏了先洗手-再拿点心",
+      "id": "success-按顺序是手脏-先洗手-拿饼干-所以缺少的是先洗手",
       "kind": "success",
-      "text": "手脏了先洗手，再拿点心。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%89%8B%E8%84%8F%E4%BA%86%E5%85%88%E6%B4%97%E6%89%8B-%E5%86%8D%E6%8B%BF%E7%82%B9%E5%BF%83.mp3"
+      "text": "按顺序是手脏、先洗手、拿饼干，所以缺少的是先洗手。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%98%AF%E6%89%8B%E8%84%8F-%E5%85%88%E6%B4%97%E6%89%8B-%E6%8B%BF%E9%A5%BC%E5%B9%B2-%E6%89%80%E4%BB%A5%E7%BC%BA%E5%B0%91%E7%9A%84%E6%98%AF%E5%85%88%E6%B4%97%E6%89%8B.mp3"
+    },
+    {
+      "id": "retry-先从左到右按顺序说-手脏-先洗手-拿饼干-再想缺少的先洗手让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：手脏、先洗手、拿饼干，再想缺少的先洗手让后面能继续。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E6%8C%89%E9%A1%BA%E5%BA%8F%E8%AF%B4-%E6%89%8B%E8%84%8F-%E5%85%88%E6%B4%97%E6%89%8B-%E6%8B%BF%E9%A5%BC%E5%B9%B2-%E5%86%8D%E6%83%B3%E7%BC%BA%E5%B0%91%E7%9A%84%E5%85%88%E6%B4%97%E6%89%8B%E8%AE%A9%E5%90%8E%E9%9D%A2%E8%83%BD%E7%BB%A7%E7%BB%AD.mp3"
+    },
+    {
+      "id": "parent-请她指着图卡复述手脏-先洗手-拿饼干-说为什么缺少先洗手",
+      "kind": "parent",
+      "text": "请她指着图卡复述手脏、先洗手、拿饼干，说为什么缺少先洗手。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E5%9B%BE%E5%8D%A1%E5%A4%8D%E8%BF%B0%E6%89%8B%E8%84%8F-%E5%85%88%E6%B4%97%E6%89%8B-%E6%8B%BF%E9%A5%BC%E5%B9%B2-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%BC%BA%E5%B0%91%E5%85%88%E6%B4%97%E6%89%8B.mp3"
     },
     {
       "id": "prompt-杯子是空的-想喝水-先做什么-这是-3-步流程-按顺序找缺少的一步",
@@ -3161,10 +3335,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%9D%AF%E5%AD%90%E6%98%AF%E7%A9%BA%E7%9A%84-%E6%83%B3%E5%96%9D%E6%B0%B4-%E5%85%88%E5%81%9A%E4%BB%80%E4%B9%88-%E8%BF%99%E6%98%AF-3-%E6%AD%A5%E6%B5%81%E7%A8%8B-%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%89%BE%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
     },
     {
-      "id": "success-空杯子要先倒水-才能喝",
+      "id": "success-按顺序是杯子-先倒水-喝水-所以缺少的是先倒水",
       "kind": "success",
-      "text": "空杯子要先倒水，才能喝。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%A9%BA%E6%9D%AF%E5%AD%90%E8%A6%81%E5%85%88%E5%80%92%E6%B0%B4-%E6%89%8D%E8%83%BD%E5%96%9D.mp3"
+      "text": "按顺序是杯子、先倒水、喝水，所以缺少的是先倒水。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%98%AF%E6%9D%AF%E5%AD%90-%E5%85%88%E5%80%92%E6%B0%B4-%E5%96%9D%E6%B0%B4-%E6%89%80%E4%BB%A5%E7%BC%BA%E5%B0%91%E7%9A%84%E6%98%AF%E5%85%88%E5%80%92%E6%B0%B4.mp3"
+    },
+    {
+      "id": "retry-先从左到右按顺序说-杯子-先倒水-喝水-再想缺少的先倒水让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：杯子、先倒水、喝水，再想缺少的先倒水让后面能继续。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E6%8C%89%E9%A1%BA%E5%BA%8F%E8%AF%B4-%E6%9D%AF%E5%AD%90-%E5%85%88%E5%80%92%E6%B0%B4-%E5%96%9D%E6%B0%B4-%E5%86%8D%E6%83%B3%E7%BC%BA%E5%B0%91%E7%9A%84%E5%85%88%E5%80%92%E6%B0%B4%E8%AE%A9%E5%90%8E%E9%9D%A2%E8%83%BD%E7%BB%A7%E7%BB%AD.mp3"
+    },
+    {
+      "id": "parent-请她指着图卡复述杯子-先倒水-喝水-说为什么缺少先倒水",
+      "kind": "parent",
+      "text": "请她指着图卡复述杯子、先倒水、喝水，说为什么缺少先倒水。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E5%9B%BE%E5%8D%A1%E5%A4%8D%E8%BF%B0%E6%9D%AF%E5%AD%90-%E5%85%88%E5%80%92%E6%B0%B4-%E5%96%9D%E6%B0%B4-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%BC%BA%E5%B0%91%E5%85%88%E5%80%92%E6%B0%B4.mp3"
     },
     {
       "id": "object-杯子",
@@ -3179,10 +3365,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%B7%AF%E5%8F%A3%E6%98%AF%E7%BA%A2%E7%81%AF-%E6%83%B3%E5%AE%89%E5%85%A8%E8%BF%87%E9%A9%AC%E8%B7%AF-%E5%85%88%E5%81%9A%E4%BB%80%E4%B9%88-%E8%BF%99%E6%98%AF-3-%E6%AD%A5%E6%B5%81%E7%A8%8B-%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%89%BE%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
     },
     {
-      "id": "success-红灯时先停-等能走的时候再过马路",
+      "id": "success-按顺序是路口-红灯-停-所以缺少的是停",
       "kind": "success",
-      "text": "红灯时先停，等能走的时候再过马路。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%BA%A2%E7%81%AF%E6%97%B6%E5%85%88%E5%81%9C-%E7%AD%89%E8%83%BD%E8%B5%B0%E7%9A%84%E6%97%B6%E5%80%99%E5%86%8D%E8%BF%87%E9%A9%AC%E8%B7%AF.mp3"
+      "text": "按顺序是路口、红灯、停，所以缺少的是停。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%98%AF%E8%B7%AF%E5%8F%A3-%E7%BA%A2%E7%81%AF-%E5%81%9C-%E6%89%80%E4%BB%A5%E7%BC%BA%E5%B0%91%E7%9A%84%E6%98%AF%E5%81%9C.mp3"
+    },
+    {
+      "id": "retry-先从左到右按顺序说-路口-红灯-停-再想缺少的停让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：路口、红灯、停，再想缺少的停让后面能继续。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E6%8C%89%E9%A1%BA%E5%BA%8F%E8%AF%B4-%E8%B7%AF%E5%8F%A3-%E7%BA%A2%E7%81%AF-%E5%81%9C-%E5%86%8D%E6%83%B3%E7%BC%BA%E5%B0%91%E7%9A%84%E5%81%9C%E8%AE%A9%E5%90%8E%E9%9D%A2%E8%83%BD%E7%BB%A7%E7%BB%AD.mp3"
+    },
+    {
+      "id": "parent-请她指着图卡复述路口-红灯-停-说为什么缺少停",
+      "kind": "parent",
+      "text": "请她指着图卡复述路口、红灯、停，说为什么缺少停。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E5%9B%BE%E5%8D%A1%E5%A4%8D%E8%BF%B0%E8%B7%AF%E5%8F%A3-%E7%BA%A2%E7%81%AF-%E5%81%9C-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%BC%BA%E5%B0%91%E5%81%9C.mp3"
     },
     {
       "id": "choice-停",
@@ -3209,10 +3407,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%B7%AF%E5%8F%A3%E8%A6%81%E8%BF%87%E9%A9%AC%E8%B7%AF-%E7%AC%AC%E4%B8%80%E6%AD%A5%E5%85%88%E7%9C%8B%E4%BB%80%E4%B9%88-%E8%BF%99%E6%98%AF-3-%E6%AD%A5%E6%B5%81%E7%A8%8B-%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%89%BE%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
     },
     {
-      "id": "success-过马路前先看灯-再决定能不能走",
+      "id": "success-按顺序是路口-先看灯-走过去-所以缺少的是先看灯",
       "kind": "success",
-      "text": "过马路前先看灯，再决定能不能走。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%BF%87%E9%A9%AC%E8%B7%AF%E5%89%8D%E5%85%88%E7%9C%8B%E7%81%AF-%E5%86%8D%E5%86%B3%E5%AE%9A%E8%83%BD%E4%B8%8D%E8%83%BD%E8%B5%B0.mp3"
+      "text": "按顺序是路口、先看灯、走过去，所以缺少的是先看灯。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%98%AF%E8%B7%AF%E5%8F%A3-%E5%85%88%E7%9C%8B%E7%81%AF-%E8%B5%B0%E8%BF%87%E5%8E%BB-%E6%89%80%E4%BB%A5%E7%BC%BA%E5%B0%91%E7%9A%84%E6%98%AF%E5%85%88%E7%9C%8B%E7%81%AF.mp3"
+    },
+    {
+      "id": "retry-先从左到右按顺序说-路口-先看灯-走过去-再想缺少的先看灯让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：路口、先看灯、走过去，再想缺少的先看灯让后面能继续。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E6%8C%89%E9%A1%BA%E5%BA%8F%E8%AF%B4-%E8%B7%AF%E5%8F%A3-%E5%85%88%E7%9C%8B%E7%81%AF-%E8%B5%B0%E8%BF%87%E5%8E%BB-%E5%86%8D%E6%83%B3%E7%BC%BA%E5%B0%91%E7%9A%84%E5%85%88%E7%9C%8B%E7%81%AF%E8%AE%A9%E5%90%8E%E9%9D%A2%E8%83%BD%E7%BB%A7%E7%BB%AD.mp3"
+    },
+    {
+      "id": "parent-请她指着图卡复述路口-先看灯-走过去-说为什么缺少先看灯",
+      "kind": "parent",
+      "text": "请她指着图卡复述路口、先看灯、走过去，说为什么缺少先看灯。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E5%9B%BE%E5%8D%A1%E5%A4%8D%E8%BF%B0%E8%B7%AF%E5%8F%A3-%E5%85%88%E7%9C%8B%E7%81%AF-%E8%B5%B0%E8%BF%87%E5%8E%BB-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%BC%BA%E5%B0%91%E5%85%88%E7%9C%8B%E7%81%AF.mp3"
     },
     {
       "id": "choice-闭眼往前走",
@@ -3227,12 +3437,6 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%A7%AF%E6%9C%A8%E6%95%A3%E5%9C%A8%E5%9C%B0%E4%B8%8A-%E6%83%B3%E9%87%8D%E6%96%B0%E6%90%AD%E5%A1%94-%E5%85%88%E5%81%9A%E4%BB%80%E4%B9%88-%E8%BF%99%E6%98%AF-3-%E6%AD%A5%E6%B5%81%E7%A8%8B-%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%89%BE%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
     },
     {
-      "id": "success-先把积木捡起来-才好重新搭塔",
-      "kind": "success",
-      "text": "先把积木捡起来，才好重新搭塔。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%85%88%E6%8A%8A%E7%A7%AF%E6%9C%A8%E6%8D%A1%E8%B5%B7%E6%9D%A5-%E6%89%8D%E5%A5%BD%E9%87%8D%E6%96%B0%E6%90%AD%E5%A1%94.mp3"
-    },
-    {
       "id": "choice-直接搭高塔",
       "kind": "choice",
       "text": "直接搭高塔",
@@ -3245,10 +3449,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%B2%B3%E5%AF%B9%E5%B2%B8%E6%9C%89%E5%B0%8F%E6%97%97-%E5%85%88%E9%80%89%E4%BB%80%E4%B9%88%E6%89%8D%E8%83%BD%E8%BF%87%E6%B2%B3-%E8%BF%99%E6%98%AF-4-%E6%AD%A5%E6%B5%81%E7%A8%8B-%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%89%BE%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
     },
     {
-      "id": "success-小河挡住了路-要先搭桥",
+      "id": "success-按顺序是小河-先搭桥-小旗-所以缺少的是先搭桥",
       "kind": "success",
-      "text": "小河挡住了路，要先搭桥。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%B0%8F%E6%B2%B3%E6%8C%A1%E4%BD%8F%E4%BA%86%E8%B7%AF-%E8%A6%81%E5%85%88%E6%90%AD%E6%A1%A5.mp3"
+      "text": "按顺序是小河、先搭桥、小旗，所以缺少的是先搭桥。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%98%AF%E5%B0%8F%E6%B2%B3-%E5%85%88%E6%90%AD%E6%A1%A5-%E5%B0%8F%E6%97%97-%E6%89%80%E4%BB%A5%E7%BC%BA%E5%B0%91%E7%9A%84%E6%98%AF%E5%85%88%E6%90%AD%E6%A1%A5.mp3"
+    },
+    {
+      "id": "retry-先从左到右按顺序说-小河-先搭桥-小旗-再想缺少的先搭桥让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：小河、先搭桥、小旗，再想缺少的先搭桥让后面能继续。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E6%8C%89%E9%A1%BA%E5%BA%8F%E8%AF%B4-%E5%B0%8F%E6%B2%B3-%E5%85%88%E6%90%AD%E6%A1%A5-%E5%B0%8F%E6%97%97-%E5%86%8D%E6%83%B3%E7%BC%BA%E5%B0%91%E7%9A%84%E5%85%88%E6%90%AD%E6%A1%A5%E8%AE%A9%E5%90%8E%E9%9D%A2%E8%83%BD%E7%BB%A7%E7%BB%AD.mp3"
+    },
+    {
+      "id": "parent-请她指着图卡复述小河-先搭桥-小旗-说为什么缺少先搭桥",
+      "kind": "parent",
+      "text": "请她指着图卡复述小河、先搭桥、小旗，说为什么缺少先搭桥。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E5%9B%BE%E5%8D%A1%E5%A4%8D%E8%BF%B0%E5%B0%8F%E6%B2%B3-%E5%85%88%E6%90%AD%E6%A1%A5-%E5%B0%8F%E6%97%97-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%BC%BA%E5%B0%91%E5%85%88%E6%90%AD%E6%A1%A5.mp3"
     },
     {
       "id": "choice-直接走进水里",
@@ -3275,10 +3491,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%8A%B1%E5%9B%AD%E9%87%8C%E8%A6%81%E7%85%A7%E9%A1%BE%E5%B0%8F%E8%8A%BD-%E4%B8%8B%E4%B8%80%E6%AD%A5%E5%81%9A%E4%BB%80%E4%B9%88%E6%9B%B4%E5%90%88%E9%80%82-%E8%BF%99%E6%98%AF-3-%E6%AD%A5%E6%B5%81%E7%A8%8B-%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%89%BE%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
     },
     {
-      "id": "success-小芽需要照顾-浇水以后更可能长成花",
+      "id": "success-按顺序是小芽-先浇水-花-所以缺少的是先浇水",
       "kind": "success",
-      "text": "小芽需要照顾，浇水以后更可能长成花。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%B0%8F%E8%8A%BD%E9%9C%80%E8%A6%81%E7%85%A7%E9%A1%BE-%E6%B5%87%E6%B0%B4%E4%BB%A5%E5%90%8E%E6%9B%B4%E5%8F%AF%E8%83%BD%E9%95%BF%E6%88%90%E8%8A%B1.mp3"
+      "text": "按顺序是小芽、先浇水、花，所以缺少的是先浇水。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%98%AF%E5%B0%8F%E8%8A%BD-%E5%85%88%E6%B5%87%E6%B0%B4-%E8%8A%B1-%E6%89%80%E4%BB%A5%E7%BC%BA%E5%B0%91%E7%9A%84%E6%98%AF%E5%85%88%E6%B5%87%E6%B0%B4.mp3"
+    },
+    {
+      "id": "retry-先从左到右按顺序说-小芽-先浇水-花-再想缺少的先浇水让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：小芽、先浇水、花，再想缺少的先浇水让后面能继续。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E6%8C%89%E9%A1%BA%E5%BA%8F%E8%AF%B4-%E5%B0%8F%E8%8A%BD-%E5%85%88%E6%B5%87%E6%B0%B4-%E8%8A%B1-%E5%86%8D%E6%83%B3%E7%BC%BA%E5%B0%91%E7%9A%84%E5%85%88%E6%B5%87%E6%B0%B4%E8%AE%A9%E5%90%8E%E9%9D%A2%E8%83%BD%E7%BB%A7%E7%BB%AD.mp3"
+    },
+    {
+      "id": "parent-请她指着图卡复述小芽-先浇水-花-说为什么缺少先浇水",
+      "kind": "parent",
+      "text": "请她指着图卡复述小芽、先浇水、花，说为什么缺少先浇水。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E5%9B%BE%E5%8D%A1%E5%A4%8D%E8%BF%B0%E5%B0%8F%E8%8A%BD-%E5%85%88%E6%B5%87%E6%B0%B4-%E8%8A%B1-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%BC%BA%E5%B0%91%E5%85%88%E6%B5%87%E6%B0%B4.mp3"
     },
     {
       "id": "choice-先浇水",
@@ -3299,10 +3527,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%8E%A9%E5%85%B7%E5%B7%B2%E7%BB%8F%E5%88%86%E5%A5%BD%E7%B1%BB%E4%BA%86-%E4%B8%8B%E4%B8%80%E6%AD%A5%E5%81%9A%E4%BB%80%E4%B9%88-%E8%BF%99%E6%98%AF-4-%E6%AD%A5%E6%B5%81%E7%A8%8B-%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%89%BE%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
     },
     {
-      "id": "success-已经分类了-下一步放进盒子-房间就更整齐",
+      "id": "success-按顺序是先分类-先放进盒子-整齐-所以缺少的是先放进盒子",
       "kind": "success",
-      "text": "已经分类了，下一步放进盒子，房间就更整齐。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%B7%B2%E7%BB%8F%E5%88%86%E7%B1%BB%E4%BA%86-%E4%B8%8B%E4%B8%80%E6%AD%A5%E6%94%BE%E8%BF%9B%E7%9B%92%E5%AD%90-%E6%88%BF%E9%97%B4%E5%B0%B1%E6%9B%B4%E6%95%B4%E9%BD%90.mp3"
+      "text": "按顺序是先分类、先放进盒子、整齐，所以缺少的是先放进盒子。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%98%AF%E5%85%88%E5%88%86%E7%B1%BB-%E5%85%88%E6%94%BE%E8%BF%9B%E7%9B%92%E5%AD%90-%E6%95%B4%E9%BD%90-%E6%89%80%E4%BB%A5%E7%BC%BA%E5%B0%91%E7%9A%84%E6%98%AF%E5%85%88%E6%94%BE%E8%BF%9B%E7%9B%92%E5%AD%90.mp3"
+    },
+    {
+      "id": "retry-先从左到右按顺序说-先分类-先放进盒子-整齐-再想缺少的先放进盒子让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：先分类、先放进盒子、整齐，再想缺少的先放进盒子让后面能继续。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E6%8C%89%E9%A1%BA%E5%BA%8F%E8%AF%B4-%E5%85%88%E5%88%86%E7%B1%BB-%E5%85%88%E6%94%BE%E8%BF%9B%E7%9B%92%E5%AD%90-%E6%95%B4%E9%BD%90-%E5%86%8D%E6%83%B3%E7%BC%BA%E5%B0%91%E7%9A%84%E5%85%88%E6%94%BE%E8%BF%9B%E7%9B%92%E5%AD%90%E8%AE%A9%E5%90%8E%E9%9D%A2%E8%83%BD%E7%BB%A7%E7%BB%AD.mp3"
+    },
+    {
+      "id": "parent-请她指着图卡复述先分类-先放进盒子-整齐-说为什么缺少先放进盒子",
+      "kind": "parent",
+      "text": "请她指着图卡复述先分类、先放进盒子、整齐，说为什么缺少先放进盒子。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E5%9B%BE%E5%8D%A1%E5%A4%8D%E8%BF%B0%E5%85%88%E5%88%86%E7%B1%BB-%E5%85%88%E6%94%BE%E8%BF%9B%E7%9B%92%E5%AD%90-%E6%95%B4%E9%BD%90-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%BC%BA%E5%B0%91%E5%85%88%E6%94%BE%E8%BF%9B%E7%9B%92%E5%AD%90.mp3"
     },
     {
       "id": "object-先分类",

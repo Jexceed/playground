@@ -952,6 +952,18 @@ function makeStopThinkRounds(): RoundInput[] {
 
 function makeOrderRounds(): RoundInput[] {
   const orderScenes = imageGallery.scenes;
+  const orderStepLabel = (step: string) => ({
+    "🧒": "小朋友",
+    "🌊": "小河",
+    "🌱": "小芽",
+    "🌼": "花",
+    "🥕": "胡萝卜",
+    "🏁": "小旗",
+    "🔴": "红灯",
+    "🟢": "绿灯",
+    "🧱倒了": "积木倒了",
+  }[step] ?? step);
+
   const twoStep = [
     {
       prompt: "小朋友口渴了，想喝水，先做什么？",
@@ -1186,6 +1198,10 @@ function makeOrderRounds(): RoundInput[] {
   return [...twoStep, ...threeStep, ...fourStep, ...fiveStep, ...dailyPlans].map((scene, index) => {
     const stepCount = Number(scene.note.match(/^(\d+)/)?.[1] ?? scene.seq.length);
     const sceneImage = "sceneImage" in scene ? scene.sceneImage : undefined;
+    const choices = scene.choices.map(([label, value]) => ({ label, value }));
+    const answerLabel = choices.find((item) => item.value === scene.answer)?.label ?? scene.answer;
+    const filledSequence = scene.seq.map((step) => step === "?" ? answerLabel : orderStepLabel(step));
+    const flow = filledSequence.join("、");
     return {
       level: index < 3 ? "L4" as AbilityLevel : index < 6 ? "L5" as AbilityLevel : "L6" as AbilityLevel,
       prompt: scene.prompt,
@@ -1193,11 +1209,11 @@ function makeOrderRounds(): RoundInput[] {
       difficultyNote: scene.note,
       sceneImage,
       sequence: scene.seq,
-      choices: scene.choices.map(([label, value]) => ({ label, value })),
+      choices,
       answer: scene.answer,
-      success: scene.success,
-      retry: "先从生活目标往前想：没有这一步，后面的事能不能发生？",
-      parentPrompt: `请她用“先、然后、再、最后”复述这 ${stepCount} 步。`,
+      success: `按顺序是${flow}，所以缺少的是${answerLabel}。`,
+      retry: `先从左到右按顺序说：${flow}，再想缺少的${answerLabel}让后面能继续。`,
+      parentPrompt: `请她指着图卡复述${flow}，说为什么缺少${answerLabel}。`,
       abilityTags: ["顺序推理", stepCount >= 5 ? "多步计划" : stepCount >= 4 ? "生活流程" : "两步计划"],
     };
   });
