@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-04T14:48:07.078Z",
+  "generatedAt": "2026-07-04T15:13:23.043Z",
   "recommendedVoice": "warm adult female Mandarin, smiling, preschool teacher, 0.85 speed, crisp consonants",
   "lineCount": 1539,
   "lines": [
@@ -17124,9 +17124,9 @@
       ]
     },
     {
-      "id": "success-0-是空位-其他格子都有积木-所以从上面看有-3-个位置",
+      "id": "success-从上面看-只看哪些位置有积木-0-是空位-3-个不是-0-的位置能看到积木",
       "kind": "success",
-      "text": "0 是空位，其他格子都有积木，所以从上面看有 3 个位置。",
+      "text": "从上面看，只看哪些位置有积木。0 是空位，3 个不是 0 的位置能看到积木。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-three-view-blocks/logic-three-view-blocks-1",
@@ -17134,9 +17134,9 @@
       ]
     },
     {
-      "id": "retry-只数不是-0-的格子-不要把层数加起来",
+      "id": "retry-0-是空位-只数不是-0-的位置-不要把层数加起来",
       "kind": "retry",
-      "text": "只数不是 0 的格子，不要把层数加起来。",
+      "text": "0 是空位；只数不是 0 的位置，不要把层数加起来。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
         "logic-three-view-blocks/logic-three-view-blocks-1",
@@ -17148,9 +17148,9 @@
       ]
     },
     {
-      "id": "parent-请她把不是-0-的格子点出来-说这些地方从上面能看到",
+      "id": "parent-请她先点出不是-0-的格子-再指一指-0-这些空位-说从上面哪些地方能看到积木",
       "kind": "parent",
-      "text": "请她把不是 0 的格子点出来，说这些地方从上面能看到。",
+      "text": "请她先点出不是 0 的格子，再指一指 0 这些空位，说从上面哪些地方能看到积木。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-three-view-blocks/logic-three-view-blocks-1",
@@ -17162,9 +17162,9 @@
       ]
     },
     {
-      "id": "success-0-是空位-其他格子都有积木-所以从上面看有-4-个位置",
+      "id": "success-从上面看-只看哪些位置有积木-0-是空位-4-个不是-0-的位置能看到积木",
       "kind": "success",
-      "text": "0 是空位，其他格子都有积木，所以从上面看有 4 个位置。",
+      "text": "从上面看，只看哪些位置有积木。0 是空位，4 个不是 0 的位置能看到积木。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-three-view-blocks/logic-three-view-blocks-3",
@@ -17172,18 +17172,18 @@
       ]
     },
     {
-      "id": "success-0-是空位-其他格子都有积木-所以从上面看有-7-个位置",
+      "id": "success-从上面看-只看哪些位置有积木-0-是空位-7-个不是-0-的位置能看到积木",
       "kind": "success",
-      "text": "0 是空位，其他格子都有积木，所以从上面看有 7 个位置。",
+      "text": "从上面看，只看哪些位置有积木。0 是空位，7 个不是 0 的位置能看到积木。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-three-view-blocks/logic-three-view-blocks-5"
       ]
     },
     {
-      "id": "success-0-是空位-其他格子都有积木-所以从上面看有-6-个位置",
+      "id": "success-从上面看-只看哪些位置有积木-0-是空位-6-个不是-0-的位置能看到积木",
       "kind": "success",
-      "text": "0 是空位，其他格子都有积木，所以从上面看有 6 个位置。",
+      "text": "从上面看，只看哪些位置有积木。0 是空位，6 个不是 0 的位置能看到积木。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-three-view-blocks/logic-three-view-blocks-6"
@@ -17204,18 +17204,18 @@
       ]
     },
     {
-      "id": "success-从前面看-第一列最高-2-层-第二列最高-1-层",
+      "id": "success-从前面看-第一列最高-2-层-第二列最高-1-层-所以选-2和1",
       "kind": "success",
-      "text": "从前面看，第一列最高 2 层，第二列最高 1 层。",
+      "text": "从前面看，第一列最高 2 层，第二列最高 1 层，所以选 2和1。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-three-view-blocks/logic-three-view-blocks-7"
       ]
     },
     {
-      "id": "retry-不要把一列里的数字相加-只找这一列最大的数字",
+      "id": "retry-从前面看-一列一列找最高的数字-不要把这一列相加",
       "kind": "retry",
-      "text": "不要把一列里的数字相加，只找这一列最大的数字。",
+      "text": "从前面看，一列一列找最高的数字，不要把这一列相加。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
         "logic-three-view-blocks/logic-three-view-blocks-7",
@@ -17227,9 +17227,9 @@
       ]
     },
     {
-      "id": "parent-请她用手指竖着看一列-说这一列最高是几层",
+      "id": "parent-请她从前面看-竖着指每一列-说哪一层最高-哪些矮一点会被挡住",
       "kind": "parent",
-      "text": "请她用手指竖着看一列，说这一列最高是几层。",
+      "text": "请她从前面看，竖着指每一列，说哪一层最高、哪些矮一点会被挡住。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-three-view-blocks/logic-three-view-blocks-7",
@@ -17248,16 +17248,10 @@
       "contexts": [
         "logic-three-view-blocks/logic-three-view-blocks-7",
         "logic-three-view-blocks/logic-three-view-blocks-8",
-        "logic-three-view-blocks/logic-three-view-blocks-9",
-        "logic-three-view-blocks/logic-three-view-blocks-10",
-        "logic-three-view-blocks/logic-three-view-blocks-11",
-        "logic-three-view-blocks/logic-three-view-blocks-12",
         "logic-three-view-blocks/logic-three-view-blocks-13",
         "logic-three-view-blocks/logic-three-view-blocks-14",
         "logic-three-view-blocks/logic-three-view-blocks-15",
-        "logic-three-view-blocks/logic-three-view-blocks-16",
-        "logic-three-view-blocks/logic-three-view-blocks-17",
-        "logic-three-view-blocks/logic-three-view-blocks-18"
+        "logic-three-view-blocks/logic-three-view-blocks-16"
       ]
     },
     {
@@ -17268,16 +17262,10 @@
       "contexts": [
         "logic-three-view-blocks/logic-three-view-blocks-7",
         "logic-three-view-blocks/logic-three-view-blocks-8",
-        "logic-three-view-blocks/logic-three-view-blocks-9",
-        "logic-three-view-blocks/logic-three-view-blocks-10",
-        "logic-three-view-blocks/logic-three-view-blocks-11",
-        "logic-three-view-blocks/logic-three-view-blocks-12",
         "logic-three-view-blocks/logic-three-view-blocks-13",
         "logic-three-view-blocks/logic-three-view-blocks-14",
         "logic-three-view-blocks/logic-three-view-blocks-15",
-        "logic-three-view-blocks/logic-three-view-blocks-16",
-        "logic-three-view-blocks/logic-three-view-blocks-17",
-        "logic-three-view-blocks/logic-three-view-blocks-18"
+        "logic-three-view-blocks/logic-three-view-blocks-16"
       ]
     },
     {
@@ -17294,18 +17282,18 @@
       ]
     },
     {
-      "id": "success-从前面看-两列最高分别是-2-层和-3-层",
+      "id": "success-从前面看-第一列最高-2-层-第二列最高-3-层-所以选-2和3",
       "kind": "success",
-      "text": "从前面看，两列最高分别是 2 层和 3 层。",
+      "text": "从前面看，第一列最高 2 层，第二列最高 3 层，所以选 2和3。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-three-view-blocks/logic-three-view-blocks-8"
       ]
     },
     {
-      "id": "success-从前面看-三列最高是-1-层-2-层-1-层",
+      "id": "success-从前面看-第一列最高-1-层-第二列最高-2-层-第三列最高-1-层-所以选-1-2-1",
       "kind": "success",
-      "text": "从前面看，三列最高是 1 层、2 层、1 层。",
+      "text": "从前面看，第一列最高 1 层，第二列最高 2 层，第三列最高 1 层，所以选 1、2、1。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-three-view-blocks/logic-three-view-blocks-9"
@@ -17317,16 +17305,12 @@
       "text": "1、2、1",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-three-view-blocks/logic-three-view-blocks-9"
-      ]
-    },
-    {
-      "id": "success-从前面看-三列最高是-3-层-2-层-1-层",
-      "kind": "success",
-      "text": "从前面看，三列最高是 3 层、2 层、1 层。",
-      "tone": "warm, delighted, clear",
-      "contexts": [
-        "logic-three-view-blocks/logic-three-view-blocks-10"
+        "logic-three-view-blocks/logic-three-view-blocks-9",
+        "logic-three-view-blocks/logic-three-view-blocks-10",
+        "logic-three-view-blocks/logic-three-view-blocks-11",
+        "logic-three-view-blocks/logic-three-view-blocks-12",
+        "logic-three-view-blocks/logic-three-view-blocks-17",
+        "logic-three-view-blocks/logic-three-view-blocks-18"
       ]
     },
     {
@@ -17335,16 +17319,12 @@
       "text": "3、2、1",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-three-view-blocks/logic-three-view-blocks-10"
-      ]
-    },
-    {
-      "id": "success-从前面看-三列最高都是-2-层",
-      "kind": "success",
-      "text": "从前面看，三列最高都是 2 层。",
-      "tone": "warm, delighted, clear",
-      "contexts": [
-        "logic-three-view-blocks/logic-three-view-blocks-11"
+        "logic-three-view-blocks/logic-three-view-blocks-9",
+        "logic-three-view-blocks/logic-three-view-blocks-10",
+        "logic-three-view-blocks/logic-three-view-blocks-11",
+        "logic-three-view-blocks/logic-three-view-blocks-12",
+        "logic-three-view-blocks/logic-three-view-blocks-17",
+        "logic-three-view-blocks/logic-three-view-blocks-18"
       ]
     },
     {
@@ -17353,13 +17333,33 @@
       "text": "2、2、2",
       "tone": "friendly, clear, playful",
       "contexts": [
+        "logic-three-view-blocks/logic-three-view-blocks-9",
+        "logic-three-view-blocks/logic-three-view-blocks-10",
         "logic-three-view-blocks/logic-three-view-blocks-11"
       ]
     },
     {
-      "id": "success-从前面看-三列最高是-2-层-3-层-1-层",
+      "id": "success-从前面看-第一列最高-3-层-第二列最高-2-层-第三列最高-1-层-所以选-3-2-1",
       "kind": "success",
-      "text": "从前面看，三列最高是 2 层、3 层、1 层。",
+      "text": "从前面看，第一列最高 3 层，第二列最高 2 层，第三列最高 1 层，所以选 3、2、1。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-three-view-blocks/logic-three-view-blocks-10"
+      ]
+    },
+    {
+      "id": "success-从前面看-第一列-第二列-第三列最高都是-2-层-所以选-2-2-2",
+      "kind": "success",
+      "text": "从前面看，第一列、第二列、第三列最高都是 2 层，所以选 2、2、2。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-three-view-blocks/logic-three-view-blocks-11"
+      ]
+    },
+    {
+      "id": "success-从前面看-第一列最高-2-层-第二列最高-3-层-第三列最高-1-层-所以选-2-3-1",
+      "kind": "success",
+      "text": "从前面看，第一列最高 2 层，第二列最高 3 层，第三列最高 1 层，所以选 2、3、1。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-three-view-blocks/logic-three-view-blocks-12"
@@ -17390,18 +17390,18 @@
       ]
     },
     {
-      "id": "success-从左边看-第一排最高-1-层-第二排最高-2-层",
+      "id": "success-从左边看-第一排最高-1-层-第二排最高-2-层-所以选-1和2",
       "kind": "success",
-      "text": "从左边看，第一排最高 1 层，第二排最高 2 层。",
+      "text": "从左边看，第一排最高 1 层，第二排最高 2 层，所以选 1和2。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-three-view-blocks/logic-three-view-blocks-13"
       ]
     },
     {
-      "id": "retry-横着看一排-找这一排里最大的数字",
+      "id": "retry-从左边看-一排一排找最高的数字-不要把这一排相加",
       "kind": "retry",
-      "text": "横着看一排，找这一排里最大的数字。",
+      "text": "从左边看，一排一排找最高的数字，不要把这一排相加。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
         "logic-three-view-blocks/logic-three-view-blocks-13",
@@ -17413,9 +17413,9 @@
       ]
     },
     {
-      "id": "parent-请她横着读一排数字-再说最高是几层",
+      "id": "parent-请她从左边看-横着指每一排-说这一排最高几层-哪些矮一点会被挡住",
       "kind": "parent",
-      "text": "请她横着读一排数字，再说最高是几层。",
+      "text": "请她从左边看，横着指每一排，说这一排最高几层、哪些矮一点会被挡住。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-three-view-blocks/logic-three-view-blocks-13",
@@ -17427,27 +17427,27 @@
       ]
     },
     {
-      "id": "success-从左边看-两排最高分别是-2-层和-3-层",
+      "id": "success-从左边看-第一排最高-2-层-第二排最高-3-层-所以选-2和3",
       "kind": "success",
-      "text": "从左边看，两排最高分别是 2 层和 3 层。",
+      "text": "从左边看，第一排最高 2 层，第二排最高 3 层，所以选 2和3。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-three-view-blocks/logic-three-view-blocks-14"
       ]
     },
     {
-      "id": "success-从左边看-第一排最高-2-层-第二排最高-1-层",
+      "id": "success-从左边看-第一排最高-2-层-第二排最高-1-层-所以选-2和1",
       "kind": "success",
-      "text": "从左边看，第一排最高 2 层，第二排最高 1 层。",
+      "text": "从左边看，第一排最高 2 层，第二排最高 1 层，所以选 2和1。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-three-view-blocks/logic-three-view-blocks-15"
       ]
     },
     {
-      "id": "success-从左边看-两排最高分别是-3-层和-2-层",
+      "id": "success-从左边看-第一排最高-3-层-第二排最高-2-层-所以选-3和2",
       "kind": "success",
-      "text": "从左边看，两排最高分别是 3 层和 2 层。",
+      "text": "从左边看，第一排最高 3 层，第二排最高 2 层，所以选 3和2。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-three-view-blocks/logic-three-view-blocks-16"
@@ -17463,9 +17463,9 @@
       ]
     },
     {
-      "id": "success-从左边看-三排最高是-2-层-2-层-1-层",
+      "id": "success-从左边看-第一排最高-2-层-第二排最高-2-层-第三排最高-1-层-所以选-2-2-1",
       "kind": "success",
-      "text": "从左边看，三排最高是 2 层、2 层、1 层。",
+      "text": "从左边看，第一排最高 2 层，第二排最高 2 层，第三排最高 1 层，所以选 2、2、1。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-three-view-blocks/logic-three-view-blocks-17"
@@ -17481,9 +17481,9 @@
       ]
     },
     {
-      "id": "success-从左边看-三排最高是-2-层-3-层-1-层",
+      "id": "success-从左边看-第一排最高-2-层-第二排最高-3-层-第三排最高-1-层-所以选-2-3-1",
       "kind": "success",
-      "text": "从左边看，三排最高是 2 层、3 层、1 层。",
+      "text": "从左边看，第一排最高 2 层，第二排最高 3 层，第三排最高 1 层，所以选 2、3、1。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-three-view-blocks/logic-three-view-blocks-18"

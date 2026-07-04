@@ -171,6 +171,9 @@ for (const game of games) {
     if (game.id === "logic-block-height-map") {
       checkBlockHeightRoundQuality(round, context);
     }
+    if (game.id === "logic-three-view-blocks") {
+      checkThreeViewBlockRoundQuality(round, context);
+    }
     if (!round.sceneImage && !round.sequence && !round.visualGroups && !round.grid && !round.matrix && !round.memory) {
       problems.push(`${context}: missing visual surface`);
     }
@@ -744,6 +747,166 @@ function sumNumericTexts(values) {
 
 function isNumericText(value) {
   return typeof value === "string" && /^\d+$/.test(value);
+}
+
+function checkThreeViewBlockRoundQuality(round, context) {
+  if (/从上面看/.test(round.prompt)) {
+    checkThreeViewTopRound(round, context);
+    return;
+  }
+  if (/从前面看/.test(round.prompt)) {
+    checkThreeViewFrontRound(round, context);
+    return;
+  }
+  if (/从左边看/.test(round.prompt)) {
+    checkThreeViewLeftRound(round, context);
+  }
+}
+
+function checkThreeViewTopRound(round, context) {
+  const cells = round.grid?.cells;
+  if (!isNumericCellGrid(cells)) {
+    problems.push(`${context}: three-view top round should show a numeric grid`);
+    return;
+  }
+  const expectedCount = countPositiveCells(cells);
+  if (round.answer !== String(expectedCount)) {
+    problems.push(`${context}: three-view top answer should equal the count of non-zero positions`);
+  }
+  if (
+    !/从上面看/.test(round.success) ||
+    !/位置/.test(round.success) ||
+    !round.success.includes(String(expectedCount)) ||
+    !/不是 0|不为 0|大于 0|有积木/.test(round.success) ||
+    !/0 是空位|0 是空的|空位/.test(round.success)
+  ) {
+    problems.push(`${context}: three-view top success should explain visible positions and final count`);
+  }
+  if (!/不是 0|不为 0|大于 0|有积木/.test(round.retry) || !/不要|不/.test(round.retry) || !/层数|相加|加/.test(round.retry)) {
+    problems.push(`${context}: three-view top retry should ask for non-zero positions, not layer totals`);
+  }
+  if (
+    !/点|指/.test(round.parentPrompt) ||
+    !/不是 0|不为 0|大于 0|有积木/.test(round.parentPrompt) ||
+    !/空位|空的/.test(round.parentPrompt)
+  ) {
+    problems.push(`${context}: three-view top parentPrompt should ask the child to point to visible and empty positions`);
+  }
+}
+
+function checkThreeViewFrontRound(round, context) {
+  const cells = round.grid?.cells;
+  if (!isNumericCellGrid(cells) || !hasRectangularRows(cells)) {
+    problems.push(`${context}: three-view front round should show a numeric grid`);
+    return;
+  }
+  const expectedAnswer = heightSequenceAnswer(columnMaximums(cells));
+  if (round.answer !== expectedAnswer) {
+    problems.push(`${context}: three-view front answer should equal column maximums from left to right`);
+  }
+  if (!round.choices.some((choice) => choice.value === expectedAnswer)) {
+    problems.push(`${context}: three-view front choices should include the correct column-maximum answer`);
+  }
+  if (!heightChoicesMatchCount(round.choices, cells[0].length)) {
+    problems.push(`${context}: three-view front choices should use one height per visible column`);
+  }
+  if (
+    !/从前面看/.test(round.success) ||
+    !/列/.test(round.success) ||
+    !/最高/.test(round.success) ||
+    !round.success.includes(expectedAnswer)
+  ) {
+    problems.push(`${context}: three-view front success should name front view, columns, highest stacks, and final answer`);
+  }
+  if (!/从前面看/.test(round.retry) || !/列/.test(round.retry) || !/最高|最大/.test(round.retry) || !/不要|不/.test(round.retry) || !/相加|加/.test(round.retry)) {
+    problems.push(`${context}: three-view front retry should ask the child to read columns without adding`);
+  }
+  if (
+    !/从前面看/.test(round.parentPrompt) ||
+    !/列/.test(round.parentPrompt) ||
+    !/最高/.test(round.parentPrompt) ||
+    !/挡住|藏|看不到|遮住|只露/.test(round.parentPrompt)
+  ) {
+    problems.push(`${context}: three-view front parentPrompt should ask for column heights and hidden stacks`);
+  }
+}
+
+function checkThreeViewLeftRound(round, context) {
+  const cells = round.grid?.cells;
+  if (!isNumericCellGrid(cells) || !hasRectangularRows(cells)) {
+    problems.push(`${context}: three-view left round should show a numeric grid`);
+    return;
+  }
+  const expectedAnswer = heightSequenceAnswer(rowMaximums(cells));
+  if (round.answer !== expectedAnswer) {
+    problems.push(`${context}: three-view left answer should equal row maximums from top to bottom`);
+  }
+  if (!round.choices.some((choice) => choice.value === expectedAnswer)) {
+    problems.push(`${context}: three-view left choices should include the correct row-maximum answer`);
+  }
+  if (!heightChoicesMatchCount(round.choices, cells.length)) {
+    problems.push(`${context}: three-view left choices should use one height per visible row`);
+  }
+  if (
+    !/从左边看/.test(round.success) ||
+    !/排|行/.test(round.success) ||
+    !/最高/.test(round.success) ||
+    !round.success.includes(expectedAnswer)
+  ) {
+    problems.push(`${context}: three-view left success should name left view, rows, highest stacks, and final answer`);
+  }
+  if (!/从左边看/.test(round.retry) || !/排|行/.test(round.retry) || !/最高|最大/.test(round.retry) || !/不要|不/.test(round.retry) || !/相加|加/.test(round.retry)) {
+    problems.push(`${context}: three-view left retry should ask the child to read rows without adding`);
+  }
+  if (
+    !/从左边看/.test(round.parentPrompt) ||
+    !/排|行/.test(round.parentPrompt) ||
+    !/最高/.test(round.parentPrompt) ||
+    !/挡住|藏|看不到|遮住|只露/.test(round.parentPrompt)
+  ) {
+    problems.push(`${context}: three-view left parentPrompt should ask for row heights and hidden stacks`);
+  }
+}
+
+function countPositiveCells(cells) {
+  return cells.flat().filter((value) => Number(value) > 0).length;
+}
+
+function hasRectangularRows(cells) {
+  return cells.every((row) => row.length === cells[0].length);
+}
+
+function columnMaximums(cells) {
+  return cells[0].map((_, columnIndex) => Math.max(...cells.map((row) => Number(row[columnIndex]))));
+}
+
+function rowMaximums(cells) {
+  return cells.map((row) => Math.max(...row.map((value) => Number(value))));
+}
+
+function heightSequenceAnswer(values) {
+  if (values.length === 1) return String(values[0]);
+  if (values.length === 2) return `${values[0]}和${values[1]}`;
+  return values.join("、");
+}
+
+function heightChoicesMatchCount(choices, expectedCount) {
+  return choices.every((choice) => heightSequenceLength(choice.value) === expectedCount);
+}
+
+function heightSequenceLength(value) {
+  if (typeof value !== "string") return 0;
+  const normalized = value.replace(/\s+/g, "");
+  if (/^\d+$/.test(normalized)) return 1;
+  if (normalized.includes("、")) {
+    const parts = normalized.split("、");
+    return parts.every(isNumericText) ? parts.length : 0;
+  }
+  if (normalized.includes("和")) {
+    const parts = normalized.split("和");
+    return parts.every(isNumericText) ? parts.length : 0;
+  }
+  return 0;
 }
 
 function checkLogicDifficultyNote(round, context) {

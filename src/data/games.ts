@@ -3531,48 +3531,48 @@ function makeThreeViewBlockRounds(): RoundInput[] {
       topCount: 3,
       front: "2和1",
       left: "1和2",
-      frontExplain: "从前面看，第一列最高 2 层，第二列最高 1 层。",
-      leftExplain: "从左边看，第一排最高 1 层，第二排最高 2 层。",
+      frontExplain: "从前面看，第一列最高 2 层，第二列最高 1 层，所以选 2和1。",
+      leftExplain: "从左边看，第一排最高 1 层，第二排最高 2 层，所以选 1和2。",
     },
     {
       cells: [["2", "1"], ["0", "3"]],
       topCount: 3,
       front: "2和3",
       left: "2和3",
-      frontExplain: "从前面看，两列最高分别是 2 层和 3 层。",
-      leftExplain: "从左边看，两排最高分别是 2 层和 3 层。",
+      frontExplain: "从前面看，第一列最高 2 层，第二列最高 3 层，所以选 2和3。",
+      leftExplain: "从左边看，第一排最高 2 层，第二排最高 3 层，所以选 2和3。",
     },
     {
       cells: [["1", "2", "0"], ["0", "1", "1"]],
       topCount: 4,
       front: "1、2、1",
       left: "2和1",
-      frontExplain: "从前面看，三列最高是 1 层、2 层、1 层。",
-      leftExplain: "从左边看，第一排最高 2 层，第二排最高 1 层。",
+      frontExplain: "从前面看，第一列最高 1 层，第二列最高 2 层，第三列最高 1 层，所以选 1、2、1。",
+      leftExplain: "从左边看，第一排最高 2 层，第二排最高 1 层，所以选 2和1。",
     },
     {
       cells: [["3", "0", "1"], ["1", "2", "0"]],
       topCount: 4,
       front: "3、2、1",
       left: "3和2",
-      frontExplain: "从前面看，三列最高是 3 层、2 层、1 层。",
-      leftExplain: "从左边看，两排最高分别是 3 层和 2 层。",
+      frontExplain: "从前面看，第一列最高 3 层，第二列最高 2 层，第三列最高 1 层，所以选 3、2、1。",
+      leftExplain: "从左边看，第一排最高 3 层，第二排最高 2 层，所以选 3和2。",
     },
     {
       cells: [["1", "2", "1"], ["2", "0", "2"], ["1", "0", "1"]],
       topCount: 7,
       front: "2、2、2",
       left: "2、2、1",
-      frontExplain: "从前面看，三列最高都是 2 层。",
-      leftExplain: "从左边看，三排最高是 2 层、2 层、1 层。",
+      frontExplain: "从前面看，第一列、第二列、第三列最高都是 2 层，所以选 2、2、2。",
+      leftExplain: "从左边看，第一排最高 2 层，第二排最高 2 层，第三排最高 1 层，所以选 2、2、1。",
     },
     {
       cells: [["2", "0", "1"], ["0", "3", "1"], ["1", "1", "0"]],
       topCount: 6,
       front: "2、3、1",
       left: "2、3、1",
-      frontExplain: "从前面看，三列最高是 2 层、3 层、1 层。",
-      leftExplain: "从左边看，三排最高是 2 层、3 层、1 层。",
+      frontExplain: "从前面看，第一列最高 2 层，第二列最高 3 层，第三列最高 1 层，所以选 2、3、1。",
+      leftExplain: "从左边看，第一排最高 2 层，第二排最高 3 层，第三排最高 1 层，所以选 2、3、1。",
     },
   ];
 
@@ -3586,9 +3586,9 @@ function makeThreeViewBlockRounds(): RoundInput[] {
       grid: { columns, rows, cells: item.cells },
       choices: numberChoices(item.topCount, Math.max(1, item.topCount - 1), Math.min(9, item.topCount + 1)),
       answer: String(item.topCount),
-      success: `0 是空位，其他格子都有积木，所以从上面看有 ${item.topCount} 个位置。`,
-      retry: "只数不是 0 的格子，不要把层数加起来。",
-      parentPrompt: "请她把不是 0 的格子点出来，说这些地方从上面能看到。",
+      success: `从上面看，只看哪些位置有积木。0 是空位，${item.topCount} 个不是 0 的位置能看到积木。`,
+      retry: "0 是空位；只数不是 0 的位置，不要把层数加起来。",
+      parentPrompt: "请她先点出不是 0 的格子，再指一指 0 这些空位，说从上面哪些地方能看到积木。",
       abilityTags: ["俯视图", "视角转换"],
     };
   });
@@ -3604,8 +3604,8 @@ function makeThreeViewBlockRounds(): RoundInput[] {
       choices: threeViewChoices(item.front),
       answer: item.front,
       success: item.frontExplain,
-      retry: "不要把一列里的数字相加，只找这一列最大的数字。",
-      parentPrompt: "请她用手指竖着看一列，说这一列最高是几层。",
+      retry: "从前面看，一列一列找最高的数字，不要把这一列相加。",
+      parentPrompt: "请她从前面看，竖着指每一列，说哪一层最高、哪些矮一点会被挡住。",
       abilityTags: ["三视图", "最高层判断"],
     };
   });
@@ -3621,8 +3621,8 @@ function makeThreeViewBlockRounds(): RoundInput[] {
       choices: threeViewChoices(item.left),
       answer: item.left,
       success: item.leftExplain,
-      retry: "横着看一排，找这一排里最大的数字。",
-      parentPrompt: "请她横着读一排数字，再说最高是几层。",
+      retry: "从左边看，一排一排找最高的数字，不要把这一排相加。",
+      parentPrompt: "请她从左边看，横着指每一排，说这一排最高几层、哪些矮一点会被挡住。",
       abilityTags: ["三视图", "视角转换"],
     };
   });
@@ -3775,7 +3775,10 @@ function choiceSet(values: readonly string[]) {
 
 function threeViewChoices(answer: string) {
   const values = [answer];
-  for (const candidate of ["1和2", "2和1", "2和3", "3和2", "1、2、1", "3、2、1", "2、2、2", "2、2、1", "2、3、1"]) {
+  const candidates = answer.includes("、")
+    ? ["1、2、1", "3、2、1", "2、2、2", "2、2、1", "2、3、1", "1、3、1", "2、1、3"]
+    : ["1和2", "2和1", "2和3", "3和2", "1和3", "3和1"];
+  for (const candidate of candidates) {
     if (!values.includes(candidate)) values.push(candidate);
     if (values.length === 3) break;
   }

@@ -48,6 +48,16 @@ grouped by date.
   before selecting a total or comparison.
 - Exported updated voice lines and regenerated the local Edge voice manifest for
   the rewritten block-height content.
+- Added the `007-three-view-quality` Spec Kit feature for top, front, and left
+  view block reasoning quality.
+- Expanded the curriculum audit with three-view checks for top-view non-zero
+  counts, front-view column maximums, left-view row maximums, active-view
+  guidance, and side-view choice sequence length.
+- Reworked `logic-three-view-blocks` success feedback, retry guidance, parent
+  prompts, and side-view distractors so each round explains the active viewpoint
+  and uses one height per visible column or row.
+- Exported updated voice lines and regenerated the local Edge voice manifest for
+  the rewritten three-view content.
 - Initialized GitHub Spec Kit with Codex skills integration.
 - Established the project constitution in `.specify/memory/constitution.md`.
 - Expanded `AGENTS.md` with project overview, source-of-truth rules,
