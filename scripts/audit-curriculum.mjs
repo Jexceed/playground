@@ -76,6 +76,22 @@ const sorterVisualRules = new Map([
   ["🟦", { color: "蓝色", shape: "方形" }],
   ["⬜", { color: "白色", shape: "方形" }],
 ]);
+const visualMatchPartAliases = new Map([
+  ["🔴", ["红色", "红色圆片"]],
+  ["🟡", ["黄色", "黄色圆片"]],
+  ["🟢", ["绿色", "绿色圆片"]],
+  ["🔵", ["蓝色", "蓝色圆片"]],
+  ["🟦", ["蓝色方块", "方块"]],
+  ["⭐", ["星星"]],
+  ["🍎", ["苹果"]],
+  ["🍊", ["橘子"]],
+  ["🍓", ["草莓"]],
+  ["🍪", ["饼干"]],
+  ["🍬", ["糖果"]],
+  ["🐱", ["小猫"]],
+  ["🐶", ["小狗"]],
+  ["🐰", ["小兔"]],
+]);
 const counts = games.reduce(
   (acc, game) => {
     acc.totalGames += 1;
@@ -145,6 +161,9 @@ for (const game of games) {
     }
     if (game.id === "logic-same-kind-detective") {
       checkSameKindRoundQuality(round, context);
+    }
+    if (game.id === "logic-visual-match") {
+      checkVisualMatchRoundQuality(round, context);
     }
     if (!round.sceneImage && !round.sequence && !round.visualGroups && !round.grid && !round.matrix && !round.memory) {
       problems.push(`${context}: missing visual surface`);
@@ -408,6 +427,109 @@ function checkSameKindRoundQuality(round, context) {
   if (visualItems.length < 3) {
     problems.push(`${context}: same-kind round should show at least three examples`);
   }
+}
+
+function checkVisualMatchRoundQuality(round, context) {
+  const firstGroup = round.visualGroups?.[0];
+  const isOddCardRound = /不一样/.test(round.prompt);
+  if (isOddCardRound) {
+    checkVisualMatchOddCardRound(round, context, firstGroup);
+    return;
+  }
+  checkVisualMatchExactRound(round, context, firstGroup);
+}
+
+function checkVisualMatchExactRound(round, context, group) {
+  const sample = group?.items?.[0];
+  if (!group || !/样板|上面/.test(group.label ?? "") || group.items.length !== 1) {
+    problems.push(`${context}: visual-match exact round should show one sample card`);
+  }
+  if (!sample) return;
+  if (round.answer !== sample) {
+    problems.push(`${context}: visual-match exact round answer should equal the sample card`);
+  }
+  const matchingChoices = round.choices.filter((choice) => choice.value === sample);
+  if (matchingChoices.length !== 1) {
+    problems.push(`${context}: visual-match exact round should include exactly one matching choice`);
+  }
+  if (!round.choices.some((choice) => choice.value !== sample && sharesVisibleMaterial(choice.value, sample))) {
+    problems.push(`${context}: visual-match exact round should include a close distractor`);
+  }
+  if (!successNamesCardParts(round.success, sample) || !/从左到右|顺序|第一个|第二个|先|再|每个|全部/.test(round.success)) {
+    problems.push(`${context}: visual-match exact success should name the matched card and visible comparison`);
+  }
+  if (!/从左到右/.test(round.retry) || !/每个|全部|都|完全|一点点/.test(round.retry)) {
+    problems.push(`${context}: visual-match exact retry should require left-to-right all-parts comparison`);
+  }
+  if (!/为什么|哪里|差|不一样|只是/.test(round.parentPrompt) || !/从左到右|顺序|第一个|第二个|每个/.test(round.parentPrompt)) {
+    problems.push(`${context}: visual-match exact parentPrompt should ask why a close card is different`);
+  }
+}
+
+function checkVisualMatchOddCardRound(round, context, group) {
+  const items = group?.items ?? [];
+  if (!group || items.length !== 3) {
+    problems.push(`${context}: visual-match odd-card round should show exactly three cards`);
+    return;
+  }
+  const counts = countValues(items);
+  const matchingEntry = [...counts.entries()].find(([, count]) => count === 2);
+  const differentEntry = [...counts.entries()].find(([, count]) => count === 1);
+  if (!matchingEntry || !differentEntry || counts.size !== 2) {
+    problems.push(`${context}: visual-match odd-card round should have exactly two matching cards`);
+    return;
+  }
+  const differentIndex = items.indexOf(differentEntry[0]);
+  const expectedAnswer = ["left", "middle", "right"][differentIndex];
+  if (round.answer !== expectedAnswer) {
+    problems.push(`${context}: visual-match odd-card answer should point to the different card`);
+  }
+  const positionChoices = new Set(round.choices.map((choice) => choice.value));
+  if (positionChoices.size !== 3 || !["left", "middle", "right"].every((value) => positionChoices.has(value))) {
+    problems.push(`${context}: visual-match odd-card choices should be left, middle, and right positions`);
+  }
+  if (
+    !round.success.includes(positionLabel(expectedAnswer)) ||
+    !/另外两张|两张一样|一对|左边和中间|左边和右边|中间和右边/.test(round.success) ||
+    !/不同|不一样|反了|换了|颜色|顺序|位置|第二个|后两/.test(round.success)
+  ) {
+    problems.push(`${context}: visual-match odd-card success should name the matching pair and difference`);
+  }
+  if (!/两张一样|一对|配成一对|剩下/.test(round.retry)) {
+    problems.push(`${context}: visual-match odd-card retry should ask the child to find the matching pair first`);
+  }
+  if (!/哪两张|两张一样|一对/.test(round.parentPrompt) || !/哪里|哪儿|不同|不一样/.test(round.parentPrompt)) {
+    problems.push(`${context}: visual-match odd-card parentPrompt should ask for the matching pair and visible difference`);
+  }
+}
+
+function countValues(values) {
+  const counts = new Map();
+  for (const value of values) {
+    counts.set(value, (counts.get(value) ?? 0) + 1);
+  }
+  return counts;
+}
+
+function sharesVisibleMaterial(left, right) {
+  return Array.from(left).some((part) => right.includes(part));
+}
+
+function successNamesCardParts(text, card) {
+  const partAliases = Array.from(card)
+    .map((part) => visualMatchPartAliases.get(part))
+    .filter(Boolean);
+  if (partAliases.length === 0) return true;
+  const matchedParts = partAliases.filter((aliases) => aliases.some((alias) => text.includes(alias)));
+  return matchedParts.length >= Math.min(2, partAliases.length);
+}
+
+function positionLabel(position) {
+  return {
+    left: "左边",
+    middle: "中间",
+    right: "右边",
+  }[position] ?? "";
 }
 
 function checkLogicDifficultyNote(round, context) {

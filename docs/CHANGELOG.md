@@ -21,6 +21,15 @@ grouped by date.
   parent prompts so category rules and odd-one-out reasons are explicit.
 - Exported updated voice lines and regenerated the local Edge voice manifest for
   the rewritten same-kind content.
+- Added the `004-visual-match-quality` Spec Kit feature for exact-match and
+  odd-card visual comparison quality.
+- Expanded the curriculum audit with visual-match checks for sample-card
+  matching, close distractors, matching-pair structure, and feedback clarity.
+- Reworked `logic-visual-match` instructions, success feedback, retry guidance,
+  and parent prompts so every round explains left-to-right matches or the
+  matching pair before the different card.
+- Exported updated voice lines and regenerated the local Edge voice manifest for
+  the rewritten visual-match content.
 - Initialized GitHub Spec Kit with Codex skills integration.
 - Established the project constitution in `.specify/memory/constitution.md`.
 - Expanded `AGENTS.md` with project overview, source-of-truth rules,

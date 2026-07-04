@@ -2954,23 +2954,47 @@ function makeVisualMatchRounds(): RoundInput[] {
   const exactRounds: RoundInput[] = exactCases.map((item, index) => ({
     level: index < 4 ? "L4" : "L5",
     prompt: "哪一张和上面完全一样？",
-    instruction: "颜色、形状和顺序都要一样。",
+    instruction: "从左到右比第一格、第二格，每个都一样才选。",
     visualGroups: [{ label: "样板卡", items: [item.target] }],
     choices: choiceSet(item.choices),
     answer: item.target,
-    success: `这一张完全一样。${item.clue}`,
-    retry: "只差一点点也不算一样，要从左到右慢慢比。",
-    parentPrompt: "问她：你发现哪张只是顺序不一样？",
+    success: `这张从左到右都对，${item.clue}和样板卡完全一样。`,
+    retry: "从左到右一个一个比，每个都一样才选；只差一点点也不算一样。",
+    parentPrompt: "问她：哪张很像但顺序或第二个不一样？请从左到右说给我听。",
     abilityTags: ["细节观察", "顺序比较"],
   }));
 
   const oddCases = [
-    { items: ["🔴🟦", "🔴🟦", "🟦🔴"], answer: "right", reason: "右边这张顺序反了。" },
-    { items: ["🟡🟢", "🟡🔵", "🟡🟢"], answer: "middle", reason: "中间这张第二个颜色不一样。" },
-    { items: ["🍎🍊", "🍎🍊", "🍊🍎"], answer: "right", reason: "右边这张水果顺序不一样。" },
-    { items: ["🐱🐶", "🐱🐰", "🐱🐶"], answer: "middle", reason: "中间这张第二个小动物不一样。" },
-    { items: ["🔴🟦⭐", "🔴🟦⭐", "🔴⭐🟦"], answer: "right", reason: "右边这张后两块位置换了。" },
-    { items: ["🍓🍪🍬", "🍓🍬🍪", "🍓🍪🍬"], answer: "middle", reason: "中间这张饼干和糖果的位置换了。" },
+    {
+      items: ["🔴🟦", "🔴🟦", "🟦🔴"],
+      answer: "right",
+      reason: "左边和中间这两张一样，右边这张顺序反了。",
+    },
+    {
+      items: ["🟡🟢", "🟡🔵", "🟡🟢"],
+      answer: "middle",
+      reason: "左边和右边这两张一样，中间这张第二个颜色不一样。",
+    },
+    {
+      items: ["🍎🍊", "🍎🍊", "🍊🍎"],
+      answer: "right",
+      reason: "左边和中间这两张一样，右边这张水果顺序不一样。",
+    },
+    {
+      items: ["🐱🐶", "🐱🐰", "🐱🐶"],
+      answer: "middle",
+      reason: "左边和右边这两张一样，中间这张第二个小动物不一样。",
+    },
+    {
+      items: ["🔴🟦⭐", "🔴🟦⭐", "🔴⭐🟦"],
+      answer: "right",
+      reason: "左边和中间这两张一样，右边这张后两块位置换了。",
+    },
+    {
+      items: ["🍓🍪🍬", "🍓🍬🍪", "🍓🍪🍬"],
+      answer: "middle",
+      reason: "左边和右边这两张一样，中间这张饼干和糖果的位置换了。",
+    },
   ].map((item, index) => ({
     level: index < 4 ? "L5" as AbilityLevel : "L6" as AbilityLevel,
     prompt: "哪一张和另外两张不一样？",
@@ -2983,7 +3007,7 @@ function makeVisualMatchRounds(): RoundInput[] {
     ],
     answer: item.answer,
     success: item.reason,
-    retry: "找到两张一样的，剩下的就是不一样的。",
+    retry: "先找两张一样的一对，剩下那张就是不一样的。",
     parentPrompt: "问她：哪两张是一对？剩下那张哪里不同？",
     abilityTags: ["细节观察", "排除法"],
   }));

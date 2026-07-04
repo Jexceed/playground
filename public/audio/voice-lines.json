@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-04T14:08:42.885Z",
+  "generatedAt": "2026-07-04T14:30:04.962Z",
   "recommendedVoice": "warm adult female Mandarin, smiling, preschool teacher, 0.85 speed, crisp consonants",
   "lineCount": 1538,
   "lines": [
@@ -14721,9 +14721,9 @@
       ]
     },
     {
-      "id": "prompt-哪一张和上面完全一样-颜色-形状和顺序都要一样",
+      "id": "prompt-哪一张和上面完全一样-从左到右比第一格-第二格-每个都一样才选",
       "kind": "prompt",
-      "text": "哪一张和上面完全一样？颜色、形状和顺序都要一样。",
+      "text": "哪一张和上面完全一样？从左到右比第一格、第二格，每个都一样才选。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-visual-match/logic-visual-match-1",
@@ -14735,18 +14735,18 @@
       ]
     },
     {
-      "id": "success-这一张完全一样-红色圆片在前-蓝色方块在后",
+      "id": "success-这张从左到右都对-红色圆片在前-蓝色方块在后-和样板卡完全一样",
       "kind": "success",
-      "text": "这一张完全一样。红色圆片在前，蓝色方块在后。",
+      "text": "这张从左到右都对，红色圆片在前，蓝色方块在后。和样板卡完全一样。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-visual-match/logic-visual-match-1"
       ]
     },
     {
-      "id": "retry-只差一点点也不算一样-要从左到右慢慢比",
+      "id": "retry-从左到右一个一个比-每个都一样才选-只差一点点也不算一样",
       "kind": "retry",
-      "text": "只差一点点也不算一样，要从左到右慢慢比。",
+      "text": "从左到右一个一个比，每个都一样才选；只差一点点也不算一样。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
         "logic-visual-match/logic-visual-match-1",
@@ -14758,9 +14758,9 @@
       ]
     },
     {
-      "id": "parent-问她-你发现哪张只是顺序不一样",
+      "id": "parent-问她-哪张很像但顺序或第二个不一样-请从左到右说给我听",
       "kind": "parent",
-      "text": "问她：你发现哪张只是顺序不一样？",
+      "text": "问她：哪张很像但顺序或第二个不一样？请从左到右说给我听。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-visual-match/logic-visual-match-1",
@@ -14810,9 +14810,9 @@
       ]
     },
     {
-      "id": "success-这一张完全一样-黄色在前-绿色在后",
+      "id": "success-这张从左到右都对-黄色在前-绿色在后-和样板卡完全一样",
       "kind": "success",
-      "text": "这一张完全一样。黄色在前，绿色在后。",
+      "text": "这张从左到右都对，黄色在前，绿色在后。和样板卡完全一样。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-visual-match/logic-visual-match-2"
@@ -14837,9 +14837,9 @@
       ]
     },
     {
-      "id": "success-这一张完全一样-先苹果-再橘子",
+      "id": "success-这张从左到右都对-先苹果-再橘子-和样板卡完全一样",
       "kind": "success",
-      "text": "这一张完全一样。先苹果，再橘子。",
+      "text": "这张从左到右都对，先苹果，再橘子。和样板卡完全一样。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-visual-match/logic-visual-match-3"
@@ -14886,9 +14886,9 @@
       ]
     },
     {
-      "id": "success-这一张完全一样-先小猫-再小狗",
+      "id": "success-这张从左到右都对-先小猫-再小狗-和样板卡完全一样",
       "kind": "success",
-      "text": "这一张完全一样。先小猫，再小狗。",
+      "text": "这张从左到右都对，先小猫，再小狗。和样板卡完全一样。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-visual-match/logic-visual-match-4"
@@ -14935,9 +14935,9 @@
       ]
     },
     {
-      "id": "success-这一张完全一样-红色-方块-星星的顺序都一样",
+      "id": "success-这张从左到右都对-红色-方块-星星的顺序都一样-和样板卡完全一样",
       "kind": "success",
-      "text": "这一张完全一样。红色、方块、星星的顺序都一样。",
+      "text": "这张从左到右都对，红色、方块、星星的顺序都一样。和样板卡完全一样。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-visual-match/logic-visual-match-5"
@@ -14985,9 +14985,9 @@
       ]
     },
     {
-      "id": "success-这一张完全一样-草莓-饼干-糖果的顺序都一样",
+      "id": "success-这张从左到右都对-草莓-饼干-糖果的顺序都一样-和样板卡完全一样",
       "kind": "success",
-      "text": "这一张完全一样。草莓、饼干、糖果的顺序都一样。",
+      "text": "这张从左到右都对，草莓、饼干、糖果的顺序都一样。和样板卡完全一样。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-visual-match/logic-visual-match-6"
@@ -15047,18 +15047,18 @@
       ]
     },
     {
-      "id": "success-右边这张顺序反了",
+      "id": "success-左边和中间这两张一样-右边这张顺序反了",
       "kind": "success",
-      "text": "右边这张顺序反了。",
+      "text": "左边和中间这两张一样，右边这张顺序反了。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-visual-match/logic-visual-match-7"
       ]
     },
     {
-      "id": "retry-找到两张一样的-剩下的就是不一样的",
+      "id": "retry-先找两张一样的一对-剩下那张就是不一样的",
       "kind": "retry",
-      "text": "找到两张一样的，剩下的就是不一样的。",
+      "text": "先找两张一样的一对，剩下那张就是不一样的。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
         "logic-visual-match/logic-visual-match-7",
@@ -15135,9 +15135,9 @@
       ]
     },
     {
-      "id": "success-中间这张第二个颜色不一样",
+      "id": "success-左边和右边这两张一样-中间这张第二个颜色不一样",
       "kind": "success",
-      "text": "中间这张第二个颜色不一样。",
+      "text": "左边和右边这两张一样，中间这张第二个颜色不一样。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-visual-match/logic-visual-match-8"
@@ -15153,9 +15153,9 @@
       ]
     },
     {
-      "id": "success-右边这张水果顺序不一样",
+      "id": "success-左边和中间这两张一样-右边这张水果顺序不一样",
       "kind": "success",
-      "text": "右边这张水果顺序不一样。",
+      "text": "左边和中间这两张一样，右边这张水果顺序不一样。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-visual-match/logic-visual-match-9"
@@ -15171,9 +15171,9 @@
       ]
     },
     {
-      "id": "success-中间这张第二个小动物不一样",
+      "id": "success-左边和右边这两张一样-中间这张第二个小动物不一样",
       "kind": "success",
-      "text": "中间这张第二个小动物不一样。",
+      "text": "左边和右边这两张一样，中间这张第二个小动物不一样。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-visual-match/logic-visual-match-10"
@@ -15189,9 +15189,9 @@
       ]
     },
     {
-      "id": "success-右边这张后两块位置换了",
+      "id": "success-左边和中间这两张一样-右边这张后两块位置换了",
       "kind": "success",
-      "text": "右边这张后两块位置换了。",
+      "text": "左边和中间这两张一样，右边这张后两块位置换了。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-visual-match/logic-visual-match-11"
@@ -15207,9 +15207,9 @@
       ]
     },
     {
-      "id": "success-中间这张饼干和糖果的位置换了",
+      "id": "success-左边和右边这两张一样-中间这张饼干和糖果的位置换了",
       "kind": "success",
-      "text": "中间这张饼干和糖果的位置换了。",
+      "text": "左边和右边这两张一样，中间这张饼干和糖果的位置换了。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-visual-match/logic-visual-match-12"
