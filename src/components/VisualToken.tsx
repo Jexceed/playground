@@ -75,6 +75,7 @@ const phraseMap: Record<string, TokenMeta> = {
   "糖果": { label: "糖果", kind: "candy" },
   "蛋糕": { label: "蛋糕", kind: "cake" },
   "杯子": { label: "杯子", kind: "cup" },
+  "盘子": { label: "盘子", kind: "plate" },
   "盒子": { label: "盒子", kind: "box" },
   "小汽车": { label: "小汽车", kind: "car" },
   "玩具车": { label: "玩具车", kind: "car" },

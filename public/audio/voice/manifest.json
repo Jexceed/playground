@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-07-04T13:43:12.752Z",
+  "generatedAt": "2026-07-04T14:09:49.496Z",
   "provider": "edge-tts Python package",
   "voice": "zh-CN-XiaoxiaoNeural",
   "rate": "-12%",
   "pitch": "+2Hz",
   "includeParent": true,
   "format": "mp3",
-  "count": 1528,
-  "requestedCount": 1528,
+  "count": 1538,
+  "requestedCount": 1538,
   "failures": [],
   "entries": [
     {
@@ -6047,10 +6047,10 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/game-goal-%E8%AE%AD%E7%BB%83%E8%A7%82%E5%AF%9F%E8%A7%92%E5%BA%A6-%E7%B1%BB%E5%88%AB%E5%BD%92%E7%BA%B3%E5%92%8C%E6%8E%92%E9%99%A4%E6%B3%95.mp3"
     },
     {
-      "id": "prompt-这些是一家-水果-谁也应该住进来-先说共同点-再选同一类",
+      "id": "prompt-这些都属于水果-谁也能放进这一组-先说它们哪里一样-再选也符合这个规则的",
       "kind": "prompt",
-      "text": "这些是一家：水果。谁也应该住进来？先说共同点，再选同一类。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%BF%99%E4%BA%9B%E6%98%AF%E4%B8%80%E5%AE%B6-%E6%B0%B4%E6%9E%9C-%E8%B0%81%E4%B9%9F%E5%BA%94%E8%AF%A5%E4%BD%8F%E8%BF%9B%E6%9D%A5-%E5%85%88%E8%AF%B4%E5%85%B1%E5%90%8C%E7%82%B9-%E5%86%8D%E9%80%89%E5%90%8C%E4%B8%80%E7%B1%BB.mp3"
+      "text": "这些都属于水果。谁也能放进这一组？先说它们哪里一样，再选也符合这个规则的。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%BF%99%E4%BA%9B%E9%83%BD%E5%B1%9E%E4%BA%8E%E6%B0%B4%E6%9E%9C-%E8%B0%81%E4%B9%9F%E8%83%BD%E6%94%BE%E8%BF%9B%E8%BF%99%E4%B8%80%E7%BB%84-%E5%85%88%E8%AF%B4%E5%AE%83%E4%BB%AC%E5%93%AA%E9%87%8C%E4%B8%80%E6%A0%B7-%E5%86%8D%E9%80%89%E4%B9%9F%E7%AC%A6%E5%90%88%E8%BF%99%E4%B8%AA%E8%A7%84%E5%88%99%E7%9A%84.mp3"
     },
     {
       "id": "success-葡萄也属于水果-它们都能吃-都是水果",
@@ -6059,16 +6059,16 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%91%A1%E8%90%84%E4%B9%9F%E5%B1%9E%E4%BA%8E%E6%B0%B4%E6%9E%9C-%E5%AE%83%E4%BB%AC%E9%83%BD%E8%83%BD%E5%90%83-%E9%83%BD%E6%98%AF%E6%B0%B4%E6%9E%9C.mp3"
     },
     {
-      "id": "retry-不要只看颜色-先想它们都是什么",
+      "id": "retry-先找共同点-它们都能吃-都是水果-再看谁也符合这个规则",
       "kind": "retry",
-      "text": "不要只看颜色，先想它们都是什么。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E4%B8%8D%E8%A6%81%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E5%85%88%E6%83%B3%E5%AE%83%E4%BB%AC%E9%83%BD%E6%98%AF%E4%BB%80%E4%B9%88.mp3"
+      "text": "先找共同点：它们都能吃，都是水果。再看谁也符合这个规则。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E6%89%BE%E5%85%B1%E5%90%8C%E7%82%B9-%E5%AE%83%E4%BB%AC%E9%83%BD%E8%83%BD%E5%90%83-%E9%83%BD%E6%98%AF%E6%B0%B4%E6%9E%9C-%E5%86%8D%E7%9C%8B%E8%B0%81%E4%B9%9F%E7%AC%A6%E5%90%88%E8%BF%99%E4%B8%AA%E8%A7%84%E5%88%99.mp3"
     },
     {
-      "id": "parent-问她-这几个东西哪里一样-你用什么规则分的",
+      "id": "parent-问她-这组的规则是水果-葡萄为什么也属于这一类",
       "kind": "parent",
-      "text": "问她：这几个东西哪里一样？你用什么规则分的？",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E8%BF%99%E5%87%A0%E4%B8%AA%E4%B8%9C%E8%A5%BF%E5%93%AA%E9%87%8C%E4%B8%80%E6%A0%B7-%E4%BD%A0%E7%94%A8%E4%BB%80%E4%B9%88%E8%A7%84%E5%88%99%E5%88%86%E7%9A%84.mp3"
+      "text": "问她：这组的规则是水果。葡萄为什么也属于这一类？",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E8%BF%99%E7%BB%84%E7%9A%84%E8%A7%84%E5%88%99%E6%98%AF%E6%B0%B4%E6%9E%9C-%E8%91%A1%E8%90%84%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B9%9F%E5%B1%9E%E4%BA%8E%E8%BF%99%E4%B8%80%E7%B1%BB.mp3"
     },
     {
       "id": "choice-葡萄",
@@ -6089,16 +6089,28 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E7%B3%96%E6%9E%9C.mp3"
     },
     {
-      "id": "prompt-这些是一家-交通工具-谁也应该住进来-先说共同点-再选同一类",
+      "id": "prompt-这些都属于交通工具-谁也能放进这一组-先说它们哪里一样-再选也符合这个规则的",
       "kind": "prompt",
-      "text": "这些是一家：交通工具。谁也应该住进来？先说共同点，再选同一类。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%BF%99%E4%BA%9B%E6%98%AF%E4%B8%80%E5%AE%B6-%E4%BA%A4%E9%80%9A%E5%B7%A5%E5%85%B7-%E8%B0%81%E4%B9%9F%E5%BA%94%E8%AF%A5%E4%BD%8F%E8%BF%9B%E6%9D%A5-%E5%85%88%E8%AF%B4%E5%85%B1%E5%90%8C%E7%82%B9-%E5%86%8D%E9%80%89%E5%90%8C%E4%B8%80%E7%B1%BB.mp3"
+      "text": "这些都属于交通工具。谁也能放进这一组？先说它们哪里一样，再选也符合这个规则的。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%BF%99%E4%BA%9B%E9%83%BD%E5%B1%9E%E4%BA%8E%E4%BA%A4%E9%80%9A%E5%B7%A5%E5%85%B7-%E8%B0%81%E4%B9%9F%E8%83%BD%E6%94%BE%E8%BF%9B%E8%BF%99%E4%B8%80%E7%BB%84-%E5%85%88%E8%AF%B4%E5%AE%83%E4%BB%AC%E5%93%AA%E9%87%8C%E4%B8%80%E6%A0%B7-%E5%86%8D%E9%80%89%E4%B9%9F%E7%AC%A6%E5%90%88%E8%BF%99%E4%B8%AA%E8%A7%84%E5%88%99%E7%9A%84.mp3"
     },
     {
       "id": "success-飞机也属于交通工具-它们都能带我们去别的地方",
       "kind": "success",
       "text": "飞机也属于交通工具。它们都能带我们去别的地方。",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E9%A3%9E%E6%9C%BA%E4%B9%9F%E5%B1%9E%E4%BA%8E%E4%BA%A4%E9%80%9A%E5%B7%A5%E5%85%B7-%E5%AE%83%E4%BB%AC%E9%83%BD%E8%83%BD%E5%B8%A6%E6%88%91%E4%BB%AC%E5%8E%BB%E5%88%AB%E7%9A%84%E5%9C%B0%E6%96%B9.mp3"
+    },
+    {
+      "id": "retry-先找共同点-它们都能带我们去别的地方-再看谁也符合这个规则",
+      "kind": "retry",
+      "text": "先找共同点：它们都能带我们去别的地方。再看谁也符合这个规则。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E6%89%BE%E5%85%B1%E5%90%8C%E7%82%B9-%E5%AE%83%E4%BB%AC%E9%83%BD%E8%83%BD%E5%B8%A6%E6%88%91%E4%BB%AC%E5%8E%BB%E5%88%AB%E7%9A%84%E5%9C%B0%E6%96%B9-%E5%86%8D%E7%9C%8B%E8%B0%81%E4%B9%9F%E7%AC%A6%E5%90%88%E8%BF%99%E4%B8%AA%E8%A7%84%E5%88%99.mp3"
+    },
+    {
+      "id": "parent-问她-这组的规则是交通工具-飞机为什么也属于这一类",
+      "kind": "parent",
+      "text": "问她：这组的规则是交通工具。飞机为什么也属于这一类？",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E8%BF%99%E7%BB%84%E7%9A%84%E8%A7%84%E5%88%99%E6%98%AF%E4%BA%A4%E9%80%9A%E5%B7%A5%E5%85%B7-%E9%A3%9E%E6%9C%BA%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B9%9F%E5%B1%9E%E4%BA%8E%E8%BF%99%E4%B8%80%E7%B1%BB.mp3"
     },
     {
       "id": "choice-飞机",
@@ -6125,16 +6137,28 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E8%87%AA%E8%A1%8C%E8%BD%A6.mp3"
     },
     {
-      "id": "prompt-这些是一家-学习用品-谁也应该住进来-先说共同点-再选同一类",
+      "id": "prompt-这些都属于学习用品-谁也能放进这一组-先说它们哪里一样-再选也符合这个规则的",
       "kind": "prompt",
-      "text": "这些是一家：学习用品。谁也应该住进来？先说共同点，再选同一类。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%BF%99%E4%BA%9B%E6%98%AF%E4%B8%80%E5%AE%B6-%E5%AD%A6%E4%B9%A0%E7%94%A8%E5%93%81-%E8%B0%81%E4%B9%9F%E5%BA%94%E8%AF%A5%E4%BD%8F%E8%BF%9B%E6%9D%A5-%E5%85%88%E8%AF%B4%E5%85%B1%E5%90%8C%E7%82%B9-%E5%86%8D%E9%80%89%E5%90%8C%E4%B8%80%E7%B1%BB.mp3"
+      "text": "这些都属于学习用品。谁也能放进这一组？先说它们哪里一样，再选也符合这个规则的。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%BF%99%E4%BA%9B%E9%83%BD%E5%B1%9E%E4%BA%8E%E5%AD%A6%E4%B9%A0%E7%94%A8%E5%93%81-%E8%B0%81%E4%B9%9F%E8%83%BD%E6%94%BE%E8%BF%9B%E8%BF%99%E4%B8%80%E7%BB%84-%E5%85%88%E8%AF%B4%E5%AE%83%E4%BB%AC%E5%93%AA%E9%87%8C%E4%B8%80%E6%A0%B7-%E5%86%8D%E9%80%89%E4%B9%9F%E7%AC%A6%E5%90%88%E8%BF%99%E4%B8%AA%E8%A7%84%E5%88%99%E7%9A%84.mp3"
     },
     {
       "id": "success-书本也属于学习用品-它们常常在书桌或书包里",
       "kind": "success",
       "text": "书本也属于学习用品。它们常常在书桌或书包里。",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E4%B9%A6%E6%9C%AC%E4%B9%9F%E5%B1%9E%E4%BA%8E%E5%AD%A6%E4%B9%A0%E7%94%A8%E5%93%81-%E5%AE%83%E4%BB%AC%E5%B8%B8%E5%B8%B8%E5%9C%A8%E4%B9%A6%E6%A1%8C%E6%88%96%E4%B9%A6%E5%8C%85%E9%87%8C.mp3"
+    },
+    {
+      "id": "retry-先找共同点-它们常常在书桌或书包里-再看谁也符合这个规则",
+      "kind": "retry",
+      "text": "先找共同点：它们常常在书桌或书包里。再看谁也符合这个规则。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E6%89%BE%E5%85%B1%E5%90%8C%E7%82%B9-%E5%AE%83%E4%BB%AC%E5%B8%B8%E5%B8%B8%E5%9C%A8%E4%B9%A6%E6%A1%8C%E6%88%96%E4%B9%A6%E5%8C%85%E9%87%8C-%E5%86%8D%E7%9C%8B%E8%B0%81%E4%B9%9F%E7%AC%A6%E5%90%88%E8%BF%99%E4%B8%AA%E8%A7%84%E5%88%99.mp3"
+    },
+    {
+      "id": "parent-问她-这组的规则是学习用品-书本为什么也属于这一类",
+      "kind": "parent",
+      "text": "问她：这组的规则是学习用品。书本为什么也属于这一类？",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E8%BF%99%E7%BB%84%E7%9A%84%E8%A7%84%E5%88%99%E6%98%AF%E5%AD%A6%E4%B9%A0%E7%94%A8%E5%93%81-%E4%B9%A6%E6%9C%AC%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B9%9F%E5%B1%9E%E4%BA%8E%E8%BF%99%E4%B8%80%E7%B1%BB.mp3"
     },
     {
       "id": "choice-积木塔",
@@ -6149,10 +6173,10 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%B0%BA%E5%AD%90.mp3"
     },
     {
-      "id": "prompt-这些是一家-陆地小动物-谁也应该住进来-先说共同点-再选同一类",
+      "id": "prompt-这些都属于陆地小动物-谁也能放进这一组-先说它们哪里一样-再选也符合这个规则的",
       "kind": "prompt",
-      "text": "这些是一家：陆地小动物。谁也应该住进来？先说共同点，再选同一类。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%BF%99%E4%BA%9B%E6%98%AF%E4%B8%80%E5%AE%B6-%E9%99%86%E5%9C%B0%E5%B0%8F%E5%8A%A8%E7%89%A9-%E8%B0%81%E4%B9%9F%E5%BA%94%E8%AF%A5%E4%BD%8F%E8%BF%9B%E6%9D%A5-%E5%85%88%E8%AF%B4%E5%85%B1%E5%90%8C%E7%82%B9-%E5%86%8D%E9%80%89%E5%90%8C%E4%B8%80%E7%B1%BB.mp3"
+      "text": "这些都属于陆地小动物。谁也能放进这一组？先说它们哪里一样，再选也符合这个规则的。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%BF%99%E4%BA%9B%E9%83%BD%E5%B1%9E%E4%BA%8E%E9%99%86%E5%9C%B0%E5%B0%8F%E5%8A%A8%E7%89%A9-%E8%B0%81%E4%B9%9F%E8%83%BD%E6%94%BE%E8%BF%9B%E8%BF%99%E4%B8%80%E7%BB%84-%E5%85%88%E8%AF%B4%E5%AE%83%E4%BB%AC%E5%93%AA%E9%87%8C%E4%B8%80%E6%A0%B7-%E5%86%8D%E9%80%89%E4%B9%9F%E7%AC%A6%E5%90%88%E8%BF%99%E4%B8%AA%E8%A7%84%E5%88%99%E7%9A%84.mp3"
     },
     {
       "id": "success-小熊也属于陆地小动物-它们都是常在地上走的动物",
@@ -6161,16 +6185,28 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%B0%8F%E7%86%8A%E4%B9%9F%E5%B1%9E%E4%BA%8E%E9%99%86%E5%9C%B0%E5%B0%8F%E5%8A%A8%E7%89%A9-%E5%AE%83%E4%BB%AC%E9%83%BD%E6%98%AF%E5%B8%B8%E5%9C%A8%E5%9C%B0%E4%B8%8A%E8%B5%B0%E7%9A%84%E5%8A%A8%E7%89%A9.mp3"
     },
     {
+      "id": "retry-先找共同点-它们都是常在地上走的动物-再看谁也符合这个规则",
+      "kind": "retry",
+      "text": "先找共同点：它们都是常在地上走的动物。再看谁也符合这个规则。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E6%89%BE%E5%85%B1%E5%90%8C%E7%82%B9-%E5%AE%83%E4%BB%AC%E9%83%BD%E6%98%AF%E5%B8%B8%E5%9C%A8%E5%9C%B0%E4%B8%8A%E8%B5%B0%E7%9A%84%E5%8A%A8%E7%89%A9-%E5%86%8D%E7%9C%8B%E8%B0%81%E4%B9%9F%E7%AC%A6%E5%90%88%E8%BF%99%E4%B8%AA%E8%A7%84%E5%88%99.mp3"
+    },
+    {
+      "id": "parent-问她-这组的规则是陆地小动物-小熊为什么也属于这一类",
+      "kind": "parent",
+      "text": "问她：这组的规则是陆地小动物。小熊为什么也属于这一类？",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E8%BF%99%E7%BB%84%E7%9A%84%E8%A7%84%E5%88%99%E6%98%AF%E9%99%86%E5%9C%B0%E5%B0%8F%E5%8A%A8%E7%89%A9-%E5%B0%8F%E7%86%8A%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B9%9F%E5%B1%9E%E4%BA%8E%E8%BF%99%E4%B8%80%E7%B1%BB.mp3"
+    },
+    {
       "id": "choice-小鱼",
       "kind": "choice",
       "text": "小鱼",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%B0%8F%E9%B1%BC.mp3"
     },
     {
-      "id": "prompt-这些是一家-圆圆的东西-谁也应该住进来-先说共同点-再选同一类",
+      "id": "prompt-这些都属于圆圆的东西-谁也能放进这一组-先说它们哪里一样-再选也符合这个规则的",
       "kind": "prompt",
-      "text": "这些是一家：圆圆的东西。谁也应该住进来？先说共同点，再选同一类。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%BF%99%E4%BA%9B%E6%98%AF%E4%B8%80%E5%AE%B6-%E5%9C%86%E5%9C%86%E7%9A%84%E4%B8%9C%E8%A5%BF-%E8%B0%81%E4%B9%9F%E5%BA%94%E8%AF%A5%E4%BD%8F%E8%BF%9B%E6%9D%A5-%E5%85%88%E8%AF%B4%E5%85%B1%E5%90%8C%E7%82%B9-%E5%86%8D%E9%80%89%E5%90%8C%E4%B8%80%E7%B1%BB.mp3"
+      "text": "这些都属于圆圆的东西。谁也能放进这一组？先说它们哪里一样，再选也符合这个规则的。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%BF%99%E4%BA%9B%E9%83%BD%E5%B1%9E%E4%BA%8E%E5%9C%86%E5%9C%86%E7%9A%84%E4%B8%9C%E8%A5%BF-%E8%B0%81%E4%B9%9F%E8%83%BD%E6%94%BE%E8%BF%9B%E8%BF%99%E4%B8%80%E7%BB%84-%E5%85%88%E8%AF%B4%E5%AE%83%E4%BB%AC%E5%93%AA%E9%87%8C%E4%B8%80%E6%A0%B7-%E5%86%8D%E9%80%89%E4%B9%9F%E7%AC%A6%E5%90%88%E8%BF%99%E4%B8%AA%E8%A7%84%E5%88%99%E7%9A%84.mp3"
     },
     {
       "id": "success-饼干也属于圆圆的东西-它们看起来都是圆圆的",
@@ -6179,22 +6215,46 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E9%A5%BC%E5%B9%B2%E4%B9%9F%E5%B1%9E%E4%BA%8E%E5%9C%86%E5%9C%86%E7%9A%84%E4%B8%9C%E8%A5%BF-%E5%AE%83%E4%BB%AC%E7%9C%8B%E8%B5%B7%E6%9D%A5%E9%83%BD%E6%98%AF%E5%9C%86%E5%9C%86%E7%9A%84.mp3"
     },
     {
+      "id": "retry-先找共同点-它们看起来都是圆圆的-再看谁也符合这个规则",
+      "kind": "retry",
+      "text": "先找共同点：它们看起来都是圆圆的。再看谁也符合这个规则。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E6%89%BE%E5%85%B1%E5%90%8C%E7%82%B9-%E5%AE%83%E4%BB%AC%E7%9C%8B%E8%B5%B7%E6%9D%A5%E9%83%BD%E6%98%AF%E5%9C%86%E5%9C%86%E7%9A%84-%E5%86%8D%E7%9C%8B%E8%B0%81%E4%B9%9F%E7%AC%A6%E5%90%88%E8%BF%99%E4%B8%AA%E8%A7%84%E5%88%99.mp3"
+    },
+    {
+      "id": "parent-问她-这组的规则是圆圆的东西-饼干为什么也属于这一类",
+      "kind": "parent",
+      "text": "问她：这组的规则是圆圆的东西。饼干为什么也属于这一类？",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E8%BF%99%E7%BB%84%E7%9A%84%E8%A7%84%E5%88%99%E6%98%AF%E5%9C%86%E5%9C%86%E7%9A%84%E4%B8%9C%E8%A5%BF-%E9%A5%BC%E5%B9%B2%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B9%9F%E5%B1%9E%E4%BA%8E%E8%BF%99%E4%B8%80%E7%B1%BB.mp3"
+    },
+    {
       "id": "choice-尺子",
       "kind": "choice",
       "text": "尺子",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%B0%BA%E5%AD%90.mp3"
     },
     {
-      "id": "prompt-这些是一家-可以吃的东西-谁也应该住进来-先说共同点-再选同一类",
+      "id": "prompt-这些都属于可以吃的东西-谁也能放进这一组-先说它们哪里一样-再选也符合这个规则的",
       "kind": "prompt",
-      "text": "这些是一家：可以吃的东西。谁也应该住进来？先说共同点，再选同一类。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%BF%99%E4%BA%9B%E6%98%AF%E4%B8%80%E5%AE%B6-%E5%8F%AF%E4%BB%A5%E5%90%83%E7%9A%84%E4%B8%9C%E8%A5%BF-%E8%B0%81%E4%B9%9F%E5%BA%94%E8%AF%A5%E4%BD%8F%E8%BF%9B%E6%9D%A5-%E5%85%88%E8%AF%B4%E5%85%B1%E5%90%8C%E7%82%B9-%E5%86%8D%E9%80%89%E5%90%8C%E4%B8%80%E7%B1%BB.mp3"
+      "text": "这些都属于可以吃的东西。谁也能放进这一组？先说它们哪里一样，再选也符合这个规则的。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%BF%99%E4%BA%9B%E9%83%BD%E5%B1%9E%E4%BA%8E%E5%8F%AF%E4%BB%A5%E5%90%83%E7%9A%84%E4%B8%9C%E8%A5%BF-%E8%B0%81%E4%B9%9F%E8%83%BD%E6%94%BE%E8%BF%9B%E8%BF%99%E4%B8%80%E7%BB%84-%E5%85%88%E8%AF%B4%E5%AE%83%E4%BB%AC%E5%93%AA%E9%87%8C%E4%B8%80%E6%A0%B7-%E5%86%8D%E9%80%89%E4%B9%9F%E7%AC%A6%E5%90%88%E8%BF%99%E4%B8%AA%E8%A7%84%E5%88%99%E7%9A%84.mp3"
     },
     {
       "id": "success-蛋糕也属于可以吃的东西-这些都可以吃",
       "kind": "success",
       "text": "蛋糕也属于可以吃的东西。这些都可以吃。",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%9B%8B%E7%B3%95%E4%B9%9F%E5%B1%9E%E4%BA%8E%E5%8F%AF%E4%BB%A5%E5%90%83%E7%9A%84%E4%B8%9C%E8%A5%BF-%E8%BF%99%E4%BA%9B%E9%83%BD%E5%8F%AF%E4%BB%A5%E5%90%83.mp3"
+    },
+    {
+      "id": "retry-先找共同点-这些都可以吃-再看谁也符合这个规则",
+      "kind": "retry",
+      "text": "先找共同点：这些都可以吃。再看谁也符合这个规则。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E6%89%BE%E5%85%B1%E5%90%8C%E7%82%B9-%E8%BF%99%E4%BA%9B%E9%83%BD%E5%8F%AF%E4%BB%A5%E5%90%83-%E5%86%8D%E7%9C%8B%E8%B0%81%E4%B9%9F%E7%AC%A6%E5%90%88%E8%BF%99%E4%B8%AA%E8%A7%84%E5%88%99.mp3"
+    },
+    {
+      "id": "parent-问她-这组的规则是可以吃的东西-蛋糕为什么也属于这一类",
+      "kind": "parent",
+      "text": "问她：这组的规则是可以吃的东西。蛋糕为什么也属于这一类？",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E8%BF%99%E7%BB%84%E7%9A%84%E8%A7%84%E5%88%99%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%90%83%E7%9A%84%E4%B8%9C%E8%A5%BF-%E8%9B%8B%E7%B3%95%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B9%9F%E5%B1%9E%E4%BA%8E%E8%BF%99%E4%B8%80%E7%B1%BB.mp3"
     },
     {
       "id": "choice-杯子",
@@ -6221,10 +6281,10 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%93%AA%E4%B8%80%E4%B8%AA%E5%92%8C%E5%85%B6%E4%BB%96%E5%87%A0%E4%B8%AA%E6%9C%80%E4%B8%8D%E4%B8%80%E6%A0%B7-%E7%94%A8%E6%8E%92%E9%99%A4%E6%B3%95-%E5%85%88%E6%89%BE%E5%A4%9A%E6%95%B0%E6%9C%89%E4%BB%80%E4%B9%88%E5%85%B1%E5%90%8C%E7%82%B9.mp3"
     },
     {
-      "id": "success-只有小汽车不是水果",
+      "id": "success-苹果-橘子-葡萄这三个是水果-小汽车不是水果",
       "kind": "success",
-      "text": "只有小汽车不是水果。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%8F%AA%E6%9C%89%E5%B0%8F%E6%B1%BD%E8%BD%A6%E4%B8%8D%E6%98%AF%E6%B0%B4%E6%9E%9C.mp3"
+      "text": "苹果、橘子、葡萄这三个是水果，小汽车不是水果。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%8B%B9%E6%9E%9C-%E6%A9%98%E5%AD%90-%E8%91%A1%E8%90%84%E8%BF%99%E4%B8%89%E4%B8%AA%E6%98%AF%E6%B0%B4%E6%9E%9C-%E5%B0%8F%E6%B1%BD%E8%BD%A6%E4%B8%8D%E6%98%AF%E6%B0%B4%E6%9E%9C.mp3"
     },
     {
       "id": "retry-先找三个很像的-再看剩下的那个",
@@ -6257,10 +6317,10 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%B0%8F%E6%B1%BD%E8%BD%A6.mp3"
     },
     {
-      "id": "success-蛋糕不能当交通工具",
+      "id": "success-小汽车-公交车-飞机这三个能带我们移动-蛋糕不能当交通工具",
       "kind": "success",
-      "text": "蛋糕不能当交通工具。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%9B%8B%E7%B3%95%E4%B8%8D%E8%83%BD%E5%BD%93%E4%BA%A4%E9%80%9A%E5%B7%A5%E5%85%B7.mp3"
+      "text": "小汽车、公交车、飞机这三个能带我们移动，蛋糕不能当交通工具。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%B0%8F%E6%B1%BD%E8%BD%A6-%E5%85%AC%E4%BA%A4%E8%BD%A6-%E9%A3%9E%E6%9C%BA%E8%BF%99%E4%B8%89%E4%B8%AA%E8%83%BD%E5%B8%A6%E6%88%91%E4%BB%AC%E7%A7%BB%E5%8A%A8-%E8%9B%8B%E7%B3%95%E4%B8%8D%E8%83%BD%E5%BD%93%E4%BA%A4%E9%80%9A%E5%B7%A5%E5%85%B7.mp3"
     },
     {
       "id": "choice-公交车",
@@ -6281,28 +6341,28 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E8%9B%8B%E7%B3%95.mp3"
     },
     {
-      "id": "success-小鱼不是学习用品",
+      "id": "success-铅笔-书包-尺子这三个是学习用品-小鱼不是学习用品",
       "kind": "success",
-      "text": "小鱼不是学习用品。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%B0%8F%E9%B1%BC%E4%B8%8D%E6%98%AF%E5%AD%A6%E4%B9%A0%E7%94%A8%E5%93%81.mp3"
+      "text": "铅笔、书包、尺子这三个是学习用品，小鱼不是学习用品。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E9%93%85%E7%AC%94-%E4%B9%A6%E5%8C%85-%E5%B0%BA%E5%AD%90%E8%BF%99%E4%B8%89%E4%B8%AA%E6%98%AF%E5%AD%A6%E4%B9%A0%E7%94%A8%E5%93%81-%E5%B0%8F%E9%B1%BC%E4%B8%8D%E6%98%AF%E5%AD%A6%E4%B9%A0%E7%94%A8%E5%93%81.mp3"
     },
     {
-      "id": "success-杯子不是小动物",
+      "id": "success-小猫-小狗-小兔这三个是小动物-杯子不是小动物",
       "kind": "success",
-      "text": "杯子不是小动物。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%9D%AF%E5%AD%90%E4%B8%8D%E6%98%AF%E5%B0%8F%E5%8A%A8%E7%89%A9.mp3"
+      "text": "小猫、小狗、小兔这三个是小动物，杯子不是小动物。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%B0%8F%E7%8C%AB-%E5%B0%8F%E7%8B%97-%E5%B0%8F%E5%85%94%E8%BF%99%E4%B8%89%E4%B8%AA%E6%98%AF%E5%B0%8F%E5%8A%A8%E7%89%A9-%E6%9D%AF%E5%AD%90%E4%B8%8D%E6%98%AF%E5%B0%8F%E5%8A%A8%E7%89%A9.mp3"
     },
     {
-      "id": "success-长木板不是圆圆的",
+      "id": "success-足球-橘子-饼干这三个是圆圆的-长木板不是圆圆的",
       "kind": "success",
-      "text": "长木板不是圆圆的。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E9%95%BF%E6%9C%A8%E6%9D%BF%E4%B8%8D%E6%98%AF%E5%9C%86%E5%9C%86%E7%9A%84.mp3"
+      "text": "足球、橘子、饼干这三个是圆圆的，长木板不是圆圆的。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%B6%B3%E7%90%83-%E6%A9%98%E5%AD%90-%E9%A5%BC%E5%B9%B2%E8%BF%99%E4%B8%89%E4%B8%AA%E6%98%AF%E5%9C%86%E5%9C%86%E7%9A%84-%E9%95%BF%E6%9C%A8%E6%9D%BF%E4%B8%8D%E6%98%AF%E5%9C%86%E5%9C%86%E7%9A%84.mp3"
     },
     {
-      "id": "success-小鱼不会在天上飞",
+      "id": "success-小鸟-飞机-风筝这三个能在天上-小鱼不会在天上飞",
       "kind": "success",
-      "text": "小鱼不会在天上飞。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%B0%8F%E9%B1%BC%E4%B8%8D%E4%BC%9A%E5%9C%A8%E5%A4%A9%E4%B8%8A%E9%A3%9E.mp3"
+      "text": "小鸟、飞机、风筝这三个能在天上，小鱼不会在天上飞。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%B0%8F%E9%B8%9F-%E9%A3%9E%E6%9C%BA-%E9%A3%8E%E7%AD%9D%E8%BF%99%E4%B8%89%E4%B8%AA%E8%83%BD%E5%9C%A8%E5%A4%A9%E4%B8%8A-%E5%B0%8F%E9%B1%BC%E4%B8%8D%E4%BC%9A%E5%9C%A8%E5%A4%A9%E4%B8%8A%E9%A3%9E.mp3"
     },
     {
       "id": "game-title-数字规律小路",

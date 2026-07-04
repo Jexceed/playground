@@ -13,6 +13,14 @@ grouped by date.
   prompts so color/shape rules and two-condition mistakes are explicit.
 - Exported updated voice lines and regenerated the local Edge voice manifest for
   the rewritten sorter content.
+- Added the `003-same-kind-quality` Spec Kit feature for same-kind and
+  odd-one-out logic quality.
+- Expanded the curriculum audit with same-kind rule explanations, odd-one-out
+  majority-group checks, and same-kind choice visual cue coverage.
+- Reworked `logic-same-kind-detective` prompts, retries, success feedback, and
+  parent prompts so category rules and odd-one-out reasons are explicit.
+- Exported updated voice lines and regenerated the local Edge voice manifest for
+  the rewritten same-kind content.
 - Initialized GitHub Spec Kit with Codex skills integration.
 - Established the project constitution in `.specify/memory/constitution.md`.
 - Expanded `AGENTS.md` with project overview, source-of-truth rules,

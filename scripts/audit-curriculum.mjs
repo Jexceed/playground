@@ -143,6 +143,9 @@ for (const game of games) {
     if (game.id === "logic-sorter-switch") {
       checkSorterRoundQuality(round, context);
     }
+    if (game.id === "logic-same-kind-detective") {
+      checkSameKindRoundQuality(round, context);
+    }
     if (!round.sceneImage && !round.sequence && !round.visualGroups && !round.grid && !round.matrix && !round.memory) {
       problems.push(`${context}: missing visual surface`);
     }
@@ -363,6 +366,47 @@ function checkSorterRoundQuality(round, context) {
     if (!/两个条件/.test(round.retry) && !/都要/.test(round.retry)) {
       problems.push(`${context}: two-condition sorter retry should remind the child that both conditions must match`);
     }
+  }
+}
+
+function checkSameKindRoundQuality(round, context) {
+  const visualItems = (round.visualGroups ?? []).flatMap((group) => group.items);
+  const choiceLabels = round.choices.map((choice) => choice.label);
+  for (const label of choiceLabels) {
+    if (isUnillustratedText(label)) {
+      problems.push(`${context}: same-kind choice should have a visual cue mapping: ${label}`);
+    }
+  }
+
+  const isOddOneOut = /不一样|最不一样/.test(round.prompt);
+  if (isOddOneOut) {
+    if (!/三个|这一组|多数|同一类/.test(round.success) || !round.success.includes(round.answer)) {
+      problems.push(`${context}: odd-one-out success should name the majority group and the different card`);
+    }
+    if (!/三个|同一类|一组|多数/.test(round.retry)) {
+      problems.push(`${context}: odd-one-out retry should ask the child to find the majority group first`);
+    }
+    if (!/三个|同一类|一组|剩下|为什么/.test(round.parentPrompt)) {
+      problems.push(`${context}: odd-one-out parentPrompt should ask for the majority rule and why the answer is left out`);
+    }
+    return;
+  }
+
+  const groupLabel = round.visualGroups?.[0]?.label ?? "";
+  if (!groupLabel || groupLabel === "这一家" || groupLabel === "观察台") {
+    problems.push(`${context}: same-kind visual group label should name the grouping rule`);
+  }
+  if (!/同一类|一类|都|因为|属于|也是/.test(round.success)) {
+    problems.push(`${context}: same-kind success should explain why the answer joins the group`);
+  }
+  if (!/同一类|共同点|一类|都|规则|用途|形状|地方/.test(round.retry)) {
+    problems.push(`${context}: same-kind retry should name or point to the grouping rule`);
+  }
+  if (!/为什么|共同点|同一类|规则|哪里一样/.test(round.parentPrompt)) {
+    problems.push(`${context}: same-kind parentPrompt should ask the child to explain the grouping rule`);
+  }
+  if (visualItems.length < 3) {
+    problems.push(`${context}: same-kind round should show at least three examples`);
   }
 }
 

@@ -2494,24 +2494,24 @@ function makeSameKindRounds(): RoundInput[] {
 
   const rounds: RoundInput[] = sameKindCases.map((item, index) => ({
     level: index < 3 ? "L4" : "L5",
-    prompt: `这些是一家：${item.groupName}。谁也应该住进来？`,
-    instruction: "先说共同点，再选同一类。",
-    visualGroups: [{ label: "这一家", items: item.items }],
+    prompt: `这些都属于${item.groupName}。谁也能放进这一组？`,
+    instruction: "先说它们哪里一样，再选也符合这个规则的。",
+    visualGroups: [{ label: item.groupName, items: item.items }],
     choices: choiceSet([item.answer, ...item.distractors]),
     answer: item.answer,
     success: `${item.answer}也属于${item.groupName}。${item.clue}`,
-    retry: "不要只看颜色，先想它们都是什么。",
-    parentPrompt: "问她：这几个东西哪里一样？你用什么规则分的？",
+    retry: `先找共同点：${item.clue}再看谁也符合这个规则。`,
+    parentPrompt: `问她：这组的规则是${item.groupName}。${item.answer}为什么也属于这一类？`,
     abilityTags: ["类别归纳", "观察角度"],
   }));
 
   const oddCases = [
-    { items: ["🍎", "🍊", "葡萄", "小汽车"], answer: "小汽车", reason: "只有小汽车不是水果。" },
-    { items: ["小汽车", "公交车", "飞机", "蛋糕"], answer: "蛋糕", reason: "蛋糕不能当交通工具。" },
-    { items: ["铅笔", "书包", "尺子", "小鱼"], answer: "小鱼", reason: "小鱼不是学习用品。" },
-    { items: ["🐱", "🐶", "🐰", "杯子"], answer: "杯子", reason: "杯子不是小动物。" },
-    { items: ["⚽", "🍊", "饼干", "长木板"], answer: "长木板", reason: "长木板不是圆圆的。" },
-    { items: ["小鸟", "飞机", "小鱼", "风筝"], answer: "小鱼", reason: "小鱼不会在天上飞。" },
+    { items: ["🍎", "🍊", "葡萄", "小汽车"], answer: "小汽车", reason: "苹果、橘子、葡萄这三个是水果，小汽车不是水果。" },
+    { items: ["小汽车", "公交车", "飞机", "蛋糕"], answer: "蛋糕", reason: "小汽车、公交车、飞机这三个能带我们移动，蛋糕不能当交通工具。" },
+    { items: ["铅笔", "书包", "尺子", "小鱼"], answer: "小鱼", reason: "铅笔、书包、尺子这三个是学习用品，小鱼不是学习用品。" },
+    { items: ["🐱", "🐶", "🐰", "杯子"], answer: "杯子", reason: "小猫、小狗、小兔这三个是小动物，杯子不是小动物。" },
+    { items: ["⚽", "🍊", "饼干", "长木板"], answer: "长木板", reason: "足球、橘子、饼干这三个是圆圆的，长木板不是圆圆的。" },
+    { items: ["小鸟", "飞机", "小鱼", "风筝"], answer: "小鱼", reason: "小鸟、飞机、风筝这三个能在天上，小鱼不会在天上飞。" },
   ].map((item, index) => ({
     level: index < 3 ? "L5" as AbilityLevel : "L6" as AbilityLevel,
     prompt: "哪一个和其他几个最不一样？",

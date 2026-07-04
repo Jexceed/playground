@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-04T13:41:25.840Z",
+  "generatedAt": "2026-07-04T14:08:42.885Z",
   "recommendedVoice": "warm adult female Mandarin, smiling, preschool teacher, 0.85 speed, crisp consonants",
-  "lineCount": 1528,
+  "lineCount": 1538,
   "lines": [
     {
       "id": "game-title-数一数",
@@ -12001,9 +12001,9 @@
       ]
     },
     {
-      "id": "prompt-这些是一家-水果-谁也应该住进来-先说共同点-再选同一类",
+      "id": "prompt-这些都属于水果-谁也能放进这一组-先说它们哪里一样-再选也符合这个规则的",
       "kind": "prompt",
-      "text": "这些是一家：水果。谁也应该住进来？先说共同点，再选同一类。",
+      "text": "这些都属于水果。谁也能放进这一组？先说它们哪里一样，再选也符合这个规则的。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-same-kind-detective/logic-same-kind-detective-1"
@@ -12019,31 +12019,21 @@
       ]
     },
     {
-      "id": "retry-不要只看颜色-先想它们都是什么",
+      "id": "retry-先找共同点-它们都能吃-都是水果-再看谁也符合这个规则",
       "kind": "retry",
-      "text": "不要只看颜色，先想它们都是什么。",
+      "text": "先找共同点：它们都能吃，都是水果。再看谁也符合这个规则。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
-        "logic-same-kind-detective/logic-same-kind-detective-1",
-        "logic-same-kind-detective/logic-same-kind-detective-2",
-        "logic-same-kind-detective/logic-same-kind-detective-3",
-        "logic-same-kind-detective/logic-same-kind-detective-4",
-        "logic-same-kind-detective/logic-same-kind-detective-5",
-        "logic-same-kind-detective/logic-same-kind-detective-6"
+        "logic-same-kind-detective/logic-same-kind-detective-1"
       ]
     },
     {
-      "id": "parent-问她-这几个东西哪里一样-你用什么规则分的",
+      "id": "parent-问她-这组的规则是水果-葡萄为什么也属于这一类",
       "kind": "parent",
-      "text": "问她：这几个东西哪里一样？你用什么规则分的？",
+      "text": "问她：这组的规则是水果。葡萄为什么也属于这一类？",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-same-kind-detective/logic-same-kind-detective-1",
-        "logic-same-kind-detective/logic-same-kind-detective-2",
-        "logic-same-kind-detective/logic-same-kind-detective-3",
-        "logic-same-kind-detective/logic-same-kind-detective-4",
-        "logic-same-kind-detective/logic-same-kind-detective-5",
-        "logic-same-kind-detective/logic-same-kind-detective-6"
+        "logic-same-kind-detective/logic-same-kind-detective-1"
       ]
     },
     {
@@ -12090,9 +12080,9 @@
       ]
     },
     {
-      "id": "prompt-这些是一家-交通工具-谁也应该住进来-先说共同点-再选同一类",
+      "id": "prompt-这些都属于交通工具-谁也能放进这一组-先说它们哪里一样-再选也符合这个规则的",
       "kind": "prompt",
-      "text": "这些是一家：交通工具。谁也应该住进来？先说共同点，再选同一类。",
+      "text": "这些都属于交通工具。谁也能放进这一组？先说它们哪里一样，再选也符合这个规则的。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-same-kind-detective/logic-same-kind-detective-2"
@@ -12103,6 +12093,24 @@
       "kind": "success",
       "text": "飞机也属于交通工具。它们都能带我们去别的地方。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-same-kind-detective/logic-same-kind-detective-2"
+      ]
+    },
+    {
+      "id": "retry-先找共同点-它们都能带我们去别的地方-再看谁也符合这个规则",
+      "kind": "retry",
+      "text": "先找共同点：它们都能带我们去别的地方。再看谁也符合这个规则。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-same-kind-detective/logic-same-kind-detective-2"
+      ]
+    },
+    {
+      "id": "parent-问她-这组的规则是交通工具-飞机为什么也属于这一类",
+      "kind": "parent",
+      "text": "问她：这组的规则是交通工具。飞机为什么也属于这一类？",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-same-kind-detective/logic-same-kind-detective-2"
       ]
@@ -12177,9 +12185,9 @@
       ]
     },
     {
-      "id": "prompt-这些是一家-学习用品-谁也应该住进来-先说共同点-再选同一类",
+      "id": "prompt-这些都属于学习用品-谁也能放进这一组-先说它们哪里一样-再选也符合这个规则的",
       "kind": "prompt",
-      "text": "这些是一家：学习用品。谁也应该住进来？先说共同点，再选同一类。",
+      "text": "这些都属于学习用品。谁也能放进这一组？先说它们哪里一样，再选也符合这个规则的。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-same-kind-detective/logic-same-kind-detective-3"
@@ -12190,6 +12198,24 @@
       "kind": "success",
       "text": "书本也属于学习用品。它们常常在书桌或书包里。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-same-kind-detective/logic-same-kind-detective-3"
+      ]
+    },
+    {
+      "id": "retry-先找共同点-它们常常在书桌或书包里-再看谁也符合这个规则",
+      "kind": "retry",
+      "text": "先找共同点：它们常常在书桌或书包里。再看谁也符合这个规则。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-same-kind-detective/logic-same-kind-detective-3"
+      ]
+    },
+    {
+      "id": "parent-问她-这组的规则是学习用品-书本为什么也属于这一类",
+      "kind": "parent",
+      "text": "问她：这组的规则是学习用品。书本为什么也属于这一类？",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-same-kind-detective/logic-same-kind-detective-3"
       ]
@@ -12222,9 +12248,9 @@
       ]
     },
     {
-      "id": "prompt-这些是一家-陆地小动物-谁也应该住进来-先说共同点-再选同一类",
+      "id": "prompt-这些都属于陆地小动物-谁也能放进这一组-先说它们哪里一样-再选也符合这个规则的",
       "kind": "prompt",
-      "text": "这些是一家：陆地小动物。谁也应该住进来？先说共同点，再选同一类。",
+      "text": "这些都属于陆地小动物。谁也能放进这一组？先说它们哪里一样，再选也符合这个规则的。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-same-kind-detective/logic-same-kind-detective-4"
@@ -12235,6 +12261,24 @@
       "kind": "success",
       "text": "小熊也属于陆地小动物。它们都是常在地上走的动物。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-same-kind-detective/logic-same-kind-detective-4"
+      ]
+    },
+    {
+      "id": "retry-先找共同点-它们都是常在地上走的动物-再看谁也符合这个规则",
+      "kind": "retry",
+      "text": "先找共同点：它们都是常在地上走的动物。再看谁也符合这个规则。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-same-kind-detective/logic-same-kind-detective-4"
+      ]
+    },
+    {
+      "id": "parent-问她-这组的规则是陆地小动物-小熊为什么也属于这一类",
+      "kind": "parent",
+      "text": "问她：这组的规则是陆地小动物。小熊为什么也属于这一类？",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-same-kind-detective/logic-same-kind-detective-4"
       ]
@@ -12260,9 +12304,9 @@
       ]
     },
     {
-      "id": "prompt-这些是一家-圆圆的东西-谁也应该住进来-先说共同点-再选同一类",
+      "id": "prompt-这些都属于圆圆的东西-谁也能放进这一组-先说它们哪里一样-再选也符合这个规则的",
       "kind": "prompt",
-      "text": "这些是一家：圆圆的东西。谁也应该住进来？先说共同点，再选同一类。",
+      "text": "这些都属于圆圆的东西。谁也能放进这一组？先说它们哪里一样，再选也符合这个规则的。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-same-kind-detective/logic-same-kind-detective-5"
@@ -12273,6 +12317,24 @@
       "kind": "success",
       "text": "饼干也属于圆圆的东西。它们看起来都是圆圆的。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-same-kind-detective/logic-same-kind-detective-5"
+      ]
+    },
+    {
+      "id": "retry-先找共同点-它们看起来都是圆圆的-再看谁也符合这个规则",
+      "kind": "retry",
+      "text": "先找共同点：它们看起来都是圆圆的。再看谁也符合这个规则。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-same-kind-detective/logic-same-kind-detective-5"
+      ]
+    },
+    {
+      "id": "parent-问她-这组的规则是圆圆的东西-饼干为什么也属于这一类",
+      "kind": "parent",
+      "text": "问她：这组的规则是圆圆的东西。饼干为什么也属于这一类？",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-same-kind-detective/logic-same-kind-detective-5"
       ]
@@ -12293,9 +12355,9 @@
       ]
     },
     {
-      "id": "prompt-这些是一家-可以吃的东西-谁也应该住进来-先说共同点-再选同一类",
+      "id": "prompt-这些都属于可以吃的东西-谁也能放进这一组-先说它们哪里一样-再选也符合这个规则的",
       "kind": "prompt",
-      "text": "这些是一家：可以吃的东西。谁也应该住进来？先说共同点，再选同一类。",
+      "text": "这些都属于可以吃的东西。谁也能放进这一组？先说它们哪里一样，再选也符合这个规则的。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-same-kind-detective/logic-same-kind-detective-6"
@@ -12306,6 +12368,24 @@
       "kind": "success",
       "text": "蛋糕也属于可以吃的东西。这些都可以吃。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-same-kind-detective/logic-same-kind-detective-6"
+      ]
+    },
+    {
+      "id": "retry-先找共同点-这些都可以吃-再看谁也符合这个规则",
+      "kind": "retry",
+      "text": "先找共同点：这些都可以吃。再看谁也符合这个规则。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-same-kind-detective/logic-same-kind-detective-6"
+      ]
+    },
+    {
+      "id": "parent-问她-这组的规则是可以吃的东西-蛋糕为什么也属于这一类",
+      "kind": "parent",
+      "text": "问她：这组的规则是可以吃的东西。蛋糕为什么也属于这一类？",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-same-kind-detective/logic-same-kind-detective-6"
       ]
@@ -12372,9 +12452,9 @@
       ]
     },
     {
-      "id": "success-只有小汽车不是水果",
+      "id": "success-苹果-橘子-葡萄这三个是水果-小汽车不是水果",
       "kind": "success",
-      "text": "只有小汽车不是水果。",
+      "text": "苹果、橘子、葡萄这三个是水果，小汽车不是水果。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-same-kind-detective/logic-same-kind-detective-7"
@@ -12452,9 +12532,9 @@
       ]
     },
     {
-      "id": "success-蛋糕不能当交通工具",
+      "id": "success-小汽车-公交车-飞机这三个能带我们移动-蛋糕不能当交通工具",
       "kind": "success",
-      "text": "蛋糕不能当交通工具。",
+      "text": "小汽车、公交车、飞机这三个能带我们移动，蛋糕不能当交通工具。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-same-kind-detective/logic-same-kind-detective-8"
@@ -12532,36 +12612,36 @@
       ]
     },
     {
-      "id": "success-小鱼不是学习用品",
+      "id": "success-铅笔-书包-尺子这三个是学习用品-小鱼不是学习用品",
       "kind": "success",
-      "text": "小鱼不是学习用品。",
+      "text": "铅笔、书包、尺子这三个是学习用品，小鱼不是学习用品。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-same-kind-detective/logic-same-kind-detective-9"
       ]
     },
     {
-      "id": "success-杯子不是小动物",
+      "id": "success-小猫-小狗-小兔这三个是小动物-杯子不是小动物",
       "kind": "success",
-      "text": "杯子不是小动物。",
+      "text": "小猫、小狗、小兔这三个是小动物，杯子不是小动物。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-same-kind-detective/logic-same-kind-detective-10"
       ]
     },
     {
-      "id": "success-长木板不是圆圆的",
+      "id": "success-足球-橘子-饼干这三个是圆圆的-长木板不是圆圆的",
       "kind": "success",
-      "text": "长木板不是圆圆的。",
+      "text": "足球、橘子、饼干这三个是圆圆的，长木板不是圆圆的。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-same-kind-detective/logic-same-kind-detective-11"
       ]
     },
     {
-      "id": "success-小鱼不会在天上飞",
+      "id": "success-小鸟-飞机-风筝这三个能在天上-小鱼不会在天上飞",
       "kind": "success",
-      "text": "小鱼不会在天上飞。",
+      "text": "小鸟、飞机、风筝这三个能在天上，小鱼不会在天上飞。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-same-kind-detective/logic-same-kind-detective-12"
