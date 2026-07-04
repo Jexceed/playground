@@ -68,6 +68,14 @@ const forbiddenTextPatterns = [
   { pattern: /一定不是/, reason: "avoid abstract negative certainty choices" },
   { pattern: /直接说不是/, reason: "avoid double-negative conclusion choices" },
 ];
+const sorterVisualRules = new Map([
+  ["🔴", { color: "红色", shape: "圆形" }],
+  ["🔵", { color: "蓝色", shape: "圆形" }],
+  ["🟡", { color: "黄色", shape: "圆形" }],
+  ["🟢", { color: "绿色", shape: "圆形" }],
+  ["🟦", { color: "蓝色", shape: "方形" }],
+  ["⬜", { color: "白色", shape: "方形" }],
+]);
 const counts = games.reduce(
   (acc, game) => {
     acc.totalGames += 1;
@@ -107,6 +115,9 @@ for (const game of games) {
       }
     }
     if (!round.difficultyNote?.trim()) problems.push(`${context}: missing difficultyNote`);
+    if (game.world === "logic") {
+      checkLogicDifficultyNote(round, context);
+    }
     if (!round.choices.some((choice) => choice.value === round.answer)) {
       problems.push(`${context}: answer is not in choices`);
     }
@@ -117,6 +128,20 @@ for (const game of games) {
     }
     if (new Set(choiceValues).size !== choiceValues.length) {
       problems.push(`${context}: duplicate choice values`);
+    }
+    const normalizedChoiceMeanings = choiceLabels.map(normalizeChoiceMeaning);
+    if (new Set(normalizedChoiceMeanings).size !== normalizedChoiceMeanings.length) {
+      problems.push(`${context}: duplicate choice meanings`);
+    }
+    for (const choice of round.choices) {
+      if (!choice.label?.trim()) problems.push(`${context}: blank choice label`);
+      if (!choice.value?.trim()) problems.push(`${context}: blank choice value`);
+      for (const { pattern, reason } of forbiddenTextPatterns) {
+        if (pattern.test(choice.label ?? "")) problems.push(`${context}: forbidden wording in choice "${choice.label}": ${reason}`);
+      }
+    }
+    if (game.id === "logic-sorter-switch") {
+      checkSorterRoundQuality(round, context);
     }
     if (!round.sceneImage && !round.sequence && !round.visualGroups && !round.grid && !round.matrix && !round.memory) {
       problems.push(`${context}: missing visual surface`);
@@ -285,4 +310,68 @@ function readPngSize(filePath) {
     width: buffer.readUInt32BE(16),
     height: buffer.readUInt32BE(20),
   };
+}
+
+function normalizeChoiceMeaning(label) {
+  return label
+    .replace(/\s+/g, "")
+    .replace(/[，。？！、:+＋-]/g, "")
+    .replace(/^先/, "")
+    .replace(/^再/, "")
+    .replace(/^继续/, "")
+    .replace(/这张$/, "")
+    .replace(/过去$/, "")
+    .replace(/停下等/, "停")
+    .replace(/走过去/, "走")
+    .replace(/直接走/, "走")
+    .replace(/已经够了/, "够了")
+    .replace(/证据已经够了/, "证据够了");
+}
+
+function checkSorterRoundQuality(round, context) {
+  const visualItems = [
+    ...(round.visualGroups ?? []).flatMap((group) => group.items),
+    ...(round.sequence ?? []),
+  ];
+  const candidateItems = visualItems.filter((item) => sorterVisualRules.has(item));
+  const isTwoConditionRound = /两个条件|也要/.test(`${round.prompt} ${round.instruction}`);
+
+  if (candidateItems.length === 1 && !isTwoConditionRound) {
+    const rule = /只看颜色/.test(`${round.prompt} ${round.instruction}`)
+      ? "颜色"
+      : /只看形状/.test(`${round.prompt} ${round.instruction}`)
+        ? "形状"
+        : null;
+    if (!rule) {
+      problems.push(`${context}: sorter round should state whether to use color or shape`);
+      return;
+    }
+    if (!round.parentPrompt.includes(rule)) {
+      problems.push(`${context}: sorter parentPrompt should ask the child to explain the active ${rule} rule`);
+    }
+    const itemRule = sorterVisualRules.get(candidateItems[0]);
+    const expectedAnswerText = rule === "颜色" ? `${itemRule.color}篮子` : `${itemRule.shape}篮子`;
+    if (!round.choices.some((choice) => choice.label === expectedAnswerText && choice.value === round.answer)) {
+      problems.push(`${context}: sorter answer should match the visible ${rule} feature (${expectedAnswerText})`);
+    }
+  }
+
+  if (isTwoConditionRound) {
+    if (!/两个条件/.test(round.parentPrompt) || !/只满足/.test(round.parentPrompt)) {
+      problems.push(`${context}: two-condition sorter parentPrompt should compare both-condition and one-condition choices`);
+    }
+    if (!/两个条件/.test(round.retry) && !/都要/.test(round.retry)) {
+      problems.push(`${context}: two-condition sorter retry should remind the child that both conditions must match`);
+    }
+  }
+}
+
+function checkLogicDifficultyNote(round, context) {
+  const note = round.difficultyNote ?? "";
+  if (note.length < 12) {
+    problems.push(`${context}: logic difficultyNote is too short to explain the reasoning load`);
+  }
+  if (!/观察|规则|条件|线索|顺序|记忆|比较|推理|判断|计划|空间|分类|位置|模式|关系|步骤|证据|排除|抗干扰|多|需要|目标|紧急|障碍|错误|修正|优先|功能|用途|相近|直接|生活|安全|材料|匹配|工具|准备|自然|流程|需求|筛选|类比|解决|对应/.test(note)) {
+    problems.push(`${context}: logic difficultyNote should name the reasoning load or visual surface`);
+  }
 }

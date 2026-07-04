@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-02T18:01:31.242Z",
+  "generatedAt": "2026-07-04T13:41:25.840Z",
   "recommendedVoice": "warm adult female Mandarin, smiling, preschool teacher, 0.85 speed, crisp consonants",
-  "lineCount": 1515,
+  "lineCount": 1528,
   "lines": [
     {
       "id": "game-title-数一数",
@@ -2127,6 +2127,7 @@
         "logic-pattern-train/logic-pattern-train-6",
         "logic-pattern-train/logic-pattern-train-6",
         "logic-sorter-switch/logic-sorter-switch-9",
+        "logic-sorter-switch/logic-sorter-switch-11",
         "logic-stop-think/logic-stop-think-1",
         "logic-stop-think/logic-stop-think-3",
         "logic-stop-think/logic-stop-think-5",
@@ -4861,6 +4862,7 @@
         "logic-pattern-train/logic-pattern-train-4",
         "logic-pattern-train/logic-pattern-train-5",
         "logic-sorter-switch/logic-sorter-switch-9",
+        "logic-sorter-switch/logic-sorter-switch-11",
         "logic-matrix-puzzle/logic-matrix-puzzle-4",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-1",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-4",
@@ -5110,49 +5112,40 @@
       ]
     },
     {
-      "id": "prompt-分类机说-只看颜色-红色圆片应该进哪个篮子-先说一遍规则-只看颜色-再看这张图",
+      "id": "prompt-分类机说-这次只看颜色-红色圆片要进哪个篮子-先说一遍规则-只看颜色-再看这张图",
       "kind": "prompt",
-      "text": "分类机说：只看颜色。红色圆片应该进哪个篮子？先说一遍规则：只看颜色，再看这张图。",
+      "text": "分类机说：这次只看颜色。红色圆片要进哪个篮子？先说一遍规则：只看颜色，再看这张图。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-sorter-switch/logic-sorter-switch-1"
       ]
     },
     {
-      "id": "success-这次只看颜色-所以红色圆片进红色篮子",
+      "id": "success-看颜色时-红色圆片和红色篮子是一对-圆形先不管",
       "kind": "success",
-      "text": "这次只看颜色，所以红色圆片进红色篮子。",
+      "text": "看颜色时，红色圆片和红色篮子是一对；圆形先不管。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-sorter-switch/logic-sorter-switch-1"
       ]
     },
     {
-      "id": "retry-先别看别的特征-这题只看颜色",
+      "id": "retry-这题只看颜色-先找红色-再选红色篮子",
       "kind": "retry",
-      "text": "先别看别的特征，这题只看颜色。",
+      "text": "这题只看颜色。先找红色，再选红色篮子。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
-        "logic-sorter-switch/logic-sorter-switch-1",
-        "logic-sorter-switch/logic-sorter-switch-2",
-        "logic-sorter-switch/logic-sorter-switch-5",
-        "logic-sorter-switch/logic-sorter-switch-7"
+        "logic-sorter-switch/logic-sorter-switch-1"
       ]
     },
     {
-      "id": "parent-问她-如果规则换了-同一张图会不会去不同篮子",
+      "id": "parent-问她-你看的是颜色还是形状-为什么圆形先不管",
       "kind": "parent",
-      "text": "问她：如果规则换了，同一张图会不会去不同篮子？",
+      "text": "问她：你看的是颜色还是形状？为什么圆形先不管？",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-sorter-switch/logic-sorter-switch-1",
-        "logic-sorter-switch/logic-sorter-switch-2",
-        "logic-sorter-switch/logic-sorter-switch-3",
-        "logic-sorter-switch/logic-sorter-switch-4",
-        "logic-sorter-switch/logic-sorter-switch-5",
-        "logic-sorter-switch/logic-sorter-switch-6",
-        "logic-sorter-switch/logic-sorter-switch-7",
-        "logic-sorter-switch/logic-sorter-switch-8"
+        "logic-sorter-switch/logic-sorter-switch-2"
       ]
     },
     {
@@ -5189,19 +5182,28 @@
       ]
     },
     {
-      "id": "prompt-分类机说-只看颜色-蓝色圆片应该进哪个篮子-先说一遍规则-只看颜色-再看这张图",
+      "id": "prompt-分类机说-这次只看颜色-蓝色圆片要进哪个篮子-先说一遍规则-只看颜色-再看这张图",
       "kind": "prompt",
-      "text": "分类机说：只看颜色。蓝色圆片应该进哪个篮子？先说一遍规则：只看颜色，再看这张图。",
+      "text": "分类机说：这次只看颜色。蓝色圆片要进哪个篮子？先说一遍规则：只看颜色，再看这张图。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-sorter-switch/logic-sorter-switch-2"
       ]
     },
     {
-      "id": "success-这次只看颜色-所以蓝色圆片进蓝色篮子",
+      "id": "success-看颜色时-蓝色圆片和蓝色篮子是一对-圆形先不管",
       "kind": "success",
-      "text": "这次只看颜色，所以蓝色圆片进蓝色篮子。",
+      "text": "看颜色时，蓝色圆片和蓝色篮子是一对；圆形先不管。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-sorter-switch/logic-sorter-switch-2"
+      ]
+    },
+    {
+      "id": "retry-这题只看颜色-先找蓝色-再选蓝色篮子",
+      "kind": "retry",
+      "text": "这题只看颜色。先找蓝色，再选蓝色篮子。",
+      "tone": "gentle, encouraging, slow",
       "contexts": [
         "logic-sorter-switch/logic-sorter-switch-2"
       ]
@@ -5218,33 +5220,39 @@
       ]
     },
     {
-      "id": "prompt-规则换了-只看形状-红色圆片应该进哪个篮子-先说一遍规则-只看形状-再看这张图",
+      "id": "prompt-规则换了-这次只看形状-红色圆片要进哪个篮子-先说一遍规则-只看形状-再看这张图",
       "kind": "prompt",
-      "text": "规则换了：只看形状。红色圆片应该进哪个篮子？先说一遍规则：只看形状，再看这张图。",
+      "text": "规则换了：这次只看形状。红色圆片要进哪个篮子？先说一遍规则：只看形状，再看这张图。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-sorter-switch/logic-sorter-switch-3"
       ]
     },
     {
-      "id": "success-规则是看形状-红色圆片是圆形-所以进圆形篮子",
+      "id": "success-看形状时-圆片进圆形篮子-红色先不管",
       "kind": "success",
-      "text": "规则是看形状，红色圆片是圆形，所以进圆形篮子。",
+      "text": "看形状时，圆片进圆形篮子；红色先不管。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-sorter-switch/logic-sorter-switch-3"
       ]
     },
     {
-      "id": "retry-先别看别的特征-这题只看形状",
+      "id": "retry-这题只看形状-先找圆形-再选圆形篮子",
       "kind": "retry",
-      "text": "先别看别的特征，这题只看形状。",
+      "text": "这题只看形状。先找圆形，再选圆形篮子。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
-        "logic-sorter-switch/logic-sorter-switch-3",
-        "logic-sorter-switch/logic-sorter-switch-4",
-        "logic-sorter-switch/logic-sorter-switch-6",
-        "logic-sorter-switch/logic-sorter-switch-8"
+        "logic-sorter-switch/logic-sorter-switch-3"
+      ]
+    },
+    {
+      "id": "parent-问她-你看的是形状还是颜色-为什么红色先不管",
+      "kind": "parent",
+      "text": "问她：你看的是形状还是颜色？为什么红色先不管？",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-sorter-switch/logic-sorter-switch-3"
       ]
     },
     {
@@ -5276,91 +5284,181 @@
       ]
     },
     {
-      "id": "prompt-规则换了-只看形状-蓝色方块应该进哪个篮子-先说一遍规则-只看形状-再看这张图",
+      "id": "prompt-规则换了-这次只看形状-蓝色方块要进哪个篮子-先说一遍规则-只看形状-再看这张图",
       "kind": "prompt",
-      "text": "规则换了：只看形状。蓝色方块应该进哪个篮子？先说一遍规则：只看形状，再看这张图。",
+      "text": "规则换了：这次只看形状。蓝色方块要进哪个篮子？先说一遍规则：只看形状，再看这张图。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-sorter-switch/logic-sorter-switch-4"
       ]
     },
     {
-      "id": "success-规则是看形状-蓝色方块是方形-所以进方形篮子",
+      "id": "success-看形状时-方块进方形篮子-蓝色先不管",
       "kind": "success",
-      "text": "规则是看形状，蓝色方块是方形，所以进方形篮子。",
+      "text": "看形状时，方块进方形篮子；蓝色先不管。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-sorter-switch/logic-sorter-switch-4"
       ]
     },
     {
-      "id": "prompt-同一张蓝色方块-这次分类机说只看颜色-应该进哪个篮子-先说一遍规则-只看颜色-再看这张图",
+      "id": "retry-这题只看形状-先找方形-再选方形篮子",
+      "kind": "retry",
+      "text": "这题只看形状。先找方形，再选方形篮子。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-sorter-switch/logic-sorter-switch-4"
+      ]
+    },
+    {
+      "id": "parent-问她-你看的是形状还是颜色-为什么蓝色先不管",
+      "kind": "parent",
+      "text": "问她：你看的是形状还是颜色？为什么蓝色先不管？",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-sorter-switch/logic-sorter-switch-4"
+      ]
+    },
+    {
+      "id": "prompt-刚才看过形状-这次只看颜色-蓝色方块要进哪个篮子-先说一遍规则-只看颜色-再看这张图",
       "kind": "prompt",
-      "text": "同一张蓝色方块，这次分类机说只看颜色。应该进哪个篮子？先说一遍规则：只看颜色，再看这张图。",
+      "text": "刚才看过形状，这次只看颜色。蓝色方块要进哪个篮子？先说一遍规则：只看颜色，再看这张图。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-sorter-switch/logic-sorter-switch-5"
       ]
     },
     {
-      "id": "success-这次只看颜色-蓝色方块先进蓝色篮子",
+      "id": "success-虽然它是方块-但这次看颜色-所以进蓝色篮子",
       "kind": "success",
-      "text": "这次只看颜色，蓝色方块先进蓝色篮子。",
+      "text": "虽然它是方块，但这次看颜色，所以进蓝色篮子。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-sorter-switch/logic-sorter-switch-5"
       ]
     },
     {
-      "id": "prompt-还是这张蓝色方块-现在分类机说只看形状-应该进哪个篮子-先说一遍规则-只看形状-再看这张图",
+      "id": "retry-先停一下听规则-现在只看颜色-不看形状",
+      "kind": "retry",
+      "text": "先停一下听规则：现在只看颜色，不看形状。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-sorter-switch/logic-sorter-switch-5"
+      ]
+    },
+    {
+      "id": "parent-问她-如果选方形篮子-是看了颜色还是看了形状-这次规则是什么",
+      "kind": "parent",
+      "text": "问她：如果选方形篮子，是看了颜色还是看了形状？这次规则是什么？",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-sorter-switch/logic-sorter-switch-5"
+      ]
+    },
+    {
+      "id": "prompt-还是蓝色方块-现在只看形状-它要进哪个篮子-先说一遍规则-只看形状-再看这张图",
       "kind": "prompt",
-      "text": "还是这张蓝色方块，现在分类机说只看形状。应该进哪个篮子？先说一遍规则：只看形状，再看这张图。",
+      "text": "还是蓝色方块，现在只看形状。它要进哪个篮子？先说一遍规则：只看形状，再看这张图。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-sorter-switch/logic-sorter-switch-6"
       ]
     },
     {
-      "id": "success-规则换成形状-所以同一张蓝色方块要进方形篮子",
+      "id": "success-虽然它是蓝色-但这次看形状-所以进方形篮子",
       "kind": "success",
-      "text": "规则换成形状，所以同一张蓝色方块要进方形篮子。",
+      "text": "虽然它是蓝色，但这次看形状，所以进方形篮子。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-sorter-switch/logic-sorter-switch-6"
       ]
     },
     {
-      "id": "prompt-黄色圆片有颜色也有形状-分类机说只看颜色-放哪里-先说一遍规则-只看颜色-再看这张图",
+      "id": "retry-先停一下听规则-现在只看形状-不看颜色",
+      "kind": "retry",
+      "text": "先停一下听规则：现在只看形状，不看颜色。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-sorter-switch/logic-sorter-switch-6"
+      ]
+    },
+    {
+      "id": "parent-问她-如果选蓝色篮子-是看了形状还是看了颜色-这次规则是什么",
+      "kind": "parent",
+      "text": "问她：如果选蓝色篮子，是看了形状还是看了颜色？这次规则是什么？",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-sorter-switch/logic-sorter-switch-6"
+      ]
+    },
+    {
+      "id": "prompt-黄色圆片有颜色也有形状-这次只看颜色-放哪里-先说一遍规则-只看颜色-再看这张图",
       "kind": "prompt",
-      "text": "黄色圆片有颜色也有形状。分类机说只看颜色，放哪里？先说一遍规则：只看颜色，再看这张图。",
+      "text": "黄色圆片有颜色也有形状。这次只看颜色，放哪里？先说一遍规则：只看颜色，再看这张图。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-sorter-switch/logic-sorter-switch-7"
       ]
     },
     {
-      "id": "success-听到只看颜色-就选黄色篮子",
+      "id": "success-听到只看颜色-就找黄色篮子-圆形先不管",
       "kind": "success",
-      "text": "听到只看颜色，就选黄色篮子。",
+      "text": "听到只看颜色，就找黄色篮子；圆形先不管。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-sorter-switch/logic-sorter-switch-7"
       ]
     },
     {
-      "id": "prompt-黄色圆片有颜色也有形状-分类机说只看形状-放哪里-先说一遍规则-只看形状-再看这张图",
+      "id": "retry-这题只看颜色-圆形篮子是看形状时才用的",
+      "kind": "retry",
+      "text": "这题只看颜色。圆形篮子是看形状时才用的。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-sorter-switch/logic-sorter-switch-7"
+      ]
+    },
+    {
+      "id": "parent-问她-黄色篮子和圆形篮子都像对的-为什么这次选颜色",
+      "kind": "parent",
+      "text": "问她：黄色篮子和圆形篮子都像对的，为什么这次选颜色？",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-sorter-switch/logic-sorter-switch-7"
+      ]
+    },
+    {
+      "id": "prompt-黄色圆片有颜色也有形状-这次只看形状-放哪里-先说一遍规则-只看形状-再看这张图",
       "kind": "prompt",
-      "text": "黄色圆片有颜色也有形状。分类机说只看形状，放哪里？先说一遍规则：只看形状，再看这张图。",
+      "text": "黄色圆片有颜色也有形状。这次只看形状，放哪里？先说一遍规则：只看形状，再看这张图。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-sorter-switch/logic-sorter-switch-8"
       ]
     },
     {
-      "id": "success-听到只看形状-就选圆形篮子",
+      "id": "success-听到只看形状-就找圆形篮子-黄色先不管",
       "kind": "success",
-      "text": "听到只看形状，就选圆形篮子。",
+      "text": "听到只看形状，就找圆形篮子；黄色先不管。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-sorter-switch/logic-sorter-switch-8"
+      ]
+    },
+    {
+      "id": "retry-这题只看形状-黄色篮子是看颜色时才用的",
+      "kind": "retry",
+      "text": "这题只看形状。黄色篮子是看颜色时才用的。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-sorter-switch/logic-sorter-switch-8"
+      ]
+    },
+    {
+      "id": "parent-问她-圆形篮子和黄色篮子都像对的-为什么这次选形状",
+      "kind": "parent",
+      "text": "问她：圆形篮子和黄色篮子都像对的，为什么这次选形状？",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-sorter-switch/logic-sorter-switch-8"
       ]
@@ -5384,24 +5482,21 @@
       ]
     },
     {
-      "id": "retry-先看颜色-再看形状-两个都对才行",
+      "id": "retry-两个条件都要看-红色和圆形都对才行",
       "kind": "retry",
-      "text": "先看颜色，再看形状，两个都对才行。",
+      "text": "两个条件都要看：红色和圆形都对才行。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
-        "logic-sorter-switch/logic-sorter-switch-9",
-        "logic-sorter-switch/logic-sorter-switch-10",
-        "logic-sorter-switch/logic-sorter-switch-11"
+        "logic-sorter-switch/logic-sorter-switch-9"
       ]
     },
     {
-      "id": "parent-问她-它满足了哪两个条件-哪个选项只满足了一个",
+      "id": "parent-问她-哪一张两个条件都满足-哪一张只满足圆形-哪一张两个条件都不满足",
       "kind": "parent",
-      "text": "问她：它满足了哪两个条件？哪个选项只满足了一个？",
+      "text": "问她：哪一张两个条件都满足？哪一张只满足圆形？哪一张两个条件都不满足？",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-sorter-switch/logic-sorter-switch-9",
-        "logic-sorter-switch/logic-sorter-switch-10",
         "logic-sorter-switch/logic-sorter-switch-11"
       ]
     },
@@ -5418,9 +5513,9 @@
       ]
     },
     {
-      "id": "prompt-分类机要蓝色-也要方形-选哪一张-两个条件都要满足-少一个都不行",
+      "id": "prompt-分类机要蓝色-也要方形-哪一张两个条件都对-两个条件都要满足-少一个都不行",
       "kind": "prompt",
-      "text": "分类机要蓝色，也要方形。选哪一张？两个条件都要满足，少一个都不行。",
+      "text": "分类机要蓝色，也要方形。哪一张两个条件都对？两个条件都要满足，少一个都不行。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-sorter-switch/logic-sorter-switch-10"
@@ -5436,9 +5531,27 @@
       ]
     },
     {
-      "id": "prompt-分类机要黄色-也要圆形-选哪一张-两个条件都要满足-少一个都不行",
+      "id": "retry-两个条件都要看-蓝色和方形都对才行",
+      "kind": "retry",
+      "text": "两个条件都要看：蓝色和方形都对才行。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-sorter-switch/logic-sorter-switch-10"
+      ]
+    },
+    {
+      "id": "parent-问她-哪一张两个条件都满足-哪一张只满足颜色-哪一张两个条件都不满足",
+      "kind": "parent",
+      "text": "问她：哪一张两个条件都满足？哪一张只满足颜色？哪一张两个条件都不满足？",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-sorter-switch/logic-sorter-switch-10"
+      ]
+    },
+    {
+      "id": "prompt-分类机要黄色-也要圆形-哪一张两个条件都对-两个条件都要满足-少一个都不行",
       "kind": "prompt",
-      "text": "分类机要黄色，也要圆形。选哪一张？两个条件都要满足，少一个都不行。",
+      "text": "分类机要黄色，也要圆形。哪一张两个条件都对？两个条件都要满足，少一个都不行。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-sorter-switch/logic-sorter-switch-11"
@@ -5454,19 +5567,10 @@
       ]
     },
     {
-      "id": "choice-空位",
-      "kind": "choice",
-      "text": "空位",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-sorter-switch/logic-sorter-switch-11"
-      ]
-    },
-    {
-      "id": "object-空位",
-      "kind": "object",
-      "text": "空位",
-      "tone": "friendly, clear, playful",
+      "id": "retry-两个条件都要看-黄色和圆形都对才行",
+      "kind": "retry",
+      "text": "两个条件都要看：黄色和圆形都对才行。",
+      "tone": "gentle, encouraging, slow",
       "contexts": [
         "logic-sorter-switch/logic-sorter-switch-11"
       ]

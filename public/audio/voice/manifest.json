@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-07-02T18:01:43.050Z",
+  "generatedAt": "2026-07-04T13:43:12.752Z",
   "provider": "edge-tts Python package",
   "voice": "zh-CN-XiaoxiaoNeural",
   "rate": "-12%",
   "pitch": "+2Hz",
   "includeParent": true,
   "format": "mp3",
-  "count": 1515,
-  "requestedCount": 1515,
+  "count": 1528,
+  "requestedCount": 1528,
   "failures": [],
   "entries": [
     {
@@ -2033,28 +2033,28 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/game-goal-%E8%AE%AD%E7%BB%83%E5%88%86%E7%B1%BB-%E8%A7%84%E5%88%99%E5%88%87%E6%8D%A2%E5%92%8C%E8%AE%A4%E7%9F%A5%E7%81%B5%E6%B4%BB%E6%80%A7.mp3"
     },
     {
-      "id": "prompt-分类机说-只看颜色-红色圆片应该进哪个篮子-先说一遍规则-只看颜色-再看这张图",
+      "id": "prompt-分类机说-这次只看颜色-红色圆片要进哪个篮子-先说一遍规则-只看颜色-再看这张图",
       "kind": "prompt",
-      "text": "分类机说：只看颜色。红色圆片应该进哪个篮子？先说一遍规则：只看颜色，再看这张图。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%88%86%E7%B1%BB%E6%9C%BA%E8%AF%B4-%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87%E5%BA%94%E8%AF%A5%E8%BF%9B%E5%93%AA%E4%B8%AA%E7%AF%AE%E5%AD%90-%E5%85%88%E8%AF%B4%E4%B8%80%E9%81%8D%E8%A7%84%E5%88%99-%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E5%86%8D%E7%9C%8B%E8%BF%99%E5%BC%A0%E5%9B%BE.mp3"
+      "text": "分类机说：这次只看颜色。红色圆片要进哪个篮子？先说一遍规则：只看颜色，再看这张图。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%88%86%E7%B1%BB%E6%9C%BA%E8%AF%B4-%E8%BF%99%E6%AC%A1%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87%E8%A6%81%E8%BF%9B%E5%93%AA%E4%B8%AA%E7%AF%AE%E5%AD%90-%E5%85%88%E8%AF%B4%E4%B8%80%E9%81%8D%E8%A7%84%E5%88%99-%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E5%86%8D%E7%9C%8B%E8%BF%99%E5%BC%A0%E5%9B%BE.mp3"
     },
     {
-      "id": "success-这次只看颜色-所以红色圆片进红色篮子",
+      "id": "success-看颜色时-红色圆片和红色篮子是一对-圆形先不管",
       "kind": "success",
-      "text": "这次只看颜色，所以红色圆片进红色篮子。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%BF%99%E6%AC%A1%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E6%89%80%E4%BB%A5%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87%E8%BF%9B%E7%BA%A2%E8%89%B2%E7%AF%AE%E5%AD%90.mp3"
+      "text": "看颜色时，红色圆片和红色篮子是一对；圆形先不管。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%9C%8B%E9%A2%9C%E8%89%B2%E6%97%B6-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87%E5%92%8C%E7%BA%A2%E8%89%B2%E7%AF%AE%E5%AD%90%E6%98%AF%E4%B8%80%E5%AF%B9-%E5%9C%86%E5%BD%A2%E5%85%88%E4%B8%8D%E7%AE%A1.mp3"
     },
     {
-      "id": "retry-先别看别的特征-这题只看颜色",
+      "id": "retry-这题只看颜色-先找红色-再选红色篮子",
       "kind": "retry",
-      "text": "先别看别的特征，这题只看颜色。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E5%88%AB%E7%9C%8B%E5%88%AB%E7%9A%84%E7%89%B9%E5%BE%81-%E8%BF%99%E9%A2%98%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2.mp3"
+      "text": "这题只看颜色。先找红色，再选红色篮子。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E8%BF%99%E9%A2%98%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E5%85%88%E6%89%BE%E7%BA%A2%E8%89%B2-%E5%86%8D%E9%80%89%E7%BA%A2%E8%89%B2%E7%AF%AE%E5%AD%90.mp3"
     },
     {
-      "id": "parent-问她-如果规则换了-同一张图会不会去不同篮子",
+      "id": "parent-问她-你看的是颜色还是形状-为什么圆形先不管",
       "kind": "parent",
-      "text": "问她：如果规则换了，同一张图会不会去不同篮子？",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E5%A6%82%E6%9E%9C%E8%A7%84%E5%88%99%E6%8D%A2%E4%BA%86-%E5%90%8C%E4%B8%80%E5%BC%A0%E5%9B%BE%E4%BC%9A%E4%B8%8D%E4%BC%9A%E5%8E%BB%E4%B8%8D%E5%90%8C%E7%AF%AE%E5%AD%90.mp3"
+      "text": "问她：你看的是颜色还是形状？为什么圆形先不管？",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E4%BD%A0%E7%9C%8B%E7%9A%84%E6%98%AF%E9%A2%9C%E8%89%B2%E8%BF%98%E6%98%AF%E5%BD%A2%E7%8A%B6-%E4%B8%BA%E4%BB%80%E4%B9%88%E5%9C%86%E5%BD%A2%E5%85%88%E4%B8%8D%E7%AE%A1.mp3"
     },
     {
       "id": "choice-红色篮子",
@@ -2075,16 +2075,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E7%BB%BF%E8%89%B2%E7%AF%AE%E5%AD%90.mp3"
     },
     {
-      "id": "prompt-分类机说-只看颜色-蓝色圆片应该进哪个篮子-先说一遍规则-只看颜色-再看这张图",
+      "id": "prompt-分类机说-这次只看颜色-蓝色圆片要进哪个篮子-先说一遍规则-只看颜色-再看这张图",
       "kind": "prompt",
-      "text": "分类机说：只看颜色。蓝色圆片应该进哪个篮子？先说一遍规则：只看颜色，再看这张图。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%88%86%E7%B1%BB%E6%9C%BA%E8%AF%B4-%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87%E5%BA%94%E8%AF%A5%E8%BF%9B%E5%93%AA%E4%B8%AA%E7%AF%AE%E5%AD%90-%E5%85%88%E8%AF%B4%E4%B8%80%E9%81%8D%E8%A7%84%E5%88%99-%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E5%86%8D%E7%9C%8B%E8%BF%99%E5%BC%A0%E5%9B%BE.mp3"
+      "text": "分类机说：这次只看颜色。蓝色圆片要进哪个篮子？先说一遍规则：只看颜色，再看这张图。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%88%86%E7%B1%BB%E6%9C%BA%E8%AF%B4-%E8%BF%99%E6%AC%A1%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87%E8%A6%81%E8%BF%9B%E5%93%AA%E4%B8%AA%E7%AF%AE%E5%AD%90-%E5%85%88%E8%AF%B4%E4%B8%80%E9%81%8D%E8%A7%84%E5%88%99-%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E5%86%8D%E7%9C%8B%E8%BF%99%E5%BC%A0%E5%9B%BE.mp3"
     },
     {
-      "id": "success-这次只看颜色-所以蓝色圆片进蓝色篮子",
+      "id": "success-看颜色时-蓝色圆片和蓝色篮子是一对-圆形先不管",
       "kind": "success",
-      "text": "这次只看颜色，所以蓝色圆片进蓝色篮子。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%BF%99%E6%AC%A1%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E6%89%80%E4%BB%A5%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87%E8%BF%9B%E8%93%9D%E8%89%B2%E7%AF%AE%E5%AD%90.mp3"
+      "text": "看颜色时，蓝色圆片和蓝色篮子是一对；圆形先不管。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%9C%8B%E9%A2%9C%E8%89%B2%E6%97%B6-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87%E5%92%8C%E8%93%9D%E8%89%B2%E7%AF%AE%E5%AD%90%E6%98%AF%E4%B8%80%E5%AF%B9-%E5%9C%86%E5%BD%A2%E5%85%88%E4%B8%8D%E7%AE%A1.mp3"
+    },
+    {
+      "id": "retry-这题只看颜色-先找蓝色-再选蓝色篮子",
+      "kind": "retry",
+      "text": "这题只看颜色。先找蓝色，再选蓝色篮子。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E8%BF%99%E9%A2%98%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E5%85%88%E6%89%BE%E8%93%9D%E8%89%B2-%E5%86%8D%E9%80%89%E8%93%9D%E8%89%B2%E7%AF%AE%E5%AD%90.mp3"
     },
     {
       "id": "choice-黄色篮子",
@@ -2093,22 +2099,28 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E9%BB%84%E8%89%B2%E7%AF%AE%E5%AD%90.mp3"
     },
     {
-      "id": "prompt-规则换了-只看形状-红色圆片应该进哪个篮子-先说一遍规则-只看形状-再看这张图",
+      "id": "prompt-规则换了-这次只看形状-红色圆片要进哪个篮子-先说一遍规则-只看形状-再看这张图",
       "kind": "prompt",
-      "text": "规则换了：只看形状。红色圆片应该进哪个篮子？先说一遍规则：只看形状，再看这张图。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%A7%84%E5%88%99%E6%8D%A2%E4%BA%86-%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87%E5%BA%94%E8%AF%A5%E8%BF%9B%E5%93%AA%E4%B8%AA%E7%AF%AE%E5%AD%90-%E5%85%88%E8%AF%B4%E4%B8%80%E9%81%8D%E8%A7%84%E5%88%99-%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E5%86%8D%E7%9C%8B%E8%BF%99%E5%BC%A0%E5%9B%BE.mp3"
+      "text": "规则换了：这次只看形状。红色圆片要进哪个篮子？先说一遍规则：只看形状，再看这张图。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%A7%84%E5%88%99%E6%8D%A2%E4%BA%86-%E8%BF%99%E6%AC%A1%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87%E8%A6%81%E8%BF%9B%E5%93%AA%E4%B8%AA%E7%AF%AE%E5%AD%90-%E5%85%88%E8%AF%B4%E4%B8%80%E9%81%8D%E8%A7%84%E5%88%99-%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E5%86%8D%E7%9C%8B%E8%BF%99%E5%BC%A0%E5%9B%BE.mp3"
     },
     {
-      "id": "success-规则是看形状-红色圆片是圆形-所以进圆形篮子",
+      "id": "success-看形状时-圆片进圆形篮子-红色先不管",
       "kind": "success",
-      "text": "规则是看形状，红色圆片是圆形，所以进圆形篮子。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%A7%84%E5%88%99%E6%98%AF%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87%E6%98%AF%E5%9C%86%E5%BD%A2-%E6%89%80%E4%BB%A5%E8%BF%9B%E5%9C%86%E5%BD%A2%E7%AF%AE%E5%AD%90.mp3"
+      "text": "看形状时，圆片进圆形篮子；红色先不管。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%9C%8B%E5%BD%A2%E7%8A%B6%E6%97%B6-%E5%9C%86%E7%89%87%E8%BF%9B%E5%9C%86%E5%BD%A2%E7%AF%AE%E5%AD%90-%E7%BA%A2%E8%89%B2%E5%85%88%E4%B8%8D%E7%AE%A1.mp3"
     },
     {
-      "id": "retry-先别看别的特征-这题只看形状",
+      "id": "retry-这题只看形状-先找圆形-再选圆形篮子",
       "kind": "retry",
-      "text": "先别看别的特征，这题只看形状。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E5%88%AB%E7%9C%8B%E5%88%AB%E7%9A%84%E7%89%B9%E5%BE%81-%E8%BF%99%E9%A2%98%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6.mp3"
+      "text": "这题只看形状。先找圆形，再选圆形篮子。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E8%BF%99%E9%A2%98%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E5%85%88%E6%89%BE%E5%9C%86%E5%BD%A2-%E5%86%8D%E9%80%89%E5%9C%86%E5%BD%A2%E7%AF%AE%E5%AD%90.mp3"
+    },
+    {
+      "id": "parent-问她-你看的是形状还是颜色-为什么红色先不管",
+      "kind": "parent",
+      "text": "问她：你看的是形状还是颜色？为什么红色先不管？",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E4%BD%A0%E7%9C%8B%E7%9A%84%E6%98%AF%E5%BD%A2%E7%8A%B6%E8%BF%98%E6%98%AF%E9%A2%9C%E8%89%B2-%E4%B8%BA%E4%BB%80%E4%B9%88%E7%BA%A2%E8%89%B2%E5%85%88%E4%B8%8D%E7%AE%A1.mp3"
     },
     {
       "id": "choice-圆形篮子",
@@ -2123,64 +2135,124 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E6%96%B9%E5%BD%A2%E7%AF%AE%E5%AD%90.mp3"
     },
     {
-      "id": "prompt-规则换了-只看形状-蓝色方块应该进哪个篮子-先说一遍规则-只看形状-再看这张图",
+      "id": "prompt-规则换了-这次只看形状-蓝色方块要进哪个篮子-先说一遍规则-只看形状-再看这张图",
       "kind": "prompt",
-      "text": "规则换了：只看形状。蓝色方块应该进哪个篮子？先说一遍规则：只看形状，再看这张图。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%A7%84%E5%88%99%E6%8D%A2%E4%BA%86-%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E8%93%9D%E8%89%B2%E6%96%B9%E5%9D%97%E5%BA%94%E8%AF%A5%E8%BF%9B%E5%93%AA%E4%B8%AA%E7%AF%AE%E5%AD%90-%E5%85%88%E8%AF%B4%E4%B8%80%E9%81%8D%E8%A7%84%E5%88%99-%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E5%86%8D%E7%9C%8B%E8%BF%99%E5%BC%A0%E5%9B%BE.mp3"
+      "text": "规则换了：这次只看形状。蓝色方块要进哪个篮子？先说一遍规则：只看形状，再看这张图。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%A7%84%E5%88%99%E6%8D%A2%E4%BA%86-%E8%BF%99%E6%AC%A1%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E8%93%9D%E8%89%B2%E6%96%B9%E5%9D%97%E8%A6%81%E8%BF%9B%E5%93%AA%E4%B8%AA%E7%AF%AE%E5%AD%90-%E5%85%88%E8%AF%B4%E4%B8%80%E9%81%8D%E8%A7%84%E5%88%99-%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E5%86%8D%E7%9C%8B%E8%BF%99%E5%BC%A0%E5%9B%BE.mp3"
     },
     {
-      "id": "success-规则是看形状-蓝色方块是方形-所以进方形篮子",
+      "id": "success-看形状时-方块进方形篮子-蓝色先不管",
       "kind": "success",
-      "text": "规则是看形状，蓝色方块是方形，所以进方形篮子。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%A7%84%E5%88%99%E6%98%AF%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E8%93%9D%E8%89%B2%E6%96%B9%E5%9D%97%E6%98%AF%E6%96%B9%E5%BD%A2-%E6%89%80%E4%BB%A5%E8%BF%9B%E6%96%B9%E5%BD%A2%E7%AF%AE%E5%AD%90.mp3"
+      "text": "看形状时，方块进方形篮子；蓝色先不管。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%9C%8B%E5%BD%A2%E7%8A%B6%E6%97%B6-%E6%96%B9%E5%9D%97%E8%BF%9B%E6%96%B9%E5%BD%A2%E7%AF%AE%E5%AD%90-%E8%93%9D%E8%89%B2%E5%85%88%E4%B8%8D%E7%AE%A1.mp3"
     },
     {
-      "id": "prompt-同一张蓝色方块-这次分类机说只看颜色-应该进哪个篮子-先说一遍规则-只看颜色-再看这张图",
+      "id": "retry-这题只看形状-先找方形-再选方形篮子",
+      "kind": "retry",
+      "text": "这题只看形状。先找方形，再选方形篮子。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E8%BF%99%E9%A2%98%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E5%85%88%E6%89%BE%E6%96%B9%E5%BD%A2-%E5%86%8D%E9%80%89%E6%96%B9%E5%BD%A2%E7%AF%AE%E5%AD%90.mp3"
+    },
+    {
+      "id": "parent-问她-你看的是形状还是颜色-为什么蓝色先不管",
+      "kind": "parent",
+      "text": "问她：你看的是形状还是颜色？为什么蓝色先不管？",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E4%BD%A0%E7%9C%8B%E7%9A%84%E6%98%AF%E5%BD%A2%E7%8A%B6%E8%BF%98%E6%98%AF%E9%A2%9C%E8%89%B2-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%93%9D%E8%89%B2%E5%85%88%E4%B8%8D%E7%AE%A1.mp3"
+    },
+    {
+      "id": "prompt-刚才看过形状-这次只看颜色-蓝色方块要进哪个篮子-先说一遍规则-只看颜色-再看这张图",
       "kind": "prompt",
-      "text": "同一张蓝色方块，这次分类机说只看颜色。应该进哪个篮子？先说一遍规则：只看颜色，再看这张图。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%90%8C%E4%B8%80%E5%BC%A0%E8%93%9D%E8%89%B2%E6%96%B9%E5%9D%97-%E8%BF%99%E6%AC%A1%E5%88%86%E7%B1%BB%E6%9C%BA%E8%AF%B4%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E5%BA%94%E8%AF%A5%E8%BF%9B%E5%93%AA%E4%B8%AA%E7%AF%AE%E5%AD%90-%E5%85%88%E8%AF%B4%E4%B8%80%E9%81%8D%E8%A7%84%E5%88%99-%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E5%86%8D%E7%9C%8B%E8%BF%99%E5%BC%A0%E5%9B%BE.mp3"
+      "text": "刚才看过形状，这次只看颜色。蓝色方块要进哪个篮子？先说一遍规则：只看颜色，再看这张图。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%88%9A%E6%89%8D%E7%9C%8B%E8%BF%87%E5%BD%A2%E7%8A%B6-%E8%BF%99%E6%AC%A1%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E8%93%9D%E8%89%B2%E6%96%B9%E5%9D%97%E8%A6%81%E8%BF%9B%E5%93%AA%E4%B8%AA%E7%AF%AE%E5%AD%90-%E5%85%88%E8%AF%B4%E4%B8%80%E9%81%8D%E8%A7%84%E5%88%99-%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E5%86%8D%E7%9C%8B%E8%BF%99%E5%BC%A0%E5%9B%BE.mp3"
     },
     {
-      "id": "success-这次只看颜色-蓝色方块先进蓝色篮子",
+      "id": "success-虽然它是方块-但这次看颜色-所以进蓝色篮子",
       "kind": "success",
-      "text": "这次只看颜色，蓝色方块先进蓝色篮子。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%BF%99%E6%AC%A1%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E8%93%9D%E8%89%B2%E6%96%B9%E5%9D%97%E5%85%88%E8%BF%9B%E8%93%9D%E8%89%B2%E7%AF%AE%E5%AD%90.mp3"
+      "text": "虽然它是方块，但这次看颜色，所以进蓝色篮子。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%99%BD%E7%84%B6%E5%AE%83%E6%98%AF%E6%96%B9%E5%9D%97-%E4%BD%86%E8%BF%99%E6%AC%A1%E7%9C%8B%E9%A2%9C%E8%89%B2-%E6%89%80%E4%BB%A5%E8%BF%9B%E8%93%9D%E8%89%B2%E7%AF%AE%E5%AD%90.mp3"
     },
     {
-      "id": "prompt-还是这张蓝色方块-现在分类机说只看形状-应该进哪个篮子-先说一遍规则-只看形状-再看这张图",
+      "id": "retry-先停一下听规则-现在只看颜色-不看形状",
+      "kind": "retry",
+      "text": "先停一下听规则：现在只看颜色，不看形状。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E5%81%9C%E4%B8%80%E4%B8%8B%E5%90%AC%E8%A7%84%E5%88%99-%E7%8E%B0%E5%9C%A8%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E4%B8%8D%E7%9C%8B%E5%BD%A2%E7%8A%B6.mp3"
+    },
+    {
+      "id": "parent-问她-如果选方形篮子-是看了颜色还是看了形状-这次规则是什么",
+      "kind": "parent",
+      "text": "问她：如果选方形篮子，是看了颜色还是看了形状？这次规则是什么？",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E5%A6%82%E6%9E%9C%E9%80%89%E6%96%B9%E5%BD%A2%E7%AF%AE%E5%AD%90-%E6%98%AF%E7%9C%8B%E4%BA%86%E9%A2%9C%E8%89%B2%E8%BF%98%E6%98%AF%E7%9C%8B%E4%BA%86%E5%BD%A2%E7%8A%B6-%E8%BF%99%E6%AC%A1%E8%A7%84%E5%88%99%E6%98%AF%E4%BB%80%E4%B9%88.mp3"
+    },
+    {
+      "id": "prompt-还是蓝色方块-现在只看形状-它要进哪个篮子-先说一遍规则-只看形状-再看这张图",
       "kind": "prompt",
-      "text": "还是这张蓝色方块，现在分类机说只看形状。应该进哪个篮子？先说一遍规则：只看形状，再看这张图。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%BF%98%E6%98%AF%E8%BF%99%E5%BC%A0%E8%93%9D%E8%89%B2%E6%96%B9%E5%9D%97-%E7%8E%B0%E5%9C%A8%E5%88%86%E7%B1%BB%E6%9C%BA%E8%AF%B4%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E5%BA%94%E8%AF%A5%E8%BF%9B%E5%93%AA%E4%B8%AA%E7%AF%AE%E5%AD%90-%E5%85%88%E8%AF%B4%E4%B8%80%E9%81%8D%E8%A7%84%E5%88%99-%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E5%86%8D%E7%9C%8B%E8%BF%99%E5%BC%A0%E5%9B%BE.mp3"
+      "text": "还是蓝色方块，现在只看形状。它要进哪个篮子？先说一遍规则：只看形状，再看这张图。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%BF%98%E6%98%AF%E8%93%9D%E8%89%B2%E6%96%B9%E5%9D%97-%E7%8E%B0%E5%9C%A8%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E5%AE%83%E8%A6%81%E8%BF%9B%E5%93%AA%E4%B8%AA%E7%AF%AE%E5%AD%90-%E5%85%88%E8%AF%B4%E4%B8%80%E9%81%8D%E8%A7%84%E5%88%99-%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E5%86%8D%E7%9C%8B%E8%BF%99%E5%BC%A0%E5%9B%BE.mp3"
     },
     {
-      "id": "success-规则换成形状-所以同一张蓝色方块要进方形篮子",
+      "id": "success-虽然它是蓝色-但这次看形状-所以进方形篮子",
       "kind": "success",
-      "text": "规则换成形状，所以同一张蓝色方块要进方形篮子。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%A7%84%E5%88%99%E6%8D%A2%E6%88%90%E5%BD%A2%E7%8A%B6-%E6%89%80%E4%BB%A5%E5%90%8C%E4%B8%80%E5%BC%A0%E8%93%9D%E8%89%B2%E6%96%B9%E5%9D%97%E8%A6%81%E8%BF%9B%E6%96%B9%E5%BD%A2%E7%AF%AE%E5%AD%90.mp3"
+      "text": "虽然它是蓝色，但这次看形状，所以进方形篮子。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%99%BD%E7%84%B6%E5%AE%83%E6%98%AF%E8%93%9D%E8%89%B2-%E4%BD%86%E8%BF%99%E6%AC%A1%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E6%89%80%E4%BB%A5%E8%BF%9B%E6%96%B9%E5%BD%A2%E7%AF%AE%E5%AD%90.mp3"
     },
     {
-      "id": "prompt-黄色圆片有颜色也有形状-分类机说只看颜色-放哪里-先说一遍规则-只看颜色-再看这张图",
+      "id": "retry-先停一下听规则-现在只看形状-不看颜色",
+      "kind": "retry",
+      "text": "先停一下听规则：现在只看形状，不看颜色。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E5%81%9C%E4%B8%80%E4%B8%8B%E5%90%AC%E8%A7%84%E5%88%99-%E7%8E%B0%E5%9C%A8%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E4%B8%8D%E7%9C%8B%E9%A2%9C%E8%89%B2.mp3"
+    },
+    {
+      "id": "parent-问她-如果选蓝色篮子-是看了形状还是看了颜色-这次规则是什么",
+      "kind": "parent",
+      "text": "问她：如果选蓝色篮子，是看了形状还是看了颜色？这次规则是什么？",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E5%A6%82%E6%9E%9C%E9%80%89%E8%93%9D%E8%89%B2%E7%AF%AE%E5%AD%90-%E6%98%AF%E7%9C%8B%E4%BA%86%E5%BD%A2%E7%8A%B6%E8%BF%98%E6%98%AF%E7%9C%8B%E4%BA%86%E9%A2%9C%E8%89%B2-%E8%BF%99%E6%AC%A1%E8%A7%84%E5%88%99%E6%98%AF%E4%BB%80%E4%B9%88.mp3"
+    },
+    {
+      "id": "prompt-黄色圆片有颜色也有形状-这次只看颜色-放哪里-先说一遍规则-只看颜色-再看这张图",
       "kind": "prompt",
-      "text": "黄色圆片有颜色也有形状。分类机说只看颜色，放哪里？先说一遍规则：只看颜色，再看这张图。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87%E6%9C%89%E9%A2%9C%E8%89%B2%E4%B9%9F%E6%9C%89%E5%BD%A2%E7%8A%B6-%E5%88%86%E7%B1%BB%E6%9C%BA%E8%AF%B4%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E6%94%BE%E5%93%AA%E9%87%8C-%E5%85%88%E8%AF%B4%E4%B8%80%E9%81%8D%E8%A7%84%E5%88%99-%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E5%86%8D%E7%9C%8B%E8%BF%99%E5%BC%A0%E5%9B%BE.mp3"
+      "text": "黄色圆片有颜色也有形状。这次只看颜色，放哪里？先说一遍规则：只看颜色，再看这张图。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87%E6%9C%89%E9%A2%9C%E8%89%B2%E4%B9%9F%E6%9C%89%E5%BD%A2%E7%8A%B6-%E8%BF%99%E6%AC%A1%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E6%94%BE%E5%93%AA%E9%87%8C-%E5%85%88%E8%AF%B4%E4%B8%80%E9%81%8D%E8%A7%84%E5%88%99-%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E5%86%8D%E7%9C%8B%E8%BF%99%E5%BC%A0%E5%9B%BE.mp3"
     },
     {
-      "id": "success-听到只看颜色-就选黄色篮子",
+      "id": "success-听到只看颜色-就找黄色篮子-圆形先不管",
       "kind": "success",
-      "text": "听到只看颜色，就选黄色篮子。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%90%AC%E5%88%B0%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E5%B0%B1%E9%80%89%E9%BB%84%E8%89%B2%E7%AF%AE%E5%AD%90.mp3"
+      "text": "听到只看颜色，就找黄色篮子；圆形先不管。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%90%AC%E5%88%B0%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E5%B0%B1%E6%89%BE%E9%BB%84%E8%89%B2%E7%AF%AE%E5%AD%90-%E5%9C%86%E5%BD%A2%E5%85%88%E4%B8%8D%E7%AE%A1.mp3"
     },
     {
-      "id": "prompt-黄色圆片有颜色也有形状-分类机说只看形状-放哪里-先说一遍规则-只看形状-再看这张图",
+      "id": "retry-这题只看颜色-圆形篮子是看形状时才用的",
+      "kind": "retry",
+      "text": "这题只看颜色。圆形篮子是看形状时才用的。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E8%BF%99%E9%A2%98%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E5%9C%86%E5%BD%A2%E7%AF%AE%E5%AD%90%E6%98%AF%E7%9C%8B%E5%BD%A2%E7%8A%B6%E6%97%B6%E6%89%8D%E7%94%A8%E7%9A%84.mp3"
+    },
+    {
+      "id": "parent-问她-黄色篮子和圆形篮子都像对的-为什么这次选颜色",
+      "kind": "parent",
+      "text": "问她：黄色篮子和圆形篮子都像对的，为什么这次选颜色？",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E9%BB%84%E8%89%B2%E7%AF%AE%E5%AD%90%E5%92%8C%E5%9C%86%E5%BD%A2%E7%AF%AE%E5%AD%90%E9%83%BD%E5%83%8F%E5%AF%B9%E7%9A%84-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%99%E6%AC%A1%E9%80%89%E9%A2%9C%E8%89%B2.mp3"
+    },
+    {
+      "id": "prompt-黄色圆片有颜色也有形状-这次只看形状-放哪里-先说一遍规则-只看形状-再看这张图",
       "kind": "prompt",
-      "text": "黄色圆片有颜色也有形状。分类机说只看形状，放哪里？先说一遍规则：只看形状，再看这张图。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87%E6%9C%89%E9%A2%9C%E8%89%B2%E4%B9%9F%E6%9C%89%E5%BD%A2%E7%8A%B6-%E5%88%86%E7%B1%BB%E6%9C%BA%E8%AF%B4%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E6%94%BE%E5%93%AA%E9%87%8C-%E5%85%88%E8%AF%B4%E4%B8%80%E9%81%8D%E8%A7%84%E5%88%99-%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E5%86%8D%E7%9C%8B%E8%BF%99%E5%BC%A0%E5%9B%BE.mp3"
+      "text": "黄色圆片有颜色也有形状。这次只看形状，放哪里？先说一遍规则：只看形状，再看这张图。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87%E6%9C%89%E9%A2%9C%E8%89%B2%E4%B9%9F%E6%9C%89%E5%BD%A2%E7%8A%B6-%E8%BF%99%E6%AC%A1%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E6%94%BE%E5%93%AA%E9%87%8C-%E5%85%88%E8%AF%B4%E4%B8%80%E9%81%8D%E8%A7%84%E5%88%99-%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E5%86%8D%E7%9C%8B%E8%BF%99%E5%BC%A0%E5%9B%BE.mp3"
     },
     {
-      "id": "success-听到只看形状-就选圆形篮子",
+      "id": "success-听到只看形状-就找圆形篮子-黄色先不管",
       "kind": "success",
-      "text": "听到只看形状，就选圆形篮子。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%90%AC%E5%88%B0%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E5%B0%B1%E9%80%89%E5%9C%86%E5%BD%A2%E7%AF%AE%E5%AD%90.mp3"
+      "text": "听到只看形状，就找圆形篮子；黄色先不管。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%90%AC%E5%88%B0%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E5%B0%B1%E6%89%BE%E5%9C%86%E5%BD%A2%E7%AF%AE%E5%AD%90-%E9%BB%84%E8%89%B2%E5%85%88%E4%B8%8D%E7%AE%A1.mp3"
+    },
+    {
+      "id": "retry-这题只看形状-黄色篮子是看颜色时才用的",
+      "kind": "retry",
+      "text": "这题只看形状。黄色篮子是看颜色时才用的。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E8%BF%99%E9%A2%98%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E9%BB%84%E8%89%B2%E7%AF%AE%E5%AD%90%E6%98%AF%E7%9C%8B%E9%A2%9C%E8%89%B2%E6%97%B6%E6%89%8D%E7%94%A8%E7%9A%84.mp3"
+    },
+    {
+      "id": "parent-问她-圆形篮子和黄色篮子都像对的-为什么这次选形状",
+      "kind": "parent",
+      "text": "问她：圆形篮子和黄色篮子都像对的，为什么这次选形状？",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E5%9C%86%E5%BD%A2%E7%AF%AE%E5%AD%90%E5%92%8C%E9%BB%84%E8%89%B2%E7%AF%AE%E5%AD%90%E9%83%BD%E5%83%8F%E5%AF%B9%E7%9A%84-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%99%E6%AC%A1%E9%80%89%E5%BD%A2%E7%8A%B6.mp3"
     },
     {
       "id": "prompt-分类机要红色-也要圆形-选哪一张-两个条件都要满足-少一个都不行",
@@ -2195,16 +2267,16 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87%E5%90%8C%E6%97%B6%E6%BB%A1%E8%B6%B3%E7%BA%A2%E8%89%B2%E5%92%8C%E5%9C%86%E5%BD%A2.mp3"
     },
     {
-      "id": "retry-先看颜色-再看形状-两个都对才行",
+      "id": "retry-两个条件都要看-红色和圆形都对才行",
       "kind": "retry",
-      "text": "先看颜色，再看形状，两个都对才行。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E7%9C%8B%E9%A2%9C%E8%89%B2-%E5%86%8D%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E4%B8%A4%E4%B8%AA%E9%83%BD%E5%AF%B9%E6%89%8D%E8%A1%8C.mp3"
+      "text": "两个条件都要看：红色和圆形都对才行。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E4%B8%A4%E4%B8%AA%E6%9D%A1%E4%BB%B6%E9%83%BD%E8%A6%81%E7%9C%8B-%E7%BA%A2%E8%89%B2%E5%92%8C%E5%9C%86%E5%BD%A2%E9%83%BD%E5%AF%B9%E6%89%8D%E8%A1%8C.mp3"
     },
     {
-      "id": "parent-问她-它满足了哪两个条件-哪个选项只满足了一个",
+      "id": "parent-问她-哪一张两个条件都满足-哪一张只满足圆形-哪一张两个条件都不满足",
       "kind": "parent",
-      "text": "问她：它满足了哪两个条件？哪个选项只满足了一个？",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E5%AE%83%E6%BB%A1%E8%B6%B3%E4%BA%86%E5%93%AA%E4%B8%A4%E4%B8%AA%E6%9D%A1%E4%BB%B6-%E5%93%AA%E4%B8%AA%E9%80%89%E9%A1%B9%E5%8F%AA%E6%BB%A1%E8%B6%B3%E4%BA%86%E4%B8%80%E4%B8%AA.mp3"
+      "text": "问她：哪一张两个条件都满足？哪一张只满足圆形？哪一张两个条件都不满足？",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E5%93%AA%E4%B8%80%E5%BC%A0%E4%B8%A4%E4%B8%AA%E6%9D%A1%E4%BB%B6%E9%83%BD%E6%BB%A1%E8%B6%B3-%E5%93%AA%E4%B8%80%E5%BC%A0%E5%8F%AA%E6%BB%A1%E8%B6%B3%E5%9C%86%E5%BD%A2-%E5%93%AA%E4%B8%80%E5%BC%A0%E4%B8%A4%E4%B8%AA%E6%9D%A1%E4%BB%B6%E9%83%BD%E4%B8%8D%E6%BB%A1%E8%B6%B3.mp3"
     },
     {
       "id": "choice-蓝色方块",
@@ -2213,10 +2285,10 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E8%93%9D%E8%89%B2%E6%96%B9%E5%9D%97.mp3"
     },
     {
-      "id": "prompt-分类机要蓝色-也要方形-选哪一张-两个条件都要满足-少一个都不行",
+      "id": "prompt-分类机要蓝色-也要方形-哪一张两个条件都对-两个条件都要满足-少一个都不行",
       "kind": "prompt",
-      "text": "分类机要蓝色，也要方形。选哪一张？两个条件都要满足，少一个都不行。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%88%86%E7%B1%BB%E6%9C%BA%E8%A6%81%E8%93%9D%E8%89%B2-%E4%B9%9F%E8%A6%81%E6%96%B9%E5%BD%A2-%E9%80%89%E5%93%AA%E4%B8%80%E5%BC%A0-%E4%B8%A4%E4%B8%AA%E6%9D%A1%E4%BB%B6%E9%83%BD%E8%A6%81%E6%BB%A1%E8%B6%B3-%E5%B0%91%E4%B8%80%E4%B8%AA%E9%83%BD%E4%B8%8D%E8%A1%8C.mp3"
+      "text": "分类机要蓝色，也要方形。哪一张两个条件都对？两个条件都要满足，少一个都不行。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%88%86%E7%B1%BB%E6%9C%BA%E8%A6%81%E8%93%9D%E8%89%B2-%E4%B9%9F%E8%A6%81%E6%96%B9%E5%BD%A2-%E5%93%AA%E4%B8%80%E5%BC%A0%E4%B8%A4%E4%B8%AA%E6%9D%A1%E4%BB%B6%E9%83%BD%E5%AF%B9-%E4%B8%A4%E4%B8%AA%E6%9D%A1%E4%BB%B6%E9%83%BD%E8%A6%81%E6%BB%A1%E8%B6%B3-%E5%B0%91%E4%B8%80%E4%B8%AA%E9%83%BD%E4%B8%8D%E8%A1%8C.mp3"
     },
     {
       "id": "success-蓝色方块同时满足蓝色和方形",
@@ -2225,10 +2297,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%93%9D%E8%89%B2%E6%96%B9%E5%9D%97%E5%90%8C%E6%97%B6%E6%BB%A1%E8%B6%B3%E8%93%9D%E8%89%B2%E5%92%8C%E6%96%B9%E5%BD%A2.mp3"
     },
     {
-      "id": "prompt-分类机要黄色-也要圆形-选哪一张-两个条件都要满足-少一个都不行",
+      "id": "retry-两个条件都要看-蓝色和方形都对才行",
+      "kind": "retry",
+      "text": "两个条件都要看：蓝色和方形都对才行。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E4%B8%A4%E4%B8%AA%E6%9D%A1%E4%BB%B6%E9%83%BD%E8%A6%81%E7%9C%8B-%E8%93%9D%E8%89%B2%E5%92%8C%E6%96%B9%E5%BD%A2%E9%83%BD%E5%AF%B9%E6%89%8D%E8%A1%8C.mp3"
+    },
+    {
+      "id": "parent-问她-哪一张两个条件都满足-哪一张只满足颜色-哪一张两个条件都不满足",
+      "kind": "parent",
+      "text": "问她：哪一张两个条件都满足？哪一张只满足颜色？哪一张两个条件都不满足？",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E5%93%AA%E4%B8%80%E5%BC%A0%E4%B8%A4%E4%B8%AA%E6%9D%A1%E4%BB%B6%E9%83%BD%E6%BB%A1%E8%B6%B3-%E5%93%AA%E4%B8%80%E5%BC%A0%E5%8F%AA%E6%BB%A1%E8%B6%B3%E9%A2%9C%E8%89%B2-%E5%93%AA%E4%B8%80%E5%BC%A0%E4%B8%A4%E4%B8%AA%E6%9D%A1%E4%BB%B6%E9%83%BD%E4%B8%8D%E6%BB%A1%E8%B6%B3.mp3"
+    },
+    {
+      "id": "prompt-分类机要黄色-也要圆形-哪一张两个条件都对-两个条件都要满足-少一个都不行",
       "kind": "prompt",
-      "text": "分类机要黄色，也要圆形。选哪一张？两个条件都要满足，少一个都不行。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%88%86%E7%B1%BB%E6%9C%BA%E8%A6%81%E9%BB%84%E8%89%B2-%E4%B9%9F%E8%A6%81%E5%9C%86%E5%BD%A2-%E9%80%89%E5%93%AA%E4%B8%80%E5%BC%A0-%E4%B8%A4%E4%B8%AA%E6%9D%A1%E4%BB%B6%E9%83%BD%E8%A6%81%E6%BB%A1%E8%B6%B3-%E5%B0%91%E4%B8%80%E4%B8%AA%E9%83%BD%E4%B8%8D%E8%A1%8C.mp3"
+      "text": "分类机要黄色，也要圆形。哪一张两个条件都对？两个条件都要满足，少一个都不行。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%88%86%E7%B1%BB%E6%9C%BA%E8%A6%81%E9%BB%84%E8%89%B2-%E4%B9%9F%E8%A6%81%E5%9C%86%E5%BD%A2-%E5%93%AA%E4%B8%80%E5%BC%A0%E4%B8%A4%E4%B8%AA%E6%9D%A1%E4%BB%B6%E9%83%BD%E5%AF%B9-%E4%B8%A4%E4%B8%AA%E6%9D%A1%E4%BB%B6%E9%83%BD%E8%A6%81%E6%BB%A1%E8%B6%B3-%E5%B0%91%E4%B8%80%E4%B8%AA%E9%83%BD%E4%B8%8D%E8%A1%8C.mp3"
     },
     {
       "id": "success-黄色圆片同时满足黄色和圆形",
@@ -2237,16 +2321,10 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87%E5%90%8C%E6%97%B6%E6%BB%A1%E8%B6%B3%E9%BB%84%E8%89%B2%E5%92%8C%E5%9C%86%E5%BD%A2.mp3"
     },
     {
-      "id": "choice-空位",
-      "kind": "choice",
-      "text": "空位",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E7%A9%BA%E4%BD%8D.mp3"
-    },
-    {
-      "id": "object-空位",
-      "kind": "object",
-      "text": "空位",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E7%A9%BA%E4%BD%8D.mp3"
+      "id": "retry-两个条件都要看-黄色和圆形都对才行",
+      "kind": "retry",
+      "text": "两个条件都要看：黄色和圆形都对才行。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E4%B8%A4%E4%B8%AA%E6%9D%A1%E4%BB%B6%E9%83%BD%E8%A6%81%E7%9C%8B-%E9%BB%84%E8%89%B2%E5%92%8C%E5%9C%86%E5%BD%A2%E9%83%BD%E5%AF%B9%E6%89%8D%E8%A1%8C.mp3"
     },
     {
       "id": "game-title-停一下再行动",

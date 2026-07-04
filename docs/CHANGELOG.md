@@ -5,6 +5,14 @@ grouped by date.
 
 ## 2026-07-04
 
+- Added the `002-logic-house-quality` Spec Kit feature for stricter logic-house
+  curriculum quality gates.
+- Expanded the curriculum audit to check choice meaning, child-facing choice
+  wording, sorter rule explainability, and logic difficulty-note quality.
+- Reworked `logic-sorter-switch` prompts, feedback, retry guidance, and parent
+  prompts so color/shape rules and two-condition mistakes are explicit.
+- Exported updated voice lines and regenerated the local Edge voice manifest for
+  the rewritten sorter content.
 - Initialized GitHub Spec Kit with Codex skills integration.
 - Established the project constitution in `.specify/memory/constitution.md`.
 - Expanded `AGENTS.md` with project overview, source-of-truth rules,

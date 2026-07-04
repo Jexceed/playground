@@ -14,6 +14,9 @@ small enough to turn into a Spec Kit feature.
 - Add automated audit coverage for image source-file pairing where practical.
 - Review remaining text-only `VisualToken` fallbacks and decide which need
   raster assets.
+- Continue logic-house cluster reviews after `logic-sorter-switch`, prioritizing
+  text-heavy or abstract clusters such as same-kind detective, visual match,
+  difference detective, block height maps, and three-view blocks.
 
 ## P2
 
