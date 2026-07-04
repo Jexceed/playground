@@ -168,6 +168,9 @@ for (const game of games) {
     if (game.id === "logic-difference-detective") {
       checkDifferenceDetectiveRoundQuality(round, context);
     }
+    if (game.id === "logic-block-height-map") {
+      checkBlockHeightRoundQuality(round, context);
+    }
     if (!round.sceneImage && !round.sequence && !round.visualGroups && !round.grid && !round.matrix && !round.memory) {
       problems.push(`${context}: missing visual surface`);
     }
@@ -649,6 +652,98 @@ function ordinalPosition(index, length) {
   if (index === 0) return "第一个";
   if (index === length - 1) return "最后一个";
   return names[index] ?? `第${index + 1}个`;
+}
+
+function checkBlockHeightRoundQuality(round, context) {
+  if (/一共有几块/.test(round.prompt)) {
+    checkBlockHeightTotalRound(round, context);
+    return;
+  }
+  if (/更多/.test(round.prompt)) {
+    checkBlockHeightCompareRound(round, context);
+  }
+}
+
+function checkBlockHeightTotalRound(round, context) {
+  const cells = round.grid?.cells;
+  if (!isNumericCellGrid(cells)) {
+    problems.push(`${context}: block-height total round should show a numeric grid`);
+    return;
+  }
+  const total = sumNumericCells(cells);
+  if (round.answer !== String(total)) {
+    problems.push(`${context}: block-height total answer should equal the visible cell sum`);
+  }
+  if (!blockHeightSuccessNamesRows(round.success, cells, total)) {
+    problems.push(`${context}: block-height total success should name row totals and final total`);
+  }
+  if (!/数字/.test(round.retry) || !/合起来|相加|加/.test(round.retry) || !/不要只数格子/.test(round.retry)) {
+    problems.push(`${context}: block-height total retry should tell the child to add numbers, not count squares`);
+  }
+  if (!/按行|每一行|第一行/.test(round.parentPrompt) || !/一共|总数|几块/.test(round.parentPrompt)) {
+    problems.push(`${context}: block-height total parentPrompt should ask for row totals`);
+  }
+}
+
+function checkBlockHeightCompareRound(round, context) {
+  const leftGroup = round.visualGroups?.find((group) => group.label === "左图");
+  const rightGroup = round.visualGroups?.find((group) => group.label === "右图");
+  if (!leftGroup || !rightGroup || !leftGroup.items.every(isNumericText) || !rightGroup.items.every(isNumericText)) {
+    problems.push(`${context}: block-height compare round should show left and right numeric maps`);
+    return;
+  }
+  const leftTotal = sumNumericTexts(leftGroup.items);
+  const rightTotal = sumNumericTexts(rightGroup.items);
+  const expectedAnswer = leftTotal === rightTotal ? "一样多" : leftTotal > rightTotal ? "左图更多" : "右图更多";
+  if (round.answer !== expectedAnswer) {
+    problems.push(`${context}: block-height compare answer should match the greater map or same amount`);
+  }
+  const choiceLabels = new Set(round.choices.map((choice) => choice.label));
+  if (!["左图更多", "右图更多", "一样多"].every((label) => choiceLabels.has(label))) {
+    problems.push(`${context}: block-height compare choices should say left map more, right map more, and same amount`);
+  }
+  if (
+    !round.success.includes(`左图${leftTotal}`) ||
+    !round.success.includes(`右图${rightTotal}`) ||
+    !/更多|一样多/.test(round.success)
+  ) {
+    problems.push(`${context}: block-height compare success should name both totals and the comparison result`);
+  }
+  if (!/左图/.test(round.retry) || !/右图/.test(round.retry) || !/比较/.test(round.retry)) {
+    problems.push(`${context}: block-height compare retry should ask for left total, right total, then comparison`);
+  }
+  if (!/左图/.test(round.parentPrompt) || !/右图/.test(round.parentPrompt) || !/比较|谁更多|一样多/.test(round.parentPrompt)) {
+    problems.push(`${context}: block-height compare parentPrompt should ask for both totals and the comparison`);
+  }
+}
+
+function blockHeightSuccessNamesRows(text, cells, total) {
+  if (!text.includes(`一共${total}`) && !text.includes(`一共 ${total}`)) return false;
+  return rowTotals(cells).every((rowTotal, index) => text.includes(`${rowLabel(index)}${rowTotal}`) || text.includes(`${rowLabel(index)} ${rowTotal}`));
+}
+
+function rowTotals(cells) {
+  return cells.map((row) => sumNumericTexts(row));
+}
+
+function rowLabel(index) {
+  return ["第一行", "第二行", "第三行", "第四行"][index] ?? `第${index + 1}行`;
+}
+
+function isNumericCellGrid(cells) {
+  return Array.isArray(cells) && cells.length > 0 && cells.every((row) => Array.isArray(row) && row.length > 0 && row.every(isNumericText));
+}
+
+function sumNumericCells(cells) {
+  return cells.reduce((total, row) => total + sumNumericTexts(row), 0);
+}
+
+function sumNumericTexts(values) {
+  return values.reduce((total, value) => total + Number(value), 0);
+}
+
+function isNumericText(value) {
+  return typeof value === "string" && /^\d+$/.test(value);
 }
 
 function checkLogicDifficultyNote(round, context) {

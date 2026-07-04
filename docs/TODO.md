@@ -16,8 +16,8 @@ small enough to turn into a Spec Kit feature.
   raster assets.
 - Continue logic-house cluster reviews after `logic-sorter-switch`,
   `logic-same-kind-detective`, `logic-visual-match`, and
-  `logic-difference-detective`, prioritizing abstract spatial clusters such as
-  block height maps and three-view blocks.
+  `logic-difference-detective`, and `logic-block-height-map`, prioritizing the
+  remaining abstract spatial cluster `logic-three-view-blocks`.
 
 ## P2
 

@@ -3460,15 +3460,15 @@ function makeMirrorFoldRounds(): RoundInput[] {
 
 function makeBlockHeightMapRounds(): RoundInput[] {
   const cases = [
-    { cells: [["1", "1"], ["1", "0"]], answer: 3, explain: "1 加 1 加 1，再加 0，一共 3 块。" },
-    { cells: [["2", "1"], ["1", "0"]], answer: 4, explain: "这一张是 2、1、1、0，合起来 4 块。" },
-    { cells: [["2", "2"], ["1", "1"]], answer: 6, explain: "上面两列各 2 块，下面两列各 1 块，一共 6 块。" },
-    { cells: [["3", "1"], ["0", "2"]], answer: 6, explain: "3 块、1 块、0 块、2 块，合起来 6 块。" },
+    { cells: [["1", "1"], ["1", "0"]], answer: 3, explain: "第一行 2 块，第二行 1 块，一共 3 块。" },
+    { cells: [["2", "1"], ["1", "0"]], answer: 4, explain: "第一行 3 块，第二行 1 块，一共 4 块。" },
+    { cells: [["2", "2"], ["1", "1"]], answer: 6, explain: "第一行 4 块，第二行 2 块，一共 6 块。" },
+    { cells: [["3", "1"], ["0", "2"]], answer: 6, explain: "第一行 4 块，第二行 2 块，一共 6 块。" },
     { cells: [["1", "2", "1"], ["0", "1", "0"]], answer: 5, explain: "第一行 4 块，第二行 1 块，一共 5 块。" },
-    { cells: [["2", "1", "2"], ["1", "0", "1"]], answer: 7, explain: "2、1、2、1、0、1 合起来是 7 块。" },
-    { cells: [["3", "0", "1"], ["1", "2", "0"]], answer: 7, explain: "3、0、1、1、2、0 合起来是 7 块。" },
+    { cells: [["2", "1", "2"], ["1", "0", "1"]], answer: 7, explain: "第一行 5 块，第二行 2 块，一共 7 块。" },
+    { cells: [["3", "0", "1"], ["1", "2", "0"]], answer: 7, explain: "第一行 4 块，第二行 3 块，一共 7 块。" },
     { cells: [["1", "2", "1"], ["2", "0", "2"], ["1", "0", "1"]], answer: 10, explain: "按行数：第一行 4 块，第二行 4 块，第三行 2 块，一共 10 块。" },
-    { cells: [["2", "2", "0"], ["1", "3", "1"], ["0", "1", "0"]], answer: 10, explain: "按行数：4 块、5 块、1 块，一共 10 块。" },
+    { cells: [["2", "2", "0"], ["1", "3", "1"], ["0", "1", "0"]], answer: 10, explain: "按行数：第一行 4 块，第二行 5 块，第三行 1 块，一共 10 块。" },
   ].map((item, index) => {
     const rows = ["A", "B", "C"].slice(0, item.cells.length);
     const columns = ["1", "2", "3"].slice(0, item.cells[0].length);
@@ -3491,19 +3491,19 @@ function makeBlockHeightMapRounds(): RoundInput[] {
       left: [["2", "1"], ["1", "0"]],
       right: [["1", "1"], ["1", "1"]],
       answer: "一样多",
-      success: "左边是 4 块，右边也是 4 块，所以一样多。",
+      success: "左图4块，右图4块，所以一样多。",
     },
     {
       left: [["3", "1"], ["0", "1"]],
       right: [["2", "2"], ["1", "1"]],
-      answer: "右边",
-      success: "左边 5 块，右边 6 块，右边更多。",
+      answer: "右图更多",
+      success: "左图5块，右图6块，所以右图更多。",
     },
     {
       left: [["2", "2"], ["2", "0"]],
       right: [["3", "1"], ["0", "1"]],
-      answer: "左边",
-      success: "左边 6 块，右边 5 块，左边更多。",
+      answer: "左图更多",
+      success: "左图6块，右图5块，所以左图更多。",
     },
   ].map((item) => ({
     level: "L6" as AbilityLevel,
@@ -3513,11 +3513,11 @@ function makeBlockHeightMapRounds(): RoundInput[] {
       { label: "左图", items: item.left.flat() },
       { label: "右图", items: item.right.flat() },
     ],
-    choices: choiceSet(["左边", "右边", "一样多"]),
+    choices: choiceSet(["左图更多", "右图更多", "一样多"]),
     answer: item.answer,
     success: item.success,
-    retry: "先算左图有几块，再算右图有几块。",
-    parentPrompt: "问她：左边总数是多少？右边总数是多少？",
+    retry: "先算左图有几块，再算右图有几块，最后比较谁更多。",
+    parentPrompt: "问她：左图总数是多少？右图总数是多少？比较以后谁更多，还是一样多？",
     abilityTags: ["立体计数", "比较推理"],
   }));
 

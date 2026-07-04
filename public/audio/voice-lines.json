@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-04T14:39:17.344Z",
+  "generatedAt": "2026-07-04T14:48:07.078Z",
   "recommendedVoice": "warm adult female Mandarin, smiling, preschool teacher, 0.85 speed, crisp consonants",
-  "lineCount": 1538,
+  "lineCount": 1539,
   "lines": [
     {
       "id": "game-title-数一数",
@@ -14323,10 +14323,7 @@
         "logic-rotation-direction/logic-rotation-direction-11",
         "logic-rotation-direction/logic-rotation-direction-12",
         "logic-balance-swap/logic-balance-swap-9",
-        "logic-balance-swap/logic-balance-swap-10",
-        "logic-block-height-map/logic-block-height-map-10",
-        "logic-block-height-map/logic-block-height-map-11",
-        "logic-block-height-map/logic-block-height-map-12"
+        "logic-balance-swap/logic-balance-swap-10"
       ]
     },
     {
@@ -14350,10 +14347,7 @@
         "logic-rotation-direction/logic-rotation-direction-11",
         "logic-rotation-direction/logic-rotation-direction-12",
         "logic-balance-swap/logic-balance-swap-9",
-        "logic-balance-swap/logic-balance-swap-10",
-        "logic-block-height-map/logic-block-height-map-10",
-        "logic-block-height-map/logic-block-height-map-11",
-        "logic-block-height-map/logic-block-height-map-12"
+        "logic-balance-swap/logic-balance-swap-10"
       ]
     },
     {
@@ -16909,9 +16903,9 @@
       ]
     },
     {
-      "id": "success-1-加-1-加-1-再加-0-一共-3-块",
+      "id": "success-第一行-2-块-第二行-1-块-一共-3-块",
       "kind": "success",
-      "text": "1 加 1 加 1，再加 0，一共 3 块。",
+      "text": "第一行 2 块，第二行 1 块，一共 3 块。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-block-height-map/logic-block-height-map-1"
@@ -16952,29 +16946,21 @@
       ]
     },
     {
-      "id": "success-这一张是-2-1-1-0-合起来-4-块",
+      "id": "success-第一行-3-块-第二行-1-块-一共-4-块",
       "kind": "success",
-      "text": "这一张是 2、1、1、0，合起来 4 块。",
+      "text": "第一行 3 块，第二行 1 块，一共 4 块。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-block-height-map/logic-block-height-map-2"
       ]
     },
     {
-      "id": "success-上面两列各-2-块-下面两列各-1-块-一共-6-块",
+      "id": "success-第一行-4-块-第二行-2-块-一共-6-块",
       "kind": "success",
-      "text": "上面两列各 2 块，下面两列各 1 块，一共 6 块。",
+      "text": "第一行 4 块，第二行 2 块，一共 6 块。",
       "tone": "warm, delighted, clear",
       "contexts": [
-        "logic-block-height-map/logic-block-height-map-3"
-      ]
-    },
-    {
-      "id": "success-3-块-1-块-0-块-2-块-合起来-6-块",
-      "kind": "success",
-      "text": "3 块、1 块、0 块、2 块，合起来 6 块。",
-      "tone": "warm, delighted, clear",
-      "contexts": [
+        "logic-block-height-map/logic-block-height-map-3",
         "logic-block-height-map/logic-block-height-map-4"
       ]
     },
@@ -16988,18 +16974,18 @@
       ]
     },
     {
-      "id": "success-2-1-2-1-0-1-合起来是-7-块",
+      "id": "success-第一行-5-块-第二行-2-块-一共-7-块",
       "kind": "success",
-      "text": "2、1、2、1、0、1 合起来是 7 块。",
+      "text": "第一行 5 块，第二行 2 块，一共 7 块。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-block-height-map/logic-block-height-map-6"
       ]
     },
     {
-      "id": "success-3-0-1-1-2-0-合起来是-7-块",
+      "id": "success-第一行-4-块-第二行-3-块-一共-7-块",
       "kind": "success",
-      "text": "3、0、1、1、2、0 合起来是 7 块。",
+      "text": "第一行 4 块，第二行 3 块，一共 7 块。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-block-height-map/logic-block-height-map-7"
@@ -17015,9 +17001,9 @@
       ]
     },
     {
-      "id": "success-按行数-4-块-5-块-1-块-一共-10-块",
+      "id": "success-按行数-第一行-4-块-第二行-5-块-第三行-1-块-一共-10-块",
       "kind": "success",
-      "text": "按行数：4 块、5 块、1 块，一共 10 块。",
+      "text": "按行数：第一行 4 块，第二行 5 块，第三行 1 块，一共 10 块。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-block-height-map/logic-block-height-map-9"
@@ -17035,18 +17021,18 @@
       ]
     },
     {
-      "id": "success-左边是-4-块-右边也是-4-块-所以一样多",
+      "id": "success-左图4块-右图4块-所以一样多",
       "kind": "success",
-      "text": "左边是 4 块，右边也是 4 块，所以一样多。",
+      "text": "左图4块，右图4块，所以一样多。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-block-height-map/logic-block-height-map-10"
       ]
     },
     {
-      "id": "retry-先算左图有几块-再算右图有几块",
+      "id": "retry-先算左图有几块-再算右图有几块-最后比较谁更多",
       "kind": "retry",
-      "text": "先算左图有几块，再算右图有几块。",
+      "text": "先算左图有几块，再算右图有几块，最后比较谁更多。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
         "logic-block-height-map/logic-block-height-map-10",
@@ -17055,9 +17041,9 @@
       ]
     },
     {
-      "id": "parent-问她-左边总数是多少-右边总数是多少",
+      "id": "parent-问她-左图总数是多少-右图总数是多少-比较以后谁更多-还是一样多",
       "kind": "parent",
-      "text": "问她：左边总数是多少？右边总数是多少？",
+      "text": "问她：左图总数是多少？右图总数是多少？比较以后谁更多，还是一样多？",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-block-height-map/logic-block-height-map-10",
@@ -17066,18 +17052,40 @@
       ]
     },
     {
-      "id": "success-左边-5-块-右边-6-块-右边更多",
+      "id": "choice-左图更多",
+      "kind": "choice",
+      "text": "左图更多",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-block-height-map/logic-block-height-map-10",
+        "logic-block-height-map/logic-block-height-map-11",
+        "logic-block-height-map/logic-block-height-map-12"
+      ]
+    },
+    {
+      "id": "choice-右图更多",
+      "kind": "choice",
+      "text": "右图更多",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-block-height-map/logic-block-height-map-10",
+        "logic-block-height-map/logic-block-height-map-11",
+        "logic-block-height-map/logic-block-height-map-12"
+      ]
+    },
+    {
+      "id": "success-左图5块-右图6块-所以右图更多",
       "kind": "success",
-      "text": "左边 5 块，右边 6 块，右边更多。",
+      "text": "左图5块，右图6块，所以右图更多。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-block-height-map/logic-block-height-map-11"
       ]
     },
     {
-      "id": "success-左边-6-块-右边-5-块-左边更多",
+      "id": "success-左图6块-右图5块-所以左图更多",
       "kind": "success",
-      "text": "左边 6 块，右边 5 块，左边更多。",
+      "text": "左图6块，右图5块，所以左图更多。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-block-height-map/logic-block-height-map-12"

@@ -39,6 +39,15 @@ grouped by date.
   visible comparison evidence.
 - Exported updated voice lines and regenerated the local Edge voice manifest for
   the rewritten difference-detective content.
+- Added the `006-block-height-quality` Spec Kit feature for top-view block
+  height map counting and comparison quality.
+- Expanded the curriculum audit with block-height checks for visible sums, row
+  totals, explicit compare labels, and left/right total explanations.
+- Reworked `logic-block-height-map` success feedback, compare choices, retry
+  guidance, and parent prompts so rows and left/right totals are explained
+  before selecting a total or comparison.
+- Exported updated voice lines and regenerated the local Edge voice manifest for
+  the rewritten block-height content.
 - Initialized GitHub Spec Kit with Codex skills integration.
 - Established the project constitution in `.specify/memory/constitution.md`.
 - Expanded `AGENTS.md` with project overview, source-of-truth rules,
