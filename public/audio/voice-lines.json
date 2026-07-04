@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-04T15:35:47.074Z",
+  "generatedAt": "2026-07-04T15:45:53.379Z",
   "recommendedVoice": "warm adult female Mandarin, smiling, preschool teacher, 0.85 speed, crisp consonants",
-  "lineCount": 1572,
+  "lineCount": 1582,
   "lines": [
     {
       "id": "game-title-数一数",
@@ -13755,9 +13755,9 @@
       ]
     },
     {
-      "id": "prompt-待补位置这一格应该放什么-先横着看一行-再竖着检查一下",
+      "id": "prompt-空格里应该放什么-先读完整的第一行-再用同样规则补第三行",
       "kind": "prompt",
-      "text": "待补位置这一格应该放什么？先横着看一行，再竖着检查一下。",
+      "text": "空格里应该放什么？先读完整的第一行，再用同样规则补第三行。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-matrix-puzzle/logic-matrix-puzzle-1",
@@ -13769,40 +13769,30 @@
       ]
     },
     {
-      "id": "success-每一行的最后一格-是前两格合在一起",
+      "id": "success-第一行是-和-合起来变成-第三行是-和-所以空格补",
       "kind": "success",
-      "text": "每一行的最后一格，是前两格合在一起。",
+      "text": "第一行是 🔴 和 🔵，合起来变成 🔴🔵；第三行是 🟣 和 🔴，所以空格补 🟣🔴。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-matrix-puzzle/logic-matrix-puzzle-1"
       ]
     },
     {
-      "id": "retry-先看每一行前两格和最后一格有什么关系",
+      "id": "retry-先读第一行这个完整行-前两个合成最后一个-再看第三行缺的空格",
       "kind": "retry",
-      "text": "先看每一行前两格和最后一格有什么关系。",
+      "text": "先读第一行这个完整行：前两个合成最后一个；再看第三行缺的空格。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
-        "logic-matrix-puzzle/logic-matrix-puzzle-1",
-        "logic-matrix-puzzle/logic-matrix-puzzle-2",
-        "logic-matrix-puzzle/logic-matrix-puzzle-3",
-        "logic-matrix-puzzle/logic-matrix-puzzle-4",
-        "logic-matrix-puzzle/logic-matrix-puzzle-5",
-        "logic-matrix-puzzle/logic-matrix-puzzle-6"
+        "logic-matrix-puzzle/logic-matrix-puzzle-1"
       ]
     },
     {
-      "id": "parent-请她说-这一行是怎么变出来的",
+      "id": "parent-请她说第一行怎么合起来-再说第三行-和-用同一个规则为什么补",
       "kind": "parent",
-      "text": "请她说：这一行是怎么变出来的？",
+      "text": "请她说第一行怎么合起来，再说第三行 🟣 和 🔴 用同一个规则为什么补 🟣🔴。",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-matrix-puzzle/logic-matrix-puzzle-1",
-        "logic-matrix-puzzle/logic-matrix-puzzle-2",
-        "logic-matrix-puzzle/logic-matrix-puzzle-3",
-        "logic-matrix-puzzle/logic-matrix-puzzle-4",
-        "logic-matrix-puzzle/logic-matrix-puzzle-5",
-        "logic-matrix-puzzle/logic-matrix-puzzle-6"
+        "logic-matrix-puzzle/logic-matrix-puzzle-1"
       ]
     },
     {
@@ -13855,19 +13845,55 @@
       ]
     },
     {
-      "id": "success-每一行都是第一个-第二个-再回到第一个",
+      "id": "success-第一行是-第一个又回来-第三行是-所以空格补",
       "kind": "success",
-      "text": "每一行都是第一个、第二个、再回到第一个。",
+      "text": "第一行是 🍎、🍊、🍎，第一个又回来；第三行是 🔴、🔵，所以空格补 🔴。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-matrix-puzzle/logic-matrix-puzzle-2"
       ]
     },
     {
-      "id": "success-每一行都是大-小-大",
+      "id": "retry-先读第一行这个完整行-第一-第二-再回到第一-再看第三行缺的空格",
+      "kind": "retry",
+      "text": "先读第一行这个完整行：第一、第二、再回到第一；再看第三行缺的空格。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-matrix-puzzle/logic-matrix-puzzle-2"
+      ]
+    },
+    {
+      "id": "parent-请她说第一行怎么回到第一个-再说第三行用同一个规则为什么补",
+      "kind": "parent",
+      "text": "请她说第一行怎么回到第一个，再说第三行用同一个规则为什么补 🔴。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-matrix-puzzle/logic-matrix-puzzle-2"
+      ]
+    },
+    {
+      "id": "success-第一行是-大圆-小圆-大圆-大的又回来-第三行是-大方块-小方块-所以空格补-大方块",
       "kind": "success",
-      "text": "每一行都是大、小、大。",
+      "text": "第一行是 大圆、小圆、大圆，大的又回来；第三行是 大方块、小方块，所以空格补 大方块。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-matrix-puzzle/logic-matrix-puzzle-3"
+      ]
+    },
+    {
+      "id": "retry-先读第一行这个完整行-大-小-再回到大-再看第三行缺的空格",
+      "kind": "retry",
+      "text": "先读第一行这个完整行：大、小、再回到大；再看第三行缺的空格。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-matrix-puzzle/logic-matrix-puzzle-3"
+      ]
+    },
+    {
+      "id": "parent-请她说第一行怎么回到大的-再说第三行用同一个规则为什么补-大方块",
+      "kind": "parent",
+      "text": "请她说第一行怎么回到大的，再说第三行用同一个规则为什么补 大方块。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-matrix-puzzle/logic-matrix-puzzle-3"
       ]
@@ -13937,19 +13963,55 @@
       ]
     },
     {
-      "id": "success-每一行都轮流换位置-红黄绿都要出现一次",
+      "id": "success-第一行有-三个都出现-第三行已经有-和-所以空格补",
       "kind": "success",
-      "text": "每一行都轮流换位置，红黄绿都要出现一次。",
+      "text": "第一行有 🔴、🟡、🟢 三个都出现；第三行已经有 🟢 和 🔴，所以空格补 🟡。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-matrix-puzzle/logic-matrix-puzzle-4"
       ]
     },
     {
-      "id": "success-中间数字是几-右边就有几个一样的东西",
+      "id": "retry-先看第一行这个完整行有哪些颜色-再看第三行缺的空格少了哪一个",
+      "kind": "retry",
+      "text": "先看第一行这个完整行有哪些颜色，再看第三行缺的空格少了哪一个。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-matrix-puzzle/logic-matrix-puzzle-4"
+      ]
+    },
+    {
+      "id": "parent-请她说第一行有哪些-再说第三行用同一个规则为什么补",
+      "kind": "parent",
+      "text": "请她说第一行有哪些，再说第三行用同一个规则为什么补 🟡。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-matrix-puzzle/logic-matrix-puzzle-4"
+      ]
+    },
+    {
+      "id": "success-第一行是-1-数字-1-就放-1-个-第三行是-3-所以空格补",
       "kind": "success",
-      "text": "中间数字是几，右边就有几个一样的东西。",
+      "text": "第一行是 🍎、1、🍎，数字 1 就放 1 个；第三行是 🍓、3，所以空格补 🍓🍓🍓。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-matrix-puzzle/logic-matrix-puzzle-5"
+      ]
+    },
+    {
+      "id": "retry-先读第一行这个完整行-数字是几就有几个-再看第三行缺的空格",
+      "kind": "retry",
+      "text": "先读第一行这个完整行：数字是几就有几个；再看第三行缺的空格。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-matrix-puzzle/logic-matrix-puzzle-5"
+      ]
+    },
+    {
+      "id": "parent-请她说第一行数字-1-怎么变成-1-个苹果-再说第三行用同一个规则为什么补",
+      "kind": "parent",
+      "text": "请她说第一行数字 1 怎么变成 1 个苹果，再说第三行用同一个规则为什么补 🍓🍓🍓。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-matrix-puzzle/logic-matrix-puzzle-5"
       ]
@@ -13995,10 +14057,28 @@
       ]
     },
     {
-      "id": "success-每一行把前两个线索连成一个小故事",
+      "id": "success-第一行是-小鸟-和-天空-合成-小鸟天空-第三行是-小狗-和-家-所以空格补-小狗家",
       "kind": "success",
-      "text": "每一行把前两个线索连成一个小故事。",
+      "text": "第一行是 小鸟 和 天空，合成 小鸟天空；第三行是 小狗 和 家，所以空格补 小狗家。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-matrix-puzzle/logic-matrix-puzzle-6"
+      ]
+    },
+    {
+      "id": "retry-先读第一行这个完整行-前两个词连成最后一个-再看第三行缺的空格",
+      "kind": "retry",
+      "text": "先读第一行这个完整行：前两个词连成最后一个；再看第三行缺的空格。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-matrix-puzzle/logic-matrix-puzzle-6"
+      ]
+    },
+    {
+      "id": "parent-请她说第一行怎么连成小故事-再说第三行-小狗-和-家-用同一个规则为什么补-小狗家",
+      "kind": "parent",
+      "text": "请她说第一行怎么连成小故事，再说第三行 小狗 和 家 用同一个规则为什么补 小狗家。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-matrix-puzzle/logic-matrix-puzzle-6"
       ]

@@ -180,6 +180,9 @@ for (const game of games) {
     if (game.id === "logic-address-map") {
       checkAddressMapRoundQuality(round, context);
     }
+    if (game.id === "logic-matrix-puzzle") {
+      checkMatrixPuzzleRoundQuality(round, context);
+    }
     if (!round.sceneImage && !round.sequence && !round.visualGroups && !round.grid && !round.matrix && !round.memory) {
       problems.push(`${context}: missing visual surface`);
     }
@@ -1165,6 +1168,117 @@ function mentionsRowColumn(text, row, column) {
 
 function escapeRegex(value) {
   return String(value).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function checkMatrixPuzzleRoundQuality(round, context) {
+  const cells = round.matrix?.cells;
+  if (!isMatrixPuzzleGrid(cells)) {
+    problems.push(`${context}: matrix puzzle should show a matrix with one missing cell`);
+    return;
+  }
+
+  const rule = deriveMatrixPuzzleRule(cells);
+  if (!rule) {
+    problems.push(`${context}: matrix puzzle should use a recognized visible row rule`);
+    return;
+  }
+
+  if (round.answer !== rule.answer) {
+    problems.push(`${context}: matrix puzzle answer should equal the derived missing cell`);
+  }
+
+  const matchingChoices = round.choices.filter((choice) => choice.value === rule.answer);
+  if (matchingChoices.length !== 1) {
+    problems.push(`${context}: matrix puzzle choices should include the derived answer exactly once`);
+  }
+
+  if (!matrixPuzzleSuccessNamesRows(round.success, rule)) {
+    problems.push(`${context}: matrix puzzle success should name an example row, missing row, and answer`);
+  }
+  if (!/第一行|完整行|前两行|例子/.test(round.retry) || !/第三行|缺|空格|待补/.test(round.retry)) {
+    problems.push(`${context}: matrix puzzle retry should ask for a complete example row before the missing row`);
+  }
+  if (!/第一行|完整行|例子/.test(round.parentPrompt) || !/第三行|缺|空格|待补/.test(round.parentPrompt) || !/规则|为什么|怎么/.test(round.parentPrompt)) {
+    problems.push(`${context}: matrix puzzle parentPrompt should ask the child to explain the same rule across rows`);
+  }
+}
+
+function isMatrixPuzzleGrid(cells) {
+  if (!Array.isArray(cells) || cells.length < 3 || !hasRectangularRows(cells)) return false;
+  if (!cells.every((row) => row.length === 3 && row.every(isNonBlankString))) return false;
+  return cells.flat().filter((cell) => cell === "?").length === 1;
+}
+
+function deriveMatrixPuzzleRule(cells) {
+  const missingRowIndex = cells.findIndex((row) => row.includes("?"));
+  const missingColumnIndex = cells[missingRowIndex]?.indexOf("?") ?? -1;
+  if (missingRowIndex === -1 || missingColumnIndex !== 2) return null;
+
+  const completeRows = cells.filter((row) => !row.includes("?"));
+  const missingRow = cells[missingRowIndex];
+  if (completeRows.length < 2) return null;
+
+  const countRule = deriveCountQuantityRule(completeRows, missingRow);
+  if (countRule) return countRule;
+
+  const combineRule = deriveRowCombineRule(completeRows, missingRow);
+  if (combineRule) return combineRule;
+
+  const repeatRule = deriveFirstSecondFirstRule(completeRows, missingRow);
+  if (repeatRule) return repeatRule;
+
+  const oneOfEachRule = deriveOneOfEachRule(completeRows, missingRow);
+  if (oneOfEachRule) return oneOfEachRule;
+
+  return null;
+}
+
+function deriveRowCombineRule(completeRows, missingRow) {
+  if (!completeRows.every((row) => row[2] === `${row[0]}${row[1]}`)) return null;
+  return matrixRuleResult("combine", `${missingRow[0]}${missingRow[1]}`, completeRows[0], missingRow);
+}
+
+function deriveFirstSecondFirstRule(completeRows, missingRow) {
+  if (!completeRows.every((row) => row[2] === row[0] && row[0] !== row[1])) return null;
+  return matrixRuleResult("first-second-first", missingRow[0], completeRows[0], missingRow);
+}
+
+function deriveCountQuantityRule(completeRows, missingRow) {
+  if (!completeRows.every((row) => isNumericText(row[1]) && row[2] === row[0].repeat(Number(row[1])))) return null;
+  if (!isNumericText(missingRow[1])) return null;
+  return matrixRuleResult("count-quantity", missingRow[0].repeat(Number(missingRow[1])), completeRows[0], missingRow);
+}
+
+function deriveOneOfEachRule(completeRows, missingRow) {
+  const ruleSet = sortedRowSignature(completeRows[0]);
+  if (!completeRows.every((row) => new Set(row).size === row.length && sortedRowSignature(row) === ruleSet)) return null;
+  const candidates = completeRows[0].filter((item) => !missingRow.includes(item));
+  if (candidates.length !== 1) return null;
+  return matrixRuleResult("one-of-each", candidates[0], completeRows[0], missingRow);
+}
+
+function matrixRuleResult(type, answer, exampleRow, missingRow) {
+  return {
+    type,
+    answer,
+    exampleRow,
+    missingRow: [...missingRow.slice(0, 2), answer],
+    missingKnownItems: missingRow.filter((cell) => cell !== "?"),
+  };
+}
+
+function sortedRowSignature(row) {
+  return [...row].sort().join("\u0000");
+}
+
+function matrixPuzzleSuccessNamesRows(text, rule) {
+  return (
+    text.includes(rule.answer) &&
+    allItemsMentioned(text, rule.exampleRow) &&
+    allItemsMentioned(text, rule.missingKnownItems) &&
+    /第一行|完整行|例子/.test(text) &&
+    /第三行|缺|空格|待补|所以补/.test(text)
+  );
 }
 
 function checkLogicDifficultyNote(round, context) {

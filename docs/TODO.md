@@ -18,8 +18,9 @@ small enough to turn into a Spec Kit feature.
   `logic-same-kind-detective`, `logic-visual-match`,
   `logic-difference-detective`, `logic-block-height-map`, and
   `logic-three-view-blocks`, `logic-route-steps`, and
-  `logic-address-map`; add targeted audits for any remaining cluster whose
-  picture, text, audio, option quality, or parent explanation is still weak.
+  `logic-address-map`, and `logic-matrix-puzzle`; add targeted audits for any
+  remaining cluster whose picture, text, audio, option quality, or parent
+  explanation is still weak.
 
 ## P2
 

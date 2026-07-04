@@ -78,6 +78,15 @@ grouped by date.
   address where relevant.
 - Exported updated voice lines and regenerated the local Edge voice manifest for
   the rewritten address-map content.
+- Added the `010-matrix-puzzle-quality` Spec Kit feature for matrix row-rule
+  reasoning quality.
+- Expanded the curriculum audit with matrix-puzzle checks that derive missing
+  cells from visible row rules and require example-row explanation text.
+- Reworked `logic-matrix-puzzle` prompts, success feedback, retry guidance, and
+  parent prompts so each round names a complete example row, the missing row,
+  and the final answer.
+- Exported updated voice lines and regenerated the local Edge voice manifest for
+  the rewritten matrix-puzzle content.
 - Initialized GitHub Spec Kit with Codex skills integration.
 - Established the project constitution in `.specify/memory/constitution.md`.
 - Expanded `AGENTS.md` with project overview, source-of-truth rules,

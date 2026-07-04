@@ -2641,6 +2641,9 @@ function makeMatrixPuzzleRounds(): RoundInput[] {
       choices: ["🟣🔴", "🔴🔵", "🟡🟢"],
       answer: "🟣🔴",
       rule: "每一行的最后一格，是前两格合在一起。",
+      success: "第一行是 🔴 和 🔵，合起来变成 🔴🔵；第三行是 🟣 和 🔴，所以空格补 🟣🔴。",
+      retry: "先读第一行这个完整行：前两个合成最后一个；再看第三行缺的空格。",
+      parentPrompt: "请她说第一行怎么合起来，再说第三行 🟣 和 🔴 用同一个规则为什么补 🟣🔴。",
       level: "L5",
     },
     {
@@ -2648,6 +2651,9 @@ function makeMatrixPuzzleRounds(): RoundInput[] {
       choices: ["🔴", "🔵", "🟡"],
       answer: "🔴",
       rule: "每一行都是第一个、第二个、再回到第一个。",
+      success: "第一行是 🍎、🍊、🍎，第一个又回来；第三行是 🔴、🔵，所以空格补 🔴。",
+      retry: "先读第一行这个完整行：第一、第二、再回到第一；再看第三行缺的空格。",
+      parentPrompt: "请她说第一行怎么回到第一个，再说第三行用同一个规则为什么补 🔴。",
       level: "L5",
     },
     {
@@ -2655,6 +2661,9 @@ function makeMatrixPuzzleRounds(): RoundInput[] {
       choices: ["大方块", "小方块", "小星"],
       answer: "大方块",
       rule: "每一行都是大、小、大。",
+      success: "第一行是 大圆、小圆、大圆，大的又回来；第三行是 大方块、小方块，所以空格补 大方块。",
+      retry: "先读第一行这个完整行：大、小、再回到大；再看第三行缺的空格。",
+      parentPrompt: "请她说第一行怎么回到大的，再说第三行用同一个规则为什么补 大方块。",
       level: "L5",
     },
     {
@@ -2662,6 +2671,9 @@ function makeMatrixPuzzleRounds(): RoundInput[] {
       choices: ["🟡", "🟢", "🔵"],
       answer: "🟡",
       rule: "每一行都轮流换位置，红黄绿都要出现一次。",
+      success: "第一行有 🔴、🟡、🟢 三个都出现；第三行已经有 🟢 和 🔴，所以空格补 🟡。",
+      retry: "先看第一行这个完整行有哪些颜色，再看第三行缺的空格少了哪一个。",
+      parentPrompt: "请她说第一行有哪些，再说第三行用同一个规则为什么补 🟡。",
       level: "L6",
     },
     {
@@ -2669,6 +2681,9 @@ function makeMatrixPuzzleRounds(): RoundInput[] {
       choices: ["🍓🍓🍓", "🍓🍓", "🍊🍊🍊"],
       answer: "🍓🍓🍓",
       rule: "中间数字是几，右边就有几个一样的东西。",
+      success: "第一行是 🍎、1、🍎，数字 1 就放 1 个；第三行是 🍓、3，所以空格补 🍓🍓🍓。",
+      retry: "先读第一行这个完整行：数字是几就有几个；再看第三行缺的空格。",
+      parentPrompt: "请她说第一行数字 1 怎么变成 1 个苹果，再说第三行用同一个规则为什么补 🍓🍓🍓。",
       level: "L6",
     },
     {
@@ -2676,21 +2691,24 @@ function makeMatrixPuzzleRounds(): RoundInput[] {
       choices: ["小狗家", "小河小狗", "天空家"],
       answer: "小狗家",
       rule: "每一行把前两个线索连成一个小故事。",
+      success: "第一行是 小鸟 和 天空，合成 小鸟天空；第三行是 小狗 和 家，所以空格补 小狗家。",
+      retry: "先读第一行这个完整行：前两个词连成最后一个；再看第三行缺的空格。",
+      parentPrompt: "请她说第一行怎么连成小故事，再说第三行 小狗 和 家 用同一个规则为什么补 小狗家。",
       level: "L6",
     },
   ] as const;
 
   return repeatTo(cases.map((item) => ({
     level: item.level,
-    prompt: "待补位置这一格应该放什么？",
-    instruction: "先横着看一行，再竖着检查一下。",
+    prompt: "空格里应该放什么？",
+    instruction: "先读完整的第一行，再用同样规则补第三行。",
     sceneImage,
     matrix: { cells: item.cells.map((row) => [...row]) },
     choices: choiceSet(item.choices),
     answer: item.answer,
-    success: item.rule,
-    retry: "先看每一行前两格和最后一格有什么关系。",
-    parentPrompt: "请她说：这一行是怎么变出来的？",
+    success: item.success,
+    retry: item.retry,
+    parentPrompt: item.parentPrompt,
     abilityTags: ["二维规律", item.rule.includes("合") || item.rule.includes("连") ? "图形组合" : "多特征观察"],
   })), 18);
 }
