@@ -92,6 +92,14 @@ const visualMatchPartAliases = new Map([
   ["🐶", ["小狗"]],
   ["🐰", ["小兔"]],
 ]);
+const memoryCameraLabelAliases = new Map([
+  ["🍎", "苹果"],
+  ["🍊", "橘子"],
+  ["🍓", "草莓"],
+  ["🐱", "小猫"],
+  ["🐶", "小狗"],
+  ["🐰", "小兔"],
+]);
 const counts = games.reduce(
   (acc, game) => {
     acc.totalGames += 1;
@@ -185,6 +193,9 @@ for (const game of games) {
     }
     if (game.id === "logic-position-map") {
       checkPositionMapRoundQuality(round, context);
+    }
+    if (game.id === "logic-memory-camera") {
+      checkMemoryCameraRoundQuality(round, context);
     }
     if (!round.sceneImage && !round.sequence && !round.visualGroups && !round.grid && !round.matrix && !round.memory) {
       problems.push(`${context}: missing visual surface`);
@@ -1207,6 +1218,128 @@ function relativeDirectionBetween(sourcePosition, targetPosition) {
   if (sourceRow === targetRow) return targetColumn > sourceColumn ? "右边" : "左边";
   if (sourceColumn === targetColumn) return targetRow > sourceRow ? "下面" : "上面";
   return null;
+}
+
+function checkMemoryCameraRoundQuality(round, context) {
+  const labels = memoryCameraLabels(round.memory?.items);
+  if (!labels.length) {
+    problems.push(`${context}: memory-camera round should show memory items`);
+    return;
+  }
+  if (new Set(labels).size !== labels.length) {
+    problems.push(`${context}: memory-camera memory items should be unique after label normalization`);
+  }
+
+  if (round.prompt === "刚才相机里出现过谁？") {
+    checkMemoryAppearedRound(round, context, labels);
+    return;
+  }
+
+  if (round.prompt === "哪一个刚才没有出现？") {
+    checkMemoryAbsentRound(round, context, labels);
+    return;
+  }
+
+  const orderMatch = round.prompt.match(/^刚才(第一个|第二个|第三个|最后一个)是什么/);
+  if (orderMatch) {
+    checkMemoryOrderRound(round, context, labels, orderMatch[1]);
+    return;
+  }
+
+  problems.push(`${context}: memory-camera prompt should ask appeared, absent, or order memory`);
+}
+
+function checkMemoryAppearedRound(round, context, labels) {
+  if (!labels.includes(round.answer)) {
+    problems.push(`${context}: memory-camera appeared answer should match a remembered card`);
+  }
+  if (choiceValueCount(round.choices, round.answer) !== 1) {
+    problems.push(`${context}: memory-camera appeared choices should include the answer exactly once`);
+  }
+  if (!round.choices.some((choice) => !labels.includes(choice.value))) {
+    problems.push(`${context}: memory-camera appeared choices should include a not-shown distractor`);
+  }
+  if (!textNamesMemorySetAndAnswer(round.success, labels, round.answer) || !/出现过|有/.test(round.success)) {
+    problems.push(`${context}: memory-camera appeared success should name remembered cards and answer`);
+  }
+  if (!textNamesMemorySetAndAnswer(round.retry, labels, round.answer) || !/先|回想|念|记/.test(round.retry)) {
+    problems.push(`${context}: memory-camera appeared retry should ask the child to recall remembered cards before answering`);
+  }
+  if (!textNamesMemorySetAndAnswer(round.parentPrompt, labels, round.answer) || !/说|复述|念|记/.test(round.parentPrompt)) {
+    problems.push(`${context}: memory-camera appeared parentPrompt should ask the child to say remembered cards and answer`);
+  }
+}
+
+function checkMemoryAbsentRound(round, context, labels) {
+  if (labels.includes(round.answer)) {
+    problems.push(`${context}: memory-camera absent answer should not be in remembered cards`);
+  }
+  if (choiceValueCount(round.choices, round.answer) !== 1) {
+    problems.push(`${context}: memory-camera absent choices should include the answer exactly once`);
+  }
+  const wrongChoiceValues = round.choices.map((choice) => choice.value).filter((value) => value !== round.answer);
+  if (!wrongChoiceValues.length || !wrongChoiceValues.every((value) => labels.includes(value))) {
+    problems.push(`${context}: memory-camera absent wrong choices should be remembered cards for exclusion`);
+  }
+  if (!textNamesMemorySetAndAnswer(round.success, labels, round.answer) || !/没有出现|没出现|多出来/.test(round.success)) {
+    problems.push(`${context}: memory-camera absent success should name remembered cards and absent answer`);
+  }
+  if (!textNamesMemorySetAndAnswer(round.retry, labels, round.answer) || !/排除|多出来|没有出现|没出现|先/.test(round.retry)) {
+    problems.push(`${context}: memory-camera absent retry should ask the child to exclude remembered cards`);
+  }
+  if (!textNamesMemorySetAndAnswer(round.parentPrompt, labels, round.answer) || !/排除|为什么|说|复述/.test(round.parentPrompt)) {
+    problems.push(`${context}: memory-camera absent parentPrompt should ask for remembered cards and excluded answer`);
+  }
+}
+
+function checkMemoryOrderRound(round, context, labels, ordinal) {
+  const answerIndex = memoryOrdinalIndex(ordinal, labels.length);
+  const expectedAnswer = labels[answerIndex];
+  if (!expectedAnswer) {
+    problems.push(`${context}: memory-camera order prompt should map to an existing memory item`);
+    return;
+  }
+
+  if (round.answer !== expectedAnswer) {
+    problems.push(`${context}: memory-camera order answer should equal the requested ordinal card`);
+  }
+  if (choiceValueCount(round.choices, expectedAnswer) !== 1) {
+    problems.push(`${context}: memory-camera order choices should include the computed answer exactly once`);
+  }
+  if (!round.choices.every((choice) => labels.includes(choice.value))) {
+    problems.push(`${context}: memory-camera order choices should only use remembered cards`);
+  }
+  if (!textNamesMemorySetAndAnswer(round.success, labels, expectedAnswer) || !round.success.includes(ordinal) || !/从左到右|顺序/.test(round.success)) {
+    problems.push(`${context}: memory-camera order success should name sequence, ordinal, and answer`);
+  }
+  if (!textNamesMemorySetAndAnswer(round.retry, labels, expectedAnswer) || !round.retry.includes(ordinal) || !/从左到右|顺序/.test(round.retry)) {
+    problems.push(`${context}: memory-camera order retry should ask the child to replay the sequence before answering`);
+  }
+  if (!textNamesMemorySetAndAnswer(round.parentPrompt, labels, expectedAnswer) || !round.parentPrompt.includes(ordinal) || !/说|复述|念|顺序/.test(round.parentPrompt)) {
+    problems.push(`${context}: memory-camera order parentPrompt should ask for sequence, ordinal, and answer`);
+  }
+}
+
+function memoryCameraLabels(items) {
+  if (!Array.isArray(items)) return [];
+  return items.map((item) => memoryCameraLabelAliases.get(item) ?? item);
+}
+
+function choiceValueCount(choices, value) {
+  return choices.filter((choice) => choice.value === value).length;
+}
+
+function textNamesMemorySetAndAnswer(text, labels, answer) {
+  return Boolean(text?.includes(answer)) && allItemsMentioned(text, labels);
+}
+
+function memoryOrdinalIndex(ordinal, length) {
+  return {
+    第一个: 0,
+    第二个: 1,
+    第三个: 2,
+    最后一个: length - 1,
+  }[ordinal] ?? -1;
 }
 
 function checkAddressMapRoundQuality(round, context) {

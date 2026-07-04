@@ -2910,59 +2910,79 @@ function makePositionMapRounds(): RoundInput[] {
 }
 
 function makeMemoryCameraRounds(): RoundInput[] {
+  const memoryLabel = (item: string) => ({
+    "🍎": "苹果",
+    "🍊": "橘子",
+    "🍓": "草莓",
+    "🐱": "小猫",
+    "🐶": "小狗",
+    "🐰": "小兔",
+  }[item] ?? item);
+  const memoryListText = (items: string[]) => items.map(memoryLabel).join("、");
+
   const appearedCases = [
     { items: ["🍎", "🍊", "🍓"], answer: "苹果", choices: ["苹果", "葡萄", "蛋糕"] },
     { items: ["小汽车", "公交车", "飞机"], answer: "公交车", choices: ["公交车", "自行车", "风筝"] },
     { items: ["铅笔", "书包", "尺子"], answer: "尺子", choices: ["尺子", "书本", "三角尺"] },
     { items: ["🐱", "🐶", "🐰"], answer: "小兔", choices: ["小兔", "小熊", "小鸟"] },
-  ].map((item, index) => ({
-    level: index < 2 ? "L4" as AbilityLevel : "L5" as AbilityLevel,
-    prompt: "刚才相机里出现过谁？",
-    instruction: "先看图片，遮住以后再选。",
-    memory: { items: item.items },
-    choices: choiceSet(item.choices),
-    answer: item.answer,
-    success: `${item.answer}刚才出现过。`,
-    retry: "先在心里念一遍，再遮住。",
-    parentPrompt: "请她说说自己刚才用什么办法记住的。",
-    abilityTags: ["图像记忆"],
-  }));
+  ].map((item, index) => {
+    const remembered = memoryListText(item.items);
+    return {
+      level: index < 2 ? "L4" as AbilityLevel : "L5" as AbilityLevel,
+      prompt: "刚才相机里出现过谁？",
+      instruction: "先看图片，遮住以后再选。",
+      memory: { items: item.items },
+      choices: choiceSet(item.choices),
+      answer: item.answer,
+      success: `相机里有${remembered}，所以${item.answer}刚才出现过。`,
+      retry: `先回想相机里的三张：${remembered}，再选出现过的${item.answer}。`,
+      parentPrompt: `请她先说刚才看到${remembered}，再说为什么选${item.answer}。`,
+      abilityTags: ["图像记忆"],
+    };
+  });
 
   const absentCases = [
     { items: ["小鸟", "小鱼", "小狗"], answer: "小猫", choices: ["小鸟", "小狗", "小猫"] },
     { items: ["葡萄", "蛋糕", "饼干"], answer: "糖果", choices: ["蛋糕", "糖果", "葡萄"] },
     { items: ["足球", "风筝", "飞机"], answer: "小汽车", choices: ["飞机", "风筝", "小汽车"] },
     { items: ["杯子", "书包", "铅笔"], answer: "书本", choices: ["杯子", "书本", "书包"] },
-  ].map((item) => ({
-    level: "L5" as AbilityLevel,
-    prompt: "哪一个刚才没有出现？",
-    instruction: "遮住以后，找没看见过的。",
-    memory: { items: item.items },
-    choices: choiceSet(item.choices),
-    answer: item.answer,
-    success: `${item.answer}刚才没有出现。`,
-    retry: "先回想相机里三个东西，再找多出来的选项。",
-    parentPrompt: "问她：你排除了哪两个？为什么？",
-    abilityTags: ["抗干扰", "排除法"],
-  }));
+  ].map((item) => {
+    const remembered = memoryListText(item.items);
+    return {
+      level: "L5" as AbilityLevel,
+      prompt: "哪一个刚才没有出现？",
+      instruction: "遮住以后，找没看见过的。",
+      memory: { items: item.items },
+      choices: choiceSet(item.choices),
+      answer: item.answer,
+      success: `刚才相机里有${remembered}，${item.answer}没有出现。`,
+      retry: `先排除刚才看到的${remembered}，多出来的是${item.answer}。`,
+      parentPrompt: `请她复述刚才看到${remembered}，再说为什么排除后剩下${item.answer}。`,
+      abilityTags: ["抗干扰", "排除法"],
+    };
+  });
 
   const orderCases = [
     { items: ["苹果", "小狗", "书包"], prompt: "刚才第一个是什么？", answer: "苹果", choices: ["苹果", "小狗", "书包"] },
     { items: ["小鱼", "足球", "飞机"], prompt: "刚才第二个是什么？", answer: "足球", choices: ["小鱼", "足球", "飞机"] },
     { items: ["铅笔", "葡萄", "公交车"], prompt: "刚才最后一个是什么？", answer: "公交车", choices: ["铅笔", "葡萄", "公交车"] },
     { items: ["小猫", "风筝", "蛋糕", "小鸟"], prompt: "刚才第三个是什么？", answer: "蛋糕", choices: ["风筝", "蛋糕", "小鸟"] },
-  ].map((item, index) => ({
-    level: index < 3 ? "L5" as AbilityLevel : "L6" as AbilityLevel,
-    prompt: item.prompt,
-    instruction: "不只记有什么，还要记顺序。",
-    memory: { items: item.items },
-    choices: choiceSet(item.choices),
-    answer: item.answer,
-    success: `${item.answer}在这个位置上。`,
-    retry: "可以从左到右在心里排一排。",
-    parentPrompt: "请她用“第一、第二、第三”复述一遍。",
-    abilityTags: ["顺序记忆", "工作记忆"],
-  }));
+  ].map((item, index) => {
+    const remembered = memoryListText(item.items);
+    const ordinal = item.prompt.match(/^刚才(.+?)是什么/)?.[1] ?? "这个位置";
+    return {
+      level: index < 3 ? "L5" as AbilityLevel : "L6" as AbilityLevel,
+      prompt: item.prompt,
+      instruction: "不只记有什么，还要记顺序。",
+      memory: { items: item.items },
+      choices: choiceSet(item.choices),
+      answer: item.answer,
+      success: `从左到右是${remembered}，${ordinal}是${item.answer}。`,
+      retry: `先按顺序从左到右念：${remembered}；${ordinal}就是${item.answer}。`,
+      parentPrompt: `请她按顺序复述${remembered}，再说${ordinal}为什么是${item.answer}。`,
+      abilityTags: ["顺序记忆", "工作记忆"],
+    };
+  });
 
   return repeatTo([...appearedCases, ...absentCases, ...orderCases], 18);
 }

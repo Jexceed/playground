@@ -3,6 +3,19 @@
 All meaningful project changes should be recorded here. Keep entries factual and
 grouped by date.
 
+## 2026-07-05
+
+- Added the `012-memory-camera-quality` Spec Kit feature for appeared-item,
+  absent-item, and left-to-right order memory quality.
+- Expanded the curriculum audit with memory-camera checks that normalize emoji
+  cards to child-facing labels, validate appeared and absent answers, and derive
+  order answers from the remembered sequence.
+- Reworked `logic-memory-camera` success feedback, retry guidance, and parent
+  prompts so each round names the remembered cards, answer, and recognition,
+  exclusion, or sequence reasoning.
+- Exported updated voice lines and regenerated the local Edge voice manifest for
+  the rewritten memory-camera content.
+
 ## 2026-07-04
 
 - Added the `002-logic-house-quality` Spec Kit feature for stricter logic-house

@@ -18,9 +18,9 @@ small enough to turn into a Spec Kit feature.
   `logic-sorter-switch`, `logic-same-kind-detective`, `logic-visual-match`,
   `logic-difference-detective`, `logic-block-height-map`,
   `logic-three-view-blocks`, `logic-route-steps`, `logic-address-map`,
-  `logic-matrix-puzzle`, and `logic-position-map`; add targeted audits for any
-  remaining cluster whose picture, text, audio, option quality, or parent
-  explanation is still weak.
+  `logic-matrix-puzzle`, `logic-position-map`, and `logic-memory-camera`; add
+  targeted audits for any remaining cluster whose picture, text, audio, option
+  quality, or parent explanation is still weak.
 
 ## P2
 

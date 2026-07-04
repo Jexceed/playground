@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-07-04T15:59:24.848Z",
+  "generatedAt": "2026-07-04T16:10:21.615Z",
   "provider": "edge-tts Python package",
   "voice": "zh-CN-XiaoxiaoNeural",
   "rate": "-12%",
   "pitch": "+2Hz",
   "includeParent": true,
   "format": "mp3",
-  "count": 1582,
-  "requestedCount": 1582,
+  "count": 1600,
+  "requestedCount": 1600,
   "failures": [],
   "entries": [
     {
@@ -7493,28 +7493,40 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%88%9A%E6%89%8D%E7%9B%B8%E6%9C%BA%E9%87%8C%E5%87%BA%E7%8E%B0%E8%BF%87%E8%B0%81-%E5%85%88%E7%9C%8B%E5%9B%BE%E7%89%87-%E9%81%AE%E4%BD%8F%E4%BB%A5%E5%90%8E%E5%86%8D%E9%80%89.mp3"
     },
     {
-      "id": "success-苹果刚才出现过",
+      "id": "success-相机里有苹果-橘子-草莓-所以苹果刚才出现过",
       "kind": "success",
-      "text": "苹果刚才出现过。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%8B%B9%E6%9E%9C%E5%88%9A%E6%89%8D%E5%87%BA%E7%8E%B0%E8%BF%87.mp3"
+      "text": "相机里有苹果、橘子、草莓，所以苹果刚才出现过。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%9B%B8%E6%9C%BA%E9%87%8C%E6%9C%89%E8%8B%B9%E6%9E%9C-%E6%A9%98%E5%AD%90-%E8%8D%89%E8%8E%93-%E6%89%80%E4%BB%A5%E8%8B%B9%E6%9E%9C%E5%88%9A%E6%89%8D%E5%87%BA%E7%8E%B0%E8%BF%87.mp3"
     },
     {
-      "id": "retry-先在心里念一遍-再遮住",
+      "id": "retry-先回想相机里的三张-苹果-橘子-草莓-再选出现过的苹果",
       "kind": "retry",
-      "text": "先在心里念一遍，再遮住。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E5%9C%A8%E5%BF%83%E9%87%8C%E5%BF%B5%E4%B8%80%E9%81%8D-%E5%86%8D%E9%81%AE%E4%BD%8F.mp3"
+      "text": "先回想相机里的三张：苹果、橘子、草莓，再选出现过的苹果。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E5%9B%9E%E6%83%B3%E7%9B%B8%E6%9C%BA%E9%87%8C%E7%9A%84%E4%B8%89%E5%BC%A0-%E8%8B%B9%E6%9E%9C-%E6%A9%98%E5%AD%90-%E8%8D%89%E8%8E%93-%E5%86%8D%E9%80%89%E5%87%BA%E7%8E%B0%E8%BF%87%E7%9A%84%E8%8B%B9%E6%9E%9C.mp3"
     },
     {
-      "id": "parent-请她说说自己刚才用什么办法记住的",
+      "id": "parent-请她先说刚才看到苹果-橘子-草莓-再说为什么选苹果",
       "kind": "parent",
-      "text": "请她说说自己刚才用什么办法记住的。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E8%AF%B4%E8%AF%B4%E8%87%AA%E5%B7%B1%E5%88%9A%E6%89%8D%E7%94%A8%E4%BB%80%E4%B9%88%E5%8A%9E%E6%B3%95%E8%AE%B0%E4%BD%8F%E7%9A%84.mp3"
+      "text": "请她先说刚才看到苹果、橘子、草莓，再说为什么选苹果。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E5%85%88%E8%AF%B4%E5%88%9A%E6%89%8D%E7%9C%8B%E5%88%B0%E8%8B%B9%E6%9E%9C-%E6%A9%98%E5%AD%90-%E8%8D%89%E8%8E%93-%E5%86%8D%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E9%80%89%E8%8B%B9%E6%9E%9C.mp3"
     },
     {
-      "id": "success-公交车刚才出现过",
+      "id": "success-相机里有小汽车-公交车-飞机-所以公交车刚才出现过",
       "kind": "success",
-      "text": "公交车刚才出现过。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%85%AC%E4%BA%A4%E8%BD%A6%E5%88%9A%E6%89%8D%E5%87%BA%E7%8E%B0%E8%BF%87.mp3"
+      "text": "相机里有小汽车、公交车、飞机，所以公交车刚才出现过。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%9B%B8%E6%9C%BA%E9%87%8C%E6%9C%89%E5%B0%8F%E6%B1%BD%E8%BD%A6-%E5%85%AC%E4%BA%A4%E8%BD%A6-%E9%A3%9E%E6%9C%BA-%E6%89%80%E4%BB%A5%E5%85%AC%E4%BA%A4%E8%BD%A6%E5%88%9A%E6%89%8D%E5%87%BA%E7%8E%B0%E8%BF%87.mp3"
+    },
+    {
+      "id": "retry-先回想相机里的三张-小汽车-公交车-飞机-再选出现过的公交车",
+      "kind": "retry",
+      "text": "先回想相机里的三张：小汽车、公交车、飞机，再选出现过的公交车。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E5%9B%9E%E6%83%B3%E7%9B%B8%E6%9C%BA%E9%87%8C%E7%9A%84%E4%B8%89%E5%BC%A0-%E5%B0%8F%E6%B1%BD%E8%BD%A6-%E5%85%AC%E4%BA%A4%E8%BD%A6-%E9%A3%9E%E6%9C%BA-%E5%86%8D%E9%80%89%E5%87%BA%E7%8E%B0%E8%BF%87%E7%9A%84%E5%85%AC%E4%BA%A4%E8%BD%A6.mp3"
+    },
+    {
+      "id": "parent-请她先说刚才看到小汽车-公交车-飞机-再说为什么选公交车",
+      "kind": "parent",
+      "text": "请她先说刚才看到小汽车、公交车、飞机，再说为什么选公交车。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E5%85%88%E8%AF%B4%E5%88%9A%E6%89%8D%E7%9C%8B%E5%88%B0%E5%B0%8F%E6%B1%BD%E8%BD%A6-%E5%85%AC%E4%BA%A4%E8%BD%A6-%E9%A3%9E%E6%9C%BA-%E5%86%8D%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E9%80%89%E5%85%AC%E4%BA%A4%E8%BD%A6.mp3"
     },
     {
       "id": "choice-自行车",
@@ -7523,16 +7535,40 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E8%87%AA%E8%A1%8C%E8%BD%A6.mp3"
     },
     {
-      "id": "success-尺子刚才出现过",
+      "id": "success-相机里有铅笔-书包-尺子-所以尺子刚才出现过",
       "kind": "success",
-      "text": "尺子刚才出现过。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%B0%BA%E5%AD%90%E5%88%9A%E6%89%8D%E5%87%BA%E7%8E%B0%E8%BF%87.mp3"
+      "text": "相机里有铅笔、书包、尺子，所以尺子刚才出现过。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%9B%B8%E6%9C%BA%E9%87%8C%E6%9C%89%E9%93%85%E7%AC%94-%E4%B9%A6%E5%8C%85-%E5%B0%BA%E5%AD%90-%E6%89%80%E4%BB%A5%E5%B0%BA%E5%AD%90%E5%88%9A%E6%89%8D%E5%87%BA%E7%8E%B0%E8%BF%87.mp3"
     },
     {
-      "id": "success-小兔刚才出现过",
+      "id": "retry-先回想相机里的三张-铅笔-书包-尺子-再选出现过的尺子",
+      "kind": "retry",
+      "text": "先回想相机里的三张：铅笔、书包、尺子，再选出现过的尺子。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E5%9B%9E%E6%83%B3%E7%9B%B8%E6%9C%BA%E9%87%8C%E7%9A%84%E4%B8%89%E5%BC%A0-%E9%93%85%E7%AC%94-%E4%B9%A6%E5%8C%85-%E5%B0%BA%E5%AD%90-%E5%86%8D%E9%80%89%E5%87%BA%E7%8E%B0%E8%BF%87%E7%9A%84%E5%B0%BA%E5%AD%90.mp3"
+    },
+    {
+      "id": "parent-请她先说刚才看到铅笔-书包-尺子-再说为什么选尺子",
+      "kind": "parent",
+      "text": "请她先说刚才看到铅笔、书包、尺子，再说为什么选尺子。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E5%85%88%E8%AF%B4%E5%88%9A%E6%89%8D%E7%9C%8B%E5%88%B0%E9%93%85%E7%AC%94-%E4%B9%A6%E5%8C%85-%E5%B0%BA%E5%AD%90-%E5%86%8D%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E9%80%89%E5%B0%BA%E5%AD%90.mp3"
+    },
+    {
+      "id": "success-相机里有小猫-小狗-小兔-所以小兔刚才出现过",
       "kind": "success",
-      "text": "小兔刚才出现过。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%B0%8F%E5%85%94%E5%88%9A%E6%89%8D%E5%87%BA%E7%8E%B0%E8%BF%87.mp3"
+      "text": "相机里有小猫、小狗、小兔，所以小兔刚才出现过。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%9B%B8%E6%9C%BA%E9%87%8C%E6%9C%89%E5%B0%8F%E7%8C%AB-%E5%B0%8F%E7%8B%97-%E5%B0%8F%E5%85%94-%E6%89%80%E4%BB%A5%E5%B0%8F%E5%85%94%E5%88%9A%E6%89%8D%E5%87%BA%E7%8E%B0%E8%BF%87.mp3"
+    },
+    {
+      "id": "retry-先回想相机里的三张-小猫-小狗-小兔-再选出现过的小兔",
+      "kind": "retry",
+      "text": "先回想相机里的三张：小猫、小狗、小兔，再选出现过的小兔。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E5%9B%9E%E6%83%B3%E7%9B%B8%E6%9C%BA%E9%87%8C%E7%9A%84%E4%B8%89%E5%BC%A0-%E5%B0%8F%E7%8C%AB-%E5%B0%8F%E7%8B%97-%E5%B0%8F%E5%85%94-%E5%86%8D%E9%80%89%E5%87%BA%E7%8E%B0%E8%BF%87%E7%9A%84%E5%B0%8F%E5%85%94.mp3"
+    },
+    {
+      "id": "parent-请她先说刚才看到小猫-小狗-小兔-再说为什么选小兔",
+      "kind": "parent",
+      "text": "请她先说刚才看到小猫、小狗、小兔，再说为什么选小兔。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E5%85%88%E8%AF%B4%E5%88%9A%E6%89%8D%E7%9C%8B%E5%88%B0%E5%B0%8F%E7%8C%AB-%E5%B0%8F%E7%8B%97-%E5%B0%8F%E5%85%94-%E5%86%8D%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E9%80%89%E5%B0%8F%E5%85%94.mp3"
     },
     {
       "id": "prompt-哪一个刚才没有出现-遮住以后-找没看见过的",
@@ -7541,40 +7577,76 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%93%AA%E4%B8%80%E4%B8%AA%E5%88%9A%E6%89%8D%E6%B2%A1%E6%9C%89%E5%87%BA%E7%8E%B0-%E9%81%AE%E4%BD%8F%E4%BB%A5%E5%90%8E-%E6%89%BE%E6%B2%A1%E7%9C%8B%E8%A7%81%E8%BF%87%E7%9A%84.mp3"
     },
     {
-      "id": "success-小猫刚才没有出现",
+      "id": "success-刚才相机里有小鸟-小鱼-小狗-小猫没有出现",
       "kind": "success",
-      "text": "小猫刚才没有出现。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%B0%8F%E7%8C%AB%E5%88%9A%E6%89%8D%E6%B2%A1%E6%9C%89%E5%87%BA%E7%8E%B0.mp3"
+      "text": "刚才相机里有小鸟、小鱼、小狗，小猫没有出现。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%88%9A%E6%89%8D%E7%9B%B8%E6%9C%BA%E9%87%8C%E6%9C%89%E5%B0%8F%E9%B8%9F-%E5%B0%8F%E9%B1%BC-%E5%B0%8F%E7%8B%97-%E5%B0%8F%E7%8C%AB%E6%B2%A1%E6%9C%89%E5%87%BA%E7%8E%B0.mp3"
     },
     {
-      "id": "retry-先回想相机里三个东西-再找多出来的选项",
+      "id": "retry-先排除刚才看到的小鸟-小鱼-小狗-多出来的是小猫",
       "kind": "retry",
-      "text": "先回想相机里三个东西，再找多出来的选项。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E5%9B%9E%E6%83%B3%E7%9B%B8%E6%9C%BA%E9%87%8C%E4%B8%89%E4%B8%AA%E4%B8%9C%E8%A5%BF-%E5%86%8D%E6%89%BE%E5%A4%9A%E5%87%BA%E6%9D%A5%E7%9A%84%E9%80%89%E9%A1%B9.mp3"
+      "text": "先排除刚才看到的小鸟、小鱼、小狗，多出来的是小猫。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E6%8E%92%E9%99%A4%E5%88%9A%E6%89%8D%E7%9C%8B%E5%88%B0%E7%9A%84%E5%B0%8F%E9%B8%9F-%E5%B0%8F%E9%B1%BC-%E5%B0%8F%E7%8B%97-%E5%A4%9A%E5%87%BA%E6%9D%A5%E7%9A%84%E6%98%AF%E5%B0%8F%E7%8C%AB.mp3"
     },
     {
-      "id": "parent-问她-你排除了哪两个-为什么",
+      "id": "parent-请她复述刚才看到小鸟-小鱼-小狗-再说为什么排除后剩下小猫",
       "kind": "parent",
-      "text": "问她：你排除了哪两个？为什么？",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E4%BD%A0%E6%8E%92%E9%99%A4%E4%BA%86%E5%93%AA%E4%B8%A4%E4%B8%AA-%E4%B8%BA%E4%BB%80%E4%B9%88.mp3"
+      "text": "请她复述刚才看到小鸟、小鱼、小狗，再说为什么排除后剩下小猫。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E5%A4%8D%E8%BF%B0%E5%88%9A%E6%89%8D%E7%9C%8B%E5%88%B0%E5%B0%8F%E9%B8%9F-%E5%B0%8F%E9%B1%BC-%E5%B0%8F%E7%8B%97-%E5%86%8D%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E6%8E%92%E9%99%A4%E5%90%8E%E5%89%A9%E4%B8%8B%E5%B0%8F%E7%8C%AB.mp3"
     },
     {
-      "id": "success-糖果刚才没有出现",
+      "id": "success-刚才相机里有葡萄-蛋糕-饼干-糖果没有出现",
       "kind": "success",
-      "text": "糖果刚才没有出现。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%B3%96%E6%9E%9C%E5%88%9A%E6%89%8D%E6%B2%A1%E6%9C%89%E5%87%BA%E7%8E%B0.mp3"
+      "text": "刚才相机里有葡萄、蛋糕、饼干，糖果没有出现。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%88%9A%E6%89%8D%E7%9B%B8%E6%9C%BA%E9%87%8C%E6%9C%89%E8%91%A1%E8%90%84-%E8%9B%8B%E7%B3%95-%E9%A5%BC%E5%B9%B2-%E7%B3%96%E6%9E%9C%E6%B2%A1%E6%9C%89%E5%87%BA%E7%8E%B0.mp3"
     },
     {
-      "id": "success-小汽车刚才没有出现",
-      "kind": "success",
-      "text": "小汽车刚才没有出现。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%B0%8F%E6%B1%BD%E8%BD%A6%E5%88%9A%E6%89%8D%E6%B2%A1%E6%9C%89%E5%87%BA%E7%8E%B0.mp3"
+      "id": "retry-先排除刚才看到的葡萄-蛋糕-饼干-多出来的是糖果",
+      "kind": "retry",
+      "text": "先排除刚才看到的葡萄、蛋糕、饼干，多出来的是糖果。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E6%8E%92%E9%99%A4%E5%88%9A%E6%89%8D%E7%9C%8B%E5%88%B0%E7%9A%84%E8%91%A1%E8%90%84-%E8%9B%8B%E7%B3%95-%E9%A5%BC%E5%B9%B2-%E5%A4%9A%E5%87%BA%E6%9D%A5%E7%9A%84%E6%98%AF%E7%B3%96%E6%9E%9C.mp3"
     },
     {
-      "id": "success-书本刚才没有出现",
+      "id": "parent-请她复述刚才看到葡萄-蛋糕-饼干-再说为什么排除后剩下糖果",
+      "kind": "parent",
+      "text": "请她复述刚才看到葡萄、蛋糕、饼干，再说为什么排除后剩下糖果。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E5%A4%8D%E8%BF%B0%E5%88%9A%E6%89%8D%E7%9C%8B%E5%88%B0%E8%91%A1%E8%90%84-%E8%9B%8B%E7%B3%95-%E9%A5%BC%E5%B9%B2-%E5%86%8D%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E6%8E%92%E9%99%A4%E5%90%8E%E5%89%A9%E4%B8%8B%E7%B3%96%E6%9E%9C.mp3"
+    },
+    {
+      "id": "success-刚才相机里有足球-风筝-飞机-小汽车没有出现",
       "kind": "success",
-      "text": "书本刚才没有出现。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E4%B9%A6%E6%9C%AC%E5%88%9A%E6%89%8D%E6%B2%A1%E6%9C%89%E5%87%BA%E7%8E%B0.mp3"
+      "text": "刚才相机里有足球、风筝、飞机，小汽车没有出现。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%88%9A%E6%89%8D%E7%9B%B8%E6%9C%BA%E9%87%8C%E6%9C%89%E8%B6%B3%E7%90%83-%E9%A3%8E%E7%AD%9D-%E9%A3%9E%E6%9C%BA-%E5%B0%8F%E6%B1%BD%E8%BD%A6%E6%B2%A1%E6%9C%89%E5%87%BA%E7%8E%B0.mp3"
+    },
+    {
+      "id": "retry-先排除刚才看到的足球-风筝-飞机-多出来的是小汽车",
+      "kind": "retry",
+      "text": "先排除刚才看到的足球、风筝、飞机，多出来的是小汽车。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E6%8E%92%E9%99%A4%E5%88%9A%E6%89%8D%E7%9C%8B%E5%88%B0%E7%9A%84%E8%B6%B3%E7%90%83-%E9%A3%8E%E7%AD%9D-%E9%A3%9E%E6%9C%BA-%E5%A4%9A%E5%87%BA%E6%9D%A5%E7%9A%84%E6%98%AF%E5%B0%8F%E6%B1%BD%E8%BD%A6.mp3"
+    },
+    {
+      "id": "parent-请她复述刚才看到足球-风筝-飞机-再说为什么排除后剩下小汽车",
+      "kind": "parent",
+      "text": "请她复述刚才看到足球、风筝、飞机，再说为什么排除后剩下小汽车。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E5%A4%8D%E8%BF%B0%E5%88%9A%E6%89%8D%E7%9C%8B%E5%88%B0%E8%B6%B3%E7%90%83-%E9%A3%8E%E7%AD%9D-%E9%A3%9E%E6%9C%BA-%E5%86%8D%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E6%8E%92%E9%99%A4%E5%90%8E%E5%89%A9%E4%B8%8B%E5%B0%8F%E6%B1%BD%E8%BD%A6.mp3"
+    },
+    {
+      "id": "success-刚才相机里有杯子-书包-铅笔-书本没有出现",
+      "kind": "success",
+      "text": "刚才相机里有杯子、书包、铅笔，书本没有出现。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%88%9A%E6%89%8D%E7%9B%B8%E6%9C%BA%E9%87%8C%E6%9C%89%E6%9D%AF%E5%AD%90-%E4%B9%A6%E5%8C%85-%E9%93%85%E7%AC%94-%E4%B9%A6%E6%9C%AC%E6%B2%A1%E6%9C%89%E5%87%BA%E7%8E%B0.mp3"
+    },
+    {
+      "id": "retry-先排除刚才看到的杯子-书包-铅笔-多出来的是书本",
+      "kind": "retry",
+      "text": "先排除刚才看到的杯子、书包、铅笔，多出来的是书本。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E6%8E%92%E9%99%A4%E5%88%9A%E6%89%8D%E7%9C%8B%E5%88%B0%E7%9A%84%E6%9D%AF%E5%AD%90-%E4%B9%A6%E5%8C%85-%E9%93%85%E7%AC%94-%E5%A4%9A%E5%87%BA%E6%9D%A5%E7%9A%84%E6%98%AF%E4%B9%A6%E6%9C%AC.mp3"
+    },
+    {
+      "id": "parent-请她复述刚才看到杯子-书包-铅笔-再说为什么排除后剩下书本",
+      "kind": "parent",
+      "text": "请她复述刚才看到杯子、书包、铅笔，再说为什么排除后剩下书本。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E5%A4%8D%E8%BF%B0%E5%88%9A%E6%89%8D%E7%9C%8B%E5%88%B0%E6%9D%AF%E5%AD%90-%E4%B9%A6%E5%8C%85-%E9%93%85%E7%AC%94-%E5%86%8D%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E6%8E%92%E9%99%A4%E5%90%8E%E5%89%A9%E4%B8%8B%E4%B9%A6%E6%9C%AC.mp3"
     },
     {
       "id": "prompt-刚才第一个是什么-不只记有什么-还要记顺序",
@@ -7583,22 +7655,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%88%9A%E6%89%8D%E7%AC%AC%E4%B8%80%E4%B8%AA%E6%98%AF%E4%BB%80%E4%B9%88-%E4%B8%8D%E5%8F%AA%E8%AE%B0%E6%9C%89%E4%BB%80%E4%B9%88-%E8%BF%98%E8%A6%81%E8%AE%B0%E9%A1%BA%E5%BA%8F.mp3"
     },
     {
-      "id": "success-苹果在这个位置上",
+      "id": "success-从左到右是苹果-小狗-书包-第一个是苹果",
       "kind": "success",
-      "text": "苹果在这个位置上。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%8B%B9%E6%9E%9C%E5%9C%A8%E8%BF%99%E4%B8%AA%E4%BD%8D%E7%BD%AE%E4%B8%8A.mp3"
+      "text": "从左到右是苹果、小狗、书包，第一个是苹果。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E6%98%AF%E8%8B%B9%E6%9E%9C-%E5%B0%8F%E7%8B%97-%E4%B9%A6%E5%8C%85-%E7%AC%AC%E4%B8%80%E4%B8%AA%E6%98%AF%E8%8B%B9%E6%9E%9C.mp3"
     },
     {
-      "id": "retry-可以从左到右在心里排一排",
+      "id": "retry-先按顺序从左到右念-苹果-小狗-书包-第一个就是苹果",
       "kind": "retry",
-      "text": "可以从左到右在心里排一排。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%8F%AF%E4%BB%A5%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E5%9C%A8%E5%BF%83%E9%87%8C%E6%8E%92%E4%B8%80%E6%8E%92.mp3"
+      "text": "先按顺序从左到右念：苹果、小狗、书包；第一个就是苹果。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E6%8C%89%E9%A1%BA%E5%BA%8F%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E5%BF%B5-%E8%8B%B9%E6%9E%9C-%E5%B0%8F%E7%8B%97-%E4%B9%A6%E5%8C%85-%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%B0%B1%E6%98%AF%E8%8B%B9%E6%9E%9C.mp3"
     },
     {
-      "id": "parent-请她用-第一-第二-第三-复述一遍",
+      "id": "parent-请她按顺序复述苹果-小狗-书包-再说第一个为什么是苹果",
       "kind": "parent",
-      "text": "请她用“第一、第二、第三”复述一遍。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E7%94%A8-%E7%AC%AC%E4%B8%80-%E7%AC%AC%E4%BA%8C-%E7%AC%AC%E4%B8%89-%E5%A4%8D%E8%BF%B0%E4%B8%80%E9%81%8D.mp3"
+      "text": "请她按顺序复述苹果、小狗、书包，再说第一个为什么是苹果。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%89%E9%A1%BA%E5%BA%8F%E5%A4%8D%E8%BF%B0%E8%8B%B9%E6%9E%9C-%E5%B0%8F%E7%8B%97-%E4%B9%A6%E5%8C%85-%E5%86%8D%E8%AF%B4%E7%AC%AC%E4%B8%80%E4%B8%AA%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E8%8B%B9%E6%9E%9C.mp3"
     },
     {
       "id": "prompt-刚才第二个是什么-不只记有什么-还要记顺序",
@@ -7607,10 +7679,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%88%9A%E6%89%8D%E7%AC%AC%E4%BA%8C%E4%B8%AA%E6%98%AF%E4%BB%80%E4%B9%88-%E4%B8%8D%E5%8F%AA%E8%AE%B0%E6%9C%89%E4%BB%80%E4%B9%88-%E8%BF%98%E8%A6%81%E8%AE%B0%E9%A1%BA%E5%BA%8F.mp3"
     },
     {
-      "id": "success-足球在这个位置上",
+      "id": "success-从左到右是小鱼-足球-飞机-第二个是足球",
       "kind": "success",
-      "text": "足球在这个位置上。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%B6%B3%E7%90%83%E5%9C%A8%E8%BF%99%E4%B8%AA%E4%BD%8D%E7%BD%AE%E4%B8%8A.mp3"
+      "text": "从左到右是小鱼、足球、飞机，第二个是足球。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E6%98%AF%E5%B0%8F%E9%B1%BC-%E8%B6%B3%E7%90%83-%E9%A3%9E%E6%9C%BA-%E7%AC%AC%E4%BA%8C%E4%B8%AA%E6%98%AF%E8%B6%B3%E7%90%83.mp3"
+    },
+    {
+      "id": "retry-先按顺序从左到右念-小鱼-足球-飞机-第二个就是足球",
+      "kind": "retry",
+      "text": "先按顺序从左到右念：小鱼、足球、飞机；第二个就是足球。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E6%8C%89%E9%A1%BA%E5%BA%8F%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E5%BF%B5-%E5%B0%8F%E9%B1%BC-%E8%B6%B3%E7%90%83-%E9%A3%9E%E6%9C%BA-%E7%AC%AC%E4%BA%8C%E4%B8%AA%E5%B0%B1%E6%98%AF%E8%B6%B3%E7%90%83.mp3"
+    },
+    {
+      "id": "parent-请她按顺序复述小鱼-足球-飞机-再说第二个为什么是足球",
+      "kind": "parent",
+      "text": "请她按顺序复述小鱼、足球、飞机，再说第二个为什么是足球。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%89%E9%A1%BA%E5%BA%8F%E5%A4%8D%E8%BF%B0%E5%B0%8F%E9%B1%BC-%E8%B6%B3%E7%90%83-%E9%A3%9E%E6%9C%BA-%E5%86%8D%E8%AF%B4%E7%AC%AC%E4%BA%8C%E4%B8%AA%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E8%B6%B3%E7%90%83.mp3"
     },
     {
       "id": "prompt-刚才最后一个是什么-不只记有什么-还要记顺序",
@@ -7619,10 +7703,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%88%9A%E6%89%8D%E6%9C%80%E5%90%8E%E4%B8%80%E4%B8%AA%E6%98%AF%E4%BB%80%E4%B9%88-%E4%B8%8D%E5%8F%AA%E8%AE%B0%E6%9C%89%E4%BB%80%E4%B9%88-%E8%BF%98%E8%A6%81%E8%AE%B0%E9%A1%BA%E5%BA%8F.mp3"
     },
     {
-      "id": "success-公交车在这个位置上",
+      "id": "success-从左到右是铅笔-葡萄-公交车-最后一个是公交车",
       "kind": "success",
-      "text": "公交车在这个位置上。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%85%AC%E4%BA%A4%E8%BD%A6%E5%9C%A8%E8%BF%99%E4%B8%AA%E4%BD%8D%E7%BD%AE%E4%B8%8A.mp3"
+      "text": "从左到右是铅笔、葡萄、公交车，最后一个是公交车。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E6%98%AF%E9%93%85%E7%AC%94-%E8%91%A1%E8%90%84-%E5%85%AC%E4%BA%A4%E8%BD%A6-%E6%9C%80%E5%90%8E%E4%B8%80%E4%B8%AA%E6%98%AF%E5%85%AC%E4%BA%A4%E8%BD%A6.mp3"
+    },
+    {
+      "id": "retry-先按顺序从左到右念-铅笔-葡萄-公交车-最后一个就是公交车",
+      "kind": "retry",
+      "text": "先按顺序从左到右念：铅笔、葡萄、公交车；最后一个就是公交车。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E6%8C%89%E9%A1%BA%E5%BA%8F%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E5%BF%B5-%E9%93%85%E7%AC%94-%E8%91%A1%E8%90%84-%E5%85%AC%E4%BA%A4%E8%BD%A6-%E6%9C%80%E5%90%8E%E4%B8%80%E4%B8%AA%E5%B0%B1%E6%98%AF%E5%85%AC%E4%BA%A4%E8%BD%A6.mp3"
+    },
+    {
+      "id": "parent-请她按顺序复述铅笔-葡萄-公交车-再说最后一个为什么是公交车",
+      "kind": "parent",
+      "text": "请她按顺序复述铅笔、葡萄、公交车，再说最后一个为什么是公交车。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%89%E9%A1%BA%E5%BA%8F%E5%A4%8D%E8%BF%B0%E9%93%85%E7%AC%94-%E8%91%A1%E8%90%84-%E5%85%AC%E4%BA%A4%E8%BD%A6-%E5%86%8D%E8%AF%B4%E6%9C%80%E5%90%8E%E4%B8%80%E4%B8%AA%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E5%85%AC%E4%BA%A4%E8%BD%A6.mp3"
     },
     {
       "id": "prompt-刚才第三个是什么-不只记有什么-还要记顺序",
@@ -7631,10 +7727,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%88%9A%E6%89%8D%E7%AC%AC%E4%B8%89%E4%B8%AA%E6%98%AF%E4%BB%80%E4%B9%88-%E4%B8%8D%E5%8F%AA%E8%AE%B0%E6%9C%89%E4%BB%80%E4%B9%88-%E8%BF%98%E8%A6%81%E8%AE%B0%E9%A1%BA%E5%BA%8F.mp3"
     },
     {
-      "id": "success-蛋糕在这个位置上",
+      "id": "success-从左到右是小猫-风筝-蛋糕-小鸟-第三个是蛋糕",
       "kind": "success",
-      "text": "蛋糕在这个位置上。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%9B%8B%E7%B3%95%E5%9C%A8%E8%BF%99%E4%B8%AA%E4%BD%8D%E7%BD%AE%E4%B8%8A.mp3"
+      "text": "从左到右是小猫、风筝、蛋糕、小鸟，第三个是蛋糕。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E6%98%AF%E5%B0%8F%E7%8C%AB-%E9%A3%8E%E7%AD%9D-%E8%9B%8B%E7%B3%95-%E5%B0%8F%E9%B8%9F-%E7%AC%AC%E4%B8%89%E4%B8%AA%E6%98%AF%E8%9B%8B%E7%B3%95.mp3"
+    },
+    {
+      "id": "retry-先按顺序从左到右念-小猫-风筝-蛋糕-小鸟-第三个就是蛋糕",
+      "kind": "retry",
+      "text": "先按顺序从左到右念：小猫、风筝、蛋糕、小鸟；第三个就是蛋糕。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E6%8C%89%E9%A1%BA%E5%BA%8F%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E5%BF%B5-%E5%B0%8F%E7%8C%AB-%E9%A3%8E%E7%AD%9D-%E8%9B%8B%E7%B3%95-%E5%B0%8F%E9%B8%9F-%E7%AC%AC%E4%B8%89%E4%B8%AA%E5%B0%B1%E6%98%AF%E8%9B%8B%E7%B3%95.mp3"
+    },
+    {
+      "id": "parent-请她按顺序复述小猫-风筝-蛋糕-小鸟-再说第三个为什么是蛋糕",
+      "kind": "parent",
+      "text": "请她按顺序复述小猫、风筝、蛋糕、小鸟，再说第三个为什么是蛋糕。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%89%E9%A1%BA%E5%BA%8F%E5%A4%8D%E8%BF%B0%E5%B0%8F%E7%8C%AB-%E9%A3%8E%E7%AD%9D-%E8%9B%8B%E7%B3%95-%E5%B0%8F%E9%B8%9F-%E5%86%8D%E8%AF%B4%E7%AC%AC%E4%B8%89%E4%B8%AA%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E8%9B%8B%E7%B3%95.mp3"
     },
     {
       "id": "game-title-一模一样在哪里",
