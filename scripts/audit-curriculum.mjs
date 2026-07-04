@@ -2,6 +2,8 @@ import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import ts from "typescript";
 
+const indexHtml = readFileSync("index.html", "utf8");
+const appSource = readFileSync("src/App.tsx", "utf8");
 const imageGallerySource = readFileSync("src/data/imageGallery.ts", "utf8");
 const imageGalleryOutput = ts.transpileModule(imageGallerySource, {
   compilerOptions: { module: ts.ModuleKind.ES2020, target: ts.ScriptTarget.ES2020 },
@@ -40,6 +42,22 @@ const visualRuleHints = [
 ];
 
 const problems = [];
+const brandLogoSrc = "/images/brand/thinking-house-brand-v3.png";
+const brandLogoPath = join("public", brandLogoSrc.replace(/^\/+/, ""));
+if (!existsSync(brandLogoPath)) problems.push(`brand logo image missing: ${brandLogoSrc}`);
+if (!indexHtml.includes("<title>小小思考屋</title>")) {
+  problems.push("index.html title should use the 小小思考屋 brand");
+}
+if (/小小思考岛/.test(indexHtml)) problems.push("index.html still contains old 小小思考岛 brand text");
+if (!indexHtml.includes(`<link rel="icon" type="image/png" href="${brandLogoSrc}" />`)) {
+  problems.push("index.html favicon should use the image-gen brand logo");
+}
+if (!indexHtml.includes(`<link rel="apple-touch-icon" href="${brandLogoSrc}" />`)) {
+  problems.push("index.html apple touch icon should use the image-gen brand logo");
+}
+if (!appSource.includes(`src="${brandLogoSrc}"`)) problems.push(`App sidebar should render image-gen brand logo: ${brandLogoSrc}`);
+if (/brand-(mark|logo)/.test(appSource)) problems.push("App still contains legacy inline brand logo markup");
+
 const forbiddenTextPatterns = [
   { pattern: /平常规则/, reason: "use natural wording such as 按红绿灯走" },
   { pattern: /小卡片/, reason: "avoid vague filler labels" },

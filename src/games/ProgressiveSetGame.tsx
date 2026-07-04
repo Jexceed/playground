@@ -54,16 +54,18 @@ export function ProgressiveSetGame({
   const isCorrect = answered && selected === round.answer;
   const isLastRound = roundIndex === game.rounds.length - 1;
   const isSubitizeRound = game.id === "math-subitize-match";
+  const subitizeCoverStartIndex = Math.max(0, game.rounds.length - 5);
+  const shouldAutoCoverSubitize = isSubitizeRound && roundIndex >= subitizeCoverStartIndex;
 
   useEffect(() => {
     if (voiceReady) speak(joinVoiceLine(round.prompt, round.instruction));
   }, [round.id, round.instruction, round.prompt, voiceReady]);
 
   useEffect(() => {
-    if (!isSubitizeRound || !subitizeVisible) return;
+    if (!shouldAutoCoverSubitize || !subitizeVisible) return;
     const timer = window.setTimeout(() => setSubitizeVisible(false), 1250);
     return () => window.clearTimeout(timer);
-  }, [isSubitizeRound, round.id, subitizeVisible]);
+  }, [round.id, shouldAutoCoverSubitize, subitizeVisible]);
 
   const completedTags = useMemo(
     () => Array.from(new Set(game.rounds.slice(0, roundIndex + (isCorrect ? 1 : 0)).flatMap((item) => item.abilityTags))),
@@ -162,14 +164,14 @@ export function ProgressiveSetGame({
         gameId={game.id}
         memoryCovered={memoryCovered}
         round={round}
-        subitizeVisible={!isSubitizeRound || subitizeVisible}
+        subitizeVisible={!shouldAutoCoverSubitize || subitizeVisible}
         onCoverMemory={() => {
           setMemoryCovered(true);
           playTone("notice");
           speak("遮住啦。现在想一想，再选答案。");
         }}
         onSubitizePeek={
-          isSubitizeRound
+          shouldAutoCoverSubitize
             ? () => {
                 setSubitizeVisible(true);
                 playTone("notice");
@@ -381,10 +383,15 @@ function RoundBoard({
 
 function visualGroupClasses(groups: NonNullable<GameRound["visualGroups"]>) {
   const allCounting = groups.every((group) => group.layout === "counting");
+  const isCountingChoice =
+    allCounting &&
+    groups.length === 3 &&
+    groups.every((group, index) => group.label === ["A", "B", "C"][index]);
+
   return [
     "visual-groups",
     allCounting && groups.length === 1 ? "visual-groups-counting-single" : "",
-    allCounting && groups.length > 1 ? "visual-groups-counting-choice" : "",
+    isCountingChoice ? "visual-groups-counting-choice" : "",
   ].filter(Boolean).join(" ");
 }
 

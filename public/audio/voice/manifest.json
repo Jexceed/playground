@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-07-01T18:39:22.113Z",
+  "generatedAt": "2026-07-02T18:01:43.050Z",
   "provider": "edge-tts Python package",
   "voice": "zh-CN-XiaoxiaoNeural",
   "rate": "-12%",
   "pitch": "+2Hz",
   "includeParent": true,
   "format": "mp3",
-  "count": 1582,
-  "requestedCount": 1582,
+  "count": 1515,
+  "requestedCount": 1515,
   "failures": [],
   "entries": [
     {
@@ -449,10 +449,10 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/game-goal-%E8%AE%AD%E7%BB%83-2-6-%E7%9A%84%E5%B0%8F%E6%95%B0%E9%87%8F%E8%BE%A8%E8%AE%A4-%E6%95%B0%E5%BD%A2%E8%BF%9E%E6%8E%A5%E5%92%8C%E6%95%B0%E9%87%8F%E7%BB%93%E6%9E%84.mp3"
     },
     {
-      "id": "prompt-看一眼-这里有几个-图案会遮住-先记整体形状",
+      "id": "prompt-看一眼-这里有几个-先看整体形状-不用一个个数",
       "kind": "prompt",
-      "text": "看一眼，这里有几个？图案会遮住，先记整体形状。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%9C%8B%E4%B8%80%E7%9C%BC-%E8%BF%99%E9%87%8C%E6%9C%89%E5%87%A0%E4%B8%AA-%E5%9B%BE%E6%A1%88%E4%BC%9A%E9%81%AE%E4%BD%8F-%E5%85%88%E8%AE%B0%E6%95%B4%E4%BD%93%E5%BD%A2%E7%8A%B6.mp3"
+      "text": "看一眼，这里有几个？先看整体形状，不用一个个数。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%9C%8B%E4%B8%80%E7%9C%BC-%E8%BF%99%E9%87%8C%E6%9C%89%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E6%95%B4%E4%BD%93%E5%BD%A2%E7%8A%B6-%E4%B8%8D%E7%94%A8%E4%B8%80%E4%B8%AA%E4%B8%AA%E6%95%B0.mp3"
     },
     {
       "id": "success-是-2-个-你可以看成斜着两个",
@@ -545,16 +545,16 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E7%B4%AB%E8%89%B2%E5%9C%86%E7%89%87.mp3"
     },
     {
-      "id": "success-是-2-个-你可以看成斜角两个",
+      "id": "success-是-2-个-你可以看成横着两个",
       "kind": "success",
-      "text": "是 2 个。你可以看成斜角两个。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%98%AF-2-%E4%B8%AA-%E4%BD%A0%E5%8F%AF%E4%BB%A5%E7%9C%8B%E6%88%90%E6%96%9C%E8%A7%92%E4%B8%A4%E4%B8%AA.mp3"
+      "text": "是 2 个。你可以看成横着两个。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%98%AF-2-%E4%B8%AA-%E4%BD%A0%E5%8F%AF%E4%BB%A5%E7%9C%8B%E6%88%90%E6%A8%AA%E7%9D%80%E4%B8%A4%E4%B8%AA.mp3"
     },
     {
-      "id": "retry-再看整体形状-斜角两个",
+      "id": "retry-再看整体形状-横着两个",
       "kind": "retry",
-      "text": "再看整体形状：斜角两个。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%86%8D%E7%9C%8B%E6%95%B4%E4%BD%93%E5%BD%A2%E7%8A%B6-%E6%96%9C%E8%A7%92%E4%B8%A4%E4%B8%AA.mp3"
+      "text": "再看整体形状：横着两个。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%86%8D%E7%9C%8B%E6%95%B4%E4%BD%93%E5%BD%A2%E7%8A%B6-%E6%A8%AA%E7%9D%80%E4%B8%A4%E4%B8%AA.mp3"
     },
     {
       "id": "success-是-3-个-你可以看成像一个小三角",
@@ -569,18 +569,6 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%86%8D%E7%9C%8B%E6%95%B4%E4%BD%93%E5%BD%A2%E7%8A%B6-%E5%83%8F%E4%B8%80%E4%B8%AA%E5%B0%8F%E4%B8%89%E8%A7%92.mp3"
     },
     {
-      "id": "success-是-6-个-你可以看成两列-每列三个",
-      "kind": "success",
-      "text": "是 6 个。你可以看成两列，每列三个。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%98%AF-6-%E4%B8%AA-%E4%BD%A0%E5%8F%AF%E4%BB%A5%E7%9C%8B%E6%88%90%E4%B8%A4%E5%88%97-%E6%AF%8F%E5%88%97%E4%B8%89%E4%B8%AA.mp3"
-    },
-    {
-      "id": "retry-再看整体形状-两列-每列三个",
-      "kind": "retry",
-      "text": "再看整体形状：两列，每列三个。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%86%8D%E7%9C%8B%E6%95%B4%E4%BD%93%E5%BD%A2%E7%8A%B6-%E4%B8%A4%E5%88%97-%E6%AF%8F%E5%88%97%E4%B8%89%E4%B8%AA.mp3"
-    },
-    {
       "id": "success-是-4-个-你可以看成像一个小方阵",
       "kind": "success",
       "text": "是 4 个。你可以看成像一个小方阵。",
@@ -593,22 +581,16 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%86%8D%E7%9C%8B%E6%95%B4%E4%BD%93%E5%BD%A2%E7%8A%B6-%E5%83%8F%E4%B8%80%E4%B8%AA%E5%B0%8F%E6%96%B9%E9%98%B5.mp3"
     },
     {
-      "id": "object-蓝色方块",
-      "kind": "object",
-      "text": "蓝色方块",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E8%93%9D%E8%89%B2%E6%96%B9%E5%9D%97.mp3"
-    },
-    {
-      "id": "success-是-5-个-你可以看成像一个叉形",
+      "id": "success-是-5-个-你可以看成上面三个-下面两个",
       "kind": "success",
-      "text": "是 5 个。你可以看成像一个叉形。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%98%AF-5-%E4%B8%AA-%E4%BD%A0%E5%8F%AF%E4%BB%A5%E7%9C%8B%E6%88%90%E5%83%8F%E4%B8%80%E4%B8%AA%E5%8F%89%E5%BD%A2.mp3"
+      "text": "是 5 个。你可以看成上面三个，下面两个。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%98%AF-5-%E4%B8%AA-%E4%BD%A0%E5%8F%AF%E4%BB%A5%E7%9C%8B%E6%88%90%E4%B8%8A%E9%9D%A2%E4%B8%89%E4%B8%AA-%E4%B8%8B%E9%9D%A2%E4%B8%A4%E4%B8%AA.mp3"
     },
     {
-      "id": "retry-再看整体形状-像一个叉形",
+      "id": "retry-再看整体形状-上面三个-下面两个",
       "kind": "retry",
-      "text": "再看整体形状：像一个叉形。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%86%8D%E7%9C%8B%E6%95%B4%E4%BD%93%E5%BD%A2%E7%8A%B6-%E5%83%8F%E4%B8%80%E4%B8%AA%E5%8F%89%E5%BD%A2.mp3"
+      "text": "再看整体形状：上面三个，下面两个。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%86%8D%E7%9C%8B%E6%95%B4%E4%BD%93%E5%BD%A2%E7%8A%B6-%E4%B8%8A%E9%9D%A2%E4%B8%89%E4%B8%AA-%E4%B8%8B%E9%9D%A2%E4%B8%A4%E4%B8%AA.mp3"
     },
     {
       "id": "success-是-6-个-你可以看成上面三个-下面三个",
@@ -623,16 +605,76 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%86%8D%E7%9C%8B%E6%95%B4%E4%BD%93%E5%BD%A2%E7%8A%B6-%E4%B8%8A%E9%9D%A2%E4%B8%89%E4%B8%AA-%E4%B8%8B%E9%9D%A2%E4%B8%89%E4%B8%AA.mp3"
     },
     {
-      "id": "success-是-4-个-你可以看成两行两列",
-      "kind": "success",
-      "text": "是 4 个。你可以看成两行两列。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%98%AF-4-%E4%B8%AA-%E4%BD%A0%E5%8F%AF%E4%BB%A5%E7%9C%8B%E6%88%90%E4%B8%A4%E8%A1%8C%E4%B8%A4%E5%88%97.mp3"
+      "id": "prompt-看一眼-这里有几个-图案会遮住-先记整体形状",
+      "kind": "prompt",
+      "text": "看一眼，这里有几个？图案会遮住，先记整体形状。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%9C%8B%E4%B8%80%E7%9C%BC-%E8%BF%99%E9%87%8C%E6%9C%89%E5%87%A0%E4%B8%AA-%E5%9B%BE%E6%A1%88%E4%BC%9A%E9%81%AE%E4%BD%8F-%E5%85%88%E8%AE%B0%E6%95%B4%E4%BD%93%E5%BD%A2%E7%8A%B6.mp3"
     },
     {
-      "id": "retry-再看整体形状-两行两列",
+      "id": "success-是-2-个-你可以看成竖着两个",
+      "kind": "success",
+      "text": "是 2 个。你可以看成竖着两个。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%98%AF-2-%E4%B8%AA-%E4%BD%A0%E5%8F%AF%E4%BB%A5%E7%9C%8B%E6%88%90%E7%AB%96%E7%9D%80%E4%B8%A4%E4%B8%AA.mp3"
+    },
+    {
+      "id": "retry-再看整体形状-竖着两个",
       "kind": "retry",
-      "text": "再看整体形状：两行两列。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%86%8D%E7%9C%8B%E6%95%B4%E4%BD%93%E5%BD%A2%E7%8A%B6-%E4%B8%A4%E8%A1%8C%E4%B8%A4%E5%88%97.mp3"
+      "text": "再看整体形状：竖着两个。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%86%8D%E7%9C%8B%E6%95%B4%E4%BD%93%E5%BD%A2%E7%8A%B6-%E7%AB%96%E7%9D%80%E4%B8%A4%E4%B8%AA.mp3"
+    },
+    {
+      "id": "object-蓝色方块",
+      "kind": "object",
+      "text": "蓝色方块",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E8%93%9D%E8%89%B2%E6%96%B9%E5%9D%97.mp3"
+    },
+    {
+      "id": "success-是-3-个-你可以看成像一个小拐角",
+      "kind": "success",
+      "text": "是 3 个。你可以看成像一个小拐角。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%98%AF-3-%E4%B8%AA-%E4%BD%A0%E5%8F%AF%E4%BB%A5%E7%9C%8B%E6%88%90%E5%83%8F%E4%B8%80%E4%B8%AA%E5%B0%8F%E6%8B%90%E8%A7%92.mp3"
+    },
+    {
+      "id": "retry-再看整体形状-像一个小拐角",
+      "kind": "retry",
+      "text": "再看整体形状：像一个小拐角。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%86%8D%E7%9C%8B%E6%95%B4%E4%BD%93%E5%BD%A2%E7%8A%B6-%E5%83%8F%E4%B8%80%E4%B8%AA%E5%B0%8F%E6%8B%90%E8%A7%92.mp3"
+    },
+    {
+      "id": "success-是-4-个-你可以看成中间围成一个菱形",
+      "kind": "success",
+      "text": "是 4 个。你可以看成中间围成一个菱形。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%98%AF-4-%E4%B8%AA-%E4%BD%A0%E5%8F%AF%E4%BB%A5%E7%9C%8B%E6%88%90%E4%B8%AD%E9%97%B4%E5%9B%B4%E6%88%90%E4%B8%80%E4%B8%AA%E8%8F%B1%E5%BD%A2.mp3"
+    },
+    {
+      "id": "retry-再看整体形状-中间围成一个菱形",
+      "kind": "retry",
+      "text": "再看整体形状：中间围成一个菱形。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%86%8D%E7%9C%8B%E6%95%B4%E4%BD%93%E5%BD%A2%E7%8A%B6-%E4%B8%AD%E9%97%B4%E5%9B%B4%E6%88%90%E4%B8%80%E4%B8%AA%E8%8F%B1%E5%BD%A2.mp3"
+    },
+    {
+      "id": "success-是-5-个-你可以看成像一个小十字",
+      "kind": "success",
+      "text": "是 5 个。你可以看成像一个小十字。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%98%AF-5-%E4%B8%AA-%E4%BD%A0%E5%8F%AF%E4%BB%A5%E7%9C%8B%E6%88%90%E5%83%8F%E4%B8%80%E4%B8%AA%E5%B0%8F%E5%8D%81%E5%AD%97.mp3"
+    },
+    {
+      "id": "retry-再看整体形状-像一个小十字",
+      "kind": "retry",
+      "text": "再看整体形状：像一个小十字。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%86%8D%E7%9C%8B%E6%95%B4%E4%BD%93%E5%BD%A2%E7%8A%B6-%E5%83%8F%E4%B8%80%E4%B8%AA%E5%B0%8F%E5%8D%81%E5%AD%97.mp3"
+    },
+    {
+      "id": "success-是-6-个-你可以看成两列贴在一起-每列三个",
+      "kind": "success",
+      "text": "是 6 个。你可以看成两列贴在一起，每列三个。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%98%AF-6-%E4%B8%AA-%E4%BD%A0%E5%8F%AF%E4%BB%A5%E7%9C%8B%E6%88%90%E4%B8%A4%E5%88%97%E8%B4%B4%E5%9C%A8%E4%B8%80%E8%B5%B7-%E6%AF%8F%E5%88%97%E4%B8%89%E4%B8%AA.mp3"
+    },
+    {
+      "id": "retry-再看整体形状-两列贴在一起-每列三个",
+      "kind": "retry",
+      "text": "再看整体形状：两列贴在一起，每列三个。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%86%8D%E7%9C%8B%E6%95%B4%E4%BD%93%E5%BD%A2%E7%8A%B6-%E4%B8%A4%E5%88%97%E8%B4%B4%E5%9C%A8%E4%B8%80%E8%B5%B7-%E6%AF%8F%E5%88%97%E4%B8%89%E4%B8%AA.mp3"
     },
     {
       "id": "game-title-多一点-少一点",
@@ -689,10 +731,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E4%B8%80%E6%A0%B7%E5%A4%9A.mp3"
     },
     {
+      "id": "success-右边更多-多-1-个",
+      "kind": "success",
+      "text": "右边更多，多 1 个。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%8F%B3%E8%BE%B9%E6%9B%B4%E5%A4%9A-%E5%A4%9A-1-%E4%B8%AA.mp3"
+    },
+    {
       "id": "success-左边更多-多-2-个",
       "kind": "success",
       "text": "左边更多，多 2 个。",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%B7%A6%E8%BE%B9%E6%9B%B4%E5%A4%9A-%E5%A4%9A-2-%E4%B8%AA.mp3"
+    },
+    {
+      "id": "success-右边更多-多-2-个",
+      "kind": "success",
+      "text": "右边更多，多 2 个。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%8F%B3%E8%BE%B9%E6%9B%B4%E5%A4%9A-%E5%A4%9A-2-%E4%B8%AA.mp3"
     },
     {
       "id": "success-两边都是-6-个-一样多",
@@ -791,16 +845,16 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/game-goal-%E5%BB%BA%E7%AB%8B%E6%95%B0%E7%9A%84%E5%90%88%E6%88%90%E5%88%86%E8%A7%A3-%E4%B8%BA%E5%8A%A0%E5%87%8F%E6%B3%95%E6%89%93%E5%BA%95.mp3"
     },
     {
-      "id": "prompt-1-个积木和-2-个积木合起来是几个-先看两堆-再合起来数",
+      "id": "prompt-1-个积木和-2-个积木加起来是几个-先看两堆-再加起来数",
       "kind": "prompt",
-      "text": "1 个积木和 2 个积木合起来是几个？先看两堆，再合起来数。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-1-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%92%8C-2-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E4%B8%A4%E5%A0%86-%E5%86%8D%E5%90%88%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
+      "text": "1 个积木和 2 个积木加起来是几个？先看两堆，再加起来数。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-1-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%92%8C-2-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E4%B8%A4%E5%A0%86-%E5%86%8D%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
     },
     {
-      "id": "success-1-和-2-合起来是-3",
+      "id": "success-1-和-2-加起来是-3",
       "kind": "success",
-      "text": "1 和 2 合起来是 3。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-1-%E5%92%8C-2-%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF-3.mp3"
+      "text": "1 和 2 加起来是 3。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-1-%E5%92%8C-2-%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%98%AF-3.mp3"
     },
     {
       "id": "retry-把两堆放在一起-从头数一遍",
@@ -809,334 +863,334 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E6%8A%8A%E4%B8%A4%E5%A0%86%E6%94%BE%E5%9C%A8%E4%B8%80%E8%B5%B7-%E4%BB%8E%E5%A4%B4%E6%95%B0%E4%B8%80%E9%81%8D.mp3"
     },
     {
-      "id": "parent-问她-还能不能换一种分法-也合成这个数",
+      "id": "parent-问她-还能不能换一种分法-加起来也是这个数",
       "kind": "parent",
-      "text": "问她：还能不能换一种分法，也合成这个数？",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E8%BF%98%E8%83%BD%E4%B8%8D%E8%83%BD%E6%8D%A2%E4%B8%80%E7%A7%8D%E5%88%86%E6%B3%95-%E4%B9%9F%E5%90%88%E6%88%90%E8%BF%99%E4%B8%AA%E6%95%B0.mp3"
+      "text": "问她：还能不能换一种分法，加起来也是这个数？",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E8%BF%98%E8%83%BD%E4%B8%8D%E8%83%BD%E6%8D%A2%E4%B8%80%E7%A7%8D%E5%88%86%E6%B3%95-%E5%8A%A0%E8%B5%B7%E6%9D%A5%E4%B9%9F%E6%98%AF%E8%BF%99%E4%B8%AA%E6%95%B0.mp3"
     },
     {
-      "id": "prompt-2-个积木和-1-个积木合起来是几个-先看两堆-再合起来数",
+      "id": "prompt-2-个积木和-1-个积木加起来是几个-先看两堆-再加起来数",
       "kind": "prompt",
-      "text": "2 个积木和 1 个积木合起来是几个？先看两堆，再合起来数。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-2-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%92%8C-1-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E4%B8%A4%E5%A0%86-%E5%86%8D%E5%90%88%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
+      "text": "2 个积木和 1 个积木加起来是几个？先看两堆，再加起来数。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-2-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%92%8C-1-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E4%B8%A4%E5%A0%86-%E5%86%8D%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
     },
     {
-      "id": "success-2-和-1-合起来是-3",
+      "id": "success-2-和-1-加起来是-3",
       "kind": "success",
-      "text": "2 和 1 合起来是 3。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-2-%E5%92%8C-1-%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF-3.mp3"
+      "text": "2 和 1 加起来是 3。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-2-%E5%92%8C-1-%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%98%AF-3.mp3"
     },
     {
-      "id": "prompt-1-个积木和-3-个积木合起来是几个-先看两堆-再合起来数",
+      "id": "prompt-1-个积木和-3-个积木加起来是几个-先看两堆-再加起来数",
       "kind": "prompt",
-      "text": "1 个积木和 3 个积木合起来是几个？先看两堆，再合起来数。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-1-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%92%8C-3-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E4%B8%A4%E5%A0%86-%E5%86%8D%E5%90%88%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
+      "text": "1 个积木和 3 个积木加起来是几个？先看两堆，再加起来数。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-1-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%92%8C-3-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E4%B8%A4%E5%A0%86-%E5%86%8D%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
     },
     {
-      "id": "success-1-和-3-合起来是-4",
+      "id": "success-1-和-3-加起来是-4",
       "kind": "success",
-      "text": "1 和 3 合起来是 4。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-1-%E5%92%8C-3-%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF-4.mp3"
+      "text": "1 和 3 加起来是 4。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-1-%E5%92%8C-3-%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%98%AF-4.mp3"
     },
     {
-      "id": "prompt-2-个积木和-2-个积木合起来是几个-先看两堆-再合起来数",
+      "id": "prompt-2-个积木和-2-个积木加起来是几个-先看两堆-再加起来数",
       "kind": "prompt",
-      "text": "2 个积木和 2 个积木合起来是几个？先看两堆，再合起来数。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-2-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%92%8C-2-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E4%B8%A4%E5%A0%86-%E5%86%8D%E5%90%88%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
+      "text": "2 个积木和 2 个积木加起来是几个？先看两堆，再加起来数。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-2-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%92%8C-2-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E4%B8%A4%E5%A0%86-%E5%86%8D%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
     },
     {
-      "id": "success-2-和-2-合起来是-4",
+      "id": "success-2-和-2-加起来是-4",
       "kind": "success",
-      "text": "2 和 2 合起来是 4。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-2-%E5%92%8C-2-%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF-4.mp3"
+      "text": "2 和 2 加起来是 4。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-2-%E5%92%8C-2-%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%98%AF-4.mp3"
     },
     {
-      "id": "prompt-3-个积木和-1-个积木合起来是几个-先看两堆-再合起来数",
+      "id": "prompt-3-个积木和-1-个积木加起来是几个-先看两堆-再加起来数",
       "kind": "prompt",
-      "text": "3 个积木和 1 个积木合起来是几个？先看两堆，再合起来数。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-3-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%92%8C-1-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E4%B8%A4%E5%A0%86-%E5%86%8D%E5%90%88%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
+      "text": "3 个积木和 1 个积木加起来是几个？先看两堆，再加起来数。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-3-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%92%8C-1-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E4%B8%A4%E5%A0%86-%E5%86%8D%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
     },
     {
-      "id": "success-3-和-1-合起来是-4",
+      "id": "success-3-和-1-加起来是-4",
       "kind": "success",
-      "text": "3 和 1 合起来是 4。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-3-%E5%92%8C-1-%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF-4.mp3"
+      "text": "3 和 1 加起来是 4。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-3-%E5%92%8C-1-%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%98%AF-4.mp3"
     },
     {
-      "id": "prompt-1-个积木和-4-个积木合起来是几个-先看两堆-再合起来数",
+      "id": "prompt-1-个积木和-4-个积木加起来是几个-先看两堆-再加起来数",
       "kind": "prompt",
-      "text": "1 个积木和 4 个积木合起来是几个？先看两堆，再合起来数。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-1-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%92%8C-4-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E4%B8%A4%E5%A0%86-%E5%86%8D%E5%90%88%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
+      "text": "1 个积木和 4 个积木加起来是几个？先看两堆，再加起来数。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-1-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%92%8C-4-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E4%B8%A4%E5%A0%86-%E5%86%8D%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
     },
     {
-      "id": "success-1-和-4-合起来是-5",
+      "id": "success-1-和-4-加起来是-5",
       "kind": "success",
-      "text": "1 和 4 合起来是 5。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-1-%E5%92%8C-4-%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF-5.mp3"
+      "text": "1 和 4 加起来是 5。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-1-%E5%92%8C-4-%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%98%AF-5.mp3"
     },
     {
-      "id": "prompt-2-个积木和-3-个积木合起来是几个-先看两堆-再合起来数",
+      "id": "prompt-2-个积木和-3-个积木加起来是几个-先看两堆-再加起来数",
       "kind": "prompt",
-      "text": "2 个积木和 3 个积木合起来是几个？先看两堆，再合起来数。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-2-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%92%8C-3-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E4%B8%A4%E5%A0%86-%E5%86%8D%E5%90%88%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
+      "text": "2 个积木和 3 个积木加起来是几个？先看两堆，再加起来数。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-2-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%92%8C-3-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E4%B8%A4%E5%A0%86-%E5%86%8D%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
     },
     {
-      "id": "success-2-和-3-合起来是-5",
+      "id": "success-2-和-3-加起来是-5",
       "kind": "success",
-      "text": "2 和 3 合起来是 5。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-2-%E5%92%8C-3-%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF-5.mp3"
+      "text": "2 和 3 加起来是 5。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-2-%E5%92%8C-3-%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%98%AF-5.mp3"
     },
     {
-      "id": "prompt-3-个积木和-2-个积木合起来是几个-先看两堆-再合起来数",
+      "id": "prompt-3-个积木和-2-个积木加起来是几个-先看两堆-再加起来数",
       "kind": "prompt",
-      "text": "3 个积木和 2 个积木合起来是几个？先看两堆，再合起来数。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-3-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%92%8C-2-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E4%B8%A4%E5%A0%86-%E5%86%8D%E5%90%88%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
+      "text": "3 个积木和 2 个积木加起来是几个？先看两堆，再加起来数。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-3-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%92%8C-2-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E4%B8%A4%E5%A0%86-%E5%86%8D%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
     },
     {
-      "id": "success-3-和-2-合起来是-5",
+      "id": "success-3-和-2-加起来是-5",
       "kind": "success",
-      "text": "3 和 2 合起来是 5。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-3-%E5%92%8C-2-%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF-5.mp3"
+      "text": "3 和 2 加起来是 5。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-3-%E5%92%8C-2-%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%98%AF-5.mp3"
     },
     {
-      "id": "prompt-4-个积木和-1-个积木合起来是几个-先看两堆-再合起来数",
+      "id": "prompt-4-个积木和-1-个积木加起来是几个-先看两堆-再加起来数",
       "kind": "prompt",
-      "text": "4 个积木和 1 个积木合起来是几个？先看两堆，再合起来数。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-4-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%92%8C-1-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E4%B8%A4%E5%A0%86-%E5%86%8D%E5%90%88%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
+      "text": "4 个积木和 1 个积木加起来是几个？先看两堆，再加起来数。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-4-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%92%8C-1-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E4%B8%A4%E5%A0%86-%E5%86%8D%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
     },
     {
-      "id": "success-4-和-1-合起来是-5",
+      "id": "success-4-和-1-加起来是-5",
       "kind": "success",
-      "text": "4 和 1 合起来是 5。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-4-%E5%92%8C-1-%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF-5.mp3"
+      "text": "4 和 1 加起来是 5。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-4-%E5%92%8C-1-%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%98%AF-5.mp3"
     },
     {
-      "id": "prompt-1-个积木和-5-个积木合起来是几个-先看两堆-再合起来数",
+      "id": "prompt-1-个积木和-5-个积木加起来是几个-先看两堆-再加起来数",
       "kind": "prompt",
-      "text": "1 个积木和 5 个积木合起来是几个？先看两堆，再合起来数。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-1-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%92%8C-5-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E4%B8%A4%E5%A0%86-%E5%86%8D%E5%90%88%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
+      "text": "1 个积木和 5 个积木加起来是几个？先看两堆，再加起来数。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-1-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%92%8C-5-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E4%B8%A4%E5%A0%86-%E5%86%8D%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
     },
     {
-      "id": "success-1-和-5-合起来是-6",
+      "id": "success-1-和-5-加起来是-6",
       "kind": "success",
-      "text": "1 和 5 合起来是 6。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-1-%E5%92%8C-5-%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF-6.mp3"
+      "text": "1 和 5 加起来是 6。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-1-%E5%92%8C-5-%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%98%AF-6.mp3"
     },
     {
-      "id": "prompt-2-个积木和-4-个积木合起来是几个-先看两堆-再合起来数",
+      "id": "prompt-2-个积木和-4-个积木加起来是几个-先看两堆-再加起来数",
       "kind": "prompt",
-      "text": "2 个积木和 4 个积木合起来是几个？先看两堆，再合起来数。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-2-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%92%8C-4-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E4%B8%A4%E5%A0%86-%E5%86%8D%E5%90%88%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
+      "text": "2 个积木和 4 个积木加起来是几个？先看两堆，再加起来数。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-2-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%92%8C-4-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E4%B8%A4%E5%A0%86-%E5%86%8D%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
     },
     {
-      "id": "success-2-和-4-合起来是-6",
+      "id": "success-2-和-4-加起来是-6",
       "kind": "success",
-      "text": "2 和 4 合起来是 6。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-2-%E5%92%8C-4-%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF-6.mp3"
+      "text": "2 和 4 加起来是 6。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-2-%E5%92%8C-4-%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%98%AF-6.mp3"
     },
     {
-      "id": "prompt-3-个积木和-3-个积木合起来是几个-先看两堆-再合起来数",
+      "id": "prompt-3-个积木和-3-个积木加起来是几个-先看两堆-再加起来数",
       "kind": "prompt",
-      "text": "3 个积木和 3 个积木合起来是几个？先看两堆，再合起来数。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-3-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%92%8C-3-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E4%B8%A4%E5%A0%86-%E5%86%8D%E5%90%88%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
+      "text": "3 个积木和 3 个积木加起来是几个？先看两堆，再加起来数。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-3-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%92%8C-3-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E4%B8%A4%E5%A0%86-%E5%86%8D%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
     },
     {
-      "id": "success-3-和-3-合起来是-6",
+      "id": "success-3-和-3-加起来是-6",
       "kind": "success",
-      "text": "3 和 3 合起来是 6。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-3-%E5%92%8C-3-%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF-6.mp3"
+      "text": "3 和 3 加起来是 6。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-3-%E5%92%8C-3-%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%98%AF-6.mp3"
     },
     {
-      "id": "prompt-4-个积木和-2-个积木合起来是几个-先看两堆-再合起来数",
+      "id": "prompt-4-个积木和-2-个积木加起来是几个-先看两堆-再加起来数",
       "kind": "prompt",
-      "text": "4 个积木和 2 个积木合起来是几个？先看两堆，再合起来数。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-4-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%92%8C-2-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E4%B8%A4%E5%A0%86-%E5%86%8D%E5%90%88%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
+      "text": "4 个积木和 2 个积木加起来是几个？先看两堆，再加起来数。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-4-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%92%8C-2-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E4%B8%A4%E5%A0%86-%E5%86%8D%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
     },
     {
-      "id": "success-4-和-2-合起来是-6",
+      "id": "success-4-和-2-加起来是-6",
       "kind": "success",
-      "text": "4 和 2 合起来是 6。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-4-%E5%92%8C-2-%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF-6.mp3"
+      "text": "4 和 2 加起来是 6。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-4-%E5%92%8C-2-%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%98%AF-6.mp3"
     },
     {
-      "id": "prompt-5-个积木和-1-个积木合起来是几个-先看两堆-再合起来数",
+      "id": "prompt-5-个积木和-1-个积木加起来是几个-先看两堆-再加起来数",
       "kind": "prompt",
-      "text": "5 个积木和 1 个积木合起来是几个？先看两堆，再合起来数。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-5-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%92%8C-1-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E4%B8%A4%E5%A0%86-%E5%86%8D%E5%90%88%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
+      "text": "5 个积木和 1 个积木加起来是几个？先看两堆，再加起来数。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-5-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%92%8C-1-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E4%B8%A4%E5%A0%86-%E5%86%8D%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
     },
     {
-      "id": "success-5-和-1-合起来是-6",
+      "id": "success-5-和-1-加起来是-6",
       "kind": "success",
-      "text": "5 和 1 合起来是 6。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-5-%E5%92%8C-1-%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF-6.mp3"
+      "text": "5 和 1 加起来是 6。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-5-%E5%92%8C-1-%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%98%AF-6.mp3"
     },
     {
-      "id": "prompt-1-个积木和-6-个积木合起来是几个-先看两堆-再合起来数",
+      "id": "prompt-1-个积木和-6-个积木加起来是几个-先看两堆-再加起来数",
       "kind": "prompt",
-      "text": "1 个积木和 6 个积木合起来是几个？先看两堆，再合起来数。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-1-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%92%8C-6-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E4%B8%A4%E5%A0%86-%E5%86%8D%E5%90%88%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
+      "text": "1 个积木和 6 个积木加起来是几个？先看两堆，再加起来数。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-1-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%92%8C-6-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E4%B8%A4%E5%A0%86-%E5%86%8D%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
     },
     {
-      "id": "success-1-和-6-合起来是-7",
+      "id": "success-1-和-6-加起来是-7",
       "kind": "success",
-      "text": "1 和 6 合起来是 7。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-1-%E5%92%8C-6-%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF-7.mp3"
+      "text": "1 和 6 加起来是 7。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-1-%E5%92%8C-6-%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%98%AF-7.mp3"
     },
     {
-      "id": "prompt-2-个积木和-5-个积木合起来是几个-先看两堆-再合起来数",
+      "id": "prompt-2-个积木和-5-个积木加起来是几个-先看两堆-再加起来数",
       "kind": "prompt",
-      "text": "2 个积木和 5 个积木合起来是几个？先看两堆，再合起来数。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-2-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%92%8C-5-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E4%B8%A4%E5%A0%86-%E5%86%8D%E5%90%88%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
+      "text": "2 个积木和 5 个积木加起来是几个？先看两堆，再加起来数。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-2-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%92%8C-5-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E4%B8%A4%E5%A0%86-%E5%86%8D%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
     },
     {
-      "id": "success-2-和-5-合起来是-7",
+      "id": "success-2-和-5-加起来是-7",
       "kind": "success",
-      "text": "2 和 5 合起来是 7。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-2-%E5%92%8C-5-%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF-7.mp3"
+      "text": "2 和 5 加起来是 7。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-2-%E5%92%8C-5-%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%98%AF-7.mp3"
     },
     {
-      "id": "prompt-3-个积木和-4-个积木合起来是几个-先看两堆-再合起来数",
+      "id": "prompt-3-个积木和-4-个积木加起来是几个-先看两堆-再加起来数",
       "kind": "prompt",
-      "text": "3 个积木和 4 个积木合起来是几个？先看两堆，再合起来数。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-3-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%92%8C-4-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E4%B8%A4%E5%A0%86-%E5%86%8D%E5%90%88%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
+      "text": "3 个积木和 4 个积木加起来是几个？先看两堆，再加起来数。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-3-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%92%8C-4-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E4%B8%A4%E5%A0%86-%E5%86%8D%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
     },
     {
-      "id": "success-3-和-4-合起来是-7",
+      "id": "success-3-和-4-加起来是-7",
       "kind": "success",
-      "text": "3 和 4 合起来是 7。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-3-%E5%92%8C-4-%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF-7.mp3"
+      "text": "3 和 4 加起来是 7。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-3-%E5%92%8C-4-%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%98%AF-7.mp3"
     },
     {
-      "id": "prompt-4-个积木和-3-个积木合起来是几个-先看两堆-再合起来数",
+      "id": "prompt-4-个积木和-3-个积木加起来是几个-先看两堆-再加起来数",
       "kind": "prompt",
-      "text": "4 个积木和 3 个积木合起来是几个？先看两堆，再合起来数。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-4-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%92%8C-3-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E4%B8%A4%E5%A0%86-%E5%86%8D%E5%90%88%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
+      "text": "4 个积木和 3 个积木加起来是几个？先看两堆，再加起来数。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-4-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%92%8C-3-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E4%B8%A4%E5%A0%86-%E5%86%8D%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
     },
     {
-      "id": "success-4-和-3-合起来是-7",
+      "id": "success-4-和-3-加起来是-7",
       "kind": "success",
-      "text": "4 和 3 合起来是 7。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-4-%E5%92%8C-3-%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF-7.mp3"
+      "text": "4 和 3 加起来是 7。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-4-%E5%92%8C-3-%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%98%AF-7.mp3"
     },
     {
-      "id": "prompt-5-个积木和-2-个积木合起来是几个-先看两堆-再合起来数",
+      "id": "prompt-5-个积木和-2-个积木加起来是几个-先看两堆-再加起来数",
       "kind": "prompt",
-      "text": "5 个积木和 2 个积木合起来是几个？先看两堆，再合起来数。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-5-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%92%8C-2-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E4%B8%A4%E5%A0%86-%E5%86%8D%E5%90%88%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
+      "text": "5 个积木和 2 个积木加起来是几个？先看两堆，再加起来数。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-5-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%92%8C-2-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E4%B8%A4%E5%A0%86-%E5%86%8D%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
     },
     {
-      "id": "success-5-和-2-合起来是-7",
+      "id": "success-5-和-2-加起来是-7",
       "kind": "success",
-      "text": "5 和 2 合起来是 7。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-5-%E5%92%8C-2-%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF-7.mp3"
+      "text": "5 和 2 加起来是 7。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-5-%E5%92%8C-2-%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%98%AF-7.mp3"
     },
     {
-      "id": "prompt-6-个积木和-1-个积木合起来是几个-先看两堆-再合起来数",
+      "id": "prompt-6-个积木和-1-个积木加起来是几个-先看两堆-再加起来数",
       "kind": "prompt",
-      "text": "6 个积木和 1 个积木合起来是几个？先看两堆，再合起来数。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-6-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%92%8C-1-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E4%B8%A4%E5%A0%86-%E5%86%8D%E5%90%88%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
+      "text": "6 个积木和 1 个积木加起来是几个？先看两堆，再加起来数。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-6-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%92%8C-1-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E4%B8%A4%E5%A0%86-%E5%86%8D%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
     },
     {
-      "id": "success-6-和-1-合起来是-7",
+      "id": "success-6-和-1-加起来是-7",
       "kind": "success",
-      "text": "6 和 1 合起来是 7。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-6-%E5%92%8C-1-%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF-7.mp3"
+      "text": "6 和 1 加起来是 7。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-6-%E5%92%8C-1-%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%98%AF-7.mp3"
     },
     {
-      "id": "prompt-2-个积木和-6-个积木合起来是几个-先看两堆-再合起来数",
+      "id": "prompt-2-个积木和-6-个积木加起来是几个-先看两堆-再加起来数",
       "kind": "prompt",
-      "text": "2 个积木和 6 个积木合起来是几个？先看两堆，再合起来数。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-2-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%92%8C-6-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E4%B8%A4%E5%A0%86-%E5%86%8D%E5%90%88%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
+      "text": "2 个积木和 6 个积木加起来是几个？先看两堆，再加起来数。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-2-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%92%8C-6-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E4%B8%A4%E5%A0%86-%E5%86%8D%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
     },
     {
-      "id": "success-2-和-6-合起来是-8",
+      "id": "success-2-和-6-加起来是-8",
       "kind": "success",
-      "text": "2 和 6 合起来是 8。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-2-%E5%92%8C-6-%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF-8.mp3"
+      "text": "2 和 6 加起来是 8。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-2-%E5%92%8C-6-%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%98%AF-8.mp3"
     },
     {
-      "id": "prompt-3-个积木和-5-个积木合起来是几个-先看两堆-再合起来数",
+      "id": "prompt-3-个积木和-5-个积木加起来是几个-先看两堆-再加起来数",
       "kind": "prompt",
-      "text": "3 个积木和 5 个积木合起来是几个？先看两堆，再合起来数。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-3-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%92%8C-5-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E4%B8%A4%E5%A0%86-%E5%86%8D%E5%90%88%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
+      "text": "3 个积木和 5 个积木加起来是几个？先看两堆，再加起来数。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-3-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%92%8C-5-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E4%B8%A4%E5%A0%86-%E5%86%8D%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
     },
     {
-      "id": "success-3-和-5-合起来是-8",
+      "id": "success-3-和-5-加起来是-8",
       "kind": "success",
-      "text": "3 和 5 合起来是 8。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-3-%E5%92%8C-5-%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF-8.mp3"
+      "text": "3 和 5 加起来是 8。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-3-%E5%92%8C-5-%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%98%AF-8.mp3"
     },
     {
-      "id": "prompt-4-个积木和-4-个积木合起来是几个-先看两堆-再合起来数",
+      "id": "prompt-4-个积木和-4-个积木加起来是几个-先看两堆-再加起来数",
       "kind": "prompt",
-      "text": "4 个积木和 4 个积木合起来是几个？先看两堆，再合起来数。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-4-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%92%8C-4-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E4%B8%A4%E5%A0%86-%E5%86%8D%E5%90%88%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
+      "text": "4 个积木和 4 个积木加起来是几个？先看两堆，再加起来数。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-4-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%92%8C-4-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E4%B8%A4%E5%A0%86-%E5%86%8D%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
     },
     {
-      "id": "success-4-和-4-合起来是-8",
+      "id": "success-4-和-4-加起来是-8",
       "kind": "success",
-      "text": "4 和 4 合起来是 8。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-4-%E5%92%8C-4-%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF-8.mp3"
+      "text": "4 和 4 加起来是 8。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-4-%E5%92%8C-4-%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%98%AF-8.mp3"
     },
     {
-      "id": "prompt-5-个积木和-3-个积木合起来是几个-先看两堆-再合起来数",
+      "id": "prompt-5-个积木和-3-个积木加起来是几个-先看两堆-再加起来数",
       "kind": "prompt",
-      "text": "5 个积木和 3 个积木合起来是几个？先看两堆，再合起来数。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-5-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%92%8C-3-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E4%B8%A4%E5%A0%86-%E5%86%8D%E5%90%88%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
+      "text": "5 个积木和 3 个积木加起来是几个？先看两堆，再加起来数。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-5-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%92%8C-3-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E4%B8%A4%E5%A0%86-%E5%86%8D%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
     },
     {
-      "id": "success-5-和-3-合起来是-8",
+      "id": "success-5-和-3-加起来是-8",
       "kind": "success",
-      "text": "5 和 3 合起来是 8。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-5-%E5%92%8C-3-%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF-8.mp3"
+      "text": "5 和 3 加起来是 8。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-5-%E5%92%8C-3-%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%98%AF-8.mp3"
     },
     {
-      "id": "prompt-6-个积木和-2-个积木合起来是几个-先看两堆-再合起来数",
+      "id": "prompt-6-个积木和-2-个积木加起来是几个-先看两堆-再加起来数",
       "kind": "prompt",
-      "text": "6 个积木和 2 个积木合起来是几个？先看两堆，再合起来数。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-6-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%92%8C-2-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E4%B8%A4%E5%A0%86-%E5%86%8D%E5%90%88%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
+      "text": "6 个积木和 2 个积木加起来是几个？先看两堆，再加起来数。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-6-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%92%8C-2-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E4%B8%A4%E5%A0%86-%E5%86%8D%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
     },
     {
-      "id": "success-6-和-2-合起来是-8",
+      "id": "success-6-和-2-加起来是-8",
       "kind": "success",
-      "text": "6 和 2 合起来是 8。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-6-%E5%92%8C-2-%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF-8.mp3"
+      "text": "6 和 2 加起来是 8。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-6-%E5%92%8C-2-%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%98%AF-8.mp3"
     },
     {
-      "id": "prompt-3-个积木和-6-个积木合起来是几个-先看两堆-再合起来数",
+      "id": "prompt-3-个积木和-6-个积木加起来是几个-先看两堆-再加起来数",
       "kind": "prompt",
-      "text": "3 个积木和 6 个积木合起来是几个？先看两堆，再合起来数。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-3-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%92%8C-6-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E4%B8%A4%E5%A0%86-%E5%86%8D%E5%90%88%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
+      "text": "3 个积木和 6 个积木加起来是几个？先看两堆，再加起来数。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-3-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%92%8C-6-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E4%B8%A4%E5%A0%86-%E5%86%8D%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
     },
     {
-      "id": "success-3-和-6-合起来是-9",
+      "id": "success-3-和-6-加起来是-9",
       "kind": "success",
-      "text": "3 和 6 合起来是 9。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-3-%E5%92%8C-6-%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF-9.mp3"
+      "text": "3 和 6 加起来是 9。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-3-%E5%92%8C-6-%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%98%AF-9.mp3"
     },
     {
-      "id": "prompt-4-个积木和-5-个积木合起来是几个-先看两堆-再合起来数",
+      "id": "prompt-4-个积木和-5-个积木加起来是几个-先看两堆-再加起来数",
       "kind": "prompt",
-      "text": "4 个积木和 5 个积木合起来是几个？先看两堆，再合起来数。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-4-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%92%8C-5-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E4%B8%A4%E5%A0%86-%E5%86%8D%E5%90%88%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
+      "text": "4 个积木和 5 个积木加起来是几个？先看两堆，再加起来数。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-4-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%92%8C-5-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E4%B8%A4%E5%A0%86-%E5%86%8D%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
     },
     {
-      "id": "success-4-和-5-合起来是-9",
+      "id": "success-4-和-5-加起来是-9",
       "kind": "success",
-      "text": "4 和 5 合起来是 9。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-4-%E5%92%8C-5-%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF-9.mp3"
+      "text": "4 和 5 加起来是 9。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-4-%E5%92%8C-5-%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%98%AF-9.mp3"
     },
     {
-      "id": "prompt-5-个积木和-4-个积木合起来是几个-先看两堆-再合起来数",
+      "id": "prompt-5-个积木和-4-个积木加起来是几个-先看两堆-再加起来数",
       "kind": "prompt",
-      "text": "5 个积木和 4 个积木合起来是几个？先看两堆，再合起来数。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-5-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%92%8C-4-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E4%B8%A4%E5%A0%86-%E5%86%8D%E5%90%88%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
+      "text": "5 个积木和 4 个积木加起来是几个？先看两堆，再加起来数。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-5-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%92%8C-4-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%98%AF%E5%87%A0%E4%B8%AA-%E5%85%88%E7%9C%8B%E4%B8%A4%E5%A0%86-%E5%86%8D%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
     },
     {
-      "id": "success-5-和-4-合起来是-9",
+      "id": "success-5-和-4-加起来是-9",
       "kind": "success",
-      "text": "5 和 4 合起来是 9。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-5-%E5%92%8C-4-%E5%90%88%E8%B5%B7%E6%9D%A5%E6%98%AF-9.mp3"
+      "text": "5 和 4 加起来是 9。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-5-%E5%92%8C-4-%E5%8A%A0%E8%B5%B7%E6%9D%A5%E6%98%AF-9.mp3"
     },
     {
       "id": "game-title-来了-又走了",
@@ -1145,310 +1199,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/game-title-%E6%9D%A5%E4%BA%86-%E5%8F%88%E8%B5%B0%E4%BA%86.mp3"
     },
     {
-      "id": "game-goal-理解加法是变多-减法是拿走或变少",
+      "id": "game-goal-理解减法是拿走-飞走或变少",
       "kind": "game-goal",
-      "text": "理解加法是变多，减法是拿走或变少。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/game-goal-%E7%90%86%E8%A7%A3%E5%8A%A0%E6%B3%95%E6%98%AF%E5%8F%98%E5%A4%9A-%E5%87%8F%E6%B3%95%E6%98%AF%E6%8B%BF%E8%B5%B0%E6%88%96%E5%8F%98%E5%B0%91.mp3"
+      "text": "理解减法是拿走、飞走或变少。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/game-goal-%E7%90%86%E8%A7%A3%E5%87%8F%E6%B3%95%E6%98%AF%E6%8B%BF%E8%B5%B0-%E9%A3%9E%E8%B5%B0%E6%88%96%E5%8F%98%E5%B0%91.mp3"
     },
     {
-      "id": "prompt-原来有-1-个橘子-又拿来-1-个-现在有几个-来了以后-数量会变多",
+      "id": "prompt-树上有-2-只小鸟-飞走-1-只-还剩几只-飞走以后-数量会变少",
       "kind": "prompt",
-      "text": "原来有 1 个橘子，又拿来 1 个，现在有几个？来了以后，数量会变多。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%8E%9F%E6%9D%A5%E6%9C%89-1-%E4%B8%AA%E6%A9%98%E5%AD%90-%E5%8F%88%E6%8B%BF%E6%9D%A5-1-%E4%B8%AA-%E7%8E%B0%E5%9C%A8%E6%9C%89%E5%87%A0%E4%B8%AA-%E6%9D%A5%E4%BA%86%E4%BB%A5%E5%90%8E-%E6%95%B0%E9%87%8F%E4%BC%9A%E5%8F%98%E5%A4%9A.mp3"
+      "text": "树上有 2 只小鸟，飞走 1 只，还剩几只？飞走以后，数量会变少。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%A0%91%E4%B8%8A%E6%9C%89-2-%E5%8F%AA%E5%B0%8F%E9%B8%9F-%E9%A3%9E%E8%B5%B0-1-%E5%8F%AA-%E8%BF%98%E5%89%A9%E5%87%A0%E5%8F%AA-%E9%A3%9E%E8%B5%B0%E4%BB%A5%E5%90%8E-%E6%95%B0%E9%87%8F%E4%BC%9A%E5%8F%98%E5%B0%91.mp3"
     },
     {
-      "id": "success-原来-1-个-又来-1-个-现在是-2-个",
+      "id": "success-2-只飞走-1-只-还剩-1-只",
       "kind": "success",
-      "text": "原来 1 个，又来 1 个，现在是 2 个。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%8E%9F%E6%9D%A5-1-%E4%B8%AA-%E5%8F%88%E6%9D%A5-1-%E4%B8%AA-%E7%8E%B0%E5%9C%A8%E6%98%AF-2-%E4%B8%AA.mp3"
-    },
-    {
-      "id": "retry-把原来的和新来的合起来数",
-      "kind": "retry",
-      "text": "把原来的和新来的合起来数。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E6%8A%8A%E5%8E%9F%E6%9D%A5%E7%9A%84%E5%92%8C%E6%96%B0%E6%9D%A5%E7%9A%84%E5%90%88%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
-    },
-    {
-      "id": "parent-请她说-原来几个-来了几个-现在几个",
-      "kind": "parent",
-      "text": "请她说：原来几个？来了几个？现在几个？",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E8%AF%B4-%E5%8E%9F%E6%9D%A5%E5%87%A0%E4%B8%AA-%E6%9D%A5%E4%BA%86%E5%87%A0%E4%B8%AA-%E7%8E%B0%E5%9C%A8%E5%87%A0%E4%B8%AA.mp3"
-    },
-    {
-      "id": "prompt-原来有-1-个橘子-又来了-2-个-现在有几个-来了以后-数量会变多",
-      "kind": "prompt",
-      "text": "原来有 1 个橘子，又来了 2 个，现在有几个？来了以后，数量会变多。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%8E%9F%E6%9D%A5%E6%9C%89-1-%E4%B8%AA%E6%A9%98%E5%AD%90-%E5%8F%88%E6%9D%A5%E4%BA%86-2-%E4%B8%AA-%E7%8E%B0%E5%9C%A8%E6%9C%89%E5%87%A0%E4%B8%AA-%E6%9D%A5%E4%BA%86%E4%BB%A5%E5%90%8E-%E6%95%B0%E9%87%8F%E4%BC%9A%E5%8F%98%E5%A4%9A.mp3"
-    },
-    {
-      "id": "success-原来-1-个-又来-2-个-现在是-3-个",
-      "kind": "success",
-      "text": "原来 1 个，又来 2 个，现在是 3 个。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%8E%9F%E6%9D%A5-1-%E4%B8%AA-%E5%8F%88%E6%9D%A5-2-%E4%B8%AA-%E7%8E%B0%E5%9C%A8%E6%98%AF-3-%E4%B8%AA.mp3"
-    },
-    {
-      "id": "prompt-原来有-1-个橘子-又放上-3-个-现在有几个-来了以后-数量会变多",
-      "kind": "prompt",
-      "text": "原来有 1 个橘子，又放上 3 个，现在有几个？来了以后，数量会变多。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%8E%9F%E6%9D%A5%E6%9C%89-1-%E4%B8%AA%E6%A9%98%E5%AD%90-%E5%8F%88%E6%94%BE%E4%B8%8A-3-%E4%B8%AA-%E7%8E%B0%E5%9C%A8%E6%9C%89%E5%87%A0%E4%B8%AA-%E6%9D%A5%E4%BA%86%E4%BB%A5%E5%90%8E-%E6%95%B0%E9%87%8F%E4%BC%9A%E5%8F%98%E5%A4%9A.mp3"
-    },
-    {
-      "id": "success-原来-1-个-又来-3-个-现在是-4-个",
-      "kind": "success",
-      "text": "原来 1 个，又来 3 个，现在是 4 个。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%8E%9F%E6%9D%A5-1-%E4%B8%AA-%E5%8F%88%E6%9D%A5-3-%E4%B8%AA-%E7%8E%B0%E5%9C%A8%E6%98%AF-4-%E4%B8%AA.mp3"
-    },
-    {
-      "id": "prompt-原来有-2-个橘子-又来了-1-个-现在有几个-来了以后-数量会变多",
-      "kind": "prompt",
-      "text": "原来有 2 个橘子，又来了 1 个，现在有几个？来了以后，数量会变多。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%8E%9F%E6%9D%A5%E6%9C%89-2-%E4%B8%AA%E6%A9%98%E5%AD%90-%E5%8F%88%E6%9D%A5%E4%BA%86-1-%E4%B8%AA-%E7%8E%B0%E5%9C%A8%E6%9C%89%E5%87%A0%E4%B8%AA-%E6%9D%A5%E4%BA%86%E4%BB%A5%E5%90%8E-%E6%95%B0%E9%87%8F%E4%BC%9A%E5%8F%98%E5%A4%9A.mp3"
-    },
-    {
-      "id": "success-原来-2-个-又来-1-个-现在是-3-个",
-      "kind": "success",
-      "text": "原来 2 个，又来 1 个，现在是 3 个。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%8E%9F%E6%9D%A5-2-%E4%B8%AA-%E5%8F%88%E6%9D%A5-1-%E4%B8%AA-%E7%8E%B0%E5%9C%A8%E6%98%AF-3-%E4%B8%AA.mp3"
-    },
-    {
-      "id": "prompt-原来有-2-个橘子-又放上-2-个-现在有几个-来了以后-数量会变多",
-      "kind": "prompt",
-      "text": "原来有 2 个橘子，又放上 2 个，现在有几个？来了以后，数量会变多。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%8E%9F%E6%9D%A5%E6%9C%89-2-%E4%B8%AA%E6%A9%98%E5%AD%90-%E5%8F%88%E6%94%BE%E4%B8%8A-2-%E4%B8%AA-%E7%8E%B0%E5%9C%A8%E6%9C%89%E5%87%A0%E4%B8%AA-%E6%9D%A5%E4%BA%86%E4%BB%A5%E5%90%8E-%E6%95%B0%E9%87%8F%E4%BC%9A%E5%8F%98%E5%A4%9A.mp3"
-    },
-    {
-      "id": "success-原来-2-个-又来-2-个-现在是-4-个",
-      "kind": "success",
-      "text": "原来 2 个，又来 2 个，现在是 4 个。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%8E%9F%E6%9D%A5-2-%E4%B8%AA-%E5%8F%88%E6%9D%A5-2-%E4%B8%AA-%E7%8E%B0%E5%9C%A8%E6%98%AF-4-%E4%B8%AA.mp3"
-    },
-    {
-      "id": "prompt-原来有-2-个橘子-又拿来-3-个-现在有几个-来了以后-数量会变多",
-      "kind": "prompt",
-      "text": "原来有 2 个橘子，又拿来 3 个，现在有几个？来了以后，数量会变多。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%8E%9F%E6%9D%A5%E6%9C%89-2-%E4%B8%AA%E6%A9%98%E5%AD%90-%E5%8F%88%E6%8B%BF%E6%9D%A5-3-%E4%B8%AA-%E7%8E%B0%E5%9C%A8%E6%9C%89%E5%87%A0%E4%B8%AA-%E6%9D%A5%E4%BA%86%E4%BB%A5%E5%90%8E-%E6%95%B0%E9%87%8F%E4%BC%9A%E5%8F%98%E5%A4%9A.mp3"
-    },
-    {
-      "id": "success-原来-2-个-又来-3-个-现在是-5-个",
-      "kind": "success",
-      "text": "原来 2 个，又来 3 个，现在是 5 个。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%8E%9F%E6%9D%A5-2-%E4%B8%AA-%E5%8F%88%E6%9D%A5-3-%E4%B8%AA-%E7%8E%B0%E5%9C%A8%E6%98%AF-5-%E4%B8%AA.mp3"
-    },
-    {
-      "id": "prompt-原来有-3-个橘子-又放上-1-个-现在有几个-来了以后-数量会变多",
-      "kind": "prompt",
-      "text": "原来有 3 个橘子，又放上 1 个，现在有几个？来了以后，数量会变多。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%8E%9F%E6%9D%A5%E6%9C%89-3-%E4%B8%AA%E6%A9%98%E5%AD%90-%E5%8F%88%E6%94%BE%E4%B8%8A-1-%E4%B8%AA-%E7%8E%B0%E5%9C%A8%E6%9C%89%E5%87%A0%E4%B8%AA-%E6%9D%A5%E4%BA%86%E4%BB%A5%E5%90%8E-%E6%95%B0%E9%87%8F%E4%BC%9A%E5%8F%98%E5%A4%9A.mp3"
-    },
-    {
-      "id": "success-原来-3-个-又来-1-个-现在是-4-个",
-      "kind": "success",
-      "text": "原来 3 个，又来 1 个，现在是 4 个。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%8E%9F%E6%9D%A5-3-%E4%B8%AA-%E5%8F%88%E6%9D%A5-1-%E4%B8%AA-%E7%8E%B0%E5%9C%A8%E6%98%AF-4-%E4%B8%AA.mp3"
-    },
-    {
-      "id": "prompt-原来有-3-个橘子-又拿来-2-个-现在有几个-来了以后-数量会变多",
-      "kind": "prompt",
-      "text": "原来有 3 个橘子，又拿来 2 个，现在有几个？来了以后，数量会变多。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%8E%9F%E6%9D%A5%E6%9C%89-3-%E4%B8%AA%E6%A9%98%E5%AD%90-%E5%8F%88%E6%8B%BF%E6%9D%A5-2-%E4%B8%AA-%E7%8E%B0%E5%9C%A8%E6%9C%89%E5%87%A0%E4%B8%AA-%E6%9D%A5%E4%BA%86%E4%BB%A5%E5%90%8E-%E6%95%B0%E9%87%8F%E4%BC%9A%E5%8F%98%E5%A4%9A.mp3"
-    },
-    {
-      "id": "success-原来-3-个-又来-2-个-现在是-5-个",
-      "kind": "success",
-      "text": "原来 3 个，又来 2 个，现在是 5 个。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%8E%9F%E6%9D%A5-3-%E4%B8%AA-%E5%8F%88%E6%9D%A5-2-%E4%B8%AA-%E7%8E%B0%E5%9C%A8%E6%98%AF-5-%E4%B8%AA.mp3"
-    },
-    {
-      "id": "prompt-原来有-3-个橘子-又来了-3-个-现在有几个-来了以后-数量会变多",
-      "kind": "prompt",
-      "text": "原来有 3 个橘子，又来了 3 个，现在有几个？来了以后，数量会变多。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%8E%9F%E6%9D%A5%E6%9C%89-3-%E4%B8%AA%E6%A9%98%E5%AD%90-%E5%8F%88%E6%9D%A5%E4%BA%86-3-%E4%B8%AA-%E7%8E%B0%E5%9C%A8%E6%9C%89%E5%87%A0%E4%B8%AA-%E6%9D%A5%E4%BA%86%E4%BB%A5%E5%90%8E-%E6%95%B0%E9%87%8F%E4%BC%9A%E5%8F%98%E5%A4%9A.mp3"
-    },
-    {
-      "id": "success-原来-3-个-又来-3-个-现在是-6-个",
-      "kind": "success",
-      "text": "原来 3 个，又来 3 个，现在是 6 个。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%8E%9F%E6%9D%A5-3-%E4%B8%AA-%E5%8F%88%E6%9D%A5-3-%E4%B8%AA-%E7%8E%B0%E5%9C%A8%E6%98%AF-6-%E4%B8%AA.mp3"
-    },
-    {
-      "id": "prompt-原来有-4-个橘子-又拿来-1-个-现在有几个-来了以后-数量会变多",
-      "kind": "prompt",
-      "text": "原来有 4 个橘子，又拿来 1 个，现在有几个？来了以后，数量会变多。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%8E%9F%E6%9D%A5%E6%9C%89-4-%E4%B8%AA%E6%A9%98%E5%AD%90-%E5%8F%88%E6%8B%BF%E6%9D%A5-1-%E4%B8%AA-%E7%8E%B0%E5%9C%A8%E6%9C%89%E5%87%A0%E4%B8%AA-%E6%9D%A5%E4%BA%86%E4%BB%A5%E5%90%8E-%E6%95%B0%E9%87%8F%E4%BC%9A%E5%8F%98%E5%A4%9A.mp3"
-    },
-    {
-      "id": "success-原来-4-个-又来-1-个-现在是-5-个",
-      "kind": "success",
-      "text": "原来 4 个，又来 1 个，现在是 5 个。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%8E%9F%E6%9D%A5-4-%E4%B8%AA-%E5%8F%88%E6%9D%A5-1-%E4%B8%AA-%E7%8E%B0%E5%9C%A8%E6%98%AF-5-%E4%B8%AA.mp3"
-    },
-    {
-      "id": "prompt-原来有-4-个橘子-又来了-2-个-现在有几个-来了以后-数量会变多",
-      "kind": "prompt",
-      "text": "原来有 4 个橘子，又来了 2 个，现在有几个？来了以后，数量会变多。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%8E%9F%E6%9D%A5%E6%9C%89-4-%E4%B8%AA%E6%A9%98%E5%AD%90-%E5%8F%88%E6%9D%A5%E4%BA%86-2-%E4%B8%AA-%E7%8E%B0%E5%9C%A8%E6%9C%89%E5%87%A0%E4%B8%AA-%E6%9D%A5%E4%BA%86%E4%BB%A5%E5%90%8E-%E6%95%B0%E9%87%8F%E4%BC%9A%E5%8F%98%E5%A4%9A.mp3"
-    },
-    {
-      "id": "success-原来-4-个-又来-2-个-现在是-6-个",
-      "kind": "success",
-      "text": "原来 4 个，又来 2 个，现在是 6 个。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%8E%9F%E6%9D%A5-4-%E4%B8%AA-%E5%8F%88%E6%9D%A5-2-%E4%B8%AA-%E7%8E%B0%E5%9C%A8%E6%98%AF-6-%E4%B8%AA.mp3"
-    },
-    {
-      "id": "prompt-原来有-4-个橘子-又放上-3-个-现在有几个-来了以后-数量会变多",
-      "kind": "prompt",
-      "text": "原来有 4 个橘子，又放上 3 个，现在有几个？来了以后，数量会变多。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%8E%9F%E6%9D%A5%E6%9C%89-4-%E4%B8%AA%E6%A9%98%E5%AD%90-%E5%8F%88%E6%94%BE%E4%B8%8A-3-%E4%B8%AA-%E7%8E%B0%E5%9C%A8%E6%9C%89%E5%87%A0%E4%B8%AA-%E6%9D%A5%E4%BA%86%E4%BB%A5%E5%90%8E-%E6%95%B0%E9%87%8F%E4%BC%9A%E5%8F%98%E5%A4%9A.mp3"
-    },
-    {
-      "id": "success-原来-4-个-又来-3-个-现在是-7-个",
-      "kind": "success",
-      "text": "原来 4 个，又来 3 个，现在是 7 个。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%8E%9F%E6%9D%A5-4-%E4%B8%AA-%E5%8F%88%E6%9D%A5-3-%E4%B8%AA-%E7%8E%B0%E5%9C%A8%E6%98%AF-7-%E4%B8%AA.mp3"
-    },
-    {
-      "id": "prompt-原来有-5-个橘子-又来了-1-个-现在有几个-来了以后-数量会变多",
-      "kind": "prompt",
-      "text": "原来有 5 个橘子，又来了 1 个，现在有几个？来了以后，数量会变多。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%8E%9F%E6%9D%A5%E6%9C%89-5-%E4%B8%AA%E6%A9%98%E5%AD%90-%E5%8F%88%E6%9D%A5%E4%BA%86-1-%E4%B8%AA-%E7%8E%B0%E5%9C%A8%E6%9C%89%E5%87%A0%E4%B8%AA-%E6%9D%A5%E4%BA%86%E4%BB%A5%E5%90%8E-%E6%95%B0%E9%87%8F%E4%BC%9A%E5%8F%98%E5%A4%9A.mp3"
-    },
-    {
-      "id": "success-原来-5-个-又来-1-个-现在是-6-个",
-      "kind": "success",
-      "text": "原来 5 个，又来 1 个，现在是 6 个。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%8E%9F%E6%9D%A5-5-%E4%B8%AA-%E5%8F%88%E6%9D%A5-1-%E4%B8%AA-%E7%8E%B0%E5%9C%A8%E6%98%AF-6-%E4%B8%AA.mp3"
-    },
-    {
-      "id": "prompt-原来有-5-个橘子-又放上-2-个-现在有几个-来了以后-数量会变多",
-      "kind": "prompt",
-      "text": "原来有 5 个橘子，又放上 2 个，现在有几个？来了以后，数量会变多。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%8E%9F%E6%9D%A5%E6%9C%89-5-%E4%B8%AA%E6%A9%98%E5%AD%90-%E5%8F%88%E6%94%BE%E4%B8%8A-2-%E4%B8%AA-%E7%8E%B0%E5%9C%A8%E6%9C%89%E5%87%A0%E4%B8%AA-%E6%9D%A5%E4%BA%86%E4%BB%A5%E5%90%8E-%E6%95%B0%E9%87%8F%E4%BC%9A%E5%8F%98%E5%A4%9A.mp3"
-    },
-    {
-      "id": "success-原来-5-个-又来-2-个-现在是-7-个",
-      "kind": "success",
-      "text": "原来 5 个，又来 2 个，现在是 7 个。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%8E%9F%E6%9D%A5-5-%E4%B8%AA-%E5%8F%88%E6%9D%A5-2-%E4%B8%AA-%E7%8E%B0%E5%9C%A8%E6%98%AF-7-%E4%B8%AA.mp3"
-    },
-    {
-      "id": "prompt-原来有-5-个橘子-又拿来-3-个-现在有几个-来了以后-数量会变多",
-      "kind": "prompt",
-      "text": "原来有 5 个橘子，又拿来 3 个，现在有几个？来了以后，数量会变多。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%8E%9F%E6%9D%A5%E6%9C%89-5-%E4%B8%AA%E6%A9%98%E5%AD%90-%E5%8F%88%E6%8B%BF%E6%9D%A5-3-%E4%B8%AA-%E7%8E%B0%E5%9C%A8%E6%9C%89%E5%87%A0%E4%B8%AA-%E6%9D%A5%E4%BA%86%E4%BB%A5%E5%90%8E-%E6%95%B0%E9%87%8F%E4%BC%9A%E5%8F%98%E5%A4%9A.mp3"
-    },
-    {
-      "id": "success-原来-5-个-又来-3-个-现在是-8-个",
-      "kind": "success",
-      "text": "原来 5 个，又来 3 个，现在是 8 个。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%8E%9F%E6%9D%A5-5-%E4%B8%AA-%E5%8F%88%E6%9D%A5-3-%E4%B8%AA-%E7%8E%B0%E5%9C%A8%E6%98%AF-8-%E4%B8%AA.mp3"
-    },
-    {
-      "id": "prompt-原来有-6-个橘子-又放上-1-个-现在有几个-来了以后-数量会变多",
-      "kind": "prompt",
-      "text": "原来有 6 个橘子，又放上 1 个，现在有几个？来了以后，数量会变多。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%8E%9F%E6%9D%A5%E6%9C%89-6-%E4%B8%AA%E6%A9%98%E5%AD%90-%E5%8F%88%E6%94%BE%E4%B8%8A-1-%E4%B8%AA-%E7%8E%B0%E5%9C%A8%E6%9C%89%E5%87%A0%E4%B8%AA-%E6%9D%A5%E4%BA%86%E4%BB%A5%E5%90%8E-%E6%95%B0%E9%87%8F%E4%BC%9A%E5%8F%98%E5%A4%9A.mp3"
-    },
-    {
-      "id": "success-原来-6-个-又来-1-个-现在是-7-个",
-      "kind": "success",
-      "text": "原来 6 个，又来 1 个，现在是 7 个。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%8E%9F%E6%9D%A5-6-%E4%B8%AA-%E5%8F%88%E6%9D%A5-1-%E4%B8%AA-%E7%8E%B0%E5%9C%A8%E6%98%AF-7-%E4%B8%AA.mp3"
-    },
-    {
-      "id": "prompt-原来有-6-个橘子-又拿来-2-个-现在有几个-来了以后-数量会变多",
-      "kind": "prompt",
-      "text": "原来有 6 个橘子，又拿来 2 个，现在有几个？来了以后，数量会变多。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%8E%9F%E6%9D%A5%E6%9C%89-6-%E4%B8%AA%E6%A9%98%E5%AD%90-%E5%8F%88%E6%8B%BF%E6%9D%A5-2-%E4%B8%AA-%E7%8E%B0%E5%9C%A8%E6%9C%89%E5%87%A0%E4%B8%AA-%E6%9D%A5%E4%BA%86%E4%BB%A5%E5%90%8E-%E6%95%B0%E9%87%8F%E4%BC%9A%E5%8F%98%E5%A4%9A.mp3"
-    },
-    {
-      "id": "success-原来-6-个-又来-2-个-现在是-8-个",
-      "kind": "success",
-      "text": "原来 6 个，又来 2 个，现在是 8 个。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%8E%9F%E6%9D%A5-6-%E4%B8%AA-%E5%8F%88%E6%9D%A5-2-%E4%B8%AA-%E7%8E%B0%E5%9C%A8%E6%98%AF-8-%E4%B8%AA.mp3"
-    },
-    {
-      "id": "prompt-原来有-6-个橘子-又来了-3-个-现在有几个-来了以后-数量会变多",
-      "kind": "prompt",
-      "text": "原来有 6 个橘子，又来了 3 个，现在有几个？来了以后，数量会变多。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%8E%9F%E6%9D%A5%E6%9C%89-6-%E4%B8%AA%E6%A9%98%E5%AD%90-%E5%8F%88%E6%9D%A5%E4%BA%86-3-%E4%B8%AA-%E7%8E%B0%E5%9C%A8%E6%9C%89%E5%87%A0%E4%B8%AA-%E6%9D%A5%E4%BA%86%E4%BB%A5%E5%90%8E-%E6%95%B0%E9%87%8F%E4%BC%9A%E5%8F%98%E5%A4%9A.mp3"
-    },
-    {
-      "id": "success-原来-6-个-又来-3-个-现在是-9-个",
-      "kind": "success",
-      "text": "原来 6 个，又来 3 个，现在是 9 个。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%8E%9F%E6%9D%A5-6-%E4%B8%AA-%E5%8F%88%E6%9D%A5-3-%E4%B8%AA-%E7%8E%B0%E5%9C%A8%E6%98%AF-9-%E4%B8%AA.mp3"
-    },
-    {
-      "id": "prompt-原来有-7-个橘子-又拿来-1-个-现在有几个-来了以后-数量会变多",
-      "kind": "prompt",
-      "text": "原来有 7 个橘子，又拿来 1 个，现在有几个？来了以后，数量会变多。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%8E%9F%E6%9D%A5%E6%9C%89-7-%E4%B8%AA%E6%A9%98%E5%AD%90-%E5%8F%88%E6%8B%BF%E6%9D%A5-1-%E4%B8%AA-%E7%8E%B0%E5%9C%A8%E6%9C%89%E5%87%A0%E4%B8%AA-%E6%9D%A5%E4%BA%86%E4%BB%A5%E5%90%8E-%E6%95%B0%E9%87%8F%E4%BC%9A%E5%8F%98%E5%A4%9A.mp3"
-    },
-    {
-      "id": "success-原来-7-个-又来-1-个-现在是-8-个",
-      "kind": "success",
-      "text": "原来 7 个，又来 1 个，现在是 8 个。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%8E%9F%E6%9D%A5-7-%E4%B8%AA-%E5%8F%88%E6%9D%A5-1-%E4%B8%AA-%E7%8E%B0%E5%9C%A8%E6%98%AF-8-%E4%B8%AA.mp3"
-    },
-    {
-      "id": "prompt-原来有-7-个橘子-又来了-2-个-现在有几个-来了以后-数量会变多",
-      "kind": "prompt",
-      "text": "原来有 7 个橘子，又来了 2 个，现在有几个？来了以后，数量会变多。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%8E%9F%E6%9D%A5%E6%9C%89-7-%E4%B8%AA%E6%A9%98%E5%AD%90-%E5%8F%88%E6%9D%A5%E4%BA%86-2-%E4%B8%AA-%E7%8E%B0%E5%9C%A8%E6%9C%89%E5%87%A0%E4%B8%AA-%E6%9D%A5%E4%BA%86%E4%BB%A5%E5%90%8E-%E6%95%B0%E9%87%8F%E4%BC%9A%E5%8F%98%E5%A4%9A.mp3"
-    },
-    {
-      "id": "success-原来-7-个-又来-2-个-现在是-9-个",
-      "kind": "success",
-      "text": "原来 7 个，又来 2 个，现在是 9 个。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%8E%9F%E6%9D%A5-7-%E4%B8%AA-%E5%8F%88%E6%9D%A5-2-%E4%B8%AA-%E7%8E%B0%E5%9C%A8%E6%98%AF-9-%E4%B8%AA.mp3"
-    },
-    {
-      "id": "prompt-原来有-7-个橘子-又放上-3-个-现在有几个-来了以后-数量会变多",
-      "kind": "prompt",
-      "text": "原来有 7 个橘子，又放上 3 个，现在有几个？来了以后，数量会变多。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%8E%9F%E6%9D%A5%E6%9C%89-7-%E4%B8%AA%E6%A9%98%E5%AD%90-%E5%8F%88%E6%94%BE%E4%B8%8A-3-%E4%B8%AA-%E7%8E%B0%E5%9C%A8%E6%9C%89%E5%87%A0%E4%B8%AA-%E6%9D%A5%E4%BA%86%E4%BB%A5%E5%90%8E-%E6%95%B0%E9%87%8F%E4%BC%9A%E5%8F%98%E5%A4%9A.mp3"
-    },
-    {
-      "id": "success-原来-7-个-又来-3-个-现在是-10-个",
-      "kind": "success",
-      "text": "原来 7 个，又来 3 个，现在是 10 个。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%8E%9F%E6%9D%A5-7-%E4%B8%AA-%E5%8F%88%E6%9D%A5-3-%E4%B8%AA-%E7%8E%B0%E5%9C%A8%E6%98%AF-10-%E4%B8%AA.mp3"
-    },
-    {
-      "id": "prompt-原来有-8-个橘子-又来了-1-个-现在有几个-来了以后-数量会变多",
-      "kind": "prompt",
-      "text": "原来有 8 个橘子，又来了 1 个，现在有几个？来了以后，数量会变多。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%8E%9F%E6%9D%A5%E6%9C%89-8-%E4%B8%AA%E6%A9%98%E5%AD%90-%E5%8F%88%E6%9D%A5%E4%BA%86-1-%E4%B8%AA-%E7%8E%B0%E5%9C%A8%E6%9C%89%E5%87%A0%E4%B8%AA-%E6%9D%A5%E4%BA%86%E4%BB%A5%E5%90%8E-%E6%95%B0%E9%87%8F%E4%BC%9A%E5%8F%98%E5%A4%9A.mp3"
-    },
-    {
-      "id": "success-原来-8-个-又来-1-个-现在是-9-个",
-      "kind": "success",
-      "text": "原来 8 个，又来 1 个，现在是 9 个。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%8E%9F%E6%9D%A5-8-%E4%B8%AA-%E5%8F%88%E6%9D%A5-1-%E4%B8%AA-%E7%8E%B0%E5%9C%A8%E6%98%AF-9-%E4%B8%AA.mp3"
-    },
-    {
-      "id": "prompt-原来有-8-个橘子-又放上-2-个-现在有几个-来了以后-数量会变多",
-      "kind": "prompt",
-      "text": "原来有 8 个橘子，又放上 2 个，现在有几个？来了以后，数量会变多。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%8E%9F%E6%9D%A5%E6%9C%89-8-%E4%B8%AA%E6%A9%98%E5%AD%90-%E5%8F%88%E6%94%BE%E4%B8%8A-2-%E4%B8%AA-%E7%8E%B0%E5%9C%A8%E6%9C%89%E5%87%A0%E4%B8%AA-%E6%9D%A5%E4%BA%86%E4%BB%A5%E5%90%8E-%E6%95%B0%E9%87%8F%E4%BC%9A%E5%8F%98%E5%A4%9A.mp3"
-    },
-    {
-      "id": "success-原来-8-个-又来-2-个-现在是-10-个",
-      "kind": "success",
-      "text": "原来 8 个，又来 2 个，现在是 10 个。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%8E%9F%E6%9D%A5-8-%E4%B8%AA-%E5%8F%88%E6%9D%A5-2-%E4%B8%AA-%E7%8E%B0%E5%9C%A8%E6%98%AF-10-%E4%B8%AA.mp3"
-    },
-    {
-      "id": "prompt-树上有-3-只小鸟-飞走-1-只-还剩几只-飞走以后-数量会变少",
-      "kind": "prompt",
-      "text": "树上有 3 只小鸟，飞走 1 只，还剩几只？飞走以后，数量会变少。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%A0%91%E4%B8%8A%E6%9C%89-3-%E5%8F%AA%E5%B0%8F%E9%B8%9F-%E9%A3%9E%E8%B5%B0-1-%E5%8F%AA-%E8%BF%98%E5%89%A9%E5%87%A0%E5%8F%AA-%E9%A3%9E%E8%B5%B0%E4%BB%A5%E5%90%8E-%E6%95%B0%E9%87%8F%E4%BC%9A%E5%8F%98%E5%B0%91.mp3"
-    },
-    {
-      "id": "success-3-只飞走-1-只-还剩-2-只",
-      "kind": "success",
-      "text": "3 只飞走 1 只，还剩 2 只。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-3-%E5%8F%AA%E9%A3%9E%E8%B5%B0-1-%E5%8F%AA-%E8%BF%98%E5%89%A9-2-%E5%8F%AA.mp3"
+      "text": "2 只飞走 1 只，还剩 1 只。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-2-%E5%8F%AA%E9%A3%9E%E8%B5%B0-1-%E5%8F%AA-%E8%BF%98%E5%89%A9-1-%E5%8F%AA.mp3"
     },
     {
       "id": "retry-把飞走的先拿开-只数剩下的",
@@ -1463,16 +1229,16 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E8%BF%99%E6%AC%A1%E6%98%AF%E5%8F%98%E5%A4%9A%E4%BA%86%E8%BF%98%E6%98%AF%E5%8F%98%E5%B0%91%E4%BA%86.mp3"
     },
     {
-      "id": "prompt-树上有-3-只小鸟-飞走-2-只-还剩几只-飞走以后-数量会变少",
+      "id": "prompt-树上有-3-只小鸟-飞走-1-只-还剩几只-飞走以后-数量会变少",
       "kind": "prompt",
-      "text": "树上有 3 只小鸟，飞走 2 只，还剩几只？飞走以后，数量会变少。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%A0%91%E4%B8%8A%E6%9C%89-3-%E5%8F%AA%E5%B0%8F%E9%B8%9F-%E9%A3%9E%E8%B5%B0-2-%E5%8F%AA-%E8%BF%98%E5%89%A9%E5%87%A0%E5%8F%AA-%E9%A3%9E%E8%B5%B0%E4%BB%A5%E5%90%8E-%E6%95%B0%E9%87%8F%E4%BC%9A%E5%8F%98%E5%B0%91.mp3"
+      "text": "树上有 3 只小鸟，飞走 1 只，还剩几只？飞走以后，数量会变少。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%A0%91%E4%B8%8A%E6%9C%89-3-%E5%8F%AA%E5%B0%8F%E9%B8%9F-%E9%A3%9E%E8%B5%B0-1-%E5%8F%AA-%E8%BF%98%E5%89%A9%E5%87%A0%E5%8F%AA-%E9%A3%9E%E8%B5%B0%E4%BB%A5%E5%90%8E-%E6%95%B0%E9%87%8F%E4%BC%9A%E5%8F%98%E5%B0%91.mp3"
     },
     {
-      "id": "success-3-只飞走-2-只-还剩-1-只",
+      "id": "success-3-只飞走-1-只-还剩-2-只",
       "kind": "success",
-      "text": "3 只飞走 2 只，还剩 1 只。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-3-%E5%8F%AA%E9%A3%9E%E8%B5%B0-2-%E5%8F%AA-%E8%BF%98%E5%89%A9-1-%E5%8F%AA.mp3"
+      "text": "3 只飞走 1 只，还剩 2 只。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-3-%E5%8F%AA%E9%A3%9E%E8%B5%B0-1-%E5%8F%AA-%E8%BF%98%E5%89%A9-2-%E5%8F%AA.mp3"
     },
     {
       "id": "prompt-树上有-4-只小鸟-飞走-1-只-还剩几只-飞走以后-数量会变少",
@@ -1499,18 +1265,6 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-4-%E5%8F%AA%E9%A3%9E%E8%B5%B0-2-%E5%8F%AA-%E8%BF%98%E5%89%A9-2-%E5%8F%AA.mp3"
     },
     {
-      "id": "prompt-树上有-4-只小鸟-飞走-3-只-还剩几只-飞走以后-数量会变少",
-      "kind": "prompt",
-      "text": "树上有 4 只小鸟，飞走 3 只，还剩几只？飞走以后，数量会变少。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%A0%91%E4%B8%8A%E6%9C%89-4-%E5%8F%AA%E5%B0%8F%E9%B8%9F-%E9%A3%9E%E8%B5%B0-3-%E5%8F%AA-%E8%BF%98%E5%89%A9%E5%87%A0%E5%8F%AA-%E9%A3%9E%E8%B5%B0%E4%BB%A5%E5%90%8E-%E6%95%B0%E9%87%8F%E4%BC%9A%E5%8F%98%E5%B0%91.mp3"
-    },
-    {
-      "id": "success-4-只飞走-3-只-还剩-1-只",
-      "kind": "success",
-      "text": "4 只飞走 3 只，还剩 1 只。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-4-%E5%8F%AA%E9%A3%9E%E8%B5%B0-3-%E5%8F%AA-%E8%BF%98%E5%89%A9-1-%E5%8F%AA.mp3"
-    },
-    {
       "id": "prompt-树上有-5-只小鸟-飞走-1-只-还剩几只-飞走以后-数量会变少",
       "kind": "prompt",
       "text": "树上有 5 只小鸟，飞走 1 只，还剩几只？飞走以后，数量会变少。",
@@ -1533,30 +1287,6 @@
       "kind": "success",
       "text": "5 只飞走 2 只，还剩 3 只。",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-5-%E5%8F%AA%E9%A3%9E%E8%B5%B0-2-%E5%8F%AA-%E8%BF%98%E5%89%A9-3-%E5%8F%AA.mp3"
-    },
-    {
-      "id": "prompt-树上有-5-只小鸟-飞走-3-只-还剩几只-飞走以后-数量会变少",
-      "kind": "prompt",
-      "text": "树上有 5 只小鸟，飞走 3 只，还剩几只？飞走以后，数量会变少。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%A0%91%E4%B8%8A%E6%9C%89-5-%E5%8F%AA%E5%B0%8F%E9%B8%9F-%E9%A3%9E%E8%B5%B0-3-%E5%8F%AA-%E8%BF%98%E5%89%A9%E5%87%A0%E5%8F%AA-%E9%A3%9E%E8%B5%B0%E4%BB%A5%E5%90%8E-%E6%95%B0%E9%87%8F%E4%BC%9A%E5%8F%98%E5%B0%91.mp3"
-    },
-    {
-      "id": "success-5-只飞走-3-只-还剩-2-只",
-      "kind": "success",
-      "text": "5 只飞走 3 只，还剩 2 只。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-5-%E5%8F%AA%E9%A3%9E%E8%B5%B0-3-%E5%8F%AA-%E8%BF%98%E5%89%A9-2-%E5%8F%AA.mp3"
-    },
-    {
-      "id": "prompt-树上有-6-只小鸟-飞走-1-只-还剩几只-飞走以后-数量会变少",
-      "kind": "prompt",
-      "text": "树上有 6 只小鸟，飞走 1 只，还剩几只？飞走以后，数量会变少。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%A0%91%E4%B8%8A%E6%9C%89-6-%E5%8F%AA%E5%B0%8F%E9%B8%9F-%E9%A3%9E%E8%B5%B0-1-%E5%8F%AA-%E8%BF%98%E5%89%A9%E5%87%A0%E5%8F%AA-%E9%A3%9E%E8%B5%B0%E4%BB%A5%E5%90%8E-%E6%95%B0%E9%87%8F%E4%BC%9A%E5%8F%98%E5%B0%91.mp3"
-    },
-    {
-      "id": "success-6-只飞走-1-只-还剩-5-只",
-      "kind": "success",
-      "text": "6 只飞走 1 只，还剩 5 只。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-6-%E5%8F%AA%E9%A3%9E%E8%B5%B0-1-%E5%8F%AA-%E8%BF%98%E5%89%A9-5-%E5%8F%AA.mp3"
     },
     {
       "id": "prompt-树上有-6-只小鸟-飞走-2-只-还剩几只-飞走以后-数量会变少",
@@ -1583,18 +1313,6 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-6-%E5%8F%AA%E9%A3%9E%E8%B5%B0-3-%E5%8F%AA-%E8%BF%98%E5%89%A9-3-%E5%8F%AA.mp3"
     },
     {
-      "id": "prompt-树上有-7-只小鸟-飞走-1-只-还剩几只-飞走以后-数量会变少",
-      "kind": "prompt",
-      "text": "树上有 7 只小鸟，飞走 1 只，还剩几只？飞走以后，数量会变少。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%A0%91%E4%B8%8A%E6%9C%89-7-%E5%8F%AA%E5%B0%8F%E9%B8%9F-%E9%A3%9E%E8%B5%B0-1-%E5%8F%AA-%E8%BF%98%E5%89%A9%E5%87%A0%E5%8F%AA-%E9%A3%9E%E8%B5%B0%E4%BB%A5%E5%90%8E-%E6%95%B0%E9%87%8F%E4%BC%9A%E5%8F%98%E5%B0%91.mp3"
-    },
-    {
-      "id": "success-7-只飞走-1-只-还剩-6-只",
-      "kind": "success",
-      "text": "7 只飞走 1 只，还剩 6 只。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-7-%E5%8F%AA%E9%A3%9E%E8%B5%B0-1-%E5%8F%AA-%E8%BF%98%E5%89%A9-6-%E5%8F%AA.mp3"
-    },
-    {
       "id": "prompt-树上有-7-只小鸟-飞走-2-只-还剩几只-飞走以后-数量会变少",
       "kind": "prompt",
       "text": "树上有 7 只小鸟，飞走 2 只，还剩几只？飞走以后，数量会变少。",
@@ -1605,6 +1323,42 @@
       "kind": "success",
       "text": "7 只飞走 2 只，还剩 5 只。",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-7-%E5%8F%AA%E9%A3%9E%E8%B5%B0-2-%E5%8F%AA-%E8%BF%98%E5%89%A9-5-%E5%8F%AA.mp3"
+    },
+    {
+      "id": "prompt-树上有-8-只小鸟-飞走-3-只-还剩几只-飞走以后-数量会变少",
+      "kind": "prompt",
+      "text": "树上有 8 只小鸟，飞走 3 只，还剩几只？飞走以后，数量会变少。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%A0%91%E4%B8%8A%E6%9C%89-8-%E5%8F%AA%E5%B0%8F%E9%B8%9F-%E9%A3%9E%E8%B5%B0-3-%E5%8F%AA-%E8%BF%98%E5%89%A9%E5%87%A0%E5%8F%AA-%E9%A3%9E%E8%B5%B0%E4%BB%A5%E5%90%8E-%E6%95%B0%E9%87%8F%E4%BC%9A%E5%8F%98%E5%B0%91.mp3"
+    },
+    {
+      "id": "success-8-只飞走-3-只-还剩-5-只",
+      "kind": "success",
+      "text": "8 只飞走 3 只，还剩 5 只。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-8-%E5%8F%AA%E9%A3%9E%E8%B5%B0-3-%E5%8F%AA-%E8%BF%98%E5%89%A9-5-%E5%8F%AA.mp3"
+    },
+    {
+      "id": "prompt-树上有-9-只小鸟-飞走-2-只-还剩几只-飞走以后-数量会变少",
+      "kind": "prompt",
+      "text": "树上有 9 只小鸟，飞走 2 只，还剩几只？飞走以后，数量会变少。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%A0%91%E4%B8%8A%E6%9C%89-9-%E5%8F%AA%E5%B0%8F%E9%B8%9F-%E9%A3%9E%E8%B5%B0-2-%E5%8F%AA-%E8%BF%98%E5%89%A9%E5%87%A0%E5%8F%AA-%E9%A3%9E%E8%B5%B0%E4%BB%A5%E5%90%8E-%E6%95%B0%E9%87%8F%E4%BC%9A%E5%8F%98%E5%B0%91.mp3"
+    },
+    {
+      "id": "success-9-只飞走-2-只-还剩-7-只",
+      "kind": "success",
+      "text": "9 只飞走 2 只，还剩 7 只。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-9-%E5%8F%AA%E9%A3%9E%E8%B5%B0-2-%E5%8F%AA-%E8%BF%98%E5%89%A9-7-%E5%8F%AA.mp3"
+    },
+    {
+      "id": "prompt-树上有-10-只小鸟-飞走-3-只-还剩几只-飞走以后-数量会变少",
+      "kind": "prompt",
+      "text": "树上有 10 只小鸟，飞走 3 只，还剩几只？飞走以后，数量会变少。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%A0%91%E4%B8%8A%E6%9C%89-10-%E5%8F%AA%E5%B0%8F%E9%B8%9F-%E9%A3%9E%E8%B5%B0-3-%E5%8F%AA-%E8%BF%98%E5%89%A9%E5%87%A0%E5%8F%AA-%E9%A3%9E%E8%B5%B0%E4%BB%A5%E5%90%8E-%E6%95%B0%E9%87%8F%E4%BC%9A%E5%8F%98%E5%B0%91.mp3"
+    },
+    {
+      "id": "success-10-只飞走-3-只-还剩-7-只",
+      "kind": "success",
+      "text": "10 只飞走 3 只，还剩 7 只。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-10-%E5%8F%AA%E9%A3%9E%E8%B5%B0-3-%E5%8F%AA-%E8%BF%98%E5%89%A9-7-%E5%8F%AA.mp3"
     },
     {
       "id": "game-title-公平分一分",
@@ -1619,22 +1373,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/game-goal-%E7%90%86%E8%A7%A3%E5%B9%B3%E5%9D%87%E5%88%86-%E5%85%AC%E5%B9%B3-%E6%AF%8F%E4%BB%BD%E4%B8%80%E6%A0%B7%E5%A4%9A.mp3"
     },
     {
-      "id": "prompt-2-条小鱼分给-2-个小朋友-每人一样多-每人几个-可以一个一个轮流分",
+      "id": "prompt-2-个纸杯蛋糕分给-2-个小朋友-每人一样多-每人几个纸杯蛋糕-可以一个一个轮流分",
       "kind": "prompt",
-      "text": "2 条小鱼分给 2 个小朋友，每人一样多，每人几个？可以一个一个轮流分。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-2-%E6%9D%A1%E5%B0%8F%E9%B1%BC%E5%88%86%E7%BB%99-2-%E4%B8%AA%E5%B0%8F%E6%9C%8B%E5%8F%8B-%E6%AF%8F%E4%BA%BA%E4%B8%80%E6%A0%B7%E5%A4%9A-%E6%AF%8F%E4%BA%BA%E5%87%A0%E4%B8%AA-%E5%8F%AF%E4%BB%A5%E4%B8%80%E4%B8%AA%E4%B8%80%E4%B8%AA%E8%BD%AE%E6%B5%81%E5%88%86.mp3"
+      "text": "2 个纸杯蛋糕分给 2 个小朋友，每人一样多，每人几个纸杯蛋糕？可以一个一个轮流分。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-2-%E4%B8%AA%E7%BA%B8%E6%9D%AF%E8%9B%8B%E7%B3%95%E5%88%86%E7%BB%99-2-%E4%B8%AA%E5%B0%8F%E6%9C%8B%E5%8F%8B-%E6%AF%8F%E4%BA%BA%E4%B8%80%E6%A0%B7%E5%A4%9A-%E6%AF%8F%E4%BA%BA%E5%87%A0%E4%B8%AA%E7%BA%B8%E6%9D%AF%E8%9B%8B%E7%B3%95-%E5%8F%AF%E4%BB%A5%E4%B8%80%E4%B8%AA%E4%B8%80%E4%B8%AA%E8%BD%AE%E6%B5%81%E5%88%86.mp3"
     },
     {
-      "id": "success-2-条小鱼分给-2-个-每人-1-个-正好一样多",
+      "id": "success-2-个纸杯蛋糕分给-2-个小朋友-每人-1-个-正好一样多",
       "kind": "success",
-      "text": "2 条小鱼分给 2 个，每人 1 个，正好一样多。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-2-%E6%9D%A1%E5%B0%8F%E9%B1%BC%E5%88%86%E7%BB%99-2-%E4%B8%AA-%E6%AF%8F%E4%BA%BA-1-%E4%B8%AA-%E6%AD%A3%E5%A5%BD%E4%B8%80%E6%A0%B7%E5%A4%9A.mp3"
+      "text": "2 个纸杯蛋糕分给 2 个小朋友，每人 1 个，正好一样多。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-2-%E4%B8%AA%E7%BA%B8%E6%9D%AF%E8%9B%8B%E7%B3%95%E5%88%86%E7%BB%99-2-%E4%B8%AA%E5%B0%8F%E6%9C%8B%E5%8F%8B-%E6%AF%8F%E4%BA%BA-1-%E4%B8%AA-%E6%AD%A3%E5%A5%BD%E4%B8%80%E6%A0%B7%E5%A4%9A.mp3"
     },
     {
-      "id": "retry-轮流分-每个人先-1-个-再每个人-1-个",
+      "id": "retry-轮流分-每人先-1-个-再每人-1-个",
       "kind": "retry",
-      "text": "轮流分：每个人先 1 个，再每个人 1 个。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E8%BD%AE%E6%B5%81%E5%88%86-%E6%AF%8F%E4%B8%AA%E4%BA%BA%E5%85%88-1-%E4%B8%AA-%E5%86%8D%E6%AF%8F%E4%B8%AA%E4%BA%BA-1-%E4%B8%AA.mp3"
+      "text": "轮流分：每人先 1 个，再每人 1 个。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E8%BD%AE%E6%B5%81%E5%88%86-%E6%AF%8F%E4%BA%BA%E5%85%88-1-%E4%B8%AA-%E5%86%8D%E6%AF%8F%E4%BA%BA-1-%E4%B8%AA.mp3"
     },
     {
       "id": "parent-请她用手指做轮流分的动作",
@@ -1643,166 +1397,154 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E7%94%A8%E6%89%8B%E6%8C%87%E5%81%9A%E8%BD%AE%E6%B5%81%E5%88%86%E7%9A%84%E5%8A%A8%E4%BD%9C.mp3"
     },
     {
-      "id": "object-小猫",
-      "kind": "object",
-      "text": "小猫",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%B0%8F%E7%8C%AB.mp3"
-    },
-    {
-      "id": "prompt-4-条小鱼分给-2-个小朋友-每人一样多-每人几个-可以一个一个轮流分",
-      "kind": "prompt",
-      "text": "4 条小鱼分给 2 个小朋友，每人一样多，每人几个？可以一个一个轮流分。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-4-%E6%9D%A1%E5%B0%8F%E9%B1%BC%E5%88%86%E7%BB%99-2-%E4%B8%AA%E5%B0%8F%E6%9C%8B%E5%8F%8B-%E6%AF%8F%E4%BA%BA%E4%B8%80%E6%A0%B7%E5%A4%9A-%E6%AF%8F%E4%BA%BA%E5%87%A0%E4%B8%AA-%E5%8F%AF%E4%BB%A5%E4%B8%80%E4%B8%AA%E4%B8%80%E4%B8%AA%E8%BD%AE%E6%B5%81%E5%88%86.mp3"
-    },
-    {
-      "id": "success-4-条小鱼分给-2-个-每人-2-个-正好一样多",
-      "kind": "success",
-      "text": "4 条小鱼分给 2 个，每人 2 个，正好一样多。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-4-%E6%9D%A1%E5%B0%8F%E9%B1%BC%E5%88%86%E7%BB%99-2-%E4%B8%AA-%E6%AF%8F%E4%BA%BA-2-%E4%B8%AA-%E6%AD%A3%E5%A5%BD%E4%B8%80%E6%A0%B7%E5%A4%9A.mp3"
-    },
-    {
-      "id": "prompt-6-个饼干分给-2-个小朋友-每人一样多-每人几个-可以一个一个轮流分",
-      "kind": "prompt",
-      "text": "6 个饼干分给 2 个小朋友，每人一样多，每人几个？可以一个一个轮流分。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-6-%E4%B8%AA%E9%A5%BC%E5%B9%B2%E5%88%86%E7%BB%99-2-%E4%B8%AA%E5%B0%8F%E6%9C%8B%E5%8F%8B-%E6%AF%8F%E4%BA%BA%E4%B8%80%E6%A0%B7%E5%A4%9A-%E6%AF%8F%E4%BA%BA%E5%87%A0%E4%B8%AA-%E5%8F%AF%E4%BB%A5%E4%B8%80%E4%B8%AA%E4%B8%80%E4%B8%AA%E8%BD%AE%E6%B5%81%E5%88%86.mp3"
-    },
-    {
-      "id": "success-6-个饼干分给-2-个-每人-3-个-正好一样多",
-      "kind": "success",
-      "text": "6 个饼干分给 2 个，每人 3 个，正好一样多。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-6-%E4%B8%AA%E9%A5%BC%E5%B9%B2%E5%88%86%E7%BB%99-2-%E4%B8%AA-%E6%AF%8F%E4%BA%BA-3-%E4%B8%AA-%E6%AD%A3%E5%A5%BD%E4%B8%80%E6%A0%B7%E5%A4%9A.mp3"
-    },
-    {
-      "id": "object-盘子",
-      "kind": "object",
-      "text": "盘子",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E7%9B%98%E5%AD%90.mp3"
-    },
-    {
-      "id": "prompt-8-个糖果分给-2-个小朋友-每人一样多-每人几个-可以一个一个轮流分",
-      "kind": "prompt",
-      "text": "8 个糖果分给 2 个小朋友，每人一样多，每人几个？可以一个一个轮流分。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-8-%E4%B8%AA%E7%B3%96%E6%9E%9C%E5%88%86%E7%BB%99-2-%E4%B8%AA%E5%B0%8F%E6%9C%8B%E5%8F%8B-%E6%AF%8F%E4%BA%BA%E4%B8%80%E6%A0%B7%E5%A4%9A-%E6%AF%8F%E4%BA%BA%E5%87%A0%E4%B8%AA-%E5%8F%AF%E4%BB%A5%E4%B8%80%E4%B8%AA%E4%B8%80%E4%B8%AA%E8%BD%AE%E6%B5%81%E5%88%86.mp3"
-    },
-    {
-      "id": "success-8-个糖果分给-2-个-每人-4-个-正好一样多",
-      "kind": "success",
-      "text": "8 个糖果分给 2 个，每人 4 个，正好一样多。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-8-%E4%B8%AA%E7%B3%96%E6%9E%9C%E5%88%86%E7%BB%99-2-%E4%B8%AA-%E6%AF%8F%E4%BA%BA-4-%E4%B8%AA-%E6%AD%A3%E5%A5%BD%E4%B8%80%E6%A0%B7%E5%A4%9A.mp3"
-    },
-    {
       "id": "object-小朋友",
       "kind": "object",
       "text": "小朋友",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%B0%8F%E6%9C%8B%E5%8F%8B.mp3"
     },
     {
-      "id": "prompt-6-个糖果分给-3-个小朋友-每人一样多-每人几个-可以一个一个轮流分",
+      "id": "prompt-4-个纸杯蛋糕分给-2-个小朋友-每人一样多-每人几个纸杯蛋糕-可以一个一个轮流分",
       "kind": "prompt",
-      "text": "6 个糖果分给 3 个小朋友，每人一样多，每人几个？可以一个一个轮流分。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-6-%E4%B8%AA%E7%B3%96%E6%9E%9C%E5%88%86%E7%BB%99-3-%E4%B8%AA%E5%B0%8F%E6%9C%8B%E5%8F%8B-%E6%AF%8F%E4%BA%BA%E4%B8%80%E6%A0%B7%E5%A4%9A-%E6%AF%8F%E4%BA%BA%E5%87%A0%E4%B8%AA-%E5%8F%AF%E4%BB%A5%E4%B8%80%E4%B8%AA%E4%B8%80%E4%B8%AA%E8%BD%AE%E6%B5%81%E5%88%86.mp3"
+      "text": "4 个纸杯蛋糕分给 2 个小朋友，每人一样多，每人几个纸杯蛋糕？可以一个一个轮流分。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-4-%E4%B8%AA%E7%BA%B8%E6%9D%AF%E8%9B%8B%E7%B3%95%E5%88%86%E7%BB%99-2-%E4%B8%AA%E5%B0%8F%E6%9C%8B%E5%8F%8B-%E6%AF%8F%E4%BA%BA%E4%B8%80%E6%A0%B7%E5%A4%9A-%E6%AF%8F%E4%BA%BA%E5%87%A0%E4%B8%AA%E7%BA%B8%E6%9D%AF%E8%9B%8B%E7%B3%95-%E5%8F%AF%E4%BB%A5%E4%B8%80%E4%B8%AA%E4%B8%80%E4%B8%AA%E8%BD%AE%E6%B5%81%E5%88%86.mp3"
     },
     {
-      "id": "success-6-个糖果分给-3-个-每人-2-个-正好一样多",
+      "id": "success-4-个纸杯蛋糕分给-2-个小朋友-每人-2-个-正好一样多",
       "kind": "success",
-      "text": "6 个糖果分给 3 个，每人 2 个，正好一样多。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-6-%E4%B8%AA%E7%B3%96%E6%9E%9C%E5%88%86%E7%BB%99-3-%E4%B8%AA-%E6%AF%8F%E4%BA%BA-2-%E4%B8%AA-%E6%AD%A3%E5%A5%BD%E4%B8%80%E6%A0%B7%E5%A4%9A.mp3"
+      "text": "4 个纸杯蛋糕分给 2 个小朋友，每人 2 个，正好一样多。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-4-%E4%B8%AA%E7%BA%B8%E6%9D%AF%E8%9B%8B%E7%B3%95%E5%88%86%E7%BB%99-2-%E4%B8%AA%E5%B0%8F%E6%9C%8B%E5%8F%8B-%E6%AF%8F%E4%BA%BA-2-%E4%B8%AA-%E6%AD%A3%E5%A5%BD%E4%B8%80%E6%A0%B7%E5%A4%9A.mp3"
     },
     {
-      "id": "prompt-9-个饼干分给-3-个小朋友-每人一样多-每人几个-可以一个一个轮流分",
+      "id": "prompt-6-个纸杯蛋糕分给-2-个小朋友-每人一样多-每人几个纸杯蛋糕-可以一个一个轮流分",
       "kind": "prompt",
-      "text": "9 个饼干分给 3 个小朋友，每人一样多，每人几个？可以一个一个轮流分。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-9-%E4%B8%AA%E9%A5%BC%E5%B9%B2%E5%88%86%E7%BB%99-3-%E4%B8%AA%E5%B0%8F%E6%9C%8B%E5%8F%8B-%E6%AF%8F%E4%BA%BA%E4%B8%80%E6%A0%B7%E5%A4%9A-%E6%AF%8F%E4%BA%BA%E5%87%A0%E4%B8%AA-%E5%8F%AF%E4%BB%A5%E4%B8%80%E4%B8%AA%E4%B8%80%E4%B8%AA%E8%BD%AE%E6%B5%81%E5%88%86.mp3"
+      "text": "6 个纸杯蛋糕分给 2 个小朋友，每人一样多，每人几个纸杯蛋糕？可以一个一个轮流分。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-6-%E4%B8%AA%E7%BA%B8%E6%9D%AF%E8%9B%8B%E7%B3%95%E5%88%86%E7%BB%99-2-%E4%B8%AA%E5%B0%8F%E6%9C%8B%E5%8F%8B-%E6%AF%8F%E4%BA%BA%E4%B8%80%E6%A0%B7%E5%A4%9A-%E6%AF%8F%E4%BA%BA%E5%87%A0%E4%B8%AA%E7%BA%B8%E6%9D%AF%E8%9B%8B%E7%B3%95-%E5%8F%AF%E4%BB%A5%E4%B8%80%E4%B8%AA%E4%B8%80%E4%B8%AA%E8%BD%AE%E6%B5%81%E5%88%86.mp3"
     },
     {
-      "id": "success-9-个饼干分给-3-个-每人-3-个-正好一样多",
+      "id": "success-6-个纸杯蛋糕分给-2-个小朋友-每人-3-个-正好一样多",
       "kind": "success",
-      "text": "9 个饼干分给 3 个，每人 3 个，正好一样多。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-9-%E4%B8%AA%E9%A5%BC%E5%B9%B2%E5%88%86%E7%BB%99-3-%E4%B8%AA-%E6%AF%8F%E4%BA%BA-3-%E4%B8%AA-%E6%AD%A3%E5%A5%BD%E4%B8%80%E6%A0%B7%E5%A4%9A.mp3"
+      "text": "6 个纸杯蛋糕分给 2 个小朋友，每人 3 个，正好一样多。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-6-%E4%B8%AA%E7%BA%B8%E6%9D%AF%E8%9B%8B%E7%B3%95%E5%88%86%E7%BB%99-2-%E4%B8%AA%E5%B0%8F%E6%9C%8B%E5%8F%8B-%E6%AF%8F%E4%BA%BA-3-%E4%B8%AA-%E6%AD%A3%E5%A5%BD%E4%B8%80%E6%A0%B7%E5%A4%9A.mp3"
     },
     {
-      "id": "prompt-10-个草莓分给-5-个小朋友-每人一样多-每人几个-可以一个一个轮流分",
+      "id": "prompt-8-个纸杯蛋糕分给-2-个小朋友-每人一样多-每人几个纸杯蛋糕-可以一个一个轮流分",
       "kind": "prompt",
-      "text": "10 个草莓分给 5 个小朋友，每人一样多，每人几个？可以一个一个轮流分。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-10-%E4%B8%AA%E8%8D%89%E8%8E%93%E5%88%86%E7%BB%99-5-%E4%B8%AA%E5%B0%8F%E6%9C%8B%E5%8F%8B-%E6%AF%8F%E4%BA%BA%E4%B8%80%E6%A0%B7%E5%A4%9A-%E6%AF%8F%E4%BA%BA%E5%87%A0%E4%B8%AA-%E5%8F%AF%E4%BB%A5%E4%B8%80%E4%B8%AA%E4%B8%80%E4%B8%AA%E8%BD%AE%E6%B5%81%E5%88%86.mp3"
+      "text": "8 个纸杯蛋糕分给 2 个小朋友，每人一样多，每人几个纸杯蛋糕？可以一个一个轮流分。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-8-%E4%B8%AA%E7%BA%B8%E6%9D%AF%E8%9B%8B%E7%B3%95%E5%88%86%E7%BB%99-2-%E4%B8%AA%E5%B0%8F%E6%9C%8B%E5%8F%8B-%E6%AF%8F%E4%BA%BA%E4%B8%80%E6%A0%B7%E5%A4%9A-%E6%AF%8F%E4%BA%BA%E5%87%A0%E4%B8%AA%E7%BA%B8%E6%9D%AF%E8%9B%8B%E7%B3%95-%E5%8F%AF%E4%BB%A5%E4%B8%80%E4%B8%AA%E4%B8%80%E4%B8%AA%E8%BD%AE%E6%B5%81%E5%88%86.mp3"
     },
     {
-      "id": "success-10-个草莓分给-5-个-每人-2-个-正好一样多",
+      "id": "success-8-个纸杯蛋糕分给-2-个小朋友-每人-4-个-正好一样多",
       "kind": "success",
-      "text": "10 个草莓分给 5 个，每人 2 个，正好一样多。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-10-%E4%B8%AA%E8%8D%89%E8%8E%93%E5%88%86%E7%BB%99-5-%E4%B8%AA-%E6%AF%8F%E4%BA%BA-2-%E4%B8%AA-%E6%AD%A3%E5%A5%BD%E4%B8%80%E6%A0%B7%E5%A4%9A.mp3"
+      "text": "8 个纸杯蛋糕分给 2 个小朋友，每人 4 个，正好一样多。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-8-%E4%B8%AA%E7%BA%B8%E6%9D%AF%E8%9B%8B%E7%B3%95%E5%88%86%E7%BB%99-2-%E4%B8%AA%E5%B0%8F%E6%9C%8B%E5%8F%8B-%E6%AF%8F%E4%BA%BA-4-%E4%B8%AA-%E6%AD%A3%E5%A5%BD%E4%B8%80%E6%A0%B7%E5%A4%9A.mp3"
     },
     {
-      "id": "prompt-12-个积木分给-3-个小朋友-每人一样多-每人几个-可以一个一个轮流分",
+      "id": "prompt-6-个纸杯蛋糕分给-3-个小朋友-每人一样多-每人几个纸杯蛋糕-可以一个一个轮流分",
       "kind": "prompt",
-      "text": "12 个积木分给 3 个小朋友，每人一样多，每人几个？可以一个一个轮流分。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-12-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%88%86%E7%BB%99-3-%E4%B8%AA%E5%B0%8F%E6%9C%8B%E5%8F%8B-%E6%AF%8F%E4%BA%BA%E4%B8%80%E6%A0%B7%E5%A4%9A-%E6%AF%8F%E4%BA%BA%E5%87%A0%E4%B8%AA-%E5%8F%AF%E4%BB%A5%E4%B8%80%E4%B8%AA%E4%B8%80%E4%B8%AA%E8%BD%AE%E6%B5%81%E5%88%86.mp3"
+      "text": "6 个纸杯蛋糕分给 3 个小朋友，每人一样多，每人几个纸杯蛋糕？可以一个一个轮流分。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-6-%E4%B8%AA%E7%BA%B8%E6%9D%AF%E8%9B%8B%E7%B3%95%E5%88%86%E7%BB%99-3-%E4%B8%AA%E5%B0%8F%E6%9C%8B%E5%8F%8B-%E6%AF%8F%E4%BA%BA%E4%B8%80%E6%A0%B7%E5%A4%9A-%E6%AF%8F%E4%BA%BA%E5%87%A0%E4%B8%AA%E7%BA%B8%E6%9D%AF%E8%9B%8B%E7%B3%95-%E5%8F%AF%E4%BB%A5%E4%B8%80%E4%B8%AA%E4%B8%80%E4%B8%AA%E8%BD%AE%E6%B5%81%E5%88%86.mp3"
     },
     {
-      "id": "success-12-个积木分给-3-个-每人-4-个-正好一样多",
+      "id": "success-6-个纸杯蛋糕分给-3-个小朋友-每人-2-个-正好一样多",
       "kind": "success",
-      "text": "12 个积木分给 3 个，每人 4 个，正好一样多。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-12-%E4%B8%AA%E7%A7%AF%E6%9C%A8%E5%88%86%E7%BB%99-3-%E4%B8%AA-%E6%AF%8F%E4%BA%BA-4-%E4%B8%AA-%E6%AD%A3%E5%A5%BD%E4%B8%80%E6%A0%B7%E5%A4%9A.mp3"
+      "text": "6 个纸杯蛋糕分给 3 个小朋友，每人 2 个，正好一样多。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-6-%E4%B8%AA%E7%BA%B8%E6%9D%AF%E8%9B%8B%E7%B3%95%E5%88%86%E7%BB%99-3-%E4%B8%AA%E5%B0%8F%E6%9C%8B%E5%8F%8B-%E6%AF%8F%E4%BA%BA-2-%E4%B8%AA-%E6%AD%A3%E5%A5%BD%E4%B8%80%E6%A0%B7%E5%A4%9A.mp3"
     },
     {
-      "id": "prompt-12-个糖果分给-4-个小朋友-每人一样多-每人几个-可以一个一个轮流分",
+      "id": "prompt-9-个纸杯蛋糕分给-3-个小朋友-每人一样多-每人几个纸杯蛋糕-可以一个一个轮流分",
       "kind": "prompt",
-      "text": "12 个糖果分给 4 个小朋友，每人一样多，每人几个？可以一个一个轮流分。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-12-%E4%B8%AA%E7%B3%96%E6%9E%9C%E5%88%86%E7%BB%99-4-%E4%B8%AA%E5%B0%8F%E6%9C%8B%E5%8F%8B-%E6%AF%8F%E4%BA%BA%E4%B8%80%E6%A0%B7%E5%A4%9A-%E6%AF%8F%E4%BA%BA%E5%87%A0%E4%B8%AA-%E5%8F%AF%E4%BB%A5%E4%B8%80%E4%B8%AA%E4%B8%80%E4%B8%AA%E8%BD%AE%E6%B5%81%E5%88%86.mp3"
+      "text": "9 个纸杯蛋糕分给 3 个小朋友，每人一样多，每人几个纸杯蛋糕？可以一个一个轮流分。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-9-%E4%B8%AA%E7%BA%B8%E6%9D%AF%E8%9B%8B%E7%B3%95%E5%88%86%E7%BB%99-3-%E4%B8%AA%E5%B0%8F%E6%9C%8B%E5%8F%8B-%E6%AF%8F%E4%BA%BA%E4%B8%80%E6%A0%B7%E5%A4%9A-%E6%AF%8F%E4%BA%BA%E5%87%A0%E4%B8%AA%E7%BA%B8%E6%9D%AF%E8%9B%8B%E7%B3%95-%E5%8F%AF%E4%BB%A5%E4%B8%80%E4%B8%AA%E4%B8%80%E4%B8%AA%E8%BD%AE%E6%B5%81%E5%88%86.mp3"
     },
     {
-      "id": "success-12-个糖果分给-4-个-每人-3-个-正好一样多",
+      "id": "success-9-个纸杯蛋糕分给-3-个小朋友-每人-3-个-正好一样多",
       "kind": "success",
-      "text": "12 个糖果分给 4 个，每人 3 个，正好一样多。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-12-%E4%B8%AA%E7%B3%96%E6%9E%9C%E5%88%86%E7%BB%99-4-%E4%B8%AA-%E6%AF%8F%E4%BA%BA-3-%E4%B8%AA-%E6%AD%A3%E5%A5%BD%E4%B8%80%E6%A0%B7%E5%A4%9A.mp3"
+      "text": "9 个纸杯蛋糕分给 3 个小朋友，每人 3 个，正好一样多。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-9-%E4%B8%AA%E7%BA%B8%E6%9D%AF%E8%9B%8B%E7%B3%95%E5%88%86%E7%BB%99-3-%E4%B8%AA%E5%B0%8F%E6%9C%8B%E5%8F%8B-%E6%AF%8F%E4%BA%BA-3-%E4%B8%AA-%E6%AD%A3%E5%A5%BD%E4%B8%80%E6%A0%B7%E5%A4%9A.mp3"
     },
     {
-      "id": "prompt-5-条小鱼分给-2-只小猫-每只先一样多-最多每只几条-先公平分-最后可能会剩下",
+      "id": "prompt-10-个纸杯蛋糕分给-5-个小朋友-每人一样多-每人几个纸杯蛋糕-可以一个一个轮流分",
       "kind": "prompt",
-      "text": "5 条小鱼分给 2 只小猫，每只先一样多，最多每只几条？先公平分，最后可能会剩下。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-5-%E6%9D%A1%E5%B0%8F%E9%B1%BC%E5%88%86%E7%BB%99-2-%E5%8F%AA%E5%B0%8F%E7%8C%AB-%E6%AF%8F%E5%8F%AA%E5%85%88%E4%B8%80%E6%A0%B7%E5%A4%9A-%E6%9C%80%E5%A4%9A%E6%AF%8F%E5%8F%AA%E5%87%A0%E6%9D%A1-%E5%85%88%E5%85%AC%E5%B9%B3%E5%88%86-%E6%9C%80%E5%90%8E%E5%8F%AF%E8%83%BD%E4%BC%9A%E5%89%A9%E4%B8%8B.mp3"
+      "text": "10 个纸杯蛋糕分给 5 个小朋友，每人一样多，每人几个纸杯蛋糕？可以一个一个轮流分。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-10-%E4%B8%AA%E7%BA%B8%E6%9D%AF%E8%9B%8B%E7%B3%95%E5%88%86%E7%BB%99-5-%E4%B8%AA%E5%B0%8F%E6%9C%8B%E5%8F%8B-%E6%AF%8F%E4%BA%BA%E4%B8%80%E6%A0%B7%E5%A4%9A-%E6%AF%8F%E4%BA%BA%E5%87%A0%E4%B8%AA%E7%BA%B8%E6%9D%AF%E8%9B%8B%E7%B3%95-%E5%8F%AF%E4%BB%A5%E4%B8%80%E4%B8%AA%E4%B8%80%E4%B8%AA%E8%BD%AE%E6%B5%81%E5%88%86.mp3"
     },
     {
-      "id": "success-每只-2-条比较公平-还会剩下-1-条",
+      "id": "success-10-个纸杯蛋糕分给-5-个小朋友-每人-2-个-正好一样多",
       "kind": "success",
-      "text": "每只 2 条比较公平，还会剩下 1 条。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%AF%8F%E5%8F%AA-2-%E6%9D%A1%E6%AF%94%E8%BE%83%E5%85%AC%E5%B9%B3-%E8%BF%98%E4%BC%9A%E5%89%A9%E4%B8%8B-1-%E6%9D%A1.mp3"
+      "text": "10 个纸杯蛋糕分给 5 个小朋友，每人 2 个，正好一样多。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-10-%E4%B8%AA%E7%BA%B8%E6%9D%AF%E8%9B%8B%E7%B3%95%E5%88%86%E7%BB%99-5-%E4%B8%AA%E5%B0%8F%E6%9C%8B%E5%8F%8B-%E6%AF%8F%E4%BA%BA-2-%E4%B8%AA-%E6%AD%A3%E5%A5%BD%E4%B8%80%E6%A0%B7%E5%A4%9A.mp3"
     },
     {
-      "id": "retry-先让每只小猫一样多-不急着处理剩下的",
+      "id": "prompt-12-个纸杯蛋糕分给-3-个小朋友-每人一样多-每人几个纸杯蛋糕-可以一个一个轮流分",
+      "kind": "prompt",
+      "text": "12 个纸杯蛋糕分给 3 个小朋友，每人一样多，每人几个纸杯蛋糕？可以一个一个轮流分。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-12-%E4%B8%AA%E7%BA%B8%E6%9D%AF%E8%9B%8B%E7%B3%95%E5%88%86%E7%BB%99-3-%E4%B8%AA%E5%B0%8F%E6%9C%8B%E5%8F%8B-%E6%AF%8F%E4%BA%BA%E4%B8%80%E6%A0%B7%E5%A4%9A-%E6%AF%8F%E4%BA%BA%E5%87%A0%E4%B8%AA%E7%BA%B8%E6%9D%AF%E8%9B%8B%E7%B3%95-%E5%8F%AF%E4%BB%A5%E4%B8%80%E4%B8%AA%E4%B8%80%E4%B8%AA%E8%BD%AE%E6%B5%81%E5%88%86.mp3"
+    },
+    {
+      "id": "success-12-个纸杯蛋糕分给-3-个小朋友-每人-4-个-正好一样多",
+      "kind": "success",
+      "text": "12 个纸杯蛋糕分给 3 个小朋友，每人 4 个，正好一样多。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-12-%E4%B8%AA%E7%BA%B8%E6%9D%AF%E8%9B%8B%E7%B3%95%E5%88%86%E7%BB%99-3-%E4%B8%AA%E5%B0%8F%E6%9C%8B%E5%8F%8B-%E6%AF%8F%E4%BA%BA-4-%E4%B8%AA-%E6%AD%A3%E5%A5%BD%E4%B8%80%E6%A0%B7%E5%A4%9A.mp3"
+    },
+    {
+      "id": "prompt-12-个纸杯蛋糕分给-4-个小朋友-每人一样多-每人几个纸杯蛋糕-可以一个一个轮流分",
+      "kind": "prompt",
+      "text": "12 个纸杯蛋糕分给 4 个小朋友，每人一样多，每人几个纸杯蛋糕？可以一个一个轮流分。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-12-%E4%B8%AA%E7%BA%B8%E6%9D%AF%E8%9B%8B%E7%B3%95%E5%88%86%E7%BB%99-4-%E4%B8%AA%E5%B0%8F%E6%9C%8B%E5%8F%8B-%E6%AF%8F%E4%BA%BA%E4%B8%80%E6%A0%B7%E5%A4%9A-%E6%AF%8F%E4%BA%BA%E5%87%A0%E4%B8%AA%E7%BA%B8%E6%9D%AF%E8%9B%8B%E7%B3%95-%E5%8F%AF%E4%BB%A5%E4%B8%80%E4%B8%AA%E4%B8%80%E4%B8%AA%E8%BD%AE%E6%B5%81%E5%88%86.mp3"
+    },
+    {
+      "id": "success-12-个纸杯蛋糕分给-4-个小朋友-每人-3-个-正好一样多",
+      "kind": "success",
+      "text": "12 个纸杯蛋糕分给 4 个小朋友，每人 3 个，正好一样多。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-12-%E4%B8%AA%E7%BA%B8%E6%9D%AF%E8%9B%8B%E7%B3%95%E5%88%86%E7%BB%99-4-%E4%B8%AA%E5%B0%8F%E6%9C%8B%E5%8F%8B-%E6%AF%8F%E4%BA%BA-3-%E4%B8%AA-%E6%AD%A3%E5%A5%BD%E4%B8%80%E6%A0%B7%E5%A4%9A.mp3"
+    },
+    {
+      "id": "prompt-5-个纸杯蛋糕分给-2-个小朋友-每人先一样多-最多每人几个-先公平分-最后可能会剩下",
+      "kind": "prompt",
+      "text": "5 个纸杯蛋糕分给 2 个小朋友，每人先一样多，最多每人几个？先公平分，最后可能会剩下。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-5-%E4%B8%AA%E7%BA%B8%E6%9D%AF%E8%9B%8B%E7%B3%95%E5%88%86%E7%BB%99-2-%E4%B8%AA%E5%B0%8F%E6%9C%8B%E5%8F%8B-%E6%AF%8F%E4%BA%BA%E5%85%88%E4%B8%80%E6%A0%B7%E5%A4%9A-%E6%9C%80%E5%A4%9A%E6%AF%8F%E4%BA%BA%E5%87%A0%E4%B8%AA-%E5%85%88%E5%85%AC%E5%B9%B3%E5%88%86-%E6%9C%80%E5%90%8E%E5%8F%AF%E8%83%BD%E4%BC%9A%E5%89%A9%E4%B8%8B.mp3"
+    },
+    {
+      "id": "success-每人-2-个比较公平-还会剩下-1-个",
+      "kind": "success",
+      "text": "每人 2 个比较公平，还会剩下 1 个。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%AF%8F%E4%BA%BA-2-%E4%B8%AA%E6%AF%94%E8%BE%83%E5%85%AC%E5%B9%B3-%E8%BF%98%E4%BC%9A%E5%89%A9%E4%B8%8B-1-%E4%B8%AA.mp3"
+    },
+    {
+      "id": "retry-先让每个小朋友一样多-不急着处理剩下的",
       "kind": "retry",
-      "text": "先让每只小猫一样多，不急着处理剩下的。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E8%AE%A9%E6%AF%8F%E5%8F%AA%E5%B0%8F%E7%8C%AB%E4%B8%80%E6%A0%B7%E5%A4%9A-%E4%B8%8D%E6%80%A5%E7%9D%80%E5%A4%84%E7%90%86%E5%89%A9%E4%B8%8B%E7%9A%84.mp3"
+      "text": "先让每个小朋友一样多，不急着处理剩下的。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E8%AE%A9%E6%AF%8F%E4%B8%AA%E5%B0%8F%E6%9C%8B%E5%8F%8B%E4%B8%80%E6%A0%B7%E5%A4%9A-%E4%B8%8D%E6%80%A5%E7%9D%80%E5%A4%84%E7%90%86%E5%89%A9%E4%B8%8B%E7%9A%84.mp3"
     },
     {
-      "id": "parent-问她-剩下的那一条怎么办才公平",
+      "id": "parent-问她-剩下的那一个怎么办才公平",
       "kind": "parent",
-      "text": "问她：剩下的那一条怎么办才公平？",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E5%89%A9%E4%B8%8B%E7%9A%84%E9%82%A3%E4%B8%80%E6%9D%A1%E6%80%8E%E4%B9%88%E5%8A%9E%E6%89%8D%E5%85%AC%E5%B9%B3.mp3"
+      "text": "问她：剩下的那一个怎么办才公平？",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E5%89%A9%E4%B8%8B%E7%9A%84%E9%82%A3%E4%B8%80%E4%B8%AA%E6%80%8E%E4%B9%88%E5%8A%9E%E6%89%8D%E5%85%AC%E5%B9%B3.mp3"
     },
     {
-      "id": "prompt-7-条小鱼分给-3-只小猫-每只先一样多-最多每只几条-先公平分-最后可能会剩下",
+      "id": "prompt-7-个纸杯蛋糕分给-3-个小朋友-每人先一样多-最多每人几个-先公平分-最后可能会剩下",
       "kind": "prompt",
-      "text": "7 条小鱼分给 3 只小猫，每只先一样多，最多每只几条？先公平分，最后可能会剩下。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-7-%E6%9D%A1%E5%B0%8F%E9%B1%BC%E5%88%86%E7%BB%99-3-%E5%8F%AA%E5%B0%8F%E7%8C%AB-%E6%AF%8F%E5%8F%AA%E5%85%88%E4%B8%80%E6%A0%B7%E5%A4%9A-%E6%9C%80%E5%A4%9A%E6%AF%8F%E5%8F%AA%E5%87%A0%E6%9D%A1-%E5%85%88%E5%85%AC%E5%B9%B3%E5%88%86-%E6%9C%80%E5%90%8E%E5%8F%AF%E8%83%BD%E4%BC%9A%E5%89%A9%E4%B8%8B.mp3"
+      "text": "7 个纸杯蛋糕分给 3 个小朋友，每人先一样多，最多每人几个？先公平分，最后可能会剩下。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-7-%E4%B8%AA%E7%BA%B8%E6%9D%AF%E8%9B%8B%E7%B3%95%E5%88%86%E7%BB%99-3-%E4%B8%AA%E5%B0%8F%E6%9C%8B%E5%8F%8B-%E6%AF%8F%E4%BA%BA%E5%85%88%E4%B8%80%E6%A0%B7%E5%A4%9A-%E6%9C%80%E5%A4%9A%E6%AF%8F%E4%BA%BA%E5%87%A0%E4%B8%AA-%E5%85%88%E5%85%AC%E5%B9%B3%E5%88%86-%E6%9C%80%E5%90%8E%E5%8F%AF%E8%83%BD%E4%BC%9A%E5%89%A9%E4%B8%8B.mp3"
     },
     {
-      "id": "prompt-10-条小鱼分给-3-只小猫-每只先一样多-最多每只几条-先公平分-最后可能会剩下",
+      "id": "prompt-10-个纸杯蛋糕分给-3-个小朋友-每人先一样多-最多每人几个-先公平分-最后可能会剩下",
       "kind": "prompt",
-      "text": "10 条小鱼分给 3 只小猫，每只先一样多，最多每只几条？先公平分，最后可能会剩下。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-10-%E6%9D%A1%E5%B0%8F%E9%B1%BC%E5%88%86%E7%BB%99-3-%E5%8F%AA%E5%B0%8F%E7%8C%AB-%E6%AF%8F%E5%8F%AA%E5%85%88%E4%B8%80%E6%A0%B7%E5%A4%9A-%E6%9C%80%E5%A4%9A%E6%AF%8F%E5%8F%AA%E5%87%A0%E6%9D%A1-%E5%85%88%E5%85%AC%E5%B9%B3%E5%88%86-%E6%9C%80%E5%90%8E%E5%8F%AF%E8%83%BD%E4%BC%9A%E5%89%A9%E4%B8%8B.mp3"
+      "text": "10 个纸杯蛋糕分给 3 个小朋友，每人先一样多，最多每人几个？先公平分，最后可能会剩下。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-10-%E4%B8%AA%E7%BA%B8%E6%9D%AF%E8%9B%8B%E7%B3%95%E5%88%86%E7%BB%99-3-%E4%B8%AA%E5%B0%8F%E6%9C%8B%E5%8F%8B-%E6%AF%8F%E4%BA%BA%E5%85%88%E4%B8%80%E6%A0%B7%E5%A4%9A-%E6%9C%80%E5%A4%9A%E6%AF%8F%E4%BA%BA%E5%87%A0%E4%B8%AA-%E5%85%88%E5%85%AC%E5%B9%B3%E5%88%86-%E6%9C%80%E5%90%8E%E5%8F%AF%E8%83%BD%E4%BC%9A%E5%89%A9%E4%B8%8B.mp3"
     },
     {
-      "id": "success-每只-3-条比较公平-还会剩下-1-条",
+      "id": "success-每人-3-个比较公平-还会剩下-1-个",
       "kind": "success",
-      "text": "每只 3 条比较公平，还会剩下 1 条。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%AF%8F%E5%8F%AA-3-%E6%9D%A1%E6%AF%94%E8%BE%83%E5%85%AC%E5%B9%B3-%E8%BF%98%E4%BC%9A%E5%89%A9%E4%B8%8B-1-%E6%9D%A1.mp3"
+      "text": "每人 3 个比较公平，还会剩下 1 个。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%AF%8F%E4%BA%BA-3-%E4%B8%AA%E6%AF%94%E8%BE%83%E5%85%AC%E5%B9%B3-%E8%BF%98%E4%BC%9A%E5%89%A9%E4%B8%8B-1-%E4%B8%AA.mp3"
     },
     {
-      "id": "prompt-11-条小鱼分给-5-只小猫-每只先一样多-最多每只几条-先公平分-最后可能会剩下",
+      "id": "prompt-11-个纸杯蛋糕分给-5-个小朋友-每人先一样多-最多每人几个-先公平分-最后可能会剩下",
       "kind": "prompt",
-      "text": "11 条小鱼分给 5 只小猫，每只先一样多，最多每只几条？先公平分，最后可能会剩下。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-11-%E6%9D%A1%E5%B0%8F%E9%B1%BC%E5%88%86%E7%BB%99-5-%E5%8F%AA%E5%B0%8F%E7%8C%AB-%E6%AF%8F%E5%8F%AA%E5%85%88%E4%B8%80%E6%A0%B7%E5%A4%9A-%E6%9C%80%E5%A4%9A%E6%AF%8F%E5%8F%AA%E5%87%A0%E6%9D%A1-%E5%85%88%E5%85%AC%E5%B9%B3%E5%88%86-%E6%9C%80%E5%90%8E%E5%8F%AF%E8%83%BD%E4%BC%9A%E5%89%A9%E4%B8%8B.mp3"
+      "text": "11 个纸杯蛋糕分给 5 个小朋友，每人先一样多，最多每人几个？先公平分，最后可能会剩下。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-11-%E4%B8%AA%E7%BA%B8%E6%9D%AF%E8%9B%8B%E7%B3%95%E5%88%86%E7%BB%99-5-%E4%B8%AA%E5%B0%8F%E6%9C%8B%E5%8F%8B-%E6%AF%8F%E4%BA%BA%E5%85%88%E4%B8%80%E6%A0%B7%E5%A4%9A-%E6%9C%80%E5%A4%9A%E6%AF%8F%E4%BA%BA%E5%87%A0%E4%B8%AA-%E5%85%88%E5%85%AC%E5%B9%B3%E5%88%86-%E6%9C%80%E5%90%8E%E5%8F%AF%E8%83%BD%E4%BC%9A%E5%89%A9%E4%B8%8B.mp3"
     },
     {
       "id": "game-title-几个几个数",
@@ -2291,28 +2033,28 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/game-goal-%E8%AE%AD%E7%BB%83%E5%88%86%E7%B1%BB-%E8%A7%84%E5%88%99%E5%88%87%E6%8D%A2%E5%92%8C%E8%AE%A4%E7%9F%A5%E7%81%B5%E6%B4%BB%E6%80%A7.mp3"
     },
     {
-      "id": "prompt-按颜色分-红色的应该放哪里-这次只看颜色",
+      "id": "prompt-分类机说-只看颜色-红色圆片应该进哪个篮子-先说一遍规则-只看颜色-再看这张图",
       "kind": "prompt",
-      "text": "按颜色分，红色的应该放哪里？这次只看颜色。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8C%89%E9%A2%9C%E8%89%B2%E5%88%86-%E7%BA%A2%E8%89%B2%E7%9A%84%E5%BA%94%E8%AF%A5%E6%94%BE%E5%93%AA%E9%87%8C-%E8%BF%99%E6%AC%A1%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2.mp3"
+      "text": "分类机说：只看颜色。红色圆片应该进哪个篮子？先说一遍规则：只看颜色，再看这张图。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%88%86%E7%B1%BB%E6%9C%BA%E8%AF%B4-%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87%E5%BA%94%E8%AF%A5%E8%BF%9B%E5%93%AA%E4%B8%AA%E7%AF%AE%E5%AD%90-%E5%85%88%E8%AF%B4%E4%B8%80%E9%81%8D%E8%A7%84%E5%88%99-%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E5%86%8D%E7%9C%8B%E8%BF%99%E5%BC%A0%E5%9B%BE.mp3"
     },
     {
-      "id": "success-规则是按颜色分-所以放进红色篮子",
+      "id": "success-这次只看颜色-所以红色圆片进红色篮子",
       "kind": "success",
-      "text": "规则是按颜色分，所以放进红色篮子。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%A7%84%E5%88%99%E6%98%AF%E6%8C%89%E9%A2%9C%E8%89%B2%E5%88%86-%E6%89%80%E4%BB%A5%E6%94%BE%E8%BF%9B%E7%BA%A2%E8%89%B2%E7%AF%AE%E5%AD%90.mp3"
+      "text": "这次只看颜色，所以红色圆片进红色篮子。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%BF%99%E6%AC%A1%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E6%89%80%E4%BB%A5%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87%E8%BF%9B%E7%BA%A2%E8%89%B2%E7%AF%AE%E5%AD%90.mp3"
     },
     {
-      "id": "retry-先别看形状-这一题只看颜色",
+      "id": "retry-先别看别的特征-这题只看颜色",
       "kind": "retry",
-      "text": "先别看形状，这一题只看颜色。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E5%88%AB%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E8%BF%99%E4%B8%80%E9%A2%98%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2.mp3"
+      "text": "先别看别的特征，这题只看颜色。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E5%88%AB%E7%9C%8B%E5%88%AB%E7%9A%84%E7%89%B9%E5%BE%81-%E8%BF%99%E9%A2%98%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2.mp3"
     },
     {
-      "id": "parent-问她-你刚才看的是颜色-还是形状",
+      "id": "parent-问她-如果规则换了-同一张图会不会去不同篮子",
       "kind": "parent",
-      "text": "问她：你刚才看的是颜色，还是形状？",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E4%BD%A0%E5%88%9A%E6%89%8D%E7%9C%8B%E7%9A%84%E6%98%AF%E9%A2%9C%E8%89%B2-%E8%BF%98%E6%98%AF%E5%BD%A2%E7%8A%B6.mp3"
+      "text": "问她：如果规则换了，同一张图会不会去不同篮子？",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E5%A6%82%E6%9E%9C%E8%A7%84%E5%88%99%E6%8D%A2%E4%BA%86-%E5%90%8C%E4%B8%80%E5%BC%A0%E5%9B%BE%E4%BC%9A%E4%B8%8D%E4%BC%9A%E5%8E%BB%E4%B8%8D%E5%90%8C%E7%AF%AE%E5%AD%90.mp3"
     },
     {
       "id": "choice-红色篮子",
@@ -2333,40 +2075,16 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E7%BB%BF%E8%89%B2%E7%AF%AE%E5%AD%90.mp3"
     },
     {
-      "id": "prompt-按颜色分-蓝色的应该放哪里-这次只看颜色",
+      "id": "prompt-分类机说-只看颜色-蓝色圆片应该进哪个篮子-先说一遍规则-只看颜色-再看这张图",
       "kind": "prompt",
-      "text": "按颜色分，蓝色的应该放哪里？这次只看颜色。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8C%89%E9%A2%9C%E8%89%B2%E5%88%86-%E8%93%9D%E8%89%B2%E7%9A%84%E5%BA%94%E8%AF%A5%E6%94%BE%E5%93%AA%E9%87%8C-%E8%BF%99%E6%AC%A1%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2.mp3"
+      "text": "分类机说：只看颜色。蓝色圆片应该进哪个篮子？先说一遍规则：只看颜色，再看这张图。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%88%86%E7%B1%BB%E6%9C%BA%E8%AF%B4-%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87%E5%BA%94%E8%AF%A5%E8%BF%9B%E5%93%AA%E4%B8%AA%E7%AF%AE%E5%AD%90-%E5%85%88%E8%AF%B4%E4%B8%80%E9%81%8D%E8%A7%84%E5%88%99-%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E5%86%8D%E7%9C%8B%E8%BF%99%E5%BC%A0%E5%9B%BE.mp3"
     },
     {
-      "id": "success-规则是按颜色分-所以放进蓝色篮子",
+      "id": "success-这次只看颜色-所以蓝色圆片进蓝色篮子",
       "kind": "success",
-      "text": "规则是按颜色分，所以放进蓝色篮子。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%A7%84%E5%88%99%E6%98%AF%E6%8C%89%E9%A2%9C%E8%89%B2%E5%88%86-%E6%89%80%E4%BB%A5%E6%94%BE%E8%BF%9B%E8%93%9D%E8%89%B2%E7%AF%AE%E5%AD%90.mp3"
-    },
-    {
-      "id": "prompt-按颜色分-绿色的应该放哪里-这次只看颜色",
-      "kind": "prompt",
-      "text": "按颜色分，绿色的应该放哪里？这次只看颜色。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8C%89%E9%A2%9C%E8%89%B2%E5%88%86-%E7%BB%BF%E8%89%B2%E7%9A%84%E5%BA%94%E8%AF%A5%E6%94%BE%E5%93%AA%E9%87%8C-%E8%BF%99%E6%AC%A1%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2.mp3"
-    },
-    {
-      "id": "success-规则是按颜色分-所以放进绿色篮子",
-      "kind": "success",
-      "text": "规则是按颜色分，所以放进绿色篮子。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%A7%84%E5%88%99%E6%98%AF%E6%8C%89%E9%A2%9C%E8%89%B2%E5%88%86-%E6%89%80%E4%BB%A5%E6%94%BE%E8%BF%9B%E7%BB%BF%E8%89%B2%E7%AF%AE%E5%AD%90.mp3"
-    },
-    {
-      "id": "prompt-按颜色分-黄色的应该放哪里-这次只看颜色",
-      "kind": "prompt",
-      "text": "按颜色分，黄色的应该放哪里？这次只看颜色。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8C%89%E9%A2%9C%E8%89%B2%E5%88%86-%E9%BB%84%E8%89%B2%E7%9A%84%E5%BA%94%E8%AF%A5%E6%94%BE%E5%93%AA%E9%87%8C-%E8%BF%99%E6%AC%A1%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2.mp3"
-    },
-    {
-      "id": "success-规则是按颜色分-所以放进黄色篮子",
-      "kind": "success",
-      "text": "规则是按颜色分，所以放进黄色篮子。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%A7%84%E5%88%99%E6%98%AF%E6%8C%89%E9%A2%9C%E8%89%B2%E5%88%86-%E6%89%80%E4%BB%A5%E6%94%BE%E8%BF%9B%E9%BB%84%E8%89%B2%E7%AF%AE%E5%AD%90.mp3"
+      "text": "这次只看颜色，所以蓝色圆片进蓝色篮子。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%BF%99%E6%AC%A1%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E6%89%80%E4%BB%A5%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87%E8%BF%9B%E8%93%9D%E8%89%B2%E7%AF%AE%E5%AD%90.mp3"
     },
     {
       "id": "choice-黄色篮子",
@@ -2375,28 +2093,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E9%BB%84%E8%89%B2%E7%AF%AE%E5%AD%90.mp3"
     },
     {
-      "id": "prompt-规则变了-按形状分-圆形放哪里-不要被颜色带走-只看形状",
+      "id": "prompt-规则换了-只看形状-红色圆片应该进哪个篮子-先说一遍规则-只看形状-再看这张图",
       "kind": "prompt",
-      "text": "规则变了：按形状分。圆形放哪里？不要被颜色带走，只看形状。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%A7%84%E5%88%99%E5%8F%98%E4%BA%86-%E6%8C%89%E5%BD%A2%E7%8A%B6%E5%88%86-%E5%9C%86%E5%BD%A2%E6%94%BE%E5%93%AA%E9%87%8C-%E4%B8%8D%E8%A6%81%E8%A2%AB%E9%A2%9C%E8%89%B2%E5%B8%A6%E8%B5%B0-%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6.mp3"
+      "text": "规则换了：只看形状。红色圆片应该进哪个篮子？先说一遍规则：只看形状，再看这张图。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%A7%84%E5%88%99%E6%8D%A2%E4%BA%86-%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87%E5%BA%94%E8%AF%A5%E8%BF%9B%E5%93%AA%E4%B8%AA%E7%AF%AE%E5%AD%90-%E5%85%88%E8%AF%B4%E4%B8%80%E9%81%8D%E8%A7%84%E5%88%99-%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E5%86%8D%E7%9C%8B%E8%BF%99%E5%BC%A0%E5%9B%BE.mp3"
     },
     {
-      "id": "success-这次按形状分-圆形要看形状",
+      "id": "success-规则是看形状-红色圆片是圆形-所以进圆形篮子",
       "kind": "success",
-      "text": "这次按形状分，圆形要看形状。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%BF%99%E6%AC%A1%E6%8C%89%E5%BD%A2%E7%8A%B6%E5%88%86-%E5%9C%86%E5%BD%A2%E8%A6%81%E7%9C%8B%E5%BD%A2%E7%8A%B6.mp3"
+      "text": "规则是看形状，红色圆片是圆形，所以进圆形篮子。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%A7%84%E5%88%99%E6%98%AF%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87%E6%98%AF%E5%9C%86%E5%BD%A2-%E6%89%80%E4%BB%A5%E8%BF%9B%E5%9C%86%E5%BD%A2%E7%AF%AE%E5%AD%90.mp3"
     },
     {
-      "id": "retry-规则换了-现在不是找颜色",
+      "id": "retry-先别看别的特征-这题只看形状",
       "kind": "retry",
-      "text": "规则换了，现在不是找颜色。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E8%A7%84%E5%88%99%E6%8D%A2%E4%BA%86-%E7%8E%B0%E5%9C%A8%E4%B8%8D%E6%98%AF%E6%89%BE%E9%A2%9C%E8%89%B2.mp3"
-    },
-    {
-      "id": "parent-问她-同一个东西-为什么能按不同规则分",
-      "kind": "parent",
-      "text": "问她：同一个东西，为什么能按不同规则分？",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E5%90%8C%E4%B8%80%E4%B8%AA%E4%B8%9C%E8%A5%BF-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%83%BD%E6%8C%89%E4%B8%8D%E5%90%8C%E8%A7%84%E5%88%99%E5%88%86.mp3"
+      "text": "先别看别的特征，这题只看形状。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E5%88%AB%E7%9C%8B%E5%88%AB%E7%9A%84%E7%89%B9%E5%BE%81-%E8%BF%99%E9%A2%98%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6.mp3"
     },
     {
       "id": "choice-圆形篮子",
@@ -2411,142 +2123,70 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E6%96%B9%E5%BD%A2%E7%AF%AE%E5%AD%90.mp3"
     },
     {
-      "id": "choice-三角形篮子",
-      "kind": "choice",
-      "text": "三角形篮子",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E4%B8%89%E8%A7%92%E5%BD%A2%E7%AF%AE%E5%AD%90.mp3"
-    },
-    {
-      "id": "prompt-规则变了-按形状分-方形放哪里-不要被颜色带走-只看形状",
+      "id": "prompt-规则换了-只看形状-蓝色方块应该进哪个篮子-先说一遍规则-只看形状-再看这张图",
       "kind": "prompt",
-      "text": "规则变了：按形状分。方形放哪里？不要被颜色带走，只看形状。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%A7%84%E5%88%99%E5%8F%98%E4%BA%86-%E6%8C%89%E5%BD%A2%E7%8A%B6%E5%88%86-%E6%96%B9%E5%BD%A2%E6%94%BE%E5%93%AA%E9%87%8C-%E4%B8%8D%E8%A6%81%E8%A2%AB%E9%A2%9C%E8%89%B2%E5%B8%A6%E8%B5%B0-%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6.mp3"
+      "text": "规则换了：只看形状。蓝色方块应该进哪个篮子？先说一遍规则：只看形状，再看这张图。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%A7%84%E5%88%99%E6%8D%A2%E4%BA%86-%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E8%93%9D%E8%89%B2%E6%96%B9%E5%9D%97%E5%BA%94%E8%AF%A5%E8%BF%9B%E5%93%AA%E4%B8%AA%E7%AF%AE%E5%AD%90-%E5%85%88%E8%AF%B4%E4%B8%80%E9%81%8D%E8%A7%84%E5%88%99-%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E5%86%8D%E7%9C%8B%E8%BF%99%E5%BC%A0%E5%9B%BE.mp3"
     },
     {
-      "id": "success-这次按形状分-方形要看形状",
+      "id": "success-规则是看形状-蓝色方块是方形-所以进方形篮子",
       "kind": "success",
-      "text": "这次按形状分，方形要看形状。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%BF%99%E6%AC%A1%E6%8C%89%E5%BD%A2%E7%8A%B6%E5%88%86-%E6%96%B9%E5%BD%A2%E8%A6%81%E7%9C%8B%E5%BD%A2%E7%8A%B6.mp3"
+      "text": "规则是看形状，蓝色方块是方形，所以进方形篮子。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%A7%84%E5%88%99%E6%98%AF%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E8%93%9D%E8%89%B2%E6%96%B9%E5%9D%97%E6%98%AF%E6%96%B9%E5%BD%A2-%E6%89%80%E4%BB%A5%E8%BF%9B%E6%96%B9%E5%BD%A2%E7%AF%AE%E5%AD%90.mp3"
     },
     {
-      "id": "prompt-规则变了-按形状分-小圆点放哪里-不要被颜色带走-只看形状",
+      "id": "prompt-同一张蓝色方块-这次分类机说只看颜色-应该进哪个篮子-先说一遍规则-只看颜色-再看这张图",
       "kind": "prompt",
-      "text": "规则变了：按形状分。小圆点放哪里？不要被颜色带走，只看形状。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%A7%84%E5%88%99%E5%8F%98%E4%BA%86-%E6%8C%89%E5%BD%A2%E7%8A%B6%E5%88%86-%E5%B0%8F%E5%9C%86%E7%82%B9%E6%94%BE%E5%93%AA%E9%87%8C-%E4%B8%8D%E8%A6%81%E8%A2%AB%E9%A2%9C%E8%89%B2%E5%B8%A6%E8%B5%B0-%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6.mp3"
+      "text": "同一张蓝色方块，这次分类机说只看颜色。应该进哪个篮子？先说一遍规则：只看颜色，再看这张图。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%90%8C%E4%B8%80%E5%BC%A0%E8%93%9D%E8%89%B2%E6%96%B9%E5%9D%97-%E8%BF%99%E6%AC%A1%E5%88%86%E7%B1%BB%E6%9C%BA%E8%AF%B4%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E5%BA%94%E8%AF%A5%E8%BF%9B%E5%93%AA%E4%B8%AA%E7%AF%AE%E5%AD%90-%E5%85%88%E8%AF%B4%E4%B8%80%E9%81%8D%E8%A7%84%E5%88%99-%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E5%86%8D%E7%9C%8B%E8%BF%99%E5%BC%A0%E5%9B%BE.mp3"
     },
     {
-      "id": "success-这次按形状分-小圆点要看形状",
+      "id": "success-这次只看颜色-蓝色方块先进蓝色篮子",
       "kind": "success",
-      "text": "这次按形状分，小圆点要看形状。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%BF%99%E6%AC%A1%E6%8C%89%E5%BD%A2%E7%8A%B6%E5%88%86-%E5%B0%8F%E5%9C%86%E7%82%B9%E8%A6%81%E7%9C%8B%E5%BD%A2%E7%8A%B6.mp3"
+      "text": "这次只看颜色，蓝色方块先进蓝色篮子。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%BF%99%E6%AC%A1%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E8%93%9D%E8%89%B2%E6%96%B9%E5%9D%97%E5%85%88%E8%BF%9B%E8%93%9D%E8%89%B2%E7%AF%AE%E5%AD%90.mp3"
     },
     {
-      "id": "prompt-规则变了-按形状分-空位放哪里-不要被颜色带走-只看形状",
+      "id": "prompt-还是这张蓝色方块-现在分类机说只看形状-应该进哪个篮子-先说一遍规则-只看形状-再看这张图",
       "kind": "prompt",
-      "text": "规则变了：按形状分。空位放哪里？不要被颜色带走，只看形状。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%A7%84%E5%88%99%E5%8F%98%E4%BA%86-%E6%8C%89%E5%BD%A2%E7%8A%B6%E5%88%86-%E7%A9%BA%E4%BD%8D%E6%94%BE%E5%93%AA%E9%87%8C-%E4%B8%8D%E8%A6%81%E8%A2%AB%E9%A2%9C%E8%89%B2%E5%B8%A6%E8%B5%B0-%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6.mp3"
+      "text": "还是这张蓝色方块，现在分类机说只看形状。应该进哪个篮子？先说一遍规则：只看形状，再看这张图。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%BF%98%E6%98%AF%E8%BF%99%E5%BC%A0%E8%93%9D%E8%89%B2%E6%96%B9%E5%9D%97-%E7%8E%B0%E5%9C%A8%E5%88%86%E7%B1%BB%E6%9C%BA%E8%AF%B4%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E5%BA%94%E8%AF%A5%E8%BF%9B%E5%93%AA%E4%B8%AA%E7%AF%AE%E5%AD%90-%E5%85%88%E8%AF%B4%E4%B8%80%E9%81%8D%E8%A7%84%E5%88%99-%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E5%86%8D%E7%9C%8B%E8%BF%99%E5%BC%A0%E5%9B%BE.mp3"
     },
     {
-      "id": "success-这次按形状分-空位要看形状",
+      "id": "success-规则换成形状-所以同一张蓝色方块要进方形篮子",
       "kind": "success",
-      "text": "这次按形状分，空位要看形状。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%BF%99%E6%AC%A1%E6%8C%89%E5%BD%A2%E7%8A%B6%E5%88%86-%E7%A9%BA%E4%BD%8D%E8%A6%81%E7%9C%8B%E5%BD%A2%E7%8A%B6.mp3"
+      "text": "规则换成形状，所以同一张蓝色方块要进方形篮子。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%A7%84%E5%88%99%E6%8D%A2%E6%88%90%E5%BD%A2%E7%8A%B6-%E6%89%80%E4%BB%A5%E5%90%8C%E4%B8%80%E5%BC%A0%E8%93%9D%E8%89%B2%E6%96%B9%E5%9D%97%E8%A6%81%E8%BF%9B%E6%96%B9%E5%BD%A2%E7%AF%AE%E5%AD%90.mp3"
     },
     {
-      "id": "object-空位",
-      "kind": "object",
-      "text": "空位",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E7%A9%BA%E4%BD%8D.mp3"
-    },
-    {
-      "id": "prompt-先按颜色分-这张应该放哪里-先听规则-再看这张图",
+      "id": "prompt-黄色圆片有颜色也有形状-分类机说只看颜色-放哪里-先说一遍规则-只看颜色-再看这张图",
       "kind": "prompt",
-      "text": "先按颜色分，这张应该放哪里？先听规则，再看这张图。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%85%88%E6%8C%89%E9%A2%9C%E8%89%B2%E5%88%86-%E8%BF%99%E5%BC%A0%E5%BA%94%E8%AF%A5%E6%94%BE%E5%93%AA%E9%87%8C-%E5%85%88%E5%90%AC%E8%A7%84%E5%88%99-%E5%86%8D%E7%9C%8B%E8%BF%99%E5%BC%A0%E5%9B%BE.mp3"
+      "text": "黄色圆片有颜色也有形状。分类机说只看颜色，放哪里？先说一遍规则：只看颜色，再看这张图。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87%E6%9C%89%E9%A2%9C%E8%89%B2%E4%B9%9F%E6%9C%89%E5%BD%A2%E7%8A%B6-%E5%88%86%E7%B1%BB%E6%9C%BA%E8%AF%B4%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E6%94%BE%E5%93%AA%E9%87%8C-%E5%85%88%E8%AF%B4%E4%B8%80%E9%81%8D%E8%A7%84%E5%88%99-%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E5%86%8D%E7%9C%8B%E8%BF%99%E5%BC%A0%E5%9B%BE.mp3"
     },
     {
-      "id": "success-这次先听颜色规则-所以红色圆片进红色篮子",
+      "id": "success-听到只看颜色-就选黄色篮子",
       "kind": "success",
-      "text": "这次先听颜色规则，所以红色圆片进红色篮子。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%BF%99%E6%AC%A1%E5%85%88%E5%90%AC%E9%A2%9C%E8%89%B2%E8%A7%84%E5%88%99-%E6%89%80%E4%BB%A5%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87%E8%BF%9B%E7%BA%A2%E8%89%B2%E7%AF%AE%E5%AD%90.mp3"
+      "text": "听到只看颜色，就选黄色篮子。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%90%AC%E5%88%B0%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E5%B0%B1%E9%80%89%E9%BB%84%E8%89%B2%E7%AF%AE%E5%AD%90.mp3"
     },
     {
-      "id": "retry-不要只看最显眼的地方-先把这次的规则说一遍",
-      "kind": "retry",
-      "text": "不要只看最显眼的地方，先把这次的规则说一遍。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E4%B8%8D%E8%A6%81%E5%8F%AA%E7%9C%8B%E6%9C%80%E6%98%BE%E7%9C%BC%E7%9A%84%E5%9C%B0%E6%96%B9-%E5%85%88%E6%8A%8A%E8%BF%99%E6%AC%A1%E7%9A%84%E8%A7%84%E5%88%99%E8%AF%B4%E4%B8%80%E9%81%8D.mp3"
-    },
-    {
-      "id": "parent-问她-如果规则换了-同一张图会不会去不同篮子",
-      "kind": "parent",
-      "text": "问她：如果规则换了，同一张图会不会去不同篮子？",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E5%A6%82%E6%9E%9C%E8%A7%84%E5%88%99%E6%8D%A2%E4%BA%86-%E5%90%8C%E4%B8%80%E5%BC%A0%E5%9B%BE%E4%BC%9A%E4%B8%8D%E4%BC%9A%E5%8E%BB%E4%B8%8D%E5%90%8C%E7%AF%AE%E5%AD%90.mp3"
-    },
-    {
-      "id": "prompt-先按形状分-这张应该放哪里-先听规则-再看这张图",
+      "id": "prompt-黄色圆片有颜色也有形状-分类机说只看形状-放哪里-先说一遍规则-只看形状-再看这张图",
       "kind": "prompt",
-      "text": "先按形状分，这张应该放哪里？先听规则，再看这张图。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%85%88%E6%8C%89%E5%BD%A2%E7%8A%B6%E5%88%86-%E8%BF%99%E5%BC%A0%E5%BA%94%E8%AF%A5%E6%94%BE%E5%93%AA%E9%87%8C-%E5%85%88%E5%90%AC%E8%A7%84%E5%88%99-%E5%86%8D%E7%9C%8B%E8%BF%99%E5%BC%A0%E5%9B%BE.mp3"
+      "text": "黄色圆片有颜色也有形状。分类机说只看形状，放哪里？先说一遍规则：只看形状，再看这张图。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87%E6%9C%89%E9%A2%9C%E8%89%B2%E4%B9%9F%E6%9C%89%E5%BD%A2%E7%8A%B6-%E5%88%86%E7%B1%BB%E6%9C%BA%E8%AF%B4%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E6%94%BE%E5%93%AA%E9%87%8C-%E5%85%88%E8%AF%B4%E4%B8%80%E9%81%8D%E8%A7%84%E5%88%99-%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E5%86%8D%E7%9C%8B%E8%BF%99%E5%BC%A0%E5%9B%BE.mp3"
     },
     {
-      "id": "success-这次先听形状规则-所以红色圆片进圆形篮子",
+      "id": "success-听到只看形状-就选圆形篮子",
       "kind": "success",
-      "text": "这次先听形状规则，所以红色圆片进圆形篮子。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%BF%99%E6%AC%A1%E5%85%88%E5%90%AC%E5%BD%A2%E7%8A%B6%E8%A7%84%E5%88%99-%E6%89%80%E4%BB%A5%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87%E8%BF%9B%E5%9C%86%E5%BD%A2%E7%AF%AE%E5%AD%90.mp3"
+      "text": "听到只看形状，就选圆形篮子。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%90%AC%E5%88%B0%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E5%B0%B1%E9%80%89%E5%9C%86%E5%BD%A2%E7%AF%AE%E5%AD%90.mp3"
     },
     {
-      "id": "success-这次先听颜色规则-所以蓝色方块进蓝色篮子",
-      "kind": "success",
-      "text": "这次先听颜色规则，所以蓝色方块进蓝色篮子。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%BF%99%E6%AC%A1%E5%85%88%E5%90%AC%E9%A2%9C%E8%89%B2%E8%A7%84%E5%88%99-%E6%89%80%E4%BB%A5%E8%93%9D%E8%89%B2%E6%96%B9%E5%9D%97%E8%BF%9B%E8%93%9D%E8%89%B2%E7%AF%AE%E5%AD%90.mp3"
-    },
-    {
-      "id": "success-这次先听形状规则-所以蓝色方块进方形篮子",
-      "kind": "success",
-      "text": "这次先听形状规则，所以蓝色方块进方形篮子。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%BF%99%E6%AC%A1%E5%85%88%E5%90%AC%E5%BD%A2%E7%8A%B6%E8%A7%84%E5%88%99-%E6%89%80%E4%BB%A5%E8%93%9D%E8%89%B2%E6%96%B9%E5%9D%97%E8%BF%9B%E6%96%B9%E5%BD%A2%E7%AF%AE%E5%AD%90.mp3"
-    },
-    {
-      "id": "prompt-规则换成颜色-这张应该放哪里-先听规则-再看这张图",
+      "id": "prompt-分类机要红色-也要圆形-选哪一张-两个条件都要满足-少一个都不行",
       "kind": "prompt",
-      "text": "规则换成颜色，这张应该放哪里？先听规则，再看这张图。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%A7%84%E5%88%99%E6%8D%A2%E6%88%90%E9%A2%9C%E8%89%B2-%E8%BF%99%E5%BC%A0%E5%BA%94%E8%AF%A5%E6%94%BE%E5%93%AA%E9%87%8C-%E5%85%88%E5%90%AC%E8%A7%84%E5%88%99-%E5%86%8D%E7%9C%8B%E8%BF%99%E5%BC%A0%E5%9B%BE.mp3"
-    },
-    {
-      "id": "success-规则换成颜色-就先看黄色",
-      "kind": "success",
-      "text": "规则换成颜色，就先看黄色。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%A7%84%E5%88%99%E6%8D%A2%E6%88%90%E9%A2%9C%E8%89%B2-%E5%B0%B1%E5%85%88%E7%9C%8B%E9%BB%84%E8%89%B2.mp3"
-    },
-    {
-      "id": "prompt-规则换成形状-这张应该放哪里-先听规则-再看这张图",
-      "kind": "prompt",
-      "text": "规则换成形状，这张应该放哪里？先听规则，再看这张图。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%A7%84%E5%88%99%E6%8D%A2%E6%88%90%E5%BD%A2%E7%8A%B6-%E8%BF%99%E5%BC%A0%E5%BA%94%E8%AF%A5%E6%94%BE%E5%93%AA%E9%87%8C-%E5%85%88%E5%90%AC%E8%A7%84%E5%88%99-%E5%86%8D%E7%9C%8B%E8%BF%99%E5%BC%A0%E5%9B%BE.mp3"
-    },
-    {
-      "id": "success-规则换成形状-就先看圆形",
-      "kind": "success",
-      "text": "规则换成形状，就先看圆形。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%A7%84%E5%88%99%E6%8D%A2%E6%88%90%E5%BD%A2%E7%8A%B6-%E5%B0%B1%E5%85%88%E7%9C%8B%E5%9C%86%E5%BD%A2.mp3"
-    },
-    {
-      "id": "success-规则换成颜色-就先看绿色",
-      "kind": "success",
-      "text": "规则换成颜色，就先看绿色。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%A7%84%E5%88%99%E6%8D%A2%E6%88%90%E9%A2%9C%E8%89%B2-%E5%B0%B1%E5%85%88%E7%9C%8B%E7%BB%BF%E8%89%B2.mp3"
-    },
-    {
-      "id": "success-规则换成形状-空位这张是方形",
-      "kind": "success",
-      "text": "规则换成形状，空位这张是方形。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%A7%84%E5%88%99%E6%8D%A2%E6%88%90%E5%BD%A2%E7%8A%B6-%E7%A9%BA%E4%BD%8D%E8%BF%99%E5%BC%A0%E6%98%AF%E6%96%B9%E5%BD%A2.mp3"
-    },
-    {
-      "id": "prompt-规则是红色-而且要圆形-选哪一个-两个条件都要满足-少一个都不行",
-      "kind": "prompt",
-      "text": "规则是红色，而且要圆形。选哪一个？两个条件都要满足，少一个都不行。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%A7%84%E5%88%99%E6%98%AF%E7%BA%A2%E8%89%B2-%E8%80%8C%E4%B8%94%E8%A6%81%E5%9C%86%E5%BD%A2-%E9%80%89%E5%93%AA%E4%B8%80%E4%B8%AA-%E4%B8%A4%E4%B8%AA%E6%9D%A1%E4%BB%B6%E9%83%BD%E8%A6%81%E6%BB%A1%E8%B6%B3-%E5%B0%91%E4%B8%80%E4%B8%AA%E9%83%BD%E4%B8%8D%E8%A1%8C.mp3"
+      "text": "分类机要红色，也要圆形。选哪一张？两个条件都要满足，少一个都不行。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%88%86%E7%B1%BB%E6%9C%BA%E8%A6%81%E7%BA%A2%E8%89%B2-%E4%B9%9F%E8%A6%81%E5%9C%86%E5%BD%A2-%E9%80%89%E5%93%AA%E4%B8%80%E5%BC%A0-%E4%B8%A4%E4%B8%AA%E6%9D%A1%E4%BB%B6%E9%83%BD%E8%A6%81%E6%BB%A1%E8%B6%B3-%E5%B0%91%E4%B8%80%E4%B8%AA%E9%83%BD%E4%B8%8D%E8%A1%8C.mp3"
     },
     {
       "id": "success-红色圆片同时满足红色和圆形",
@@ -2555,10 +2195,10 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87%E5%90%8C%E6%97%B6%E6%BB%A1%E8%B6%B3%E7%BA%A2%E8%89%B2%E5%92%8C%E5%9C%86%E5%BD%A2.mp3"
     },
     {
-      "id": "retry-先看第一个条件-再看第二个条件",
+      "id": "retry-先看颜色-再看形状-两个都对才行",
       "kind": "retry",
-      "text": "先看第一个条件，再看第二个条件。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E7%9C%8B%E7%AC%AC%E4%B8%80%E4%B8%AA%E6%9D%A1%E4%BB%B6-%E5%86%8D%E7%9C%8B%E7%AC%AC%E4%BA%8C%E4%B8%AA%E6%9D%A1%E4%BB%B6.mp3"
+      "text": "先看颜色，再看形状，两个都对才行。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E7%9C%8B%E9%A2%9C%E8%89%B2-%E5%86%8D%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E4%B8%A4%E4%B8%AA%E9%83%BD%E5%AF%B9%E6%89%8D%E8%A1%8C.mp3"
     },
     {
       "id": "parent-问她-它满足了哪两个条件-哪个选项只满足了一个",
@@ -2567,10 +2207,16 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E5%AE%83%E6%BB%A1%E8%B6%B3%E4%BA%86%E5%93%AA%E4%B8%A4%E4%B8%AA%E6%9D%A1%E4%BB%B6-%E5%93%AA%E4%B8%AA%E9%80%89%E9%A1%B9%E5%8F%AA%E6%BB%A1%E8%B6%B3%E4%BA%86%E4%B8%80%E4%B8%AA.mp3"
     },
     {
-      "id": "prompt-规则是蓝色-而且要方形-选哪一个-两个条件都要满足-少一个都不行",
+      "id": "choice-蓝色方块",
+      "kind": "choice",
+      "text": "蓝色方块",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E8%93%9D%E8%89%B2%E6%96%B9%E5%9D%97.mp3"
+    },
+    {
+      "id": "prompt-分类机要蓝色-也要方形-选哪一张-两个条件都要满足-少一个都不行",
       "kind": "prompt",
-      "text": "规则是蓝色，而且要方形。选哪一个？两个条件都要满足，少一个都不行。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%A7%84%E5%88%99%E6%98%AF%E8%93%9D%E8%89%B2-%E8%80%8C%E4%B8%94%E8%A6%81%E6%96%B9%E5%BD%A2-%E9%80%89%E5%93%AA%E4%B8%80%E4%B8%AA-%E4%B8%A4%E4%B8%AA%E6%9D%A1%E4%BB%B6%E9%83%BD%E8%A6%81%E6%BB%A1%E8%B6%B3-%E5%B0%91%E4%B8%80%E4%B8%AA%E9%83%BD%E4%B8%8D%E8%A1%8C.mp3"
+      "text": "分类机要蓝色，也要方形。选哪一张？两个条件都要满足，少一个都不行。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%88%86%E7%B1%BB%E6%9C%BA%E8%A6%81%E8%93%9D%E8%89%B2-%E4%B9%9F%E8%A6%81%E6%96%B9%E5%BD%A2-%E9%80%89%E5%93%AA%E4%B8%80%E5%BC%A0-%E4%B8%A4%E4%B8%AA%E6%9D%A1%E4%BB%B6%E9%83%BD%E8%A6%81%E6%BB%A1%E8%B6%B3-%E5%B0%91%E4%B8%80%E4%B8%AA%E9%83%BD%E4%B8%8D%E8%A1%8C.mp3"
     },
     {
       "id": "success-蓝色方块同时满足蓝色和方形",
@@ -2579,22 +2225,10 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%93%9D%E8%89%B2%E6%96%B9%E5%9D%97%E5%90%8C%E6%97%B6%E6%BB%A1%E8%B6%B3%E8%93%9D%E8%89%B2%E5%92%8C%E6%96%B9%E5%BD%A2.mp3"
     },
     {
-      "id": "prompt-规则是蓝色-而且要圆形-选哪一个-两个条件都要满足-少一个都不行",
+      "id": "prompt-分类机要黄色-也要圆形-选哪一张-两个条件都要满足-少一个都不行",
       "kind": "prompt",
-      "text": "规则是蓝色，而且要圆形。选哪一个？两个条件都要满足，少一个都不行。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%A7%84%E5%88%99%E6%98%AF%E8%93%9D%E8%89%B2-%E8%80%8C%E4%B8%94%E8%A6%81%E5%9C%86%E5%BD%A2-%E9%80%89%E5%93%AA%E4%B8%80%E4%B8%AA-%E4%B8%A4%E4%B8%AA%E6%9D%A1%E4%BB%B6%E9%83%BD%E8%A6%81%E6%BB%A1%E8%B6%B3-%E5%B0%91%E4%B8%80%E4%B8%AA%E9%83%BD%E4%B8%8D%E8%A1%8C.mp3"
-    },
-    {
-      "id": "success-蓝色圆片同时满足蓝色和圆形",
-      "kind": "success",
-      "text": "蓝色圆片同时满足蓝色和圆形。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87%E5%90%8C%E6%97%B6%E6%BB%A1%E8%B6%B3%E8%93%9D%E8%89%B2%E5%92%8C%E5%9C%86%E5%BD%A2.mp3"
-    },
-    {
-      "id": "prompt-规则是黄色-而且要圆形-选哪一个-两个条件都要满足-少一个都不行",
-      "kind": "prompt",
-      "text": "规则是黄色，而且要圆形。选哪一个？两个条件都要满足，少一个都不行。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%A7%84%E5%88%99%E6%98%AF%E9%BB%84%E8%89%B2-%E8%80%8C%E4%B8%94%E8%A6%81%E5%9C%86%E5%BD%A2-%E9%80%89%E5%93%AA%E4%B8%80%E4%B8%AA-%E4%B8%A4%E4%B8%AA%E6%9D%A1%E4%BB%B6%E9%83%BD%E8%A6%81%E6%BB%A1%E8%B6%B3-%E5%B0%91%E4%B8%80%E4%B8%AA%E9%83%BD%E4%B8%8D%E8%A1%8C.mp3"
+      "text": "分类机要黄色，也要圆形。选哪一张？两个条件都要满足，少一个都不行。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%88%86%E7%B1%BB%E6%9C%BA%E8%A6%81%E9%BB%84%E8%89%B2-%E4%B9%9F%E8%A6%81%E5%9C%86%E5%BD%A2-%E9%80%89%E5%93%AA%E4%B8%80%E5%BC%A0-%E4%B8%A4%E4%B8%AA%E6%9D%A1%E4%BB%B6%E9%83%BD%E8%A6%81%E6%BB%A1%E8%B6%B3-%E5%B0%91%E4%B8%80%E4%B8%AA%E9%83%BD%E4%B8%8D%E8%A1%8C.mp3"
     },
     {
       "id": "success-黄色圆片同时满足黄色和圆形",
@@ -2603,64 +2237,16 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87%E5%90%8C%E6%97%B6%E6%BB%A1%E8%B6%B3%E9%BB%84%E8%89%B2%E5%92%8C%E5%9C%86%E5%BD%A2.mp3"
     },
     {
-      "id": "prompt-a-和-c-都是红色-哪一张颜色不一样-先找到一样的两张-再找不一样的那张",
-      "kind": "prompt",
-      "text": "A 和 C 都是红色。哪一张颜色不一样？先找到一样的两张，再找不一样的那张。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-a-%E5%92%8C-c-%E9%83%BD%E6%98%AF%E7%BA%A2%E8%89%B2-%E5%93%AA%E4%B8%80%E5%BC%A0%E9%A2%9C%E8%89%B2%E4%B8%8D%E4%B8%80%E6%A0%B7-%E5%85%88%E6%89%BE%E5%88%B0%E4%B8%80%E6%A0%B7%E7%9A%84%E4%B8%A4%E5%BC%A0-%E5%86%8D%E6%89%BE%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E9%82%A3%E5%BC%A0.mp3"
+      "id": "choice-空位",
+      "kind": "choice",
+      "text": "空位",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E7%A9%BA%E4%BD%8D.mp3"
     },
     {
-      "id": "success-b-的颜色不一样-a-和-c-都是红色",
-      "kind": "success",
-      "text": "B 的颜色不一样。A 和 C 都是红色。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-b-%E7%9A%84%E9%A2%9C%E8%89%B2%E4%B8%8D%E4%B8%80%E6%A0%B7-a-%E5%92%8C-c-%E9%83%BD%E6%98%AF%E7%BA%A2%E8%89%B2.mp3"
-    },
-    {
-      "id": "retry-先比-a-和-c-再看-b-的颜色是不是不同",
-      "kind": "retry",
-      "text": "先比 A 和 C，再看 B 的颜色是不是不同。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E6%AF%94-a-%E5%92%8C-c-%E5%86%8D%E7%9C%8B-b-%E7%9A%84%E9%A2%9C%E8%89%B2%E6%98%AF%E4%B8%8D%E6%98%AF%E4%B8%8D%E5%90%8C.mp3"
-    },
-    {
-      "id": "parent-问她-哪两张颜色一样-哪一张不一样",
-      "kind": "parent",
-      "text": "问她：哪两张颜色一样？哪一张不一样？",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E5%93%AA%E4%B8%A4%E5%BC%A0%E9%A2%9C%E8%89%B2%E4%B8%80%E6%A0%B7-%E5%93%AA%E4%B8%80%E5%BC%A0%E4%B8%8D%E4%B8%80%E6%A0%B7.mp3"
-    },
-    {
-      "id": "prompt-a-和-c-都是蓝色-哪一张颜色不一样-先找到一样的两张-再找不一样的那张",
-      "kind": "prompt",
-      "text": "A 和 C 都是蓝色。哪一张颜色不一样？先找到一样的两张，再找不一样的那张。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-a-%E5%92%8C-c-%E9%83%BD%E6%98%AF%E8%93%9D%E8%89%B2-%E5%93%AA%E4%B8%80%E5%BC%A0%E9%A2%9C%E8%89%B2%E4%B8%8D%E4%B8%80%E6%A0%B7-%E5%85%88%E6%89%BE%E5%88%B0%E4%B8%80%E6%A0%B7%E7%9A%84%E4%B8%A4%E5%BC%A0-%E5%86%8D%E6%89%BE%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E9%82%A3%E5%BC%A0.mp3"
-    },
-    {
-      "id": "success-b-的颜色不一样-a-和-c-都是蓝色",
-      "kind": "success",
-      "text": "B 的颜色不一样。A 和 C 都是蓝色。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-b-%E7%9A%84%E9%A2%9C%E8%89%B2%E4%B8%8D%E4%B8%80%E6%A0%B7-a-%E5%92%8C-c-%E9%83%BD%E6%98%AF%E8%93%9D%E8%89%B2.mp3"
-    },
-    {
-      "id": "prompt-a-和-c-都是绿色-哪一张颜色不一样-先找到一样的两张-再找不一样的那张",
-      "kind": "prompt",
-      "text": "A 和 C 都是绿色。哪一张颜色不一样？先找到一样的两张，再找不一样的那张。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-a-%E5%92%8C-c-%E9%83%BD%E6%98%AF%E7%BB%BF%E8%89%B2-%E5%93%AA%E4%B8%80%E5%BC%A0%E9%A2%9C%E8%89%B2%E4%B8%8D%E4%B8%80%E6%A0%B7-%E5%85%88%E6%89%BE%E5%88%B0%E4%B8%80%E6%A0%B7%E7%9A%84%E4%B8%A4%E5%BC%A0-%E5%86%8D%E6%89%BE%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E9%82%A3%E5%BC%A0.mp3"
-    },
-    {
-      "id": "success-b-的颜色不一样-a-和-c-都是绿色",
-      "kind": "success",
-      "text": "B 的颜色不一样。A 和 C 都是绿色。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-b-%E7%9A%84%E9%A2%9C%E8%89%B2%E4%B8%8D%E4%B8%80%E6%A0%B7-a-%E5%92%8C-c-%E9%83%BD%E6%98%AF%E7%BB%BF%E8%89%B2.mp3"
-    },
-    {
-      "id": "prompt-a-和-c-都是黄色-哪一张颜色不一样-先找到一样的两张-再找不一样的那张",
-      "kind": "prompt",
-      "text": "A 和 C 都是黄色。哪一张颜色不一样？先找到一样的两张，再找不一样的那张。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-a-%E5%92%8C-c-%E9%83%BD%E6%98%AF%E9%BB%84%E8%89%B2-%E5%93%AA%E4%B8%80%E5%BC%A0%E9%A2%9C%E8%89%B2%E4%B8%8D%E4%B8%80%E6%A0%B7-%E5%85%88%E6%89%BE%E5%88%B0%E4%B8%80%E6%A0%B7%E7%9A%84%E4%B8%A4%E5%BC%A0-%E5%86%8D%E6%89%BE%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E9%82%A3%E5%BC%A0.mp3"
-    },
-    {
-      "id": "success-b-的颜色不一样-a-和-c-都是黄色",
-      "kind": "success",
-      "text": "B 的颜色不一样。A 和 C 都是黄色。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-b-%E7%9A%84%E9%A2%9C%E8%89%B2%E4%B8%8D%E4%B8%80%E6%A0%B7-a-%E5%92%8C-c-%E9%83%BD%E6%98%AF%E9%BB%84%E8%89%B2.mp3"
+      "id": "object-空位",
+      "kind": "object",
+      "text": "空位",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E7%A9%BA%E4%BD%8D.mp3"
     },
     {
       "id": "game-title-停一下再行动",
@@ -2675,16 +2261,16 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/game-goal-%E8%AE%AD%E7%BB%83%E6%8A%91%E5%88%B6%E6%8E%A7%E5%88%B6%E5%92%8C%E6%8C%89%E8%A7%84%E5%88%99%E8%A1%8C%E5%8A%A8.mp3"
     },
     {
-      "id": "prompt-绿灯亮了-小兔应该怎么做-看灯的颜色-再选动作",
+      "id": "prompt-绿灯亮了-小朋友应该怎么做-看灯的颜色-再选动作",
       "kind": "prompt",
-      "text": "绿灯亮了，小兔应该怎么做？看灯的颜色，再选动作。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%BB%BF%E7%81%AF%E4%BA%AE%E4%BA%86-%E5%B0%8F%E5%85%94%E5%BA%94%E8%AF%A5%E6%80%8E%E4%B9%88%E5%81%9A-%E7%9C%8B%E7%81%AF%E7%9A%84%E9%A2%9C%E8%89%B2-%E5%86%8D%E9%80%89%E5%8A%A8%E4%BD%9C.mp3"
+      "text": "绿灯亮了，小朋友应该怎么做？看灯的颜色，再选动作。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%BB%BF%E7%81%AF%E4%BA%AE%E4%BA%86-%E5%B0%8F%E6%9C%8B%E5%8F%8B%E5%BA%94%E8%AF%A5%E6%80%8E%E4%B9%88%E5%81%9A-%E7%9C%8B%E7%81%AF%E7%9A%84%E9%A2%9C%E8%89%B2-%E5%86%8D%E9%80%89%E5%8A%A8%E4%BD%9C.mp3"
     },
     {
-      "id": "success-绿灯亮了-小兔要走",
+      "id": "success-绿灯亮了-小朋友要走过去",
       "kind": "success",
-      "text": "绿灯亮了，小兔要走。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%BB%BF%E7%81%AF%E4%BA%AE%E4%BA%86-%E5%B0%8F%E5%85%94%E8%A6%81%E8%B5%B0.mp3"
+      "text": "绿灯亮了，小朋友要走过去。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%BB%BF%E7%81%AF%E4%BA%AE%E4%BA%86-%E5%B0%8F%E6%9C%8B%E5%8F%8B%E8%A6%81%E8%B5%B0%E8%BF%87%E5%8E%BB.mp3"
     },
     {
       "id": "retry-先停一下-把这次的玩法再听一遍",
@@ -2699,16 +2285,16 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E8%BF%99%E4%B8%80%E6%AC%A1%E6%98%AF%E6%8C%89%E7%BA%A2%E7%BB%BF%E7%81%AF%E8%B5%B0-%E8%BF%98%E6%98%AF%E7%8E%A9%E6%B3%95%E5%8F%98%E4%BA%86.mp3"
     },
     {
-      "id": "choice-走",
+      "id": "choice-走过去",
       "kind": "choice",
-      "text": "走",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E8%B5%B0.mp3"
+      "text": "走过去",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E8%B5%B0%E8%BF%87%E5%8E%BB.mp3"
     },
     {
-      "id": "choice-停",
+      "id": "choice-停下等",
       "kind": "choice",
-      "text": "停",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%81%9C.mp3"
+      "text": "停下等",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%81%9C%E4%B8%8B%E7%AD%89.mp3"
     },
     {
       "id": "choice-慢慢走",
@@ -2723,34 +2309,28 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E6%8C%89%E7%BA%A2%E7%BB%BF%E7%81%AF%E8%B5%B0.mp3"
     },
     {
-      "id": "object-小兔",
-      "kind": "object",
-      "text": "小兔",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%B0%8F%E5%85%94.mp3"
-    },
-    {
-      "id": "prompt-红灯亮了-小兔应该怎么做-看灯的颜色-再选动作",
+      "id": "prompt-红灯亮了-小朋友应该怎么做-看灯的颜色-再选动作",
       "kind": "prompt",
-      "text": "红灯亮了，小兔应该怎么做？看灯的颜色，再选动作。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%BA%A2%E7%81%AF%E4%BA%AE%E4%BA%86-%E5%B0%8F%E5%85%94%E5%BA%94%E8%AF%A5%E6%80%8E%E4%B9%88%E5%81%9A-%E7%9C%8B%E7%81%AF%E7%9A%84%E9%A2%9C%E8%89%B2-%E5%86%8D%E9%80%89%E5%8A%A8%E4%BD%9C.mp3"
+      "text": "红灯亮了，小朋友应该怎么做？看灯的颜色，再选动作。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%BA%A2%E7%81%AF%E4%BA%AE%E4%BA%86-%E5%B0%8F%E6%9C%8B%E5%8F%8B%E5%BA%94%E8%AF%A5%E6%80%8E%E4%B9%88%E5%81%9A-%E7%9C%8B%E7%81%AF%E7%9A%84%E9%A2%9C%E8%89%B2-%E5%86%8D%E9%80%89%E5%8A%A8%E4%BD%9C.mp3"
     },
     {
-      "id": "success-红灯亮了-小兔要停",
+      "id": "success-红灯亮了-小朋友要停下等",
       "kind": "success",
-      "text": "红灯亮了，小兔要停。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%BA%A2%E7%81%AF%E4%BA%AE%E4%BA%86-%E5%B0%8F%E5%85%94%E8%A6%81%E5%81%9C.mp3"
+      "text": "红灯亮了，小朋友要停下等。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%BA%A2%E7%81%AF%E4%BA%AE%E4%BA%86-%E5%B0%8F%E6%9C%8B%E5%8F%8B%E8%A6%81%E5%81%9C%E4%B8%8B%E7%AD%89.mp3"
     },
     {
-      "id": "prompt-现在玩反口令-绿灯亮了-小兔应该怎么做-玩法变了-先停一下再想",
+      "id": "prompt-现在玩反口令-绿灯亮了-小朋友应该怎么做-玩法变了-先停一下再想",
       "kind": "prompt",
-      "text": "现在玩反口令：绿灯亮了，小兔应该怎么做？玩法变了，先停一下再想。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%8E%B0%E5%9C%A8%E7%8E%A9%E5%8F%8D%E5%8F%A3%E4%BB%A4-%E7%BB%BF%E7%81%AF%E4%BA%AE%E4%BA%86-%E5%B0%8F%E5%85%94%E5%BA%94%E8%AF%A5%E6%80%8E%E4%B9%88%E5%81%9A-%E7%8E%A9%E6%B3%95%E5%8F%98%E4%BA%86-%E5%85%88%E5%81%9C%E4%B8%80%E4%B8%8B%E5%86%8D%E6%83%B3.mp3"
+      "text": "现在玩反口令：绿灯亮了，小朋友应该怎么做？玩法变了，先停一下再想。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%8E%B0%E5%9C%A8%E7%8E%A9%E5%8F%8D%E5%8F%A3%E4%BB%A4-%E7%BB%BF%E7%81%AF%E4%BA%AE%E4%BA%86-%E5%B0%8F%E6%9C%8B%E5%8F%8B%E5%BA%94%E8%AF%A5%E6%80%8E%E4%B9%88%E5%81%9A-%E7%8E%A9%E6%B3%95%E5%8F%98%E4%BA%86-%E5%85%88%E5%81%9C%E4%B8%80%E4%B8%8B%E5%86%8D%E6%83%B3.mp3"
     },
     {
-      "id": "success-绿灯亮了-小兔要停",
+      "id": "success-绿灯亮了-小朋友要停下等",
       "kind": "success",
-      "text": "绿灯亮了，小兔要停。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%BB%BF%E7%81%AF%E4%BA%AE%E4%BA%86-%E5%B0%8F%E5%85%94%E8%A6%81%E5%81%9C.mp3"
+      "text": "绿灯亮了，小朋友要停下等。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%BB%BF%E7%81%AF%E4%BA%AE%E4%BA%86-%E5%B0%8F%E6%9C%8B%E5%8F%8B%E8%A6%81%E5%81%9C%E4%B8%8B%E7%AD%89.mp3"
     },
     {
       "id": "object-玩反口令",
@@ -2759,58 +2339,58 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E7%8E%A9%E5%8F%8D%E5%8F%A3%E4%BB%A4.mp3"
     },
     {
-      "id": "prompt-现在玩反口令-红灯亮了-小兔应该怎么做-玩法变了-先停一下再想",
+      "id": "prompt-现在玩反口令-红灯亮了-小朋友应该怎么做-玩法变了-先停一下再想",
       "kind": "prompt",
-      "text": "现在玩反口令：红灯亮了，小兔应该怎么做？玩法变了，先停一下再想。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%8E%B0%E5%9C%A8%E7%8E%A9%E5%8F%8D%E5%8F%A3%E4%BB%A4-%E7%BA%A2%E7%81%AF%E4%BA%AE%E4%BA%86-%E5%B0%8F%E5%85%94%E5%BA%94%E8%AF%A5%E6%80%8E%E4%B9%88%E5%81%9A-%E7%8E%A9%E6%B3%95%E5%8F%98%E4%BA%86-%E5%85%88%E5%81%9C%E4%B8%80%E4%B8%8B%E5%86%8D%E6%83%B3.mp3"
+      "text": "现在玩反口令：红灯亮了，小朋友应该怎么做？玩法变了，先停一下再想。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%8E%B0%E5%9C%A8%E7%8E%A9%E5%8F%8D%E5%8F%A3%E4%BB%A4-%E7%BA%A2%E7%81%AF%E4%BA%AE%E4%BA%86-%E5%B0%8F%E6%9C%8B%E5%8F%8B%E5%BA%94%E8%AF%A5%E6%80%8E%E4%B9%88%E5%81%9A-%E7%8E%A9%E6%B3%95%E5%8F%98%E4%BA%86-%E5%85%88%E5%81%9C%E4%B8%80%E4%B8%8B%E5%86%8D%E6%83%B3.mp3"
     },
     {
-      "id": "success-红灯亮了-小兔要走",
+      "id": "success-红灯亮了-小朋友要走过去",
       "kind": "success",
-      "text": "红灯亮了，小兔要走。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%BA%A2%E7%81%AF%E4%BA%AE%E4%BA%86-%E5%B0%8F%E5%85%94%E8%A6%81%E8%B5%B0.mp3"
+      "text": "红灯亮了，小朋友要走过去。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%BA%A2%E7%81%AF%E4%BA%AE%E4%BA%86-%E5%B0%8F%E6%9C%8B%E5%8F%8B%E8%A6%81%E8%B5%B0%E8%BF%87%E5%8E%BB.mp3"
     },
     {
-      "id": "prompt-这次听到绿灯也要慢慢走-小兔应该怎么做-玩法变了-先停一下再想",
+      "id": "prompt-这次规则是-绿灯也要慢慢走-小朋友应该怎么做-玩法变了-先停一下再想",
       "kind": "prompt",
-      "text": "这次听到绿灯也要慢慢走，小兔应该怎么做？玩法变了，先停一下再想。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%BF%99%E6%AC%A1%E5%90%AC%E5%88%B0%E7%BB%BF%E7%81%AF%E4%B9%9F%E8%A6%81%E6%85%A2%E6%85%A2%E8%B5%B0-%E5%B0%8F%E5%85%94%E5%BA%94%E8%AF%A5%E6%80%8E%E4%B9%88%E5%81%9A-%E7%8E%A9%E6%B3%95%E5%8F%98%E4%BA%86-%E5%85%88%E5%81%9C%E4%B8%80%E4%B8%8B%E5%86%8D%E6%83%B3.mp3"
+      "text": "这次规则是：绿灯也要慢慢走。小朋友应该怎么做？玩法变了，先停一下再想。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%BF%99%E6%AC%A1%E8%A7%84%E5%88%99%E6%98%AF-%E7%BB%BF%E7%81%AF%E4%B9%9F%E8%A6%81%E6%85%A2%E6%85%A2%E8%B5%B0-%E5%B0%8F%E6%9C%8B%E5%8F%8B%E5%BA%94%E8%AF%A5%E6%80%8E%E4%B9%88%E5%81%9A-%E7%8E%A9%E6%B3%95%E5%8F%98%E4%BA%86-%E5%85%88%E5%81%9C%E4%B8%80%E4%B8%8B%E5%86%8D%E6%83%B3.mp3"
     },
     {
-      "id": "success-绿灯亮了-小兔要慢慢走",
+      "id": "success-绿灯亮了-小朋友要慢慢走",
       "kind": "success",
-      "text": "绿灯亮了，小兔要慢慢走。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%BB%BF%E7%81%AF%E4%BA%AE%E4%BA%86-%E5%B0%8F%E5%85%94%E8%A6%81%E6%85%A2%E6%85%A2%E8%B5%B0.mp3"
+      "text": "绿灯亮了，小朋友要慢慢走。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%BB%BF%E7%81%AF%E4%BA%AE%E4%BA%86-%E5%B0%8F%E6%9C%8B%E5%8F%8B%E8%A6%81%E6%85%A2%E6%85%A2%E8%B5%B0.mp3"
     },
     {
-      "id": "choice-拍手",
+      "id": "choice-先拍手",
       "kind": "choice",
-      "text": "拍手",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E6%8B%8D%E6%89%8B.mp3"
-    },
-    {
-      "id": "object-慢慢走",
-      "kind": "object",
-      "text": "慢慢走",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E6%85%A2%E6%85%A2%E8%B5%B0.mp3"
-    },
-    {
-      "id": "prompt-这次红灯亮了要先拍手-小兔应该怎么做-玩法变了-先停一下再想",
-      "kind": "prompt",
-      "text": "这次红灯亮了要先拍手，小兔应该怎么做？玩法变了，先停一下再想。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%BF%99%E6%AC%A1%E7%BA%A2%E7%81%AF%E4%BA%AE%E4%BA%86%E8%A6%81%E5%85%88%E6%8B%8D%E6%89%8B-%E5%B0%8F%E5%85%94%E5%BA%94%E8%AF%A5%E6%80%8E%E4%B9%88%E5%81%9A-%E7%8E%A9%E6%B3%95%E5%8F%98%E4%BA%86-%E5%85%88%E5%81%9C%E4%B8%80%E4%B8%8B%E5%86%8D%E6%83%B3.mp3"
-    },
-    {
-      "id": "success-红灯亮了-小兔要拍手",
-      "kind": "success",
-      "text": "红灯亮了，小兔要拍手。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%BA%A2%E7%81%AF%E4%BA%AE%E4%BA%86-%E5%B0%8F%E5%85%94%E8%A6%81%E6%8B%8D%E6%89%8B.mp3"
-    },
-    {
-      "id": "object-先拍手",
-      "kind": "object",
       "text": "先拍手",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%85%88%E6%8B%8D%E6%89%8B.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%85%88%E6%8B%8D%E6%89%8B.mp3"
+    },
+    {
+      "id": "object-绿灯慢慢走",
+      "kind": "object",
+      "text": "绿灯慢慢走",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E7%BB%BF%E7%81%AF%E6%85%A2%E6%85%A2%E8%B5%B0.mp3"
+    },
+    {
+      "id": "prompt-这次规则是-红灯亮了先拍手-小朋友应该怎么做-玩法变了-先停一下再想",
+      "kind": "prompt",
+      "text": "这次规则是：红灯亮了先拍手。小朋友应该怎么做？玩法变了，先停一下再想。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%BF%99%E6%AC%A1%E8%A7%84%E5%88%99%E6%98%AF-%E7%BA%A2%E7%81%AF%E4%BA%AE%E4%BA%86%E5%85%88%E6%8B%8D%E6%89%8B-%E5%B0%8F%E6%9C%8B%E5%8F%8B%E5%BA%94%E8%AF%A5%E6%80%8E%E4%B9%88%E5%81%9A-%E7%8E%A9%E6%B3%95%E5%8F%98%E4%BA%86-%E5%85%88%E5%81%9C%E4%B8%80%E4%B8%8B%E5%86%8D%E6%83%B3.mp3"
+    },
+    {
+      "id": "success-红灯亮了-小朋友要先拍手",
+      "kind": "success",
+      "text": "红灯亮了，小朋友要先拍手。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%BA%A2%E7%81%AF%E4%BA%AE%E4%BA%86-%E5%B0%8F%E6%9C%8B%E5%8F%8B%E8%A6%81%E5%85%88%E6%8B%8D%E6%89%8B.mp3"
+    },
+    {
+      "id": "object-红灯先拍手",
+      "kind": "object",
+      "text": "红灯先拍手",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E7%BA%A2%E7%81%AF%E5%85%88%E6%8B%8D%E6%89%8B.mp3"
     },
     {
       "id": "game-title-先做什么",
@@ -2825,10 +2405,10 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/game-goal-%E8%AE%AD%E7%BB%83%E9%A1%BA%E5%BA%8F-%E5%9B%A0%E6%9E%9C%E5%92%8C%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BF%86.mp3"
     },
     {
-      "id": "prompt-小兔口渴了-想喝水-先做什么-先看目标-再想第一步",
+      "id": "prompt-小朋友口渴了-想喝水-先做什么-先看目标-再想第一步",
       "kind": "prompt",
-      "text": "小兔口渴了，想喝水，先做什么？先看目标，再想第一步。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%B0%8F%E5%85%94%E5%8F%A3%E6%B8%B4%E4%BA%86-%E6%83%B3%E5%96%9D%E6%B0%B4-%E5%85%88%E5%81%9A%E4%BB%80%E4%B9%88-%E5%85%88%E7%9C%8B%E7%9B%AE%E6%A0%87-%E5%86%8D%E6%83%B3%E7%AC%AC%E4%B8%80%E6%AD%A5.mp3"
+      "text": "小朋友口渴了，想喝水，先做什么？先看目标，再想第一步。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%B0%8F%E6%9C%8B%E5%8F%8B%E5%8F%A3%E6%B8%B4%E4%BA%86-%E6%83%B3%E5%96%9D%E6%B0%B4-%E5%85%88%E5%81%9A%E4%BB%80%E4%B9%88-%E5%85%88%E7%9C%8B%E7%9B%AE%E6%A0%87-%E5%86%8D%E6%83%B3%E7%AC%AC%E4%B8%80%E6%AD%A5.mp3"
     },
     {
       "id": "success-先拿杯子-才好倒水喝水",
@@ -3221,16 +2801,16 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E8%B5%B0%E8%BF%87%E5%8E%BB.mp3"
     },
     {
-      "id": "prompt-小猫要喝水-拿到杯子后还缺哪一步-这是-4-步流程-按顺序找缺少的一步",
+      "id": "prompt-小朋友要喝水-拿到杯子后还缺哪一步-这是-4-步流程-按顺序找缺少的一步",
       "kind": "prompt",
-      "text": "小猫要喝水，拿到杯子后还缺哪一步？这是 4 步流程，按顺序找缺少的一步。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%B0%8F%E7%8C%AB%E8%A6%81%E5%96%9D%E6%B0%B4-%E6%8B%BF%E5%88%B0%E6%9D%AF%E5%AD%90%E5%90%8E%E8%BF%98%E7%BC%BA%E5%93%AA%E4%B8%80%E6%AD%A5-%E8%BF%99%E6%98%AF-4-%E6%AD%A5%E6%B5%81%E7%A8%8B-%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%89%BE%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
+      "text": "小朋友要喝水，拿到杯子后还缺哪一步？这是 4 步流程，按顺序找缺少的一步。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%B0%8F%E6%9C%8B%E5%8F%8B%E8%A6%81%E5%96%9D%E6%B0%B4-%E6%8B%BF%E5%88%B0%E6%9D%AF%E5%AD%90%E5%90%8E%E8%BF%98%E7%BC%BA%E5%93%AA%E4%B8%80%E6%AD%A5-%E8%BF%99%E6%98%AF-4-%E6%AD%A5%E6%B5%81%E7%A8%8B-%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%89%BE%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
     },
     {
-      "id": "success-先拿杯子-再倒水-小猫才能喝",
+      "id": "success-先拿杯子-再倒水-小朋友才能喝",
       "kind": "success",
-      "text": "先拿杯子，再倒水，小猫才能喝。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%85%88%E6%8B%BF%E6%9D%AF%E5%AD%90-%E5%86%8D%E5%80%92%E6%B0%B4-%E5%B0%8F%E7%8C%AB%E6%89%8D%E8%83%BD%E5%96%9D.mp3"
+      "text": "先拿杯子，再倒水，小朋友才能喝。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%85%88%E6%8B%BF%E6%9D%AF%E5%AD%90-%E5%86%8D%E5%80%92%E6%B0%B4-%E5%B0%8F%E6%9C%8B%E5%8F%8B%E6%89%8D%E8%83%BD%E5%96%9D.mp3"
     },
     {
       "id": "choice-再拿一个杯子",
@@ -3281,10 +2861,10 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E6%8B%BF%E7%9B%98%E5%AD%90.mp3"
     },
     {
-      "id": "prompt-帮小兔拿胡萝卜-缺少哪一步-这是-5-步流程-按顺序找缺少的一步",
+      "id": "prompt-对岸有胡萝卜-中间有小河-缺少哪一步-这是-5-步流程-按顺序找缺少的一步",
       "kind": "prompt",
-      "text": "帮小兔拿胡萝卜，缺少哪一步？这是 5 步流程，按顺序找缺少的一步。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%B8%AE%E5%B0%8F%E5%85%94%E6%8B%BF%E8%83%A1%E8%90%9D%E5%8D%9C-%E7%BC%BA%E5%B0%91%E5%93%AA%E4%B8%80%E6%AD%A5-%E8%BF%99%E6%98%AF-5-%E6%AD%A5%E6%B5%81%E7%A8%8B-%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%89%BE%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
+      "text": "对岸有胡萝卜，中间有小河，缺少哪一步？这是 5 步流程，按顺序找缺少的一步。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%AF%B9%E5%B2%B8%E6%9C%89%E8%83%A1%E8%90%9D%E5%8D%9C-%E4%B8%AD%E9%97%B4%E6%9C%89%E5%B0%8F%E6%B2%B3-%E7%BC%BA%E5%B0%91%E5%93%AA%E4%B8%80%E6%AD%A5-%E8%BF%99%E6%98%AF-5-%E6%AD%A5%E6%B5%81%E7%A8%8B-%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%89%BE%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
     },
     {
       "id": "success-有小河时先搭桥-走过去以后才能拿胡萝卜",
@@ -3527,6 +3107,24 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%BA%A2%E7%81%AF%E6%97%B6%E5%85%88%E5%81%9C-%E7%AD%89%E8%83%BD%E8%B5%B0%E7%9A%84%E6%97%B6%E5%80%99%E5%86%8D%E8%BF%87%E9%A9%AC%E8%B7%AF.mp3"
     },
     {
+      "id": "choice-停",
+      "kind": "choice",
+      "text": "停",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%81%9C.mp3"
+    },
+    {
+      "id": "choice-走",
+      "kind": "choice",
+      "text": "走",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E8%B5%B0.mp3"
+    },
+    {
+      "id": "choice-拍手",
+      "kind": "choice",
+      "text": "拍手",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E6%8B%8D%E6%89%8B.mp3"
+    },
+    {
       "id": "prompt-路口要过马路-第一步先看什么-这是-3-步流程-按顺序找缺少的一步",
       "kind": "prompt",
       "text": "路口要过马路，第一步先看什么？这是 3 步流程，按顺序找缺少的一步。",
@@ -3563,10 +3161,10 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E7%9B%B4%E6%8E%A5%E6%90%AD%E9%AB%98%E5%A1%94.mp3"
     },
     {
-      "id": "prompt-小兔在河边-胡萝卜在对岸-先解决什么-这是-4-步流程-按顺序找缺少的一步",
+      "id": "prompt-河对岸有小旗-先选什么才能过河-这是-4-步流程-按顺序找缺少的一步",
       "kind": "prompt",
-      "text": "小兔在河边，胡萝卜在对岸，先解决什么？这是 4 步流程，按顺序找缺少的一步。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%B0%8F%E5%85%94%E5%9C%A8%E6%B2%B3%E8%BE%B9-%E8%83%A1%E8%90%9D%E5%8D%9C%E5%9C%A8%E5%AF%B9%E5%B2%B8-%E5%85%88%E8%A7%A3%E5%86%B3%E4%BB%80%E4%B9%88-%E8%BF%99%E6%98%AF-4-%E6%AD%A5%E6%B5%81%E7%A8%8B-%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%89%BE%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
+      "text": "河对岸有小旗，先选什么才能过河？这是 4 步流程，按顺序找缺少的一步。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%B2%B3%E5%AF%B9%E5%B2%B8%E6%9C%89%E5%B0%8F%E6%97%97-%E5%85%88%E9%80%89%E4%BB%80%E4%B9%88%E6%89%8D%E8%83%BD%E8%BF%87%E6%B2%B3-%E8%BF%99%E6%98%AF-4-%E6%AD%A5%E6%B5%81%E7%A8%8B-%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%89%BE%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
     },
     {
       "id": "success-小河挡住了路-要先搭桥",
@@ -3575,10 +3173,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%B0%8F%E6%B2%B3%E6%8C%A1%E4%BD%8F%E4%BA%86%E8%B7%AF-%E8%A6%81%E5%85%88%E6%90%AD%E6%A1%A5.mp3"
     },
     {
+      "id": "choice-直接走进水里",
+      "kind": "choice",
+      "text": "直接走进水里",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E7%9B%B4%E6%8E%A5%E8%B5%B0%E8%BF%9B%E6%B0%B4%E9%87%8C.mp3"
+    },
+    {
       "id": "choice-站在岸边等",
       "kind": "choice",
       "text": "站在岸边等",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E7%AB%99%E5%9C%A8%E5%B2%B8%E8%BE%B9%E7%AD%89.mp3"
+    },
+    {
+      "id": "object-终点",
+      "kind": "object",
+      "text": "终点",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E7%BB%88%E7%82%B9.mp3"
     },
     {
       "id": "prompt-花园里要照顾小芽-下一步做什么更合适-这是-3-步流程-按顺序找缺少的一步",
@@ -3743,10 +3353,10 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E8%BF%98%E9%9C%80%E8%A6%81%E6%9B%B4%E5%A4%9A%E7%BA%BF%E7%B4%A2.mp3"
     },
     {
-      "id": "choice-不用再看线索",
+      "id": "choice-小猫肯定没偷吃",
       "kind": "choice",
-      "text": "不用再看线索",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E4%B8%8D%E7%94%A8%E5%86%8D%E7%9C%8B%E7%BA%BF%E7%B4%A2.mp3"
+      "text": "小猫肯定没偷吃",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%B0%8F%E7%8C%AB%E8%82%AF%E5%AE%9A%E6%B2%A1%E5%81%B7%E5%90%83.mp3"
     },
     {
       "id": "prompt-谁刚刚玩过泥巴-看脚印和手上的线索",
@@ -3881,6 +3491,12 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E8%BF%98%E8%A6%81%E7%9C%8B%E5%88%B0%E4%BB%80%E4%B9%88%E7%BA%BF%E7%B4%A2-%E6%89%8D%E6%9B%B4%E7%A1%AE%E5%AE%9A.mp3"
     },
     {
+      "id": "choice-小狗肯定没弄乱",
+      "kind": "choice",
+      "text": "小狗肯定没弄乱",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%B0%8F%E7%8B%97%E8%82%AF%E5%AE%9A%E6%B2%A1%E5%BC%84%E4%B9%B1.mp3"
+    },
+    {
       "id": "game-title-条件小侦探",
       "kind": "game-title",
       "text": "条件小侦探",
@@ -3975,12 +3591,6 @@
       "kind": "parent",
       "text": "问她：条件满足以后，动作会不会改变？",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E6%9D%A1%E4%BB%B6%E6%BB%A1%E8%B6%B3%E4%BB%A5%E5%90%8E-%E5%8A%A8%E4%BD%9C%E4%BC%9A%E4%B8%8D%E4%BC%9A%E6%94%B9%E5%8F%98.mp3"
-    },
-    {
-      "id": "choice-走过去",
-      "kind": "choice",
-      "text": "走过去",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E8%B5%B0%E8%BF%87%E5%8E%BB.mp3"
     },
     {
       "id": "choice-继续等着",
@@ -4121,10 +3731,10 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%8F%AA%E6%8B%BF%E4%B8%80%E4%B8%AA.mp3"
     },
     {
-      "id": "prompt-小兔要拿对岸胡萝卜-看到小河后还缺什么-先处理障碍-再完成目标",
+      "id": "prompt-对岸有胡萝卜-看到小河后还缺什么-先处理障碍-再完成目标",
       "kind": "prompt",
-      "text": "小兔要拿对岸胡萝卜，看到小河后还缺什么？先处理障碍，再完成目标。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%B0%8F%E5%85%94%E8%A6%81%E6%8B%BF%E5%AF%B9%E5%B2%B8%E8%83%A1%E8%90%9D%E5%8D%9C-%E7%9C%8B%E5%88%B0%E5%B0%8F%E6%B2%B3%E5%90%8E%E8%BF%98%E7%BC%BA%E4%BB%80%E4%B9%88-%E5%85%88%E5%A4%84%E7%90%86%E9%9A%9C%E7%A2%8D-%E5%86%8D%E5%AE%8C%E6%88%90%E7%9B%AE%E6%A0%87.mp3"
+      "text": "对岸有胡萝卜，看到小河后还缺什么？先处理障碍，再完成目标。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%AF%B9%E5%B2%B8%E6%9C%89%E8%83%A1%E8%90%9D%E5%8D%9C-%E7%9C%8B%E5%88%B0%E5%B0%8F%E6%B2%B3%E5%90%8E%E8%BF%98%E7%BC%BA%E4%BB%80%E4%B9%88-%E5%85%88%E5%A4%84%E7%90%86%E9%9A%9C%E7%A2%8D-%E5%86%8D%E5%AE%8C%E6%88%90%E7%9B%AE%E6%A0%87.mp3"
     },
     {
       "id": "success-有小河挡住时-先搭桥-才能到对岸拿胡萝卜",
@@ -4143,12 +3753,6 @@
       "kind": "parent",
       "text": "问她：小河是目标，还是障碍？",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E5%B0%8F%E6%B2%B3%E6%98%AF%E7%9B%AE%E6%A0%87-%E8%BF%98%E6%98%AF%E9%9A%9C%E7%A2%8D.mp3"
-    },
-    {
-      "id": "choice-直接走进水里",
-      "kind": "choice",
-      "text": "直接走进水里",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E7%9B%B4%E6%8E%A5%E8%B5%B0%E8%BF%9B%E6%B0%B4%E9%87%8C.mp3"
     },
     {
       "id": "prompt-小猫在厨房-蛋糕少了一块-够确定是小猫吃的吗-线索不够强时-不要急着下结论",
@@ -4541,10 +4145,10 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E7%BB%A7%E7%BB%AD%E9%9A%8F%E4%BE%BF%E5%A1%9E.mp3"
     },
     {
-      "id": "prompt-小兔看到小河就站着等-怎样改更有用-等待不能解决障碍-要处理障碍",
+      "id": "prompt-看到小河只站着等-怎样改更有用-等待不能解决障碍-要处理障碍",
       "kind": "prompt",
-      "text": "小兔看到小河就站着等，怎样改更有用？等待不能解决障碍，要处理障碍。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%B0%8F%E5%85%94%E7%9C%8B%E5%88%B0%E5%B0%8F%E6%B2%B3%E5%B0%B1%E7%AB%99%E7%9D%80%E7%AD%89-%E6%80%8E%E6%A0%B7%E6%94%B9%E6%9B%B4%E6%9C%89%E7%94%A8-%E7%AD%89%E5%BE%85%E4%B8%8D%E8%83%BD%E8%A7%A3%E5%86%B3%E9%9A%9C%E7%A2%8D-%E8%A6%81%E5%A4%84%E7%90%86%E9%9A%9C%E7%A2%8D.mp3"
+      "text": "看到小河只站着等，怎样改更有用？等待不能解决障碍，要处理障碍。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%9C%8B%E5%88%B0%E5%B0%8F%E6%B2%B3%E5%8F%AA%E7%AB%99%E7%9D%80%E7%AD%89-%E6%80%8E%E6%A0%B7%E6%94%B9%E6%9B%B4%E6%9C%89%E7%94%A8-%E7%AD%89%E5%BE%85%E4%B8%8D%E8%83%BD%E8%A7%A3%E5%86%B3%E9%9A%9C%E7%A2%8D-%E8%A6%81%E5%A4%84%E7%90%86%E9%9A%9C%E7%A2%8D.mp3"
     },
     {
       "id": "success-小河是障碍-先搭桥才有用",
@@ -4859,12 +4463,6 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E9%95%BF%E6%9C%A8%E6%9D%BF.mp3"
     },
     {
-      "id": "object-终点",
-      "kind": "object",
-      "text": "终点",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E7%BB%88%E7%82%B9.mp3"
-    },
-    {
       "id": "prompt-玩具散了-盒子也打开了-先做什么更顺-先让后面的收纳更有顺序",
       "kind": "prompt",
       "text": "玩具散了，盒子也打开了，先做什么更顺？先让后面的收纳更有顺序。",
@@ -4901,10 +4499,10 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%85%88%E6%8B%BF%E4%B8%80%E4%B8%AA%E7%8E%A9.mp3"
     },
     {
-      "id": "prompt-小兔想拿胡萝卜-可是中间有小河-先处理什么-目标很清楚-但先要处理挡路的问题",
+      "id": "prompt-想拿对岸胡萝卜-可是中间有小河-先处理什么-目标很清楚-但先要处理挡路的问题",
       "kind": "prompt",
-      "text": "小兔想拿胡萝卜，可是中间有小河，先处理什么？目标很清楚，但先要处理挡路的问题。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%B0%8F%E5%85%94%E6%83%B3%E6%8B%BF%E8%83%A1%E8%90%9D%E5%8D%9C-%E5%8F%AF%E6%98%AF%E4%B8%AD%E9%97%B4%E6%9C%89%E5%B0%8F%E6%B2%B3-%E5%85%88%E5%A4%84%E7%90%86%E4%BB%80%E4%B9%88-%E7%9B%AE%E6%A0%87%E5%BE%88%E6%B8%85%E6%A5%9A-%E4%BD%86%E5%85%88%E8%A6%81%E5%A4%84%E7%90%86%E6%8C%A1%E8%B7%AF%E7%9A%84%E9%97%AE%E9%A2%98.mp3"
+      "text": "想拿对岸胡萝卜，可是中间有小河，先处理什么？目标很清楚，但先要处理挡路的问题。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%83%B3%E6%8B%BF%E5%AF%B9%E5%B2%B8%E8%83%A1%E8%90%9D%E5%8D%9C-%E5%8F%AF%E6%98%AF%E4%B8%AD%E9%97%B4%E6%9C%89%E5%B0%8F%E6%B2%B3-%E5%85%88%E5%A4%84%E7%90%86%E4%BB%80%E4%B9%88-%E7%9B%AE%E6%A0%87%E5%BE%88%E6%B8%85%E6%A5%9A-%E4%BD%86%E5%85%88%E8%A6%81%E5%A4%84%E7%90%86%E6%8C%A1%E8%B7%AF%E7%9A%84%E9%97%AE%E9%A2%98.mp3"
     },
     {
       "id": "success-小河挡住了路-先搭桥才拿得到胡萝卜",
@@ -4949,10 +4547,10 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E5%B7%B2%E7%BB%8F%E5%81%9A%E8%BF%87%E7%9A%84%E6%AD%A5%E9%AA%A4%E8%BF%98%E8%A6%81%E9%87%8D%E5%A4%8D%E5%90%97.mp3"
     },
     {
-      "id": "prompt-过马路时-小兔想走-车停着-但灯是红的-先听谁的-多个线索里-先看最明确的规则",
+      "id": "prompt-过马路时-小朋友想走-车停着-但灯是红的-先听谁的-多个线索里-先看最明确的规则",
       "kind": "prompt",
-      "text": "过马路时，小兔想走，车停着，但灯是红的，先听谁的？多个线索里，先看最明确的规则。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%BF%87%E9%A9%AC%E8%B7%AF%E6%97%B6-%E5%B0%8F%E5%85%94%E6%83%B3%E8%B5%B0-%E8%BD%A6%E5%81%9C%E7%9D%80-%E4%BD%86%E7%81%AF%E6%98%AF%E7%BA%A2%E7%9A%84-%E5%85%88%E5%90%AC%E8%B0%81%E7%9A%84-%E5%A4%9A%E4%B8%AA%E7%BA%BF%E7%B4%A2%E9%87%8C-%E5%85%88%E7%9C%8B%E6%9C%80%E6%98%8E%E7%A1%AE%E7%9A%84%E8%A7%84%E5%88%99.mp3"
+      "text": "过马路时，小朋友想走，车停着，但灯是红的，先听谁的？多个线索里，先看最明确的规则。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%BF%87%E9%A9%AC%E8%B7%AF%E6%97%B6-%E5%B0%8F%E6%9C%8B%E5%8F%8B%E6%83%B3%E8%B5%B0-%E8%BD%A6%E5%81%9C%E7%9D%80-%E4%BD%86%E7%81%AF%E6%98%AF%E7%BA%A2%E7%9A%84-%E5%85%88%E5%90%AC%E8%B0%81%E7%9A%84-%E5%A4%9A%E4%B8%AA%E7%BA%BF%E7%B4%A2%E9%87%8C-%E5%85%88%E7%9C%8B%E6%9C%80%E6%98%8E%E7%A1%AE%E7%9A%84%E8%A7%84%E5%88%99.mp3"
     },
     {
       "id": "success-红灯是明确规则-要先停",
@@ -4979,10 +4577,10 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%85%88%E6%8C%89%E7%BA%A2%E7%81%AF%E5%81%9C.mp3"
     },
     {
-      "id": "choice-先跟小兔走",
+      "id": "choice-先跟小朋友走",
       "kind": "choice",
-      "text": "先跟小兔走",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%85%88%E8%B7%9F%E5%B0%8F%E5%85%94%E8%B5%B0.mp3"
+      "text": "先跟小朋友走",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%85%88%E8%B7%9F%E5%B0%8F%E6%9C%8B%E5%8F%8B%E8%B5%B0.mp3"
     },
     {
       "id": "choice-只看车停着",
@@ -5163,12 +4761,6 @@
       "kind": "choice",
       "text": "直接说小狗弄乱",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E7%9B%B4%E6%8E%A5%E8%AF%B4%E5%B0%8F%E7%8B%97%E5%BC%84%E4%B9%B1.mp3"
-    },
-    {
-      "id": "choice-不用再找线索",
-      "kind": "choice",
-      "text": "不用再找线索",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E4%B8%8D%E7%94%A8%E5%86%8D%E6%89%BE%E7%BA%BF%E7%B4%A2.mp3"
     },
     {
       "id": "game-title-按规则装书包",
@@ -6239,10 +5831,10 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%8F%AA%E8%83%BD%E7%94%A82%E5%9D%97.mp3"
     },
     {
-      "id": "prompt-小兔要过窄河-应该选哪块木板-先看距离-再选材料",
+      "id": "prompt-要过窄河-应该选哪块木板-先看距离-再选材料",
       "kind": "prompt",
-      "text": "小兔要过窄河，应该选哪块木板？先看距离，再选材料。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%B0%8F%E5%85%94%E8%A6%81%E8%BF%87%E7%AA%84%E6%B2%B3-%E5%BA%94%E8%AF%A5%E9%80%89%E5%93%AA%E5%9D%97%E6%9C%A8%E6%9D%BF-%E5%85%88%E7%9C%8B%E8%B7%9D%E7%A6%BB-%E5%86%8D%E9%80%89%E6%9D%90%E6%96%99.mp3"
+      "text": "要过窄河，应该选哪块木板？先看距离，再选材料。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%A6%81%E8%BF%87%E7%AA%84%E6%B2%B3-%E5%BA%94%E8%AF%A5%E9%80%89%E5%93%AA%E5%9D%97%E6%9C%A8%E6%9D%BF-%E5%85%88%E7%9C%8B%E8%B7%9D%E7%A6%BB-%E5%86%8D%E9%80%89%E6%9D%90%E6%96%99.mp3"
     },
     {
       "id": "success-长木板能到对岸",
@@ -6311,6 +5903,12 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E9%95%BF%E6%9C%A8%E6%9D%BF%E5%8A%A0%E7%9F%AD%E6%9C%A8%E6%9D%BF%E6%9B%B4%E7%A8%B3.mp3"
     },
     {
+      "id": "object-小猫",
+      "kind": "object",
+      "text": "小猫",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%B0%8F%E7%8C%AB.mp3"
+    },
+    {
       "id": "prompt-小熊面前有石头和木板-过河用什么更好-先看距离-再选材料",
       "kind": "prompt",
       "text": "小熊面前有石头和木板，过河用什么更好？先看距离，再选材料。",
@@ -6345,6 +5943,12 @@
       "kind": "success",
       "text": "先到小岛，再到对岸，是两步计划。",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%85%88%E5%88%B0%E5%B0%8F%E5%B2%9B-%E5%86%8D%E5%88%B0%E5%AF%B9%E5%B2%B8-%E6%98%AF%E4%B8%A4%E6%AD%A5%E8%AE%A1%E5%88%92.mp3"
+    },
+    {
+      "id": "object-小兔",
+      "kind": "object",
+      "text": "小兔",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%B0%8F%E5%85%94.mp3"
     },
     {
       "id": "object-小岛",
@@ -8453,12 +8057,6 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E5%93%AA%E4%BA%9B%E5%B7%B2%E7%BB%8F%E8%83%BD%E5%9C%A8%E5%AE%8C%E6%95%B4%E5%9B%BE%E9%87%8C%E6%89%BE%E5%88%B0-%E5%93%AA%E4%B8%80%E5%9D%97%E6%89%BE%E4%B8%8D%E5%88%B0.mp3"
     },
     {
-      "id": "choice-蓝色方块",
-      "kind": "choice",
-      "text": "蓝色方块",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E8%93%9D%E8%89%B2%E6%96%B9%E5%9D%97.mp3"
-    },
-    {
       "id": "success-完整图里没有饼干",
       "kind": "success",
       "text": "完整图里没有饼干。",
@@ -8663,10 +8261,10 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E9%A5%BC%E5%B9%B2-%E9%A5%BC%E5%B9%B2-%E9%A5%BC%E5%B9%B2-%E9%A5%BC%E5%B9%B2.mp3"
     },
     {
-      "id": "prompt-2-个蛋糕可以换成几个糖果-先看-1-个能换几-再想有几组",
+      "id": "prompt-2-个纸杯蛋糕可以换成几个糖果-先看-1-个能换几-再想有几组",
       "kind": "prompt",
-      "text": "2 个蛋糕可以换成几个糖果？先看 1 个能换几，再想有几组。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-2-%E4%B8%AA%E8%9B%8B%E7%B3%95%E5%8F%AF%E4%BB%A5%E6%8D%A2%E6%88%90%E5%87%A0%E4%B8%AA%E7%B3%96%E6%9E%9C-%E5%85%88%E7%9C%8B-1-%E4%B8%AA%E8%83%BD%E6%8D%A2%E5%87%A0-%E5%86%8D%E6%83%B3%E6%9C%89%E5%87%A0%E7%BB%84.mp3"
+      "text": "2 个纸杯蛋糕可以换成几个糖果？先看 1 个能换几，再想有几组。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-2-%E4%B8%AA%E7%BA%B8%E6%9D%AF%E8%9B%8B%E7%B3%95%E5%8F%AF%E4%BB%A5%E6%8D%A2%E6%88%90%E5%87%A0%E4%B8%AA%E7%B3%96%E6%9E%9C-%E5%85%88%E7%9C%8B-1-%E4%B8%AA%E8%83%BD%E6%8D%A2%E5%87%A0-%E5%86%8D%E6%83%B3%E6%9C%89%E5%87%A0%E7%BB%84.mp3"
     },
     {
       "id": "success-两个蛋糕是两组-3-个糖果-一共-6-个糖果",

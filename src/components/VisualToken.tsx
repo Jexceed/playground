@@ -65,6 +65,7 @@ const phraseMap: Record<string, TokenMeta> = {
   "小熊": { label: "小熊", kind: "bear" },
   "小鸟": { label: "小鸟", kind: "bird" },
   "小鱼": { label: "小鱼", kind: "fish" },
+  "小朋友": { label: "小朋友", kind: "child" },
   "小河": { label: "小河", kind: "river" },
   "苹果": { label: "苹果", kind: "apple" },
   "橘子": { label: "橘子", kind: "orange" },
@@ -139,11 +140,14 @@ const phraseMap: Record<string, TokenMeta> = {
   "玩反口令": { label: "玩反口令", kind: "reverseRule" },
   "反着来": { label: "反着来", kind: "reverseRule" },
   "慢慢来": { label: "慢慢来", kind: "slowRule" },
+  "绿灯慢慢走": { label: "绿灯慢慢走", kind: "slowRule" },
+  "红灯先拍手": { label: "红灯先拍手", kind: "clap" },
   "先拍手": { label: "先拍手", kind: "clap" },
   "走": { label: "走", kind: "walk" },
   "停": { label: "停", kind: "stopSign" },
   "慢慢走": { label: "慢慢走", kind: "slowRule" },
   "拍手": { label: "拍手", kind: "clap" },
+  "停下等": { label: "停下等", kind: "stopSign" },
   "看到门": { label: "看到门", kind: "door" },
   "门关着": { label: "门关着", kind: "door" },
   "开门": { label: "开门", kind: "openDoor" },
@@ -166,6 +170,7 @@ const phraseMap: Record<string, TokenMeta> = {
   "先浇水": { label: "先浇水", kind: "pourWater" },
   "先摘花": { label: "先摘花", kind: "flower" },
   "先洗手": { label: "先洗手", kind: "washHands" },
+  "少了先洗手": { label: "少了先洗手", kind: "washHands" },
   "先捡积木": { label: "先捡积木", kind: "pickBlocks" },
   "先飞回去": { label: "先飞回去", kind: "flyHome" },
   "轻轻放回水里": { label: "放回水里", kind: "fishWater" },
@@ -186,6 +191,9 @@ const phraseMap: Record<string, TokenMeta> = {
   "先吃饼干": { label: "先吃饼干", kind: "eat" },
   "直接吃": { label: "直接吃", kind: "eat" },
   "先拿盘子": { label: "先拿盘子", kind: "plate" },
+  "只拿盘子": { label: "只拿盘子", kind: "plate" },
+  "少了拿盘子": { label: "少了拿盘子", kind: "plate" },
+  "少了多拿饼干": { label: "少了多拿饼干", kind: "cookie" },
   "先拿胡萝卜": { label: "先拿胡萝卜", kind: "carrot" },
   "先搭高塔": { label: "先搭高塔", kind: "tower" },
   "直接搭高塔": { label: "直接搭高塔", kind: "tower" },
@@ -194,6 +202,7 @@ const phraseMap: Record<string, TokenMeta> = {
   "闭眼往前走": { label: "闭眼往前走", kind: "walk" },
   "站在岸边等": { label: "站在岸边等", kind: "noBridge" },
   "再洗手": { label: "再洗手", kind: "washHands" },
+  "继续洗手": { label: "继续洗手", kind: "washHands" },
   "直接走进水里": { label: "直接走进水里", kind: "river" },
   "把木板接长": { label: "把木板接长", kind: "twoPlanks" },
   "继续用短木板": { label: "继续用短木板", kind: "shortPlank" },
@@ -243,6 +252,8 @@ const phraseMap: Record<string, TokenMeta> = {
   "不用再找线索": { label: "不用再找线索", kind: "none" },
   "一定是小狗": { label: "一定是小狗", kind: "dog" },
   "一定是小猫": { label: "一定是小猫", kind: "cat" },
+  "小猫肯定没偷吃": { label: "小猫肯定没偷吃", kind: "cleanCat" },
+  "小狗肯定没弄乱": { label: "小狗肯定没弄乱", kind: "dogSleep" },
 };
 
 const clueRules: Array<[RegExp, TokenMeta]> = [
@@ -339,6 +350,41 @@ function rasterForKind(kind: string) {
   if (kind === "apple") return imageGallery.items.apple;
   if (kind === "orange") return imageGallery.items.orange;
   if (kind === "cookie") return imageGallery.items.cookie;
+  if (kind === "dirtyHands") return imageGallery.items.dirtyHands;
+  if (kind === "washHands") return imageGallery.items.washHands;
+  if (kind === "plate") return imageGallery.items.plate;
+  if (kind === "eat") return imageGallery.items.eatCookie;
+  if (kind === "trafficLook") return imageGallery.items.trafficLook;
+  if (kind === "stopSign") return imageGallery.items.stopWait;
+  if (kind === "walk") return imageGallery.items.walkCrosswalk;
+  if (kind === "toysMess") return imageGallery.items.toysMess;
+  if (kind === "sortToys") return imageGallery.items.sortToys;
+  if (kind === "tidyBox") return imageGallery.items.tidyBox;
+  if (kind === "river" || kind === "wideRiver") return imageGallery.items.river;
+  if (kind === "bridge") return imageGallery.items.bridge;
+  if (kind === "longPlank") return imageGallery.items.longPlank;
+  if (kind === "shortPlank") return imageGallery.items.shortPlank;
+  if (kind === "tinyPlank") return imageGallery.items.tinyPlank;
+  if (kind === "twoPlanks") return imageGallery.items.twoPlanks;
+  if (kind === "backpack") return imageGallery.items.backpack;
+  if (kind === "book") return imageGallery.items.book;
+  if (kind === "pencil") return imageGallery.items.pencil;
+  if (kind === "pencilCase") return imageGallery.items.pencilCase;
+  if (kind === "waterBottle") return imageGallery.items.waterBottle;
+  if (kind === "lunchBox") return imageGallery.items.lunchBox;
+  if (kind === "raincoat") return imageGallery.items.raincoat;
+  if (kind === "sunHat") return imageGallery.items.sunHat;
+  if (kind === "car") return imageGallery.items.toyCar;
+  if (kind === "water") return imageGallery.items.water;
+  if (kind === "cup") return imageGallery.items.cup;
+  if (kind === "key") return imageGallery.items.key;
+  if (kind === "door" || kind === "openDoor") return imageGallery.items.door;
+  if (kind === "box") return imageGallery.items.box;
+  if (kind === "soccer") return imageGallery.items.soccer;
+  if (kind === "kite") return imageGallery.items.kite;
+  if (kind === "sky") return imageGallery.items.sky;
+  if (kind === "cupcake" || kind === "cake" || kind === "cakeMissing") return imageGallery.items.cupcake;
+  if (kind === "child" || kind === "childGirl" || kind === "childBoy") return imageGallery.items.child;
   if (kind === "candy") return imageGallery.items.candy;
   if (kind === "block") return imageGallery.items.block;
   if (kind === "star" || kind === "smallStar") return imageGallery.items.star;

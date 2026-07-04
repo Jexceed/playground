@@ -101,6 +101,18 @@ export const imageGallery = {
       src: "/images/scenes/pattern-puzzle-board.png",
       alt: "孩子看着桌上的图形规律板，板上有圆片、星星、方块和水果贴纸，还有一个空位等待补上。",
     },
+    composeBlocksTogether: {
+      src: "/images/scenes/compose-blocks-together.png",
+      alt: "游戏桌上有两堆积木，中间留出位置，箭头提示可以把两堆合到一起。",
+    },
+    operationBirdsFlyAway: {
+      src: "/images/scenes/operation-birds-fly-away.png",
+      alt: "树枝上有小鸟，几只小鸟正飞走，表示数量会变少。",
+    },
+    fairSharePicnic: {
+      src: "/images/scenes/fair-share-picnic.png",
+      alt: "野餐桌上几个孩子面前有盘子，中间有点心，正在一个一个轮流分。",
+    },
   },
   avatars: {
     cat: {
@@ -136,6 +148,146 @@ export const imageGallery = {
     cookie: {
       src: "/images/items/cookie.png",
       alt: "饼干",
+    },
+    dirtyHands: {
+      src: "/images/items/dirty-hands.png",
+      alt: "沾着泥的脏手",
+    },
+    washHands: {
+      src: "/images/items/wash-hands.png",
+      alt: "在水龙头下洗手",
+    },
+    plate: {
+      src: "/images/items/plate.png",
+      alt: "空盘子",
+    },
+    eatCookie: {
+      src: "/images/items/eat-cookie.png",
+      alt: "小朋友拿着饼干准备吃",
+    },
+    trafficLook: {
+      src: "/images/items/traffic-look.png",
+      alt: "小朋友先看信号灯",
+    },
+    stopWait: {
+      src: "/images/items/stop-wait.png",
+      alt: "小朋友停下等待",
+    },
+    walkCrosswalk: {
+      src: "/images/items/walk-crosswalk.png",
+      alt: "小朋友走过斑马线",
+    },
+    toysMess: {
+      src: "/images/items/toys-mess.png",
+      alt: "散乱的玩具和积木",
+    },
+    sortToys: {
+      src: "/images/items/sort-toys.png",
+      alt: "玩具按种类分成几组",
+    },
+    tidyBox: {
+      src: "/images/items/tidy-box.png",
+      alt: "玩具收进盒子里",
+    },
+    river: {
+      src: "/images/items/river.png",
+      alt: "需要跨过的小河",
+    },
+    bridge: {
+      src: "/images/items/bridge.png",
+      alt: "搭好的木板桥",
+    },
+    longPlank: {
+      src: "/images/items/long-plank.png",
+      alt: "长木板",
+    },
+    shortPlank: {
+      src: "/images/items/short-plank.png",
+      alt: "短木板",
+    },
+    tinyPlank: {
+      src: "/images/items/tiny-plank.png",
+      alt: "太短的木板",
+    },
+    twoPlanks: {
+      src: "/images/items/two-planks.png",
+      alt: "两块木板接起来",
+    },
+    backpack: {
+      src: "/images/items/backpack.png",
+      alt: "书包",
+    },
+    book: {
+      src: "/images/items/book.png",
+      alt: "书本",
+    },
+    pencil: {
+      src: "/images/items/pencil.png",
+      alt: "铅笔",
+    },
+    pencilCase: {
+      src: "/images/items/pencil-case.png",
+      alt: "文具盒",
+    },
+    waterBottle: {
+      src: "/images/items/water-bottle.png",
+      alt: "水壶",
+    },
+    lunchBox: {
+      src: "/images/items/lunch-box.png",
+      alt: "饭盒",
+    },
+    raincoat: {
+      src: "/images/items/raincoat.png",
+      alt: "雨衣",
+    },
+    sunHat: {
+      src: "/images/items/sun-hat.png",
+      alt: "帽子",
+    },
+    toyCar: {
+      src: "/images/items/toy-car.png",
+      alt: "玩具车",
+    },
+    water: {
+      src: "/images/items/water.png",
+      alt: "水",
+    },
+    cup: {
+      src: "/images/items/cup.png",
+      alt: "杯子",
+    },
+    key: {
+      src: "/images/items/key.png",
+      alt: "钥匙",
+    },
+    door: {
+      src: "/images/items/door.png",
+      alt: "门",
+    },
+    box: {
+      src: "/images/items/box.png",
+      alt: "盒子",
+    },
+    soccer: {
+      src: "/images/items/soccer.png",
+      alt: "足球",
+    },
+    kite: {
+      src: "/images/items/kite.png",
+      alt: "风筝",
+    },
+    sky: {
+      src: "/images/items/sky.png",
+      alt: "天空",
+    },
+    cupcake: {
+      src: "/images/items/cupcake.png",
+      alt: "纸杯蛋糕",
+    },
+    child: {
+      src: "/images/items/child.png",
+      alt: "小朋友",
     },
     candy: {
       src: "/images/items/candy.png",
