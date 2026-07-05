@@ -167,6 +167,9 @@ for (const game of games) {
     if (game.id === "logic-sorter-switch") {
       checkSorterRoundQuality(round, context);
     }
+    if (game.id === "logic-pattern-train") {
+      checkPatternTrainRoundQuality(round, context);
+    }
     if (game.id === "logic-same-kind-detective") {
       checkSameKindRoundQuality(round, context);
     }
@@ -234,11 +237,21 @@ if (existsSync("public/audio/voice-lines.json")) {
 
 if (existsSync("public/audio/voice/manifest.json")) {
   const manifest = JSON.parse(readFileSync("public/audio/voice/manifest.json", "utf8"));
-  const allowedVoiceProviders = new Set(["edge-tts Python package", "F5-TTS local"]);
-  if (!allowedVoiceProviders.has(manifest.provider)) {
+  const allowedConcreteVoiceProviders = new Set(["edge-tts Python package", "F5-TTS local", "macOS say + afconvert"]);
+  const allowedManifestProviders = new Set([...allowedConcreteVoiceProviders, "mixed local"]);
+  if (!allowedManifestProviders.has(manifest.provider)) {
     problems.push(`audio manifest provider is not an approved local pack generator: ${manifest.provider ?? "missing"}`);
   }
-  if (manifest.provider === "F5-TTS local") {
+  if (manifest.provider === "mixed local") {
+    if (!Array.isArray(manifest.providers) || !manifest.providers.length) {
+      problems.push("mixed audio manifest missing providers");
+    } else {
+      for (const provider of manifest.providers) {
+        if (!allowedConcreteVoiceProviders.has(provider)) problems.push(`mixed audio manifest has unsupported provider: ${provider}`);
+      }
+    }
+  }
+  if (manifest.provider === "F5-TTS local" || manifest.providers?.includes("F5-TTS local")) {
     if (!manifest.referenceAudio?.trim()) problems.push("F5 audio manifest missing referenceAudio");
     if (!manifest.referenceText?.trim()) problems.push("F5 audio manifest missing referenceText");
   }
@@ -383,6 +396,98 @@ function normalizeChoiceMeaning(label) {
     .replace(/直接走/, "走")
     .replace(/已经够了/, "够了")
     .replace(/证据已经够了/, "证据够了");
+}
+
+function checkPatternTrainRoundQuality(round, context) {
+  const sequence = round.sequence;
+  if (!Array.isArray(sequence) || sequence.length === 0) {
+    problems.push(`${context}: pattern-train round should show a sequence`);
+    return;
+  }
+
+  const missingIndexes = sequence
+    .map((item, index) => (item === "?" ? index : -1))
+    .filter((index) => index !== -1);
+  if (missingIndexes.length !== 1) {
+    problems.push(`${context}: pattern-train sequence should contain exactly one missing card`);
+    return;
+  }
+
+  const patternUnit = round.patternUnit;
+  if (!Array.isArray(patternUnit) || patternUnit.length < 2) {
+    problems.push(`${context}: pattern-train round should include a patternUnit`);
+    return;
+  }
+
+  const expectedAnswer = patternUnit[missingIndexes[0] % patternUnit.length];
+  if (round.answer !== expectedAnswer) {
+    problems.push(`${context}: pattern-train answer should match repeated pattern`);
+  }
+  if (choiceValueCount(round.choices, round.answer) !== 1) {
+    problems.push(`${context}: pattern-train choices should include the answer exactly once`);
+  }
+
+  const choiceValues = round.choices.map((choice) => choice.value);
+  const uniqueUnitValues = [...new Set(patternUnit)];
+  const allowedChoices = patternTrainAllowedChoices(patternUnit);
+  if (choiceValues.length < 3) {
+    problems.push(`${context}: pattern-train choices should include at least three options`);
+  }
+  if (!uniqueUnitValues.every((value) => choiceValues.includes(value)) || !choiceValues.every((value) => allowedChoices.has(value))) {
+    problems.push(`${context}: pattern-train choices should stay tied to the visible pattern`);
+  }
+
+  const unitText = patternUnit.map(patternTrainLabel).join("、");
+  const filledLabels = sequence.map((item, index) => patternTrainLabel(item === "?" ? patternUnit[index % patternUnit.length] : item));
+  const filledText = filledLabels.join("、");
+  const answerLabel = patternTrainLabel(round.answer);
+  if (!round.success.includes(unitText) || !round.success.includes(filledText) || !round.success.includes(answerLabel) || !/规律|重复|一组|顺序|所以/.test(round.success)) {
+    problems.push(`${context}: pattern-train success should name repeat unit, filled sequence, and answer`);
+  }
+  if (!round.retry.includes(unitText) || !round.retry.includes(filledText) || !round.retry.includes(answerLabel) || !/从左到右|念|说|顺序|重复/.test(round.retry)) {
+    problems.push(`${context}: pattern-train retry should name repeat unit or filled sequence and answer`);
+  }
+  if (!round.parentPrompt.includes(unitText) || !round.parentPrompt.includes(filledText) || !round.parentPrompt.includes(answerLabel) || !/指|说|为什么|解释|复述/.test(round.parentPrompt)) {
+    problems.push(`${context}: pattern-train parentPrompt should ask for a child explanation of the pattern`);
+  }
+}
+
+function patternTrainAllowedChoices(patternUnit) {
+  const choices = new Set(patternUnit);
+  const uniqueUnitValues = [...new Set(patternUnit)];
+  const families = [
+    ["🔴", "🔵", "🟡", "🟢", "🟣"],
+    ["☀️", "🌙", "⭐"],
+    ["🍓", "🍪", "🍎", "🍊", "🍬"],
+    ["⬤", "●", "•"],
+  ];
+  for (const family of families) {
+    if (uniqueUnitValues.every((value) => family.includes(value))) {
+      family.forEach((value) => choices.add(value));
+    }
+  }
+  return choices;
+}
+
+function patternTrainLabel(item) {
+  return {
+    "🔴": "红色圆片",
+    "🔵": "蓝色圆片",
+    "🟡": "黄色圆片",
+    "🟢": "绿色圆片",
+    "🟣": "紫色圆片",
+    "☀️": "太阳",
+    "🌙": "月亮",
+    "⭐": "星星",
+    "⬤": "大圆",
+    "●": "中圆",
+    "•": "小圆",
+    "🍓": "草莓",
+    "🍪": "饼干",
+    "🍎": "苹果",
+    "🍊": "橘子",
+    "🍬": "糖果",
+  }[item] ?? item;
 }
 
 function checkSorterRoundQuality(round, context) {

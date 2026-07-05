@@ -25,6 +25,17 @@ grouped by date.
   left-to-right replay strategy.
 - Exported updated voice lines and regenerated the local Edge voice manifest for
   the rewritten order-plan content.
+- Added the `014-pattern-train-quality` Spec Kit feature for repeat-unit,
+  missing-card, and choice-quality pattern reasoning.
+- Expanded the curriculum audit with pattern-train checks that validate a single
+  missing card, repeat-unit metadata, derived answers, at least three
+  pattern-tied choices, and concrete feedback/retry/parent wording.
+- Reworked `logic-pattern-train` choice generation, success feedback, retry
+  guidance, and parent prompts so each round names the repeated unit, filled
+  sequence, and answer.
+- Exported updated voice lines and generated a mixed local voice manifest for
+  the rewritten pattern-train content, preserving existing Edge entries and
+  filling missing lines with the local macOS fallback when Edge DNS was blocked.
 
 ## 2026-07-04
 

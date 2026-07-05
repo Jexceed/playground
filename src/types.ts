@@ -43,6 +43,7 @@ export type GameRound = {
   sceneImage?: RoundSceneImage;
   visualGroups?: RoundVisualGroup[];
   sequence?: string[];
+  patternUnit?: string[];
   grid?: RoundGrid;
   matrix?: RoundMatrix;
   memory?: RoundMemory;

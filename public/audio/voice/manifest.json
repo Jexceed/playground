@@ -1,14 +1,16 @@
 {
-  "generatedAt": "2026-07-04T16:20:53.108Z",
-  "provider": "edge-tts Python package",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "rate": "-12%",
-  "pitch": "+2Hz",
-  "includeParent": true,
-  "format": "mp3",
-  "count": 1640,
-  "requestedCount": 1640,
-  "failures": [],
+  "generatedAt": "2026-07-04T18:41:00.312Z",
+  "provider": "mixed local",
+  "providers": [
+    "edge-tts Python package",
+    "macOS say + afconvert"
+  ],
+  "voice": "Tingting",
+  "rate": 160,
+  "format": "mixed",
+  "sampleRate": 22050,
+  "count": 1661,
+  "requestedCount": 1661,
   "entries": [
     {
       "id": "game-title-数一数",
@@ -1835,28 +1837,32 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/game-goal-%E8%AF%86%E5%88%AB%E9%87%8D%E5%A4%8D%E6%A8%A1%E5%BC%8F-%E9%A2%84%E6%B5%8B%E4%B8%8B%E4%B8%80%E4%B8%AA-%E8%A1%A5%E4%B8%8A%E7%BC%BA%E5%A4%B1%E4%BD%8D%E7%BD%AE.mp3"
     },
     {
-      "id": "prompt-找规律-接下来是什么-先说出重复顺序-再选空格里的图",
+      "id": "prompt-找规律-接下来是什么-先说出重复的一组-再从左到右选空格里的图",
       "kind": "prompt",
-      "text": "找规律，接下来是什么？先说出重复顺序，再选空格里的图。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%89%BE%E8%A7%84%E5%BE%8B-%E6%8E%A5%E4%B8%8B%E6%9D%A5%E6%98%AF%E4%BB%80%E4%B9%88-%E5%85%88%E8%AF%B4%E5%87%BA%E9%87%8D%E5%A4%8D%E9%A1%BA%E5%BA%8F-%E5%86%8D%E9%80%89%E7%A9%BA%E6%A0%BC%E9%87%8C%E7%9A%84%E5%9B%BE.mp3"
+      "text": "找规律，接下来是什么？先说出重复的一组，再从左到右选空格里的图。",
+      "provider": "macOS say + afconvert",
+      "src": "/audio/voice/zh-CN/macos-tingting/prompt-%E6%89%BE%E8%A7%84%E5%BE%8B-%E6%8E%A5%E4%B8%8B%E6%9D%A5%E6%98%AF%E4%BB%80%E4%B9%88-%E5%85%88%E8%AF%B4%E5%87%BA%E9%87%8D%E5%A4%8D%E7%9A%84%E4%B8%80%E7%BB%84-%E5%86%8D%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E9%80%89%E7%A9%BA%E6%A0%BC%E9%87%8C%E7%9A%84%E5%9B%BE.wav"
     },
     {
-      "id": "success-规律是-红-蓝-这里应该是蓝色圆片",
+      "id": "success-这一组按红色圆片-蓝色圆片重复-补完是红色圆片-蓝色圆片-红色圆片-蓝色圆片-红色圆片-蓝色圆片-所以空格是蓝色圆片",
       "kind": "success",
-      "text": "规律是 红、蓝，这里应该是蓝色圆片。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%A7%84%E5%BE%8B%E6%98%AF-%E7%BA%A2-%E8%93%9D-%E8%BF%99%E9%87%8C%E5%BA%94%E8%AF%A5%E6%98%AF%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87.mp3"
+      "text": "这一组按红色圆片、蓝色圆片重复，补完是红色圆片、蓝色圆片、红色圆片、蓝色圆片、红色圆片、蓝色圆片，所以空格是蓝色圆片。",
+      "provider": "macOS say + afconvert",
+      "src": "/audio/voice/zh-CN/macos-tingting/success-%E8%BF%99%E4%B8%80%E7%BB%84%E6%8C%89%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87%E9%87%8D%E5%A4%8D-%E8%A1%A5%E5%AE%8C%E6%98%AF%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E6%89%80%E4%BB%A5%E7%A9%BA%E6%A0%BC%E6%98%AF%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87.wav"
     },
     {
-      "id": "retry-从头念一念-按同样的顺序找空格",
+      "id": "retry-先念这一组-红色圆片-蓝色圆片-再从左到右说-红色圆片-蓝色圆片-红色圆片-蓝色圆片-红色圆片-蓝色圆片-空格就是蓝色圆片",
       "kind": "retry",
-      "text": "从头念一念，按同样的顺序找空格。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E4%BB%8E%E5%A4%B4%E5%BF%B5%E4%B8%80%E5%BF%B5-%E6%8C%89%E5%90%8C%E6%A0%B7%E7%9A%84%E9%A1%BA%E5%BA%8F%E6%89%BE%E7%A9%BA%E6%A0%BC.mp3"
+      "text": "先念这一组：红色圆片、蓝色圆片；再从左到右说：红色圆片、蓝色圆片、红色圆片、蓝色圆片、红色圆片、蓝色圆片，空格就是蓝色圆片。",
+      "provider": "macOS say + afconvert",
+      "src": "/audio/voice/zh-CN/macos-tingting/retry-%E5%85%88%E5%BF%B5%E8%BF%99%E4%B8%80%E7%BB%84-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E5%86%8D%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E8%AF%B4-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E7%A9%BA%E6%A0%BC%E5%B0%B1%E6%98%AF%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87.wav"
     },
     {
-      "id": "parent-问她-这一组里有几个-它怎么重复",
+      "id": "parent-请她指着重复的一组红色圆片-蓝色圆片-复述红色圆片-蓝色圆片-红色圆片-蓝色圆片-红色圆片-蓝色圆片-说为什么空格是蓝色圆片",
       "kind": "parent",
-      "text": "问她：这一组里有几个？它怎么重复？",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E8%BF%99%E4%B8%80%E7%BB%84%E9%87%8C%E6%9C%89%E5%87%A0%E4%B8%AA-%E5%AE%83%E6%80%8E%E4%B9%88%E9%87%8D%E5%A4%8D.mp3"
+      "text": "请她指着重复的一组红色圆片、蓝色圆片，复述红色圆片、蓝色圆片、红色圆片、蓝色圆片、红色圆片、蓝色圆片，说为什么空格是蓝色圆片。",
+      "provider": "macOS say + afconvert",
+      "src": "/audio/voice/zh-CN/macos-tingting/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E9%87%8D%E5%A4%8D%E7%9A%84%E4%B8%80%E7%BB%84%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E5%A4%8D%E8%BF%B0%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%A9%BA%E6%A0%BC%E6%98%AF%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87.wav"
     },
     {
       "id": "choice-蓝色圆片",
@@ -1889,22 +1895,53 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%BE%85%E8%A1%A5%E4%BD%8D%E7%BD%AE.mp3"
     },
     {
-      "id": "prompt-找规律-空格里是什么-先说出重复顺序-再选空格里的图",
+      "id": "prompt-找规律-空格里是什么-先说出重复的一组-再从左到右选空格里的图",
       "kind": "prompt",
-      "text": "找规律，空格里是什么？先说出重复顺序，再选空格里的图。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%89%BE%E8%A7%84%E5%BE%8B-%E7%A9%BA%E6%A0%BC%E9%87%8C%E6%98%AF%E4%BB%80%E4%B9%88-%E5%85%88%E8%AF%B4%E5%87%BA%E9%87%8D%E5%A4%8D%E9%A1%BA%E5%BA%8F-%E5%86%8D%E9%80%89%E7%A9%BA%E6%A0%BC%E9%87%8C%E7%9A%84%E5%9B%BE.mp3"
+      "text": "找规律，空格里是什么？先说出重复的一组，再从左到右选空格里的图。",
+      "provider": "macOS say + afconvert",
+      "src": "/audio/voice/zh-CN/macos-tingting/prompt-%E6%89%BE%E8%A7%84%E5%BE%8B-%E7%A9%BA%E6%A0%BC%E9%87%8C%E6%98%AF%E4%BB%80%E4%B9%88-%E5%85%88%E8%AF%B4%E5%87%BA%E9%87%8D%E5%A4%8D%E7%9A%84%E4%B8%80%E7%BB%84-%E5%86%8D%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E9%80%89%E7%A9%BA%E6%A0%BC%E9%87%8C%E7%9A%84%E5%9B%BE.wav"
     },
     {
-      "id": "success-规律是-红-蓝-这里应该是红色圆片",
+      "id": "success-这一组按红色圆片-蓝色圆片重复-补完是红色圆片-蓝色圆片-红色圆片-蓝色圆片-红色圆片-蓝色圆片-所以空格是红色圆片",
       "kind": "success",
-      "text": "规律是 红、蓝，这里应该是红色圆片。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%A7%84%E5%BE%8B%E6%98%AF-%E7%BA%A2-%E8%93%9D-%E8%BF%99%E9%87%8C%E5%BA%94%E8%AF%A5%E6%98%AF%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87.mp3"
+      "text": "这一组按红色圆片、蓝色圆片重复，补完是红色圆片、蓝色圆片、红色圆片、蓝色圆片、红色圆片、蓝色圆片，所以空格是红色圆片。",
+      "provider": "macOS say + afconvert",
+      "src": "/audio/voice/zh-CN/macos-tingting/success-%E8%BF%99%E4%B8%80%E7%BB%84%E6%8C%89%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87%E9%87%8D%E5%A4%8D-%E8%A1%A5%E5%AE%8C%E6%98%AF%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E6%89%80%E4%BB%A5%E7%A9%BA%E6%A0%BC%E6%98%AF%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87.wav"
     },
     {
-      "id": "success-规律是-黄-绿-这里应该是绿色圆片",
+      "id": "retry-先念这一组-红色圆片-蓝色圆片-再从左到右说-红色圆片-蓝色圆片-红色圆片-蓝色圆片-红色圆片-蓝色圆片-空格就是红色圆片",
+      "kind": "retry",
+      "text": "先念这一组：红色圆片、蓝色圆片；再从左到右说：红色圆片、蓝色圆片、红色圆片、蓝色圆片、红色圆片、蓝色圆片，空格就是红色圆片。",
+      "provider": "macOS say + afconvert",
+      "src": "/audio/voice/zh-CN/macos-tingting/retry-%E5%85%88%E5%BF%B5%E8%BF%99%E4%B8%80%E7%BB%84-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E5%86%8D%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E8%AF%B4-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E7%A9%BA%E6%A0%BC%E5%B0%B1%E6%98%AF%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87.wav"
+    },
+    {
+      "id": "parent-请她指着重复的一组红色圆片-蓝色圆片-复述红色圆片-蓝色圆片-红色圆片-蓝色圆片-红色圆片-蓝色圆片-说为什么空格是红色圆片",
+      "kind": "parent",
+      "text": "请她指着重复的一组红色圆片、蓝色圆片，复述红色圆片、蓝色圆片、红色圆片、蓝色圆片、红色圆片、蓝色圆片，说为什么空格是红色圆片。",
+      "provider": "macOS say + afconvert",
+      "src": "/audio/voice/zh-CN/macos-tingting/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E9%87%8D%E5%A4%8D%E7%9A%84%E4%B8%80%E7%BB%84%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E5%A4%8D%E8%BF%B0%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%A9%BA%E6%A0%BC%E6%98%AF%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87.wav"
+    },
+    {
+      "id": "success-这一组按黄色圆片-绿色圆片重复-补完是黄色圆片-绿色圆片-黄色圆片-绿色圆片-黄色圆片-绿色圆片-所以空格是绿色圆片",
       "kind": "success",
-      "text": "规律是 黄、绿，这里应该是绿色圆片。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%A7%84%E5%BE%8B%E6%98%AF-%E9%BB%84-%E7%BB%BF-%E8%BF%99%E9%87%8C%E5%BA%94%E8%AF%A5%E6%98%AF%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87.mp3"
+      "text": "这一组按黄色圆片、绿色圆片重复，补完是黄色圆片、绿色圆片、黄色圆片、绿色圆片、黄色圆片、绿色圆片，所以空格是绿色圆片。",
+      "provider": "macOS say + afconvert",
+      "src": "/audio/voice/zh-CN/macos-tingting/success-%E8%BF%99%E4%B8%80%E7%BB%84%E6%8C%89%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87%E9%87%8D%E5%A4%8D-%E8%A1%A5%E5%AE%8C%E6%98%AF%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E6%89%80%E4%BB%A5%E7%A9%BA%E6%A0%BC%E6%98%AF%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87.wav"
+    },
+    {
+      "id": "retry-先念这一组-黄色圆片-绿色圆片-再从左到右说-黄色圆片-绿色圆片-黄色圆片-绿色圆片-黄色圆片-绿色圆片-空格就是绿色圆片",
+      "kind": "retry",
+      "text": "先念这一组：黄色圆片、绿色圆片；再从左到右说：黄色圆片、绿色圆片、黄色圆片、绿色圆片、黄色圆片、绿色圆片，空格就是绿色圆片。",
+      "provider": "macOS say + afconvert",
+      "src": "/audio/voice/zh-CN/macos-tingting/retry-%E5%85%88%E5%BF%B5%E8%BF%99%E4%B8%80%E7%BB%84-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E5%86%8D%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E8%AF%B4-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E7%A9%BA%E6%A0%BC%E5%B0%B1%E6%98%AF%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87.wav"
+    },
+    {
+      "id": "parent-请她指着重复的一组黄色圆片-绿色圆片-复述黄色圆片-绿色圆片-黄色圆片-绿色圆片-黄色圆片-绿色圆片-说为什么空格是绿色圆片",
+      "kind": "parent",
+      "text": "请她指着重复的一组黄色圆片、绿色圆片，复述黄色圆片、绿色圆片、黄色圆片、绿色圆片、黄色圆片、绿色圆片，说为什么空格是绿色圆片。",
+      "provider": "macOS say + afconvert",
+      "src": "/audio/voice/zh-CN/macos-tingting/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E9%87%8D%E5%A4%8D%E7%9A%84%E4%B8%80%E7%BB%84%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E5%A4%8D%E8%BF%B0%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%A9%BA%E6%A0%BC%E6%98%AF%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87.wav"
     },
     {
       "id": "choice-绿色圆片",
@@ -1913,22 +1950,64 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87.mp3"
     },
     {
-      "id": "success-规律是-黄-绿-这里应该是黄色圆片",
+      "id": "success-这一组按黄色圆片-绿色圆片重复-补完是黄色圆片-绿色圆片-黄色圆片-绿色圆片-黄色圆片-绿色圆片-所以空格是黄色圆片",
       "kind": "success",
-      "text": "规律是 黄、绿，这里应该是黄色圆片。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%A7%84%E5%BE%8B%E6%98%AF-%E9%BB%84-%E7%BB%BF-%E8%BF%99%E9%87%8C%E5%BA%94%E8%AF%A5%E6%98%AF%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87.mp3"
+      "text": "这一组按黄色圆片、绿色圆片重复，补完是黄色圆片、绿色圆片、黄色圆片、绿色圆片、黄色圆片、绿色圆片，所以空格是黄色圆片。",
+      "provider": "macOS say + afconvert",
+      "src": "/audio/voice/zh-CN/macos-tingting/success-%E8%BF%99%E4%B8%80%E7%BB%84%E6%8C%89%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87%E9%87%8D%E5%A4%8D-%E8%A1%A5%E5%AE%8C%E6%98%AF%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E6%89%80%E4%BB%A5%E7%A9%BA%E6%A0%BC%E6%98%AF%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87.wav"
     },
     {
-      "id": "success-规律是-太阳-月亮-这里应该是月亮",
+      "id": "retry-先念这一组-黄色圆片-绿色圆片-再从左到右说-黄色圆片-绿色圆片-黄色圆片-绿色圆片-黄色圆片-绿色圆片-空格就是黄色圆片",
+      "kind": "retry",
+      "text": "先念这一组：黄色圆片、绿色圆片；再从左到右说：黄色圆片、绿色圆片、黄色圆片、绿色圆片、黄色圆片、绿色圆片，空格就是黄色圆片。",
+      "provider": "macOS say + afconvert",
+      "src": "/audio/voice/zh-CN/macos-tingting/retry-%E5%85%88%E5%BF%B5%E8%BF%99%E4%B8%80%E7%BB%84-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E5%86%8D%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E8%AF%B4-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E7%A9%BA%E6%A0%BC%E5%B0%B1%E6%98%AF%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87.wav"
+    },
+    {
+      "id": "parent-请她指着重复的一组黄色圆片-绿色圆片-复述黄色圆片-绿色圆片-黄色圆片-绿色圆片-黄色圆片-绿色圆片-说为什么空格是黄色圆片",
+      "kind": "parent",
+      "text": "请她指着重复的一组黄色圆片、绿色圆片，复述黄色圆片、绿色圆片、黄色圆片、绿色圆片、黄色圆片、绿色圆片，说为什么空格是黄色圆片。",
+      "provider": "macOS say + afconvert",
+      "src": "/audio/voice/zh-CN/macos-tingting/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E9%87%8D%E5%A4%8D%E7%9A%84%E4%B8%80%E7%BB%84%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E5%A4%8D%E8%BF%B0%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%A9%BA%E6%A0%BC%E6%98%AF%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87.wav"
+    },
+    {
+      "id": "success-这一组按太阳-月亮重复-补完是太阳-月亮-太阳-月亮-太阳-月亮-所以空格是月亮",
       "kind": "success",
-      "text": "规律是 太阳、月亮，这里应该是月亮。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%A7%84%E5%BE%8B%E6%98%AF-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E8%BF%99%E9%87%8C%E5%BA%94%E8%AF%A5%E6%98%AF%E6%9C%88%E4%BA%AE.mp3"
+      "text": "这一组按太阳、月亮重复，补完是太阳、月亮、太阳、月亮、太阳、月亮，所以空格是月亮。",
+      "provider": "macOS say + afconvert",
+      "src": "/audio/voice/zh-CN/macos-tingting/success-%E8%BF%99%E4%B8%80%E7%BB%84%E6%8C%89%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE%E9%87%8D%E5%A4%8D-%E8%A1%A5%E5%AE%8C%E6%98%AF%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%89%80%E4%BB%A5%E7%A9%BA%E6%A0%BC%E6%98%AF%E6%9C%88%E4%BA%AE.wav"
+    },
+    {
+      "id": "retry-先念这一组-太阳-月亮-再从左到右说-太阳-月亮-太阳-月亮-太阳-月亮-空格就是月亮",
+      "kind": "retry",
+      "text": "先念这一组：太阳、月亮；再从左到右说：太阳、月亮、太阳、月亮、太阳、月亮，空格就是月亮。",
+      "provider": "macOS say + afconvert",
+      "src": "/audio/voice/zh-CN/macos-tingting/retry-%E5%85%88%E5%BF%B5%E8%BF%99%E4%B8%80%E7%BB%84-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E5%86%8D%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E8%AF%B4-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E7%A9%BA%E6%A0%BC%E5%B0%B1%E6%98%AF%E6%9C%88%E4%BA%AE.wav"
+    },
+    {
+      "id": "parent-请她指着重复的一组太阳-月亮-复述太阳-月亮-太阳-月亮-太阳-月亮-说为什么空格是月亮",
+      "kind": "parent",
+      "text": "请她指着重复的一组太阳、月亮，复述太阳、月亮、太阳、月亮、太阳、月亮，说为什么空格是月亮。",
+      "provider": "macOS say + afconvert",
+      "src": "/audio/voice/zh-CN/macos-tingting/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E9%87%8D%E5%A4%8D%E7%9A%84%E4%B8%80%E7%BB%84%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E5%A4%8D%E8%BF%B0%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%A9%BA%E6%A0%BC%E6%98%AF%E6%9C%88%E4%BA%AE.wav"
     },
     {
       "id": "choice-月亮",
       "kind": "choice",
       "text": "月亮",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E6%9C%88%E4%BA%AE.mp3"
+    },
+    {
+      "id": "choice-太阳",
+      "kind": "choice",
+      "text": "太阳",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%A4%AA%E9%98%B3.mp3"
+    },
+    {
+      "id": "choice-星星",
+      "kind": "choice",
+      "text": "星星",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E6%98%9F%E6%98%9F.mp3"
     },
     {
       "id": "object-太阳",
@@ -1943,28 +2022,65 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E6%9C%88%E4%BA%AE.mp3"
     },
     {
-      "id": "success-规律是-太阳-月亮-这里应该是太阳",
+      "id": "success-这一组按太阳-月亮重复-补完是太阳-月亮-太阳-月亮-太阳-月亮-所以空格是太阳",
       "kind": "success",
-      "text": "规律是 太阳、月亮，这里应该是太阳。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%A7%84%E5%BE%8B%E6%98%AF-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E8%BF%99%E9%87%8C%E5%BA%94%E8%AF%A5%E6%98%AF%E5%A4%AA%E9%98%B3.mp3"
+      "text": "这一组按太阳、月亮重复，补完是太阳、月亮、太阳、月亮、太阳、月亮，所以空格是太阳。",
+      "provider": "macOS say + afconvert",
+      "src": "/audio/voice/zh-CN/macos-tingting/success-%E8%BF%99%E4%B8%80%E7%BB%84%E6%8C%89%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE%E9%87%8D%E5%A4%8D-%E8%A1%A5%E5%AE%8C%E6%98%AF%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%89%80%E4%BB%A5%E7%A9%BA%E6%A0%BC%E6%98%AF%E5%A4%AA%E9%98%B3.wav"
     },
     {
-      "id": "choice-太阳",
-      "kind": "choice",
-      "text": "太阳",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%A4%AA%E9%98%B3.mp3"
+      "id": "retry-先念这一组-太阳-月亮-再从左到右说-太阳-月亮-太阳-月亮-太阳-月亮-空格就是太阳",
+      "kind": "retry",
+      "text": "先念这一组：太阳、月亮；再从左到右说：太阳、月亮、太阳、月亮、太阳、月亮，空格就是太阳。",
+      "provider": "macOS say + afconvert",
+      "src": "/audio/voice/zh-CN/macos-tingting/retry-%E5%85%88%E5%BF%B5%E8%BF%99%E4%B8%80%E7%BB%84-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E5%86%8D%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E8%AF%B4-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E7%A9%BA%E6%A0%BC%E5%B0%B1%E6%98%AF%E5%A4%AA%E9%98%B3.wav"
     },
     {
-      "id": "success-规律是-一大两小-这里应该是小圆",
+      "id": "parent-请她指着重复的一组太阳-月亮-复述太阳-月亮-太阳-月亮-太阳-月亮-说为什么空格是太阳",
+      "kind": "parent",
+      "text": "请她指着重复的一组太阳、月亮，复述太阳、月亮、太阳、月亮、太阳、月亮，说为什么空格是太阳。",
+      "provider": "macOS say + afconvert",
+      "src": "/audio/voice/zh-CN/macos-tingting/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E9%87%8D%E5%A4%8D%E7%9A%84%E4%B8%80%E7%BB%84%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E5%A4%8D%E8%BF%B0%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%A9%BA%E6%A0%BC%E6%98%AF%E5%A4%AA%E9%98%B3.wav"
+    },
+    {
+      "id": "success-这一组按大圆-小圆-小圆重复-补完是大圆-小圆-小圆-大圆-小圆-小圆-所以空格是小圆",
       "kind": "success",
-      "text": "规律是 一大两小，这里应该是小圆。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%A7%84%E5%BE%8B%E6%98%AF-%E4%B8%80%E5%A4%A7%E4%B8%A4%E5%B0%8F-%E8%BF%99%E9%87%8C%E5%BA%94%E8%AF%A5%E6%98%AF%E5%B0%8F%E5%9C%86.mp3"
+      "text": "这一组按大圆、小圆、小圆重复，补完是大圆、小圆、小圆、大圆、小圆、小圆，所以空格是小圆。",
+      "provider": "macOS say + afconvert",
+      "src": "/audio/voice/zh-CN/macos-tingting/success-%E8%BF%99%E4%B8%80%E7%BB%84%E6%8C%89%E5%A4%A7%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%B0%8F%E5%9C%86%E9%87%8D%E5%A4%8D-%E8%A1%A5%E5%AE%8C%E6%98%AF%E5%A4%A7%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%A4%A7%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%B0%8F%E5%9C%86-%E6%89%80%E4%BB%A5%E7%A9%BA%E6%A0%BC%E6%98%AF%E5%B0%8F%E5%9C%86.wav"
+    },
+    {
+      "id": "retry-先念这一组-大圆-小圆-小圆-再从左到右说-大圆-小圆-小圆-大圆-小圆-小圆-空格就是小圆",
+      "kind": "retry",
+      "text": "先念这一组：大圆、小圆、小圆；再从左到右说：大圆、小圆、小圆、大圆、小圆、小圆，空格就是小圆。",
+      "provider": "macOS say + afconvert",
+      "src": "/audio/voice/zh-CN/macos-tingting/retry-%E5%85%88%E5%BF%B5%E8%BF%99%E4%B8%80%E7%BB%84-%E5%A4%A7%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%86%8D%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E8%AF%B4-%E5%A4%A7%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%A4%A7%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%B0%8F%E5%9C%86-%E7%A9%BA%E6%A0%BC%E5%B0%B1%E6%98%AF%E5%B0%8F%E5%9C%86.wav"
+    },
+    {
+      "id": "parent-请她指着重复的一组大圆-小圆-小圆-复述大圆-小圆-小圆-大圆-小圆-小圆-说为什么空格是小圆",
+      "kind": "parent",
+      "text": "请她指着重复的一组大圆、小圆、小圆，复述大圆、小圆、小圆、大圆、小圆、小圆，说为什么空格是小圆。",
+      "provider": "macOS say + afconvert",
+      "src": "/audio/voice/zh-CN/macos-tingting/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E9%87%8D%E5%A4%8D%E7%9A%84%E4%B8%80%E7%BB%84%E5%A4%A7%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%A4%8D%E8%BF%B0%E5%A4%A7%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%A4%A7%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%B0%8F%E5%9C%86-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%A9%BA%E6%A0%BC%E6%98%AF%E5%B0%8F%E5%9C%86.wav"
     },
     {
       "id": "choice-小圆",
       "kind": "choice",
       "text": "小圆",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%B0%8F%E5%9C%86.mp3"
+    },
+    {
+      "id": "choice-大圆",
+      "kind": "choice",
+      "text": "大圆",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%A4%A7%E5%9C%86.mp3"
+    },
+    {
+      "id": "choice-中圆",
+      "kind": "choice",
+      "text": "中圆",
+      "provider": "macOS say + afconvert",
+      "src": "/audio/voice/zh-CN/macos-tingting/choice-%E4%B8%AD%E5%9C%86.wav"
     },
     {
       "id": "object-大圆",
@@ -1979,46 +2095,106 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%B0%8F%E5%9C%86.mp3"
     },
     {
-      "id": "success-规律是-一大两小-这里应该是大圆",
+      "id": "success-这一组按大圆-小圆-小圆重复-补完是大圆-小圆-小圆-大圆-小圆-小圆-所以空格是大圆",
       "kind": "success",
-      "text": "规律是 一大两小，这里应该是大圆。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%A7%84%E5%BE%8B%E6%98%AF-%E4%B8%80%E5%A4%A7%E4%B8%A4%E5%B0%8F-%E8%BF%99%E9%87%8C%E5%BA%94%E8%AF%A5%E6%98%AF%E5%A4%A7%E5%9C%86.mp3"
+      "text": "这一组按大圆、小圆、小圆重复，补完是大圆、小圆、小圆、大圆、小圆、小圆，所以空格是大圆。",
+      "provider": "macOS say + afconvert",
+      "src": "/audio/voice/zh-CN/macos-tingting/success-%E8%BF%99%E4%B8%80%E7%BB%84%E6%8C%89%E5%A4%A7%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%B0%8F%E5%9C%86%E9%87%8D%E5%A4%8D-%E8%A1%A5%E5%AE%8C%E6%98%AF%E5%A4%A7%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%A4%A7%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%B0%8F%E5%9C%86-%E6%89%80%E4%BB%A5%E7%A9%BA%E6%A0%BC%E6%98%AF%E5%A4%A7%E5%9C%86.wav"
     },
     {
-      "id": "choice-大圆",
-      "kind": "choice",
-      "text": "大圆",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%A4%A7%E5%9C%86.mp3"
+      "id": "retry-先念这一组-大圆-小圆-小圆-再从左到右说-大圆-小圆-小圆-大圆-小圆-小圆-空格就是大圆",
+      "kind": "retry",
+      "text": "先念这一组：大圆、小圆、小圆；再从左到右说：大圆、小圆、小圆、大圆、小圆、小圆，空格就是大圆。",
+      "provider": "macOS say + afconvert",
+      "src": "/audio/voice/zh-CN/macos-tingting/retry-%E5%85%88%E5%BF%B5%E8%BF%99%E4%B8%80%E7%BB%84-%E5%A4%A7%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%86%8D%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E8%AF%B4-%E5%A4%A7%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%A4%A7%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%B0%8F%E5%9C%86-%E7%A9%BA%E6%A0%BC%E5%B0%B1%E6%98%AF%E5%A4%A7%E5%9C%86.wav"
     },
     {
-      "id": "success-规律是-太阳-月亮-星星-这里应该是星星",
+      "id": "parent-请她指着重复的一组大圆-小圆-小圆-复述大圆-小圆-小圆-大圆-小圆-小圆-说为什么空格是大圆",
+      "kind": "parent",
+      "text": "请她指着重复的一组大圆、小圆、小圆，复述大圆、小圆、小圆、大圆、小圆、小圆，说为什么空格是大圆。",
+      "provider": "macOS say + afconvert",
+      "src": "/audio/voice/zh-CN/macos-tingting/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E9%87%8D%E5%A4%8D%E7%9A%84%E4%B8%80%E7%BB%84%E5%A4%A7%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%A4%8D%E8%BF%B0%E5%A4%A7%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%A4%A7%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%B0%8F%E5%9C%86-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%A9%BA%E6%A0%BC%E6%98%AF%E5%A4%A7%E5%9C%86.wav"
+    },
+    {
+      "id": "success-这一组按太阳-月亮-星星重复-补完是太阳-月亮-星星-太阳-月亮-星星-所以空格是星星",
       "kind": "success",
-      "text": "规律是 太阳、月亮、星星，这里应该是星星。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%A7%84%E5%BE%8B%E6%98%AF-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F-%E8%BF%99%E9%87%8C%E5%BA%94%E8%AF%A5%E6%98%AF%E6%98%9F%E6%98%9F.mp3"
+      "text": "这一组按太阳、月亮、星星重复，补完是太阳、月亮、星星、太阳、月亮、星星，所以空格是星星。",
+      "provider": "macOS say + afconvert",
+      "src": "/audio/voice/zh-CN/macos-tingting/success-%E8%BF%99%E4%B8%80%E7%BB%84%E6%8C%89%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F%E9%87%8D%E5%A4%8D-%E8%A1%A5%E5%AE%8C%E6%98%AF%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F-%E6%89%80%E4%BB%A5%E7%A9%BA%E6%A0%BC%E6%98%AF%E6%98%9F%E6%98%9F.wav"
     },
     {
-      "id": "choice-星星",
-      "kind": "choice",
-      "text": "星星",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E6%98%9F%E6%98%9F.mp3"
+      "id": "retry-先念这一组-太阳-月亮-星星-再从左到右说-太阳-月亮-星星-太阳-月亮-星星-空格就是星星",
+      "kind": "retry",
+      "text": "先念这一组：太阳、月亮、星星；再从左到右说：太阳、月亮、星星、太阳、月亮、星星，空格就是星星。",
+      "provider": "macOS say + afconvert",
+      "src": "/audio/voice/zh-CN/macos-tingting/retry-%E5%85%88%E5%BF%B5%E8%BF%99%E4%B8%80%E7%BB%84-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F-%E5%86%8D%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E8%AF%B4-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F-%E7%A9%BA%E6%A0%BC%E5%B0%B1%E6%98%AF%E6%98%9F%E6%98%9F.wav"
     },
     {
-      "id": "success-规律是-太阳-月亮-星星-这里应该是太阳",
+      "id": "parent-请她指着重复的一组太阳-月亮-星星-复述太阳-月亮-星星-太阳-月亮-星星-说为什么空格是星星",
+      "kind": "parent",
+      "text": "请她指着重复的一组太阳、月亮、星星，复述太阳、月亮、星星、太阳、月亮、星星，说为什么空格是星星。",
+      "provider": "macOS say + afconvert",
+      "src": "/audio/voice/zh-CN/macos-tingting/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E9%87%8D%E5%A4%8D%E7%9A%84%E4%B8%80%E7%BB%84%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F-%E5%A4%8D%E8%BF%B0%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%A9%BA%E6%A0%BC%E6%98%AF%E6%98%9F%E6%98%9F.wav"
+    },
+    {
+      "id": "success-这一组按太阳-月亮-星星重复-补完是太阳-月亮-星星-太阳-月亮-星星-所以空格是太阳",
       "kind": "success",
-      "text": "规律是 太阳、月亮、星星，这里应该是太阳。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%A7%84%E5%BE%8B%E6%98%AF-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F-%E8%BF%99%E9%87%8C%E5%BA%94%E8%AF%A5%E6%98%AF%E5%A4%AA%E9%98%B3.mp3"
+      "text": "这一组按太阳、月亮、星星重复，补完是太阳、月亮、星星、太阳、月亮、星星，所以空格是太阳。",
+      "provider": "macOS say + afconvert",
+      "src": "/audio/voice/zh-CN/macos-tingting/success-%E8%BF%99%E4%B8%80%E7%BB%84%E6%8C%89%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F%E9%87%8D%E5%A4%8D-%E8%A1%A5%E5%AE%8C%E6%98%AF%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F-%E6%89%80%E4%BB%A5%E7%A9%BA%E6%A0%BC%E6%98%AF%E5%A4%AA%E9%98%B3.wav"
     },
     {
-      "id": "success-规律是-草莓-饼干-草莓-这里应该是草莓",
+      "id": "retry-先念这一组-太阳-月亮-星星-再从左到右说-太阳-月亮-星星-太阳-月亮-星星-空格就是太阳",
+      "kind": "retry",
+      "text": "先念这一组：太阳、月亮、星星；再从左到右说：太阳、月亮、星星、太阳、月亮、星星，空格就是太阳。",
+      "provider": "macOS say + afconvert",
+      "src": "/audio/voice/zh-CN/macos-tingting/retry-%E5%85%88%E5%BF%B5%E8%BF%99%E4%B8%80%E7%BB%84-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F-%E5%86%8D%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E8%AF%B4-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F-%E7%A9%BA%E6%A0%BC%E5%B0%B1%E6%98%AF%E5%A4%AA%E9%98%B3.wav"
+    },
+    {
+      "id": "parent-请她指着重复的一组太阳-月亮-星星-复述太阳-月亮-星星-太阳-月亮-星星-说为什么空格是太阳",
+      "kind": "parent",
+      "text": "请她指着重复的一组太阳、月亮、星星，复述太阳、月亮、星星、太阳、月亮、星星，说为什么空格是太阳。",
+      "provider": "macOS say + afconvert",
+      "src": "/audio/voice/zh-CN/macos-tingting/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E9%87%8D%E5%A4%8D%E7%9A%84%E4%B8%80%E7%BB%84%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F-%E5%A4%8D%E8%BF%B0%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%A9%BA%E6%A0%BC%E6%98%AF%E5%A4%AA%E9%98%B3.wav"
+    },
+    {
+      "id": "success-这一组按草莓-饼干-草莓重复-补完是草莓-饼干-草莓-草莓-饼干-草莓-所以空格是草莓",
       "kind": "success",
-      "text": "规律是 草莓、饼干、草莓，这里应该是草莓。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%A7%84%E5%BE%8B%E6%98%AF-%E8%8D%89%E8%8E%93-%E9%A5%BC%E5%B9%B2-%E8%8D%89%E8%8E%93-%E8%BF%99%E9%87%8C%E5%BA%94%E8%AF%A5%E6%98%AF%E8%8D%89%E8%8E%93.mp3"
+      "text": "这一组按草莓、饼干、草莓重复，补完是草莓、饼干、草莓、草莓、饼干、草莓，所以空格是草莓。",
+      "provider": "macOS say + afconvert",
+      "src": "/audio/voice/zh-CN/macos-tingting/success-%E8%BF%99%E4%B8%80%E7%BB%84%E6%8C%89%E8%8D%89%E8%8E%93-%E9%A5%BC%E5%B9%B2-%E8%8D%89%E8%8E%93%E9%87%8D%E5%A4%8D-%E8%A1%A5%E5%AE%8C%E6%98%AF%E8%8D%89%E8%8E%93-%E9%A5%BC%E5%B9%B2-%E8%8D%89%E8%8E%93-%E8%8D%89%E8%8E%93-%E9%A5%BC%E5%B9%B2-%E8%8D%89%E8%8E%93-%E6%89%80%E4%BB%A5%E7%A9%BA%E6%A0%BC%E6%98%AF%E8%8D%89%E8%8E%93.wav"
+    },
+    {
+      "id": "retry-先念这一组-草莓-饼干-草莓-再从左到右说-草莓-饼干-草莓-草莓-饼干-草莓-空格就是草莓",
+      "kind": "retry",
+      "text": "先念这一组：草莓、饼干、草莓；再从左到右说：草莓、饼干、草莓、草莓、饼干、草莓，空格就是草莓。",
+      "provider": "macOS say + afconvert",
+      "src": "/audio/voice/zh-CN/macos-tingting/retry-%E5%85%88%E5%BF%B5%E8%BF%99%E4%B8%80%E7%BB%84-%E8%8D%89%E8%8E%93-%E9%A5%BC%E5%B9%B2-%E8%8D%89%E8%8E%93-%E5%86%8D%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E8%AF%B4-%E8%8D%89%E8%8E%93-%E9%A5%BC%E5%B9%B2-%E8%8D%89%E8%8E%93-%E8%8D%89%E8%8E%93-%E9%A5%BC%E5%B9%B2-%E8%8D%89%E8%8E%93-%E7%A9%BA%E6%A0%BC%E5%B0%B1%E6%98%AF%E8%8D%89%E8%8E%93.wav"
+    },
+    {
+      "id": "parent-请她指着重复的一组草莓-饼干-草莓-复述草莓-饼干-草莓-草莓-饼干-草莓-说为什么空格是草莓",
+      "kind": "parent",
+      "text": "请她指着重复的一组草莓、饼干、草莓，复述草莓、饼干、草莓、草莓、饼干、草莓，说为什么空格是草莓。",
+      "provider": "macOS say + afconvert",
+      "src": "/audio/voice/zh-CN/macos-tingting/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E9%87%8D%E5%A4%8D%E7%9A%84%E4%B8%80%E7%BB%84%E8%8D%89%E8%8E%93-%E9%A5%BC%E5%B9%B2-%E8%8D%89%E8%8E%93-%E5%A4%8D%E8%BF%B0%E8%8D%89%E8%8E%93-%E9%A5%BC%E5%B9%B2-%E8%8D%89%E8%8E%93-%E8%8D%89%E8%8E%93-%E9%A5%BC%E5%B9%B2-%E8%8D%89%E8%8E%93-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%A9%BA%E6%A0%BC%E6%98%AF%E8%8D%89%E8%8E%93.wav"
     },
     {
       "id": "choice-草莓",
       "kind": "choice",
       "text": "草莓",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E8%8D%89%E8%8E%93.mp3"
+    },
+    {
+      "id": "choice-饼干",
+      "kind": "choice",
+      "text": "饼干",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E9%A5%BC%E5%B9%B2.mp3"
+    },
+    {
+      "id": "choice-苹果",
+      "kind": "choice",
+      "text": "苹果",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E8%8B%B9%E6%9E%9C.mp3"
     },
     {
       "id": "game-title-会变规则的分类机",
@@ -5555,12 +5731,6 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E6%96%87%E5%85%B7%E7%9B%92%E6%98%AF%E8%A3%85%E4%BB%80%E4%B9%88%E7%9A%84.mp3"
     },
     {
-      "id": "choice-饼干",
-      "kind": "choice",
-      "text": "饼干",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E9%A5%BC%E5%B9%B2.mp3"
-    },
-    {
       "id": "prompt-饭盒和谁最容易配成一对-先想它主要用来装什么",
       "kind": "prompt",
       "text": "饭盒和谁最容易配成一对？先想它主要用来装什么。",
@@ -6537,12 +6707,6 @@
       "kind": "parent",
       "text": "问她：你先把哪三个放在一起？为什么剩下它？",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E4%BD%A0%E5%85%88%E6%8A%8A%E5%93%AA%E4%B8%89%E4%B8%AA%E6%94%BE%E5%9C%A8%E4%B8%80%E8%B5%B7-%E4%B8%BA%E4%BB%80%E4%B9%88%E5%89%A9%E4%B8%8B%E5%AE%83.mp3"
-    },
-    {
-      "id": "choice-苹果",
-      "kind": "choice",
-      "text": "苹果",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E8%8B%B9%E6%9E%9C.mp3"
     },
     {
       "id": "choice-橘子",

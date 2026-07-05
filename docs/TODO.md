@@ -15,7 +15,8 @@ small enough to turn into a Spec Kit feature.
 - Review remaining text-only `VisualToken` fallbacks and decide which need
   raster assets.
 - Run a broader logic-house completion review after the audited clusters
-  `logic-sorter-switch`, `logic-same-kind-detective`, `logic-visual-match`,
+  `logic-pattern-train`, `logic-sorter-switch`,
+  `logic-same-kind-detective`, `logic-visual-match`,
   `logic-difference-detective`, `logic-block-height-map`,
   `logic-three-view-blocks`, `logic-route-steps`, `logic-address-map`,
   `logic-matrix-puzzle`, `logic-position-map`, `logic-memory-camera`, and

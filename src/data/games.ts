@@ -754,16 +754,20 @@ function makePatternRounds(): RoundInput[] {
       const answer = full[missingIndex];
       const sequence = full.slice(0, 6);
       sequence[missingIndex] = "?";
+      const unitText = pattern.unit.map(labelFor).join("、");
+      const filledText = sequence.map((item, itemIndex) => labelFor(item === "?" ? full[itemIndex] : item)).join("、");
+      const answerLabel = labelFor(answer);
       rounds.push({
         level: index < 2 ? "L3" : index < 4 ? "L4" : "L5",
         prompt: kind === "next" ? "找规律，接下来是什么？" : "找规律，空格里是什么？",
-        instruction: "先说出重复顺序，再选空格里的图。",
+        instruction: "先说出重复的一组，再从左到右选空格里的图。",
         sequence,
-        choices: patternChoices(answer),
+        patternUnit: pattern.unit,
+        choices: patternChoices(answer, pattern.unit),
         answer,
-        success: `规律是 ${pattern.label}，这里应该是${labelFor(answer)}。`,
-        retry: "从头念一念，按同样的顺序找空格。",
-        parentPrompt: "问她：这一组里有几个？它怎么重复？",
+        success: `这一组按${unitText}重复，补完是${filledText}，所以空格是${answerLabel}。`,
+        retry: `先念这一组：${unitText}；再从左到右说：${filledText}，空格就是${answerLabel}。`,
+        parentPrompt: `请她指着重复的一组${unitText}，复述${filledText}，说为什么空格是${answerLabel}。`,
         abilityTags: ["模式识别", "预测"],
       });
     });
@@ -3765,10 +3769,24 @@ function numberChoices(answer: number, min: number, max: number) {
   return Array.from(values).sort((a, b) => a - b).slice(0, 3).map((value) => ({ label: String(value), value: String(value) }));
 }
 
-function patternChoices(answer: string) {
-  const pool = ["🔴", "🔵", "🟡", "🟢", "☀️", "🌙", "⭐", "⬤", "•"];
-  const values = [answer, ...pool.filter((item) => item !== answer)].slice(0, 3);
+function patternChoices(answer: string, unit: readonly string[]) {
+  const values = [answer, ...Array.from(new Set(unit)).filter((item) => item !== answer)];
+  for (const item of patternChoiceFamily(unit)) {
+    if (!values.includes(item)) values.push(item);
+    if (values.length >= 3) break;
+  }
   return values.map((value) => ({ label: labelFor(value), value }));
+}
+
+function patternChoiceFamily(unit: readonly string[]) {
+  const uniqueUnit = Array.from(new Set(unit));
+  const families = [
+    ["🔴", "🔵", "🟡", "🟢", "🟣"],
+    ["☀️", "🌙", "⭐"],
+    ["🍓", "🍪", "🍎", "🍊", "🍬"],
+    ["⬤", "●", "•"],
+  ];
+  return families.find((family) => uniqueUnit.every((item) => family.includes(item))) ?? uniqueUnit;
 }
 
 function labelFor(token: string) {
@@ -3783,6 +3801,7 @@ function labelFor(token: string) {
     "🌙": "月亮",
     "⭐": "星星",
     "⬤": "大圆",
+    "●": "中圆",
     "•": "小圆",
     "🧁": "蛋糕",
     "⚽": "足球",

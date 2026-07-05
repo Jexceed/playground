@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-04T16:18:12.077Z",
+  "generatedAt": "2026-07-04T18:40:16.927Z",
   "recommendedVoice": "warm adult female Mandarin, smiling, preschool teacher, 0.85 speed, crisp consonants",
-  "lineCount": 1640,
+  "lineCount": 1661,
   "lines": [
     {
       "id": "game-title-数一数",
@@ -4511,9 +4511,9 @@
       ]
     },
     {
-      "id": "prompt-找规律-接下来是什么-先说出重复顺序-再选空格里的图",
+      "id": "prompt-找规律-接下来是什么-先说出重复的一组-再从左到右选空格里的图",
       "kind": "prompt",
-      "text": "找规律，接下来是什么？先说出重复顺序，再选空格里的图。",
+      "text": "找规律，接下来是什么？先说出重复的一组，再从左到右选空格里的图。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-pattern-train/logic-pattern-train-1",
@@ -4525,9 +4525,9 @@
       ]
     },
     {
-      "id": "success-规律是-红-蓝-这里应该是蓝色圆片",
+      "id": "success-这一组按红色圆片-蓝色圆片重复-补完是红色圆片-蓝色圆片-红色圆片-蓝色圆片-红色圆片-蓝色圆片-所以空格是蓝色圆片",
       "kind": "success",
-      "text": "规律是 红、蓝，这里应该是蓝色圆片。",
+      "text": "这一组按红色圆片、蓝色圆片重复，补完是红色圆片、蓝色圆片、红色圆片、蓝色圆片、红色圆片、蓝色圆片，所以空格是蓝色圆片。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-pattern-train/logic-pattern-train-1",
@@ -4535,55 +4535,23 @@
       ]
     },
     {
-      "id": "retry-从头念一念-按同样的顺序找空格",
+      "id": "retry-先念这一组-红色圆片-蓝色圆片-再从左到右说-红色圆片-蓝色圆片-红色圆片-蓝色圆片-红色圆片-蓝色圆片-空格就是蓝色圆片",
       "kind": "retry",
-      "text": "从头念一念，按同样的顺序找空格。",
+      "text": "先念这一组：红色圆片、蓝色圆片；再从左到右说：红色圆片、蓝色圆片、红色圆片、蓝色圆片、红色圆片、蓝色圆片，空格就是蓝色圆片。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
         "logic-pattern-train/logic-pattern-train-1",
-        "logic-pattern-train/logic-pattern-train-2",
-        "logic-pattern-train/logic-pattern-train-3",
-        "logic-pattern-train/logic-pattern-train-4",
-        "logic-pattern-train/logic-pattern-train-5",
-        "logic-pattern-train/logic-pattern-train-6",
-        "logic-pattern-train/logic-pattern-train-7",
-        "logic-pattern-train/logic-pattern-train-8",
-        "logic-pattern-train/logic-pattern-train-9",
-        "logic-pattern-train/logic-pattern-train-10",
-        "logic-pattern-train/logic-pattern-train-11",
-        "logic-pattern-train/logic-pattern-train-12",
-        "logic-pattern-train/logic-pattern-train-13",
-        "logic-pattern-train/logic-pattern-train-14",
-        "logic-pattern-train/logic-pattern-train-15",
-        "logic-pattern-train/logic-pattern-train-16",
-        "logic-pattern-train/logic-pattern-train-17",
-        "logic-pattern-train/logic-pattern-train-18"
+        "logic-pattern-train/logic-pattern-train-2"
       ]
     },
     {
-      "id": "parent-问她-这一组里有几个-它怎么重复",
+      "id": "parent-请她指着重复的一组红色圆片-蓝色圆片-复述红色圆片-蓝色圆片-红色圆片-蓝色圆片-红色圆片-蓝色圆片-说为什么空格是蓝色圆片",
       "kind": "parent",
-      "text": "问她：这一组里有几个？它怎么重复？",
+      "text": "请她指着重复的一组红色圆片、蓝色圆片，复述红色圆片、蓝色圆片、红色圆片、蓝色圆片、红色圆片、蓝色圆片，说为什么空格是蓝色圆片。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-pattern-train/logic-pattern-train-1",
-        "logic-pattern-train/logic-pattern-train-2",
-        "logic-pattern-train/logic-pattern-train-3",
-        "logic-pattern-train/logic-pattern-train-4",
-        "logic-pattern-train/logic-pattern-train-5",
-        "logic-pattern-train/logic-pattern-train-6",
-        "logic-pattern-train/logic-pattern-train-7",
-        "logic-pattern-train/logic-pattern-train-8",
-        "logic-pattern-train/logic-pattern-train-9",
-        "logic-pattern-train/logic-pattern-train-10",
-        "logic-pattern-train/logic-pattern-train-11",
-        "logic-pattern-train/logic-pattern-train-12",
-        "logic-pattern-train/logic-pattern-train-13",
-        "logic-pattern-train/logic-pattern-train-14",
-        "logic-pattern-train/logic-pattern-train-15",
-        "logic-pattern-train/logic-pattern-train-16",
-        "logic-pattern-train/logic-pattern-train-17",
-        "logic-pattern-train/logic-pattern-train-18"
+        "logic-pattern-train/logic-pattern-train-2"
       ]
     },
     {
@@ -4595,21 +4563,6 @@
         "logic-pattern-train/logic-pattern-train-1",
         "logic-pattern-train/logic-pattern-train-2",
         "logic-pattern-train/logic-pattern-train-3",
-        "logic-pattern-train/logic-pattern-train-4",
-        "logic-pattern-train/logic-pattern-train-5",
-        "logic-pattern-train/logic-pattern-train-6",
-        "logic-pattern-train/logic-pattern-train-7",
-        "logic-pattern-train/logic-pattern-train-8",
-        "logic-pattern-train/logic-pattern-train-9",
-        "logic-pattern-train/logic-pattern-train-10",
-        "logic-pattern-train/logic-pattern-train-11",
-        "logic-pattern-train/logic-pattern-train-12",
-        "logic-pattern-train/logic-pattern-train-13",
-        "logic-pattern-train/logic-pattern-train-14",
-        "logic-pattern-train/logic-pattern-train-15",
-        "logic-pattern-train/logic-pattern-train-16",
-        "logic-pattern-train/logic-pattern-train-17",
-        "logic-pattern-train/logic-pattern-train-18",
         "logic-sorter-switch/logic-sorter-switch-10",
         "logic-matrix-puzzle/logic-matrix-puzzle-2",
         "logic-matrix-puzzle/logic-matrix-puzzle-4",
@@ -4628,18 +4581,6 @@
         "logic-pattern-train/logic-pattern-train-4",
         "logic-pattern-train/logic-pattern-train-5",
         "logic-pattern-train/logic-pattern-train-6",
-        "logic-pattern-train/logic-pattern-train-7",
-        "logic-pattern-train/logic-pattern-train-8",
-        "logic-pattern-train/logic-pattern-train-9",
-        "logic-pattern-train/logic-pattern-train-10",
-        "logic-pattern-train/logic-pattern-train-11",
-        "logic-pattern-train/logic-pattern-train-12",
-        "logic-pattern-train/logic-pattern-train-13",
-        "logic-pattern-train/logic-pattern-train-14",
-        "logic-pattern-train/logic-pattern-train-15",
-        "logic-pattern-train/logic-pattern-train-16",
-        "logic-pattern-train/logic-pattern-train-17",
-        "logic-pattern-train/logic-pattern-train-18",
         "logic-sorter-switch/logic-sorter-switch-9",
         "logic-matrix-puzzle/logic-matrix-puzzle-2",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-4",
@@ -4656,6 +4597,8 @@
         "logic-pattern-train/logic-pattern-train-1",
         "logic-pattern-train/logic-pattern-train-2",
         "logic-pattern-train/logic-pattern-train-3",
+        "logic-pattern-train/logic-pattern-train-4",
+        "logic-pattern-train/logic-pattern-train-5",
         "logic-pattern-train/logic-pattern-train-6",
         "logic-sorter-switch/logic-sorter-switch-10",
         "logic-sorter-switch/logic-sorter-switch-11",
@@ -4815,9 +4758,9 @@
       ]
     },
     {
-      "id": "prompt-找规律-空格里是什么-先说出重复顺序-再选空格里的图",
+      "id": "prompt-找规律-空格里是什么-先说出重复的一组-再从左到右选空格里的图",
       "kind": "prompt",
-      "text": "找规律，空格里是什么？先说出重复顺序，再选空格里的图。",
+      "text": "找规律，空格里是什么？先说出重复的一组，再从左到右选空格里的图。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-pattern-train/logic-pattern-train-2",
@@ -4835,19 +4778,57 @@
       ]
     },
     {
-      "id": "success-规律是-红-蓝-这里应该是红色圆片",
+      "id": "success-这一组按红色圆片-蓝色圆片重复-补完是红色圆片-蓝色圆片-红色圆片-蓝色圆片-红色圆片-蓝色圆片-所以空格是红色圆片",
       "kind": "success",
-      "text": "规律是 红、蓝，这里应该是红色圆片。",
+      "text": "这一组按红色圆片、蓝色圆片重复，补完是红色圆片、蓝色圆片、红色圆片、蓝色圆片、红色圆片、蓝色圆片，所以空格是红色圆片。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-pattern-train/logic-pattern-train-3"
       ]
     },
     {
-      "id": "success-规律是-黄-绿-这里应该是绿色圆片",
+      "id": "retry-先念这一组-红色圆片-蓝色圆片-再从左到右说-红色圆片-蓝色圆片-红色圆片-蓝色圆片-红色圆片-蓝色圆片-空格就是红色圆片",
+      "kind": "retry",
+      "text": "先念这一组：红色圆片、蓝色圆片；再从左到右说：红色圆片、蓝色圆片、红色圆片、蓝色圆片、红色圆片、蓝色圆片，空格就是红色圆片。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-pattern-train/logic-pattern-train-3"
+      ]
+    },
+    {
+      "id": "parent-请她指着重复的一组红色圆片-蓝色圆片-复述红色圆片-蓝色圆片-红色圆片-蓝色圆片-红色圆片-蓝色圆片-说为什么空格是红色圆片",
+      "kind": "parent",
+      "text": "请她指着重复的一组红色圆片、蓝色圆片，复述红色圆片、蓝色圆片、红色圆片、蓝色圆片、红色圆片、蓝色圆片，说为什么空格是红色圆片。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-pattern-train/logic-pattern-train-3"
+      ]
+    },
+    {
+      "id": "success-这一组按黄色圆片-绿色圆片重复-补完是黄色圆片-绿色圆片-黄色圆片-绿色圆片-黄色圆片-绿色圆片-所以空格是绿色圆片",
       "kind": "success",
-      "text": "规律是 黄、绿，这里应该是绿色圆片。",
+      "text": "这一组按黄色圆片、绿色圆片重复，补完是黄色圆片、绿色圆片、黄色圆片、绿色圆片、黄色圆片、绿色圆片，所以空格是绿色圆片。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-pattern-train/logic-pattern-train-4",
+        "logic-pattern-train/logic-pattern-train-5"
+      ]
+    },
+    {
+      "id": "retry-先念这一组-黄色圆片-绿色圆片-再从左到右说-黄色圆片-绿色圆片-黄色圆片-绿色圆片-黄色圆片-绿色圆片-空格就是绿色圆片",
+      "kind": "retry",
+      "text": "先念这一组：黄色圆片、绿色圆片；再从左到右说：黄色圆片、绿色圆片、黄色圆片、绿色圆片、黄色圆片、绿色圆片，空格就是绿色圆片。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-pattern-train/logic-pattern-train-4",
+        "logic-pattern-train/logic-pattern-train-5"
+      ]
+    },
+    {
+      "id": "parent-请她指着重复的一组黄色圆片-绿色圆片-复述黄色圆片-绿色圆片-黄色圆片-绿色圆片-黄色圆片-绿色圆片-说为什么空格是绿色圆片",
+      "kind": "parent",
+      "text": "请她指着重复的一组黄色圆片、绿色圆片，复述黄色圆片、绿色圆片、黄色圆片、绿色圆片、黄色圆片、绿色圆片，说为什么空格是绿色圆片。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-pattern-train/logic-pattern-train-4",
         "logic-pattern-train/logic-pattern-train-5"
@@ -4861,6 +4842,7 @@
       "contexts": [
         "logic-pattern-train/logic-pattern-train-4",
         "logic-pattern-train/logic-pattern-train-5",
+        "logic-pattern-train/logic-pattern-train-6",
         "logic-sorter-switch/logic-sorter-switch-9",
         "logic-sorter-switch/logic-sorter-switch-11",
         "logic-matrix-puzzle/logic-matrix-puzzle-4",
@@ -4870,19 +4852,57 @@
       ]
     },
     {
-      "id": "success-规律是-黄-绿-这里应该是黄色圆片",
+      "id": "success-这一组按黄色圆片-绿色圆片重复-补完是黄色圆片-绿色圆片-黄色圆片-绿色圆片-黄色圆片-绿色圆片-所以空格是黄色圆片",
       "kind": "success",
-      "text": "规律是 黄、绿，这里应该是黄色圆片。",
+      "text": "这一组按黄色圆片、绿色圆片重复，补完是黄色圆片、绿色圆片、黄色圆片、绿色圆片、黄色圆片、绿色圆片，所以空格是黄色圆片。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-pattern-train/logic-pattern-train-6"
       ]
     },
     {
-      "id": "success-规律是-太阳-月亮-这里应该是月亮",
+      "id": "retry-先念这一组-黄色圆片-绿色圆片-再从左到右说-黄色圆片-绿色圆片-黄色圆片-绿色圆片-黄色圆片-绿色圆片-空格就是黄色圆片",
+      "kind": "retry",
+      "text": "先念这一组：黄色圆片、绿色圆片；再从左到右说：黄色圆片、绿色圆片、黄色圆片、绿色圆片、黄色圆片、绿色圆片，空格就是黄色圆片。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-pattern-train/logic-pattern-train-6"
+      ]
+    },
+    {
+      "id": "parent-请她指着重复的一组黄色圆片-绿色圆片-复述黄色圆片-绿色圆片-黄色圆片-绿色圆片-黄色圆片-绿色圆片-说为什么空格是黄色圆片",
+      "kind": "parent",
+      "text": "请她指着重复的一组黄色圆片、绿色圆片，复述黄色圆片、绿色圆片、黄色圆片、绿色圆片、黄色圆片、绿色圆片，说为什么空格是黄色圆片。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-pattern-train/logic-pattern-train-6"
+      ]
+    },
+    {
+      "id": "success-这一组按太阳-月亮重复-补完是太阳-月亮-太阳-月亮-太阳-月亮-所以空格是月亮",
       "kind": "success",
-      "text": "规律是 太阳、月亮，这里应该是月亮。",
+      "text": "这一组按太阳、月亮重复，补完是太阳、月亮、太阳、月亮、太阳、月亮，所以空格是月亮。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-pattern-train/logic-pattern-train-7",
+        "logic-pattern-train/logic-pattern-train-8"
+      ]
+    },
+    {
+      "id": "retry-先念这一组-太阳-月亮-再从左到右说-太阳-月亮-太阳-月亮-太阳-月亮-空格就是月亮",
+      "kind": "retry",
+      "text": "先念这一组：太阳、月亮；再从左到右说：太阳、月亮、太阳、月亮、太阳、月亮，空格就是月亮。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-pattern-train/logic-pattern-train-7",
+        "logic-pattern-train/logic-pattern-train-8"
+      ]
+    },
+    {
+      "id": "parent-请她指着重复的一组太阳-月亮-复述太阳-月亮-太阳-月亮-太阳-月亮-说为什么空格是月亮",
+      "kind": "parent",
+      "text": "请她指着重复的一组太阳、月亮，复述太阳、月亮、太阳、月亮、太阳、月亮，说为什么空格是月亮。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-pattern-train/logic-pattern-train-7",
         "logic-pattern-train/logic-pattern-train-8"
@@ -4895,7 +4915,43 @@
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-pattern-train/logic-pattern-train-7",
-        "logic-pattern-train/logic-pattern-train-8"
+        "logic-pattern-train/logic-pattern-train-8",
+        "logic-pattern-train/logic-pattern-train-9",
+        "logic-pattern-train/logic-pattern-train-13",
+        "logic-pattern-train/logic-pattern-train-14",
+        "logic-pattern-train/logic-pattern-train-15"
+      ]
+    },
+    {
+      "id": "choice-太阳",
+      "kind": "choice",
+      "text": "太阳",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-pattern-train/logic-pattern-train-7",
+        "logic-pattern-train/logic-pattern-train-8",
+        "logic-pattern-train/logic-pattern-train-9",
+        "logic-pattern-train/logic-pattern-train-13",
+        "logic-pattern-train/logic-pattern-train-14",
+        "logic-pattern-train/logic-pattern-train-15"
+      ]
+    },
+    {
+      "id": "choice-星星",
+      "kind": "choice",
+      "text": "星星",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-pattern-train/logic-pattern-train-7",
+        "logic-pattern-train/logic-pattern-train-8",
+        "logic-pattern-train/logic-pattern-train-9",
+        "logic-pattern-train/logic-pattern-train-13",
+        "logic-pattern-train/logic-pattern-train-14",
+        "logic-pattern-train/logic-pattern-train-15",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-1",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-7",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-11",
+        "logic-balance-swap/logic-balance-swap-4"
       ]
     },
     {
@@ -4941,30 +4997,55 @@
       ]
     },
     {
-      "id": "success-规律是-太阳-月亮-这里应该是太阳",
+      "id": "success-这一组按太阳-月亮重复-补完是太阳-月亮-太阳-月亮-太阳-月亮-所以空格是太阳",
       "kind": "success",
-      "text": "规律是 太阳、月亮，这里应该是太阳。",
+      "text": "这一组按太阳、月亮重复，补完是太阳、月亮、太阳、月亮、太阳、月亮，所以空格是太阳。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-pattern-train/logic-pattern-train-9"
       ]
     },
     {
-      "id": "choice-太阳",
-      "kind": "choice",
-      "text": "太阳",
-      "tone": "friendly, clear, playful",
+      "id": "retry-先念这一组-太阳-月亮-再从左到右说-太阳-月亮-太阳-月亮-太阳-月亮-空格就是太阳",
+      "kind": "retry",
+      "text": "先念这一组：太阳、月亮；再从左到右说：太阳、月亮、太阳、月亮、太阳、月亮，空格就是太阳。",
+      "tone": "gentle, encouraging, slow",
       "contexts": [
-        "logic-pattern-train/logic-pattern-train-9",
-        "logic-pattern-train/logic-pattern-train-14",
-        "logic-pattern-train/logic-pattern-train-15"
+        "logic-pattern-train/logic-pattern-train-9"
       ]
     },
     {
-      "id": "success-规律是-一大两小-这里应该是小圆",
+      "id": "parent-请她指着重复的一组太阳-月亮-复述太阳-月亮-太阳-月亮-太阳-月亮-说为什么空格是太阳",
+      "kind": "parent",
+      "text": "请她指着重复的一组太阳、月亮，复述太阳、月亮、太阳、月亮、太阳、月亮，说为什么空格是太阳。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-pattern-train/logic-pattern-train-9"
+      ]
+    },
+    {
+      "id": "success-这一组按大圆-小圆-小圆重复-补完是大圆-小圆-小圆-大圆-小圆-小圆-所以空格是小圆",
       "kind": "success",
-      "text": "规律是 一大两小，这里应该是小圆。",
+      "text": "这一组按大圆、小圆、小圆重复，补完是大圆、小圆、小圆、大圆、小圆、小圆，所以空格是小圆。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-pattern-train/logic-pattern-train-10"
+      ]
+    },
+    {
+      "id": "retry-先念这一组-大圆-小圆-小圆-再从左到右说-大圆-小圆-小圆-大圆-小圆-小圆-空格就是小圆",
+      "kind": "retry",
+      "text": "先念这一组：大圆、小圆、小圆；再从左到右说：大圆、小圆、小圆、大圆、小圆、小圆，空格就是小圆。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-pattern-train/logic-pattern-train-10"
+      ]
+    },
+    {
+      "id": "parent-请她指着重复的一组大圆-小圆-小圆-复述大圆-小圆-小圆-大圆-小圆-小圆-说为什么空格是小圆",
+      "kind": "parent",
+      "text": "请她指着重复的一组大圆、小圆、小圆，复述大圆、小圆、小圆、大圆、小圆、小圆，说为什么空格是小圆。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-pattern-train/logic-pattern-train-10"
       ]
@@ -4975,7 +5056,31 @@
       "text": "小圆",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-pattern-train/logic-pattern-train-10"
+        "logic-pattern-train/logic-pattern-train-10",
+        "logic-pattern-train/logic-pattern-train-11",
+        "logic-pattern-train/logic-pattern-train-12"
+      ]
+    },
+    {
+      "id": "choice-大圆",
+      "kind": "choice",
+      "text": "大圆",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-pattern-train/logic-pattern-train-10",
+        "logic-pattern-train/logic-pattern-train-11",
+        "logic-pattern-train/logic-pattern-train-12"
+      ]
+    },
+    {
+      "id": "choice-中圆",
+      "kind": "choice",
+      "text": "中圆",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-pattern-train/logic-pattern-train-10",
+        "logic-pattern-train/logic-pattern-train-11",
+        "logic-pattern-train/logic-pattern-train-12"
       ]
     },
     {
@@ -5013,9 +5118,9 @@
       ]
     },
     {
-      "id": "success-规律是-一大两小-这里应该是大圆",
+      "id": "success-这一组按大圆-小圆-小圆重复-补完是大圆-小圆-小圆-大圆-小圆-小圆-所以空格是大圆",
       "kind": "success",
-      "text": "规律是 一大两小，这里应该是大圆。",
+      "text": "这一组按大圆、小圆、小圆重复，补完是大圆、小圆、小圆、大圆、小圆、小圆，所以空格是大圆。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-pattern-train/logic-pattern-train-11",
@@ -5023,9 +5128,19 @@
       ]
     },
     {
-      "id": "choice-大圆",
-      "kind": "choice",
-      "text": "大圆",
+      "id": "retry-先念这一组-大圆-小圆-小圆-再从左到右说-大圆-小圆-小圆-大圆-小圆-小圆-空格就是大圆",
+      "kind": "retry",
+      "text": "先念这一组：大圆、小圆、小圆；再从左到右说：大圆、小圆、小圆、大圆、小圆、小圆，空格就是大圆。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-pattern-train/logic-pattern-train-11",
+        "logic-pattern-train/logic-pattern-train-12"
+      ]
+    },
+    {
+      "id": "parent-请她指着重复的一组大圆-小圆-小圆-复述大圆-小圆-小圆-大圆-小圆-小圆-说为什么空格是大圆",
+      "kind": "parent",
+      "text": "请她指着重复的一组大圆、小圆、小圆，复述大圆、小圆、小圆、大圆、小圆、小圆，说为什么空格是大圆。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-pattern-train/logic-pattern-train-11",
@@ -5033,31 +5148,36 @@
       ]
     },
     {
-      "id": "success-规律是-太阳-月亮-星星-这里应该是星星",
+      "id": "success-这一组按太阳-月亮-星星重复-补完是太阳-月亮-星星-太阳-月亮-星星-所以空格是星星",
       "kind": "success",
-      "text": "规律是 太阳、月亮、星星，这里应该是星星。",
+      "text": "这一组按太阳、月亮、星星重复，补完是太阳、月亮、星星、太阳、月亮、星星，所以空格是星星。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-pattern-train/logic-pattern-train-13"
       ]
     },
     {
-      "id": "choice-星星",
-      "kind": "choice",
-      "text": "星星",
-      "tone": "friendly, clear, playful",
+      "id": "retry-先念这一组-太阳-月亮-星星-再从左到右说-太阳-月亮-星星-太阳-月亮-星星-空格就是星星",
+      "kind": "retry",
+      "text": "先念这一组：太阳、月亮、星星；再从左到右说：太阳、月亮、星星、太阳、月亮、星星，空格就是星星。",
+      "tone": "gentle, encouraging, slow",
       "contexts": [
-        "logic-pattern-train/logic-pattern-train-13",
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-1",
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-7",
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-11",
-        "logic-balance-swap/logic-balance-swap-4"
+        "logic-pattern-train/logic-pattern-train-13"
       ]
     },
     {
-      "id": "success-规律是-太阳-月亮-星星-这里应该是太阳",
+      "id": "parent-请她指着重复的一组太阳-月亮-星星-复述太阳-月亮-星星-太阳-月亮-星星-说为什么空格是星星",
+      "kind": "parent",
+      "text": "请她指着重复的一组太阳、月亮、星星，复述太阳、月亮、星星、太阳、月亮、星星，说为什么空格是星星。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-pattern-train/logic-pattern-train-13"
+      ]
+    },
+    {
+      "id": "success-这一组按太阳-月亮-星星重复-补完是太阳-月亮-星星-太阳-月亮-星星-所以空格是太阳",
       "kind": "success",
-      "text": "规律是 太阳、月亮、星星，这里应该是太阳。",
+      "text": "这一组按太阳、月亮、星星重复，补完是太阳、月亮、星星、太阳、月亮、星星，所以空格是太阳。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-pattern-train/logic-pattern-train-14",
@@ -5065,10 +5185,52 @@
       ]
     },
     {
-      "id": "success-规律是-草莓-饼干-草莓-这里应该是草莓",
+      "id": "retry-先念这一组-太阳-月亮-星星-再从左到右说-太阳-月亮-星星-太阳-月亮-星星-空格就是太阳",
+      "kind": "retry",
+      "text": "先念这一组：太阳、月亮、星星；再从左到右说：太阳、月亮、星星、太阳、月亮、星星，空格就是太阳。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-pattern-train/logic-pattern-train-14",
+        "logic-pattern-train/logic-pattern-train-15"
+      ]
+    },
+    {
+      "id": "parent-请她指着重复的一组太阳-月亮-星星-复述太阳-月亮-星星-太阳-月亮-星星-说为什么空格是太阳",
+      "kind": "parent",
+      "text": "请她指着重复的一组太阳、月亮、星星，复述太阳、月亮、星星、太阳、月亮、星星，说为什么空格是太阳。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-pattern-train/logic-pattern-train-14",
+        "logic-pattern-train/logic-pattern-train-15"
+      ]
+    },
+    {
+      "id": "success-这一组按草莓-饼干-草莓重复-补完是草莓-饼干-草莓-草莓-饼干-草莓-所以空格是草莓",
       "kind": "success",
-      "text": "规律是 草莓、饼干、草莓，这里应该是草莓。",
+      "text": "这一组按草莓、饼干、草莓重复，补完是草莓、饼干、草莓、草莓、饼干、草莓，所以空格是草莓。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-pattern-train/logic-pattern-train-16",
+        "logic-pattern-train/logic-pattern-train-17",
+        "logic-pattern-train/logic-pattern-train-18"
+      ]
+    },
+    {
+      "id": "retry-先念这一组-草莓-饼干-草莓-再从左到右说-草莓-饼干-草莓-草莓-饼干-草莓-空格就是草莓",
+      "kind": "retry",
+      "text": "先念这一组：草莓、饼干、草莓；再从左到右说：草莓、饼干、草莓、草莓、饼干、草莓，空格就是草莓。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-pattern-train/logic-pattern-train-16",
+        "logic-pattern-train/logic-pattern-train-17",
+        "logic-pattern-train/logic-pattern-train-18"
+      ]
+    },
+    {
+      "id": "parent-请她指着重复的一组草莓-饼干-草莓-复述草莓-饼干-草莓-草莓-饼干-草莓-说为什么空格是草莓",
+      "kind": "parent",
+      "text": "请她指着重复的一组草莓、饼干、草莓，复述草莓、饼干、草莓、草莓、饼干、草莓，说为什么空格是草莓。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-pattern-train/logic-pattern-train-16",
         "logic-pattern-train/logic-pattern-train-17",
@@ -5091,6 +5253,49 @@
         "logic-part-whole-puzzle/logic-part-whole-puzzle-2",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-8",
         "logic-balance-swap/logic-balance-swap-1"
+      ]
+    },
+    {
+      "id": "choice-饼干",
+      "kind": "choice",
+      "text": "饼干",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-pattern-train/logic-pattern-train-16",
+        "logic-pattern-train/logic-pattern-train-17",
+        "logic-pattern-train/logic-pattern-train-18",
+        "logic-relation-pairs/pencil-case-pencil",
+        "logic-relation-pairs/lunchbox-cookie",
+        "logic-relation-pairs/schoolbag-book-analogy",
+        "logic-same-kind-detective/logic-same-kind-detective-5",
+        "logic-same-kind-detective/logic-same-kind-detective-11",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-2",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-5",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-8",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-11",
+        "logic-balance-swap/logic-balance-swap-2"
+      ]
+    },
+    {
+      "id": "choice-苹果",
+      "kind": "choice",
+      "text": "苹果",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-pattern-train/logic-pattern-train-16",
+        "logic-pattern-train/logic-pattern-train-17",
+        "logic-pattern-train/logic-pattern-train-18",
+        "logic-same-kind-detective/logic-same-kind-detective-7",
+        "logic-memory-camera/logic-memory-camera-1",
+        "logic-memory-camera/logic-memory-camera-9",
+        "logic-difference-detective/logic-difference-detective-1",
+        "logic-difference-detective/logic-difference-detective-8",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-5",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-8",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-11",
+        "logic-route-steps/logic-route-steps-1",
+        "logic-route-steps/logic-route-steps-2",
+        "logic-route-steps/logic-route-steps-3"
       ]
     },
     {
@@ -10935,24 +11140,6 @@
       ]
     },
     {
-      "id": "choice-饼干",
-      "kind": "choice",
-      "text": "饼干",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-relation-pairs/pencil-case-pencil",
-        "logic-relation-pairs/lunchbox-cookie",
-        "logic-relation-pairs/schoolbag-book-analogy",
-        "logic-same-kind-detective/logic-same-kind-detective-5",
-        "logic-same-kind-detective/logic-same-kind-detective-11",
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-2",
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-5",
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-8",
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-11",
-        "logic-balance-swap/logic-balance-swap-2"
-      ]
-    },
-    {
       "id": "prompt-饭盒和谁最容易配成一对-先想它主要用来装什么",
       "kind": "prompt",
       "text": "饭盒和谁最容易配成一对？先想它主要用来装什么。",
@@ -12805,25 +12992,6 @@
         "logic-same-kind-detective/logic-same-kind-detective-10",
         "logic-same-kind-detective/logic-same-kind-detective-11",
         "logic-same-kind-detective/logic-same-kind-detective-12"
-      ]
-    },
-    {
-      "id": "choice-苹果",
-      "kind": "choice",
-      "text": "苹果",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-same-kind-detective/logic-same-kind-detective-7",
-        "logic-memory-camera/logic-memory-camera-1",
-        "logic-memory-camera/logic-memory-camera-9",
-        "logic-difference-detective/logic-difference-detective-1",
-        "logic-difference-detective/logic-difference-detective-8",
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-5",
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-8",
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-11",
-        "logic-route-steps/logic-route-steps-1",
-        "logic-route-steps/logic-route-steps-2",
-        "logic-route-steps/logic-route-steps-3"
       ]
     },
     {

@@ -11,6 +11,7 @@
 - 同一道题的选项含义也不能重复；相近选项只有在能解释“看错了哪个线索 / 用了旧规则 / 只满足一个条件”时才保留。
 - 逻辑题的成功、重试和家长提示必须点回可见线索、当前规则、顺序、类别、条件或计划，不能只说“对了”或泛泛提醒。
 - 难度说明要写清推理负荷或视觉表面，例如规则切换、两个条件、证据强弱、顺序步骤、空间判断、记忆或抗干扰。
+- 规律火车题要能从重复的一组推回空格答案：题面只保留一个 `?`，至少给出 3 个不重复选项；选项必须来自可解释的重复图卡或同类近干扰，反馈、重试和家长提示都要说出重复的一组、补完后的序列和答案。
 - 同类题要让“同一类”的规则可见、可说；找不一样题要先说明哪三个是一组，再说明剩下的为什么不一样。
 - 一模一样题要说清从左到右哪些部分完全匹配；三张里找不一样时，要先指出哪两张一样，再说明剩下那张哪里不同。
 - 找不同题要先确认左右图里相同的东西，再说明哪个位置变了、右图多了什么或右图少了什么。
@@ -28,7 +29,7 @@
 
 ## 语音
 
-- 当前可审计语音包可以来自两条链路：Edge TTS 固定声库，或 `local-tts/GENERATION.md` 描述的本地 F5-TTS 参考音色生成。
+- 当前可审计语音包可以来自三条链路：Edge TTS 固定声库、`local-tts/GENERATION.md` 描述的本地 F5-TTS 参考音色生成，或在 Edge 网络不可用时用 `generate:mac-voices -- --merge-existing` 补齐缺失条目的 macOS 本地兜底。
 - 如果使用 Edge TTS，优先用更清楚的 `zh-CN-XiaoxiaoNeural`；不要混用多个 Edge voice。
 - 题库文案变更后必须运行：
 
@@ -46,6 +47,13 @@ pnpm generate:f5-voices -- --ref-audio /path/to/ref.wav --ref-text "参考音频
 
 - 应用运行时只要本地 mp3 存在，就优先播放本地 mp3；浏览器 TTS 只作为缺文件时的兜底。
 - `local-tts/GENERATION.md` 的 F5-TTS 方案可以生成同一参考音色，但参考文本不准时会明显跑偏；没有可靠参考声音时不要伪装成 F5 生成。
+- 如果 Edge 因网络/DNS 不能生成，又没有可靠 F5 参考音频，可以用 macOS 本地语音只补缺失条目：
+
+```bash
+pnpm generate:mac-voices -- --merge-existing --include-parent --limit 99999
+```
+
+  这会保留已有 Edge 条目，只为缺失文本写入 `macOS say + afconvert` 本地音频，并把 manifest 标为 `mixed local`。
 
 ## 图片
 
@@ -73,7 +81,7 @@ pnpm audit:curriculum
 
 并检查：
 
-- `public/audio/voice/manifest.json` 的 `provider` 是 `edge-tts Python package` 或 `F5-TTS local`。
+- `public/audio/voice/manifest.json` 的 `provider` 是 `edge-tts Python package`、`F5-TTS local`、`macOS say + afconvert` 或 `mixed local`。
 - Edge 包不要混用多个 `voice`；F5 包必须写入 `referenceAudio` 和 `referenceText`。
 - `count` 和 `requestedCount` 一致。
 - `failures` 为空。
