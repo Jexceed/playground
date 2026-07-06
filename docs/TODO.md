@@ -9,6 +9,9 @@ small enough to turn into a Spec Kit feature.
 
 ## P1
 
+- Migrate the built-in TypeScript question bank to validated JSON content packs
+  under `content/`, including schema validation, fallback behavior, and
+  curriculum audit coverage.
 - Convert future feature work to the full Spec Kit cycle: `spec.md`, `plan.md`,
   `tasks.md`, implementation, verification, changelog update.
 - Add automated audit coverage for image source-file pairing where practical.

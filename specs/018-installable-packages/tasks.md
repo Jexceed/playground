@@ -12,8 +12,8 @@
 
 **Purpose**: Establish release script test surface and dependency scripts.
 
-- [ ] T001 Add release command placeholders and Node test scripts in `package.json`
-- [ ] T002 [P] Create initial content/deployment documentation skeleton in `docs/content-package.md` and `docs/deployment.md`
+- [x] T001 Add release command placeholders and Node test scripts in `package.json`
+- [x] T002 [P] Create initial content/deployment documentation skeleton in `docs/content-package.md` and `docs/deployment.md`
 
 ---
 
@@ -21,10 +21,10 @@
 
 **Purpose**: Define and test the static release package generator before implementation.
 
-- [ ] T003 Write failing release-package tests in `scripts/build-release.test.mjs`
-- [ ] T004 Run `pnpm test:release` and confirm tests fail because `scripts/build-release.mjs` is missing or incomplete
-- [ ] T005 Implement `scripts/build-release.mjs` to copy `dist/` into `release/nas-static/`, create `content/`, and write manifests
-- [ ] T006 Run `pnpm build` and `pnpm test:release` to verify release generation passes
+- [x] T003 Write failing release-package tests in `scripts/build-release.test.mjs`
+- [x] T004 Run `pnpm test:release` and confirm tests fail because `scripts/build-release.mjs` is missing or incomplete
+- [x] T005 Implement `scripts/build-release.mjs` to copy `dist/` into `release/nas-static/`, create `content/`, and write manifests
+- [x] T006 Run `pnpm build` and `pnpm test:release` to verify release generation passes
 
 ---
 
@@ -34,9 +34,9 @@
 
 **Independent Test**: Run `pnpm build && pnpm release:nas`, then inspect `release/nas-static/`.
 
-- [ ] T007 [US1] Add `release:nas` script in `package.json` and ensure it uses `scripts/build-release.mjs`
-- [ ] T008 [US1] Update `docs/deployment.md` with NAS native static deployment as the first path
-- [ ] T009 [US1] Run `pnpm build && pnpm release:nas` and verify required release files exist
+- [x] T007 [US1] Add `release:nas` script in `package.json` and ensure it uses `scripts/build-release.mjs`
+- [x] T008 [US1] Update `docs/deployment.md` with NAS native static deployment as the first path
+- [x] T009 [US1] Run `pnpm build && pnpm release:nas` and verify required release files exist
 
 ---
 
@@ -46,9 +46,9 @@
 
 **Independent Test**: Inspect generated `content/manifest.json`, `content/README.md`, and `docs/content-package.md`.
 
-- [ ] T010 [US2] Ensure `scripts/build-release.mjs` writes `content/manifest.json` matching `contracts/content-package.md`
-- [ ] T011 [US2] Complete `docs/content-package.md` with current built-in content mode and future JSON migration rules
-- [ ] T012 [US2] Run `pnpm test:release` to verify manifest and decoupling tests pass
+- [x] T010 [US2] Ensure `scripts/build-release.mjs` writes `content/manifest.json` matching `contracts/content-package.md`
+- [x] T011 [US2] Complete `docs/content-package.md` with current built-in content mode and future JSON migration rules
+- [x] T012 [US2] Run `pnpm test:release` to verify manifest and decoupling tests pass
 
 ---
 
@@ -58,8 +58,8 @@
 
 **Independent Test**: Inspect Docker files and, when Docker is available, run `docker compose up --build`.
 
-- [ ] T013 [P] [US3] Add `.dockerignore`, `Dockerfile`, `nginx.conf`, and `docker-compose.yml`
-- [ ] T014 [US3] Update `docs/deployment.md` to describe Docker as fallback only and show `content/` mounting
+- [x] T013 [P] [US3] Add `.dockerignore`, `Dockerfile`, `nginx.conf`, and `docker-compose.yml`
+- [x] T014 [US3] Update `docs/deployment.md` to describe Docker as fallback only and show `content/` mounting
 
 ---
 
@@ -69,9 +69,9 @@
 
 **Independent Test**: Inspect scripts/config and run Tauri build if prerequisites are available.
 
-- [ ] T015 [US4] Add Tauri app configuration in `src-tauri/Cargo.toml`, `src-tauri/build.rs`, `src-tauri/tauri.conf.json`, and `src-tauri/src/main.rs`
-- [ ] T016 [US4] Add Mac packaging scripts and Tauri CLI dependency in `package.json` and `pnpm-lock.yaml`
-- [ ] T017 [US4] Update `docs/deployment.md` with Mac build prerequisites and command
+- [x] T015 [US4] Add Tauri app configuration in `src-tauri/Cargo.toml`, `src-tauri/build.rs`, `src-tauri/tauri.conf.json`, and `src-tauri/src/main.rs`
+- [x] T016 [US4] Add Mac packaging scripts and Tauri CLI dependency in `package.json` and `pnpm-lock.yaml`
+- [x] T017 [US4] Update `docs/deployment.md` with Mac build prerequisites and command
 
 ---
 
@@ -79,12 +79,12 @@
 
 **Purpose**: Final documentation and verification.
 
-- [ ] T018 [P] Update `docs/CHANGELOG.md` with installable package changes
-- [ ] T019 [P] Update `docs/TODO.md` with full question-bank JSON migration follow-up
-- [ ] T020 Run `pnpm build`
-- [ ] T021 Run `pnpm audit:curriculum`
-- [ ] T022 Run `pnpm test:release`
-- [ ] T023 Review `git diff` to confirm deployment files do not import game logic
+- [x] T018 [P] Update `docs/CHANGELOG.md` with installable package changes
+- [x] T019 [P] Update `docs/TODO.md` with full question-bank JSON migration follow-up
+- [x] T020 Run `pnpm build`
+- [x] T021 Run `pnpm audit:curriculum`
+- [x] T022 Run `pnpm test:release`
+- [x] T023 Review `git diff` to confirm deployment files do not import game logic
 
 ---
 

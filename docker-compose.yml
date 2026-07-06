@@ -1,0 +1,9 @@
+services:
+  thinking-island:
+    build:
+      context: .
+    image: thinking-island:local
+    ports:
+      - "8080:80"
+    volumes:
+      - ./release/nas-static/content:/usr/share/nginx/html/content:ro

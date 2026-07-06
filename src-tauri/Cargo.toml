@@ -1,0 +1,12 @@
+[package]
+name = "thinking-island"
+version = "0.1.0"
+description = "Installable desktop wrapper for Thinking Island"
+authors = ["Thinking Island Maintainers"]
+edition = "2021"
+
+[build-dependencies]
+tauri-build = { version = "2" }
+
+[dependencies]
+tauri = { version = "2" }
