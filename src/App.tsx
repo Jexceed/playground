@@ -8,6 +8,7 @@ import type { GameConfig, GameRound, LastPlayLocation, ProgressLog, WorldId } fr
 
 export function App() {
   const [initialPlayLocation] = useState(resolveInitialPlayLocation);
+  const [showSplash, setShowSplash] = useState(true);
   const [activeWorld, setActiveWorld] = useState<WorldId>(initialPlayLocation.worldId);
   const [selectedGameId, setSelectedGameId] = useState(initialPlayLocation.gameId);
   const [requestedRoundIndex, setRequestedRoundIndex] = useState(initialPlayLocation.roundIndex);
@@ -67,6 +68,10 @@ export function App() {
     const empty = { completedIds: [], completedRoundIds: [], abilityTags: [] };
     setProgress(empty);
     saveProgress(empty);
+  }
+
+  if (showSplash) {
+    return <LaunchSplash onEnter={() => setShowSplash(false)} />;
   }
 
   return (
@@ -193,6 +198,40 @@ export function App() {
           </section>
         </aside>
       </section>
+    </main>
+  );
+}
+
+function LaunchSplash({ onEnter }: { onEnter: () => void }) {
+  const [leaving, setLeaving] = useState(false);
+
+  function enterApp() {
+    if (leaving) return;
+    setLeaving(true);
+    void speak("小小思考屋");
+    window.setTimeout(onEnter, 560);
+  }
+
+  return (
+    <main className={`startup-splash ${leaving ? "leaving" : ""}`} aria-label="小小思考屋启动页">
+      <div className="splash-stage">
+        <div className="splash-logo-wrap" aria-hidden="true">
+          <img className="splash-logo" src="/images/brand/thinking-house-brand-v3.png" alt="" />
+          <span className="splash-glow" />
+        </div>
+        <div className="splash-title">
+          <strong>小小思考屋</strong>
+          <span>一起看、一起想、一起说为什么</span>
+        </div>
+        <div className="splash-dots" aria-hidden="true">
+          <span />
+          <span />
+          <span />
+        </div>
+        <button className="splash-enter" type="button" onClick={enterApp}>
+          进入小小思考屋
+        </button>
+      </div>
     </main>
   );
 }

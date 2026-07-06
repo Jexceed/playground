@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-04T18:41:00.312Z",
+  "generatedAt": "2026-07-06T06:49:53.921Z",
   "provider": "mixed local",
   "providers": [
     "edge-tts Python package",
@@ -9,8 +9,8 @@
   "rate": 160,
   "format": "mixed",
   "sampleRate": 22050,
-  "count": 1661,
-  "requestedCount": 1661,
+  "count": 1662,
+  "requestedCount": 1662,
   "entries": [
     {
       "id": "game-title-数一数",
@@ -10013,6 +10013,13 @@
       "kind": "system",
       "text": "完成啦。我们再想一想，为什么会这样？",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/system-%E5%AE%8C%E6%88%90%E5%95%A6-%E6%88%91%E4%BB%AC%E5%86%8D%E6%83%B3%E4%B8%80%E6%83%B3-%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BC%9A%E8%BF%99%E6%A0%B7.mp3"
+    },
+    {
+      "id": "system-小小思考屋",
+      "kind": "system",
+      "text": "小小思考屋",
+      "provider": "macOS say + afconvert",
+      "src": "/audio/voice/zh-CN/macos-tingting/system-%E5%B0%8F%E5%B0%8F%E6%80%9D%E8%80%83%E5%B1%8B.wav"
     }
   ]
 }

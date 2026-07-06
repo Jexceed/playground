@@ -5,6 +5,10 @@ grouped by date.
 
 ## 2026-07-06
 
+- Added the `019-app-launch-branding` Spec Kit feature for Mac app logo
+  resources, a branded launch splash, and the local "小小思考屋" entry voice.
+- Added audit coverage that fails if the app launch splash, launch voice line,
+  or Tauri icon configuration is removed.
 - Added the `018-installable-packages` Spec Kit feature for NAS-first static
   packaging, Docker fallback, and Mac/Tauri installation.
 - Added a tested `pnpm release:nas` workflow that turns the Vite production

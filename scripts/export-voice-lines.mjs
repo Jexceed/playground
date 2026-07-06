@@ -157,6 +157,7 @@ for (const game of games) {
 }
 
 add("system", "完成啦。我们再想一想，为什么会这样？", "game-complete");
+add("system", "小小思考屋", "app-launch");
 
 const data = {
   generatedAt: new Date().toISOString(),

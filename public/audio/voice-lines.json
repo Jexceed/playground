@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-04T18:40:16.927Z",
+  "generatedAt": "2026-07-06T06:49:53.072Z",
   "recommendedVoice": "warm adult female Mandarin, smiling, preschool teacher, 0.85 speed, crisp consonants",
-  "lineCount": 1661,
+  "lineCount": 1662,
   "lines": [
     {
       "id": "game-title-数一数",
@@ -18756,6 +18756,15 @@
       "tone": "friendly, clear, playful",
       "contexts": [
         "game-complete"
+      ]
+    },
+    {
+      "id": "system-小小思考屋",
+      "kind": "system",
+      "text": "小小思考屋",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "app-launch"
       ]
     }
   ]

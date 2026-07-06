@@ -7,6 +7,9 @@ const appSource = readFileSync("src/App.tsx", "utf8");
 const progressiveSetGameSource = readFileSync("src/games/ProgressiveSetGame.tsx", "utf8");
 const storageSource = readFileSync("src/storage.ts", "utf8");
 const imageGallerySource = readFileSync("src/data/imageGallery.ts", "utf8");
+const tauriConfig = existsSync("src-tauri/tauri.conf.json")
+  ? JSON.parse(readFileSync("src-tauri/tauri.conf.json", "utf8"))
+  : null;
 const imageGalleryOutput = ts.transpileModule(imageGallerySource, {
   compilerOptions: { module: ts.ModuleKind.ES2020, target: ts.ScriptTarget.ES2020 },
 }).outputText;
@@ -60,6 +63,16 @@ if (!indexHtml.includes(`<link rel="apple-touch-icon" href="${brandLogoSrc}" />`
 }
 if (!appSource.includes(`src="${brandLogoSrc}"`)) problems.push(`App sidebar should render image-gen brand logo: ${brandLogoSrc}`);
 if (/brand-(mark|logo)/.test(appSource)) problems.push("App still contains legacy inline brand logo markup");
+if (!appSource.includes("function LaunchSplash")) problems.push("App should define a branded LaunchSplash entry view");
+if (!appSource.includes('speak("小小思考屋")')) problems.push("LaunchSplash should trigger the 小小思考屋 voice line through speak()");
+if (!appSource.includes("startup-splash")) problems.push("LaunchSplash should render startup-splash markup");
+if (!appSource.includes("enterApp")) problems.push("LaunchSplash should use a user-initiated enterApp handler for audio playback");
+if (!tauriConfig?.bundle?.icon?.some?.((icon) => icon.includes("icon.icns"))) {
+  problems.push("Tauri bundle should declare the macOS icon.icns app logo");
+}
+if (!tauriConfig?.bundle?.icon?.some?.((icon) => icon.includes("icon.png"))) {
+  problems.push("Tauri bundle should declare the PNG app logo");
+}
 if (addressGridUsesNestedVisualToken(progressiveSetGameSource)) {
   problems.push("AddressGrid renderer should use flat map-cell tokens instead of nested VisualToken cards");
 }
@@ -257,6 +270,9 @@ if (existsSync("public/audio/voice-lines.json")) {
   if (/？。|！。|。。/.test(voiceLines)) problems.push("voice-lines.json contains doubled punctuation");
   voiceLineData = JSON.parse(voiceLines);
   if (!Array.isArray(voiceLineData.lines)) problems.push("voice-lines.json has no lines array");
+  if (!voiceLineData.lines?.some((line) => line.text === "小小思考屋")) {
+    problems.push("voice-lines.json should include the launch brand voice line 小小思考屋");
+  }
 }
 
 if (existsSync("public/audio/voice/manifest.json")) {
@@ -316,6 +332,9 @@ if (existsSync("public/audio/voice/manifest.json")) {
             .map((entry) => entry.id)
             .join(", ")}`,
         );
+      }
+      if (!manifest.entries.some((entry) => entry.text === "小小思考屋")) {
+        problems.push("audio manifest should include the launch brand voice line 小小思考屋");
       }
     }
     if (manifest.failures?.length) problems.push(`audio manifest has ${manifest.failures.length} failures`);

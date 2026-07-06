@@ -31,6 +31,9 @@ small enough to turn into a Spec Kit feature.
 
 ## P2
 
+- Replace the app-launch "小小思考屋" line with a dedicated child-like local
+  voice asset if a reliable reference recording or approved voice source is
+  available.
 - Revisit archived Obsidian notes and extract any still-useful product decisions
   into maintained docs.
 - Consider a lightweight asset manifest report that lists registered but unused
