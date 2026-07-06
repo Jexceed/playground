@@ -754,16 +754,20 @@ function makePatternRounds(): RoundInput[] {
       const answer = full[missingIndex];
       const sequence = full.slice(0, 6);
       sequence[missingIndex] = "?";
+      const unitText = pattern.unit.map(labelFor).join("、");
+      const filledText = sequence.map((item, itemIndex) => labelFor(item === "?" ? full[itemIndex] : item)).join("、");
+      const answerLabel = labelFor(answer);
       rounds.push({
         level: index < 2 ? "L3" : index < 4 ? "L4" : "L5",
         prompt: kind === "next" ? "找规律，接下来是什么？" : "找规律，空格里是什么？",
-        instruction: "先说出重复顺序，再选空格里的图。",
+        instruction: "先说出重复的一组，再从左到右选空格里的图。",
         sequence,
-        choices: patternChoices(answer),
+        patternUnit: pattern.unit,
+        choices: patternChoices(answer, pattern.unit),
         answer,
-        success: `规律是 ${pattern.label}，这里应该是${labelFor(answer)}。`,
-        retry: "从头念一念，按同样的顺序找空格。",
-        parentPrompt: "问她：这一组里有几个？它怎么重复？",
+        success: `这一组按${unitText}重复，补完是${filledText}，所以空格是${answerLabel}。`,
+        retry: `先念这一组：${unitText}；再从左到右说：${filledText}，空格就是${answerLabel}。`,
+        parentPrompt: `请她指着重复的一组${unitText}，复述${filledText}，说为什么空格是${answerLabel}。`,
         abilityTags: ["模式识别", "预测"],
       });
     });
@@ -777,73 +781,89 @@ function makeSorterRounds(): RoundInput[] {
       level: "L3" as AbilityLevel,
       rule: "颜色",
       item: "🔴",
-      prompt: "分类机说：只看颜色。红色圆片应该进哪个篮子？",
+      prompt: "分类机说：这次只看颜色。红色圆片要进哪个篮子？",
       choices: ["红色篮子", "蓝色篮子", "绿色篮子"],
       answer: "红色篮子",
-      success: "这次只看颜色，所以红色圆片进红色篮子。",
+      success: "看颜色时，红色圆片和红色篮子是一对；圆形先不管。",
+      retry: "这题只看颜色。先找红色，再选红色篮子。",
+      parentPrompt: "问她：你看的是颜色还是形状？为什么圆形先不管？",
     },
     {
       level: "L3" as AbilityLevel,
       rule: "颜色",
       item: "🔵",
-      prompt: "分类机说：只看颜色。蓝色圆片应该进哪个篮子？",
+      prompt: "分类机说：这次只看颜色。蓝色圆片要进哪个篮子？",
       choices: ["蓝色篮子", "红色篮子", "黄色篮子"],
       answer: "蓝色篮子",
-      success: "这次只看颜色，所以蓝色圆片进蓝色篮子。",
+      success: "看颜色时，蓝色圆片和蓝色篮子是一对；圆形先不管。",
+      retry: "这题只看颜色。先找蓝色，再选蓝色篮子。",
+      parentPrompt: "问她：你看的是颜色还是形状？为什么圆形先不管？",
     },
     {
       level: "L4" as AbilityLevel,
       rule: "形状",
       item: "🔴",
-      prompt: "规则换了：只看形状。红色圆片应该进哪个篮子？",
+      prompt: "规则换了：这次只看形状。红色圆片要进哪个篮子？",
       choices: ["圆形篮子", "红色篮子", "方形篮子"],
       answer: "圆形篮子",
-      success: "规则是看形状，红色圆片是圆形，所以进圆形篮子。",
+      success: "看形状时，圆片进圆形篮子；红色先不管。",
+      retry: "这题只看形状。先找圆形，再选圆形篮子。",
+      parentPrompt: "问她：你看的是形状还是颜色？为什么红色先不管？",
     },
     {
       level: "L4" as AbilityLevel,
       rule: "形状",
       item: "🟦",
-      prompt: "规则换了：只看形状。蓝色方块应该进哪个篮子？",
+      prompt: "规则换了：这次只看形状。蓝色方块要进哪个篮子？",
       choices: ["方形篮子", "蓝色篮子", "圆形篮子"],
       answer: "方形篮子",
-      success: "规则是看形状，蓝色方块是方形，所以进方形篮子。",
+      success: "看形状时，方块进方形篮子；蓝色先不管。",
+      retry: "这题只看形状。先找方形，再选方形篮子。",
+      parentPrompt: "问她：你看的是形状还是颜色？为什么蓝色先不管？",
     },
     {
       level: "L5" as AbilityLevel,
       rule: "颜色",
       item: "🟦",
-      prompt: "同一张蓝色方块，这次分类机说只看颜色。应该进哪个篮子？",
+      prompt: "刚才看过形状，这次只看颜色。蓝色方块要进哪个篮子？",
       choices: ["蓝色篮子", "方形篮子", "圆形篮子"],
       answer: "蓝色篮子",
-      success: "这次只看颜色，蓝色方块先进蓝色篮子。",
+      success: "虽然它是方块，但这次看颜色，所以进蓝色篮子。",
+      retry: "先停一下听规则：现在只看颜色，不看形状。",
+      parentPrompt: "问她：如果选方形篮子，是看了颜色还是看了形状？这次规则是什么？",
     },
     {
       level: "L5" as AbilityLevel,
       rule: "形状",
       item: "🟦",
-      prompt: "还是这张蓝色方块，现在分类机说只看形状。应该进哪个篮子？",
+      prompt: "还是蓝色方块，现在只看形状。它要进哪个篮子？",
       choices: ["方形篮子", "蓝色篮子", "圆形篮子"],
       answer: "方形篮子",
-      success: "规则换成形状，所以同一张蓝色方块要进方形篮子。",
+      success: "虽然它是蓝色，但这次看形状，所以进方形篮子。",
+      retry: "先停一下听规则：现在只看形状，不看颜色。",
+      parentPrompt: "问她：如果选蓝色篮子，是看了形状还是看了颜色？这次规则是什么？",
     },
     {
       level: "L5" as AbilityLevel,
       rule: "颜色",
       item: "🟡",
-      prompt: "黄色圆片有颜色也有形状。分类机说只看颜色，放哪里？",
+      prompt: "黄色圆片有颜色也有形状。这次只看颜色，放哪里？",
       choices: ["黄色篮子", "圆形篮子", "方形篮子"],
       answer: "黄色篮子",
-      success: "听到只看颜色，就选黄色篮子。",
+      success: "听到只看颜色，就找黄色篮子；圆形先不管。",
+      retry: "这题只看颜色。圆形篮子是看形状时才用的。",
+      parentPrompt: "问她：黄色篮子和圆形篮子都像对的，为什么这次选颜色？",
     },
     {
       level: "L5" as AbilityLevel,
       rule: "形状",
       item: "🟡",
-      prompt: "黄色圆片有颜色也有形状。分类机说只看形状，放哪里？",
+      prompt: "黄色圆片有颜色也有形状。这次只看形状，放哪里？",
       choices: ["圆形篮子", "黄色篮子", "方形篮子"],
       answer: "圆形篮子",
-      success: "听到只看形状，就选圆形篮子。",
+      success: "听到只看形状，就找圆形篮子；黄色先不管。",
+      retry: "这题只看形状。黄色篮子是看颜色时才用的。",
+      parentPrompt: "问她：圆形篮子和黄色篮子都像对的，为什么这次选形状？",
     },
   ];
 
@@ -855,8 +875,8 @@ function makeSorterRounds(): RoundInput[] {
     choices: item.choices.map(choice),
     answer: item.answer,
     success: item.success,
-    retry: `先别看别的特征，这题只看${item.rule}。`,
-    parentPrompt: "问她：如果规则换了，同一张图会不会去不同篮子？",
+    retry: item.retry,
+    parentPrompt: item.parentPrompt,
     abilityTags: ["规则切换", "分类"],
   }));
 
@@ -866,18 +886,24 @@ function makeSorterRounds(): RoundInput[] {
       items: ["🔴", "🟦", "🟢"],
       answer: "🔴",
       success: "红色圆片同时满足红色和圆形。",
+      retry: "两个条件都要看：红色和圆形都对才行。",
+      parentPrompt: "问她：哪一张两个条件都满足？哪一张只满足圆形？哪一张两个条件都不满足？",
     },
     {
-      prompt: "分类机要蓝色，也要方形。选哪一张？",
+      prompt: "分类机要蓝色，也要方形。哪一张两个条件都对？",
       items: ["🔵", "🟦", "🟡"],
       answer: "🟦",
       success: "蓝色方块同时满足蓝色和方形。",
+      retry: "两个条件都要看：蓝色和方形都对才行。",
+      parentPrompt: "问她：哪一张两个条件都满足？哪一张只满足颜色？哪一张两个条件都不满足？",
     },
     {
-      prompt: "分类机要黄色，也要圆形。选哪一张？",
-      items: ["🟦", "⬜", "🟡"],
+      prompt: "分类机要黄色，也要圆形。哪一张两个条件都对？",
+      items: ["🟦", "🟢", "🟡"],
       answer: "🟡",
       success: "黄色圆片同时满足黄色和圆形。",
+      retry: "两个条件都要看：黄色和圆形都对才行。",
+      parentPrompt: "问她：哪一张两个条件都满足？哪一张只满足圆形？哪一张两个条件都不满足？",
     },
   ];
   twoConditionCases.forEach((item) => {
@@ -889,8 +915,8 @@ function makeSorterRounds(): RoundInput[] {
       choices: item.items.map(choice),
       answer: item.answer,
       success: item.success,
-      retry: "先看颜色，再看形状，两个都对才行。",
-      parentPrompt: "问她：它满足了哪两个条件？哪个选项只满足了一个？",
+      retry: item.retry,
+      parentPrompt: item.parentPrompt,
       abilityTags: ["多条件判断", "分类"],
     });
   });
@@ -930,6 +956,18 @@ function makeStopThinkRounds(): RoundInput[] {
 
 function makeOrderRounds(): RoundInput[] {
   const orderScenes = imageGallery.scenes;
+  const orderStepLabel = (step: string) => ({
+    "🧒": "小朋友",
+    "🌊": "小河",
+    "🌱": "小芽",
+    "🌼": "花",
+    "🥕": "胡萝卜",
+    "🏁": "小旗",
+    "🔴": "红灯",
+    "🟢": "绿灯",
+    "🧱倒了": "积木倒了",
+  }[step] ?? step);
+
   const twoStep = [
     {
       prompt: "小朋友口渴了，想喝水，先做什么？",
@@ -1164,6 +1202,10 @@ function makeOrderRounds(): RoundInput[] {
   return [...twoStep, ...threeStep, ...fourStep, ...fiveStep, ...dailyPlans].map((scene, index) => {
     const stepCount = Number(scene.note.match(/^(\d+)/)?.[1] ?? scene.seq.length);
     const sceneImage = "sceneImage" in scene ? scene.sceneImage : undefined;
+    const choices = scene.choices.map(([label, value]) => ({ label, value }));
+    const answerLabel = choices.find((item) => item.value === scene.answer)?.label ?? scene.answer;
+    const filledSequence = scene.seq.map((step) => step === "?" ? answerLabel : orderStepLabel(step));
+    const flow = filledSequence.join("、");
     return {
       level: index < 3 ? "L4" as AbilityLevel : index < 6 ? "L5" as AbilityLevel : "L6" as AbilityLevel,
       prompt: scene.prompt,
@@ -1171,11 +1213,11 @@ function makeOrderRounds(): RoundInput[] {
       difficultyNote: scene.note,
       sceneImage,
       sequence: scene.seq,
-      choices: scene.choices.map(([label, value]) => ({ label, value })),
+      choices,
       answer: scene.answer,
-      success: scene.success,
-      retry: "先从生活目标往前想：没有这一步，后面的事能不能发生？",
-      parentPrompt: `请她用“先、然后、再、最后”复述这 ${stepCount} 步。`,
+      success: `按顺序是${flow}，所以缺少的是${answerLabel}。`,
+      retry: `先从左到右按顺序说：${flow}，再想缺少的${answerLabel}让后面能继续。`,
+      parentPrompt: `请她指着图卡复述${flow}，说为什么缺少${answerLabel}。`,
       abilityTags: ["顺序推理", stepCount >= 5 ? "多步计划" : stepCount >= 4 ? "生活流程" : "两步计划"],
     };
   });
@@ -2472,24 +2514,24 @@ function makeSameKindRounds(): RoundInput[] {
 
   const rounds: RoundInput[] = sameKindCases.map((item, index) => ({
     level: index < 3 ? "L4" : "L5",
-    prompt: `这些是一家：${item.groupName}。谁也应该住进来？`,
-    instruction: "先说共同点，再选同一类。",
-    visualGroups: [{ label: "这一家", items: item.items }],
+    prompt: `这些都属于${item.groupName}。谁也能放进这一组？`,
+    instruction: "先说它们哪里一样，再选也符合这个规则的。",
+    visualGroups: [{ label: item.groupName, items: item.items }],
     choices: choiceSet([item.answer, ...item.distractors]),
     answer: item.answer,
     success: `${item.answer}也属于${item.groupName}。${item.clue}`,
-    retry: "不要只看颜色，先想它们都是什么。",
-    parentPrompt: "问她：这几个东西哪里一样？你用什么规则分的？",
+    retry: `先找共同点：${item.clue}再看谁也符合这个规则。`,
+    parentPrompt: `问她：这组的规则是${item.groupName}。${item.answer}为什么也属于这一类？`,
     abilityTags: ["类别归纳", "观察角度"],
   }));
 
   const oddCases = [
-    { items: ["🍎", "🍊", "葡萄", "小汽车"], answer: "小汽车", reason: "只有小汽车不是水果。" },
-    { items: ["小汽车", "公交车", "飞机", "蛋糕"], answer: "蛋糕", reason: "蛋糕不能当交通工具。" },
-    { items: ["铅笔", "书包", "尺子", "小鱼"], answer: "小鱼", reason: "小鱼不是学习用品。" },
-    { items: ["🐱", "🐶", "🐰", "杯子"], answer: "杯子", reason: "杯子不是小动物。" },
-    { items: ["⚽", "🍊", "饼干", "长木板"], answer: "长木板", reason: "长木板不是圆圆的。" },
-    { items: ["小鸟", "飞机", "小鱼", "风筝"], answer: "小鱼", reason: "小鱼不会在天上飞。" },
+    { items: ["🍎", "🍊", "葡萄", "小汽车"], answer: "小汽车", reason: "苹果、橘子、葡萄这三个是水果，小汽车不是水果。" },
+    { items: ["小汽车", "公交车", "飞机", "蛋糕"], answer: "蛋糕", reason: "小汽车、公交车、飞机这三个能带我们移动，蛋糕不能当交通工具。" },
+    { items: ["铅笔", "书包", "尺子", "小鱼"], answer: "小鱼", reason: "铅笔、书包、尺子这三个是学习用品，小鱼不是学习用品。" },
+    { items: ["🐱", "🐶", "🐰", "杯子"], answer: "杯子", reason: "小猫、小狗、小兔这三个是小动物，杯子不是小动物。" },
+    { items: ["⚽", "🍊", "饼干", "长木板"], answer: "长木板", reason: "足球、橘子、饼干这三个是圆圆的，长木板不是圆圆的。" },
+    { items: ["小鸟", "飞机", "小鱼", "风筝"], answer: "小鱼", reason: "小鸟、飞机、风筝这三个能在天上，小鱼不会在天上飞。" },
   ].map((item, index) => ({
     level: index < 3 ? "L5" as AbilityLevel : "L6" as AbilityLevel,
     prompt: "哪一个和其他几个最不一样？",
@@ -2537,7 +2579,6 @@ function makeNumberPatternRounds(): RoundInput[] {
 }
 
 function makeAddressMapRounds(): RoundInput[] {
-  const sceneImage = imageGallery.scenes.treasureMapGrid;
   const smallGrid = {
     columns: ["1", "2", "3"],
     rows: ["A", "B", "C"],
@@ -2567,38 +2608,44 @@ function makeAddressMapRounds(): RoundInput[] {
     { grid: bigGrid, address: "B3", answer: "积木塔", level: "L5" },
     { grid: bigGrid, address: "C2", answer: "小鱼", level: "L6" },
     { grid: bigGrid, address: "D4", answer: "草莓", level: "L6" },
-  ].map((item) => ({
-    level: item.level as AbilityLevel,
-    prompt: `${item.address} 里藏着什么？`,
-    instruction: "先找字母行，再找数字列。",
-    sceneImage,
-    grid: item.grid,
-    choices: choiceSet([item.answer, ...gridDistractors(item.grid, item.answer)]),
-    answer: item.answer,
-    success: `${item.address} 的格子里是${item.answer}。`,
-    retry: "先用手指找到字母，再横着找到数字。",
-    parentPrompt: "请她说：我先找哪一行，再找哪一列。",
-    abilityTags: ["二维定位", "行列对应"],
-  }));
+  ].map((item) => {
+    const row = item.address[0];
+    const column = item.address.slice(1);
+    return {
+      level: item.level as AbilityLevel,
+      prompt: `${item.address} 里藏着什么？`,
+      instruction: "先找字母行，再找数字列。",
+      grid: item.grid,
+      choices: choiceSet([item.answer, ...gridDistractors(item.grid, item.answer)]),
+      answer: item.answer,
+      success: `${item.address} 是 ${row} 行 ${column} 列，格子里是${item.answer}。`,
+      retry: `先找到 ${row} 行，再横着找到 ${column} 列，不要先猜物品。`,
+      parentPrompt: `请她指着 ${row} 行和 ${column} 列交叉的格子，说为什么是${item.answer}。`,
+      abilityTags: ["二维定位", "行列对应"],
+    };
+  });
 
   const findAddress = [
     { grid: smallGrid, target: "小狗", answer: "A2", choices: ["A2", "B1", "C2"], level: "L5" },
     { grid: smallGrid, target: "葡萄", answer: "C3", choices: ["A3", "B3", "C3"], level: "L5" },
     { grid: bigGrid, target: "足球", answer: "A3", choices: ["A3", "B3", "C3"], level: "L6" },
     { grid: bigGrid, target: "蛋糕", answer: "D3", choices: ["C3", "D3", "D4"], level: "L6" },
-  ].map((item) => ({
-    level: item.level as AbilityLevel,
-    prompt: `${item.target}住在哪个地址？`,
-    instruction: "先找到物品，再读左边字母和上面数字。",
-    sceneImage,
-    grid: item.grid,
-    choices: choiceSet(item.choices),
-    answer: item.answer,
-    success: `${item.target}住在 ${item.answer}。`,
-    retry: "找到物品以后，先看这一行的字母，再看这一列的数字。",
-    parentPrompt: "问她：这个地址为什么先说字母，再说数字？",
-    abilityTags: ["位置表达", "二维定位"],
-  }));
+  ].map((item) => {
+    const row = item.answer[0];
+    const column = item.answer.slice(1);
+    return {
+      level: item.level as AbilityLevel,
+      prompt: `${item.target}住在哪个地址？`,
+      instruction: "先找到物品，再读左边字母和上面数字。",
+      grid: item.grid,
+      choices: choiceSet(item.choices),
+      answer: item.answer,
+      success: `${item.target}在 ${row} 行 ${column} 列，所以地址是 ${item.answer}。`,
+      retry: `先在图里找到${item.target}，再读这一行的字母和这一列的数字。`,
+      parentPrompt: `请她指着${item.target}，说它在 ${row} 行、${column} 列，所以地址是 ${item.answer}。`,
+      abilityTags: ["位置表达", "二维定位"],
+    };
+  });
 
   return repeatTo([...findObject, ...findAddress], 24);
 }
@@ -2611,6 +2658,9 @@ function makeMatrixPuzzleRounds(): RoundInput[] {
       choices: ["🟣🔴", "🔴🔵", "🟡🟢"],
       answer: "🟣🔴",
       rule: "每一行的最后一格，是前两格合在一起。",
+      success: "第一行是 🔴 和 🔵，合起来变成 🔴🔵；第三行是 🟣 和 🔴，所以空格补 🟣🔴。",
+      retry: "先读第一行这个完整行：前两个合成最后一个；再看第三行缺的空格。",
+      parentPrompt: "请她说第一行怎么合起来，再说第三行 🟣 和 🔴 用同一个规则为什么补 🟣🔴。",
       level: "L5",
     },
     {
@@ -2618,6 +2668,9 @@ function makeMatrixPuzzleRounds(): RoundInput[] {
       choices: ["🔴", "🔵", "🟡"],
       answer: "🔴",
       rule: "每一行都是第一个、第二个、再回到第一个。",
+      success: "第一行是 🍎、🍊、🍎，第一个又回来；第三行是 🔴、🔵，所以空格补 🔴。",
+      retry: "先读第一行这个完整行：第一、第二、再回到第一；再看第三行缺的空格。",
+      parentPrompt: "请她说第一行怎么回到第一个，再说第三行用同一个规则为什么补 🔴。",
       level: "L5",
     },
     {
@@ -2625,6 +2678,9 @@ function makeMatrixPuzzleRounds(): RoundInput[] {
       choices: ["大方块", "小方块", "小星"],
       answer: "大方块",
       rule: "每一行都是大、小、大。",
+      success: "第一行是 大圆、小圆、大圆，大的又回来；第三行是 大方块、小方块，所以空格补 大方块。",
+      retry: "先读第一行这个完整行：大、小、再回到大；再看第三行缺的空格。",
+      parentPrompt: "请她说第一行怎么回到大的，再说第三行用同一个规则为什么补 大方块。",
       level: "L5",
     },
     {
@@ -2632,6 +2688,9 @@ function makeMatrixPuzzleRounds(): RoundInput[] {
       choices: ["🟡", "🟢", "🔵"],
       answer: "🟡",
       rule: "每一行都轮流换位置，红黄绿都要出现一次。",
+      success: "第一行有 🔴、🟡、🟢 三个都出现；第三行已经有 🟢 和 🔴，所以空格补 🟡。",
+      retry: "先看第一行这个完整行有哪些颜色，再看第三行缺的空格少了哪一个。",
+      parentPrompt: "请她说第一行有哪些，再说第三行用同一个规则为什么补 🟡。",
       level: "L6",
     },
     {
@@ -2639,6 +2698,9 @@ function makeMatrixPuzzleRounds(): RoundInput[] {
       choices: ["🍓🍓🍓", "🍓🍓", "🍊🍊🍊"],
       answer: "🍓🍓🍓",
       rule: "中间数字是几，右边就有几个一样的东西。",
+      success: "第一行是 🍎、1、🍎，数字 1 就放 1 个；第三行是 🍓、3，所以空格补 🍓🍓🍓。",
+      retry: "先读第一行这个完整行：数字是几就有几个；再看第三行缺的空格。",
+      parentPrompt: "请她说第一行数字 1 怎么变成 1 个苹果，再说第三行用同一个规则为什么补 🍓🍓🍓。",
       level: "L6",
     },
     {
@@ -2646,27 +2708,29 @@ function makeMatrixPuzzleRounds(): RoundInput[] {
       choices: ["小狗家", "小河小狗", "天空家"],
       answer: "小狗家",
       rule: "每一行把前两个线索连成一个小故事。",
+      success: "第一行是 小鸟 和 天空，合成 小鸟天空；第三行是 小狗 和 家，所以空格补 小狗家。",
+      retry: "先读第一行这个完整行：前两个词连成最后一个；再看第三行缺的空格。",
+      parentPrompt: "请她说第一行怎么连成小故事，再说第三行 小狗 和 家 用同一个规则为什么补 小狗家。",
       level: "L6",
     },
   ] as const;
 
   return repeatTo(cases.map((item) => ({
     level: item.level,
-    prompt: "待补位置这一格应该放什么？",
-    instruction: "先横着看一行，再竖着检查一下。",
+    prompt: "空格里应该放什么？",
+    instruction: "先读完整的第一行，再用同样规则补第三行。",
     sceneImage,
     matrix: { cells: item.cells.map((row) => [...row]) },
     choices: choiceSet(item.choices),
     answer: item.answer,
-    success: item.rule,
-    retry: "先看每一行前两格和最后一格有什么关系。",
-    parentPrompt: "请她说：这一行是怎么变出来的？",
+    success: item.success,
+    retry: item.retry,
+    parentPrompt: item.parentPrompt,
     abilityTags: ["二维规律", item.rule.includes("合") || item.rule.includes("连") ? "图形组合" : "多特征观察"],
   })), 18);
 }
 
 function makePositionMapRounds(): RoundInput[] {
-  const sceneImage = imageGallery.scenes.positionPlayroom;
   const horizontalGrid = {
     columns: ["左", "中", "右"],
     rows: ["位置"],
@@ -2692,104 +2756,96 @@ function makePositionMapRounds(): RoundInput[] {
       level: "L4",
       prompt: "谁在小猫的左边？",
       instruction: "先找到小猫，再看左边。",
-      sceneImage,
       grid: horizontalGrid,
       choices: choiceSet(["小狗", "小兔", "小猫"]),
       answer: "小狗",
-      success: "小狗在小猫的左边。",
-      retry: "先用手指点小猫，再往左边看。",
-      parentPrompt: "问她：如果从小狗看，小猫在它的哪边？",
+      success: "先找到小猫，往左边一格是小狗。",
+      retry: "先指小猫，再往左边走一格，看到小狗。",
+      parentPrompt: "请她指着小猫，往左边一格找到小狗，说为什么。",
       abilityTags: ["左右方位", "相对位置"],
     },
     {
       level: "L4",
       prompt: "谁在小猫的右边？",
       instruction: "先找到小猫，再看右边。",
-      sceneImage,
       grid: horizontalGrid,
       choices: choiceSet(["小狗", "小兔", "小猫"]),
       answer: "小兔",
-      success: "小兔在小猫的右边。",
-      retry: "右边是小猫旁边的另一边。",
-      parentPrompt: "问她：左边和右边是不是会跟着看的方向变？",
+      success: "先找到小猫，往右边一格是小兔。",
+      retry: "先指小猫，再往右边走一格，看到小兔。",
+      parentPrompt: "请她指着小猫，往右边一格找到小兔，说为什么。",
       abilityTags: ["左右方位", "相对位置"],
     },
     {
       level: "L4",
       prompt: "谁在书包的上面？",
       instruction: "先找到书包，再往上看。",
-      sceneImage,
       grid: verticalGrid,
       choices: choiceSet(["小鸟", "小鱼", "书包"]),
       answer: "小鸟",
-      success: "小鸟在书包的上面。",
-      retry: "找到书包以后，往上一格看。",
-      parentPrompt: "请她用手指从中间往上移动。",
+      success: "先找到书包，往上面一格是小鸟。",
+      retry: "先指书包，再往上面走一格，看到小鸟。",
+      parentPrompt: "请她指着书包，往上面一格找到小鸟，说为什么。",
       abilityTags: ["上下方位"],
     },
     {
       level: "L4",
       prompt: "谁在书包的下面？",
       instruction: "先找到书包，再往下看。",
-      sceneImage,
       grid: verticalGrid,
       choices: choiceSet(["小鸟", "小鱼", "书包"]),
       answer: "小鱼",
-      success: "小鱼在书包的下面。",
-      retry: "下面是在书包往下的那一格。",
-      parentPrompt: "问她：小鸟和小鱼分别在书包的哪边？",
+      success: "先找到书包，往下面一格是小鱼。",
+      retry: "先指书包，再往下面走一格，看到小鱼。",
+      parentPrompt: "请她指着书包，往下面一格找到小鱼，说为什么。",
       abilityTags: ["上下方位"],
     },
     {
       level: "L5",
       prompt: "盒子的左边是什么？",
       instruction: "先找到盒子，再看左边一格。",
-      sceneImage,
       grid: roomGrid,
       choices: choiceSet(["小狗", "小猫", "书包"]),
       answer: "小狗",
-      success: "盒子的左边是小狗。",
-      retry: "盒子在中间，左边那格是小狗。",
-      parentPrompt: "问她：如果看盒子的右边，会是谁？",
+      success: "先找到盒子，往左边一格是小狗。",
+      retry: "先指盒子，再往左边走一格，看到小狗。",
+      parentPrompt: "请她指着盒子，往左边一格找到小狗，说为什么。",
       abilityTags: ["二维定位", "左右方位"],
     },
     {
       level: "L5",
       prompt: "盒子的右边是什么？",
       instruction: "先找到盒子，再看右边一格。",
-      sceneImage,
       grid: roomGrid,
       choices: choiceSet(["小狗", "小猫", "书包"]),
       answer: "小猫",
-      success: "盒子的右边是小猫。",
-      retry: "从盒子出发，往右边看。",
-      parentPrompt: "问她：小猫在盒子的哪边？盒子在小猫的哪边？",
+      success: "先找到盒子，往右边一格是小猫。",
+      retry: "先指盒子，再往右边走一格，看到小猫。",
+      parentPrompt: "请她指着盒子，往右边一格找到小猫，说为什么。",
       abilityTags: ["二维定位", "相对位置"],
     },
     {
       level: "L5",
       prompt: "盒子的上面是什么？",
       instruction: "先找到盒子，再看上面一格。",
-      sceneImage,
       grid: roomGrid,
       choices: choiceSet(["风筝", "足球", "小鱼"]),
       answer: "风筝",
-      success: "风筝在盒子的上面。",
-      retry: "盒子上方那格是风筝。",
-      parentPrompt: "请她说出盒子的上、下、左、右各是什么。",
+      success: "先找到盒子，往上面一格是风筝。",
+      retry: "先指盒子，再往上面走一格，看到风筝。",
+      parentPrompt: "请她指着盒子，往上面一格找到风筝，说为什么。",
       abilityTags: ["二维定位", "上下方位"],
     },
     {
       level: "L5",
       prompt: "盒子的下面是什么？",
       instruction: "先找到盒子，再看下面一格。",
-      sceneImage,
       grid: roomGrid,
       choices: choiceSet(["风筝", "书包", "飞机"]),
       answer: "书包",
-      success: "书包在盒子的下面。",
-      retry: "从盒子往下走一格。",
-      parentPrompt: "问她：风筝和书包谁在上，谁在下？",
+      success: "先找到盒子，往下面一格是书包。",
+      retry: "先指盒子，再往下面走一格，看到书包。",
+      parentPrompt: "请她指着盒子，往下面一格找到书包，说为什么。",
       abilityTags: ["二维定位", "上下方位"],
     },
   ];
@@ -2799,32 +2855,30 @@ function makePositionMapRounds(): RoundInput[] {
       level: "L5",
       prompt: "谁在盒子里面？",
       instruction: "看清楚里面和外面。",
-      sceneImage,
       visualGroups: [
         { label: "盒子里面", items: ["小鱼"] },
         { label: "盒子外面", items: ["小猫", "小狗"] },
       ],
       choices: choiceSet(["小鱼", "小猫", "小狗"]),
       answer: "小鱼",
-      success: "小鱼在盒子里面。",
-      retry: "里面是被盒子装住的地方。",
-      parentPrompt: "问她：外面有谁？里面有谁？",
+      success: "小鱼在盒子里面；小猫和小狗在盒子外面。",
+      retry: "先看盒子里面，里面只有小鱼；小猫和小狗在外面。",
+      parentPrompt: "请她指着盒子里面的小鱼，再指外面的小猫和小狗。",
       abilityTags: ["里外方位"],
     },
     {
       level: "L5",
       prompt: "谁在盒子外面？",
       instruction: "这次找没有被装进去的。",
-      sceneImage,
       visualGroups: [
         { label: "盒子里面", items: ["足球", "书包"] },
         { label: "盒子外面", items: ["小兔"] },
       ],
       choices: choiceSet(["足球", "小兔", "书包"]),
       answer: "小兔",
-      success: "小兔在盒子外面。",
-      retry: "外面是没有被盒子装住的地方。",
-      parentPrompt: "问她：足球在里面还是外面？小兔在里面还是外面？",
+      success: "小兔在盒子外面；足球和书包在盒子里面。",
+      retry: "先看盒子外面，外面是小兔；足球和书包在里面。",
+      parentPrompt: "请她指着盒子外面的小兔，再指里面的足球和书包。",
       abilityTags: ["里外方位", "抗干扰"],
     },
   ];
@@ -2834,26 +2888,24 @@ function makePositionMapRounds(): RoundInput[] {
       level: "L6",
       prompt: "小狗看盒子，盒子在小狗的哪边？",
       instruction: "先找到小狗，再从小狗往盒子看。",
-      sceneImage,
       grid: roomGrid,
       choices: choiceSet(["左边", "右边", "上面"]),
       answer: "右边",
-      success: "从小狗看过去，盒子在右边。",
-      retry: "不要从盒子开始看，这次从小狗开始。",
-      parentPrompt: "问她：同一张图，从不同人出发，答案会不会变？",
+      success: "从小狗出发看盒子，盒子在小狗的右边。",
+      retry: "先指小狗，再从小狗看盒子，答案是右边；不要从盒子开始。",
+      parentPrompt: "请她从小狗指到盒子，说盒子在小狗的右边；再反过来说小狗在盒子的左边。",
       abilityTags: ["相对位置", "认知灵活性"],
     },
     {
       level: "L6",
       prompt: "小猫看盒子，盒子在小猫的哪边？",
       instruction: "先找到小猫，再从小猫往盒子看。",
-      sceneImage,
       grid: roomGrid,
       choices: choiceSet(["左边", "右边", "下面"]),
       answer: "左边",
-      success: "从小猫看过去，盒子在左边。",
-      retry: "这次从小猫的位置出发。",
-      parentPrompt: "请她比较：盒子看小猫，小猫看盒子，方向一样吗？",
+      success: "从小猫出发看盒子，盒子在小猫的左边。",
+      retry: "先指小猫，再从小猫看盒子，答案是左边；不要从盒子开始。",
+      parentPrompt: "请她从小猫指到盒子，说盒子在小猫的左边；再反过来说小猫在盒子的右边。",
       abilityTags: ["相对位置", "认知灵活性"],
     },
   ];
@@ -2862,59 +2914,79 @@ function makePositionMapRounds(): RoundInput[] {
 }
 
 function makeMemoryCameraRounds(): RoundInput[] {
+  const memoryLabel = (item: string) => ({
+    "🍎": "苹果",
+    "🍊": "橘子",
+    "🍓": "草莓",
+    "🐱": "小猫",
+    "🐶": "小狗",
+    "🐰": "小兔",
+  }[item] ?? item);
+  const memoryListText = (items: string[]) => items.map(memoryLabel).join("、");
+
   const appearedCases = [
     { items: ["🍎", "🍊", "🍓"], answer: "苹果", choices: ["苹果", "葡萄", "蛋糕"] },
     { items: ["小汽车", "公交车", "飞机"], answer: "公交车", choices: ["公交车", "自行车", "风筝"] },
     { items: ["铅笔", "书包", "尺子"], answer: "尺子", choices: ["尺子", "书本", "三角尺"] },
     { items: ["🐱", "🐶", "🐰"], answer: "小兔", choices: ["小兔", "小熊", "小鸟"] },
-  ].map((item, index) => ({
-    level: index < 2 ? "L4" as AbilityLevel : "L5" as AbilityLevel,
-    prompt: "刚才相机里出现过谁？",
-    instruction: "先看图片，遮住以后再选。",
-    memory: { items: item.items },
-    choices: choiceSet(item.choices),
-    answer: item.answer,
-    success: `${item.answer}刚才出现过。`,
-    retry: "先在心里念一遍，再遮住。",
-    parentPrompt: "请她说说自己刚才用什么办法记住的。",
-    abilityTags: ["图像记忆"],
-  }));
+  ].map((item, index) => {
+    const remembered = memoryListText(item.items);
+    return {
+      level: index < 2 ? "L4" as AbilityLevel : "L5" as AbilityLevel,
+      prompt: "刚才相机里出现过谁？",
+      instruction: "先看图片，遮住以后再选。",
+      memory: { items: item.items },
+      choices: choiceSet(item.choices),
+      answer: item.answer,
+      success: `相机里有${remembered}，所以${item.answer}刚才出现过。`,
+      retry: `先回想相机里的三张：${remembered}，再选出现过的${item.answer}。`,
+      parentPrompt: `请她先说刚才看到${remembered}，再说为什么选${item.answer}。`,
+      abilityTags: ["图像记忆"],
+    };
+  });
 
   const absentCases = [
     { items: ["小鸟", "小鱼", "小狗"], answer: "小猫", choices: ["小鸟", "小狗", "小猫"] },
     { items: ["葡萄", "蛋糕", "饼干"], answer: "糖果", choices: ["蛋糕", "糖果", "葡萄"] },
     { items: ["足球", "风筝", "飞机"], answer: "小汽车", choices: ["飞机", "风筝", "小汽车"] },
     { items: ["杯子", "书包", "铅笔"], answer: "书本", choices: ["杯子", "书本", "书包"] },
-  ].map((item) => ({
-    level: "L5" as AbilityLevel,
-    prompt: "哪一个刚才没有出现？",
-    instruction: "遮住以后，找没看见过的。",
-    memory: { items: item.items },
-    choices: choiceSet(item.choices),
-    answer: item.answer,
-    success: `${item.answer}刚才没有出现。`,
-    retry: "先回想相机里三个东西，再找多出来的选项。",
-    parentPrompt: "问她：你排除了哪两个？为什么？",
-    abilityTags: ["抗干扰", "排除法"],
-  }));
+  ].map((item) => {
+    const remembered = memoryListText(item.items);
+    return {
+      level: "L5" as AbilityLevel,
+      prompt: "哪一个刚才没有出现？",
+      instruction: "遮住以后，找没看见过的。",
+      memory: { items: item.items },
+      choices: choiceSet(item.choices),
+      answer: item.answer,
+      success: `刚才相机里有${remembered}，${item.answer}没有出现。`,
+      retry: `先排除刚才看到的${remembered}，多出来的是${item.answer}。`,
+      parentPrompt: `请她复述刚才看到${remembered}，再说为什么排除后剩下${item.answer}。`,
+      abilityTags: ["抗干扰", "排除法"],
+    };
+  });
 
   const orderCases = [
     { items: ["苹果", "小狗", "书包"], prompt: "刚才第一个是什么？", answer: "苹果", choices: ["苹果", "小狗", "书包"] },
     { items: ["小鱼", "足球", "飞机"], prompt: "刚才第二个是什么？", answer: "足球", choices: ["小鱼", "足球", "飞机"] },
     { items: ["铅笔", "葡萄", "公交车"], prompt: "刚才最后一个是什么？", answer: "公交车", choices: ["铅笔", "葡萄", "公交车"] },
     { items: ["小猫", "风筝", "蛋糕", "小鸟"], prompt: "刚才第三个是什么？", answer: "蛋糕", choices: ["风筝", "蛋糕", "小鸟"] },
-  ].map((item, index) => ({
-    level: index < 3 ? "L5" as AbilityLevel : "L6" as AbilityLevel,
-    prompt: item.prompt,
-    instruction: "不只记有什么，还要记顺序。",
-    memory: { items: item.items },
-    choices: choiceSet(item.choices),
-    answer: item.answer,
-    success: `${item.answer}在这个位置上。`,
-    retry: "可以从左到右在心里排一排。",
-    parentPrompt: "请她用“第一、第二、第三”复述一遍。",
-    abilityTags: ["顺序记忆", "工作记忆"],
-  }));
+  ].map((item, index) => {
+    const remembered = memoryListText(item.items);
+    const ordinal = item.prompt.match(/^刚才(.+?)是什么/)?.[1] ?? "这个位置";
+    return {
+      level: index < 3 ? "L5" as AbilityLevel : "L6" as AbilityLevel,
+      prompt: item.prompt,
+      instruction: "不只记有什么，还要记顺序。",
+      memory: { items: item.items },
+      choices: choiceSet(item.choices),
+      answer: item.answer,
+      success: `从左到右是${remembered}，${ordinal}是${item.answer}。`,
+      retry: `先按顺序从左到右念：${remembered}；${ordinal}就是${item.answer}。`,
+      parentPrompt: `请她按顺序复述${remembered}，再说${ordinal}为什么是${item.answer}。`,
+      abilityTags: ["顺序记忆", "工作记忆"],
+    };
+  });
 
   return repeatTo([...appearedCases, ...absentCases, ...orderCases], 18);
 }
@@ -2932,23 +3004,47 @@ function makeVisualMatchRounds(): RoundInput[] {
   const exactRounds: RoundInput[] = exactCases.map((item, index) => ({
     level: index < 4 ? "L4" : "L5",
     prompt: "哪一张和上面完全一样？",
-    instruction: "颜色、形状和顺序都要一样。",
+    instruction: "从左到右比第一格、第二格，每个都一样才选。",
     visualGroups: [{ label: "样板卡", items: [item.target] }],
     choices: choiceSet(item.choices),
     answer: item.target,
-    success: `这一张完全一样。${item.clue}`,
-    retry: "只差一点点也不算一样，要从左到右慢慢比。",
-    parentPrompt: "问她：你发现哪张只是顺序不一样？",
+    success: `这张从左到右都对，${item.clue}和样板卡完全一样。`,
+    retry: "从左到右一个一个比，每个都一样才选；只差一点点也不算一样。",
+    parentPrompt: "问她：哪张很像但顺序或第二个不一样？请从左到右说给我听。",
     abilityTags: ["细节观察", "顺序比较"],
   }));
 
   const oddCases = [
-    { items: ["🔴🟦", "🔴🟦", "🟦🔴"], answer: "right", reason: "右边这张顺序反了。" },
-    { items: ["🟡🟢", "🟡🔵", "🟡🟢"], answer: "middle", reason: "中间这张第二个颜色不一样。" },
-    { items: ["🍎🍊", "🍎🍊", "🍊🍎"], answer: "right", reason: "右边这张水果顺序不一样。" },
-    { items: ["🐱🐶", "🐱🐰", "🐱🐶"], answer: "middle", reason: "中间这张第二个小动物不一样。" },
-    { items: ["🔴🟦⭐", "🔴🟦⭐", "🔴⭐🟦"], answer: "right", reason: "右边这张后两块位置换了。" },
-    { items: ["🍓🍪🍬", "🍓🍬🍪", "🍓🍪🍬"], answer: "middle", reason: "中间这张饼干和糖果的位置换了。" },
+    {
+      items: ["🔴🟦", "🔴🟦", "🟦🔴"],
+      answer: "right",
+      reason: "左边和中间这两张一样，右边这张顺序反了。",
+    },
+    {
+      items: ["🟡🟢", "🟡🔵", "🟡🟢"],
+      answer: "middle",
+      reason: "左边和右边这两张一样，中间这张第二个颜色不一样。",
+    },
+    {
+      items: ["🍎🍊", "🍎🍊", "🍊🍎"],
+      answer: "right",
+      reason: "左边和中间这两张一样，右边这张水果顺序不一样。",
+    },
+    {
+      items: ["🐱🐶", "🐱🐰", "🐱🐶"],
+      answer: "middle",
+      reason: "左边和右边这两张一样，中间这张第二个小动物不一样。",
+    },
+    {
+      items: ["🔴🟦⭐", "🔴🟦⭐", "🔴⭐🟦"],
+      answer: "right",
+      reason: "左边和中间这两张一样，右边这张后两块位置换了。",
+    },
+    {
+      items: ["🍓🍪🍬", "🍓🍬🍪", "🍓🍪🍬"],
+      answer: "middle",
+      reason: "左边和右边这两张一样，中间这张饼干和糖果的位置换了。",
+    },
   ].map((item, index) => ({
     level: index < 4 ? "L5" as AbilityLevel : "L6" as AbilityLevel,
     prompt: "哪一张和另外两张不一样？",
@@ -2961,7 +3057,7 @@ function makeVisualMatchRounds(): RoundInput[] {
     ],
     answer: item.answer,
     success: item.reason,
-    retry: "找到两张一样的，剩下的就是不一样的。",
+    retry: "先找两张一样的一对，剩下那张就是不一样的。",
     parentPrompt: "问她：哪两张是一对？剩下那张哪里不同？",
     abilityTags: ["细节观察", "排除法"],
   }));
@@ -2971,16 +3067,52 @@ function makeVisualMatchRounds(): RoundInput[] {
 
 function makeDifferenceDetectiveRounds(): RoundInput[] {
   const changedCases = [
-    { left: ["小猫", "苹果", "书包"], right: ["小猫", "橘子", "书包"], answer: "橘子", choices: ["橘子", "小猫", "书包"], success: "左图中间是苹果，右图中间变成橘子。" },
-    { left: ["小狗", "足球", "飞机"], right: ["小狗", "风筝", "飞机"], answer: "风筝", choices: ["风筝", "足球", "飞机"], success: "右图把足球换成了风筝。" },
-    { left: ["铅笔", "书包", "尺子"], right: ["铅笔", "书包", "书本"], answer: "书本", choices: ["书本", "书包", "尺子"], success: "最后一个从尺子变成了书本。" },
-    { left: ["蛋糕", "草莓", "杯子"], right: ["蛋糕", "葡萄", "杯子"], answer: "葡萄", choices: ["葡萄", "草莓", "杯子"], success: "中间的草莓变成了葡萄。" },
-    { left: ["小鸟", "天空", "小鱼"], right: ["小鸟", "小河", "小鱼"], answer: "小河", choices: ["小河", "天空", "小鱼"], success: "中间从天空变成了小河。" },
-    { left: ["小汽车", "公交车", "自行车"], right: ["小汽车", "公交车", "飞机"], answer: "飞机", choices: ["飞机", "公交车", "自行车"], success: "最后一个从自行车变成了飞机。" },
+    {
+      left: ["小猫", "苹果", "书包"],
+      right: ["小猫", "橘子", "书包"],
+      answer: "橘子",
+      choices: ["橘子", "苹果", "书包"],
+      success: "第二个位置变了：左图是苹果，右图变成橘子。",
+    },
+    {
+      left: ["小狗", "足球", "飞机"],
+      right: ["小狗", "风筝", "飞机"],
+      answer: "风筝",
+      choices: ["风筝", "足球", "飞机"],
+      success: "第二个位置变了：左图是足球，右图变成风筝。",
+    },
+    {
+      left: ["铅笔", "书包", "尺子"],
+      right: ["铅笔", "书包", "书本"],
+      answer: "书本",
+      choices: ["书本", "尺子", "书包"],
+      success: "最后一个位置变了：左图是尺子，右图变成书本。",
+    },
+    {
+      left: ["蛋糕", "草莓", "杯子"],
+      right: ["蛋糕", "葡萄", "杯子"],
+      answer: "葡萄",
+      choices: ["葡萄", "草莓", "杯子"],
+      success: "第二个位置变了：左图是草莓，右图变成葡萄。",
+    },
+    {
+      left: ["小鸟", "天空", "小鱼"],
+      right: ["小鸟", "小河", "小鱼"],
+      answer: "小河",
+      choices: ["小河", "天空", "小鱼"],
+      success: "第二个位置变了：左图是天空，右图变成小河。",
+    },
+    {
+      left: ["小汽车", "公交车", "自行车"],
+      right: ["小汽车", "公交车", "飞机"],
+      answer: "飞机",
+      choices: ["飞机", "自行车", "公交车"],
+      success: "最后一个位置变了：左图是自行车，右图变成飞机。",
+    },
   ].map((item, index) => ({
     level: index < 4 ? "L4" as AbilityLevel : "L5" as AbilityLevel,
     prompt: "右图里哪一个变了？",
-    instruction: "左图和右图从左到右慢慢比。",
+    instruction: "左图和右图从左到右慢慢比，找右图变成了谁。",
     visualGroups: [
       { label: "左图", items: item.left },
       { label: "右图", items: item.right },
@@ -2988,15 +3120,33 @@ function makeDifferenceDetectiveRounds(): RoundInput[] {
     choices: choiceSet(item.choices),
     answer: item.answer,
     success: item.success,
-    retry: "不要跳着看，先比第一个，再比第二个。",
-    parentPrompt: "请她说完整句：左图是……右图变成了……",
+    retry: "不要跳着看，从左到右一个一个比，先比第一个，再比第二个。",
+    parentPrompt: "请她说完整句：左图第几个是哪个，右图第几个变成了哪个？",
     abilityTags: ["找不同", "细节比较"],
   }));
 
   const extraCases = [
-    { left: ["小狗", "足球"], right: ["小狗", "足球", "风筝"], answer: "风筝", choices: ["风筝", "足球", "小狗"], success: "右图多了风筝。" },
-    { left: ["苹果", "橘子"], right: ["苹果", "橘子", "草莓"], answer: "草莓", choices: ["草莓", "苹果", "橘子"], success: "右图多了草莓。" },
-    { left: ["铅笔", "书包"], right: ["铅笔", "书包", "尺子"], answer: "尺子", choices: ["尺子", "铅笔", "书包"], success: "右图多了尺子。" },
+    {
+      left: ["小狗", "足球"],
+      right: ["小狗", "足球", "风筝"],
+      answer: "风筝",
+      choices: ["风筝", "足球", "小狗"],
+      success: "小狗和足球在右图里都找到了，右图还多了风筝。",
+    },
+    {
+      left: ["苹果", "橘子"],
+      right: ["苹果", "橘子", "草莓"],
+      answer: "草莓",
+      choices: ["草莓", "苹果", "橘子"],
+      success: "苹果和橘子在右图里都找到了，右图还多了草莓。",
+    },
+    {
+      left: ["铅笔", "书包"],
+      right: ["铅笔", "书包", "尺子"],
+      answer: "尺子",
+      choices: ["尺子", "铅笔", "书包"],
+      success: "铅笔和书包在右图里都找到了，右图还多了尺子。",
+    },
   ].map((item) => ({
     level: "L5" as AbilityLevel,
     prompt: "右图比左图多了什么？",
@@ -3008,15 +3158,33 @@ function makeDifferenceDetectiveRounds(): RoundInput[] {
     choices: choiceSet(item.choices),
     answer: item.answer,
     success: item.success,
-    retry: "把左图里的东西在右图里一个个找到。",
-    parentPrompt: "问她：左图里的两个都找到了吗？右图还剩什么？",
+    retry: "把左图里的东西在右图里一个个找到，剩下那一个就是多出来的。",
+    parentPrompt: "问她：左图里的两个在右图里都找到了吗？右图还多了什么？",
     abilityTags: ["找不同", "排除法"],
   }));
 
   const missingCases = [
-    { left: ["蛋糕", "草莓", "杯子"], right: ["蛋糕", "杯子"], answer: "草莓", choices: ["草莓", "蛋糕", "杯子"], success: "右图少了草莓。" },
-    { left: ["小猫", "小狗", "小兔"], right: ["小猫", "小兔"], answer: "小狗", choices: ["小狗", "小猫", "小兔"], success: "右图少了小狗。" },
-    { left: ["书本", "铅笔", "尺子"], right: ["书本", "尺子"], answer: "铅笔", choices: ["铅笔", "书本", "尺子"], success: "右图少了铅笔。" },
+    {
+      left: ["蛋糕", "草莓", "杯子"],
+      right: ["蛋糕", "杯子"],
+      answer: "草莓",
+      choices: ["草莓", "蛋糕", "杯子"],
+      success: "蛋糕和杯子在右图里都找到了，右图少了草莓。",
+    },
+    {
+      left: ["小猫", "小狗", "小兔"],
+      right: ["小猫", "小兔"],
+      answer: "小狗",
+      choices: ["小狗", "小猫", "小兔"],
+      success: "小猫和小兔在右图里都找到了，右图少了小狗。",
+    },
+    {
+      left: ["书本", "铅笔", "尺子"],
+      right: ["书本", "尺子"],
+      answer: "铅笔",
+      choices: ["铅笔", "书本", "尺子"],
+      success: "书本和尺子在右图里都找到了，右图少了铅笔。",
+    },
   ].map((item) => ({
     level: "L5" as AbilityLevel,
     prompt: "右图比左图少了什么？",
@@ -3028,8 +3196,8 @@ function makeDifferenceDetectiveRounds(): RoundInput[] {
     choices: choiceSet(item.choices),
     answer: item.answer,
     success: item.success,
-    retry: "从左图第一个开始，在右图里找一找。",
-    parentPrompt: "请她边指边说：这个有，这个有，哪一个没有？",
+    retry: "从左图第一个开始，每一个都到右图里找一找。",
+    parentPrompt: "请她边指边说：哪些在右图里找到了？哪一个没有？",
     abilityTags: ["找不同", "有序观察"],
   }));
 
@@ -3342,15 +3510,15 @@ function makeMirrorFoldRounds(): RoundInput[] {
 
 function makeBlockHeightMapRounds(): RoundInput[] {
   const cases = [
-    { cells: [["1", "1"], ["1", "0"]], answer: 3, explain: "1 加 1 加 1，再加 0，一共 3 块。" },
-    { cells: [["2", "1"], ["1", "0"]], answer: 4, explain: "这一张是 2、1、1、0，合起来 4 块。" },
-    { cells: [["2", "2"], ["1", "1"]], answer: 6, explain: "上面两列各 2 块，下面两列各 1 块，一共 6 块。" },
-    { cells: [["3", "1"], ["0", "2"]], answer: 6, explain: "3 块、1 块、0 块、2 块，合起来 6 块。" },
+    { cells: [["1", "1"], ["1", "0"]], answer: 3, explain: "第一行 2 块，第二行 1 块，一共 3 块。" },
+    { cells: [["2", "1"], ["1", "0"]], answer: 4, explain: "第一行 3 块，第二行 1 块，一共 4 块。" },
+    { cells: [["2", "2"], ["1", "1"]], answer: 6, explain: "第一行 4 块，第二行 2 块，一共 6 块。" },
+    { cells: [["3", "1"], ["0", "2"]], answer: 6, explain: "第一行 4 块，第二行 2 块，一共 6 块。" },
     { cells: [["1", "2", "1"], ["0", "1", "0"]], answer: 5, explain: "第一行 4 块，第二行 1 块，一共 5 块。" },
-    { cells: [["2", "1", "2"], ["1", "0", "1"]], answer: 7, explain: "2、1、2、1、0、1 合起来是 7 块。" },
-    { cells: [["3", "0", "1"], ["1", "2", "0"]], answer: 7, explain: "3、0、1、1、2、0 合起来是 7 块。" },
+    { cells: [["2", "1", "2"], ["1", "0", "1"]], answer: 7, explain: "第一行 5 块，第二行 2 块，一共 7 块。" },
+    { cells: [["3", "0", "1"], ["1", "2", "0"]], answer: 7, explain: "第一行 4 块，第二行 3 块，一共 7 块。" },
     { cells: [["1", "2", "1"], ["2", "0", "2"], ["1", "0", "1"]], answer: 10, explain: "按行数：第一行 4 块，第二行 4 块，第三行 2 块，一共 10 块。" },
-    { cells: [["2", "2", "0"], ["1", "3", "1"], ["0", "1", "0"]], answer: 10, explain: "按行数：4 块、5 块、1 块，一共 10 块。" },
+    { cells: [["2", "2", "0"], ["1", "3", "1"], ["0", "1", "0"]], answer: 10, explain: "按行数：第一行 4 块，第二行 5 块，第三行 1 块，一共 10 块。" },
   ].map((item, index) => {
     const rows = ["A", "B", "C"].slice(0, item.cells.length);
     const columns = ["1", "2", "3"].slice(0, item.cells[0].length);
@@ -3373,19 +3541,19 @@ function makeBlockHeightMapRounds(): RoundInput[] {
       left: [["2", "1"], ["1", "0"]],
       right: [["1", "1"], ["1", "1"]],
       answer: "一样多",
-      success: "左边是 4 块，右边也是 4 块，所以一样多。",
+      success: "左图4块，右图4块，所以一样多。",
     },
     {
       left: [["3", "1"], ["0", "1"]],
       right: [["2", "2"], ["1", "1"]],
-      answer: "右边",
-      success: "左边 5 块，右边 6 块，右边更多。",
+      answer: "右图更多",
+      success: "左图5块，右图6块，所以右图更多。",
     },
     {
       left: [["2", "2"], ["2", "0"]],
       right: [["3", "1"], ["0", "1"]],
-      answer: "左边",
-      success: "左边 6 块，右边 5 块，左边更多。",
+      answer: "左图更多",
+      success: "左图6块，右图5块，所以左图更多。",
     },
   ].map((item) => ({
     level: "L6" as AbilityLevel,
@@ -3395,11 +3563,11 @@ function makeBlockHeightMapRounds(): RoundInput[] {
       { label: "左图", items: item.left.flat() },
       { label: "右图", items: item.right.flat() },
     ],
-    choices: choiceSet(["左边", "右边", "一样多"]),
+    choices: choiceSet(["左图更多", "右图更多", "一样多"]),
     answer: item.answer,
     success: item.success,
-    retry: "先算左图有几块，再算右图有几块。",
-    parentPrompt: "问她：左边总数是多少？右边总数是多少？",
+    retry: "先算左图有几块，再算右图有几块，最后比较谁更多。",
+    parentPrompt: "问她：左图总数是多少？右图总数是多少？比较以后谁更多，还是一样多？",
     abilityTags: ["立体计数", "比较推理"],
   }));
 
@@ -3413,48 +3581,48 @@ function makeThreeViewBlockRounds(): RoundInput[] {
       topCount: 3,
       front: "2和1",
       left: "1和2",
-      frontExplain: "从前面看，第一列最高 2 层，第二列最高 1 层。",
-      leftExplain: "从左边看，第一排最高 1 层，第二排最高 2 层。",
+      frontExplain: "从前面看，第一列最高 2 层，第二列最高 1 层，所以选 2和1。",
+      leftExplain: "从左边看，第一排最高 1 层，第二排最高 2 层，所以选 1和2。",
     },
     {
       cells: [["2", "1"], ["0", "3"]],
       topCount: 3,
       front: "2和3",
       left: "2和3",
-      frontExplain: "从前面看，两列最高分别是 2 层和 3 层。",
-      leftExplain: "从左边看，两排最高分别是 2 层和 3 层。",
+      frontExplain: "从前面看，第一列最高 2 层，第二列最高 3 层，所以选 2和3。",
+      leftExplain: "从左边看，第一排最高 2 层，第二排最高 3 层，所以选 2和3。",
     },
     {
       cells: [["1", "2", "0"], ["0", "1", "1"]],
       topCount: 4,
       front: "1、2、1",
       left: "2和1",
-      frontExplain: "从前面看，三列最高是 1 层、2 层、1 层。",
-      leftExplain: "从左边看，第一排最高 2 层，第二排最高 1 层。",
+      frontExplain: "从前面看，第一列最高 1 层，第二列最高 2 层，第三列最高 1 层，所以选 1、2、1。",
+      leftExplain: "从左边看，第一排最高 2 层，第二排最高 1 层，所以选 2和1。",
     },
     {
       cells: [["3", "0", "1"], ["1", "2", "0"]],
       topCount: 4,
       front: "3、2、1",
       left: "3和2",
-      frontExplain: "从前面看，三列最高是 3 层、2 层、1 层。",
-      leftExplain: "从左边看，两排最高分别是 3 层和 2 层。",
+      frontExplain: "从前面看，第一列最高 3 层，第二列最高 2 层，第三列最高 1 层，所以选 3、2、1。",
+      leftExplain: "从左边看，第一排最高 3 层，第二排最高 2 层，所以选 3和2。",
     },
     {
       cells: [["1", "2", "1"], ["2", "0", "2"], ["1", "0", "1"]],
       topCount: 7,
       front: "2、2、2",
       left: "2、2、1",
-      frontExplain: "从前面看，三列最高都是 2 层。",
-      leftExplain: "从左边看，三排最高是 2 层、2 层、1 层。",
+      frontExplain: "从前面看，第一列、第二列、第三列最高都是 2 层，所以选 2、2、2。",
+      leftExplain: "从左边看，第一排最高 2 层，第二排最高 2 层，第三排最高 1 层，所以选 2、2、1。",
     },
     {
       cells: [["2", "0", "1"], ["0", "3", "1"], ["1", "1", "0"]],
       topCount: 6,
       front: "2、3、1",
       left: "2、3、1",
-      frontExplain: "从前面看，三列最高是 2 层、3 层、1 层。",
-      leftExplain: "从左边看，三排最高是 2 层、3 层、1 层。",
+      frontExplain: "从前面看，第一列最高 2 层，第二列最高 3 层，第三列最高 1 层，所以选 2、3、1。",
+      leftExplain: "从左边看，第一排最高 2 层，第二排最高 3 层，第三排最高 1 层，所以选 2、3、1。",
     },
   ];
 
@@ -3468,9 +3636,9 @@ function makeThreeViewBlockRounds(): RoundInput[] {
       grid: { columns, rows, cells: item.cells },
       choices: numberChoices(item.topCount, Math.max(1, item.topCount - 1), Math.min(9, item.topCount + 1)),
       answer: String(item.topCount),
-      success: `0 是空位，其他格子都有积木，所以从上面看有 ${item.topCount} 个位置。`,
-      retry: "只数不是 0 的格子，不要把层数加起来。",
-      parentPrompt: "请她把不是 0 的格子点出来，说这些地方从上面能看到。",
+      success: `从上面看，只看哪些位置有积木。0 是空位，${item.topCount} 个不是 0 的位置能看到积木。`,
+      retry: "0 是空位；只数不是 0 的位置，不要把层数加起来。",
+      parentPrompt: "请她先点出不是 0 的格子，再指一指 0 这些空位，说从上面哪些地方能看到积木。",
       abilityTags: ["俯视图", "视角转换"],
     };
   });
@@ -3486,8 +3654,8 @@ function makeThreeViewBlockRounds(): RoundInput[] {
       choices: threeViewChoices(item.front),
       answer: item.front,
       success: item.frontExplain,
-      retry: "不要把一列里的数字相加，只找这一列最大的数字。",
-      parentPrompt: "请她用手指竖着看一列，说这一列最高是几层。",
+      retry: "从前面看，一列一列找最高的数字，不要把这一列相加。",
+      parentPrompt: "请她从前面看，竖着指每一列，说哪一层最高、哪些矮一点会被挡住。",
       abilityTags: ["三视图", "最高层判断"],
     };
   });
@@ -3503,8 +3671,8 @@ function makeThreeViewBlockRounds(): RoundInput[] {
       choices: threeViewChoices(item.left),
       answer: item.left,
       success: item.leftExplain,
-      retry: "横着看一排，找这一排里最大的数字。",
-      parentPrompt: "请她横着读一排数字，再说最高是几层。",
+      retry: "从左边看，一排一排找最高的数字，不要把这一排相加。",
+      parentPrompt: "请她从左边看，横着指每一排，说这一排最高几层、哪些矮一点会被挡住。",
       abilityTags: ["三视图", "视角转换"],
     };
   });
@@ -3513,7 +3681,6 @@ function makeThreeViewBlockRounds(): RoundInput[] {
 }
 
 function makeRouteStepRounds(): RoundInput[] {
-  const sceneImage = imageGallery.scenes.treasureMapGrid;
   const routeGrid = {
     columns: ["1", "2", "3"],
     rows: ["A", "B", "C"],
@@ -3534,42 +3701,40 @@ function makeRouteStepRounds(): RoundInput[] {
   };
 
   const oneStep = [
-    { start: "小狗", move: "往右一步", answer: "苹果", choices: ["苹果", "足球", "小鸟"], success: "从小狗往右一步到苹果。" },
-    { start: "盒子", move: "往上一步", answer: "苹果", choices: ["苹果", "足球", "蛋糕"], success: "盒子上面是苹果。" },
-    { start: "盒子", move: "往下一步", answer: "蛋糕", choices: ["苹果", "蛋糕", "书包"], success: "盒子下面是蛋糕。" },
-    { start: "书包", move: "往左一步", answer: "盒子", choices: ["盒子", "小鸟", "终点"], success: "书包左边是盒子。" },
+    { start: "小狗", move: "往右一步", answer: "苹果", choices: ["苹果", "足球", "小鸟"] },
+    { start: "盒子", move: "往上一步", answer: "苹果", choices: ["苹果", "足球", "蛋糕"] },
+    { start: "盒子", move: "往下一步", answer: "蛋糕", choices: ["苹果", "蛋糕", "书包"] },
+    { start: "书包", move: "往左一步", answer: "盒子", choices: ["盒子", "小鸟", "终点"] },
   ].map((item) => ({
     level: "L4" as AbilityLevel,
     prompt: `从${item.start}出发，${item.move}到哪里？`,
     instruction: "先找到起点，再走一步。",
-    sceneImage,
     grid: routeGrid,
     choices: choiceSet(item.choices),
     answer: item.answer,
-    success: item.success,
-    retry: "先别跳格子，只走一步。",
-    parentPrompt: "请她用手指从起点移动一步。",
+    success: `从${item.start}出发，${item.move}到${item.answer}。`,
+    retry: `先找到${item.start}，再${item.move}，只走一格。`,
+    parentPrompt: `请她用手指点住${item.start}，${item.move}走一格，说到${item.answer}。`,
     abilityTags: ["方向执行", "一步路线"],
   }));
 
   const twoStep = [
-    { start: "起点", moves: "先往右一步，再往下一步", answer: "盒子", choices: ["小猫", "盒子", "足球"], success: "从起点先到小猫，再往下到盒子。" },
-    { start: "小猫", moves: "先往右一步，再往右一步", answer: "小鸟", choices: ["风筝", "小鸟", "飞机"], success: "从小猫往右到风筝，再往右到小鸟。" },
-    { start: "盒子", moves: "先往右一步，再往下一步", answer: "小狗", choices: ["书包", "小狗", "飞机"], success: "从盒子到书包，再往下到小狗。" },
-    { start: "书包", moves: "先往右一步，再往下一步", answer: "终点", choices: ["终点", "飞机", "小狗"], success: "从书包到飞机，再往下到终点。" },
-    { start: "蛋糕", moves: "先往右一步，再往右一步", answer: "终点", choices: ["小狗", "终点", "盒子"], success: "从蛋糕到小狗，再到终点。" },
-    { start: "足球", moves: "先往右一步，再往上一步", answer: "小猫", choices: ["盒子", "小猫", "起点"], success: "从足球到盒子，再往上到小猫。" },
+    { start: "起点", firstMove: "往右一步", secondMove: "往下一步", first: "小猫", answer: "盒子", choices: ["小猫", "盒子", "足球"] },
+    { start: "小猫", firstMove: "往右一步", secondMove: "往右一步", first: "风筝", answer: "小鸟", choices: ["风筝", "小鸟", "飞机"] },
+    { start: "盒子", firstMove: "往右一步", secondMove: "往下一步", first: "书包", answer: "小狗", choices: ["书包", "小狗", "飞机"] },
+    { start: "书包", firstMove: "往右一步", secondMove: "往下一步", first: "飞机", answer: "终点", choices: ["终点", "飞机", "小狗"] },
+    { start: "蛋糕", firstMove: "往右一步", secondMove: "往右一步", first: "小狗", answer: "终点", choices: ["小狗", "终点", "盒子"] },
+    { start: "足球", firstMove: "往右一步", secondMove: "往上一步", first: "盒子", answer: "小猫", choices: ["盒子", "小猫", "起点"] },
   ].map((item, index) => ({
     level: index < 3 ? "L5" as AbilityLevel : "L6" as AbilityLevel,
-    prompt: `从${item.start}出发，${item.moves}，到哪里？`,
+    prompt: `从${item.start}出发，先${item.firstMove}，再${item.secondMove}，到哪里？`,
     instruction: "把两步都记住，按顺序走。",
-    sceneImage,
     grid: parkGrid,
     choices: choiceSet(item.choices),
     answer: item.answer,
-    success: item.success,
-    retry: "先做第一步，再做第二步，不要一下子猜。",
-    parentPrompt: "问她：第一步到了哪里？第二步又到了哪里？",
+    success: `从${item.start}出发，先${item.firstMove}到${item.first}，再${item.secondMove}到${item.answer}，答案是${item.answer}。`,
+    retry: `先${item.firstMove}，说第一步到哪里；再${item.secondMove}，说第二步到哪里。`,
+    parentPrompt: `请她从${item.start}出发，先说第一步到${item.first}，再说第二步到${item.answer}，最后答案是${item.answer}。`,
     abilityTags: ["两步路线", "工作记忆"],
   }));
 
@@ -3585,10 +3750,24 @@ function numberChoices(answer: number, min: number, max: number) {
   return Array.from(values).sort((a, b) => a - b).slice(0, 3).map((value) => ({ label: String(value), value: String(value) }));
 }
 
-function patternChoices(answer: string) {
-  const pool = ["🔴", "🔵", "🟡", "🟢", "☀️", "🌙", "⭐", "⬤", "•"];
-  const values = [answer, ...pool.filter((item) => item !== answer)].slice(0, 3);
+function patternChoices(answer: string, unit: readonly string[]) {
+  const values = [answer, ...Array.from(new Set(unit)).filter((item) => item !== answer)];
+  for (const item of patternChoiceFamily(unit)) {
+    if (!values.includes(item)) values.push(item);
+    if (values.length >= 3) break;
+  }
   return values.map((value) => ({ label: labelFor(value), value }));
+}
+
+function patternChoiceFamily(unit: readonly string[]) {
+  const uniqueUnit = Array.from(new Set(unit));
+  const families = [
+    ["🔴", "🔵", "🟡", "🟢", "🟣"],
+    ["☀️", "🌙", "⭐"],
+    ["🍓", "🍪", "🍎", "🍊", "🍬"],
+    ["⬤", "●", "•"],
+  ];
+  return families.find((family) => uniqueUnit.every((item) => family.includes(item))) ?? uniqueUnit;
 }
 
 function labelFor(token: string) {
@@ -3603,6 +3782,7 @@ function labelFor(token: string) {
     "🌙": "月亮",
     "⭐": "星星",
     "⬤": "大圆",
+    "●": "中圆",
     "•": "小圆",
     "🧁": "蛋糕",
     "⚽": "足球",
@@ -3657,7 +3837,10 @@ function choiceSet(values: readonly string[]) {
 
 function threeViewChoices(answer: string) {
   const values = [answer];
-  for (const candidate of ["1和2", "2和1", "2和3", "3和2", "1、2、1", "3、2、1", "2、2、2", "2、2、1", "2、3、1"]) {
+  const candidates = answer.includes("、")
+    ? ["1、2、1", "3、2、1", "2、2、2", "2、2、1", "2、3、1", "1、3、1", "2、1、3"]
+    : ["1和2", "2和1", "2和3", "3和2", "1和3", "3和1"];
+  for (const candidate of candidates) {
     if (!values.includes(candidate)) values.push(candidate);
     if (values.length === 3) break;
   }

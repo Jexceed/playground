@@ -777,25 +777,59 @@ button:focus-visible {
 
 .address-object {
   min-width: 0;
+  padding: 4px;
 }
 
-.address-object .visual-token,
-.matrix-cell .visual-token {
-  min-width: 62px;
+.map-cell-token {
+  appearance: none;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 3px;
+  width: 100%;
+  min-width: 0;
   min-height: 72px;
-  padding: 5px 5px 17px;
-  box-shadow: none;
+  padding: 4px 2px;
+  border: 0;
+  border-radius: 6px;
+  color: #334154;
+  background: transparent;
+  font: inherit;
+  font-weight: 900;
+  cursor: pointer;
 }
 
-.address-object .kid-illustration,
-.matrix-cell .kid-illustration {
-  width: 50px;
-  height: 50px;
+.map-cell-token:hover,
+.map-cell-token:focus-visible {
+  outline: none;
+  background: rgba(117, 187, 131, 0.14);
 }
 
-.address-object .visual-token small,
-.matrix-cell .visual-token small {
-  font-size: 0.68rem;
+.map-cell-token:focus-visible {
+  box-shadow: 0 0 0 3px rgba(117, 187, 131, 0.38);
+}
+
+.map-cell-token .kid-illustration {
+  width: 48px;
+  height: 48px;
+}
+
+.map-cell-label {
+  width: 100%;
+  color: #596576;
+  font-size: 0.7rem;
+  font-weight: 900;
+  line-height: 1.1;
+  overflow-wrap: anywhere;
+  text-align: center;
+}
+
+.map-cell-glyph {
+  display: grid;
+  place-items: center;
+  min-height: 44px;
+  color: #334154;
+  font-size: 1.05rem;
 }
 
 .matrix-board {
@@ -829,6 +863,71 @@ button:focus-visible {
   background: #fff3d4;
 }
 
+.matrix-cell-token {
+  appearance: none;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 3px;
+  width: 100%;
+  min-width: 0;
+  min-height: 78px;
+  padding: 5px 3px;
+  border: 0;
+  border-radius: 6px;
+  color: #334154;
+  background: transparent;
+  font: inherit;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.matrix-cell-token:hover,
+.matrix-cell-token:focus-visible {
+  outline: none;
+  background: rgba(217, 155, 56, 0.14);
+}
+
+.matrix-cell-token:focus-visible {
+  box-shadow: 0 0 0 3px rgba(217, 155, 56, 0.34);
+}
+
+.matrix-token-glyphs {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3px;
+  max-width: 100%;
+}
+
+.matrix-cell-token .kid-illustration {
+  width: 48px;
+  height: 48px;
+}
+
+.matrix-cell-token-multi .kid-illustration.small {
+  width: 30px;
+  height: 30px;
+}
+
+.matrix-cell-label {
+  width: 100%;
+  color: #596576;
+  font-size: 0.68rem;
+  font-weight: 900;
+  line-height: 1.1;
+  overflow-wrap: anywhere;
+  text-align: center;
+}
+
+.matrix-cell-text {
+  display: grid;
+  place-items: center;
+  min-height: 42px;
+  color: #334154;
+  font-size: 1rem;
+}
+
 .memory-board {
   display: grid;
   justify-items: center;
@@ -860,6 +959,62 @@ button:focus-visible {
 .memory-board.covered .memory-card {
   border-style: solid;
   background: #f2eadc;
+}
+
+.memory-card-token {
+  appearance: none;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 5px;
+  width: 100%;
+  min-width: 0;
+  min-height: 104px;
+  padding: 8px 6px;
+  border: 0;
+  border-radius: 6px;
+  color: #334154;
+  background: transparent;
+  font: inherit;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.memory-card-token:hover,
+.memory-card-token:focus-visible {
+  outline: none;
+  background: rgba(217, 155, 56, 0.14);
+}
+
+.memory-card-token:focus-visible {
+  box-shadow: 0 0 0 3px rgba(217, 155, 56, 0.34);
+}
+
+.memory-card-token .kid-illustration {
+  width: 56px;
+  height: 56px;
+}
+
+.memory-card-token-covered .kid-illustration {
+  opacity: 0.78;
+}
+
+.memory-card-label {
+  width: 100%;
+  color: #596576;
+  font-size: 0.82rem;
+  font-weight: 950;
+  line-height: 1.12;
+  overflow-wrap: anywhere;
+  text-align: center;
+}
+
+.memory-card-text {
+  display: grid;
+  place-items: center;
+  min-height: 48px;
+  color: #334154;
+  font-size: 1rem;
 }
 
 .memory-cover-button {
@@ -1175,6 +1330,23 @@ button:focus-visible {
   background: #fffdf7;
   font-size: 1.05rem;
   font-weight: 900;
+}
+
+.answer-choice-visual-card {
+  min-height: 64px;
+}
+
+.choice-visual-card {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px;
+  max-width: 118px;
+}
+
+.choice-visual-card .kid-illustration.small {
+  width: 36px;
+  height: 36px;
 }
 
 .choice-cue {
@@ -1530,16 +1702,37 @@ button:focus-visible {
     font-size: 1rem;
   }
 
-  .address-object .visual-token,
-  .matrix-cell .visual-token {
-    min-width: 48px;
-    min-height: 60px;
+  .map-cell-token {
+    min-height: 54px;
+    padding: 2px;
   }
 
-  .address-object .kid-illustration,
-  .matrix-cell .kid-illustration {
-    width: 40px;
-    height: 40px;
+  .map-cell-token .kid-illustration {
+    width: 38px;
+    height: 38px;
+  }
+
+  .map-cell-label {
+    font-size: 0.62rem;
+  }
+
+  .matrix-cell-token {
+    min-height: 58px;
+    padding: 3px 2px;
+  }
+
+  .matrix-cell-token .kid-illustration {
+    width: 38px;
+    height: 38px;
+  }
+
+  .matrix-cell-token-multi .kid-illustration.small {
+    width: 24px;
+    height: 24px;
+  }
+
+  .matrix-cell-label {
+    font-size: 0.6rem;
   }
 
   .matrix-board {
@@ -1567,6 +1760,20 @@ button:focus-visible {
 
   .memory-card {
     min-height: 86px;
+  }
+
+  .memory-card-token {
+    min-height: 78px;
+    padding: 5px 3px;
+  }
+
+  .memory-card-token .kid-illustration {
+    width: 44px;
+    height: 44px;
+  }
+
+  .memory-card-label {
+    font-size: 0.68rem;
   }
 
   .side-panel {

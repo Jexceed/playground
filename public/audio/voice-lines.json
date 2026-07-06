@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-02T18:01:31.242Z",
+  "generatedAt": "2026-07-04T18:40:16.927Z",
   "recommendedVoice": "warm adult female Mandarin, smiling, preschool teacher, 0.85 speed, crisp consonants",
-  "lineCount": 1515,
+  "lineCount": 1661,
   "lines": [
     {
       "id": "game-title-数一数",
@@ -2127,6 +2127,7 @@
         "logic-pattern-train/logic-pattern-train-6",
         "logic-pattern-train/logic-pattern-train-6",
         "logic-sorter-switch/logic-sorter-switch-9",
+        "logic-sorter-switch/logic-sorter-switch-11",
         "logic-stop-think/logic-stop-think-1",
         "logic-stop-think/logic-stop-think-3",
         "logic-stop-think/logic-stop-think-5",
@@ -4510,9 +4511,9 @@
       ]
     },
     {
-      "id": "prompt-找规律-接下来是什么-先说出重复顺序-再选空格里的图",
+      "id": "prompt-找规律-接下来是什么-先说出重复的一组-再从左到右选空格里的图",
       "kind": "prompt",
-      "text": "找规律，接下来是什么？先说出重复顺序，再选空格里的图。",
+      "text": "找规律，接下来是什么？先说出重复的一组，再从左到右选空格里的图。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-pattern-train/logic-pattern-train-1",
@@ -4524,9 +4525,9 @@
       ]
     },
     {
-      "id": "success-规律是-红-蓝-这里应该是蓝色圆片",
+      "id": "success-这一组按红色圆片-蓝色圆片重复-补完是红色圆片-蓝色圆片-红色圆片-蓝色圆片-红色圆片-蓝色圆片-所以空格是蓝色圆片",
       "kind": "success",
-      "text": "规律是 红、蓝，这里应该是蓝色圆片。",
+      "text": "这一组按红色圆片、蓝色圆片重复，补完是红色圆片、蓝色圆片、红色圆片、蓝色圆片、红色圆片、蓝色圆片，所以空格是蓝色圆片。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-pattern-train/logic-pattern-train-1",
@@ -4534,55 +4535,23 @@
       ]
     },
     {
-      "id": "retry-从头念一念-按同样的顺序找空格",
+      "id": "retry-先念这一组-红色圆片-蓝色圆片-再从左到右说-红色圆片-蓝色圆片-红色圆片-蓝色圆片-红色圆片-蓝色圆片-空格就是蓝色圆片",
       "kind": "retry",
-      "text": "从头念一念，按同样的顺序找空格。",
+      "text": "先念这一组：红色圆片、蓝色圆片；再从左到右说：红色圆片、蓝色圆片、红色圆片、蓝色圆片、红色圆片、蓝色圆片，空格就是蓝色圆片。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
         "logic-pattern-train/logic-pattern-train-1",
-        "logic-pattern-train/logic-pattern-train-2",
-        "logic-pattern-train/logic-pattern-train-3",
-        "logic-pattern-train/logic-pattern-train-4",
-        "logic-pattern-train/logic-pattern-train-5",
-        "logic-pattern-train/logic-pattern-train-6",
-        "logic-pattern-train/logic-pattern-train-7",
-        "logic-pattern-train/logic-pattern-train-8",
-        "logic-pattern-train/logic-pattern-train-9",
-        "logic-pattern-train/logic-pattern-train-10",
-        "logic-pattern-train/logic-pattern-train-11",
-        "logic-pattern-train/logic-pattern-train-12",
-        "logic-pattern-train/logic-pattern-train-13",
-        "logic-pattern-train/logic-pattern-train-14",
-        "logic-pattern-train/logic-pattern-train-15",
-        "logic-pattern-train/logic-pattern-train-16",
-        "logic-pattern-train/logic-pattern-train-17",
-        "logic-pattern-train/logic-pattern-train-18"
+        "logic-pattern-train/logic-pattern-train-2"
       ]
     },
     {
-      "id": "parent-问她-这一组里有几个-它怎么重复",
+      "id": "parent-请她指着重复的一组红色圆片-蓝色圆片-复述红色圆片-蓝色圆片-红色圆片-蓝色圆片-红色圆片-蓝色圆片-说为什么空格是蓝色圆片",
       "kind": "parent",
-      "text": "问她：这一组里有几个？它怎么重复？",
+      "text": "请她指着重复的一组红色圆片、蓝色圆片，复述红色圆片、蓝色圆片、红色圆片、蓝色圆片、红色圆片、蓝色圆片，说为什么空格是蓝色圆片。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-pattern-train/logic-pattern-train-1",
-        "logic-pattern-train/logic-pattern-train-2",
-        "logic-pattern-train/logic-pattern-train-3",
-        "logic-pattern-train/logic-pattern-train-4",
-        "logic-pattern-train/logic-pattern-train-5",
-        "logic-pattern-train/logic-pattern-train-6",
-        "logic-pattern-train/logic-pattern-train-7",
-        "logic-pattern-train/logic-pattern-train-8",
-        "logic-pattern-train/logic-pattern-train-9",
-        "logic-pattern-train/logic-pattern-train-10",
-        "logic-pattern-train/logic-pattern-train-11",
-        "logic-pattern-train/logic-pattern-train-12",
-        "logic-pattern-train/logic-pattern-train-13",
-        "logic-pattern-train/logic-pattern-train-14",
-        "logic-pattern-train/logic-pattern-train-15",
-        "logic-pattern-train/logic-pattern-train-16",
-        "logic-pattern-train/logic-pattern-train-17",
-        "logic-pattern-train/logic-pattern-train-18"
+        "logic-pattern-train/logic-pattern-train-2"
       ]
     },
     {
@@ -4594,21 +4563,6 @@
         "logic-pattern-train/logic-pattern-train-1",
         "logic-pattern-train/logic-pattern-train-2",
         "logic-pattern-train/logic-pattern-train-3",
-        "logic-pattern-train/logic-pattern-train-4",
-        "logic-pattern-train/logic-pattern-train-5",
-        "logic-pattern-train/logic-pattern-train-6",
-        "logic-pattern-train/logic-pattern-train-7",
-        "logic-pattern-train/logic-pattern-train-8",
-        "logic-pattern-train/logic-pattern-train-9",
-        "logic-pattern-train/logic-pattern-train-10",
-        "logic-pattern-train/logic-pattern-train-11",
-        "logic-pattern-train/logic-pattern-train-12",
-        "logic-pattern-train/logic-pattern-train-13",
-        "logic-pattern-train/logic-pattern-train-14",
-        "logic-pattern-train/logic-pattern-train-15",
-        "logic-pattern-train/logic-pattern-train-16",
-        "logic-pattern-train/logic-pattern-train-17",
-        "logic-pattern-train/logic-pattern-train-18",
         "logic-sorter-switch/logic-sorter-switch-10",
         "logic-matrix-puzzle/logic-matrix-puzzle-2",
         "logic-matrix-puzzle/logic-matrix-puzzle-4",
@@ -4627,18 +4581,6 @@
         "logic-pattern-train/logic-pattern-train-4",
         "logic-pattern-train/logic-pattern-train-5",
         "logic-pattern-train/logic-pattern-train-6",
-        "logic-pattern-train/logic-pattern-train-7",
-        "logic-pattern-train/logic-pattern-train-8",
-        "logic-pattern-train/logic-pattern-train-9",
-        "logic-pattern-train/logic-pattern-train-10",
-        "logic-pattern-train/logic-pattern-train-11",
-        "logic-pattern-train/logic-pattern-train-12",
-        "logic-pattern-train/logic-pattern-train-13",
-        "logic-pattern-train/logic-pattern-train-14",
-        "logic-pattern-train/logic-pattern-train-15",
-        "logic-pattern-train/logic-pattern-train-16",
-        "logic-pattern-train/logic-pattern-train-17",
-        "logic-pattern-train/logic-pattern-train-18",
         "logic-sorter-switch/logic-sorter-switch-9",
         "logic-matrix-puzzle/logic-matrix-puzzle-2",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-4",
@@ -4655,6 +4597,8 @@
         "logic-pattern-train/logic-pattern-train-1",
         "logic-pattern-train/logic-pattern-train-2",
         "logic-pattern-train/logic-pattern-train-3",
+        "logic-pattern-train/logic-pattern-train-4",
+        "logic-pattern-train/logic-pattern-train-5",
         "logic-pattern-train/logic-pattern-train-6",
         "logic-sorter-switch/logic-sorter-switch-10",
         "logic-sorter-switch/logic-sorter-switch-11",
@@ -4814,9 +4758,9 @@
       ]
     },
     {
-      "id": "prompt-找规律-空格里是什么-先说出重复顺序-再选空格里的图",
+      "id": "prompt-找规律-空格里是什么-先说出重复的一组-再从左到右选空格里的图",
       "kind": "prompt",
-      "text": "找规律，空格里是什么？先说出重复顺序，再选空格里的图。",
+      "text": "找规律，空格里是什么？先说出重复的一组，再从左到右选空格里的图。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-pattern-train/logic-pattern-train-2",
@@ -4834,19 +4778,57 @@
       ]
     },
     {
-      "id": "success-规律是-红-蓝-这里应该是红色圆片",
+      "id": "success-这一组按红色圆片-蓝色圆片重复-补完是红色圆片-蓝色圆片-红色圆片-蓝色圆片-红色圆片-蓝色圆片-所以空格是红色圆片",
       "kind": "success",
-      "text": "规律是 红、蓝，这里应该是红色圆片。",
+      "text": "这一组按红色圆片、蓝色圆片重复，补完是红色圆片、蓝色圆片、红色圆片、蓝色圆片、红色圆片、蓝色圆片，所以空格是红色圆片。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-pattern-train/logic-pattern-train-3"
       ]
     },
     {
-      "id": "success-规律是-黄-绿-这里应该是绿色圆片",
+      "id": "retry-先念这一组-红色圆片-蓝色圆片-再从左到右说-红色圆片-蓝色圆片-红色圆片-蓝色圆片-红色圆片-蓝色圆片-空格就是红色圆片",
+      "kind": "retry",
+      "text": "先念这一组：红色圆片、蓝色圆片；再从左到右说：红色圆片、蓝色圆片、红色圆片、蓝色圆片、红色圆片、蓝色圆片，空格就是红色圆片。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-pattern-train/logic-pattern-train-3"
+      ]
+    },
+    {
+      "id": "parent-请她指着重复的一组红色圆片-蓝色圆片-复述红色圆片-蓝色圆片-红色圆片-蓝色圆片-红色圆片-蓝色圆片-说为什么空格是红色圆片",
+      "kind": "parent",
+      "text": "请她指着重复的一组红色圆片、蓝色圆片，复述红色圆片、蓝色圆片、红色圆片、蓝色圆片、红色圆片、蓝色圆片，说为什么空格是红色圆片。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-pattern-train/logic-pattern-train-3"
+      ]
+    },
+    {
+      "id": "success-这一组按黄色圆片-绿色圆片重复-补完是黄色圆片-绿色圆片-黄色圆片-绿色圆片-黄色圆片-绿色圆片-所以空格是绿色圆片",
       "kind": "success",
-      "text": "规律是 黄、绿，这里应该是绿色圆片。",
+      "text": "这一组按黄色圆片、绿色圆片重复，补完是黄色圆片、绿色圆片、黄色圆片、绿色圆片、黄色圆片、绿色圆片，所以空格是绿色圆片。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-pattern-train/logic-pattern-train-4",
+        "logic-pattern-train/logic-pattern-train-5"
+      ]
+    },
+    {
+      "id": "retry-先念这一组-黄色圆片-绿色圆片-再从左到右说-黄色圆片-绿色圆片-黄色圆片-绿色圆片-黄色圆片-绿色圆片-空格就是绿色圆片",
+      "kind": "retry",
+      "text": "先念这一组：黄色圆片、绿色圆片；再从左到右说：黄色圆片、绿色圆片、黄色圆片、绿色圆片、黄色圆片、绿色圆片，空格就是绿色圆片。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-pattern-train/logic-pattern-train-4",
+        "logic-pattern-train/logic-pattern-train-5"
+      ]
+    },
+    {
+      "id": "parent-请她指着重复的一组黄色圆片-绿色圆片-复述黄色圆片-绿色圆片-黄色圆片-绿色圆片-黄色圆片-绿色圆片-说为什么空格是绿色圆片",
+      "kind": "parent",
+      "text": "请她指着重复的一组黄色圆片、绿色圆片，复述黄色圆片、绿色圆片、黄色圆片、绿色圆片、黄色圆片、绿色圆片，说为什么空格是绿色圆片。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-pattern-train/logic-pattern-train-4",
         "logic-pattern-train/logic-pattern-train-5"
@@ -4860,7 +4842,9 @@
       "contexts": [
         "logic-pattern-train/logic-pattern-train-4",
         "logic-pattern-train/logic-pattern-train-5",
+        "logic-pattern-train/logic-pattern-train-6",
         "logic-sorter-switch/logic-sorter-switch-9",
+        "logic-sorter-switch/logic-sorter-switch-11",
         "logic-matrix-puzzle/logic-matrix-puzzle-4",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-1",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-4",
@@ -4868,19 +4852,57 @@
       ]
     },
     {
-      "id": "success-规律是-黄-绿-这里应该是黄色圆片",
+      "id": "success-这一组按黄色圆片-绿色圆片重复-补完是黄色圆片-绿色圆片-黄色圆片-绿色圆片-黄色圆片-绿色圆片-所以空格是黄色圆片",
       "kind": "success",
-      "text": "规律是 黄、绿，这里应该是黄色圆片。",
+      "text": "这一组按黄色圆片、绿色圆片重复，补完是黄色圆片、绿色圆片、黄色圆片、绿色圆片、黄色圆片、绿色圆片，所以空格是黄色圆片。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-pattern-train/logic-pattern-train-6"
       ]
     },
     {
-      "id": "success-规律是-太阳-月亮-这里应该是月亮",
+      "id": "retry-先念这一组-黄色圆片-绿色圆片-再从左到右说-黄色圆片-绿色圆片-黄色圆片-绿色圆片-黄色圆片-绿色圆片-空格就是黄色圆片",
+      "kind": "retry",
+      "text": "先念这一组：黄色圆片、绿色圆片；再从左到右说：黄色圆片、绿色圆片、黄色圆片、绿色圆片、黄色圆片、绿色圆片，空格就是黄色圆片。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-pattern-train/logic-pattern-train-6"
+      ]
+    },
+    {
+      "id": "parent-请她指着重复的一组黄色圆片-绿色圆片-复述黄色圆片-绿色圆片-黄色圆片-绿色圆片-黄色圆片-绿色圆片-说为什么空格是黄色圆片",
+      "kind": "parent",
+      "text": "请她指着重复的一组黄色圆片、绿色圆片，复述黄色圆片、绿色圆片、黄色圆片、绿色圆片、黄色圆片、绿色圆片，说为什么空格是黄色圆片。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-pattern-train/logic-pattern-train-6"
+      ]
+    },
+    {
+      "id": "success-这一组按太阳-月亮重复-补完是太阳-月亮-太阳-月亮-太阳-月亮-所以空格是月亮",
       "kind": "success",
-      "text": "规律是 太阳、月亮，这里应该是月亮。",
+      "text": "这一组按太阳、月亮重复，补完是太阳、月亮、太阳、月亮、太阳、月亮，所以空格是月亮。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-pattern-train/logic-pattern-train-7",
+        "logic-pattern-train/logic-pattern-train-8"
+      ]
+    },
+    {
+      "id": "retry-先念这一组-太阳-月亮-再从左到右说-太阳-月亮-太阳-月亮-太阳-月亮-空格就是月亮",
+      "kind": "retry",
+      "text": "先念这一组：太阳、月亮；再从左到右说：太阳、月亮、太阳、月亮、太阳、月亮，空格就是月亮。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-pattern-train/logic-pattern-train-7",
+        "logic-pattern-train/logic-pattern-train-8"
+      ]
+    },
+    {
+      "id": "parent-请她指着重复的一组太阳-月亮-复述太阳-月亮-太阳-月亮-太阳-月亮-说为什么空格是月亮",
+      "kind": "parent",
+      "text": "请她指着重复的一组太阳、月亮，复述太阳、月亮、太阳、月亮、太阳、月亮，说为什么空格是月亮。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-pattern-train/logic-pattern-train-7",
         "logic-pattern-train/logic-pattern-train-8"
@@ -4893,7 +4915,43 @@
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-pattern-train/logic-pattern-train-7",
-        "logic-pattern-train/logic-pattern-train-8"
+        "logic-pattern-train/logic-pattern-train-8",
+        "logic-pattern-train/logic-pattern-train-9",
+        "logic-pattern-train/logic-pattern-train-13",
+        "logic-pattern-train/logic-pattern-train-14",
+        "logic-pattern-train/logic-pattern-train-15"
+      ]
+    },
+    {
+      "id": "choice-太阳",
+      "kind": "choice",
+      "text": "太阳",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-pattern-train/logic-pattern-train-7",
+        "logic-pattern-train/logic-pattern-train-8",
+        "logic-pattern-train/logic-pattern-train-9",
+        "logic-pattern-train/logic-pattern-train-13",
+        "logic-pattern-train/logic-pattern-train-14",
+        "logic-pattern-train/logic-pattern-train-15"
+      ]
+    },
+    {
+      "id": "choice-星星",
+      "kind": "choice",
+      "text": "星星",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-pattern-train/logic-pattern-train-7",
+        "logic-pattern-train/logic-pattern-train-8",
+        "logic-pattern-train/logic-pattern-train-9",
+        "logic-pattern-train/logic-pattern-train-13",
+        "logic-pattern-train/logic-pattern-train-14",
+        "logic-pattern-train/logic-pattern-train-15",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-1",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-7",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-11",
+        "logic-balance-swap/logic-balance-swap-4"
       ]
     },
     {
@@ -4939,30 +4997,55 @@
       ]
     },
     {
-      "id": "success-规律是-太阳-月亮-这里应该是太阳",
+      "id": "success-这一组按太阳-月亮重复-补完是太阳-月亮-太阳-月亮-太阳-月亮-所以空格是太阳",
       "kind": "success",
-      "text": "规律是 太阳、月亮，这里应该是太阳。",
+      "text": "这一组按太阳、月亮重复，补完是太阳、月亮、太阳、月亮、太阳、月亮，所以空格是太阳。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-pattern-train/logic-pattern-train-9"
       ]
     },
     {
-      "id": "choice-太阳",
-      "kind": "choice",
-      "text": "太阳",
-      "tone": "friendly, clear, playful",
+      "id": "retry-先念这一组-太阳-月亮-再从左到右说-太阳-月亮-太阳-月亮-太阳-月亮-空格就是太阳",
+      "kind": "retry",
+      "text": "先念这一组：太阳、月亮；再从左到右说：太阳、月亮、太阳、月亮、太阳、月亮，空格就是太阳。",
+      "tone": "gentle, encouraging, slow",
       "contexts": [
-        "logic-pattern-train/logic-pattern-train-9",
-        "logic-pattern-train/logic-pattern-train-14",
-        "logic-pattern-train/logic-pattern-train-15"
+        "logic-pattern-train/logic-pattern-train-9"
       ]
     },
     {
-      "id": "success-规律是-一大两小-这里应该是小圆",
+      "id": "parent-请她指着重复的一组太阳-月亮-复述太阳-月亮-太阳-月亮-太阳-月亮-说为什么空格是太阳",
+      "kind": "parent",
+      "text": "请她指着重复的一组太阳、月亮，复述太阳、月亮、太阳、月亮、太阳、月亮，说为什么空格是太阳。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-pattern-train/logic-pattern-train-9"
+      ]
+    },
+    {
+      "id": "success-这一组按大圆-小圆-小圆重复-补完是大圆-小圆-小圆-大圆-小圆-小圆-所以空格是小圆",
       "kind": "success",
-      "text": "规律是 一大两小，这里应该是小圆。",
+      "text": "这一组按大圆、小圆、小圆重复，补完是大圆、小圆、小圆、大圆、小圆、小圆，所以空格是小圆。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-pattern-train/logic-pattern-train-10"
+      ]
+    },
+    {
+      "id": "retry-先念这一组-大圆-小圆-小圆-再从左到右说-大圆-小圆-小圆-大圆-小圆-小圆-空格就是小圆",
+      "kind": "retry",
+      "text": "先念这一组：大圆、小圆、小圆；再从左到右说：大圆、小圆、小圆、大圆、小圆、小圆，空格就是小圆。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-pattern-train/logic-pattern-train-10"
+      ]
+    },
+    {
+      "id": "parent-请她指着重复的一组大圆-小圆-小圆-复述大圆-小圆-小圆-大圆-小圆-小圆-说为什么空格是小圆",
+      "kind": "parent",
+      "text": "请她指着重复的一组大圆、小圆、小圆，复述大圆、小圆、小圆、大圆、小圆、小圆，说为什么空格是小圆。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-pattern-train/logic-pattern-train-10"
       ]
@@ -4973,7 +5056,31 @@
       "text": "小圆",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-pattern-train/logic-pattern-train-10"
+        "logic-pattern-train/logic-pattern-train-10",
+        "logic-pattern-train/logic-pattern-train-11",
+        "logic-pattern-train/logic-pattern-train-12"
+      ]
+    },
+    {
+      "id": "choice-大圆",
+      "kind": "choice",
+      "text": "大圆",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-pattern-train/logic-pattern-train-10",
+        "logic-pattern-train/logic-pattern-train-11",
+        "logic-pattern-train/logic-pattern-train-12"
+      ]
+    },
+    {
+      "id": "choice-中圆",
+      "kind": "choice",
+      "text": "中圆",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-pattern-train/logic-pattern-train-10",
+        "logic-pattern-train/logic-pattern-train-11",
+        "logic-pattern-train/logic-pattern-train-12"
       ]
     },
     {
@@ -5011,9 +5118,9 @@
       ]
     },
     {
-      "id": "success-规律是-一大两小-这里应该是大圆",
+      "id": "success-这一组按大圆-小圆-小圆重复-补完是大圆-小圆-小圆-大圆-小圆-小圆-所以空格是大圆",
       "kind": "success",
-      "text": "规律是 一大两小，这里应该是大圆。",
+      "text": "这一组按大圆、小圆、小圆重复，补完是大圆、小圆、小圆、大圆、小圆、小圆，所以空格是大圆。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-pattern-train/logic-pattern-train-11",
@@ -5021,9 +5128,19 @@
       ]
     },
     {
-      "id": "choice-大圆",
-      "kind": "choice",
-      "text": "大圆",
+      "id": "retry-先念这一组-大圆-小圆-小圆-再从左到右说-大圆-小圆-小圆-大圆-小圆-小圆-空格就是大圆",
+      "kind": "retry",
+      "text": "先念这一组：大圆、小圆、小圆；再从左到右说：大圆、小圆、小圆、大圆、小圆、小圆，空格就是大圆。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-pattern-train/logic-pattern-train-11",
+        "logic-pattern-train/logic-pattern-train-12"
+      ]
+    },
+    {
+      "id": "parent-请她指着重复的一组大圆-小圆-小圆-复述大圆-小圆-小圆-大圆-小圆-小圆-说为什么空格是大圆",
+      "kind": "parent",
+      "text": "请她指着重复的一组大圆、小圆、小圆，复述大圆、小圆、小圆、大圆、小圆、小圆，说为什么空格是大圆。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-pattern-train/logic-pattern-train-11",
@@ -5031,31 +5148,36 @@
       ]
     },
     {
-      "id": "success-规律是-太阳-月亮-星星-这里应该是星星",
+      "id": "success-这一组按太阳-月亮-星星重复-补完是太阳-月亮-星星-太阳-月亮-星星-所以空格是星星",
       "kind": "success",
-      "text": "规律是 太阳、月亮、星星，这里应该是星星。",
+      "text": "这一组按太阳、月亮、星星重复，补完是太阳、月亮、星星、太阳、月亮、星星，所以空格是星星。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-pattern-train/logic-pattern-train-13"
       ]
     },
     {
-      "id": "choice-星星",
-      "kind": "choice",
-      "text": "星星",
-      "tone": "friendly, clear, playful",
+      "id": "retry-先念这一组-太阳-月亮-星星-再从左到右说-太阳-月亮-星星-太阳-月亮-星星-空格就是星星",
+      "kind": "retry",
+      "text": "先念这一组：太阳、月亮、星星；再从左到右说：太阳、月亮、星星、太阳、月亮、星星，空格就是星星。",
+      "tone": "gentle, encouraging, slow",
       "contexts": [
-        "logic-pattern-train/logic-pattern-train-13",
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-1",
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-7",
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-11",
-        "logic-balance-swap/logic-balance-swap-4"
+        "logic-pattern-train/logic-pattern-train-13"
       ]
     },
     {
-      "id": "success-规律是-太阳-月亮-星星-这里应该是太阳",
+      "id": "parent-请她指着重复的一组太阳-月亮-星星-复述太阳-月亮-星星-太阳-月亮-星星-说为什么空格是星星",
+      "kind": "parent",
+      "text": "请她指着重复的一组太阳、月亮、星星，复述太阳、月亮、星星、太阳、月亮、星星，说为什么空格是星星。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-pattern-train/logic-pattern-train-13"
+      ]
+    },
+    {
+      "id": "success-这一组按太阳-月亮-星星重复-补完是太阳-月亮-星星-太阳-月亮-星星-所以空格是太阳",
       "kind": "success",
-      "text": "规律是 太阳、月亮、星星，这里应该是太阳。",
+      "text": "这一组按太阳、月亮、星星重复，补完是太阳、月亮、星星、太阳、月亮、星星，所以空格是太阳。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-pattern-train/logic-pattern-train-14",
@@ -5063,10 +5185,52 @@
       ]
     },
     {
-      "id": "success-规律是-草莓-饼干-草莓-这里应该是草莓",
+      "id": "retry-先念这一组-太阳-月亮-星星-再从左到右说-太阳-月亮-星星-太阳-月亮-星星-空格就是太阳",
+      "kind": "retry",
+      "text": "先念这一组：太阳、月亮、星星；再从左到右说：太阳、月亮、星星、太阳、月亮、星星，空格就是太阳。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-pattern-train/logic-pattern-train-14",
+        "logic-pattern-train/logic-pattern-train-15"
+      ]
+    },
+    {
+      "id": "parent-请她指着重复的一组太阳-月亮-星星-复述太阳-月亮-星星-太阳-月亮-星星-说为什么空格是太阳",
+      "kind": "parent",
+      "text": "请她指着重复的一组太阳、月亮、星星，复述太阳、月亮、星星、太阳、月亮、星星，说为什么空格是太阳。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-pattern-train/logic-pattern-train-14",
+        "logic-pattern-train/logic-pattern-train-15"
+      ]
+    },
+    {
+      "id": "success-这一组按草莓-饼干-草莓重复-补完是草莓-饼干-草莓-草莓-饼干-草莓-所以空格是草莓",
       "kind": "success",
-      "text": "规律是 草莓、饼干、草莓，这里应该是草莓。",
+      "text": "这一组按草莓、饼干、草莓重复，补完是草莓、饼干、草莓、草莓、饼干、草莓，所以空格是草莓。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-pattern-train/logic-pattern-train-16",
+        "logic-pattern-train/logic-pattern-train-17",
+        "logic-pattern-train/logic-pattern-train-18"
+      ]
+    },
+    {
+      "id": "retry-先念这一组-草莓-饼干-草莓-再从左到右说-草莓-饼干-草莓-草莓-饼干-草莓-空格就是草莓",
+      "kind": "retry",
+      "text": "先念这一组：草莓、饼干、草莓；再从左到右说：草莓、饼干、草莓、草莓、饼干、草莓，空格就是草莓。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-pattern-train/logic-pattern-train-16",
+        "logic-pattern-train/logic-pattern-train-17",
+        "logic-pattern-train/logic-pattern-train-18"
+      ]
+    },
+    {
+      "id": "parent-请她指着重复的一组草莓-饼干-草莓-复述草莓-饼干-草莓-草莓-饼干-草莓-说为什么空格是草莓",
+      "kind": "parent",
+      "text": "请她指着重复的一组草莓、饼干、草莓，复述草莓、饼干、草莓、草莓、饼干、草莓，说为什么空格是草莓。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-pattern-train/logic-pattern-train-16",
         "logic-pattern-train/logic-pattern-train-17",
@@ -5092,6 +5256,49 @@
       ]
     },
     {
+      "id": "choice-饼干",
+      "kind": "choice",
+      "text": "饼干",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-pattern-train/logic-pattern-train-16",
+        "logic-pattern-train/logic-pattern-train-17",
+        "logic-pattern-train/logic-pattern-train-18",
+        "logic-relation-pairs/pencil-case-pencil",
+        "logic-relation-pairs/lunchbox-cookie",
+        "logic-relation-pairs/schoolbag-book-analogy",
+        "logic-same-kind-detective/logic-same-kind-detective-5",
+        "logic-same-kind-detective/logic-same-kind-detective-11",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-2",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-5",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-8",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-11",
+        "logic-balance-swap/logic-balance-swap-2"
+      ]
+    },
+    {
+      "id": "choice-苹果",
+      "kind": "choice",
+      "text": "苹果",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-pattern-train/logic-pattern-train-16",
+        "logic-pattern-train/logic-pattern-train-17",
+        "logic-pattern-train/logic-pattern-train-18",
+        "logic-same-kind-detective/logic-same-kind-detective-7",
+        "logic-memory-camera/logic-memory-camera-1",
+        "logic-memory-camera/logic-memory-camera-9",
+        "logic-difference-detective/logic-difference-detective-1",
+        "logic-difference-detective/logic-difference-detective-8",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-5",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-8",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-11",
+        "logic-route-steps/logic-route-steps-1",
+        "logic-route-steps/logic-route-steps-2",
+        "logic-route-steps/logic-route-steps-3"
+      ]
+    },
+    {
       "id": "game-title-会变规则的分类机",
       "kind": "game-title",
       "text": "会变规则的分类机",
@@ -5110,49 +5317,40 @@
       ]
     },
     {
-      "id": "prompt-分类机说-只看颜色-红色圆片应该进哪个篮子-先说一遍规则-只看颜色-再看这张图",
+      "id": "prompt-分类机说-这次只看颜色-红色圆片要进哪个篮子-先说一遍规则-只看颜色-再看这张图",
       "kind": "prompt",
-      "text": "分类机说：只看颜色。红色圆片应该进哪个篮子？先说一遍规则：只看颜色，再看这张图。",
+      "text": "分类机说：这次只看颜色。红色圆片要进哪个篮子？先说一遍规则：只看颜色，再看这张图。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-sorter-switch/logic-sorter-switch-1"
       ]
     },
     {
-      "id": "success-这次只看颜色-所以红色圆片进红色篮子",
+      "id": "success-看颜色时-红色圆片和红色篮子是一对-圆形先不管",
       "kind": "success",
-      "text": "这次只看颜色，所以红色圆片进红色篮子。",
+      "text": "看颜色时，红色圆片和红色篮子是一对；圆形先不管。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-sorter-switch/logic-sorter-switch-1"
       ]
     },
     {
-      "id": "retry-先别看别的特征-这题只看颜色",
+      "id": "retry-这题只看颜色-先找红色-再选红色篮子",
       "kind": "retry",
-      "text": "先别看别的特征，这题只看颜色。",
+      "text": "这题只看颜色。先找红色，再选红色篮子。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
-        "logic-sorter-switch/logic-sorter-switch-1",
-        "logic-sorter-switch/logic-sorter-switch-2",
-        "logic-sorter-switch/logic-sorter-switch-5",
-        "logic-sorter-switch/logic-sorter-switch-7"
+        "logic-sorter-switch/logic-sorter-switch-1"
       ]
     },
     {
-      "id": "parent-问她-如果规则换了-同一张图会不会去不同篮子",
+      "id": "parent-问她-你看的是颜色还是形状-为什么圆形先不管",
       "kind": "parent",
-      "text": "问她：如果规则换了，同一张图会不会去不同篮子？",
+      "text": "问她：你看的是颜色还是形状？为什么圆形先不管？",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-sorter-switch/logic-sorter-switch-1",
-        "logic-sorter-switch/logic-sorter-switch-2",
-        "logic-sorter-switch/logic-sorter-switch-3",
-        "logic-sorter-switch/logic-sorter-switch-4",
-        "logic-sorter-switch/logic-sorter-switch-5",
-        "logic-sorter-switch/logic-sorter-switch-6",
-        "logic-sorter-switch/logic-sorter-switch-7",
-        "logic-sorter-switch/logic-sorter-switch-8"
+        "logic-sorter-switch/logic-sorter-switch-2"
       ]
     },
     {
@@ -5189,19 +5387,28 @@
       ]
     },
     {
-      "id": "prompt-分类机说-只看颜色-蓝色圆片应该进哪个篮子-先说一遍规则-只看颜色-再看这张图",
+      "id": "prompt-分类机说-这次只看颜色-蓝色圆片要进哪个篮子-先说一遍规则-只看颜色-再看这张图",
       "kind": "prompt",
-      "text": "分类机说：只看颜色。蓝色圆片应该进哪个篮子？先说一遍规则：只看颜色，再看这张图。",
+      "text": "分类机说：这次只看颜色。蓝色圆片要进哪个篮子？先说一遍规则：只看颜色，再看这张图。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-sorter-switch/logic-sorter-switch-2"
       ]
     },
     {
-      "id": "success-这次只看颜色-所以蓝色圆片进蓝色篮子",
+      "id": "success-看颜色时-蓝色圆片和蓝色篮子是一对-圆形先不管",
       "kind": "success",
-      "text": "这次只看颜色，所以蓝色圆片进蓝色篮子。",
+      "text": "看颜色时，蓝色圆片和蓝色篮子是一对；圆形先不管。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-sorter-switch/logic-sorter-switch-2"
+      ]
+    },
+    {
+      "id": "retry-这题只看颜色-先找蓝色-再选蓝色篮子",
+      "kind": "retry",
+      "text": "这题只看颜色。先找蓝色，再选蓝色篮子。",
+      "tone": "gentle, encouraging, slow",
       "contexts": [
         "logic-sorter-switch/logic-sorter-switch-2"
       ]
@@ -5218,33 +5425,39 @@
       ]
     },
     {
-      "id": "prompt-规则换了-只看形状-红色圆片应该进哪个篮子-先说一遍规则-只看形状-再看这张图",
+      "id": "prompt-规则换了-这次只看形状-红色圆片要进哪个篮子-先说一遍规则-只看形状-再看这张图",
       "kind": "prompt",
-      "text": "规则换了：只看形状。红色圆片应该进哪个篮子？先说一遍规则：只看形状，再看这张图。",
+      "text": "规则换了：这次只看形状。红色圆片要进哪个篮子？先说一遍规则：只看形状，再看这张图。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-sorter-switch/logic-sorter-switch-3"
       ]
     },
     {
-      "id": "success-规则是看形状-红色圆片是圆形-所以进圆形篮子",
+      "id": "success-看形状时-圆片进圆形篮子-红色先不管",
       "kind": "success",
-      "text": "规则是看形状，红色圆片是圆形，所以进圆形篮子。",
+      "text": "看形状时，圆片进圆形篮子；红色先不管。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-sorter-switch/logic-sorter-switch-3"
       ]
     },
     {
-      "id": "retry-先别看别的特征-这题只看形状",
+      "id": "retry-这题只看形状-先找圆形-再选圆形篮子",
       "kind": "retry",
-      "text": "先别看别的特征，这题只看形状。",
+      "text": "这题只看形状。先找圆形，再选圆形篮子。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
-        "logic-sorter-switch/logic-sorter-switch-3",
-        "logic-sorter-switch/logic-sorter-switch-4",
-        "logic-sorter-switch/logic-sorter-switch-6",
-        "logic-sorter-switch/logic-sorter-switch-8"
+        "logic-sorter-switch/logic-sorter-switch-3"
+      ]
+    },
+    {
+      "id": "parent-问她-你看的是形状还是颜色-为什么红色先不管",
+      "kind": "parent",
+      "text": "问她：你看的是形状还是颜色？为什么红色先不管？",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-sorter-switch/logic-sorter-switch-3"
       ]
     },
     {
@@ -5276,91 +5489,181 @@
       ]
     },
     {
-      "id": "prompt-规则换了-只看形状-蓝色方块应该进哪个篮子-先说一遍规则-只看形状-再看这张图",
+      "id": "prompt-规则换了-这次只看形状-蓝色方块要进哪个篮子-先说一遍规则-只看形状-再看这张图",
       "kind": "prompt",
-      "text": "规则换了：只看形状。蓝色方块应该进哪个篮子？先说一遍规则：只看形状，再看这张图。",
+      "text": "规则换了：这次只看形状。蓝色方块要进哪个篮子？先说一遍规则：只看形状，再看这张图。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-sorter-switch/logic-sorter-switch-4"
       ]
     },
     {
-      "id": "success-规则是看形状-蓝色方块是方形-所以进方形篮子",
+      "id": "success-看形状时-方块进方形篮子-蓝色先不管",
       "kind": "success",
-      "text": "规则是看形状，蓝色方块是方形，所以进方形篮子。",
+      "text": "看形状时，方块进方形篮子；蓝色先不管。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-sorter-switch/logic-sorter-switch-4"
       ]
     },
     {
-      "id": "prompt-同一张蓝色方块-这次分类机说只看颜色-应该进哪个篮子-先说一遍规则-只看颜色-再看这张图",
+      "id": "retry-这题只看形状-先找方形-再选方形篮子",
+      "kind": "retry",
+      "text": "这题只看形状。先找方形，再选方形篮子。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-sorter-switch/logic-sorter-switch-4"
+      ]
+    },
+    {
+      "id": "parent-问她-你看的是形状还是颜色-为什么蓝色先不管",
+      "kind": "parent",
+      "text": "问她：你看的是形状还是颜色？为什么蓝色先不管？",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-sorter-switch/logic-sorter-switch-4"
+      ]
+    },
+    {
+      "id": "prompt-刚才看过形状-这次只看颜色-蓝色方块要进哪个篮子-先说一遍规则-只看颜色-再看这张图",
       "kind": "prompt",
-      "text": "同一张蓝色方块，这次分类机说只看颜色。应该进哪个篮子？先说一遍规则：只看颜色，再看这张图。",
+      "text": "刚才看过形状，这次只看颜色。蓝色方块要进哪个篮子？先说一遍规则：只看颜色，再看这张图。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-sorter-switch/logic-sorter-switch-5"
       ]
     },
     {
-      "id": "success-这次只看颜色-蓝色方块先进蓝色篮子",
+      "id": "success-虽然它是方块-但这次看颜色-所以进蓝色篮子",
       "kind": "success",
-      "text": "这次只看颜色，蓝色方块先进蓝色篮子。",
+      "text": "虽然它是方块，但这次看颜色，所以进蓝色篮子。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-sorter-switch/logic-sorter-switch-5"
       ]
     },
     {
-      "id": "prompt-还是这张蓝色方块-现在分类机说只看形状-应该进哪个篮子-先说一遍规则-只看形状-再看这张图",
+      "id": "retry-先停一下听规则-现在只看颜色-不看形状",
+      "kind": "retry",
+      "text": "先停一下听规则：现在只看颜色，不看形状。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-sorter-switch/logic-sorter-switch-5"
+      ]
+    },
+    {
+      "id": "parent-问她-如果选方形篮子-是看了颜色还是看了形状-这次规则是什么",
+      "kind": "parent",
+      "text": "问她：如果选方形篮子，是看了颜色还是看了形状？这次规则是什么？",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-sorter-switch/logic-sorter-switch-5"
+      ]
+    },
+    {
+      "id": "prompt-还是蓝色方块-现在只看形状-它要进哪个篮子-先说一遍规则-只看形状-再看这张图",
       "kind": "prompt",
-      "text": "还是这张蓝色方块，现在分类机说只看形状。应该进哪个篮子？先说一遍规则：只看形状，再看这张图。",
+      "text": "还是蓝色方块，现在只看形状。它要进哪个篮子？先说一遍规则：只看形状，再看这张图。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-sorter-switch/logic-sorter-switch-6"
       ]
     },
     {
-      "id": "success-规则换成形状-所以同一张蓝色方块要进方形篮子",
+      "id": "success-虽然它是蓝色-但这次看形状-所以进方形篮子",
       "kind": "success",
-      "text": "规则换成形状，所以同一张蓝色方块要进方形篮子。",
+      "text": "虽然它是蓝色，但这次看形状，所以进方形篮子。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-sorter-switch/logic-sorter-switch-6"
       ]
     },
     {
-      "id": "prompt-黄色圆片有颜色也有形状-分类机说只看颜色-放哪里-先说一遍规则-只看颜色-再看这张图",
+      "id": "retry-先停一下听规则-现在只看形状-不看颜色",
+      "kind": "retry",
+      "text": "先停一下听规则：现在只看形状，不看颜色。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-sorter-switch/logic-sorter-switch-6"
+      ]
+    },
+    {
+      "id": "parent-问她-如果选蓝色篮子-是看了形状还是看了颜色-这次规则是什么",
+      "kind": "parent",
+      "text": "问她：如果选蓝色篮子，是看了形状还是看了颜色？这次规则是什么？",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-sorter-switch/logic-sorter-switch-6"
+      ]
+    },
+    {
+      "id": "prompt-黄色圆片有颜色也有形状-这次只看颜色-放哪里-先说一遍规则-只看颜色-再看这张图",
       "kind": "prompt",
-      "text": "黄色圆片有颜色也有形状。分类机说只看颜色，放哪里？先说一遍规则：只看颜色，再看这张图。",
+      "text": "黄色圆片有颜色也有形状。这次只看颜色，放哪里？先说一遍规则：只看颜色，再看这张图。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-sorter-switch/logic-sorter-switch-7"
       ]
     },
     {
-      "id": "success-听到只看颜色-就选黄色篮子",
+      "id": "success-听到只看颜色-就找黄色篮子-圆形先不管",
       "kind": "success",
-      "text": "听到只看颜色，就选黄色篮子。",
+      "text": "听到只看颜色，就找黄色篮子；圆形先不管。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-sorter-switch/logic-sorter-switch-7"
       ]
     },
     {
-      "id": "prompt-黄色圆片有颜色也有形状-分类机说只看形状-放哪里-先说一遍规则-只看形状-再看这张图",
+      "id": "retry-这题只看颜色-圆形篮子是看形状时才用的",
+      "kind": "retry",
+      "text": "这题只看颜色。圆形篮子是看形状时才用的。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-sorter-switch/logic-sorter-switch-7"
+      ]
+    },
+    {
+      "id": "parent-问她-黄色篮子和圆形篮子都像对的-为什么这次选颜色",
+      "kind": "parent",
+      "text": "问她：黄色篮子和圆形篮子都像对的，为什么这次选颜色？",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-sorter-switch/logic-sorter-switch-7"
+      ]
+    },
+    {
+      "id": "prompt-黄色圆片有颜色也有形状-这次只看形状-放哪里-先说一遍规则-只看形状-再看这张图",
       "kind": "prompt",
-      "text": "黄色圆片有颜色也有形状。分类机说只看形状，放哪里？先说一遍规则：只看形状，再看这张图。",
+      "text": "黄色圆片有颜色也有形状。这次只看形状，放哪里？先说一遍规则：只看形状，再看这张图。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-sorter-switch/logic-sorter-switch-8"
       ]
     },
     {
-      "id": "success-听到只看形状-就选圆形篮子",
+      "id": "success-听到只看形状-就找圆形篮子-黄色先不管",
       "kind": "success",
-      "text": "听到只看形状，就选圆形篮子。",
+      "text": "听到只看形状，就找圆形篮子；黄色先不管。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-sorter-switch/logic-sorter-switch-8"
+      ]
+    },
+    {
+      "id": "retry-这题只看形状-黄色篮子是看颜色时才用的",
+      "kind": "retry",
+      "text": "这题只看形状。黄色篮子是看颜色时才用的。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-sorter-switch/logic-sorter-switch-8"
+      ]
+    },
+    {
+      "id": "parent-问她-圆形篮子和黄色篮子都像对的-为什么这次选形状",
+      "kind": "parent",
+      "text": "问她：圆形篮子和黄色篮子都像对的，为什么这次选形状？",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-sorter-switch/logic-sorter-switch-8"
       ]
@@ -5384,24 +5687,21 @@
       ]
     },
     {
-      "id": "retry-先看颜色-再看形状-两个都对才行",
+      "id": "retry-两个条件都要看-红色和圆形都对才行",
       "kind": "retry",
-      "text": "先看颜色，再看形状，两个都对才行。",
+      "text": "两个条件都要看：红色和圆形都对才行。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
-        "logic-sorter-switch/logic-sorter-switch-9",
-        "logic-sorter-switch/logic-sorter-switch-10",
-        "logic-sorter-switch/logic-sorter-switch-11"
+        "logic-sorter-switch/logic-sorter-switch-9"
       ]
     },
     {
-      "id": "parent-问她-它满足了哪两个条件-哪个选项只满足了一个",
+      "id": "parent-问她-哪一张两个条件都满足-哪一张只满足圆形-哪一张两个条件都不满足",
       "kind": "parent",
-      "text": "问她：它满足了哪两个条件？哪个选项只满足了一个？",
+      "text": "问她：哪一张两个条件都满足？哪一张只满足圆形？哪一张两个条件都不满足？",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-sorter-switch/logic-sorter-switch-9",
-        "logic-sorter-switch/logic-sorter-switch-10",
         "logic-sorter-switch/logic-sorter-switch-11"
       ]
     },
@@ -5418,9 +5718,9 @@
       ]
     },
     {
-      "id": "prompt-分类机要蓝色-也要方形-选哪一张-两个条件都要满足-少一个都不行",
+      "id": "prompt-分类机要蓝色-也要方形-哪一张两个条件都对-两个条件都要满足-少一个都不行",
       "kind": "prompt",
-      "text": "分类机要蓝色，也要方形。选哪一张？两个条件都要满足，少一个都不行。",
+      "text": "分类机要蓝色，也要方形。哪一张两个条件都对？两个条件都要满足，少一个都不行。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-sorter-switch/logic-sorter-switch-10"
@@ -5436,9 +5736,27 @@
       ]
     },
     {
-      "id": "prompt-分类机要黄色-也要圆形-选哪一张-两个条件都要满足-少一个都不行",
+      "id": "retry-两个条件都要看-蓝色和方形都对才行",
+      "kind": "retry",
+      "text": "两个条件都要看：蓝色和方形都对才行。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-sorter-switch/logic-sorter-switch-10"
+      ]
+    },
+    {
+      "id": "parent-问她-哪一张两个条件都满足-哪一张只满足颜色-哪一张两个条件都不满足",
+      "kind": "parent",
+      "text": "问她：哪一张两个条件都满足？哪一张只满足颜色？哪一张两个条件都不满足？",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-sorter-switch/logic-sorter-switch-10"
+      ]
+    },
+    {
+      "id": "prompt-分类机要黄色-也要圆形-哪一张两个条件都对-两个条件都要满足-少一个都不行",
       "kind": "prompt",
-      "text": "分类机要黄色，也要圆形。选哪一张？两个条件都要满足，少一个都不行。",
+      "text": "分类机要黄色，也要圆形。哪一张两个条件都对？两个条件都要满足，少一个都不行。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-sorter-switch/logic-sorter-switch-11"
@@ -5454,19 +5772,10 @@
       ]
     },
     {
-      "id": "choice-空位",
-      "kind": "choice",
-      "text": "空位",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-sorter-switch/logic-sorter-switch-11"
-      ]
-    },
-    {
-      "id": "object-空位",
-      "kind": "object",
-      "text": "空位",
-      "tone": "friendly, clear, playful",
+      "id": "retry-两个条件都要看-黄色和圆形都对才行",
+      "kind": "retry",
+      "text": "两个条件都要看：黄色和圆形都对才行。",
+      "tone": "gentle, encouraging, slow",
       "contexts": [
         "logic-sorter-switch/logic-sorter-switch-11"
       ]
@@ -5743,58 +6052,30 @@
       ]
     },
     {
-      "id": "success-先拿杯子-才好倒水喝水",
+      "id": "success-按顺序是口渴-先拿杯子-倒水-喝水-所以缺少的是先拿杯子",
       "kind": "success",
-      "text": "先拿杯子，才好倒水喝水。",
+      "text": "按顺序是口渴、先拿杯子、倒水、喝水，所以缺少的是先拿杯子。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-order-plan/logic-order-plan-1"
       ]
     },
     {
-      "id": "retry-先从生活目标往前想-没有这一步-后面的事能不能发生",
+      "id": "retry-先从左到右按顺序说-口渴-先拿杯子-倒水-喝水-再想缺少的先拿杯子让后面能继续",
       "kind": "retry",
-      "text": "先从生活目标往前想：没有这一步，后面的事能不能发生？",
+      "text": "先从左到右按顺序说：口渴、先拿杯子、倒水、喝水，再想缺少的先拿杯子让后面能继续。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
-        "logic-order-plan/logic-order-plan-1",
-        "logic-order-plan/logic-order-plan-2",
-        "logic-order-plan/logic-order-plan-3",
-        "logic-order-plan/logic-order-plan-4",
-        "logic-order-plan/logic-order-plan-5",
-        "logic-order-plan/logic-order-plan-6",
-        "logic-order-plan/logic-order-plan-7",
-        "logic-order-plan/logic-order-plan-8",
-        "logic-order-plan/logic-order-plan-9",
-        "logic-order-plan/logic-order-plan-10",
-        "logic-order-plan/logic-order-plan-11",
-        "logic-order-plan/logic-order-plan-12",
-        "logic-order-plan/logic-order-plan-13",
-        "logic-order-plan/logic-order-plan-14",
-        "logic-order-plan/logic-order-plan-15",
-        "logic-order-plan/logic-order-plan-16",
-        "logic-order-plan/logic-order-plan-17",
-        "logic-order-plan/logic-order-plan-18",
-        "logic-order-plan/logic-order-plan-19",
-        "logic-order-plan/logic-order-plan-20",
-        "logic-order-plan/logic-order-plan-21",
-        "logic-order-plan/logic-order-plan-22",
-        "logic-order-plan/logic-order-plan-23",
-        "logic-order-plan/logic-order-plan-24"
+        "logic-order-plan/logic-order-plan-1"
       ]
     },
     {
-      "id": "parent-请她用-先-然后-再-最后-复述这-2-步",
+      "id": "parent-请她指着图卡复述口渴-先拿杯子-倒水-喝水-说为什么缺少先拿杯子",
       "kind": "parent",
-      "text": "请她用“先、然后、再、最后”复述这 2 步。",
+      "text": "请她指着图卡复述口渴、先拿杯子、倒水、喝水，说为什么缺少先拿杯子。",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-order-plan/logic-order-plan-1",
-        "logic-order-plan/logic-order-plan-2",
-        "logic-order-plan/logic-order-plan-3",
-        "logic-order-plan/logic-order-plan-13",
-        "logic-order-plan/logic-order-plan-14",
-        "logic-order-plan/logic-order-plan-15"
+        "logic-order-plan/logic-order-plan-1"
       ]
     },
     {
@@ -5865,10 +6146,28 @@
       ]
     },
     {
-      "id": "success-先找钥匙-才能开门进屋",
+      "id": "success-按顺序是门关着-先找钥匙-开门-进屋-所以缺少的是先找钥匙",
       "kind": "success",
-      "text": "先找钥匙，才能开门进屋。",
+      "text": "按顺序是门关着、先找钥匙、开门、进屋，所以缺少的是先找钥匙。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-2"
+      ]
+    },
+    {
+      "id": "retry-先从左到右按顺序说-门关着-先找钥匙-开门-进屋-再想缺少的先找钥匙让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：门关着、先找钥匙、开门、进屋，再想缺少的先找钥匙让后面能继续。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-2"
+      ]
+    },
+    {
+      "id": "parent-请她指着图卡复述门关着-先找钥匙-开门-进屋-说为什么缺少先找钥匙",
+      "kind": "parent",
+      "text": "请她指着图卡复述门关着、先找钥匙、开门、进屋，说为什么缺少先找钥匙。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-2"
       ]
@@ -5937,10 +6236,28 @@
       ]
     },
     {
-      "id": "success-先轻轻放回水里-小鱼才安全",
+      "id": "success-按顺序是小鱼在岸上-轻轻放回水里-小河-所以缺少的是轻轻放回水里",
       "kind": "success",
-      "text": "先轻轻放回水里，小鱼才安全。",
+      "text": "按顺序是小鱼在岸上、轻轻放回水里、小河，所以缺少的是轻轻放回水里。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-3"
+      ]
+    },
+    {
+      "id": "retry-先从左到右按顺序说-小鱼在岸上-轻轻放回水里-小河-再想缺少的轻轻放回水里让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：小鱼在岸上、轻轻放回水里、小河，再想缺少的轻轻放回水里让后面能继续。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-3"
+      ]
+    },
+    {
+      "id": "parent-请她指着图卡复述小鱼在岸上-轻轻放回水里-小河-说为什么缺少轻轻放回水里",
+      "kind": "parent",
+      "text": "请她指着图卡复述小鱼在岸上、轻轻放回水里、小河，说为什么缺少轻轻放回水里。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-3"
       ]
@@ -6017,30 +6334,30 @@
       ]
     },
     {
-      "id": "success-先种下种子-然后发芽-最后开花",
+      "id": "success-按顺序是空花盆-种下种子-小芽-花-所以缺少的是种下种子",
       "kind": "success",
-      "text": "先种下种子，然后发芽，最后开花。",
+      "text": "按顺序是空花盆、种下种子、小芽、花，所以缺少的是种下种子。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-order-plan/logic-order-plan-4"
       ]
     },
     {
-      "id": "parent-请她用-先-然后-再-最后-复述这-3-步",
+      "id": "retry-先从左到右按顺序说-空花盆-种下种子-小芽-花-再想缺少的种下种子让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：空花盆、种下种子、小芽、花，再想缺少的种下种子让后面能继续。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-4"
+      ]
+    },
+    {
+      "id": "parent-请她指着图卡复述空花盆-种下种子-小芽-花-说为什么缺少种下种子",
       "kind": "parent",
-      "text": "请她用“先、然后、再、最后”复述这 3 步。",
+      "text": "请她指着图卡复述空花盆、种下种子、小芽、花，说为什么缺少种下种子。",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-order-plan/logic-order-plan-4",
-        "logic-order-plan/logic-order-plan-5",
-        "logic-order-plan/logic-order-plan-6",
-        "logic-order-plan/logic-order-plan-16",
-        "logic-order-plan/logic-order-plan-17",
-        "logic-order-plan/logic-order-plan-18",
-        "logic-order-plan/logic-order-plan-19",
-        "logic-order-plan/logic-order-plan-20",
-        "logic-order-plan/logic-order-plan-21",
-        "logic-order-plan/logic-order-plan-23"
+        "logic-order-plan/logic-order-plan-4"
       ]
     },
     {
@@ -6110,10 +6427,28 @@
       ]
     },
     {
-      "id": "success-手脏了先洗手-再拿饼干吃",
+      "id": "success-按顺序是手脏-先洗手-拿饼干-吃-所以缺少的是先洗手",
       "kind": "success",
-      "text": "手脏了先洗手，再拿饼干吃。",
+      "text": "按顺序是手脏、先洗手、拿饼干、吃，所以缺少的是先洗手。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-5"
+      ]
+    },
+    {
+      "id": "retry-先从左到右按顺序说-手脏-先洗手-拿饼干-吃-再想缺少的先洗手让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：手脏、先洗手、拿饼干、吃，再想缺少的先洗手让后面能继续。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-5"
+      ]
+    },
+    {
+      "id": "parent-请她指着图卡复述手脏-先洗手-拿饼干-吃-说为什么缺少先洗手",
+      "kind": "parent",
+      "text": "请她指着图卡复述手脏、先洗手、拿饼干、吃，说为什么缺少先洗手。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-5"
       ]
@@ -6210,12 +6545,33 @@
       ]
     },
     {
-      "id": "success-先捡积木-再一块一块搭高",
+      "id": "success-按顺序是积木倒了-先捡积木-高塔-所以缺少的是先捡积木",
       "kind": "success",
-      "text": "先捡积木，再一块一块搭高。",
+      "text": "按顺序是积木倒了、先捡积木、高塔，所以缺少的是先捡积木。",
       "tone": "warm, delighted, clear",
       "contexts": [
-        "logic-order-plan/logic-order-plan-6"
+        "logic-order-plan/logic-order-plan-6",
+        "logic-order-plan/logic-order-plan-21"
+      ]
+    },
+    {
+      "id": "retry-先从左到右按顺序说-积木倒了-先捡积木-高塔-再想缺少的先捡积木让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：积木倒了、先捡积木、高塔，再想缺少的先捡积木让后面能继续。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-6",
+        "logic-order-plan/logic-order-plan-21"
+      ]
+    },
+    {
+      "id": "parent-请她指着图卡复述积木倒了-先捡积木-高塔-说为什么缺少先捡积木",
+      "kind": "parent",
+      "text": "请她指着图卡复述积木倒了、先捡积木、高塔，说为什么缺少先捡积木。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-6",
+        "logic-order-plan/logic-order-plan-21"
       ]
     },
     {
@@ -6281,25 +6637,30 @@
       ]
     },
     {
-      "id": "success-先分类-再放进盒子-最后变整齐",
+      "id": "success-按顺序是玩具散了-先分类-放进盒子-整齐-所以缺少的是先分类",
       "kind": "success",
-      "text": "先分类，再放进盒子，最后变整齐。",
+      "text": "按顺序是玩具散了、先分类、放进盒子、整齐，所以缺少的是先分类。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-order-plan/logic-order-plan-7"
       ]
     },
     {
-      "id": "parent-请她用-先-然后-再-最后-复述这-4-步",
+      "id": "retry-先从左到右按顺序说-玩具散了-先分类-放进盒子-整齐-再想缺少的先分类让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：玩具散了、先分类、放进盒子、整齐，再想缺少的先分类让后面能继续。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-7"
+      ]
+    },
+    {
+      "id": "parent-请她指着图卡复述玩具散了-先分类-放进盒子-整齐-说为什么缺少先分类",
       "kind": "parent",
-      "text": "请她用“先、然后、再、最后”复述这 4 步。",
+      "text": "请她指着图卡复述玩具散了、先分类、放进盒子、整齐，说为什么缺少先分类。",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-order-plan/logic-order-plan-7",
-        "logic-order-plan/logic-order-plan-8",
-        "logic-order-plan/logic-order-plan-9",
-        "logic-order-plan/logic-order-plan-22",
-        "logic-order-plan/logic-order-plan-24"
+        "logic-order-plan/logic-order-plan-7"
       ]
     },
     {
@@ -6388,10 +6749,28 @@
       ]
     },
     {
-      "id": "success-先看灯-等绿灯-再安全走过去",
+      "id": "success-按顺序是路口-先看灯-绿灯-走过去-所以缺少的是先看灯",
       "kind": "success",
-      "text": "先看灯，等绿灯，再安全走过去。",
+      "text": "按顺序是路口、先看灯、绿灯、走过去，所以缺少的是先看灯。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-8"
+      ]
+    },
+    {
+      "id": "retry-先从左到右按顺序说-路口-先看灯-绿灯-走过去-再想缺少的先看灯让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：路口、先看灯、绿灯、走过去，再想缺少的先看灯让后面能继续。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-8"
+      ]
+    },
+    {
+      "id": "parent-请她指着图卡复述路口-先看灯-绿灯-走过去-说为什么缺少先看灯",
+      "kind": "parent",
+      "text": "请她指着图卡复述路口、先看灯、绿灯、走过去，说为什么缺少先看灯。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-8"
       ]
@@ -6476,10 +6855,28 @@
       ]
     },
     {
-      "id": "success-先拿杯子-再倒水-小朋友才能喝",
+      "id": "success-按顺序是小朋友-先拿杯子-先倒水-喝水-所以缺少的是先倒水",
       "kind": "success",
-      "text": "先拿杯子，再倒水，小朋友才能喝。",
+      "text": "按顺序是小朋友、先拿杯子、先倒水、喝水，所以缺少的是先倒水。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-9"
+      ]
+    },
+    {
+      "id": "retry-先从左到右按顺序说-小朋友-先拿杯子-先倒水-喝水-再想缺少的先倒水让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：小朋友、先拿杯子、先倒水、喝水，再想缺少的先倒水让后面能继续。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-9"
+      ]
+    },
+    {
+      "id": "parent-请她指着图卡复述小朋友-先拿杯子-先倒水-喝水-说为什么缺少先倒水",
+      "kind": "parent",
+      "text": "请她指着图卡复述小朋友、先拿杯子、先倒水、喝水，说为什么缺少先倒水。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-9"
       ]
@@ -6523,23 +6920,30 @@
       ]
     },
     {
-      "id": "success-手脏了先洗手-再拿盘子和饼干-最后吃",
+      "id": "success-按顺序是手脏-先洗手-拿盘子-拿饼干-吃-所以缺少的是先洗手",
       "kind": "success",
-      "text": "手脏了先洗手，再拿盘子和饼干，最后吃。",
+      "text": "按顺序是手脏、先洗手、拿盘子、拿饼干、吃，所以缺少的是先洗手。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-order-plan/logic-order-plan-10"
       ]
     },
     {
-      "id": "parent-请她用-先-然后-再-最后-复述这-5-步",
+      "id": "retry-先从左到右按顺序说-手脏-先洗手-拿盘子-拿饼干-吃-再想缺少的先洗手让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：手脏、先洗手、拿盘子、拿饼干、吃，再想缺少的先洗手让后面能继续。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-10"
+      ]
+    },
+    {
+      "id": "parent-请她指着图卡复述手脏-先洗手-拿盘子-拿饼干-吃-说为什么缺少先洗手",
       "kind": "parent",
-      "text": "请她用“先、然后、再、最后”复述这 5 步。",
+      "text": "请她指着图卡复述手脏、先洗手、拿盘子、拿饼干、吃，说为什么缺少先洗手。",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-order-plan/logic-order-plan-10",
-        "logic-order-plan/logic-order-plan-11",
-        "logic-order-plan/logic-order-plan-12"
+        "logic-order-plan/logic-order-plan-10"
       ]
     },
     {
@@ -6572,10 +6976,28 @@
       ]
     },
     {
-      "id": "success-有小河时先搭桥-走过去以后才能拿胡萝卜",
+      "id": "success-按顺序是小河-先搭桥-走过去-胡萝卜-所以缺少的是先搭桥",
       "kind": "success",
-      "text": "有小河时先搭桥，走过去以后才能拿胡萝卜。",
+      "text": "按顺序是小河、先搭桥、走过去、胡萝卜，所以缺少的是先搭桥。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-11"
+      ]
+    },
+    {
+      "id": "retry-先从左到右按顺序说-小河-先搭桥-走过去-胡萝卜-再想缺少的先搭桥让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：小河、先搭桥、走过去、胡萝卜，再想缺少的先搭桥让后面能继续。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-11"
+      ]
+    },
+    {
+      "id": "parent-请她指着图卡复述小河-先搭桥-走过去-胡萝卜-说为什么缺少先搭桥",
+      "kind": "parent",
+      "text": "请她指着图卡复述小河、先搭桥、走过去、胡萝卜，说为什么缺少先搭桥。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-11"
       ]
@@ -6633,10 +7055,28 @@
       ]
     },
     {
-      "id": "success-先捡起来-再分类-才能更容易搭好收整齐",
+      "id": "success-按顺序是积木倒了-先捡积木-先分类-高塔-整齐-所以缺少的是先分类",
       "kind": "success",
-      "text": "先捡起来，再分类，才能更容易搭好收整齐。",
+      "text": "按顺序是积木倒了、先捡积木、先分类、高塔、整齐，所以缺少的是先分类。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-12"
+      ]
+    },
+    {
+      "id": "retry-先从左到右按顺序说-积木倒了-先捡积木-先分类-高塔-整齐-再想缺少的先分类让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：积木倒了、先捡积木、先分类、高塔、整齐，再想缺少的先分类让后面能继续。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-12"
+      ]
+    },
+    {
+      "id": "parent-请她指着图卡复述积木倒了-先捡积木-先分类-高塔-整齐-说为什么缺少先分类",
+      "kind": "parent",
+      "text": "请她指着图卡复述积木倒了、先捡积木、先分类、高塔、整齐，说为什么缺少先分类。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-12"
       ]
@@ -6660,10 +7100,28 @@
       ]
     },
     {
-      "id": "success-写字前先拿铅笔最合适",
+      "id": "success-按顺序是上课-铅笔-写字-所以缺少的是铅笔",
       "kind": "success",
-      "text": "写字前先拿铅笔最合适。",
+      "text": "按顺序是上课、铅笔、写字，所以缺少的是铅笔。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-13"
+      ]
+    },
+    {
+      "id": "retry-先从左到右按顺序说-上课-铅笔-写字-再想缺少的铅笔让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：上课、铅笔、写字，再想缺少的铅笔让后面能继续。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-13"
+      ]
+    },
+    {
+      "id": "parent-请她指着图卡复述上课-铅笔-写字-说为什么缺少铅笔",
+      "kind": "parent",
+      "text": "请她指着图卡复述上课、铅笔、写字，说为什么缺少铅笔。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-13"
       ]
@@ -6750,10 +7208,28 @@
       ]
     },
     {
-      "id": "success-书本要先放进书包-才方便带去学校",
+      "id": "success-按顺序是书本-书包-去学校-所以缺少的是书包",
       "kind": "success",
-      "text": "书本要先放进书包，才方便带去学校。",
+      "text": "按顺序是书本、书包、去学校，所以缺少的是书包。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-14"
+      ]
+    },
+    {
+      "id": "retry-先从左到右按顺序说-书本-书包-去学校-再想缺少的书包让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：书本、书包、去学校，再想缺少的书包让后面能继续。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-14"
+      ]
+    },
+    {
+      "id": "parent-请她指着图卡复述书本-书包-去学校-说为什么缺少书包",
+      "kind": "parent",
+      "text": "请她指着图卡复述书本、书包、去学校，说为什么缺少书包。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-14"
       ]
@@ -6872,10 +7348,28 @@
       ]
     },
     {
-      "id": "success-下雨出门先准备雨衣-身体才不容易淋湿",
+      "id": "success-按顺序是下雨-雨衣-出门-所以缺少的是雨衣",
       "kind": "success",
-      "text": "下雨出门先准备雨衣，身体才不容易淋湿。",
+      "text": "按顺序是下雨、雨衣、出门，所以缺少的是雨衣。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-15"
+      ]
+    },
+    {
+      "id": "retry-先从左到右按顺序说-下雨-雨衣-出门-再想缺少的雨衣让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：下雨、雨衣、出门，再想缺少的雨衣让后面能继续。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-15"
+      ]
+    },
+    {
+      "id": "parent-请她指着图卡复述下雨-雨衣-出门-说为什么缺少雨衣",
+      "kind": "parent",
+      "text": "请她指着图卡复述下雨、雨衣、出门，说为什么缺少雨衣。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-15"
       ]
@@ -6946,10 +7440,28 @@
       ]
     },
     {
-      "id": "success-先拿盘子-再拿饼干吃更干净",
+      "id": "success-按顺序是饼干-拿盘子-吃-所以缺少的是拿盘子",
       "kind": "success",
-      "text": "先拿盘子，再拿饼干吃更干净。",
+      "text": "按顺序是饼干、拿盘子、吃，所以缺少的是拿盘子。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-16"
+      ]
+    },
+    {
+      "id": "retry-先从左到右按顺序说-饼干-拿盘子-吃-再想缺少的拿盘子让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：饼干、拿盘子、吃，再想缺少的拿盘子让后面能继续。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-16"
+      ]
+    },
+    {
+      "id": "parent-请她指着图卡复述饼干-拿盘子-吃-说为什么缺少拿盘子",
+      "kind": "parent",
+      "text": "请她指着图卡复述饼干、拿盘子、吃，说为什么缺少拿盘子。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-16"
       ]
@@ -6994,10 +7506,28 @@
       ]
     },
     {
-      "id": "success-手脏了先洗手-再拿点心",
+      "id": "success-按顺序是手脏-先洗手-拿饼干-所以缺少的是先洗手",
       "kind": "success",
-      "text": "手脏了先洗手，再拿点心。",
+      "text": "按顺序是手脏、先洗手、拿饼干，所以缺少的是先洗手。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-17"
+      ]
+    },
+    {
+      "id": "retry-先从左到右按顺序说-手脏-先洗手-拿饼干-再想缺少的先洗手让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：手脏、先洗手、拿饼干，再想缺少的先洗手让后面能继续。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-17"
+      ]
+    },
+    {
+      "id": "parent-请她指着图卡复述手脏-先洗手-拿饼干-说为什么缺少先洗手",
+      "kind": "parent",
+      "text": "请她指着图卡复述手脏、先洗手、拿饼干，说为什么缺少先洗手。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-17"
       ]
@@ -7012,10 +7542,28 @@
       ]
     },
     {
-      "id": "success-空杯子要先倒水-才能喝",
+      "id": "success-按顺序是杯子-先倒水-喝水-所以缺少的是先倒水",
       "kind": "success",
-      "text": "空杯子要先倒水，才能喝。",
+      "text": "按顺序是杯子、先倒水、喝水，所以缺少的是先倒水。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-18"
+      ]
+    },
+    {
+      "id": "retry-先从左到右按顺序说-杯子-先倒水-喝水-再想缺少的先倒水让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：杯子、先倒水、喝水，再想缺少的先倒水让后面能继续。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-18"
+      ]
+    },
+    {
+      "id": "parent-请她指着图卡复述杯子-先倒水-喝水-说为什么缺少先倒水",
+      "kind": "parent",
+      "text": "请她指着图卡复述杯子、先倒水、喝水，说为什么缺少先倒水。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-18"
       ]
@@ -7051,10 +7599,28 @@
       ]
     },
     {
-      "id": "success-红灯时先停-等能走的时候再过马路",
+      "id": "success-按顺序是路口-红灯-停-所以缺少的是停",
       "kind": "success",
-      "text": "红灯时先停，等能走的时候再过马路。",
+      "text": "按顺序是路口、红灯、停，所以缺少的是停。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-19"
+      ]
+    },
+    {
+      "id": "retry-先从左到右按顺序说-路口-红灯-停-再想缺少的停让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：路口、红灯、停，再想缺少的停让后面能继续。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-19"
+      ]
+    },
+    {
+      "id": "parent-请她指着图卡复述路口-红灯-停-说为什么缺少停",
+      "kind": "parent",
+      "text": "请她指着图卡复述路口、红灯、停，说为什么缺少停。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-19"
       ]
@@ -7098,10 +7664,28 @@
       ]
     },
     {
-      "id": "success-过马路前先看灯-再决定能不能走",
+      "id": "success-按顺序是路口-先看灯-走过去-所以缺少的是先看灯",
       "kind": "success",
-      "text": "过马路前先看灯，再决定能不能走。",
+      "text": "按顺序是路口、先看灯、走过去，所以缺少的是先看灯。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-20"
+      ]
+    },
+    {
+      "id": "retry-先从左到右按顺序说-路口-先看灯-走过去-再想缺少的先看灯让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：路口、先看灯、走过去，再想缺少的先看灯让后面能继续。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-20"
+      ]
+    },
+    {
+      "id": "parent-请她指着图卡复述路口-先看灯-走过去-说为什么缺少先看灯",
+      "kind": "parent",
+      "text": "请她指着图卡复述路口、先看灯、走过去，说为什么缺少先看灯。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-20"
       ]
@@ -7125,15 +7709,6 @@
       ]
     },
     {
-      "id": "success-先把积木捡起来-才好重新搭塔",
-      "kind": "success",
-      "text": "先把积木捡起来，才好重新搭塔。",
-      "tone": "warm, delighted, clear",
-      "contexts": [
-        "logic-order-plan/logic-order-plan-21"
-      ]
-    },
-    {
       "id": "choice-直接搭高塔",
       "kind": "choice",
       "text": "直接搭高塔",
@@ -7152,10 +7727,28 @@
       ]
     },
     {
-      "id": "success-小河挡住了路-要先搭桥",
+      "id": "success-按顺序是小河-先搭桥-小旗-所以缺少的是先搭桥",
       "kind": "success",
-      "text": "小河挡住了路，要先搭桥。",
+      "text": "按顺序是小河、先搭桥、小旗，所以缺少的是先搭桥。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-22"
+      ]
+    },
+    {
+      "id": "retry-先从左到右按顺序说-小河-先搭桥-小旗-再想缺少的先搭桥让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：小河、先搭桥、小旗，再想缺少的先搭桥让后面能继续。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-22"
+      ]
+    },
+    {
+      "id": "parent-请她指着图卡复述小河-先搭桥-小旗-说为什么缺少先搭桥",
+      "kind": "parent",
+      "text": "请她指着图卡复述小河、先搭桥、小旗，说为什么缺少先搭桥。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-22"
       ]
@@ -7220,10 +7813,28 @@
       ]
     },
     {
-      "id": "success-小芽需要照顾-浇水以后更可能长成花",
+      "id": "success-按顺序是小芽-先浇水-花-所以缺少的是先浇水",
       "kind": "success",
-      "text": "小芽需要照顾，浇水以后更可能长成花。",
+      "text": "按顺序是小芽、先浇水、花，所以缺少的是先浇水。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-23"
+      ]
+    },
+    {
+      "id": "retry-先从左到右按顺序说-小芽-先浇水-花-再想缺少的先浇水让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：小芽、先浇水、花，再想缺少的先浇水让后面能继续。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-23"
+      ]
+    },
+    {
+      "id": "parent-请她指着图卡复述小芽-先浇水-花-说为什么缺少先浇水",
+      "kind": "parent",
+      "text": "请她指着图卡复述小芽、先浇水、花，说为什么缺少先浇水。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-23"
       ]
@@ -7256,10 +7867,28 @@
       ]
     },
     {
-      "id": "success-已经分类了-下一步放进盒子-房间就更整齐",
+      "id": "success-按顺序是先分类-先放进盒子-整齐-所以缺少的是先放进盒子",
       "kind": "success",
-      "text": "已经分类了，下一步放进盒子，房间就更整齐。",
+      "text": "按顺序是先分类、先放进盒子、整齐，所以缺少的是先放进盒子。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-24"
+      ]
+    },
+    {
+      "id": "retry-先从左到右按顺序说-先分类-先放进盒子-整齐-再想缺少的先放进盒子让后面能继续",
+      "kind": "retry",
+      "text": "先从左到右按顺序说：先分类、先放进盒子、整齐，再想缺少的先放进盒子让后面能继续。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-24"
+      ]
+    },
+    {
+      "id": "parent-请她指着图卡复述先分类-先放进盒子-整齐-说为什么缺少先放进盒子",
+      "kind": "parent",
+      "text": "请她指着图卡复述先分类、先放进盒子、整齐，说为什么缺少先放进盒子。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-24"
       ]
@@ -7348,7 +7977,6 @@
         "logic-position-map/logic-position-map-6",
         "logic-position-map/logic-position-map-9",
         "logic-memory-camera/logic-memory-camera-5",
-        "logic-difference-detective/logic-difference-detective-1",
         "logic-difference-detective/logic-difference-detective-11",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-9",
         "logic-route-steps/logic-route-steps-5",
@@ -10512,24 +11140,6 @@
       ]
     },
     {
-      "id": "choice-饼干",
-      "kind": "choice",
-      "text": "饼干",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-relation-pairs/pencil-case-pencil",
-        "logic-relation-pairs/lunchbox-cookie",
-        "logic-relation-pairs/schoolbag-book-analogy",
-        "logic-same-kind-detective/logic-same-kind-detective-5",
-        "logic-same-kind-detective/logic-same-kind-detective-11",
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-2",
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-5",
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-8",
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-11",
-        "logic-balance-swap/logic-balance-swap-2"
-      ]
-    },
-    {
       "id": "prompt-饭盒和谁最容易配成一对-先想它主要用来装什么",
       "kind": "prompt",
       "text": "饭盒和谁最容易配成一对？先想它主要用来装什么。",
@@ -11897,9 +12507,9 @@
       ]
     },
     {
-      "id": "prompt-这些是一家-水果-谁也应该住进来-先说共同点-再选同一类",
+      "id": "prompt-这些都属于水果-谁也能放进这一组-先说它们哪里一样-再选也符合这个规则的",
       "kind": "prompt",
-      "text": "这些是一家：水果。谁也应该住进来？先说共同点，再选同一类。",
+      "text": "这些都属于水果。谁也能放进这一组？先说它们哪里一样，再选也符合这个规则的。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-same-kind-detective/logic-same-kind-detective-1"
@@ -11915,31 +12525,21 @@
       ]
     },
     {
-      "id": "retry-不要只看颜色-先想它们都是什么",
+      "id": "retry-先找共同点-它们都能吃-都是水果-再看谁也符合这个规则",
       "kind": "retry",
-      "text": "不要只看颜色，先想它们都是什么。",
+      "text": "先找共同点：它们都能吃，都是水果。再看谁也符合这个规则。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
-        "logic-same-kind-detective/logic-same-kind-detective-1",
-        "logic-same-kind-detective/logic-same-kind-detective-2",
-        "logic-same-kind-detective/logic-same-kind-detective-3",
-        "logic-same-kind-detective/logic-same-kind-detective-4",
-        "logic-same-kind-detective/logic-same-kind-detective-5",
-        "logic-same-kind-detective/logic-same-kind-detective-6"
+        "logic-same-kind-detective/logic-same-kind-detective-1"
       ]
     },
     {
-      "id": "parent-问她-这几个东西哪里一样-你用什么规则分的",
+      "id": "parent-问她-这组的规则是水果-葡萄为什么也属于这一类",
       "kind": "parent",
-      "text": "问她：这几个东西哪里一样？你用什么规则分的？",
+      "text": "问她：这组的规则是水果。葡萄为什么也属于这一类？",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-same-kind-detective/logic-same-kind-detective-1",
-        "logic-same-kind-detective/logic-same-kind-detective-2",
-        "logic-same-kind-detective/logic-same-kind-detective-3",
-        "logic-same-kind-detective/logic-same-kind-detective-4",
-        "logic-same-kind-detective/logic-same-kind-detective-5",
-        "logic-same-kind-detective/logic-same-kind-detective-6"
+        "logic-same-kind-detective/logic-same-kind-detective-1"
       ]
     },
     {
@@ -11986,9 +12586,9 @@
       ]
     },
     {
-      "id": "prompt-这些是一家-交通工具-谁也应该住进来-先说共同点-再选同一类",
+      "id": "prompt-这些都属于交通工具-谁也能放进这一组-先说它们哪里一样-再选也符合这个规则的",
       "kind": "prompt",
-      "text": "这些是一家：交通工具。谁也应该住进来？先说共同点，再选同一类。",
+      "text": "这些都属于交通工具。谁也能放进这一组？先说它们哪里一样，再选也符合这个规则的。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-same-kind-detective/logic-same-kind-detective-2"
@@ -11999,6 +12599,24 @@
       "kind": "success",
       "text": "飞机也属于交通工具。它们都能带我们去别的地方。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-same-kind-detective/logic-same-kind-detective-2"
+      ]
+    },
+    {
+      "id": "retry-先找共同点-它们都能带我们去别的地方-再看谁也符合这个规则",
+      "kind": "retry",
+      "text": "先找共同点：它们都能带我们去别的地方。再看谁也符合这个规则。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-same-kind-detective/logic-same-kind-detective-2"
+      ]
+    },
+    {
+      "id": "parent-问她-这组的规则是交通工具-飞机为什么也属于这一类",
+      "kind": "parent",
+      "text": "问她：这组的规则是交通工具。飞机为什么也属于这一类？",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-same-kind-detective/logic-same-kind-detective-2"
       ]
@@ -12073,9 +12691,9 @@
       ]
     },
     {
-      "id": "prompt-这些是一家-学习用品-谁也应该住进来-先说共同点-再选同一类",
+      "id": "prompt-这些都属于学习用品-谁也能放进这一组-先说它们哪里一样-再选也符合这个规则的",
       "kind": "prompt",
-      "text": "这些是一家：学习用品。谁也应该住进来？先说共同点，再选同一类。",
+      "text": "这些都属于学习用品。谁也能放进这一组？先说它们哪里一样，再选也符合这个规则的。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-same-kind-detective/logic-same-kind-detective-3"
@@ -12086,6 +12704,24 @@
       "kind": "success",
       "text": "书本也属于学习用品。它们常常在书桌或书包里。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-same-kind-detective/logic-same-kind-detective-3"
+      ]
+    },
+    {
+      "id": "retry-先找共同点-它们常常在书桌或书包里-再看谁也符合这个规则",
+      "kind": "retry",
+      "text": "先找共同点：它们常常在书桌或书包里。再看谁也符合这个规则。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-same-kind-detective/logic-same-kind-detective-3"
+      ]
+    },
+    {
+      "id": "parent-问她-这组的规则是学习用品-书本为什么也属于这一类",
+      "kind": "parent",
+      "text": "问她：这组的规则是学习用品。书本为什么也属于这一类？",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-same-kind-detective/logic-same-kind-detective-3"
       ]
@@ -12118,9 +12754,9 @@
       ]
     },
     {
-      "id": "prompt-这些是一家-陆地小动物-谁也应该住进来-先说共同点-再选同一类",
+      "id": "prompt-这些都属于陆地小动物-谁也能放进这一组-先说它们哪里一样-再选也符合这个规则的",
       "kind": "prompt",
-      "text": "这些是一家：陆地小动物。谁也应该住进来？先说共同点，再选同一类。",
+      "text": "这些都属于陆地小动物。谁也能放进这一组？先说它们哪里一样，再选也符合这个规则的。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-same-kind-detective/logic-same-kind-detective-4"
@@ -12131,6 +12767,24 @@
       "kind": "success",
       "text": "小熊也属于陆地小动物。它们都是常在地上走的动物。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-same-kind-detective/logic-same-kind-detective-4"
+      ]
+    },
+    {
+      "id": "retry-先找共同点-它们都是常在地上走的动物-再看谁也符合这个规则",
+      "kind": "retry",
+      "text": "先找共同点：它们都是常在地上走的动物。再看谁也符合这个规则。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-same-kind-detective/logic-same-kind-detective-4"
+      ]
+    },
+    {
+      "id": "parent-问她-这组的规则是陆地小动物-小熊为什么也属于这一类",
+      "kind": "parent",
+      "text": "问她：这组的规则是陆地小动物。小熊为什么也属于这一类？",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-same-kind-detective/logic-same-kind-detective-4"
       ]
@@ -12156,9 +12810,9 @@
       ]
     },
     {
-      "id": "prompt-这些是一家-圆圆的东西-谁也应该住进来-先说共同点-再选同一类",
+      "id": "prompt-这些都属于圆圆的东西-谁也能放进这一组-先说它们哪里一样-再选也符合这个规则的",
       "kind": "prompt",
-      "text": "这些是一家：圆圆的东西。谁也应该住进来？先说共同点，再选同一类。",
+      "text": "这些都属于圆圆的东西。谁也能放进这一组？先说它们哪里一样，再选也符合这个规则的。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-same-kind-detective/logic-same-kind-detective-5"
@@ -12169,6 +12823,24 @@
       "kind": "success",
       "text": "饼干也属于圆圆的东西。它们看起来都是圆圆的。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-same-kind-detective/logic-same-kind-detective-5"
+      ]
+    },
+    {
+      "id": "retry-先找共同点-它们看起来都是圆圆的-再看谁也符合这个规则",
+      "kind": "retry",
+      "text": "先找共同点：它们看起来都是圆圆的。再看谁也符合这个规则。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-same-kind-detective/logic-same-kind-detective-5"
+      ]
+    },
+    {
+      "id": "parent-问她-这组的规则是圆圆的东西-饼干为什么也属于这一类",
+      "kind": "parent",
+      "text": "问她：这组的规则是圆圆的东西。饼干为什么也属于这一类？",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-same-kind-detective/logic-same-kind-detective-5"
       ]
@@ -12189,9 +12861,9 @@
       ]
     },
     {
-      "id": "prompt-这些是一家-可以吃的东西-谁也应该住进来-先说共同点-再选同一类",
+      "id": "prompt-这些都属于可以吃的东西-谁也能放进这一组-先说它们哪里一样-再选也符合这个规则的",
       "kind": "prompt",
-      "text": "这些是一家：可以吃的东西。谁也应该住进来？先说共同点，再选同一类。",
+      "text": "这些都属于可以吃的东西。谁也能放进这一组？先说它们哪里一样，再选也符合这个规则的。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-same-kind-detective/logic-same-kind-detective-6"
@@ -12202,6 +12874,24 @@
       "kind": "success",
       "text": "蛋糕也属于可以吃的东西。这些都可以吃。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-same-kind-detective/logic-same-kind-detective-6"
+      ]
+    },
+    {
+      "id": "retry-先找共同点-这些都可以吃-再看谁也符合这个规则",
+      "kind": "retry",
+      "text": "先找共同点：这些都可以吃。再看谁也符合这个规则。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-same-kind-detective/logic-same-kind-detective-6"
+      ]
+    },
+    {
+      "id": "parent-问她-这组的规则是可以吃的东西-蛋糕为什么也属于这一类",
+      "kind": "parent",
+      "text": "问她：这组的规则是可以吃的东西。蛋糕为什么也属于这一类？",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-same-kind-detective/logic-same-kind-detective-6"
       ]
@@ -12268,9 +12958,9 @@
       ]
     },
     {
-      "id": "success-只有小汽车不是水果",
+      "id": "success-苹果-橘子-葡萄这三个是水果-小汽车不是水果",
       "kind": "success",
-      "text": "只有小汽车不是水果。",
+      "text": "苹果、橘子、葡萄这三个是水果，小汽车不是水果。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-same-kind-detective/logic-same-kind-detective-7"
@@ -12305,24 +12995,6 @@
       ]
     },
     {
-      "id": "choice-苹果",
-      "kind": "choice",
-      "text": "苹果",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-same-kind-detective/logic-same-kind-detective-7",
-        "logic-memory-camera/logic-memory-camera-1",
-        "logic-memory-camera/logic-memory-camera-9",
-        "logic-difference-detective/logic-difference-detective-8",
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-5",
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-8",
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-11",
-        "logic-route-steps/logic-route-steps-1",
-        "logic-route-steps/logic-route-steps-2",
-        "logic-route-steps/logic-route-steps-3"
-      ]
-    },
-    {
       "id": "choice-橘子",
       "kind": "choice",
       "text": "橘子",
@@ -12348,9 +13020,9 @@
       ]
     },
     {
-      "id": "success-蛋糕不能当交通工具",
+      "id": "success-小汽车-公交车-飞机这三个能带我们移动-蛋糕不能当交通工具",
       "kind": "success",
-      "text": "蛋糕不能当交通工具。",
+      "text": "小汽车、公交车、飞机这三个能带我们移动，蛋糕不能当交通工具。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-same-kind-detective/logic-same-kind-detective-8"
@@ -12428,36 +13100,36 @@
       ]
     },
     {
-      "id": "success-小鱼不是学习用品",
+      "id": "success-铅笔-书包-尺子这三个是学习用品-小鱼不是学习用品",
       "kind": "success",
-      "text": "小鱼不是学习用品。",
+      "text": "铅笔、书包、尺子这三个是学习用品，小鱼不是学习用品。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-same-kind-detective/logic-same-kind-detective-9"
       ]
     },
     {
-      "id": "success-杯子不是小动物",
+      "id": "success-小猫-小狗-小兔这三个是小动物-杯子不是小动物",
       "kind": "success",
-      "text": "杯子不是小动物。",
+      "text": "小猫、小狗、小兔这三个是小动物，杯子不是小动物。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-same-kind-detective/logic-same-kind-detective-10"
       ]
     },
     {
-      "id": "success-长木板不是圆圆的",
+      "id": "success-足球-橘子-饼干这三个是圆圆的-长木板不是圆圆的",
       "kind": "success",
-      "text": "长木板不是圆圆的。",
+      "text": "足球、橘子、饼干这三个是圆圆的，长木板不是圆圆的。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-same-kind-detective/logic-same-kind-detective-11"
       ]
     },
     {
-      "id": "success-小鱼不会在天上飞",
+      "id": "success-小鸟-飞机-风筝这三个能在天上-小鱼不会在天上飞",
       "kind": "success",
-      "text": "小鱼不会在天上飞。",
+      "text": "小鸟、飞机、风筝这三个能在天上，小鱼不会在天上飞。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-same-kind-detective/logic-same-kind-detective-12"
@@ -13007,44 +13679,30 @@
       ]
     },
     {
-      "id": "success-a1-的格子里是小鸟",
+      "id": "success-a1-是-a-行-1-列-格子里是小鸟",
       "kind": "success",
-      "text": "A1 的格子里是小鸟。",
+      "text": "A1 是 A 行 1 列，格子里是小鸟。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-address-map/logic-address-map-1"
       ]
     },
     {
-      "id": "retry-先用手指找到字母-再横着找到数字",
+      "id": "retry-先找到-a-行-再横着找到-1-列-不要先猜物品",
       "kind": "retry",
-      "text": "先用手指找到字母，再横着找到数字。",
+      "text": "先找到 A 行，再横着找到 1 列，不要先猜物品。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
-        "logic-address-map/logic-address-map-1",
-        "logic-address-map/logic-address-map-2",
-        "logic-address-map/logic-address-map-3",
-        "logic-address-map/logic-address-map-4",
-        "logic-address-map/logic-address-map-5",
-        "logic-address-map/logic-address-map-6",
-        "logic-address-map/logic-address-map-7",
-        "logic-address-map/logic-address-map-8"
+        "logic-address-map/logic-address-map-1"
       ]
     },
     {
-      "id": "parent-请她说-我先找哪一行-再找哪一列",
+      "id": "parent-请她指着-a-行和-1-列交叉的格子-说为什么是小鸟",
       "kind": "parent",
-      "text": "请她说：我先找哪一行，再找哪一列。",
+      "text": "请她指着 A 行和 1 列交叉的格子，说为什么是小鸟。",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-address-map/logic-address-map-1",
-        "logic-address-map/logic-address-map-2",
-        "logic-address-map/logic-address-map-3",
-        "logic-address-map/logic-address-map-4",
-        "logic-address-map/logic-address-map-5",
-        "logic-address-map/logic-address-map-6",
-        "logic-address-map/logic-address-map-7",
-        "logic-address-map/logic-address-map-8"
+        "logic-address-map/logic-address-map-1"
       ]
     },
     {
@@ -13077,10 +13735,28 @@
       ]
     },
     {
-      "id": "success-a3-的格子里是积木塔",
+      "id": "success-a3-是-a-行-3-列-格子里是积木塔",
       "kind": "success",
-      "text": "A3 的格子里是积木塔。",
+      "text": "A3 是 A 行 3 列，格子里是积木塔。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-address-map/logic-address-map-2"
+      ]
+    },
+    {
+      "id": "retry-先找到-a-行-再横着找到-3-列-不要先猜物品",
+      "kind": "retry",
+      "text": "先找到 A 行，再横着找到 3 列，不要先猜物品。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-address-map/logic-address-map-2"
+      ]
+    },
+    {
+      "id": "parent-请她指着-a-行和-3-列交叉的格子-说为什么是积木塔",
+      "kind": "parent",
+      "text": "请她指着 A 行和 3 列交叉的格子，说为什么是积木塔。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-address-map/logic-address-map-2"
       ]
@@ -13095,10 +13771,28 @@
       ]
     },
     {
-      "id": "success-b2-的格子里是小猫",
+      "id": "success-b2-是-b-行-2-列-格子里是小猫",
       "kind": "success",
-      "text": "B2 的格子里是小猫。",
+      "text": "B2 是 B 行 2 列，格子里是小猫。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-address-map/logic-address-map-3"
+      ]
+    },
+    {
+      "id": "retry-先找到-b-行-再横着找到-2-列-不要先猜物品",
+      "kind": "retry",
+      "text": "先找到 B 行，再横着找到 2 列，不要先猜物品。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-address-map/logic-address-map-3"
+      ]
+    },
+    {
+      "id": "parent-请她指着-b-行和-2-列交叉的格子-说为什么是小猫",
+      "kind": "parent",
+      "text": "请她指着 B 行和 2 列交叉的格子，说为什么是小猫。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-address-map/logic-address-map-3"
       ]
@@ -13113,10 +13807,28 @@
       ]
     },
     {
-      "id": "success-c1-的格子里是书包",
+      "id": "success-c1-是-c-行-1-列-格子里是书包",
       "kind": "success",
-      "text": "C1 的格子里是书包。",
+      "text": "C1 是 C 行 1 列，格子里是书包。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-address-map/logic-address-map-4"
+      ]
+    },
+    {
+      "id": "retry-先找到-c-行-再横着找到-1-列-不要先猜物品",
+      "kind": "retry",
+      "text": "先找到 C 行，再横着找到 1 列，不要先猜物品。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-address-map/logic-address-map-4"
+      ]
+    },
+    {
+      "id": "parent-请她指着-c-行和-1-列交叉的格子-说为什么是书包",
+      "kind": "parent",
+      "text": "请她指着 C 行和 1 列交叉的格子，说为什么是书包。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-address-map/logic-address-map-4"
       ]
@@ -13131,10 +13843,28 @@
       ]
     },
     {
-      "id": "success-a4-的格子里是铅笔",
+      "id": "success-a4-是-a-行-4-列-格子里是铅笔",
       "kind": "success",
-      "text": "A4 的格子里是铅笔。",
+      "text": "A4 是 A 行 4 列，格子里是铅笔。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-address-map/logic-address-map-5"
+      ]
+    },
+    {
+      "id": "retry-先找到-a-行-再横着找到-4-列-不要先猜物品",
+      "kind": "retry",
+      "text": "先找到 A 行，再横着找到 4 列，不要先猜物品。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-address-map/logic-address-map-5"
+      ]
+    },
+    {
+      "id": "parent-请她指着-a-行和-4-列交叉的格子-说为什么是铅笔",
+      "kind": "parent",
+      "text": "请她指着 A 行和 4 列交叉的格子，说为什么是铅笔。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-address-map/logic-address-map-5"
       ]
@@ -13176,10 +13906,28 @@
       ]
     },
     {
-      "id": "success-b3-的格子里是积木塔",
+      "id": "success-b3-是-b-行-3-列-格子里是积木塔",
       "kind": "success",
-      "text": "B3 的格子里是积木塔。",
+      "text": "B3 是 B 行 3 列，格子里是积木塔。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-address-map/logic-address-map-6"
+      ]
+    },
+    {
+      "id": "retry-先找到-b-行-再横着找到-3-列-不要先猜物品",
+      "kind": "retry",
+      "text": "先找到 B 行，再横着找到 3 列，不要先猜物品。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-address-map/logic-address-map-6"
+      ]
+    },
+    {
+      "id": "parent-请她指着-b-行和-3-列交叉的格子-说为什么是积木塔",
+      "kind": "parent",
+      "text": "请她指着 B 行和 3 列交叉的格子，说为什么是积木塔。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-address-map/logic-address-map-6"
       ]
@@ -13194,10 +13942,28 @@
       ]
     },
     {
-      "id": "success-c2-的格子里是小鱼",
+      "id": "success-c2-是-c-行-2-列-格子里是小鱼",
       "kind": "success",
-      "text": "C2 的格子里是小鱼。",
+      "text": "C2 是 C 行 2 列，格子里是小鱼。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-address-map/logic-address-map-7"
+      ]
+    },
+    {
+      "id": "retry-先找到-c-行-再横着找到-2-列-不要先猜物品",
+      "kind": "retry",
+      "text": "先找到 C 行，再横着找到 2 列，不要先猜物品。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-address-map/logic-address-map-7"
+      ]
+    },
+    {
+      "id": "parent-请她指着-c-行和-2-列交叉的格子-说为什么是小鱼",
+      "kind": "parent",
+      "text": "请她指着 C 行和 2 列交叉的格子，说为什么是小鱼。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-address-map/logic-address-map-7"
       ]
@@ -13212,10 +13978,28 @@
       ]
     },
     {
-      "id": "success-d4-的格子里是草莓",
+      "id": "success-d4-是-d-行-4-列-格子里是草莓",
       "kind": "success",
-      "text": "D4 的格子里是草莓。",
+      "text": "D4 是 D 行 4 列，格子里是草莓。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-address-map/logic-address-map-8"
+      ]
+    },
+    {
+      "id": "retry-先找到-d-行-再横着找到-4-列-不要先猜物品",
+      "kind": "retry",
+      "text": "先找到 D 行，再横着找到 4 列，不要先猜物品。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-address-map/logic-address-map-8"
+      ]
+    },
+    {
+      "id": "parent-请她指着-d-行和-4-列交叉的格子-说为什么是草莓",
+      "kind": "parent",
+      "text": "请她指着 D 行和 4 列交叉的格子，说为什么是草莓。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-address-map/logic-address-map-8"
       ]
@@ -13230,36 +14014,30 @@
       ]
     },
     {
-      "id": "success-小狗住在-a2",
+      "id": "success-小狗在-a-行-2-列-所以地址是-a2",
       "kind": "success",
-      "text": "小狗住在 A2。",
+      "text": "小狗在 A 行 2 列，所以地址是 A2。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-address-map/logic-address-map-9"
       ]
     },
     {
-      "id": "retry-找到物品以后-先看这一行的字母-再看这一列的数字",
+      "id": "retry-先在图里找到小狗-再读这一行的字母和这一列的数字",
       "kind": "retry",
-      "text": "找到物品以后，先看这一行的字母，再看这一列的数字。",
+      "text": "先在图里找到小狗，再读这一行的字母和这一列的数字。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
-        "logic-address-map/logic-address-map-9",
-        "logic-address-map/logic-address-map-10",
-        "logic-address-map/logic-address-map-11",
-        "logic-address-map/logic-address-map-12"
+        "logic-address-map/logic-address-map-9"
       ]
     },
     {
-      "id": "parent-问她-这个地址为什么先说字母-再说数字",
+      "id": "parent-请她指着小狗-说它在-a-行-2-列-所以地址是-a2",
       "kind": "parent",
-      "text": "问她：这个地址为什么先说字母，再说数字？",
+      "text": "请她指着小狗，说它在 A 行、2 列，所以地址是 A2。",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-address-map/logic-address-map-9",
-        "logic-address-map/logic-address-map-10",
-        "logic-address-map/logic-address-map-11",
-        "logic-address-map/logic-address-map-12"
+        "logic-address-map/logic-address-map-9"
       ]
     },
     {
@@ -13299,10 +14077,28 @@
       ]
     },
     {
-      "id": "success-葡萄住在-c3",
+      "id": "success-葡萄在-c-行-3-列-所以地址是-c3",
       "kind": "success",
-      "text": "葡萄住在 C3。",
+      "text": "葡萄在 C 行 3 列，所以地址是 C3。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-address-map/logic-address-map-10"
+      ]
+    },
+    {
+      "id": "retry-先在图里找到葡萄-再读这一行的字母和这一列的数字",
+      "kind": "retry",
+      "text": "先在图里找到葡萄，再读这一行的字母和这一列的数字。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-address-map/logic-address-map-10"
+      ]
+    },
+    {
+      "id": "parent-请她指着葡萄-说它在-c-行-3-列-所以地址是-c3",
+      "kind": "parent",
+      "text": "请她指着葡萄，说它在 C 行、3 列，所以地址是 C3。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-address-map/logic-address-map-10"
       ]
@@ -13348,10 +14144,28 @@
       ]
     },
     {
-      "id": "success-足球住在-a3",
+      "id": "success-足球在-a-行-3-列-所以地址是-a3",
       "kind": "success",
-      "text": "足球住在 A3。",
+      "text": "足球在 A 行 3 列，所以地址是 A3。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-address-map/logic-address-map-11"
+      ]
+    },
+    {
+      "id": "retry-先在图里找到足球-再读这一行的字母和这一列的数字",
+      "kind": "retry",
+      "text": "先在图里找到足球，再读这一行的字母和这一列的数字。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-address-map/logic-address-map-11"
+      ]
+    },
+    {
+      "id": "parent-请她指着足球-说它在-a-行-3-列-所以地址是-a3",
+      "kind": "parent",
+      "text": "请她指着足球，说它在 A 行、3 列，所以地址是 A3。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-address-map/logic-address-map-11"
       ]
@@ -13366,10 +14180,28 @@
       ]
     },
     {
-      "id": "success-蛋糕住在-d3",
+      "id": "success-蛋糕在-d-行-3-列-所以地址是-d3",
       "kind": "success",
-      "text": "蛋糕住在 D3。",
+      "text": "蛋糕在 D 行 3 列，所以地址是 D3。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-address-map/logic-address-map-12"
+      ]
+    },
+    {
+      "id": "retry-先在图里找到蛋糕-再读这一行的字母和这一列的数字",
+      "kind": "retry",
+      "text": "先在图里找到蛋糕，再读这一行的字母和这一列的数字。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-address-map/logic-address-map-12"
+      ]
+    },
+    {
+      "id": "parent-请她指着蛋糕-说它在-d-行-3-列-所以地址是-d3",
+      "kind": "parent",
+      "text": "请她指着蛋糕，说它在 D 行、3 列，所以地址是 D3。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-address-map/logic-address-map-12"
       ]
@@ -13411,9 +14243,9 @@
       ]
     },
     {
-      "id": "prompt-待补位置这一格应该放什么-先横着看一行-再竖着检查一下",
+      "id": "prompt-空格里应该放什么-先读完整的第一行-再用同样规则补第三行",
       "kind": "prompt",
-      "text": "待补位置这一格应该放什么？先横着看一行，再竖着检查一下。",
+      "text": "空格里应该放什么？先读完整的第一行，再用同样规则补第三行。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-matrix-puzzle/logic-matrix-puzzle-1",
@@ -13425,40 +14257,30 @@
       ]
     },
     {
-      "id": "success-每一行的最后一格-是前两格合在一起",
+      "id": "success-第一行是-和-合起来变成-第三行是-和-所以空格补",
       "kind": "success",
-      "text": "每一行的最后一格，是前两格合在一起。",
+      "text": "第一行是 🔴 和 🔵，合起来变成 🔴🔵；第三行是 🟣 和 🔴，所以空格补 🟣🔴。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-matrix-puzzle/logic-matrix-puzzle-1"
       ]
     },
     {
-      "id": "retry-先看每一行前两格和最后一格有什么关系",
+      "id": "retry-先读第一行这个完整行-前两个合成最后一个-再看第三行缺的空格",
       "kind": "retry",
-      "text": "先看每一行前两格和最后一格有什么关系。",
+      "text": "先读第一行这个完整行：前两个合成最后一个；再看第三行缺的空格。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
-        "logic-matrix-puzzle/logic-matrix-puzzle-1",
-        "logic-matrix-puzzle/logic-matrix-puzzle-2",
-        "logic-matrix-puzzle/logic-matrix-puzzle-3",
-        "logic-matrix-puzzle/logic-matrix-puzzle-4",
-        "logic-matrix-puzzle/logic-matrix-puzzle-5",
-        "logic-matrix-puzzle/logic-matrix-puzzle-6"
+        "logic-matrix-puzzle/logic-matrix-puzzle-1"
       ]
     },
     {
-      "id": "parent-请她说-这一行是怎么变出来的",
+      "id": "parent-请她说第一行怎么合起来-再说第三行-和-用同一个规则为什么补",
       "kind": "parent",
-      "text": "请她说：这一行是怎么变出来的？",
+      "text": "请她说第一行怎么合起来，再说第三行 🟣 和 🔴 用同一个规则为什么补 🟣🔴。",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-matrix-puzzle/logic-matrix-puzzle-1",
-        "logic-matrix-puzzle/logic-matrix-puzzle-2",
-        "logic-matrix-puzzle/logic-matrix-puzzle-3",
-        "logic-matrix-puzzle/logic-matrix-puzzle-4",
-        "logic-matrix-puzzle/logic-matrix-puzzle-5",
-        "logic-matrix-puzzle/logic-matrix-puzzle-6"
+        "logic-matrix-puzzle/logic-matrix-puzzle-1"
       ]
     },
     {
@@ -13511,19 +14333,55 @@
       ]
     },
     {
-      "id": "success-每一行都是第一个-第二个-再回到第一个",
+      "id": "success-第一行是-第一个又回来-第三行是-所以空格补",
       "kind": "success",
-      "text": "每一行都是第一个、第二个、再回到第一个。",
+      "text": "第一行是 🍎、🍊、🍎，第一个又回来；第三行是 🔴、🔵，所以空格补 🔴。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-matrix-puzzle/logic-matrix-puzzle-2"
       ]
     },
     {
-      "id": "success-每一行都是大-小-大",
+      "id": "retry-先读第一行这个完整行-第一-第二-再回到第一-再看第三行缺的空格",
+      "kind": "retry",
+      "text": "先读第一行这个完整行：第一、第二、再回到第一；再看第三行缺的空格。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-matrix-puzzle/logic-matrix-puzzle-2"
+      ]
+    },
+    {
+      "id": "parent-请她说第一行怎么回到第一个-再说第三行用同一个规则为什么补",
+      "kind": "parent",
+      "text": "请她说第一行怎么回到第一个，再说第三行用同一个规则为什么补 🔴。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-matrix-puzzle/logic-matrix-puzzle-2"
+      ]
+    },
+    {
+      "id": "success-第一行是-大圆-小圆-大圆-大的又回来-第三行是-大方块-小方块-所以空格补-大方块",
       "kind": "success",
-      "text": "每一行都是大、小、大。",
+      "text": "第一行是 大圆、小圆、大圆，大的又回来；第三行是 大方块、小方块，所以空格补 大方块。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-matrix-puzzle/logic-matrix-puzzle-3"
+      ]
+    },
+    {
+      "id": "retry-先读第一行这个完整行-大-小-再回到大-再看第三行缺的空格",
+      "kind": "retry",
+      "text": "先读第一行这个完整行：大、小、再回到大；再看第三行缺的空格。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-matrix-puzzle/logic-matrix-puzzle-3"
+      ]
+    },
+    {
+      "id": "parent-请她说第一行怎么回到大的-再说第三行用同一个规则为什么补-大方块",
+      "kind": "parent",
+      "text": "请她说第一行怎么回到大的，再说第三行用同一个规则为什么补 大方块。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-matrix-puzzle/logic-matrix-puzzle-3"
       ]
@@ -13593,19 +14451,55 @@
       ]
     },
     {
-      "id": "success-每一行都轮流换位置-红黄绿都要出现一次",
+      "id": "success-第一行有-三个都出现-第三行已经有-和-所以空格补",
       "kind": "success",
-      "text": "每一行都轮流换位置，红黄绿都要出现一次。",
+      "text": "第一行有 🔴、🟡、🟢 三个都出现；第三行已经有 🟢 和 🔴，所以空格补 🟡。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-matrix-puzzle/logic-matrix-puzzle-4"
       ]
     },
     {
-      "id": "success-中间数字是几-右边就有几个一样的东西",
+      "id": "retry-先看第一行这个完整行有哪些颜色-再看第三行缺的空格少了哪一个",
+      "kind": "retry",
+      "text": "先看第一行这个完整行有哪些颜色，再看第三行缺的空格少了哪一个。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-matrix-puzzle/logic-matrix-puzzle-4"
+      ]
+    },
+    {
+      "id": "parent-请她说第一行有哪些-再说第三行用同一个规则为什么补",
+      "kind": "parent",
+      "text": "请她说第一行有哪些，再说第三行用同一个规则为什么补 🟡。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-matrix-puzzle/logic-matrix-puzzle-4"
+      ]
+    },
+    {
+      "id": "success-第一行是-1-数字-1-就放-1-个-第三行是-3-所以空格补",
       "kind": "success",
-      "text": "中间数字是几，右边就有几个一样的东西。",
+      "text": "第一行是 🍎、1、🍎，数字 1 就放 1 个；第三行是 🍓、3，所以空格补 🍓🍓🍓。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-matrix-puzzle/logic-matrix-puzzle-5"
+      ]
+    },
+    {
+      "id": "retry-先读第一行这个完整行-数字是几就有几个-再看第三行缺的空格",
+      "kind": "retry",
+      "text": "先读第一行这个完整行：数字是几就有几个；再看第三行缺的空格。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-matrix-puzzle/logic-matrix-puzzle-5"
+      ]
+    },
+    {
+      "id": "parent-请她说第一行数字-1-怎么变成-1-个苹果-再说第三行用同一个规则为什么补",
+      "kind": "parent",
+      "text": "请她说第一行数字 1 怎么变成 1 个苹果，再说第三行用同一个规则为什么补 🍓🍓🍓。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-matrix-puzzle/logic-matrix-puzzle-5"
       ]
@@ -13651,10 +14545,28 @@
       ]
     },
     {
-      "id": "success-每一行把前两个线索连成一个小故事",
+      "id": "success-第一行是-小鸟-和-天空-合成-小鸟天空-第三行是-小狗-和-家-所以空格补-小狗家",
       "kind": "success",
-      "text": "每一行把前两个线索连成一个小故事。",
+      "text": "第一行是 小鸟 和 天空，合成 小鸟天空；第三行是 小狗 和 家，所以空格补 小狗家。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-matrix-puzzle/logic-matrix-puzzle-6"
+      ]
+    },
+    {
+      "id": "retry-先读第一行这个完整行-前两个词连成最后一个-再看第三行缺的空格",
+      "kind": "retry",
+      "text": "先读第一行这个完整行：前两个词连成最后一个；再看第三行缺的空格。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-matrix-puzzle/logic-matrix-puzzle-6"
+      ]
+    },
+    {
+      "id": "parent-请她说第一行怎么连成小故事-再说第三行-小狗-和-家-用同一个规则为什么补-小狗家",
+      "kind": "parent",
+      "text": "请她说第一行怎么连成小故事，再说第三行 小狗 和 家 用同一个规则为什么补 小狗家。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-matrix-puzzle/logic-matrix-puzzle-6"
       ]
@@ -13732,27 +14644,27 @@
       ]
     },
     {
-      "id": "success-小狗在小猫的左边",
+      "id": "success-先找到小猫-往左边一格是小狗",
       "kind": "success",
-      "text": "小狗在小猫的左边。",
+      "text": "先找到小猫，往左边一格是小狗。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-position-map/logic-position-map-1"
       ]
     },
     {
-      "id": "retry-先用手指点小猫-再往左边看",
+      "id": "retry-先指小猫-再往左边走一格-看到小狗",
       "kind": "retry",
-      "text": "先用手指点小猫，再往左边看。",
+      "text": "先指小猫，再往左边走一格，看到小狗。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
         "logic-position-map/logic-position-map-1"
       ]
     },
     {
-      "id": "parent-问她-如果从小狗看-小猫在它的哪边",
+      "id": "parent-请她指着小猫-往左边一格找到小狗-说为什么",
       "kind": "parent",
-      "text": "问她：如果从小狗看，小猫在它的哪边？",
+      "text": "请她指着小猫，往左边一格找到小狗，说为什么。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-position-map/logic-position-map-1"
@@ -13768,27 +14680,27 @@
       ]
     },
     {
-      "id": "success-小兔在小猫的右边",
+      "id": "success-先找到小猫-往右边一格是小兔",
       "kind": "success",
-      "text": "小兔在小猫的右边。",
+      "text": "先找到小猫，往右边一格是小兔。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-position-map/logic-position-map-2"
       ]
     },
     {
-      "id": "retry-右边是小猫旁边的另一边",
+      "id": "retry-先指小猫-再往右边走一格-看到小兔",
       "kind": "retry",
-      "text": "右边是小猫旁边的另一边。",
+      "text": "先指小猫，再往右边走一格，看到小兔。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
         "logic-position-map/logic-position-map-2"
       ]
     },
     {
-      "id": "parent-问她-左边和右边是不是会跟着看的方向变",
+      "id": "parent-请她指着小猫-往右边一格找到小兔-说为什么",
       "kind": "parent",
-      "text": "问她：左边和右边是不是会跟着看的方向变？",
+      "text": "请她指着小猫，往右边一格找到小兔，说为什么。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-position-map/logic-position-map-2"
@@ -13804,27 +14716,27 @@
       ]
     },
     {
-      "id": "success-小鸟在书包的上面",
+      "id": "success-先找到书包-往上面一格是小鸟",
       "kind": "success",
-      "text": "小鸟在书包的上面。",
+      "text": "先找到书包，往上面一格是小鸟。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-position-map/logic-position-map-3"
       ]
     },
     {
-      "id": "retry-找到书包以后-往上一格看",
+      "id": "retry-先指书包-再往上面走一格-看到小鸟",
       "kind": "retry",
-      "text": "找到书包以后，往上一格看。",
+      "text": "先指书包，再往上面走一格，看到小鸟。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
         "logic-position-map/logic-position-map-3"
       ]
     },
     {
-      "id": "parent-请她用手指从中间往上移动",
+      "id": "parent-请她指着书包-往上面一格找到小鸟-说为什么",
       "kind": "parent",
-      "text": "请她用手指从中间往上移动。",
+      "text": "请她指着书包，往上面一格找到小鸟，说为什么。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-position-map/logic-position-map-3"
@@ -13840,27 +14752,27 @@
       ]
     },
     {
-      "id": "success-小鱼在书包的下面",
+      "id": "success-先找到书包-往下面一格是小鱼",
       "kind": "success",
-      "text": "小鱼在书包的下面。",
+      "text": "先找到书包，往下面一格是小鱼。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-position-map/logic-position-map-4"
       ]
     },
     {
-      "id": "retry-下面是在书包往下的那一格",
+      "id": "retry-先指书包-再往下面走一格-看到小鱼",
       "kind": "retry",
-      "text": "下面是在书包往下的那一格。",
+      "text": "先指书包，再往下面走一格，看到小鱼。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
         "logic-position-map/logic-position-map-4"
       ]
     },
     {
-      "id": "parent-问她-小鸟和小鱼分别在书包的哪边",
+      "id": "parent-请她指着书包-往下面一格找到小鱼-说为什么",
       "kind": "parent",
-      "text": "问她：小鸟和小鱼分别在书包的哪边？",
+      "text": "请她指着书包，往下面一格找到小鱼，说为什么。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-position-map/logic-position-map-4"
@@ -13876,27 +14788,27 @@
       ]
     },
     {
-      "id": "success-盒子的左边是小狗",
+      "id": "success-先找到盒子-往左边一格是小狗",
       "kind": "success",
-      "text": "盒子的左边是小狗。",
+      "text": "先找到盒子，往左边一格是小狗。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-position-map/logic-position-map-5"
       ]
     },
     {
-      "id": "retry-盒子在中间-左边那格是小狗",
+      "id": "retry-先指盒子-再往左边走一格-看到小狗",
       "kind": "retry",
-      "text": "盒子在中间，左边那格是小狗。",
+      "text": "先指盒子，再往左边走一格，看到小狗。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
         "logic-position-map/logic-position-map-5"
       ]
     },
     {
-      "id": "parent-问她-如果看盒子的右边-会是谁",
+      "id": "parent-请她指着盒子-往左边一格找到小狗-说为什么",
       "kind": "parent",
-      "text": "问她：如果看盒子的右边，会是谁？",
+      "text": "请她指着盒子，往左边一格找到小狗，说为什么。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-position-map/logic-position-map-5"
@@ -13912,27 +14824,27 @@
       ]
     },
     {
-      "id": "success-盒子的右边是小猫",
+      "id": "success-先找到盒子-往右边一格是小猫",
       "kind": "success",
-      "text": "盒子的右边是小猫。",
+      "text": "先找到盒子，往右边一格是小猫。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-position-map/logic-position-map-6"
       ]
     },
     {
-      "id": "retry-从盒子出发-往右边看",
+      "id": "retry-先指盒子-再往右边走一格-看到小猫",
       "kind": "retry",
-      "text": "从盒子出发，往右边看。",
+      "text": "先指盒子，再往右边走一格，看到小猫。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
         "logic-position-map/logic-position-map-6"
       ]
     },
     {
-      "id": "parent-问她-小猫在盒子的哪边-盒子在小猫的哪边",
+      "id": "parent-请她指着盒子-往右边一格找到小猫-说为什么",
       "kind": "parent",
-      "text": "问她：小猫在盒子的哪边？盒子在小猫的哪边？",
+      "text": "请她指着盒子，往右边一格找到小猫，说为什么。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-position-map/logic-position-map-6"
@@ -13948,27 +14860,27 @@
       ]
     },
     {
-      "id": "success-风筝在盒子的上面",
+      "id": "success-先找到盒子-往上面一格是风筝",
       "kind": "success",
-      "text": "风筝在盒子的上面。",
+      "text": "先找到盒子，往上面一格是风筝。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-position-map/logic-position-map-7"
       ]
     },
     {
-      "id": "retry-盒子上方那格是风筝",
+      "id": "retry-先指盒子-再往上面走一格-看到风筝",
       "kind": "retry",
-      "text": "盒子上方那格是风筝。",
+      "text": "先指盒子，再往上面走一格，看到风筝。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
         "logic-position-map/logic-position-map-7"
       ]
     },
     {
-      "id": "parent-请她说出盒子的上-下-左-右各是什么",
+      "id": "parent-请她指着盒子-往上面一格找到风筝-说为什么",
       "kind": "parent",
-      "text": "请她说出盒子的上、下、左、右各是什么。",
+      "text": "请她指着盒子，往上面一格找到风筝，说为什么。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-position-map/logic-position-map-7"
@@ -13984,27 +14896,27 @@
       ]
     },
     {
-      "id": "success-书包在盒子的下面",
+      "id": "success-先找到盒子-往下面一格是书包",
       "kind": "success",
-      "text": "书包在盒子的下面。",
+      "text": "先找到盒子，往下面一格是书包。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-position-map/logic-position-map-8"
       ]
     },
     {
-      "id": "retry-从盒子往下走一格",
+      "id": "retry-先指盒子-再往下面走一格-看到书包",
       "kind": "retry",
-      "text": "从盒子往下走一格。",
+      "text": "先指盒子，再往下面走一格，看到书包。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
         "logic-position-map/logic-position-map-8"
       ]
     },
     {
-      "id": "parent-问她-风筝和书包谁在上-谁在下",
+      "id": "parent-请她指着盒子-往下面一格找到书包-说为什么",
       "kind": "parent",
-      "text": "问她：风筝和书包谁在上，谁在下？",
+      "text": "请她指着盒子，往下面一格找到书包，说为什么。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-position-map/logic-position-map-8"
@@ -14020,27 +14932,27 @@
       ]
     },
     {
-      "id": "success-小鱼在盒子里面",
+      "id": "success-小鱼在盒子里面-小猫和小狗在盒子外面",
       "kind": "success",
-      "text": "小鱼在盒子里面。",
+      "text": "小鱼在盒子里面；小猫和小狗在盒子外面。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-position-map/logic-position-map-9"
       ]
     },
     {
-      "id": "retry-里面是被盒子装住的地方",
+      "id": "retry-先看盒子里面-里面只有小鱼-小猫和小狗在外面",
       "kind": "retry",
-      "text": "里面是被盒子装住的地方。",
+      "text": "先看盒子里面，里面只有小鱼；小猫和小狗在外面。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
         "logic-position-map/logic-position-map-9"
       ]
     },
     {
-      "id": "parent-问她-外面有谁-里面有谁",
+      "id": "parent-请她指着盒子里面的小鱼-再指外面的小猫和小狗",
       "kind": "parent",
-      "text": "问她：外面有谁？里面有谁？",
+      "text": "请她指着盒子里面的小鱼，再指外面的小猫和小狗。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-position-map/logic-position-map-9"
@@ -14056,27 +14968,27 @@
       ]
     },
     {
-      "id": "success-小兔在盒子外面",
+      "id": "success-小兔在盒子外面-足球和书包在盒子里面",
       "kind": "success",
-      "text": "小兔在盒子外面。",
+      "text": "小兔在盒子外面；足球和书包在盒子里面。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-position-map/logic-position-map-10"
       ]
     },
     {
-      "id": "retry-外面是没有被盒子装住的地方",
+      "id": "retry-先看盒子外面-外面是小兔-足球和书包在里面",
       "kind": "retry",
-      "text": "外面是没有被盒子装住的地方。",
+      "text": "先看盒子外面，外面是小兔；足球和书包在里面。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
         "logic-position-map/logic-position-map-10"
       ]
     },
     {
-      "id": "parent-问她-足球在里面还是外面-小兔在里面还是外面",
+      "id": "parent-请她指着盒子外面的小兔-再指里面的足球和书包",
       "kind": "parent",
-      "text": "问她：足球在里面还是外面？小兔在里面还是外面？",
+      "text": "请她指着盒子外面的小兔，再指里面的足球和书包。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-position-map/logic-position-map-10"
@@ -14092,27 +15004,27 @@
       ]
     },
     {
-      "id": "success-从小狗看过去-盒子在右边",
+      "id": "success-从小狗出发看盒子-盒子在小狗的右边",
       "kind": "success",
-      "text": "从小狗看过去，盒子在右边。",
+      "text": "从小狗出发看盒子，盒子在小狗的右边。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-position-map/logic-position-map-11"
       ]
     },
     {
-      "id": "retry-不要从盒子开始看-这次从小狗开始",
+      "id": "retry-先指小狗-再从小狗看盒子-答案是右边-不要从盒子开始",
       "kind": "retry",
-      "text": "不要从盒子开始看，这次从小狗开始。",
+      "text": "先指小狗，再从小狗看盒子，答案是右边；不要从盒子开始。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
         "logic-position-map/logic-position-map-11"
       ]
     },
     {
-      "id": "parent-问她-同一张图-从不同人出发-答案会不会变",
+      "id": "parent-请她从小狗指到盒子-说盒子在小狗的右边-再反过来说小狗在盒子的左边",
       "kind": "parent",
-      "text": "问她：同一张图，从不同人出发，答案会不会变？",
+      "text": "请她从小狗指到盒子，说盒子在小狗的右边；再反过来说小狗在盒子的左边。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-position-map/logic-position-map-11"
@@ -14139,10 +15051,7 @@
         "logic-rotation-direction/logic-rotation-direction-11",
         "logic-rotation-direction/logic-rotation-direction-12",
         "logic-balance-swap/logic-balance-swap-9",
-        "logic-balance-swap/logic-balance-swap-10",
-        "logic-block-height-map/logic-block-height-map-10",
-        "logic-block-height-map/logic-block-height-map-11",
-        "logic-block-height-map/logic-block-height-map-12"
+        "logic-balance-swap/logic-balance-swap-10"
       ]
     },
     {
@@ -14166,10 +15075,7 @@
         "logic-rotation-direction/logic-rotation-direction-11",
         "logic-rotation-direction/logic-rotation-direction-12",
         "logic-balance-swap/logic-balance-swap-9",
-        "logic-balance-swap/logic-balance-swap-10",
-        "logic-block-height-map/logic-block-height-map-10",
-        "logic-block-height-map/logic-block-height-map-11",
-        "logic-block-height-map/logic-block-height-map-12"
+        "logic-balance-swap/logic-balance-swap-10"
       ]
     },
     {
@@ -14203,27 +15109,27 @@
       ]
     },
     {
-      "id": "success-从小猫看过去-盒子在左边",
+      "id": "success-从小猫出发看盒子-盒子在小猫的左边",
       "kind": "success",
-      "text": "从小猫看过去，盒子在左边。",
+      "text": "从小猫出发看盒子，盒子在小猫的左边。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-position-map/logic-position-map-12"
       ]
     },
     {
-      "id": "retry-这次从小猫的位置出发",
+      "id": "retry-先指小猫-再从小猫看盒子-答案是左边-不要从盒子开始",
       "kind": "retry",
-      "text": "这次从小猫的位置出发。",
+      "text": "先指小猫，再从小猫看盒子，答案是左边；不要从盒子开始。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
         "logic-position-map/logic-position-map-12"
       ]
     },
     {
-      "id": "parent-请她比较-盒子看小猫-小猫看盒子-方向一样吗",
+      "id": "parent-请她从小猫指到盒子-说盒子在小猫的左边-再反过来说小猫在盒子的右边",
       "kind": "parent",
-      "text": "请她比较：盒子看小猫，小猫看盒子，方向一样吗？",
+      "text": "请她从小猫指到盒子，说盒子在小猫的左边；再反过来说小猫在盒子的右边。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-position-map/logic-position-map-12"
@@ -14281,43 +15187,55 @@
       ]
     },
     {
-      "id": "success-苹果刚才出现过",
+      "id": "success-相机里有苹果-橘子-草莓-所以苹果刚才出现过",
       "kind": "success",
-      "text": "苹果刚才出现过。",
+      "text": "相机里有苹果、橘子、草莓，所以苹果刚才出现过。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-memory-camera/logic-memory-camera-1"
       ]
     },
     {
-      "id": "retry-先在心里念一遍-再遮住",
+      "id": "retry-先回想相机里的三张-苹果-橘子-草莓-再选出现过的苹果",
       "kind": "retry",
-      "text": "先在心里念一遍，再遮住。",
+      "text": "先回想相机里的三张：苹果、橘子、草莓，再选出现过的苹果。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
-        "logic-memory-camera/logic-memory-camera-1",
-        "logic-memory-camera/logic-memory-camera-2",
-        "logic-memory-camera/logic-memory-camera-3",
-        "logic-memory-camera/logic-memory-camera-4"
+        "logic-memory-camera/logic-memory-camera-1"
       ]
     },
     {
-      "id": "parent-请她说说自己刚才用什么办法记住的",
+      "id": "parent-请她先说刚才看到苹果-橘子-草莓-再说为什么选苹果",
       "kind": "parent",
-      "text": "请她说说自己刚才用什么办法记住的。",
+      "text": "请她先说刚才看到苹果、橘子、草莓，再说为什么选苹果。",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-memory-camera/logic-memory-camera-1",
-        "logic-memory-camera/logic-memory-camera-2",
-        "logic-memory-camera/logic-memory-camera-3",
-        "logic-memory-camera/logic-memory-camera-4"
+        "logic-memory-camera/logic-memory-camera-1"
       ]
     },
     {
-      "id": "success-公交车刚才出现过",
+      "id": "success-相机里有小汽车-公交车-飞机-所以公交车刚才出现过",
       "kind": "success",
-      "text": "公交车刚才出现过。",
+      "text": "相机里有小汽车、公交车、飞机，所以公交车刚才出现过。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-memory-camera/logic-memory-camera-2"
+      ]
+    },
+    {
+      "id": "retry-先回想相机里的三张-小汽车-公交车-飞机-再选出现过的公交车",
+      "kind": "retry",
+      "text": "先回想相机里的三张：小汽车、公交车、飞机，再选出现过的公交车。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-memory-camera/logic-memory-camera-2"
+      ]
+    },
+    {
+      "id": "parent-请她先说刚才看到小汽车-公交车-飞机-再说为什么选公交车",
+      "kind": "parent",
+      "text": "请她先说刚才看到小汽车、公交车、飞机，再说为什么选公交车。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-memory-camera/logic-memory-camera-2"
       ]
@@ -14333,19 +15251,55 @@
       ]
     },
     {
-      "id": "success-尺子刚才出现过",
+      "id": "success-相机里有铅笔-书包-尺子-所以尺子刚才出现过",
       "kind": "success",
-      "text": "尺子刚才出现过。",
+      "text": "相机里有铅笔、书包、尺子，所以尺子刚才出现过。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-memory-camera/logic-memory-camera-3"
       ]
     },
     {
-      "id": "success-小兔刚才出现过",
+      "id": "retry-先回想相机里的三张-铅笔-书包-尺子-再选出现过的尺子",
+      "kind": "retry",
+      "text": "先回想相机里的三张：铅笔、书包、尺子，再选出现过的尺子。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-memory-camera/logic-memory-camera-3"
+      ]
+    },
+    {
+      "id": "parent-请她先说刚才看到铅笔-书包-尺子-再说为什么选尺子",
+      "kind": "parent",
+      "text": "请她先说刚才看到铅笔、书包、尺子，再说为什么选尺子。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-memory-camera/logic-memory-camera-3"
+      ]
+    },
+    {
+      "id": "success-相机里有小猫-小狗-小兔-所以小兔刚才出现过",
       "kind": "success",
-      "text": "小兔刚才出现过。",
+      "text": "相机里有小猫、小狗、小兔，所以小兔刚才出现过。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-memory-camera/logic-memory-camera-4"
+      ]
+    },
+    {
+      "id": "retry-先回想相机里的三张-小猫-小狗-小兔-再选出现过的小兔",
+      "kind": "retry",
+      "text": "先回想相机里的三张：小猫、小狗、小兔，再选出现过的小兔。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-memory-camera/logic-memory-camera-4"
+      ]
+    },
+    {
+      "id": "parent-请她先说刚才看到小猫-小狗-小兔-再说为什么选小兔",
+      "kind": "parent",
+      "text": "请她先说刚才看到小猫、小狗、小兔，再说为什么选小兔。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-memory-camera/logic-memory-camera-4"
       ]
@@ -14363,61 +15317,109 @@
       ]
     },
     {
-      "id": "success-小猫刚才没有出现",
+      "id": "success-刚才相机里有小鸟-小鱼-小狗-小猫没有出现",
       "kind": "success",
-      "text": "小猫刚才没有出现。",
+      "text": "刚才相机里有小鸟、小鱼、小狗，小猫没有出现。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-memory-camera/logic-memory-camera-5"
       ]
     },
     {
-      "id": "retry-先回想相机里三个东西-再找多出来的选项",
+      "id": "retry-先排除刚才看到的小鸟-小鱼-小狗-多出来的是小猫",
       "kind": "retry",
-      "text": "先回想相机里三个东西，再找多出来的选项。",
+      "text": "先排除刚才看到的小鸟、小鱼、小狗，多出来的是小猫。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
-        "logic-memory-camera/logic-memory-camera-5",
-        "logic-memory-camera/logic-memory-camera-6",
-        "logic-memory-camera/logic-memory-camera-7",
-        "logic-memory-camera/logic-memory-camera-8"
+        "logic-memory-camera/logic-memory-camera-5"
       ]
     },
     {
-      "id": "parent-问她-你排除了哪两个-为什么",
+      "id": "parent-请她复述刚才看到小鸟-小鱼-小狗-再说为什么排除后剩下小猫",
       "kind": "parent",
-      "text": "问她：你排除了哪两个？为什么？",
+      "text": "请她复述刚才看到小鸟、小鱼、小狗，再说为什么排除后剩下小猫。",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-memory-camera/logic-memory-camera-5",
-        "logic-memory-camera/logic-memory-camera-6",
-        "logic-memory-camera/logic-memory-camera-7",
-        "logic-memory-camera/logic-memory-camera-8"
+        "logic-memory-camera/logic-memory-camera-5"
       ]
     },
     {
-      "id": "success-糖果刚才没有出现",
+      "id": "success-刚才相机里有葡萄-蛋糕-饼干-糖果没有出现",
       "kind": "success",
-      "text": "糖果刚才没有出现。",
+      "text": "刚才相机里有葡萄、蛋糕、饼干，糖果没有出现。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-memory-camera/logic-memory-camera-6"
       ]
     },
     {
-      "id": "success-小汽车刚才没有出现",
+      "id": "retry-先排除刚才看到的葡萄-蛋糕-饼干-多出来的是糖果",
+      "kind": "retry",
+      "text": "先排除刚才看到的葡萄、蛋糕、饼干，多出来的是糖果。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-memory-camera/logic-memory-camera-6"
+      ]
+    },
+    {
+      "id": "parent-请她复述刚才看到葡萄-蛋糕-饼干-再说为什么排除后剩下糖果",
+      "kind": "parent",
+      "text": "请她复述刚才看到葡萄、蛋糕、饼干，再说为什么排除后剩下糖果。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-memory-camera/logic-memory-camera-6"
+      ]
+    },
+    {
+      "id": "success-刚才相机里有足球-风筝-飞机-小汽车没有出现",
       "kind": "success",
-      "text": "小汽车刚才没有出现。",
+      "text": "刚才相机里有足球、风筝、飞机，小汽车没有出现。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-memory-camera/logic-memory-camera-7"
       ]
     },
     {
-      "id": "success-书本刚才没有出现",
+      "id": "retry-先排除刚才看到的足球-风筝-飞机-多出来的是小汽车",
+      "kind": "retry",
+      "text": "先排除刚才看到的足球、风筝、飞机，多出来的是小汽车。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-memory-camera/logic-memory-camera-7"
+      ]
+    },
+    {
+      "id": "parent-请她复述刚才看到足球-风筝-飞机-再说为什么排除后剩下小汽车",
+      "kind": "parent",
+      "text": "请她复述刚才看到足球、风筝、飞机，再说为什么排除后剩下小汽车。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-memory-camera/logic-memory-camera-7"
+      ]
+    },
+    {
+      "id": "success-刚才相机里有杯子-书包-铅笔-书本没有出现",
       "kind": "success",
-      "text": "书本刚才没有出现。",
+      "text": "刚才相机里有杯子、书包、铅笔，书本没有出现。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-memory-camera/logic-memory-camera-8"
+      ]
+    },
+    {
+      "id": "retry-先排除刚才看到的杯子-书包-铅笔-多出来的是书本",
+      "kind": "retry",
+      "text": "先排除刚才看到的杯子、书包、铅笔，多出来的是书本。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-memory-camera/logic-memory-camera-8"
+      ]
+    },
+    {
+      "id": "parent-请她复述刚才看到杯子-书包-铅笔-再说为什么排除后剩下书本",
+      "kind": "parent",
+      "text": "请她复述刚才看到杯子、书包、铅笔，再说为什么排除后剩下书本。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-memory-camera/logic-memory-camera-8"
       ]
@@ -14432,36 +15434,30 @@
       ]
     },
     {
-      "id": "success-苹果在这个位置上",
+      "id": "success-从左到右是苹果-小狗-书包-第一个是苹果",
       "kind": "success",
-      "text": "苹果在这个位置上。",
+      "text": "从左到右是苹果、小狗、书包，第一个是苹果。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-memory-camera/logic-memory-camera-9"
       ]
     },
     {
-      "id": "retry-可以从左到右在心里排一排",
+      "id": "retry-先按顺序从左到右念-苹果-小狗-书包-第一个就是苹果",
       "kind": "retry",
-      "text": "可以从左到右在心里排一排。",
+      "text": "先按顺序从左到右念：苹果、小狗、书包；第一个就是苹果。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
-        "logic-memory-camera/logic-memory-camera-9",
-        "logic-memory-camera/logic-memory-camera-10",
-        "logic-memory-camera/logic-memory-camera-11",
-        "logic-memory-camera/logic-memory-camera-12"
+        "logic-memory-camera/logic-memory-camera-9"
       ]
     },
     {
-      "id": "parent-请她用-第一-第二-第三-复述一遍",
+      "id": "parent-请她按顺序复述苹果-小狗-书包-再说第一个为什么是苹果",
       "kind": "parent",
-      "text": "请她用“第一、第二、第三”复述一遍。",
+      "text": "请她按顺序复述苹果、小狗、书包，再说第一个为什么是苹果。",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-memory-camera/logic-memory-camera-9",
-        "logic-memory-camera/logic-memory-camera-10",
-        "logic-memory-camera/logic-memory-camera-11",
-        "logic-memory-camera/logic-memory-camera-12"
+        "logic-memory-camera/logic-memory-camera-9"
       ]
     },
     {
@@ -14474,10 +15470,28 @@
       ]
     },
     {
-      "id": "success-足球在这个位置上",
+      "id": "success-从左到右是小鱼-足球-飞机-第二个是足球",
       "kind": "success",
-      "text": "足球在这个位置上。",
+      "text": "从左到右是小鱼、足球、飞机，第二个是足球。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-memory-camera/logic-memory-camera-10"
+      ]
+    },
+    {
+      "id": "retry-先按顺序从左到右念-小鱼-足球-飞机-第二个就是足球",
+      "kind": "retry",
+      "text": "先按顺序从左到右念：小鱼、足球、飞机；第二个就是足球。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-memory-camera/logic-memory-camera-10"
+      ]
+    },
+    {
+      "id": "parent-请她按顺序复述小鱼-足球-飞机-再说第二个为什么是足球",
+      "kind": "parent",
+      "text": "请她按顺序复述小鱼、足球、飞机，再说第二个为什么是足球。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-memory-camera/logic-memory-camera-10"
       ]
@@ -14492,10 +15506,28 @@
       ]
     },
     {
-      "id": "success-公交车在这个位置上",
+      "id": "success-从左到右是铅笔-葡萄-公交车-最后一个是公交车",
       "kind": "success",
-      "text": "公交车在这个位置上。",
+      "text": "从左到右是铅笔、葡萄、公交车，最后一个是公交车。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-memory-camera/logic-memory-camera-11"
+      ]
+    },
+    {
+      "id": "retry-先按顺序从左到右念-铅笔-葡萄-公交车-最后一个就是公交车",
+      "kind": "retry",
+      "text": "先按顺序从左到右念：铅笔、葡萄、公交车；最后一个就是公交车。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-memory-camera/logic-memory-camera-11"
+      ]
+    },
+    {
+      "id": "parent-请她按顺序复述铅笔-葡萄-公交车-再说最后一个为什么是公交车",
+      "kind": "parent",
+      "text": "请她按顺序复述铅笔、葡萄、公交车，再说最后一个为什么是公交车。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-memory-camera/logic-memory-camera-11"
       ]
@@ -14510,10 +15542,28 @@
       ]
     },
     {
-      "id": "success-蛋糕在这个位置上",
+      "id": "success-从左到右是小猫-风筝-蛋糕-小鸟-第三个是蛋糕",
       "kind": "success",
-      "text": "蛋糕在这个位置上。",
+      "text": "从左到右是小猫、风筝、蛋糕、小鸟，第三个是蛋糕。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-memory-camera/logic-memory-camera-12"
+      ]
+    },
+    {
+      "id": "retry-先按顺序从左到右念-小猫-风筝-蛋糕-小鸟-第三个就是蛋糕",
+      "kind": "retry",
+      "text": "先按顺序从左到右念：小猫、风筝、蛋糕、小鸟；第三个就是蛋糕。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-memory-camera/logic-memory-camera-12"
+      ]
+    },
+    {
+      "id": "parent-请她按顺序复述小猫-风筝-蛋糕-小鸟-再说第三个为什么是蛋糕",
+      "kind": "parent",
+      "text": "请她按顺序复述小猫、风筝、蛋糕、小鸟，再说第三个为什么是蛋糕。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-memory-camera/logic-memory-camera-12"
       ]
@@ -14537,9 +15587,9 @@
       ]
     },
     {
-      "id": "prompt-哪一张和上面完全一样-颜色-形状和顺序都要一样",
+      "id": "prompt-哪一张和上面完全一样-从左到右比第一格-第二格-每个都一样才选",
       "kind": "prompt",
-      "text": "哪一张和上面完全一样？颜色、形状和顺序都要一样。",
+      "text": "哪一张和上面完全一样？从左到右比第一格、第二格，每个都一样才选。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-visual-match/logic-visual-match-1",
@@ -14551,18 +15601,18 @@
       ]
     },
     {
-      "id": "success-这一张完全一样-红色圆片在前-蓝色方块在后",
+      "id": "success-这张从左到右都对-红色圆片在前-蓝色方块在后-和样板卡完全一样",
       "kind": "success",
-      "text": "这一张完全一样。红色圆片在前，蓝色方块在后。",
+      "text": "这张从左到右都对，红色圆片在前，蓝色方块在后。和样板卡完全一样。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-visual-match/logic-visual-match-1"
       ]
     },
     {
-      "id": "retry-只差一点点也不算一样-要从左到右慢慢比",
+      "id": "retry-从左到右一个一个比-每个都一样才选-只差一点点也不算一样",
       "kind": "retry",
-      "text": "只差一点点也不算一样，要从左到右慢慢比。",
+      "text": "从左到右一个一个比，每个都一样才选；只差一点点也不算一样。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
         "logic-visual-match/logic-visual-match-1",
@@ -14574,9 +15624,9 @@
       ]
     },
     {
-      "id": "parent-问她-你发现哪张只是顺序不一样",
+      "id": "parent-问她-哪张很像但顺序或第二个不一样-请从左到右说给我听",
       "kind": "parent",
-      "text": "问她：你发现哪张只是顺序不一样？",
+      "text": "问她：哪张很像但顺序或第二个不一样？请从左到右说给我听。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-visual-match/logic-visual-match-1",
@@ -14626,9 +15676,9 @@
       ]
     },
     {
-      "id": "success-这一张完全一样-黄色在前-绿色在后",
+      "id": "success-这张从左到右都对-黄色在前-绿色在后-和样板卡完全一样",
       "kind": "success",
-      "text": "这一张完全一样。黄色在前，绿色在后。",
+      "text": "这张从左到右都对，黄色在前，绿色在后。和样板卡完全一样。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-visual-match/logic-visual-match-2"
@@ -14653,9 +15703,9 @@
       ]
     },
     {
-      "id": "success-这一张完全一样-先苹果-再橘子",
+      "id": "success-这张从左到右都对-先苹果-再橘子-和样板卡完全一样",
       "kind": "success",
-      "text": "这一张完全一样。先苹果，再橘子。",
+      "text": "这张从左到右都对，先苹果，再橘子。和样板卡完全一样。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-visual-match/logic-visual-match-3"
@@ -14702,9 +15752,9 @@
       ]
     },
     {
-      "id": "success-这一张完全一样-先小猫-再小狗",
+      "id": "success-这张从左到右都对-先小猫-再小狗-和样板卡完全一样",
       "kind": "success",
-      "text": "这一张完全一样。先小猫，再小狗。",
+      "text": "这张从左到右都对，先小猫，再小狗。和样板卡完全一样。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-visual-match/logic-visual-match-4"
@@ -14751,9 +15801,9 @@
       ]
     },
     {
-      "id": "success-这一张完全一样-红色-方块-星星的顺序都一样",
+      "id": "success-这张从左到右都对-红色-方块-星星的顺序都一样-和样板卡完全一样",
       "kind": "success",
-      "text": "这一张完全一样。红色、方块、星星的顺序都一样。",
+      "text": "这张从左到右都对，红色、方块、星星的顺序都一样。和样板卡完全一样。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-visual-match/logic-visual-match-5"
@@ -14801,9 +15851,9 @@
       ]
     },
     {
-      "id": "success-这一张完全一样-草莓-饼干-糖果的顺序都一样",
+      "id": "success-这张从左到右都对-草莓-饼干-糖果的顺序都一样-和样板卡完全一样",
       "kind": "success",
-      "text": "这一张完全一样。草莓、饼干、糖果的顺序都一样。",
+      "text": "这张从左到右都对，草莓、饼干、糖果的顺序都一样。和样板卡完全一样。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-visual-match/logic-visual-match-6"
@@ -14863,18 +15913,18 @@
       ]
     },
     {
-      "id": "success-右边这张顺序反了",
+      "id": "success-左边和中间这两张一样-右边这张顺序反了",
       "kind": "success",
-      "text": "右边这张顺序反了。",
+      "text": "左边和中间这两张一样，右边这张顺序反了。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-visual-match/logic-visual-match-7"
       ]
     },
     {
-      "id": "retry-找到两张一样的-剩下的就是不一样的",
+      "id": "retry-先找两张一样的一对-剩下那张就是不一样的",
       "kind": "retry",
-      "text": "找到两张一样的，剩下的就是不一样的。",
+      "text": "先找两张一样的一对，剩下那张就是不一样的。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
         "logic-visual-match/logic-visual-match-7",
@@ -14951,9 +16001,9 @@
       ]
     },
     {
-      "id": "success-中间这张第二个颜色不一样",
+      "id": "success-左边和右边这两张一样-中间这张第二个颜色不一样",
       "kind": "success",
-      "text": "中间这张第二个颜色不一样。",
+      "text": "左边和右边这两张一样，中间这张第二个颜色不一样。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-visual-match/logic-visual-match-8"
@@ -14969,9 +16019,9 @@
       ]
     },
     {
-      "id": "success-右边这张水果顺序不一样",
+      "id": "success-左边和中间这两张一样-右边这张水果顺序不一样",
       "kind": "success",
-      "text": "右边这张水果顺序不一样。",
+      "text": "左边和中间这两张一样，右边这张水果顺序不一样。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-visual-match/logic-visual-match-9"
@@ -14987,9 +16037,9 @@
       ]
     },
     {
-      "id": "success-中间这张第二个小动物不一样",
+      "id": "success-左边和右边这两张一样-中间这张第二个小动物不一样",
       "kind": "success",
-      "text": "中间这张第二个小动物不一样。",
+      "text": "左边和右边这两张一样，中间这张第二个小动物不一样。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-visual-match/logic-visual-match-10"
@@ -15005,9 +16055,9 @@
       ]
     },
     {
-      "id": "success-右边这张后两块位置换了",
+      "id": "success-左边和中间这两张一样-右边这张后两块位置换了",
       "kind": "success",
-      "text": "右边这张后两块位置换了。",
+      "text": "左边和中间这两张一样，右边这张后两块位置换了。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-visual-match/logic-visual-match-11"
@@ -15023,9 +16073,9 @@
       ]
     },
     {
-      "id": "success-中间这张饼干和糖果的位置换了",
+      "id": "success-左边和右边这两张一样-中间这张饼干和糖果的位置换了",
       "kind": "success",
-      "text": "中间这张饼干和糖果的位置换了。",
+      "text": "左边和右边这两张一样，中间这张饼干和糖果的位置换了。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-visual-match/logic-visual-match-12"
@@ -15059,9 +16109,9 @@
       ]
     },
     {
-      "id": "prompt-右图里哪一个变了-左图和右图从左到右慢慢比",
+      "id": "prompt-右图里哪一个变了-左图和右图从左到右慢慢比-找右图变成了谁",
       "kind": "prompt",
-      "text": "右图里哪一个变了？左图和右图从左到右慢慢比。",
+      "text": "右图里哪一个变了？左图和右图从左到右慢慢比，找右图变成了谁。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-difference-detective/logic-difference-detective-1",
@@ -15073,18 +16123,18 @@
       ]
     },
     {
-      "id": "success-左图中间是苹果-右图中间变成橘子",
+      "id": "success-第二个位置变了-左图是苹果-右图变成橘子",
       "kind": "success",
-      "text": "左图中间是苹果，右图中间变成橘子。",
+      "text": "第二个位置变了：左图是苹果，右图变成橘子。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-difference-detective/logic-difference-detective-1"
       ]
     },
     {
-      "id": "retry-不要跳着看-先比第一个-再比第二个",
+      "id": "retry-不要跳着看-从左到右一个一个比-先比第一个-再比第二个",
       "kind": "retry",
-      "text": "不要跳着看，先比第一个，再比第二个。",
+      "text": "不要跳着看，从左到右一个一个比，先比第一个，再比第二个。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
         "logic-difference-detective/logic-difference-detective-1",
@@ -15096,9 +16146,9 @@
       ]
     },
     {
-      "id": "parent-请她说完整句-左图是-右图变成了",
+      "id": "parent-请她说完整句-左图第几个是哪个-右图第几个变成了哪个",
       "kind": "parent",
-      "text": "请她说完整句：左图是……右图变成了……",
+      "text": "请她说完整句：左图第几个是哪个，右图第几个变成了哪个？",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-difference-detective/logic-difference-detective-1",
@@ -15110,45 +16160,45 @@
       ]
     },
     {
-      "id": "success-右图把足球换成了风筝",
+      "id": "success-第二个位置变了-左图是足球-右图变成风筝",
       "kind": "success",
-      "text": "右图把足球换成了风筝。",
+      "text": "第二个位置变了：左图是足球，右图变成风筝。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-difference-detective/logic-difference-detective-2"
       ]
     },
     {
-      "id": "success-最后一个从尺子变成了书本",
+      "id": "success-最后一个位置变了-左图是尺子-右图变成书本",
       "kind": "success",
-      "text": "最后一个从尺子变成了书本。",
+      "text": "最后一个位置变了：左图是尺子，右图变成书本。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-difference-detective/logic-difference-detective-3"
       ]
     },
     {
-      "id": "success-中间的草莓变成了葡萄",
+      "id": "success-第二个位置变了-左图是草莓-右图变成葡萄",
       "kind": "success",
-      "text": "中间的草莓变成了葡萄。",
+      "text": "第二个位置变了：左图是草莓，右图变成葡萄。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-difference-detective/logic-difference-detective-4"
       ]
     },
     {
-      "id": "success-中间从天空变成了小河",
+      "id": "success-第二个位置变了-左图是天空-右图变成小河",
       "kind": "success",
-      "text": "中间从天空变成了小河。",
+      "text": "第二个位置变了：左图是天空，右图变成小河。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-difference-detective/logic-difference-detective-5"
       ]
     },
     {
-      "id": "success-最后一个从自行车变成了飞机",
+      "id": "success-最后一个位置变了-左图是自行车-右图变成飞机",
       "kind": "success",
-      "text": "最后一个从自行车变成了飞机。",
+      "text": "最后一个位置变了：左图是自行车，右图变成飞机。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-difference-detective/logic-difference-detective-6"
@@ -15166,18 +16216,18 @@
       ]
     },
     {
-      "id": "success-右图多了风筝",
+      "id": "success-小狗和足球在右图里都找到了-右图还多了风筝",
       "kind": "success",
-      "text": "右图多了风筝。",
+      "text": "小狗和足球在右图里都找到了，右图还多了风筝。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-difference-detective/logic-difference-detective-7"
       ]
     },
     {
-      "id": "retry-把左图里的东西在右图里一个个找到",
+      "id": "retry-把左图里的东西在右图里一个个找到-剩下那一个就是多出来的",
       "kind": "retry",
-      "text": "把左图里的东西在右图里一个个找到。",
+      "text": "把左图里的东西在右图里一个个找到，剩下那一个就是多出来的。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
         "logic-difference-detective/logic-difference-detective-7",
@@ -15186,9 +16236,9 @@
       ]
     },
     {
-      "id": "parent-问她-左图里的两个都找到了吗-右图还剩什么",
+      "id": "parent-问她-左图里的两个在右图里都找到了吗-右图还多了什么",
       "kind": "parent",
-      "text": "问她：左图里的两个都找到了吗？右图还剩什么？",
+      "text": "问她：左图里的两个在右图里都找到了吗？右图还多了什么？",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-difference-detective/logic-difference-detective-7",
@@ -15197,18 +16247,18 @@
       ]
     },
     {
-      "id": "success-右图多了草莓",
+      "id": "success-苹果和橘子在右图里都找到了-右图还多了草莓",
       "kind": "success",
-      "text": "右图多了草莓。",
+      "text": "苹果和橘子在右图里都找到了，右图还多了草莓。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-difference-detective/logic-difference-detective-8"
       ]
     },
     {
-      "id": "success-右图多了尺子",
+      "id": "success-铅笔和书包在右图里都找到了-右图还多了尺子",
       "kind": "success",
-      "text": "右图多了尺子。",
+      "text": "铅笔和书包在右图里都找到了，右图还多了尺子。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-difference-detective/logic-difference-detective-9"
@@ -15226,18 +16276,18 @@
       ]
     },
     {
-      "id": "success-右图少了草莓",
+      "id": "success-蛋糕和杯子在右图里都找到了-右图少了草莓",
       "kind": "success",
-      "text": "右图少了草莓。",
+      "text": "蛋糕和杯子在右图里都找到了，右图少了草莓。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-difference-detective/logic-difference-detective-10"
       ]
     },
     {
-      "id": "retry-从左图第一个开始-在右图里找一找",
+      "id": "retry-从左图第一个开始-每一个都到右图里找一找",
       "kind": "retry",
-      "text": "从左图第一个开始，在右图里找一找。",
+      "text": "从左图第一个开始，每一个都到右图里找一找。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
         "logic-difference-detective/logic-difference-detective-10",
@@ -15246,9 +16296,9 @@
       ]
     },
     {
-      "id": "parent-请她边指边说-这个有-这个有-哪一个没有",
+      "id": "parent-请她边指边说-哪些在右图里找到了-哪一个没有",
       "kind": "parent",
-      "text": "请她边指边说：这个有，这个有，哪一个没有？",
+      "text": "请她边指边说：哪些在右图里找到了？哪一个没有？",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-difference-detective/logic-difference-detective-10",
@@ -15257,18 +16307,18 @@
       ]
     },
     {
-      "id": "success-右图少了小狗",
+      "id": "success-小猫和小兔在右图里都找到了-右图少了小狗",
       "kind": "success",
-      "text": "右图少了小狗。",
+      "text": "小猫和小兔在右图里都找到了，右图少了小狗。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-difference-detective/logic-difference-detective-11"
       ]
     },
     {
-      "id": "success-右图少了铅笔",
+      "id": "success-书本和尺子在右图里都找到了-右图少了铅笔",
       "kind": "success",
-      "text": "右图少了铅笔。",
+      "text": "书本和尺子在右图里都找到了，右图少了铅笔。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-difference-detective/logic-difference-detective-12"
@@ -16725,9 +17775,9 @@
       ]
     },
     {
-      "id": "success-1-加-1-加-1-再加-0-一共-3-块",
+      "id": "success-第一行-2-块-第二行-1-块-一共-3-块",
       "kind": "success",
-      "text": "1 加 1 加 1，再加 0，一共 3 块。",
+      "text": "第一行 2 块，第二行 1 块，一共 3 块。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-block-height-map/logic-block-height-map-1"
@@ -16768,29 +17818,21 @@
       ]
     },
     {
-      "id": "success-这一张是-2-1-1-0-合起来-4-块",
+      "id": "success-第一行-3-块-第二行-1-块-一共-4-块",
       "kind": "success",
-      "text": "这一张是 2、1、1、0，合起来 4 块。",
+      "text": "第一行 3 块，第二行 1 块，一共 4 块。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-block-height-map/logic-block-height-map-2"
       ]
     },
     {
-      "id": "success-上面两列各-2-块-下面两列各-1-块-一共-6-块",
+      "id": "success-第一行-4-块-第二行-2-块-一共-6-块",
       "kind": "success",
-      "text": "上面两列各 2 块，下面两列各 1 块，一共 6 块。",
+      "text": "第一行 4 块，第二行 2 块，一共 6 块。",
       "tone": "warm, delighted, clear",
       "contexts": [
-        "logic-block-height-map/logic-block-height-map-3"
-      ]
-    },
-    {
-      "id": "success-3-块-1-块-0-块-2-块-合起来-6-块",
-      "kind": "success",
-      "text": "3 块、1 块、0 块、2 块，合起来 6 块。",
-      "tone": "warm, delighted, clear",
-      "contexts": [
+        "logic-block-height-map/logic-block-height-map-3",
         "logic-block-height-map/logic-block-height-map-4"
       ]
     },
@@ -16804,18 +17846,18 @@
       ]
     },
     {
-      "id": "success-2-1-2-1-0-1-合起来是-7-块",
+      "id": "success-第一行-5-块-第二行-2-块-一共-7-块",
       "kind": "success",
-      "text": "2、1、2、1、0、1 合起来是 7 块。",
+      "text": "第一行 5 块，第二行 2 块，一共 7 块。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-block-height-map/logic-block-height-map-6"
       ]
     },
     {
-      "id": "success-3-0-1-1-2-0-合起来是-7-块",
+      "id": "success-第一行-4-块-第二行-3-块-一共-7-块",
       "kind": "success",
-      "text": "3、0、1、1、2、0 合起来是 7 块。",
+      "text": "第一行 4 块，第二行 3 块，一共 7 块。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-block-height-map/logic-block-height-map-7"
@@ -16831,9 +17873,9 @@
       ]
     },
     {
-      "id": "success-按行数-4-块-5-块-1-块-一共-10-块",
+      "id": "success-按行数-第一行-4-块-第二行-5-块-第三行-1-块-一共-10-块",
       "kind": "success",
-      "text": "按行数：4 块、5 块、1 块，一共 10 块。",
+      "text": "按行数：第一行 4 块，第二行 5 块，第三行 1 块，一共 10 块。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-block-height-map/logic-block-height-map-9"
@@ -16851,18 +17893,18 @@
       ]
     },
     {
-      "id": "success-左边是-4-块-右边也是-4-块-所以一样多",
+      "id": "success-左图4块-右图4块-所以一样多",
       "kind": "success",
-      "text": "左边是 4 块，右边也是 4 块，所以一样多。",
+      "text": "左图4块，右图4块，所以一样多。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-block-height-map/logic-block-height-map-10"
       ]
     },
     {
-      "id": "retry-先算左图有几块-再算右图有几块",
+      "id": "retry-先算左图有几块-再算右图有几块-最后比较谁更多",
       "kind": "retry",
-      "text": "先算左图有几块，再算右图有几块。",
+      "text": "先算左图有几块，再算右图有几块，最后比较谁更多。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
         "logic-block-height-map/logic-block-height-map-10",
@@ -16871,9 +17913,9 @@
       ]
     },
     {
-      "id": "parent-问她-左边总数是多少-右边总数是多少",
+      "id": "parent-问她-左图总数是多少-右图总数是多少-比较以后谁更多-还是一样多",
       "kind": "parent",
-      "text": "问她：左边总数是多少？右边总数是多少？",
+      "text": "问她：左图总数是多少？右图总数是多少？比较以后谁更多，还是一样多？",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-block-height-map/logic-block-height-map-10",
@@ -16882,18 +17924,40 @@
       ]
     },
     {
-      "id": "success-左边-5-块-右边-6-块-右边更多",
+      "id": "choice-左图更多",
+      "kind": "choice",
+      "text": "左图更多",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-block-height-map/logic-block-height-map-10",
+        "logic-block-height-map/logic-block-height-map-11",
+        "logic-block-height-map/logic-block-height-map-12"
+      ]
+    },
+    {
+      "id": "choice-右图更多",
+      "kind": "choice",
+      "text": "右图更多",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-block-height-map/logic-block-height-map-10",
+        "logic-block-height-map/logic-block-height-map-11",
+        "logic-block-height-map/logic-block-height-map-12"
+      ]
+    },
+    {
+      "id": "success-左图5块-右图6块-所以右图更多",
       "kind": "success",
-      "text": "左边 5 块，右边 6 块，右边更多。",
+      "text": "左图5块，右图6块，所以右图更多。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-block-height-map/logic-block-height-map-11"
       ]
     },
     {
-      "id": "success-左边-6-块-右边-5-块-左边更多",
+      "id": "success-左图6块-右图5块-所以左图更多",
       "kind": "success",
-      "text": "左边 6 块，右边 5 块，左边更多。",
+      "text": "左图6块，右图5块，所以左图更多。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-block-height-map/logic-block-height-map-12"
@@ -16932,9 +17996,9 @@
       ]
     },
     {
-      "id": "success-0-是空位-其他格子都有积木-所以从上面看有-3-个位置",
+      "id": "success-从上面看-只看哪些位置有积木-0-是空位-3-个不是-0-的位置能看到积木",
       "kind": "success",
-      "text": "0 是空位，其他格子都有积木，所以从上面看有 3 个位置。",
+      "text": "从上面看，只看哪些位置有积木。0 是空位，3 个不是 0 的位置能看到积木。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-three-view-blocks/logic-three-view-blocks-1",
@@ -16942,9 +18006,9 @@
       ]
     },
     {
-      "id": "retry-只数不是-0-的格子-不要把层数加起来",
+      "id": "retry-0-是空位-只数不是-0-的位置-不要把层数加起来",
       "kind": "retry",
-      "text": "只数不是 0 的格子，不要把层数加起来。",
+      "text": "0 是空位；只数不是 0 的位置，不要把层数加起来。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
         "logic-three-view-blocks/logic-three-view-blocks-1",
@@ -16956,9 +18020,9 @@
       ]
     },
     {
-      "id": "parent-请她把不是-0-的格子点出来-说这些地方从上面能看到",
+      "id": "parent-请她先点出不是-0-的格子-再指一指-0-这些空位-说从上面哪些地方能看到积木",
       "kind": "parent",
-      "text": "请她把不是 0 的格子点出来，说这些地方从上面能看到。",
+      "text": "请她先点出不是 0 的格子，再指一指 0 这些空位，说从上面哪些地方能看到积木。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-three-view-blocks/logic-three-view-blocks-1",
@@ -16970,9 +18034,9 @@
       ]
     },
     {
-      "id": "success-0-是空位-其他格子都有积木-所以从上面看有-4-个位置",
+      "id": "success-从上面看-只看哪些位置有积木-0-是空位-4-个不是-0-的位置能看到积木",
       "kind": "success",
-      "text": "0 是空位，其他格子都有积木，所以从上面看有 4 个位置。",
+      "text": "从上面看，只看哪些位置有积木。0 是空位，4 个不是 0 的位置能看到积木。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-three-view-blocks/logic-three-view-blocks-3",
@@ -16980,18 +18044,18 @@
       ]
     },
     {
-      "id": "success-0-是空位-其他格子都有积木-所以从上面看有-7-个位置",
+      "id": "success-从上面看-只看哪些位置有积木-0-是空位-7-个不是-0-的位置能看到积木",
       "kind": "success",
-      "text": "0 是空位，其他格子都有积木，所以从上面看有 7 个位置。",
+      "text": "从上面看，只看哪些位置有积木。0 是空位，7 个不是 0 的位置能看到积木。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-three-view-blocks/logic-three-view-blocks-5"
       ]
     },
     {
-      "id": "success-0-是空位-其他格子都有积木-所以从上面看有-6-个位置",
+      "id": "success-从上面看-只看哪些位置有积木-0-是空位-6-个不是-0-的位置能看到积木",
       "kind": "success",
-      "text": "0 是空位，其他格子都有积木，所以从上面看有 6 个位置。",
+      "text": "从上面看，只看哪些位置有积木。0 是空位，6 个不是 0 的位置能看到积木。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-three-view-blocks/logic-three-view-blocks-6"
@@ -17012,18 +18076,18 @@
       ]
     },
     {
-      "id": "success-从前面看-第一列最高-2-层-第二列最高-1-层",
+      "id": "success-从前面看-第一列最高-2-层-第二列最高-1-层-所以选-2和1",
       "kind": "success",
-      "text": "从前面看，第一列最高 2 层，第二列最高 1 层。",
+      "text": "从前面看，第一列最高 2 层，第二列最高 1 层，所以选 2和1。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-three-view-blocks/logic-three-view-blocks-7"
       ]
     },
     {
-      "id": "retry-不要把一列里的数字相加-只找这一列最大的数字",
+      "id": "retry-从前面看-一列一列找最高的数字-不要把这一列相加",
       "kind": "retry",
-      "text": "不要把一列里的数字相加，只找这一列最大的数字。",
+      "text": "从前面看，一列一列找最高的数字，不要把这一列相加。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
         "logic-three-view-blocks/logic-three-view-blocks-7",
@@ -17035,9 +18099,9 @@
       ]
     },
     {
-      "id": "parent-请她用手指竖着看一列-说这一列最高是几层",
+      "id": "parent-请她从前面看-竖着指每一列-说哪一层最高-哪些矮一点会被挡住",
       "kind": "parent",
-      "text": "请她用手指竖着看一列，说这一列最高是几层。",
+      "text": "请她从前面看，竖着指每一列，说哪一层最高、哪些矮一点会被挡住。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-three-view-blocks/logic-three-view-blocks-7",
@@ -17056,16 +18120,10 @@
       "contexts": [
         "logic-three-view-blocks/logic-three-view-blocks-7",
         "logic-three-view-blocks/logic-three-view-blocks-8",
-        "logic-three-view-blocks/logic-three-view-blocks-9",
-        "logic-three-view-blocks/logic-three-view-blocks-10",
-        "logic-three-view-blocks/logic-three-view-blocks-11",
-        "logic-three-view-blocks/logic-three-view-blocks-12",
         "logic-three-view-blocks/logic-three-view-blocks-13",
         "logic-three-view-blocks/logic-three-view-blocks-14",
         "logic-three-view-blocks/logic-three-view-blocks-15",
-        "logic-three-view-blocks/logic-three-view-blocks-16",
-        "logic-three-view-blocks/logic-three-view-blocks-17",
-        "logic-three-view-blocks/logic-three-view-blocks-18"
+        "logic-three-view-blocks/logic-three-view-blocks-16"
       ]
     },
     {
@@ -17076,16 +18134,10 @@
       "contexts": [
         "logic-three-view-blocks/logic-three-view-blocks-7",
         "logic-three-view-blocks/logic-three-view-blocks-8",
-        "logic-three-view-blocks/logic-three-view-blocks-9",
-        "logic-three-view-blocks/logic-three-view-blocks-10",
-        "logic-three-view-blocks/logic-three-view-blocks-11",
-        "logic-three-view-blocks/logic-three-view-blocks-12",
         "logic-three-view-blocks/logic-three-view-blocks-13",
         "logic-three-view-blocks/logic-three-view-blocks-14",
         "logic-three-view-blocks/logic-three-view-blocks-15",
-        "logic-three-view-blocks/logic-three-view-blocks-16",
-        "logic-three-view-blocks/logic-three-view-blocks-17",
-        "logic-three-view-blocks/logic-three-view-blocks-18"
+        "logic-three-view-blocks/logic-three-view-blocks-16"
       ]
     },
     {
@@ -17102,18 +18154,18 @@
       ]
     },
     {
-      "id": "success-从前面看-两列最高分别是-2-层和-3-层",
+      "id": "success-从前面看-第一列最高-2-层-第二列最高-3-层-所以选-2和3",
       "kind": "success",
-      "text": "从前面看，两列最高分别是 2 层和 3 层。",
+      "text": "从前面看，第一列最高 2 层，第二列最高 3 层，所以选 2和3。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-three-view-blocks/logic-three-view-blocks-8"
       ]
     },
     {
-      "id": "success-从前面看-三列最高是-1-层-2-层-1-层",
+      "id": "success-从前面看-第一列最高-1-层-第二列最高-2-层-第三列最高-1-层-所以选-1-2-1",
       "kind": "success",
-      "text": "从前面看，三列最高是 1 层、2 层、1 层。",
+      "text": "从前面看，第一列最高 1 层，第二列最高 2 层，第三列最高 1 层，所以选 1、2、1。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-three-view-blocks/logic-three-view-blocks-9"
@@ -17125,16 +18177,12 @@
       "text": "1、2、1",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-three-view-blocks/logic-three-view-blocks-9"
-      ]
-    },
-    {
-      "id": "success-从前面看-三列最高是-3-层-2-层-1-层",
-      "kind": "success",
-      "text": "从前面看，三列最高是 3 层、2 层、1 层。",
-      "tone": "warm, delighted, clear",
-      "contexts": [
-        "logic-three-view-blocks/logic-three-view-blocks-10"
+        "logic-three-view-blocks/logic-three-view-blocks-9",
+        "logic-three-view-blocks/logic-three-view-blocks-10",
+        "logic-three-view-blocks/logic-three-view-blocks-11",
+        "logic-three-view-blocks/logic-three-view-blocks-12",
+        "logic-three-view-blocks/logic-three-view-blocks-17",
+        "logic-three-view-blocks/logic-three-view-blocks-18"
       ]
     },
     {
@@ -17143,16 +18191,12 @@
       "text": "3、2、1",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-three-view-blocks/logic-three-view-blocks-10"
-      ]
-    },
-    {
-      "id": "success-从前面看-三列最高都是-2-层",
-      "kind": "success",
-      "text": "从前面看，三列最高都是 2 层。",
-      "tone": "warm, delighted, clear",
-      "contexts": [
-        "logic-three-view-blocks/logic-three-view-blocks-11"
+        "logic-three-view-blocks/logic-three-view-blocks-9",
+        "logic-three-view-blocks/logic-three-view-blocks-10",
+        "logic-three-view-blocks/logic-three-view-blocks-11",
+        "logic-three-view-blocks/logic-three-view-blocks-12",
+        "logic-three-view-blocks/logic-three-view-blocks-17",
+        "logic-three-view-blocks/logic-three-view-blocks-18"
       ]
     },
     {
@@ -17161,13 +18205,33 @@
       "text": "2、2、2",
       "tone": "friendly, clear, playful",
       "contexts": [
+        "logic-three-view-blocks/logic-three-view-blocks-9",
+        "logic-three-view-blocks/logic-three-view-blocks-10",
         "logic-three-view-blocks/logic-three-view-blocks-11"
       ]
     },
     {
-      "id": "success-从前面看-三列最高是-2-层-3-层-1-层",
+      "id": "success-从前面看-第一列最高-3-层-第二列最高-2-层-第三列最高-1-层-所以选-3-2-1",
       "kind": "success",
-      "text": "从前面看，三列最高是 2 层、3 层、1 层。",
+      "text": "从前面看，第一列最高 3 层，第二列最高 2 层，第三列最高 1 层，所以选 3、2、1。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-three-view-blocks/logic-three-view-blocks-10"
+      ]
+    },
+    {
+      "id": "success-从前面看-第一列-第二列-第三列最高都是-2-层-所以选-2-2-2",
+      "kind": "success",
+      "text": "从前面看，第一列、第二列、第三列最高都是 2 层，所以选 2、2、2。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-three-view-blocks/logic-three-view-blocks-11"
+      ]
+    },
+    {
+      "id": "success-从前面看-第一列最高-2-层-第二列最高-3-层-第三列最高-1-层-所以选-2-3-1",
+      "kind": "success",
+      "text": "从前面看，第一列最高 2 层，第二列最高 3 层，第三列最高 1 层，所以选 2、3、1。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-three-view-blocks/logic-three-view-blocks-12"
@@ -17198,18 +18262,18 @@
       ]
     },
     {
-      "id": "success-从左边看-第一排最高-1-层-第二排最高-2-层",
+      "id": "success-从左边看-第一排最高-1-层-第二排最高-2-层-所以选-1和2",
       "kind": "success",
-      "text": "从左边看，第一排最高 1 层，第二排最高 2 层。",
+      "text": "从左边看，第一排最高 1 层，第二排最高 2 层，所以选 1和2。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-three-view-blocks/logic-three-view-blocks-13"
       ]
     },
     {
-      "id": "retry-横着看一排-找这一排里最大的数字",
+      "id": "retry-从左边看-一排一排找最高的数字-不要把这一排相加",
       "kind": "retry",
-      "text": "横着看一排，找这一排里最大的数字。",
+      "text": "从左边看，一排一排找最高的数字，不要把这一排相加。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
         "logic-three-view-blocks/logic-three-view-blocks-13",
@@ -17221,9 +18285,9 @@
       ]
     },
     {
-      "id": "parent-请她横着读一排数字-再说最高是几层",
+      "id": "parent-请她从左边看-横着指每一排-说这一排最高几层-哪些矮一点会被挡住",
       "kind": "parent",
-      "text": "请她横着读一排数字，再说最高是几层。",
+      "text": "请她从左边看，横着指每一排，说这一排最高几层、哪些矮一点会被挡住。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-three-view-blocks/logic-three-view-blocks-13",
@@ -17235,27 +18299,27 @@
       ]
     },
     {
-      "id": "success-从左边看-两排最高分别是-2-层和-3-层",
+      "id": "success-从左边看-第一排最高-2-层-第二排最高-3-层-所以选-2和3",
       "kind": "success",
-      "text": "从左边看，两排最高分别是 2 层和 3 层。",
+      "text": "从左边看，第一排最高 2 层，第二排最高 3 层，所以选 2和3。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-three-view-blocks/logic-three-view-blocks-14"
       ]
     },
     {
-      "id": "success-从左边看-第一排最高-2-层-第二排最高-1-层",
+      "id": "success-从左边看-第一排最高-2-层-第二排最高-1-层-所以选-2和1",
       "kind": "success",
-      "text": "从左边看，第一排最高 2 层，第二排最高 1 层。",
+      "text": "从左边看，第一排最高 2 层，第二排最高 1 层，所以选 2和1。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-three-view-blocks/logic-three-view-blocks-15"
       ]
     },
     {
-      "id": "success-从左边看-两排最高分别是-3-层和-2-层",
+      "id": "success-从左边看-第一排最高-3-层-第二排最高-2-层-所以选-3和2",
       "kind": "success",
-      "text": "从左边看，两排最高分别是 3 层和 2 层。",
+      "text": "从左边看，第一排最高 3 层，第二排最高 2 层，所以选 3和2。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-three-view-blocks/logic-three-view-blocks-16"
@@ -17271,9 +18335,9 @@
       ]
     },
     {
-      "id": "success-从左边看-三排最高是-2-层-2-层-1-层",
+      "id": "success-从左边看-第一排最高-2-层-第二排最高-2-层-第三排最高-1-层-所以选-2-2-1",
       "kind": "success",
-      "text": "从左边看，三排最高是 2 层、2 层、1 层。",
+      "text": "从左边看，第一排最高 2 层，第二排最高 2 层，第三排最高 1 层，所以选 2、2、1。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-three-view-blocks/logic-three-view-blocks-17"
@@ -17289,9 +18353,9 @@
       ]
     },
     {
-      "id": "success-从左边看-三排最高是-2-层-3-层-1-层",
+      "id": "success-从左边看-第一排最高-2-层-第二排最高-3-层-第三排最高-1-层-所以选-2-3-1",
       "kind": "success",
-      "text": "从左边看，三排最高是 2 层、3 层、1 层。",
+      "text": "从左边看，第一排最高 2 层，第二排最高 3 层，第三排最高 1 层，所以选 2、3、1。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-three-view-blocks/logic-three-view-blocks-18"
@@ -17325,36 +18389,30 @@
       ]
     },
     {
-      "id": "success-从小狗往右一步到苹果",
+      "id": "success-从小狗出发-往右一步到苹果",
       "kind": "success",
-      "text": "从小狗往右一步到苹果。",
+      "text": "从小狗出发，往右一步到苹果。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-route-steps/logic-route-steps-1"
       ]
     },
     {
-      "id": "retry-先别跳格子-只走一步",
+      "id": "retry-先找到小狗-再往右一步-只走一格",
       "kind": "retry",
-      "text": "先别跳格子，只走一步。",
+      "text": "先找到小狗，再往右一步，只走一格。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
-        "logic-route-steps/logic-route-steps-1",
-        "logic-route-steps/logic-route-steps-2",
-        "logic-route-steps/logic-route-steps-3",
-        "logic-route-steps/logic-route-steps-4"
+        "logic-route-steps/logic-route-steps-1"
       ]
     },
     {
-      "id": "parent-请她用手指从起点移动一步",
+      "id": "parent-请她用手指点住小狗-往右一步走一格-说到苹果",
       "kind": "parent",
-      "text": "请她用手指从起点移动一步。",
+      "text": "请她用手指点住小狗，往右一步走一格，说到苹果。",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-route-steps/logic-route-steps-1",
-        "logic-route-steps/logic-route-steps-2",
-        "logic-route-steps/logic-route-steps-3",
-        "logic-route-steps/logic-route-steps-4"
+        "logic-route-steps/logic-route-steps-1"
       ]
     },
     {
@@ -17367,10 +18425,28 @@
       ]
     },
     {
-      "id": "success-盒子上面是苹果",
+      "id": "success-从盒子出发-往上一步到苹果",
       "kind": "success",
-      "text": "盒子上面是苹果。",
+      "text": "从盒子出发，往上一步到苹果。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-route-steps/logic-route-steps-2"
+      ]
+    },
+    {
+      "id": "retry-先找到盒子-再往上一步-只走一格",
+      "kind": "retry",
+      "text": "先找到盒子，再往上一步，只走一格。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-route-steps/logic-route-steps-2"
+      ]
+    },
+    {
+      "id": "parent-请她用手指点住盒子-往上一步走一格-说到苹果",
+      "kind": "parent",
+      "text": "请她用手指点住盒子，往上一步走一格，说到苹果。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-route-steps/logic-route-steps-2"
       ]
@@ -17385,10 +18461,28 @@
       ]
     },
     {
-      "id": "success-盒子下面是蛋糕",
+      "id": "success-从盒子出发-往下一步到蛋糕",
       "kind": "success",
-      "text": "盒子下面是蛋糕。",
+      "text": "从盒子出发，往下一步到蛋糕。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-route-steps/logic-route-steps-3"
+      ]
+    },
+    {
+      "id": "retry-先找到盒子-再往下一步-只走一格",
+      "kind": "retry",
+      "text": "先找到盒子，再往下一步，只走一格。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-route-steps/logic-route-steps-3"
+      ]
+    },
+    {
+      "id": "parent-请她用手指点住盒子-往下一步走一格-说到蛋糕",
+      "kind": "parent",
+      "text": "请她用手指点住盒子，往下一步走一格，说到蛋糕。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-route-steps/logic-route-steps-3"
       ]
@@ -17403,10 +18497,28 @@
       ]
     },
     {
-      "id": "success-书包左边是盒子",
+      "id": "success-从书包出发-往左一步到盒子",
       "kind": "success",
-      "text": "书包左边是盒子。",
+      "text": "从书包出发，往左一步到盒子。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-route-steps/logic-route-steps-4"
+      ]
+    },
+    {
+      "id": "retry-先找到书包-再往左一步-只走一格",
+      "kind": "retry",
+      "text": "先找到书包，再往左一步，只走一格。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-route-steps/logic-route-steps-4"
+      ]
+    },
+    {
+      "id": "parent-请她用手指点住书包-往左一步走一格-说到盒子",
+      "kind": "parent",
+      "text": "请她用手指点住书包，往左一步走一格，说到盒子。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-route-steps/logic-route-steps-4"
       ]
@@ -17432,40 +18544,32 @@
       ]
     },
     {
-      "id": "success-从起点先到小猫-再往下到盒子",
+      "id": "success-从起点出发-先往右一步到小猫-再往下一步到盒子-答案是盒子",
       "kind": "success",
-      "text": "从起点先到小猫，再往下到盒子。",
+      "text": "从起点出发，先往右一步到小猫，再往下一步到盒子，答案是盒子。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-route-steps/logic-route-steps-5"
       ]
     },
     {
-      "id": "retry-先做第一步-再做第二步-不要一下子猜",
+      "id": "retry-先往右一步-说第一步到哪里-再往下一步-说第二步到哪里",
       "kind": "retry",
-      "text": "先做第一步，再做第二步，不要一下子猜。",
+      "text": "先往右一步，说第一步到哪里；再往下一步，说第二步到哪里。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
         "logic-route-steps/logic-route-steps-5",
-        "logic-route-steps/logic-route-steps-6",
         "logic-route-steps/logic-route-steps-7",
-        "logic-route-steps/logic-route-steps-8",
-        "logic-route-steps/logic-route-steps-9",
-        "logic-route-steps/logic-route-steps-10"
+        "logic-route-steps/logic-route-steps-8"
       ]
     },
     {
-      "id": "parent-问她-第一步到了哪里-第二步又到了哪里",
+      "id": "parent-请她从起点出发-先说第一步到小猫-再说第二步到盒子-最后答案是盒子",
       "kind": "parent",
-      "text": "问她：第一步到了哪里？第二步又到了哪里？",
+      "text": "请她从起点出发，先说第一步到小猫，再说第二步到盒子，最后答案是盒子。",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-route-steps/logic-route-steps-5",
-        "logic-route-steps/logic-route-steps-6",
-        "logic-route-steps/logic-route-steps-7",
-        "logic-route-steps/logic-route-steps-8",
-        "logic-route-steps/logic-route-steps-9",
-        "logic-route-steps/logic-route-steps-10"
+        "logic-route-steps/logic-route-steps-5"
       ]
     },
     {
@@ -17492,10 +18596,29 @@
       ]
     },
     {
-      "id": "success-从小猫往右到风筝-再往右到小鸟",
+      "id": "success-从小猫出发-先往右一步到风筝-再往右一步到小鸟-答案是小鸟",
       "kind": "success",
-      "text": "从小猫往右到风筝，再往右到小鸟。",
+      "text": "从小猫出发，先往右一步到风筝，再往右一步到小鸟，答案是小鸟。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-route-steps/logic-route-steps-6"
+      ]
+    },
+    {
+      "id": "retry-先往右一步-说第一步到哪里-再往右一步-说第二步到哪里",
+      "kind": "retry",
+      "text": "先往右一步，说第一步到哪里；再往右一步，说第二步到哪里。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-route-steps/logic-route-steps-6",
+        "logic-route-steps/logic-route-steps-9"
+      ]
+    },
+    {
+      "id": "parent-请她从小猫出发-先说第一步到风筝-再说第二步到小鸟-最后答案是小鸟",
+      "kind": "parent",
+      "text": "请她从小猫出发，先说第一步到风筝，再说第二步到小鸟，最后答案是小鸟。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-route-steps/logic-route-steps-6"
       ]
@@ -17510,10 +18633,19 @@
       ]
     },
     {
-      "id": "success-从盒子到书包-再往下到小狗",
+      "id": "success-从盒子出发-先往右一步到书包-再往下一步到小狗-答案是小狗",
       "kind": "success",
-      "text": "从盒子到书包，再往下到小狗。",
+      "text": "从盒子出发，先往右一步到书包，再往下一步到小狗，答案是小狗。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-route-steps/logic-route-steps-7"
+      ]
+    },
+    {
+      "id": "parent-请她从盒子出发-先说第一步到书包-再说第二步到小狗-最后答案是小狗",
+      "kind": "parent",
+      "text": "请她从盒子出发，先说第一步到书包，再说第二步到小狗，最后答案是小狗。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-route-steps/logic-route-steps-7"
       ]
@@ -17528,10 +18660,19 @@
       ]
     },
     {
-      "id": "success-从书包到飞机-再往下到终点",
+      "id": "success-从书包出发-先往右一步到飞机-再往下一步到终点-答案是终点",
       "kind": "success",
-      "text": "从书包到飞机，再往下到终点。",
+      "text": "从书包出发，先往右一步到飞机，再往下一步到终点，答案是终点。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-route-steps/logic-route-steps-8"
+      ]
+    },
+    {
+      "id": "parent-请她从书包出发-先说第一步到飞机-再说第二步到终点-最后答案是终点",
+      "kind": "parent",
+      "text": "请她从书包出发，先说第一步到飞机，再说第二步到终点，最后答案是终点。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-route-steps/logic-route-steps-8"
       ]
@@ -17546,10 +18687,19 @@
       ]
     },
     {
-      "id": "success-从蛋糕到小狗-再到终点",
+      "id": "success-从蛋糕出发-先往右一步到小狗-再往右一步到终点-答案是终点",
       "kind": "success",
-      "text": "从蛋糕到小狗，再到终点。",
+      "text": "从蛋糕出发，先往右一步到小狗，再往右一步到终点，答案是终点。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-route-steps/logic-route-steps-9"
+      ]
+    },
+    {
+      "id": "parent-请她从蛋糕出发-先说第一步到小狗-再说第二步到终点-最后答案是终点",
+      "kind": "parent",
+      "text": "请她从蛋糕出发，先说第一步到小狗，再说第二步到终点，最后答案是终点。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-route-steps/logic-route-steps-9"
       ]
@@ -17564,10 +18714,28 @@
       ]
     },
     {
-      "id": "success-从足球到盒子-再往上到小猫",
+      "id": "success-从足球出发-先往右一步到盒子-再往上一步到小猫-答案是小猫",
       "kind": "success",
-      "text": "从足球到盒子，再往上到小猫。",
+      "text": "从足球出发，先往右一步到盒子，再往上一步到小猫，答案是小猫。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-route-steps/logic-route-steps-10"
+      ]
+    },
+    {
+      "id": "retry-先往右一步-说第一步到哪里-再往上一步-说第二步到哪里",
+      "kind": "retry",
+      "text": "先往右一步，说第一步到哪里；再往上一步，说第二步到哪里。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-route-steps/logic-route-steps-10"
+      ]
+    },
+    {
+      "id": "parent-请她从足球出发-先说第一步到盒子-再说第二步到小猫-最后答案是小猫",
+      "kind": "parent",
+      "text": "请她从足球出发，先说第一步到盒子，再说第二步到小猫，最后答案是小猫。",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-route-steps/logic-route-steps-10"
       ]

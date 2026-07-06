@@ -2,9 +2,11 @@
 
 node_modules/
 dist/
+build/
 .tmp/
 tmp/
 
+.env*
 .venv*/
 local-tts/
 .obsidian/

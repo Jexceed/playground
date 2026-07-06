@@ -43,6 +43,7 @@ export type GameRound = {
   sceneImage?: RoundSceneImage;
   visualGroups?: RoundVisualGroup[];
   sequence?: string[];
+  patternUnit?: string[];
   grid?: RoundGrid;
   matrix?: RoundMatrix;
   memory?: RoundMemory;
@@ -71,4 +72,10 @@ export type ProgressLog = {
   completedIds: string[];
   completedRoundIds: string[];
   abilityTags: string[];
+};
+
+export type LastPlayLocation = {
+  worldId: WorldId;
+  gameId: string;
+  roundIndex: number;
 };

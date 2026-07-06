@@ -2,14 +2,15 @@ import { Check, RotateCcw } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import { games, worlds } from "./data/games";
 import { ProgressiveSetGame } from "./games/ProgressiveSetGame";
-import { addCompletion, addRoundCompletion, readProgress, saveProgress } from "./storage";
+import { addCompletion, addRoundCompletion, readLastPlayLocation, readProgress, saveLastPlayLocation, saveProgress } from "./storage";
 import { speak, warmVoiceManifest } from "./speech";
-import type { GameConfig, GameRound, ProgressLog, WorldId } from "./types";
+import type { GameConfig, GameRound, LastPlayLocation, ProgressLog, WorldId } from "./types";
 
 export function App() {
-  const [activeWorld, setActiveWorld] = useState<WorldId>("math");
-  const [selectedGameId, setSelectedGameId] = useState(games[0].id);
-  const [requestedRoundIndex, setRequestedRoundIndex] = useState(0);
+  const [initialPlayLocation] = useState(resolveInitialPlayLocation);
+  const [activeWorld, setActiveWorld] = useState<WorldId>(initialPlayLocation.worldId);
+  const [selectedGameId, setSelectedGameId] = useState(initialPlayLocation.gameId);
+  const [requestedRoundIndex, setRequestedRoundIndex] = useState(initialPlayLocation.roundIndex);
   const [progress, setProgress] = useState<ProgressLog>(() => readProgress());
 
   useEffect(() => {
@@ -20,6 +21,19 @@ export function App() {
     () => games.find((game) => game.id === selectedGameId) ?? games[0],
     [selectedGameId],
   );
+
+  useEffect(() => {
+    const roundIndex = clampRoundIndex(requestedRoundIndex, selectedGame);
+    if (roundIndex !== requestedRoundIndex) {
+      setRequestedRoundIndex(roundIndex);
+      return;
+    }
+    saveLastPlayLocation({
+      worldId: selectedGame.world,
+      gameId: selectedGame.id,
+      roundIndex,
+    });
+  }, [requestedRoundIndex, selectedGame]);
 
   const visibleGames = games.filter((game) => game.world === activeWorld);
   const questionStats = useMemo(() => {
@@ -181,6 +195,31 @@ export function App() {
       </section>
     </main>
   );
+}
+
+function resolveInitialPlayLocation(): LastPlayLocation {
+  return normalizeLastPlayLocation(readLastPlayLocation());
+}
+
+function normalizeLastPlayLocation(saved: LastPlayLocation | null): LastPlayLocation {
+  const fallbackGame = games[0];
+  if (!saved) {
+    return { worldId: fallbackGame.world, gameId: fallbackGame.id, roundIndex: 0 };
+  }
+
+  const worldExists = worlds.some((world) => world.id === saved.worldId);
+  const worldId = worldExists ? saved.worldId : fallbackGame.world;
+  const game = games.find((item) => item.id === saved.gameId && item.world === worldId) ?? games.find((item) => item.world === worldId) ?? fallbackGame;
+
+  return {
+    worldId: game.world,
+    gameId: game.id,
+    roundIndex: clampRoundIndex(saved.roundIndex, game),
+  };
+}
+
+function clampRoundIndex(index: number, game: GameConfig) {
+  return Math.min(Math.max(index, 0), Math.max(game.rounds.length - 1, 0));
 }
 
 function RoundNavigator({

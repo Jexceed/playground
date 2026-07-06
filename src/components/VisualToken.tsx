@@ -55,6 +55,7 @@ const tokenMap: Record<string, TokenMeta> = {
   "|": { label: "竖中线", kind: "verticalFold", compact: true },
   "-": { label: "横中线", kind: "horizontalFold", compact: true },
   "⬤": { label: "大圆", kind: "bigDot" },
+  "●": { label: "中圆", kind: "mediumDot" },
   "•": { label: "小圆", kind: "smallDot", compact: true },
 };
 
@@ -75,6 +76,7 @@ const phraseMap: Record<string, TokenMeta> = {
   "糖果": { label: "糖果", kind: "candy" },
   "蛋糕": { label: "蛋糕", kind: "cake" },
   "杯子": { label: "杯子", kind: "cup" },
+  "盘子": { label: "盘子", kind: "plate" },
   "盒子": { label: "盒子", kind: "box" },
   "小汽车": { label: "小汽车", kind: "car" },
   "玩具车": { label: "玩具车", kind: "car" },
@@ -96,6 +98,7 @@ const phraseMap: Record<string, TokenMeta> = {
   "足球": { label: "足球", kind: "soccer" },
   "积木塔": { label: "积木塔", kind: "tower" },
   "大圆": { label: "大圆", kind: "bigDot" },
+  "中圆": { label: "中圆", kind: "mediumDot" },
   "小圆": { label: "小圆", kind: "smallDot" },
   "红色圆片": { label: "红色圆片", kind: "redDot" },
   "黄色圆片": { label: "黄色圆片", kind: "yellowDot" },
@@ -647,6 +650,8 @@ function draw(kind: string) {
       return <circle className="stroke fill-purple" cx="48" cy="48" r="27" />;
     case "bigDot":
       return <circle className="stroke fill-purple" cx="48" cy="48" r="29" />;
+    case "mediumDot":
+      return <circle className="stroke fill-purple" cx="48" cy="48" r="22" />;
     case "smallDot":
       return <circle className="stroke fill-purple" cx="48" cy="48" r="16" />;
     case "blueSquare":

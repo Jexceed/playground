@@ -187,7 +187,8 @@ export function ProgressiveSetGame({
           const correct = answered && choice.value === round.answer;
           return (
             <button
-              className={`answer-choice ${active ? "active" : ""} ${correct ? "correct" : ""} ${wrong ? "wrong" : ""}`}
+              aria-label={labelForVoice(choice.label)}
+              className={`answer-choice ${isVisualCardChoice(choice.label) ? "answer-choice-visual-card" : ""} ${active ? "active" : ""} ${correct ? "correct" : ""} ${wrong ? "wrong" : ""}`}
               data-testid={`answer-${choice.value}`}
               disabled={answered}
               key={choice.value}
@@ -195,8 +196,7 @@ export function ProgressiveSetGame({
               onClick={() => choose(choice.value)}
             >
               {correct && <Check size={18} />}
-              <ChoiceCue label={choice.label} />
-              <span>{choice.label}</span>
+              <ChoiceContent label={choice.label} />
             </button>
           );
         })}
@@ -237,6 +237,26 @@ export function ProgressiveSetGame({
   );
 }
 
+function ChoiceContent({ label }: { label: string }) {
+  const visualParts = visualCardParts(label);
+  if (visualParts.length > 1) {
+    return (
+      <span className="choice-visual-card" aria-hidden="true">
+        {visualParts.map((item, index) => (
+          <VisualGlyph kind={item.kind} key={`${item.kind}-${index}`} small />
+        ))}
+      </span>
+    );
+  }
+
+  return (
+    <>
+      <ChoiceCue label={label} />
+      <span>{label}</span>
+    </>
+  );
+}
+
 function ChoiceCue({ label }: { label: string }) {
   const numericValue = Number(label);
   if (Number.isInteger(numericValue) && numericValue > 0 && numericValue <= 10) {
@@ -268,6 +288,20 @@ function ChoiceCue({ label }: { label: string }) {
       <VisualGlyph kind={meta.kind} small />
     </span>
   );
+}
+
+function isVisualCardChoice(label: string) {
+  return visualCardParts(label).length > 1;
+}
+
+function visualCardParts(value: string) {
+  const exact = visualMetaFor(value);
+  if (exact) return [exact];
+  const parts = visualParts(value);
+  if (parts.length <= 1) return [];
+  const metas = parts.map((part) => visualMetaFor(part));
+  if (metas.some((item) => !item)) return [];
+  return metas as Array<NonNullable<ReturnType<typeof visualMetaFor>>>;
 }
 
 function joinVoiceLine(prompt: string, instruction: string) {
@@ -431,13 +465,60 @@ function SubitizeFrame({ items, visible, onPeek }: { items: string[]; visible: b
   );
 }
 
+function MapCellToken({ value }: { value: string }) {
+  const meta = visualMetaFor(value);
+  const label = meta?.label ?? labelForVoice(value);
+  return (
+    <button className={`map-cell-token ${meta ? "" : "map-cell-token-text"}`} type="button" onClick={() => speak(label)} aria-label={label}>
+      {meta ? <VisualGlyph kind={meta.kind} /> : <span className="map-cell-glyph" aria-hidden="true">{value}</span>}
+      <span className="map-cell-label">{label}</span>
+    </button>
+  );
+}
+
+function MatrixCellToken({ value }: { value: string }) {
+  const label = labelForVoice(value);
+  const parts = visualCardParts(value);
+  return (
+    <button className={`matrix-cell-token ${parts.length > 1 ? "matrix-cell-token-multi" : ""}`} type="button" onClick={() => speak(label)} aria-label={label}>
+      {parts.length > 0 ? (
+        <span className="matrix-token-glyphs" aria-hidden="true">
+          {parts.map((item, index) => (
+            <VisualGlyph kind={item.kind} key={`${item.kind}-${index}`} small={parts.length > 1} />
+          ))}
+        </span>
+      ) : (
+        <span className="matrix-cell-text" aria-hidden="true">{value}</span>
+      )}
+      <span className="matrix-cell-label">{label}</span>
+    </button>
+  );
+}
+
+function MemoryCardToken({ covered, value }: { covered: boolean; value: string }) {
+  const displayValue = covered ? "遮住了" : value;
+  const meta = visualMetaFor(displayValue);
+  const label = meta?.label ?? labelForVoice(displayValue);
+  return (
+    <button
+      className={`memory-card-token ${covered ? "memory-card-token-covered" : ""} ${meta ? "" : "memory-card-token-text"}`}
+      type="button"
+      onClick={() => speak(label)}
+      aria-label={label}
+    >
+      {meta ? <VisualGlyph kind={meta.kind} /> : <span className="memory-card-text" aria-hidden="true">{displayValue}</span>}
+      <span className="memory-card-label">{label}</span>
+    </button>
+  );
+}
+
 function MemoryBoard({ covered, items, onCover }: { covered: boolean; items: string[]; onCover: () => void }) {
   return (
     <div className={`memory-board ${covered ? "covered" : ""}`} aria-label="记忆小相机">
       <div className="memory-card-row">
         {items.map((item, index) => (
           <div className="memory-card" key={`${item}-${index}`}>
-            {covered ? <VisualToken value="遮住了" /> : <VisualToken value={item} />}
+            <MemoryCardToken covered={covered} value={item} />
           </div>
         ))}
       </div>
@@ -468,7 +549,7 @@ function AddressGrid({ grid }: { grid: NonNullable<GameRound["grid"]> }) {
           <div className="address-cell address-label">{row}</div>
           {grid.columns.map((column, columnIndex) => (
             <div className="address-cell address-object" key={`${row}-${column}`}>
-              <VisualToken value={grid.cells[rowIndex]?.[columnIndex] ?? ""} />
+              <MapCellToken value={grid.cells[rowIndex]?.[columnIndex] ?? ""} />
             </div>
           ))}
         </Fragment>
@@ -484,7 +565,7 @@ function MatrixBoard({ cells }: { cells: string[][] }) {
         <div className="matrix-row" key={`matrix-row-${rowIndex}`}>
           {row.map((cell, cellIndex) => (
             <div className={`matrix-cell ${cell === "?" ? "matrix-cell-missing" : ""}`} key={`${rowIndex}-${cellIndex}`}>
-              <VisualToken value={cell} />
+              <MatrixCellToken value={cell} />
             </div>
           ))}
         </div>
