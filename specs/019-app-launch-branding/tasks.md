@@ -13,6 +13,8 @@
 - [x] T004 Add launch splash state and `LaunchSplash` component in `src/App.tsx`
 - [x] T005 Add splash animation styles in `src/styles.css`
 - [x] T006 Update `docs/CHANGELOG.md`
+- [x] T006A Replace the wide-logo app icon with a high-contrast square icon and refresh Mac install script
+- [x] T006B Change launch splash to auto-enter after the animation without a manual button
 
 ## Phase 3: Verification
 

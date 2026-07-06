@@ -25,9 +25,9 @@ As a parent installing the app on the current Mac, I want the installed app bund
 
 ---
 
-### User Story 2 - Launch Splash With Voice (Priority: P2)
+### User Story 2 - Auto Launch Splash With Voice (Priority: P2)
 
-As a child and parent opening the app, I want a short, branded launch moment with logo animation and a spoken "小小思考屋", so entering the game feels intentional and warm.
+As a child and parent opening the app, I want a short, branded launch moment with logo animation and a spoken "小小思考屋", then automatic entry into the game page, so opening the app feels intentional without requiring an extra click.
 
 **Why this priority**: The app should feel installable and child-friendly, not just a wrapped browser page.
 
@@ -36,8 +36,8 @@ As a child and parent opening the app, I want a short, branded launch moment wit
 **Acceptance Scenarios**:
 
 1. **Given** the app first opens, **When** the splash screen is shown, **Then** the logo is visible with a simple animation and an enter button.
-2. **Given** the user clicks the enter button, **When** audio APIs allow playback, **Then** the app speaks "小小思考屋" and transitions to the existing game page.
-3. **Given** audio playback fails or is blocked, **When** the enter button is clicked, **Then** the app still enters the game page.
+2. **Given** the splash animation starts, **When** the timed opening sequence runs, **Then** the app attempts to speak "小小思考屋" and transitions to the existing game page automatically.
+3. **Given** audio playback fails or is blocked, **When** the timed opening sequence finishes, **Then** the app still enters the game page.
 
 ## Requirements *(mandatory)*
 
@@ -46,7 +46,7 @@ As a child and parent opening the app, I want a short, branded launch moment wit
 - **FR-001**: Tauri config MUST declare app icon resources.
 - **FR-002**: The installed Mac app MUST be rebuilt and reinstalled after icon configuration changes.
 - **FR-003**: The app MUST show a branded splash screen before the main game page in normal first-load flow.
-- **FR-004**: Splash entry MUST be user-initiated so the "小小思考屋" voice has a browser/WebView gesture.
+- **FR-004**: Splash entry MUST automatically transition into the current game page after the opening animation.
 - **FR-005**: The splash MUST reuse the registered local brand logo image.
 - **FR-006**: The splash voice MUST use the existing `speak` audio pipeline, with local voice assets preferred and TTS fallback.
 - **FR-007**: If voice playback fails, the app MUST still enter the current game page.
@@ -68,5 +68,5 @@ As a child and parent opening the app, I want a short, branded launch moment wit
 
 ## Assumptions
 
-- Browser/WebView autoplay policy requires a user gesture before reliable voice playback, so the splash uses an explicit enter button.
+- Browser/WebView autoplay policy may block automatic voice playback; the splash still attempts the local voice line and must enter the app even if playback is blocked.
 - "Child-like" voice quality is approximated through the existing warm Mandarin voice pipeline in this phase; a dedicated child voice asset can be produced later if needed.

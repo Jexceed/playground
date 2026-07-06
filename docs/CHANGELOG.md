@@ -9,6 +9,9 @@ grouped by date.
   resources, a branded launch splash, and the local "小小思考屋" entry voice.
 - Added audit coverage that fails if the app launch splash, launch voice line,
   or Tauri icon configuration is removed.
+- Replaced the wide-logo app icon with a high-contrast square icon, refreshed
+  Mac installation to clear stale app bundles, and made the launch animation
+  auto-enter the game page after a richer opening sequence.
 - Added the `018-installable-packages` Spec Kit feature for NAS-first static
   packaging, Docker fallback, and Mac/Tauri installation.
 - Added a tested `pnpm release:nas` workflow that turns the Vite production

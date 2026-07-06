@@ -66,7 +66,10 @@ if (/brand-(mark|logo)/.test(appSource)) problems.push("App still contains legac
 if (!appSource.includes("function LaunchSplash")) problems.push("App should define a branded LaunchSplash entry view");
 if (!appSource.includes('speak("小小思考屋")')) problems.push("LaunchSplash should trigger the 小小思考屋 voice line through speak()");
 if (!appSource.includes("startup-splash")) problems.push("LaunchSplash should render startup-splash markup");
-if (!appSource.includes("enterApp")) problems.push("LaunchSplash should use a user-initiated enterApp handler for audio playback");
+if (!appSource.includes("splashTimer")) problems.push("LaunchSplash should auto-enter after the opening animation");
+if (/className="splash-enter"|onClick=\{enterApp\}/.test(appSource)) {
+  problems.push("LaunchSplash should auto-enter without a manual enter button");
+}
 if (!tauriConfig?.bundle?.icon?.some?.((icon) => icon.includes("icon.icns"))) {
   problems.push("Tauri bundle should declare the macOS icon.icns app logo");
 }

@@ -205,15 +205,29 @@ export function App() {
 function LaunchSplash({ onEnter }: { onEnter: () => void }) {
   const [leaving, setLeaving] = useState(false);
 
-  function enterApp() {
-    if (leaving) return;
-    setLeaving(true);
-    void speak("小小思考屋");
-    window.setTimeout(onEnter, 560);
-  }
+  useEffect(() => {
+    const voiceTimer = window.setTimeout(() => {
+      void speak("小小思考屋");
+    }, 620);
+    const splashTimer = window.setTimeout(() => {
+      setLeaving(true);
+    }, 2450);
+    const enterTimer = window.setTimeout(onEnter, 3180);
+    return () => {
+      window.clearTimeout(voiceTimer);
+      window.clearTimeout(splashTimer);
+      window.clearTimeout(enterTimer);
+    };
+  }, [onEnter]);
 
   return (
     <main className={`startup-splash ${leaving ? "leaving" : ""}`} aria-label="小小思考屋启动页">
+      <div className="splash-orbit" aria-hidden="true">
+        <span />
+        <span />
+        <span />
+        <span />
+      </div>
       <div className="splash-stage">
         <div className="splash-logo-wrap" aria-hidden="true">
           <img className="splash-logo" src="/images/brand/thinking-house-brand-v3.png" alt="" />
@@ -221,16 +235,18 @@ function LaunchSplash({ onEnter }: { onEnter: () => void }) {
         </div>
         <div className="splash-title">
           <strong>小小思考屋</strong>
-          <span>一起看、一起想、一起说为什么</span>
+          <span>正在打开今天的小小问题</span>
+        </div>
+        <div className="splash-light-trail" aria-hidden="true">
+          <span />
+          <span />
+          <span />
         </div>
         <div className="splash-dots" aria-hidden="true">
           <span />
           <span />
           <span />
         </div>
-        <button className="splash-enter" type="button" onClick={enterApp}>
-          进入小小思考屋
-        </button>
       </div>
     </main>
   );

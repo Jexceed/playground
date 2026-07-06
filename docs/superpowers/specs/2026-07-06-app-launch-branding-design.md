@@ -6,7 +6,7 @@ Make the installed Mac app visibly branded with a logo, and give the app a short
 
 ## Design
 
-The Tauri bundle declares generated icon resources so macOS can use the app logo. The React app gets a first-load splash screen using the existing brand image. Because audio playback is not reliable without a user gesture, the splash has a clear enter button; clicking it calls `speak("小小思考屋")` and then transitions into the existing page even if audio fails.
+The Tauri bundle declares generated icon resources so macOS can use the app logo. The React app gets a first-load splash screen using the existing brand image. The splash automatically attempts `speak("小小思考屋")`, runs the opening animation, and transitions into the existing page without requiring a click. If autoplay policy blocks audio, the transition still completes.
 
 ## Verification
 

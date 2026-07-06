@@ -55,35 +55,63 @@ button:focus-visible {
 }
 
 .startup-splash {
+  position: relative;
   display: grid;
   place-items: center;
   min-height: 100vh;
   padding: 22px;
   overflow: hidden;
   background:
-    linear-gradient(90deg, rgba(255,255,255,0.28) 1px, transparent 1px),
-    linear-gradient(180deg, rgba(255,255,255,0.28) 1px, transparent 1px),
-    linear-gradient(135deg, #fff4df 0%, #edf7ee 54%, #e8f2fb 100%);
-  background-size: 30px 30px, 30px 30px, auto;
+    radial-gradient(circle at 18% 18%, rgba(255, 128, 96, 0.3) 0 9%, transparent 27%),
+    radial-gradient(circle at 82% 24%, rgba(88, 178, 133, 0.32) 0 10%, transparent 30%),
+    radial-gradient(circle at 52% 82%, rgba(83, 152, 221, 0.25) 0 12%, transparent 33%),
+    linear-gradient(135deg, #fff1d6 0%, #f5fff2 50%, #e6f4ff 100%);
+}
+
+.startup-splash::before,
+.startup-splash::after {
+  content: "";
+  position: absolute;
+  inset: -28%;
+  pointer-events: none;
+}
+
+.startup-splash::before {
+  background:
+    conic-gradient(from 140deg, transparent 0 18%, rgba(255, 255, 255, 0.72) 22%, transparent 28% 52%, rgba(255, 210, 95, 0.45) 58%, transparent 64% 100%);
+  animation: splashSweep 2800ms ease-in-out forwards;
+}
+
+.startup-splash::after {
+  background-image:
+    linear-gradient(90deg, rgba(255,255,255,0.3) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(255,255,255,0.3) 1px, transparent 1px);
+  background-size: 34px 34px;
+  mask-image: radial-gradient(circle at center, black 0 54%, transparent 74%);
+  opacity: 0.58;
+  animation: splashGridDrift 3200ms linear forwards;
 }
 
 .startup-splash.leaving {
-  animation: splashFade 620ms ease forwards;
+  animation: splashFade 760ms cubic-bezier(0.2, 0.86, 0.2, 1) forwards;
 }
 
 .splash-stage {
+  position: relative;
+  z-index: 2;
   display: grid;
   justify-items: center;
   width: min(560px, 92vw);
-  gap: 18px;
+  gap: 16px;
   text-align: center;
+  animation: splashStageEnter 760ms cubic-bezier(0.18, 0.82, 0.22, 1) both;
 }
 
 .splash-logo-wrap {
   position: relative;
-  width: min(360px, 78vw);
+  width: min(430px, 82vw);
   aspect-ratio: 1672 / 941;
-  animation: splashFloat 2100ms ease-in-out infinite;
+  animation: splashFloat 1700ms ease-in-out 760ms infinite;
 }
 
 .splash-logo {
@@ -93,16 +121,20 @@ button:focus-visible {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  filter: drop-shadow(0 18px 24px rgba(67, 52, 24, 0.16));
+  filter:
+    drop-shadow(0 22px 28px rgba(67, 52, 24, 0.18))
+    drop-shadow(0 0 14px rgba(255, 255, 255, 0.78));
 }
 
 .splash-glow {
   position: absolute;
-  inset: 16% 12% 8%;
+  inset: 2% -4% -10%;
   border-radius: 50%;
-  background: rgba(255, 214, 132, 0.34);
-  filter: blur(18px);
-  transform: translateY(24px);
+  background:
+    radial-gradient(circle, rgba(255, 230, 133, 0.72) 0 22%, rgba(105, 205, 151, 0.22) 42%, transparent 70%);
+  filter: blur(16px);
+  transform: translateY(28px) scale(0.92);
+  animation: splashPulse 1450ms ease-in-out infinite;
 }
 
 .splash-title {
@@ -114,12 +146,79 @@ button:focus-visible {
   color: #253243;
   font-size: clamp(2rem, 8vw, 3.6rem);
   letter-spacing: 0;
+  text-shadow: 0 8px 18px rgba(255, 255, 255, 0.78);
 }
 
 .splash-title span {
-  color: #5e6b75;
+  color: #4c6473;
   font-size: clamp(0.98rem, 3.6vw, 1.2rem);
-  font-weight: 800;
+  font-weight: 900;
+}
+
+.splash-orbit {
+  position: absolute;
+  z-index: 1;
+  width: min(620px, 96vw);
+  aspect-ratio: 1;
+  border: 2px solid rgba(255, 255, 255, 0.52);
+  border-radius: 50%;
+  box-shadow:
+    inset 0 0 34px rgba(255, 255, 255, 0.44),
+    0 0 42px rgba(255, 184, 80, 0.16);
+  animation: splashOrbit 3200ms cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
+}
+
+.splash-orbit span {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 8px;
+  box-shadow: 0 8px 18px rgba(72, 72, 72, 0.12);
+}
+
+.splash-orbit span:nth-child(1) {
+  top: 10%;
+  left: 50%;
+  background: var(--coral);
+}
+
+.splash-orbit span:nth-child(2) {
+  top: 50%;
+  right: 10%;
+  background: var(--gold);
+}
+
+.splash-orbit span:nth-child(3) {
+  bottom: 10%;
+  left: 50%;
+  background: var(--leaf);
+}
+
+.splash-orbit span:nth-child(4) {
+  top: 50%;
+  left: 10%;
+  background: var(--sky);
+}
+
+.splash-light-trail {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(54px, 88px));
+  gap: 10px;
+  height: 8px;
+}
+
+.splash-light-trail span {
+  border-radius: 999px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.9), transparent);
+  animation: splashTrail 1100ms ease-in-out infinite;
+}
+
+.splash-light-trail span:nth-child(2) {
+  animation-delay: 130ms;
+}
+
+.splash-light-trail span:nth-child(3) {
+  animation-delay: 260ms;
 }
 
 .splash-dots {
@@ -133,7 +232,7 @@ button:focus-visible {
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  animation: splashDot 1200ms ease-in-out infinite;
+  animation: splashDot 920ms ease-in-out infinite;
 }
 
 .splash-dots span:nth-child(1) {
@@ -150,18 +249,6 @@ button:focus-visible {
   animation-delay: 320ms;
 }
 
-.splash-enter {
-  min-height: 50px;
-  padding: 0 22px;
-  border: 2px solid #d49a3d;
-  border-radius: 8px;
-  color: #263241;
-  background: #fff7df;
-  box-shadow: 0 12px 24px rgba(146, 95, 23, 0.16);
-  cursor: pointer;
-  font-weight: 950;
-}
-
 @keyframes splashFloat {
   0%,
   100% {
@@ -169,6 +256,79 @@ button:focus-visible {
   }
   50% {
     transform: translateY(-10px) rotate(0.6deg);
+  }
+}
+
+@keyframes splashStageEnter {
+  0% {
+    opacity: 0;
+    transform: translateY(18px) scale(0.86);
+  }
+  64% {
+    opacity: 1;
+    transform: translateY(-4px) scale(1.04);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes splashPulse {
+  0%,
+  100% {
+    opacity: 0.62;
+    transform: translateY(28px) scale(0.88);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(18px) scale(1.08);
+  }
+}
+
+@keyframes splashOrbit {
+  0% {
+    opacity: 0;
+    transform: scale(0.72) rotate(-80deg);
+  }
+  18% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.74;
+    transform: scale(1.08) rotate(220deg);
+  }
+}
+
+@keyframes splashSweep {
+  0% {
+    opacity: 0;
+    transform: rotate(-34deg) scale(0.88);
+  }
+  28% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.32;
+    transform: rotate(42deg) scale(1.08);
+  }
+}
+
+@keyframes splashGridDrift {
+  to {
+    background-position: 70px 42px, 42px 70px;
+  }
+}
+
+@keyframes splashTrail {
+  0%,
+  100% {
+    opacity: 0.16;
+    transform: scaleX(0.58);
+  }
+  50% {
+    opacity: 0.92;
+    transform: scaleX(1);
   }
 }
 
@@ -187,7 +347,7 @@ button:focus-visible {
 @keyframes splashFade {
   to {
     opacity: 0;
-    transform: scale(1.02);
+    transform: scale(1.08);
   }
 }
 
