@@ -777,9 +777,61 @@ button:focus-visible {
 
 .address-object {
   min-width: 0;
+  padding: 4px;
 }
 
-.address-object .visual-token,
+.map-cell-token {
+  appearance: none;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 3px;
+  width: 100%;
+  min-width: 0;
+  min-height: 72px;
+  padding: 4px 2px;
+  border: 0;
+  border-radius: 6px;
+  color: #334154;
+  background: transparent;
+  font: inherit;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.map-cell-token:hover,
+.map-cell-token:focus-visible {
+  outline: none;
+  background: rgba(117, 187, 131, 0.14);
+}
+
+.map-cell-token:focus-visible {
+  box-shadow: 0 0 0 3px rgba(117, 187, 131, 0.38);
+}
+
+.map-cell-token .kid-illustration {
+  width: 48px;
+  height: 48px;
+}
+
+.map-cell-label {
+  width: 100%;
+  color: #596576;
+  font-size: 0.7rem;
+  font-weight: 900;
+  line-height: 1.1;
+  overflow-wrap: anywhere;
+  text-align: center;
+}
+
+.map-cell-glyph {
+  display: grid;
+  place-items: center;
+  min-height: 44px;
+  color: #334154;
+  font-size: 1.05rem;
+}
+
 .matrix-cell .visual-token {
   min-width: 62px;
   min-height: 72px;
@@ -787,13 +839,11 @@ button:focus-visible {
   box-shadow: none;
 }
 
-.address-object .kid-illustration,
 .matrix-cell .kid-illustration {
   width: 50px;
   height: 50px;
 }
 
-.address-object .visual-token small,
 .matrix-cell .visual-token small {
   font-size: 0.68rem;
 }
@@ -1530,13 +1580,25 @@ button:focus-visible {
     font-size: 1rem;
   }
 
-  .address-object .visual-token,
   .matrix-cell .visual-token {
     min-width: 48px;
     min-height: 60px;
   }
 
-  .address-object .kid-illustration,
+  .map-cell-token {
+    min-height: 54px;
+    padding: 2px;
+  }
+
+  .map-cell-token .kid-illustration {
+    width: 38px;
+    height: 38px;
+  }
+
+  .map-cell-label {
+    font-size: 0.62rem;
+  }
+
   .matrix-cell .kid-illustration {
     width: 40px;
     height: 40px;

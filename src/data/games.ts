@@ -2579,7 +2579,6 @@ function makeNumberPatternRounds(): RoundInput[] {
 }
 
 function makeAddressMapRounds(): RoundInput[] {
-  const sceneImage = imageGallery.scenes.treasureMapGrid;
   const smallGrid = {
     columns: ["1", "2", "3"],
     rows: ["A", "B", "C"],
@@ -2616,7 +2615,6 @@ function makeAddressMapRounds(): RoundInput[] {
       level: item.level as AbilityLevel,
       prompt: `${item.address} 里藏着什么？`,
       instruction: "先找字母行，再找数字列。",
-      sceneImage,
       grid: item.grid,
       choices: choiceSet([item.answer, ...gridDistractors(item.grid, item.answer)]),
       answer: item.answer,
@@ -2639,7 +2637,6 @@ function makeAddressMapRounds(): RoundInput[] {
       level: item.level as AbilityLevel,
       prompt: `${item.target}住在哪个地址？`,
       instruction: "先找到物品，再读左边字母和上面数字。",
-      sceneImage,
       grid: item.grid,
       choices: choiceSet(item.choices),
       answer: item.answer,
@@ -2734,7 +2731,6 @@ function makeMatrixPuzzleRounds(): RoundInput[] {
 }
 
 function makePositionMapRounds(): RoundInput[] {
-  const sceneImage = imageGallery.scenes.positionPlayroom;
   const horizontalGrid = {
     columns: ["左", "中", "右"],
     rows: ["位置"],
@@ -2760,7 +2756,6 @@ function makePositionMapRounds(): RoundInput[] {
       level: "L4",
       prompt: "谁在小猫的左边？",
       instruction: "先找到小猫，再看左边。",
-      sceneImage,
       grid: horizontalGrid,
       choices: choiceSet(["小狗", "小兔", "小猫"]),
       answer: "小狗",
@@ -2773,7 +2768,6 @@ function makePositionMapRounds(): RoundInput[] {
       level: "L4",
       prompt: "谁在小猫的右边？",
       instruction: "先找到小猫，再看右边。",
-      sceneImage,
       grid: horizontalGrid,
       choices: choiceSet(["小狗", "小兔", "小猫"]),
       answer: "小兔",
@@ -2786,7 +2780,6 @@ function makePositionMapRounds(): RoundInput[] {
       level: "L4",
       prompt: "谁在书包的上面？",
       instruction: "先找到书包，再往上看。",
-      sceneImage,
       grid: verticalGrid,
       choices: choiceSet(["小鸟", "小鱼", "书包"]),
       answer: "小鸟",
@@ -2799,7 +2792,6 @@ function makePositionMapRounds(): RoundInput[] {
       level: "L4",
       prompt: "谁在书包的下面？",
       instruction: "先找到书包，再往下看。",
-      sceneImage,
       grid: verticalGrid,
       choices: choiceSet(["小鸟", "小鱼", "书包"]),
       answer: "小鱼",
@@ -2812,7 +2804,6 @@ function makePositionMapRounds(): RoundInput[] {
       level: "L5",
       prompt: "盒子的左边是什么？",
       instruction: "先找到盒子，再看左边一格。",
-      sceneImage,
       grid: roomGrid,
       choices: choiceSet(["小狗", "小猫", "书包"]),
       answer: "小狗",
@@ -2825,7 +2816,6 @@ function makePositionMapRounds(): RoundInput[] {
       level: "L5",
       prompt: "盒子的右边是什么？",
       instruction: "先找到盒子，再看右边一格。",
-      sceneImage,
       grid: roomGrid,
       choices: choiceSet(["小狗", "小猫", "书包"]),
       answer: "小猫",
@@ -2838,7 +2828,6 @@ function makePositionMapRounds(): RoundInput[] {
       level: "L5",
       prompt: "盒子的上面是什么？",
       instruction: "先找到盒子，再看上面一格。",
-      sceneImage,
       grid: roomGrid,
       choices: choiceSet(["风筝", "足球", "小鱼"]),
       answer: "风筝",
@@ -2851,7 +2840,6 @@ function makePositionMapRounds(): RoundInput[] {
       level: "L5",
       prompt: "盒子的下面是什么？",
       instruction: "先找到盒子，再看下面一格。",
-      sceneImage,
       grid: roomGrid,
       choices: choiceSet(["风筝", "书包", "飞机"]),
       answer: "书包",
@@ -2867,7 +2855,6 @@ function makePositionMapRounds(): RoundInput[] {
       level: "L5",
       prompt: "谁在盒子里面？",
       instruction: "看清楚里面和外面。",
-      sceneImage,
       visualGroups: [
         { label: "盒子里面", items: ["小鱼"] },
         { label: "盒子外面", items: ["小猫", "小狗"] },
@@ -2883,7 +2870,6 @@ function makePositionMapRounds(): RoundInput[] {
       level: "L5",
       prompt: "谁在盒子外面？",
       instruction: "这次找没有被装进去的。",
-      sceneImage,
       visualGroups: [
         { label: "盒子里面", items: ["足球", "书包"] },
         { label: "盒子外面", items: ["小兔"] },
@@ -2902,7 +2888,6 @@ function makePositionMapRounds(): RoundInput[] {
       level: "L6",
       prompt: "小狗看盒子，盒子在小狗的哪边？",
       instruction: "先找到小狗，再从小狗往盒子看。",
-      sceneImage,
       grid: roomGrid,
       choices: choiceSet(["左边", "右边", "上面"]),
       answer: "右边",
@@ -2915,7 +2900,6 @@ function makePositionMapRounds(): RoundInput[] {
       level: "L6",
       prompt: "小猫看盒子，盒子在小猫的哪边？",
       instruction: "先找到小猫，再从小猫往盒子看。",
-      sceneImage,
       grid: roomGrid,
       choices: choiceSet(["左边", "右边", "下面"]),
       answer: "左边",
@@ -3697,7 +3681,6 @@ function makeThreeViewBlockRounds(): RoundInput[] {
 }
 
 function makeRouteStepRounds(): RoundInput[] {
-  const sceneImage = imageGallery.scenes.treasureMapGrid;
   const routeGrid = {
     columns: ["1", "2", "3"],
     rows: ["A", "B", "C"],
@@ -3726,7 +3709,6 @@ function makeRouteStepRounds(): RoundInput[] {
     level: "L4" as AbilityLevel,
     prompt: `从${item.start}出发，${item.move}到哪里？`,
     instruction: "先找到起点，再走一步。",
-    sceneImage,
     grid: routeGrid,
     choices: choiceSet(item.choices),
     answer: item.answer,
@@ -3747,7 +3729,6 @@ function makeRouteStepRounds(): RoundInput[] {
     level: index < 3 ? "L5" as AbilityLevel : "L6" as AbilityLevel,
     prompt: `从${item.start}出发，先${item.firstMove}，再${item.secondMove}，到哪里？`,
     instruction: "把两步都记住，按顺序走。",
-    sceneImage,
     grid: parkGrid,
     choices: choiceSet(item.choices),
     answer: item.answer,

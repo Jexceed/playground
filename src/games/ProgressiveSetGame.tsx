@@ -431,6 +431,17 @@ function SubitizeFrame({ items, visible, onPeek }: { items: string[]; visible: b
   );
 }
 
+function MapCellToken({ value }: { value: string }) {
+  const meta = visualMetaFor(value);
+  const label = meta?.label ?? labelForVoice(value);
+  return (
+    <button className={`map-cell-token ${meta ? "" : "map-cell-token-text"}`} type="button" onClick={() => speak(label)} aria-label={label}>
+      {meta ? <VisualGlyph kind={meta.kind} /> : <span className="map-cell-glyph" aria-hidden="true">{value}</span>}
+      <span className="map-cell-label">{label}</span>
+    </button>
+  );
+}
+
 function MemoryBoard({ covered, items, onCover }: { covered: boolean; items: string[]; onCover: () => void }) {
   return (
     <div className={`memory-board ${covered ? "covered" : ""}`} aria-label="记忆小相机">
@@ -468,7 +479,7 @@ function AddressGrid({ grid }: { grid: NonNullable<GameRound["grid"]> }) {
           <div className="address-cell address-label">{row}</div>
           {grid.columns.map((column, columnIndex) => (
             <div className="address-cell address-object" key={`${row}-${column}`}>
-              <VisualToken value={grid.cells[rowIndex]?.[columnIndex] ?? ""} />
+              <MapCellToken value={grid.cells[rowIndex]?.[columnIndex] ?? ""} />
             </div>
           ))}
         </Fragment>

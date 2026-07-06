@@ -3,6 +3,19 @@
 All meaningful project changes should be recorded here. Keep entries factual and
 grouped by date.
 
+## 2026-07-06
+
+- Added the `015-map-visual-surface-quality` Spec Kit feature for spatial
+  visual-surface clarity in address-map, position-map, and route-step rounds.
+- Expanded the curriculum audit with checks that reject spatial rounds combining
+  a grid or inside/outside group with a positional scene image.
+- Added an audit check that prevents `AddressGrid` from nesting full visual-card
+  tokens inside map cells.
+- Removed conflicting scene images from affected address-map, position-map, and
+  route-step rounds so each task has one authoritative spatial surface.
+- Reworked map grid cells to use flat icon-and-label tokens with click-to-speak
+  behavior instead of card frames inside card-like cells.
+
 ## 2026-07-05
 
 - Added the `012-memory-camera-quality` Spec Kit feature for appeared-item,

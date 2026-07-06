@@ -20,7 +20,8 @@ small enough to turn into a Spec Kit feature.
   `logic-difference-detective`, `logic-block-height-map`,
   `logic-three-view-blocks`, `logic-route-steps`, `logic-address-map`,
   `logic-matrix-puzzle`, `logic-position-map`, `logic-memory-camera`, and
-  `logic-order-plan`; add targeted audits for any remaining cluster whose
+  `logic-order-plan`; include a visual-surface pass like
+  `015-map-visual-surface-quality`, and add targeted audits for any remaining cluster whose
   picture, text, audio, option quality, or parent explanation is still weak.
 
 ## P2
@@ -31,3 +32,6 @@ small enough to turn into a Spec Kit feature.
   assets and files that exist but are not registered.
 - Add screenshot-based smoke checks for representative desktop and mobile game
   layouts.
+- If richer illustrated maps are desired later, generate each map as the single
+  answer surface from the same grid data instead of stacking a decorative scene
+  above a separate answer grid.

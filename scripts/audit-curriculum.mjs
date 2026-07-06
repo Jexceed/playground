@@ -4,6 +4,7 @@ import ts from "typescript";
 
 const indexHtml = readFileSync("index.html", "utf8");
 const appSource = readFileSync("src/App.tsx", "utf8");
+const progressiveSetGameSource = readFileSync("src/games/ProgressiveSetGame.tsx", "utf8");
 const imageGallerySource = readFileSync("src/data/imageGallery.ts", "utf8");
 const imageGalleryOutput = ts.transpileModule(imageGallerySource, {
   compilerOptions: { module: ts.ModuleKind.ES2020, target: ts.ScriptTarget.ES2020 },
@@ -40,6 +41,7 @@ const visualRuleHints = [
   /小狗在房间里/,
   /小鸟在窗边/,
 ];
+const singleSurfaceSpatialGameIds = new Set(["logic-address-map", "logic-position-map", "logic-route-steps"]);
 
 const problems = [];
 const brandLogoSrc = "/images/brand/thinking-house-brand-v3.png";
@@ -57,6 +59,9 @@ if (!indexHtml.includes(`<link rel="apple-touch-icon" href="${brandLogoSrc}" />`
 }
 if (!appSource.includes(`src="${brandLogoSrc}"`)) problems.push(`App sidebar should render image-gen brand logo: ${brandLogoSrc}`);
 if (/brand-(mark|logo)/.test(appSource)) problems.push("App still contains legacy inline brand logo markup");
+if (addressGridUsesNestedVisualToken(progressiveSetGameSource)) {
+  problems.push("AddressGrid renderer should use flat map-cell tokens instead of nested VisualToken cards");
+}
 
 const forbiddenTextPatterns = [
   { pattern: /平常规则/, reason: "use natural wording such as 按红绿灯走" },
@@ -141,6 +146,9 @@ for (const game of games) {
     if (!round.difficultyNote?.trim()) problems.push(`${context}: missing difficultyNote`);
     if (game.world === "logic") {
       checkLogicDifficultyNote(round, context);
+    }
+    if (singleSurfaceSpatialGameIds.has(game.id)) {
+      checkSpatialVisualSurface(round, context);
     }
     if (!round.choices.some((choice) => choice.value === round.answer)) {
       problems.push(`${context}: answer is not in choices`);
@@ -1326,6 +1334,18 @@ function relativeDirectionBetween(sourcePosition, targetPosition) {
   if (sourceRow === targetRow) return targetColumn > sourceColumn ? "右边" : "左边";
   if (sourceColumn === targetColumn) return targetRow > sourceRow ? "下面" : "上面";
   return null;
+}
+
+function checkSpatialVisualSurface(round, context) {
+  if (round.sceneImage && (round.grid || round.visualGroups)) {
+    problems.push(`${context}: spatial map round should use one answer surface; remove sceneImage when grid or visual groups provide the answer surface`);
+  }
+}
+
+function addressGridUsesNestedVisualToken(sourceText) {
+  const match = sourceText.match(/function AddressGrid[\s\S]*?function MatrixBoard/);
+  if (!match) return false;
+  return /<VisualToken\s+value=\{grid\.cells/.test(match[0]);
 }
 
 function checkMemoryCameraRoundQuality(round, context) {
