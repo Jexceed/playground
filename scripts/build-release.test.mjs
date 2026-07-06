@@ -37,8 +37,12 @@ test("generates a NAS static package from dist without importing game logic", as
     await assertPath(path.join(outputDir, "content", "manifest.json"));
     await assertPath(path.join(outputDir, "content", "README.md"));
     await assertPath(path.join(outputDir, "release-manifest.json"));
+    const archivePath = path.join(fixture.root, "release", "thinking-island-nas-static-9.8.7-test.zip");
+    await assertPath(archivePath);
+    assertArchiveDoesNotContainFinderMetadata(archivePath);
     await assertMissing(path.join(outputDir, ".DS_Store"));
     await assertMissing(path.join(outputDir, "images", ".DS_Store"));
+    await assertMissing(path.join(outputDir, "images", "scenes", "source"));
 
     const contentManifest = JSON.parse(
       await readFile(path.join(outputDir, "content", "manifest.json"), "utf8"),
@@ -81,6 +85,7 @@ async function createFixtureRoot() {
 async function createDist(root) {
   await mkdir(path.join(root, "dist", "assets"), { recursive: true });
   await mkdir(path.join(root, "dist", "images", "brand"), { recursive: true });
+  await mkdir(path.join(root, "dist", "images", "scenes", "source"), { recursive: true });
   await mkdir(path.join(root, "dist", "audio"), { recursive: true });
   await writeFile(path.join(root, "dist", "index.html"), "<main>小小思考屋</main>");
   await writeFile(path.join(root, "dist", "assets", "app.js"), "console.log('app');");
@@ -88,6 +93,7 @@ async function createDist(root) {
   await writeFile(path.join(root, "dist", "audio", "voice-lines.json"), "{}");
   await writeFile(path.join(root, "dist", ".DS_Store"), "finder");
   await writeFile(path.join(root, "dist", "images", ".DS_Store"), "finder");
+  await writeFile(path.join(root, "dist", "images", "scenes", "source", "scene-source.png"), "source");
 }
 
 function runRelease(root) {
@@ -95,6 +101,16 @@ function runRelease(root) {
     cwd: repoRoot,
     encoding: "utf8",
   });
+}
+
+function assertArchiveDoesNotContainFinderMetadata(archivePath) {
+  const result = spawnSync("unzip", ["-l", archivePath], {
+    encoding: "utf8",
+  });
+  assert.equal(result.status, 0, result.stderr || result.stdout);
+  assert.doesNotMatch(result.stdout, /\.DS_Store|__MACOSX/);
+  assert.doesNotMatch(result.stdout, /\/source\//);
+  assert.match(result.stdout, /nas-static\/index\.html/);
 }
 
 async function assertPath(targetPath) {

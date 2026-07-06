@@ -9,11 +9,12 @@ grouped by date.
   packaging, Docker fallback, and Mac/Tauri installation.
 - Added a tested `pnpm release:nas` workflow that turns the Vite production
   build into a copyable `release/nas-static/` package with a `content/`
-  boundary and release manifest.
+  boundary, release manifest, and uploadable NAS zip archive.
 - Added deployment documentation that treats ZSpace NAS native static hosting as
   the preferred path and Docker/Compose as fallback only.
-- Added Tauri 2 configuration and scripts for building the same frontend as a
-  macOS installable app.
+- Added Tauri 2 configuration, generated app icons, and scripts for building
+  the same frontend as a macOS `.app` bundle, with DMG packaging left as an
+  optional command.
 - Added the `017-memory-camera-visual-surface` Spec Kit feature for flattening
   `记忆小相机` memory slots.
 - Expanded the curriculum audit with a source check that prevents `MemoryBoard`

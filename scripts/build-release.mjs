@@ -1,4 +1,5 @@
 import { cp, mkdir, readFile, rm, stat, writeFile } from "node:fs/promises";
+import { spawnSync } from "node:child_process";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -23,7 +24,7 @@ async function main() {
   await mkdir(path.dirname(outputDir), { recursive: true });
   await cp(sourceBuildDir, outputDir, {
     recursive: true,
-    filter: (source) => path.basename(source) !== ".DS_Store",
+    filter: (source) => shouldCopyReleasePath(source, sourceBuildDir),
   });
   await writeContentBoundary(outputDir);
   await writeReleaseManifest({
@@ -32,8 +33,10 @@ async function main() {
     sourceBuildDir,
     root,
   });
+  const archivePath = await writeReleaseArchive({ outputDir, packageInfo, root });
 
   console.log(`NAS static release written to ${path.relative(root, outputDir)}`);
+  console.log(`NAS static archive written to ${path.relative(root, archivePath)}`);
 }
 
 function parseArgs(args) {
@@ -117,4 +120,36 @@ async function writeReleaseManifest({ outputDir, packageInfo, sourceBuildDir, ro
     requiredPaths: ["index.html", "assets", "images", "audio", "content"],
   };
   await writeFile(path.join(outputDir, "release-manifest.json"), `${JSON.stringify(manifest, null, 2)}\n`);
+}
+
+async function writeReleaseArchive({ outputDir, packageInfo, root }) {
+  const releaseDir = path.dirname(outputDir);
+  const archiveName = `${packageInfo.name}-nas-static-${sanitizeVersion(packageInfo.version)}.zip`;
+  const archivePath = path.join(releaseDir, archiveName);
+  await rm(archivePath, { force: true });
+
+  const result = spawnSync(
+    "zip",
+    ["-qry", archiveName, path.basename(outputDir), "-x", "*.DS_Store", "__MACOSX/*"],
+    {
+      cwd: releaseDir,
+      encoding: "utf8",
+    },
+  );
+
+  if (result.status !== 0) {
+    throw new Error(`Failed to create NAS static archive: ${result.stderr || result.stdout || "zip exited with error"}`);
+  }
+
+  return archivePath;
+}
+
+function sanitizeVersion(version) {
+  return String(version).replace(/[^0-9A-Za-z._-]/g, "-");
+}
+
+function shouldCopyReleasePath(source, sourceBuildDir) {
+  if (path.basename(source) === ".DS_Store") return false;
+  const relative = path.relative(sourceBuildDir, source).split(path.sep);
+  return !(relative[0] === "images" && relative.includes("source"));
 }

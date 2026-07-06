@@ -17,7 +17,13 @@ The package is generated at:
 release/nas-static/
 ```
 
-This directory is safe to copy as a complete static site package. It contains built app files, images, audio, `content/`, and `release-manifest.json`.
+The uploadable archive is generated at:
+
+```text
+release/thinking-island-nas-static-0.1.0.zip
+```
+
+The directory and zip are safe to copy as complete static site packages. They contain built app files, runtime images, audio, `content/`, and `release-manifest.json`.
 
 ## ZSpace NAS: Native Static Install First
 
@@ -77,6 +83,30 @@ Build installable app/bundle:
 pnpm mac:build
 ```
 
+The default command builds a macOS `.app` bundle under:
+
+```text
+src-tauri/target/release/bundle/macos/小小思考屋.app
+```
+
+Optional DMG packaging can be attempted with:
+
+```bash
+pnpm mac:build:dmg
+```
+
+Install or update the app on the current Mac:
+
+```bash
+pnpm mac:install
+```
+
+This builds the `.app`, applies a local ad-hoc signature, and copies it to:
+
+```text
+/Applications/小小思考屋.app
+```
+
 The Tauri config runs `pnpm build` and points `frontendDist` to `../dist`, following the Tauri v2 Vite integration model.
 
 ## Verification
@@ -87,4 +117,5 @@ Before treating packaging work as complete, run:
 pnpm build
 pnpm audit:curriculum
 pnpm test:release
+pnpm mac:build
 ```

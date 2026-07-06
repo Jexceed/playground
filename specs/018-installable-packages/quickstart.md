@@ -49,6 +49,14 @@ pnpm mac:build
 
 Expected result: on a Mac with Rust and Tauri prerequisites, Tauri builds a macOS app bundle from the frontend build output.
 
+Install on the current Mac:
+
+```bash
+pnpm mac:install
+```
+
+Expected result: `/Applications/小小思考屋.app` exists and passes local code-sign verification.
+
 ## Required Final Verification
 
 ```bash

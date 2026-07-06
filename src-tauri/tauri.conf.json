@@ -1,8 +1,8 @@
 {
   "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
-  "productName": "Thinking Island",
+  "productName": "小小思考屋",
   "version": "0.1.0",
-  "identifier": "com.thinkingisland.app",
+  "identifier": "com.thinkingisland.desktop",
   "build": {
     "beforeDevCommand": "pnpm dev",
     "beforeBuildCommand": "pnpm build",
@@ -12,7 +12,7 @@
   "app": {
     "windows": [
       {
-        "title": "Thinking Island",
+        "title": "小小思考屋",
         "width": 1280,
         "height": 820,
         "minWidth": 1024,
