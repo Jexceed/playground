@@ -12,6 +12,9 @@ grouped by date.
 - Replaced the wide-logo app icon with a high-contrast square icon, refreshed
   Mac installation to clear stale app bundles, and made the launch animation
   auto-enter the game page after a richer opening sequence.
+- Rebuilt the Mac app icon from a direct crop of the in-app brand house logo so
+  Dock and Launchpad match the internal brand while reading clearly at small
+  sizes.
 - Added the `018-installable-packages` Spec Kit feature for NAS-first static
   packaging, Docker fallback, and Mac/Tauri installation.
 - Added a tested `pnpm release:nas` workflow that turns the Vite production

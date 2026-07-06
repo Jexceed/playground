@@ -76,6 +76,12 @@ if (!tauriConfig?.bundle?.icon?.some?.((icon) => icon.includes("icon.icns"))) {
 if (!tauriConfig?.bundle?.icon?.some?.((icon) => icon.includes("icon.png"))) {
   problems.push("Tauri bundle should declare the PNG app logo");
 }
+if (!existsSync("src-tauri/icons/app-icon-source.png")) {
+  problems.push("Tauri app icon should keep a PNG source cropped from the brand logo");
+}
+if (existsSync("src-tauri/icons/app-icon-source.svg")) {
+  problems.push("Tauri app icon should reuse the brand logo crop instead of a redrawn SVG source");
+}
 if (addressGridUsesNestedVisualToken(progressiveSetGameSource)) {
   problems.push("AddressGrid renderer should use flat map-cell tokens instead of nested VisualToken cards");
 }
