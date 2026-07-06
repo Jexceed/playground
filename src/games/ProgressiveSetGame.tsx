@@ -495,13 +495,30 @@ function MatrixCellToken({ value }: { value: string }) {
   );
 }
 
+function MemoryCardToken({ covered, value }: { covered: boolean; value: string }) {
+  const displayValue = covered ? "遮住了" : value;
+  const meta = visualMetaFor(displayValue);
+  const label = meta?.label ?? labelForVoice(displayValue);
+  return (
+    <button
+      className={`memory-card-token ${covered ? "memory-card-token-covered" : ""} ${meta ? "" : "memory-card-token-text"}`}
+      type="button"
+      onClick={() => speak(label)}
+      aria-label={label}
+    >
+      {meta ? <VisualGlyph kind={meta.kind} /> : <span className="memory-card-text" aria-hidden="true">{displayValue}</span>}
+      <span className="memory-card-label">{label}</span>
+    </button>
+  );
+}
+
 function MemoryBoard({ covered, items, onCover }: { covered: boolean; items: string[]; onCover: () => void }) {
   return (
     <div className={`memory-board ${covered ? "covered" : ""}`} aria-label="记忆小相机">
       <div className="memory-card-row">
         {items.map((item, index) => (
           <div className="memory-card" key={`${item}-${index}`}>
-            {covered ? <VisualToken value="遮住了" /> : <VisualToken value={item} />}
+            <MemoryCardToken covered={covered} value={item} />
           </div>
         ))}
       </div>

@@ -69,6 +69,9 @@ if (visualChoicesUseDuplicatedRawLabels(progressiveSetGameSource)) {
 if (matrixBoardUsesNestedVisualToken(progressiveSetGameSource)) {
   problems.push("MatrixBoard renderer should use flat matrix-cell tokens instead of nested VisualToken cards");
 }
+if (memoryBoardUsesNestedVisualToken(progressiveSetGameSource)) {
+  problems.push("MemoryBoard renderer should use flat memory-card tokens instead of nested VisualToken cards");
+}
 if (!/readLastPlayLocation/.test(storageSource) || !/saveLastPlayLocation/.test(storageSource)) {
   problems.push("storage should expose readLastPlayLocation and saveLastPlayLocation helpers");
 }
@@ -1369,6 +1372,12 @@ function matrixBoardUsesNestedVisualToken(sourceText) {
   const match = sourceText.match(/function MatrixBoard[\s\S]*?type SceneKind/);
   if (!match) return false;
   return /<VisualToken\s+value=\{cell\}\s*\/>/.test(match[0]);
+}
+
+function memoryBoardUsesNestedVisualToken(sourceText) {
+  const match = sourceText.match(/function MemoryBoard[\s\S]*?function AddressGrid/);
+  if (!match) return false;
+  return /<VisualToken\b/.test(match[0]);
 }
 
 function checkMemoryCameraRoundQuality(round, context) {

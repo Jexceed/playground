@@ -5,6 +5,12 @@ grouped by date.
 
 ## 2026-07-06
 
+- Added the `017-memory-camera-visual-surface` Spec Kit feature for flattening
+  `记忆小相机` memory slots.
+- Expanded the curriculum audit with a source check that prevents `MemoryBoard`
+  from nesting full visual-card tokens inside memory slots.
+- Reworked memory-camera slots so visible and covered cards use flat
+  icon-and-label tokens while preserving tap-to-hear behavior.
 - Added the `016-visual-choice-session-memory` Spec Kit feature for visual-match
   choices, matrix-cell visual density, and last-opened-location restoration.
 - Expanded the curriculum audit with source checks that prevent duplicated

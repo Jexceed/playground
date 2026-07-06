@@ -961,6 +961,62 @@ button:focus-visible {
   background: #f2eadc;
 }
 
+.memory-card-token {
+  appearance: none;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 5px;
+  width: 100%;
+  min-width: 0;
+  min-height: 104px;
+  padding: 8px 6px;
+  border: 0;
+  border-radius: 6px;
+  color: #334154;
+  background: transparent;
+  font: inherit;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.memory-card-token:hover,
+.memory-card-token:focus-visible {
+  outline: none;
+  background: rgba(217, 155, 56, 0.14);
+}
+
+.memory-card-token:focus-visible {
+  box-shadow: 0 0 0 3px rgba(217, 155, 56, 0.34);
+}
+
+.memory-card-token .kid-illustration {
+  width: 56px;
+  height: 56px;
+}
+
+.memory-card-token-covered .kid-illustration {
+  opacity: 0.78;
+}
+
+.memory-card-label {
+  width: 100%;
+  color: #596576;
+  font-size: 0.82rem;
+  font-weight: 950;
+  line-height: 1.12;
+  overflow-wrap: anywhere;
+  text-align: center;
+}
+
+.memory-card-text {
+  display: grid;
+  place-items: center;
+  min-height: 48px;
+  color: #334154;
+  font-size: 1rem;
+}
+
 .memory-cover-button {
   min-height: 44px;
   padding: 9px 16px;
@@ -1704,6 +1760,20 @@ button:focus-visible {
 
   .memory-card {
     min-height: 86px;
+  }
+
+  .memory-card-token {
+    min-height: 78px;
+    padding: 5px 3px;
+  }
+
+  .memory-card-token .kid-illustration {
+    width: 44px;
+    height: 44px;
+  }
+
+  .memory-card-label {
+    font-size: 0.68rem;
   }
 
   .side-panel {
