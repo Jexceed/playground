@@ -73,3 +73,9 @@ export type ProgressLog = {
   completedRoundIds: string[];
   abilityTags: string[];
 };
+
+export type LastPlayLocation = {
+  worldId: WorldId;
+  gameId: string;
+  roundIndex: number;
+};

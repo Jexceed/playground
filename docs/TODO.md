@@ -14,6 +14,8 @@ small enough to turn into a Spec Kit feature.
 - Add automated audit coverage for image source-file pairing where practical.
 - Review remaining text-only `VisualToken` fallbacks and decide which need
   raster assets.
+- Add deeper automated browser smoke checks for persisted navigation state after
+  the first manual coverage in `016-visual-choice-session-memory`.
 - Run a broader logic-house completion review after the audited clusters
   `logic-pattern-train`, `logic-sorter-switch`,
   `logic-same-kind-detective`, `logic-visual-match`,

@@ -5,6 +5,7 @@ import ts from "typescript";
 const indexHtml = readFileSync("index.html", "utf8");
 const appSource = readFileSync("src/App.tsx", "utf8");
 const progressiveSetGameSource = readFileSync("src/games/ProgressiveSetGame.tsx", "utf8");
+const storageSource = readFileSync("src/storage.ts", "utf8");
 const imageGallerySource = readFileSync("src/data/imageGallery.ts", "utf8");
 const imageGalleryOutput = ts.transpileModule(imageGallerySource, {
   compilerOptions: { module: ts.ModuleKind.ES2020, target: ts.ScriptTarget.ES2020 },
@@ -61,6 +62,18 @@ if (!appSource.includes(`src="${brandLogoSrc}"`)) problems.push(`App sidebar sho
 if (/brand-(mark|logo)/.test(appSource)) problems.push("App still contains legacy inline brand logo markup");
 if (addressGridUsesNestedVisualToken(progressiveSetGameSource)) {
   problems.push("AddressGrid renderer should use flat map-cell tokens instead of nested VisualToken cards");
+}
+if (visualChoicesUseDuplicatedRawLabels(progressiveSetGameSource)) {
+  problems.push("ProgressiveSetGame should render exact visual-card choices without duplicated raw labels");
+}
+if (matrixBoardUsesNestedVisualToken(progressiveSetGameSource)) {
+  problems.push("MatrixBoard renderer should use flat matrix-cell tokens instead of nested VisualToken cards");
+}
+if (!/readLastPlayLocation/.test(storageSource) || !/saveLastPlayLocation/.test(storageSource)) {
+  problems.push("storage should expose readLastPlayLocation and saveLastPlayLocation helpers");
+}
+if (!/readLastPlayLocation/.test(appSource) || !/saveLastPlayLocation/.test(appSource)) {
+  problems.push("App should restore and persist the last opened world, game, and round");
 }
 
 const forbiddenTextPatterns = [
@@ -1346,6 +1359,16 @@ function addressGridUsesNestedVisualToken(sourceText) {
   const match = sourceText.match(/function AddressGrid[\s\S]*?function MatrixBoard/);
   if (!match) return false;
   return /<VisualToken\s+value=\{grid\.cells/.test(match[0]);
+}
+
+function visualChoicesUseDuplicatedRawLabels(sourceText) {
+  return /<ChoiceCue\s+label=\{choice\.label\}\s*\/>\s*<span>\{choice\.label\}<\/span>/.test(sourceText);
+}
+
+function matrixBoardUsesNestedVisualToken(sourceText) {
+  const match = sourceText.match(/function MatrixBoard[\s\S]*?type SceneKind/);
+  if (!match) return false;
+  return /<VisualToken\s+value=\{cell\}\s*\/>/.test(match[0]);
 }
 
 function checkMemoryCameraRoundQuality(round, context) {

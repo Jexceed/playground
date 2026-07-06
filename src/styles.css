@@ -832,22 +832,6 @@ button:focus-visible {
   font-size: 1.05rem;
 }
 
-.matrix-cell .visual-token {
-  min-width: 62px;
-  min-height: 72px;
-  padding: 5px 5px 17px;
-  box-shadow: none;
-}
-
-.matrix-cell .kid-illustration {
-  width: 50px;
-  height: 50px;
-}
-
-.matrix-cell .visual-token small {
-  font-size: 0.68rem;
-}
-
 .matrix-board {
   display: grid;
   gap: 6px;
@@ -877,6 +861,71 @@ button:focus-visible {
 .matrix-cell-missing {
   border-color: #d99b38;
   background: #fff3d4;
+}
+
+.matrix-cell-token {
+  appearance: none;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 3px;
+  width: 100%;
+  min-width: 0;
+  min-height: 78px;
+  padding: 5px 3px;
+  border: 0;
+  border-radius: 6px;
+  color: #334154;
+  background: transparent;
+  font: inherit;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.matrix-cell-token:hover,
+.matrix-cell-token:focus-visible {
+  outline: none;
+  background: rgba(217, 155, 56, 0.14);
+}
+
+.matrix-cell-token:focus-visible {
+  box-shadow: 0 0 0 3px rgba(217, 155, 56, 0.34);
+}
+
+.matrix-token-glyphs {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3px;
+  max-width: 100%;
+}
+
+.matrix-cell-token .kid-illustration {
+  width: 48px;
+  height: 48px;
+}
+
+.matrix-cell-token-multi .kid-illustration.small {
+  width: 30px;
+  height: 30px;
+}
+
+.matrix-cell-label {
+  width: 100%;
+  color: #596576;
+  font-size: 0.68rem;
+  font-weight: 900;
+  line-height: 1.1;
+  overflow-wrap: anywhere;
+  text-align: center;
+}
+
+.matrix-cell-text {
+  display: grid;
+  place-items: center;
+  min-height: 42px;
+  color: #334154;
+  font-size: 1rem;
 }
 
 .memory-board {
@@ -1225,6 +1274,23 @@ button:focus-visible {
   background: #fffdf7;
   font-size: 1.05rem;
   font-weight: 900;
+}
+
+.answer-choice-visual-card {
+  min-height: 64px;
+}
+
+.choice-visual-card {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px;
+  max-width: 118px;
+}
+
+.choice-visual-card .kid-illustration.small {
+  width: 36px;
+  height: 36px;
 }
 
 .choice-cue {
@@ -1580,11 +1646,6 @@ button:focus-visible {
     font-size: 1rem;
   }
 
-  .matrix-cell .visual-token {
-    min-width: 48px;
-    min-height: 60px;
-  }
-
   .map-cell-token {
     min-height: 54px;
     padding: 2px;
@@ -1599,9 +1660,23 @@ button:focus-visible {
     font-size: 0.62rem;
   }
 
-  .matrix-cell .kid-illustration {
-    width: 40px;
-    height: 40px;
+  .matrix-cell-token {
+    min-height: 58px;
+    padding: 3px 2px;
+  }
+
+  .matrix-cell-token .kid-illustration {
+    width: 38px;
+    height: 38px;
+  }
+
+  .matrix-cell-token-multi .kid-illustration.small {
+    width: 24px;
+    height: 24px;
+  }
+
+  .matrix-cell-label {
+    font-size: 0.6rem;
   }
 
   .matrix-board {

@@ -5,6 +5,18 @@ grouped by date.
 
 ## 2026-07-06
 
+- Added the `016-visual-choice-session-memory` Spec Kit feature for visual-match
+  choices, matrix-cell visual density, and last-opened-location restoration.
+- Expanded the curriculum audit with source checks that prevent duplicated
+  visual-card choice labels, nested matrix-cell visual cards, and missing
+  last-location storage integration.
+- Reworked exact visual-match answer buttons so visual-card choices render as
+  compact cards without repeated raw symbol text, while position choices remain
+  readable.
+- Reworked matrix puzzle cells to use flat icon-and-label tokens instead of
+  full cards nested inside matrix cells.
+- Added separate local storage for the last opened world, game, and round so
+  reopening the app restores the previous browsing position.
 - Added the `015-map-visual-surface-quality` Spec Kit feature for spatial
   visual-surface clarity in address-map, position-map, and route-step rounds.
 - Expanded the curriculum audit with checks that reject spatial rounds combining
