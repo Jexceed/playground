@@ -51,8 +51,8 @@ small enough to turn into a Spec Kit feature.
 - Add screenshot-based smoke checks for representative desktop and mobile game
   layouts, including the collapsed world switcher, comparison-card groups, and
   evidence-card groups in the left sidebar/game surface; include answer-option
-  semantics for visual-count, part-whole, and relation-pair rounds, plus
-  voice-source consistency checks.
+  semantics for visual-count, part-whole, and relation-pair rounds, round
+  navigation speech start/stop behavior, plus voice-source consistency checks.
 - If richer illustrated maps are desired later, generate each map as the single
   answer surface from the same grid data instead of stacking a decorative scene
   above a separate answer grid.

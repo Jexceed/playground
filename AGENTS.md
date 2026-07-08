@@ -67,6 +67,9 @@ React + TypeScript + Vite 单页应用，核心体验是让孩子通过看图、
 - Mac 端签收不能只看浏览器或 Vite preview；涉及启动页、图标、语音、本地资源、
   持久化或发布体验时，必须用 `pnpm mac:build` 生成真实 `.app` 并打开测试。
   本机里程碑安装用 `pnpm mac:install`。
+- 完成任何会影响本地使用体验的代码、内容或资源修改后，必须运行
+  `pnpm mac:install` 更新 `/Applications/小小思考屋.app`，并在交付说明中报告
+  安装或失败原因。
 
 ## Documentation Hygiene
 

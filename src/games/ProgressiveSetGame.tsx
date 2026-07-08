@@ -1,5 +1,5 @@
 import { ArrowRight, Check, RotateCcw } from "lucide-react";
-import { Fragment, useEffect, useId, useMemo, useState } from "react";
+import { Fragment, useEffect, useId, useMemo, useRef, useState } from "react";
 import type { CSSProperties } from "react";
 import { GuideMascot } from "../components/GuideMascot";
 import { VisualGlyph, VisualToken, visualMetaFor, visualParts } from "../components/VisualToken";
@@ -10,12 +10,14 @@ import type { GameConfig, GameRound, GraphicChallengeOption, GraphicFigure, Grap
 export function ProgressiveSetGame({
   game,
   requestedRoundIndex,
+  requestedRoundReadKey,
   onComplete,
   onRoundComplete,
   onRoundIndexChange,
 }: {
   game: GameConfig;
   requestedRoundIndex: number;
+  requestedRoundReadKey: number;
   onComplete: () => void;
   onRoundComplete: (roundId: string, tags: string[]) => void;
   onRoundIndexChange: (index: number) => void;
@@ -25,9 +27,9 @@ export function ProgressiveSetGame({
   const [answered, setAnswered] = useState(false);
   const [retryMessage, setRetryMessage] = useState<string | null>(null);
   const [completedOnce, setCompletedOnce] = useState(false);
-  const [voiceReady, setVoiceReady] = useState(false);
   const [memoryCovered, setMemoryCovered] = useState(false);
   const [subitizeVisible, setSubitizeVisible] = useState(true);
+  const lastRoundReadKey = useRef(0);
 
   useEffect(() => {
     setRoundIndex(0);
@@ -41,15 +43,21 @@ export function ProgressiveSetGame({
 
   useEffect(() => {
     const nextIndex = Math.min(Math.max(requestedRoundIndex, 0), game.rounds.length - 1);
-    if (nextIndex === roundIndex) return;
-    setRoundIndex(nextIndex);
-    setSelected(null);
-    setAnswered(false);
-    setRetryMessage(null);
-    setMemoryCovered(false);
-    setSubitizeVisible(true);
-    setVoiceReady(true);
-  }, [game.rounds.length, requestedRoundIndex, roundIndex]);
+    const shouldReadRequestedRound = requestedRoundReadKey !== lastRoundReadKey.current;
+    if (shouldReadRequestedRound) lastRoundReadKey.current = requestedRoundReadKey;
+    if (nextIndex !== roundIndex) {
+      setRoundIndex(nextIndex);
+      setSelected(null);
+      setAnswered(false);
+      setRetryMessage(null);
+      setMemoryCovered(false);
+      setSubitizeVisible(true);
+    }
+    if (shouldReadRequestedRound) {
+      const requestedRound = game.rounds[nextIndex];
+      if (requestedRound) speak(joinVoiceLine(requestedRound.prompt, requestedRound.instruction));
+    }
+  }, [game.rounds, requestedRoundIndex, requestedRoundReadKey, roundIndex]);
 
   const round = game.rounds[roundIndex];
   const isCorrect = answered && selected === round.answer;
@@ -57,10 +65,6 @@ export function ProgressiveSetGame({
   const isSubitizeRound = game.id === "math-subitize-match";
   const subitizeCoverStartIndex = Math.max(0, game.rounds.length - 5);
   const shouldAutoCoverSubitize = isSubitizeRound && roundIndex >= subitizeCoverStartIndex;
-
-  useEffect(() => {
-    if (voiceReady) speak(joinVoiceLine(round.prompt, round.instruction));
-  }, [round.id, round.instruction, round.prompt, voiceReady]);
 
   useEffect(() => {
     if (!shouldAutoCoverSubitize || !subitizeVisible) return;
@@ -85,7 +89,6 @@ export function ProgressiveSetGame({
     playTone("tap");
     if (graphicOption) speak(graphicOption.label);
     else if (choice) speak(labelForVoice(choice.label));
-    setVoiceReady(true);
     setSelected(value);
     setRetryMessage(null);
   }
@@ -116,13 +119,16 @@ export function ProgressiveSetGame({
       }
       return;
     }
-    setRoundIndex((current) => current + 1);
-    onRoundIndexChange(roundIndex + 1);
+    const nextIndex = roundIndex + 1;
+    const requestedRound = game.rounds[nextIndex];
+    setRoundIndex(nextIndex);
+    onRoundIndexChange(nextIndex);
     setSelected(null);
     setAnswered(false);
     setRetryMessage(null);
     setMemoryCovered(false);
     setSubitizeVisible(true);
+    if (requestedRound) speak(joinVoiceLine(requestedRound.prompt, requestedRound.instruction));
   }
 
   function resetGame() {
@@ -134,6 +140,8 @@ export function ProgressiveSetGame({
     setCompletedOnce(false);
     setMemoryCovered(false);
     setSubitizeVisible(true);
+    const requestedRound = game.rounds[0];
+    if (requestedRound) speak(joinVoiceLine(requestedRound.prompt, requestedRound.instruction));
   }
 
   return (
@@ -157,7 +165,6 @@ export function ProgressiveSetGame({
         </div>
         <GuideMascot
           onSpeak={() => {
-            setVoiceReady(true);
             speak(joinVoiceLine(round.prompt, round.instruction));
           }}
         />

@@ -16,27 +16,23 @@ if (typeof window !== "undefined" && "speechSynthesis" in window) {
 
 export async function speak(text: string, lang = "zh-CN") {
   const clean = normalizeSpeechText(text);
+  const run = startSpeechRun();
   await loadVoiceManifest();
+  if (run !== speechRun) return;
   const src = voiceMap[clean] ?? voiceMap[text];
   const segmentSrcs = voiceSegments[clean] ?? voiceSegments[text];
-  speechRun += 1;
-  activeAudio?.pause();
-  activeAudio = null;
 
   if (segmentSrcs?.length) {
-    window.speechSynthesis?.cancel();
     recordLocalVoiceHit("voice-segments");
     recordSpeechSource("voice-segments");
-    void playAudioSegments(segmentSrcs, speechRun);
+    void playAudioSegments(segmentSrcs, run);
     return;
   }
 
   if (src) {
-    window.speechSynthesis?.cancel();
     recordLocalVoiceHit(src);
     recordSpeechSource(src);
     const audio = new Audio(src);
-    const run = speechRun;
     let fellBack = false;
     const fallbackToSpeechSynthesis = (reason = "local-audio-failed") => {
       if (fellBack || run !== speechRun || !("speechSynthesis" in window)) return;
@@ -57,10 +53,8 @@ export async function speak(text: string, lang = "zh-CN") {
   }
 
   if ("speechSynthesis" in window) {
-    const run = speechRun;
     recordSpeechFallback(src ? "local-audio-skipped" : "no-local-audio");
     recordSpeechSource("speechSynthesis");
-    window.speechSynthesis.cancel();
     void speakChunks(splitSpeechText(clean), lang, run);
     return;
   }
@@ -71,6 +65,25 @@ export async function speak(text: string, lang = "zh-CN") {
 
 export function warmVoiceManifest() {
   void loadVoiceManifest();
+}
+
+export function stopSpeech() {
+  speechRun += 1;
+  activeAudio?.pause();
+  try {
+    if (activeAudio) activeAudio.currentTime = 0;
+  } catch {
+    // Some browser audio implementations disallow seeking before metadata loads.
+  }
+  activeAudio = null;
+  if (typeof window !== "undefined" && "speechSynthesis" in window) {
+    window.speechSynthesis.cancel();
+  }
+}
+
+function startSpeechRun() {
+  stopSpeech();
+  return speechRun;
 }
 
 async function loadVoiceManifest() {

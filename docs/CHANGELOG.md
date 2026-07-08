@@ -5,6 +5,9 @@ grouped by date.
 
 ## 2026-07-08
 
+- Fixed round speech control so new speech requests invalidate stale pending
+  voice loads, explicit question navigation stops the previous line immediately,
+  and clicked question/game changes request the target round prompt directly.
 - Re-audited 图形工坊 from the player view: shadow choices now render as real
   black silhouettes, multi-figure stems render in one shared SVG for overlap and
   code-machine relationships, code-machine questions use a visible `?` answer

@@ -3,7 +3,7 @@ import { useEffect, useMemo, useState } from "react";
 import { games, worlds } from "./data/games";
 import { ProgressiveSetGame } from "./games/ProgressiveSetGame";
 import { addCompletion, addRoundCompletion, readLastPlayLocation, readProgress, saveLastPlayLocation, saveProgress } from "./storage";
-import { speak, warmVoiceManifest } from "./speech";
+import { speak, stopSpeech, warmVoiceManifest } from "./speech";
 import type { GameConfig, GameRound, LastPlayLocation, ProgressLog, WorldId } from "./types";
 
 const launchBrandAudioSrc = "/audio/brand/launch-brand-shout.wav";
@@ -14,6 +14,7 @@ export function App() {
   const [activeWorld, setActiveWorld] = useState<WorldId>(initialPlayLocation.worldId);
   const [selectedGameId, setSelectedGameId] = useState(initialPlayLocation.gameId);
   const [requestedRoundIndex, setRequestedRoundIndex] = useState(initialPlayLocation.roundIndex);
+  const [roundReadRequestKey, setRoundReadRequestKey] = useState(0);
   const [progress, setProgress] = useState<ProgressLog>(() => readProgress());
 
   useEffect(() => {
@@ -75,6 +76,34 @@ export function App() {
     saveProgress(empty);
   }
 
+  function requestRoundRead() {
+    setRoundReadRequestKey((current) => current + 1);
+  }
+
+  function jumpToRound(index: number) {
+    stopSpeech();
+    setRequestedRoundIndex(index);
+    setRoundReadRequestKey((current) => current + 1);
+  }
+
+  function chooseWorld(worldId: WorldId) {
+    stopSpeech();
+    setActiveWorld(worldId);
+    const firstGame = games.find((game) => game.world === worldId);
+    if (firstGame) {
+      setSelectedGameId(firstGame.id);
+      setRequestedRoundIndex(0);
+      requestRoundRead();
+    }
+  }
+
+  function chooseGame(gameId: string) {
+    stopSpeech();
+    setSelectedGameId(gameId);
+    setRequestedRoundIndex(0);
+    requestRoundRead();
+  }
+
   if (showSplash) {
     return <LaunchSplash onEnter={() => setShowSplash(false)} />;
   }
@@ -95,14 +124,7 @@ export function App() {
                 data-testid={`world-${world.id}`}
                 key={world.id}
                 type="button"
-                onClick={() => {
-                  setActiveWorld(world.id);
-                  const firstGame = games.find((game) => game.world === world.id);
-                  if (firstGame) {
-                    setSelectedGameId(firstGame.id);
-                    setRequestedRoundIndex(0);
-                  }
-                }}
+                onClick={() => chooseWorld(world.id)}
               >
                 <span className={`world-icon world-icon-${world.id}`} aria-hidden="true" />
                 <span>
@@ -123,10 +145,7 @@ export function App() {
               <span>选择关卡</span>
               <select
                 value={selectedGameId}
-                onChange={(event) => {
-                  setSelectedGameId(event.target.value);
-                  setRequestedRoundIndex(0);
-                }}
+                onChange={(event) => chooseGame(event.target.value)}
               >
                 {visibleGames.map((game) => (
                   <option key={game.id} value={game.id}>
@@ -143,10 +162,7 @@ export function App() {
                     data-testid={`game-${game.id}`}
                     key={game.id}
                     type="button"
-                    onClick={() => {
-                      setSelectedGameId(game.id);
-                      setRequestedRoundIndex(0);
-                    }}
+                    onClick={() => chooseGame(game.id)}
                   >
                     {progress.completedIds.includes(game.id) && <Check size={16} />}
                     <span>{game.title}</span>
@@ -166,6 +182,7 @@ export function App() {
               key={selectedGame.id}
               game={selectedGame}
               requestedRoundIndex={requestedRoundIndex}
+              requestedRoundReadKey={roundReadRequestKey}
               onComplete={() => completeGame(selectedGame)}
               onRoundIndexChange={setRequestedRoundIndex}
               onRoundComplete={completeRound}
@@ -178,7 +195,7 @@ export function App() {
             completedRoundIds={completedRoundSet}
             currentIndex={requestedRoundIndex}
             rounds={selectedGame.rounds}
-            onJump={setRequestedRoundIndex}
+            onJump={jumpToRound}
           />
 
           <section className="prompt-panel">
