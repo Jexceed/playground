@@ -59,5 +59,5 @@ export function addRoundCompletion(progress: ProgressLog, roundId: string, tags:
 }
 
 function isWorldId(value: unknown): value is WorldId {
-  return value === "math" || value === "logic";
+  return value === "math" || value === "logic" || value === "graphic";
 }

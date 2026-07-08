@@ -411,7 +411,7 @@ button:focus-visible {
 
 .world-switcher {
   display: grid;
-  gap: 10px;
+  gap: 6px;
 }
 
 .world-button,
@@ -429,11 +429,11 @@ button:focus-visible {
 
 .world-button {
   display: grid;
-  grid-template-columns: 44px minmax(0, 1fr);
-  gap: 10px;
+  grid-template-columns: 32px minmax(0, 1fr);
+  gap: 7px;
   align-items: center;
-  min-height: 82px;
-  padding: 12px;
+  min-height: 40px;
+  padding: 5px 8px;
   border: 2px solid var(--line);
   border-radius: 8px;
   color: var(--ink);
@@ -447,21 +447,53 @@ button:focus-visible {
   box-shadow: 0 10px 24px rgba(146, 95, 23, 0.14);
 }
 
+.world-button.expanded {
+  grid-template-columns: 40px minmax(0, 1fr);
+  gap: 9px;
+  min-height: 70px;
+  padding: 10px;
+}
+
+.world-button.collapsed {
+  min-height: 40px;
+  border-color: #eadfce;
+  background: rgba(255, 253, 247, 0.72);
+}
+
+.world-button.collapsed:hover {
+  border-color: #c8dbc8;
+  background: rgba(255, 255, 255, 0.92);
+}
+
 .world-icon {
   position: relative;
   display: grid;
   place-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 8px;
+  width: 32px;
+  height: 32px;
+  border-radius: 7px;
   background: #ffffff;
   box-shadow: inset 0 -6px 0 rgba(0, 0, 0, 0.04);
+}
+
+.world-button.expanded .world-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+}
+
+.world-button.collapsed .world-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 7px;
 }
 
 .world-icon-math::before,
 .world-icon-math::after,
 .world-icon-logic::before,
-.world-icon-logic::after {
+.world-icon-logic::after,
+.world-icon-graphic::before,
+.world-icon-graphic::after {
   content: "";
   position: absolute;
 }
@@ -494,10 +526,34 @@ button:focus-visible {
   transform: translate(8px, -9px);
 }
 
+.world-icon-graphic::before {
+  width: 25px;
+  height: 25px;
+  border: 4px solid var(--sky);
+  border-radius: 6px;
+  background:
+    linear-gradient(90deg, transparent 42%, rgba(55, 88, 114, 0.28) 42% 58%, transparent 58%),
+    linear-gradient(0deg, transparent 42%, rgba(55, 88, 114, 0.28) 42% 58%, transparent 58%),
+    #fff8df;
+}
+
+.world-icon-graphic::after {
+  width: 14px;
+  height: 14px;
+  border-radius: 4px 4px 10px 4px;
+  background: var(--coral);
+  transform: translate(9px, -9px) rotate(45deg);
+}
+
 .world-button strong,
 .world-button small,
 .world-button em {
   display: block;
+}
+
+.world-button strong {
+  grid-area: title;
+  line-height: 1.15;
 }
 
 .world-button small {
@@ -508,7 +564,15 @@ button:focus-visible {
   white-space: normal;
 }
 
+.world-button.expanded small {
+  grid-area: summary;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
 .world-button em {
+  grid-area: count;
   width: fit-content;
   margin-top: 7px;
   padding: 3px 7px;
@@ -518,6 +582,49 @@ button:focus-visible {
   font-size: 0.78rem;
   font-style: normal;
   font-weight: 900;
+}
+
+.world-button.expanded > span:not(.world-icon) {
+  display: grid;
+  min-width: 0;
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-areas:
+    "title count"
+    "summary summary";
+  align-items: center;
+  gap: 3px 8px;
+}
+
+.world-button.expanded em {
+  grid-area: count;
+  margin-top: 0;
+}
+
+.world-button.collapsed > span:not(.world-icon) {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.world-button.collapsed strong {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.world-button.collapsed small {
+  display: none;
+}
+
+.world-button.collapsed em {
+  flex: 0 0 auto;
+  margin-top: 0;
+  padding: 0;
+  color: var(--muted);
+  background: transparent;
+  font-size: 0.72rem;
 }
 
 .game-column {
@@ -973,6 +1080,111 @@ button:focus-visible {
   font-size: 0.68rem;
 }
 
+.graphic-challenge-board {
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+  width: min(100%, 760px);
+  margin: 0 auto;
+}
+
+.graphic-stem-card {
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+  width: min(100%, 520px);
+  padding: 14px;
+  border: 2px solid #d8e2d0;
+  border-radius: 8px;
+  background: #fffdf7;
+}
+
+.graphic-stem-card strong {
+  color: #5c4d38;
+  font-size: 0.95rem;
+  line-height: 1.25;
+}
+
+.graphic-stem-figures {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  min-height: 162px;
+}
+
+.graphic-stem-groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(92px, 1fr));
+  gap: 8px;
+  width: 100%;
+}
+
+.graphic-figure-group {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  gap: 3px;
+  min-height: 100px;
+  padding: 8px 6px;
+  border: 2px solid rgba(216, 208, 194, 0.62);
+  border-radius: 8px;
+  background: rgba(255, 249, 232, 0.72);
+}
+
+.graphic-figure-group span {
+  color: #6b6255;
+  font-size: 0.72rem;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.graphic-figure-group-arrow::after,
+.graphic-figure-group-plus::after {
+  position: absolute;
+  left: 50%;
+  top: 54%;
+  color: #5c6573;
+  font-size: 1rem;
+  font-weight: 900;
+  transform: translate(-50%, -50%);
+}
+
+.graphic-figure-group-arrow::after {
+  content: "->";
+}
+
+.graphic-figure-group-plus::after {
+  content: "+";
+}
+
+.graphic-figure {
+  display: block;
+  width: 96px;
+  height: 96px;
+}
+
+.graphic-figure-large {
+  width: 158px;
+  height: 158px;
+}
+
+.graphic-figure-shadow {
+  filter: drop-shadow(0 9px 12px rgba(41, 50, 65, 0.18));
+}
+
+.graphic-figure-covered {
+  filter: drop-shadow(0 8px 10px rgba(41, 50, 65, 0.14));
+}
+
+.graphic-option-hint {
+  color: #6b6255;
+  font-size: 0.9rem;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
 .visual-groups {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr));
@@ -1036,6 +1248,45 @@ button:focus-visible {
   border-radius: 999px;
   color: #3f5c4a;
   background: #edf6ef;
+}
+
+.visual-groups-compare .visual-group .object-row {
+  grid-template-columns: repeat(auto-fit, minmax(86px, 110px));
+  justify-content: start;
+}
+
+.visual-groups-compare .visual-group .object-row .visual-token {
+  min-height: 94px;
+}
+
+.visual-groups-evidence .visual-group .object-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.visual-groups-evidence .visual-group .object-row .visual-token {
+  flex: 0 1 110px;
+  min-width: 86px;
+  min-height: 94px;
+}
+
+.visual-groups-evidence .visual-group .object-row .visual-token-multi {
+  flex-basis: 138px;
+}
+
+.visual-groups-relation .visual-group .object-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.visual-groups-relation .visual-group .object-row .visual-token {
+  flex: 0 1 110px;
+  min-width: 86px;
+  min-height: 94px;
 }
 
 .address-grid {
@@ -1633,6 +1884,36 @@ button:focus-visible {
   min-height: 64px;
 }
 
+.answer-choice-graphic {
+  min-height: 132px;
+  padding: 8px;
+}
+
+.graphic-answer-figure {
+  display: grid;
+  justify-items: center;
+  gap: 4px;
+  width: 100%;
+}
+
+.graphic-choice-letter {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  color: #fffdf7;
+  background: #293241;
+  font-size: 0.95rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.answer-choice-graphic .graphic-figure {
+  width: 86px;
+  height: 86px;
+}
+
 .choice-visual-card {
   display: inline-flex;
   flex-wrap: wrap;
@@ -1868,8 +2149,18 @@ button:focus-visible {
 
   .world-button {
     min-width: 0;
-    min-height: 72px;
-    padding: 10px;
+    min-height: 40px;
+    padding: 6px 8px;
+  }
+
+  .world-button.expanded {
+    min-height: 64px;
+    padding: 9px;
+  }
+
+  .world-button.collapsed {
+    min-height: 40px;
+    padding: 6px 8px;
   }
 
   .sidebar-game-picker {
@@ -1920,6 +2211,29 @@ button:focus-visible {
   .round-board {
     min-height: 220px;
     padding: 10px;
+  }
+
+  .graphic-stem-card {
+    padding: 10px;
+  }
+
+  .graphic-stem-figures {
+    min-height: 128px;
+    gap: 8px;
+  }
+
+  .graphic-stem-groups {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .graphic-figure-group {
+    min-height: 84px;
+    padding: 6px 4px;
+  }
+
+  .graphic-figure-large {
+    width: 126px;
+    height: 126px;
   }
 
   .round-board.round-board-image-only {
@@ -1981,6 +2295,25 @@ button:focus-visible {
 
   .answer-grid {
     grid-template-columns: 1fr;
+  }
+
+  .answer-choice-graphic {
+    min-height: 102px;
+  }
+
+  .answer-choice-graphic .graphic-answer-figure {
+    grid-template-columns: 32px minmax(0, 1fr);
+    align-items: center;
+    justify-items: center;
+  }
+
+  .answer-choice-graphic .graphic-choice-letter {
+    justify-self: start;
+  }
+
+  .answer-choice-graphic .graphic-figure {
+    width: 76px;
+    height: 76px;
   }
 
   .address-grid {

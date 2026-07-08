@@ -133,6 +133,62 @@ export const imageGallery = {
     },
   },
   items: {
+    graphicCat: {
+      src: "/images/items/graphic-workshop/cat.png",
+      alt: "图形工坊小猫贴纸",
+    },
+    graphicDog: {
+      src: "/images/items/graphic-workshop/dog.png",
+      alt: "图形工坊小狗贴纸",
+    },
+    graphicRabbit: {
+      src: "/images/items/graphic-workshop/rabbit.png",
+      alt: "图形工坊小兔贴纸",
+    },
+    graphicBear: {
+      src: "/images/items/graphic-workshop/bear.png",
+      alt: "图形工坊小熊贴纸",
+    },
+    graphicFish: {
+      src: "/images/items/graphic-workshop/fish.png",
+      alt: "图形工坊小鱼贴纸",
+    },
+    graphicApple: {
+      src: "/images/items/graphic-workshop/apple.png",
+      alt: "图形工坊苹果贴纸",
+    },
+    graphicPear: {
+      src: "/images/items/graphic-workshop/pear.png",
+      alt: "图形工坊梨子贴纸",
+    },
+    graphicLeaf: {
+      src: "/images/items/graphic-workshop/leaf.png",
+      alt: "图形工坊叶子贴纸",
+    },
+    graphicFlower: {
+      src: "/images/items/graphic-workshop/flower.png",
+      alt: "图形工坊花朵贴纸",
+    },
+    graphicStar: {
+      src: "/images/items/graphic-workshop/star.png",
+      alt: "图形工坊星星贴纸",
+    },
+    graphicCircle: {
+      src: "/images/items/graphic-workshop/circle.png",
+      alt: "图形工坊圆形贴纸",
+    },
+    graphicRoundedSquare: {
+      src: "/images/items/graphic-workshop/rounded-square.png",
+      alt: "图形工坊圆角方块贴纸",
+    },
+    graphicTriangle: {
+      src: "/images/items/graphic-workshop/triangle.png",
+      alt: "图形工坊三角形贴纸",
+    },
+    graphicDiamond: {
+      src: "/images/items/graphic-workshop/diamond.png",
+      alt: "图形工坊菱形贴纸",
+    },
     strawberry: {
       src: "/images/items/strawberry.png",
       alt: "草莓",
@@ -144,6 +200,10 @@ export const imageGallery = {
     orange: {
       src: "/images/items/orange.png",
       alt: "橘子",
+    },
+    grape: {
+      src: "/images/items/grape.png",
+      alt: "葡萄",
     },
     cookie: {
       src: "/images/items/cookie.png",
@@ -225,6 +285,10 @@ export const imageGallery = {
       src: "/images/items/pencil.png",
       alt: "铅笔",
     },
+    ruler: {
+      src: "/images/items/ruler.png",
+      alt: "尺子",
+    },
     pencilCase: {
       src: "/images/items/pencil-case.png",
       alt: "文具盒",
@@ -248,6 +312,18 @@ export const imageGallery = {
     toyCar: {
       src: "/images/items/toy-car.png",
       alt: "玩具车",
+    },
+    bus: {
+      src: "/images/items/bus.png",
+      alt: "公交车",
+    },
+    bike: {
+      src: "/images/items/bike.png",
+      alt: "自行车",
+    },
+    plane: {
+      src: "/images/items/plane.png",
+      alt: "飞机",
     },
     water: {
       src: "/images/items/water.png",
@@ -296,6 +372,10 @@ export const imageGallery = {
     block: {
       src: "/images/items/block.png",
       alt: "积木",
+    },
+    blockTower: {
+      src: "/images/items/block-tower.png",
+      alt: "积木塔",
     },
     star: {
       src: "/images/items/star.png",

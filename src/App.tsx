@@ -6,6 +6,8 @@ import { addCompletion, addRoundCompletion, readLastPlayLocation, readProgress, 
 import { speak, warmVoiceManifest } from "./speech";
 import type { GameConfig, GameRound, LastPlayLocation, ProgressLog, WorldId } from "./types";
 
+const launchBrandAudioSrc = "/audio/brand/launch-brand-shout.wav";
+
 export function App() {
   const [initialPlayLocation] = useState(resolveInitialPlayLocation);
   const [showSplash, setShowSplash] = useState(true);
@@ -38,12 +40,15 @@ export function App() {
 
   const visibleGames = games.filter((game) => game.world === activeWorld);
   const questionStats = useMemo(() => {
-    const math = games.filter((game) => game.world === "math").reduce((sum, game) => sum + game.rounds.length, 0);
-    const logic = games.filter((game) => game.world === "logic").reduce((sum, game) => sum + game.rounds.length, 0);
+    const counts = Object.fromEntries(
+      worlds.map((world) => [
+        world.id,
+        games.filter((game) => game.world === world.id).reduce((sum, game) => sum + game.rounds.length, 0),
+      ]),
+    ) as Record<WorldId, number>;
     return {
-      math,
-      logic,
-      total: math + logic,
+      ...counts,
+      total: Object.values(counts).reduce((sum, count) => sum + count, 0),
     };
   }, []);
   const completed = progress.completedIds.includes(selectedGame.id);
@@ -85,7 +90,8 @@ export function App() {
           <div className="world-switcher">
             {worlds.map((world) => (
               <button
-                className={`world-button ${activeWorld === world.id ? "active" : ""}`}
+                className={`world-button ${activeWorld === world.id ? "active expanded" : "collapsed"}`}
+                aria-expanded={activeWorld === world.id}
                 data-testid={`world-${world.id}`}
                 key={world.id}
                 type="button"
@@ -102,7 +108,7 @@ export function App() {
                 <span>
                   <strong>{world.name}</strong>
                   <small>{world.summary}</small>
-                  <em>{world.id === "math" ? questionStats.math : questionStats.logic} 题</em>
+                  <em>{questionStats[world.id]} 题</em>
                 </span>
               </button>
             ))}
@@ -110,7 +116,7 @@ export function App() {
 
           <section className="sidebar-game-picker" aria-label="关卡列表">
             <div className="sidebar-section-title">
-              <strong>{activeWorld === "math" ? "数学关卡" : "逻辑关卡"}</strong>
+              <strong>{worlds.find((world) => world.id === activeWorld)?.name ?? "关卡"}关卡</strong>
               <span>{visibleGames.length} 个</span>
             </div>
             <label className="mobile-game-select">
@@ -157,6 +163,7 @@ export function App() {
         <section className="game-column">
           <article className="game-stage">
             <ProgressiveSetGame
+              key={selectedGame.id}
               game={selectedGame}
               requestedRoundIndex={requestedRoundIndex}
               onComplete={() => completeGame(selectedGame)}
@@ -206,17 +213,22 @@ function LaunchSplash({ onEnter }: { onEnter: () => void }) {
   const [leaving, setLeaving] = useState(false);
 
   useEffect(() => {
+    const launchBrandAudio = new Audio(launchBrandAudioSrc);
+    launchBrandAudio.preload = "auto";
+    launchBrandAudio.volume = 0.9;
     const voiceTimer = window.setTimeout(() => {
-      void speak("小小思考屋");
-    }, 620);
+      launchBrandAudio.currentTime = 0;
+      void launchBrandAudio.play().catch(() => undefined);
+    }, 720);
     const splashTimer = window.setTimeout(() => {
       setLeaving(true);
-    }, 2450);
-    const enterTimer = window.setTimeout(onEnter, 3180);
+    }, 2820);
+    const enterTimer = window.setTimeout(onEnter, 3580);
     return () => {
       window.clearTimeout(voiceTimer);
       window.clearTimeout(splashTimer);
       window.clearTimeout(enterTimer);
+      launchBrandAudio.pause();
     };
   }, [onEnter]);
 

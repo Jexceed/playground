@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-06T06:49:53.072Z",
+  "generatedAt": "2026-07-07T16:57:19.930Z",
   "recommendedVoice": "warm adult female Mandarin, smiling, preschool teacher, 0.85 speed, crisp consonants",
-  "lineCount": 1662,
+  "lineCount": 1791,
   "lines": [
     {
       "id": "game-title-数一数",
@@ -102,8 +102,7 @@
         "math-fair-share/math-fair-share-13",
         "logic-number-pattern-trail/logic-number-pattern-trail-3",
         "logic-number-pattern-trail/logic-number-pattern-trail-6",
-        "logic-number-pattern-trail/logic-number-pattern-trail-11",
-        "logic-number-pattern-trail/logic-number-pattern-trail-12"
+        "logic-number-pattern-trail/logic-number-pattern-trail-11"
       ]
     },
     {
@@ -260,6 +259,8 @@
         "logic-difference-detective/logic-difference-detective-4",
         "logic-difference-detective/logic-difference-detective-8",
         "logic-difference-detective/logic-difference-detective-10",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-2",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-8",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-8",
         "logic-balance-swap/logic-balance-swap-1",
         "logic-balance-swap/logic-balance-swap-1",
@@ -313,9 +314,6 @@
         "logic-pattern-train/logic-pattern-train-18",
         "logic-pattern-train/logic-pattern-train-18",
         "logic-order-plan/logic-order-plan-16",
-        "logic-relation-pairs/pencil-case-pencil",
-        "logic-relation-pairs/lunchbox-cookie",
-        "logic-relation-pairs/schoolbag-book-analogy",
         "logic-relation-pairs/two-containers",
         "logic-same-kind-detective/logic-same-kind-detective-6",
         "logic-same-kind-detective/logic-same-kind-detective-11",
@@ -326,7 +324,9 @@
         "logic-address-map/logic-address-map-11",
         "logic-address-map/logic-address-map-12",
         "logic-memory-camera/logic-memory-camera-6",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-5",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-8",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-11",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-11",
         "logic-balance-swap/logic-balance-swap-2",
         "logic-balance-swap/logic-balance-swap-2",
@@ -500,6 +500,8 @@
         "logic-difference-detective/logic-difference-detective-8",
         "logic-difference-detective/logic-difference-detective-8",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-2",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-2",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-8",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-8",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-11",
         "logic-balance-swap/logic-balance-swap-1",
@@ -621,6 +623,8 @@
         "logic-difference-detective/logic-difference-detective-8",
         "logic-difference-detective/logic-difference-detective-8",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-2",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-2",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-8",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-8",
         "logic-balance-swap/logic-balance-swap-2",
         "logic-balance-swap/logic-balance-swap-6",
@@ -1146,8 +1150,12 @@
         "logic-pattern-train/logic-pattern-train-14",
         "logic-pattern-train/logic-pattern-train-15",
         "logic-pattern-train/logic-pattern-train-15",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-1",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-5",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-5",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-7",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-7",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-11",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-11",
         "logic-balance-swap/logic-balance-swap-4",
         "logic-balance-swap/logic-balance-swap-4",
@@ -1284,6 +1292,8 @@
         "math-group-counting/math-group-counting-7",
         "logic-same-kind-detective/logic-same-kind-detective-6",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-5",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-5",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-11",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-11",
         "logic-balance-swap/logic-balance-swap-3",
         "logic-balance-swap/logic-balance-swap-3",
@@ -1689,7 +1699,55 @@
         "math-counting-cardinality/math-counting-cardinality-15",
         "math-counting-cardinality/math-counting-cardinality-16",
         "math-counting-cardinality/math-counting-cardinality-17",
-        "math-counting-cardinality/math-counting-cardinality-18"
+        "math-counting-cardinality/math-counting-cardinality-18",
+        "graphic-shadow-match/graphic-shadow-match-1",
+        "graphic-shadow-match/graphic-shadow-match-2",
+        "graphic-shadow-match/graphic-shadow-match-3",
+        "graphic-shadow-match/graphic-shadow-match-4",
+        "graphic-shadow-match/graphic-shadow-match-5",
+        "graphic-shadow-match/graphic-shadow-match-6",
+        "graphic-shadow-match/graphic-shadow-match-7",
+        "graphic-shadow-match/graphic-shadow-match-8",
+        "graphic-covered-restore/graphic-covered-restore-1",
+        "graphic-covered-restore/graphic-covered-restore-2",
+        "graphic-covered-restore/graphic-covered-restore-3",
+        "graphic-covered-restore/graphic-covered-restore-4",
+        "graphic-covered-restore/graphic-covered-restore-5",
+        "graphic-covered-restore/graphic-covered-restore-6",
+        "graphic-covered-restore/graphic-covered-restore-7",
+        "graphic-covered-restore/graphic-covered-restore-8",
+        "graphic-detail-whole/graphic-detail-whole-1",
+        "graphic-detail-whole/graphic-detail-whole-2",
+        "graphic-detail-whole/graphic-detail-whole-3",
+        "graphic-detail-whole/graphic-detail-whole-4",
+        "graphic-detail-whole/graphic-detail-whole-5",
+        "graphic-detail-whole/graphic-detail-whole-6",
+        "graphic-detail-whole/graphic-detail-whole-7",
+        "graphic-detail-whole/graphic-detail-whole-8",
+        "graphic-layer-overlap/graphic-layer-overlap-1",
+        "graphic-layer-overlap/graphic-layer-overlap-2",
+        "graphic-layer-overlap/graphic-layer-overlap-3",
+        "graphic-layer-overlap/graphic-layer-overlap-4",
+        "graphic-layer-overlap/graphic-layer-overlap-5",
+        "graphic-layer-overlap/graphic-layer-overlap-6",
+        "graphic-layer-overlap/graphic-layer-overlap-7",
+        "graphic-layer-overlap/graphic-layer-overlap-8",
+        "graphic-code-machine/graphic-code-machine-1",
+        "graphic-code-machine/graphic-code-machine-2",
+        "graphic-code-machine/graphic-code-machine-3",
+        "graphic-code-machine/graphic-code-machine-4",
+        "graphic-code-machine/graphic-code-machine-5",
+        "graphic-code-machine/graphic-code-machine-6",
+        "graphic-code-machine/graphic-code-machine-7",
+        "graphic-code-machine/graphic-code-machine-8",
+        "graphic-gap-close/graphic-gap-close-1",
+        "graphic-gap-close/graphic-gap-close-2",
+        "graphic-gap-close/graphic-gap-close-3",
+        "graphic-gap-close/graphic-gap-close-4",
+        "graphic-gap-close/graphic-gap-close-5",
+        "graphic-gap-close/graphic-gap-close-6",
+        "graphic-gap-close/graphic-gap-close-7",
+        "graphic-gap-close/graphic-gap-close-8"
       ]
     },
     {
@@ -1705,7 +1763,55 @@
         "math-counting-cardinality/math-counting-cardinality-15",
         "math-counting-cardinality/math-counting-cardinality-16",
         "math-counting-cardinality/math-counting-cardinality-17",
-        "math-counting-cardinality/math-counting-cardinality-18"
+        "math-counting-cardinality/math-counting-cardinality-18",
+        "graphic-shadow-match/graphic-shadow-match-1",
+        "graphic-shadow-match/graphic-shadow-match-2",
+        "graphic-shadow-match/graphic-shadow-match-3",
+        "graphic-shadow-match/graphic-shadow-match-4",
+        "graphic-shadow-match/graphic-shadow-match-5",
+        "graphic-shadow-match/graphic-shadow-match-6",
+        "graphic-shadow-match/graphic-shadow-match-7",
+        "graphic-shadow-match/graphic-shadow-match-8",
+        "graphic-covered-restore/graphic-covered-restore-1",
+        "graphic-covered-restore/graphic-covered-restore-2",
+        "graphic-covered-restore/graphic-covered-restore-3",
+        "graphic-covered-restore/graphic-covered-restore-4",
+        "graphic-covered-restore/graphic-covered-restore-5",
+        "graphic-covered-restore/graphic-covered-restore-6",
+        "graphic-covered-restore/graphic-covered-restore-7",
+        "graphic-covered-restore/graphic-covered-restore-8",
+        "graphic-detail-whole/graphic-detail-whole-1",
+        "graphic-detail-whole/graphic-detail-whole-2",
+        "graphic-detail-whole/graphic-detail-whole-3",
+        "graphic-detail-whole/graphic-detail-whole-4",
+        "graphic-detail-whole/graphic-detail-whole-5",
+        "graphic-detail-whole/graphic-detail-whole-6",
+        "graphic-detail-whole/graphic-detail-whole-7",
+        "graphic-detail-whole/graphic-detail-whole-8",
+        "graphic-layer-overlap/graphic-layer-overlap-1",
+        "graphic-layer-overlap/graphic-layer-overlap-2",
+        "graphic-layer-overlap/graphic-layer-overlap-3",
+        "graphic-layer-overlap/graphic-layer-overlap-4",
+        "graphic-layer-overlap/graphic-layer-overlap-5",
+        "graphic-layer-overlap/graphic-layer-overlap-6",
+        "graphic-layer-overlap/graphic-layer-overlap-7",
+        "graphic-layer-overlap/graphic-layer-overlap-8",
+        "graphic-code-machine/graphic-code-machine-1",
+        "graphic-code-machine/graphic-code-machine-2",
+        "graphic-code-machine/graphic-code-machine-3",
+        "graphic-code-machine/graphic-code-machine-4",
+        "graphic-code-machine/graphic-code-machine-5",
+        "graphic-code-machine/graphic-code-machine-6",
+        "graphic-code-machine/graphic-code-machine-7",
+        "graphic-code-machine/graphic-code-machine-8",
+        "graphic-gap-close/graphic-gap-close-1",
+        "graphic-gap-close/graphic-gap-close-2",
+        "graphic-gap-close/graphic-gap-close-3",
+        "graphic-gap-close/graphic-gap-close-4",
+        "graphic-gap-close/graphic-gap-close-5",
+        "graphic-gap-close/graphic-gap-close-6",
+        "graphic-gap-close/graphic-gap-close-7",
+        "graphic-gap-close/graphic-gap-close-8"
       ]
     },
     {
@@ -1721,7 +1827,55 @@
         "math-counting-cardinality/math-counting-cardinality-15",
         "math-counting-cardinality/math-counting-cardinality-16",
         "math-counting-cardinality/math-counting-cardinality-17",
-        "math-counting-cardinality/math-counting-cardinality-18"
+        "math-counting-cardinality/math-counting-cardinality-18",
+        "graphic-shadow-match/graphic-shadow-match-1",
+        "graphic-shadow-match/graphic-shadow-match-2",
+        "graphic-shadow-match/graphic-shadow-match-3",
+        "graphic-shadow-match/graphic-shadow-match-4",
+        "graphic-shadow-match/graphic-shadow-match-5",
+        "graphic-shadow-match/graphic-shadow-match-6",
+        "graphic-shadow-match/graphic-shadow-match-7",
+        "graphic-shadow-match/graphic-shadow-match-8",
+        "graphic-covered-restore/graphic-covered-restore-1",
+        "graphic-covered-restore/graphic-covered-restore-2",
+        "graphic-covered-restore/graphic-covered-restore-3",
+        "graphic-covered-restore/graphic-covered-restore-4",
+        "graphic-covered-restore/graphic-covered-restore-5",
+        "graphic-covered-restore/graphic-covered-restore-6",
+        "graphic-covered-restore/graphic-covered-restore-7",
+        "graphic-covered-restore/graphic-covered-restore-8",
+        "graphic-detail-whole/graphic-detail-whole-1",
+        "graphic-detail-whole/graphic-detail-whole-2",
+        "graphic-detail-whole/graphic-detail-whole-3",
+        "graphic-detail-whole/graphic-detail-whole-4",
+        "graphic-detail-whole/graphic-detail-whole-5",
+        "graphic-detail-whole/graphic-detail-whole-6",
+        "graphic-detail-whole/graphic-detail-whole-7",
+        "graphic-detail-whole/graphic-detail-whole-8",
+        "graphic-layer-overlap/graphic-layer-overlap-1",
+        "graphic-layer-overlap/graphic-layer-overlap-2",
+        "graphic-layer-overlap/graphic-layer-overlap-3",
+        "graphic-layer-overlap/graphic-layer-overlap-4",
+        "graphic-layer-overlap/graphic-layer-overlap-5",
+        "graphic-layer-overlap/graphic-layer-overlap-6",
+        "graphic-layer-overlap/graphic-layer-overlap-7",
+        "graphic-layer-overlap/graphic-layer-overlap-8",
+        "graphic-code-machine/graphic-code-machine-1",
+        "graphic-code-machine/graphic-code-machine-2",
+        "graphic-code-machine/graphic-code-machine-3",
+        "graphic-code-machine/graphic-code-machine-4",
+        "graphic-code-machine/graphic-code-machine-5",
+        "graphic-code-machine/graphic-code-machine-6",
+        "graphic-code-machine/graphic-code-machine-7",
+        "graphic-code-machine/graphic-code-machine-8",
+        "graphic-gap-close/graphic-gap-close-1",
+        "graphic-gap-close/graphic-gap-close-2",
+        "graphic-gap-close/graphic-gap-close-3",
+        "graphic-gap-close/graphic-gap-close-4",
+        "graphic-gap-close/graphic-gap-close-5",
+        "graphic-gap-close/graphic-gap-close-6",
+        "graphic-gap-close/graphic-gap-close-7",
+        "graphic-gap-close/graphic-gap-close-8"
       ]
     },
     {
@@ -2017,7 +2171,9 @@
         "logic-matrix-puzzle/logic-matrix-puzzle-4",
         "logic-matrix-puzzle/logic-matrix-puzzle-4",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-4",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-4",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-7",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-10",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-10",
         "logic-mirror-fold/logic-mirror-fold-2",
         "logic-mirror-fold/logic-mirror-fold-6",
@@ -2082,6 +2238,8 @@
         "logic-matrix-puzzle/logic-matrix-puzzle-1",
         "logic-matrix-puzzle/logic-matrix-puzzle-2",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-4",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-4",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-10",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-10",
         "logic-mirror-fold/logic-mirror-fold-1",
         "logic-mirror-fold/logic-mirror-fold-1",
@@ -2137,6 +2295,8 @@
         "logic-matrix-puzzle/logic-matrix-puzzle-4",
         "logic-matrix-puzzle/logic-matrix-puzzle-4",
         "logic-matrix-puzzle/logic-matrix-puzzle-4",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-4",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-10",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-10",
         "logic-mirror-fold/logic-mirror-fold-2"
       ]
@@ -2310,6 +2470,8 @@
         "logic-sorter-switch/logic-sorter-switch-10",
         "logic-sorter-switch/logic-sorter-switch-11",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-1",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-1",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-7",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-7",
         "logic-mirror-fold/logic-mirror-fold-5",
         "logic-mirror-fold/logic-mirror-fold-5",
@@ -4267,6 +4429,8 @@
         "math-group-counting/math-group-counting-10",
         "logic-number-pattern-trail/logic-number-pattern-trail-2",
         "logic-number-pattern-trail/logic-number-pattern-trail-12",
+        "logic-number-pattern-trail/logic-number-pattern-trail-14",
+        "logic-number-pattern-trail/logic-number-pattern-trail-15",
         "logic-block-height-map/logic-block-height-map-8",
         "logic-block-height-map/logic-block-height-map-9"
       ]
@@ -4279,7 +4443,9 @@
       "contexts": [
         "math-group-counting/math-group-counting-6",
         "math-group-counting/math-group-counting-8",
-        "logic-number-pattern-trail/logic-number-pattern-trail-12"
+        "logic-number-pattern-trail/logic-number-pattern-trail-12",
+        "logic-number-pattern-trail/logic-number-pattern-trail-14",
+        "logic-number-pattern-trail/logic-number-pattern-trail-15"
       ]
     },
     {
@@ -4289,7 +4455,11 @@
       "tone": "friendly, clear, playful",
       "contexts": [
         "math-group-counting/math-group-counting-6",
-        "math-group-counting/math-group-counting-8"
+        "math-group-counting/math-group-counting-8",
+        "logic-number-pattern-trail/logic-number-pattern-trail-12",
+        "logic-number-pattern-trail/logic-number-pattern-trail-13",
+        "logic-number-pattern-trail/logic-number-pattern-trail-14",
+        "logic-number-pattern-trail/logic-number-pattern-trail-15"
       ]
     },
     {
@@ -4433,7 +4603,8 @@
       "text": "14",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "math-group-counting/math-group-counting-11"
+        "math-group-counting/math-group-counting-11",
+        "logic-number-pattern-trail/logic-number-pattern-trail-13"
       ]
     },
     {
@@ -4443,7 +4614,8 @@
       "tone": "friendly, clear, playful",
       "contexts": [
         "math-group-counting/math-group-counting-11",
-        "math-group-counting/math-group-counting-12"
+        "math-group-counting/math-group-counting-12",
+        "logic-number-pattern-trail/logic-number-pattern-trail-13"
       ]
     },
     {
@@ -4566,6 +4738,7 @@
         "logic-sorter-switch/logic-sorter-switch-10",
         "logic-matrix-puzzle/logic-matrix-puzzle-2",
         "logic-matrix-puzzle/logic-matrix-puzzle-4",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-4",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-10"
       ]
     },
@@ -4583,7 +4756,7 @@
         "logic-pattern-train/logic-pattern-train-6",
         "logic-sorter-switch/logic-sorter-switch-9",
         "logic-matrix-puzzle/logic-matrix-puzzle-2",
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-4",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-1",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-7",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-10"
       ]
@@ -4604,7 +4777,7 @@
         "logic-sorter-switch/logic-sorter-switch-11",
         "logic-matrix-puzzle/logic-matrix-puzzle-2",
         "logic-matrix-puzzle/logic-matrix-puzzle-4",
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-1",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-4",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-7",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-10"
       ]
@@ -4641,6 +4814,8 @@
         "logic-matrix-puzzle/logic-matrix-puzzle-4",
         "logic-matrix-puzzle/logic-matrix-puzzle-4",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-1",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-1",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-7",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-7",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-10",
         "logic-mirror-fold/logic-mirror-fold-1",
@@ -4737,6 +4912,9 @@
         "logic-number-pattern-trail/logic-number-pattern-trail-10",
         "logic-number-pattern-trail/logic-number-pattern-trail-11",
         "logic-number-pattern-trail/logic-number-pattern-trail-12",
+        "logic-number-pattern-trail/logic-number-pattern-trail-13",
+        "logic-number-pattern-trail/logic-number-pattern-trail-14",
+        "logic-number-pattern-trail/logic-number-pattern-trail-15",
         "logic-matrix-puzzle/logic-matrix-puzzle-1",
         "logic-matrix-puzzle/logic-matrix-puzzle-2",
         "logic-matrix-puzzle/logic-matrix-puzzle-3",
@@ -4846,7 +5024,6 @@
         "logic-sorter-switch/logic-sorter-switch-9",
         "logic-sorter-switch/logic-sorter-switch-11",
         "logic-matrix-puzzle/logic-matrix-puzzle-4",
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-1",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-4",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-10"
       ]
@@ -4949,9 +5126,28 @@
         "logic-pattern-train/logic-pattern-train-14",
         "logic-pattern-train/logic-pattern-train-15",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-1",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-5",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-7",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-11",
-        "logic-balance-swap/logic-balance-swap-4"
+        "graphic-covered-restore/graphic-covered-restore-4",
+        "graphic-covered-restore/graphic-covered-restore-5",
+        "graphic-covered-restore/graphic-covered-restore-6",
+        "graphic-covered-restore/graphic-covered-restore-7",
+        "graphic-detail-whole/graphic-detail-whole-2",
+        "graphic-detail-whole/graphic-detail-whole-4",
+        "graphic-detail-whole/graphic-detail-whole-5",
+        "graphic-detail-whole/graphic-detail-whole-6",
+        "graphic-detail-whole/graphic-detail-whole-7",
+        "graphic-code-machine/graphic-code-machine-1",
+        "graphic-code-machine/graphic-code-machine-2",
+        "graphic-code-machine/graphic-code-machine-3",
+        "graphic-code-machine/graphic-code-machine-4",
+        "graphic-gap-close/graphic-gap-close-2",
+        "graphic-gap-close/graphic-gap-close-3",
+        "graphic-gap-close/graphic-gap-close-4",
+        "graphic-gap-close/graphic-gap-close-5",
+        "graphic-gap-close/graphic-gap-close-6",
+        "graphic-gap-close/graphic-gap-close-8"
       ]
     },
     {
@@ -5251,8 +5447,7 @@
         "logic-difference-detective/logic-difference-detective-8",
         "logic-difference-detective/logic-difference-detective-10",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-2",
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-8",
-        "logic-balance-swap/logic-balance-swap-1"
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-8"
       ]
     },
     {
@@ -5269,11 +5464,9 @@
         "logic-relation-pairs/schoolbag-book-analogy",
         "logic-same-kind-detective/logic-same-kind-detective-5",
         "logic-same-kind-detective/logic-same-kind-detective-11",
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-2",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-5",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-8",
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-11",
-        "logic-balance-swap/logic-balance-swap-2"
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-11"
       ]
     },
     {
@@ -5290,12 +5483,26 @@
         "logic-memory-camera/logic-memory-camera-9",
         "logic-difference-detective/logic-difference-detective-1",
         "logic-difference-detective/logic-difference-detective-8",
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-5",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-2",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-8",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-11",
         "logic-route-steps/logic-route-steps-1",
         "logic-route-steps/logic-route-steps-2",
-        "logic-route-steps/logic-route-steps-3"
+        "logic-route-steps/logic-route-steps-3",
+        "graphic-covered-restore/graphic-covered-restore-3",
+        "graphic-covered-restore/graphic-covered-restore-6",
+        "graphic-covered-restore/graphic-covered-restore-8",
+        "graphic-detail-whole/graphic-detail-whole-3",
+        "graphic-detail-whole/graphic-detail-whole-5",
+        "graphic-detail-whole/graphic-detail-whole-6",
+        "graphic-detail-whole/graphic-detail-whole-8",
+        "graphic-code-machine/graphic-code-machine-1",
+        "graphic-code-machine/graphic-code-machine-2",
+        "graphic-code-machine/graphic-code-machine-3",
+        "graphic-code-machine/graphic-code-machine-4",
+        "graphic-gap-close/graphic-gap-close-1",
+        "graphic-gap-close/graphic-gap-close-6",
+        "graphic-gap-close/graphic-gap-close-7"
       ]
     },
     {
@@ -5714,6 +5921,7 @@
         "logic-sorter-switch/logic-sorter-switch-9",
         "logic-sorter-switch/logic-sorter-switch-10",
         "logic-sorter-switch/logic-sorter-switch-11",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-1",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-7"
       ]
     },
@@ -6310,12 +6518,8 @@
         "logic-condition-detective/logic-condition-detective-7",
         "logic-fix-plan/logic-fix-plan-7",
         "logic-priority-choice/logic-priority-choice-5",
-        "logic-relation-pairs/fish-river",
-        "logic-relation-pairs/bird-sky",
-        "logic-relation-pairs/fish-bird-analogy",
         "logic-relation-pairs/fish-bird-analogy",
         "logic-relation-pairs/door-river-tool",
-        "logic-relation-pairs/best-reason",
         "logic-space-bridge/logic-space-bridge-1",
         "logic-space-bridge/logic-space-bridge-4",
         "logic-space-bridge/logic-space-bridge-7",
@@ -7321,8 +7525,6 @@
         "logic-rule-filter/rule-switch-no-toy",
         "logic-rule-filter/exclude-almost-right",
         "logic-relation-pairs/schoolbag-book-analogy",
-        "logic-relation-pairs/sun-raincoat-analogy",
-        "logic-relation-pairs/not-same-kind",
         "logic-difference-detective/logic-difference-detective-3",
         "logic-difference-detective/logic-difference-detective-12",
         "logic-difference-detective/logic-difference-detective-12",
@@ -7406,6 +7608,7 @@
         "logic-memory-camera/logic-memory-camera-10",
         "logic-difference-detective/logic-difference-detective-2",
         "logic-difference-detective/logic-difference-detective-7",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-6",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-12",
         "logic-route-steps/logic-route-steps-1",
         "logic-route-steps/logic-route-steps-2",
@@ -7978,9 +8181,13 @@
         "logic-position-map/logic-position-map-9",
         "logic-memory-camera/logic-memory-camera-5",
         "logic-difference-detective/logic-difference-detective-11",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-3",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-9",
         "logic-route-steps/logic-route-steps-5",
-        "logic-route-steps/logic-route-steps-10"
+        "logic-route-steps/logic-route-steps-10",
+        "graphic-covered-restore/graphic-covered-restore-1",
+        "graphic-covered-restore/graphic-covered-restore-2",
+        "graphic-detail-whole/graphic-detail-whole-1"
       ]
     },
     {
@@ -8008,10 +8215,14 @@
         "logic-memory-camera/logic-memory-camera-9",
         "logic-difference-detective/logic-difference-detective-7",
         "logic-difference-detective/logic-difference-detective-11",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-3",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-9",
         "logic-route-steps/logic-route-steps-7",
         "logic-route-steps/logic-route-steps-8",
-        "logic-route-steps/logic-route-steps-9"
+        "logic-route-steps/logic-route-steps-9",
+        "graphic-covered-restore/graphic-covered-restore-1",
+        "graphic-covered-restore/graphic-covered-restore-2",
+        "graphic-detail-whole/graphic-detail-whole-1"
       ]
     },
     {
@@ -8031,7 +8242,10 @@
         "logic-memory-camera/logic-memory-camera-4",
         "logic-difference-detective/logic-difference-detective-11",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-3",
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-9"
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-9",
+        "graphic-covered-restore/graphic-covered-restore-1",
+        "graphic-covered-restore/graphic-covered-restore-2",
+        "graphic-detail-whole/graphic-detail-whole-1"
       ]
     },
     {
@@ -8232,7 +8446,10 @@
       "contexts": [
         "logic-story-evidence/logic-story-evidence-5",
         "logic-same-kind-detective/logic-same-kind-detective-4",
-        "logic-memory-camera/logic-memory-camera-4"
+        "logic-memory-camera/logic-memory-camera-4",
+        "graphic-covered-restore/graphic-covered-restore-1",
+        "graphic-covered-restore/graphic-covered-restore-2",
+        "graphic-detail-whole/graphic-detail-whole-1"
       ]
     },
     {
@@ -8253,7 +8470,6 @@
         "logic-memory-camera/logic-memory-camera-4",
         "logic-memory-camera/logic-memory-camera-5",
         "logic-memory-camera/logic-memory-camera-12",
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-3",
         "logic-route-steps/logic-route-steps-1",
         "logic-route-steps/logic-route-steps-4",
         "logic-route-steps/logic-route-steps-6"
@@ -9860,7 +10076,6 @@
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-priority-choice/logic-priority-choice-3",
-        "logic-relation-pairs/door-river-tool",
         "logic-space-bridge/logic-space-bridge-1",
         "logic-same-kind-detective/logic-same-kind-detective-11"
       ]
@@ -10390,7 +10605,6 @@
         "logic-memory-camera/logic-memory-camera-8",
         "logic-difference-detective/logic-difference-detective-3",
         "logic-difference-detective/logic-difference-detective-12",
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-6",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-12"
       ]
     },
@@ -10416,11 +10630,7 @@
         "logic-rule-filter/school-day-book",
         "logic-rule-filter/rainy-day-raincoat",
         "logic-rule-filter/rain-and-wear",
-        "logic-rule-filter/small-hard-safe",
-        "logic-relation-pairs/pencil-case-pencil",
-        "logic-relation-pairs/bottle-case-analogy",
-        "logic-relation-pairs/sun-raincoat-analogy",
-        "logic-relation-pairs/reverse-pair"
+        "logic-rule-filter/small-hard-safe"
       ]
     },
     {
@@ -10487,9 +10697,7 @@
         "logic-rule-filter/rule-switch-drink",
         "logic-relation-pairs/pencil-case-pencil",
         "logic-relation-pairs/bottle-case-analogy",
-        "logic-relation-pairs/thirst-hungry",
-        "logic-relation-pairs/not-same-kind",
-        "logic-relation-pairs/reverse-pair"
+        "logic-relation-pairs/not-same-kind"
       ]
     },
     {
@@ -10504,9 +10712,7 @@
         "logic-rule-filter/outside-not-food",
         "logic-rule-filter/rain-and-wear",
         "logic-rule-filter/exclude-almost-right",
-        "logic-relation-pairs/sun-raincoat-analogy",
-        "logic-relation-pairs/thirst-hungry",
-        "logic-relation-pairs/door-river-tool"
+        "logic-relation-pairs/sun-raincoat-analogy"
       ]
     },
     {
@@ -10561,9 +10767,7 @@
         "logic-rule-filter/exclude-almost-right",
         "logic-relation-pairs/bottle-water",
         "logic-relation-pairs/bottle-case-analogy",
-        "logic-relation-pairs/sun-raincoat-analogy",
         "logic-relation-pairs/thirst-hungry",
-        "logic-relation-pairs/two-containers",
         "logic-relation-pairs/reverse-pair"
       ]
     },
@@ -10615,15 +10819,8 @@
         "logic-rule-filter/study-not-toy",
         "logic-rule-filter/outside-not-food",
         "logic-rule-filter/two-true-one-better",
-        "logic-relation-pairs/bottle-water",
         "logic-relation-pairs/lunchbox-cookie",
-        "logic-relation-pairs/key-door",
-        "logic-relation-pairs/schoolbag-book-analogy",
-        "logic-relation-pairs/bottle-case-analogy",
-        "logic-relation-pairs/thirst-hungry",
-        "logic-relation-pairs/door-river-tool",
-        "logic-relation-pairs/two-containers",
-        "logic-relation-pairs/reverse-pair"
+        "logic-relation-pairs/schoolbag-book-analogy"
       ]
     },
     {
@@ -11052,58 +11249,6 @@
       ]
     },
     {
-      "id": "object-水",
-      "kind": "object",
-      "text": "水",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-relation-pairs/bottle-water",
-        "logic-relation-pairs/lunchbox-cookie",
-        "logic-relation-pairs/schoolbag-book-analogy",
-        "logic-relation-pairs/bottle-case-analogy",
-        "logic-relation-pairs/thirst-hungry",
-        "logic-relation-pairs/reverse-pair"
-      ]
-    },
-    {
-      "id": "object-铅笔",
-      "kind": "object",
-      "text": "铅笔",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-relation-pairs/bottle-water",
-        "logic-relation-pairs/pencil-case-pencil",
-        "logic-relation-pairs/lunchbox-cookie",
-        "logic-relation-pairs/schoolbag-book-analogy",
-        "logic-relation-pairs/bottle-case-analogy",
-        "logic-relation-pairs/not-same-kind",
-        "logic-relation-pairs/reverse-pair",
-        "logic-same-kind-detective/logic-same-kind-detective-3",
-        "logic-same-kind-detective/logic-same-kind-detective-9",
-        "logic-address-map/logic-address-map-1",
-        "logic-address-map/logic-address-map-2",
-        "logic-address-map/logic-address-map-3",
-        "logic-address-map/logic-address-map-4",
-        "logic-address-map/logic-address-map-5",
-        "logic-address-map/logic-address-map-6",
-        "logic-address-map/logic-address-map-7",
-        "logic-address-map/logic-address-map-8",
-        "logic-address-map/logic-address-map-9",
-        "logic-address-map/logic-address-map-10",
-        "logic-address-map/logic-address-map-11",
-        "logic-address-map/logic-address-map-12",
-        "logic-memory-camera/logic-memory-camera-3",
-        "logic-memory-camera/logic-memory-camera-8",
-        "logic-memory-camera/logic-memory-camera-11",
-        "logic-difference-detective/logic-difference-detective-3",
-        "logic-difference-detective/logic-difference-detective-3",
-        "logic-difference-detective/logic-difference-detective-9",
-        "logic-difference-detective/logic-difference-detective-9",
-        "logic-difference-detective/logic-difference-detective-12",
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-12"
-      ]
-    },
-    {
       "id": "prompt-文具盒里最常放谁-先想这个东西里面通常装什么",
       "kind": "prompt",
       "text": "文具盒里最常放谁？先想这个东西里面通常装什么。",
@@ -11219,7 +11364,6 @@
       "contexts": [
         "logic-relation-pairs/fish-river",
         "logic-relation-pairs/bird-sky",
-        "logic-relation-pairs/fish-bird-analogy",
         "logic-relation-pairs/best-reason",
         "logic-difference-detective/logic-difference-detective-5"
       ]
@@ -11245,32 +11389,6 @@
       "contexts": [
         "logic-relation-pairs/fish-river",
         "logic-relation-pairs/fish-bird-analogy"
-      ]
-    },
-    {
-      "id": "object-天空",
-      "kind": "object",
-      "text": "天空",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-relation-pairs/fish-river",
-        "logic-relation-pairs/bird-sky",
-        "logic-relation-pairs/fish-bird-analogy",
-        "logic-relation-pairs/best-reason",
-        "logic-relation-pairs/best-reason",
-        "logic-matrix-puzzle/logic-matrix-puzzle-6",
-        "logic-difference-detective/logic-difference-detective-5"
-      ]
-    },
-    {
-      "id": "object-家",
-      "kind": "object",
-      "text": "家",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-relation-pairs/fish-river",
-        "logic-relation-pairs/fish-bird-analogy",
-        "logic-matrix-puzzle/logic-matrix-puzzle-6"
       ]
     },
     {
@@ -11316,33 +11434,9 @@
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-relation-pairs/bird-sky",
+        "logic-relation-pairs/fish-bird-analogy",
         "logic-route-steps/logic-route-steps-4",
         "logic-route-steps/logic-route-steps-5",
-        "logic-route-steps/logic-route-steps-9",
-        "logic-route-steps/logic-route-steps-10"
-      ]
-    },
-    {
-      "id": "object-盒子",
-      "kind": "object",
-      "text": "盒子",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-relation-pairs/bird-sky",
-        "logic-position-map/logic-position-map-5",
-        "logic-position-map/logic-position-map-6",
-        "logic-position-map/logic-position-map-7",
-        "logic-position-map/logic-position-map-8",
-        "logic-position-map/logic-position-map-11",
-        "logic-position-map/logic-position-map-12",
-        "logic-route-steps/logic-route-steps-1",
-        "logic-route-steps/logic-route-steps-2",
-        "logic-route-steps/logic-route-steps-3",
-        "logic-route-steps/logic-route-steps-4",
-        "logic-route-steps/logic-route-steps-5",
-        "logic-route-steps/logic-route-steps-6",
-        "logic-route-steps/logic-route-steps-7",
-        "logic-route-steps/logic-route-steps-8",
         "logic-route-steps/logic-route-steps-9",
         "logic-route-steps/logic-route-steps-10"
       ]
@@ -11403,68 +11497,6 @@
       ]
     },
     {
-      "id": "object-门",
-      "kind": "object",
-      "text": "门",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-relation-pairs/key-door",
-        "logic-relation-pairs/door-river-tool"
-      ]
-    },
-    {
-      "id": "object-足球",
-      "kind": "object",
-      "text": "足球",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-relation-pairs/key-door",
-        "logic-same-kind-detective/logic-same-kind-detective-5",
-        "logic-same-kind-detective/logic-same-kind-detective-11",
-        "logic-address-map/logic-address-map-1",
-        "logic-address-map/logic-address-map-2",
-        "logic-address-map/logic-address-map-3",
-        "logic-address-map/logic-address-map-4",
-        "logic-address-map/logic-address-map-5",
-        "logic-address-map/logic-address-map-6",
-        "logic-address-map/logic-address-map-7",
-        "logic-address-map/logic-address-map-8",
-        "logic-address-map/logic-address-map-9",
-        "logic-address-map/logic-address-map-10",
-        "logic-address-map/logic-address-map-11",
-        "logic-address-map/logic-address-map-12",
-        "logic-position-map/logic-position-map-5",
-        "logic-position-map/logic-position-map-6",
-        "logic-position-map/logic-position-map-7",
-        "logic-position-map/logic-position-map-8",
-        "logic-position-map/logic-position-map-10",
-        "logic-position-map/logic-position-map-11",
-        "logic-position-map/logic-position-map-12",
-        "logic-memory-camera/logic-memory-camera-7",
-        "logic-memory-camera/logic-memory-camera-10",
-        "logic-difference-detective/logic-difference-detective-2",
-        "logic-difference-detective/logic-difference-detective-7",
-        "logic-difference-detective/logic-difference-detective-7",
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-6",
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-12",
-        "logic-balance-swap/logic-balance-swap-4",
-        "logic-balance-swap/logic-balance-swap-8",
-        "logic-balance-swap/logic-balance-swap-8",
-        "logic-balance-swap/logic-balance-swap-8",
-        "logic-balance-swap/logic-balance-swap-8",
-        "logic-route-steps/logic-route-steps-1",
-        "logic-route-steps/logic-route-steps-2",
-        "logic-route-steps/logic-route-steps-3",
-        "logic-route-steps/logic-route-steps-4",
-        "logic-route-steps/logic-route-steps-5",
-        "logic-route-steps/logic-route-steps-6",
-        "logic-route-steps/logic-route-steps-7",
-        "logic-route-steps/logic-route-steps-8",
-        "logic-route-steps/logic-route-steps-9",
-        "logic-route-steps/logic-route-steps-10"
-      ]
-    },
-    {
       "id": "prompt-书包配书本-像饭盒配什么-先看例子-一个容器配它装的东西",
       "kind": "prompt",
       "text": "书包配书本，像饭盒配什么？先看例子：一个容器配它装的东西。",
@@ -11507,8 +11539,6 @@
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-relation-pairs/schoolbag-book-analogy",
-        "logic-relation-pairs/two-containers",
-        "logic-relation-pairs/not-same-kind",
         "logic-same-kind-detective/logic-same-kind-detective-3",
         "logic-same-kind-detective/logic-same-kind-detective-9",
         "logic-address-map/logic-address-map-1",
@@ -11587,6 +11617,17 @@
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-relation-pairs/bottle-case-analogy"
+      ]
+    },
+    {
+      "id": "object-水",
+      "kind": "object",
+      "text": "水",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-relation-pairs/bottle-case-analogy",
+        "logic-relation-pairs/thirst-hungry",
+        "logic-relation-pairs/reverse-pair"
       ]
     },
     {
@@ -11747,9 +11788,18 @@
       ]
     },
     {
-      "id": "prompt-水壶和饭盒都能装东西-谁和饼干关系更近-先找内容是什么-再决定搭档",
+      "id": "object-门",
+      "kind": "object",
+      "text": "门",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-relation-pairs/door-river-tool"
+      ]
+    },
+    {
+      "id": "prompt-两个东西都能装-饼干更适合放进哪一个-先找内容是什么-再决定搭档",
       "kind": "prompt",
-      "text": "水壶和饭盒都能装东西，谁和饼干关系更近？先找内容是什么，再决定搭档。",
+      "text": "两个东西都能装，饼干更适合放进哪一个？先找内容是什么，再决定搭档。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-relation-pairs/two-containers"
@@ -11783,9 +11833,9 @@
       ]
     },
     {
-      "id": "prompt-书本和文具盒都是学习用品-但谁和文具盒是-装在里面-的关系-不要只看同类-要看题目问的关系",
+      "id": "prompt-谁和文具盒是-装在里面-的关系-不要只看同类-要看题目问的关系",
       "kind": "prompt",
-      "text": "书本和文具盒都是学习用品，但谁和文具盒是“装在里面”的关系？不要只看同类，要看题目问的关系。",
+      "text": "谁和文具盒是“装在里面”的关系？不要只看同类，要看题目问的关系。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-relation-pairs/not-same-kind"
@@ -11855,9 +11905,43 @@
       ]
     },
     {
-      "id": "prompt-小鸟-天空-风筝都在图里-小鸟和天空为什么更像一对-先找最稳定的生活关系",
+      "id": "object-铅笔",
+      "kind": "object",
+      "text": "铅笔",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-relation-pairs/reverse-pair",
+        "logic-same-kind-detective/logic-same-kind-detective-3",
+        "logic-same-kind-detective/logic-same-kind-detective-9",
+        "logic-address-map/logic-address-map-1",
+        "logic-address-map/logic-address-map-2",
+        "logic-address-map/logic-address-map-3",
+        "logic-address-map/logic-address-map-4",
+        "logic-address-map/logic-address-map-5",
+        "logic-address-map/logic-address-map-6",
+        "logic-address-map/logic-address-map-7",
+        "logic-address-map/logic-address-map-8",
+        "logic-address-map/logic-address-map-9",
+        "logic-address-map/logic-address-map-10",
+        "logic-address-map/logic-address-map-11",
+        "logic-address-map/logic-address-map-12",
+        "logic-memory-camera/logic-memory-camera-3",
+        "logic-memory-camera/logic-memory-camera-8",
+        "logic-memory-camera/logic-memory-camera-11",
+        "logic-difference-detective/logic-difference-detective-3",
+        "logic-difference-detective/logic-difference-detective-3",
+        "logic-difference-detective/logic-difference-detective-9",
+        "logic-difference-detective/logic-difference-detective-9",
+        "logic-difference-detective/logic-difference-detective-12",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-6",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-12",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-12"
+      ]
+    },
+    {
+      "id": "prompt-小鸟和谁的关系最稳定-先想小鸟最稳定的活动地方",
       "kind": "prompt",
-      "text": "小鸟、天空、风筝都在图里，小鸟和天空为什么更像一对？先找最稳定的生活关系。",
+      "text": "小鸟和谁的关系最稳定？先想小鸟最稳定的活动地方。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-relation-pairs/best-reason"
@@ -11908,33 +11992,6 @@
         "logic-difference-detective/logic-difference-detective-2",
         "logic-difference-detective/logic-difference-detective-7",
         "logic-route-steps/logic-route-steps-6"
-      ]
-    },
-    {
-      "id": "object-风筝",
-      "kind": "object",
-      "text": "风筝",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-relation-pairs/best-reason",
-        "logic-relation-pairs/best-reason",
-        "logic-same-kind-detective/logic-same-kind-detective-12",
-        "logic-position-map/logic-position-map-5",
-        "logic-position-map/logic-position-map-6",
-        "logic-position-map/logic-position-map-7",
-        "logic-position-map/logic-position-map-8",
-        "logic-position-map/logic-position-map-11",
-        "logic-position-map/logic-position-map-12",
-        "logic-memory-camera/logic-memory-camera-7",
-        "logic-memory-camera/logic-memory-camera-12",
-        "logic-difference-detective/logic-difference-detective-2",
-        "logic-difference-detective/logic-difference-detective-7",
-        "logic-route-steps/logic-route-steps-5",
-        "logic-route-steps/logic-route-steps-6",
-        "logic-route-steps/logic-route-steps-7",
-        "logic-route-steps/logic-route-steps-8",
-        "logic-route-steps/logic-route-steps-9",
-        "logic-route-steps/logic-route-steps-10"
       ]
     },
     {
@@ -12328,6 +12385,8 @@
         "logic-difference-detective/logic-difference-detective-7",
         "logic-difference-detective/logic-difference-detective-11",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-3",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-3",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-9",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-9",
         "logic-mirror-fold/logic-mirror-fold-4",
         "logic-mirror-fold/logic-mirror-fold-4",
@@ -12395,6 +12454,8 @@
         "logic-difference-detective/logic-difference-detective-11",
         "logic-difference-detective/logic-difference-detective-11",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-3",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-3",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-9",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-9",
         "logic-mirror-fold/logic-mirror-fold-4",
         "logic-mirror-fold/logic-mirror-fold-4",
@@ -12476,6 +12537,8 @@
         "logic-memory-camera/logic-memory-camera-4",
         "logic-difference-detective/logic-difference-detective-11",
         "logic-difference-detective/logic-difference-detective-11",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-3",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-9",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-9"
       ]
     },
@@ -12581,7 +12644,7 @@
       "contexts": [
         "logic-same-kind-detective/logic-same-kind-detective-1",
         "logic-memory-camera/logic-memory-camera-6",
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-2",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-5",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-11"
       ]
     },
@@ -12805,8 +12868,14 @@
         "logic-position-map/logic-position-map-9",
         "logic-memory-camera/logic-memory-camera-10",
         "logic-difference-detective/logic-difference-detective-5",
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-3",
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-9"
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-9",
+        "graphic-covered-restore/graphic-covered-restore-4",
+        "graphic-detail-whole/graphic-detail-whole-2",
+        "graphic-code-machine/graphic-code-machine-5",
+        "graphic-code-machine/graphic-code-machine-6",
+        "graphic-code-machine/graphic-code-machine-7",
+        "graphic-code-machine/graphic-code-machine-8",
+        "graphic-gap-close/graphic-gap-close-8"
       ]
     },
     {
@@ -12856,8 +12925,60 @@
         "logic-memory-camera/logic-memory-camera-3",
         "logic-difference-detective/logic-difference-detective-3",
         "logic-difference-detective/logic-difference-detective-9",
-        "logic-difference-detective/logic-difference-detective-12",
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-6"
+        "logic-difference-detective/logic-difference-detective-12"
+      ]
+    },
+    {
+      "id": "object-足球",
+      "kind": "object",
+      "text": "足球",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-same-kind-detective/logic-same-kind-detective-5",
+        "logic-same-kind-detective/logic-same-kind-detective-11",
+        "logic-address-map/logic-address-map-1",
+        "logic-address-map/logic-address-map-2",
+        "logic-address-map/logic-address-map-3",
+        "logic-address-map/logic-address-map-4",
+        "logic-address-map/logic-address-map-5",
+        "logic-address-map/logic-address-map-6",
+        "logic-address-map/logic-address-map-7",
+        "logic-address-map/logic-address-map-8",
+        "logic-address-map/logic-address-map-9",
+        "logic-address-map/logic-address-map-10",
+        "logic-address-map/logic-address-map-11",
+        "logic-address-map/logic-address-map-12",
+        "logic-position-map/logic-position-map-5",
+        "logic-position-map/logic-position-map-6",
+        "logic-position-map/logic-position-map-7",
+        "logic-position-map/logic-position-map-8",
+        "logic-position-map/logic-position-map-10",
+        "logic-position-map/logic-position-map-11",
+        "logic-position-map/logic-position-map-12",
+        "logic-memory-camera/logic-memory-camera-7",
+        "logic-memory-camera/logic-memory-camera-10",
+        "logic-difference-detective/logic-difference-detective-2",
+        "logic-difference-detective/logic-difference-detective-7",
+        "logic-difference-detective/logic-difference-detective-7",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-6",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-6",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-12",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-12",
+        "logic-balance-swap/logic-balance-swap-4",
+        "logic-balance-swap/logic-balance-swap-8",
+        "logic-balance-swap/logic-balance-swap-8",
+        "logic-balance-swap/logic-balance-swap-8",
+        "logic-balance-swap/logic-balance-swap-8",
+        "logic-route-steps/logic-route-steps-1",
+        "logic-route-steps/logic-route-steps-2",
+        "logic-route-steps/logic-route-steps-3",
+        "logic-route-steps/logic-route-steps-4",
+        "logic-route-steps/logic-route-steps-5",
+        "logic-route-steps/logic-route-steps-6",
+        "logic-route-steps/logic-route-steps-7",
+        "logic-route-steps/logic-route-steps-8",
+        "logic-route-steps/logic-route-steps-9",
+        "logic-route-steps/logic-route-steps-10"
       ]
     },
     {
@@ -13004,7 +13125,7 @@
         "logic-same-kind-detective/logic-same-kind-detective-11",
         "logic-difference-detective/logic-difference-detective-1",
         "logic-difference-detective/logic-difference-detective-8",
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-5",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-2",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-8"
       ]
     },
@@ -13136,6 +13257,31 @@
       ]
     },
     {
+      "id": "object-风筝",
+      "kind": "object",
+      "text": "风筝",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-same-kind-detective/logic-same-kind-detective-12",
+        "logic-position-map/logic-position-map-5",
+        "logic-position-map/logic-position-map-6",
+        "logic-position-map/logic-position-map-7",
+        "logic-position-map/logic-position-map-8",
+        "logic-position-map/logic-position-map-11",
+        "logic-position-map/logic-position-map-12",
+        "logic-memory-camera/logic-memory-camera-7",
+        "logic-memory-camera/logic-memory-camera-12",
+        "logic-difference-detective/logic-difference-detective-2",
+        "logic-difference-detective/logic-difference-detective-7",
+        "logic-route-steps/logic-route-steps-5",
+        "logic-route-steps/logic-route-steps-6",
+        "logic-route-steps/logic-route-steps-7",
+        "logic-route-steps/logic-route-steps-8",
+        "logic-route-steps/logic-route-steps-9",
+        "logic-route-steps/logic-route-steps-10"
+      ]
+    },
+    {
       "id": "game-title-数字规律小路",
       "kind": "game-title",
       "text": "数字规律小路",
@@ -13170,7 +13316,10 @@
         "logic-number-pattern-trail/logic-number-pattern-trail-9",
         "logic-number-pattern-trail/logic-number-pattern-trail-10",
         "logic-number-pattern-trail/logic-number-pattern-trail-11",
-        "logic-number-pattern-trail/logic-number-pattern-trail-12"
+        "logic-number-pattern-trail/logic-number-pattern-trail-12",
+        "logic-number-pattern-trail/logic-number-pattern-trail-13",
+        "logic-number-pattern-trail/logic-number-pattern-trail-14",
+        "logic-number-pattern-trail/logic-number-pattern-trail-15"
       ]
     },
     {
@@ -13199,7 +13348,10 @@
         "logic-number-pattern-trail/logic-number-pattern-trail-9",
         "logic-number-pattern-trail/logic-number-pattern-trail-10",
         "logic-number-pattern-trail/logic-number-pattern-trail-11",
-        "logic-number-pattern-trail/logic-number-pattern-trail-12"
+        "logic-number-pattern-trail/logic-number-pattern-trail-12",
+        "logic-number-pattern-trail/logic-number-pattern-trail-13",
+        "logic-number-pattern-trail/logic-number-pattern-trail-14",
+        "logic-number-pattern-trail/logic-number-pattern-trail-15"
       ]
     },
     {
@@ -13219,7 +13371,10 @@
         "logic-number-pattern-trail/logic-number-pattern-trail-9",
         "logic-number-pattern-trail/logic-number-pattern-trail-10",
         "logic-number-pattern-trail/logic-number-pattern-trail-11",
-        "logic-number-pattern-trail/logic-number-pattern-trail-12"
+        "logic-number-pattern-trail/logic-number-pattern-trail-12",
+        "logic-number-pattern-trail/logic-number-pattern-trail-13",
+        "logic-number-pattern-trail/logic-number-pattern-trail-14",
+        "logic-number-pattern-trail/logic-number-pattern-trail-15"
       ]
     },
     {
@@ -13398,6 +13553,7 @@
         "logic-number-pattern-trail/logic-number-pattern-trail-10",
         "logic-number-pattern-trail/logic-number-pattern-trail-11",
         "logic-number-pattern-trail/logic-number-pattern-trail-11",
+        "logic-number-pattern-trail/logic-number-pattern-trail-15",
         "logic-matrix-puzzle/logic-matrix-puzzle-5",
         "logic-block-height-map/logic-block-height-map-4",
         "logic-block-height-map/logic-block-height-map-7",
@@ -13448,7 +13604,9 @@
       "contexts": [
         "logic-number-pattern-trail/logic-number-pattern-trail-2",
         "logic-number-pattern-trail/logic-number-pattern-trail-5",
-        "logic-number-pattern-trail/logic-number-pattern-trail-12"
+        "logic-number-pattern-trail/logic-number-pattern-trail-12",
+        "logic-number-pattern-trail/logic-number-pattern-trail-13",
+        "logic-number-pattern-trail/logic-number-pattern-trail-15"
       ]
     },
     {
@@ -13459,7 +13617,9 @@
       "contexts": [
         "logic-number-pattern-trail/logic-number-pattern-trail-2",
         "logic-number-pattern-trail/logic-number-pattern-trail-9",
-        "logic-number-pattern-trail/logic-number-pattern-trail-12"
+        "logic-number-pattern-trail/logic-number-pattern-trail-12",
+        "logic-number-pattern-trail/logic-number-pattern-trail-13",
+        "logic-number-pattern-trail/logic-number-pattern-trail-14"
       ]
     },
     {
@@ -13612,7 +13772,9 @@
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-number-pattern-trail/logic-number-pattern-trail-9",
-        "logic-number-pattern-trail/logic-number-pattern-trail-12"
+        "logic-number-pattern-trail/logic-number-pattern-trail-12",
+        "logic-number-pattern-trail/logic-number-pattern-trail-13",
+        "logic-number-pattern-trail/logic-number-pattern-trail-14"
       ]
     },
     {
@@ -13621,7 +13783,8 @@
       "text": "9",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-number-pattern-trail/logic-number-pattern-trail-9"
+        "logic-number-pattern-trail/logic-number-pattern-trail-9",
+        "logic-number-pattern-trail/logic-number-pattern-trail-15"
       ]
     },
     {
@@ -13649,6 +13812,79 @@
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-number-pattern-trail/logic-number-pattern-trail-12"
+      ]
+    },
+    {
+      "id": "success-每次多-2-12-后面是-14-再到-16",
+      "kind": "success",
+      "text": "每次多 2，12 后面是 14，再到 16。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-number-pattern-trail/logic-number-pattern-trail-13"
+      ]
+    },
+    {
+      "id": "object-12",
+      "kind": "object",
+      "text": "12",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-number-pattern-trail/logic-number-pattern-trail-13"
+      ]
+    },
+    {
+      "id": "object-16",
+      "kind": "object",
+      "text": "16",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-number-pattern-trail/logic-number-pattern-trail-13",
+        "logic-number-pattern-trail/logic-number-pattern-trail-14"
+      ]
+    },
+    {
+      "id": "success-倒着每次少-2-14-后面是-12",
+      "kind": "success",
+      "text": "倒着每次少 2，14 后面是 12。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-number-pattern-trail/logic-number-pattern-trail-14"
+      ]
+    },
+    {
+      "id": "object-18",
+      "kind": "object",
+      "text": "18",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-number-pattern-trail/logic-number-pattern-trail-14"
+      ]
+    },
+    {
+      "id": "object-14",
+      "kind": "object",
+      "text": "14",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-number-pattern-trail/logic-number-pattern-trail-14"
+      ]
+    },
+    {
+      "id": "success-每次多-3-9-后面是-12-再到-15",
+      "kind": "success",
+      "text": "每次多 3，9 后面是 12，再到 15。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-number-pattern-trail/logic-number-pattern-trail-15"
+      ]
+    },
+    {
+      "id": "object-15",
+      "kind": "object",
+      "text": "15",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-number-pattern-trail/logic-number-pattern-trail-15"
       ]
     },
     {
@@ -14510,9 +14746,7 @@
       "text": "草莓、草莓、草莓",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-matrix-puzzle/logic-matrix-puzzle-5",
-        "logic-balance-swap/logic-balance-swap-1",
-        "logic-balance-swap/logic-balance-swap-5"
+        "logic-matrix-puzzle/logic-matrix-puzzle-5"
       ]
     },
     {
@@ -14521,9 +14755,7 @@
       "text": "草莓、草莓",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-matrix-puzzle/logic-matrix-puzzle-5",
-        "logic-balance-swap/logic-balance-swap-1",
-        "logic-balance-swap/logic-balance-swap-5"
+        "logic-matrix-puzzle/logic-matrix-puzzle-5"
       ]
     },
     {
@@ -14599,6 +14831,16 @@
       ]
     },
     {
+      "id": "object-天空",
+      "kind": "object",
+      "text": "天空",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-matrix-puzzle/logic-matrix-puzzle-6",
+        "logic-difference-detective/logic-difference-detective-5"
+      ]
+    },
+    {
       "id": "object-小鸟和天空",
       "kind": "object",
       "text": "小鸟和天空",
@@ -14611,6 +14853,15 @@
       "id": "object-小鱼和小河",
       "kind": "object",
       "text": "小鱼和小河",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-matrix-puzzle/logic-matrix-puzzle-6"
+      ]
+    },
+    {
+      "id": "object-家",
+      "kind": "object",
+      "text": "家",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-matrix-puzzle/logic-matrix-puzzle-6"
@@ -14812,6 +15063,30 @@
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-position-map/logic-position-map-5"
+      ]
+    },
+    {
+      "id": "object-盒子",
+      "kind": "object",
+      "text": "盒子",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-position-map/logic-position-map-5",
+        "logic-position-map/logic-position-map-6",
+        "logic-position-map/logic-position-map-7",
+        "logic-position-map/logic-position-map-8",
+        "logic-position-map/logic-position-map-11",
+        "logic-position-map/logic-position-map-12",
+        "logic-route-steps/logic-route-steps-1",
+        "logic-route-steps/logic-route-steps-2",
+        "logic-route-steps/logic-route-steps-3",
+        "logic-route-steps/logic-route-steps-4",
+        "logic-route-steps/logic-route-steps-5",
+        "logic-route-steps/logic-route-steps-6",
+        "logic-route-steps/logic-route-steps-7",
+        "logic-route-steps/logic-route-steps-8",
+        "logic-route-steps/logic-route-steps-9",
+        "logic-route-steps/logic-route-steps-10"
       ]
     },
     {
@@ -15845,9 +16120,7 @@
       "contexts": [
         "logic-visual-match/logic-visual-match-5",
         "logic-visual-match/logic-visual-match-11",
-        "logic-visual-match/logic-visual-match-11",
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-1",
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-7"
+        "logic-visual-match/logic-visual-match-11"
       ]
     },
     {
@@ -16707,32 +16980,12 @@
       ]
     },
     {
-      "id": "object-苹果-橘子-草莓",
-      "kind": "object",
-      "text": "苹果、橘子、草莓",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-2",
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-8"
-      ]
-    },
-    {
       "id": "success-还少小兔",
       "kind": "success",
       "text": "还少小兔。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-part-whole-puzzle/logic-part-whole-puzzle-3"
-      ]
-    },
-    {
-      "id": "object-小猫-小狗-小兔",
-      "kind": "object",
-      "text": "小猫、小狗、小兔",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-3",
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-9"
       ]
     },
     {
@@ -16745,41 +16998,12 @@
       ]
     },
     {
-      "id": "choice-紫色圆片",
-      "kind": "choice",
-      "text": "紫色圆片",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-4"
-      ]
-    },
-    {
-      "id": "object-黄色圆片-绿色圆片-蓝色圆片",
-      "kind": "object",
-      "text": "黄色圆片、绿色圆片、蓝色圆片",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-4",
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-10"
-      ]
-    },
-    {
       "id": "success-还少饼干",
       "kind": "success",
       "text": "还少饼干。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-part-whole-puzzle/logic-part-whole-puzzle-5"
-      ]
-    },
-    {
-      "id": "object-饼干-糖果-星星",
-      "kind": "object",
-      "text": "饼干、糖果、星星",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-5",
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-11"
       ]
     },
     {
@@ -16792,9 +17016,9 @@
       ]
     },
     {
-      "id": "object-足球-铅笔-魔法盒",
-      "kind": "object",
-      "text": "足球、铅笔、魔法盒",
+      "id": "choice-魔法盒",
+      "kind": "choice",
+      "text": "魔法盒",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-part-whole-puzzle/logic-part-whole-puzzle-6",
@@ -16808,6 +17032,8 @@
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-part-whole-puzzle/logic-part-whole-puzzle-6",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-6",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-12",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-12"
       ]
     },
@@ -16908,15 +17134,6 @@
       ]
     },
     {
-      "id": "choice-魔法盒",
-      "kind": "choice",
-      "text": "魔法盒",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-12"
-      ]
-    },
-    {
       "id": "game-title-天平换一换",
       "kind": "game-title",
       "text": "天平换一换",
@@ -16977,6 +17194,35 @@
       ]
     },
     {
+      "id": "choice-1-个草莓",
+      "kind": "choice",
+      "text": "1 个草莓",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-balance-swap/logic-balance-swap-1"
+      ]
+    },
+    {
+      "id": "choice-2-个草莓",
+      "kind": "choice",
+      "text": "2 个草莓",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-balance-swap/logic-balance-swap-1",
+        "logic-balance-swap/logic-balance-swap-5"
+      ]
+    },
+    {
+      "id": "choice-3-个草莓",
+      "kind": "choice",
+      "text": "3 个草莓",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-balance-swap/logic-balance-swap-1",
+        "logic-balance-swap/logic-balance-swap-5"
+      ]
+    },
+    {
       "id": "prompt-1-个橘子和几个饼干一样-天平两边一样-右边有几个就选几个",
       "kind": "prompt",
       "text": "1 个橘子和几个饼干一样？天平两边一样，右边有几个就选几个。",
@@ -16995,9 +17241,18 @@
       ]
     },
     {
-      "id": "choice-饼干-饼干",
+      "id": "choice-1-个饼干",
       "kind": "choice",
-      "text": "饼干、饼干",
+      "text": "1 个饼干",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-balance-swap/logic-balance-swap-2"
+      ]
+    },
+    {
+      "id": "choice-2-个饼干",
+      "kind": "choice",
+      "text": "2 个饼干",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-balance-swap/logic-balance-swap-2",
@@ -17005,9 +17260,9 @@
       ]
     },
     {
-      "id": "choice-饼干-饼干-饼干",
+      "id": "choice-3-个饼干",
       "kind": "choice",
-      "text": "饼干、饼干、饼干",
+      "text": "3 个饼干",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-balance-swap/logic-balance-swap-2",
@@ -17033,18 +17288,18 @@
       ]
     },
     {
-      "id": "choice-糖果-糖果",
+      "id": "choice-2-个糖果",
       "kind": "choice",
-      "text": "糖果、糖果",
+      "text": "2 个糖果",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-balance-swap/logic-balance-swap-3"
       ]
     },
     {
-      "id": "choice-糖果-糖果-糖果",
+      "id": "choice-3-个糖果",
       "kind": "choice",
-      "text": "糖果、糖果、糖果",
+      "text": "3 个糖果",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-balance-swap/logic-balance-swap-3",
@@ -17052,9 +17307,9 @@
       ]
     },
     {
-      "id": "choice-糖果-糖果-糖果-糖果",
+      "id": "choice-4-个糖果",
       "kind": "choice",
-      "text": "糖果、糖果、糖果、糖果",
+      "text": "4 个糖果",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-balance-swap/logic-balance-swap-3",
@@ -17080,18 +17335,27 @@
       ]
     },
     {
-      "id": "choice-星星-星星",
+      "id": "choice-1-颗星星",
       "kind": "choice",
-      "text": "星星、星星",
+      "text": "1 颗星星",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-balance-swap/logic-balance-swap-4"
       ]
     },
     {
-      "id": "choice-星星-星星-星星",
+      "id": "choice-2-颗星星",
       "kind": "choice",
-      "text": "星星、星星、星星",
+      "text": "2 颗星星",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-balance-swap/logic-balance-swap-4"
+      ]
+    },
+    {
+      "id": "choice-3-颗星星",
+      "kind": "choice",
+      "text": "3 颗星星",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-balance-swap/logic-balance-swap-4"
@@ -17140,9 +17404,9 @@
       ]
     },
     {
-      "id": "choice-草莓-草莓-草莓-草莓",
+      "id": "choice-4-个草莓",
       "kind": "choice",
-      "text": "草莓、草莓、草莓、草莓",
+      "text": "4 个草莓",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-balance-swap/logic-balance-swap-5"
@@ -17181,9 +17445,9 @@
       ]
     },
     {
-      "id": "choice-饼干-饼干-饼干-饼干",
+      "id": "choice-4-个饼干",
       "kind": "choice",
-      "text": "饼干、饼干、饼干、饼干",
+      "text": "4 个饼干",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-balance-swap/logic-balance-swap-6"
@@ -17208,9 +17472,9 @@
       ]
     },
     {
-      "id": "choice-糖果-糖果-糖果-糖果-糖果-糖果",
+      "id": "choice-6-个糖果",
       "kind": "choice",
-      "text": "糖果、糖果、糖果、糖果、糖果、糖果",
+      "text": "6 个糖果",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-balance-swap/logic-balance-swap-7"
@@ -17235,27 +17499,27 @@
       ]
     },
     {
-      "id": "choice-星星-星星-星星-星星",
+      "id": "choice-4-颗星星",
       "kind": "choice",
-      "text": "星星、星星、星星、星星",
+      "text": "4 颗星星",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-balance-swap/logic-balance-swap-8"
       ]
     },
     {
-      "id": "choice-星星-星星-星星-星星-星星",
+      "id": "choice-5-颗星星",
       "kind": "choice",
-      "text": "星星、星星、星星、星星、星星",
+      "text": "5 颗星星",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-balance-swap/logic-balance-swap-8"
       ]
     },
     {
-      "id": "choice-星星-星星-星星-星星-星星-星星",
+      "id": "choice-6-颗星星",
       "kind": "choice",
-      "text": "星星、星星、星星、星星、星星、星星",
+      "text": "6 颗星星",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-balance-swap/logic-balance-swap-8"
@@ -18750,21 +19014,1388 @@
       ]
     },
     {
+      "id": "game-title-影子配对",
+      "kind": "game-title",
+      "text": "影子配对",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-shadow-match"
+      ]
+    },
+    {
+      "id": "game-goal-训练影子配对-轮廓抽象和抗颜色干扰",
+      "kind": "game-goal",
+      "text": "训练影子配对、轮廓抽象和抗颜色干扰。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-shadow-match"
+      ]
+    },
+    {
+      "id": "prompt-哪一个黑影和左边彩色图是同一个轮廓-不要看颜色-只看外边一圈-耳朵-角和尾巴",
+      "kind": "prompt",
+      "text": "哪一个黑影和左边彩色图是同一个轮廓？不要看颜色，只看外边一圈、耳朵、角和尾巴。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-shadow-match/graphic-shadow-match-1",
+        "graphic-shadow-match/graphic-shadow-match-2",
+        "graphic-shadow-match/graphic-shadow-match-3",
+        "graphic-shadow-match/graphic-shadow-match-4",
+        "graphic-shadow-match/graphic-shadow-match-5",
+        "graphic-shadow-match/graphic-shadow-match-6",
+        "graphic-shadow-match/graphic-shadow-match-7",
+        "graphic-shadow-match/graphic-shadow-match-8"
+      ]
+    },
+    {
+      "id": "success-小猫影子的轮廓对上了-尖尖猫耳朵和圆脸轮廓都对-所以选这个影子",
+      "kind": "success",
+      "text": "小猫影子的轮廓对上了，尖尖猫耳朵和圆脸轮廓都对，所以选这个影子。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "graphic-shadow-match/graphic-shadow-match-1"
+      ]
+    },
+    {
+      "id": "retry-先用手沿着彩色图的轮廓走一圈-再看黑影的耳朵-角-尾巴是不是一样",
+      "kind": "retry",
+      "text": "先用手沿着彩色图的轮廓走一圈，再看黑影的耳朵、角、尾巴是不是一样。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "graphic-shadow-match/graphic-shadow-match-1",
+        "graphic-shadow-match/graphic-shadow-match-2",
+        "graphic-shadow-match/graphic-shadow-match-3",
+        "graphic-shadow-match/graphic-shadow-match-4",
+        "graphic-shadow-match/graphic-shadow-match-5",
+        "graphic-shadow-match/graphic-shadow-match-6",
+        "graphic-shadow-match/graphic-shadow-match-7",
+        "graphic-shadow-match/graphic-shadow-match-8"
+      ]
+    },
+    {
+      "id": "parent-问她-哪个影子的轮廓哪里最像-为什么不是其它相近的影子",
+      "kind": "parent",
+      "text": "问她：哪个影子的轮廓哪里最像？为什么不是其它相近的影子？",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-shadow-match/graphic-shadow-match-1",
+        "graphic-shadow-match/graphic-shadow-match-2",
+        "graphic-shadow-match/graphic-shadow-match-3",
+        "graphic-shadow-match/graphic-shadow-match-4",
+        "graphic-shadow-match/graphic-shadow-match-5",
+        "graphic-shadow-match/graphic-shadow-match-6",
+        "graphic-shadow-match/graphic-shadow-match-7",
+        "graphic-shadow-match/graphic-shadow-match-8"
+      ]
+    },
+    {
+      "id": "choice-d",
+      "kind": "choice",
+      "text": "D",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-shadow-match/graphic-shadow-match-1",
+        "graphic-shadow-match/graphic-shadow-match-2",
+        "graphic-shadow-match/graphic-shadow-match-3",
+        "graphic-shadow-match/graphic-shadow-match-4",
+        "graphic-shadow-match/graphic-shadow-match-5",
+        "graphic-shadow-match/graphic-shadow-match-6",
+        "graphic-shadow-match/graphic-shadow-match-7",
+        "graphic-shadow-match/graphic-shadow-match-8",
+        "graphic-covered-restore/graphic-covered-restore-1",
+        "graphic-covered-restore/graphic-covered-restore-2",
+        "graphic-covered-restore/graphic-covered-restore-3",
+        "graphic-covered-restore/graphic-covered-restore-4",
+        "graphic-covered-restore/graphic-covered-restore-5",
+        "graphic-covered-restore/graphic-covered-restore-6",
+        "graphic-covered-restore/graphic-covered-restore-7",
+        "graphic-covered-restore/graphic-covered-restore-8",
+        "graphic-detail-whole/graphic-detail-whole-1",
+        "graphic-detail-whole/graphic-detail-whole-2",
+        "graphic-detail-whole/graphic-detail-whole-3",
+        "graphic-detail-whole/graphic-detail-whole-4",
+        "graphic-detail-whole/graphic-detail-whole-5",
+        "graphic-detail-whole/graphic-detail-whole-6",
+        "graphic-detail-whole/graphic-detail-whole-7",
+        "graphic-detail-whole/graphic-detail-whole-8",
+        "graphic-layer-overlap/graphic-layer-overlap-1",
+        "graphic-layer-overlap/graphic-layer-overlap-2",
+        "graphic-layer-overlap/graphic-layer-overlap-3",
+        "graphic-layer-overlap/graphic-layer-overlap-4",
+        "graphic-layer-overlap/graphic-layer-overlap-5",
+        "graphic-layer-overlap/graphic-layer-overlap-6",
+        "graphic-layer-overlap/graphic-layer-overlap-7",
+        "graphic-layer-overlap/graphic-layer-overlap-8",
+        "graphic-code-machine/graphic-code-machine-1",
+        "graphic-code-machine/graphic-code-machine-2",
+        "graphic-code-machine/graphic-code-machine-3",
+        "graphic-code-machine/graphic-code-machine-4",
+        "graphic-code-machine/graphic-code-machine-5",
+        "graphic-code-machine/graphic-code-machine-6",
+        "graphic-code-machine/graphic-code-machine-7",
+        "graphic-code-machine/graphic-code-machine-8",
+        "graphic-gap-close/graphic-gap-close-1",
+        "graphic-gap-close/graphic-gap-close-2",
+        "graphic-gap-close/graphic-gap-close-3",
+        "graphic-gap-close/graphic-gap-close-4",
+        "graphic-gap-close/graphic-gap-close-5",
+        "graphic-gap-close/graphic-gap-close-6",
+        "graphic-gap-close/graphic-gap-close-7",
+        "graphic-gap-close/graphic-gap-close-8"
+      ]
+    },
+    {
+      "id": "choice-小猫影子",
+      "kind": "choice",
+      "text": "小猫影子",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-shadow-match/graphic-shadow-match-1",
+        "graphic-shadow-match/graphic-shadow-match-2"
+      ]
+    },
+    {
+      "id": "choice-小狗影子",
+      "kind": "choice",
+      "text": "小狗影子",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-shadow-match/graphic-shadow-match-1",
+        "graphic-shadow-match/graphic-shadow-match-2"
+      ]
+    },
+    {
+      "id": "choice-小兔影子",
+      "kind": "choice",
+      "text": "小兔影子",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-shadow-match/graphic-shadow-match-1",
+        "graphic-shadow-match/graphic-shadow-match-2"
+      ]
+    },
+    {
+      "id": "choice-小熊影子",
+      "kind": "choice",
+      "text": "小熊影子",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-shadow-match/graphic-shadow-match-1",
+        "graphic-shadow-match/graphic-shadow-match-2"
+      ]
+    },
+    {
+      "id": "success-小兔影子的轮廓对上了-两只长耳朵最明显-所以选这个影子",
+      "kind": "success",
+      "text": "小兔影子的轮廓对上了，两只长耳朵最明显，所以选这个影子。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "graphic-shadow-match/graphic-shadow-match-2"
+      ]
+    },
+    {
+      "id": "success-小鱼影子的轮廓对上了-身体后面有三角尾巴-所以选这个影子",
+      "kind": "success",
+      "text": "小鱼影子的轮廓对上了，身体后面有三角尾巴，所以选这个影子。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "graphic-shadow-match/graphic-shadow-match-3"
+      ]
+    },
+    {
+      "id": "choice-叶子影子",
+      "kind": "choice",
+      "text": "叶子影子",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-shadow-match/graphic-shadow-match-3",
+        "graphic-shadow-match/graphic-shadow-match-5",
+        "graphic-shadow-match/graphic-shadow-match-7"
+      ]
+    },
+    {
+      "id": "choice-小鱼影子",
+      "kind": "choice",
+      "text": "小鱼影子",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-shadow-match/graphic-shadow-match-3"
+      ]
+    },
+    {
+      "id": "choice-苹果影子",
+      "kind": "choice",
+      "text": "苹果影子",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-shadow-match/graphic-shadow-match-3",
+        "graphic-shadow-match/graphic-shadow-match-4",
+        "graphic-shadow-match/graphic-shadow-match-6"
+      ]
+    },
+    {
+      "id": "choice-梨子影子",
+      "kind": "choice",
+      "text": "梨子影子",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-shadow-match/graphic-shadow-match-3",
+        "graphic-shadow-match/graphic-shadow-match-4"
+      ]
+    },
+    {
+      "id": "success-苹果影子的轮廓对上了-上面有小叶子-下面是圆鼓鼓的-所以选这个影子",
+      "kind": "success",
+      "text": "苹果影子的轮廓对上了，上面有小叶子，下面是圆鼓鼓的，所以选这个影子。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "graphic-shadow-match/graphic-shadow-match-4"
+      ]
+    },
+    {
+      "id": "choice-圆形影子",
+      "kind": "choice",
+      "text": "圆形影子",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-shadow-match/graphic-shadow-match-4",
+        "graphic-shadow-match/graphic-shadow-match-6"
+      ]
+    },
+    {
+      "id": "choice-花朵影子",
+      "kind": "choice",
+      "text": "花朵影子",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-shadow-match/graphic-shadow-match-4",
+        "graphic-shadow-match/graphic-shadow-match-5"
+      ]
+    },
+    {
+      "id": "success-星星影子的轮廓对上了-外边一圈都是尖尖的角-所以选这个影子",
+      "kind": "success",
+      "text": "星星影子的轮廓对上了，外边一圈都是尖尖的角，所以选这个影子。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "graphic-shadow-match/graphic-shadow-match-5"
+      ]
+    },
+    {
+      "id": "choice-星星影子",
+      "kind": "choice",
+      "text": "星星影子",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-shadow-match/graphic-shadow-match-5",
+        "graphic-shadow-match/graphic-shadow-match-6",
+        "graphic-shadow-match/graphic-shadow-match-7",
+        "graphic-shadow-match/graphic-shadow-match-8"
+      ]
+    },
+    {
+      "id": "choice-圆角方块影子",
+      "kind": "choice",
+      "text": "圆角方块影子",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-shadow-match/graphic-shadow-match-5",
+        "graphic-shadow-match/graphic-shadow-match-6",
+        "graphic-shadow-match/graphic-shadow-match-8"
+      ]
+    },
+    {
+      "id": "success-圆角方块影子的轮廓对上了-四条边接近方形-角是圆圆的-所以选这个影子",
+      "kind": "success",
+      "text": "圆角方块影子的轮廓对上了，四条边接近方形，角是圆圆的，所以选这个影子。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "graphic-shadow-match/graphic-shadow-match-6"
+      ]
+    },
+    {
+      "id": "success-三角形影子的轮廓对上了-只有三个尖角-下面是一条直边-所以选这个影子",
+      "kind": "success",
+      "text": "三角形影子的轮廓对上了，只有三个尖角，下面是一条直边，所以选这个影子。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "graphic-shadow-match/graphic-shadow-match-7"
+      ]
+    },
+    {
+      "id": "choice-三角形影子",
+      "kind": "choice",
+      "text": "三角形影子",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-shadow-match/graphic-shadow-match-7",
+        "graphic-shadow-match/graphic-shadow-match-8"
+      ]
+    },
+    {
+      "id": "choice-菱形影子",
+      "kind": "choice",
+      "text": "菱形影子",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-shadow-match/graphic-shadow-match-7",
+        "graphic-shadow-match/graphic-shadow-match-8"
+      ]
+    },
+    {
+      "id": "success-菱形影子的轮廓对上了-上下左右四个尖角一样清楚-所以选这个影子",
+      "kind": "success",
+      "text": "菱形影子的轮廓对上了，上下左右四个尖角一样清楚，所以选这个影子。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "graphic-shadow-match/graphic-shadow-match-8"
+      ]
+    },
+    {
+      "id": "game-title-遮挡还原",
+      "kind": "game-title",
+      "text": "遮挡还原",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-covered-restore"
+      ]
+    },
+    {
+      "id": "game-goal-训练遮挡还原-可见线索提取和近似选项排除",
+      "kind": "game-goal",
+      "text": "训练遮挡还原、可见线索提取和近似选项排除。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-covered-restore"
+      ]
+    },
+    {
+      "id": "prompt-上面的图被遮住一部分-完整图最可能是哪一个-只看还露出来的边-角-耳朵-叶子或尾巴-再选完整图",
+      "kind": "prompt",
+      "text": "上面的图被遮住一部分，完整图最可能是哪一个？只看还露出来的边、角、耳朵、叶子或尾巴，再选完整图。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-covered-restore/graphic-covered-restore-1",
+        "graphic-covered-restore/graphic-covered-restore-2",
+        "graphic-covered-restore/graphic-covered-restore-3",
+        "graphic-covered-restore/graphic-covered-restore-4",
+        "graphic-covered-restore/graphic-covered-restore-5",
+        "graphic-covered-restore/graphic-covered-restore-6",
+        "graphic-covered-restore/graphic-covered-restore-7",
+        "graphic-covered-restore/graphic-covered-restore-8"
+      ]
+    },
+    {
+      "id": "success-小猫对-露出的尖耳朵和圆脸边线指向小猫-遮住以后要抓住露出的线索",
+      "kind": "success",
+      "text": "小猫对，露出的尖耳朵和圆脸边线指向小猫。遮住以后要抓住露出的线索。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "graphic-covered-restore/graphic-covered-restore-1"
+      ]
+    },
+    {
+      "id": "retry-先指一指还露出来的线索-是圆边-尖角-耳朵-叶子还是尾巴-再排除很像但局部不对的选项",
+      "kind": "retry",
+      "text": "先指一指还露出来的线索：是圆边、尖角、耳朵、叶子还是尾巴，再排除很像但局部不对的选项。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "graphic-covered-restore/graphic-covered-restore-1",
+        "graphic-covered-restore/graphic-covered-restore-2",
+        "graphic-covered-restore/graphic-covered-restore-3",
+        "graphic-covered-restore/graphic-covered-restore-4",
+        "graphic-covered-restore/graphic-covered-restore-5",
+        "graphic-covered-restore/graphic-covered-restore-6",
+        "graphic-covered-restore/graphic-covered-restore-7",
+        "graphic-covered-restore/graphic-covered-restore-8"
+      ]
+    },
+    {
+      "id": "parent-请她说哪里被遮住了-哪里还露出来了-为什么其它完整图虽然像但不对",
+      "kind": "parent",
+      "text": "请她说哪里被遮住了，哪里还露出来了，为什么其它完整图虽然像但不对。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-covered-restore/graphic-covered-restore-1",
+        "graphic-covered-restore/graphic-covered-restore-2",
+        "graphic-covered-restore/graphic-covered-restore-3",
+        "graphic-covered-restore/graphic-covered-restore-4",
+        "graphic-covered-restore/graphic-covered-restore-5",
+        "graphic-covered-restore/graphic-covered-restore-6",
+        "graphic-covered-restore/graphic-covered-restore-7",
+        "graphic-covered-restore/graphic-covered-restore-8"
+      ]
+    },
+    {
+      "id": "success-小兔对-上面露出两只长耳朵-所以完整图是小兔-遮住以后要抓住露出的线索",
+      "kind": "success",
+      "text": "小兔对，上面露出两只长耳朵，所以完整图是小兔。遮住以后要抓住露出的线索。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "graphic-covered-restore/graphic-covered-restore-2"
+      ]
+    },
+    {
+      "id": "success-苹果对-右边露出的圆肚子和小叶子属于苹果-遮住以后要抓住露出的线索",
+      "kind": "success",
+      "text": "苹果对，右边露出的圆肚子和小叶子属于苹果。遮住以后要抓住露出的线索。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "graphic-covered-restore/graphic-covered-restore-3"
+      ]
+    },
+    {
+      "id": "choice-梨子",
+      "kind": "choice",
+      "text": "梨子",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-covered-restore/graphic-covered-restore-3",
+        "graphic-covered-restore/graphic-covered-restore-4",
+        "graphic-covered-restore/graphic-covered-restore-8",
+        "graphic-detail-whole/graphic-detail-whole-2",
+        "graphic-detail-whole/graphic-detail-whole-3",
+        "graphic-detail-whole/graphic-detail-whole-8",
+        "graphic-code-machine/graphic-code-machine-1",
+        "graphic-code-machine/graphic-code-machine-2",
+        "graphic-code-machine/graphic-code-machine-3",
+        "graphic-code-machine/graphic-code-machine-4",
+        "graphic-gap-close/graphic-gap-close-7",
+        "graphic-gap-close/graphic-gap-close-8"
+      ]
+    },
+    {
+      "id": "choice-圆形",
+      "kind": "choice",
+      "text": "圆形",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-covered-restore/graphic-covered-restore-3",
+        "graphic-covered-restore/graphic-covered-restore-6",
+        "graphic-covered-restore/graphic-covered-restore-8",
+        "graphic-detail-whole/graphic-detail-whole-3",
+        "graphic-detail-whole/graphic-detail-whole-5",
+        "graphic-detail-whole/graphic-detail-whole-6",
+        "graphic-gap-close/graphic-gap-close-1",
+        "graphic-gap-close/graphic-gap-close-2",
+        "graphic-gap-close/graphic-gap-close-6",
+        "graphic-gap-close/graphic-gap-close-7"
+      ]
+    },
+    {
+      "id": "choice-花朵",
+      "kind": "choice",
+      "text": "花朵",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-covered-restore/graphic-covered-restore-3",
+        "graphic-covered-restore/graphic-covered-restore-5",
+        "graphic-covered-restore/graphic-covered-restore-6",
+        "graphic-detail-whole/graphic-detail-whole-3",
+        "graphic-detail-whole/graphic-detail-whole-4",
+        "graphic-detail-whole/graphic-detail-whole-5",
+        "graphic-detail-whole/graphic-detail-whole-8",
+        "graphic-code-machine/graphic-code-machine-5",
+        "graphic-code-machine/graphic-code-machine-6",
+        "graphic-code-machine/graphic-code-machine-7",
+        "graphic-code-machine/graphic-code-machine-8",
+        "graphic-gap-close/graphic-gap-close-5",
+        "graphic-gap-close/graphic-gap-close-6",
+        "graphic-gap-close/graphic-gap-close-7"
+      ]
+    },
+    {
+      "id": "success-小鱼对-露出的三角尾巴只属于小鱼-遮住以后要抓住露出的线索",
+      "kind": "success",
+      "text": "小鱼对，露出的三角尾巴只属于小鱼。遮住以后要抓住露出的线索。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "graphic-covered-restore/graphic-covered-restore-4"
+      ]
+    },
+    {
+      "id": "choice-叶子",
+      "kind": "choice",
+      "text": "叶子",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-covered-restore/graphic-covered-restore-4",
+        "graphic-covered-restore/graphic-covered-restore-5",
+        "graphic-covered-restore/graphic-covered-restore-8",
+        "graphic-detail-whole/graphic-detail-whole-2",
+        "graphic-detail-whole/graphic-detail-whole-4",
+        "graphic-detail-whole/graphic-detail-whole-8",
+        "graphic-code-machine/graphic-code-machine-1",
+        "graphic-code-machine/graphic-code-machine-2",
+        "graphic-code-machine/graphic-code-machine-3",
+        "graphic-code-machine/graphic-code-machine-4",
+        "graphic-gap-close/graphic-gap-close-3",
+        "graphic-gap-close/graphic-gap-close-8"
+      ]
+    },
+    {
+      "id": "success-星星对-四周露出的尖角说明完整图是星星-遮住以后要抓住露出的线索",
+      "kind": "success",
+      "text": "星星对，四周露出的尖角说明完整图是星星。遮住以后要抓住露出的线索。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "graphic-covered-restore/graphic-covered-restore-5"
+      ]
+    },
+    {
+      "id": "choice-圆角方块",
+      "kind": "choice",
+      "text": "圆角方块",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-covered-restore/graphic-covered-restore-5",
+        "graphic-covered-restore/graphic-covered-restore-7",
+        "graphic-detail-whole/graphic-detail-whole-4",
+        "graphic-detail-whole/graphic-detail-whole-6",
+        "graphic-detail-whole/graphic-detail-whole-7",
+        "graphic-code-machine/graphic-code-machine-5",
+        "graphic-code-machine/graphic-code-machine-6",
+        "graphic-code-machine/graphic-code-machine-7",
+        "graphic-code-machine/graphic-code-machine-8",
+        "graphic-gap-close/graphic-gap-close-1",
+        "graphic-gap-close/graphic-gap-close-2",
+        "graphic-gap-close/graphic-gap-close-4"
+      ]
+    },
+    {
+      "id": "success-花朵对-上方露出一圈圆花瓣-不是尖角-遮住以后要抓住露出的线索",
+      "kind": "success",
+      "text": "花朵对，上方露出一圈圆花瓣，不是尖角。遮住以后要抓住露出的线索。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "graphic-covered-restore/graphic-covered-restore-6"
+      ]
+    },
+    {
+      "id": "success-菱形对-四个方向露出尖角-说明完整图是菱形-遮住以后要抓住露出的线索",
+      "kind": "success",
+      "text": "菱形对，四个方向露出尖角，说明完整图是菱形。遮住以后要抓住露出的线索。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "graphic-covered-restore/graphic-covered-restore-7"
+      ]
+    },
+    {
+      "id": "choice-菱形",
+      "kind": "choice",
+      "text": "菱形",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-covered-restore/graphic-covered-restore-7",
+        "graphic-detail-whole/graphic-detail-whole-7",
+        "graphic-gap-close/graphic-gap-close-1",
+        "graphic-gap-close/graphic-gap-close-2",
+        "graphic-gap-close/graphic-gap-close-3",
+        "graphic-gap-close/graphic-gap-close-4",
+        "graphic-gap-close/graphic-gap-close-5"
+      ]
+    },
+    {
+      "id": "choice-三角形",
+      "kind": "choice",
+      "text": "三角形",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-covered-restore/graphic-covered-restore-7",
+        "graphic-detail-whole/graphic-detail-whole-7",
+        "graphic-code-machine/graphic-code-machine-5",
+        "graphic-code-machine/graphic-code-machine-6",
+        "graphic-code-machine/graphic-code-machine-7",
+        "graphic-code-machine/graphic-code-machine-8",
+        "graphic-gap-close/graphic-gap-close-3",
+        "graphic-gap-close/graphic-gap-close-4",
+        "graphic-gap-close/graphic-gap-close-5"
+      ]
+    },
+    {
+      "id": "success-梨子对-露出的细上部和小叶子更像梨子-不是圆苹果-遮住以后要抓住露出的线索",
+      "kind": "success",
+      "text": "梨子对，露出的细上部和小叶子更像梨子，不是圆苹果。遮住以后要抓住露出的线索。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "graphic-covered-restore/graphic-covered-restore-8"
+      ]
+    },
+    {
+      "id": "game-title-局部找整体",
+      "kind": "game-title",
+      "text": "局部找整体",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-detail-whole"
+      ]
+    },
+    {
+      "id": "game-goal-训练局部找整体-边角特征识别和高混淆选项排除",
+      "kind": "game-goal",
+      "text": "训练局部找整体、边角特征识别和高混淆选项排除。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-detail-whole"
+      ]
+    },
+    {
+      "id": "prompt-放大镜里的局部来自哪一个完整图-先看局部的边-角-耳朵-叶子或尾巴-再去下面找完整图",
+      "kind": "prompt",
+      "text": "放大镜里的局部来自哪一个完整图？先看局部的边、角、耳朵、叶子或尾巴，再去下面找完整图。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-detail-whole/graphic-detail-whole-1",
+        "graphic-detail-whole/graphic-detail-whole-2",
+        "graphic-detail-whole/graphic-detail-whole-3",
+        "graphic-detail-whole/graphic-detail-whole-4",
+        "graphic-detail-whole/graphic-detail-whole-5",
+        "graphic-detail-whole/graphic-detail-whole-6",
+        "graphic-detail-whole/graphic-detail-whole-7",
+        "graphic-detail-whole/graphic-detail-whole-8"
+      ]
+    },
+    {
+      "id": "success-小猫对-放大镜里是短短的尖耳朵-属于小猫-局部线索要回到完整图里找位置",
+      "kind": "success",
+      "text": "小猫对，放大镜里是短短的尖耳朵，属于小猫。局部线索要回到完整图里找位置。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "graphic-detail-whole/graphic-detail-whole-1"
+      ]
+    },
+    {
+      "id": "retry-先说放大镜里的局部是什么-耳朵-尾巴-叶子-尖角还是圆边-再看哪个完整图有同样局部",
+      "kind": "retry",
+      "text": "先说放大镜里的局部是什么：耳朵、尾巴、叶子、尖角还是圆边，再看哪个完整图有同样局部。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "graphic-detail-whole/graphic-detail-whole-1",
+        "graphic-detail-whole/graphic-detail-whole-2",
+        "graphic-detail-whole/graphic-detail-whole-3",
+        "graphic-detail-whole/graphic-detail-whole-4",
+        "graphic-detail-whole/graphic-detail-whole-5",
+        "graphic-detail-whole/graphic-detail-whole-6",
+        "graphic-detail-whole/graphic-detail-whole-7",
+        "graphic-detail-whole/graphic-detail-whole-8"
+      ]
+    },
+    {
+      "id": "parent-问她-这个局部线索在完整图的哪里-为什么其它选项的相似局部不一样",
+      "kind": "parent",
+      "text": "问她：这个局部线索在完整图的哪里？为什么其它选项的相似局部不一样？",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-detail-whole/graphic-detail-whole-1",
+        "graphic-detail-whole/graphic-detail-whole-2",
+        "graphic-detail-whole/graphic-detail-whole-3",
+        "graphic-detail-whole/graphic-detail-whole-4",
+        "graphic-detail-whole/graphic-detail-whole-5",
+        "graphic-detail-whole/graphic-detail-whole-6",
+        "graphic-detail-whole/graphic-detail-whole-7",
+        "graphic-detail-whole/graphic-detail-whole-8"
+      ]
+    },
+    {
+      "id": "success-小鱼对-放大镜里是分开的三角尾巴-属于小鱼-局部线索要回到完整图里找位置",
+      "kind": "success",
+      "text": "小鱼对，放大镜里是分开的三角尾巴，属于小鱼。局部线索要回到完整图里找位置。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "graphic-detail-whole/graphic-detail-whole-2"
+      ]
+    },
+    {
+      "id": "success-苹果对-放大镜里是顶部小叶子和圆边-属于苹果-局部线索要回到完整图里找位置",
+      "kind": "success",
+      "text": "苹果对，放大镜里是顶部小叶子和圆边，属于苹果。局部线索要回到完整图里找位置。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "graphic-detail-whole/graphic-detail-whole-3"
+      ]
+    },
+    {
+      "id": "success-星星对-放大镜里是尖尖星角-属于星星-局部线索要回到完整图里找位置",
+      "kind": "success",
+      "text": "星星对，放大镜里是尖尖星角，属于星星。局部线索要回到完整图里找位置。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "graphic-detail-whole/graphic-detail-whole-4"
+      ]
+    },
+    {
+      "id": "success-花朵对-放大镜里是一片圆圆花瓣-属于花朵-局部线索要回到完整图里找位置",
+      "kind": "success",
+      "text": "花朵对，放大镜里是一片圆圆花瓣，属于花朵。局部线索要回到完整图里找位置。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "graphic-detail-whole/graphic-detail-whole-5"
+      ]
+    },
+    {
+      "id": "success-圆角方块对-放大镜里是直边接圆角-属于圆角方块-局部线索要回到完整图里找位置",
+      "kind": "success",
+      "text": "圆角方块对，放大镜里是直边接圆角，属于圆角方块。局部线索要回到完整图里找位置。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "graphic-detail-whole/graphic-detail-whole-6"
+      ]
+    },
+    {
+      "id": "success-菱形对-放大镜里是两条直边夹出的尖角-属于菱形-局部线索要回到完整图里找位置",
+      "kind": "success",
+      "text": "菱形对，放大镜里是两条直边夹出的尖角，属于菱形。局部线索要回到完整图里找位置。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "graphic-detail-whole/graphic-detail-whole-7"
+      ]
+    },
+    {
+      "id": "success-梨子对-放大镜里是小叶子连着细细的上部-属于梨子-局部线索要回到完整图里找位置",
+      "kind": "success",
+      "text": "梨子对，放大镜里是小叶子连着细细的上部，属于梨子。局部线索要回到完整图里找位置。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "graphic-detail-whole/graphic-detail-whole-8"
+      ]
+    },
+    {
+      "id": "game-title-透明叠叠板",
+      "kind": "game-title",
+      "text": "透明叠叠板",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-layer-overlap"
+      ]
+    },
+    {
+      "id": "game-goal-训练透明叠合-上下层判断和重叠区域观察",
+      "kind": "game-goal",
+      "text": "训练透明叠合、上下层判断和重叠区域观察。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-layer-overlap"
+      ]
+    },
+    {
+      "id": "prompt-两张透明图叠在一起-下面哪张叠合结果和上面一样-先看哪张图在上面-再看重叠的地方谁挡住了谁",
+      "kind": "prompt",
+      "text": "两张透明图叠在一起，下面哪张叠合结果和上面一样？先看哪张图在上面，再看重叠的地方谁挡住了谁。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-layer-overlap/graphic-layer-overlap-1",
+        "graphic-layer-overlap/graphic-layer-overlap-2",
+        "graphic-layer-overlap/graphic-layer-overlap-3",
+        "graphic-layer-overlap/graphic-layer-overlap-4",
+        "graphic-layer-overlap/graphic-layer-overlap-5",
+        "graphic-layer-overlap/graphic-layer-overlap-6",
+        "graphic-layer-overlap/graphic-layer-overlap-7",
+        "graphic-layer-overlap/graphic-layer-overlap-8"
+      ]
+    },
+    {
+      "id": "success-星星在圆形上面对-星星盖住圆形中间-边上还能看到圆弧-透明叠合要看上面和下面的遮挡线索",
+      "kind": "success",
+      "text": "星星在圆形上面对，星星盖住圆形中间，边上还能看到圆弧，透明叠合要看上面和下面的遮挡线索。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "graphic-layer-overlap/graphic-layer-overlap-1"
+      ]
+    },
+    {
+      "id": "retry-先说哪张在上面-再看重叠边线-上面的图会挡住下面的图-不要只看两个图形有没有出现",
+      "kind": "retry",
+      "text": "先说哪张在上面，再看重叠边线：上面的图会挡住下面的图，不要只看两个图形有没有出现。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "graphic-layer-overlap/graphic-layer-overlap-1",
+        "graphic-layer-overlap/graphic-layer-overlap-2",
+        "graphic-layer-overlap/graphic-layer-overlap-3",
+        "graphic-layer-overlap/graphic-layer-overlap-4",
+        "graphic-layer-overlap/graphic-layer-overlap-5",
+        "graphic-layer-overlap/graphic-layer-overlap-6",
+        "graphic-layer-overlap/graphic-layer-overlap-7",
+        "graphic-layer-overlap/graphic-layer-overlap-8"
+      ]
+    },
+    {
+      "id": "parent-请她指一指重叠的地方-说为什么这个是上面-为什么上下反过来的选项不对",
+      "kind": "parent",
+      "text": "请她指一指重叠的地方，说为什么这个是上面，为什么上下反过来的选项不对。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-layer-overlap/graphic-layer-overlap-1",
+        "graphic-layer-overlap/graphic-layer-overlap-2",
+        "graphic-layer-overlap/graphic-layer-overlap-3",
+        "graphic-layer-overlap/graphic-layer-overlap-4",
+        "graphic-layer-overlap/graphic-layer-overlap-5",
+        "graphic-layer-overlap/graphic-layer-overlap-6",
+        "graphic-layer-overlap/graphic-layer-overlap-7",
+        "graphic-layer-overlap/graphic-layer-overlap-8"
+      ]
+    },
+    {
+      "id": "choice-星星在圆形上面",
+      "kind": "choice",
+      "text": "星星在圆形上面",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-layer-overlap/graphic-layer-overlap-1",
+        "graphic-layer-overlap/graphic-layer-overlap-2",
+        "graphic-layer-overlap/graphic-layer-overlap-6"
+      ]
+    },
+    {
+      "id": "choice-圆形在星星上面",
+      "kind": "choice",
+      "text": "圆形在星星上面",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-layer-overlap/graphic-layer-overlap-1",
+        "graphic-layer-overlap/graphic-layer-overlap-2"
+      ]
+    },
+    {
+      "id": "choice-星星在圆形上面-偏右下叠放",
+      "kind": "choice",
+      "text": "星星在圆形上面，偏右下叠放",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-layer-overlap/graphic-layer-overlap-1"
+      ]
+    },
+    {
+      "id": "choice-花朵在圆形上面",
+      "kind": "choice",
+      "text": "花朵在圆形上面",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-layer-overlap/graphic-layer-overlap-1"
+      ]
+    },
+    {
+      "id": "success-圆形在星星上面对-圆形压住星星中心-只露出外面的尖角-透明叠合要看上面和下面的遮挡线索",
+      "kind": "success",
+      "text": "圆形在星星上面对，圆形压住星星中心，只露出外面的尖角，透明叠合要看上面和下面的遮挡线索。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "graphic-layer-overlap/graphic-layer-overlap-2"
+      ]
+    },
+    {
+      "id": "choice-圆形在星星上面-偏右下叠放",
+      "kind": "choice",
+      "text": "圆形在星星上面，偏右下叠放",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-layer-overlap/graphic-layer-overlap-2"
+      ]
+    },
+    {
+      "id": "choice-圆角方块在星星上面",
+      "kind": "choice",
+      "text": "圆角方块在星星上面",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-layer-overlap/graphic-layer-overlap-2"
+      ]
+    },
+    {
+      "id": "success-三角形在圆角方块上面对-三角形的底边挡住方块中间-透明叠合要看上面和下面的遮挡线索",
+      "kind": "success",
+      "text": "三角形在圆角方块上面对，三角形的底边挡住方块中间，透明叠合要看上面和下面的遮挡线索。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "graphic-layer-overlap/graphic-layer-overlap-3"
+      ]
+    },
+    {
+      "id": "choice-三角形在圆角方块上面",
+      "kind": "choice",
+      "text": "三角形在圆角方块上面",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-layer-overlap/graphic-layer-overlap-3",
+        "graphic-layer-overlap/graphic-layer-overlap-4"
+      ]
+    },
+    {
+      "id": "choice-圆角方块在三角形上面",
+      "kind": "choice",
+      "text": "圆角方块在三角形上面",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-layer-overlap/graphic-layer-overlap-3",
+        "graphic-layer-overlap/graphic-layer-overlap-4"
+      ]
+    },
+    {
+      "id": "choice-三角形在圆角方块上面-偏右下叠放",
+      "kind": "choice",
+      "text": "三角形在圆角方块上面，偏右下叠放",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-layer-overlap/graphic-layer-overlap-3"
+      ]
+    },
+    {
+      "id": "choice-星星在圆角方块上面",
+      "kind": "choice",
+      "text": "星星在圆角方块上面",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-layer-overlap/graphic-layer-overlap-3"
+      ]
+    },
+    {
+      "id": "success-圆角方块在三角形上面对-方块压住三角形中心-只露出三个尖角-透明叠合要看上面和下面的遮挡线索",
+      "kind": "success",
+      "text": "圆角方块在三角形上面对，方块压住三角形中心，只露出三个尖角，透明叠合要看上面和下面的遮挡线索。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "graphic-layer-overlap/graphic-layer-overlap-4"
+      ]
+    },
+    {
+      "id": "choice-圆角方块在三角形上面-偏右下叠放",
+      "kind": "choice",
+      "text": "圆角方块在三角形上面，偏右下叠放",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-layer-overlap/graphic-layer-overlap-4"
+      ]
+    },
+    {
+      "id": "choice-星星在三角形上面",
+      "kind": "choice",
+      "text": "星星在三角形上面",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-layer-overlap/graphic-layer-overlap-4"
+      ]
+    },
+    {
+      "id": "success-圆形在菱形上面对-圆形盖住菱形中心-四个尖角还露在外面-透明叠合要看上面和下面的遮挡线索",
+      "kind": "success",
+      "text": "圆形在菱形上面对，圆形盖住菱形中心，四个尖角还露在外面，透明叠合要看上面和下面的遮挡线索。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "graphic-layer-overlap/graphic-layer-overlap-5"
+      ]
+    },
+    {
+      "id": "choice-圆形在菱形上面",
+      "kind": "choice",
+      "text": "圆形在菱形上面",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-layer-overlap/graphic-layer-overlap-5",
+        "graphic-layer-overlap/graphic-layer-overlap-6"
+      ]
+    },
+    {
+      "id": "choice-菱形在圆形上面",
+      "kind": "choice",
+      "text": "菱形在圆形上面",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-layer-overlap/graphic-layer-overlap-5",
+        "graphic-layer-overlap/graphic-layer-overlap-6"
+      ]
+    },
+    {
+      "id": "choice-圆形在菱形上面-偏右下叠放",
+      "kind": "choice",
+      "text": "圆形在菱形上面，偏右下叠放",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-layer-overlap/graphic-layer-overlap-5"
+      ]
+    },
+    {
+      "id": "choice-圆角方块在菱形上面",
+      "kind": "choice",
+      "text": "圆角方块在菱形上面",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-layer-overlap/graphic-layer-overlap-5"
+      ]
+    },
+    {
+      "id": "success-菱形在圆形上面对-菱形边线压在圆形前面-圆弧只在外侧露出-透明叠合要看上面和下面的遮挡线索",
+      "kind": "success",
+      "text": "菱形在圆形上面对，菱形边线压在圆形前面，圆弧只在外侧露出，透明叠合要看上面和下面的遮挡线索。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "graphic-layer-overlap/graphic-layer-overlap-6"
+      ]
+    },
+    {
+      "id": "choice-菱形在圆形上面-偏右下叠放",
+      "kind": "choice",
+      "text": "菱形在圆形上面，偏右下叠放",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-layer-overlap/graphic-layer-overlap-6"
+      ]
+    },
+    {
+      "id": "success-花朵在叶子上面对-圆花瓣盖住叶子中间-只露出叶子尖端-透明叠合要看上面和下面的遮挡线索",
+      "kind": "success",
+      "text": "花朵在叶子上面对，圆花瓣盖住叶子中间，只露出叶子尖端，透明叠合要看上面和下面的遮挡线索。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "graphic-layer-overlap/graphic-layer-overlap-7"
+      ]
+    },
+    {
+      "id": "choice-花朵在叶子上面",
+      "kind": "choice",
+      "text": "花朵在叶子上面",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-layer-overlap/graphic-layer-overlap-7",
+        "graphic-layer-overlap/graphic-layer-overlap-8"
+      ]
+    },
+    {
+      "id": "choice-叶子在花朵上面",
+      "kind": "choice",
+      "text": "叶子在花朵上面",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-layer-overlap/graphic-layer-overlap-7",
+        "graphic-layer-overlap/graphic-layer-overlap-8"
+      ]
+    },
+    {
+      "id": "choice-花朵在叶子上面-偏右下叠放",
+      "kind": "choice",
+      "text": "花朵在叶子上面，偏右下叠放",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-layer-overlap/graphic-layer-overlap-7"
+      ]
+    },
+    {
+      "id": "choice-星星在叶子上面",
+      "kind": "choice",
+      "text": "星星在叶子上面",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-layer-overlap/graphic-layer-overlap-7"
+      ]
+    },
+    {
+      "id": "success-叶子在花朵上面对-叶子的长弧线压在花瓣前面-透明叠合要看上面和下面的遮挡线索",
+      "kind": "success",
+      "text": "叶子在花朵上面对，叶子的长弧线压在花瓣前面，透明叠合要看上面和下面的遮挡线索。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "graphic-layer-overlap/graphic-layer-overlap-8"
+      ]
+    },
+    {
+      "id": "choice-叶子在花朵上面-偏右下叠放",
+      "kind": "choice",
+      "text": "叶子在花朵上面，偏右下叠放",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-layer-overlap/graphic-layer-overlap-8"
+      ]
+    },
+    {
+      "id": "choice-小鱼在花朵上面",
+      "kind": "choice",
+      "text": "小鱼在花朵上面",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-layer-overlap/graphic-layer-overlap-8"
+      ]
+    },
+    {
+      "id": "game-title-图形密码机",
+      "kind": "game-title",
+      "text": "图形密码机",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-code-machine"
+      ]
+    },
+    {
+      "id": "game-goal-训练图形编码-对应映射和近邻干扰排除",
+      "kind": "game-goal",
+      "text": "训练图形编码、对应映射和近邻干扰排除。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-code-machine"
+      ]
+    },
+    {
+      "id": "prompt-看图形密码表-问号这边应该换成哪一个图-一组一组看左边图形对应右边什么-再找到和问号一样的左边图形",
+      "kind": "prompt",
+      "text": "看图形密码表，问号这边应该换成哪一个图？一组一组看左边图形对应右边什么，再找到和问号一样的左边图形。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-code-machine/graphic-code-machine-1",
+        "graphic-code-machine/graphic-code-machine-2",
+        "graphic-code-machine/graphic-code-machine-3",
+        "graphic-code-machine/graphic-code-machine-4",
+        "graphic-code-machine/graphic-code-machine-5",
+        "graphic-code-machine/graphic-code-machine-6",
+        "graphic-code-machine/graphic-code-machine-7",
+        "graphic-code-machine/graphic-code-machine-8"
+      ]
+    },
+    {
+      "id": "success-小猫对应苹果-密码题要按同一行的对应关系找答案",
+      "kind": "success",
+      "text": "小猫对应苹果，密码题要按同一行的对应关系找答案。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "graphic-code-machine/graphic-code-machine-1"
+      ]
+    },
+    {
+      "id": "retry-先在密码表里找到和问号左边一样的图形-再看它右边对应哪个图-不要选隔壁一行",
+      "kind": "retry",
+      "text": "先在密码表里找到和问号左边一样的图形，再看它右边对应哪个图，不要选隔壁一行。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "graphic-code-machine/graphic-code-machine-1",
+        "graphic-code-machine/graphic-code-machine-2",
+        "graphic-code-machine/graphic-code-machine-3",
+        "graphic-code-machine/graphic-code-machine-4",
+        "graphic-code-machine/graphic-code-machine-5",
+        "graphic-code-machine/graphic-code-machine-6",
+        "graphic-code-machine/graphic-code-machine-7",
+        "graphic-code-machine/graphic-code-machine-8"
+      ]
+    },
+    {
+      "id": "parent-问她-问号左边的图在密码表哪一行-这一行右边对应什么-为什么相邻一行不对",
+      "kind": "parent",
+      "text": "问她：问号左边的图在密码表哪一行？这一行右边对应什么？为什么相邻一行不对？",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-code-machine/graphic-code-machine-1",
+        "graphic-code-machine/graphic-code-machine-2",
+        "graphic-code-machine/graphic-code-machine-3",
+        "graphic-code-machine/graphic-code-machine-4",
+        "graphic-code-machine/graphic-code-machine-5",
+        "graphic-code-machine/graphic-code-machine-6",
+        "graphic-code-machine/graphic-code-machine-7",
+        "graphic-code-machine/graphic-code-machine-8"
+      ]
+    },
+    {
+      "id": "success-小鱼对应星星-密码题要按同一行的对应关系找答案",
+      "kind": "success",
+      "text": "小鱼对应星星，密码题要按同一行的对应关系找答案。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "graphic-code-machine/graphic-code-machine-2"
+      ]
+    },
+    {
+      "id": "success-小兔对应叶子-密码题要按同一行的对应关系找答案",
+      "kind": "success",
+      "text": "小兔对应叶子，密码题要按同一行的对应关系找答案。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "graphic-code-machine/graphic-code-machine-3"
+      ]
+    },
+    {
+      "id": "success-小狗对应梨子-密码题要按同一行的对应关系找答案",
+      "kind": "success",
+      "text": "小狗对应梨子，密码题要按同一行的对应关系找答案。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "graphic-code-machine/graphic-code-machine-4"
+      ]
+    },
+    {
+      "id": "success-圆形对应三角形-密码题要按同一行的对应关系找答案",
+      "kind": "success",
+      "text": "圆形对应三角形，密码题要按同一行的对应关系找答案。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "graphic-code-machine/graphic-code-machine-5"
+      ]
+    },
+    {
+      "id": "success-星星对应花朵-密码题要按同一行的对应关系找答案",
+      "kind": "success",
+      "text": "星星对应花朵，密码题要按同一行的对应关系找答案。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "graphic-code-machine/graphic-code-machine-6"
+      ]
+    },
+    {
+      "id": "success-菱形对应圆角方块-密码题要按同一行的对应关系找答案",
+      "kind": "success",
+      "text": "菱形对应圆角方块，密码题要按同一行的对应关系找答案。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "graphic-code-machine/graphic-code-machine-7"
+      ]
+    },
+    {
+      "id": "success-叶子对应小鱼-密码题要按同一行的对应关系找答案",
+      "kind": "success",
+      "text": "叶子对应小鱼，密码题要按同一行的对应关系找答案。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "graphic-code-machine/graphic-code-machine-8"
+      ]
+    },
+    {
+      "id": "game-title-缺口补一补",
+      "kind": "game-title",
+      "text": "缺口补一补",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-gap-close"
+      ]
+    },
+    {
+      "id": "game-goal-训练视觉闭合-缺口方向和边角形状匹配",
+      "kind": "game-goal",
+      "text": "训练视觉闭合、缺口方向和边角形状匹配。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-gap-close"
+      ]
+    },
+    {
+      "id": "prompt-这个轮廓缺了一块-下面哪一个完整图最能补上-先看缺口在哪一边-再看缺口需要圆边-直边-尖角还是尾巴",
+      "kind": "prompt",
+      "text": "这个轮廓缺了一块，下面哪一个完整图最能补上？先看缺口在哪一边，再看缺口需要圆边、直边、尖角还是尾巴。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-gap-close/graphic-gap-close-1",
+        "graphic-gap-close/graphic-gap-close-2",
+        "graphic-gap-close/graphic-gap-close-3",
+        "graphic-gap-close/graphic-gap-close-4",
+        "graphic-gap-close/graphic-gap-close-5",
+        "graphic-gap-close/graphic-gap-close-6",
+        "graphic-gap-close/graphic-gap-close-7",
+        "graphic-gap-close/graphic-gap-close-8"
+      ]
+    },
+    {
+      "id": "success-圆形对-圆形右边缺一段圆弧-补上的也要是圆弧-补缺口要看边-角和缺口方向",
+      "kind": "success",
+      "text": "圆形对，圆形右边缺一段圆弧，补上的也要是圆弧。补缺口要看边、角和缺口方向。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "graphic-gap-close/graphic-gap-close-1"
+      ]
+    },
+    {
+      "id": "retry-先指缺口方向-再说缺口需要圆边-直边-尖角-叶子还是尾巴-然后排除轮廓相近但边角不对的选项",
+      "kind": "retry",
+      "text": "先指缺口方向，再说缺口需要圆边、直边、尖角、叶子还是尾巴，然后排除轮廓相近但边角不对的选项。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "graphic-gap-close/graphic-gap-close-1",
+        "graphic-gap-close/graphic-gap-close-2",
+        "graphic-gap-close/graphic-gap-close-3",
+        "graphic-gap-close/graphic-gap-close-4",
+        "graphic-gap-close/graphic-gap-close-5",
+        "graphic-gap-close/graphic-gap-close-6",
+        "graphic-gap-close/graphic-gap-close-7",
+        "graphic-gap-close/graphic-gap-close-8"
+      ]
+    },
+    {
+      "id": "parent-请她指着缺口说-缺的是哪里-为什么这个图能补上-其他相近图形的边角哪里不一样",
+      "kind": "parent",
+      "text": "请她指着缺口说：缺的是哪里？为什么这个图能补上，其他相近图形的边角哪里不一样？",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-gap-close/graphic-gap-close-1",
+        "graphic-gap-close/graphic-gap-close-2",
+        "graphic-gap-close/graphic-gap-close-3",
+        "graphic-gap-close/graphic-gap-close-4",
+        "graphic-gap-close/graphic-gap-close-5",
+        "graphic-gap-close/graphic-gap-close-6",
+        "graphic-gap-close/graphic-gap-close-7",
+        "graphic-gap-close/graphic-gap-close-8"
+      ]
+    },
+    {
+      "id": "success-圆角方块对-圆角方块上边缺直边接圆角-补缺口要看边-角和缺口方向",
+      "kind": "success",
+      "text": "圆角方块对，圆角方块上边缺直边接圆角。补缺口要看边、角和缺口方向。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "graphic-gap-close/graphic-gap-close-2"
+      ]
+    },
+    {
+      "id": "success-三角形对-三角形底下缺一条直边-补缺口要看边-角和缺口方向",
+      "kind": "success",
+      "text": "三角形对，三角形底下缺一条直边。补缺口要看边、角和缺口方向。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "graphic-gap-close/graphic-gap-close-3"
+      ]
+    },
+    {
+      "id": "success-菱形对-菱形左边缺两条斜边夹尖角-补缺口要看边-角和缺口方向",
+      "kind": "success",
+      "text": "菱形对，菱形左边缺两条斜边夹尖角。补缺口要看边、角和缺口方向。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "graphic-gap-close/graphic-gap-close-4"
+      ]
+    },
+    {
+      "id": "success-星星对-星星右边缺尖角和凹进去的边-补缺口要看边-角和缺口方向",
+      "kind": "success",
+      "text": "星星对，星星右边缺尖角和凹进去的边。补缺口要看边、角和缺口方向。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "graphic-gap-close/graphic-gap-close-5"
+      ]
+    },
+    {
+      "id": "success-花朵对-花朵上方缺圆圆花瓣-补缺口要看边-角和缺口方向",
+      "kind": "success",
+      "text": "花朵对，花朵上方缺圆圆花瓣。补缺口要看边、角和缺口方向。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "graphic-gap-close/graphic-gap-close-6"
+      ]
+    },
+    {
+      "id": "success-苹果对-苹果上方缺叶子和圆鼓鼓的边-补缺口要看边-角和缺口方向",
+      "kind": "success",
+      "text": "苹果对，苹果上方缺叶子和圆鼓鼓的边。补缺口要看边、角和缺口方向。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "graphic-gap-close/graphic-gap-close-7"
+      ]
+    },
+    {
+      "id": "success-小鱼对-小鱼右边缺三角尾巴-补缺口要看边-角和缺口方向",
+      "kind": "success",
+      "text": "小鱼对，小鱼右边缺三角尾巴。补缺口要看边、角和缺口方向。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "graphic-gap-close/graphic-gap-close-8"
+      ]
+    },
+    {
       "id": "system-完成啦-我们再想一想-为什么会这样",
       "kind": "system",
       "text": "完成啦。我们再想一想，为什么会这样？",
       "tone": "friendly, clear, playful",
       "contexts": [
         "game-complete"
-      ]
-    },
-    {
-      "id": "system-小小思考屋",
-      "kind": "system",
-      "text": "小小思考屋",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "app-launch"
       ]
     }
   ]

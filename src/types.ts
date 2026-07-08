@@ -1,4 +1,4 @@
-export type WorldId = "math" | "logic";
+export type WorldId = "math" | "logic" | "graphic";
 
 export type AbilityLevel = "L1" | "L2" | "L3" | "L4" | "L5" | "L6";
 
@@ -34,6 +34,58 @@ export type RoundSceneImage = {
   alt: string;
 };
 
+export type GraphicShapeId =
+  | "apple"
+  | "bear"
+  | "cat"
+  | "circle"
+  | "diamond"
+  | "dog"
+  | "fish"
+  | "flower"
+  | "leaf"
+  | "pear"
+  | "rabbit"
+  | "rounded-square"
+  | "star"
+  | "triangle";
+
+export type GraphicFigure = {
+  shape: GraphicShapeId;
+  color?: string;
+  mode?: "color" | "shadow" | "covered" | "detail" | "outline" | "missing" | "blank";
+  cover?: "left" | "right" | "bottom" | "middle";
+  detail?: "curve" | "ear" | "leaf" | "point" | "tail";
+  gap?: "top" | "right" | "bottom" | "left";
+  x?: number;
+  y?: number;
+  scale?: number;
+  rotate?: number;
+  opacity?: number;
+};
+
+export type GraphicFigureGroup = {
+  label?: string;
+  figures: GraphicFigure[];
+  connector?: "arrow" | "plus" | "overlap" | "gap";
+};
+
+export type GraphicChallengeOption = {
+  value: string;
+  label: string;
+  figure?: GraphicFigure;
+  figures?: GraphicFigure[];
+  nearMiss?: string;
+};
+
+export type RoundGraphicChallenge = {
+  kind: "silhouette-match" | "covered-match" | "detail-match" | "layer-overlap" | "code-match" | "closure-match";
+  stemLabel: string;
+  figures: GraphicFigure[];
+  groups?: GraphicFigureGroup[];
+  options: GraphicChallengeOption[];
+};
+
 export type GameRound = {
   id: string;
   level: AbilityLevel;
@@ -47,6 +99,7 @@ export type GameRound = {
   grid?: RoundGrid;
   matrix?: RoundMatrix;
   memory?: RoundMemory;
+  graphicChallenge?: RoundGraphicChallenge;
   choices: RoundOption[];
   answer: string;
   success: string;

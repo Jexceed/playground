@@ -1,16 +1,14 @@
 {
-  "generatedAt": "2026-07-06T06:49:53.921Z",
-  "provider": "mixed local",
-  "providers": [
-    "edge-tts Python package",
-    "macOS say + afconvert"
-  ],
-  "voice": "Tingting",
-  "rate": 160,
-  "format": "mixed",
-  "sampleRate": 22050,
-  "count": 1662,
-  "requestedCount": 1662,
+  "generatedAt": "2026-07-07T16:58:50.294Z",
+  "provider": "edge-tts Python package",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "rate": "-12%",
+  "pitch": "+2Hz",
+  "includeParent": true,
+  "format": "mp3",
+  "count": 1791,
+  "requestedCount": 1791,
+  "failures": [],
   "entries": [
     {
       "id": "game-title-数一数",
@@ -1840,29 +1838,25 @@
       "id": "prompt-找规律-接下来是什么-先说出重复的一组-再从左到右选空格里的图",
       "kind": "prompt",
       "text": "找规律，接下来是什么？先说出重复的一组，再从左到右选空格里的图。",
-      "provider": "macOS say + afconvert",
-      "src": "/audio/voice/zh-CN/macos-tingting/prompt-%E6%89%BE%E8%A7%84%E5%BE%8B-%E6%8E%A5%E4%B8%8B%E6%9D%A5%E6%98%AF%E4%BB%80%E4%B9%88-%E5%85%88%E8%AF%B4%E5%87%BA%E9%87%8D%E5%A4%8D%E7%9A%84%E4%B8%80%E7%BB%84-%E5%86%8D%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E9%80%89%E7%A9%BA%E6%A0%BC%E9%87%8C%E7%9A%84%E5%9B%BE.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%89%BE%E8%A7%84%E5%BE%8B-%E6%8E%A5%E4%B8%8B%E6%9D%A5%E6%98%AF%E4%BB%80%E4%B9%88-%E5%85%88%E8%AF%B4%E5%87%BA%E9%87%8D%E5%A4%8D%E7%9A%84%E4%B8%80%E7%BB%84-%E5%86%8D%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E9%80%89%E7%A9%BA%E6%A0%BC%E9%87%8C%E7%9A%84%E5%9B%BE.mp3"
     },
     {
       "id": "success-这一组按红色圆片-蓝色圆片重复-补完是红色圆片-蓝色圆片-红色圆片-蓝色圆片-红色圆片-蓝色圆片-所以空格是蓝色圆片",
       "kind": "success",
       "text": "这一组按红色圆片、蓝色圆片重复，补完是红色圆片、蓝色圆片、红色圆片、蓝色圆片、红色圆片、蓝色圆片，所以空格是蓝色圆片。",
-      "provider": "macOS say + afconvert",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-%E8%BF%99%E4%B8%80%E7%BB%84%E6%8C%89%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87%E9%87%8D%E5%A4%8D-%E8%A1%A5%E5%AE%8C%E6%98%AF%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E6%89%80%E4%BB%A5%E7%A9%BA%E6%A0%BC%E6%98%AF%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%BF%99%E4%B8%80%E7%BB%84%E6%8C%89%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87%E9%87%8D%E5%A4%8D-%E8%A1%A5%E5%AE%8C%E6%98%AF%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E6%89%80%E4%BB%A5%E7%A9%BA%E6%A0%BC%E6%98%AF%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87.mp3"
     },
     {
       "id": "retry-先念这一组-红色圆片-蓝色圆片-再从左到右说-红色圆片-蓝色圆片-红色圆片-蓝色圆片-红色圆片-蓝色圆片-空格就是蓝色圆片",
       "kind": "retry",
       "text": "先念这一组：红色圆片、蓝色圆片；再从左到右说：红色圆片、蓝色圆片、红色圆片、蓝色圆片、红色圆片、蓝色圆片，空格就是蓝色圆片。",
-      "provider": "macOS say + afconvert",
-      "src": "/audio/voice/zh-CN/macos-tingting/retry-%E5%85%88%E5%BF%B5%E8%BF%99%E4%B8%80%E7%BB%84-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E5%86%8D%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E8%AF%B4-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E7%A9%BA%E6%A0%BC%E5%B0%B1%E6%98%AF%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E5%BF%B5%E8%BF%99%E4%B8%80%E7%BB%84-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E5%86%8D%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E8%AF%B4-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E7%A9%BA%E6%A0%BC%E5%B0%B1%E6%98%AF%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87.mp3"
     },
     {
       "id": "parent-请她指着重复的一组红色圆片-蓝色圆片-复述红色圆片-蓝色圆片-红色圆片-蓝色圆片-红色圆片-蓝色圆片-说为什么空格是蓝色圆片",
       "kind": "parent",
       "text": "请她指着重复的一组红色圆片、蓝色圆片，复述红色圆片、蓝色圆片、红色圆片、蓝色圆片、红色圆片、蓝色圆片，说为什么空格是蓝色圆片。",
-      "provider": "macOS say + afconvert",
-      "src": "/audio/voice/zh-CN/macos-tingting/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E9%87%8D%E5%A4%8D%E7%9A%84%E4%B8%80%E7%BB%84%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E5%A4%8D%E8%BF%B0%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%A9%BA%E6%A0%BC%E6%98%AF%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E9%87%8D%E5%A4%8D%E7%9A%84%E4%B8%80%E7%BB%84%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E5%A4%8D%E8%BF%B0%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%A9%BA%E6%A0%BC%E6%98%AF%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87.mp3"
     },
     {
       "id": "choice-蓝色圆片",
@@ -1898,50 +1892,43 @@
       "id": "prompt-找规律-空格里是什么-先说出重复的一组-再从左到右选空格里的图",
       "kind": "prompt",
       "text": "找规律，空格里是什么？先说出重复的一组，再从左到右选空格里的图。",
-      "provider": "macOS say + afconvert",
-      "src": "/audio/voice/zh-CN/macos-tingting/prompt-%E6%89%BE%E8%A7%84%E5%BE%8B-%E7%A9%BA%E6%A0%BC%E9%87%8C%E6%98%AF%E4%BB%80%E4%B9%88-%E5%85%88%E8%AF%B4%E5%87%BA%E9%87%8D%E5%A4%8D%E7%9A%84%E4%B8%80%E7%BB%84-%E5%86%8D%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E9%80%89%E7%A9%BA%E6%A0%BC%E9%87%8C%E7%9A%84%E5%9B%BE.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%89%BE%E8%A7%84%E5%BE%8B-%E7%A9%BA%E6%A0%BC%E9%87%8C%E6%98%AF%E4%BB%80%E4%B9%88-%E5%85%88%E8%AF%B4%E5%87%BA%E9%87%8D%E5%A4%8D%E7%9A%84%E4%B8%80%E7%BB%84-%E5%86%8D%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E9%80%89%E7%A9%BA%E6%A0%BC%E9%87%8C%E7%9A%84%E5%9B%BE.mp3"
     },
     {
       "id": "success-这一组按红色圆片-蓝色圆片重复-补完是红色圆片-蓝色圆片-红色圆片-蓝色圆片-红色圆片-蓝色圆片-所以空格是红色圆片",
       "kind": "success",
       "text": "这一组按红色圆片、蓝色圆片重复，补完是红色圆片、蓝色圆片、红色圆片、蓝色圆片、红色圆片、蓝色圆片，所以空格是红色圆片。",
-      "provider": "macOS say + afconvert",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-%E8%BF%99%E4%B8%80%E7%BB%84%E6%8C%89%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87%E9%87%8D%E5%A4%8D-%E8%A1%A5%E5%AE%8C%E6%98%AF%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E6%89%80%E4%BB%A5%E7%A9%BA%E6%A0%BC%E6%98%AF%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%BF%99%E4%B8%80%E7%BB%84%E6%8C%89%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87%E9%87%8D%E5%A4%8D-%E8%A1%A5%E5%AE%8C%E6%98%AF%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E6%89%80%E4%BB%A5%E7%A9%BA%E6%A0%BC%E6%98%AF%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87.mp3"
     },
     {
       "id": "retry-先念这一组-红色圆片-蓝色圆片-再从左到右说-红色圆片-蓝色圆片-红色圆片-蓝色圆片-红色圆片-蓝色圆片-空格就是红色圆片",
       "kind": "retry",
       "text": "先念这一组：红色圆片、蓝色圆片；再从左到右说：红色圆片、蓝色圆片、红色圆片、蓝色圆片、红色圆片、蓝色圆片，空格就是红色圆片。",
-      "provider": "macOS say + afconvert",
-      "src": "/audio/voice/zh-CN/macos-tingting/retry-%E5%85%88%E5%BF%B5%E8%BF%99%E4%B8%80%E7%BB%84-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E5%86%8D%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E8%AF%B4-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E7%A9%BA%E6%A0%BC%E5%B0%B1%E6%98%AF%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E5%BF%B5%E8%BF%99%E4%B8%80%E7%BB%84-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E5%86%8D%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E8%AF%B4-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E7%A9%BA%E6%A0%BC%E5%B0%B1%E6%98%AF%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87.mp3"
     },
     {
       "id": "parent-请她指着重复的一组红色圆片-蓝色圆片-复述红色圆片-蓝色圆片-红色圆片-蓝色圆片-红色圆片-蓝色圆片-说为什么空格是红色圆片",
       "kind": "parent",
       "text": "请她指着重复的一组红色圆片、蓝色圆片，复述红色圆片、蓝色圆片、红色圆片、蓝色圆片、红色圆片、蓝色圆片，说为什么空格是红色圆片。",
-      "provider": "macOS say + afconvert",
-      "src": "/audio/voice/zh-CN/macos-tingting/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E9%87%8D%E5%A4%8D%E7%9A%84%E4%B8%80%E7%BB%84%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E5%A4%8D%E8%BF%B0%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%A9%BA%E6%A0%BC%E6%98%AF%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E9%87%8D%E5%A4%8D%E7%9A%84%E4%B8%80%E7%BB%84%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E5%A4%8D%E8%BF%B0%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%A9%BA%E6%A0%BC%E6%98%AF%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87.mp3"
     },
     {
       "id": "success-这一组按黄色圆片-绿色圆片重复-补完是黄色圆片-绿色圆片-黄色圆片-绿色圆片-黄色圆片-绿色圆片-所以空格是绿色圆片",
       "kind": "success",
       "text": "这一组按黄色圆片、绿色圆片重复，补完是黄色圆片、绿色圆片、黄色圆片、绿色圆片、黄色圆片、绿色圆片，所以空格是绿色圆片。",
-      "provider": "macOS say + afconvert",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-%E8%BF%99%E4%B8%80%E7%BB%84%E6%8C%89%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87%E9%87%8D%E5%A4%8D-%E8%A1%A5%E5%AE%8C%E6%98%AF%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E6%89%80%E4%BB%A5%E7%A9%BA%E6%A0%BC%E6%98%AF%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%BF%99%E4%B8%80%E7%BB%84%E6%8C%89%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87%E9%87%8D%E5%A4%8D-%E8%A1%A5%E5%AE%8C%E6%98%AF%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E6%89%80%E4%BB%A5%E7%A9%BA%E6%A0%BC%E6%98%AF%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87.mp3"
     },
     {
       "id": "retry-先念这一组-黄色圆片-绿色圆片-再从左到右说-黄色圆片-绿色圆片-黄色圆片-绿色圆片-黄色圆片-绿色圆片-空格就是绿色圆片",
       "kind": "retry",
       "text": "先念这一组：黄色圆片、绿色圆片；再从左到右说：黄色圆片、绿色圆片、黄色圆片、绿色圆片、黄色圆片、绿色圆片，空格就是绿色圆片。",
-      "provider": "macOS say + afconvert",
-      "src": "/audio/voice/zh-CN/macos-tingting/retry-%E5%85%88%E5%BF%B5%E8%BF%99%E4%B8%80%E7%BB%84-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E5%86%8D%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E8%AF%B4-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E7%A9%BA%E6%A0%BC%E5%B0%B1%E6%98%AF%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E5%BF%B5%E8%BF%99%E4%B8%80%E7%BB%84-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E5%86%8D%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E8%AF%B4-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E7%A9%BA%E6%A0%BC%E5%B0%B1%E6%98%AF%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87.mp3"
     },
     {
       "id": "parent-请她指着重复的一组黄色圆片-绿色圆片-复述黄色圆片-绿色圆片-黄色圆片-绿色圆片-黄色圆片-绿色圆片-说为什么空格是绿色圆片",
       "kind": "parent",
       "text": "请她指着重复的一组黄色圆片、绿色圆片，复述黄色圆片、绿色圆片、黄色圆片、绿色圆片、黄色圆片、绿色圆片，说为什么空格是绿色圆片。",
-      "provider": "macOS say + afconvert",
-      "src": "/audio/voice/zh-CN/macos-tingting/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E9%87%8D%E5%A4%8D%E7%9A%84%E4%B8%80%E7%BB%84%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E5%A4%8D%E8%BF%B0%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%A9%BA%E6%A0%BC%E6%98%AF%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E9%87%8D%E5%A4%8D%E7%9A%84%E4%B8%80%E7%BB%84%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E5%A4%8D%E8%BF%B0%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%A9%BA%E6%A0%BC%E6%98%AF%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87.mp3"
     },
     {
       "id": "choice-绿色圆片",
@@ -1953,43 +1940,37 @@
       "id": "success-这一组按黄色圆片-绿色圆片重复-补完是黄色圆片-绿色圆片-黄色圆片-绿色圆片-黄色圆片-绿色圆片-所以空格是黄色圆片",
       "kind": "success",
       "text": "这一组按黄色圆片、绿色圆片重复，补完是黄色圆片、绿色圆片、黄色圆片、绿色圆片、黄色圆片、绿色圆片，所以空格是黄色圆片。",
-      "provider": "macOS say + afconvert",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-%E8%BF%99%E4%B8%80%E7%BB%84%E6%8C%89%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87%E9%87%8D%E5%A4%8D-%E8%A1%A5%E5%AE%8C%E6%98%AF%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E6%89%80%E4%BB%A5%E7%A9%BA%E6%A0%BC%E6%98%AF%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%BF%99%E4%B8%80%E7%BB%84%E6%8C%89%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87%E9%87%8D%E5%A4%8D-%E8%A1%A5%E5%AE%8C%E6%98%AF%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E6%89%80%E4%BB%A5%E7%A9%BA%E6%A0%BC%E6%98%AF%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87.mp3"
     },
     {
       "id": "retry-先念这一组-黄色圆片-绿色圆片-再从左到右说-黄色圆片-绿色圆片-黄色圆片-绿色圆片-黄色圆片-绿色圆片-空格就是黄色圆片",
       "kind": "retry",
       "text": "先念这一组：黄色圆片、绿色圆片；再从左到右说：黄色圆片、绿色圆片、黄色圆片、绿色圆片、黄色圆片、绿色圆片，空格就是黄色圆片。",
-      "provider": "macOS say + afconvert",
-      "src": "/audio/voice/zh-CN/macos-tingting/retry-%E5%85%88%E5%BF%B5%E8%BF%99%E4%B8%80%E7%BB%84-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E5%86%8D%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E8%AF%B4-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E7%A9%BA%E6%A0%BC%E5%B0%B1%E6%98%AF%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E5%BF%B5%E8%BF%99%E4%B8%80%E7%BB%84-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E5%86%8D%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E8%AF%B4-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E7%A9%BA%E6%A0%BC%E5%B0%B1%E6%98%AF%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87.mp3"
     },
     {
       "id": "parent-请她指着重复的一组黄色圆片-绿色圆片-复述黄色圆片-绿色圆片-黄色圆片-绿色圆片-黄色圆片-绿色圆片-说为什么空格是黄色圆片",
       "kind": "parent",
       "text": "请她指着重复的一组黄色圆片、绿色圆片，复述黄色圆片、绿色圆片、黄色圆片、绿色圆片、黄色圆片、绿色圆片，说为什么空格是黄色圆片。",
-      "provider": "macOS say + afconvert",
-      "src": "/audio/voice/zh-CN/macos-tingting/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E9%87%8D%E5%A4%8D%E7%9A%84%E4%B8%80%E7%BB%84%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E5%A4%8D%E8%BF%B0%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%A9%BA%E6%A0%BC%E6%98%AF%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E9%87%8D%E5%A4%8D%E7%9A%84%E4%B8%80%E7%BB%84%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E5%A4%8D%E8%BF%B0%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%A9%BA%E6%A0%BC%E6%98%AF%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87.mp3"
     },
     {
       "id": "success-这一组按太阳-月亮重复-补完是太阳-月亮-太阳-月亮-太阳-月亮-所以空格是月亮",
       "kind": "success",
       "text": "这一组按太阳、月亮重复，补完是太阳、月亮、太阳、月亮、太阳、月亮，所以空格是月亮。",
-      "provider": "macOS say + afconvert",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-%E8%BF%99%E4%B8%80%E7%BB%84%E6%8C%89%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE%E9%87%8D%E5%A4%8D-%E8%A1%A5%E5%AE%8C%E6%98%AF%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%89%80%E4%BB%A5%E7%A9%BA%E6%A0%BC%E6%98%AF%E6%9C%88%E4%BA%AE.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%BF%99%E4%B8%80%E7%BB%84%E6%8C%89%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE%E9%87%8D%E5%A4%8D-%E8%A1%A5%E5%AE%8C%E6%98%AF%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%89%80%E4%BB%A5%E7%A9%BA%E6%A0%BC%E6%98%AF%E6%9C%88%E4%BA%AE.mp3"
     },
     {
       "id": "retry-先念这一组-太阳-月亮-再从左到右说-太阳-月亮-太阳-月亮-太阳-月亮-空格就是月亮",
       "kind": "retry",
       "text": "先念这一组：太阳、月亮；再从左到右说：太阳、月亮、太阳、月亮、太阳、月亮，空格就是月亮。",
-      "provider": "macOS say + afconvert",
-      "src": "/audio/voice/zh-CN/macos-tingting/retry-%E5%85%88%E5%BF%B5%E8%BF%99%E4%B8%80%E7%BB%84-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E5%86%8D%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E8%AF%B4-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E7%A9%BA%E6%A0%BC%E5%B0%B1%E6%98%AF%E6%9C%88%E4%BA%AE.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E5%BF%B5%E8%BF%99%E4%B8%80%E7%BB%84-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E5%86%8D%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E8%AF%B4-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E7%A9%BA%E6%A0%BC%E5%B0%B1%E6%98%AF%E6%9C%88%E4%BA%AE.mp3"
     },
     {
       "id": "parent-请她指着重复的一组太阳-月亮-复述太阳-月亮-太阳-月亮-太阳-月亮-说为什么空格是月亮",
       "kind": "parent",
       "text": "请她指着重复的一组太阳、月亮，复述太阳、月亮、太阳、月亮、太阳、月亮，说为什么空格是月亮。",
-      "provider": "macOS say + afconvert",
-      "src": "/audio/voice/zh-CN/macos-tingting/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E9%87%8D%E5%A4%8D%E7%9A%84%E4%B8%80%E7%BB%84%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E5%A4%8D%E8%BF%B0%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%A9%BA%E6%A0%BC%E6%98%AF%E6%9C%88%E4%BA%AE.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E9%87%8D%E5%A4%8D%E7%9A%84%E4%B8%80%E7%BB%84%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E5%A4%8D%E8%BF%B0%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%A9%BA%E6%A0%BC%E6%98%AF%E6%9C%88%E4%BA%AE.mp3"
     },
     {
       "id": "choice-月亮",
@@ -2025,43 +2006,37 @@
       "id": "success-这一组按太阳-月亮重复-补完是太阳-月亮-太阳-月亮-太阳-月亮-所以空格是太阳",
       "kind": "success",
       "text": "这一组按太阳、月亮重复，补完是太阳、月亮、太阳、月亮、太阳、月亮，所以空格是太阳。",
-      "provider": "macOS say + afconvert",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-%E8%BF%99%E4%B8%80%E7%BB%84%E6%8C%89%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE%E9%87%8D%E5%A4%8D-%E8%A1%A5%E5%AE%8C%E6%98%AF%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%89%80%E4%BB%A5%E7%A9%BA%E6%A0%BC%E6%98%AF%E5%A4%AA%E9%98%B3.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%BF%99%E4%B8%80%E7%BB%84%E6%8C%89%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE%E9%87%8D%E5%A4%8D-%E8%A1%A5%E5%AE%8C%E6%98%AF%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%89%80%E4%BB%A5%E7%A9%BA%E6%A0%BC%E6%98%AF%E5%A4%AA%E9%98%B3.mp3"
     },
     {
       "id": "retry-先念这一组-太阳-月亮-再从左到右说-太阳-月亮-太阳-月亮-太阳-月亮-空格就是太阳",
       "kind": "retry",
       "text": "先念这一组：太阳、月亮；再从左到右说：太阳、月亮、太阳、月亮、太阳、月亮，空格就是太阳。",
-      "provider": "macOS say + afconvert",
-      "src": "/audio/voice/zh-CN/macos-tingting/retry-%E5%85%88%E5%BF%B5%E8%BF%99%E4%B8%80%E7%BB%84-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E5%86%8D%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E8%AF%B4-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E7%A9%BA%E6%A0%BC%E5%B0%B1%E6%98%AF%E5%A4%AA%E9%98%B3.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E5%BF%B5%E8%BF%99%E4%B8%80%E7%BB%84-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E5%86%8D%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E8%AF%B4-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E7%A9%BA%E6%A0%BC%E5%B0%B1%E6%98%AF%E5%A4%AA%E9%98%B3.mp3"
     },
     {
       "id": "parent-请她指着重复的一组太阳-月亮-复述太阳-月亮-太阳-月亮-太阳-月亮-说为什么空格是太阳",
       "kind": "parent",
       "text": "请她指着重复的一组太阳、月亮，复述太阳、月亮、太阳、月亮、太阳、月亮，说为什么空格是太阳。",
-      "provider": "macOS say + afconvert",
-      "src": "/audio/voice/zh-CN/macos-tingting/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E9%87%8D%E5%A4%8D%E7%9A%84%E4%B8%80%E7%BB%84%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E5%A4%8D%E8%BF%B0%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%A9%BA%E6%A0%BC%E6%98%AF%E5%A4%AA%E9%98%B3.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E9%87%8D%E5%A4%8D%E7%9A%84%E4%B8%80%E7%BB%84%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E5%A4%8D%E8%BF%B0%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%A9%BA%E6%A0%BC%E6%98%AF%E5%A4%AA%E9%98%B3.mp3"
     },
     {
       "id": "success-这一组按大圆-小圆-小圆重复-补完是大圆-小圆-小圆-大圆-小圆-小圆-所以空格是小圆",
       "kind": "success",
       "text": "这一组按大圆、小圆、小圆重复，补完是大圆、小圆、小圆、大圆、小圆、小圆，所以空格是小圆。",
-      "provider": "macOS say + afconvert",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-%E8%BF%99%E4%B8%80%E7%BB%84%E6%8C%89%E5%A4%A7%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%B0%8F%E5%9C%86%E9%87%8D%E5%A4%8D-%E8%A1%A5%E5%AE%8C%E6%98%AF%E5%A4%A7%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%A4%A7%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%B0%8F%E5%9C%86-%E6%89%80%E4%BB%A5%E7%A9%BA%E6%A0%BC%E6%98%AF%E5%B0%8F%E5%9C%86.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%BF%99%E4%B8%80%E7%BB%84%E6%8C%89%E5%A4%A7%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%B0%8F%E5%9C%86%E9%87%8D%E5%A4%8D-%E8%A1%A5%E5%AE%8C%E6%98%AF%E5%A4%A7%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%A4%A7%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%B0%8F%E5%9C%86-%E6%89%80%E4%BB%A5%E7%A9%BA%E6%A0%BC%E6%98%AF%E5%B0%8F%E5%9C%86.mp3"
     },
     {
       "id": "retry-先念这一组-大圆-小圆-小圆-再从左到右说-大圆-小圆-小圆-大圆-小圆-小圆-空格就是小圆",
       "kind": "retry",
       "text": "先念这一组：大圆、小圆、小圆；再从左到右说：大圆、小圆、小圆、大圆、小圆、小圆，空格就是小圆。",
-      "provider": "macOS say + afconvert",
-      "src": "/audio/voice/zh-CN/macos-tingting/retry-%E5%85%88%E5%BF%B5%E8%BF%99%E4%B8%80%E7%BB%84-%E5%A4%A7%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%86%8D%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E8%AF%B4-%E5%A4%A7%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%A4%A7%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%B0%8F%E5%9C%86-%E7%A9%BA%E6%A0%BC%E5%B0%B1%E6%98%AF%E5%B0%8F%E5%9C%86.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E5%BF%B5%E8%BF%99%E4%B8%80%E7%BB%84-%E5%A4%A7%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%86%8D%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E8%AF%B4-%E5%A4%A7%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%A4%A7%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%B0%8F%E5%9C%86-%E7%A9%BA%E6%A0%BC%E5%B0%B1%E6%98%AF%E5%B0%8F%E5%9C%86.mp3"
     },
     {
       "id": "parent-请她指着重复的一组大圆-小圆-小圆-复述大圆-小圆-小圆-大圆-小圆-小圆-说为什么空格是小圆",
       "kind": "parent",
       "text": "请她指着重复的一组大圆、小圆、小圆，复述大圆、小圆、小圆、大圆、小圆、小圆，说为什么空格是小圆。",
-      "provider": "macOS say + afconvert",
-      "src": "/audio/voice/zh-CN/macos-tingting/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E9%87%8D%E5%A4%8D%E7%9A%84%E4%B8%80%E7%BB%84%E5%A4%A7%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%A4%8D%E8%BF%B0%E5%A4%A7%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%A4%A7%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%B0%8F%E5%9C%86-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%A9%BA%E6%A0%BC%E6%98%AF%E5%B0%8F%E5%9C%86.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E9%87%8D%E5%A4%8D%E7%9A%84%E4%B8%80%E7%BB%84%E5%A4%A7%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%A4%8D%E8%BF%B0%E5%A4%A7%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%A4%A7%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%B0%8F%E5%9C%86-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%A9%BA%E6%A0%BC%E6%98%AF%E5%B0%8F%E5%9C%86.mp3"
     },
     {
       "id": "choice-小圆",
@@ -2079,8 +2054,7 @@
       "id": "choice-中圆",
       "kind": "choice",
       "text": "中圆",
-      "provider": "macOS say + afconvert",
-      "src": "/audio/voice/zh-CN/macos-tingting/choice-%E4%B8%AD%E5%9C%86.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E4%B8%AD%E5%9C%86.mp3"
     },
     {
       "id": "object-大圆",
@@ -2098,85 +2072,73 @@
       "id": "success-这一组按大圆-小圆-小圆重复-补完是大圆-小圆-小圆-大圆-小圆-小圆-所以空格是大圆",
       "kind": "success",
       "text": "这一组按大圆、小圆、小圆重复，补完是大圆、小圆、小圆、大圆、小圆、小圆，所以空格是大圆。",
-      "provider": "macOS say + afconvert",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-%E8%BF%99%E4%B8%80%E7%BB%84%E6%8C%89%E5%A4%A7%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%B0%8F%E5%9C%86%E9%87%8D%E5%A4%8D-%E8%A1%A5%E5%AE%8C%E6%98%AF%E5%A4%A7%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%A4%A7%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%B0%8F%E5%9C%86-%E6%89%80%E4%BB%A5%E7%A9%BA%E6%A0%BC%E6%98%AF%E5%A4%A7%E5%9C%86.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%BF%99%E4%B8%80%E7%BB%84%E6%8C%89%E5%A4%A7%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%B0%8F%E5%9C%86%E9%87%8D%E5%A4%8D-%E8%A1%A5%E5%AE%8C%E6%98%AF%E5%A4%A7%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%A4%A7%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%B0%8F%E5%9C%86-%E6%89%80%E4%BB%A5%E7%A9%BA%E6%A0%BC%E6%98%AF%E5%A4%A7%E5%9C%86.mp3"
     },
     {
       "id": "retry-先念这一组-大圆-小圆-小圆-再从左到右说-大圆-小圆-小圆-大圆-小圆-小圆-空格就是大圆",
       "kind": "retry",
       "text": "先念这一组：大圆、小圆、小圆；再从左到右说：大圆、小圆、小圆、大圆、小圆、小圆，空格就是大圆。",
-      "provider": "macOS say + afconvert",
-      "src": "/audio/voice/zh-CN/macos-tingting/retry-%E5%85%88%E5%BF%B5%E8%BF%99%E4%B8%80%E7%BB%84-%E5%A4%A7%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%86%8D%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E8%AF%B4-%E5%A4%A7%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%A4%A7%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%B0%8F%E5%9C%86-%E7%A9%BA%E6%A0%BC%E5%B0%B1%E6%98%AF%E5%A4%A7%E5%9C%86.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E5%BF%B5%E8%BF%99%E4%B8%80%E7%BB%84-%E5%A4%A7%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%86%8D%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E8%AF%B4-%E5%A4%A7%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%A4%A7%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%B0%8F%E5%9C%86-%E7%A9%BA%E6%A0%BC%E5%B0%B1%E6%98%AF%E5%A4%A7%E5%9C%86.mp3"
     },
     {
       "id": "parent-请她指着重复的一组大圆-小圆-小圆-复述大圆-小圆-小圆-大圆-小圆-小圆-说为什么空格是大圆",
       "kind": "parent",
       "text": "请她指着重复的一组大圆、小圆、小圆，复述大圆、小圆、小圆、大圆、小圆、小圆，说为什么空格是大圆。",
-      "provider": "macOS say + afconvert",
-      "src": "/audio/voice/zh-CN/macos-tingting/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E9%87%8D%E5%A4%8D%E7%9A%84%E4%B8%80%E7%BB%84%E5%A4%A7%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%A4%8D%E8%BF%B0%E5%A4%A7%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%A4%A7%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%B0%8F%E5%9C%86-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%A9%BA%E6%A0%BC%E6%98%AF%E5%A4%A7%E5%9C%86.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E9%87%8D%E5%A4%8D%E7%9A%84%E4%B8%80%E7%BB%84%E5%A4%A7%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%A4%8D%E8%BF%B0%E5%A4%A7%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%A4%A7%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%B0%8F%E5%9C%86-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%A9%BA%E6%A0%BC%E6%98%AF%E5%A4%A7%E5%9C%86.mp3"
     },
     {
       "id": "success-这一组按太阳-月亮-星星重复-补完是太阳-月亮-星星-太阳-月亮-星星-所以空格是星星",
       "kind": "success",
       "text": "这一组按太阳、月亮、星星重复，补完是太阳、月亮、星星、太阳、月亮、星星，所以空格是星星。",
-      "provider": "macOS say + afconvert",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-%E8%BF%99%E4%B8%80%E7%BB%84%E6%8C%89%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F%E9%87%8D%E5%A4%8D-%E8%A1%A5%E5%AE%8C%E6%98%AF%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F-%E6%89%80%E4%BB%A5%E7%A9%BA%E6%A0%BC%E6%98%AF%E6%98%9F%E6%98%9F.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%BF%99%E4%B8%80%E7%BB%84%E6%8C%89%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F%E9%87%8D%E5%A4%8D-%E8%A1%A5%E5%AE%8C%E6%98%AF%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F-%E6%89%80%E4%BB%A5%E7%A9%BA%E6%A0%BC%E6%98%AF%E6%98%9F%E6%98%9F.mp3"
     },
     {
       "id": "retry-先念这一组-太阳-月亮-星星-再从左到右说-太阳-月亮-星星-太阳-月亮-星星-空格就是星星",
       "kind": "retry",
       "text": "先念这一组：太阳、月亮、星星；再从左到右说：太阳、月亮、星星、太阳、月亮、星星，空格就是星星。",
-      "provider": "macOS say + afconvert",
-      "src": "/audio/voice/zh-CN/macos-tingting/retry-%E5%85%88%E5%BF%B5%E8%BF%99%E4%B8%80%E7%BB%84-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F-%E5%86%8D%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E8%AF%B4-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F-%E7%A9%BA%E6%A0%BC%E5%B0%B1%E6%98%AF%E6%98%9F%E6%98%9F.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E5%BF%B5%E8%BF%99%E4%B8%80%E7%BB%84-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F-%E5%86%8D%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E8%AF%B4-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F-%E7%A9%BA%E6%A0%BC%E5%B0%B1%E6%98%AF%E6%98%9F%E6%98%9F.mp3"
     },
     {
       "id": "parent-请她指着重复的一组太阳-月亮-星星-复述太阳-月亮-星星-太阳-月亮-星星-说为什么空格是星星",
       "kind": "parent",
       "text": "请她指着重复的一组太阳、月亮、星星，复述太阳、月亮、星星、太阳、月亮、星星，说为什么空格是星星。",
-      "provider": "macOS say + afconvert",
-      "src": "/audio/voice/zh-CN/macos-tingting/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E9%87%8D%E5%A4%8D%E7%9A%84%E4%B8%80%E7%BB%84%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F-%E5%A4%8D%E8%BF%B0%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%A9%BA%E6%A0%BC%E6%98%AF%E6%98%9F%E6%98%9F.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E9%87%8D%E5%A4%8D%E7%9A%84%E4%B8%80%E7%BB%84%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F-%E5%A4%8D%E8%BF%B0%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%A9%BA%E6%A0%BC%E6%98%AF%E6%98%9F%E6%98%9F.mp3"
     },
     {
       "id": "success-这一组按太阳-月亮-星星重复-补完是太阳-月亮-星星-太阳-月亮-星星-所以空格是太阳",
       "kind": "success",
       "text": "这一组按太阳、月亮、星星重复，补完是太阳、月亮、星星、太阳、月亮、星星，所以空格是太阳。",
-      "provider": "macOS say + afconvert",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-%E8%BF%99%E4%B8%80%E7%BB%84%E6%8C%89%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F%E9%87%8D%E5%A4%8D-%E8%A1%A5%E5%AE%8C%E6%98%AF%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F-%E6%89%80%E4%BB%A5%E7%A9%BA%E6%A0%BC%E6%98%AF%E5%A4%AA%E9%98%B3.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%BF%99%E4%B8%80%E7%BB%84%E6%8C%89%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F%E9%87%8D%E5%A4%8D-%E8%A1%A5%E5%AE%8C%E6%98%AF%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F-%E6%89%80%E4%BB%A5%E7%A9%BA%E6%A0%BC%E6%98%AF%E5%A4%AA%E9%98%B3.mp3"
     },
     {
       "id": "retry-先念这一组-太阳-月亮-星星-再从左到右说-太阳-月亮-星星-太阳-月亮-星星-空格就是太阳",
       "kind": "retry",
       "text": "先念这一组：太阳、月亮、星星；再从左到右说：太阳、月亮、星星、太阳、月亮、星星，空格就是太阳。",
-      "provider": "macOS say + afconvert",
-      "src": "/audio/voice/zh-CN/macos-tingting/retry-%E5%85%88%E5%BF%B5%E8%BF%99%E4%B8%80%E7%BB%84-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F-%E5%86%8D%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E8%AF%B4-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F-%E7%A9%BA%E6%A0%BC%E5%B0%B1%E6%98%AF%E5%A4%AA%E9%98%B3.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E5%BF%B5%E8%BF%99%E4%B8%80%E7%BB%84-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F-%E5%86%8D%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E8%AF%B4-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F-%E7%A9%BA%E6%A0%BC%E5%B0%B1%E6%98%AF%E5%A4%AA%E9%98%B3.mp3"
     },
     {
       "id": "parent-请她指着重复的一组太阳-月亮-星星-复述太阳-月亮-星星-太阳-月亮-星星-说为什么空格是太阳",
       "kind": "parent",
       "text": "请她指着重复的一组太阳、月亮、星星，复述太阳、月亮、星星、太阳、月亮、星星，说为什么空格是太阳。",
-      "provider": "macOS say + afconvert",
-      "src": "/audio/voice/zh-CN/macos-tingting/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E9%87%8D%E5%A4%8D%E7%9A%84%E4%B8%80%E7%BB%84%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F-%E5%A4%8D%E8%BF%B0%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%A9%BA%E6%A0%BC%E6%98%AF%E5%A4%AA%E9%98%B3.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E9%87%8D%E5%A4%8D%E7%9A%84%E4%B8%80%E7%BB%84%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F-%E5%A4%8D%E8%BF%B0%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F-%E5%A4%AA%E9%98%B3-%E6%9C%88%E4%BA%AE-%E6%98%9F%E6%98%9F-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%A9%BA%E6%A0%BC%E6%98%AF%E5%A4%AA%E9%98%B3.mp3"
     },
     {
       "id": "success-这一组按草莓-饼干-草莓重复-补完是草莓-饼干-草莓-草莓-饼干-草莓-所以空格是草莓",
       "kind": "success",
       "text": "这一组按草莓、饼干、草莓重复，补完是草莓、饼干、草莓、草莓、饼干、草莓，所以空格是草莓。",
-      "provider": "macOS say + afconvert",
-      "src": "/audio/voice/zh-CN/macos-tingting/success-%E8%BF%99%E4%B8%80%E7%BB%84%E6%8C%89%E8%8D%89%E8%8E%93-%E9%A5%BC%E5%B9%B2-%E8%8D%89%E8%8E%93%E9%87%8D%E5%A4%8D-%E8%A1%A5%E5%AE%8C%E6%98%AF%E8%8D%89%E8%8E%93-%E9%A5%BC%E5%B9%B2-%E8%8D%89%E8%8E%93-%E8%8D%89%E8%8E%93-%E9%A5%BC%E5%B9%B2-%E8%8D%89%E8%8E%93-%E6%89%80%E4%BB%A5%E7%A9%BA%E6%A0%BC%E6%98%AF%E8%8D%89%E8%8E%93.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%BF%99%E4%B8%80%E7%BB%84%E6%8C%89%E8%8D%89%E8%8E%93-%E9%A5%BC%E5%B9%B2-%E8%8D%89%E8%8E%93%E9%87%8D%E5%A4%8D-%E8%A1%A5%E5%AE%8C%E6%98%AF%E8%8D%89%E8%8E%93-%E9%A5%BC%E5%B9%B2-%E8%8D%89%E8%8E%93-%E8%8D%89%E8%8E%93-%E9%A5%BC%E5%B9%B2-%E8%8D%89%E8%8E%93-%E6%89%80%E4%BB%A5%E7%A9%BA%E6%A0%BC%E6%98%AF%E8%8D%89%E8%8E%93.mp3"
     },
     {
       "id": "retry-先念这一组-草莓-饼干-草莓-再从左到右说-草莓-饼干-草莓-草莓-饼干-草莓-空格就是草莓",
       "kind": "retry",
       "text": "先念这一组：草莓、饼干、草莓；再从左到右说：草莓、饼干、草莓、草莓、饼干、草莓，空格就是草莓。",
-      "provider": "macOS say + afconvert",
-      "src": "/audio/voice/zh-CN/macos-tingting/retry-%E5%85%88%E5%BF%B5%E8%BF%99%E4%B8%80%E7%BB%84-%E8%8D%89%E8%8E%93-%E9%A5%BC%E5%B9%B2-%E8%8D%89%E8%8E%93-%E5%86%8D%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E8%AF%B4-%E8%8D%89%E8%8E%93-%E9%A5%BC%E5%B9%B2-%E8%8D%89%E8%8E%93-%E8%8D%89%E8%8E%93-%E9%A5%BC%E5%B9%B2-%E8%8D%89%E8%8E%93-%E7%A9%BA%E6%A0%BC%E5%B0%B1%E6%98%AF%E8%8D%89%E8%8E%93.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E5%BF%B5%E8%BF%99%E4%B8%80%E7%BB%84-%E8%8D%89%E8%8E%93-%E9%A5%BC%E5%B9%B2-%E8%8D%89%E8%8E%93-%E5%86%8D%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E8%AF%B4-%E8%8D%89%E8%8E%93-%E9%A5%BC%E5%B9%B2-%E8%8D%89%E8%8E%93-%E8%8D%89%E8%8E%93-%E9%A5%BC%E5%B9%B2-%E8%8D%89%E8%8E%93-%E7%A9%BA%E6%A0%BC%E5%B0%B1%E6%98%AF%E8%8D%89%E8%8E%93.mp3"
     },
     {
       "id": "parent-请她指着重复的一组草莓-饼干-草莓-复述草莓-饼干-草莓-草莓-饼干-草莓-说为什么空格是草莓",
       "kind": "parent",
       "text": "请她指着重复的一组草莓、饼干、草莓，复述草莓、饼干、草莓、草莓、饼干、草莓，说为什么空格是草莓。",
-      "provider": "macOS say + afconvert",
-      "src": "/audio/voice/zh-CN/macos-tingting/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E9%87%8D%E5%A4%8D%E7%9A%84%E4%B8%80%E7%BB%84%E8%8D%89%E8%8E%93-%E9%A5%BC%E5%B9%B2-%E8%8D%89%E8%8E%93-%E5%A4%8D%E8%BF%B0%E8%8D%89%E8%8E%93-%E9%A5%BC%E5%B9%B2-%E8%8D%89%E8%8E%93-%E8%8D%89%E8%8E%93-%E9%A5%BC%E5%B9%B2-%E8%8D%89%E8%8E%93-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%A9%BA%E6%A0%BC%E6%98%AF%E8%8D%89%E8%8E%93.wav"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E9%87%8D%E5%A4%8D%E7%9A%84%E4%B8%80%E7%BB%84%E8%8D%89%E8%8E%93-%E9%A5%BC%E5%B9%B2-%E8%8D%89%E8%8E%93-%E5%A4%8D%E8%BF%B0%E8%8D%89%E8%8E%93-%E9%A5%BC%E5%B9%B2-%E8%8D%89%E8%8E%93-%E8%8D%89%E8%8E%93-%E9%A5%BC%E5%B9%B2-%E8%8D%89%E8%8E%93-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%A9%BA%E6%A0%BC%E6%98%AF%E8%8D%89%E8%8E%93.mp3"
     },
     {
       "id": "choice-草莓",
@@ -5695,18 +5657,6 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E6%B0%B4.mp3"
     },
     {
-      "id": "object-水",
-      "kind": "object",
-      "text": "水",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E6%B0%B4.mp3"
-    },
-    {
-      "id": "object-铅笔",
-      "kind": "object",
-      "text": "铅笔",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E9%93%85%E7%AC%94.mp3"
-    },
-    {
       "id": "prompt-文具盒里最常放谁-先想这个东西里面通常装什么",
       "kind": "prompt",
       "text": "文具盒里最常放谁？先想这个东西里面通常装什么。",
@@ -5797,18 +5747,6 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%AE%B6.mp3"
     },
     {
-      "id": "object-天空",
-      "kind": "object",
-      "text": "天空",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%A4%A9%E7%A9%BA.mp3"
-    },
-    {
-      "id": "object-家",
-      "kind": "object",
-      "text": "家",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%AE%B6.mp3"
-    },
-    {
       "id": "prompt-小鸟常和谁配成一对-先想它通常在哪里飞",
       "kind": "prompt",
       "text": "小鸟常和谁配成一对？先想它通常在哪里飞。",
@@ -5837,12 +5775,6 @@
       "kind": "choice",
       "text": "盒子",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E7%9B%92%E5%AD%90.mp3"
-    },
-    {
-      "id": "object-盒子",
-      "kind": "object",
-      "text": "盒子",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E7%9B%92%E5%AD%90.mp3"
     },
     {
       "id": "prompt-钥匙和谁最容易配成一对-先想它能帮我们打开什么",
@@ -5879,18 +5811,6 @@
       "kind": "object",
       "text": "钥匙",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E9%92%A5%E5%8C%99.mp3"
-    },
-    {
-      "id": "object-门",
-      "kind": "object",
-      "text": "门",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E9%97%A8.mp3"
-    },
-    {
-      "id": "object-足球",
-      "kind": "object",
-      "text": "足球",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E8%B6%B3%E7%90%83.mp3"
     },
     {
       "id": "prompt-书包配书本-像饭盒配什么-先看例子-一个容器配它装的东西",
@@ -5945,6 +5865,12 @@
       "kind": "parent",
       "text": "问她：水壶和文具盒哪里像？",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E6%B0%B4%E5%A3%B6%E5%92%8C%E6%96%87%E5%85%B7%E7%9B%92%E5%93%AA%E9%87%8C%E5%83%8F.mp3"
+    },
+    {
+      "id": "object-水",
+      "kind": "object",
+      "text": "水",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E6%B0%B4.mp3"
     },
     {
       "id": "prompt-小鱼配小河-像小鸟配什么-先看动物和活动地方的关系",
@@ -6049,10 +5975,16 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E9%95%BF%E6%9C%A8%E6%9D%BF.mp3"
     },
     {
-      "id": "prompt-水壶和饭盒都能装东西-谁和饼干关系更近-先找内容是什么-再决定搭档",
+      "id": "object-门",
+      "kind": "object",
+      "text": "门",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E9%97%A8.mp3"
+    },
+    {
+      "id": "prompt-两个东西都能装-饼干更适合放进哪一个-先找内容是什么-再决定搭档",
       "kind": "prompt",
-      "text": "水壶和饭盒都能装东西，谁和饼干关系更近？先找内容是什么，再决定搭档。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%B0%B4%E5%A3%B6%E5%92%8C%E9%A5%AD%E7%9B%92%E9%83%BD%E8%83%BD%E8%A3%85%E4%B8%9C%E8%A5%BF-%E8%B0%81%E5%92%8C%E9%A5%BC%E5%B9%B2%E5%85%B3%E7%B3%BB%E6%9B%B4%E8%BF%91-%E5%85%88%E6%89%BE%E5%86%85%E5%AE%B9%E6%98%AF%E4%BB%80%E4%B9%88-%E5%86%8D%E5%86%B3%E5%AE%9A%E6%90%AD%E6%A1%A3.mp3"
+      "text": "两个东西都能装，饼干更适合放进哪一个？先找内容是什么，再决定搭档。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E4%B8%A4%E4%B8%AA%E4%B8%9C%E8%A5%BF%E9%83%BD%E8%83%BD%E8%A3%85-%E9%A5%BC%E5%B9%B2%E6%9B%B4%E9%80%82%E5%90%88%E6%94%BE%E8%BF%9B%E5%93%AA%E4%B8%80%E4%B8%AA-%E5%85%88%E6%89%BE%E5%86%85%E5%AE%B9%E6%98%AF%E4%BB%80%E4%B9%88-%E5%86%8D%E5%86%B3%E5%AE%9A%E6%90%AD%E6%A1%A3.mp3"
     },
     {
       "id": "success-三个都能装东西-但饼干更适合放进饭盒",
@@ -6073,10 +6005,10 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E4%B8%BA%E4%BB%80%E4%B9%88-%E9%83%BD%E8%83%BD%E8%A3%85-%E8%BF%98%E4%B8%8D%E5%A4%9F-%E8%BF%98%E8%A6%81%E7%9C%8B%E8%A3%85%E4%BB%80%E4%B9%88.mp3"
     },
     {
-      "id": "prompt-书本和文具盒都是学习用品-但谁和文具盒是-装在里面-的关系-不要只看同类-要看题目问的关系",
+      "id": "prompt-谁和文具盒是-装在里面-的关系-不要只看同类-要看题目问的关系",
       "kind": "prompt",
-      "text": "书本和文具盒都是学习用品，但谁和文具盒是“装在里面”的关系？不要只看同类，要看题目问的关系。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E4%B9%A6%E6%9C%AC%E5%92%8C%E6%96%87%E5%85%B7%E7%9B%92%E9%83%BD%E6%98%AF%E5%AD%A6%E4%B9%A0%E7%94%A8%E5%93%81-%E4%BD%86%E8%B0%81%E5%92%8C%E6%96%87%E5%85%B7%E7%9B%92%E6%98%AF-%E8%A3%85%E5%9C%A8%E9%87%8C%E9%9D%A2-%E7%9A%84%E5%85%B3%E7%B3%BB-%E4%B8%8D%E8%A6%81%E5%8F%AA%E7%9C%8B%E5%90%8C%E7%B1%BB-%E8%A6%81%E7%9C%8B%E9%A2%98%E7%9B%AE%E9%97%AE%E7%9A%84%E5%85%B3%E7%B3%BB.mp3"
+      "text": "谁和文具盒是“装在里面”的关系？不要只看同类，要看题目问的关系。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%B0%81%E5%92%8C%E6%96%87%E5%85%B7%E7%9B%92%E6%98%AF-%E8%A3%85%E5%9C%A8%E9%87%8C%E9%9D%A2-%E7%9A%84%E5%85%B3%E7%B3%BB-%E4%B8%8D%E8%A6%81%E5%8F%AA%E7%9C%8B%E5%90%8C%E7%B1%BB-%E8%A6%81%E7%9C%8B%E9%A2%98%E7%9B%AE%E9%97%AE%E7%9A%84%E5%85%B3%E7%B3%BB.mp3"
     },
     {
       "id": "success-书本也是学习用品-但铅笔更像是放进文具盒里的东西",
@@ -6121,10 +6053,16 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E9%A1%BA%E7%9D%80%E6%89%BE%E5%92%8C%E5%8F%8D%E7%9D%80%E6%89%BE-%E5%85%B3%E7%B3%BB%E6%9C%89%E6%B2%A1%E6%9C%89%E5%8F%98.mp3"
     },
     {
-      "id": "prompt-小鸟-天空-风筝都在图里-小鸟和天空为什么更像一对-先找最稳定的生活关系",
+      "id": "object-铅笔",
+      "kind": "object",
+      "text": "铅笔",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E9%93%85%E7%AC%94.mp3"
+    },
+    {
+      "id": "prompt-小鸟和谁的关系最稳定-先想小鸟最稳定的活动地方",
       "kind": "prompt",
-      "text": "小鸟、天空、风筝都在图里，小鸟和天空为什么更像一对？先找最稳定的生活关系。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%B0%8F%E9%B8%9F-%E5%A4%A9%E7%A9%BA-%E9%A3%8E%E7%AD%9D%E9%83%BD%E5%9C%A8%E5%9B%BE%E9%87%8C-%E5%B0%8F%E9%B8%9F%E5%92%8C%E5%A4%A9%E7%A9%BA%E4%B8%BA%E4%BB%80%E4%B9%88%E6%9B%B4%E5%83%8F%E4%B8%80%E5%AF%B9-%E5%85%88%E6%89%BE%E6%9C%80%E7%A8%B3%E5%AE%9A%E7%9A%84%E7%94%9F%E6%B4%BB%E5%85%B3%E7%B3%BB.mp3"
+      "text": "小鸟和谁的关系最稳定？先想小鸟最稳定的活动地方。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%B0%8F%E9%B8%9F%E5%92%8C%E8%B0%81%E7%9A%84%E5%85%B3%E7%B3%BB%E6%9C%80%E7%A8%B3%E5%AE%9A-%E5%85%88%E6%83%B3%E5%B0%8F%E9%B8%9F%E6%9C%80%E7%A8%B3%E5%AE%9A%E7%9A%84%E6%B4%BB%E5%8A%A8%E5%9C%B0%E6%96%B9.mp3"
     },
     {
       "id": "success-风筝也在天上-但小鸟和天空的关系更稳定-小鸟在天空飞",
@@ -6149,12 +6087,6 @@
       "kind": "choice",
       "text": "风筝",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E9%A3%8E%E7%AD%9D.mp3"
-    },
-    {
-      "id": "object-风筝",
-      "kind": "object",
-      "text": "风筝",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E9%A3%8E%E7%AD%9D.mp3"
     },
     {
       "id": "game-title-桥怎么搭",
@@ -6643,6 +6575,12 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%B0%BA%E5%AD%90.mp3"
     },
     {
+      "id": "object-足球",
+      "kind": "object",
+      "text": "足球",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E8%B6%B3%E7%90%83.mp3"
+    },
+    {
       "id": "prompt-这些都属于可以吃的东西-谁也能放进这一组-先说它们哪里一样-再选也符合这个规则的",
       "kind": "prompt",
       "text": "这些都属于可以吃的东西。谁也能放进这一组？先说它们哪里一样，再选也符合这个规则的。",
@@ -6767,6 +6705,12 @@
       "kind": "success",
       "text": "小鸟、飞机、风筝这三个能在天上，小鱼不会在天上飞。",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%B0%8F%E9%B8%9F-%E9%A3%9E%E6%9C%BA-%E9%A3%8E%E7%AD%9D%E8%BF%99%E4%B8%89%E4%B8%AA%E8%83%BD%E5%9C%A8%E5%A4%A9%E4%B8%8A-%E5%B0%8F%E9%B1%BC%E4%B8%8D%E4%BC%9A%E5%9C%A8%E5%A4%A9%E4%B8%8A%E9%A3%9E.mp3"
+    },
+    {
+      "id": "object-风筝",
+      "kind": "object",
+      "text": "风筝",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E9%A3%8E%E7%AD%9D.mp3"
     },
     {
       "id": "game-title-数字规律小路",
@@ -6935,6 +6879,54 @@
       "kind": "success",
       "text": "每次多 2。",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%AF%8F%E6%AC%A1%E5%A4%9A-2.mp3"
+    },
+    {
+      "id": "success-每次多-2-12-后面是-14-再到-16",
+      "kind": "success",
+      "text": "每次多 2，12 后面是 14，再到 16。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%AF%8F%E6%AC%A1%E5%A4%9A-2-12-%E5%90%8E%E9%9D%A2%E6%98%AF-14-%E5%86%8D%E5%88%B0-16.mp3"
+    },
+    {
+      "id": "object-12",
+      "kind": "object",
+      "text": "12",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-12.mp3"
+    },
+    {
+      "id": "object-16",
+      "kind": "object",
+      "text": "16",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-16.mp3"
+    },
+    {
+      "id": "success-倒着每次少-2-14-后面是-12",
+      "kind": "success",
+      "text": "倒着每次少 2，14 后面是 12。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%80%92%E7%9D%80%E6%AF%8F%E6%AC%A1%E5%B0%91-2-14-%E5%90%8E%E9%9D%A2%E6%98%AF-12.mp3"
+    },
+    {
+      "id": "object-18",
+      "kind": "object",
+      "text": "18",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-18.mp3"
+    },
+    {
+      "id": "object-14",
+      "kind": "object",
+      "text": "14",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-14.mp3"
+    },
+    {
+      "id": "success-每次多-3-9-后面是-12-再到-15",
+      "kind": "success",
+      "text": "每次多 3，9 后面是 12，再到 15。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%AF%8F%E6%AC%A1%E5%A4%9A-3-9-%E5%90%8E%E9%9D%A2%E6%98%AF-12-%E5%86%8D%E5%88%B0-15.mp3"
+    },
+    {
+      "id": "object-15",
+      "kind": "object",
+      "text": "15",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-15.mp3"
     },
     {
       "id": "game-title-地图找宝物",
@@ -7543,6 +7535,12 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%A4%A9%E7%A9%BA%E5%92%8C%E5%AE%B6.mp3"
     },
     {
+      "id": "object-天空",
+      "kind": "object",
+      "text": "天空",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%A4%A9%E7%A9%BA.mp3"
+    },
+    {
       "id": "object-小鸟和天空",
       "kind": "object",
       "text": "小鸟和天空",
@@ -7553,6 +7551,12 @@
       "kind": "object",
       "text": "小鱼和小河",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%B0%8F%E9%B1%BC%E5%92%8C%E5%B0%8F%E6%B2%B3.mp3"
+    },
+    {
+      "id": "object-家",
+      "kind": "object",
+      "text": "家",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%AE%B6.mp3"
     },
     {
       "id": "game-title-方位小地图",
@@ -7685,6 +7689,12 @@
       "kind": "parent",
       "text": "请她指着盒子，往左边一格找到小狗，说为什么。",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E7%9B%92%E5%AD%90-%E5%BE%80%E5%B7%A6%E8%BE%B9%E4%B8%80%E6%A0%BC%E6%89%BE%E5%88%B0%E5%B0%8F%E7%8B%97-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88.mp3"
+    },
+    {
+      "id": "object-盒子",
+      "kind": "object",
+      "text": "盒子",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E7%9B%92%E5%AD%90.mp3"
     },
     {
       "id": "prompt-盒子的右边是什么-先找到盒子-再看右边一格",
@@ -8797,22 +8807,10 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%B7%B2%E7%BB%8F%E6%9C%89%E8%8B%B9%E6%9E%9C%E5%92%8C%E6%A9%98%E5%AD%90-%E8%BF%98%E5%B0%91%E8%8D%89%E8%8E%93.mp3"
     },
     {
-      "id": "object-苹果-橘子-草莓",
-      "kind": "object",
-      "text": "苹果、橘子、草莓",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E8%8B%B9%E6%9E%9C-%E6%A9%98%E5%AD%90-%E8%8D%89%E8%8E%93.mp3"
-    },
-    {
       "id": "success-还少小兔",
       "kind": "success",
       "text": "还少小兔。",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%BF%98%E5%B0%91%E5%B0%8F%E5%85%94.mp3"
-    },
-    {
-      "id": "object-小猫-小狗-小兔",
-      "kind": "object",
-      "text": "小猫、小狗、小兔",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%B0%8F%E7%8C%AB-%E5%B0%8F%E7%8B%97-%E5%B0%8F%E5%85%94.mp3"
     },
     {
       "id": "success-中间还少绿色圆片",
@@ -8821,28 +8819,10 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E4%B8%AD%E9%97%B4%E8%BF%98%E5%B0%91%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87.mp3"
     },
     {
-      "id": "choice-紫色圆片",
-      "kind": "choice",
-      "text": "紫色圆片",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E7%B4%AB%E8%89%B2%E5%9C%86%E7%89%87.mp3"
-    },
-    {
-      "id": "object-黄色圆片-绿色圆片-蓝色圆片",
-      "kind": "object",
-      "text": "黄色圆片、绿色圆片、蓝色圆片",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87.mp3"
-    },
-    {
       "id": "success-还少饼干",
       "kind": "success",
       "text": "还少饼干。",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%BF%98%E5%B0%91%E9%A5%BC%E5%B9%B2.mp3"
-    },
-    {
-      "id": "object-饼干-糖果-星星",
-      "kind": "object",
-      "text": "饼干、糖果、星星",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E9%A5%BC%E5%B9%B2-%E7%B3%96%E6%9E%9C-%E6%98%9F%E6%98%9F.mp3"
     },
     {
       "id": "success-还少铅笔",
@@ -8851,10 +8831,10 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%BF%98%E5%B0%91%E9%93%85%E7%AC%94.mp3"
     },
     {
-      "id": "object-足球-铅笔-魔法盒",
-      "kind": "object",
-      "text": "足球、铅笔、魔法盒",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E8%B6%B3%E7%90%83-%E9%93%85%E7%AC%94-%E9%AD%94%E6%B3%95%E7%9B%92.mp3"
+      "id": "choice-魔法盒",
+      "kind": "choice",
+      "text": "魔法盒",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E9%AD%94%E6%B3%95%E7%9B%92.mp3"
     },
     {
       "id": "object-魔法盒",
@@ -8917,12 +8897,6 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%AE%8C%E6%95%B4%E5%9B%BE%E9%87%8C%E6%B2%A1%E6%9C%89%E4%B9%A6%E6%9C%AC.mp3"
     },
     {
-      "id": "choice-魔法盒",
-      "kind": "choice",
-      "text": "魔法盒",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E9%AD%94%E6%B3%95%E7%9B%92.mp3"
-    },
-    {
       "id": "game-title-天平换一换",
       "kind": "game-title",
       "text": "天平换一换",
@@ -8959,6 +8933,24 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E4%B8%BA%E4%BB%80%E4%B9%88%E5%A4%A9%E5%B9%B3%E4%B8%A4%E8%BE%B9%E5%8F%AF%E4%BB%A5%E4%BA%92%E7%9B%B8%E6%8D%A2.mp3"
     },
     {
+      "id": "choice-1-个草莓",
+      "kind": "choice",
+      "text": "1 个草莓",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-1-%E4%B8%AA%E8%8D%89%E8%8E%93.mp3"
+    },
+    {
+      "id": "choice-2-个草莓",
+      "kind": "choice",
+      "text": "2 个草莓",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-2-%E4%B8%AA%E8%8D%89%E8%8E%93.mp3"
+    },
+    {
+      "id": "choice-3-个草莓",
+      "kind": "choice",
+      "text": "3 个草莓",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-3-%E4%B8%AA%E8%8D%89%E8%8E%93.mp3"
+    },
+    {
       "id": "prompt-1-个橘子和几个饼干一样-天平两边一样-右边有几个就选几个",
       "kind": "prompt",
       "text": "1 个橘子和几个饼干一样？天平两边一样，右边有几个就选几个。",
@@ -8971,16 +8963,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-1-%E4%B8%AA%E6%A9%98%E5%AD%90%E5%8F%AF%E4%BB%A5%E6%8D%A2-2-%E4%B8%AA%E9%A5%BC%E5%B9%B2.mp3"
     },
     {
-      "id": "choice-饼干-饼干",
+      "id": "choice-1-个饼干",
       "kind": "choice",
-      "text": "饼干、饼干",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E9%A5%BC%E5%B9%B2-%E9%A5%BC%E5%B9%B2.mp3"
+      "text": "1 个饼干",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-1-%E4%B8%AA%E9%A5%BC%E5%B9%B2.mp3"
     },
     {
-      "id": "choice-饼干-饼干-饼干",
+      "id": "choice-2-个饼干",
       "kind": "choice",
-      "text": "饼干、饼干、饼干",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E9%A5%BC%E5%B9%B2-%E9%A5%BC%E5%B9%B2-%E9%A5%BC%E5%B9%B2.mp3"
+      "text": "2 个饼干",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-2-%E4%B8%AA%E9%A5%BC%E5%B9%B2.mp3"
+    },
+    {
+      "id": "choice-3-个饼干",
+      "kind": "choice",
+      "text": "3 个饼干",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-3-%E4%B8%AA%E9%A5%BC%E5%B9%B2.mp3"
     },
     {
       "id": "prompt-1-个蛋糕和几个糖果一样-天平两边一样-右边有几个就选几个",
@@ -8995,22 +8993,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-1-%E4%B8%AA%E8%9B%8B%E7%B3%95%E5%8F%AF%E4%BB%A5%E6%8D%A2-3-%E4%B8%AA%E7%B3%96%E6%9E%9C.mp3"
     },
     {
-      "id": "choice-糖果-糖果",
+      "id": "choice-2-个糖果",
       "kind": "choice",
-      "text": "糖果、糖果",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E7%B3%96%E6%9E%9C-%E7%B3%96%E6%9E%9C.mp3"
+      "text": "2 个糖果",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-2-%E4%B8%AA%E7%B3%96%E6%9E%9C.mp3"
     },
     {
-      "id": "choice-糖果-糖果-糖果",
+      "id": "choice-3-个糖果",
       "kind": "choice",
-      "text": "糖果、糖果、糖果",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E7%B3%96%E6%9E%9C-%E7%B3%96%E6%9E%9C-%E7%B3%96%E6%9E%9C.mp3"
+      "text": "3 个糖果",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-3-%E4%B8%AA%E7%B3%96%E6%9E%9C.mp3"
     },
     {
-      "id": "choice-糖果-糖果-糖果-糖果",
+      "id": "choice-4-个糖果",
       "kind": "choice",
-      "text": "糖果、糖果、糖果、糖果",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E7%B3%96%E6%9E%9C-%E7%B3%96%E6%9E%9C-%E7%B3%96%E6%9E%9C-%E7%B3%96%E6%9E%9C.mp3"
+      "text": "4 个糖果",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-4-%E4%B8%AA%E7%B3%96%E6%9E%9C.mp3"
     },
     {
       "id": "prompt-1-个足球和几颗星星一样-天平两边一样-右边有几个就选几个",
@@ -9025,16 +9023,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-1-%E4%B8%AA%E8%B6%B3%E7%90%83%E5%8F%AF%E4%BB%A5%E6%8D%A2-2-%E9%A2%97%E6%98%9F%E6%98%9F.mp3"
     },
     {
-      "id": "choice-星星-星星",
+      "id": "choice-1-颗星星",
       "kind": "choice",
-      "text": "星星、星星",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E6%98%9F%E6%98%9F-%E6%98%9F%E6%98%9F.mp3"
+      "text": "1 颗星星",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-1-%E9%A2%97%E6%98%9F%E6%98%9F.mp3"
     },
     {
-      "id": "choice-星星-星星-星星",
+      "id": "choice-2-颗星星",
       "kind": "choice",
-      "text": "星星、星星、星星",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E6%98%9F%E6%98%9F-%E6%98%9F%E6%98%9F-%E6%98%9F%E6%98%9F.mp3"
+      "text": "2 颗星星",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-2-%E9%A2%97%E6%98%9F%E6%98%9F.mp3"
+    },
+    {
+      "id": "choice-3-颗星星",
+      "kind": "choice",
+      "text": "3 颗星星",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-3-%E9%A2%97%E6%98%9F%E6%98%9F.mp3"
     },
     {
       "id": "prompt-2-个苹果可以换成几个草莓-先看-1-个能换几-再想有几组",
@@ -9061,10 +9065,10 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E7%94%A8-%E5%87%A0%E7%BB%84-%E6%9D%A5%E8%AF%B4-%E8%BF%99%E9%87%8C%E6%9C%89%E5%87%A0%E7%BB%84%E5%8F%B3%E8%BE%B9%E7%9A%84%E4%B8%9C%E8%A5%BF.mp3"
     },
     {
-      "id": "choice-草莓-草莓-草莓-草莓",
+      "id": "choice-4-个草莓",
       "kind": "choice",
-      "text": "草莓、草莓、草莓、草莓",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E8%8D%89%E8%8E%93-%E8%8D%89%E8%8E%93-%E8%8D%89%E8%8E%93-%E8%8D%89%E8%8E%93.mp3"
+      "text": "4 个草莓",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-4-%E4%B8%AA%E8%8D%89%E8%8E%93.mp3"
     },
     {
       "id": "object-箭头",
@@ -9085,10 +9089,10 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E4%B8%A4%E4%B8%AA%E6%A9%98%E5%AD%90%E5%8F%AF%E4%BB%A5%E6%8D%A2%E4%B8%A4%E7%BB%84%E9%A5%BC%E5%B9%B2-%E4%B8%80%E5%85%B1-4-%E4%B8%AA.mp3"
     },
     {
-      "id": "choice-饼干-饼干-饼干-饼干",
+      "id": "choice-4-个饼干",
       "kind": "choice",
-      "text": "饼干、饼干、饼干、饼干",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E9%A5%BC%E5%B9%B2-%E9%A5%BC%E5%B9%B2-%E9%A5%BC%E5%B9%B2-%E9%A5%BC%E5%B9%B2.mp3"
+      "text": "4 个饼干",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-4-%E4%B8%AA%E9%A5%BC%E5%B9%B2.mp3"
     },
     {
       "id": "prompt-2-个纸杯蛋糕可以换成几个糖果-先看-1-个能换几-再想有几组",
@@ -9103,10 +9107,10 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E4%B8%A4%E4%B8%AA%E8%9B%8B%E7%B3%95%E6%98%AF%E4%B8%A4%E7%BB%84-3-%E4%B8%AA%E7%B3%96%E6%9E%9C-%E4%B8%80%E5%85%B1-6-%E4%B8%AA%E7%B3%96%E6%9E%9C.mp3"
     },
     {
-      "id": "choice-糖果-糖果-糖果-糖果-糖果-糖果",
+      "id": "choice-6-个糖果",
       "kind": "choice",
-      "text": "糖果、糖果、糖果、糖果、糖果、糖果",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E7%B3%96%E6%9E%9C-%E7%B3%96%E6%9E%9C-%E7%B3%96%E6%9E%9C-%E7%B3%96%E6%9E%9C-%E7%B3%96%E6%9E%9C-%E7%B3%96%E6%9E%9C.mp3"
+      "text": "6 个糖果",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-6-%E4%B8%AA%E7%B3%96%E6%9E%9C.mp3"
     },
     {
       "id": "prompt-3-个足球可以换成几个星星-先看-1-个能换几-再想有几组",
@@ -9121,22 +9125,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E4%B8%89%E4%B8%AA%E8%B6%B3%E7%90%83%E6%98%AF%E4%B8%89%E7%BB%84-2-%E9%A2%97%E6%98%9F%E6%98%9F-%E4%B8%80%E5%85%B1-6-%E9%A2%97.mp3"
     },
     {
-      "id": "choice-星星-星星-星星-星星",
+      "id": "choice-4-颗星星",
       "kind": "choice",
-      "text": "星星、星星、星星、星星",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E6%98%9F%E6%98%9F-%E6%98%9F%E6%98%9F-%E6%98%9F%E6%98%9F-%E6%98%9F%E6%98%9F.mp3"
+      "text": "4 颗星星",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-4-%E9%A2%97%E6%98%9F%E6%98%9F.mp3"
     },
     {
-      "id": "choice-星星-星星-星星-星星-星星",
+      "id": "choice-5-颗星星",
       "kind": "choice",
-      "text": "星星、星星、星星、星星、星星",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E6%98%9F%E6%98%9F-%E6%98%9F%E6%98%9F-%E6%98%9F%E6%98%9F-%E6%98%9F%E6%98%9F-%E6%98%9F%E6%98%9F.mp3"
+      "text": "5 颗星星",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-5-%E9%A2%97%E6%98%9F%E6%98%9F.mp3"
     },
     {
-      "id": "choice-星星-星星-星星-星星-星星-星星",
+      "id": "choice-6-颗星星",
       "kind": "choice",
-      "text": "星星、星星、星星、星星、星星、星星",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E6%98%9F%E6%98%9F-%E6%98%9F%E6%98%9F-%E6%98%9F%E6%98%9F-%E6%98%9F%E6%98%9F-%E6%98%9F%E6%98%9F-%E6%98%9F%E6%98%9F.mp3"
+      "text": "6 颗星星",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-6-%E9%A2%97%E6%98%9F%E6%98%9F.mp3"
     },
     {
       "id": "prompt-哪边更重-先看规则-再比较两边",
@@ -10009,17 +10013,748 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E8%B5%B7%E7%82%B9.mp3"
     },
     {
+      "id": "game-title-影子配对",
+      "kind": "game-title",
+      "text": "影子配对",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/game-title-%E5%BD%B1%E5%AD%90%E9%85%8D%E5%AF%B9.mp3"
+    },
+    {
+      "id": "game-goal-训练影子配对-轮廓抽象和抗颜色干扰",
+      "kind": "game-goal",
+      "text": "训练影子配对、轮廓抽象和抗颜色干扰。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/game-goal-%E8%AE%AD%E7%BB%83%E5%BD%B1%E5%AD%90%E9%85%8D%E5%AF%B9-%E8%BD%AE%E5%BB%93%E6%8A%BD%E8%B1%A1%E5%92%8C%E6%8A%97%E9%A2%9C%E8%89%B2%E5%B9%B2%E6%89%B0.mp3"
+    },
+    {
+      "id": "prompt-哪一个黑影和左边彩色图是同一个轮廓-不要看颜色-只看外边一圈-耳朵-角和尾巴",
+      "kind": "prompt",
+      "text": "哪一个黑影和左边彩色图是同一个轮廓？不要看颜色，只看外边一圈、耳朵、角和尾巴。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%93%AA%E4%B8%80%E4%B8%AA%E9%BB%91%E5%BD%B1%E5%92%8C%E5%B7%A6%E8%BE%B9%E5%BD%A9%E8%89%B2%E5%9B%BE%E6%98%AF%E5%90%8C%E4%B8%80%E4%B8%AA%E8%BD%AE%E5%BB%93-%E4%B8%8D%E8%A6%81%E7%9C%8B%E9%A2%9C%E8%89%B2-%E5%8F%AA%E7%9C%8B%E5%A4%96%E8%BE%B9%E4%B8%80%E5%9C%88-%E8%80%B3%E6%9C%B5-%E8%A7%92%E5%92%8C%E5%B0%BE%E5%B7%B4.mp3"
+    },
+    {
+      "id": "success-小猫影子的轮廓对上了-尖尖猫耳朵和圆脸轮廓都对-所以选这个影子",
+      "kind": "success",
+      "text": "小猫影子的轮廓对上了，尖尖猫耳朵和圆脸轮廓都对，所以选这个影子。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%B0%8F%E7%8C%AB%E5%BD%B1%E5%AD%90%E7%9A%84%E8%BD%AE%E5%BB%93%E5%AF%B9%E4%B8%8A%E4%BA%86-%E5%B0%96%E5%B0%96%E7%8C%AB%E8%80%B3%E6%9C%B5%E5%92%8C%E5%9C%86%E8%84%B8%E8%BD%AE%E5%BB%93%E9%83%BD%E5%AF%B9-%E6%89%80%E4%BB%A5%E9%80%89%E8%BF%99%E4%B8%AA%E5%BD%B1%E5%AD%90.mp3"
+    },
+    {
+      "id": "retry-先用手沿着彩色图的轮廓走一圈-再看黑影的耳朵-角-尾巴是不是一样",
+      "kind": "retry",
+      "text": "先用手沿着彩色图的轮廓走一圈，再看黑影的耳朵、角、尾巴是不是一样。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E7%94%A8%E6%89%8B%E6%B2%BF%E7%9D%80%E5%BD%A9%E8%89%B2%E5%9B%BE%E7%9A%84%E8%BD%AE%E5%BB%93%E8%B5%B0%E4%B8%80%E5%9C%88-%E5%86%8D%E7%9C%8B%E9%BB%91%E5%BD%B1%E7%9A%84%E8%80%B3%E6%9C%B5-%E8%A7%92-%E5%B0%BE%E5%B7%B4%E6%98%AF%E4%B8%8D%E6%98%AF%E4%B8%80%E6%A0%B7.mp3"
+    },
+    {
+      "id": "parent-问她-哪个影子的轮廓哪里最像-为什么不是其它相近的影子",
+      "kind": "parent",
+      "text": "问她：哪个影子的轮廓哪里最像？为什么不是其它相近的影子？",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E5%93%AA%E4%B8%AA%E5%BD%B1%E5%AD%90%E7%9A%84%E8%BD%AE%E5%BB%93%E5%93%AA%E9%87%8C%E6%9C%80%E5%83%8F-%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E6%98%AF%E5%85%B6%E5%AE%83%E7%9B%B8%E8%BF%91%E7%9A%84%E5%BD%B1%E5%AD%90.mp3"
+    },
+    {
+      "id": "choice-d",
+      "kind": "choice",
+      "text": "D",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-d.mp3"
+    },
+    {
+      "id": "choice-小猫影子",
+      "kind": "choice",
+      "text": "小猫影子",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%B0%8F%E7%8C%AB%E5%BD%B1%E5%AD%90.mp3"
+    },
+    {
+      "id": "choice-小狗影子",
+      "kind": "choice",
+      "text": "小狗影子",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%B0%8F%E7%8B%97%E5%BD%B1%E5%AD%90.mp3"
+    },
+    {
+      "id": "choice-小兔影子",
+      "kind": "choice",
+      "text": "小兔影子",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%B0%8F%E5%85%94%E5%BD%B1%E5%AD%90.mp3"
+    },
+    {
+      "id": "choice-小熊影子",
+      "kind": "choice",
+      "text": "小熊影子",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%B0%8F%E7%86%8A%E5%BD%B1%E5%AD%90.mp3"
+    },
+    {
+      "id": "success-小兔影子的轮廓对上了-两只长耳朵最明显-所以选这个影子",
+      "kind": "success",
+      "text": "小兔影子的轮廓对上了，两只长耳朵最明显，所以选这个影子。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%B0%8F%E5%85%94%E5%BD%B1%E5%AD%90%E7%9A%84%E8%BD%AE%E5%BB%93%E5%AF%B9%E4%B8%8A%E4%BA%86-%E4%B8%A4%E5%8F%AA%E9%95%BF%E8%80%B3%E6%9C%B5%E6%9C%80%E6%98%8E%E6%98%BE-%E6%89%80%E4%BB%A5%E9%80%89%E8%BF%99%E4%B8%AA%E5%BD%B1%E5%AD%90.mp3"
+    },
+    {
+      "id": "success-小鱼影子的轮廓对上了-身体后面有三角尾巴-所以选这个影子",
+      "kind": "success",
+      "text": "小鱼影子的轮廓对上了，身体后面有三角尾巴，所以选这个影子。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%B0%8F%E9%B1%BC%E5%BD%B1%E5%AD%90%E7%9A%84%E8%BD%AE%E5%BB%93%E5%AF%B9%E4%B8%8A%E4%BA%86-%E8%BA%AB%E4%BD%93%E5%90%8E%E9%9D%A2%E6%9C%89%E4%B8%89%E8%A7%92%E5%B0%BE%E5%B7%B4-%E6%89%80%E4%BB%A5%E9%80%89%E8%BF%99%E4%B8%AA%E5%BD%B1%E5%AD%90.mp3"
+    },
+    {
+      "id": "choice-叶子影子",
+      "kind": "choice",
+      "text": "叶子影子",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%8F%B6%E5%AD%90%E5%BD%B1%E5%AD%90.mp3"
+    },
+    {
+      "id": "choice-小鱼影子",
+      "kind": "choice",
+      "text": "小鱼影子",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%B0%8F%E9%B1%BC%E5%BD%B1%E5%AD%90.mp3"
+    },
+    {
+      "id": "choice-苹果影子",
+      "kind": "choice",
+      "text": "苹果影子",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E8%8B%B9%E6%9E%9C%E5%BD%B1%E5%AD%90.mp3"
+    },
+    {
+      "id": "choice-梨子影子",
+      "kind": "choice",
+      "text": "梨子影子",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E6%A2%A8%E5%AD%90%E5%BD%B1%E5%AD%90.mp3"
+    },
+    {
+      "id": "success-苹果影子的轮廓对上了-上面有小叶子-下面是圆鼓鼓的-所以选这个影子",
+      "kind": "success",
+      "text": "苹果影子的轮廓对上了，上面有小叶子，下面是圆鼓鼓的，所以选这个影子。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%8B%B9%E6%9E%9C%E5%BD%B1%E5%AD%90%E7%9A%84%E8%BD%AE%E5%BB%93%E5%AF%B9%E4%B8%8A%E4%BA%86-%E4%B8%8A%E9%9D%A2%E6%9C%89%E5%B0%8F%E5%8F%B6%E5%AD%90-%E4%B8%8B%E9%9D%A2%E6%98%AF%E5%9C%86%E9%BC%93%E9%BC%93%E7%9A%84-%E6%89%80%E4%BB%A5%E9%80%89%E8%BF%99%E4%B8%AA%E5%BD%B1%E5%AD%90.mp3"
+    },
+    {
+      "id": "choice-圆形影子",
+      "kind": "choice",
+      "text": "圆形影子",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%9C%86%E5%BD%A2%E5%BD%B1%E5%AD%90.mp3"
+    },
+    {
+      "id": "choice-花朵影子",
+      "kind": "choice",
+      "text": "花朵影子",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E8%8A%B1%E6%9C%B5%E5%BD%B1%E5%AD%90.mp3"
+    },
+    {
+      "id": "success-星星影子的轮廓对上了-外边一圈都是尖尖的角-所以选这个影子",
+      "kind": "success",
+      "text": "星星影子的轮廓对上了，外边一圈都是尖尖的角，所以选这个影子。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%98%9F%E6%98%9F%E5%BD%B1%E5%AD%90%E7%9A%84%E8%BD%AE%E5%BB%93%E5%AF%B9%E4%B8%8A%E4%BA%86-%E5%A4%96%E8%BE%B9%E4%B8%80%E5%9C%88%E9%83%BD%E6%98%AF%E5%B0%96%E5%B0%96%E7%9A%84%E8%A7%92-%E6%89%80%E4%BB%A5%E9%80%89%E8%BF%99%E4%B8%AA%E5%BD%B1%E5%AD%90.mp3"
+    },
+    {
+      "id": "choice-星星影子",
+      "kind": "choice",
+      "text": "星星影子",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E6%98%9F%E6%98%9F%E5%BD%B1%E5%AD%90.mp3"
+    },
+    {
+      "id": "choice-圆角方块影子",
+      "kind": "choice",
+      "text": "圆角方块影子",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%9C%86%E8%A7%92%E6%96%B9%E5%9D%97%E5%BD%B1%E5%AD%90.mp3"
+    },
+    {
+      "id": "success-圆角方块影子的轮廓对上了-四条边接近方形-角是圆圆的-所以选这个影子",
+      "kind": "success",
+      "text": "圆角方块影子的轮廓对上了，四条边接近方形，角是圆圆的，所以选这个影子。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%9C%86%E8%A7%92%E6%96%B9%E5%9D%97%E5%BD%B1%E5%AD%90%E7%9A%84%E8%BD%AE%E5%BB%93%E5%AF%B9%E4%B8%8A%E4%BA%86-%E5%9B%9B%E6%9D%A1%E8%BE%B9%E6%8E%A5%E8%BF%91%E6%96%B9%E5%BD%A2-%E8%A7%92%E6%98%AF%E5%9C%86%E5%9C%86%E7%9A%84-%E6%89%80%E4%BB%A5%E9%80%89%E8%BF%99%E4%B8%AA%E5%BD%B1%E5%AD%90.mp3"
+    },
+    {
+      "id": "success-三角形影子的轮廓对上了-只有三个尖角-下面是一条直边-所以选这个影子",
+      "kind": "success",
+      "text": "三角形影子的轮廓对上了，只有三个尖角，下面是一条直边，所以选这个影子。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E4%B8%89%E8%A7%92%E5%BD%A2%E5%BD%B1%E5%AD%90%E7%9A%84%E8%BD%AE%E5%BB%93%E5%AF%B9%E4%B8%8A%E4%BA%86-%E5%8F%AA%E6%9C%89%E4%B8%89%E4%B8%AA%E5%B0%96%E8%A7%92-%E4%B8%8B%E9%9D%A2%E6%98%AF%E4%B8%80%E6%9D%A1%E7%9B%B4%E8%BE%B9-%E6%89%80%E4%BB%A5%E9%80%89%E8%BF%99%E4%B8%AA%E5%BD%B1%E5%AD%90.mp3"
+    },
+    {
+      "id": "choice-三角形影子",
+      "kind": "choice",
+      "text": "三角形影子",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E4%B8%89%E8%A7%92%E5%BD%A2%E5%BD%B1%E5%AD%90.mp3"
+    },
+    {
+      "id": "choice-菱形影子",
+      "kind": "choice",
+      "text": "菱形影子",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E8%8F%B1%E5%BD%A2%E5%BD%B1%E5%AD%90.mp3"
+    },
+    {
+      "id": "success-菱形影子的轮廓对上了-上下左右四个尖角一样清楚-所以选这个影子",
+      "kind": "success",
+      "text": "菱形影子的轮廓对上了，上下左右四个尖角一样清楚，所以选这个影子。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%8F%B1%E5%BD%A2%E5%BD%B1%E5%AD%90%E7%9A%84%E8%BD%AE%E5%BB%93%E5%AF%B9%E4%B8%8A%E4%BA%86-%E4%B8%8A%E4%B8%8B%E5%B7%A6%E5%8F%B3%E5%9B%9B%E4%B8%AA%E5%B0%96%E8%A7%92%E4%B8%80%E6%A0%B7%E6%B8%85%E6%A5%9A-%E6%89%80%E4%BB%A5%E9%80%89%E8%BF%99%E4%B8%AA%E5%BD%B1%E5%AD%90.mp3"
+    },
+    {
+      "id": "game-title-遮挡还原",
+      "kind": "game-title",
+      "text": "遮挡还原",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/game-title-%E9%81%AE%E6%8C%A1%E8%BF%98%E5%8E%9F.mp3"
+    },
+    {
+      "id": "game-goal-训练遮挡还原-可见线索提取和近似选项排除",
+      "kind": "game-goal",
+      "text": "训练遮挡还原、可见线索提取和近似选项排除。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/game-goal-%E8%AE%AD%E7%BB%83%E9%81%AE%E6%8C%A1%E8%BF%98%E5%8E%9F-%E5%8F%AF%E8%A7%81%E7%BA%BF%E7%B4%A2%E6%8F%90%E5%8F%96%E5%92%8C%E8%BF%91%E4%BC%BC%E9%80%89%E9%A1%B9%E6%8E%92%E9%99%A4.mp3"
+    },
+    {
+      "id": "prompt-上面的图被遮住一部分-完整图最可能是哪一个-只看还露出来的边-角-耳朵-叶子或尾巴-再选完整图",
+      "kind": "prompt",
+      "text": "上面的图被遮住一部分，完整图最可能是哪一个？只看还露出来的边、角、耳朵、叶子或尾巴，再选完整图。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E4%B8%8A%E9%9D%A2%E7%9A%84%E5%9B%BE%E8%A2%AB%E9%81%AE%E4%BD%8F%E4%B8%80%E9%83%A8%E5%88%86-%E5%AE%8C%E6%95%B4%E5%9B%BE%E6%9C%80%E5%8F%AF%E8%83%BD%E6%98%AF%E5%93%AA%E4%B8%80%E4%B8%AA-%E5%8F%AA%E7%9C%8B%E8%BF%98%E9%9C%B2%E5%87%BA%E6%9D%A5%E7%9A%84%E8%BE%B9-%E8%A7%92-%E8%80%B3%E6%9C%B5-%E5%8F%B6%E5%AD%90%E6%88%96%E5%B0%BE%E5%B7%B4-%E5%86%8D%E9%80%89%E5%AE%8C%E6%95%B4%E5%9B%BE.mp3"
+    },
+    {
+      "id": "success-小猫对-露出的尖耳朵和圆脸边线指向小猫-遮住以后要抓住露出的线索",
+      "kind": "success",
+      "text": "小猫对，露出的尖耳朵和圆脸边线指向小猫。遮住以后要抓住露出的线索。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%B0%8F%E7%8C%AB%E5%AF%B9-%E9%9C%B2%E5%87%BA%E7%9A%84%E5%B0%96%E8%80%B3%E6%9C%B5%E5%92%8C%E5%9C%86%E8%84%B8%E8%BE%B9%E7%BA%BF%E6%8C%87%E5%90%91%E5%B0%8F%E7%8C%AB-%E9%81%AE%E4%BD%8F%E4%BB%A5%E5%90%8E%E8%A6%81%E6%8A%93%E4%BD%8F%E9%9C%B2%E5%87%BA%E7%9A%84%E7%BA%BF%E7%B4%A2.mp3"
+    },
+    {
+      "id": "retry-先指一指还露出来的线索-是圆边-尖角-耳朵-叶子还是尾巴-再排除很像但局部不对的选项",
+      "kind": "retry",
+      "text": "先指一指还露出来的线索：是圆边、尖角、耳朵、叶子还是尾巴，再排除很像但局部不对的选项。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E6%8C%87%E4%B8%80%E6%8C%87%E8%BF%98%E9%9C%B2%E5%87%BA%E6%9D%A5%E7%9A%84%E7%BA%BF%E7%B4%A2-%E6%98%AF%E5%9C%86%E8%BE%B9-%E5%B0%96%E8%A7%92-%E8%80%B3%E6%9C%B5-%E5%8F%B6%E5%AD%90%E8%BF%98%E6%98%AF%E5%B0%BE%E5%B7%B4-%E5%86%8D%E6%8E%92%E9%99%A4%E5%BE%88%E5%83%8F%E4%BD%86%E5%B1%80%E9%83%A8%E4%B8%8D%E5%AF%B9%E7%9A%84%E9%80%89%E9%A1%B9.mp3"
+    },
+    {
+      "id": "parent-请她说哪里被遮住了-哪里还露出来了-为什么其它完整图虽然像但不对",
+      "kind": "parent",
+      "text": "请她说哪里被遮住了，哪里还露出来了，为什么其它完整图虽然像但不对。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E8%AF%B4%E5%93%AA%E9%87%8C%E8%A2%AB%E9%81%AE%E4%BD%8F%E4%BA%86-%E5%93%AA%E9%87%8C%E8%BF%98%E9%9C%B2%E5%87%BA%E6%9D%A5%E4%BA%86-%E4%B8%BA%E4%BB%80%E4%B9%88%E5%85%B6%E5%AE%83%E5%AE%8C%E6%95%B4%E5%9B%BE%E8%99%BD%E7%84%B6%E5%83%8F%E4%BD%86%E4%B8%8D%E5%AF%B9.mp3"
+    },
+    {
+      "id": "success-小兔对-上面露出两只长耳朵-所以完整图是小兔-遮住以后要抓住露出的线索",
+      "kind": "success",
+      "text": "小兔对，上面露出两只长耳朵，所以完整图是小兔。遮住以后要抓住露出的线索。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%B0%8F%E5%85%94%E5%AF%B9-%E4%B8%8A%E9%9D%A2%E9%9C%B2%E5%87%BA%E4%B8%A4%E5%8F%AA%E9%95%BF%E8%80%B3%E6%9C%B5-%E6%89%80%E4%BB%A5%E5%AE%8C%E6%95%B4%E5%9B%BE%E6%98%AF%E5%B0%8F%E5%85%94-%E9%81%AE%E4%BD%8F%E4%BB%A5%E5%90%8E%E8%A6%81%E6%8A%93%E4%BD%8F%E9%9C%B2%E5%87%BA%E7%9A%84%E7%BA%BF%E7%B4%A2.mp3"
+    },
+    {
+      "id": "success-苹果对-右边露出的圆肚子和小叶子属于苹果-遮住以后要抓住露出的线索",
+      "kind": "success",
+      "text": "苹果对，右边露出的圆肚子和小叶子属于苹果。遮住以后要抓住露出的线索。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%8B%B9%E6%9E%9C%E5%AF%B9-%E5%8F%B3%E8%BE%B9%E9%9C%B2%E5%87%BA%E7%9A%84%E5%9C%86%E8%82%9A%E5%AD%90%E5%92%8C%E5%B0%8F%E5%8F%B6%E5%AD%90%E5%B1%9E%E4%BA%8E%E8%8B%B9%E6%9E%9C-%E9%81%AE%E4%BD%8F%E4%BB%A5%E5%90%8E%E8%A6%81%E6%8A%93%E4%BD%8F%E9%9C%B2%E5%87%BA%E7%9A%84%E7%BA%BF%E7%B4%A2.mp3"
+    },
+    {
+      "id": "choice-梨子",
+      "kind": "choice",
+      "text": "梨子",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E6%A2%A8%E5%AD%90.mp3"
+    },
+    {
+      "id": "choice-圆形",
+      "kind": "choice",
+      "text": "圆形",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%9C%86%E5%BD%A2.mp3"
+    },
+    {
+      "id": "choice-花朵",
+      "kind": "choice",
+      "text": "花朵",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E8%8A%B1%E6%9C%B5.mp3"
+    },
+    {
+      "id": "success-小鱼对-露出的三角尾巴只属于小鱼-遮住以后要抓住露出的线索",
+      "kind": "success",
+      "text": "小鱼对，露出的三角尾巴只属于小鱼。遮住以后要抓住露出的线索。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%B0%8F%E9%B1%BC%E5%AF%B9-%E9%9C%B2%E5%87%BA%E7%9A%84%E4%B8%89%E8%A7%92%E5%B0%BE%E5%B7%B4%E5%8F%AA%E5%B1%9E%E4%BA%8E%E5%B0%8F%E9%B1%BC-%E9%81%AE%E4%BD%8F%E4%BB%A5%E5%90%8E%E8%A6%81%E6%8A%93%E4%BD%8F%E9%9C%B2%E5%87%BA%E7%9A%84%E7%BA%BF%E7%B4%A2.mp3"
+    },
+    {
+      "id": "choice-叶子",
+      "kind": "choice",
+      "text": "叶子",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%8F%B6%E5%AD%90.mp3"
+    },
+    {
+      "id": "success-星星对-四周露出的尖角说明完整图是星星-遮住以后要抓住露出的线索",
+      "kind": "success",
+      "text": "星星对，四周露出的尖角说明完整图是星星。遮住以后要抓住露出的线索。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%98%9F%E6%98%9F%E5%AF%B9-%E5%9B%9B%E5%91%A8%E9%9C%B2%E5%87%BA%E7%9A%84%E5%B0%96%E8%A7%92%E8%AF%B4%E6%98%8E%E5%AE%8C%E6%95%B4%E5%9B%BE%E6%98%AF%E6%98%9F%E6%98%9F-%E9%81%AE%E4%BD%8F%E4%BB%A5%E5%90%8E%E8%A6%81%E6%8A%93%E4%BD%8F%E9%9C%B2%E5%87%BA%E7%9A%84%E7%BA%BF%E7%B4%A2.mp3"
+    },
+    {
+      "id": "choice-圆角方块",
+      "kind": "choice",
+      "text": "圆角方块",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%9C%86%E8%A7%92%E6%96%B9%E5%9D%97.mp3"
+    },
+    {
+      "id": "success-花朵对-上方露出一圈圆花瓣-不是尖角-遮住以后要抓住露出的线索",
+      "kind": "success",
+      "text": "花朵对，上方露出一圈圆花瓣，不是尖角。遮住以后要抓住露出的线索。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%8A%B1%E6%9C%B5%E5%AF%B9-%E4%B8%8A%E6%96%B9%E9%9C%B2%E5%87%BA%E4%B8%80%E5%9C%88%E5%9C%86%E8%8A%B1%E7%93%A3-%E4%B8%8D%E6%98%AF%E5%B0%96%E8%A7%92-%E9%81%AE%E4%BD%8F%E4%BB%A5%E5%90%8E%E8%A6%81%E6%8A%93%E4%BD%8F%E9%9C%B2%E5%87%BA%E7%9A%84%E7%BA%BF%E7%B4%A2.mp3"
+    },
+    {
+      "id": "success-菱形对-四个方向露出尖角-说明完整图是菱形-遮住以后要抓住露出的线索",
+      "kind": "success",
+      "text": "菱形对，四个方向露出尖角，说明完整图是菱形。遮住以后要抓住露出的线索。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%8F%B1%E5%BD%A2%E5%AF%B9-%E5%9B%9B%E4%B8%AA%E6%96%B9%E5%90%91%E9%9C%B2%E5%87%BA%E5%B0%96%E8%A7%92-%E8%AF%B4%E6%98%8E%E5%AE%8C%E6%95%B4%E5%9B%BE%E6%98%AF%E8%8F%B1%E5%BD%A2-%E9%81%AE%E4%BD%8F%E4%BB%A5%E5%90%8E%E8%A6%81%E6%8A%93%E4%BD%8F%E9%9C%B2%E5%87%BA%E7%9A%84%E7%BA%BF%E7%B4%A2.mp3"
+    },
+    {
+      "id": "choice-菱形",
+      "kind": "choice",
+      "text": "菱形",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E8%8F%B1%E5%BD%A2.mp3"
+    },
+    {
+      "id": "choice-三角形",
+      "kind": "choice",
+      "text": "三角形",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E4%B8%89%E8%A7%92%E5%BD%A2.mp3"
+    },
+    {
+      "id": "success-梨子对-露出的细上部和小叶子更像梨子-不是圆苹果-遮住以后要抓住露出的线索",
+      "kind": "success",
+      "text": "梨子对，露出的细上部和小叶子更像梨子，不是圆苹果。遮住以后要抓住露出的线索。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%A2%A8%E5%AD%90%E5%AF%B9-%E9%9C%B2%E5%87%BA%E7%9A%84%E7%BB%86%E4%B8%8A%E9%83%A8%E5%92%8C%E5%B0%8F%E5%8F%B6%E5%AD%90%E6%9B%B4%E5%83%8F%E6%A2%A8%E5%AD%90-%E4%B8%8D%E6%98%AF%E5%9C%86%E8%8B%B9%E6%9E%9C-%E9%81%AE%E4%BD%8F%E4%BB%A5%E5%90%8E%E8%A6%81%E6%8A%93%E4%BD%8F%E9%9C%B2%E5%87%BA%E7%9A%84%E7%BA%BF%E7%B4%A2.mp3"
+    },
+    {
+      "id": "game-title-局部找整体",
+      "kind": "game-title",
+      "text": "局部找整体",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/game-title-%E5%B1%80%E9%83%A8%E6%89%BE%E6%95%B4%E4%BD%93.mp3"
+    },
+    {
+      "id": "game-goal-训练局部找整体-边角特征识别和高混淆选项排除",
+      "kind": "game-goal",
+      "text": "训练局部找整体、边角特征识别和高混淆选项排除。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/game-goal-%E8%AE%AD%E7%BB%83%E5%B1%80%E9%83%A8%E6%89%BE%E6%95%B4%E4%BD%93-%E8%BE%B9%E8%A7%92%E7%89%B9%E5%BE%81%E8%AF%86%E5%88%AB%E5%92%8C%E9%AB%98%E6%B7%B7%E6%B7%86%E9%80%89%E9%A1%B9%E6%8E%92%E9%99%A4.mp3"
+    },
+    {
+      "id": "prompt-放大镜里的局部来自哪一个完整图-先看局部的边-角-耳朵-叶子或尾巴-再去下面找完整图",
+      "kind": "prompt",
+      "text": "放大镜里的局部来自哪一个完整图？先看局部的边、角、耳朵、叶子或尾巴，再去下面找完整图。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%94%BE%E5%A4%A7%E9%95%9C%E9%87%8C%E7%9A%84%E5%B1%80%E9%83%A8%E6%9D%A5%E8%87%AA%E5%93%AA%E4%B8%80%E4%B8%AA%E5%AE%8C%E6%95%B4%E5%9B%BE-%E5%85%88%E7%9C%8B%E5%B1%80%E9%83%A8%E7%9A%84%E8%BE%B9-%E8%A7%92-%E8%80%B3%E6%9C%B5-%E5%8F%B6%E5%AD%90%E6%88%96%E5%B0%BE%E5%B7%B4-%E5%86%8D%E5%8E%BB%E4%B8%8B%E9%9D%A2%E6%89%BE%E5%AE%8C%E6%95%B4%E5%9B%BE.mp3"
+    },
+    {
+      "id": "success-小猫对-放大镜里是短短的尖耳朵-属于小猫-局部线索要回到完整图里找位置",
+      "kind": "success",
+      "text": "小猫对，放大镜里是短短的尖耳朵，属于小猫。局部线索要回到完整图里找位置。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%B0%8F%E7%8C%AB%E5%AF%B9-%E6%94%BE%E5%A4%A7%E9%95%9C%E9%87%8C%E6%98%AF%E7%9F%AD%E7%9F%AD%E7%9A%84%E5%B0%96%E8%80%B3%E6%9C%B5-%E5%B1%9E%E4%BA%8E%E5%B0%8F%E7%8C%AB-%E5%B1%80%E9%83%A8%E7%BA%BF%E7%B4%A2%E8%A6%81%E5%9B%9E%E5%88%B0%E5%AE%8C%E6%95%B4%E5%9B%BE%E9%87%8C%E6%89%BE%E4%BD%8D%E7%BD%AE.mp3"
+    },
+    {
+      "id": "retry-先说放大镜里的局部是什么-耳朵-尾巴-叶子-尖角还是圆边-再看哪个完整图有同样局部",
+      "kind": "retry",
+      "text": "先说放大镜里的局部是什么：耳朵、尾巴、叶子、尖角还是圆边，再看哪个完整图有同样局部。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E8%AF%B4%E6%94%BE%E5%A4%A7%E9%95%9C%E9%87%8C%E7%9A%84%E5%B1%80%E9%83%A8%E6%98%AF%E4%BB%80%E4%B9%88-%E8%80%B3%E6%9C%B5-%E5%B0%BE%E5%B7%B4-%E5%8F%B6%E5%AD%90-%E5%B0%96%E8%A7%92%E8%BF%98%E6%98%AF%E5%9C%86%E8%BE%B9-%E5%86%8D%E7%9C%8B%E5%93%AA%E4%B8%AA%E5%AE%8C%E6%95%B4%E5%9B%BE%E6%9C%89%E5%90%8C%E6%A0%B7%E5%B1%80%E9%83%A8.mp3"
+    },
+    {
+      "id": "parent-问她-这个局部线索在完整图的哪里-为什么其它选项的相似局部不一样",
+      "kind": "parent",
+      "text": "问她：这个局部线索在完整图的哪里？为什么其它选项的相似局部不一样？",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E8%BF%99%E4%B8%AA%E5%B1%80%E9%83%A8%E7%BA%BF%E7%B4%A2%E5%9C%A8%E5%AE%8C%E6%95%B4%E5%9B%BE%E7%9A%84%E5%93%AA%E9%87%8C-%E4%B8%BA%E4%BB%80%E4%B9%88%E5%85%B6%E5%AE%83%E9%80%89%E9%A1%B9%E7%9A%84%E7%9B%B8%E4%BC%BC%E5%B1%80%E9%83%A8%E4%B8%8D%E4%B8%80%E6%A0%B7.mp3"
+    },
+    {
+      "id": "success-小鱼对-放大镜里是分开的三角尾巴-属于小鱼-局部线索要回到完整图里找位置",
+      "kind": "success",
+      "text": "小鱼对，放大镜里是分开的三角尾巴，属于小鱼。局部线索要回到完整图里找位置。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%B0%8F%E9%B1%BC%E5%AF%B9-%E6%94%BE%E5%A4%A7%E9%95%9C%E9%87%8C%E6%98%AF%E5%88%86%E5%BC%80%E7%9A%84%E4%B8%89%E8%A7%92%E5%B0%BE%E5%B7%B4-%E5%B1%9E%E4%BA%8E%E5%B0%8F%E9%B1%BC-%E5%B1%80%E9%83%A8%E7%BA%BF%E7%B4%A2%E8%A6%81%E5%9B%9E%E5%88%B0%E5%AE%8C%E6%95%B4%E5%9B%BE%E9%87%8C%E6%89%BE%E4%BD%8D%E7%BD%AE.mp3"
+    },
+    {
+      "id": "success-苹果对-放大镜里是顶部小叶子和圆边-属于苹果-局部线索要回到完整图里找位置",
+      "kind": "success",
+      "text": "苹果对，放大镜里是顶部小叶子和圆边，属于苹果。局部线索要回到完整图里找位置。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%8B%B9%E6%9E%9C%E5%AF%B9-%E6%94%BE%E5%A4%A7%E9%95%9C%E9%87%8C%E6%98%AF%E9%A1%B6%E9%83%A8%E5%B0%8F%E5%8F%B6%E5%AD%90%E5%92%8C%E5%9C%86%E8%BE%B9-%E5%B1%9E%E4%BA%8E%E8%8B%B9%E6%9E%9C-%E5%B1%80%E9%83%A8%E7%BA%BF%E7%B4%A2%E8%A6%81%E5%9B%9E%E5%88%B0%E5%AE%8C%E6%95%B4%E5%9B%BE%E9%87%8C%E6%89%BE%E4%BD%8D%E7%BD%AE.mp3"
+    },
+    {
+      "id": "success-星星对-放大镜里是尖尖星角-属于星星-局部线索要回到完整图里找位置",
+      "kind": "success",
+      "text": "星星对，放大镜里是尖尖星角，属于星星。局部线索要回到完整图里找位置。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%98%9F%E6%98%9F%E5%AF%B9-%E6%94%BE%E5%A4%A7%E9%95%9C%E9%87%8C%E6%98%AF%E5%B0%96%E5%B0%96%E6%98%9F%E8%A7%92-%E5%B1%9E%E4%BA%8E%E6%98%9F%E6%98%9F-%E5%B1%80%E9%83%A8%E7%BA%BF%E7%B4%A2%E8%A6%81%E5%9B%9E%E5%88%B0%E5%AE%8C%E6%95%B4%E5%9B%BE%E9%87%8C%E6%89%BE%E4%BD%8D%E7%BD%AE.mp3"
+    },
+    {
+      "id": "success-花朵对-放大镜里是一片圆圆花瓣-属于花朵-局部线索要回到完整图里找位置",
+      "kind": "success",
+      "text": "花朵对，放大镜里是一片圆圆花瓣，属于花朵。局部线索要回到完整图里找位置。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%8A%B1%E6%9C%B5%E5%AF%B9-%E6%94%BE%E5%A4%A7%E9%95%9C%E9%87%8C%E6%98%AF%E4%B8%80%E7%89%87%E5%9C%86%E5%9C%86%E8%8A%B1%E7%93%A3-%E5%B1%9E%E4%BA%8E%E8%8A%B1%E6%9C%B5-%E5%B1%80%E9%83%A8%E7%BA%BF%E7%B4%A2%E8%A6%81%E5%9B%9E%E5%88%B0%E5%AE%8C%E6%95%B4%E5%9B%BE%E9%87%8C%E6%89%BE%E4%BD%8D%E7%BD%AE.mp3"
+    },
+    {
+      "id": "success-圆角方块对-放大镜里是直边接圆角-属于圆角方块-局部线索要回到完整图里找位置",
+      "kind": "success",
+      "text": "圆角方块对，放大镜里是直边接圆角，属于圆角方块。局部线索要回到完整图里找位置。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%9C%86%E8%A7%92%E6%96%B9%E5%9D%97%E5%AF%B9-%E6%94%BE%E5%A4%A7%E9%95%9C%E9%87%8C%E6%98%AF%E7%9B%B4%E8%BE%B9%E6%8E%A5%E5%9C%86%E8%A7%92-%E5%B1%9E%E4%BA%8E%E5%9C%86%E8%A7%92%E6%96%B9%E5%9D%97-%E5%B1%80%E9%83%A8%E7%BA%BF%E7%B4%A2%E8%A6%81%E5%9B%9E%E5%88%B0%E5%AE%8C%E6%95%B4%E5%9B%BE%E9%87%8C%E6%89%BE%E4%BD%8D%E7%BD%AE.mp3"
+    },
+    {
+      "id": "success-菱形对-放大镜里是两条直边夹出的尖角-属于菱形-局部线索要回到完整图里找位置",
+      "kind": "success",
+      "text": "菱形对，放大镜里是两条直边夹出的尖角，属于菱形。局部线索要回到完整图里找位置。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%8F%B1%E5%BD%A2%E5%AF%B9-%E6%94%BE%E5%A4%A7%E9%95%9C%E9%87%8C%E6%98%AF%E4%B8%A4%E6%9D%A1%E7%9B%B4%E8%BE%B9%E5%A4%B9%E5%87%BA%E7%9A%84%E5%B0%96%E8%A7%92-%E5%B1%9E%E4%BA%8E%E8%8F%B1%E5%BD%A2-%E5%B1%80%E9%83%A8%E7%BA%BF%E7%B4%A2%E8%A6%81%E5%9B%9E%E5%88%B0%E5%AE%8C%E6%95%B4%E5%9B%BE%E9%87%8C%E6%89%BE%E4%BD%8D%E7%BD%AE.mp3"
+    },
+    {
+      "id": "success-梨子对-放大镜里是小叶子连着细细的上部-属于梨子-局部线索要回到完整图里找位置",
+      "kind": "success",
+      "text": "梨子对，放大镜里是小叶子连着细细的上部，属于梨子。局部线索要回到完整图里找位置。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%A2%A8%E5%AD%90%E5%AF%B9-%E6%94%BE%E5%A4%A7%E9%95%9C%E9%87%8C%E6%98%AF%E5%B0%8F%E5%8F%B6%E5%AD%90%E8%BF%9E%E7%9D%80%E7%BB%86%E7%BB%86%E7%9A%84%E4%B8%8A%E9%83%A8-%E5%B1%9E%E4%BA%8E%E6%A2%A8%E5%AD%90-%E5%B1%80%E9%83%A8%E7%BA%BF%E7%B4%A2%E8%A6%81%E5%9B%9E%E5%88%B0%E5%AE%8C%E6%95%B4%E5%9B%BE%E9%87%8C%E6%89%BE%E4%BD%8D%E7%BD%AE.mp3"
+    },
+    {
+      "id": "game-title-透明叠叠板",
+      "kind": "game-title",
+      "text": "透明叠叠板",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/game-title-%E9%80%8F%E6%98%8E%E5%8F%A0%E5%8F%A0%E6%9D%BF.mp3"
+    },
+    {
+      "id": "game-goal-训练透明叠合-上下层判断和重叠区域观察",
+      "kind": "game-goal",
+      "text": "训练透明叠合、上下层判断和重叠区域观察。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/game-goal-%E8%AE%AD%E7%BB%83%E9%80%8F%E6%98%8E%E5%8F%A0%E5%90%88-%E4%B8%8A%E4%B8%8B%E5%B1%82%E5%88%A4%E6%96%AD%E5%92%8C%E9%87%8D%E5%8F%A0%E5%8C%BA%E5%9F%9F%E8%A7%82%E5%AF%9F.mp3"
+    },
+    {
+      "id": "prompt-两张透明图叠在一起-下面哪张叠合结果和上面一样-先看哪张图在上面-再看重叠的地方谁挡住了谁",
+      "kind": "prompt",
+      "text": "两张透明图叠在一起，下面哪张叠合结果和上面一样？先看哪张图在上面，再看重叠的地方谁挡住了谁。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E4%B8%A4%E5%BC%A0%E9%80%8F%E6%98%8E%E5%9B%BE%E5%8F%A0%E5%9C%A8%E4%B8%80%E8%B5%B7-%E4%B8%8B%E9%9D%A2%E5%93%AA%E5%BC%A0%E5%8F%A0%E5%90%88%E7%BB%93%E6%9E%9C%E5%92%8C%E4%B8%8A%E9%9D%A2%E4%B8%80%E6%A0%B7-%E5%85%88%E7%9C%8B%E5%93%AA%E5%BC%A0%E5%9B%BE%E5%9C%A8%E4%B8%8A%E9%9D%A2-%E5%86%8D%E7%9C%8B%E9%87%8D%E5%8F%A0%E7%9A%84%E5%9C%B0%E6%96%B9%E8%B0%81%E6%8C%A1%E4%BD%8F%E4%BA%86%E8%B0%81.mp3"
+    },
+    {
+      "id": "success-星星在圆形上面对-星星盖住圆形中间-边上还能看到圆弧-透明叠合要看上面和下面的遮挡线索",
+      "kind": "success",
+      "text": "星星在圆形上面对，星星盖住圆形中间，边上还能看到圆弧，透明叠合要看上面和下面的遮挡线索。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%98%9F%E6%98%9F%E5%9C%A8%E5%9C%86%E5%BD%A2%E4%B8%8A%E9%9D%A2%E5%AF%B9-%E6%98%9F%E6%98%9F%E7%9B%96%E4%BD%8F%E5%9C%86%E5%BD%A2%E4%B8%AD%E9%97%B4-%E8%BE%B9%E4%B8%8A%E8%BF%98%E8%83%BD%E7%9C%8B%E5%88%B0%E5%9C%86%E5%BC%A7-%E9%80%8F%E6%98%8E%E5%8F%A0%E5%90%88%E8%A6%81%E7%9C%8B%E4%B8%8A%E9%9D%A2%E5%92%8C%E4%B8%8B%E9%9D%A2%E7%9A%84%E9%81%AE%E6%8C%A1%E7%BA%BF%E7%B4%A2.mp3"
+    },
+    {
+      "id": "retry-先说哪张在上面-再看重叠边线-上面的图会挡住下面的图-不要只看两个图形有没有出现",
+      "kind": "retry",
+      "text": "先说哪张在上面，再看重叠边线：上面的图会挡住下面的图，不要只看两个图形有没有出现。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E8%AF%B4%E5%93%AA%E5%BC%A0%E5%9C%A8%E4%B8%8A%E9%9D%A2-%E5%86%8D%E7%9C%8B%E9%87%8D%E5%8F%A0%E8%BE%B9%E7%BA%BF-%E4%B8%8A%E9%9D%A2%E7%9A%84%E5%9B%BE%E4%BC%9A%E6%8C%A1%E4%BD%8F%E4%B8%8B%E9%9D%A2%E7%9A%84%E5%9B%BE-%E4%B8%8D%E8%A6%81%E5%8F%AA%E7%9C%8B%E4%B8%A4%E4%B8%AA%E5%9B%BE%E5%BD%A2%E6%9C%89%E6%B2%A1%E6%9C%89%E5%87%BA%E7%8E%B0.mp3"
+    },
+    {
+      "id": "parent-请她指一指重叠的地方-说为什么这个是上面-为什么上下反过来的选项不对",
+      "kind": "parent",
+      "text": "请她指一指重叠的地方，说为什么这个是上面，为什么上下反过来的选项不对。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E4%B8%80%E6%8C%87%E9%87%8D%E5%8F%A0%E7%9A%84%E5%9C%B0%E6%96%B9-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%99%E4%B8%AA%E6%98%AF%E4%B8%8A%E9%9D%A2-%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8A%E4%B8%8B%E5%8F%8D%E8%BF%87%E6%9D%A5%E7%9A%84%E9%80%89%E9%A1%B9%E4%B8%8D%E5%AF%B9.mp3"
+    },
+    {
+      "id": "choice-星星在圆形上面",
+      "kind": "choice",
+      "text": "星星在圆形上面",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E6%98%9F%E6%98%9F%E5%9C%A8%E5%9C%86%E5%BD%A2%E4%B8%8A%E9%9D%A2.mp3"
+    },
+    {
+      "id": "choice-圆形在星星上面",
+      "kind": "choice",
+      "text": "圆形在星星上面",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%9C%86%E5%BD%A2%E5%9C%A8%E6%98%9F%E6%98%9F%E4%B8%8A%E9%9D%A2.mp3"
+    },
+    {
+      "id": "choice-星星在圆形上面-偏右下叠放",
+      "kind": "choice",
+      "text": "星星在圆形上面，偏右下叠放",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E6%98%9F%E6%98%9F%E5%9C%A8%E5%9C%86%E5%BD%A2%E4%B8%8A%E9%9D%A2-%E5%81%8F%E5%8F%B3%E4%B8%8B%E5%8F%A0%E6%94%BE.mp3"
+    },
+    {
+      "id": "choice-花朵在圆形上面",
+      "kind": "choice",
+      "text": "花朵在圆形上面",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E8%8A%B1%E6%9C%B5%E5%9C%A8%E5%9C%86%E5%BD%A2%E4%B8%8A%E9%9D%A2.mp3"
+    },
+    {
+      "id": "success-圆形在星星上面对-圆形压住星星中心-只露出外面的尖角-透明叠合要看上面和下面的遮挡线索",
+      "kind": "success",
+      "text": "圆形在星星上面对，圆形压住星星中心，只露出外面的尖角，透明叠合要看上面和下面的遮挡线索。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%9C%86%E5%BD%A2%E5%9C%A8%E6%98%9F%E6%98%9F%E4%B8%8A%E9%9D%A2%E5%AF%B9-%E5%9C%86%E5%BD%A2%E5%8E%8B%E4%BD%8F%E6%98%9F%E6%98%9F%E4%B8%AD%E5%BF%83-%E5%8F%AA%E9%9C%B2%E5%87%BA%E5%A4%96%E9%9D%A2%E7%9A%84%E5%B0%96%E8%A7%92-%E9%80%8F%E6%98%8E%E5%8F%A0%E5%90%88%E8%A6%81%E7%9C%8B%E4%B8%8A%E9%9D%A2%E5%92%8C%E4%B8%8B%E9%9D%A2%E7%9A%84%E9%81%AE%E6%8C%A1%E7%BA%BF%E7%B4%A2.mp3"
+    },
+    {
+      "id": "choice-圆形在星星上面-偏右下叠放",
+      "kind": "choice",
+      "text": "圆形在星星上面，偏右下叠放",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%9C%86%E5%BD%A2%E5%9C%A8%E6%98%9F%E6%98%9F%E4%B8%8A%E9%9D%A2-%E5%81%8F%E5%8F%B3%E4%B8%8B%E5%8F%A0%E6%94%BE.mp3"
+    },
+    {
+      "id": "choice-圆角方块在星星上面",
+      "kind": "choice",
+      "text": "圆角方块在星星上面",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%9C%86%E8%A7%92%E6%96%B9%E5%9D%97%E5%9C%A8%E6%98%9F%E6%98%9F%E4%B8%8A%E9%9D%A2.mp3"
+    },
+    {
+      "id": "success-三角形在圆角方块上面对-三角形的底边挡住方块中间-透明叠合要看上面和下面的遮挡线索",
+      "kind": "success",
+      "text": "三角形在圆角方块上面对，三角形的底边挡住方块中间，透明叠合要看上面和下面的遮挡线索。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E4%B8%89%E8%A7%92%E5%BD%A2%E5%9C%A8%E5%9C%86%E8%A7%92%E6%96%B9%E5%9D%97%E4%B8%8A%E9%9D%A2%E5%AF%B9-%E4%B8%89%E8%A7%92%E5%BD%A2%E7%9A%84%E5%BA%95%E8%BE%B9%E6%8C%A1%E4%BD%8F%E6%96%B9%E5%9D%97%E4%B8%AD%E9%97%B4-%E9%80%8F%E6%98%8E%E5%8F%A0%E5%90%88%E8%A6%81%E7%9C%8B%E4%B8%8A%E9%9D%A2%E5%92%8C%E4%B8%8B%E9%9D%A2%E7%9A%84%E9%81%AE%E6%8C%A1%E7%BA%BF%E7%B4%A2.mp3"
+    },
+    {
+      "id": "choice-三角形在圆角方块上面",
+      "kind": "choice",
+      "text": "三角形在圆角方块上面",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E4%B8%89%E8%A7%92%E5%BD%A2%E5%9C%A8%E5%9C%86%E8%A7%92%E6%96%B9%E5%9D%97%E4%B8%8A%E9%9D%A2.mp3"
+    },
+    {
+      "id": "choice-圆角方块在三角形上面",
+      "kind": "choice",
+      "text": "圆角方块在三角形上面",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%9C%86%E8%A7%92%E6%96%B9%E5%9D%97%E5%9C%A8%E4%B8%89%E8%A7%92%E5%BD%A2%E4%B8%8A%E9%9D%A2.mp3"
+    },
+    {
+      "id": "choice-三角形在圆角方块上面-偏右下叠放",
+      "kind": "choice",
+      "text": "三角形在圆角方块上面，偏右下叠放",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E4%B8%89%E8%A7%92%E5%BD%A2%E5%9C%A8%E5%9C%86%E8%A7%92%E6%96%B9%E5%9D%97%E4%B8%8A%E9%9D%A2-%E5%81%8F%E5%8F%B3%E4%B8%8B%E5%8F%A0%E6%94%BE.mp3"
+    },
+    {
+      "id": "choice-星星在圆角方块上面",
+      "kind": "choice",
+      "text": "星星在圆角方块上面",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E6%98%9F%E6%98%9F%E5%9C%A8%E5%9C%86%E8%A7%92%E6%96%B9%E5%9D%97%E4%B8%8A%E9%9D%A2.mp3"
+    },
+    {
+      "id": "success-圆角方块在三角形上面对-方块压住三角形中心-只露出三个尖角-透明叠合要看上面和下面的遮挡线索",
+      "kind": "success",
+      "text": "圆角方块在三角形上面对，方块压住三角形中心，只露出三个尖角，透明叠合要看上面和下面的遮挡线索。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%9C%86%E8%A7%92%E6%96%B9%E5%9D%97%E5%9C%A8%E4%B8%89%E8%A7%92%E5%BD%A2%E4%B8%8A%E9%9D%A2%E5%AF%B9-%E6%96%B9%E5%9D%97%E5%8E%8B%E4%BD%8F%E4%B8%89%E8%A7%92%E5%BD%A2%E4%B8%AD%E5%BF%83-%E5%8F%AA%E9%9C%B2%E5%87%BA%E4%B8%89%E4%B8%AA%E5%B0%96%E8%A7%92-%E9%80%8F%E6%98%8E%E5%8F%A0%E5%90%88%E8%A6%81%E7%9C%8B%E4%B8%8A%E9%9D%A2%E5%92%8C%E4%B8%8B%E9%9D%A2%E7%9A%84%E9%81%AE%E6%8C%A1%E7%BA%BF%E7%B4%A2.mp3"
+    },
+    {
+      "id": "choice-圆角方块在三角形上面-偏右下叠放",
+      "kind": "choice",
+      "text": "圆角方块在三角形上面，偏右下叠放",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%9C%86%E8%A7%92%E6%96%B9%E5%9D%97%E5%9C%A8%E4%B8%89%E8%A7%92%E5%BD%A2%E4%B8%8A%E9%9D%A2-%E5%81%8F%E5%8F%B3%E4%B8%8B%E5%8F%A0%E6%94%BE.mp3"
+    },
+    {
+      "id": "choice-星星在三角形上面",
+      "kind": "choice",
+      "text": "星星在三角形上面",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E6%98%9F%E6%98%9F%E5%9C%A8%E4%B8%89%E8%A7%92%E5%BD%A2%E4%B8%8A%E9%9D%A2.mp3"
+    },
+    {
+      "id": "success-圆形在菱形上面对-圆形盖住菱形中心-四个尖角还露在外面-透明叠合要看上面和下面的遮挡线索",
+      "kind": "success",
+      "text": "圆形在菱形上面对，圆形盖住菱形中心，四个尖角还露在外面，透明叠合要看上面和下面的遮挡线索。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%9C%86%E5%BD%A2%E5%9C%A8%E8%8F%B1%E5%BD%A2%E4%B8%8A%E9%9D%A2%E5%AF%B9-%E5%9C%86%E5%BD%A2%E7%9B%96%E4%BD%8F%E8%8F%B1%E5%BD%A2%E4%B8%AD%E5%BF%83-%E5%9B%9B%E4%B8%AA%E5%B0%96%E8%A7%92%E8%BF%98%E9%9C%B2%E5%9C%A8%E5%A4%96%E9%9D%A2-%E9%80%8F%E6%98%8E%E5%8F%A0%E5%90%88%E8%A6%81%E7%9C%8B%E4%B8%8A%E9%9D%A2%E5%92%8C%E4%B8%8B%E9%9D%A2%E7%9A%84%E9%81%AE%E6%8C%A1%E7%BA%BF%E7%B4%A2.mp3"
+    },
+    {
+      "id": "choice-圆形在菱形上面",
+      "kind": "choice",
+      "text": "圆形在菱形上面",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%9C%86%E5%BD%A2%E5%9C%A8%E8%8F%B1%E5%BD%A2%E4%B8%8A%E9%9D%A2.mp3"
+    },
+    {
+      "id": "choice-菱形在圆形上面",
+      "kind": "choice",
+      "text": "菱形在圆形上面",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E8%8F%B1%E5%BD%A2%E5%9C%A8%E5%9C%86%E5%BD%A2%E4%B8%8A%E9%9D%A2.mp3"
+    },
+    {
+      "id": "choice-圆形在菱形上面-偏右下叠放",
+      "kind": "choice",
+      "text": "圆形在菱形上面，偏右下叠放",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%9C%86%E5%BD%A2%E5%9C%A8%E8%8F%B1%E5%BD%A2%E4%B8%8A%E9%9D%A2-%E5%81%8F%E5%8F%B3%E4%B8%8B%E5%8F%A0%E6%94%BE.mp3"
+    },
+    {
+      "id": "choice-圆角方块在菱形上面",
+      "kind": "choice",
+      "text": "圆角方块在菱形上面",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%9C%86%E8%A7%92%E6%96%B9%E5%9D%97%E5%9C%A8%E8%8F%B1%E5%BD%A2%E4%B8%8A%E9%9D%A2.mp3"
+    },
+    {
+      "id": "success-菱形在圆形上面对-菱形边线压在圆形前面-圆弧只在外侧露出-透明叠合要看上面和下面的遮挡线索",
+      "kind": "success",
+      "text": "菱形在圆形上面对，菱形边线压在圆形前面，圆弧只在外侧露出，透明叠合要看上面和下面的遮挡线索。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%8F%B1%E5%BD%A2%E5%9C%A8%E5%9C%86%E5%BD%A2%E4%B8%8A%E9%9D%A2%E5%AF%B9-%E8%8F%B1%E5%BD%A2%E8%BE%B9%E7%BA%BF%E5%8E%8B%E5%9C%A8%E5%9C%86%E5%BD%A2%E5%89%8D%E9%9D%A2-%E5%9C%86%E5%BC%A7%E5%8F%AA%E5%9C%A8%E5%A4%96%E4%BE%A7%E9%9C%B2%E5%87%BA-%E9%80%8F%E6%98%8E%E5%8F%A0%E5%90%88%E8%A6%81%E7%9C%8B%E4%B8%8A%E9%9D%A2%E5%92%8C%E4%B8%8B%E9%9D%A2%E7%9A%84%E9%81%AE%E6%8C%A1%E7%BA%BF%E7%B4%A2.mp3"
+    },
+    {
+      "id": "choice-菱形在圆形上面-偏右下叠放",
+      "kind": "choice",
+      "text": "菱形在圆形上面，偏右下叠放",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E8%8F%B1%E5%BD%A2%E5%9C%A8%E5%9C%86%E5%BD%A2%E4%B8%8A%E9%9D%A2-%E5%81%8F%E5%8F%B3%E4%B8%8B%E5%8F%A0%E6%94%BE.mp3"
+    },
+    {
+      "id": "success-花朵在叶子上面对-圆花瓣盖住叶子中间-只露出叶子尖端-透明叠合要看上面和下面的遮挡线索",
+      "kind": "success",
+      "text": "花朵在叶子上面对，圆花瓣盖住叶子中间，只露出叶子尖端，透明叠合要看上面和下面的遮挡线索。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%8A%B1%E6%9C%B5%E5%9C%A8%E5%8F%B6%E5%AD%90%E4%B8%8A%E9%9D%A2%E5%AF%B9-%E5%9C%86%E8%8A%B1%E7%93%A3%E7%9B%96%E4%BD%8F%E5%8F%B6%E5%AD%90%E4%B8%AD%E9%97%B4-%E5%8F%AA%E9%9C%B2%E5%87%BA%E5%8F%B6%E5%AD%90%E5%B0%96%E7%AB%AF-%E9%80%8F%E6%98%8E%E5%8F%A0%E5%90%88%E8%A6%81%E7%9C%8B%E4%B8%8A%E9%9D%A2%E5%92%8C%E4%B8%8B%E9%9D%A2%E7%9A%84%E9%81%AE%E6%8C%A1%E7%BA%BF%E7%B4%A2.mp3"
+    },
+    {
+      "id": "choice-花朵在叶子上面",
+      "kind": "choice",
+      "text": "花朵在叶子上面",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E8%8A%B1%E6%9C%B5%E5%9C%A8%E5%8F%B6%E5%AD%90%E4%B8%8A%E9%9D%A2.mp3"
+    },
+    {
+      "id": "choice-叶子在花朵上面",
+      "kind": "choice",
+      "text": "叶子在花朵上面",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%8F%B6%E5%AD%90%E5%9C%A8%E8%8A%B1%E6%9C%B5%E4%B8%8A%E9%9D%A2.mp3"
+    },
+    {
+      "id": "choice-花朵在叶子上面-偏右下叠放",
+      "kind": "choice",
+      "text": "花朵在叶子上面，偏右下叠放",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E8%8A%B1%E6%9C%B5%E5%9C%A8%E5%8F%B6%E5%AD%90%E4%B8%8A%E9%9D%A2-%E5%81%8F%E5%8F%B3%E4%B8%8B%E5%8F%A0%E6%94%BE.mp3"
+    },
+    {
+      "id": "choice-星星在叶子上面",
+      "kind": "choice",
+      "text": "星星在叶子上面",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E6%98%9F%E6%98%9F%E5%9C%A8%E5%8F%B6%E5%AD%90%E4%B8%8A%E9%9D%A2.mp3"
+    },
+    {
+      "id": "success-叶子在花朵上面对-叶子的长弧线压在花瓣前面-透明叠合要看上面和下面的遮挡线索",
+      "kind": "success",
+      "text": "叶子在花朵上面对，叶子的长弧线压在花瓣前面，透明叠合要看上面和下面的遮挡线索。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%8F%B6%E5%AD%90%E5%9C%A8%E8%8A%B1%E6%9C%B5%E4%B8%8A%E9%9D%A2%E5%AF%B9-%E5%8F%B6%E5%AD%90%E7%9A%84%E9%95%BF%E5%BC%A7%E7%BA%BF%E5%8E%8B%E5%9C%A8%E8%8A%B1%E7%93%A3%E5%89%8D%E9%9D%A2-%E9%80%8F%E6%98%8E%E5%8F%A0%E5%90%88%E8%A6%81%E7%9C%8B%E4%B8%8A%E9%9D%A2%E5%92%8C%E4%B8%8B%E9%9D%A2%E7%9A%84%E9%81%AE%E6%8C%A1%E7%BA%BF%E7%B4%A2.mp3"
+    },
+    {
+      "id": "choice-叶子在花朵上面-偏右下叠放",
+      "kind": "choice",
+      "text": "叶子在花朵上面，偏右下叠放",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%8F%B6%E5%AD%90%E5%9C%A8%E8%8A%B1%E6%9C%B5%E4%B8%8A%E9%9D%A2-%E5%81%8F%E5%8F%B3%E4%B8%8B%E5%8F%A0%E6%94%BE.mp3"
+    },
+    {
+      "id": "choice-小鱼在花朵上面",
+      "kind": "choice",
+      "text": "小鱼在花朵上面",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%B0%8F%E9%B1%BC%E5%9C%A8%E8%8A%B1%E6%9C%B5%E4%B8%8A%E9%9D%A2.mp3"
+    },
+    {
+      "id": "game-title-图形密码机",
+      "kind": "game-title",
+      "text": "图形密码机",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/game-title-%E5%9B%BE%E5%BD%A2%E5%AF%86%E7%A0%81%E6%9C%BA.mp3"
+    },
+    {
+      "id": "game-goal-训练图形编码-对应映射和近邻干扰排除",
+      "kind": "game-goal",
+      "text": "训练图形编码、对应映射和近邻干扰排除。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/game-goal-%E8%AE%AD%E7%BB%83%E5%9B%BE%E5%BD%A2%E7%BC%96%E7%A0%81-%E5%AF%B9%E5%BA%94%E6%98%A0%E5%B0%84%E5%92%8C%E8%BF%91%E9%82%BB%E5%B9%B2%E6%89%B0%E6%8E%92%E9%99%A4.mp3"
+    },
+    {
+      "id": "prompt-看图形密码表-问号这边应该换成哪一个图-一组一组看左边图形对应右边什么-再找到和问号一样的左边图形",
+      "kind": "prompt",
+      "text": "看图形密码表，问号这边应该换成哪一个图？一组一组看左边图形对应右边什么，再找到和问号一样的左边图形。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%9C%8B%E5%9B%BE%E5%BD%A2%E5%AF%86%E7%A0%81%E8%A1%A8-%E9%97%AE%E5%8F%B7%E8%BF%99%E8%BE%B9%E5%BA%94%E8%AF%A5%E6%8D%A2%E6%88%90%E5%93%AA%E4%B8%80%E4%B8%AA%E5%9B%BE-%E4%B8%80%E7%BB%84%E4%B8%80%E7%BB%84%E7%9C%8B%E5%B7%A6%E8%BE%B9%E5%9B%BE%E5%BD%A2%E5%AF%B9%E5%BA%94%E5%8F%B3%E8%BE%B9%E4%BB%80%E4%B9%88-%E5%86%8D%E6%89%BE%E5%88%B0%E5%92%8C%E9%97%AE%E5%8F%B7%E4%B8%80%E6%A0%B7%E7%9A%84%E5%B7%A6%E8%BE%B9%E5%9B%BE%E5%BD%A2.mp3"
+    },
+    {
+      "id": "success-小猫对应苹果-密码题要按同一行的对应关系找答案",
+      "kind": "success",
+      "text": "小猫对应苹果，密码题要按同一行的对应关系找答案。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%B0%8F%E7%8C%AB%E5%AF%B9%E5%BA%94%E8%8B%B9%E6%9E%9C-%E5%AF%86%E7%A0%81%E9%A2%98%E8%A6%81%E6%8C%89%E5%90%8C%E4%B8%80%E8%A1%8C%E7%9A%84%E5%AF%B9%E5%BA%94%E5%85%B3%E7%B3%BB%E6%89%BE%E7%AD%94%E6%A1%88.mp3"
+    },
+    {
+      "id": "retry-先在密码表里找到和问号左边一样的图形-再看它右边对应哪个图-不要选隔壁一行",
+      "kind": "retry",
+      "text": "先在密码表里找到和问号左边一样的图形，再看它右边对应哪个图，不要选隔壁一行。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E5%9C%A8%E5%AF%86%E7%A0%81%E8%A1%A8%E9%87%8C%E6%89%BE%E5%88%B0%E5%92%8C%E9%97%AE%E5%8F%B7%E5%B7%A6%E8%BE%B9%E4%B8%80%E6%A0%B7%E7%9A%84%E5%9B%BE%E5%BD%A2-%E5%86%8D%E7%9C%8B%E5%AE%83%E5%8F%B3%E8%BE%B9%E5%AF%B9%E5%BA%94%E5%93%AA%E4%B8%AA%E5%9B%BE-%E4%B8%8D%E8%A6%81%E9%80%89%E9%9A%94%E5%A3%81%E4%B8%80%E8%A1%8C.mp3"
+    },
+    {
+      "id": "parent-问她-问号左边的图在密码表哪一行-这一行右边对应什么-为什么相邻一行不对",
+      "kind": "parent",
+      "text": "问她：问号左边的图在密码表哪一行？这一行右边对应什么？为什么相邻一行不对？",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E9%97%AE%E5%8F%B7%E5%B7%A6%E8%BE%B9%E7%9A%84%E5%9B%BE%E5%9C%A8%E5%AF%86%E7%A0%81%E8%A1%A8%E5%93%AA%E4%B8%80%E8%A1%8C-%E8%BF%99%E4%B8%80%E8%A1%8C%E5%8F%B3%E8%BE%B9%E5%AF%B9%E5%BA%94%E4%BB%80%E4%B9%88-%E4%B8%BA%E4%BB%80%E4%B9%88%E7%9B%B8%E9%82%BB%E4%B8%80%E8%A1%8C%E4%B8%8D%E5%AF%B9.mp3"
+    },
+    {
+      "id": "success-小鱼对应星星-密码题要按同一行的对应关系找答案",
+      "kind": "success",
+      "text": "小鱼对应星星，密码题要按同一行的对应关系找答案。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%B0%8F%E9%B1%BC%E5%AF%B9%E5%BA%94%E6%98%9F%E6%98%9F-%E5%AF%86%E7%A0%81%E9%A2%98%E8%A6%81%E6%8C%89%E5%90%8C%E4%B8%80%E8%A1%8C%E7%9A%84%E5%AF%B9%E5%BA%94%E5%85%B3%E7%B3%BB%E6%89%BE%E7%AD%94%E6%A1%88.mp3"
+    },
+    {
+      "id": "success-小兔对应叶子-密码题要按同一行的对应关系找答案",
+      "kind": "success",
+      "text": "小兔对应叶子，密码题要按同一行的对应关系找答案。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%B0%8F%E5%85%94%E5%AF%B9%E5%BA%94%E5%8F%B6%E5%AD%90-%E5%AF%86%E7%A0%81%E9%A2%98%E8%A6%81%E6%8C%89%E5%90%8C%E4%B8%80%E8%A1%8C%E7%9A%84%E5%AF%B9%E5%BA%94%E5%85%B3%E7%B3%BB%E6%89%BE%E7%AD%94%E6%A1%88.mp3"
+    },
+    {
+      "id": "success-小狗对应梨子-密码题要按同一行的对应关系找答案",
+      "kind": "success",
+      "text": "小狗对应梨子，密码题要按同一行的对应关系找答案。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%B0%8F%E7%8B%97%E5%AF%B9%E5%BA%94%E6%A2%A8%E5%AD%90-%E5%AF%86%E7%A0%81%E9%A2%98%E8%A6%81%E6%8C%89%E5%90%8C%E4%B8%80%E8%A1%8C%E7%9A%84%E5%AF%B9%E5%BA%94%E5%85%B3%E7%B3%BB%E6%89%BE%E7%AD%94%E6%A1%88.mp3"
+    },
+    {
+      "id": "success-圆形对应三角形-密码题要按同一行的对应关系找答案",
+      "kind": "success",
+      "text": "圆形对应三角形，密码题要按同一行的对应关系找答案。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%9C%86%E5%BD%A2%E5%AF%B9%E5%BA%94%E4%B8%89%E8%A7%92%E5%BD%A2-%E5%AF%86%E7%A0%81%E9%A2%98%E8%A6%81%E6%8C%89%E5%90%8C%E4%B8%80%E8%A1%8C%E7%9A%84%E5%AF%B9%E5%BA%94%E5%85%B3%E7%B3%BB%E6%89%BE%E7%AD%94%E6%A1%88.mp3"
+    },
+    {
+      "id": "success-星星对应花朵-密码题要按同一行的对应关系找答案",
+      "kind": "success",
+      "text": "星星对应花朵，密码题要按同一行的对应关系找答案。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%98%9F%E6%98%9F%E5%AF%B9%E5%BA%94%E8%8A%B1%E6%9C%B5-%E5%AF%86%E7%A0%81%E9%A2%98%E8%A6%81%E6%8C%89%E5%90%8C%E4%B8%80%E8%A1%8C%E7%9A%84%E5%AF%B9%E5%BA%94%E5%85%B3%E7%B3%BB%E6%89%BE%E7%AD%94%E6%A1%88.mp3"
+    },
+    {
+      "id": "success-菱形对应圆角方块-密码题要按同一行的对应关系找答案",
+      "kind": "success",
+      "text": "菱形对应圆角方块，密码题要按同一行的对应关系找答案。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%8F%B1%E5%BD%A2%E5%AF%B9%E5%BA%94%E5%9C%86%E8%A7%92%E6%96%B9%E5%9D%97-%E5%AF%86%E7%A0%81%E9%A2%98%E8%A6%81%E6%8C%89%E5%90%8C%E4%B8%80%E8%A1%8C%E7%9A%84%E5%AF%B9%E5%BA%94%E5%85%B3%E7%B3%BB%E6%89%BE%E7%AD%94%E6%A1%88.mp3"
+    },
+    {
+      "id": "success-叶子对应小鱼-密码题要按同一行的对应关系找答案",
+      "kind": "success",
+      "text": "叶子对应小鱼，密码题要按同一行的对应关系找答案。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%8F%B6%E5%AD%90%E5%AF%B9%E5%BA%94%E5%B0%8F%E9%B1%BC-%E5%AF%86%E7%A0%81%E9%A2%98%E8%A6%81%E6%8C%89%E5%90%8C%E4%B8%80%E8%A1%8C%E7%9A%84%E5%AF%B9%E5%BA%94%E5%85%B3%E7%B3%BB%E6%89%BE%E7%AD%94%E6%A1%88.mp3"
+    },
+    {
+      "id": "game-title-缺口补一补",
+      "kind": "game-title",
+      "text": "缺口补一补",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/game-title-%E7%BC%BA%E5%8F%A3%E8%A1%A5%E4%B8%80%E8%A1%A5.mp3"
+    },
+    {
+      "id": "game-goal-训练视觉闭合-缺口方向和边角形状匹配",
+      "kind": "game-goal",
+      "text": "训练视觉闭合、缺口方向和边角形状匹配。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/game-goal-%E8%AE%AD%E7%BB%83%E8%A7%86%E8%A7%89%E9%97%AD%E5%90%88-%E7%BC%BA%E5%8F%A3%E6%96%B9%E5%90%91%E5%92%8C%E8%BE%B9%E8%A7%92%E5%BD%A2%E7%8A%B6%E5%8C%B9%E9%85%8D.mp3"
+    },
+    {
+      "id": "prompt-这个轮廓缺了一块-下面哪一个完整图最能补上-先看缺口在哪一边-再看缺口需要圆边-直边-尖角还是尾巴",
+      "kind": "prompt",
+      "text": "这个轮廓缺了一块，下面哪一个完整图最能补上？先看缺口在哪一边，再看缺口需要圆边、直边、尖角还是尾巴。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%BF%99%E4%B8%AA%E8%BD%AE%E5%BB%93%E7%BC%BA%E4%BA%86%E4%B8%80%E5%9D%97-%E4%B8%8B%E9%9D%A2%E5%93%AA%E4%B8%80%E4%B8%AA%E5%AE%8C%E6%95%B4%E5%9B%BE%E6%9C%80%E8%83%BD%E8%A1%A5%E4%B8%8A-%E5%85%88%E7%9C%8B%E7%BC%BA%E5%8F%A3%E5%9C%A8%E5%93%AA%E4%B8%80%E8%BE%B9-%E5%86%8D%E7%9C%8B%E7%BC%BA%E5%8F%A3%E9%9C%80%E8%A6%81%E5%9C%86%E8%BE%B9-%E7%9B%B4%E8%BE%B9-%E5%B0%96%E8%A7%92%E8%BF%98%E6%98%AF%E5%B0%BE%E5%B7%B4.mp3"
+    },
+    {
+      "id": "success-圆形对-圆形右边缺一段圆弧-补上的也要是圆弧-补缺口要看边-角和缺口方向",
+      "kind": "success",
+      "text": "圆形对，圆形右边缺一段圆弧，补上的也要是圆弧。补缺口要看边、角和缺口方向。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%9C%86%E5%BD%A2%E5%AF%B9-%E5%9C%86%E5%BD%A2%E5%8F%B3%E8%BE%B9%E7%BC%BA%E4%B8%80%E6%AE%B5%E5%9C%86%E5%BC%A7-%E8%A1%A5%E4%B8%8A%E7%9A%84%E4%B9%9F%E8%A6%81%E6%98%AF%E5%9C%86%E5%BC%A7-%E8%A1%A5%E7%BC%BA%E5%8F%A3%E8%A6%81%E7%9C%8B%E8%BE%B9-%E8%A7%92%E5%92%8C%E7%BC%BA%E5%8F%A3%E6%96%B9%E5%90%91.mp3"
+    },
+    {
+      "id": "retry-先指缺口方向-再说缺口需要圆边-直边-尖角-叶子还是尾巴-然后排除轮廓相近但边角不对的选项",
+      "kind": "retry",
+      "text": "先指缺口方向，再说缺口需要圆边、直边、尖角、叶子还是尾巴，然后排除轮廓相近但边角不对的选项。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E6%8C%87%E7%BC%BA%E5%8F%A3%E6%96%B9%E5%90%91-%E5%86%8D%E8%AF%B4%E7%BC%BA%E5%8F%A3%E9%9C%80%E8%A6%81%E5%9C%86%E8%BE%B9-%E7%9B%B4%E8%BE%B9-%E5%B0%96%E8%A7%92-%E5%8F%B6%E5%AD%90%E8%BF%98%E6%98%AF%E5%B0%BE%E5%B7%B4-%E7%84%B6%E5%90%8E%E6%8E%92%E9%99%A4%E8%BD%AE%E5%BB%93%E7%9B%B8%E8%BF%91%E4%BD%86%E8%BE%B9%E8%A7%92%E4%B8%8D%E5%AF%B9%E7%9A%84%E9%80%89%E9%A1%B9.mp3"
+    },
+    {
+      "id": "parent-请她指着缺口说-缺的是哪里-为什么这个图能补上-其他相近图形的边角哪里不一样",
+      "kind": "parent",
+      "text": "请她指着缺口说：缺的是哪里？为什么这个图能补上，其他相近图形的边角哪里不一样？",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E7%BC%BA%E5%8F%A3%E8%AF%B4-%E7%BC%BA%E7%9A%84%E6%98%AF%E5%93%AA%E9%87%8C-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%99%E4%B8%AA%E5%9B%BE%E8%83%BD%E8%A1%A5%E4%B8%8A-%E5%85%B6%E4%BB%96%E7%9B%B8%E8%BF%91%E5%9B%BE%E5%BD%A2%E7%9A%84%E8%BE%B9%E8%A7%92%E5%93%AA%E9%87%8C%E4%B8%8D%E4%B8%80%E6%A0%B7.mp3"
+    },
+    {
+      "id": "success-圆角方块对-圆角方块上边缺直边接圆角-补缺口要看边-角和缺口方向",
+      "kind": "success",
+      "text": "圆角方块对，圆角方块上边缺直边接圆角。补缺口要看边、角和缺口方向。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%9C%86%E8%A7%92%E6%96%B9%E5%9D%97%E5%AF%B9-%E5%9C%86%E8%A7%92%E6%96%B9%E5%9D%97%E4%B8%8A%E8%BE%B9%E7%BC%BA%E7%9B%B4%E8%BE%B9%E6%8E%A5%E5%9C%86%E8%A7%92-%E8%A1%A5%E7%BC%BA%E5%8F%A3%E8%A6%81%E7%9C%8B%E8%BE%B9-%E8%A7%92%E5%92%8C%E7%BC%BA%E5%8F%A3%E6%96%B9%E5%90%91.mp3"
+    },
+    {
+      "id": "success-三角形对-三角形底下缺一条直边-补缺口要看边-角和缺口方向",
+      "kind": "success",
+      "text": "三角形对，三角形底下缺一条直边。补缺口要看边、角和缺口方向。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E4%B8%89%E8%A7%92%E5%BD%A2%E5%AF%B9-%E4%B8%89%E8%A7%92%E5%BD%A2%E5%BA%95%E4%B8%8B%E7%BC%BA%E4%B8%80%E6%9D%A1%E7%9B%B4%E8%BE%B9-%E8%A1%A5%E7%BC%BA%E5%8F%A3%E8%A6%81%E7%9C%8B%E8%BE%B9-%E8%A7%92%E5%92%8C%E7%BC%BA%E5%8F%A3%E6%96%B9%E5%90%91.mp3"
+    },
+    {
+      "id": "success-菱形对-菱形左边缺两条斜边夹尖角-补缺口要看边-角和缺口方向",
+      "kind": "success",
+      "text": "菱形对，菱形左边缺两条斜边夹尖角。补缺口要看边、角和缺口方向。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%8F%B1%E5%BD%A2%E5%AF%B9-%E8%8F%B1%E5%BD%A2%E5%B7%A6%E8%BE%B9%E7%BC%BA%E4%B8%A4%E6%9D%A1%E6%96%9C%E8%BE%B9%E5%A4%B9%E5%B0%96%E8%A7%92-%E8%A1%A5%E7%BC%BA%E5%8F%A3%E8%A6%81%E7%9C%8B%E8%BE%B9-%E8%A7%92%E5%92%8C%E7%BC%BA%E5%8F%A3%E6%96%B9%E5%90%91.mp3"
+    },
+    {
+      "id": "success-星星对-星星右边缺尖角和凹进去的边-补缺口要看边-角和缺口方向",
+      "kind": "success",
+      "text": "星星对，星星右边缺尖角和凹进去的边。补缺口要看边、角和缺口方向。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%98%9F%E6%98%9F%E5%AF%B9-%E6%98%9F%E6%98%9F%E5%8F%B3%E8%BE%B9%E7%BC%BA%E5%B0%96%E8%A7%92%E5%92%8C%E5%87%B9%E8%BF%9B%E5%8E%BB%E7%9A%84%E8%BE%B9-%E8%A1%A5%E7%BC%BA%E5%8F%A3%E8%A6%81%E7%9C%8B%E8%BE%B9-%E8%A7%92%E5%92%8C%E7%BC%BA%E5%8F%A3%E6%96%B9%E5%90%91.mp3"
+    },
+    {
+      "id": "success-花朵对-花朵上方缺圆圆花瓣-补缺口要看边-角和缺口方向",
+      "kind": "success",
+      "text": "花朵对，花朵上方缺圆圆花瓣。补缺口要看边、角和缺口方向。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%8A%B1%E6%9C%B5%E5%AF%B9-%E8%8A%B1%E6%9C%B5%E4%B8%8A%E6%96%B9%E7%BC%BA%E5%9C%86%E5%9C%86%E8%8A%B1%E7%93%A3-%E8%A1%A5%E7%BC%BA%E5%8F%A3%E8%A6%81%E7%9C%8B%E8%BE%B9-%E8%A7%92%E5%92%8C%E7%BC%BA%E5%8F%A3%E6%96%B9%E5%90%91.mp3"
+    },
+    {
+      "id": "success-苹果对-苹果上方缺叶子和圆鼓鼓的边-补缺口要看边-角和缺口方向",
+      "kind": "success",
+      "text": "苹果对，苹果上方缺叶子和圆鼓鼓的边。补缺口要看边、角和缺口方向。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%8B%B9%E6%9E%9C%E5%AF%B9-%E8%8B%B9%E6%9E%9C%E4%B8%8A%E6%96%B9%E7%BC%BA%E5%8F%B6%E5%AD%90%E5%92%8C%E5%9C%86%E9%BC%93%E9%BC%93%E7%9A%84%E8%BE%B9-%E8%A1%A5%E7%BC%BA%E5%8F%A3%E8%A6%81%E7%9C%8B%E8%BE%B9-%E8%A7%92%E5%92%8C%E7%BC%BA%E5%8F%A3%E6%96%B9%E5%90%91.mp3"
+    },
+    {
+      "id": "success-小鱼对-小鱼右边缺三角尾巴-补缺口要看边-角和缺口方向",
+      "kind": "success",
+      "text": "小鱼对，小鱼右边缺三角尾巴。补缺口要看边、角和缺口方向。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%B0%8F%E9%B1%BC%E5%AF%B9-%E5%B0%8F%E9%B1%BC%E5%8F%B3%E8%BE%B9%E7%BC%BA%E4%B8%89%E8%A7%92%E5%B0%BE%E5%B7%B4-%E8%A1%A5%E7%BC%BA%E5%8F%A3%E8%A6%81%E7%9C%8B%E8%BE%B9-%E8%A7%92%E5%92%8C%E7%BC%BA%E5%8F%A3%E6%96%B9%E5%90%91.mp3"
+    },
+    {
       "id": "system-完成啦-我们再想一想-为什么会这样",
       "kind": "system",
       "text": "完成啦。我们再想一想，为什么会这样？",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/system-%E5%AE%8C%E6%88%90%E5%95%A6-%E6%88%91%E4%BB%AC%E5%86%8D%E6%83%B3%E4%B8%80%E6%83%B3-%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BC%9A%E8%BF%99%E6%A0%B7.mp3"
-    },
-    {
-      "id": "system-小小思考屋",
-      "kind": "system",
-      "text": "小小思考屋",
-      "provider": "macOS say + afconvert",
-      "src": "/audio/voice/zh-CN/macos-tingting/system-%E5%B0%8F%E5%B0%8F%E6%80%9D%E8%80%83%E5%B1%8B.wav"
     }
   ]
 }

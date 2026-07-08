@@ -43,6 +43,31 @@ React + TypeScript + Vite 单页应用，核心体验是让孩子通过看图、
 - 所有应用可引用图片必须注册到 `src/data/imageGallery.ts`。
 - 题目中 `sceneImage.src` 必须来自 `imageGallery.scenes`。
 
+## Generation And Release Workflows
+
+语音、图片和发布不是临时产物，必须按可审计流水线处理：
+
+- 改动任何题干、指令、选项、反馈或家长提示后，必须重新导出语音脚本：
+  `pnpm export:voice-lines`。
+- 默认标准语音包是 Edge `zh-CN-XiaoxiaoNeural`，使用：
+  `pnpm generate:edge-voices -- --voice zh-CN-XiaoxiaoNeural --rate -12% --pitch +2Hz --python ./local-tts/.venv/bin/python --quiet --retries 3`。
+- macOS `say` 语音只能作为 Edge/F5 不可用时的临时补缺兜底；最终验收或发布前，
+  `public/audio/voice/manifest.json` 必须与 `public/audio/voice-lines.json`
+  对齐，`failures` 为空，并报告是否仍存在 `macOS say + afconvert` 或
+  `mixed local`。
+- 使用 image-gen 或其他工具生成的图片，必须落到对应 `public/images/...`
+  目录，源图放同类目录的 `source/` 下；不能只留在 `.codex/generated_images`
+  或聊天附件里。
+- 运行时图片必须注册到 `src/data/imageGallery.ts`；具体物体和高频图卡应优先
+  使用本地 PNG 资产，只有缺少资产时才允许临时使用内置 SVG/emoji 视觉兜底。
+- 场景图必须是承载题目线索的 1200x675 PNG；不能为了装饰添加会压缩题面、
+  干扰证据或重复答案表面的 `sceneImage`。
+- NAS/静态部署的标准产物来自 `pnpm build` 和 `pnpm release:nas`，不要在 NAS
+  上运行 `pnpm dev`、Vite 或源码题库服务。
+- Mac 端签收不能只看浏览器或 Vite preview；涉及启动页、图标、语音、本地资源、
+  持久化或发布体验时，必须用 `pnpm mac:build` 生成真实 `.app` 并打开测试。
+  本机里程碑安装用 `pnpm mac:install`。
+
 ## Documentation Hygiene
 
 - `docs/CHANGELOG.md` 记录已经完成的用户可见或工程重要变更。

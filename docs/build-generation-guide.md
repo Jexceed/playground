@@ -85,6 +85,25 @@ pnpm build
 pnpm audit:curriculum
 ```
 
+在 Mac 开发环境里，不能只用浏览器或 Vite preview 做最终预览。涉及
+启动页、图标、语音、本地资源、持久化或发布体验的改动，还要生成真实
+`.app` 并通过它预览和测试：
+
+```bash
+pnpm mac:build
+open "src-tauri/target/release/bundle/macos/小小思考屋.app"
+```
+
+准备做本机安装或里程碑验证时，再运行：
+
+```bash
+pnpm mac:install
+open "/Applications/小小思考屋.app"
+```
+
+浏览器预览只用于快速排版和交互迭代；Mac 端签收以生成出来的 `.app`
+为准。
+
 并检查：
 
 - `public/audio/voice/manifest.json` 的 `provider` 是 `edge-tts Python package`、`F5-TTS local`、`macOS say + afconvert` 或 `mixed local`。

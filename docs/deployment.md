@@ -77,7 +77,13 @@ Development app:
 pnpm mac:dev
 ```
 
-Build installable app/bundle:
+`pnpm mac:dev` is useful for quick Tauri shell debugging, but it is not the
+final Mac preview path. For Mac development review, build a real `.app` bundle
+and open that bundle, because Dock icon handling, launch behavior, local file
+paths, bundled assets, code signing, and Tauri production configuration can
+differ from the browser/Vite dev server.
+
+Build the previewable `.app` bundle:
 
 ```bash
 pnpm mac:build
@@ -88,6 +94,17 @@ The default command builds a macOS `.app` bundle under:
 ```text
 src-tauri/target/release/bundle/macos/小小思考屋.app
 ```
+
+Preview the built app directly:
+
+```bash
+open "src-tauri/target/release/bundle/macos/小小思考屋.app"
+```
+
+Use this `.app` preview for Mac-specific checks before treating a change as
+ready: launch splash, app icon, local audio playback, packaged images, saved
+progress, and any behavior that depends on the Tauri wrapper. Browser preview
+is still useful for layout iteration, but it is not enough for Mac app sign-off.
 
 Optional DMG packaging can be attempted with:
 
@@ -107,6 +124,12 @@ This builds the `.app`, applies a local ad-hoc signature, and copies it to:
 /Applications/小小思考屋.app
 ```
 
+After install, run the installed app for the final local check:
+
+```bash
+open "/Applications/小小思考屋.app"
+```
+
 The Tauri config runs `pnpm build` and points `frontendDist` to `../dist`, following the Tauri v2 Vite integration model.
 
 ## Verification
@@ -119,3 +142,8 @@ pnpm audit:curriculum
 pnpm test:release
 pnpm mac:build
 ```
+
+On a Mac development machine, also open the generated bundle at
+`src-tauri/target/release/bundle/macos/小小思考屋.app` for preview/testing. For
+release-style local validation, run `pnpm mac:install` and open
+`/Applications/小小思考屋.app`.

@@ -352,6 +352,7 @@ function rasterForKind(kind: string) {
   if (kind === "strawberry") return imageGallery.items.strawberry;
   if (kind === "apple") return imageGallery.items.apple;
   if (kind === "orange") return imageGallery.items.orange;
+  if (kind === "grape") return imageGallery.items.grape;
   if (kind === "cookie") return imageGallery.items.cookie;
   if (kind === "dirtyHands") return imageGallery.items.dirtyHands;
   if (kind === "washHands") return imageGallery.items.washHands;
@@ -372,12 +373,16 @@ function rasterForKind(kind: string) {
   if (kind === "backpack") return imageGallery.items.backpack;
   if (kind === "book") return imageGallery.items.book;
   if (kind === "pencil") return imageGallery.items.pencil;
+  if (kind === "ruler" || kind === "setSquare") return imageGallery.items.ruler;
   if (kind === "pencilCase") return imageGallery.items.pencilCase;
   if (kind === "waterBottle") return imageGallery.items.waterBottle;
   if (kind === "lunchBox") return imageGallery.items.lunchBox;
   if (kind === "raincoat") return imageGallery.items.raincoat;
   if (kind === "sunHat") return imageGallery.items.sunHat;
   if (kind === "car") return imageGallery.items.toyCar;
+  if (kind === "bus") return imageGallery.items.bus;
+  if (kind === "bike") return imageGallery.items.bike;
+  if (kind === "plane") return imageGallery.items.plane;
   if (kind === "water") return imageGallery.items.water;
   if (kind === "cup") return imageGallery.items.cup;
   if (kind === "key") return imageGallery.items.key;
@@ -390,6 +395,7 @@ function rasterForKind(kind: string) {
   if (kind === "child" || kind === "childGirl" || kind === "childBoy") return imageGallery.items.child;
   if (kind === "candy") return imageGallery.items.candy;
   if (kind === "block") return imageGallery.items.block;
+  if (kind === "tower") return imageGallery.items.blockTower;
   if (kind === "star" || kind === "smallStar") return imageGallery.items.star;
   if (kind === "fish") return imageGallery.items.fish;
   if (kind === "bird") return imageGallery.items.bird;

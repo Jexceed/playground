@@ -9,6 +9,8 @@ updates in the same change.
 - `public/images/brand/`: brand marks and app icons.
 - `public/images/characters/`: reusable character portraits.
 - `public/images/items/`: non-character objects, actions, tools, materials, and small visual tokens.
+- `public/images/items/graphic-workshop/`: image-gen generated transparent
+  sticker assets used by 图形工坊 `graphicChallenge` figures.
 - `public/images/scenes/`: full scene images that carry question clues.
 
 Generated or source images belong in a `source/` child directory under the same
@@ -38,6 +40,9 @@ gallery entry.
 
 ## Audio Assets
 
+- Brand sounds live under `public/audio/brand/`; they are one-off product
+  sounds and should be played directly, not through the curriculum voice
+  manifest.
 - Voice scripts are exported to `public/audio/voice-lines.json`.
 - The active local voice pack is described by `public/audio/voice/manifest.json`.
 - Generated voice files live under `public/audio/voice/<locale>/<voice-id>/`.

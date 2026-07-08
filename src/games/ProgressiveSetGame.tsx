@@ -1,10 +1,11 @@
 import { ArrowRight, Check, RotateCcw } from "lucide-react";
-import { Fragment, useEffect, useMemo, useState } from "react";
+import { Fragment, useEffect, useId, useMemo, useState } from "react";
 import type { CSSProperties } from "react";
 import { GuideMascot } from "../components/GuideMascot";
 import { VisualGlyph, VisualToken, visualMetaFor, visualParts } from "../components/VisualToken";
+import { imageGallery } from "../data/imageGallery";
 import { playTone, speak } from "../speech";
-import type { GameConfig, GameRound } from "../types";
+import type { GameConfig, GameRound, GraphicChallengeOption, GraphicFigure, GraphicFigureGroup } from "../types";
 
 export function ProgressiveSetGame({
   game,
@@ -80,8 +81,10 @@ export function ProgressiveSetGame({
       return;
     }
     const choice = round.choices.find((item) => item.value === value);
+    const graphicOption = round.graphicChallenge?.options.find((item) => item.value === value);
     playTone("tap");
-    if (choice) speak(labelForVoice(choice.label));
+    if (graphicOption) speak(graphicOption.label);
+    else if (choice) speak(labelForVoice(choice.label));
     setVoiceReady(true);
     setSelected(value);
     setRetryMessage(null);
@@ -185,10 +188,12 @@ export function ProgressiveSetGame({
           const active = selected === choice.value;
           const wrong = answered && active && choice.value !== round.answer;
           const correct = answered && choice.value === round.answer;
+          const graphicOption = round.graphicChallenge?.options.find((option) => option.value === choice.value);
+          const voiceLabel = graphicOption ? `${choice.label}，${graphicOption.label}` : labelForVoice(choice.label);
           return (
             <button
-              aria-label={labelForVoice(choice.label)}
-              className={`answer-choice ${isVisualCardChoice(choice.label) ? "answer-choice-visual-card" : ""} ${active ? "active" : ""} ${correct ? "correct" : ""} ${wrong ? "wrong" : ""}`}
+              aria-label={voiceLabel}
+              className={`answer-choice ${graphicOption ? "answer-choice-graphic" : ""} ${isVisualCardChoice(choice.label) ? "answer-choice-visual-card" : ""} ${active ? "active" : ""} ${correct ? "correct" : ""} ${wrong ? "wrong" : ""}`}
               data-testid={`answer-${choice.value}`}
               disabled={answered}
               key={choice.value}
@@ -196,7 +201,7 @@ export function ProgressiveSetGame({
               onClick={() => choose(choice.value)}
             >
               {correct && <Check size={18} />}
-              <ChoiceContent label={choice.label} />
+              <ChoiceContent graphicOption={graphicOption} label={choice.label} />
             </button>
           );
         })}
@@ -237,7 +242,9 @@ export function ProgressiveSetGame({
   );
 }
 
-function ChoiceContent({ label }: { label: string }) {
+function ChoiceContent({ graphicOption, label }: { graphicOption?: GraphicChallengeOption; label: string }) {
+  if (graphicOption) return <GraphicAnswerFigure letter={label} option={graphicOption} />;
+
   const visualParts = visualCardParts(label);
   if (visualParts.length > 1) {
     return (
@@ -254,6 +261,15 @@ function ChoiceContent({ label }: { label: string }) {
       <ChoiceCue label={label} />
       <span>{label}</span>
     </>
+  );
+}
+
+function GraphicAnswerFigure({ letter, option }: { letter: string; option: GraphicChallengeOption }) {
+  return (
+    <span className="graphic-answer-figure">
+      <span className="graphic-choice-letter" aria-hidden="true">{letter}</span>
+      <GraphicFigureSetSvg figures={option.figures ?? (option.figure ? [option.figure] : [])} />
+    </span>
   );
 }
 
@@ -366,12 +382,14 @@ function RoundBoard({
   ].filter(Boolean).join(" ");
   return (
     <section className={boardClasses} aria-label="题目画面">
-      {!round.sceneImage && <SceneBackdrop scene={scene} />}
+      {!round.sceneImage && !round.graphicChallenge && <SceneBackdrop scene={scene} />}
       {round.sceneImage && (
         <figure className="scene-image-card">
           <img src={round.sceneImage.src} alt={round.sceneImage.alt} />
         </figure>
       )}
+
+      {round.graphicChallenge && <GraphicChallengeBoard challenge={round.graphicChallenge} />}
 
       {round.sequence && (
         <div className="sequence-row">
@@ -415,17 +433,331 @@ function RoundBoard({
   );
 }
 
+function GraphicChallengeBoard({ challenge }: { challenge: NonNullable<GameRound["graphicChallenge"]> }) {
+  return (
+    <div className={`graphic-challenge-board graphic-challenge-${challenge.kind}`} aria-label={challenge.stemLabel}>
+      <div className="graphic-stem-card">
+        <strong>{challenge.stemLabel}</strong>
+        {challenge.groups && (
+          <div className="graphic-stem-groups">
+            {challenge.groups.map((group, index) => (
+              <GraphicFigureGroupCard group={group} key={`${group.label ?? "group"}-${index}`} />
+            ))}
+          </div>
+        )}
+        <div className="graphic-stem-figures">
+          <GraphicFigureSetSvg figures={challenge.figures} large />
+        </div>
+      </div>
+      <div className="graphic-option-hint" aria-hidden="true">在下面选 A、B、C、D</div>
+    </div>
+  );
+}
+
+function GraphicFigureGroupCard({ group }: { group: GraphicFigureGroup }) {
+  return (
+    <div className={`graphic-figure-group graphic-figure-group-${group.connector ?? "plain"}`}>
+      {group.label && <span>{group.label}</span>}
+      <GraphicFigureSetSvg figures={group.figures} />
+    </div>
+  );
+}
+
+function GraphicFigureSvg({ figure, large = false }: { figure: GraphicFigure; large?: boolean }) {
+  return <GraphicFigureSetSvg figures={[figure]} large={large} />;
+}
+
+function GraphicFigureSetSvg({ figures, large = false }: { figures: GraphicFigure[]; large?: boolean }) {
+  const clipId = useId().replace(/:/g, "");
+  const first = figures[0];
+  if (!first) {
+    return <svg className={`graphic-figure ${large ? "graphic-figure-large" : ""}`} viewBox="0 0 120 120" aria-hidden="true" />;
+  }
+  if (figures.length === 1 && first.mode === "detail") {
+    return (
+      <svg className={`graphic-figure ${large ? "graphic-figure-large" : ""} graphic-figure-detail`} viewBox="0 0 120 120" role="img" aria-hidden="true">
+        <defs>
+          <clipPath id={clipId}>
+            <circle cx="60" cy="60" r="48" />
+          </clipPath>
+        </defs>
+        <circle cx="60" cy="60" r="52" fill="#fff9e8" stroke="#2f3037" strokeWidth="5" />
+        <g clipPath={`url(#${clipId})`}>
+          <GraphicDetailShape figure={first} />
+        </g>
+        <circle cx="60" cy="60" r="48" fill="none" stroke="#4b5563" strokeWidth="3" />
+        <line x1="94" y1="94" x2="112" y2="112" stroke="#4b5563" strokeWidth="8" strokeLinecap="round" />
+      </svg>
+    );
+  }
+  return (
+    <svg className={`graphic-figure ${large ? "graphic-figure-large" : ""} graphic-figure-${first.mode ?? "color"}`} viewBox="0 0 120 120" role="img" aria-hidden="true">
+      {figures.map((figure, index) => {
+        const color = figure.mode === "shadow" ? "#242424" : figure.mode === "outline" || figure.mode === "missing" ? "rgba(255, 253, 247, 0.16)" : figure.color ?? defaultGraphicColor(figure.shape);
+        const stroke = figure.mode === "shadow" ? "#242424" : "#2f3037";
+        const transform = `translate(${figure.x ?? 0} ${figure.y ?? 0}) translate(60 60) rotate(${figure.rotate ?? 0}) scale(${figure.scale ?? 1}) translate(-60 -60)`;
+        const figureId = `${clipId}-figure-${index}`;
+        return (
+          <g key={`${figure.shape}-${index}`} opacity={figure.opacity ?? 1} strokeDasharray={figure.mode === "missing" ? "10 7" : undefined} transform={transform}>
+            <GraphicFigureArt figure={figure} fill={color} idPrefix={figureId} stroke={stroke} />
+            {figure.mode === "covered" && <CoverMask cover={figure.cover ?? "middle"} />}
+            {figure.mode === "missing" && <GapMask gap={figure.gap ?? "right"} />}
+          </g>
+        );
+      })}
+    </svg>
+  );
+}
+
+function GraphicFigureArt({ figure, fill, idPrefix, stroke }: { figure: GraphicFigure; fill: string; idPrefix?: string; stroke: string }) {
+  if (figure.mode === "blank") return <BlankSlot />;
+  const assetSrc = graphicFigureAssetSrc(figure.shape);
+  if (assetSrc && figure.mode !== "missing" && figure.mode !== "outline") {
+    if (figure.mode === "shadow") {
+      const maskId = `${idPrefix ?? "graphic-shadow"}-mask`;
+      return (
+        <>
+          <defs>
+            <mask id={maskId} maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse" x="0" y="0" width="120" height="120" style={{ maskType: "alpha" }}>
+              <image href={assetSrc} height="112" preserveAspectRatio="xMidYMid meet" width="112" x="4" y="4" />
+            </mask>
+          </defs>
+          <rect x="4" y="4" width="112" height="112" fill="#242424" mask={`url(#${maskId})`} />
+        </>
+      );
+    }
+    return <image href={assetSrc} height="112" preserveAspectRatio="xMidYMid meet" width="112" x="4" y="4" />;
+  }
+  return <GraphicShape shape={figure.shape} fill={fill} stroke={stroke} />;
+}
+
+function BlankSlot() {
+  return (
+    <g>
+      <rect x="25" y="25" width="70" height="70" rx="16" fill="#fffdf7" stroke="#64748b" strokeDasharray="8 6" strokeWidth="4" />
+      <text x="60" y="70" textAnchor="middle" fontSize="36" fontWeight="800" fill="#64748b">?</text>
+    </g>
+  );
+}
+
+function GraphicShape({ fill, shape, stroke }: { fill: string; shape: GraphicFigure["shape"]; stroke: string }) {
+  switch (shape) {
+    case "circle":
+      return <circle cx="60" cy="60" r="35" fill={fill} stroke={stroke} strokeWidth="4" />;
+    case "diamond":
+      return <path d="M60 17 L102 60 L60 103 L18 60 Z" fill={fill} stroke={stroke} strokeLinejoin="round" strokeWidth="4" />;
+    case "rounded-square":
+      return <rect x="27" y="27" width="66" height="66" rx="12" fill={fill} stroke={stroke} strokeWidth="4" />;
+    case "star":
+      return <path d="M60 16 L72 45 L104 47 L79 67 L88 99 L60 81 L32 99 L41 67 L16 47 L48 45 Z" fill={fill} stroke={stroke} strokeLinejoin="round" strokeWidth="4" />;
+    case "triangle":
+      return <path d="M60 18 L103 96 L17 96 Z" fill={fill} stroke={stroke} strokeLinejoin="round" strokeWidth="4" />;
+    case "flower":
+      return (
+        <g fill={fill} stroke={stroke} strokeWidth="4">
+          <circle cx="60" cy="33" r="20" />
+          <circle cx="84" cy="54" r="20" />
+          <circle cx="74" cy="84" r="20" />
+          <circle cx="46" cy="84" r="20" />
+          <circle cx="36" cy="54" r="20" />
+          <circle cx="60" cy="61" r="16" fill="#ffd166" />
+        </g>
+      );
+    case "apple":
+      return (
+        <g fill={fill} stroke={stroke} strokeWidth="4">
+          <path d="M37 48 C28 59 30 93 54 96 C58 97 62 97 66 96 C90 93 92 59 83 48 C74 35 65 42 60 46 C55 42 46 35 37 48 Z" />
+          <path d="M60 42 C62 29 72 24 84 25 C79 37 70 43 60 42 Z" fill="#58a55c" />
+        </g>
+      );
+    case "pear":
+      return (
+        <g fill={fill} stroke={stroke} strokeWidth="4">
+          <path d="M60 24 C46 25 44 43 50 52 C36 61 33 95 60 99 C87 95 84 61 70 52 C76 43 74 25 60 24 Z" />
+          <path d="M61 28 C66 21 73 19 82 20 C78 29 70 33 61 31 Z" fill="#58a55c" />
+        </g>
+      );
+    case "leaf":
+      return <path d="M22 75 C42 28 82 18 101 24 C96 67 63 95 23 79 Z" fill={fill} stroke={stroke} strokeWidth="4" />;
+    case "fish":
+      return (
+        <g fill={fill} stroke={stroke} strokeWidth="4">
+          <path d="M22 61 C40 35 77 35 94 61 C77 87 40 87 22 61 Z" />
+          <path d="M94 61 L113 43 L113 79 Z" />
+          <circle cx="42" cy="55" r="4" fill="#202124" stroke="none" />
+        </g>
+      );
+    case "cat":
+      return (
+        <g fill={fill} stroke={stroke} strokeWidth="4">
+          <path d="M31 49 L39 22 L57 40 L63 40 L81 22 L89 49 C98 82 78 100 60 100 C42 100 22 82 31 49 Z" />
+          <circle cx="48" cy="63" r="4" fill="#202124" stroke="none" />
+          <circle cx="72" cy="63" r="4" fill="#202124" stroke="none" />
+        </g>
+      );
+    case "dog":
+      return (
+        <g fill={fill} stroke={stroke} strokeWidth="4">
+          <circle cx="60" cy="62" r="35" />
+          <path d="M29 42 C16 54 18 79 34 83 C39 67 40 51 29 42 Z" />
+          <path d="M91 42 C104 54 102 79 86 83 C81 67 80 51 91 42 Z" />
+          <circle cx="48" cy="61" r="4" fill="#202124" stroke="none" />
+          <circle cx="72" cy="61" r="4" fill="#202124" stroke="none" />
+        </g>
+      );
+    case "rabbit":
+      return (
+        <g fill={fill} stroke={stroke} strokeWidth="4">
+          <ellipse cx="47" cy="31" rx="11" ry="29" />
+          <ellipse cx="73" cy="31" rx="11" ry="29" />
+          <circle cx="60" cy="70" r="33" />
+          <circle cx="49" cy="66" r="4" fill="#202124" stroke="none" />
+          <circle cx="71" cy="66" r="4" fill="#202124" stroke="none" />
+        </g>
+      );
+    case "bear":
+      return (
+        <g fill={fill} stroke={stroke} strokeWidth="4">
+          <circle cx="35" cy="42" r="15" />
+          <circle cx="85" cy="42" r="15" />
+          <circle cx="60" cy="66" r="36" />
+          <circle cx="48" cy="64" r="4" fill="#202124" stroke="none" />
+          <circle cx="72" cy="64" r="4" fill="#202124" stroke="none" />
+        </g>
+      );
+  }
+}
+
+function GraphicDetailShape({ figure }: { figure: GraphicFigure }) {
+  const color = figure.color ?? defaultGraphicColor(figure.shape);
+  const stroke = "#2f3037";
+  switch (figure.detail) {
+    case "ear":
+      return <GraphicFigureArt figure={{ ...figure, mode: "color" }} fill={color} stroke={stroke} />;
+    case "leaf":
+      return <g transform="translate(-22 -24) scale(1.7)"><GraphicFigureArt figure={{ ...figure, mode: "color" }} fill={color} stroke={stroke} /></g>;
+    case "point":
+      return <g transform="translate(-15 -18) scale(1.65)"><GraphicFigureArt figure={{ ...figure, mode: "color" }} fill={color} stroke={stroke} /></g>;
+    case "tail":
+      return <g transform="translate(-58 -8) scale(1.7)"><GraphicFigureArt figure={{ ...figure, mode: "color" }} fill={color} stroke={stroke} /></g>;
+    case "curve":
+    default:
+      return <g transform="translate(-18 -10) scale(1.55)"><GraphicFigureArt figure={{ ...figure, mode: "color" }} fill={color} stroke={stroke} /></g>;
+  }
+}
+
+function CoverMask({ cover }: { cover: NonNullable<GraphicFigure["cover"]> }) {
+  const rect = {
+    left: { x: 0, y: 0, width: 62, height: 120 },
+    right: { x: 58, y: 0, width: 62, height: 120 },
+    bottom: { x: 0, y: 62, width: 120, height: 58 },
+    middle: { x: 25, y: 24, width: 70, height: 72 },
+  }[cover];
+  return (
+    <g>
+      <rect {...rect} rx="10" fill="#f8fafc" stroke="#64748b" strokeDasharray="7 6" strokeWidth="4" />
+      <text x={rect.x + rect.width / 2} y={rect.y + rect.height / 2 + 5} textAnchor="middle" fontSize="15" fontWeight="700" fill="#64748b">遮住</text>
+    </g>
+  );
+}
+
+function GapMask({ gap }: { gap: NonNullable<GraphicFigure["gap"]> }) {
+  const rect = {
+    top: { x: 18, y: 0, width: 84, height: 30 },
+    right: { x: 88, y: 18, width: 32, height: 84 },
+    bottom: { x: 18, y: 88, width: 84, height: 32 },
+    left: { x: 0, y: 18, width: 32, height: 84 },
+  }[gap];
+  return <rect {...rect} fill="#fffdf7" stroke="none" />;
+}
+
+function defaultGraphicColor(shape: GraphicFigure["shape"]) {
+  return {
+    apple: "#ef4444",
+    bear: "#a16207",
+    cat: "#f59e0b",
+    circle: "#ef4444",
+    diamond: "#14b8a6",
+    dog: "#b45309",
+    fish: "#38bdf8",
+    flower: "#f472b6",
+    leaf: "#22c55e",
+    pear: "#a3e635",
+    rabbit: "#f3f4f6",
+    "rounded-square": "#3b82f6",
+    star: "#facc15",
+    triangle: "#fb7185",
+  }[shape];
+}
+
+function graphicFigureAssetSrc(shape: GraphicFigure["shape"]) {
+  return {
+    apple: imageGallery.items.graphicApple.src,
+    bear: imageGallery.items.graphicBear.src,
+    cat: imageGallery.items.graphicCat.src,
+    circle: imageGallery.items.graphicCircle.src,
+    diamond: imageGallery.items.graphicDiamond.src,
+    dog: imageGallery.items.graphicDog.src,
+    fish: imageGallery.items.graphicFish.src,
+    flower: imageGallery.items.graphicFlower.src,
+    leaf: imageGallery.items.graphicLeaf.src,
+    pear: imageGallery.items.graphicPear.src,
+    rabbit: imageGallery.items.graphicRabbit.src,
+    "rounded-square": imageGallery.items.graphicRoundedSquare.src,
+    star: imageGallery.items.graphicStar.src,
+    triangle: imageGallery.items.graphicTriangle.src,
+  }[shape];
+}
+
+const evidenceGroupLabels = new Set([
+  "完整图",
+  "已经有",
+  "可选小块",
+  "天平左边",
+  "天平右边",
+  "1 个可以换",
+  "现在有",
+  "规则",
+  "左边",
+  "右边",
+]);
+const specificEvidenceGroupLabels = new Set([
+  "完整图",
+  "已经有",
+  "可选小块",
+  "天平左边",
+  "天平右边",
+  "1 个可以换",
+  "现在有",
+  "规则",
+]);
+const relationGroupLabels = new Set(["目标", "例子", "新目标", "新问题", "新内容", "内容"]);
+
 function visualGroupClasses(groups: NonNullable<GameRound["visualGroups"]>) {
   const allCounting = groups.every((group) => group.layout === "counting");
   const isCountingChoice =
     allCounting &&
     groups.length === 3 &&
     groups.every((group, index) => group.label === ["A", "B", "C"][index]);
+  const isComparisonPair =
+    groups.length === 2 &&
+    groups[0].label === "左图" &&
+    groups[1].label === "右图";
+  const isEvidenceGroup =
+    groups.length >= 2 &&
+    groups.every((group) => !group.layout && evidenceGroupLabels.has(group.label)) &&
+    groups.some((group) => specificEvidenceGroupLabels.has(group.label));
+  const isRelationGroup =
+    groups.length >= 1 &&
+    groups.every((group) => !group.layout && relationGroupLabels.has(group.label));
 
   return [
     "visual-groups",
     allCounting && groups.length === 1 ? "visual-groups-counting-single" : "",
     isCountingChoice ? "visual-groups-counting-choice" : "",
+    isComparisonPair ? "visual-groups-compare" : "",
+    isEvidenceGroup ? "visual-groups-evidence" : "",
+    isRelationGroup ? "visual-groups-relation" : "",
   ].filter(Boolean).join(" ");
 }
 
@@ -605,6 +937,12 @@ function sceneForGame(gameId: string): SceneKind {
     "logic-block-height-map": "blocks",
     "logic-three-view-blocks": "blocks",
     "logic-route-steps": "path",
+    "graphic-shadow-match": "detective",
+    "graphic-covered-restore": "detective",
+    "graphic-detail-whole": "detective",
+    "graphic-layer-overlap": "blocks",
+    "graphic-code-machine": "detective",
+    "graphic-gap-close": "sorting",
   };
   return scenes[gameId] ?? "garden";
 }

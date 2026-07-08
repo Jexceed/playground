@@ -3,6 +3,93 @@
 All meaningful project changes should be recorded here. Keep entries factual and
 grouped by date.
 
+## 2026-07-08
+
+- Re-audited 图形工坊 from the player view: shadow choices now render as real
+  black silhouettes, multi-figure stems render in one shared SVG for overlap and
+  code-machine relationships, code-machine questions use a visible `?` answer
+  slot, layer-overlap choice labels describe the drawn option instead of the
+  distractor rationale, and graphic option labels are included in the standard
+  Edge Xiaoxiao voice pack.
+- Slowed the launch brand-shout audio from about 1.0 seconds to about 1.4
+  seconds and extended the splash timing so the line has room to finish before
+  entering the app.
+- Replaced the launch splash's ordinary `小小思考屋` TTS line with a dedicated
+  local brand-shout audio asset, keeping the desired child-chorus direction as
+  a future higher-quality source replacement instead of shipping a synthetic
+  layered voice that sounds unnatural.
+- Promoted voice generation, image-generation asset handling, NAS static
+  packaging, and Mac `.app` preview rules into `AGENTS.md` as system-level
+  project guidance for future agents.
+
+## 2026-07-07
+
+- Reworked 谁和谁一对 rounds so the prompt and visual evidence no longer
+  repeat answer choices, decorative scene images are removed, and relation
+  cards use normal-width frames instead of the narrow visual-group grid.
+- Regenerated the local voice manifest with standard Edge Xiaoxiao audio for
+  all 1748 exported voice lines, removing macOS voice sources from 逻辑屋
+  playback.
+- Expanded the curriculum audit to catch 谁和谁一对 prompt/visual answer leakage,
+  missing relation-card layout, decorative scenes in relation rounds, and
+  nonstandard 逻辑屋 voice sources.
+- Added image-gen PNG item icons for 葡萄、公交车、自行车、飞机、尺子 and
+  积木塔, registered them in `imageGallery`, and wired `VisualToken` so
+  同类小侦探 and 找不同侦探 no longer fall back to SVG for those concrete
+  objects.
+- Fixed the left/right comparison layout used by 找不同侦探 so image cards keep
+  normal-width bases on desktop and mobile instead of being squeezed into a
+  five-column grid.
+- Added a dedicated evidence-card layout for 拼图少哪块 and 天平换一换 so
+  composite puzzle cards, balance rules, and left/right evidence cards keep
+  normal-width bases on desktop and mobile.
+- Reworked 拼图少哪块 round data so 完整图 is shown as separate comparable
+  pieces, missing-piece choices use already-present pieces as plausible
+  distractors, and answer labels are child-readable text with visual cues.
+- Reworked 天平换一换 count choices from repeated combined emoji tokens into
+  count labels such as `2 个草莓`, preventing mixed-size answer graphics.
+- Expanded the curriculum audit to catch concrete same-kind/difference items
+  that have a token mapping but no project raster icon, and to require a
+  dedicated left/right comparison group layout.
+- Expanded the curriculum audit to require the part-whole and balance evidence
+  layout so those rounds cannot silently fall back to the narrow five-column
+  visual-group grid.
+- Expanded the curriculum audit to reject combined 完整图 tokens in 拼图少哪块
+  and repeated visual-token answer choices in 天平换一换.
+- Reworked the left sidebar world switcher so only the selected world expands
+  with summary details while inactive worlds collapse into compact rows,
+  leaving more vertical room for the level list.
+- Added a focused Node test that guards the sidebar world switcher
+  expanded/collapsed states and compact collapsed styling.
+- Added the `020-graphic-workshop` Spec Kit feature for a new 图形工坊 content
+  world and compact existing-world reinforcement policy.
+- Added 图形工坊 as a third selectable world and expanded its first-pass content
+  into six real drawn visual-reasoning games with 48 rounds: 影子配对,
+  遮挡还原, 局部找整体, 透明叠叠板, 图形密码机, and 缺口补一补.
+- Added dedicated `graphicChallenge` round data and SVG rendering so 图形工坊
+  stems and A/B/C/D answer choices are actual drawn figures rather than abstract
+  text or generic token labels.
+- Replaced the crude 图形工坊 geometric placeholder art with local image-gen
+  sticker assets registered in `imageGallery.items`, while keeping silhouettes,
+  遮挡, 叠合, 密码表, and 缺口 masks dynamically composable.
+- Added three differentiated number-pattern reinforcement rounds to 逻辑屋,
+  covering skip-counting before/after, descending even-number patterns, and a
+  missing middle step.
+- Expanded the curriculum audit with checks for the `graphic` world, exactly
+  six first-pass graphic games, eight rounds per game, dedicated graphic
+  challenge surfaces, drawn answer options, visual-operation feedback, and
+  compact reference-reinforcement markers.
+- Tightened the 图形工坊 audit so first-pass graphic rounds reject duplicated
+  logic-house families and avoid scene, visual-group, grid, matrix, sequence,
+  and memory surfaces already owned by other worlds.
+- Exported updated voice lines and generated missing local macOS voice entries
+  for the new 图形工坊 and reinforcement content.
+- Added `docs/graphic-workshop-reference-analysis.md` to record the source
+  corpus taxonomy, distractor rules, and future migration question.
+- Documented the Mac development preview rule: generate a real Tauri `.app`
+  with `pnpm mac:build` and test through that bundle instead of relying only on
+  browser/Vite preview.
+
 ## 2026-07-06
 
 - Added the `019-app-launch-branding` Spec Kit feature for Mac app logo

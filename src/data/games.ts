@@ -1,4 +1,4 @@
-import type { AbilityLevel, GameConfig, GameRound, WorldId } from "../types";
+import type { AbilityLevel, GameConfig, GameRound, GraphicChallengeOption, GraphicFigure, WorldId } from "../types";
 import { imageGallery } from "./imageGallery";
 
 type RoundInput = Omit<GameRound, "id"> & { id?: string };
@@ -397,11 +397,78 @@ export const games: GameConfig[] = [
     level: "L6",
     rounds: makeRouteStepRounds(),
   }),
+  makeSet({
+    id: "graphic-shadow-match",
+    world: "graphic",
+    title: "影子配对",
+    subtitle: "左边看彩色图，右边在四个黑影里找同一个轮廓。",
+    goal: "训练影子配对、轮廓抽象和抗颜色干扰。",
+    parentPrompt: "问她：不要看颜色，只看外边一圈，哪个黑影的耳朵、角或尾巴位置一样？",
+    abilityTags: ["影子配对", "轮廓抽象", "抗颜色干扰"],
+    level: "L5",
+    rounds: makeGraphicShadowMatchRounds(),
+  }),
+  makeSet({
+    id: "graphic-covered-restore",
+    world: "graphic",
+    title: "遮挡还原",
+    subtitle: "上面的图被盖住一部分，下面选四个完整图里最可能的那个。",
+    goal: "训练遮挡还原、可见线索提取和近似选项排除。",
+    parentPrompt: "请她先说露出来的线索，再说为什么另外几个完整图虽然像但不对。",
+    abilityTags: ["遮挡还原", "可见线索", "近似排除"],
+    level: "L6",
+    rounds: makeGraphicCoveredRestoreRounds(),
+  }),
+  makeSet({
+    id: "graphic-detail-whole",
+    world: "graphic",
+    title: "局部找整体",
+    subtitle: "只看放大镜里的局部线索，在四个完整图里找来源。",
+    goal: "训练局部找整体、边角特征识别和高混淆选项排除。",
+    parentPrompt: "问她：放大镜里的局部是耳朵、尾巴、叶子还是尖角？它在完整图的哪里？",
+    abilityTags: ["局部找整体", "边角特征", "近似排除"],
+    level: "L6",
+    rounds: makeGraphicDetailWholeRounds(),
+  }),
+  makeSet({
+    id: "graphic-layer-overlap",
+    world: "graphic",
+    title: "透明叠叠板",
+    subtitle: "看两张透明图叠在一起后的样子，找出正确的上下关系。",
+    goal: "训练透明叠合、上下层判断和重叠区域观察。",
+    parentPrompt: "请她说：哪一张在上面？重叠的地方挡住了谁？",
+    abilityTags: ["透明叠叠板", "上下层判断", "重叠线索"],
+    level: "L6",
+    rounds: makeGraphicLayerOverlapRounds(),
+  }),
+  makeSet({
+    id: "graphic-code-machine",
+    world: "graphic",
+    title: "图形密码机",
+    subtitle: "看密码表里的图形对应关系，找出问号应该换成什么。",
+    goal: "训练图形编码、对应映射和近邻干扰排除。",
+    parentPrompt: "问她：密码表里左边图形对应右边哪个图？问号要照哪一组对应？",
+    abilityTags: ["图形密码机", "对应映射", "近邻排除"],
+    level: "L6",
+    rounds: makeGraphicCodeMachineRounds(),
+  }),
+  makeSet({
+    id: "graphic-gap-close",
+    world: "graphic",
+    title: "缺口补一补",
+    subtitle: "看轮廓缺了哪一边，在选项里找能补上的那一块。",
+    goal: "训练视觉闭合、缺口方向和边角形状匹配。",
+    parentPrompt: "请她先指缺口在哪里，再说选项的哪条边能补进去。",
+    abilityTags: ["缺口补一补", "视觉闭合", "边角匹配"],
+    level: "L6",
+    rounds: makeGraphicGapCloseRounds(),
+  }),
 ];
 
 export const worlds = [
   { id: "math", name: "数字岛", icon: "🧮", summary: "数数、比较、加减、分组" },
   { id: "logic", name: "逻辑屋", icon: "🗝️", summary: "规律、顺序、规则、计划" },
+  { id: "graphic", name: "图形工坊", icon: "🧩", summary: "轮廓、遮挡、叠合、线索、密码、缺口" },
 ] as const;
 
 function makeSet(input: SetInput): GameConfig {
@@ -2054,7 +2121,6 @@ function makeRuleFilterRounds(): RoundInput[] {
 }
 
 function makeRelationPairRounds(): RoundInput[] {
-  const scenes = imageGallery.scenes;
   const rounds: RoundInput[] = [
     {
       id: "bottle-water",
@@ -2062,10 +2128,8 @@ function makeRelationPairRounds(): RoundInput[] {
       prompt: "水壶和谁最容易配成一对？",
       instruction: "先想它主要用来装什么。",
       difficultyNote: "直接用途关系：从一个物品想到它最核心的用途。",
-      sceneImage: scenes.schoolbagPacking,
       visualGroups: [
         { label: "目标", items: ["水壶"] },
-        { label: "可选搭档", items: ["水", "饭盒", "铅笔"] },
       ],
       choices: choiceSet(["水", "饭盒", "铅笔"]),
       answer: "水",
@@ -2080,10 +2144,8 @@ function makeRelationPairRounds(): RoundInput[] {
       prompt: "文具盒里最常放谁？",
       instruction: "先想这个东西里面通常装什么。",
       difficultyNote: "容器内容关系：把容器和常见内容配起来。",
-      sceneImage: scenes.schoolbagPacking,
       visualGroups: [
         { label: "目标", items: ["文具盒"] },
-        { label: "可选搭档", items: ["铅笔", "饼干", "雨衣"] },
       ],
       choices: choiceSet(["铅笔", "饼干", "雨衣"]),
       answer: "铅笔",
@@ -2098,10 +2160,8 @@ function makeRelationPairRounds(): RoundInput[] {
       prompt: "饭盒和谁最容易配成一对？",
       instruction: "先想它主要用来装什么。",
       difficultyNote: "容器内容关系：在相近生活用品中找正确内容。",
-      sceneImage: scenes.schoolbagPacking,
       visualGroups: [
         { label: "目标", items: ["饭盒"] },
-        { label: "可选搭档", items: ["饼干", "水", "铅笔"] },
       ],
       choices: choiceSet(["饼干", "水", "铅笔"]),
       answer: "饼干",
@@ -2116,10 +2176,8 @@ function makeRelationPairRounds(): RoundInput[] {
       prompt: "小鱼最需要和谁配成一对？",
       instruction: "先想它应该生活在哪里。",
       difficultyNote: "生活位置关系：把动物和适合它的环境配起来。",
-      sceneImage: scenes.animalHabitatPairs,
       visualGroups: [
         { label: "目标", items: ["小鱼"] },
-        { label: "可选搭档", items: ["小河", "天空", "家"] },
       ],
       choices: choiceSet(["小河", "天空", "家"]),
       answer: "小河",
@@ -2134,10 +2192,8 @@ function makeRelationPairRounds(): RoundInput[] {
       prompt: "小鸟常和谁配成一对？",
       instruction: "先想它通常在哪里飞。",
       difficultyNote: "生活位置关系：把动物和活动空间配起来。",
-      sceneImage: scenes.animalHabitatPairs,
       visualGroups: [
         { label: "目标", items: ["小鸟"] },
-        { label: "可选搭档", items: ["天空", "小河", "盒子"] },
       ],
       choices: choiceSet(["天空", "小河", "盒子"]),
       answer: "天空",
@@ -2152,10 +2208,8 @@ function makeRelationPairRounds(): RoundInput[] {
       prompt: "钥匙和谁最容易配成一对？",
       instruction: "先想它能帮我们打开什么。",
       difficultyNote: "工具对象关系：工具和它作用的对象相配。",
-      sceneImage: scenes.keyDoorEntry,
       visualGroups: [
         { label: "目标", items: ["钥匙"] },
-        { label: "可选搭档", items: ["门", "饭盒", "足球"] },
       ],
       choices: choiceSet(["门", "饭盒", "足球"]),
       answer: "门",
@@ -2170,11 +2224,9 @@ function makeRelationPairRounds(): RoundInput[] {
       prompt: "书包配书本，像饭盒配什么？",
       instruction: "先看例子：一个容器配它装的东西。",
       difficultyNote: "简单类比：把同一种容器内容关系迁移到新物品。",
-      sceneImage: scenes.schoolbagPacking,
       visualGroups: [
         { label: "例子", items: ["书包", "书本"] },
         { label: "新目标", items: ["饭盒"] },
-        { label: "可选搭档", items: ["饼干", "水", "铅笔"] },
       ],
       choices: choiceSet(["饼干", "水", "铅笔"]),
       answer: "饼干",
@@ -2189,11 +2241,9 @@ function makeRelationPairRounds(): RoundInput[] {
       prompt: "水壶配水，像文具盒配什么？",
       instruction: "先找同一种关系：里面常装什么。",
       difficultyNote: "简单类比：容器内容关系从生活用品迁移到学习用品。",
-      sceneImage: scenes.schoolbagPacking,
       visualGroups: [
         { label: "例子", items: ["水壶", "水"] },
         { label: "新目标", items: ["文具盒"] },
-        { label: "可选搭档", items: ["铅笔", "饭盒", "雨衣"] },
       ],
       choices: choiceSet(["铅笔", "饭盒", "雨衣"]),
       answer: "铅笔",
@@ -2208,13 +2258,11 @@ function makeRelationPairRounds(): RoundInput[] {
       prompt: "小鱼配小河，像小鸟配什么？",
       instruction: "先看动物和活动地方的关系。",
       difficultyNote: "生活类比：把动物与环境关系迁移到另一个动物。",
-      sceneImage: scenes.animalHabitatPairs,
       visualGroups: [
         { label: "例子", items: ["小鱼", "小河"] },
         { label: "新目标", items: ["小鸟"] },
-        { label: "可选搭档", items: ["天空", "小河", "家"] },
       ],
-      choices: choiceSet(["天空", "小河", "家"]),
+      choices: choiceSet(["天空", "盒子", "家"]),
       answer: "天空",
       success: "小鱼在小河里，小鸟在天空飞。",
       retry: "例子不是同类关系，而是动物和它活动的地方。",
@@ -2227,10 +2275,8 @@ function makeRelationPairRounds(): RoundInput[] {
       prompt: "太阳大时配帽子，下雨时配什么？",
       instruction: "先想不同天气分别需要什么。",
       difficultyNote: "场景类比：天气条件变化时，选择对应保护用品。",
-      sceneImage: scenes.schoolbagPacking,
       visualGroups: [
         { label: "例子", items: ["太阳", "帽子"] },
-        { label: "可选搭档", items: ["雨衣", "水壶", "书本"] },
       ],
       choices: choiceSet(["雨衣", "水壶", "书本"]),
       answer: "雨衣",
@@ -2245,10 +2291,8 @@ function makeRelationPairRounds(): RoundInput[] {
       prompt: "口渴配水壶，饿了配什么？",
       instruction: "先看需要，再找能解决需要的东西。",
       difficultyNote: "需求类比：把身体需求和解决工具对应起来。",
-      sceneImage: scenes.schoolbagPacking,
       visualGroups: [
         { label: "例子", items: ["水壶", "水"] },
-        { label: "可选搭档", items: ["饭盒", "帽子", "文具盒"] },
       ],
       choices: choiceSet(["饭盒", "帽子", "文具盒"]),
       answer: "饭盒",
@@ -2263,11 +2307,9 @@ function makeRelationPairRounds(): RoundInput[] {
       prompt: "钥匙能帮我们过门，小河挡路时什么能帮我们过去？",
       instruction: "先找“解决障碍”的关系。",
       difficultyNote: "抽象关系迁移：从开门工具迁移到过河工具。",
-      sceneImage: scenes.bridgeRiverPlanks,
       visualGroups: [
         { label: "例子", items: ["钥匙", "门"] },
         { label: "新问题", items: ["小河"] },
-        { label: "可选工具", items: ["长木板", "帽子", "饭盒"] },
       ],
       choices: choiceSet(["长木板", "帽子", "饭盒"]),
       answer: "长木板",
@@ -2279,13 +2321,11 @@ function makeRelationPairRounds(): RoundInput[] {
     {
       id: "two-containers",
       level: "L6",
-      prompt: "水壶和饭盒都能装东西，谁和饼干关系更近？",
+      prompt: "两个东西都能装，饼干更适合放进哪一个？",
       instruction: "先找内容是什么，再决定搭档。",
       difficultyNote: "相近干扰：两个选项都是容器，需要按内容细分。",
-      sceneImage: scenes.schoolbagPacking,
       visualGroups: [
         { label: "内容", items: ["饼干"] },
-        { label: "可选搭档", items: ["饭盒", "水壶", "书包"] },
       ],
       choices: choiceSet(["饭盒", "水壶", "书包"]),
       answer: "饭盒",
@@ -2297,13 +2337,11 @@ function makeRelationPairRounds(): RoundInput[] {
     {
       id: "not-same-kind",
       level: "L6",
-      prompt: "书本和文具盒都是学习用品，但谁和文具盒是“装在里面”的关系？",
+      prompt: "谁和文具盒是“装在里面”的关系？",
       instruction: "不要只看同类，要看题目问的关系。",
       difficultyNote: "关系优先：在同类干扰中排除不符合关系的选项。",
-      sceneImage: scenes.schoolbagPacking,
       visualGroups: [
         { label: "目标", items: ["文具盒"] },
-        { label: "可选搭档", items: ["铅笔", "书本", "书包"] },
       ],
       choices: choiceSet(["铅笔", "书本", "书包"]),
       answer: "铅笔",
@@ -2318,11 +2356,9 @@ function makeRelationPairRounds(): RoundInput[] {
       prompt: "看到水，应该想到水壶；看到铅笔，应该想到谁？",
       instruction: "这次从内容反过来找容器。",
       difficultyNote: "反向关系：从内容倒推对应容器或收纳物。",
-      sceneImage: scenes.schoolbagPacking,
       visualGroups: [
         { label: "例子", items: ["水", "水壶"] },
         { label: "新内容", items: ["铅笔"] },
-        { label: "可选搭档", items: ["文具盒", "饭盒", "雨衣"] },
       ],
       choices: choiceSet(["文具盒", "饭盒", "雨衣"]),
       answer: "文具盒",
@@ -2334,13 +2370,11 @@ function makeRelationPairRounds(): RoundInput[] {
     {
       id: "best-reason",
       level: "L6",
-      prompt: "小鸟、天空、风筝都在图里，小鸟和天空为什么更像一对？",
-      instruction: "先找最稳定的生活关系。",
+      prompt: "小鸟和谁的关系最稳定？",
+      instruction: "先想小鸟最稳定的活动地方。",
       difficultyNote: "解释型配对：相近选项都相关，需要说出更稳定的关系。",
-      sceneImage: scenes.animalHabitatPairs,
       visualGroups: [
-        { label: "观察", items: ["小鸟", "天空", "风筝"] },
-        { label: "可选搭档", items: ["天空", "风筝", "小河"] },
+        { label: "目标", items: ["小鸟"] },
       ],
       choices: choiceSet(["天空", "风筝", "小河"]),
       answer: "天空",
@@ -2562,6 +2596,12 @@ function makeNumberPatternRounds(): RoundInput[] {
     { seq: ["2", "3", "4", "5", "?"], answer: "6", rule: "从 2 开始，每次多 1。", level: "L4" },
     { seq: ["1", "3", "1", "3", "?"], answer: "1", rule: "1 和 3 轮流出现。", level: "L4" },
     { seq: ["4", "6", "8", "10", "?"], answer: "12", rule: "每次多 2。", level: "L6" },
+    // Reference reinforcement: 上实资料里的 before/after skip-counting，考察“14 前一个双数”而不是只补末尾。
+    { seq: ["6", "8", "10", "12", "?", "16"], answer: "14", rule: "每次多 2，12 后面是 14，再到 16。", level: "L6" },
+    // Reference reinforcement: 上实资料里的下降偶数列，考察倒着跳数和抗“只少 1”干扰。
+    { seq: ["18", "16", "14", "?", "10", "8"], answer: "12", rule: "倒着每次少 2，14 后面是 12。", level: "L6" },
+    // Reference reinforcement: 上实资料里的夹心缺数，考察从两边确认同一条跳数规则。
+    { seq: ["3", "6", "9", "?", "15"], answer: "12", rule: "每次多 3，9 后面是 12，再到 15。", level: "L6" },
   ] as const;
 
   return cases.map((item) => ({
@@ -2569,7 +2609,7 @@ function makeNumberPatternRounds(): RoundInput[] {
     prompt: "数字小路下一步走到哪里？",
     instruction: "从左到右读一读，找数字怎么变化。",
     sequence: [...item.seq],
-    choices: numberChoices(Number(item.answer), 1, 12),
+    choices: numberChoices(Number(item.answer), 1, Math.max(12, Number(item.answer) + 2)),
     answer: item.answer,
     success: item.rule,
     retry: "先看前两个数差多少，再看后面是不是一样。",
@@ -3268,12 +3308,12 @@ function makeRotationDirectionRounds(): RoundInput[] {
 
 function makePartWholePuzzleRounds(): RoundInput[] {
   const missingCases = [
-    { whole: "🔴🟦⭐", have: ["🔴", "🟦"], answer: "⭐", choices: ["⭐", "🟡", "🟢"], reason: "完整图里还少星星。" },
-    { whole: "🍎🍊🍓", have: ["🍎", "🍊"], answer: "🍓", choices: ["🍓", "🍪", "🍬"], reason: "已经有苹果和橘子，还少草莓。" },
-    { whole: "🐱🐶🐰", have: ["🐱", "🐶"], answer: "🐰", choices: ["🐰", "🐟", "🐦"], reason: "还少小兔。" },
-    { whole: "🟡🟢🔵", have: ["🟡", "🔵"], answer: "🟢", choices: ["🟢", "🔴", "🟣"], reason: "中间还少绿色圆片。" },
-    { whole: "🍪🍬⭐", have: ["🍬", "⭐"], answer: "🍪", choices: ["🍪", "🍎", "🍊"], reason: "还少饼干。" },
-    { whole: "⚽✏️🎁", have: ["⚽", "🎁"], answer: "✏️", choices: ["✏️", "书本", "尺子"], reason: "还少铅笔。" },
+    { whole: ["🔴", "🟦", "⭐"], have: ["🔴", "🟦"], answer: "⭐", reason: "完整图里还少星星。" },
+    { whole: ["🍎", "🍊", "🍓"], have: ["🍎", "🍊"], answer: "🍓", reason: "已经有苹果和橘子，还少草莓。" },
+    { whole: ["🐱", "🐶", "🐰"], have: ["🐱", "🐶"], answer: "🐰", reason: "还少小兔。" },
+    { whole: ["🟡", "🟢", "🔵"], have: ["🟡", "🔵"], answer: "🟢", reason: "中间还少绿色圆片。" },
+    { whole: ["🍪", "🍬", "⭐"], have: ["🍬", "⭐"], answer: "🍪", reason: "还少饼干。" },
+    { whole: ["⚽", "✏️", "🎁"], have: ["⚽", "🎁"], answer: "✏️", reason: "还少铅笔。" },
   ];
 
   const missingRounds: RoundInput[] = missingCases.map((item, index) => ({
@@ -3281,10 +3321,10 @@ function makePartWholePuzzleRounds(): RoundInput[] {
     prompt: "拼成完整图，还少哪一块？",
     instruction: "先看完整图，再看已经有的几块。",
     visualGroups: [
-      { label: "完整图", items: [item.whole] },
+      { label: "完整图", items: item.whole },
       { label: "已经有", items: item.have },
     ],
-    choices: choiceSet(item.choices),
+    choices: visualChoiceSet([item.answer, ...item.have]),
     answer: item.answer,
     success: item.reason,
     retry: "把完整图里的东西一个一个划掉，看看还剩什么。",
@@ -3293,18 +3333,18 @@ function makePartWholePuzzleRounds(): RoundInput[] {
   }));
 
   const extraCases = [
-    { whole: "🔴🟦⭐", pieces: ["🔴", "🟦", "⭐", "🟡"], answer: "🟡", reason: "完整图里没有黄色圆片。" },
-    { whole: "🍎🍊🍓", pieces: ["🍎", "🍊", "🍓", "🍪"], answer: "🍪", reason: "完整图里没有饼干。" },
-    { whole: "🐱🐶🐰", pieces: ["🐱", "🐶", "🐰", "🐟"], answer: "🐟", reason: "完整图里没有小鱼。" },
-    { whole: "🟡🟢🔵", pieces: ["🟡", "🟢", "🔵", "🔴"], answer: "🔴", reason: "完整图里没有红色圆片。" },
-    { whole: "🍪🍬⭐", pieces: ["🍪", "🍬", "⭐", "🍎"], answer: "🍎", reason: "完整图里没有苹果。" },
-    { whole: "⚽✏️🎁", pieces: ["⚽", "✏️", "🎁", "书本"], answer: "书本", reason: "完整图里没有书本。" },
+    { whole: ["🔴", "🟦", "⭐"], pieces: ["🔴", "🟦", "⭐", "🟡"], answer: "🟡", reason: "完整图里没有黄色圆片。" },
+    { whole: ["🍎", "🍊", "🍓"], pieces: ["🍎", "🍊", "🍓", "🍪"], answer: "🍪", reason: "完整图里没有饼干。" },
+    { whole: ["🐱", "🐶", "🐰"], pieces: ["🐱", "🐶", "🐰", "🐟"], answer: "🐟", reason: "完整图里没有小鱼。" },
+    { whole: ["🟡", "🟢", "🔵"], pieces: ["🟡", "🟢", "🔵", "🔴"], answer: "🔴", reason: "完整图里没有红色圆片。" },
+    { whole: ["🍪", "🍬", "⭐"], pieces: ["🍪", "🍬", "⭐", "🍎"], answer: "🍎", reason: "完整图里没有苹果。" },
+    { whole: ["⚽", "✏️", "🎁"], pieces: ["⚽", "✏️", "🎁", "书本"], answer: "书本", reason: "完整图里没有书本。" },
   ].map((item, index) => ({
     level: index < 4 ? "L5" as AbilityLevel : "L6" as AbilityLevel,
     prompt: "哪一块是多余的？",
     instruction: "多出来的那块，不在完整图里。",
     visualGroups: [
-      { label: "完整图", items: [item.whole] },
+      { label: "完整图", items: item.whole },
       { label: "可选小块", items: item.pieces },
     ],
     choices: choiceSet(item.pieces),
@@ -3320,10 +3360,10 @@ function makePartWholePuzzleRounds(): RoundInput[] {
 
 function makeBalanceSwapRounds(): RoundInput[] {
   const directCases = [
-    { left: "🍎", right: ["🍓", "🍓"], prompt: "1 个苹果和几个草莓一样？", answer: "🍓🍓", choices: ["🍓", "🍓🍓", "🍓🍓🍓"], success: "1 个苹果可以换 2 个草莓。" },
-    { left: "🍊", right: ["🍪", "🍪"], prompt: "1 个橘子和几个饼干一样？", answer: "🍪🍪", choices: ["🍪", "🍪🍪", "🍪🍪🍪"], success: "1 个橘子可以换 2 个饼干。" },
-    { left: "🧁", right: ["🍬", "🍬", "🍬"], prompt: "1 个蛋糕和几个糖果一样？", answer: "🍬🍬🍬", choices: ["🍬🍬", "🍬🍬🍬", "🍬🍬🍬🍬"], success: "1 个蛋糕可以换 3 个糖果。" },
-    { left: "⚽", right: ["⭐", "⭐"], prompt: "1 个足球和几颗星星一样？", answer: "⭐⭐", choices: ["⭐", "⭐⭐", "⭐⭐⭐"], success: "1 个足球可以换 2 颗星星。" },
+    { left: "🍎", right: ["🍓", "🍓"], prompt: "1 个苹果和几个草莓一样？", answer: "2 个草莓", choices: ["1 个草莓", "2 个草莓", "3 个草莓"], success: "1 个苹果可以换 2 个草莓。" },
+    { left: "🍊", right: ["🍪", "🍪"], prompt: "1 个橘子和几个饼干一样？", answer: "2 个饼干", choices: ["1 个饼干", "2 个饼干", "3 个饼干"], success: "1 个橘子可以换 2 个饼干。" },
+    { left: "🧁", right: ["🍬", "🍬", "🍬"], prompt: "1 个蛋糕和几个糖果一样？", answer: "3 个糖果", choices: ["2 个糖果", "3 个糖果", "4 个糖果"], success: "1 个蛋糕可以换 3 个糖果。" },
+    { left: "⚽", right: ["⭐", "⭐"], prompt: "1 个足球和几颗星星一样？", answer: "2 颗星星", choices: ["1 颗星星", "2 颗星星", "3 颗星星"], success: "1 个足球可以换 2 颗星星。" },
   ].map((item, index) => ({
     level: index < 2 ? "L4" as AbilityLevel : "L5" as AbilityLevel,
     prompt: item.prompt,
@@ -3341,10 +3381,10 @@ function makeBalanceSwapRounds(): RoundInput[] {
   }));
 
   const doubleCases = [
-    { unit: "🍎", unitGroup: ["🍓", "🍓"], count: 2, answer: "🍓🍓🍓🍓", choices: ["🍓🍓", "🍓🍓🍓", "🍓🍓🍓🍓"], success: "两个苹果就是两组草莓，一共 4 个草莓。" },
-    { unit: "🍊", unitGroup: ["🍪", "🍪"], count: 2, answer: "🍪🍪🍪🍪", choices: ["🍪🍪", "🍪🍪🍪", "🍪🍪🍪🍪"], success: "两个橘子可以换两组饼干，一共 4 个。" },
-    { unit: "🧁", unitGroup: ["🍬", "🍬", "🍬"], count: 2, answer: "🍬🍬🍬🍬🍬🍬", choices: ["🍬🍬🍬", "🍬🍬🍬🍬", "🍬🍬🍬🍬🍬🍬"], success: "两个蛋糕是两组 3 个糖果，一共 6 个糖果。" },
-    { unit: "⚽", unitGroup: ["⭐", "⭐"], count: 3, answer: "⭐⭐⭐⭐⭐⭐", choices: ["⭐⭐⭐⭐", "⭐⭐⭐⭐⭐", "⭐⭐⭐⭐⭐⭐"], success: "三个足球是三组 2 颗星星，一共 6 颗。" },
+    { unit: "🍎", unitGroup: ["🍓", "🍓"], count: 2, answer: "4 个草莓", choices: ["2 个草莓", "3 个草莓", "4 个草莓"], success: "两个苹果就是两组草莓，一共 4 个草莓。" },
+    { unit: "🍊", unitGroup: ["🍪", "🍪"], count: 2, answer: "4 个饼干", choices: ["2 个饼干", "3 个饼干", "4 个饼干"], success: "两个橘子可以换两组饼干，一共 4 个。" },
+    { unit: "🧁", unitGroup: ["🍬", "🍬", "🍬"], count: 2, answer: "6 个糖果", choices: ["3 个糖果", "4 个糖果", "6 个糖果"], success: "两个蛋糕是两组 3 个糖果，一共 6 个糖果。" },
+    { unit: "⚽", unitGroup: ["⭐", "⭐"], count: 3, answer: "6 颗星星", choices: ["4 颗星星", "5 颗星星", "6 颗星星"], success: "三个足球是三组 2 颗星星，一共 6 颗。" },
   ].map((item) => ({
     level: "L6" as AbilityLevel,
     prompt: `${item.count} 个${labelFor(item.unit)}可以换成几个${labelFor(item.unitGroup[0])}？`,
@@ -3741,6 +3781,529 @@ function makeRouteStepRounds(): RoundInput[] {
   return repeatTo([...oneStep, ...twoStep], 18);
 }
 
+function makeGraphicShadowMatchRounds(): RoundInput[] {
+  const cases = [
+    {
+      shape: "cat",
+      color: "#f59e0b",
+      answer: "cat",
+      answerLabel: "小猫影子",
+      options: [
+        optionFigure("cat", "小猫影子"),
+        optionFigure("dog", "小狗影子", "同样是圆脸动物，但耳朵垂下来，不是尖耳朵。"),
+        optionFigure("rabbit", "小兔影子", "也有耳朵，但耳朵太长。"),
+        optionFigure("bear", "小熊影子", "也是圆脸，但头顶是圆耳朵。"),
+      ],
+      clue: "尖尖猫耳朵和圆脸轮廓都对",
+    },
+    {
+      shape: "rabbit",
+      color: "#f8fafc",
+      answer: "rabbit",
+      answerLabel: "小兔影子",
+      options: [
+        optionFigure("dog", "小狗影子", "耳朵在两边垂下去。"),
+        optionFigure("rabbit", "小兔影子"),
+        optionFigure("cat", "小猫影子", "有尖耳朵，但耳朵不够长。"),
+        optionFigure("bear", "小熊影子", "头顶是圆耳朵。"),
+      ],
+      clue: "两只长耳朵最明显",
+    },
+    {
+      shape: "fish",
+      color: "#38bdf8",
+      answer: "fish",
+      answerLabel: "小鱼影子",
+      options: [
+        optionFigure("leaf", "叶子影子", "两头都尖，但没有鱼尾。"),
+        optionFigure("fish", "小鱼影子"),
+        optionFigure("apple", "苹果影子", "有圆肚子，但没有尾巴。"),
+        optionFigure("pear", "梨子影子", "一头大一头小，尾巴不对。"),
+      ],
+      clue: "身体后面有三角尾巴",
+    },
+    {
+      shape: "apple",
+      color: "#ef4444",
+      answer: "apple",
+      answerLabel: "苹果影子",
+      options: [
+        optionFigure("pear", "梨子影子", "也有叶子，但下半部更细长。"),
+        optionFigure("circle", "圆形影子", "圆边相近，但没有叶子。"),
+        optionFigure("apple", "苹果影子"),
+        optionFigure("flower", "花朵影子", "有外凸边，但花瓣太多。"),
+      ],
+      clue: "上面有小叶子，下面是圆鼓鼓的",
+    },
+    {
+      shape: "star",
+      color: "#facc15",
+      answer: "star",
+      answerLabel: "星星影子",
+      options: [
+        optionFigure("flower", "花朵影子", "外边也有凸起，但每个瓣是圆的。"),
+        optionFigure("star", "星星影子"),
+        optionFigure("leaf", "叶子影子", "有尖角，但只有两头尖。"),
+        optionFigure("rounded-square", "圆角方块影子", "有角，但不是尖尖星角。"),
+      ],
+      clue: "外边一圈都是尖尖的角",
+    },
+    {
+      shape: "rounded-square",
+      color: "#3b82f6",
+      answer: "rounded-square",
+      answerLabel: "圆角方块影子",
+      options: [
+        optionFigure("circle", "圆形影子", "边是圆的，但没有四条直边。"),
+        optionFigure("rounded-square", "圆角方块影子"),
+        optionFigure("star", "星星影子", "有角，但角太尖。"),
+        optionFigure("apple", "苹果影子", "外边鼓起，但顶部有叶子。"),
+      ],
+      clue: "四条边接近方形，角是圆圆的",
+    },
+    {
+      shape: "triangle",
+      color: "#fb7185",
+      answer: "triangle",
+      answerLabel: "三角形影子",
+      options: [
+        optionFigure("star", "星星影子", "也有尖角，但尖角太多。"),
+        optionFigure("triangle", "三角形影子"),
+        optionFigure("diamond", "菱形影子", "有角，但上下左右四个角都尖。"),
+        optionFigure("leaf", "叶子影子", "两端尖，但边是弯的。"),
+      ],
+      clue: "只有三个尖角，下面是一条直边",
+    },
+    {
+      shape: "diamond",
+      color: "#14b8a6",
+      answer: "diamond",
+      answerLabel: "菱形影子",
+      options: [
+        optionFigure("rounded-square", "圆角方块影子", "也是四边形，但角是圆的。"),
+        optionFigure("diamond", "菱形影子"),
+        optionFigure("triangle", "三角形影子", "有尖角，但只有三个角。"),
+        optionFigure("star", "星星影子", "有尖角，但外边有五个尖。"),
+      ],
+      clue: "上下左右四个尖角一样清楚",
+    },
+  ] as const;
+
+  return cases.map((item, index) => graphicRound({
+    level: index < 3 ? "L5" : "L6",
+    prompt: "哪一个黑影和左边彩色图是同一个轮廓？",
+    instruction: "不要看颜色，只看外边一圈、耳朵、角和尾巴。",
+    kind: "silhouette-match",
+    stemLabel: "彩色样图",
+    figures: [{ shape: item.shape, color: item.color, mode: "color" }],
+    options: item.options.map(shadowOption),
+    answer: item.answer,
+    success: `${item.answerLabel}的轮廓对上了，${item.clue}，所以选这个影子。`,
+    retry: "先用手沿着彩色图的轮廓走一圈，再看黑影的耳朵、角、尾巴是不是一样。",
+    parentPrompt: `问她：哪个影子的轮廓哪里最像？为什么不是其它相近的影子？`,
+    abilityTags: ["影子配对", "轮廓抽象", "近似排除"],
+    difficultyNote: "上实式影子题：四个选项都是相近轮廓，需要排除耳朵、角、尾巴等局部差异。",
+  }));
+}
+
+function makeGraphicCoveredRestoreRounds(): RoundInput[] {
+  const cases = [
+    coveredCase("cat", "#f59e0b", "cat", "小猫", "right", "露出的尖耳朵和圆脸边线指向小猫", [
+      optionFigure("cat", "小猫"),
+      optionFigure("rabbit", "小兔", "也有耳朵，但露出的耳朵没有那么长。"),
+      optionFigure("dog", "小狗", "脸相近，但小狗耳朵是垂下来的。"),
+      optionFigure("bear", "小熊", "圆脸相近，但圆耳朵位置不对。"),
+    ]),
+    coveredCase("rabbit", "#f8fafc", "rabbit", "小兔", "bottom", "上面露出两只长耳朵，所以完整图是小兔", [
+      optionFigure("cat", "小猫", "也有耳朵，但耳朵短而尖。"),
+      optionFigure("rabbit", "小兔"),
+      optionFigure("dog", "小狗", "耳朵方向和长度都不对。"),
+      optionFigure("bear", "小熊", "只有圆耳朵。"),
+    ]),
+    coveredCase("apple", "#ef4444", "apple", "苹果", "left", "右边露出的圆肚子和小叶子属于苹果", [
+      optionFigure("pear", "梨子", "也有叶子，但底部更细长。"),
+      optionFigure("apple", "苹果"),
+      optionFigure("circle", "圆形", "圆边相近，但没有叶子。"),
+      optionFigure("flower", "花朵", "边缘凸起太多。"),
+    ]),
+    coveredCase("fish", "#38bdf8", "fish", "小鱼", "left", "露出的三角尾巴只属于小鱼", [
+      optionFigure("leaf", "叶子", "外形也尖，但没有鱼尾分叉。"),
+      optionFigure("fish", "小鱼"),
+      optionFigure("pear", "梨子", "一头尖，但没有尾巴。"),
+      optionFigure("star", "星星", "有尖角，但不是尾巴。"),
+    ]),
+    coveredCase("star", "#facc15", "star", "星星", "middle", "四周露出的尖角说明完整图是星星", [
+      optionFigure("flower", "花朵", "也有外凸，但花瓣是圆边。"),
+      optionFigure("star", "星星"),
+      optionFigure("rounded-square", "圆角方块", "有角，但角不是尖的。"),
+      optionFigure("leaf", "叶子", "两端尖，但没有五个尖角。"),
+    ]),
+    coveredCase("flower", "#f472b6", "flower", "花朵", "bottom", "上方露出一圈圆花瓣，不是尖角", [
+      optionFigure("flower", "花朵"),
+      optionFigure("star", "星星", "外形也放射，但边是尖的。"),
+      optionFigure("circle", "圆形", "圆边相近，但没有一瓣一瓣的外轮廓。"),
+      optionFigure("apple", "苹果", "有圆边，但顶部是叶子不是花瓣。"),
+    ]),
+    coveredCase("diamond", "#14b8a6", "diamond", "菱形", "middle", "四个方向露出尖角，说明完整图是菱形", [
+      optionFigure("diamond", "菱形"),
+      optionFigure("triangle", "三角形", "也有尖角，但缺少左右两个尖。"),
+      optionFigure("star", "星星", "尖角更多，外轮廓不一样。"),
+      optionFigure("rounded-square", "圆角方块", "有四边，但角不尖。"),
+    ]),
+    coveredCase("pear", "#a3e635", "pear", "梨子", "right", "露出的细上部和小叶子更像梨子，不是圆苹果", [
+      optionFigure("apple", "苹果", "也有叶子，但整体更圆。"),
+      optionFigure("pear", "梨子"),
+      optionFigure("leaf", "叶子", "有绿色弯边，但没有果身。"),
+      optionFigure("circle", "圆形", "有圆边，但没有叶子和细上部。"),
+    ]),
+  ];
+
+  return cases.map((item, index) => graphicRound({
+    level: index < 2 ? "L5" : "L6",
+    prompt: "上面的图被遮住一部分，完整图最可能是哪一个？",
+    instruction: "只看还露出来的边、角、耳朵、叶子或尾巴，再选完整图。",
+    kind: "covered-match",
+    stemLabel: "被遮住的图",
+    figures: [{ shape: item.shape, color: item.color, mode: "covered", cover: item.cover }],
+    options: item.options,
+    answer: item.answer,
+    success: `${item.label}对，${item.clue}。遮住以后要抓住露出的线索。`,
+    retry: "先指一指还露出来的线索：是圆边、尖角、耳朵、叶子还是尾巴，再排除很像但局部不对的选项。",
+    parentPrompt: "请她说哪里被遮住了，哪里还露出来了，为什么其它完整图虽然像但不对。",
+    abilityTags: ["遮挡还原", "可见线索", "近似排除"],
+    difficultyNote: "上实式遮挡题：只能看局部露出线索，四个完整候选图都有相似轮廓。",
+  }));
+}
+
+function makeGraphicDetailWholeRounds(): RoundInput[] {
+  const cases = [
+    detailCase("cat", "#f59e0b", "ear", "cat", "小猫", "放大镜里是短短的尖耳朵，属于小猫", [
+      optionFigure("cat", "小猫"),
+      optionFigure("rabbit", "小兔", "也有耳朵，但耳朵更长。"),
+      optionFigure("dog", "小狗", "耳朵垂下去，不是尖耳。"),
+      optionFigure("bear", "小熊", "耳朵是圆的。"),
+    ]),
+    detailCase("fish", "#38bdf8", "tail", "fish", "小鱼", "放大镜里是分开的三角尾巴，属于小鱼", [
+      optionFigure("leaf", "叶子", "两端尖，但没有分叉尾巴。"),
+      optionFigure("fish", "小鱼"),
+      optionFigure("pear", "梨子", "一头尖但没有尾巴。"),
+      optionFigure("star", "星星", "有尖角但不是尾巴。"),
+    ]),
+    detailCase("apple", "#ef4444", "leaf", "apple", "苹果", "放大镜里是顶部小叶子和圆边，属于苹果", [
+      optionFigure("pear", "梨子", "也有叶子，但整体下半部更细。"),
+      optionFigure("apple", "苹果"),
+      optionFigure("circle", "圆形", "有圆边但没有叶子。"),
+      optionFigure("flower", "花朵", "也有圆边，但局部是花瓣。"),
+    ]),
+    detailCase("star", "#facc15", "point", "star", "星星", "放大镜里是尖尖星角，属于星星", [
+      optionFigure("flower", "花朵", "外轮廓凸出但花瓣是圆的。"),
+      optionFigure("star", "星星"),
+      optionFigure("rounded-square", "圆角方块", "有角但不是尖角。"),
+      optionFigure("leaf", "叶子", "有尖头但只有两端尖。"),
+    ]),
+    detailCase("flower", "#f472b6", "curve", "flower", "花朵", "放大镜里是一片圆圆花瓣，属于花朵", [
+      optionFigure("flower", "花朵"),
+      optionFigure("circle", "圆形", "圆边相近，但没有一片一片的花瓣。"),
+      optionFigure("apple", "苹果", "有圆边，但不是花瓣排列。"),
+      optionFigure("star", "星星", "外轮廓放射，但尖角不对。"),
+    ]),
+    detailCase("rounded-square", "#3b82f6", "curve", "rounded-square", "圆角方块", "放大镜里是直边接圆角，属于圆角方块", [
+      optionFigure("rounded-square", "圆角方块"),
+      optionFigure("circle", "圆形", "有圆边，但没有直边。"),
+      optionFigure("star", "星星", "有角，但角太尖。"),
+      optionFigure("apple", "苹果", "边缘鼓起，但没有直边接圆角。"),
+    ]),
+    detailCase("diamond", "#14b8a6", "point", "diamond", "菱形", "放大镜里是两条直边夹出的尖角，属于菱形", [
+      optionFigure("triangle", "三角形", "也有尖角，但完整图只有三个角。"),
+      optionFigure("diamond", "菱形"),
+      optionFigure("star", "星星", "也有尖角，但角旁边还有凹进去的边。"),
+      optionFigure("rounded-square", "圆角方块", "角是圆的，不是尖的。"),
+    ]),
+    detailCase("pear", "#a3e635", "leaf", "pear", "梨子", "放大镜里是小叶子连着细细的上部，属于梨子", [
+      optionFigure("pear", "梨子"),
+      optionFigure("apple", "苹果", "也有叶子，但叶子下面是圆鼓鼓的上部。"),
+      optionFigure("leaf", "叶子", "整张都是叶子，没有果身连接。"),
+      optionFigure("flower", "花朵", "有圆瓣，但没有小叶子接果身。"),
+    ]),
+  ];
+
+  return cases.map((item, index) => graphicRound({
+    level: index < 2 ? "L5" : "L6",
+    prompt: "放大镜里的局部来自哪一个完整图？",
+    instruction: "先看局部的边、角、耳朵、叶子或尾巴，再去下面找完整图。",
+    kind: "detail-match",
+    stemLabel: "放大局部",
+    figures: [{ shape: item.shape, color: item.color, mode: "detail", detail: item.detail }],
+    options: item.options,
+    answer: item.answer,
+    success: `${item.label}对，${item.clue}。局部线索要回到完整图里找位置。`,
+    retry: "先说放大镜里的局部是什么：耳朵、尾巴、叶子、尖角还是圆边，再看哪个完整图有同样局部。",
+    parentPrompt: "问她：这个局部线索在完整图的哪里？为什么其它选项的相似局部不一样？",
+    abilityTags: ["局部找整体", "边角特征", "近似排除"],
+    difficultyNote: "上实式局部识别题：只给放大局部线索，四个完整候选图都有相近边角，需要排除。",
+  }));
+}
+
+function makeGraphicLayerOverlapRounds(): RoundInput[] {
+  const cases = [
+    layerCase("circle", "#60a5fa", "star", "#facc15", "star-over-circle", "星星在圆形上面", "星星盖住圆形中间，边上还能看到圆弧"),
+    layerCase("star", "#facc15", "circle", "#60a5fa", "circle-over-star", "圆形在星星上面", "圆形压住星星中心，只露出外面的尖角"),
+    layerCase("rounded-square", "#93c5fd", "triangle", "#fb7185", "triangle-over-square", "三角形在圆角方块上面", "三角形的底边挡住方块中间"),
+    layerCase("triangle", "#fb7185", "rounded-square", "#93c5fd", "square-over-triangle", "圆角方块在三角形上面", "方块压住三角形中心，只露出三个尖角"),
+    layerCase("diamond", "#14b8a6", "circle", "#f87171", "circle-over-diamond", "圆形在菱形上面", "圆形盖住菱形中心，四个尖角还露在外面"),
+    layerCase("circle", "#f87171", "diamond", "#14b8a6", "diamond-over-circle", "菱形在圆形上面", "菱形边线压在圆形前面，圆弧只在外侧露出"),
+    layerCase("leaf", "#22c55e", "flower", "#f472b6", "flower-over-leaf", "花朵在叶子上面", "圆花瓣盖住叶子中间，只露出叶子尖端"),
+    layerCase("flower", "#f472b6", "leaf", "#22c55e", "leaf-over-flower", "叶子在花朵上面", "叶子的长弧线压在花瓣前面"),
+  ];
+
+  return cases.map((item, index) => graphicRound({
+    level: index < 2 ? "L5" : "L6",
+    prompt: "两张透明图叠在一起，下面哪张叠合结果和上面一样？",
+    instruction: "先看哪张图在上面，再看重叠的地方谁挡住了谁。",
+    kind: "layer-overlap",
+    stemLabel: "透明叠合样子",
+    groups: [
+      { label: "原图一", figures: [item.bottomSource], connector: "plus" },
+      { label: "原图二", figures: [item.topSource], connector: "plus" },
+    ],
+    figures: item.answerFigures,
+    options: [
+      layerOption(item.answer, item.label, item.answerFigures),
+      layerOption(`${item.bottomSource.shape}-over-${item.topSource.shape}`, layerLabel(swappedLayer(item.answerFigures)), swappedLayer(item.answerFigures), "两个图形一样，但上面和下面反了。"),
+      layerOption(`${item.answer}-shift`, `${item.label}，偏右下叠放`, shiftedLayer(item.answerFigures), "上下顺序像，但重叠中心偏到一边。"),
+      layerOption(`${item.answer}-wrong-shape`, layerLabel(wrongLayer(item.answerFigures)), wrongLayer(item.answerFigures), "位置像，但其中一个图形轮廓被换了。"),
+    ],
+    answer: item.answer,
+    success: `${item.label}对，${item.clue}，透明叠合要看上面和下面的遮挡线索。`,
+    retry: "先说哪张在上面，再看重叠边线：上面的图会挡住下面的图，不要只看两个图形有没有出现。",
+    parentPrompt: "请她指一指重叠的地方，说为什么这个是上面，为什么上下反过来的选项不对。",
+    abilityTags: ["透明叠叠板", "上下层判断", "重叠线索"],
+    difficultyNote: "上实式叠合题：四个选项图形相近，需要同时判断上下层、重叠位置和轮廓是否被换。",
+  }));
+}
+
+function makeGraphicCodeMachineRounds(): RoundInput[] {
+  const cases = [
+    codeCase("cat", "apple", [["fish", "star"], ["rabbit", "leaf"], ["dog", "pear"]], "小猫对应苹果"),
+    codeCase("fish", "star", [["cat", "apple"], ["rabbit", "leaf"], ["dog", "pear"]], "小鱼对应星星"),
+    codeCase("rabbit", "leaf", [["cat", "apple"], ["fish", "star"], ["dog", "pear"]], "小兔对应叶子"),
+    codeCase("dog", "pear", [["cat", "apple"], ["fish", "star"], ["rabbit", "leaf"]], "小狗对应梨子"),
+    codeCase("circle", "triangle", [["star", "flower"], ["diamond", "rounded-square"], ["leaf", "fish"]], "圆形对应三角形"),
+    codeCase("star", "flower", [["circle", "triangle"], ["diamond", "rounded-square"], ["leaf", "fish"]], "星星对应花朵"),
+    codeCase("diamond", "rounded-square", [["circle", "triangle"], ["star", "flower"], ["leaf", "fish"]], "菱形对应圆角方块"),
+    codeCase("leaf", "fish", [["circle", "triangle"], ["star", "flower"], ["diamond", "rounded-square"]], "叶子对应小鱼"),
+  ];
+
+  return cases.map((item, index) => graphicRound({
+    level: index < 3 ? "L5" : "L6",
+    prompt: "看图形密码表，问号这边应该换成哪一个图？",
+    instruction: "一组一组看左边图形对应右边什么，再找到和问号一样的左边图形。",
+    kind: "code-match",
+    stemLabel: "图形密码表",
+    groups: item.pairs.map(([left, right]) => ({
+      label: "对应",
+      figures: [codeFigure(left, -24), codeFigure(right, 24)],
+      connector: "arrow",
+    })),
+    figures: [codeFigure(item.query, -20), { shape: "rounded-square", mode: "blank", x: 24, scale: 0.72 }],
+    options: item.options,
+    answer: item.answer,
+    success: `${item.clue}，密码题要按同一行的对应关系找答案。`,
+    retry: "先在密码表里找到和问号左边一样的图形，再看它右边对应哪个图，不要选隔壁一行。",
+    parentPrompt: "问她：问号左边的图在密码表哪一行？这一行右边对应什么？为什么相邻一行不对？",
+    abilityTags: ["图形密码机", "对应映射", "近邻排除"],
+    difficultyNote: "上实式编码题：需要从多行图形对应关系中筛选目标行，并排除相邻行的高混淆选项。",
+  }));
+}
+
+function makeGraphicGapCloseRounds(): RoundInput[] {
+  const cases = [
+    gapCase("circle", "#60a5fa", "right", "圆形右边缺一段圆弧，补上的也要是圆弧", ["rounded-square", "apple", "diamond"]),
+    gapCase("rounded-square", "#3b82f6", "top", "圆角方块上边缺直边接圆角", ["circle", "diamond", "star"]),
+    gapCase("triangle", "#fb7185", "bottom", "三角形底下缺一条直边", ["diamond", "star", "leaf"]),
+    gapCase("diamond", "#14b8a6", "left", "菱形左边缺两条斜边夹尖角", ["triangle", "rounded-square", "star"]),
+    gapCase("star", "#facc15", "right", "星星右边缺尖角和凹进去的边", ["flower", "triangle", "diamond"]),
+    gapCase("flower", "#f472b6", "top", "花朵上方缺圆圆花瓣", ["circle", "star", "apple"]),
+    gapCase("apple", "#ef4444", "top", "苹果上方缺叶子和圆鼓鼓的边", ["pear", "circle", "flower"]),
+    gapCase("fish", "#38bdf8", "right", "小鱼右边缺三角尾巴", ["leaf", "pear", "star"]),
+  ];
+
+  return cases.map((item, index) => graphicRound({
+    level: index < 2 ? "L5" : "L6",
+    prompt: "这个轮廓缺了一块，下面哪一个完整图最能补上？",
+    instruction: "先看缺口在哪一边，再看缺口需要圆边、直边、尖角还是尾巴。",
+    kind: "closure-match",
+    stemLabel: "缺口轮廓",
+    figures: [{ shape: item.shape, color: item.color, mode: "missing", gap: item.gap }],
+    options: item.options,
+    answer: item.answer,
+    success: `${item.label}对，${item.clue}。补缺口要看边、角和缺口方向。`,
+    retry: "先指缺口方向，再说缺口需要圆边、直边、尖角、叶子还是尾巴，然后排除轮廓相近但边角不对的选项。",
+    parentPrompt: "请她指着缺口说：缺的是哪里？为什么这个图能补上，其他相近图形的边角哪里不一样？",
+    abilityTags: ["缺口补一补", "视觉闭合", "边角匹配"],
+    difficultyNote: "上实式视觉闭合题：只给不完整轮廓，四个选项都有相近边角，需要按缺口方向排除。",
+  }));
+}
+
+function graphicRound(input: {
+  level: AbilityLevel;
+  prompt: string;
+  instruction: string;
+  kind: NonNullable<RoundInput["graphicChallenge"]>["kind"];
+  stemLabel: string;
+  figures: GraphicFigure[];
+  groups?: NonNullable<RoundInput["graphicChallenge"]>["groups"];
+  options: GraphicChallengeOption[];
+  answer: string;
+  success: string;
+  retry: string;
+  parentPrompt: string;
+  abilityTags: string[];
+  difficultyNote: string;
+}): RoundInput {
+  return {
+    level: input.level,
+    prompt: input.prompt,
+    instruction: input.instruction,
+    graphicChallenge: {
+      kind: input.kind,
+      stemLabel: input.stemLabel,
+      figures: input.figures,
+      groups: input.groups,
+      options: input.options,
+    },
+    choices: input.options.map((option, index) => ({
+      label: ["A", "B", "C", "D"][index] ?? String(index + 1),
+      value: option.value,
+    })),
+    answer: input.answer,
+    success: input.success,
+    retry: input.retry,
+    parentPrompt: input.parentPrompt,
+    abilityTags: input.abilityTags,
+    difficultyNote: input.difficultyNote,
+  };
+}
+
+function optionFigure(shape: GraphicFigure["shape"], label: string, nearMiss?: string): GraphicChallengeOption {
+  return {
+    value: shape,
+    label,
+    figure: { shape, mode: "color" },
+    nearMiss,
+  };
+}
+
+function shadowOption(option: GraphicChallengeOption): GraphicChallengeOption {
+  if (!option.figure) return option;
+  return { ...option, figure: { ...option.figure, mode: "shadow" } };
+}
+
+function optionFigures(value: string, label: string, figures: GraphicFigure[], nearMiss?: string): GraphicChallengeOption {
+  return { value, label, figures, nearMiss };
+}
+
+function layerCase(
+  bottom: GraphicFigure["shape"],
+  bottomColor: string,
+  top: GraphicFigure["shape"],
+  topColor: string,
+  answer: string,
+  label: string,
+  clue: string,
+) {
+  const bottomSource: GraphicFigure = { shape: bottom, color: bottomColor, scale: 0.74, x: -10, y: 8, opacity: 0.62 };
+  const topSource: GraphicFigure = { shape: top, color: topColor, scale: 0.74, x: 12, y: -8, opacity: 0.86 };
+  return { answer, answerFigures: [bottomSource, topSource], bottomSource, clue, label, topSource };
+}
+
+function layerOption(value: string, label: string, figures: GraphicFigure[], nearMiss?: string): GraphicChallengeOption {
+  return optionFigures(value, label, figures, nearMiss);
+}
+
+function swappedLayer(figures: GraphicFigure[]) {
+  const [bottom, top] = figures;
+  return [
+    { ...top, x: bottom?.x, y: bottom?.y, opacity: 0.62 },
+    { ...bottom, x: top?.x, y: top?.y, opacity: 0.86 },
+  ].filter(Boolean) as GraphicFigure[];
+}
+
+function shiftedLayer(figures: GraphicFigure[]) {
+  return figures.map((figure, index) => ({ ...figure, x: (figure.x ?? 0) + (index === 0 ? 10 : -8), y: (figure.y ?? 0) + 12 }));
+}
+
+function wrongLayer(figures: GraphicFigure[]) {
+  const [bottom, top] = figures;
+  const replacement: GraphicFigure["shape"] = top?.shape === "star" ? "flower" : top?.shape === "circle" ? "rounded-square" : top?.shape === "leaf" ? "fish" : "star";
+  return [bottom, top ? { ...top, shape: replacement } : undefined].filter(Boolean) as GraphicFigure[];
+}
+
+function layerLabel(figures: GraphicFigure[]) {
+  const [bottom, top] = figures;
+  if (!bottom || !top) return "透明叠合图";
+  return `${labelFor(top.shape)}在${labelFor(bottom.shape)}上面`;
+}
+
+function codeCase(
+  query: GraphicFigure["shape"],
+  answerShape: GraphicFigure["shape"],
+  extraPairs: [GraphicFigure["shape"], GraphicFigure["shape"]][],
+  clue: string,
+) {
+  const pairs: [GraphicFigure["shape"], GraphicFigure["shape"]][] = [[query, answerShape], ...extraPairs];
+  const distractors = extraPairs.map(([, right]) => right).slice(0, 3);
+  const optionShapes = [answerShape, ...distractors].slice(0, 4);
+  return {
+    answer: answerShape,
+    clue,
+    options: optionShapes.map((shape, index) => optionFigure(shape, labelFor(shape), index === 0 ? undefined : "这是相邻行的对应图，不是问号这一行。")),
+    pairs,
+    query,
+  };
+}
+
+function codeFigure(shape: GraphicFigure["shape"], x: number): GraphicFigure {
+  return { shape, x, scale: 0.64 };
+}
+
+function gapCase(
+  shape: GraphicFigure["shape"],
+  color: string,
+  gap: NonNullable<GraphicFigure["gap"]>,
+  clue: string,
+  distractors: GraphicFigure["shape"][],
+) {
+  const options = [shape, ...distractors].slice(0, 4).map((optionShape, index) =>
+    optionFigure(optionShape, labelFor(optionShape), index === 0 ? undefined : "轮廓有相近边角，但缺口方向或边形不吻合。"),
+  );
+  return { answer: shape, clue, color, gap, label: labelFor(shape), options, shape };
+}
+
+function coveredCase(
+  shape: GraphicFigure["shape"],
+  color: string,
+  answer: string,
+  label: string,
+  cover: NonNullable<GraphicFigure["cover"]>,
+  clue: string,
+  options: GraphicChallengeOption[],
+) {
+  return { answer, clue, color, cover, label, options, shape };
+}
+
+function detailCase(
+  shape: GraphicFigure["shape"],
+  color: string,
+  detail: NonNullable<GraphicFigure["detail"]>,
+  answer: string,
+  label: string,
+  clue: string,
+  options: GraphicChallengeOption[],
+) {
+  return { answer, clue, color, detail, label, options, shape };
+}
+
 function numberChoices(answer: number, min: number, max: number) {
   const values = new Set<number>([answer]);
   if (answer > min) values.add(answer - 1);
@@ -3778,6 +4341,22 @@ function labelFor(token: string) {
     "🟢": "绿色圆片",
     "🟣": "紫色圆片",
     "🟦": "蓝色方块",
+    "🐶": "小狗",
+    "🐰": "小兔",
+    apple: "苹果",
+    bear: "小熊",
+    cat: "小猫",
+    circle: "圆形",
+    diamond: "菱形",
+    dog: "小狗",
+    fish: "小鱼",
+    flower: "花朵",
+    leaf: "叶子",
+    pear: "梨子",
+    rabbit: "小兔",
+    "rounded-square": "圆角方块",
+    star: "星星",
+    triangle: "三角形",
     "☀️": "太阳",
     "🌙": "月亮",
     "⭐": "星星",
@@ -3833,6 +4412,10 @@ function choice(value: string) {
 
 function choiceSet(values: readonly string[]) {
   return values.map((value) => ({ label: value, value }));
+}
+
+function visualChoiceSet(values: readonly string[]) {
+  return values.map((value) => ({ label: labelFor(value), value }));
 }
 
 function threeViewChoices(answer: string) {

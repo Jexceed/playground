@@ -23,13 +23,18 @@ const output = ts.transpileModule(source, {
   compilerOptions: { module: ts.ModuleKind.ES2020, target: ts.ScriptTarget.ES2020 },
 }).outputText.replace('import { imageGallery } from "./imageGallery";', `const imageGallery = ${JSON.stringify(imageGallery)};`);
 const moduleUrl = `data:text/javascript;base64,${Buffer.from(output.replace("../types", "data:text/javascript,export{}")).toString("base64")}`;
-const { games } = await import(moduleUrl);
+const { games, worlds } = await import(moduleUrl);
 
 const visualTokenSource = readFileSync("src/components/VisualToken.tsx", "utf8");
 const knownVisuals = new Set([
   ...extractMapKeys("tokenMap", visualTokenSource),
   ...extractMapKeys("phraseMap", visualTokenSource),
 ]);
+const knownVisualKinds = new Map([
+  ...extractMapEntries("tokenMap", visualTokenSource),
+  ...extractMapEntries("phraseMap", visualTokenSource),
+]);
+const rasterVisualKinds = extractRasterKinds(visualTokenSource);
 const visualRuleHints = [
   /小猫.*奶油|猫.*奶油/,
   /小狗.*睡觉/,
@@ -50,7 +55,10 @@ const singleSurfaceSpatialGameIds = new Set(["logic-address-map", "logic-positio
 const problems = [];
 const brandLogoSrc = "/images/brand/thinking-house-brand-v3.png";
 const brandLogoPath = join("public", brandLogoSrc.replace(/^\/+/, ""));
+const launchBrandAudioSrc = "/audio/brand/launch-brand-shout.wav";
+const launchBrandAudioPath = join("public", launchBrandAudioSrc.replace(/^\/+/, ""));
 if (!existsSync(brandLogoPath)) problems.push(`brand logo image missing: ${brandLogoSrc}`);
+if (!existsSync(launchBrandAudioPath)) problems.push(`launch brand chorus audio missing: ${launchBrandAudioSrc}`);
 if (!indexHtml.includes("<title>小小思考屋</title>")) {
   problems.push("index.html title should use the 小小思考屋 brand");
 }
@@ -64,7 +72,12 @@ if (!indexHtml.includes(`<link rel="apple-touch-icon" href="${brandLogoSrc}" />`
 if (!appSource.includes(`src="${brandLogoSrc}"`)) problems.push(`App sidebar should render image-gen brand logo: ${brandLogoSrc}`);
 if (/brand-(mark|logo)/.test(appSource)) problems.push("App still contains legacy inline brand logo markup");
 if (!appSource.includes("function LaunchSplash")) problems.push("App should define a branded LaunchSplash entry view");
-if (!appSource.includes('speak("小小思考屋")')) problems.push("LaunchSplash should trigger the 小小思考屋 voice line through speak()");
+if (appSource.includes('speak("小小思考屋")')) {
+  problems.push("LaunchSplash should play the dedicated brand audio instead of the normal speech manifest");
+}
+if (!appSource.includes(launchBrandAudioSrc)) {
+  problems.push(`LaunchSplash should reference the dedicated launch brand audio: ${launchBrandAudioSrc}`);
+}
 if (!appSource.includes("startup-splash")) problems.push("LaunchSplash should render startup-splash markup");
 if (!appSource.includes("splashTimer")) problems.push("LaunchSplash should auto-enter after the opening animation");
 if (/className="splash-enter"|onClick=\{enterApp\}/.test(appSource)) {
@@ -93,6 +106,36 @@ if (matrixBoardUsesNestedVisualToken(progressiveSetGameSource)) {
 }
 if (memoryBoardUsesNestedVisualToken(progressiveSetGameSource)) {
   problems.push("MemoryBoard renderer should use flat memory-card tokens instead of nested VisualToken cards");
+}
+if (!progressiveSetGameSource.includes("visual-groups-compare")) {
+  problems.push("ProgressiveSetGame should give left/right comparison groups a dedicated visual-groups-compare class");
+}
+if (!/\.visual-groups-compare/.test(readFileSync("src/styles.css", "utf8"))) {
+  problems.push("styles should size left/right comparison visual tokens without narrow five-column bases");
+}
+if (!progressiveSetGameSource.includes("visual-groups-evidence")) {
+  problems.push("ProgressiveSetGame should give part-whole and balance evidence groups a dedicated visual-groups-evidence class");
+}
+if (!/\.visual-groups-evidence/.test(readFileSync("src/styles.css", "utf8"))) {
+  problems.push("styles should size part-whole and balance evidence tokens without narrow five-column bases");
+}
+if (!progressiveSetGameSource.includes("function GraphicChallengeBoard")) {
+  problems.push("ProgressiveSetGame should render dedicated SVG graphic-challenge boards for 图形工坊");
+}
+if (!progressiveSetGameSource.includes("function GraphicAnswerFigure")) {
+  problems.push("ProgressiveSetGame should render dedicated SVG answer choices for 图形工坊");
+}
+if (!progressiveSetGameSource.includes("function graphicFigureAssetSrc")) {
+  problems.push("ProgressiveSetGame should render image-gen graphic sticker assets for 图形工坊 figures");
+}
+if (/challenge\.figures\.map\(\(figure/.test(progressiveSetGameSource)) {
+  problems.push("GraphicChallengeBoard should render challenge.figures in one shared SVG so overlap and code-machine stems stay spatially related");
+}
+if (/filter:\s*"brightness\(0\)"/.test(progressiveSetGameSource)) {
+  problems.push("graphic shadow figures should render as real black silhouettes, not CSS-filtered color PNGs");
+}
+if (!/figure\.mode\s*===\s*"blank"/.test(progressiveSetGameSource)) {
+  problems.push("graphic code-machine question slot should render as a visible blank answer slot");
 }
 if (!/readLastPlayLocation/.test(storageSource) || !/saveLastPlayLocation/.test(storageSource)) {
   problems.push("storage should expose readLastPlayLocation and saveLastPlayLocation helpers");
@@ -150,8 +193,12 @@ const counts = games.reduce(
     acc.totalRounds += game.rounds.length;
     return acc;
   },
-  { math: 0, logic: 0, totalGames: 0, totalRounds: 0 },
+  { math: 0, logic: 0, graphic: 0, totalGames: 0, totalRounds: 0 },
 );
+
+checkWorldCoverage();
+checkGraphicWorkshopCoverage();
+checkReferenceReinforcementScope();
 
 for (const game of games) {
   if (!game.rounds.length) problems.push(`${game.id}: no rounds`);
@@ -166,6 +213,7 @@ for (const game of games) {
       round.grid,
       round.matrix,
       round.memory,
+      round.graphicChallenge,
       round.choices.map((choice) => choice.label),
       round.answer,
     ]);
@@ -182,8 +230,11 @@ for (const game of games) {
       }
     }
     if (!round.difficultyNote?.trim()) problems.push(`${context}: missing difficultyNote`);
-    if (game.world === "logic") {
+    if (game.world === "logic" || game.world === "graphic") {
       checkLogicDifficultyNote(round, context);
+    }
+    if (game.world === "graphic") {
+      checkGraphicRoundQuality(round, context);
     }
     if (singleSurfaceSpatialGameIds.has(game.id)) {
       checkSpatialVisualSurface(round, context);
@@ -215,6 +266,9 @@ for (const game of games) {
     }
     if (game.id === "logic-pattern-train") {
       checkPatternTrainRoundQuality(round, context);
+    }
+    if (game.id === "logic-relation-pairs") {
+      checkRelationPairRoundQuality(round, context);
     }
     if (game.id === "logic-same-kind-detective") {
       checkSameKindRoundQuality(round, context);
@@ -249,7 +303,13 @@ for (const game of games) {
     if (game.id === "logic-order-plan") {
       checkOrderPlanRoundQuality(round, context);
     }
-    if (!round.sceneImage && !round.sequence && !round.visualGroups && !round.grid && !round.matrix && !round.memory) {
+    if (game.id === "logic-part-whole-puzzle") {
+      checkPartWholePuzzleRoundQuality(round, context);
+    }
+    if (game.id === "logic-balance-swap") {
+      checkBalanceSwapRoundQuality(round, context);
+    }
+    if (!round.sceneImage && !round.sequence && !round.visualGroups && !round.grid && !round.matrix && !round.memory && !round.graphicChallenge) {
       problems.push(`${context}: missing visual surface`);
     }
     if (round.sceneImage) {
@@ -279,8 +339,8 @@ if (existsSync("public/audio/voice-lines.json")) {
   if (/？。|！。|。。/.test(voiceLines)) problems.push("voice-lines.json contains doubled punctuation");
   voiceLineData = JSON.parse(voiceLines);
   if (!Array.isArray(voiceLineData.lines)) problems.push("voice-lines.json has no lines array");
-  if (!voiceLineData.lines?.some((line) => line.text === "小小思考屋")) {
-    problems.push("voice-lines.json should include the launch brand voice line 小小思考屋");
+  if (voiceLineData.lines?.some((line) => (line.contexts ?? []).includes("app-launch"))) {
+    problems.push("voice-lines.json should not include app-launch; the launch shout is a dedicated brand audio asset");
   }
 }
 
@@ -342,8 +402,27 @@ if (existsSync("public/audio/voice/manifest.json")) {
             .join(", ")}`,
         );
       }
-      if (!manifest.entries.some((entry) => entry.text === "小小思考屋")) {
-        problems.push("audio manifest should include the launch brand voice line 小小思考屋");
+      const manifestEntryById = new Map(manifest.entries.map((entry) => [entry.id, entry]));
+      const voiceLineTexts = new Set(voiceLineData.lines.map((line) => line.text));
+      const manifestTexts = new Set(manifest.entries.map((entry) => entry.text));
+      for (const label of graphicOptionVoiceLabels()) {
+        if (!voiceLineTexts.has(label)) problems.push(`voice-lines.json missing graphic option label: ${label}`);
+        if (!manifestTexts.has(label)) problems.push(`audio manifest missing graphic option label: ${label}`);
+      }
+      const nonStandardCoreVoiceLines = voiceLineData.lines.filter((line) => {
+        const entry = manifestEntryById.get(line.id);
+        return (
+          entry?.src?.includes("/macos-") &&
+          (line.contexts ?? []).some((context) => String(context).startsWith("logic-") || String(context).startsWith("graphic-"))
+        );
+      });
+      if (nonStandardCoreVoiceLines.length) {
+        problems.push(
+          `logic and graphic voice lines should use the standard voice pack, found ${nonStandardCoreVoiceLines.length} macOS entries: ${nonStandardCoreVoiceLines
+            .slice(0, 10)
+            .map((line) => line.id)
+            .join(", ")}`,
+        );
       }
     }
     if (manifest.failures?.length) problems.push(`audio manifest has ${manifest.failures.length} failures`);
@@ -392,20 +471,114 @@ const report = {
   ...counts,
   mathTargetMet: counts.math >= 100,
   logicTargetMet: counts.logic >= 100,
+  graphicTargetMet: counts.graphic >= 48,
   problemCount: problems.length,
   problems: problems.slice(0, 20),
 };
 
 console.log(JSON.stringify(report, null, 2));
-if (problems.length || counts.math < 100 || counts.logic < 100) process.exit(1);
+if (problems.length || counts.math < 100 || counts.logic < 100 || counts.graphic < 48) process.exit(1);
+
+function checkWorldCoverage() {
+  const worldIds = new Set(worlds.map((world) => world.id));
+  for (const worldId of ["math", "logic", "graphic"]) {
+    if (!worldIds.has(worldId)) problems.push(`worlds should include ${worldId}`);
+  }
+  const graphicWorld = worlds.find((world) => world.id === "graphic");
+  if (!graphicWorld) return;
+  if (graphicWorld.name !== "图形工坊") problems.push("graphic world should be named 图形工坊");
+  if (!/轮廓|遮挡|叠合|线索|密码|缺口/.test(graphicWorld.summary)) {
+    problems.push("graphic world summary should describe non-duplicative visual processing work");
+  }
+}
+
+function checkGraphicWorkshopCoverage() {
+  const graphicGames = games.filter((game) => game.world === "graphic");
+  if (graphicGames.length !== 6) {
+    problems.push(`graphic world should have exactly 6 real-visual first-pass games, found ${graphicGames.length}`);
+  }
+  const duplicateGraphicIds = new Set([
+    "graphic-observation-lab",
+    "graphic-pattern-studio",
+    "graphic-grid-postoffice",
+    "graphic-puzzle-table",
+    "graphic-rotation-workbench",
+    "graphic-memory-window",
+  ]);
+  const requiredTags = ["影子配对", "遮挡还原", "局部找整体", "透明叠叠板", "图形密码机", "缺口补一补"];
+  const tags = new Set(graphicGames.flatMap((game) => game.abilityTags));
+  for (const tag of requiredTags) {
+    if (!tags.has(tag)) problems.push(`graphic world missing ability family: ${tag}`);
+  }
+  const forbiddenTags = ["细节观察", "视觉规律", "空间方位", "部分整体", "旋转方向", "视觉记忆"];
+  for (const tag of forbiddenTags) {
+    if (tags.has(tag)) problems.push(`graphic world should not reuse logic-house ability family: ${tag}`);
+  }
+  for (const game of graphicGames) {
+    if (!game.id.startsWith("graphic-")) problems.push(`${game.id}: graphic game id should start with graphic-`);
+    if (duplicateGraphicIds.has(game.id)) {
+      problems.push(`${game.id}: duplicates an existing logic-house visual task family and must be replaced`);
+    }
+    if (game.rounds.length < 8 || game.rounds.length > 8) {
+      problems.push(`${game.id}: graphic first-pass game should have exactly 8 refined rounds, found ${game.rounds.length}`);
+    }
+  }
+  const requiredGraphicItems = [
+    "graphicApple",
+    "graphicBear",
+    "graphicCat",
+    "graphicCircle",
+    "graphicDiamond",
+    "graphicDog",
+    "graphicFish",
+    "graphicFlower",
+    "graphicLeaf",
+    "graphicPear",
+    "graphicRabbit",
+    "graphicRoundedSquare",
+    "graphicStar",
+    "graphicTriangle",
+  ];
+  for (const key of requiredGraphicItems) {
+    const asset = imageGallery.items?.[key];
+    if (!asset) {
+      problems.push(`imageGallery.items should register image-gen graphic asset ${key}`);
+      continue;
+    }
+    const imagePath = join("public", asset.src.replace(/^\/+/, ""));
+    if (!existsSync(imagePath)) problems.push(`image-gen graphic asset file missing: ${asset.src}`);
+  }
+}
+
+function checkReferenceReinforcementScope() {
+  const reinforcementMarkers = [...source.matchAll(/Reference reinforcement:/g)];
+  if (reinforcementMarkers.length > 3) {
+    problems.push(`reference reinforcement should stay compact: found ${reinforcementMarkers.length} markers`);
+  }
+  if (reinforcementMarkers.length === 0) {
+    problems.push("reference reinforcement rationale should be documented with Reference reinforcement comments");
+  }
+}
 
 function extractMapKeys(name, text) {
+  return extractMapEntries(name, text).map(([key]) => key);
+}
+
+function extractMapEntries(name, text) {
   const start = text.indexOf(`const ${name}`);
   if (start === -1) return [];
   const end = text.indexOf("};", start);
   if (end === -1) return [];
   const block = text.slice(start, end);
-  return [...block.matchAll(/^\s*"([^"]+)":/gm)].map((match) => match[1]);
+  return [...block.matchAll(/^\s*"([^"]+)":\s*\{[^}]*kind:\s*"([^"]+)"/gm)].map((match) => [match[1], match[2]]);
+}
+
+function extractRasterKinds(text) {
+  const start = text.indexOf("function rasterForKind");
+  if (start === -1) return new Set();
+  const end = text.indexOf("function CrayonTexture", start);
+  const block = text.slice(start, end === -1 ? undefined : end);
+  return new Set([...block.matchAll(/kind === "([^"]+)"/g)].map((match) => match[1]));
 }
 
 function isUnillustratedText(item) {
@@ -448,6 +621,124 @@ function normalizeChoiceMeaning(label) {
     .replace(/直接走/, "走")
     .replace(/已经够了/, "够了")
     .replace(/证据已经够了/, "证据够了");
+}
+
+function checkGraphicRoundQuality(round, context) {
+  const surfaces = [
+    round.sceneImage ? "sceneImage" : null,
+    round.visualGroups ? "visualGroups" : null,
+    round.sequence ? "sequence" : null,
+    round.grid ? "grid" : null,
+    round.matrix ? "matrix" : null,
+    round.memory ? "memory" : null,
+    round.graphicChallenge ? "graphicChallenge" : null,
+  ].filter(Boolean);
+  if (surfaces.length === 0) {
+    problems.push(`${context}: graphic round should have a visual surface`);
+  }
+  if (!round.graphicChallenge) {
+    problems.push(`${context}: graphic round should use a dedicated graphicChallenge surface, not generic token cards`);
+  }
+  if (round.grid || round.sequence || round.memory || round.visualGroups || round.matrix || round.sceneImage) {
+    problems.push(`${context}: graphic round should avoid generic scene, group, grid, matrix, sequence, and memory surfaces`);
+  }
+  if (surfaces.length > 1) {
+    problems.push(`${context}: graphic round should have exactly one authoritative graphicChallenge surface`);
+  }
+  if (round.graphicChallenge) {
+    checkGraphicChallenge(round, context);
+  }
+  if (!/轮廓|影子|遮住|露出|放大|局部|线索|边|角|尾巴|耳朵|叶子|缺口|叠|上面|下面|透明|密码|对应/.test(round.success)) {
+    problems.push(`${context}: graphic success should name visible evidence or operation`);
+  }
+  if (!/先|再|轮廓|影子|遮住|露出|放大|局部|线索|边|角|尾巴|耳朵|叶子|缺口|叠|上面|下面|透明|密码|对应/.test(round.retry)) {
+    problems.push(`${context}: graphic retry should guide a concrete visual operation`);
+  }
+  if (!/问她|请她/.test(round.parentPrompt) || !/为什么|怎么|哪里|指|说|轮廓|遮住|局部|线索|叠|密码|对应|缺口/.test(round.parentPrompt)) {
+    problems.push(`${context}: graphic parentPrompt should ask for a parent-child explanation`);
+  }
+  const nearMissWords = `${round.retry} ${round.parentPrompt}`;
+  if (!/轮廓|影子|露出|遮住|边|角|尖|圆|方|局部|耳朵|尾巴|叶子|叠|上面|下面|密码|对应|缺口/.test(nearMissWords)) {
+    problems.push(`${context}: graphic round should explain the likely near-miss distractor dimension`);
+  }
+}
+
+function checkGraphicChallenge(round, context) {
+  const challenge = round.graphicChallenge;
+  const allowedKinds = new Set(["silhouette-match", "covered-match", "detail-match", "layer-overlap", "code-match", "closure-match"]);
+  if (!allowedKinds.has(challenge.kind)) {
+    problems.push(`${context}: graphicChallenge has unsupported kind ${challenge.kind}`);
+  }
+  if (!challenge.figures?.length) {
+    problems.push(`${context}: graphicChallenge should draw a stem figure`);
+  }
+  if (!Array.isArray(challenge.options) || challenge.options.length !== 4) {
+    problems.push(`${context}: graphicChallenge should provide exactly four drawn answer options`);
+    return;
+  }
+  const optionValues = new Set(challenge.options.map((option) => option.value));
+  if (optionValues.size !== challenge.options.length) {
+    problems.push(`${context}: graphicChallenge option values should be unique`);
+  }
+  for (const choice of round.choices) {
+    if (!optionValues.has(choice.value)) {
+      problems.push(`${context}: answer choice ${choice.value} has no drawn graphic option`);
+    }
+  }
+  for (const option of challenge.options) {
+    if (!option.figure?.shape && !option.figures?.length) {
+      problems.push(`${context}: graphic option ${option.value} should include a drawable shape`);
+    }
+    if (!option.label?.trim()) {
+      problems.push(`${context}: graphic option ${option.value} should include an accessible label`);
+    }
+    if (option.value !== round.answer && !option.nearMiss?.trim()) {
+      problems.push(`${context}: distractor ${option.value} should document its visual near-miss rationale`);
+    }
+  }
+  if (!optionValues.has(round.answer)) {
+    problems.push(`${context}: graphic answer should be one of the drawn options`);
+  }
+  if (round.choices.length !== 4 || round.choices.some((choice) => !/^[ABCD]$/.test(choice.label))) {
+    problems.push(`${context}: graphic answer buttons should be A/B/C/D labels backed by drawn options`);
+  }
+  if (challenge.kind === "silhouette-match") {
+    const nonShadowOptions = challenge.options.filter((option) =>
+      (option.figures ?? (option.figure ? [option.figure] : [])).some((figure) => figure.mode !== "shadow"),
+    );
+    if (nonShadowOptions.length) {
+      problems.push(`${context}: silhouette-match options should all be black shadow figures`);
+    }
+  }
+  if (challenge.kind === "code-match") {
+    const blankSlots = challenge.figures.filter((figure) => figure.mode === "blank");
+    if (blankSlots.length !== 1) {
+      problems.push(`${context}: code-match stem should show exactly one blank answer slot`);
+    }
+    const missingQueryClone = challenge.figures.some((figure) => figure.mode === "missing" && figure.shape === round.answer);
+    if (missingQueryClone) {
+      problems.push(`${context}: code-match should not draw the answer/query as a missing-outline placeholder`);
+    }
+  }
+  if (challenge.kind === "layer-overlap") {
+    const rationaleLabels = challenge.options.filter((option) => /上下顺序反了|重叠位置偏了|换成相近图形/.test(option.label));
+    if (rationaleLabels.length) {
+      problems.push(`${context}: layer-overlap option labels should describe the drawn option, not reveal the distractor rationale`);
+    }
+  }
+}
+
+function graphicOptionVoiceLabels() {
+  return Array.from(
+    new Set(
+      games
+        .filter((game) => game.world === "graphic")
+        .flatMap((game) => game.rounds)
+        .flatMap((round) => round.graphicChallenge?.options ?? [])
+        .map((option) => option.label)
+        .filter(Boolean),
+    ),
+  );
 }
 
 function checkPatternTrainRoundQuality(round, context) {
@@ -542,6 +833,34 @@ function patternTrainLabel(item) {
   }[item] ?? item;
 }
 
+function checkRelationPairRoundQuality(round, context) {
+  if (round.sceneImage) {
+    problems.push(`${context}: relation-pair round should not use decorative scene images that compress or distract from pair evidence`);
+  }
+  if ((round.visualGroups ?? []).some((group) => /可选|观察/.test(group.label))) {
+    problems.push(`${context}: relation-pair visual groups should show evidence only, not answer choices`);
+  }
+  const choiceLabels = round.choices.map((choice) => choice.label);
+  const stemText = `${round.prompt} ${round.instruction}`;
+  for (const label of choiceLabels) {
+    if (label.length > 1 && stemText.includes(label)) {
+      problems.push(`${context}: relation-pair prompt should not reveal answer choices in the stem: ${label}`);
+    }
+  }
+  const visualItems = (round.visualGroups ?? []).flatMap((group) => group.items);
+  for (const label of choiceLabels) {
+    if (visualItems.includes(label)) {
+      problems.push(`${context}: relation-pair visual groups should not duplicate answer choices: ${label}`);
+    }
+  }
+  if (!progressiveSetGameSource.includes("visual-groups-relation")) {
+    problems.push("ProgressiveSetGame should give relation-pair evidence groups a dedicated visual-groups-relation class");
+  }
+  if (!/\.visual-groups-relation/.test(readFileSync("src/styles.css", "utf8"))) {
+    problems.push("styles should size relation-pair visual tokens without narrow five-column bases");
+  }
+}
+
 function checkSorterRoundQuality(round, context) {
   const visualItems = [
     ...(round.visualGroups ?? []).flatMap((group) => group.items),
@@ -583,9 +902,12 @@ function checkSorterRoundQuality(round, context) {
 function checkSameKindRoundQuality(round, context) {
   const visualItems = (round.visualGroups ?? []).flatMap((group) => group.items);
   const choiceLabels = round.choices.map((choice) => choice.label);
-  for (const label of choiceLabels) {
-    if (isUnillustratedText(label)) {
-      problems.push(`${context}: same-kind choice should have a visual cue mapping: ${label}`);
+  for (const item of [...visualItems, ...choiceLabels]) {
+    if (isUnillustratedText(item)) {
+      problems.push(`${context}: same-kind item should have a visual cue mapping: ${item}`);
+    }
+    if (shouldUseProjectRaster(item)) {
+      problems.push(`${context}: same-kind concrete item should use an imageGallery raster icon: ${item}`);
     }
   }
 
@@ -734,6 +1056,14 @@ function checkDifferenceDetectiveRoundQuality(round, context) {
 
   const left = leftGroup.items;
   const right = rightGroup.items;
+  for (const item of [...left, ...right, ...round.choices.map((choice) => choice.label)]) {
+    if (isUnillustratedText(item)) {
+      problems.push(`${context}: difference item should have a visual cue mapping: ${item}`);
+    }
+    if (shouldUseProjectRaster(item)) {
+      problems.push(`${context}: difference concrete item should use an imageGallery raster icon: ${item}`);
+    }
+  }
   if (/变了/.test(round.prompt)) {
     checkChangedDifferenceRound(round, context, left, right);
     return;
@@ -744,6 +1074,79 @@ function checkDifferenceDetectiveRoundQuality(round, context) {
   }
   if (/少了/.test(round.prompt)) {
     checkMissingDifferenceRound(round, context, left, right);
+  }
+}
+
+function shouldUseProjectRaster(item) {
+  const vectorOnlyKinds = new Set([
+    "arrow",
+    "bigDot",
+    "bigSquare",
+    "blueDot",
+    "blueSquare",
+    "downArrow",
+    "emptyBox",
+    "greenDot",
+    "horizontalFold",
+    "leftArrow",
+    "mediumDot",
+    "missingSlot",
+    "purpleDot",
+    "redDot",
+    "rightArrow",
+    "smallDot",
+    "smallSquare",
+    "upArrow",
+    "verticalFold",
+    "yellowDot",
+  ]);
+  const kinds = visualKindsForItem(item);
+  return kinds.length > 0 && kinds.some((kind) => !vectorOnlyKinds.has(kind) && !rasterVisualKinds.has(kind));
+}
+
+function visualKindsForItem(item) {
+  const exactKind = knownVisualKinds.get(item);
+  if (exactKind) return [exactKind];
+  const parts = Array.from(item).filter((part) => part !== "\uFE0F");
+  if (parts.length > 1 && parts.every((part) => knownVisualKinds.has(part))) {
+    return parts.map((part) => knownVisualKinds.get(part));
+  }
+  return [];
+}
+
+function checkPartWholePuzzleRoundQuality(round, context) {
+  const wholeGroup = round.visualGroups?.find((group) => group.label === "完整图");
+  if (!wholeGroup) {
+    problems.push(`${context}: part-whole round should show a 完整图 group`);
+    return;
+  }
+  if (wholeGroup.items.some((item) => visualKindsForItem(item).length > 1)) {
+    problems.push(`${context}: 完整图 should be laid out as separate pieces, not one combined visual token`);
+  }
+  if (/还少哪一块/.test(round.prompt)) {
+    const haveGroup = round.visualGroups?.find((group) => group.label === "已经有");
+    if (!haveGroup) problems.push(`${context}: missing-piece round should show 已经有 pieces`);
+    if (haveGroup && wholeGroup.items.length <= haveGroup.items.length) {
+      problems.push(`${context}: 完整图 should include the missing piece in the same piece layout`);
+    }
+    for (const choice of round.choices) {
+      if (choice.label === choice.value && visualKindsForItem(choice.value).length > 0) {
+        problems.push(`${context}: missing-piece choice should use a child-readable label, not a raw visual token: ${choice.label}`);
+      }
+    }
+  }
+}
+
+function checkBalanceSwapRoundQuality(round, context) {
+  if (!round.visualGroups?.some((group) => ["天平左边", "天平右边", "1 个可以换", "规则"].includes(group.label))) return;
+  for (const choice of round.choices) {
+    const kinds = visualKindsForItem(choice.label);
+    if (kinds.length > 1) {
+      problems.push(`${context}: balance answer choice should be a count label, not a combined repeated visual token: ${choice.label}`);
+    }
+  }
+  if (visualKindsForItem(round.answer).length > 1) {
+    problems.push(`${context}: balance answer value should be a count label, not a combined repeated visual token: ${round.answer}`);
   }
 }
 
