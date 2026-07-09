@@ -85,10 +85,8 @@ export function ProgressiveSetGame({
       return;
     }
     const choice = round.choices.find((item) => item.value === value);
-    const graphicOption = round.graphicChallenge?.options.find((item) => item.value === value);
     playTone("tap");
-    if (graphicOption) speak(graphicOption.label);
-    else if (choice) speak(labelForVoice(choice.label));
+    if (choice) speak(labelForVoice(choice.label));
     setSelected(value);
     setRetryMessage(null);
   }
@@ -190,13 +188,13 @@ export function ProgressiveSetGame({
         }
       />
 
-      <div className="choice-grid answer-grid">
+      <div className={`choice-grid answer-grid ${round.graphicChallenge ? "answer-grid-graphic" : ""}`}>
         {round.choices.map((choice) => {
           const active = selected === choice.value;
           const wrong = answered && active && choice.value !== round.answer;
           const correct = answered && choice.value === round.answer;
           const graphicOption = round.graphicChallenge?.options.find((option) => option.value === choice.value);
-          const voiceLabel = graphicOption ? `${choice.label}，${graphicOption.label}` : labelForVoice(choice.label);
+          const voiceLabel = labelForVoice(choice.label);
           return (
             <button
               aria-label={voiceLabel}
@@ -378,7 +376,8 @@ function RoundBoard({
       !round.sequence &&
       !round.grid &&
       !round.matrix &&
-      !round.memory,
+      !round.memory &&
+      !round.clockChallenge,
   );
   const boardClasses = [
     "round-board",
@@ -386,15 +385,19 @@ function RoundBoard({
     round.sceneImage ? "round-board-with-image" : "",
     hasOnlySceneImage ? "round-board-image-only" : "",
     round.sceneImage && round.visualGroups ? "round-board-image-groups" : "",
+    round.sceneImage && round.clockChallenge ? "round-board-clock-scene" : "",
+    round.clockChallenge ? "round-board-clock" : "",
   ].filter(Boolean).join(" ");
   return (
     <section className={boardClasses} aria-label="题目画面">
-      {!round.sceneImage && !round.graphicChallenge && <SceneBackdrop scene={scene} />}
+      {!round.sceneImage && !round.graphicChallenge && !round.clockChallenge && <SceneBackdrop scene={scene} />}
       {round.sceneImage && (
         <figure className="scene-image-card">
           <img src={round.sceneImage.src} alt={round.sceneImage.alt} />
         </figure>
       )}
+
+      {round.clockChallenge && <ClockChallengeBoard challenge={round.clockChallenge} hasSceneImage={Boolean(round.sceneImage)} />}
 
       {round.graphicChallenge && <GraphicChallengeBoard challenge={round.graphicChallenge} />}
 
@@ -440,6 +443,77 @@ function RoundBoard({
   );
 }
 
+function ClockChallengeBoard({ challenge, hasSceneImage }: { challenge: NonNullable<GameRound["clockChallenge"]>; hasSceneImage: boolean }) {
+  const minuteHand = clockHandEndpoint(challenge.minute * 6, 78);
+  const hourHand = clockHandEndpoint(((challenge.hour % 12) + challenge.minute / 60) * 30, 50);
+  const label = challenge.minute === 0 ? `${challenge.hour} 点` : `${challenge.hour} 点半`;
+  const showContext = Boolean(challenge.activity && !hasSceneImage);
+  return (
+    <div className={`clock-challenge-board clock-mode-${challenge.mode} ${showContext ? "clock-with-context" : "clock-no-context"}`} aria-label={`时钟显示${label}`}>
+      <div className="clock-card">
+        <svg className="clock-face" viewBox="0 0 240 240" role="img" aria-label={`长针在${challenge.minute === 0 ? "12" : "6"}，短针${challenge.minute === 0 ? `指向${challenge.hour}` : `在${challenge.hour}和${challenge.hour === 12 ? 1 : challenge.hour + 1}中间`}`}>
+          <circle className="clock-rim" cx="120" cy="120" r="104" />
+          <circle className="clock-inner" cx="120" cy="120" r="92" />
+          {Array.from({ length: 60 }).map((_, index) => {
+            const angle = index * 6;
+            const isHour = index % 5 === 0;
+            const outer = clockHandEndpoint(angle, isHour ? 96 : 90);
+            const inner = clockHandEndpoint(angle, isHour ? 84 : 85);
+            return (
+              <line
+                className={isHour ? "clock-tick clock-tick-hour" : "clock-tick"}
+                key={`tick-${index}`}
+                x1={outer.x}
+                x2={inner.x}
+                y1={outer.y}
+                y2={inner.y}
+              />
+            );
+          })}
+          {Array.from({ length: 12 }).map((_, index) => {
+            const hour = index + 1;
+            const { x, y } = clockLabelPosition(hour);
+            return (
+              <text className="clock-number" key={`hour-${hour}`} x={x} y={y}>
+                {hour}
+              </text>
+            );
+          })}
+          <line className="clock-hand clock-hour-hand" x1="120" x2={hourHand.x} y1="120" y2={hourHand.y} />
+          <line className="clock-hand clock-minute-hand" x1="120" x2={minuteHand.x} y1="120" y2={minuteHand.y} />
+          <circle className="clock-pin" cx="120" cy="120" r="7" />
+        </svg>
+        <div className="clock-caption">
+          <strong>{challenge.label}</strong>
+          <span>{challenge.minute === 0 ? "长针在 12，看短针指到几。" : "长针在 6，是半点。"}</span>
+        </div>
+      </div>
+      {showContext && (
+        <div className="clock-context-card">
+          <span>活动</span>
+          <strong>{challenge.activity}</strong>
+        </div>
+      )}
+    </div>
+  );
+}
+
+function clockLabelPosition(hour: number) {
+  return clockPoint(hour * 30, 72, 6);
+}
+
+function clockHandEndpoint(angle: number, radius: number) {
+  return clockPoint(angle, radius, 0);
+}
+
+function clockPoint(angle: number, radius: number, yOffset: number) {
+  const radians = (angle - 90) * (Math.PI / 180);
+  return {
+    x: 120 + Math.cos(radians) * radius,
+    y: 120 + yOffset + Math.sin(radians) * radius,
+  };
+}
+
 function GraphicChallengeBoard({ challenge }: { challenge: NonNullable<GameRound["graphicChallenge"]> }) {
   return (
     <div className={`graphic-challenge-board graphic-challenge-${challenge.kind}`} aria-label={challenge.stemLabel}>
@@ -453,10 +527,27 @@ function GraphicChallengeBoard({ challenge }: { challenge: NonNullable<GameRound
           </div>
         )}
         <div className="graphic-stem-figures">
-          <GraphicFigureSetSvg figures={challenge.figures} large />
+          {challenge.kind === "layer-overlap" ? (
+            <GraphicLayerTaskFigures figures={challenge.figures} />
+          ) : (
+            <GraphicFigureSetSvg figures={challenge.figures} large />
+          )}
         </div>
       </div>
-      <div className="graphic-option-hint" aria-hidden="true">在下面选 A、B、C、D</div>
+    </div>
+  );
+}
+
+function GraphicLayerTaskFigures({ figures }: { figures: GraphicFigure[] }) {
+  const [lower, upper] = figures;
+  return (
+    <div className="graphic-layer-task-figures">
+      {lower && <GraphicFigureGroupCard group={{ label: "1 先放这张", figures: [lower] }} />}
+      <div className="graphic-layer-stack-cue" aria-hidden="true">
+        <span>再盖上</span>
+        <strong>{"→"}</strong>
+      </div>
+      {upper && <GraphicFigureGroupCard group={{ label: "2 盖上这张", figures: [upper] }} />}
     </div>
   );
 }
@@ -923,6 +1014,7 @@ function sceneForGame(gameId: string): SceneKind {
     "math-compose-decompose": "blocks",
     "math-story-operations": "story",
     "math-fair-share": "picnic",
+    "math-clock-time": "train",
     "logic-pattern-train": "train",
     "logic-sorter-switch": "sorting",
     "logic-stop-think": "traffic",

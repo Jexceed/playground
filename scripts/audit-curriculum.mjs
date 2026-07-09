@@ -128,6 +128,9 @@ if (!progressiveSetGameSource.includes("function GraphicAnswerFigure")) {
 if (!progressiveSetGameSource.includes("function graphicFigureAssetSrc")) {
   problems.push("ProgressiveSetGame should render image-gen graphic sticker assets for 图形工坊 figures");
 }
+if (progressiveSetGameSource.includes("在下面选 A、B、C、D") || progressiveSetGameSource.includes("graphic-option-hint")) {
+  problems.push("graphic challenge stem should not show redundant option-selection helper text");
+}
 if (/challenge\.figures\.map\(\(figure/.test(progressiveSetGameSource)) {
   problems.push("GraphicChallengeBoard should render challenge.figures in one shared SVG so overlap and code-machine stems stay spatially related");
 }
@@ -136,6 +139,33 @@ if (/filter:\s*"brightness\(0\)"/.test(progressiveSetGameSource)) {
 }
 if (!/figure\.mode\s*===\s*"blank"/.test(progressiveSetGameSource)) {
   problems.push("graphic code-machine question slot should render as a visible blank answer slot");
+}
+if (!progressiveSetGameSource.includes("answer-grid-graphic")) {
+  problems.push("graphic answer options should use a dedicated four-column desktop grid class");
+}
+if (!/\.answer-grid-graphic\s*\{[^}]*grid-template-columns:\s*repeat\(4,/s.test(readFileSync("src/styles.css", "utf8"))) {
+  problems.push("graphic answer option grid should keep four choices on one desktop row");
+}
+if (/本题[上下]层/.test(progressiveSetGameSource)) {
+  problems.push("layer-overlap task figure labels should use child-friendly action wording instead of abstract layer wording");
+}
+if (!progressiveSetGameSource.includes("1 先放这张") || !progressiveSetGameSource.includes("2 盖上这张") || !progressiveSetGameSource.includes("graphic-layer-stack-cue")) {
+  problems.push("layer-overlap task figures should show an action sequence: first place one card, then cover it with the next card");
+}
+if (/speak\(graphicOption\.label\)/.test(progressiveSetGameSource)) {
+  problems.push("graphic answer choices should not speak option labels before checking because labels can reveal the answer relation");
+}
+if (/\$\{choice\.label\}，\$\{graphicOption\.label\}/.test(progressiveSetGameSource)) {
+  problems.push("graphic answer choice aria labels should not include answer-revealing option labels before checking");
+}
+if (/round\.graphicChallenge\?\.options/.test(readFileSync("scripts/export-voice-lines.mjs", "utf8"))) {
+  problems.push("voice export should not include graphic option labels because pre-answer option speech uses A/B/C/D only");
+}
+if (!progressiveSetGameSource.includes("clock-no-context")) {
+  problems.push("clock read-time rounds should use a one-column centered layout when there is no activity card");
+}
+if (!progressiveSetGameSource.includes("clockHandEndpoint") || /className="clock-hand[^>]+transform=\{`rotate/.test(progressiveSetGameSource)) {
+  problems.push("clock hands should be drawn from calculated center-to-endpoint coordinates, not rotated line primitives");
 }
 if (!/readLastPlayLocation/.test(storageSource) || !/saveLastPlayLocation/.test(storageSource)) {
   problems.push("storage should expose readLastPlayLocation and saveLastPlayLocation helpers");
@@ -198,6 +228,7 @@ const counts = games.reduce(
 
 checkWorldCoverage();
 checkGraphicWorkshopCoverage();
+checkClockTimeCoverage();
 checkReferenceReinforcementScope();
 
 for (const game of games) {
@@ -214,6 +245,7 @@ for (const game of games) {
       round.matrix,
       round.memory,
       round.graphicChallenge,
+      round.clockChallenge,
       round.choices.map((choice) => choice.label),
       round.answer,
     ]);
@@ -309,7 +341,10 @@ for (const game of games) {
     if (game.id === "logic-balance-swap") {
       checkBalanceSwapRoundQuality(round, context);
     }
-    if (!round.sceneImage && !round.sequence && !round.visualGroups && !round.grid && !round.matrix && !round.memory && !round.graphicChallenge) {
+    if (game.id === "math-clock-time") {
+      checkClockTimeRoundQuality(round, context);
+    }
+    if (!round.sceneImage && !round.sequence && !round.visualGroups && !round.grid && !round.matrix && !round.memory && !round.graphicChallenge && !round.clockChallenge) {
       problems.push(`${context}: missing visual surface`);
     }
     if (round.sceneImage) {
@@ -403,12 +438,6 @@ if (existsSync("public/audio/voice/manifest.json")) {
         );
       }
       const manifestEntryById = new Map(manifest.entries.map((entry) => [entry.id, entry]));
-      const voiceLineTexts = new Set(voiceLineData.lines.map((line) => line.text));
-      const manifestTexts = new Set(manifest.entries.map((entry) => entry.text));
-      for (const label of graphicOptionVoiceLabels()) {
-        if (!voiceLineTexts.has(label)) problems.push(`voice-lines.json missing graphic option label: ${label}`);
-        if (!manifestTexts.has(label)) problems.push(`audio manifest missing graphic option label: ${label}`);
-      }
       const nonStandardCoreVoiceLines = voiceLineData.lines.filter((line) => {
         const entry = manifestEntryById.get(line.id);
         return (
@@ -663,6 +692,112 @@ function checkGraphicRoundQuality(round, context) {
   }
 }
 
+function checkClockTimeCoverage() {
+  const game = games.find((item) => item.id === "math-clock-time");
+  if (!game) {
+    problems.push("math-clock-time game is missing from 数字岛");
+    return;
+  }
+  if (game.world !== "math") {
+    problems.push("math-clock-time should belong to 数字岛");
+  }
+  if (game.rounds.length !== 12) {
+    problems.push(`math-clock-time should contain exactly 12 rounds, found ${game.rounds.length}`);
+  }
+  const wholeHours = game.rounds.filter((round) => round.clockChallenge?.minute === 0).length;
+  const halfHours = game.rounds.filter((round) => round.clockChallenge?.minute === 30).length;
+  const timeConversions = game.rounds.filter((round) => round.clockChallenge?.mode === "time-conversion").length;
+  if (wholeHours < 4) problems.push(`math-clock-time should include at least 4 whole-hour rounds, found ${wholeHours}`);
+  if (halfHours < 4) problems.push(`math-clock-time should include at least 4 half-hour rounds, found ${halfHours}`);
+  if (timeConversions < 4) problems.push(`math-clock-time should include at least 4 12-hour-to-24-hour conversion rounds, found ${timeConversions}`);
+  if (/challenge\.period/.test(progressiveSetGameSource)) {
+    problems.push("ClockChallengeBoard should not render period labels such as 上午/下午 before answer selection");
+  }
+}
+
+function checkClockTimeRoundQuality(round, context) {
+  const challenge = round.clockChallenge;
+  if (!challenge) {
+    problems.push(`${context}: clock round should use a dedicated clockChallenge surface`);
+    return;
+  }
+  if (round.sequence || round.visualGroups || round.grid || round.matrix || round.memory || round.graphicChallenge) {
+    problems.push(`${context}: clock round should have exactly one authoritative clockChallenge surface`);
+  }
+  if (!Number.isInteger(challenge.hour) || challenge.hour < 1 || challenge.hour > 12) {
+    problems.push(`${context}: clockChallenge hour should be 1-12`);
+  }
+  if (![0, 30].includes(challenge.minute)) {
+    problems.push(`${context}: clockChallenge minute should be 0 or 30`);
+  }
+  if (!["read-time", "time-conversion"].includes(challenge.mode)) {
+    problems.push(`${context}: clockChallenge mode is unsupported: ${challenge.mode}`);
+  }
+  if (!challenge.label?.trim()) {
+    problems.push(`${context}: clockChallenge should include a visible label`);
+  }
+  const answerCount = round.choices.filter((choice) => choice.value === round.answer).length;
+  if (answerCount !== 1) {
+    problems.push(`${context}: clock answer should appear in choices exactly once`);
+  }
+  if (round.choices.length < 3) {
+    problems.push(`${context}: clock round should have at least three choices`);
+  }
+  if (challenge.mode === "read-time") {
+    if (round.sceneImage) {
+      problems.push(`${context}: read-time clock round should not add a scene image`);
+    }
+    if (!/长针/.test(round.success) || !/短针/.test(round.success)) {
+      problems.push(`${context}: clock reading success should name 长针 and 短针 evidence`);
+    }
+    if (!/长针/.test(round.retry) || !/短针/.test(round.retry)) {
+      problems.push(`${context}: clock reading retry should name 长针 and 短针 evidence`);
+    }
+    if (!/长针/.test(round.parentPrompt) || !/短针/.test(round.parentPrompt)) {
+      problems.push(`${context}: clock reading parentPrompt should ask about 长针 and 短针 evidence`);
+    }
+  }
+  if (challenge.mode === "time-conversion") {
+    if (!round.sceneImage) {
+      problems.push(`${context}: time-conversion clock round should include a generated daily routine scene image`);
+    } else {
+      const imagePath = join("public", round.sceneImage.src.replace(/^\/+/, ""));
+      const size = existsSync(imagePath) ? readPngSize(imagePath) : null;
+      if (size && (size.width !== 1200 || size.height !== 675)) {
+        problems.push(`${context}: time-conversion scene image should be 1200x675, found ${size.width}x${size.height}`);
+      }
+      const sceneText = `${round.sceneImage.alt} ${challenge.activity ?? ""}`;
+      if (!/早餐|午饭|午睡|玩|晚饭|洗澡|早晨|中午|下午|晚上/.test(sceneText)) {
+        problems.push(`${context}: time-conversion scene image alt should name the activity clue`);
+      }
+    }
+    if (!challenge.activity?.trim()) {
+      problems.push(`${context}: time-conversion clock round should include an activity clue`);
+    }
+    const preAnswerText = `${round.prompt} ${round.instruction} ${round.sceneImage?.alt ?? ""} ${round.choices.map((choice) => choice.label).join(" ")}`;
+    if (/上午|下午|晚上|中午|早上|早晨/.test(preAnswerText)) {
+      problems.push(`${context}: time-conversion prompt, instruction, scene alt, and choices should not leak day-part labels before answering`);
+    }
+    if (!/^\d{2}:\d{2}$/.test(String(round.answer))) {
+      problems.push(`${context}: time-conversion answer should be an HH:MM 24-hour time`);
+    }
+    for (const choice of round.choices) {
+      if (!/^\d{2}:\d{2}$/.test(String(choice.value))) {
+        problems.push(`${context}: time-conversion choice should be an HH:MM 24-hour time: ${choice.value}`);
+      }
+    }
+    const clockHourText = String(challenge.hour).padStart(2, "0");
+    const minuteText = String(challenge.minute).padStart(2, "0");
+    if (!round.choices.some((choice) => choice.value === `${clockHourText}:${minuteText}`) && challenge.hour !== 12) {
+      problems.push(`${context}: time-conversion choices should include the plausible 12-hour distractor`);
+    }
+    const contextText = `${round.success} ${round.retry} ${round.parentPrompt} ${round.difficultyNote ?? ""}`;
+    if (!/24|电子钟|一天|场景|图|早餐|午饭|午睡|晚饭|洗澡|活动/.test(contextText)) {
+      problems.push(`${context}: time-conversion feedback should explain scene evidence and 24-hour time`);
+    }
+  }
+}
+
 function checkGraphicChallenge(round, context) {
   const challenge = round.graphicChallenge;
   const allowedKinds = new Set(["silhouette-match", "covered-match", "detail-match", "layer-overlap", "code-match", "closure-match"]);
@@ -721,24 +856,18 @@ function checkGraphicChallenge(round, context) {
     }
   }
   if (challenge.kind === "layer-overlap") {
+    if (JSON.stringify(challenge.figures) === JSON.stringify(challenge.options.find((option) => option.value === round.answer)?.figures ?? [])) {
+      problems.push(`${context}: layer-overlap stem should not show the correct overlap result before answering`);
+    }
+    const groupLabels = (challenge.groups ?? []).map((group) => group.label ?? "").join(" ");
+    if (!/示例/.test(groupLabels) || !/要叠/.test(challenge.stemLabel)) {
+      problems.push(`${context}: layer-overlap stem should include a non-answer example and the two figures to overlap`);
+    }
     const rationaleLabels = challenge.options.filter((option) => /上下顺序反了|重叠位置偏了|换成相近图形/.test(option.label));
     if (rationaleLabels.length) {
       problems.push(`${context}: layer-overlap option labels should describe the drawn option, not reveal the distractor rationale`);
     }
   }
-}
-
-function graphicOptionVoiceLabels() {
-  return Array.from(
-    new Set(
-      games
-        .filter((game) => game.world === "graphic")
-        .flatMap((game) => game.rounds)
-        .flatMap((round) => round.graphicChallenge?.options ?? [])
-        .map((option) => option.label)
-        .filter(Boolean),
-    ),
-  );
 }
 
 function checkPatternTrainRoundQuality(round, context) {

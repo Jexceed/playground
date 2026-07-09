@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-07-07T16:58:50.294Z",
+  "generatedAt": "2026-07-09T07:45:47.306Z",
   "provider": "edge-tts Python package",
   "voice": "zh-CN-XiaoxiaoNeural",
   "rate": "-12%",
   "pitch": "+2Hz",
   "includeParent": true,
   "format": "mp3",
-  "count": 1791,
-  "requestedCount": 1791,
+  "count": 1803,
+  "requestedCount": 1803,
   "failures": [],
   "entries": [
     {
@@ -1821,6 +1821,342 @@
       "kind": "choice",
       "text": "17",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-17.mp3"
+    },
+    {
+      "id": "game-title-时钟小管家",
+      "kind": "game-title",
+      "text": "时钟小管家",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/game-title-%E6%97%B6%E9%92%9F%E5%B0%8F%E7%AE%A1%E5%AE%B6.mp3"
+    },
+    {
+      "id": "game-goal-建立整点-半点和-12-小时到-24-小时制转换的基础理解",
+      "kind": "game-goal",
+      "text": "建立整点、半点和 12 小时到 24 小时制转换的基础理解。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/game-goal-%E5%BB%BA%E7%AB%8B%E6%95%B4%E7%82%B9-%E5%8D%8A%E7%82%B9%E5%92%8C-12-%E5%B0%8F%E6%97%B6%E5%88%B0-24-%E5%B0%8F%E6%97%B6%E5%88%B6%E8%BD%AC%E6%8D%A2%E7%9A%84%E5%9F%BA%E7%A1%80%E7%90%86%E8%A7%A3.mp3"
+    },
+    {
+      "id": "prompt-这个时钟是几点-先看长针-再看短针",
+      "kind": "prompt",
+      "text": "这个时钟是几点？先看长针，再看短针。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%BF%99%E4%B8%AA%E6%97%B6%E9%92%9F%E6%98%AF%E5%87%A0%E7%82%B9-%E5%85%88%E7%9C%8B%E9%95%BF%E9%92%88-%E5%86%8D%E7%9C%8B%E7%9F%AD%E9%92%88.mp3"
+    },
+    {
+      "id": "success-7点对-长针在-12-表示整点-短针指着-7-早上起床前后常会看到-7-点",
+      "kind": "success",
+      "text": "7点对。长针在 12，表示整点；短针指着 7。早上起床前后常会看到 7 点。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-7%E7%82%B9%E5%AF%B9-%E9%95%BF%E9%92%88%E5%9C%A8-12-%E8%A1%A8%E7%A4%BA%E6%95%B4%E7%82%B9-%E7%9F%AD%E9%92%88%E6%8C%87%E7%9D%80-7-%E6%97%A9%E4%B8%8A%E8%B5%B7%E5%BA%8A%E5%89%8D%E5%90%8E%E5%B8%B8%E4%BC%9A%E7%9C%8B%E5%88%B0-7-%E7%82%B9.mp3"
+    },
+    {
+      "id": "retry-先看长针-长针在-12-是整点-长针在-6-是半点-再看短针指到哪里或走过哪里",
+      "kind": "retry",
+      "text": "先看长针：长针在 12 是整点，长针在 6 是半点；再看短针指到哪里或走过哪里。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E7%9C%8B%E9%95%BF%E9%92%88-%E9%95%BF%E9%92%88%E5%9C%A8-12-%E6%98%AF%E6%95%B4%E7%82%B9-%E9%95%BF%E9%92%88%E5%9C%A8-6-%E6%98%AF%E5%8D%8A%E7%82%B9-%E5%86%8D%E7%9C%8B%E7%9F%AD%E9%92%88%E6%8C%87%E5%88%B0%E5%93%AA%E9%87%8C%E6%88%96%E8%B5%B0%E8%BF%87%E5%93%AA%E9%87%8C.mp3"
+    },
+    {
+      "id": "parent-请她指着钟面说-长针在哪里-短针在哪里-所以为什么是这个时间",
+      "kind": "parent",
+      "text": "请她指着钟面说：长针在哪里？短针在哪里？所以为什么是这个时间？",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E9%92%9F%E9%9D%A2%E8%AF%B4-%E9%95%BF%E9%92%88%E5%9C%A8%E5%93%AA%E9%87%8C-%E7%9F%AD%E9%92%88%E5%9C%A8%E5%93%AA%E9%87%8C-%E6%89%80%E4%BB%A5%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E8%BF%99%E4%B8%AA%E6%97%B6%E9%97%B4.mp3"
+    },
+    {
+      "id": "choice-7点",
+      "kind": "choice",
+      "text": "7点",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-7%E7%82%B9.mp3"
+    },
+    {
+      "id": "choice-6点",
+      "kind": "choice",
+      "text": "6点",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-6%E7%82%B9.mp3"
+    },
+    {
+      "id": "choice-7点半",
+      "kind": "choice",
+      "text": "7点半",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-7%E7%82%B9%E5%8D%8A.mp3"
+    },
+    {
+      "id": "success-9点对-长针在-12-表示整点-短针指着-9-短针指到-9-长针指到-12",
+      "kind": "success",
+      "text": "9点对。长针在 12，表示整点；短针指着 9。短针指到 9，长针指到 12。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-9%E7%82%B9%E5%AF%B9-%E9%95%BF%E9%92%88%E5%9C%A8-12-%E8%A1%A8%E7%A4%BA%E6%95%B4%E7%82%B9-%E7%9F%AD%E9%92%88%E6%8C%87%E7%9D%80-9-%E7%9F%AD%E9%92%88%E6%8C%87%E5%88%B0-9-%E9%95%BF%E9%92%88%E6%8C%87%E5%88%B0-12.mp3"
+    },
+    {
+      "id": "choice-9点",
+      "kind": "choice",
+      "text": "9点",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-9%E7%82%B9.mp3"
+    },
+    {
+      "id": "choice-8点",
+      "kind": "choice",
+      "text": "8点",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-8%E7%82%B9.mp3"
+    },
+    {
+      "id": "choice-9点半",
+      "kind": "choice",
+      "text": "9点半",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-9%E7%82%B9%E5%8D%8A.mp3"
+    },
+    {
+      "id": "success-12点对-长针在-12-表示整点-短针指着-12-短针指到-12-长针也指到-12",
+      "kind": "success",
+      "text": "12点对。长针在 12，表示整点；短针指着 12。短针指到 12，长针也指到 12。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-12%E7%82%B9%E5%AF%B9-%E9%95%BF%E9%92%88%E5%9C%A8-12-%E8%A1%A8%E7%A4%BA%E6%95%B4%E7%82%B9-%E7%9F%AD%E9%92%88%E6%8C%87%E7%9D%80-12-%E7%9F%AD%E9%92%88%E6%8C%87%E5%88%B0-12-%E9%95%BF%E9%92%88%E4%B9%9F%E6%8C%87%E5%88%B0-12.mp3"
+    },
+    {
+      "id": "choice-12点",
+      "kind": "choice",
+      "text": "12点",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-12%E7%82%B9.mp3"
+    },
+    {
+      "id": "choice-1点",
+      "kind": "choice",
+      "text": "1点",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-1%E7%82%B9.mp3"
+    },
+    {
+      "id": "choice-12点半",
+      "kind": "choice",
+      "text": "12点半",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-12%E7%82%B9%E5%8D%8A.mp3"
+    },
+    {
+      "id": "success-4点对-长针在-12-表示整点-短针指着-4-短针指到-4-长针指到-12",
+      "kind": "success",
+      "text": "4点对。长针在 12，表示整点；短针指着 4。短针指到 4，长针指到 12。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-4%E7%82%B9%E5%AF%B9-%E9%95%BF%E9%92%88%E5%9C%A8-12-%E8%A1%A8%E7%A4%BA%E6%95%B4%E7%82%B9-%E7%9F%AD%E9%92%88%E6%8C%87%E7%9D%80-4-%E7%9F%AD%E9%92%88%E6%8C%87%E5%88%B0-4-%E9%95%BF%E9%92%88%E6%8C%87%E5%88%B0-12.mp3"
+    },
+    {
+      "id": "choice-4点",
+      "kind": "choice",
+      "text": "4点",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-4%E7%82%B9.mp3"
+    },
+    {
+      "id": "choice-5点",
+      "kind": "choice",
+      "text": "5点",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-5%E7%82%B9.mp3"
+    },
+    {
+      "id": "choice-4点半",
+      "kind": "choice",
+      "text": "4点半",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-4%E7%82%B9%E5%8D%8A.mp3"
+    },
+    {
+      "id": "success-3点半对-长针在-6-表示半点-短针走过-3-还没到-4-长针指到-6-短针走过-3-但还没到-4",
+      "kind": "success",
+      "text": "3点半对。长针在 6，表示半点；短针走过 3，还没到 4。长针指到 6，短针走过 3 但还没到 4。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-3%E7%82%B9%E5%8D%8A%E5%AF%B9-%E9%95%BF%E9%92%88%E5%9C%A8-6-%E8%A1%A8%E7%A4%BA%E5%8D%8A%E7%82%B9-%E7%9F%AD%E9%92%88%E8%B5%B0%E8%BF%87-3-%E8%BF%98%E6%B2%A1%E5%88%B0-4-%E9%95%BF%E9%92%88%E6%8C%87%E5%88%B0-6-%E7%9F%AD%E9%92%88%E8%B5%B0%E8%BF%87-3-%E4%BD%86%E8%BF%98%E6%B2%A1%E5%88%B0-4.mp3"
+    },
+    {
+      "id": "choice-3点半",
+      "kind": "choice",
+      "text": "3点半",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-3%E7%82%B9%E5%8D%8A.mp3"
+    },
+    {
+      "id": "choice-3点",
+      "kind": "choice",
+      "text": "3点",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-3%E7%82%B9.mp3"
+    },
+    {
+      "id": "success-6点半对-长针在-6-表示半点-短针走过-6-还没到-7-长针指到-6-短针在-6-和-7-中间",
+      "kind": "success",
+      "text": "6点半对。长针在 6，表示半点；短针走过 6，还没到 7。长针指到 6，短针在 6 和 7 中间。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-6%E7%82%B9%E5%8D%8A%E5%AF%B9-%E9%95%BF%E9%92%88%E5%9C%A8-6-%E8%A1%A8%E7%A4%BA%E5%8D%8A%E7%82%B9-%E7%9F%AD%E9%92%88%E8%B5%B0%E8%BF%87-6-%E8%BF%98%E6%B2%A1%E5%88%B0-7-%E9%95%BF%E9%92%88%E6%8C%87%E5%88%B0-6-%E7%9F%AD%E9%92%88%E5%9C%A8-6-%E5%92%8C-7-%E4%B8%AD%E9%97%B4.mp3"
+    },
+    {
+      "id": "choice-6点半",
+      "kind": "choice",
+      "text": "6点半",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-6%E7%82%B9%E5%8D%8A.mp3"
+    },
+    {
+      "id": "success-8点半对-长针在-6-表示半点-短针走过-8-还没到-9-长针指到-6-短针在-8-和-9-中间",
+      "kind": "success",
+      "text": "8点半对。长针在 6，表示半点；短针走过 8，还没到 9。长针指到 6，短针在 8 和 9 中间。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-8%E7%82%B9%E5%8D%8A%E5%AF%B9-%E9%95%BF%E9%92%88%E5%9C%A8-6-%E8%A1%A8%E7%A4%BA%E5%8D%8A%E7%82%B9-%E7%9F%AD%E9%92%88%E8%B5%B0%E8%BF%87-8-%E8%BF%98%E6%B2%A1%E5%88%B0-9-%E9%95%BF%E9%92%88%E6%8C%87%E5%88%B0-6-%E7%9F%AD%E9%92%88%E5%9C%A8-8-%E5%92%8C-9-%E4%B8%AD%E9%97%B4.mp3"
+    },
+    {
+      "id": "choice-8点半",
+      "kind": "choice",
+      "text": "8点半",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-8%E7%82%B9%E5%8D%8A.mp3"
+    },
+    {
+      "id": "success-10点半对-长针在-6-表示半点-短针走过-10-还没到-11-长针指到-6-短针在-10-和-11-中间",
+      "kind": "success",
+      "text": "10点半对。长针在 6，表示半点；短针走过 10，还没到 11。长针指到 6，短针在 10 和 11 中间。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-10%E7%82%B9%E5%8D%8A%E5%AF%B9-%E9%95%BF%E9%92%88%E5%9C%A8-6-%E8%A1%A8%E7%A4%BA%E5%8D%8A%E7%82%B9-%E7%9F%AD%E9%92%88%E8%B5%B0%E8%BF%87-10-%E8%BF%98%E6%B2%A1%E5%88%B0-11-%E9%95%BF%E9%92%88%E6%8C%87%E5%88%B0-6-%E7%9F%AD%E9%92%88%E5%9C%A8-10-%E5%92%8C-11-%E4%B8%AD%E9%97%B4.mp3"
+    },
+    {
+      "id": "choice-10点半",
+      "kind": "choice",
+      "text": "10点半",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-10%E7%82%B9%E5%8D%8A.mp3"
+    },
+    {
+      "id": "choice-10点",
+      "kind": "choice",
+      "text": "10点",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-10%E7%82%B9.mp3"
+    },
+    {
+      "id": "choice-11点半",
+      "kind": "choice",
+      "text": "11点半",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-11%E7%82%B9%E5%8D%8A.mp3"
+    },
+    {
+      "id": "prompt-看图和时钟-电子钟应该显示哪个时间-先读钟面-再看图里的活动是在一天的前面还是后面",
+      "kind": "prompt",
+      "text": "看图和时钟，电子钟应该显示哪个时间？先读钟面，再看图里的活动是在一天的前面还是后面。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%9C%8B%E5%9B%BE%E5%92%8C%E6%97%B6%E9%92%9F-%E7%94%B5%E5%AD%90%E9%92%9F%E5%BA%94%E8%AF%A5%E6%98%BE%E7%A4%BA%E5%93%AA%E4%B8%AA%E6%97%B6%E9%97%B4-%E5%85%88%E8%AF%BB%E9%92%9F%E9%9D%A2-%E5%86%8D%E7%9C%8B%E5%9B%BE%E9%87%8C%E7%9A%84%E6%B4%BB%E5%8A%A8%E6%98%AF%E5%9C%A8%E4%B8%80%E5%A4%A9%E7%9A%84%E5%89%8D%E9%9D%A2%E8%BF%98%E6%98%AF%E5%90%8E%E9%9D%A2.mp3"
+    },
+    {
+      "id": "success-08-00对-时钟是8点-图里在吃早餐-8-点写成电子钟时间是-08-00",
+      "kind": "success",
+      "text": "08:00对。时钟是8点，图里在吃早餐，8 点写成电子钟时间是 08:00。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-08-00%E5%AF%B9-%E6%97%B6%E9%92%9F%E6%98%AF8%E7%82%B9-%E5%9B%BE%E9%87%8C%E5%9C%A8%E5%90%83%E6%97%A9%E9%A4%90-8-%E7%82%B9%E5%86%99%E6%88%90%E7%94%B5%E5%AD%90%E9%92%9F%E6%97%B6%E9%97%B4%E6%98%AF-08-00.mp3"
+    },
+    {
+      "id": "retry-先读钟面是8点-再看图里的活动-不要只选-08-00-要想它在一天里应该写成哪一个-24-小时电子钟时间",
+      "kind": "retry",
+      "text": "先读钟面是8点，再看图里的活动。不要只选 08:00，要想它在一天里应该写成哪一个 24 小时电子钟时间。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E8%AF%BB%E9%92%9F%E9%9D%A2%E6%98%AF8%E7%82%B9-%E5%86%8D%E7%9C%8B%E5%9B%BE%E9%87%8C%E7%9A%84%E6%B4%BB%E5%8A%A8-%E4%B8%8D%E8%A6%81%E5%8F%AA%E9%80%89-08-00-%E8%A6%81%E6%83%B3%E5%AE%83%E5%9C%A8%E4%B8%80%E5%A4%A9%E9%87%8C%E5%BA%94%E8%AF%A5%E5%86%99%E6%88%90%E5%93%AA%E4%B8%80%E4%B8%AA-24-%E5%B0%8F%E6%97%B6%E7%94%B5%E5%AD%90%E9%92%9F%E6%97%B6%E9%97%B4.mp3"
+    },
+    {
+      "id": "parent-问她-钟面读作8点-图里在吃早餐-为什么电子钟要选08-00",
+      "kind": "parent",
+      "text": "问她：钟面读作8点，图里在吃早餐，为什么电子钟要选08:00？",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E9%92%9F%E9%9D%A2%E8%AF%BB%E4%BD%9C8%E7%82%B9-%E5%9B%BE%E9%87%8C%E5%9C%A8%E5%90%83%E6%97%A9%E9%A4%90-%E4%B8%BA%E4%BB%80%E4%B9%88%E7%94%B5%E5%AD%90%E9%92%9F%E8%A6%81%E9%80%8908-00.mp3"
+    },
+    {
+      "id": "choice-08-00",
+      "kind": "choice",
+      "text": "08:00",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-08-00.mp3"
+    },
+    {
+      "id": "choice-20-00",
+      "kind": "choice",
+      "text": "20:00",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-20-00.mp3"
+    },
+    {
+      "id": "choice-18-00",
+      "kind": "choice",
+      "text": "18:00",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-18-00.mp3"
+    },
+    {
+      "id": "success-12-30对-时钟是12点半-图里是吃完午饭准备午睡-12-点半写成电子钟时间还是-12-30",
+      "kind": "success",
+      "text": "12:30对。时钟是12点半，图里是吃完午饭准备午睡，12 点半写成电子钟时间还是 12:30。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-12-30%E5%AF%B9-%E6%97%B6%E9%92%9F%E6%98%AF12%E7%82%B9%E5%8D%8A-%E5%9B%BE%E9%87%8C%E6%98%AF%E5%90%83%E5%AE%8C%E5%8D%88%E9%A5%AD%E5%87%86%E5%A4%87%E5%8D%88%E7%9D%A1-12-%E7%82%B9%E5%8D%8A%E5%86%99%E6%88%90%E7%94%B5%E5%AD%90%E9%92%9F%E6%97%B6%E9%97%B4%E8%BF%98%E6%98%AF-12-30.mp3"
+    },
+    {
+      "id": "retry-先读钟面是12点半-再看图里的活动-不要只选-12-30-要想它在一天里应该写成哪一个-24-小时电子钟时间",
+      "kind": "retry",
+      "text": "先读钟面是12点半，再看图里的活动。不要只选 12:30，要想它在一天里应该写成哪一个 24 小时电子钟时间。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E8%AF%BB%E9%92%9F%E9%9D%A2%E6%98%AF12%E7%82%B9%E5%8D%8A-%E5%86%8D%E7%9C%8B%E5%9B%BE%E9%87%8C%E7%9A%84%E6%B4%BB%E5%8A%A8-%E4%B8%8D%E8%A6%81%E5%8F%AA%E9%80%89-12-30-%E8%A6%81%E6%83%B3%E5%AE%83%E5%9C%A8%E4%B8%80%E5%A4%A9%E9%87%8C%E5%BA%94%E8%AF%A5%E5%86%99%E6%88%90%E5%93%AA%E4%B8%80%E4%B8%AA-24-%E5%B0%8F%E6%97%B6%E7%94%B5%E5%AD%90%E9%92%9F%E6%97%B6%E9%97%B4.mp3"
+    },
+    {
+      "id": "parent-问她-钟面读作12点半-图里在吃午饭后准备睡午觉-为什么电子钟要选12-30",
+      "kind": "parent",
+      "text": "问她：钟面读作12点半，图里在吃午饭后准备睡午觉，为什么电子钟要选12:30？",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E9%92%9F%E9%9D%A2%E8%AF%BB%E4%BD%9C12%E7%82%B9%E5%8D%8A-%E5%9B%BE%E9%87%8C%E5%9C%A8%E5%90%83%E5%8D%88%E9%A5%AD%E5%90%8E%E5%87%86%E5%A4%87%E7%9D%A1%E5%8D%88%E8%A7%89-%E4%B8%BA%E4%BB%80%E4%B9%88%E7%94%B5%E5%AD%90%E9%92%9F%E8%A6%81%E9%80%8912-30.mp3"
+    },
+    {
+      "id": "choice-12-30",
+      "kind": "choice",
+      "text": "12:30",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-12-30.mp3"
+    },
+    {
+      "id": "choice-00-30",
+      "kind": "choice",
+      "text": "00:30",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-00-30.mp3"
+    },
+    {
+      "id": "choice-13-30",
+      "kind": "choice",
+      "text": "13:30",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-13-30.mp3"
+    },
+    {
+      "id": "success-15-30对-时钟是3点半-图里是午睡后去玩-3-点半写成电子钟时间是-15-30",
+      "kind": "success",
+      "text": "15:30对。时钟是3点半，图里是午睡后去玩，3 点半写成电子钟时间是 15:30。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-15-30%E5%AF%B9-%E6%97%B6%E9%92%9F%E6%98%AF3%E7%82%B9%E5%8D%8A-%E5%9B%BE%E9%87%8C%E6%98%AF%E5%8D%88%E7%9D%A1%E5%90%8E%E5%8E%BB%E7%8E%A9-3-%E7%82%B9%E5%8D%8A%E5%86%99%E6%88%90%E7%94%B5%E5%AD%90%E9%92%9F%E6%97%B6%E9%97%B4%E6%98%AF-15-30.mp3"
+    },
+    {
+      "id": "retry-先读钟面是3点半-再看图里的活动-不要只选-03-30-要想它在一天里应该写成哪一个-24-小时电子钟时间",
+      "kind": "retry",
+      "text": "先读钟面是3点半，再看图里的活动。不要只选 03:30，要想它在一天里应该写成哪一个 24 小时电子钟时间。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E8%AF%BB%E9%92%9F%E9%9D%A2%E6%98%AF3%E7%82%B9%E5%8D%8A-%E5%86%8D%E7%9C%8B%E5%9B%BE%E9%87%8C%E7%9A%84%E6%B4%BB%E5%8A%A8-%E4%B8%8D%E8%A6%81%E5%8F%AA%E9%80%89-03-30-%E8%A6%81%E6%83%B3%E5%AE%83%E5%9C%A8%E4%B8%80%E5%A4%A9%E9%87%8C%E5%BA%94%E8%AF%A5%E5%86%99%E6%88%90%E5%93%AA%E4%B8%80%E4%B8%AA-24-%E5%B0%8F%E6%97%B6%E7%94%B5%E5%AD%90%E9%92%9F%E6%97%B6%E9%97%B4.mp3"
+    },
+    {
+      "id": "parent-问她-钟面读作3点半-图里在午睡后去玩-为什么电子钟要选15-30",
+      "kind": "parent",
+      "text": "问她：钟面读作3点半，图里在午睡后去玩，为什么电子钟要选15:30？",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E9%92%9F%E9%9D%A2%E8%AF%BB%E4%BD%9C3%E7%82%B9%E5%8D%8A-%E5%9B%BE%E9%87%8C%E5%9C%A8%E5%8D%88%E7%9D%A1%E5%90%8E%E5%8E%BB%E7%8E%A9-%E4%B8%BA%E4%BB%80%E4%B9%88%E7%94%B5%E5%AD%90%E9%92%9F%E8%A6%81%E9%80%8915-30.mp3"
+    },
+    {
+      "id": "choice-15-30",
+      "kind": "choice",
+      "text": "15:30",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-15-30.mp3"
+    },
+    {
+      "id": "choice-03-30",
+      "kind": "choice",
+      "text": "03:30",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-03-30.mp3"
+    },
+    {
+      "id": "success-19-00对-时钟是7点-图里是晚饭后准备洗澡-7-点写成电子钟时间是-19-00",
+      "kind": "success",
+      "text": "19:00对。时钟是7点，图里是晚饭后准备洗澡，7 点写成电子钟时间是 19:00。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-19-00%E5%AF%B9-%E6%97%B6%E9%92%9F%E6%98%AF7%E7%82%B9-%E5%9B%BE%E9%87%8C%E6%98%AF%E6%99%9A%E9%A5%AD%E5%90%8E%E5%87%86%E5%A4%87%E6%B4%97%E6%BE%A1-7-%E7%82%B9%E5%86%99%E6%88%90%E7%94%B5%E5%AD%90%E9%92%9F%E6%97%B6%E9%97%B4%E6%98%AF-19-00.mp3"
+    },
+    {
+      "id": "retry-先读钟面是7点-再看图里的活动-不要只选-07-00-要想它在一天里应该写成哪一个-24-小时电子钟时间",
+      "kind": "retry",
+      "text": "先读钟面是7点，再看图里的活动。不要只选 07:00，要想它在一天里应该写成哪一个 24 小时电子钟时间。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E8%AF%BB%E9%92%9F%E9%9D%A2%E6%98%AF7%E7%82%B9-%E5%86%8D%E7%9C%8B%E5%9B%BE%E9%87%8C%E7%9A%84%E6%B4%BB%E5%8A%A8-%E4%B8%8D%E8%A6%81%E5%8F%AA%E9%80%89-07-00-%E8%A6%81%E6%83%B3%E5%AE%83%E5%9C%A8%E4%B8%80%E5%A4%A9%E9%87%8C%E5%BA%94%E8%AF%A5%E5%86%99%E6%88%90%E5%93%AA%E4%B8%80%E4%B8%AA-24-%E5%B0%8F%E6%97%B6%E7%94%B5%E5%AD%90%E9%92%9F%E6%97%B6%E9%97%B4.mp3"
+    },
+    {
+      "id": "parent-问她-钟面读作7点-图里在吃完晚饭准备洗澡-为什么电子钟要选19-00",
+      "kind": "parent",
+      "text": "问她：钟面读作7点，图里在吃完晚饭准备洗澡，为什么电子钟要选19:00？",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E9%92%9F%E9%9D%A2%E8%AF%BB%E4%BD%9C7%E7%82%B9-%E5%9B%BE%E9%87%8C%E5%9C%A8%E5%90%83%E5%AE%8C%E6%99%9A%E9%A5%AD%E5%87%86%E5%A4%87%E6%B4%97%E6%BE%A1-%E4%B8%BA%E4%BB%80%E4%B9%88%E7%94%B5%E5%AD%90%E9%92%9F%E8%A6%81%E9%80%8919-00.mp3"
+    },
+    {
+      "id": "choice-19-00",
+      "kind": "choice",
+      "text": "19:00",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-19-00.mp3"
+    },
+    {
+      "id": "choice-07-00",
+      "kind": "choice",
+      "text": "07:00",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-07-00.mp3"
+    },
+    {
+      "id": "choice-17-00",
+      "kind": "choice",
+      "text": "17:00",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-17-00.mp3"
     },
     {
       "id": "game-title-找规律火车",
@@ -10055,30 +10391,6 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-d.mp3"
     },
     {
-      "id": "choice-小猫影子",
-      "kind": "choice",
-      "text": "小猫影子",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%B0%8F%E7%8C%AB%E5%BD%B1%E5%AD%90.mp3"
-    },
-    {
-      "id": "choice-小狗影子",
-      "kind": "choice",
-      "text": "小狗影子",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%B0%8F%E7%8B%97%E5%BD%B1%E5%AD%90.mp3"
-    },
-    {
-      "id": "choice-小兔影子",
-      "kind": "choice",
-      "text": "小兔影子",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%B0%8F%E5%85%94%E5%BD%B1%E5%AD%90.mp3"
-    },
-    {
-      "id": "choice-小熊影子",
-      "kind": "choice",
-      "text": "小熊影子",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%B0%8F%E7%86%8A%E5%BD%B1%E5%AD%90.mp3"
-    },
-    {
       "id": "success-小兔影子的轮廓对上了-两只长耳朵最明显-所以选这个影子",
       "kind": "success",
       "text": "小兔影子的轮廓对上了，两只长耳朵最明显，所以选这个影子。",
@@ -10091,64 +10403,16 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%B0%8F%E9%B1%BC%E5%BD%B1%E5%AD%90%E7%9A%84%E8%BD%AE%E5%BB%93%E5%AF%B9%E4%B8%8A%E4%BA%86-%E8%BA%AB%E4%BD%93%E5%90%8E%E9%9D%A2%E6%9C%89%E4%B8%89%E8%A7%92%E5%B0%BE%E5%B7%B4-%E6%89%80%E4%BB%A5%E9%80%89%E8%BF%99%E4%B8%AA%E5%BD%B1%E5%AD%90.mp3"
     },
     {
-      "id": "choice-叶子影子",
-      "kind": "choice",
-      "text": "叶子影子",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%8F%B6%E5%AD%90%E5%BD%B1%E5%AD%90.mp3"
-    },
-    {
-      "id": "choice-小鱼影子",
-      "kind": "choice",
-      "text": "小鱼影子",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%B0%8F%E9%B1%BC%E5%BD%B1%E5%AD%90.mp3"
-    },
-    {
-      "id": "choice-苹果影子",
-      "kind": "choice",
-      "text": "苹果影子",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E8%8B%B9%E6%9E%9C%E5%BD%B1%E5%AD%90.mp3"
-    },
-    {
-      "id": "choice-梨子影子",
-      "kind": "choice",
-      "text": "梨子影子",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E6%A2%A8%E5%AD%90%E5%BD%B1%E5%AD%90.mp3"
-    },
-    {
       "id": "success-苹果影子的轮廓对上了-上面有小叶子-下面是圆鼓鼓的-所以选这个影子",
       "kind": "success",
       "text": "苹果影子的轮廓对上了，上面有小叶子，下面是圆鼓鼓的，所以选这个影子。",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%8B%B9%E6%9E%9C%E5%BD%B1%E5%AD%90%E7%9A%84%E8%BD%AE%E5%BB%93%E5%AF%B9%E4%B8%8A%E4%BA%86-%E4%B8%8A%E9%9D%A2%E6%9C%89%E5%B0%8F%E5%8F%B6%E5%AD%90-%E4%B8%8B%E9%9D%A2%E6%98%AF%E5%9C%86%E9%BC%93%E9%BC%93%E7%9A%84-%E6%89%80%E4%BB%A5%E9%80%89%E8%BF%99%E4%B8%AA%E5%BD%B1%E5%AD%90.mp3"
     },
     {
-      "id": "choice-圆形影子",
-      "kind": "choice",
-      "text": "圆形影子",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%9C%86%E5%BD%A2%E5%BD%B1%E5%AD%90.mp3"
-    },
-    {
-      "id": "choice-花朵影子",
-      "kind": "choice",
-      "text": "花朵影子",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E8%8A%B1%E6%9C%B5%E5%BD%B1%E5%AD%90.mp3"
-    },
-    {
       "id": "success-星星影子的轮廓对上了-外边一圈都是尖尖的角-所以选这个影子",
       "kind": "success",
       "text": "星星影子的轮廓对上了，外边一圈都是尖尖的角，所以选这个影子。",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%98%9F%E6%98%9F%E5%BD%B1%E5%AD%90%E7%9A%84%E8%BD%AE%E5%BB%93%E5%AF%B9%E4%B8%8A%E4%BA%86-%E5%A4%96%E8%BE%B9%E4%B8%80%E5%9C%88%E9%83%BD%E6%98%AF%E5%B0%96%E5%B0%96%E7%9A%84%E8%A7%92-%E6%89%80%E4%BB%A5%E9%80%89%E8%BF%99%E4%B8%AA%E5%BD%B1%E5%AD%90.mp3"
-    },
-    {
-      "id": "choice-星星影子",
-      "kind": "choice",
-      "text": "星星影子",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E6%98%9F%E6%98%9F%E5%BD%B1%E5%AD%90.mp3"
-    },
-    {
-      "id": "choice-圆角方块影子",
-      "kind": "choice",
-      "text": "圆角方块影子",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%9C%86%E8%A7%92%E6%96%B9%E5%9D%97%E5%BD%B1%E5%AD%90.mp3"
     },
     {
       "id": "success-圆角方块影子的轮廓对上了-四条边接近方形-角是圆圆的-所以选这个影子",
@@ -10161,18 +10425,6 @@
       "kind": "success",
       "text": "三角形影子的轮廓对上了，只有三个尖角，下面是一条直边，所以选这个影子。",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E4%B8%89%E8%A7%92%E5%BD%A2%E5%BD%B1%E5%AD%90%E7%9A%84%E8%BD%AE%E5%BB%93%E5%AF%B9%E4%B8%8A%E4%BA%86-%E5%8F%AA%E6%9C%89%E4%B8%89%E4%B8%AA%E5%B0%96%E8%A7%92-%E4%B8%8B%E9%9D%A2%E6%98%AF%E4%B8%80%E6%9D%A1%E7%9B%B4%E8%BE%B9-%E6%89%80%E4%BB%A5%E9%80%89%E8%BF%99%E4%B8%AA%E5%BD%B1%E5%AD%90.mp3"
-    },
-    {
-      "id": "choice-三角形影子",
-      "kind": "choice",
-      "text": "三角形影子",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E4%B8%89%E8%A7%92%E5%BD%A2%E5%BD%B1%E5%AD%90.mp3"
-    },
-    {
-      "id": "choice-菱形影子",
-      "kind": "choice",
-      "text": "菱形影子",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E8%8F%B1%E5%BD%A2%E5%BD%B1%E5%AD%90.mp3"
     },
     {
       "id": "success-菱形影子的轮廓对上了-上下左右四个尖角一样清楚-所以选这个影子",
@@ -10229,46 +10481,16 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%8B%B9%E6%9E%9C%E5%AF%B9-%E5%8F%B3%E8%BE%B9%E9%9C%B2%E5%87%BA%E7%9A%84%E5%9C%86%E8%82%9A%E5%AD%90%E5%92%8C%E5%B0%8F%E5%8F%B6%E5%AD%90%E5%B1%9E%E4%BA%8E%E8%8B%B9%E6%9E%9C-%E9%81%AE%E4%BD%8F%E4%BB%A5%E5%90%8E%E8%A6%81%E6%8A%93%E4%BD%8F%E9%9C%B2%E5%87%BA%E7%9A%84%E7%BA%BF%E7%B4%A2.mp3"
     },
     {
-      "id": "choice-梨子",
-      "kind": "choice",
-      "text": "梨子",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E6%A2%A8%E5%AD%90.mp3"
-    },
-    {
-      "id": "choice-圆形",
-      "kind": "choice",
-      "text": "圆形",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%9C%86%E5%BD%A2.mp3"
-    },
-    {
-      "id": "choice-花朵",
-      "kind": "choice",
-      "text": "花朵",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E8%8A%B1%E6%9C%B5.mp3"
-    },
-    {
       "id": "success-小鱼对-露出的三角尾巴只属于小鱼-遮住以后要抓住露出的线索",
       "kind": "success",
       "text": "小鱼对，露出的三角尾巴只属于小鱼。遮住以后要抓住露出的线索。",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%B0%8F%E9%B1%BC%E5%AF%B9-%E9%9C%B2%E5%87%BA%E7%9A%84%E4%B8%89%E8%A7%92%E5%B0%BE%E5%B7%B4%E5%8F%AA%E5%B1%9E%E4%BA%8E%E5%B0%8F%E9%B1%BC-%E9%81%AE%E4%BD%8F%E4%BB%A5%E5%90%8E%E8%A6%81%E6%8A%93%E4%BD%8F%E9%9C%B2%E5%87%BA%E7%9A%84%E7%BA%BF%E7%B4%A2.mp3"
     },
     {
-      "id": "choice-叶子",
-      "kind": "choice",
-      "text": "叶子",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%8F%B6%E5%AD%90.mp3"
-    },
-    {
       "id": "success-星星对-四周露出的尖角说明完整图是星星-遮住以后要抓住露出的线索",
       "kind": "success",
       "text": "星星对，四周露出的尖角说明完整图是星星。遮住以后要抓住露出的线索。",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%98%9F%E6%98%9F%E5%AF%B9-%E5%9B%9B%E5%91%A8%E9%9C%B2%E5%87%BA%E7%9A%84%E5%B0%96%E8%A7%92%E8%AF%B4%E6%98%8E%E5%AE%8C%E6%95%B4%E5%9B%BE%E6%98%AF%E6%98%9F%E6%98%9F-%E9%81%AE%E4%BD%8F%E4%BB%A5%E5%90%8E%E8%A6%81%E6%8A%93%E4%BD%8F%E9%9C%B2%E5%87%BA%E7%9A%84%E7%BA%BF%E7%B4%A2.mp3"
-    },
-    {
-      "id": "choice-圆角方块",
-      "kind": "choice",
-      "text": "圆角方块",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%9C%86%E8%A7%92%E6%96%B9%E5%9D%97.mp3"
     },
     {
       "id": "success-花朵对-上方露出一圈圆花瓣-不是尖角-遮住以后要抓住露出的线索",
@@ -10281,18 +10503,6 @@
       "kind": "success",
       "text": "菱形对，四个方向露出尖角，说明完整图是菱形。遮住以后要抓住露出的线索。",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%8F%B1%E5%BD%A2%E5%AF%B9-%E5%9B%9B%E4%B8%AA%E6%96%B9%E5%90%91%E9%9C%B2%E5%87%BA%E5%B0%96%E8%A7%92-%E8%AF%B4%E6%98%8E%E5%AE%8C%E6%95%B4%E5%9B%BE%E6%98%AF%E8%8F%B1%E5%BD%A2-%E9%81%AE%E4%BD%8F%E4%BB%A5%E5%90%8E%E8%A6%81%E6%8A%93%E4%BD%8F%E9%9C%B2%E5%87%BA%E7%9A%84%E7%BA%BF%E7%B4%A2.mp3"
-    },
-    {
-      "id": "choice-菱形",
-      "kind": "choice",
-      "text": "菱形",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E8%8F%B1%E5%BD%A2.mp3"
-    },
-    {
-      "id": "choice-三角形",
-      "kind": "choice",
-      "text": "三角形",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E4%B8%89%E8%A7%92%E5%BD%A2.mp3"
     },
     {
       "id": "success-梨子对-露出的细上部和小叶子更像梨子-不是圆苹果-遮住以后要抓住露出的线索",
@@ -10391,208 +10601,70 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/game-goal-%E8%AE%AD%E7%BB%83%E9%80%8F%E6%98%8E%E5%8F%A0%E5%90%88-%E4%B8%8A%E4%B8%8B%E5%B1%82%E5%88%A4%E6%96%AD%E5%92%8C%E9%87%8D%E5%8F%A0%E5%8C%BA%E5%9F%9F%E8%A7%82%E5%AF%9F.mp3"
     },
     {
-      "id": "prompt-两张透明图叠在一起-下面哪张叠合结果和上面一样-先看哪张图在上面-再看重叠的地方谁挡住了谁",
+      "id": "prompt-照着示例理解叠加-把本题两张透明图叠起来-会变成下面哪一张-示例只教叠法-真正要判断的是本题两张图-先放第1张-再把第2张盖到它上面",
       "kind": "prompt",
-      "text": "两张透明图叠在一起，下面哪张叠合结果和上面一样？先看哪张图在上面，再看重叠的地方谁挡住了谁。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E4%B8%A4%E5%BC%A0%E9%80%8F%E6%98%8E%E5%9B%BE%E5%8F%A0%E5%9C%A8%E4%B8%80%E8%B5%B7-%E4%B8%8B%E9%9D%A2%E5%93%AA%E5%BC%A0%E5%8F%A0%E5%90%88%E7%BB%93%E6%9E%9C%E5%92%8C%E4%B8%8A%E9%9D%A2%E4%B8%80%E6%A0%B7-%E5%85%88%E7%9C%8B%E5%93%AA%E5%BC%A0%E5%9B%BE%E5%9C%A8%E4%B8%8A%E9%9D%A2-%E5%86%8D%E7%9C%8B%E9%87%8D%E5%8F%A0%E7%9A%84%E5%9C%B0%E6%96%B9%E8%B0%81%E6%8C%A1%E4%BD%8F%E4%BA%86%E8%B0%81.mp3"
+      "text": "照着示例理解叠加，把本题两张透明图叠起来，会变成下面哪一张？示例只教叠法；真正要判断的是本题两张图。先放第1张，再把第2张盖到它上面。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%85%A7%E7%9D%80%E7%A4%BA%E4%BE%8B%E7%90%86%E8%A7%A3%E5%8F%A0%E5%8A%A0-%E6%8A%8A%E6%9C%AC%E9%A2%98%E4%B8%A4%E5%BC%A0%E9%80%8F%E6%98%8E%E5%9B%BE%E5%8F%A0%E8%B5%B7%E6%9D%A5-%E4%BC%9A%E5%8F%98%E6%88%90%E4%B8%8B%E9%9D%A2%E5%93%AA%E4%B8%80%E5%BC%A0-%E7%A4%BA%E4%BE%8B%E5%8F%AA%E6%95%99%E5%8F%A0%E6%B3%95-%E7%9C%9F%E6%AD%A3%E8%A6%81%E5%88%A4%E6%96%AD%E7%9A%84%E6%98%AF%E6%9C%AC%E9%A2%98%E4%B8%A4%E5%BC%A0%E5%9B%BE-%E5%85%88%E6%94%BE%E7%AC%AC1%E5%BC%A0-%E5%86%8D%E6%8A%8A%E7%AC%AC2%E5%BC%A0%E7%9B%96%E5%88%B0%E5%AE%83%E4%B8%8A%E9%9D%A2.mp3"
     },
     {
-      "id": "success-星星在圆形上面对-星星盖住圆形中间-边上还能看到圆弧-透明叠合要看上面和下面的遮挡线索",
+      "id": "success-星星在圆形上面对-星星盖住圆形中间-边上还能看到圆弧-透明叠合要看后盖上去的图挡住了哪里",
       "kind": "success",
-      "text": "星星在圆形上面对，星星盖住圆形中间，边上还能看到圆弧，透明叠合要看上面和下面的遮挡线索。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%98%9F%E6%98%9F%E5%9C%A8%E5%9C%86%E5%BD%A2%E4%B8%8A%E9%9D%A2%E5%AF%B9-%E6%98%9F%E6%98%9F%E7%9B%96%E4%BD%8F%E5%9C%86%E5%BD%A2%E4%B8%AD%E9%97%B4-%E8%BE%B9%E4%B8%8A%E8%BF%98%E8%83%BD%E7%9C%8B%E5%88%B0%E5%9C%86%E5%BC%A7-%E9%80%8F%E6%98%8E%E5%8F%A0%E5%90%88%E8%A6%81%E7%9C%8B%E4%B8%8A%E9%9D%A2%E5%92%8C%E4%B8%8B%E9%9D%A2%E7%9A%84%E9%81%AE%E6%8C%A1%E7%BA%BF%E7%B4%A2.mp3"
+      "text": "星星在圆形上面对，星星盖住圆形中间，边上还能看到圆弧，透明叠合要看后盖上去的图挡住了哪里。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%98%9F%E6%98%9F%E5%9C%A8%E5%9C%86%E5%BD%A2%E4%B8%8A%E9%9D%A2%E5%AF%B9-%E6%98%9F%E6%98%9F%E7%9B%96%E4%BD%8F%E5%9C%86%E5%BD%A2%E4%B8%AD%E9%97%B4-%E8%BE%B9%E4%B8%8A%E8%BF%98%E8%83%BD%E7%9C%8B%E5%88%B0%E5%9C%86%E5%BC%A7-%E9%80%8F%E6%98%8E%E5%8F%A0%E5%90%88%E8%A6%81%E7%9C%8B%E5%90%8E%E7%9B%96%E4%B8%8A%E5%8E%BB%E7%9A%84%E5%9B%BE%E6%8C%A1%E4%BD%8F%E4%BA%86%E5%93%AA%E9%87%8C.mp3"
     },
     {
-      "id": "retry-先说哪张在上面-再看重叠边线-上面的图会挡住下面的图-不要只看两个图形有没有出现",
+      "id": "retry-先按顺序说-第1张先放-第2张盖上去-再看重叠边线-后盖上去的图会挡住前面的图",
       "kind": "retry",
-      "text": "先说哪张在上面，再看重叠边线：上面的图会挡住下面的图，不要只看两个图形有没有出现。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E8%AF%B4%E5%93%AA%E5%BC%A0%E5%9C%A8%E4%B8%8A%E9%9D%A2-%E5%86%8D%E7%9C%8B%E9%87%8D%E5%8F%A0%E8%BE%B9%E7%BA%BF-%E4%B8%8A%E9%9D%A2%E7%9A%84%E5%9B%BE%E4%BC%9A%E6%8C%A1%E4%BD%8F%E4%B8%8B%E9%9D%A2%E7%9A%84%E5%9B%BE-%E4%B8%8D%E8%A6%81%E5%8F%AA%E7%9C%8B%E4%B8%A4%E4%B8%AA%E5%9B%BE%E5%BD%A2%E6%9C%89%E6%B2%A1%E6%9C%89%E5%87%BA%E7%8E%B0.mp3"
+      "text": "先按顺序说：第1张先放，第2张盖上去。再看重叠边线，后盖上去的图会挡住前面的图。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E6%8C%89%E9%A1%BA%E5%BA%8F%E8%AF%B4-%E7%AC%AC1%E5%BC%A0%E5%85%88%E6%94%BE-%E7%AC%AC2%E5%BC%A0%E7%9B%96%E4%B8%8A%E5%8E%BB-%E5%86%8D%E7%9C%8B%E9%87%8D%E5%8F%A0%E8%BE%B9%E7%BA%BF-%E5%90%8E%E7%9B%96%E4%B8%8A%E5%8E%BB%E7%9A%84%E5%9B%BE%E4%BC%9A%E6%8C%A1%E4%BD%8F%E5%89%8D%E9%9D%A2%E7%9A%84%E5%9B%BE.mp3"
     },
     {
-      "id": "parent-请她指一指重叠的地方-说为什么这个是上面-为什么上下反过来的选项不对",
+      "id": "parent-请她指一指重叠的地方-说第2张盖上去以后挡住了哪里-为什么顺序反过来的选项不对",
       "kind": "parent",
-      "text": "请她指一指重叠的地方，说为什么这个是上面，为什么上下反过来的选项不对。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E4%B8%80%E6%8C%87%E9%87%8D%E5%8F%A0%E7%9A%84%E5%9C%B0%E6%96%B9-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%99%E4%B8%AA%E6%98%AF%E4%B8%8A%E9%9D%A2-%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8A%E4%B8%8B%E5%8F%8D%E8%BF%87%E6%9D%A5%E7%9A%84%E9%80%89%E9%A1%B9%E4%B8%8D%E5%AF%B9.mp3"
+      "text": "请她指一指重叠的地方，说第2张盖上去以后挡住了哪里，为什么顺序反过来的选项不对。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E4%B8%80%E6%8C%87%E9%87%8D%E5%8F%A0%E7%9A%84%E5%9C%B0%E6%96%B9-%E8%AF%B4%E7%AC%AC2%E5%BC%A0%E7%9B%96%E4%B8%8A%E5%8E%BB%E4%BB%A5%E5%90%8E%E6%8C%A1%E4%BD%8F%E4%BA%86%E5%93%AA%E9%87%8C-%E4%B8%BA%E4%BB%80%E4%B9%88%E9%A1%BA%E5%BA%8F%E5%8F%8D%E8%BF%87%E6%9D%A5%E7%9A%84%E9%80%89%E9%A1%B9%E4%B8%8D%E5%AF%B9.mp3"
     },
     {
-      "id": "choice-星星在圆形上面",
-      "kind": "choice",
-      "text": "星星在圆形上面",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E6%98%9F%E6%98%9F%E5%9C%A8%E5%9C%86%E5%BD%A2%E4%B8%8A%E9%9D%A2.mp3"
-    },
-    {
-      "id": "choice-圆形在星星上面",
-      "kind": "choice",
-      "text": "圆形在星星上面",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%9C%86%E5%BD%A2%E5%9C%A8%E6%98%9F%E6%98%9F%E4%B8%8A%E9%9D%A2.mp3"
-    },
-    {
-      "id": "choice-星星在圆形上面-偏右下叠放",
-      "kind": "choice",
-      "text": "星星在圆形上面，偏右下叠放",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E6%98%9F%E6%98%9F%E5%9C%A8%E5%9C%86%E5%BD%A2%E4%B8%8A%E9%9D%A2-%E5%81%8F%E5%8F%B3%E4%B8%8B%E5%8F%A0%E6%94%BE.mp3"
-    },
-    {
-      "id": "choice-花朵在圆形上面",
-      "kind": "choice",
-      "text": "花朵在圆形上面",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E8%8A%B1%E6%9C%B5%E5%9C%A8%E5%9C%86%E5%BD%A2%E4%B8%8A%E9%9D%A2.mp3"
-    },
-    {
-      "id": "success-圆形在星星上面对-圆形压住星星中心-只露出外面的尖角-透明叠合要看上面和下面的遮挡线索",
+      "id": "success-圆形在星星上面对-圆形压住星星中心-只露出外面的尖角-透明叠合要看后盖上去的图挡住了哪里",
       "kind": "success",
-      "text": "圆形在星星上面对，圆形压住星星中心，只露出外面的尖角，透明叠合要看上面和下面的遮挡线索。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%9C%86%E5%BD%A2%E5%9C%A8%E6%98%9F%E6%98%9F%E4%B8%8A%E9%9D%A2%E5%AF%B9-%E5%9C%86%E5%BD%A2%E5%8E%8B%E4%BD%8F%E6%98%9F%E6%98%9F%E4%B8%AD%E5%BF%83-%E5%8F%AA%E9%9C%B2%E5%87%BA%E5%A4%96%E9%9D%A2%E7%9A%84%E5%B0%96%E8%A7%92-%E9%80%8F%E6%98%8E%E5%8F%A0%E5%90%88%E8%A6%81%E7%9C%8B%E4%B8%8A%E9%9D%A2%E5%92%8C%E4%B8%8B%E9%9D%A2%E7%9A%84%E9%81%AE%E6%8C%A1%E7%BA%BF%E7%B4%A2.mp3"
+      "text": "圆形在星星上面对，圆形压住星星中心，只露出外面的尖角，透明叠合要看后盖上去的图挡住了哪里。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%9C%86%E5%BD%A2%E5%9C%A8%E6%98%9F%E6%98%9F%E4%B8%8A%E9%9D%A2%E5%AF%B9-%E5%9C%86%E5%BD%A2%E5%8E%8B%E4%BD%8F%E6%98%9F%E6%98%9F%E4%B8%AD%E5%BF%83-%E5%8F%AA%E9%9C%B2%E5%87%BA%E5%A4%96%E9%9D%A2%E7%9A%84%E5%B0%96%E8%A7%92-%E9%80%8F%E6%98%8E%E5%8F%A0%E5%90%88%E8%A6%81%E7%9C%8B%E5%90%8E%E7%9B%96%E4%B8%8A%E5%8E%BB%E7%9A%84%E5%9B%BE%E6%8C%A1%E4%BD%8F%E4%BA%86%E5%93%AA%E9%87%8C.mp3"
     },
     {
-      "id": "choice-圆形在星星上面-偏右下叠放",
-      "kind": "choice",
-      "text": "圆形在星星上面，偏右下叠放",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%9C%86%E5%BD%A2%E5%9C%A8%E6%98%9F%E6%98%9F%E4%B8%8A%E9%9D%A2-%E5%81%8F%E5%8F%B3%E4%B8%8B%E5%8F%A0%E6%94%BE.mp3"
-    },
-    {
-      "id": "choice-圆角方块在星星上面",
-      "kind": "choice",
-      "text": "圆角方块在星星上面",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%9C%86%E8%A7%92%E6%96%B9%E5%9D%97%E5%9C%A8%E6%98%9F%E6%98%9F%E4%B8%8A%E9%9D%A2.mp3"
-    },
-    {
-      "id": "success-三角形在圆角方块上面对-三角形的底边挡住方块中间-透明叠合要看上面和下面的遮挡线索",
+      "id": "success-三角形在圆角方块上面对-三角形的底边挡住方块中间-透明叠合要看后盖上去的图挡住了哪里",
       "kind": "success",
-      "text": "三角形在圆角方块上面对，三角形的底边挡住方块中间，透明叠合要看上面和下面的遮挡线索。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E4%B8%89%E8%A7%92%E5%BD%A2%E5%9C%A8%E5%9C%86%E8%A7%92%E6%96%B9%E5%9D%97%E4%B8%8A%E9%9D%A2%E5%AF%B9-%E4%B8%89%E8%A7%92%E5%BD%A2%E7%9A%84%E5%BA%95%E8%BE%B9%E6%8C%A1%E4%BD%8F%E6%96%B9%E5%9D%97%E4%B8%AD%E9%97%B4-%E9%80%8F%E6%98%8E%E5%8F%A0%E5%90%88%E8%A6%81%E7%9C%8B%E4%B8%8A%E9%9D%A2%E5%92%8C%E4%B8%8B%E9%9D%A2%E7%9A%84%E9%81%AE%E6%8C%A1%E7%BA%BF%E7%B4%A2.mp3"
+      "text": "三角形在圆角方块上面对，三角形的底边挡住方块中间，透明叠合要看后盖上去的图挡住了哪里。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E4%B8%89%E8%A7%92%E5%BD%A2%E5%9C%A8%E5%9C%86%E8%A7%92%E6%96%B9%E5%9D%97%E4%B8%8A%E9%9D%A2%E5%AF%B9-%E4%B8%89%E8%A7%92%E5%BD%A2%E7%9A%84%E5%BA%95%E8%BE%B9%E6%8C%A1%E4%BD%8F%E6%96%B9%E5%9D%97%E4%B8%AD%E9%97%B4-%E9%80%8F%E6%98%8E%E5%8F%A0%E5%90%88%E8%A6%81%E7%9C%8B%E5%90%8E%E7%9B%96%E4%B8%8A%E5%8E%BB%E7%9A%84%E5%9B%BE%E6%8C%A1%E4%BD%8F%E4%BA%86%E5%93%AA%E9%87%8C.mp3"
     },
     {
-      "id": "choice-三角形在圆角方块上面",
-      "kind": "choice",
-      "text": "三角形在圆角方块上面",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E4%B8%89%E8%A7%92%E5%BD%A2%E5%9C%A8%E5%9C%86%E8%A7%92%E6%96%B9%E5%9D%97%E4%B8%8A%E9%9D%A2.mp3"
-    },
-    {
-      "id": "choice-圆角方块在三角形上面",
-      "kind": "choice",
-      "text": "圆角方块在三角形上面",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%9C%86%E8%A7%92%E6%96%B9%E5%9D%97%E5%9C%A8%E4%B8%89%E8%A7%92%E5%BD%A2%E4%B8%8A%E9%9D%A2.mp3"
-    },
-    {
-      "id": "choice-三角形在圆角方块上面-偏右下叠放",
-      "kind": "choice",
-      "text": "三角形在圆角方块上面，偏右下叠放",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E4%B8%89%E8%A7%92%E5%BD%A2%E5%9C%A8%E5%9C%86%E8%A7%92%E6%96%B9%E5%9D%97%E4%B8%8A%E9%9D%A2-%E5%81%8F%E5%8F%B3%E4%B8%8B%E5%8F%A0%E6%94%BE.mp3"
-    },
-    {
-      "id": "choice-星星在圆角方块上面",
-      "kind": "choice",
-      "text": "星星在圆角方块上面",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E6%98%9F%E6%98%9F%E5%9C%A8%E5%9C%86%E8%A7%92%E6%96%B9%E5%9D%97%E4%B8%8A%E9%9D%A2.mp3"
-    },
-    {
-      "id": "success-圆角方块在三角形上面对-方块压住三角形中心-只露出三个尖角-透明叠合要看上面和下面的遮挡线索",
+      "id": "success-圆角方块在三角形上面对-方块压住三角形中心-只露出三个尖角-透明叠合要看后盖上去的图挡住了哪里",
       "kind": "success",
-      "text": "圆角方块在三角形上面对，方块压住三角形中心，只露出三个尖角，透明叠合要看上面和下面的遮挡线索。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%9C%86%E8%A7%92%E6%96%B9%E5%9D%97%E5%9C%A8%E4%B8%89%E8%A7%92%E5%BD%A2%E4%B8%8A%E9%9D%A2%E5%AF%B9-%E6%96%B9%E5%9D%97%E5%8E%8B%E4%BD%8F%E4%B8%89%E8%A7%92%E5%BD%A2%E4%B8%AD%E5%BF%83-%E5%8F%AA%E9%9C%B2%E5%87%BA%E4%B8%89%E4%B8%AA%E5%B0%96%E8%A7%92-%E9%80%8F%E6%98%8E%E5%8F%A0%E5%90%88%E8%A6%81%E7%9C%8B%E4%B8%8A%E9%9D%A2%E5%92%8C%E4%B8%8B%E9%9D%A2%E7%9A%84%E9%81%AE%E6%8C%A1%E7%BA%BF%E7%B4%A2.mp3"
+      "text": "圆角方块在三角形上面对，方块压住三角形中心，只露出三个尖角，透明叠合要看后盖上去的图挡住了哪里。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%9C%86%E8%A7%92%E6%96%B9%E5%9D%97%E5%9C%A8%E4%B8%89%E8%A7%92%E5%BD%A2%E4%B8%8A%E9%9D%A2%E5%AF%B9-%E6%96%B9%E5%9D%97%E5%8E%8B%E4%BD%8F%E4%B8%89%E8%A7%92%E5%BD%A2%E4%B8%AD%E5%BF%83-%E5%8F%AA%E9%9C%B2%E5%87%BA%E4%B8%89%E4%B8%AA%E5%B0%96%E8%A7%92-%E9%80%8F%E6%98%8E%E5%8F%A0%E5%90%88%E8%A6%81%E7%9C%8B%E5%90%8E%E7%9B%96%E4%B8%8A%E5%8E%BB%E7%9A%84%E5%9B%BE%E6%8C%A1%E4%BD%8F%E4%BA%86%E5%93%AA%E9%87%8C.mp3"
     },
     {
-      "id": "choice-圆角方块在三角形上面-偏右下叠放",
-      "kind": "choice",
-      "text": "圆角方块在三角形上面，偏右下叠放",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%9C%86%E8%A7%92%E6%96%B9%E5%9D%97%E5%9C%A8%E4%B8%89%E8%A7%92%E5%BD%A2%E4%B8%8A%E9%9D%A2-%E5%81%8F%E5%8F%B3%E4%B8%8B%E5%8F%A0%E6%94%BE.mp3"
-    },
-    {
-      "id": "choice-星星在三角形上面",
-      "kind": "choice",
-      "text": "星星在三角形上面",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E6%98%9F%E6%98%9F%E5%9C%A8%E4%B8%89%E8%A7%92%E5%BD%A2%E4%B8%8A%E9%9D%A2.mp3"
-    },
-    {
-      "id": "success-圆形在菱形上面对-圆形盖住菱形中心-四个尖角还露在外面-透明叠合要看上面和下面的遮挡线索",
+      "id": "success-圆形在菱形上面对-圆形盖住菱形中心-四个尖角还露在外面-透明叠合要看后盖上去的图挡住了哪里",
       "kind": "success",
-      "text": "圆形在菱形上面对，圆形盖住菱形中心，四个尖角还露在外面，透明叠合要看上面和下面的遮挡线索。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%9C%86%E5%BD%A2%E5%9C%A8%E8%8F%B1%E5%BD%A2%E4%B8%8A%E9%9D%A2%E5%AF%B9-%E5%9C%86%E5%BD%A2%E7%9B%96%E4%BD%8F%E8%8F%B1%E5%BD%A2%E4%B8%AD%E5%BF%83-%E5%9B%9B%E4%B8%AA%E5%B0%96%E8%A7%92%E8%BF%98%E9%9C%B2%E5%9C%A8%E5%A4%96%E9%9D%A2-%E9%80%8F%E6%98%8E%E5%8F%A0%E5%90%88%E8%A6%81%E7%9C%8B%E4%B8%8A%E9%9D%A2%E5%92%8C%E4%B8%8B%E9%9D%A2%E7%9A%84%E9%81%AE%E6%8C%A1%E7%BA%BF%E7%B4%A2.mp3"
+      "text": "圆形在菱形上面对，圆形盖住菱形中心，四个尖角还露在外面，透明叠合要看后盖上去的图挡住了哪里。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%9C%86%E5%BD%A2%E5%9C%A8%E8%8F%B1%E5%BD%A2%E4%B8%8A%E9%9D%A2%E5%AF%B9-%E5%9C%86%E5%BD%A2%E7%9B%96%E4%BD%8F%E8%8F%B1%E5%BD%A2%E4%B8%AD%E5%BF%83-%E5%9B%9B%E4%B8%AA%E5%B0%96%E8%A7%92%E8%BF%98%E9%9C%B2%E5%9C%A8%E5%A4%96%E9%9D%A2-%E9%80%8F%E6%98%8E%E5%8F%A0%E5%90%88%E8%A6%81%E7%9C%8B%E5%90%8E%E7%9B%96%E4%B8%8A%E5%8E%BB%E7%9A%84%E5%9B%BE%E6%8C%A1%E4%BD%8F%E4%BA%86%E5%93%AA%E9%87%8C.mp3"
     },
     {
-      "id": "choice-圆形在菱形上面",
-      "kind": "choice",
-      "text": "圆形在菱形上面",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%9C%86%E5%BD%A2%E5%9C%A8%E8%8F%B1%E5%BD%A2%E4%B8%8A%E9%9D%A2.mp3"
-    },
-    {
-      "id": "choice-菱形在圆形上面",
-      "kind": "choice",
-      "text": "菱形在圆形上面",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E8%8F%B1%E5%BD%A2%E5%9C%A8%E5%9C%86%E5%BD%A2%E4%B8%8A%E9%9D%A2.mp3"
-    },
-    {
-      "id": "choice-圆形在菱形上面-偏右下叠放",
-      "kind": "choice",
-      "text": "圆形在菱形上面，偏右下叠放",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%9C%86%E5%BD%A2%E5%9C%A8%E8%8F%B1%E5%BD%A2%E4%B8%8A%E9%9D%A2-%E5%81%8F%E5%8F%B3%E4%B8%8B%E5%8F%A0%E6%94%BE.mp3"
-    },
-    {
-      "id": "choice-圆角方块在菱形上面",
-      "kind": "choice",
-      "text": "圆角方块在菱形上面",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%9C%86%E8%A7%92%E6%96%B9%E5%9D%97%E5%9C%A8%E8%8F%B1%E5%BD%A2%E4%B8%8A%E9%9D%A2.mp3"
-    },
-    {
-      "id": "success-菱形在圆形上面对-菱形边线压在圆形前面-圆弧只在外侧露出-透明叠合要看上面和下面的遮挡线索",
+      "id": "success-菱形在圆形上面对-菱形边线压在圆形前面-圆弧只在外侧露出-透明叠合要看后盖上去的图挡住了哪里",
       "kind": "success",
-      "text": "菱形在圆形上面对，菱形边线压在圆形前面，圆弧只在外侧露出，透明叠合要看上面和下面的遮挡线索。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%8F%B1%E5%BD%A2%E5%9C%A8%E5%9C%86%E5%BD%A2%E4%B8%8A%E9%9D%A2%E5%AF%B9-%E8%8F%B1%E5%BD%A2%E8%BE%B9%E7%BA%BF%E5%8E%8B%E5%9C%A8%E5%9C%86%E5%BD%A2%E5%89%8D%E9%9D%A2-%E5%9C%86%E5%BC%A7%E5%8F%AA%E5%9C%A8%E5%A4%96%E4%BE%A7%E9%9C%B2%E5%87%BA-%E9%80%8F%E6%98%8E%E5%8F%A0%E5%90%88%E8%A6%81%E7%9C%8B%E4%B8%8A%E9%9D%A2%E5%92%8C%E4%B8%8B%E9%9D%A2%E7%9A%84%E9%81%AE%E6%8C%A1%E7%BA%BF%E7%B4%A2.mp3"
+      "text": "菱形在圆形上面对，菱形边线压在圆形前面，圆弧只在外侧露出，透明叠合要看后盖上去的图挡住了哪里。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%8F%B1%E5%BD%A2%E5%9C%A8%E5%9C%86%E5%BD%A2%E4%B8%8A%E9%9D%A2%E5%AF%B9-%E8%8F%B1%E5%BD%A2%E8%BE%B9%E7%BA%BF%E5%8E%8B%E5%9C%A8%E5%9C%86%E5%BD%A2%E5%89%8D%E9%9D%A2-%E5%9C%86%E5%BC%A7%E5%8F%AA%E5%9C%A8%E5%A4%96%E4%BE%A7%E9%9C%B2%E5%87%BA-%E9%80%8F%E6%98%8E%E5%8F%A0%E5%90%88%E8%A6%81%E7%9C%8B%E5%90%8E%E7%9B%96%E4%B8%8A%E5%8E%BB%E7%9A%84%E5%9B%BE%E6%8C%A1%E4%BD%8F%E4%BA%86%E5%93%AA%E9%87%8C.mp3"
     },
     {
-      "id": "choice-菱形在圆形上面-偏右下叠放",
-      "kind": "choice",
-      "text": "菱形在圆形上面，偏右下叠放",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E8%8F%B1%E5%BD%A2%E5%9C%A8%E5%9C%86%E5%BD%A2%E4%B8%8A%E9%9D%A2-%E5%81%8F%E5%8F%B3%E4%B8%8B%E5%8F%A0%E6%94%BE.mp3"
-    },
-    {
-      "id": "success-花朵在叶子上面对-圆花瓣盖住叶子中间-只露出叶子尖端-透明叠合要看上面和下面的遮挡线索",
+      "id": "success-花朵在叶子上面对-圆花瓣盖住叶子中间-只露出叶子尖端-透明叠合要看后盖上去的图挡住了哪里",
       "kind": "success",
-      "text": "花朵在叶子上面对，圆花瓣盖住叶子中间，只露出叶子尖端，透明叠合要看上面和下面的遮挡线索。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%8A%B1%E6%9C%B5%E5%9C%A8%E5%8F%B6%E5%AD%90%E4%B8%8A%E9%9D%A2%E5%AF%B9-%E5%9C%86%E8%8A%B1%E7%93%A3%E7%9B%96%E4%BD%8F%E5%8F%B6%E5%AD%90%E4%B8%AD%E9%97%B4-%E5%8F%AA%E9%9C%B2%E5%87%BA%E5%8F%B6%E5%AD%90%E5%B0%96%E7%AB%AF-%E9%80%8F%E6%98%8E%E5%8F%A0%E5%90%88%E8%A6%81%E7%9C%8B%E4%B8%8A%E9%9D%A2%E5%92%8C%E4%B8%8B%E9%9D%A2%E7%9A%84%E9%81%AE%E6%8C%A1%E7%BA%BF%E7%B4%A2.mp3"
+      "text": "花朵在叶子上面对，圆花瓣盖住叶子中间，只露出叶子尖端，透明叠合要看后盖上去的图挡住了哪里。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%8A%B1%E6%9C%B5%E5%9C%A8%E5%8F%B6%E5%AD%90%E4%B8%8A%E9%9D%A2%E5%AF%B9-%E5%9C%86%E8%8A%B1%E7%93%A3%E7%9B%96%E4%BD%8F%E5%8F%B6%E5%AD%90%E4%B8%AD%E9%97%B4-%E5%8F%AA%E9%9C%B2%E5%87%BA%E5%8F%B6%E5%AD%90%E5%B0%96%E7%AB%AF-%E9%80%8F%E6%98%8E%E5%8F%A0%E5%90%88%E8%A6%81%E7%9C%8B%E5%90%8E%E7%9B%96%E4%B8%8A%E5%8E%BB%E7%9A%84%E5%9B%BE%E6%8C%A1%E4%BD%8F%E4%BA%86%E5%93%AA%E9%87%8C.mp3"
     },
     {
-      "id": "choice-花朵在叶子上面",
-      "kind": "choice",
-      "text": "花朵在叶子上面",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E8%8A%B1%E6%9C%B5%E5%9C%A8%E5%8F%B6%E5%AD%90%E4%B8%8A%E9%9D%A2.mp3"
-    },
-    {
-      "id": "choice-叶子在花朵上面",
-      "kind": "choice",
-      "text": "叶子在花朵上面",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%8F%B6%E5%AD%90%E5%9C%A8%E8%8A%B1%E6%9C%B5%E4%B8%8A%E9%9D%A2.mp3"
-    },
-    {
-      "id": "choice-花朵在叶子上面-偏右下叠放",
-      "kind": "choice",
-      "text": "花朵在叶子上面，偏右下叠放",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E8%8A%B1%E6%9C%B5%E5%9C%A8%E5%8F%B6%E5%AD%90%E4%B8%8A%E9%9D%A2-%E5%81%8F%E5%8F%B3%E4%B8%8B%E5%8F%A0%E6%94%BE.mp3"
-    },
-    {
-      "id": "choice-星星在叶子上面",
-      "kind": "choice",
-      "text": "星星在叶子上面",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E6%98%9F%E6%98%9F%E5%9C%A8%E5%8F%B6%E5%AD%90%E4%B8%8A%E9%9D%A2.mp3"
-    },
-    {
-      "id": "success-叶子在花朵上面对-叶子的长弧线压在花瓣前面-透明叠合要看上面和下面的遮挡线索",
+      "id": "success-叶子在花朵上面对-叶子的长弧线压在花瓣前面-透明叠合要看后盖上去的图挡住了哪里",
       "kind": "success",
-      "text": "叶子在花朵上面对，叶子的长弧线压在花瓣前面，透明叠合要看上面和下面的遮挡线索。",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%8F%B6%E5%AD%90%E5%9C%A8%E8%8A%B1%E6%9C%B5%E4%B8%8A%E9%9D%A2%E5%AF%B9-%E5%8F%B6%E5%AD%90%E7%9A%84%E9%95%BF%E5%BC%A7%E7%BA%BF%E5%8E%8B%E5%9C%A8%E8%8A%B1%E7%93%A3%E5%89%8D%E9%9D%A2-%E9%80%8F%E6%98%8E%E5%8F%A0%E5%90%88%E8%A6%81%E7%9C%8B%E4%B8%8A%E9%9D%A2%E5%92%8C%E4%B8%8B%E9%9D%A2%E7%9A%84%E9%81%AE%E6%8C%A1%E7%BA%BF%E7%B4%A2.mp3"
-    },
-    {
-      "id": "choice-叶子在花朵上面-偏右下叠放",
-      "kind": "choice",
-      "text": "叶子在花朵上面，偏右下叠放",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%8F%B6%E5%AD%90%E5%9C%A8%E8%8A%B1%E6%9C%B5%E4%B8%8A%E9%9D%A2-%E5%81%8F%E5%8F%B3%E4%B8%8B%E5%8F%A0%E6%94%BE.mp3"
-    },
-    {
-      "id": "choice-小鱼在花朵上面",
-      "kind": "choice",
-      "text": "小鱼在花朵上面",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%B0%8F%E9%B1%BC%E5%9C%A8%E8%8A%B1%E6%9C%B5%E4%B8%8A%E9%9D%A2.mp3"
+      "text": "叶子在花朵上面对，叶子的长弧线压在花瓣前面，透明叠合要看后盖上去的图挡住了哪里。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%8F%B6%E5%AD%90%E5%9C%A8%E8%8A%B1%E6%9C%B5%E4%B8%8A%E9%9D%A2%E5%AF%B9-%E5%8F%B6%E5%AD%90%E7%9A%84%E9%95%BF%E5%BC%A7%E7%BA%BF%E5%8E%8B%E5%9C%A8%E8%8A%B1%E7%93%A3%E5%89%8D%E9%9D%A2-%E9%80%8F%E6%98%8E%E5%8F%A0%E5%90%88%E8%A6%81%E7%9C%8B%E5%90%8E%E7%9B%96%E4%B8%8A%E5%8E%BB%E7%9A%84%E5%9B%BE%E6%8C%A1%E4%BD%8F%E4%BA%86%E5%93%AA%E9%87%8C.mp3"
     },
     {
       "id": "game-title-图形密码机",

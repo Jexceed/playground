@@ -113,6 +113,22 @@ export const imageGallery = {
       src: "/images/scenes/fair-share-picnic.png",
       alt: "野餐桌上几个孩子面前有盘子，中间有点心，正在一个一个轮流分。",
     },
+    clockBreakfastMorning: {
+      src: "/images/scenes/clock-breakfast-morning.png",
+      alt: "餐桌旁，小朋友坐着吃早餐，窗外有明亮的阳光。",
+    },
+    clockLunchNapNoon: {
+      src: "/images/scenes/clock-lunch-nap-noon.png",
+      alt: "吃完午饭后，小朋友在安静的卧室里准备午睡。",
+    },
+    clockNapPlayAfternoon: {
+      src: "/images/scenes/clock-nap-play-afternoon.png",
+      alt: "午睡以后，小朋友醒来准备去玩玩具。",
+    },
+    clockDinnerBathEvening: {
+      src: "/images/scenes/clock-dinner-bath-evening.png",
+      alt: "吃完晚饭后，小朋友在浴室门口准备洗澡。",
+    },
   },
   characters: {
     cat: {

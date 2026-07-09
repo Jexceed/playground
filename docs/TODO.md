@@ -44,6 +44,10 @@ small enough to turn into a Spec Kit feature.
   high-quality AI-generated child chorus recording when an approved source is
   available; do not simulate chorus by stacking ordinary single-speaker TTS
   voices.
+- Extend 时钟小管家 in a future Spec Kit slice only after play review confirms
+  the first pass works; likely next steps are quarter hours, five-minute
+  increments, and simple before/after time order, not elapsed-time arithmetic
+  yet.
 - Revisit archived Obsidian notes and extract any still-useful product decisions
   into maintained docs.
 - Consider a lightweight asset manifest report that lists registered but unused

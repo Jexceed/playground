@@ -86,6 +86,14 @@ export type RoundGraphicChallenge = {
   options: GraphicChallengeOption[];
 };
 
+export type RoundClockChallenge = {
+  hour: number;
+  minute: 0 | 30;
+  mode: "read-time" | "time-conversion";
+  label: string;
+  activity?: string;
+};
+
 export type GameRound = {
   id: string;
   level: AbilityLevel;
@@ -100,6 +108,7 @@ export type GameRound = {
   matrix?: RoundMatrix;
   memory?: RoundMemory;
   graphicChallenge?: RoundGraphicChallenge;
+  clockChallenge?: RoundClockChallenge;
   choices: RoundOption[];
   answer: string;
   success: string;

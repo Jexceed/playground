@@ -3,17 +3,56 @@
 All meaningful project changes should be recorded here. Keep entries factual and
 grouped by date.
 
+## 2026-07-09
+
+- Reworked 时钟小管家生活场景题 from choosing 上午/下午/晚上 labels into
+  12-hour analog clock to 24-hour electronic clock conversion, removed
+  pre-answer day-part label leakage, and changed the scene-clock layout so the
+  generated scene appears above the deterministic clock instead of being
+  squeezed beside it.
+- Removed the redundant 图形工坊 stem helper `在下面选 A、B、C、D` and added
+  curriculum audit coverage so option-selection guidance does not appear as
+  extra problem text.
+- Added image-gen 1200x675 local scene PNGs and source copies for the four
+  时钟小管家 daily-routine rounds, registered them in `imageGallery.scenes`,
+  and tightened audit/layout coverage so context rounds are visual while
+  read-time rounds stay clock-only.
+- Centered 时钟小管家 read-time clock boards and redrew clock ticks/hands with
+  explicit endpoint geometry so the analog face renders as a complete,
+  readable clock whose hands match the prompt.
+- Reworked 图形工坊的透明叠叠板题面 so each round first shows a separate
+  non-answer overlap example, then shows only the two figures the child must
+  mentally overlap with `1 先放这张` and `2 盖上这张` action labels, preventing
+  the stem from displaying the correct result while keeping the stacking order
+  visible.
+- Added the `021-clock-time` Spec Kit feature for a 数字岛 clock-reading game
+  covering analog whole hours, half hours, and daily morning/afternoon/evening
+  context.
+- Added `时钟小管家` to 数字岛 with 12 rounds, a dedicated local analog clock
+  surface, hand-position feedback, and parent prompts that ask children to
+  explain long-hand, short-hand, and daily activity evidence.
+- Expanded the curriculum audit to require the clock game, validate
+  `clockChallenge` surfaces, enforce whole-hour/half-hour/time-conversion
+  coverage, and reject weak clock or conversion evidence.
+- Exported the updated 1800-line voice script and regenerated the standard Edge
+  Xiaoxiao local voice manifest with the new clock lines.
+
 ## 2026-07-08
 
 - Fixed round speech control so new speech requests invalidate stale pending
   voice loads, explicit question navigation stops the previous line immediately,
   and clicked question/game changes request the target round prompt directly.
+- Changed 图形工坊 answer interactions so pre-answer option clicks and aria
+  labels only expose A/B/C/D instead of answer-revealing figure names or layer
+  relations, removed graphic option labels from the local voice manifest, and
+  gave graphic answer choices a four-column desktop grid so all four options fit
+  on one row.
 - Re-audited 图形工坊 from the player view: shadow choices now render as real
   black silhouettes, multi-figure stems render in one shared SVG for overlap and
   code-machine relationships, code-machine questions use a visible `?` answer
   slot, layer-overlap choice labels describe the drawn option instead of the
-  distractor rationale, and graphic option labels are included in the standard
-  Edge Xiaoxiao voice pack.
+  distractor rationale, with post-answer feedback carrying the explanatory
+  evidence instead of pre-answer option speech.
 - Slowed the launch brand-shout audio from about 1.0 seconds to about 1.4
   seconds and extended the splash timing so the line has room to finish before
   entering the app.

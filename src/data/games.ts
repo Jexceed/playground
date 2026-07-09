@@ -1,4 +1,4 @@
-import type { AbilityLevel, GameConfig, GameRound, GraphicChallengeOption, GraphicFigure, WorldId } from "../types";
+import type { AbilityLevel, GameConfig, GameRound, GraphicChallengeOption, GraphicFigure, GraphicFigureGroup, WorldId } from "../types";
 import { imageGallery } from "./imageGallery";
 
 type RoundInput = Omit<GameRound, "id"> & { id?: string };
@@ -110,6 +110,17 @@ export const games: GameConfig[] = [
     abilityTags: ["成组计数", "早期乘法直觉", "跳数"],
     level: "L5",
     rounds: makeGroupCountingRounds(),
+  }),
+  makeSet({
+    id: "math-clock-time",
+    world: "math",
+    title: "时钟小管家",
+    subtitle: "看长针和短针，读整点、半点，再把钟面时间写成电子钟时间。",
+    goal: "建立整点、半点和 12 小时到 24 小时制转换的基础理解。",
+    parentPrompt: "请她先说长针在哪里、短针在哪里，再结合图里的活动选电子钟时间。",
+    abilityTags: ["认识时钟", "整点半点", "24小时制"],
+    level: "L5",
+    rounds: makeClockTimeRounds(),
   }),
   makeSet({
     id: "logic-pattern-train",
@@ -466,7 +477,7 @@ export const games: GameConfig[] = [
 ];
 
 export const worlds = [
-  { id: "math", name: "数字岛", icon: "🧮", summary: "数数、比较、加减、分组" },
+  { id: "math", name: "数字岛", icon: "🧮", summary: "数数、比较、加减、分组、时钟" },
   { id: "logic", name: "逻辑屋", icon: "🗝️", summary: "规律、顺序、规则、计划" },
   { id: "graphic", name: "图形工坊", icon: "🧩", summary: "轮廓、遮挡、叠合、线索、密码、缺口" },
 ] as const;
@@ -500,7 +511,9 @@ function defaultDifficultyNote(round: RoundInput) {
 function visualSurfaceText(round: RoundInput) {
   if (round.sceneImage && round.sequence) return "先看场景图，再按顺序图卡核对关键线索。";
   if (round.sceneImage && round.visualGroups) return "先看场景图，再用分组图卡比较条件。";
+  if (round.sceneImage && round.clockChallenge) return "先看生活场景图，再用模拟时钟和电子钟时间互相核对。";
   if (round.sceneImage) return "主要从生活场景图里找证据。";
+  if (round.clockChallenge) return "看模拟时钟的长针、短针和生活活动线索来判断时间。";
   if (round.memory) return `先记住 ${round.memory.items.length} 张图卡，遮住后再排除干扰项。`;
   if (round.grid) return `在 ${round.grid.rows.length} 行 x ${round.grid.columns.length} 列小地图中定位。`;
   if (round.matrix) return `在 ${round.matrix.cells.length} 行图形表里横向找规律，再纵向检查。`;
@@ -2500,6 +2513,124 @@ function makeBridgeRounds(): RoundInput[] {
   return repeatTo([...rounds, ...variants], 24);
 }
 
+function makeClockTimeRounds(): RoundInput[] {
+  const readCases = [
+    clockReadCase(7, 0, "7点", ["6点", "7点半"], "早上起床前后常会看到 7 点。"),
+    clockReadCase(9, 0, "9点", ["8点", "9点半"], "短针指到 9，长针指到 12。"),
+    clockReadCase(12, 0, "12点", ["1点", "12点半"], "短针指到 12，长针也指到 12。"),
+    clockReadCase(4, 0, "4点", ["5点", "4点半"], "短针指到 4，长针指到 12。"),
+    clockReadCase(3, 30, "3点半", ["3点", "4点半"], "长针指到 6，短针走过 3 但还没到 4。"),
+    clockReadCase(6, 30, "6点半", ["6点", "7点半"], "长针指到 6，短针在 6 和 7 中间。"),
+    clockReadCase(8, 30, "8点半", ["8点", "9点半"], "长针指到 6，短针在 8 和 9 中间。"),
+    clockReadCase(10, 30, "10点半", ["10点", "11点半"], "长针指到 6，短针在 10 和 11 中间。"),
+  ];
+
+  const conversionCases = [
+    clockTimeConversionCase({
+      hour: 8,
+      minute: 0,
+      activity: "吃早餐",
+      answer: "08:00",
+      choices: ["08:00", "20:00", "18:00"],
+      clue: "图里在吃早餐，8 点写成电子钟时间是 08:00。",
+      sceneImage: imageGallery.scenes.clockBreakfastMorning,
+      level: "L4",
+    }),
+    clockTimeConversionCase({
+      hour: 12,
+      minute: 30,
+      activity: "吃午饭后准备睡午觉",
+      answer: "12:30",
+      choices: ["12:30", "00:30", "13:30"],
+      clue: "图里是吃完午饭准备午睡，12 点半写成电子钟时间还是 12:30。",
+      sceneImage: imageGallery.scenes.clockLunchNapNoon,
+      level: "L5",
+    }),
+    clockTimeConversionCase({
+      hour: 3,
+      minute: 30,
+      activity: "午睡后去玩",
+      answer: "15:30",
+      choices: ["15:30", "03:30", "13:30"],
+      clue: "图里是午睡后去玩，3 点半写成电子钟时间是 15:30。",
+      sceneImage: imageGallery.scenes.clockNapPlayAfternoon,
+      level: "L5",
+    }),
+    clockTimeConversionCase({
+      hour: 7,
+      minute: 0,
+      activity: "吃完晚饭准备洗澡",
+      answer: "19:00",
+      choices: ["19:00", "07:00", "17:00"],
+      clue: "图里是晚饭后准备洗澡，7 点写成电子钟时间是 19:00。",
+      sceneImage: imageGallery.scenes.clockDinnerBathEvening,
+      level: "L5",
+    }),
+  ];
+
+  return [...readCases, ...conversionCases];
+}
+
+function clockReadCase(hour: number, minute: 0 | 30, answer: string, distractors: string[], extraClue: string): RoundInput {
+  const handClue = minute === 0
+    ? `长针在 12，表示整点；短针指着 ${hour}。`
+    : `长针在 6，表示半点；短针走过 ${hour}，还没到 ${hour === 12 ? 1 : hour + 1}。`;
+  return {
+    level: minute === 0 ? "L3" : "L4",
+    prompt: "这个时钟是几点？",
+    instruction: "先看长针，再看短针。",
+    clockChallenge: {
+      hour,
+      minute,
+      mode: "read-time",
+      label: answer,
+    },
+    choices: choiceSet([answer, ...distractors]),
+    answer,
+    success: `${answer}对。${handClue}${extraClue}`,
+    retry: "先看长针：长针在 12 是整点，长针在 6 是半点；再看短针指到哪里或走过哪里。",
+    parentPrompt: "请她指着钟面说：长针在哪里？短针在哪里？所以为什么是这个时间？",
+    abilityTags: minute === 0 ? ["认识时钟", "整点"] : ["认识时钟", "半点"],
+    difficultyNote: minute === 0
+      ? "整点读钟：先判断长针在 12，再把短针指向的数字读成几点。"
+      : "半点读钟：需要知道长针在 6 表示半点，并判断短针已经走过哪个数字。",
+  };
+}
+
+function clockTimeConversionCase(input: {
+  hour: number;
+  minute: 0 | 30;
+  activity: string;
+  answer: string;
+  choices: string[];
+  clue: string;
+  sceneImage: NonNullable<RoundInput["sceneImage"]>;
+  level: AbilityLevel;
+}): RoundInput {
+  const timeLabel = `${input.hour}点${input.minute === 30 ? "半" : ""}`;
+  const plainTime = `${String(input.hour).padStart(2, "0")}:${String(input.minute).padStart(2, "0")}`;
+  return {
+    level: input.level,
+    prompt: "看图和时钟，电子钟应该显示哪个时间？",
+    instruction: "先读钟面，再看图里的活动是在一天的前面还是后面。",
+    sceneImage: input.sceneImage,
+    clockChallenge: {
+      hour: input.hour,
+      minute: input.minute,
+      mode: "time-conversion",
+      label: timeLabel,
+      activity: input.activity,
+    },
+    choices: choiceSet(input.choices),
+    answer: input.answer,
+    success: `${input.answer}对。时钟是${timeLabel}，${input.clue}`,
+    retry: `先读钟面是${timeLabel}，再看图里的活动。不要只选 ${plainTime}，要想它在一天里应该写成哪一个 24 小时电子钟时间。`,
+    parentPrompt: `问她：钟面读作${timeLabel}，图里在${input.activity}，为什么电子钟要选${input.answer}？`,
+    abilityTags: ["24小时制", "生活时间"],
+    difficultyNote: "12 小时到 24 小时转换：同一个钟面数字可能对应两个电子钟时间，需要结合场景判断。",
+  };
+}
+
 function makeSameKindRounds(): RoundInput[] {
   const sameKindCases = [
     {
@@ -4058,15 +4189,12 @@ function makeGraphicLayerOverlapRounds(): RoundInput[] {
 
   return cases.map((item, index) => graphicRound({
     level: index < 2 ? "L5" : "L6",
-    prompt: "两张透明图叠在一起，下面哪张叠合结果和上面一样？",
-    instruction: "先看哪张图在上面，再看重叠的地方谁挡住了谁。",
+    prompt: "照着示例理解叠加，把本题两张透明图叠起来，会变成下面哪一张？",
+    instruction: "示例只教叠法；真正要判断的是本题两张图。先放第1张，再把第2张盖到它上面。",
     kind: "layer-overlap",
-    stemLabel: "透明叠合样子",
-    groups: [
-      { label: "原图一", figures: [item.bottomSource], connector: "plus" },
-      { label: "原图二", figures: [item.topSource], connector: "plus" },
-    ],
-    figures: item.answerFigures,
+    stemLabel: "先看示例，再看本题要叠加的两张图",
+    groups: layerExampleGroups(),
+    figures: item.taskFigures,
     options: [
       layerOption(item.answer, item.label, item.answerFigures),
       layerOption(`${item.bottomSource.shape}-over-${item.topSource.shape}`, layerLabel(swappedLayer(item.answerFigures)), swappedLayer(item.answerFigures), "两个图形一样，但上面和下面反了。"),
@@ -4074,9 +4202,9 @@ function makeGraphicLayerOverlapRounds(): RoundInput[] {
       layerOption(`${item.answer}-wrong-shape`, layerLabel(wrongLayer(item.answerFigures)), wrongLayer(item.answerFigures), "位置像，但其中一个图形轮廓被换了。"),
     ],
     answer: item.answer,
-    success: `${item.label}对，${item.clue}，透明叠合要看上面和下面的遮挡线索。`,
-    retry: "先说哪张在上面，再看重叠边线：上面的图会挡住下面的图，不要只看两个图形有没有出现。",
-    parentPrompt: "请她指一指重叠的地方，说为什么这个是上面，为什么上下反过来的选项不对。",
+    success: `${item.label}对，${item.clue}，透明叠合要看后盖上去的图挡住了哪里。`,
+    retry: "先按顺序说：第1张先放，第2张盖上去。再看重叠边线，后盖上去的图会挡住前面的图。",
+    parentPrompt: "请她指一指重叠的地方，说第2张盖上去以后挡住了哪里，为什么顺序反过来的选项不对。",
     abilityTags: ["透明叠叠板", "上下层判断", "重叠线索"],
     difficultyNote: "上实式叠合题：四个选项图形相近，需要同时判断上下层、重叠位置和轮廓是否被换。",
   }));
@@ -4214,7 +4342,9 @@ function layerCase(
 ) {
   const bottomSource: GraphicFigure = { shape: bottom, color: bottomColor, scale: 0.74, x: -10, y: 8, opacity: 0.62 };
   const topSource: GraphicFigure = { shape: top, color: topColor, scale: 0.74, x: 12, y: -8, opacity: 0.86 };
-  return { answer, answerFigures: [bottomSource, topSource], bottomSource, clue, label, topSource };
+  const taskBottom: GraphicFigure = { ...bottomSource, x: -28, y: 0, scale: 0.62, opacity: 0.72 };
+  const taskTop: GraphicFigure = { ...topSource, x: 28, y: 0, scale: 0.62, opacity: 0.86 };
+  return { answer, answerFigures: [bottomSource, topSource], bottomSource, clue, label, taskFigures: [taskBottom, taskTop], topSource };
 }
 
 function layerOption(value: string, label: string, figures: GraphicFigure[], nearMiss?: string): GraphicChallengeOption {
@@ -4237,6 +4367,16 @@ function wrongLayer(figures: GraphicFigure[]) {
   const [bottom, top] = figures;
   const replacement: GraphicFigure["shape"] = top?.shape === "star" ? "flower" : top?.shape === "circle" ? "rounded-square" : top?.shape === "leaf" ? "fish" : "star";
   return [bottom, top ? { ...top, shape: replacement } : undefined].filter(Boolean) as GraphicFigure[];
+}
+
+function layerExampleGroups(): GraphicFigureGroup[] {
+  const exampleBottom: GraphicFigure = { shape: "rounded-square", color: "#93c5fd", scale: 0.68, x: -8, y: 8, opacity: 0.62 };
+  const exampleTop: GraphicFigure = { shape: "fish", color: "#38bdf8", scale: 0.64, x: 12, y: -8, opacity: 0.86 };
+  return [
+    { label: "示例1 先放", figures: [{ ...exampleBottom, x: 0, y: 0, opacity: 0.72 }], connector: "plus" },
+    { label: "示例2 盖上", figures: [{ ...exampleTop, x: 0, y: 0 }], connector: "arrow" },
+    { label: "示例叠后", figures: [exampleBottom, exampleTop] },
+  ];
 }
 
 function layerLabel(figures: GraphicFigure[]) {

@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-07T16:57:19.930Z",
+  "generatedAt": "2026-07-09T11:34:29.299Z",
   "recommendedVoice": "warm adult female Mandarin, smiling, preschool teacher, 0.85 speed, crisp consonants",
-  "lineCount": 1791,
+  "lineCount": 1803,
   "lines": [
     {
       "id": "game-title-数一数",
@@ -4665,6 +4665,540 @@
       ]
     },
     {
+      "id": "game-title-时钟小管家",
+      "kind": "game-title",
+      "text": "时钟小管家",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-clock-time"
+      ]
+    },
+    {
+      "id": "game-goal-建立整点-半点和-12-小时到-24-小时制转换的基础理解",
+      "kind": "game-goal",
+      "text": "建立整点、半点和 12 小时到 24 小时制转换的基础理解。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-clock-time"
+      ]
+    },
+    {
+      "id": "prompt-这个时钟是几点-先看长针-再看短针",
+      "kind": "prompt",
+      "text": "这个时钟是几点？先看长针，再看短针。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-clock-time/math-clock-time-1",
+        "math-clock-time/math-clock-time-2",
+        "math-clock-time/math-clock-time-3",
+        "math-clock-time/math-clock-time-4",
+        "math-clock-time/math-clock-time-5",
+        "math-clock-time/math-clock-time-6",
+        "math-clock-time/math-clock-time-7",
+        "math-clock-time/math-clock-time-8"
+      ]
+    },
+    {
+      "id": "success-7点对-长针在-12-表示整点-短针指着-7-早上起床前后常会看到-7-点",
+      "kind": "success",
+      "text": "7点对。长针在 12，表示整点；短针指着 7。早上起床前后常会看到 7 点。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "math-clock-time/math-clock-time-1"
+      ]
+    },
+    {
+      "id": "retry-先看长针-长针在-12-是整点-长针在-6-是半点-再看短针指到哪里或走过哪里",
+      "kind": "retry",
+      "text": "先看长针：长针在 12 是整点，长针在 6 是半点；再看短针指到哪里或走过哪里。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "math-clock-time/math-clock-time-1",
+        "math-clock-time/math-clock-time-2",
+        "math-clock-time/math-clock-time-3",
+        "math-clock-time/math-clock-time-4",
+        "math-clock-time/math-clock-time-5",
+        "math-clock-time/math-clock-time-6",
+        "math-clock-time/math-clock-time-7",
+        "math-clock-time/math-clock-time-8"
+      ]
+    },
+    {
+      "id": "parent-请她指着钟面说-长针在哪里-短针在哪里-所以为什么是这个时间",
+      "kind": "parent",
+      "text": "请她指着钟面说：长针在哪里？短针在哪里？所以为什么是这个时间？",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-clock-time/math-clock-time-1",
+        "math-clock-time/math-clock-time-2",
+        "math-clock-time/math-clock-time-3",
+        "math-clock-time/math-clock-time-4",
+        "math-clock-time/math-clock-time-5",
+        "math-clock-time/math-clock-time-6",
+        "math-clock-time/math-clock-time-7",
+        "math-clock-time/math-clock-time-8"
+      ]
+    },
+    {
+      "id": "choice-7点",
+      "kind": "choice",
+      "text": "7点",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-clock-time/math-clock-time-1"
+      ]
+    },
+    {
+      "id": "choice-6点",
+      "kind": "choice",
+      "text": "6点",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-clock-time/math-clock-time-1",
+        "math-clock-time/math-clock-time-6"
+      ]
+    },
+    {
+      "id": "choice-7点半",
+      "kind": "choice",
+      "text": "7点半",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-clock-time/math-clock-time-1",
+        "math-clock-time/math-clock-time-6"
+      ]
+    },
+    {
+      "id": "success-9点对-长针在-12-表示整点-短针指着-9-短针指到-9-长针指到-12",
+      "kind": "success",
+      "text": "9点对。长针在 12，表示整点；短针指着 9。短针指到 9，长针指到 12。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "math-clock-time/math-clock-time-2"
+      ]
+    },
+    {
+      "id": "choice-9点",
+      "kind": "choice",
+      "text": "9点",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-clock-time/math-clock-time-2"
+      ]
+    },
+    {
+      "id": "choice-8点",
+      "kind": "choice",
+      "text": "8点",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-clock-time/math-clock-time-2",
+        "math-clock-time/math-clock-time-7"
+      ]
+    },
+    {
+      "id": "choice-9点半",
+      "kind": "choice",
+      "text": "9点半",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-clock-time/math-clock-time-2",
+        "math-clock-time/math-clock-time-7"
+      ]
+    },
+    {
+      "id": "success-12点对-长针在-12-表示整点-短针指着-12-短针指到-12-长针也指到-12",
+      "kind": "success",
+      "text": "12点对。长针在 12，表示整点；短针指着 12。短针指到 12，长针也指到 12。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "math-clock-time/math-clock-time-3"
+      ]
+    },
+    {
+      "id": "choice-12点",
+      "kind": "choice",
+      "text": "12点",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-clock-time/math-clock-time-3"
+      ]
+    },
+    {
+      "id": "choice-1点",
+      "kind": "choice",
+      "text": "1点",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-clock-time/math-clock-time-3"
+      ]
+    },
+    {
+      "id": "choice-12点半",
+      "kind": "choice",
+      "text": "12点半",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-clock-time/math-clock-time-3"
+      ]
+    },
+    {
+      "id": "success-4点对-长针在-12-表示整点-短针指着-4-短针指到-4-长针指到-12",
+      "kind": "success",
+      "text": "4点对。长针在 12，表示整点；短针指着 4。短针指到 4，长针指到 12。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "math-clock-time/math-clock-time-4"
+      ]
+    },
+    {
+      "id": "choice-4点",
+      "kind": "choice",
+      "text": "4点",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-clock-time/math-clock-time-4"
+      ]
+    },
+    {
+      "id": "choice-5点",
+      "kind": "choice",
+      "text": "5点",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-clock-time/math-clock-time-4"
+      ]
+    },
+    {
+      "id": "choice-4点半",
+      "kind": "choice",
+      "text": "4点半",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-clock-time/math-clock-time-4",
+        "math-clock-time/math-clock-time-5"
+      ]
+    },
+    {
+      "id": "success-3点半对-长针在-6-表示半点-短针走过-3-还没到-4-长针指到-6-短针走过-3-但还没到-4",
+      "kind": "success",
+      "text": "3点半对。长针在 6，表示半点；短针走过 3，还没到 4。长针指到 6，短针走过 3 但还没到 4。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "math-clock-time/math-clock-time-5"
+      ]
+    },
+    {
+      "id": "choice-3点半",
+      "kind": "choice",
+      "text": "3点半",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-clock-time/math-clock-time-5"
+      ]
+    },
+    {
+      "id": "choice-3点",
+      "kind": "choice",
+      "text": "3点",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-clock-time/math-clock-time-5"
+      ]
+    },
+    {
+      "id": "success-6点半对-长针在-6-表示半点-短针走过-6-还没到-7-长针指到-6-短针在-6-和-7-中间",
+      "kind": "success",
+      "text": "6点半对。长针在 6，表示半点；短针走过 6，还没到 7。长针指到 6，短针在 6 和 7 中间。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "math-clock-time/math-clock-time-6"
+      ]
+    },
+    {
+      "id": "choice-6点半",
+      "kind": "choice",
+      "text": "6点半",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-clock-time/math-clock-time-6"
+      ]
+    },
+    {
+      "id": "success-8点半对-长针在-6-表示半点-短针走过-8-还没到-9-长针指到-6-短针在-8-和-9-中间",
+      "kind": "success",
+      "text": "8点半对。长针在 6，表示半点；短针走过 8，还没到 9。长针指到 6，短针在 8 和 9 中间。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "math-clock-time/math-clock-time-7"
+      ]
+    },
+    {
+      "id": "choice-8点半",
+      "kind": "choice",
+      "text": "8点半",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-clock-time/math-clock-time-7"
+      ]
+    },
+    {
+      "id": "success-10点半对-长针在-6-表示半点-短针走过-10-还没到-11-长针指到-6-短针在-10-和-11-中间",
+      "kind": "success",
+      "text": "10点半对。长针在 6，表示半点；短针走过 10，还没到 11。长针指到 6，短针在 10 和 11 中间。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "math-clock-time/math-clock-time-8"
+      ]
+    },
+    {
+      "id": "choice-10点半",
+      "kind": "choice",
+      "text": "10点半",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-clock-time/math-clock-time-8"
+      ]
+    },
+    {
+      "id": "choice-10点",
+      "kind": "choice",
+      "text": "10点",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-clock-time/math-clock-time-8"
+      ]
+    },
+    {
+      "id": "choice-11点半",
+      "kind": "choice",
+      "text": "11点半",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-clock-time/math-clock-time-8"
+      ]
+    },
+    {
+      "id": "prompt-看图和时钟-电子钟应该显示哪个时间-先读钟面-再看图里的活动是在一天的前面还是后面",
+      "kind": "prompt",
+      "text": "看图和时钟，电子钟应该显示哪个时间？先读钟面，再看图里的活动是在一天的前面还是后面。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-clock-time/math-clock-time-9",
+        "math-clock-time/math-clock-time-10",
+        "math-clock-time/math-clock-time-11",
+        "math-clock-time/math-clock-time-12"
+      ]
+    },
+    {
+      "id": "success-08-00对-时钟是8点-图里在吃早餐-8-点写成电子钟时间是-08-00",
+      "kind": "success",
+      "text": "08:00对。时钟是8点，图里在吃早餐，8 点写成电子钟时间是 08:00。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "math-clock-time/math-clock-time-9"
+      ]
+    },
+    {
+      "id": "retry-先读钟面是8点-再看图里的活动-不要只选-08-00-要想它在一天里应该写成哪一个-24-小时电子钟时间",
+      "kind": "retry",
+      "text": "先读钟面是8点，再看图里的活动。不要只选 08:00，要想它在一天里应该写成哪一个 24 小时电子钟时间。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "math-clock-time/math-clock-time-9"
+      ]
+    },
+    {
+      "id": "parent-问她-钟面读作8点-图里在吃早餐-为什么电子钟要选08-00",
+      "kind": "parent",
+      "text": "问她：钟面读作8点，图里在吃早餐，为什么电子钟要选08:00？",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-clock-time/math-clock-time-9"
+      ]
+    },
+    {
+      "id": "choice-08-00",
+      "kind": "choice",
+      "text": "08:00",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-clock-time/math-clock-time-9"
+      ]
+    },
+    {
+      "id": "choice-20-00",
+      "kind": "choice",
+      "text": "20:00",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-clock-time/math-clock-time-9"
+      ]
+    },
+    {
+      "id": "choice-18-00",
+      "kind": "choice",
+      "text": "18:00",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-clock-time/math-clock-time-9"
+      ]
+    },
+    {
+      "id": "success-12-30对-时钟是12点半-图里是吃完午饭准备午睡-12-点半写成电子钟时间还是-12-30",
+      "kind": "success",
+      "text": "12:30对。时钟是12点半，图里是吃完午饭准备午睡，12 点半写成电子钟时间还是 12:30。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "math-clock-time/math-clock-time-10"
+      ]
+    },
+    {
+      "id": "retry-先读钟面是12点半-再看图里的活动-不要只选-12-30-要想它在一天里应该写成哪一个-24-小时电子钟时间",
+      "kind": "retry",
+      "text": "先读钟面是12点半，再看图里的活动。不要只选 12:30，要想它在一天里应该写成哪一个 24 小时电子钟时间。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "math-clock-time/math-clock-time-10"
+      ]
+    },
+    {
+      "id": "parent-问她-钟面读作12点半-图里在吃午饭后准备睡午觉-为什么电子钟要选12-30",
+      "kind": "parent",
+      "text": "问她：钟面读作12点半，图里在吃午饭后准备睡午觉，为什么电子钟要选12:30？",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-clock-time/math-clock-time-10"
+      ]
+    },
+    {
+      "id": "choice-12-30",
+      "kind": "choice",
+      "text": "12:30",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-clock-time/math-clock-time-10"
+      ]
+    },
+    {
+      "id": "choice-00-30",
+      "kind": "choice",
+      "text": "00:30",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-clock-time/math-clock-time-10"
+      ]
+    },
+    {
+      "id": "choice-13-30",
+      "kind": "choice",
+      "text": "13:30",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-clock-time/math-clock-time-10",
+        "math-clock-time/math-clock-time-11"
+      ]
+    },
+    {
+      "id": "success-15-30对-时钟是3点半-图里是午睡后去玩-3-点半写成电子钟时间是-15-30",
+      "kind": "success",
+      "text": "15:30对。时钟是3点半，图里是午睡后去玩，3 点半写成电子钟时间是 15:30。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "math-clock-time/math-clock-time-11"
+      ]
+    },
+    {
+      "id": "retry-先读钟面是3点半-再看图里的活动-不要只选-03-30-要想它在一天里应该写成哪一个-24-小时电子钟时间",
+      "kind": "retry",
+      "text": "先读钟面是3点半，再看图里的活动。不要只选 03:30，要想它在一天里应该写成哪一个 24 小时电子钟时间。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "math-clock-time/math-clock-time-11"
+      ]
+    },
+    {
+      "id": "parent-问她-钟面读作3点半-图里在午睡后去玩-为什么电子钟要选15-30",
+      "kind": "parent",
+      "text": "问她：钟面读作3点半，图里在午睡后去玩，为什么电子钟要选15:30？",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-clock-time/math-clock-time-11"
+      ]
+    },
+    {
+      "id": "choice-15-30",
+      "kind": "choice",
+      "text": "15:30",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-clock-time/math-clock-time-11"
+      ]
+    },
+    {
+      "id": "choice-03-30",
+      "kind": "choice",
+      "text": "03:30",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-clock-time/math-clock-time-11"
+      ]
+    },
+    {
+      "id": "success-19-00对-时钟是7点-图里是晚饭后准备洗澡-7-点写成电子钟时间是-19-00",
+      "kind": "success",
+      "text": "19:00对。时钟是7点，图里是晚饭后准备洗澡，7 点写成电子钟时间是 19:00。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "math-clock-time/math-clock-time-12"
+      ]
+    },
+    {
+      "id": "retry-先读钟面是7点-再看图里的活动-不要只选-07-00-要想它在一天里应该写成哪一个-24-小时电子钟时间",
+      "kind": "retry",
+      "text": "先读钟面是7点，再看图里的活动。不要只选 07:00，要想它在一天里应该写成哪一个 24 小时电子钟时间。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "math-clock-time/math-clock-time-12"
+      ]
+    },
+    {
+      "id": "parent-问她-钟面读作7点-图里在吃完晚饭准备洗澡-为什么电子钟要选19-00",
+      "kind": "parent",
+      "text": "问她：钟面读作7点，图里在吃完晚饭准备洗澡，为什么电子钟要选19:00？",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-clock-time/math-clock-time-12"
+      ]
+    },
+    {
+      "id": "choice-19-00",
+      "kind": "choice",
+      "text": "19:00",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-clock-time/math-clock-time-12"
+      ]
+    },
+    {
+      "id": "choice-07-00",
+      "kind": "choice",
+      "text": "07:00",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-clock-time/math-clock-time-12"
+      ]
+    },
+    {
+      "id": "choice-17-00",
+      "kind": "choice",
+      "text": "17:00",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-clock-time/math-clock-time-12"
+      ]
+    },
+    {
       "id": "game-title-找规律火车",
       "kind": "game-title",
       "text": "找规律火车",
@@ -5128,26 +5662,7 @@
         "logic-part-whole-puzzle/logic-part-whole-puzzle-1",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-5",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-7",
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-11",
-        "graphic-covered-restore/graphic-covered-restore-4",
-        "graphic-covered-restore/graphic-covered-restore-5",
-        "graphic-covered-restore/graphic-covered-restore-6",
-        "graphic-covered-restore/graphic-covered-restore-7",
-        "graphic-detail-whole/graphic-detail-whole-2",
-        "graphic-detail-whole/graphic-detail-whole-4",
-        "graphic-detail-whole/graphic-detail-whole-5",
-        "graphic-detail-whole/graphic-detail-whole-6",
-        "graphic-detail-whole/graphic-detail-whole-7",
-        "graphic-code-machine/graphic-code-machine-1",
-        "graphic-code-machine/graphic-code-machine-2",
-        "graphic-code-machine/graphic-code-machine-3",
-        "graphic-code-machine/graphic-code-machine-4",
-        "graphic-gap-close/graphic-gap-close-2",
-        "graphic-gap-close/graphic-gap-close-3",
-        "graphic-gap-close/graphic-gap-close-4",
-        "graphic-gap-close/graphic-gap-close-5",
-        "graphic-gap-close/graphic-gap-close-6",
-        "graphic-gap-close/graphic-gap-close-8"
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-11"
       ]
     },
     {
@@ -5488,21 +6003,7 @@
         "logic-part-whole-puzzle/logic-part-whole-puzzle-11",
         "logic-route-steps/logic-route-steps-1",
         "logic-route-steps/logic-route-steps-2",
-        "logic-route-steps/logic-route-steps-3",
-        "graphic-covered-restore/graphic-covered-restore-3",
-        "graphic-covered-restore/graphic-covered-restore-6",
-        "graphic-covered-restore/graphic-covered-restore-8",
-        "graphic-detail-whole/graphic-detail-whole-3",
-        "graphic-detail-whole/graphic-detail-whole-5",
-        "graphic-detail-whole/graphic-detail-whole-6",
-        "graphic-detail-whole/graphic-detail-whole-8",
-        "graphic-code-machine/graphic-code-machine-1",
-        "graphic-code-machine/graphic-code-machine-2",
-        "graphic-code-machine/graphic-code-machine-3",
-        "graphic-code-machine/graphic-code-machine-4",
-        "graphic-gap-close/graphic-gap-close-1",
-        "graphic-gap-close/graphic-gap-close-6",
-        "graphic-gap-close/graphic-gap-close-7"
+        "logic-route-steps/logic-route-steps-3"
       ]
     },
     {
@@ -8184,10 +8685,7 @@
         "logic-part-whole-puzzle/logic-part-whole-puzzle-3",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-9",
         "logic-route-steps/logic-route-steps-5",
-        "logic-route-steps/logic-route-steps-10",
-        "graphic-covered-restore/graphic-covered-restore-1",
-        "graphic-covered-restore/graphic-covered-restore-2",
-        "graphic-detail-whole/graphic-detail-whole-1"
+        "logic-route-steps/logic-route-steps-10"
       ]
     },
     {
@@ -8219,10 +8717,7 @@
         "logic-part-whole-puzzle/logic-part-whole-puzzle-9",
         "logic-route-steps/logic-route-steps-7",
         "logic-route-steps/logic-route-steps-8",
-        "logic-route-steps/logic-route-steps-9",
-        "graphic-covered-restore/graphic-covered-restore-1",
-        "graphic-covered-restore/graphic-covered-restore-2",
-        "graphic-detail-whole/graphic-detail-whole-1"
+        "logic-route-steps/logic-route-steps-9"
       ]
     },
     {
@@ -8242,10 +8737,7 @@
         "logic-memory-camera/logic-memory-camera-4",
         "logic-difference-detective/logic-difference-detective-11",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-3",
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-9",
-        "graphic-covered-restore/graphic-covered-restore-1",
-        "graphic-covered-restore/graphic-covered-restore-2",
-        "graphic-detail-whole/graphic-detail-whole-1"
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-9"
       ]
     },
     {
@@ -8446,10 +8938,7 @@
       "contexts": [
         "logic-story-evidence/logic-story-evidence-5",
         "logic-same-kind-detective/logic-same-kind-detective-4",
-        "logic-memory-camera/logic-memory-camera-4",
-        "graphic-covered-restore/graphic-covered-restore-1",
-        "graphic-covered-restore/graphic-covered-restore-2",
-        "graphic-detail-whole/graphic-detail-whole-1"
+        "logic-memory-camera/logic-memory-camera-4"
       ]
     },
     {
@@ -12868,14 +13357,7 @@
         "logic-position-map/logic-position-map-9",
         "logic-memory-camera/logic-memory-camera-10",
         "logic-difference-detective/logic-difference-detective-5",
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-9",
-        "graphic-covered-restore/graphic-covered-restore-4",
-        "graphic-detail-whole/graphic-detail-whole-2",
-        "graphic-code-machine/graphic-code-machine-5",
-        "graphic-code-machine/graphic-code-machine-6",
-        "graphic-code-machine/graphic-code-machine-7",
-        "graphic-code-machine/graphic-code-machine-8",
-        "graphic-gap-close/graphic-gap-close-8"
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-9"
       ]
     },
     {
@@ -19145,46 +19627,6 @@
       ]
     },
     {
-      "id": "choice-小猫影子",
-      "kind": "choice",
-      "text": "小猫影子",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "graphic-shadow-match/graphic-shadow-match-1",
-        "graphic-shadow-match/graphic-shadow-match-2"
-      ]
-    },
-    {
-      "id": "choice-小狗影子",
-      "kind": "choice",
-      "text": "小狗影子",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "graphic-shadow-match/graphic-shadow-match-1",
-        "graphic-shadow-match/graphic-shadow-match-2"
-      ]
-    },
-    {
-      "id": "choice-小兔影子",
-      "kind": "choice",
-      "text": "小兔影子",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "graphic-shadow-match/graphic-shadow-match-1",
-        "graphic-shadow-match/graphic-shadow-match-2"
-      ]
-    },
-    {
-      "id": "choice-小熊影子",
-      "kind": "choice",
-      "text": "小熊影子",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "graphic-shadow-match/graphic-shadow-match-1",
-        "graphic-shadow-match/graphic-shadow-match-2"
-      ]
-    },
-    {
       "id": "success-小兔影子的轮廓对上了-两只长耳朵最明显-所以选这个影子",
       "kind": "success",
       "text": "小兔影子的轮廓对上了，两只长耳朵最明显，所以选这个影子。",
@@ -19203,47 +19645,6 @@
       ]
     },
     {
-      "id": "choice-叶子影子",
-      "kind": "choice",
-      "text": "叶子影子",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "graphic-shadow-match/graphic-shadow-match-3",
-        "graphic-shadow-match/graphic-shadow-match-5",
-        "graphic-shadow-match/graphic-shadow-match-7"
-      ]
-    },
-    {
-      "id": "choice-小鱼影子",
-      "kind": "choice",
-      "text": "小鱼影子",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "graphic-shadow-match/graphic-shadow-match-3"
-      ]
-    },
-    {
-      "id": "choice-苹果影子",
-      "kind": "choice",
-      "text": "苹果影子",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "graphic-shadow-match/graphic-shadow-match-3",
-        "graphic-shadow-match/graphic-shadow-match-4",
-        "graphic-shadow-match/graphic-shadow-match-6"
-      ]
-    },
-    {
-      "id": "choice-梨子影子",
-      "kind": "choice",
-      "text": "梨子影子",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "graphic-shadow-match/graphic-shadow-match-3",
-        "graphic-shadow-match/graphic-shadow-match-4"
-      ]
-    },
-    {
       "id": "success-苹果影子的轮廓对上了-上面有小叶子-下面是圆鼓鼓的-所以选这个影子",
       "kind": "success",
       "text": "苹果影子的轮廓对上了，上面有小叶子，下面是圆鼓鼓的，所以选这个影子。",
@@ -19253,55 +19654,12 @@
       ]
     },
     {
-      "id": "choice-圆形影子",
-      "kind": "choice",
-      "text": "圆形影子",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "graphic-shadow-match/graphic-shadow-match-4",
-        "graphic-shadow-match/graphic-shadow-match-6"
-      ]
-    },
-    {
-      "id": "choice-花朵影子",
-      "kind": "choice",
-      "text": "花朵影子",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "graphic-shadow-match/graphic-shadow-match-4",
-        "graphic-shadow-match/graphic-shadow-match-5"
-      ]
-    },
-    {
       "id": "success-星星影子的轮廓对上了-外边一圈都是尖尖的角-所以选这个影子",
       "kind": "success",
       "text": "星星影子的轮廓对上了，外边一圈都是尖尖的角，所以选这个影子。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "graphic-shadow-match/graphic-shadow-match-5"
-      ]
-    },
-    {
-      "id": "choice-星星影子",
-      "kind": "choice",
-      "text": "星星影子",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "graphic-shadow-match/graphic-shadow-match-5",
-        "graphic-shadow-match/graphic-shadow-match-6",
-        "graphic-shadow-match/graphic-shadow-match-7",
-        "graphic-shadow-match/graphic-shadow-match-8"
-      ]
-    },
-    {
-      "id": "choice-圆角方块影子",
-      "kind": "choice",
-      "text": "圆角方块影子",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "graphic-shadow-match/graphic-shadow-match-5",
-        "graphic-shadow-match/graphic-shadow-match-6",
-        "graphic-shadow-match/graphic-shadow-match-8"
       ]
     },
     {
@@ -19320,26 +19678,6 @@
       "tone": "warm, delighted, clear",
       "contexts": [
         "graphic-shadow-match/graphic-shadow-match-7"
-      ]
-    },
-    {
-      "id": "choice-三角形影子",
-      "kind": "choice",
-      "text": "三角形影子",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "graphic-shadow-match/graphic-shadow-match-7",
-        "graphic-shadow-match/graphic-shadow-match-8"
-      ]
-    },
-    {
-      "id": "choice-菱形影子",
-      "kind": "choice",
-      "text": "菱形影子",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "graphic-shadow-match/graphic-shadow-match-7",
-        "graphic-shadow-match/graphic-shadow-match-8"
       ]
     },
     {
@@ -19445,66 +19783,6 @@
       ]
     },
     {
-      "id": "choice-梨子",
-      "kind": "choice",
-      "text": "梨子",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "graphic-covered-restore/graphic-covered-restore-3",
-        "graphic-covered-restore/graphic-covered-restore-4",
-        "graphic-covered-restore/graphic-covered-restore-8",
-        "graphic-detail-whole/graphic-detail-whole-2",
-        "graphic-detail-whole/graphic-detail-whole-3",
-        "graphic-detail-whole/graphic-detail-whole-8",
-        "graphic-code-machine/graphic-code-machine-1",
-        "graphic-code-machine/graphic-code-machine-2",
-        "graphic-code-machine/graphic-code-machine-3",
-        "graphic-code-machine/graphic-code-machine-4",
-        "graphic-gap-close/graphic-gap-close-7",
-        "graphic-gap-close/graphic-gap-close-8"
-      ]
-    },
-    {
-      "id": "choice-圆形",
-      "kind": "choice",
-      "text": "圆形",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "graphic-covered-restore/graphic-covered-restore-3",
-        "graphic-covered-restore/graphic-covered-restore-6",
-        "graphic-covered-restore/graphic-covered-restore-8",
-        "graphic-detail-whole/graphic-detail-whole-3",
-        "graphic-detail-whole/graphic-detail-whole-5",
-        "graphic-detail-whole/graphic-detail-whole-6",
-        "graphic-gap-close/graphic-gap-close-1",
-        "graphic-gap-close/graphic-gap-close-2",
-        "graphic-gap-close/graphic-gap-close-6",
-        "graphic-gap-close/graphic-gap-close-7"
-      ]
-    },
-    {
-      "id": "choice-花朵",
-      "kind": "choice",
-      "text": "花朵",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "graphic-covered-restore/graphic-covered-restore-3",
-        "graphic-covered-restore/graphic-covered-restore-5",
-        "graphic-covered-restore/graphic-covered-restore-6",
-        "graphic-detail-whole/graphic-detail-whole-3",
-        "graphic-detail-whole/graphic-detail-whole-4",
-        "graphic-detail-whole/graphic-detail-whole-5",
-        "graphic-detail-whole/graphic-detail-whole-8",
-        "graphic-code-machine/graphic-code-machine-5",
-        "graphic-code-machine/graphic-code-machine-6",
-        "graphic-code-machine/graphic-code-machine-7",
-        "graphic-code-machine/graphic-code-machine-8",
-        "graphic-gap-close/graphic-gap-close-5",
-        "graphic-gap-close/graphic-gap-close-6",
-        "graphic-gap-close/graphic-gap-close-7"
-      ]
-    },
-    {
       "id": "success-小鱼对-露出的三角尾巴只属于小鱼-遮住以后要抓住露出的线索",
       "kind": "success",
       "text": "小鱼对，露出的三角尾巴只属于小鱼。遮住以后要抓住露出的线索。",
@@ -19514,52 +19792,12 @@
       ]
     },
     {
-      "id": "choice-叶子",
-      "kind": "choice",
-      "text": "叶子",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "graphic-covered-restore/graphic-covered-restore-4",
-        "graphic-covered-restore/graphic-covered-restore-5",
-        "graphic-covered-restore/graphic-covered-restore-8",
-        "graphic-detail-whole/graphic-detail-whole-2",
-        "graphic-detail-whole/graphic-detail-whole-4",
-        "graphic-detail-whole/graphic-detail-whole-8",
-        "graphic-code-machine/graphic-code-machine-1",
-        "graphic-code-machine/graphic-code-machine-2",
-        "graphic-code-machine/graphic-code-machine-3",
-        "graphic-code-machine/graphic-code-machine-4",
-        "graphic-gap-close/graphic-gap-close-3",
-        "graphic-gap-close/graphic-gap-close-8"
-      ]
-    },
-    {
       "id": "success-星星对-四周露出的尖角说明完整图是星星-遮住以后要抓住露出的线索",
       "kind": "success",
       "text": "星星对，四周露出的尖角说明完整图是星星。遮住以后要抓住露出的线索。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "graphic-covered-restore/graphic-covered-restore-5"
-      ]
-    },
-    {
-      "id": "choice-圆角方块",
-      "kind": "choice",
-      "text": "圆角方块",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "graphic-covered-restore/graphic-covered-restore-5",
-        "graphic-covered-restore/graphic-covered-restore-7",
-        "graphic-detail-whole/graphic-detail-whole-4",
-        "graphic-detail-whole/graphic-detail-whole-6",
-        "graphic-detail-whole/graphic-detail-whole-7",
-        "graphic-code-machine/graphic-code-machine-5",
-        "graphic-code-machine/graphic-code-machine-6",
-        "graphic-code-machine/graphic-code-machine-7",
-        "graphic-code-machine/graphic-code-machine-8",
-        "graphic-gap-close/graphic-gap-close-1",
-        "graphic-gap-close/graphic-gap-close-2",
-        "graphic-gap-close/graphic-gap-close-4"
       ]
     },
     {
@@ -19578,38 +19816,6 @@
       "tone": "warm, delighted, clear",
       "contexts": [
         "graphic-covered-restore/graphic-covered-restore-7"
-      ]
-    },
-    {
-      "id": "choice-菱形",
-      "kind": "choice",
-      "text": "菱形",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "graphic-covered-restore/graphic-covered-restore-7",
-        "graphic-detail-whole/graphic-detail-whole-7",
-        "graphic-gap-close/graphic-gap-close-1",
-        "graphic-gap-close/graphic-gap-close-2",
-        "graphic-gap-close/graphic-gap-close-3",
-        "graphic-gap-close/graphic-gap-close-4",
-        "graphic-gap-close/graphic-gap-close-5"
-      ]
-    },
-    {
-      "id": "choice-三角形",
-      "kind": "choice",
-      "text": "三角形",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "graphic-covered-restore/graphic-covered-restore-7",
-        "graphic-detail-whole/graphic-detail-whole-7",
-        "graphic-code-machine/graphic-code-machine-5",
-        "graphic-code-machine/graphic-code-machine-6",
-        "graphic-code-machine/graphic-code-machine-7",
-        "graphic-code-machine/graphic-code-machine-8",
-        "graphic-gap-close/graphic-gap-close-3",
-        "graphic-gap-close/graphic-gap-close-4",
-        "graphic-gap-close/graphic-gap-close-5"
       ]
     },
     {
@@ -19778,9 +19984,9 @@
       ]
     },
     {
-      "id": "prompt-两张透明图叠在一起-下面哪张叠合结果和上面一样-先看哪张图在上面-再看重叠的地方谁挡住了谁",
+      "id": "prompt-照着示例理解叠加-把本题两张透明图叠起来-会变成下面哪一张-示例只教叠法-真正要判断的是本题两张图-先放第1张-再把第2张盖到它上面",
       "kind": "prompt",
-      "text": "两张透明图叠在一起，下面哪张叠合结果和上面一样？先看哪张图在上面，再看重叠的地方谁挡住了谁。",
+      "text": "照着示例理解叠加，把本题两张透明图叠起来，会变成下面哪一张？示例只教叠法；真正要判断的是本题两张图。先放第1张，再把第2张盖到它上面。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "graphic-layer-overlap/graphic-layer-overlap-1",
@@ -19794,18 +20000,18 @@
       ]
     },
     {
-      "id": "success-星星在圆形上面对-星星盖住圆形中间-边上还能看到圆弧-透明叠合要看上面和下面的遮挡线索",
+      "id": "success-星星在圆形上面对-星星盖住圆形中间-边上还能看到圆弧-透明叠合要看后盖上去的图挡住了哪里",
       "kind": "success",
-      "text": "星星在圆形上面对，星星盖住圆形中间，边上还能看到圆弧，透明叠合要看上面和下面的遮挡线索。",
+      "text": "星星在圆形上面对，星星盖住圆形中间，边上还能看到圆弧，透明叠合要看后盖上去的图挡住了哪里。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "graphic-layer-overlap/graphic-layer-overlap-1"
       ]
     },
     {
-      "id": "retry-先说哪张在上面-再看重叠边线-上面的图会挡住下面的图-不要只看两个图形有没有出现",
+      "id": "retry-先按顺序说-第1张先放-第2张盖上去-再看重叠边线-后盖上去的图会挡住前面的图",
       "kind": "retry",
-      "text": "先说哪张在上面，再看重叠边线：上面的图会挡住下面的图，不要只看两个图形有没有出现。",
+      "text": "先按顺序说：第1张先放，第2张盖上去。再看重叠边线，后盖上去的图会挡住前面的图。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
         "graphic-layer-overlap/graphic-layer-overlap-1",
@@ -19819,9 +20025,9 @@
       ]
     },
     {
-      "id": "parent-请她指一指重叠的地方-说为什么这个是上面-为什么上下反过来的选项不对",
+      "id": "parent-请她指一指重叠的地方-说第2张盖上去以后挡住了哪里-为什么顺序反过来的选项不对",
       "kind": "parent",
-      "text": "请她指一指重叠的地方，说为什么这个是上面，为什么上下反过来的选项不对。",
+      "text": "请她指一指重叠的地方，说第2张盖上去以后挡住了哪里，为什么顺序反过来的选项不对。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "graphic-layer-overlap/graphic-layer-overlap-1",
@@ -19835,280 +20041,64 @@
       ]
     },
     {
-      "id": "choice-星星在圆形上面",
-      "kind": "choice",
-      "text": "星星在圆形上面",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "graphic-layer-overlap/graphic-layer-overlap-1",
-        "graphic-layer-overlap/graphic-layer-overlap-2",
-        "graphic-layer-overlap/graphic-layer-overlap-6"
-      ]
-    },
-    {
-      "id": "choice-圆形在星星上面",
-      "kind": "choice",
-      "text": "圆形在星星上面",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "graphic-layer-overlap/graphic-layer-overlap-1",
-        "graphic-layer-overlap/graphic-layer-overlap-2"
-      ]
-    },
-    {
-      "id": "choice-星星在圆形上面-偏右下叠放",
-      "kind": "choice",
-      "text": "星星在圆形上面，偏右下叠放",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "graphic-layer-overlap/graphic-layer-overlap-1"
-      ]
-    },
-    {
-      "id": "choice-花朵在圆形上面",
-      "kind": "choice",
-      "text": "花朵在圆形上面",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "graphic-layer-overlap/graphic-layer-overlap-1"
-      ]
-    },
-    {
-      "id": "success-圆形在星星上面对-圆形压住星星中心-只露出外面的尖角-透明叠合要看上面和下面的遮挡线索",
+      "id": "success-圆形在星星上面对-圆形压住星星中心-只露出外面的尖角-透明叠合要看后盖上去的图挡住了哪里",
       "kind": "success",
-      "text": "圆形在星星上面对，圆形压住星星中心，只露出外面的尖角，透明叠合要看上面和下面的遮挡线索。",
+      "text": "圆形在星星上面对，圆形压住星星中心，只露出外面的尖角，透明叠合要看后盖上去的图挡住了哪里。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "graphic-layer-overlap/graphic-layer-overlap-2"
       ]
     },
     {
-      "id": "choice-圆形在星星上面-偏右下叠放",
-      "kind": "choice",
-      "text": "圆形在星星上面，偏右下叠放",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "graphic-layer-overlap/graphic-layer-overlap-2"
-      ]
-    },
-    {
-      "id": "choice-圆角方块在星星上面",
-      "kind": "choice",
-      "text": "圆角方块在星星上面",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "graphic-layer-overlap/graphic-layer-overlap-2"
-      ]
-    },
-    {
-      "id": "success-三角形在圆角方块上面对-三角形的底边挡住方块中间-透明叠合要看上面和下面的遮挡线索",
+      "id": "success-三角形在圆角方块上面对-三角形的底边挡住方块中间-透明叠合要看后盖上去的图挡住了哪里",
       "kind": "success",
-      "text": "三角形在圆角方块上面对，三角形的底边挡住方块中间，透明叠合要看上面和下面的遮挡线索。",
+      "text": "三角形在圆角方块上面对，三角形的底边挡住方块中间，透明叠合要看后盖上去的图挡住了哪里。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "graphic-layer-overlap/graphic-layer-overlap-3"
       ]
     },
     {
-      "id": "choice-三角形在圆角方块上面",
-      "kind": "choice",
-      "text": "三角形在圆角方块上面",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "graphic-layer-overlap/graphic-layer-overlap-3",
-        "graphic-layer-overlap/graphic-layer-overlap-4"
-      ]
-    },
-    {
-      "id": "choice-圆角方块在三角形上面",
-      "kind": "choice",
-      "text": "圆角方块在三角形上面",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "graphic-layer-overlap/graphic-layer-overlap-3",
-        "graphic-layer-overlap/graphic-layer-overlap-4"
-      ]
-    },
-    {
-      "id": "choice-三角形在圆角方块上面-偏右下叠放",
-      "kind": "choice",
-      "text": "三角形在圆角方块上面，偏右下叠放",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "graphic-layer-overlap/graphic-layer-overlap-3"
-      ]
-    },
-    {
-      "id": "choice-星星在圆角方块上面",
-      "kind": "choice",
-      "text": "星星在圆角方块上面",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "graphic-layer-overlap/graphic-layer-overlap-3"
-      ]
-    },
-    {
-      "id": "success-圆角方块在三角形上面对-方块压住三角形中心-只露出三个尖角-透明叠合要看上面和下面的遮挡线索",
+      "id": "success-圆角方块在三角形上面对-方块压住三角形中心-只露出三个尖角-透明叠合要看后盖上去的图挡住了哪里",
       "kind": "success",
-      "text": "圆角方块在三角形上面对，方块压住三角形中心，只露出三个尖角，透明叠合要看上面和下面的遮挡线索。",
+      "text": "圆角方块在三角形上面对，方块压住三角形中心，只露出三个尖角，透明叠合要看后盖上去的图挡住了哪里。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "graphic-layer-overlap/graphic-layer-overlap-4"
       ]
     },
     {
-      "id": "choice-圆角方块在三角形上面-偏右下叠放",
-      "kind": "choice",
-      "text": "圆角方块在三角形上面，偏右下叠放",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "graphic-layer-overlap/graphic-layer-overlap-4"
-      ]
-    },
-    {
-      "id": "choice-星星在三角形上面",
-      "kind": "choice",
-      "text": "星星在三角形上面",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "graphic-layer-overlap/graphic-layer-overlap-4"
-      ]
-    },
-    {
-      "id": "success-圆形在菱形上面对-圆形盖住菱形中心-四个尖角还露在外面-透明叠合要看上面和下面的遮挡线索",
+      "id": "success-圆形在菱形上面对-圆形盖住菱形中心-四个尖角还露在外面-透明叠合要看后盖上去的图挡住了哪里",
       "kind": "success",
-      "text": "圆形在菱形上面对，圆形盖住菱形中心，四个尖角还露在外面，透明叠合要看上面和下面的遮挡线索。",
+      "text": "圆形在菱形上面对，圆形盖住菱形中心，四个尖角还露在外面，透明叠合要看后盖上去的图挡住了哪里。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "graphic-layer-overlap/graphic-layer-overlap-5"
       ]
     },
     {
-      "id": "choice-圆形在菱形上面",
-      "kind": "choice",
-      "text": "圆形在菱形上面",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "graphic-layer-overlap/graphic-layer-overlap-5",
-        "graphic-layer-overlap/graphic-layer-overlap-6"
-      ]
-    },
-    {
-      "id": "choice-菱形在圆形上面",
-      "kind": "choice",
-      "text": "菱形在圆形上面",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "graphic-layer-overlap/graphic-layer-overlap-5",
-        "graphic-layer-overlap/graphic-layer-overlap-6"
-      ]
-    },
-    {
-      "id": "choice-圆形在菱形上面-偏右下叠放",
-      "kind": "choice",
-      "text": "圆形在菱形上面，偏右下叠放",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "graphic-layer-overlap/graphic-layer-overlap-5"
-      ]
-    },
-    {
-      "id": "choice-圆角方块在菱形上面",
-      "kind": "choice",
-      "text": "圆角方块在菱形上面",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "graphic-layer-overlap/graphic-layer-overlap-5"
-      ]
-    },
-    {
-      "id": "success-菱形在圆形上面对-菱形边线压在圆形前面-圆弧只在外侧露出-透明叠合要看上面和下面的遮挡线索",
+      "id": "success-菱形在圆形上面对-菱形边线压在圆形前面-圆弧只在外侧露出-透明叠合要看后盖上去的图挡住了哪里",
       "kind": "success",
-      "text": "菱形在圆形上面对，菱形边线压在圆形前面，圆弧只在外侧露出，透明叠合要看上面和下面的遮挡线索。",
+      "text": "菱形在圆形上面对，菱形边线压在圆形前面，圆弧只在外侧露出，透明叠合要看后盖上去的图挡住了哪里。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "graphic-layer-overlap/graphic-layer-overlap-6"
       ]
     },
     {
-      "id": "choice-菱形在圆形上面-偏右下叠放",
-      "kind": "choice",
-      "text": "菱形在圆形上面，偏右下叠放",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "graphic-layer-overlap/graphic-layer-overlap-6"
-      ]
-    },
-    {
-      "id": "success-花朵在叶子上面对-圆花瓣盖住叶子中间-只露出叶子尖端-透明叠合要看上面和下面的遮挡线索",
+      "id": "success-花朵在叶子上面对-圆花瓣盖住叶子中间-只露出叶子尖端-透明叠合要看后盖上去的图挡住了哪里",
       "kind": "success",
-      "text": "花朵在叶子上面对，圆花瓣盖住叶子中间，只露出叶子尖端，透明叠合要看上面和下面的遮挡线索。",
+      "text": "花朵在叶子上面对，圆花瓣盖住叶子中间，只露出叶子尖端，透明叠合要看后盖上去的图挡住了哪里。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "graphic-layer-overlap/graphic-layer-overlap-7"
       ]
     },
     {
-      "id": "choice-花朵在叶子上面",
-      "kind": "choice",
-      "text": "花朵在叶子上面",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "graphic-layer-overlap/graphic-layer-overlap-7",
-        "graphic-layer-overlap/graphic-layer-overlap-8"
-      ]
-    },
-    {
-      "id": "choice-叶子在花朵上面",
-      "kind": "choice",
-      "text": "叶子在花朵上面",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "graphic-layer-overlap/graphic-layer-overlap-7",
-        "graphic-layer-overlap/graphic-layer-overlap-8"
-      ]
-    },
-    {
-      "id": "choice-花朵在叶子上面-偏右下叠放",
-      "kind": "choice",
-      "text": "花朵在叶子上面，偏右下叠放",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "graphic-layer-overlap/graphic-layer-overlap-7"
-      ]
-    },
-    {
-      "id": "choice-星星在叶子上面",
-      "kind": "choice",
-      "text": "星星在叶子上面",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "graphic-layer-overlap/graphic-layer-overlap-7"
-      ]
-    },
-    {
-      "id": "success-叶子在花朵上面对-叶子的长弧线压在花瓣前面-透明叠合要看上面和下面的遮挡线索",
+      "id": "success-叶子在花朵上面对-叶子的长弧线压在花瓣前面-透明叠合要看后盖上去的图挡住了哪里",
       "kind": "success",
-      "text": "叶子在花朵上面对，叶子的长弧线压在花瓣前面，透明叠合要看上面和下面的遮挡线索。",
+      "text": "叶子在花朵上面对，叶子的长弧线压在花瓣前面，透明叠合要看后盖上去的图挡住了哪里。",
       "tone": "warm, delighted, clear",
-      "contexts": [
-        "graphic-layer-overlap/graphic-layer-overlap-8"
-      ]
-    },
-    {
-      "id": "choice-叶子在花朵上面-偏右下叠放",
-      "kind": "choice",
-      "text": "叶子在花朵上面，偏右下叠放",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "graphic-layer-overlap/graphic-layer-overlap-8"
-      ]
-    },
-    {
-      "id": "choice-小鱼在花朵上面",
-      "kind": "choice",
-      "text": "小鱼在花朵上面",
-      "tone": "friendly, clear, playful",
       "contexts": [
         "graphic-layer-overlap/graphic-layer-overlap-8"
       ]
