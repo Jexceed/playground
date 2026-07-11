@@ -20,8 +20,9 @@ Open the app, select 数字岛, and open 时钟小管家.
 Expected:
 
 - The game appears in 数字岛, not 图形工坊.
-- Early rounds show analog clock faces for whole hours.
-- Middle rounds show half-hour faces with the short hand between hour marks.
+- Early rounds show analog clock faces for `HH:00` times.
+- Middle rounds show `HH:30` faces with the hour hand/short hand between hour
+  marks.
 - Later rounds include generated activity scenes and `HH:MM` electronic clock
   choices.
 - Answer choices are child-readable and do not reveal through unrelated clues.

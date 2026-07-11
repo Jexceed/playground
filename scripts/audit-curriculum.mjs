@@ -747,14 +747,18 @@ function checkClockTimeRoundQuality(round, context) {
     if (round.sceneImage) {
       problems.push(`${context}: read-time clock round should not add a scene image`);
     }
-    if (!/长针/.test(round.success) || !/短针/.test(round.success)) {
-      problems.push(`${context}: clock reading success should name 长针 and 短针 evidence`);
+    const clockText = `${round.prompt} ${round.instruction} ${round.success} ${round.retry} ${round.parentPrompt} ${round.choices.map((choice) => choice.label).join(" ")} ${challenge.label}`;
+    if (/\d+\s*点半|\d+\s*点|点半|半点|几点/.test(clockText)) {
+      problems.push(`${context}: clock reading text should use HH:MM numeric time instead of 点/点半/半点 wording`);
     }
-    if (!/长针/.test(round.retry) || !/短针/.test(round.retry)) {
-      problems.push(`${context}: clock reading retry should name 长针 and 短针 evidence`);
+    if (!/分针/.test(round.success) || !/长针/.test(round.success) || !/时针/.test(round.success) || !/短针/.test(round.success)) {
+      problems.push(`${context}: clock reading success should name 分针/长针 and 时针/短针 evidence`);
     }
-    if (!/长针/.test(round.parentPrompt) || !/短针/.test(round.parentPrompt)) {
-      problems.push(`${context}: clock reading parentPrompt should ask about 长针 and 短针 evidence`);
+    if (!/分针/.test(round.retry) || !/长针/.test(round.retry) || !/时针/.test(round.retry) || !/短针/.test(round.retry)) {
+      problems.push(`${context}: clock reading retry should name 分针/长针 and 时针/短针 evidence`);
+    }
+    if (!/分针/.test(round.parentPrompt) || !/长针/.test(round.parentPrompt) || !/时针/.test(round.parentPrompt) || !/短针/.test(round.parentPrompt)) {
+      problems.push(`${context}: clock reading parentPrompt should ask about 分针/长针 and 时针/短针 evidence`);
     }
   }
   if (challenge.mode === "time-conversion") {
@@ -792,6 +796,10 @@ function checkClockTimeRoundQuality(round, context) {
       problems.push(`${context}: time-conversion choices should include the plausible 12-hour distractor`);
     }
     const contextText = `${round.success} ${round.retry} ${round.parentPrompt} ${round.difficultyNote ?? ""}`;
+    const conversionText = `${round.prompt} ${round.instruction} ${round.success} ${round.retry} ${round.parentPrompt} ${round.choices.map((choice) => choice.label).join(" ")} ${challenge.label}`;
+    if (/\d+\s*点半|\d+\s*点|点半|半点|几点/.test(conversionText)) {
+      problems.push(`${context}: time-conversion text should use HH:MM numeric time instead of 点/点半/半点 wording`);
+    }
     if (!/24|电子钟|一天|场景|图|早餐|午饭|午睡|晚饭|洗澡|活动/.test(contextText)) {
       problems.push(`${context}: time-conversion feedback should explain scene evidence and 24-hour time`);
     }

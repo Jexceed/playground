@@ -28,7 +28,9 @@ conditions occur:
 - Fewer than four whole-hour rounds, fewer than four half-hour rounds, or fewer
   than four time-conversion rounds exist.
 - A clock round answer is missing from choices or appears more than once.
-- A clock reading round's feedback does not name `长针` and `短针`.
+- A clock reading round's feedback does not name `分针/长针` and `时针/短针`.
+- A clock reading or time-conversion round uses `点` or `点半` wording instead
+  of `HH:MM` numeric time labels.
 - A time-conversion round lacks a registered scene image, leaks day-part labels
   before answering, has non-`HH:MM` choices, or does not explain scene evidence
   and 24-hour electronic clock time.

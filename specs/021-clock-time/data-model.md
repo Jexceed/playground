@@ -8,7 +8,7 @@
 - `subtitle`: child-facing summary of reading clock hands and electronic clock time
 - `goal`: parent-facing learning objective
 - `parentPrompt`: global parent prompt for the game
-- `abilityTags`: includes `认识时钟`, `整点半点`, and `24小时制`
+- `abilityTags`: includes `认识时钟`, `00分30分`, and `24小时制`
 - `rounds`: exactly 12 Clock Rounds
 
 ## Clock Round
@@ -38,7 +38,9 @@
 
 - `clockChallenge.minute` must be 0 or 30.
 - `read-time` rounds must have success, retry, and parent prompts naming both
-  `长针` and `短针`.
+  `分针（长针）` and `时针（短针）`.
+- Clock round prompts, choices, visible labels, feedback, and parent prompts
+  should use `HH:MM` numeric time labels instead of `点` or `点半` wording.
 - `time-conversion` rounds must include a registered 1200x675 scene image,
   `activity`, `HH:MM` choices, and feedback naming scene evidence plus 24-hour
   conversion.

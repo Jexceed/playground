@@ -115,10 +115,10 @@ export const games: GameConfig[] = [
     id: "math-clock-time",
     world: "math",
     title: "时钟小管家",
-    subtitle: "看长针和短针，读整点、半点，再把钟面时间写成电子钟时间。",
-    goal: "建立整点、半点和 12 小时到 24 小时制转换的基础理解。",
-    parentPrompt: "请她先说长针在哪里、短针在哪里，再结合图里的活动选电子钟时间。",
-    abilityTags: ["认识时钟", "整点半点", "24小时制"],
+    subtitle: "看分针和时针，读 07:00、07:30 这样的时间，再转换成电子钟时间。",
+    goal: "建立 00 分、30 分和 12 小时到 24 小时制转换的基础理解。",
+    parentPrompt: "请她先说分针（长针）在哪里、时针（短针）在哪里，再结合图里的活动选电子钟时间。",
+    abilityTags: ["认识时钟", "00分30分", "24小时制"],
     level: "L5",
     rounds: makeClockTimeRounds(),
   }),
@@ -513,7 +513,7 @@ function visualSurfaceText(round: RoundInput) {
   if (round.sceneImage && round.visualGroups) return "先看场景图，再用分组图卡比较条件。";
   if (round.sceneImage && round.clockChallenge) return "先看生活场景图，再用模拟时钟和电子钟时间互相核对。";
   if (round.sceneImage) return "主要从生活场景图里找证据。";
-  if (round.clockChallenge) return "看模拟时钟的长针、短针和生活活动线索来判断时间。";
+  if (round.clockChallenge) return "看模拟时钟的分针（长针）、时针（短针）和生活活动线索来判断时间。";
   if (round.memory) return `先记住 ${round.memory.items.length} 张图卡，遮住后再排除干扰项。`;
   if (round.grid) return `在 ${round.grid.rows.length} 行 x ${round.grid.columns.length} 列小地图中定位。`;
   if (round.matrix) return `在 ${round.matrix.cells.length} 行图形表里横向找规律，再纵向检查。`;
@@ -2515,14 +2515,14 @@ function makeBridgeRounds(): RoundInput[] {
 
 function makeClockTimeRounds(): RoundInput[] {
   const readCases = [
-    clockReadCase(7, 0, "7点", ["6点", "7点半"], "早上起床前后常会看到 7 点。"),
-    clockReadCase(9, 0, "9点", ["8点", "9点半"], "短针指到 9，长针指到 12。"),
-    clockReadCase(12, 0, "12点", ["1点", "12点半"], "短针指到 12，长针也指到 12。"),
-    clockReadCase(4, 0, "4点", ["5点", "4点半"], "短针指到 4，长针指到 12。"),
-    clockReadCase(3, 30, "3点半", ["3点", "4点半"], "长针指到 6，短针走过 3 但还没到 4。"),
-    clockReadCase(6, 30, "6点半", ["6点", "7点半"], "长针指到 6，短针在 6 和 7 中间。"),
-    clockReadCase(8, 30, "8点半", ["8点", "9点半"], "长针指到 6，短针在 8 和 9 中间。"),
-    clockReadCase(10, 30, "10点半", ["10点", "11点半"], "长针指到 6，短针在 10 和 11 中间。"),
+    clockReadCase(7, 0, "07:00", ["06:00", "07:30"], "生活里常会在 07:00 前后起床。"),
+    clockReadCase(9, 0, "09:00", ["08:00", "09:30"], "时针（短针）指到 9，分针（长针）指到 12。"),
+    clockReadCase(12, 0, "12:00", ["01:00", "12:30"], "时针（短针）指到 12，分针（长针）也指到 12。"),
+    clockReadCase(4, 0, "04:00", ["05:00", "04:30"], "时针（短针）指到 4，分针（长针）指到 12。"),
+    clockReadCase(3, 30, "03:30", ["03:00", "04:30"], "分针（长针）指到 6，时针（短针）走过 3 但还没到 4。"),
+    clockReadCase(6, 30, "06:30", ["06:00", "07:30"], "分针（长针）指到 6，时针（短针）在 6 和 7 中间。"),
+    clockReadCase(8, 30, "08:30", ["08:00", "09:30"], "分针（长针）指到 6，时针（短针）在 8 和 9 中间。"),
+    clockReadCase(10, 30, "10:30", ["10:00", "11:30"], "分针（长针）指到 6，时针（短针）在 10 和 11 中间。"),
   ];
 
   const conversionCases = [
@@ -2532,7 +2532,7 @@ function makeClockTimeRounds(): RoundInput[] {
       activity: "吃早餐",
       answer: "08:00",
       choices: ["08:00", "20:00", "18:00"],
-      clue: "图里在吃早餐，8 点写成电子钟时间是 08:00。",
+      clue: "图里在吃早餐，电子钟时间写作 08:00。",
       sceneImage: imageGallery.scenes.clockBreakfastMorning,
       level: "L4",
     }),
@@ -2542,7 +2542,7 @@ function makeClockTimeRounds(): RoundInput[] {
       activity: "吃午饭后准备睡午觉",
       answer: "12:30",
       choices: ["12:30", "00:30", "13:30"],
-      clue: "图里是吃完午饭准备午睡，12 点半写成电子钟时间还是 12:30。",
+      clue: "图里是吃完午饭准备午睡，电子钟时间写作 12:30。",
       sceneImage: imageGallery.scenes.clockLunchNapNoon,
       level: "L5",
     }),
@@ -2552,7 +2552,7 @@ function makeClockTimeRounds(): RoundInput[] {
       activity: "午睡后去玩",
       answer: "15:30",
       choices: ["15:30", "03:30", "13:30"],
-      clue: "图里是午睡后去玩，3 点半写成电子钟时间是 15:30。",
+      clue: "图里是午睡后去玩，电子钟时间写作 15:30。",
       sceneImage: imageGallery.scenes.clockNapPlayAfternoon,
       level: "L5",
     }),
@@ -2562,7 +2562,7 @@ function makeClockTimeRounds(): RoundInput[] {
       activity: "吃完晚饭准备洗澡",
       answer: "19:00",
       choices: ["19:00", "07:00", "17:00"],
-      clue: "图里是晚饭后准备洗澡，7 点写成电子钟时间是 19:00。",
+      clue: "图里是晚饭后准备洗澡，电子钟时间写作 19:00。",
       sceneImage: imageGallery.scenes.clockDinnerBathEvening,
       level: "L5",
     }),
@@ -2573,12 +2573,12 @@ function makeClockTimeRounds(): RoundInput[] {
 
 function clockReadCase(hour: number, minute: 0 | 30, answer: string, distractors: string[], extraClue: string): RoundInput {
   const handClue = minute === 0
-    ? `长针在 12，表示整点；短针指着 ${hour}。`
-    : `长针在 6，表示半点；短针走过 ${hour}，还没到 ${hour === 12 ? 1 : hour + 1}。`;
+    ? `分针（长针）在 12，表示 00 分；时针（短针）指着 ${hour}。`
+    : `分针（长针）在 6，表示 30 分；时针（短针）走过 ${hour}，还没到 ${hour === 12 ? 1 : hour + 1}。`;
   return {
     level: minute === 0 ? "L3" : "L4",
-    prompt: "这个时钟是几点？",
-    instruction: "先看长针，再看短针。",
+    prompt: "这个时钟显示哪个时间？",
+    instruction: "先看分针（长针），再看时针（短针）。",
     clockChallenge: {
       hour,
       minute,
@@ -2588,12 +2588,12 @@ function clockReadCase(hour: number, minute: 0 | 30, answer: string, distractors
     choices: choiceSet([answer, ...distractors]),
     answer,
     success: `${answer}对。${handClue}${extraClue}`,
-    retry: "先看长针：长针在 12 是整点，长针在 6 是半点；再看短针指到哪里或走过哪里。",
-    parentPrompt: "请她指着钟面说：长针在哪里？短针在哪里？所以为什么是这个时间？",
-    abilityTags: minute === 0 ? ["认识时钟", "整点"] : ["认识时钟", "半点"],
+    retry: "先看分针（长针）：分针在 12 表示 00 分，分针在 6 表示 30 分；再看时针（短针）指到哪里或走过哪里。",
+    parentPrompt: "请她指着钟面说：分针（长针）在哪里？时针（短针）在哪里？所以为什么是这个时间？",
+    abilityTags: minute === 0 ? ["认识时钟", "00分"] : ["认识时钟", "30分"],
     difficultyNote: minute === 0
-      ? "整点读钟：先判断长针在 12，再把短针指向的数字读成几点。"
-      : "半点读钟：需要知道长针在 6 表示半点，并判断短针已经走过哪个数字。",
+      ? "00 分读钟：先判断分针（长针）在 12，再把时针（短针）指向的数字读成 HH:MM。"
+      : "30 分读钟：需要知道分针（长针）在 6 表示 30 分，并判断时针（短针）已经走过哪个数字。",
   };
 }
 
@@ -2607,7 +2607,7 @@ function clockTimeConversionCase(input: {
   sceneImage: NonNullable<RoundInput["sceneImage"]>;
   level: AbilityLevel;
 }): RoundInput {
-  const timeLabel = `${input.hour}点${input.minute === 30 ? "半" : ""}`;
+  const timeLabel = formatClockTime(input.hour, input.minute);
   const plainTime = `${String(input.hour).padStart(2, "0")}:${String(input.minute).padStart(2, "0")}`;
   return {
     level: input.level,
@@ -2623,12 +2623,16 @@ function clockTimeConversionCase(input: {
     },
     choices: choiceSet(input.choices),
     answer: input.answer,
-    success: `${input.answer}对。时钟是${timeLabel}，${input.clue}`,
-    retry: `先读钟面是${timeLabel}，再看图里的活动。不要只选 ${plainTime}，要想它在一天里应该写成哪一个 24 小时电子钟时间。`,
-    parentPrompt: `问她：钟面读作${timeLabel}，图里在${input.activity}，为什么电子钟要选${input.answer}？`,
+    success: `${input.answer}对。先把钟面读作 ${timeLabel}，再看图里的活动，${input.clue}`,
+    retry: `先把钟面读作 ${timeLabel}，再看图里的活动。不要只选 ${plainTime}，要想它在一天里应该写成哪一个 24 小时电子钟时间。`,
+    parentPrompt: `问她：钟面读作 ${timeLabel}，图里在${input.activity}，为什么电子钟要选 ${input.answer}？`,
     abilityTags: ["24小时制", "生活时间"],
     difficultyNote: "12 小时到 24 小时转换：同一个钟面数字可能对应两个电子钟时间，需要结合场景判断。",
   };
+}
+
+function formatClockTime(hour: number, minute: 0 | 30): string {
+  return `${String(hour).padStart(2, "0")}:${String(minute).padStart(2, "0")}`;
 }
 
 function makeSameKindRounds(): RoundInput[] {

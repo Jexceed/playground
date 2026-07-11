@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-09T11:34:29.299Z",
+  "generatedAt": "2026-07-11T05:11:56.700Z",
   "recommendedVoice": "warm adult female Mandarin, smiling, preschool teacher, 0.85 speed, crisp consonants",
-  "lineCount": 1803,
+  "lineCount": 1799,
   "lines": [
     {
       "id": "game-title-数一数",
@@ -4674,18 +4674,18 @@
       ]
     },
     {
-      "id": "game-goal-建立整点-半点和-12-小时到-24-小时制转换的基础理解",
+      "id": "game-goal-建立-00-分-30-分和-12-小时到-24-小时制转换的基础理解",
       "kind": "game-goal",
-      "text": "建立整点、半点和 12 小时到 24 小时制转换的基础理解。",
+      "text": "建立 00 分、30 分和 12 小时到 24 小时制转换的基础理解。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "math-clock-time"
       ]
     },
     {
-      "id": "prompt-这个时钟是几点-先看长针-再看短针",
+      "id": "prompt-这个时钟显示哪个时间-先看分针-长针-再看时针-短针",
       "kind": "prompt",
-      "text": "这个时钟是几点？先看长针，再看短针。",
+      "text": "这个时钟显示哪个时间？先看分针（长针），再看时针（短针）。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "math-clock-time/math-clock-time-1",
@@ -4699,18 +4699,18 @@
       ]
     },
     {
-      "id": "success-7点对-长针在-12-表示整点-短针指着-7-早上起床前后常会看到-7-点",
+      "id": "success-07-00对-分针-长针-在-12-表示-00-分-时针-短针-指着-7-生活里常会在-07-00-前后起床",
       "kind": "success",
-      "text": "7点对。长针在 12，表示整点；短针指着 7。早上起床前后常会看到 7 点。",
+      "text": "07:00对。分针（长针）在 12，表示 00 分；时针（短针）指着 7。生活里常会在 07:00 前后起床。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "math-clock-time/math-clock-time-1"
       ]
     },
     {
-      "id": "retry-先看长针-长针在-12-是整点-长针在-6-是半点-再看短针指到哪里或走过哪里",
+      "id": "retry-先看分针-长针-分针在-12-表示-00-分-分针在-6-表示-30-分-再看时针-短针-指到哪里或走过哪里",
       "kind": "retry",
-      "text": "先看长针：长针在 12 是整点，长针在 6 是半点；再看短针指到哪里或走过哪里。",
+      "text": "先看分针（长针）：分针在 12 表示 00 分，分针在 6 表示 30 分；再看时针（短针）指到哪里或走过哪里。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
         "math-clock-time/math-clock-time-1",
@@ -4724,9 +4724,9 @@
       ]
     },
     {
-      "id": "parent-请她指着钟面说-长针在哪里-短针在哪里-所以为什么是这个时间",
+      "id": "parent-请她指着钟面说-分针-长针-在哪里-时针-短针-在哪里-所以为什么是这个时间",
       "kind": "parent",
-      "text": "请她指着钟面说：长针在哪里？短针在哪里？所以为什么是这个时间？",
+      "text": "请她指着钟面说：分针（长针）在哪里？时针（短针）在哪里？所以为什么是这个时间？",
       "tone": "friendly, clear, playful",
       "contexts": [
         "math-clock-time/math-clock-time-1",
@@ -4740,18 +4740,19 @@
       ]
     },
     {
-      "id": "choice-7点",
+      "id": "choice-07-00",
       "kind": "choice",
-      "text": "7点",
+      "text": "07:00",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "math-clock-time/math-clock-time-1"
+        "math-clock-time/math-clock-time-1",
+        "math-clock-time/math-clock-time-12"
       ]
     },
     {
-      "id": "choice-6点",
+      "id": "choice-06-00",
       "kind": "choice",
-      "text": "6点",
+      "text": "06:00",
       "tone": "friendly, clear, playful",
       "contexts": [
         "math-clock-time/math-clock-time-1",
@@ -4759,9 +4760,9 @@
       ]
     },
     {
-      "id": "choice-7点半",
+      "id": "choice-07-30",
       "kind": "choice",
-      "text": "7点半",
+      "text": "07:30",
       "tone": "friendly, clear, playful",
       "contexts": [
         "math-clock-time/math-clock-time-1",
@@ -4769,27 +4770,38 @@
       ]
     },
     {
-      "id": "success-9点对-长针在-12-表示整点-短针指着-9-短针指到-9-长针指到-12",
+      "id": "success-09-00对-分针-长针-在-12-表示-00-分-时针-短针-指着-9-时针-短针-指到-9-分针-长针-指到-12",
       "kind": "success",
-      "text": "9点对。长针在 12，表示整点；短针指着 9。短针指到 9，长针指到 12。",
+      "text": "09:00对。分针（长针）在 12，表示 00 分；时针（短针）指着 9。时针（短针）指到 9，分针（长针）指到 12。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "math-clock-time/math-clock-time-2"
       ]
     },
     {
-      "id": "choice-9点",
+      "id": "choice-09-00",
       "kind": "choice",
-      "text": "9点",
+      "text": "09:00",
       "tone": "friendly, clear, playful",
       "contexts": [
         "math-clock-time/math-clock-time-2"
       ]
     },
     {
-      "id": "choice-8点",
+      "id": "choice-08-00",
       "kind": "choice",
-      "text": "8点",
+      "text": "08:00",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-clock-time/math-clock-time-2",
+        "math-clock-time/math-clock-time-7",
+        "math-clock-time/math-clock-time-9"
+      ]
+    },
+    {
+      "id": "choice-09-30",
+      "kind": "choice",
+      "text": "09:30",
       "tone": "friendly, clear, playful",
       "contexts": [
         "math-clock-time/math-clock-time-2",
@@ -4797,82 +4809,73 @@
       ]
     },
     {
-      "id": "choice-9点半",
-      "kind": "choice",
-      "text": "9点半",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "math-clock-time/math-clock-time-2",
-        "math-clock-time/math-clock-time-7"
-      ]
-    },
-    {
-      "id": "success-12点对-长针在-12-表示整点-短针指着-12-短针指到-12-长针也指到-12",
+      "id": "success-12-00对-分针-长针-在-12-表示-00-分-时针-短针-指着-12-时针-短针-指到-12-分针-长针-也指到-12",
       "kind": "success",
-      "text": "12点对。长针在 12，表示整点；短针指着 12。短针指到 12，长针也指到 12。",
+      "text": "12:00对。分针（长针）在 12，表示 00 分；时针（短针）指着 12。时针（短针）指到 12，分针（长针）也指到 12。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "math-clock-time/math-clock-time-3"
       ]
     },
     {
-      "id": "choice-12点",
+      "id": "choice-12-00",
       "kind": "choice",
-      "text": "12点",
+      "text": "12:00",
       "tone": "friendly, clear, playful",
       "contexts": [
         "math-clock-time/math-clock-time-3"
       ]
     },
     {
-      "id": "choice-1点",
+      "id": "choice-01-00",
       "kind": "choice",
-      "text": "1点",
+      "text": "01:00",
       "tone": "friendly, clear, playful",
       "contexts": [
         "math-clock-time/math-clock-time-3"
       ]
     },
     {
-      "id": "choice-12点半",
+      "id": "choice-12-30",
       "kind": "choice",
-      "text": "12点半",
+      "text": "12:30",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "math-clock-time/math-clock-time-3"
+        "math-clock-time/math-clock-time-3",
+        "math-clock-time/math-clock-time-10"
       ]
     },
     {
-      "id": "success-4点对-长针在-12-表示整点-短针指着-4-短针指到-4-长针指到-12",
+      "id": "success-04-00对-分针-长针-在-12-表示-00-分-时针-短针-指着-4-时针-短针-指到-4-分针-长针-指到-12",
       "kind": "success",
-      "text": "4点对。长针在 12，表示整点；短针指着 4。短针指到 4，长针指到 12。",
+      "text": "04:00对。分针（长针）在 12，表示 00 分；时针（短针）指着 4。时针（短针）指到 4，分针（长针）指到 12。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "math-clock-time/math-clock-time-4"
       ]
     },
     {
-      "id": "choice-4点",
+      "id": "choice-04-00",
       "kind": "choice",
-      "text": "4点",
+      "text": "04:00",
       "tone": "friendly, clear, playful",
       "contexts": [
         "math-clock-time/math-clock-time-4"
       ]
     },
     {
-      "id": "choice-5点",
+      "id": "choice-05-00",
       "kind": "choice",
-      "text": "5点",
+      "text": "05:00",
       "tone": "friendly, clear, playful",
       "contexts": [
         "math-clock-time/math-clock-time-4"
       ]
     },
     {
-      "id": "choice-4点半",
+      "id": "choice-04-30",
       "kind": "choice",
-      "text": "4点半",
+      "text": "04:30",
       "tone": "friendly, clear, playful",
       "contexts": [
         "math-clock-time/math-clock-time-4",
@@ -4880,99 +4883,100 @@
       ]
     },
     {
-      "id": "success-3点半对-长针在-6-表示半点-短针走过-3-还没到-4-长针指到-6-短针走过-3-但还没到-4",
+      "id": "success-03-30对-分针-长针-在-6-表示-30-分-时针-短针-走过-3-还没到-4-分针-长针-指到-6-时针-短针-走过-3-但还没到-4",
       "kind": "success",
-      "text": "3点半对。长针在 6，表示半点；短针走过 3，还没到 4。长针指到 6，短针走过 3 但还没到 4。",
+      "text": "03:30对。分针（长针）在 6，表示 30 分；时针（短针）走过 3，还没到 4。分针（长针）指到 6，时针（短针）走过 3 但还没到 4。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "math-clock-time/math-clock-time-5"
       ]
     },
     {
-      "id": "choice-3点半",
+      "id": "choice-03-30",
       "kind": "choice",
-      "text": "3点半",
+      "text": "03:30",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-clock-time/math-clock-time-5",
+        "math-clock-time/math-clock-time-11"
+      ]
+    },
+    {
+      "id": "choice-03-00",
+      "kind": "choice",
+      "text": "03:00",
       "tone": "friendly, clear, playful",
       "contexts": [
         "math-clock-time/math-clock-time-5"
       ]
     },
     {
-      "id": "choice-3点",
-      "kind": "choice",
-      "text": "3点",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "math-clock-time/math-clock-time-5"
-      ]
-    },
-    {
-      "id": "success-6点半对-长针在-6-表示半点-短针走过-6-还没到-7-长针指到-6-短针在-6-和-7-中间",
+      "id": "success-06-30对-分针-长针-在-6-表示-30-分-时针-短针-走过-6-还没到-7-分针-长针-指到-6-时针-短针-在-6-和-7-中间",
       "kind": "success",
-      "text": "6点半对。长针在 6，表示半点；短针走过 6，还没到 7。长针指到 6，短针在 6 和 7 中间。",
+      "text": "06:30对。分针（长针）在 6，表示 30 分；时针（短针）走过 6，还没到 7。分针（长针）指到 6，时针（短针）在 6 和 7 中间。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "math-clock-time/math-clock-time-6"
       ]
     },
     {
-      "id": "choice-6点半",
+      "id": "choice-06-30",
       "kind": "choice",
-      "text": "6点半",
+      "text": "06:30",
       "tone": "friendly, clear, playful",
       "contexts": [
         "math-clock-time/math-clock-time-6"
       ]
     },
     {
-      "id": "success-8点半对-长针在-6-表示半点-短针走过-8-还没到-9-长针指到-6-短针在-8-和-9-中间",
+      "id": "success-08-30对-分针-长针-在-6-表示-30-分-时针-短针-走过-8-还没到-9-分针-长针-指到-6-时针-短针-在-8-和-9-中间",
       "kind": "success",
-      "text": "8点半对。长针在 6，表示半点；短针走过 8，还没到 9。长针指到 6，短针在 8 和 9 中间。",
+      "text": "08:30对。分针（长针）在 6，表示 30 分；时针（短针）走过 8，还没到 9。分针（长针）指到 6，时针（短针）在 8 和 9 中间。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "math-clock-time/math-clock-time-7"
       ]
     },
     {
-      "id": "choice-8点半",
+      "id": "choice-08-30",
       "kind": "choice",
-      "text": "8点半",
+      "text": "08:30",
       "tone": "friendly, clear, playful",
       "contexts": [
         "math-clock-time/math-clock-time-7"
       ]
     },
     {
-      "id": "success-10点半对-长针在-6-表示半点-短针走过-10-还没到-11-长针指到-6-短针在-10-和-11-中间",
+      "id": "success-10-30对-分针-长针-在-6-表示-30-分-时针-短针-走过-10-还没到-11-分针-长针-指到-6-时针-短针-在-10-和-11-中",
       "kind": "success",
-      "text": "10点半对。长针在 6，表示半点；短针走过 10，还没到 11。长针指到 6，短针在 10 和 11 中间。",
+      "text": "10:30对。分针（长针）在 6，表示 30 分；时针（短针）走过 10，还没到 11。分针（长针）指到 6，时针（短针）在 10 和 11 中间。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "math-clock-time/math-clock-time-8"
       ]
     },
     {
-      "id": "choice-10点半",
+      "id": "choice-10-30",
       "kind": "choice",
-      "text": "10点半",
+      "text": "10:30",
       "tone": "friendly, clear, playful",
       "contexts": [
         "math-clock-time/math-clock-time-8"
       ]
     },
     {
-      "id": "choice-10点",
+      "id": "choice-10-00",
       "kind": "choice",
-      "text": "10点",
+      "text": "10:00",
       "tone": "friendly, clear, playful",
       "contexts": [
         "math-clock-time/math-clock-time-8"
       ]
     },
     {
-      "id": "choice-11点半",
+      "id": "choice-11-30",
       "kind": "choice",
-      "text": "11点半",
+      "text": "11:30",
       "tone": "friendly, clear, playful",
       "contexts": [
         "math-clock-time/math-clock-time-8"
@@ -4991,36 +4995,27 @@
       ]
     },
     {
-      "id": "success-08-00对-时钟是8点-图里在吃早餐-8-点写成电子钟时间是-08-00",
+      "id": "success-08-00对-先把钟面读作-08-00-再看图里的活动-图里在吃早餐-电子钟时间写作-08-00",
       "kind": "success",
-      "text": "08:00对。时钟是8点，图里在吃早餐，8 点写成电子钟时间是 08:00。",
+      "text": "08:00对。先把钟面读作 08:00，再看图里的活动，图里在吃早餐，电子钟时间写作 08:00。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "math-clock-time/math-clock-time-9"
       ]
     },
     {
-      "id": "retry-先读钟面是8点-再看图里的活动-不要只选-08-00-要想它在一天里应该写成哪一个-24-小时电子钟时间",
+      "id": "retry-先把钟面读作-08-00-再看图里的活动-不要只选-08-00-要想它在一天里应该写成哪一个-24-小时电子钟时间",
       "kind": "retry",
-      "text": "先读钟面是8点，再看图里的活动。不要只选 08:00，要想它在一天里应该写成哪一个 24 小时电子钟时间。",
+      "text": "先把钟面读作 08:00，再看图里的活动。不要只选 08:00，要想它在一天里应该写成哪一个 24 小时电子钟时间。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
         "math-clock-time/math-clock-time-9"
       ]
     },
     {
-      "id": "parent-问她-钟面读作8点-图里在吃早餐-为什么电子钟要选08-00",
+      "id": "parent-问她-钟面读作-08-00-图里在吃早餐-为什么电子钟要选-08-00",
       "kind": "parent",
-      "text": "问她：钟面读作8点，图里在吃早餐，为什么电子钟要选08:00？",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "math-clock-time/math-clock-time-9"
-      ]
-    },
-    {
-      "id": "choice-08-00",
-      "kind": "choice",
-      "text": "08:00",
+      "text": "问她：钟面读作 08:00，图里在吃早餐，为什么电子钟要选 08:00？",
       "tone": "friendly, clear, playful",
       "contexts": [
         "math-clock-time/math-clock-time-9"
@@ -5045,36 +5040,27 @@
       ]
     },
     {
-      "id": "success-12-30对-时钟是12点半-图里是吃完午饭准备午睡-12-点半写成电子钟时间还是-12-30",
+      "id": "success-12-30对-先把钟面读作-12-30-再看图里的活动-图里是吃完午饭准备午睡-电子钟时间写作-12-30",
       "kind": "success",
-      "text": "12:30对。时钟是12点半，图里是吃完午饭准备午睡，12 点半写成电子钟时间还是 12:30。",
+      "text": "12:30对。先把钟面读作 12:30，再看图里的活动，图里是吃完午饭准备午睡，电子钟时间写作 12:30。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "math-clock-time/math-clock-time-10"
       ]
     },
     {
-      "id": "retry-先读钟面是12点半-再看图里的活动-不要只选-12-30-要想它在一天里应该写成哪一个-24-小时电子钟时间",
+      "id": "retry-先把钟面读作-12-30-再看图里的活动-不要只选-12-30-要想它在一天里应该写成哪一个-24-小时电子钟时间",
       "kind": "retry",
-      "text": "先读钟面是12点半，再看图里的活动。不要只选 12:30，要想它在一天里应该写成哪一个 24 小时电子钟时间。",
+      "text": "先把钟面读作 12:30，再看图里的活动。不要只选 12:30，要想它在一天里应该写成哪一个 24 小时电子钟时间。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
         "math-clock-time/math-clock-time-10"
       ]
     },
     {
-      "id": "parent-问她-钟面读作12点半-图里在吃午饭后准备睡午觉-为什么电子钟要选12-30",
+      "id": "parent-问她-钟面读作-12-30-图里在吃午饭后准备睡午觉-为什么电子钟要选-12-30",
       "kind": "parent",
-      "text": "问她：钟面读作12点半，图里在吃午饭后准备睡午觉，为什么电子钟要选12:30？",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "math-clock-time/math-clock-time-10"
-      ]
-    },
-    {
-      "id": "choice-12-30",
-      "kind": "choice",
-      "text": "12:30",
+      "text": "问她：钟面读作 12:30，图里在吃午饭后准备睡午觉，为什么电子钟要选 12:30？",
       "tone": "friendly, clear, playful",
       "contexts": [
         "math-clock-time/math-clock-time-10"
@@ -5100,27 +5086,27 @@
       ]
     },
     {
-      "id": "success-15-30对-时钟是3点半-图里是午睡后去玩-3-点半写成电子钟时间是-15-30",
+      "id": "success-15-30对-先把钟面读作-03-30-再看图里的活动-图里是午睡后去玩-电子钟时间写作-15-30",
       "kind": "success",
-      "text": "15:30对。时钟是3点半，图里是午睡后去玩，3 点半写成电子钟时间是 15:30。",
+      "text": "15:30对。先把钟面读作 03:30，再看图里的活动，图里是午睡后去玩，电子钟时间写作 15:30。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "math-clock-time/math-clock-time-11"
       ]
     },
     {
-      "id": "retry-先读钟面是3点半-再看图里的活动-不要只选-03-30-要想它在一天里应该写成哪一个-24-小时电子钟时间",
+      "id": "retry-先把钟面读作-03-30-再看图里的活动-不要只选-03-30-要想它在一天里应该写成哪一个-24-小时电子钟时间",
       "kind": "retry",
-      "text": "先读钟面是3点半，再看图里的活动。不要只选 03:30，要想它在一天里应该写成哪一个 24 小时电子钟时间。",
+      "text": "先把钟面读作 03:30，再看图里的活动。不要只选 03:30，要想它在一天里应该写成哪一个 24 小时电子钟时间。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
         "math-clock-time/math-clock-time-11"
       ]
     },
     {
-      "id": "parent-问她-钟面读作3点半-图里在午睡后去玩-为什么电子钟要选15-30",
+      "id": "parent-问她-钟面读作-03-30-图里在午睡后去玩-为什么电子钟要选-15-30",
       "kind": "parent",
-      "text": "问她：钟面读作3点半，图里在午睡后去玩，为什么电子钟要选15:30？",
+      "text": "问她：钟面读作 03:30，图里在午睡后去玩，为什么电子钟要选 15:30？",
       "tone": "friendly, clear, playful",
       "contexts": [
         "math-clock-time/math-clock-time-11"
@@ -5136,36 +5122,27 @@
       ]
     },
     {
-      "id": "choice-03-30",
-      "kind": "choice",
-      "text": "03:30",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "math-clock-time/math-clock-time-11"
-      ]
-    },
-    {
-      "id": "success-19-00对-时钟是7点-图里是晚饭后准备洗澡-7-点写成电子钟时间是-19-00",
+      "id": "success-19-00对-先把钟面读作-07-00-再看图里的活动-图里是晚饭后准备洗澡-电子钟时间写作-19-00",
       "kind": "success",
-      "text": "19:00对。时钟是7点，图里是晚饭后准备洗澡，7 点写成电子钟时间是 19:00。",
+      "text": "19:00对。先把钟面读作 07:00，再看图里的活动，图里是晚饭后准备洗澡，电子钟时间写作 19:00。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "math-clock-time/math-clock-time-12"
       ]
     },
     {
-      "id": "retry-先读钟面是7点-再看图里的活动-不要只选-07-00-要想它在一天里应该写成哪一个-24-小时电子钟时间",
+      "id": "retry-先把钟面读作-07-00-再看图里的活动-不要只选-07-00-要想它在一天里应该写成哪一个-24-小时电子钟时间",
       "kind": "retry",
-      "text": "先读钟面是7点，再看图里的活动。不要只选 07:00，要想它在一天里应该写成哪一个 24 小时电子钟时间。",
+      "text": "先把钟面读作 07:00，再看图里的活动。不要只选 07:00，要想它在一天里应该写成哪一个 24 小时电子钟时间。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
         "math-clock-time/math-clock-time-12"
       ]
     },
     {
-      "id": "parent-问她-钟面读作7点-图里在吃完晚饭准备洗澡-为什么电子钟要选19-00",
+      "id": "parent-问她-钟面读作-07-00-图里在吃完晚饭准备洗澡-为什么电子钟要选-19-00",
       "kind": "parent",
-      "text": "问她：钟面读作7点，图里在吃完晚饭准备洗澡，为什么电子钟要选19:00？",
+      "text": "问她：钟面读作 07:00，图里在吃完晚饭准备洗澡，为什么电子钟要选 19:00？",
       "tone": "friendly, clear, playful",
       "contexts": [
         "math-clock-time/math-clock-time-12"
@@ -5175,15 +5152,6 @@
       "id": "choice-19-00",
       "kind": "choice",
       "text": "19:00",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "math-clock-time/math-clock-time-12"
-      ]
-    },
-    {
-      "id": "choice-07-00",
-      "kind": "choice",
-      "text": "07:00",
       "tone": "friendly, clear, playful",
       "contexts": [
         "math-clock-time/math-clock-time-12"

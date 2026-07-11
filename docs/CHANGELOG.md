@@ -5,6 +5,10 @@ grouped by date.
 
 ## 2026-07-09
 
+- Corrected 时钟小管家 wording so 分针 is identified as the long hand and
+  时针 as the short hand, and changed clock labels, choices, feedback, parent
+  prompts, and local voice lines to use numeric `HH:MM` forms instead of
+  `点`/`点半` wording.
 - Reworked 时钟小管家生活场景题 from choosing 上午/下午/晚上 labels into
   12-hour analog clock to 24-hour electronic clock conversion, removed
   pre-answer day-part label leakage, and changed the scene-clock layout so the

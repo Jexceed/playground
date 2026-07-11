@@ -446,12 +446,12 @@ function RoundBoard({
 function ClockChallengeBoard({ challenge, hasSceneImage }: { challenge: NonNullable<GameRound["clockChallenge"]>; hasSceneImage: boolean }) {
   const minuteHand = clockHandEndpoint(challenge.minute * 6, 78);
   const hourHand = clockHandEndpoint(((challenge.hour % 12) + challenge.minute / 60) * 30, 50);
-  const label = challenge.minute === 0 ? `${challenge.hour} 点` : `${challenge.hour} 点半`;
+  const label = formatClockDisplay(challenge.hour, challenge.minute);
   const showContext = Boolean(challenge.activity && !hasSceneImage);
   return (
     <div className={`clock-challenge-board clock-mode-${challenge.mode} ${showContext ? "clock-with-context" : "clock-no-context"}`} aria-label={`时钟显示${label}`}>
       <div className="clock-card">
-        <svg className="clock-face" viewBox="0 0 240 240" role="img" aria-label={`长针在${challenge.minute === 0 ? "12" : "6"}，短针${challenge.minute === 0 ? `指向${challenge.hour}` : `在${challenge.hour}和${challenge.hour === 12 ? 1 : challenge.hour + 1}中间`}`}>
+        <svg className="clock-face" viewBox="0 0 240 240" role="img" aria-label={`分针也就是长针在${challenge.minute === 0 ? "12" : "6"}，时针也就是短针${challenge.minute === 0 ? `指向${challenge.hour}` : `在${challenge.hour}和${challenge.hour === 12 ? 1 : challenge.hour + 1}中间`}`}>
           <circle className="clock-rim" cx="120" cy="120" r="104" />
           <circle className="clock-inner" cx="120" cy="120" r="92" />
           {Array.from({ length: 60 }).map((_, index) => {
@@ -485,7 +485,7 @@ function ClockChallengeBoard({ challenge, hasSceneImage }: { challenge: NonNulla
         </svg>
         <div className="clock-caption">
           <strong>{challenge.label}</strong>
-          <span>{challenge.minute === 0 ? "长针在 12，看短针指到几。" : "长针在 6，是半点。"}</span>
+          <span>{challenge.minute === 0 ? "分针（长针）在 12，看时针（短针）。" : "分针（长针）在 6，再看时针（短针）。"}</span>
         </div>
       </div>
       {showContext && (
@@ -496,6 +496,10 @@ function ClockChallengeBoard({ challenge, hasSceneImage }: { challenge: NonNulla
       )}
     </div>
   );
+}
+
+function formatClockDisplay(hour: number, minute: 0 | 30) {
+  return `${String(hour).padStart(2, "0")}:${String(minute).padStart(2, "0")}`;
 }
 
 function clockLabelPosition(hour: number) {

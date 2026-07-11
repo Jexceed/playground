@@ -21,18 +21,20 @@ from the minute hand. If the child cannot explain which hand points where, later
 morning/afternoon questions become guessing.
 
 **Independent Test**: The new clock game can be opened from 数字岛, every early
-round shows a clear analog clock surface, and feedback names the short hand,
-long hand, and correct spoken time.
+round shows a clear analog clock surface, and feedback names the minute hand
+as the long hand, the hour hand as the short hand, and the correct `HH:MM`
+time.
 
 **Acceptance Scenarios**:
 
-1. **Given** the clock face shows the long hand at 12 and the short hand at 7,
-   **When** the child chooses "7 点", **Then** the success feedback explains
-   that the long hand at 12 means a whole hour and the short hand points to 7.
-2. **Given** the clock face shows the long hand at 6 and the short hand between
-   3 and 4, **When** the child chooses "3 点半", **Then** the success feedback
-   explains that the long hand at 6 means half past and the short hand has gone
-   past 3.
+1. **Given** the clock face shows the minute hand/long hand at 12 and the hour
+   hand/short hand at 7, **When** the child chooses "07:00", **Then** the
+   success feedback explains that the minute hand at 12 means `00` minutes and
+   the hour hand points to 7.
+2. **Given** the clock face shows the minute hand/long hand at 6 and the hour
+   hand/short hand between 3 and 4, **When** the child chooses "03:30", **Then**
+   the success feedback explains that the minute hand at 6 means `30` minutes
+   and the hour hand has gone past 3.
 3. **Given** a child chooses a distractor, **When** retry guidance plays,
    **Then** it asks the child to check the long hand first and then the short
    hand, not to guess from the most noticeable number.
@@ -77,7 +79,7 @@ guidance text.
 
 **Why this priority**: The project treats audio and parent prompts as part of
 the learning surface. Clock reading needs spoken repetition so the child can say
-"长针在 12，短针在 7".
+"分针（长针）在 12，时针（短针）在 7".
 
 **Independent Test**: Exported voice lines include the new clock game text, the
 voice manifest is synchronized, and the curriculum audit rejects clock rounds
@@ -185,7 +187,8 @@ whose wording does not name the hand or daily-context evidence.
   least three choices with the answer appearing exactly once; time-conversion
   rounds additionally include a local scene image and `HH:MM` answer choices.
 - **SC-004**: Every whole-hour or half-hour round has success/retry/parent text
-  that names the long hand and short hand evidence.
+  that names the minute hand/long hand and hour hand/short hand evidence, and
+  uses `HH:MM` time labels instead of `点` or `点半` wording.
 - **SC-005**: Every daily-context round has success/retry/parent text that names
   the activity scene and 24-hour electronic clock conversion.
 - **SC-006**: The curriculum audit reports zero problems after clock-time audit
