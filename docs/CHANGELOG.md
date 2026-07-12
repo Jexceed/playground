@@ -3,6 +3,30 @@
 All meaningful project changes should be recorded here. Keep entries factual and
 grouped by date.
 
+## 2026-07-12
+
+- Added deterministic per-game, per-choice-count answer placement so correct
+  positions are evenly distributed without runtime randomness; graphic choices
+  and their drawn A/B/C/D options now move together.
+- Expanded the curriculum audit to reject answer-position bias, repeated answer
+  positions, graphic choice/drawing misalignment, known answer-leaking wording,
+  proximity-as-proof evidence reasoning, minute-hand-first clock guidance,
+  nonstandard release voices, and unreferenced runtime voice files.
+- Reworked bridge and rotation instructions so they guide comparison without
+  stating the answer, and changed spilled-water tasks to inspect direct traces
+  around the event instead of treating the nearest character as responsible.
+- Changed 时钟小管家 prompts, feedback, retry guidance, parent prompts,
+  difficulty notes, visible hints, and accessible clock descriptions to inspect
+  时针（短针） before 分针（长针）.
+- Regenerated the curriculum voice pack as 1,801/1,801 Edge
+  `zh-CN-XiaoxiaoNeural` entries with zero failures, and regenerated the
+  dedicated launch sound from the same voice family.
+- Added a tested dry-run/write-mode voice pruning workflow and removed 830
+  manifest-unreferenced Edge/macOS files; the runtime voice directory now
+  contains exactly the 1,801 files referenced by the active manifest.
+- Added Spec Kit feature `022-curriculum-integrity` with the audit contract,
+  voice policy, implementation tasks, and end-to-end verification guide.
+
 ## 2026-07-09
 
 - Corrected 时钟小管家 wording so 分针 is identified as the long hand and

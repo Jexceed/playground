@@ -33,12 +33,20 @@
 
 - 当前可审计语音包可以来自三条链路：Edge TTS 固定声库、`local-tts/GENERATION.md` 描述的本地 F5-TTS 参考音色生成，或在 Edge 网络不可用时用 `generate:mac-voices -- --merge-existing` 补齐缺失条目的 macOS 本地兜底。
 - 如果使用 Edge TTS，优先用更清楚的 `zh-CN-XiaoxiaoNeural`；不要混用多个 Edge voice。
+- 最终发布包必须回到完整的 Edge `zh-CN-XiaoxiaoNeural` manifest；F5、macOS 或 `mixed local` 只允许作为生成受阻时的临时状态。
 - 题库文案变更后必须运行：
 
 ```bash
 pnpm export:voice-lines
 pnpm generate:edge-voices -- --voice zh-CN-XiaoxiaoNeural --rate -12% --pitch +2Hz --python ./local-tts/.venv/bin/python --quiet --retries 3
+pnpm prune:voice-assets -- --write
 ```
+
+- `pnpm prune:voice-assets` 默认只报告 manifest 未引用文件；确认 manifest 的
+  `count === requestedCount` 且 `failures` 为空后，才使用 `--write` 删除。
+- 删除后再次运行无参数命令，`orphanCount` 必须为 0。
+- 启动页品牌音不进入课程 manifest；当前活动源和生成参数记录在
+  `references/audio/launch-brand-shout/README.md`。
 
 - 如果使用 F5-TTS，必须先准备 3-15 秒清晰参考音频和完全准确的参考文本，再运行：
 

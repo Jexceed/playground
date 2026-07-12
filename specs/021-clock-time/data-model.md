@@ -37,8 +37,8 @@
 ## Validation Rules
 
 - `clockChallenge.minute` must be 0 or 30.
-- `read-time` rounds must have success, retry, and parent prompts naming both
-  `分针（长针）` and `时针（短针）`.
+- `read-time` rounds must have instruction, success, retry, parent prompt, and
+  difficulty note naming `时针（短针）` before `分针（长针）`.
 - Clock round prompts, choices, visible labels, feedback, and parent prompts
   should use `HH:MM` numeric time labels instead of `点` or `点半` wording.
 - `time-conversion` rounds must include a registered 1200x675 scene image,

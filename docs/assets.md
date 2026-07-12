@@ -47,13 +47,22 @@ gallery entry.
 - The active local voice pack is described by `public/audio/voice/manifest.json`.
 - Generated voice files live under `public/audio/voice/<locale>/<voice-id>/`.
 - Browser TTS is only a fallback when a local voice file is missing.
+- The release manifest uses only Edge `zh-CN-XiaoxiaoNeural`; macOS or mixed
+  manifests are temporary recovery states and must be replaced before release.
+- The launch brand sound is generated separately and its active Xiaoxiao source
+  is documented under `references/audio/launch-brand-shout/`.
 
 After changing any prompt, instruction, choice, feedback, or parent prompt, run:
 
 ```bash
 pnpm export:voice-lines
 pnpm generate:edge-voices -- --voice zh-CN-XiaoxiaoNeural --rate -12% --pitch +2Hz --python ./local-tts/.venv/bin/python --quiet --retries 3
+pnpm prune:voice-assets -- --write
 ```
+
+Run `pnpm prune:voice-assets` without `--write` to preview stale generated files.
+Pruning only operates below `public/audio/voice/zh-CN/` and preserves every
+manifest entry and segment entry.
 
 ## Required Checks
 
@@ -65,5 +74,6 @@ pnpm audit:curriculum
 ```
 
 The audit must confirm registered images exist, scene images are 1200x675, voice
-manifest entries match exported voice lines, and no generated voice failures are
-present.
+manifest entries match exported voice lines, the provider/voice match the
+release standard, no failures are present, and no unreferenced runtime voice
+files remain.

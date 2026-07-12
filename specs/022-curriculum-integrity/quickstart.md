@@ -39,3 +39,18 @@ Expected: static build, NAS package, signed Mac app, and installation succeed.
 - A spilled-water round must ask where to seek evidence, not who is nearest.
 - Relaunch and compare brand sound with curriculum narrator family.
 
+## Verification Record: 2026-07-12
+
+- Curriculum: 40 games, 489 rounds, 0 audit problems.
+- Correct answer positions across all rounds: 163 / 157 / 152 / 17. The fourth
+  position applies only to four-choice rounds; every game/choice-count bucket
+  has max-minus-min <= 1.
+- Voice: 1,801 exported lines, 1,801 requested manifest entries, 1,801 generated
+  files, 0 failures, Edge `zh-CN-XiaoxiaoNeural` at `-12%` and `+2Hz`.
+- Pruning: 830 unreferenced files removed; second dry run found 0.
+- Tests: 3 voice-pruning, 4 speech-navigation, and 2 release tests passed.
+- Browser production preview confirmed hour-hand-first wording and the first
+  three clock answers in positions 1, 2, and 3; graphic round 2 rendered its
+  rabbit answer at B with the drawing and label aligned.
+- `pnpm build`, `pnpm release:nas`, `pnpm mac:install`, app launch, and installed
+  app signature verification succeeded.

@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-11T05:11:56.700Z",
+  "generatedAt": "2026-07-12T16:22:13.945Z",
   "recommendedVoice": "warm adult female Mandarin, smiling, preschool teacher, 0.85 speed, crisp consonants",
-  "lineCount": 1799,
+  "lineCount": 1801,
   "lines": [
     {
       "id": "game-title-数一数",
@@ -2759,9 +2759,9 @@
       ]
     },
     {
-      "id": "choice-左边加-1-个",
+      "id": "choice-右边加-1-个",
       "kind": "choice",
-      "text": "左边加 1 个",
+      "text": "右边加 1 个",
       "tone": "friendly, clear, playful",
       "contexts": [
         "math-compare-equalize/math-compare-equalize-8",
@@ -2769,9 +2769,9 @@
       ]
     },
     {
-      "id": "choice-右边加-1-个",
+      "id": "choice-左边加-1-个",
       "kind": "choice",
-      "text": "右边加 1 个",
+      "text": "左边加 1 个",
       "tone": "friendly, clear, playful",
       "contexts": [
         "math-compare-equalize/math-compare-equalize-8",
@@ -4436,19 +4436,6 @@
       ]
     },
     {
-      "id": "choice-12",
-      "kind": "choice",
-      "text": "12",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "math-group-counting/math-group-counting-6",
-        "math-group-counting/math-group-counting-8",
-        "logic-number-pattern-trail/logic-number-pattern-trail-12",
-        "logic-number-pattern-trail/logic-number-pattern-trail-14",
-        "logic-number-pattern-trail/logic-number-pattern-trail-15"
-      ]
-    },
-    {
       "id": "choice-13",
       "kind": "choice",
       "text": "13",
@@ -4458,6 +4445,19 @@
         "math-group-counting/math-group-counting-8",
         "logic-number-pattern-trail/logic-number-pattern-trail-12",
         "logic-number-pattern-trail/logic-number-pattern-trail-13",
+        "logic-number-pattern-trail/logic-number-pattern-trail-14",
+        "logic-number-pattern-trail/logic-number-pattern-trail-15"
+      ]
+    },
+    {
+      "id": "choice-12",
+      "kind": "choice",
+      "text": "12",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-group-counting/math-group-counting-6",
+        "math-group-counting/math-group-counting-8",
+        "logic-number-pattern-trail/logic-number-pattern-trail-12",
         "logic-number-pattern-trail/logic-number-pattern-trail-14",
         "logic-number-pattern-trail/logic-number-pattern-trail-15"
       ]
@@ -4683,9 +4683,9 @@
       ]
     },
     {
-      "id": "prompt-这个时钟显示哪个时间-先看分针-长针-再看时针-短针",
+      "id": "prompt-这个时钟显示哪个时间-先看时针-短针-确定小时数-再看分针-长针-确定分钟",
       "kind": "prompt",
-      "text": "这个时钟显示哪个时间？先看分针（长针），再看时针（短针）。",
+      "text": "这个时钟显示哪个时间？先看时针（短针）确定小时数，再看分针（长针）确定分钟。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "math-clock-time/math-clock-time-1",
@@ -4699,18 +4699,18 @@
       ]
     },
     {
-      "id": "success-07-00对-分针-长针-在-12-表示-00-分-时针-短针-指着-7-生活里常会在-07-00-前后起床",
+      "id": "success-07-00对-时针-短针-指着-7-分针-长针-在-12-表示-00-分-生活里常会在-07-00-前后起床",
       "kind": "success",
-      "text": "07:00对。分针（长针）在 12，表示 00 分；时针（短针）指着 7。生活里常会在 07:00 前后起床。",
+      "text": "07:00对。时针（短针）指着 7；分针（长针）在 12，表示 00 分。生活里常会在 07:00 前后起床。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "math-clock-time/math-clock-time-1"
       ]
     },
     {
-      "id": "retry-先看分针-长针-分针在-12-表示-00-分-分针在-6-表示-30-分-再看时针-短针-指到哪里或走过哪里",
+      "id": "retry-先看时针-短针-指到哪里或走过哪里-确定小时数-再看分针-长针-分针在-12-表示-00-分-在-6-表示-30-分",
       "kind": "retry",
-      "text": "先看分针（长针）：分针在 12 表示 00 分，分针在 6 表示 30 分；再看时针（短针）指到哪里或走过哪里。",
+      "text": "先看时针（短针）指到哪里或走过哪里，确定小时数；再看分针（长针），分针在 12 表示 00 分，在 6 表示 30 分。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
         "math-clock-time/math-clock-time-1",
@@ -4724,9 +4724,9 @@
       ]
     },
     {
-      "id": "parent-请她指着钟面说-分针-长针-在哪里-时针-短针-在哪里-所以为什么是这个时间",
+      "id": "parent-请她指着钟面说-时针-短针-在哪里-分针-长针-在哪里-所以为什么是这个时间",
       "kind": "parent",
-      "text": "请她指着钟面说：分针（长针）在哪里？时针（短针）在哪里？所以为什么是这个时间？",
+      "text": "请她指着钟面说：时针（短针）在哪里？分针（长针）在哪里？所以为什么是这个时间？",
       "tone": "friendly, clear, playful",
       "contexts": [
         "math-clock-time/math-clock-time-1",
@@ -4770,19 +4770,10 @@
       ]
     },
     {
-      "id": "success-09-00对-分针-长针-在-12-表示-00-分-时针-短针-指着-9-时针-短针-指到-9-分针-长针-指到-12",
+      "id": "success-09-00对-时针-短针-指着-9-分针-长针-在-12-表示-00-分-时针-短针-指到-9-分针-长针-指到-12",
       "kind": "success",
-      "text": "09:00对。分针（长针）在 12，表示 00 分；时针（短针）指着 9。时针（短针）指到 9，分针（长针）指到 12。",
+      "text": "09:00对。时针（短针）指着 9；分针（长针）在 12，表示 00 分。时针（短针）指到 9，分针（长针）指到 12。",
       "tone": "warm, delighted, clear",
-      "contexts": [
-        "math-clock-time/math-clock-time-2"
-      ]
-    },
-    {
-      "id": "choice-09-00",
-      "kind": "choice",
-      "text": "09:00",
-      "tone": "friendly, clear, playful",
       "contexts": [
         "math-clock-time/math-clock-time-2"
       ]
@@ -4799,6 +4790,15 @@
       ]
     },
     {
+      "id": "choice-09-00",
+      "kind": "choice",
+      "text": "09:00",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-clock-time/math-clock-time-2"
+      ]
+    },
+    {
       "id": "choice-09-30",
       "kind": "choice",
       "text": "09:30",
@@ -4809,19 +4809,10 @@
       ]
     },
     {
-      "id": "success-12-00对-分针-长针-在-12-表示-00-分-时针-短针-指着-12-时针-短针-指到-12-分针-长针-也指到-12",
+      "id": "success-12-00对-时针-短针-指着-12-分针-长针-在-12-表示-00-分-时针-短针-指到-12-分针-长针-也指到-12",
       "kind": "success",
-      "text": "12:00对。分针（长针）在 12，表示 00 分；时针（短针）指着 12。时针（短针）指到 12，分针（长针）也指到 12。",
+      "text": "12:00对。时针（短针）指着 12；分针（长针）在 12，表示 00 分。时针（短针）指到 12，分针（长针）也指到 12。",
       "tone": "warm, delighted, clear",
-      "contexts": [
-        "math-clock-time/math-clock-time-3"
-      ]
-    },
-    {
-      "id": "choice-12-00",
-      "kind": "choice",
-      "text": "12:00",
-      "tone": "friendly, clear, playful",
       "contexts": [
         "math-clock-time/math-clock-time-3"
       ]
@@ -4846,9 +4837,18 @@
       ]
     },
     {
-      "id": "success-04-00对-分针-长针-在-12-表示-00-分-时针-短针-指着-4-时针-短针-指到-4-分针-长针-指到-12",
+      "id": "choice-12-00",
+      "kind": "choice",
+      "text": "12:00",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-clock-time/math-clock-time-3"
+      ]
+    },
+    {
+      "id": "success-04-00对-时针-短针-指着-4-分针-长针-在-12-表示-00-分-时针-短针-指到-4-分针-长针-指到-12",
       "kind": "success",
-      "text": "04:00对。分针（长针）在 12，表示 00 分；时针（短针）指着 4。时针（短针）指到 4，分针（长针）指到 12。",
+      "text": "04:00对。时针（短针）指着 4；分针（长针）在 12，表示 00 分。时针（短针）指到 4，分针（长针）指到 12。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "math-clock-time/math-clock-time-4"
@@ -4883,10 +4883,19 @@
       ]
     },
     {
-      "id": "success-03-30对-分针-长针-在-6-表示-30-分-时针-短针-走过-3-还没到-4-分针-长针-指到-6-时针-短针-走过-3-但还没到-4",
+      "id": "success-03-30对-时针-短针-走过-3-还没到-4-分针-长针-在-6-表示-30-分-时针-短针-走过-3-但还没到-4-分针-长针-指到-6",
       "kind": "success",
-      "text": "03:30对。分针（长针）在 6，表示 30 分；时针（短针）走过 3，还没到 4。分针（长针）指到 6，时针（短针）走过 3 但还没到 4。",
+      "text": "03:30对。时针（短针）走过 3，还没到 4；分针（长针）在 6，表示 30 分。时针（短针）走过 3 但还没到 4，分针（长针）指到 6。",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "math-clock-time/math-clock-time-5"
+      ]
+    },
+    {
+      "id": "choice-03-00",
+      "kind": "choice",
+      "text": "03:00",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "math-clock-time/math-clock-time-5"
       ]
@@ -4902,18 +4911,9 @@
       ]
     },
     {
-      "id": "choice-03-00",
-      "kind": "choice",
-      "text": "03:00",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "math-clock-time/math-clock-time-5"
-      ]
-    },
-    {
-      "id": "success-06-30对-分针-长针-在-6-表示-30-分-时针-短针-走过-6-还没到-7-分针-长针-指到-6-时针-短针-在-6-和-7-中间",
+      "id": "success-06-30对-时针-短针-走过-6-还没到-7-分针-长针-在-6-表示-30-分-时针-短针-在-6-和-7-中间-分针-长针-指到-6",
       "kind": "success",
-      "text": "06:30对。分针（长针）在 6，表示 30 分；时针（短针）走过 6，还没到 7。分针（长针）指到 6，时针（短针）在 6 和 7 中间。",
+      "text": "06:30对。时针（短针）走过 6，还没到 7；分针（长针）在 6，表示 30 分。时针（短针）在 6 和 7 中间，分针（长针）指到 6。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "math-clock-time/math-clock-time-6"
@@ -4929,9 +4929,9 @@
       ]
     },
     {
-      "id": "success-08-30对-分针-长针-在-6-表示-30-分-时针-短针-走过-8-还没到-9-分针-长针-指到-6-时针-短针-在-8-和-9-中间",
+      "id": "success-08-30对-时针-短针-走过-8-还没到-9-分针-长针-在-6-表示-30-分-时针-短针-在-8-和-9-中间-分针-长针-指到-6",
       "kind": "success",
-      "text": "08:30对。分针（长针）在 6，表示 30 分；时针（短针）走过 8，还没到 9。分针（长针）指到 6，时针（短针）在 8 和 9 中间。",
+      "text": "08:30对。时针（短针）走过 8，还没到 9；分针（长针）在 6，表示 30 分。时针（短针）在 8 和 9 中间，分针（长针）指到 6。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "math-clock-time/math-clock-time-7"
@@ -4947,19 +4947,10 @@
       ]
     },
     {
-      "id": "success-10-30对-分针-长针-在-6-表示-30-分-时针-短针-走过-10-还没到-11-分针-长针-指到-6-时针-短针-在-10-和-11-中",
+      "id": "success-10-30对-时针-短针-走过-10-还没到-11-分针-长针-在-6-表示-30-分-时针-短针-在-10-和-11-中间-分针-长针-指到-",
       "kind": "success",
-      "text": "10:30对。分针（长针）在 6，表示 30 分；时针（短针）走过 10，还没到 11。分针（长针）指到 6，时针（短针）在 10 和 11 中间。",
+      "text": "10:30对。时针（短针）走过 10，还没到 11；分针（长针）在 6，表示 30 分。时针（短针）在 10 和 11 中间，分针（长针）指到 6。",
       "tone": "warm, delighted, clear",
-      "contexts": [
-        "math-clock-time/math-clock-time-8"
-      ]
-    },
-    {
-      "id": "choice-10-30",
-      "kind": "choice",
-      "text": "10:30",
-      "tone": "friendly, clear, playful",
       "contexts": [
         "math-clock-time/math-clock-time-8"
       ]
@@ -4968,6 +4959,15 @@
       "id": "choice-10-00",
       "kind": "choice",
       "text": "10:00",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-clock-time/math-clock-time-8"
+      ]
+    },
+    {
+      "id": "choice-10-30",
+      "kind": "choice",
+      "text": "10:30",
       "tone": "friendly, clear, playful",
       "contexts": [
         "math-clock-time/math-clock-time-8"
@@ -5149,18 +5149,18 @@
       ]
     },
     {
-      "id": "choice-19-00",
+      "id": "choice-17-00",
       "kind": "choice",
-      "text": "19:00",
+      "text": "17:00",
       "tone": "friendly, clear, playful",
       "contexts": [
         "math-clock-time/math-clock-time-12"
       ]
     },
     {
-      "id": "choice-17-00",
+      "id": "choice-19-00",
       "kind": "choice",
-      "text": "17:00",
+      "text": "19:00",
       "tone": "friendly, clear, playful",
       "contexts": [
         "math-clock-time/math-clock-time-12"
@@ -6137,9 +6137,9 @@
       ]
     },
     {
-      "id": "choice-圆形篮子",
+      "id": "choice-方形篮子",
       "kind": "choice",
-      "text": "圆形篮子",
+      "text": "方形篮子",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-sorter-switch/logic-sorter-switch-3",
@@ -6151,9 +6151,9 @@
       ]
     },
     {
-      "id": "choice-方形篮子",
+      "id": "choice-圆形篮子",
       "kind": "choice",
-      "text": "方形篮子",
+      "text": "圆形篮子",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-sorter-switch/logic-sorter-switch-3",
@@ -6850,18 +6850,18 @@
       ]
     },
     {
-      "id": "choice-先找钥匙",
+      "id": "choice-先推门",
       "kind": "choice",
-      "text": "先找钥匙",
+      "text": "先推门",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-2"
       ]
     },
     {
-      "id": "choice-先推门",
+      "id": "choice-先找钥匙",
       "kind": "choice",
-      "text": "先推门",
+      "text": "先找钥匙",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-2"
@@ -6940,15 +6940,6 @@
       ]
     },
     {
-      "id": "choice-轻轻放回水里",
-      "kind": "choice",
-      "text": "轻轻放回水里",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-order-plan/logic-order-plan-3"
-      ]
-    },
-    {
       "id": "choice-继续看着",
       "kind": "choice",
       "text": "继续看着",
@@ -6961,6 +6952,15 @@
       "id": "choice-拿杯子接水",
       "kind": "choice",
       "text": "拿杯子接水",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-3"
+      ]
+    },
+    {
+      "id": "choice-轻轻放回水里",
+      "kind": "choice",
+      "text": "轻轻放回水里",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-3"
@@ -7127,6 +7127,18 @@
       ]
     },
     {
+      "id": "choice-先拿饼干",
+      "kind": "choice",
+      "text": "先拿饼干",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-5",
+        "logic-order-plan/logic-order-plan-17",
+        "logic-order-plan/logic-order-plan-24",
+        "logic-priority-choice/logic-priority-choice-1"
+      ]
+    },
+    {
       "id": "choice-先洗手",
       "kind": "choice",
       "text": "先洗手",
@@ -7136,18 +7148,6 @@
         "logic-order-plan/logic-order-plan-10",
         "logic-order-plan/logic-order-plan-17",
         "logic-condition-detective/logic-condition-detective-1",
-        "logic-priority-choice/logic-priority-choice-1"
-      ]
-    },
-    {
-      "id": "choice-先拿饼干",
-      "kind": "choice",
-      "text": "先拿饼干",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-order-plan/logic-order-plan-5",
-        "logic-order-plan/logic-order-plan-17",
-        "logic-order-plan/logic-order-plan-24",
         "logic-priority-choice/logic-priority-choice-1"
       ]
     },
@@ -7248,16 +7248,6 @@
       ]
     },
     {
-      "id": "choice-先捡积木",
-      "kind": "choice",
-      "text": "先捡积木",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-order-plan/logic-order-plan-6",
-        "logic-order-plan/logic-order-plan-21"
-      ]
-    },
-    {
       "id": "choice-先搭高塔",
       "kind": "choice",
       "text": "先搭高塔",
@@ -7276,6 +7266,16 @@
         "logic-order-plan/logic-order-plan-6",
         "logic-order-plan/logic-order-plan-12",
         "logic-order-plan/logic-order-plan-24"
+      ]
+    },
+    {
+      "id": "choice-先捡积木",
+      "kind": "choice",
+      "text": "先捡积木",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-6",
+        "logic-order-plan/logic-order-plan-21"
       ]
     },
     {
@@ -7449,6 +7449,16 @@
       ]
     },
     {
+      "id": "choice-直接走过去",
+      "kind": "choice",
+      "text": "直接走过去",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-8",
+        "logic-order-plan/logic-order-plan-20"
+      ]
+    },
+    {
       "id": "choice-先看灯",
       "kind": "choice",
       "text": "先看灯",
@@ -7457,16 +7467,6 @@
         "logic-order-plan/logic-order-plan-8",
         "logic-order-plan/logic-order-plan-20",
         "logic-priority-choice/logic-priority-choice-2"
-      ]
-    },
-    {
-      "id": "choice-直接走过去",
-      "kind": "choice",
-      "text": "直接走过去",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-order-plan/logic-order-plan-8",
-        "logic-order-plan/logic-order-plan-20"
       ]
     },
     {
@@ -7676,6 +7676,15 @@
       ]
     },
     {
+      "id": "choice-先走进水里",
+      "kind": "choice",
+      "text": "先走进水里",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-11"
+      ]
+    },
+    {
       "id": "choice-先搭桥",
       "kind": "choice",
       "text": "先搭桥",
@@ -7686,15 +7695,6 @@
         "logic-condition-detective/logic-condition-detective-7",
         "logic-fix-plan/logic-fix-plan-7",
         "logic-priority-choice/logic-priority-choice-5"
-      ]
-    },
-    {
-      "id": "choice-先走进水里",
-      "kind": "choice",
-      "text": "先走进水里",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-order-plan/logic-order-plan-11"
       ]
     },
     {
@@ -7908,6 +7908,28 @@
       ]
     },
     {
+      "id": "choice-饭盒",
+      "kind": "choice",
+      "text": "饭盒",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-14",
+        "logic-rule-filter/rainy-day-raincoat",
+        "logic-rule-filter/need-drink",
+        "logic-rule-filter/lunch-box",
+        "logic-rule-filter/study-not-toy",
+        "logic-rule-filter/outside-not-food",
+        "logic-rule-filter/two-true-one-better",
+        "logic-relation-pairs/bottle-water",
+        "logic-relation-pairs/key-door",
+        "logic-relation-pairs/bottle-case-analogy",
+        "logic-relation-pairs/thirst-hungry",
+        "logic-relation-pairs/door-river-tool",
+        "logic-relation-pairs/two-containers",
+        "logic-relation-pairs/reverse-pair"
+      ]
+    },
+    {
       "id": "choice-书包",
       "kind": "choice",
       "text": "书包",
@@ -7935,28 +7957,6 @@
         "logic-difference-detective/logic-difference-detective-9",
         "logic-route-steps/logic-route-steps-3",
         "logic-route-steps/logic-route-steps-7"
-      ]
-    },
-    {
-      "id": "choice-饭盒",
-      "kind": "choice",
-      "text": "饭盒",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-order-plan/logic-order-plan-14",
-        "logic-rule-filter/rainy-day-raincoat",
-        "logic-rule-filter/need-drink",
-        "logic-rule-filter/lunch-box",
-        "logic-rule-filter/study-not-toy",
-        "logic-rule-filter/outside-not-food",
-        "logic-rule-filter/two-true-one-better",
-        "logic-relation-pairs/bottle-water",
-        "logic-relation-pairs/key-door",
-        "logic-relation-pairs/bottle-case-analogy",
-        "logic-relation-pairs/thirst-hungry",
-        "logic-relation-pairs/door-river-tool",
-        "logic-relation-pairs/two-containers",
-        "logic-relation-pairs/reverse-pair"
       ]
     },
     {
@@ -8046,23 +8046,6 @@
       ]
     },
     {
-      "id": "choice-雨衣",
-      "kind": "choice",
-      "text": "雨衣",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-order-plan/logic-order-plan-15",
-        "logic-rule-filter/school-day-book",
-        "logic-rule-filter/rainy-day-raincoat",
-        "logic-rule-filter/rain-and-wear",
-        "logic-rule-filter/small-hard-safe",
-        "logic-relation-pairs/pencil-case-pencil",
-        "logic-relation-pairs/bottle-case-analogy",
-        "logic-relation-pairs/sun-raincoat-analogy",
-        "logic-relation-pairs/reverse-pair"
-      ]
-    },
-    {
       "id": "choice-足球",
       "kind": "choice",
       "text": "足球",
@@ -8082,6 +8065,23 @@
         "logic-route-steps/logic-route-steps-1",
         "logic-route-steps/logic-route-steps-2",
         "logic-route-steps/logic-route-steps-5"
+      ]
+    },
+    {
+      "id": "choice-雨衣",
+      "kind": "choice",
+      "text": "雨衣",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-15",
+        "logic-rule-filter/school-day-book",
+        "logic-rule-filter/rainy-day-raincoat",
+        "logic-rule-filter/rain-and-wear",
+        "logic-rule-filter/small-hard-safe",
+        "logic-relation-pairs/pencil-case-pencil",
+        "logic-relation-pairs/bottle-case-analogy",
+        "logic-relation-pairs/sun-raincoat-analogy",
+        "logic-relation-pairs/reverse-pair"
       ]
     },
     {
@@ -8512,18 +8512,18 @@
       ]
     },
     {
-      "id": "choice-先浇水",
+      "id": "choice-先摘花",
       "kind": "choice",
-      "text": "先浇水",
+      "text": "先摘花",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-23"
       ]
     },
     {
-      "id": "choice-先摘花",
+      "id": "choice-先浇水",
       "kind": "choice",
-      "text": "先摘花",
+      "text": "先浇水",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-23"
@@ -8665,7 +8665,6 @@
         "logic-story-evidence/logic-story-evidence-1",
         "logic-story-evidence/logic-story-evidence-2",
         "logic-story-evidence/logic-story-evidence-4",
-        "logic-story-evidence/logic-story-evidence-5",
         "logic-condition-detective/logic-condition-detective-9",
         "logic-same-kind-detective/logic-same-kind-detective-10",
         "logic-address-map/logic-address-map-1",
@@ -8803,6 +8802,17 @@
       ]
     },
     {
+      "id": "choice-小猫肯定没偷吃",
+      "kind": "choice",
+      "text": "小猫肯定没偷吃",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-story-evidence/logic-story-evidence-3",
+        "logic-condition-detective/logic-condition-detective-8",
+        "logic-fix-plan/logic-fix-plan-8"
+      ]
+    },
+    {
       "id": "choice-还需要更多线索",
       "kind": "choice",
       "text": "还需要更多线索",
@@ -8812,17 +8822,6 @@
         "logic-story-evidence/logic-story-evidence-7",
         "logic-condition-detective/logic-condition-detective-8",
         "logic-condition-detective/logic-condition-detective-11",
-        "logic-fix-plan/logic-fix-plan-8"
-      ]
-    },
-    {
-      "id": "choice-小猫肯定没偷吃",
-      "kind": "choice",
-      "text": "小猫肯定没偷吃",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-story-evidence/logic-story-evidence-3",
-        "logic-condition-detective/logic-condition-detective-8",
         "logic-fix-plan/logic-fix-plan-8"
       ]
     },
@@ -8863,73 +8862,70 @@
       ]
     },
     {
-      "id": "prompt-谁最可能把水洒了-看水杯旁边的线索",
+      "id": "prompt-水杯倒了-想知道发生了什么-先去哪里找线索-先检查和水杯-地上水直接相连的地方",
       "kind": "prompt",
-      "text": "谁最可能把水洒了？看水杯旁边的线索。",
+      "text": "水杯倒了，想知道发生了什么，先去哪里找线索？先检查和水杯、地上水直接相连的地方。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-story-evidence/logic-story-evidence-5"
       ]
     },
     {
-      "id": "success-倒下的杯子在小熊旁边-所以小熊最可能碰到了",
+      "id": "success-先检查倒下的杯子周围有没有湿痕-脚印或碰倒的东西-角色站得近只说明这里值得观察-不能直接确定是谁碰倒的",
       "kind": "success",
-      "text": "倒下的杯子在小熊旁边，所以小熊最可能碰到了。",
+      "text": "先检查倒下的杯子周围有没有湿痕、脚印或碰倒的东西。角色站得近只说明这里值得观察，不能直接确定是谁碰倒的。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-story-evidence/logic-story-evidence-5"
       ]
     },
     {
-      "id": "retry-谁离倒下的杯子最近",
+      "id": "retry-先从事情发生的地方找直接痕迹-再判断这些痕迹能说明什么",
       "kind": "retry",
-      "text": "谁离倒下的杯子最近？",
+      "text": "先从事情发生的地方找直接痕迹，再判断这些痕迹能说明什么。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
         "logic-story-evidence/logic-story-evidence-5"
       ]
     },
     {
-      "id": "parent-问她-近的线索是不是比远的线索更有用",
+      "id": "parent-问她-杯子周围还可能留下什么痕迹-看到痕迹以后能马上确定是谁吗",
       "kind": "parent",
-      "text": "问她：近的线索是不是比远的线索更有用？",
+      "text": "问她：杯子周围还可能留下什么痕迹？看到痕迹以后能马上确定是谁吗？",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-story-evidence/logic-story-evidence-5"
       ]
     },
     {
-      "id": "choice-小熊",
+      "id": "choice-远处的小狗旁边",
       "kind": "choice",
-      "text": "小熊",
+      "text": "远处的小狗旁边",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-story-evidence/logic-story-evidence-5",
-        "logic-same-kind-detective/logic-same-kind-detective-4",
-        "logic-memory-camera/logic-memory-camera-4"
+        "logic-condition-detective/logic-condition-detective-10"
       ]
     },
     {
-      "id": "choice-小鸟",
+      "id": "choice-倒下的杯子周围",
       "kind": "choice",
-      "text": "小鸟",
+      "text": "倒下的杯子周围",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-story-evidence/logic-story-evidence-5",
-        "logic-same-kind-detective/logic-same-kind-detective-4",
-        "logic-same-kind-detective/logic-same-kind-detective-12",
-        "logic-address-map/logic-address-map-1",
-        "logic-address-map/logic-address-map-2",
-        "logic-address-map/logic-address-map-3",
-        "logic-address-map/logic-address-map-4",
-        "logic-position-map/logic-position-map-3",
-        "logic-position-map/logic-position-map-4",
-        "logic-memory-camera/logic-memory-camera-4",
-        "logic-memory-camera/logic-memory-camera-5",
-        "logic-memory-camera/logic-memory-camera-12",
-        "logic-route-steps/logic-route-steps-1",
-        "logic-route-steps/logic-route-steps-4",
-        "logic-route-steps/logic-route-steps-6"
+        "logic-condition-detective/logic-condition-detective-10",
+        "logic-priority-choice/logic-priority-choice-9"
+      ]
+    },
+    {
+      "id": "choice-窗边的小鸟旁边",
+      "kind": "choice",
+      "text": "窗边的小鸟旁边",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-story-evidence/logic-story-evidence-5",
+        "logic-condition-detective/logic-condition-detective-10"
       ]
     },
     {
@@ -9538,63 +9534,36 @@
       ]
     },
     {
-      "id": "prompt-水杯倒了-小熊就在旁边-哪条线索最关键-找最能说明事情的线索",
+      "id": "prompt-水杯倒了-哪一个地方最值得先检查-先找事情发生的地方-再看有没有直接痕迹",
       "kind": "prompt",
-      "text": "水杯倒了，小熊就在旁边。哪条线索最关键？找最能说明事情的线索。",
+      "text": "水杯倒了，哪一个地方最值得先检查？先找事情发生的地方，再看有没有直接痕迹。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-condition-detective/logic-condition-detective-10"
       ]
     },
     {
-      "id": "success-谁离倒下的杯子最近-这条线索最关键",
+      "id": "success-先检查倒下的杯子周围-那里可能有湿痕-脚印或碰撞痕迹-只看谁站得近还不能确定原因",
       "kind": "success",
-      "text": "谁离倒下的杯子最近，这条线索最关键。",
+      "text": "先检查倒下的杯子周围，那里可能有湿痕、脚印或碰撞痕迹；只看谁站得近还不能确定原因。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-condition-detective/logic-condition-detective-10"
       ]
     },
     {
-      "id": "retry-先找和水杯-地上水最接近的线索",
+      "id": "retry-先找事情发生处留下的直接痕迹-不要只按角色远近猜",
       "kind": "retry",
-      "text": "先找和水杯、地上水最接近的线索。",
+      "text": "先找事情发生处留下的直接痕迹，不要只按角色远近猜。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
         "logic-condition-detective/logic-condition-detective-10"
       ]
     },
     {
-      "id": "parent-问她-近的线索和远的线索-哪个更能说明问题",
+      "id": "parent-问她-什么样的痕迹能帮助我们判断-只有站在旁边够不够",
       "kind": "parent",
-      "text": "问她：近的线索和远的线索，哪个更能说明问题？",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-condition-detective/logic-condition-detective-10"
-      ]
-    },
-    {
-      "id": "choice-离杯子最近",
-      "kind": "choice",
-      "text": "离杯子最近",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-condition-detective/logic-condition-detective-10"
-      ]
-    },
-    {
-      "id": "choice-小狗在远处",
-      "kind": "choice",
-      "text": "小狗在远处",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-condition-detective/logic-condition-detective-10"
-      ]
-    },
-    {
-      "id": "choice-小鸟在窗边",
-      "kind": "choice",
-      "text": "小鸟在窗边",
+      "text": "问她：什么样的痕迹能帮助我们判断？只有站在旁边够不够？",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-condition-detective/logic-condition-detective-10"
@@ -9673,16 +9642,6 @@
       ]
     },
     {
-      "id": "choice-把木板接长",
-      "kind": "choice",
-      "text": "把木板接长",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-condition-detective/logic-condition-detective-12",
-        "logic-priority-choice/logic-priority-choice-10"
-      ]
-    },
-    {
       "id": "choice-继续用短木板",
       "kind": "choice",
       "text": "继续用短木板",
@@ -9696,6 +9655,16 @@
       "id": "choice-换同样短木板",
       "kind": "choice",
       "text": "换同样短木板",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-condition-detective/logic-condition-detective-12",
+        "logic-priority-choice/logic-priority-choice-10"
+      ]
+    },
+    {
+      "id": "choice-把木板接长",
+      "kind": "choice",
+      "text": "把木板接长",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-condition-detective/logic-condition-detective-12",
@@ -9833,18 +9802,18 @@
       ]
     },
     {
-      "id": "choice-改成停",
+      "id": "choice-继续走",
       "kind": "choice",
-      "text": "改成停",
+      "text": "继续走",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-fix-plan/logic-fix-plan-2"
       ]
     },
     {
-      "id": "choice-继续走",
+      "id": "choice-改成停",
       "kind": "choice",
-      "text": "继续走",
+      "text": "改成停",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-fix-plan/logic-fix-plan-2"
@@ -10166,15 +10135,6 @@
       ]
     },
     {
-      "id": "choice-改成小猫",
-      "kind": "choice",
-      "text": "改成小猫",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-fix-plan/logic-fix-plan-9"
-      ]
-    },
-    {
       "id": "choice-坚持小狗",
       "kind": "choice",
       "text": "坚持小狗",
@@ -10193,45 +10153,54 @@
       ]
     },
     {
-      "id": "prompt-水洒了-却只看远处的小狗-哪里不对-关键线索通常离事件更近",
+      "id": "choice-改成小猫",
+      "kind": "choice",
+      "text": "改成小猫",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-fix-plan/logic-fix-plan-9"
+      ]
+    },
+    {
+      "id": "prompt-水洒了-却只看远处的小狗-哪里不对-关键线索要和事情直接相关",
       "kind": "prompt",
-      "text": "水洒了，却只看远处的小狗，哪里不对？关键线索通常离事件更近。",
+      "text": "水洒了，却只看远处的小狗，哪里不对？关键线索要和事情直接相关。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-fix-plan/logic-fix-plan-10"
       ]
     },
     {
-      "id": "success-要先看倒下杯子和水旁边-那里更关键",
+      "id": "success-要先检查倒下的杯子和水周围有没有直接痕迹-再根据痕迹判断",
       "kind": "success",
-      "text": "要先看倒下杯子和水旁边，那里更关键。",
+      "text": "要先检查倒下的杯子和水周围有没有直接痕迹，再根据痕迹判断。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-fix-plan/logic-fix-plan-10"
       ]
     },
     {
-      "id": "retry-先找离事情发生处最近的线索",
+      "id": "retry-先看事情发生的地方留下了什么-不要先猜是哪一个角色",
       "kind": "retry",
-      "text": "先找离事情发生处最近的线索。",
+      "text": "先看事情发生的地方留下了什么，不要先猜是哪一个角色。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
         "logic-fix-plan/logic-fix-plan-10"
       ]
     },
     {
-      "id": "parent-问她-什么线索离洒水这件事最近",
+      "id": "parent-问她-什么痕迹和洒水这件事直接相关-为什么不能先猜角色",
       "kind": "parent",
-      "text": "问她：什么线索离洒水这件事最近？",
+      "text": "问她：什么痕迹和洒水这件事直接相关？为什么不能先猜角色？",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-fix-plan/logic-fix-plan-10"
       ]
     },
     {
-      "id": "choice-先看倒下的杯子旁边",
+      "id": "choice-先检查倒下的杯子周围",
       "kind": "choice",
-      "text": "先看倒下的杯子旁边",
+      "text": "先检查倒下的杯子周围",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-fix-plan/logic-fix-plan-10"
@@ -10292,18 +10261,18 @@
       ]
     },
     {
-      "id": "choice-还没解决",
+      "id": "choice-已经解决",
       "kind": "choice",
-      "text": "还没解决",
+      "text": "已经解决",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-fix-plan/logic-fix-plan-11"
       ]
     },
     {
-      "id": "choice-已经解决",
+      "id": "choice-还没解决",
       "kind": "choice",
-      "text": "已经解决",
+      "text": "还没解决",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-fix-plan/logic-fix-plan-11"
@@ -10500,15 +10469,6 @@
       ]
     },
     {
-      "id": "choice-先选长木板",
-      "kind": "choice",
-      "text": "先选长木板",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-priority-choice/logic-priority-choice-3"
-      ]
-    },
-    {
       "id": "choice-先选短木板",
       "kind": "choice",
       "text": "先选短木板",
@@ -10521,6 +10481,15 @@
       "id": "choice-先选小石头",
       "kind": "choice",
       "text": "先选小石头",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-priority-choice/logic-priority-choice-3"
+      ]
+    },
+    {
+      "id": "choice-先选长木板",
+      "kind": "choice",
+      "text": "先选长木板",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-priority-choice/logic-priority-choice-3"
@@ -10763,18 +10732,18 @@
       ]
     },
     {
-      "id": "choice-先看奶油",
+      "id": "choice-先看谁在厨房",
       "kind": "choice",
-      "text": "先看奶油",
+      "text": "先看谁在厨房",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-priority-choice/logic-priority-choice-8"
       ]
     },
     {
-      "id": "choice-先看谁在厨房",
+      "id": "choice-先看奶油",
       "kind": "choice",
-      "text": "先看谁在厨房",
+      "text": "先看奶油",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-priority-choice/logic-priority-choice-8"
@@ -10790,63 +10759,54 @@
       ]
     },
     {
-      "id": "prompt-水洒了-小熊近-小狗远-小鸟在窗边-先判断哪条线索-先找离事情发生处最近的线索",
+      "id": "prompt-水洒了-先去哪里找和洒水直接相关的线索-先检查事情发生的地方-再根据留下的痕迹判断",
       "kind": "prompt",
-      "text": "水洒了，小熊近、小狗远、小鸟在窗边，先判断哪条线索？先找离事情发生处最近的线索。",
+      "text": "水洒了，先去哪里找和洒水直接相关的线索？先检查事情发生的地方，再根据留下的痕迹判断。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-priority-choice/logic-priority-choice-9"
       ]
     },
     {
-      "id": "success-先看谁离倒下的杯子最近-这条线索最关键",
+      "id": "success-先检查倒下的杯子周围有没有湿痕-脚印或碰撞痕迹-这些才和洒水直接相关",
       "kind": "success",
-      "text": "先看谁离倒下的杯子最近，这条线索最关键。",
+      "text": "先检查倒下的杯子周围有没有湿痕、脚印或碰撞痕迹，这些才和洒水直接相关。",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-priority-choice/logic-priority-choice-9"
       ]
     },
     {
-      "id": "retry-先找和洒水地点最接近的线索",
+      "id": "retry-先找事情发生处留下的直接痕迹-再判断它能说明什么",
       "kind": "retry",
-      "text": "先找和洒水地点最接近的线索。",
+      "text": "先找事情发生处留下的直接痕迹，再判断它能说明什么。",
       "tone": "gentle, encouraging, slow",
       "contexts": [
         "logic-priority-choice/logic-priority-choice-9"
       ]
     },
     {
-      "id": "parent-问她-远处线索和近处线索-哪个更重要",
+      "id": "parent-问她-杯子周围可能留下哪些直接痕迹-远处的角色为什么暂时不能说明原因",
       "kind": "parent",
-      "text": "问她：远处线索和近处线索，哪个更重要？",
+      "text": "问她：杯子周围可能留下哪些直接痕迹？远处的角色为什么暂时不能说明原因？",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-priority-choice/logic-priority-choice-9"
       ]
     },
     {
-      "id": "choice-谁离杯子最近",
+      "id": "choice-远处小狗睡觉的地方",
       "kind": "choice",
-      "text": "谁离杯子最近",
+      "text": "远处小狗睡觉的地方",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-priority-choice/logic-priority-choice-9"
       ]
     },
     {
-      "id": "choice-谁在远处睡觉",
+      "id": "choice-窗边小鸟的位置",
       "kind": "choice",
-      "text": "谁在远处睡觉",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-priority-choice/logic-priority-choice-9"
-      ]
-    },
-    {
-      "id": "choice-谁在窗边",
-      "kind": "choice",
-      "text": "谁在窗边",
+      "text": "窗边小鸟的位置",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-priority-choice/logic-priority-choice-9"
@@ -10970,18 +10930,18 @@
       ]
     },
     {
-      "id": "choice-先找更多线索",
+      "id": "choice-直接说小狗弄乱",
       "kind": "choice",
-      "text": "先找更多线索",
+      "text": "直接说小狗弄乱",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-priority-choice/logic-priority-choice-12"
       ]
     },
     {
-      "id": "choice-直接说小狗弄乱",
+      "id": "choice-先找更多线索",
       "kind": "choice",
-      "text": "直接说小狗弄乱",
+      "text": "先找更多线索",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-priority-choice/logic-priority-choice-12"
@@ -12470,9 +12430,9 @@
       ]
     },
     {
-      "id": "prompt-小熊要搭桥-先看什么再选木板-先看河有多宽-再判断木板够不够",
+      "id": "prompt-小熊要搭桥-先看什么再选木板-先比较河面的距离和木板的长度-再判断够不够",
       "kind": "prompt",
-      "text": "小熊要搭桥，先看什么再选木板？先看河有多宽，再判断木板够不够。",
+      "text": "小熊要搭桥，先看什么再选木板？先比较河面的距离和木板的长度，再判断够不够。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-space-bridge/logic-space-bridge-1"
@@ -12515,18 +12475,18 @@
       ]
     },
     {
-      "id": "choice-木板颜色",
+      "id": "choice-先拿看起来最长的",
       "kind": "choice",
-      "text": "木板颜色",
+      "text": "先拿看起来最长的",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-space-bridge/logic-space-bridge-1"
       ]
     },
     {
-      "id": "choice-小旗颜色",
+      "id": "choice-先试离手最近的",
       "kind": "choice",
-      "text": "小旗颜色",
+      "text": "先试离手最近的",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-space-bridge/logic-space-bridge-1"
@@ -12550,9 +12510,9 @@
       ]
     },
     {
-      "id": "prompt-河变宽了-一块木板不够-怎么办-可以把两块木板接起来",
+      "id": "prompt-河变宽了-一块木板不够-怎么办-比较一块木板和两块接起来的总长度-哪一种能碰到两岸",
       "kind": "prompt",
-      "text": "河变宽了，一块木板不够。怎么办？可以把两块木板接起来。",
+      "text": "河变宽了，一块木板不够。怎么办？比较一块木板和两块接起来的总长度，哪一种能碰到两岸？",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-space-bridge/logic-space-bridge-2"
@@ -12586,41 +12546,36 @@
       ]
     },
     {
-      "id": "choice-用两块木板",
+      "id": "choice-换一块同样长的",
       "kind": "choice",
-      "text": "用两块木板",
+      "text": "换一块同样长的",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-space-bridge/logic-space-bridge-2",
-        "logic-space-bridge/logic-space-bridge-5",
-        "logic-space-bridge/logic-space-bridge-8"
+        "logic-space-bridge/logic-space-bridge-2"
       ]
     },
     {
-      "id": "choice-只用短木板",
+      "id": "choice-用两块木板接起来",
       "kind": "choice",
-      "text": "只用短木板",
+      "text": "用两块木板接起来",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-space-bridge/logic-space-bridge-2",
-        "logic-space-bridge/logic-space-bridge-5"
+        "logic-space-bridge/logic-space-bridge-2"
       ]
     },
     {
-      "id": "choice-不搭桥",
+      "id": "choice-把两块木板分开放",
       "kind": "choice",
-      "text": "不搭桥",
+      "text": "把两块木板分开放",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-space-bridge/logic-space-bridge-2",
-        "logic-space-bridge/logic-space-bridge-7",
-        "logic-space-bridge/logic-space-bridge-8"
+        "logic-space-bridge/logic-space-bridge-2"
       ]
     },
     {
-      "id": "prompt-只能用-2-块木板-哪种计划更好-先选长的-再用短的补上",
+      "id": "prompt-只能用-2-块木板-哪种计划更好-把每种两块木板的组合都和河宽比一比",
       "kind": "prompt",
-      "text": "只能用 2 块木板，哪种计划更好？先选长的，再用短的补上。",
+      "text": "只能用 2 块木板，哪种计划更好？把每种两块木板的组合都和河宽比一比。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-space-bridge/logic-space-bridge-3"
@@ -12654,16 +12609,6 @@
       ]
     },
     {
-      "id": "choice-长-短",
-      "kind": "choice",
-      "text": "长 + 短",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-space-bridge/logic-space-bridge-3",
-        "logic-space-bridge/logic-space-bridge-6"
-      ]
-    },
-    {
       "id": "choice-短-太短",
       "kind": "choice",
       "text": "短 + 太短",
@@ -12677,6 +12622,16 @@
       "id": "choice-太短-太短",
       "kind": "choice",
       "text": "太短 + 太短",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-space-bridge/logic-space-bridge-3",
+        "logic-space-bridge/logic-space-bridge-6"
+      ]
+    },
+    {
+      "id": "choice-长-短",
+      "kind": "choice",
+      "text": "长 + 短",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-space-bridge/logic-space-bridge-3",
@@ -12712,9 +12667,9 @@
       ]
     },
     {
-      "id": "prompt-要过窄河-应该选哪块木板-先看距离-再选材料",
+      "id": "prompt-图里的河虽然不宽-但短木板仍碰不到对岸-哪块木板能搭过去-先看距离-再选材料",
       "kind": "prompt",
-      "text": "要过窄河，应该选哪块木板？先看距离，再选材料。",
+      "text": "图里的河虽然不宽，但短木板仍碰不到对岸。哪块木板能搭过去？先看距离，再选材料。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-space-bridge/logic-space-bridge-4"
@@ -12799,6 +12754,25 @@
       "contexts": [
         "logic-space-bridge/logic-space-bridge-5",
         "logic-space-bridge/logic-space-bridge-8"
+      ]
+    },
+    {
+      "id": "choice-用两块木板",
+      "kind": "choice",
+      "text": "用两块木板",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-space-bridge/logic-space-bridge-5",
+        "logic-space-bridge/logic-space-bridge-8"
+      ]
+    },
+    {
+      "id": "choice-只用短木板",
+      "kind": "choice",
+      "text": "只用短木板",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-space-bridge/logic-space-bridge-5"
       ]
     },
     {
@@ -12950,6 +12924,16 @@
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-space-bridge/logic-space-bridge-7"
+      ]
+    },
+    {
+      "id": "choice-不搭桥",
+      "kind": "choice",
+      "text": "不搭桥",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-space-bridge/logic-space-bridge-7",
+        "logic-space-bridge/logic-space-bridge-8"
       ]
     },
     {
@@ -13310,6 +13294,38 @@
       ]
     },
     {
+      "id": "choice-小熊",
+      "kind": "choice",
+      "text": "小熊",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-same-kind-detective/logic-same-kind-detective-4",
+        "logic-memory-camera/logic-memory-camera-4"
+      ]
+    },
+    {
+      "id": "choice-小鸟",
+      "kind": "choice",
+      "text": "小鸟",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-same-kind-detective/logic-same-kind-detective-4",
+        "logic-same-kind-detective/logic-same-kind-detective-12",
+        "logic-address-map/logic-address-map-1",
+        "logic-address-map/logic-address-map-2",
+        "logic-address-map/logic-address-map-3",
+        "logic-address-map/logic-address-map-4",
+        "logic-position-map/logic-position-map-3",
+        "logic-position-map/logic-position-map-4",
+        "logic-memory-camera/logic-memory-camera-4",
+        "logic-memory-camera/logic-memory-camera-5",
+        "logic-memory-camera/logic-memory-camera-12",
+        "logic-route-steps/logic-route-steps-1",
+        "logic-route-steps/logic-route-steps-4",
+        "logic-route-steps/logic-route-steps-6"
+      ]
+    },
+    {
       "id": "choice-小鱼",
       "kind": "choice",
       "text": "小鱼",
@@ -13566,6 +13582,17 @@
       ]
     },
     {
+      "id": "choice-小汽车",
+      "kind": "choice",
+      "text": "小汽车",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-same-kind-detective/logic-same-kind-detective-7",
+        "logic-same-kind-detective/logic-same-kind-detective-8",
+        "logic-memory-camera/logic-memory-camera-7"
+      ]
+    },
+    {
       "id": "choice-橘子",
       "kind": "choice",
       "text": "橘子",
@@ -13577,17 +13604,6 @@
         "logic-difference-detective/logic-difference-detective-8",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-2",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-8"
-      ]
-    },
-    {
-      "id": "choice-小汽车",
-      "kind": "choice",
-      "text": "小汽车",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-same-kind-detective/logic-same-kind-detective-7",
-        "logic-same-kind-detective/logic-same-kind-detective-8",
-        "logic-memory-camera/logic-memory-camera-7"
       ]
     },
     {
@@ -14727,15 +14743,6 @@
       ]
     },
     {
-      "id": "choice-a2",
-      "kind": "choice",
-      "text": "A2",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-address-map/logic-address-map-9"
-      ]
-    },
-    {
       "id": "choice-b1",
       "kind": "choice",
       "text": "B1",
@@ -14748,6 +14755,15 @@
       "id": "choice-c2",
       "kind": "choice",
       "text": "C2",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-address-map/logic-address-map-9"
+      ]
+    },
+    {
+      "id": "choice-a2",
+      "kind": "choice",
+      "text": "A2",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-address-map/logic-address-map-9"
@@ -14790,6 +14806,17 @@
       ]
     },
     {
+      "id": "choice-c3",
+      "kind": "choice",
+      "text": "C3",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-address-map/logic-address-map-10",
+        "logic-address-map/logic-address-map-11",
+        "logic-address-map/logic-address-map-12"
+      ]
+    },
+    {
       "id": "choice-a3",
       "kind": "choice",
       "text": "A3",
@@ -14807,17 +14834,6 @@
       "contexts": [
         "logic-address-map/logic-address-map-10",
         "logic-address-map/logic-address-map-11"
-      ]
-    },
-    {
-      "id": "choice-c3",
-      "kind": "choice",
-      "text": "C3",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-address-map/logic-address-map-10",
-        "logic-address-map/logic-address-map-11",
-        "logic-address-map/logic-address-map-12"
       ]
     },
     {
@@ -14893,18 +14909,18 @@
       ]
     },
     {
-      "id": "choice-d3",
+      "id": "choice-d4",
       "kind": "choice",
-      "text": "D3",
+      "text": "D4",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-address-map/logic-address-map-12"
       ]
     },
     {
-      "id": "choice-d4",
+      "id": "choice-d3",
       "kind": "choice",
-      "text": "D4",
+      "text": "D3",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-address-map/logic-address-map-12"
@@ -15073,15 +15089,6 @@
       ]
     },
     {
-      "id": "choice-大方块",
-      "kind": "choice",
-      "text": "大方块",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-matrix-puzzle/logic-matrix-puzzle-3"
-      ]
-    },
-    {
       "id": "choice-小方块",
       "kind": "choice",
       "text": "小方块",
@@ -15094,6 +15101,15 @@
       "id": "choice-小星",
       "kind": "choice",
       "text": "小星",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-matrix-puzzle/logic-matrix-puzzle-3"
+      ]
+    },
+    {
+      "id": "choice-大方块",
+      "kind": "choice",
+      "text": "大方块",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-matrix-puzzle/logic-matrix-puzzle-3"
@@ -15191,18 +15207,18 @@
       ]
     },
     {
-      "id": "choice-草莓-草莓-草莓",
+      "id": "choice-草莓-草莓",
       "kind": "choice",
-      "text": "草莓、草莓、草莓",
+      "text": "草莓、草莓",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-matrix-puzzle/logic-matrix-puzzle-5"
       ]
     },
     {
-      "id": "choice-草莓-草莓",
+      "id": "choice-草莓-草莓-草莓",
       "kind": "choice",
-      "text": "草莓、草莓",
+      "text": "草莓、草莓、草莓",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-matrix-puzzle/logic-matrix-puzzle-5"
@@ -15254,15 +15270,6 @@
       ]
     },
     {
-      "id": "choice-小狗和家",
-      "kind": "choice",
-      "text": "小狗和家",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-matrix-puzzle/logic-matrix-puzzle-6"
-      ]
-    },
-    {
       "id": "choice-小河和小狗",
       "kind": "choice",
       "text": "小河和小狗",
@@ -15275,6 +15282,15 @@
       "id": "choice-天空和家",
       "kind": "choice",
       "text": "天空和家",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-matrix-puzzle/logic-matrix-puzzle-6"
+      ]
+    },
+    {
+      "id": "choice-小狗和家",
+      "kind": "choice",
+      "text": "小狗和家",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-matrix-puzzle/logic-matrix-puzzle-6"
@@ -16447,6 +16463,15 @@
       ]
     },
     {
+      "id": "choice-苹果-苹果",
+      "kind": "choice",
+      "text": "苹果、苹果",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-visual-match/logic-visual-match-3"
+      ]
+    },
+    {
       "id": "choice-苹果-橘子",
       "kind": "choice",
       "text": "苹果、橘子",
@@ -16454,15 +16479,6 @@
       "contexts": [
         "logic-visual-match/logic-visual-match-3",
         "logic-mirror-fold/logic-mirror-fold-8"
-      ]
-    },
-    {
-      "id": "choice-苹果-苹果",
-      "kind": "choice",
-      "text": "苹果、苹果",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-visual-match/logic-visual-match-3"
       ]
     },
     {
@@ -16535,15 +16551,6 @@
       ]
     },
     {
-      "id": "choice-红色圆片-蓝色方块-星星",
-      "kind": "choice",
-      "text": "红色圆片、蓝色方块、星星",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-visual-match/logic-visual-match-5"
-      ]
-    },
-    {
       "id": "choice-红色圆片-星星-蓝色方块",
       "kind": "choice",
       "text": "红色圆片、星星、蓝色方块",
@@ -16551,6 +16558,15 @@
       "contexts": [
         "logic-visual-match/logic-visual-match-5",
         "logic-mirror-fold/logic-mirror-fold-10"
+      ]
+    },
+    {
+      "id": "choice-红色圆片-蓝色方块-星星",
+      "kind": "choice",
+      "text": "红色圆片、蓝色方块、星星",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-visual-match/logic-visual-match-5"
       ]
     },
     {
@@ -16583,16 +16599,6 @@
       ]
     },
     {
-      "id": "choice-草莓-饼干-糖果",
-      "kind": "choice",
-      "text": "草莓、饼干、糖果",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-visual-match/logic-visual-match-6",
-        "logic-mirror-fold/logic-mirror-fold-11"
-      ]
-    },
-    {
       "id": "choice-饼干-草莓-糖果",
       "kind": "choice",
       "text": "饼干、草莓、糖果",
@@ -16608,6 +16614,16 @@
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-visual-match/logic-visual-match-6"
+      ]
+    },
+    {
+      "id": "choice-草莓-饼干-糖果",
+      "kind": "choice",
+      "text": "草莓、饼干、糖果",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-visual-match/logic-visual-match-6",
+        "logic-mirror-fold/logic-mirror-fold-11"
       ]
     },
     {
@@ -16673,6 +16689,20 @@
       ]
     },
     {
+      "id": "choice-右边这张",
+      "kind": "choice",
+      "text": "右边这张",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-visual-match/logic-visual-match-7",
+        "logic-visual-match/logic-visual-match-8",
+        "logic-visual-match/logic-visual-match-9",
+        "logic-visual-match/logic-visual-match-10",
+        "logic-visual-match/logic-visual-match-11",
+        "logic-visual-match/logic-visual-match-12"
+      ]
+    },
+    {
       "id": "choice-左边这张",
       "kind": "choice",
       "text": "左边这张",
@@ -16690,20 +16720,6 @@
       "id": "choice-中间这张",
       "kind": "choice",
       "text": "中间这张",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-visual-match/logic-visual-match-7",
-        "logic-visual-match/logic-visual-match-8",
-        "logic-visual-match/logic-visual-match-9",
-        "logic-visual-match/logic-visual-match-10",
-        "logic-visual-match/logic-visual-match-11",
-        "logic-visual-match/logic-visual-match-12"
-      ]
-    },
-    {
-      "id": "choice-右边这张",
-      "kind": "choice",
-      "text": "右边这张",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-visual-match/logic-visual-match-7",
@@ -17208,9 +17224,9 @@
       ]
     },
     {
-      "id": "prompt-箭头每次逆时针转一下-下一个指哪里-逆时针就是往左边转",
+      "id": "prompt-箭头每次逆时针转一下-下一个指哪里-逆时针和钟表转动方向相反-沿四个方向一格一格转",
       "kind": "prompt",
-      "text": "箭头每次逆时针转一下，下一个指哪里？逆时针就是往左边转。",
+      "text": "箭头每次逆时针转一下，下一个指哪里？逆时针和钟表转动方向相反，沿四个方向一格一格转。",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-rotation-direction/logic-rotation-direction-5",
@@ -17644,15 +17660,6 @@
       ]
     },
     {
-      "id": "choice-1-个草莓",
-      "kind": "choice",
-      "text": "1 个草莓",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-balance-swap/logic-balance-swap-1"
-      ]
-    },
-    {
       "id": "choice-2-个草莓",
       "kind": "choice",
       "text": "2 个草莓",
@@ -17660,6 +17667,15 @@
       "contexts": [
         "logic-balance-swap/logic-balance-swap-1",
         "logic-balance-swap/logic-balance-swap-5"
+      ]
+    },
+    {
+      "id": "choice-1-个草莓",
+      "kind": "choice",
+      "text": "1 个草莓",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-balance-swap/logic-balance-swap-1"
       ]
     },
     {
@@ -17747,9 +17763,9 @@
       ]
     },
     {
-      "id": "choice-3-个糖果",
+      "id": "choice-4-个糖果",
       "kind": "choice",
-      "text": "3 个糖果",
+      "text": "4 个糖果",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-balance-swap/logic-balance-swap-3",
@@ -17757,9 +17773,9 @@
       ]
     },
     {
-      "id": "choice-4-个糖果",
+      "id": "choice-3-个糖果",
       "kind": "choice",
-      "text": "4 个糖果",
+      "text": "3 个糖果",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-balance-swap/logic-balance-swap-3",
@@ -17785,18 +17801,18 @@
       ]
     },
     {
-      "id": "choice-1-颗星星",
+      "id": "choice-2-颗星星",
       "kind": "choice",
-      "text": "1 颗星星",
+      "text": "2 颗星星",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-balance-swap/logic-balance-swap-4"
       ]
     },
     {
-      "id": "choice-2-颗星星",
+      "id": "choice-1-颗星星",
       "kind": "choice",
-      "text": "2 颗星星",
+      "text": "1 颗星星",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-balance-swap/logic-balance-swap-4"
@@ -17958,18 +17974,18 @@
       ]
     },
     {
-      "id": "choice-5-颗星星",
+      "id": "choice-6-颗星星",
       "kind": "choice",
-      "text": "5 颗星星",
+      "text": "6 颗星星",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-balance-swap/logic-balance-swap-8"
       ]
     },
     {
-      "id": "choice-6-颗星星",
+      "id": "choice-5-颗星星",
       "kind": "choice",
-      "text": "6 颗星星",
+      "text": "5 颗星星",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-balance-swap/logic-balance-swap-8"
@@ -18427,15 +18443,6 @@
       ]
     },
     {
-      "id": "choice-星星-黄色圆片-蓝色圆片",
-      "kind": "choice",
-      "text": "星星、黄色圆片、蓝色圆片",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-mirror-fold/logic-mirror-fold-12"
-      ]
-    },
-    {
       "id": "choice-蓝色圆片-黄色圆片-星星",
       "kind": "choice",
       "text": "蓝色圆片、黄色圆片、星星",
@@ -18448,6 +18455,15 @@
       "id": "choice-黄色圆片-星星-蓝色圆片",
       "kind": "choice",
       "text": "黄色圆片、星星、蓝色圆片",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-mirror-fold/logic-mirror-fold-12"
+      ]
+    },
+    {
+      "id": "choice-星星-黄色圆片-蓝色圆片",
+      "kind": "choice",
+      "text": "星星、黄色圆片、蓝色圆片",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-mirror-fold/logic-mirror-fold-12"
@@ -18886,20 +18902,6 @@
       ]
     },
     {
-      "id": "choice-1-2-1",
-      "kind": "choice",
-      "text": "1、2、1",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-three-view-blocks/logic-three-view-blocks-9",
-        "logic-three-view-blocks/logic-three-view-blocks-10",
-        "logic-three-view-blocks/logic-three-view-blocks-11",
-        "logic-three-view-blocks/logic-three-view-blocks-12",
-        "logic-three-view-blocks/logic-three-view-blocks-17",
-        "logic-three-view-blocks/logic-three-view-blocks-18"
-      ]
-    },
-    {
       "id": "choice-3-2-1",
       "kind": "choice",
       "text": "3、2、1",
@@ -18922,6 +18924,20 @@
         "logic-three-view-blocks/logic-three-view-blocks-9",
         "logic-three-view-blocks/logic-three-view-blocks-10",
         "logic-three-view-blocks/logic-three-view-blocks-11"
+      ]
+    },
+    {
+      "id": "choice-1-2-1",
+      "kind": "choice",
+      "text": "1、2、1",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-three-view-blocks/logic-three-view-blocks-9",
+        "logic-three-view-blocks/logic-three-view-blocks-10",
+        "logic-three-view-blocks/logic-three-view-blocks-11",
+        "logic-three-view-blocks/logic-three-view-blocks-12",
+        "logic-three-view-blocks/logic-three-view-blocks-17",
+        "logic-three-view-blocks/logic-three-view-blocks-18"
       ]
     },
     {

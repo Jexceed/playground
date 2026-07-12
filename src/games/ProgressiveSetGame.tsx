@@ -451,7 +451,7 @@ function ClockChallengeBoard({ challenge, hasSceneImage }: { challenge: NonNulla
   return (
     <div className={`clock-challenge-board clock-mode-${challenge.mode} ${showContext ? "clock-with-context" : "clock-no-context"}`} aria-label={`时钟显示${label}`}>
       <div className="clock-card">
-        <svg className="clock-face" viewBox="0 0 240 240" role="img" aria-label={`分针也就是长针在${challenge.minute === 0 ? "12" : "6"}，时针也就是短针${challenge.minute === 0 ? `指向${challenge.hour}` : `在${challenge.hour}和${challenge.hour === 12 ? 1 : challenge.hour + 1}中间`}`}>
+        <svg className="clock-face" viewBox="0 0 240 240" role="img" aria-label={`时针也就是短针${challenge.minute === 0 ? `指向${challenge.hour}` : `在${challenge.hour}和${challenge.hour === 12 ? 1 : challenge.hour + 1}中间`}，分针也就是长针在${challenge.minute === 0 ? "12" : "6"}`}>
           <circle className="clock-rim" cx="120" cy="120" r="104" />
           <circle className="clock-inner" cx="120" cy="120" r="92" />
           {Array.from({ length: 60 }).map((_, index) => {
@@ -485,7 +485,7 @@ function ClockChallengeBoard({ challenge, hasSceneImage }: { challenge: NonNulla
         </svg>
         <div className="clock-caption">
           <strong>{challenge.label}</strong>
-          <span>{challenge.minute === 0 ? "分针（长针）在 12，看时针（短针）。" : "分针（长针）在 6，再看时针（短针）。"}</span>
+          <span>{challenge.minute === 0 ? "先看时针（短针），再看分针（长针）在 12。" : "先看时针（短针），再看分针（长针）在 6。"}</span>
         </div>
       </div>
       {showContext && (

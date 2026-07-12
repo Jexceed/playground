@@ -115,9 +115,9 @@ export const games: GameConfig[] = [
     id: "math-clock-time",
     world: "math",
     title: "时钟小管家",
-    subtitle: "看分针和时针，读 07:00、07:30 这样的时间，再转换成电子钟时间。",
+    subtitle: "看时针和分针，读 07:00、07:30 这样的时间，再转换成电子钟时间。",
     goal: "建立 00 分、30 分和 12 小时到 24 小时制转换的基础理解。",
-    parentPrompt: "请她先说分针（长针）在哪里、时针（短针）在哪里，再结合图里的活动选电子钟时间。",
+    parentPrompt: "请她先说时针（短针）在哪里、分针（长针）在哪里，再结合图里的活动选电子钟时间。",
     abilityTags: ["认识时钟", "00分30分", "24小时制"],
     level: "L5",
     rounds: makeClockTimeRounds(),
@@ -483,13 +483,46 @@ export const worlds = [
 ] as const;
 
 function makeSet(input: SetInput): GameConfig {
+  const bucketOrdinals = new Map<number, number>();
   return {
     ...input,
     kind: "progressiveSet",
-    rounds: input.rounds.map((round, index) => ({
-      ...round,
-      id: round.id ?? `${input.id}-${index + 1}`,
-      difficultyNote: round.difficultyNote ?? defaultDifficultyNote(round),
+    rounds: input.rounds.map((round, index) => {
+      const choiceCount = round.choices.length;
+      const ordinal = bucketOrdinals.get(choiceCount) ?? 0;
+      bucketOrdinals.set(choiceCount, ordinal + 1);
+      const balancedRound = balanceRoundChoices(round, choiceCount > 0 ? ordinal % choiceCount : 0);
+      return {
+        ...balancedRound,
+        id: round.id ?? `${input.id}-${index + 1}`,
+        difficultyNote: round.difficultyNote ?? defaultDifficultyNote(round),
+      };
+    }),
+  };
+}
+
+function balanceRoundChoices(round: RoundInput, targetAnswerIndex: number): RoundInput {
+  if (round.choices.length < 2) return round;
+  const answerChoice = round.choices.find((item) => item.value === round.answer);
+  if (!answerChoice) return round;
+
+  const orderedChoices = round.choices.filter((item) => item.value !== round.answer);
+  orderedChoices.splice(targetAnswerIndex, 0, answerChoice);
+
+  if (!round.graphicChallenge) {
+    return { ...round, choices: orderedChoices };
+  }
+
+  const optionByValue = new Map(round.graphicChallenge.options.map((option) => [option.value, option]));
+  const orderedOptions = orderedChoices.map((item) => optionByValue.get(item.value)).filter(Boolean) as GraphicChallengeOption[];
+  if (orderedOptions.length !== orderedChoices.length) return round;
+
+  return {
+    ...round,
+    graphicChallenge: { ...round.graphicChallenge, options: orderedOptions },
+    choices: orderedChoices.map((item, index) => ({
+      label: ["A", "B", "C", "D"][index] ?? String(index + 1),
+      value: item.value,
     })),
   };
 }
@@ -513,7 +546,7 @@ function visualSurfaceText(round: RoundInput) {
   if (round.sceneImage && round.visualGroups) return "先看场景图，再用分组图卡比较条件。";
   if (round.sceneImage && round.clockChallenge) return "先看生活场景图，再用模拟时钟和电子钟时间互相核对。";
   if (round.sceneImage) return "主要从生活场景图里找证据。";
-  if (round.clockChallenge) return "看模拟时钟的分针（长针）、时针（短针）和生活活动线索来判断时间。";
+  if (round.clockChallenge) return "看模拟时钟的时针（短针）、分针（长针）和生活活动线索来判断时间。";
   if (round.memory) return `先记住 ${round.memory.items.length} 张图卡，遮住后再排除干扰项。`;
   if (round.grid) return `在 ${round.grid.rows.length} 行 x ${round.grid.columns.length} 列小地图中定位。`;
   if (round.matrix) return `在 ${round.matrix.cells.length} 行图形表里横向找规律，再纵向检查。`;
@@ -1358,14 +1391,14 @@ function makeStoryEvidenceRounds(): RoundInput[] {
     },
     {
       level: "L5",
-      prompt: "谁最可能把水洒了？",
-      instruction: "看水杯旁边的线索。",
+      prompt: "水杯倒了，想知道发生了什么，先去哪里找线索？",
+      instruction: "先检查和水杯、地上水直接相连的地方。",
       sceneImage: storyScenes.spilledWaterRoom,
-      choices: [{ label: "小熊", value: "bear" }, { label: "小狗", value: "dog" }, { label: "小鸟", value: "bird" }],
-      answer: "bear",
-      success: "倒下的杯子在小熊旁边，所以小熊最可能碰到了。",
-      retry: "谁离倒下的杯子最近？",
-      parentPrompt: "问她：近的线索是不是比远的线索更有用？",
+      choices: [{ label: "倒下的杯子周围", value: "cup-area" }, { label: "远处的小狗旁边", value: "dog-area" }, { label: "窗边的小鸟旁边", value: "bird-area" }],
+      answer: "cup-area",
+      success: "先检查倒下的杯子周围有没有湿痕、脚印或碰倒的东西。角色站得近只说明这里值得观察，不能直接确定是谁碰倒的。",
+      retry: "先从事情发生的地方找直接痕迹，再判断这些痕迹能说明什么。",
+      parentPrompt: "问她：杯子周围还可能留下什么痕迹？看到痕迹以后能马上确定是谁吗？",
       abilityTags: ["证据推理"],
     },
     {
@@ -1526,15 +1559,15 @@ function makeConditionDetectiveRounds(): RoundInput[] {
     },
     {
       level: "L6",
-      prompt: "水杯倒了，小熊就在旁边。哪条线索最关键？",
-      instruction: "找最能说明事情的线索。",
-      difficultyNote: "关键线索判断：比较近处线索和远处干扰。",
+      prompt: "水杯倒了，哪一个地方最值得先检查？",
+      instruction: "先找事情发生的地方，再看有没有直接痕迹。",
+      difficultyNote: "关键线索判断：比较事件现场的直接痕迹和无关地点。",
       sceneImage: scenes.spilledWaterRoom,
-      choices: [{ label: "离杯子最近", value: "near-cup" }, { label: "小狗在远处", value: "far-dog" }, { label: "小鸟在窗边", value: "bird-window" }],
-      answer: "near-cup",
-      success: "谁离倒下的杯子最近，这条线索最关键。",
-      retry: "先找和水杯、地上水最接近的线索。",
-      parentPrompt: "问她：近的线索和远的线索，哪个更能说明问题？",
+      choices: [{ label: "倒下的杯子周围", value: "cup-area" }, { label: "远处的小狗旁边", value: "far-dog" }, { label: "窗边的小鸟旁边", value: "bird-window" }],
+      answer: "cup-area",
+      success: "先检查倒下的杯子周围，那里可能有湿痕、脚印或碰撞痕迹；只看谁站得近还不能确定原因。",
+      retry: "先找事情发生处留下的直接痕迹，不要只按角色远近猜。",
+      parentPrompt: "问她：什么样的痕迹能帮助我们判断？只有站在旁边够不够？",
       abilityTags: ["关键线索", "证据强弱"],
     },
     {
@@ -1699,14 +1732,14 @@ function makeFixPlanRounds(): RoundInput[] {
     {
       level: "L6",
       prompt: "水洒了，却只看远处的小狗，哪里不对？",
-      instruction: "关键线索通常离事件更近。",
-      difficultyNote: "注意焦点修正：从远处干扰改回关键线索。",
+      instruction: "关键线索要和事情直接相关。",
+      difficultyNote: "注意焦点修正：从远处角色改回事件现场的直接痕迹。",
       sceneImage: scenes.spilledWaterRoom,
-      choices: [{ label: "先看倒下的杯子旁边", value: "near-cup" }, { label: "只看远处小狗", value: "far-dog" }, { label: "只看窗边小鸟", value: "bird-window" }],
-      answer: "near-cup",
-      success: "要先看倒下杯子和水旁边，那里更关键。",
-      retry: "先找离事情发生处最近的线索。",
-      parentPrompt: "问她：什么线索离洒水这件事最近？",
+      choices: [{ label: "先检查倒下的杯子周围", value: "cup-area" }, { label: "只看远处小狗", value: "far-dog" }, { label: "只看窗边小鸟", value: "bird-window" }],
+      answer: "cup-area",
+      success: "要先检查倒下的杯子和水周围有没有直接痕迹，再根据痕迹判断。",
+      retry: "先看事情发生的地方留下了什么，不要先猜是哪一个角色。",
+      parentPrompt: "问她：什么痕迹和洒水这件事直接相关？为什么不能先猜角色？",
       abilityTags: ["关键线索", "错误诊断"],
     },
     {
@@ -1858,15 +1891,15 @@ function makePriorityChoiceRounds(): RoundInput[] {
     },
     {
       level: "L6",
-      prompt: "水洒了，小熊近、小狗远、小鸟在窗边，先判断哪条线索？",
-      instruction: "先找离事情发生处最近的线索。",
-      difficultyNote: "关键线索优先：先排近处强线索，再看远处干扰。",
+      prompt: "水洒了，先去哪里找和洒水直接相关的线索？",
+      instruction: "先检查事情发生的地方，再根据留下的痕迹判断。",
+      difficultyNote: "关键线索优先：先检查事件现场的直接痕迹，再排除无关地点。",
       sceneImage: scenes.spilledWaterRoom,
-      choices: [{ label: "谁离杯子最近", value: "near-cup" }, { label: "谁在远处睡觉", value: "far-dog" }, { label: "谁在窗边", value: "window-bird" }],
-      answer: "near-cup",
-      success: "先看谁离倒下的杯子最近，这条线索最关键。",
-      retry: "先找和洒水地点最接近的线索。",
-      parentPrompt: "问她：远处线索和近处线索，哪个更重要？",
+      choices: [{ label: "倒下的杯子周围", value: "cup-area" }, { label: "远处小狗睡觉的地方", value: "far-dog" }, { label: "窗边小鸟的位置", value: "window-bird" }],
+      answer: "cup-area",
+      success: "先检查倒下的杯子周围有没有湿痕、脚印或碰撞痕迹，这些才和洒水直接相关。",
+      retry: "先找事情发生处留下的直接痕迹，再判断它能说明什么。",
+      parentPrompt: "问她：杯子周围可能留下哪些直接痕迹？远处的角色为什么暂时不能说明原因？",
       abilityTags: ["关键线索", "证据推理"],
     },
     {
@@ -2411,10 +2444,10 @@ function makeBridgeRounds(): RoundInput[] {
     {
       level: "L3",
       prompt: "小熊要搭桥，先看什么再选木板？",
-      instruction: "先看河有多宽，再判断木板够不够。",
+      instruction: "先比较河面的距离和木板的长度，再判断够不够。",
       sceneImage: bridgeNarrowScene,
       sequence: ["🐻", "🌊", "长木板", "短木板", "🏁"],
-      choices: [{ label: "河有多宽", value: "river-width" }, { label: "木板颜色", value: "plank-color" }, { label: "小旗颜色", value: "flag-color" }],
+      choices: [{ label: "河有多宽", value: "river-width" }, { label: "先拿看起来最长的", value: "guess-longest" }, { label: "先试离手最近的", value: "try-nearest" }],
       answer: "river-width",
       success: "对，先看河有多宽，才知道哪块木板够长。",
       retry: "搭桥不是先看好不好看，要先看距离够不够。",
@@ -2424,10 +2457,10 @@ function makeBridgeRounds(): RoundInput[] {
     {
       level: "L5",
       prompt: "河变宽了，一块木板不够。怎么办？",
-      instruction: "可以把两块木板接起来。",
+      instruction: "比较一块木板和两块接起来的总长度，哪一种能碰到两岸？",
       sceneImage: bridgeWideScene,
       sequence: ["🐻", "宽河", "?", "🏁"],
-      choices: [{ label: "用两块木板", value: "two-planks" }, { label: "只用短木板", value: "short" }, { label: "不搭桥", value: "none" }],
+      choices: [{ label: "用两块木板接起来", value: "two-planks" }, { label: "换一块同样长的", value: "same-length" }, { label: "把两块木板分开放", value: "separate" }],
       answer: "two-planks",
       success: "两块木板接起来，长度才够。",
       retry: "一块不够时，可以想怎么合起来。",
@@ -2437,7 +2470,7 @@ function makeBridgeRounds(): RoundInput[] {
     {
       level: "L6",
       prompt: "只能用 2 块木板，哪种计划更好？",
-      instruction: "先选长的，再用短的补上。",
+      instruction: "把每种两块木板的组合都和河宽比一比。",
       sceneImage: bridgeTwoPlanksScene,
       visualGroups: [
         { label: "木板", items: ["长", "短", "太短"] },
@@ -2453,7 +2486,7 @@ function makeBridgeRounds(): RoundInput[] {
   ];
   const variants = [
     {
-      prompt: "要过窄河，应该选哪块木板？",
+      prompt: "图里的河虽然不宽，但短木板仍碰不到对岸。哪块木板能搭过去？",
       sceneImage: bridgeNarrowScene,
       animal: "🐻",
       seq: ["小河", "?", "🏁"],
@@ -2519,10 +2552,10 @@ function makeClockTimeRounds(): RoundInput[] {
     clockReadCase(9, 0, "09:00", ["08:00", "09:30"], "时针（短针）指到 9，分针（长针）指到 12。"),
     clockReadCase(12, 0, "12:00", ["01:00", "12:30"], "时针（短针）指到 12，分针（长针）也指到 12。"),
     clockReadCase(4, 0, "04:00", ["05:00", "04:30"], "时针（短针）指到 4，分针（长针）指到 12。"),
-    clockReadCase(3, 30, "03:30", ["03:00", "04:30"], "分针（长针）指到 6，时针（短针）走过 3 但还没到 4。"),
-    clockReadCase(6, 30, "06:30", ["06:00", "07:30"], "分针（长针）指到 6，时针（短针）在 6 和 7 中间。"),
-    clockReadCase(8, 30, "08:30", ["08:00", "09:30"], "分针（长针）指到 6，时针（短针）在 8 和 9 中间。"),
-    clockReadCase(10, 30, "10:30", ["10:00", "11:30"], "分针（长针）指到 6，时针（短针）在 10 和 11 中间。"),
+    clockReadCase(3, 30, "03:30", ["03:00", "04:30"], "时针（短针）走过 3 但还没到 4，分针（长针）指到 6。"),
+    clockReadCase(6, 30, "06:30", ["06:00", "07:30"], "时针（短针）在 6 和 7 中间，分针（长针）指到 6。"),
+    clockReadCase(8, 30, "08:30", ["08:00", "09:30"], "时针（短针）在 8 和 9 中间，分针（长针）指到 6。"),
+    clockReadCase(10, 30, "10:30", ["10:00", "11:30"], "时针（短针）在 10 和 11 中间，分针（长针）指到 6。"),
   ];
 
   const conversionCases = [
@@ -2573,12 +2606,12 @@ function makeClockTimeRounds(): RoundInput[] {
 
 function clockReadCase(hour: number, minute: 0 | 30, answer: string, distractors: string[], extraClue: string): RoundInput {
   const handClue = minute === 0
-    ? `分针（长针）在 12，表示 00 分；时针（短针）指着 ${hour}。`
-    : `分针（长针）在 6，表示 30 分；时针（短针）走过 ${hour}，还没到 ${hour === 12 ? 1 : hour + 1}。`;
+    ? `时针（短针）指着 ${hour}；分针（长针）在 12，表示 00 分。`
+    : `时针（短针）走过 ${hour}，还没到 ${hour === 12 ? 1 : hour + 1}；分针（长针）在 6，表示 30 分。`;
   return {
     level: minute === 0 ? "L3" : "L4",
     prompt: "这个时钟显示哪个时间？",
-    instruction: "先看分针（长针），再看时针（短针）。",
+    instruction: "先看时针（短针）确定小时数，再看分针（长针）确定分钟。",
     clockChallenge: {
       hour,
       minute,
@@ -2588,12 +2621,12 @@ function clockReadCase(hour: number, minute: 0 | 30, answer: string, distractors
     choices: choiceSet([answer, ...distractors]),
     answer,
     success: `${answer}对。${handClue}${extraClue}`,
-    retry: "先看分针（长针）：分针在 12 表示 00 分，分针在 6 表示 30 分；再看时针（短针）指到哪里或走过哪里。",
-    parentPrompt: "请她指着钟面说：分针（长针）在哪里？时针（短针）在哪里？所以为什么是这个时间？",
+    retry: "先看时针（短针）指到哪里或走过哪里，确定小时数；再看分针（长针），分针在 12 表示 00 分，在 6 表示 30 分。",
+    parentPrompt: "请她指着钟面说：时针（短针）在哪里？分针（长针）在哪里？所以为什么是这个时间？",
     abilityTags: minute === 0 ? ["认识时钟", "00分"] : ["认识时钟", "30分"],
     difficultyNote: minute === 0
-      ? "00 分读钟：先判断分针（长针）在 12，再把时针（短针）指向的数字读成 HH:MM。"
-      : "30 分读钟：需要知道分针（长针）在 6 表示 30 分，并判断时针（短针）已经走过哪个数字。",
+      ? "00 分读钟：先看时针（短针）指向的数字确定小时数，再看分针（长针）在 12 确定为 00 分。"
+      : "30 分读钟：先判断时针（短针）已经走过哪个数字，再看分针（长针）在 6 确定为 30 分。",
   };
 }
 
@@ -3408,7 +3441,7 @@ function makeRotationDirectionRounds(): RoundInput[] {
   ].map((item, index) => ({
     level: index < 2 ? "L5" as AbilityLevel : "L6" as AbilityLevel,
     prompt: "箭头每次逆时针转一下，下一个指哪里？",
-    instruction: "逆时针就是往左边转。",
+    instruction: "逆时针和钟表转动方向相反，沿四个方向一格一格转。",
     sceneImage,
     sequence: item.sequence,
     choices: choiceSet(["上面", "右边", "下面", "左边"]),

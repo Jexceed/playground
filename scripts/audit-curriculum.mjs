@@ -1,4 +1,4 @@
-import { existsSync, readFileSync } from "node:fs";
+import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 import ts from "typescript";
 
@@ -167,6 +167,12 @@ if (!progressiveSetGameSource.includes("clock-no-context")) {
 if (!progressiveSetGameSource.includes("clockHandEndpoint") || /className="clock-hand[^>]+transform=\{`rotate/.test(progressiveSetGameSource)) {
   problems.push("clock hands should be drawn from calculated center-to-endpoint coordinates, not rotated line primitives");
 }
+if (/aria-label=\{`分针也就是长针/.test(progressiveSetGameSource)) {
+  problems.push("clock face aria label should describe 时针/短针 before 分针/长针");
+}
+if (progressiveSetGameSource.includes("分针（长针）在 12，看时针（短针）") || progressiveSetGameSource.includes("分针（长针）在 6，再看时针（短针）")) {
+  problems.push("clock face hint should guide 时针/短针 before 分针/长针");
+}
 if (!/readLastPlayLocation/.test(storageSource) || !/saveLastPlayLocation/.test(storageSource)) {
   problems.push("storage should expose readLastPlayLocation and saveLastPlayLocation helpers");
 }
@@ -233,6 +239,7 @@ checkReferenceReinforcementScope();
 
 for (const game of games) {
   if (!game.rounds.length) problems.push(`${game.id}: no rounds`);
+  checkChoicePositionBalance(game);
   const roundSignatures = new Map();
   for (const round of game.rounds) {
     const context = `${game.id}/${round.id}`;
@@ -265,6 +272,7 @@ for (const game of games) {
     if (game.world === "logic" || game.world === "graphic") {
       checkLogicDifficultyNote(round, context);
     }
+    checkCurriculumIntegrityWording(game, round, context);
     if (game.world === "graphic") {
       checkGraphicRoundQuality(round, context);
     }
@@ -386,6 +394,12 @@ if (existsSync("public/audio/voice/manifest.json")) {
   if (!allowedManifestProviders.has(manifest.provider)) {
     problems.push(`audio manifest provider is not an approved local pack generator: ${manifest.provider ?? "missing"}`);
   }
+  if (manifest.provider !== "edge-tts Python package") {
+    problems.push(`release audio manifest should use the standard Edge provider, found ${manifest.provider ?? "missing"}`);
+  }
+  if (manifest.voice !== "zh-CN-XiaoxiaoNeural") {
+    problems.push(`release audio manifest should use zh-CN-XiaoxiaoNeural, found ${manifest.voice ?? "missing"}`);
+  }
   if (manifest.provider === "mixed local") {
     if (!Array.isArray(manifest.providers) || !manifest.providers.length) {
       problems.push("mixed audio manifest missing providers");
@@ -472,6 +486,17 @@ if (existsSync("public/audio/voice/manifest.json")) {
           }
         }
       }
+    }
+    const referencedVoiceFiles = new Set([
+      ...manifest.entries.map((entry) => manifestSrcToFilePath(entry.src)).filter(Boolean),
+      ...(manifest.segmentEntries ?? []).flatMap((entry) => (entry.srcs ?? []).map(manifestSrcToFilePath).filter(Boolean)),
+    ]);
+    const runtimeVoiceRoot = join("public", "audio", "voice", "zh-CN");
+    const orphanVoiceFiles = listFilesRecursively(runtimeVoiceRoot).filter((filePath) => !referencedVoiceFiles.has(filePath));
+    if (orphanVoiceFiles.length) {
+      problems.push(
+        `runtime voice directory has ${orphanVoiceFiles.length} unreferenced files: ${orphanVoiceFiles.slice(0, 10).join(", ")}`,
+      );
     }
   }
 }
@@ -828,6 +853,11 @@ function checkGraphicChallenge(round, context) {
       problems.push(`${context}: answer choice ${choice.value} has no drawn graphic option`);
     }
   }
+  const choiceValueOrder = round.choices.map((choice) => choice.value);
+  const optionValueOrder = challenge.options.map((option) => option.value);
+  if (JSON.stringify(choiceValueOrder) !== JSON.stringify(optionValueOrder)) {
+    problems.push(`${context}: graphic answer choices and drawn options should have identical value order`);
+  }
   for (const option of challenge.options) {
     if (!option.figure?.shape && !option.figures?.length) {
       problems.push(`${context}: graphic option ${option.value} should include a drawable shape`);
@@ -876,6 +906,68 @@ function checkGraphicChallenge(round, context) {
       problems.push(`${context}: layer-overlap option labels should describe the drawn option, not reveal the distractor rationale`);
     }
   }
+}
+
+function checkChoicePositionBalance(game) {
+  const buckets = new Map();
+  for (const round of game.rounds) {
+    const choiceCount = round.choices.length;
+    if (!buckets.has(choiceCount)) buckets.set(choiceCount, []);
+    buckets.get(choiceCount).push(round);
+  }
+  for (const [choiceCount, rounds] of buckets) {
+    if (choiceCount < 2) continue;
+    const positions = rounds.map((round) => round.choices.findIndex((choice) => choice.value === round.answer));
+    if (positions.some((position) => position < 0)) continue;
+    const counts = Array.from({ length: choiceCount }, (_, index) => positions.filter((position) => position === index).length);
+    if (Math.max(...counts) - Math.min(...counts) > 1) {
+      problems.push(`${game.id}: correct choice positions for ${choiceCount}-choice rounds are imbalanced: ${counts.join("/")}`);
+    }
+    let runLength = 1;
+    for (let index = 1; index < positions.length; index += 1) {
+      runLength = positions[index] === positions[index - 1] ? runLength + 1 : 1;
+      if (runLength > 2) {
+        problems.push(`${game.id}: correct choice position ${positions[index] + 1} repeats more than twice in ${choiceCount}-choice rounds`);
+        break;
+      }
+    }
+  }
+}
+
+function checkCurriculumIntegrityWording(game, round, context) {
+  if (/先看河有多宽|可以把两块木板接起来|先选长的/.test(round.instruction)) {
+    problems.push(`${context}: bridge instruction reveals the intended answer instead of guiding comparison`);
+  }
+  if (/逆时针就是往左边转/.test(round.instruction)) {
+    problems.push(`${context}: rotation instruction can reveal the next direction`);
+  }
+  const evidenceText = `${round.prompt} ${round.instruction} ${round.success} ${round.retry} ${round.parentPrompt} ${round.difficultyNote ?? ""}`;
+  if (/谁离倒下的杯子最近|离倒下的杯子最近|近的线索是不是比远的线索更有用|近处强线索|近处线索|线索通常离事件更近|线索离洒水这件事最近/.test(evidenceText)) {
+    problems.push(`${context}: spilled-water reasoning should seek direct evidence instead of treating proximity as proof`);
+  }
+  if (game.id === "math-clock-time" && round.clockChallenge?.mode === "read-time") {
+    for (const field of ["instruction", "success", "retry", "parentPrompt", "difficultyNote"]) {
+      const text = round[field] ?? "";
+      const hourIndex = text.indexOf("时针（短针）");
+      const minuteIndex = text.indexOf("分针（长针）");
+      if (hourIndex < 0 || minuteIndex < 0 || hourIndex > minuteIndex) {
+        problems.push(`${context}: ${field} should introduce 时针（短针） before 分针（长针）`);
+      }
+    }
+  }
+}
+
+function manifestSrcToFilePath(src) {
+  if (!src) return null;
+  return join("public", decodeURIComponent(src).replace(/^\/+/, ""));
+}
+
+function listFilesRecursively(root) {
+  if (!existsSync(root)) return [];
+  return readdirSync(root, { withFileTypes: true }).flatMap((entry) => {
+    const entryPath = join(root, entry.name);
+    return entry.isDirectory() ? listFilesRecursively(entryPath) : [entryPath];
+  });
 }
 
 function checkPatternTrainRoundQuality(round, context) {

@@ -79,7 +79,7 @@ guidance text.
 
 **Why this priority**: The project treats audio and parent prompts as part of
 the learning surface. Clock reading needs spoken repetition so the child can say
-"分针（长针）在 12，时针（短针）在 7".
+"先看时针（短针）在 7，再看分针（长针）在 12".
 
 **Independent Test**: Exported voice lines include the new clock game text, the
 voice manifest is synchronized, and the curriculum audit rejects clock rounds
@@ -88,7 +88,7 @@ whose wording does not name the hand or daily-context evidence.
 **Acceptance Scenarios**:
 
 1. **Given** a clock-reading round, **When** success feedback plays, **Then** it
-   states the observed hand positions and the time.
+   states the hour-hand position before the minute-hand position and the time.
 2. **Given** a daily-context round, **When** parent guidance is shown, **Then**
    it asks the parent to have the child explain the activity clue and the time
    clue.

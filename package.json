@@ -11,6 +11,7 @@
     "release:nas": "node scripts/build-release.mjs",
     "test:release": "node --test scripts/build-release.test.mjs",
     "test:speech": "node --test scripts/speech.test.mjs scripts/round-speech-navigation.test.mjs",
+    "test:voice-assets": "node --test scripts/prune-voice-assets.test.mjs",
     "mac:dev": ". \"$HOME/.cargo/env\" 2>/dev/null || true; tauri dev",
     "mac:build": ". \"$HOME/.cargo/env\" 2>/dev/null || true; tauri build --bundles app",
     "mac:build:dmg": ". \"$HOME/.cargo/env\" 2>/dev/null || true; tauri build --bundles dmg",
@@ -22,7 +23,8 @@
     "generate:mac-voices": "node scripts/generate-mac-voices.mjs",
     "generate:edge-voices": "node scripts/generate-edge-voices.mjs",
     "generate:f5-voices": "node scripts/generate-f5-voices.mjs",
-    "generate:voice-segments": "node scripts/generate-voice-segments.mjs"
+    "generate:voice-segments": "node scripts/generate-voice-segments.mjs",
+    "prune:voice-assets": "node scripts/prune-voice-assets.mjs"
   },
   "dependencies": {
     "@vitejs/plugin-react": "^5.0.0",

@@ -26,7 +26,8 @@ Expected:
 - Later rounds include generated activity scenes and `HH:MM` electronic clock
   choices.
 - Answer choices are child-readable and do not reveal through unrelated clues.
-- Success/retry/parent text asks the child to explain hand evidence or
+- Visible hints and success/retry/parent text ask the child to identify the
+  hour hand/short hand first, then the minute hand/long hand, or explain
   scene-based 24-hour conversion evidence.
 
 ## 3. Export and generate local voice
