@@ -2313,6 +2313,11 @@ button:focus-visible {
   font-weight: 800;
 }
 
+.tag-list .tag-overflow {
+  color: #667085;
+  background: #f2f4f7;
+}
+
 .muted {
   color: var(--muted);
 }

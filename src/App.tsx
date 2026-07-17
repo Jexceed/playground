@@ -7,6 +7,7 @@ import { speak, stopSpeech, warmVoiceManifest } from "./speech";
 import type { GameConfig, GameRound, LastPlayLocation, ProgressLog, WorldId } from "./types";
 
 const launchBrandAudioSrc = "/audio/brand/launch-brand-shout.wav";
+const maxVisibleProgressTags = 12;
 
 export function App() {
   const [initialPlayLocation] = useState(resolveInitialPlayLocation);
@@ -54,6 +55,8 @@ export function App() {
   }, []);
   const completed = progress.completedIds.includes(selectedGame.id);
   const completedRoundSet = useMemo(() => new Set(progress.completedRoundIds), [progress.completedRoundIds]);
+  const visibleProgressTags = progress.abilityTags.slice(0, maxVisibleProgressTags);
+  const hiddenProgressTagCount = Math.max(0, progress.abilityTags.length - visibleProgressTags.length);
 
   function completeGame(game: GameConfig) {
     const next = addCompletion(progress, game.id, game.abilityTags);
@@ -212,9 +215,12 @@ export function App() {
             </div>
             {progress.abilityTags.length > 0 ? (
               <div className="tag-list">
-                {progress.abilityTags.map((tag) => (
+                {visibleProgressTags.map((tag) => (
                   <span key={tag}>{tag}</span>
                 ))}
+                {hiddenProgressTagCount > 0 && (
+                  <span className="tag-overflow">还有 {hiddenProgressTagCount} 个</span>
+                )}
               </div>
             ) : (
               <p className="muted">完成一个小任务后，这里会留下能力标签。</p>

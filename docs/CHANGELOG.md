@@ -3,6 +3,12 @@
 All meaningful project changes should be recorded here. Keep entries factual and
 grouped by date.
 
+## 2026-07-17
+
+- Limited the right-side 成长记录 panel to 12 visible ability tags and added a
+  compact hidden-count marker so long progress histories no longer stretch the
+  side panel while preserving all saved progress data.
+
 ## 2026-07-12
 
 - Added deterministic per-game, per-choice-count answer placement so correct
