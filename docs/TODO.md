@@ -9,6 +9,9 @@ small enough to turn into a Spec Kit feature.
 
 ## P1
 
+- Configure Apple Developer ID signing/notarization and Windows production code
+  signing in protected GitHub environments; until both are verified, keep
+  desktop packages marked as test pre-releases.
 - Migrate the built-in TypeScript question bank to validated JSON content packs
   under `content/`, including schema validation, fallback behavior, and
   curriculum audit coverage.

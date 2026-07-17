@@ -61,14 +61,16 @@ For NAS use, map port `8080` to any available NAS port. The Compose file mounts:
 
 That lets a NAS operator update the content boundary without rebuilding the image. The container serves static files with Nginx and does not run Vite or import source game modules at runtime.
 
-## Mac Installable App
+## Mac ARM64 Installable App
 
-Mac packaging uses Tauri 2 and consumes the same Vite build output.
+Mac packaging uses Tauri 2, targets Apple Silicon explicitly, and consumes the
+same Vite build output. Intel Mac is not a supported target.
 
 Prerequisites:
 
 - Rust toolchain installed from `https://rustup.rs/`
 - Xcode Command Line Tools installed
+- An Apple Silicon Mac
 - Project dependencies installed with `pnpm install`
 
 Development app:
@@ -89,16 +91,16 @@ Build the previewable `.app` bundle:
 pnpm mac:build
 ```
 
-The default command builds a macOS `.app` bundle under:
+The command builds an ARM64 macOS `.app` bundle under:
 
 ```text
-src-tauri/target/release/bundle/macos/小小思考屋.app
+src-tauri/target/aarch64-apple-darwin/release/bundle/macos/小小思考屋.app
 ```
 
 Preview the built app directly:
 
 ```bash
-open "src-tauri/target/release/bundle/macos/小小思考屋.app"
+open "src-tauri/target/aarch64-apple-darwin/release/bundle/macos/小小思考屋.app"
 ```
 
 Use this `.app` preview for Mac-specific checks before treating a change as
@@ -111,6 +113,9 @@ Optional DMG packaging can be attempted with:
 ```bash
 pnpm mac:build:dmg
 ```
+
+The DMG is written below
+`src-tauri/target/aarch64-apple-darwin/release/bundle/dmg/`.
 
 Install or update the app on the current Mac:
 
@@ -132,18 +137,92 @@ open "/Applications/小小思考屋.app"
 
 The Tauri config runs `pnpm build` and points `frontendDist` to `../dist`, following the Tauri v2 Vite integration model.
 
+## Windows x64 Installable App
+
+Build Windows packages on a 64-bit Windows 10/11 machine or the configured
+GitHub Actions Windows runner. Native Windows prerequisites are:
+
+- Rust stable with the `x86_64-pc-windows-msvc` target
+- Microsoft Visual Studio C++ Build Tools
+- Node.js 22 and pnpm 11.7
+- Project dependencies installed with `pnpm install --frozen-lockfile`
+
+Build the NSIS setup executable:
+
+```powershell
+pnpm win:build
+```
+
+The installer is generated below:
+
+```text
+src-tauri/target/x86_64-pc-windows-msvc/release/bundle/nsis/
+```
+
+The installer uses Tauri's WebView2 download bootstrapper when WebView2 is not
+already available. The current Windows package is not production-signed, so
+SmartScreen can display an “unknown publisher” warning.
+
+## GitHub Desktop Pre-Releases
+
+`.github/workflows/desktop-release.yml` builds the two supported packages:
+
+- `小小思考屋_<version>_macOS-arm64.dmg`
+- `小小思考屋_<version>_Windows-x64-setup.exe`
+
+The workflow accepts a pushed `v<major>.<minor>.<patch>` tag or a manual run with
+an existing `release_tag`. Before creating packages, keep these three versions
+identical:
+
+- `package.json`
+- `src-tauri/tauri.conf.json`
+- `src-tauri/Cargo.toml`
+
+Validate the intended tag locally:
+
+```bash
+pnpm test:desktop-release
+pnpm release:validate -- --tag v0.1.0
+```
+
+For a confirmed milestone, commit the source revision, create its matching tag,
+and push the tag:
+
+```bash
+git tag v0.1.0
+git push origin v0.1.0
+```
+
+To retry a draft from an existing tag with GitHub CLI:
+
+```bash
+gh workflow run desktop-release.yml -f release_tag=v0.1.0
+```
+
+The workflow creates or reuses one draft pre-release, builds macOS ARM64 on
+`macos-15` and Windows x64 on `windows-2025`, and publishes only after both
+required assets exist. If validation or either build fails, the release remains
+a draft. A published release for the same tag is never overwritten.
+
+Until Apple notarization and Windows code-signing credentials are configured,
+all automated desktop releases remain visibly marked as test pre-releases with
+installation warnings. Do not describe them as production-trusted packages.
+
 ## Verification
 
 Before treating packaging work as complete, run:
 
 ```bash
+pnpm test:desktop-release
+pnpm release:validate -- --tag v0.1.0
 pnpm build
 pnpm audit:curriculum
 pnpm test:release
 pnpm mac:build
+pnpm mac:install
 ```
 
 On a Mac development machine, also open the generated bundle at
-`src-tauri/target/release/bundle/macos/小小思考屋.app` for preview/testing. For
-release-style local validation, run `pnpm mac:install` and open
+`src-tauri/target/aarch64-apple-darwin/release/bundle/macos/小小思考屋.app` for
+preview/testing. For release-style local validation, run `pnpm mac:install` and open
 `/Applications/小小思考屋.app`.

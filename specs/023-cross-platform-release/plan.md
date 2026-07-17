@@ -1,118 +1,128 @@
-# Implementation Plan: [FEATURE]
+# Implementation Plan: Cross-Platform Desktop Release
 
-**Branch**: `[###-feature-name]` | **Date**: [DATE] | **Spec**: [link]
+**Branch**: `dev` | **Date**: 2026-07-17 | **Spec**: [spec.md](./spec.md)
 
-**Input**: Feature specification from `/specs/[###-feature-name]/spec.md`
-
-**Note**: This template is filled in by the `/speckit-plan` command. See `.specify/templates/plan-template.md` for the execution workflow.
+**Input**: Feature specification from `specs/023-cross-platform-release/spec.md`
 
 ## Summary
 
-[Extract from feature spec: primary requirement + technical approach from research]
+Add a repeatable GitHub release pipeline for the existing Tauri 2 desktop shell.
+One version tag will build a macOS Apple Silicon DMG on an ARM64 macOS runner and
+a Windows x64 NSIS installer on a Windows runner. Both jobs upload clearly named
+assets to one draft pre-release; a dependent finalization job publishes the
+pre-release only after both builds and all quality gates succeed. Local macOS
+build and installation commands remain available.
 
 ## Technical Context
 
-<!--
-  ACTION REQUIRED: Replace the content in this section with the technical details
-  for the project. The structure here is presented in advisory capacity to guide
-  the iteration process.
--->
+**Language/Version**: TypeScript 5.8, Node.js 22 LTS, Rust stable, GitHub Actions YAML
 
-**Language/Version**: [e.g., Python 3.11, Swift 5.9, Rust 1.75 or NEEDS CLARIFICATION]
+**Primary Dependencies**: React 19, Vite 7, Tauri 2.11, `tauri-apps/tauri-action@v1`
 
-**Primary Dependencies**: [e.g., FastAPI, UIKit, LLVM or NEEDS CLARIFICATION]
+**Storage**: Static bundled files plus GitHub Release metadata; no application
+data-store changes
 
-**Storage**: [if applicable, e.g., PostgreSQL, CoreData, files or N/A]
+**Testing**: Node.js built-in test runner, release configuration validation,
+TypeScript/Vite production build, curriculum audit, Tauri macOS bundle build
 
-**Testing**: [e.g., pytest, XCTest, cargo test or NEEDS CLARIFICATION]
+**Target Platform**: macOS Apple Silicon (`aarch64-apple-darwin`) and Windows
+10/11 x64 (`x86_64-pc-windows-msvc`)
 
-**Target Platform**: [e.g., Linux server, iOS 15+, WASM or NEEDS CLARIFICATION]
+**Project Type**: React/Vite single-page app wrapped as a Tauri desktop application
 
-**Project Type**: [e.g., library/cli/web-service/mobile-app/compiler/desktop-app or NEEDS CLARIFICATION]
+**Performance Goals**: Both platform jobs start concurrently after one validation
+job and complete without manual artifact transfer
 
-**Performance Goals**: [domain-specific, e.g., 1000 req/s, 10k lines/sec, 60 fps or NEEDS CLARIFICATION]
+**Constraints**: Initial CI packages are unsigned or ad-hoc signed and therefore
+must remain visibly marked as pre-release builds; Intel Mac, Windows ARM/32-bit,
+automatic updates, and app stores are out of scope; local `pnpm mac:install`
+behavior must be preserved
 
-**Constraints**: [domain-specific, e.g., <200ms p95, <100MB memory, offline-capable or NEEDS CLARIFICATION]
-
-**Scale/Scope**: [domain-specific, e.g., 10k users, 1M LOC, 50 screens or NEEDS CLARIFICATION]
+**Scale/Scope**: One application, two release packages, one GitHub Release, and
+one source tag per version
 
 ## Constitution Check
 
-*GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
+*GATE: Passed before Phase 0 and re-checked after Phase 1.*
 
-- Child-centered learning integrity: feature preserves parent-child thinking value and avoids worksheet-only behavior.
-- Spec-driven traceability: requirements, assets, docs, and verification are traceable to this feature spec.
-- Auditable local assets: new or moved images/audio are local, registered, and covered by audit checks.
-- Verification before completion: plan names exact commands, including `pnpm build` and `pnpm audit:curriculum` when project behavior or assets change.
-- Documentation hygiene: `AGENTS.md`, `docs/CHANGELOG.md`, `docs/TODO.md`, and relevant docs are updated when the feature changes project rules or follow-up work.
+- **Child-centered learning integrity — PASS**: The change affects packaging only;
+  game content, interaction, feedback, and parent guidance remain unchanged.
+- **Spec-driven traceability — PASS**: `spec.md`, this plan, research, contract,
+  quickstart, tasks, implementation, docs, and validation are kept under the
+  existing feature and project boundaries.
+- **Auditable local assets — PASS**: No image or voice assets change. Existing
+  bundled icons and local runtime media are reused.
+- **Verification before completion — PASS**: Validation includes
+  `pnpm build`, `pnpm audit:curriculum`, release configuration tests,
+  `pnpm mac:build`, and `pnpm mac:install`.
+- **Documentation hygiene — PASS**: `docs/deployment.md`,
+  `docs/build-generation-guide.md`, `docs/CHANGELOG.md`, and `docs/TODO.md`
+  are part of the implementation tasks.
+
+## Phase 0: Research
+
+Technical decisions and rejected alternatives are recorded in
+[research.md](./research.md). All technical unknowns are resolved.
+
+## Phase 1: Design
+
+- Release state and validation rules: [data-model.md](./data-model.md)
+- Workflow interface and artifact contract:
+  [contracts/desktop-release.md](./contracts/desktop-release.md)
+- End-to-end validation guide: [quickstart.md](./quickstart.md)
+
+The design uses explicit platform bundle arguments rather than a single global
+bundle target, because DMG and NSIS are platform-specific. A draft release is
+prepared before the matrix build, platform assets are uploaded independently,
+and a final job publishes the pre-release only after every required job succeeds.
+
+### Post-design Constitution Check
+
+All five gates remain passed. The design introduces no content or runtime asset
+changes, keeps the existing local macOS flow, and adds explicit verification and
+documentation work.
 
 ## Project Structure
 
 ### Documentation (this feature)
 
 ```text
-specs/[###-feature]/
-├── plan.md              # This file (/speckit-plan command output)
-├── research.md          # Phase 0 output (/speckit-plan command)
-├── data-model.md        # Phase 1 output (/speckit-plan command)
-├── quickstart.md        # Phase 1 output (/speckit-plan command)
-├── contracts/           # Phase 1 output (/speckit-plan command)
-└── tasks.md             # Phase 2 output (/speckit-tasks command - NOT created by /speckit-plan)
+specs/023-cross-platform-release/
+├── spec.md
+├── plan.md
+├── research.md
+├── data-model.md
+├── quickstart.md
+├── contracts/
+│   └── desktop-release.md
+├── checklists/
+│   └── requirements.md
+└── tasks.md
 ```
 
 ### Source Code (repository root)
-<!--
-  ACTION REQUIRED: Replace the placeholder tree below with the concrete layout
-  for this feature. Delete unused options and expand the chosen structure with
-  real paths (e.g., apps/admin, packages/something). The delivered plan must
-  not include Option labels.
--->
 
 ```text
-# [REMOVE IF UNUSED] Option 1: Single project (DEFAULT)
-src/
-├── models/
-├── services/
-├── cli/
-└── lib/
-
-tests/
-├── contract/
-├── integration/
-└── unit/
-
-# [REMOVE IF UNUSED] Option 2: Web application (when "frontend" + "backend" detected)
-backend/
-├── src/
-│   ├── models/
-│   ├── services/
-│   └── api/
-└── tests/
-
-frontend/
-├── src/
-│   ├── components/
-│   ├── pages/
-│   └── services/
-└── tests/
-
-# [REMOVE IF UNUSED] Option 3: Mobile + API (when "iOS/Android" detected)
-api/
-└── [same as backend above]
-
-ios/ or android/
-└── [platform-specific structure: feature modules, UI flows, platform tests]
+.github/
+└── workflows/
+    └── desktop-release.yml
+scripts/
+├── validate-desktop-release.mjs
+└── desktop-release.test.mjs
+src-tauri/
+└── tauri.conf.json
+package.json
+docs/
+├── deployment.md
+├── build-generation-guide.md
+├── CHANGELOG.md
+└── TODO.md
 ```
 
-**Structure Decision**: [Document the selected structure and reference the real
-directories captured above. For this project, prefer existing `src/`, `public/`,
-`docs/`, and `specs/` boundaries unless the spec justifies a new top-level area.]
+**Structure Decision**: Keep one React/Vite/Tauri application. Add only release
+automation and validation files at established repository boundaries; do not
+create a second desktop project or duplicate frontend assets.
 
 ## Complexity Tracking
 
-> **Fill ONLY if Constitution Check has violations that must be justified**
-
-| Violation | Why Needed | Simpler Alternative Rejected Because |
-|-----------|------------|-------------------------------------|
-| [e.g., 4th project] | [current need] | [why 3 projects insufficient] |
-| [e.g., Repository pattern] | [specific problem] | [why direct DB access insufficient] |
+No constitution violations require exceptions.

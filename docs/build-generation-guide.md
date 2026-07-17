@@ -99,7 +99,7 @@ pnpm audit:curriculum
 
 ```bash
 pnpm mac:build
-open "src-tauri/target/release/bundle/macos/小小思考屋.app"
+open "src-tauri/target/aarch64-apple-darwin/release/bundle/macos/小小思考屋.app"
 ```
 
 准备做本机安装或里程碑验证时，再运行：
@@ -111,6 +111,24 @@ open "/Applications/小小思考屋.app"
 
 浏览器预览只用于快速排版和交互迭代；Mac 端签收以生成出来的 `.app`
 为准。
+
+桌面发布还必须验证版本和跨平台流水线配置：
+
+```bash
+pnpm test:desktop-release
+pnpm release:validate -- --tag v0.1.0
+```
+
+当前桌面发布范围只有 Apple Silicon Mac 和 64 位 Windows 10/11。Windows
+本机可运行 `pnpm win:build` 生成 NSIS 安装程序；统一发布则推送与源码版本
+一致的 `v<major>.<minor>.<patch>` 标签，由
+`.github/workflows/desktop-release.yml` 并行生成：
+
+- `小小思考屋_<version>_macOS-arm64.dmg`
+- `小小思考屋_<version>_Windows-x64-setup.exe`
+
+在 Apple 公证和 Windows 商业代码签名完成前，流水线只能发布带明确安全
+提醒的 GitHub 预发布版，不能作为已完成平台信任认证的正式发行版。
 
 并检查：
 

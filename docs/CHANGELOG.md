@@ -8,6 +8,14 @@ grouped by date.
 - Limited the right-side 成长记录 panel to 12 visible ability tags and added a
   compact hidden-count marker so long progress histories no longer stretch the
   side panel while preserving all saved progress data.
+- Added a test-covered Tauri desktop release workflow that validates one source
+  version/tag, builds Apple Silicon DMG and Windows x64 NSIS packages on native
+  GitHub runners, keeps partial failures as drafts, and publishes only after
+  both clearly named assets exist.
+- Added explicit Mac ARM64 and Windows x64 local build commands, release
+  metadata validation across `package.json`, Tauri, and Cargo, test-signing
+  warnings, safe draft retry behavior, and cross-platform release operating
+  documentation.
 
 ## 2026-07-12
 

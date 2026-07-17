@@ -31,5 +31,6 @@
 
 ## Notes
 
-- Validation completed on 2026-07-13 with no unresolved clarification markers.
+- Validation completed on 2026-07-17 after narrowing the supported targets to
+  macOS Apple Silicon and Windows x64, with no unresolved clarification markers.
 - Technical platform names appear only where they define the user-visible release scope.

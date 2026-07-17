@@ -1,0 +1,286 @@
+name: Desktop Release
+
+run-name: Desktop release ${{ github.event_name == 'workflow_dispatch' && inputs.release_tag || github.ref_name }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: Existing version tag to build, for example v0.1.0
+        required: true
+        type: string
+  push:
+    tags:
+      - "v*.*.*"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: desktop-release-${{ github.event_name == 'workflow_dispatch' && inputs.release_tag || github.ref_name }}
+  cancel-in-progress: false
+
+env:
+  NODE_VERSION: "22"
+  PNPM_VERSION: "11.7.0"
+  GH_REPO: ${{ github.repository }}
+  RELEASE_TAG: ${{ github.event_name == 'workflow_dispatch' && inputs.release_tag || github.ref_name }}
+
+jobs:
+  validate:
+    name: Validate release inputs
+    runs-on: ubuntu-24.04
+    outputs:
+      tag: ${{ steps.release.outputs.tag }}
+      version: ${{ steps.release.outputs.version }}
+      revision: ${{ steps.source.outputs.revision }}
+    steps:
+      - name: Check out the existing release tag
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ env.RELEASE_TAG }}
+          fetch-depth: 0
+
+      - name: Verify tagged source revision
+        id: source
+        shell: bash
+        run: |
+          git fetch --force --tags origin
+          tag_revision="$(git rev-parse "refs/tags/${RELEASE_TAG}^{commit}")"
+          head_revision="$(git rev-parse HEAD)"
+          if [[ "${tag_revision}" != "${head_revision}" ]]; then
+            echo "Checked out revision does not match ${RELEASE_TAG}." >&2
+            exit 1
+          fi
+          echo "revision=${head_revision}" >> "${GITHUB_OUTPUT}"
+
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: ${{ env.PNPM_VERSION }}
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: pnpm
+
+      - name: Install locked dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Validate desktop release configuration
+        run: pnpm test:desktop-release
+
+      - name: Validate source and tag versions
+        id: release
+        run: pnpm release:validate -- --tag "${RELEASE_TAG}"
+
+      - name: Build web application
+        run: pnpm build
+
+      - name: Audit curriculum
+        run: pnpm audit:curriculum
+
+      - name: Record validation evidence
+        shell: bash
+        run: |
+          {
+            echo "## Desktop release validation"
+            echo
+            echo "- Tag: \`${RELEASE_TAG}\`"
+            echo "- Revision: \`${{ steps.source.outputs.revision }}\`"
+            echo "- Version metadata: consistent"
+            echo "- Frontend build: passed"
+            echo "- Curriculum audit: passed"
+            echo "- Release configuration tests: passed"
+          } >> "${GITHUB_STEP_SUMMARY}"
+
+  prepare:
+    name: Prepare draft pre-release
+    needs: validate
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+      RELEASE_TAG: ${{ needs.validate.outputs.tag }}
+      VERSION: ${{ needs.validate.outputs.version }}
+      REVISION: ${{ needs.validate.outputs.revision }}
+    steps:
+      - name: Create or reuse draft pre-release
+        shell: bash
+        run: |
+          cat > release-notes.md <<EOF
+          ## 支持的电脑
+
+          - Apple 芯片 Mac（M1、M2、M3、M4 及后续 ARM64 机型）
+          - 64 位 Windows 10/11 电脑
+
+          Intel 芯片 Mac、Windows ARM 和 32 位 Windows 暂不支持。
+
+          ## 安装前请注意
+
+          这是用于测试的预发布版本，并非已完成平台信任认证的正式发行版。
+
+          - macOS 安装包使用临时签名，尚未经过 Apple 公证；首次打开时 macOS 可能显示安全提醒。
+          - Windows 安装包尚未使用商业代码签名证书；Windows SmartScreen 可能显示“未知发布者”提醒。
+
+          ## 发布证据
+
+          - 源标签：\`${RELEASE_TAG}\`
+          - 源提交：\`${REVISION}\`
+          - 应用版本：\`${VERSION}\`
+          - 质量门禁：前端构建、课程审计、发布配置测试均已通过
+          - 签名状态：macOS 临时签名；Windows 未签名
+          - 工作流：${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}
+          EOF
+
+          if gh release view "${RELEASE_TAG}" --json isDraft,isPrerelease > release-state.json 2>/dev/null; then
+            is_draft="$(gh release view "${RELEASE_TAG}" --json isDraft --jq .isDraft)"
+            is_prerelease="$(gh release view "${RELEASE_TAG}" --json isPrerelease --jq .isPrerelease)"
+            if [[ "${is_draft}" != "true" || "${is_prerelease}" != "true" ]]; then
+              echo "Release ${RELEASE_TAG} already exists and is not a draft pre-release." >&2
+              exit 1
+            fi
+            echo "Reusing existing draft pre-release ${RELEASE_TAG}."
+          else
+            gh release create "${RELEASE_TAG}" \
+              --verify-tag \
+              --target "${REVISION}" \
+              --title "小小思考屋 ${VERSION}（测试版）" \
+              --notes-file release-notes.md \
+              --draft \
+              --prerelease
+          fi
+
+  build:
+    name: Build ${{ matrix.label }}
+    needs: [validate, prepare]
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - label: macOS ARM64
+            runner: macos-15
+            target: aarch64-apple-darwin
+            bundle: dmg
+            asset_pattern: 小小思考屋_[version]_macOS-arm64.[ext]
+          - label: Windows x64
+            runner: windows-2025
+            target: x86_64-pc-windows-msvc
+            bundle: nsis
+            asset_pattern: 小小思考屋_[version]_Windows-x64-setup.[ext]
+    runs-on: ${{ matrix.runner }}
+    permissions:
+      contents: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+      RELEASE_TAG: ${{ needs.validate.outputs.tag }}
+      VERSION: ${{ needs.validate.outputs.version }}
+    steps:
+      - name: Check out the validated release tag
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ env.RELEASE_TAG }}
+          fetch-depth: 0
+
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: ${{ env.PNPM_VERSION }}
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: pnpm
+
+      - name: Install Rust stable
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: ${{ matrix.target }}
+
+      - name: Cache Rust build output
+        uses: swatinem/rust-cache@v2
+        with:
+          workspaces: "./src-tauri -> target"
+
+      - name: Install locked dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Revalidate package version
+        run: pnpm release:validate -- --tag "${{ env.RELEASE_TAG }}"
+
+      - name: Remove this platform's stale draft asset on retry
+        shell: bash
+        env:
+          ASSET_PATTERN: ${{ matrix.asset_pattern }}
+        run: |
+          asset_name="${ASSET_PATTERN/\[version\]/${VERSION}}"
+          gh release delete-asset "${RELEASE_TAG}" "${asset_name}" --yes 2>/dev/null || true
+
+      - name: Build and upload ${{ matrix.label }}
+        uses: tauri-apps/tauri-action@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tagName: ${{ needs.validate.outputs.tag }}
+          releaseDraft: true
+          prerelease: true
+          uploadUpdaterJson: false
+          args: --bundles ${{ matrix.bundle }} --target ${{ matrix.target }}
+          releaseAssetNamePattern: ${{ matrix.asset_pattern }}
+
+      - name: Record platform evidence
+        shell: bash
+        run: |
+          {
+            echo "## ${{ matrix.label }}"
+            echo
+            echo "- Tag: \`${RELEASE_TAG}\`"
+            echo "- Target: \`${{ matrix.target }}\`"
+            echo "- Bundle: \`${{ matrix.bundle }}\`"
+            echo "- Asset pattern: \`${{ matrix.asset_pattern }}\`"
+            echo "- Upload: passed"
+          } >> "${GITHUB_STEP_SUMMARY}"
+
+  finalize:
+    name: Publish complete pre-release
+    needs: [validate, prepare, build]
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+      RELEASE_TAG: ${{ needs.validate.outputs.tag }}
+      VERSION: ${{ needs.validate.outputs.version }}
+    steps:
+      - name: Verify required release assets
+        shell: bash
+        run: |
+          assets="$(gh release view "${RELEASE_TAG}" --json assets --jq '.assets[].name')"
+          required_assets=(
+            "小小思考屋_${VERSION}_macOS-arm64.dmg"
+            "小小思考屋_${VERSION}_Windows-x64-setup.exe"
+          )
+          for asset in "${required_assets[@]}"; do
+            if ! grep -Fxq "${asset}" <<< "${assets}"; then
+              echo "Missing required release asset: ${asset}" >&2
+              exit 1
+            fi
+          done
+
+      - name: Publish test pre-release
+        run: gh release edit "${RELEASE_TAG}" --draft=false --prerelease
+
+      - name: Record completed release evidence
+        shell: bash
+        run: |
+          {
+            echo "## Complete desktop pre-release"
+            echo
+            echo "- Release: ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/releases/tag/${RELEASE_TAG}"
+            echo "- macOS ARM64 DMG: present"
+            echo "- Windows x64 NSIS installer: present"
+            echo "- Published as pre-release: yes"
+          } >> "${GITHUB_STEP_SUMMARY}"

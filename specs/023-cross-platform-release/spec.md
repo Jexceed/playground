@@ -4,9 +4,9 @@
 
 **Created**: 2026-07-13
 
-**Status**: Draft
+**Status**: Implemented
 
-**Input**: User description: "让小小思考屋同时生成 macOS 和 Windows 应用，并在 GitHub 上直接发布。"
+**Input**: User description: "让小小思考屋生成 Mac ARM64 和 Windows x64 应用，并在 GitHub 上直接发布。"
 
 ## User Scenarios & Testing *(mandatory)*
 
@@ -24,7 +24,7 @@ release receives all required platform installers before it becomes visible to u
 
 **Acceptance Scenarios**:
 
-1. **Given** a valid release version and a revision that passes required quality checks, **When** the maintainer starts a release, **Then** macOS Apple Silicon, macOS Intel, and Windows x64 packages are built in parallel.
+1. **Given** a valid release version and a revision that passes required quality checks, **When** the maintainer starts a release, **Then** macOS Apple Silicon and Windows x64 packages are built in parallel.
 2. **Given** all required packages build successfully, **When** packaging finishes, **Then** one GitHub release contains every required installer and is made available for download.
 3. **Given** any required package or quality check fails, **When** the release process finishes, **Then** no incomplete release is presented as a finished public release and the failing platform is identifiable.
 
@@ -40,7 +40,7 @@ guesswork.
 identify which file belongs on their computer.
 
 **Independent Test**: Inspect a completed release and verify that a non-developer can
-match each listed file to an Apple Silicon Mac, Intel Mac, or 64-bit Windows computer.
+match each listed file to an Apple Silicon Mac or a 64-bit Windows computer.
 
 **Acceptance Scenarios**:
 
@@ -73,14 +73,14 @@ version, source revision, completed quality gates, and documented signing status
 - The application version and requested release version do not match.
 - A release contains packages produced from different source revisions.
 - Signing or notarization credentials are absent, expired, or rejected.
-- A user downloads an installer for the wrong Mac processor architecture.
+- A user with an unsupported Intel Mac downloads the Apple Silicon installer.
 - The release job is retried after some artifacts have already been uploaded.
 
 ## Requirements *(mandatory)*
 
 ### Functional Requirements
 
-- **FR-001**: The release process MUST produce installers for macOS Apple Silicon, macOS Intel, and Windows x64 from the same tagged source revision.
+- **FR-001**: The release process MUST produce installers for macOS Apple Silicon and Windows x64 from the same tagged source revision.
 - **FR-002**: A single release action MUST build required platform packages concurrently where infrastructure permits.
 - **FR-003**: A completed GitHub release MUST contain one installable package for each required platform and architecture.
 - **FR-004**: Installer filenames MUST identify product, version, operating system, and architecture without requiring users to open the files.
@@ -111,9 +111,9 @@ version, source revision, completed quality gates, and documented signing status
 
 ### Measurable Outcomes
 
-- **SC-001**: One release action produces all three required platform packages without manual transfer between computers.
+- **SC-001**: One release action produces both required platform packages without manual transfer between computers.
 - **SC-002**: 100% of required installers in a completed release share the same version and source revision.
-- **SC-003**: A user can identify the correct installer for Apple Silicon Mac, Intel Mac, or 64-bit Windows from the filename and release notes in under 30 seconds.
+- **SC-003**: A user can identify the correct installer for Apple Silicon Mac or 64-bit Windows from the filename and release notes in under 30 seconds.
 - **SC-004**: No release missing a required package is displayed as a finished public release.
 - **SC-005**: Every completed release records successful project build and curriculum audit results.
 - **SC-006**: A maintainer can trace each installer to its source tag, target platform, architecture, and signing status using the release record alone.
@@ -124,5 +124,6 @@ version, source revision, completed quality gates, and documented signing status
 - Initial automated packages may use development/test signing until the required Apple and Windows certificates are supplied as protected repository credentials.
 - Releases lacking complete production signing are pre-releases and are not described as family-ready production distributions.
 - The first Windows target is 64-bit Windows 10/11; Windows ARM and 32-bit Windows are outside this milestone.
+- Intel Mac support is outside this milestone; the only macOS target is Apple Silicon.
 - The existing local application assets and browser-based speech fallback remain portable because they are packaged with the application rather than fetched during installation.
 - Version tags use a consistent `v<major>.<minor>.<patch>` convention and correspond to the application version.
