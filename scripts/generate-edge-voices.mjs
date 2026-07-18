@@ -1,7 +1,8 @@
-import { existsSync, mkdirSync, readFileSync, rmSync, statSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { basename, join } from "node:path";
 import { tmpdir } from "node:os";
 import { spawnFile } from "./lib/spawn-file.mjs";
+import { inspectVoiceFile } from "./lib/voice-media-quality.mjs";
 
 const args = parseArgs(process.argv.slice(2));
 const voice = args.voice ?? "zh-CN-XiaoxiaoNeural";
@@ -26,11 +27,20 @@ for (const [index, line] of selected.entries()) {
   const filename = `${safeFileName(line.id)}.mp3`;
   const outputPath = join(outputDir, filename);
   const textPath = join(tmpdir(), `thinking-island-edge-${process.pid}-${index}.txt`);
+  const cachedInspection = await inspectVoiceFile(outputPath, line.text);
+  const reusable = cachedInspection.problems.length === 0;
 
-  if (!hasAudio(outputPath)) {
+  if (!reusable) {
+    if (existsSync(outputPath)) {
+      if (!quiet) {
+        process.stdout.write(`Rejected cached ${line.id}: ${cachedInspection.problems.join("; ")}\n`);
+      }
+      rmSync(outputPath, { force: true });
+    }
     writeFileSync(textPath, line.text);
     try {
       await retry(async () => {
+        rmSync(outputPath, { force: true });
         await spawnFile(python, [
           "-m",
           "edge_tts",
@@ -43,6 +53,11 @@ for (const [index, line] of selected.entries()) {
           "--write-media",
           outputPath,
         ]);
+        const generatedInspection = await inspectVoiceFile(outputPath, line.text);
+        if (generatedInspection.problems.length) {
+          rmSync(outputPath, { force: true });
+          throw new Error(generatedInspection.problems.join("; "));
+        }
       }, line.id, retries);
       process.stdout.write(`Generated ${index + 1}/${selected.length}: ${line.id}\n`);
     } catch (error) {
@@ -109,10 +124,6 @@ async function retry(task, label, attempts) {
 
 function firstLine(text) {
   return String(text).split("\n")[0];
-}
-
-function hasAudio(file) {
-  return existsSync(file) && statSync(file).size > 1024;
 }
 
 function parseArgs(values) {

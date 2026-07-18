@@ -1,6 +1,7 @@
 import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 import ts from "typescript";
+import { inspectVoiceMedia } from "./lib/voice-media-quality.mjs";
 
 const indexHtml = readFileSync("index.html", "utf8");
 const appSource = readFileSync("src/App.tsx", "utf8");
@@ -23,7 +24,7 @@ const output = ts.transpileModule(source, {
   compilerOptions: { module: ts.ModuleKind.ES2020, target: ts.ScriptTarget.ES2020 },
 }).outputText.replace('import { imageGallery } from "./imageGallery";', `const imageGallery = ${JSON.stringify(imageGallery)};`);
 const moduleUrl = `data:text/javascript;base64,${Buffer.from(output.replace("../types", "data:text/javascript,export{}")).toString("base64")}`;
-const { games, worlds } = await import(moduleUrl);
+const { games, patternTrainSizeDiameters, worlds } = await import(moduleUrl);
 
 const visualTokenSource = readFileSync("src/components/VisualToken.tsx", "utf8");
 const knownVisuals = new Set([
@@ -35,6 +36,21 @@ const knownVisualKinds = new Map([
   ...extractMapEntries("phraseMap", visualTokenSource),
 ]);
 const rasterVisualKinds = extractRasterKinds(visualTokenSource);
+const patternTrainAssetNames = [
+  "red-disc",
+  "blue-disc",
+  "yellow-disc",
+  "green-disc",
+  "sun",
+  "moon",
+  "star",
+  "large-disc",
+  "medium-disc",
+  "small-disc",
+  "strawberry",
+  "cookie",
+  "apple",
+];
 const visualRuleHints = [
   /小猫.*奶油|猫.*奶油/,
   /小狗.*睡觉/,
@@ -59,6 +75,31 @@ const launchBrandAudioSrc = "/audio/brand/launch-brand-shout.wav";
 const launchBrandAudioPath = join("public", launchBrandAudioSrc.replace(/^\/+/, ""));
 if (!existsSync(brandLogoPath)) problems.push(`brand logo image missing: ${brandLogoSrc}`);
 if (!existsSync(launchBrandAudioPath)) problems.push(`launch brand chorus audio missing: ${launchBrandAudioSrc}`);
+for (const assetName of patternTrainAssetNames) {
+  const src = `/images/items/pattern-train/${assetName}.png`;
+  const filePath = join("public", src.replace(/^\/+/, ""));
+  if (!galleryImageSrcs.has(src)) problems.push(`pattern token should use a registered local PNG: ${src}`);
+  if (!existsSync(filePath)) {
+    problems.push(`pattern token runtime image is missing: ${src}`);
+  } else {
+    const size = readPngSize(filePath);
+    if (!size || size.width !== 256 || size.height !== 256) {
+      problems.push(`pattern token runtime image should be a 256x256 PNG: ${src}`);
+    }
+  }
+}
+const patternTrainSourcePath = join("public", "images", "items", "source", "pattern-train-sticker-sheet-source.png");
+if (!existsSync(patternTrainSourcePath)) {
+  problems.push("pattern token source image is missing: public/images/items/source/pattern-train-sticker-sheet-source.png");
+}
+const sizeDiameters = ["⬤", "●", "•"].map((token) => patternTrainSizeDiameters?.[token]);
+if (
+  sizeDiameters.some((diameter) => !Number.isFinite(diameter))
+  || sizeDiameters[0] / sizeDiameters[1] < 1.25
+  || sizeDiameters[1] / sizeDiameters[2] < 1.25
+) {
+  problems.push(`size pattern diameters should have a clear ordered progression: ${sizeDiameters.join("/")}`);
+}
 if (!indexHtml.includes("<title>小小思考屋</title>")) {
   problems.push("index.html title should use the 小小思考屋 brand");
 }
@@ -100,6 +141,9 @@ if (addressGridUsesNestedVisualToken(progressiveSetGameSource)) {
 }
 if (visualChoicesUseDuplicatedRawLabels(progressiveSetGameSource)) {
   problems.push("ProgressiveSetGame should render exact visual-card choices without duplicated raw labels");
+}
+if (!/<ChoiceContent[^>]*label=\{choice\.label\}[^>]*value=\{choice\.value\}/.test(progressiveSetGameSource)) {
+  problems.push("ProgressiveSetGame answer choices should pass choice.value so pattern stems and options share one visual token");
 }
 if (matrixBoardUsesNestedVisualToken(progressiveSetGameSource)) {
   problems.push("MatrixBoard renderer should use flat matrix-cell tokens instead of nested VisualToken cards");
@@ -425,7 +469,13 @@ if (existsSync("public/audio/voice/manifest.json")) {
       if (!entry.src?.trim()) problems.push(`audio manifest entry missing src: ${entry.id ?? entry.text ?? "unknown"}`);
       if (entry.src) {
         const filePath = join("public", decodeURIComponent(entry.src.replace(/^\/+/, "").replace(/^audio\//, "audio/")));
-        if (!existsSync(filePath)) problems.push(`audio manifest file missing: ${entry.src}`);
+        if (!existsSync(filePath)) {
+          problems.push(`audio manifest file missing: ${entry.src}`);
+        } else {
+          for (const problem of inspectVoiceMedia(readFileSync(filePath), entry.text ?? "").problems) {
+            problems.push(`audio manifest media invalid for ${entry.id ?? "unknown"}: ${problem}`);
+          }
+        }
       }
     }
     if (voiceLineData?.lines) {
@@ -1000,6 +1050,13 @@ function checkPatternTrainRoundQuality(round, context) {
   }
 
   const choiceValues = round.choices.map((choice) => choice.value);
+  const renderedTokens = new Set([...sequence.filter((item) => item !== "?"), ...choiceValues]);
+  for (const token of renderedTokens) {
+    const kind = knownVisualKinds.get(token);
+    if (!kind || !kind.startsWith("pattern") || !rasterVisualKinds.has(kind)) {
+      problems.push(`${context}: pattern token should use a registered local PNG: ${token}`);
+    }
+  }
   const uniqueUnitValues = [...new Set(patternUnit)];
   const allowedChoices = patternTrainAllowedChoices(patternUnit);
   if (choiceValues.length < 3) {
@@ -1007,6 +1064,12 @@ function checkPatternTrainRoundQuality(round, context) {
   }
   if (!uniqueUnitValues.every((value) => choiceValues.includes(value)) || !choiceValues.every((value) => allowedChoices.has(value))) {
     problems.push(`${context}: pattern-train choices should stay tied to the visible pattern`);
+  }
+  if (patternUnit.some((value) => ["⬤", "●", "•"].includes(value))) {
+    const sizeFamily = new Set(["⬤", "●", "•"]);
+    if (!choiceValues.every((value) => sizeFamily.has(value))) {
+      problems.push(`${context}: size pattern choices should stay within the size family`);
+    }
   }
 
   const unitText = patternUnit.map(patternTrainLabel).join("、");

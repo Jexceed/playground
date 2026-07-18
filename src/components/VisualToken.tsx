@@ -9,17 +9,17 @@ type TokenMeta = {
 };
 
 const tokenMap: Record<string, TokenMeta> = {
-  "🍓": { label: "草莓", kind: "strawberry" },
-  "🍪": { label: "饼干", kind: "cookie" },
-  "⭐": { label: "星星", kind: "star" },
-  "🟡": { label: "黄色圆片", kind: "yellowDot" },
-  "🟢": { label: "绿色圆片", kind: "greenDot" },
-  "🔵": { label: "蓝色圆片", kind: "blueDot" },
-  "🔴": { label: "红色圆片", kind: "redDot" },
+  "🍓": { label: "草莓", kind: "patternStrawberry" },
+  "🍪": { label: "饼干", kind: "patternCookie" },
+  "⭐": { label: "星星", kind: "patternStar" },
+  "🟡": { label: "黄色圆片", kind: "patternYellowDisc" },
+  "🟢": { label: "绿色圆片", kind: "patternGreenDisc" },
+  "🔵": { label: "蓝色圆片", kind: "patternBlueDisc" },
+  "🔴": { label: "红色圆片", kind: "patternRedDisc" },
   "🟣": { label: "紫色圆片", kind: "purpleDot" },
   "⬜": { label: "空位", kind: "emptyBox" },
   "🟦": { label: "蓝色方块", kind: "blueSquare" },
-  "🍎": { label: "苹果", kind: "apple" },
+  "🍎": { label: "苹果", kind: "patternApple" },
   "🧁": { label: "纸杯蛋糕", kind: "cupcake" },
   "🍊": { label: "橘子", kind: "orange" },
   "🧱": { label: "积木", kind: "block" },
@@ -35,8 +35,8 @@ const tokenMap: Record<string, TokenMeta> = {
   "🧒": { label: "小朋友", kind: "child" },
   "👧": { label: "小女孩", kind: "childGirl" },
   "👦": { label: "小男孩", kind: "childBoy" },
-  "☀️": { label: "太阳", kind: "sun" },
-  "🌙": { label: "月亮", kind: "moon" },
+  "☀️": { label: "太阳", kind: "patternSun" },
+  "🌙": { label: "月亮", kind: "patternMoon" },
   "🥤": { label: "杯子", kind: "cup" },
   "💧": { label: "水", kind: "water" },
   "🎁": { label: "魔法盒", kind: "magicBox" },
@@ -54,9 +54,9 @@ const tokenMap: Record<string, TokenMeta> = {
   "?": { label: "待补位置", kind: "missingSlot", compact: true },
   "|": { label: "竖中线", kind: "verticalFold", compact: true },
   "-": { label: "横中线", kind: "horizontalFold", compact: true },
-  "⬤": { label: "大圆", kind: "bigDot" },
-  "●": { label: "中圆", kind: "mediumDot" },
-  "•": { label: "小圆", kind: "smallDot", compact: true },
+  "⬤": { label: "大圆", kind: "patternLargeDisc" },
+  "●": { label: "中圆", kind: "patternMediumDisc" },
+  "•": { label: "小圆", kind: "patternSmallDisc" },
 };
 
 const phraseMap: Record<string, TokenMeta> = {
@@ -97,9 +97,9 @@ const phraseMap: Record<string, TokenMeta> = {
   "雨衣": { label: "雨衣", kind: "raincoat" },
   "足球": { label: "足球", kind: "soccer" },
   "积木塔": { label: "积木塔", kind: "tower" },
-  "大圆": { label: "大圆", kind: "bigDot" },
-  "中圆": { label: "中圆", kind: "mediumDot" },
-  "小圆": { label: "小圆", kind: "smallDot" },
+  "大圆": { label: "大圆", kind: "patternLargeDisc" },
+  "中圆": { label: "中圆", kind: "patternMediumDisc" },
+  "小圆": { label: "小圆", kind: "patternSmallDisc" },
   "红色圆片": { label: "红色圆片", kind: "redDot" },
   "黄色圆片": { label: "黄色圆片", kind: "yellowDot" },
   "绿色圆片": { label: "绿色圆片", kind: "greenDot" },
@@ -345,6 +345,19 @@ function Illustration({ kind, small = false }: { kind: string; small?: boolean }
 }
 
 function rasterForKind(kind: string) {
+  if (kind === "patternRedDisc") return imageGallery.items.patternRedDisc;
+  if (kind === "patternBlueDisc") return imageGallery.items.patternBlueDisc;
+  if (kind === "patternYellowDisc") return imageGallery.items.patternYellowDisc;
+  if (kind === "patternGreenDisc") return imageGallery.items.patternGreenDisc;
+  if (kind === "patternSun") return imageGallery.items.patternSun;
+  if (kind === "patternMoon") return imageGallery.items.patternMoon;
+  if (kind === "patternStar") return imageGallery.items.patternStar;
+  if (kind === "patternLargeDisc") return imageGallery.items.patternLargeDisc;
+  if (kind === "patternMediumDisc") return imageGallery.items.patternMediumDisc;
+  if (kind === "patternSmallDisc") return imageGallery.items.patternSmallDisc;
+  if (kind === "patternStrawberry") return imageGallery.items.patternStrawberry;
+  if (kind === "patternCookie") return imageGallery.items.patternCookie;
+  if (kind === "patternApple") return imageGallery.items.patternApple;
   if (kind === "cat" || kind === "orangeCat") return imageGallery.characters.cat;
   if (kind === "dog") return imageGallery.characters.dog;
   if (kind === "rabbit") return imageGallery.characters.rabbit;

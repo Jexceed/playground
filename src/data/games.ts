@@ -33,6 +33,12 @@ function countingGroup(label: string, items: string[]): NonNullable<RoundInput["
 
 const numberLabels = Array.from({ length: 12 }, (_, index) => String(index + 1));
 
+export const patternTrainSizeDiameters = {
+  "⬤": 196,
+  "●": 124,
+  "•": 64,
+} as const;
+
 export const games: GameConfig[] = [
   makeSet({
     id: "math-counting-cardinality",

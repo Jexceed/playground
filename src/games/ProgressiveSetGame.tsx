@@ -198,7 +198,7 @@ export function ProgressiveSetGame({
           return (
             <button
               aria-label={voiceLabel}
-              className={`answer-choice ${graphicOption ? "answer-choice-graphic" : ""} ${isVisualCardChoice(choice.label) ? "answer-choice-visual-card" : ""} ${active ? "active" : ""} ${correct ? "correct" : ""} ${wrong ? "wrong" : ""}`}
+              className={`answer-choice ${graphicOption ? "answer-choice-graphic" : ""} ${isVisualCardChoice(choice.value) ? "answer-choice-visual-card" : ""} ${active ? "active" : ""} ${correct ? "correct" : ""} ${wrong ? "wrong" : ""}`}
               data-testid={`answer-${choice.value}`}
               disabled={answered}
               key={choice.value}
@@ -206,7 +206,7 @@ export function ProgressiveSetGame({
               onClick={() => choose(choice.value)}
             >
               {correct && <Check size={18} />}
-              <ChoiceContent graphicOption={graphicOption} label={choice.label} />
+              <ChoiceContent graphicOption={graphicOption} label={choice.label} value={choice.value} />
             </button>
           );
         })}
@@ -247,10 +247,19 @@ export function ProgressiveSetGame({
   );
 }
 
-function ChoiceContent({ graphicOption, label }: { graphicOption?: GraphicChallengeOption; label: string }) {
+function ChoiceContent({
+  graphicOption,
+  label,
+  value,
+}: {
+  graphicOption?: GraphicChallengeOption;
+  label: string;
+  value: string;
+}) {
   if (graphicOption) return <GraphicAnswerFigure letter={label} option={graphicOption} />;
 
-  const visualParts = visualCardParts(label);
+  const visualValue = visualMetaFor(value) ? value : label;
+  const visualParts = visualCardParts(visualValue);
   if (visualParts.length > 1) {
     return (
       <span className="choice-visual-card" aria-hidden="true">
@@ -263,7 +272,7 @@ function ChoiceContent({ graphicOption, label }: { graphicOption?: GraphicChalle
 
   return (
     <>
-      <ChoiceCue label={label} />
+      <ChoiceCue label={label} visualValue={visualValue} />
       <span>{label}</span>
     </>
   );
@@ -278,7 +287,7 @@ function GraphicAnswerFigure({ letter, option }: { letter: string; option: Graph
   );
 }
 
-function ChoiceCue({ label }: { label: string }) {
+function ChoiceCue({ label, visualValue = label }: { label: string; visualValue?: string }) {
   const numericValue = Number(label);
   if (Number.isInteger(numericValue) && numericValue > 0 && numericValue <= 10) {
     return (
@@ -291,9 +300,9 @@ function ChoiceCue({ label }: { label: string }) {
       </span>
     );
   }
-  const meta = visualMetaFor(label);
+  const meta = visualMetaFor(visualValue);
   if (!meta) {
-    const parts = visualParts(label);
+    const parts = visualParts(visualValue);
     const metas = parts.map((part) => visualMetaFor(part));
     if (metas.length <= 1 || metas.some((item) => !item)) return null;
     return (

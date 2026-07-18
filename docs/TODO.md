@@ -24,8 +24,9 @@ small enough to turn into a Spec Kit feature.
 - Convert future feature work to the full Spec Kit cycle: `spec.md`, `plan.md`,
   `tasks.md`, implementation, verification, changelog update.
 - Add automated audit coverage for image source-file pairing where practical.
-- Review remaining non-侦探 `VisualToken` fallbacks such as abstract symbols,
-  action phrases, and location phrases, and decide which need raster assets.
+- Review remaining non-侦探 and non-规律火车 `VisualToken` fallbacks such as
+  abstract symbols, action phrases, and location phrases, and decide which need
+  raster assets.
 - Add deeper automated browser smoke checks for persisted navigation state after
   the first manual coverage in `016-visual-choice-session-memory`.
 - Add an automated all-48-round 图形工坊 screenshot review that checks stem-option

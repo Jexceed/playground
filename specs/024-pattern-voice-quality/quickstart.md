@@ -66,3 +66,25 @@ git diff --check
 Open the production preview for representative browser validation, then launch
 `/Applications/小小思考屋.app` and confirm local picture and voice playback from
 the installed bundle.
+
+## 6. Final Evidence
+
+Completed on 2026-07-18:
+
+- Browser production preview covered all 18 pattern rounds. Every stem and all
+  three choices used registered 256x256 local PNGs with no broken image,
+  emoji, or inline-SVG answer fallback.
+- Desktop and 375x812 mobile review confirmed the 196/124/64 large, medium, and
+  small circle hierarchy remained distinct without layout overlap.
+- The media audit checked all 1,801 manifested voice files with zero findings,
+  zero manifest failures, and zero orphan files. The six rejected short files
+  were regenerated with Edge `zh-CN-XiaoxiaoNeural`, rate `-12%`, and pitch
+  `+2Hz`.
+- `pnpm test:voice-assets` passed 10 tests, `pnpm test:speech` passed 4 tests,
+  `pnpm audit:curriculum` reported zero findings across 489 rounds, and
+  `pnpm build` plus `git diff --check` completed successfully.
+- `pnpm release:nas` produced `release/nas-static` and
+  `release/thinking-island-nas-static-0.1.0.zip`.
+- `pnpm mac:install` installed `/Applications/小小思考屋.app`; strict deep
+  code-sign verification passed, and a cold launch started the installed
+  `Contents/MacOS/thinking-island` executable successfully.

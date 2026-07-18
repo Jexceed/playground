@@ -5,6 +5,17 @@ grouped by date.
 
 ## 2026-07-18
 
+- Replaced all 找规律火车 evidence and choice tokens with a coherent
+  image-gen-derived local PNG set, including registered color, sky, snack, and
+  size-family cards with retained source and derivation documentation.
+- Rebuilt the large/medium/small circle family from one purple source token on
+  identical 256x256 canvases at 196/124/64-pixel occupied sizes, and removed the
+  small circle's compact-card exception so size remains the only visual change.
+- Added MP3 frame and text-aware duration validation to the Edge cache,
+  generation retry path, standalone voice audit, and curriculum audit.
+  Regenerated six truncated or implausibly short Xiaoxiao files; all 1,801
+  active manifest entries now pass media validation with zero failures and
+  zero orphan files.
 - Corrected live desktop pre-release uploads after GitHub filename
   normalization prevented reliable verification of Chinese asset names. Draft
   retries now refresh release evidence, clear existing assets by ID, upload

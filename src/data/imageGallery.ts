@@ -149,6 +149,58 @@ export const imageGallery = {
     },
   },
   items: {
+    patternRedDisc: {
+      src: "/images/items/pattern-train/red-disc.png",
+      alt: "规律图卡红色圆片",
+    },
+    patternBlueDisc: {
+      src: "/images/items/pattern-train/blue-disc.png",
+      alt: "规律图卡蓝色圆片",
+    },
+    patternYellowDisc: {
+      src: "/images/items/pattern-train/yellow-disc.png",
+      alt: "规律图卡黄色圆片",
+    },
+    patternGreenDisc: {
+      src: "/images/items/pattern-train/green-disc.png",
+      alt: "规律图卡绿色圆片",
+    },
+    patternSun: {
+      src: "/images/items/pattern-train/sun.png",
+      alt: "规律图卡太阳",
+    },
+    patternMoon: {
+      src: "/images/items/pattern-train/moon.png",
+      alt: "规律图卡月亮",
+    },
+    patternStar: {
+      src: "/images/items/pattern-train/star.png",
+      alt: "规律图卡星星",
+    },
+    patternLargeDisc: {
+      src: "/images/items/pattern-train/large-disc.png",
+      alt: "规律图卡大圆",
+    },
+    patternMediumDisc: {
+      src: "/images/items/pattern-train/medium-disc.png",
+      alt: "规律图卡中圆",
+    },
+    patternSmallDisc: {
+      src: "/images/items/pattern-train/small-disc.png",
+      alt: "规律图卡小圆",
+    },
+    patternStrawberry: {
+      src: "/images/items/pattern-train/strawberry.png",
+      alt: "规律图卡草莓",
+    },
+    patternCookie: {
+      src: "/images/items/pattern-train/cookie.png",
+      alt: "规律图卡饼干",
+    },
+    patternApple: {
+      src: "/images/items/pattern-train/apple.png",
+      alt: "规律图卡苹果",
+    },
     graphicCat: {
       src: "/images/items/graphic-workshop/cat.png",
       alt: "图形工坊小猫贴纸",

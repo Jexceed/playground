@@ -11,7 +11,8 @@
 - 同一道题的选项含义也不能重复；相近选项只有在能解释“看错了哪个线索 / 用了旧规则 / 只满足一个条件”时才保留。
 - 逻辑题的成功、重试和家长提示必须点回可见线索、当前规则、顺序、类别、条件或计划，不能只说“对了”或泛泛提醒。
 - 难度说明要写清推理负荷或视觉表面，例如规则切换、两个条件、证据强弱、顺序步骤、空间判断、记忆或抗干扰。
-- 规律火车题要能从重复的一组推回空格答案：题面只保留一个 `?`，至少给出 3 个不重复选项；选项必须来自可解释的重复图卡或同类近干扰，反馈、重试和家长提示都要说出重复的一组、补完后的序列和答案。
+- 规律火车题要能从重复的一组推回空格答案：题面只保留一个 `?`，至少给出 3 个不重复选项；选项必须来自可解释的重复图卡或同类近干扰，反馈、重试和家长提示都要说出重复的一组、补完后的序列和答案。题面与选项必须复用 `public/images/items/pattern-train/` 中同一套本地 PNG，不能混用 emoji 或内联 SVG。
+- 大、中、小尺寸规律必须保持同画布、同颜色、同纹理，只改变主体占用尺寸；当前固定可见直径为 196、124、64 像素，不能给小圆单独使用更小的卡片容器。
 - 同类题要让“同一类”的规则可见、可说；找不一样题要先说明哪三个是一组，再说明剩下的为什么不一样。
 - 一模一样题要说清从左到右哪些部分完全匹配；三张里找不一样时，要先指出哪两张一样，再说明剩下那张哪里不同。
 - 一模一样题的答案选项如果本身是组合图卡，只显示一张紧凑组合卡，不要同时显示图卡 cue 和重复的原始符号文字；位置选项如“左边这张”保留文字。
@@ -39,9 +40,12 @@
 ```bash
 pnpm export:voice-lines
 pnpm generate:edge-voices -- --voice zh-CN-XiaoxiaoNeural --rate -12% --pitch +2Hz --python ./local-tts/.venv/bin/python --quiet --retries 3
+pnpm audit:voice-media
 pnpm prune:voice-assets -- --write
 ```
 
+- Edge 生成器会在复用缓存前和每次生成后检查 MP3 完整帧与文本对应时长；异常文件会先删除再重试，不能只用“大于 1KB”判断可用。
+- `pnpm audit:voice-media` 必须检查 manifest 中每一条音频，`problemCount` 必须为 0。句子长度音频若短得不可能说完可见文本，即使能解码也不能发布。
 - `pnpm prune:voice-assets` 默认只报告 manifest 未引用文件；确认 manifest 的
   `count === requestedCount` 且 `failures` 为空后，才使用 `--write` 删除。
 - 删除后再次运行无参数命令，`orphanCount` 必须为 0。
@@ -71,6 +75,11 @@ pnpm generate:mac-voices -- --merge-existing --include-parent --limit 99999
 - 场景图必须是 1200x675 PNG，并保留 `source/` 原图。
 - 角色头像放在 `public/images/characters/`，不要混入物品目录。
 - 高频物体和动作图放在 `public/images/items/`；只有缺资产时才用内置 SVG 图卡。
+- 规律火车运行图卡放在 `public/images/items/pattern-train/`，统一注册到
+  `imageGallery.items`；image-gen 源图、提示词和派生脚本分别保存在
+  `public/images/items/source/pattern-train-sticker-sheet-source.png`、
+  `references/pattern-train-imagegen.md` 和
+  `scripts/process-pattern-train-assets.py`。
 - 场景图要尽量撑满题面，但不能裁掉关键线索。
 - 资源目录和 `imageGallery` 分类必须一致：`brand`、`characters`、`items`、`scenes`。
 
@@ -91,6 +100,7 @@ pnpm generate:mac-voices -- --merge-existing --include-parent --limit 99999
 ```bash
 pnpm build
 pnpm audit:curriculum
+pnpm audit:voice-media
 ```
 
 在 Mac 开发环境里，不能只用浏览器或 Vite preview 做最终预览。涉及
@@ -140,5 +150,7 @@ ASCII 字符；发布页仍用 `小小思考屋 macOS ARM64 安装包` 和
 - Edge 包不要混用多个 `voice`；F5 包必须写入 `referenceAudio` 和 `referenceText`。
 - `count` 和 `requestedCount` 一致。
 - `failures` 为空。
+- `pnpm audit:voice-media` 的 `checkedCount` 与 manifest `count` 一致且
+  `problemCount` 为 0。
 
 关键变更前后都要提交，避免题库、语音和视觉资产混在不可回退的大补丁里。
