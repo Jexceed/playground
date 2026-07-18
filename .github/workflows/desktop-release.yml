@@ -164,12 +164,12 @@ jobs:
             runner: macos-15
             target: aarch64-apple-darwin
             bundle: dmg
-            asset_pattern: 小小思考屋_[version]_macOS-arm64.[ext]
+            asset_pattern: 小小思考屋_[version]_macOS-arm64[ext]
           - label: Windows x64
             runner: windows-2025
             target: x86_64-pc-windows-msvc
             bundle: nsis
-            asset_pattern: 小小思考屋_[version]_Windows-x64-setup.[ext]
+            asset_pattern: 小小思考屋_[version]_Windows-x64-setup[ext]
     runs-on: ${{ matrix.runner }}
     permissions:
       contents: write
@@ -217,7 +217,9 @@ jobs:
           ASSET_PATTERN: ${{ matrix.asset_pattern }}
         run: |
           asset_name="${ASSET_PATTERN/\[version\]/${VERSION}}"
+          legacy_asset_name="${asset_name%.*}..${asset_name##*.}"
           gh release delete-asset "${RELEASE_TAG}" "${asset_name}" --yes 2>/dev/null || true
+          gh release delete-asset "${RELEASE_TAG}" "${legacy_asset_name}" --yes 2>/dev/null || true
 
       - name: Build and upload ${{ matrix.label }}
         uses: tauri-apps/tauri-action@v1

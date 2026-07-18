@@ -16,6 +16,9 @@ grouped by date.
   metadata validation across `package.json`, Tauri, and Cargo, test-signing
   warnings, safe draft retry behavior, and cross-platform release operating
   documentation.
+- Corrected Tauri release asset patterns so extension placeholders do not add a
+  duplicate dot, and made draft retries remove legacy double-dot assets before
+  uploading the canonical filenames.
 
 ## 2026-07-12
 
