@@ -156,6 +156,11 @@ test("release assets identify product, version, OS, and architecture", () => {
     /小小思考屋_\[version\]_Windows-x64-setup\[ext\]/,
   );
   assert.doesNotMatch(workflow, /(?:arm64|setup)\.\[ext\]/);
+  assert.match(workflow, /asset_name: 小小思考屋_\[version\]_macOS-arm64\.dmg/);
+  assert.match(
+    workflow,
+    /asset_name: 小小思考屋_\[version\]_Windows-x64-setup\.exe/,
+  );
   assert.match(workflow, /小小思考屋_\$\{VERSION\}_macOS-arm64\.dmg/);
   assert.match(
     workflow,
@@ -182,6 +187,8 @@ test("release retries reuse drafts but reject completed releases", () => {
   assert.match(workflow, /is_draft[\s\S]*is_prerelease/);
   assert.match(workflow, /already exists and is not a draft pre-release/);
   assert.match(workflow, /Reusing existing draft pre-release/);
+  assert.match(workflow, /ASSET_NAME: \$\{\{ matrix\.asset_name \}\}/);
+  assert.match(workflow, /asset_name="\$\{ASSET_NAME\/\\\[version\\\]\/\$\{VERSION\}\}"/);
   assert.match(workflow, /legacy_asset_name="\$\{asset_name%\.\*\}\.\.\$\{asset_name##\*\.\}"/);
   assert.match(workflow, /gh release delete-asset[\s\S]*--yes/);
 });
