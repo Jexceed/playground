@@ -157,9 +157,9 @@ jobs:
         shell: bash
         run: |
           release_id="$(
-            gh api \
-              "repos/${GITHUB_REPOSITORY}/releases/tags/${RELEASE_TAG}" \
-              --jq '.id'
+            gh release view "${RELEASE_TAG}" \
+              --json databaseId \
+              --jq '.databaseId'
           )"
           asset_ids="$(
             gh api --paginate \
