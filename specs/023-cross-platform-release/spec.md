@@ -70,6 +70,7 @@ version, source revision, completed quality gates, and documented signing status
 
 - A platform build succeeds while another platform build fails.
 - A version already has an existing tag or release.
+- GitHub rewrites an uploaded filename that contains non-alphanumeric characters.
 - The application version and requested release version do not match.
 - A release contains packages produced from different source revisions.
 - Signing or notarization credentials are absent, expired, or rejected.
@@ -83,7 +84,7 @@ version, source revision, completed quality gates, and documented signing status
 - **FR-001**: The release process MUST produce installers for macOS Apple Silicon and Windows x64 from the same tagged source revision.
 - **FR-002**: A single release action MUST build required platform packages concurrently where infrastructure permits.
 - **FR-003**: A completed GitHub release MUST contain one installable package for each required platform and architecture.
-- **FR-004**: Installer filenames MUST identify product, version, operating system, and architecture without requiring users to open the files.
+- **FR-004**: Installer download filenames MUST use GitHub-stable ASCII characters and identify product, version, operating system, and architecture without requiring users to open the files; release display labels MUST retain the Chinese product name.
 - **FR-005**: The release process MUST run the project build and curriculum audit before a release can be finalized.
 - **FR-006**: A failed required build or audit MUST prevent an incomplete draft from being presented as a finished public release.
 - **FR-007**: All packages in one release MUST use the same application version and tagged source revision.
@@ -97,7 +98,7 @@ version, source revision, completed quality gates, and documented signing status
 ### Key Entities
 
 - **Release Version**: The single product version shared by the tag, application metadata, release title, and installer names.
-- **Platform Package**: An installable artifact identified by operating system, processor architecture, version, source revision, and signing status.
+- **Platform Package**: An installable artifact identified by a stable download filename, a Chinese display label, operating system, processor architecture, version, source revision, and signing status.
 - **Release Record**: The GitHub-hosted collection of platform packages, release notes, status, and source tag.
 - **Release Evidence**: The recorded checks and metadata proving that required packages came from the same revision and passed required gates.
 

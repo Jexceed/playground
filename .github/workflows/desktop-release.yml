@@ -153,6 +153,37 @@ jobs:
               --prerelease
           fi
 
+      - name: Reset draft assets for a clean rebuild
+        shell: bash
+        run: |
+          release_id="$(
+            gh api \
+              "repos/${GITHUB_REPOSITORY}/releases/tags/${RELEASE_TAG}" \
+              --jq '.id'
+          )"
+          asset_ids="$(
+            gh api --paginate \
+              "repos/${GITHUB_REPOSITORY}/releases/${release_id}/assets?per_page=100" \
+              --jq '.[].id'
+          )"
+
+          while IFS= read -r asset_id; do
+            if [[ -n "${asset_id}" ]]; then
+              gh api --method DELETE \
+                "repos/${GITHUB_REPOSITORY}/releases/assets/${asset_id}"
+            fi
+          done <<< "${asset_ids}"
+
+          remaining_assets="$(
+            gh api \
+              "repos/${GITHUB_REPOSITORY}/releases/${release_id}/assets?per_page=100" \
+              --jq 'length'
+          )"
+          if [[ "${remaining_assets}" -ne 0 ]]; then
+            echo "Draft release still contains ${remaining_assets} stale asset(s)." >&2
+            exit 1
+          fi
+
   build:
     name: Build ${{ matrix.label }}
     needs: [validate, prepare]
@@ -165,13 +196,15 @@ jobs:
             target: aarch64-apple-darwin
             bundle: dmg
             artifact_glob: "src-tauri/target/aarch64-apple-darwin/release/bundle/dmg/*.dmg"
-            asset_name: 小小思考屋_[version]_macOS-arm64.dmg
+            asset_name: thinking-island-[version]-macos-arm64.dmg
+            asset_label: 小小思考屋 macOS ARM64 安装包
           - label: Windows x64
             runner: windows-2025
             target: x86_64-pc-windows-msvc
             bundle: nsis
             artifact_glob: "src-tauri/target/x86_64-pc-windows-msvc/release/bundle/nsis/*-setup.exe"
-            asset_name: 小小思考屋_[version]_Windows-x64-setup.exe
+            asset_name: thinking-island-[version]-windows-x64-setup.exe
+            asset_label: 小小思考屋 Windows x64 安装包
     runs-on: ${{ matrix.runner }}
     permissions:
       contents: write
@@ -223,9 +256,9 @@ jobs:
         env:
           ARTIFACT_GLOB: ${{ matrix.artifact_glob }}
           ASSET_NAME: ${{ matrix.asset_name }}
+          ASSET_LABEL: ${{ matrix.asset_label }}
         run: |
           asset_name="${ASSET_NAME/\[version\]/${VERSION}}"
-          legacy_asset_name="${asset_name%.*}..${asset_name##*.}"
           artifact_path=""
           artifact_count=0
 
@@ -242,20 +275,14 @@ jobs:
           mkdir -p release-upload
           normalized_path="release-upload/${asset_name}"
           cp "${artifact_path}" "${normalized_path}"
-          gh release upload "${RELEASE_TAG}" "${normalized_path}" --clobber
-
-          assets="$(gh release view "${RELEASE_TAG}" --json assets --jq '.assets[].name')"
-          if grep -Fxq "${legacy_asset_name}" <<< "${assets}"; then
-            gh release delete-asset "${RELEASE_TAG}" "${legacy_asset_name}" --yes
-          fi
+          gh release upload \
+            "${RELEASE_TAG}" \
+            "${normalized_path}#${ASSET_LABEL}" \
+            --clobber
 
           assets="$(gh release view "${RELEASE_TAG}" --json assets --jq '.assets[].name')"
           if ! grep -Fxq "${asset_name}" <<< "${assets}"; then
             echo "Uploaded asset is missing: ${asset_name}" >&2
-            exit 1
-          fi
-          if grep -Fxq "${legacy_asset_name}" <<< "${assets}"; then
-            echo "Legacy release asset still exists: ${legacy_asset_name}" >&2
             exit 1
           fi
 
@@ -269,6 +296,7 @@ jobs:
             echo "- Target: \`${{ matrix.target }}\`"
             echo "- Bundle: \`${{ matrix.bundle }}\`"
             echo "- Asset: \`${{ matrix.asset_name }}\`"
+            echo "- Display label: ${{ matrix.asset_label }}"
             echo "- Upload: passed"
           } >> "${GITHUB_STEP_SUMMARY}"
 
@@ -288,12 +316,8 @@ jobs:
         run: |
           assets="$(gh release view "${RELEASE_TAG}" --json assets --jq '.assets[].name')"
           required_assets=(
-            "小小思考屋_${VERSION}_macOS-arm64.dmg"
-            "小小思考屋_${VERSION}_Windows-x64-setup.exe"
-          )
-          legacy_assets=(
-            "小小思考屋_${VERSION}_macOS-arm64..dmg"
-            "小小思考屋_${VERSION}_Windows-x64-setup..exe"
+            "thinking-island-${VERSION}-macos-arm64.dmg"
+            "thinking-island-${VERSION}-windows-x64-setup.exe"
           )
           for asset in "${required_assets[@]}"; do
             if ! grep -Fxq "${asset}" <<< "${assets}"; then
@@ -301,12 +325,11 @@ jobs:
               exit 1
             fi
           done
-          for asset in "${legacy_assets[@]}"; do
-            if grep -Fxq "${asset}" <<< "${assets}"; then
-              echo "Legacy release asset is still present: ${asset}" >&2
-              exit 1
-            fi
-          done
+          asset_count="$(gh release view "${RELEASE_TAG}" --json assets --jq '.assets | length')"
+          if [[ "${asset_count}" -ne 2 ]]; then
+            echo "Expected exactly two release assets, found ${asset_count}." >&2
+            exit 1
+          fi
 
       - name: Publish test pre-release
         run: gh release edit "${RELEASE_TAG}" --draft=false --prerelease

@@ -167,8 +167,13 @@ SmartScreen can display an “unknown publisher” warning.
 
 `.github/workflows/desktop-release.yml` builds the two supported packages:
 
-- `小小思考屋_<version>_macOS-arm64.dmg`
-- `小小思考屋_<version>_Windows-x64-setup.exe`
+- `thinking-island-<version>-macos-arm64.dmg`
+- `thinking-island-<version>-windows-x64-setup.exe`
+
+GitHub can rewrite uploaded filenames containing non-alphanumeric characters.
+The download filenames therefore use stable ASCII characters, while the release
+page keeps the Chinese display labels `小小思考屋 macOS ARM64 安装包` and
+`小小思考屋 Windows x64 安装包`.
 
 The workflow accepts a pushed `v<major>.<minor>.<patch>` tag or a manual run with
 an existing `release_tag`. Before creating packages, keep these three versions
@@ -200,11 +205,11 @@ gh workflow run desktop-release.yml -f release_tag=v0.1.0
 ```
 
 The workflow creates or reuses one draft pre-release, builds macOS ARM64 on
-`macos-15` and Windows x64 on `windows-2025`, replaces same-name draft assets
-with `gh release upload --clobber`, and publishes only after both required
-assets exist and no legacy double-dot filenames remain. If validation or either
-build fails, the release remains a draft. A published release for the same tag
-is never overwritten.
+`macos-15` and Windows x64 on `windows-2025`, clears any assets from an existing
+draft by asset ID, uploads the two stable filenames with
+`gh release upload --clobber`, and publishes only after exactly both required
+assets exist. If validation or either build fails, the release remains a draft.
+A published release for the same tag is never overwritten.
 
 Until Apple notarization and Windows code-signing credentials are configured,
 all automated desktop releases remain visibly marked as test pre-releases with

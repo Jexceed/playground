@@ -3,6 +3,14 @@
 All meaningful project changes should be recorded here. Keep entries factual and
 grouped by date.
 
+## 2026-07-18
+
+- Corrected live desktop pre-release uploads after GitHub filename
+  normalization prevented reliable verification of Chinese asset names. Draft
+  retries now clear existing assets by ID, upload stable ASCII download
+  filenames with Chinese display labels, and publish only when exactly the Mac
+  ARM64 and Windows x64 installers are present.
+
 ## 2026-07-17
 
 - Limited the right-side 成长记录 panel to 12 visible ability tags and added a
@@ -18,8 +26,7 @@ grouped by date.
   documentation.
 - Corrected Tauri release asset patterns so extension placeholders do not add a
   duplicate dot, then separated native builds from release uploads so draft
-  retries use GitHub CLI `--clobber`, verify the canonical filenames, and remove
-  legacy double-dot assets before publication.
+  retries use GitHub CLI `--clobber`.
 
 ## 2026-07-12
 

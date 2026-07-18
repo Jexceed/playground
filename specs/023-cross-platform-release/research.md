@@ -50,15 +50,20 @@ when absent.
 
 ## Decision 3: Use one draft GitHub Release as the matrix rendezvous
 
-**Decision**: A preparation job validates the tag and creates one draft
-pre-release. Two dependent platform jobs build concurrently and upload assets
-with `tauri-apps/tauri-action@v1`. A final job publishes the pre-release only
-after both platform jobs succeed.
+**Decision**: A preparation job validates the tag, creates or reuses one draft
+pre-release, and clears any existing draft assets by API ID. Two dependent
+platform jobs use `tauri-apps/tauri-action@v1` to build concurrently, then use
+GitHub CLI to upload stable ASCII filenames with Chinese display labels. A
+final job publishes the pre-release only after both platform jobs succeed and
+exactly the two expected assets exist.
 
-**Rationale**: Tauri's official action supports building platform bundles,
-uploading them to an existing release tag, explicit bundle arguments, and
-release asset naming patterns. Keeping the release draft until the matrix is
-complete prevents partial releases from appearing finished.
+**Rationale**: Tauri's official action supports native platform bundles and
+explicit bundle arguments. GitHub documents that it may rename asset filenames
+containing special or non-alphanumeric characters, so ASCII download filenames
+are necessary for deterministic API verification; GitHub's asset label retains
+the Chinese product-facing name. Clearing a reused draft by numeric asset ID
+also removes files whose names GitHub changed. Keeping the release draft until
+the matrix is complete prevents partial releases from appearing finished.
 
 **Alternatives considered**:
 
@@ -69,9 +74,11 @@ complete prevents partial releases from appearing finished.
 - Upload workflow artifacts only: rejected because the requested distribution
   channel is GitHub Releases.
 
-**Source**:
+**Sources**:
 
 - https://github.com/tauri-apps/tauri-action
+- https://docs.github.com/en/rest/releases/assets
+- https://cli.github.com/manual/gh_release_upload
 
 ## Decision 4: Treat initial packages as test-signed pre-releases
 

@@ -155,15 +155,17 @@ test("release assets identify product, version, OS, and architecture", () => {
     workflow,
     /artifact_glob: "src-tauri\/target\/x86_64-pc-windows-msvc\/release\/bundle\/nsis\/\*-setup\.exe"/,
   );
-  assert.match(workflow, /asset_name: 小小思考屋_\[version\]_macOS-arm64\.dmg/);
+  assert.match(workflow, /asset_name: thinking-island-\[version\]-macos-arm64\.dmg/);
   assert.match(
     workflow,
-    /asset_name: 小小思考屋_\[version\]_Windows-x64-setup\.exe/,
+    /asset_name: thinking-island-\[version\]-windows-x64-setup\.exe/,
   );
-  assert.match(workflow, /小小思考屋_\$\{VERSION\}_macOS-arm64\.dmg/);
+  assert.match(workflow, /asset_label: 小小思考屋 macOS ARM64 安装包/);
+  assert.match(workflow, /asset_label: 小小思考屋 Windows x64 安装包/);
+  assert.match(workflow, /thinking-island-\$\{VERSION\}-macos-arm64\.dmg/);
   assert.match(
     workflow,
-    /小小思考屋_\$\{VERSION\}_Windows-x64-setup\.exe/,
+    /thinking-island-\$\{VERSION\}-windows-x64-setup\.exe/,
   );
 });
 
@@ -186,13 +188,16 @@ test("release retries reuse drafts but reject completed releases", () => {
   assert.match(workflow, /is_draft[\s\S]*is_prerelease/);
   assert.match(workflow, /already exists and is not a draft pre-release/);
   assert.match(workflow, /Reusing existing draft pre-release/);
+  assert.match(workflow, /Reset draft assets for a clean rebuild/);
+  assert.match(workflow, /releases\/tags\/\$\{RELEASE_TAG\}/);
+  assert.match(workflow, /gh api --method DELETE/);
+  assert.match(workflow, /releases\/assets\/\$\{asset_id\}/);
   assert.doesNotMatch(workflow, /releaseAssetNamePattern|tagName:/);
   assert.match(workflow, /ASSET_NAME: \$\{\{ matrix\.asset_name \}\}/);
   assert.match(workflow, /asset_name="\$\{ASSET_NAME\/\\\[version\\\]\/\$\{VERSION\}\}"/);
-  assert.match(workflow, /legacy_asset_name="\$\{asset_name%\.\*\}\.\.\$\{asset_name##\*\.\}"/);
-  assert.match(workflow, /gh release upload "\$\{RELEASE_TAG\}" "\$\{normalized_path\}" --clobber/);
-  assert.match(workflow, /gh release delete-asset[\s\S]*--yes/);
-  assert.match(workflow, /Legacy release asset is still present/);
+  assert.match(workflow, /"\$\{normalized_path\}#\$\{ASSET_LABEL\}"/);
+  assert.match(workflow, /--clobber/);
+  assert.match(workflow, /Expected exactly two release assets/);
 });
 
 test("release evidence records the validated tag, revision, checks, and signing status", () => {

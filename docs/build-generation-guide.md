@@ -124,8 +124,12 @@ pnpm release:validate -- --tag v0.1.0
 一致的 `v<major>.<minor>.<patch>` 标签，由
 `.github/workflows/desktop-release.yml` 并行生成：
 
-- `小小思考屋_<version>_macOS-arm64.dmg`
-- `小小思考屋_<version>_Windows-x64-setup.exe`
+- `thinking-island-<version>-macos-arm64.dmg`
+- `thinking-island-<version>-windows-x64-setup.exe`
+
+GitHub 会改写包含非字母数字字符的上传文件名，因此下载文件名使用稳定的
+ASCII 字符；发布页仍用 `小小思考屋 macOS ARM64 安装包` 和
+`小小思考屋 Windows x64 安装包` 作为中文展示标签。
 
 在 Apple 公证和 Windows 商业代码签名完成前，流水线只能发布带明确安全
 提醒的 GitHub 预发布版，不能作为已完成平台信任认证的正式发行版。

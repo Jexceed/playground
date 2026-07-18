@@ -9,9 +9,10 @@
 Add a repeatable GitHub release pipeline for the existing Tauri 2 desktop shell.
 One version tag will build a macOS Apple Silicon DMG on an ARM64 macOS runner and
 a Windows x64 NSIS installer on a Windows runner. Both jobs upload clearly named
-assets to one draft pre-release; a dependent finalization job publishes the
-pre-release only after both builds and all quality gates succeed. Local macOS
-build and installation commands remain available.
+assets to one cleaned draft pre-release using stable ASCII download names and
+Chinese display labels; a dependent finalization job publishes the pre-release
+only after both builds and all quality gates succeed. Local macOS build and
+installation commands remain available.
 
 ## Technical Context
 
@@ -73,8 +74,9 @@ Technical decisions and rejected alternatives are recorded in
 
 The design uses explicit platform bundle arguments rather than a single global
 bundle target, because DMG and NSIS are platform-specific. A draft release is
-prepared before the matrix build, platform assets are uploaded independently,
-and a final job publishes the pre-release only after every required job succeeds.
+prepared and cleared before the matrix build, platform assets are uploaded
+independently with GitHub-stable filenames, and a final job publishes the
+pre-release only after every required job succeeds.
 
 ### Post-design Constitution Check
 

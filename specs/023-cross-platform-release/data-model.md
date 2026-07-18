@@ -25,11 +25,15 @@ Relationships:
 | `targetTriple` | `aarch64-apple-darwin` | `x86_64-pc-windows-msvc` |
 | `bundleType` | `dmg` | `nsis` |
 | `extension` | `.dmg` | `.exe` |
+| `downloadFilename` | `thinking-island-<version>-macos-arm64.dmg` | `thinking-island-<version>-windows-x64-setup.exe` |
+| `displayLabel` | `小小思考屋 macOS ARM64 安装包` | `小小思考屋 Windows x64 安装包` |
 | `signingStatus` | ad-hoc/test | unsigned/test |
 
 Validation rules:
 
-- Filename includes product, version, platform, and architecture.
+- Download filename uses GitHub-stable ASCII characters and includes product,
+  version, platform, and architecture.
+- Display label preserves the Chinese product name.
 - Package originates from the Release Version's source revision.
 - Both packages must exist before the Release Record can leave Draft.
 

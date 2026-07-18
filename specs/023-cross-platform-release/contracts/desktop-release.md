@@ -35,6 +35,8 @@ Any failed gate prevents platform jobs from starting.
 - Create one GitHub draft pre-release for the validated tag.
 - If a draft pre-release already exists for the same tag, reuse it for a safe
   retry.
+- Before a retry build starts, delete every existing draft asset by numeric
+  asset ID so GitHub-renamed filenames cannot survive into the new attempt.
 - If a non-draft release already exists, fail without changing it.
 - Release notes must identify:
   - Apple Silicon Mac support;
@@ -45,18 +47,20 @@ Any failed gate prevents platform jobs from starting.
 
 ## Platform build matrix
 
-| Runner | Target | Bundle | Required asset name |
-|---|---|---|---|
-| `macos-15` | `aarch64-apple-darwin` | `dmg` | `小小思考屋_<version>_macOS-arm64.dmg` |
-| `windows-2025` | `x86_64-pc-windows-msvc` | `nsis` | `小小思考屋_<version>_Windows-x64-setup.exe` |
+| Runner | Target | Bundle | Required download filename | Display label |
+|---|---|---|---|---|
+| `macos-15` | `aarch64-apple-darwin` | `dmg` | `thinking-island-<version>-macos-arm64.dmg` | `小小思考屋 macOS ARM64 安装包` |
+| `windows-2025` | `x86_64-pc-windows-msvc` | `nsis` | `thinking-island-<version>-windows-x64-setup.exe` | `小小思考屋 Windows x64 安装包` |
 
 Both matrix jobs upload to the prepared draft release. The workflow must not
-upload updater metadata because automatic updates are outside scope.
+upload updater metadata because automatic updates are outside scope. Download
+filenames use ASCII because GitHub may rewrite non-alphanumeric asset names;
+the labels preserve the Chinese product identity on the release page.
 
 ## Finalization
 
 - Runs only after both matrix legs succeed.
-- Confirms both expected release assets exist.
+- Confirms exactly both expected release assets exist.
 - Changes the draft to a published GitHub pre-release.
 - Leaves the release as a draft when a required job or asset check fails.
 

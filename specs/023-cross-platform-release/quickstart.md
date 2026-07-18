@@ -39,8 +39,10 @@ and launch behavior intact.
    manually with an existing `release_tag`.
 4. Observe the validation job, followed by concurrent macOS and Windows builds.
 5. Confirm the final release is marked **Pre-release** and contains:
-   - `小小思考屋_0.1.0_macOS-arm64.dmg`
-   - `小小思考屋_0.1.0_Windows-x64-setup.exe`
+   - `thinking-island-0.1.0-macos-arm64.dmg`, displayed as
+     `小小思考屋 macOS ARM64 安装包`
+   - `thinking-island-0.1.0-windows-x64-setup.exe`, displayed as
+     `小小思考屋 Windows x64 安装包`
 
 Expected failure behavior: if any gate or platform build fails, the GitHub
 release remains a draft and is not presented as a completed public release.
