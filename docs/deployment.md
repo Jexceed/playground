@@ -206,7 +206,8 @@ gh workflow run desktop-release.yml -f release_tag=v0.1.0
 
 The workflow creates or reuses one draft pre-release, builds macOS ARM64 on
 `macos-15` and Windows x64 on `windows-2025`, clears any assets from an existing
-draft by asset ID, uploads the two stable filenames with
+draft by asset ID, refreshes the draft notes with the current workflow evidence,
+uploads the two stable filenames with
 `gh release upload --clobber`, and publishes only after exactly both required
 assets exist. If validation or either build fails, the release remains a draft.
 A published release for the same tag is never overwritten.

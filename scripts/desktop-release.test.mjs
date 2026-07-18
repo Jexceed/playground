@@ -187,6 +187,10 @@ test("release retries reuse drafts but reject completed releases", () => {
   assert.match(workflow, /gh release view "\$\{RELEASE_TAG\}" --json isDraft,isPrerelease/);
   assert.match(workflow, /is_draft[\s\S]*is_prerelease/);
   assert.match(workflow, /already exists and is not a draft pre-release/);
+  assert.match(
+    workflow,
+    /gh release edit "\$\{RELEASE_TAG\}"[\s\S]*--notes-file release-notes\.md/,
+  );
   assert.match(workflow, /Reusing existing draft pre-release/);
   assert.match(workflow, /Reset draft assets for a clean rebuild/);
   assert.match(workflow, /--json databaseId/);

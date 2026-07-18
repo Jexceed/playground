@@ -7,9 +7,9 @@ grouped by date.
 
 - Corrected live desktop pre-release uploads after GitHub filename
   normalization prevented reliable verification of Chinese asset names. Draft
-  retries now clear existing assets by ID, upload stable ASCII download
-  filenames with Chinese display labels, and publish only when exactly the Mac
-  ARM64 and Windows x64 installers are present.
+  retries now refresh release evidence, clear existing assets by ID, upload
+  stable ASCII download filenames with Chinese display labels, and publish only
+  when exactly the Mac ARM64 and Windows x64 installers are present.
 
 ## 2026-07-17
 

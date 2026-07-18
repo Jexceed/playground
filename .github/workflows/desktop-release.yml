@@ -142,6 +142,9 @@ jobs:
               echo "Release ${RELEASE_TAG} already exists and is not a draft pre-release." >&2
               exit 1
             fi
+            gh release edit "${RELEASE_TAG}" \
+              --title "小小思考屋 ${VERSION}（测试版）" \
+              --notes-file release-notes.md
             echo "Reusing existing draft pre-release ${RELEASE_TAG}."
           else
             gh release create "${RELEASE_TAG}" \

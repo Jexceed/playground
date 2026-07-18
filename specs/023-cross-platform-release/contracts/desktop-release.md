@@ -34,7 +34,8 @@ Any failed gate prevents platform jobs from starting.
 
 - Create one GitHub draft pre-release for the validated tag.
 - If a draft pre-release already exists for the same tag, reuse it for a safe
-  retry.
+  retry and refresh its title and release notes with the current workflow
+  evidence.
 - Before a retry build starts, delete every existing draft asset by numeric
   asset ID so GitHub-renamed filenames cannot survive into the new attempt.
 - If a non-draft release already exists, fail without changing it.
