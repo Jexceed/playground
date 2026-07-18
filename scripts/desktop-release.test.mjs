@@ -149,13 +149,12 @@ test("release assets identify product, version, OS, and architecture", () => {
 
   assert.match(
     workflow,
-    /小小思考屋_\[version\]_macOS-arm64\[ext\]/,
+    /artifact_glob: "src-tauri\/target\/aarch64-apple-darwin\/release\/bundle\/dmg\/\*\.dmg"/,
   );
   assert.match(
     workflow,
-    /小小思考屋_\[version\]_Windows-x64-setup\[ext\]/,
+    /artifact_glob: "src-tauri\/target\/x86_64-pc-windows-msvc\/release\/bundle\/nsis\/\*-setup\.exe"/,
   );
-  assert.doesNotMatch(workflow, /(?:arm64|setup)\.\[ext\]/);
   assert.match(workflow, /asset_name: 小小思考屋_\[version\]_macOS-arm64\.dmg/);
   assert.match(
     workflow,
@@ -187,10 +186,13 @@ test("release retries reuse drafts but reject completed releases", () => {
   assert.match(workflow, /is_draft[\s\S]*is_prerelease/);
   assert.match(workflow, /already exists and is not a draft pre-release/);
   assert.match(workflow, /Reusing existing draft pre-release/);
+  assert.doesNotMatch(workflow, /releaseAssetNamePattern|tagName:/);
   assert.match(workflow, /ASSET_NAME: \$\{\{ matrix\.asset_name \}\}/);
   assert.match(workflow, /asset_name="\$\{ASSET_NAME\/\\\[version\\\]\/\$\{VERSION\}\}"/);
   assert.match(workflow, /legacy_asset_name="\$\{asset_name%\.\*\}\.\.\$\{asset_name##\*\.\}"/);
+  assert.match(workflow, /gh release upload "\$\{RELEASE_TAG\}" "\$\{normalized_path\}" --clobber/);
   assert.match(workflow, /gh release delete-asset[\s\S]*--yes/);
+  assert.match(workflow, /Legacy release asset is still present/);
 });
 
 test("release evidence records the validated tag, revision, checks, and signing status", () => {

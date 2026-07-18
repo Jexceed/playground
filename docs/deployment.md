@@ -200,9 +200,11 @@ gh workflow run desktop-release.yml -f release_tag=v0.1.0
 ```
 
 The workflow creates or reuses one draft pre-release, builds macOS ARM64 on
-`macos-15` and Windows x64 on `windows-2025`, and publishes only after both
-required assets exist. If validation or either build fails, the release remains
-a draft. A published release for the same tag is never overwritten.
+`macos-15` and Windows x64 on `windows-2025`, replaces same-name draft assets
+with `gh release upload --clobber`, and publishes only after both required
+assets exist and no legacy double-dot filenames remain. If validation or either
+build fails, the release remains a draft. A published release for the same tag
+is never overwritten.
 
 Until Apple notarization and Windows code-signing credentials are configured,
 all automated desktop releases remain visibly marked as test pre-releases with

@@ -17,9 +17,9 @@ grouped by date.
   warnings, safe draft retry behavior, and cross-platform release operating
   documentation.
 - Corrected Tauri release asset patterns so extension placeholders do not add a
-  duplicate dot, and made draft retries derive cleanup targets from explicit
-  canonical filenames before removing both canonical and legacy double-dot
-  assets.
+  duplicate dot, then separated native builds from release uploads so draft
+  retries use GitHub CLI `--clobber`, verify the canonical filenames, and remove
+  legacy double-dot assets before publication.
 
 ## 2026-07-12
 
