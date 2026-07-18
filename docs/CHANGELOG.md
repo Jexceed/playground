@@ -5,6 +5,10 @@ grouped by date.
 
 ## 2026-07-18
 
+- Removed the redundant pattern-board scene from all six 图形补一补 rounds so
+  the 3x3 matrix is the only evidence surface, reducing the 1280x720 document
+  height from 989px to 720px; aligned the sticky world navigation height with
+  the app shell inset and added curriculum audit coverage for the invariant.
 - Replaced all 找规律火车 evidence and choice tokens with a coherent
   image-gen-derived local PNG set, including registered color, sky, snack, and
   size-family cards with retained source and derivation documentation.

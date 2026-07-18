@@ -2865,7 +2865,6 @@ function makeAddressMapRounds(): RoundInput[] {
 }
 
 function makeMatrixPuzzleRounds(): RoundInput[] {
-  const sceneImage = imageGallery.scenes.patternPuzzleBoard;
   const cases = [
     {
       cells: [["🔴", "🔵", "🔴🔵"], ["🟡", "🟢", "🟡🟢"], ["🟣", "🔴", "?"]],
@@ -2933,7 +2932,6 @@ function makeMatrixPuzzleRounds(): RoundInput[] {
     level: item.level,
     prompt: "空格里应该放什么？",
     instruction: "先读完整的第一行，再用同样规则补第三行。",
-    sceneImage,
     matrix: { cells: item.cells.map((row) => [...row]) },
     choices: choiceSet(item.choices),
     answer: item.answer,

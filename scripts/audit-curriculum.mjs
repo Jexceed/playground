@@ -2389,6 +2389,10 @@ function escapeRegex(value) {
 }
 
 function checkMatrixPuzzleRoundQuality(round, context) {
+  if (round.sceneImage) {
+    problems.push(`${context}: matrix puzzle should use the matrix as its only evidence surface`);
+  }
+
   const cells = round.matrix?.cells;
   if (!isMatrixPuzzleGrid(cells)) {
     problems.push(`${context}: matrix puzzle should show a matrix with one missing cell`);

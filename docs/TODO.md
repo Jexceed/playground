@@ -62,6 +62,8 @@ small enough to turn into a Spec Kit feature.
   evidence-card groups in the left sidebar/game surface; include answer-option
   semantics for visual-count, part-whole, and relation-pair rounds, round
   navigation speech start/stop behavior, plus voice-source consistency checks.
+  图形补一补六轮已经完成 1280x720 和 375x812 人工基线验证，后续自动化时复用
+  其单一矩阵视觉表面和无溢出断言。
 - If richer illustrated maps are desired later, generate each map as the single
   answer surface from the same grid data instead of stacking a decorative scene
   above a separate answer grid.

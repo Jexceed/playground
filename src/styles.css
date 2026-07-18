@@ -406,7 +406,7 @@ button:focus-visible {
   top: 14px;
   align-self: start;
   grid-template-rows: auto auto minmax(0, 1fr);
-  max-height: calc(100vh - 28px);
+  max-height: calc(100vh - 36px);
 }
 
 .world-switcher {
