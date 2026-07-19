@@ -4,9 +4,14 @@
 
 **Created**: 2026-07-19
 
-**Status**: In progress
+**Status**: Superseded by `026-paid-ipad-launch`
 
 **Input**: User description: "先把小小思考屋发布到市场上，用最直接的方式获得真实家庭反馈。"
+
+> This plan was withdrawn before any public deployment. A free public link
+> without a purchase path does not satisfy the product's revenue objective.
+> The retained base-path and privacy work may be reused by private previews,
+> but GitHub Pages is not the commercial launch channel.
 
 ## User Scenarios & Testing
 
@@ -84,4 +89,3 @@ build, curriculum audit, voice audit, and Pages artifact deployment.
   signing, payments, and automatic updates are later distribution phases.
 - Initial learning feedback is collected manually; privacy-invasive analytics
   are intentionally excluded from this beta.
-

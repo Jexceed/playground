@@ -5,14 +5,23 @@ small enough to turn into a Spec Kit feature.
 
 ## P0
 
-- None.
+- Install full Xcode and the iOS platform toolchain; Command Line Tools alone
+  cannot produce an iPad App Store build.
+- Enroll the publishing individual or legal entity in the Apple Developer
+  Program, accept the Paid Apps agreement, and create signing identities.
+- Determine with the publishing entity whether Mainland China distribution
+  requires an ICP filing and game approval number for this product. Do not
+  enable the Mainland China storefront until the required status is confirmed.
+- Implement one non-consumable full unlock behind a parental gate, Restore
+  Purchases, and one complete free starter game in each world.
+- Build and validate a real iPad package, sandbox purchase, TestFlight build,
+  privacy label, screenshots, product page, and review notes.
 
 ## P1
 
-- After the public Web Beta is approved and enabled, run a small family test
-  with explicit observation notes for first-open comprehension, child choice
-  behavior, parent follow-up prompts, return intent, and device/browser issues;
-  do not add child analytics to replace direct play observation.
+- Run a paid-family pilot through the selected App Store storefronts. Count
+  completed purchases and net proceeds, not free page visits, as the primary
+  launch signal; keep direct play observation for product-quality feedback.
 - Configure Apple Developer ID signing/notarization and Windows production code
   signing in protected GitHub environments; until both are verified, keep
   desktop packages marked as test pre-releases.

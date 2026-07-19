@@ -9,6 +9,10 @@ grouped by date.
   including subpath-safe images and audio, a verified deployment workflow, a
   hosted privacy notice, and a public product README while preserving existing
   root-path NAS and Tauri builds.
+- Withdrew the automatic free Web Beta before remote publication and replaced
+  it with a revenue-first iPad launch plan: one starter game per world, a
+  parent-gated ¥68-equivalent lifetime unlock, App Store payment and restore,
+  paid-family success metrics, and explicit China storefront compliance gates.
 
 ## 2026-07-18
 

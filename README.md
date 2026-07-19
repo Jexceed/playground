@@ -2,13 +2,13 @@
 
 小小思考屋是给 4 岁孩子和家长一起玩的亲子思维游戏。孩子通过看图、操作、听语音、解释原因和复述过程，练习数感、逻辑、计划、证据推理和空间理解。
 
-## 公开测试版
+## 商业发布方向
 
-- Web Beta：<https://jexceed.github.io/playground/>
-- 隐私说明：<https://jexceed.github.io/playground/privacy.html>
-- Mac ARM64 / Windows x64 测试安装包：[GitHub Releases](https://github.com/Jexceed/playground/releases)
+首个收费版本面向 iPad 家庭场景：每个主题世界提供一个完整试玩关卡，其余内容通过家长区一次性解锁。首发建议价为 ¥68 或对应地区价格，不做广告，也不在没有持续新增内容之前销售自动续费订阅。
 
-Web Beta 无需安装，适合先在手机、平板或电脑浏览器中和孩子一起体验。桌面安装包尚未完成 Apple 公证和 Windows 商业代码签名，因此仍标为测试版。
+GitHub Pages 不作为商业发布渠道。现有 Mac ARM64 / Windows x64 [GitHub 测试安装包](https://github.com/Jexceed/playground/releases)只用于开发验证，不代表正式收费版本。
+
+商业模型、成本和发布门槛见 [docs/monetization.md](./docs/monetization.md)，实现规格见 [specs/026-paid-ipad-launch/spec.md](./specs/026-paid-ipad-launch/spec.md)。
 
 ## 现在包含什么
 
@@ -27,8 +27,6 @@ pnpm install --frozen-lockfile
 pnpm build
 pnpm audit:curriculum
 pnpm audit:voice-media
-pnpm test:web-release
 ```
 
 发布和桌面打包说明见 [docs/deployment.md](./docs/deployment.md)。
-

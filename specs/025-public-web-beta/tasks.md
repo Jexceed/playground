@@ -8,3 +8,9 @@
       and responsive browser verification.
 - [ ] T006 After maintainer confirmation, merge/push the release revision,
       enable GitHub Pages if required, and verify the public URL.
+
+## Superseded
+
+T003 and T006 are intentionally withdrawn. The workflow was removed before it
+reached the remote repository. Revenue-first release work continues in
+`specs/026-paid-ipad-launch/`.
