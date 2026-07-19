@@ -21,6 +21,7 @@
     "win:build": "tauri build --bundles nsis --target x86_64-pc-windows-msvc",
     "release:validate": "node scripts/validate-desktop-release.mjs",
     "test:desktop-release": "node --test scripts/desktop-release.test.mjs",
+    "test:web-release": "node --test scripts/public-web-release.test.mjs",
     "audit:curriculum": "node scripts/audit-curriculum.mjs",
     "audit:voice-media": "node scripts/audit-voice-media.mjs",
     "export:voice-lines": "node scripts/export-voice-lines.mjs",

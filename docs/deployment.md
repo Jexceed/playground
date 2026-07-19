@@ -2,6 +2,35 @@
 
 小小思考屋 is a static React/Vite app. The preferred deployment artifact is a generated static package, not a development server.
 
+## Public Web Beta
+
+The fastest public distribution path is GitHub Pages:
+
+```text
+https://jexceed.github.io/playground/
+```
+
+`.github/workflows/public-web-beta.yml` deploys `main` and also supports a
+manual run. The hosted build sets `VITE_BASE_PATH=/playground/`; ordinary NAS
+and Tauri builds keep the default `/` base.
+
+Before publishing locally, run:
+
+```bash
+pnpm test:web-release
+VITE_BASE_PATH=/playground/ pnpm build
+pnpm audit:curriculum
+pnpm audit:voice-media
+```
+
+Preview the hosted path by serving the build and opening `/playground/`. The
+Web Beta must load its JS, CSS, images, brand audio, and voice manifest from the
+same subpath. The privacy notice is copied to `/playground/privacy.html`.
+
+The repository's Pages source must be configured for GitHub Actions before the
+first successful deployment. Enabling Pages and pushing or merging the release
+revision are publication actions and require maintainer confirmation.
+
 ## Build The Shared Release Package
 
 Run:

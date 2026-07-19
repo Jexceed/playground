@@ -9,6 +9,10 @@ small enough to turn into a Spec Kit feature.
 
 ## P1
 
+- After the public Web Beta is approved and enabled, run a small family test
+  with explicit observation notes for first-open comprehension, child choice
+  behavior, parent follow-up prompts, return intent, and device/browser issues;
+  do not add child analytics to replace direct play observation.
 - Configure Apple Developer ID signing/notarization and Windows production code
   signing in protected GitHub environments; until both are verified, keep
   desktop packages marked as test pre-releases.

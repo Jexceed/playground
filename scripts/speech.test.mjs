@@ -15,9 +15,13 @@ async function importSpeechWithBrowser(browser) {
       target: ts.ScriptTarget.ES2020,
     },
   });
+  const browserOutput = outputText.replace(
+    'import { publicAsset } from "./publicAsset";',
+    "const publicAsset = (path) => path;",
+  );
   const dir = await mkdtemp(join(tmpdir(), "thinking-house-speech-"));
   const modulePath = join(dir, "speech.mjs");
-  await writeFile(modulePath, outputText);
+  await writeFile(modulePath, browserOutput);
   const mod = await import(`${pathToFileURL(modulePath).href}?t=${Date.now()}-${Math.random()}`);
   return {
     mod,
@@ -161,4 +165,3 @@ test("stopSpeech immediately pauses local audio and prevents pending speech from
     await pending.cleanup();
   }
 });
-

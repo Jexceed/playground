@@ -1,3 +1,5 @@
+import { publicAsset } from "./publicAsset";
+
 const voiceMap: Record<string, string> = {};
 const voiceSegments: Record<string, string[]> = {};
 
@@ -32,7 +34,7 @@ export async function speak(text: string, lang = "zh-CN") {
   if (src) {
     recordLocalVoiceHit(src);
     recordSpeechSource(src);
-    const audio = new Audio(src);
+    const audio = new Audio(publicAsset(src));
     let fellBack = false;
     const fallbackToSpeechSynthesis = (reason = "local-audio-failed") => {
       if (fellBack || run !== speechRun || !("speechSynthesis" in window)) return;
@@ -110,7 +112,7 @@ async function loadVoiceManifest() {
 async function playAudioSegments(srcs: string[], run: number) {
   for (const src of srcs) {
     if (run !== speechRun) return;
-    const audio = new Audio(src);
+    const audio = new Audio(publicAsset(src));
     activeAudio = audio;
     audio.volume = 0.9;
     try {
@@ -132,7 +134,7 @@ async function playAudioSegments(srcs: string[], run: number) {
 
 async function readVoiceManifest() {
   if (typeof fetch !== "undefined") {
-    const response = await fetch("/audio/voice/manifest.json", { cache: "no-cache" });
+    const response = await fetch(publicAsset("/audio/voice/manifest.json"), { cache: "no-cache" });
     if (!response.ok) return {};
     return (await response.json()) as VoiceManifest;
   }
@@ -150,7 +152,7 @@ async function readVoiceManifest() {
     };
     window.setTimeout(() => finish({}), 1500);
     const request = new XMLHttpRequest();
-    request.open("GET", "/audio/voice/manifest.json", true);
+    request.open("GET", publicAsset("/audio/voice/manifest.json"), true);
     request.timeout = 1500;
     request.onreadystatechange = () => {
       if (request.readyState !== 4) return;

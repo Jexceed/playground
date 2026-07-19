@@ -4,6 +4,7 @@ import type { CSSProperties } from "react";
 import { GuideMascot } from "../components/GuideMascot";
 import { VisualGlyph, VisualToken, visualMetaFor, visualParts } from "../components/VisualToken";
 import { imageGallery } from "../data/imageGallery";
+import { publicAsset } from "../publicAsset";
 import { playTone, speak } from "../speech";
 import type { GameConfig, GameRound, GraphicChallengeOption, GraphicFigure, GraphicFigureGroup } from "../types";
 
@@ -402,7 +403,7 @@ function RoundBoard({
       {!round.sceneImage && !round.graphicChallenge && !round.clockChallenge && <SceneBackdrop scene={scene} />}
       {round.sceneImage && (
         <figure className="scene-image-card">
-          <img src={round.sceneImage.src} alt={round.sceneImage.alt} />
+          <img src={publicAsset(round.sceneImage.src)} alt={round.sceneImage.alt} />
         </figure>
       )}
 

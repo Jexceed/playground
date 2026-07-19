@@ -3,6 +3,13 @@
 All meaningful project changes should be recorded here. Keep entries factual and
 grouped by date.
 
+## 2026-07-19
+
+- Prepared a public GitHub Pages Web Beta as the first market-release channel,
+  including subpath-safe images and audio, a verified deployment workflow, a
+  hosted privacy notice, and a public product README while preserving existing
+  root-path NAS and Tauri builds.
+
 ## 2026-07-18
 
 - Removed the redundant pattern-board scene from all six 图形补一补 rounds so

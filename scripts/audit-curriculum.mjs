@@ -104,13 +104,14 @@ if (!indexHtml.includes("<title>小小思考屋</title>")) {
   problems.push("index.html title should use the 小小思考屋 brand");
 }
 if (/小小思考岛/.test(indexHtml)) problems.push("index.html still contains old 小小思考岛 brand text");
-if (!indexHtml.includes(`<link rel="icon" type="image/png" href="${brandLogoSrc}" />`)) {
+if (!indexHtml.includes(`<link rel="icon" type="image/png" href="%BASE_URL%${brandLogoSrc.replace(/^\/+/, "")}" />`)) {
   problems.push("index.html favicon should use the image-gen brand logo");
 }
-if (!indexHtml.includes(`<link rel="apple-touch-icon" href="${brandLogoSrc}" />`)) {
+if (!indexHtml.includes(`<link rel="apple-touch-icon" href="%BASE_URL%${brandLogoSrc.replace(/^\/+/, "")}" />`)) {
   problems.push("index.html apple touch icon should use the image-gen brand logo");
 }
-if (!appSource.includes(`src="${brandLogoSrc}"`)) problems.push(`App sidebar should render image-gen brand logo: ${brandLogoSrc}`);
+if (!appSource.includes(`const brandLogoSrc = "${brandLogoSrc}"`)) problems.push(`App should keep the registered brand logo path: ${brandLogoSrc}`);
+if (!appSource.includes("publicAsset(brandLogoSrc)")) problems.push("App brand images should resolve through the public base path");
 if (/brand-(mark|logo)/.test(appSource)) problems.push("App still contains legacy inline brand logo markup");
 if (!appSource.includes("function LaunchSplash")) problems.push("App should define a branded LaunchSplash entry view");
 if (appSource.includes('speak("小小思考屋")')) {
@@ -118,6 +119,9 @@ if (appSource.includes('speak("小小思考屋")')) {
 }
 if (!appSource.includes(launchBrandAudioSrc)) {
   problems.push(`LaunchSplash should reference the dedicated launch brand audio: ${launchBrandAudioSrc}`);
+}
+if (!appSource.includes("new Audio(publicAsset(launchBrandAudioSrc))")) {
+  problems.push("LaunchSplash audio should resolve through the public base path");
 }
 if (!appSource.includes("startup-splash")) problems.push("LaunchSplash should render startup-splash markup");
 if (!appSource.includes("splashTimer")) problems.push("LaunchSplash should auto-enter after the opening animation");

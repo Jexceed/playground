@@ -1,5 +1,6 @@
 import { Volume2 } from "lucide-react";
 import { imageGallery } from "../data/imageGallery";
+import { publicAsset } from "../publicAsset";
 import { speak } from "../speech";
 
 type TokenMeta = {
@@ -333,7 +334,7 @@ function TokenButton({ compact, label, kind }: { compact?: boolean; label: strin
 function Illustration({ kind, small = false }: { kind: string; small?: boolean }) {
   const raster = rasterForKind(kind);
   if (raster) {
-    return <img className={`kid-illustration kid-avatar ${small ? "small" : ""}`} src={raster.src} alt="" aria-hidden="true" />;
+    return <img className={`kid-illustration kid-avatar ${small ? "small" : ""}`} src={publicAsset(raster.src)} alt="" aria-hidden="true" />;
   }
 
   return (

@@ -2,10 +2,12 @@ import { Check, RotateCcw } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import { games, worlds } from "./data/games";
 import { ProgressiveSetGame } from "./games/ProgressiveSetGame";
+import { publicAsset } from "./publicAsset";
 import { addCompletion, addRoundCompletion, readLastPlayLocation, readProgress, saveLastPlayLocation, saveProgress } from "./storage";
 import { speak, stopSpeech, warmVoiceManifest } from "./speech";
 import type { GameConfig, GameRound, LastPlayLocation, ProgressLog, WorldId } from "./types";
 
+const brandLogoSrc = "/images/brand/thinking-house-brand-v3.png";
 const launchBrandAudioSrc = "/audio/brand/launch-brand-shout.wav";
 const maxVisibleProgressTags = 12;
 
@@ -116,7 +118,7 @@ export function App() {
       <section className="layout">
         <nav className="world-nav" aria-label="主题地图">
           <div className="sidebar-brand">
-            <img className="brand-image" src="/images/brand/thinking-house-brand-v3.png" alt="小小思考屋 亲子思维游戏" />
+            <img className="brand-image" src={publicAsset(brandLogoSrc)} alt="小小思考屋 亲子思维游戏" />
           </div>
 
           <div className="world-switcher">
@@ -236,7 +238,7 @@ function LaunchSplash({ onEnter }: { onEnter: () => void }) {
   const [leaving, setLeaving] = useState(false);
 
   useEffect(() => {
-    const launchBrandAudio = new Audio(launchBrandAudioSrc);
+    const launchBrandAudio = new Audio(publicAsset(launchBrandAudioSrc));
     launchBrandAudio.preload = "auto";
     launchBrandAudio.volume = 0.9;
     const voiceTimer = window.setTimeout(() => {
@@ -265,7 +267,7 @@ function LaunchSplash({ onEnter }: { onEnter: () => void }) {
       </div>
       <div className="splash-stage">
         <div className="splash-logo-wrap" aria-hidden="true">
-          <img className="splash-logo" src="/images/brand/thinking-house-brand-v3.png" alt="" />
+          <img className="splash-logo" src={publicAsset(brandLogoSrc)} alt="" />
           <span className="splash-glow" />
         </div>
         <div className="splash-title">
