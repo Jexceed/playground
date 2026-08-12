@@ -68,12 +68,17 @@ if (manifest.totalBytes > RUNTIME_ASSET_BUDGET_BYTES) problems.push(`Runtime ass
 
 const builder = JSON.parse(await readFile("doyingame/profiles/v2/packages/builder.json", "utf8"));
 if (builder["bytedance-mini-game"]?.appid !== DOUYIN_APP_ID) problems.push("Builder AppID does not match the approved app");
-if (builder["bytedance-mini-game"]?.orientation !== "portrait") problems.push("Builder orientation is not portrait");
+if (builder["bytedance-mini-game"]?.orientation !== "landscape") problems.push("Builder orientation is not landscape");
 
 const buildConfig = JSON.parse(await readFile("doyingame/build-configs/bytedance-mini-game.json", "utf8"));
 if (buildConfig.startScene !== "f361a3c9-906d-4fdf-b84a-b5d076e8b812") problems.push("Build config start scene is not Main.scene");
 if (buildConfig.packages?.["bytedance-mini-game"]?.appid !== DOUYIN_APP_ID) problems.push("Build config AppID does not match the approved app");
-if (buildConfig.packages?.["bytedance-mini-game"]?.orientation !== "portrait") problems.push("Build config orientation is not portrait");
+if (buildConfig.packages?.["bytedance-mini-game"]?.orientation !== "landscape") problems.push("Build config orientation is not landscape");
+
+const project = JSON.parse(await readFile("doyingame/settings/v2/packages/project.json", "utf8"));
+const resolution = project.general?.designResolution;
+if (resolution?.width !== 1280 || resolution?.height !== 720) problems.push("Cocos design resolution is not 1280x720");
+if (resolution?.fitHeight !== true || resolution?.fitWidth !== false) problems.push("Cocos landscape fit policy must use fitHeight only");
 
 const engine = JSON.parse(await readFile("doyingame/settings/v2/packages/engine.json", "utf8"));
 const modules = engine.modules?.configs?.defaultConfig?.includeModules ?? [];

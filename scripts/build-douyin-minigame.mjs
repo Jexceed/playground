@@ -41,16 +41,22 @@ async function verifyBuild(outputDirectory) {
   const files = await listFiles(outputDirectory);
   const bytes = (await Promise.all(files.map(async (path) => (await stat(path)).size))).reduce((sum, size) => sum + size, 0);
   const appConfig = JSON.parse(await readFile(join(outputDirectory, "project.config.json"), "utf8"));
+  const gameConfig = JSON.parse(await readFile(join(outputDirectory, "game.json"), "utf8"));
   const settings = JSON.parse(await readFile(join(outputDirectory, "src/settings.json"), "utf8"));
   const gameBootstrap = await readFile(join(outputDirectory, "game.js"), "utf8");
+  const mainBundles = files.filter((path) => /\/assets\/main\/index(?:\.[^/]+)?\.js$/.test(path));
+  if (mainBundles.length !== 1) throw new Error(`expected one main bundle; found ${mainBundles.length}`);
+  const mainBundle = await readFile(mainBundles[0], "utf8");
   const counts = files.reduce((value, path) => {
     const extension = extname(path).toLowerCase();
     value[extension] = (value[extension] ?? 0) + 1;
     return value;
   }, {});
   if (appConfig.appid !== "tta51dd3a03b67523202") throw new Error(`unexpected AppID ${String(appConfig.appid)}`);
+  if (gameConfig.deviceOrientation !== "landscape") throw new Error(`unexpected deviceOrientation ${String(gameConfig.deviceOrientation)}`);
   if (settings.launch?.launchScene !== "db://assets/scenes/Main.scene") throw new Error("Main.scene is not the launch scene");
   if (!gameBootstrap.includes("tt.onShow")) throw new Error("early tt.onShow registration is missing");
+  if (mainBundle.includes("[].concat(new Set(")) throw new Error("Cocos emitted broken Set-spread code into the mini-game runtime");
   if ((counts[".mp3"] ?? 0) < 300) throw new Error(`only ${counts[".mp3"] ?? 0} voice files were packaged`);
   if ((counts[".png"] ?? 0) < 15) throw new Error(`only ${counts[".png"] ?? 0} images were packaged`);
   if (bytes < 12 * 1024 * 1024) throw new Error(`package is suspiciously small (${formatMB(bytes)} MB)`);
@@ -58,6 +64,7 @@ async function verifyBuild(outputDirectory) {
   return {
     output: outputDirectory,
     appid: appConfig.appid,
+    deviceOrientation: gameConfig.deviceOrientation,
     launchScene: settings.launch.launchScene,
     files: files.length,
     voiceFiles: counts[".mp3"] ?? 0,

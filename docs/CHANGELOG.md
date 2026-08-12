@@ -5,6 +5,25 @@ grouped by date.
 
 ## 2026-08-13
 
+- Rebuilt the Douyin mini game around a 1280×720 forced-landscape workbench
+  matching the installed Mac app's structure: brand and all eight Math Island
+  games on the left, the playable question with horizontal answer cards in the
+  center, and round navigation, parent prompt, and growth record on the right.
+  Startup now restores directly into the most recent round instead of showing
+  the unrelated portrait welcome page.
+- Added in-place game switching and round jumping, local-app-style paper grid,
+  outlined cards and state colors, landscape parent guidance, landscape source
+  and output audits, and 667×375 / 844×390 / 932×430 viewport checks. Fixed
+  portrait-coordinate safe-area data returned after iOS landscape rotation and
+  prevented asynchronously loaded sprites from resizing their layout nodes.
+- Rebuilt and compiled the result in Douyin DevTools 4.5.5 on an iPhone 15 Pro
+  landscape simulator. The simulator now fills the safe screen with the full
+  three-column workbench; the Cocos output declares `deviceOrientation:
+  landscape` and remains 12.01 MB with 338 voices and 19 PNGs.
+- Replaced progress-array Set spreading after Xiaomi 15 simulator validation
+  exposed Cocos' ByteDance transpiler emitting a nested Set. Added source and
+  built-bundle guards so `[object Set]` can no longer leak into growth tags or
+  corrupt completed-game/round arrays.
 - Imported the official Cocos build into Douyin DevTools 4.5.5 and completed
   simulator validation on iPhone SE 2, iPhone 15 Pro, Xiaomi 15, and iPad.
   Verified the wrong/retry/correct/next loop, progress restore and corrupt-data
@@ -28,7 +47,7 @@ grouped by date.
   referenced local voice clips; the initial unoptimized asset closure was
   15.48 MB and had
   zero logic-house, graphic-workshop, or source-image references.
-- Implemented the portrait parent-child game shell, visual-group/scene/clock
+- Implemented the initial portrait parent-child game shell, visual-group/scene/clock
   renderers, local voice playback, guarded answer flow, parent prompts,
   versioned local progress recovery, safe-area layout, lifecycle audio handling,
   and Douyin sidebar bridge.

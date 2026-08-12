@@ -25,8 +25,8 @@ export class LocalPlatformAdapter implements PlatformAdapter {
   onShow(): () => void { return () => undefined; }
   onHide(): () => void { return () => undefined; }
   getViewport(): ViewportInsets {
-    const width = globalThis.innerWidth || 750;
-    const height = globalThis.innerHeight || 1334;
+    const width = globalThis.innerWidth || 1280;
+    const height = globalThis.innerHeight || 720;
     return { width, height, safeTop: 0, safeRight: 0, safeBottom: 0, safeLeft: 0 };
   }
   async checkSidebar() { return false; }

@@ -5,15 +5,16 @@ small enough to turn into a Spec Kit feature.
 
 ## P0
 
-- Complete the exact Cocos Web Mobile manual pass at 375×812, 390×844, and
-  430×932. The official Creator 3.8.8 command build and higher-fidelity Douyin
-  simulator checks on four representative devices are already verified.
+- Complete the exact Cocos Web Mobile manual pass at 667×375, 844×390, and
+  932×430. The official Creator 3.8.8 landscape command build plus iPhone 15 Pro
+  and Xiaomi 15 Douyin simulator passes are verified; re-run iPhone SE 2 and
+  iPad in landscape before treating the full device matrix as complete.
 - Confirm the performance-test report after scanning the generated QR code and
   completing at least three minutes of representative real-device play; retain
   the report or screenshot as release evidence.
 - Confirm the platform-reported upload/package size for AppID
   `tta51dd3a03b67523202` before any test-version upload. Local and official Cocos
-  checks currently report 12.00 MB under the stricter 16 MB project gate.
+  checks currently report 12.01 MB under the stricter 16 MB project gate.
 - Run one complete Math Island game plus representative clock rounds on iOS and
   Android real devices; save screenshots or video as submission evidence.
 - Confirm the publishing subject's final age-rating text, privacy notice,

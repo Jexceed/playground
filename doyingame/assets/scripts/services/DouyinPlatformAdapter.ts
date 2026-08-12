@@ -39,15 +39,30 @@ export class DouyinPlatformAdapter implements PlatformAdapter {
   onHide(listener: () => void) { this.api.onHide(listener); return () => this.api.offHide?.(listener); }
   getViewport(): ViewportInsets {
     const info = this.api.getSystemInfoSync();
-    const width = info.windowWidth ?? 750;
-    const height = info.windowHeight ?? 1334;
+    const width = info.windowWidth ?? 1280;
+    const height = info.windowHeight ?? 720;
     const safe = info.safeArea;
+    if (safe && width > height && safe.bottom - safe.top > safe.right - safe.left) {
+      // Douyin DevTools and some iOS builds briefly expose portrait safe-area
+      // coordinates after the game window has already rotated to landscape.
+      // Rotate those portrait insets instead of treating `safe.right` as a
+      // 459px landscape notch and squeezing the game into half the screen.
+      const portraitHeight = Math.max(safe.bottom, width);
+      return {
+        width,
+        height,
+        safeTop: 0,
+        safeBottom: 0,
+        safeLeft: clampInset(safe.top, width * 0.1),
+        safeRight: clampInset(portraitHeight - safe.bottom, width * 0.1),
+      };
+    }
     return {
       width, height,
-      safeTop: safe?.top ?? 0,
-      safeLeft: safe?.left ?? 0,
-      safeRight: safe ? Math.max(0, width - safe.right) : 0,
-      safeBottom: safe ? Math.max(0, height - safe.bottom) : 0,
+      safeTop: clampInset(safe?.top ?? 0, height * 0.12),
+      safeLeft: clampInset(safe?.left ?? 0, width * 0.1),
+      safeRight: clampInset(safe ? Math.max(0, width - safe.right) : 0, width * 0.1),
+      safeBottom: clampInset(safe ? Math.max(0, height - safe.bottom) : 0, height * 0.12),
     };
   }
   checkSidebar() { return new Promise<boolean>((resolve) => this.api.checkScene({ scene: "sidebar", success: (res) => resolve(res.isExist === true), fail: () => resolve(false) })); }
@@ -58,3 +73,5 @@ export class DouyinPlatformAdapter implements PlatformAdapter {
   isSidebarLaunch(context: LaunchContext | null) { return context?.scene === "021036" || (context?.launch_from === "homepage" && context?.location === "sidebar_card"); }
   report(event: string, details?: unknown) { console.info(`[thinking-house] ${event}`, details ?? ""); }
 }
+
+function clampInset(value: number, maximum: number) { return Math.max(0, Math.min(value, maximum)); }

@@ -24,7 +24,7 @@ export function normalizeProgress(value: unknown, index: ProgressCatalogIndex, n
   if (!isRecord(value) || value.version !== 1) return emptyProgress(now);
   const completedGameIds = stringArray(value.completedGameIds).filter((id) => index.gameIds.has(id));
   const completedRoundIds = stringArray(value.completedRoundIds).filter((id) => index.roundIds.has(id));
-  const abilityTags = stringArray(value.abilityTags);
+  const abilityTags = stringArray(value.abilityTags).filter((tag) => tag !== "[object Set]" && tag !== "[object Object]");
   let lastLocation: ProgressLocation | null = null;
   if (isRecord(value.lastLocation)) {
     const gameId = typeof value.lastLocation.gameId === "string" ? value.lastLocation.gameId : null;
@@ -59,5 +59,8 @@ export function saveLocation(progress: ProgressV1, lastLocation: ProgressLocatio
 function stringArray(value: unknown): string[] {
   return Array.isArray(value) ? value.filter((item): item is string => typeof item === "string" && item.length > 0) : [];
 }
-function unique(values: string[]) { return [...new Set(values)]; }
+// Cocos 3.8's ByteDance Babel target transpiles `[...new Set(values)]` into
+// `[].concat(new Set(values))`, which nests a Set instead of spreading it.
+// Keep the tiny progress arrays compatible with the actual mini-game runtime.
+function unique(values: string[]) { return values.filter((value, index) => values.indexOf(value) === index); }
 function isRecord(value: unknown): value is Record<string, unknown> { return !!value && typeof value === "object" && !Array.isArray(value); }

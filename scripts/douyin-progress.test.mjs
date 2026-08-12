@@ -35,6 +35,18 @@ test("valid progress is deduplicated and out-of-scope IDs are removed", () => {
   assert.deepEqual(actual.lastLocation, { gameId: "math-a", roundIndex: 1 });
 });
 
+test("legacy collection strings cannot leak into growth tags", () => {
+  const actual = progress.normalizeProgress({
+    version: 1,
+    completedGameIds: [],
+    completedRoundIds: [],
+    abilityTags: ["[object Set]", "[object Object]", "数数"],
+    lastLocation: null,
+    updatedAt: 50,
+  }, index, 100);
+  assert.deepEqual(actual.abilityTags, ["数数"]);
+});
+
 test("completion mutations retain unique IDs and tags", () => {
   let value = progress.emptyProgress(1);
   value = progress.completeRound(value, "round-1", ["数数", "基数"], 2);

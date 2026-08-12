@@ -29,6 +29,7 @@
     "test:douyin-minigame": "pnpm typecheck:douyin-minigame && node --test scripts/douyin-math-export.test.mjs scripts/douyin-math-runtime.test.mjs scripts/douyin-progress.test.mjs scripts/douyin-parent-content.test.mjs scripts/douyin-build-template.test.mjs && node scripts/douyin-minigame-ui-check.mjs",
     "audit:douyin-minigame": "node scripts/audit-douyin-minigame.mjs",
     "build:douyin-minigame": "node scripts/build-douyin-minigame.mjs",
+    "test:douyin-minigame:devtools": "node scripts/verify-douyin-devtools.mjs",
     "export:voice-lines": "node scripts/export-voice-lines.mjs",
     "generate:mac-voices": "node scripts/generate-mac-voices.mjs",
     "generate:edge-voices": "node scripts/generate-edge-voices.mjs",
