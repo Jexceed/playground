@@ -113,8 +113,8 @@
 - [x] T041 [P] Record completed work and remaining external gates in `docs/CHANGELOG.md` and `docs/TODO.md`
 - [x] T042 Run `pnpm export:douyin-math`, `pnpm test:douyin-minigame`, and `pnpm audit:douyin-minigame`
 - [x] T043 Run `pnpm build`, `pnpm audit:curriculum`, and `pnpm audit:voice-media`
-- [ ] T044 Open in Cocos Creator 3.8 LTS, run three-viewport Web Mobile checks, and build `doyingame/build/bytedance-mini-game/`（官方冷启动构建已通过；三尺寸人工视觉检查待完成）
-- [ ] T045 Import the package into Douyin DevTools, run simulator/sidebar/offline tests, and record results in `docs/douyin-minigame.md`
+- [ ] T044 Open in Cocos Creator 3.8 LTS, run three-viewport Web Mobile checks, and build `doyingame/build/bytedance-mini-game/`（官方 3.8.8 冷启动构建和抖音模拟器四机型人工视觉检查已通过；精确的 Cocos Web Mobile 三视口检查待补）
+- [x] T045 Import the package into Douyin DevTools, run simulator/sidebar/offline tests, and record results in `docs/douyin-minigame.md`
 - [ ] T046 Run iOS and Android real-device preview across one full game plus clock sampling and record evidence in `docs/douyin-minigame.md`
 - [x] T047 Run `pnpm mac:install` and report the installed local app result because shared project scripts/docs changed
 - [x] T048 Run the completion audit against every FR/SC and update task checkboxes in `specs/027-douyin-math-island/tasks.md`

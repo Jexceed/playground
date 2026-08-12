@@ -3,8 +3,24 @@
 All meaningful project changes should be recorded here. Keep entries factual and
 grouped by date.
 
+## 2026-08-13
+
+- Imported the official Cocos build into Douyin DevTools 4.5.5 and completed
+  simulator validation on iPhone SE 2, iPhone 15 Pro, Xiaomi 15, and iPad.
+  Verified the wrong/retry/correct/next loop, progress restore and corrupt-data
+  recovery, offline relaunch, safe-area scrolling, and the sidebar check,
+  navigation, and return path with no runtime console errors.
+- Regenerated the local Mac application after the simulator-layer fix and
+  reran the Web build, all 489-round curriculum checks, all 1,801 voice-media
+  checks, 14 Douyin runtime tests, and the 357-file Douyin asset audit with zero
+  problems.
+
 ## 2026-08-12
 
+- Fixed the first Douyin DevTools simulator launch where the scene loaded but
+  all runtime-created UI was invisible because Cocos assigned new nodes to the
+  default layer while the camera rendered UI_2D only. Generated UI nodes now
+  inherit their parent layer, with a static regression check.
 - Added the Cocos Creator 3.8 LTS `doyingame/` project for the approved Douyin
   Mini Game AppID `tta51dd3a03b67523202`, scoped exclusively to 数字岛.
 - Added a deterministic curriculum exporter and auditable runtime snapshot for

@@ -12,6 +12,7 @@ const scene = await readFile("doyingame/assets/scenes/Main.scene", "utf8");
 const problems = [];
 if (!source.includes("ScrollView")) problems.push("missing vertical ScrollView");
 if (!source.includes("TOUCH_END")) problems.push("buttons do not register touch end");
+if (!source.includes("node.layer = parent.layer")) problems.push("runtime UI nodes do not inherit the UI_2D layer");
 if (!game.includes("this.width -")) problems.push("game view is not width-relative");
 for (const inset of ["safeTop", "safeRight", "safeBottom", "safeLeft"]) {
   if (!app.includes(inset)) problems.push(`safe-area layout does not use ${inset}`);

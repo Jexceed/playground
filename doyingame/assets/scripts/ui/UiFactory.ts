@@ -16,6 +16,10 @@ export function clearNode(node: Node) { node.removeAllChildren(); }
 
 export function sizedNode(name: string, width: number, height: number, parent?: Node) {
   const node = new Node(name);
+  // Nodes created at runtime default to the DEFAULT layer. The Math Island
+  // camera renders UI_2D only, so every generated UI node must inherit the
+  // parent layer before it is attached or the app runs invisibly.
+  if (parent) node.layer = parent.layer;
   node.addComponent(UITransform).setContentSize(width, height);
   parent?.addChild(node);
   return node;
