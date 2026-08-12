@@ -84,3 +84,29 @@ image-gen source, scene images are 1200x675, voice manifest entries match
 exported voice lines, every MP3 is structurally complete and plausibly long
 enough for its text, the provider/voice match the release standard, no failures
 are present, and no unreferenced runtime voice files remain.
+
+## Douyin Math Island Runtime Snapshot
+
+The Cocos Creator project does not read the React/TypeScript curriculum modules
+at runtime. `pnpm export:douyin-math` creates a deterministic, math-only
+snapshot below `doyingame/assets/resources/math-island/`:
+
+- `data/catalog.json`: the 8 Math Island games and all 122 official rounds.
+- `manifest.json`: source path, runtime path, byte size, SHA-256, and use
+  contexts for every copied file.
+- `images/`: only the brand, item tokens, and scene PNGs referenced by Math
+  Island.
+- `audio/`: only the standard Edge Xiaoxiao clips referenced by Math Island.
+
+The Douyin snapshot keeps scene PNGs at 1200x675 and deterministically optimizes
+their palette. Its copied voice clips are 32 kbps, 24 kHz mono MP3s; the source
+Edge voice pack is not modified. Export and audit reject incomplete frames,
+implausibly short speech, the wrong sample rate, and hash drift.
+
+The generated `data/`, `images/`, `audio/`, and manifest are committed runtime
+inputs, but must never be edited by hand. Their source of truth remains
+`src/data/games.ts`, `src/data/worlds.ts`, registered images, and the active
+voice manifest. Re-run the exporter after a source change and use
+`pnpm audit:douyin-minigame` to reject missing files, changed hashes, `source/`
+assets, non-math resources, an incorrect AppID, or runtime resources over the
+declared 14 MB engineering budget.

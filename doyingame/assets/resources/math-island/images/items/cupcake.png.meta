@@ -1,0 +1,142 @@
+{
+  "ver": "1.0.27",
+  "importer": "image",
+  "imported": true,
+  "uuid": "49cdfde7-fde8-5d2d-8c27-ad1d801cf38b",
+  "files": [
+    ".json",
+    ".png"
+  ],
+  "subMetas": {
+    "6c48a": {
+      "importer": "texture",
+      "uuid": "49cdfde7-fde8-5d2d-8c27-ad1d801cf38b@6c48a",
+      "displayName": "cupcake",
+      "id": "6c48a",
+      "name": "texture",
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {},
+      "userData": {
+        "wrapModeS": "clamp-to-edge",
+        "wrapModeT": "clamp-to-edge",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "premultiplyAlpha": false,
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "49cdfde7-fde8-5d2d-8c27-ad1d801cf38b",
+        "visible": false
+      }
+    },
+    "f9941": {
+      "ver": "1.0.12",
+      "importer": "sprite-frame",
+      "uuid": "49cdfde7-fde8-5d2d-8c27-ad1d801cf38b@f9941",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {},
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "premultiplyAlpha": false,
+        "anisotropy": 1,
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": -0.5,
+        "offsetY": 0,
+        "trimX": 42,
+        "trimY": 18,
+        "width": 171,
+        "height": 220,
+        "rawWidth": 256,
+        "rawHeight": 256,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "49cdfde7-fde8-5d2d-8c27-ad1d801cf38b@6c48a",
+        "atlasUuid": "",
+        "packable": true,
+        "pixelsToUnit": 100,
+        "pivotX": 0.5,
+        "pivotY": 0.5,
+        "meshType": 0,
+        "vertices": {
+          "rawPosition": [
+            -85.5,
+            -110,
+            0,
+            85.5,
+            -110,
+            0,
+            -85.5,
+            110,
+            0,
+            85.5,
+            110,
+            0
+          ],
+          "indexes": [
+            0,
+            1,
+            2,
+            2,
+            1,
+            3
+          ],
+          "uv": [
+            42,
+            238,
+            213,
+            238,
+            42,
+            18,
+            213,
+            18
+          ],
+          "nuv": [
+            0.1640625,
+            0.0703125,
+            0.83203125,
+            0.0703125,
+            0.1640625,
+            0.9296875,
+            0.83203125,
+            0.9296875
+          ],
+          "minPos": [
+            -85.5,
+            -110,
+            0
+          ],
+          "maxPos": [
+            85.5,
+            110,
+            0
+          ]
+        }
+      },
+      "displayName": "cupcake",
+      "id": "f9941",
+      "name": "spriteFrame"
+    }
+  },
+  "userData": {
+    "type": "sprite-frame",
+    "redirect": "49cdfde7-fde8-5d2d-8c27-ad1d801cf38b@6c48a",
+    "hasAlpha": true,
+    "fixAlphaTransparencyArtifacts": false
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "platform": "bytedance-mini-game",
+  "taskName": "bytedance-mini-game",
+  "name": "小小思考屋",
+  "outputName": "bytedance-mini-game",
+  "buildPath": "project://build",
+  "startScene": "f361a3c9-906d-4fdf-b84a-b5d076e8b812",
+  "scenes": [
+    {
+      "url": "db://assets/scenes/Main.scene",
+      "uuid": "f361a3c9-906d-4fdf-b84a-b5d076e8b812",
+      "inBundle": false
+    }
+  ],
+  "debug": false,
+  "includedModules": [
+    "base",
+    "gfx-webgl",
+    "gfx-webgl2",
+    "2d",
+    "affine-transform",
+    "audio",
+    "graphics",
+    "mask",
+    "ui",
+    "custom-pipeline"
+  ],
+  "replaceSplashScreen": true,
+  "mainBundleCompressionType": "merge_dep",
+  "packages": {
+    "bytedance-mini-game": {
+      "appid": "tta51dd3a03b67523202",
+      "orientation": "portrait",
+      "startSceneAssetBundle": true,
+      "buildOpenDataContextTemplate": false
+    }
+  }
+}

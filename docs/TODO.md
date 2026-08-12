@@ -5,6 +5,19 @@ small enough to turn into a Spec Kit feature.
 
 ## P0
 
+- Open `doyingame/` in Cocos Creator 3.8.8 and complete the human Web Mobile
+  visual pass at 375×812, 390×844, and 430×932. The official
+  `bytedance-mini-game` command build is already verified at 12.00 MB; this
+  remaining item is visual review, not package generation.
+- Install and sign in to Douyin DevTools, import the Cocos output, then verify
+  simulator compile, sidebar Mock, offline relaunch, storage recovery, and the
+  platform-reported package size for AppID `tta51dd3a03b67523202`.
+- Run one complete Math Island game plus representative clock rounds on iOS and
+  Android real devices; save screenshots or video as submission evidence.
+- Confirm the publishing subject's final age-rating text, privacy notice,
+  software copyright/filing materials, icon, screenshots, and review copy
+  before uploading a test or review version.
+
 - Install full Xcode and the iOS platform toolchain; Command Line Tools alone
   cannot produce an iPad App Store build.
 - Enroll the publishing individual or legal entity in the Apple Developer
@@ -18,6 +31,10 @@ small enough to turn into a Spec Kit feature.
   privacy label, screenshots, product page, and review notes.
 
 ## P1
+
+- Run at least five observed parent-child Math Island sessions; require four
+  families to enter a game, complete a question, and find voice replay without
+  developer instruction before treating the first release as product-validated.
 
 - Run a paid-family pilot through the selected App Store storefronts. Count
   completed purchases and net proceeds, not free page visits, as the primary

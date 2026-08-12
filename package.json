@@ -23,6 +23,12 @@
     "test:desktop-release": "node --test scripts/desktop-release.test.mjs",
     "audit:curriculum": "node scripts/audit-curriculum.mjs",
     "audit:voice-media": "node scripts/audit-voice-media.mjs",
+    "export:douyin-math": "node scripts/export-douyin-math-island.mjs",
+    "meta:douyin-minigame": "node scripts/generate-cocos-metadata.mjs",
+    "typecheck:douyin-minigame": "tsc --noEmit --strict --experimentalDecorators --skipLibCheck --moduleResolution Bundler --module ESNext --target ES2020 --types @cocos/creator-types/engine doyingame/assets/scripts/**/*.ts",
+    "test:douyin-minigame": "pnpm typecheck:douyin-minigame && node --test scripts/douyin-math-export.test.mjs scripts/douyin-math-runtime.test.mjs scripts/douyin-progress.test.mjs scripts/douyin-parent-content.test.mjs scripts/douyin-build-template.test.mjs && node scripts/douyin-minigame-ui-check.mjs",
+    "audit:douyin-minigame": "node scripts/audit-douyin-minigame.mjs",
+    "build:douyin-minigame": "node scripts/build-douyin-minigame.mjs",
     "export:voice-lines": "node scripts/export-voice-lines.mjs",
     "generate:mac-voices": "node scripts/generate-mac-voices.mjs",
     "generate:edge-voices": "node scripts/generate-edge-voices.mjs",
@@ -39,8 +45,11 @@
     "vite": "^7.0.0"
   },
   "devDependencies": {
+    "@cocos/creator-types": "3.8.7",
     "@tauri-apps/cli": "^2.11.4",
     "@types/react": "^19.2.17",
-    "@types/react-dom": "^19.2.3"
+    "@types/react-dom": "^19.2.3",
+    "@ffmpeg-installer/ffmpeg": "1.1.0",
+    "sharp": "0.34.4"
   }
 }

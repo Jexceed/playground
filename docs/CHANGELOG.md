@@ -3,6 +3,33 @@
 All meaningful project changes should be recorded here. Keep entries factual and
 grouped by date.
 
+## 2026-08-12
+
+- Added the Cocos Creator 3.8 LTS `doyingame/` project for the approved Douyin
+  Mini Game AppID `tta51dd3a03b67523202`, scoped exclusively to 数字岛.
+- Added a deterministic curriculum exporter and auditable runtime snapshot for
+  all 8 Math Island games, 122 official rounds, 19 referenced images, and 338
+  referenced local voice clips; the initial unoptimized asset closure was
+  15.48 MB and had
+  zero logic-house, graphic-workshop, or source-image references.
+- Implemented the portrait parent-child game shell, visual-group/scene/clock
+  renderers, local voice playback, guarded answer flow, parent prompts,
+  versioned local progress recovery, safe-area layout, lifecycle audio handling,
+  and Douyin sidebar bridge.
+- Added Cocos 3.8 type checking, source-parity/runtime/progress/parent-content
+  tests, build-template compatibility tests, three-viewport static checks,
+  package/AppID/module-cropping audits, and documented the Cocos/Douyin IDE
+  release gates.
+- Added stable Cocos asset metadata and a cold-import build extension so a fresh
+  Creator 3.8.8 project cannot silently produce an empty package. The official
+  ByteDance build now verifies the launch scene, AppID, early `tt.onShow`, 338
+  voice clips, 19 PNGs, and a 12.00 MB / 761-file output before succeeding.
+- Added deterministic Douyin-only media optimization: 1200×675 paletted PNGs
+  preserve scene evidence, while copied voices use validated 32 kbps mono MP3.
+  This reduced the exact runtime closure from 15.48 MB to 9.56 MB without
+  changing the curriculum digest and brings the non-subpackage build below the
+  current 16 MB developer-tool limit.
+
 ## 2026-07-19
 
 - Prepared a public GitHub Pages Web Beta as the first market-release channel,

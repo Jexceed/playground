@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thinking-house.local/contracts/storage-v1.schema.json",
+  "title": "Douyin Math Island Progress V1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "completedGameIds", "completedRoundIds", "abilityTags", "lastLocation", "updatedAt"],
+  "properties": {
+    "version": { "const": 1 },
+    "completedGameIds": { "type": "array", "uniqueItems": true, "items": { "type": "string", "pattern": "^math-" } },
+    "completedRoundIds": { "type": "array", "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+    "abilityTags": { "type": "array", "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+    "lastLocation": {
+      "oneOf": [
+        { "type": "null" },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["gameId", "roundIndex"],
+          "properties": {
+            "gameId": { "type": "string", "pattern": "^math-" },
+            "roundIndex": { "type": "integer", "minimum": 0 }
+          }
+        }
+      ]
+    },
+    "updatedAt": { "type": "integer", "minimum": 0 }
+  }
+}
