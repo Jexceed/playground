@@ -5,6 +5,17 @@ small enough to turn into a Spec Kit feature.
 
 ## P0
 
+- Implement the single-app curriculum expansion in
+  `specs/029-curriculum-benchmark/tasks.md`: preserve existing IDs/progress,
+  introduce the shared catalog and semantic response/session contracts, then
+  complete every adopted family in the source-backed coverage matrix.
+- Complete selected-source answer verification, missing-listening reconstruction,
+  and age-specific observed play before treating newly authored activities as
+  ready. The 24-activity interaction pilot is not the full benchmark scope.
+- Keep research coverage, implemented skill coverage, and playable activity
+  counts separate. The current application remains 40 games / 489 rounds until
+  implementation and its asset/release checks actually pass.
+
 - Complete the exact Cocos Web Mobile manual pass at 667×375, 844×390, and
   932×430. The official Creator 3.8.8 landscape command build plus iPhone 15 Pro
   and Xiaomi 15 Douyin simulator passes are verified; re-run iPhone SE 2 and

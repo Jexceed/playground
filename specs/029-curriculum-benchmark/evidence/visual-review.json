@@ -1,0 +1,2398 @@
+{
+  "review_date": "2026-09-22",
+  "scope": "图推1000题4PDF + 上实习题2PDF和47JPG",
+  "page_convention": "1-based physical PDF page; photo locations are upper/lower/collage positions",
+  "status": "source-family research, not complete problem-level audit",
+  "source_root": "/Users/chiang/Downloads/001上实幼升小资料合集",
+  "sources": [
+    {
+      "source_id": "S020",
+      "relative_path": "上实幼升小资料合集/上实习题/2023-04-01 141054.jpg",
+      "physical_page_count": null,
+      "reviewed_text_pages": [],
+      "reviewed_visual_pages": [],
+      "reviewed_photo_files": [
+        "上实幼升小资料合集/上实习题/2023-04-01 141054.jpg"
+      ],
+      "photo_review_level": "original_full_image_and_contact",
+      "findings": [
+        {
+          "rule_family": "shape_set_operations",
+          "observation": "圆内外黑点在九宫格中合并/消去",
+          "answer_verification": "not_independently_verified",
+          "location": "upper"
+        },
+        {
+          "rule_family": "geometric_count",
+          "observation": "三角形和分割图形序列",
+          "answer_verification": "not_independently_verified",
+          "location": "lower"
+        }
+      ],
+      "limitations": [
+        "完成题型/规则族观察；未独立推导或验证此照片全部题目的标准答案。",
+        "截图含计时UI，不能据此认定真实考试时长、成绩或官方来源。"
+      ]
+    },
+    {
+      "source_id": "S021",
+      "relative_path": "上实幼升小资料合集/上实习题/2023-04-01 141111.jpg",
+      "physical_page_count": null,
+      "reviewed_text_pages": [],
+      "reviewed_visual_pages": [],
+      "reviewed_photo_files": [
+        "上实幼升小资料合集/上实习题/2023-04-01 141111.jpg"
+      ],
+      "photo_review_level": "contact_sheet",
+      "findings": [
+        {
+          "rule_family": "multi_attribute_sequence",
+          "observation": "颜色、轮廓/方向序列",
+          "answer_verification": "not_independently_verified",
+          "location": "upper"
+        },
+        {
+          "rule_family": "letter_structure",
+          "observation": "字母九宫格",
+          "answer_verification": "not_independently_verified",
+          "location": "lower"
+        }
+      ],
+      "limitations": [
+        "完成题型/规则族观察；未独立推导或验证此照片全部题目的标准答案。",
+        "截图含计时UI，不能据此认定真实考试时长、成绩或官方来源。"
+      ]
+    },
+    {
+      "source_id": "S022",
+      "relative_path": "上实幼升小资料合集/上实习题/2023-04-01 141125.jpg",
+      "physical_page_count": null,
+      "reviewed_text_pages": [],
+      "reviewed_visual_pages": [],
+      "reviewed_photo_files": [
+        "上实幼升小资料合集/上实习题/2023-04-01 141125.jpg"
+      ],
+      "photo_review_level": "contact_sheet",
+      "findings": [
+        {
+          "rule_family": "rotation",
+          "observation": "含方向符号的四格整体变换",
+          "answer_verification": "not_independently_verified",
+          "location": "upper"
+        },
+        {
+          "rule_family": "independent_attribute_matrix",
+          "observation": "大小形状、颜色、上方标记的九宫格",
+          "answer_verification": "not_independently_verified",
+          "location": "lower"
+        }
+      ],
+      "limitations": [
+        "完成题型/规则族观察；未独立推导或验证此照片全部题目的标准答案。",
+        "截图含计时UI，不能据此认定真实考试时长、成绩或官方来源。"
+      ]
+    },
+    {
+      "source_id": "S023",
+      "relative_path": "上实幼升小资料合集/上实习题/2023-04-01 141137.jpg",
+      "physical_page_count": null,
+      "reviewed_text_pages": [],
+      "reviewed_visual_pages": [],
+      "reviewed_photo_files": [
+        "上实幼升小资料合集/上实习题/2023-04-01 141137.jpg"
+      ],
+      "photo_review_level": "contact_sheet",
+      "findings": [
+        {
+          "rule_family": "shape_difference",
+          "observation": "外框、线条、黑点的矩阵消去",
+          "answer_verification": "not_independently_verified",
+          "location": "upper"
+        },
+        {
+          "rule_family": "number_and_color_sequence",
+          "observation": "数值增量与颜色周期",
+          "answer_verification": "not_independently_verified",
+          "location": "lower"
+        }
+      ],
+      "limitations": [
+        "完成题型/规则族观察；未独立推导或验证此照片全部题目的标准答案。",
+        "截图含计时UI，不能据此认定真实考试时长、成绩或官方来源。"
+      ]
+    },
+    {
+      "source_id": "S024",
+      "relative_path": "上实幼升小资料合集/上实习题/2023-04-01 141148.jpg",
+      "physical_page_count": null,
+      "reviewed_text_pages": [],
+      "reviewed_visual_pages": [],
+      "reviewed_photo_files": [
+        "上实幼升小资料合集/上实习题/2023-04-01 141148.jpg"
+      ],
+      "photo_review_level": "contact_sheet",
+      "findings": [
+        {
+          "rule_family": "line_position_matrix",
+          "observation": "内网格与外伸线段位置变化",
+          "answer_verification": "not_independently_verified",
+          "location": "upper"
+        },
+        {
+          "rule_family": "multiple_marker_rotation",
+          "observation": "菱形内固定/移动符号",
+          "answer_verification": "not_independently_verified",
+          "location": "lower"
+        }
+      ],
+      "limitations": [
+        "完成题型/规则族观察；未独立推导或验证此照片全部题目的标准答案。",
+        "截图含计时UI，不能据此认定真实考试时长、成绩或官方来源。"
+      ]
+    },
+    {
+      "source_id": "S025",
+      "relative_path": "上实幼升小资料合集/上实习题/2023-04-01 141346.jpg",
+      "physical_page_count": null,
+      "reviewed_text_pages": [],
+      "reviewed_visual_pages": [],
+      "reviewed_photo_files": [
+        "上实幼升小资料合集/上实习题/2023-04-01 141346.jpg"
+      ],
+      "photo_review_level": "original_full_image_and_contact",
+      "findings": [
+        {
+          "rule_family": "multiple_grid_paths",
+          "observation": "多色方格序列",
+          "answer_verification": "not_independently_verified",
+          "location": "upper"
+        },
+        {
+          "rule_family": "symbolic_equations",
+          "observation": "三条图形等式逐步求值",
+          "answer_verification": "not_independently_verified",
+          "location": "lower"
+        }
+      ],
+      "limitations": [
+        "完成题型/规则族观察；未独立推导或验证此照片全部题目的标准答案。",
+        "截图含计时UI，不能据此认定真实考试时长、成绩或官方来源。"
+      ]
+    },
+    {
+      "source_id": "S026",
+      "relative_path": "上实幼升小资料合集/上实习题/2023-04-01 141359.jpg",
+      "physical_page_count": null,
+      "reviewed_text_pages": [],
+      "reviewed_visual_pages": [],
+      "reviewed_photo_files": [
+        "上实幼升小资料合集/上实习题/2023-04-01 141359.jpg"
+      ],
+      "photo_review_level": "contact_sheet",
+      "findings": [
+        {
+          "rule_family": "edge_count_matrix",
+          "observation": "多边形与线段九宫格",
+          "answer_verification": "not_independently_verified",
+          "location": "upper"
+        },
+        {
+          "rule_family": "two_axis_matrix",
+          "observation": "底色与黑块行列位置",
+          "answer_verification": "not_independently_verified",
+          "location": "lower"
+        }
+      ],
+      "limitations": [
+        "完成题型/规则族观察；未独立推导或验证此照片全部题目的标准答案。",
+        "截图含计时UI，不能据此认定真实考试时长、成绩或官方来源。"
+      ]
+    },
+    {
+      "source_id": "S027",
+      "relative_path": "上实幼升小资料合集/上实习题/2023-04-01 141413.jpg",
+      "physical_page_count": null,
+      "reviewed_text_pages": [],
+      "reviewed_visual_pages": [],
+      "reviewed_photo_files": [
+        "上实幼升小资料合集/上实习题/2023-04-01 141413.jpg"
+      ],
+      "photo_review_level": "contact_sheet",
+      "findings": [
+        {
+          "rule_family": "interleaved_line_count",
+          "observation": "两种颜色交错的边数/线段数序列",
+          "answer_verification": "not_independently_verified",
+          "location": "upper"
+        },
+        {
+          "rule_family": "black_white_set_operation",
+          "observation": "红黑线段叠合消去",
+          "answer_verification": "not_independently_verified",
+          "location": "lower"
+        }
+      ],
+      "limitations": [
+        "完成题型/规则族观察；未独立推导或验证此照片全部题目的标准答案。",
+        "截图含计时UI，不能据此认定真实考试时长、成绩或官方来源。"
+      ]
+    },
+    {
+      "source_id": "S028",
+      "relative_path": "上实幼升小资料合集/上实习题/2023-04-01 141423.jpg",
+      "physical_page_count": null,
+      "reviewed_text_pages": [],
+      "reviewed_visual_pages": [],
+      "reviewed_photo_files": [
+        "上实幼升小资料合集/上实习题/2023-04-01 141423.jpg"
+      ],
+      "photo_review_level": "contact_sheet",
+      "findings": [
+        {
+          "rule_family": "multi_attribute_sequence",
+          "observation": "背景色与符号序列",
+          "answer_verification": "not_independently_verified",
+          "location": "upper"
+        },
+        {
+          "rule_family": "symbol_to_number_code",
+          "observation": "图形对应数字的多位编码",
+          "answer_verification": "not_independently_verified",
+          "location": "lower"
+        }
+      ],
+      "limitations": [
+        "完成题型/规则族观察；未独立推导或验证此照片全部题目的标准答案。",
+        "截图含计时UI，不能据此认定真实考试时长、成绩或官方来源。"
+      ]
+    },
+    {
+      "source_id": "S029",
+      "relative_path": "上实幼升小资料合集/上实习题/2023-04-01 141437.jpg",
+      "physical_page_count": null,
+      "reviewed_text_pages": [],
+      "reviewed_visual_pages": [],
+      "reviewed_photo_files": [
+        "上实幼升小资料合集/上实习题/2023-04-01 141437.jpg"
+      ],
+      "photo_review_level": "contact_sheet",
+      "findings": [
+        {
+          "rule_family": "number_position_color_sequence",
+          "observation": "上下数字和背景色序列",
+          "answer_verification": "not_independently_verified",
+          "location": "upper"
+        },
+        {
+          "rule_family": "shape_set_operation",
+          "observation": "色块部分与整体矩阵",
+          "answer_verification": "not_independently_verified",
+          "location": "lower"
+        }
+      ],
+      "limitations": [
+        "完成题型/规则族观察；未独立推导或验证此照片全部题目的标准答案。",
+        "截图含计时UI，不能据此认定真实考试时长、成绩或官方来源。"
+      ]
+    },
+    {
+      "source_id": "S030",
+      "relative_path": "上实幼升小资料合集/上实习题/2023-04-01 141450.jpg",
+      "physical_page_count": null,
+      "reviewed_text_pages": [],
+      "reviewed_visual_pages": [],
+      "reviewed_photo_files": [
+        "上实幼升小资料合集/上实习题/2023-04-01 141450.jpg"
+      ],
+      "photo_review_level": "contact_sheet",
+      "findings": [
+        {
+          "rule_family": "multi_attribute_sequence",
+          "observation": "背景色、方块数量和填充序列",
+          "answer_verification": "not_independently_verified",
+          "location": "upper"
+        },
+        {
+          "rule_family": "multiple_grid_paths",
+          "observation": "彩色方格位置序列",
+          "answer_verification": "not_independently_verified",
+          "location": "lower"
+        }
+      ],
+      "limitations": [
+        "完成题型/规则族观察；未独立推导或验证此照片全部题目的标准答案。",
+        "截图含计时UI，不能据此认定真实考试时长、成绩或官方来源。"
+      ]
+    },
+    {
+      "source_id": "S031",
+      "relative_path": "上实幼升小资料合集/上实习题/2023-04-01 141501.jpg",
+      "physical_page_count": null,
+      "reviewed_text_pages": [],
+      "reviewed_visual_pages": [],
+      "reviewed_photo_files": [
+        "上实幼升小资料合集/上实习题/2023-04-01 141501.jpg"
+      ],
+      "photo_review_level": "contact_sheet",
+      "findings": [
+        {
+          "rule_family": "relative_position_matrix",
+          "observation": "三角形和小圆内外位置",
+          "answer_verification": "not_independently_verified",
+          "location": "upper"
+        },
+        {
+          "rule_family": "shape_color_orientation_sequence",
+          "observation": "矩形/圆形、分色与方向",
+          "answer_verification": "not_independently_verified",
+          "location": "lower"
+        }
+      ],
+      "limitations": [
+        "完成题型/规则族观察；未独立推导或验证此照片全部题目的标准答案。",
+        "截图含计时UI，不能据此认定真实考试时长、成绩或官方来源。"
+      ]
+    },
+    {
+      "source_id": "S032",
+      "relative_path": "上实幼升小资料合集/上实习题/2023-04-01 141510.jpg",
+      "physical_page_count": null,
+      "reviewed_text_pages": [],
+      "reviewed_visual_pages": [],
+      "reviewed_photo_files": [
+        "上实幼升小资料合集/上实习题/2023-04-01 141510.jpg"
+      ],
+      "photo_review_level": "contact_sheet",
+      "findings": [
+        {
+          "rule_family": "geometric_structure_matrix",
+          "observation": "人物/生活图形结构矩阵",
+          "answer_verification": "not_independently_verified",
+          "location": "upper"
+        },
+        {
+          "rule_family": "numeric_shape_color_sequence",
+          "observation": "分区数字、颜色与容器形状",
+          "answer_verification": "not_independently_verified",
+          "location": "lower"
+        }
+      ],
+      "limitations": [
+        "完成题型/规则族观察；未独立推导或验证此照片全部题目的标准答案。",
+        "截图含计时UI，不能据此认定真实考试时长、成绩或官方来源。"
+      ]
+    },
+    {
+      "source_id": "S033",
+      "relative_path": "上实幼升小资料合集/上实习题/2023-04-01 141525.jpg",
+      "physical_page_count": null,
+      "reviewed_text_pages": [],
+      "reviewed_visual_pages": [],
+      "reviewed_photo_files": [
+        "上实幼升小资料合集/上实习题/2023-04-01 141525.jpg"
+      ],
+      "photo_review_level": "contact_sheet",
+      "findings": [
+        {
+          "rule_family": "symbolic_equations",
+          "observation": "太阳/月亮/心形等式",
+          "answer_verification": "not_independently_verified",
+          "location": "upper"
+        },
+        {
+          "rule_family": "black_white_yellow_sequence",
+          "observation": "圆内分区和填色序列",
+          "answer_verification": "not_independently_verified",
+          "location": "lower"
+        }
+      ],
+      "limitations": [
+        "完成题型/规则族观察；未独立推导或验证此照片全部题目的标准答案。",
+        "截图含计时UI，不能据此认定真实考试时长、成绩或官方来源。"
+      ]
+    },
+    {
+      "source_id": "S034",
+      "relative_path": "上实幼升小资料合集/上实习题/2023-04-01 141539.jpg",
+      "physical_page_count": null,
+      "reviewed_text_pages": [],
+      "reviewed_visual_pages": [],
+      "reviewed_photo_files": [
+        "上实幼升小资料合集/上实习题/2023-04-01 141539.jpg"
+      ],
+      "photo_review_level": "contact_sheet",
+      "findings": [
+        {
+          "rule_family": "geometric_regions_or_line_structure",
+          "observation": "圆内分割与字母状线条，具体计数单位待解题确认",
+          "answer_verification": "not_independently_verified",
+          "location": "upper"
+        },
+        {
+          "rule_family": "two_axis_count_matrix",
+          "observation": "点阵行列数量",
+          "answer_verification": "not_independently_verified",
+          "location": "lower"
+        }
+      ],
+      "limitations": [
+        "完成题型/规则族观察；未独立推导或验证此照片全部题目的标准答案。",
+        "截图含计时UI，不能据此认定真实考试时长、成绩或官方来源。"
+      ]
+    },
+    {
+      "source_id": "S035",
+      "relative_path": "上实幼升小资料合集/上实习题/2023-04-01 141550.jpg",
+      "physical_page_count": null,
+      "reviewed_text_pages": [],
+      "reviewed_visual_pages": [],
+      "reviewed_photo_files": [
+        "上实幼升小资料合集/上实习题/2023-04-01 141550.jpg"
+      ],
+      "photo_review_level": "contact_sheet",
+      "findings": [
+        {
+          "rule_family": "black_white_grid_matrix",
+          "observation": "黑格位置/数量九宫格",
+          "answer_verification": "not_independently_verified",
+          "location": "upper"
+        },
+        {
+          "rule_family": "black_white_yellow_sequence",
+          "observation": "分区圆的填色序列",
+          "answer_verification": "not_independently_verified",
+          "location": "lower"
+        }
+      ],
+      "limitations": [
+        "完成题型/规则族观察；未独立推导或验证此照片全部题目的标准答案。",
+        "截图含计时UI，不能据此认定真实考试时长、成绩或官方来源。"
+      ]
+    },
+    {
+      "source_id": "S036",
+      "relative_path": "上实幼升小资料合集/上实习题/2023-04-01 141600.jpg",
+      "physical_page_count": null,
+      "reviewed_text_pages": [],
+      "reviewed_visual_pages": [],
+      "reviewed_photo_files": [
+        "上实幼升小资料合集/上实习题/2023-04-01 141600.jpg"
+      ],
+      "photo_review_level": "contact_sheet",
+      "findings": [
+        {
+          "rule_family": "edge_count_classification",
+          "observation": "三角形、四边形、五边形等列内共同属性",
+          "answer_verification": "not_independently_verified",
+          "location": "upper"
+        },
+        {
+          "rule_family": "line_position_transform",
+          "observation": "方框内折线变化",
+          "answer_verification": "not_independently_verified",
+          "location": "lower"
+        }
+      ],
+      "limitations": [
+        "完成题型/规则族观察；未独立推导或验证此照片全部题目的标准答案。",
+        "截图含计时UI，不能据此认定真实考试时长、成绩或官方来源。"
+      ]
+    },
+    {
+      "source_id": "S037",
+      "relative_path": "上实幼升小资料合集/上实习题/2023-04-01 141611.jpg",
+      "physical_page_count": null,
+      "reviewed_text_pages": [],
+      "reviewed_visual_pages": [],
+      "reviewed_photo_files": [
+        "上实幼升小资料合集/上实习题/2023-04-01 141611.jpg"
+      ],
+      "photo_review_level": "contact_sheet",
+      "findings": [
+        {
+          "rule_family": "recursive_numeric_sequence",
+          "observation": "数字规律加颜色干扰",
+          "answer_verification": "not_independently_verified",
+          "location": "upper"
+        },
+        {
+          "rule_family": "line_union",
+          "observation": "横竖斜线逐行叠合",
+          "answer_verification": "not_independently_verified",
+          "location": "lower"
+        }
+      ],
+      "limitations": [
+        "完成题型/规则族观察；未独立推导或验证此照片全部题目的标准答案。",
+        "截图含计时UI，不能据此认定真实考试时长、成绩或官方来源。"
+      ]
+    },
+    {
+      "source_id": "S038",
+      "relative_path": "上实幼升小资料合集/上实习题/2023-04-01 141622.jpg",
+      "physical_page_count": null,
+      "reviewed_text_pages": [],
+      "reviewed_visual_pages": [],
+      "reviewed_photo_files": [
+        "上实幼升小资料合集/上实习题/2023-04-01 141622.jpg"
+      ],
+      "photo_review_level": "contact_sheet",
+      "findings": [
+        {
+          "rule_family": "symbolic_equations",
+          "observation": "重复符号等式回代",
+          "answer_verification": "not_independently_verified",
+          "location": "upper"
+        },
+        {
+          "rule_family": "angle_or_edge_count",
+          "observation": "多边形/星形序列",
+          "answer_verification": "not_independently_verified",
+          "location": "lower"
+        }
+      ],
+      "limitations": [
+        "完成题型/规则族观察；未独立推导或验证此照片全部题目的标准答案。",
+        "截图含计时UI，不能据此认定真实考试时长、成绩或官方来源。"
+      ]
+    },
+    {
+      "source_id": "S039",
+      "relative_path": "上实幼升小资料合集/上实习题/2023-04-01 141630.jpg",
+      "physical_page_count": null,
+      "reviewed_text_pages": [],
+      "reviewed_visual_pages": [],
+      "reviewed_photo_files": [
+        "上实幼升小资料合集/上实习题/2023-04-01 141630.jpg"
+      ],
+      "photo_review_level": "contact_sheet",
+      "findings": [
+        {
+          "rule_family": "element_type_count",
+          "observation": "混合星点短线序列",
+          "answer_verification": "not_independently_verified",
+          "location": "upper"
+        },
+        {
+          "rule_family": "multiple_marker_rotation",
+          "observation": "圆内黑白点与三角方向",
+          "answer_verification": "not_independently_verified",
+          "location": "lower"
+        }
+      ],
+      "limitations": [
+        "完成题型/规则族观察；未独立推导或验证此照片全部题目的标准答案。",
+        "截图含计时UI，不能据此认定真实考试时长、成绩或官方来源。"
+      ]
+    },
+    {
+      "source_id": "S040",
+      "relative_path": "上实幼升小资料合集/上实习题/2023-04-01 141643.jpg",
+      "physical_page_count": null,
+      "reviewed_text_pages": [],
+      "reviewed_visual_pages": [],
+      "reviewed_photo_files": [
+        "上实幼升小资料合集/上实习题/2023-04-01 141643.jpg"
+      ],
+      "photo_review_level": "contact_sheet",
+      "findings": [
+        {
+          "rule_family": "line_transition",
+          "observation": "线条逐次变化图形",
+          "answer_verification": "not_independently_verified",
+          "location": "upper"
+        },
+        {
+          "rule_family": "multiple_grid_paths",
+          "observation": "三色方格移动",
+          "answer_verification": "not_independently_verified",
+          "location": "lower"
+        }
+      ],
+      "limitations": [
+        "完成题型/规则族观察；未独立推导或验证此照片全部题目的标准答案。",
+        "截图含计时UI，不能据此认定真实考试时长、成绩或官方来源。"
+      ]
+    },
+    {
+      "source_id": "S041",
+      "relative_path": "上实幼升小资料合集/上实习题/2023-04-01 141656.jpg",
+      "physical_page_count": null,
+      "reviewed_text_pages": [],
+      "reviewed_visual_pages": [],
+      "reviewed_photo_files": [
+        "上实幼升小资料合集/上实习题/2023-04-01 141656.jpg"
+      ],
+      "photo_review_level": "contact_sheet",
+      "findings": [
+        {
+          "rule_family": "whole_rotation",
+          "observation": "2x2彩色块转动",
+          "answer_verification": "not_independently_verified",
+          "location": "upper"
+        },
+        {
+          "rule_family": "shape_set_operation",
+          "observation": "黑线和黄色矩形求同/消去",
+          "answer_verification": "not_independently_verified",
+          "location": "lower"
+        }
+      ],
+      "limitations": [
+        "完成题型/规则族观察；未独立推导或验证此照片全部题目的标准答案。",
+        "截图含计时UI，不能据此认定真实考试时长、成绩或官方来源。"
+      ]
+    },
+    {
+      "source_id": "S042",
+      "relative_path": "上实幼升小资料合集/上实习题/2023-04-01 141706.jpg",
+      "physical_page_count": null,
+      "reviewed_text_pages": [],
+      "reviewed_visual_pages": [],
+      "reviewed_photo_files": [
+        "上实幼升小资料合集/上实习题/2023-04-01 141706.jpg"
+      ],
+      "photo_review_level": "contact_sheet",
+      "findings": [
+        {
+          "rule_family": "shape_union",
+          "observation": "圆、线和黄点叠合",
+          "answer_verification": "not_independently_verified",
+          "location": "upper"
+        },
+        {
+          "rule_family": "complex_union",
+          "observation": "多种部件、线条与方向矩阵",
+          "answer_verification": "not_independently_verified",
+          "location": "lower"
+        }
+      ],
+      "limitations": [
+        "完成题型/规则族观察；未独立推导或验证此照片全部题目的标准答案。",
+        "截图含计时UI，不能据此认定真实考试时长、成绩或官方来源。"
+      ]
+    },
+    {
+      "source_id": "S043",
+      "relative_path": "上实幼升小资料合集/上实习题/2023-04-01 141723.jpg",
+      "physical_page_count": null,
+      "reviewed_text_pages": [],
+      "reviewed_visual_pages": [],
+      "reviewed_photo_files": [
+        "上实幼升小资料合集/上实习题/2023-04-01 141723.jpg"
+      ],
+      "photo_review_level": "contact_sheet",
+      "findings": [
+        {
+          "rule_family": "line_difference",
+          "observation": "菱形/折线拆分",
+          "answer_verification": "not_independently_verified",
+          "location": "upper"
+        },
+        {
+          "rule_family": "element_set_operation",
+          "observation": "月亮星星闪电按集合关系组合",
+          "answer_verification": "not_independently_verified",
+          "location": "lower"
+        }
+      ],
+      "limitations": [
+        "完成题型/规则族观察；未独立推导或验证此照片全部题目的标准答案。",
+        "截图含计时UI，不能据此认定真实考试时长、成绩或官方来源。"
+      ]
+    },
+    {
+      "source_id": "S044",
+      "relative_path": "上实幼升小资料合集/上实习题/2023-04-01 141735.jpg",
+      "physical_page_count": null,
+      "reviewed_text_pages": [],
+      "reviewed_visual_pages": [],
+      "reviewed_photo_files": [
+        "上实幼升小资料合集/上实习题/2023-04-01 141735.jpg"
+      ],
+      "photo_review_level": "contact_sheet",
+      "findings": [
+        {
+          "rule_family": "symbol_to_number_code",
+          "observation": "多行编码对应",
+          "answer_verification": "not_independently_verified",
+          "location": "upper"
+        },
+        {
+          "rule_family": "numeric_shape_color_sequence",
+          "observation": "偶数、形状与颜色",
+          "answer_verification": "not_independently_verified",
+          "location": "lower"
+        }
+      ],
+      "limitations": [
+        "完成题型/规则族观察；未独立推导或验证此照片全部题目的标准答案。",
+        "截图含计时UI，不能据此认定真实考试时长、成绩或官方来源。"
+      ]
+    },
+    {
+      "source_id": "S045",
+      "relative_path": "上实幼升小资料合集/上实习题/2023-04-01 141743.jpg",
+      "physical_page_count": null,
+      "reviewed_text_pages": [],
+      "reviewed_visual_pages": [],
+      "reviewed_photo_files": [
+        "上实幼升小资料合集/上实习题/2023-04-01 141743.jpg"
+      ],
+      "photo_review_level": "contact_sheet",
+      "findings": [
+        {
+          "rule_family": "multiple_marker_rotation",
+          "observation": "星角填充与空心圆的独立位置变化",
+          "answer_verification": "not_independently_verified",
+          "location": "upper"
+        },
+        {
+          "rule_family": "transform_analogy",
+          "observation": "黑白点及连线示例迁移",
+          "answer_verification": "not_independently_verified",
+          "location": "lower"
+        }
+      ],
+      "limitations": [
+        "完成题型/规则族观察；未独立推导或验证此照片全部题目的标准答案。",
+        "截图含计时UI，不能据此认定真实考试时长、成绩或官方来源。"
+      ]
+    },
+    {
+      "source_id": "S046",
+      "relative_path": "上实幼升小资料合集/上实习题/2023-04-01 141752.jpg",
+      "physical_page_count": null,
+      "reviewed_text_pages": [],
+      "reviewed_visual_pages": [],
+      "reviewed_photo_files": [
+        "上实幼升小资料合集/上实习题/2023-04-01 141752.jpg"
+      ],
+      "photo_review_level": "contact_sheet",
+      "findings": [
+        {
+          "rule_family": "multiple_grid_paths",
+          "observation": "多颜色格子不同步变化",
+          "answer_verification": "not_independently_verified",
+          "location": "upper"
+        },
+        {
+          "rule_family": "shape_color_orientation_sequence",
+          "observation": "矩形/三角形分色变化",
+          "answer_verification": "not_independently_verified",
+          "location": "lower"
+        }
+      ],
+      "limitations": [
+        "完成题型/规则族观察；未独立推导或验证此照片全部题目的标准答案。",
+        "截图含计时UI，不能据此认定真实考试时长、成绩或官方来源。"
+      ]
+    },
+    {
+      "source_id": "S047",
+      "relative_path": "上实幼升小资料合集/上实习题/2023-04-01 141909.jpg",
+      "physical_page_count": null,
+      "reviewed_text_pages": [],
+      "reviewed_visual_pages": [],
+      "reviewed_photo_files": [
+        "上实幼升小资料合集/上实习题/2023-04-01 141909.jpg"
+      ],
+      "photo_review_level": "contact_sheet",
+      "findings": [
+        {
+          "rule_family": "independent_shape_color_sequence",
+          "observation": "多边形与颜色变化",
+          "answer_verification": "not_independently_verified",
+          "location": "upper"
+        },
+        {
+          "rule_family": "shape_color_orientation_sequence",
+          "observation": "三角形/圆形及分色",
+          "answer_verification": "not_independently_verified",
+          "location": "lower"
+        }
+      ],
+      "limitations": [
+        "完成题型/规则族观察；未独立推导或验证此照片全部题目的标准答案。",
+        "截图含计时UI，不能据此认定真实考试时长、成绩或官方来源。"
+      ]
+    },
+    {
+      "source_id": "S048",
+      "relative_path": "上实幼升小资料合集/上实习题/2023-04-01 141923.jpg",
+      "physical_page_count": null,
+      "reviewed_text_pages": [],
+      "reviewed_visual_pages": [],
+      "reviewed_photo_files": [
+        "上实幼升小资料合集/上实习题/2023-04-01 141923.jpg"
+      ],
+      "photo_review_level": "contact_sheet",
+      "findings": [
+        {
+          "rule_family": "symbolic_equations",
+          "observation": "重复符号等式回代",
+          "answer_verification": "not_independently_verified",
+          "location": "upper"
+        },
+        {
+          "rule_family": "numeric_shape_color_sequence",
+          "observation": "数字、容器形状、颜色交错",
+          "answer_verification": "not_independently_verified",
+          "location": "lower"
+        }
+      ],
+      "limitations": [
+        "完成题型/规则族观察；未独立推导或验证此照片全部题目的标准答案。",
+        "截图含计时UI，不能据此认定真实考试时长、成绩或官方来源。"
+      ]
+    },
+    {
+      "source_id": "S049",
+      "relative_path": "上实幼升小资料合集/上实习题/2023-04-01 141933.jpg",
+      "physical_page_count": null,
+      "reviewed_text_pages": [],
+      "reviewed_visual_pages": [],
+      "reviewed_photo_files": [
+        "上实幼升小资料合集/上实习题/2023-04-01 141933.jpg"
+      ],
+      "photo_review_level": "contact_sheet",
+      "findings": [
+        {
+          "rule_family": "multiple_marker_rotation",
+          "observation": "五边形内标记沿边变化",
+          "answer_verification": "not_independently_verified",
+          "location": "upper"
+        },
+        {
+          "rule_family": "independent_attribute_matrix",
+          "observation": "颜色、形状和上方符号的九宫格",
+          "answer_verification": "not_independently_verified",
+          "location": "lower"
+        }
+      ],
+      "limitations": [
+        "完成题型/规则族观察；未独立推导或验证此照片全部题目的标准答案。",
+        "截图含计时UI，不能据此认定真实考试时长、成绩或官方来源。"
+      ]
+    },
+    {
+      "source_id": "S050",
+      "relative_path": "上实幼升小资料合集/上实习题/2023-04-01 141944.jpg",
+      "physical_page_count": null,
+      "reviewed_text_pages": [],
+      "reviewed_visual_pages": [],
+      "reviewed_photo_files": [
+        "上实幼升小资料合集/上实习题/2023-04-01 141944.jpg"
+      ],
+      "photo_review_level": "contact_sheet",
+      "findings": [
+        {
+          "rule_family": "numeric_shape_color_sequence",
+          "observation": "数字、容器形状与文字颜色",
+          "answer_verification": "not_independently_verified",
+          "location": "upper"
+        },
+        {
+          "rule_family": "symbol_to_number_code",
+          "observation": "四种色块的多位编码",
+          "answer_verification": "not_independently_verified",
+          "location": "lower"
+        }
+      ],
+      "limitations": [
+        "完成题型/规则族观察；未独立推导或验证此照片全部题目的标准答案。",
+        "截图含计时UI，不能据此认定真实考试时长、成绩或官方来源。"
+      ]
+    },
+    {
+      "source_id": "S051",
+      "relative_path": "上实幼升小资料合集/上实习题/2023-04-01 141956.jpg",
+      "physical_page_count": null,
+      "reviewed_text_pages": [],
+      "reviewed_visual_pages": [],
+      "reviewed_photo_files": [
+        "上实幼升小资料合集/上实习题/2023-04-01 141956.jpg"
+      ],
+      "photo_review_level": "original_full_image_and_contact",
+      "findings": [
+        {
+          "rule_family": "cyclic_marker_positions",
+          "observation": "三角形三个顶点处符号循环，需同时保持颜色/形状",
+          "answer_verification": "not_independently_verified",
+          "location": "upper"
+        },
+        {
+          "rule_family": "multiple_grid_paths",
+          "observation": "4个彩色标记在5x5格上移动",
+          "answer_verification": "not_independently_verified",
+          "location": "lower"
+        }
+      ],
+      "limitations": [
+        "完成题型/规则族观察；未独立推导或验证此照片全部题目的标准答案。",
+        "截图含计时UI，不能据此认定真实考试时长、成绩或官方来源。"
+      ]
+    },
+    {
+      "source_id": "S052",
+      "relative_path": "上实幼升小资料合集/上实习题/2023-04-01 142004.jpg",
+      "physical_page_count": null,
+      "reviewed_text_pages": [],
+      "reviewed_visual_pages": [],
+      "reviewed_photo_files": [
+        "上实幼升小资料合集/上实习题/2023-04-01 142004.jpg"
+      ],
+      "photo_review_level": "contact_sheet",
+      "findings": [
+        {
+          "rule_family": "symbolic_equations",
+          "observation": "两步以上图形等式",
+          "answer_verification": "not_independently_verified",
+          "location": "upper"
+        },
+        {
+          "rule_family": "letter_sequence",
+          "observation": "字母序列；是序位知识还是字形规则尚未求解审定",
+          "answer_verification": "not_independently_verified",
+          "location": "lower"
+        }
+      ],
+      "limitations": [
+        "完成题型/规则族观察；未独立推导或验证此照片全部题目的标准答案。",
+        "截图含计时UI，不能据此认定真实考试时长、成绩或官方来源。"
+      ]
+    },
+    {
+      "source_id": "S053",
+      "relative_path": "上实幼升小资料合集/上实习题/2023-04-01 142013.jpg",
+      "physical_page_count": null,
+      "reviewed_text_pages": [],
+      "reviewed_visual_pages": [],
+      "reviewed_photo_files": [
+        "上实幼升小资料合集/上实习题/2023-04-01 142013.jpg"
+      ],
+      "photo_review_level": "contact_sheet",
+      "findings": [
+        {
+          "rule_family": "letter_rotation",
+          "observation": "字母B旋转序列",
+          "answer_verification": "not_independently_verified",
+          "location": "upper"
+        },
+        {
+          "rule_family": "black_white_yellow_sequence",
+          "observation": "圆形分区填色序列",
+          "answer_verification": "not_independently_verified",
+          "location": "lower"
+        }
+      ],
+      "limitations": [
+        "完成题型/规则族观察；未独立推导或验证此照片全部题目的标准答案。",
+        "截图含计时UI，不能据此认定真实考试时长、成绩或官方来源。"
+      ]
+    },
+    {
+      "source_id": "S054",
+      "relative_path": "上实幼升小资料合集/上实习题/2023-04-01 142022.jpg",
+      "physical_page_count": null,
+      "reviewed_text_pages": [],
+      "reviewed_visual_pages": [],
+      "reviewed_photo_files": [
+        "上实幼升小资料合集/上实习题/2023-04-01 142022.jpg"
+      ],
+      "photo_review_level": "contact_sheet",
+      "findings": [
+        {
+          "rule_family": "direction_and_count",
+          "observation": "箭头旋转加尾部线数变化",
+          "answer_verification": "not_independently_verified",
+          "location": "upper"
+        },
+        {
+          "rule_family": "repeating_shape_color_pattern",
+          "observation": "形状与颜色重复组",
+          "answer_verification": "not_independently_verified",
+          "location": "lower"
+        }
+      ],
+      "limitations": [
+        "完成题型/规则族观察；未独立推导或验证此照片全部题目的标准答案。",
+        "截图含计时UI，不能据此认定真实考试时长、成绩或官方来源。"
+      ]
+    },
+    {
+      "source_id": "S055",
+      "relative_path": "上实幼升小资料合集/上实习题/2023-04-01 142030.jpg",
+      "physical_page_count": null,
+      "reviewed_text_pages": [],
+      "reviewed_visual_pages": [],
+      "reviewed_photo_files": [
+        "上实幼升小资料合集/上实习题/2023-04-01 142030.jpg"
+      ],
+      "photo_review_level": "contact_sheet",
+      "findings": [
+        {
+          "rule_family": "multiple_marker_rotation",
+          "observation": "圆内大小/颜色/形状标记不同步",
+          "answer_verification": "not_independently_verified",
+          "location": "upper"
+        },
+        {
+          "rule_family": "line_angle_count_sequence",
+          "observation": "共端点线束序列",
+          "answer_verification": "not_independently_verified",
+          "location": "lower"
+        }
+      ],
+      "limitations": [
+        "完成题型/规则族观察；未独立推导或验证此照片全部题目的标准答案。",
+        "截图含计时UI，不能据此认定真实考试时长、成绩或官方来源。"
+      ]
+    },
+    {
+      "source_id": "S056",
+      "relative_path": "上实幼升小资料合集/上实习题/2023-04-01 142039.jpg",
+      "physical_page_count": null,
+      "reviewed_text_pages": [],
+      "reviewed_visual_pages": [],
+      "reviewed_photo_files": [
+        "上实幼升小资料合集/上实习题/2023-04-01 142039.jpg"
+      ],
+      "photo_review_level": "contact_sheet",
+      "findings": [
+        {
+          "rule_family": "nested_shapes_count",
+          "observation": "嵌套/组合图形数量变化",
+          "answer_verification": "not_independently_verified",
+          "location": "upper"
+        },
+        {
+          "rule_family": "symbolic_equations",
+          "observation": "加减图形等式",
+          "answer_verification": "not_independently_verified",
+          "location": "lower"
+        }
+      ],
+      "limitations": [
+        "完成题型/规则族观察；未独立推导或验证此照片全部题目的标准答案。",
+        "截图含计时UI，不能据此认定真实考试时长、成绩或官方来源。"
+      ]
+    },
+    {
+      "source_id": "S057",
+      "relative_path": "上实幼升小资料合集/上实习题/2023-04-01 142052.jpg",
+      "physical_page_count": null,
+      "reviewed_text_pages": [],
+      "reviewed_visual_pages": [],
+      "reviewed_photo_files": [
+        "上实幼升小资料合集/上实习题/2023-04-01 142052.jpg"
+      ],
+      "photo_review_level": "contact_sheet",
+      "findings": [
+        {
+          "rule_family": "closed_regions",
+          "observation": "图形分割/封闭区域序列",
+          "answer_verification": "not_independently_verified",
+          "location": "upper"
+        },
+        {
+          "rule_family": "element_transition",
+          "observation": "元素和填充逐步变换",
+          "answer_verification": "not_independently_verified",
+          "location": "lower"
+        }
+      ],
+      "limitations": [
+        "完成题型/规则族观察；未独立推导或验证此照片全部题目的标准答案。",
+        "截图含计时UI，不能据此认定真实考试时长、成绩或官方来源。"
+      ]
+    },
+    {
+      "source_id": "S058",
+      "relative_path": "上实幼升小资料合集/上实习题/2023-04-01 142103.jpg",
+      "physical_page_count": null,
+      "reviewed_text_pages": [],
+      "reviewed_visual_pages": [],
+      "reviewed_photo_files": [
+        "上实幼升小资料合集/上实习题/2023-04-01 142103.jpg"
+      ],
+      "photo_review_level": "contact_sheet",
+      "findings": [
+        {
+          "rule_family": "recursive_graphic_composition",
+          "observation": "相邻图层层组合的金字塔",
+          "answer_verification": "not_independently_verified",
+          "location": "upper"
+        },
+        {
+          "rule_family": "numeric_shape_color_sequence",
+          "observation": "分区数字、形状、颜色",
+          "answer_verification": "not_independently_verified",
+          "location": "lower"
+        }
+      ],
+      "limitations": [
+        "完成题型/规则族观察；未独立推导或验证此照片全部题目的标准答案。",
+        "截图含计时UI，不能据此认定真实考试时长、成绩或官方来源。"
+      ]
+    },
+    {
+      "source_id": "S059",
+      "relative_path": "上实幼升小资料合集/上实习题/2023-04-01 142118.jpg",
+      "physical_page_count": null,
+      "reviewed_text_pages": [],
+      "reviewed_visual_pages": [],
+      "reviewed_photo_files": [
+        "上实幼升小资料合集/上实习题/2023-04-01 142118.jpg"
+      ],
+      "photo_review_level": "contact_sheet",
+      "findings": [
+        {
+          "rule_family": "black_white_direction_matrix",
+          "observation": "方向箭头与黑白填充组合",
+          "answer_verification": "not_independently_verified",
+          "location": "upper"
+        },
+        {
+          "rule_family": "grid_position_matrix",
+          "observation": "3x3格内黑块位置九宫格",
+          "answer_verification": "not_independently_verified",
+          "location": "lower"
+        }
+      ],
+      "limitations": [
+        "完成题型/规则族观察；未独立推导或验证此照片全部题目的标准答案。",
+        "截图含计时UI，不能据此认定真实考试时长、成绩或官方来源。"
+      ]
+    },
+    {
+      "source_id": "S060",
+      "relative_path": "上实幼升小资料合集/上实习题/2023-04-01 142130.jpg",
+      "physical_page_count": null,
+      "reviewed_text_pages": [],
+      "reviewed_visual_pages": [],
+      "reviewed_photo_files": [
+        "上实幼升小资料合集/上实习题/2023-04-01 142130.jpg"
+      ],
+      "photo_review_level": "contact_sheet",
+      "findings": [
+        {
+          "rule_family": "letter_structure",
+          "observation": "字母九宫格",
+          "answer_verification": "not_independently_verified",
+          "location": "upper"
+        },
+        {
+          "rule_family": "multi_attribute_sequence",
+          "observation": "黑白点数量、填充与背景色",
+          "answer_verification": "not_independently_verified",
+          "location": "lower"
+        }
+      ],
+      "limitations": [
+        "完成题型/规则族观察；未独立推导或验证此照片全部题目的标准答案。",
+        "截图含计时UI，不能据此认定真实考试时长、成绩或官方来源。"
+      ]
+    },
+    {
+      "source_id": "S061",
+      "relative_path": "上实幼升小资料合集/上实习题/2023-04-01 142138.jpg",
+      "physical_page_count": null,
+      "reviewed_text_pages": [],
+      "reviewed_visual_pages": [],
+      "reviewed_photo_files": [
+        "上实幼升小资料合集/上实习题/2023-04-01 142138.jpg"
+      ],
+      "photo_review_level": "contact_sheet",
+      "findings": [
+        {
+          "rule_family": "geometric_count",
+          "observation": "多图形组合与轮廓特征",
+          "answer_verification": "not_independently_verified",
+          "location": "upper"
+        },
+        {
+          "rule_family": "curved_straight_open_closed",
+          "observation": "曲线直线/开闭结构序列",
+          "answer_verification": "not_independently_verified",
+          "location": "lower"
+        }
+      ],
+      "limitations": [
+        "完成题型/规则族观察；未独立推导或验证此照片全部题目的标准答案。",
+        "截图含计时UI，不能据此认定真实考试时长、成绩或官方来源。"
+      ]
+    },
+    {
+      "source_id": "S062",
+      "relative_path": "上实幼升小资料合集/上实习题/2023-04-01 142149.jpg",
+      "physical_page_count": null,
+      "reviewed_text_pages": [],
+      "reviewed_visual_pages": [],
+      "reviewed_photo_files": [
+        "上实幼升小资料合集/上实习题/2023-04-01 142149.jpg"
+      ],
+      "photo_review_level": "contact_sheet",
+      "findings": [
+        {
+          "rule_family": "symbolic_equations",
+          "observation": "含加减条件的图形等式",
+          "answer_verification": "not_independently_verified",
+          "location": "upper"
+        },
+        {
+          "rule_family": "nested_count_sequence",
+          "observation": "外框形状与星数变化",
+          "answer_verification": "not_independently_verified",
+          "location": "lower"
+        }
+      ],
+      "limitations": [
+        "完成题型/规则族观察；未独立推导或验证此照片全部题目的标准答案。",
+        "截图含计时UI，不能据此认定真实考试时长、成绩或官方来源。"
+      ]
+    },
+    {
+      "source_id": "S063",
+      "relative_path": "上实幼升小资料合集/上实习题/2023-04-01 142226.jpg",
+      "physical_page_count": null,
+      "reviewed_text_pages": [],
+      "reviewed_visual_pages": [],
+      "reviewed_photo_files": [
+        "上实幼升小资料合集/上实习题/2023-04-01 142226.jpg"
+      ],
+      "photo_review_level": "original_full_image_and_contact",
+      "findings": [
+        {
+          "rule_family": "element_type_count",
+          "observation": "元素种类数/个数变化，需要区分两者",
+          "answer_verification": "not_independently_verified",
+          "location": "upper"
+        },
+        {
+          "rule_family": "symbolic_equations",
+          "observation": "重复星形回代图形等式",
+          "answer_verification": "not_independently_verified",
+          "location": "lower"
+        }
+      ],
+      "limitations": [
+        "完成题型/规则族观察；未独立推导或验证此照片全部题目的标准答案。",
+        "截图含计时UI，不能据此认定真实考试时长、成绩或官方来源。"
+      ]
+    },
+    {
+      "source_id": "S064",
+      "relative_path": "上实幼升小资料合集/上实习题/2023-04-01 142239.jpg",
+      "physical_page_count": null,
+      "reviewed_text_pages": [],
+      "reviewed_visual_pages": [],
+      "reviewed_photo_files": [
+        "上实幼升小资料合集/上实习题/2023-04-01 142239.jpg"
+      ],
+      "photo_review_level": "contact_sheet",
+      "findings": [
+        {
+          "rule_family": "character_structure",
+          "observation": "上下两题完全重复：汉字部首/结构九宫格",
+          "answer_verification": "not_independently_verified",
+          "location": "upper_and_lower"
+        }
+      ],
+      "limitations": [
+        "完成题型/规则族观察；未独立推导或验证此照片全部题目的标准答案。",
+        "截图含计时UI，不能据此认定真实考试时长、成绩或官方来源。"
+      ]
+    },
+    {
+      "source_id": "S065",
+      "relative_path": "上实幼升小资料合集/上实习题/2023-04-01 142252.jpg",
+      "physical_page_count": null,
+      "reviewed_text_pages": [],
+      "reviewed_visual_pages": [],
+      "reviewed_photo_files": [
+        "上实幼升小资料合集/上实习题/2023-04-01 142252.jpg"
+      ],
+      "photo_review_level": "contact_sheet",
+      "findings": [
+        {
+          "rule_family": "whole_rotation",
+          "observation": "2x2分格中的图案位置和朝向整体变化",
+          "answer_verification": "not_independently_verified",
+          "location": "upper"
+        },
+        {
+          "rule_family": "count_and_attribute_sequence",
+          "observation": "支撑线数、形状和填充序列",
+          "answer_verification": "not_independently_verified",
+          "location": "lower"
+        }
+      ],
+      "limitations": [
+        "完成题型/规则族观察；未独立推导或验证此照片全部题目的标准答案。",
+        "截图含计时UI，不能据此认定真实考试时长、成绩或官方来源。"
+      ]
+    },
+    {
+      "source_id": "S066",
+      "relative_path": "上实幼升小资料合集/上实习题/2023-04-01 142318.jpg",
+      "physical_page_count": null,
+      "reviewed_text_pages": [],
+      "reviewed_visual_pages": [],
+      "reviewed_photo_files": [
+        "上实幼升小资料合集/上实习题/2023-04-01 142318.jpg"
+      ],
+      "photo_review_level": "original_full_image_and_contact",
+      "findings": [
+        {
+          "rule_family": "transform_analogy",
+          "observation": "先看例子，位置/朝向变换后把字符与外框合成",
+          "answer_verification": "not_independently_verified",
+          "location": "upper"
+        },
+        {
+          "rule_family": "multiple_marker_rotation",
+          "observation": "重复S049上题",
+          "answer_verification": "not_independently_verified",
+          "location": "middle_left"
+        },
+        {
+          "rule_family": "transform_analogy",
+          "observation": "重复S045下题",
+          "answer_verification": "not_independently_verified",
+          "location": "middle_right"
+        },
+        {
+          "rule_family": "shape_set_operation",
+          "observation": "圆内星/闪电与分割线矩阵",
+          "answer_verification": "not_independently_verified",
+          "location": "lower_left"
+        },
+        {
+          "rule_family": "black_white_triangle_matrix",
+          "observation": "三角分区填充矩阵",
+          "answer_verification": "not_independently_verified",
+          "location": "lower_right"
+        }
+      ],
+      "limitations": [
+        "完成题型/规则族观察；未独立推导或验证此照片全部题目的标准答案。",
+        "截图含计时UI，不能据此认定真实考试时长、成绩或官方来源。"
+      ]
+    },
+    {
+      "source_id": "S067",
+      "relative_path": "上实幼升小资料合集/上实习题/上实图形题2 - 无答案.pdf",
+      "physical_page_count": 85,
+      "reviewed_text_pages": [],
+      "reviewed_visual_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85
+      ],
+      "detail_visual_pages": [
+        7,
+        23,
+        31,
+        68,
+        79,
+        81
+      ],
+      "visual_review_method": "Rendered contact sheets; detail pages separately viewed at full-page size",
+      "findings": [
+        {
+          "rule_family": "pattern_continuation_and_texture_gap",
+          "observation": "同图重复与纹理/横纵线条补片",
+          "answer_verification": "not_independently_verified",
+          "physical_pages": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "rule_family": "independent_attribute_matrix",
+          "observation": "数量、位置、颜色、方向、内外标记等分轴变化；并非所有题仅有一条规则",
+          "answer_verification": "not_independently_verified",
+          "physical_pages": [
+            6,
+            7,
+            8,
+            10,
+            11,
+            15,
+            23,
+            24,
+            25,
+            26,
+            27,
+            32,
+            71,
+            76,
+            80
+          ]
+        },
+        {
+          "rule_family": "grid_translation_and_progression",
+          "observation": "网格标记移动、循环；多标记或外框/内部方向的组合变换",
+          "answer_verification": "not_independently_verified",
+          "physical_pages": [
+            12,
+            13,
+            14,
+            22,
+            31,
+            35,
+            48,
+            49,
+            72,
+            74,
+            75,
+            77,
+            78,
+            79
+          ]
+        },
+        {
+          "rule_family": "mirror_and_rotation",
+          "observation": "轮廓翻转、部件方向变化、四格整体旋转",
+          "answer_verification": "not_independently_verified",
+          "physical_pages": [
+            9,
+            16,
+            21,
+            23,
+            29,
+            79
+          ]
+        },
+        {
+          "rule_family": "shape_union_intersection_difference",
+          "observation": "元素或线段叠合、求同、求异、减去；具体操作需要逐题审定",
+          "answer_verification": "not_independently_verified",
+          "physical_pages": [
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            28,
+            30,
+            52,
+            53,
+            54,
+            55,
+            56,
+            68,
+            69,
+            70
+          ]
+        },
+        {
+          "rule_family": "multi_attribute_or_interleaved_sequence",
+          "observation": "数值、大小、形状、颜色、位置交错变化；有等差、非固定增量和分组序列",
+          "answer_verification": "not_independently_verified",
+          "physical_pages": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            50,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66
+          ]
+        },
+        {
+          "rule_family": "shape_or_cell_set_operations",
+          "observation": "元素合并消去、数量分布、黑白/颜色/内外关系，部分多属性复合",
+          "answer_verification": "not_independently_verified",
+          "physical_pages": [
+            33,
+            34,
+            51,
+            67,
+            73,
+            82,
+            83,
+            85
+          ]
+        },
+        {
+          "rule_family": "recursive_graphic_composition",
+          "observation": "相邻底层图形通过同一规则层层合成金字塔顶端",
+          "answer_verification": "not_independently_verified",
+          "physical_pages": [
+            81,
+            84
+          ]
+        }
+      ],
+      "limitations": [
+        "全85页完成联系表级视觉分类，不等于全85题答案校验。",
+        "题号在p36和p57重新从1开始，正式定位应使用物理页。",
+        "与照片及其他题本存在重题和变式，不能累加题量。"
+      ]
+    },
+    {
+      "source_id": "S068",
+      "relative_path": "上实幼升小资料合集/上实习题/上实图形题2- 答案版.pdf",
+      "physical_page_count": 85,
+      "reviewed_text_pages": [],
+      "reviewed_visual_pages": [
+        1,
+        7,
+        14,
+        23,
+        28,
+        35,
+        40,
+        44,
+        53,
+        60,
+        68,
+        74,
+        79,
+        81,
+        85
+      ],
+      "detail_visual_pages": [],
+      "visual_review_method": "Rendered contact sheets; detail pages separately viewed at full-page size",
+      "findings": [
+        {
+          "rule_family": "paired_answer_edition",
+          "observation": "15个抽检页与S067同物理页题目对应，添加手写圈答。",
+          "answer_verification": "not_independently_verified",
+          "physical_pages": [
+            1,
+            7,
+            14,
+            23,
+            28,
+            35,
+            40,
+            44,
+            53,
+            60,
+            68,
+            74,
+            79,
+            81,
+            85
+          ]
+        }
+      ],
+      "limitations": [
+        "其余70页未视觉审阅；未独立验证全部手写答案。"
+      ],
+      "paired_with": "S067"
+    },
+    {
+      "source_id": "S072",
+      "relative_path": "上实幼升小资料合集/图推1000题/图形推理专题（4栏A3）(1).pdf",
+      "physical_page_count": 1,
+      "reviewed_text_pages": [
+        1
+      ],
+      "reviewed_visual_pages": [
+        1
+      ],
+      "detail_visual_pages": [
+        1
+      ],
+      "visual_review_method": "Rendered contact sheets; detail pages separately viewed at full-page size",
+      "findings": [
+        {
+          "rule_family": "black_white_grid_paths_counts_area",
+          "observation": "第一专题：移动方向/循环/反弹/内外、黑白运算、笔画/对称/连接点/连通部分、面积、逐行逐列变化。",
+          "answer_verification": "not_independently_verified",
+          "physical_pages": [
+            1
+          ]
+        },
+        {
+          "rule_family": "character_letter_structure",
+          "observation": "第二三专题：汉字部件、笔画/区域、字母对称与曲直；不宜在非识字任务中引入隐性知识门槛。",
+          "answer_verification": "not_independently_verified",
+          "physical_pages": [
+            1
+          ]
+        },
+        {
+          "rule_family": "topology_function_elements_and_quantitative_composites",
+          "observation": "其余专题覆盖粗线生活图形、折线两端、框与交叉线、元素数量/种类/遍历/换算。",
+          "answer_verification": "not_independently_verified",
+          "physical_pages": [
+            1
+          ]
+        }
+      ],
+      "limitations": [
+        "四栏高分辨率查看；切栏处少量边缘文本由全文抽取补足；未逐例求解。"
+      ]
+    },
+    {
+      "source_id": "S073",
+      "relative_path": "上实幼升小资料合集/图推1000题/图形推理千题册（答案）.pdf",
+      "physical_page_count": 101,
+      "reviewed_text_pages": [
+        1,
+        2
+      ],
+      "reviewed_visual_pages": [
+        3,
+        11,
+        13,
+        17,
+        24,
+        33,
+        38,
+        52,
+        54,
+        63,
+        74,
+        86,
+        93,
+        96,
+        100
+      ],
+      "detail_visual_pages": [],
+      "visual_review_method": "Rendered contact sheets; detail pages separately viewed at full-page size",
+      "findings": [
+        {
+          "rule_family": "answer_explanations_for_sampled_rules",
+          "observation": "图上手写圈注解释对称、笔画、面/点/角计数、内外移动、求同求异、立体关系；后段多为选项答案而少解释。",
+          "answer_verification": "not_independently_verified",
+          "physical_pages": [
+            3,
+            11,
+            13,
+            17,
+            24,
+            33,
+            38,
+            52,
+            54,
+            63,
+            74,
+            86,
+            93,
+            96,
+            100
+          ]
+        }
+      ],
+      "limitations": [
+        "未逐题独立解答；答案版不是官方正确性证明。",
+        "没有全书配对所有题号。"
+      ],
+      "paired_with": "S074"
+    },
+    {
+      "source_id": "S074",
+      "relative_path": "上实幼升小资料合集/图推1000题/图形推理千题册（题本).pdf",
+      "physical_page_count": 102,
+      "reviewed_text_pages": [
+        1,
+        2,
+        3
+      ],
+      "reviewed_visual_pages": [
+        4,
+        7,
+        8,
+        12,
+        14,
+        18,
+        20,
+        25,
+        28,
+        31,
+        33,
+        34,
+        39,
+        41,
+        46,
+        51,
+        53,
+        55,
+        59,
+        62,
+        64,
+        67,
+        69,
+        71,
+        75,
+        78,
+        81,
+        82,
+        87,
+        94,
+        97,
+        99,
+        101
+      ],
+      "detail_visual_pages": [
+        12,
+        53,
+        64,
+        75,
+        87,
+        94,
+        97,
+        99
+      ],
+      "visual_review_method": "Rendered contact sheets; detail pages separately viewed at full-page size",
+      "findings": [
+        {
+          "rule_family": "symmetry_class_axis_direction_count",
+          "observation": "轴/中心对称分类，对称轴方向和数量",
+          "answer_verification": "not_independently_verified",
+          "physical_pages": [
+            4,
+            7,
+            8
+          ]
+        },
+        {
+          "rule_family": "single_stroke_and_graph_connectivity",
+          "observation": "一笔画、日田字变形、出头线段；原册以抽象识别为主",
+          "answer_verification": "not_independently_verified",
+          "physical_pages": [
+            12,
+            14
+          ]
+        },
+        {
+          "rule_family": "regions_count_shape_and_area",
+          "observation": "封闭面的形状、数量及运算、最大最小面",
+          "answer_verification": "not_independently_verified",
+          "physical_pages": [
+            18,
+            20,
+            25
+          ]
+        },
+        {
+          "rule_family": "line_count_curved_straight_parallel",
+          "observation": "直线曲线数量、平行关系与折线两端关系",
+          "answer_verification": "not_independently_verified",
+          "physical_pages": [
+            28,
+            31,
+            33
+          ]
+        },
+        {
+          "rule_family": "intersection_and_tangent_points",
+          "observation": "交点/切点数量及组合运算",
+          "answer_verification": "not_independently_verified",
+          "physical_pages": [
+            34
+          ]
+        },
+        {
+          "rule_family": "angle_classification_and_count",
+          "observation": "锐直钝角、角数量、直角识别",
+          "answer_verification": "not_independently_verified",
+          "physical_pages": [
+            39
+          ]
+        },
+        {
+          "rule_family": "element_shape_count_and_topological_relation",
+          "observation": "元素形状与数量、相离相接相交、功能标记",
+          "answer_verification": "not_independently_verified",
+          "physical_pages": [
+            41,
+            46,
+            51
+          ]
+        },
+        {
+          "rule_family": "translation_rotation_reflection",
+          "observation": "内外圈独立移动、相邻比较、旋转和翻转",
+          "answer_verification": "not_independently_verified",
+          "physical_pages": [
+            53,
+            55,
+            59,
+            62
+          ]
+        },
+        {
+          "rule_family": "union_intersection_xor_with_transform",
+          "observation": "求同求异、相加以及先旋转再运算的复合",
+          "answer_verification": "not_independently_verified",
+          "physical_pages": [
+            64,
+            67,
+            69
+          ]
+        },
+        {
+          "rule_family": "black_white_qualitative_quantitative",
+          "observation": "对称、黑白运算、连通部分、面积/周长与递归组合",
+          "answer_verification": "not_independently_verified",
+          "physical_pages": [
+            71,
+            75,
+            78,
+            81
+          ]
+        },
+        {
+          "rule_family": "character_letter_digit_visual_structure",
+          "observation": "字形笔画/结构/曲直/孔洞等，可能混入文化和识字前置",
+          "answer_verification": "not_independently_verified",
+          "physical_pages": [
+            82
+          ]
+        },
+        {
+          "rule_family": "cube_nets",
+          "observation": "立方体面关系、展开图、图案方向",
+          "answer_verification": "not_independently_verified",
+          "physical_pages": [
+            87
+          ]
+        },
+        {
+          "rule_family": "orthographic_views",
+          "observation": "真实立体块的视图轮廓与标记关系",
+          "answer_verification": "not_independently_verified",
+          "physical_pages": [
+            94
+          ]
+        },
+        {
+          "rule_family": "solid_sections",
+          "observation": "斜切、带孔体、多体复合切面等复杂空间问题",
+          "answer_verification": "not_independently_verified",
+          "physical_pages": [
+            97
+          ]
+        },
+        {
+          "rule_family": "solid_assembly_and_marked_pieces",
+          "observation": "补齐立方体、部件拼合、标记位置、遮挡计数",
+          "answer_verification": "not_independently_verified",
+          "physical_pages": [
+            99,
+            101
+          ]
+        }
+      ],
+      "limitations": [
+        "已按目录14个大章节抽样，未逐页审阅全部102页，也未核验1000题总数。",
+        "原目录页码为印刷页；物理页包含额外封面，样例通常相差1。",
+        "呈现成人行测式体系和复杂度，但未追溯出版对象、命题出处或官方身份。",
+        "适龄判断为课程设计假设，尚无6–8岁儿童试玩证据。"
+      ],
+      "paired_with": "S073"
+    },
+    {
+      "source_id": "S075",
+      "relative_path": "上实幼升小资料合集/图推1000题/图形推理规律（4栏A3）(1).pdf",
+      "physical_page_count": 1,
+      "reviewed_text_pages": [
+        1
+      ],
+      "reviewed_visual_pages": [
+        1
+      ],
+      "detail_visual_pages": [
+        1
+      ],
+      "visual_review_method": "Rendered contact sheets; detail pages separately viewed at full-page size",
+      "findings": [
+        {
+          "rule_family": "position_style_quantity_attribute_special_taxonomy",
+          "observation": "完整列出位置、样式、数量、属性、特殊关系五大规律，细分平移/旋转/翻转/位置交换、叠合/遍历/黑白、点线角面素、对称曲直开闭、图形关系/功能标记。",
+          "answer_verification": "not_independently_verified",
+          "physical_pages": [
+            1
+          ]
+        },
+        {
+          "rule_family": "adult_exam_heuristics_need_adaptation",
+          "observation": "出现奇点笔画公式、先转后求异、内外圈不同运算、点线面复合等技巧；不能直接作为儿童教学标准或计算算法。",
+          "answer_verification": "not_independently_verified",
+          "physical_pages": [
+            1
+          ]
+        }
+      ],
+      "limitations": [
+        "全文读取并四栏视觉核对，不等于逐例判答。",
+        "奇点笔画口诀省略全偶点/连通性等条件，应用判定器必须自行定义正确数学条件。"
+      ]
+    }
+  ],
+  "cross_source_relationships": [
+    {
+      "a": "S067",
+      "b": "S068",
+      "relation": "question_answer_pair",
+      "verified_physical_pages": [
+        1,
+        7,
+        14,
+        23,
+        28,
+        35,
+        40,
+        44,
+        53,
+        60,
+        68,
+        74,
+        79,
+        81,
+        85
+      ]
+    },
+    {
+      "a": "S074",
+      "b": "S073",
+      "relation": "question_answer_pair",
+      "note": "抽样对应S074物理p=S073物理p+1；不保证全书每题恒定偏移"
+    },
+    {
+      "a": "S064:upper",
+      "b": "S064:lower",
+      "relation": "same_question"
+    },
+    {
+      "a": "S066:middle_left",
+      "b": "S049:upper",
+      "relation": "same_question"
+    },
+    {
+      "a": "S066:middle_right",
+      "b": "S045:lower",
+      "relation": "same_question"
+    },
+    {
+      "a": "S031:upper",
+      "b": "S074:p59:q51",
+      "relation": "same_stem_or_relayout"
+    },
+    {
+      "a": "S040:upper",
+      "b": "S074:p55:q8",
+      "relation": "same_stem_or_relayout"
+    },
+    {
+      "a": "S023:upper",
+      "b": "S067:p53",
+      "relation": "same_stem_or_relayout",
+      "note": "视觉匹配；选项排序、比例或颜色须在逐题归并时再次核对"
+    },
+    {
+      "a": "S027:upper",
+      "b": "S067:p40",
+      "relation": "same_stem_or_relayout",
+      "note": "视觉匹配；选项排序、比例或颜色须在逐题归并时再次核对"
+    },
+    {
+      "a": "S027:lower",
+      "b": "S067:p56",
+      "relation": "same_stem_or_relayout",
+      "note": "视觉匹配；选项排序、比例或颜色须在逐题归并时再次核对"
+    },
+    {
+      "a": "S029:upper",
+      "b": "S067:p41",
+      "relation": "same_stem_or_relayout",
+      "note": "视觉匹配；选项排序、比例或颜色须在逐题归并时再次核对"
+    },
+    {
+      "a": "S034:lower",
+      "b": "S067:p67",
+      "relation": "same_stem_or_relayout",
+      "note": "视觉匹配；选项排序、比例或颜色须在逐题归并时再次核对"
+    },
+    {
+      "a": "S037:lower",
+      "b": "S067:p68",
+      "relation": "same_stem_or_relayout",
+      "note": "视觉匹配；选项排序、比例或颜色须在逐题归并时再次核对"
+    },
+    {
+      "a": "S040:lower",
+      "b": "S067:p48",
+      "relation": "same_stem_or_relayout",
+      "note": "视觉匹配；选项排序、比例或颜色须在逐题归并时再次核对"
+    },
+    {
+      "a": "S041:lower",
+      "b": "S067:p55",
+      "relation": "same_stem_or_relayout",
+      "note": "视觉匹配；选项排序、比例或颜色须在逐题归并时再次核对"
+    },
+    {
+      "a": "S043:upper",
+      "b": "S067:p70",
+      "relation": "same_stem_or_relayout",
+      "note": "视觉匹配；选项排序、比例或颜色须在逐题归并时再次核对"
+    },
+    {
+      "a": "S051:upper",
+      "b": "S067:p74",
+      "relation": "same_stem_or_relayout",
+      "note": "视觉匹配；选项排序、比例或颜色须在逐题归并时再次核对"
+    },
+    {
+      "a": "S055:upper",
+      "b": "S067:p72",
+      "relation": "same_stem_or_relayout",
+      "note": "视觉匹配；选项排序、比例或颜色须在逐题归并时再次核对"
+    },
+    {
+      "a": "S065:upper",
+      "b": "S067:p79",
+      "relation": "same_stem_or_relayout",
+      "note": "视觉匹配；选项排序、比例或颜色须在逐题归并时再次核对"
+    }
+  ],
+  "unresolved": [
+    "全部独立题目数量、重复变式归并尚未完成。",
+    "千题册其余页及全体答案尚未逐题视觉和解题验证。",
+    "成人行测式内容判断来自题型术语和复杂度；未验证出版/作者身份或适用年龄。",
+    "课程设计建议尚未经儿童试玩，不能把建议难度当成经测量的年龄标准。"
+  ],
+  "application_audit": {
+    "method": "static code read only",
+    "files": [
+      "src/data/games.ts",
+      "src/types.ts",
+      "src/games/ProgressiveSetGame.tsx"
+    ],
+    "current_graphic_rounds": 48,
+    "current_matrix_rounds": 6,
+    "count_note": "repeatTo at games.ts:4563 deduplicates and truncates; it does not pad to target.",
+    "graphic_kinds": [
+      "silhouette-match",
+      "covered-match",
+      "detail-match",
+      "layer-overlap",
+      "code-match",
+      "closure-match"
+    ],
+    "game_mappings": [
+      {
+        "rule_family": "visual_discrimination_prerequisite",
+        "current_game_ids": [
+          "graphic-shadow-match",
+          "graphic-covered-restore",
+          "graphic-detail-whole",
+          "logic-visual-match",
+          "logic-difference-detective"
+        ],
+        "coverage": "existing_prerequisite",
+        "source_anchors": [
+          "S067:p1-5"
+        ]
+      },
+      {
+        "rule_family": "texture_gap_and_spatial_part_whole",
+        "current_game_ids": [
+          "graphic-gap-close",
+          "logic-part-whole-puzzle"
+        ],
+        "coverage": "partial",
+        "source_anchors": [
+          "S067:p3-5",
+          "S074:p99"
+        ]
+      },
+      {
+        "rule_family": "multi_attribute_matrix_and_sequence",
+        "current_game_ids": [
+          "logic-matrix-puzzle",
+          "logic-number-pattern-trail"
+        ],
+        "coverage": "partial",
+        "source_anchors": [
+          "S067:p7",
+          "S067:p23",
+          "S067:p39-44",
+          "S067:p71",
+          "S067:p80"
+        ]
+      },
+      {
+        "rule_family": "grid_movement_rule_inference",
+        "current_game_ids": [
+          "logic-address-map",
+          "logic-position-map",
+          "logic-route-steps"
+        ],
+        "coverage": "prerequisite_only_target_missing",
+        "source_anchors": [
+          "S067:p31",
+          "S067:p48",
+          "S067:p77",
+          "S074:p53",
+          "S025:upper",
+          "S051:lower"
+        ]
+      },
+      {
+        "rule_family": "rotation_and_reflection",
+        "current_game_ids": [
+          "logic-rotation-direction",
+          "logic-mirror-fold"
+        ],
+        "coverage": "partial",
+        "source_anchors": [
+          "S067:p79",
+          "S074:p59",
+          "S074:p62",
+          "S053:upper",
+          "S065:upper"
+        ]
+      },
+      {
+        "rule_family": "boolean_and_recursive_shape_composition",
+        "current_game_ids": [
+          "graphic-layer-overlap",
+          "logic-matrix-puzzle"
+        ],
+        "coverage": "prerequisite_only_target_missing",
+        "source_anchors": [
+          "S067:p19",
+          "S067:p28",
+          "S067:p53",
+          "S067:p68",
+          "S067:p81",
+          "S067:p84",
+          "S074:p64",
+          "S074:p75"
+        ]
+      },
+      {
+        "rule_family": "multi_symbol_encoding",
+        "current_game_ids": [
+          "graphic-code-machine"
+        ],
+        "coverage": "partial",
+        "source_anchors": [
+          "S028:lower",
+          "S044:upper",
+          "S050:lower"
+        ]
+      },
+      {
+        "rule_family": "multi_constraint_symbolic_equations",
+        "current_game_ids": [
+          "logic-balance-swap"
+        ],
+        "coverage": "partial",
+        "source_anchors": [
+          "S025:lower",
+          "S033:upper",
+          "S048:upper",
+          "S063:lower"
+        ]
+      },
+      {
+        "rule_family": "symmetry_geometry_topology_counts",
+        "current_game_ids": [
+          "logic-mirror-fold",
+          "logic-position-map"
+        ],
+        "coverage": "partial",
+        "source_anchors": [
+          "S074:p4",
+          "S074:p8",
+          "S074:p18",
+          "S074:p28",
+          "S074:p31",
+          "S074:p34",
+          "S074:p39",
+          "S074:p46",
+          "S074:p51"
+        ]
+      },
+      {
+        "rule_family": "solid_views_and_assembly",
+        "current_game_ids": [
+          "logic-block-height-map",
+          "logic-three-view-blocks",
+          "logic-part-whole-puzzle"
+        ],
+        "coverage": "partial",
+        "source_anchors": [
+          "S074:p94",
+          "S074:p99",
+          "S074:p101"
+        ]
+      },
+      {
+        "rule_family": "single_stroke",
+        "current_game_ids": [],
+        "coverage": "missing",
+        "source_anchors": [
+          "S074:p12",
+          "S074:p14",
+          "S075:p1"
+        ]
+      },
+      {
+        "rule_family": "cube_nets",
+        "current_game_ids": [],
+        "coverage": "missing",
+        "source_anchors": [
+          "S074:p87"
+        ]
+      },
+      {
+        "rule_family": "solid_sections",
+        "current_game_ids": [],
+        "coverage": "missing",
+        "source_anchors": [
+          "S074:p97"
+        ]
+      },
+      {
+        "rule_family": "functional_marks",
+        "current_game_ids": [],
+        "coverage": "missing",
+        "source_anchors": [
+          "S074:p51",
+          "S075:p1"
+        ]
+      },
+      {
+        "rule_family": "complex_black_white_operations",
+        "current_game_ids": [],
+        "coverage": "missing",
+        "source_anchors": [
+          "S074:p75",
+          "S075:p1"
+        ]
+      },
+      {
+        "rule_family": "character_letter_visual_structure",
+        "current_game_ids": [],
+        "coverage": "missing",
+        "source_anchors": [
+          "S064",
+          "S074:p82",
+          "S072:p1"
+        ]
+      }
+    ],
+    "important_gaps": [
+      "multi_attribute_rule_inference",
+      "precise_geometric_transforms",
+      "boolean_shape_operations",
+      "interactive_graph_traversal",
+      "cube_net_and_voxel_geometry",
+      "source_problem_canonicalization"
+    ],
+    "build_or_runtime_verified": false
+  }
+}

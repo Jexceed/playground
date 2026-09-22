@@ -2,6 +2,15 @@
 
 Created: 2026-07-07
 
+2026-09-22 status: this document still describes the implemented first 48-round
+图形工坊 scope. The broader single-app expansion is now governed by
+[feature 029](../specs/029-curriculum-benchmark/plan.md) and its
+[source-backed matrix](../specs/029-curriculum-benchmark/coverage-matrix.md).
+That feature reviews the original collection in Downloads, preserves old
+activity identities, and expands task families without duplicating the same
+activity under multiple worlds. The first-pass limits below are not a permanent
+cap on the planned curriculum.
+
 This note records the current source-of-truth interpretation of
 `references/001上实幼升小资料合集` for the first 图形工坊 implementation.
 

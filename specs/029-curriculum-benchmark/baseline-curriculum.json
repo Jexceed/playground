@@ -1,0 +1,691 @@
+{
+  "worlds": [
+    {
+      "id": "math",
+      "name": "数字岛",
+      "icon": "🧮",
+      "summary": "数数、比较、加减、分组、时钟"
+    },
+    {
+      "id": "logic",
+      "name": "逻辑屋",
+      "icon": "🗝️",
+      "summary": "规律、顺序、规则、计划"
+    },
+    {
+      "id": "graphic",
+      "name": "图形工坊",
+      "icon": "🧩",
+      "summary": "轮廓、遮挡、叠合、线索、密码、缺口"
+    }
+  ],
+  "games": [
+    {
+      "id": "math-counting-cardinality",
+      "title": "数一数",
+      "world": "math",
+      "goal": "建立一一对应、基数理解和 1-10 的数量感。",
+      "roundCount": 18,
+      "levels": [
+        "L1",
+        "L2",
+        "L3"
+      ],
+      "abilityTags": [
+        "一一对应",
+        "基数理解",
+        "数数"
+      ]
+    },
+    {
+      "id": "math-subitize-match",
+      "title": "一眼看出来",
+      "world": "math",
+      "goal": "训练 2-6 的小数量辨认、数形连接和数量结构。",
+      "roundCount": 15,
+      "levels": [
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "abilityTags": [
+        "小数量辨认",
+        "数形配对",
+        "数量结构"
+      ]
+    },
+    {
+      "id": "math-compare-equalize",
+      "title": "多一点，少一点",
+      "world": "math",
+      "goal": "理解多、少、一样多、多几个、少几个。",
+      "roundCount": 12,
+      "levels": [
+        "L3",
+        "L4",
+        "L5"
+      ],
+      "abilityTags": [
+        "比较数量",
+        "一样多",
+        "补齐"
+      ]
+    },
+    {
+      "id": "math-compose-decompose",
+      "title": "合起来，拆开来",
+      "world": "math",
+      "goal": "建立数的合成分解，为加减法打底。",
+      "roundCount": 28,
+      "levels": [
+        "L4",
+        "L5"
+      ],
+      "abilityTags": [
+        "合成分解",
+        "数的结构",
+        "接着数"
+      ]
+    },
+    {
+      "id": "math-story-operations",
+      "title": "来了，又走了",
+      "world": "math",
+      "goal": "理解减法是拿走、飞走或变少。",
+      "roundCount": 12,
+      "levels": [
+        "L4",
+        "L5"
+      ],
+      "abilityTags": [
+        "减法理解",
+        "变化推理"
+      ]
+    },
+    {
+      "id": "math-fair-share",
+      "title": "公平分一分",
+      "world": "math",
+      "goal": "理解平均分、公平、每份一样多。",
+      "roundCount": 13,
+      "levels": [
+        "L4",
+        "L5",
+        "L6"
+      ],
+      "abilityTags": [
+        "公平分配",
+        "平均分",
+        "早期除法直觉"
+      ]
+    },
+    {
+      "id": "math-group-counting",
+      "title": "几个几个数",
+      "world": "math",
+      "goal": "建立成组计数和早期乘法直觉。",
+      "roundCount": 12,
+      "levels": [
+        "L4",
+        "L5",
+        "L6"
+      ],
+      "abilityTags": [
+        "成组计数",
+        "早期乘法直觉",
+        "跳数"
+      ]
+    },
+    {
+      "id": "math-clock-time",
+      "title": "时钟小管家",
+      "world": "math",
+      "goal": "建立 00 分、30 分和 12 小时到 24 小时制转换的基础理解。",
+      "roundCount": 12,
+      "levels": [
+        "L3",
+        "L4",
+        "L5"
+      ],
+      "abilityTags": [
+        "认识时钟",
+        "00分30分",
+        "24小时制"
+      ]
+    },
+    {
+      "id": "logic-pattern-train",
+      "title": "找规律火车",
+      "world": "logic",
+      "goal": "识别重复模式，预测下一个，补上缺失位置。",
+      "roundCount": 18,
+      "levels": [
+        "L3",
+        "L4",
+        "L5"
+      ],
+      "abilityTags": [
+        "模式识别",
+        "预测",
+        "规则表达"
+      ]
+    },
+    {
+      "id": "logic-sorter-switch",
+      "title": "会变规则的分类机",
+      "world": "logic",
+      "goal": "训练分类、规则切换和认知灵活性。",
+      "roundCount": 11,
+      "levels": [
+        "L3",
+        "L4",
+        "L5"
+      ],
+      "abilityTags": [
+        "分类",
+        "规则切换",
+        "认知灵活性"
+      ]
+    },
+    {
+      "id": "logic-stop-think",
+      "title": "停一下再行动",
+      "world": "logic",
+      "goal": "训练抑制控制和按规则行动。",
+      "roundCount": 6,
+      "levels": [
+        "L3",
+        "L5",
+        "L6"
+      ],
+      "abilityTags": [
+        "抑制控制",
+        "规则执行",
+        "反着来"
+      ]
+    },
+    {
+      "id": "logic-order-plan",
+      "title": "先做什么",
+      "world": "logic",
+      "goal": "训练顺序、因果和工作记忆。",
+      "roundCount": 24,
+      "levels": [
+        "L4",
+        "L5",
+        "L6"
+      ],
+      "abilityTags": [
+        "顺序推理",
+        "因果理解",
+        "两步计划"
+      ]
+    },
+    {
+      "id": "logic-story-evidence",
+      "title": "故事和线索",
+      "world": "logic",
+      "goal": "训练证据推理、解释理由和简单排除法。",
+      "roundCount": 7,
+      "levels": [
+        "L4",
+        "L5",
+        "L6"
+      ],
+      "abilityTags": [
+        "故事顺序",
+        "证据推理",
+        "排除法"
+      ]
+    },
+    {
+      "id": "logic-condition-detective",
+      "title": "条件小侦探",
+      "world": "logic",
+      "goal": "训练必要条件、证据强弱和条件缺口判断。",
+      "roundCount": 12,
+      "levels": [
+        "L4",
+        "L5",
+        "L6"
+      ],
+      "abilityTags": [
+        "条件判断",
+        "证据强弱",
+        "必要条件"
+      ]
+    },
+    {
+      "id": "logic-fix-plan",
+      "title": "错了怎么改",
+      "world": "logic",
+      "goal": "训练错误诊断、修正计划和因果解释。",
+      "roundCount": 12,
+      "levels": [
+        "L4",
+        "L5",
+        "L6"
+      ],
+      "abilityTags": [
+        "错误诊断",
+        "修正计划",
+        "因果解释"
+      ]
+    },
+    {
+      "id": "logic-priority-choice",
+      "title": "先处理哪一个",
+      "world": "logic",
+      "goal": "训练优先级判断、关键条件识别和生活场景决策。",
+      "roundCount": 12,
+      "levels": [
+        "L4",
+        "L5",
+        "L6"
+      ],
+      "abilityTags": [
+        "优先级判断",
+        "关键条件",
+        "生活决策"
+      ]
+    },
+    {
+      "id": "logic-rule-filter",
+      "title": "按规则装书包",
+      "world": "logic",
+      "goal": "训练规则筛选、排除干扰和多条件判断。",
+      "roundCount": 14,
+      "levels": [
+        "L4",
+        "L5",
+        "L6"
+      ],
+      "abilityTags": [
+        "规则筛选",
+        "多条件判断",
+        "排除干扰"
+      ]
+    },
+    {
+      "id": "logic-relation-pairs",
+      "title": "谁和谁一对",
+      "world": "logic",
+      "goal": "训练关系配对、类比迁移和排除相近干扰。",
+      "roundCount": 16,
+      "levels": [
+        "L4",
+        "L5",
+        "L6"
+      ],
+      "abilityTags": [
+        "关系配对",
+        "类比推理",
+        "相近干扰"
+      ]
+    },
+    {
+      "id": "logic-space-bridge",
+      "title": "桥怎么搭",
+      "world": "logic",
+      "goal": "训练空间判断、规划和试错调整。",
+      "roundCount": 8,
+      "levels": [
+        "L3",
+        "L5",
+        "L6",
+        "L4"
+      ],
+      "abilityTags": [
+        "空间判断",
+        "规划",
+        "试错调整"
+      ]
+    },
+    {
+      "id": "logic-same-kind-detective",
+      "title": "同类小侦探",
+      "world": "logic",
+      "goal": "训练观察角度、类别归纳和排除法。",
+      "roundCount": 12,
+      "levels": [
+        "L4",
+        "L5",
+        "L6"
+      ],
+      "abilityTags": [
+        "观察角度",
+        "类别归纳",
+        "排除法"
+      ]
+    },
+    {
+      "id": "logic-number-pattern-trail",
+      "title": "数字规律小路",
+      "world": "logic",
+      "goal": "把机考里的数列题改成可读、可数、可解释的规律游戏。",
+      "roundCount": 15,
+      "levels": [
+        "L4",
+        "L5",
+        "L6"
+      ],
+      "abilityTags": [
+        "数列规律",
+        "跳数",
+        "单双观察"
+      ]
+    },
+    {
+      "id": "logic-address-map",
+      "title": "地图找宝物",
+      "world": "logic",
+      "goal": "训练二维定位、行列对应和工作记忆。",
+      "roundCount": 12,
+      "levels": [
+        "L4",
+        "L5",
+        "L6"
+      ],
+      "abilityTags": [
+        "二维定位",
+        "行列对应",
+        "位置表达"
+      ]
+    },
+    {
+      "id": "logic-matrix-puzzle",
+      "title": "图形补一补",
+      "world": "logic",
+      "goal": "把二维矩阵规律降成孩子可解释的组合与轮换。",
+      "roundCount": 6,
+      "levels": [
+        "L5",
+        "L6"
+      ],
+      "abilityTags": [
+        "二维规律",
+        "图形组合",
+        "多特征观察"
+      ]
+    },
+    {
+      "id": "logic-position-map",
+      "title": "方位小地图",
+      "world": "logic",
+      "goal": "训练空间方位、相对位置和有序观察。",
+      "roundCount": 12,
+      "levels": [
+        "L4",
+        "L5",
+        "L6"
+      ],
+      "abilityTags": [
+        "空间方位",
+        "相对位置",
+        "有序观察"
+      ]
+    },
+    {
+      "id": "logic-memory-camera",
+      "title": "记忆小相机",
+      "world": "logic",
+      "goal": "训练图像记忆、顺序记忆和抗干扰选择。",
+      "roundCount": 12,
+      "levels": [
+        "L4",
+        "L5",
+        "L6"
+      ],
+      "abilityTags": [
+        "图像记忆",
+        "工作记忆",
+        "抗干扰"
+      ]
+    },
+    {
+      "id": "logic-visual-match",
+      "title": "一模一样在哪里",
+      "world": "logic",
+      "goal": "训练细节观察、顺序比较和抗干扰。",
+      "roundCount": 12,
+      "levels": [
+        "L4",
+        "L5",
+        "L6"
+      ],
+      "abilityTags": [
+        "细节观察",
+        "顺序比较",
+        "抗干扰"
+      ]
+    },
+    {
+      "id": "logic-difference-detective",
+      "title": "找不同侦探",
+      "world": "logic",
+      "goal": "训练有序观察、细节比较和变化表达。",
+      "roundCount": 12,
+      "levels": [
+        "L4",
+        "L5"
+      ],
+      "abilityTags": [
+        "找不同",
+        "细节比较",
+        "有序观察"
+      ]
+    },
+    {
+      "id": "logic-rotation-direction",
+      "title": "转一转方向",
+      "world": "logic",
+      "goal": "训练旋转规律、方向顺序和工作记忆。",
+      "roundCount": 12,
+      "levels": [
+        "L5",
+        "L6"
+      ],
+      "abilityTags": [
+        "旋转规律",
+        "方向顺序",
+        "工作记忆"
+      ]
+    },
+    {
+      "id": "logic-part-whole-puzzle",
+      "title": "拼图少哪块",
+      "world": "logic",
+      "goal": "训练部分-整体、组合观察和排除法。",
+      "roundCount": 12,
+      "levels": [
+        "L5",
+        "L6"
+      ],
+      "abilityTags": [
+        "部分整体",
+        "图形组合",
+        "排除法"
+      ]
+    },
+    {
+      "id": "logic-balance-swap",
+      "title": "天平换一换",
+      "world": "logic",
+      "goal": "训练等量代换、成组观察和早期推理。",
+      "roundCount": 10,
+      "levels": [
+        "L4",
+        "L5",
+        "L6"
+      ],
+      "abilityTags": [
+        "等量代换",
+        "成组观察",
+        "早期推理"
+      ]
+    },
+    {
+      "id": "logic-mirror-fold",
+      "title": "镜子折一折",
+      "world": "logic",
+      "goal": "训练轴对称、左右反转和有序比较。",
+      "roundCount": 12,
+      "levels": [
+        "L5",
+        "L6"
+      ],
+      "abilityTags": [
+        "轴对称",
+        "左右反转",
+        "有序比较"
+      ]
+    },
+    {
+      "id": "logic-block-height-map",
+      "title": "积木楼层图",
+      "world": "logic",
+      "goal": "训练立体计数、俯视图理解和分步求和。",
+      "roundCount": 12,
+      "levels": [
+        "L5",
+        "L6"
+      ],
+      "abilityTags": [
+        "立体计数",
+        "俯视图",
+        "分步求和"
+      ]
+    },
+    {
+      "id": "logic-three-view-blocks",
+      "title": "从哪边看",
+      "world": "logic",
+      "goal": "训练三视图、视角转换和最高层判断。",
+      "roundCount": 18,
+      "levels": [
+        "L5",
+        "L6"
+      ],
+      "abilityTags": [
+        "三视图",
+        "视角转换",
+        "空间想象"
+      ]
+    },
+    {
+      "id": "logic-route-steps",
+      "title": "路线听指令",
+      "world": "logic",
+      "goal": "训练方向执行、两步工作记忆和路线规划。",
+      "roundCount": 10,
+      "levels": [
+        "L4",
+        "L5",
+        "L6"
+      ],
+      "abilityTags": [
+        "方向执行",
+        "工作记忆",
+        "路线规划"
+      ]
+    },
+    {
+      "id": "graphic-shadow-match",
+      "title": "影子配对",
+      "world": "graphic",
+      "goal": "训练影子配对、轮廓抽象和抗颜色干扰。",
+      "roundCount": 8,
+      "levels": [
+        "L5",
+        "L6"
+      ],
+      "abilityTags": [
+        "影子配对",
+        "轮廓抽象",
+        "抗颜色干扰"
+      ]
+    },
+    {
+      "id": "graphic-covered-restore",
+      "title": "遮挡还原",
+      "world": "graphic",
+      "goal": "训练遮挡还原、可见线索提取和近似选项排除。",
+      "roundCount": 8,
+      "levels": [
+        "L5",
+        "L6"
+      ],
+      "abilityTags": [
+        "遮挡还原",
+        "可见线索",
+        "近似排除"
+      ]
+    },
+    {
+      "id": "graphic-detail-whole",
+      "title": "局部找整体",
+      "world": "graphic",
+      "goal": "训练局部找整体、边角特征识别和高混淆选项排除。",
+      "roundCount": 8,
+      "levels": [
+        "L5",
+        "L6"
+      ],
+      "abilityTags": [
+        "局部找整体",
+        "边角特征",
+        "近似排除"
+      ]
+    },
+    {
+      "id": "graphic-layer-overlap",
+      "title": "透明叠叠板",
+      "world": "graphic",
+      "goal": "训练透明叠合、上下层判断和重叠区域观察。",
+      "roundCount": 8,
+      "levels": [
+        "L5",
+        "L6"
+      ],
+      "abilityTags": [
+        "透明叠叠板",
+        "上下层判断",
+        "重叠线索"
+      ]
+    },
+    {
+      "id": "graphic-code-machine",
+      "title": "图形密码机",
+      "world": "graphic",
+      "goal": "训练图形编码、对应映射和近邻干扰排除。",
+      "roundCount": 8,
+      "levels": [
+        "L5",
+        "L6"
+      ],
+      "abilityTags": [
+        "图形密码机",
+        "对应映射",
+        "近邻排除"
+      ]
+    },
+    {
+      "id": "graphic-gap-close",
+      "title": "缺口补一补",
+      "world": "graphic",
+      "goal": "训练视觉闭合、缺口方向和边角形状匹配。",
+      "roundCount": 8,
+      "levels": [
+        "L5",
+        "L6"
+      ],
+      "abilityTags": [
+        "缺口补一补",
+        "视觉闭合",
+        "边角匹配"
+      ]
+    }
+  ],
+  "gameCount": 40,
+  "roundCount": 489
+}

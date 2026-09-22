@@ -4,6 +4,25 @@ This project uses local, auditable assets for the child-facing experience. Asset
 paths are part of the product contract: move them only with code, docs, and audit
 updates in the same change.
 
+## Reference-Based Curriculum Expansion
+
+The planned [029 curriculum expansion](../specs/029-curriculum-benchmark/plan.md)
+uses the supplied local collection as design evidence. Original scans, teaching
+videos, screenshots, embedded brand marks, and answer annotations are not
+automatically runtime assets. Create clear original activity materials and
+retain a source-rule-to-activity review record.
+
+Answer-critical geometric relationships must be described deterministically
+and independently checked. Produce registered local diagram assets from that
+description where appropriate; inspect them at real display size. Random image
+generation alone cannot validate adjacency, symmetry, occlusion, or cube views.
+Interactive highlights, slots, and paths must agree with the same task model.
+
+Current Chinese voice standards remain unchanged. Future English listening
+activities require an explicit locale/voice contract and corresponding audit
+coverage before release; Chinese completion must not count as English listening
+evidence. This document records the planned boundary, not new active audio.
+
 ## Image Directories
 
 - `public/images/brand/`: brand marks and app icons.

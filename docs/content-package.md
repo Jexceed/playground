@@ -53,3 +53,22 @@ A separate feature should migrate the question bank to validated JSON content pa
 - Versioning rules for content packs.
 
 Until that migration exists, deployment tools must treat `content/` as a boundary and not as a complete replacement for `src/data/games.ts`.
+
+## Planned Curriculum Expansion
+
+Feature [029](../specs/029-curriculum-benchmark/plan.md) keeps one application and
+a continuous curriculum. It proposes a shared, build-time catalog with
+domain/family modules and a legacy adapter preserving existing game/round IDs.
+Application loading, curriculum audits, voice export, and platform exports must
+consume that same catalog.
+
+This catalog refactor is planned, not implemented. The current TypeScript
+question bank and the `boundary-placeholder` release manifest remain the actual
+runtime state. A runtime external-JSON loader is still a separate follow-up.
+Content structure versions, content revisions, application versions, and age
+recommendations have separate meanings.
+
+Source collection files and research locators stay in development evidence.
+Only independently verified, authored activities and their registered runtime
+assets belong in release output. Unsupported platform interaction kinds must
+be reported explicitly, never silently reduced to an inequivalent choice task.

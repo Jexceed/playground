@@ -1,0 +1,4160 @@
+{
+  "date": "2026-09-22",
+  "status": "design-not-implementation",
+  "families": [
+    {
+      "id": "N01",
+      "slug": "counting-cardinality",
+      "domain": "math",
+      "title": "点数、基数与数量结构",
+      "source_refs": [
+        {
+          "source_id": "S083",
+          "locator": "1"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide4"
+        },
+        {
+          "source_id": "S109",
+          "locator": "10-13"
+        },
+        {
+          "source_id": "S115",
+          "locator": "14-17"
+        }
+      ],
+      "existing_game_ids": [
+        "math-counting-cardinality",
+        "math-subitize-match"
+      ],
+      "baseline_coverage": "已有基础待等价复核",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "保留小数量基础，加入有序标记、不同排列和数量结构解释",
+      "interaction_kinds": [
+        "singleChoice",
+        "multiSelect"
+      ],
+      "difficulty_ladder": [
+        "实物逐个对应",
+        "结构化点群",
+        "换排列仍能解释"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M2",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/math/counting-cardinality.ts"
+    },
+    {
+      "id": "N02",
+      "slug": "compare-transfer",
+      "domain": "math",
+      "title": "数量比较、补齐与移动补差",
+      "source_refs": [
+        {
+          "source_id": "S103",
+          "locator": "2-5"
+        },
+        {
+          "source_id": "S114",
+          "locator": "8-11"
+        }
+      ],
+      "existing_game_ids": [
+        "math-compare-equalize"
+      ],
+      "baseline_coverage": "已有基础待等价复核",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "从直接比较进入移给对方后两边同时变化，分清求差与取走",
+      "interaction_kinds": [
+        "construction",
+        "singleChoice"
+      ],
+      "difficulty_ladder": [
+        "一一配对",
+        "补齐差额",
+        "移动后重新比较"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M2",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/math/compare-transfer.ts"
+    },
+    {
+      "id": "N03",
+      "slug": "number-conservation",
+      "domain": "math",
+      "title": "数量、排列与容积守恒",
+      "source_refs": [
+        {
+          "source_id": "S110",
+          "locator": "4"
+        },
+        {
+          "source_id": "S119",
+          "locator": "3-5"
+        },
+        {
+          "source_id": "S106",
+          "locator": "9-10"
+        }
+      ],
+      "existing_game_ids": [
+        "math-counting-cardinality",
+        "math-compare-equalize"
+      ],
+      "baseline_coverage": "已有基础待等价复核",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "数量/体积与排列、容器外形分离，用实物倒换和对应验证，不能凭水位高就判断更多",
+      "interaction_kinds": [
+        "construction",
+        "parentObservation"
+      ],
+      "difficulty_ladder": [
+        "一一摆放",
+        "改变间距",
+        "解释数量未变"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M2",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/math/number-conservation.ts"
+    },
+    {
+      "id": "N04",
+      "slug": "number-partitions",
+      "domain": "math",
+      "title": "有序分合与枚举",
+      "source_refs": [
+        {
+          "source_id": "S088",
+          "locator": "1-3"
+        }
+      ],
+      "existing_game_ids": [
+        "math-compose-decompose"
+      ],
+      "baseline_coverage": "已有基础待等价复核",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "摆出不同分法，按序枚举并说明是否把交换当同一种",
+      "interaction_kinds": [
+        "orderedPlacement",
+        "construction"
+      ],
+      "difficulty_ladder": [
+        "分成两份",
+        "有序找齐",
+        "按附加条件筛分法"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M2",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/math/number-partitions.ts"
+    },
+    {
+      "id": "N05",
+      "slug": "make-break-ten",
+      "domain": "math",
+      "title": "凑十、破十与数位表征",
+      "source_refs": [
+        {
+          "source_id": "S093",
+          "locator": "1-3"
+        },
+        {
+          "source_id": "S097",
+          "locator": "1-2"
+        },
+        {
+          "source_id": "S100",
+          "locator": "1"
+        },
+        {
+          "source_id": "S117",
+          "locator": "9-14"
+        }
+      ],
+      "existing_game_ids": [
+        "math-compose-decompose",
+        "math-story-operations"
+      ],
+      "baseline_coverage": "已有基础待等价复核",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "十格盘/十根一捆到操作步骤和算式，接受合理不同策略",
+      "interaction_kinds": [
+        "construction",
+        "orderedPlacement"
+      ],
+      "difficulty_ladder": [
+        "看到十",
+        "拆分凑/破十",
+        "比较两种策略"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M2",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/math/make-break-ten.ts"
+    },
+    {
+      "id": "N06",
+      "slug": "quantity-stories",
+      "domain": "math",
+      "title": "情境加减与逆向数量关系",
+      "source_refs": [
+        {
+          "source_id": "S083",
+          "locator": "1"
+        },
+        {
+          "source_id": "S103",
+          "locator": "1-5"
+        },
+        {
+          "source_id": "S118",
+          "locator": "11-16"
+        },
+        {
+          "source_id": "S119",
+          "locator": "9-14"
+        }
+      ],
+      "existing_game_ids": [
+        "math-story-operations",
+        "math-compare-equalize"
+      ],
+      "baseline_coverage": "已有基础待等价复核",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "分清合并、增加、剩余、相差和已知结果求原量",
+      "interaction_kinds": [
+        "construction",
+        "singleChoice"
+      ],
+      "difficulty_ladder": [
+        "演示情境",
+        "选择关系",
+        "逆向求未知"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M2",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/math/quantity-stories.ts"
+    },
+    {
+      "id": "N07",
+      "slug": "group-share",
+      "domain": "math",
+      "title": "成组计数、等分与剩余",
+      "source_refs": [
+        {
+          "source_id": "S105",
+          "locator": "slide15"
+        },
+        {
+          "source_id": "S077",
+          "locator": "4"
+        },
+        {
+          "source_id": "S114",
+          "locator": "8-11"
+        },
+        {
+          "source_id": "S116",
+          "locator": "9-12"
+        }
+      ],
+      "existing_game_ids": [
+        "math-group-counting",
+        "math-fair-share"
+      ],
+      "baseline_coverage": "已有基础待等价复核",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "均分/按份分与连续成组，记录每份、份数及余量",
+      "interaction_kinds": [
+        "construction",
+        "gridPlacement"
+      ],
+      "difficulty_ladder": [
+        "逐个分",
+        "按组数",
+        "带剩余或资源限制"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M2",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/math/group-share.ts"
+    },
+    {
+      "id": "N08",
+      "slug": "area-fractions",
+      "domain": "math",
+      "title": "连续量等分与面积占比",
+      "source_refs": [
+        {
+          "source_id": "S105",
+          "locator": "slide5"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide24"
+        },
+        {
+          "source_id": "S113",
+          "locator": "9-11"
+        },
+        {
+          "source_id": "S107",
+          "locator": "10"
+        },
+        {
+          "source_id": "S074",
+          "locator": "81"
+        }
+      ],
+      "existing_game_ids": [
+        "math-fair-share"
+      ],
+      "baseline_coverage": "已有基础待等价复核",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "从分物转到等面积份额，不能以涂色块数代替面积比较",
+      "interaction_kinds": [
+        "construction",
+        "multiSelect"
+      ],
+      "difficulty_ladder": [
+        "同一整体等分",
+        "比较覆盖",
+        "改变分割仍解释"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M2",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/math/area-fractions.ts"
+    },
+    {
+      "id": "N09",
+      "slug": "ordinal-queue",
+      "domain": "math",
+      "title": "序数、排队与重叠计数",
+      "source_refs": [
+        {
+          "source_id": "S103",
+          "locator": "2-5"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide1"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide19"
+        },
+        {
+          "source_id": "S071",
+          "locator": "render5"
+        },
+        {
+          "source_id": "S109",
+          "locator": "7-9"
+        }
+      ],
+      "existing_game_ids": [
+        "math-counting-cardinality",
+        "logic-position-map"
+      ],
+      "baseline_coverage": "已有基础待等价复核",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "区分前面有几人和排第几，两端计数中本人只计一次",
+      "interaction_kinds": [
+        "orderedPlacement",
+        "singleChoice"
+      ],
+      "difficulty_ladder": [
+        "实际排队",
+        "双向序数",
+        "合并重叠信息"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M2",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/math/ordinal-queue.ts"
+    },
+    {
+      "id": "N10",
+      "slug": "parity-place-value",
+      "domain": "math",
+      "title": "单双、十与个位",
+      "source_refs": [
+        {
+          "source_id": "S100",
+          "locator": "1-4"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide19"
+        },
+        {
+          "source_id": "S070",
+          "locator": "29"
+        }
+      ],
+      "existing_game_ids": [
+        "math-group-counting",
+        "logic-number-pattern-trail"
+      ],
+      "baseline_coverage": "已有基础待等价复核",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "两两配对解释单双，数位与反复开关等迁移分开评价",
+      "interaction_kinds": [
+        "construction",
+        "singleChoice"
+      ],
+      "difficulty_ladder": [
+        "两两配对",
+        "数位观察",
+        "状态翻转迁移"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M2",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/math/parity-place-value.ts"
+    },
+    {
+      "id": "N11",
+      "slug": "number-sequences",
+      "domain": "math",
+      "title": "数列、交错规律与数表",
+      "source_refs": [
+        {
+          "source_id": "S100",
+          "locator": "3-4"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide4"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide21"
+        },
+        {
+          "source_id": "S067",
+          "locator": "39"
+        },
+        {
+          "source_id": "S067",
+          "locator": "41"
+        },
+        {
+          "source_id": "S067",
+          "locator": "57-64"
+        },
+        {
+          "source_id": "S120",
+          "locator": "32"
+        }
+      ],
+      "existing_game_ids": [
+        "logic-number-pattern-trail"
+      ],
+      "baseline_coverage": "已有基础待等价复核",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "从固定增减到交错/递增差，再与颜色容器属性独立变化",
+      "interaction_kinds": [
+        "orderedPlacement",
+        "gridPlacement"
+      ],
+      "difficulty_ladder": [
+        "单序列",
+        "交错分组",
+        "多属性联合验证"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M2",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/math/number-sequences.ts"
+    },
+    {
+      "id": "N12",
+      "slug": "symbol-equations",
+      "domain": "math",
+      "title": "等量替换与图形代数",
+      "source_refs": [
+        {
+          "source_id": "S105",
+          "locator": "slide6"
+        },
+        {
+          "source_id": "S071",
+          "locator": "render4-5"
+        },
+        {
+          "source_id": "S063",
+          "locator": "image-lower"
+        }
+      ],
+      "existing_game_ids": [
+        "logic-balance-swap"
+      ],
+      "baseline_coverage": "已有基础待等价复核",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "多条等式代换与回代，推理链长和数值范围分开控制",
+      "interaction_kinds": [
+        "construction",
+        "gridPlacement"
+      ],
+      "difficulty_ladder": [
+        "实物等量",
+        "两条关系",
+        "多步回代检验"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M2",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/math/symbol-equations.ts"
+    },
+    {
+      "id": "N13",
+      "slug": "money-shopping",
+      "domain": "math",
+      "title": "货币兑换、付款与找零",
+      "source_refs": [
+        {
+          "source_id": "S104",
+          "locator": "1-4"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide6"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide14"
+        },
+        {
+          "source_id": "S071",
+          "locator": "render9"
+        }
+      ],
+      "existing_game_ids": [],
+      "baseline_coverage": "新增",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "明确面额库存、恰付/付指定总额/找零目标，接受全部合法解",
+      "interaction_kinds": [
+        "construction",
+        "gridPlacement"
+      ],
+      "difficulty_ladder": [
+        "认识等值",
+        "购物补差",
+        "有限库存多种方案"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M2",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/math/money-shopping.ts"
+    },
+    {
+      "id": "N14",
+      "slug": "time-elapsed",
+      "domain": "math",
+      "title": "时刻、刻度与经过时间",
+      "source_refs": [
+        {
+          "source_id": "S105",
+          "locator": "slide16"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide24"
+        },
+        {
+          "source_id": "S071",
+          "locator": "render8"
+        }
+      ],
+      "existing_game_ids": [
+        "math-clock-time"
+      ],
+      "baseline_coverage": "已有基础待等价复核",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "从00/30分扩到五分钟刻度和简单跨整点经过时间，钟针同源",
+      "interaction_kinds": [
+        "construction",
+        "orderedPlacement"
+      ],
+      "difficulty_ladder": [
+        "看两根针",
+        "五分钟刻度",
+        "事件前后与经过时间"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M2",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/math/time-elapsed.ts"
+    },
+    {
+      "id": "N15",
+      "slug": "measurement-boundaries",
+      "domain": "math",
+      "title": "自然测量、长度、周长与量感",
+      "source_refs": [
+        {
+          "source_id": "S113",
+          "locator": "2-5"
+        },
+        {
+          "source_id": "S070",
+          "locator": "38"
+        },
+        {
+          "source_id": "S074",
+          "locator": "81"
+        }
+      ],
+      "existing_game_ids": [
+        "math-compare-equalize"
+      ],
+      "baseline_coverage": "已有基础待等价复核",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "用同单位/方格或学具比较长度，区分边界长度与覆盖面积，复杂几何计算只取规则改编",
+      "interaction_kinds": [
+        "construction",
+        "parentObservation"
+      ],
+      "difficulty_ladder": [
+        "实物直接比",
+        "统一单位测",
+        "解释不同表征与边界"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M2",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/math/measurement-boundaries.ts"
+    },
+    {
+      "id": "N16",
+      "slug": "calendar-cycles",
+      "domain": "math",
+      "title": "日历、星期与周期推算",
+      "source_refs": [
+        {
+          "source_id": "S070",
+          "locator": "29"
+        }
+      ],
+      "existing_game_ids": [],
+      "baseline_coverage": "新增",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "读取日历布局，按七天循环推算，月份天数与实际给定日历一致",
+      "interaction_kinds": [
+        "gridPlacement",
+        "singleChoice"
+      ],
+      "difficulty_ladder": [
+        "找日期",
+        "数同一星期",
+        "跨行与间隔推算"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M2",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/math/calendar-cycles.ts"
+    },
+    {
+      "id": "L01",
+      "slug": "multi-rule-classification",
+      "domain": "logic",
+      "title": "多角度分类与多选集合",
+      "source_refs": [
+        {
+          "source_id": "S099",
+          "locator": "3-5"
+        },
+        {
+          "source_id": "S002",
+          "locator": "4-5"
+        },
+        {
+          "source_id": "S120",
+          "locator": "12-14"
+        }
+      ],
+      "existing_game_ids": [
+        "logic-sorter-switch",
+        "logic-same-kind-detective"
+      ],
+      "baseline_coverage": "已有基础待等价复核",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "相同材料换规则分组，多选同类/异类并说明共同条件",
+      "interaction_kinds": [
+        "multiSelect",
+        "gridPlacement"
+      ],
+      "difficulty_ladder": [
+        "按一个特点",
+        "换分类角度",
+        "同时满足两条件"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M2",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/logic/multi-rule-classification.ts"
+    },
+    {
+      "id": "L02",
+      "slug": "relations-analogies",
+      "domain": "logic",
+      "title": "关系配对与类比",
+      "source_refs": [
+        {
+          "source_id": "S105",
+          "locator": "slide11"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide20"
+        },
+        {
+          "source_id": "S099",
+          "locator": "4"
+        }
+      ],
+      "existing_game_ids": [
+        "logic-relation-pairs"
+      ],
+      "baseline_coverage": "已有基础待等价复核",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "从物品用途配对进入整体部分、类别和关系迁移",
+      "interaction_kinds": [
+        "matching",
+        "singleChoice"
+      ],
+      "difficulty_ladder": [
+        "找关系",
+        "迁移到新对象",
+        "辨别只像外形的干扰"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M2",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/logic/relations-analogies.ts"
+    },
+    {
+      "id": "L03",
+      "slug": "transitive-order",
+      "domain": "logic",
+      "title": "传递关系、排序与证据不足",
+      "source_refs": [
+        {
+          "source_id": "S105",
+          "locator": "slide7-8"
+        },
+        {
+          "source_id": "S071",
+          "locator": "render8"
+        },
+        {
+          "source_id": "S019",
+          "locator": "16"
+        },
+        {
+          "source_id": "S019",
+          "locator": "18"
+        },
+        {
+          "source_id": "S111",
+          "locator": "2-4"
+        },
+        {
+          "source_id": "S112",
+          "locator": "2-4"
+        },
+        {
+          "source_id": "S115",
+          "locator": "8-10"
+        }
+      ],
+      "existing_game_ids": [
+        "logic-condition-detective",
+        "logic-order-plan"
+      ],
+      "baseline_coverage": "已有基础待等价复核",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "用多条快慢/高矮/轻重关系排顺序，不能确定时保留未知",
+      "interaction_kinds": [
+        "orderedPlacement",
+        "singleChoice"
+      ],
+      "difficulty_ladder": [
+        "两者比较",
+        "传递排序",
+        "部分顺序与不足信息"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M2",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/logic/transitive-order.ts"
+    },
+    {
+      "id": "L04",
+      "slug": "constraint-grid",
+      "domain": "logic",
+      "title": "多条件排除与填格",
+      "source_refs": [
+        {
+          "source_id": "S002",
+          "locator": "14-23"
+        },
+        {
+          "source_id": "S070",
+          "locator": "43"
+        },
+        {
+          "source_id": "S070",
+          "locator": "52"
+        },
+        {
+          "source_id": "S006",
+          "locator": "14-19"
+        },
+        {
+          "source_id": "S114",
+          "locator": "12-13"
+        }
+      ],
+      "existing_game_ids": [
+        "logic-condition-detective",
+        "logic-rule-filter",
+        "logic-matrix-puzzle"
+      ],
+      "baseline_coverage": "已有基础待等价复核",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "位置、行列、数量等约束同时成立，可撤销和找多解；双属性配表为前置，不等同全局约束求解",
+      "interaction_kinds": [
+        "gridPlacement",
+        "multiSelect"
+      ],
+      "difficulty_ladder": [
+        "给定一条件",
+        "交叉排除",
+        "补齐并逐条验算"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M2",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/logic/constraint-grid.ts"
+    },
+    {
+      "id": "L05",
+      "slug": "route-constraints",
+      "domain": "logic",
+      "title": "路线约束与一笔走边",
+      "source_refs": [
+        {
+          "source_id": "S070",
+          "locator": "54-55"
+        },
+        {
+          "source_id": "S074",
+          "locator": "12-14"
+        }
+      ],
+      "existing_game_ids": [
+        "logic-route-steps",
+        "logic-address-map"
+      ],
+      "baseline_coverage": "已有基础待等价复核",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "必经、禁入、相对左右和一笔走边；用边ID记录抬笔/重访，来源识别题改编为实际走边",
+      "interaction_kinds": [
+        "route",
+        "matching"
+      ],
+      "difficulty_ladder": [
+        "按指令走",
+        "自己规划",
+        "多条合法路线比较"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M2",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/logic/route-constraints.ts"
+    },
+    {
+      "id": "L06",
+      "slug": "planning-repair",
+      "domain": "logic",
+      "title": "多步计划、优先级与纠错",
+      "source_refs": [
+        {
+          "source_id": "S069",
+          "locator": "35"
+        },
+        {
+          "source_id": "S069",
+          "locator": "42"
+        },
+        {
+          "source_id": "S070",
+          "locator": "54-55"
+        }
+      ],
+      "existing_game_ids": [
+        "logic-order-plan",
+        "logic-fix-plan",
+        "logic-priority-choice"
+      ],
+      "baseline_coverage": "已有基础待等价复核",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "从故事先后与路线执行发展完整计划、依赖说明和修正步骤；完整计划为保留原能力目标的产品扩展",
+      "interaction_kinds": [
+        "orderedPlacement",
+        "parentObservation"
+      ],
+      "difficulty_ladder": [
+        "事件先后",
+        "步骤依赖",
+        "反例与修正"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M2",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/logic/planning-repair.ts"
+    },
+    {
+      "id": "L07",
+      "slug": "evidence-reasoning",
+      "domain": "logic",
+      "title": "条件证据与反向编线索",
+      "source_refs": [
+        {
+          "source_id": "S070",
+          "locator": "38"
+        },
+        {
+          "source_id": "S070",
+          "locator": "42"
+        },
+        {
+          "source_id": "S006",
+          "locator": "28-32"
+        }
+      ],
+      "existing_game_ids": [
+        "logic-story-evidence",
+        "logic-condition-detective"
+      ],
+      "baseline_coverage": "已有基础待等价复核",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "用足条件并指出排除依据，为确定目标编线索；区分来源确定性匹配与应用中的开放解释",
+      "interaction_kinds": [
+        "multiSelect",
+        "parentObservation"
+      ],
+      "difficulty_ladder": [
+        "指出线索",
+        "排除不符",
+        "比较解释与补充信息"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M2",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/logic/evidence-reasoning.ts"
+    },
+    {
+      "id": "L08",
+      "slug": "learn-rule-transfer",
+      "domain": "logic",
+      "title": "现场学规则与迁移",
+      "source_refs": [
+        {
+          "source_id": "S003",
+          "locator": "5-8"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide13-14"
+        },
+        {
+          "source_id": "S117",
+          "locator": "23-25"
+        }
+      ],
+      "existing_game_ids": [
+        "graphic-code-machine",
+        "logic-sorter-switch"
+      ],
+      "baseline_coverage": "已有基础待等价复核",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "先演示未知规则，再独立应用与反向推断，区分模仿和迁移",
+      "interaction_kinds": [
+        "orderedPlacement",
+        "gridPlacement"
+      ],
+      "difficulty_ladder": [
+        "操作示例",
+        "换材料应用",
+        "逆向或连续变换"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M2",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/logic/learn-rule-transfer.ts"
+    },
+    {
+      "id": "L09",
+      "slug": "toggle-state",
+      "domain": "logic",
+      "title": "状态翻转与操作结果",
+      "source_refs": [
+        {
+          "source_id": "S105",
+          "locator": "slide19"
+        },
+        {
+          "source_id": "S075",
+          "locator": "1"
+        }
+      ],
+      "existing_game_ids": [
+        "logic-stop-think"
+      ],
+      "baseline_coverage": "已有基础待等价复核",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "灯、黑白棋/格的开关翻转，先真实操作再归纳次数与结果",
+      "interaction_kinds": [
+        "construction",
+        "gridPlacement"
+      ],
+      "difficulty_ladder": [
+        "一次翻转",
+        "连续翻转",
+        "从目标倒推步骤"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M2",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/logic/toggle-state.ts"
+    },
+    {
+      "id": "L10",
+      "slug": "multi-agent-movement",
+      "domain": "logic",
+      "title": "步长规则、多角色移动与交会",
+      "source_refs": [
+        {
+          "source_id": "S119",
+          "locator": "6-8"
+        },
+        {
+          "source_id": "S119",
+          "locator": "24"
+        },
+        {
+          "source_id": "S106",
+          "locator": "10"
+        },
+        {
+          "source_id": "S106",
+          "locator": "15"
+        }
+      ],
+      "existing_game_ids": [
+        "logic-route-steps"
+      ],
+      "baseline_coverage": "已有基础待等价复核",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "按角色每步格数与轮次更新位置，解释相遇条件，不把原题误改为速度竞赛",
+      "interaction_kinds": [
+        "route",
+        "gridPlacement"
+      ],
+      "difficulty_ladder": [
+        "一个角色执行",
+        "不同步长",
+        "多角色交会与倒推"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M2",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/logic/multi-agent-movement.ts"
+    },
+    {
+      "id": "L11",
+      "slug": "board-strategy",
+      "domain": "logic",
+      "title": "棋盘排列、连珠与翻转策略",
+      "source_refs": [
+        {
+          "source_id": "S119",
+          "locator": "23"
+        },
+        {
+          "source_id": "S119",
+          "locator": "26-27"
+        },
+        {
+          "source_id": "S106",
+          "locator": "15"
+        }
+      ],
+      "existing_game_ids": [],
+      "baseline_coverage": "新增",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "行列/斜线规则、补一连线、选择翻转位置，区分规则有效与最优策略",
+      "interaction_kinds": [
+        "gridPlacement",
+        "construction"
+      ],
+      "difficulty_ladder": [
+        "识别有效排列",
+        "补一步达标",
+        "比较多个操作后果"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M2",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/logic/board-strategy.ts"
+    },
+    {
+      "id": "L12",
+      "slug": "bridge-networks",
+      "domain": "logic",
+      "title": "连桥网络、度数与全局连通",
+      "source_refs": [
+        {
+          "source_id": "S070",
+          "locator": "40"
+        },
+        {
+          "source_id": "S070",
+          "locator": "44"
+        }
+      ],
+      "existing_game_ids": [],
+      "baseline_coverage": "新增",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "每点桥数、水平垂直、至多双桥、不相交和整体连通同时成立；当前桥材料选择题不算此网络能力",
+      "interaction_kinds": [
+        "network",
+        "gridPlacement"
+      ],
+      "difficulty_ladder": [
+        "读现成桥计数",
+        "局部补桥",
+        "同时验证度数与连通"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M2",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/logic/bridge-networks.ts"
+    },
+    {
+      "id": "G01",
+      "slug": "visual-search-match",
+      "domain": "graphic",
+      "title": "观察匹配、局部整体与找差",
+      "source_refs": [
+        {
+          "source_id": "S099",
+          "locator": "3"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide12"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide22"
+        },
+        {
+          "source_id": "S113",
+          "locator": "14-17"
+        },
+        {
+          "source_id": "S115",
+          "locator": "37"
+        }
+      ],
+      "existing_game_ids": [
+        "logic-visual-match",
+        "logic-difference-detective",
+        "graphic-detail-whole"
+      ],
+      "baseline_coverage": "已有基础待等价复核",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "让孩子直接标证据，控制相似干扰与目标数量",
+      "interaction_kinds": [
+        "multiSelect",
+        "matching"
+      ],
+      "difficulty_ladder": [
+        "整体匹配",
+        "局部细节",
+        "多目标证据搜索"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M2",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/graphic/visual-search-match.ts"
+    },
+    {
+      "id": "G02",
+      "slug": "occlusion-texture",
+      "domain": "graphic",
+      "title": "遮挡、闭合与纹理补片",
+      "source_refs": [
+        {
+          "source_id": "S067",
+          "locator": "1-5"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide12"
+        }
+      ],
+      "existing_game_ids": [
+        "graphic-shadow-match",
+        "graphic-covered-restore",
+        "graphic-gap-close"
+      ],
+      "baseline_coverage": "已有基础待等价复核",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "辨认整体与对齐真实局部补片分开，方向尺度受控",
+      "interaction_kinds": [
+        "construction",
+        "singleChoice"
+      ],
+      "difficulty_ladder": [
+        "轮廓线索",
+        "遮挡补全",
+        "纹理/边界共同匹配"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M2",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/graphic/occlusion-texture.ts"
+    },
+    {
+      "id": "G03",
+      "slug": "feature-matrices",
+      "domain": "graphic",
+      "title": "多属性序列与行列矩阵",
+      "source_refs": [
+        {
+          "source_id": "S067",
+          "locator": "6-8"
+        },
+        {
+          "source_id": "S067",
+          "locator": "11"
+        },
+        {
+          "source_id": "S067",
+          "locator": "23-24"
+        },
+        {
+          "source_id": "S067",
+          "locator": "76"
+        },
+        {
+          "source_id": "S067",
+          "locator": "38"
+        },
+        {
+          "source_id": "S067",
+          "locator": "65"
+        },
+        {
+          "source_id": "S098",
+          "locator": "3-4"
+        }
+      ],
+      "existing_game_ids": [
+        "logic-matrix-puzzle"
+      ],
+      "baseline_coverage": "已有基础待等价复核",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "形状/颜色/方向独立变化的纯图形序列与矩阵，验证行列共同成立",
+      "interaction_kinds": [
+        "singleChoice",
+        "gridPlacement"
+      ],
+      "difficulty_ladder": [
+        "单属性",
+        "双属性",
+        "行列交叉约束"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M2",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/graphic/feature-matrices.ts"
+    },
+    {
+      "id": "G04",
+      "slug": "position-transform",
+      "domain": "graphic",
+      "title": "位置移动、循环与反弹",
+      "source_refs": [
+        {
+          "source_id": "S067",
+          "locator": "12-13"
+        },
+        {
+          "source_id": "S067",
+          "locator": "31"
+        },
+        {
+          "source_id": "S067",
+          "locator": "48"
+        },
+        {
+          "source_id": "S074",
+          "locator": "53-55"
+        },
+        {
+          "source_id": "S045",
+          "locator": "image-upper"
+        }
+      ],
+      "existing_game_ids": [
+        "logic-route-steps",
+        "logic-position-map"
+      ],
+      "baseline_coverage": "已有基础待等价复核",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "从序列发现位移规律，区分循环、反弹、静止与双标记移动",
+      "interaction_kinds": [
+        "orderedPlacement",
+        "gridPlacement"
+      ],
+      "difficulty_ladder": [
+        "一个标记",
+        "边界变化",
+        "两个标记独立移动"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M2",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/graphic/position-transform.ts"
+    },
+    {
+      "id": "G05",
+      "slug": "rotation-reflection",
+      "domain": "graphic",
+      "title": "旋转、镜像、缩放与方向性形变",
+      "source_refs": [
+        {
+          "source_id": "S067",
+          "locator": "79"
+        },
+        {
+          "source_id": "S074",
+          "locator": "59-62"
+        },
+        {
+          "source_id": "S071",
+          "locator": "render2"
+        },
+        {
+          "source_id": "S071",
+          "locator": "render6"
+        },
+        {
+          "source_id": "S116",
+          "locator": "23-25"
+        },
+        {
+          "source_id": "S118",
+          "locator": "25-27"
+        },
+        {
+          "source_id": "S120",
+          "locator": "24-26"
+        },
+        {
+          "source_id": "S019",
+          "locator": "6-7"
+        }
+      ],
+      "existing_game_ids": [
+        "logic-rotation-direction",
+        "logic-mirror-fold"
+      ],
+      "baseline_coverage": "已有基础待等价复核",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "非对称图形的位置、朝向、整体缩放与横/纵拉伸分别描述，用操作验证变换规则",
+      "interaction_kinds": [
+        "construction",
+        "singleChoice"
+      ],
+      "difficulty_ladder": [
+        "操作一次变换",
+        "预测形变方向",
+        "复合/局部变换与独立属性"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M2",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/graphic/rotation-reflection.ts"
+    },
+    {
+      "id": "G06",
+      "slug": "shape-set-operations",
+      "domain": "graphic",
+      "title": "叠合、求同、求异与减去",
+      "source_refs": [
+        {
+          "source_id": "S067",
+          "locator": "16-21"
+        },
+        {
+          "source_id": "S067",
+          "locator": "28-30"
+        },
+        {
+          "source_id": "S067",
+          "locator": "68-70"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide22"
+        },
+        {
+          "source_id": "S118",
+          "locator": "17-20"
+        }
+      ],
+      "existing_game_ids": [
+        "graphic-layer-overlap",
+        "logic-matrix-puzzle"
+      ],
+      "baseline_coverage": "已有基础待等价复核",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "布尔运算与遮挡顺序分开，透明学具操作后再归纳",
+      "interaction_kinds": [
+        "construction",
+        "gridPlacement"
+      ],
+      "difficulty_ladder": [
+        "实物叠放",
+        "给定运算",
+        "归纳并迁移"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M2",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/graphic/shape-set-operations.ts"
+    },
+    {
+      "id": "G07",
+      "slug": "recursive-composition",
+      "domain": "graphic",
+      "title": "图形金字塔与递归组合",
+      "source_refs": [
+        {
+          "source_id": "S067",
+          "locator": "81"
+        },
+        {
+          "source_id": "S067",
+          "locator": "84"
+        },
+        {
+          "source_id": "S074",
+          "locator": "75"
+        },
+        {
+          "source_id": "S074",
+          "locator": "78"
+        }
+      ],
+      "existing_game_ids": [],
+      "baseline_coverage": "新增",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "每层结果可验证，分开规则复杂度与需要记住的中间结果",
+      "interaction_kinds": [
+        "gridPlacement",
+        "construction"
+      ],
+      "difficulty_ladder": [
+        "两图合一",
+        "两层递推",
+        "三层组合检验"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M2",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/graphic/recursive-composition.ts"
+    },
+    {
+      "id": "G08",
+      "slug": "symbolic-color-rules",
+      "domain": "graphic",
+      "title": "黑白与颜色编码运算",
+      "source_refs": [
+        {
+          "source_id": "S067",
+          "locator": "33"
+        },
+        {
+          "source_id": "S067",
+          "locator": "82-85"
+        },
+        {
+          "source_id": "S074",
+          "locator": "75"
+        },
+        {
+          "source_id": "S074",
+          "locator": "78"
+        }
+      ],
+      "existing_game_ids": [],
+      "baseline_coverage": "新增",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "先给明确运算例子，空白/白色/未填独立，复杂内外圈规则分级",
+      "interaction_kinds": [
+        "gridPlacement",
+        "singleChoice"
+      ],
+      "difficulty_ladder": [
+        "一条颜色规则",
+        "两格应用",
+        "组合规则验证"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M2",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/graphic/symbolic-color-rules.ts"
+    },
+    {
+      "id": "G09",
+      "slug": "geometric-counts",
+      "domain": "graphic",
+      "title": "点、线、边、角、面与连通部分",
+      "source_refs": [
+        {
+          "source_id": "S074",
+          "locator": "18-20"
+        },
+        {
+          "source_id": "S074",
+          "locator": "25"
+        },
+        {
+          "source_id": "S074",
+          "locator": "28"
+        },
+        {
+          "source_id": "S074",
+          "locator": "31"
+        },
+        {
+          "source_id": "S074",
+          "locator": "34"
+        },
+        {
+          "source_id": "S074",
+          "locator": "39-41"
+        },
+        {
+          "source_id": "S067",
+          "locator": "14"
+        },
+        {
+          "source_id": "S074",
+          "locator": "78-lower"
+        },
+        {
+          "source_id": "S072",
+          "locator": "1"
+        },
+        {
+          "source_id": "S120",
+          "locator": "33-colored-small-triangles"
+        }
+      ],
+      "existing_game_ids": [
+        "math-counting-cardinality"
+      ],
+      "baseline_coverage": "已有基础待等价复核",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "明确计数单位，可标记证据，组合图形不重不漏；S120 p33仅支持规律着色后数小三角，不作为数全部大小三角的依据",
+      "interaction_kinds": [
+        "multiSelect",
+        "singleChoice"
+      ],
+      "difficulty_ladder": [
+        "清楚基本单位",
+        "分组计数",
+        "重叠组合中的系统计数"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M2",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/graphic/geometric-counts.ts"
+    },
+    {
+      "id": "G10",
+      "slug": "symmetry-axes",
+      "domain": "graphic",
+      "title": "对称轴与对称关系",
+      "source_refs": [
+        {
+          "source_id": "S076",
+          "locator": "3"
+        },
+        {
+          "source_id": "S074",
+          "locator": "4"
+        },
+        {
+          "source_id": "S074",
+          "locator": "7-8"
+        }
+      ],
+      "existing_game_ids": [
+        "logic-mirror-fold"
+      ],
+      "baseline_coverage": "已有基础待等价复核",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "用折叠或镜面验证，比较轴位置/数量并解释不对称处",
+      "interaction_kinds": [
+        "construction",
+        "multiSelect"
+      ],
+      "difficulty_ladder": [
+        "一轴验证",
+        "找不同轴",
+        "组合图形验证"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M2",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/graphic/symmetry-axes.ts"
+    },
+    {
+      "id": "G11",
+      "slug": "topology-relations",
+      "domain": "graphic",
+      "title": "开闭、曲直、接触、交叉与内外",
+      "source_refs": [
+        {
+          "source_id": "S074",
+          "locator": "31"
+        },
+        {
+          "source_id": "S074",
+          "locator": "46"
+        },
+        {
+          "source_id": "S074",
+          "locator": "51"
+        },
+        {
+          "source_id": "S072",
+          "locator": "1"
+        }
+      ],
+      "existing_game_ids": [
+        "logic-position-map",
+        "graphic-gap-close"
+      ],
+      "baseline_coverage": "已有基础待等价复核",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "直接标出开口/接触点等证据，图线精度不能改变语义",
+      "interaction_kinds": [
+        "multiSelect",
+        "matching"
+      ],
+      "difficulty_ladder": [
+        "单个关系",
+        "关系分类",
+        "多对象关系组合"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M2",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/graphic/topology-relations.ts"
+    },
+    {
+      "id": "G12",
+      "slug": "marker-invariants",
+      "domain": "graphic",
+      "title": "功能标记与不变量",
+      "source_refs": [
+        {
+          "source_id": "S074",
+          "locator": "51"
+        },
+        {
+          "source_id": "S075",
+          "locator": "1"
+        }
+      ],
+      "existing_game_ids": [],
+      "baseline_coverage": "新增",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "理解标记与边角/区域的关系，而非只跟踪标记颜色位置",
+      "interaction_kinds": [
+        "singleChoice",
+        "gridPlacement"
+      ],
+      "difficulty_ladder": [
+        "标明作用",
+        "换图找同关系",
+        "存在干扰仍保持规则"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M2",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/graphic/marker-invariants.ts"
+    },
+    {
+      "id": "G13",
+      "slug": "symbol-codes",
+      "domain": "graphic",
+      "title": "符号编码与多位对应",
+      "source_refs": [
+        {
+          "source_id": "S028",
+          "locator": "image-lower"
+        },
+        {
+          "source_id": "S044",
+          "locator": "image-upper"
+        },
+        {
+          "source_id": "S050",
+          "locator": "image-lower"
+        }
+      ],
+      "existing_game_ids": [
+        "graphic-code-machine"
+      ],
+      "baseline_coverage": "已有基础待等价复核",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "从单图查表到多位编码和反向对应，重复符号须一致",
+      "interaction_kinds": [
+        "matching",
+        "orderedPlacement"
+      ],
+      "difficulty_ladder": [
+        "一一对应",
+        "多位序列",
+        "逆向/连续编码"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M2",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/graphic/symbol-codes.ts"
+    },
+    {
+      "id": "G14",
+      "slug": "shape-assembly",
+      "domain": "graphic",
+      "title": "平面与立体拼搭、分割、缺件与多解构形",
+      "source_refs": [
+        {
+          "source_id": "S077",
+          "locator": "4"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide11-12"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide21"
+        },
+        {
+          "source_id": "S074",
+          "locator": "99"
+        },
+        {
+          "source_id": "S074",
+          "locator": "101-q29-30"
+        },
+        {
+          "source_id": "S111",
+          "locator": "14-17"
+        },
+        {
+          "source_id": "S116",
+          "locator": "15-18"
+        }
+      ],
+      "existing_game_ids": [
+        "logic-part-whole-puzzle",
+        "logic-space-bridge"
+      ],
+      "baseline_coverage": "已有基础待等价复核",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "用真实平面/立体部件组合，验证方向、覆盖、补块和多种合法拼法",
+      "interaction_kinds": [
+        "construction",
+        "multiSelect"
+      ],
+      "difficulty_ladder": [
+        "两块拼合",
+        "旋转找缺件",
+        "有限部件多方案"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M2",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/graphic/shape-assembly.ts"
+    },
+    {
+      "id": "G15",
+      "slug": "fold-cut",
+      "domain": "graphic",
+      "title": "折纸、剪孔、展开与逆向折痕",
+      "source_refs": [
+        {
+          "source_id": "S076",
+          "locator": "3"
+        },
+        {
+          "source_id": "S071",
+          "locator": "render1"
+        },
+        {
+          "source_id": "S115",
+          "locator": "20-23"
+        },
+        {
+          "source_id": "S117",
+          "locator": "17-19"
+        },
+        {
+          "source_id": "S120",
+          "locator": "17-18"
+        }
+      ],
+      "existing_game_ids": [
+        "logic-mirror-fold"
+      ],
+      "baseline_coverage": "已有基础待等价复核",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "从实物一次折叠到展开预测，明确折线、剪口和方向",
+      "interaction_kinds": [
+        "construction",
+        "parentObservation"
+      ],
+      "difficulty_ladder": [
+        "实物折一次",
+        "预测展开",
+        "由结果倒推简单折剪"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M2",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/graphic/fold-cut.ts"
+    },
+    {
+      "id": "G16",
+      "slug": "solid-views-count",
+      "domain": "graphic",
+      "title": "立体分类、隐藏块与三视图",
+      "source_refs": [
+        {
+          "source_id": "S077",
+          "locator": "1-5"
+        },
+        {
+          "source_id": "S074",
+          "locator": "94"
+        },
+        {
+          "source_id": "S074",
+          "locator": "101-q27"
+        },
+        {
+          "source_id": "S112",
+          "locator": "14-17"
+        },
+        {
+          "source_id": "S115",
+          "locator": "11-13"
+        },
+        {
+          "source_id": "S116",
+          "locator": "6-8"
+        }
+      ],
+      "existing_game_ids": [
+        "logic-block-height-map",
+        "logic-three-view-blocks"
+      ],
+      "baseline_coverage": "已有基础待等价复核",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "体素/实体模型统一生成视图和遮挡计数，不能把高度表当三维观察",
+      "interaction_kinds": [
+        "construction",
+        "multiSelect"
+      ],
+      "difficulty_ladder": [
+        "实物分类搭建",
+        "看见与隐藏",
+        "多视图交叉还原"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M2",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/graphic/solid-views-count.ts"
+    },
+    {
+      "id": "G17",
+      "slug": "relative-perspective",
+      "domain": "graphic",
+      "title": "相对左右与观察者视角",
+      "source_refs": [
+        {
+          "source_id": "S076",
+          "locator": "3"
+        },
+        {
+          "source_id": "S071",
+          "locator": "render6"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide10"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide25"
+        },
+        {
+          "source_id": "S070",
+          "locator": "52"
+        },
+        {
+          "source_id": "S070",
+          "locator": "54-55"
+        }
+      ],
+      "existing_game_ids": [
+        "logic-position-map",
+        "logic-address-map",
+        "logic-three-view-blocks"
+      ],
+      "baseline_coverage": "已有基础待等价复核",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "人物面向、观察者位置与画面左右分别描述，换位后重新推断",
+      "interaction_kinds": [
+        "construction",
+        "singleChoice"
+      ],
+      "difficulty_ladder": [
+        "以自己为参照",
+        "换观察者",
+        "多视角同一场景"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M2",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/graphic/relative-perspective.ts"
+    },
+    {
+      "id": "G18",
+      "slug": "cube-nets",
+      "domain": "graphic",
+      "title": "立方体展开、相邻面与相对面",
+      "source_refs": [
+        {
+          "source_id": "S074",
+          "locator": "87"
+        },
+        {
+          "source_id": "S073",
+          "locator": "86"
+        },
+        {
+          "source_id": "S117",
+          "locator": "15-16"
+        }
+      ],
+      "existing_game_ids": [],
+      "baseline_coverage": "新增",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "用折盒验证少量面标记，再做相邻/相对关系推断",
+      "interaction_kinds": [
+        "construction",
+        "singleChoice"
+      ],
+      "difficulty_ladder": [
+        "实物展开",
+        "折回预测",
+        "面关系交叉验证"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M2",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/graphic/cube-nets.ts"
+    },
+    {
+      "id": "G19",
+      "slug": "grid-copy-reconstruction",
+      "domain": "graphic",
+      "title": "点阵、方格临摹与空间重建",
+      "source_refs": [
+        {
+          "source_id": "S114",
+          "locator": "14-17"
+        },
+        {
+          "source_id": "S115",
+          "locator": "38"
+        },
+        {
+          "source_id": "S109",
+          "locator": "9"
+        },
+        {
+          "source_id": "S110",
+          "locator": "5-7"
+        }
+      ],
+      "existing_game_ids": [],
+      "baseline_coverage": "新增",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "用格位/线段重现形状和相对位置，常显模型复制与隐藏后记忆分别标记",
+      "interaction_kinds": [
+        "construction",
+        "gridPlacement"
+      ],
+      "difficulty_ladder": [
+        "少量点线",
+        "格位对应",
+        "改变参照仍保持结构"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M2",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/graphic/grid-copy-reconstruction.ts"
+    },
+    {
+      "id": "G20",
+      "slug": "layer-order-planning",
+      "domain": "graphic",
+      "title": "透明叠层、遮挡关系与顺序计划",
+      "source_refs": [
+        {
+          "source_id": "S070",
+          "locator": "58"
+        },
+        {
+          "source_id": "S070",
+          "locator": "62"
+        }
+      ],
+      "existing_game_ids": [
+        "graphic-layer-overlap",
+        "logic-order-plan"
+      ],
+      "baseline_coverage": "已有基础待等价复核",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "推断2到4层的先后并实际排列验证，透明叠层与求同/求异布尔运算分开",
+      "interaction_kinds": [
+        "orderedPlacement",
+        "construction"
+      ],
+      "difficulty_ladder": [
+        "两层比较",
+        "多层排序",
+        "局部遮挡证据反推"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M2",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/graphic/layer-order-planning.ts"
+    },
+    {
+      "id": "A01",
+      "slug": "visual-set-memory",
+      "domain": "memory",
+      "title": "视觉集合记忆与新旧辨认",
+      "source_refs": [
+        {
+          "source_id": "S002",
+          "locator": "6-9"
+        },
+        {
+          "source_id": "S101",
+          "locator": "1-3"
+        }
+      ],
+      "existing_game_ids": [
+        "logic-memory-camera"
+      ],
+      "baseline_coverage": "已有基础待等价复核",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "隐藏后从混合池多选出现/未出现项目，数量和相似干扰独立控制",
+      "interaction_kinds": [
+        "multiSelect"
+      ],
+      "difficulty_ladder": [
+        "少量易辨",
+        "相似干扰",
+        "集合变化与解释"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M3",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/memory/visual-set-memory.ts"
+    },
+    {
+      "id": "A02",
+      "slug": "spatial-memory",
+      "domain": "memory",
+      "title": "位置记忆与图案回填",
+      "source_refs": [
+        {
+          "source_id": "S002",
+          "locator": "10-13"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide7"
+        },
+        {
+          "source_id": "S071",
+          "locator": "render9-11"
+        },
+        {
+          "source_id": "S115",
+          "locator": "31-32"
+        },
+        {
+          "source_id": "S118",
+          "locator": "28-29"
+        }
+      ],
+      "existing_game_ids": [
+        "logic-memory-camera",
+        "logic-position-map"
+      ],
+      "baseline_coverage": "已有基础待等价复核",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "回忆位置而非只认出对象；空白格是合法记忆信息",
+      "interaction_kinds": [
+        "gridPlacement"
+      ],
+      "difficulty_ladder": [
+        "少槽位",
+        "位置与对象",
+        "规则辅助记忆"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M3",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/memory/spatial-memory.ts"
+    },
+    {
+      "id": "A03",
+      "slug": "sequence-memory",
+      "domain": "memory",
+      "title": "顺序、逆序和重复符号记忆",
+      "source_refs": [
+        {
+          "source_id": "S005",
+          "locator": "29"
+        },
+        {
+          "source_id": "S101",
+          "locator": "3"
+        },
+        {
+          "source_id": "S102",
+          "locator": "3"
+        }
+      ],
+      "existing_game_ids": [
+        "logic-memory-camera"
+      ],
+      "baseline_coverage": "已有基础待等价复核",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "按序重现，重复候选可复用；逆序单独作为操作要求",
+      "interaction_kinds": [
+        "orderedPlacement"
+      ],
+      "difficulty_ladder": [
+        "短序列",
+        "重复/干扰",
+        "逆序或变换后回忆"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M3",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/memory/sequence-memory.ts"
+    },
+    {
+      "id": "A04",
+      "slug": "auditory-instructions",
+      "domain": "memory",
+      "title": "听觉记忆与复合指令",
+      "source_refs": [
+        {
+          "source_id": "S102",
+          "locator": "1-4"
+        },
+        {
+          "source_id": "S071",
+          "locator": "render16-18"
+        },
+        {
+          "source_id": "S109",
+          "locator": "33"
+        },
+        {
+          "source_id": "S114",
+          "locator": "30"
+        },
+        {
+          "source_id": "S115",
+          "locator": "28-30"
+        },
+        {
+          "source_id": "S117",
+          "locator": "32"
+        },
+        {
+          "source_id": "S120",
+          "locator": "30-31"
+        }
+      ],
+      "existing_game_ids": [
+        "logic-route-steps"
+      ],
+      "baseline_coverage": "已有基础待等价复核",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "信息通过音频给出，按阶段撤去线索；动作次序与位置关系联合验证",
+      "interaction_kinds": [
+        "orderedPlacement",
+        "gridPlacement"
+      ],
+      "difficulty_ladder": [
+        "一步指令",
+        "多步顺序",
+        "关系与顺序合并"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M3",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/memory/auditory-instructions.ts"
+    },
+    {
+      "id": "A05",
+      "slug": "story-recall",
+      "domain": "memory",
+      "title": "故事记忆、细节与复述",
+      "source_refs": [
+        {
+          "source_id": "S102",
+          "locator": "3-4"
+        },
+        {
+          "source_id": "S003",
+          "locator": "2-3"
+        },
+        {
+          "source_id": "S003",
+          "locator": "7"
+        },
+        {
+          "source_id": "S111",
+          "locator": "18-23"
+        },
+        {
+          "source_id": "S113",
+          "locator": "18-21"
+        },
+        {
+          "source_id": "S116",
+          "locator": "19-22"
+        }
+      ],
+      "existing_game_ids": [
+        "logic-story-evidence"
+      ],
+      "baseline_coverage": "已有基础待等价复核",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "听后回答事实并复述，事实记忆与因果推理分开记录",
+      "interaction_kinds": [
+        "singleChoice",
+        "parentObservation"
+      ],
+      "difficulty_ladder": [
+        "抓人物事件",
+        "还原顺序",
+        "关键细节与因果"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M3",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/memory/story-recall.ts"
+    },
+    {
+      "id": "A06",
+      "slug": "attention-search",
+      "domain": "memory",
+      "title": "视觉搜索、划消与持续注意",
+      "source_refs": [
+        {
+          "source_id": "S109",
+          "locator": "34"
+        },
+        {
+          "source_id": "S110",
+          "locator": "32"
+        },
+        {
+          "source_id": "S099",
+          "locator": "3"
+        },
+        {
+          "source_id": "S119",
+          "locator": "31-32"
+        }
+      ],
+      "existing_game_ids": [
+        "logic-visual-match",
+        "logic-difference-detective"
+      ],
+      "baseline_coverage": "已有基础待等价复核",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "指定目标直接标记，持续注意不等同辨认难度，默认不强制竞速",
+      "interaction_kinds": [
+        "multiSelect"
+      ],
+      "difficulty_ladder": [
+        "少量目标",
+        "相似干扰",
+        "换规则搜索"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M3",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/memory/attention-search.ts"
+    },
+    {
+      "id": "A07",
+      "slug": "inhibition-switch",
+      "domain": "memory",
+      "title": "抑制、规则切换与工作记忆",
+      "source_refs": [
+        {
+          "source_id": "S110",
+          "locator": "30-31"
+        },
+        {
+          "source_id": "S003",
+          "locator": "5"
+        },
+        {
+          "source_id": "S003",
+          "locator": "7-8"
+        }
+      ],
+      "existing_game_ids": [
+        "logic-stop-think",
+        "logic-sorter-switch"
+      ],
+      "baseline_coverage": "已有基础待等价复核",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "先记规则再行动/暂停，记录提示，亲子动作不伪自动识别",
+      "interaction_kinds": [
+        "multiSelect",
+        "parentObservation"
+      ],
+      "difficulty_ladder": [
+        "单规则",
+        "规则切换",
+        "听取后保持并执行"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M3",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/memory/inhibition-switch.ts"
+    },
+    {
+      "id": "A08",
+      "slug": "sound-rhythm",
+      "domain": "memory",
+      "title": "声音辨别、音色与节奏顺序",
+      "source_refs": [
+        {
+          "source_id": "S105",
+          "locator": "slide19"
+        }
+      ],
+      "existing_game_ids": [],
+      "baseline_coverage": "新增",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "乐器听辨截图缺原音轨，需原创声音刺激与答案；区分语言音频和非语言声音",
+      "interaction_kinds": [
+        "singleChoice",
+        "orderedPlacement",
+        "parentObservation"
+      ],
+      "difficulty_ladder": [
+        "两种声音对照",
+        "声音序列",
+        "节奏模仿与解释"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M3",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/memory/sound-rhythm.ts"
+    },
+    {
+      "id": "A09",
+      "slug": "relational-quantity-memory",
+      "domain": "memory",
+      "title": "关联数量与结构记忆",
+      "source_refs": [
+        {
+          "source_id": "S116",
+          "locator": "26-27"
+        },
+        {
+          "source_id": "S120",
+          "locator": "27-28"
+        },
+        {
+          "source_id": "S118",
+          "locator": "28-29"
+        }
+      ],
+      "existing_game_ids": [
+        "logic-memory-camera"
+      ],
+      "baseline_coverage": "已有基础待等价复核",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "隐藏后恢复对象与数量/结构的关系，区分记忆出错与计算或空间技能不足",
+      "interaction_kinds": [
+        "matching",
+        "gridPlacement",
+        "construction"
+      ],
+      "difficulty_ladder": [
+        "对象与一个属性",
+        "数量/位置关系",
+        "结构重建与解释"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M3",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/memory/relational-quantity-memory.ts"
+    },
+    {
+      "id": "E01",
+      "slug": "vocabulary-relations",
+      "domain": "language",
+      "title": "动作词、反义词与词义关系",
+      "source_refs": [
+        {
+          "source_id": "S109",
+          "locator": "20-23"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide15"
+        },
+        {
+          "source_id": "S071",
+          "locator": "render19"
+        },
+        {
+          "source_id": "S117",
+          "locator": "20-22"
+        }
+      ],
+      "existing_game_ids": [
+        "logic-relation-pairs"
+      ],
+      "baseline_coverage": "已有基础待等价复核",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "语言关系与图形匹配分开，音频支持不识字孩子",
+      "interaction_kinds": [
+        "matching",
+        "parentObservation"
+      ],
+      "difficulty_ladder": [
+        "看图命名",
+        "关系对照",
+        "在情境中使用"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M3",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/language/vocabulary-relations.ts"
+    },
+    {
+      "id": "E02",
+      "slug": "describe-relations",
+      "domain": "language",
+      "title": "完整句、方位和比较表达",
+      "source_refs": [
+        {
+          "source_id": "S109",
+          "locator": "20-23"
+        },
+        {
+          "source_id": "S110",
+          "locator": "18-21"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide25"
+        }
+      ],
+      "existing_game_ids": [
+        "logic-position-map"
+      ],
+      "baseline_coverage": "已有基础待等价复核",
+      "implementation_status": "planned",
+      "decision": "parentActivity",
+      "target": "孩子自己说清对象、位置和关系；家长按意义核对",
+      "interaction_kinds": [
+        "parentObservation"
+      ],
+      "difficulty_ladder": [
+        "观察描述",
+        "换参照描述",
+        "解释依据"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "亲子观察与操作",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": "以三个不同条件的活动方案和家长观察要点验收，不强制形成三阶自动判分题。",
+      "batch": "M3",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/language/describe-relations.ts"
+    },
+    {
+      "id": "E03",
+      "slug": "story-sequence-expression",
+      "domain": "language",
+      "title": "故事排序、因果和复述",
+      "source_refs": [
+        {
+          "source_id": "S109",
+          "locator": "20-23"
+        },
+        {
+          "source_id": "S110",
+          "locator": "18-21"
+        },
+        {
+          "source_id": "S102",
+          "locator": "3"
+        },
+        {
+          "source_id": "S118",
+          "locator": "21-24"
+        },
+        {
+          "source_id": "S120",
+          "locator": "20-23"
+        },
+        {
+          "source_id": "S069",
+          "locator": "42"
+        }
+      ],
+      "existing_game_ids": [
+        "logic-order-plan",
+        "logic-story-evidence"
+      ],
+      "baseline_coverage": "已有基础待等价复核",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "排序后口述因果，开放表达有关键点而非固定标准句",
+      "interaction_kinds": [
+        "orderedPlacement",
+        "parentObservation"
+      ],
+      "difficulty_ladder": [
+        "两图先后",
+        "事件链",
+        "解释原因与不同结局"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M3",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/language/story-sequence-expression.ts"
+    },
+    {
+      "id": "E04",
+      "slug": "creative-explanation",
+      "domain": "language",
+      "title": "创编故事、比较方案与理由表达",
+      "source_refs": [
+        {
+          "source_id": "S109",
+          "locator": "20-23"
+        },
+        {
+          "source_id": "S110",
+          "locator": "18-21"
+        }
+      ],
+      "existing_game_ids": [
+        "logic-priority-choice",
+        "logic-fix-plan"
+      ],
+      "baseline_coverage": "已有基础待等价复核",
+      "implementation_status": "planned",
+      "decision": "parentActivity",
+      "target": "给可观察量规，接受合理不同叙事，不按一个答案打分",
+      "interaction_kinds": [
+        "parentObservation"
+      ],
+      "difficulty_ladder": [
+        "描述线索",
+        "给出理由",
+        "提出替代方案"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "亲子观察与操作",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": "以三个不同条件的活动方案和家长观察要点验收，不强制形成三阶自动判分题。",
+      "batch": "M3",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/language/creative-explanation.ts"
+    },
+    {
+      "id": "E05",
+      "slug": "character-phonics",
+      "domain": "language",
+      "title": "字形、拼音与词语对应",
+      "source_refs": [
+        {
+          "source_id": "S105",
+          "locator": "slide18"
+        },
+        {
+          "source_id": "S064",
+          "locator": "image"
+        }
+      ],
+      "existing_game_ids": [],
+      "baseline_coverage": "新增",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "识读是单独前置能力，纯视觉任务用几何改写，避免混测",
+      "interaction_kinds": [
+        "matching",
+        "multiSelect"
+      ],
+      "difficulty_ladder": [
+        "清楚字形",
+        "音形对应",
+        "情境词义辨别"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M3",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/language/character-phonics.ts"
+    },
+    {
+      "id": "E06",
+      "slug": "english-listening",
+      "domain": "language",
+      "title": "英语听辨与短句理解",
+      "source_refs": [
+        {
+          "source_id": "S071",
+          "locator": "render16-20"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide23-25"
+        }
+      ],
+      "existing_game_ids": [],
+      "baseline_coverage": "新增",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "缺失原声则原创重建，英语音色本地化，语言目标独立验收",
+      "interaction_kinds": [
+        "singleChoice",
+        "multiSelect"
+      ],
+      "difficulty_ladder": [
+        "词音辨认",
+        "短句对应",
+        "关系指令理解"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M3",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/language/english-listening.ts"
+    },
+    {
+      "id": "E07",
+      "slug": "bilingual-concepts",
+      "domain": "language",
+      "title": "英语中的数量、空间与比较表达",
+      "source_refs": [
+        {
+          "source_id": "S105",
+          "locator": "slide10-11"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide18"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide24-25"
+        }
+      ],
+      "existing_game_ids": [],
+      "baseline_coverage": "新增",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "区分概念不会与英语不理解；相同规则可有中文支持但分别记录",
+      "interaction_kinds": [
+        "singleChoice",
+        "gridPlacement"
+      ],
+      "difficulty_ladder": [
+        "词与图对应",
+        "关系短句",
+        "多信息理解"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M3",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/language/bilingual-concepts.ts"
+    },
+    {
+      "id": "E08",
+      "slug": "conversation-self-expression",
+      "domain": "language",
+      "title": "交流、听问与自我表达",
+      "source_refs": [
+        {
+          "source_id": "S003",
+          "locator": "1-3"
+        }
+      ],
+      "existing_game_ids": [],
+      "baseline_coverage": "新增",
+      "implementation_status": "planned",
+      "decision": "parentActivity",
+      "target": "亲子对话、说明喜好和回应追问，中文/英语目标分开，不采集不必要身份信息",
+      "interaction_kinds": [
+        "parentObservation"
+      ],
+      "difficulty_ladder": [
+        "听懂问题",
+        "完整回应",
+        "追问与补充说明"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "亲子观察与操作",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": "以三个不同条件的活动方案和家长观察要点验收，不强制形成三阶自动判分题。",
+      "batch": "M3",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/language/conversation-self-expression.ts"
+    },
+    {
+      "id": "P01",
+      "slug": "everyday-classification",
+      "domain": "life",
+      "title": "生活用品、功能、材料与场景分类",
+      "source_refs": [
+        {
+          "source_id": "S099",
+          "locator": "4-5"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide1"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide11"
+        },
+        {
+          "source_id": "S116",
+          "locator": "28-29"
+        }
+      ],
+      "existing_game_ids": [
+        "logic-relation-pairs",
+        "logic-rule-filter"
+      ],
+      "baseline_coverage": "已有基础待等价复核",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "按实际用途与材料证据分类，允许情境中合理的多归属",
+      "interaction_kinds": [
+        "matching",
+        "parentObservation"
+      ],
+      "difficulty_ladder": [
+        "观察用途",
+        "按规则整理",
+        "换场景解释"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M3",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/life/everyday-classification.ts"
+    },
+    {
+      "id": "P02",
+      "slug": "nature-growth",
+      "domain": "life",
+      "title": "自然观察、生物特征与成长顺序",
+      "source_refs": [
+        {
+          "source_id": "S071",
+          "locator": "render7"
+        },
+        {
+          "source_id": "S071",
+          "locator": "render20"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide3"
+        },
+        {
+          "source_id": "S109",
+          "locator": "30-32"
+        },
+        {
+          "source_id": "S112",
+          "locator": "26-28"
+        },
+        {
+          "source_id": "S115",
+          "locator": "33-35"
+        },
+        {
+          "source_id": "S117",
+          "locator": "29-31"
+        },
+        {
+          "source_id": "S119",
+          "locator": "29"
+        }
+      ],
+      "existing_game_ids": [
+        "logic-same-kind-detective",
+        "logic-order-plan"
+      ],
+      "baseline_coverage": "已有基础待等价复核",
+      "implementation_status": "planned",
+      "decision": "build",
+      "target": "分类依赖可见特征与明确知识前置，真实观察支撑记忆",
+      "interaction_kinds": [
+        "orderedPlacement",
+        "parentObservation"
+      ],
+      "difficulty_ladder": [
+        "观察特征",
+        "排列变化",
+        "解释关系"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "具体操作",
+          "target_variants": 3
+        },
+        {
+          "stage": "独立判断",
+          "target_variants": 3
+        },
+        {
+          "stage": "组合迁移",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": null,
+      "batch": "M3",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/life/nature-growth.ts"
+    },
+    {
+      "id": "P03",
+      "slug": "science-experiments",
+      "domain": "life",
+      "title": "生活科学：浮沉、颜色、影子与切面",
+      "source_refs": [
+        {
+          "source_id": "S105",
+          "locator": "slide1"
+        },
+        {
+          "source_id": "S099",
+          "locator": "1-2"
+        },
+        {
+          "source_id": "S071",
+          "locator": "render6"
+        },
+        {
+          "source_id": "S074",
+          "locator": "97"
+        },
+        {
+          "source_id": "S111",
+          "locator": "29-31"
+        },
+        {
+          "source_id": "S113",
+          "locator": "28-30"
+        },
+        {
+          "source_id": "S117",
+          "locator": "29-31"
+        }
+      ],
+      "existing_game_ids": [],
+      "baseline_coverage": "新增",
+      "implementation_status": "planned",
+      "decision": "parentActivity",
+      "target": "预测—操作—观察—解释；颜料混合与图形编码运算分别建模；简单实物切面体验纳入，复杂斜截面另列参考",
+      "interaction_kinds": [
+        "parentObservation"
+      ],
+      "difficulty_ladder": [
+        "提出预测",
+        "一次对照",
+        "改变条件再解释"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "亲子观察与操作",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": "以三个不同条件的活动方案和家长观察要点验收，不强制形成三阶自动判分题。",
+      "batch": "M3",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/life/science-experiments.ts"
+    },
+    {
+      "id": "P04",
+      "slug": "senses-social-rules",
+      "domain": "life",
+      "title": "感官、生活安全与社会情境",
+      "source_refs": [
+        {
+          "source_id": "S105",
+          "locator": "slide23"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide25"
+        },
+        {
+          "source_id": "S071",
+          "locator": "render14"
+        },
+        {
+          "source_id": "S110",
+          "locator": "27-29"
+        },
+        {
+          "source_id": "S114",
+          "locator": "27-29"
+        },
+        {
+          "source_id": "S118",
+          "locator": "30-31"
+        }
+      ],
+      "existing_game_ids": [],
+      "baseline_coverage": "新增",
+      "implementation_status": "planned",
+      "decision": "parentActivity",
+      "target": "基于具体情境讨论理由，旧分类规则先校核，不用偏见当答案",
+      "interaction_kinds": [
+        "parentObservation"
+      ],
+      "difficulty_ladder": [
+        "识别情境",
+        "说明选择",
+        "比较不同处理"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "亲子观察与操作",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": "以三个不同条件的活动方案和家长观察要点验收，不强制形成三阶自动判分题。",
+      "batch": "M3",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/life/senses-social-rules.ts"
+    },
+    {
+      "id": "P05",
+      "slug": "culture-world",
+      "domain": "life",
+      "title": "节日、文化与世界常识",
+      "source_refs": [
+        {
+          "source_id": "S105",
+          "locator": "slide3"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide17"
+        },
+        {
+          "source_id": "S071",
+          "locator": "render12-14"
+        }
+      ],
+      "existing_game_ids": [],
+      "baseline_coverage": "新增",
+      "implementation_status": "planned",
+      "decision": "parentActivity",
+      "target": "明确知识输入与思维目标，借图片和亲子阅读探究，不冒称知识量是智力",
+      "interaction_kinds": [
+        "parentObservation"
+      ],
+      "difficulty_ladder": [
+        "共同观察",
+        "寻找关系",
+        "联系生活讲述"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "亲子观察与操作",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": "以三个不同条件的活动方案和家长观察要点验收，不强制形成三阶自动判分题。",
+      "batch": "M3",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/life/culture-world.ts"
+    },
+    {
+      "id": "P06",
+      "slug": "fine-motor-action",
+      "domain": "life",
+      "title": "亲子动作、精细操作与协调",
+      "source_refs": [
+        {
+          "source_id": "S114",
+          "locator": "14-17"
+        },
+        {
+          "source_id": "S115",
+          "locator": "38"
+        },
+        {
+          "source_id": "S109",
+          "locator": "9"
+        },
+        {
+          "source_id": "S110",
+          "locator": "5-7"
+        },
+        {
+          "source_id": "S076",
+          "locator": "3"
+        },
+        {
+          "source_id": "S089",
+          "locator": "video"
+        },
+        {
+          "source_id": "S003",
+          "locator": "2"
+        },
+        {
+          "source_id": "S003",
+          "locator": "4-5"
+        },
+        {
+          "source_id": "S003",
+          "locator": "8"
+        }
+      ],
+      "existing_game_ids": [],
+      "baseline_coverage": "新增",
+      "implementation_status": "planned",
+      "decision": "parentActivity",
+      "target": "以真实手眼协调、剪纸、搭建和节律为观察目标；数字图案复制另归G19，不互相冒充能力完成；动作模仿、平衡与运送也分别观察",
+      "interaction_kinds": [
+        "parentObservation",
+        "construction"
+      ],
+      "difficulty_ladder": [
+        "模仿操作",
+        "遵循简单要求",
+        "解释并调整"
+      ],
+      "applicable_stages": [
+        {
+          "stage": "亲子观察与操作",
+          "target_variants": 3
+        }
+      ],
+      "exception_rationale": "以三个不同条件的活动方案和家长观察要点验收，不强制形成三阶自动判分题。",
+      "batch": "M3",
+      "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
+      "proposed_content_file": "src/curriculum/life/fine-motor-action.ts"
+    },
+    {
+      "id": "R01",
+      "slug": "advanced-exam-heuristics",
+      "domain": "reference",
+      "title": "成人式奇点公式与多重技巧口诀",
+      "source_refs": [
+        {
+          "source_id": "S074",
+          "locator": "12-14"
+        },
+        {
+          "source_id": "S075",
+          "locator": "1"
+        }
+      ],
+      "existing_game_ids": [],
+      "baseline_coverage": "新增",
+      "implementation_status": "reference-only",
+      "decision": "referenceOnly",
+      "target": "可操作的一笔走边归L05；本项仅记录不纳入默认训练的成人公式与多重技巧，原口诀不能直接当判定算法",
+      "interaction_kinds": [
+        "route"
+      ],
+      "difficulty_ladder": [
+        "先操作理解再判断是否有必要引入抽象"
+      ],
+      "applicable_stages": [],
+      "exception_rationale": "来源仅作规则或历史背景参考，不计为儿童必建活动；普通可迁移规则已在相应纳入题族规划。",
+      "batch": "reference",
+      "acceptance": "有明确处理理由，不计作已经实现或适龄证明",
+      "proposed_content_file": null
+    },
+    {
+      "id": "R02",
+      "slug": "advanced-sections",
+      "domain": "reference",
+      "title": "复杂截面、斜切与高密度立体题",
+      "source_refs": [
+        {
+          "source_id": "S074",
+          "locator": "97"
+        },
+        {
+          "source_id": "S073",
+          "locator": "96"
+        }
+      ],
+      "existing_game_ids": [],
+      "baseline_coverage": "新增",
+      "implementation_status": "reference-only",
+      "decision": "referenceOnly",
+      "target": "记录能力来源，先用具体切面体验；复杂斜截面需另做适龄论证",
+      "interaction_kinds": [
+        "parentObservation"
+      ],
+      "difficulty_ladder": [
+        "具体经验优先，复杂抽象暂不计入必建"
+      ],
+      "applicable_stages": [],
+      "exception_rationale": "来源仅作规则或历史背景参考，不计为儿童必建活动；普通可迁移规则已在相应纳入题族规划。",
+      "batch": "reference",
+      "acceptance": "有明确处理理由，不计作已经实现或适龄证明",
+      "proposed_content_file": null
+    },
+    {
+      "id": "R03",
+      "slug": "historical-admissions",
+      "domain": "reference",
+      "title": "历史招生攻略、宣传与学校归属",
+      "source_refs": [
+        {
+          "source_id": "S001",
+          "locator": "1-26"
+        },
+        {
+          "source_id": "S003",
+          "locator": "1-9"
+        }
+      ],
+      "existing_game_ids": [],
+      "baseline_coverage": "新增",
+      "implementation_status": "reference-only",
+      "decision": "referenceOnly",
+      "target": "只作来源背景，不作为当前招生要求、官方认证或能力效用证据",
+      "interaction_kinds": [
+        "none"
+      ],
+      "difficulty_ladder": [
+        "不进入儿童训练流程"
+      ],
+      "applicable_stages": [],
+      "exception_rationale": "来源仅作规则或历史背景参考，不计为儿童必建活动；普通可迁移规则已在相应纳入题族规划。",
+      "batch": "reference",
+      "acceptance": "有明确处理理由，不计作已经实现或适龄证明",
+      "proposed_content_file": null
+    }
+  ]
+}

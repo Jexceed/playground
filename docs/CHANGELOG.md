@@ -3,6 +3,32 @@
 All meaningful project changes should be recorded here. Keep entries factual and
 grouped by date.
 
+## 2026-09-22
+
+- Documented the confirmed single-app direction: preserve younger-child content
+  and progress, expand toward ages 6–8 through theme/ability/difficulty paths,
+  and avoid child-facing V1/V2 product separation.
+- Created Spec Kit feature 029 with a local-reference inventory, auditable
+  review records, skill-family coverage matrix, implementation plan, data and
+  interaction contracts, and staged execution tasks. The source collection
+  contains 121 files, including 56 PDFs / 1,301 physical pages; duplicate
+  screenshots and answer editions are tracked separately from unique problems.
+- Mapped 74 skill-family/disposition entries across six ability domains:
+  71 are planned curriculum or parent-child activities and three are explicit
+  reference boundaries. Generated 115 tasks, with only the four research/design
+  tasks complete. The 24-activity pilot does not close the remaining scope.
+- Expanded the project constitution to version 1.1.0 and aligned agent,
+  content-boundary, asset, and follow-up documentation. This is a design
+  milestone, not a claim that the new curriculum is implemented.
+- Verified the existing dev application with `pnpm build` and
+  `pnpm audit:curriculum`: 40 games, 489 rounds, zero curriculum problems.
+  No runtime content/assets changed, so the installed Mac app was not replaced.
+- Checked source IDs/paths/page bounds, 121 review records, all current-game
+  mappings, family-to-task coverage, local document links, task formatting and
+  whitespace with zero errors. See
+  `specs/029-curriculum-benchmark/evidence/design-validation.json` and
+  `docs/curriculum-benchmark.md` for the entry point.
+
 ## 2026-08-13
 
 - Rebuilt the Douyin mini game around a 1280×720 forced-landscape workbench
