@@ -2328,7 +2328,7 @@ button:focus-visible {
   }
 
   .side-panel {
-    grid-column: 1 / -1;
+    grid-column: 2;
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -2753,6 +2753,7 @@ button:focus-visible {
 
 /* Activities share the existing paper workbench and navigation. */
 .activity-game { padding: 6px 4px 4px; color: var(--ink); }
+.game-stage { scroll-margin-top: 16px; }
 .activity-game-heading { display:flex; align-items:center; justify-content:space-between; gap:16px; margin-bottom:14px; }
 .activity-game-heading .eyebrow { margin:0 0 6px; color:var(--leaf); font-size:12px; letter-spacing:.04em; }
 .activity-game h1 { margin:0; font-size:27px; line-height:1.2; }

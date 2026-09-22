@@ -100,6 +100,7 @@ export function App() {
     stopSpeech();
     setRequestedRoundIndex(index);
     setRoundReadRequestKey((current) => current + 1);
+    revealActiveQuestion();
   }
 
   function chooseWorld(worldId: WorldId) {
@@ -110,6 +111,7 @@ export function App() {
       setSelectedGameId(firstGame.id);
       setRequestedRoundIndex(0);
       requestRoundRead();
+      revealActiveQuestion();
     }
   }
 
@@ -118,6 +120,7 @@ export function App() {
     setSelectedGameId(gameId);
     setRequestedRoundIndex(0);
     requestRoundRead();
+    revealActiveQuestion();
   }
 
   if (showSplash) {
@@ -193,7 +196,7 @@ export function App() {
         </nav>
 
         <section className="game-column">
-          <article className="game-stage">
+          <article className="game-stage" tabIndex={-1} aria-label={selectedGame.title}>
             {selectedGame.kind === "activitySet" ? <Suspense fallback={<p className="muted">正在准备图卡…</p>}><ActivitySetGame
               key={selectedGame.id}
               game={selectedGame}
@@ -258,6 +261,18 @@ export function App() {
       </section>
     </main>
   );
+}
+
+function revealActiveQuestion() {
+  window.requestAnimationFrame(() => {
+    const stage = document.querySelector<HTMLElement>(".game-stage");
+    if (!stage) return;
+    const top = stage.getBoundingClientRect().top;
+    if (top < 0 || top > window.innerHeight / 2) {
+      stage.scrollIntoView({ block: "start" });
+      stage.focus({ preventScroll: true });
+    }
+  });
 }
 
 function LaunchSplash({ onEnter }: { onEnter: () => void }) {

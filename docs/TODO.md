@@ -6,7 +6,7 @@ small enough to turn into a Spec Kit feature.
 ## P0
 
 - After the Mac is manually unlocked, finish native-app acceptance and the
-  remaining viewport/memory lifecycle checks in
+  remaining native-focus memory lifecycle check in
   `specs/029-curriculum-benchmark/pilot-tasks.md`. The pilot is built and
   installed; do not count native UI verification as passed yet.
 

@@ -1,0 +1,41 @@
+{
+  "viewportChecks": [
+    {
+      "width": 1024,
+      "height": 700,
+      "navigationClick": true,
+      "stageTop": 16,
+      "horizontalOverflow": false
+    },
+    {
+      "width": 375,
+      "height": 812,
+      "placementCompleted": true,
+      "cardMinSize": [
+        62.19,
+        76
+      ],
+      "horizontalOverflow": false
+    }
+  ],
+  "automaticMemory": {
+    "phaseObserved": "observe",
+    "laterPhase": "respond",
+    "cueRemoved": true,
+    "timerVoice": {
+      "fallback": null,
+      "speech": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/activity-system-%E7%8E%B0%E5%9C%A8%E6%8A%8A%E8%AE%B0%E4%BD%8F%E7%9A%84%E5%9B%BE%E5%8D%A1%E6%91%86%E5%9B%9E%E6%9D%A5%E5%90%A7.mp3"
+    }
+  },
+  "retention": {
+    "cueCount": 0,
+    "phase": "retain",
+    "text": "···先在脑海里想一想。图卡已经藏起来了"
+  },
+  "revealRecorded": true,
+  "backgroundCheck": {
+    "status": "pending-native-focus",
+    "reason": "IAB tool page switch kept document.visibilityState visible and did not generate a blur/visibility transition"
+  },
+  "native": "Mac still locked"
+}

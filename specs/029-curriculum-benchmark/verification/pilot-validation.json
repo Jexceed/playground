@@ -21,8 +21,29 @@
     "voiceFallbacks": 0,
     "mouseDragVerified": true,
     "reloadStableIdAndCompletionVerified": true,
-    "narrowViewportCheck": "pending OS unlock",
-    "automaticMemoryTimerAndBackgroundUI": "pending OS unlock; reducer covered, manual observation/retention/recall verified"
+    "narrowViewportCheck": {
+      "status": "passed",
+      "viewports": [
+        [
+          1024,
+          700
+        ],
+        [
+          375,
+          812
+        ]
+      ],
+      "mobilePlacementCompleted": true,
+      "navigationOcclusionFixed": true,
+      "autoRevealQuestionVerified": true
+    },
+    "automaticMemoryTimerAndBackgroundUI": {
+      "automaticRecall": "passed",
+      "retentionCueCount": 0,
+      "revealEvidence": "passed",
+      "timerSpeechFallback": null,
+      "backgroundInterruption": "pending native focus; IAB page change did not emit visibility/blur"
+    }
   },
   "voice": {
     "count": 1958,
@@ -36,9 +57,9 @@
     "install": "passed",
     "installedPath": "/Applications/小小思考屋.app",
     "codesignVerify": "passed",
-    "installedExecutableSha256": "3e82fe9b97baa05df9462743661e16539043ad099a0fc1655072b1b68411301f",
-    "builtExecutableSha256": "3e82fe9b97baa05df9462743661e16539043ad099a0fc1655072b1b68411301f",
-    "gui": "pending: Mac locked; user unlock requested"
+    "installedExecutableSha256": "ba96252964f759ba5540e54e67d10d2e559ab1bda26fbb565bb3d3c6ea68b525",
+    "builtExecutableSha256": "ba96252964f759ba5540e54e67d10d2e559ab1bda26fbb565bb3d3c6ea68b525",
+    "gui": "pending: Mac locked again on second consecutive goal turn"
   },
   "goalComplete": false
 }

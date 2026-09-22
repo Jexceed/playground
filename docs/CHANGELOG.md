@@ -7,6 +7,12 @@ grouped by date.
 
 ### First playable increment
 
+- Fixed the two-column layout so the lower question navigator no longer sits
+  underneath the sticky world sidebar. Jumping to a question now reveals the
+  question surface when it is offscreen. Verified 1024×700 and 375×812 layouts
+  and completed a mobile-width placement task; automatic memory concealment,
+  retention and replay evidence also pass. Reinstalled the updated Mac bundle.
+
 - Implemented the first playable curriculum increment: 规则收纳盒、线索排排队、
   图形推理盘、记忆摆一摆, six original activities each. The same app now exposes
   44 groups / 513 rounds, retaining the exact original 40 groups / 489 rounds.
