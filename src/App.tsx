@@ -1,7 +1,9 @@
 import { Check, RotateCcw } from "lucide-react";
-import { useEffect, useMemo, useState } from "react";
-import { games, worlds } from "./data/games";
+import { lazy, Suspense, useEffect, useMemo, useState } from "react";
+import { catalogGames as games, activitySets, worlds } from "./curriculum/catalog";
 import { ProgressiveSetGame } from "./games/ProgressiveSetGame";
+import { clearActivityProgress, mergeActivityProgress, readActivityProgress, readCatalogLocation, saveCatalogLocation } from "./services/activity-progress";
+import type { CatalogGame } from "./domain/activity";
 import { publicAsset } from "./publicAsset";
 import { addCompletion, addRoundCompletion, readLastPlayLocation, readProgress, saveLastPlayLocation, saveProgress } from "./storage";
 import { speak, stopSpeech, warmVoiceManifest } from "./speech";
@@ -10,6 +12,7 @@ import type { GameConfig, GameRound, LastPlayLocation, ProgressLog, WorldId } fr
 const brandLogoSrc = "/images/brand/thinking-house-brand-v3.png";
 const launchBrandAudioSrc = "/audio/brand/launch-brand-shout.wav";
 const maxVisibleProgressTags = 12;
+const ActivitySetGame = lazy(() => import("./games/ActivitySetGame").then(module => ({ default: module.ActivitySetGame })));
 
 export function App() {
   const [initialPlayLocation] = useState(resolveInitialPlayLocation);
@@ -18,7 +21,9 @@ export function App() {
   const [selectedGameId, setSelectedGameId] = useState(initialPlayLocation.gameId);
   const [requestedRoundIndex, setRequestedRoundIndex] = useState(initialPlayLocation.roundIndex);
   const [roundReadRequestKey, setRoundReadRequestKey] = useState(0);
-  const [progress, setProgress] = useState<ProgressLog>(() => readProgress());
+  const [savedProgress, setProgress] = useState<ProgressLog>(() => readProgress());
+  const [activityProgress, setActivityProgress] = useState(() => readActivityProgress().progress);
+  const progress = useMemo(() => mergeActivityProgress(savedProgress, activitySets, activityProgress), [savedProgress, activityProgress]);
 
   useEffect(() => {
     warmVoiceManifest();
@@ -35,14 +40,17 @@ export function App() {
       setRequestedRoundIndex(roundIndex);
       return;
     }
-    saveLastPlayLocation({
-      worldId: selectedGame.world,
-      gameId: selectedGame.id,
-      roundIndex,
+    if (selectedGame.kind === "progressiveSet") {
+      saveLastPlayLocation({ worldId: selectedGame.world, gameId: selectedGame.id, roundIndex });
+    }
+    saveCatalogLocation({
+      schemaVersion: 1, worldId: selectedGame.world, gameId: selectedGame.id,
+      roundId: selectedGame.rounds[roundIndex].id,
     });
   }, [requestedRoundIndex, selectedGame]);
 
-  const visibleGames = games.filter((game) => game.world === activeWorld);
+  const visibleGames = games.filter((game) => game.world === activeWorld)
+    .sort((a, b) => Number(b.kind === "activitySet") - Number(a.kind === "activitySet"));
   const questionStats = useMemo(() => {
     const counts = Object.fromEntries(
       worlds.map((world) => [
@@ -56,12 +64,14 @@ export function App() {
     };
   }, []);
   const completed = progress.completedIds.includes(selectedGame.id);
+  const selectedActivity = selectedGame.kind === "activitySet" ? selectedGame.rounds[requestedRoundIndex] : undefined;
+  const activityEvidence = selectedActivity ? activityProgress.entries[`${selectedActivity.id}@${selectedActivity.revision}`] : undefined;
   const completedRoundSet = useMemo(() => new Set(progress.completedRoundIds), [progress.completedRoundIds]);
   const visibleProgressTags = progress.abilityTags.slice(0, maxVisibleProgressTags);
   const hiddenProgressTagCount = Math.max(0, progress.abilityTags.length - visibleProgressTags.length);
 
   function completeGame(game: GameConfig) {
-    const next = addCompletion(progress, game.id, game.abilityTags);
+    const next = addCompletion(savedProgress, game.id, game.abilityTags);
     setProgress(next);
     saveProgress(next);
     speak("完成啦。我们再想一想，为什么会这样？");
@@ -79,6 +89,7 @@ export function App() {
     const empty = { completedIds: [], completedRoundIds: [], abilityTags: [] };
     setProgress(empty);
     saveProgress(empty);
+    setActivityProgress(clearActivityProgress().progress);
   }
 
   function requestRoundRead() {
@@ -94,7 +105,7 @@ export function App() {
   function chooseWorld(worldId: WorldId) {
     stopSpeech();
     setActiveWorld(worldId);
-    const firstGame = games.find((game) => game.world === worldId);
+    const firstGame = activitySets.find((game) => game.world === worldId) ?? games.find((game) => game.world === worldId);
     if (firstGame) {
       setSelectedGameId(firstGame.id);
       setRequestedRoundIndex(0);
@@ -171,7 +182,7 @@ export function App() {
                   >
                     {progress.completedIds.includes(game.id) && <Check size={16} />}
                     <span>{game.title}</span>
-                    <small>{game.rounds.length} 题</small>
+                    <small>{game.kind === "activitySet" ? "动手 · " : ""}{game.rounds.length} 题</small>
                   </button>
                 ))
               ) : (
@@ -183,7 +194,16 @@ export function App() {
 
         <section className="game-column">
           <article className="game-stage">
-            <ProgressiveSetGame
+            {selectedGame.kind === "activitySet" ? <Suspense fallback={<p className="muted">正在准备图卡…</p>}><ActivitySetGame
+              key={selectedGame.id}
+              game={selectedGame}
+              requestedRoundIndex={requestedRoundIndex}
+              requestedRoundReadKey={roundReadRequestKey}
+              completedRoundIds={completedRoundSet}
+              onRoundIndexChange={setRequestedRoundIndex}
+              onProgressChange={setActivityProgress}
+              onComplete={() => void speak("完成啦。我们再想一想，为什么会这样？")}
+            /></Suspense> : <ProgressiveSetGame
               key={selectedGame.id}
               game={selectedGame}
               requestedRoundIndex={requestedRoundIndex}
@@ -191,7 +211,7 @@ export function App() {
               onComplete={() => completeGame(selectedGame)}
               onRoundIndexChange={setRequestedRoundIndex}
               onRoundComplete={completeRound}
-            />
+            />}
           </article>
         </section>
 
@@ -205,7 +225,13 @@ export function App() {
 
           <section className="prompt-panel">
             <p className="eyebrow">亲子提示卡</p>
-            <p>{selectedGame.parentPrompt}</p>
+            <p>{selectedGame.kind === "activitySet" ? selectedGame.rounds[requestedRoundIndex]?.parentPrompt : selectedGame.parentPrompt}</p>
+            {selectedGame.kind === "activitySet" && <p className="activity-parent-note">先让孩子自己试，再请他说说线索和理由。提示、重看和尝试会留下记录。</p>}
+            {activityEvidence && <div className="activity-evidence" aria-label="本题累计记录">
+              <strong>{activityEvidence.correctAttempts > 0 ? "这题做过了" : "正在尝试这道题"}</strong>
+              <span>累计尝试 {activityEvidence.attempts} 次</span>
+              <span>提示 {activityEvidence.hints} 次 · 重看 {activityEvidence.reveals} 次</span>
+            </div>}
           </section>
 
           <section className="progress-panel">
@@ -290,6 +316,12 @@ function LaunchSplash({ onEnter }: { onEnter: () => void }) {
 }
 
 function resolveInitialPlayLocation(): LastPlayLocation {
+  const stable = readCatalogLocation();
+  if (stable) {
+    const game = games.find(item => item.id === stable.gameId && item.world === stable.worldId);
+    const index = game?.rounds.findIndex(round => round.id === stable.roundId) ?? -1;
+    if (game && index >= 0) return { worldId: game.world, gameId: game.id, roundIndex: index };
+  }
   return normalizeLastPlayLocation(readLastPlayLocation());
 }
 
@@ -310,7 +342,7 @@ function normalizeLastPlayLocation(saved: LastPlayLocation | null): LastPlayLoca
   };
 }
 
-function clampRoundIndex(index: number, game: GameConfig) {
+function clampRoundIndex(index: number, game: CatalogGame) {
   return Math.min(Math.max(index, 0), Math.max(game.rounds.length - 1, 0));
 }
 
@@ -322,7 +354,7 @@ function RoundNavigator({
 }: {
   completedRoundIds: Set<string>;
   currentIndex: number;
-  rounds: GameRound[];
+  rounds: Pick<GameRound, "id">[];
   onJump: (index: number) => void;
 }) {
   const completedCount = rounds.filter((round) => completedRoundIds.has(round.id)).length;

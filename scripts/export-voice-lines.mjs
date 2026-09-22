@@ -1,19 +1,7 @@
-import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
-import ts from "typescript";
+import { mkdirSync, writeFileSync } from "node:fs";
+import { loadGameData } from "./lib/load-game-data.mjs";
 
-const imageGallerySource = readFileSync("src/data/imageGallery.ts", "utf8");
-const imageGalleryOutput = ts.transpileModule(imageGallerySource, {
-  compilerOptions: { module: ts.ModuleKind.ES2020, target: ts.ScriptTarget.ES2020 },
-}).outputText;
-const imageGalleryModuleUrl = `data:text/javascript;base64,${Buffer.from(imageGalleryOutput).toString("base64")}`;
-const { imageGallery } = await import(imageGalleryModuleUrl);
-
-const source = readFileSync("src/data/games.ts", "utf8");
-const output = ts.transpileModule(source, {
-  compilerOptions: { module: ts.ModuleKind.ES2020, target: ts.ScriptTarget.ES2020 },
-}).outputText.replace('import { imageGallery } from "./imageGallery";', `const imageGallery = ${JSON.stringify(imageGallery)};`);
-const moduleUrl = `data:text/javascript;base64,${Buffer.from(output.replace("../types", "data:text/javascript,export{}")).toString("base64")}`;
-const { games } = await import(moduleUrl);
+const { games, activitySets, activityVoiceLines } = await loadGameData();
 
 const tokenLabels = {
   "🍓": "草莓",
@@ -155,6 +143,8 @@ for (const game of games) {
     }
   }
 }
+
+for (const line of activityVoiceLines(activitySets)) add(line.kind, line.text, line.context);
 
 add("system", "完成啦。我们再想一想，为什么会这样？", "game-complete");
 

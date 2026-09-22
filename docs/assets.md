@@ -32,6 +32,10 @@ evidence. This document records the planned boundary, not new active audio.
   by 找规律火车 in both the sequence and answer choices.
 - `public/images/items/graphic-workshop/`: image-gen generated transparent
   sticker assets used by 图形工坊 `graphicChallenge` figures.
+- `public/images/items/thinking-symbols/`: ten deterministic 320×320 PNG
+  color/shape/blank cards for interactive activities. Their SVG sources live in
+  `source/`; regenerate with `pnpm generate:thinking-symbols`. All are
+  registered in `src/data/imageGallery.ts`.
 - `public/images/scenes/`: full scene images that carry question clues.
 
 Generated or source images belong in a `source/` child directory under the same

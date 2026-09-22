@@ -1,6 +1,6 @@
 # Activity Session Contract
 
-本契约是实施目标，非当前应用已支持的接口。字段详见 [data-model.md](../data-model.md)。
+本契约是完整实施目标。当前M1只实现pilot-scope.md中的多选、顺序/格位摆放、视觉记忆及相应记录，其余接口仍待建设。字段详见 [data-model.md](../data-model.md)。
 
 ## User Navigation
 

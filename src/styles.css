@@ -2750,3 +2750,116 @@ button:focus-visible {
     height: 30px;
   }
 }
+
+/* Activities share the existing paper workbench and navigation. */
+.activity-game { padding: 6px 4px 4px; color: var(--ink); }
+.activity-game-heading { display:flex; align-items:center; justify-content:space-between; gap:16px; margin-bottom:14px; }
+.activity-game-heading .eyebrow { margin:0 0 6px; color:var(--leaf); font-size:12px; letter-spacing:.04em; }
+.activity-game h1 { margin:0; font-size:27px; line-height:1.2; }
+.activity-listen { display:flex; align-items:center; gap:6px; padding:10px 14px; border:1px solid #c7dccf; border-radius:12px; color:#356e56; background:#eef6eb; font-weight:700; cursor:pointer; }
+.activity-question h2 { font-size:20px; margin:0 0 5px; }
+.activity-question p { color:#53616b; font-size:15px; line-height:1.7; margin:0 0 9px; }
+.activity-clues { list-style:none; padding:0; margin:8px 0 14px; display:flex; flex-wrap:wrap; gap:7px; }
+.activity-clues li { display:flex; align-items:center; gap:7px; padding:7px 10px; border:1px solid #e0d7c6; border-radius:10px; background:#faf4e7; font-size:14px; line-height:1.4; }
+.activity-clues li>span { display:grid; place-items:center; width:20px; height:20px; flex-shrink:0; background:#e7d5ab; border-radius:50%; font-size:11px; font-weight:800; }
+.activity-clues .clue-focus { border-color:#d9a54e; background:#fff0cb; }
+.activity-example { display:flex; align-items:center; justify-content:center; gap:12px; font-size:14px; padding:5px; margin-bottom:8px; background:#f5f1e9; border-radius:12px; }
+.activity-example .activity-token-image { width:47px; height:47px; }
+.activity-choice-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:10px; margin:16px auto; max-width:620px; }
+.activity-token { position:relative; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:5px; min-width:0; padding:10px 5px 8px; background:#fffdf8; border:2px solid #ded7ca; border-radius:15px; cursor:pointer; box-shadow:0 3px 0 #e7dfd0; touch-action:manipulation; }
+.activity-token:hover:not(:disabled) { border-color:#a4c4b0; }
+.activity-token.is-selected { border-color:#468a69; background:#eaf5e9; box-shadow:0 3px 0 #a9cbb3; }
+.activity-token.is-used:not(.is-selected) { background:#f0eee6; }
+.activity-token:disabled { cursor:default; opacity:1; }
+.activity-token:disabled:hover { transform:none; }
+.activity-token-image { width:76px; height:76px; max-width:100%; object-fit:contain; display:block; pointer-events:none; user-select:none; }
+.token-label { font-size:13px; line-height:1.3; font-weight:650; color:#43515b; text-align:center; }
+.token-check { position:absolute; top:6px; right:6px; background:#468a69; border-radius:50%; color:white; width:20px; height:20px; display:grid; place-items:center; }
+.activity-board { display:grid; grid-template-columns:repeat(var(--board-columns),minmax(0,1fr)); gap:8px; margin:12px auto; width:100%; }
+.activity-board.is-grid { max-width:310px; }
+.activity-board.is-order { max-width:630px; padding:15px 0; position:relative; }
+.activity-board.is-order::before { content:""; position:absolute; height:3px; background:#d8d4c7; left:4%; right:4%; top:50%; z-index:0; }
+.activity-slot { position:relative; min-width:0; min-height:81px; border:2px dashed #bdbbad; border-radius:12px; background:#f6f3e9; overflow:visible; z-index:1; }
+.activity-slot.is-filled { border-style:solid; border-color:#85b198; background:#eff7ed; }
+.activity-slot.is-fixed { border-style:solid; border-color:#dbd5c8; background:#f0ece1; }
+.slot-number { position:absolute; top:4px; left:7px; font-size:10px; color:#858678; font-weight:750; z-index:1; pointer-events:none; }
+.slot-target,.fixed-token { display:grid; place-items:center; padding:9px 4px 4px; width:100%; min-height:78px; background:none; border-radius:10px; }
+.slot-target { cursor:pointer; }
+.slot-target:disabled { cursor:default; }
+.slot-target:hover { transform:none; }
+.activity-slot .activity-token-image { width:65px; height:65px; }
+.slot-question { color:#aaa99b; font-size:29px; font-weight:700; }
+.slot-remove { position:absolute; right:-6px; top:-6px; display:grid; place-items:center; width:22px; height:22px; border-radius:50%; background:#fffdf7; border:1px solid #becbbd; color:#61756b; cursor:pointer; }
+.activity-token-tray { display:grid; grid-template-columns:repeat(var(--tray-columns),minmax(0,1fr)); gap:7px; margin:8px auto 12px; }
+.activity-token-tray .activity-token { padding:5px 3px 6px; border-radius:11px; }
+.activity-token-tray .activity-token,.slot-target { touch-action:none; user-select:none; }
+.activity-drag-preview { position:fixed; z-index:100; transform:translate(-50%,-60%); padding:8px; border-radius:14px; background:#fffdf0dd; border:2px solid #649574; box-shadow:0 7px 24px #344c3529; pointer-events:none; }
+.activity-token-tray .activity-token-image { width:49px; height:49px; }
+.activity-token-tray .token-label { font-size:11px; }
+.tray-instruction { color:#647164; text-align:center; font-size:12px; line-height:1.6; margin:10px 0 5px; min-height:20px; }
+.tray-instruction>span { display:inline-block; margin-left:8px; color:#80907e; }
+.activity-hint { display:flex; align-items:flex-start; gap:7px; margin:8px 0; padding:10px 12px; font-size:14px; line-height:1.65; background:#fff2d2; border-radius:10px; color:#806323; }
+.activity-hint svg { flex-shrink:0; margin-top:2px; }
+.activity-feedback { display:flex; align-items:center; gap:7px; min-height:44px; margin:7px 0; padding:8px 12px; border-radius:10px; font-size:14px; line-height:1.55; color:#7a705c; background:#f5f0e5; }
+.activity-feedback.is-correct { background:#e8f4e4; color:#347151; }
+.activity-feedback svg { flex-shrink:0; }
+.activity-actions { display:flex; align-items:center; justify-content:space-between; gap:10px; padding-top:5px; }
+.activity-primary,.activity-secondary { min-height:43px; padding:10px 17px; border-radius:11px; font-weight:750; cursor:pointer; }
+.activity-primary { color:white; background:#417d5f; box-shadow:0 3px 0 #2f5f47; }
+.activity-secondary { color:#516854; background:#edf1e5; border:1px solid #cdd4c3; }
+.activity-primary:disabled,.activity-secondary:disabled { opacity:.45; cursor:default; box-shadow:none; }
+.activity-tools { display:flex; gap:6px; flex-wrap:wrap; }
+.activity-tools button { display:flex; align-items:center; justify-content:center; gap:4px; min-height:35px; padding:7px 9px; font-size:12px; background:#f3efe5; border:1px solid #ded6c7; border-radius:9px; color:#687263; cursor:pointer; }
+.activity-tools button:disabled { opacity:.38; cursor:default; }
+.activity-footer { display:flex; align-items:center; justify-content:space-between; gap:10px; margin-top:14px; padding-top:10px; border-top:1px solid #e8e1d4; color:#8a8b7c; font-size:11px; }
+.activity-footer button { color:#8a8b7c; font-size:12px; background:none; padding:4px; text-decoration:underline; cursor:pointer; }
+.activity-parent-note,.activity-storage-note { font-size:12px!important; color:#827964; line-height:1.65; }
+.activity-evidence { display:grid; gap:5px; padding-top:12px; margin-top:12px; border-top:1px solid #e3dece; font-size:12px; color:#7e826e; line-height:1.5; }
+.activity-evidence strong { color:#58785c; font-size:13px; }
+.memory-stage { display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:230px; padding:15px; margin:14px 0; border:1px solid #dddaca; border-radius:17px; background:linear-gradient(140deg,#f6f8ec,#eef4f0); }
+.memory-stage h3 { font-size:20px; margin:14px 0 5px; }
+.memory-stage p { font-size:14px; line-height:1.6; color:#65766a; text-align:center; max-width:370px; margin:5px 0 17px; }
+.memory-ready>svg { color:#6b967e; }
+.memory-caption { display:flex; justify-content:space-between; align-items:center; width:100%; gap:14px; font-size:14px; }
+.memory-caption span { font-size:12px; color:#7d8a77; }
+.memory-stage .activity-board.is-grid { max-width:280px; }
+.memory-retain>span { font-size:55px; letter-spacing:10px; color:#75977e; }
+@media (max-width:1100px) {
+  .activity-game h1 {font-size:23px;}
+  .activity-token-image {width:65px;height:65px;}
+  .activity-choice-grid {gap:7px;}
+  .activity-clues {gap:5px;}
+  .activity-clues li {font-size:13px;}
+  .activity-actions {flex-wrap:wrap;}
+  .activity-actions>.activity-primary {margin-left:auto;}
+  .activity-slot {min-height:70px;}
+  .slot-target,.fixed-token {min-height:67px;}
+  .activity-slot .activity-token-image {width:52px;height:52px;}
+}
+@media (max-width:600px) {
+  .activity-choice-grid {grid-template-columns:repeat(3,minmax(0,1fr));}
+  .activity-token-tray {grid-template-columns:repeat(4,minmax(0,1fr));}
+  .activity-game h1 {font-size:22px;}
+  .activity-question h2 {font-size:18px;}
+  .activity-question p {font-size:14px;}
+  .activity-board.is-order {gap:4px;}
+  .activity-slot .activity-token-image {width:44px;height:44px;}
+  .activity-slot {min-height:60px;}
+  .slot-target,.fixed-token {min-height:57px;}
+  .activity-footer {font-size:10px;}
+}
+.activity-workspace.for-grid { display:grid; grid-template-columns:minmax(220px,1fr) minmax(170px,.95fr); gap:18px; align-items:center; margin:7px 0 13px; }
+.activity-workspace.for-grid .activity-token-tray { grid-template-columns:repeat(3,minmax(0,1fr)); }
+.activity-workspace.for-grid .activity-board { margin:0 auto; }
+.activity-workspace.for-grid .tray-instruction { margin:0 0 7px; }
+.activity-workspace.for-grid .tray-instruction>span { display:block; margin:0; }
+.activity-workspace.for-grid.is-complete { grid-template-columns:1fr; }
+@media (max-width:1100px) {
+  .activity-workspace.for-grid { gap:12px; }
+  .activity-workspace.for-grid .activity-token-image { width:43px; height:43px; }
+  .activity-workspace.for-grid .token-label { font-size:10px; }
+}
+@media (max-width:600px) {
+  .activity-workspace.for-grid { grid-template-columns:1fr; gap:12px; }
+  .activity-workspace.for-grid .activity-token-tray { grid-template-columns:repeat(var(--grid-tray-columns),minmax(0,1fr)); }
+}

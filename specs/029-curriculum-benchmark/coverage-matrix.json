@@ -1,6 +1,6 @@
 {
   "date": "2026-09-22",
-  "status": "design-not-implementation",
+  "status": "pilot-implemented-full-scope-incomplete",
   "families": [
     {
       "id": "N01",
@@ -925,7 +925,7 @@
         "logic-same-kind-detective"
       ],
       "baseline_coverage": "已有基础待等价复核",
-      "implementation_status": "planned",
+      "implementation_status": "pilot-partial",
       "decision": "build",
       "target": "相同材料换规则分组，多选同类/异类并说明共同条件",
       "interaction_kinds": [
@@ -954,7 +954,15 @@
       "exception_rationale": null,
       "batch": "M2",
       "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
-      "proposed_content_file": "src/curriculum/logic/multi-rule-classification.ts"
+      "proposed_content_file": "src/curriculum/logic/multi-rule-classification.ts",
+      "pilot_activity_ids": [
+        "rules-red-round-triangle",
+        "rules-blue-or-triangle",
+        "rules-yellow-two-shapes",
+        "rules-circles-put-red-back",
+        "rules-two-color-shape-pairs",
+        "rules-exactly-one-shared-feature"
+      ]
     },
     {
       "id": "L02",
@@ -1050,7 +1058,7 @@
         "logic-order-plan"
       ],
       "baseline_coverage": "已有基础待等价复核",
-      "implementation_status": "planned",
+      "implementation_status": "pilot-partial",
       "decision": "build",
       "target": "用多条快慢/高矮/轻重关系排顺序，不能确定时保留未知",
       "interaction_kinds": [
@@ -1079,7 +1087,15 @@
       "exception_rationale": null,
       "batch": "M2",
       "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
-      "proposed_content_file": "src/curriculum/logic/transitive-order.ts"
+      "proposed_content_file": "src/curriculum/logic/transitive-order.ts",
+      "pilot_activity_ids": [
+        "lineup-three-in-order",
+        "lineup-four-chain",
+        "lineup-fixed-ends",
+        "lineup-immediate-neighbor",
+        "lineup-two-valid-pairs",
+        "lineup-middle-and-neighbor"
+      ]
     },
     {
       "id": "L04",
@@ -1725,7 +1741,7 @@
         "logic-matrix-puzzle"
       ],
       "baseline_coverage": "已有基础待等价复核",
-      "implementation_status": "planned",
+      "implementation_status": "pilot-partial",
       "decision": "build",
       "target": "形状/颜色/方向独立变化的纯图形序列与矩阵，验证行列共同成立",
       "interaction_kinds": [
@@ -1754,7 +1770,15 @@
       "exception_rationale": null,
       "batch": "M2",
       "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
-      "proposed_content_file": "src/curriculum/graphic/feature-matrices.ts"
+      "proposed_content_file": "src/curriculum/graphic/feature-matrices.ts",
+      "pilot_activity_ids": [
+        "grid-color-and-shape",
+        "grid-one-missing-rule",
+        "grid-diagonal-clues",
+        "grid-two-attributes",
+        "grid-build-your-own",
+        "grid-blank-is-a-card"
+      ]
     },
     {
       "id": "G04",
@@ -2874,7 +2898,7 @@
         "logic-position-map"
       ],
       "baseline_coverage": "已有基础待等价复核",
-      "implementation_status": "planned",
+      "implementation_status": "pilot-partial",
       "decision": "build",
       "target": "回忆位置而非只认出对象；空白格是合法记忆信息",
       "interaction_kinds": [
@@ -2902,7 +2926,11 @@
       "exception_rationale": null,
       "batch": "M3",
       "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
-      "proposed_content_file": "src/curriculum/memory/spatial-memory.ts"
+      "proposed_content_file": "src/curriculum/memory/spatial-memory.ts",
+      "pilot_activity_ids": [
+        "memory-six-positions",
+        "memory-blank-positions"
+      ]
     },
     {
       "id": "A03",
@@ -2927,7 +2955,7 @@
         "logic-memory-camera"
       ],
       "baseline_coverage": "已有基础待等价复核",
-      "implementation_status": "planned",
+      "implementation_status": "pilot-partial",
       "decision": "build",
       "target": "按序重现，重复候选可复用；逆序单独作为操作要求",
       "interaction_kinds": [
@@ -2955,7 +2983,13 @@
       "exception_rationale": null,
       "batch": "M3",
       "acceptance": "独立规则/答案与误判审查；画面/音频/操作一致；适用台阶与变式达标；亲子追问；实际交互证据",
-      "proposed_content_file": "src/curriculum/memory/sequence-memory.ts"
+      "proposed_content_file": "src/curriculum/memory/sequence-memory.ts",
+      "pilot_activity_ids": [
+        "memory-animal-line",
+        "memory-repeated-fruit",
+        "memory-two-groups",
+        "memory-reverse-five"
+      ]
     },
     {
       "id": "A04",

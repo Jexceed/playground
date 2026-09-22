@@ -1,0 +1,907 @@
+{
+  "scope": "first-playable-increment",
+  "authoredActivities": 24,
+  "sourceMode": "original tasks aligned to source task families; not copied worksheets",
+  "activities": [
+    {
+      "id": "rules-red-round-triangle",
+      "group": "logic-rule-workshop",
+      "primaryFamilyId": "L01",
+      "sources": [
+        {
+          "sourceId": "S002",
+          "locator": "PDF p4–5"
+        }
+      ],
+      "kind": "multiSelect",
+      "protocol": "practice",
+      "solutionCount": 1,
+      "exampleSolution": {
+        "kind": "multiSelect",
+        "tokenIds": [
+          "red-circle",
+          "red-triangle"
+        ]
+      },
+      "review": "independently specified selection/order expectations; enumeration of row/column constraints; memory cue/response consistency"
+    },
+    {
+      "id": "rules-blue-or-triangle",
+      "group": "logic-rule-workshop",
+      "primaryFamilyId": "L01",
+      "sources": [
+        {
+          "sourceId": "S002",
+          "locator": "PDF p4–5"
+        }
+      ],
+      "kind": "multiSelect",
+      "protocol": "practice",
+      "solutionCount": 1,
+      "exampleSolution": {
+        "kind": "multiSelect",
+        "tokenIds": [
+          "yellow-triangle",
+          "blue-circle",
+          "red-triangle",
+          "blue-square"
+        ]
+      },
+      "review": "independently specified selection/order expectations; enumeration of row/column constraints; memory cue/response consistency"
+    },
+    {
+      "id": "rules-yellow-two-shapes",
+      "group": "logic-rule-workshop",
+      "primaryFamilyId": "L01",
+      "sources": [
+        {
+          "sourceId": "S002",
+          "locator": "PDF p4–5"
+        }
+      ],
+      "kind": "multiSelect",
+      "protocol": "practice",
+      "solutionCount": 1,
+      "exampleSolution": {
+        "kind": "multiSelect",
+        "tokenIds": [
+          "yellow-circle",
+          "yellow-square"
+        ]
+      },
+      "review": "independently specified selection/order expectations; enumeration of row/column constraints; memory cue/response consistency"
+    },
+    {
+      "id": "rules-circles-put-red-back",
+      "group": "logic-rule-workshop",
+      "primaryFamilyId": "L01",
+      "sources": [
+        {
+          "sourceId": "S002",
+          "locator": "PDF p4–5"
+        }
+      ],
+      "kind": "multiSelect",
+      "protocol": "practice",
+      "solutionCount": 1,
+      "exampleSolution": {
+        "kind": "multiSelect",
+        "tokenIds": [
+          "yellow-circle",
+          "blue-circle"
+        ]
+      },
+      "review": "independently specified selection/order expectations; enumeration of row/column constraints; memory cue/response consistency"
+    },
+    {
+      "id": "rules-two-color-shape-pairs",
+      "group": "logic-rule-workshop",
+      "primaryFamilyId": "L01",
+      "sources": [
+        {
+          "sourceId": "S002",
+          "locator": "PDF p4–5"
+        }
+      ],
+      "kind": "multiSelect",
+      "protocol": "practice",
+      "solutionCount": 1,
+      "exampleSolution": {
+        "kind": "multiSelect",
+        "tokenIds": [
+          "red-square",
+          "blue-triangle"
+        ]
+      },
+      "review": "independently specified selection/order expectations; enumeration of row/column constraints; memory cue/response consistency"
+    },
+    {
+      "id": "rules-exactly-one-shared-feature",
+      "group": "logic-rule-workshop",
+      "primaryFamilyId": "L01",
+      "sources": [
+        {
+          "sourceId": "S002",
+          "locator": "PDF p4–5"
+        }
+      ],
+      "kind": "multiSelect",
+      "protocol": "practice",
+      "solutionCount": 1,
+      "exampleSolution": {
+        "kind": "multiSelect",
+        "tokenIds": [
+          "blue-circle",
+          "red-square",
+          "yellow-circle",
+          "red-triangle"
+        ]
+      },
+      "review": "independently specified selection/order expectations; enumeration of row/column constraints; memory cue/response consistency"
+    },
+    {
+      "id": "lineup-three-in-order",
+      "group": "logic-lineup-challenge",
+      "primaryFamilyId": "L03",
+      "sources": [
+        {
+          "sourceId": "S105",
+          "locator": "slide7–8"
+        },
+        {
+          "sourceId": "S112",
+          "locator": "PDF p2–4"
+        }
+      ],
+      "kind": "orderedPlacement",
+      "protocol": "practice",
+      "solutionCount": 1,
+      "exampleSolution": {
+        "kind": "orderedPlacement",
+        "slots": [
+          {
+            "state": "filled",
+            "tokenId": "rabbit"
+          },
+          {
+            "state": "filled",
+            "tokenId": "cat"
+          },
+          {
+            "state": "filled",
+            "tokenId": "dog"
+          }
+        ]
+      },
+      "review": "independently specified selection/order expectations; enumeration of row/column constraints; memory cue/response consistency"
+    },
+    {
+      "id": "lineup-four-chain",
+      "group": "logic-lineup-challenge",
+      "primaryFamilyId": "L03",
+      "sources": [
+        {
+          "sourceId": "S105",
+          "locator": "slide7–8"
+        },
+        {
+          "sourceId": "S112",
+          "locator": "PDF p2–4"
+        }
+      ],
+      "kind": "orderedPlacement",
+      "protocol": "practice",
+      "solutionCount": 1,
+      "exampleSolution": {
+        "kind": "orderedPlacement",
+        "slots": [
+          {
+            "state": "filled",
+            "tokenId": "bear"
+          },
+          {
+            "state": "filled",
+            "tokenId": "cat"
+          },
+          {
+            "state": "filled",
+            "tokenId": "dog"
+          },
+          {
+            "state": "filled",
+            "tokenId": "rabbit"
+          }
+        ]
+      },
+      "review": "independently specified selection/order expectations; enumeration of row/column constraints; memory cue/response consistency"
+    },
+    {
+      "id": "lineup-fixed-ends",
+      "group": "logic-lineup-challenge",
+      "primaryFamilyId": "L03",
+      "sources": [
+        {
+          "sourceId": "S105",
+          "locator": "slide7–8"
+        },
+        {
+          "sourceId": "S112",
+          "locator": "PDF p2–4"
+        }
+      ],
+      "kind": "orderedPlacement",
+      "protocol": "practice",
+      "solutionCount": 1,
+      "exampleSolution": {
+        "kind": "orderedPlacement",
+        "slots": [
+          {
+            "state": "filled",
+            "tokenId": "rabbit"
+          },
+          {
+            "state": "filled",
+            "tokenId": "cat"
+          },
+          {
+            "state": "filled",
+            "tokenId": "dog"
+          },
+          {
+            "state": "filled",
+            "tokenId": "bear"
+          }
+        ]
+      },
+      "review": "independently specified selection/order expectations; enumeration of row/column constraints; memory cue/response consistency"
+    },
+    {
+      "id": "lineup-immediate-neighbor",
+      "group": "logic-lineup-challenge",
+      "primaryFamilyId": "L03",
+      "sources": [
+        {
+          "sourceId": "S105",
+          "locator": "slide7–8"
+        },
+        {
+          "sourceId": "S112",
+          "locator": "PDF p2–4"
+        }
+      ],
+      "kind": "orderedPlacement",
+      "protocol": "practice",
+      "solutionCount": 1,
+      "exampleSolution": {
+        "kind": "orderedPlacement",
+        "slots": [
+          {
+            "state": "filled",
+            "tokenId": "bear"
+          },
+          {
+            "state": "filled",
+            "tokenId": "cat"
+          },
+          {
+            "state": "filled",
+            "tokenId": "rabbit"
+          },
+          {
+            "state": "filled",
+            "tokenId": "dog"
+          }
+        ]
+      },
+      "review": "independently specified selection/order expectations; enumeration of row/column constraints; memory cue/response consistency"
+    },
+    {
+      "id": "lineup-two-valid-pairs",
+      "group": "logic-lineup-challenge",
+      "primaryFamilyId": "L03",
+      "sources": [
+        {
+          "sourceId": "S105",
+          "locator": "slide7–8"
+        },
+        {
+          "sourceId": "S112",
+          "locator": "PDF p2–4"
+        }
+      ],
+      "kind": "orderedPlacement",
+      "protocol": "practice",
+      "solutionCount": 6,
+      "exampleSolution": {
+        "kind": "orderedPlacement",
+        "slots": [
+          {
+            "state": "filled",
+            "tokenId": "rabbit"
+          },
+          {
+            "state": "filled",
+            "tokenId": "cat"
+          },
+          {
+            "state": "filled",
+            "tokenId": "dog"
+          },
+          {
+            "state": "filled",
+            "tokenId": "bear"
+          }
+        ]
+      },
+      "review": "independently specified selection/order expectations; enumeration of row/column constraints; memory cue/response consistency"
+    },
+    {
+      "id": "lineup-middle-and-neighbor",
+      "group": "logic-lineup-challenge",
+      "primaryFamilyId": "L03",
+      "sources": [
+        {
+          "sourceId": "S105",
+          "locator": "slide7–8"
+        },
+        {
+          "sourceId": "S112",
+          "locator": "PDF p2–4"
+        }
+      ],
+      "kind": "orderedPlacement",
+      "protocol": "practice",
+      "solutionCount": 1,
+      "exampleSolution": {
+        "kind": "orderedPlacement",
+        "slots": [
+          {
+            "state": "filled",
+            "tokenId": "rabbit"
+          },
+          {
+            "state": "filled",
+            "tokenId": "bear"
+          },
+          {
+            "state": "filled",
+            "tokenId": "cat"
+          },
+          {
+            "state": "filled",
+            "tokenId": "dog"
+          }
+        ]
+      },
+      "review": "independently specified selection/order expectations; enumeration of row/column constraints; memory cue/response consistency"
+    },
+    {
+      "id": "grid-color-and-shape",
+      "group": "graphic-rule-grid",
+      "primaryFamilyId": "G03",
+      "sources": [
+        {
+          "sourceId": "S002",
+          "locator": "PDF p14–23"
+        },
+        {
+          "sourceId": "S070",
+          "locator": "PDF p43"
+        }
+      ],
+      "kind": "gridPlacement",
+      "protocol": "practice",
+      "solutionCount": 1,
+      "exampleSolution": {
+        "kind": "gridPlacement",
+        "cells": {
+          "cell-2": {
+            "state": "filled",
+            "tokenId": "red-triangle"
+          },
+          "cell-4": {
+            "state": "filled",
+            "tokenId": "blue-square"
+          }
+        }
+      },
+      "review": "independently specified selection/order expectations; enumeration of row/column constraints; memory cue/response consistency"
+    },
+    {
+      "id": "grid-one-missing-rule",
+      "group": "graphic-rule-grid",
+      "primaryFamilyId": "G03",
+      "sources": [
+        {
+          "sourceId": "S002",
+          "locator": "PDF p14–23"
+        },
+        {
+          "sourceId": "S070",
+          "locator": "PDF p43"
+        }
+      ],
+      "kind": "gridPlacement",
+      "protocol": "practice",
+      "solutionCount": 1,
+      "exampleSolution": {
+        "kind": "gridPlacement",
+        "cells": {
+          "cell-4": {
+            "state": "filled",
+            "tokenId": "blue-triangle"
+          },
+          "cell-5": {
+            "state": "filled",
+            "tokenId": "blue-circle"
+          },
+          "cell-6": {
+            "state": "filled",
+            "tokenId": "blue-triangle"
+          },
+          "cell-7": {
+            "state": "filled",
+            "tokenId": "blue-circle"
+          }
+        }
+      },
+      "review": "independently specified selection/order expectations; enumeration of row/column constraints; memory cue/response consistency"
+    },
+    {
+      "id": "grid-diagonal-clues",
+      "group": "graphic-rule-grid",
+      "primaryFamilyId": "G03",
+      "sources": [
+        {
+          "sourceId": "S002",
+          "locator": "PDF p14–23"
+        },
+        {
+          "sourceId": "S070",
+          "locator": "PDF p43"
+        }
+      ],
+      "kind": "gridPlacement",
+      "protocol": "practice",
+      "solutionCount": 2,
+      "exampleSolution": {
+        "kind": "gridPlacement",
+        "cells": {
+          "cell-1": {
+            "state": "filled",
+            "tokenId": "blue-square"
+          },
+          "cell-2": {
+            "state": "filled",
+            "tokenId": "blue-triangle"
+          },
+          "cell-3": {
+            "state": "filled",
+            "tokenId": "blue-triangle"
+          },
+          "cell-5": {
+            "state": "filled",
+            "tokenId": "blue-square"
+          },
+          "cell-6": {
+            "state": "filled",
+            "tokenId": "blue-square"
+          },
+          "cell-7": {
+            "state": "filled",
+            "tokenId": "blue-triangle"
+          }
+        }
+      },
+      "review": "independently specified selection/order expectations; enumeration of row/column constraints; memory cue/response consistency"
+    },
+    {
+      "id": "grid-two-attributes",
+      "group": "graphic-rule-grid",
+      "primaryFamilyId": "G03",
+      "sources": [
+        {
+          "sourceId": "S002",
+          "locator": "PDF p14–23"
+        },
+        {
+          "sourceId": "S070",
+          "locator": "PDF p43"
+        }
+      ],
+      "kind": "gridPlacement",
+      "protocol": "practice",
+      "solutionCount": 1,
+      "exampleSolution": {
+        "kind": "gridPlacement",
+        "cells": {
+          "cell-1": {
+            "state": "filled",
+            "tokenId": "red-square"
+          },
+          "cell-3": {
+            "state": "filled",
+            "tokenId": "blue-circle"
+          },
+          "cell-5": {
+            "state": "filled",
+            "tokenId": "blue-triangle"
+          },
+          "cell-7": {
+            "state": "filled",
+            "tokenId": "yellow-square"
+          }
+        }
+      },
+      "review": "independently specified selection/order expectations; enumeration of row/column constraints; memory cue/response consistency"
+    },
+    {
+      "id": "grid-build-your-own",
+      "group": "graphic-rule-grid",
+      "primaryFamilyId": "G03",
+      "sources": [
+        {
+          "sourceId": "S002",
+          "locator": "PDF p14–23"
+        },
+        {
+          "sourceId": "S070",
+          "locator": "PDF p43"
+        }
+      ],
+      "kind": "gridPlacement",
+      "protocol": "practice",
+      "solutionCount": 4,
+      "exampleSolution": {
+        "kind": "gridPlacement",
+        "cells": {
+          "cell-0": {
+            "state": "filled",
+            "tokenId": "blue-circle"
+          },
+          "cell-1": {
+            "state": "filled",
+            "tokenId": "blue-triangle"
+          },
+          "cell-2": {
+            "state": "filled",
+            "tokenId": "blue-square"
+          },
+          "cell-3": {
+            "state": "filled",
+            "tokenId": "blue-triangle"
+          },
+          "cell-5": {
+            "state": "filled",
+            "tokenId": "blue-circle"
+          },
+          "cell-6": {
+            "state": "filled",
+            "tokenId": "blue-square"
+          },
+          "cell-7": {
+            "state": "filled",
+            "tokenId": "blue-circle"
+          },
+          "cell-8": {
+            "state": "filled",
+            "tokenId": "blue-triangle"
+          }
+        }
+      },
+      "review": "independently specified selection/order expectations; enumeration of row/column constraints; memory cue/response consistency"
+    },
+    {
+      "id": "grid-blank-is-a-card",
+      "group": "graphic-rule-grid",
+      "primaryFamilyId": "G03",
+      "sources": [
+        {
+          "sourceId": "S002",
+          "locator": "PDF p14–23"
+        },
+        {
+          "sourceId": "S070",
+          "locator": "PDF p43"
+        }
+      ],
+      "kind": "gridPlacement",
+      "protocol": "practice",
+      "solutionCount": 1,
+      "exampleSolution": {
+        "kind": "gridPlacement",
+        "cells": {
+          "cell-1": {
+            "state": "filled",
+            "tokenId": "blue-square"
+          },
+          "cell-3": {
+            "state": "filled",
+            "tokenId": "blue-square"
+          },
+          "cell-5": {
+            "state": "filled",
+            "tokenId": "blue-circle"
+          },
+          "cell-7": {
+            "state": "filled",
+            "tokenId": "blue-circle"
+          }
+        }
+      },
+      "review": "independently specified selection/order expectations; enumeration of row/column constraints; memory cue/response consistency"
+    },
+    {
+      "id": "memory-animal-line",
+      "group": "logic-memory-placement",
+      "primaryFamilyId": "A03",
+      "sources": [
+        {
+          "sourceId": "S002",
+          "locator": "PDF p6–13"
+        },
+        {
+          "sourceId": "S005",
+          "locator": "PDF p29"
+        }
+      ],
+      "kind": "orderedPlacement",
+      "protocol": "memory",
+      "solutionCount": 1,
+      "exampleSolution": {
+        "kind": "orderedPlacement",
+        "slots": [
+          {
+            "state": "filled",
+            "tokenId": "rabbit"
+          },
+          {
+            "state": "filled",
+            "tokenId": "cat"
+          },
+          {
+            "state": "filled",
+            "tokenId": "bear"
+          },
+          {
+            "state": "filled",
+            "tokenId": "dog"
+          }
+        ]
+      },
+      "review": "independently specified selection/order expectations; enumeration of row/column constraints; memory cue/response consistency"
+    },
+    {
+      "id": "memory-repeated-fruit",
+      "group": "logic-memory-placement",
+      "primaryFamilyId": "A03",
+      "sources": [
+        {
+          "sourceId": "S002",
+          "locator": "PDF p6–13"
+        },
+        {
+          "sourceId": "S005",
+          "locator": "PDF p29"
+        }
+      ],
+      "kind": "orderedPlacement",
+      "protocol": "memory",
+      "solutionCount": 1,
+      "exampleSolution": {
+        "kind": "orderedPlacement",
+        "slots": [
+          {
+            "state": "filled",
+            "tokenId": "apple"
+          },
+          {
+            "state": "filled",
+            "tokenId": "strawberry"
+          },
+          {
+            "state": "filled",
+            "tokenId": "apple"
+          },
+          {
+            "state": "filled",
+            "tokenId": "cookie"
+          },
+          {
+            "state": "filled",
+            "tokenId": "strawberry"
+          }
+        ]
+      },
+      "review": "independently specified selection/order expectations; enumeration of row/column constraints; memory cue/response consistency"
+    },
+    {
+      "id": "memory-six-positions",
+      "group": "logic-memory-placement",
+      "primaryFamilyId": "A02",
+      "sources": [
+        {
+          "sourceId": "S002",
+          "locator": "PDF p6–13"
+        },
+        {
+          "sourceId": "S005",
+          "locator": "PDF p29"
+        }
+      ],
+      "kind": "gridPlacement",
+      "protocol": "memory",
+      "solutionCount": 1,
+      "exampleSolution": {
+        "kind": "gridPlacement",
+        "cells": {
+          "cell-0": {
+            "state": "filled",
+            "tokenId": "apple"
+          },
+          "cell-1": {
+            "state": "filled",
+            "tokenId": "bear"
+          },
+          "cell-2": {
+            "state": "filled",
+            "tokenId": "cat"
+          },
+          "cell-3": {
+            "state": "filled",
+            "tokenId": "rabbit"
+          },
+          "cell-4": {
+            "state": "filled",
+            "tokenId": "dog"
+          },
+          "cell-5": {
+            "state": "filled",
+            "tokenId": "cookie"
+          }
+        }
+      },
+      "review": "independently specified selection/order expectations; enumeration of row/column constraints; memory cue/response consistency"
+    },
+    {
+      "id": "memory-two-groups",
+      "group": "logic-memory-placement",
+      "primaryFamilyId": "A03",
+      "sources": [
+        {
+          "sourceId": "S002",
+          "locator": "PDF p6–13"
+        },
+        {
+          "sourceId": "S005",
+          "locator": "PDF p29"
+        }
+      ],
+      "kind": "orderedPlacement",
+      "protocol": "memory",
+      "solutionCount": 1,
+      "exampleSolution": {
+        "kind": "orderedPlacement",
+        "slots": [
+          {
+            "state": "filled",
+            "tokenId": "red-circle"
+          },
+          {
+            "state": "filled",
+            "tokenId": "blue-square"
+          },
+          {
+            "state": "filled",
+            "tokenId": "yellow-triangle"
+          },
+          {
+            "state": "filled",
+            "tokenId": "red-circle"
+          },
+          {
+            "state": "filled",
+            "tokenId": "blue-square"
+          },
+          {
+            "state": "filled",
+            "tokenId": "yellow-triangle"
+          }
+        ]
+      },
+      "review": "independently specified selection/order expectations; enumeration of row/column constraints; memory cue/response consistency"
+    },
+    {
+      "id": "memory-blank-positions",
+      "group": "logic-memory-placement",
+      "primaryFamilyId": "A02",
+      "sources": [
+        {
+          "sourceId": "S002",
+          "locator": "PDF p6–13"
+        },
+        {
+          "sourceId": "S005",
+          "locator": "PDF p29"
+        }
+      ],
+      "kind": "gridPlacement",
+      "protocol": "memory",
+      "solutionCount": 1,
+      "exampleSolution": {
+        "kind": "gridPlacement",
+        "cells": {
+          "cell-0": {
+            "state": "filled",
+            "tokenId": "rabbit"
+          },
+          "cell-1": {
+            "state": "filled",
+            "tokenId": "blank-card"
+          },
+          "cell-2": {
+            "state": "filled",
+            "tokenId": "dog"
+          },
+          "cell-3": {
+            "state": "filled",
+            "tokenId": "blank-card"
+          },
+          "cell-4": {
+            "state": "filled",
+            "tokenId": "bear"
+          },
+          "cell-5": {
+            "state": "filled",
+            "tokenId": "cat"
+          }
+        }
+      },
+      "review": "independently specified selection/order expectations; enumeration of row/column constraints; memory cue/response consistency"
+    },
+    {
+      "id": "memory-reverse-five",
+      "group": "logic-memory-placement",
+      "primaryFamilyId": "A03",
+      "sources": [
+        {
+          "sourceId": "S002",
+          "locator": "PDF p6–13"
+        },
+        {
+          "sourceId": "S005",
+          "locator": "PDF p29"
+        }
+      ],
+      "kind": "orderedPlacement",
+      "protocol": "memory",
+      "solutionCount": 1,
+      "exampleSolution": {
+        "kind": "orderedPlacement",
+        "slots": [
+          {
+            "state": "filled",
+            "tokenId": "red-square"
+          },
+          {
+            "state": "filled",
+            "tokenId": "blue-circle"
+          },
+          {
+            "state": "filled",
+            "tokenId": "yellow-triangle"
+          },
+          {
+            "state": "filled",
+            "tokenId": "blue-square"
+          },
+          {
+            "state": "filled",
+            "tokenId": "red-circle"
+          }
+        ]
+      },
+      "review": "independently specified selection/order expectations; enumeration of row/column constraints; memory cue/response consistency"
+    }
+  ]
+}

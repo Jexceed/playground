@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-07-18T03:37:23.393Z",
+  "generatedAt": "2026-09-22T06:53:55.551Z",
   "provider": "edge-tts Python package",
   "voice": "zh-CN-XiaoxiaoNeural",
   "rate": "-12%",
   "pitch": "+2Hz",
   "includeParent": true,
   "format": "mp3",
-  "count": 1801,
-  "requestedCount": 1801,
+  "count": 1958,
+  "requestedCount": 1958,
   "failures": [],
   "entries": [
     {
@@ -10809,6 +10809,948 @@
       "kind": "success",
       "text": "小鱼对，小鱼右边缺三角尾巴。补缺口要看边、角和缺口方向。",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%B0%8F%E9%B1%BC%E5%AF%B9-%E5%B0%8F%E9%B1%BC%E5%8F%B3%E8%BE%B9%E7%BC%BA%E4%B8%89%E8%A7%92%E5%B0%BE%E5%B7%B4-%E8%A1%A5%E7%BC%BA%E5%8F%A3%E8%A6%81%E7%9C%8B%E8%BE%B9-%E8%A7%92%E5%92%8C%E7%BC%BA%E5%8F%A3%E6%96%B9%E5%90%91.mp3"
+    },
+    {
+      "id": "activity-system-还有空位没有放好-再看一看",
+      "kind": "activity-system",
+      "text": "还有空位没有放好，再看一看。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/activity-system-%E8%BF%98%E6%9C%89%E7%A9%BA%E4%BD%8D%E6%B2%A1%E6%9C%89%E6%94%BE%E5%A5%BD-%E5%86%8D%E7%9C%8B%E4%B8%80%E7%9C%8B.mp3"
+    },
+    {
+      "id": "activity-system-这次摆放没有对上-请重新放一放",
+      "kind": "activity-system",
+      "text": "这次摆放没有对上，请重新放一放。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/activity-system-%E8%BF%99%E6%AC%A1%E6%91%86%E6%94%BE%E6%B2%A1%E6%9C%89%E5%AF%B9%E4%B8%8A-%E8%AF%B7%E9%87%8D%E6%96%B0%E6%94%BE%E4%B8%80%E6%94%BE.mp3"
+    },
+    {
+      "id": "activity-system-先试着放一张图卡吧",
+      "kind": "activity-system",
+      "text": "先试着放一张图卡吧。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/activity-system-%E5%85%88%E8%AF%95%E7%9D%80%E6%94%BE%E4%B8%80%E5%BC%A0%E5%9B%BE%E5%8D%A1%E5%90%A7.mp3"
+    },
+    {
+      "id": "activity-system-准备好以后-点开始记忆-看清图卡的位置和顺序",
+      "kind": "activity-system",
+      "text": "准备好以后，点开始记忆。看清图卡的位置和顺序。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/activity-system-%E5%87%86%E5%A4%87%E5%A5%BD%E4%BB%A5%E5%90%8E-%E7%82%B9%E5%BC%80%E5%A7%8B%E8%AE%B0%E5%BF%86-%E7%9C%8B%E6%B8%85%E5%9B%BE%E5%8D%A1%E7%9A%84%E4%BD%8D%E7%BD%AE%E5%92%8C%E9%A1%BA%E5%BA%8F.mp3"
+    },
+    {
+      "id": "activity-system-先在脑海里想一想",
+      "kind": "activity-system",
+      "text": "先在脑海里想一想。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/activity-system-%E5%85%88%E5%9C%A8%E8%84%91%E6%B5%B7%E9%87%8C%E6%83%B3%E4%B8%80%E6%83%B3.mp3"
+    },
+    {
+      "id": "activity-system-现在把记住的图卡摆回来吧",
+      "kind": "activity-system",
+      "text": "现在把记住的图卡摆回来吧。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/activity-system-%E7%8E%B0%E5%9C%A8%E6%8A%8A%E8%AE%B0%E4%BD%8F%E7%9A%84%E5%9B%BE%E5%8D%A1%E6%91%86%E5%9B%9E%E6%9D%A5%E5%90%A7.mp3"
+    },
+    {
+      "id": "activity-system-刚才暂停了-准备好以后-我们重新看一遍",
+      "kind": "activity-system",
+      "text": "刚才暂停了。准备好以后，我们重新看一遍。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/activity-system-%E5%88%9A%E6%89%8D%E6%9A%82%E5%81%9C%E4%BA%86-%E5%87%86%E5%A4%87%E5%A5%BD%E4%BB%A5%E5%90%8E-%E6%88%91%E4%BB%AC%E9%87%8D%E6%96%B0%E7%9C%8B%E4%B8%80%E9%81%8D.mp3"
+    },
+    {
+      "id": "activity-system-线索都在这里了-试着一步一步检查",
+      "kind": "activity-system",
+      "text": "线索都在这里了，试着一步一步检查。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/activity-system-%E7%BA%BF%E7%B4%A2%E9%83%BD%E5%9C%A8%E8%BF%99%E9%87%8C%E4%BA%86-%E8%AF%95%E7%9D%80%E4%B8%80%E6%AD%A5%E4%B8%80%E6%AD%A5%E6%A3%80%E6%9F%A5.mp3"
+    },
+    {
+      "id": "activity-system-再检查每一行和每一列-看看有没有重复或缺少的图卡",
+      "kind": "activity-system",
+      "text": "再检查每一行和每一列，看看有没有重复或缺少的图卡。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/activity-system-%E5%86%8D%E6%A3%80%E6%9F%A5%E6%AF%8F%E4%B8%80%E8%A1%8C%E5%92%8C%E6%AF%8F%E4%B8%80%E5%88%97-%E7%9C%8B%E7%9C%8B%E6%9C%89%E6%B2%A1%E6%9C%89%E9%87%8D%E5%A4%8D%E6%88%96%E7%BC%BA%E5%B0%91%E7%9A%84%E5%9B%BE%E5%8D%A1.mp3"
+    },
+    {
+      "id": "activity-system-每张图卡只放一次-再检查一下",
+      "kind": "activity-system",
+      "text": "每张图卡只放一次，再检查一下。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/activity-system-%E6%AF%8F%E5%BC%A0%E5%9B%BE%E5%8D%A1%E5%8F%AA%E6%94%BE%E4%B8%80%E6%AC%A1-%E5%86%8D%E6%A3%80%E6%9F%A5%E4%B8%80%E4%B8%8B.mp3"
+    },
+    {
+      "id": "activity-system-先选一张图卡-再点空位",
+      "kind": "activity-system",
+      "text": "先选一张图卡，再点空位。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/activity-system-%E5%85%88%E9%80%89%E4%B8%80%E5%BC%A0%E5%9B%BE%E5%8D%A1-%E5%86%8D%E7%82%B9%E7%A9%BA%E4%BD%8D.mp3"
+    },
+    {
+      "id": "game-title-规则收纳盒",
+      "kind": "game-title",
+      "text": "规则收纳盒",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/game-title-%E8%A7%84%E5%88%99%E6%94%B6%E7%BA%B3%E7%9B%92.mp3"
+    },
+    {
+      "id": "game-goal-用颜色和形状的不同条件-挑出所有符合要求的图卡",
+      "kind": "game-goal",
+      "text": "用颜色和形状的不同条件，挑出所有符合要求的图卡。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/game-goal-%E7%94%A8%E9%A2%9C%E8%89%B2%E5%92%8C%E5%BD%A2%E7%8A%B6%E7%9A%84%E4%B8%8D%E5%90%8C%E6%9D%A1%E4%BB%B6-%E6%8C%91%E5%87%BA%E6%89%80%E6%9C%89%E7%AC%A6%E5%90%88%E8%A6%81%E6%B1%82%E7%9A%84%E5%9B%BE%E5%8D%A1.mp3"
+    },
+    {
+      "id": "parent-先让孩子自己试-再请他指出线索-说说理由",
+      "kind": "parent",
+      "text": "先让孩子自己试，再请他指出线索、说说理由。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E5%85%88%E8%AE%A9%E5%AD%A9%E5%AD%90%E8%87%AA%E5%B7%B1%E8%AF%95-%E5%86%8D%E8%AF%B7%E4%BB%96%E6%8C%87%E5%87%BA%E7%BA%BF%E7%B4%A2-%E8%AF%B4%E8%AF%B4%E7%90%86%E7%94%B1.mp3"
+    },
+    {
+      "id": "prompt-帮小兔收图卡-把同时符合两条线索的图卡都选出来-颜色是红色-形状是圆形或三角形",
+      "kind": "prompt",
+      "text": "帮小兔收图卡。把同时符合两条线索的图卡都选出来。颜色是红色。形状是圆形或三角形。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%B8%AE%E5%B0%8F%E5%85%94%E6%94%B6%E5%9B%BE%E5%8D%A1-%E6%8A%8A%E5%90%8C%E6%97%B6%E7%AC%A6%E5%90%88%E4%B8%A4%E6%9D%A1%E7%BA%BF%E7%B4%A2%E7%9A%84%E5%9B%BE%E5%8D%A1%E9%83%BD%E9%80%89%E5%87%BA%E6%9D%A5-%E9%A2%9C%E8%89%B2%E6%98%AF%E7%BA%A2%E8%89%B2-%E5%BD%A2%E7%8A%B6%E6%98%AF%E5%9C%86%E5%BD%A2%E6%88%96%E4%B8%89%E8%A7%92%E5%BD%A2.mp3"
+    },
+    {
+      "id": "success-对了-红色圆形和红色三角形同时符合两条线索",
+      "kind": "success",
+      "text": "对了！红色圆形和红色三角形同时符合两条线索。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%AF%B9%E4%BA%86-%E7%BA%A2%E8%89%B2%E5%9C%86%E5%BD%A2%E5%92%8C%E7%BA%A2%E8%89%B2%E4%B8%89%E8%A7%92%E5%BD%A2%E5%90%8C%E6%97%B6%E7%AC%A6%E5%90%88%E4%B8%A4%E6%9D%A1%E7%BA%BF%E7%B4%A2.mp3"
+    },
+    {
+      "id": "retry-选好颜色以后-还要再看看形状",
+      "kind": "retry",
+      "text": "选好颜色以后，还要再看看形状。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E9%80%89%E5%A5%BD%E9%A2%9C%E8%89%B2%E4%BB%A5%E5%90%8E-%E8%BF%98%E8%A6%81%E5%86%8D%E7%9C%8B%E7%9C%8B%E5%BD%A2%E7%8A%B6.mp3"
+    },
+    {
+      "id": "parent-红色方形为什么没有收进去-蓝色圆形又少了哪个条件",
+      "kind": "parent",
+      "text": "红色方形为什么没有收进去？蓝色圆形又少了哪个条件？",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E7%BA%A2%E8%89%B2%E6%96%B9%E5%BD%A2%E4%B8%BA%E4%BB%80%E4%B9%88%E6%B2%A1%E6%9C%89%E6%94%B6%E8%BF%9B%E5%8E%BB-%E8%93%9D%E8%89%B2%E5%9C%86%E5%BD%A2%E5%8F%88%E5%B0%91%E4%BA%86%E5%93%AA%E4%B8%AA%E6%9D%A1%E4%BB%B6.mp3"
+    },
+    {
+      "id": "hint-先把红色的图卡找出来",
+      "kind": "hint",
+      "text": "先把红色的图卡找出来。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E5%85%88%E6%8A%8A%E7%BA%A2%E8%89%B2%E7%9A%84%E5%9B%BE%E5%8D%A1%E6%89%BE%E5%87%BA%E6%9D%A5.mp3"
+    },
+    {
+      "id": "hint-再看红色图卡的形状-方形先留在桌上",
+      "kind": "hint",
+      "text": "再看红色图卡的形状，方形先留在桌上。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E5%86%8D%E7%9C%8B%E7%BA%A2%E8%89%B2%E5%9B%BE%E5%8D%A1%E7%9A%84%E5%BD%A2%E7%8A%B6-%E6%96%B9%E5%BD%A2%E5%85%88%E7%95%99%E5%9C%A8%E6%A1%8C%E4%B8%8A.mp3"
+    },
+    {
+      "id": "clue-颜色是红色",
+      "kind": "clue",
+      "text": "颜色是红色。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E9%A2%9C%E8%89%B2%E6%98%AF%E7%BA%A2%E8%89%B2.mp3"
+    },
+    {
+      "id": "clue-形状是圆形或三角形",
+      "kind": "clue",
+      "text": "形状是圆形或三角形。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E5%BD%A2%E7%8A%B6%E6%98%AF%E5%9C%86%E5%BD%A2%E6%88%96%E4%B8%89%E8%A7%92%E5%BD%A2.mp3"
+    },
+    {
+      "id": "object-蓝色圆形",
+      "kind": "object",
+      "text": "蓝色圆形",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E8%93%9D%E8%89%B2%E5%9C%86%E5%BD%A2.mp3"
+    },
+    {
+      "id": "object-红色方形",
+      "kind": "object",
+      "text": "红色方形",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E7%BA%A2%E8%89%B2%E6%96%B9%E5%BD%A2.mp3"
+    },
+    {
+      "id": "object-红色三角形",
+      "kind": "object",
+      "text": "红色三角形",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E7%BA%A2%E8%89%B2%E4%B8%89%E8%A7%92%E5%BD%A2.mp3"
+    },
+    {
+      "id": "object-黄色方形",
+      "kind": "object",
+      "text": "黄色方形",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E9%BB%84%E8%89%B2%E6%96%B9%E5%BD%A2.mp3"
+    },
+    {
+      "id": "object-红色圆形",
+      "kind": "object",
+      "text": "红色圆形",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E7%BA%A2%E8%89%B2%E5%9C%86%E5%BD%A2.mp3"
+    },
+    {
+      "id": "object-蓝色三角形",
+      "kind": "object",
+      "text": "蓝色三角形",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E8%93%9D%E8%89%B2%E4%B8%89%E8%A7%92%E5%BD%A2.mp3"
+    },
+    {
+      "id": "prompt-把两类图卡收好-蓝色图形都要-三角形也都要-符合其中一条就选-收好所有蓝色图形-也收好所有三角形",
+      "kind": "prompt",
+      "text": "把两类图卡收好。蓝色图形都要，三角形也都要。符合其中一条就选。收好所有蓝色图形。也收好所有三角形。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8A%8A%E4%B8%A4%E7%B1%BB%E5%9B%BE%E5%8D%A1%E6%94%B6%E5%A5%BD-%E8%93%9D%E8%89%B2%E5%9B%BE%E5%BD%A2%E9%83%BD%E8%A6%81-%E4%B8%89%E8%A7%92%E5%BD%A2%E4%B9%9F%E9%83%BD%E8%A6%81-%E7%AC%A6%E5%90%88%E5%85%B6%E4%B8%AD%E4%B8%80%E6%9D%A1%E5%B0%B1%E9%80%89-%E6%94%B6%E5%A5%BD%E6%89%80%E6%9C%89%E8%93%9D%E8%89%B2%E5%9B%BE%E5%BD%A2-%E4%B9%9F%E6%94%B6%E5%A5%BD%E6%89%80%E6%9C%89%E4%B8%89%E8%A7%92%E5%BD%A2.mp3"
+    },
+    {
+      "id": "success-找齐了-蓝色图形和三角形都收好了",
+      "kind": "success",
+      "text": "找齐了！蓝色图形和三角形都收好了。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%89%BE%E9%BD%90%E4%BA%86-%E8%93%9D%E8%89%B2%E5%9B%BE%E5%BD%A2%E5%92%8C%E4%B8%89%E8%A7%92%E5%BD%A2%E9%83%BD%E6%94%B6%E5%A5%BD%E4%BA%86.mp3"
+    },
+    {
+      "id": "retry-这次只要符合其中一个要求-就可以收进去",
+      "kind": "retry",
+      "text": "这次只要符合其中一个要求，就可以收进去。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E8%BF%99%E6%AC%A1%E5%8F%AA%E8%A6%81%E7%AC%A6%E5%90%88%E5%85%B6%E4%B8%AD%E4%B8%80%E4%B8%AA%E8%A6%81%E6%B1%82-%E5%B0%B1%E5%8F%AF%E4%BB%A5%E6%94%B6%E8%BF%9B%E5%8E%BB.mp3"
+    },
+    {
+      "id": "parent-黄色三角形不是蓝色-为什么也要收",
+      "kind": "parent",
+      "text": "黄色三角形不是蓝色，为什么也要收？",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%BB%84%E8%89%B2%E4%B8%89%E8%A7%92%E5%BD%A2%E4%B8%8D%E6%98%AF%E8%93%9D%E8%89%B2-%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B9%9F%E8%A6%81%E6%94%B6.mp3"
+    },
+    {
+      "id": "hint-先选好蓝色的图卡",
+      "kind": "hint",
+      "text": "先选好蓝色的图卡。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E5%85%88%E9%80%89%E5%A5%BD%E8%93%9D%E8%89%B2%E7%9A%84%E5%9B%BE%E5%8D%A1.mp3"
+    },
+    {
+      "id": "hint-再找三角形-看看有没有还没选到的",
+      "kind": "hint",
+      "text": "再找三角形，看看有没有还没选到的。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E5%86%8D%E6%89%BE%E4%B8%89%E8%A7%92%E5%BD%A2-%E7%9C%8B%E7%9C%8B%E6%9C%89%E6%B2%A1%E6%9C%89%E8%BF%98%E6%B2%A1%E9%80%89%E5%88%B0%E7%9A%84.mp3"
+    },
+    {
+      "id": "clue-收好所有蓝色图形",
+      "kind": "clue",
+      "text": "收好所有蓝色图形。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E6%94%B6%E5%A5%BD%E6%89%80%E6%9C%89%E8%93%9D%E8%89%B2%E5%9B%BE%E5%BD%A2.mp3"
+    },
+    {
+      "id": "clue-也收好所有三角形",
+      "kind": "clue",
+      "text": "也收好所有三角形。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E4%B9%9F%E6%94%B6%E5%A5%BD%E6%89%80%E6%9C%89%E4%B8%89%E8%A7%92%E5%BD%A2.mp3"
+    },
+    {
+      "id": "object-黄色三角形",
+      "kind": "object",
+      "text": "黄色三角形",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E9%BB%84%E8%89%B2%E4%B8%89%E8%A7%92%E5%BD%A2.mp3"
+    },
+    {
+      "id": "object-蓝色方形",
+      "kind": "object",
+      "text": "蓝色方形",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E8%93%9D%E8%89%B2%E6%96%B9%E5%BD%A2.mp3"
+    },
+    {
+      "id": "prompt-给小熊挑图卡-黄色的图卡里面-只挑圆形和方形-先看黄色的图卡-只收圆形和方形",
+      "kind": "prompt",
+      "text": "给小熊挑图卡。黄色的图卡里面，只挑圆形和方形。先看黄色的图卡。只收圆形和方形。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%BB%99%E5%B0%8F%E7%86%8A%E6%8C%91%E5%9B%BE%E5%8D%A1-%E9%BB%84%E8%89%B2%E7%9A%84%E5%9B%BE%E5%8D%A1%E9%87%8C%E9%9D%A2-%E5%8F%AA%E6%8C%91%E5%9C%86%E5%BD%A2%E5%92%8C%E6%96%B9%E5%BD%A2-%E5%85%88%E7%9C%8B%E9%BB%84%E8%89%B2%E7%9A%84%E5%9B%BE%E5%8D%A1-%E5%8F%AA%E6%94%B6%E5%9C%86%E5%BD%A2%E5%92%8C%E6%96%B9%E5%BD%A2.mp3"
+    },
+    {
+      "id": "success-对了-黄色圆形和黄色方形都符合要求",
+      "kind": "success",
+      "text": "对了！黄色圆形和黄色方形都符合要求。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%AF%B9%E4%BA%86-%E9%BB%84%E8%89%B2%E5%9C%86%E5%BD%A2%E5%92%8C%E9%BB%84%E8%89%B2%E6%96%B9%E5%BD%A2%E9%83%BD%E7%AC%A6%E5%90%88%E8%A6%81%E6%B1%82.mp3"
+    },
+    {
+      "id": "retry-再看看颜色和形状-有没有只符合一条的图卡",
+      "kind": "retry",
+      "text": "再看看颜色和形状，有没有只符合一条的图卡。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%86%8D%E7%9C%8B%E7%9C%8B%E9%A2%9C%E8%89%B2%E5%92%8C%E5%BD%A2%E7%8A%B6-%E6%9C%89%E6%B2%A1%E6%9C%89%E5%8F%AA%E7%AC%A6%E5%90%88%E4%B8%80%E6%9D%A1%E7%9A%84%E5%9B%BE%E5%8D%A1.mp3"
+    },
+    {
+      "id": "parent-请孩子换一个检查顺序-先看形状再看颜色-结果一样吗",
+      "kind": "parent",
+      "text": "请孩子换一个检查顺序，先看形状再看颜色，结果一样吗？",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%AD%A9%E5%AD%90%E6%8D%A2%E4%B8%80%E4%B8%AA%E6%A3%80%E6%9F%A5%E9%A1%BA%E5%BA%8F-%E5%85%88%E7%9C%8B%E5%BD%A2%E7%8A%B6%E5%86%8D%E7%9C%8B%E9%A2%9C%E8%89%B2-%E7%BB%93%E6%9E%9C%E4%B8%80%E6%A0%B7%E5%90%97.mp3"
+    },
+    {
+      "id": "hint-颜色和形状要分两步看",
+      "kind": "hint",
+      "text": "颜色和形状要分两步看。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E9%A2%9C%E8%89%B2%E5%92%8C%E5%BD%A2%E7%8A%B6%E8%A6%81%E5%88%86%E4%B8%A4%E6%AD%A5%E7%9C%8B.mp3"
+    },
+    {
+      "id": "hint-黄色三角形虽然颜色对了-形状还不符合",
+      "kind": "hint",
+      "text": "黄色三角形虽然颜色对了，形状还不符合。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E9%BB%84%E8%89%B2%E4%B8%89%E8%A7%92%E5%BD%A2%E8%99%BD%E7%84%B6%E9%A2%9C%E8%89%B2%E5%AF%B9%E4%BA%86-%E5%BD%A2%E7%8A%B6%E8%BF%98%E4%B8%8D%E7%AC%A6%E5%90%88.mp3"
+    },
+    {
+      "id": "clue-先看黄色的图卡",
+      "kind": "clue",
+      "text": "先看黄色的图卡。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E5%85%88%E7%9C%8B%E9%BB%84%E8%89%B2%E7%9A%84%E5%9B%BE%E5%8D%A1.mp3"
+    },
+    {
+      "id": "clue-只收圆形和方形",
+      "kind": "clue",
+      "text": "只收圆形和方形。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E5%8F%AA%E6%94%B6%E5%9C%86%E5%BD%A2%E5%92%8C%E6%96%B9%E5%BD%A2.mp3"
+    },
+    {
+      "id": "object-黄色圆形",
+      "kind": "object",
+      "text": "黄色圆形",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E9%BB%84%E8%89%B2%E5%9C%86%E5%BD%A2.mp3"
+    },
+    {
+      "id": "prompt-先挑-再放回-先挑出所有圆形-再把红色圆形放回桌上-最后应该留下哪些-先挑出所有圆形-红色圆形放回去",
+      "kind": "prompt",
+      "text": "先挑，再放回。先挑出所有圆形，再把红色圆形放回桌上。最后应该留下哪些。先挑出所有圆形。红色圆形放回去。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%85%88%E6%8C%91-%E5%86%8D%E6%94%BE%E5%9B%9E-%E5%85%88%E6%8C%91%E5%87%BA%E6%89%80%E6%9C%89%E5%9C%86%E5%BD%A2-%E5%86%8D%E6%8A%8A%E7%BA%A2%E8%89%B2%E5%9C%86%E5%BD%A2%E6%94%BE%E5%9B%9E%E6%A1%8C%E4%B8%8A-%E6%9C%80%E5%90%8E%E5%BA%94%E8%AF%A5%E7%95%99%E4%B8%8B%E5%93%AA%E4%BA%9B-%E5%85%88%E6%8C%91%E5%87%BA%E6%89%80%E6%9C%89%E5%9C%86%E5%BD%A2-%E7%BA%A2%E8%89%B2%E5%9C%86%E5%BD%A2%E6%94%BE%E5%9B%9E%E5%8E%BB.mp3"
+    },
+    {
+      "id": "success-对了-留下蓝色圆形和黄色圆形-红色圆形已经放回去了",
+      "kind": "success",
+      "text": "对了！留下蓝色圆形和黄色圆形，红色圆形已经放回去了。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%AF%B9%E4%BA%86-%E7%95%99%E4%B8%8B%E8%93%9D%E8%89%B2%E5%9C%86%E5%BD%A2%E5%92%8C%E9%BB%84%E8%89%B2%E5%9C%86%E5%BD%A2-%E7%BA%A2%E8%89%B2%E5%9C%86%E5%BD%A2%E5%B7%B2%E7%BB%8F%E6%94%BE%E5%9B%9E%E5%8E%BB%E4%BA%86.mp3"
+    },
+    {
+      "id": "retry-先挑圆形-再做放回这一步",
+      "kind": "retry",
+      "text": "先挑圆形，再做放回这一步。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E6%8C%91%E5%9C%86%E5%BD%A2-%E5%86%8D%E5%81%9A%E6%94%BE%E5%9B%9E%E8%BF%99%E4%B8%80%E6%AD%A5.mp3"
+    },
+    {
+      "id": "parent-可以先用手指演一遍挑出和放回-最后剩下的为什么是这两张",
+      "kind": "parent",
+      "text": "可以先用手指演一遍挑出和放回，最后剩下的为什么是这两张？",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E5%8F%AF%E4%BB%A5%E5%85%88%E7%94%A8%E6%89%8B%E6%8C%87%E6%BC%94%E4%B8%80%E9%81%8D%E6%8C%91%E5%87%BA%E5%92%8C%E6%94%BE%E5%9B%9E-%E6%9C%80%E5%90%8E%E5%89%A9%E4%B8%8B%E7%9A%84%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E8%BF%99%E4%B8%A4%E5%BC%A0.mp3"
+    },
+    {
+      "id": "hint-先只看形状-找到所有圆形",
+      "kind": "hint",
+      "text": "先只看形状，找到所有圆形。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E5%85%88%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E6%89%BE%E5%88%B0%E6%89%80%E6%9C%89%E5%9C%86%E5%BD%A2.mp3"
+    },
+    {
+      "id": "hint-想一想-哪种圆形需要放回去",
+      "kind": "hint",
+      "text": "想一想，哪种圆形需要放回去？",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E6%83%B3%E4%B8%80%E6%83%B3-%E5%93%AA%E7%A7%8D%E5%9C%86%E5%BD%A2%E9%9C%80%E8%A6%81%E6%94%BE%E5%9B%9E%E5%8E%BB.mp3"
+    },
+    {
+      "id": "clue-先挑出所有圆形",
+      "kind": "clue",
+      "text": "先挑出所有圆形。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E5%85%88%E6%8C%91%E5%87%BA%E6%89%80%E6%9C%89%E5%9C%86%E5%BD%A2.mp3"
+    },
+    {
+      "id": "clue-红色圆形放回去",
+      "kind": "clue",
+      "text": "红色圆形放回去。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E7%BA%A2%E8%89%B2%E5%9C%86%E5%BD%A2%E6%94%BE%E5%9B%9E%E5%8E%BB.mp3"
+    },
+    {
+      "id": "prompt-照着清单收图卡-清单上有红色方形和蓝色三角形-把它们都找出来-红色要配方形-蓝色要配三角形",
+      "kind": "prompt",
+      "text": "照着清单收图卡。清单上有红色方形和蓝色三角形，把它们都找出来。红色要配方形。蓝色要配三角形。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%85%A7%E7%9D%80%E6%B8%85%E5%8D%95%E6%94%B6%E5%9B%BE%E5%8D%A1-%E6%B8%85%E5%8D%95%E4%B8%8A%E6%9C%89%E7%BA%A2%E8%89%B2%E6%96%B9%E5%BD%A2%E5%92%8C%E8%93%9D%E8%89%B2%E4%B8%89%E8%A7%92%E5%BD%A2-%E6%8A%8A%E5%AE%83%E4%BB%AC%E9%83%BD%E6%89%BE%E5%87%BA%E6%9D%A5-%E7%BA%A2%E8%89%B2%E8%A6%81%E9%85%8D%E6%96%B9%E5%BD%A2-%E8%93%9D%E8%89%B2%E8%A6%81%E9%85%8D%E4%B8%89%E8%A7%92%E5%BD%A2.mp3"
+    },
+    {
+      "id": "success-清单上的两张都找到了-红色方形和蓝色三角形",
+      "kind": "success",
+      "text": "清单上的两张都找到了：红色方形和蓝色三角形。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%B8%85%E5%8D%95%E4%B8%8A%E7%9A%84%E4%B8%A4%E5%BC%A0%E9%83%BD%E6%89%BE%E5%88%B0%E4%BA%86-%E7%BA%A2%E8%89%B2%E6%96%B9%E5%BD%A2%E5%92%8C%E8%93%9D%E8%89%B2%E4%B8%89%E8%A7%92%E5%BD%A2.mp3"
+    },
+    {
+      "id": "retry-颜色和形状要按清单配成一组",
+      "kind": "retry",
+      "text": "颜色和形状要按清单配成一组。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E9%A2%9C%E8%89%B2%E5%92%8C%E5%BD%A2%E7%8A%B6%E8%A6%81%E6%8C%89%E6%B8%85%E5%8D%95%E9%85%8D%E6%88%90%E4%B8%80%E7%BB%84.mp3"
+    },
+    {
+      "id": "parent-如果把清单里的两种形状交换一下-答案会怎样变",
+      "kind": "parent",
+      "text": "如果把清单里的两种形状交换一下，答案会怎样变？",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E5%A6%82%E6%9E%9C%E6%8A%8A%E6%B8%85%E5%8D%95%E9%87%8C%E7%9A%84%E4%B8%A4%E7%A7%8D%E5%BD%A2%E7%8A%B6%E4%BA%A4%E6%8D%A2%E4%B8%80%E4%B8%8B-%E7%AD%94%E6%A1%88%E4%BC%9A%E6%80%8E%E6%A0%B7%E5%8F%98.mp3"
+    },
+    {
+      "id": "hint-先找红色方形-再找蓝色三角形",
+      "kind": "hint",
+      "text": "先找红色方形，再找蓝色三角形。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E5%85%88%E6%89%BE%E7%BA%A2%E8%89%B2%E6%96%B9%E5%BD%A2-%E5%86%8D%E6%89%BE%E8%93%9D%E8%89%B2%E4%B8%89%E8%A7%92%E5%BD%A2.mp3"
+    },
+    {
+      "id": "hint-蓝色方形和红色三角形虽然看着相近-却不在清单里",
+      "kind": "hint",
+      "text": "蓝色方形和红色三角形虽然看着相近，却不在清单里。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E8%93%9D%E8%89%B2%E6%96%B9%E5%BD%A2%E5%92%8C%E7%BA%A2%E8%89%B2%E4%B8%89%E8%A7%92%E5%BD%A2%E8%99%BD%E7%84%B6%E7%9C%8B%E7%9D%80%E7%9B%B8%E8%BF%91-%E5%8D%B4%E4%B8%8D%E5%9C%A8%E6%B8%85%E5%8D%95%E9%87%8C.mp3"
+    },
+    {
+      "id": "clue-红色要配方形",
+      "kind": "clue",
+      "text": "红色要配方形。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E7%BA%A2%E8%89%B2%E8%A6%81%E9%85%8D%E6%96%B9%E5%BD%A2.mp3"
+    },
+    {
+      "id": "clue-蓝色要配三角形",
+      "kind": "clue",
+      "text": "蓝色要配三角形。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E8%93%9D%E8%89%B2%E8%A6%81%E9%85%8D%E4%B8%89%E8%A7%92%E5%BD%A2.mp3"
+    },
+    {
+      "id": "prompt-找一个共同点-和这张红色圆形比-只能颜色一样-或者只能形状一样-比较颜色和形状-只能有一个共同点",
+      "kind": "prompt",
+      "text": "找一个共同点。和这张红色圆形比，只能颜色一样，或者只能形状一样。比较颜色和形状。只能有一个共同点。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%89%BE%E4%B8%80%E4%B8%AA%E5%85%B1%E5%90%8C%E7%82%B9-%E5%92%8C%E8%BF%99%E5%BC%A0%E7%BA%A2%E8%89%B2%E5%9C%86%E5%BD%A2%E6%AF%94-%E5%8F%AA%E8%83%BD%E9%A2%9C%E8%89%B2%E4%B8%80%E6%A0%B7-%E6%88%96%E8%80%85%E5%8F%AA%E8%83%BD%E5%BD%A2%E7%8A%B6%E4%B8%80%E6%A0%B7-%E6%AF%94%E8%BE%83%E9%A2%9C%E8%89%B2%E5%92%8C%E5%BD%A2%E7%8A%B6-%E5%8F%AA%E8%83%BD%E6%9C%89%E4%B8%80%E4%B8%AA%E5%85%B1%E5%90%8C%E7%82%B9.mp3"
+    },
+    {
+      "id": "success-对了-选中的图卡都只和样例有一个共同点",
+      "kind": "success",
+      "text": "对了！选中的图卡都只和样例有一个共同点。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%AF%B9%E4%BA%86-%E9%80%89%E4%B8%AD%E7%9A%84%E5%9B%BE%E5%8D%A1%E9%83%BD%E5%8F%AA%E5%92%8C%E6%A0%B7%E4%BE%8B%E6%9C%89%E4%B8%80%E4%B8%AA%E5%85%B1%E5%90%8C%E7%82%B9.mp3"
+    },
+    {
+      "id": "retry-每张卡都数一数-颜色-形状-到底有几个相同",
+      "kind": "retry",
+      "text": "每张卡都数一数：颜色、形状，到底有几个相同？",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E6%AF%8F%E5%BC%A0%E5%8D%A1%E9%83%BD%E6%95%B0%E4%B8%80%E6%95%B0-%E9%A2%9C%E8%89%B2-%E5%BD%A2%E7%8A%B6-%E5%88%B0%E5%BA%95%E6%9C%89%E5%87%A0%E4%B8%AA%E7%9B%B8%E5%90%8C.mp3"
+    },
+    {
+      "id": "parent-让孩子分别指出一张有一个-两个和零个共同点的图卡",
+      "kind": "parent",
+      "text": "让孩子分别指出一张有一个、两个和零个共同点的图卡。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AE%A9%E5%AD%A9%E5%AD%90%E5%88%86%E5%88%AB%E6%8C%87%E5%87%BA%E4%B8%80%E5%BC%A0%E6%9C%89%E4%B8%80%E4%B8%AA-%E4%B8%A4%E4%B8%AA%E5%92%8C%E9%9B%B6%E4%B8%AA%E5%85%B1%E5%90%8C%E7%82%B9%E7%9A%84%E5%9B%BE%E5%8D%A1.mp3"
+    },
+    {
+      "id": "hint-先说每张卡和红色圆形有几个共同点",
+      "kind": "hint",
+      "text": "先说每张卡和红色圆形有几个共同点。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E5%85%88%E8%AF%B4%E6%AF%8F%E5%BC%A0%E5%8D%A1%E5%92%8C%E7%BA%A2%E8%89%B2%E5%9C%86%E5%BD%A2%E6%9C%89%E5%87%A0%E4%B8%AA%E5%85%B1%E5%90%8C%E7%82%B9.mp3"
+    },
+    {
+      "id": "hint-红色圆形有两个共同点-这次不能选-黄色三角形一个都没有",
+      "kind": "hint",
+      "text": "红色圆形有两个共同点，这次不能选；黄色三角形一个都没有。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E7%BA%A2%E8%89%B2%E5%9C%86%E5%BD%A2%E6%9C%89%E4%B8%A4%E4%B8%AA%E5%85%B1%E5%90%8C%E7%82%B9-%E8%BF%99%E6%AC%A1%E4%B8%8D%E8%83%BD%E9%80%89-%E9%BB%84%E8%89%B2%E4%B8%89%E8%A7%92%E5%BD%A2%E4%B8%80%E4%B8%AA%E9%83%BD%E6%B2%A1%E6%9C%89.mp3"
+    },
+    {
+      "id": "clue-比较颜色和形状",
+      "kind": "clue",
+      "text": "比较颜色和形状。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E6%AF%94%E8%BE%83%E9%A2%9C%E8%89%B2%E5%92%8C%E5%BD%A2%E7%8A%B6.mp3"
+    },
+    {
+      "id": "clue-只能有一个共同点",
+      "kind": "clue",
+      "text": "只能有一个共同点。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E5%8F%AA%E8%83%BD%E6%9C%89%E4%B8%80%E4%B8%AA%E5%85%B1%E5%90%8C%E7%82%B9.mp3"
+    },
+    {
+      "id": "game-title-线索排排队",
+      "kind": "game-title",
+      "text": "线索排排队",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/game-title-%E7%BA%BF%E7%B4%A2%E6%8E%92%E6%8E%92%E9%98%9F.mp3"
+    },
+    {
+      "id": "game-goal-根据几条关系线索-把小动物排成符合条件的队伍",
+      "kind": "game-goal",
+      "text": "根据几条关系线索，把小动物排成符合条件的队伍。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/game-goal-%E6%A0%B9%E6%8D%AE%E5%87%A0%E6%9D%A1%E5%85%B3%E7%B3%BB%E7%BA%BF%E7%B4%A2-%E6%8A%8A%E5%B0%8F%E5%8A%A8%E7%89%A9%E6%8E%92%E6%88%90%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E9%98%9F%E4%BC%8D.mp3"
+    },
+    {
+      "id": "prompt-小动物排队啦-听清每条线索-把小动物从左到右排好-小兔在小猫前面-小猫在小狗前面",
+      "kind": "prompt",
+      "text": "小动物排队啦。听清每条线索，把小动物从左到右排好。小兔在小猫前面。小猫在小狗前面。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%B0%8F%E5%8A%A8%E7%89%A9%E6%8E%92%E9%98%9F%E5%95%A6-%E5%90%AC%E6%B8%85%E6%AF%8F%E6%9D%A1%E7%BA%BF%E7%B4%A2-%E6%8A%8A%E5%B0%8F%E5%8A%A8%E7%89%A9%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E6%8E%92%E5%A5%BD-%E5%B0%8F%E5%85%94%E5%9C%A8%E5%B0%8F%E7%8C%AB%E5%89%8D%E9%9D%A2-%E5%B0%8F%E7%8C%AB%E5%9C%A8%E5%B0%8F%E7%8B%97%E5%89%8D%E9%9D%A2.mp3"
+    },
+    {
+      "id": "success-这支队伍符合所有线索-说说你是怎么排出来的",
+      "kind": "success",
+      "text": "这支队伍符合所有线索！说说你是怎么排出来的。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%BF%99%E6%94%AF%E9%98%9F%E4%BC%8D%E7%AC%A6%E5%90%88%E6%89%80%E6%9C%89%E7%BA%BF%E7%B4%A2-%E8%AF%B4%E8%AF%B4%E4%BD%A0%E6%98%AF%E6%80%8E%E4%B9%88%E6%8E%92%E5%87%BA%E6%9D%A5%E7%9A%84.mp3"
+    },
+    {
+      "id": "retry-还有一条线索没对上-试着换换位置",
+      "kind": "retry",
+      "text": "还有一条线索没对上，试着换换位置。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E8%BF%98%E6%9C%89%E4%B8%80%E6%9D%A1%E7%BA%BF%E7%B4%A2%E6%B2%A1%E5%AF%B9%E4%B8%8A-%E8%AF%95%E7%9D%80%E6%8D%A2%E6%8D%A2%E4%BD%8D%E7%BD%AE.mp3"
+    },
+    {
+      "id": "parent-没有直接说小兔和小狗的关系-为什么也能知道谁在前",
+      "kind": "parent",
+      "text": "没有直接说小兔和小狗的关系，为什么也能知道谁在前？",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E6%B2%A1%E6%9C%89%E7%9B%B4%E6%8E%A5%E8%AF%B4%E5%B0%8F%E5%85%94%E5%92%8C%E5%B0%8F%E7%8B%97%E7%9A%84%E5%85%B3%E7%B3%BB-%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B9%9F%E8%83%BD%E7%9F%A5%E9%81%93%E8%B0%81%E5%9C%A8%E5%89%8D.mp3"
+    },
+    {
+      "id": "hint-先找能确定位置的小动物",
+      "kind": "hint",
+      "text": "先找能确定位置的小动物。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E5%85%88%E6%89%BE%E8%83%BD%E7%A1%AE%E5%AE%9A%E4%BD%8D%E7%BD%AE%E7%9A%84%E5%B0%8F%E5%8A%A8%E7%89%A9.mp3"
+    },
+    {
+      "id": "hint-把已经摆好的队伍-按每条线索检查一遍",
+      "kind": "hint",
+      "text": "把已经摆好的队伍，按每条线索检查一遍。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E6%8A%8A%E5%B7%B2%E7%BB%8F%E6%91%86%E5%A5%BD%E7%9A%84%E9%98%9F%E4%BC%8D-%E6%8C%89%E6%AF%8F%E6%9D%A1%E7%BA%BF%E7%B4%A2%E6%A3%80%E6%9F%A5%E4%B8%80%E9%81%8D.mp3"
+    },
+    {
+      "id": "clue-小兔在小猫前面",
+      "kind": "clue",
+      "text": "小兔在小猫前面。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E5%B0%8F%E5%85%94%E5%9C%A8%E5%B0%8F%E7%8C%AB%E5%89%8D%E9%9D%A2.mp3"
+    },
+    {
+      "id": "clue-小猫在小狗前面",
+      "kind": "clue",
+      "text": "小猫在小狗前面。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E5%B0%8F%E7%8C%AB%E5%9C%A8%E5%B0%8F%E7%8B%97%E5%89%8D%E9%9D%A2.mp3"
+    },
+    {
+      "id": "prompt-小动物排队啦-听清每条线索-把小动物从左到右排好-小熊在小猫前面-小猫在小狗前面-小狗在小兔前面",
+      "kind": "prompt",
+      "text": "小动物排队啦。听清每条线索，把小动物从左到右排好。小熊在小猫前面。小猫在小狗前面。小狗在小兔前面。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%B0%8F%E5%8A%A8%E7%89%A9%E6%8E%92%E9%98%9F%E5%95%A6-%E5%90%AC%E6%B8%85%E6%AF%8F%E6%9D%A1%E7%BA%BF%E7%B4%A2-%E6%8A%8A%E5%B0%8F%E5%8A%A8%E7%89%A9%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E6%8E%92%E5%A5%BD-%E5%B0%8F%E7%86%8A%E5%9C%A8%E5%B0%8F%E7%8C%AB%E5%89%8D%E9%9D%A2-%E5%B0%8F%E7%8C%AB%E5%9C%A8%E5%B0%8F%E7%8B%97%E5%89%8D%E9%9D%A2-%E5%B0%8F%E7%8B%97%E5%9C%A8%E5%B0%8F%E5%85%94%E5%89%8D%E9%9D%A2.mp3"
+    },
+    {
+      "id": "parent-从队伍中间开始检查-能不能同样推出两头是谁",
+      "kind": "parent",
+      "text": "从队伍中间开始检查，能不能同样推出两头是谁？",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E4%BB%8E%E9%98%9F%E4%BC%8D%E4%B8%AD%E9%97%B4%E5%BC%80%E5%A7%8B%E6%A3%80%E6%9F%A5-%E8%83%BD%E4%B8%8D%E8%83%BD%E5%90%8C%E6%A0%B7%E6%8E%A8%E5%87%BA%E4%B8%A4%E5%A4%B4%E6%98%AF%E8%B0%81.mp3"
+    },
+    {
+      "id": "clue-小熊在小猫前面",
+      "kind": "clue",
+      "text": "小熊在小猫前面。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E5%B0%8F%E7%86%8A%E5%9C%A8%E5%B0%8F%E7%8C%AB%E5%89%8D%E9%9D%A2.mp3"
+    },
+    {
+      "id": "clue-小狗在小兔前面",
+      "kind": "clue",
+      "text": "小狗在小兔前面。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E5%B0%8F%E7%8B%97%E5%9C%A8%E5%B0%8F%E5%85%94%E5%89%8D%E9%9D%A2.mp3"
+    },
+    {
+      "id": "prompt-小动物排队啦-听清每条线索-把小动物从左到右排好-小兔站第一个-小熊站最后一个-小猫在小狗前面",
+      "kind": "prompt",
+      "text": "小动物排队啦。听清每条线索，把小动物从左到右排好。小兔站第一个。小熊站最后一个。小猫在小狗前面。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%B0%8F%E5%8A%A8%E7%89%A9%E6%8E%92%E9%98%9F%E5%95%A6-%E5%90%AC%E6%B8%85%E6%AF%8F%E6%9D%A1%E7%BA%BF%E7%B4%A2-%E6%8A%8A%E5%B0%8F%E5%8A%A8%E7%89%A9%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E6%8E%92%E5%A5%BD-%E5%B0%8F%E5%85%94%E7%AB%99%E7%AC%AC%E4%B8%80%E4%B8%AA-%E5%B0%8F%E7%86%8A%E7%AB%99%E6%9C%80%E5%90%8E%E4%B8%80%E4%B8%AA-%E5%B0%8F%E7%8C%AB%E5%9C%A8%E5%B0%8F%E7%8B%97%E5%89%8D%E9%9D%A2.mp3"
+    },
+    {
+      "id": "parent-先确定两头以后-还剩几种摆法",
+      "kind": "parent",
+      "text": "先确定两头以后，还剩几种摆法？",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E5%85%88%E7%A1%AE%E5%AE%9A%E4%B8%A4%E5%A4%B4%E4%BB%A5%E5%90%8E-%E8%BF%98%E5%89%A9%E5%87%A0%E7%A7%8D%E6%91%86%E6%B3%95.mp3"
+    },
+    {
+      "id": "clue-小兔站第一个",
+      "kind": "clue",
+      "text": "小兔站第一个。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E5%B0%8F%E5%85%94%E7%AB%99%E7%AC%AC%E4%B8%80%E4%B8%AA.mp3"
+    },
+    {
+      "id": "clue-小熊站最后一个",
+      "kind": "clue",
+      "text": "小熊站最后一个。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E5%B0%8F%E7%86%8A%E7%AB%99%E6%9C%80%E5%90%8E%E4%B8%80%E4%B8%AA.mp3"
+    },
+    {
+      "id": "prompt-小动物排队啦-听清每条线索-把小动物从左到右排好-小熊站第一个-小狗紧跟在小兔后面-小猫在小兔前面",
+      "kind": "prompt",
+      "text": "小动物排队啦。听清每条线索，把小动物从左到右排好。小熊站第一个。小狗紧跟在小兔后面。小猫在小兔前面。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%B0%8F%E5%8A%A8%E7%89%A9%E6%8E%92%E9%98%9F%E5%95%A6-%E5%90%AC%E6%B8%85%E6%AF%8F%E6%9D%A1%E7%BA%BF%E7%B4%A2-%E6%8A%8A%E5%B0%8F%E5%8A%A8%E7%89%A9%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E6%8E%92%E5%A5%BD-%E5%B0%8F%E7%86%8A%E7%AB%99%E7%AC%AC%E4%B8%80%E4%B8%AA-%E5%B0%8F%E7%8B%97%E7%B4%A7%E8%B7%9F%E5%9C%A8%E5%B0%8F%E5%85%94%E5%90%8E%E9%9D%A2-%E5%B0%8F%E7%8C%AB%E5%9C%A8%E5%B0%8F%E5%85%94%E5%89%8D%E9%9D%A2.mp3"
+    },
+    {
+      "id": "parent-在后面-和-紧跟在后面-有什么不同",
+      "kind": "parent",
+      "text": "“在后面”和“紧跟在后面”有什么不同？",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E5%9C%A8%E5%90%8E%E9%9D%A2-%E5%92%8C-%E7%B4%A7%E8%B7%9F%E5%9C%A8%E5%90%8E%E9%9D%A2-%E6%9C%89%E4%BB%80%E4%B9%88%E4%B8%8D%E5%90%8C.mp3"
+    },
+    {
+      "id": "clue-小熊站第一个",
+      "kind": "clue",
+      "text": "小熊站第一个。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E5%B0%8F%E7%86%8A%E7%AB%99%E7%AC%AC%E4%B8%80%E4%B8%AA.mp3"
+    },
+    {
+      "id": "clue-小狗紧跟在小兔后面",
+      "kind": "clue",
+      "text": "小狗紧跟在小兔后面。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E5%B0%8F%E7%8B%97%E7%B4%A7%E8%B7%9F%E5%9C%A8%E5%B0%8F%E5%85%94%E5%90%8E%E9%9D%A2.mp3"
+    },
+    {
+      "id": "clue-小猫在小兔前面",
+      "kind": "clue",
+      "text": "小猫在小兔前面。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E5%B0%8F%E7%8C%AB%E5%9C%A8%E5%B0%8F%E5%85%94%E5%89%8D%E9%9D%A2.mp3"
+    },
+    {
+      "id": "prompt-小动物排队啦-听清每条线索-把小动物从左到右排好-小兔在小猫前面-小狗在小熊前面",
+      "kind": "prompt",
+      "text": "小动物排队啦。听清每条线索，把小动物从左到右排好。小兔在小猫前面。小狗在小熊前面。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%B0%8F%E5%8A%A8%E7%89%A9%E6%8E%92%E9%98%9F%E5%95%A6-%E5%90%AC%E6%B8%85%E6%AF%8F%E6%9D%A1%E7%BA%BF%E7%B4%A2-%E6%8A%8A%E5%B0%8F%E5%8A%A8%E7%89%A9%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E6%8E%92%E5%A5%BD-%E5%B0%8F%E5%85%94%E5%9C%A8%E5%B0%8F%E7%8C%AB%E5%89%8D%E9%9D%A2-%E5%B0%8F%E7%8B%97%E5%9C%A8%E5%B0%8F%E7%86%8A%E5%89%8D%E9%9D%A2.mp3"
+    },
+    {
+      "id": "parent-这题有不止一种排法-能不能换一支队伍-仍然符合两条线索",
+      "kind": "parent",
+      "text": "这题有不止一种排法。能不能换一支队伍，仍然符合两条线索？",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%BF%99%E9%A2%98%E6%9C%89%E4%B8%8D%E6%AD%A2%E4%B8%80%E7%A7%8D%E6%8E%92%E6%B3%95-%E8%83%BD%E4%B8%8D%E8%83%BD%E6%8D%A2%E4%B8%80%E6%94%AF%E9%98%9F%E4%BC%8D-%E4%BB%8D%E7%84%B6%E7%AC%A6%E5%90%88%E4%B8%A4%E6%9D%A1%E7%BA%BF%E7%B4%A2.mp3"
+    },
+    {
+      "id": "clue-小狗在小熊前面",
+      "kind": "clue",
+      "text": "小狗在小熊前面。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E5%B0%8F%E7%8B%97%E5%9C%A8%E5%B0%8F%E7%86%8A%E5%89%8D%E9%9D%A2.mp3"
+    },
+    {
+      "id": "prompt-小动物排队啦-听清每条线索-把小动物从左到右排好-小熊站第二个或第三个-小狗紧跟在小猫后面-小兔在小熊前面",
+      "kind": "prompt",
+      "text": "小动物排队啦。听清每条线索，把小动物从左到右排好。小熊站第二个或第三个。小狗紧跟在小猫后面。小兔在小熊前面。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%B0%8F%E5%8A%A8%E7%89%A9%E6%8E%92%E9%98%9F%E5%95%A6-%E5%90%AC%E6%B8%85%E6%AF%8F%E6%9D%A1%E7%BA%BF%E7%B4%A2-%E6%8A%8A%E5%B0%8F%E5%8A%A8%E7%89%A9%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E6%8E%92%E5%A5%BD-%E5%B0%8F%E7%86%8A%E7%AB%99%E7%AC%AC%E4%BA%8C%E4%B8%AA%E6%88%96%E7%AC%AC%E4%B8%89%E4%B8%AA-%E5%B0%8F%E7%8B%97%E7%B4%A7%E8%B7%9F%E5%9C%A8%E5%B0%8F%E7%8C%AB%E5%90%8E%E9%9D%A2-%E5%B0%8F%E5%85%94%E5%9C%A8%E5%B0%8F%E7%86%8A%E5%89%8D%E9%9D%A2.mp3"
+    },
+    {
+      "id": "parent-试着让小熊站第三个-会遇到什么问题",
+      "kind": "parent",
+      "text": "试着让小熊站第三个，会遇到什么问题？",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%95%E7%9D%80%E8%AE%A9%E5%B0%8F%E7%86%8A%E7%AB%99%E7%AC%AC%E4%B8%89%E4%B8%AA-%E4%BC%9A%E9%81%87%E5%88%B0%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98.mp3"
+    },
+    {
+      "id": "clue-小熊站第二个或第三个",
+      "kind": "clue",
+      "text": "小熊站第二个或第三个。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E5%B0%8F%E7%86%8A%E7%AB%99%E7%AC%AC%E4%BA%8C%E4%B8%AA%E6%88%96%E7%AC%AC%E4%B8%89%E4%B8%AA.mp3"
+    },
+    {
+      "id": "clue-小狗紧跟在小猫后面",
+      "kind": "clue",
+      "text": "小狗紧跟在小猫后面。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E5%B0%8F%E7%8B%97%E7%B4%A7%E8%B7%9F%E5%9C%A8%E5%B0%8F%E7%8C%AB%E5%90%8E%E9%9D%A2.mp3"
+    },
+    {
+      "id": "clue-小兔在小熊前面",
+      "kind": "clue",
+      "text": "小兔在小熊前面。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E5%B0%8F%E5%85%94%E5%9C%A8%E5%B0%8F%E7%86%8A%E5%89%8D%E9%9D%A2.mp3"
+    },
+    {
+      "id": "game-title-图形推理盘",
+      "kind": "game-title",
+      "text": "图形推理盘",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/game-title-%E5%9B%BE%E5%BD%A2%E6%8E%A8%E7%90%86%E7%9B%98.mp3"
+    },
+    {
+      "id": "game-goal-横着看-竖着看-把每个问号补成符合规则的图形盘",
+      "kind": "game-goal",
+      "text": "横着看、竖着看，把每个问号补成符合规则的图形盘。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/game-goal-%E6%A8%AA%E7%9D%80%E7%9C%8B-%E7%AB%96%E7%9D%80%E7%9C%8B-%E6%8A%8A%E6%AF%8F%E4%B8%AA%E9%97%AE%E5%8F%B7%E8%A1%A5%E6%88%90%E7%AC%A6%E5%90%88%E8%A7%84%E5%88%99%E7%9A%84%E5%9B%BE%E5%BD%A2%E7%9B%98.mp3"
+    },
+    {
+      "id": "prompt-把图形盘补完整-选一张图卡-再点问号格放进去-图卡可以重复用-每一行都是同一种颜色-从左到右-都是圆形-方形-三角形",
+      "kind": "prompt",
+      "text": "把图形盘补完整。选一张图卡，再点问号格放进去。图卡可以重复用。每一行都是同一种颜色。从左到右，都是圆形、方形、三角形。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8A%8A%E5%9B%BE%E5%BD%A2%E7%9B%98%E8%A1%A5%E5%AE%8C%E6%95%B4-%E9%80%89%E4%B8%80%E5%BC%A0%E5%9B%BE%E5%8D%A1-%E5%86%8D%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8-%E6%AF%8F%E4%B8%80%E8%A1%8C%E9%83%BD%E6%98%AF%E5%90%8C%E4%B8%80%E7%A7%8D%E9%A2%9C%E8%89%B2-%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3-%E9%83%BD%E6%98%AF%E5%9C%86%E5%BD%A2-%E6%96%B9%E5%BD%A2-%E4%B8%89%E8%A7%92%E5%BD%A2.mp3"
+    },
+    {
+      "id": "success-两格都补对了-颜色和形状都接上了",
+      "kind": "success",
+      "text": "两格都补对了！颜色和形状都接上了。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E4%B8%A4%E6%A0%BC%E9%83%BD%E8%A1%A5%E5%AF%B9%E4%BA%86-%E9%A2%9C%E8%89%B2%E5%92%8C%E5%BD%A2%E7%8A%B6%E9%83%BD%E6%8E%A5%E4%B8%8A%E4%BA%86.mp3"
+    },
+    {
+      "id": "retry-颜色看同一行-形状再从左到右检查",
+      "kind": "retry",
+      "text": "颜色看同一行，形状再从左到右检查。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E9%A2%9C%E8%89%B2%E7%9C%8B%E5%90%8C%E4%B8%80%E8%A1%8C-%E5%BD%A2%E7%8A%B6%E5%86%8D%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E6%A3%80%E6%9F%A5.mp3"
+    },
+    {
+      "id": "parent-请孩子指出最先确定的空位-以及用的是哪一行-哪一列的线索",
+      "kind": "parent",
+      "text": "请孩子指出最先确定的空位，以及用的是哪一行、哪一列的线索。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%AD%A9%E5%AD%90%E6%8C%87%E5%87%BA%E6%9C%80%E5%85%88%E7%A1%AE%E5%AE%9A%E7%9A%84%E7%A9%BA%E4%BD%8D-%E4%BB%A5%E5%8F%8A%E7%94%A8%E7%9A%84%E6%98%AF%E5%93%AA%E4%B8%80%E8%A1%8C-%E5%93%AA%E4%B8%80%E5%88%97%E7%9A%84%E7%BA%BF%E7%B4%A2.mp3"
+    },
+    {
+      "id": "hint-先看问号和哪种颜色在同一行",
+      "kind": "hint",
+      "text": "先看问号和哪种颜色在同一行。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E5%85%88%E7%9C%8B%E9%97%AE%E5%8F%B7%E5%92%8C%E5%93%AA%E7%A7%8D%E9%A2%9C%E8%89%B2%E5%9C%A8%E5%90%8C%E4%B8%80%E8%A1%8C.mp3"
+    },
+    {
+      "id": "hint-再看问号在第几列-需要哪种形状",
+      "kind": "hint",
+      "text": "再看问号在第几列，需要哪种形状。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E5%86%8D%E7%9C%8B%E9%97%AE%E5%8F%B7%E5%9C%A8%E7%AC%AC%E5%87%A0%E5%88%97-%E9%9C%80%E8%A6%81%E5%93%AA%E7%A7%8D%E5%BD%A2%E7%8A%B6.mp3"
+    },
+    {
+      "id": "clue-每一行都是同一种颜色",
+      "kind": "clue",
+      "text": "每一行都是同一种颜色。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E6%AF%8F%E4%B8%80%E8%A1%8C%E9%83%BD%E6%98%AF%E5%90%8C%E4%B8%80%E7%A7%8D%E9%A2%9C%E8%89%B2.mp3"
+    },
+    {
+      "id": "clue-从左到右-都是圆形-方形-三角形",
+      "kind": "clue",
+      "text": "从左到右，都是圆形、方形、三角形。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3-%E9%83%BD%E6%98%AF%E5%9C%86%E5%BD%A2-%E6%96%B9%E5%BD%A2-%E4%B8%89%E8%A7%92%E5%BD%A2.mp3"
+    },
+    {
+      "id": "prompt-把图形盘补完整-选一张图卡-再点问号格放进去-图卡可以重复用-每一行-三种图卡各出现一次-每一列-三种图卡也各出现一次",
+      "kind": "prompt",
+      "text": "把图形盘补完整。选一张图卡，再点问号格放进去。图卡可以重复用。每一行，三种图卡各出现一次。每一列，三种图卡也各出现一次。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8A%8A%E5%9B%BE%E5%BD%A2%E7%9B%98%E8%A1%A5%E5%AE%8C%E6%95%B4-%E9%80%89%E4%B8%80%E5%BC%A0%E5%9B%BE%E5%8D%A1-%E5%86%8D%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8-%E6%AF%8F%E4%B8%80%E8%A1%8C-%E4%B8%89%E7%A7%8D%E5%9B%BE%E5%8D%A1%E5%90%84%E5%87%BA%E7%8E%B0%E4%B8%80%E6%AC%A1-%E6%AF%8F%E4%B8%80%E5%88%97-%E4%B8%89%E7%A7%8D%E5%9B%BE%E5%8D%A1%E4%B9%9F%E5%90%84%E5%87%BA%E7%8E%B0%E4%B8%80%E6%AC%A1.mp3"
+    },
+    {
+      "id": "success-每一行和每一列都符合规则了",
+      "kind": "success",
+      "text": "每一行和每一列都符合规则了！",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%AF%8F%E4%B8%80%E8%A1%8C%E5%92%8C%E6%AF%8F%E4%B8%80%E5%88%97%E9%83%BD%E7%AC%A6%E5%90%88%E8%A7%84%E5%88%99%E4%BA%86.mp3"
+    },
+    {
+      "id": "retry-看一看新放的图卡-会不会让同一行或同一列重复",
+      "kind": "retry",
+      "text": "看一看新放的图卡，会不会让同一行或同一列重复？",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E7%9C%8B%E4%B8%80%E7%9C%8B%E6%96%B0%E6%94%BE%E7%9A%84%E5%9B%BE%E5%8D%A1-%E4%BC%9A%E4%B8%8D%E4%BC%9A%E8%AE%A9%E5%90%8C%E4%B8%80%E8%A1%8C%E6%88%96%E5%90%8C%E4%B8%80%E5%88%97%E9%87%8D%E5%A4%8D.mp3"
+    },
+    {
+      "id": "hint-先找只差一个空位的那一行或那一列",
+      "kind": "hint",
+      "text": "先找只差一个空位的那一行或那一列。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E5%85%88%E6%89%BE%E5%8F%AA%E5%B7%AE%E4%B8%80%E4%B8%AA%E7%A9%BA%E4%BD%8D%E7%9A%84%E9%82%A3%E4%B8%80%E8%A1%8C%E6%88%96%E9%82%A3%E4%B8%80%E5%88%97.mp3"
+    },
+    {
+      "id": "hint-放好一张以后-再检查它所在的行和列",
+      "kind": "hint",
+      "text": "放好一张以后，再检查它所在的行和列。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E6%94%BE%E5%A5%BD%E4%B8%80%E5%BC%A0%E4%BB%A5%E5%90%8E-%E5%86%8D%E6%A3%80%E6%9F%A5%E5%AE%83%E6%89%80%E5%9C%A8%E7%9A%84%E8%A1%8C%E5%92%8C%E5%88%97.mp3"
+    },
+    {
+      "id": "clue-每一行-三种图卡各出现一次",
+      "kind": "clue",
+      "text": "每一行，三种图卡各出现一次。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E6%AF%8F%E4%B8%80%E8%A1%8C-%E4%B8%89%E7%A7%8D%E5%9B%BE%E5%8D%A1%E5%90%84%E5%87%BA%E7%8E%B0%E4%B8%80%E6%AC%A1.mp3"
+    },
+    {
+      "id": "clue-每一列-三种图卡也各出现一次",
+      "kind": "clue",
+      "text": "每一列，三种图卡也各出现一次。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E6%AF%8F%E4%B8%80%E5%88%97-%E4%B8%89%E7%A7%8D%E5%9B%BE%E5%8D%A1%E4%B9%9F%E5%90%84%E5%87%BA%E7%8E%B0%E4%B8%80%E6%AC%A1.mp3"
+    },
+    {
+      "id": "parent-这题可以有不同的完整图案-请逐行-逐列验证-而不是只认一种样子",
+      "kind": "parent",
+      "text": "这题可以有不同的完整图案。请逐行、逐列验证，而不是只认一种样子。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%BF%99%E9%A2%98%E5%8F%AF%E4%BB%A5%E6%9C%89%E4%B8%8D%E5%90%8C%E7%9A%84%E5%AE%8C%E6%95%B4%E5%9B%BE%E6%A1%88-%E8%AF%B7%E9%80%90%E8%A1%8C-%E9%80%90%E5%88%97%E9%AA%8C%E8%AF%81-%E8%80%8C%E4%B8%8D%E6%98%AF%E5%8F%AA%E8%AE%A4%E4%B8%80%E7%A7%8D%E6%A0%B7%E5%AD%90.mp3"
+    },
+    {
+      "id": "hint-先试着补好一整行",
+      "kind": "hint",
+      "text": "先试着补好一整行。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E5%85%88%E8%AF%95%E7%9D%80%E8%A1%A5%E5%A5%BD%E4%B8%80%E6%95%B4%E8%A1%8C.mp3"
+    },
+    {
+      "id": "hint-下面的行既要自己不重复-也要和上面的列对上",
+      "kind": "hint",
+      "text": "下面的行既要自己不重复，也要和上面的列对上。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E4%B8%8B%E9%9D%A2%E7%9A%84%E8%A1%8C%E6%97%A2%E8%A6%81%E8%87%AA%E5%B7%B1%E4%B8%8D%E9%87%8D%E5%A4%8D-%E4%B9%9F%E8%A6%81%E5%92%8C%E4%B8%8A%E9%9D%A2%E7%9A%84%E5%88%97%E5%AF%B9%E4%B8%8A.mp3"
+    },
+    {
+      "id": "prompt-把图形盘补完整-选一张图卡-再点问号格放进去-图卡可以重复用-每一行的颜色相同-每一列的形状相同",
+      "kind": "prompt",
+      "text": "把图形盘补完整。选一张图卡，再点问号格放进去。图卡可以重复用。每一行的颜色相同。每一列的形状相同。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8A%8A%E5%9B%BE%E5%BD%A2%E7%9B%98%E8%A1%A5%E5%AE%8C%E6%95%B4-%E9%80%89%E4%B8%80%E5%BC%A0%E5%9B%BE%E5%8D%A1-%E5%86%8D%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8-%E6%AF%8F%E4%B8%80%E8%A1%8C%E7%9A%84%E9%A2%9C%E8%89%B2%E7%9B%B8%E5%90%8C-%E6%AF%8F%E4%B8%80%E5%88%97%E7%9A%84%E5%BD%A2%E7%8A%B6%E7%9B%B8%E5%90%8C.mp3"
+    },
+    {
+      "id": "success-补齐了-每行的颜色相同-每列的形状也相同",
+      "kind": "success",
+      "text": "补齐了！每行的颜色相同，每列的形状也相同。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%A1%A5%E9%BD%90%E4%BA%86-%E6%AF%8F%E8%A1%8C%E7%9A%84%E9%A2%9C%E8%89%B2%E7%9B%B8%E5%90%8C-%E6%AF%8F%E5%88%97%E7%9A%84%E5%BD%A2%E7%8A%B6%E4%B9%9F%E7%9B%B8%E5%90%8C.mp3"
+    },
+    {
+      "id": "retry-每个问号都要同时对上行的颜色和列的形状",
+      "kind": "retry",
+      "text": "每个问号都要同时对上行的颜色和列的形状。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E6%AF%8F%E4%B8%AA%E9%97%AE%E5%8F%B7%E9%83%BD%E8%A6%81%E5%90%8C%E6%97%B6%E5%AF%B9%E4%B8%8A%E8%A1%8C%E7%9A%84%E9%A2%9C%E8%89%B2%E5%92%8C%E5%88%97%E7%9A%84%E5%BD%A2%E7%8A%B6.mp3"
+    },
+    {
+      "id": "hint-从一行里已经有的图卡看颜色",
+      "kind": "hint",
+      "text": "从一行里已经有的图卡看颜色。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E4%BB%8E%E4%B8%80%E8%A1%8C%E9%87%8C%E5%B7%B2%E7%BB%8F%E6%9C%89%E7%9A%84%E5%9B%BE%E5%8D%A1%E7%9C%8B%E9%A2%9C%E8%89%B2.mp3"
+    },
+    {
+      "id": "hint-再从同一列里看形状-把两个特点合起来",
+      "kind": "hint",
+      "text": "再从同一列里看形状，把两个特点合起来。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E5%86%8D%E4%BB%8E%E5%90%8C%E4%B8%80%E5%88%97%E9%87%8C%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E6%8A%8A%E4%B8%A4%E4%B8%AA%E7%89%B9%E7%82%B9%E5%90%88%E8%B5%B7%E6%9D%A5.mp3"
+    },
+    {
+      "id": "clue-每一行的颜色相同",
+      "kind": "clue",
+      "text": "每一行的颜色相同。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E6%AF%8F%E4%B8%80%E8%A1%8C%E7%9A%84%E9%A2%9C%E8%89%B2%E7%9B%B8%E5%90%8C.mp3"
+    },
+    {
+      "id": "clue-每一列的形状相同",
+      "kind": "clue",
+      "text": "每一列的形状相同。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E6%AF%8F%E4%B8%80%E5%88%97%E7%9A%84%E5%BD%A2%E7%8A%B6%E7%9B%B8%E5%90%8C.mp3"
+    },
+    {
+      "id": "prompt-自己搭一个图形盘-选一张图卡-再点问号格放进去-图卡可以重复用-每一行-三种图卡各出现一次-每一列-三种图卡也各出现一次",
+      "kind": "prompt",
+      "text": "自己搭一个图形盘。选一张图卡，再点问号格放进去。图卡可以重复用。每一行，三种图卡各出现一次。每一列，三种图卡也各出现一次。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%87%AA%E5%B7%B1%E6%90%AD%E4%B8%80%E4%B8%AA%E5%9B%BE%E5%BD%A2%E7%9B%98-%E9%80%89%E4%B8%80%E5%BC%A0%E5%9B%BE%E5%8D%A1-%E5%86%8D%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8-%E6%AF%8F%E4%B8%80%E8%A1%8C-%E4%B8%89%E7%A7%8D%E5%9B%BE%E5%8D%A1%E5%90%84%E5%87%BA%E7%8E%B0%E4%B8%80%E6%AC%A1-%E6%AF%8F%E4%B8%80%E5%88%97-%E4%B8%89%E7%A7%8D%E5%9B%BE%E5%8D%A1%E4%B9%9F%E5%90%84%E5%87%BA%E7%8E%B0%E4%B8%80%E6%AC%A1.mp3"
+    },
+    {
+      "id": "parent-这题有多种解-先让孩子解释当前摆法-再尝试换一种排列",
+      "kind": "parent",
+      "text": "这题有多种解。先让孩子解释当前摆法，再尝试换一种排列。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%BF%99%E9%A2%98%E6%9C%89%E5%A4%9A%E7%A7%8D%E8%A7%A3-%E5%85%88%E8%AE%A9%E5%AD%A9%E5%AD%90%E8%A7%A3%E9%87%8A%E5%BD%93%E5%89%8D%E6%91%86%E6%B3%95-%E5%86%8D%E5%B0%9D%E8%AF%95%E6%8D%A2%E4%B8%80%E7%A7%8D%E6%8E%92%E5%88%97.mp3"
+    },
+    {
+      "id": "hint-先把三种图形放进第一行",
+      "kind": "hint",
+      "text": "先把三种图形放进第一行。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E5%85%88%E6%8A%8A%E4%B8%89%E7%A7%8D%E5%9B%BE%E5%BD%A2%E6%94%BE%E8%BF%9B%E7%AC%AC%E4%B8%80%E8%A1%8C.mp3"
+    },
+    {
+      "id": "hint-下一行可以换个顺序-避开上面同一列的图形",
+      "kind": "hint",
+      "text": "下一行可以换个顺序，避开上面同一列的图形。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E4%B8%8B%E4%B8%80%E8%A1%8C%E5%8F%AF%E4%BB%A5%E6%8D%A2%E4%B8%AA%E9%A1%BA%E5%BA%8F-%E9%81%BF%E5%BC%80%E4%B8%8A%E9%9D%A2%E5%90%8C%E4%B8%80%E5%88%97%E7%9A%84%E5%9B%BE%E5%BD%A2.mp3"
+    },
+    {
+      "id": "prompt-把图形盘补完整-空白卡也是一张图卡-每个问号都要放好-再点看看-每行都有一个圆形-一个方形和一张空白卡-每列也要把这三种卡各放一次",
+      "kind": "prompt",
+      "text": "把图形盘补完整。空白卡也是一张图卡。每个问号都要放好，再点看看。每行都有一个圆形、一个方形和一张空白卡。每列也要把这三种卡各放一次。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8A%8A%E5%9B%BE%E5%BD%A2%E7%9B%98%E8%A1%A5%E5%AE%8C%E6%95%B4-%E7%A9%BA%E7%99%BD%E5%8D%A1%E4%B9%9F%E6%98%AF%E4%B8%80%E5%BC%A0%E5%9B%BE%E5%8D%A1-%E6%AF%8F%E4%B8%AA%E9%97%AE%E5%8F%B7%E9%83%BD%E8%A6%81%E6%94%BE%E5%A5%BD-%E5%86%8D%E7%82%B9%E7%9C%8B%E7%9C%8B-%E6%AF%8F%E8%A1%8C%E9%83%BD%E6%9C%89%E4%B8%80%E4%B8%AA%E5%9C%86%E5%BD%A2-%E4%B8%80%E4%B8%AA%E6%96%B9%E5%BD%A2%E5%92%8C%E4%B8%80%E5%BC%A0%E7%A9%BA%E7%99%BD%E5%8D%A1-%E6%AF%8F%E5%88%97%E4%B9%9F%E8%A6%81%E6%8A%8A%E8%BF%99%E4%B8%89%E7%A7%8D%E5%8D%A1%E5%90%84%E6%94%BE%E4%B8%80%E6%AC%A1.mp3"
+    },
+    {
+      "id": "success-对了-空白卡也放在了合适的位置",
+      "kind": "success",
+      "text": "对了！空白卡也放在了合适的位置。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%AF%B9%E4%BA%86-%E7%A9%BA%E7%99%BD%E5%8D%A1%E4%B9%9F%E6%94%BE%E5%9C%A8%E4%BA%86%E5%90%88%E9%80%82%E7%9A%84%E4%BD%8D%E7%BD%AE.mp3"
+    },
+    {
+      "id": "parent-哪一格是放好了空白卡-哪一格是还没有放-请孩子说出区别",
+      "kind": "parent",
+      "text": "哪一格是放好了空白卡，哪一格是还没有放？请孩子说出区别。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E5%93%AA%E4%B8%80%E6%A0%BC%E6%98%AF%E6%94%BE%E5%A5%BD%E4%BA%86%E7%A9%BA%E7%99%BD%E5%8D%A1-%E5%93%AA%E4%B8%80%E6%A0%BC%E6%98%AF%E8%BF%98%E6%B2%A1%E6%9C%89%E6%94%BE-%E8%AF%B7%E5%AD%A9%E5%AD%90%E8%AF%B4%E5%87%BA%E5%8C%BA%E5%88%AB.mp3"
+    },
+    {
+      "id": "clue-每行都有一个圆形-一个方形和一张空白卡",
+      "kind": "clue",
+      "text": "每行都有一个圆形、一个方形和一张空白卡。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E6%AF%8F%E8%A1%8C%E9%83%BD%E6%9C%89%E4%B8%80%E4%B8%AA%E5%9C%86%E5%BD%A2-%E4%B8%80%E4%B8%AA%E6%96%B9%E5%BD%A2%E5%92%8C%E4%B8%80%E5%BC%A0%E7%A9%BA%E7%99%BD%E5%8D%A1.mp3"
+    },
+    {
+      "id": "clue-每列也要把这三种卡各放一次",
+      "kind": "clue",
+      "text": "每列也要把这三种卡各放一次。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E6%AF%8F%E5%88%97%E4%B9%9F%E8%A6%81%E6%8A%8A%E8%BF%99%E4%B8%89%E7%A7%8D%E5%8D%A1%E5%90%84%E6%94%BE%E4%B8%80%E6%AC%A1.mp3"
+    },
+    {
+      "id": "object-空白卡",
+      "kind": "object",
+      "text": "空白卡",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E7%A9%BA%E7%99%BD%E5%8D%A1.mp3"
+    },
+    {
+      "id": "game-title-记忆摆一摆",
+      "kind": "game-title",
+      "text": "记忆摆一摆",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/game-title-%E8%AE%B0%E5%BF%86%E6%91%86%E4%B8%80%E6%91%86.mp3"
+    },
+    {
+      "id": "game-goal-记住图卡的顺序和位置-遮住以后自己摆回来",
+      "kind": "game-goal",
+      "text": "记住图卡的顺序和位置，遮住以后自己摆回来。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/game-goal-%E8%AE%B0%E4%BD%8F%E5%9B%BE%E5%8D%A1%E7%9A%84%E9%A1%BA%E5%BA%8F%E5%92%8C%E4%BD%8D%E7%BD%AE-%E9%81%AE%E4%BD%8F%E4%BB%A5%E5%90%8E%E8%87%AA%E5%B7%B1%E6%91%86%E5%9B%9E%E6%9D%A5.mp3"
+    },
+    {
+      "id": "prompt-记住这支小队伍-先看清从左到右的顺序-遮住以后-照着原来的顺序摆回来",
+      "kind": "prompt",
+      "text": "记住这支小队伍。先看清从左到右的顺序。遮住以后，照着原来的顺序摆回来。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%AE%B0%E4%BD%8F%E8%BF%99%E6%94%AF%E5%B0%8F%E9%98%9F%E4%BC%8D-%E5%85%88%E7%9C%8B%E6%B8%85%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E7%9A%84%E9%A1%BA%E5%BA%8F-%E9%81%AE%E4%BD%8F%E4%BB%A5%E5%90%8E-%E7%85%A7%E7%9D%80%E5%8E%9F%E6%9D%A5%E7%9A%84%E9%A1%BA%E5%BA%8F%E6%91%86%E5%9B%9E%E6%9D%A5.mp3"
+    },
+    {
+      "id": "success-记住了-说说你用了什么办法",
+      "kind": "success",
+      "text": "记住了！说说你用了什么办法。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%AE%B0%E4%BD%8F%E4%BA%86-%E8%AF%B4%E8%AF%B4%E4%BD%A0%E7%94%A8%E4%BA%86%E4%BB%80%E4%B9%88%E5%8A%9E%E6%B3%95.mp3"
+    },
+    {
+      "id": "retry-顺序还差一点-试着在脑海里把刚才的队伍过一遍",
+      "kind": "retry",
+      "text": "顺序还差一点，试着在脑海里把刚才的队伍过一遍。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E9%A1%BA%E5%BA%8F%E8%BF%98%E5%B7%AE%E4%B8%80%E7%82%B9-%E8%AF%95%E7%9D%80%E5%9C%A8%E8%84%91%E6%B5%B7%E9%87%8C%E6%8A%8A%E5%88%9A%E6%89%8D%E7%9A%84%E9%98%9F%E4%BC%8D%E8%BF%87%E4%B8%80%E9%81%8D.mp3"
+    },
+    {
+      "id": "parent-可以问-你是逐张记的-还是分成小组-编成小故事来记的",
+      "kind": "parent",
+      "text": "可以问：你是逐张记的，还是分成小组、编成小故事来记的？",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E5%8F%AF%E4%BB%A5%E9%97%AE-%E4%BD%A0%E6%98%AF%E9%80%90%E5%BC%A0%E8%AE%B0%E7%9A%84-%E8%BF%98%E6%98%AF%E5%88%86%E6%88%90%E5%B0%8F%E7%BB%84-%E7%BC%96%E6%88%90%E5%B0%8F%E6%95%85%E4%BA%8B%E6%9D%A5%E8%AE%B0%E7%9A%84.mp3"
+    },
+    {
+      "id": "hint-先想一想-最容易记住的是哪一张",
+      "kind": "hint",
+      "text": "先想一想，最容易记住的是哪一张？",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E5%85%88%E6%83%B3%E4%B8%80%E6%83%B3-%E6%9C%80%E5%AE%B9%E6%98%93%E8%AE%B0%E4%BD%8F%E7%9A%84%E6%98%AF%E5%93%AA%E4%B8%80%E5%BC%A0.mp3"
+    },
+    {
+      "id": "hint-把记得清楚的先放好-再回想旁边是什么",
+      "kind": "hint",
+      "text": "把记得清楚的先放好，再回想旁边是什么。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E6%8A%8A%E8%AE%B0%E5%BE%97%E6%B8%85%E6%A5%9A%E7%9A%84%E5%85%88%E6%94%BE%E5%A5%BD-%E5%86%8D%E5%9B%9E%E6%83%B3%E6%97%81%E8%BE%B9%E6%98%AF%E4%BB%80%E4%B9%88.mp3"
+    },
+    {
+      "id": "hint-有些水果出现了不止一次-想想它们分别在哪",
+      "kind": "hint",
+      "text": "有些水果出现了不止一次，想想它们分别在哪。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E6%9C%89%E4%BA%9B%E6%B0%B4%E6%9E%9C%E5%87%BA%E7%8E%B0%E4%BA%86%E4%B8%8D%E6%AD%A2%E4%B8%80%E6%AC%A1-%E6%83%B3%E6%83%B3%E5%AE%83%E4%BB%AC%E5%88%86%E5%88%AB%E5%9C%A8%E5%93%AA.mp3"
+    },
+    {
+      "id": "prompt-记住每一格-看清每个位置-遮住以后-把图卡放回原来的格子",
+      "kind": "prompt",
+      "text": "记住每一格。看清每个位置。遮住以后，把图卡放回原来的格子。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%AE%B0%E4%BD%8F%E6%AF%8F%E4%B8%80%E6%A0%BC-%E7%9C%8B%E6%B8%85%E6%AF%8F%E4%B8%AA%E4%BD%8D%E7%BD%AE-%E9%81%AE%E4%BD%8F%E4%BB%A5%E5%90%8E-%E6%8A%8A%E5%9B%BE%E5%8D%A1%E6%94%BE%E5%9B%9E%E5%8E%9F%E6%9D%A5%E7%9A%84%E6%A0%BC%E5%AD%90.mp3"
+    },
+    {
+      "id": "retry-位置还差一点-想想每张图卡刚才住在哪一格",
+      "kind": "retry",
+      "text": "位置还差一点，想想每张图卡刚才住在哪一格。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E4%BD%8D%E7%BD%AE%E8%BF%98%E5%B7%AE%E4%B8%80%E7%82%B9-%E6%83%B3%E6%83%B3%E6%AF%8F%E5%BC%A0%E5%9B%BE%E5%8D%A1%E5%88%9A%E6%89%8D%E4%BD%8F%E5%9C%A8%E5%93%AA%E4%B8%80%E6%A0%BC.mp3"
+    },
+    {
+      "id": "hint-看看能不能把相邻的三个图形当作一组",
+      "kind": "hint",
+      "text": "看看能不能把相邻的三个图形当作一组。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E7%9C%8B%E7%9C%8B%E8%83%BD%E4%B8%8D%E8%83%BD%E6%8A%8A%E7%9B%B8%E9%82%BB%E7%9A%84%E4%B8%89%E4%B8%AA%E5%9B%BE%E5%BD%A2%E5%BD%93%E4%BD%9C%E4%B8%80%E7%BB%84.mp3"
+    },
+    {
+      "id": "prompt-记住每一格-看清每个位置-遮住以后-把图卡放回原来的格子-空白卡也要放回原位",
+      "kind": "prompt",
+      "text": "记住每一格。看清每个位置。遮住以后，把图卡放回原来的格子。空白卡也要放回原位。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%AE%B0%E4%BD%8F%E6%AF%8F%E4%B8%80%E6%A0%BC-%E7%9C%8B%E6%B8%85%E6%AF%8F%E4%B8%AA%E4%BD%8D%E7%BD%AE-%E9%81%AE%E4%BD%8F%E4%BB%A5%E5%90%8E-%E6%8A%8A%E5%9B%BE%E5%8D%A1%E6%94%BE%E5%9B%9E%E5%8E%9F%E6%9D%A5%E7%9A%84%E6%A0%BC%E5%AD%90-%E7%A9%BA%E7%99%BD%E5%8D%A1%E4%B9%9F%E8%A6%81%E6%94%BE%E5%9B%9E%E5%8E%9F%E4%BD%8D.mp3"
+    },
+    {
+      "id": "hint-空白卡也占一个位置-想想刚才哪两格是空白卡",
+      "kind": "hint",
+      "text": "空白卡也占一个位置，想想刚才哪两格是空白卡。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E7%A9%BA%E7%99%BD%E5%8D%A1%E4%B9%9F%E5%8D%A0%E4%B8%80%E4%B8%AA%E4%BD%8D%E7%BD%AE-%E6%83%B3%E6%83%B3%E5%88%9A%E6%89%8D%E5%93%AA%E4%B8%A4%E6%A0%BC%E6%98%AF%E7%A9%BA%E7%99%BD%E5%8D%A1.mp3"
+    },
+    {
+      "id": "prompt-倒着摆回来-先看清顺序-遮住以后-从最后一张开始-倒着摆回来",
+      "kind": "prompt",
+      "text": "倒着摆回来。先看清顺序。遮住以后，从最后一张开始，倒着摆回来。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%80%92%E7%9D%80%E6%91%86%E5%9B%9E%E6%9D%A5-%E5%85%88%E7%9C%8B%E6%B8%85%E9%A1%BA%E5%BA%8F-%E9%81%AE%E4%BD%8F%E4%BB%A5%E5%90%8E-%E4%BB%8E%E6%9C%80%E5%90%8E%E4%B8%80%E5%BC%A0%E5%BC%80%E5%A7%8B-%E5%80%92%E7%9D%80%E6%91%86%E5%9B%9E%E6%9D%A5.mp3"
+    },
+    {
+      "id": "success-对了-你把刚才的顺序倒过来摆好了",
+      "kind": "success",
+      "text": "对了！你把刚才的顺序倒过来摆好了。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%AF%B9%E4%BA%86-%E4%BD%A0%E6%8A%8A%E5%88%9A%E6%89%8D%E7%9A%84%E9%A1%BA%E5%BA%8F%E5%80%92%E8%BF%87%E6%9D%A5%E6%91%86%E5%A5%BD%E4%BA%86.mp3"
+    },
+    {
+      "id": "parent-先问孩子原顺序是什么-再问倒着回忆是从哪一张开始",
+      "kind": "parent",
+      "text": "先问孩子原顺序是什么，再问倒着回忆是从哪一张开始。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E5%85%88%E9%97%AE%E5%AD%A9%E5%AD%90%E5%8E%9F%E9%A1%BA%E5%BA%8F%E6%98%AF%E4%BB%80%E4%B9%88-%E5%86%8D%E9%97%AE%E5%80%92%E7%9D%80%E5%9B%9E%E5%BF%86%E6%98%AF%E4%BB%8E%E5%93%AA%E4%B8%80%E5%BC%A0%E5%BC%80%E5%A7%8B.mp3"
+    },
+    {
+      "id": "hint-先想起最后看到的那张-再往前一张一张找",
+      "kind": "hint",
+      "text": "先想起最后看到的那张，再往前一张一张找。",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E5%85%88%E6%83%B3%E8%B5%B7%E6%9C%80%E5%90%8E%E7%9C%8B%E5%88%B0%E7%9A%84%E9%82%A3%E5%BC%A0-%E5%86%8D%E5%BE%80%E5%89%8D%E4%B8%80%E5%BC%A0%E4%B8%80%E5%BC%A0%E6%89%BE.mp3"
     },
     {
       "id": "system-完成啦-我们再想一想-为什么会这样",

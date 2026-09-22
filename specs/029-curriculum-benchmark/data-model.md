@@ -1,6 +1,6 @@
 # Data Model: 课程与能力扩展
 
-本文是拟实施的契约，不表示 src/types.ts 已迁移。
+本文是完整目标契约。M1已实现三种响应、视觉记忆状态、统一目录及新活动事实记录，详见pilot-scope.md；完整题型、旧数据迁移和全部领域尚未实现，src/types.ts仍保留旧题接口。
 
 ## 1. ReferenceSource / ReferenceItem
 

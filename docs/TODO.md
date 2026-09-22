@@ -5,6 +5,11 @@ small enough to turn into a Spec Kit feature.
 
 ## P0
 
+- After the Mac is manually unlocked, finish native-app acceptance and the
+  remaining viewport/memory lifecycle checks in
+  `specs/029-curriculum-benchmark/pilot-tasks.md`. The pilot is built and
+  installed; do not count native UI verification as passed yet.
+
 - Implement the single-app curriculum expansion in
   `specs/029-curriculum-benchmark/tasks.md`: preserve existing IDs/progress,
   introduce the shared catalog and semantic response/session contracts, then
@@ -13,8 +18,9 @@ small enough to turn into a Spec Kit feature.
   and age-specific observed play before treating newly authored activities as
   ready. The 24-activity interaction pilot is not the full benchmark scope.
 - Keep research coverage, implemented skill coverage, and playable activity
-  counts separate. The current application remains 40 games / 489 rounds until
-  implementation and its asset/release checks actually pass.
+  counts separate. The first increment contains 44 groups / 513 rounds,
+  comprising the unchanged 40 / 489 legacy bank and 4 / 24 interactive pilot.
+  This does not complete the 71 adopted families.
 
 - Complete the exact Cocos Web Mobile manual pass at 667×375, 844×390, and
   932×430. The official Creator 3.8.8 landscape command build plus iPhone 15 Pro

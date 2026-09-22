@@ -4,7 +4,10 @@ This project now has a deployment-owned content boundary at `content/` inside ea
 
 ## Current Phase
 
-The current game question bank still lives in `src/data/games.ts` and is compiled into the app during `pnpm build`. This keeps the packaging change small and avoids mixing deployment work with a high-risk curriculum data migration.
+The legacy question bank remains in `src/data/games.ts`; the first 24 interactive
+activities live in `src/curriculum/pilot/`. The shared
+`src/curriculum/catalog.ts` composes both for the app, voice export and audits,
+and is compiled during `pnpm build`. The old definitions and IDs are unchanged.
 
 The generated release package includes:
 
@@ -62,9 +65,10 @@ domain/family modules and a legacy adapter preserving existing game/round IDs.
 Application loading, curriculum audits, voice export, and platform exports must
 consume that same catalog.
 
-This catalog refactor is planned, not implemented. The current TypeScript
-question bank and the `boundary-placeholder` release manifest remain the actual
-runtime state. A runtime external-JSON loader is still a separate follow-up.
+The first shared catalog and module-graph loading are implemented for the
+24-activity pilot. Broader domain decomposition and historical migration are
+still planned. The `boundary-placeholder` release manifest remains the actual
+external-content state. A runtime external-JSON loader is still a separate follow-up.
 Content structure versions, content revisions, application versions, and age
 recommendations have separate meanings.
 

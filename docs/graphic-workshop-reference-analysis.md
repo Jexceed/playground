@@ -2,8 +2,11 @@
 
 Created: 2026-07-07
 
-2026-09-22 status: this document still describes the implemented first 48-round
-图形工坊 scope. The broader single-app expansion is now governed by
+2026-09-22 status: this document describes the preserved first 48-round
+图形工坊 scope. Six interactive 图形推理盘 activities now coexist in the same
+world (54 rounds total). The original drawn A/B/C/D rule below applies to the
+legacy choice families; the new placement activities use drawn boards and
+registered image tokens instead of forced A/B/C/D responses. Expansion is governed by
 [feature 029](../specs/029-curriculum-benchmark/plan.md) and its
 [source-backed matrix](../specs/029-curriculum-benchmark/coverage-matrix.md).
 That feature reviews the original collection in Downloads, preserves old

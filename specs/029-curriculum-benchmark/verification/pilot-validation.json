@@ -1,0 +1,44 @@
+{
+  "date": "2026-09-22",
+  "scope": "framework and 24 pilot activities",
+  "catalogGames": 44,
+  "catalogRounds": 513,
+  "legacyGames": 40,
+  "legacyRounds": 489,
+  "legacyHash": "ffc96031be1c399ba36148fe0efdde8a8ddfd1e9722d209599d421345a7a217e",
+  "automatedTests": {
+    "passed": 28,
+    "failed": 0
+  },
+  "browser": {
+    "completedActivities": 24,
+    "viewport": [
+      1280,
+      720
+    ],
+    "horizontalOverflow": 0,
+    "missingImages": 0,
+    "voiceFallbacks": 0,
+    "mouseDragVerified": true,
+    "reloadStableIdAndCompletionVerified": true,
+    "narrowViewportCheck": "pending OS unlock",
+    "automaticMemoryTimerAndBackgroundUI": "pending OS unlock; reducer covered, manual observation/retention/recall verified"
+  },
+  "voice": {
+    "count": 1958,
+    "provider": "edge-tts Python package",
+    "voice": "zh-CN-XiaoxiaoNeural",
+    "failures": [],
+    "macOSSayOrMixed": false
+  },
+  "native": {
+    "build": "passed",
+    "install": "passed",
+    "installedPath": "/Applications/小小思考屋.app",
+    "codesignVerify": "passed",
+    "installedExecutableSha256": "3e82fe9b97baa05df9462743661e16539043ad099a0fc1655072b1b68411301f",
+    "builtExecutableSha256": "3e82fe9b97baa05df9462743661e16539043ad099a0fc1655072b1b68411301f",
+    "gui": "pending: Mac locked; user unlock requested"
+  },
+  "goalComplete": false
+}

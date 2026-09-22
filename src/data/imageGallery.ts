@@ -149,6 +149,16 @@ export const imageGallery = {
     },
   },
   items: {
+    thinkingRedCircle: { src: "/images/items/thinking-symbols/red-circle.png", alt: "红色圆形" },
+    thinkingRedSquare: { src: "/images/items/thinking-symbols/red-square.png", alt: "红色方形" },
+    thinkingRedTriangle: { src: "/images/items/thinking-symbols/red-triangle.png", alt: "红色三角形" },
+    thinkingBlueCircle: { src: "/images/items/thinking-symbols/blue-circle.png", alt: "蓝色圆形" },
+    thinkingBlueSquare: { src: "/images/items/thinking-symbols/blue-square.png", alt: "蓝色方形" },
+    thinkingBlueTriangle: { src: "/images/items/thinking-symbols/blue-triangle.png", alt: "蓝色三角形" },
+    thinkingYellowCircle: { src: "/images/items/thinking-symbols/yellow-circle.png", alt: "黄色圆形" },
+    thinkingYellowSquare: { src: "/images/items/thinking-symbols/yellow-square.png", alt: "黄色方形" },
+    thinkingYellowTriangle: { src: "/images/items/thinking-symbols/yellow-triangle.png", alt: "黄色三角形" },
+    thinkingBlankCard: { src: "/images/items/thinking-symbols/blank-card.png", alt: "空白卡" },
     patternRedDisc: {
       src: "/images/items/pattern-train/red-disc.png",
       alt: "规律图卡红色圆片",

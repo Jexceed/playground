@@ -1,6 +1,7 @@
 import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
-import ts from "typescript";
+import { loadGameData } from "./lib/load-game-data.mjs";
+import { auditActivityCurriculum } from "./lib/audit-activity-curriculum.mjs";
 import { inspectVoiceMedia } from "./lib/voice-media-quality.mjs";
 
 const indexHtml = readFileSync("index.html", "utf8");
@@ -11,20 +12,11 @@ const imageGallerySource = readFileSync("src/data/imageGallery.ts", "utf8");
 const tauriConfig = existsSync("src-tauri/tauri.conf.json")
   ? JSON.parse(readFileSync("src-tauri/tauri.conf.json", "utf8"))
   : null;
-const imageGalleryOutput = ts.transpileModule(imageGallerySource, {
-  compilerOptions: { module: ts.ModuleKind.ES2020, target: ts.ScriptTarget.ES2020 },
-}).outputText;
-const imageGalleryModuleUrl = `data:text/javascript;base64,${Buffer.from(imageGalleryOutput).toString("base64")}`;
-const { imageGallery } = await import(imageGalleryModuleUrl);
+const curriculumData = await loadGameData();
+const { games, worlds, imageGallery, patternTrainSizeDiameters, activitySets, catalogGames } = curriculumData;
 const galleryImages = flattenGalleryImages(imageGallery);
 const galleryImageSrcs = new Set(galleryImages.map((image) => image.src));
-
 const source = readFileSync("src/data/games.ts", "utf8");
-const output = ts.transpileModule(source, {
-  compilerOptions: { module: ts.ModuleKind.ES2020, target: ts.ScriptTarget.ES2020 },
-}).outputText.replace('import { imageGallery } from "./imageGallery";', `const imageGallery = ${JSON.stringify(imageGallery)};`);
-const moduleUrl = `data:text/javascript;base64,${Buffer.from(output.replace("../types", "data:text/javascript,export{}")).toString("base64")}`;
-const { games, patternTrainSizeDiameters, worlds } = await import(moduleUrl);
 
 const visualTokenSource = readFileSync("src/components/VisualToken.tsx", "utf8");
 const knownVisuals = new Set([
@@ -270,7 +262,7 @@ const memoryCameraLabelAliases = new Map([
   ["🐶", "小狗"],
   ["🐰", "小兔"],
 ]);
-const counts = games.reduce(
+const counts = catalogGames.reduce(
   (acc, game) => {
     acc.totalGames += 1;
     acc[game.world] += game.rounds.length;
@@ -575,8 +567,19 @@ for (const alt of [...imageGallerySource.matchAll(/alt:\s*"([^"]*)"/g)].map((mat
   if (!alt.trim()) problems.push("image gallery image missing alt text");
 }
 
+const activityAudit = auditActivityCurriculum(
+  curriculumData,
+  JSON.parse(readFileSync("public/audio/voice-lines.json", "utf8")),
+  JSON.parse(readFileSync("public/audio/voice/manifest.json", "utf8")),
+);
+problems.push(...activityAudit.problems);
+
 const report = {
   ...counts,
+  legacyGames: games.length,
+  legacyRounds: games.reduce((sum, game) => sum + game.rounds.length, 0),
+  interactiveGames: activityAudit.activitySets,
+  interactiveRounds: activityAudit.activities,
   mathTargetMet: counts.math >= 100,
   logicTargetMet: counts.logic >= 100,
   graphicTargetMet: counts.graphic >= 48,

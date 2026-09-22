@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-12T16:22:13.945Z",
+  "generatedAt": "2026-09-22T06:53:51.573Z",
   "recommendedVoice": "warm adult female Mandarin, smiling, preschool teacher, 0.85 speed, crisp consonants",
-  "lineCount": 1801,
+  "lineCount": 1958,
   "lines": [
     {
       "id": "game-title-数一数",
@@ -269,7 +269,8 @@
         "logic-balance-swap/logic-balance-swap-9",
         "logic-balance-swap/logic-balance-swap-9",
         "logic-balance-swap/logic-balance-swap-9",
-        "logic-mirror-fold/logic-mirror-fold-11"
+        "logic-mirror-fold/logic-mirror-fold-11",
+        "logic-memory-placement/memory-repeated-fruit"
       ]
     },
     {
@@ -336,7 +337,9 @@
         "logic-balance-swap/logic-balance-swap-10",
         "logic-balance-swap/logic-balance-swap-10",
         "logic-balance-swap/logic-balance-swap-10",
-        "logic-mirror-fold/logic-mirror-fold-11"
+        "logic-mirror-fold/logic-mirror-fold-11",
+        "logic-memory-placement/memory-repeated-fruit",
+        "logic-memory-placement/memory-six-positions"
       ]
     },
     {
@@ -516,7 +519,9 @@
         "logic-route-steps/logic-route-steps-1",
         "logic-route-steps/logic-route-steps-2",
         "logic-route-steps/logic-route-steps-3",
-        "logic-route-steps/logic-route-steps-4"
+        "logic-route-steps/logic-route-steps-4",
+        "logic-memory-placement/memory-repeated-fruit",
+        "logic-memory-placement/memory-six-positions"
       ]
     },
     {
@@ -634,7 +639,8 @@
         "logic-balance-swap/logic-balance-swap-10",
         "logic-mirror-fold/logic-mirror-fold-3",
         "logic-mirror-fold/logic-mirror-fold-3",
-        "logic-mirror-fold/logic-mirror-fold-8"
+        "logic-mirror-fold/logic-mirror-fold-8",
+        "logic-memory-placement/memory-repeated-fruit"
       ]
     },
     {
@@ -12506,7 +12512,15 @@
         "logic-address-map/logic-address-map-7",
         "logic-address-map/logic-address-map-8",
         "logic-address-map/logic-address-map-11",
-        "logic-address-map/logic-address-map-12"
+        "logic-address-map/logic-address-map-12",
+        "logic-lineup-challenge/lineup-four-chain",
+        "logic-lineup-challenge/lineup-fixed-ends",
+        "logic-lineup-challenge/lineup-immediate-neighbor",
+        "logic-lineup-challenge/lineup-two-valid-pairs",
+        "logic-lineup-challenge/lineup-middle-and-neighbor",
+        "logic-memory-placement/memory-animal-line",
+        "logic-memory-placement/memory-six-positions",
+        "logic-memory-placement/memory-blank-positions"
       ]
     },
     {
@@ -12831,7 +12845,16 @@
         "logic-route-steps/logic-route-steps-7",
         "logic-route-steps/logic-route-steps-8",
         "logic-route-steps/logic-route-steps-9",
-        "logic-route-steps/logic-route-steps-10"
+        "logic-route-steps/logic-route-steps-10",
+        "logic-lineup-challenge/lineup-three-in-order",
+        "logic-lineup-challenge/lineup-four-chain",
+        "logic-lineup-challenge/lineup-fixed-ends",
+        "logic-lineup-challenge/lineup-immediate-neighbor",
+        "logic-lineup-challenge/lineup-two-valid-pairs",
+        "logic-lineup-challenge/lineup-middle-and-neighbor",
+        "logic-memory-placement/memory-animal-line",
+        "logic-memory-placement/memory-six-positions",
+        "logic-memory-placement/memory-blank-positions"
       ]
     },
     {
@@ -12896,7 +12919,16 @@
         "logic-route-steps/logic-route-steps-7",
         "logic-route-steps/logic-route-steps-8",
         "logic-route-steps/logic-route-steps-9",
-        "logic-route-steps/logic-route-steps-10"
+        "logic-route-steps/logic-route-steps-10",
+        "logic-lineup-challenge/lineup-three-in-order",
+        "logic-lineup-challenge/lineup-four-chain",
+        "logic-lineup-challenge/lineup-fixed-ends",
+        "logic-lineup-challenge/lineup-immediate-neighbor",
+        "logic-lineup-challenge/lineup-two-valid-pairs",
+        "logic-lineup-challenge/lineup-middle-and-neighbor",
+        "logic-memory-placement/memory-animal-line",
+        "logic-memory-placement/memory-six-positions",
+        "logic-memory-placement/memory-blank-positions"
       ]
     },
     {
@@ -12980,7 +13012,16 @@
         "logic-difference-detective/logic-difference-detective-11",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-3",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-9",
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-9"
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-9",
+        "logic-lineup-challenge/lineup-three-in-order",
+        "logic-lineup-challenge/lineup-four-chain",
+        "logic-lineup-challenge/lineup-fixed-ends",
+        "logic-lineup-challenge/lineup-immediate-neighbor",
+        "logic-lineup-challenge/lineup-two-valid-pairs",
+        "logic-lineup-challenge/lineup-middle-and-neighbor",
+        "logic-memory-placement/memory-animal-line",
+        "logic-memory-placement/memory-six-positions",
+        "logic-memory-placement/memory-blank-positions"
       ]
     },
     {
@@ -20361,6 +20402,1562 @@
       "tone": "warm, delighted, clear",
       "contexts": [
         "graphic-gap-close/graphic-gap-close-8"
+      ]
+    },
+    {
+      "id": "activity-system-还有空位没有放好-再看一看",
+      "kind": "activity-system",
+      "text": "还有空位没有放好，再看一看。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "activity/incomplete"
+      ]
+    },
+    {
+      "id": "activity-system-这次摆放没有对上-请重新放一放",
+      "kind": "activity-system",
+      "text": "这次摆放没有对上，请重新放一放。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "activity/invalid"
+      ]
+    },
+    {
+      "id": "activity-system-先试着放一张图卡吧",
+      "kind": "activity-system",
+      "text": "先试着放一张图卡吧。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "activity/noHistory"
+      ]
+    },
+    {
+      "id": "activity-system-准备好以后-点开始记忆-看清图卡的位置和顺序",
+      "kind": "activity-system",
+      "text": "准备好以后，点开始记忆。看清图卡的位置和顺序。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "activity/ready"
+      ]
+    },
+    {
+      "id": "activity-system-先在脑海里想一想",
+      "kind": "activity-system",
+      "text": "先在脑海里想一想。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "activity/remember"
+      ]
+    },
+    {
+      "id": "activity-system-现在把记住的图卡摆回来吧",
+      "kind": "activity-system",
+      "text": "现在把记住的图卡摆回来吧。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "activity/recall"
+      ]
+    },
+    {
+      "id": "activity-system-刚才暂停了-准备好以后-我们重新看一遍",
+      "kind": "activity-system",
+      "text": "刚才暂停了。准备好以后，我们重新看一遍。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "activity/interrupted"
+      ]
+    },
+    {
+      "id": "activity-system-线索都在这里了-试着一步一步检查",
+      "kind": "activity-system",
+      "text": "线索都在这里了，试着一步一步检查。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "activity/hintEnd"
+      ]
+    },
+    {
+      "id": "activity-system-再检查每一行和每一列-看看有没有重复或缺少的图卡",
+      "kind": "activity-system",
+      "text": "再检查每一行和每一列，看看有没有重复或缺少的图卡。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "activity/latin"
+      ]
+    },
+    {
+      "id": "activity-system-每张图卡只放一次-再检查一下",
+      "kind": "activity-system",
+      "text": "每张图卡只放一次，再检查一下。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "activity/once"
+      ]
+    },
+    {
+      "id": "activity-system-先选一张图卡-再点空位",
+      "kind": "activity-system",
+      "text": "先选一张图卡，再点空位。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "activity/selectFirst"
+      ]
+    },
+    {
+      "id": "game-title-规则收纳盒",
+      "kind": "game-title",
+      "text": "规则收纳盒",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-workshop"
+      ]
+    },
+    {
+      "id": "game-goal-用颜色和形状的不同条件-挑出所有符合要求的图卡",
+      "kind": "game-goal",
+      "text": "用颜色和形状的不同条件，挑出所有符合要求的图卡。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-workshop"
+      ]
+    },
+    {
+      "id": "parent-先让孩子自己试-再请他指出线索-说说理由",
+      "kind": "parent",
+      "text": "先让孩子自己试，再请他指出线索、说说理由。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-workshop",
+        "logic-lineup-challenge",
+        "graphic-rule-grid",
+        "logic-memory-placement"
+      ]
+    },
+    {
+      "id": "prompt-帮小兔收图卡-把同时符合两条线索的图卡都选出来-颜色是红色-形状是圆形或三角形",
+      "kind": "prompt",
+      "text": "帮小兔收图卡。把同时符合两条线索的图卡都选出来。颜色是红色。形状是圆形或三角形。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-workshop/rules-red-round-triangle"
+      ]
+    },
+    {
+      "id": "success-对了-红色圆形和红色三角形同时符合两条线索",
+      "kind": "success",
+      "text": "对了！红色圆形和红色三角形同时符合两条线索。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-rule-workshop/rules-red-round-triangle"
+      ]
+    },
+    {
+      "id": "retry-选好颜色以后-还要再看看形状",
+      "kind": "retry",
+      "text": "选好颜色以后，还要再看看形状。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-rule-workshop/rules-red-round-triangle"
+      ]
+    },
+    {
+      "id": "parent-红色方形为什么没有收进去-蓝色圆形又少了哪个条件",
+      "kind": "parent",
+      "text": "红色方形为什么没有收进去？蓝色圆形又少了哪个条件？",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-workshop/rules-red-round-triangle"
+      ]
+    },
+    {
+      "id": "hint-先把红色的图卡找出来",
+      "kind": "hint",
+      "text": "先把红色的图卡找出来。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-workshop/rules-red-round-triangle"
+      ]
+    },
+    {
+      "id": "hint-再看红色图卡的形状-方形先留在桌上",
+      "kind": "hint",
+      "text": "再看红色图卡的形状，方形先留在桌上。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-workshop/rules-red-round-triangle"
+      ]
+    },
+    {
+      "id": "clue-颜色是红色",
+      "kind": "clue",
+      "text": "颜色是红色。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-workshop/rules-red-round-triangle"
+      ]
+    },
+    {
+      "id": "clue-形状是圆形或三角形",
+      "kind": "clue",
+      "text": "形状是圆形或三角形。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-workshop/rules-red-round-triangle"
+      ]
+    },
+    {
+      "id": "object-蓝色圆形",
+      "kind": "object",
+      "text": "蓝色圆形",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-workshop/rules-red-round-triangle",
+        "logic-rule-workshop/rules-blue-or-triangle",
+        "logic-rule-workshop/rules-circles-put-red-back",
+        "logic-rule-workshop/rules-exactly-one-shared-feature",
+        "graphic-rule-grid/grid-color-and-shape",
+        "graphic-rule-grid/grid-one-missing-rule",
+        "graphic-rule-grid/grid-diagonal-clues",
+        "graphic-rule-grid/grid-two-attributes",
+        "graphic-rule-grid/grid-build-your-own",
+        "graphic-rule-grid/grid-blank-is-a-card",
+        "logic-memory-placement/memory-reverse-five"
+      ]
+    },
+    {
+      "id": "object-红色方形",
+      "kind": "object",
+      "text": "红色方形",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-workshop/rules-red-round-triangle",
+        "logic-rule-workshop/rules-blue-or-triangle",
+        "logic-rule-workshop/rules-yellow-two-shapes",
+        "logic-rule-workshop/rules-two-color-shape-pairs",
+        "logic-rule-workshop/rules-exactly-one-shared-feature",
+        "graphic-rule-grid/grid-color-and-shape",
+        "graphic-rule-grid/grid-two-attributes",
+        "logic-memory-placement/memory-reverse-five"
+      ]
+    },
+    {
+      "id": "object-红色三角形",
+      "kind": "object",
+      "text": "红色三角形",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-workshop/rules-red-round-triangle",
+        "logic-rule-workshop/rules-blue-or-triangle",
+        "logic-rule-workshop/rules-circles-put-red-back",
+        "logic-rule-workshop/rules-two-color-shape-pairs",
+        "logic-rule-workshop/rules-exactly-one-shared-feature",
+        "graphic-rule-grid/grid-color-and-shape",
+        "graphic-rule-grid/grid-two-attributes",
+        "logic-memory-placement/memory-two-groups"
+      ]
+    },
+    {
+      "id": "object-黄色方形",
+      "kind": "object",
+      "text": "黄色方形",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-workshop/rules-red-round-triangle",
+        "logic-rule-workshop/rules-blue-or-triangle",
+        "logic-rule-workshop/rules-yellow-two-shapes",
+        "logic-rule-workshop/rules-two-color-shape-pairs",
+        "graphic-rule-grid/grid-two-attributes"
+      ]
+    },
+    {
+      "id": "object-红色圆形",
+      "kind": "object",
+      "text": "红色圆形",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-workshop/rules-red-round-triangle",
+        "logic-rule-workshop/rules-yellow-two-shapes",
+        "logic-rule-workshop/rules-circles-put-red-back",
+        "logic-rule-workshop/rules-two-color-shape-pairs",
+        "logic-rule-workshop/rules-exactly-one-shared-feature",
+        "logic-rule-workshop/rules-exactly-one-shared-feature",
+        "graphic-rule-grid/grid-color-and-shape",
+        "graphic-rule-grid/grid-two-attributes",
+        "logic-memory-placement/memory-two-groups",
+        "logic-memory-placement/memory-reverse-five"
+      ]
+    },
+    {
+      "id": "object-蓝色三角形",
+      "kind": "object",
+      "text": "蓝色三角形",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-workshop/rules-red-round-triangle",
+        "logic-rule-workshop/rules-two-color-shape-pairs",
+        "logic-rule-workshop/rules-exactly-one-shared-feature",
+        "graphic-rule-grid/grid-color-and-shape",
+        "graphic-rule-grid/grid-one-missing-rule",
+        "graphic-rule-grid/grid-diagonal-clues",
+        "graphic-rule-grid/grid-two-attributes",
+        "graphic-rule-grid/grid-build-your-own"
+      ]
+    },
+    {
+      "id": "prompt-把两类图卡收好-蓝色图形都要-三角形也都要-符合其中一条就选-收好所有蓝色图形-也收好所有三角形",
+      "kind": "prompt",
+      "text": "把两类图卡收好。蓝色图形都要，三角形也都要。符合其中一条就选。收好所有蓝色图形。也收好所有三角形。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-workshop/rules-blue-or-triangle"
+      ]
+    },
+    {
+      "id": "success-找齐了-蓝色图形和三角形都收好了",
+      "kind": "success",
+      "text": "找齐了！蓝色图形和三角形都收好了。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-rule-workshop/rules-blue-or-triangle"
+      ]
+    },
+    {
+      "id": "retry-这次只要符合其中一个要求-就可以收进去",
+      "kind": "retry",
+      "text": "这次只要符合其中一个要求，就可以收进去。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-rule-workshop/rules-blue-or-triangle"
+      ]
+    },
+    {
+      "id": "parent-黄色三角形不是蓝色-为什么也要收",
+      "kind": "parent",
+      "text": "黄色三角形不是蓝色，为什么也要收？",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-workshop/rules-blue-or-triangle"
+      ]
+    },
+    {
+      "id": "hint-先选好蓝色的图卡",
+      "kind": "hint",
+      "text": "先选好蓝色的图卡。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-workshop/rules-blue-or-triangle"
+      ]
+    },
+    {
+      "id": "hint-再找三角形-看看有没有还没选到的",
+      "kind": "hint",
+      "text": "再找三角形，看看有没有还没选到的。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-workshop/rules-blue-or-triangle"
+      ]
+    },
+    {
+      "id": "clue-收好所有蓝色图形",
+      "kind": "clue",
+      "text": "收好所有蓝色图形。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-workshop/rules-blue-or-triangle"
+      ]
+    },
+    {
+      "id": "clue-也收好所有三角形",
+      "kind": "clue",
+      "text": "也收好所有三角形。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-workshop/rules-blue-or-triangle"
+      ]
+    },
+    {
+      "id": "object-黄色三角形",
+      "kind": "object",
+      "text": "黄色三角形",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-workshop/rules-blue-or-triangle",
+        "logic-rule-workshop/rules-yellow-two-shapes",
+        "logic-rule-workshop/rules-circles-put-red-back",
+        "logic-rule-workshop/rules-two-color-shape-pairs",
+        "logic-rule-workshop/rules-exactly-one-shared-feature",
+        "graphic-rule-grid/grid-two-attributes",
+        "logic-memory-placement/memory-two-groups",
+        "logic-memory-placement/memory-reverse-five"
+      ]
+    },
+    {
+      "id": "object-蓝色方形",
+      "kind": "object",
+      "text": "蓝色方形",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-workshop/rules-blue-or-triangle",
+        "logic-rule-workshop/rules-yellow-two-shapes",
+        "logic-rule-workshop/rules-circles-put-red-back",
+        "logic-rule-workshop/rules-two-color-shape-pairs",
+        "graphic-rule-grid/grid-color-and-shape",
+        "graphic-rule-grid/grid-one-missing-rule",
+        "graphic-rule-grid/grid-diagonal-clues",
+        "graphic-rule-grid/grid-two-attributes",
+        "graphic-rule-grid/grid-build-your-own",
+        "graphic-rule-grid/grid-blank-is-a-card",
+        "logic-memory-placement/memory-two-groups",
+        "logic-memory-placement/memory-reverse-five"
+      ]
+    },
+    {
+      "id": "prompt-给小熊挑图卡-黄色的图卡里面-只挑圆形和方形-先看黄色的图卡-只收圆形和方形",
+      "kind": "prompt",
+      "text": "给小熊挑图卡。黄色的图卡里面，只挑圆形和方形。先看黄色的图卡。只收圆形和方形。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-workshop/rules-yellow-two-shapes"
+      ]
+    },
+    {
+      "id": "success-对了-黄色圆形和黄色方形都符合要求",
+      "kind": "success",
+      "text": "对了！黄色圆形和黄色方形都符合要求。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-rule-workshop/rules-yellow-two-shapes"
+      ]
+    },
+    {
+      "id": "retry-再看看颜色和形状-有没有只符合一条的图卡",
+      "kind": "retry",
+      "text": "再看看颜色和形状，有没有只符合一条的图卡。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-rule-workshop/rules-yellow-two-shapes"
+      ]
+    },
+    {
+      "id": "parent-请孩子换一个检查顺序-先看形状再看颜色-结果一样吗",
+      "kind": "parent",
+      "text": "请孩子换一个检查顺序，先看形状再看颜色，结果一样吗？",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-workshop/rules-yellow-two-shapes"
+      ]
+    },
+    {
+      "id": "hint-颜色和形状要分两步看",
+      "kind": "hint",
+      "text": "颜色和形状要分两步看。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-workshop/rules-yellow-two-shapes"
+      ]
+    },
+    {
+      "id": "hint-黄色三角形虽然颜色对了-形状还不符合",
+      "kind": "hint",
+      "text": "黄色三角形虽然颜色对了，形状还不符合。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-workshop/rules-yellow-two-shapes"
+      ]
+    },
+    {
+      "id": "clue-先看黄色的图卡",
+      "kind": "clue",
+      "text": "先看黄色的图卡。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-workshop/rules-yellow-two-shapes"
+      ]
+    },
+    {
+      "id": "clue-只收圆形和方形",
+      "kind": "clue",
+      "text": "只收圆形和方形。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-workshop/rules-yellow-two-shapes"
+      ]
+    },
+    {
+      "id": "object-黄色圆形",
+      "kind": "object",
+      "text": "黄色圆形",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-workshop/rules-yellow-two-shapes",
+        "logic-rule-workshop/rules-circles-put-red-back",
+        "logic-rule-workshop/rules-exactly-one-shared-feature",
+        "graphic-rule-grid/grid-two-attributes",
+        "logic-memory-placement/memory-reverse-five"
+      ]
+    },
+    {
+      "id": "prompt-先挑-再放回-先挑出所有圆形-再把红色圆形放回桌上-最后应该留下哪些-先挑出所有圆形-红色圆形放回去",
+      "kind": "prompt",
+      "text": "先挑，再放回。先挑出所有圆形，再把红色圆形放回桌上。最后应该留下哪些。先挑出所有圆形。红色圆形放回去。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-workshop/rules-circles-put-red-back"
+      ]
+    },
+    {
+      "id": "success-对了-留下蓝色圆形和黄色圆形-红色圆形已经放回去了",
+      "kind": "success",
+      "text": "对了！留下蓝色圆形和黄色圆形，红色圆形已经放回去了。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-rule-workshop/rules-circles-put-red-back"
+      ]
+    },
+    {
+      "id": "retry-先挑圆形-再做放回这一步",
+      "kind": "retry",
+      "text": "先挑圆形，再做放回这一步。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-rule-workshop/rules-circles-put-red-back"
+      ]
+    },
+    {
+      "id": "parent-可以先用手指演一遍挑出和放回-最后剩下的为什么是这两张",
+      "kind": "parent",
+      "text": "可以先用手指演一遍挑出和放回，最后剩下的为什么是这两张？",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-workshop/rules-circles-put-red-back"
+      ]
+    },
+    {
+      "id": "hint-先只看形状-找到所有圆形",
+      "kind": "hint",
+      "text": "先只看形状，找到所有圆形。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-workshop/rules-circles-put-red-back"
+      ]
+    },
+    {
+      "id": "hint-想一想-哪种圆形需要放回去",
+      "kind": "hint",
+      "text": "想一想，哪种圆形需要放回去？",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-workshop/rules-circles-put-red-back"
+      ]
+    },
+    {
+      "id": "clue-先挑出所有圆形",
+      "kind": "clue",
+      "text": "先挑出所有圆形。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-workshop/rules-circles-put-red-back"
+      ]
+    },
+    {
+      "id": "clue-红色圆形放回去",
+      "kind": "clue",
+      "text": "红色圆形放回去。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-workshop/rules-circles-put-red-back"
+      ]
+    },
+    {
+      "id": "prompt-照着清单收图卡-清单上有红色方形和蓝色三角形-把它们都找出来-红色要配方形-蓝色要配三角形",
+      "kind": "prompt",
+      "text": "照着清单收图卡。清单上有红色方形和蓝色三角形，把它们都找出来。红色要配方形。蓝色要配三角形。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-workshop/rules-two-color-shape-pairs"
+      ]
+    },
+    {
+      "id": "success-清单上的两张都找到了-红色方形和蓝色三角形",
+      "kind": "success",
+      "text": "清单上的两张都找到了：红色方形和蓝色三角形。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-rule-workshop/rules-two-color-shape-pairs"
+      ]
+    },
+    {
+      "id": "retry-颜色和形状要按清单配成一组",
+      "kind": "retry",
+      "text": "颜色和形状要按清单配成一组。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-rule-workshop/rules-two-color-shape-pairs"
+      ]
+    },
+    {
+      "id": "parent-如果把清单里的两种形状交换一下-答案会怎样变",
+      "kind": "parent",
+      "text": "如果把清单里的两种形状交换一下，答案会怎样变？",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-workshop/rules-two-color-shape-pairs"
+      ]
+    },
+    {
+      "id": "hint-先找红色方形-再找蓝色三角形",
+      "kind": "hint",
+      "text": "先找红色方形，再找蓝色三角形。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-workshop/rules-two-color-shape-pairs"
+      ]
+    },
+    {
+      "id": "hint-蓝色方形和红色三角形虽然看着相近-却不在清单里",
+      "kind": "hint",
+      "text": "蓝色方形和红色三角形虽然看着相近，却不在清单里。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-workshop/rules-two-color-shape-pairs"
+      ]
+    },
+    {
+      "id": "clue-红色要配方形",
+      "kind": "clue",
+      "text": "红色要配方形。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-workshop/rules-two-color-shape-pairs"
+      ]
+    },
+    {
+      "id": "clue-蓝色要配三角形",
+      "kind": "clue",
+      "text": "蓝色要配三角形。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-workshop/rules-two-color-shape-pairs"
+      ]
+    },
+    {
+      "id": "prompt-找一个共同点-和这张红色圆形比-只能颜色一样-或者只能形状一样-比较颜色和形状-只能有一个共同点",
+      "kind": "prompt",
+      "text": "找一个共同点。和这张红色圆形比，只能颜色一样，或者只能形状一样。比较颜色和形状。只能有一个共同点。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-workshop/rules-exactly-one-shared-feature"
+      ]
+    },
+    {
+      "id": "success-对了-选中的图卡都只和样例有一个共同点",
+      "kind": "success",
+      "text": "对了！选中的图卡都只和样例有一个共同点。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-rule-workshop/rules-exactly-one-shared-feature"
+      ]
+    },
+    {
+      "id": "retry-每张卡都数一数-颜色-形状-到底有几个相同",
+      "kind": "retry",
+      "text": "每张卡都数一数：颜色、形状，到底有几个相同？",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-rule-workshop/rules-exactly-one-shared-feature"
+      ]
+    },
+    {
+      "id": "parent-让孩子分别指出一张有一个-两个和零个共同点的图卡",
+      "kind": "parent",
+      "text": "让孩子分别指出一张有一个、两个和零个共同点的图卡。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-workshop/rules-exactly-one-shared-feature"
+      ]
+    },
+    {
+      "id": "hint-先说每张卡和红色圆形有几个共同点",
+      "kind": "hint",
+      "text": "先说每张卡和红色圆形有几个共同点。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-workshop/rules-exactly-one-shared-feature"
+      ]
+    },
+    {
+      "id": "hint-红色圆形有两个共同点-这次不能选-黄色三角形一个都没有",
+      "kind": "hint",
+      "text": "红色圆形有两个共同点，这次不能选；黄色三角形一个都没有。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-workshop/rules-exactly-one-shared-feature"
+      ]
+    },
+    {
+      "id": "clue-比较颜色和形状",
+      "kind": "clue",
+      "text": "比较颜色和形状。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-workshop/rules-exactly-one-shared-feature"
+      ]
+    },
+    {
+      "id": "clue-只能有一个共同点",
+      "kind": "clue",
+      "text": "只能有一个共同点。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-workshop/rules-exactly-one-shared-feature"
+      ]
+    },
+    {
+      "id": "game-title-线索排排队",
+      "kind": "game-title",
+      "text": "线索排排队",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-lineup-challenge"
+      ]
+    },
+    {
+      "id": "game-goal-根据几条关系线索-把小动物排成符合条件的队伍",
+      "kind": "game-goal",
+      "text": "根据几条关系线索，把小动物排成符合条件的队伍。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-lineup-challenge"
+      ]
+    },
+    {
+      "id": "prompt-小动物排队啦-听清每条线索-把小动物从左到右排好-小兔在小猫前面-小猫在小狗前面",
+      "kind": "prompt",
+      "text": "小动物排队啦。听清每条线索，把小动物从左到右排好。小兔在小猫前面。小猫在小狗前面。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-lineup-challenge/lineup-three-in-order"
+      ]
+    },
+    {
+      "id": "success-这支队伍符合所有线索-说说你是怎么排出来的",
+      "kind": "success",
+      "text": "这支队伍符合所有线索！说说你是怎么排出来的。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-lineup-challenge/lineup-three-in-order",
+        "logic-lineup-challenge/lineup-four-chain",
+        "logic-lineup-challenge/lineup-fixed-ends",
+        "logic-lineup-challenge/lineup-immediate-neighbor",
+        "logic-lineup-challenge/lineup-two-valid-pairs",
+        "logic-lineup-challenge/lineup-middle-and-neighbor"
+      ]
+    },
+    {
+      "id": "retry-还有一条线索没对上-试着换换位置",
+      "kind": "retry",
+      "text": "还有一条线索没对上，试着换换位置。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-lineup-challenge/lineup-three-in-order",
+        "logic-lineup-challenge/lineup-four-chain",
+        "logic-lineup-challenge/lineup-fixed-ends",
+        "logic-lineup-challenge/lineup-immediate-neighbor",
+        "logic-lineup-challenge/lineup-two-valid-pairs",
+        "logic-lineup-challenge/lineup-middle-and-neighbor"
+      ]
+    },
+    {
+      "id": "parent-没有直接说小兔和小狗的关系-为什么也能知道谁在前",
+      "kind": "parent",
+      "text": "没有直接说小兔和小狗的关系，为什么也能知道谁在前？",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-lineup-challenge/lineup-three-in-order"
+      ]
+    },
+    {
+      "id": "hint-先找能确定位置的小动物",
+      "kind": "hint",
+      "text": "先找能确定位置的小动物。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-lineup-challenge/lineup-three-in-order",
+        "logic-lineup-challenge/lineup-four-chain",
+        "logic-lineup-challenge/lineup-fixed-ends",
+        "logic-lineup-challenge/lineup-immediate-neighbor",
+        "logic-lineup-challenge/lineup-two-valid-pairs",
+        "logic-lineup-challenge/lineup-middle-and-neighbor"
+      ]
+    },
+    {
+      "id": "hint-把已经摆好的队伍-按每条线索检查一遍",
+      "kind": "hint",
+      "text": "把已经摆好的队伍，按每条线索检查一遍。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-lineup-challenge/lineup-three-in-order",
+        "logic-lineup-challenge/lineup-four-chain",
+        "logic-lineup-challenge/lineup-fixed-ends",
+        "logic-lineup-challenge/lineup-immediate-neighbor",
+        "logic-lineup-challenge/lineup-two-valid-pairs",
+        "logic-lineup-challenge/lineup-middle-and-neighbor"
+      ]
+    },
+    {
+      "id": "clue-小兔在小猫前面",
+      "kind": "clue",
+      "text": "小兔在小猫前面。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-lineup-challenge/lineup-three-in-order",
+        "logic-lineup-challenge/lineup-three-in-order",
+        "logic-lineup-challenge/lineup-two-valid-pairs",
+        "logic-lineup-challenge/lineup-two-valid-pairs"
+      ]
+    },
+    {
+      "id": "clue-小猫在小狗前面",
+      "kind": "clue",
+      "text": "小猫在小狗前面。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-lineup-challenge/lineup-three-in-order",
+        "logic-lineup-challenge/lineup-three-in-order",
+        "logic-lineup-challenge/lineup-four-chain",
+        "logic-lineup-challenge/lineup-four-chain",
+        "logic-lineup-challenge/lineup-fixed-ends",
+        "logic-lineup-challenge/lineup-fixed-ends"
+      ]
+    },
+    {
+      "id": "prompt-小动物排队啦-听清每条线索-把小动物从左到右排好-小熊在小猫前面-小猫在小狗前面-小狗在小兔前面",
+      "kind": "prompt",
+      "text": "小动物排队啦。听清每条线索，把小动物从左到右排好。小熊在小猫前面。小猫在小狗前面。小狗在小兔前面。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-lineup-challenge/lineup-four-chain"
+      ]
+    },
+    {
+      "id": "parent-从队伍中间开始检查-能不能同样推出两头是谁",
+      "kind": "parent",
+      "text": "从队伍中间开始检查，能不能同样推出两头是谁？",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-lineup-challenge/lineup-four-chain"
+      ]
+    },
+    {
+      "id": "clue-小熊在小猫前面",
+      "kind": "clue",
+      "text": "小熊在小猫前面。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-lineup-challenge/lineup-four-chain",
+        "logic-lineup-challenge/lineup-four-chain"
+      ]
+    },
+    {
+      "id": "clue-小狗在小兔前面",
+      "kind": "clue",
+      "text": "小狗在小兔前面。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-lineup-challenge/lineup-four-chain",
+        "logic-lineup-challenge/lineup-four-chain"
+      ]
+    },
+    {
+      "id": "prompt-小动物排队啦-听清每条线索-把小动物从左到右排好-小兔站第一个-小熊站最后一个-小猫在小狗前面",
+      "kind": "prompt",
+      "text": "小动物排队啦。听清每条线索，把小动物从左到右排好。小兔站第一个。小熊站最后一个。小猫在小狗前面。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-lineup-challenge/lineup-fixed-ends"
+      ]
+    },
+    {
+      "id": "parent-先确定两头以后-还剩几种摆法",
+      "kind": "parent",
+      "text": "先确定两头以后，还剩几种摆法？",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-lineup-challenge/lineup-fixed-ends"
+      ]
+    },
+    {
+      "id": "clue-小兔站第一个",
+      "kind": "clue",
+      "text": "小兔站第一个。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-lineup-challenge/lineup-fixed-ends",
+        "logic-lineup-challenge/lineup-fixed-ends"
+      ]
+    },
+    {
+      "id": "clue-小熊站最后一个",
+      "kind": "clue",
+      "text": "小熊站最后一个。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-lineup-challenge/lineup-fixed-ends",
+        "logic-lineup-challenge/lineup-fixed-ends"
+      ]
+    },
+    {
+      "id": "prompt-小动物排队啦-听清每条线索-把小动物从左到右排好-小熊站第一个-小狗紧跟在小兔后面-小猫在小兔前面",
+      "kind": "prompt",
+      "text": "小动物排队啦。听清每条线索，把小动物从左到右排好。小熊站第一个。小狗紧跟在小兔后面。小猫在小兔前面。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-lineup-challenge/lineup-immediate-neighbor"
+      ]
+    },
+    {
+      "id": "parent-在后面-和-紧跟在后面-有什么不同",
+      "kind": "parent",
+      "text": "“在后面”和“紧跟在后面”有什么不同？",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-lineup-challenge/lineup-immediate-neighbor"
+      ]
+    },
+    {
+      "id": "clue-小熊站第一个",
+      "kind": "clue",
+      "text": "小熊站第一个。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-lineup-challenge/lineup-immediate-neighbor",
+        "logic-lineup-challenge/lineup-immediate-neighbor"
+      ]
+    },
+    {
+      "id": "clue-小狗紧跟在小兔后面",
+      "kind": "clue",
+      "text": "小狗紧跟在小兔后面。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-lineup-challenge/lineup-immediate-neighbor",
+        "logic-lineup-challenge/lineup-immediate-neighbor"
+      ]
+    },
+    {
+      "id": "clue-小猫在小兔前面",
+      "kind": "clue",
+      "text": "小猫在小兔前面。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-lineup-challenge/lineup-immediate-neighbor",
+        "logic-lineup-challenge/lineup-immediate-neighbor"
+      ]
+    },
+    {
+      "id": "prompt-小动物排队啦-听清每条线索-把小动物从左到右排好-小兔在小猫前面-小狗在小熊前面",
+      "kind": "prompt",
+      "text": "小动物排队啦。听清每条线索，把小动物从左到右排好。小兔在小猫前面。小狗在小熊前面。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-lineup-challenge/lineup-two-valid-pairs"
+      ]
+    },
+    {
+      "id": "parent-这题有不止一种排法-能不能换一支队伍-仍然符合两条线索",
+      "kind": "parent",
+      "text": "这题有不止一种排法。能不能换一支队伍，仍然符合两条线索？",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-lineup-challenge/lineup-two-valid-pairs"
+      ]
+    },
+    {
+      "id": "clue-小狗在小熊前面",
+      "kind": "clue",
+      "text": "小狗在小熊前面。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-lineup-challenge/lineup-two-valid-pairs",
+        "logic-lineup-challenge/lineup-two-valid-pairs"
+      ]
+    },
+    {
+      "id": "prompt-小动物排队啦-听清每条线索-把小动物从左到右排好-小熊站第二个或第三个-小狗紧跟在小猫后面-小兔在小熊前面",
+      "kind": "prompt",
+      "text": "小动物排队啦。听清每条线索，把小动物从左到右排好。小熊站第二个或第三个。小狗紧跟在小猫后面。小兔在小熊前面。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-lineup-challenge/lineup-middle-and-neighbor"
+      ]
+    },
+    {
+      "id": "parent-试着让小熊站第三个-会遇到什么问题",
+      "kind": "parent",
+      "text": "试着让小熊站第三个，会遇到什么问题？",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-lineup-challenge/lineup-middle-and-neighbor"
+      ]
+    },
+    {
+      "id": "clue-小熊站第二个或第三个",
+      "kind": "clue",
+      "text": "小熊站第二个或第三个。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-lineup-challenge/lineup-middle-and-neighbor",
+        "logic-lineup-challenge/lineup-middle-and-neighbor"
+      ]
+    },
+    {
+      "id": "clue-小狗紧跟在小猫后面",
+      "kind": "clue",
+      "text": "小狗紧跟在小猫后面。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-lineup-challenge/lineup-middle-and-neighbor",
+        "logic-lineup-challenge/lineup-middle-and-neighbor"
+      ]
+    },
+    {
+      "id": "clue-小兔在小熊前面",
+      "kind": "clue",
+      "text": "小兔在小熊前面。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-lineup-challenge/lineup-middle-and-neighbor",
+        "logic-lineup-challenge/lineup-middle-and-neighbor"
+      ]
+    },
+    {
+      "id": "game-title-图形推理盘",
+      "kind": "game-title",
+      "text": "图形推理盘",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-rule-grid"
+      ]
+    },
+    {
+      "id": "game-goal-横着看-竖着看-把每个问号补成符合规则的图形盘",
+      "kind": "game-goal",
+      "text": "横着看、竖着看，把每个问号补成符合规则的图形盘。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-rule-grid"
+      ]
+    },
+    {
+      "id": "prompt-把图形盘补完整-选一张图卡-再点问号格放进去-图卡可以重复用-每一行都是同一种颜色-从左到右-都是圆形-方形-三角形",
+      "kind": "prompt",
+      "text": "把图形盘补完整。选一张图卡，再点问号格放进去。图卡可以重复用。每一行都是同一种颜色。从左到右，都是圆形、方形、三角形。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-rule-grid/grid-color-and-shape"
+      ]
+    },
+    {
+      "id": "success-两格都补对了-颜色和形状都接上了",
+      "kind": "success",
+      "text": "两格都补对了！颜色和形状都接上了。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "graphic-rule-grid/grid-color-and-shape"
+      ]
+    },
+    {
+      "id": "retry-颜色看同一行-形状再从左到右检查",
+      "kind": "retry",
+      "text": "颜色看同一行，形状再从左到右检查。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "graphic-rule-grid/grid-color-and-shape"
+      ]
+    },
+    {
+      "id": "parent-请孩子指出最先确定的空位-以及用的是哪一行-哪一列的线索",
+      "kind": "parent",
+      "text": "请孩子指出最先确定的空位，以及用的是哪一行、哪一列的线索。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-rule-grid/grid-color-and-shape",
+        "graphic-rule-grid/grid-one-missing-rule",
+        "graphic-rule-grid/grid-two-attributes"
+      ]
+    },
+    {
+      "id": "hint-先看问号和哪种颜色在同一行",
+      "kind": "hint",
+      "text": "先看问号和哪种颜色在同一行。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-rule-grid/grid-color-and-shape"
+      ]
+    },
+    {
+      "id": "hint-再看问号在第几列-需要哪种形状",
+      "kind": "hint",
+      "text": "再看问号在第几列，需要哪种形状。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-rule-grid/grid-color-and-shape"
+      ]
+    },
+    {
+      "id": "clue-每一行都是同一种颜色",
+      "kind": "clue",
+      "text": "每一行都是同一种颜色。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-rule-grid/grid-color-and-shape"
+      ]
+    },
+    {
+      "id": "clue-从左到右-都是圆形-方形-三角形",
+      "kind": "clue",
+      "text": "从左到右，都是圆形、方形、三角形。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-rule-grid/grid-color-and-shape"
+      ]
+    },
+    {
+      "id": "prompt-把图形盘补完整-选一张图卡-再点问号格放进去-图卡可以重复用-每一行-三种图卡各出现一次-每一列-三种图卡也各出现一次",
+      "kind": "prompt",
+      "text": "把图形盘补完整。选一张图卡，再点问号格放进去。图卡可以重复用。每一行，三种图卡各出现一次。每一列，三种图卡也各出现一次。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-rule-grid/grid-one-missing-rule",
+        "graphic-rule-grid/grid-diagonal-clues"
+      ]
+    },
+    {
+      "id": "success-每一行和每一列都符合规则了",
+      "kind": "success",
+      "text": "每一行和每一列都符合规则了！",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "graphic-rule-grid/grid-one-missing-rule",
+        "graphic-rule-grid/grid-diagonal-clues",
+        "graphic-rule-grid/grid-build-your-own"
+      ]
+    },
+    {
+      "id": "retry-看一看新放的图卡-会不会让同一行或同一列重复",
+      "kind": "retry",
+      "text": "看一看新放的图卡，会不会让同一行或同一列重复？",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "graphic-rule-grid/grid-one-missing-rule",
+        "graphic-rule-grid/grid-diagonal-clues",
+        "graphic-rule-grid/grid-build-your-own",
+        "graphic-rule-grid/grid-blank-is-a-card"
+      ]
+    },
+    {
+      "id": "hint-先找只差一个空位的那一行或那一列",
+      "kind": "hint",
+      "text": "先找只差一个空位的那一行或那一列。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-rule-grid/grid-one-missing-rule",
+        "graphic-rule-grid/grid-blank-is-a-card"
+      ]
+    },
+    {
+      "id": "hint-放好一张以后-再检查它所在的行和列",
+      "kind": "hint",
+      "text": "放好一张以后，再检查它所在的行和列。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-rule-grid/grid-one-missing-rule",
+        "graphic-rule-grid/grid-blank-is-a-card"
+      ]
+    },
+    {
+      "id": "clue-每一行-三种图卡各出现一次",
+      "kind": "clue",
+      "text": "每一行，三种图卡各出现一次。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-rule-grid/grid-one-missing-rule",
+        "graphic-rule-grid/grid-diagonal-clues",
+        "graphic-rule-grid/grid-build-your-own"
+      ]
+    },
+    {
+      "id": "clue-每一列-三种图卡也各出现一次",
+      "kind": "clue",
+      "text": "每一列，三种图卡也各出现一次。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-rule-grid/grid-one-missing-rule",
+        "graphic-rule-grid/grid-diagonal-clues",
+        "graphic-rule-grid/grid-build-your-own"
+      ]
+    },
+    {
+      "id": "parent-这题可以有不同的完整图案-请逐行-逐列验证-而不是只认一种样子",
+      "kind": "parent",
+      "text": "这题可以有不同的完整图案。请逐行、逐列验证，而不是只认一种样子。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-rule-grid/grid-diagonal-clues"
+      ]
+    },
+    {
+      "id": "hint-先试着补好一整行",
+      "kind": "hint",
+      "text": "先试着补好一整行。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-rule-grid/grid-diagonal-clues"
+      ]
+    },
+    {
+      "id": "hint-下面的行既要自己不重复-也要和上面的列对上",
+      "kind": "hint",
+      "text": "下面的行既要自己不重复，也要和上面的列对上。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-rule-grid/grid-diagonal-clues"
+      ]
+    },
+    {
+      "id": "prompt-把图形盘补完整-选一张图卡-再点问号格放进去-图卡可以重复用-每一行的颜色相同-每一列的形状相同",
+      "kind": "prompt",
+      "text": "把图形盘补完整。选一张图卡，再点问号格放进去。图卡可以重复用。每一行的颜色相同。每一列的形状相同。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-rule-grid/grid-two-attributes"
+      ]
+    },
+    {
+      "id": "success-补齐了-每行的颜色相同-每列的形状也相同",
+      "kind": "success",
+      "text": "补齐了！每行的颜色相同，每列的形状也相同。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "graphic-rule-grid/grid-two-attributes"
+      ]
+    },
+    {
+      "id": "retry-每个问号都要同时对上行的颜色和列的形状",
+      "kind": "retry",
+      "text": "每个问号都要同时对上行的颜色和列的形状。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "graphic-rule-grid/grid-two-attributes"
+      ]
+    },
+    {
+      "id": "hint-从一行里已经有的图卡看颜色",
+      "kind": "hint",
+      "text": "从一行里已经有的图卡看颜色。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-rule-grid/grid-two-attributes"
+      ]
+    },
+    {
+      "id": "hint-再从同一列里看形状-把两个特点合起来",
+      "kind": "hint",
+      "text": "再从同一列里看形状，把两个特点合起来。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-rule-grid/grid-two-attributes"
+      ]
+    },
+    {
+      "id": "clue-每一行的颜色相同",
+      "kind": "clue",
+      "text": "每一行的颜色相同。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-rule-grid/grid-two-attributes"
+      ]
+    },
+    {
+      "id": "clue-每一列的形状相同",
+      "kind": "clue",
+      "text": "每一列的形状相同。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-rule-grid/grid-two-attributes"
+      ]
+    },
+    {
+      "id": "prompt-自己搭一个图形盘-选一张图卡-再点问号格放进去-图卡可以重复用-每一行-三种图卡各出现一次-每一列-三种图卡也各出现一次",
+      "kind": "prompt",
+      "text": "自己搭一个图形盘。选一张图卡，再点问号格放进去。图卡可以重复用。每一行，三种图卡各出现一次。每一列，三种图卡也各出现一次。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-rule-grid/grid-build-your-own"
+      ]
+    },
+    {
+      "id": "parent-这题有多种解-先让孩子解释当前摆法-再尝试换一种排列",
+      "kind": "parent",
+      "text": "这题有多种解。先让孩子解释当前摆法，再尝试换一种排列。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-rule-grid/grid-build-your-own"
+      ]
+    },
+    {
+      "id": "hint-先把三种图形放进第一行",
+      "kind": "hint",
+      "text": "先把三种图形放进第一行。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-rule-grid/grid-build-your-own"
+      ]
+    },
+    {
+      "id": "hint-下一行可以换个顺序-避开上面同一列的图形",
+      "kind": "hint",
+      "text": "下一行可以换个顺序，避开上面同一列的图形。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-rule-grid/grid-build-your-own"
+      ]
+    },
+    {
+      "id": "prompt-把图形盘补完整-空白卡也是一张图卡-每个问号都要放好-再点看看-每行都有一个圆形-一个方形和一张空白卡-每列也要把这三种卡各放一次",
+      "kind": "prompt",
+      "text": "把图形盘补完整。空白卡也是一张图卡。每个问号都要放好，再点看看。每行都有一个圆形、一个方形和一张空白卡。每列也要把这三种卡各放一次。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-rule-grid/grid-blank-is-a-card"
+      ]
+    },
+    {
+      "id": "success-对了-空白卡也放在了合适的位置",
+      "kind": "success",
+      "text": "对了！空白卡也放在了合适的位置。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "graphic-rule-grid/grid-blank-is-a-card"
+      ]
+    },
+    {
+      "id": "parent-哪一格是放好了空白卡-哪一格是还没有放-请孩子说出区别",
+      "kind": "parent",
+      "text": "哪一格是放好了空白卡，哪一格是还没有放？请孩子说出区别。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-rule-grid/grid-blank-is-a-card"
+      ]
+    },
+    {
+      "id": "clue-每行都有一个圆形-一个方形和一张空白卡",
+      "kind": "clue",
+      "text": "每行都有一个圆形、一个方形和一张空白卡。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-rule-grid/grid-blank-is-a-card"
+      ]
+    },
+    {
+      "id": "clue-每列也要把这三种卡各放一次",
+      "kind": "clue",
+      "text": "每列也要把这三种卡各放一次。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-rule-grid/grid-blank-is-a-card"
+      ]
+    },
+    {
+      "id": "object-空白卡",
+      "kind": "object",
+      "text": "空白卡",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "graphic-rule-grid/grid-blank-is-a-card",
+        "logic-memory-placement/memory-blank-positions"
+      ]
+    },
+    {
+      "id": "game-title-记忆摆一摆",
+      "kind": "game-title",
+      "text": "记忆摆一摆",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-memory-placement"
+      ]
+    },
+    {
+      "id": "game-goal-记住图卡的顺序和位置-遮住以后自己摆回来",
+      "kind": "game-goal",
+      "text": "记住图卡的顺序和位置，遮住以后自己摆回来。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-memory-placement"
+      ]
+    },
+    {
+      "id": "prompt-记住这支小队伍-先看清从左到右的顺序-遮住以后-照着原来的顺序摆回来",
+      "kind": "prompt",
+      "text": "记住这支小队伍。先看清从左到右的顺序。遮住以后，照着原来的顺序摆回来。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-memory-placement/memory-animal-line",
+        "logic-memory-placement/memory-repeated-fruit",
+        "logic-memory-placement/memory-two-groups"
+      ]
+    },
+    {
+      "id": "success-记住了-说说你用了什么办法",
+      "kind": "success",
+      "text": "记住了！说说你用了什么办法。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-memory-placement/memory-animal-line",
+        "logic-memory-placement/memory-repeated-fruit",
+        "logic-memory-placement/memory-six-positions",
+        "logic-memory-placement/memory-two-groups",
+        "logic-memory-placement/memory-blank-positions"
+      ]
+    },
+    {
+      "id": "retry-顺序还差一点-试着在脑海里把刚才的队伍过一遍",
+      "kind": "retry",
+      "text": "顺序还差一点，试着在脑海里把刚才的队伍过一遍。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-memory-placement/memory-animal-line",
+        "logic-memory-placement/memory-repeated-fruit",
+        "logic-memory-placement/memory-two-groups",
+        "logic-memory-placement/memory-reverse-five"
+      ]
+    },
+    {
+      "id": "parent-可以问-你是逐张记的-还是分成小组-编成小故事来记的",
+      "kind": "parent",
+      "text": "可以问：你是逐张记的，还是分成小组、编成小故事来记的？",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-memory-placement/memory-animal-line",
+        "logic-memory-placement/memory-repeated-fruit",
+        "logic-memory-placement/memory-six-positions",
+        "logic-memory-placement/memory-two-groups",
+        "logic-memory-placement/memory-blank-positions"
+      ]
+    },
+    {
+      "id": "hint-先想一想-最容易记住的是哪一张",
+      "kind": "hint",
+      "text": "先想一想，最容易记住的是哪一张？",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-memory-placement/memory-animal-line",
+        "logic-memory-placement/memory-six-positions"
+      ]
+    },
+    {
+      "id": "hint-把记得清楚的先放好-再回想旁边是什么",
+      "kind": "hint",
+      "text": "把记得清楚的先放好，再回想旁边是什么。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-memory-placement/memory-animal-line",
+        "logic-memory-placement/memory-repeated-fruit",
+        "logic-memory-placement/memory-six-positions",
+        "logic-memory-placement/memory-two-groups",
+        "logic-memory-placement/memory-blank-positions",
+        "logic-memory-placement/memory-reverse-five"
+      ]
+    },
+    {
+      "id": "hint-有些水果出现了不止一次-想想它们分别在哪",
+      "kind": "hint",
+      "text": "有些水果出现了不止一次，想想它们分别在哪。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-memory-placement/memory-repeated-fruit"
+      ]
+    },
+    {
+      "id": "prompt-记住每一格-看清每个位置-遮住以后-把图卡放回原来的格子",
+      "kind": "prompt",
+      "text": "记住每一格。看清每个位置。遮住以后，把图卡放回原来的格子。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-memory-placement/memory-six-positions"
+      ]
+    },
+    {
+      "id": "retry-位置还差一点-想想每张图卡刚才住在哪一格",
+      "kind": "retry",
+      "text": "位置还差一点，想想每张图卡刚才住在哪一格。",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-memory-placement/memory-six-positions",
+        "logic-memory-placement/memory-blank-positions"
+      ]
+    },
+    {
+      "id": "hint-看看能不能把相邻的三个图形当作一组",
+      "kind": "hint",
+      "text": "看看能不能把相邻的三个图形当作一组。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-memory-placement/memory-two-groups"
+      ]
+    },
+    {
+      "id": "prompt-记住每一格-看清每个位置-遮住以后-把图卡放回原来的格子-空白卡也要放回原位",
+      "kind": "prompt",
+      "text": "记住每一格。看清每个位置。遮住以后，把图卡放回原来的格子。空白卡也要放回原位。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-memory-placement/memory-blank-positions"
+      ]
+    },
+    {
+      "id": "hint-空白卡也占一个位置-想想刚才哪两格是空白卡",
+      "kind": "hint",
+      "text": "空白卡也占一个位置，想想刚才哪两格是空白卡。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-memory-placement/memory-blank-positions"
+      ]
+    },
+    {
+      "id": "prompt-倒着摆回来-先看清顺序-遮住以后-从最后一张开始-倒着摆回来",
+      "kind": "prompt",
+      "text": "倒着摆回来。先看清顺序。遮住以后，从最后一张开始，倒着摆回来。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-memory-placement/memory-reverse-five"
+      ]
+    },
+    {
+      "id": "success-对了-你把刚才的顺序倒过来摆好了",
+      "kind": "success",
+      "text": "对了！你把刚才的顺序倒过来摆好了。",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "logic-memory-placement/memory-reverse-five"
+      ]
+    },
+    {
+      "id": "parent-先问孩子原顺序是什么-再问倒着回忆是从哪一张开始",
+      "kind": "parent",
+      "text": "先问孩子原顺序是什么，再问倒着回忆是从哪一张开始。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-memory-placement/memory-reverse-five"
+      ]
+    },
+    {
+      "id": "hint-先想起最后看到的那张-再往前一张一张找",
+      "kind": "hint",
+      "text": "先想起最后看到的那张，再往前一张一张找。",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-memory-placement/memory-reverse-five"
       ]
     },
     {

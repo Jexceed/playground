@@ -5,6 +5,28 @@ grouped by date.
 
 ## 2026-09-22
 
+### First playable increment
+
+- Implemented the first playable curriculum increment: 规则收纳盒、线索排排队、
+  图形推理盘、记忆摆一摆, six original activities each. The same app now exposes
+  44 groups / 513 rounds, retaining the exact original 40 groups / 489 rounds.
+- Added a shared build-time catalog, typed multi-select/order/grid responses,
+  pure evaluators and session transitions, visual memory phases, pointer-based
+  drag/drop with click placement, undo/retry/hints/review, and independent
+  progress evidence with stable-ID continuation. Valid alternative orderings
+  and Latin grids are accepted; blank cards remain distinct from empty slots.
+- Added ten registered PNG symbols with deterministic SVG sources and generated
+  the complete 1,958-line Edge Xiaoxiao voice pack with zero failures. Shared
+  loading now follows the module graph; audits include the interactive content,
+  and the Douyin exporter rejects unsupported Math Island interactions.
+- Passed 28 automated tests, production build, curriculum/voice audits and all
+  24 activity flows in the browser. Updated /Applications/小小思考屋.app via
+  mac:install, verified its signature and binary match. Real-app UI acceptance
+  and additional viewport/memory lifecycle checks await manual Mac unlock.
+  Details: specs/029-curriculum-benchmark/verification/pilot-qa.md.
+
+### Reference design checkpoint
+
 - Documented the confirmed single-app direction: preserve younger-child content
   and progress, expand toward ages 6–8 through theme/ability/difficulty paths,
   and avoid child-facing V1/V2 product separation.

@@ -1,0 +1,760 @@
+import { Check, Eye, Lightbulb, RotateCcw, Volume2, X } from "lucide-react";
+import { useEffect, useReducer, useRef, useState } from "react";
+import type { CSSProperties, PointerEvent as ReactPointerEvent } from "react";
+import {
+  ACTIVITY_COPY,
+  activityPromptSpeech,
+  activitySlots,
+} from "../domain/activity";
+import type {
+  Activity,
+  ActivitySet,
+  ActivityToken,
+  SlotValue,
+} from "../domain/activity";
+import { responseValue } from "../domain/activity-evaluation";
+import { createSession, transitionSession } from "../engine/activity-session";
+import type { SessionEvent } from "../engine/activity-session";
+import { recordActivityEvent } from "../services/activity-progress";
+import type {
+  ActivityProgress,
+  EvidenceEvent,
+} from "../services/activity-progress";
+import { playTone, speak, stopSpeech } from "../speech";
+import { publicAsset } from "../publicAsset";
+
+type Props = {
+  game: ActivitySet;
+  requestedRoundIndex: number;
+  requestedRoundReadKey: number;
+  completedRoundIds: Set<string>;
+  onRoundIndexChange: (index: number) => void;
+  onProgressChange: (progress: ActivityProgress) => void;
+  onComplete: () => void;
+};
+export function ActivitySetGame(props: Props) {
+  const index = Math.min(
+    Math.max(props.requestedRoundIndex, 0),
+    props.game.rounds.length - 1,
+  );
+  const activity = props.game.rounds[index];
+  const allComplete = props.game.rounds.every((round) =>
+    props.completedRoundIds.has(round.id),
+  );
+  function next() {
+    if (index < props.game.rounds.length - 1) {
+      props.onRoundIndexChange(index + 1);
+      return;
+    }
+    const firstIncomplete = props.game.rounds.findIndex(
+      (r) => !props.completedRoundIds.has(r.id),
+    );
+    if (firstIncomplete >= 0) props.onRoundIndexChange(firstIncomplete);
+    else {
+      props.onComplete();
+      props.onRoundIndexChange(0);
+    }
+  }
+  return (
+    <section className="activity-game" aria-label={props.game.title}>
+      <header className="activity-game-heading">
+        <div>
+          <p className="eyebrow">
+            {props.game.interactionLabel} · 第 {index + 1} /{" "}
+            {props.game.rounds.length} 题
+          </p>
+          <h1>{props.game.title}</h1>
+        </div>
+        <button
+          className="activity-listen"
+          type="button"
+          onClick={() => void speak(activityPromptSpeech(activity))}
+          aria-label="听一听题目"
+        >
+          <Volume2 size={21} />
+          <span>听题</span>
+        </button>
+      </header>
+      <ActivityRound
+        key={`${activity.id}@${activity.revision}`}
+        activity={activity}
+        readKey={props.requestedRoundReadKey}
+        onProgressChange={props.onProgressChange}
+        onNext={next}
+        onSkip={() =>
+          props.onRoundIndexChange((index + 1) % props.game.rounds.length)
+        }
+        nextLabel={
+          index < props.game.rounds.length - 1
+            ? "下一题"
+            : allComplete
+              ? "再玩一遍"
+              : "接着试一试"
+        }
+      />
+    </section>
+  );
+}
+
+function ActivityRound({
+  activity,
+  readKey,
+  onProgressChange,
+  onNext,
+  onSkip,
+  nextLabel,
+}: {
+  activity: Activity;
+  readKey: number;
+  onProgressChange: (p: ActivityProgress) => void;
+  onNext: () => void;
+  onSkip: () => void;
+  nextLabel: string;
+}) {
+  const [state, dispatch] = useReducer(
+    (current: ReturnType<typeof createSession>, event: SessionEvent) =>
+      transitionSession(activity, current, event),
+    activity,
+    createSession,
+  );
+  const [selectedToken, setSelectedToken] = useState<string | null>(null);
+  const [assetsReady, setAssetsReady] = useState(false);
+  const [assetError, setAssetError] = useState(false);
+  const [remaining, setRemaining] = useState(0);
+  const [storageIssue, setStorageIssue] = useState(false);
+  const [dragPoint, setDragPoint] = useState<{
+    tokenId: string;
+    x: number;
+    y: number;
+  } | null>(null);
+  const pointerDrag = useRef<{
+    tokenId: string;
+    x: number;
+    y: number;
+    pointerId: number;
+    moved: boolean;
+  } | null>(null);
+  const [visitId] = useState(() =>
+    typeof crypto.randomUUID === "function"
+      ? crypto.randomUUID()
+      : String(Date.now()) + "-" + Math.random(),
+  );
+  const recordedThrough = useRef(0);
+  const previousPhase = useRef(state.phase);
+  const slotEntries = activitySlots(activity);
+  const canEdit = state.phase === "respond" && assetsReady;
+  const isMemory = activity.protocol.kind === "memory";
+  const tokenById = new Map(activity.tokens.map((token) => [token.id, token]));
+
+  useEffect(() => {
+    void speak(activityPromptSpeech(activity));
+    return stopSpeech;
+  }, [activity, readKey]);
+
+  useEffect(() => {
+    let cancelled = false;
+    const sources = new Set(activity.tokens.map((t) => t.image.src));
+    if (activity.kind === "multiSelect" && activity.example)
+      sources.add(activity.example.image.src);
+    Promise.all(
+      [...sources].map(
+        (src) =>
+          new Promise<void>((resolve, reject) => {
+            const image = new Image();
+            image.onload = () => resolve();
+            image.onerror = () => reject(new Error(src));
+            image.src = publicAsset(src);
+          }),
+      ),
+    )
+      .then(() => {
+        if (!cancelled) setAssetsReady(true);
+      })
+      .catch(() => {
+        if (!cancelled) setAssetError(true);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [activity]);
+
+  useEffect(() => {
+    const memory = activity.protocol;
+    if (
+      memory.kind !== "memory" ||
+      (state.phase !== "observe" && state.phase !== "retain")
+    )
+      return;
+    const duration =
+      state.phase === "observe" ? memory.observeMs : memory.retainMs;
+    const event =
+      state.phase === "observe" ? "observationFinished" : "retentionFinished";
+    const deadline = performance.now() + duration;
+    setRemaining(Math.ceil(duration / 1000));
+    const ticker = window.setInterval(
+      () =>
+        setRemaining(
+          Math.max(0, Math.ceil((deadline - performance.now()) / 1000)),
+        ),
+      100,
+    );
+    const timer = window.setTimeout(() => dispatch({ type: event }), duration);
+    return () => {
+      window.clearInterval(ticker);
+      window.clearTimeout(timer);
+    };
+  }, [activity, state.phase]);
+
+  useEffect(() => {
+    if (state.phase === "observe" || state.phase === "retain") stopSpeech();
+    if (state.phase === "respond" && previousPhase.current === "retain")
+      void speak(ACTIVITY_COPY.recall);
+    previousPhase.current = state.phase;
+  }, [state.phase]);
+
+  useEffect(() => {
+    const interrupt = () => {
+      stopSpeech();
+      dispatch({ type: "interrupt" });
+    };
+    const visibility = () => {
+      if (document.hidden) interrupt();
+    };
+    document.addEventListener("visibilitychange", visibility);
+    window.addEventListener("blur", interrupt);
+    return () => {
+      document.removeEventListener("visibilitychange", visibility);
+      window.removeEventListener("blur", interrupt);
+    };
+  }, []);
+
+  useEffect(() => {
+    for (const item of state.evidence.filter(
+      (event) => event.sequence > recordedThrough.current,
+    )) {
+      const event: EvidenceEvent = {
+        ...item,
+        id: `${visitId}:${item.sequence}`,
+      };
+      const result = recordActivityEvent(activity.id, activity.revision, event);
+      setStorageIssue(!result.stored);
+      onProgressChange(result.progress);
+      if (!result.stored) break;
+      recordedThrough.current = item.sequence;
+    }
+  }, [activity, state.evidence, visitId, onProgressChange]);
+
+  function chooseToken(token: ActivityToken) {
+    if (!canEdit) return;
+    playTone("tap");
+    void speak(token.label);
+    if (activity.kind === "multiSelect")
+      dispatch({ type: "toggle", tokenId: token.id });
+    else setSelectedToken(token.id);
+  }
+  function put(slotId: string, tokenId = selectedToken) {
+    if (!canEdit) return;
+    if (!tokenId) {
+      void speak(ACTIVITY_COPY.selectFirst);
+      return;
+    }
+    dispatch({ type: "place", slotId, tokenId });
+    playTone("tap");
+    if (activity.kind !== "multiSelect" && activity.tokenUse === "once")
+      setSelectedToken(null);
+  }
+  function submit() {
+    const next = transitionSession(activity, state, { type: "submit" });
+    dispatch({ type: "submit" });
+    if (next.result) {
+      playTone(next.result.status === "correct" ? "success" : "notice");
+      void speak(next.result.message);
+    }
+    setSelectedToken(null);
+  }
+  function hint() {
+    const text =
+      activity.hints[Math.min(state.hints, activity.hints.length - 1)] ??
+      ACTIVITY_COPY.hintEnd;
+    dispatch({ type: "hint" });
+    void speak(text);
+  }
+  function skip() {
+    const result = recordActivityEvent(activity.id, activity.revision, {
+      id: `${visitId}:skip`,
+      kind: "skip",
+    });
+    onProgressChange(result.progress);
+    stopSpeech();
+    onSkip();
+  }
+
+  // Pointer capture works for mouse, pen and touch in both WebKit and browsers.
+  // HTML drag-and-drop does not reliably provide drop events on these surfaces.
+  function dragHandlers(token: ActivityToken, tap: () => void) {
+    return {
+      onPointerDown: (event: ReactPointerEvent<HTMLElement>) => {
+        if (!canEdit || event.button !== 0) return;
+        event.currentTarget.setPointerCapture(event.pointerId);
+        pointerDrag.current = {
+          tokenId: token.id,
+          x: event.clientX,
+          y: event.clientY,
+          pointerId: event.pointerId,
+          moved: false,
+        };
+      },
+      onPointerMove: (event: ReactPointerEvent<HTMLElement>) => {
+        const drag = pointerDrag.current;
+        if (!drag || drag.pointerId !== event.pointerId) return;
+        if (Math.hypot(event.clientX - drag.x, event.clientY - drag.y) > 8)
+          drag.moved = true;
+        if (drag.moved) {
+          setSelectedToken(drag.tokenId);
+          setDragPoint({
+            tokenId: drag.tokenId,
+            x: event.clientX,
+            y: event.clientY,
+          });
+        }
+      },
+      onPointerUp: (event: ReactPointerEvent<HTMLElement>) => {
+        const drag = pointerDrag.current;
+        if (!drag || drag.pointerId !== event.pointerId) return;
+        pointerDrag.current = null;
+        setDragPoint(null);
+        if (event.currentTarget.hasPointerCapture(event.pointerId))
+          event.currentTarget.releasePointerCapture(event.pointerId);
+        if (drag.moved) {
+          const target = document
+            .elementFromPoint(event.clientX, event.clientY)
+            ?.closest<HTMLElement>("[data-slot-id]");
+          if (target?.dataset.slotId) put(target.dataset.slotId, drag.tokenId);
+        } else tap();
+      },
+      onPointerCancel: () => {
+        pointerDrag.current = null;
+        setDragPoint(null);
+      },
+    };
+  }
+
+  function renderSlot(
+    slot: { id: string; index: number; fixedTokenId: string | null },
+    previewId?: string,
+  ) {
+    const value: SlotValue = previewId
+      ? { state: "filled", tokenId: previewId }
+      : slot.fixedTokenId
+        ? { state: "filled", tokenId: slot.fixedTokenId }
+        : responseValue(state.response, slot.id);
+    const token =
+      value.state === "filled" ? tokenById.get(value.tokenId) : undefined;
+    const fixed = slot.fixedTokenId !== null || previewId !== undefined;
+    const label =
+      activity.kind === "gridPlacement"
+        ? `第${Math.floor(slot.index / activity.columns) + 1}行第${(slot.index % activity.columns) + 1}格`
+        : `第${slot.index + 1}个位置`;
+    return (
+      <div
+        key={slot.id}
+        className={`activity-slot ${fixed ? "is-fixed" : ""} ${token ? "is-filled" : ""}`}
+      >
+        <span className="slot-number" aria-hidden="true">
+          {slot.index + 1}
+        </span>
+        {fixed ? (
+          <div
+            className="fixed-token"
+            aria-label={`${label}，${token?.label ?? "图卡"}`}
+          >
+            <TokenArt token={token} />
+          </div>
+        ) : (
+          <button
+            type="button"
+            className="slot-target"
+            data-slot-id={slot.id}
+            aria-label={`${label}，${token?.label ?? "空位"}`}
+            disabled={!canEdit}
+            {...(token
+              ? dragHandlers(token, () =>
+                  selectedToken ? put(slot.id) : chooseToken(token),
+                )
+              : {})}
+            onClick={(event) => {
+              if (!token || event.detail === 0)
+                selectedToken
+                  ? put(slot.id)
+                  : token
+                    ? chooseToken(token)
+                    : put(slot.id);
+            }}
+            onDragOver={(event) => {
+              if (canEdit) event.preventDefault();
+            }}
+            onDrop={(event) => {
+              event.preventDefault();
+              put(slot.id, event.dataTransfer.getData("text/plain"));
+            }}
+          >
+            {token ? (
+              <TokenArt token={token} />
+            ) : (
+              <span className="slot-question">?</span>
+            )}
+          </button>
+        )}
+        {!fixed && token && canEdit && (
+          <button
+            className="slot-remove"
+            type="button"
+            aria-label={`清空${label}`}
+            onClick={() =>
+              dispatch({ type: "place", slotId: slot.id, tokenId: null })
+            }
+          >
+            <X size={12} />
+          </button>
+        )}
+      </div>
+    );
+  }
+  function tokenButton(token: ActivityToken, multi = false) {
+    const selected =
+      multi && state.response.kind === "multiSelect"
+        ? state.response.tokenIds.includes(token.id)
+        : selectedToken === token.id;
+    const used =
+      !multi &&
+      activity.kind !== "multiSelect" &&
+      activity.tokenUse === "once" &&
+      slotEntries.some(
+        (s) =>
+          responseValue(state.response, s.id).state === "filled" &&
+          (
+            responseValue(state.response, s.id) as {
+              state: "filled";
+              tokenId: string;
+            }
+          ).tokenId === token.id,
+      );
+    return (
+      <button
+        key={token.id}
+        type="button"
+        className={`activity-token ${selected ? "is-selected" : ""} ${used ? "is-used" : ""}`}
+        aria-pressed={selected}
+        aria-label={token.label}
+        data-token-id={token.id}
+        disabled={!canEdit}
+        {...(!multi ? dragHandlers(token, () => chooseToken(token)) : {})}
+        onClick={(event) => {
+          if (multi || event.detail === 0) chooseToken(token);
+        }}
+      >
+        <TokenArt token={token} />
+        <span className="token-label">{token.label}</span>
+        {selected && (
+          <span className="token-check">
+            <Check size={13} />
+          </span>
+        )}
+      </button>
+    );
+  }
+  const currentHint =
+    state.hints > 0
+      ? activity.hints[Math.min(state.hints - 1, activity.hints.length - 1)]
+      : null;
+  const showResponses = state.phase === "respond" || state.phase === "complete";
+  return (
+    <div
+      className="activity-round"
+      data-testid="activity-round"
+      data-activity-id={activity.id}
+      data-phase={state.phase}
+    >
+      <div className="activity-question">
+        <h2>{activity.prompt}</h2>
+        <p>{activity.instruction}</p>
+      </div>
+      {activity.clues.length > 0 && (
+        <ol className="activity-clues">
+          {activity.clues.map((clue, index) => (
+            <li
+              key={clue}
+              className={state.result?.clueIndex === index ? "clue-focus" : ""}
+            >
+              <span>{index + 1}</span>
+              {clue}
+            </li>
+          ))}
+        </ol>
+      )}
+      {activity.kind === "multiSelect" && activity.example && (
+        <div className="activity-example">
+          <span>和它比一比</span>
+          <TokenArt token={activity.example} />
+          <strong>{activity.example.label}</strong>
+        </div>
+      )}
+      {assetError && <p role="alert">图卡没有加载好，请重新打开这个关卡。</p>}
+      {!assetsReady && !assetError && <p className="muted">正在准备图卡…</p>}
+      {state.phase === "ready" && (
+        <div className="memory-stage memory-ready">
+          <Eye size={38} />
+          <h3>先看清，再摆回来</h3>
+          <p>
+            {state.restarts > 0
+              ? ACTIVITY_COPY.interrupted
+              : "准备好了再开始。作答时也可以再看一次。"}
+          </p>
+          <button
+            type="button"
+            className="activity-primary"
+            disabled={!assetsReady}
+            onClick={() => dispatch({ type: "start" })}
+          >
+            开始记忆
+          </button>
+        </div>
+      )}
+      {state.phase === "observe" && activity.protocol.kind === "memory" && (
+        <div className="memory-stage" data-testid="memory-cue">
+          <div className="memory-caption">
+            <strong>看清位置和顺序</strong>
+            <span>还可看 {remaining} 秒</span>
+          </div>
+          <div
+            className={`activity-board ${activity.kind === "gridPlacement" ? "is-grid" : "is-order"}`}
+            style={
+              {
+                "--board-columns":
+                  activity.kind === "gridPlacement"
+                    ? activity.columns
+                    : Math.min(slotEntries.length, 6),
+              } as CSSProperties
+            }
+          >
+            {slotEntries.map((slot, index) =>
+              renderSlot(
+                slot,
+                activity.protocol.kind === "memory"
+                  ? activity.protocol.preview[index]
+                  : undefined,
+              ),
+            )}
+          </div>
+          <button
+            type="button"
+            className="activity-secondary"
+            onClick={() => dispatch({ type: "observationFinished" })}
+          >
+            我记好了
+          </button>
+        </div>
+      )}
+      {state.phase === "retain" && (
+        <div className="memory-stage memory-retain" data-testid="memory-retain">
+          <span aria-hidden="true">···</span>
+          <h3>{ACTIVITY_COPY.remember}</h3>
+          <p>图卡已经藏起来了</p>
+        </div>
+      )}
+      {showResponses && (
+        <>
+          {activity.kind === "multiSelect" ? (
+            <div className="activity-choice-grid" aria-label="可多选的图卡">
+              {activity.tokens.map((t) => tokenButton(t, true))}
+            </div>
+          ) : (
+            <div
+              className={`activity-workspace ${activity.kind === "gridPlacement" ? "for-grid" : "for-order"} ${state.phase === "complete" ? "is-complete" : ""}`}
+            >
+              <div
+                className={`activity-board ${activity.kind === "gridPlacement" ? "is-grid" : "is-order"}`}
+                aria-label={
+                  activity.kind === "gridPlacement"
+                    ? "图形盘"
+                    : "从左到右的队伍"
+                }
+                style={
+                  {
+                    "--board-columns":
+                      activity.kind === "gridPlacement"
+                        ? activity.columns
+                        : Math.min(slotEntries.length, 6),
+                  } as CSSProperties
+                }
+              >
+                {slotEntries.map((slot) => renderSlot(slot))}
+              </div>
+              {state.phase !== "complete" && (
+                <div className="activity-supply">
+                  <p className="tray-instruction">
+                    {selectedToken
+                      ? `已选：${tokenById.get(selectedToken)?.label}。点一个位置放进去。`
+                      : "选一张图卡，再点位置放进去；也可以拖过去。"}
+                    {activity.tokenUse === "unlimited" && (
+                      <span>图卡可以重复用</span>
+                    )}
+                  </p>
+                  <div
+                    className="activity-token-tray"
+                    aria-label="可使用的图卡"
+                    style={
+                      {
+                        "--tray-columns": Math.min(activity.tokens.length, 6),
+                        "--grid-tray-columns": Math.min(
+                          activity.tokens.length,
+                          5,
+                        ),
+                      } as CSSProperties
+                    }
+                  >
+                    {activity.tokens.map((t) => tokenButton(t))}
+                  </div>
+                </div>
+              )}
+            </div>
+          )}
+        </>
+      )}
+      {currentHint && state.phase !== "observe" && state.phase !== "retain" && (
+        <p className="activity-hint" role="status">
+          <Lightbulb size={18} />
+          {currentHint}
+        </p>
+      )}
+      <div
+        className={`activity-feedback ${state.result?.status === "correct" ? "is-correct" : ""}`}
+        role="status"
+        aria-live="polite"
+      >
+        {state.result ? (
+          <>
+            {state.result.status === "correct" && <Check size={20} />}
+            <span>{state.result.message}</span>
+          </>
+        ) : (
+          <span>{activity.difficultyNote}</span>
+        )}
+      </div>
+      <div className="activity-actions">
+        {state.phase === "complete" ? (
+          <>
+            <button
+              type="button"
+              className="activity-secondary"
+              onClick={() => dispatch({ type: "again" })}
+            >
+              再试一次
+            </button>
+            <button
+              type="button"
+              className="activity-primary"
+              onClick={() => {
+                stopSpeech();
+                onNext();
+              }}
+            >
+              {nextLabel}
+            </button>
+          </>
+        ) : (
+          <>
+            <div className="activity-tools">
+              <button
+                type="button"
+                title="撤销上一步"
+                aria-label="撤销上一步"
+                disabled={!canEdit || !state.history.length}
+                onClick={() => dispatch({ type: "undo" })}
+              >
+                <RotateCcw size={18} />
+              </button>
+              <button
+                type="button"
+                disabled={!canEdit}
+                onClick={() => {
+                  dispatch({ type: "clear" });
+                  setSelectedToken(null);
+                }}
+              >
+                清空
+              </button>
+              <button
+                type="button"
+                disabled={state.phase !== "respond" && state.phase !== "ready"}
+                onClick={hint}
+              >
+                <Lightbulb size={17} />
+                提示
+              </button>
+              {isMemory && (
+                <button
+                  type="button"
+                  disabled={state.phase !== "respond"}
+                  onClick={() => {
+                    setSelectedToken(null);
+                    dispatch({ type: "reveal" });
+                  }}
+                >
+                  <Eye size={17} />
+                  再看一次
+                </button>
+              )}
+            </div>
+            <button
+              type="button"
+              className="activity-primary"
+              disabled={!canEdit}
+              onClick={submit}
+            >
+              {activity.kind === "multiSelect"
+                ? "选好了，看看"
+                : "摆好了，看看"}
+            </button>
+          </>
+        )}
+      </div>
+      <footer className="activity-footer">
+        <span>
+          这次尝试 {state.attempts} 次 · 提示 {state.hints} 次
+          {isMemory ? ` · 重看 ${state.reveals} 次` : ""}
+        </span>
+        <button type="button" onClick={skip}>
+          先跳过
+        </button>
+      </footer>
+      {storageIssue && (
+        <p className="activity-storage-note">
+          这台设备暂时不能保存新的练习记录，可以继续玩。
+        </p>
+      )}
+      {dragPoint && (
+        <div
+          className="activity-drag-preview"
+          aria-hidden="true"
+          style={{ left: dragPoint.x, top: dragPoint.y }}
+        >
+          <TokenArt token={tokenById.get(dragPoint.tokenId)} />
+        </div>
+      )}
+    </div>
+  );
+}
+
+function TokenArt({ token }: { token: ActivityToken | undefined }) {
+  return token ? (
+    <img
+      className="activity-token-image"
+      src={publicAsset(token.image.src)}
+      alt={token.image.alt}
+      draggable={false}
+    />
+  ) : (
+    <span className="slot-question">?</span>
+  );
+}

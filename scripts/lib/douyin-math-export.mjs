@@ -48,8 +48,12 @@ const TOKEN_RENDERERS = {
 };
 
 export async function buildMathIslandExport({ write = true } = {}) {
-  const { games, worlds } = await loadGameData();
-  const mathGames = structuredClone(games.filter((game) => game.world === "math"));
+  const { catalogGames, worlds } = await loadGameData();
+  const mathCandidates = catalogGames.filter((game) => game.world === "math");
+  if (mathCandidates.some((game) => game.kind !== "progressiveSet")) {
+    throw new Error("Math Island contains an interaction unsupported by the Douyin exporter; do not silently omit or convert it.");
+  }
+  const mathGames = structuredClone(mathCandidates);
   const world = worlds.find((item) => item.id === "math");
   assertCatalog(mathGames, world);
 

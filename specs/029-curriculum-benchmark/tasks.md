@@ -2,7 +2,7 @@
 
 **Input**: spec.md、plan.md、research.md、coverage-matrix.json、data-model.md、contracts/activity-session.md。
 **Branch**: dev，本地检查点，不推送；main仅用于用户确认的里程碑。
-**Status**: 本轮完成M0研究设计，所有运行时与题库实施任务保持未完成。
+**Status**: M0设计已完成；M1框架与4组24题已实现并安装，完整范围继续保留。具体增量与尚待解锁的UI验收见[pilot-tasks.md](pilot-tasks.md)。
 **Validation**: 根据规格的迁移、判定和会话验收要求设置必要语义验证；不为文档变更增加实现镜像测试。
 
 
@@ -23,7 +23,7 @@
 - [ ] T006 冻结受支持旧发行的题目指纹和顺序映射于 src/services/progress/legacy-baselines.ts，保留游戏级和题目级历史事实；无版本歧义不得猜映射。
 - [ ] T007 在 src/domain/activity.ts、response.ts 定义可辨识响应联合、库存、合法空白、活动修订、难度维度和来源关系；落实 data-model.md。
 - [ ] T008 在 src/curriculum/catalog.ts、domains.ts、legacy-adapter.ts 构建统一目录，保留旧game/round ID；若移动数据，先拆权威定义再改 src/data/games.ts 导出，避免循环依赖。
-- [ ] T009 升级 scripts/lib/load-game-data.mjs 加载模块图，供应用、scripts/audit-curriculum.mjs、export-voice-lines.mjs 与 douyin-math-export.mjs 共用；基线输出保持40/489及原ID。
+- [x] T009 升级 scripts/lib/load-game-data.mjs 加载模块图，供应用、scripts/audit-curriculum.mjs、export-voice-lines.mjs 与 douyin-math-export.mjs 共用；基线输出保持40/489及原ID。
 - [ ] T010 在 src/services/progress/migrate.ts、store.ts 实现新schema写入校验、旧key备份、迁移标记、幂等恢复和不确定位置回退；保留 src/storage.ts 兼容接口。
 - [ ] T011 在 scripts/progress-migration.test.mjs 验证有/无版本、游戏/题目完成分离、二次迁移、损坏/未来schema、重排与题意修订；在 package.json 注册相应验证命令。
 - [ ] T012 在 src/domain/evaluators/ 与 scripts/activity-evaluation.test.mjs 实现并验证集合、序列、格位、关系边、连桥network、路径edgeId、构形和多解；使用独立已知解/反例，禁止eval表达式。
@@ -48,7 +48,7 @@
 - [ ] T021 [US2] 在 src/interactions/matching/、network/ 与 route/ 实现关系连线、桥重数/度数/全连通、edgeId路径、平行边/抬笔/重访和约束反馈。
 - [ ] T022 [US2] 在 src/interactions/construction/ 实现平面/立体部件的明确位置、朝向、覆盖和多解响应，区分交互误操作与规则误判。
 - [ ] T023 [US2] 在 src/services/speech/ 与 src/speech.ts 统一阶段音频完成/取消/失败事件，缺音不跳过必要听取；重听不泄露未该展示的线索。
-- [ ] T024 [US2] 在 src/curriculum/pilot/ 制作互不重复的24个活动ID：多选、顺序回填、多空位填格、分阶段记忆各6题；有完整提示、反馈、家长追问和资源。
+- [x] T024 [US2] 在 src/curriculum/pilot/ 制作互不重复的24个活动ID：多选、顺序回填、多空位填格、分阶段记忆各6题；有完整提示、反馈、家长追问和资源。
 - [ ] T025 [US2] 在 scripts/activity-session.test.mjs 及 specs/029-curriculum-benchmark/verification/interaction-pilot.md 验证阶段转换、真实指针/触控操作、后台、取消、空白、复用与合法多解。
 
 ## Phase 5: US3 六域中的数理、空间与记忆题族 / P1
@@ -180,6 +180,6 @@ Foundation + US1 + US2中的四类24题试点构成首个可玩的增量。必�
 
 ## Task Summary
 
-- 总任务：115；M0设计完成4项，其余未完成。
+- 总任务：115；M0设计4项及T009/T024已完成；其他完整范围任务按原标准保留，M1子项另记。
 - 按故事：US1=3, US2=9, US3=59, US4=17, US5=3, US6=4, shared=20。
 - 每个纳入题族有独立内容任务；各族细分操作与异常须在authoring中逐项追踪。
