@@ -69,8 +69,9 @@ export function auditActivityCurriculum(
         )
           problems.push(`${prefix}: invalid or unregistered token ${token.id}`);
       }
+      if(activity.illustration && (!registered.has(activity.illustration.src)||!existsSync(join('public',activity.illustration.src))))problems.push(`${prefix}: missing or unregistered illustration`);
       if (
-        !["multiSelect", "orderedPlacement", "gridPlacement"].includes(
+        !["multiSelect", "orderedPlacement", "gridPlacement", "singleChoice", "matching", "network", "route", "construction", "parentObservation"].includes(
           activity.kind,
         )
       ) {
@@ -121,10 +122,11 @@ export function auditActivityCurriculum(
               problems.push(`${prefix}: invalid relation`);
           }
           if (
-            JSON.stringify(activity.clues) !==
+            !activity.cluesFromIllustration && JSON.stringify(activity.clues) !==
             JSON.stringify(activity.evaluation.rules.map((rule) => rule.text))
           )
             problems.push(`${prefix}: visible clues differ from the rules`);
+          if(activity.cluesFromIllustration&&!activity.illustration)problems.push(`${prefix}: visual ordering needs an illustration`);
         }
       }
       if (activity.kind === "gridPlacement") {
@@ -156,15 +158,16 @@ export function auditActivityCurriculum(
             ? activity.slotCount
             : activity.kind === "gridPlacement"
               ? activity.cells.length
-              : 0;
+              : activity.protocol.preview.length;
         if (
-          !length ||
-          activity.protocol.preview.length !== length ||
+          (!(activity.protocol.audioText || activity.protocol.soundSrc) && (!length || activity.protocol.preview.length !== length)) ||
           !activity.protocol.preview.every((id) => tokens.has(id)) ||
           activity.protocol.observeMs < 1000 ||
           activity.protocol.retainMs < 0
         )
           problems.push(`${prefix}: invalid memory protocol`);
+        if(activity.protocol.audioLocale==='en-US'&&!manifest.entries.some(e=>e.text===activity.protocol.audioText&&e.locale==='en-US'&&e.voice?.startsWith('en-US-')))problems.push(`${prefix}: missing English stimulus voice`);
+        if(activity.protocol.soundSrc&&!existsSync(join('public',activity.protocol.soundSrc)))problems.push(`${prefix}: missing non-language sound`);
         if (
           activity.kind === "gridPlacement" &&
           activity.cells.some((id) => id !== null)

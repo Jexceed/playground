@@ -5,6 +5,7 @@ import {
   placeToken,
 } from "../domain/activity-evaluation";
 import type { EvaluationResult } from "../domain/activity-evaluation";
+import { isAdvancedActivity } from "../domain/advanced-activity";
 
 export type SessionPhase =
   | "ready"
@@ -14,6 +15,7 @@ export type SessionPhase =
   | "complete";
 type EvidenceDelta =
   | { kind: "attempt"; correct: boolean }
+  | { kind: "observation"; observations: Record<string,"independent"|"supported"|"notYet"> }
   | { kind: "hint" | "reveal" | "restart" };
 export type SessionEvidence = EvidenceDelta & { sequence: number };
 export type ActivitySession = {
@@ -28,6 +30,7 @@ export type ActivitySession = {
   evidence: SessionEvidence[];
 };
 export type SessionEvent =
+  | { type: "response"; response: ActivityResponse }
   | { type: "toggle"; tokenId: string }
   | { type: "place"; slotId: string; tokenId: string | null }
   | {
@@ -46,7 +49,7 @@ export type SessionEvent =
 
 export function createSession(activity: Activity): ActivitySession {
   return {
-    phase: activity.protocol.kind === "memory" ? "ready" : "respond",
+    phase: activity.protocol.kind === "practice" ? "respond" : "ready",
     response: emptyResponse(activity),
     history: [],
     result: null,
@@ -99,6 +102,7 @@ export function transitionSession(
       restarts: state.restarts,
       evidence: state.evidence,
     };
+  if(event.type === "start" && state.phase === "ready" && activity.protocol.kind === "learnThenTransfer") return {...state,phase:"respond"};
   if (
     event.type === "start" &&
     state.phase === "ready" &&
@@ -143,9 +147,10 @@ export function transitionSession(
     const next: ActivitySession = {
       ...state,
       result,
-      attempts: state.attempts + (result.status === "incomplete" ? 0 : 1),
-      phase: result.status === "correct" ? "complete" : "respond",
+      attempts: state.attempts + (result.status === "incomplete" || result.status === "needsParentObservation" ? 0 : 1),
+      phase: result.status === "correct" || result.status === "needsParentObservation" ? "complete" : "respond",
     };
+    if(result.status === "needsParentObservation" && state.response.kind === "parentObservation") return withEvidence(next,{kind:"observation",observations:state.response.observations});
     return result.status === "incomplete"
       ? next
       : withEvidence(next, {
@@ -165,6 +170,7 @@ export function transitionSession(
       : state;
   }
   let response = state.response;
+  if(event.type === "response" && isAdvancedActivity(activity) && event.response.kind === activity.kind) response = event.response;
   if (event.type === "clear") response = emptyResponse(activity);
   if (event.type === "place")
     response = placeToken(activity, response, event.slotId, event.tokenId);

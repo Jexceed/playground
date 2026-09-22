@@ -1,14 +1,17 @@
 import type { GalleryImage } from "../data/imageGallery";
 import type { AbilityLevel, GameConfig, WorldId } from "../types";
+import type { AdvancedActivity, AdvancedResponse } from "./advanced-activity";
 
-export type ActivityToken = { id: string; label: string; image: GalleryImage };
+export type ActivityToken = { id: string; label: string; image: GalleryImage; soundSrc?: string; speechText?: string };
+export type TokenUse = "once" | "unlimited" | {kind:"counted"; limits:Record<string,number>};
 export type SlotValue =
   | { state: "unfilled" }
   | { state: "filled"; tokenId: string };
 export type ActivityResponse =
   | { kind: "multiSelect"; tokenIds: string[] }
   | { kind: "orderedPlacement"; slots: SlotValue[] }
-  | { kind: "gridPlacement"; cells: Record<string, SlotValue> };
+  | { kind: "gridPlacement"; cells: Record<string, SlotValue> }
+  | AdvancedResponse;
 
 export type MemoryProtocol = {
   kind: "memory";
@@ -16,6 +19,9 @@ export type MemoryProtocol = {
   retainMs: number;
   /** Values in visible slot/cell order, not necessarily answer order. */
   preview: string[];
+  audioText?: string;
+  audioLocale?: "zh-CN" | "en-US";
+  soundSrc?: string;
 };
 export type OrderRule =
   | { type: "before"; first: string; second: string; text: string }
@@ -38,8 +44,13 @@ export type ActivityBase = {
   retry: string;
   parentPrompt: string;
   abilityTags: string[];
-  protocol: { kind: "practice" } | MemoryProtocol;
+  protocol: { kind: "practice" } | MemoryProtocol | {kind:"learnThenTransfer"; demonstration:string};
   sourceRefs: { sourceId: string; locator: string }[];
+  illustration?: GalleryImage;
+  cluesFromIllustration?: boolean;
+  stage?: 1 | 2 | 3;
+  prerequisites?: string;
+  difficulty?: { rules: number; steps: number; memory: number; representation: "pictures" | "symbols" | "physical"; reading: number; motor: number };
 };
 export type MultiSelectActivity = ActivityBase & {
   kind: "multiSelect";
@@ -49,7 +60,7 @@ export type MultiSelectActivity = ActivityBase & {
 export type OrderedActivity = ActivityBase & {
   kind: "orderedPlacement";
   slotCount: number;
-  tokenUse: "once" | "unlimited";
+  tokenUse: TokenUse;
   evaluation:
     | { kind: "sequence"; tokenIds: string[] }
     | { kind: "constraints"; rules: OrderRule[] };
@@ -59,12 +70,12 @@ export type GridActivity = ActivityBase & {
   columns: number;
   /** null is an editable cell. A blank card has a real token ID. */
   cells: (string | null)[];
-  tokenUse: "once" | "unlimited";
+  tokenUse: TokenUse;
   evaluation:
     | { kind: "exact"; cells: Record<string, string> }
     | { kind: "latin"; tokenIds: string[] };
 };
-export type Activity = MultiSelectActivity | OrderedActivity | GridActivity;
+export type Activity = MultiSelectActivity | OrderedActivity | GridActivity | AdvancedActivity;
 export type ActivitySet = Omit<GameConfig, "kind" | "rounds"> & {
   kind: "activitySet";
   rounds: Activity[];
@@ -84,16 +95,17 @@ export const ACTIVITY_COPY = {
   noHistory: "先试着放一张图卡吧。",
   ready: "准备好以后，点开始记忆。看清图卡的位置和顺序。",
   remember: "先在脑海里想一想。",
-  recall: "现在把记住的图卡摆回来吧。",
+  recall: "现在试着完成刚才的任务吧。",
   interrupted: "刚才暂停了。准备好以后，我们重新看一遍。",
   hintEnd: "线索都在这里了，试着一步一步检查。",
   latin: "再检查每一行和每一列，看看有没有重复或缺少的图卡。",
   once: "每张图卡只放一次，再检查一下。",
+  inventory: "图卡的数量超过可用库存了，请先取下一张。",
   selectFirst: "先选一张图卡，再点空位。",
 } as const;
 
 export function activityPromptSpeech(activity: Activity) {
-  return [activity.prompt, activity.instruction, ...activity.clues]
+  return [...(activity.protocol.kind === "learnThenTransfer" ? [activity.protocol.demonstration] : []),activity.prompt, activity.instruction, ...activity.clues]
     .join("。")
     .replace(/[。？！]。/g, "。");
 }
@@ -101,7 +113,7 @@ export function activityPromptSpeech(activity: Activity) {
 export function activitySlots(
   activity: Activity,
 ): { id: string; index: number; fixedTokenId: string | null }[] {
-  if (activity.kind === "multiSelect") return [];
+  if (activity.kind !== "orderedPlacement" && activity.kind !== "gridPlacement") return [];
   if (activity.kind === "orderedPlacement") {
     return Array.from({ length: activity.slotCount }, (_, index) => ({
       id: `slot-${index}`,

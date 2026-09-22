@@ -16,7 +16,7 @@ const position = (game, index) => ({ schemaVersion: 1, worldId: game.world, game
 test("启蒙 and 探索 partition the complete catalog without duplicating or changing old questions", () => {
   const sections = catalog.curriculumSections;
   assert.deepEqual(sections.map(s => [s.name, s.games.length, s.games.reduce((n, g) => n + g.rounds.length, 0)]), [
-    ["启蒙", 40, 489], ["探索", 4, 24],
+    ["启蒙", 40, 489], ["探索", 75, 621],
   ]);
   assert.deepEqual(sections[0].games, catalog.legacyGames);
   assert.deepEqual(sections[1].games, catalog.activitySets);

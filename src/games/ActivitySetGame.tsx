@@ -20,7 +20,9 @@ import type {
   ActivityProgress,
   EvidenceEvent,
 } from "../services/activity-progress";
-import { playTone, speak, stopSpeech } from "../speech";
+import { playTone, speak, stopSpeech, playRequiredAudio } from "../speech";
+import { isAdvancedActivity } from "../domain/advanced-activity";
+import { AdvancedInteraction } from "../interactions/AdvancedInteraction";
 import { publicAsset } from "../publicAsset";
 
 type Props = {
@@ -122,6 +124,7 @@ function ActivityRound({
   const [assetError, setAssetError] = useState(false);
   const [remaining, setRemaining] = useState(0);
   const [storageIssue, setStorageIssue] = useState(false);
+  const [cueError, setCueError] = useState(false);
   const [dragPoint, setDragPoint] = useState<{
     tokenId: string;
     x: number;
@@ -144,6 +147,17 @@ function ActivityRound({
   const slotEntries = activitySlots(activity);
   const canEdit = state.phase === "respond" && assetsReady;
   const isMemory = activity.protocol.kind === "memory";
+  const isListening = activity.protocol.kind === "memory" && !!(activity.protocol.audioText || activity.protocol.soundSrc);
+  useEffect(()=>{
+    if(state.phase!=="observe" || activity.protocol.kind!=="memory" || !isListening)return;
+    let live=true;setCueError(false);
+    void playRequiredAudio({text:activity.protocol.audioText,src:activity.protocol.soundSrc,locale:activity.protocol.audioLocale}).then(result=>{
+      if(!live)return;
+      if(result==="ended")dispatch({type:"observationFinished"});
+      else {setCueError(result==="failed");dispatch({type:"interrupt"});}
+    });
+    return ()=>{live=false;stopSpeech();};
+  },[state.phase,activity,isListening]);
   const tokenById = new Map(activity.tokens.map((token) => [token.id, token]));
 
   useEffect(() => {
@@ -154,6 +168,7 @@ function ActivityRound({
   useEffect(() => {
     let cancelled = false;
     const sources = new Set(activity.tokens.map((t) => t.image.src));
+    if (activity.illustration) sources.add(activity.illustration.src);
     if (activity.kind === "multiSelect" && activity.example)
       sources.add(activity.example.image.src);
     Promise.all(
@@ -182,6 +197,7 @@ function ActivityRound({
     const memory = activity.protocol;
     if (
       memory.kind !== "memory" ||
+      (state.phase === "observe" && isListening) ||
       (state.phase !== "observe" && state.phase !== "retain")
     )
       return;
@@ -206,7 +222,7 @@ function ActivityRound({
   }, [activity, state.phase]);
 
   useEffect(() => {
-    if (state.phase === "observe" || state.phase === "retain") stopSpeech();
+    if ((state.phase === "observe" && !isListening) || state.phase === "retain") stopSpeech();
     if (state.phase === "respond" && previousPhase.current === "retain")
       void speak(ACTIVITY_COPY.recall);
     previousPhase.current = state.phase;
@@ -247,7 +263,7 @@ function ActivityRound({
   function chooseToken(token: ActivityToken) {
     if (!canEdit) return;
     playTone("tap");
-    void speak(token.label);
+    if (token.soundSrc) void playRequiredAudio({src:token.soundSrc}); else void speak(token.speechText ?? token.label);
     if (activity.kind === "multiSelect")
       dispatch({ type: "toggle", tokenId: token.id });
     else setSelectedToken(token.id);
@@ -260,7 +276,7 @@ function ActivityRound({
     }
     dispatch({ type: "place", slotId, tokenId });
     playTone("tap");
-    if (activity.kind !== "multiSelect" && activity.tokenUse === "once")
+    if ((activity.kind === "orderedPlacement" || activity.kind === "gridPlacement") && activity.tokenUse === "once")
       setSelectedToken(null);
   }
   function submit() {
@@ -427,7 +443,7 @@ function ActivityRound({
         : selectedToken === token.id;
     const used =
       !multi &&
-      activity.kind !== "multiSelect" &&
+      (activity.kind === "orderedPlacement" || activity.kind === "gridPlacement") &&
       activity.tokenUse === "once" &&
       slotEntries.some(
         (s) =>
@@ -479,6 +495,8 @@ function ActivityRound({
         <h2>{activity.prompt}</h2>
         <p>{activity.instruction}</p>
       </div>
+      {activity.stage && <p className="activity-path-note">{["","先试一试","多想一步","组合挑战"][activity.stage]} · {activity.prerequisites}</p>}
+      {activity.illustration && (!isMemory || state.phase==="observe") && <img className="activity-illustration" src={publicAsset(activity.illustration.src)} alt={activity.illustration.alt}/>}
       {activity.clues.length > 0 && (
         <ol className="activity-clues">
           {activity.clues.map((clue, index) => (
@@ -503,8 +521,11 @@ function ActivityRound({
       {!assetsReady && !assetError && <p className="muted">正在准备图卡…</p>}
       {state.phase === "ready" && (
         <div className="memory-stage memory-ready">
-          <Eye size={38} />
-          <h3>先看清，再摆回来</h3>
+          {isListening ? <Volume2 size={38} /> : <Eye size={38} />}
+          <h3>{activity.protocol.kind === "learnThenTransfer" ? "先学一条新规则" : isListening ? "先听清，再来试" : "先看清，再摆回来"}</h3>
+          {activity.protocol.kind === "learnThenTransfer" && <p>{activity.protocol.demonstration}</p>}
+          {isListening && <p>先听完声音，线索不会显示在屏幕上。</p>}
+          {cueError && <p role="alert">声音暂时没能播放。请重试，听完以后再作答。</p>}
           <p>
             {state.restarts > 0
               ? ACTIVITY_COPY.interrupted
@@ -516,11 +537,12 @@ function ActivityRound({
             disabled={!assetsReady}
             onClick={() => dispatch({ type: "start" })}
           >
-            开始记忆
+            {activity.protocol.kind === "learnThenTransfer" ? "我会了，试新题" : isListening ? "开始听声音" : "开始记忆"}
           </button>
         </div>
       )}
-      {state.phase === "observe" && activity.protocol.kind === "memory" && (
+      {state.phase === "observe" && isListening && <div className="memory-stage"><Volume2 size={38}/><h3>仔细听一听</h3><p>声音播完后再开始作答。</p></div>}
+      {state.phase === "observe" && activity.protocol.kind === "memory" && !isListening && (
         <div className="memory-stage" data-testid="memory-cue">
           <div className="memory-caption">
             <strong>看清位置和顺序</strong>
@@ -533,11 +555,11 @@ function ActivityRound({
                 "--board-columns":
                   activity.kind === "gridPlacement"
                     ? activity.columns
-                    : Math.min(slotEntries.length, 6),
+                    : Math.min(slotEntries.length || (activity.protocol.kind === "memory" ? activity.protocol.preview.length : 1), 6),
               } as CSSProperties
             }
           >
-            {slotEntries.map((slot, index) =>
+            {slotEntries.length===0 ? activity.protocol.preview.map((id,index)=><div className="activity-token" key={index}><TokenArt token={tokenById.get(id)}/></div>) : slotEntries.map((slot, index) =>
               renderSlot(
                 slot,
                 activity.protocol.kind === "memory"
@@ -564,7 +586,7 @@ function ActivityRound({
       )}
       {showResponses && (
         <>
-          {activity.kind === "multiSelect" ? (
+          {isAdvancedActivity(activity) ? <AdvancedInteraction activity={activity} response={state.response} disabled={!canEdit} onChange={response=>dispatch({type:"response",response})}/> : activity.kind === "multiSelect" ? (
             <div className="activity-choice-grid" aria-label="可多选的图卡">
               {activity.tokens.map((t) => tokenButton(t, true))}
             </div>
@@ -701,8 +723,8 @@ function ActivityRound({
                     dispatch({ type: "reveal" });
                   }}
                 >
-                  <Eye size={17} />
-                  再看一次
+                  {isListening ? <Volume2 size={17} /> : <Eye size={17} />}
+                  {isListening ? "再听一次" : "再看一次"}
                 </button>
               )}
             </div>
@@ -712,7 +734,7 @@ function ActivityRound({
               disabled={!canEdit}
               onClick={submit}
             >
-              {activity.kind === "multiSelect"
+              {activity.kind === "parentObservation" ? "记录这次活动" : activity.kind === "multiSelect" || activity.kind === "singleChoice"
                 ? "选好了，看看"
                 : "摆好了，看看"}
             </button>
@@ -722,7 +744,7 @@ function ActivityRound({
       <footer className="activity-footer">
         <span>
           这次尝试 {state.attempts} 次 · 提示 {state.hints} 次
-          {isMemory ? ` · 重看 ${state.reveals} 次` : ""}
+          {isMemory ? ` · ${isListening ? "重听" : "重看"} ${state.reveals} 次` : ""}
         </span>
         <button type="button" onClick={skip}>
           先跳过

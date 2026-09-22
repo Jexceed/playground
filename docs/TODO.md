@@ -5,22 +5,9 @@ small enough to turn into a Spec Kit feature.
 
 ## P0
 
-- Keep future source-aligned activities in 探索 and existing activities in 启蒙,
-  using explicit catalog membership. Native switching/restart and memory
-  minimization checks are now complete; see
-  `specs/029-curriculum-benchmark/verification/section-navigation-qa.md`.
-
-- Implement the single-app curriculum expansion in
-  `specs/029-curriculum-benchmark/tasks.md`: preserve existing IDs/progress,
-  introduce the shared catalog and semantic response/session contracts, then
-  complete every adopted family in the source-backed coverage matrix.
-- Complete selected-source answer verification, missing-listening reconstruction,
-  and age-specific observed play before treating newly authored activities as
-  ready. The 24-activity interaction pilot is not the full benchmark scope.
-- Keep research coverage, implemented skill coverage, and playable activity
-  counts separate. The first increment contains 44 groups / 513 rounds,
-  comprising the unchanged 40 / 489 legacy bank and 4 / 24 interactive pilot.
-  This does not complete the 71 adopted families.
+- Observe 6-, 7- and 8-year-old parent-child play and calibrate reading, interaction and reasoning load for the 597 newly authored activities. Technical QA is not age validation.
+- Finish the historical-release migration/backup/ambiguity handling and finer support-history/next-practice guidance still unchecked in specs/029-curriculum-benchmark/tasks.md. Current legacy content and facts are preserved; do not infer mastery from completion.
+- Keep authoring coverage, original-source review depth and child validation separate. The authored exploration bank now contains 75 groups / 621 activities across 71 families; the original 40 / 489 bank stays in 启蒙.
 
 - Complete the exact Cocos Web Mobile manual pass at 667×375, 844×390, and
   932×430. The official Creator 3.8.8 landscape command build plus iPhone 15 Pro

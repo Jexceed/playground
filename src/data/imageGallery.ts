@@ -1,9 +1,11 @@
+import { explorationImages } from "./explorationImages";
 export type GalleryImage = {
   src: string;
   alt: string;
 };
 
 export const imageGallery = {
+  exploration: explorationImages,
   scenes: {
     bridgeRiverPlanks: {
       src: "/images/scenes/bridge-river-planks.png",
@@ -469,6 +471,7 @@ export const imageGallery = {
     },
   },
 } satisfies {
+  exploration: Record<string, GalleryImage>;
   scenes: Record<string, GalleryImage>;
   characters: Record<string, GalleryImage>;
   items: Record<string, GalleryImage>;

@@ -22,6 +22,7 @@ export function App() {
   const [activeSectionId, setActiveSectionId] = useState(initialNavigation.activeSectionId);
   const activeSection = getCurriculumSection(activeSectionId);
   const games = activeSection.games;
+  const [gameSearch,setGameSearch] = useState("");
   const [showSplash, setShowSplash] = useState(true);
   const [activeWorld, setActiveWorld] = useState<WorldId>(initialPlayLocation.worldId);
   const [selectedGameId, setSelectedGameId] = useState(initialPlayLocation.gameId);
@@ -62,7 +63,7 @@ export function App() {
     saveCatalogLocation(location);
   }, [requestedRoundIndex, selectedGame, activeSectionId]);
 
-  const visibleGames = games.filter((game) => game.world === activeWorld);
+  const visibleGames = games.filter((game) => game.world === activeWorld && `${game.title}${game.subtitle}`.includes(gameSearch.trim()));
   const visibleWorlds = worlds.filter(world => games.some(game => game.world === world.id));
   const questionStats = useMemo(() => {
     const counts = Object.fromEntries(
@@ -120,6 +121,7 @@ export function App() {
   }
 
   function chooseWorld(worldId: WorldId) {
+    setGameSearch("");
     stopSpeech();
     setActiveWorld(worldId);
     const firstGame = games.find((game) => game.world === worldId);
@@ -133,6 +135,7 @@ export function App() {
 
   function chooseSection(sectionId: CurriculumSectionId) {
     if (sectionId === activeSectionId) return;
+    setGameSearch("");
     stopSpeech();
     const location = resolveSectionPlayLocation(sectionId, navigation.current.locations[sectionId]);
     setActiveSectionId(sectionId);
@@ -204,12 +207,14 @@ export function App() {
               <strong>{activeSection.name} · {worlds.find((world) => world.id === activeWorld)?.name ?? "关卡"}</strong>
               <span>{visibleGames.length} 个</span>
             </div>
+            <input className="game-search" type="search" aria-label="查找当前主题题组" placeholder="查找题组" value={gameSearch} onChange={event=>setGameSearch(event.target.value)}/>
             <label className="mobile-game-select">
               <span>选择关卡</span>
               <select
-                value={selectedGameId}
+                value={visibleGames.some(game=>game.id===selectedGameId)?selectedGameId:""}
                 onChange={(event) => chooseGame(event.target.value)}
               >
+                {!visibleGames.some(game=>game.id===selectedGameId)&&<option value="" disabled>选择找到的题组</option>}
                 {visibleGames.map((game) => (
                   <option key={game.id} value={game.id}>
                     {game.title} · {game.rounds.length} 题
@@ -279,9 +284,9 @@ export function App() {
             <p>{selectedGame.kind === "activitySet" ? selectedGame.rounds[requestedRoundIndex]?.parentPrompt : selectedGame.parentPrompt}</p>
             {selectedGame.kind === "activitySet" && <p className="activity-parent-note">先让孩子自己试，再请他说说线索和理由。提示、重看和尝试会留下记录。</p>}
             {activityEvidence && <div className="activity-evidence" aria-label="本题累计记录">
-              <strong>{activityEvidence.correctAttempts > 0 ? "这题做过了" : "正在尝试这道题"}</strong>
-              <span>累计尝试 {activityEvidence.attempts} 次</span>
-              <span>提示 {activityEvidence.hints} 次 · 重看 {activityEvidence.reveals} 次</span>
+              <strong>{activityEvidence.observedAt ? "已记录亲子观察" : activityEvidence.correctAttempts > 0 ? "这题做过了" : "正在尝试这道题"}</strong>
+              {activityEvidence.observations ? <span>自主 {Object.values(activityEvidence.observations).filter(v=>v==='independent').length} 项 · 一起做到 {Object.values(activityEvidence.observations).filter(v=>v==='supported').length} 项 · 下次再试 {Object.values(activityEvidence.observations).filter(v=>v==='notYet').length} 项</span> : <span>累计尝试 {activityEvidence.attempts} 次</span>}
+              <span>提示 {activityEvidence.hints} 次 · 重看或重听 {activityEvidence.reveals} 次</span>
             </div>}
           </section>
 

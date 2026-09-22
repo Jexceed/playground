@@ -14,9 +14,11 @@
 - 新增针对目录隔离、往返/重启、题目重排和异常存储的行为测试；浏览器检查桌面与窄屏两入口和列表，运行build、audit及mac:install并验证真实应用。
 - 不修改题目措辞、图卡、判题和语音资源。同步规格、宪章说明、CHANGELOG、TODO和验证证据。
 
-M0设计已完成。首个4组24题增量及用户澄清的启蒙/探索双入口已实现，浏览器和真实Mac操作、分区续玩、最小化中断均已验证并完成安装。见[pilot-scope.md](pilot-scope.md)、[pilot-tasks.md](pilot-tasks.md)和[验证记录](verification/pilot-qa.md)。完整71题族范围继续保留。
+M0设计已完成。首个4组24题增量及用户澄清的启蒙/探索双入口已实现，浏览器和真实Mac操作、分区续玩、最小化中断均已验证并完成安装。见[pilot-scope.md](pilot-scope.md)、[pilot-tasks.md](pilot-tasks.md)和[验证记录](verification/pilot-qa.md)。后续已按71题族编入597项首版内容，探索总量为621项；首版范围与验证边界见[full-scope.md](full-scope.md)。
 
 ## Technical Context
+
+全量实施使用现有ActivitySet统一壳：扩展响应联合与纯判定器，新增单选、配对、路径、连桥、构形、亲子观察；图形与数理题由确定性几何数据生成本地PNG和源SVG。内容按六域分模块，稳定题族/台阶/变式ID串联来源、独立答案与审计，不复制启蒙题库。听取协议等待本地音频结束，英语显式用英语音色；非语言声音单独生成和审计。六域注册表保留旧worldId。补充分级、前置提示与可搜索题组入口。默认9个有效变式/族，既定7个亲子观察题族各3套活动。
 
 **Language/Version**: TypeScript、Node.js、现有 Tauri Rust 壳；版本沿用仓库锁文件（当前安装 TypeScript 5.9.3）。
 **Primary Dependencies**: 现有 React 19、Vite 7、Tauri 2，无新增框架或后端。

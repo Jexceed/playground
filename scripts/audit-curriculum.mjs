@@ -269,7 +269,7 @@ const counts = catalogGames.reduce(
     acc.totalRounds += game.rounds.length;
     return acc;
   },
-  { math: 0, logic: 0, graphic: 0, totalGames: 0, totalRounds: 0 },
+  { math: 0, logic: 0, graphic: 0, memory: 0, language: 0, life: 0, totalGames: 0, totalRounds: 0 },
 );
 
 checkWorldCoverage();

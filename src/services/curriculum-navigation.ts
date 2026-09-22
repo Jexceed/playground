@@ -22,7 +22,7 @@ function isSectionId(id: unknown): id is CurriculumSectionId {
 function isLocation(value: unknown): value is CatalogLocation {
   if (!value || typeof value !== "object") return false;
   const location = value as Partial<CatalogLocation>;
-  return location.schemaVersion === 1 && ["math", "logic", "graphic"].includes(location.worldId ?? "")
+  return location.schemaVersion === 1 && ["math", "logic", "graphic", "memory", "language", "life"].includes(location.worldId ?? "")
     && typeof location.gameId === "string" && typeof location.roundId === "string";
 }
 

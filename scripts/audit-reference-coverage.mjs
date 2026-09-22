@@ -1,0 +1,25 @@
+import {readFileSync,writeFileSync,mkdirSync} from 'node:fs';
+import {loadTypeScriptModule} from './lib/load-ts-module.mjs';
+import {activitySolutions} from './lib/activity-solutions.mjs';
+const root='specs/029-curriculum-benchmark';
+const matrix=JSON.parse(readFileSync(root+'/coverage-matrix.json','utf8'));
+const inventory=JSON.parse(readFileSync(root+'/source-inventory.json','utf8'));
+const {explorationSets,authoringSolutions,authoringNotes,explorationDrawings,soundStimuli}=await loadTypeScriptModule('src/curriculum/exploration/index.ts');
+const sourceIds=new Set(inventory.files.map(s=>s.id)),problems=[];
+const adopted=matrix.families.filter(f=>f.decision!=='referenceOnly');
+const familyReports=adopted.map(f=>{
+ const sets=explorationSets.filter(s=>s.rounds[0]?.primaryFamilyId===f.id),rounds=sets.flatMap(s=>s.rounds);
+ const expected=f.applicable_stages.reduce((n,s)=>n+s.target_variants,0);
+ if(rounds.length!==expected)problems.push(`${f.id}: ${rounds.length} activities, expected ${expected}`);
+ if(expected===9&&[1,2,3].some(stage=>rounds.filter(a=>a.stage===stage).length!==3))problems.push(`${f.id}: incomplete stage coverage`);
+ for(const a of rounds){if(a.sourceRefs.some(r=>!sourceIds.has(r.sourceId)))problems.push(`${a.id}: unknown source`);if(!authoringSolutions[a.id]||!authoringNotes[a.id])problems.push(`${a.id}: missing authoring record`);}
+ const report={id:f.id,title:f.title,domain:f.domain,target:expected,authored:rounds.length,stages:rounds.map(a=>a.stage),kinds:[...new Set(rounds.map(a=>a.kind))],sourceRefs:f.source_refs,contentFile:`src/curriculum/exploration/${f.domain}.ts`,activities:rounds.map(a=>a.id),technicalStatus:rounds.length===expected?'authored-and-answer-checked':'incomplete',childPlayCalibration:'pending'};
+ const body=`# ${f.id} ${f.title}\n\n本题族共${rounds.length}个原创任务，来源用于规则和能力对标，不逐页复制试卷。${f.exception_rationale??'按三个台阶、每阶三个有效变式组织。'}\n\n来源：${f.source_refs.map(r=>`${r.source_id} / ${r.locator}`).join('；')}。原材料的阅读深度和缺失音频仍以review-ledger.json为准。运行内容不依赖原始下载文件。\n\n数据：\`${report.contentFile}\`。几何PNG由同一绘制模型生成，跨引擎浮点坐标先规范化。\n\n| 活动 | 台阶 | 操作 | 题目 | 作者解与核对依据 |\n|---|---|---|---|---|\n${rounds.map(a=>`| ${a.id} | ${a.stage} | ${a.kind} | ${a.prompt.replaceAll('|','／')} | ${authoringNotes[a.id].reason.replaceAll('|','／')} |`).join('\n')}\n\n完整结构化答案见[full-answer-audit.json](full-answer-audit.json)。自动判题以集合、顺序、图约束或覆盖关系验证；亲子活动记录观察，不判成自动正确。每题的错误反馈、两级提示和亲子追问在同一活动定义中。图约束/拼搭另外由独立枚举/搜索检查合法替代解；数量关系有独立运算复算。\n\n真实孩子的理解、操作负荷和年龄难度尚未校准，不能以成人或自动化测试代替。\n`;
+ writeFileSync(`${root}/authoring/${f.id}.md`,body);
+ return report;
+});
+const decisions={scope:'Original activities aligned to the selected skill families; not a transcription of every source worksheet.',originalSourceListening:'Only prior documented review; missing source cues reconstructed as original Chinese/English speech and synthetic non-language stimuli.',sources:inventory.files.map(s=>({sourceId:s.id,path:s.path,sha256:s.sha256,families:matrix.families.filter(f=>f.source_refs.some(r=>r.source_id===s.id)).map(f=>f.id),disposition:matrix.families.some(f=>f.source_refs.some(r=>r.source_id===s.id))?'mapped-reference':'retained in source review ledger; not directly used in this authored increment'})),canonicalProblems:explorationSets.flatMap(s=>s.rounds.map(a=>({canonicalProblem:`original:${a.id}`,family:a.primaryFamilyId,sourceRefs:a.sourceRefs,answerEvidence:'full-answer-audit.json',treatment:'original reconstruction; reference problems are not counted as additional activities'}))),referenceOnly:matrix.families.filter(f=>f.decision==='referenceOnly').map(f=>({id:f.id,reason:f.target}))};
+writeFileSync(root+'/authoring/source-decisions.json',JSON.stringify(decisions,null,2)+'\n');
+const report={sourceFiles:inventory.files.length,sourceDispositionRecords:decisions.sources.length,adoptedFamilies:adopted.length,authoredFamilies:familyReports.filter(f=>f.authored===f.target).length,originalNewActivities:explorationSets.reduce((n,s)=>n+s.rounds.length,0),pilotActivitiesRetained:24,totalExplorationActivities:621,legacyActivitiesUnchanged:489,registeredDiagrams:Object.keys(explorationDrawings).length,nonLanguageStimuli:Object.keys(soundStimuli).length,referenceOnly:3,problems,families:familyReports,childCalibration:'not yet observed; do not claim age validation',sourceReading:'see review-ledger.json; not every original worksheet was independently solved'};
+writeFileSync(root+'/verification/coverage-report.json',JSON.stringify(report,null,2)+'\n');
+console.log(JSON.stringify({...report,families:undefined},null,2));if(problems.length)process.exitCode=1;

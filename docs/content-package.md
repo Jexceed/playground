@@ -76,3 +76,7 @@ Source collection files and research locators stay in development evidence.
 Only independently verified, authored activities and their registered runtime
 assets belong in release output. Unsupported platform interaction kinds must
 be reported explicitly, never silently reduced to an inequivalent choice task.
+
+## Exploration authoring
+
+The current build-time catalog separates 启蒙 and 探索. Six modules under src/curriculum/exploration/ author 597 activities with stable family/stage IDs; the 24-activity pilot is retained. Parent observations have their own outcome and never increment correct-attempt counters. Source/answer/coverage evidence lives under specs/029-curriculum-benchmark/authoring and verification. This remains typed build-time content, not a delivered external JSON-pack loader.

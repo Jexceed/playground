@@ -48,8 +48,10 @@ const TOKEN_RENDERERS = {
 };
 
 export async function buildMathIslandExport({ write = true } = {}) {
-  const { catalogGames, worlds } = await loadGameData();
-  const mathCandidates = catalogGames.filter((game) => game.world === "math");
+  const { curriculumSections, worlds } = await loadGameData();
+  // This platform's approved product scope is explicitly 启蒙 / 数字岛.
+  // Exploration stays in the main application until its engines are supported here.
+  const mathCandidates = curriculumSections.find(section=>section.id==='enlightenment').games.filter((game) => game.world === "math");
   if (mathCandidates.some((game) => game.kind !== "progressiveSet")) {
     throw new Error("Math Island contains an interaction unsupported by the Douyin exporter; do not silently omit or convert it.");
   }

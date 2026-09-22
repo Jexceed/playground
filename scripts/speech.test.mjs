@@ -102,6 +102,19 @@ function deferredManifest(manifest) {
   return { ready, resolve };
 }
 
+test("required listening completes only on ended, and cancellation or missing media never count as completion", async()=>{
+ const browser=createBrowserHarness({manifest:{entries:[{text:'听取线索',src:'/audio/cue.mp3'}]}});
+ const {mod,cleanup}=await importSpeechWithBrowser(browser);
+ try {
+  let finished=false;const playback=mod.playRequiredAudio({text:'听取线索'}).then(result=>{finished=true;return result;});
+  await new Promise(resolve=>setImmediate(resolve));assert.equal(finished,false);
+  browser.audioInstances[0].onended();assert.equal(await playback,'ended');
+  const cancelled=mod.playRequiredAudio({text:'听取线索'});await new Promise(resolve=>setImmediate(resolve));mod.stopSpeech();assert.equal(await cancelled,'cancelled');
+  assert.equal(await mod.playRequiredAudio({text:'不存在的语音'}),'failed');
+  const failed=mod.playRequiredAudio({text:'听取线索'});await new Promise(resolve=>setImmediate(resolve));browser.audioInstances.at(-1).onerror();assert.equal(await failed,'failed');
+ } finally {await cleanup();}
+});
+
 test("new speech requests invalidate stale requests before the manifest finishes loading", async () => {
   const deferred = deferredManifest({
     entries: [

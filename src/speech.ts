@@ -8,6 +8,26 @@ let preferredVoice: SpeechSynthesisVoice | null = null;
 let activeAudio: HTMLAudioElement | null = null;
 let manifestPromise: Promise<void> | null = null;
 let speechRun = 0;
+let cancelRequiredAudio: (() => void) | null = null;
+
+/** Memory cues must finish successfully; a missing cue never starts recall. */
+export async function playRequiredAudio(input: {text?: string; src?: string; locale?: string}): Promise<"ended" | "cancelled" | "failed"> {
+  const run=startSpeechRun();
+  await loadVoiceManifest();
+  if(run!==speechRun)return "cancelled";
+  const src=input.src ?? voiceMap[normalizeSpeechText(input.text??"")];
+  if(!src)return "failed";
+  recordSpeechSource(src);
+  recordLocalVoiceHit(src);
+  return new Promise(resolve=>{
+    const audio=new Audio(publicAsset(src));activeAudio=audio;audio.volume=0.9;
+    let settled=false;
+    const finish=(outcome:"ended"|"cancelled"|"failed")=>{if(settled)return;settled=true;cancelRequiredAudio=null;audio.onended=null;audio.onerror=null;resolve(outcome);};
+    cancelRequiredAudio=()=>finish("cancelled");
+    audio.onended=()=>finish("ended");audio.onerror=()=>finish("failed");
+    void audio.play().catch(()=>finish("failed"));
+  });
+}
 
 if (typeof window !== "undefined" && "speechSynthesis" in window) {
   window.speechSynthesis.onvoiceschanged = () => {
@@ -71,6 +91,7 @@ export function warmVoiceManifest() {
 
 export function stopSpeech() {
   speechRun += 1;
+  cancelRequiredAudio?.();
   activeAudio?.pause();
   try {
     if (activeAudio) activeAudio.currentTime = 0;

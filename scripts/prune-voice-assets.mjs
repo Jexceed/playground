@@ -5,20 +5,20 @@ import { fileURLToPath } from "node:url";
 export async function collectVoiceOrphans(rootDir, manifest) {
   const projectRoot = resolve(rootDir);
   const publicRoot = resolve(projectRoot, "public");
-  const voiceRoot = resolve(publicRoot, "audio", "voice", "zh-CN");
+  const voiceRoot = resolve(publicRoot, "audio", "voice");
   const referenced = new Set([
     ...(manifest.entries ?? []).map((entry) => entry.src),
     ...(manifest.segmentEntries ?? []).flatMap((entry) => entry.srcs ?? []),
   ].filter(Boolean).map((src) => manifestSrcToPath(publicRoot, src)));
   const candidates = await listFiles(voiceRoot);
-  return candidates.filter((filePath) => !referenced.has(filePath)).sort();
+  return candidates.filter((filePath) => /\.(mp3|wav|m4a)$/i.test(filePath) && !referenced.has(filePath)).sort();
 }
 
 export async function pruneVoiceOrphans(rootDir, manifest, { write = false } = {}) {
   const orphans = await collectVoiceOrphans(rootDir, manifest);
   const deleted = [];
   if (write) {
-    const voiceRoot = resolve(rootDir, "public", "audio", "voice", "zh-CN");
+    const voiceRoot = resolve(rootDir, "public", "audio", "voice");
     for (const filePath of orphans) {
       assertInside(filePath, voiceRoot);
       await rm(filePath);

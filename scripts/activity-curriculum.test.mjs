@@ -9,7 +9,7 @@ const data = await loadGameData();
 const { evaluateActivity } = await loadTypeScriptModule(
   "src/domain/activity-evaluation.ts",
 );
-const all = data.activitySets.flatMap((set) => set.rounds);
+const all = data.activitySets.filter(set=>!set.id.startsWith("explore-")).flatMap((set) => set.rounds);
 const filled = (tokenId) => ({ state: "filled", tokenId });
 
 test("catalog contains 24 new activities and the exact unchanged 489-round legacy bank", () => {
@@ -18,7 +18,7 @@ test("catalog contains 24 new activities and the exact unchanged 489-round legac
       "specs/029-curriculum-benchmark/verification/legacy-baseline.json",
     ),
   );
-  assert.equal(data.catalogGames.length, 44);
+  assert.equal(data.catalogGames.length, 115);
   assert.equal(all.length, 24);
   assert.equal(
     data.legacyGames.reduce((n, g) => n + g.rounds.length, 0),
@@ -30,7 +30,7 @@ test("catalog contains 24 new activities and the exact unchanged 489-round legac
   );
   assert.equal(
     new Set(data.catalogGames.flatMap((g) => g.rounds.map((r) => r.id))).size,
-    513,
+    1110,
   );
 });
 

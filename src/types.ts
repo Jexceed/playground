@@ -1,4 +1,4 @@
-export type WorldId = "math" | "logic" | "graphic";
+export type WorldId = "math" | "logic" | "graphic" | "memory" | "language" | "life";
 
 export type AbilityLevel = "L1" | "L2" | "L3" | "L4" | "L5" | "L6";
 

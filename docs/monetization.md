@@ -128,3 +128,7 @@ Not ready:
   https://developer.apple.com/help/app-store-connect/reference/app-information/app-information
 - Tauri distribution:
   https://v2.tauri.app/distribute/
+
+## Current content status
+
+The local exploration authoring increment contains 621 activities across six domains, alongside the retained 489 enlightenment rounds. Child age/difficulty calibration and the existing commercial-release gates remain pending; technical authoring counts are not learning-outcome or admissions-effectiveness claims.

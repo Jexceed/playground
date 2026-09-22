@@ -1,14 +1,16 @@
 import { ACTIVITY_COPY, activitySlots } from "./activity";
 import type { Activity, ActivityResponse, SlotValue } from "./activity";
+import { isAdvancedActivity, advancedEmpty, evaluateAdvanced } from "./advanced-activity";
 
 export type EvaluationResult = {
-  status: "incomplete" | "incorrect" | "correct";
+  status: "incomplete" | "incorrect" | "correct" | "needsParentObservation";
   message: string;
   clueIndex?: number;
 };
 const unfilled = (): SlotValue => ({ state: "unfilled" });
 
 export function emptyResponse(activity: Activity): ActivityResponse {
+  if (isAdvancedActivity(activity)) return advancedEmpty(activity);
   switch (activity.kind) {
     case "multiSelect":
       return { kind: activity.kind, tokenIds: [] };
@@ -46,7 +48,7 @@ export function placeToken(
   slotId: string,
   tokenId: string | null,
 ): ActivityResponse {
-  if (activity.kind === "multiSelect" || response.kind !== activity.kind)
+  if ((activity.kind !== "orderedPlacement" && activity.kind !== "gridPlacement") || response.kind !== activity.kind)
     return response;
   const slot = activitySlots(activity).find(
     (s) => s.id === slotId && s.fixedTokenId === null,
@@ -58,6 +60,10 @@ export function placeToken(
     return response;
   const next: SlotValue =
     tokenId === null ? unfilled() : { state: "filled", tokenId };
+  if(tokenId!==null && typeof activity.tokenUse === 'object') {
+    const used=activitySlots(activity).filter(s=>s.id!==slotId&&s.fixedTokenId===null).map(s=>responseValue(response,s.id)).filter(v=>v.state==='filled'&&v.tokenId===tokenId).length;
+    if(used >= (activity.tokenUse.limits[tokenId]??0))return response;
+  }
   if (response.kind === "orderedPlacement") {
     return {
       ...response,
@@ -98,6 +104,7 @@ export function evaluateActivity(
   activity: Activity,
   response: ActivityResponse,
 ): EvaluationResult {
+  if (isAdvancedActivity(activity)) return evaluateAdvanced(activity, response);
   const wrong = (
     message = activity.retry,
     clueIndex?: number,
@@ -126,6 +133,7 @@ export function evaluateActivity(
     return { status: "incomplete", message: ACTIVITY_COPY.incomplete };
   const ids = values.map((v) => (v.state === "filled" ? v.tokenId : ""));
   if (ids.some((id) => !known.has(id))) return wrong(ACTIVITY_COPY.invalid);
+  if(activity.kind !== 'multiSelect' && typeof activity.tokenUse === 'object' && ids.some(id=>ids.filter(value=>value===id).length>((activity.tokenUse as {limits:Record<string,number>}).limits[id]??0)))return wrong(ACTIVITY_COPY.inventory);
   if (
     activity.kind !== "multiSelect" &&
     activity.tokenUse === "once" &&

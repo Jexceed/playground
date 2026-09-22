@@ -1,0 +1,70 @@
+{
+  "flows": [
+    {
+      "feedback": "一共有7个。可以先把完整的一组数出来，再加上剩下的。",
+      "id": "explore-counting-cardinality-1",
+      "phase": "complete"
+    },
+    {
+      "feedback": "点的数量和数字一一对应，排法不会改变这个关系。",
+      "id": "explore-relations-analogies-1",
+      "phase": "complete"
+    },
+    {
+      "feedback": "每个路段都走了一次；连接相同两点的直路和弯路是不同路段。",
+      "id": "explore-route-constraints-9",
+      "phase": "complete"
+    },
+    {
+      "feedback": "每个岛连出的桥数和数字相同，所有小岛也连成了一个整体。",
+      "id": "explore-bridge-networks-9",
+      "phase": "complete"
+    },
+    {
+      "feedback": "不同形状的部件恰好拼满，没有重叠，也没有盖到阴影外。",
+      "id": "explore-shape-assembly-5",
+      "phase": "complete"
+    },
+    {
+      "feedback": "把听到的英语词和对应的小动物连起来。",
+      "id": "explore-english-listening-1",
+      "phase": "complete"
+    },
+    {
+      "feedback": "按听到的次序执行，每一步都不能漏。",
+      "id": "explore-auditory-instructions-1",
+      "phase": "complete"
+    },
+    {
+      "feedback": "这次亲子活动已经记录。下次可以换个条件再试试。",
+      "id": "explore-fine-motor-action-1",
+      "phase": "complete"
+    },
+    {
+      "feedback": "长短和音色都能帮助记住顺序。可以点声音卡再听它的声音。",
+      "id": "explore-sound-rhythm-1",
+      "phase": "complete"
+    },
+    {
+      "feedback": "要同时听到颜色和形状，不能只对上一项。",
+      "id": "explore-english-listening-4",
+      "phase": "complete"
+    },
+    {
+      "feedback": "每个岛连出的桥数和数字相同，所有小岛也连成了一个整体。",
+      "id": "explore-bridge-networks-1",
+      "phase": "complete"
+    }
+  ],
+  "englishVoice": "/audio/voice/en-US/edge-en-us-jennyneural/stimulus-rabbit.mp3",
+  "nonLanguageStimulus": "/audio/stimuli/sequence-1.wav",
+  "parentObservationsAreTestFixtures": true,
+  "mobile": {
+    "viewport": [
+      375,
+      812
+    ],
+    "networkCompleted": true,
+    "horizontalOverflow": false
+  }
+}

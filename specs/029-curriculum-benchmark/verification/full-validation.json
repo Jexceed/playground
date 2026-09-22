@@ -1,0 +1,80 @@
+{
+  "date": "2026-09-22",
+  "scope": "compact section switch and all 71 adopted families authored as a first content edition",
+  "authoringComplete": true,
+  "fullSpecComplete": false,
+  "catalog": {
+    "enlightenment": {
+      "groups": 40,
+      "rounds": 489
+    },
+    "exploration": {
+      "groups": 75,
+      "activities": 621
+    },
+    "newGroups": 71,
+    "newActivities": 597,
+    "totalGroups": 115,
+    "totalActivities": 1110
+  },
+  "tests": {
+    "passed": 55,
+    "failed": 0
+  },
+  "curriculumProblems": 0,
+  "voice": {
+    "count": 3729,
+    "locales": {
+      "zh-CN": 3713,
+      "en-US": 16
+    },
+    "provider": "edge-tts Python package",
+    "voicesByLocale": {
+      "zh-CN": "zh-CN-XiaoxiaoNeural",
+      "en-US": "en-US-JennyNeural"
+    },
+    "failures": [],
+    "macOSSayOrTemporaryMixed": false
+  },
+  "diagrams": 860,
+  "soundStimuli": 11,
+  "browser": {
+    "familySurfaces": 142,
+    "families": 71,
+    "viewports": [
+      [
+        1280,
+        720
+      ],
+      [
+        1280,
+        820
+      ],
+      [
+        375,
+        812
+      ]
+    ],
+    "flows": "full-browser-flows.json",
+    "surfaceEvidence": "full-browser-surfaces.json",
+    "resolvedIssue": "Canonicalized diagram coordinates before hashing to fix WebKit/V8 clock image identity."
+  },
+  "native": {
+    "installedPath": "/Applications/小小思考屋.app",
+    "install": "passed",
+    "signature": "passed",
+    "installedAndBuiltExecutableSha256": "e2cb7ba483ad75f055cf9eda2d21901274bbbd571f6a2d1d26c7a1d1ae8d62bd",
+    "opened": "passed",
+    "validationCopy": "same built app, binary matches installed app",
+    "newProcessRestore": "language / vocabulary-relations / question 1; existing 3 exploration completions preserved",
+    "requiredChineseAudio": "observe then respond after completion",
+    "answerAndStorage": "auditory-instructions-1 completed; cumulative attempts 1; exploration completions 4 / 621",
+    "userWindow": "kept intact; further UI actions stopped when user took control of the validation window",
+    "speakerMonitoring": "HTMLAudio playback/phase transition verified; speaker sound not recorded"
+  },
+  "pending": [
+    "6/7/8-year-old child play calibration",
+    "historical-release migration/backup and ambiguity handling",
+    "finer attempt-by-attempt support history and practice recommendations"
+  ]
+}

@@ -133,3 +133,7 @@ voice manifest. Re-run the exporter after a source change and use
 `pnpm audit:douyin-minigame` to reject missing files, changed hashes, `source/`
 assets, non-math resources, an incorrect AppID, or runtime resources over the
 declared 14 MB engineering budget.
+
+## Exploration media
+
+Deterministic diagram PNGs and source SVGs live in public/images/items/exploration/. Runtime references register through imageGallery.exploration; scripts/generate-exploration-media.mjs rebuilds them and removes only its own obsolete named outputs. Coordinates are canonicalized before hashing to prevent WebKit/V8 last-bit differences. Non-language WAV stimuli and their generator parameters live in public/audio/stimuli/. They are synthesized tones, not recordings of real instruments. Chinese voice remains Xiaoxiao; English cues use en-US-JennyNeural and per-entry locale/voice metadata.

@@ -15,6 +15,8 @@ export type ActivityEvidence = {
   firstCompletedAt: number | null;
   lastUpdatedAt: number;
   recentEventIds: string[];
+  observedAt?: number;
+  observations?: Record<string, "independent" | "supported" | "notYet">;
 };
 export type ActivityProgress = {
   schemaVersion: 1;
@@ -22,6 +24,7 @@ export type ActivityProgress = {
 };
 export type EvidenceEvent =
   | { id: string; kind: "attempt"; correct: boolean }
+  | { id: string; kind: "observation"; observations: Record<string,"independent"|"supported"|"notYet"> }
   | { id: string; kind: "hint" | "reveal" | "restart" | "skip" };
 const empty = (): ActivityProgress => ({ schemaVersion: 1, entries: {} });
 const natural = (value: unknown): value is number =>
@@ -65,6 +68,7 @@ export function readActivityProgress(storage: Store | null = browserStore()): {
         ].every((k) => natural(entry[k as keyof ActivityEvidence]))
       )
         return { progress: empty(), writable: false };
+      if(entry.observedAt!==undefined && (!natural(entry.observedAt) || !entry.observations || typeof entry.observations!=='object' || !Object.values(entry.observations).every(v=>['independent','supported','notYet'].includes(v))))return {progress:empty(),writable:false};
       if (
         entry.correctAttempts > entry.attempts ||
         !(entry.firstCompletedAt === null || natural(entry.firstCompletedAt)) ||
@@ -110,6 +114,10 @@ export function recordActivityEvent(
     recentEventIds: [...previous.recentEventIds.slice(-79), event.id],
   };
   switch (event.kind) {
+    case "observation":
+      entry.observedAt = now;
+      entry.observations = event.observations;
+      break;
     case "attempt":
       entry.attempts++;
       if (event.correct) {
@@ -170,7 +178,7 @@ export function mergeActivityProgress(
     for (const round of set.rounds) {
       if (
         (progress.entries[`${round.id}@${round.revision}`]?.correctAttempts ??
-          0) > 0
+          0) > 0 || progress.entries[`${round.id}@${round.revision}`]?.observedAt !== undefined
       ) {
         rounds.add(round.id);
         round.abilityTags.forEach((tag) => tags.add(tag));
@@ -179,7 +187,7 @@ export function mergeActivityProgress(
     if (
       set.rounds.every(
         (r) =>
-          (progress.entries[`${r.id}@${r.revision}`]?.correctAttempts ?? 0) > 0,
+          (progress.entries[`${r.id}@${r.revision}`]?.correctAttempts ?? 0) > 0 || progress.entries[`${r.id}@${r.revision}`]?.observedAt !== undefined,
       )
     )
       games.add(set.id);
@@ -199,7 +207,7 @@ export function readCatalogLocation(
     if (!raw) return null;
     const value = JSON.parse(raw);
     return value?.schemaVersion === 1 &&
-      ["math", "logic", "graphic"].includes(value.worldId) &&
+      ["math", "logic", "graphic", "memory", "language", "life"].includes(value.worldId) &&
       typeof value.gameId === "string" &&
       value.gameId &&
       typeof value.roundId === "string" &&

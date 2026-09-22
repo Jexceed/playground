@@ -5,6 +5,15 @@ grouped by date.
 
 ## 2026-09-22
 
+### Complete exploration authoring increment
+
+- Reduced the 启蒙/探索 switch from 66px to 36px and added compact six-domain navigation and group search.
+- Authored 597 additional activities across all 71 adopted families. 探索 now has 75 groups / 621 activities including its original pilot; 启蒙 retains the exact 40 groups / 489 rounds.
+- Added matching, graph routes with distinct parallel edges, connected bridge networks, rotation/voxel construction, parent observation, finite inventory and learn-then-transfer support. Parent observations do not become automatic correct answers.
+- Added local visual diagrams with source SVGs, original non-language sound sequences, and explicit English listening voices. Required listening waits for successful audio completion; missing/cancelled cues cannot silently advance.
+- Checked every authored answer, independent arithmetic and graph/cover alternatives, source links and duplicate surfaces; inspected the first and last activity of all 71 families. Fixed cross-engine floating-point image identity, enlarged voxel evidence, and added minute ticks to clocks.
+- Rebuilt and installed the Mac app. Latest evidence, counts and validation boundaries are in specs/029-curriculum-benchmark/verification/full-qa.md. Real child calibration remains pending.
+
 ### 启蒙 / 探索 navigation
 
 - Added explicit 启蒙 and 探索 entry buttons above the theme picker. 启蒙 contains

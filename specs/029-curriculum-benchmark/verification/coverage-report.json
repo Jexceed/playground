@@ -1,0 +1,3718 @@
+{
+  "sourceFiles": 121,
+  "sourceDispositionRecords": 121,
+  "adoptedFamilies": 71,
+  "authoredFamilies": 71,
+  "originalNewActivities": 597,
+  "pilotActivitiesRetained": 24,
+  "totalExplorationActivities": 621,
+  "legacyActivitiesUnchanged": 489,
+  "registeredDiagrams": 860,
+  "nonLanguageStimuli": 11,
+  "referenceOnly": 3,
+  "problems": [],
+  "families": [
+    {
+      "id": "N01",
+      "title": "点数、基数与数量结构",
+      "domain": "math",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "singleChoice"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S083",
+          "locator": "1"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide4"
+        },
+        {
+          "source_id": "S109",
+          "locator": "10-13"
+        },
+        {
+          "source_id": "S115",
+          "locator": "14-17"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/math.ts",
+      "activities": [
+        "explore-counting-cardinality-1",
+        "explore-counting-cardinality-2",
+        "explore-counting-cardinality-3",
+        "explore-counting-cardinality-4",
+        "explore-counting-cardinality-5",
+        "explore-counting-cardinality-6",
+        "explore-counting-cardinality-7",
+        "explore-counting-cardinality-8",
+        "explore-counting-cardinality-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "N02",
+      "title": "数量比较、补齐与移动补差",
+      "domain": "math",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "singleChoice"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S103",
+          "locator": "2-5"
+        },
+        {
+          "source_id": "S114",
+          "locator": "8-11"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/math.ts",
+      "activities": [
+        "explore-compare-transfer-1",
+        "explore-compare-transfer-2",
+        "explore-compare-transfer-3",
+        "explore-compare-transfer-4",
+        "explore-compare-transfer-5",
+        "explore-compare-transfer-6",
+        "explore-compare-transfer-7",
+        "explore-compare-transfer-8",
+        "explore-compare-transfer-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "N03",
+      "title": "数量、排列与容积守恒",
+      "domain": "math",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "singleChoice"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S110",
+          "locator": "4"
+        },
+        {
+          "source_id": "S119",
+          "locator": "3-5"
+        },
+        {
+          "source_id": "S106",
+          "locator": "9-10"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/math.ts",
+      "activities": [
+        "explore-number-conservation-1",
+        "explore-number-conservation-2",
+        "explore-number-conservation-3",
+        "explore-number-conservation-4",
+        "explore-number-conservation-5",
+        "explore-number-conservation-6",
+        "explore-number-conservation-7",
+        "explore-number-conservation-8",
+        "explore-number-conservation-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "N04",
+      "title": "有序分合与枚举",
+      "domain": "math",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "multiSelect"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S088",
+          "locator": "1-3"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/math.ts",
+      "activities": [
+        "explore-number-partitions-1",
+        "explore-number-partitions-2",
+        "explore-number-partitions-3",
+        "explore-number-partitions-4",
+        "explore-number-partitions-5",
+        "explore-number-partitions-6",
+        "explore-number-partitions-7",
+        "explore-number-partitions-8",
+        "explore-number-partitions-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "N05",
+      "title": "凑十、破十与数位表征",
+      "domain": "math",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "singleChoice"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S093",
+          "locator": "1-3"
+        },
+        {
+          "source_id": "S097",
+          "locator": "1-2"
+        },
+        {
+          "source_id": "S100",
+          "locator": "1"
+        },
+        {
+          "source_id": "S117",
+          "locator": "9-14"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/math.ts",
+      "activities": [
+        "explore-make-break-ten-1",
+        "explore-make-break-ten-2",
+        "explore-make-break-ten-3",
+        "explore-make-break-ten-4",
+        "explore-make-break-ten-5",
+        "explore-make-break-ten-6",
+        "explore-make-break-ten-7",
+        "explore-make-break-ten-8",
+        "explore-make-break-ten-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "N06",
+      "title": "情境加减与逆向数量关系",
+      "domain": "math",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "singleChoice"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S083",
+          "locator": "1"
+        },
+        {
+          "source_id": "S103",
+          "locator": "1-5"
+        },
+        {
+          "source_id": "S118",
+          "locator": "11-16"
+        },
+        {
+          "source_id": "S119",
+          "locator": "9-14"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/math.ts",
+      "activities": [
+        "explore-quantity-stories-1",
+        "explore-quantity-stories-2",
+        "explore-quantity-stories-3",
+        "explore-quantity-stories-4",
+        "explore-quantity-stories-5",
+        "explore-quantity-stories-6",
+        "explore-quantity-stories-7",
+        "explore-quantity-stories-8",
+        "explore-quantity-stories-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "N07",
+      "title": "成组计数、等分与剩余",
+      "domain": "math",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "singleChoice"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S105",
+          "locator": "slide15"
+        },
+        {
+          "source_id": "S077",
+          "locator": "4"
+        },
+        {
+          "source_id": "S114",
+          "locator": "8-11"
+        },
+        {
+          "source_id": "S116",
+          "locator": "9-12"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/math.ts",
+      "activities": [
+        "explore-group-share-1",
+        "explore-group-share-2",
+        "explore-group-share-3",
+        "explore-group-share-4",
+        "explore-group-share-5",
+        "explore-group-share-6",
+        "explore-group-share-7",
+        "explore-group-share-8",
+        "explore-group-share-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "N08",
+      "title": "连续量等分与面积占比",
+      "domain": "math",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "singleChoice"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S105",
+          "locator": "slide5"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide24"
+        },
+        {
+          "source_id": "S113",
+          "locator": "9-11"
+        },
+        {
+          "source_id": "S107",
+          "locator": "10"
+        },
+        {
+          "source_id": "S074",
+          "locator": "81"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/math.ts",
+      "activities": [
+        "explore-area-fractions-1",
+        "explore-area-fractions-2",
+        "explore-area-fractions-3",
+        "explore-area-fractions-4",
+        "explore-area-fractions-5",
+        "explore-area-fractions-6",
+        "explore-area-fractions-7",
+        "explore-area-fractions-8",
+        "explore-area-fractions-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "N09",
+      "title": "序数、排队与重叠计数",
+      "domain": "math",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "singleChoice"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S103",
+          "locator": "2-5"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide1"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide19"
+        },
+        {
+          "source_id": "S071",
+          "locator": "render5"
+        },
+        {
+          "source_id": "S109",
+          "locator": "7-9"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/math.ts",
+      "activities": [
+        "explore-ordinal-queue-1",
+        "explore-ordinal-queue-2",
+        "explore-ordinal-queue-3",
+        "explore-ordinal-queue-4",
+        "explore-ordinal-queue-5",
+        "explore-ordinal-queue-6",
+        "explore-ordinal-queue-7",
+        "explore-ordinal-queue-8",
+        "explore-ordinal-queue-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "N10",
+      "title": "单双、十与个位",
+      "domain": "math",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "multiSelect",
+        "singleChoice"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S100",
+          "locator": "1-4"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide19"
+        },
+        {
+          "source_id": "S070",
+          "locator": "29"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/math.ts",
+      "activities": [
+        "explore-parity-place-value-1",
+        "explore-parity-place-value-2",
+        "explore-parity-place-value-3",
+        "explore-parity-place-value-4",
+        "explore-parity-place-value-5",
+        "explore-parity-place-value-6",
+        "explore-parity-place-value-7",
+        "explore-parity-place-value-8",
+        "explore-parity-place-value-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "N11",
+      "title": "数列、交错规律与数表",
+      "domain": "math",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "singleChoice"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S100",
+          "locator": "3-4"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide4"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide21"
+        },
+        {
+          "source_id": "S067",
+          "locator": "39"
+        },
+        {
+          "source_id": "S067",
+          "locator": "41"
+        },
+        {
+          "source_id": "S067",
+          "locator": "57-64"
+        },
+        {
+          "source_id": "S120",
+          "locator": "32"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/math.ts",
+      "activities": [
+        "explore-number-sequences-1",
+        "explore-number-sequences-2",
+        "explore-number-sequences-3",
+        "explore-number-sequences-4",
+        "explore-number-sequences-5",
+        "explore-number-sequences-6",
+        "explore-number-sequences-7",
+        "explore-number-sequences-8",
+        "explore-number-sequences-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "N12",
+      "title": "等量替换与图形代数",
+      "domain": "math",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "singleChoice"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S105",
+          "locator": "slide6"
+        },
+        {
+          "source_id": "S071",
+          "locator": "render4-5"
+        },
+        {
+          "source_id": "S063",
+          "locator": "image-lower"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/math.ts",
+      "activities": [
+        "explore-symbol-equations-1",
+        "explore-symbol-equations-2",
+        "explore-symbol-equations-3",
+        "explore-symbol-equations-4",
+        "explore-symbol-equations-5",
+        "explore-symbol-equations-6",
+        "explore-symbol-equations-7",
+        "explore-symbol-equations-8",
+        "explore-symbol-equations-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "N13",
+      "title": "货币兑换、付款与找零",
+      "domain": "math",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "singleChoice",
+        "multiSelect"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S104",
+          "locator": "1-4"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide6"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide14"
+        },
+        {
+          "source_id": "S071",
+          "locator": "render9"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/math.ts",
+      "activities": [
+        "explore-money-shopping-1",
+        "explore-money-shopping-2",
+        "explore-money-shopping-3",
+        "explore-money-shopping-4",
+        "explore-money-shopping-5",
+        "explore-money-shopping-6",
+        "explore-money-shopping-7",
+        "explore-money-shopping-8",
+        "explore-money-shopping-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "N14",
+      "title": "时刻、刻度与经过时间",
+      "domain": "math",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "singleChoice"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S105",
+          "locator": "slide16"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide24"
+        },
+        {
+          "source_id": "S071",
+          "locator": "render8"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/math.ts",
+      "activities": [
+        "explore-time-elapsed-1",
+        "explore-time-elapsed-2",
+        "explore-time-elapsed-3",
+        "explore-time-elapsed-4",
+        "explore-time-elapsed-5",
+        "explore-time-elapsed-6",
+        "explore-time-elapsed-7",
+        "explore-time-elapsed-8",
+        "explore-time-elapsed-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "N15",
+      "title": "自然测量、长度、周长与量感",
+      "domain": "math",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "singleChoice"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S113",
+          "locator": "2-5"
+        },
+        {
+          "source_id": "S070",
+          "locator": "38"
+        },
+        {
+          "source_id": "S074",
+          "locator": "81"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/math.ts",
+      "activities": [
+        "explore-measurement-boundaries-1",
+        "explore-measurement-boundaries-2",
+        "explore-measurement-boundaries-3",
+        "explore-measurement-boundaries-4",
+        "explore-measurement-boundaries-5",
+        "explore-measurement-boundaries-6",
+        "explore-measurement-boundaries-7",
+        "explore-measurement-boundaries-8",
+        "explore-measurement-boundaries-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "N16",
+      "title": "日历、星期与周期推算",
+      "domain": "math",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "singleChoice"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S070",
+          "locator": "29"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/math.ts",
+      "activities": [
+        "explore-calendar-cycles-1",
+        "explore-calendar-cycles-2",
+        "explore-calendar-cycles-3",
+        "explore-calendar-cycles-4",
+        "explore-calendar-cycles-5",
+        "explore-calendar-cycles-6",
+        "explore-calendar-cycles-7",
+        "explore-calendar-cycles-8",
+        "explore-calendar-cycles-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "L01",
+      "title": "多角度分类与多选集合",
+      "domain": "logic",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "multiSelect"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S099",
+          "locator": "3-5"
+        },
+        {
+          "source_id": "S002",
+          "locator": "4-5"
+        },
+        {
+          "source_id": "S120",
+          "locator": "12-14"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/logic.ts",
+      "activities": [
+        "explore-multi-rule-classification-1",
+        "explore-multi-rule-classification-2",
+        "explore-multi-rule-classification-3",
+        "explore-multi-rule-classification-4",
+        "explore-multi-rule-classification-5",
+        "explore-multi-rule-classification-6",
+        "explore-multi-rule-classification-7",
+        "explore-multi-rule-classification-8",
+        "explore-multi-rule-classification-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "L02",
+      "title": "关系配对与类比",
+      "domain": "logic",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "matching"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S105",
+          "locator": "slide11"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide20"
+        },
+        {
+          "source_id": "S099",
+          "locator": "4"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/logic.ts",
+      "activities": [
+        "explore-relations-analogies-1",
+        "explore-relations-analogies-2",
+        "explore-relations-analogies-3",
+        "explore-relations-analogies-4",
+        "explore-relations-analogies-5",
+        "explore-relations-analogies-6",
+        "explore-relations-analogies-7",
+        "explore-relations-analogies-8",
+        "explore-relations-analogies-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "L03",
+      "title": "传递关系、排序与证据不足",
+      "domain": "logic",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "orderedPlacement",
+        "singleChoice"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S105",
+          "locator": "slide7-8"
+        },
+        {
+          "source_id": "S071",
+          "locator": "render8"
+        },
+        {
+          "source_id": "S019",
+          "locator": "16"
+        },
+        {
+          "source_id": "S019",
+          "locator": "18"
+        },
+        {
+          "source_id": "S111",
+          "locator": "2-4"
+        },
+        {
+          "source_id": "S112",
+          "locator": "2-4"
+        },
+        {
+          "source_id": "S115",
+          "locator": "8-10"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/logic.ts",
+      "activities": [
+        "explore-transitive-order-1",
+        "explore-transitive-order-2",
+        "explore-transitive-order-3",
+        "explore-transitive-order-4",
+        "explore-transitive-order-5",
+        "explore-transitive-order-6",
+        "explore-transitive-order-7",
+        "explore-transitive-order-8",
+        "explore-transitive-order-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "L04",
+      "title": "多条件排除与填格",
+      "domain": "logic",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "gridPlacement"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S002",
+          "locator": "14-23"
+        },
+        {
+          "source_id": "S070",
+          "locator": "43"
+        },
+        {
+          "source_id": "S070",
+          "locator": "52"
+        },
+        {
+          "source_id": "S006",
+          "locator": "14-19"
+        },
+        {
+          "source_id": "S114",
+          "locator": "12-13"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/logic.ts",
+      "activities": [
+        "explore-constraint-grid-1",
+        "explore-constraint-grid-2",
+        "explore-constraint-grid-3",
+        "explore-constraint-grid-4",
+        "explore-constraint-grid-5",
+        "explore-constraint-grid-6",
+        "explore-constraint-grid-7",
+        "explore-constraint-grid-8",
+        "explore-constraint-grid-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "L05",
+      "title": "路线约束与一笔走边",
+      "domain": "logic",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "route"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S070",
+          "locator": "54-55"
+        },
+        {
+          "source_id": "S074",
+          "locator": "12-14"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/logic.ts",
+      "activities": [
+        "explore-route-constraints-1",
+        "explore-route-constraints-2",
+        "explore-route-constraints-3",
+        "explore-route-constraints-4",
+        "explore-route-constraints-5",
+        "explore-route-constraints-6",
+        "explore-route-constraints-7",
+        "explore-route-constraints-8",
+        "explore-route-constraints-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "L06",
+      "title": "多步计划、优先级与纠错",
+      "domain": "logic",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "orderedPlacement"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S069",
+          "locator": "35"
+        },
+        {
+          "source_id": "S069",
+          "locator": "42"
+        },
+        {
+          "source_id": "S070",
+          "locator": "54-55"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/logic.ts",
+      "activities": [
+        "explore-planning-repair-1",
+        "explore-planning-repair-2",
+        "explore-planning-repair-3",
+        "explore-planning-repair-4",
+        "explore-planning-repair-5",
+        "explore-planning-repair-6",
+        "explore-planning-repair-7",
+        "explore-planning-repair-8",
+        "explore-planning-repair-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "L07",
+      "title": "条件证据与反向编线索",
+      "domain": "logic",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "multiSelect",
+        "parentObservation"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S070",
+          "locator": "38"
+        },
+        {
+          "source_id": "S070",
+          "locator": "42"
+        },
+        {
+          "source_id": "S006",
+          "locator": "28-32"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/logic.ts",
+      "activities": [
+        "explore-evidence-reasoning-1",
+        "explore-evidence-reasoning-2",
+        "explore-evidence-reasoning-3",
+        "explore-evidence-reasoning-4",
+        "explore-evidence-reasoning-5",
+        "explore-evidence-reasoning-6",
+        "explore-evidence-reasoning-7",
+        "explore-evidence-reasoning-8",
+        "explore-evidence-reasoning-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "L08",
+      "title": "现场学规则与迁移",
+      "domain": "logic",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "singleChoice"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S003",
+          "locator": "5-8"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide13-14"
+        },
+        {
+          "source_id": "S117",
+          "locator": "23-25"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/logic.ts",
+      "activities": [
+        "explore-learn-rule-transfer-1",
+        "explore-learn-rule-transfer-2",
+        "explore-learn-rule-transfer-3",
+        "explore-learn-rule-transfer-4",
+        "explore-learn-rule-transfer-5",
+        "explore-learn-rule-transfer-6",
+        "explore-learn-rule-transfer-7",
+        "explore-learn-rule-transfer-8",
+        "explore-learn-rule-transfer-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "L09",
+      "title": "状态翻转与操作结果",
+      "domain": "logic",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "gridPlacement"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S105",
+          "locator": "slide19"
+        },
+        {
+          "source_id": "S075",
+          "locator": "1"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/logic.ts",
+      "activities": [
+        "explore-toggle-state-1",
+        "explore-toggle-state-2",
+        "explore-toggle-state-3",
+        "explore-toggle-state-4",
+        "explore-toggle-state-5",
+        "explore-toggle-state-6",
+        "explore-toggle-state-7",
+        "explore-toggle-state-8",
+        "explore-toggle-state-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "L10",
+      "title": "步长规则、多角色移动与交会",
+      "domain": "logic",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "orderedPlacement"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S119",
+          "locator": "6-8"
+        },
+        {
+          "source_id": "S119",
+          "locator": "24"
+        },
+        {
+          "source_id": "S106",
+          "locator": "10"
+        },
+        {
+          "source_id": "S106",
+          "locator": "15"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/logic.ts",
+      "activities": [
+        "explore-multi-agent-movement-1",
+        "explore-multi-agent-movement-2",
+        "explore-multi-agent-movement-3",
+        "explore-multi-agent-movement-4",
+        "explore-multi-agent-movement-5",
+        "explore-multi-agent-movement-6",
+        "explore-multi-agent-movement-7",
+        "explore-multi-agent-movement-8",
+        "explore-multi-agent-movement-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "L11",
+      "title": "棋盘排列、连珠与翻转策略",
+      "domain": "logic",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "multiSelect"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S119",
+          "locator": "23"
+        },
+        {
+          "source_id": "S119",
+          "locator": "26-27"
+        },
+        {
+          "source_id": "S106",
+          "locator": "15"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/logic.ts",
+      "activities": [
+        "explore-board-strategy-1",
+        "explore-board-strategy-2",
+        "explore-board-strategy-3",
+        "explore-board-strategy-4",
+        "explore-board-strategy-5",
+        "explore-board-strategy-6",
+        "explore-board-strategy-7",
+        "explore-board-strategy-8",
+        "explore-board-strategy-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "L12",
+      "title": "连桥网络、度数与全局连通",
+      "domain": "logic",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "network"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S070",
+          "locator": "40"
+        },
+        {
+          "source_id": "S070",
+          "locator": "44"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/logic.ts",
+      "activities": [
+        "explore-bridge-networks-1",
+        "explore-bridge-networks-2",
+        "explore-bridge-networks-3",
+        "explore-bridge-networks-4",
+        "explore-bridge-networks-5",
+        "explore-bridge-networks-6",
+        "explore-bridge-networks-7",
+        "explore-bridge-networks-8",
+        "explore-bridge-networks-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "G01",
+      "title": "观察匹配、局部整体与找差",
+      "domain": "graphic",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "singleChoice"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S099",
+          "locator": "3"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide12"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide22"
+        },
+        {
+          "source_id": "S113",
+          "locator": "14-17"
+        },
+        {
+          "source_id": "S115",
+          "locator": "37"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/graphic.ts",
+      "activities": [
+        "explore-visual-search-match-1",
+        "explore-visual-search-match-2",
+        "explore-visual-search-match-3",
+        "explore-visual-search-match-4",
+        "explore-visual-search-match-5",
+        "explore-visual-search-match-6",
+        "explore-visual-search-match-7",
+        "explore-visual-search-match-8",
+        "explore-visual-search-match-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "G02",
+      "title": "遮挡、闭合与纹理补片",
+      "domain": "graphic",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "singleChoice"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S067",
+          "locator": "1-5"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide12"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/graphic.ts",
+      "activities": [
+        "explore-occlusion-texture-1",
+        "explore-occlusion-texture-2",
+        "explore-occlusion-texture-3",
+        "explore-occlusion-texture-4",
+        "explore-occlusion-texture-5",
+        "explore-occlusion-texture-6",
+        "explore-occlusion-texture-7",
+        "explore-occlusion-texture-8",
+        "explore-occlusion-texture-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "G03",
+      "title": "多属性序列与行列矩阵",
+      "domain": "graphic",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "gridPlacement"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S067",
+          "locator": "6-8"
+        },
+        {
+          "source_id": "S067",
+          "locator": "11"
+        },
+        {
+          "source_id": "S067",
+          "locator": "23-24"
+        },
+        {
+          "source_id": "S067",
+          "locator": "76"
+        },
+        {
+          "source_id": "S067",
+          "locator": "38"
+        },
+        {
+          "source_id": "S067",
+          "locator": "65"
+        },
+        {
+          "source_id": "S098",
+          "locator": "3-4"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/graphic.ts",
+      "activities": [
+        "explore-feature-matrices-1",
+        "explore-feature-matrices-2",
+        "explore-feature-matrices-3",
+        "explore-feature-matrices-4",
+        "explore-feature-matrices-5",
+        "explore-feature-matrices-6",
+        "explore-feature-matrices-7",
+        "explore-feature-matrices-8",
+        "explore-feature-matrices-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "G04",
+      "title": "位置移动、循环与反弹",
+      "domain": "graphic",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "singleChoice"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S067",
+          "locator": "12-13"
+        },
+        {
+          "source_id": "S067",
+          "locator": "31"
+        },
+        {
+          "source_id": "S067",
+          "locator": "48"
+        },
+        {
+          "source_id": "S074",
+          "locator": "53-55"
+        },
+        {
+          "source_id": "S045",
+          "locator": "image-upper"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/graphic.ts",
+      "activities": [
+        "explore-position-transform-1",
+        "explore-position-transform-2",
+        "explore-position-transform-3",
+        "explore-position-transform-4",
+        "explore-position-transform-5",
+        "explore-position-transform-6",
+        "explore-position-transform-7",
+        "explore-position-transform-8",
+        "explore-position-transform-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "G05",
+      "title": "旋转、镜像、缩放与方向性形变",
+      "domain": "graphic",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "singleChoice"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S067",
+          "locator": "79"
+        },
+        {
+          "source_id": "S074",
+          "locator": "59-62"
+        },
+        {
+          "source_id": "S071",
+          "locator": "render2"
+        },
+        {
+          "source_id": "S071",
+          "locator": "render6"
+        },
+        {
+          "source_id": "S116",
+          "locator": "23-25"
+        },
+        {
+          "source_id": "S118",
+          "locator": "25-27"
+        },
+        {
+          "source_id": "S120",
+          "locator": "24-26"
+        },
+        {
+          "source_id": "S019",
+          "locator": "6-7"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/graphic.ts",
+      "activities": [
+        "explore-rotation-reflection-1",
+        "explore-rotation-reflection-2",
+        "explore-rotation-reflection-3",
+        "explore-rotation-reflection-4",
+        "explore-rotation-reflection-5",
+        "explore-rotation-reflection-6",
+        "explore-rotation-reflection-7",
+        "explore-rotation-reflection-8",
+        "explore-rotation-reflection-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "G06",
+      "title": "叠合、求同、求异与减去",
+      "domain": "graphic",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "singleChoice"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S067",
+          "locator": "16-21"
+        },
+        {
+          "source_id": "S067",
+          "locator": "28-30"
+        },
+        {
+          "source_id": "S067",
+          "locator": "68-70"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide22"
+        },
+        {
+          "source_id": "S118",
+          "locator": "17-20"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/graphic.ts",
+      "activities": [
+        "explore-shape-set-operations-1",
+        "explore-shape-set-operations-2",
+        "explore-shape-set-operations-3",
+        "explore-shape-set-operations-4",
+        "explore-shape-set-operations-5",
+        "explore-shape-set-operations-6",
+        "explore-shape-set-operations-7",
+        "explore-shape-set-operations-8",
+        "explore-shape-set-operations-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "G07",
+      "title": "图形金字塔与递归组合",
+      "domain": "graphic",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "singleChoice"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S067",
+          "locator": "81"
+        },
+        {
+          "source_id": "S067",
+          "locator": "84"
+        },
+        {
+          "source_id": "S074",
+          "locator": "75"
+        },
+        {
+          "source_id": "S074",
+          "locator": "78"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/graphic.ts",
+      "activities": [
+        "explore-recursive-composition-1",
+        "explore-recursive-composition-2",
+        "explore-recursive-composition-3",
+        "explore-recursive-composition-4",
+        "explore-recursive-composition-5",
+        "explore-recursive-composition-6",
+        "explore-recursive-composition-7",
+        "explore-recursive-composition-8",
+        "explore-recursive-composition-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "G08",
+      "title": "黑白与颜色编码运算",
+      "domain": "graphic",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "singleChoice"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S067",
+          "locator": "33"
+        },
+        {
+          "source_id": "S067",
+          "locator": "82-85"
+        },
+        {
+          "source_id": "S074",
+          "locator": "75"
+        },
+        {
+          "source_id": "S074",
+          "locator": "78"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/graphic.ts",
+      "activities": [
+        "explore-symbolic-color-rules-1",
+        "explore-symbolic-color-rules-2",
+        "explore-symbolic-color-rules-3",
+        "explore-symbolic-color-rules-4",
+        "explore-symbolic-color-rules-5",
+        "explore-symbolic-color-rules-6",
+        "explore-symbolic-color-rules-7",
+        "explore-symbolic-color-rules-8",
+        "explore-symbolic-color-rules-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "G09",
+      "title": "点、线、边、角、面与连通部分",
+      "domain": "graphic",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "singleChoice"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S074",
+          "locator": "18-20"
+        },
+        {
+          "source_id": "S074",
+          "locator": "25"
+        },
+        {
+          "source_id": "S074",
+          "locator": "28"
+        },
+        {
+          "source_id": "S074",
+          "locator": "31"
+        },
+        {
+          "source_id": "S074",
+          "locator": "34"
+        },
+        {
+          "source_id": "S074",
+          "locator": "39-41"
+        },
+        {
+          "source_id": "S067",
+          "locator": "14"
+        },
+        {
+          "source_id": "S074",
+          "locator": "78-lower"
+        },
+        {
+          "source_id": "S072",
+          "locator": "1"
+        },
+        {
+          "source_id": "S120",
+          "locator": "33-colored-small-triangles"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/graphic.ts",
+      "activities": [
+        "explore-geometric-counts-1",
+        "explore-geometric-counts-2",
+        "explore-geometric-counts-3",
+        "explore-geometric-counts-4",
+        "explore-geometric-counts-5",
+        "explore-geometric-counts-6",
+        "explore-geometric-counts-7",
+        "explore-geometric-counts-8",
+        "explore-geometric-counts-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "G10",
+      "title": "对称轴与对称关系",
+      "domain": "graphic",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "multiSelect"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S076",
+          "locator": "3"
+        },
+        {
+          "source_id": "S074",
+          "locator": "4"
+        },
+        {
+          "source_id": "S074",
+          "locator": "7-8"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/graphic.ts",
+      "activities": [
+        "explore-symmetry-axes-1",
+        "explore-symmetry-axes-2",
+        "explore-symmetry-axes-3",
+        "explore-symmetry-axes-4",
+        "explore-symmetry-axes-5",
+        "explore-symmetry-axes-6",
+        "explore-symmetry-axes-7",
+        "explore-symmetry-axes-8",
+        "explore-symmetry-axes-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "G11",
+      "title": "开闭、曲直、接触、交叉与内外",
+      "domain": "graphic",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "singleChoice",
+        "multiSelect"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S074",
+          "locator": "31"
+        },
+        {
+          "source_id": "S074",
+          "locator": "46"
+        },
+        {
+          "source_id": "S074",
+          "locator": "51"
+        },
+        {
+          "source_id": "S072",
+          "locator": "1"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/graphic.ts",
+      "activities": [
+        "explore-topology-relations-1",
+        "explore-topology-relations-2",
+        "explore-topology-relations-3",
+        "explore-topology-relations-4",
+        "explore-topology-relations-5",
+        "explore-topology-relations-6",
+        "explore-topology-relations-7",
+        "explore-topology-relations-8",
+        "explore-topology-relations-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "G12",
+      "title": "功能标记与不变量",
+      "domain": "graphic",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "singleChoice"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S074",
+          "locator": "51"
+        },
+        {
+          "source_id": "S075",
+          "locator": "1"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/graphic.ts",
+      "activities": [
+        "explore-marker-invariants-1",
+        "explore-marker-invariants-2",
+        "explore-marker-invariants-3",
+        "explore-marker-invariants-4",
+        "explore-marker-invariants-5",
+        "explore-marker-invariants-6",
+        "explore-marker-invariants-7",
+        "explore-marker-invariants-8",
+        "explore-marker-invariants-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "G13",
+      "title": "符号编码与多位对应",
+      "domain": "graphic",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "gridPlacement"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S028",
+          "locator": "image-lower"
+        },
+        {
+          "source_id": "S044",
+          "locator": "image-upper"
+        },
+        {
+          "source_id": "S050",
+          "locator": "image-lower"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/graphic.ts",
+      "activities": [
+        "explore-symbol-codes-1",
+        "explore-symbol-codes-2",
+        "explore-symbol-codes-3",
+        "explore-symbol-codes-4",
+        "explore-symbol-codes-5",
+        "explore-symbol-codes-6",
+        "explore-symbol-codes-7",
+        "explore-symbol-codes-8",
+        "explore-symbol-codes-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "G14",
+      "title": "平面与立体拼搭、分割、缺件与多解构形",
+      "domain": "graphic",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "construction"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S077",
+          "locator": "4"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide11-12"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide21"
+        },
+        {
+          "source_id": "S074",
+          "locator": "99"
+        },
+        {
+          "source_id": "S074",
+          "locator": "101-q29-30"
+        },
+        {
+          "source_id": "S111",
+          "locator": "14-17"
+        },
+        {
+          "source_id": "S116",
+          "locator": "15-18"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/graphic.ts",
+      "activities": [
+        "explore-shape-assembly-1",
+        "explore-shape-assembly-2",
+        "explore-shape-assembly-3",
+        "explore-shape-assembly-4",
+        "explore-shape-assembly-5",
+        "explore-shape-assembly-6",
+        "explore-shape-assembly-7",
+        "explore-shape-assembly-8",
+        "explore-shape-assembly-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "G15",
+      "title": "折纸、剪孔、展开与逆向折痕",
+      "domain": "graphic",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "parentObservation",
+        "singleChoice"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S076",
+          "locator": "3"
+        },
+        {
+          "source_id": "S071",
+          "locator": "render1"
+        },
+        {
+          "source_id": "S115",
+          "locator": "20-23"
+        },
+        {
+          "source_id": "S117",
+          "locator": "17-19"
+        },
+        {
+          "source_id": "S120",
+          "locator": "17-18"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/graphic.ts",
+      "activities": [
+        "explore-fold-cut-1",
+        "explore-fold-cut-2",
+        "explore-fold-cut-3",
+        "explore-fold-cut-4",
+        "explore-fold-cut-5",
+        "explore-fold-cut-6",
+        "explore-fold-cut-7",
+        "explore-fold-cut-8",
+        "explore-fold-cut-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "G16",
+      "title": "立体分类、隐藏块与三视图",
+      "domain": "graphic",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "parentObservation",
+        "singleChoice",
+        "multiSelect"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S077",
+          "locator": "1-5"
+        },
+        {
+          "source_id": "S074",
+          "locator": "94"
+        },
+        {
+          "source_id": "S074",
+          "locator": "101-q27"
+        },
+        {
+          "source_id": "S112",
+          "locator": "14-17"
+        },
+        {
+          "source_id": "S115",
+          "locator": "11-13"
+        },
+        {
+          "source_id": "S116",
+          "locator": "6-8"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/graphic.ts",
+      "activities": [
+        "explore-solid-views-count-1",
+        "explore-solid-views-count-2",
+        "explore-solid-views-count-3",
+        "explore-solid-views-count-4",
+        "explore-solid-views-count-5",
+        "explore-solid-views-count-6",
+        "explore-solid-views-count-7",
+        "explore-solid-views-count-8",
+        "explore-solid-views-count-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "G17",
+      "title": "相对左右与观察者视角",
+      "domain": "graphic",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "singleChoice"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S076",
+          "locator": "3"
+        },
+        {
+          "source_id": "S071",
+          "locator": "render6"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide10"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide25"
+        },
+        {
+          "source_id": "S070",
+          "locator": "52"
+        },
+        {
+          "source_id": "S070",
+          "locator": "54-55"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/graphic.ts",
+      "activities": [
+        "explore-relative-perspective-1",
+        "explore-relative-perspective-2",
+        "explore-relative-perspective-3",
+        "explore-relative-perspective-4",
+        "explore-relative-perspective-5",
+        "explore-relative-perspective-6",
+        "explore-relative-perspective-7",
+        "explore-relative-perspective-8",
+        "explore-relative-perspective-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "G18",
+      "title": "立方体展开、相邻面与相对面",
+      "domain": "graphic",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "singleChoice",
+        "multiSelect"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S074",
+          "locator": "87"
+        },
+        {
+          "source_id": "S073",
+          "locator": "86"
+        },
+        {
+          "source_id": "S117",
+          "locator": "15-16"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/graphic.ts",
+      "activities": [
+        "explore-cube-nets-1",
+        "explore-cube-nets-2",
+        "explore-cube-nets-3",
+        "explore-cube-nets-4",
+        "explore-cube-nets-5",
+        "explore-cube-nets-6",
+        "explore-cube-nets-7",
+        "explore-cube-nets-8",
+        "explore-cube-nets-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "G19",
+      "title": "点阵、方格临摹与空间重建",
+      "domain": "graphic",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "gridPlacement"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S114",
+          "locator": "14-17"
+        },
+        {
+          "source_id": "S115",
+          "locator": "38"
+        },
+        {
+          "source_id": "S109",
+          "locator": "9"
+        },
+        {
+          "source_id": "S110",
+          "locator": "5-7"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/graphic.ts",
+      "activities": [
+        "explore-grid-copy-reconstruction-1",
+        "explore-grid-copy-reconstruction-2",
+        "explore-grid-copy-reconstruction-3",
+        "explore-grid-copy-reconstruction-4",
+        "explore-grid-copy-reconstruction-5",
+        "explore-grid-copy-reconstruction-6",
+        "explore-grid-copy-reconstruction-7",
+        "explore-grid-copy-reconstruction-8",
+        "explore-grid-copy-reconstruction-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "G20",
+      "title": "透明叠层、遮挡关系与顺序计划",
+      "domain": "graphic",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "orderedPlacement"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S070",
+          "locator": "58"
+        },
+        {
+          "source_id": "S070",
+          "locator": "62"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/graphic.ts",
+      "activities": [
+        "explore-layer-order-planning-1",
+        "explore-layer-order-planning-2",
+        "explore-layer-order-planning-3",
+        "explore-layer-order-planning-4",
+        "explore-layer-order-planning-5",
+        "explore-layer-order-planning-6",
+        "explore-layer-order-planning-7",
+        "explore-layer-order-planning-8",
+        "explore-layer-order-planning-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "A01",
+      "title": "视觉集合记忆与新旧辨认",
+      "domain": "memory",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "multiSelect"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S002",
+          "locator": "6-9"
+        },
+        {
+          "source_id": "S101",
+          "locator": "1-3"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/memory.ts",
+      "activities": [
+        "explore-visual-set-memory-1",
+        "explore-visual-set-memory-2",
+        "explore-visual-set-memory-3",
+        "explore-visual-set-memory-4",
+        "explore-visual-set-memory-5",
+        "explore-visual-set-memory-6",
+        "explore-visual-set-memory-7",
+        "explore-visual-set-memory-8",
+        "explore-visual-set-memory-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "A02",
+      "title": "位置记忆与图案回填",
+      "domain": "memory",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "gridPlacement"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S002",
+          "locator": "10-13"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide7"
+        },
+        {
+          "source_id": "S071",
+          "locator": "render9-11"
+        },
+        {
+          "source_id": "S115",
+          "locator": "31-32"
+        },
+        {
+          "source_id": "S118",
+          "locator": "28-29"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/memory.ts",
+      "activities": [
+        "explore-spatial-memory-1",
+        "explore-spatial-memory-2",
+        "explore-spatial-memory-3",
+        "explore-spatial-memory-4",
+        "explore-spatial-memory-5",
+        "explore-spatial-memory-6",
+        "explore-spatial-memory-7",
+        "explore-spatial-memory-8",
+        "explore-spatial-memory-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "A03",
+      "title": "顺序、逆序和重复符号记忆",
+      "domain": "memory",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "orderedPlacement"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S005",
+          "locator": "29"
+        },
+        {
+          "source_id": "S101",
+          "locator": "3"
+        },
+        {
+          "source_id": "S102",
+          "locator": "3"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/memory.ts",
+      "activities": [
+        "explore-sequence-memory-1",
+        "explore-sequence-memory-2",
+        "explore-sequence-memory-3",
+        "explore-sequence-memory-4",
+        "explore-sequence-memory-5",
+        "explore-sequence-memory-6",
+        "explore-sequence-memory-7",
+        "explore-sequence-memory-8",
+        "explore-sequence-memory-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "A04",
+      "title": "听觉记忆与复合指令",
+      "domain": "memory",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "orderedPlacement"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S102",
+          "locator": "1-4"
+        },
+        {
+          "source_id": "S071",
+          "locator": "render16-18"
+        },
+        {
+          "source_id": "S109",
+          "locator": "33"
+        },
+        {
+          "source_id": "S114",
+          "locator": "30"
+        },
+        {
+          "source_id": "S115",
+          "locator": "28-30"
+        },
+        {
+          "source_id": "S117",
+          "locator": "32"
+        },
+        {
+          "source_id": "S120",
+          "locator": "30-31"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/memory.ts",
+      "activities": [
+        "explore-auditory-instructions-1",
+        "explore-auditory-instructions-2",
+        "explore-auditory-instructions-3",
+        "explore-auditory-instructions-4",
+        "explore-auditory-instructions-5",
+        "explore-auditory-instructions-6",
+        "explore-auditory-instructions-7",
+        "explore-auditory-instructions-8",
+        "explore-auditory-instructions-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "A05",
+      "title": "故事记忆、细节与复述",
+      "domain": "memory",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "singleChoice",
+        "orderedPlacement",
+        "parentObservation"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S102",
+          "locator": "3-4"
+        },
+        {
+          "source_id": "S003",
+          "locator": "2-3"
+        },
+        {
+          "source_id": "S003",
+          "locator": "7"
+        },
+        {
+          "source_id": "S111",
+          "locator": "18-23"
+        },
+        {
+          "source_id": "S113",
+          "locator": "18-21"
+        },
+        {
+          "source_id": "S116",
+          "locator": "19-22"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/memory.ts",
+      "activities": [
+        "explore-story-recall-1",
+        "explore-story-recall-2",
+        "explore-story-recall-3",
+        "explore-story-recall-4",
+        "explore-story-recall-5",
+        "explore-story-recall-6",
+        "explore-story-recall-7",
+        "explore-story-recall-8",
+        "explore-story-recall-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "A06",
+      "title": "视觉搜索、划消与持续注意",
+      "domain": "memory",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "multiSelect"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S109",
+          "locator": "34"
+        },
+        {
+          "source_id": "S110",
+          "locator": "32"
+        },
+        {
+          "source_id": "S099",
+          "locator": "3"
+        },
+        {
+          "source_id": "S119",
+          "locator": "31-32"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/memory.ts",
+      "activities": [
+        "explore-attention-search-1",
+        "explore-attention-search-2",
+        "explore-attention-search-3",
+        "explore-attention-search-4",
+        "explore-attention-search-5",
+        "explore-attention-search-6",
+        "explore-attention-search-7",
+        "explore-attention-search-8",
+        "explore-attention-search-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "A07",
+      "title": "抑制、规则切换与工作记忆",
+      "domain": "memory",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "multiSelect"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S110",
+          "locator": "30-31"
+        },
+        {
+          "source_id": "S003",
+          "locator": "5"
+        },
+        {
+          "source_id": "S003",
+          "locator": "7-8"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/memory.ts",
+      "activities": [
+        "explore-inhibition-switch-1",
+        "explore-inhibition-switch-2",
+        "explore-inhibition-switch-3",
+        "explore-inhibition-switch-4",
+        "explore-inhibition-switch-5",
+        "explore-inhibition-switch-6",
+        "explore-inhibition-switch-7",
+        "explore-inhibition-switch-8",
+        "explore-inhibition-switch-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "A08",
+      "title": "声音辨别、音色与节奏顺序",
+      "domain": "memory",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "orderedPlacement",
+        "parentObservation"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S105",
+          "locator": "slide19"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/memory.ts",
+      "activities": [
+        "explore-sound-rhythm-1",
+        "explore-sound-rhythm-2",
+        "explore-sound-rhythm-3",
+        "explore-sound-rhythm-4",
+        "explore-sound-rhythm-5",
+        "explore-sound-rhythm-6",
+        "explore-sound-rhythm-7",
+        "explore-sound-rhythm-8",
+        "explore-sound-rhythm-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "A09",
+      "title": "关联数量与结构记忆",
+      "domain": "memory",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "matching"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S116",
+          "locator": "26-27"
+        },
+        {
+          "source_id": "S120",
+          "locator": "27-28"
+        },
+        {
+          "source_id": "S118",
+          "locator": "28-29"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/memory.ts",
+      "activities": [
+        "explore-relational-quantity-memory-1",
+        "explore-relational-quantity-memory-2",
+        "explore-relational-quantity-memory-3",
+        "explore-relational-quantity-memory-4",
+        "explore-relational-quantity-memory-5",
+        "explore-relational-quantity-memory-6",
+        "explore-relational-quantity-memory-7",
+        "explore-relational-quantity-memory-8",
+        "explore-relational-quantity-memory-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "E01",
+      "title": "动作词、反义词与词义关系",
+      "domain": "language",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "matching",
+        "parentObservation"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S109",
+          "locator": "20-23"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide15"
+        },
+        {
+          "source_id": "S071",
+          "locator": "render19"
+        },
+        {
+          "source_id": "S117",
+          "locator": "20-22"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/language.ts",
+      "activities": [
+        "explore-vocabulary-relations-1",
+        "explore-vocabulary-relations-2",
+        "explore-vocabulary-relations-3",
+        "explore-vocabulary-relations-4",
+        "explore-vocabulary-relations-5",
+        "explore-vocabulary-relations-6",
+        "explore-vocabulary-relations-7",
+        "explore-vocabulary-relations-8",
+        "explore-vocabulary-relations-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "E02",
+      "title": "完整句、方位和比较表达",
+      "domain": "language",
+      "target": 3,
+      "authored": 3,
+      "stages": [
+        1,
+        1,
+        1
+      ],
+      "kinds": [
+        "parentObservation"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S109",
+          "locator": "20-23"
+        },
+        {
+          "source_id": "S110",
+          "locator": "18-21"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide25"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/language.ts",
+      "activities": [
+        "explore-describe-relations-1",
+        "explore-describe-relations-2",
+        "explore-describe-relations-3"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "E03",
+      "title": "故事排序、因果和复述",
+      "domain": "language",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "orderedPlacement",
+        "parentObservation"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S109",
+          "locator": "20-23"
+        },
+        {
+          "source_id": "S110",
+          "locator": "18-21"
+        },
+        {
+          "source_id": "S102",
+          "locator": "3"
+        },
+        {
+          "source_id": "S118",
+          "locator": "21-24"
+        },
+        {
+          "source_id": "S120",
+          "locator": "20-23"
+        },
+        {
+          "source_id": "S069",
+          "locator": "42"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/language.ts",
+      "activities": [
+        "explore-story-sequence-expression-1",
+        "explore-story-sequence-expression-2",
+        "explore-story-sequence-expression-3",
+        "explore-story-sequence-expression-4",
+        "explore-story-sequence-expression-5",
+        "explore-story-sequence-expression-6",
+        "explore-story-sequence-expression-7",
+        "explore-story-sequence-expression-8",
+        "explore-story-sequence-expression-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "E04",
+      "title": "创编故事、比较方案与理由表达",
+      "domain": "language",
+      "target": 3,
+      "authored": 3,
+      "stages": [
+        1,
+        1,
+        1
+      ],
+      "kinds": [
+        "parentObservation"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S109",
+          "locator": "20-23"
+        },
+        {
+          "source_id": "S110",
+          "locator": "18-21"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/language.ts",
+      "activities": [
+        "explore-creative-explanation-1",
+        "explore-creative-explanation-2",
+        "explore-creative-explanation-3"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "E05",
+      "title": "字形、拼音与词语对应",
+      "domain": "language",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "singleChoice",
+        "matching"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S105",
+          "locator": "slide18"
+        },
+        {
+          "source_id": "S064",
+          "locator": "image"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/language.ts",
+      "activities": [
+        "explore-character-phonics-1",
+        "explore-character-phonics-2",
+        "explore-character-phonics-3",
+        "explore-character-phonics-4",
+        "explore-character-phonics-5",
+        "explore-character-phonics-6",
+        "explore-character-phonics-7",
+        "explore-character-phonics-8",
+        "explore-character-phonics-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "E06",
+      "title": "英语听辨与短句理解",
+      "domain": "language",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "singleChoice"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S071",
+          "locator": "render16-20"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide23-25"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/language.ts",
+      "activities": [
+        "explore-english-listening-1",
+        "explore-english-listening-2",
+        "explore-english-listening-3",
+        "explore-english-listening-4",
+        "explore-english-listening-5",
+        "explore-english-listening-6",
+        "explore-english-listening-7",
+        "explore-english-listening-8",
+        "explore-english-listening-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "E07",
+      "title": "英语中的数量、空间与比较表达",
+      "domain": "language",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "singleChoice"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S105",
+          "locator": "slide10-11"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide18"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide24-25"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/language.ts",
+      "activities": [
+        "explore-bilingual-concepts-1",
+        "explore-bilingual-concepts-2",
+        "explore-bilingual-concepts-3",
+        "explore-bilingual-concepts-4",
+        "explore-bilingual-concepts-5",
+        "explore-bilingual-concepts-6",
+        "explore-bilingual-concepts-7",
+        "explore-bilingual-concepts-8",
+        "explore-bilingual-concepts-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "E08",
+      "title": "交流、听问与自我表达",
+      "domain": "language",
+      "target": 3,
+      "authored": 3,
+      "stages": [
+        1,
+        1,
+        1
+      ],
+      "kinds": [
+        "parentObservation"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S003",
+          "locator": "1-3"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/language.ts",
+      "activities": [
+        "explore-conversation-self-expression-1",
+        "explore-conversation-self-expression-2",
+        "explore-conversation-self-expression-3"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "P01",
+      "title": "生活用品、功能、材料与场景分类",
+      "domain": "life",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "matching",
+        "parentObservation"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S099",
+          "locator": "4-5"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide1"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide11"
+        },
+        {
+          "source_id": "S116",
+          "locator": "28-29"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/life.ts",
+      "activities": [
+        "explore-everyday-classification-1",
+        "explore-everyday-classification-2",
+        "explore-everyday-classification-3",
+        "explore-everyday-classification-4",
+        "explore-everyday-classification-5",
+        "explore-everyday-classification-6",
+        "explore-everyday-classification-7",
+        "explore-everyday-classification-8",
+        "explore-everyday-classification-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "P02",
+      "title": "自然观察、生物特征与成长顺序",
+      "domain": "life",
+      "target": 9,
+      "authored": 9,
+      "stages": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "kinds": [
+        "orderedPlacement",
+        "parentObservation"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S071",
+          "locator": "render7"
+        },
+        {
+          "source_id": "S071",
+          "locator": "render20"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide3"
+        },
+        {
+          "source_id": "S109",
+          "locator": "30-32"
+        },
+        {
+          "source_id": "S112",
+          "locator": "26-28"
+        },
+        {
+          "source_id": "S115",
+          "locator": "33-35"
+        },
+        {
+          "source_id": "S117",
+          "locator": "29-31"
+        },
+        {
+          "source_id": "S119",
+          "locator": "29"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/life.ts",
+      "activities": [
+        "explore-nature-growth-1",
+        "explore-nature-growth-2",
+        "explore-nature-growth-3",
+        "explore-nature-growth-4",
+        "explore-nature-growth-5",
+        "explore-nature-growth-6",
+        "explore-nature-growth-7",
+        "explore-nature-growth-8",
+        "explore-nature-growth-9"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "P03",
+      "title": "生活科学：浮沉、颜色、影子与切面",
+      "domain": "life",
+      "target": 3,
+      "authored": 3,
+      "stages": [
+        1,
+        1,
+        1
+      ],
+      "kinds": [
+        "parentObservation"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S105",
+          "locator": "slide1"
+        },
+        {
+          "source_id": "S099",
+          "locator": "1-2"
+        },
+        {
+          "source_id": "S071",
+          "locator": "render6"
+        },
+        {
+          "source_id": "S074",
+          "locator": "97"
+        },
+        {
+          "source_id": "S111",
+          "locator": "29-31"
+        },
+        {
+          "source_id": "S113",
+          "locator": "28-30"
+        },
+        {
+          "source_id": "S117",
+          "locator": "29-31"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/life.ts",
+      "activities": [
+        "explore-science-experiments-1",
+        "explore-science-experiments-2",
+        "explore-science-experiments-3"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "P04",
+      "title": "感官、生活安全与社会情境",
+      "domain": "life",
+      "target": 3,
+      "authored": 3,
+      "stages": [
+        1,
+        1,
+        1
+      ],
+      "kinds": [
+        "parentObservation"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S105",
+          "locator": "slide23"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide25"
+        },
+        {
+          "source_id": "S071",
+          "locator": "render14"
+        },
+        {
+          "source_id": "S110",
+          "locator": "27-29"
+        },
+        {
+          "source_id": "S114",
+          "locator": "27-29"
+        },
+        {
+          "source_id": "S118",
+          "locator": "30-31"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/life.ts",
+      "activities": [
+        "explore-senses-social-rules-1",
+        "explore-senses-social-rules-2",
+        "explore-senses-social-rules-3"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "P05",
+      "title": "节日、文化与世界常识",
+      "domain": "life",
+      "target": 3,
+      "authored": 3,
+      "stages": [
+        1,
+        1,
+        1
+      ],
+      "kinds": [
+        "parentObservation"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S105",
+          "locator": "slide3"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide17"
+        },
+        {
+          "source_id": "S071",
+          "locator": "render12-14"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/life.ts",
+      "activities": [
+        "explore-culture-world-1",
+        "explore-culture-world-2",
+        "explore-culture-world-3"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    },
+    {
+      "id": "P06",
+      "title": "亲子动作、精细操作与协调",
+      "domain": "life",
+      "target": 3,
+      "authored": 3,
+      "stages": [
+        1,
+        1,
+        1
+      ],
+      "kinds": [
+        "parentObservation"
+      ],
+      "sourceRefs": [
+        {
+          "source_id": "S114",
+          "locator": "14-17"
+        },
+        {
+          "source_id": "S115",
+          "locator": "38"
+        },
+        {
+          "source_id": "S109",
+          "locator": "9"
+        },
+        {
+          "source_id": "S110",
+          "locator": "5-7"
+        },
+        {
+          "source_id": "S076",
+          "locator": "3"
+        },
+        {
+          "source_id": "S089",
+          "locator": "video"
+        },
+        {
+          "source_id": "S003",
+          "locator": "2"
+        },
+        {
+          "source_id": "S003",
+          "locator": "4-5"
+        },
+        {
+          "source_id": "S003",
+          "locator": "8"
+        }
+      ],
+      "contentFile": "src/curriculum/exploration/life.ts",
+      "activities": [
+        "explore-fine-motor-action-1",
+        "explore-fine-motor-action-2",
+        "explore-fine-motor-action-3"
+      ],
+      "technicalStatus": "authored-and-answer-checked",
+      "childPlayCalibration": "pending"
+    }
+  ],
+  "childCalibration": "not yet observed; do not claim age validation",
+  "sourceReading": "see review-ledger.json; not every original worksheet was independently solved"
+}

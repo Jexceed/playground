@@ -1,0 +1,10 @@
+import { mathSets } from './math';
+import { logicSets } from './logic';
+import { graphicSets } from './graphic';
+import { memorySets } from './memory';
+import { languageSets } from './language';
+import { lifeSets } from './life';
+export const explorationSets = [...mathSets, ...logicSets, ...graphicSets, ...memorySets, ...languageSets, ...lifeSets];
+export { authoringSolutions, authoringNotes } from './helpers';
+export { explorationDrawings } from '../../data/explorationImages';
+export { soundStimuli } from './sounds';

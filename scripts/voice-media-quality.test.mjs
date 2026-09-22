@@ -11,6 +11,11 @@ import {
   minimumVoiceDuration,
 } from "./lib/voice-media-quality.mjs";
 
+test("English listening sentences also have a word-count duration floor",()=>{
+  assert.ok(minimumVoiceDuration("The red circle is on the left of the blue square.") >= 1.9);
+  assert.equal(minimumVoiceDuration("cat"),0.35);
+});
+
 const FRAME_BYTES = 144;
 const FRAME_DURATION = 576 / 24_000;
 const EDGE_FRAME_HEADER = Buffer.from([0xff, 0xf3, 0x64, 0xc4]);

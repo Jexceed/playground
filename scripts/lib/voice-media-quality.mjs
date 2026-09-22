@@ -104,6 +104,8 @@ export async function inspectVoiceFile(filePath, text) {
 export function minimumVoiceDuration(text) {
   const hanCount = countHan(text);
   if (hanCount >= 8) return hanCount * MINIMUM_HAN_SECONDS;
+  const latinWords=(String(text).match(/\b[A-Za-z]+(?:'[A-Za-z]+)?\b/g)??[]).length;
+  if(latinWords>=3)return Math.max(MINIMUM_MEDIA_SECONDS,latinWords*0.18);
   return MINIMUM_MEDIA_SECONDS;
 }
 

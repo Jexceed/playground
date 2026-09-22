@@ -13,17 +13,23 @@ const includeParent = args["include-parent"] !== "false";
 const quiet = Boolean(args.quiet);
 const retries = Number(args.retries ?? 4);
 const python = args.python ?? process.env.PYTHON ?? "python3";
-const voiceKey = slug(`edge-${voice}`);
-const outputDir = join("public", "audio", "voice", "zh-CN", voiceKey);
+const concurrency = Math.max(1, Math.min(6, Number(args.concurrency ?? 4)));
 const manifestPath = join("public", "audio", "voice", "manifest.json");
 const voiceLines = JSON.parse(readFileSync("public/audio/voice-lines.json", "utf8"));
 const selected = selectLines(voiceLines.lines, limit, includeParent);
 
-mkdirSync(outputDir, { recursive: true });
-
 const entries = [];
 const failures = [];
-for (const [index, line] of selected.entries()) {
+let cursor=0;
+await Promise.all(Array.from({length:concurrency}, async()=>{
+while(cursor<selected.length) {
+  const index=cursor++, line=selected[index];
+  const locale=line.locale ?? "zh-CN";
+  if (!["zh-CN", "en-US"].includes(locale)) throw new Error(`Unsupported speech locale: ${locale}`);
+  const effectiveVoice=locale==="en-US" ? (args["english-voice"] ?? "en-US-JennyNeural") : voice;
+  const voiceKey=slug(`edge-${effectiveVoice}`);
+  const outputDir=join("public", "audio", "voice", locale, voiceKey);
+  mkdirSync(outputDir,{recursive:true});
   const filename = `${safeFileName(line.id)}.mp3`;
   const outputPath = join(outputDir, filename);
   const textPath = join(tmpdir(), `thinking-island-edge-${process.pid}-${index}.txt`);
@@ -45,7 +51,7 @@ for (const [index, line] of selected.entries()) {
           "-m",
           "edge_tts",
           "--voice",
-          voice,
+          effectiveVoice,
           `--rate=${rate}`,
           `--pitch=${pitch}`,
           "--file",
@@ -71,13 +77,17 @@ for (const [index, line] of selected.entries()) {
     if (!quiet) process.stdout.write(`Kept ${index + 1}/${selected.length}: ${line.id}\n`);
   }
 
-  entries.push({
+  entries[index] = {
     id: line.id,
     kind: line.kind,
     text: line.text,
-    src: `/audio/voice/zh-CN/${voiceKey}/${encodeURIComponent(basename(outputPath))}`,
-  });
+    locale,
+    voice: effectiveVoice,
+    src: `/audio/voice/${locale}/${voiceKey}/${encodeURIComponent(basename(outputPath))}`,
+  };
 }
+}));
+const completedEntries = entries.filter(Boolean);
 
 writeFileSync(
   manifestPath,
@@ -90,17 +100,18 @@ writeFileSync(
       pitch,
       includeParent,
       format: "mp3",
-      count: entries.length,
+      count: completedEntries.length,
       requestedCount: selected.length,
       failures,
-      entries,
+      entries: completedEntries,
+      voicesByLocale: { "zh-CN": voice, "en-US": args["english-voice"] ?? "en-US-JennyNeural" },
     },
     null,
     2,
   ),
 );
 
-console.log(`Wrote ${manifestPath} with ${entries.length} entries and ${failures.length} skipped lines.`);
+console.log(`Wrote ${manifestPath} with ${completedEntries.length} entries and ${failures.length} skipped lines.`);
 
 function selectLines(lines, count, withParent) {
   const filtered = withParent ? lines : lines.filter((line) => line.kind !== "parent");

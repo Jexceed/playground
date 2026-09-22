@@ -1,0 +1,202 @@
+{
+  "generator": "deterministic harmonic tones, not recordings of real instruments",
+  "sampleRate": 22050,
+  "stimuli": {
+    "soft-example": [
+      {
+        "frequency": 440,
+        "duration": 0.45,
+        "gap": 0.28,
+        "timbre": "soft"
+      }
+    ],
+    "bright-example": [
+      {
+        "frequency": 660,
+        "duration": 0.18,
+        "gap": 0.28,
+        "timbre": "bright"
+      }
+    ],
+    "sequence-1": [
+      {
+        "frequency": 440,
+        "duration": 0.45,
+        "gap": 0.28,
+        "timbre": "soft"
+      },
+      {
+        "frequency": 660,
+        "duration": 0.18,
+        "gap": 0.28,
+        "timbre": "bright"
+      }
+    ],
+    "sequence-2": [
+      {
+        "frequency": 660,
+        "duration": 0.18,
+        "gap": 0.28,
+        "timbre": "bright"
+      },
+      {
+        "frequency": 440,
+        "duration": 0.45,
+        "gap": 0.28,
+        "timbre": "soft"
+      }
+    ],
+    "sequence-3": [
+      {
+        "frequency": 440,
+        "duration": 0.45,
+        "gap": 0.28,
+        "timbre": "soft"
+      },
+      {
+        "frequency": 440,
+        "duration": 0.45,
+        "gap": 0.28,
+        "timbre": "soft"
+      }
+    ],
+    "sequence-4": [
+      {
+        "frequency": 440,
+        "duration": 0.45,
+        "gap": 0.28,
+        "timbre": "soft"
+      },
+      {
+        "frequency": 660,
+        "duration": 0.18,
+        "gap": 0.28,
+        "timbre": "bright"
+      },
+      {
+        "frequency": 440,
+        "duration": 0.45,
+        "gap": 0.28,
+        "timbre": "soft"
+      }
+    ],
+    "sequence-5": [
+      {
+        "frequency": 660,
+        "duration": 0.18,
+        "gap": 0.28,
+        "timbre": "bright"
+      },
+      {
+        "frequency": 440,
+        "duration": 0.45,
+        "gap": 0.28,
+        "timbre": "soft"
+      },
+      {
+        "frequency": 660,
+        "duration": 0.18,
+        "gap": 0.28,
+        "timbre": "bright"
+      }
+    ],
+    "sequence-6": [
+      {
+        "frequency": 440,
+        "duration": 0.45,
+        "gap": 0.28,
+        "timbre": "soft"
+      },
+      {
+        "frequency": 440,
+        "duration": 0.45,
+        "gap": 0.28,
+        "timbre": "soft"
+      },
+      {
+        "frequency": 440,
+        "duration": 0.45,
+        "gap": 0.28,
+        "timbre": "soft"
+      }
+    ],
+    "sequence-7": [
+      {
+        "frequency": 440,
+        "duration": 0.45,
+        "gap": 0.28,
+        "timbre": "soft"
+      },
+      {
+        "frequency": 660,
+        "duration": 0.18,
+        "gap": 0.28,
+        "timbre": "bright"
+      },
+      {
+        "frequency": 440,
+        "duration": 0.45,
+        "gap": 0.28,
+        "timbre": "soft"
+      },
+      {
+        "frequency": 660,
+        "duration": 0.18,
+        "gap": 0.28,
+        "timbre": "bright"
+      }
+    ],
+    "sequence-8": [
+      {
+        "frequency": 660,
+        "duration": 0.18,
+        "gap": 0.28,
+        "timbre": "bright"
+      },
+      {
+        "frequency": 440,
+        "duration": 0.45,
+        "gap": 0.28,
+        "timbre": "soft"
+      },
+      {
+        "frequency": 660,
+        "duration": 0.18,
+        "gap": 0.28,
+        "timbre": "bright"
+      },
+      {
+        "frequency": 440,
+        "duration": 0.45,
+        "gap": 0.28,
+        "timbre": "soft"
+      }
+    ],
+    "rhythm-parent": [
+      {
+        "frequency": 440,
+        "duration": 0.45,
+        "gap": 0.28,
+        "timbre": "soft"
+      },
+      {
+        "frequency": 660,
+        "duration": 0.18,
+        "gap": 0.28,
+        "timbre": "bright"
+      },
+      {
+        "frequency": 660,
+        "duration": 0.18,
+        "gap": 0.28,
+        "timbre": "bright"
+      },
+      {
+        "frequency": 440,
+        "duration": 0.45,
+        "gap": 0.28,
+        "timbre": "soft"
+      }
+    ]
+  }
+}

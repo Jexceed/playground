@@ -1,4 +1,5 @@
 import { mkdirSync, writeFileSync } from "node:fs";
+import { createHash } from "node:crypto";
 import { loadGameData } from "./lib/load-game-data.mjs";
 
 const { games, activitySets, activityVoiceLines } = await loadGameData();
@@ -104,16 +105,21 @@ const tokenLabels = {
 
 const lines = new Map();
 
-function add(kind, text, context) {
+const usedIds=new Map();
+function add(kind, text, context, locale="zh-CN") {
   if (!text) return;
   const clean = text.replace(/\s+/g, " ").trim();
   if (!clean) return;
-  const key = `${kind}:${clean}`;
+  const key = `${kind}:${locale}:${clean}`;
   if (!lines.has(key)) {
+    let id=slug(`${kind}-${clean}`).slice(0,80);
+    if(usedIds.has(id)&&usedIds.get(id)!==key)id+='-'+createHash('sha256').update(key).digest('hex').slice(0,10);
+    usedIds.set(id,key);
     lines.set(key, {
-      id: slug(`${kind}-${clean}`).slice(0, 80),
+      id,
       kind,
       text: clean,
+      locale,
       tone: kind === "success" ? "warm, delighted, clear" : kind === "retry" ? "gentle, encouraging, slow" : "friendly, clear, playful",
       contexts: [],
     });
@@ -144,7 +150,7 @@ for (const game of games) {
   }
 }
 
-for (const line of activityVoiceLines(activitySets)) add(line.kind, line.text, line.context);
+for (const line of activityVoiceLines(activitySets)) add(line.kind, line.text, line.context, line.locale);
 
 add("system", "完成啦。我们再想一想，为什么会这样？", "game-complete");
 

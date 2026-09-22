@@ -1,10 +1,10 @@
 # Activity Session Contract
 
-本契约是完整实施目标。当前M1只实现pilot-scope.md中的多选、顺序/格位摆放、视觉记忆及相应记录，其余接口仍待建设。字段详见 [data-model.md](../data-model.md)。
+本契约是完整实施目标。当前实现范围见full-scope.md及verification/full-qa.md；九种响应和视觉/听觉流程已接入，跨历史迁移与真实儿童校准继续保留。字段详见 [data-model.md](../data-model.md)。
 
 ## User Navigation
 
-一个“小小思考屋”启动与主页。按主题和能力路径显示活动，可调挑战与支持；不出现V1/V2、大龄专用独立软件或版本购买分流。
+一个“小小思考屋”启动与主页，一级入口为启蒙/探索。各部分按主题和能力路径显示活动，可调挑战与支持；不出现V1/V2、大龄专用独立软件或版本购买分流。
 保留现有math/logic/graphic标识及原活动地址映射。新的memory/language/life通过注册表加入。
 内部课程模块、schema版本和发行版本不暴露在儿童流程。
 
