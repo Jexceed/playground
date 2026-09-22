@@ -1,8 +1,10 @@
 import { useState, type CSSProperties } from "react";
 import type { ActivityResponse } from "../domain/activity";
-import { placedCells, routeNodes, type AdvancedActivity, type AdvancedResponse } from "../domain/advanced-activity";
+import { placedCells, type AdvancedActivity, type AdvancedResponse } from "../domain/advanced-activity";
 import { publicAsset } from "../publicAsset";
 import { speak, playRequiredAudio } from "../speech";
+import { MatchingInteraction } from "./MatchingInteraction";
+import { GraphInteraction } from "./GraphInteraction";
 export function AdvancedInteraction({ activity, response, disabled, onChange }: {
     activity: AdvancedActivity;
     response: ActivityResponse;
@@ -20,26 +22,11 @@ export function AdvancedInteraction({ activity, response, disabled, onChange }: 
         else
             void speak(t.speechText ?? t.label); }}>{/^\d+$/.test(t.label) ? <span className="numeric-answer">{t.label}</span> : tokenArt(t.id)}</button>)}</div>;
     if (activity.kind === "matching" && response.kind === "matching")
-        return <div className="matching-board" aria-label="配对图卡"><div>{activity.leftIds.map((id, i) => <button key={id} type="button" className={`activity-token ${selected === id ? 'is-selected' : ''}`} disabled={disabled} onClick={() => { setSelected(id); void speak(token(id).speechText ?? token(id).label); }} aria-pressed={selected === id}><b>{i + 1}</b>{tokenArt(id)}<small>{response.pairs.find(p => p[0] === id) ? `已连：${token(response.pairs.find(p => p[0] === id)![1]).label}` : '先选左边，再选右边'}</small></button>)}</div><div>{activity.rightIds.map(id => <button type="button" key={id} className="activity-token" disabled={disabled || !selected} onClick={() => { onChange({ kind: "matching", pairs: [...response.pairs.filter(p => p[0] !== selected), [selected!, id]] }); setSelected(null); void speak(token(id).speechText ?? token(id).label); }}>{tokenArt(id)}<small>{response.pairs.filter(p => p[1] === id).map(p => activity.leftIds.indexOf(p[0]) + 1).join('、')}</small></button>)}</div></div>;
-    if ((activity.kind === "network" && response.kind === "network") || (activity.kind === "route" && response.kind === "route")) {
-        const a = activity, r = response, nodes = a.graph.nodes;
-        const current = a.kind === "route" && r.kind === "route" ? routeNodes(a, r.edgeIds)?.slice(-1)[0] : undefined;
-        return <div className="graph-workspace"><svg className="graph-board" viewBox="0 0 600 340" role="img" aria-label={a.kind === "network" ? '小岛与可连的桥' : '起点、终点与路线'}>
-      {a.graph.edges.map(e => { const p = nodes.find(n => n.id === e.from)!, q = nodes.find(n => n.id === e.to)!; const count = r.kind === "network" ? (r.counts[e.id] ?? 0) : r.edgeIds.filter(id => id === e.id).length; return <g key={e.id}><path d={`M${p.x} ${p.y} Q${(p.x + q.x) / 2 + (e.curve ?? 0)} ${(p.y + q.y) / 2 + (e.curve ?? 0)} ${q.x} ${q.y}`} fill="none" stroke={count ? '#398469' : '#b1bbc8'} strokeWidth={count ? 5 : 2} strokeDasharray={count ? '' : '7 5'}/>{count > 0 && <text x={(p.x + q.x) / 2 + (e.curve ?? 0) / 2} y={(p.y + q.y) / 2 + (e.curve ?? 0) / 2 - 8} textAnchor="middle" fontSize="19">{count}</text>}</g>; })}
-      {nodes.map(n => <g key={n.id}><circle cx={n.x} cy={n.y} r="24" fill={n.id === current ? '#e9b44c' : '#fff7dc'} stroke="#47617a" strokeWidth="2"/><text x={n.x} y={n.y + 6} textAnchor="middle" fontSize="18">{n.degree ?? n.label}</text><text x={n.x} y={n.y + 44} textAnchor="middle" fontSize="15">{n.degree !== undefined ? n.label : (a.kind === "route" && n.id === a.start ? '起点' : a.kind === "route" && n.id === a.end ? '终点' : '')}</text></g>)}
-    </svg><p className="muted">{a.kind === "network" ? '点连接按钮加一座桥，再点可改变桥数。' : `现在在${nodes.find(n => n.id === current)?.label ?? '起点'}，选择下一段路。`}</p><div className="graph-controls">{a.graph.edges.map(e => {
-                const connected = current === e.from || current === e.to;
-                const blocked = a.kind === "route" && a.blockedEdges.includes(e.id);
-                const used = r.kind === "route" && a.kind === "route" && !a.allowRevisit && r.edgeIds.includes(e.id);
-                const title = `${nodes.find(n => n.id === e.from)!.label}—${nodes.find(n => n.id === e.to)!.label}${e.curve ? '（弯路）' : ''}`;
-                return <button type="button" key={e.id} disabled={disabled || blocked || (a.kind === "route" && (!connected || used))} onClick={() => { if (r.kind === "network")
-                    onChange({ kind: "network", counts: { ...r.counts, [e.id]: (r.counts[e.id] ?? 0) >= (e.max ?? 2) ? (e.fixed ?? 0) : (r.counts[e.id] ?? 0) + 1 } });
-                else
-                    onChange({ kind: "route", edgeIds: [...r.edgeIds, e.id] }); }}>{title}{r.kind === "network" ? ` · ${r.counts[e.id] ?? 0}座` : blocked ? ' · 不通' : ''}</button>;
-            })}</div>{r.kind === "route" && <p aria-label="已走路线">已走 {r.edgeIds.length} 段：{routeNodes(a as Extract<AdvancedActivity, {
-            kind: "route";
-        }>, r.edgeIds)?.map(id => nodes.find(n => n.id === id)!.label).join(' → ')}</p>}</div>;
-    }
+        return <MatchingInteraction activity={activity} response={response} disabled={disabled} onChange={onChange} />;
+    if (activity.kind === "network" && response.kind === "network")
+        return <GraphInteraction activity={activity} response={response} disabled={disabled} onChange={onChange} />;
+    if (activity.kind === "route" && response.kind === "route")
+        return <GraphInteraction activity={activity} response={response} disabled={disabled} onChange={onChange} />;
     if (activity.kind === "construction" && response.kind === "construction") {
         const cells = response.placements.flatMap(p => { const piece = activity.pieces.find(item => item.id === p.pieceId); return piece ? placedCells(piece, p).map(c => ({ cell: c, piece })) : []; });
         const piece = activity.pieces.find(p => p.id === selected);

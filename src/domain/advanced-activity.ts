@@ -30,6 +30,8 @@ export type MatchingActivity = ActivityBase & {
         string,
         string
     ][];
+    /** Explicit equivalent one-to-one answers, e.g. two visually identical shape cards. */
+    alternativePairings?: [string, string][][];
 };
 export type RouteActivity = ActivityBase & {
     kind: "route";
@@ -150,7 +152,10 @@ export function evaluateAdvanced(activity: AdvancedActivity, response: ActivityR
         if (response.pairs.length < activity.expectedPairs.length)
             return result("incomplete", "还有一组关系没有连好。");
         const keys = response.pairs.map(p => JSON.stringify(p));
-        return new Set(keys).size === keys.length && keys.length === activity.expectedPairs.length && activity.expectedPairs.every(p => keys.includes(JSON.stringify(p))) ? correct() : wrong();
+        const validEndpoints = response.pairs.every(([left, right]) => activity.leftIds.includes(left) && activity.rightIds.includes(right))
+            && new Set(response.pairs.map(p => p[0])).size === keys.length && new Set(response.pairs.map(p => p[1])).size === keys.length;
+        return validEndpoints && keys.length === activity.expectedPairs.length
+            && [activity.expectedPairs, ...(activity.alternativePairings ?? [])].some(pairs => pairs.length === keys.length && pairs.every(p => keys.includes(JSON.stringify(p)))) ? correct() : wrong();
     }
     if (activity.kind === "route" && response.kind === "route") {
         if (!response.edgeIds.length)

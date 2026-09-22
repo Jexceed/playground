@@ -2,7 +2,7 @@ import type { GalleryImage } from "../data/imageGallery";
 import type { AbilityLevel, GameConfig, WorldId } from "../types";
 import type { AdvancedActivity, AdvancedResponse } from "./advanced-activity";
 
-export type ActivityToken = { id: string; label: string; image: GalleryImage; soundSrc?: string; speechText?: string };
+export type ActivityToken = { id: string; label: string; image: GalleryImage; soundSrc?: string; speechText?: string; textOnly?: boolean };
 export type TokenUse = "once" | "unlimited" | {kind:"counted"; limits:Record<string,number>};
 export type SlotValue =
   | { state: "unfilled" }

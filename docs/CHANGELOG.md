@@ -5,6 +5,13 @@ grouped by date.
 
 ## 2026-09-22
 
+### Visible connection interactions
+
+- Replaced matching numbers/text summaries with real lines, direct drag or two-click pairing, either-side starts, reconnection and unlink controls. Removed duplicated text in word cards.
+- Moved bridge/route controls onto the map, drew double bridges as two lines, separated parallel roads, and added current-location, step and direction feedback.
+- Accepted interchangeable identical circles in three relationship-matching activities; other answers, IDs and progress remain intact.
+- Passed 30 focused tests, production build and curriculum/voice audits, and checked desktop/375px flows. Installed the updated Mac app and verified its signature/binary match. Fresh native UI acceptance awaits manual Mac unlock; see specs/030-visible-connections/verification/qa.md.
+
 ### Complete exploration authoring increment
 
 - Reduced the 启蒙/探索 switch from 66px to 36px and added compact six-domain navigation and group search.

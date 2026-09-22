@@ -22,7 +22,7 @@ export function base(family: FamilyId, index: number, prompt: string, instructio
         hints: ['先指一指题目里已经知道的线索。', '把每个条件分开试一试，最后再一起检查。'], success: reason, retry: '再对照图和题目的条件，一步一步检查。',
         parentPrompt: '你先用了哪条线索？能换一种方法检查吗？', abilityTags: [f.title], protocol: { kind: 'practice' }, sourceRefs: f.refs.map(r => ({ ...r })) };
 }
-export function card(id: string, value: string | number, drawing?: Drawing): ActivityToken { return { id, label: String(value), speechText: ({ "○": "圆形", "□": "方形", "△": "三角形" } as Record<string, string>)[String(value)], image: image(drawing ?? label(value), String(value)) }; }
+export function card(id: string, value: string | number, drawing?: Drawing): ActivityToken { return { id, label: String(value), speechText: ({ "○": "圆形", "□": "方形", "△": "三角形" } as Record<string, string>)[String(value)], image: image(drawing ?? label(value), String(value)), textOnly: !drawing }; }
 export function rotate<T>(values: T[], shift: number): T[] { const n = shift % values.length; return [...values.slice(n), ...values.slice(0, n)]; }
 export function choice(family: FamilyId, index: number, prompt: string, options: (string | number | {
     label: string;
@@ -71,7 +71,7 @@ export function matching(family: FamilyId, index: number, prompt: string, left: 
     string,
     string
 ][], reason: string, illustration?: Drawing): Activity {
-    const a = { ...base(family, index, prompt, '选左边的一张图卡，再选右边和它有关的一张。', reason), kind: 'matching' as const, tokens: [...left, ...right], leftIds: left.map(t => t.id), rightIds: rotate(right, index + 1).map(t => t.id), expectedPairs: pairs, illustration: illustration ? image(illustration, prompt) : undefined };
+    const a = { ...base(family, index, prompt, '把两边有关的图卡连起来。可以拖过去，也可以两边各点一下。', reason), kind: 'matching' as const, tokens: [...left, ...right], leftIds: left.map(t => t.id), rightIds: rotate(right, index + 1).map(t => t.id), expectedPairs: pairs, illustration: illustration ? image(illustration, prompt) : undefined };
     a.hints = ['先说说左边这张图卡的特点，再找对应关系。', reason];
     authoringSolutions[a.id] = { kind: 'matching', pairs };
     return a;

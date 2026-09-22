@@ -2927,12 +2927,6 @@ button:focus-visible {
 .activity-illustration { display:block; width:auto; max-width:100%; height:auto; max-height:185px; object-fit:contain; margin:10px auto; border-radius:8px; }
 .single-choice { grid-template-columns:repeat(var(--choice-columns,3),minmax(0,1fr)); }
 .single-choice .activity-token-image { width:120px; height:100px; }
-.matching-board { display:grid; grid-template-columns:1fr 1fr; gap:30px; margin:16px 0; }
-.matching-board>div { display:grid; gap:10px; }
-.matching-board .activity-token { min-height:90px; flex-direction:row; flex-wrap:wrap; padding:8px; font-size:14px; }
-.matching-board small { width:100%; font-size:11px; color:#687665; }
-.matching-board img { width:58px; height:58px; }
-.graph-board { display:block; width:100%; max-height:310px; background:#f7f8ee; border-radius:12px; }
 .graph-controls,.construction-tools { display:flex; gap:7px; flex-wrap:wrap; margin:10px 0; }
 .graph-controls button,.construction-tools button { min-height:40px; padding:7px 12px; background:#fffaf0; border:2px solid #d0d7c6; border-radius:8px; cursor:pointer; }
 .graph-controls button:disabled { opacity:.38; }
@@ -2957,7 +2951,7 @@ button:focus-visible {
 .world-icon-memory::before { content:'忆'; }
 .world-icon-language::before { content:'语'; }
 .world-icon-life::before { content:'探'; }
-@media(max-width:760px){.single-choice .activity-token-image { width:95px; height:95px; }.activity-illustration { max-height:230px; }.matching-board { gap:12px; }.graph-controls button { flex:1 1 40%; }.parent-activity label { display:flex; }.world-switcher { grid-template-columns:repeat(3,minmax(0,1fr)); }.world-button.expanded small { display:none; }.world-button.expanded { min-height:52px; }.world-button strong { font-size:13px; }.world-button.expanded >span:not(.world-icon) {display:flex;flex-direction:column;align-items:flex-start;gap:2px;}.world-button .world-icon{width:22px;height:22px;}.world-button{grid-template-columns:22px minmax(0,1fr);gap:4px;padding:5px;}}
+@media(max-width:760px){.single-choice .activity-token-image { width:95px; height:95px; }.activity-illustration { max-height:230px; }.graph-controls button { flex:1 1 40%; }.parent-activity label { display:flex; }.world-switcher { grid-template-columns:repeat(3,minmax(0,1fr)); }.world-button.expanded small { display:none; }.world-button.expanded { min-height:52px; }.world-button strong { font-size:13px; }.world-button.expanded >span:not(.world-icon) {display:flex;flex-direction:column;align-items:flex-start;gap:2px;}.world-button .world-icon{width:22px;height:22px;}.world-button{grid-template-columns:22px minmax(0,1fr);gap:4px;padding:5px;}}
 
 [data-section="exploration"] .world-switcher {grid-template-columns:repeat(2,minmax(0,1fr));}
 [data-section="exploration"] .world-button {min-height:48px;grid-template-columns:23px minmax(0,1fr);padding:5px;gap:5px;}
@@ -2969,4 +2963,97 @@ button:focus-visible {
 @media(max-width:760px){[data-section="exploration"] .world-switcher {grid-template-columns:repeat(3,minmax(0,1fr));}.single-choice .activity-token-image {height:76px;width:90px;}.activity-illustration {max-height:180px;}}
 
 .single-choice .numeric-answer {display:grid;place-items:center;min-height:90px;font-size:32px;font-weight:750;}
+
+/* Connections are part of the playable surface, with the same endpoints on every viewport. */
+.connection-toolbar {display:flex;align-items:center;justify-content:space-between;gap:12px;margin:12px 0;color:#465a61;font-size:14px;}
+.connection-toolbar p {margin:0;line-height:1.5;}
+.connection-count {flex-shrink:0;padding:5px 9px;border-radius:20px;background:#eaf0ee;font-size:12px;font-variant-numeric:tabular-nums;}
+.connection-footnote {margin:10px 0;color:#72756e;font-size:12px;line-height:1.6;}
+.matching-board {position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(72px,12vw,140px);margin:18px auto;max-width:680px;padding:4px;}
+.matching-column {display:grid;gap:18px;position:relative;z-index:1;}
+.matching-card-wrap {position:relative;min-width:0;}
+.matching-card {position:relative;display:flex;align-items:center;justify-content:center;gap:8px;width:100%;height:96px;padding:10px 16px;border:2px solid #cdd4c7;border-radius:14px;background:#fffef9;box-shadow:0 3px 0 #e2e6db;color:#34464a;font:inherit;cursor:pointer;touch-action:none;user-select:none;-webkit-user-select:none;transition:background .12s,border-color .12s;}
+.matching-card img {width:70px;height:70px;object-fit:contain;pointer-events:none;}
+.matching-card-label {font-size:15px;line-height:1.35;overflow-wrap:anywhere;}
+.matching-card.is-text .matching-card-label {font-size:clamp(23px,3vw,34px);font-weight:650;letter-spacing:.04em;}
+.matching-card.is-connected {border-color:var(--connection-color);}
+.matching-port {position:absolute;top:50%;width:16px;height:16px;transform:translateY(-50%);background:#fffef9;border:3px solid #bcc9c7;border-radius:50%;pointer-events:none;}
+.is-left .matching-port {right:-9px;}
+.is-right .matching-port {left:-9px;}
+.matching-card.is-connected .matching-port {background:var(--connection-color);border-color:var(--connection-color);box-shadow:0 0 0 3px #fffef9;}
+.matching-card.is-selected {border-color:#bc8528;background:#fff5d8;outline:3px solid #efd49c;outline-offset:3px;}
+.matching-card.is-selected .matching-port {border-color:#bc8528;background:#bc8528;}
+.matching-card.is-target {border-style:dashed;border-color:#94aeb9;}
+.matching-card.is-target:hover,.matching-card.is-drop-target {background:#eaf4f8;border:2px solid #3e789f;}
+.matching-card:focus-visible,.matching-unlink:focus-visible,.graph-node:focus-visible {outline:3px solid #2f689b;outline-offset:4px;}
+.matching-card:disabled {cursor:default;opacity:1;}
+.matching-card:hover,.graph-node:hover {transform:none;}
+.matching-unlink {position:absolute;top:-8px;right:-8px;z-index:2;display:grid;place-items:center;width:28px;height:28px;padding:0;border:1px solid #ced7d2;border-radius:50%;background:#fffef9;color:#64716c;cursor:pointer;}
+.matching-unlink::after {content:'';position:absolute;inset:-7px;}
+.matching-unlink:hover {color:#354f5a;background:#eaf0ee;}
+.matching-lines {position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none;}
+.matching-lines path {fill:none;stroke-width:4;stroke-linecap:round;}
+.matching-lines .matching-line-halo {stroke:#fffef9;stroke-width:10;}
+.matching-lines .matching-preview {stroke:#bc8528;stroke-width:4;stroke-dasharray:7 6;}
+.graph-map {position:relative;width:100%;height:clamp(280px,32vw,350px);background:#f4f6ee;border:1px solid #dfe4d6;border-radius:18px;}
+.graph-board {position:absolute;inset:0;width:100%;height:100%;overflow:visible;}
+.graph-edge {cursor:pointer;outline:none;}
+.graph-edge[aria-disabled=true] {cursor:default;}
+.graph-edge path {fill:none;vector-effect:non-scaling-stroke;stroke-linecap:round;stroke-linejoin:round;}
+.graph-visible-line {stroke:#c1caca;stroke-width:3;stroke-dasharray:6 7;pointer-events:none;}
+.graph-edge.is-available .graph-visible-line {stroke:#5085b1;stroke-width:4;}
+.graph-edge.is-used .graph-visible-line {stroke:#367a68;stroke-width:5;stroke-dasharray:none;}
+.graph-edge.is-used .graph-visible-line.is-bridge {stroke:#8b6b41;stroke-width:5;}
+.graph-edge.is-blocked .graph-visible-line {stroke:#bbb9b6;stroke-dasharray:3 9;}
+.graph-edge-hit {stroke:transparent;stroke-width:34;pointer-events:stroke;}
+.graph-edge-focus {stroke:transparent;stroke-width:20;pointer-events:none;}
+.graph-edge[aria-disabled=false]:hover .graph-edge-focus,.graph-edge:focus-visible .graph-edge-focus {stroke:#dbe9f5;}
+.graph-road-block circle {fill:#fff7ed;stroke:#9c6d57;stroke-width:2;}
+.graph-road-block path {stroke:#9c6d57;stroke-width:3;}
+.graph-node-position {position:absolute;transform:translate(-50%,-50%);text-align:center;}
+.graph-road-control {position:absolute;transform:translate(-50%,-50%);display:grid;place-items:center;width:34px;height:34px;padding:0;border:2px solid #6692b1;border-radius:50%;background:#f8fcff;color:#3e7298;font:inherit;font-size:22px;font-weight:600;cursor:pointer;line-height:1;}
+.graph-road-control::after {content:'';position:absolute;inset:-5px;}
+.graph-road-control:focus-visible {outline:3px solid #38759e;outline-offset:4px;}
+.graph-road-control:hover:not(:disabled) {background:#dcecf8;border-color:#386c94;}
+.graph-road-control:hover {transform:translate(-50%,-50%);}
+.graph-road-control:disabled {cursor:default;border-color:#d3dbd6;color:#a4b2aa;background:#f4f6ee;}
+.graph-road-control.is-used {border-color:#668e7e;background:#e5f0e9;color:#3d7767;font-size:15px;}
+.is-network .graph-road-control.is-used {border-color:#a58a60;background:#fffbef;color:#8b6b41;font-size:20px;}
+.graph-road-control.is-blocked {border-color:#be9782;background:#fff6ed;color:#95614c;}
+.graph-node {position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;width:66px;height:66px;padding:4px;border:2px solid #9bab94;border-radius:50%;background:#fff9e6;box-shadow:0 3px 0 #dae0d1;color:#3d5357;cursor:pointer;line-height:1.05;}
+.graph-node strong {font-size:25px;font-weight:750;}
+.graph-node small {font-size:12px;margin-top:3px;}
+.graph-island-name {position:absolute;top:-16px;padding:1px 3px;background:#f4f6ee;font-size:12px;font-weight:650;color:#5f716c;}
+.graph-node.is-current {background:#ffecb3;border-color:#b98831;box-shadow:0 0 0 4px #f3dda7;}
+.graph-node.is-reachable {border-color:#5085b1;border-style:dashed;background:#eef5fb;}
+.graph-node:hover:not(:disabled) {border-color:#447492;}
+.graph-node:disabled {cursor:default;}
+.is-route .graph-node {width:50px;height:50px;background:#fffef9;}
+.is-route .graph-node strong {font-size:20px;}
+.is-route .graph-node.is-current {background:#ffecb3;}
+.is-route .graph-node:disabled {color:#88938f;border-color:#ccd2c8;box-shadow:none;}
+.graph-you-are-here {position:absolute;left:50%;top:-29px;transform:translateX(-50%);white-space:nowrap;background:#d19a3d;color:#fff;padding:4px 7px;border-radius:6px;font-size:12px;}
+.graph-you-are-here::after {content:'';position:absolute;bottom:-4px;left:calc(50% - 4px);border-left:4px solid transparent;border-right:4px solid transparent;border-top:4px solid #d19a3d;}
+.graph-place-note {position:absolute;left:50%;top:calc(100% + 5px);transform:translateX(-50%);white-space:nowrap;color:#607370;font-size:12px;}
+.graph-route-trail {display:flex;justify-content:center;flex-wrap:wrap;gap:4px;line-height:1.8;color:#718782;}
+.graph-route-trail b {display:inline-block;min-width:27px;text-align:center;font-size:14px;}
+.graph-route-trail b.is-current {border-radius:50%;background:#ffecb3;color:#715323;}
+@media(max-width:600px){
+  .connection-toolbar {align-items:flex-start;gap:8px;font-size:12px;}
+  .connection-count {font-size:11px;padding:4px 7px;}
+  .matching-board {gap:64px;}
+  .matching-column {gap:16px;}
+  .matching-card {height:92px;flex-direction:column;gap:1px;padding:7px 5px;border-radius:11px;}
+  .matching-card img {width:53px;height:53px;}
+  .matching-card-label {font-size:11px;}
+  .matching-card.is-text .matching-card-label {font-size:23px;}
+  .matching-unlink {width:25px;height:25px;right:-6px;top:-8px;}
+  .matching-lines path {stroke-width:3;}
+  .matching-lines .matching-line-halo {stroke-width:8;}
+  .connection-footnote {font-size:11px;}
+  .graph-node {width:53px;height:59px;}
+  .graph-node strong {font-size:23px;}
+  .graph-node small {font-size:11px;}
+  .is-route .graph-node {width:44px;height:44px;}
+}
 [data-section="exploration"] .world-icon-math,[data-section="exploration"] .world-icon-logic,[data-section="exploration"] .world-icon-graphic {transform:scale(.72);transform-origin:left center;}

@@ -1,0 +1,83 @@
+[
+  {
+    "case": "replace both endpoints",
+    "state": "拖到另一张图卡，或两边各点一下\n\n已连 1 / 2 对\n高\n开\n关\n低\n\n想换一个朋友，直接重新连；点卡片上的 × 可以断开。"
+  },
+  {
+    "case": "undo restores both",
+    "state": "拖到另一张图卡，或两边各点一下\n\n已连 2 / 2 对\n高\n开\n关\n低\n\n想换一个朋友，直接重新连；点卡片上的 × 可以断开。"
+  },
+  {
+    "case": "disconnect one",
+    "state": "拖到另一张图卡，或两边各点一下\n\n已连 1 / 2 对\n高\n开\n关\n低\n\n想换一个朋友，直接重新连；点卡片上的 × 可以断开。"
+  },
+  {
+    "case": "drag out cancels",
+    "state": "拖到另一张图卡，或两边各点一下\n\n已连 1 / 2 对\n高\n开\n关\n低\n\n想换一个朋友，直接重新连；点卡片上的 × 可以断开。"
+  },
+  {
+    "case": "keyboard pairing",
+    "state": "拖到另一张图卡，或两边各点一下\n\n已连 2 / 2 对\n高\n开\n关\n低\n\n想换一个朋友，直接重新连；点卡片上的 × 可以断开。"
+  },
+  {
+    "case": "fixed bridge cycle",
+    "state": "直接点岛之间的线，试着搭一座桥\n\nA\n3\n已连 1\nB\n3\n已连 2\nC\n2\n已连 1\nD\n2\n已连 0\n\n大数字是需要的桥数。点线加桥，两座后再点可重连；现成的桥会保留。"
+  },
+  {
+    "case": "graph direct and node clicks",
+    "state": "直接点岛之间的线，试着搭一座桥\n\nA\n3\n已连 3\nB\n3\n已连 3\nC\n2\n已连 2\nD\n2\n已连 2\n\n大数字是需要的桥数。点线加桥，两座后再点可重连；现成的桥会保留。"
+  },
+  {
+    "case": "parallel roads require choosing road",
+    "state": "到 B 有几条路，请直接点想走的那一条\n\n已走 0 段\n我在这里\nA\n起点\nB\n终点\nC\n\nA"
+  },
+  {
+    "case": "parallel roads require choosing road",
+    "state": "到 B 有几条路，请直接点想走的那一条\n\n已走 0 段\n›\n›\n›\n›\n我在这里\nA\n起点\nB\n终点\nC\n\nA"
+  },
+  {
+    "case": "parallel route completed",
+    "state": "现在在 B，点相邻地点或蓝色路段\n\n已走 4 段\n1\n4\n3\n2\nA\n起点\n我在这里\nB\n终点\nC\n\nA\n→ B\n→ A\n→ C\n→ B"
+  },
+  {
+    "case": "route undo",
+    "state": "现在在 C，点相邻地点或蓝色路段\n\n已走 3 段\n1\n›\n3\n2\nA\n起点\nB\n终点\n我在这里\nC\n\nA\n→ B\n→ A\n→ C"
+  },
+  {
+    "case": "375px 4 pairs, interchangeable circles",
+    "state": "拖到另一张图卡，或两边各点一下\n\n已连 4 / 4 对\n左图1\n左图2\n左图3\n左图4\n右图4\n右图1\n右图2\n右图3\n\n想换一个朋友，直接重新连；点卡片上的 × 可以断开。"
+  },
+  {
+    "case": "equivalent matching accepted in UI",
+    "nextVisible": true
+  },
+  {
+    "case": "375px parallel route 6 edges",
+    "state": "现在在 B，点相邻地点或蓝色路段\n\n已走 6 段\n2\n6\n5\n4\n3\n1\nA\n起点\n我在这里\nB\n终点\nC\nD\nE\n\nA\n→ B\n→ A\n→ E\n→ D\n→ C\n→ B"
+  },
+  {
+    "case": "375px six islands complete",
+    "success": true
+  },
+  {
+    "case": "hover preserves graph hit target alignment",
+    "alignment": {
+      "centerX": 69.546875,
+      "expectedX": 68.85,
+      "transform": "matrix(1, 0, 0, 1, -17, -17)"
+    }
+  },
+  {
+    "case": "Escape cancels selected endpoint",
+    "state": "拖到另一张图卡，或两边各点一下\n\n已连 0 / 3 对\n高\n开\n上\n关\n下\n低\n\n想换一个朋友，直接重新连；点卡片上的 × 可以断开。"
+  },
+  {
+    "case": "wrong pairs remain visible for correction",
+    "response": "拖到另一张图卡，或两边各点一下\n\n已连 3 / 3 对\n高\n开\n上\n关\n下\n低\n\n想换一个朋友，直接重新连；点卡片上的 × 可以断开。",
+    "feedback": true
+  },
+  {
+    "case": "three pairs corrected",
+    "success": true
+  }
+]

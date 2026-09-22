@@ -1,0 +1,38 @@
+✔ multi-select compares sets, rejects duplicate/unknown tokens, and permits a deliberately empty answer (0.844708ms)
+✔ order constraints accept all valid orders rather than one stored sequence (0.321584ms)
+✔ placement moves a once-only token, replaces occupied slots, and supports reusable tokens (0.601ms)
+✔ grid constraints distinguish an unfilled cell from a legitimate blank card and accept alternate Latin squares (0.225583ms)
+✔ session retains undo history; only complete submitted answers count as attempts (0.487208ms)
+✔ memory hides before retention, replays record support, and background interruption restarts safely (0.098459ms)
+✔ batched actions retain individual evidence instead of losing intermediate attempts (0.112583ms)
+✔ evidence events are idempotent and do not alter legacy records (0.60725ms)
+✔ future and malformed data are not overwritten (0.090334ms)
+✔ stable location uses IDs and leaves the old location untouched (0.4345ms)
+✔ completion display merges evidence without converting old game-level completion into rounds (0.141125ms)
+✔ matching accepts either starting side and arbitrary wrong pairs without consulting an answer (0.589708ms)
+✔ reconnecting frees both occupied endpoints in a single undoable operation (0.212459ms)
+✔ disconnecting affects only that connection; repeating the same connection is a no-op (0.065958ms)
+✔ every authored matching exercise remains one-to-one and playable through the editing contract (0.495ms)
+✔ identical shape cards can swap partners, while wrong shapes and repeated endpoints are rejected (0.098417ms)
+✔ bridge editing cycles within fixed and max values without losing other bridges (0.119291ms)
+✔ route editing rejects jumps, closed roads and forbidden repeats, while preserving parallel edges (0.121792ms)
+✔ every authored route and bridge answer is still reachable through direct graph controls (0.4155ms)
+✔ parallel lanes stay visibly separated, reverse travel stays on that lane, and arrows clear the controls (0.25675ms)
+✔ all 71 adopted families have their required stage/variant counts and accepted authored answers (1.979834ms)
+✔ independent graph search and exact cover alternatives satisfy every route, bridge and construction activity (6.120666ms)
+✔ bridge degree counts cannot substitute for global connectivity or crossing constraints (0.143125ms)
+✔ routes distinguish parallel edges, reject disconnected jumps and separate legal from shortest (0.066ms)
+✔ construction accepts rotated tilings and rejects overlap, wrong inventory and out-of-bounds placement (0.101083ms)
+✔ parent observations record participation and support without inventing a correct attempt (0.571166ms)
+✔ finite inventory prevents overdrawing, but allows replacement and undo without consuming attempts (0.200958ms)
+✔ learn-then-transfer keeps responding disabled until the example has been acknowledged (0.068541ms)
+✔ cube-net orientation produces six distinct faces and reciprocal opposite pairs (0.099166ms)
+✔ diagram identity is stable across insignificant floating-point differences between engines (5.849583ms)
+ℹ tests 30
+ℹ suites 0
+ℹ pass 30
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 348.32825

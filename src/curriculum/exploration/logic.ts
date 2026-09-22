@@ -16,7 +16,7 @@ function routeSolution(a: RouteActivity) { const found: string[][] = []; functio
 const featureCards = () => Array.from({ length: 9 }, (_, k) => card(`f${k}`, `${['红', '蓝', '黄'][Math.floor(k / 3)]}色${['圆形', '方形', '三角形'][k % 3]}`, symbol(k % 3, Math.floor(k / 3))));
 export const logicSets = [
     set('L01', '分类换个角度', nine((i, s, v) => { const ts = featureCards(); const valid = ts.filter((_, k) => s === 0 ? Math.floor(k / 3) === v : s === 1 ? k % 3 === v : Math.floor(k / 3) !== v && k % 3 !== ((v + 1) % 3)); const clues = s === 0 ? [`选出${['红', '蓝', '黄'][v]}色。`] : s === 1 ? [`选出${['圆形', '方形', '三角形'][v]}。`] : [`颜色不是${['红', '蓝', '黄'][v]}色。`, `形状不是${['圆形', '方形', '三角形'][(v + 1) % 3]}。`]; return selection('L01', i, '按这次的规则整理图卡。', ts, valid.map(t => t.id), '每一张留下的图卡都符合这次的条件。换一个条件，原来同组的图卡也可能分开。', undefined, clues); })),
-    set('L02', '关系接力', nine((i, s, v) => { const n = 2 + s; const left = Array.from({ length: n }, (_, k) => card(`a${k}`, `左图${k + 1}`, s === 0 ? dots(k + 2 + v) : symbol(k % 3, v))); const right = Array.from({ length: n }, (_, k) => card(`b${k}`, s === 0 ? String(k + 2 + v) : `右图${k + 1}`, s === 0 ? undefined : symbol(k % 3, (v + 1) % 3))); return matching('L02', i, s === 0 ? '把点群和表示数量的数连起来。' : s === 1 ? '颜色换了，找到形状关系相同的图。' : '把左边每个图和右边同形状的图配对，颜色可以不同。', left, right, left.map((t, k) => [t.id, right[k].id]), s === 0 ? '点的数量和数字一一对应，排法不会改变这个关系。' : '颜色不同不会改变形状关系。先说出形状，再寻找对应图。'); })),
+    set('L02', '关系接力', nine((i, s, v) => { const n = 2 + s; const left = Array.from({ length: n }, (_, k) => card(`a${k}`, `左图${k + 1}`, s === 0 ? dots(k + 2 + v) : symbol(k % 3, v))); const right = Array.from({ length: n }, (_, k) => card(`b${k}`, s === 0 ? String(k + 2 + v) : `右图${k + 1}`, s === 0 ? undefined : symbol(k % 3, (v + 1) % 3))); const a = matching('L02', i, s === 0 ? '把点群和表示数量的数连起来。' : s === 1 ? '颜色换了，找到形状关系相同的图。' : '把左边每个图和右边同形状的图配对，颜色可以不同。', left, right, left.map((t, k) => [t.id, right[k].id]), s === 0 ? '点的数量和数字一一对应，排法不会改变这个关系。' : '颜色不同不会改变形状关系。先说出形状，再寻找对应图。'); if (a.kind === 'matching' && s === 2) a.alternativePairings = [[['a0', 'b3'], ['a1', 'b1'], ['a2', 'b2'], ['a3', 'b0']]]; return a; })),
     set('L03', '线索够不够', nine((i, s, v) => { if (s === 2) {
         const ts = ['小兔', '小猫', '小狗'];
         return choice('L03', i, `只知道${ts[v]}比${ts[(v + 1) % 3]}高，${ts[(v + 2) % 3]}也比${ts[(v + 1) % 3]}高。谁更高：${ts[v]}还是${ts[(v + 2) % 3]}？`, [`${ts[v]}更高`, `${ts[(v + 2) % 3]}更高`, '现在还不能确定'], 2, '两位都比同一位高，不能确定这两位之间谁更高。还需要比较他们的线索。', equation(`${ts[v]} > ${ts[(v + 1) % 3]} < ${ts[(v + 2) % 3]}`));
@@ -43,7 +43,7 @@ export const logicSets = [
             requiredNodes = [['n1', 'n3', 'n4'][v]];
             blockedEdges = [['e2', 'e1', 'e6'][v]];
         }
-        const a: RouteActivity = { ...base('L05', i, s === 2 ? '每一段路都走一次，走到终点。' : s === 1 ? '经过指定地点，找到少走几段的路。' : '从起点一步步走到终点。', '点一段和当前位置相连的路。可以撤销，不能跳到不相连的路。', s === 2 ? '每个路段都走了一次；连接相同两点的直路和弯路是不同路段。' : '路线连贯，经过了所有指定地点。'), kind: 'route', graph, start, end, requiredNodes, requiredEdges, blockedEdges, allowRevisit: false };
+        const a: RouteActivity = { ...base('L05', i, s === 2 ? '每一段路都走一次，走到终点。' : s === 1 ? '经过指定地点，找到少走几段的路。' : '从起点一步步走到终点。', '直接点图上相邻的地点或路段，沿着路一步步走。可以撤销。', s === 2 ? '每个路段都走了一次；连接相同两点的直路和弯路是不同路段。' : '路线连贯，经过了所有指定地点。'), kind: 'route', graph, start, end, requiredNodes, requiredEdges, blockedEdges, allowRevisit: false };
         a.clues = s === 2 ? ['不能抬笔跳走。', '每段路只走一次，弯路也算一段。'] : s === 1 ? [`必须经过${graph.nodes.find(n => n.id === requiredNodes[0])!.label}。`, '标记不通的路不能走。', '在合法路线里，找段数最少的。'] : ['从A出发，沿相连的路走。'];
         const path = routeSolution(a);
         if (s === 1)
@@ -95,5 +95,5 @@ export const logicSets = [
         edges.push({ id: 'middle', from: 'n1', to: 'n4', max: 2, fixed: 0 }); const counts = Object.fromEntries(edges.map((e, k) => [e.id, k === v ? 2 : e.id === 'middle' ? 0 : 1])); for (const e of edges) {
         nodes.find(n => n.id === e.from)!.degree += counts[e.id];
         nodes.find(n => n.id === e.to)!.degree += counts[e.id];
-    } const a: Activity = { ...base('L12', i, '把所有小岛连起来。', '点两岛之间的连接按钮增加桥数，每处最多两座桥。', '每个岛连出的桥数和数字相同，所有小岛也连成了一个整体。'), kind: 'network', graph: { nodes, edges }, connected: true }; a.clues = ['数字表示这个岛连出的桥数。', '桥不能交叉，所有岛要互相通达。']; authoringSolutions[a.id] = { kind: 'network', counts }; return a; })),
+    } const a: Activity = { ...base('L12', i, '把所有小岛连起来。', '直接点两个小岛之间的线来搭桥，再点可以改变桥数。每处最多两座桥。', '每个岛连出的桥数和数字相同，所有小岛也连成了一个整体。'), kind: 'network', graph: { nodes, edges }, connected: true }; a.clues = ['数字表示这个岛连出的桥数。', '桥不能交叉，所有岛要互相通达。']; authoringSolutions[a.id] = { kind: 'network', counts }; return a; })),
 ];
