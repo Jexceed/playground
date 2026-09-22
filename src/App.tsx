@@ -1,13 +1,14 @@
 import { Check, RotateCcw } from "lucide-react";
-import { lazy, Suspense, useEffect, useMemo, useState } from "react";
-import { catalogGames as games, activitySets, worlds } from "./curriculum/catalog";
+import { lazy, Suspense, useEffect, useMemo, useRef, useState } from "react";
+import { curriculumSections, getCurriculumSection, worlds, type CurriculumSectionId } from "./curriculum/catalog";
 import { ProgressiveSetGame } from "./games/ProgressiveSetGame";
 import { clearActivityProgress, mergeActivityProgress, readActivityProgress, readCatalogLocation, saveCatalogLocation } from "./services/activity-progress";
+import { readCurriculumNavigation, rememberCurriculumLocation, resolveSectionPlayLocation, saveCurriculumNavigation } from "./services/curriculum-navigation";
 import type { CatalogGame } from "./domain/activity";
 import { publicAsset } from "./publicAsset";
 import { addCompletion, addRoundCompletion, readLastPlayLocation, readProgress, saveLastPlayLocation, saveProgress } from "./storage";
 import { speak, stopSpeech, warmVoiceManifest } from "./speech";
-import type { GameConfig, GameRound, LastPlayLocation, ProgressLog, WorldId } from "./types";
+import type { GameConfig, GameRound, ProgressLog, WorldId } from "./types";
 
 const brandLogoSrc = "/images/brand/thinking-house-brand-v3.png";
 const launchBrandAudioSrc = "/audio/brand/launch-brand-shout.wav";
@@ -15,7 +16,12 @@ const maxVisibleProgressTags = 12;
 const ActivitySetGame = lazy(() => import("./games/ActivitySetGame").then(module => ({ default: module.ActivitySetGame })));
 
 export function App() {
-  const [initialPlayLocation] = useState(resolveInitialPlayLocation);
+  const [initialNavigation] = useState(() => readCurriculumNavigation(readLastPlayLocation(), readCatalogLocation()));
+  const navigation = useRef(initialNavigation);
+  const [initialPlayLocation] = useState(() => resolveSectionPlayLocation(initialNavigation.activeSectionId, initialNavigation.locations[initialNavigation.activeSectionId]));
+  const [activeSectionId, setActiveSectionId] = useState(initialNavigation.activeSectionId);
+  const activeSection = getCurriculumSection(activeSectionId);
+  const games = activeSection.games;
   const [showSplash, setShowSplash] = useState(true);
   const [activeWorld, setActiveWorld] = useState<WorldId>(initialPlayLocation.worldId);
   const [selectedGameId, setSelectedGameId] = useState(initialPlayLocation.gameId);
@@ -23,7 +29,11 @@ export function App() {
   const [roundReadRequestKey, setRoundReadRequestKey] = useState(0);
   const [savedProgress, setProgress] = useState<ProgressLog>(() => readProgress());
   const [activityProgress, setActivityProgress] = useState(() => readActivityProgress().progress);
-  const progress = useMemo(() => mergeActivityProgress(savedProgress, activitySets, activityProgress), [savedProgress, activityProgress]);
+  const explorationProgress = useMemo(() => mergeActivityProgress(
+    { completedIds: [], completedRoundIds: [], abilityTags: [] },
+    getCurriculumSection("exploration").games.filter(game => game.kind === "activitySet"), activityProgress,
+  ), [activityProgress]);
+  const progress = activeSectionId === "enlightenment" ? savedProgress : explorationProgress;
 
   useEffect(() => {
     warmVoiceManifest();
@@ -31,7 +41,7 @@ export function App() {
 
   const selectedGame = useMemo(
     () => games.find((game) => game.id === selectedGameId) ?? games[0],
-    [selectedGameId],
+    [selectedGameId, games],
   );
 
   useEffect(() => {
@@ -43,14 +53,17 @@ export function App() {
     if (selectedGame.kind === "progressiveSet") {
       saveLastPlayLocation({ worldId: selectedGame.world, gameId: selectedGame.id, roundIndex });
     }
-    saveCatalogLocation({
-      schemaVersion: 1, worldId: selectedGame.world, gameId: selectedGame.id,
+    const location = {
+      schemaVersion: 1 as const, worldId: selectedGame.world, gameId: selectedGame.id,
       roundId: selectedGame.rounds[roundIndex].id,
-    });
-  }, [requestedRoundIndex, selectedGame]);
+    };
+    navigation.current = rememberCurriculumLocation(navigation.current, activeSectionId, location);
+    saveCurriculumNavigation(navigation.current);
+    saveCatalogLocation(location);
+  }, [requestedRoundIndex, selectedGame, activeSectionId]);
 
-  const visibleGames = games.filter((game) => game.world === activeWorld)
-    .sort((a, b) => Number(b.kind === "activitySet") - Number(a.kind === "activitySet"));
+  const visibleGames = games.filter((game) => game.world === activeWorld);
+  const visibleWorlds = worlds.filter(world => games.some(game => game.world === world.id));
   const questionStats = useMemo(() => {
     const counts = Object.fromEntries(
       worlds.map((world) => [
@@ -62,7 +75,7 @@ export function App() {
       ...counts,
       total: Object.values(counts).reduce((sum, count) => sum + count, 0),
     };
-  }, []);
+  }, [games]);
   const completed = progress.completedIds.includes(selectedGame.id);
   const selectedActivity = selectedGame.kind === "activitySet" ? selectedGame.rounds[requestedRoundIndex] : undefined;
   const activityEvidence = selectedActivity ? activityProgress.entries[`${selectedActivity.id}@${selectedActivity.revision}`] : undefined;
@@ -86,10 +99,13 @@ export function App() {
   }
 
   function resetProgress() {
-    const empty = { completedIds: [], completedRoundIds: [], abilityTags: [] };
-    setProgress(empty);
-    saveProgress(empty);
-    setActivityProgress(clearActivityProgress().progress);
+    if (activeSectionId === "enlightenment") {
+      const empty = { completedIds: [], completedRoundIds: [], abilityTags: [] };
+      setProgress(empty);
+      saveProgress(empty);
+    } else {
+      setActivityProgress(clearActivityProgress().progress);
+    }
   }
 
   function requestRoundRead() {
@@ -106,13 +122,25 @@ export function App() {
   function chooseWorld(worldId: WorldId) {
     stopSpeech();
     setActiveWorld(worldId);
-    const firstGame = activitySets.find((game) => game.world === worldId) ?? games.find((game) => game.world === worldId);
+    const firstGame = games.find((game) => game.world === worldId);
     if (firstGame) {
       setSelectedGameId(firstGame.id);
       setRequestedRoundIndex(0);
       requestRoundRead();
       revealActiveQuestion();
     }
+  }
+
+  function chooseSection(sectionId: CurriculumSectionId) {
+    if (sectionId === activeSectionId) return;
+    stopSpeech();
+    const location = resolveSectionPlayLocation(sectionId, navigation.current.locations[sectionId]);
+    setActiveSectionId(sectionId);
+    setActiveWorld(location.worldId);
+    setSelectedGameId(location.gameId);
+    setRequestedRoundIndex(location.roundIndex);
+    requestRoundRead();
+    revealActiveQuestion();
   }
 
   function chooseGame(gameId: string) {
@@ -128,15 +156,31 @@ export function App() {
   }
 
   return (
-    <main className="app-shell">
+    <main className="app-shell" data-section={activeSectionId}>
       <section className="layout">
         <nav className="world-nav" aria-label="主题地图">
           <div className="sidebar-brand">
             <img className="brand-image" src={publicAsset(brandLogoSrc)} alt="小小思考屋 亲子思维游戏" />
           </div>
 
+          <div className="curriculum-switcher" role="group" aria-label="选择启蒙或探索">
+            {curriculumSections.map(section => (
+              <button
+                className={`curriculum-button ${activeSectionId === section.id ? "active" : ""}`}
+                type="button"
+                key={section.id}
+                aria-pressed={activeSectionId === section.id}
+                data-testid={`section-${section.id}`}
+                onClick={() => chooseSection(section.id)}
+              >
+                <strong>{section.name}</strong>
+                <small>{section.id === "enlightenment" ? "轻松起步" : "进阶挑战"}</small>
+              </button>
+            ))}
+          </div>
+
           <div className="world-switcher">
-            {worlds.map((world) => (
+            {visibleWorlds.map((world) => (
               <button
                 className={`world-button ${activeWorld === world.id ? "active expanded" : "collapsed"}`}
                 aria-expanded={activeWorld === world.id}
@@ -157,7 +201,7 @@ export function App() {
 
           <section className="sidebar-game-picker" aria-label="关卡列表">
             <div className="sidebar-section-title">
-              <strong>{worlds.find((world) => world.id === activeWorld)?.name ?? "关卡"}关卡</strong>
+              <strong>{activeSection.name} · {worlds.find((world) => world.id === activeWorld)?.name ?? "关卡"}</strong>
               <span>{visibleGames.length} 个</span>
             </div>
             <label className="mobile-game-select">
@@ -196,6 +240,10 @@ export function App() {
         </nav>
 
         <section className="game-column">
+          <header className="curriculum-heading" aria-label="当前部分">
+            <div><strong>{activeSection.name}</strong><span>{activeSection.summary}</span></div>
+            <small>{games.length} 组 · {questionStats.total} 题</small>
+          </header>
           <article className="game-stage" tabIndex={-1} aria-label={selectedGame.title}>
             {selectedGame.kind === "activitySet" ? <Suspense fallback={<p className="muted">正在准备图卡…</p>}><ActivitySetGame
               key={selectedGame.id}
@@ -239,11 +287,12 @@ export function App() {
 
           <section className="progress-panel">
             <div className="panel-title">
-              <p className="eyebrow">成长记录</p>
-              <button className="icon-button small" type="button" onClick={resetProgress} aria-label="清空记录">
+              <p className="eyebrow">{activeSection.name}成长记录</p>
+              <button className="icon-button small" type="button" onClick={resetProgress} aria-label={`清空${activeSection.name}记录`}>
                 <RotateCcw size={16} />
               </button>
             </div>
+            <p className="section-progress-count">已完成 {progress.completedRoundIds.filter(id => games.some(game => game.rounds.some(round => round.id === id))).length} / {questionStats.total} 题</p>
             {progress.abilityTags.length > 0 ? (
               <div className="tag-list">
                 {visibleProgressTags.map((tag) => (
@@ -328,33 +377,6 @@ function LaunchSplash({ onEnter }: { onEnter: () => void }) {
       </div>
     </main>
   );
-}
-
-function resolveInitialPlayLocation(): LastPlayLocation {
-  const stable = readCatalogLocation();
-  if (stable) {
-    const game = games.find(item => item.id === stable.gameId && item.world === stable.worldId);
-    const index = game?.rounds.findIndex(round => round.id === stable.roundId) ?? -1;
-    if (game && index >= 0) return { worldId: game.world, gameId: game.id, roundIndex: index };
-  }
-  return normalizeLastPlayLocation(readLastPlayLocation());
-}
-
-function normalizeLastPlayLocation(saved: LastPlayLocation | null): LastPlayLocation {
-  const fallbackGame = games[0];
-  if (!saved) {
-    return { worldId: fallbackGame.world, gameId: fallbackGame.id, roundIndex: 0 };
-  }
-
-  const worldExists = worlds.some((world) => world.id === saved.worldId);
-  const worldId = worldExists ? saved.worldId : fallbackGame.world;
-  const game = games.find((item) => item.id === saved.gameId && item.world === worldId) ?? games.find((item) => item.world === worldId) ?? fallbackGame;
-
-  return {
-    worldId: game.world,
-    gameId: game.id,
-    roundIndex: clampRoundIndex(saved.roundIndex, game),
-  };
 }
 
 function clampRoundIndex(index: number, game: CatalogGame) {

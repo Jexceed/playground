@@ -1,13 +1,12 @@
 <!--
 Sync Impact Report
-Version change: 1.0.0 -> 1.1.0
+Version change: 1.1.0 -> 1.1.1
 Modified principles:
-- I. Child-Centered Learning Integrity: preschool and early-primary scope
-- II. Spec-Driven Delivery: source-to-skill coverage and evidence distinctions
+- Project Constraints: clarify user-confirmed 启蒙/探索 navigation within one app
 Added sections:
-- Continuous curriculum and source alignment constraints
+- None
 Removed sections:
-- Placeholder template sections
+- None
 Templates requiring updates:
 - Checked .specify/templates/plan-template.md: no age-specific wording
 - Checked .specify/templates/spec-template.md: no age-specific wording
@@ -66,8 +65,12 @@ stop being the source of truth. Each meaningful change MUST update
 ## Project Constraints
 
 - Application stack: React, TypeScript, Vite, and pnpm.
-- Keep one application and a continuous theme/ability/difficulty curriculum;
-  do not expose V1/V2 product paths or create permanent age-based code forks.
+- Keep one application with explicit 启蒙 and 探索 entry points, followed by
+  themes and activity groups. Existing content belongs to 启蒙; the source-aligned
+  expansion belongs to 探索. Lists, progress displays and resume locations are
+  separate; engines and assets remain shared. Do not expose V1/V2 labels or
+  create permanent age-based code forks. This clarifies the user's product
+  distinction without creating another application.
 - Source alignment for the expanded curriculum is governed by
   `specs/029-curriculum-benchmark/`; raw reference materials are design inputs,
   not automatically approved runtime content.
@@ -103,4 +106,4 @@ or docs in the same change. Major version changes redefine principles or remove
 governance. Minor version changes add or materially expand principles. Patch
 version changes clarify wording without changing obligations.
 
-**Version**: 1.1.0 | **Ratified**: 2026-07-04 | **Last Amended**: 2026-09-22
+**Version**: 1.1.1 | **Ratified**: 2026-07-04 | **Last Amended**: 2026-09-22

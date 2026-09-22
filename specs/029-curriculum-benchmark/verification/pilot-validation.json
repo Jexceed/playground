@@ -1,13 +1,13 @@
 {
   "date": "2026-09-22",
-  "scope": "framework and 24 pilot activities",
+  "scope": "framework, 24 pilot activities, and explicit 启蒙/探索 sections",
   "catalogGames": 44,
   "catalogRounds": 513,
   "legacyGames": 40,
   "legacyRounds": 489,
   "legacyHash": "ffc96031be1c399ba36148fe0efdde8a8ddfd1e9722d209599d421345a7a217e",
   "automatedTests": {
-    "passed": 28,
+    "passed": 33,
     "failed": 0
   },
   "browser": {
@@ -42,7 +42,7 @@
       "retentionCueCount": 0,
       "revealEvidence": "passed",
       "timerSpeechFallback": null,
-      "backgroundInterruption": "pending native focus; IAB page change did not emit visibility/blur"
+      "backgroundInterruption": "passed in installed Mac app: minimizing during observation returns to ready with restart notice"
     }
   },
   "voice": {
@@ -57,9 +57,43 @@
     "install": "passed",
     "installedPath": "/Applications/小小思考屋.app",
     "codesignVerify": "passed",
-    "installedExecutableSha256": "ba96252964f759ba5540e54e67d10d2e559ab1bda26fbb565bb3d3c6ea68b525",
-    "builtExecutableSha256": "ba96252964f759ba5540e54e67d10d2e559ab1bda26fbb565bb3d3c6ea68b525",
-    "gui": "pending: Mac locked again on second consecutive goal turn"
+    "installedExecutableSha256": "24dda54a0518ac475c9183fe95134ed11938159abf10217144ee134e18a5b172",
+    "builtExecutableSha256": "24dda54a0518ac475c9183fe95134ed11938159abf10217144ee134e18a5b172",
+    "gui": "passed: section isolation, click placement, wrong/correct, pointer drag, memory minimization, quit/reopen",
+    "independentSectionResume": true,
+    "legacyCompletedRoundsPreserved": 273,
+    "explorationQACompletedRounds": 3,
+    "audioObservation": "Native listen control exercised; speaker output not recorded. Unchanged standard Edge assets and browser MP3 playback are verified.",
+    "installationLog": "mac-install-sections.txt"
   },
-  "goalComplete": false
+  "goalComplete": true,
+  "sections": {
+    "enlightenment": {
+      "name": "启蒙",
+      "games": 40,
+      "rounds": 489
+    },
+    "exploration": {
+      "name": "探索",
+      "games": 4,
+      "rounds": 24
+    },
+    "separateListsAndProgress": true,
+    "independentResumeAfterRestart": true,
+    "browserViewports": [
+      [
+        1280,
+        720
+      ],
+      [
+        1024,
+        700
+      ],
+      [
+        375,
+        812
+      ]
+    ],
+    "evidence": "section-navigation-qa.md"
+  }
 }

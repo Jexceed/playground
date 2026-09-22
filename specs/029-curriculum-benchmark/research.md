@@ -12,10 +12,10 @@ Word由40嵌入图组成，渲染20页；PPT共25张幻灯片；视频约96分19
 16视频每段抽看三帧，未完整听取或转写；使用讲义和已见演示识别四组计算教学方法，不宣称已核验全部口头讲解。
 PPT渲染缺失部分原生中文字体文本，因此同时读OOXML文字和图像。截图中的原始帮助音轨缺失，不从画面猜出全部原题。
 
-## Decision 1: One App, Continuous Curriculum
+## Decision 1: One App, Two Curriculum Sections
 
-**Decision**: 一个应用，按主题/能力/难度自然递进，不设置V1/V2入口，不按年龄建立长期Git分支。
-**Rationale**: 用户明确确认；基础与进阶可以共享语音、交互、判定和进度。
+**Decision**: 一个应用，一级入口为启蒙/探索，分别组织原题和资料对标新内容，其下再按主题/能力/难度递进。不使用V1/V2标签，不按年龄建立长期Git分支。
+**Rationale**: 用户进一步澄清“不叫V1/V2”不等于混合题库，需要直接找到新题。两部分共享语音、交互与判定，各自显示成长记录、保存续玩位置。
 **Alternatives considered**: 两个应用增加维护与迁移成本；复制两套App组件使公共修复分叉。均不采用。
 
 ## Decision 2: Benchmark Cognitive Tasks, Not Filenames

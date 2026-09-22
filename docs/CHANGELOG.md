@@ -5,6 +5,22 @@ grouped by date.
 
 ## 2026-09-22
 
+### 启蒙 / 探索 navigation
+
+- Added explicit 启蒙 and 探索 entry buttons above the theme picker. 启蒙 contains
+  the original 40 groups / 489 rounds; 探索 contains the new 4 groups / 24 rounds.
+  Theme counts, group lists and growth records now follow the selected section.
+- Persisted a separate stable-ID resume location for each section, seeded from
+  the previous location records. Switching sections and restarting preserve both
+  positions; clearing one section's completion record affects only that section.
+  Existing question content and audio are unchanged.
+- Passed 33 automated tests, build and curriculum audit, and checked 1280×720,
+  1024×700 and 375×812 browser layouts. Rebuilt and installed the actual Mac app;
+  verified section switching, native wrong/correct answers, card placement,
+  pointer drag, memory interruption on minimization, and quit/reopen recovery.
+  The existing native 273-round completion record remained intact. Evidence and
+  audio-observation limits: specs/029-curriculum-benchmark/verification/section-navigation-qa.md.
+
 ### First playable increment
 
 - Fixed the two-column layout so the lower question navigator no longer sits

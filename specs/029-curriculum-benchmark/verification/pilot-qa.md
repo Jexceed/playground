@@ -22,10 +22,11 @@
 - 记忆计时会自动结束并进入回填，保持阶段图卡已撤下；重看次数累计正确，计时结束语音来自本地MP3。
 - 更新后的Mac应用已再次通过mac:install、签名及二进制一致性检查。
 
-## 尚待完成
+## 原生验收补完与当前限制
 
-- 真实Mac应用的打开、操作、声音与退出重开验收。电脑控制工具仍报告Mac锁屏，已请求手动解锁。
-- 真实焦点丢失/后台中断检查。IAB工具页切换保持document.visibilityState为visible，没有生成对应blur/visibility事件，不能替代真实窗口验收。状态转换单元测试已通过。
+- Mac锁屏已解除。真实应用的打开、双入口、点击放置、拖放、错误→正确反馈和退出重开续玩已补完。新增分区相关行为测试后共33项通过。详见[分区验收](section-navigation-qa.md)。
+- 真实Mac窗口最小化会中断记忆观察，返回后显示“刚才暂停了”，需要主动重新开始。先前IAB工具页切换没有生成blur/visibility事件，未用它冒充原生验收。
+- 原生听题按钮已操作；工具不捕获扬声器声音，未进行原生声学监听。1,958项资源可解码、标准音色与浏览器本地播放链路已有独立证据，本次未修改题目或音频。
 - 6–8岁亲子难度校准属于后续完整内容建设，本批不宣称已经校准。
 
 ## 证据
@@ -44,4 +45,4 @@
 
 ## 窄屏与记忆专项补充
 
-见[browser-additional-qa.json](browser-additional-qa.json)、[更新安装日志](mac-install-viewport.txt)。更新后应用已重新安装，签名及安装/构建二进制一致性通过。原生GUI仍未验证。
+见[browser-additional-qa.json](browser-additional-qa.json)、[分区补充记录](section-navigation-qa.md)与[最新安装日志](mac-install-sections.txt)。更新后应用已重新安装，签名、安装/构建二进制一致性及上述原生GUI项目通过。

@@ -405,7 +405,7 @@ button:focus-visible {
   position: sticky;
   top: 14px;
   align-self: start;
-  grid-template-rows: auto auto minmax(0, 1fr);
+  grid-template-rows: auto auto auto minmax(0, 1fr);
   max-height: calc(100vh - 36px);
 }
 
@@ -413,6 +413,59 @@ button:focus-visible {
   display: grid;
   gap: 6px;
 }
+
+.curriculum-switcher {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  padding: 5px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #ebe5da;
+}
+
+.curriculum-button {
+  display: grid;
+  gap: 4px;
+  min-height: 66px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.curriculum-button strong { font-size: 1.25rem; letter-spacing: 0.12em; }
+.curriculum-button small { font-size: 0.72rem; }
+.curriculum-button.active {
+  border-color: var(--leaf);
+  background: #f2fff6;
+  color: #276449;
+  box-shadow: 0 2px 5px #25324312;
+}
+.curriculum-button[data-testid="section-exploration"].active {
+  border-color: #7962a6;
+  background: #f7f2ff;
+  color: #634b90;
+}
+
+.curriculum-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px 12px;
+  margin: 0 0 10px;
+  padding: 10px 14px;
+  border: 1px solid #a5c5b3;
+  border-radius: 10px;
+  background: #eff8ee;
+}
+.curriculum-heading > div { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
+.curriculum-heading strong { font-size: 1.1rem; }
+.curriculum-heading span, .curriculum-heading small { color: var(--muted); font-size: 0.76rem; }
+[data-section="exploration"] .curriculum-heading { border-color: #c8b9dc; background: #f4effa; }
+.section-progress-count { font-size: 0.85rem; color: var(--muted); }
 
 .world-button,
 .game-chip,

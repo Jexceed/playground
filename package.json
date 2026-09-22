@@ -36,7 +36,7 @@
     "generate:f5-voices": "node scripts/generate-f5-voices.mjs",
     "generate:voice-segments": "node scripts/generate-voice-segments.mjs",
     "prune:voice-assets": "node scripts/prune-voice-assets.mjs",
-    "test:activities": "node --test scripts/activity-framework.test.mjs scripts/activity-progress.test.mjs scripts/activity-curriculum.test.mjs",
+    "test:activities": "node --test scripts/activity-framework.test.mjs scripts/activity-progress.test.mjs scripts/activity-curriculum.test.mjs scripts/curriculum-navigation.test.mjs",
     "generate:thinking-symbols": "node scripts/generate-thinking-symbols.mjs"
   },
   "dependencies": {

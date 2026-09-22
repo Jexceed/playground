@@ -29,9 +29,9 @@
 - [ ] T012 在 src/domain/evaluators/ 与 scripts/activity-evaluation.test.mjs 实现并验证集合、序列、格位、关系边、连桥network、路径edgeId、构形和多解；使用独立已知解/反例，禁止eval表达式。
 - [ ] T013 在 src/curriculum/capabilities.ts 与 scripts/lib/douyin-math-export.mjs 同时检查交互、阶段、呈现、规则版本、语种和资源预算；保持当前数字岛出口，未支持活动明确排除或失败。
 
-## Phase 3: US1 连续课程路径 / P1
+## Phase 3: US1 启蒙与探索入口 / P1
 
-独立验收：旧存档可安全进入，原活动可访问；主题中找到挑战并返回，儿童流程没有V1/V2入口。
+独立验收：旧存档可安全进入启蒙，探索直接呈现资料对标新内容；按部分切换主题和题组，分别续玩，儿童流程没有V1/V2标签。双入口首批实现见pilot-tasks.md T017–T019，其余领域/难度路径仍属本清单。
 
 - [ ] T014 [US1] 在 src/App.tsx 与 src/curriculum/domains.ts 以注册表加载旧领域和新领域，保持旧标识/位置兼容；只显示已经验收可玩的活动。
 - [ ] T015 [US1] 在 src/app/CurriculumPath.tsx 展示主题、前置能力、难度和支持选项；家长可调起点，不用年龄或版本硬锁定。

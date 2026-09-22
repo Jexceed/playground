@@ -5,10 +5,10 @@ small enough to turn into a Spec Kit feature.
 
 ## P0
 
-- After the Mac is manually unlocked, finish native-app acceptance and the
-  remaining native-focus memory lifecycle check in
-  `specs/029-curriculum-benchmark/pilot-tasks.md`. The pilot is built and
-  installed; do not count native UI verification as passed yet.
+- Keep future source-aligned activities in 探索 and existing activities in 启蒙,
+  using explicit catalog membership. Native switching/restart and memory
+  minimization checks are now complete; see
+  `specs/029-curriculum-benchmark/verification/section-navigation-qa.md`.
 
 - Implement the single-app curriculum expansion in
   `specs/029-curriculum-benchmark/tasks.md`: preserve existing IDs/progress,

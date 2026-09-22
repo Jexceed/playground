@@ -92,7 +92,9 @@ EvaluationResult区分incomplete / incorrect / correct / needsParentObservation�
 
 ## 7. Progress And Migration
 
-内部键：profileId + activityId + revision；curriculum/domain作索引维度，不按发行V1/V2隔离。
+内部键：profileId + activityId + revision；curriculum/domain作索引维度，不按发行V1/V2隔离。课程目录显式声明enlightenment（启蒙）或exploration（探索）归属，与交互类型无关。一级导航和学习记录按当前部分呈现。
+
+首批分区续玩使用thinking-island-curriculum-navigation：schemaVersion、activeSectionId、locations[sectionId]；每个位置保存worldId/gameId/roundId，按稳定ID解析。首次兼容读取旧目录位置和旧题位置，原键和完成事实保留；未来schema或损坏值禁止覆盖。当前题组仍共享统一审计目录。
 初期一个default本地档案即可，不需要登录。不同能力路径独立定位，原题历史仍可查看。
 记录attempts、supportEvents、firstIndependentOutcome、completion、parentObservation、revision和contentVersion。
 mastery是后续有充分证据的推断，不能由completed直接生成。
