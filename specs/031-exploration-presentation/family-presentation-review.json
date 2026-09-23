@@ -1,0 +1,2488 @@
+{
+  "schemaVersion": 1,
+  "auditedAt": "2026-09-23",
+  "baselineCommit": "e9a2dd76854e8ec0608c992f1893a8aa166a35c3",
+  "scope": "71 authored exploration families in six source modules; excludes four retained pilot sets",
+  "method": [
+    "Read all six family source modules, helpers/draw, image gallery, interaction renderers and CSS",
+    "Loaded pure TypeScript catalog with Vite SSR write:false to enumerate 597 rounds and drawing primitives",
+    "Validated all proposed gallery keys and local asset paths",
+    "Viewed four existing local PNGs to verify role/event mismatch; no browser or native UI actions"
+  ],
+  "validationBoundary": "This is a source/presentation audit, not a screenshot or child usability acceptance run. Text PNG usage counts are data references, not necessarily rendered duplicates. Reuse keys are semantic candidates subject to the stated boundary.",
+  "stats": {
+    "families": 71,
+    "rounds": 597,
+    "parentRounds": 46,
+    "tokenUsages": 2462,
+    "textRasterTokenUsages": 925,
+    "textOnlyFlaggedRasterUsages": 909,
+    "diagramTokenUsages": 1231,
+    "concreteTokenUsages": 306,
+    "concreteHiddenByTextOnly": 12,
+    "evidenceUsages": 318,
+    "textRasterEvidenceUsages": 33,
+    "generatedDiagramAssets": 860
+  },
+  "visuallyCheckedGalleryKeys": [
+    "scenes.plantGrowthGarden",
+    "scenes.blockTowerRebuild",
+    "items.blockTower",
+    "scenes.bridgeTwoPlanks"
+  ],
+  "highestValueFixes": [
+    {
+      "rank": 1,
+      "id": "semantic-token-rendering",
+      "families": [
+        "P01",
+        "E05",
+        "E01",
+        "N14",
+        "L06",
+        "E03",
+        "A08"
+      ],
+      "action": "统一实物图/精确图/文字卡呈现；显式textOnly为文字时只排一次文字；换成实物图同步标记。",
+      "evidence": "P01有12次实物PNG引用被textOnly隐藏。全库925次纯文字PNG引用中909次带textOnly；数字单选已另走numeric-answer，不能把925误报为925个可见缺陷。",
+      "acceptance": "杯子/铅笔等实物出现；词/拼音/时间/动作标签不再图内和图外重复。"
+    },
+    {
+      "rank": 2,
+      "id": "evidence-legibility",
+      "families": [
+        "N04",
+        "L11",
+        "G10",
+        "G11",
+        "G12",
+        "G16",
+        "E06"
+      ],
+      "action": "按证据密度决定卡宽和列数，复杂图两列或整行；提供放大。",
+      "evidence": "N04图内22px标题从600宽缩到76px时约2.8px；G12的14px黑点从320宽缩到76px时约3.3px。现有tray图片49px、手机slot44px。这里只是代码比例推算，非截图测量。",
+      "acceptance": "375px宽屏仍能看出点在轮廓内/上/外、相切与相交、棋子落点及方块层次；没有水平溢出。"
+    },
+    {
+      "rank": 3,
+      "id": "story-event-art",
+      "families": [
+        "E03"
+      ],
+      "action": "按事件提供连续叙事插画，优先小猫种植4张；其余故事逐图核实再用。",
+      "evidence": "E03三故事共12种事件，6个操作题中的21次卡引用全部为文字PNG。",
+      "acceptance": "主角一致、每卡单一事件；天气/塔倒/新叶能从画面指出；旧人类场景不冒充小熊或小猫。"
+    },
+    {
+      "rank": 4,
+      "id": "household-use-art",
+      "families": [
+        "P01"
+      ],
+      "action": "修复已有物品图，并补缺少的物品/用途动作。",
+      "evidence": "杯、铅笔、帽、饭盒、积木、书、尺可直接引用；雨伞/毛巾和用途动作暂无对应注册图。",
+      "acceptance": "孩子凭物品和动作可解释功能关系；左右不能重复同一图让题目退化成图像相同匹配。"
+    },
+    {
+      "rank": 5,
+      "id": "memory-relationship-art",
+      "families": [
+        "A05",
+        "A09"
+      ],
+      "action": "A09观察期用角色头像+数量；A05事件卡配准确动作图。",
+      "evidence": "A09预览只有角色名和点群；A05除人物阶段外仍为文字事件。",
+      "acceptance": "观察完关系证据隐藏；新增画面不在答题期泄露原顺序或数量配对。"
+    },
+    {
+      "rank": 6,
+      "id": "concrete-math-context",
+      "families": [
+        "N06",
+        "N07",
+        "N09"
+      ],
+      "action": "复用bird/cookie/rabbit，将已知量与动作关系转为清楚图示。",
+      "evidence": "飞来鸟只有算式，饼干题只有圆点，排队题只有两块重叠矩形。",
+      "acceptance": "数量和组关系由数据生成；未知位置只显问号，艺术图不增加暗示或额外可数对象。"
+    },
+    {
+      "rank": 7,
+      "id": "everyday-planning-art",
+      "families": [
+        "L06"
+      ],
+      "action": "用准确步骤图替代种植/绘画/果盘长句小图；纠错关不再烘焙长句到小格。",
+      "evidence": "9题33次步骤卡全部为文字PNG，stage3另有长句格子图。",
+      "acceptance": "单图能指明当前动作，顺序由事件依赖判断；仅有道具图时明确作为道具，不能声称显示完整动作。"
+    },
+    {
+      "rank": 8,
+      "id": "growth-evidence-correction",
+      "families": [
+        "P02"
+      ],
+      "action": "修正植物根/芽/叶对应并补动物四阶段图。",
+      "evidence": "plant(1)“先长出根”将茎从y235画到y157，已伸出y220土面；蝴蝶/青蛙14次卡引用全为文字。",
+      "acceptance": "根出现在土下、芽出土/叶片展开可区分；相同生物连续阶段、尺度不人为泄露顺序。"
+    },
+    {
+      "rank": 9,
+      "id": "state-visible-on-board",
+      "families": [
+        "L09",
+        "L10",
+        "G04",
+        "G17"
+      ],
+      "action": "把黄白牌、红蓝标记、移动角色与朝向直接显示在图上。",
+      "evidence": "L09初态写黄/白，G04写红/蓝；L10起点与步长只在文字；G17小朋友画成圆。",
+      "acceptance": "图上能指出谁、在哪、朝哪和初始状态，文字与图同步。"
+    },
+    {
+      "rank": 10,
+      "id": "structure-expressed-by-layout",
+      "families": [
+        "G07",
+        "G18",
+        "N14",
+        "N16"
+      ],
+      "action": "金字塔显示层间依赖，立方体展开面共边等大，钟面/日历按信息结构单独排。",
+      "evidence": "G07仅平排底层；G18面70×65按80×70步距导致缝隙；日历和双钟受185px图高上限。",
+      "acceptance": "布局本身说明关系，不用读完整长句才能知道在哪里看。"
+    }
+  ],
+  "families": [
+    {
+      "id": "N01",
+      "classes": [
+        "精确图示"
+      ],
+      "priority": "P2",
+      "current": "点群是数量证据，数字选项本来就应为文字。",
+      "recommendation": "保留等距点阵；直接排数字，点的大小随数量而非整页压缩。",
+      "reusableGalleryKeys": [],
+      "assetBoundary": "",
+      "title": "数量结构屋",
+      "world": "math",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/math.ts",
+        "line": 11
+      },
+      "metrics": {
+        "tokenUsages": 36,
+        "textRasterTokenUsages": 36,
+        "diagramTokenUsages": 0,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 9,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "N02",
+      "classes": [
+        "精确图示"
+      ],
+      "priority": "P1",
+      "current": "左右点群在600宽复合图里二次缩小，配对差额难看清。",
+      "recommendation": "两块同尺度点阵并列，组名用页面文字；允许标记已配对的点。",
+      "reusableGalleryKeys": [],
+      "assetBoundary": "",
+      "title": "移一移比多少",
+      "world": "math",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/math.ts",
+        "line": 12
+      },
+      "metrics": {
+        "tokenUsages": 32,
+        "textRasterTokenUsages": 32,
+        "diagramTokenUsages": 0,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 9,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "N03",
+      "classes": [
+        "精确图示"
+      ],
+      "priority": "P1",
+      "current": "改间距图成立；水量关用线框杯和“原来N杯”表达，物理情境仍薄。",
+      "recommendation": "保留准确杯形、水面和转移箭头，关键标签独立；宽高变化不改变题目给定量。",
+      "reusableGalleryKeys": [
+        "items.cup",
+        "items.water"
+      ],
+      "assetBoundary": "杯子实物图只能作对象身份，不能代替带刻度的水量证据。",
+      "title": "变了样没变多",
+      "world": "math",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/math.ts",
+        "line": 13
+      },
+      "metrics": {
+        "tokenUsages": 36,
+        "textRasterTokenUsages": 36,
+        "diagramTokenUsages": 0,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 9,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "N04",
+      "classes": [
+        "精确图示"
+      ],
+      "priority": "P1",
+      "current": "每张选项内有左右点群和标题；600宽图缩为76px，组名字高约2.8px。",
+      "recommendation": "两列宽方案卡，同尺度左右盒，标题与计数不烘焙；不要为了显示八张挤成一排。",
+      "reusableGalleryKeys": [
+        "items.box"
+      ],
+      "assetBoundary": "无需新增艺术插画；盒内点数仍由数据渲染。",
+      "title": "分法找齐了吗",
+      "world": "math",
+      "rounds": 9,
+      "kinds": [
+        "multiSelect"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/math.ts",
+        "line": 14
+      },
+      "metrics": {
+        "tokenUsages": 72,
+        "textRasterTokenUsages": 0,
+        "diagramTokenUsages": 72,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 0,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "N05",
+      "classes": [
+        "精确图示"
+      ],
+      "priority": "P1",
+      "current": "十格框成立；长条数量用小字“一长条代表10”解释，容易被忽略。",
+      "recommendation": "十格框/十进制条块放大，图例置于证据旁；数字答案直接排版。",
+      "reusableGalleryKeys": [],
+      "assetBoundary": "",
+      "title": "十的好朋友",
+      "world": "math",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/math.ts",
+        "line": 15
+      },
+      "metrics": {
+        "tokenUsages": 33,
+        "textRasterTokenUsages": 33,
+        "diagramTokenUsages": 0,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 9,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "N06",
+      "classes": [
+        "精确图示",
+        "复用实物"
+      ],
+      "priority": "P1",
+      "current": "三种小鸟情境全以“7+3=?”等算式代替图，没有鸟或到来的事件。",
+      "recommendation": "用bird在已知数量区摆放，明确原来/飞来/现在；未知量保持问号，不提前画出答案数。",
+      "reusableGalleryKeys": [
+        "items.bird"
+      ],
+      "assetBoundary": "不能用scenes.operationBirdsFlyAway：其事件为飞走，与本族飞来相反。",
+      "title": "故事里的未知数",
+      "world": "math",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/math.ts",
+        "line": 16
+      },
+      "metrics": {
+        "tokenUsages": 36,
+        "textRasterTokenUsages": 36,
+        "diagramTokenUsages": 0,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 9,
+        "textRasterEvidenceUsages": 9
+      }
+    },
+    {
+      "id": "N07",
+      "classes": [
+        "精确图示",
+        "复用实物"
+      ],
+      "priority": "P1",
+      "current": "饼干均分题展示圆点，盒装题没有盒子。",
+      "recommendation": "饼干题用cookie按已知总量摆放；分组由容器与点阵呈现，保留可数数量。",
+      "reusableGalleryKeys": [
+        "items.cookie",
+        "items.plate",
+        "items.box"
+      ],
+      "assetBoundary": "scenes.fairSharePicnic不用于精确人数和数量，场景不能承担答案证据。",
+      "title": "分组小管家",
+      "world": "math",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/math.ts",
+        "line": 17
+      },
+      "metrics": {
+        "tokenUsages": 34,
+        "textRasterTokenUsages": 34,
+        "diagramTokenUsages": 0,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 9,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "N08",
+      "classes": [
+        "精确图示"
+      ],
+      "priority": "P2",
+      "current": "等面积比例依赖格子，替换成装饰图会丢失证据。",
+      "recommendation": "保留矩形网格；比较图同显示宽度，绿色高对比，标题独立。",
+      "reusableGalleryKeys": [],
+      "assetBoundary": "",
+      "title": "一样大的那一份",
+      "world": "math",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/math.ts",
+        "line": 18
+      },
+      "metrics": {
+        "tokenUsages": 27,
+        "textRasterTokenUsages": 0,
+        "diagramTokenUsages": 27,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 9,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "N09",
+      "classes": [
+        "精确图示",
+        "复用实物"
+      ],
+      "priority": "P1",
+      "current": "题干说队伍和小兔，图却是两块重叠矩形加红圆。",
+      "recommendation": "保留两组重叠范围，以rabbit明确公共成员；已知人数标在组上，避免直接画出答案总队伍。",
+      "reusableGalleryKeys": [
+        "characters.rabbit"
+      ],
+      "assetBoundary": "人物图仅定位共同成员，不为未知队伍补画完整答案。",
+      "title": "队伍有多长",
+      "world": "math",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/math.ts",
+        "line": 19
+      },
+      "metrics": {
+        "tokenUsages": 36,
+        "textRasterTokenUsages": 36,
+        "diagramTokenUsages": 0,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 9,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "N10",
+      "classes": [
+        "精确图示"
+      ],
+      "priority": "P2",
+      "current": "两两点群和数位条块与概念相符。",
+      "recommendation": "点阵留足间距，十与一图例独立；数字选项不用PNG。",
+      "reusableGalleryKeys": [],
+      "assetBoundary": "",
+      "title": "单双和数位",
+      "world": "math",
+      "rounds": 9,
+      "kinds": [
+        "multiSelect",
+        "singleChoice"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/math.ts",
+        "line": 20
+      },
+      "metrics": {
+        "tokenUsages": 42,
+        "textRasterTokenUsages": 24,
+        "diagramTokenUsages": 18,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 6,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "N11",
+      "classes": [
+        "精确图示"
+      ],
+      "priority": "P2",
+      "current": "数列与数表由数字格组成，属于有意符号表达。",
+      "recommendation": "数字与问号直接排版，交错组可以操作标记；保持题目规律不变。",
+      "reusableGalleryKeys": [],
+      "assetBoundary": "",
+      "title": "数列侦探",
+      "world": "math",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/math.ts",
+        "line": 24
+      },
+      "metrics": {
+        "tokenUsages": 36,
+        "textRasterTokenUsages": 36,
+        "diagramTokenUsages": 0,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 9,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "N12",
+      "classes": [
+        "精确图示"
+      ],
+      "priority": "P2",
+      "current": "○△等式作为图形代数本身合理，但整式文字烘焙。",
+      "recommendation": "使用可缩放图形符号和排版等式，换色不改变数值，字号随容器保持清楚。",
+      "reusableGalleryKeys": [],
+      "assetBoundary": "",
+      "title": "图形等量换",
+      "world": "math",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/math.ts",
+        "line": 25
+      },
+      "metrics": {
+        "tokenUsages": 36,
+        "textRasterTokenUsages": 36,
+        "diagramTokenUsages": 0,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 9,
+        "textRasterEvidenceUsages": 9
+      }
+    },
+    {
+      "id": "N13",
+      "classes": [
+        "精确图示",
+        "缺少事件"
+      ],
+      "priority": "P1",
+      "current": "零钱情境仅公式；付款方案是一排“1元”小字格，六七枚时很小。",
+      "recommendation": "用明确面额的教学钱币/纸钞和金额区，面额由代码控制；方案两列宽卡。",
+      "reusableGalleryKeys": [],
+      "assetBoundary": "没有已注册钱币PNG；适合确定性代码绘制教学票券，不需生成真实钞票。",
+      "title": "小小零钱铺",
+      "world": "math",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice",
+        "multiSelect"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/math.ts",
+        "line": 27
+      },
+      "metrics": {
+        "tokenUsages": 44,
+        "textRasterTokenUsages": 23,
+        "diagramTokenUsages": 21,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 9,
+        "textRasterEvidenceUsages": 9
+      }
+    },
+    {
+      "id": "N14",
+      "classes": [
+        "精确图示"
+      ],
+      "priority": "P1",
+      "current": "两只钟缩到同一张600宽图内，小刻度与长短针容易挤在一起。",
+      "recommendation": "时钟按独立等宽证据块展示，针长/粗细区分；时间选项只显示一次文字。",
+      "reusableGalleryKeys": [],
+      "assetBoundary": "早餐等场景不携带本族具体时刻，不应塞入时钟证据区。",
+      "title": "时钟往前走",
+      "world": "math",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/math.ts",
+        "line": 31
+      },
+      "metrics": {
+        "tokenUsages": 30,
+        "textRasterTokenUsages": 30,
+        "diagramTokenUsages": 0,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 9,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "N15",
+      "classes": [
+        "精确图示"
+      ],
+      "priority": "P1",
+      "current": "13个刻度与纸条、周长标记集中在600×280图里。",
+      "recommendation": "标尺放宽并独立显示起终刻度，纸条与基线对齐；周长四边清楚。",
+      "reusableGalleryKeys": [
+        "items.ruler"
+      ],
+      "assetBoundary": "现有尺子仅可辅助认识对象，不能代替0–12题目刻度。",
+      "title": "量一量围一围",
+      "world": "math",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/math.ts",
+        "line": 32
+      },
+      "metrics": {
+        "tokenUsages": 32,
+        "textRasterTokenUsages": 32,
+        "diagramTokenUsages": 0,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 9,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "N16",
+      "classes": [
+        "精确图示"
+      ],
+      "priority": "P1",
+      "current": "7列5行练习日历缩在185px内，日期字与列标题偏小。",
+      "recommendation": "日历用实际7列表格，表头固定、日期可点作辅助标记；说明为练习日历。",
+      "reusableGalleryKeys": [],
+      "assetBoundary": "不可换成某个真实月份照片而与给定星期错位。",
+      "title": "练习日历",
+      "world": "math",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/math.ts",
+        "line": 33
+      },
+      "metrics": {
+        "tokenUsages": 33,
+        "textRasterTokenUsages": 33,
+        "diagramTokenUsages": 0,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 9,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "L01",
+      "classes": [
+        "精确图示"
+      ],
+      "priority": "P2",
+      "current": "颜色和形状就是规则，简单图形并非缺陷。",
+      "recommendation": "保留干净九卡，避免重复长标签；颜色形状有文字/语音辅助。",
+      "reusableGalleryKeys": [
+        "items.thinkingRedCircle",
+        "items.thinkingBlueSquare",
+        "items.thinkingYellowTriangle"
+      ],
+      "assetBoundary": "已有九色形图可复用，但生成图精度与同一色盘优先。",
+      "title": "分类换个角度",
+      "world": "logic",
+      "rounds": 9,
+      "kinds": [
+        "multiSelect"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/logic.ts",
+        "line": 18
+      },
+      "metrics": {
+        "tokenUsages": 81,
+        "textRasterTokenUsages": 0,
+        "diagramTokenUsages": 81,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 0,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "L02",
+      "classes": [
+        "精确图示"
+      ],
+      "priority": "P2",
+      "current": "点数数字/同形异色配对有意抽象；030已直接连线。",
+      "recommendation": "继续使用精确点群和形状；数字卡只排文字，连线与卡面留距。",
+      "reusableGalleryKeys": [],
+      "assetBoundary": "不能用额外语义插画改变当前形状关系。",
+      "title": "关系接力",
+      "world": "logic",
+      "rounds": 9,
+      "kinds": [
+        "matching"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/logic.ts",
+        "line": 19
+      },
+      "metrics": {
+        "tokenUsages": 54,
+        "textRasterTokenUsages": 6,
+        "diagramTokenUsages": 48,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 0,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "L03",
+      "classes": [
+        "复用实物",
+        "精确图示"
+      ],
+      "priority": "P1",
+      "current": "排队阶段已有动物头像；证据不足关只有动物名字和大于号。",
+      "recommendation": "保留相同大小头像以免暗示真实身高；两条关系单独展示，不把未知比较画出来。",
+      "reusableGalleryKeys": [
+        "characters.rabbit",
+        "characters.cat",
+        "characters.dog",
+        "characters.bear"
+      ],
+      "assetBoundary": "同大小头像配关系线，不直接通过人物高度泄露结论。",
+      "title": "线索够不够",
+      "world": "logic",
+      "rounds": 9,
+      "kinds": [
+        "orderedPlacement",
+        "singleChoice"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/logic.ts",
+        "line": 20
+      },
+      "metrics": {
+        "tokenUsages": 30,
+        "textRasterTokenUsages": 9,
+        "diagramTokenUsages": 0,
+        "concreteTokenUsages": 21,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 3,
+        "textRasterEvidenceUsages": 3
+      }
+    },
+    {
+      "id": "L04",
+      "classes": [
+        "复用实物"
+      ],
+      "priority": "P2",
+      "current": "三种角色图已完整，但格子和备选盘被压到43–49px。",
+      "recommendation": "保留头像，固定格和待填格区分；盘与棋盘保持足够触点。",
+      "reusableGalleryKeys": [
+        "characters.rabbit",
+        "characters.cat",
+        "characters.dog"
+      ],
+      "assetBoundary": "",
+      "title": "格子里的线索",
+      "world": "logic",
+      "rounds": 9,
+      "kinds": [
+        "gridPlacement"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/logic.ts",
+        "line": 25
+      },
+      "metrics": {
+        "tokenUsages": 27,
+        "textRasterTokenUsages": 0,
+        "diagramTokenUsages": 0,
+        "concreteTokenUsages": 27,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 0,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "L05",
+      "classes": [
+        "精确图示"
+      ],
+      "priority": "P2",
+      "current": "路线图必须精确；030已支持地点/路段直接操作。",
+      "recommendation": "维持起点终点/当前位置/经过点；新插画只可用于地点身份且不遮线。",
+      "reusableGalleryKeys": [],
+      "assetBoundary": "不要再叠加任意地图背景改变可走通路。",
+      "title": "路线设计师",
+      "world": "logic",
+      "rounds": 9,
+      "kinds": [
+        "route"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/logic.ts",
+        "line": 27
+      },
+      "metrics": {
+        "tokenUsages": 0,
+        "textRasterTokenUsages": 0,
+        "diagramTokenUsages": 0,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 0,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "L06",
+      "classes": [
+        "缺少事件",
+        "复用实物"
+      ],
+      "priority": "P1",
+      "current": "种植、作画、果盘步骤全部为栅格化文字；纠错关还把长句放进小格。",
+      "recommendation": "改为单事件卡与一次文字；种植与E03共享语义相符的单步图；作画/果盘需准确动作图。",
+      "reusableGalleryKeys": [
+        "items.pencil",
+        "items.apple",
+        "items.orange",
+        "items.plate"
+      ],
+      "assetBoundary": "现有道具不足以描绘画轮廓/涂色/晾干、洗果/切果/装碗/吃果四步，不能一图反复冒充。",
+      "title": "先后有讲究",
+      "world": "logic",
+      "rounds": 9,
+      "kinds": [
+        "orderedPlacement"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/logic.ts",
+        "line": 54
+      },
+      "metrics": {
+        "tokenUsages": 33,
+        "textRasterTokenUsages": 33,
+        "diagramTokenUsages": 0,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 3,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "L07",
+      "classes": [
+        "精确图示",
+        "亲子材料"
+      ],
+      "priority": "P2",
+      "current": "颜色形状证据及口述编线索本身完整。",
+      "recommendation": "九图卡保持可见；家长活动单列准备、动作、观察，不用答案型插画。",
+      "reusableGalleryKeys": [
+        "items.thinkingRedCircle",
+        "items.thinkingBlueSquare",
+        "items.thinkingYellowTriangle"
+      ],
+      "assetBoundary": "",
+      "title": "证据说明什么",
+      "world": "logic",
+      "rounds": 9,
+      "kinds": [
+        "multiSelect",
+        "parentObservation"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/logic.ts",
+        "line": 56
+      },
+      "metrics": {
+        "tokenUsages": 54,
+        "textRasterTokenUsages": 0,
+        "diagramTokenUsages": 54,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 0,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "L08",
+      "classes": [
+        "精确图示"
+      ],
+      "priority": "P1",
+      "current": "“规则机”只显示数字箭头，示例和当前任务同在一张图中。",
+      "recommendation": "示例与本次操作分成清楚两步，显示已知输入圆片和规则标记；未知输出不显示结果。",
+      "reusableGalleryKeys": [],
+      "assetBoundary": "无需卡通机器占据主空间。",
+      "title": "学会新规则",
+      "world": "logic",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/logic.ts",
+        "line": 58
+      },
+      "metrics": {
+        "tokenUsages": 30,
+        "textRasterTokenUsages": 30,
+        "diagramTokenUsages": 0,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 9,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "L09",
+      "classes": [
+        "精确图示"
+      ],
+      "priority": "P1",
+      "current": "初态是普通网格里的“黄/白”文字，实际牌色没有呈现。",
+      "recommendation": "初态和答案均用相同黄面/白面牌，逐步翻转的位置明确；文字作为辅助。",
+      "reusableGalleryKeys": [
+        "items.patternYellowDisc",
+        "items.thinkingBlankCard"
+      ],
+      "assetBoundary": "圆片与牌形需一致；直接代码绘制双色矩形更准确。",
+      "title": "翻牌小机关",
+      "world": "logic",
+      "rounds": 9,
+      "kinds": [
+        "gridPlacement"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/logic.ts",
+        "line": 59
+      },
+      "metrics": {
+        "tokenUsages": 18,
+        "textRasterTokenUsages": 0,
+        "diagramTokenUsages": 18,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 9,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "L10",
+      "classes": [
+        "精确图示"
+      ],
+      "priority": "P1",
+      "current": "题干称两位朋友，只有0–11数字格和一长串文字，没有红蓝起始标记。",
+      "recommendation": "数轴显示两枚有色棋子、方向和步长；两枚结果位明确红先蓝后。",
+      "reusableGalleryKeys": [],
+      "assetBoundary": "保留同格可能，不靠角色插画推断位置。",
+      "title": "两位朋友走格子",
+      "world": "logic",
+      "rounds": 9,
+      "kinds": [
+        "orderedPlacement"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/logic.ts",
+        "line": 60
+      },
+      "metrics": {
+        "tokenUsages": 108,
+        "textRasterTokenUsages": 108,
+        "diagramTokenUsages": 0,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 9,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "L11",
+      "classes": [
+        "精确图示"
+      ],
+      "priority": "P1",
+      "current": "每个落点选项重画整张棋盘，多达七张且小子难区分。",
+      "recommendation": "主棋盘与候选盘都扩大；落下的新子带明确中性外圈，可比较但不标正误。",
+      "reusableGalleryKeys": [],
+      "assetBoundary": "不引入装饰棋子；后续可用主棋盘直接选格，须独立交互验收。",
+      "title": "棋盘下一步",
+      "world": "logic",
+      "rounds": 9,
+      "kinds": [
+        "multiSelect"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/logic.ts",
+        "line": 62
+      },
+      "metrics": {
+        "tokenUsages": 56,
+        "textRasterTokenUsages": 0,
+        "diagramTokenUsages": 56,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 9,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "L12",
+      "classes": [
+        "精确图示"
+      ],
+      "priority": "P2",
+      "current": "小岛网络是图论证据；030已有双线桥、岛上桥数。",
+      "recommendation": "保留直接搭桥与清楚度数，线条对比稳定。",
+      "reusableGalleryKeys": [],
+      "assetBoundary": "无需真实河岸插画去遮挡桥路。",
+      "title": "小岛连桥",
+      "world": "logic",
+      "rounds": 9,
+      "kinds": [
+        "network"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/logic.ts",
+        "line": 94
+      },
+      "metrics": {
+        "tokenUsages": 0,
+        "textRasterTokenUsages": 0,
+        "diagramTokenUsages": 0,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 0,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "G01",
+      "classes": [
+        "精确图示"
+      ],
+      "priority": "P2",
+      "current": "格子差异是唯一证据。",
+      "recommendation": "源图和答案使用相同网格尺寸，保证最小一格可辨并可放大。",
+      "reusableGalleryKeys": [],
+      "assetBoundary": "",
+      "title": "图案观察员",
+      "world": "graphic",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/graphic.ts",
+        "line": 46
+      },
+      "metrics": {
+        "tokenUsages": 36,
+        "textRasterTokenUsages": 0,
+        "diagramTokenUsages": 36,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 9,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "G02",
+      "classes": [
+        "精确图示"
+      ],
+      "priority": "P2",
+      "current": "遮挡边缘和纹理补片是关键。",
+      "recommendation": "放大局部边缘；灰遮挡、白格、蓝格保持明显区别。",
+      "reusableGalleryKeys": [],
+      "assetBoundary": "不把补片换成随机艺术纹理。",
+      "title": "遮住了什么",
+      "world": "graphic",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/graphic.ts",
+        "line": 47
+      },
+      "metrics": {
+        "tokenUsages": 33,
+        "textRasterTokenUsages": 0,
+        "diagramTokenUsages": 33,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 9,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "G03",
+      "classes": [
+        "精确图示"
+      ],
+      "priority": "P2",
+      "current": "形状/颜色矩阵合理，盘中九张长标签冗余。",
+      "recommendation": "保持色形对应，减少重复文字；主格尺寸大于备选缩略。",
+      "reusableGalleryKeys": [
+        "items.thinkingRedCircle",
+        "items.thinkingBlueSquare",
+        "items.thinkingYellowTriangle"
+      ],
+      "assetBoundary": "",
+      "title": "行列规律研究",
+      "world": "graphic",
+      "rounds": 9,
+      "kinds": [
+        "gridPlacement"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/graphic.ts",
+        "line": 52
+      },
+      "metrics": {
+        "tokenUsages": 81,
+        "textRasterTokenUsages": 0,
+        "diagramTokenUsages": 81,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 0,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "G04",
+      "classes": [
+        "精确图示"
+      ],
+      "priority": "P1",
+      "current": "“红”“蓝”“红蓝”写在白格中，没有实际红蓝标记。",
+      "recommendation": "显示两枚真正有色的小棋子/双色同格状态，初态与选项统一。",
+      "reusableGalleryKeys": [
+        "items.patternRedDisc",
+        "items.patternBlueDisc"
+      ],
+      "assetBoundary": "可使用代码圆片；不需要人物插画。",
+      "title": "标记走格子",
+      "world": "graphic",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/graphic.ts",
+        "line": 53
+      },
+      "metrics": {
+        "tokenUsages": 33,
+        "textRasterTokenUsages": 0,
+        "diagramTokenUsages": 33,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 9,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "G05",
+      "classes": [
+        "精确图示"
+      ],
+      "priority": "P2",
+      "current": "旋转镜像和缩放需要精确色块图。",
+      "recommendation": "统一参照框、旋转/镜像指示在图外；不让外框变化泄露答案。",
+      "reusableGalleryKeys": [],
+      "assetBoundary": "",
+      "title": "转一转照一照",
+      "world": "graphic",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/graphic.ts",
+        "line": 59
+      },
+      "metrics": {
+        "tokenUsages": 36,
+        "textRasterTokenUsages": 0,
+        "diagramTokenUsages": 36,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 9,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "G06",
+      "classes": [
+        "精确图示"
+      ],
+      "priority": "P1",
+      "current": "左右复合图缩小后逐格比较吃力。",
+      "recommendation": "源图并列等宽且可放大，结果图网格同尺度；规则文字独立。",
+      "reusableGalleryKeys": [],
+      "assetBoundary": "",
+      "title": "图形合并机",
+      "world": "graphic",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/graphic.ts",
+        "line": 63
+      },
+      "metrics": {
+        "tokenUsages": 36,
+        "textRasterTokenUsages": 0,
+        "diagramTokenUsages": 36,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 9,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "G07",
+      "classes": [
+        "精确图示"
+      ],
+      "priority": "P1",
+      "current": "叫“金字塔”，题面只平排2–4块底层，未表现中层/顶层结构。",
+      "recommendation": "按实际依赖摆成层级，箭头与空白中层帮助理解步骤，不提前填结果。",
+      "reusableGalleryKeys": [],
+      "assetBoundary": "无需场景插画。",
+      "title": "图形金字塔",
+      "world": "graphic",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/graphic.ts",
+        "line": 64
+      },
+      "metrics": {
+        "tokenUsages": 36,
+        "textRasterTokenUsages": 0,
+        "diagramTokenUsages": 36,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 9,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "G08",
+      "classes": [
+        "精确图示"
+      ],
+      "priority": "P1",
+      "current": "颜色密码有颜色块，但块上数字/颜色字被整体缩小。",
+      "recommendation": "颜色对照表固定在证据旁，每格留足字号；明确为密码运算。",
+      "reusableGalleryKeys": [],
+      "assetBoundary": "不能换为真实颜料混色图。",
+      "title": "颜色密码运算",
+      "world": "graphic",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/graphic.ts",
+        "line": 65
+      },
+      "metrics": {
+        "tokenUsages": 27,
+        "textRasterTokenUsages": 0,
+        "diagramTokenUsages": 27,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 9,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "G09",
+      "classes": [
+        "精确图示"
+      ],
+      "priority": "P2",
+      "current": "边、角、交点、连通部分与网格都是精确证据。",
+      "recommendation": "线宽和小顶点显著，复杂数长方形图可放大标记。",
+      "reusableGalleryKeys": [],
+      "assetBoundary": "",
+      "title": "点线面数清楚",
+      "world": "graphic",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/graphic.ts",
+        "line": 66
+      },
+      "metrics": {
+        "tokenUsages": 36,
+        "textRasterTokenUsages": 36,
+        "diagramTokenUsages": 0,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 9,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "G10",
+      "classes": [
+        "精确图示"
+      ],
+      "priority": "P1",
+      "current": "虚线与图形同放进76px卡，部分虚线几乎消失。",
+      "recommendation": "折线图至少160px级别可辨，虚线与填色对比；图形尺寸不随选项变。",
+      "reusableGalleryKeys": [],
+      "assetBoundary": "",
+      "title": "哪里可以对折",
+      "world": "graphic",
+      "rounds": 9,
+      "kinds": [
+        "multiSelect"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/graphic.ts",
+        "line": 90
+      },
+      "metrics": {
+        "tokenUsages": 36,
+        "textRasterTokenUsages": 0,
+        "diagramTokenUsages": 36,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 9,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "G11",
+      "classes": [
+        "精确图示"
+      ],
+      "priority": "P1",
+      "current": "相切/相交/分离只差边界几像素，普通小卡难判断。",
+      "recommendation": "加大图形与边界间隙的显示，保留真实相切几何；点击放大。",
+      "reusableGalleryKeys": [],
+      "assetBoundary": "严禁把相切边缘加阴影造成假重叠。",
+      "title": "相碰还是相交",
+      "world": "graphic",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice",
+        "multiSelect"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/graphic.ts",
+        "line": 91
+      },
+      "metrics": {
+        "tokenUsages": 33,
+        "textRasterTokenUsages": 0,
+        "diagramTokenUsages": 33,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 0,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "G12",
+      "classes": [
+        "精确图示"
+      ],
+      "priority": "P1",
+      "current": "黑点原图直径14/320，窄屏76px显示时约3.3px。",
+      "recommendation": "关键点/轮廓放大且保留点中心定义，画面至少160px；可放大。",
+      "reusableGalleryKeys": [],
+      "assetBoundary": "不必变成插画，关键是证据可见性。",
+      "title": "小黑点的任务",
+      "world": "graphic",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/graphic.ts",
+        "line": 96
+      },
+      "metrics": {
+        "tokenUsages": 27,
+        "textRasterTokenUsages": 0,
+        "diagramTokenUsages": 27,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 0,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "G13",
+      "classes": [
+        "精确图示",
+        "文字识读"
+      ],
+      "priority": "P2",
+      "current": "图形密码与数字对照本身合理。",
+      "recommendation": "对照表和当前序列分开排，单字数字不烘焙，图形保持精确。",
+      "reusableGalleryKeys": [],
+      "assetBoundary": "",
+      "title": "多位图形密码",
+      "world": "graphic",
+      "rounds": 9,
+      "kinds": [
+        "gridPlacement"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/graphic.ts",
+        "line": 110
+      },
+      "metrics": {
+        "tokenUsages": 27,
+        "textRasterTokenUsages": 18,
+        "diagramTokenUsages": 9,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 9,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "G14",
+      "classes": [
+        "精确图示"
+      ],
+      "priority": "P1",
+      "current": "部件预览每格10px，层级和旋转用文字按钮解释。",
+      "recommendation": "部件缩略放大，当前层和已放部件一眼可区分；持续保留目标阴影。",
+      "reusableGalleryKeys": [],
+      "assetBoundary": "保持几何准确，新增场景图无收益。",
+      "title": "拼搭小工坊",
+      "world": "graphic",
+      "rounds": 9,
+      "kinds": [
+        "construction"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/graphic.ts",
+        "line": 111
+      },
+      "metrics": {
+        "tokenUsages": 0,
+        "textRasterTokenUsages": 0,
+        "diagramTokenUsages": 0,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 0,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "G15",
+      "classes": [
+        "精确图示",
+        "亲子材料"
+      ],
+      "priority": "P1",
+      "current": "打孔位置用“孔”文字，折后/展开状态依靠文字理解。",
+      "recommendation": "区分折好的小纸与展开纸，折线/孔用明确标记；亲子段用真实折纸准备图。",
+      "reusableGalleryKeys": [
+        "scenes.mirrorFoldPaper"
+      ],
+      "assetBoundary": "场景只示意材料，不可当作具体打孔位置答案。",
+      "title": "折开会怎样",
+      "world": "graphic",
+      "rounds": 9,
+      "kinds": [
+        "parentObservation",
+        "singleChoice"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/graphic.ts",
+        "line": 125
+      },
+      "metrics": {
+        "tokenUsages": 24,
+        "textRasterTokenUsages": 0,
+        "diagramTokenUsages": 24,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 6,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "G16",
+      "classes": [
+        "精确图示",
+        "亲子材料"
+      ],
+      "priority": "P1",
+      "current": "积木多视图必要；四个候选体放进76px卡，遮挡层数难辨。",
+      "recommendation": "至少两列大卡，前/侧/上视图独立，积木边界明确，可放大。",
+      "reusableGalleryKeys": [
+        "items.block",
+        "items.box"
+      ],
+      "assetBoundary": "现有block仅为亲子材料，不可替代特定高度结构。",
+      "title": "积木的另一面",
+      "world": "graphic",
+      "rounds": 9,
+      "kinds": [
+        "parentObservation",
+        "singleChoice",
+        "multiSelect"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/graphic.ts",
+        "line": 130
+      },
+      "metrics": {
+        "tokenUsages": 24,
+        "textRasterTokenUsages": 12,
+        "diagramTokenUsages": 12,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 6,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "G17",
+      "classes": [
+        "精确图示",
+        "复用实物"
+      ],
+      "priority": "P1",
+      "current": "“小朋友”被画成无脸圆加箭头，角色朝向不直观。",
+      "recommendation": "增加明确的俯视人物/棋子朝向，箭头与鼻向一致；红球位置仍由数据控制。",
+      "reusableGalleryKeys": [
+        "items.child",
+        "items.soccer"
+      ],
+      "assetBoundary": "现有正面child不能假定有任意朝向；若不生成多向头像，应使用精确俯视小人图示。",
+      "title": "换个方向看左右",
+      "world": "graphic",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/graphic.ts",
+        "line": 135
+      },
+      "metrics": {
+        "tokenUsages": 36,
+        "textRasterTokenUsages": 36,
+        "diagramTokenUsages": 0,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 9,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "G18",
+      "classes": [
+        "精确图示"
+      ],
+      "priority": "P1",
+      "current": "展开图矩形70×65按80×70步距摆放，面间有空隙且非正方形。",
+      "recommendation": "显示相邻正方形共边、六面等大，折线清楚；面名直接文字标注。",
+      "reusableGalleryKeys": [],
+      "assetBoundary": "这是图示准确性修复，不能用任意纸盒图替代。",
+      "title": "纸盒六个面",
+      "world": "graphic",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice",
+        "multiSelect"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/graphic.ts",
+        "line": 136
+      },
+      "metrics": {
+        "tokenUsages": 36,
+        "textRasterTokenUsages": 36,
+        "diagramTokenUsages": 0,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 9,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "G19",
+      "classes": [
+        "精确图示"
+      ],
+      "priority": "P2",
+      "current": "参照图与填格合理，但答案区小于足够比对尺寸。",
+      "recommendation": "参照和重建同尺度，保留空白卡；可在相邻区域比对。",
+      "reusableGalleryKeys": [],
+      "assetBoundary": "",
+      "title": "方格重建师",
+      "world": "graphic",
+      "rounds": 9,
+      "kinds": [
+        "gridPlacement"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/graphic.ts",
+        "line": 142
+      },
+      "metrics": {
+        "tokenUsages": 18,
+        "textRasterTokenUsages": 0,
+        "diagramTokenUsages": 18,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 9,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "G20",
+      "classes": [
+        "精确图示"
+      ],
+      "priority": "P1",
+      "current": "遮挡边缘是唯一线索，图整体185px上限加小纸片盘。",
+      "recommendation": "参照加大，底到顶方向明确，选中纸片不改变原证据层级。",
+      "reusableGalleryKeys": [
+        "items.patternRedDisc",
+        "items.patternBlueDisc",
+        "items.patternYellowDisc",
+        "items.patternGreenDisc"
+      ],
+      "assetBoundary": "圆片色彩可复用，不能用带立体厚度图污染遮挡边缘。",
+      "title": "谁盖住了谁",
+      "world": "graphic",
+      "rounds": 9,
+      "kinds": [
+        "orderedPlacement"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/graphic.ts",
+        "line": 143
+      },
+      "metrics": {
+        "tokenUsages": 28,
+        "textRasterTokenUsages": 0,
+        "diagramTokenUsages": 28,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 9,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "A01",
+      "classes": [
+        "复用实物"
+      ],
+      "priority": "P2",
+      "current": "已有动物/水果本地PNG，呈现质量主要受观察区尺寸影响。",
+      "recommendation": "保留熟悉图卡，观察结束隐藏预览，操作盘字号清楚。",
+      "reusableGalleryKeys": [
+        "characters.rabbit",
+        "characters.cat",
+        "characters.bear",
+        "characters.dog",
+        "items.apple",
+        "items.orange",
+        "items.patternCookie",
+        "items.strawberry"
+      ],
+      "assetBoundary": "不能持续显示观察答案图。",
+      "title": "看过哪些朋友",
+      "world": "memory",
+      "rounds": 9,
+      "kinds": [
+        "multiSelect"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/memory.ts",
+        "line": 14
+      },
+      "metrics": {
+        "tokenUsages": 72,
+        "textRasterTokenUsages": 0,
+        "diagramTokenUsages": 0,
+        "concreteTokenUsages": 72,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 0,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "A02",
+      "classes": [
+        "复用实物",
+        "精确图示"
+      ],
+      "priority": "P2",
+      "current": "角色图片完整；空白格也要记忆，可能被装饰背景干扰。",
+      "recommendation": "前后保持相同格位和尺度，空白卡可辨；隐藏观察布局。",
+      "reusableGalleryKeys": [
+        "characters.rabbit",
+        "characters.cat",
+        "characters.bear",
+        "characters.dog",
+        "items.thinkingBlankCard"
+      ],
+      "assetBoundary": "",
+      "title": "位置藏起来",
+      "world": "memory",
+      "rounds": 9,
+      "kinds": [
+        "gridPlacement"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/memory.ts",
+        "line": 15
+      },
+      "metrics": {
+        "tokenUsages": 45,
+        "textRasterTokenUsages": 0,
+        "diagramTokenUsages": 9,
+        "concreteTokenUsages": 36,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 0,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "A03",
+      "classes": [
+        "复用实物"
+      ],
+      "priority": "P2",
+      "current": "序列已有动物水果图，重复关系依赖顺序。",
+      "recommendation": "观察卡和答题槽用同样图片尺寸，倒序提示清楚且不重复展示序列。",
+      "reusableGalleryKeys": [
+        "characters.rabbit",
+        "characters.cat",
+        "characters.bear",
+        "characters.dog",
+        "items.apple"
+      ],
+      "assetBoundary": "",
+      "title": "顺着记倒着摆",
+      "world": "memory",
+      "rounds": 9,
+      "kinds": [
+        "orderedPlacement"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/memory.ts",
+        "line": 16
+      },
+      "metrics": {
+        "tokenUsages": 45,
+        "textRasterTokenUsages": 0,
+        "diagramTokenUsages": 0,
+        "concreteTokenUsages": 45,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 0,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "A04",
+      "classes": [
+        "复用实物"
+      ],
+      "priority": "P2",
+      "current": "听觉指令配现有角色图成立。",
+      "recommendation": "听完再答的状态明显；不加含正确顺序的背景。",
+      "reusableGalleryKeys": [
+        "characters.rabbit",
+        "characters.cat",
+        "characters.bear",
+        "characters.dog",
+        "items.apple"
+      ],
+      "assetBoundary": "",
+      "title": "听懂再行动",
+      "world": "memory",
+      "rounds": 9,
+      "kinds": [
+        "orderedPlacement"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/memory.ts",
+        "line": 18
+      },
+      "metrics": {
+        "tokenUsages": 45,
+        "textRasterTokenUsages": 0,
+        "diagramTokenUsages": 0,
+        "concreteTokenUsages": 45,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 0,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "A05",
+      "classes": [
+        "复用实物",
+        "缺少事件"
+      ],
+      "priority": "P1",
+      "current": "认人物已换头像；三故事事件排序仍是纯文字卡。",
+      "recommendation": "人物答案保留；事件排序补准确动作卡，音频阶段不显示完整事实序列。",
+      "reusableGalleryKeys": [
+        "characters.rabbit",
+        "characters.cat",
+        "characters.dog",
+        "characters.bear",
+        "items.apple",
+        "items.longPlank",
+        "items.bridge"
+      ],
+      "assetBoundary": "树下等雨、合作放木板、分享苹果、告诉小兔发芽均无精确旧图；不能用不同角色场景代替。",
+      "title": "故事留在脑海里",
+      "world": "memory",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice",
+        "orderedPlacement",
+        "parentObservation"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/memory.ts",
+        "line": 20
+      },
+      "metrics": {
+        "tokenUsages": 21,
+        "textRasterTokenUsages": 9,
+        "diagramTokenUsages": 0,
+        "concreteTokenUsages": 12,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 0,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "A06",
+      "classes": [
+        "精确图示"
+      ],
+      "priority": "P2",
+      "current": "9/15/21个色形搜索需要规律网格，非缺插画。",
+      "recommendation": "卡片保持最小可辨尺寸，自然滚动；选中标记不遮图形。",
+      "reusableGalleryKeys": [
+        "items.thinkingRedCircle",
+        "items.thinkingBlueSquare",
+        "items.thinkingYellowTriangle"
+      ],
+      "assetBoundary": "",
+      "title": "细心搜索员",
+      "world": "memory",
+      "rounds": 9,
+      "kinds": [
+        "multiSelect"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/memory.ts",
+        "line": 26
+      },
+      "metrics": {
+        "tokenUsages": 135,
+        "textRasterTokenUsages": 0,
+        "diagramTokenUsages": 135,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 0,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "A07",
+      "classes": [
+        "精确图示"
+      ],
+      "priority": "P2",
+      "current": "听规则后挑形状本身需要无额外线索的符号卡。",
+      "recommendation": "规则状态与响应区清楚分开，保持无答案提示的九图。",
+      "reusableGalleryKeys": [
+        "items.thinkingRedCircle",
+        "items.thinkingBlueSquare",
+        "items.thinkingYellowTriangle"
+      ],
+      "assetBoundary": "",
+      "title": "记规则再出手",
+      "world": "memory",
+      "rounds": 9,
+      "kinds": [
+        "multiSelect"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/memory.ts",
+        "line": 27
+      },
+      "metrics": {
+        "tokenUsages": 81,
+        "textRasterTokenUsages": 0,
+        "diagramTokenUsages": 81,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 0,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "A08",
+      "classes": [
+        "文字识读",
+        "精确图示"
+      ],
+      "priority": "P1",
+      "current": "长音/短音是“长—”“短·”PNG，再加柔和长音等标签；跨交互textOnly未统一。",
+      "recommendation": "用长条/短点声音符号和一次标签，点击重听；不能仅以字形考阅读。",
+      "reusableGalleryKeys": [],
+      "assetBoundary": "保留声音资产，符号只是回忆接口。",
+      "title": "声音排队",
+      "world": "memory",
+      "rounds": 9,
+      "kinds": [
+        "orderedPlacement",
+        "parentObservation"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/memory.ts",
+        "line": 28
+      },
+      "metrics": {
+        "tokenUsages": 16,
+        "textRasterTokenUsages": 16,
+        "diagramTokenUsages": 0,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 0,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "A09",
+      "classes": [
+        "复用实物",
+        "精确图示"
+      ],
+      "priority": "P1",
+      "current": "观察卡是点群上写小兔等名称，没有角色头像；600宽卡被缩到常规小卡。",
+      "recommendation": "角色头像与可数点群同卡且足够大，答题期隐藏观察卡。",
+      "reusableGalleryKeys": [
+        "characters.rabbit",
+        "characters.cat",
+        "characters.bear",
+        "characters.dog"
+      ],
+      "assetBoundary": "改观察卡不改变朋友-数量关系，也不能在答题期留关系图。",
+      "title": "谁有几个",
+      "world": "memory",
+      "rounds": 9,
+      "kinds": [
+        "matching"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/memory.ts",
+        "line": 33
+      },
+      "metrics": {
+        "tokenUsages": 81,
+        "textRasterTokenUsages": 0,
+        "diagramTokenUsages": 54,
+        "concreteTokenUsages": 27,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 0,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "E01",
+      "classes": [
+        "文字识读",
+        "亲子材料"
+      ],
+      "priority": "P2",
+      "current": "反义词配对本来就是语言任务；已用textOnly在配对中呈现。",
+      "recommendation": "保留清楚单词卡和语音，动作示范放家长区域；不要强换成含糊插画。",
+      "reusableGalleryKeys": [
+        "items.longPlank",
+        "items.shortPlank",
+        "items.box",
+        "items.door"
+      ],
+      "assetBoundary": "实物只用于亲子解释，不改变词语任务。",
+      "title": "词语有朋友",
+      "world": "language",
+      "rounds": 9,
+      "kinds": [
+        "matching",
+        "parentObservation"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/language.ts",
+        "line": 8
+      },
+      "metrics": {
+        "tokenUsages": 30,
+        "textRasterTokenUsages": 30,
+        "diagramTokenUsages": 0,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 0,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "E02",
+      "classes": [
+        "亲子材料",
+        "复用实物"
+      ],
+      "priority": "P2",
+      "current": "三项口头描述活动只有材料/步骤/记录，层次弱。",
+      "recommendation": "准备区展示玩具、杯、盒的小图，逐步进行；空间关系由实际摆放验证。",
+      "reusableGalleryKeys": [
+        "items.toyCar",
+        "items.cup",
+        "items.box"
+      ],
+      "assetBoundary": "不要预摆题目正确位置而限制开放表达。",
+      "title": "把位置说清楚",
+      "world": "language",
+      "rounds": 3,
+      "kinds": [
+        "parentObservation"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/language.ts",
+        "line": 10
+      },
+      "metrics": {
+        "tokenUsages": 0,
+        "textRasterTokenUsages": 0,
+        "diagramTokenUsages": 0,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 0,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "E03",
+      "classes": [
+        "缺少事件",
+        "复用实物"
+      ],
+      "priority": "P1",
+      "current": "天气/搭塔/种植共12事件完全是文字卡；题目称故事但孩子看不到故事。",
+      "recommendation": "同故事主角、地点、道具保持连续，每张只画一件事件；标题文字一次出现。",
+      "reusableGalleryKeys": [
+        "items.block",
+        "items.blockTower",
+        "items.soccer"
+      ],
+      "assetBoundary": "新小猫种植4图优先；旧plantGrowthGarden为人类且混多个阶段；blockTowerRebuild为人类且无球碰倒事件。",
+      "title": "故事接起来",
+      "world": "language",
+      "rounds": 9,
+      "kinds": [
+        "orderedPlacement",
+        "parentObservation"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/language.ts",
+        "line": 11
+      },
+      "metrics": {
+        "tokenUsages": 21,
+        "textRasterTokenUsages": 21,
+        "diagramTokenUsages": 0,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 0,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "E04",
+      "classes": [
+        "亲子材料",
+        "复用实物"
+      ],
+      "priority": "P1",
+      "current": "看图讲故事、证据够不够都没有题目自己的配图，依赖家长另备材料。",
+      "recommendation": "三张卡可从注册库提供；过河材料与证据图按任务选用，分开观察事实和假设。",
+      "reusableGalleryKeys": [
+        "items.longPlank",
+        "items.shortPlank",
+        "items.bridge",
+        "scenes.dogRoomWeakClue",
+        "scenes.spilledWaterRoom"
+      ],
+      "assetBoundary": "spilledWaterRoom画的是小熊在旁、狗在远处，不能声称图证明狗打翻；应允许不同解释。",
+      "title": "我的解释和办法",
+      "world": "language",
+      "rounds": 3,
+      "kinds": [
+        "parentObservation"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/language.ts",
+        "line": 13
+      },
+      "metrics": {
+        "tokenUsages": 0,
+        "textRasterTokenUsages": 0,
+        "diagramTokenUsages": 0,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 0,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "E05",
+      "classes": [
+        "文字识读"
+      ],
+      "priority": "P1",
+      "current": "字/拼音任务用文字本身合理，但字卡PNG+标签重复；声调缩小后难辨。",
+      "recommendation": "大字号可读汉字和拼音、声调清楚；对照表独立排版。",
+      "reusableGalleryKeys": [],
+      "assetBoundary": "字形识读不新增故事插画干扰笔画。",
+      "title": "字音小花园",
+      "world": "language",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice",
+        "matching"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/language.ts",
+        "line": 14
+      },
+      "metrics": {
+        "tokenUsages": 36,
+        "textRasterTokenUsages": 36,
+        "diagramTokenUsages": 0,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 6,
+        "textRasterEvidenceUsages": 3
+      }
+    },
+    {
+      "id": "E06",
+      "classes": [
+        "复用实物",
+        "精确图示"
+      ],
+      "priority": "P1",
+      "current": "单词动物已有PNG；第三阶段双图压在一张600宽选项里。",
+      "recommendation": "动物保持清楚；每个选项内两幅图并列足够大，左右关系明显。",
+      "reusableGalleryKeys": [
+        "characters.rabbit",
+        "characters.cat",
+        "characters.dog"
+      ],
+      "assetBoundary": "不能添加英文或中文答案翻译到音频题证据区。",
+      "title": "英语听一听",
+      "world": "language",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/language.ts",
+        "line": 19
+      },
+      "metrics": {
+        "tokenUsages": 27,
+        "textRasterTokenUsages": 0,
+        "diagramTokenUsages": 18,
+        "concreteTokenUsages": 9,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 0,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "E07",
+      "classes": [
+        "精确图示"
+      ],
+      "priority": "P1",
+      "current": "点数/上下/三条长度图正确，但同尺寸小卡让位置与长短差异弱。",
+      "recommendation": "数量、上下、长度每一选项都保留空间尺度，标签不遮图。",
+      "reusableGalleryKeys": [],
+      "assetBoundary": "无需艺术插画，需让比较证据可见。",
+      "title": "英语里的数量位置",
+      "world": "language",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/language.ts",
+        "line": 24
+      },
+      "metrics": {
+        "tokenUsages": 27,
+        "textRasterTokenUsages": 0,
+        "diagramTokenUsages": 27,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 0,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "E08",
+      "classes": [
+        "亲子材料",
+        "复用实物"
+      ],
+      "priority": "P2",
+      "current": "开放口头表达合理；大段步骤和观察记录抢同一视觉层。",
+      "recommendation": "准备/做一做/家长记录分开，玩具图只作准备。",
+      "reusableGalleryKeys": [
+        "items.toyCar",
+        "items.block"
+      ],
+      "assetBoundary": "不提供预设理由图去替孩子回答。",
+      "title": "把自己的想法说出来",
+      "world": "language",
+      "rounds": 3,
+      "kinds": [
+        "parentObservation"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/language.ts",
+        "line": 27
+      },
+      "metrics": {
+        "tokenUsages": 0,
+        "textRasterTokenUsages": 0,
+        "diagramTokenUsages": 0,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 0,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "P01",
+      "classes": [
+        "复用实物",
+        "缺少事件"
+      ],
+      "priority": "P1",
+      "current": "7种物品已有PNG映射，但12次token仍textOnly=true；雨伞/毛巾及用途动作无图。",
+      "recommendation": "先修正呈现标记让已有物品显示；为用途提供准确动作卡或明确语音文字。",
+      "reusableGalleryKeys": [
+        "items.cup",
+        "items.pencil",
+        "items.sunHat",
+        "items.lunchBox",
+        "items.block",
+        "items.book",
+        "items.ruler"
+      ],
+      "assetBoundary": "需要毛巾、雨伞及喝水/画线/擦干/挡雨/遮阳/装饭/拼搭/阅读/测量；不能同一物品图复制左右使其退化成外观配对。",
+      "title": "用品放对地方",
+      "world": "life",
+      "rounds": 9,
+      "kinds": [
+        "matching",
+        "parentObservation"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/life.ts",
+        "line": 16
+      },
+      "metrics": {
+        "tokenUsages": 30,
+        "textRasterTokenUsages": 18,
+        "diagramTokenUsages": 0,
+        "concreteTokenUsages": 12,
+        "concreteHiddenByTextOnly": 12,
+        "evidenceUsages": 0,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "P02",
+      "classes": [
+        "精确图示",
+        "缺少事件"
+      ],
+      "priority": "P1",
+      "current": "植物示意粗；“先长出根”的phase1已有明显地上茎；蝴蝶和蛙阶段纯文字。",
+      "recommendation": "植物阶段单独校正根/芽/叶；动物变化需要四阶段事实一致插画，避免大小成为排序提示。",
+      "reusableGalleryKeys": [
+        "items.graphicLeaf",
+        "items.graphicFlower"
+      ],
+      "assetBoundary": "已有叶/花只是材料，无虫卵/蛹/蝌蚪资产；整张花园场景不能作生长阶段卡。",
+      "title": "变化观察册",
+      "world": "life",
+      "rounds": 9,
+      "kinds": [
+        "orderedPlacement",
+        "parentObservation"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/life.ts",
+        "line": 18
+      },
+      "metrics": {
+        "tokenUsages": 21,
+        "textRasterTokenUsages": 14,
+        "diagramTokenUsages": 7,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 0,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "P03",
+      "classes": [
+        "亲子材料",
+        "复用实物"
+      ],
+      "priority": "P2",
+      "current": "真实实验应由实物产生证据，但准备/预测/结果混在长步骤中。",
+      "recommendation": "材料图小型列举，预测→操作→观察分开，记录可收起。",
+      "reusableGalleryKeys": [
+        "items.block",
+        "items.box",
+        "items.cup",
+        "items.water"
+      ],
+      "assetBoundary": "未注册木块/金属勺/光源等不得用近似图冒充；不提前展示浮沉结果。",
+      "title": "一起做小实验",
+      "world": "life",
+      "rounds": 3,
+      "kinds": [
+        "parentObservation"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/life.ts",
+        "line": 20
+      },
+      "metrics": {
+        "tokenUsages": 0,
+        "textRasterTokenUsages": 0,
+        "diagramTokenUsages": 0,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 0,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "P04",
+      "classes": [
+        "亲子材料",
+        "复用实物"
+      ],
+      "priority": "P2",
+      "current": "触觉/路线/分歧处理都是现场开放活动。",
+      "recommendation": "按活动突出一项准备和一步操作，玩具路线允许自己摆。",
+      "reusableGalleryKeys": [
+        "items.block",
+        "items.toyCar",
+        "items.box"
+      ],
+      "assetBoundary": "旧预设路线图不能代替家长现场障碍配置。",
+      "title": "生活里的判断",
+      "world": "life",
+      "rounds": 3,
+      "kinds": [
+        "parentObservation"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/life.ts",
+        "line": 21
+      },
+      "metrics": {
+        "tokenUsages": 0,
+        "textRasterTokenUsages": 0,
+        "diagramTokenUsages": 0,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 0,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "P05",
+      "classes": [
+        "亲子材料"
+      ],
+      "priority": "P2",
+      "current": "节日/文化活动明确要家庭资料和照片，缺图不应靠通用春节画补齐。",
+      "recommendation": "界面清楚说明选家庭愿意分享的材料；步骤与观察记录分离。",
+      "reusableGalleryKeys": [],
+      "assetBoundary": "暂无可直接复用的对应节日图；不把单一文化场景当所有家庭标准。",
+      "title": "节日和生活发现",
+      "world": "life",
+      "rounds": 3,
+      "kinds": [
+        "parentObservation"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/life.ts",
+        "line": 22
+      },
+      "metrics": {
+        "tokenUsages": 0,
+        "textRasterTokenUsages": 0,
+        "diagramTokenUsages": 0,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 0,
+        "textRasterEvidenceUsages": 0
+      }
+    },
+    {
+      "id": "P06",
+      "classes": [
+        "亲子材料",
+        "复用实物"
+      ],
+      "priority": "P2",
+      "current": "精细动作/平衡/节拍活动适合现场，界面为密集文字。",
+      "recommendation": "材料列举和步骤编号，先示范再练习，家长记录折叠。",
+      "reusableGalleryKeys": [
+        "items.block",
+        "scenes.mirrorFoldPaper"
+      ],
+      "assetBoundary": "现有场景只作折纸准备，不代表剪纸或托盘运送的完整正确动作。",
+      "title": "小手和身体挑战",
+      "world": "life",
+      "rounds": 3,
+      "kinds": [
+        "parentObservation"
+      ],
+      "source": {
+        "file": "src/curriculum/exploration/life.ts",
+        "line": 23
+      },
+      "metrics": {
+        "tokenUsages": 0,
+        "textRasterTokenUsages": 0,
+        "diagramTokenUsages": 0,
+        "concreteTokenUsages": 0,
+        "concreteHiddenByTextOnly": 0,
+        "evidenceUsages": 0,
+        "textRasterEvidenceUsages": 0
+      }
+    }
+  ]
+}

@@ -24,6 +24,8 @@ import { playTone, speak, stopSpeech, playRequiredAudio } from "../speech";
 import { isAdvancedActivity } from "../domain/advanced-activity";
 import { AdvancedInteraction } from "../interactions/AdvancedInteraction";
 import { publicAsset } from "../publicAsset";
+import { ActivityTokenArt as TokenArt } from "../interactions/ActivityTokenArt";
+import { ActivityEvidence } from "../interactions/ActivityEvidence";
 
 type Props = {
   game: ActivitySet;
@@ -62,7 +64,7 @@ export function ActivitySetGame(props: Props) {
       <header className="activity-game-heading">
         <div>
           <p className="eyebrow">
-            {props.game.interactionLabel} · 第 {index + 1} /{" "}
+            {activity.stage ? ["", "先试一试", "多想一步", "组合挑战"][activity.stage] : props.game.interactionLabel} · 第 {index + 1} /{" "}
             {props.game.rounds.length} 题
           </p>
           <h1>{props.game.title}</h1>
@@ -459,7 +461,7 @@ function ActivityRound({
       <button
         key={token.id}
         type="button"
-        className={`activity-token ${selected ? "is-selected" : ""} ${used ? "is-used" : ""}`}
+        className={`activity-token ${token.image.style === "illustration" ? "has-illustration" : ""} ${token.textOnly ? "has-text" : ""} ${selected ? "is-selected" : ""} ${used ? "is-used" : ""}`}
         aria-pressed={selected}
         aria-label={token.label}
         data-token-id={token.id}
@@ -469,8 +471,7 @@ function ActivityRound({
           if (multi || event.detail === 0) chooseToken(token);
         }}
       >
-        <TokenArt token={token} />
-        <span className="token-label">{token.label}</span>
+        <TokenArt token={token} label />
         {selected && (
           <span className="token-check">
             <Check size={13} />
@@ -490,13 +491,15 @@ function ActivityRound({
       data-testid="activity-round"
       data-activity-id={activity.id}
       data-phase={state.phase}
+      data-kind={activity.kind}
+      data-illustrated={activity.tokens.some(t => t.image.style === "illustration") || undefined}
     >
       <div className="activity-question">
         <h2>{activity.prompt}</h2>
         <p>{activity.instruction}</p>
       </div>
-      {activity.stage && <p className="activity-path-note">{["","先试一试","多想一步","组合挑战"][activity.stage]} · {activity.prerequisites}</p>}
-      {activity.illustration && (!isMemory || state.phase==="observe") && <img className="activity-illustration" src={publicAsset(activity.illustration.src)} alt={activity.illustration.alt}/>}
+
+      <ActivityEvidence activity={activity} phase={state.phase} />
       {activity.clues.length > 0 && (
         <ol className="activity-clues">
           {activity.clues.map((clue, index) => (
@@ -587,7 +590,7 @@ function ActivityRound({
       {showResponses && (
         <>
           {isAdvancedActivity(activity) ? <AdvancedInteraction activity={activity} response={state.response} disabled={!canEdit} onChange={response=>dispatch({type:"response",response})}/> : activity.kind === "multiSelect" ? (
-            <div className="activity-choice-grid" aria-label="可多选的图卡">
+            <div className={`activity-choice-grid ${activity.presentation?.compactSymbols ? 'is-symbol-grid' : ''} ${activity.tokens.some(t => (t.image.width ?? 1) / (t.image.height ?? 1) > 1.4) ? "has-wide-options" : ""}`} style={{ '--symbol-columns': Math.min(5, Math.ceil(Math.sqrt(activity.tokens.length))), '--mobile-symbol-columns': Math.min(4, Math.ceil(Math.sqrt(activity.tokens.length))) } as CSSProperties} aria-label="可多选的图卡">
               {activity.tokens.map((t) => tokenButton(t, true))}
             </div>
           ) : (
@@ -599,7 +602,7 @@ function ActivityRound({
                 aria-label={
                   activity.kind === "gridPlacement"
                     ? "图形盘"
-                    : "从左到右的队伍"
+                    : "按编号排列的队伍"
                 }
                 style={
                   {
@@ -649,7 +652,7 @@ function ActivityRound({
           {currentHint}
         </p>
       )}
-      <div
+      {state.result && <div
         className={`activity-feedback ${state.result?.status === "correct" ? "is-correct" : ""}`}
         role="status"
         aria-live="polite"
@@ -662,7 +665,7 @@ function ActivityRound({
         ) : (
           <span>{activity.difficultyNote}</span>
         )}
-      </div>
+      </div>}
       <div className="activity-actions">
         {state.phase === "complete" ? (
           <>
@@ -765,18 +768,5 @@ function ActivityRound({
         </div>
       )}
     </div>
-  );
-}
-
-function TokenArt({ token }: { token: ActivityToken | undefined }) {
-  return token ? (
-    <img
-      className="activity-token-image"
-      src={publicAsset(token.image.src)}
-      alt={token.image.alt}
-      draggable={false}
-    />
-  ) : (
-    <span className="slot-question">?</span>
   );
 }

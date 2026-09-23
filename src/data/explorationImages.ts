@@ -55,6 +55,6 @@ export function registerExplorationImage(drawing: Drawing, alt: string): Gallery
     if (explorationDrawings[id] && JSON.stringify(explorationDrawings[id]) !== json)
         throw Error(`Image hash collision: ${id}`);
     explorationDrawings[id] = drawing;
-    explorationImages[id] = { src: `/images/items/exploration/${id}.png`, alt };
+    explorationImages[id] = { src: `/images/items/exploration/${id}.png`, alt, width: drawing.width, height: drawing.height };
     return { ...explorationImages[id] };
 }

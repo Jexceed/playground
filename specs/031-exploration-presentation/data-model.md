@@ -1,0 +1,7 @@
+# Data model
+保留Activity及response/评分/进度身份；新增可选presentation元数据，包括证据布局类型、故事图卡与准备材料配图。
+ActivityToken.textOnly必须在替换为实物图时同步false；所有渲染器共用同一Art组件，不再重复标签。
+情境数量图的未知量显示问号，不能读answerId来渲染对象数；显式提供已知证据数据。记忆相关证据只在observe阶段显示，不能通过放大层绕过遮挡。
+GalleryImage增加可选presentation信息用于图片原始长宽比与caption呈现，所有src仍为本地注册资源。
+
+材料使用materialCards逐项绑定原始label和可选图片，避免一组泛化图片与材料清单重复或材质冲突。高密度符号搜索使用compactSymbols布局元数据，不缩小复杂图示。

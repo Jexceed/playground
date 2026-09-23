@@ -137,3 +137,12 @@ declared 14 MB engineering budget.
 ## Exploration media
 
 Deterministic diagram PNGs and source SVGs live in public/images/items/exploration/. Runtime references register through imageGallery.exploration; scripts/generate-exploration-media.mjs rebuilds them and removes only its own obsolete named outputs. Coordinates are canonicalized before hashing to prevent WebKit/V8 last-bit differences. Non-language WAV stimuli and their generator parameters live in public/audio/stimuli/. They are synthesized tones, not recordings of real instruments. Chinese voice remains Xiaoxiao; English cues use en-US-JennyNeural and per-entry locale/voice metadata.
+
+
+## Exploration illustration atlases and readable diagrams (031)
+
+- Runtime atlases live in `public/images/items/exploration-art/`, with original generated PNGs in its `source/` directory. Eleven square atlases provide 44 named frames; 42 frames are currently referenced by 37 activities. Two unused planting-preparation frames remain part of their shared atlas.
+- `src/data/explorationArt.ts` declares exact 2x2 frame coordinates; `imageGallery.items` registers every frame. `GalleryImage.frame` is displayed by `ActivityImage` through a bounded viewport; it is not a runtime crop/download service. Text and captions stay in accessible HTML.
+- Source prompts, the one germination-layout correction, hashes and usage are in `specs/031-exploration-presentation/image-prompts.json` and `asset-manifest.json`. Generation used the built-in imagegen tool. Runtime paths in that manifest are the delivery paths.
+- Generated diagrams retain their original SVG source dimensions and stable drawing IDs. `generate:exploration-media` renders used visual diagrams at 2x pixels; `GalleryImage.width/height` preserve intended layout dimensions. Numeric/word-only cards use HTML and do not require upscale for display.
+- Illustrations must match roles, events and material properties. A cardboard box cannot represent a plastic container in a floating experiment, and a plastic toy brick cannot stand in for a wooden block. Unknown mathematical quantities remain unknown in the evidence data.

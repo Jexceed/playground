@@ -1,10 +1,11 @@
 import { useState, type CSSProperties } from "react";
 import type { ActivityResponse } from "../domain/activity";
 import { placedCells, type AdvancedActivity, type AdvancedResponse } from "../domain/advanced-activity";
-import { publicAsset } from "../publicAsset";
 import { speak, playRequiredAudio } from "../speech";
 import { MatchingInteraction } from "./MatchingInteraction";
 import { GraphInteraction } from "./GraphInteraction";
+import { ParentActivity } from "./ParentActivity";
+import { ActivityTokenArt } from "./ActivityTokenArt";
 export function AdvancedInteraction({ activity, response, disabled, onChange }: {
     activity: AdvancedActivity;
     response: ActivityResponse;
@@ -15,9 +16,9 @@ export function AdvancedInteraction({ activity, response, disabled, onChange }: 
     const [rotation, setRotation] = useState(0);
     const [layer, setLayer] = useState(0);
     const token = (id: string) => activity.tokens.find(t => t.id === id)!;
-    const tokenArt = (id: string) => <><img className="activity-token-image" src={publicAsset(token(id).image.src)} alt={token(id).image.alt}/><span>{token(id).label}</span></>;
+    const tokenArt = (id: string) => <ActivityTokenArt token={token(id)} label />;
     if (activity.kind === "singleChoice" && response.kind === "singleChoice")
-        return <div className="activity-choice-grid single-choice" style={{ "--choice-columns": Math.min(4, activity.tokens.length) } as CSSProperties} aria-label="选择一个答案">{activity.tokens.map(t => <button type="button" className={`activity-token ${response.tokenId === t.id ? 'is-selected' : ''}`} key={t.id} aria-pressed={response.tokenId === t.id} aria-label={t.label} disabled={disabled} onClick={() => { onChange({ kind: "singleChoice", tokenId: t.id }); if (t.soundSrc)
+        return <div className={`activity-choice-grid single-choice ${activity.tokens.some(t => (t.image.width ?? 1) / (t.image.height ?? 1) > 1.4) ? "has-wide-options" : ""}`} style={{ "--choice-columns": Math.min(4, activity.tokens.length) } as CSSProperties} aria-label="选择一个答案">{activity.tokens.map(t => <button type="button" className={`activity-token ${response.tokenId === t.id ? 'is-selected' : ''}`} key={t.id} aria-pressed={response.tokenId === t.id} aria-label={t.label} disabled={disabled} onClick={() => { onChange({ kind: "singleChoice", tokenId: t.id }); if (t.soundSrc)
             void playRequiredAudio({ src: t.soundSrc });
         else
             void speak(t.speechText ?? t.label); }}>{/^\d+$/.test(t.label) ? <span className="numeric-answer">{t.label}</span> : tokenArt(t.id)}</button>)}</div>;
@@ -38,6 +39,6 @@ export function AdvancedInteraction({ activity, response, disabled, onChange }: 
     </div>;
     }
     if (activity.kind === "parentObservation" && response.kind === "parentObservation")
-        return <div className="parent-activity"><p><strong>准备材料：</strong>{activity.materials.join('、')}</p><ol>{activity.steps.map(s => <li key={s}>{s}</li>)}</ol><h3>请家长记录这次的观察</h3><p className="muted">按实际表现选择，暂时做不到也可以留下记录。</p>{activity.observations.map(o => <fieldset key={o.id}><legend>{o.text}</legend>{([['independent', '自己做到了'], ['supported', '一起做到了'], ['notYet', '下次再试']] as const).map(([value, label]) => <label key={value}><input type="radio" name={`${activity.id}-${o.id}`} value={value} checked={response.observations[o.id] === value} disabled={disabled} onChange={() => onChange({ kind: 'parentObservation', observations: { ...response.observations, [o.id]: value } })}/>{label}</label>)}</fieldset>)}</div>;
+        return <ParentActivity activity={activity} response={response} disabled={disabled} onChange={onChange} />;
     return null;
 }

@@ -55,7 +55,7 @@ export function selection(family: FamilyId, index: number, prompt: string, token
     return a;
 }
 export function ordered(family: FamilyId, index: number, prompt: string, tokens: ActivityToken[], sequence: string[], reason: string, clues: string[] = [], illustration?: Drawing): Activity {
-    const a = { ...base(family, index, prompt, '先选图卡，再点位置，按从左到右的顺序摆好。', reason), kind: 'orderedPlacement' as const, tokens: rotate(tokens, index + 1), slotCount: sequence.length, tokenUse: 'once' as const, evaluation: { kind: 'sequence' as const, tokenIds: sequence }, clues, illustration: illustration ? image(illustration, prompt) : undefined };
+    const a = { ...base(family, index, prompt, '先选图卡，再按位置编号排好。也可以拖过去。', reason), kind: 'orderedPlacement' as const, tokens: rotate(tokens, index + 1), slotCount: sequence.length, tokenUse: 'once' as const, evaluation: { kind: 'sequence' as const, tokenIds: sequence }, clues, illustration: illustration ? image(illustration, prompt) : undefined };
     a.hints = [clues[0] ?? '先找可以确定的第一个位置。', reason];
     authoringSolutions[a.id] = { kind: 'orderedPlacement', slots: sequence.map(tokenId => ({ state: 'filled', tokenId })) };
     return a;

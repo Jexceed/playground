@@ -5,7 +5,7 @@ small enough to turn into a Spec Kit feature.
 
 ## P0
 
-- Finish the fresh native matching/bridge/route check for specs/030-visible-connections after the Mac is manually unlocked. The latest app is installed and desktop/narrow-browser checks pass; the locked window prevented real-app interaction acceptance.
+- Complete the final reopen check for specs/031-exploration-presentation after manual Mac unlock. Native illustrated drag, matching, bridges and parallel routes passed on the standard Applications app; the subsequent final spacing/material/2x-image build is installed. Feature 030 native acceptance is now covered by those successful flows.
 
 - Observe 6-, 7- and 8-year-old parent-child play and calibrate reading, interaction and reasoning load for the 597 newly authored activities. Technical QA is not age validation.
 - Finish the historical-release migration/backup/ambiguity handling and finer support-history/next-practice guidance still unchecked in specs/029-curriculum-benchmark/tasks.md. Current legacy content and facts are preserved; do not infer mastery from completion.

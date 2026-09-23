@@ -1,0 +1,249 @@
+{
+  "generator": "built-in imagegen",
+  "runtimeAtlases": 11,
+  "registeredFrames": 44,
+  "activeFrames": 42,
+  "illustratedActivities": 37,
+  "assets": [
+    {
+      "key": "catPlant",
+      "runtime": "public/images/items/exploration-art/cat-plant-story.png",
+      "source": "public/images/items/exploration-art/source/cat-plant-story-source.png",
+      "frameCount": 4,
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1783421,
+      "sha256": "31c8dd0836598ac8225c85cd0d15ef6110b86c2bcb81dc7cee2de60c77f77040",
+      "activeFrames": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "frameLabels": [
+        "小猫收到种子",
+        "小猫把种子种进土里",
+        "小猫按记录照顾小苗",
+        "小猫观察新叶片"
+      ]
+    },
+    {
+      "key": "bearTower",
+      "runtime": "public/images/items/exploration-art/bear-tower-story.png",
+      "source": "public/images/items/exploration-art/source/bear-tower-story-source.png",
+      "frameCount": 4,
+      "width": 1254,
+      "height": 1254,
+      "bytes": 2052829,
+      "sha256": "d29243f1f7e840560477db64b618132e235b5df0d8b498c3a9d5b2dab3ef2e66",
+      "activeFrames": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "frameLabels": [
+        "小熊准备木块",
+        "小熊搭起高塔",
+        "球碰倒了高塔",
+        "小熊换宽底座重搭"
+      ]
+    },
+    {
+      "key": "rain",
+      "runtime": "public/images/items/exploration-art/rain-story.png",
+      "source": "public/images/items/exploration-art/source/rain-story-source.png",
+      "frameCount": 4,
+      "width": 1254,
+      "height": 1254,
+      "bytes": 2878685,
+      "sha256": "0a05b022d15f8246199c5f71a63f525624616027411ab7c9623d37ed532c9a1e",
+      "activeFrames": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "frameLabels": [
+        "天上积起乌云",
+        "开始下雨",
+        "地面留下水洼",
+        "小朋友穿雨靴出门"
+      ]
+    },
+    {
+      "key": "plantGrowth",
+      "runtime": "public/images/items/exploration-art/plant-growth.png",
+      "source": "public/images/items/exploration-art/source/plant-growth-source.png",
+      "frameCount": 4,
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1923216,
+      "sha256": "5e72a6a0499fd749bb1fdfaf4b55c140f83f87f921fc161de15782f03df1dc0d",
+      "activeFrames": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "frameLabels": [
+        "种子在土里",
+        "先长出根",
+        "小芽出土",
+        "叶片展开"
+      ]
+    },
+    {
+      "key": "butterflyGrowth",
+      "runtime": "public/images/items/exploration-art/butterfly-growth.png",
+      "source": "public/images/items/exploration-art/source/butterfly-growth-source.png",
+      "frameCount": 4,
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1936853,
+      "sha256": "e711f92d48ad870838f97667bc3e5c3fe1de7d3cf24619dd61cccca53b19ae70",
+      "activeFrames": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "frameLabels": [
+        "毛毛虫吃叶子",
+        "形成蛹",
+        "蝴蝶出来",
+        "蝴蝶展开翅膀"
+      ]
+    },
+    {
+      "key": "frogGrowth",
+      "runtime": "public/images/items/exploration-art/frog-growth.png",
+      "source": "public/images/items/exploration-art/source/frog-growth-source.png",
+      "frameCount": 4,
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1763203,
+      "sha256": "ebd36f3331806290a408a7bfbcf6573e4f5682cf35225cc8bd5295e89f9fb286",
+      "activeFrames": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "frameLabels": [
+        "水里有卵",
+        "孵出蝌蚪",
+        "蝌蚪长出后腿",
+        "小青蛙尾巴变短"
+      ]
+    },
+    {
+      "key": "tools",
+      "runtime": "public/images/items/exploration-art/everyday-tools.png",
+      "source": "public/images/items/exploration-art/source/everyday-tools-source.png",
+      "frameCount": 4,
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1755902,
+      "sha256": "4ecba1b9c25d0c40dbdf25c001cf1bd981e9a4661aee4d31e94dc33fc4299565",
+      "activeFrames": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "frameLabels": [
+        "雨伞",
+        "毛巾",
+        "圆头剪刀",
+        "颜料和画笔"
+      ]
+    },
+    {
+      "key": "fruitSalad",
+      "runtime": "public/images/items/exploration-art/fruit-salad-steps.png",
+      "source": "public/images/items/exploration-art/source/fruit-salad-steps-source.png",
+      "frameCount": 4,
+      "width": 1254,
+      "height": 1254,
+      "bytes": 2314334,
+      "sha256": "f24b735c8f8ebb0ec52cca7effb4606fc9e963cd0dcf0e28f4820200b3b52db9",
+      "activeFrames": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "frameLabels": [
+        "洗净水果",
+        "把水果切块",
+        "把果块装碗",
+        "一起品尝"
+      ]
+    },
+    {
+      "key": "painting",
+      "runtime": "public/images/items/exploration-art/painting-steps.png",
+      "source": "public/images/items/exploration-art/source/painting-steps-source.png",
+      "frameCount": 4,
+      "width": 1254,
+      "height": 1254,
+      "bytes": 2018066,
+      "sha256": "df7e46e85304d50ae54c50f60d85efef5847613e1eacc4f2dd97a7f71ec6f0da",
+      "activeFrames": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "frameLabels": [
+        "准备画纸",
+        "画出轮廓",
+        "给画涂色",
+        "把画晾干"
+      ]
+    },
+    {
+      "key": "planting",
+      "runtime": "public/images/items/exploration-art/planting-steps.png",
+      "source": "public/images/items/exploration-art/source/planting-steps-source.png",
+      "frameCount": 4,
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1865423,
+      "sha256": "bcd406509310328efb60cd70b002ff230fa326f73ae2fe759adba629f0543eb9",
+      "activeFrames": [
+        2,
+        3
+      ],
+      "frameLabels": [
+        "取花盆",
+        "放土和种子",
+        "轻轻浇水",
+        "等待发芽"
+      ]
+    },
+    {
+      "key": "experimentMaterials",
+      "runtime": "public/images/items/exploration-art/experiment-materials.png",
+      "source": "public/images/items/exploration-art/source/experiment-materials-source.png",
+      "frameCount": 4,
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1282078,
+      "sha256": "83ee605a206e4a9abf4f6960e62c0aa9943707b8fe8d3d00db1e428dfdc0d606",
+      "activeFrames": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "frameLabels": [
+        "木块",
+        "塑料盒",
+        "金属勺",
+        "一盆浅水"
+      ]
+    }
+  ]
+}

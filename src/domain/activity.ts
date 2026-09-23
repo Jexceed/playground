@@ -2,7 +2,7 @@ import type { GalleryImage } from "../data/imageGallery";
 import type { AbilityLevel, GameConfig, WorldId } from "../types";
 import type { AdvancedActivity, AdvancedResponse } from "./advanced-activity";
 
-export type ActivityToken = { id: string; label: string; image: GalleryImage; soundSrc?: string; speechText?: string; textOnly?: boolean };
+export type ActivityToken = { id: string; label: string; image: GalleryImage; soundSrc?: string; speechText?: string; textOnly?: boolean; quantityPicture?: { image: GalleryImage; count: number } };
 export type TokenUse = "once" | "unlimited" | {kind:"counted"; limits:Record<string,number>};
 export type SlotValue =
   | { state: "unfilled" }
@@ -47,6 +47,17 @@ export type ActivityBase = {
   protocol: { kind: "practice" } | MemoryProtocol | {kind:"learnThenTransfer"; demonstration:string};
   sourceRefs: { sourceId: string; locator: string }[];
   illustration?: GalleryImage;
+  presentation?: {
+    compactSymbols?: boolean;
+    evidence?: { kind: "quantityStory"; parts: { label: string; count: number | null }[] }
+      | { kind: "shopping"; cost: number; paid: number }
+      | { kind: "overlapQueue"; left: number; right: number }
+      | { kind: "collection"; count: number; image: GalleryImage; caption: string }
+      | { kind: "storySequence"; cards: GalleryImage[] }
+      | { kind: "calendar" };
+    materialCards?: { label: string; image?: GalleryImage }[];
+    storyCards?: GalleryImage[];
+  };
   cluesFromIllustration?: boolean;
   stage?: 1 | 2 | 3;
   prerequisites?: string;

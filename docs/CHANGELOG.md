@@ -3,6 +3,17 @@
 All meaningful project changes should be recorded here. Keep entries factual and
 grouped by date.
 
+## 2026-09-23
+
+### Exploration presentation and illustrations
+
+- Gave 探索 a wider working area, grouped its activity list by topic, placed question navigation above the task, and moved parent guidance and growth records into expandable sections. Removed authoring difficulty notes from the default answer feedback and corrected navigation overlap while scrolling.
+- Added 11 locally registered illustration atlases, with 44 addressable frames (42 used across 37 activities). Story ordering, natural changes, painting, food preparation and household/science materials now use explicit images with source/prompt provenance.
+- Recovered hidden household pictures, removed duplicate text-card rendering, and added picture-based known/unknown bird quantities, cookies, shared queue membership, shopping and a readable practice calendar. Memory quantity cues show the actual characters and disappear during response.
+- Organized parent activities into materials, steps and observation records; material images match the named wood/plastic/metal materials rather than generic substitutes. Materials are shown once.
+- Corrected colored markers, flip-card colors, pyramid hierarchy and contiguous square cube nets; regenerated 639 used diagrams at 2x resolution and added enlarged evidence viewing.
+- Passed 52 regression tests and curriculum/voice audits. Verified desktop, 1024px and 375px browser flows; native Applications app completed illustrated dragging, matching, bridges and parallel routes. The final polish/assets bundle is installed; a last reopen check awaits manual Mac unlock. Full evidence: specs/031-exploration-presentation/verification/qa.md.
+
 ## 2026-09-22
 
 ### Visible connection interactions

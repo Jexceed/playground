@@ -20,7 +20,7 @@
 ## US3 · 本地一致性
 独立验收：本地语音对齐，构建审计无错，真实 app 代表流程，安装完成。
 - [x] T007 [US3] 导出、生成和审计 public/audio/，将测试/build/课程审计结果保存至 specs/030-visible-connections/verification/。
-- [ ] T008 [US3] 桌面/375px和 pnpm mac:install 已完成；Mac锁屏，等待解锁完成真实 app 操作后补全 specs/030-visible-connections/verification/qa.md 和截图。
+- [x] T008 [US3] 桌面/375px和 pnpm mac:install 已完成；2026-09-23已在Applications应用完成配对、连桥和含平行边的路线，证据见031规格；补全 specs/030-visible-connections/verification/qa.md 和截图。
 
 ## Polish
 - [x] T009 更新 docs/CHANGELOG.md、docs/TODO.md 和本 tasks.md，在 local dev 保存检查点。

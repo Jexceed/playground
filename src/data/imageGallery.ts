@@ -1,7 +1,12 @@
 import { explorationImages } from "./explorationImages";
+import { explorationArtImages } from "./explorationArt";
 export type GalleryImage = {
   src: string;
   alt: string;
+  frame?: { columns: number; rows: number; index: number };
+  style?: "illustration";
+  width?: number;
+  height?: number;
 };
 
 export const imageGallery = {
@@ -151,6 +156,7 @@ export const imageGallery = {
     },
   },
   items: {
+    ...explorationArtImages,
     thinkingRedCircle: { src: "/images/items/thinking-symbols/red-circle.png", alt: "红色圆形" },
     thinkingRedSquare: { src: "/images/items/thinking-symbols/red-square.png", alt: "红色方形" },
     thinkingRedTriangle: { src: "/images/items/thinking-symbols/red-triangle.png", alt: "红色三角形" },

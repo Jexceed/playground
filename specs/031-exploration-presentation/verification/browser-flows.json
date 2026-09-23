@@ -1,0 +1,144 @@
+[
+  {
+    "case": "illustrated four-event order",
+    "success": true
+  },
+  {
+    "case": "household pictures visible",
+    "pictures": [
+      {
+        "loaded": true,
+        "src": "/images/items/cup.png"
+      },
+      {
+        "loaded": true,
+        "src": "/images/items/pencil.png"
+      }
+    ]
+  },
+  {
+    "case": "quantity story submit",
+    "success": true
+  },
+  {
+    "case": "inverse quantity evidence",
+    "text": "原来\n?\n想一想\n→\n飞来了\n3 只\n→\n现在\n10 只"
+  },
+  {
+    "case": "cube net inline size",
+    "size": {
+      "height": 330,
+      "loaded": true,
+      "width": 500
+    }
+  },
+  {
+    "case": "image enlargement",
+    "size": {
+      "height": 558,
+      "width": 950
+    }
+  },
+  {
+    "case": "memory picture cue",
+    "pictures": 2
+  },
+  {
+    "case": "memory cue hidden during answer",
+    "phase": "respond",
+    "cuePictures": 0
+  },
+  {
+    "case": "375px illustration layout",
+    "geometry": {
+      "broken": 0,
+      "frames": [
+        {
+          "height": 144,
+          "width": 144
+        },
+        {
+          "height": 144,
+          "width": 144
+        },
+        {
+          "height": 144,
+          "width": 144
+        },
+        {
+          "height": 144,
+          "width": 144
+        }
+      ],
+      "scrollWidth": 375,
+      "width": 375
+    }
+  },
+  {
+    "case": "375px illustrated ordering",
+    "success": true
+  },
+  {
+    "case": "375px parent activity",
+    "geometry": {
+      "broken": 0,
+      "scrollWidth": 375,
+      "width": 375
+    },
+    "materials": "木块\n塑料盒\n金属勺\n一盆浅水\n毛巾"
+  },
+  {
+    "case": "parent observation save in isolated browser QA",
+    "success": true
+  },
+  {
+    "case": "375px nature illustrations",
+    "geometry": {
+      "broken": 0,
+      "frames": [
+        {
+          "h": 144,
+          "w": 144
+        },
+        {
+          "h": 144,
+          "w": 144
+        },
+        {
+          "h": 144,
+          "w": 144
+        },
+        {
+          "h": 144,
+          "w": 144
+        }
+      ],
+      "scrollWidth": 375,
+      "width": 375
+    }
+  },
+  {
+    "case": "enlightenment preserved",
+    "summary": "启蒙\n看图发现，轻松起步\n40 组 · 489 题"
+  },
+  {
+    "case": "1024px exploration layout",
+    "geometry": {
+      "navigationPosition": "static",
+      "scrollWidth": 1024,
+      "stageWidth": 750,
+      "supportGap": 16,
+      "width": 1024
+    }
+  },
+  {
+    "case": "375px dense attention array",
+    "geometry": {
+      "cards": 21,
+      "columns": "74.75px 74.75px 74.75px 74.75px",
+      "gridHeight": 528,
+      "scrollWidth": 375,
+      "width": 375
+    }
+  }
+]

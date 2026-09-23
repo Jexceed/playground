@@ -4,6 +4,7 @@ import { curriculumSections, getCurriculumSection, worlds, type CurriculumSectio
 import { ProgressiveSetGame } from "./games/ProgressiveSetGame";
 import { clearActivityProgress, mergeActivityProgress, readActivityProgress, readCatalogLocation, saveCatalogLocation } from "./services/activity-progress";
 import { readCurriculumNavigation, rememberCurriculumLocation, resolveSectionPlayLocation, saveCurriculumNavigation } from "./services/curriculum-navigation";
+import { groupExplorationGames } from "./curriculum/exploration/navigation";
 import type { CatalogGame } from "./domain/activity";
 import { publicAsset } from "./publicAsset";
 import { addCompletion, addRoundCompletion, readLastPlayLocation, readProgress, saveLastPlayLocation, saveProgress } from "./storage";
@@ -154,6 +155,55 @@ export function App() {
     revealActiveQuestion();
   }
 
+  const supportPanel = (
+<aside className="side-panel">
+          {activeSectionId === "enlightenment" && <RoundNavigator
+            completedRoundIds={completedRoundSet}
+            currentIndex={requestedRoundIndex}
+            rounds={selectedGame.rounds}
+            onJump={jumpToRound}
+          />}
+
+          <details className="parent-support-disclosure" open={activeSectionId === "enlightenment"}><summary>给家长 · 陪玩提示</summary>
+          <section className="prompt-panel">
+            <p className="eyebrow">亲子提示卡</p>
+            <p>{selectedGame.kind === "activitySet" ? selectedGame.rounds[requestedRoundIndex]?.parentPrompt : selectedGame.parentPrompt}</p>
+            {selectedGame.kind === "activitySet" && <p className="activity-parent-note">先让孩子自己试，再请他说说线索和理由。提示、重看和尝试会留下记录。</p>}
+            {selectedActivity && <p className="activity-parent-focus">这题练习：{selectedActivity.difficultyNote}{selectedActivity.prerequisites ? `。${selectedActivity.prerequisites}` : ""}</p>}
+            {activityEvidence && <div className="activity-evidence" aria-label="本题累计记录">
+              <strong>{activityEvidence.observedAt ? "已记录亲子观察" : activityEvidence.correctAttempts > 0 ? "这题做过了" : "正在尝试这道题"}</strong>
+              {activityEvidence.observations ? <span>自主 {Object.values(activityEvidence.observations).filter(v=>v==='independent').length} 项 · 一起做到 {Object.values(activityEvidence.observations).filter(v=>v==='supported').length} 项 · 下次再试 {Object.values(activityEvidence.observations).filter(v=>v==='notYet').length} 项</span> : <span>累计尝试 {activityEvidence.attempts} 次</span>}
+              <span>提示 {activityEvidence.hints} 次 · 重看或重听 {activityEvidence.reveals} 次</span>
+            </div>}
+          </section>
+
+          </details>
+          <details className="progress-support-disclosure" open={activeSectionId === "enlightenment"}><summary>{activeSection.name} · 成长记录</summary>
+          <section className="progress-panel">
+            <div className="panel-title">
+              <p className="eyebrow">{activeSection.name}成长记录</p>
+              <button className="icon-button small" type="button" onClick={resetProgress} aria-label={`清空${activeSection.name}记录`}>
+                <RotateCcw size={16} />
+              </button>
+            </div>
+            <p className="section-progress-count">已完成 {progress.completedRoundIds.filter(id => games.some(game => game.rounds.some(round => round.id === id))).length} / {questionStats.total} 题</p>
+            {progress.abilityTags.length > 0 ? (
+              <div className="tag-list">
+                {visibleProgressTags.map((tag) => (
+                  <span key={tag}>{tag}</span>
+                ))}
+                {hiddenProgressTagCount > 0 && (
+                  <span className="tag-overflow">还有 {hiddenProgressTagCount} 个</span>
+                )}
+              </div>
+            ) : (
+              <p className="muted">完成一个小任务后，这里会留下能力标签。</p>
+            )}
+          </section>
+          </details>
+        </aside>
+  );
+
   if (showSplash) {
     return <LaunchSplash onEnter={() => setShowSplash(false)} />;
   }
@@ -224,8 +274,10 @@ export function App() {
             </label>
             <div className="game-picker">
               {visibleGames.length > 0 ? (
-                visibleGames.map((game) => (
-                  <button
+                (activeSectionId === "exploration" ? groupExplorationGames(visibleGames) : [{ title: "", games: visibleGames }]).map(unit => <div className="game-unit" key={unit.title}>
+                  {unit.title && <h3>{unit.title}</h3>}
+                  {unit.games.map(game => (
+<button
                     className={`game-chip ${selectedGameId === game.id ? "active" : ""}`}
                     data-testid={`game-${game.id}`}
                     key={game.id}
@@ -236,7 +288,8 @@ export function App() {
                     <span>{game.title}</span>
                     <small>{game.kind === "activitySet" ? "动手 · " : ""}{game.rounds.length} 题</small>
                   </button>
-                ))
+                  ))}
+                </div>)
               ) : (
                 <span className="empty-chip">这个世界的关卡正在制作</span>
               )}
@@ -249,6 +302,12 @@ export function App() {
             <div><strong>{activeSection.name}</strong><span>{activeSection.summary}</span></div>
             <small>{games.length} 组 · {questionStats.total} 题</small>
           </header>
+          {activeSectionId === "exploration" && <RoundNavigator
+            completedRoundIds={completedRoundSet}
+            currentIndex={requestedRoundIndex}
+            rounds={selectedGame.rounds}
+            onJump={jumpToRound}
+          />}
           <article className="game-stage" tabIndex={-1} aria-label={selectedGame.title}>
             {selectedGame.kind === "activitySet" ? <Suspense fallback={<p className="muted">正在准备图卡…</p>}><ActivitySetGame
               key={selectedGame.id}
@@ -269,49 +328,10 @@ export function App() {
               onRoundComplete={completeRound}
             />}
           </article>
+          {activeSectionId === "exploration" && supportPanel}
         </section>
 
-        <aside className="side-panel">
-          <RoundNavigator
-            completedRoundIds={completedRoundSet}
-            currentIndex={requestedRoundIndex}
-            rounds={selectedGame.rounds}
-            onJump={jumpToRound}
-          />
-
-          <section className="prompt-panel">
-            <p className="eyebrow">亲子提示卡</p>
-            <p>{selectedGame.kind === "activitySet" ? selectedGame.rounds[requestedRoundIndex]?.parentPrompt : selectedGame.parentPrompt}</p>
-            {selectedGame.kind === "activitySet" && <p className="activity-parent-note">先让孩子自己试，再请他说说线索和理由。提示、重看和尝试会留下记录。</p>}
-            {activityEvidence && <div className="activity-evidence" aria-label="本题累计记录">
-              <strong>{activityEvidence.observedAt ? "已记录亲子观察" : activityEvidence.correctAttempts > 0 ? "这题做过了" : "正在尝试这道题"}</strong>
-              {activityEvidence.observations ? <span>自主 {Object.values(activityEvidence.observations).filter(v=>v==='independent').length} 项 · 一起做到 {Object.values(activityEvidence.observations).filter(v=>v==='supported').length} 项 · 下次再试 {Object.values(activityEvidence.observations).filter(v=>v==='notYet').length} 项</span> : <span>累计尝试 {activityEvidence.attempts} 次</span>}
-              <span>提示 {activityEvidence.hints} 次 · 重看或重听 {activityEvidence.reveals} 次</span>
-            </div>}
-          </section>
-
-          <section className="progress-panel">
-            <div className="panel-title">
-              <p className="eyebrow">{activeSection.name}成长记录</p>
-              <button className="icon-button small" type="button" onClick={resetProgress} aria-label={`清空${activeSection.name}记录`}>
-                <RotateCcw size={16} />
-              </button>
-            </div>
-            <p className="section-progress-count">已完成 {progress.completedRoundIds.filter(id => games.some(game => game.rounds.some(round => round.id === id))).length} / {questionStats.total} 题</p>
-            {progress.abilityTags.length > 0 ? (
-              <div className="tag-list">
-                {visibleProgressTags.map((tag) => (
-                  <span key={tag}>{tag}</span>
-                ))}
-                {hiddenProgressTagCount > 0 && (
-                  <span className="tag-overflow">还有 {hiddenProgressTagCount} 个</span>
-                )}
-              </div>
-            ) : (
-              <p className="muted">完成一个小任务后，这里会留下能力标签。</p>
-            )}
-          </section>
-        </aside>
+        {activeSectionId === "enlightenment" && supportPanel}
       </section>
     </main>
   );

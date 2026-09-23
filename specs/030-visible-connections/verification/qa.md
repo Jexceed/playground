@@ -22,3 +22,6 @@
 Fresh native UI acceptance is pending. CUA could not obtain the new native window, and its app inventory explicitly reported that the Mac was locked. A manual-unlock request is pending. Installation success and browser tests do not substitute for this real-app check. No attempt was made to bypass the lock or to interrupt the user's existing in-progress app window.
 
 No real touch-device or child-observation claim is made. Local dev only; no remote push.
+
+## Native follow-up completed — 2026-09-23
+The standard /Applications app completed two-pair matching, a correct double-bridge network and A→B→A→C→B using distinct straight/curved roads. Screenshots are retained under specs/031-exploration-presentation/verification/screenshots/native-*.png. The earlier locked-window acceptance item is closed; the final 031 polish bundle has its own last-reopen status.

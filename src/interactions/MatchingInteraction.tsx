@@ -1,9 +1,9 @@
 import { useEffect, useLayoutEffect, useRef, useState, type CSSProperties, type PointerEvent } from "react";
 import { X } from "lucide-react";
 import type { MatchingActivity } from "../domain/advanced-activity";
-import { publicAsset } from "../publicAsset";
 import { speak } from "../speech";
 import { connectPair, disconnectPair, type MatchingResponse } from "./connection-state";
+import { ActivityTokenArt } from "./ActivityTokenArt";
 
 type Point = { x: number; y: number };
 type Drag = { id: string; pointerId: number; start: Point; moved: boolean };
@@ -129,8 +129,7 @@ export function MatchingInteraction({ activity, response, disabled, onChange }: 
                 e.currentTarget.setPointerCapture(e.pointerId);
               }}
               onClick={e => { if (suppressClick.current && e.detail !== 0) { suppressClick.current = false; return; } clickCard(id); }}>
-              {!t.textOnly && <img src={publicAsset(t.image.src)} alt="" draggable={false} />}
-              <span className="matching-card-label">{t.label}</span>
+              <ActivityTokenArt token={t} label />
               <span className="matching-port" aria-hidden="true" />
             </button>
             {pair && !disabled && <button type="button" className="matching-unlink" aria-label={`断开${t.label}和${token(partner!).label}`} title="断开这条线" onClick={() => { cancel(); onChange(disconnectPair(response, id)); }}><X size={15} aria-hidden="true" /></button>}
