@@ -1,0 +1,63 @@
+{
+  "activities": 621,
+  "emittedVoiceUses": 7518,
+  "uniqueSpokenTexts": 1590,
+  "missing": [],
+  "listeningActivities": 57,
+  "englishListening": 18,
+  "nonLanguageListening": 9,
+  "explicitCueResources": [
+    {
+      "src": "/audio/stimuli/sequence-1.wav",
+      "exists": true
+    },
+    {
+      "src": "/audio/stimuli/sequence-2.wav",
+      "exists": true
+    },
+    {
+      "src": "/audio/stimuli/sequence-3.wav",
+      "exists": true
+    },
+    {
+      "src": "/audio/stimuli/sequence-4.wav",
+      "exists": true
+    },
+    {
+      "src": "/audio/stimuli/sequence-5.wav",
+      "exists": true
+    },
+    {
+      "src": "/audio/stimuli/sequence-6.wav",
+      "exists": true
+    },
+    {
+      "src": "/audio/stimuli/sequence-7.wav",
+      "exists": true
+    },
+    {
+      "src": "/audio/stimuli/sequence-8.wav",
+      "exists": true
+    },
+    {
+      "src": "/audio/stimuli/rhythm-parent.wav",
+      "exists": true
+    }
+  ],
+  "crossLocaleTextCollisions": [],
+  "manifestCount": 3741,
+  "manifestFailures": [],
+  "providers": [
+    "edge-tts Python package"
+  ],
+  "voices": [
+    "zh-CN-XiaoxiaoNeural",
+    "en-US-JennyNeural"
+  ],
+  "acousticHumanListening": "not-all-lines-reviewed",
+  "sourceAudioEquivalence": "not-established",
+  "notes": [
+    "locale lookup regression added; the current bank has no same-text cross-locale collision",
+    "listen/look phase wording corrected; parent instruction lines now have playback controls"
+  ]
+}

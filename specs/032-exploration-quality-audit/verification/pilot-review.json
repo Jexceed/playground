@@ -1,0 +1,22 @@
+{
+  "date": "2026-09-23",
+  "scope": "24 pilot activities, inspected full source branches in src/curriculum/pilot/activities.ts and existing behavioral regression suite",
+  "counts": {
+    "selection": 6,
+    "ordering": 6,
+    "grid": 6,
+    "memory": 6
+  },
+  "conclusion": "No new confirmed answer defect in this pass; this is not source-task equivalence or child calibration.",
+  "observations": [
+    "L01 pilot covers conjunction, union, exclusion and exactly-one attribute; clue sets agree with target IDs.",
+    "L03 pilot supplements the new bank with position, immediate-neighbor, partial-order and multiple-valid-order tasks. Do not report those as completely absent from exploration.",
+    "G03 pilot already includes row-color/column-shape completion, Latin constraints, repeated/blank cards. It does not implement row/column count totals or two-dimensional spoken drawing.",
+    "A02/A03 pilot includes 2x3 location, repetition, blank cells and reverse recall. It does not provide infer-rule then hide-result memory."
+  ],
+  "limits": [
+    "The independent 10,221-case math report concerns the 252 newly authored math/logic activities; do not include the 24 pilot items in that figure.",
+    "SourceRefs denote inspiration, not complete equivalence to the linked page.",
+    "No new child play or full acoustic listening was performed."
+  ]
+}

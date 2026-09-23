@@ -5,7 +5,8 @@ small enough to turn into a Spec Kit feature.
 
 ## P0
 
-- Complete the final reopen check for specs/031-exploration-presentation after manual Mac unlock. Native illustrated drag, matching, bridges and parallel routes passed on the standard Applications app; the subsequent final spacing/material/2x-image build is installed. Feature 030 native acceptance is now covered by those successful flows.
+- Complete the final reopen check for specs/032-exploration-quality-audit after manual Mac unlock. The latest quality fixes and prior presentation/assets work are installed at the standard Applications path. Earlier native drag/matching/bridge/route checks are historical evidence; they do not sign off the latest build.
+- Correct G15's folded-paper surface and hole-coordinate ambiguity before treating exploration as ready for full content acceptance (029 T117). Keep the incomplete-source verdict explicit; do not publish a full-coverage claim.
 
 - Observe 6-, 7- and 8-year-old parent-child play and calibrate reading, interaction and reasoning load for the 597 newly authored activities. Technical QA is not age validation.
 - Finish the historical-release migration/backup/ambiguity handling and finer support-history/next-practice guidance still unchecked in specs/029-curriculum-benchmark/tasks.md. Current legacy content and facts are preserved; do not infer mastery from completion.
@@ -40,6 +41,12 @@ small enough to turn into a Spec Kit feature.
   privacy label, screenshots, product page, and review notes.
 
 ## P1
+
+- Complete 029 T118–T126 using the detailed gaps in specs/032-exploration-quality-audit/family-coverage.json: effective inventory/shortest-route/two-marker constraints, editable pyramid steps, quantity/relative-position grids, and missing math/logic/graphic/memory/language/physical-task branches. Preserve valid existing basics and stable progress; do not replace a missing operation with a non-equivalent single-choice question.
+- Close the original-task mapping chain and remaining source reading/listening boundaries (T127). The confirmed eight missing branches and nine partial groups are a lower bound, not an exhaustive missing-task count.
+- Replace generic difficulty defaults with independently reviewed load descriptors (T128); retain observed child play as a separate gate.
+- Perform real acoustic review of all distinct local voice lines by locale, especially English and Chinese numbers/polyphonic words/long instructions (T129). Media integrity and playback completion are not pronunciation or prosody checks.
+- Add a comparison layout that keeps reference and choices usable on short screens, and reduce 375px navigation/brand height (T130). Current pages can be scrolled and have no checked horizontal overflow, but that is not a child UX acceptance result.
 
 - Run at least five observed parent-child Math Island sessions; require four
   families to enter a game, complete a question, and find voice replay without

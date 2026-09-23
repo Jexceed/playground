@@ -1,0 +1,65 @@
+{
+  "date": "2026-09-23",
+  "browser": "Codex in-app browser, http://127.0.0.1:5187/",
+  "checks": [
+    {
+      "case": "G20-8 visibly identical alternate order",
+      "result": "pass",
+      "observation": "Yellow, blue, green, red submitted and accepted; complete count increased."
+    },
+    {
+      "case": "G05 generic choice labels",
+      "result": "pass",
+      "observation": "DOM shows display-order 图A/图B/图C/图D; 105 activities covered by automated regression."
+    },
+    {
+      "case": "N08 seventh activity same whole",
+      "result": "pass",
+      "observation": "Stem renders same-proportion rectangle; exhaustive drawing bounds regression covers all 9 stems/options."
+    },
+    {
+      "case": "L07 seventh parent activity",
+      "result": "pass",
+      "observation": "No named target; parent turns away first; steps 1/2/3 have audio controls."
+    },
+    {
+      "case": "L07 step audio",
+      "result": "pass",
+      "observation": "DOM lastSpeechSource and lastLocalVoiceSource resolve to newly generated local Chinese instruction MP3."
+    },
+    {
+      "case": "E06 first required cue",
+      "result": "pass",
+      "observation": "Ready text says listen again; listening hides choices; local en-US Jenny rabbit MP3 starts; answers appear after ended."
+    },
+    {
+      "case": "375 x 812 responsive answer area",
+      "result": "pass-with-limitations",
+      "observation": "clientWidth=scrollWidth=375; all three visible answer images loaded, choices and submit reached by scroll. Navigation occupies much of initial screen."
+    },
+    {
+      "case": "N10 numeric input versus parity follow-up",
+      "result": "pass",
+      "observation": "Question asks only 23 minus one; parent disclosure explicitly reserves parity explanation for parent observation and states numeric-only check."
+    },
+    {
+      "case": "G14 quarter-turn preview versus placement",
+      "result": "pass-after-fix",
+      "before": "Rotation changed to 90 degrees but piece-preview DOM remained identical.",
+      "after": "Preview changes from top-left/top-right/bottom-left to top-left/top-right/bottom-right; actual placement at first cell uses exactly those cells."
+    }
+  ],
+  "remainingUx": [
+    "At 1280x720, some large diagram comparisons require scrolling between reference and options; needs a comparison-specific layout.",
+    "At 375px, branding/navigation consumes the first screen. It is usable with scrolling, but has not met a low-navigation-load child-play criterion."
+  ],
+  "native": {
+    "installed": "/Applications/小小思考屋.app",
+    "installResult": "pass",
+    "uiResult": "pending-locked-mac"
+  },
+  "notClaimed": [
+    "No full 621-screen replay this turn. All generation branches reviewed; representative workflows exercised.",
+    "Browser DOM audio dispatch and end events do not establish correct pronunciation or pleasant prosody."
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "date": "2026-09-22",
-  "status": "pilot-implemented-full-scope-incomplete",
+  "status": "first-authoring-complete-semantic-source-coverage-incomplete",
   "families": [
     {
       "id": "N01",
@@ -62,7 +62,9 @@
       "proposed_content_file": "src/curriculum/math/counting-cardinality.ts",
       "implemented_content_file": "src/curriculum/exploration/math.ts",
       "authoring_evidence": "authoring/N01.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "N02",
@@ -115,7 +117,9 @@
       "proposed_content_file": "src/curriculum/math/compare-transfer.ts",
       "implemented_content_file": "src/curriculum/exploration/math.ts",
       "authoring_evidence": "authoring/N02.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "N03",
@@ -173,7 +177,9 @@
       "proposed_content_file": "src/curriculum/math/number-conservation.ts",
       "implemented_content_file": "src/curriculum/exploration/math.ts",
       "authoring_evidence": "authoring/N03.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "N04",
@@ -222,7 +228,9 @@
       "proposed_content_file": "src/curriculum/math/number-partitions.ts",
       "implemented_content_file": "src/curriculum/exploration/math.ts",
       "authoring_evidence": "authoring/N04.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "N05",
@@ -284,7 +292,9 @@
       "proposed_content_file": "src/curriculum/math/make-break-ten.ts",
       "implemented_content_file": "src/curriculum/exploration/math.ts",
       "authoring_evidence": "authoring/N05.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "N06",
@@ -346,7 +356,9 @@
       "proposed_content_file": "src/curriculum/math/quantity-stories.ts",
       "implemented_content_file": "src/curriculum/exploration/math.ts",
       "authoring_evidence": "authoring/N06.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "N07",
@@ -408,7 +420,9 @@
       "proposed_content_file": "src/curriculum/math/group-share.ts",
       "implemented_content_file": "src/curriculum/exploration/math.ts",
       "authoring_evidence": "authoring/N07.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "N08",
@@ -473,7 +487,9 @@
       "proposed_content_file": "src/curriculum/math/area-fractions.ts",
       "implemented_content_file": "src/curriculum/exploration/math.ts",
       "authoring_evidence": "authoring/N08.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "N09",
@@ -539,7 +555,9 @@
       "proposed_content_file": "src/curriculum/math/ordinal-queue.ts",
       "implemented_content_file": "src/curriculum/exploration/math.ts",
       "authoring_evidence": "authoring/N09.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "N10",
@@ -597,7 +615,9 @@
       "proposed_content_file": "src/curriculum/math/parity-place-value.ts",
       "implemented_content_file": "src/curriculum/exploration/math.ts",
       "authoring_evidence": "authoring/N10.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "N11",
@@ -670,7 +690,9 @@
       "proposed_content_file": "src/curriculum/math/number-sequences.ts",
       "implemented_content_file": "src/curriculum/exploration/math.ts",
       "authoring_evidence": "authoring/N11.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "N12",
@@ -727,7 +749,9 @@
       "proposed_content_file": "src/curriculum/math/symbol-equations.ts",
       "implemented_content_file": "src/curriculum/exploration/math.ts",
       "authoring_evidence": "authoring/N12.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "N13",
@@ -786,7 +810,9 @@
       "proposed_content_file": "src/curriculum/math/money-shopping.ts",
       "implemented_content_file": "src/curriculum/exploration/math.ts",
       "authoring_evidence": "authoring/N13.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "N14",
@@ -843,7 +869,9 @@
       "proposed_content_file": "src/curriculum/math/time-elapsed.ts",
       "implemented_content_file": "src/curriculum/exploration/math.ts",
       "authoring_evidence": "authoring/N14.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "N15",
@@ -900,7 +928,9 @@
       "proposed_content_file": "src/curriculum/math/measurement-boundaries.ts",
       "implemented_content_file": "src/curriculum/exploration/math.ts",
       "authoring_evidence": "authoring/N15.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "N16",
@@ -947,7 +977,9 @@
       "proposed_content_file": "src/curriculum/math/calendar-cycles.ts",
       "implemented_content_file": "src/curriculum/exploration/math.ts",
       "authoring_evidence": "authoring/N16.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "L01",
@@ -1013,7 +1045,9 @@
       ],
       "implemented_content_file": "src/curriculum/exploration/logic.ts",
       "authoring_evidence": "authoring/L01.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "core-covered",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "L02",
@@ -1070,7 +1104,9 @@
       "proposed_content_file": "src/curriculum/logic/relations-analogies.ts",
       "implemented_content_file": "src/curriculum/exploration/logic.ts",
       "authoring_evidence": "authoring/L02.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "L03",
@@ -1152,7 +1188,9 @@
       ],
       "implemented_content_file": "src/curriculum/exploration/logic.ts",
       "authoring_evidence": "authoring/L03.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "L04",
@@ -1219,7 +1257,9 @@
       "proposed_content_file": "src/curriculum/logic/constraint-grid.ts",
       "implemented_content_file": "src/curriculum/exploration/logic.ts",
       "authoring_evidence": "authoring/L04.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "L05",
@@ -1273,7 +1313,9 @@
       "proposed_content_file": "src/curriculum/logic/route-constraints.ts",
       "implemented_content_file": "src/curriculum/exploration/logic.ts",
       "authoring_evidence": "authoring/L05.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "L06",
@@ -1332,7 +1374,9 @@
       "proposed_content_file": "src/curriculum/logic/planning-repair.ts",
       "implemented_content_file": "src/curriculum/exploration/logic.ts",
       "authoring_evidence": "authoring/L06.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "L07",
@@ -1390,7 +1434,9 @@
       "proposed_content_file": "src/curriculum/logic/evidence-reasoning.ts",
       "implemented_content_file": "src/curriculum/exploration/logic.ts",
       "authoring_evidence": "authoring/L07.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "L08",
@@ -1448,7 +1494,9 @@
       "proposed_content_file": "src/curriculum/logic/learn-rule-transfer.ts",
       "implemented_content_file": "src/curriculum/exploration/logic.ts",
       "authoring_evidence": "authoring/L08.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "L09",
@@ -1501,7 +1549,9 @@
       "proposed_content_file": "src/curriculum/logic/toggle-state.ts",
       "implemented_content_file": "src/curriculum/exploration/logic.ts",
       "authoring_evidence": "authoring/L09.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "L10",
@@ -1562,7 +1612,9 @@
       "proposed_content_file": "src/curriculum/logic/multi-agent-movement.ts",
       "implemented_content_file": "src/curriculum/exploration/logic.ts",
       "authoring_evidence": "authoring/L10.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "L11",
@@ -1617,7 +1669,9 @@
       "proposed_content_file": "src/curriculum/logic/board-strategy.ts",
       "implemented_content_file": "src/curriculum/exploration/logic.ts",
       "authoring_evidence": "authoring/L11.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "L12",
@@ -1668,7 +1722,9 @@
       "proposed_content_file": "src/curriculum/logic/bridge-networks.ts",
       "implemented_content_file": "src/curriculum/exploration/logic.ts",
       "authoring_evidence": "authoring/L12.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "G01",
@@ -1735,7 +1791,9 @@
       "proposed_content_file": "src/curriculum/graphic/visual-search-match.ts",
       "implemented_content_file": "src/curriculum/exploration/graphic.ts",
       "authoring_evidence": "authoring/G01.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "G02",
@@ -1790,7 +1848,9 @@
       "proposed_content_file": "src/curriculum/graphic/occlusion-texture.ts",
       "implemented_content_file": "src/curriculum/exploration/graphic.ts",
       "authoring_evidence": "authoring/G02.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "G03",
@@ -1871,7 +1931,9 @@
       ],
       "implemented_content_file": "src/curriculum/exploration/graphic.ts",
       "authoring_evidence": "authoring/G03.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "G04",
@@ -1937,7 +1999,9 @@
       "proposed_content_file": "src/curriculum/graphic/position-transform.ts",
       "implemented_content_file": "src/curriculum/exploration/graphic.ts",
       "authoring_evidence": "authoring/G04.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "G05",
@@ -2015,7 +2079,9 @@
       "proposed_content_file": "src/curriculum/graphic/rotation-reflection.ts",
       "implemented_content_file": "src/curriculum/exploration/graphic.ts",
       "authoring_evidence": "authoring/G05.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "G06",
@@ -2081,7 +2147,9 @@
       "proposed_content_file": "src/curriculum/graphic/shape-set-operations.ts",
       "implemented_content_file": "src/curriculum/exploration/graphic.ts",
       "authoring_evidence": "authoring/G06.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "G07",
@@ -2140,7 +2208,9 @@
       "proposed_content_file": "src/curriculum/graphic/recursive-composition.ts",
       "implemented_content_file": "src/curriculum/exploration/graphic.ts",
       "authoring_evidence": "authoring/G07.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "G08",
@@ -2199,7 +2269,9 @@
       "proposed_content_file": "src/curriculum/graphic/symbolic-color-rules.ts",
       "implemented_content_file": "src/curriculum/exploration/graphic.ts",
       "authoring_evidence": "authoring/G08.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "G09",
@@ -2284,7 +2356,9 @@
       "proposed_content_file": "src/curriculum/graphic/geometric-counts.ts",
       "implemented_content_file": "src/curriculum/exploration/graphic.ts",
       "authoring_evidence": "authoring/G09.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "G10",
@@ -2341,7 +2415,9 @@
       "proposed_content_file": "src/curriculum/graphic/symmetry-axes.ts",
       "implemented_content_file": "src/curriculum/exploration/graphic.ts",
       "authoring_evidence": "authoring/G10.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "G11",
@@ -2403,7 +2479,9 @@
       "proposed_content_file": "src/curriculum/graphic/topology-relations.ts",
       "implemented_content_file": "src/curriculum/exploration/graphic.ts",
       "authoring_evidence": "authoring/G11.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "G12",
@@ -2454,7 +2532,9 @@
       "proposed_content_file": "src/curriculum/graphic/marker-invariants.ts",
       "implemented_content_file": "src/curriculum/exploration/graphic.ts",
       "authoring_evidence": "authoring/G12.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "G13",
@@ -2511,7 +2591,9 @@
       "proposed_content_file": "src/curriculum/graphic/symbol-codes.ts",
       "implemented_content_file": "src/curriculum/exploration/graphic.ts",
       "authoring_evidence": "authoring/G13.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "core-covered",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "G14",
@@ -2585,7 +2667,9 @@
       "proposed_content_file": "src/curriculum/graphic/shape-assembly.ts",
       "implemented_content_file": "src/curriculum/exploration/graphic.ts",
       "authoring_evidence": "authoring/G14.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "G15",
@@ -2650,7 +2734,9 @@
       "proposed_content_file": "src/curriculum/graphic/fold-cut.ts",
       "implemented_content_file": "src/curriculum/exploration/graphic.ts",
       "authoring_evidence": "authoring/G15.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "G16",
@@ -2720,7 +2806,9 @@
       "proposed_content_file": "src/curriculum/graphic/solid-views-count.ts",
       "implemented_content_file": "src/curriculum/exploration/graphic.ts",
       "authoring_evidence": "authoring/G16.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "G17",
@@ -2791,7 +2879,9 @@
       "proposed_content_file": "src/curriculum/graphic/relative-perspective.ts",
       "implemented_content_file": "src/curriculum/exploration/graphic.ts",
       "authoring_evidence": "authoring/G17.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "G18",
@@ -2846,7 +2936,9 @@
       "proposed_content_file": "src/curriculum/graphic/cube-nets.ts",
       "implemented_content_file": "src/curriculum/exploration/graphic.ts",
       "authoring_evidence": "authoring/G18.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "G19",
@@ -2905,7 +2997,9 @@
       "proposed_content_file": "src/curriculum/graphic/grid-copy-reconstruction.ts",
       "implemented_content_file": "src/curriculum/exploration/graphic.ts",
       "authoring_evidence": "authoring/G19.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "G20",
@@ -2959,7 +3053,9 @@
       "proposed_content_file": "src/curriculum/graphic/layer-order-planning.ts",
       "implemented_content_file": "src/curriculum/exploration/graphic.ts",
       "authoring_evidence": "authoring/G20.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "A01",
@@ -3011,7 +3107,9 @@
       "proposed_content_file": "src/curriculum/memory/visual-set-memory.ts",
       "implemented_content_file": "src/curriculum/exploration/memory.ts",
       "authoring_evidence": "authoring/A01.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "A02",
@@ -3080,7 +3178,9 @@
       ],
       "implemented_content_file": "src/curriculum/exploration/memory.ts",
       "authoring_evidence": "authoring/A02.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "A03",
@@ -3142,7 +3242,9 @@
       ],
       "implemented_content_file": "src/curriculum/exploration/memory.ts",
       "authoring_evidence": "authoring/A03.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "core-covered",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "A04",
@@ -3215,7 +3317,9 @@
       "proposed_content_file": "src/curriculum/memory/auditory-instructions.ts",
       "implemented_content_file": "src/curriculum/exploration/memory.ts",
       "authoring_evidence": "authoring/A04.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "A05",
@@ -3284,7 +3388,9 @@
       "proposed_content_file": "src/curriculum/memory/story-recall.ts",
       "implemented_content_file": "src/curriculum/exploration/memory.ts",
       "authoring_evidence": "authoring/A05.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "A06",
@@ -3345,7 +3451,9 @@
       "proposed_content_file": "src/curriculum/memory/attention-search.ts",
       "implemented_content_file": "src/curriculum/exploration/memory.ts",
       "authoring_evidence": "authoring/A06.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "core-covered",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "A07",
@@ -3403,7 +3511,9 @@
       "proposed_content_file": "src/curriculum/memory/inhibition-switch.ts",
       "implemented_content_file": "src/curriculum/exploration/memory.ts",
       "authoring_evidence": "authoring/A07.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "A08",
@@ -3451,7 +3561,9 @@
       "proposed_content_file": "src/curriculum/memory/sound-rhythm.ts",
       "implemented_content_file": "src/curriculum/exploration/memory.ts",
       "authoring_evidence": "authoring/A08.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "A09",
@@ -3509,7 +3621,9 @@
       "proposed_content_file": "src/curriculum/memory/relational-quantity-memory.ts",
       "implemented_content_file": "src/curriculum/exploration/memory.ts",
       "authoring_evidence": "authoring/A09.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "E01",
@@ -3570,7 +3684,9 @@
       "proposed_content_file": "src/curriculum/language/vocabulary-relations.ts",
       "implemented_content_file": "src/curriculum/exploration/language.ts",
       "authoring_evidence": "authoring/E01.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "E02",
@@ -3618,7 +3734,9 @@
       "proposed_content_file": "src/curriculum/language/describe-relations.ts",
       "implemented_content_file": "src/curriculum/exploration/language.ts",
       "authoring_evidence": "authoring/E02.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "core-covered",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "E03",
@@ -3688,7 +3806,9 @@
       "proposed_content_file": "src/curriculum/language/story-sequence-expression.ts",
       "implemented_content_file": "src/curriculum/exploration/language.ts",
       "authoring_evidence": "authoring/E03.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "core-covered",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "E04",
@@ -3733,7 +3853,9 @@
       "proposed_content_file": "src/curriculum/language/creative-explanation.ts",
       "implemented_content_file": "src/curriculum/exploration/language.ts",
       "authoring_evidence": "authoring/E04.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "core-covered",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "E05",
@@ -3784,7 +3906,9 @@
       "proposed_content_file": "src/curriculum/language/character-phonics.ts",
       "implemented_content_file": "src/curriculum/exploration/language.ts",
       "authoring_evidence": "authoring/E05.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "E06",
@@ -3835,7 +3959,9 @@
       "proposed_content_file": "src/curriculum/language/english-listening.ts",
       "implemented_content_file": "src/curriculum/exploration/language.ts",
       "authoring_evidence": "authoring/E06.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "E07",
@@ -3890,7 +4016,9 @@
       "proposed_content_file": "src/curriculum/language/bilingual-concepts.ts",
       "implemented_content_file": "src/curriculum/exploration/language.ts",
       "authoring_evidence": "authoring/E07.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "E08",
@@ -3928,7 +4056,9 @@
       "proposed_content_file": "src/curriculum/language/conversation-self-expression.ts",
       "implemented_content_file": "src/curriculum/exploration/language.ts",
       "authoring_evidence": "authoring/E08.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "P01",
@@ -3990,7 +4120,9 @@
       "proposed_content_file": "src/curriculum/life/everyday-classification.ts",
       "implemented_content_file": "src/curriculum/exploration/life.ts",
       "authoring_evidence": "authoring/P01.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "P02",
@@ -4068,7 +4200,9 @@
       "proposed_content_file": "src/curriculum/life/nature-growth.ts",
       "implemented_content_file": "src/curriculum/exploration/life.ts",
       "authoring_evidence": "authoring/P02.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "P03",
@@ -4130,7 +4264,9 @@
       "proposed_content_file": "src/curriculum/life/science-experiments.ts",
       "implemented_content_file": "src/curriculum/exploration/life.ts",
       "authoring_evidence": "authoring/P03.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "core-covered",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "P04",
@@ -4188,7 +4324,9 @@
       "proposed_content_file": "src/curriculum/life/senses-social-rules.ts",
       "implemented_content_file": "src/curriculum/exploration/life.ts",
       "authoring_evidence": "authoring/P04.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "P05",
@@ -4234,7 +4372,9 @@
       "proposed_content_file": "src/curriculum/life/culture-world.ts",
       "implemented_content_file": "src/curriculum/exploration/life.ts",
       "authoring_evidence": "authoring/P05.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "P06",
@@ -4305,7 +4445,9 @@
       "proposed_content_file": "src/curriculum/life/fine-motor-action.ts",
       "implemented_content_file": "src/curriculum/exploration/life.ts",
       "authoring_evidence": "authoring/P06.md",
-      "child_play_calibration": "pending"
+      "child_play_calibration": "pending",
+      "semantic_review_status": "partial",
+      "semantic_review_evidence": "../032-exploration-quality-audit/family-coverage.json"
     },
     {
       "id": "R01",
@@ -4403,5 +4545,14 @@
       "acceptance": "有明确处理理由，不计作已经实现或适龄证明",
       "proposed_content_file": null
     }
-  ]
+  ],
+  "semantic_review": {
+    "date": "2026-09-23",
+    "report": "../032-exploration-quality-audit/report.md",
+    "counts": {
+      "partial": 63,
+      "core-covered": 8
+    },
+    "allSourceTasksCovered": false
+  }
 }

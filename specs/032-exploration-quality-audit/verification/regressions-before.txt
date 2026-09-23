@@ -1,0 +1,86 @@
+✖ generic choice labels describe display order, not the hidden authoring/answer index (0.695833ms)
+✖ occluded lower layers can swap when their final visible picture is identical (0.385125ms)
+✖ fraction comparisons subdivide the same whole instead of changing its outer proportions (0.48925ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 0
+ℹ fail 3
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 246.381834
+
+✖ failing tests:
+
+test at scripts/exploration-quality.test.mjs:12:1
+✖ generic choice labels describe display order, not the hidden authoring/answer index (0.695833ms)
+  AssertionError [ERR_ASSERTION]: explore-area-fractions-2
+
+  '图B' !== '图A'
+
+      at TestContext.<anonymous> (file:///Users/chiang/.codex/worktrees/curriculum-benchmark/playground/scripts/exploration-quality.test.mjs:17:12)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.start (node:internal/test_runner/test:1242:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: '图B',
+    expected: '图A',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/exploration-quality.test.mjs:24:1
+✖ occluded lower layers can swap when their final visible picture is identical (0.385125ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+
+  + 'incorrect'
+  - 'correct'
+
+      at TestContext.<anonymous> (file:///Users/chiang/.codex/worktrees/curriculum-benchmark/playground/scripts/exploration-quality.test.mjs:26:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'incorrect',
+    expected: 'correct',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/exploration-quality.test.mjs:36:1
+✖ fraction comparisons subdivide the same whole instead of changing its outer proportions (0.48925ms)
+  AssertionError [ERR_ASSERTION]: explore-area-fractions-1
+  + actual - expected
+
+    [
+      20,
+      20,
+      190,
+  +   190
+  -   105
+    ]
+
+      at TestContext.<anonymous> (file:///Users/chiang/.codex/worktrees/curriculum-benchmark/playground/scripts/exploration-quality.test.mjs:39:49)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: [ 20, 20, 190, 190 ],
+    expected: [ 20, 20, 190, 105 ],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }

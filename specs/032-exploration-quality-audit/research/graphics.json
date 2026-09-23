@@ -1,0 +1,419 @@
+{
+  "scope": "G01-G20,180 activities",
+  "baseline": "d1a3497",
+  "method": [
+    "全部graphic.ts及helper、绘图、相关评分/交互源码只读审阅",
+    "实际重新打开S074物理p51,p75,p87,p94整页图；其他原来源仅查索引/先前提取记录，不计为本轮逐页审阅",
+    "修复前图A标签枚举与G20等画面反例；修复后独立栅格+全排列判题检查"
+  ],
+  "limits": [
+    "没有操作浏览器或Mac应用，没有儿童试玩",
+    "未独立穷举所有180题全部候选/填格/搭建解；除专项G20外，不宣称逐题答案全部正确",
+    "core-covered只指核心任务机制，partial为实质子机制缺口；不是文件数或原题逐题覆盖率",
+    "定位基于修复前源码，主线程修改后行号可能变化"
+  ],
+  "families": [
+    {
+      "id": "G01",
+      "status": "partial",
+      "evidence": [
+        "9题均为3×3色块整图单选，旋转/镜像只改变参照图。",
+        "修复前源码定位 graphic.ts:67"
+      ],
+      "missing": [
+        "没有局部整体、直接标差、多目标证据搜索。"
+      ],
+      "issues": [
+        "GRAPHIC-001"
+      ]
+    },
+    {
+      "id": "G02",
+      "status": "partial",
+      "evidence": [
+        "3题遮挡轮廓，6题4×4纹理缺口中选2×2补片。",
+        "修复前源码定位 graphic.ts:68-72"
+      ],
+      "missing": [
+        "没有实际对齐补片、闭合缺口、方向/尺度共同操作。"
+      ],
+      "issues": [
+        "GRAPHIC-001"
+      ]
+    },
+    {
+      "id": "G03",
+      "status": "partial",
+      "evidence": [
+        "9题颜色按行、形状按列的3×3填格，空格逐级增多。",
+        "修复前源码定位 graphic.ts:73"
+      ],
+      "missing": [
+        "没有方向属性、规则归纳的序列；三个台阶主要增加空格，规则事先写明。"
+      ],
+      "issues": []
+    },
+    {
+      "id": "G04",
+      "status": "partial",
+      "evidence": [
+        "9题五格直线上的循环/反弹/双标记位置计算。",
+        "修复前源码定位 graphic.ts:74-79"
+      ],
+      "missing": [
+        "没有从序列发现规律、静止规则；双标记阶段所有候选的蓝标记都相同，不能验证是否理解蓝标记规则。"
+      ],
+      "issues": [
+        "GRAPHIC-001",
+        "GRAPHIC-003"
+      ]
+    },
+    {
+      "id": "G05",
+      "status": "partial",
+      "evidence": [
+        "旋转、左右镜像、等比例放大、横向拉伸及旋转后镜像均有题。",
+        "修复前源码定位 graphic.ts:80-83"
+      ],
+      "missing": [
+        "没有可操作变换验证、纵向拉伸、局部变换与独立属性。"
+      ],
+      "issues": [
+        "GRAPHIC-001"
+      ]
+    },
+    {
+      "id": "G06",
+      "status": "partial",
+      "evidence": [
+        "逐格并、交、异或、左右差均有明确给定规则。",
+        "修复前源码定位 graphic.ts:84"
+      ],
+      "missing": [
+        "没有透明学具叠放、从例子归纳未知运算，再迁移的活动。"
+      ],
+      "issues": [
+        "GRAPHIC-001"
+      ]
+    },
+    {
+      "id": "G07",
+      "status": "partial",
+      "evidence": [
+        "底层2/3/4个图案构成图形金字塔，给定并集或异或后选顶层。",
+        "修复前源码定位 graphic.ts:6-24,85"
+      ],
+      "missing": [
+        "中间层全是静态问号，不能填写或逐层验证；仍需记住中间结果，与矩阵target相悖。"
+      ],
+      "issues": [
+        "GRAPHIC-001",
+        "GRAPHIC-004"
+      ]
+    },
+    {
+      "id": "G08",
+      "status": "partial",
+      "evidence": [
+        "红0蓝1黄2，逐位置模3相加，长度2/3/4。",
+        "修复前源码定位 graphic.ts:86"
+      ],
+      "missing": [
+        "没有明确运算例图、黑白/未填的区分、内外圈分别运算、从样例推规则。S074物理p75有上述复杂机制，不能被模3练习计作全部覆盖。"
+      ],
+      "issues": [
+        "GRAPHIC-001"
+      ]
+    },
+    {
+      "id": "G09",
+      "status": "partial",
+      "evidence": [
+        "边/角/顶点、小格面、交点分割线段、连通分量、3×4格中所有长方形。",
+        "修复前源码定位 graphic.ts:87-110"
+      ],
+      "missing": [
+        "没有交点/切点计数、曲直/角分类、复合面积周长规律、可标记的不重不漏证据。最后一题突然要求60个长方形，缺少可操作分类支架。"
+      ],
+      "issues": []
+    },
+    {
+      "id": "G10",
+      "status": "partial",
+      "evidence": [
+        "9题多选竖/横/两条斜轴；形状与色块整体对称判定。",
+        "修复前源码定位 graphic.ts:111"
+      ],
+      "missing": [
+        "没有折叠/镜面验证动作，不能直接标出不重合部位；来源对应页本轮未重看。"
+      ],
+      "issues": []
+    },
+    {
+      "id": "G11",
+      "status": "partial",
+      "evidence": [
+        "包含、相切、相交、分离以及连通判断。",
+        "修复前源码定位 graphic.ts:112-116"
+      ],
+      "missing": [
+        "缺开闭、曲直和证据点标注；相交用不透明填色，后圆遮住前圆一段边界，边界交叉不如透明轮廓明确。"
+      ],
+      "issues": [
+        "GRAPHIC-001"
+      ]
+    },
+    {
+      "id": "G12",
+      "status": "partial",
+      "evidence": [
+        "点中心在圆/方/三角的内部、边界、外部。",
+        "修复前源码定位 graphic.ts:117-130"
+      ],
+      "missing": [
+        "只覆盖最基础内外关系；S074物理p51的角/特殊区域/多图形功能标记与保持不变量未覆盖。"
+      ],
+      "issues": [
+        "GRAPHIC-001"
+      ]
+    },
+    {
+      "id": "G13",
+      "status": "core-covered",
+      "evidence": [
+        "3/4位正向、5位反向图形数字编码，重复符号沿用同一对应表，全部位置可填。",
+        "修复前源码定位 graphic.ts:131"
+      ],
+      "missing": [
+        "来源照片S028/S044/S050本轮未重新打开；该结论是核心机制覆盖，不是三张原题逐题等价。"
+      ],
+      "issues": []
+    },
+    {
+      "id": "G14",
+      "status": "partial",
+      "evidence": [
+        "2D方格部件覆盖，第二阶段L形旋转，第三阶段两层拼搭；评分按占格集合，可接受不同合法覆盖。",
+        "修复前源码定位 graphic.ts:132-145;AdvancedInteraction.tsx:32-38"
+      ],
+      "missing": [
+        "第三阶段每块都在单层，只有绕z轴旋转，实际是两张独立平面；无跨层部件/真正三维旋转/分割缺件。旋转工具只改角度数字，部件预览没有随之转动。"
+      ],
+      "issues": [
+        "GRAPHIC-005"
+      ]
+    },
+    {
+      "id": "G15",
+      "status": "partial",
+      "evidence": [
+        "3项亲子折纸观察，后6题一次/两次轴对称打孔。",
+        "修复前源码定位 graphic.ts:146-150"
+      ],
+      "missing": [
+        "后6题把整张4×4格标为折好后的位置，却未画折起的有效半区/四分之一区、折叠方向/过程。逆推只在一项开放亲子观察出现；没有逆向折剪预测题。"
+      ],
+      "issues": [
+        "GRAPHIC-001",
+        "GRAPHIC-006"
+      ]
+    },
+    {
+      "id": "G16",
+      "status": "partial",
+      "evidence": [
+        "实物分类亲子任务、按各摞高度求总数、从前侧上视图选择多个可能搭法。",
+        "修复前源码定位 graphic.ts:151-155;draw.ts:63-78"
+      ],
+      "missing": [
+        "隐藏块题同时给全高度表，消除了从遮挡推隐藏数；候选积木没有前/侧观察方向标记。S074物理p94的带标记面、带孔体、复合体视图远超当前高度场。"
+      ],
+      "issues": []
+    },
+    {
+      "id": "G17",
+      "status": "partial",
+      "evidence": [
+        "用中心圆与箭头代表人物，判球在其左/右/前/后。",
+        "修复前源码定位 graphic.ts:156"
+      ],
+      "missing": [
+        "没有观察者换位、多视角同一场景；第三阶段只把左右换成前后，未形成组合迁移；抽象圆也未承载人物朝向的具体线索。"
+      ],
+      "issues": []
+    },
+    {
+      "id": "G18",
+      "status": "partial",
+      "evidence": [
+        "三个合法展开图，求相对面与相邻面。",
+        "修复前源码定位 graphic.ts:157-162"
+      ],
+      "missing": [
+        "没有实物展开/折回操作、面图案方向判断、从多个立体观察交叉验证；S074物理p87大量题考折回后的面图案与方向，不能由相邻相对关系替代。"
+      ],
+      "issues": []
+    },
+    {
+      "id": "G19",
+      "status": "partial",
+      "evidence": [
+        "常显参照下的3×3/4×4蓝白格复制及左右镜像。",
+        "修复前源码定位 graphic.ts:163"
+      ],
+      "missing": [
+        "没有点阵线段临摹、绘线方向/相对关系重建；4×4只是移动3×3原色块，表现的结构范围有限。"
+      ],
+      "issues": []
+    },
+    {
+      "id": "G20",
+      "status": "partial",
+      "evidence": [
+        "2-4片不透明圆片按遮挡排顺序；当前评分已接受所有与画面一致的顺序。",
+        "修复前源码定位 graphic.ts:164-171"
+      ],
+      "missing": [
+        "没有透明叠层；排序结果只在槽位呈现，没有按孩子顺序重叠重画以实际验证。S070 p58/62本轮未重看。"
+      ],
+      "issues": [
+        "GRAPHIC-002"
+      ]
+    }
+  ],
+  "issues": [
+    {
+      "id": "GRAPHIC-001",
+      "severity": "P1",
+      "status": "fixed-by-parent-pending-full-qa",
+      "baseline": "d1a3497",
+      "families": [
+        "G01",
+        "G02",
+        "G04",
+        "G05",
+        "G06",
+        "G07",
+        "G08",
+        "G11",
+        "G12",
+        "G15"
+      ],
+      "count": 81,
+      "location": "src/curriculum/exploration/graphic.ts:29-36; helpers.ts:35-40; AdvancedInteraction.tsx:19-24",
+      "counterexample": "fig始终把answer放options[0]并标签为图A；choice只旋转顺序，不重标。因此按图A选81题全部正确，不需要读图。",
+      "verification": "编译当前探索模块后逐一统计正确token标签，修复前81题图A；未调用authoringSolutions来证明教学有效性。"
+    },
+    {
+      "id": "GRAPHIC-002",
+      "severity": "P1",
+      "status": "fixed-independent-regression-passed",
+      "baseline": "d1a3497",
+      "activityIds": [
+        "explore-layer-order-planning-8"
+      ],
+      "location": "src/curriculum/exploration/graphic.ts:165",
+      "counterexample": "蓝→黄→绿→红 与 黄→蓝→绿→红 画面相同，修复前第二种判incorrect。蓝黄交叠区完全被后放红绿覆盖，先后不可观察。",
+      "proof": "令四圆中心为(±a,±a)，蓝黄交集满足u+2a|x-y|≤r²，所以u≤r²；红绿中至少一圆的距离平方为u-2a|x+y|≤r²。蓝黄交集被红绿并集覆盖。",
+      "verification": "修复后独立0.5px栅格覆盖320×320全部区域，枚举G20九题全部100个排列，与evaluateActivity逐一比对：0个误收/误拒。第8题恰有2种合法排列。"
+    },
+    {
+      "id": "GRAPHIC-003",
+      "severity": "P2",
+      "status": "open",
+      "activityIds": [
+        "explore-position-transform-7",
+        "explore-position-transform-8",
+        "explore-position-transform-9"
+      ],
+      "location": "src/curriculum/exploration/graphic.ts:79",
+      "counterexample": "四个候选的蓝标记均用相同second位置。忽略蓝标记规则，只求红标记也能完成全部三题。",
+      "impact": "双标记独立移动的验收不成立。"
+    },
+    {
+      "id": "GRAPHIC-004",
+      "severity": "P2",
+      "status": "open",
+      "activityIds": [
+        "explore-recursive-composition-4",
+        "explore-recursive-composition-5",
+        "explore-recursive-composition-6",
+        "explore-recursive-composition-7",
+        "explore-recursive-composition-8",
+        "explore-recursive-composition-9"
+      ],
+      "location": "src/curriculum/exploration/graphic.ts:6-24,85",
+      "counterexample": "上层问号在Drawing中是静态text；activity.kind为singleChoice，只能选顶层结果，不能填中间层。",
+      "impact": "与029要求每层可验证、区分中间结果记忆负担不一致。"
+    },
+    {
+      "id": "GRAPHIC-005",
+      "severity": "P2",
+      "status": "open-static-evidence",
+      "activityIds": [
+        "explore-shape-assembly-4",
+        "explore-shape-assembly-5",
+        "explore-shape-assembly-6"
+      ],
+      "location": "src/interactions/AdvancedInteraction.tsx:32-38",
+      "counterexample": "点击转四分之一圈仅改变rotation；piece-preview仍读p.cells，不读rotation，实际放下才显示转后的占格。",
+      "impact": "预览不能帮助儿童预测落点，需实际UI复验。"
+    },
+    {
+      "id": "GRAPHIC-006",
+      "severity": "P2",
+      "status": "open-static-evidence",
+      "activityIds": [
+        "explore-fold-cut-4",
+        "explore-fold-cut-5",
+        "explore-fold-cut-6",
+        "explore-fold-cut-7",
+        "explore-fold-cut-8",
+        "explore-fold-cut-9"
+      ],
+      "location": "src/curriculum/exploration/graphic.ts:147-150",
+      "counterexample": "“图里标出折好后打孔的位置”对应的是完整4×4纸面，只写中线，没有折起后轮廓/哪一半留在屏幕上；选项是展开图。",
+      "impact": "儿童需自行猜测图中坐标对应折后还是展开纸，不足以作清晰折剪题。"
+    }
+  ],
+  "g20_regression": {
+    "activityCount": 9,
+    "permutations": 100,
+    "rasterStep": 0.5,
+    "rasterExtent": [
+      320,
+      320
+    ],
+    "mismatches": 0,
+    "acceptedPerActivity": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1
+    ],
+    "equivalentPerActivity": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1
+    ]
+  },
+  "postAuditResolutions": [
+    {
+      "id": "GRAPHIC-005",
+      "status": "fixed-browser-verified",
+      "evidence": "../verification/ui-qa.json",
+      "observation": "Root reproduced unchanged preview, then verified the rotated mini-grid and actual placed cells both occupy top-left/top-right/bottom-right after a quarter turn."
+    }
+  ]
+}

@@ -102,6 +102,26 @@ function deferredManifest(manifest) {
   return { ready, resolve };
 }
 
+test("same text in different locales never substitutes another language's local clip", async () => {
+  const browser = createBrowserHarness({ manifest: { entries: [
+    { text: 'A', locale: 'en-US', src: '/audio/english-a.mp3' },
+    { text: 'A', locale: 'zh-CN', src: '/audio/chinese-a.mp3' },
+  ] } });
+  const { mod, cleanup } = await importSpeechWithBrowser(browser);
+  try {
+    await mod.speak('A', 'en-US');
+    assert.equal(browser.audioInstances.at(-1).src, '/audio/english-a.mp3');
+    await mod.speak('A');
+    assert.equal(browser.audioInstances.at(-1).src, '/audio/chinese-a.mp3');
+    const required = mod.playRequiredAudio({ text: 'A', locale: 'en-US' });
+    await new Promise(resolve => setImmediate(resolve));
+    assert.equal(browser.audioInstances.at(-1).src, '/audio/english-a.mp3');
+    browser.audioInstances.at(-1).onended();
+    assert.equal(await required, 'ended');
+    assert.equal(await mod.playRequiredAudio({ text: 'A', locale: 'ja-JP' }), 'failed');
+  } finally { await cleanup(); }
+});
+
 test("required listening completes only on ended, and cancellation or missing media never count as completion", async()=>{
  const browser=createBrowserHarness({manifest:{entries:[{text:'听取线索',src:'/audio/cue.mp3'}]}});
  const {mod,cleanup}=await importSpeechWithBrowser(browser);

@@ -1,0 +1,2277 @@
+{
+  "genericChoices": 105,
+  "correctLabelCounts": {
+    "图A": 99,
+    "图1": 4,
+    "图2": 1,
+    "图3": 1
+  },
+  "g20Alternative": {
+    "id": "explore-layer-order-planning-8",
+    "sequence": [
+      "p2",
+      "p1",
+      "p3",
+      "p0"
+    ],
+    "result": {
+      "status": "incorrect",
+      "message": "蓝片放在黄片下面。",
+      "clueIndex": 0
+    },
+    "rules": {
+      "kind": "constraints",
+      "rules": [
+        {
+          "type": "before",
+          "first": "p1",
+          "second": "p2",
+          "text": "蓝片放在黄片下面。"
+        },
+        {
+          "type": "before",
+          "first": "p1",
+          "second": "p3",
+          "text": "蓝片放在绿片下面。"
+        },
+        {
+          "type": "before",
+          "first": "p1",
+          "second": "p0",
+          "text": "蓝片放在红片下面。"
+        },
+        {
+          "type": "before",
+          "first": "p2",
+          "second": "p3",
+          "text": "黄片放在绿片下面。"
+        },
+        {
+          "type": "before",
+          "first": "p2",
+          "second": "p0",
+          "text": "黄片放在红片下面。"
+        },
+        {
+          "type": "before",
+          "first": "p3",
+          "second": "p0",
+          "text": "绿片放在红片下面。"
+        }
+      ]
+    }
+  },
+  "generic": [
+    {
+      "id": "explore-area-fractions-1",
+      "family": "N08",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        }
+      ]
+    },
+    {
+      "id": "explore-area-fractions-2",
+      "family": "N08",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        }
+      ]
+    },
+    {
+      "id": "explore-area-fractions-3",
+      "family": "N08",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        }
+      ]
+    },
+    {
+      "id": "explore-area-fractions-4",
+      "family": "N08",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        }
+      ]
+    },
+    {
+      "id": "explore-area-fractions-5",
+      "family": "N08",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        }
+      ]
+    },
+    {
+      "id": "explore-area-fractions-6",
+      "family": "N08",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        }
+      ]
+    },
+    {
+      "id": "explore-area-fractions-7",
+      "family": "N08",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        }
+      ]
+    },
+    {
+      "id": "explore-area-fractions-8",
+      "family": "N08",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        }
+      ]
+    },
+    {
+      "id": "explore-area-fractions-9",
+      "family": "N08",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        }
+      ]
+    },
+    {
+      "id": "explore-visual-search-match-1",
+      "family": "G01",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o3",
+          "label": "图D"
+        }
+      ]
+    },
+    {
+      "id": "explore-visual-search-match-2",
+      "family": "G01",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o3",
+          "label": "图D"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        }
+      ]
+    },
+    {
+      "id": "explore-visual-search-match-3",
+      "family": "G01",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o3",
+          "label": "图D"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        }
+      ]
+    },
+    {
+      "id": "explore-visual-search-match-4",
+      "family": "G01",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o3",
+          "label": "图D"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        }
+      ]
+    },
+    {
+      "id": "explore-visual-search-match-5",
+      "family": "G01",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o3",
+          "label": "图D"
+        }
+      ]
+    },
+    {
+      "id": "explore-visual-search-match-6",
+      "family": "G01",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o3",
+          "label": "图D"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        }
+      ]
+    },
+    {
+      "id": "explore-visual-search-match-7",
+      "family": "G01",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o3",
+          "label": "图D"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        }
+      ]
+    },
+    {
+      "id": "explore-visual-search-match-8",
+      "family": "G01",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o3",
+          "label": "图D"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        }
+      ]
+    },
+    {
+      "id": "explore-visual-search-match-9",
+      "family": "G01",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o3",
+          "label": "图D"
+        }
+      ]
+    },
+    {
+      "id": "explore-occlusion-texture-1",
+      "family": "G02",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        }
+      ]
+    },
+    {
+      "id": "explore-occlusion-texture-2",
+      "family": "G02",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        }
+      ]
+    },
+    {
+      "id": "explore-occlusion-texture-3",
+      "family": "G02",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        }
+      ]
+    },
+    {
+      "id": "explore-occlusion-texture-4",
+      "family": "G02",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o3",
+          "label": "图D"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        }
+      ]
+    },
+    {
+      "id": "explore-occlusion-texture-5",
+      "family": "G02",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o3",
+          "label": "图D"
+        }
+      ]
+    },
+    {
+      "id": "explore-occlusion-texture-6",
+      "family": "G02",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o3",
+          "label": "图D"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        }
+      ]
+    },
+    {
+      "id": "explore-occlusion-texture-7",
+      "family": "G02",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o3",
+          "label": "图D"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        }
+      ]
+    },
+    {
+      "id": "explore-occlusion-texture-8",
+      "family": "G02",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o3",
+          "label": "图D"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        }
+      ]
+    },
+    {
+      "id": "explore-occlusion-texture-9",
+      "family": "G02",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o3",
+          "label": "图D"
+        }
+      ]
+    },
+    {
+      "id": "explore-position-transform-1",
+      "family": "G04",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o3",
+          "label": "图D"
+        }
+      ]
+    },
+    {
+      "id": "explore-position-transform-2",
+      "family": "G04",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o3",
+          "label": "图D"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        }
+      ]
+    },
+    {
+      "id": "explore-position-transform-3",
+      "family": "G04",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        }
+      ]
+    },
+    {
+      "id": "explore-position-transform-4",
+      "family": "G04",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o3",
+          "label": "图D"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        }
+      ]
+    },
+    {
+      "id": "explore-position-transform-5",
+      "family": "G04",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        }
+      ]
+    },
+    {
+      "id": "explore-position-transform-6",
+      "family": "G04",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o3",
+          "label": "图D"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        }
+      ]
+    },
+    {
+      "id": "explore-position-transform-7",
+      "family": "G04",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o3",
+          "label": "图D"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        }
+      ]
+    },
+    {
+      "id": "explore-position-transform-8",
+      "family": "G04",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        }
+      ]
+    },
+    {
+      "id": "explore-position-transform-9",
+      "family": "G04",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o3",
+          "label": "图D"
+        }
+      ]
+    },
+    {
+      "id": "explore-rotation-reflection-1",
+      "family": "G05",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o3",
+          "label": "图D"
+        }
+      ]
+    },
+    {
+      "id": "explore-rotation-reflection-2",
+      "family": "G05",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o3",
+          "label": "图D"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        }
+      ]
+    },
+    {
+      "id": "explore-rotation-reflection-3",
+      "family": "G05",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o3",
+          "label": "图D"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        }
+      ]
+    },
+    {
+      "id": "explore-rotation-reflection-4",
+      "family": "G05",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o3",
+          "label": "图D"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        }
+      ]
+    },
+    {
+      "id": "explore-rotation-reflection-5",
+      "family": "G05",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o3",
+          "label": "图D"
+        }
+      ]
+    },
+    {
+      "id": "explore-rotation-reflection-6",
+      "family": "G05",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o3",
+          "label": "图D"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        }
+      ]
+    },
+    {
+      "id": "explore-rotation-reflection-7",
+      "family": "G05",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o3",
+          "label": "图D"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        }
+      ]
+    },
+    {
+      "id": "explore-rotation-reflection-8",
+      "family": "G05",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o3",
+          "label": "图D"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        }
+      ]
+    },
+    {
+      "id": "explore-rotation-reflection-9",
+      "family": "G05",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o3",
+          "label": "图D"
+        }
+      ]
+    },
+    {
+      "id": "explore-shape-set-operations-1",
+      "family": "G06",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o3",
+          "label": "图D"
+        }
+      ]
+    },
+    {
+      "id": "explore-shape-set-operations-2",
+      "family": "G06",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o3",
+          "label": "图D"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        }
+      ]
+    },
+    {
+      "id": "explore-shape-set-operations-3",
+      "family": "G06",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o3",
+          "label": "图D"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        }
+      ]
+    },
+    {
+      "id": "explore-shape-set-operations-4",
+      "family": "G06",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o3",
+          "label": "图D"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        }
+      ]
+    },
+    {
+      "id": "explore-shape-set-operations-5",
+      "family": "G06",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o3",
+          "label": "图D"
+        }
+      ]
+    },
+    {
+      "id": "explore-shape-set-operations-6",
+      "family": "G06",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o3",
+          "label": "图D"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        }
+      ]
+    },
+    {
+      "id": "explore-shape-set-operations-7",
+      "family": "G06",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o3",
+          "label": "图D"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        }
+      ]
+    },
+    {
+      "id": "explore-shape-set-operations-8",
+      "family": "G06",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o3",
+          "label": "图D"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        }
+      ]
+    },
+    {
+      "id": "explore-shape-set-operations-9",
+      "family": "G06",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o3",
+          "label": "图D"
+        }
+      ]
+    },
+    {
+      "id": "explore-recursive-composition-1",
+      "family": "G07",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o3",
+          "label": "图D"
+        }
+      ]
+    },
+    {
+      "id": "explore-recursive-composition-2",
+      "family": "G07",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o3",
+          "label": "图D"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        }
+      ]
+    },
+    {
+      "id": "explore-recursive-composition-3",
+      "family": "G07",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o3",
+          "label": "图D"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        }
+      ]
+    },
+    {
+      "id": "explore-recursive-composition-4",
+      "family": "G07",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o3",
+          "label": "图D"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        }
+      ]
+    },
+    {
+      "id": "explore-recursive-composition-5",
+      "family": "G07",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o3",
+          "label": "图D"
+        }
+      ]
+    },
+    {
+      "id": "explore-recursive-composition-6",
+      "family": "G07",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o3",
+          "label": "图D"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        }
+      ]
+    },
+    {
+      "id": "explore-recursive-composition-7",
+      "family": "G07",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o3",
+          "label": "图D"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        }
+      ]
+    },
+    {
+      "id": "explore-recursive-composition-8",
+      "family": "G07",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o3",
+          "label": "图D"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        }
+      ]
+    },
+    {
+      "id": "explore-recursive-composition-9",
+      "family": "G07",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o3",
+          "label": "图D"
+        }
+      ]
+    },
+    {
+      "id": "explore-symbolic-color-rules-1",
+      "family": "G08",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        }
+      ]
+    },
+    {
+      "id": "explore-symbolic-color-rules-2",
+      "family": "G08",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        }
+      ]
+    },
+    {
+      "id": "explore-symbolic-color-rules-3",
+      "family": "G08",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        }
+      ]
+    },
+    {
+      "id": "explore-symbolic-color-rules-4",
+      "family": "G08",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        }
+      ]
+    },
+    {
+      "id": "explore-symbolic-color-rules-5",
+      "family": "G08",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        }
+      ]
+    },
+    {
+      "id": "explore-symbolic-color-rules-6",
+      "family": "G08",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        }
+      ]
+    },
+    {
+      "id": "explore-symbolic-color-rules-7",
+      "family": "G08",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        }
+      ]
+    },
+    {
+      "id": "explore-symbolic-color-rules-8",
+      "family": "G08",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        }
+      ]
+    },
+    {
+      "id": "explore-symbolic-color-rules-9",
+      "family": "G08",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        }
+      ]
+    },
+    {
+      "id": "explore-topology-relations-1",
+      "family": "G11",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        }
+      ]
+    },
+    {
+      "id": "explore-topology-relations-2",
+      "family": "G11",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        }
+      ]
+    },
+    {
+      "id": "explore-topology-relations-3",
+      "family": "G11",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        }
+      ]
+    },
+    {
+      "id": "explore-marker-invariants-1",
+      "family": "G12",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        }
+      ]
+    },
+    {
+      "id": "explore-marker-invariants-2",
+      "family": "G12",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        }
+      ]
+    },
+    {
+      "id": "explore-marker-invariants-3",
+      "family": "G12",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        }
+      ]
+    },
+    {
+      "id": "explore-marker-invariants-4",
+      "family": "G12",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        }
+      ]
+    },
+    {
+      "id": "explore-marker-invariants-5",
+      "family": "G12",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        }
+      ]
+    },
+    {
+      "id": "explore-marker-invariants-6",
+      "family": "G12",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        }
+      ]
+    },
+    {
+      "id": "explore-marker-invariants-7",
+      "family": "G12",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        }
+      ]
+    },
+    {
+      "id": "explore-marker-invariants-8",
+      "family": "G12",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        }
+      ]
+    },
+    {
+      "id": "explore-marker-invariants-9",
+      "family": "G12",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        }
+      ]
+    },
+    {
+      "id": "explore-fold-cut-4",
+      "family": "G15",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o3",
+          "label": "图D"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        }
+      ]
+    },
+    {
+      "id": "explore-fold-cut-5",
+      "family": "G15",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o3",
+          "label": "图D"
+        }
+      ]
+    },
+    {
+      "id": "explore-fold-cut-6",
+      "family": "G15",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o3",
+          "label": "图D"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        }
+      ]
+    },
+    {
+      "id": "explore-fold-cut-7",
+      "family": "G15",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o3",
+          "label": "图D"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        }
+      ]
+    },
+    {
+      "id": "explore-fold-cut-8",
+      "family": "G15",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o3",
+          "label": "图D"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        }
+      ]
+    },
+    {
+      "id": "explore-fold-cut-9",
+      "family": "G15",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o3",
+          "label": "图D"
+        }
+      ]
+    },
+    {
+      "id": "explore-english-listening-4",
+      "family": "E06",
+      "correctLabel": "图1",
+      "display": [
+        {
+          "id": "o0",
+          "label": "图1"
+        },
+        {
+          "id": "o1",
+          "label": "图2"
+        },
+        {
+          "id": "o2",
+          "label": "图3"
+        }
+      ]
+    },
+    {
+      "id": "explore-english-listening-5",
+      "family": "E06",
+      "correctLabel": "图1",
+      "display": [
+        {
+          "id": "o1",
+          "label": "图2"
+        },
+        {
+          "id": "o2",
+          "label": "图3"
+        },
+        {
+          "id": "o0",
+          "label": "图1"
+        }
+      ]
+    },
+    {
+      "id": "explore-english-listening-6",
+      "family": "E06",
+      "correctLabel": "图1",
+      "display": [
+        {
+          "id": "o2",
+          "label": "图3"
+        },
+        {
+          "id": "o0",
+          "label": "图1"
+        },
+        {
+          "id": "o1",
+          "label": "图2"
+        }
+      ]
+    },
+    {
+      "id": "explore-english-listening-7",
+      "family": "E06",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        }
+      ]
+    },
+    {
+      "id": "explore-english-listening-8",
+      "family": "E06",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        }
+      ]
+    },
+    {
+      "id": "explore-english-listening-9",
+      "family": "E06",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        }
+      ]
+    },
+    {
+      "id": "explore-bilingual-concepts-1",
+      "family": "E07",
+      "correctLabel": "图1",
+      "display": [
+        {
+          "id": "o0",
+          "label": "图1"
+        },
+        {
+          "id": "o1",
+          "label": "图2"
+        },
+        {
+          "id": "o2",
+          "label": "图3"
+        }
+      ]
+    },
+    {
+      "id": "explore-bilingual-concepts-2",
+      "family": "E07",
+      "correctLabel": "图2",
+      "display": [
+        {
+          "id": "o1",
+          "label": "图2"
+        },
+        {
+          "id": "o2",
+          "label": "图3"
+        },
+        {
+          "id": "o0",
+          "label": "图1"
+        }
+      ]
+    },
+    {
+      "id": "explore-bilingual-concepts-3",
+      "family": "E07",
+      "correctLabel": "图3",
+      "display": [
+        {
+          "id": "o2",
+          "label": "图3"
+        },
+        {
+          "id": "o0",
+          "label": "图1"
+        },
+        {
+          "id": "o1",
+          "label": "图2"
+        }
+      ]
+    },
+    {
+      "id": "explore-bilingual-concepts-4",
+      "family": "E07",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        }
+      ]
+    },
+    {
+      "id": "explore-bilingual-concepts-5",
+      "family": "E07",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        }
+      ]
+    },
+    {
+      "id": "explore-bilingual-concepts-6",
+      "family": "E07",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        }
+      ]
+    },
+    {
+      "id": "explore-bilingual-concepts-7",
+      "family": "E07",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        }
+      ]
+    },
+    {
+      "id": "explore-bilingual-concepts-8",
+      "family": "E07",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o1",
+          "label": "图B"
+        },
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        }
+      ]
+    },
+    {
+      "id": "explore-bilingual-concepts-9",
+      "family": "E07",
+      "correctLabel": "图A",
+      "display": [
+        {
+          "id": "o2",
+          "label": "图C"
+        },
+        {
+          "id": "o0",
+          "label": "图A"
+        },
+        {
+          "id": "o1",
+          "label": "图B"
+        }
+      ]
+    }
+  ]
+}

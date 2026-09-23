@@ -2,6 +2,7 @@ import { publicAsset } from "./publicAsset";
 
 const voiceMap: Record<string, string> = {};
 const voiceSegments: Record<string, string[]> = {};
+const voiceKey = (text: string, locale = "zh-CN") => `${locale.toLowerCase()}|${normalizeSpeechText(text)}`;
 
 let audioContext: AudioContext | null = null;
 let preferredVoice: SpeechSynthesisVoice | null = null;
@@ -15,7 +16,7 @@ export async function playRequiredAudio(input: {text?: string; src?: string; loc
   const run=startSpeechRun();
   await loadVoiceManifest();
   if(run!==speechRun)return "cancelled";
-  const src=input.src ?? voiceMap[normalizeSpeechText(input.text??"")];
+  const src=input.src ?? voiceMap[voiceKey(input.text??"",input.locale)];
   if(!src)return "failed";
   recordSpeechSource(src);
   recordLocalVoiceHit(src);
@@ -41,8 +42,8 @@ export async function speak(text: string, lang = "zh-CN") {
   const run = startSpeechRun();
   await loadVoiceManifest();
   if (run !== speechRun) return;
-  const src = voiceMap[clean] ?? voiceMap[text];
-  const segmentSrcs = voiceSegments[clean] ?? voiceSegments[text];
+  const src = voiceMap[voiceKey(clean, lang)];
+  const segmentSrcs = voiceSegments[voiceKey(clean, lang)];
 
   if (segmentSrcs?.length) {
     recordLocalVoiceHit("voice-segments");
@@ -116,11 +117,11 @@ async function loadVoiceManifest() {
     try {
       const manifest = await readVoiceManifest();
       for (const entry of manifest.entries ?? []) {
-        if (entry.text && entry.src) voiceMap[normalizeSpeechText(entry.text)] = entry.src;
+        if (entry.text && entry.src) voiceMap[voiceKey(entry.text, entry.locale)] = entry.src;
       }
       for (const entry of manifest.segmentEntries ?? []) {
         if (entry.text && Array.isArray(entry.srcs) && entry.srcs.length > 0) {
-          voiceSegments[normalizeSpeechText(entry.text)] = entry.srcs;
+          voiceSegments[voiceKey(entry.text, entry.locale)] = entry.srcs;
         }
       }
     } catch {
@@ -331,10 +332,12 @@ type VoiceManifest = {
   entries?: Array<{
     text?: string;
     src?: string;
+    locale?: string;
   }>;
   segmentEntries?: Array<{
     text?: string;
     srcs?: string[];
+    locale?: string;
   }>;
 };
 

@@ -525,14 +525,14 @@ function ActivityRound({
       {state.phase === "ready" && (
         <div className="memory-stage memory-ready">
           {isListening ? <Volume2 size={38} /> : <Eye size={38} />}
-          <h3>{activity.protocol.kind === "learnThenTransfer" ? "先学一条新规则" : isListening ? "先听清，再来试" : "先看清，再摆回来"}</h3>
+          <h3>{activity.protocol.kind === "learnThenTransfer" ? "先学一条新规则" : isListening ? "先听清，再来试" : activity.kind === "multiSelect" ? "先看清，再找出来" : activity.kind === "matching" ? "先看清，再连起来" : "先看清，再摆回来"}</h3>
           {activity.protocol.kind === "learnThenTransfer" && <p>{activity.protocol.demonstration}</p>}
           {isListening && <p>先听完声音，线索不会显示在屏幕上。</p>}
           {cueError && <p role="alert">声音暂时没能播放。请重试，听完以后再作答。</p>}
           <p>
             {state.restarts > 0
-              ? ACTIVITY_COPY.interrupted
-              : "准备好了再开始。作答时也可以再看一次。"}
+              ? isListening ? ACTIVITY_COPY.interruptedAudio : ACTIVITY_COPY.interrupted
+              : activity.protocol.kind === "learnThenTransfer" ? ACTIVITY_COPY.readyTransfer : isListening ? ACTIVITY_COPY.readyAudio : ACTIVITY_COPY.readyVisual}
           </p>
           <button
             type="button"
@@ -548,7 +548,7 @@ function ActivityRound({
       {state.phase === "observe" && activity.protocol.kind === "memory" && !isListening && (
         <div className="memory-stage" data-testid="memory-cue">
           <div className="memory-caption">
-            <strong>看清位置和顺序</strong>
+            <strong>{activity.kind === "multiSelect" ? "记住出现了哪些图卡" : activity.kind === "matching" ? "看清每一组对应关系" : activity.kind === "gridPlacement" ? "看清图卡的位置" : "看清图卡的先后顺序"}</strong>
             <span>还可看 {remaining} 秒</span>
           </div>
           <div
@@ -584,7 +584,7 @@ function ActivityRound({
         <div className="memory-stage memory-retain" data-testid="memory-retain">
           <span aria-hidden="true">···</span>
           <h3>{ACTIVITY_COPY.remember}</h3>
-          <p>图卡已经藏起来了</p>
+          <p>{isListening ? ACTIVITY_COPY.audioRetain : "图卡已经藏起来了"}</p>
         </div>
       )}
       {showResponses && (

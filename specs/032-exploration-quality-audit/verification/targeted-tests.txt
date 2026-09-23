@@ -1,0 +1,16 @@
+✔ generic choice labels describe display order, not the hidden authoring/answer index (0.4965ms)
+✔ choice order is stable per activity, but not a predictable global round-number rotation (0.3325ms)
+✔ occluded lower layers can swap when their final visible picture is identical (0.20475ms)
+✔ fraction comparisons subdivide the same whole instead of changing its outer proportions (0.198542ms)
+✔ same text in different locales never substitutes another language's local clip (35.756584ms)
+✔ required listening completes only on ended, and cancellation or missing media never count as completion (10.623083ms)
+✔ new speech requests invalidate stale requests before the manifest finishes loading (7.1145ms)
+✔ stopSpeech immediately pauses local audio and prevents pending speech from starting (13.941709ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 287.110917

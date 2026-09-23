@@ -1,0 +1,202 @@
+{
+  "method": "Compare rendered-circle visible colors at 2x pixel centers, independently of authoring solutions and order rules",
+  "activityCount": 9,
+  "permutations": 100,
+  "mismatches": [],
+  "results": [
+    {
+      "id": "explore-layer-order-planning-1",
+      "pixelScale": 2,
+      "coverageMasks": 3,
+      "permutations": 2,
+      "equivalent": [
+        [
+          "p0",
+          "p1"
+        ]
+      ],
+      "accepted": [
+        [
+          "p0",
+          "p1"
+        ]
+      ]
+    },
+    {
+      "id": "explore-layer-order-planning-2",
+      "pixelScale": 2,
+      "coverageMasks": 3,
+      "permutations": 2,
+      "equivalent": [
+        [
+          "p1",
+          "p0"
+        ]
+      ],
+      "accepted": [
+        [
+          "p1",
+          "p0"
+        ]
+      ]
+    },
+    {
+      "id": "explore-layer-order-planning-3",
+      "pixelScale": 2,
+      "coverageMasks": 7,
+      "permutations": 6,
+      "equivalent": [
+        [
+          "p2",
+          "p0",
+          "p1"
+        ]
+      ],
+      "accepted": [
+        [
+          "p2",
+          "p0",
+          "p1"
+        ]
+      ]
+    },
+    {
+      "id": "explore-layer-order-planning-4",
+      "pixelScale": 2,
+      "coverageMasks": 7,
+      "permutations": 6,
+      "equivalent": [
+        [
+          "p0",
+          "p1",
+          "p2"
+        ]
+      ],
+      "accepted": [
+        [
+          "p0",
+          "p1",
+          "p2"
+        ]
+      ]
+    },
+    {
+      "id": "explore-layer-order-planning-5",
+      "pixelScale": 2,
+      "coverageMasks": 7,
+      "permutations": 6,
+      "equivalent": [
+        [
+          "p1",
+          "p2",
+          "p0"
+        ]
+      ],
+      "accepted": [
+        [
+          "p1",
+          "p2",
+          "p0"
+        ]
+      ]
+    },
+    {
+      "id": "explore-layer-order-planning-6",
+      "pixelScale": 2,
+      "coverageMasks": 5,
+      "permutations": 6,
+      "equivalent": [
+        [
+          "p2",
+          "p0",
+          "p1"
+        ]
+      ],
+      "accepted": [
+        [
+          "p2",
+          "p0",
+          "p1"
+        ]
+      ]
+    },
+    {
+      "id": "explore-layer-order-planning-7",
+      "pixelScale": 2,
+      "coverageMasks": 13,
+      "permutations": 24,
+      "equivalent": [
+        [
+          "p0",
+          "p1",
+          "p2",
+          "p3"
+        ]
+      ],
+      "accepted": [
+        [
+          "p0",
+          "p1",
+          "p2",
+          "p3"
+        ]
+      ]
+    },
+    {
+      "id": "explore-layer-order-planning-8",
+      "pixelScale": 2,
+      "coverageMasks": 13,
+      "permutations": 24,
+      "equivalent": [
+        [
+          "p1",
+          "p2",
+          "p3",
+          "p0"
+        ],
+        [
+          "p2",
+          "p1",
+          "p3",
+          "p0"
+        ]
+      ],
+      "accepted": [
+        [
+          "p1",
+          "p2",
+          "p3",
+          "p0"
+        ],
+        [
+          "p2",
+          "p1",
+          "p3",
+          "p0"
+        ]
+      ]
+    },
+    {
+      "id": "explore-layer-order-planning-9",
+      "pixelScale": 2,
+      "coverageMasks": 13,
+      "permutations": 24,
+      "equivalent": [
+        [
+          "p2",
+          "p3",
+          "p0",
+          "p1"
+        ]
+      ],
+      "accepted": [
+        [
+          "p2",
+          "p3",
+          "p0",
+          "p1"
+        ]
+      ]
+    }
+  ]
+}

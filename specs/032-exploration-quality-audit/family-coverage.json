@@ -1,0 +1,3499 @@
+{
+  "date": "2026-09-23",
+  "scope": {
+    "newlyAuthoredFamilies": 71,
+    "newlyAuthoredActivities": 597,
+    "pilotActivities": 24,
+    "allExplorationActivities": 621
+  },
+  "statusDefinitions": {
+    "core-covered": "Main planned mechanism is present; this is not every original task, all source materials, or age calibration.",
+    "partial": "Current valid activities cover only part of the planned rules/interaction/learning progression."
+  },
+  "counts": {
+    "partial": 63,
+    "core-covered": 8
+  },
+  "claimsAllSourceTasksCovered": false,
+  "sourceCoveragePercentage": null,
+  "pilotEvidence": "verification/pilot-review.json",
+  "families": [
+    {
+      "id": "N01",
+      "title": "点数、基数与数量结构",
+      "domain": "math",
+      "status": "partial",
+      "reviewEvidence": "research/math-logic.json",
+      "matrixTarget": "保留小数量基础，加入有序标记、不同排列和数量结构解释",
+      "sourceRefs": [
+        {
+          "source_id": "S083",
+          "locator": "1"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide4"
+        },
+        {
+          "source_id": "S109",
+          "locator": "10-13"
+        },
+        {
+          "source_id": "S115",
+          "locator": "14-17"
+        }
+      ],
+      "currentGaps": [
+        "混合实物按类别分别计数并做标记",
+        "一个物体对应多个部件的计数（如车→车轮）",
+        "同一数量换排列后解释；当前第三阶同时换数量，不能比较同量不同排法"
+      ],
+      "details": {
+        "code": {
+          "file": "src/curriculum/exploration/math.ts",
+          "line": 12
+        },
+        "sources_reviewed": [
+          {
+            "source_id": "S109",
+            "source_path": "上实幼升小资料合集/百花思维训练/百花学习塾—01.pdf",
+            "locator": "PDF p011，印刷15页",
+            "observed": "青蛙、蝌蚪、树叶混排，分类计数并画圈记录",
+            "review": "full-page-image-read"
+          },
+          {
+            "source_id": "S115",
+            "source_path": "上实幼升小资料合集/百花思维训练/百花学习塾—07.pdf",
+            "locator": "PDF p015，印刷15页",
+            "observed": "汽车、摩托、自行车、三轮车混合，按车辆推总车轮数",
+            "review": "full-page-image-read"
+          }
+        ],
+        "independent_check": {
+          "rounds": 9,
+          "cases": 9,
+          "errors": 0,
+          "accepted_constraint_enumerations": 0
+        },
+        "actual_interactions": [
+          "singleChoice"
+        ]
+      },
+      "baselineIssues": []
+    },
+    {
+      "id": "N02",
+      "title": "数量比较、补齐与移动补差",
+      "domain": "math",
+      "status": "partial",
+      "reviewEvidence": "research/math-logic.json",
+      "matrixTarget": "从直接比较进入移给对方后两边同时变化，分清求差与取走",
+      "sourceRefs": [
+        {
+          "source_id": "S103",
+          "locator": "2-5"
+        },
+        {
+          "source_id": "S114",
+          "locator": "8-11"
+        }
+      ],
+      "currentGaps": [
+        "让孩子实际一一配对、添入/取走/移交，并观察两边同时变化",
+        "已知甲比乙多且甲总量已知，反向求乙（当前仅两边图都可直接点数）"
+      ],
+      "details": {
+        "code": {
+          "file": "src/curriculum/exploration/math.ts",
+          "line": 13
+        },
+        "sources_reviewed": [
+          {
+            "source_id": "S103",
+            "source_path": "上实幼升小资料合集/学而思幼升小计算衔接课/运算能力——应用篇.pdf",
+            "locator": "PDF p004",
+            "observed": "包含“小明6个蛋糕，比小红多2个，求小红”，是关系语义转换，不只是看两堆图求差",
+            "review": "full-page-image-read"
+          }
+        ],
+        "independent_check": {
+          "rounds": 9,
+          "cases": 9,
+          "errors": 0,
+          "accepted_constraint_enumerations": 0
+        },
+        "actual_interactions": [
+          "singleChoice"
+        ]
+      },
+      "baselineIssues": []
+    },
+    {
+      "id": "N03",
+      "title": "数量、排列与容积守恒",
+      "domain": "math",
+      "status": "partial",
+      "reviewEvidence": "research/math-logic.json",
+      "matrixTarget": "数量/体积与排列、容器外形分离，用实物倒换和对应验证，不能凭水位高就判断更多",
+      "sourceRefs": [
+        {
+          "source_id": "S110",
+          "locator": "4"
+        },
+        {
+          "source_id": "S119",
+          "locator": "3-5"
+        },
+        {
+          "source_id": "S106",
+          "locator": "9-10"
+        }
+      ],
+      "currentGaps": [
+        "实物或可操作倒换与一一对应验证",
+        "同量分入不同数量容器并扣除/转移一杯后的比较",
+        "从变化过程判断守恒，而非图中文字直接说明“没有增减”后复述已给数量"
+      ],
+      "details": {
+        "code": {
+          "file": "src/curriculum/exploration/math.ts",
+          "line": 14
+        },
+        "sources_reviewed": [
+          {
+            "source_id": "S119",
+            "source_path": "上实幼升小资料合集/百花思维训练/百花学习塾—11.pdf",
+            "locator": "PDF p004，印刷3页",
+            "observed": "相同初始杯分别分成2杯和4杯，右侧有送出一杯的箭头；任务含分杯与变化后的量比较",
+            "review": "full-page-image-read"
+          }
+        ],
+        "independent_check": {
+          "rounds": 9,
+          "cases": 9,
+          "errors": 0,
+          "accepted_constraint_enumerations": 0
+        },
+        "actual_interactions": [
+          "singleChoice"
+        ]
+      },
+      "baselineIssues": []
+    },
+    {
+      "id": "N04",
+      "title": "有序分合与枚举",
+      "domain": "math",
+      "status": "partial",
+      "reviewEvidence": "research/math-logic.json",
+      "matrixTarget": "摆出不同分法，按序枚举并说明是否把交换当同一种",
+      "sourceRefs": [
+        {
+          "source_id": "S088",
+          "locator": "1-3"
+        }
+      ],
+      "currentGaps": [
+        "自主分物并生成不同分法，避免只辨认已给选项",
+        "按顺序记录所有分法并明确交换是否算同一种",
+        "覆盖8–10等原表格需要补齐的分合，而非所有阶段固定5–7"
+      ],
+      "details": {
+        "code": {
+          "file": "src/curriculum/exploration/math.ts",
+          "line": 15
+        },
+        "sources_reviewed": [
+          {
+            "source_id": "S088",
+            "source_path": "上实幼升小资料合集/学而思幼升小计算衔接课/第2讲幼升小计算衔接课——数的分合/幼升小计算衔接课——数的分合.pdf",
+            "locator": "PDF p002",
+            "observed": "数字5/6/7的实物拆分空盘，及8的两列空格枚举表；原任务需要生成而非筛选",
+            "review": "full-page-image-read"
+          }
+        ],
+        "independent_check": {
+          "rounds": 9,
+          "cases": 9,
+          "errors": 0,
+          "accepted_constraint_enumerations": 0
+        },
+        "actual_interactions": [
+          "multiSelect"
+        ]
+      },
+      "baselineIssues": []
+    },
+    {
+      "id": "N05",
+      "title": "凑十、破十与数位表征",
+      "domain": "math",
+      "status": "partial",
+      "reviewEvidence": "research/math-logic.json",
+      "matrixTarget": "十格盘/十根一捆到操作步骤和算式，接受合理不同策略",
+      "sourceRefs": [
+        {
+          "source_id": "S093",
+          "locator": "1-3"
+        },
+        {
+          "source_id": "S097",
+          "locator": "1-2"
+        },
+        {
+          "source_id": "S100",
+          "locator": "1"
+        },
+        {
+          "source_id": "S117",
+          "locator": "9-14"
+        }
+      ],
+      "currentGaps": [
+        "拆分第二个加数并实际凑成十；拆十过程需要输入/操作",
+        "比较不同合理算法并回看步骤",
+        "有效第三变式：10+7没有跨十拆分，破十组三题答案均为6，变化较弱"
+      ],
+      "details": {
+        "code": {
+          "file": "src/curriculum/exploration/math.ts",
+          "line": 16
+        },
+        "sources_reviewed": [
+          {
+            "source_id": "S093",
+            "source_path": "上实幼升小资料合集/学而思幼升小计算衔接课/第3讲幼升小计算衔接课——揭秘凑十法/幼升小计算衔接课——揭秘凑十法.pdf",
+            "locator": "PDF p002",
+            "observed": "9+5、8+7、7+4、6+6呈现十根结构学具，供凑十操作",
+            "review": "full-page-image-read"
+          },
+          {
+            "source_id": "S097",
+            "source_path": "上实幼升小资料合集/学而思幼升小计算衔接课/第4讲幼升小计算衔接课——透析破十法/幼升小计算衔接课——透析破十法.pdf",
+            "locator": "PDF p001",
+            "observed": "13元减9元情境、17−9/15−8/13−7的划去图示",
+            "review": "full-page-image-read"
+          }
+        ],
+        "independent_check": {
+          "rounds": 9,
+          "cases": 9,
+          "errors": 0,
+          "accepted_constraint_enumerations": 0
+        },
+        "actual_interactions": [
+          "singleChoice"
+        ]
+      },
+      "baselineIssues": []
+    },
+    {
+      "id": "N06",
+      "title": "情境加减与逆向数量关系",
+      "domain": "math",
+      "status": "partial",
+      "reviewEvidence": "research/math-logic.json",
+      "matrixTarget": "分清合并、增加、剩余、相差和已知结果求原量",
+      "sourceRefs": [
+        {
+          "source_id": "S083",
+          "locator": "1"
+        },
+        {
+          "source_id": "S103",
+          "locator": "1-5"
+        },
+        {
+          "source_id": "S118",
+          "locator": "11-16"
+        },
+        {
+          "source_id": "S119",
+          "locator": "9-14"
+        }
+      ],
+      "currentGaps": [
+        "拿走/飞走后求剩余以及已知剩余反求原量",
+        "相差/比较情境及选择数量关系，不都套“飞来”同一加法结构",
+        "合并不同集合与动态增加的区分"
+      ],
+      "details": {
+        "code": {
+          "file": "src/curriculum/exploration/math.ts",
+          "line": 17
+        },
+        "sources_reviewed": [
+          {
+            "source_id": "S103",
+            "source_path": "上实幼升小资料合集/学而思幼升小计算衔接课/运算能力——应用篇.pdf",
+            "locator": "PDF p004",
+            "observed": "同页含增加、比较差和排队重叠三种情境",
+            "review": "full-page-image-read"
+          },
+          {
+            "source_id": "S097",
+            "source_path": "上实幼升小资料合集/学而思幼升小计算衔接课/第4讲幼升小计算衔接课——透析破十法/幼升小计算衔接课——透析破十法.pdf",
+            "locator": "PDF p001",
+            "observed": "已有金额花掉后求剩余，是当前N06未提供的情境分支",
+            "review": "full-page-image-read"
+          }
+        ],
+        "independent_check": {
+          "rounds": 9,
+          "cases": 9,
+          "errors": 0,
+          "accepted_constraint_enumerations": 0
+        },
+        "actual_interactions": [
+          "singleChoice"
+        ]
+      },
+      "baselineIssues": []
+    },
+    {
+      "id": "N07",
+      "title": "成组计数、等分与剩余",
+      "domain": "math",
+      "status": "partial",
+      "reviewEvidence": "research/math-logic.json",
+      "matrixTarget": "均分/按份分与连续成组，记录每份、份数及余量",
+      "sourceRefs": [
+        {
+          "source_id": "S105",
+          "locator": "slide15"
+        },
+        {
+          "source_id": "S077",
+          "locator": "4"
+        },
+        {
+          "source_id": "S114",
+          "locator": "8-11"
+        },
+        {
+          "source_id": "S116",
+          "locator": "9-12"
+        }
+      ],
+      "currentGaps": [
+        "逐个均分和按给定每份求份数的操作任务",
+        "记录份数、每份数、剩余并交叉核验；当前每次仅答一数",
+        "带资源数量限制的分配方案"
+      ],
+      "details": {
+        "code": {
+          "file": "src/curriculum/exploration/math.ts",
+          "line": 18
+        },
+        "sources_reviewed": [
+          {
+            "source_id": "S114",
+            "source_path": "上实幼升小资料合集/百花思维训练/百花学习塾—06.pdf",
+            "locator": "PDF p008，印刷13页",
+            "observed": "把16个点心均分给4位孩子，在各孩子下记录",
+            "review": "full-page-image-read"
+          },
+          {
+            "source_id": "S116",
+            "source_path": "上实幼升小资料合集/百花思维训练/百花学习塾—08.pdf",
+            "locator": "PDF p010，印刷15页",
+            "observed": "包含除：按包装量分袋并记录袋数",
+            "review": "full-page-image-read"
+          },
+          {
+            "source_id": "S105",
+            "source_path": "上实幼升小资料合集/幼升小卓基思维题总结.pptx",
+            "locator": "slide15",
+            "observed": "原页含成组乘法2×3、3×3、4×3；第39题刺激缺失，不能判断该题覆盖",
+            "review": "full-page-image-read"
+          }
+        ],
+        "independent_check": {
+          "rounds": 9,
+          "cases": 9,
+          "errors": 0,
+          "accepted_constraint_enumerations": 0
+        },
+        "actual_interactions": [
+          "singleChoice"
+        ]
+      },
+      "baselineIssues": []
+    },
+    {
+      "id": "N08",
+      "title": "连续量等分与面积占比",
+      "domain": "math",
+      "status": "partial",
+      "reviewEvidence": "research/math-logic.json",
+      "matrixTarget": "从分物转到等面积份额，不能以涂色块数代替面积比较",
+      "sourceRefs": [
+        {
+          "source_id": "S105",
+          "locator": "slide5"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide24"
+        },
+        {
+          "source_id": "S113",
+          "locator": "9-11"
+        },
+        {
+          "source_id": "S107",
+          "locator": "10"
+        },
+        {
+          "source_id": "S074",
+          "locator": "81"
+        }
+      ],
+      "currentGaps": [
+        "自己把连续图形等分（圆、三角形、正方形、菱形）",
+        "同面积不同形状分块、不是“涂色块数越多面积越大”的干扰",
+        "单一整体上改变分割仍解释，而非只选比例相等的矩形网格"
+      ],
+      "details": {
+        "code": {
+          "file": "src/curriculum/exploration/math.ts",
+          "line": 19
+        },
+        "sources_reviewed": [
+          {
+            "source_id": "S113",
+            "source_path": "上实幼升小资料合集/百花思维训练/百花学习塾—05.pdf",
+            "locator": "PDF p010，印刷17页",
+            "observed": "给四个孩子分圆、三角形、方形和菱形，需要画等分线",
+            "review": "full-page-image-read"
+          },
+          {
+            "source_id": "S105",
+            "source_path": "上实幼升小资料合集/幼升小卓基思维题总结.pptx",
+            "locator": "slide24，第65题",
+            "observed": "3/8涂色的圆形、三角分区方形、花瓣等不同分割表示",
+            "review": "full-page-image-read"
+          }
+        ],
+        "independent_check": {
+          "rounds": 9,
+          "cases": 9,
+          "errors": 0,
+          "accepted_constraint_enumerations": 0
+        },
+        "actual_interactions": [
+          "singleChoice"
+        ]
+      },
+      "baselineIssues": [
+        {
+          "id": "ML-01",
+          "severity": "P2",
+          "activity_suffixes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "line": 19,
+          "title": "面积反馈把不同形状的整体称作分得更细",
+          "counterexample": "第1题主图是2列×1行，正确选项是2列×2行；draw.grid同样的85单位格边长让整体宽高比从2:1变为1:1，改变了纸的形状/面积。虽然1/2比例答案正确，不能把这一变化解释成同一张纸只分得更细。",
+          "recommendation": "固定整张纸的宽高后改变分割，或准确说明比较的是不同整体中所占比例。",
+          "status": "confirmed-before-parent-fix",
+          "file": "src/curriculum/exploration/math.ts",
+          "activity_ids": [
+            "explore-area-fractions-1",
+            "explore-area-fractions-2",
+            "explore-area-fractions-3",
+            "explore-area-fractions-4",
+            "explore-area-fractions-5",
+            "explore-area-fractions-6",
+            "explore-area-fractions-7",
+            "explore-area-fractions-8",
+            "explore-area-fractions-9"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "N09",
+      "title": "序数、排队与重叠计数",
+      "domain": "math",
+      "status": "partial",
+      "reviewEvidence": "research/math-logic.json",
+      "matrixTarget": "区分前面有几人和排第几，两端计数中本人只计一次",
+      "sourceRefs": [
+        {
+          "source_id": "S103",
+          "locator": "2-5"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide1"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide19"
+        },
+        {
+          "source_id": "S071",
+          "locator": "render5"
+        },
+        {
+          "source_id": "S109",
+          "locator": "7-9"
+        }
+      ],
+      "currentGaps": [
+        "根据指定序数找到图中具体对象，或根据对象说出两个方向序数",
+        "说出某动物前面/后面有哪些对象",
+        "实际摆队伍与区分“前面几人”和“第几”"
+      ],
+      "details": {
+        "code": {
+          "file": "src/curriculum/exploration/math.ts",
+          "line": 20
+        },
+        "sources_reviewed": [
+          {
+            "source_id": "S103",
+            "source_path": "上实幼升小资料合集/学而思幼升小计算衔接课/运算能力——应用篇.pdf",
+            "locator": "PDF p004",
+            "observed": "从前第5、从后第4求人数，当前中心重叠模型已实现",
+            "review": "full-page-image-read"
+          },
+          {
+            "source_id": "S109",
+            "source_path": "上实幼升小资料合集/百花思维训练/百花学习塾—01.pdf",
+            "locator": "PDF p008，印刷9页",
+            "observed": "按前后序数给第2/4辆车涂色，说出小熊两种位置与对象前后名单",
+            "review": "full-page-image-read"
+          }
+        ],
+        "independent_check": {
+          "rounds": 9,
+          "cases": 9,
+          "errors": 0,
+          "accepted_constraint_enumerations": 0
+        },
+        "actual_interactions": [
+          "singleChoice"
+        ]
+      },
+      "baselineIssues": []
+    },
+    {
+      "id": "N10",
+      "title": "单双、十与个位",
+      "domain": "math",
+      "status": "partial",
+      "reviewEvidence": "research/math-logic.json",
+      "matrixTarget": "两两配对解释单双，数位与反复开关等迁移分开评价",
+      "sourceRefs": [
+        {
+          "source_id": "S100",
+          "locator": "1-4"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide19"
+        },
+        {
+          "source_id": "S070",
+          "locator": "29"
+        }
+      ],
+      "currentGaps": [
+        "单双加法组合规律、较大数的奇偶判断",
+        "按奇偶约束自主分物（如9块分成一单一双）",
+        "次数与状态翻转的迁移需与L09独立对应，不能把减1选择题当作翻转操作已覆盖"
+      ],
+      "details": {
+        "code": {
+          "file": "src/curriculum/exploration/math.ts",
+          "line": 21
+        },
+        "sources_reviewed": [
+          {
+            "source_id": "S070",
+            "source_path": "上实幼升小资料合集/上实幼升小必刷200道题.pdf",
+            "locator": "PDF p029，印刷35页",
+            "observed": "9块蛋糕分给两人，指定一方单数一方双数并列分法",
+            "review": "full-page-image-read"
+          },
+          {
+            "source_id": "S100",
+            "source_path": "上实幼升小资料合集/学而思幼升小计算衔接课/观察力—数列规律篇.pdf",
+            "locator": "PDF p003",
+            "observed": "一组数中找不合群的数，需要识别奇偶规则",
+            "review": "full-page-image-read"
+          }
+        ],
+        "independent_check": {
+          "rounds": 9,
+          "cases": 9,
+          "errors": 0,
+          "accepted_constraint_enumerations": 0
+        },
+        "actual_interactions": [
+          "multiSelect",
+          "singleChoice"
+        ]
+      },
+      "baselineIssues": [
+        {
+          "id": "ML-02",
+          "severity": "P2",
+          "activity_suffixes": [
+            7,
+            8,
+            9
+          ],
+          "line": 24,
+          "title": "题干第二问没有对应作答或评价",
+          "counterexample": "第7题同时问23拿走1是多少，以及单变双还是双变单。界面只能选22等一个数字；孩子选22却口头说“双变单”，系统仍直接判对，实际未核验第二个目标。",
+          "recommendation": "把单双解释明确放到家长追问，或增加独立回答维度。",
+          "status": "confirmed-before-parent-fix",
+          "file": "src/curriculum/exploration/math.ts",
+          "activity_ids": [
+            "explore-parity-place-value-7",
+            "explore-parity-place-value-8",
+            "explore-parity-place-value-9"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "N11",
+      "title": "数列、交错规律与数表",
+      "domain": "math",
+      "status": "partial",
+      "reviewEvidence": "research/math-logic.json",
+      "matrixTarget": "从固定增减到交错/递增差，再与颜色容器属性独立变化",
+      "sourceRefs": [
+        {
+          "source_id": "S100",
+          "locator": "3-4"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide4"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide21"
+        },
+        {
+          "source_id": "S067",
+          "locator": "39"
+        },
+        {
+          "source_id": "S067",
+          "locator": "41"
+        },
+        {
+          "source_id": "S067",
+          "locator": "57-64"
+        },
+        {
+          "source_id": "S120",
+          "locator": "32"
+        }
+      ],
+      "currentGaps": [
+        "递减、递增差或规则比较而非只求末位",
+        "数字与容器形状、底色、字色联合且独立变化",
+        "多空位补表并逐条回验（当前只有最后一个问号）"
+      ],
+      "details": {
+        "code": {
+          "file": "src/curriculum/exploration/math.ts",
+          "line": 25
+        },
+        "sources_reviewed": [
+          {
+            "source_id": "S100",
+            "source_path": "上实幼升小资料合集/学而思幼升小计算衔接课/观察力—数列规律篇.pdf",
+            "locator": "PDF p003",
+            "observed": "递减序列29、22、空、空、1；比较几行数列谁规则不同",
+            "review": "full-page-image-read"
+          },
+          {
+            "source_id": "S067",
+            "source_path": "上实幼升小资料合集/上实习题/上实图形题2 - 无答案.pdf",
+            "locator": "PDF p039",
+            "observed": "数值+2、底形三循环、字色两循环，需要同时判断多个属性",
+            "review": "full-page-image-read"
+          },
+          {
+            "source_id": "S067",
+            "source_path": "上实幼升小资料合集/上实习题/上实图形题2 - 无答案.pdf",
+            "locator": "PDF p041",
+            "observed": "两格内数字变化和黄色位置变化联合",
+            "review": "full-page-image-read"
+          }
+        ],
+        "independent_check": {
+          "rounds": 9,
+          "cases": 9,
+          "errors": 0,
+          "accepted_constraint_enumerations": 0
+        },
+        "actual_interactions": [
+          "singleChoice"
+        ]
+      },
+      "baselineIssues": []
+    },
+    {
+      "id": "N12",
+      "title": "等量替换与图形代数",
+      "domain": "math",
+      "status": "partial",
+      "reviewEvidence": "research/math-logic.json",
+      "matrixTarget": "多条等式代换与回代，推理链长和数值范围分开控制",
+      "sourceRefs": [
+        {
+          "source_id": "S105",
+          "locator": "slide6"
+        },
+        {
+          "source_id": "S071",
+          "locator": "render4-5"
+        },
+        {
+          "source_id": "S063",
+          "locator": "image-lower"
+        }
+      ],
+      "currentGaps": [
+        "三种图形、三条等式的链式代换与回代（当前最多两种图形）",
+        "实物等量兑换或天平关系到符号式的桥接",
+        "主动输入/摆放中间推理与回代检验"
+      ],
+      "details": {
+        "code": {
+          "file": "src/curriculum/exploration/math.ts",
+          "line": 26
+        },
+        "sources_reviewed": [
+          {
+            "source_id": "S105",
+            "source_path": "上实幼升小资料合集/幼升小卓基思维题总结.pptx",
+            "locator": "slide6，第17–18题",
+            "observed": "太阳+月亮=8、两颗心=4、太阳+心=5，再求太阳+两个月亮；三变量三关系",
+            "review": "full-page-image-read"
+          }
+        ],
+        "independent_check": {
+          "rounds": 9,
+          "cases": 9,
+          "errors": 0,
+          "accepted_constraint_enumerations": 0
+        },
+        "actual_interactions": [
+          "singleChoice"
+        ]
+      },
+      "baselineIssues": []
+    },
+    {
+      "id": "N13",
+      "title": "货币兑换、付款与找零",
+      "domain": "math",
+      "status": "partial",
+      "reviewEvidence": "research/math-logic.json",
+      "matrixTarget": "明确面额库存、恰付/付指定总额/找零目标，接受全部合法解",
+      "sourceRefs": [
+        {
+          "source_id": "S104",
+          "locator": "1-4"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide6"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide14"
+        },
+        {
+          "source_id": "S071",
+          "locator": "render9"
+        }
+      ],
+      "currentGaps": [
+        "元与角的等值换算",
+        "多商品合计、商品价差与最贵最便宜",
+        "在有限库存下列出不同非恰付款，并分别计算找零",
+        "实际生成付钱方案，避免只在七张预列方案中挑选",
+        "至少安排合计正确但钱币超库存的方案，使库存条件具有区分力。"
+      ],
+      "details": {
+        "code": {
+          "file": "src/curriculum/exploration/math.ts",
+          "line": 28
+        },
+        "sources_reviewed": [
+          {
+            "source_id": "S104",
+            "source_path": "上实幼升小资料合集/学而思幼升小计算衔接课/运算能力——理财篇.pdf",
+            "locator": "PDF p003",
+            "observed": "1元/2元换角、多商品合计/差价、16元商品按10/20/5元库存列付钱与找零方案",
+            "review": "full-page-image-read"
+          },
+          {
+            "source_id": "S105",
+            "source_path": "上实幼升小资料合集/幼升小卓基思维题总结.pptx",
+            "locator": "slide14，第38题",
+            "observed": "多商品价格牌和库存信息，静态页缺口述完整条件，不能判定该题完全等价",
+            "review": "full-page-image-read"
+          }
+        ],
+        "independent_check": {
+          "rounds": 9,
+          "cases": 9,
+          "errors": 0,
+          "accepted_constraint_enumerations": 0
+        },
+        "actual_interactions": [
+          "singleChoice",
+          "multiSelect"
+        ]
+      },
+      "baselineIssues": [
+        {
+          "id": "ML-04",
+          "severity": "P2",
+          "activity_suffixes": [
+            7,
+            8,
+            9
+          ],
+          "line": 31,
+          "title": "有限库存约束没有影响任何答案",
+          "counterexample": "第7–9题目标只有5/6/7元；预列方案中唯一超库存的[5,5]合计10元，本来就会被总额排除。忽略“只有一张5元、七枚1元”条件，三题的正确集合完全不变，因此不能由通过推断孩子检查过库存。",
+          "recommendation": "至少安排合计正确但钱币超库存的方案，使库存条件具有区分力。",
+          "status": "confirmed",
+          "file": "src/curriculum/exploration/math.ts",
+          "activity_ids": [
+            "explore-money-shopping-7",
+            "explore-money-shopping-8",
+            "explore-money-shopping-9"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "N14",
+      "title": "时刻、刻度与经过时间",
+      "domain": "math",
+      "status": "partial",
+      "reviewEvidence": "research/math-logic.json",
+      "matrixTarget": "从00/30分扩到五分钟刻度和简单跨整点经过时间，钟针同源",
+      "sourceRefs": [
+        {
+          "source_id": "S105",
+          "locator": "slide16"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide24"
+        },
+        {
+          "source_id": "S071",
+          "locator": "render8"
+        }
+      ],
+      "currentGaps": [
+        "给时间语言从多只钟中选正确钟（方向相反的任务）",
+        "整点与半点对照、亲自拨针/按事件排序的矩阵承诺",
+        "动态钟与提示音定格任务需原刺激或明确原创替代，不属于本轮已核验范围"
+      ],
+      "details": {
+        "code": {
+          "file": "src/curriculum/exploration/math.ts",
+          "line": 32
+        },
+        "sources_reviewed": [
+          {
+            "source_id": "S105",
+            "source_path": "上实幼升小资料合集/幼升小卓基思维题总结.pptx",
+            "locator": "slide16，第42–43题",
+            "observed": "静态看钟选数字，当前核心已实现；原例包含3:00",
+            "review": "full-page-image-read"
+          },
+          {
+            "source_id": "S105",
+            "source_path": "上实幼升小资料合集/幼升小卓基思维题总结.pptx",
+            "locator": "slide24，第66题",
+            "observed": "听/读half past 8，从四只钟中选钟，当前N14没有反向选择钟的任务",
+            "review": "full-page-image-read"
+          }
+        ],
+        "independent_check": {
+          "rounds": 9,
+          "cases": 9,
+          "errors": 0,
+          "accepted_constraint_enumerations": 0
+        },
+        "actual_interactions": [
+          "singleChoice"
+        ]
+      },
+      "baselineIssues": []
+    },
+    {
+      "id": "N15",
+      "title": "自然测量、长度、周长与量感",
+      "domain": "math",
+      "status": "partial",
+      "reviewEvidence": "research/math-logic.json",
+      "matrixTarget": "用同单位/方格或学具比较长度，区分边界长度与覆盖面积，复杂几何计算只取规则改编",
+      "sourceRefs": [
+        {
+          "source_id": "S113",
+          "locator": "2-5"
+        },
+        {
+          "source_id": "S070",
+          "locator": "38"
+        },
+        {
+          "source_id": "S074",
+          "locator": "81"
+        }
+      ],
+      "currentGaps": [
+        "弯曲长度比较、拉直/重叠或统一单位实测",
+        "多段折线长度和边界长度相对于覆盖面积的辨别",
+        "家长实物测量记录，而非全为公式/读刻度单选"
+      ],
+      "details": {
+        "code": {
+          "file": "src/curriculum/exploration/math.ts",
+          "line": 33
+        },
+        "sources_reviewed": [
+          {
+            "source_id": "S113",
+            "source_path": "上实幼升小资料合集/百花思维训练/百花学习塾—05.pdf",
+            "locator": "PDF p003，印刷3页",
+            "observed": "比较端点接近的多条弯曲带，不能直接按水平跨度判断长度",
+            "review": "full-page-image-read"
+          },
+          {
+            "source_id": "S070",
+            "source_path": "上实幼升小资料合集/上实幼升小必刷200道题.pdf",
+            "locator": "PDF p038，印刷63页",
+            "observed": "沿方格曲折路径数单位长度，再比较四条绳子长短",
+            "review": "full-page-image-read"
+          }
+        ],
+        "independent_check": {
+          "rounds": 9,
+          "cases": 9,
+          "errors": 0,
+          "accepted_constraint_enumerations": 0
+        },
+        "actual_interactions": [
+          "singleChoice"
+        ]
+      },
+      "baselineIssues": []
+    },
+    {
+      "id": "N16",
+      "title": "日历、星期与周期推算",
+      "domain": "math",
+      "status": "partial",
+      "reviewEvidence": "research/math-logic.json",
+      "matrixTarget": "读取日历布局，按七天循环推算，月份天数与实际给定日历一致",
+      "sourceRefs": [
+        {
+          "source_id": "S070",
+          "locator": "29"
+        }
+      ],
+      "currentGaps": [
+        "实际给定月份中某星期出现几次",
+        "给某日期的星期，不依赖完整日历推另一日期星期",
+        "不同月份长度和月初位置；当前九题同一28天、周一起始练习表"
+      ],
+      "details": {
+        "code": {
+          "file": "src/curriculum/exploration/math.ts",
+          "line": 34
+        },
+        "sources_reviewed": [
+          {
+            "source_id": "S070",
+            "source_path": "上实幼升小资料合集/上实幼升小必刷200道题.pdf",
+            "locator": "PDF p029，印刷35页",
+            "observed": "2020年6月含30天，问一月有几个周一/周四，另给9月10日周四推9月15日",
+            "review": "full-page-image-read"
+          }
+        ],
+        "independent_check": {
+          "rounds": 9,
+          "cases": 9,
+          "errors": 0,
+          "accepted_constraint_enumerations": 0
+        },
+        "actual_interactions": [
+          "singleChoice"
+        ]
+      },
+      "baselineIssues": []
+    },
+    {
+      "id": "L01",
+      "title": "多角度分类与多选集合",
+      "domain": "logic",
+      "status": "core-covered",
+      "reviewEvidence": "research/math-logic.json",
+      "matrixTarget": "相同材料换规则分组，多选同类/异类并说明共同条件",
+      "sourceRefs": [
+        {
+          "source_id": "S099",
+          "locator": "3-5"
+        },
+        {
+          "source_id": "S002",
+          "locator": "4-5"
+        },
+        {
+          "source_id": "S120",
+          "locator": "12-14"
+        }
+      ],
+      "currentGaps": [
+        "可补充让孩子自己提出分类规则；当前使用给定规则（提升项，不否定中心闭环）",
+        "具体日用品/食品功能分类可由生活域交叉覆盖，不能由此题族单独证明"
+      ],
+      "details": {
+        "code": {
+          "file": "src/curriculum/exploration/logic.ts",
+          "line": 18
+        },
+        "sources_reviewed": [
+          {
+            "source_id": "S099",
+            "source_path": "上实幼升小资料合集/学而思幼升小计算衔接课/观察力—常识观察篇.pdf",
+            "locator": "PDF p004–005中的p004已放大",
+            "observed": "原页要求生活用品对应房间，并提出蛋糕的多种分类；当前色形材料已落实换规则与多条件",
+            "review": "full-page-image-read"
+          }
+        ],
+        "independent_check": {
+          "rounds": 9,
+          "cases": 9,
+          "errors": 0,
+          "accepted_constraint_enumerations": 0
+        },
+        "actual_interactions": [
+          "multiSelect"
+        ]
+      },
+      "baselineIssues": []
+    },
+    {
+      "id": "L02",
+      "title": "关系配对与类比",
+      "domain": "logic",
+      "status": "partial",
+      "reviewEvidence": "research/math-logic.json",
+      "matrixTarget": "从物品用途配对进入整体部分、类别和关系迁移",
+      "sourceRefs": [
+        {
+          "source_id": "S105",
+          "locator": "slide11"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide20"
+        },
+        {
+          "source_id": "S099",
+          "locator": "4"
+        }
+      ],
+      "currentGaps": [
+        "物品用途/整体部分的关系配对",
+        "A:B::C:?式关系迁移，不是“同形找同形”",
+        "有外形相似但关系不同的干扰选项"
+      ],
+      "details": {
+        "code": {
+          "file": "src/curriculum/exploration/logic.ts",
+          "line": 19
+        },
+        "sources_reviewed": [
+          {
+            "source_id": "S105",
+            "source_path": "上实幼升小资料合集/幼升小卓基思维题总结.pptx",
+            "locator": "slide20，第53题",
+            "observed": "头→帽子，脚→鞋的类比迁移",
+            "review": "full-page-image-read"
+          },
+          {
+            "source_id": "S099",
+            "source_path": "上实幼升小资料合集/学而思幼升小计算衔接课/观察力—常识观察篇.pdf",
+            "locator": "PDF p004",
+            "observed": "多种生活用品按使用房间匹配；可能由P01交叉补一部分，需主报告合并核对",
+            "review": "full-page-image-read"
+          }
+        ],
+        "independent_check": {
+          "rounds": 9,
+          "cases": 96,
+          "errors": 0,
+          "accepted_constraint_enumerations": 12
+        },
+        "actual_interactions": [
+          "matching"
+        ]
+      },
+      "baselineIssues": []
+    },
+    {
+      "id": "L03",
+      "title": "传递关系、排序与证据不足",
+      "domain": "logic",
+      "status": "partial",
+      "reviewEvidence": "research/math-logic.json",
+      "matrixTarget": "用多条快慢/高矮/轻重关系排顺序，不能确定时保留未知",
+      "sourceRefs": [
+        {
+          "source_id": "S105",
+          "locator": "slide7-8"
+        },
+        {
+          "source_id": "S071",
+          "locator": "render8"
+        },
+        {
+          "source_id": "S019",
+          "locator": "16"
+        },
+        {
+          "source_id": "S019",
+          "locator": "18"
+        },
+        {
+          "source_id": "S111",
+          "locator": "2-4"
+        },
+        {
+          "source_id": "S112",
+          "locator": "2-4"
+        },
+        {
+          "source_id": "S115",
+          "locator": "8-10"
+        }
+      ],
+      "currentGaps": [
+        "从天平倾斜/轻重、长度或速度的图形证据读出比较关系",
+        "混合正反表达与部分序下的多种合法排序",
+        "当前stage3仅同一个不足信息模板换三位对象"
+      ],
+      "details": {
+        "code": {
+          "file": "src/curriculum/exploration/logic.ts",
+          "line": 20
+        },
+        "sources_reviewed": [
+          {
+            "source_id": "S111",
+            "source_path": "上实幼升小资料合集/百花思维训练/百花学习塾—03.pdf",
+            "locator": "PDF p003，印刷3页",
+            "observed": "两架不同方向倾斜天平给重量传递关系，判断第三架倾斜；当前纯文字前后链没有解码图示的过程",
+            "review": "full-page-image-read"
+          }
+        ],
+        "independent_check": {
+          "rounds": 9,
+          "cases": 93,
+          "errors": 0,
+          "accepted_constraint_enumerations": 6
+        },
+        "actual_interactions": [
+          "orderedPlacement",
+          "singleChoice"
+        ]
+      },
+      "baselineIssues": [],
+      "pilotSupplement": "24 pilot activities include partial-order, immediate-neighbor and multiple-valid-order variants; new-bank gaps do not mean these are absent from the entire app."
+    },
+    {
+      "id": "L04",
+      "title": "多条件排除与填格",
+      "domain": "logic",
+      "status": "partial",
+      "reviewEvidence": "research/math-logic.json",
+      "matrixTarget": "位置、行列、数量等约束同时成立，可撤销和找多解；双属性配表为前置，不等同全局约束求解",
+      "sourceRefs": [
+        {
+          "source_id": "S002",
+          "locator": "14-23"
+        },
+        {
+          "source_id": "S070",
+          "locator": "43"
+        },
+        {
+          "source_id": "S070",
+          "locator": "52"
+        },
+        {
+          "source_id": "S006",
+          "locator": "14-19"
+        },
+        {
+          "source_id": "S114",
+          "locator": "12-13"
+        }
+      ],
+      "currentGaps": [
+        "由行列外数量合计补图格（非Latin每行各一次）",
+        "双属性表按行标题和列标题选图填格",
+        "位置/数量多条件排除，以及需要比较不同合法解的任务"
+      ],
+      "details": {
+        "code": {
+          "file": "src/curriculum/exploration/logic.ts",
+          "line": 25
+        },
+        "sources_reviewed": [
+          {
+            "source_id": "S070",
+            "source_path": "上实幼升小资料合集/上实幼升小必刷200道题.pdf",
+            "locator": "PDF p043，印刷68页",
+            "observed": "给各行各列星星数量，反求缺少星星的位置",
+            "review": "full-page-image-read"
+          },
+          {
+            "source_id": "S002",
+            "source_path": "2024上实机考模拟题【学生版】.pdf",
+            "locator": "PDF p016",
+            "observed": "颜色×文件夹形状双属性矩阵",
+            "review": "full-page-image-read"
+          },
+          {
+            "source_id": "S006",
+            "source_path": "上实幼升小资料合集/31页搞定上实幼升小逻辑推理题.pdf",
+            "locator": "PDF p016",
+            "observed": "颜色×数量双属性表",
+            "review": "full-page-image-read"
+          }
+        ],
+        "independent_check": {
+          "rounds": 9,
+          "cases": 2457,
+          "errors": 0,
+          "accepted_constraint_enumerations": 9
+        },
+        "actual_interactions": [
+          "gridPlacement"
+        ]
+      },
+      "baselineIssues": []
+    },
+    {
+      "id": "L05",
+      "title": "路线约束与一笔走边",
+      "domain": "logic",
+      "status": "partial",
+      "reviewEvidence": "research/math-logic.json",
+      "matrixTarget": "必经、禁入、相对左右和一笔走边；用边ID记录抬笔/重访，来源识别题改编为实际走边",
+      "sourceRefs": [
+        {
+          "source_id": "S070",
+          "locator": "54-55"
+        },
+        {
+          "source_id": "S074",
+          "locator": "12-14"
+        }
+      ],
+      "currentGaps": [
+        "按上下左右多段指令在方格执行路线",
+        "根据行走者朝向判断相对左右、沿路取指定一侧物品",
+        "具有多个规划选择的第一阶与更不同拓扑；当前第一阶唯一链无规划选择",
+        "增加至少一条更长但同样满足其余条件的合法路，同时保留两条等长最优路以接受多解。"
+      ],
+      "details": {
+        "code": {
+          "file": "src/curriculum/exploration/logic.ts",
+          "line": 27
+        },
+        "sources_reviewed": [
+          {
+            "source_id": "S070",
+            "source_path": "上实幼升小资料合集/上实幼升小必刷200道题.pdf",
+            "locator": "PDF p054，印刷47页",
+            "observed": "左右上下复合方向指令在方格中走到彩豆",
+            "review": "full-page-image-read"
+          },
+          {
+            "source_id": "S070",
+            "source_path": "上实幼升小资料合集/上实幼升小必刷200道题.pdf",
+            "locator": "PDF p055，印刷48页",
+            "observed": "按前进方向收左手边金币，涉及转向后的左右更新",
+            "review": "full-page-image-read"
+          }
+        ],
+        "independent_check": {
+          "rounds": 9,
+          "cases": 168,
+          "errors": 0,
+          "accepted_constraint_enumerations": 26
+        },
+        "actual_interactions": [
+          "route"
+        ]
+      },
+      "baselineIssues": [
+        {
+          "id": "ML-05",
+          "severity": "P2",
+          "activity_suffixes": [
+            4,
+            5,
+            6
+          ],
+          "line": 40,
+          "title": "最短路线条件在全部三题中不起区分作用",
+          "counterexample": "独立穷举必经点、封路、不重复路段约束下的合法路线，第4题长度[3,3]，第5题[3]，第6题[3,3]，没有更长的合法路线。只要走通必然是最短，未练习“合法但可更短”的比较。",
+          "recommendation": "增加至少一条更长但同样满足其余条件的合法路，同时保留两条等长最优路以接受多解。",
+          "status": "confirmed",
+          "file": "src/curriculum/exploration/logic.ts",
+          "activity_ids": [
+            "explore-route-constraints-4",
+            "explore-route-constraints-5",
+            "explore-route-constraints-6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L06",
+      "title": "多步计划、优先级与纠错",
+      "domain": "logic",
+      "status": "partial",
+      "reviewEvidence": "research/math-logic.json",
+      "matrixTarget": "从故事先后与路线执行发展完整计划、依赖说明和修正步骤；完整计划为保留原能力目标的产品扩展",
+      "sourceRefs": [
+        {
+          "source_id": "S069",
+          "locator": "35"
+        },
+        {
+          "source_id": "S069",
+          "locator": "42"
+        },
+        {
+          "source_id": "S070",
+          "locator": "54-55"
+        }
+      ],
+      "currentGaps": [
+        "完整自主计划、多个可并行步骤或优先级冲突",
+        "识别局部反例、只修改错误环节并解释必要依赖",
+        "当前第三阶与第二阶正确序列相同，直接给全部相邻依赖，不产生新的纠错推理"
+      ],
+      "details": {
+        "code": {
+          "file": "src/curriculum/exploration/logic.ts",
+          "line": 54
+        },
+        "sources_reviewed": [
+          {
+            "source_id": "S069",
+            "source_path": "上实幼升小资料合集/上实幼升小常考七大专题密训.pdf",
+            "locator": "PDF p035",
+            "observed": "毛线→编织过程中两幅→围巾完成的四图排序；当前基础顺序已覆盖，完整计划是产品扩展，尚未完成",
+            "review": "full-page-image-read"
+          }
+        ],
+        "independent_check": {
+          "rounds": 9,
+          "cases": 162,
+          "errors": 0,
+          "accepted_constraint_enumerations": 9
+        },
+        "actual_interactions": [
+          "orderedPlacement"
+        ]
+      },
+      "baselineIssues": []
+    },
+    {
+      "id": "L07",
+      "title": "条件证据与反向编线索",
+      "domain": "logic",
+      "status": "partial",
+      "reviewEvidence": "research/math-logic.json",
+      "matrixTarget": "用足条件并指出排除依据，为确定目标编线索；区分来源确定性匹配与应用中的开放解释",
+      "sourceRefs": [
+        {
+          "source_id": "S070",
+          "locator": "38"
+        },
+        {
+          "source_id": "S070",
+          "locator": "42"
+        },
+        {
+          "source_id": "S006",
+          "locator": "28-32"
+        }
+      ],
+      "currentGaps": [
+        "3种以上独立属性/多条证据的必要性与冗余性分析",
+        "应用内完整提供九张材料图卡或可打印模板；当前需家长自行准备"
+      ],
+      "details": {
+        "code": {
+          "file": "src/curriculum/exploration/logic.ts",
+          "line": 56
+        },
+        "sources_reviewed": [
+          {
+            "source_id": "S070",
+            "source_path": "上实幼升小资料合集/上实幼升小必刷200道题.pdf",
+            "locator": "PDF p038，印刷63页",
+            "observed": "从不喜欢蓝色、圆柱、三角标记、喜欢红色等四条描述选目标，需处理多属性和冗余信息",
+            "review": "full-page-image-read"
+          },
+          {
+            "source_id": "S006",
+            "source_path": "上实幼升小资料合集/31页搞定上实幼升小逻辑推理题.pdf",
+            "locator": "PDF p029",
+            "observed": "房屋形状、屋顶色、窗户布局和数量的多属性材料；原题完整口述条件未从该页获得",
+            "review": "full-page-image-read"
+          }
+        ],
+        "independent_check": {
+          "rounds": 9,
+          "cases": 9,
+          "errors": 0,
+          "accepted_constraint_enumerations": 0
+        },
+        "actual_interactions": [
+          "multiSelect",
+          "parentObservation"
+        ]
+      },
+      "baselineIssues": [
+        {
+          "id": "ML-03",
+          "severity": "P2",
+          "activity_suffixes": [
+            7,
+            8,
+            9
+          ],
+          "line": 56,
+          "title": "公开题干泄露本应隐藏的目标",
+          "counterexample": "第7题题干已向共同看屏幕的家长展示“红色圆形”，步骤又说先不告诉家长选了哪张并让家长找。即使孩子只说“红色”，家长也能凭题干命中，不能用命中证明两条线索足够。",
+          "recommendation": "孩子悄悄选任意目标、家长回避目标页；或改为不声称隐藏猜测的线索分析任务。",
+          "status": "confirmed-before-parent-fix",
+          "file": "src/curriculum/exploration/logic.ts",
+          "activity_ids": [
+            "explore-evidence-reasoning-7",
+            "explore-evidence-reasoning-8",
+            "explore-evidence-reasoning-9"
+          ]
+        }
+      ],
+      "resolvedThisPass": [
+        "Prompt no longer discloses a fixed target; child privately chooses and provides clues."
+      ]
+    },
+    {
+      "id": "L08",
+      "title": "现场学规则与迁移",
+      "domain": "logic",
+      "status": "partial",
+      "reviewEvidence": "research/math-logic.json",
+      "matrixTarget": "先演示未知规则，再独立应用与反向推断，区分模仿和迁移",
+      "sourceRefs": [
+        {
+          "source_id": "S003",
+          "locator": "5-8"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide13-14"
+        },
+        {
+          "source_id": "S117",
+          "locator": "23-25"
+        }
+      ],
+      "currentGaps": [
+        "根据示例发现未知的图形转换，而不是始终明示加法规则",
+        "换材料/新符号编码迁移（手势表示数字、数轴定义等）",
+        "由输出反推输入或多机器组合并说明过程"
+      ],
+      "details": {
+        "code": {
+          "file": "src/curriculum/exploration/logic.ts",
+          "line": 58
+        },
+        "sources_reviewed": [
+          {
+            "source_id": "S105",
+            "source_path": "上实幼升小资料合集/幼升小卓基思维题总结.pptx",
+            "locator": "slide13，第35–36题",
+            "observed": "图形内外互换、左右翻转规则，用新对象迁移",
+            "review": "full-page-image-read"
+          },
+          {
+            "source_id": "S105",
+            "source_path": "上实幼升小资料合集/幼升小卓基思维题总结.pptx",
+            "locator": "slide14，第37题",
+            "observed": "旋转规则跨对象迁移",
+            "review": "full-page-image-read"
+          },
+          {
+            "source_id": "S003",
+            "source_path": "上实幼升小资料合集/2016-2022上实面试真题（回忆版） .pdf",
+            "locator": "PDF p005–008，文本核对",
+            "observed": "现场学手势表示数字/数轴，再按跳跃轨迹写算式等；本轮未逐页渲染该PDF",
+            "review": "text-read"
+          }
+        ],
+        "independent_check": {
+          "rounds": 9,
+          "cases": 9,
+          "errors": 0,
+          "accepted_constraint_enumerations": 0
+        },
+        "actual_interactions": [
+          "singleChoice"
+        ]
+      },
+      "baselineIssues": []
+    },
+    {
+      "id": "L09",
+      "title": "状态翻转与操作结果",
+      "domain": "logic",
+      "status": "partial",
+      "reviewEvidence": "research/math-logic.json",
+      "matrixTarget": "灯、黑白棋/格的开关翻转，先真实操作再归纳次数与结果",
+      "sourceRefs": [
+        {
+          "source_id": "S105",
+          "locator": "slide19"
+        },
+        {
+          "source_id": "S075",
+          "locator": "1"
+        }
+      ],
+      "currentGaps": [
+        "真实点击翻转并保留操作过程",
+        "给目标状态倒推操作次数和顺序",
+        "同/异组合的黑白格运算不是单张翻面；若由G域承担，需交叉映射"
+      ],
+      "details": {
+        "code": {
+          "file": "src/curriculum/exploration/logic.ts",
+          "line": 59
+        },
+        "sources_reviewed": [
+          {
+            "source_id": "S075",
+            "source_path": "上实幼升小资料合集/图推1000题/图形推理规律（4栏A3）(1).pdf",
+            "locator": "PDF p001-col1局部原页",
+            "observed": "黑白运算、保留相同/不同等运算规则；与单卡开关不等价",
+            "review": "full-page-image-read"
+          },
+          {
+            "source_id": "S105",
+            "source_path": "上实幼升小资料合集/幼升小卓基思维题总结.pptx",
+            "locator": "slide19",
+            "observed": "第49/51题静态渲染没有实际刺激，只有编号和选项；对应具体任务无法核验",
+            "review": "full-page-image-read"
+          }
+        ],
+        "independent_check": {
+          "rounds": 9,
+          "cases": 9,
+          "errors": 0,
+          "accepted_constraint_enumerations": 0
+        },
+        "actual_interactions": [
+          "gridPlacement"
+        ]
+      },
+      "baselineIssues": []
+    },
+    {
+      "id": "L10",
+      "title": "步长规则、多角色移动与交会",
+      "domain": "logic",
+      "status": "partial",
+      "reviewEvidence": "research/math-logic.json",
+      "matrixTarget": "按角色每步格数与轮次更新位置，解释相遇条件，不把原题误改为速度竞赛",
+      "sourceRefs": [
+        {
+          "source_id": "S119",
+          "locator": "6-8"
+        },
+        {
+          "source_id": "S119",
+          "locator": "24"
+        },
+        {
+          "source_id": "S106",
+          "locator": "10"
+        },
+        {
+          "source_id": "S106",
+          "locator": "15"
+        }
+      ],
+      "currentGaps": [
+        "不同角色在二维网格多轮交会，判断谁与谁会相遇或不相遇",
+        "根据手势/规则序列变化的每步步长",
+        "逆推轮次、起点或步长；按过程而非只填终点"
+      ],
+      "details": {
+        "code": {
+          "file": "src/curriculum/exploration/logic.ts",
+          "line": 60
+        },
+        "sources_reviewed": [
+          {
+            "source_id": "S119",
+            "source_path": "上实幼升小资料合集/百花思维训练/百花学习塾—11.pdf",
+            "locator": "PDF p007，印刷9页",
+            "observed": "石头剪刀布等手势对应不同跨阶，按每角色手势序列爬楼梯",
+            "review": "full-page-image-read"
+          },
+          {
+            "source_id": "S106",
+            "source_path": "上实幼升小资料合集/百花思维训练/10-12答案解答.pdf",
+            "locator": "PDF p015，印刷64页左下",
+            "observed": "小狗1格、小猫2格、老鼠3格在二维网格直行，标相遇位置或不相遇",
+            "review": "full-page-image-read"
+          }
+        ],
+        "independent_check": {
+          "rounds": 9,
+          "cases": 9,
+          "errors": 0,
+          "accepted_constraint_enumerations": 0
+        },
+        "actual_interactions": [
+          "orderedPlacement"
+        ]
+      },
+      "baselineIssues": []
+    },
+    {
+      "id": "L11",
+      "title": "棋盘排列、连珠与翻转策略",
+      "domain": "logic",
+      "status": "partial",
+      "reviewEvidence": "research/math-logic.json",
+      "matrixTarget": "行列/斜线规则、补一连线、选择翻转位置，区分规则有效与最优策略",
+      "sourceRefs": [
+        {
+          "source_id": "S119",
+          "locator": "23"
+        },
+        {
+          "source_id": "S119",
+          "locator": "26-27"
+        },
+        {
+          "source_id": "S106",
+          "locator": "15"
+        }
+      ],
+      "currentGaps": [
+        "在较大棋盘找连续4个空格并连线",
+        "补一子同时形成横竖斜的5连珠并消去",
+        "实际落子后翻转/消去的后果对比；当前显示候选棋盘选项，未反馈棋子状态变化"
+      ],
+      "details": {
+        "code": {
+          "file": "src/curriculum/exploration/logic.ts",
+          "line": 62
+        },
+        "sources_reviewed": [
+          {
+            "source_id": "S119",
+            "source_path": "上实幼升小资料合集/百花思维训练/百花学习塾—11.pdf",
+            "locator": "PDF p023，印刷41页",
+            "observed": "4组排列：从有障碍的棋盘找连续4个空格",
+            "review": "full-page-image-read"
+          },
+          {
+            "source_id": "S119",
+            "source_path": "上实幼升小资料合集/百花思维训练/百花学习塾—11.pdf",
+            "locator": "PDF p026，印刷47页",
+            "observed": "排列消去：补一子连5",
+            "review": "full-page-image-read"
+          },
+          {
+            "source_id": "S119",
+            "source_path": "上实幼升小资料合集/百花思维训练/百花学习塾—11.pdf",
+            "locator": "PDF p027，印刷49页",
+            "observed": "黑白棋夹取翻转",
+            "review": "full-page-image-read"
+          },
+          {
+            "source_id": "S106",
+            "source_path": "上实幼升小资料合集/百花思维训练/10-12答案解答.pdf",
+            "locator": "PDF p015，印刷64–65页",
+            "observed": "明确三类不同规则，不应统称棋盘题后视为全覆盖",
+            "review": "full-page-image-read"
+          }
+        ],
+        "independent_check": {
+          "rounds": 9,
+          "cases": 9,
+          "errors": 0,
+          "accepted_constraint_enumerations": 0
+        },
+        "actual_interactions": [
+          "multiSelect"
+        ]
+      },
+      "baselineIssues": []
+    },
+    {
+      "id": "L12",
+      "title": "连桥网络、度数与全局连通",
+      "domain": "logic",
+      "status": "partial",
+      "reviewEvidence": "research/math-logic.json",
+      "matrixTarget": "每点桥数、水平垂直、至多双桥、不相交和整体连通同时成立；当前桥材料选择题不算此网络能力",
+      "sourceRefs": [
+        {
+          "source_id": "S070",
+          "locator": "40"
+        },
+        {
+          "source_id": "S070",
+          "locator": "44"
+        }
+      ],
+      "currentGaps": [
+        "给定现成的单桥/双桥图，由孩子数桥并填写岛上数字（S070 PDF p044，印刷69页）。当前9题岛上目标度数全已给出，已连桥数由界面自动计算，不是同一任务。",
+        "含几何交叉候选边、需要根据“桥不可相交”排除一种连法的题例。当前4岛周框或6岛周框加中竖线，9题的候选边对都不存在内部交叉。",
+        "原资料9–11岛的不规则布局及更多全局选择，可在上述关键分支补足之后增加；不能只增加同一无交叉周框的数字变式。"
+      ],
+      "details": {
+        "code": {
+          "file": "src/curriculum/exploration/logic.ts",
+          "line": 94
+        },
+        "sources_reviewed": [
+          {
+            "source_id": "S070",
+            "source_path": "上实幼升小资料合集/上实幼升小必刷200道题.pdf",
+            "locator": "PDF p040，印刷65页",
+            "observed": "原规则水平竖直、度数相等、至多双桥、不可交叉、全局连通；实际题面9/11岛。当前基本规则闭环存在，但仅4/6岛",
+            "review": "full-page-image-read"
+          },
+          {
+            "source_id": "S070",
+            "source_path": "上实幼升小资料合集/上实幼升小必刷200道题.pdf",
+            "locator": "PDF p044，印刷69页",
+            "observed": "给定完整桥图，圆圈内留空，要求数每个岛的单/双桥总数并填入数字；左图示例、右图由孩子填写。",
+            "review": "full-page-image-read"
+          }
+        ],
+        "independent_check": {
+          "rounds": 9,
+          "cases": 7047,
+          "errors": 0,
+          "accepted_constraint_enumerations": 16
+        },
+        "actual_interactions": [
+          "network"
+        ],
+        "crossing_boundary_check": {
+          "method": "对每题所有不共享端点的候选边对做严格线段相交检查；孩子只能改变这些预设边的桥数，不能生成其它连线。",
+          "code": "src/curriculum/exploration/logic.ts:94–95",
+          "total_nonincident_edge_pairs": 45,
+          "total_crossings": 0,
+          "rounds": [
+            {
+              "activity_id": "explore-bridge-networks-1",
+              "candidate_edges": 4,
+              "nonincident_edge_pairs": 2,
+              "crossing_pairs": []
+            },
+            {
+              "activity_id": "explore-bridge-networks-2",
+              "candidate_edges": 4,
+              "nonincident_edge_pairs": 2,
+              "crossing_pairs": []
+            },
+            {
+              "activity_id": "explore-bridge-networks-3",
+              "candidate_edges": 4,
+              "nonincident_edge_pairs": 2,
+              "crossing_pairs": []
+            },
+            {
+              "activity_id": "explore-bridge-networks-4",
+              "candidate_edges": 4,
+              "nonincident_edge_pairs": 2,
+              "crossing_pairs": []
+            },
+            {
+              "activity_id": "explore-bridge-networks-5",
+              "candidate_edges": 4,
+              "nonincident_edge_pairs": 2,
+              "crossing_pairs": []
+            },
+            {
+              "activity_id": "explore-bridge-networks-6",
+              "candidate_edges": 4,
+              "nonincident_edge_pairs": 2,
+              "crossing_pairs": []
+            },
+            {
+              "activity_id": "explore-bridge-networks-7",
+              "candidate_edges": 7,
+              "nonincident_edge_pairs": 11,
+              "crossing_pairs": []
+            },
+            {
+              "activity_id": "explore-bridge-networks-8",
+              "candidate_edges": 7,
+              "nonincident_edge_pairs": 11,
+              "crossing_pairs": []
+            },
+            {
+              "activity_id": "explore-bridge-networks-9",
+              "candidate_edges": 7,
+              "nonincident_edge_pairs": 11,
+              "crossing_pairs": []
+            }
+          ],
+          "engine_support": "src/domain/advanced-activity.ts:185–192 存在相交拒绝分支，但当前L12九题无法触发这一几何条件。",
+          "actual_child_task": "孩子练到的是在给定目标度数下补桥并保持连通；没有遇到两条桥几何冲突而必须二选一的情况。"
+        },
+        "read_bridge_boundary_check": {
+          "source": "S070 PDF p044，印刷69页",
+          "source_input": "桥的布局和单/双线已给定，岛数留空",
+          "source_response": "孩子数桥并填各岛度数",
+          "app_input": "各岛目标度数已知，部分现成桥已知",
+          "app_response": "孩子增减预设边的桥数",
+          "app_auto_count": "src/interactions/GraphInteraction.tsx:87–96 自动合计且显示“已连 N”",
+          "not_equivalent_reason": "目标度数和当前桥数都直接显示时，不能用补桥成功推断孩子独立数出现成图中每个岛的度数。没有数字输入也没有独立计数评价。"
+        }
+      },
+      "baselineIssues": []
+    },
+    {
+      "id": "G01",
+      "title": "观察匹配、局部整体与找差",
+      "domain": "graphic",
+      "status": "partial",
+      "reviewEvidence": "research/graphics.json",
+      "matrixTarget": "让孩子直接标证据，控制相似干扰与目标数量",
+      "sourceRefs": [
+        {
+          "source_id": "S099",
+          "locator": "3"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide12"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide22"
+        },
+        {
+          "source_id": "S113",
+          "locator": "14-17"
+        },
+        {
+          "source_id": "S115",
+          "locator": "37"
+        }
+      ],
+      "currentGaps": [
+        "没有局部整体、直接标差、多目标证据搜索。"
+      ],
+      "details": [
+        "9题均为3×3色块整图单选，旋转/镜像只改变参照图。",
+        "修复前源码定位 graphic.ts:67"
+      ],
+      "baselineIssues": [
+        "GRAPHIC-001"
+      ]
+    },
+    {
+      "id": "G02",
+      "title": "遮挡、闭合与纹理补片",
+      "domain": "graphic",
+      "status": "partial",
+      "reviewEvidence": "research/graphics.json",
+      "matrixTarget": "辨认整体与对齐真实局部补片分开，方向尺度受控",
+      "sourceRefs": [
+        {
+          "source_id": "S067",
+          "locator": "1-5"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide12"
+        }
+      ],
+      "currentGaps": [
+        "没有实际对齐补片、闭合缺口、方向/尺度共同操作。"
+      ],
+      "details": [
+        "3题遮挡轮廓，6题4×4纹理缺口中选2×2补片。",
+        "修复前源码定位 graphic.ts:68-72"
+      ],
+      "baselineIssues": [
+        "GRAPHIC-001"
+      ]
+    },
+    {
+      "id": "G03",
+      "title": "多属性序列与行列矩阵",
+      "domain": "graphic",
+      "status": "partial",
+      "reviewEvidence": "research/graphics.json",
+      "matrixTarget": "形状/颜色/方向独立变化的纯图形序列与矩阵，验证行列共同成立",
+      "sourceRefs": [
+        {
+          "source_id": "S067",
+          "locator": "6-8"
+        },
+        {
+          "source_id": "S067",
+          "locator": "11"
+        },
+        {
+          "source_id": "S067",
+          "locator": "23-24"
+        },
+        {
+          "source_id": "S067",
+          "locator": "76"
+        },
+        {
+          "source_id": "S067",
+          "locator": "38"
+        },
+        {
+          "source_id": "S067",
+          "locator": "65"
+        },
+        {
+          "source_id": "S098",
+          "locator": "3-4"
+        }
+      ],
+      "currentGaps": [
+        "没有方向属性、规则归纳的序列；三个台阶主要增加空格，规则事先写明。"
+      ],
+      "details": [
+        "9题颜色按行、形状按列的3×3填格，空格逐级增多。",
+        "修复前源码定位 graphic.ts:73"
+      ],
+      "baselineIssues": [],
+      "pilotSupplement": "Pilot grid already includes row-color/column-shape and Latin variants, including blank cards."
+    },
+    {
+      "id": "G04",
+      "title": "位置移动、循环与反弹",
+      "domain": "graphic",
+      "status": "partial",
+      "reviewEvidence": "research/graphics.json",
+      "matrixTarget": "从序列发现位移规律，区分循环、反弹、静止与双标记移动",
+      "sourceRefs": [
+        {
+          "source_id": "S067",
+          "locator": "12-13"
+        },
+        {
+          "source_id": "S067",
+          "locator": "31"
+        },
+        {
+          "source_id": "S067",
+          "locator": "48"
+        },
+        {
+          "source_id": "S074",
+          "locator": "53-55"
+        },
+        {
+          "source_id": "S045",
+          "locator": "image-upper"
+        }
+      ],
+      "currentGaps": [
+        "没有从序列发现规律、静止规则；双标记阶段所有候选的蓝标记都相同，不能验证是否理解蓝标记规则。"
+      ],
+      "details": [
+        "9题五格直线上的循环/反弹/双标记位置计算。",
+        "修复前源码定位 graphic.ts:74-79"
+      ],
+      "baselineIssues": [
+        "GRAPHIC-001",
+        "GRAPHIC-003"
+      ]
+    },
+    {
+      "id": "G05",
+      "title": "旋转、镜像、缩放与方向性形变",
+      "domain": "graphic",
+      "status": "partial",
+      "reviewEvidence": "research/graphics.json",
+      "matrixTarget": "非对称图形的位置、朝向、整体缩放与横/纵拉伸分别描述，用操作验证变换规则",
+      "sourceRefs": [
+        {
+          "source_id": "S067",
+          "locator": "79"
+        },
+        {
+          "source_id": "S074",
+          "locator": "59-62"
+        },
+        {
+          "source_id": "S071",
+          "locator": "render2"
+        },
+        {
+          "source_id": "S071",
+          "locator": "render6"
+        },
+        {
+          "source_id": "S116",
+          "locator": "23-25"
+        },
+        {
+          "source_id": "S118",
+          "locator": "25-27"
+        },
+        {
+          "source_id": "S120",
+          "locator": "24-26"
+        },
+        {
+          "source_id": "S019",
+          "locator": "6-7"
+        }
+      ],
+      "currentGaps": [
+        "没有可操作变换验证、纵向拉伸、局部变换与独立属性。"
+      ],
+      "details": [
+        "旋转、左右镜像、等比例放大、横向拉伸及旋转后镜像均有题。",
+        "修复前源码定位 graphic.ts:80-83"
+      ],
+      "baselineIssues": [
+        "GRAPHIC-001"
+      ]
+    },
+    {
+      "id": "G06",
+      "title": "叠合、求同、求异与减去",
+      "domain": "graphic",
+      "status": "partial",
+      "reviewEvidence": "research/graphics.json",
+      "matrixTarget": "布尔运算与遮挡顺序分开，透明学具操作后再归纳",
+      "sourceRefs": [
+        {
+          "source_id": "S067",
+          "locator": "16-21"
+        },
+        {
+          "source_id": "S067",
+          "locator": "28-30"
+        },
+        {
+          "source_id": "S067",
+          "locator": "68-70"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide22"
+        },
+        {
+          "source_id": "S118",
+          "locator": "17-20"
+        }
+      ],
+      "currentGaps": [
+        "没有透明学具叠放、从例子归纳未知运算，再迁移的活动。"
+      ],
+      "details": [
+        "逐格并、交、异或、左右差均有明确给定规则。",
+        "修复前源码定位 graphic.ts:84"
+      ],
+      "baselineIssues": [
+        "GRAPHIC-001"
+      ]
+    },
+    {
+      "id": "G07",
+      "title": "图形金字塔与递归组合",
+      "domain": "graphic",
+      "status": "partial",
+      "reviewEvidence": "research/graphics.json",
+      "matrixTarget": "每层结果可验证，分开规则复杂度与需要记住的中间结果",
+      "sourceRefs": [
+        {
+          "source_id": "S067",
+          "locator": "81"
+        },
+        {
+          "source_id": "S067",
+          "locator": "84"
+        },
+        {
+          "source_id": "S074",
+          "locator": "75"
+        },
+        {
+          "source_id": "S074",
+          "locator": "78"
+        }
+      ],
+      "currentGaps": [
+        "中间层全是静态问号，不能填写或逐层验证；仍需记住中间结果，与矩阵target相悖。"
+      ],
+      "details": [
+        "底层2/3/4个图案构成图形金字塔，给定并集或异或后选顶层。",
+        "修复前源码定位 graphic.ts:6-24,85"
+      ],
+      "baselineIssues": [
+        "GRAPHIC-001",
+        "GRAPHIC-004"
+      ]
+    },
+    {
+      "id": "G08",
+      "title": "黑白与颜色编码运算",
+      "domain": "graphic",
+      "status": "partial",
+      "reviewEvidence": "research/graphics.json",
+      "matrixTarget": "先给明确运算例子，空白/白色/未填独立，复杂内外圈规则分级",
+      "sourceRefs": [
+        {
+          "source_id": "S067",
+          "locator": "33"
+        },
+        {
+          "source_id": "S067",
+          "locator": "82-85"
+        },
+        {
+          "source_id": "S074",
+          "locator": "75"
+        },
+        {
+          "source_id": "S074",
+          "locator": "78"
+        }
+      ],
+      "currentGaps": [
+        "没有明确运算例图、黑白/未填的区分、内外圈分别运算、从样例推规则。S074物理p75有上述复杂机制，不能被模3练习计作全部覆盖。"
+      ],
+      "details": [
+        "红0蓝1黄2，逐位置模3相加，长度2/3/4。",
+        "修复前源码定位 graphic.ts:86"
+      ],
+      "baselineIssues": [
+        "GRAPHIC-001"
+      ]
+    },
+    {
+      "id": "G09",
+      "title": "点、线、边、角、面与连通部分",
+      "domain": "graphic",
+      "status": "partial",
+      "reviewEvidence": "research/graphics.json",
+      "matrixTarget": "明确计数单位，可标记证据，组合图形不重不漏；S120 p33仅支持规律着色后数小三角，不作为数全部大小三角的依据",
+      "sourceRefs": [
+        {
+          "source_id": "S074",
+          "locator": "18-20"
+        },
+        {
+          "source_id": "S074",
+          "locator": "25"
+        },
+        {
+          "source_id": "S074",
+          "locator": "28"
+        },
+        {
+          "source_id": "S074",
+          "locator": "31"
+        },
+        {
+          "source_id": "S074",
+          "locator": "34"
+        },
+        {
+          "source_id": "S074",
+          "locator": "39-41"
+        },
+        {
+          "source_id": "S067",
+          "locator": "14"
+        },
+        {
+          "source_id": "S074",
+          "locator": "78-lower"
+        },
+        {
+          "source_id": "S072",
+          "locator": "1"
+        },
+        {
+          "source_id": "S120",
+          "locator": "33-colored-small-triangles"
+        }
+      ],
+      "currentGaps": [
+        "没有交点/切点计数、曲直/角分类、复合面积周长规律、可标记的不重不漏证据。最后一题突然要求60个长方形，缺少可操作分类支架。"
+      ],
+      "details": [
+        "边/角/顶点、小格面、交点分割线段、连通分量、3×4格中所有长方形。",
+        "修复前源码定位 graphic.ts:87-110"
+      ],
+      "baselineIssues": []
+    },
+    {
+      "id": "G10",
+      "title": "对称轴与对称关系",
+      "domain": "graphic",
+      "status": "partial",
+      "reviewEvidence": "research/graphics.json",
+      "matrixTarget": "用折叠或镜面验证，比较轴位置/数量并解释不对称处",
+      "sourceRefs": [
+        {
+          "source_id": "S076",
+          "locator": "3"
+        },
+        {
+          "source_id": "S074",
+          "locator": "4"
+        },
+        {
+          "source_id": "S074",
+          "locator": "7-8"
+        }
+      ],
+      "currentGaps": [
+        "没有折叠/镜面验证动作，不能直接标出不重合部位；来源对应页本轮未重看。"
+      ],
+      "details": [
+        "9题多选竖/横/两条斜轴；形状与色块整体对称判定。",
+        "修复前源码定位 graphic.ts:111"
+      ],
+      "baselineIssues": []
+    },
+    {
+      "id": "G11",
+      "title": "开闭、曲直、接触、交叉与内外",
+      "domain": "graphic",
+      "status": "partial",
+      "reviewEvidence": "research/graphics.json",
+      "matrixTarget": "直接标出开口/接触点等证据，图线精度不能改变语义",
+      "sourceRefs": [
+        {
+          "source_id": "S074",
+          "locator": "31"
+        },
+        {
+          "source_id": "S074",
+          "locator": "46"
+        },
+        {
+          "source_id": "S074",
+          "locator": "51"
+        },
+        {
+          "source_id": "S072",
+          "locator": "1"
+        }
+      ],
+      "currentGaps": [
+        "缺开闭、曲直和证据点标注；相交用不透明填色，后圆遮住前圆一段边界，边界交叉不如透明轮廓明确。"
+      ],
+      "details": [
+        "包含、相切、相交、分离以及连通判断。",
+        "修复前源码定位 graphic.ts:112-116"
+      ],
+      "baselineIssues": [
+        "GRAPHIC-001"
+      ]
+    },
+    {
+      "id": "G12",
+      "title": "功能标记与不变量",
+      "domain": "graphic",
+      "status": "partial",
+      "reviewEvidence": "research/graphics.json",
+      "matrixTarget": "理解标记与边角/区域的关系，而非只跟踪标记颜色位置",
+      "sourceRefs": [
+        {
+          "source_id": "S074",
+          "locator": "51"
+        },
+        {
+          "source_id": "S075",
+          "locator": "1"
+        }
+      ],
+      "currentGaps": [
+        "只覆盖最基础内外关系；S074物理p51的角/特殊区域/多图形功能标记与保持不变量未覆盖。"
+      ],
+      "details": [
+        "点中心在圆/方/三角的内部、边界、外部。",
+        "修复前源码定位 graphic.ts:117-130"
+      ],
+      "baselineIssues": [
+        "GRAPHIC-001"
+      ]
+    },
+    {
+      "id": "G13",
+      "title": "符号编码与多位对应",
+      "domain": "graphic",
+      "status": "core-covered",
+      "reviewEvidence": "research/graphics.json",
+      "matrixTarget": "从单图查表到多位编码和反向对应，重复符号须一致",
+      "sourceRefs": [
+        {
+          "source_id": "S028",
+          "locator": "image-lower"
+        },
+        {
+          "source_id": "S044",
+          "locator": "image-upper"
+        },
+        {
+          "source_id": "S050",
+          "locator": "image-lower"
+        }
+      ],
+      "currentGaps": [
+        "来源照片S028/S044/S050本轮未重新打开；该结论是核心机制覆盖，不是三张原题逐题等价。"
+      ],
+      "details": [
+        "3/4位正向、5位反向图形数字编码，重复符号沿用同一对应表，全部位置可填。",
+        "修复前源码定位 graphic.ts:131"
+      ],
+      "baselineIssues": []
+    },
+    {
+      "id": "G14",
+      "title": "平面与立体拼搭、分割、缺件与多解构形",
+      "domain": "graphic",
+      "status": "partial",
+      "reviewEvidence": "research/graphics.json",
+      "matrixTarget": "用真实平面/立体部件组合，验证方向、覆盖、补块和多种合法拼法",
+      "sourceRefs": [
+        {
+          "source_id": "S077",
+          "locator": "4"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide11-12"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide21"
+        },
+        {
+          "source_id": "S074",
+          "locator": "99"
+        },
+        {
+          "source_id": "S074",
+          "locator": "101-q29-30"
+        },
+        {
+          "source_id": "S111",
+          "locator": "14-17"
+        },
+        {
+          "source_id": "S116",
+          "locator": "15-18"
+        }
+      ],
+      "currentGaps": [
+        "第三阶段每块都在单层，只有绕z轴旋转，实际是两张独立平面；无跨层部件/真正三维旋转/分割缺件。旋转预览已在本轮修复并通过浏览器落格核对。"
+      ],
+      "details": [
+        "2D方格部件覆盖，第二阶段L形旋转，第三阶段两层拼搭；评分按占格集合，可接受不同合法覆盖。",
+        "修复前源码定位 graphic.ts:132-145;AdvancedInteraction.tsx:32-38"
+      ],
+      "baselineIssues": [
+        "GRAPHIC-005"
+      ],
+      "resolvedThisPass": [
+        "Preview uses the same rotated cells as actual placement."
+      ]
+    },
+    {
+      "id": "G15",
+      "title": "折纸、剪孔、展开与逆向折痕",
+      "domain": "graphic",
+      "status": "partial",
+      "reviewEvidence": "research/graphics.json",
+      "matrixTarget": "从实物一次折叠到展开预测，明确折线、剪口和方向",
+      "sourceRefs": [
+        {
+          "source_id": "S076",
+          "locator": "3"
+        },
+        {
+          "source_id": "S071",
+          "locator": "render1"
+        },
+        {
+          "source_id": "S115",
+          "locator": "20-23"
+        },
+        {
+          "source_id": "S117",
+          "locator": "17-19"
+        },
+        {
+          "source_id": "S120",
+          "locator": "17-18"
+        }
+      ],
+      "currentGaps": [
+        "后6题把整张4×4格标为折好后的位置，却未画折起的有效半区/四分之一区、折叠方向/过程。逆推只在一项开放亲子观察出现；没有逆向折剪预测题。"
+      ],
+      "details": [
+        "3项亲子折纸观察，后6题一次/两次轴对称打孔。",
+        "修复前源码定位 graphic.ts:146-150"
+      ],
+      "baselineIssues": [
+        "GRAPHIC-001",
+        "GRAPHIC-006"
+      ]
+    },
+    {
+      "id": "G16",
+      "title": "立体分类、隐藏块与三视图",
+      "domain": "graphic",
+      "status": "partial",
+      "reviewEvidence": "research/graphics.json",
+      "matrixTarget": "体素/实体模型统一生成视图和遮挡计数，不能把高度表当三维观察",
+      "sourceRefs": [
+        {
+          "source_id": "S077",
+          "locator": "1-5"
+        },
+        {
+          "source_id": "S074",
+          "locator": "94"
+        },
+        {
+          "source_id": "S074",
+          "locator": "101-q27"
+        },
+        {
+          "source_id": "S112",
+          "locator": "14-17"
+        },
+        {
+          "source_id": "S115",
+          "locator": "11-13"
+        },
+        {
+          "source_id": "S116",
+          "locator": "6-8"
+        }
+      ],
+      "currentGaps": [
+        "隐藏块题同时给全高度表，消除了从遮挡推隐藏数；候选积木没有前/侧观察方向标记。S074物理p94的带标记面、带孔体、复合体视图远超当前高度场。"
+      ],
+      "details": [
+        "实物分类亲子任务、按各摞高度求总数、从前侧上视图选择多个可能搭法。",
+        "修复前源码定位 graphic.ts:151-155;draw.ts:63-78"
+      ],
+      "baselineIssues": []
+    },
+    {
+      "id": "G17",
+      "title": "相对左右与观察者视角",
+      "domain": "graphic",
+      "status": "partial",
+      "reviewEvidence": "research/graphics.json",
+      "matrixTarget": "人物面向、观察者位置与画面左右分别描述，换位后重新推断",
+      "sourceRefs": [
+        {
+          "source_id": "S076",
+          "locator": "3"
+        },
+        {
+          "source_id": "S071",
+          "locator": "render6"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide10"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide25"
+        },
+        {
+          "source_id": "S070",
+          "locator": "52"
+        },
+        {
+          "source_id": "S070",
+          "locator": "54-55"
+        }
+      ],
+      "currentGaps": [
+        "没有观察者换位、多视角同一场景；第三阶段只把左右换成前后，未形成组合迁移；抽象圆也未承载人物朝向的具体线索。"
+      ],
+      "details": [
+        "用中心圆与箭头代表人物，判球在其左/右/前/后。",
+        "修复前源码定位 graphic.ts:156"
+      ],
+      "baselineIssues": []
+    },
+    {
+      "id": "G18",
+      "title": "立方体展开、相邻面与相对面",
+      "domain": "graphic",
+      "status": "partial",
+      "reviewEvidence": "research/graphics.json",
+      "matrixTarget": "用折盒验证少量面标记，再做相邻/相对关系推断",
+      "sourceRefs": [
+        {
+          "source_id": "S074",
+          "locator": "87"
+        },
+        {
+          "source_id": "S073",
+          "locator": "86"
+        },
+        {
+          "source_id": "S117",
+          "locator": "15-16"
+        }
+      ],
+      "currentGaps": [
+        "没有实物展开/折回操作、面图案方向判断、从多个立体观察交叉验证；S074物理p87大量题考折回后的面图案与方向，不能由相邻相对关系替代。"
+      ],
+      "details": [
+        "三个合法展开图，求相对面与相邻面。",
+        "修复前源码定位 graphic.ts:157-162"
+      ],
+      "baselineIssues": []
+    },
+    {
+      "id": "G19",
+      "title": "点阵、方格临摹与空间重建",
+      "domain": "graphic",
+      "status": "partial",
+      "reviewEvidence": "research/graphics.json",
+      "matrixTarget": "用格位/线段重现形状和相对位置，常显模型复制与隐藏后记忆分别标记",
+      "sourceRefs": [
+        {
+          "source_id": "S114",
+          "locator": "14-17"
+        },
+        {
+          "source_id": "S115",
+          "locator": "38"
+        },
+        {
+          "source_id": "S109",
+          "locator": "9"
+        },
+        {
+          "source_id": "S110",
+          "locator": "5-7"
+        }
+      ],
+      "currentGaps": [
+        "没有点阵线段临摹、绘线方向/相对关系重建；4×4只是移动3×3原色块，表现的结构范围有限。"
+      ],
+      "details": [
+        "常显参照下的3×3/4×4蓝白格复制及左右镜像。",
+        "修复前源码定位 graphic.ts:163"
+      ],
+      "baselineIssues": []
+    },
+    {
+      "id": "G20",
+      "title": "透明叠层、遮挡关系与顺序计划",
+      "domain": "graphic",
+      "status": "partial",
+      "reviewEvidence": "research/graphics.json",
+      "matrixTarget": "推断2到4层的先后并实际排列验证，透明叠层与求同/求异布尔运算分开",
+      "sourceRefs": [
+        {
+          "source_id": "S070",
+          "locator": "58"
+        },
+        {
+          "source_id": "S070",
+          "locator": "62"
+        }
+      ],
+      "currentGaps": [
+        "没有透明叠层；排序结果只在槽位呈现，没有按孩子顺序重叠重画以实际验证。S070 p58/62本轮未重看。"
+      ],
+      "details": [
+        "2-4片不透明圆片按遮挡排顺序；当前评分已接受所有与画面一致的顺序。",
+        "修复前源码定位 graphic.ts:164-171"
+      ],
+      "baselineIssues": [
+        "GRAPHIC-002"
+      ],
+      "resolvedThisPass": [
+        "Visible overlap constraints verified on all 100 permutations; no hidden-overlap false rejection."
+      ]
+    },
+    {
+      "id": "A01",
+      "title": "视觉集合记忆与新旧辨认",
+      "domain": "memory",
+      "status": "partial",
+      "reviewEvidence": "research/memory-language-life.json",
+      "matrixTarget": "隐藏后从混合池多选出现/未出现项目，数量和相似干扰独立控制",
+      "sourceRefs": [
+        {
+          "source_id": "S002",
+          "locator": "6-9"
+        },
+        {
+          "source_id": "S101",
+          "locator": "1-3"
+        }
+      ],
+      "currentGaps": [
+        "相似干扰与数量未独立控制，缺同类细差干扰与集合变化的更多原型。"
+      ],
+      "details": {
+        "code": "src/curriculum/exploration/memory.ts",
+        "review": "read all generated branches and variants; figures also checked through the 031 presentation review and current data mappings",
+        "implemented": "隐藏后找出现/未出现集合；3、4、5项记忆，8张动物水果候选。"
+      },
+      "baselineIssues": []
+    },
+    {
+      "id": "A02",
+      "title": "位置记忆与图案回填",
+      "domain": "memory",
+      "status": "partial",
+      "reviewEvidence": "research/memory-language-life.json",
+      "matrixTarget": "回忆位置而非只认出对象；空白格是合法记忆信息",
+      "sourceRefs": [
+        {
+          "source_id": "S002",
+          "locator": "10-13"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide7"
+        },
+        {
+          "source_id": "S071",
+          "locator": "render9-11"
+        },
+        {
+          "source_id": "S115",
+          "locator": "31-32"
+        },
+        {
+          "source_id": "S118",
+          "locator": "28-29"
+        }
+      ],
+      "currentGaps": [
+        "没有原S002先推断变化再隐藏回填的组合流程；规则辅助记忆阶段仍为直接记位置。"
+      ],
+      "details": {
+        "code": "src/curriculum/exploration/memory.ts",
+        "review": "read all generated branches and variants; figures also checked through the 031 presentation review and current data mappings",
+        "implemented": "2×2/2×3位置回填，空白卡和重复对象均可表达。"
+      },
+      "baselineIssues": []
+    },
+    {
+      "id": "A03",
+      "title": "顺序、逆序和重复符号记忆",
+      "domain": "memory",
+      "status": "core-covered",
+      "reviewEvidence": "research/memory-language-life.json",
+      "matrixTarget": "按序重现，重复候选可复用；逆序单独作为操作要求",
+      "sourceRefs": [
+        {
+          "source_id": "S005",
+          "locator": "29"
+        },
+        {
+          "source_id": "S101",
+          "locator": "3"
+        },
+        {
+          "source_id": "S102",
+          "locator": "3"
+        }
+      ],
+      "currentGaps": [
+        "不据此声称原资料所有数字字母混合/变换序列均已提供。"
+      ],
+      "details": {
+        "code": "src/curriculum/exploration/memory.ts",
+        "review": "read all generated branches and variants; figures also checked through the 031 presentation review and current data mappings",
+        "implemented": "短序列、重复项和倒序重现均已实现，候选可重复使用。"
+      },
+      "baselineIssues": []
+    },
+    {
+      "id": "A04",
+      "title": "听觉记忆与复合指令",
+      "domain": "memory",
+      "status": "partial",
+      "reviewEvidence": "research/memory-language-life.json",
+      "matrixTarget": "信息通过音频给出，按阶段撤去线索；动作次序与位置关系联合验证",
+      "sourceRefs": [
+        {
+          "source_id": "S102",
+          "locator": "1-4"
+        },
+        {
+          "source_id": "S071",
+          "locator": "render16-18"
+        },
+        {
+          "source_id": "S109",
+          "locator": "33"
+        },
+        {
+          "source_id": "S114",
+          "locator": "30"
+        },
+        {
+          "source_id": "S115",
+          "locator": "28-30"
+        },
+        {
+          "source_id": "S117",
+          "locator": "32"
+        },
+        {
+          "source_id": "S120",
+          "locator": "30-31"
+        }
+      ],
+      "currentGaps": [
+        "原二维分割、相对位置圈叉、动作与空间关系联合听画未实现。"
+      ],
+      "details": {
+        "code": "src/curriculum/exploration/memory.ts",
+        "review": "read all generated branches and variants; figures also checked through the 031 presentation review and current data mappings",
+        "implemented": "9题均为听2–4个对象，按一维顺序放卡。"
+      },
+      "baselineIssues": []
+    },
+    {
+      "id": "A05",
+      "title": "故事记忆、细节与复述",
+      "domain": "memory",
+      "status": "partial",
+      "reviewEvidence": "research/memory-language-life.json",
+      "matrixTarget": "听后回答事实并复述，事实记忆与因果推理分开记录",
+      "sourceRefs": [
+        {
+          "source_id": "S102",
+          "locator": "3-4"
+        },
+        {
+          "source_id": "S003",
+          "locator": "2-3"
+        },
+        {
+          "source_id": "S003",
+          "locator": "7"
+        },
+        {
+          "source_id": "S111",
+          "locator": "18-23"
+        },
+        {
+          "source_id": "S113",
+          "locator": "18-21"
+        },
+        {
+          "source_id": "S116",
+          "locator": "19-22"
+        }
+      ],
+      "currentGaps": [
+        "具体事实细节和因果分别核对不足，复述量规是通用三项；原故事与原音轨并未复原。"
+      ],
+      "details": {
+        "code": "src/curriculum/exploration/memory.ts",
+        "review": "read all generated branches and variants; figures also checked through the 031 presentation review and current data mappings",
+        "implemented": "三篇原创故事提供人物题、事件排序、亲子复述。"
+      },
+      "baselineIssues": []
+    },
+    {
+      "id": "A06",
+      "title": "视觉搜索、划消与持续注意",
+      "domain": "memory",
+      "status": "core-covered",
+      "reviewEvidence": "research/memory-language-life.json",
+      "matrixTarget": "指定目标直接标记，持续注意不等同辨认难度，默认不强制竞速",
+      "sourceRefs": [
+        {
+          "source_id": "S109",
+          "locator": "34"
+        },
+        {
+          "source_id": "S110",
+          "locator": "32"
+        },
+        {
+          "source_id": "S099",
+          "locator": "3"
+        },
+        {
+          "source_id": "S119",
+          "locator": "31-32"
+        }
+      ],
+      "currentGaps": [
+        "核心搜索流程存在；大场景找差异等原材料实例不由此自动视为覆盖。"
+      ],
+      "details": {
+        "code": "src/curriculum/exploration/memory.ts",
+        "review": "read all generated branches and variants; figures also checked through the 031 presentation review and current data mappings",
+        "implemented": "9/15/21图卡的直接多选搜索，单形状、颜色形状、排除规则三阶可执行。"
+      },
+      "baselineIssues": []
+    },
+    {
+      "id": "A07",
+      "title": "抑制、规则切换与工作记忆",
+      "domain": "memory",
+      "status": "partial",
+      "reviewEvidence": "research/memory-language-life.json",
+      "matrixTarget": "先记规则再行动/暂停，记录提示，亲子动作不伪自动识别",
+      "sourceRefs": [
+        {
+          "source_id": "S110",
+          "locator": "30-31"
+        },
+        {
+          "source_id": "S003",
+          "locator": "5"
+        },
+        {
+          "source_id": "S003",
+          "locator": "7-8"
+        }
+      ],
+      "currentGaps": [
+        "当前只有听规则后多选，没有原资料现场动作/暂停信号的任务分支。"
+      ],
+      "details": {
+        "code": "src/curriculum/exploration/memory.ts",
+        "review": "read all generated branches and variants; figures also checked through the 031 presentation review and current data mappings",
+        "implemented": "听单规则、改规则、多条件排除后隐藏作答。"
+      },
+      "baselineIssues": []
+    },
+    {
+      "id": "A08",
+      "title": "声音辨别、音色与节奏顺序",
+      "domain": "memory",
+      "status": "partial",
+      "reviewEvidence": "research/memory-language-life.json",
+      "matrixTarget": "乐器听辨截图缺原音轨，需原创声音刺激与答案；区分语言音频和非语言声音",
+      "sourceRefs": [
+        {
+          "source_id": "S105",
+          "locator": "slide19"
+        }
+      ],
+      "currentGaps": [
+        "没有真实乐器类别与音色辨认；原截图未附完整声音，不能证明听觉负荷等价。"
+      ],
+      "details": {
+        "code": "src/curriculum/exploration/memory.ts",
+        "review": "read all generated branches and variants; figures also checked through the 031 presentation review and current data mappings",
+        "implemented": "两种原创合成长短音、序列排序和亲子节拍模仿。"
+      },
+      "baselineIssues": []
+    },
+    {
+      "id": "A09",
+      "title": "关联数量与结构记忆",
+      "domain": "memory",
+      "status": "partial",
+      "reviewEvidence": "research/memory-language-life.json",
+      "matrixTarget": "隐藏后恢复对象与数量/结构的关系，区分记忆出错与计算或空间技能不足",
+      "sourceRefs": [
+        {
+          "source_id": "S116",
+          "locator": "26-27"
+        },
+        {
+          "source_id": "S120",
+          "locator": "27-28"
+        },
+        {
+          "source_id": "S118",
+          "locator": "28-29"
+        }
+      ],
+      "currentGaps": [
+        "没有多属性结构重建或位置关联分支，也不能分离记忆错、计数错与空间错。"
+      ],
+      "details": {
+        "code": "src/curriculum/exploration/memory.ts",
+        "review": "read all generated branches and variants; figures also checked through the 031 presentation review and current data mappings",
+        "implemented": "对象与单一数量配对，观察阶段有角色和点群。"
+      },
+      "baselineIssues": []
+    },
+    {
+      "id": "E01",
+      "title": "动作词、反义词与词义关系",
+      "domain": "language",
+      "status": "partial",
+      "reviewEvidence": "research/memory-language-life.json",
+      "matrixTarget": "语言关系与图形匹配分开，音频支持不识字孩子",
+      "sourceRefs": [
+        {
+          "source_id": "S109",
+          "locator": "20-23"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide15"
+        },
+        {
+          "source_id": "S071",
+          "locator": "render19"
+        },
+        {
+          "source_id": "S117",
+          "locator": "20-22"
+        }
+      ],
+      "currentGaps": [
+        "主要是高低开关等文字卡，未覆盖来源动作词/多种语义关系；前置识读支持和真实听感仍待校准。"
+      ],
+      "details": {
+        "code": "src/curriculum/exploration/language.ts",
+        "review": "read all generated branches and variants; figures also checked through the 031 presentation review and current data mappings",
+        "implemented": "反义词配对及家长用动作/实物表示词义。"
+      },
+      "baselineIssues": []
+    },
+    {
+      "id": "E02",
+      "title": "完整句、方位和比较表达",
+      "domain": "language",
+      "status": "core-covered",
+      "reviewEvidence": "research/memory-language-life.json",
+      "matrixTarget": "孩子自己说清对象、位置和关系；家长按意义核对",
+      "sourceRefs": [
+        {
+          "source_id": "S109",
+          "locator": "20-23"
+        },
+        {
+          "source_id": "S110",
+          "locator": "18-21"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide25"
+        }
+      ],
+      "currentGaps": [
+        "这是明确的亲子活动方案，不等于设备内自动口语评分或所有原图任务。"
+      ],
+      "details": {
+        "code": "src/curriculum/exploration/language.ts",
+        "review": "read all generated branches and variants; figures also checked through the 031 presentation review and current data mappings",
+        "implemented": "亲子实物描述、面对面换参照、修复不清楚的表达，有对应观察项。"
+      },
+      "baselineIssues": []
+    },
+    {
+      "id": "E03",
+      "title": "故事排序、因果和复述",
+      "domain": "language",
+      "status": "core-covered",
+      "reviewEvidence": "research/memory-language-life.json",
+      "matrixTarget": "排序后口述因果，开放表达有关键点而非固定标准句",
+      "sourceRefs": [
+        {
+          "source_id": "S109",
+          "locator": "20-23"
+        },
+        {
+          "source_id": "S110",
+          "locator": "18-21"
+        },
+        {
+          "source_id": "S102",
+          "locator": "3"
+        },
+        {
+          "source_id": "S118",
+          "locator": "21-24"
+        },
+        {
+          "source_id": "S120",
+          "locator": "20-23"
+        },
+        {
+          "source_id": "S069",
+          "locator": "42"
+        }
+      ],
+      "currentGaps": [
+        "排序阶段已给完整先后条件，不可当作无提示自主因果推理；三篇故事不代表逐个原故事复现。"
+      ],
+      "details": {
+        "code": "src/curriculum/exploration/language.ts",
+        "review": "read all generated branches and variants; figures also checked through the 031 presentation review and current data mappings",
+        "implemented": "提供插画故事排序、因果口述及改变结局，家长量规允许开放回答。"
+      },
+      "baselineIssues": []
+    },
+    {
+      "id": "E04",
+      "title": "创编故事、比较方案与理由表达",
+      "domain": "language",
+      "status": "core-covered",
+      "reviewEvidence": "research/memory-language-life.json",
+      "matrixTarget": "给可观察量规，接受合理不同叙事，不按一个答案打分",
+      "sourceRefs": [
+        {
+          "source_id": "S109",
+          "locator": "20-23"
+        },
+        {
+          "source_id": "S110",
+          "locator": "18-21"
+        }
+      ],
+      "currentGaps": [
+        "图卡和实物由家长准备；不计为全部源题素材已内置。"
+      ],
+      "details": {
+        "code": "src/curriculum/exploration/language.ts",
+        "review": "read all generated branches and variants; figures also checked through the 031 presentation review and current data mappings",
+        "implemented": "三图创编、比较过河方案、区分证据与猜测三个亲子方案，有开放量规。"
+      },
+      "baselineIssues": []
+    },
+    {
+      "id": "E05",
+      "title": "字形、拼音与词语对应",
+      "domain": "language",
+      "status": "partial",
+      "reviewEvidence": "research/memory-language-life.json",
+      "matrixTarget": "识读是单独前置能力，纯视觉任务用几何改写，避免混测",
+      "sourceRefs": [
+        {
+          "source_id": "S105",
+          "locator": "slide18"
+        },
+        {
+          "source_id": "S064",
+          "locator": "image"
+        }
+      ],
+      "currentGaps": [
+        "情境词义辨别台阶尚未实现；看表配对不是独立拼读，识读前置不应混入图形推理能力。"
+      ],
+      "details": {
+        "code": "src/curriculum/exploration/language.ts",
+        "review": "read all generated branches and variants; figures also checked through the 031 presentation review and current data mappings",
+        "implemented": "字形辨同、听词找字、参照表中汉字拼音配对。"
+      },
+      "baselineIssues": []
+    },
+    {
+      "id": "E06",
+      "title": "英语听辨与短句理解",
+      "domain": "language",
+      "status": "partial",
+      "reviewEvidence": "research/memory-language-life.json",
+      "matrixTarget": "缺失原声则原创重建，英语音色本地化，语言目标独立验收",
+      "sourceRefs": [
+        {
+          "source_id": "S071",
+          "locator": "render16-20"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide23-25"
+        }
+      ],
+      "currentGaps": [
+        "缺英语近音词辨别及更多原听句任务；完整发音/听感未逐条人工验收。"
+      ],
+      "details": {
+        "code": "src/curriculum/exploration/language.ts",
+        "review": "read all generated branches and variants; figures also checked through the 031 presentation review and current data mappings",
+        "implemented": "18条英文刺激中的9题覆盖动物词、颜色形状和左右短句，独立英语音色。"
+      },
+      "baselineIssues": []
+    },
+    {
+      "id": "E07",
+      "title": "英语中的数量、空间与比较表达",
+      "domain": "language",
+      "status": "partial",
+      "reviewEvidence": "research/memory-language-life.json",
+      "matrixTarget": "区分概念不会与英语不理解；相同规则可有中文支持但分别记录",
+      "sourceRefs": [
+        {
+          "source_id": "S105",
+          "locator": "slide10-11"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide18"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide24-25"
+        }
+      ],
+      "currentGaps": [
+        "缺原英语分数/half past时间概念；错误无法分离概念不会还是英语没听懂，中文支持没有单独记录。"
+      ],
+      "details": {
+        "code": "src/curriculum/exploration/language.ts",
+        "review": "read all generated branches and variants; figures also checked through the 031 presentation review and current data mappings",
+        "implemented": "英文数量、上下关系、三对象长度比较。"
+      },
+      "baselineIssues": []
+    },
+    {
+      "id": "E08",
+      "title": "交流、听问与自我表达",
+      "domain": "language",
+      "status": "partial",
+      "reviewEvidence": "research/memory-language-life.json",
+      "matrixTarget": "亲子对话、说明喜好和回应追问，中文/英语目标分开，不采集不必要身份信息",
+      "sourceRefs": [
+        {
+          "source_id": "S003",
+          "locator": "1-3"
+        }
+      ],
+      "currentGaps": [
+        "没有英语口头问答、跟读或回应分支；不能由英语听选题代替。"
+      ],
+      "details": {
+        "code": "src/curriculum/exploration/language.ts",
+        "review": "read all generated branches and variants; figures also checked through the 031 presentation review and current data mappings",
+        "implemented": "中文亲子选择说明、回应追问与轮流问答，避免无关身份采集。"
+      },
+      "baselineIssues": []
+    },
+    {
+      "id": "P01",
+      "title": "生活用品、功能、材料与场景分类",
+      "domain": "life",
+      "status": "partial",
+      "reviewEvidence": "research/memory-language-life.json",
+      "matrixTarget": "按实际用途与材料证据分类，允许情境中合理的多归属",
+      "sourceRefs": [
+        {
+          "source_id": "S099",
+          "locator": "4-5"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide1"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide11"
+        },
+        {
+          "source_id": "S116",
+          "locator": "28-29"
+        }
+      ],
+      "currentGaps": [
+        "自动题是一对一常见用途，来源多归属/场景约束更丰富；部分实物任务要家长自备。"
+      ],
+      "details": {
+        "code": "src/curriculum/exploration/life.ts",
+        "review": "read all generated branches and variants; figures also checked through the 031 presentation review and current data mappings",
+        "implemented": "常见用途配对、物品多用途/材料/换规则的亲子讨论。"
+      },
+      "baselineIssues": []
+    },
+    {
+      "id": "P02",
+      "title": "自然观察、生物特征与成长顺序",
+      "domain": "life",
+      "status": "partial",
+      "reviewEvidence": "research/memory-language-life.json",
+      "matrixTarget": "分类依赖可见特征与明确知识前置，真实观察支撑记忆",
+      "sourceRefs": [
+        {
+          "source_id": "S071",
+          "locator": "render7"
+        },
+        {
+          "source_id": "S071",
+          "locator": "render20"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide3"
+        },
+        {
+          "source_id": "S109",
+          "locator": "30-32"
+        },
+        {
+          "source_id": "S112",
+          "locator": "26-28"
+        },
+        {
+          "source_id": "S115",
+          "locator": "33-35"
+        },
+        {
+          "source_id": "S117",
+          "locator": "29-31"
+        },
+        {
+          "source_id": "S119",
+          "locator": "29"
+        }
+      ],
+      "currentGaps": [
+        "自然特征、动植物知识分类和具体知识输入没有完整提供；不能把先后排序当全部自然任务。"
+      ],
+      "details": {
+        "code": "src/curriculum/exploration/life.ts",
+        "review": "read all generated branches and variants; figures also checked through the 031 presentation review and current data mappings",
+        "implemented": "三种成长过程的插画排序和实际观察方案。"
+      },
+      "baselineIssues": []
+    },
+    {
+      "id": "P03",
+      "title": "生活科学：浮沉、颜色、影子与切面",
+      "domain": "life",
+      "status": "core-covered",
+      "reviewEvidence": "research/memory-language-life.json",
+      "matrixTarget": "预测—操作—观察—解释；颜料混合与图形编码运算分别建模；简单实物切面体验纳入，复杂斜截面另列参考",
+      "sourceRefs": [
+        {
+          "source_id": "S105",
+          "locator": "slide1"
+        },
+        {
+          "source_id": "S099",
+          "locator": "1-2"
+        },
+        {
+          "source_id": "S071",
+          "locator": "render6"
+        },
+        {
+          "source_id": "S074",
+          "locator": "97"
+        },
+        {
+          "source_id": "S111",
+          "locator": "29-31"
+        },
+        {
+          "source_id": "S113",
+          "locator": "28-30"
+        },
+        {
+          "source_id": "S117",
+          "locator": "29-31"
+        }
+      ],
+      "currentGaps": [
+        "依赖真实材料和家长实施，不是自动仿真；复杂斜截面及其他现场科学课程另有缺口/参考边界。"
+      ],
+      "details": {
+        "code": "src/curriculum/exploration/life.ts",
+        "review": "read all generated branches and variants; figures also checked through the 031 presentation review and current data mappings",
+        "implemented": "亲子浮沉、颜料与透明片、光影与简单切面三个方案覆盖预测—操作—解释。"
+      },
+      "baselineIssues": []
+    },
+    {
+      "id": "P04",
+      "title": "感官、生活安全与社会情境",
+      "domain": "life",
+      "status": "partial",
+      "reviewEvidence": "research/memory-language-life.json",
+      "matrixTarget": "基于具体情境讨论理由，旧分类规则先校核，不用偏见当答案",
+      "sourceRefs": [
+        {
+          "source_id": "S105",
+          "locator": "slide23"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide25"
+        },
+        {
+          "source_id": "S071",
+          "locator": "render14"
+        },
+        {
+          "source_id": "S110",
+          "locator": "27-29"
+        },
+        {
+          "source_id": "S114",
+          "locator": "27-29"
+        },
+        {
+          "source_id": "S118",
+          "locator": "30-31"
+        }
+      ],
+      "currentGaps": [
+        "来源感官知识和更多具体安全/社会判断任务未给齐；不能用泛化讨论代替全部知识任务。"
+      ],
+      "details": {
+        "code": "src/curriculum/exploration/life.ts",
+        "review": "read all generated branches and variants; figures also checked through the 031 presentation review and current data mappings",
+        "implemented": "触摸观察、玩具路线障碍、共同玩具分歧三个亲子情境。"
+      },
+      "baselineIssues": []
+    },
+    {
+      "id": "P05",
+      "title": "节日、文化与世界常识",
+      "domain": "life",
+      "status": "partial",
+      "reviewEvidence": "research/memory-language-life.json",
+      "matrixTarget": "明确知识输入与思维目标，借图片和亲子阅读探究，不冒称知识量是智力",
+      "sourceRefs": [
+        {
+          "source_id": "S105",
+          "locator": "slide3"
+        },
+        {
+          "source_id": "S105",
+          "locator": "slide17"
+        },
+        {
+          "source_id": "S071",
+          "locator": "render12-14"
+        }
+      ],
+      "currentGaps": [
+        "没有内置明确节日/城市/建筑等知识输入，属于活动框架，来源具体任务仍缺。"
+      ],
+      "details": {
+        "code": "src/curriculum/exploration/life.ts",
+        "review": "read all generated branches and variants; figures also checked through the 031 presentation review and current data mappings",
+        "implemented": "家长自备节日照片、两份活动介绍、地图/绘本后引导比较。"
+      },
+      "baselineIssues": []
+    },
+    {
+      "id": "P06",
+      "title": "亲子动作、精细操作与协调",
+      "domain": "life",
+      "status": "partial",
+      "reviewEvidence": "research/memory-language-life.json",
+      "matrixTarget": "以真实手眼协调、剪纸、搭建和节律为观察目标；数字图案复制另归G19，不互相冒充能力完成；动作模仿、平衡与运送也分别观察",
+      "sourceRefs": [
+        {
+          "source_id": "S114",
+          "locator": "14-17"
+        },
+        {
+          "source_id": "S115",
+          "locator": "38"
+        },
+        {
+          "source_id": "S109",
+          "locator": "9"
+        },
+        {
+          "source_id": "S110",
+          "locator": "5-7"
+        },
+        {
+          "source_id": "S076",
+          "locator": "3"
+        },
+        {
+          "source_id": "S089",
+          "locator": "video"
+        },
+        {
+          "source_id": "S003",
+          "locator": "2"
+        },
+        {
+          "source_id": "S003",
+          "locator": "4-5"
+        },
+        {
+          "source_id": "S003",
+          "locator": "8"
+        }
+      ],
+      "currentGaps": [
+        "粗线模板与具体动作示范未提供；运球/指定操作/二维听画等原任务未逐项实现。"
+      ],
+      "details": {
+        "code": "src/curriculum/exploration/life.ts",
+        "review": "read all generated branches and variants; figures also checked through the 031 presentation review and current data mappings",
+        "implemented": "折剪、托盘运送、节拍与动作模仿三个亲子方案。"
+      },
+      "baselineIssues": []
+    }
+  ],
+  "globalUnverified": [
+    "All-source canonical task inventory is incomplete",
+    "No full acoustic human review",
+    "No 6/7/8-year-old parent-child calibration",
+    "No new native UI verification until Mac is unlocked"
+  ]
+}

@@ -5,6 +5,14 @@ grouped by date.
 
 ## 2026-09-23
 
+### Exploration quality and source-task audit
+
+- Reviewed all 71 newly authored families and the 24 pilot activities, verified all 121 source-file hashes, and recorded concrete source-task gaps. The current 75 groups / 621 activities are an authoring count, not full source coverage. Eight families have their core mechanism; 63 remain partial, and neither status implies all original tasks or child-age calibration.
+- Fixed answer-revealing generic choice labels, invisible layer-order constraints rejecting equivalent pictures, inconsistent fraction wholes, numeric/parity answer boundaries, and a parent guessing task that disclosed its target. Stable activity IDs and legacy content remain unchanged.
+- Corrected listening-phase wording, added parent-step audio controls, keyed local speech by text and locale, and synchronized construction previews with rotation. Regenerated affected images and Edge speech; the 3,741-entry manifest has no failures or macOS/mixed local fallback.
+- Changed coverage reports to identify structural counts and source links explicitly; generated activities are not treated as a complete original-task catalogue. Appended T117–T130 to the original implementation plan for remaining content, interaction, source mapping, difficulty, acoustic review and short-screen work.
+- Passed 52 regression tests, production build, curriculum and voice-media audits; independent checks covered 10,221 math/logic cases and all 100 G20 permutations. Browser checks verified the corrected behaviors and 375px operation. Installed the latest standard Applications app; fresh native reopen is blocked by the locked Mac. Full acoustic review, source-task equivalence and child play remain incomplete. See specs/032-exploration-quality-audit/report.md.
+
 ### Exploration presentation and illustrations
 
 - Gave 探索 a wider working area, grouped its activity list by topic, placed question navigation above the task, and moved parent guidance and growth records into expandable sections. Removed authoring difficulty notes from the default answer feedback and corrected navigation overlap while scrolling.

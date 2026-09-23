@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-23T04:22:12.341Z",
+  "generatedAt": "2026-09-23T06:48:11.153Z",
   "recommendedVoice": "warm adult female Mandarin, smiling, preschool teacher, 0.85 speed, crisp consonants",
-  "lineCount": 3729,
+  "lineCount": 3741,
   "lines": [
     {
       "id": "game-title-数一数",
@@ -23319,6 +23319,56 @@
       ]
     },
     {
+      "id": "activity-system-准备好了再开始-作答时也可以再看一次",
+      "kind": "activity-system",
+      "text": "准备好了再开始。作答时也可以再看一次。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "activity/readyVisual"
+      ]
+    },
+    {
+      "id": "activity-system-准备好了再开始-作答时也可以再听一次",
+      "kind": "activity-system",
+      "text": "准备好了再开始。作答时也可以再听一次。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "activity/readyAudio"
+      ]
+    },
+    {
+      "id": "activity-system-先看懂例子里的规则-准备好后试一试新题",
+      "kind": "activity-system",
+      "text": "先看懂例子里的规则，准备好后试一试新题。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "activity/readyTransfer"
+      ]
+    },
+    {
+      "id": "activity-system-刚才暂停了-准备好以后-我们重新听一遍",
+      "kind": "activity-system",
+      "text": "刚才暂停了。准备好以后，我们重新听一遍。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "activity/interruptedAudio"
+      ]
+    },
+    {
+      "id": "activity-system-声音已经停下了-先回想刚才听到的内容",
+      "kind": "activity-system",
+      "text": "声音已经停下了，先回想刚才听到的内容。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "activity/audioRetain"
+      ]
+    },
+    {
       "id": "game-title-规则收纳盒",
       "kind": "game-title",
       "text": "规则收纳盒",
@@ -25991,9 +26041,6 @@
         "explore-parity-place-value/explore-parity-place-value-4",
         "explore-parity-place-value/explore-parity-place-value-5",
         "explore-parity-place-value/explore-parity-place-value-6",
-        "explore-parity-place-value/explore-parity-place-value-7",
-        "explore-parity-place-value/explore-parity-place-value-8",
-        "explore-parity-place-value/explore-parity-place-value-9",
         "explore-number-sequences/explore-number-sequences-1",
         "explore-number-sequences/explore-number-sequences-2",
         "explore-number-sequences/explore-number-sequences-3",
@@ -26954,6 +27001,23 @@
       ]
     },
     {
+      "id": "object-24",
+      "kind": "object",
+      "text": "24",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-counting-cardinality/explore-counting-cardinality-9",
+        "explore-make-break-ten/explore-make-break-ten-9",
+        "explore-parity-place-value/explore-parity-place-value-5",
+        "explore-parity-place-value/explore-parity-place-value-7",
+        "explore-parity-place-value/explore-parity-place-value-8",
+        "explore-number-sequences/explore-number-sequences-4",
+        "explore-number-sequences/explore-number-sequences-5",
+        "explore-measurement-boundaries/explore-measurement-boundaries-9"
+      ]
+    },
+    {
       "id": "object-20",
       "kind": "object",
       "text": "20",
@@ -26969,23 +27033,6 @@
         "explore-time-elapsed/explore-time-elapsed-7",
         "explore-measurement-boundaries/explore-measurement-boundaries-9",
         "explore-calendar-cycles/explore-calendar-cycles-6"
-      ]
-    },
-    {
-      "id": "object-24",
-      "kind": "object",
-      "text": "24",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "explore-counting-cardinality/explore-counting-cardinality-9",
-        "explore-make-break-ten/explore-make-break-ten-9",
-        "explore-parity-place-value/explore-parity-place-value-5",
-        "explore-parity-place-value/explore-parity-place-value-7",
-        "explore-parity-place-value/explore-parity-place-value-8",
-        "explore-number-sequences/explore-number-sequences-4",
-        "explore-number-sequences/explore-number-sequences-5",
-        "explore-measurement-boundaries/explore-measurement-boundaries-9"
       ]
     },
     {
@@ -29905,16 +29952,6 @@
       ]
     },
     {
-      "id": "object-34",
-      "kind": "object",
-      "text": "34",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "explore-parity-place-value/explore-parity-place-value-5"
-      ]
-    },
-    {
       "id": "object-44",
       "kind": "object",
       "text": "44",
@@ -29924,6 +29961,16 @@
         "explore-parity-place-value/explore-parity-place-value-5",
         "explore-parity-place-value/explore-parity-place-value-8",
         "explore-parity-place-value/explore-parity-place-value-9"
+      ]
+    },
+    {
+      "id": "object-34",
+      "kind": "object",
+      "text": "34",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-parity-place-value/explore-parity-place-value-5"
       ]
     },
     {
@@ -29958,6 +30005,17 @@
       ]
     },
     {
+      "id": "object-45",
+      "kind": "object",
+      "text": "45",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-parity-place-value/explore-parity-place-value-6",
+        "explore-time-elapsed/explore-time-elapsed-9"
+      ]
+    },
+    {
       "id": "object-35",
       "kind": "object",
       "text": "35",
@@ -29972,20 +30030,9 @@
       ]
     },
     {
-      "id": "object-45",
-      "kind": "object",
-      "text": "45",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "explore-parity-place-value/explore-parity-place-value-6",
-        "explore-time-elapsed/explore-time-elapsed-9"
-      ]
-    },
-    {
-      "id": "prompt-原来有23个-拿走一个以后是多少-会从单变双-还是从双变单-选出符合条件的一张图卡",
+      "id": "prompt-原来有23个-拿走一个以后是多少-选出符合条件的一张图卡",
       "kind": "prompt",
-      "text": "原来有23个，拿走一个以后是多少？会从单变双，还是从双变单。选出符合条件的一张图卡。",
+      "text": "原来有23个，拿走一个以后是多少。选出符合条件的一张图卡。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -30003,6 +30050,16 @@
       ]
     },
     {
+      "id": "parent-先听孩子说-23是单数还是双数-拿走一个以后呢-请用两两配对解释-这部分由家长口头观察-数字选项只检查剩下的数量",
+      "kind": "parent",
+      "text": "先听孩子说：23是单数还是双数？拿走一个以后呢？请用两两配对解释。这部分由家长口头观察，数字选项只检查剩下的数量。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-parity-place-value/explore-parity-place-value-7"
+      ]
+    },
+    {
       "id": "hint-23拿走一变成22-每增加或减少一个-单双都会改变",
       "kind": "hint",
       "text": "23拿走一变成22。每增加或减少一个，单双都会改变。",
@@ -30013,9 +30070,9 @@
       ]
     },
     {
-      "id": "prompt-原来有34个-拿走一个以后是多少-会从单变双-还是从双变单-选出符合条件的一张图卡",
+      "id": "prompt-原来有34个-拿走一个以后是多少-选出符合条件的一张图卡",
       "kind": "prompt",
-      "text": "原来有34个，拿走一个以后是多少？会从单变双，还是从双变单。选出符合条件的一张图卡。",
+      "text": "原来有34个，拿走一个以后是多少。选出符合条件的一张图卡。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -30033,6 +30090,16 @@
       ]
     },
     {
+      "id": "parent-先听孩子说-34是单数还是双数-拿走一个以后呢-请用两两配对解释-这部分由家长口头观察-数字选项只检查剩下的数量",
+      "kind": "parent",
+      "text": "先听孩子说：34是单数还是双数？拿走一个以后呢？请用两两配对解释。这部分由家长口头观察，数字选项只检查剩下的数量。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-parity-place-value/explore-parity-place-value-8"
+      ]
+    },
+    {
       "id": "hint-34拿走一变成33-每增加或减少一个-单双都会改变",
       "kind": "hint",
       "text": "34拿走一变成33。每增加或减少一个，单双都会改变。",
@@ -30043,9 +30110,9 @@
       ]
     },
     {
-      "id": "prompt-原来有45个-拿走一个以后是多少-会从单变双-还是从双变单-选出符合条件的一张图卡",
+      "id": "prompt-原来有45个-拿走一个以后是多少-选出符合条件的一张图卡",
       "kind": "prompt",
-      "text": "原来有45个，拿走一个以后是多少？会从单变双，还是从双变单。选出符合条件的一张图卡。",
+      "text": "原来有45个，拿走一个以后是多少。选出符合条件的一张图卡。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -30058,6 +30125,16 @@
       "text": "45拿走一变成44。每增加或减少一个，单双都会改变。",
       "locale": "zh-CN",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "explore-parity-place-value/explore-parity-place-value-9"
+      ]
+    },
+    {
+      "id": "parent-先听孩子说-45是单数还是双数-拿走一个以后呢-请用两两配对解释-这部分由家长口头观察-数字选项只检查剩下的数量",
+      "kind": "parent",
+      "text": "先听孩子说：45是单数还是双数？拿走一个以后呢？请用两两配对解释。这部分由家长口头观察，数字选项只检查剩下的数量。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "explore-parity-place-value/explore-parity-place-value-9"
       ]
@@ -30198,18 +30275,6 @@
       ]
     },
     {
-      "id": "object-26",
-      "kind": "object",
-      "text": "26",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "explore-number-sequences/explore-number-sequences-4",
-        "explore-number-sequences/explore-number-sequences-5",
-        "explore-number-sequences/explore-number-sequences-6"
-      ]
-    },
-    {
       "id": "object-25",
       "kind": "object",
       "text": "25",
@@ -30222,6 +30287,18 @@
         "explore-time-elapsed/explore-time-elapsed-7",
         "explore-time-elapsed/explore-time-elapsed-8",
         "explore-calendar-cycles/explore-calendar-cycles-5"
+      ]
+    },
+    {
+      "id": "object-26",
+      "kind": "object",
+      "text": "26",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-number-sequences/explore-number-sequences-4",
+        "explore-number-sequences/explore-number-sequences-5",
+        "explore-number-sequences/explore-number-sequences-6"
       ]
     },
     {
@@ -31089,16 +31166,6 @@
       ]
     },
     {
-      "id": "object-3点30分",
-      "kind": "object",
-      "text": "3点30分",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "explore-time-elapsed/explore-time-elapsed-1"
-      ]
-    },
-    {
       "id": "object-4点30分",
       "kind": "object",
       "text": "4点30分",
@@ -31114,6 +31181,16 @@
       "id": "object-3点35分",
       "kind": "object",
       "text": "3点35分",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-time-elapsed/explore-time-elapsed-1"
+      ]
+    },
+    {
+      "id": "object-3点30分",
+      "kind": "object",
+      "text": "3点30分",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -31223,9 +31300,9 @@
       ]
     },
     {
-      "id": "object-3点15分",
+      "id": "object-3点20分",
       "kind": "object",
-      "text": "3点15分",
+      "text": "3点20分",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -31243,9 +31320,9 @@
       ]
     },
     {
-      "id": "object-3点20分",
+      "id": "object-3点15分",
       "kind": "object",
-      "text": "3点20分",
+      "text": "3点15分",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -31273,9 +31350,9 @@
       ]
     },
     {
-      "id": "object-5点25分",
+      "id": "object-4点25分",
       "kind": "object",
-      "text": "5点25分",
+      "text": "4点25分",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -31283,9 +31360,9 @@
       ]
     },
     {
-      "id": "object-4点25分",
+      "id": "object-5点25分",
       "kind": "object",
-      "text": "4点25分",
+      "text": "5点25分",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -31313,9 +31390,9 @@
       ]
     },
     {
-      "id": "object-5点40分",
+      "id": "object-6点35分",
       "kind": "object",
-      "text": "5点40分",
+      "text": "6点35分",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -31323,9 +31400,9 @@
       ]
     },
     {
-      "id": "object-6点35分",
+      "id": "object-5点40分",
       "kind": "object",
-      "text": "6点35分",
+      "text": "5点40分",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -31789,9 +31866,9 @@
       ]
     },
     {
-      "id": "object-星期五",
+      "id": "object-星期四",
       "kind": "object",
-      "text": "星期五",
+      "text": "星期四",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -31809,9 +31886,9 @@
       ]
     },
     {
-      "id": "object-星期四",
+      "id": "object-星期五",
       "kind": "object",
-      "text": "星期四",
+      "text": "星期五",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -32866,14 +32943,15 @@
       ]
     },
     {
-      "id": "object-小兔更高",
+      "id": "object-现在还不能确定",
       "kind": "object",
-      "text": "小兔更高",
+      "text": "现在还不能确定",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
         "explore-transitive-order/explore-transitive-order-7",
-        "explore-transitive-order/explore-transitive-order-8"
+        "explore-transitive-order/explore-transitive-order-8",
+        "explore-transitive-order/explore-transitive-order-9"
       ]
     },
     {
@@ -32888,15 +32966,14 @@
       ]
     },
     {
-      "id": "object-现在还不能确定",
+      "id": "object-小兔更高",
       "kind": "object",
-      "text": "现在还不能确定",
+      "text": "小兔更高",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
         "explore-transitive-order/explore-transitive-order-7",
-        "explore-transitive-order/explore-transitive-order-8",
-        "explore-transitive-order/explore-transitive-order-9"
+        "explore-transitive-order/explore-transitive-order-8"
       ]
     },
     {
@@ -33963,9 +34040,9 @@
       ]
     },
     {
-      "id": "prompt-给红色圆形编两条线索-和家长一起操作-说一说-再记录这次的发现",
+      "id": "prompt-悄悄选一张图卡-用两条线索让家长来找-和家长一起操作-说一说-再记录这次的发现",
       "kind": "prompt",
-      "text": "给红色圆形编两条线索。和家长一起操作、说一说，再记录这次的发现。",
+      "text": "悄悄选一张图卡，用两条线索让家长来找。和家长一起操作、说一说，再记录这次的发现。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -34040,9 +34117,9 @@
       ]
     },
     {
-      "id": "hint-摆出九张图卡-先不告诉家长你选的是哪张",
+      "id": "hint-家长先转身-孩子在心里选一张-九张都留在桌上-不指给家长看",
       "kind": "hint",
-      "text": "摆出九张图卡，先不告诉家长你选的是哪张。",
+      "text": "家长先转身。孩子在心里选一张，九张都留在桌上，不指给家长看。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -34052,9 +34129,19 @@
       ]
     },
     {
-      "id": "hint-分别说出一条颜色线索和一条形状线索-请家长找图卡",
+      "id": "hint-家长转回来后-孩子说一条颜色线索和一条形状线索-请家长找图卡",
       "kind": "hint",
-      "text": "分别说出一条颜色线索和一条形状线索，请家长找图卡。",
+      "text": "家长转回来后，孩子说一条颜色线索和一条形状线索，请家长找图卡。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-evidence-reasoning/explore-evidence-reasoning-7"
+      ]
+    },
+    {
+      "id": "instruction-家长先转身-孩子在心里选一张-九张都留在桌上-不指给家长看",
+      "kind": "instruction",
+      "text": "家长先转身。孩子在心里选一张，九张都留在桌上，不指给家长看。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -34064,33 +34151,19 @@
       ]
     },
     {
-      "id": "instruction-摆出九张图卡-先不告诉家长你选的是哪张",
+      "id": "instruction-家长转回来后-孩子说一条颜色线索和一条形状线索-请家长找图卡",
       "kind": "instruction",
-      "text": "摆出九张图卡，先不告诉家长你选的是哪张。",
+      "text": "家长转回来后，孩子说一条颜色线索和一条形状线索，请家长找图卡。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "explore-evidence-reasoning/explore-evidence-reasoning-7",
-        "explore-evidence-reasoning/explore-evidence-reasoning-8",
-        "explore-evidence-reasoning/explore-evidence-reasoning-9"
+        "explore-evidence-reasoning/explore-evidence-reasoning-7"
       ]
     },
     {
-      "id": "instruction-分别说出一条颜色线索和一条形状线索-请家长找图卡",
+      "id": "instruction-最后公布选中的图卡-少说一条线索时-还有哪几张也有可能",
       "kind": "instruction",
-      "text": "分别说出一条颜色线索和一条形状线索，请家长找图卡。",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "explore-evidence-reasoning/explore-evidence-reasoning-7",
-        "explore-evidence-reasoning/explore-evidence-reasoning-8",
-        "explore-evidence-reasoning/explore-evidence-reasoning-9"
-      ]
-    },
-    {
-      "id": "instruction-去掉其中一条-再看看还能不能唯一确定",
-      "kind": "instruction",
-      "text": "去掉其中一条，再看看还能不能唯一确定。",
+      "text": "最后公布选中的图卡。少说一条线索时，还有哪几张也有可能？",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -34148,9 +34221,9 @@
       ]
     },
     {
-      "id": "prompt-给蓝色方形编两条线索-和家长一起操作-说一说-再记录这次的发现",
+      "id": "prompt-先给颜色线索-再补形状-家长能找到吗-和家长一起操作-说一说-再记录这次的发现",
       "kind": "prompt",
-      "text": "给蓝色方形编两条线索。和家长一起操作、说一说，再记录这次的发现。",
+      "text": "先给颜色线索，再补形状。家长能找到吗。和家长一起操作、说一说，再记录这次的发现。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -34158,9 +34231,49 @@
       ]
     },
     {
-      "id": "prompt-给黄色三角形编两条线索-和家长一起操作-说一说-再记录这次的发现",
+      "id": "hint-先只说颜色-请家长指出所有可能的图卡-再补上形状线索",
+      "kind": "hint",
+      "text": "先只说颜色，请家长指出所有可能的图卡；再补上形状线索。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-evidence-reasoning/explore-evidence-reasoning-8"
+      ]
+    },
+    {
+      "id": "instruction-先只说颜色-请家长指出所有可能的图卡-再补上形状线索",
+      "kind": "instruction",
+      "text": "先只说颜色，请家长指出所有可能的图卡；再补上形状线索。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-evidence-reasoning/explore-evidence-reasoning-8"
+      ]
+    },
+    {
+      "id": "prompt-先给形状线索-再补颜色-家长能找到吗-和家长一起操作-说一说-再记录这次的发现",
       "kind": "prompt",
-      "text": "给黄色三角形编两条线索。和家长一起操作、说一说，再记录这次的发现。",
+      "text": "先给形状线索，再补颜色。家长能找到吗。和家长一起操作、说一说，再记录这次的发现。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-evidence-reasoning/explore-evidence-reasoning-9"
+      ]
+    },
+    {
+      "id": "hint-先只说形状-请家长指出所有可能的图卡-再补上颜色线索",
+      "kind": "hint",
+      "text": "先只说形状，请家长指出所有可能的图卡；再补上颜色线索。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-evidence-reasoning/explore-evidence-reasoning-9"
+      ]
+    },
+    {
+      "id": "instruction-先只说形状-请家长指出所有可能的图卡-再补上颜色线索",
+      "kind": "instruction",
+      "text": "先只说形状，请家长指出所有可能的图卡；再补上颜色线索。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -37713,9 +37826,9 @@
       ]
     },
     {
-      "id": "object-60",
+      "id": "object-61",
       "kind": "object",
-      "text": "60",
+      "text": "61",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -37733,9 +37846,9 @@
       ]
     },
     {
-      "id": "object-61",
+      "id": "object-60",
       "kind": "object",
-      "text": "61",
+      "text": "60",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -39554,9 +39667,9 @@
       ]
     },
     {
-      "id": "object-前面",
+      "id": "object-后面",
       "kind": "object",
-      "text": "前面",
+      "text": "后面",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -39572,9 +39685,9 @@
       ]
     },
     {
-      "id": "object-后面",
+      "id": "object-前面",
       "kind": "object",
-      "text": "后面",
+      "text": "前面",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -39652,21 +39765,6 @@
       ]
     },
     {
-      "id": "object-e",
-      "kind": "object",
-      "text": "E",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "explore-cube-nets/explore-cube-nets-1",
-        "explore-cube-nets/explore-cube-nets-2",
-        "explore-cube-nets/explore-cube-nets-3",
-        "explore-cube-nets/explore-cube-nets-4",
-        "explore-cube-nets/explore-cube-nets-5",
-        "explore-cube-nets/explore-cube-nets-6"
-      ]
-    },
-    {
       "id": "object-f",
       "kind": "object",
       "text": "F",
@@ -39696,6 +39794,21 @@
         "explore-cube-nets/explore-cube-nets-7",
         "explore-cube-nets/explore-cube-nets-8",
         "explore-cube-nets/explore-cube-nets-9"
+      ]
+    },
+    {
+      "id": "object-e",
+      "kind": "object",
+      "text": "E",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-cube-nets/explore-cube-nets-1",
+        "explore-cube-nets/explore-cube-nets-2",
+        "explore-cube-nets/explore-cube-nets-3",
+        "explore-cube-nets/explore-cube-nets-4",
+        "explore-cube-nets/explore-cube-nets-5",
+        "explore-cube-nets/explore-cube-nets-6"
       ]
     },
     {
@@ -40001,9 +40114,9 @@
       ]
     },
     {
-      "id": "success-相互重叠的地方-完整盖住边缘的是上层-没有相交的两片-顺序可以互换",
+      "id": "success-看得见的遮挡关系要对上-两片之间的重叠如果被别的纸片完全挡住-也可能无法确定它们的先后",
       "kind": "success",
-      "text": "相互重叠的地方，完整盖住边缘的是上层。没有相交的两片，顺序可以互换。",
+      "text": "看得见的遮挡关系要对上。两片之间的重叠如果被别的纸片完全挡住，也可能无法确定它们的先后。",
       "locale": "zh-CN",
       "tone": "warm, delighted, clear",
       "contexts": [
@@ -40066,9 +40179,9 @@
       ]
     },
     {
-      "id": "hint-相互重叠的地方-完整盖住边缘的是上层-没有相交的两片-顺序可以互换",
+      "id": "hint-看得见的遮挡关系要对上-两片之间的重叠如果被别的纸片完全挡住-也可能无法确定它们的先后",
       "kind": "hint",
-      "text": "相互重叠的地方，完整盖住边缘的是上层。没有相交的两片，顺序可以互换。",
+      "text": "看得见的遮挡关系要对上。两片之间的重叠如果被别的纸片完全挡住，也可能无法确定它们的先后。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -40207,8 +40320,7 @@
       "contexts": [
         "explore-layer-order-planning/explore-layer-order-planning-4",
         "explore-layer-order-planning/explore-layer-order-planning-5",
-        "explore-layer-order-planning/explore-layer-order-planning-7",
-        "explore-layer-order-planning/explore-layer-order-planning-8"
+        "explore-layer-order-planning/explore-layer-order-planning-7"
       ]
     },
     {
@@ -43733,15 +43845,13 @@
       ]
     },
     {
-      "id": "object-木",
+      "id": "object-未",
       "kind": "object",
-      "text": "木",
+      "text": "未",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "explore-character-phonics/explore-character-phonics-1",
-        "explore-character-phonics/explore-character-phonics-4",
-        "explore-character-phonics/explore-character-phonics-6"
+        "explore-character-phonics/explore-character-phonics-1"
       ]
     },
     {
@@ -43755,13 +43865,25 @@
       ]
     },
     {
-      "id": "object-未",
+      "id": "object-木",
       "kind": "object",
-      "text": "未",
+      "text": "木",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "explore-character-phonics/explore-character-phonics-1"
+        "explore-character-phonics/explore-character-phonics-1",
+        "explore-character-phonics/explore-character-phonics-4",
+        "explore-character-phonics/explore-character-phonics-6"
+      ]
+    },
+    {
+      "id": "object-日",
+      "kind": "object",
+      "text": "日",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-character-phonics/explore-character-phonics-2"
       ]
     },
     {
@@ -43785,13 +43907,13 @@
       ]
     },
     {
-      "id": "object-日",
+      "id": "object-入",
       "kind": "object",
-      "text": "日",
+      "text": "入",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "explore-character-phonics/explore-character-phonics-2"
+        "explore-character-phonics/explore-character-phonics-3"
       ]
     },
     {
@@ -43810,16 +43932,6 @@
       "id": "object-人",
       "kind": "object",
       "text": "人",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "explore-character-phonics/explore-character-phonics-3"
-      ]
-    },
-    {
-      "id": "object-入",
-      "kind": "object",
-      "text": "入",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -43913,6 +44025,16 @@
       ]
     },
     {
+      "id": "object-猫",
+      "kind": "object",
+      "text": "猫",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-character-phonics/explore-character-phonics-5"
+      ]
+    },
+    {
       "id": "object-苗",
       "kind": "object",
       "text": "苗",
@@ -43926,16 +44048,6 @@
       "id": "object-毛",
       "kind": "object",
       "text": "毛",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "explore-character-phonics/explore-character-phonics-5"
-      ]
-    },
-    {
-      "id": "object-猫",
-      "kind": "object",
-      "text": "猫",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -43973,16 +44085,6 @@
       ]
     },
     {
-      "id": "object-来",
-      "kind": "object",
-      "text": "来",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "explore-character-phonics/explore-character-phonics-6"
-      ]
-    },
-    {
       "id": "object-米",
       "kind": "object",
       "text": "米",
@@ -43992,6 +44094,16 @@
         "explore-character-phonics/explore-character-phonics-6",
         "explore-character-phonics/explore-character-phonics-7",
         "explore-character-phonics/explore-character-phonics-7"
+      ]
+    },
+    {
+      "id": "object-来",
+      "kind": "object",
+      "text": "来",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-character-phonics/explore-character-phonics-6"
       ]
     },
     {

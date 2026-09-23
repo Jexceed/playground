@@ -24,12 +24,33 @@ export function base(family: FamilyId, index: number, prompt: string, instructio
 }
 export function card(id: string, value: string | number, drawing?: Drawing): ActivityToken { return { id, label: String(value), speechText: ({ "○": "圆形", "□": "方形", "△": "三角形" } as Record<string, string>)[String(value)], image: image(drawing ?? label(value), String(value)), textOnly: !drawing }; }
 export function rotate<T>(values: T[], shift: number): T[] { const n = shift % values.length; return [...values.slice(n), ...values.slice(0, n)]; }
+/** Stable across runtimes/reloads, without a shared question-number answer-position cycle. */
+export function stableChoiceOrder<T>(values: T[], key: string): T[] {
+    const result = [...values];
+    let seed = 2166136261;
+    for (let i = 0; i < key.length; i++) seed = Math.imul(seed ^ key.charCodeAt(i), 16777619);
+    for (let i = result.length - 1; i > 0; i--) {
+        seed ^= seed << 13; seed ^= seed >>> 17; seed ^= seed << 5;
+        const j = (seed >>> 0) % (i + 1);
+        [result[i], result[j]] = [result[j], result[i]];
+    }
+    return result;
+}
+export function labelDisplayedChoices(tokens: ActivityToken[]): ActivityToken[] {
+    const marker = /^(图|方案|搭法|选项)([A-Za-z]|\d+)$/;
+    if (!tokens.every(t => marker.test(t.label))) return tokens;
+    return tokens.map((token, index) => {
+        const [, prefix, suffix] = token.label.match(marker)!;
+        const label = prefix + (/^\d+$/.test(suffix) ? index + 1 : String.fromCharCode(65 + index));
+        return { ...token, label, image: { ...token.image, alt: label } };
+    });
+}
 export function choice(family: FamilyId, index: number, prompt: string, options: (string | number | {
     label: string;
     drawing: Drawing;
 })[], answerIndex: number, reason: string, illustration?: Drawing, clues: string[] = []): Activity {
     const a = { ...base(family, index, prompt, '选出符合条件的一张图卡。', reason), kind: 'singleChoice' as const,
-        tokens: rotate(options.map((o, j) => typeof o === 'object' ? card(`o${j}`, o.label, o.drawing) : card(`o${j}`, o)), index), answerId: `o${answerIndex}`, clues,
+        tokens: labelDisplayedChoices(stableChoiceOrder(options.map((o, j) => typeof o === 'object' ? card(`o${j}`, o.label, o.drawing) : card(`o${j}`, o)), `${family}:choice:${index}`)), answerId: `o${answerIndex}`, clues,
         illustration: illustration ? image(illustration, prompt) : undefined };
     a.hints = [clues[0] ?? '先找到图里和问题有关的部分。', reason];
     authoringSolutions[a.id] = { kind: 'singleChoice', tokenId: a.answerId };
@@ -71,7 +92,7 @@ export function matching(family: FamilyId, index: number, prompt: string, left: 
     string,
     string
 ][], reason: string, illustration?: Drawing): Activity {
-    const a = { ...base(family, index, prompt, '把两边有关的图卡连起来。可以拖过去，也可以两边各点一下。', reason), kind: 'matching' as const, tokens: [...left, ...right], leftIds: left.map(t => t.id), rightIds: rotate(right, index + 1).map(t => t.id), expectedPairs: pairs, illustration: illustration ? image(illustration, prompt) : undefined };
+    const a = { ...base(family, index, prompt, '把两边有关的图卡连起来。可以拖过去，也可以两边各点一下。', reason), kind: 'matching' as const, tokens: [...left, ...right], leftIds: left.map(t => t.id), rightIds: stableChoiceOrder(right, `${family}:matching:${index}`).map(t => t.id), expectedPairs: pairs, illustration: illustration ? image(illustration, prompt) : undefined };
     a.hints = ['先说说左边这张图卡的特点，再找对应关系。', reason];
     authoringSolutions[a.id] = { kind: 'matching', pairs };
     return a;

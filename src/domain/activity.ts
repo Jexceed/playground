@@ -113,6 +113,11 @@ export const ACTIVITY_COPY = {
   once: "每张图卡只放一次，再检查一下。",
   inventory: "图卡的数量超过可用库存了，请先取下一张。",
   selectFirst: "先选一张图卡，再点空位。",
+  readyVisual: "准备好了再开始。作答时也可以再看一次。",
+  readyAudio: "准备好了再开始。作答时也可以再听一次。",
+  readyTransfer: "先看懂例子里的规则，准备好后试一试新题。",
+  interruptedAudio: "刚才暂停了。准备好以后，我们重新听一遍。",
+  audioRetain: "声音已经停下了，先回想刚才听到的内容。",
 } as const;
 
 export function activityPromptSpeech(activity: Activity) {
