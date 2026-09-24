@@ -5,6 +5,12 @@ grouped by date.
 
 ## 2026-09-24
 
+### Current-Mac quality follow-up
+
+- Reviewed commit 3660c2b without changing application code. Confirmed installed/build binary identity and exercised pairing, route undo, rotated placement, memory hiding and required listening in the real Mac app.
+- Found a new story-atlas scaling regression and remaining dense-task/feedback overflow. Reconfirmed ineffective inventory/shortest-route/two-marker conditions, ambiguous folded-paper drawings and uncalibrated difficulty defaults; recorded adjustment priorities in specs/032-exploration-quality-audit/followup-2026-09-24.md.
+- Fresh build, curriculum/media audits and 58 relevant regressions passed; 10,221 independent math/logic cases had no grading mismatches. These checks do not close the visual/content/difficulty findings. Final parent-form click/reset verification was interrupted by the locked Mac.
+
 ### One-screen exploration layout
 
 - Restored the three-column desktop layout for 探索 (matching 启蒙): question navigation moved back to the right rail above the collapsible parent-guidance and growth-record sections; removed the horizontal navigation bar and stacked support panels from the center column.

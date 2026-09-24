@@ -5,6 +5,8 @@ small enough to turn into a Spec Kit feature.
 
 ## P0
 
+- Fix the new story-atlas clipping regression in `src/styles.css:3162`: sizing the inner atlas image produces a contact sheet/blank frames. The shared path is used by nine E03/P02/L06 activities; E03-9 was reproduced in the installed Mac app. Details: specs/032-exploration-quality-audit/followup-2026-09-24.md (R1).
+- Recheck the one-window claim against dense tasks and feedback states on the current Mac: N04-9, E03-9 and G15-7 with a hint plus incomplete feedback still require scrolling. Keep the current three-column shell and address the specific surfaces (R2).
 - Complete the final reopen check for specs/032-exploration-quality-audit after manual Mac unlock. The latest quality fixes and prior presentation/assets work are installed at the standard Applications path. Earlier native drag/matching/bridge/route checks are historical evidence; they do not sign off the latest build.
 - Correct G15's folded-paper surface and hole-coordinate ambiguity before treating exploration as ready for full content acceptance (029 T117). Keep the incomplete-source verdict explicit; do not publish a full-coverage claim.
 
@@ -46,7 +48,7 @@ small enough to turn into a Spec Kit feature.
 - Close the original-task mapping chain and remaining source reading/listening boundaries (T127). The confirmed eight missing branches and nine partial groups are a lower bound, not an exhaustive missing-task count.
 - Replace generic difficulty defaults with independently reviewed load descriptors (T128); retain observed child play as a separate gate.
 - Perform real acoustic review of all distinct local voice lines by locale, especially English and Chinese numbers/polyphonic words/long instructions (T129). Media integrity and playback completion are not pronunciation or prosody checks.
-- Add a comparison layout that keeps reference and choices usable on short screens, and reduce 375px navigation/brand height (T130). Current pages can be scrolled and have no checked horizontal overflow, but that is not a child UX acceptance result.
+- Complete T130 against the user's current Mac window requirement. The 2026-09-24 three-column update improves ordinary tasks, but dense/long tasks and feedback states still fail the complete-task check; follow-up R2 has native evidence. Other device layouts are outside the current review request.
 
 - Run at least five observed parent-child Math Island sessions; require four
   families to enter a game, complete a question, and find voice replay without

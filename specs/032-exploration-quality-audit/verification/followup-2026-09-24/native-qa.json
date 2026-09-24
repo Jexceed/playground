@@ -1,0 +1,92 @@
+{
+  "date": "2026-09-24",
+  "commit": "3660c2b",
+  "appPath": "/Applications/小小思考屋.app",
+  "window": {
+    "screenshotPixels": [
+      2560,
+      1640
+    ],
+    "logicalSizeInferredAt2x": [
+      1280,
+      820
+    ],
+    "resizedDuringReview": false
+  },
+  "installedBinarySha256": "c20130b5cc4d5f09291f0c1c287108bb276ce50515805ba83062ae592f04baa4",
+  "freshBuildBinarySha256": "c20130b5cc4d5f09291f0c1c287108bb276ce50515805ba83062ae592f04baa4",
+  "binaryMatch": true,
+  "cases": [
+    {
+      "activity": "explore-conversation-self-expression-1",
+      "state": "initial",
+      "result": "observed",
+      "evidence": "Native three-column layout, three observation groups and record button visible. Final selection/reset check later blocked by lock."
+    },
+    {
+      "activity": "explore-number-partitions-9",
+      "state": "respond",
+      "result": "fail-one-window",
+      "evidence": "Nine choices; screenshot shows only first four complete choices plus partial following row; submit below window."
+    },
+    {
+      "activity": "explore-story-sequence-expression-9",
+      "state": "parent-activity",
+      "result": "fail",
+      "evidence": "Four-story atlas appears as a small contact sheet in first frame, other captions have blank pictures; six steps and observations exceed window."
+    },
+    {
+      "activity": "explore-relational-quantity-memory-9",
+      "state": "observe-retain-respond",
+      "result": "pass",
+      "evidence": "Observe shows rabbit/cat/bear/dog with 4/5/6/7 dots. Retain says hidden; recall removes these associations and exposes pairing/reveal controls."
+    },
+    {
+      "activity": "explore-english-listening-1",
+      "state": "required-audio",
+      "result": "pass-phase-sequence",
+      "evidence": "Listening shows wait message and hides choices; after audio ends animal choices and submit/relisten controls appear. No claim of human acoustic review."
+    },
+    {
+      "activity": "explore-relations-analogies-1",
+      "state": "pair-unpair",
+      "result": "pass",
+      "evidence": "Paired left image1 (two dots) to 2; line joins correct endpoints and counter becomes 1/2. Unpair restored state; did not submit completion."
+    },
+    {
+      "activity": "explore-route-constraints-4",
+      "state": "move-undo-clear",
+      "result": "pass",
+      "evidence": "A-B-E gives 2 segments; undo returns to B/1 segment; clear returns to start."
+    },
+    {
+      "activity": "explore-shape-assembly-4",
+      "state": "rotate-place-remove",
+      "result": "pass",
+      "evidence": "A quarter turn then top-left placement occupies top-left, top-right, bottom-right; remove restores empty board."
+    },
+    {
+      "activity": "explore-fold-cut-7",
+      "state": "initial",
+      "result": "content-ambiguity",
+      "evidence": "Full 4x4 grid marked as folded-paper hole position, without folded silhouette/fold direction. Existing content issue remains."
+    },
+    {
+      "activity": "explore-fold-cut-7",
+      "state": "hint-plus-incomplete-feedback",
+      "result": "fail-one-window",
+      "evidence": "Hint plus empty-submit feedback push action controls below current window; no answer selected and no completion recorded."
+    },
+    {
+      "activity": "explore-conversation-self-expression-1",
+      "state": "grouped-radios-clear",
+      "result": "not-completed-Mac-locked",
+      "evidence": "Attempt to navigate for final form check was blocked by macOS lock. Static callbacks/name attributes reviewed; not counted as a native pass."
+    }
+  ],
+  "limits": [
+    "Targeted current-Mac follow-up, not all 621 activities played.",
+    "No new child play calibration or full voice acoustic review.",
+    "Application source code was not modified."
+  ]
+}

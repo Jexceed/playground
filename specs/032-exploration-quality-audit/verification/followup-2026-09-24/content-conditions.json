@@ -1,0 +1,765 @@
+{
+  "reviewedCommit": "3660c2b",
+  "activities": 597,
+  "money": [
+    {
+      "id": "explore-money-shopping-7",
+      "target": 5,
+      "options": [
+        {
+          "id": "p0",
+          "amounts": [
+            5
+          ],
+          "total": 5,
+          "stockOkay": true,
+          "correctTotal": true
+        },
+        {
+          "id": "p1",
+          "amounts": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "total": 5,
+          "stockOkay": true,
+          "correctTotal": true
+        },
+        {
+          "id": "p2",
+          "amounts": [
+            5,
+            1
+          ],
+          "total": 6,
+          "stockOkay": true,
+          "correctTotal": false
+        },
+        {
+          "id": "p3",
+          "amounts": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "total": 6,
+          "stockOkay": true,
+          "correctTotal": false
+        },
+        {
+          "id": "p4",
+          "amounts": [
+            5,
+            1,
+            1
+          ],
+          "total": 7,
+          "stockOkay": true,
+          "correctTotal": false
+        },
+        {
+          "id": "p5",
+          "amounts": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "total": 7,
+          "stockOkay": true,
+          "correctTotal": false
+        },
+        {
+          "id": "p6",
+          "amounts": [
+            5,
+            5
+          ],
+          "total": 10,
+          "stockOkay": false,
+          "correctTotal": false
+        }
+      ],
+      "correctTotalButOverstock": 0
+    },
+    {
+      "id": "explore-money-shopping-8",
+      "target": 6,
+      "options": [
+        {
+          "id": "p0",
+          "amounts": [
+            5
+          ],
+          "total": 5,
+          "stockOkay": true,
+          "correctTotal": false
+        },
+        {
+          "id": "p1",
+          "amounts": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "total": 5,
+          "stockOkay": true,
+          "correctTotal": false
+        },
+        {
+          "id": "p2",
+          "amounts": [
+            5,
+            1
+          ],
+          "total": 6,
+          "stockOkay": true,
+          "correctTotal": true
+        },
+        {
+          "id": "p3",
+          "amounts": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "total": 6,
+          "stockOkay": true,
+          "correctTotal": true
+        },
+        {
+          "id": "p4",
+          "amounts": [
+            5,
+            1,
+            1
+          ],
+          "total": 7,
+          "stockOkay": true,
+          "correctTotal": false
+        },
+        {
+          "id": "p5",
+          "amounts": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "total": 7,
+          "stockOkay": true,
+          "correctTotal": false
+        },
+        {
+          "id": "p6",
+          "amounts": [
+            5,
+            5
+          ],
+          "total": 10,
+          "stockOkay": false,
+          "correctTotal": false
+        }
+      ],
+      "correctTotalButOverstock": 0
+    },
+    {
+      "id": "explore-money-shopping-9",
+      "target": 7,
+      "options": [
+        {
+          "id": "p0",
+          "amounts": [
+            5
+          ],
+          "total": 5,
+          "stockOkay": true,
+          "correctTotal": false
+        },
+        {
+          "id": "p1",
+          "amounts": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "total": 5,
+          "stockOkay": true,
+          "correctTotal": false
+        },
+        {
+          "id": "p2",
+          "amounts": [
+            5,
+            1
+          ],
+          "total": 6,
+          "stockOkay": true,
+          "correctTotal": false
+        },
+        {
+          "id": "p3",
+          "amounts": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "total": 6,
+          "stockOkay": true,
+          "correctTotal": false
+        },
+        {
+          "id": "p4",
+          "amounts": [
+            5,
+            1,
+            1
+          ],
+          "total": 7,
+          "stockOkay": true,
+          "correctTotal": true
+        },
+        {
+          "id": "p5",
+          "amounts": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "total": 7,
+          "stockOkay": true,
+          "correctTotal": true
+        },
+        {
+          "id": "p6",
+          "amounts": [
+            5,
+            5
+          ],
+          "total": 10,
+          "stockOkay": false,
+          "correctTotal": false
+        }
+      ],
+      "correctTotalButOverstock": 0
+    }
+  ],
+  "routes": [
+    {
+      "id": "explore-route-constraints-4",
+      "legalRouteLengths": [
+        3,
+        3
+      ],
+      "legalPaths": [
+        [
+          "e0",
+          "e1",
+          "e6"
+        ],
+        [
+          "e0",
+          "e5",
+          "e3"
+        ]
+      ]
+    },
+    {
+      "id": "explore-route-constraints-5",
+      "legalRouteLengths": [
+        3
+      ],
+      "legalPaths": [
+        [
+          "e4",
+          "e2",
+          "e3"
+        ]
+      ]
+    },
+    {
+      "id": "explore-route-constraints-6",
+      "legalRouteLengths": [
+        3,
+        3
+      ],
+      "legalPaths": [
+        [
+          "e0",
+          "e5",
+          "e3"
+        ],
+        [
+          "e4",
+          "e2",
+          "e3"
+        ]
+      ]
+    }
+  ],
+  "marker": [
+    {
+      "id": "explore-position-transform-7",
+      "blueCells": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "distinctBlueCells": 1
+    },
+    {
+      "id": "explore-position-transform-8",
+      "blueCells": [
+        0,
+        0,
+        0
+      ],
+      "distinctBlueCells": 1
+    },
+    {
+      "id": "explore-position-transform-9",
+      "blueCells": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "distinctBlueCells": 1
+    }
+  ],
+  "pyramids": [
+    {
+      "id": "explore-recursive-composition-4",
+      "kind": "singleChoice",
+      "staticQuestionMarks": 3,
+      "hasIntermediateInputs": false
+    },
+    {
+      "id": "explore-recursive-composition-5",
+      "kind": "singleChoice",
+      "staticQuestionMarks": 3,
+      "hasIntermediateInputs": false
+    },
+    {
+      "id": "explore-recursive-composition-6",
+      "kind": "singleChoice",
+      "staticQuestionMarks": 3,
+      "hasIntermediateInputs": false
+    },
+    {
+      "id": "explore-recursive-composition-7",
+      "kind": "singleChoice",
+      "staticQuestionMarks": 6,
+      "hasIntermediateInputs": false
+    },
+    {
+      "id": "explore-recursive-composition-8",
+      "kind": "singleChoice",
+      "staticQuestionMarks": 6,
+      "hasIntermediateInputs": false
+    },
+    {
+      "id": "explore-recursive-composition-9",
+      "kind": "singleChoice",
+      "staticQuestionMarks": 6,
+      "hasIntermediateInputs": false
+    }
+  ],
+  "fold": [
+    {
+      "id": "explore-fold-cut-4",
+      "prompt": "左右对折后打了一个孔，展开后是哪种分布？",
+      "clues": [
+        "竖直中线是左右折线。",
+        "图里标出折好后打孔的位置。"
+      ],
+      "drawnPaperCells": 16,
+      "explicitFoldLines": 0
+    },
+    {
+      "id": "explore-fold-cut-5",
+      "prompt": "左右对折后打了一个孔，展开后是哪种分布？",
+      "clues": [
+        "竖直中线是左右折线。",
+        "图里标出折好后打孔的位置。"
+      ],
+      "drawnPaperCells": 16,
+      "explicitFoldLines": 0
+    },
+    {
+      "id": "explore-fold-cut-6",
+      "prompt": "左右对折后打了一个孔，展开后是哪种分布？",
+      "clues": [
+        "竖直中线是左右折线。",
+        "图里标出折好后打孔的位置。"
+      ],
+      "drawnPaperCells": 16,
+      "explicitFoldLines": 0
+    },
+    {
+      "id": "explore-fold-cut-7",
+      "prompt": "先左右、再上下对折后打孔，展开后是哪种分布？",
+      "clues": [
+        "横、竖两条中线都是折线。",
+        "图里标出折好后打孔的位置。"
+      ],
+      "drawnPaperCells": 16,
+      "explicitFoldLines": 0
+    },
+    {
+      "id": "explore-fold-cut-8",
+      "prompt": "先左右、再上下对折后打孔，展开后是哪种分布？",
+      "clues": [
+        "横、竖两条中线都是折线。",
+        "图里标出折好后打孔的位置。"
+      ],
+      "drawnPaperCells": 16,
+      "explicitFoldLines": 0
+    },
+    {
+      "id": "explore-fold-cut-9",
+      "prompt": "先左右、再上下对折后打孔，展开后是哪种分布？",
+      "clues": [
+        "横、竖两条中线都是折线。",
+        "图里标出折好后打孔的位置。"
+      ],
+      "drawnPaperCells": 16,
+      "explicitFoldLines": 0
+    }
+  ],
+  "rectangleProgression": [
+    {
+      "id": "explore-geometric-counts-1",
+      "stage": 1,
+      "prompt": "这个图形有几条边？",
+      "answer": "3"
+    },
+    {
+      "id": "explore-geometric-counts-2",
+      "stage": 1,
+      "prompt": "这个图形有几个角？",
+      "answer": "4"
+    },
+    {
+      "id": "explore-geometric-counts-3",
+      "stage": 1,
+      "prompt": "图上有几个顶点？",
+      "answer": "5"
+    },
+    {
+      "id": "explore-geometric-counts-4",
+      "stage": 2,
+      "prompt": "只数最小的小格，图里有几个面？",
+      "answer": "4"
+    },
+    {
+      "id": "explore-geometric-counts-5",
+      "stage": 2,
+      "prompt": "把交点作为分界，这个十字共有几段小线段？",
+      "answer": "4"
+    },
+    {
+      "id": "explore-geometric-counts-6",
+      "stage": 2,
+      "prompt": "只数最小的小格，图里有几个面？",
+      "answer": "8"
+    },
+    {
+      "id": "explore-geometric-counts-7",
+      "stage": 3,
+      "prompt": "每组连在一起的图形算一个整体。图中共有几个互不相连的部分？",
+      "answer": "2"
+    },
+    {
+      "id": "explore-geometric-counts-8",
+      "stage": 3,
+      "prompt": "每组连在一起的图形算一个整体。图中共有几个互不相连的部分？",
+      "answer": "3"
+    },
+    {
+      "id": "explore-geometric-counts-9",
+      "stage": 3,
+      "prompt": "大小长方形都算，图里一共有几个长方形？",
+      "answer": "60"
+    }
+  ],
+  "rectangleIndependentCount": {
+    "id": "explore-geometric-counts-9",
+    "rows": 3,
+    "columns": 4,
+    "count": 60
+  },
+  "difficulty": {
+    "readingOne": 597,
+    "motorOne": 597,
+    "rulesEqualStage": 597,
+    "stepsEqualStage": 597
+  },
+  "atlasUsers": [
+    {
+      "id": "explore-planning-repair-7",
+      "framedCards": 4,
+      "frames": [
+        {
+          "columns": 2,
+          "rows": 2,
+          "index": 3
+        },
+        {
+          "columns": 2,
+          "rows": 2,
+          "index": 2
+        },
+        {
+          "columns": 2,
+          "rows": 2,
+          "index": 1
+        },
+        {
+          "columns": 2,
+          "rows": 2,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "id": "explore-planning-repair-8",
+      "framedCards": 4,
+      "frames": [
+        {
+          "columns": 2,
+          "rows": 2,
+          "index": 3
+        },
+        {
+          "columns": 2,
+          "rows": 2,
+          "index": 2
+        },
+        {
+          "columns": 2,
+          "rows": 2,
+          "index": 1
+        },
+        {
+          "columns": 2,
+          "rows": 2,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "id": "explore-planning-repair-9",
+      "framedCards": 4,
+      "frames": [
+        {
+          "columns": 2,
+          "rows": 2,
+          "index": 3
+        },
+        {
+          "columns": 2,
+          "rows": 2,
+          "index": 2
+        },
+        {
+          "columns": 2,
+          "rows": 2,
+          "index": 1
+        },
+        {
+          "columns": 2,
+          "rows": 2,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "id": "explore-story-sequence-expression-7",
+      "framedCards": 4,
+      "frames": [
+        {
+          "columns": 2,
+          "rows": 2,
+          "index": 0
+        },
+        {
+          "columns": 2,
+          "rows": 2,
+          "index": 1
+        },
+        {
+          "columns": 2,
+          "rows": 2,
+          "index": 2
+        },
+        {
+          "columns": 2,
+          "rows": 2,
+          "index": 3
+        }
+      ]
+    },
+    {
+      "id": "explore-story-sequence-expression-8",
+      "framedCards": 4,
+      "frames": [
+        {
+          "columns": 2,
+          "rows": 2,
+          "index": 0
+        },
+        {
+          "columns": 2,
+          "rows": 2,
+          "index": 1
+        },
+        {
+          "columns": 2,
+          "rows": 2,
+          "index": 2
+        },
+        {
+          "columns": 2,
+          "rows": 2,
+          "index": 3
+        }
+      ]
+    },
+    {
+      "id": "explore-story-sequence-expression-9",
+      "framedCards": 4,
+      "frames": [
+        {
+          "columns": 2,
+          "rows": 2,
+          "index": 0
+        },
+        {
+          "columns": 2,
+          "rows": 2,
+          "index": 1
+        },
+        {
+          "columns": 2,
+          "rows": 2,
+          "index": 2
+        },
+        {
+          "columns": 2,
+          "rows": 2,
+          "index": 3
+        }
+      ]
+    },
+    {
+      "id": "explore-nature-growth-7",
+      "framedCards": 4,
+      "frames": [
+        {
+          "columns": 2,
+          "rows": 2,
+          "index": 0
+        },
+        {
+          "columns": 2,
+          "rows": 2,
+          "index": 1
+        },
+        {
+          "columns": 2,
+          "rows": 2,
+          "index": 2
+        },
+        {
+          "columns": 2,
+          "rows": 2,
+          "index": 3
+        }
+      ]
+    },
+    {
+      "id": "explore-nature-growth-8",
+      "framedCards": 4,
+      "frames": [
+        {
+          "columns": 2,
+          "rows": 2,
+          "index": 0
+        },
+        {
+          "columns": 2,
+          "rows": 2,
+          "index": 1
+        },
+        {
+          "columns": 2,
+          "rows": 2,
+          "index": 2
+        },
+        {
+          "columns": 2,
+          "rows": 2,
+          "index": 3
+        }
+      ]
+    },
+    {
+      "id": "explore-nature-growth-9",
+      "framedCards": 4,
+      "frames": [
+        {
+          "columns": 2,
+          "rows": 2,
+          "index": 0
+        },
+        {
+          "columns": 2,
+          "rows": 2,
+          "index": 1
+        },
+        {
+          "columns": 2,
+          "rows": 2,
+          "index": 2
+        },
+        {
+          "columns": 2,
+          "rows": 2,
+          "index": 3
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "This detects ineffective conditions and rendering risk, not observed developmental difficulty.",
+    "Atlas failure was visually reproduced in the installed Mac E03-9; other listed activities use the same affected render path."
+  ]
+}
