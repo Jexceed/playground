@@ -15,7 +15,7 @@ export function ParentActivity({ activity, response, disabled, onChange }: { act
       <ol>{activity.steps.map((step, i) => <li key={step}><span className="parent-step-number">{i + 1}</span><p>{step}</p><button type="button" className="parent-step-listen" aria-label={`听第${i + 1}步`} onClick={() => void speak(step)}><Volume2 size={18} /></button></li>)}</ol>
     </section>
     <section className="parent-record"><h3><MessageCircle size={19} />做完了，聊一聊</h3><p>请家长按这次实际表现记录，每一项都可以慢慢来。</p>
-      {activity.observations.map(o => <fieldset key={o.id}><legend>{o.text}</legend><div className="parent-record-options">{([['independent', '自己做到了'], ['supported', '一起做到了'], ['notYet', '下次再试']] as const).map(([value, label]) => <label key={value} className={response.observations[o.id] === value ? 'is-checked' : ''}><input type="radio" name={`${activity.id}-${o.id}`} value={value} checked={response.observations[o.id] === value} disabled={disabled} onChange={() => onChange({ kind: 'parentObservation', observations: { ...response.observations, [o.id]: value } })} />{label}</label>)}</div></fieldset>)}
+      {activity.observations.map(o => <div className="parent-observe-row" role="group" aria-label={o.text} key={o.id}><p>{o.text}</p><div className="parent-record-options">{([['independent', '自己做到了'], ['supported', '一起做到了'], ['notYet', '下次再试']] as const).map(([value, label]) => <label key={value} className={response.observations[o.id] === value ? 'is-checked' : ''}><input type="radio" name={`${activity.id}-${o.id}`} value={value} checked={response.observations[o.id] === value} disabled={disabled} onChange={() => onChange({ kind: 'parentObservation', observations: { ...response.observations, [o.id]: value } })} />{label}</label>)}</div></div>)}
     </section>
   </div>;
 }

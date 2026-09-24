@@ -3,6 +3,15 @@
 All meaningful project changes should be recorded here. Keep entries factual and
 grouped by date.
 
+## 2026-09-24
+
+### One-screen exploration layout
+
+- Restored the three-column desktop layout for 探索 (matching 启蒙): question navigation moved back to the right rail above the collapsible parent-guidance and growth-record sections; removed the horizontal navigation bar and stacked support panels from the center column.
+- Compacted all nine activity kinds (spacing, evidence images 340→176px cap, option/tray/slot artwork 144–170→80–118px, memory stages, matching cards, graph map, parent materials strip and single-row observation records) so every sampled activity fits one 1280×820 screen. Measured overflow dropped from +53–667px to 0 across all worlds and interaction kinds; parent-observation pages fit even with both rail sections expanded.
+- Realigned the exploration section header with the stage card and restored its tinted strip style; increased world-button padding in the sidebar so icons no longer touch the button edge.
+- Verified with headless-Chrome measurements and screenshots at 1280×820, 102 passing node tests, tsc, production build and a clean curriculum audit (0 problems). Enlightenment layout unchanged (0 overflow).
+
 ## 2026-09-23
 
 ### Exploration quality and source-task audit

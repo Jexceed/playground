@@ -157,12 +157,12 @@ export function App() {
 
   const supportPanel = (
 <aside className="side-panel">
-          {activeSectionId === "enlightenment" && <RoundNavigator
+          <RoundNavigator
             completedRoundIds={completedRoundSet}
             currentIndex={requestedRoundIndex}
             rounds={selectedGame.rounds}
             onJump={jumpToRound}
-          />}
+          />
 
           <details className="parent-support-disclosure" open={activeSectionId === "enlightenment"}><summary>给家长 · 陪玩提示</summary>
           <section className="prompt-panel">
@@ -302,12 +302,6 @@ export function App() {
             <div><strong>{activeSection.name}</strong><span>{activeSection.summary}</span></div>
             <small>{games.length} 组 · {questionStats.total} 题</small>
           </header>
-          {activeSectionId === "exploration" && <RoundNavigator
-            completedRoundIds={completedRoundSet}
-            currentIndex={requestedRoundIndex}
-            rounds={selectedGame.rounds}
-            onJump={jumpToRound}
-          />}
           <article className="game-stage" tabIndex={-1} aria-label={selectedGame.title}>
             {selectedGame.kind === "activitySet" ? <Suspense fallback={<p className="muted">正在准备图卡…</p>}><ActivitySetGame
               key={selectedGame.id}
@@ -328,10 +322,9 @@ export function App() {
               onRoundComplete={completeRound}
             />}
           </article>
-          {activeSectionId === "exploration" && supportPanel}
         </section>
 
-        {activeSectionId === "enlightenment" && supportPanel}
+        {supportPanel}
       </section>
     </main>
   );
