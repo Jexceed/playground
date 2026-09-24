@@ -5,7 +5,7 @@ import { ProgressiveSetGame } from "./games/ProgressiveSetGame";
 import { clearActivityProgress, mergeActivityProgress, readActivityProgress, readCatalogLocation, saveCatalogLocation } from "./services/activity-progress";
 import { readCurriculumNavigation, rememberCurriculumLocation, resolveSectionPlayLocation, saveCurriculumNavigation } from "./services/curriculum-navigation";
 import { groupExplorationGames } from "./curriculum/exploration/navigation";
-import type { CatalogGame } from "./domain/activity";
+import { ACTIVITY_COPY, type CatalogGame } from "./domain/activity";
 import { publicAsset } from "./publicAsset";
 import { addCompletion, addRoundCompletion, readLastPlayLocation, readProgress, saveLastPlayLocation, saveProgress } from "./storage";
 import { speak, stopSpeech, warmVoiceManifest } from "./speech";
@@ -170,10 +170,13 @@ export function App() {
             <p>{selectedGame.kind === "activitySet" ? selectedGame.rounds[requestedRoundIndex]?.parentPrompt : selectedGame.parentPrompt}</p>
             {selectedGame.kind === "activitySet" && <p className="activity-parent-note">先让孩子自己试，再请他说说线索和理由。提示、重看和尝试会留下记录。</p>}
             {selectedActivity && <p className="activity-parent-focus">这题练习：{selectedActivity.difficultyNote}{selectedActivity.prerequisites ? `。${selectedActivity.prerequisites}` : ""}</p>}
+            {selectedActivity?.difficulty?.calibration === 'design-estimate' && <p className="activity-parent-focus">{ACTIVITY_COPY.designEstimate}</p>}
+            {selectedActivity && selectedActivity.revision > 1 && <p className="activity-parent-focus">题目已更新，原有练习记录仍保留。</p>}
             {activityEvidence && <div className="activity-evidence" aria-label="本题累计记录">
               <strong>{activityEvidence.observedAt ? "已记录亲子观察" : activityEvidence.correctAttempts > 0 ? "这题做过了" : "正在尝试这道题"}</strong>
               {activityEvidence.observations ? <span>自主 {Object.values(activityEvidence.observations).filter(v=>v==='independent').length} 项 · 一起做到 {Object.values(activityEvidence.observations).filter(v=>v==='supported').length} 项 · 下次再试 {Object.values(activityEvidence.observations).filter(v=>v==='notYet').length} 项</span> : <span>累计尝试 {activityEvidence.attempts} 次</span>}
               <span>提示 {activityEvidence.hints} 次 · 重看或重听 {activityEvidence.reveals} 次</span>
+              {(activityEvidence.checks ?? 0) > 0 && <span>中途检查 {activityEvidence.checks} 次</span>}
             </div>}
           </section>
 

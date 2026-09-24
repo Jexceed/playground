@@ -1,0 +1,14 @@
+Already up to date
+Done in 153ms using pnpm v11.19.0
+$ tsc && vite build
+vite v7.3.6 building client environment for production...
+transforming...
+✓ 1631 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                            1.14 kB │ gzip:   0.62 kB
+dist/assets/index-DtxHBHfY.css            85.50 kB │ gzip:  17.29 kB
+dist/assets/ActivitySetGame-CZbk9S6X.js   54.62 kB │ gzip:  18.38 kB
+dist/assets/vendor-BwIlJiIH.js           195.85 kB │ gzip:  61.98 kB
+dist/assets/index-B0yXJcM4.js            456.67 kB │ gzip: 142.90 kB
+✓ built in 2.81s

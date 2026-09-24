@@ -1,0 +1,4745 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-24",
+  "scope": "Current 71 exploration families, 597 authored activities; excludes retained 24 pilot activities. No source-PDF rereview.",
+  "status": "design-estimates-only-not-child-tested-not-age-scores",
+  "baseline": "032 followup 2026-09-24 and source at 034 research start; stated six 034 fixes are explicit assumptions, not observed completed behavior.",
+  "definitions": {
+    "rules": "设计估计：当前活动需要同时维持的独立语义条件或转换规则数。不是stage；不把同一规则在多个格/对象重复计为新规则。冗余文字条件应合并；缺少区分力或没有可执行反例的条件不计入已训练规则。部分族差异按动态项覆盖。",
+    "steps": "设计估计：代表性解题路径中依赖前一步结果的推断/操作阶段数，不是点击数、卡片数、显示步骤段数或唯一最短解。可用其它合法策略；亲子活动按预测/操作/解释等阶段估计。",
+    "reading": "0=答案证据主要为图片/听觉/口述，不要求儿童独立识字；1=数字、字母标签或图形编码/字形的视觉识别；2=短词、拼音或简短关系文本需辨认；3=连续多句文字证据需自行整合。默认允许现有语音/成人读题，成人任务说明阅读不计儿童reading；英语听力单独记录。",
+    "motor": "0=儿童可纯口述，成人记录；1=一次单选或简单指认/拿取；2=多选检查、连线、多位置填放或普通实物操作；3=精细折剪、节拍动作或身体平衡协调。描述操作类型，不是孩子手部能力分；操作量另记。",
+    "representation": "沿用现类型pictures/symbols/physical，仅表示主要载体；physical包括亲子口述观察，不表示儿童一定动手。混合图/字/声音需附加标志。",
+    "prerequisites": "可通过小示例核实的技能/概念与所需成人/材料支持，不是年龄门槛，不自动阻止进入。",
+    "profileSelection": "普通9项题族按现stage取配置。7个three()亲子题族按0/1/2活动索引取三种任务配置；不能按现stage=1统一覆盖，也不能静默改历史stage。"
+  },
+  "sources": [
+    "AGENTS.md",
+    "specs/034-current-mac-quality-fixes/spec.md",
+    "specs/032-exploration-quality-audit/followup-2026-09-24.md",
+    "specs/032-exploration-quality-audit/research/math-logic.md",
+    "specs/032-exploration-quality-audit/research/graphics.md",
+    "specs/032-exploration-quality-audit/research/memory-language-life.md",
+    "src/curriculum/exploration/helpers.ts",
+    "src/curriculum/exploration/presentation.ts",
+    "src/curriculum/exploration/math.ts",
+    "src/curriculum/exploration/logic.ts",
+    "src/curriculum/exploration/graphic.ts",
+    "src/curriculum/exploration/memory.ts",
+    "src/curriculum/exploration/language.ts",
+    "src/curriculum/exploration/life.ts"
+  ],
+  "families": {
+    "N01": {
+      "title": "点数、基数与数量结构",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 1,
+          "steps": 1,
+          "reading": 1,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "逐个点数并认7–9",
+          "basis": "7–9点总量单选，一次完整计数；没有实际一一配对操作",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/math.ts:17",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 1,
+          "steps": 1,
+          "reading": 1,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "能计数到14并按行检查",
+          "basis": "12–14点、每行5点，仍是总量单选；数量增加不等于增加规则",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/math.ts:17",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 1,
+          "steps": 1,
+          "reading": 1,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "能计数到19且不因间距改变漏数",
+          "basis": "17–19点、间距增加，仍是计数；不是同量换排列的迁移对照",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/math.ts:17",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "N02": {
+      "title": "数量比较、补齐与移动补差",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 1,
+          "steps": 1,
+          "reading": 1,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "能比较两组数量和差额",
+          "basis": "左5–7、右7–11，求添入差额，一种数量关系",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/math.ts:18",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 1,
+          "steps": 1,
+          "reading": 1,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "能点数并求3–5的差额",
+          "basis": "左5–7、右8–12，差额加大但仍一次求差",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/math.ts:18",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 2,
+          "steps": 2,
+          "reading": 1,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "理解移交使一边加一而另一边减一",
+          "basis": "右移到左使相等，先求差再考虑每次缩小2；当前仍选数字",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/math.ts:18",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "N03": {
+      "title": "数量、排列与容积守恒",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 1,
+          "steps": 1,
+          "reading": 1,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "能在重新排列后按对象点数",
+          "basis": "6–8点重排，题面明确没有增减，保持原数即可",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/math.ts:19",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 1,
+          "steps": 1,
+          "reading": 1,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "理解没有增减且能计数到11",
+          "basis": "9–11点重排，任务结构相同，不能假设规则增加",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/math.ts:19",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 1,
+          "steps": 1,
+          "reading": 1,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "理解全部倒入、没有洒出以及用小杯作水量单位",
+          "basis": "12–14小杯水换宽杯，守恒前提已给；水量单位与水面高度需区分",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/math.ts:19",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "N04": {
+      "title": "有序分合与枚举",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 1,
+          "steps": 1,
+          "reading": 1,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "能合并两堆且理解0个",
+          "basis": "逐张核对两盒合计5–7，7–9候选，多选全部正确分法",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/math.ts:20",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 2,
+          "steps": 2,
+          "reading": 1,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "会核对总数且理解每盒至少1个",
+          "basis": "在总和条件外排除空盒，规则总和与非空各一条",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/math.ts:20",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 3,
+          "steps": 3,
+          "reading": 1,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "理解严格的少于并能逐条筛选",
+          "basis": "同时满足总和、两盒非空、左少右多；选择预列候选，不是自主枚举",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/math.ts:20",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "N05": {
+      "title": "凑十、破十与数位表征",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 1,
+          "steps": 1,
+          "reading": 1,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "认识十格框且会数空格",
+          "basis": "6–8补到10，数缺格即可",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/math.ts:21",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 1,
+          "steps": 2,
+          "reading": 1,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "理解10可作一个整体并会拆小数",
+          "basis": "8–10加5–7，建议路径为拆出凑十部分再加余数；不强制采用此策略",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/math.ts:21",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 1,
+          "steps": 2,
+          "reading": 1,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "理解十和个位，能从十减去7–9",
+          "basis": "13–15减7–9，先算十减去减数再合个位；只评分最终数",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/math.ts:21",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "N06": {
+      "title": "情境加减与逆向数量关系",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 1,
+          "steps": 1,
+          "reading": 1,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "理解飞来会增加且会合并两数",
+          "basis": "原量7–9加变化3–5，选现量；有三栏数量证据",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/math.ts:22",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 1,
+          "steps": 2,
+          "reading": 1,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "分清原来、飞来、现在，理解逆向求原量",
+          "basis": "先判断未知是原量，再从现量减变化量",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/math.ts:22",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 1,
+          "steps": 2,
+          "reading": 1,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "分清已知起点和终点，理解求变化量",
+          "basis": "先判断未知是飞来量，再用现量减原量；不是第三条独立规则",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/math.ts:22",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "N07": {
+      "title": "成组计数、等分与剩余",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 1,
+          "steps": 2,
+          "reading": 1,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "会点数、理解每人一样多",
+          "basis": "9/12/15平均分3/4/5人，建立等份后求每份；当前非实物分配",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/math.ts:23",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 1,
+          "steps": 1,
+          "reading": 1,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "能按4个一组计数",
+          "basis": "3–5组每组4个，重复计数求总量",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/math.ts:23",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 2,
+          "steps": 2,
+          "reading": 1,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "理解尽量装整盒和剩下不足一盒",
+          "basis": "13/18/23每4个一盒，求整组后找余数，并核对余数小于4",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/math.ts:23",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "N08": {
+      "title": "连续量等分与面积占比",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 2,
+          "steps": 2,
+          "reading": 0,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "理解同一整体和等大分割",
+          "basis": "2/3/4等分中涂1份，选分得更细而占比相同的纸；同时看整体和部分",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/math.ts:24",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 2,
+          "steps": 2,
+          "reading": 0,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "会比较绿色部分占整体的比例",
+          "basis": "4/6/8格中涂较大份额，仍需核对等大整体与绿色比例",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/math.ts:24",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 2,
+          "steps": 2,
+          "reading": 0,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "能把不同分割还原为相同面积份额",
+          "basis": "6/9/12格对8/12/16格，比例等价机制不变；不据格数自动增加规则",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/math.ts:24",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "N09": {
+      "title": "序数、排队与重叠计数",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 1,
+          "steps": 1,
+          "reading": 1,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "理解从一边数第几与后面还有几位",
+          "basis": "左序数3–5加后面3–5，直接求总量；按题干可一加完成",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/math.ts:25",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 2,
+          "steps": 2,
+          "reading": 1,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "知道双向序数都含同一个人",
+          "basis": "左序数和右序数相加，再去掉重复计入的小兔",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/math.ts:25",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 2,
+          "steps": 2,
+          "reading": 1,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "能辨认两组共同包含的对象",
+          "basis": "两个集合都含小兔，先合再去重一次，与第二阶同种重叠规则",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/math.ts:25",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "N10": {
+      "title": "单双、十与个位",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 1,
+          "steps": 1,
+          "reading": 1,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "会两两配对且认5–12的数字",
+          "basis": "6张数量卡中选所有无剩余的偶数，多选而非单击",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/math.ts:26",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 1,
+          "steps": 2,
+          "reading": 1,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "理解一长条是10而一小块是1",
+          "basis": "先将2–4长条换为20–40，再加3–5个一",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/math.ts:26",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 1,
+          "steps": 1,
+          "reading": 1,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "会两位数减1，口述单双需已理解成对",
+          "basis": "自动题只检查23/34/45减1；单双变化另由家长观察，不算自动必答第二规则",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/math.ts:26",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "N11": {
+      "title": "数列、交错规律与数表",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 1,
+          "steps": 2,
+          "reading": 1,
+          "motor": 1,
+          "representation": "symbols",
+          "prerequisites": "能比较相邻数差并接续",
+          "basis": "相邻数比较得到每次加2–4，再延长序列",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/math.ts:30",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 2,
+          "steps": 3,
+          "reading": 1,
+          "motor": 1,
+          "representation": "symbols",
+          "prerequisites": "理解隔一个分成两列，能分别找差",
+          "basis": "先拆交错序列，再找所在子序列步长，最后补数",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/math.ts:30",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 2,
+          "steps": 2,
+          "reading": 1,
+          "motor": 1,
+          "representation": "symbols",
+          "prerequisites": "能按行列读取2×3数表",
+          "basis": "横向加2–4、纵向加3交叉校验同一个空格；给数字规律而非图形属性联合",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/math.ts:30",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "N12": {
+      "title": "等量替换与图形代数",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 1,
+          "steps": 1,
+          "reading": 1,
+          "motor": 1,
+          "representation": "symbols",
+          "prerequisites": "认识加号、等号和相同图形同值",
+          "basis": "两个相同圆合成6–10，等分求圆；关系式主要在图示中",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/math.ts:31",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 2,
+          "steps": 2,
+          "reading": 1,
+          "motor": 1,
+          "representation": "symbols",
+          "prerequisites": "能由两圆求一个圆再做减法",
+          "basis": "由圆的等量关系再推三角，两个关系两步代入",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/math.ts:31",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 2,
+          "steps": 3,
+          "reading": 1,
+          "motor": 1,
+          "representation": "symbols",
+          "prerequisites": "能保留已解的两个图形数值并代回",
+          "basis": "解圆、解三角，再算圆加两个三角；三步不意味着三条独立关系",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/math.ts:31",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "N13": {
+      "title": "货币兑换、付款与找零",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 1,
+          "steps": 1,
+          "reading": 1,
+          "motor": 1,
+          "representation": "symbols",
+          "prerequisites": "认识元并理解等值兑换",
+          "basis": "10/20/50元兑换成5/5/10元张数，一次等分",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/math.ts:33",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 1,
+          "steps": 1,
+          "reading": 1,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "理解付款减价格得到找零",
+          "basis": "付10元买3–5元物品，求找零；实物价签支持",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/math.ts:33",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 2,
+          "steps": 2,
+          "reading": 1,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "会按面额求总价并逐面额核对库存",
+          "basis": "按本轮修复假设同时核对金额与有限库存，含金额正确但超库存的候选；全部合法方案多选",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/math.ts:33",
+          "implementationStatus": "planned-fix-assumption"
+        }
+      ],
+      "plannedFixAssumption": {
+        "stages": [
+          3
+        ],
+        "assumption": "末阶存在合计正确但库存超量的反例；金额和库存必须都参与答案集合判定。",
+        "pendingVerification": "去掉库存条件后，合法答案集合必须扩大。"
+      }
+    },
+    "N14": {
+      "title": "时刻、刻度与经过时间",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 2,
+          "steps": 2,
+          "reading": 2,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "区分长针短针，知道半小时",
+          "basis": "3–5点30分，分别读分钟和小时再合成时刻",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/math.ts:37",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 2,
+          "steps": 2,
+          "reading": 2,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "会按5分钟刻度读取分针和已走过的时针",
+          "basis": "3–5点15/25/35分，仍两根针两条读法，不自动增加规则",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/math.ts:37",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 2,
+          "steps": 3,
+          "reading": 1,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "会读取两时刻，理解跨整点和不足一小时",
+          "basis": "先读取两个时刻再计算间隔25/35/45分钟，含跨整点",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/math.ts:37",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "N15": {
+      "title": "自然测量、长度、周长与量感",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 1,
+          "steps": 1,
+          "reading": 1,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "能数相邻刻度之间的单位格",
+          "basis": "从0起量4–6格纸条，数单位间隔",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/math.ts:38",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 1,
+          "steps": 2,
+          "reading": 1,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "知道终点刻度不是长度，理解起点不为0",
+          "basis": "纸条起点2–4，需要终点减起点或数间隔",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/math.ts:38",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 1,
+          "steps": 2,
+          "reading": 1,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "理解沿四边围一圈并会合并两对边",
+          "basis": "给长4–6宽2–4，合并两对边求周长；面积为干扰，不作为第二训练规则",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/math.ts:38",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "N16": {
+      "title": "日历、星期与周期推算",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 1,
+          "steps": 1,
+          "reading": 2,
+          "motor": 1,
+          "representation": "symbols",
+          "prerequisites": "认识1–28和星期列标题",
+          "basis": "在28天练习日历找日期所在星期列；不是现实月历知识测验",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/math.ts:39",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 1,
+          "steps": 1,
+          "reading": 1,
+          "motor": 1,
+          "representation": "symbols",
+          "prerequisites": "知道一周7天，能加7",
+          "basis": "给日期求整周后日期，只需加7",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/math.ts:39",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 2,
+          "steps": 2,
+          "reading": 1,
+          "motor": 1,
+          "representation": "symbols",
+          "prerequisites": "理解每过3天以及开始当天算第一次",
+          "basis": "从2–4号起每3天一次，开始也算第一次，连续加3两次求第三次",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/math.ts:39",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "L01": {
+      "title": "多角度分类与多选集合",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 1,
+          "steps": 1,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "能区分红蓝黄",
+          "basis": "9图按一个颜色选3图",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/logic.ts:18",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 1,
+          "steps": 1,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "能区分圆方三角",
+          "basis": "9图改按一个形状选3图，规则数与上一阶相同",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/logic.ts:18",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 2,
+          "steps": 2,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "理解不是并能同时排除两个属性",
+          "basis": "颜色不是某色且形状不是某形，双排除后选全部保留图",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/logic.ts:18",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "L02": {
+      "title": "关系配对与类比",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 1,
+          "steps": 1,
+          "reading": 1,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "会点数2–5并识数字",
+          "basis": "2组点群与数字匹配，关系只有数量相等",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/logic.ts:19",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 1,
+          "steps": 1,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "能忽略颜色按形状找同类",
+          "basis": "3组图形颜色不同但形状相同，一一连接",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/logic.ts:19",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 1,
+          "steps": 1,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "能接受同形重复并保持一一配对",
+          "basis": "4组含重复圆形，合法交换配对均接受；增加项目数而非增加类比层级",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/logic.ts:19",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "L03": {
+      "title": "传递关系、排序与证据不足",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 2,
+          "steps": 2,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "能听懂谁在谁前面",
+          "basis": "3位朋友2条前后约束，合并后排序并核对",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/logic.ts:20",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 3,
+          "steps": 3,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "能把3条前后关系连成4人队伍",
+          "basis": "4位朋友3条前后约束，合并约束链",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/logic.ts:20",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 2,
+          "steps": 2,
+          "reading": 2,
+          "motor": 1,
+          "representation": "symbols",
+          "prerequisites": "理解共同高于一人不能确定彼此高低",
+          "basis": "两条比较只能形成部分顺序，判断信息不足；不是4人的排序延长",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/logic.ts:20",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "L04": {
+      "title": "多条件排除与填格",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 2,
+          "steps": 2,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "认三位朋友，理解一行不得重复",
+          "basis": "3×3填2空，行唯一与列唯一两种约束",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/logic.ts:25",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 2,
+          "steps": 3,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "同时核对行列，能撤回不合适摆放",
+          "basis": "3×3填4空，行列规则相同，可能需要连锁更新",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/logic.ts:25",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 2,
+          "steps": 3,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "可反复利用已填格约束后续空位",
+          "basis": "3×3填6空，规则仍两种，步骤3为代表性推断轮次估计，非空格数",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/logic.ts:25",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "L05": {
+      "title": "路线约束与一笔走边",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 2,
+          "steps": 1,
+          "reading": 1,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "能认起终点并沿相邻地点走",
+          "basis": "路径连贯到终点，2–4段链式路线，逐段动作另计",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/logic.ts:27",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 6,
+          "steps": 3,
+          "reading": 1,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "理解必经、封路、路段不重复及比较长度",
+          "basis": "按修复假设有3段最优与5段合法绕路；连贯、终点、必经、避封、不重复，最短是第六项优化要求，先找合法再比段数再核验",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/logic.ts:27",
+          "implementationStatus": "planned-fix-assumption"
+        },
+        {
+          "stage": 3,
+          "rules": 3,
+          "steps": 2,
+          "reading": 1,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "能区分平行直弯两边并规划每边恰走一次",
+          "basis": "3–5节点环加平行边，每段恰走一次到指定终点；连贯、边覆盖、终点三约束，不要求最短",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/logic.ts:27",
+          "implementationStatus": "current-code"
+        }
+      ],
+      "plannedFixAssumption": {
+        "stages": [
+          2
+        ],
+        "assumption": "中阶存在3段最优与5段合法绕路，保留并列最优。",
+        "pendingVerification": "独立枚举路径长度含3和5；所有长度3最优均接受，长度5合法但非最优。"
+      }
+    },
+    "L06": {
+      "title": "多步计划、优先级与纠错",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 2,
+          "steps": 2,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "能读图或听事件，理解先后",
+          "basis": "3事件、2条明确先后条件，排序后解释不能颠倒的关系",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/logic.ts:54",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 3,
+          "steps": 3,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "能保留四件事的三条先后依赖",
+          "basis": "4事件、3条明确先后条件，图卡支持",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/logic.ts:54",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 3,
+          "steps": 3,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "能比较给定错序和约束链并重新排好",
+          "basis": "4事件逆序展示，仍同三条依赖；不是新增第四条规则",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/logic.ts:54",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "L07": {
+      "title": "条件证据与反向编线索",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 1,
+          "steps": 1,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "能按颜色指出所有可能对象",
+          "basis": "9图按颜色留下3图，线索不足可多选",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/logic.ts:56",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 2,
+          "steps": 2,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "理解颜色条件加不是方形的排除",
+          "basis": "颜色相符且非方形，保留2图",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/logic.ts:56",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 2,
+          "steps": 3,
+          "reading": 0,
+          "motor": 2,
+          "representation": "physical",
+          "prerequisites": "能描述颜色形状并理解听者不知道私选目标",
+          "basis": "孩子私选，家长转身后猜；给线索、检查候选、解释去掉线索的影响，实物/口述观察",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/logic.ts:56",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "L08": {
+      "title": "现场学规则与迁移",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 1,
+          "steps": 1,
+          "reading": 1,
+          "motor": 1,
+          "representation": "symbols",
+          "prerequisites": "会按给定加2规则处理新起始数",
+          "basis": "例子明确给加2，再换起始数2–4，一次迁移运算",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/logic.ts:58",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 1,
+          "steps": 1,
+          "reading": 1,
+          "motor": 1,
+          "representation": "symbols",
+          "prerequisites": "会按给定加3规则处理新起始数",
+          "basis": "例子明确给加3，结构与第一阶相同",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/logic.ts:58",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 2,
+          "steps": 2,
+          "reading": 1,
+          "motor": 1,
+          "representation": "symbols",
+          "prerequisites": "理解先加4再变两倍且顺序不可交换",
+          "basis": "先加4再加倍，两个有序运算；不是未知规则归纳",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/logic.ts:58",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "L09": {
+      "title": "状态翻转与操作结果",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 1,
+          "steps": 1,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "区分两面、会按位置编号找卡",
+          "basis": "3卡按一条翻动指令后回填全部3格",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/logic.ts:59",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 1,
+          "steps": 2,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "能连续更新两张卡状态",
+          "basis": "4卡按两条指令连续更新，翻一次换面规则不变",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/logic.ts:59",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 1,
+          "steps": 3,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "理解同一卡翻两次恢复原样",
+          "basis": "5卡按三条指令，其中同一卡两次；仍一条翻转规则，三步状态更新",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/logic.ts:59",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "L10": {
+      "title": "步长规则、多角色移动与交会",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 2,
+          "steps": 2,
+          "reading": 1,
+          "motor": 2,
+          "representation": "symbols",
+          "prerequisites": "能在0–11数字线上向左和右走",
+          "basis": "红每次右1、蓝每次左1，共2轮；两个角色各一条运动规则，答案2槽",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/logic.ts:60",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 2,
+          "steps": 2,
+          "reading": 1,
+          "motor": 2,
+          "representation": "symbols",
+          "prerequisites": "理解两角色步长不同并可分别计算",
+          "basis": "3轮，蓝改每次左2，先更新两角色再对照；记忆/数量增加另记",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/logic.ts:60",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 2,
+          "steps": 2,
+          "reading": 1,
+          "motor": 2,
+          "representation": "symbols",
+          "prerequisites": "能计算4轮后各位置并接受同格",
+          "basis": "4轮，红右1蓝左2，仍求两个终点，不是实际相遇时刻倒推",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/logic.ts:60",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "L11": {
+      "title": "棋盘排列、连珠与翻转策略",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 2,
+          "steps": 2,
+          "reading": 1,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "认黑白棋，理解横竖斜三连",
+          "basis": "3×3各空位试放1黑棋，找所有能三连的位置；一落子与三连两个要求",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/logic.ts:62",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 2,
+          "steps": 2,
+          "reading": 1,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "知道白棋阻断黑棋三连",
+          "basis": "同规则加白棋干扰，空位和三连要求不变",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/logic.ts:62",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 3,
+          "steps": 3,
+          "reading": 1,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "理解连续白棋由两黑端夹住，并能比较多个落点",
+          "basis": "4×4逐方向数连续夹白，空格中断，再比较并选择全部最大落点",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/logic.ts:62",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "L12": {
+      "title": "连桥网络、度数与全局连通",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 3,
+          "steps": 2,
+          "reading": 1,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "会读岛上数字和一条/两条桥",
+          "basis": "4岛4候选边，2条已给桥；核对目标度数、每处最多2、全网连通",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/logic.ts:94",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 3,
+          "steps": 3,
+          "reading": 1,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "能同时考虑两端岛剩余桥数",
+          "basis": "4岛4边，已给桥减少为1条，约束不变但需更多连锁选择",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/logic.ts:94",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 3,
+          "steps": 3,
+          "reading": 1,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "理解各岛达标还要全网连通",
+          "basis": "6岛7边，需结合局部度数和整体连通；现候选边无法交叉，不能把不交叉计作实际训练规则",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/logic.ts:94",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "G01": {
+      "title": "观察匹配、局部整体与找差",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 1,
+          "steps": 1,
+          "reading": 0,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "能按行比较蓝白格",
+          "basis": "3×3整图相同匹配，候选各差一格",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:68",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 1,
+          "steps": 1,
+          "reading": 0,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "能逐格找一个位置差异",
+          "basis": "参照图由生成器旋转但答案仍照图匹配；儿童无需执行旋转",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:68",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 1,
+          "steps": 1,
+          "reading": 0,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "能保留对照方向并逐格匹配",
+          "basis": "参照图由生成器镜像但答案仍照图匹配；不能借名称抬高难度",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:68",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "G02": {
+      "title": "遮挡、闭合与纹理补片",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 1,
+          "steps": 1,
+          "reading": 0,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "认识圆方三角轮廓",
+          "basis": "由未遮挡轮廓在三形中找整体",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:69",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 2,
+          "steps": 2,
+          "reading": 0,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "理解缺口位置并读简单蓝白交替纹理",
+          "basis": "4×4中部缺2×2，利用行列纹理推补片再检查周边连续",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:69",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 2,
+          "steps": 2,
+          "reading": 0,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "理解按三行重复并核对补片边界",
+          "basis": "4×4中部缺口，重复周期改三行，仍规则应用与边界核对",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:69",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "G03": {
+      "title": "多属性序列与行列矩阵",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 2,
+          "steps": 2,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "识颜色与形状，会按行列定位",
+          "basis": "同一颜色、按指定形状列顺序，填2空，规则已告诉",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:74",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 2,
+          "steps": 2,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "能按颜色行次序和形状列次序交叉取值",
+          "basis": "按行红蓝黄、列指定形状、同一行同色，填3空；含冗余描述，实际独立属性约束可合并为2",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:74",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 2,
+          "steps": 2,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "能连续填写并回看5空",
+          "basis": "同一矩阵规则填5空，数量增加不再提高规则或单格推断层次",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:74",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "G04": {
+      "title": "位置移动、循环与反弹",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 2,
+          "steps": 2,
+          "reading": 0,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "能从起格移动并理解越边回到另一侧",
+          "basis": "五格红标记右行2–4步，步进与循环边界；每步次数另记",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:75",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 2,
+          "steps": 2,
+          "reading": 0,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "能保存当前方向，理解碰边反向",
+          "basis": "红标记右行2–4步遇边反向，状态位置与方向都需更新",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:75",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 3,
+          "steps": 3,
+          "reading": 0,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "能分别应用红反弹、蓝循环而不混用",
+          "basis": "按修复假设蓝左循环并有红对蓝错/红错蓝对选项；分别算两标记后联合匹配",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:75",
+          "implementationStatus": "planned-fix-assumption"
+        }
+      ],
+      "plannedFixAssumption": {
+        "stages": [
+          3
+        ],
+        "assumption": "双标记候选含红对蓝错及红错蓝对。",
+        "pendingVerification": "忽略任一标记规则会改变候选集合。"
+      }
+    },
+    "G05": {
+      "title": "旋转、镜像、缩放与方向性形变",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 1,
+          "steps": 1,
+          "reading": 0,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "理解顺时针四分之一圈并对应格位",
+          "basis": "3×3图顺时针90度，一次空间变换",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:81",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 1,
+          "steps": 1,
+          "reading": 0,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "分别理解左右镜像、等比例放大或横向拉伸",
+          "basis": "三变体分别为镜像、等比放大、横拉伸；每题只一个变换，不能累计为三规则",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:81",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 2,
+          "steps": 2,
+          "reading": 0,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "能按先旋转后镜像的顺序变换",
+          "basis": "先90度旋转再左右镜像，两次有序变换",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:81",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "G06": {
+      "title": "叠合、求同、求异与减去",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 1,
+          "steps": 1,
+          "reading": 0,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "能逐格对应两图，理解任一有色保留",
+          "basis": "9格逐格并集；9次比较属于项目量，不是9个依赖步骤",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:85",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 1,
+          "steps": 1,
+          "reading": 0,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "理解两图共同有色或只有一图有色",
+          "basis": "各变体给交集或异或一条规则，9格逐格算",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:85",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 1,
+          "steps": 1,
+          "reading": 0,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "能区分左图和右图并理解指定一侧独有",
+          "basis": "给左减右或右减左一条规则，保持运算方向；规则复杂性需另记",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:85",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "G07": {
+      "title": "图形金字塔与递归组合",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 1,
+          "steps": 1,
+          "reading": 0,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "已会按任一有色保留合两图",
+          "basis": "2个底图并集合为1顶图，单选",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:86",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 2,
+          "steps": 2,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "已会异或并理解上格来自下方相邻两格",
+          "basis": "按修复假设3底图、2中图、1顶图可填；异或与相邻合并层级两规则，2依赖层3次合并",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:86",
+          "implementationStatus": "planned-fix-assumption"
+        },
+        {
+          "stage": 3,
+          "rules": 2,
+          "steps": 3,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "能依层从下向上重复异或并回看已填节点",
+          "basis": "按修复假设4底图，上层3+2+1节点均可填和检查；3依赖层6次合并，外部记录减轻未显示中间结果的记忆",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:86",
+          "implementationStatus": "planned-fix-assumption"
+        }
+      ],
+      "plannedFixAssumption": {
+        "stages": [
+          2,
+          3
+        ],
+        "assumption": "第4–9题全部中间层和顶层可填写、回看、检查，局部正确不算活动完成。",
+        "pendingVerification": "需要填写的合并节点分别3/6；保存中间结果和提示/检查使用事实；按最终交互更新motor细项。"
+      }
+    },
+    "G08": {
+      "title": "黑白与颜色编码运算",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 2,
+          "steps": 4,
+          "reading": 1,
+          "motor": 1,
+          "representation": "symbols",
+          "prerequisites": "知道红0蓝1黄2，能加0–2并处理满3",
+          "basis": "2位置：颜色译数、相加、满3减3、数译颜色；编码与模3两规则",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:87",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 2,
+          "steps": 4,
+          "reading": 1,
+          "motor": 1,
+          "representation": "symbols",
+          "prerequisites": "能逐位置保持同一颜色数值映射",
+          "basis": "3位置沿同样四步处理，规则不增加",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:87",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 2,
+          "steps": 4,
+          "reading": 1,
+          "motor": 1,
+          "representation": "symbols",
+          "prerequisites": "能完成4个位置的编码运算并逐一检查",
+          "basis": "4位置沿同样四步处理；不是颜料混色知识",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:87",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "G09": {
+      "title": "点、线、边、角、面与连通部分",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 1,
+          "steps": 1,
+          "reading": 1,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "能辨边、角、顶点并逐个数",
+          "basis": "三变体分别数3边、4角、5顶点；每题只指定一种计数对象",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:88",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 1,
+          "steps": 1,
+          "reading": 1,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "能区分最小面与按交点分开的最小线段",
+          "basis": "第4/6题数最小格，第5题十字按交点分4段；对象变化需逐题说明",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:88",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 2,
+          "steps": 3,
+          "reading": 1,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "认识长方形含正方形，能标记去重并数到9",
+          "basis": "按修复假设1×2、1×3、2×2全部长方形分别3/6/9，按大小分类、标记去重、汇总，使用回看工具",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:88",
+          "implementationStatus": "planned-fix-assumption"
+        }
+      ],
+      "plannedFixAssumption": {
+        "stages": [
+          3
+        ],
+        "assumption": "第7–9题分别在1×2、1×3、2×2小网格数全部长方形（含正方形）3/6/9个，并可标记去重回看。",
+        "pendingVerification": "独立枚举横竖边组合得到3/6/9；去重标记实际可用，不能只显示说明。"
+      }
+    },
+    "G10": {
+      "title": "对称轴与对称关系",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 1,
+          "steps": 1,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "理解沿虚线对折后重合",
+          "basis": "4个轴候选逐一判断整个轮廓，选择全部可折线",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:112",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 1,
+          "steps": 1,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "能检查竖横斜不同候选轴",
+          "basis": "矩形/正方形/菱形仍逐轴重合检验，合法轴数量增加",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:112",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 2,
+          "steps": 2,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "能同时核对外框与内部色格",
+          "basis": "3×3图案外框和色格都要对称，先核对位置再核对颜色",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:112",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "G11": {
+      "title": "开闭、曲直、接触、交叉与内外",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 1,
+          "steps": 1,
+          "reading": 0,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "理解完全在里面",
+          "basis": "单选蓝圆完全在红形内部",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:113",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 1,
+          "steps": 1,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "能区分相切、相交、分离",
+          "basis": "每变体给一种边界关系，4图中选所有符合图；不能把三变体合成三规则",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:113",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 1,
+          "steps": 1,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "理解连为整体、包含、部分重叠是不同关系",
+          "basis": "每变体给一种整体关系，含包含或连接，多选；边界遮挡清晰度仍是审计限制",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:113",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "G12": {
+      "title": "功能标记与不变量",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 1,
+          "steps": 1,
+          "reading": 0,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "理解内部并以点中心判断",
+          "basis": "点中心在内，圆方三角三变体",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:118",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 1,
+          "steps": 1,
+          "reading": 0,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "理解轮廓线和点中心落在线上",
+          "basis": "点中心在边界，一条关系判断；精确边界判读不等于高动作负荷",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:118",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 1,
+          "steps": 1,
+          "reading": 0,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "理解外部并忽略形状更换",
+          "basis": "点中心在外，一条关系判断；第三阶没有更复杂组合条件",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:118",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "G13": {
+      "title": "符号编码与多位对应",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 1,
+          "steps": 1,
+          "reading": 1,
+          "motor": 2,
+          "representation": "symbols",
+          "prerequisites": "能用可见对照表把图形译数字",
+          "basis": "3位置图形译数，表常显；每位一次对应",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:132",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 1,
+          "steps": 1,
+          "reading": 1,
+          "motor": 2,
+          "representation": "symbols",
+          "prerequisites": "能逐位查表，重复符号保持同值",
+          "basis": "4位置图形译数，规则同前，操作项目数增加",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:132",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 1,
+          "steps": 1,
+          "reading": 1,
+          "motor": 2,
+          "representation": "symbols",
+          "prerequisites": "能反查表由数字找到图形",
+          "basis": "5位置数字译图形，只反转查表方向；不是倒序重排",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:132",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "G14": {
+      "title": "平面与立体拼搭、分割、缺件与多解构形",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 2,
+          "steps": 2,
+          "reading": 1,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "能选部件并以左上角放入目标格",
+          "basis": "2–4条竖块盖住一层目标，覆盖目标且无重叠/越界；选择位置再核验",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:133",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 2,
+          "steps": 3,
+          "reading": 1,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "能旋转L形部件且核对完整占格",
+          "basis": "2–3块含L形，选择方向再位置再检查；图中旋转预览已修复",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:133",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 2,
+          "steps": 3,
+          "reading": 1,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "理解两张层面切换与部件不能重叠",
+          "basis": "4–8块填两层，先选层再放置核验；每块都在单层，不声称真正三维旋转",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:133",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "G15": {
+      "title": "折纸、剪孔、展开与逆向折痕",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 2,
+          "steps": 3,
+          "reading": 0,
+          "motor": 3,
+          "representation": "physical",
+          "prerequisites": "能在家长协助下对齐折纸，理解两边重合",
+          "basis": "亲子单折/双折/折痕倒推三变体，预测—操作—核对；剪口由家长示范，不要求孩子独立剪",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:147",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 1,
+          "steps": 2,
+          "reading": 0,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "能把折后半张纸的孔对应到展开两处",
+          "basis": "按修复假设显示原纸、向右折后半区和统一孔标记，定位孔后反射展开",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:147",
+          "implementationStatus": "planned-fix-assumption"
+        },
+        {
+          "stage": 3,
+          "rules": 2,
+          "steps": 3,
+          "reading": 0,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "会逆序展开两次折叠并逐条保持对称距离",
+          "basis": "按修复假设显示两次折后的四分之一区，逆序展开两道折线得4孔；表征清楚不能替代推演",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:147",
+          "implementationStatus": "planned-fix-assumption"
+        }
+      ],
+      "plannedFixAssumption": {
+        "stages": [
+          2,
+          3
+        ],
+        "assumption": "明确原纸、折向、折后半区/四分之一区及孔位，选项孔标记一致。",
+        "pendingVerification": "依据折向逆序展开得到2/4孔；打孔位置确在折后有效区内。"
+      }
+    },
+    "G16": {
+      "title": "立体分类、隐藏块与三视图",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 1,
+          "steps": 3,
+          "reading": 0,
+          "motor": 2,
+          "representation": "physical",
+          "prerequisites": "能观察摸看物体并说平曲或滚动特征",
+          "basis": "实物观察、换方向、比较解释；三变体难点不同，需按活动记录材料/动作",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:152",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 1,
+          "steps": 2,
+          "reading": 1,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "会读取每摞高度并求4数总和",
+          "basis": "4摞高度全给，先读数再求总块数；不能计成独立推隐藏块",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:152",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 3,
+          "steps": 3,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "理解前侧上三个视图及高度遮挡",
+          "basis": "4个搭法分别核对前侧上三个投影，可多解；方向标记清晰度仍待核",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:152",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "G17": {
+      "title": "相对左右与观察者视角",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 1,
+          "steps": 2,
+          "reading": 2,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "理解箭头代表人物朝向及自己的左右",
+          "basis": "人物朝向后确定自己的左/右，不是屏幕左/右",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:157",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 1,
+          "steps": 2,
+          "reading": 2,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "能随人物朝向转换左右参照",
+          "basis": "朝向变体改变，但同一左右参照规则",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:157",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 1,
+          "steps": 2,
+          "reading": 2,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "理解人物前后并与画面上下区分",
+          "basis": "改问前后，仍先确定人物朝向再判断一侧；不能机械判为三规则",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:157",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "G18": {
+      "title": "立方体展开、相邻面与相对面",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 1,
+          "steps": 2,
+          "reading": 1,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "认字母A–F用于定位，理解纸盒相对面",
+          "basis": "三个合法展开图，围绕A面找对面；折起后判关系",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:158",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 2,
+          "steps": 2,
+          "reading": 1,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "理解一个面4邻面且自己和相对面不算邻面",
+          "basis": "围绕B面选4个邻面，排除自己与对面；六标签多选",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:158",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 1,
+          "steps": 2,
+          "reading": 1,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "可从另一参照面重新推相对面",
+          "basis": "围绕C面找对面，操作与第一阶相同，未加入面图案方向",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:158",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "G19": {
+      "title": "点阵、方格临摹与空间重建",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 1,
+          "steps": 1,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "能逐行定位且把空白当需填写内容",
+          "basis": "3×3常显参照复制，共9格填写，非隐藏记忆",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:164",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 1,
+          "steps": 1,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "能在4×4保持行列对应",
+          "basis": "4×4常显参照复制，共16格；规则相同，操作负荷更大",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:164",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 1,
+          "steps": 2,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "理解左右反转而上下不变",
+          "basis": "3×3先左右镜像再逐格填写9格，表征变换增加依赖步骤",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:164",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "G20": {
+      "title": "透明叠层、遮挡关系与顺序计划",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 1,
+          "steps": 2,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "能从边缘被盖判断上层与下层",
+          "basis": "2片为主，第3变体3片，提取可见遮挡再排底到顶；规则值为典型值，实际关系数动态覆盖",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:165",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 2,
+          "steps": 2,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "能合并多片可见遮挡关系",
+          "basis": "3片从可见重叠得到部分先后，合并成可行顺序；关系数按实际图提取",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:165",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 3,
+          "steps": 3,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "理解完全被遮住的交叠不一定决定先后",
+          "basis": "4片可有多种等价次序，只检查可见约束；rules=3为代表估计，实际约束条数需动态读取",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/graphic.ts:165",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "A01": {
+      "title": "视觉集合记忆与新旧辨认",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 1,
+          "steps": 1,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "能认8种常见动物水果且理解出现过",
+          "basis": "看3项隐藏后在8候选中选旧项；记忆项数3另记",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/memory.ts:14",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 1,
+          "steps": 1,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "能记住4对象集合并逐卡对照",
+          "basis": "看4项隐藏后选旧项；规则不变",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/memory.ts:14",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 2,
+          "steps": 2,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "理解没出现过与出现过的补集",
+          "basis": "看5项后选没出现的3项，先回忆旧集合再取补集",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/memory.ts:14",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "A02": {
+      "title": "位置记忆与图案回填",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 1,
+          "steps": 1,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "能按2×2定位且理解空白也需表达",
+          "basis": "4位置观察后回填，含一个空白；记忆负荷为4个位置内容绑定",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/memory.ts:15",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 1,
+          "steps": 1,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "能按2×3定位并使用重复图卡",
+          "basis": "6位置回填含重复与空白，记忆项数6",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/memory.ts:15",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 1,
+          "steps": 1,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "能按2×3保持位置与对象对应",
+          "basis": "仍6位置，仅空白和对象排列变化；现代码没有更复杂推断规则",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/memory.ts:15",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "A03": {
+      "title": "顺序、逆序和重复符号记忆",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 1,
+          "steps": 1,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "理解先后顺序且能放3卡",
+          "basis": "3对象序列隐藏后按原序3槽重现",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/memory.ts:16",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 1,
+          "steps": 1,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "允许重复卡片，能记4位置",
+          "basis": "4位置含重复，仍原序回填；重复项按出现位置记",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/memory.ts:16",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 2,
+          "steps": 2,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "理解从最后到最先的倒序",
+          "basis": "5项先回忆原序再倒序放5槽，倒序是额外变换规则",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/memory.ts:16",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "A04": {
+      "title": "听觉记忆与复合指令",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 1,
+          "steps": 1,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "听懂先后及2个对象名字",
+          "basis": "听2对象后排2槽，序列项数不应由空preview推成stage",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/memory.ts:18",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 1,
+          "steps": 1,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "能按语音次序保留3项",
+          "basis": "听3对象后排3槽，规则和依赖变换不变",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/memory.ts:18",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 1,
+          "steps": 1,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "能按语音次序保留4项",
+          "basis": "听4对象后排4槽；仍一维顺序，不是二维复合动作",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/memory.ts:18",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "A05": {
+      "title": "故事记忆、细节与复述",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 1,
+          "steps": 1,
+          "reading": 0,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "能听短故事并区分角色",
+          "basis": "听完整故事后只答开头角色；应分别记录刺激事件数与答题所需1项",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/memory.ts:20",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 1,
+          "steps": 2,
+          "reading": 2,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "能辨事件短语并记住3个事件顺序",
+          "basis": "听故事后提取3件事再排序；前两篇事件卡主要为文字，第三篇有图，reading需活动级覆盖",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/memory.ts:20",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 2,
+          "steps": 3,
+          "reading": 0,
+          "motor": 0,
+          "representation": "physical",
+          "prerequisites": "能口述角色和3事件，区分事实与猜想",
+          "basis": "听后自主复述角色、事件及因果，家长观察；无儿童必需屏幕操作，不自动评分口语质量",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/memory.ts:20",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "A06": {
+      "title": "视觉搜索、划消与持续注意",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 1,
+          "steps": 1,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "能识一种目标形状并逐行搜索",
+          "basis": "9张卡找同形，规则1，搜索项目9",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/memory.ts:26",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 2,
+          "steps": 2,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "能同时认颜色和形状",
+          "basis": "15张卡找蓝色某形，颜色和形状两条件",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/memory.ts:26",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 2,
+          "steps": 2,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "理解颜色纳入与形状排除",
+          "basis": "21张卡找黄色且非指定形，仍双条件；搜索量和抑制负荷增加另记",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/memory.ts:26",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "A07": {
+      "title": "抑制、规则切换与工作记忆",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 1,
+          "steps": 1,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "能听并暂记一种目标形状",
+          "basis": "听一种形状规则隐藏后选9卡中的目标",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/memory.ts:27",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 1,
+          "steps": 2,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "理解新规则覆盖旧规则",
+          "basis": "音频先给旧形状再改为新形状；当前有效规则仍1，但需要抑制旧规则再执行",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/memory.ts:27",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 2,
+          "steps": 2,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "能同时记颜色条件与形状禁选",
+          "basis": "颜色相符且非某形，2条有效规则需保持；不是记3个图像项目",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/memory.ts:27",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "A08": {
+      "title": "声音辨别、音色与节奏顺序",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 1,
+          "steps": 1,
+          "reading": 1,
+          "motor": 2,
+          "representation": "symbols",
+          "prerequisites": "能区分长短两种合成音及相应声卡",
+          "basis": "2声音排序，可重听声卡；文字长短标签与声音配对",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/memory.ts:28",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 1,
+          "steps": 1,
+          "reading": 1,
+          "motor": 2,
+          "representation": "symbols",
+          "prerequisites": "能保持3声音的先后并允许重复",
+          "basis": "3声音排序，同一序列规则；不可称真实乐器音色辨认",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/memory.ts:28",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 1,
+          "steps": 1,
+          "reading": 1,
+          "motor": 2,
+          "representation": "symbols",
+          "prerequisites": "能保持4拍顺序，末题能模仿长短与停顿",
+          "basis": "前2变体4声音排序，末变体亲子拍手模仿并创编；末题应覆盖为physical、reading0、motor3、steps3",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/memory.ts:28",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "A09": {
+      "title": "关联数量与结构记忆",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 1,
+          "steps": 2,
+          "reading": 1,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "能认2位朋友并数2–5点，理解对象数量配对",
+          "basis": "观察2对对象数量，先编码关系再隐藏匹配；不是只认对象",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/memory.ts:33",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 1,
+          "steps": 2,
+          "reading": 1,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "能记3个对象与数量的绑定",
+          "basis": "3对关系绑定，数量2–6随变体变化",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/memory.ts:33",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 1,
+          "steps": 2,
+          "reading": 1,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "能记4个对象与数量绑定并连接正确伙伴",
+          "basis": "4对关系绑定，数量2–7；关系规则不变，记忆绑定数4另记",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/memory.ts:33",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "E01": {
+      "title": "动作词、反义词与词义关系",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 1,
+          "steps": 1,
+          "reading": 2,
+          "motor": 2,
+          "representation": "symbols",
+          "prerequisites": "理解高低、开关等常用词或由成人读出",
+          "basis": "2组汉字词卡反义匹配，字卡负荷要和概念掌握分开",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/language.ts:8",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 1,
+          "steps": 1,
+          "reading": 2,
+          "motor": 2,
+          "representation": "symbols",
+          "prerequisites": "能将3组词与相反意义对应",
+          "basis": "3组反义词匹配，关系仍一种；项目数变多",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/language.ts:8",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 2,
+          "steps": 3,
+          "reading": 0,
+          "motor": 2,
+          "representation": "physical",
+          "prerequisites": "能用动作/实物表示词义并说完整句",
+          "basis": "听词表演、交换角色、迁移到句子，亲子观察而非识字测试",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/language.ts:8",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "E02": {
+      "title": "完整句、方位和比较表达",
+      "currentActivityCount": 3,
+      "profileSelector": "activity-index",
+      "stageMeaning": "three distinct current parent activities, not validated ascending difficulty",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 2,
+          "steps": 3,
+          "reading": 0,
+          "motor": 2,
+          "representation": "physical",
+          "prerequisites": "理解对象、旁边及参照物",
+          "basis": "第1项放玩具、描述、根据听者寻找结果补充参照物",
+          "activityIndices": [
+            0
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/language.ts:10",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 2,
+          "steps": 3,
+          "reading": 0,
+          "motor": 2,
+          "representation": "physical",
+          "prerequisites": "理解面对面者左右参照可不同",
+          "basis": "第2项面对面分别描述，再同向比较，两个参照系须明确",
+          "activityIndices": [
+            1
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/language.ts:10",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 3,
+          "steps": 3,
+          "reading": 0,
+          "motor": 0,
+          "representation": "physical",
+          "prerequisites": "能听出那在那里缺对象、参照与位置",
+          "basis": "第3项诊断模糊表达并补对象参照位置；现三活动都为stage1，按活动索引取此配置",
+          "activityIndices": [
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/language.ts:10",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "E03": {
+      "title": "故事排序、因果和复述",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 2,
+          "steps": 2,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "理解3幅图事件与给定先后关系",
+          "basis": "3事件2条先后条件，图卡排列；条件已给不推自主发现因果",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/language.ts:11",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 3,
+          "steps": 3,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "能在4事件中逐条核对3条件",
+          "basis": "4事件3条先后条件，排序并复述",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/language.ts:11",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 2,
+          "steps": 3,
+          "reading": 0,
+          "motor": 0,
+          "representation": "physical",
+          "prerequisites": "能口述4件事并提出与前文相容的不同结局",
+          "basis": "读图复述4事件后改结局再解释因果，家长记观察；6条显示步骤不等于6条规则",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/language.ts:11",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "E04": {
+      "title": "创编故事、比较方案与理由表达",
+      "currentActivityCount": 3,
+      "profileSelector": "activity-index",
+      "stageMeaning": "three distinct current parent activities, not validated ascending difficulty",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 2,
+          "steps": 3,
+          "reading": 0,
+          "motor": 2,
+          "representation": "physical",
+          "prerequisites": "能辨3张图卡并说角色地点事件",
+          "basis": "第1项连三图编故事，换一图后重建连贯性；按活动索引",
+          "activityIndices": [
+            0
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/language.ts:13",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 2,
+          "steps": 4,
+          "reading": 0,
+          "motor": 2,
+          "representation": "physical",
+          "prerequisites": "理解材料、可行办法和实际试做",
+          "basis": "第2项想两种过河方案、预测、试做、据结果选，实物材料支持",
+          "activityIndices": [
+            1
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/language.ts:13",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 2,
+          "steps": 3,
+          "reading": 0,
+          "motor": 0,
+          "representation": "physical",
+          "prerequisites": "能区分亲眼看到的线索与推测",
+          "basis": "第3项地上有水的归因，拆事实猜测、另提解释、说需新证据；不是自动逻辑评分",
+          "activityIndices": [
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/language.ts:13",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "E05": {
+      "title": "字形、拼音与词语对应",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 1,
+          "steps": 1,
+          "reading": 1,
+          "motor": 1,
+          "representation": "symbols",
+          "prerequisites": "能逐笔比较字形，无须已能读出",
+          "basis": "木本未等相似字找同形；视觉辨同不等于识读",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/language.ts:14",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 1,
+          "steps": 1,
+          "reading": 2,
+          "motor": 1,
+          "representation": "symbols",
+          "prerequisites": "需认识目标字或能从已学音形对应定位",
+          "basis": "听妈妈/小猫/大米找指定汉字，音到字对应有先修识字",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/language.ts:14",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 2,
+          "steps": 2,
+          "reading": 2,
+          "motor": 2,
+          "representation": "symbols",
+          "prerequisites": "能查汉字拼音对照表并区分声母韵母声调",
+          "basis": "3组查表配对，字母及声调均核对；不声称无表独立拼读",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/language.ts:14",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "E06": {
+      "title": "英语听辨与短句理解",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 1,
+          "steps": 1,
+          "reading": 0,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "已接触rabbit/cat/dog的声音意义",
+          "basis": "英语动物词单听选图片，reading0不代表英语负荷0",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/language.ts:19",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 2,
+          "steps": 2,
+          "reading": 0,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "已接触red/blue/yellow及三种shape英语词",
+          "basis": "听颜色+形状双属性，再对应图卡",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/language.ts:19",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 3,
+          "steps": 3,
+          "reading": 0,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "听懂red/blue、两形状名及left of",
+          "basis": "听两对象属性与left of关系后联合选图；独立记录英语先修和中文帮助",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/language.ts:19",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "E07": {
+      "title": "英语中的数量、空间与比较表达",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 1,
+          "steps": 1,
+          "reading": 0,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "听懂one/two/three和circle，会数1–3",
+          "basis": "英语1–3圆数量听选，图形答案无文字要求",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/language.ts:24",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 2,
+          "steps": 2,
+          "reading": 0,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "听懂above和red square且理解上下",
+          "basis": "听数量与above关系，排除数量错或位置错",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/language.ts:24",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 2,
+          "steps": 2,
+          "reading": 0,
+          "motor": 1,
+          "representation": "pictures",
+          "prerequisites": "听懂longer than及红蓝黄，理解传递长短",
+          "basis": "听红长于蓝、蓝长于黄两比较，图上同时核对；语言与数理负荷分开记录",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/language.ts:24",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "E08": {
+      "title": "交流、听问与自我表达",
+      "currentActivityCount": 3,
+      "profileSelector": "activity-index",
+      "stageMeaning": "three distinct current parent activities, not validated ascending difficulty",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 1,
+          "steps": 2,
+          "reading": 0,
+          "motor": 0,
+          "representation": "physical",
+          "prerequisites": "能对熟悉玩具作选择并口述",
+          "basis": "第1项说明选择和玩法，回答一个为什么；按活动索引",
+          "activityIndices": [
+            0
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/language.ts:27",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 1,
+          "steps": 2,
+          "reading": 0,
+          "motor": 0,
+          "representation": "physical",
+          "prerequisites": "能回忆熟悉活动与具体经历",
+          "basis": "第2项回应活动追问并补具体细节；同一话题不新增规则",
+          "activityIndices": [
+            1
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/language.ts:27",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 2,
+          "steps": 2,
+          "reading": 0,
+          "motor": 0,
+          "representation": "physical",
+          "prerequisites": "能等对方说完且围绕内容提问",
+          "basis": "第3项轮流听问和换角色，两项社交要求；无儿童屏幕动作",
+          "activityIndices": [
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/language.ts:27",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "P01": {
+      "title": "生活用品、功能、材料与场景分类",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 1,
+          "steps": 1,
+          "reading": 2,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "知道2种常见用品的用途；短语可由家长读",
+          "basis": "2组用品功能匹配；用途卡为短词，图片支持不等于全无识读",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/life.ts:16",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 1,
+          "steps": 1,
+          "reading": 2,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "知道3种用品与常见功能",
+          "basis": "3组用品功能匹配，规则仍一种常见功能关系",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/life.ts:16",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 2,
+          "steps": 3,
+          "reading": 0,
+          "motor": 2,
+          "representation": "physical",
+          "prerequisites": "能说物品特征并按用途或材料作比较",
+          "basis": "三变体为多用途、材料适用、换分类规则，需观察/比较/解释；家长准备实物",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/life.ts:16",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "P02": {
+      "title": "自然观察、生物特征与成长顺序",
+      "currentActivityCount": 9,
+      "profileSelector": "activity-stage",
+      "stageMeaning": "current groups of three activities, not age levels",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 2,
+          "steps": 2,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "能辨成长图并听懂已给先后",
+          "basis": "3阶段图排序，有2条明示先后；不是已掌握所有生物知识",
+          "activityIndices": [
+            0,
+            1,
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/life.ts:18",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 3,
+          "steps": 3,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "prerequisites": "能把4阶段与3先后条件匹配",
+          "basis": "4阶段图排序，有3条明示先后",
+          "activityIndices": [
+            3,
+            4,
+            5
+          ],
+          "runtimeStageAtBaseline": 2,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/life.ts:18",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 2,
+          "steps": 3,
+          "reading": 0,
+          "motor": 2,
+          "representation": "physical",
+          "prerequisites": "能用有日期记录比较具体变化并区分猜想",
+          "basis": "按日期摆记录、比变化、区分观察猜想；实物/图片依赖家长准备",
+          "activityIndices": [
+            6,
+            7,
+            8
+          ],
+          "runtimeStageAtBaseline": 3,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/life.ts:18",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "P03": {
+      "title": "生活科学：浮沉、颜色、影子与切面",
+      "currentActivityCount": 3,
+      "profileSelector": "activity-index",
+      "stageMeaning": "three distinct current parent activities, not validated ascending difficulty",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 2,
+          "steps": 3,
+          "reading": 0,
+          "motor": 2,
+          "representation": "physical",
+          "prerequisites": "能在成人协助下预测浮沉并逐件观察",
+          "basis": "第1项浮沉预测—实测—改变塑料盒条件并解释，控制条件与据证据修正",
+          "activityIndices": [
+            0
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/life.ts:20",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 2,
+          "steps": 3,
+          "reading": 0,
+          "motor": 2,
+          "representation": "physical",
+          "prerequisites": "能使用颜料和透明片并比较颜色",
+          "basis": "第2项颜料混合改比例，再比透明片叠层；两个操作体系不能混为同一规则",
+          "activityIndices": [
+            1
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/life.ts:20",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 2,
+          "steps": 3,
+          "reading": 0,
+          "motor": 2,
+          "representation": "physical",
+          "prerequisites": "能观察光源影子关系，切面由家长操作",
+          "basis": "第3项单独改变光源观察影子，再由家长切橡皮泥看切面；两子任务负荷分记，非stage3必更难",
+          "activityIndices": [
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/life.ts:20",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "P04": {
+      "title": "感官、生活安全与社会情境",
+      "currentActivityCount": 3,
+      "profileSelector": "activity-index",
+      "stageMeaning": "three distinct current parent activities, not validated ascending difficulty",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 2,
+          "steps": 3,
+          "reading": 0,
+          "motor": 2,
+          "representation": "physical",
+          "prerequisites": "能描述安全大物品的触感和可见特征",
+          "basis": "第1项先摸后看比较感官信息，再指出单感官不能判断的属性",
+          "activityIndices": [
+            0
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/life.ts:21",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 2,
+          "steps": 3,
+          "reading": 0,
+          "motor": 2,
+          "representation": "physical",
+          "prerequisites": "能指出障碍并摆玩具验证路线",
+          "basis": "第2项观察玩具障碍、规划较稳妥路线、走一遍修正",
+          "activityIndices": [
+            1
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/life.ts:21",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 2,
+          "steps": 3,
+          "reading": 0,
+          "motor": 0,
+          "representation": "physical",
+          "prerequisites": "能表述自己愿望并复述对方愿望",
+          "basis": "第3项共同玩具冲突，听双方、提出方案、比较是否照顾双方；不用真实危险作刺激",
+          "activityIndices": [
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/life.ts:21",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "P05": {
+      "title": "节日、文化与世界常识",
+      "currentActivityCount": 3,
+      "profileSelector": "activity-index",
+      "stageMeaning": "three distinct current parent activities, not validated ascending difficulty",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 1,
+          "steps": 3,
+          "reading": 0,
+          "motor": 1,
+          "representation": "physical",
+          "prerequisites": "能指认熟悉节日照片并回忆经历",
+          "basis": "第1项说经验、听家长补充、区分亲历与听来；材料须自备",
+          "activityIndices": [
+            0
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/life.ts:22",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 2,
+          "steps": 3,
+          "reading": 0,
+          "motor": 1,
+          "representation": "physical",
+          "prerequisites": "能在成人读图介绍下比较两种做法",
+          "basis": "第2项读两份活动介绍、找同异、不把一种做法推广所有人",
+          "activityIndices": [
+            1
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/life.ts:22",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 2,
+          "steps": 3,
+          "reading": 0,
+          "motor": 1,
+          "representation": "physical",
+          "prerequisites": "能在儿童地图或绘本找到指定地点",
+          "basis": "第3项地图定位、据图片描述一个特征、提可查问题；儿童不要求独立阅读资料",
+          "activityIndices": [
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/life.ts:22",
+          "implementationStatus": "current-code"
+        }
+      ]
+    },
+    "P06": {
+      "title": "亲子动作、精细操作与协调",
+      "currentActivityCount": 3,
+      "profileSelector": "activity-index",
+      "stageMeaning": "three distinct current parent activities, not validated ascending difficulty",
+      "stages": [
+        {
+          "stage": 1,
+          "rules": 2,
+          "steps": 3,
+          "reading": 0,
+          "motor": 3,
+          "representation": "physical",
+          "prerequisites": "在成人陪同下可沿线折、撕或用儿童剪刀",
+          "basis": "第1项沿粗线描走/折剪、比较偏差、调整再做；精细控制，剪撕按能力选择",
+          "activityIndices": [
+            0
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/life.ts:23",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 2,
+          "rules": 2,
+          "steps": 3,
+          "reading": 0,
+          "motor": 3,
+          "representation": "physical",
+          "prerequisites": "能稳放大积木及双手托盘慢走",
+          "basis": "第2项搭宽底座、托盘行走、改变积木位置再比较稳定；包含平衡控制",
+          "activityIndices": [
+            1
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/life.ts:23",
+          "implementationStatus": "current-code"
+        },
+        {
+          "stage": 3,
+          "rules": 2,
+          "steps": 3,
+          "reading": 0,
+          "motor": 3,
+          "representation": "physical",
+          "prerequisites": "能听完后模仿2节拍和2–3动作",
+          "basis": "第3项听节拍、重复动作、交换角色编序列；需记录实际拍数和动作数",
+          "activityIndices": [
+            2
+          ],
+          "runtimeStageAtBaseline": 1,
+          "assessmentStatus": "design-estimate-not-child-tested",
+          "basisSource": "src/curriculum/exploration/life.ts:23",
+          "implementationStatus": "current-code"
+        }
+      ]
+    }
+  },
+  "activityLevelOverrides": [
+    {
+      "family": "A05",
+      "stage": 2,
+      "condition": "variant 0 or 1",
+      "reading": 2,
+      "representation": "symbols",
+      "basis": "事件短语卡未获得完整图片映射；variant2有图片映射，可降reading至0，不能全族抹平。"
+    },
+    {
+      "family": "A05",
+      "stage": 2,
+      "condition": "variant 2",
+      "reading": 0,
+      "representation": "pictures",
+      "basis": "presentation.ts替换了这篇故事的三个事件图卡。"
+    },
+    {
+      "family": "A08",
+      "stage": 3,
+      "condition": "variant 2",
+      "rules": 2,
+      "steps": 3,
+      "reading": 0,
+      "motor": 3,
+      "representation": "physical",
+      "basis": "亲子节拍模仿与交换编创，和前两项屏幕排序不同。"
+    },
+    {
+      "family": "G20",
+      "condition": "all",
+      "dynamicRules": "count distinct visible before constraints after transitive reduction, report raw relation count separately",
+      "basis": "代表配置1/2/3并不保证每变体关系数一致；优先依据图面真正可见且非冗余关系。"
+    }
+  ],
+  "dynamicRecommendations": [
+    {
+      "field": "candidateCount / selectedCount / slotCount / editableCellCount / pairCount",
+      "derive": "tokens, expectedTokenIds, slotCount, cells===null, expectedPairs; never count hidden preview tokens as candidates",
+      "purpose": "区分操作项目量与依赖步骤；N04/N13/A06密度和G19格数不能挤进steps"
+    },
+    {
+      "field": "actionType / estimatedMinActions / precisionTarget",
+      "derive": "interaction kind and actual target size; collect clicks/drags/undo separately",
+      "purpose": "motor描述操作方式；一次精确落格和21项查找的动作量需要额外字段"
+    },
+    {
+      "field": "memoryItems / memoryBindings / memoryOrder / memoryTransform",
+      "derive": "A01=3/4/5 objects; A02=4/6/6 positions; A03=3/4/5 ordered; A04=2/3/4 spoken objects; A08=2/3/4 sounds; A09=2/3/4 object-quantity bindings",
+      "purpose": "不再用preview.length || stage推算听觉记忆；A05需记刺激事件和回答需求，A07记有效规则及切换而非虚构图卡数"
+    },
+    {
+      "field": "observeMs / retainMs / replayCount / hintCount / intermediateCheckCount / adultHelp",
+      "derive": "protocol and recorded session facts",
+      "purpose": "支持水平是实际使用事实，不能把有回看工具等同于所有孩子都使用或都独立完成"
+    },
+    {
+      "field": "numericRange / operandCount / gridDimensions / searchItems / transformSequence",
+      "derive": "authoring operands and activity drawing/generation metadata; explicit data preferred over parsing prompt text",
+      "purpose": "N01数量、G04运动步数、G06九格比较、G08位置数、G19填格量可审计"
+    },
+    {
+      "field": "requiredNodes / blockedEdges / legalRouteLengths / optimumTies / inventoryBinding",
+      "derive": "actual route and shopping parameters; independent small-state enumeration",
+      "purpose": "区分引擎支持某规则与本题条件确实影响答案"
+    },
+    {
+      "field": "dependencyDepth / answerNodes / intermediateStateVisible",
+      "derive": "G07 bottom count: stages2/3 depth2/3, answer nodes3/6; use actual final interaction",
+      "purpose": "外化中间结果降低记忆要求，不降低异或规则本身；填写节点与9位图案子格别混算"
+    },
+    {
+      "field": "rectangleGrid / expectedRectangleCount / markingsAvailable / markingsUsed",
+      "derive": "G09 stage3 variants1×2/1×3/2×2 =>3/6/9",
+      "purpose": "标记工具提供支持但不证明儿童完成了不重不漏分类"
+    },
+    {
+      "field": "languageLocale / requiredVocabulary / listeningRelations / translationHelp",
+      "derive": "E06/E07 audioLocale and authored vocabulary lists",
+      "purpose": "reading=0不表示英语负荷为0；中文协助是支持事实，不能当独立英语理解"
+    },
+    {
+      "field": "parentMaterialList / fineMotorTask / physicalSafetySupport / spokenOutput",
+      "derive": "parentObservation concrete steps and parent reporting",
+      "purpose": "纯口述、摆物、折剪、托盘行走不能由parentObservation一种kind得到相同motor"
+    }
+  ],
+  "uncertainties": [
+    "所有数值均为作者可复核的设计估计，未用6/7/8岁儿童实测校准，不得加总成年龄或能力总分，不得自动推荐独立完成。",
+    "同一stage内可能是不同任务而非强弱变体；三项亲子族、G05第二阶、G09第二阶、G15/G16第一阶、A08第三阶尤其如此。",
+    "没有重读来源PDF，没有全量UI操作或语音人工听审；代码中的图片映射不保证当前Mac裁切正确。",
+    "图形证据可能允许快捷策略，因此steps是说明性代表路径而非实测最少推理步骤。rules应配独立条件反例，不能只数clues.length。",
+    "父线程若采用不同G07输入粒度、G09标记交互、N13金额库存或L05图结构，应更新具体负荷项和basis并重新审计。"
+  ]
+}

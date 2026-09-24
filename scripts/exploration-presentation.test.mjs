@@ -15,7 +15,10 @@ test('presentation retains all existing curriculum identities and accepts every 
   assert.equal(getCurriculumSection('enlightenment').games.length, 40);
   assert.equal(getCurriculumSection('enlightenment').games.reduce((n, g) => n + g.rounds.length, 0), 489);
   for (const a of activities) {
-    assert.equal(a.revision, 1);
+    const revised = (['N13','G04','G09'].includes(a.primaryFamilyId) && a.stage === 3)
+      || (a.primaryFamilyId === 'L05' && a.stage === 2)
+      || (['G07','G15'].includes(a.primaryFamilyId) && a.stage > 1);
+    assert.equal(a.revision, revised ? 2 : 1, a.id);
     assert.equal(evaluateActivity(a, authoringSolutions[a.id]).status, a.kind === 'parentObservation' ? 'needsParentObservation' : 'correct', a.id);
   }
 });

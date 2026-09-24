@@ -18,7 +18,7 @@ export function base(family: FamilyId, index: number, prompt: string, instructio
     authoringNotes[id] = { reason };
     return { id, schemaVersion: 1, revision: 1, primaryFamilyId: family, level: stage === 1 ? 'L2' : stage === 2 ? 'L3' : 'L4', stage,
         difficultyNote: f.stages[stage - 1] ?? f.stages[0], prerequisites: stage === 1 ? '可以先和家长一起试' : stage === 2 ? '先熟悉前面的玩法' : '把前面学到的线索合起来',
-        difficulty: { rules: stage, steps: stage, memory: 0, representation: 'pictures', reading: 1, motor: 1 }, prompt, instruction, clues: [], tokens: [],
+        prompt, instruction, clues: [], tokens: [],
         hints: ['先指一指题目里已经知道的线索。', '把每个条件分开试一试，最后再一起检查。'], success: reason, retry: '再对照图和题目的条件，一步一步检查。',
         parentPrompt: '你先用了哪条线索？能换一种方法检查吗？', abilityTags: [f.title], protocol: { kind: 'practice' }, sourceRefs: f.refs.map(r => ({ ...r })) };
 }
@@ -101,7 +101,6 @@ export function parent(family: FamilyId, index: number, prompt: string, material
     const a = { ...base(family, index, prompt, '和家长一起操作、说一说，再记录这次的发现。', '这次亲子活动已经记录。下次可以换个条件再试试。'), kind: 'parentObservation' as const, materials, steps, observations: observations.map((text, i) => ({ id: `observe-${i}`, text })), illustration: illustration ? image(illustration, prompt) : undefined };
     a.hints = [steps[0], steps[Math.min(1, steps.length - 1)]];
     a.parentPrompt = observations.join('；');
-    a.difficulty!.representation = 'physical';
     authoringSolutions[a.id] = { kind: 'parentObservation', observations: Object.fromEntries(a.observations.map(o => [o.id, 'supported' as const])) };
     return a;
 }

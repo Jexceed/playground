@@ -2,7 +2,7 @@ import type { GalleryImage } from "../data/imageGallery";
 import type { AbilityLevel, GameConfig, WorldId } from "../types";
 import type { AdvancedActivity, AdvancedResponse } from "./advanced-activity";
 
-export type ActivityToken = { id: string; label: string; image: GalleryImage; soundSrc?: string; speechText?: string; textOnly?: boolean; quantityPicture?: { image: GalleryImage; count: number } };
+export type ActivityToken = { id: string; label: string; image: GalleryImage; soundSrc?: string; speechText?: string; textOnly?: boolean; moneyValues?: number[]; quantityPicture?: { image: GalleryImage; count: number } };
 export type TokenUse = "once" | "unlimited" | {kind:"counted"; limits:Record<string,number>};
 export type SlotValue =
   | { state: "unfilled" }
@@ -49,7 +49,11 @@ export type ActivityBase = {
   illustration?: GalleryImage;
   presentation?: {
     compactSymbols?: boolean;
-    evidence?: { kind: "quantityStory"; parts: { label: string; count: number | null }[] }
+    folding?: { folds: ("right" | "down")[]; holeRow: number; holeColumn: number };
+    pyramid?: { baseTokenIds: string[]; rowSizes: number[]; choiceIds: string[] };
+    evidence?: { kind: "moneyInventory"; fives: number; ones: number }
+      | { kind: "rectangleSearch"; rows: number; columns: number }
+      | { kind: "quantityStory"; parts: { label: string; count: number | null }[] }
       | { kind: "shopping"; cost: number; paid: number }
       | { kind: "overlapQueue"; left: number; right: number }
       | { kind: "collection"; count: number; image: GalleryImage; caption: string }
@@ -61,7 +65,7 @@ export type ActivityBase = {
   cluesFromIllustration?: boolean;
   stage?: 1 | 2 | 3;
   prerequisites?: string;
-  difficulty?: { rules: number; steps: number; memory: number; representation: "pictures" | "symbols" | "physical"; reading: number; motor: number };
+  difficulty?: { rules: number; steps: number; memory: number; representation: "pictures" | "symbols" | "physical"; reading: number; motor: number; basis?: string; calibration?: "design-estimate"; workload?: Record<string, number>; languageLocale?: string };
 };
 export type MultiSelectActivity = ActivityBase & {
   kind: "multiSelect";
@@ -118,7 +122,31 @@ export const ACTIVITY_COPY = {
   readyTransfer: "先看懂例子里的规则，准备好后试一试新题。",
   interruptedAudio: "刚才暂停了。准备好以后，我们重新听一遍。",
   audioRetain: "声音已经停下了，先回想刚才听到的内容。",
+  pyramidPartial: "目前摆好的图都符合规则。继续补完剩下的格子。",
+  checkPyramid: "检查摆好的图",
+  moneyStock: "手里的钱",
+  rectangleGuide: "点一个角点，再点斜对面的角点，记下一个长方形。",
+  rectangleDuplicate: "这个长方形已经记过了，不重复计数。",
+  rectangleInvalid: "这两个点还不能围成长方形，请换一个斜对角点。",
+  rectangleRecorded: "记下了。可以继续找，也可以点编号回看。",
+  parentRecordNext: "做完了，记发现",
+  designEstimate: "以上是陪玩起点建议，尚待真实亲子试玩校准，不对应固定年龄。",
 } as const;
+
+export function activitySlotLabel(activity: Activity, index: number): string {
+  const pyramid = activity.presentation?.pyramid;
+  if (pyramid) {
+    let offset = 0;
+    for (let level = 0; level < pyramid.rowSizes.length; level++) {
+      if (index < offset + pyramid.rowSizes[level]) return `第${level + 1}层第${index - offset + 1}格`;
+      offset += pyramid.rowSizes[level];
+    }
+  }
+  return activity.kind === 'gridPlacement' ? `第${Math.floor(index / activity.columns) + 1}行第${index % activity.columns + 1}格` : `第${index + 1}个位置`;
+}
+export function pyramidMismatch(activity: Activity, index: number): string {
+  return `${activitySlotLabel(activity, index)}还没对上。对照它下面相邻的两张图，再试试。`;
+}
 
 export function activityPromptSpeech(activity: Activity) {
   return [...(activity.protocol.kind === "learnThenTransfer" ? [activity.protocol.demonstration] : []),activity.prompt, activity.instruction, ...activity.clues]

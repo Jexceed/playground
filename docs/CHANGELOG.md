@@ -3,6 +3,16 @@
 All meaningful project changes should be recorded here. Keep entries factual and
 grouped by date.
 
+## 2026-09-25
+
+### Current-Mac exploration quality fixes
+
+- Preserved the three-column shell and all 11 illustration atlases. Fixed the story-frame clipping regression; arranged dense options, reference comparisons, matching cards and parent steps so all 621 initial pages fit the current Mac content area. The full initial-page pass followed a 150-page first/last pass and included corrective rechecks for sixteen-cell reconstruction and three assembly variants. Targeted wrong/hint/partial/complete states also passed; this does not claim every state of every task.
+- Rebuilt six folding questions with actual folded regions, directional arrows and consistent red-hole symbols. Made money-stock, shortest-route and two-marker constraints effective while retaining legal alternative answers.
+- Enabled all intermediate pyramid cells and partial checks. Partial correctness is recorded as support, not completion; revised 24 activities to revision 2 and preserved earlier facts. Replaced the 60-rectangle jump with 3/6/9 grids and a marking, deduplication, undo and review tool.
+- Replaced mechanical difficulty defaults with 71 explicit family profiles and actual workload descriptors across 597 activities. Parent scenario variants retain their own profile; all estimates remain uncalibrated by child play. Added an unfilled observation template.
+- Regenerated local diagrams and Edge speech. All 3991 voice entries pass media checks, with no failures, macOS say or mixed-local provider. Passed 82 relevant regressions, all 597 authored answers and structural curriculum/reference audits. Latest native install log and pending unlock/reopen status: specs/034-current-mac-quality-fixes/verification/qa.md.
+
 ## 2026-09-24
 
 ### Current-Mac quality follow-up

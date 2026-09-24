@@ -16,7 +16,7 @@ export type SessionPhase =
 type EvidenceDelta =
   | { kind: "attempt"; correct: boolean }
   | { kind: "observation"; observations: Record<string,"independent"|"supported"|"notYet"> }
-  | { kind: "hint" | "reveal" | "restart" };
+  | { kind: "hint" | "reveal" | "restart" | "check" };
 export type SessionEvidence = EvidenceDelta & { sequence: number };
 export type ActivitySession = {
   phase: SessionPhase;
@@ -27,6 +27,7 @@ export type ActivitySession = {
   hints: number;
   reveals: number;
   restarts: number;
+  checks: number;
   evidence: SessionEvidence[];
 };
 export type SessionEvent =
@@ -57,6 +58,7 @@ export function createSession(activity: Activity): ActivitySession {
     hints: 0,
     reveals: 0,
     restarts: 0,
+    checks: 0,
     evidence: [],
   };
 }
@@ -100,6 +102,7 @@ export function transitionSession(
       hints: state.hints,
       reveals: state.reveals,
       restarts: state.restarts,
+      checks: state.checks,
       evidence: state.evidence,
     };
   if(event.type === "start" && state.phase === "ready" && activity.protocol.kind === "learnThenTransfer") return {...state,phase:"respond"};
@@ -151,6 +154,7 @@ export function transitionSession(
       phase: result.status === "correct" || result.status === "needsParentObservation" ? "complete" : "respond",
     };
     if(result.status === "needsParentObservation" && state.response.kind === "parentObservation") return withEvidence(next,{kind:"observation",observations:state.response.observations});
+    if (result.checkedPartial) return withEvidence({ ...next, checks: state.checks + 1 }, { kind: 'check' });
     return result.status === "incomplete"
       ? next
       : withEvidence(next, {

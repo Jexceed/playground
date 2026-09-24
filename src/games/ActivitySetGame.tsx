@@ -5,6 +5,7 @@ import {
   ACTIVITY_COPY,
   activityPromptSpeech,
   activitySlots,
+  activitySlotLabel,
 } from "../domain/activity";
 import type {
   Activity,
@@ -26,6 +27,8 @@ import { AdvancedInteraction } from "../interactions/AdvancedInteraction";
 import { publicAsset } from "../publicAsset";
 import { ActivityTokenArt as TokenArt } from "../interactions/ActivityTokenArt";
 import { ActivityEvidence } from "../interactions/ActivityEvidence";
+import { PyramidBoard } from '../interactions/PyramidBoard';
+import type { ParentMode } from '../interactions/ParentActivity';
 
 type Props = {
   game: ActivitySet;
@@ -64,7 +67,7 @@ export function ActivitySetGame(props: Props) {
       <header className="activity-game-heading">
         <div>
           <p className="eyebrow">
-            {activity.stage ? ["", "先试一试", "多想一步", "组合挑战"][activity.stage] : props.game.interactionLabel} · 第 {index + 1} /{" "}
+            {props.game.interactionLabel === '亲子活动' ? props.game.interactionLabel : activity.stage ? ["", "先试一试", "多想一步", "组合挑战"][activity.stage] : props.game.interactionLabel} · 第 {index + 1} /{" "}
             {props.game.rounds.length} 题
           </p>
           <h1>{props.game.title}</h1>
@@ -122,6 +125,8 @@ function ActivityRound({
     createSession,
   );
   const [selectedToken, setSelectedToken] = useState<string | null>(null);
+  const [parentMode, setParentMode] = useState<ParentMode>('play');
+  const [messageMode, setMessageMode] = useState<'hint' | 'result'>('result');
   const [assetsReady, setAssetsReady] = useState(false);
   const [assetError, setAssetError] = useState(false);
   const [remaining, setRemaining] = useState(0);
@@ -170,6 +175,10 @@ function ActivityRound({
   useEffect(() => {
     let cancelled = false;
     const sources = new Set(activity.tokens.map((t) => t.image.src));
+    for (const image of activity.presentation?.storyCards ?? []) sources.add(image.src);
+    for (const card of activity.presentation?.materialCards ?? []) if (card.image) sources.add(card.image.src);
+    if (activity.presentation?.evidence?.kind === 'storySequence')
+      for (const image of activity.presentation.evidence.cards) sources.add(image.src);
     if (activity.illustration) sources.add(activity.illustration.src);
     if (activity.kind === "multiSelect" && activity.example)
       sources.add(activity.example.image.src);
@@ -282,8 +291,10 @@ function ActivityRound({
       setSelectedToken(null);
   }
   function submit() {
+    if (activity.kind === 'parentObservation' && parentMode === 'play') { stopSpeech(); setParentMode('record'); return; }
     const next = transitionSession(activity, state, { type: "submit" });
     dispatch({ type: "submit" });
+    setMessageMode('result');
     if (next.result) {
       playTone(next.result.status === "correct" ? "success" : "notice");
       void speak(next.result.message);
@@ -295,6 +306,7 @@ function ActivityRound({
       activity.hints[Math.min(state.hints, activity.hints.length - 1)] ??
       ACTIVITY_COPY.hintEnd;
     dispatch({ type: "hint" });
+    setMessageMode('hint');
     void speak(text);
   }
   function skip() {
@@ -360,6 +372,7 @@ function ActivityRound({
   function renderSlot(
     slot: { id: string; index: number; fixedTokenId: string | null },
     previewId?: string,
+    displayNumber = slot.index + 1,
   ) {
     const value: SlotValue = previewId
       ? { state: "filled", tokenId: previewId }
@@ -369,17 +382,14 @@ function ActivityRound({
     const token =
       value.state === "filled" ? tokenById.get(value.tokenId) : undefined;
     const fixed = slot.fixedTokenId !== null || previewId !== undefined;
-    const label =
-      activity.kind === "gridPlacement"
-        ? `第${Math.floor(slot.index / activity.columns) + 1}行第${(slot.index % activity.columns) + 1}格`
-        : `第${slot.index + 1}个位置`;
+    const label = activitySlotLabel(activity, slot.index);
     return (
       <div
         key={slot.id}
-        className={`activity-slot ${fixed ? "is-fixed" : ""} ${token ? "is-filled" : ""}`}
+        className={`activity-slot ${fixed ? "is-fixed" : ""} ${token ? "is-filled" : ""} ${state.result?.slotId === slot.id ? 'is-error' : ''}`}
       >
         <span className="slot-number" aria-hidden="true">
-          {slot.index + 1}
+          {displayNumber}
         </span>
         {fixed ? (
           <div
@@ -485,6 +495,10 @@ function ActivityRound({
       ? activity.hints[Math.min(state.hints - 1, activity.hints.length - 1)]
       : null;
   const showResponses = state.phase === "respond" || state.phase === "complete";
+  const palette = activity.presentation?.pyramid?.choiceIds.map(id => tokenById.get(id)!) ?? activity.tokens;
+  const showHint = Boolean(currentHint && (messageMode === 'hint' || !state.result));
+  const statusText = showHint ? currentHint : state.result?.message;
+  const hasStatus = state.phase !== 'observe' && state.phase !== 'retain';
   return (
     <div
       className="activity-round"
@@ -492,6 +506,16 @@ function ActivityRound({
       data-activity-id={activity.id}
       data-phase={state.phase}
       data-kind={activity.kind}
+      data-dense={activity.tokens.length > 6 && !activity.presentation?.compactSymbols || undefined}
+      data-pyramid={Boolean(activity.presentation?.pyramid) || undefined}
+      data-folding={Boolean(activity.presentation?.folding) || undefined}
+      data-number-placement={activity.kind === 'orderedPlacement' && activity.tokens.length > 6 && activity.tokens.every(t => t.textOnly && /^\d+$/.test(t.label)) || undefined}
+      data-paired-story={activity.kind === 'orderedPlacement' && activity.presentation?.evidence?.kind === 'storySequence' || undefined}
+      data-paired-matching={activity.kind === 'matching' && Boolean(activity.illustration) && !isMemory || undefined}
+      data-paired-choices={activity.kind === 'multiSelect' && Boolean(activity.illustration) && !activity.presentation?.evidence && activity.tokens.length > 4 && !isMemory || undefined}
+      data-paired-grid={activity.kind === 'gridPlacement' && activity.cells.length > 9 && Boolean(activity.illustration) && !isMemory || undefined}
+      data-wide-reference={Boolean(activity.illustration && (activity.illustration.width ?? 1) / (activity.illustration.height ?? 1) > 2.5 && !activity.presentation?.folding) || undefined}
+      data-parent-mode={activity.kind === 'parentObservation' ? parentMode : undefined}
       data-illustrated={activity.tokens.some(t => t.image.style === "illustration") || undefined}
     >
       <div className="activity-question">
@@ -589,15 +613,15 @@ function ActivityRound({
       )}
       {showResponses && (
         <>
-          {isAdvancedActivity(activity) ? <AdvancedInteraction activity={activity} response={state.response} disabled={!canEdit} onChange={response=>dispatch({type:"response",response})}/> : activity.kind === "multiSelect" ? (
-            <div className={`activity-choice-grid ${activity.presentation?.compactSymbols ? 'is-symbol-grid' : ''} ${activity.tokens.some(t => (t.image.width ?? 1) / (t.image.height ?? 1) > 1.4) ? "has-wide-options" : ""}`} style={{ '--symbol-columns': Math.min(5, Math.ceil(Math.sqrt(activity.tokens.length))), '--mobile-symbol-columns': Math.min(4, Math.ceil(Math.sqrt(activity.tokens.length))) } as CSSProperties} aria-label="可多选的图卡">
+          {isAdvancedActivity(activity) ? <AdvancedInteraction activity={activity} response={state.response} disabled={!canEdit} onChange={response=>dispatch({type:"response",response})} parentMode={parentMode} onParentModeChange={setParentMode}/> : activity.kind === "multiSelect" ? (
+            <div className={`activity-choice-grid ${activity.presentation?.compactSymbols ? 'is-symbol-grid' : ''} ${activity.tokens.some(t => (t.image.width ?? 1) / (t.image.height ?? 1) > 1.4) ? "has-wide-options" : ""}`} style={{ '--symbol-columns': activity.tokens.length > 15 ? 7 : Math.min(5, Math.ceil(Math.sqrt(activity.tokens.length))), '--mobile-symbol-columns': Math.min(4, Math.ceil(Math.sqrt(activity.tokens.length))) } as CSSProperties} aria-label="可多选的图卡">
               {activity.tokens.map((t) => tokenButton(t, true))}
             </div>
           ) : (
             <div
-              className={`activity-workspace ${activity.kind === "gridPlacement" ? "for-grid" : "for-order"} ${state.phase === "complete" ? "is-complete" : ""}`}
+              className={`activity-workspace ${activity.presentation?.pyramid ? 'for-pyramid' : activity.kind === "gridPlacement" ? "for-grid" : "for-order"} ${state.phase === "complete" ? "is-complete" : ""}`}
             >
-              <div
+              {activity.kind === 'gridPlacement' && activity.presentation?.pyramid ? <PyramidBoard activity={activity} renderSlot={(slot, column) => renderSlot(slot, undefined, column)} renderBase={id => <TokenArt token={tokenById.get(id)} />} /> : <div
                 className={`activity-board ${activity.kind === "gridPlacement" ? "is-grid" : "is-order"}`}
                 aria-label={
                   activity.kind === "gridPlacement"
@@ -614,7 +638,7 @@ function ActivityRound({
                 }
               >
                 {slotEntries.map((slot) => renderSlot(slot))}
-              </div>
+              </div>}
               {state.phase !== "complete" && (
                 <div className="activity-supply">
                   <p className="tray-instruction">
@@ -630,15 +654,15 @@ function ActivityRound({
                     aria-label="可使用的图卡"
                     style={
                       {
-                        "--tray-columns": Math.min(activity.tokens.length, 6),
+                        "--tray-columns": Math.min(palette.length, 6),
                         "--grid-tray-columns": Math.min(
-                          activity.tokens.length,
+                          palette.length,
                           5,
                         ),
                       } as CSSProperties
                     }
                   >
-                    {activity.tokens.map((t) => tokenButton(t))}
+                    {palette.map((t) => tokenButton(t))}
                   </div>
                 </div>
               )}
@@ -646,25 +670,12 @@ function ActivityRound({
           )}
         </>
       )}
-      {currentHint && state.phase !== "observe" && state.phase !== "retain" && (
-        <p className="activity-hint" role="status">
-          <Lightbulb size={18} />
-          {currentHint}
-        </p>
-      )}
-      {state.result && <div
-        className={`activity-feedback ${state.result?.status === "correct" ? "is-correct" : ""}`}
-        role="status"
-        aria-live="polite"
-      >
-        {state.result ? (
-          <>
-            {state.result.status === "correct" && <Check size={20} />}
-            <span>{state.result.message}</span>
-          </>
-        ) : (
-          <span>{activity.difficultyNote}</span>
-        )}
+      {hasStatus && <div className="activity-status-space" data-testid="activity-status">
+        {statusText && <div className={`activity-feedback ${showHint ? 'is-hint' : state.result?.status === 'correct' ? 'is-correct' : ''}`} role="status" aria-live="polite">
+          {showHint ? <Lightbulb size={18}/> : state.result?.status === 'correct' ? <Check size={20}/> : null}
+          <span>{statusText}</span>
+          {currentHint && state.result && state.phase !== 'complete' && <button type="button" className="status-switch" onClick={() => setMessageMode(showHint ? 'result' : 'hint')}>{showHint ? '看检查结果' : '看刚才提示'}</button>}
+        </div>}
       </div>}
       <div className="activity-actions">
         {state.phase === "complete" ? (
@@ -672,7 +683,7 @@ function ActivityRound({
             <button
               type="button"
               className="activity-secondary"
-              onClick={() => dispatch({ type: "again" })}
+              onClick={() => { dispatch({ type: "again" }); setParentMode('play'); setMessageMode('result'); }}
             >
               再试一次
             </button>
@@ -737,7 +748,7 @@ function ActivityRound({
               disabled={!canEdit}
               onClick={submit}
             >
-              {activity.kind === "parentObservation" ? "记录这次活动" : activity.kind === "multiSelect" || activity.kind === "singleChoice"
+              {activity.kind === "parentObservation" ? parentMode === 'play' ? ACTIVITY_COPY.parentRecordNext : "记录这次活动" : activity.presentation?.pyramid ? ACTIVITY_COPY.checkPyramid : activity.kind === "multiSelect" || activity.kind === "singleChoice"
                 ? "选好了，看看"
                 : "摆好了，看看"}
             </button>
@@ -748,6 +759,7 @@ function ActivityRound({
         <span>
           这次尝试 {state.attempts} 次 · 提示 {state.hints} 次
           {isMemory ? ` · ${isListening ? "重听" : "重看"} ${state.reveals} 次` : ""}
+          {state.checks > 0 ? ` · 中途检查 ${state.checks} 次` : ''}
         </span>
         <button type="button" onClick={skip}>
           先跳过

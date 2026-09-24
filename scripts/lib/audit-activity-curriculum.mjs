@@ -52,6 +52,12 @@ export function auditActivityCurriculum(
         if (!activity[key]?.trim()) problems.push(`${prefix}: missing ${key}`);
       if (!activity.sourceRefs?.length || activity.hints.length < 2)
         problems.push(`${prefix}: source mapping and two hint stages required`);
+      if (prefix.startsWith('explore-')) {
+        const load = activity.difficulty;
+        if (!activity.prerequisites?.trim() || load?.calibration !== 'design-estimate' || !load?.basis?.trim()
+          || ['rules','steps','memory','reading','motor'].some(key => !Number.isInteger(load?.[key]) || load[key] < 0))
+          problems.push(`${prefix}: missing explicit design-load profile or prerequisites`);
+      }
       const tokens = new Set(activity.tokens.map((token) => token.id));
       if (tokens.size !== activity.tokens.length)
         problems.push(`${prefix}: duplicate token IDs`);
@@ -130,6 +136,16 @@ export function auditActivityCurriculum(
         }
       }
       if (activity.kind === "gridPlacement") {
+        const pyramid = activity.presentation?.pyramid;
+        if (pyramid && (activity.evaluation.kind !== 'exact' || activity.tokenUse !== 'unlimited'
+          || pyramid.baseTokenIds.length < 2 || !pyramid.baseTokenIds.every(id => tokens.has(id))
+          || pyramid.rowSizes.length !== pyramid.baseTokenIds.length - 1
+          || pyramid.rowSizes.some((size, index) => size !== pyramid.baseTokenIds.length - index - 1)
+          || pyramid.rowSizes.reduce((a,b) => a+b,0) !== activity.cells.length
+          || !pyramid.choiceIds.length || new Set(pyramid.choiceIds).size !== pyramid.choiceIds.length
+          || !pyramid.choiceIds.every(id => tokens.has(id))
+          || Object.values(activity.evaluation.cells ?? {}).some(id => !pyramid.choiceIds.includes(id))))
+          problems.push(`${prefix}: invalid pyramid layers or palette`);
         if (
           activity.columns < 1 ||
           activity.cells.length % activity.columns ||

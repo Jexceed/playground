@@ -12,7 +12,8 @@ const responseFor = ids => ({ kind: 'orderedPlacement', slots: ids.map(tokenId =
 
 test('generic choice labels describe display order, not the hidden authoring/answer index', () => {
   const all = activities.filter(a => a.kind === 'singleChoice' && a.tokens.every(t => generic.test(t.label)));
-  assert.equal(all.length, 105);
+  assert.ok(all.some(a => a.primaryFamilyId === 'G04'), 'movement choices must be checked');
+  assert.ok(all.some(a => a.primaryFamilyId === 'G15'), 'folding choices must be checked');
   for (const activity of all) for (const [index, token] of activity.tokens.entries()) {
     const [, prefix, suffix] = token.label.match(generic);
     assert.equal(token.label, prefix + (/^\d+$/.test(suffix) ? index + 1 : String.fromCharCode(65 + index)), activity.id);

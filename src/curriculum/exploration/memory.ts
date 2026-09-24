@@ -6,8 +6,6 @@ import type { Activity } from '../../domain/activity';
 const objects = familiar('rabbit', 'cat', 'bear', 'dog', 'apple', 'orange', 'cookie', 'strawberry');
 const memory = (a: Activity, preview: string[], audioText?: string, soundSrc?: string) => {
     a.protocol = { kind: 'memory', observeMs: 8000 + (a.stage ?? 1) * 2000, retainMs: 1000 + (a.stage ?? 1) * 500, preview, audioText, soundSrc };
-    if (a.difficulty)
-        a.difficulty.memory = preview.length || a.stage || 1;
     return a;
 };
 export const memorySets = [

@@ -1050,13 +1050,13 @@ export const families = {
   },
   "G09": {
     "id": "G09",
-    "title": "点、线、边、角、面与连通部分",
+    "title": "点线计数与长方形组合",
     "slug": "geometric-counts",
     "world": "graphic",
     "stages": [
       "清楚基本单位",
       "分组计数",
-      "重叠组合中的系统计数"
+      "小网格中的系统计数"
     ],
     "refs": [
       {

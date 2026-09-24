@@ -5,10 +5,7 @@ small enough to turn into a Spec Kit feature.
 
 ## P0
 
-- Fix the new story-atlas clipping regression in `src/styles.css:3162`: sizing the inner atlas image produces a contact sheet/blank frames. The shared path is used by nine E03/P02/L06 activities; E03-9 was reproduced in the installed Mac app. Details: specs/032-exploration-quality-audit/followup-2026-09-24.md (R1).
-- Recheck the one-window claim against dense tasks and feedback states on the current Mac: N04-9, E03-9 and G15-7 with a hint plus incomplete feedback still require scrolling. Keep the current three-column shell and address the specific surfaces (R2).
-- Complete the final reopen check for specs/032-exploration-quality-audit after manual Mac unlock. The latest quality fixes and prior presentation/assets work are installed at the standard Applications path. Earlier native drag/matching/bridge/route checks are historical evidence; they do not sign off the latest build.
-- Correct G15's folded-paper surface and hole-coordinate ambiguity before treating exploration as ready for full content acceptance (029 T117). Keep the incomplete-source verdict explicit; do not publish a full-coverage claim.
+- Finish the final native reopen/interaction acceptance for specs/034-current-mac-quality-fixes after Mac unlock, then commit and push the authorized dev milestone. R1–R7 engineering changes, 621 initial-page Mac-size browser checks and targeted interaction states are implemented; see its verification/qa.md. Retain the current three-column layout.
 
 - Observe 6-, 7- and 8-year-old parent-child play and calibrate reading, interaction and reasoning load for the 597 newly authored activities. Technical QA is not age validation.
 - Finish the historical-release migration/backup/ambiguity handling and finer support-history/next-practice guidance still unchecked in specs/029-curriculum-benchmark/tasks.md. Current legacy content and facts are preserved; do not infer mastery from completion.
@@ -44,11 +41,11 @@ small enough to turn into a Spec Kit feature.
 
 ## P1
 
-- Complete 029 T118–T126 using the detailed gaps in specs/032-exploration-quality-audit/family-coverage.json: effective inventory/shortest-route/two-marker constraints, editable pyramid steps, quantity/relative-position grids, and missing math/logic/graphic/memory/language/physical-task branches. Preserve valid existing basics and stable progress; do not replace a missing operation with a non-equivalent single-choice question.
+- Complete the remaining 029 T120–T126 using the detailed gaps in specs/032-exploration-quality-audit/family-coverage.json: quantity/relative-position grids and missing math/logic/graphic/memory/language/physical-task branches. Preserve valid existing basics and stable progress; do not replace a missing operation with a non-equivalent single-choice question.
 - Close the original-task mapping chain and remaining source reading/listening boundaries (T127). The confirmed eight missing branches and nine partial groups are a lower bound, not an exhaustive missing-task count.
-- Replace generic difficulty defaults with independently reviewed load descriptors (T128); retain observed child play as a separate gate.
+- Calibrate the new design-load descriptors from real parent-child observations (T112). The 71 explicit profiles are engineering estimates, not an age or mastery score.
 - Perform real acoustic review of all distinct local voice lines by locale, especially English and Chinese numbers/polyphonic words/long instructions (T129). Media integrity and playback completion are not pronunciation or prosody checks.
-- Complete T130 against the user's current Mac window requirement. The 2026-09-24 three-column update improves ordinary tasks, but dense/long tasks and feedback states still fail the complete-task check; follow-up R2 has native evidence. Other device layouts are outside the current review request.
+- Keep T130's other-device scope separate from the current Mac acceptance in 034; do not close its 375px/other-window checks from the Mac-size browser pass.
 
 - Run at least five observed parent-child Math Island sessions; require four
   families to enter a game, complete a question, and find voice replay without

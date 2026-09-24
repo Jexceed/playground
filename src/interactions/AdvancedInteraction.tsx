@@ -4,13 +4,15 @@ import { placedCells, type AdvancedActivity, type AdvancedResponse } from "../do
 import { speak, playRequiredAudio } from "../speech";
 import { MatchingInteraction } from "./MatchingInteraction";
 import { GraphInteraction } from "./GraphInteraction";
-import { ParentActivity } from "./ParentActivity";
+import { ParentActivity, type ParentMode } from "./ParentActivity";
 import { ActivityTokenArt } from "./ActivityTokenArt";
-export function AdvancedInteraction({ activity, response, disabled, onChange }: {
+export function AdvancedInteraction({ activity, response, disabled, onChange, parentMode = 'play', onParentModeChange = () => {} }: {
     activity: AdvancedActivity;
     response: ActivityResponse;
     disabled: boolean;
     onChange: (r: AdvancedResponse) => void;
+    parentMode?: ParentMode;
+    onParentModeChange?: (mode: ParentMode) => void;
 }) {
     const [selected, setSelected] = useState<string | null>(null);
     const [rotation, setRotation] = useState(0);
@@ -44,6 +46,6 @@ export function AdvancedInteraction({ activity, response, disabled, onChange }: 
     </div>;
     }
     if (activity.kind === "parentObservation" && response.kind === "parentObservation")
-        return <ParentActivity activity={activity} response={response} disabled={disabled} onChange={onChange} />;
+        return <ParentActivity activity={activity} response={response} disabled={disabled} onChange={onChange} mode={parentMode} onModeChange={onParentModeChange} />;
     return null;
 }

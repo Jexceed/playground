@@ -1,4 +1,4 @@
-import { set, nine, choice, numeric, selection, ordered, fillGrid, parent, base, card, authoringSolutions, matching } from './helpers';
+import { set, nine, choice, numeric, selection, ordered, fillGrid, parent, base, card, authoringSolutions, authoringNotes, matching } from './helpers';
 import { picture, text, grid, dots, symbol, panels, palette } from './draw';
 import { tokens as familiar } from '../pilot/tokens';
 import type { Activity } from '../../domain/activity';
@@ -38,16 +38,25 @@ export const logicSets = [
                 end = `n${n - 1}`;
         }
         else {
-            graph = { nodes: Array.from({ length: 6 }, (_, k) => ({ id: `n${k}`, label: String.fromCharCode(65 + k), x: 100 + k % 3 * 200, y: 65 + Math.floor(k / 3) * 170 })), edges: [[0, 1], [1, 2], [3, 4], [4, 5], [0, 3], [1, 4], [2, 5]].map(([a, b], k) => ({ id: `e${k}`, from: `n${a}`, to: `n${b}` })) };
+            const hub = [1, 3, 4][v], upper = [2, 1, 1][v], lower = [4, 4, 2][v], detour = [3, 2, 3][v];
+            const positions: Record<number, [number, number]> = { 0: [60, 155], 5: [540, 155], [hub]: [280, 155], [upper]: [410, 45], [lower]: [410, 260], [detour]: [170, 260] };
+            graph = { nodes: Array.from({ length: 6 }, (_, k) => ({ id: `n${k}`, label: String.fromCharCode(65 + k), x: positions[k][0], y: positions[k][1] })), edges: [[0, hub], [hub, upper], [upper, 5], [hub, lower], [lower, 5], [0, detour], [detour, hub], [0, upper], [hub, 5]].map(([from, to], k) => ({ id: `e${k}`, from: `n${from}`, to: `n${to}` })) };
             end = 'n5';
-            requiredNodes = [['n1', 'n3', 'n4'][v]];
-            blockedEdges = [['e2', 'e1', 'e6'][v]];
+            requiredNodes = [`n${hub}`];
+            blockedEdges = ['e8'];
         }
         const a: RouteActivity = { ...base('L05', i, s === 2 ? '每一段路都走一次，走到终点。' : s === 1 ? '经过指定地点，找到少走几段的路。' : '从起点一步步走到终点。', '直接点图上相邻的地点或路段，沿着路一步步走。可以撤销。', s === 2 ? '每个路段都走了一次；连接相同两点的直路和弯路是不同路段。' : '路线连贯，经过了所有指定地点。'), kind: 'route', graph, start, end, requiredNodes, requiredEdges, blockedEdges, allowRevisit: false };
         a.clues = s === 2 ? ['不能抬笔跳走。', '每段路只走一次，弯路也算一段。'] : s === 1 ? [`必须经过${graph.nodes.find(n => n.id === requiredNodes[0])!.label}。`, '标记不通的路不能走。', '在合法路线里，找段数最少的。'] : ['从A出发，沿相连的路走。'];
         const path = routeSolution(a);
-        if (s === 1)
+        if (s === 1) {
             a.optimalLength = path.length;
+            a.revision = 2;
+            a.instruction = '点相邻地点或路段，一步步走。不重复走同一段路，可以撤销。';
+            a.success = '这条路线符合条件，用的路段最少。还可以找另一条同样短的路线。';
+            a.hints = ['先找能经过指定地点的路线，再数一数走了几段。', '可以撤销回到起点，试试另一条路。只比较都符合条件的路线。'];
+            a.parentPrompt = '你比较了哪两条合法路线？哪条少走几段？有没有一样短的路线？';
+            authoringNotes[a.id].reason = a.success;
+        }
         authoringSolutions[a.id] = { kind: 'route', edgeIds: path };
         return a;
     })),

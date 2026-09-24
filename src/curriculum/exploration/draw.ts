@@ -2,7 +2,7 @@ import { registerExplorationImage, type Drawing, type Primitive } from "../../da
 export type { Drawing, Primitive };
 export const palette = ["#db675e", "#548cb3", "#e8b64e", "#76a784", "#a189bd", "#333f50"];
 export const text = (x: number, y: number, value: string | number, size = 28): Primitive => ({ kind: 'text', x, y, text: String(value), size });
-export const line = (x: number, y: number, x2: number, y2: number, dash = false): Primitive => ({ kind: 'line', x, y, x2, y2, dash });
+export const line = (x: number, y: number, x2: number, y2: number, dash = false): Extract<Primitive, { kind: 'line' }> => ({ kind: 'line', x, y, x2, y2, dash });
 export const rect = (x: number, y: number, w: number, h: number, fill = "#fffdf7", dash = false): Primitive => ({ kind: 'rect', x, y, w, h, fill, dash });
 export const circle = (x: number, y: number, r = 16, fill = palette[1]): Primitive => ({ kind: 'circle', x, y, r, fill });
 export const picture = (objects: Primitive[], width = 600, height = 280): Drawing => ({ width, height, objects });

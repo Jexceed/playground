@@ -1,9 +1,10 @@
 import { Maximize2, X } from "lucide-react";
 import { useEffect, useRef } from "react";
-import type { Activity } from "../domain/activity";
+import { ACTIVITY_COPY, type Activity } from "../domain/activity";
 import { imageGallery } from "../data/imageGallery";
 import { ActivityImage } from "./ActivityTokenArt";
 import { evidenceVisible } from "./presentation-state";
+import { RectangleExplorer } from './RectangleExplorer';
 
 export function ActivityEvidence({ activity, phase }: { activity: Activity; phase: string }) {
   const dialog = useRef<HTMLDialogElement>(null);
@@ -11,7 +12,9 @@ export function ActivityEvidence({ activity, phase }: { activity: Activity; phas
   if (!evidenceVisible(activity, phase)) return null;
   const art = activity.illustration;
   const evidence = activity.presentation?.evidence;
-  const content = evidence?.kind === "quantityStory" ? <div className="quantity-story">
+  const content = evidence?.kind === 'rectangleSearch' ? <RectangleExplorer rows={evidence.rows} columns={evidence.columns} disabled={phase === 'complete'} />
+  : evidence?.kind === 'moneyInventory' ? <div className="money-stock"><div><strong>5元</strong><span>{evidence.fives}张</span></div><div><strong>1元</strong><span>{evidence.ones}枚</span></div></div>
+  : evidence?.kind === "quantityStory" ? <div className="quantity-story">
     {evidence.parts.map((part, index) => <div className="quantity-story-step" key={part.label}>
       <span className="evidence-step-label">{part.label}</span>
       <div className="story-object-group">{part.count === null ? <span className="story-unknown">?</span> : Array.from({ length: part.count }, (_, k) => <ActivityImage key={k} image={imageGallery.items.bird} decorative />)}</div>
@@ -32,7 +35,7 @@ export function ActivityEvidence({ activity, phase }: { activity: Activity; phas
   : art ? <ActivityImage image={art} className={`activity-evidence-image${art.style === 'illustration' ? ' is-illustration' : ''}`} /> : null;
   if (!content) return null;
   return <figure className="activity-evidence-board">
-    <div className="evidence-caption"><span>{evidence ? '看看发生了什么' : '先看图，找线索'}</span>{art && !evidence && <button type="button" className="image-enlarge" onClick={() => dialog.current?.showModal()} aria-label="放大题目图片"><Maximize2 size={15} />放大看</button>}</div>
+    <div className="evidence-caption"><span>{evidence?.kind === 'moneyInventory' ? ACTIVITY_COPY.moneyStock : evidence ? '看看发生了什么' : '先看图，找线索'}</span>{art && !evidence && <button type="button" className="image-enlarge" onClick={() => dialog.current?.showModal()} aria-label="放大题目图片"><Maximize2 size={15} />放大看</button>}</div>
     {content}
     {art && !evidence && <dialog className="evidence-dialog" ref={dialog} onClick={e => { if (e.target === e.currentTarget) e.currentTarget.close(); }}>
       <button type="button" className="evidence-dialog-close" autoFocus onClick={() => dialog.current?.close()} aria-label="关闭放大图片"><X size={22} /></button>

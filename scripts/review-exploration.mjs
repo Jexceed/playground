@@ -13,7 +13,7 @@ for(const group of explorationSets)for(const a of group.rounds){
  if(seen.has(signature))duplicates.push([seen.get(signature),a.id]);else seen.set(signature,a.id);
  const oracle=authoringNotes[a.id]?.oracle;
  if(oracle){const [x,y,z]=oracle.values;const expected=({identity:()=>x,add:()=>oracle.values.reduce((a,b)=>a+b,0),subtract:()=>x-y,difference:()=>x-y,halfDifference:()=>(x-y)/2,divide:()=>x/y,multiply:()=>x*y,remainder:()=>x%y,overlap:()=>x+y-z,placeValue:()=>x*10+y,perimeter:()=>2*x+2*y,affine:()=>(x+y)*z})[oracle.operation]();if(expected!==oracle.answer)problems.push({id:a.id,oracle,expected});}
- outcomes.push({id:a.id,family:a.primaryFamilyId,stage:a.stage,kind:a.kind,status:result.status,solution:authoringSolutions[a.id],reason:authoringNotes[a.id]?.reason,oracle:oracle??null});
+ outcomes.push({id:a.id,revision:a.revision,difficulty:a.difficulty,prerequisites:a.prerequisites,family:a.primaryFamilyId,stage:a.stage,kind:a.kind,status:result.status,solution:authoringSolutions[a.id],reason:authoringNotes[a.id]?.reason,oracle:oracle??null});
 }
 const report={verificationLevel:'authored-solutions-and-surface-duplicates',claimsSourceTaskEquivalence:false,groups:explorationSets.length,activities:outcomes.length,problems,duplicates,outcomes};
 writeFileSync(output,JSON.stringify(report,null,2)+'\n');

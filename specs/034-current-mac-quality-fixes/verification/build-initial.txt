@@ -1,0 +1,12 @@
+Already up to date
+Done in 144ms using pnpm v11.19.0
+$ tsc && vite build
+src/curriculum/exploration/task-diagrams.ts(26,71): error TS2345: Argument of type '{ color: string; kind: "circle"; x: number; y: number; r: number; fill: string; } | { color: string; kind: "rect"; x: number; y: number; w: number; h: number; fill: string; dash?: boolean | undefined; } | { ...; } | { ...; } | { ...; }' is not assignable to parameter of type 'Primitive'.
+  Object literal may only specify known properties, and 'color' does not exist in type '{ kind: "circle"; x: number; y: number; r: number; fill: string; }'.
+src/curriculum/exploration/task-diagrams.ts(27,64): error TS2345: Argument of type '{ color: string; kind: "circle"; x: number; y: number; r: number; fill: string; } | { color: string; kind: "rect"; x: number; y: number; w: number; h: number; fill: string; dash?: boolean | undefined; } | { ...; } | { ...; } | { ...; }' is not assignable to parameter of type 'Primitive'.
+  Object literal may only specify known properties, and 'color' does not exist in type '{ kind: "circle"; x: number; y: number; r: number; fill: string; }'.
+src/curriculum/exploration/task-diagrams.ts(30,72): error TS2345: Argument of type '{ color: string; kind: "circle"; x: number; y: number; r: number; fill: string; } | { color: string; kind: "rect"; x: number; y: number; w: number; h: number; fill: string; dash?: boolean | undefined; } | { ...; } | { ...; } | { ...; }' is not assignable to parameter of type 'Primitive'.
+  Object literal may only specify known properties, and 'color' does not exist in type '{ kind: "circle"; x: number; y: number; r: number; fill: string; }'.
+src/curriculum/exploration/task-diagrams.ts(31,66): error TS2345: Argument of type '{ color: string; kind: "circle"; x: number; y: number; r: number; fill: string; } | { color: string; kind: "rect"; x: number; y: number; w: number; h: number; fill: string; dash?: boolean | undefined; } | { ...; } | { ...; } | { ...; }' is not assignable to parameter of type 'Primitive'.
+  Object literal may only specify known properties, and 'color' does not exist in type '{ kind: "circle"; x: number; y: number; r: number; fill: string; }'.
+[ELIFECYCLE] Command failed with exit code 2.

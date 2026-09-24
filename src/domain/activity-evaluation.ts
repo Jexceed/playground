@@ -1,4 +1,4 @@
-import { ACTIVITY_COPY, activitySlots } from "./activity";
+import { ACTIVITY_COPY, activitySlots, pyramidMismatch } from "./activity";
 import type { Activity, ActivityResponse, SlotValue } from "./activity";
 import { isAdvancedActivity, advancedEmpty, evaluateAdvanced } from "./advanced-activity";
 
@@ -6,6 +6,8 @@ export type EvaluationResult = {
   status: "incomplete" | "incorrect" | "correct" | "needsParentObservation";
   message: string;
   clueIndex?: number;
+  slotId?: string;
+  checkedPartial?: boolean;
 };
 const unfilled = (): SlotValue => ({ state: "unfilled" });
 
@@ -129,6 +131,20 @@ export function evaluateActivity(
   }
   const slots = activitySlots(activity).filter((s) => s.fixedTokenId === null);
   const values = slots.map((slot) => responseValue(response, slot.id));
+  if (activity.kind === 'gridPlacement' && response.kind === 'gridPlacement' && activity.presentation?.pyramid && activity.evaluation.kind === 'exact') {
+    if (Object.keys(response.cells).length !== slots.length || Object.keys(response.cells).some(id => !slots.some(s => s.id === id))) return wrong(ACTIVITY_COPY.invalid);
+    for (const slot of slots) {
+      const value = responseValue(response, slot.id);
+      if (value.state === 'filled' && !known.has(value.tokenId)) return wrong(ACTIVITY_COPY.invalid);
+      if (value.state === 'filled' && value.tokenId !== activity.evaluation.cells[slot.id])
+        return { status: 'incorrect', message: pyramidMismatch(activity, slot.index), slotId: slot.id };
+    }
+    if (values.some(v => v.state === 'unfilled')) {
+      const checkedPartial = values.some(v => v.state === 'filled');
+      return { status: 'incomplete', message: checkedPartial ? ACTIVITY_COPY.pyramidPartial : ACTIVITY_COPY.incomplete, checkedPartial };
+    }
+    return correct();
+  }
   if (values.some((v) => v.state === "unfilled"))
     return { status: "incomplete", message: ACTIVITY_COPY.incomplete };
   const ids = values.map((v) => (v.state === "filled" ? v.tokenId : ""));

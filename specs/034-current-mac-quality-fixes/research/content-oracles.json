@@ -1,0 +1,1474 @@
+{
+  "schemaVersion": 1,
+  "status": "proposed-independent-fixtures-not-runtime-signoff",
+  "sourceBoundary": [
+    "AGENTS.md",
+    "specs/034-current-mac-quality-fixes/spec.md",
+    "specs/032-exploration-quality-audit/followup-2026-09-24.md",
+    "src/domain/advanced-activity.ts",
+    "src/curriculum/exploration/logic.ts",
+    "src/curriculum/exploration/math.ts",
+    "src/curriculum/exploration/graphic.ts"
+  ],
+  "route": [
+    {
+      "activityId": "explore-route-constraints-4",
+      "graph": {
+        "nodes": [
+          {
+            "id": "n0",
+            "label": "A",
+            "x": 60,
+            "y": 155
+          },
+          {
+            "id": "n1",
+            "label": "B",
+            "x": 280,
+            "y": 155
+          },
+          {
+            "id": "n2",
+            "label": "C",
+            "x": 410,
+            "y": 45
+          },
+          {
+            "id": "n3",
+            "label": "D",
+            "x": 170,
+            "y": 260
+          },
+          {
+            "id": "n4",
+            "label": "E",
+            "x": 410,
+            "y": 260
+          },
+          {
+            "id": "n5",
+            "label": "F",
+            "x": 540,
+            "y": 155
+          }
+        ],
+        "edges": [
+          {
+            "id": "e0",
+            "from": "n0",
+            "to": "n1"
+          },
+          {
+            "id": "e1",
+            "from": "n1",
+            "to": "n2"
+          },
+          {
+            "id": "e2",
+            "from": "n2",
+            "to": "n5"
+          },
+          {
+            "id": "e3",
+            "from": "n1",
+            "to": "n4"
+          },
+          {
+            "id": "e4",
+            "from": "n4",
+            "to": "n5"
+          },
+          {
+            "id": "e5",
+            "from": "n0",
+            "to": "n3"
+          },
+          {
+            "id": "e6",
+            "from": "n3",
+            "to": "n1"
+          },
+          {
+            "id": "e7",
+            "from": "n0",
+            "to": "n2"
+          },
+          {
+            "id": "e8",
+            "from": "n1",
+            "to": "n5"
+          }
+        ]
+      },
+      "start": "n0",
+      "end": "n5",
+      "requiredNodes": [
+        "n1"
+      ],
+      "requiredEdges": [],
+      "blockedEdges": [
+        "e8"
+      ],
+      "allowRevisit": false,
+      "optimalLength": 3,
+      "expectedOptimalRoutes": [
+        [
+          "e0",
+          "e1",
+          "e2"
+        ],
+        [
+          "e0",
+          "e3",
+          "e4"
+        ]
+      ],
+      "longerLegalRoute": [
+        "e5",
+        "e6",
+        "e1",
+        "e2"
+      ],
+      "nodeRevisitLegalRoute": [
+        "e7",
+        "e1",
+        "e6",
+        "e5",
+        "e0",
+        "e3",
+        "e4"
+      ],
+      "requiredNodeOnlyFailure": [
+        "e7",
+        "e2"
+      ],
+      "blockedEdgeOnlyFailure": [
+        "e0",
+        "e8"
+      ],
+      "repeatedEdgeFailure": [
+        "e0",
+        "e1",
+        "e1",
+        "e3",
+        "e4"
+      ]
+    },
+    {
+      "activityId": "explore-route-constraints-5",
+      "graph": {
+        "nodes": [
+          {
+            "id": "n0",
+            "label": "A",
+            "x": 60,
+            "y": 155
+          },
+          {
+            "id": "n1",
+            "label": "B",
+            "x": 410,
+            "y": 45
+          },
+          {
+            "id": "n2",
+            "label": "C",
+            "x": 170,
+            "y": 260
+          },
+          {
+            "id": "n3",
+            "label": "D",
+            "x": 280,
+            "y": 155
+          },
+          {
+            "id": "n4",
+            "label": "E",
+            "x": 410,
+            "y": 260
+          },
+          {
+            "id": "n5",
+            "label": "F",
+            "x": 540,
+            "y": 155
+          }
+        ],
+        "edges": [
+          {
+            "id": "e0",
+            "from": "n0",
+            "to": "n3"
+          },
+          {
+            "id": "e1",
+            "from": "n3",
+            "to": "n1"
+          },
+          {
+            "id": "e2",
+            "from": "n1",
+            "to": "n5"
+          },
+          {
+            "id": "e3",
+            "from": "n3",
+            "to": "n4"
+          },
+          {
+            "id": "e4",
+            "from": "n4",
+            "to": "n5"
+          },
+          {
+            "id": "e5",
+            "from": "n0",
+            "to": "n2"
+          },
+          {
+            "id": "e6",
+            "from": "n2",
+            "to": "n3"
+          },
+          {
+            "id": "e7",
+            "from": "n0",
+            "to": "n1"
+          },
+          {
+            "id": "e8",
+            "from": "n3",
+            "to": "n5"
+          }
+        ]
+      },
+      "start": "n0",
+      "end": "n5",
+      "requiredNodes": [
+        "n3"
+      ],
+      "requiredEdges": [],
+      "blockedEdges": [
+        "e8"
+      ],
+      "allowRevisit": false,
+      "optimalLength": 3,
+      "expectedOptimalRoutes": [
+        [
+          "e0",
+          "e1",
+          "e2"
+        ],
+        [
+          "e0",
+          "e3",
+          "e4"
+        ]
+      ],
+      "longerLegalRoute": [
+        "e5",
+        "e6",
+        "e1",
+        "e2"
+      ],
+      "nodeRevisitLegalRoute": [
+        "e7",
+        "e1",
+        "e6",
+        "e5",
+        "e0",
+        "e3",
+        "e4"
+      ],
+      "requiredNodeOnlyFailure": [
+        "e7",
+        "e2"
+      ],
+      "blockedEdgeOnlyFailure": [
+        "e0",
+        "e8"
+      ],
+      "repeatedEdgeFailure": [
+        "e0",
+        "e1",
+        "e1",
+        "e3",
+        "e4"
+      ]
+    },
+    {
+      "activityId": "explore-route-constraints-6",
+      "graph": {
+        "nodes": [
+          {
+            "id": "n0",
+            "label": "A",
+            "x": 60,
+            "y": 155
+          },
+          {
+            "id": "n1",
+            "label": "B",
+            "x": 410,
+            "y": 45
+          },
+          {
+            "id": "n2",
+            "label": "C",
+            "x": 410,
+            "y": 260
+          },
+          {
+            "id": "n3",
+            "label": "D",
+            "x": 170,
+            "y": 260
+          },
+          {
+            "id": "n4",
+            "label": "E",
+            "x": 280,
+            "y": 155
+          },
+          {
+            "id": "n5",
+            "label": "F",
+            "x": 540,
+            "y": 155
+          }
+        ],
+        "edges": [
+          {
+            "id": "e0",
+            "from": "n0",
+            "to": "n4"
+          },
+          {
+            "id": "e1",
+            "from": "n4",
+            "to": "n1"
+          },
+          {
+            "id": "e2",
+            "from": "n1",
+            "to": "n5"
+          },
+          {
+            "id": "e3",
+            "from": "n4",
+            "to": "n2"
+          },
+          {
+            "id": "e4",
+            "from": "n2",
+            "to": "n5"
+          },
+          {
+            "id": "e5",
+            "from": "n0",
+            "to": "n3"
+          },
+          {
+            "id": "e6",
+            "from": "n3",
+            "to": "n4"
+          },
+          {
+            "id": "e7",
+            "from": "n0",
+            "to": "n1"
+          },
+          {
+            "id": "e8",
+            "from": "n4",
+            "to": "n5"
+          }
+        ]
+      },
+      "start": "n0",
+      "end": "n5",
+      "requiredNodes": [
+        "n4"
+      ],
+      "requiredEdges": [],
+      "blockedEdges": [
+        "e8"
+      ],
+      "allowRevisit": false,
+      "optimalLength": 3,
+      "expectedOptimalRoutes": [
+        [
+          "e0",
+          "e1",
+          "e2"
+        ],
+        [
+          "e0",
+          "e3",
+          "e4"
+        ]
+      ],
+      "longerLegalRoute": [
+        "e5",
+        "e6",
+        "e1",
+        "e2"
+      ],
+      "nodeRevisitLegalRoute": [
+        "e7",
+        "e1",
+        "e6",
+        "e5",
+        "e0",
+        "e3",
+        "e4"
+      ],
+      "requiredNodeOnlyFailure": [
+        "e7",
+        "e2"
+      ],
+      "blockedEdgeOnlyFailure": [
+        "e0",
+        "e8"
+      ],
+      "repeatedEdgeFailure": [
+        "e0",
+        "e1",
+        "e1",
+        "e3",
+        "e4"
+      ]
+    }
+  ],
+  "money": [
+    {
+      "activityId": "explore-money-shopping-7",
+      "target": 5,
+      "stock": {
+        "5": 1,
+        "1": 4
+      },
+      "options": [
+        {
+          "id": "p0",
+          "denominations": [
+            5
+          ],
+          "correctTotal": true,
+          "withinStock": true
+        },
+        {
+          "id": "p1",
+          "denominations": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "correctTotal": true,
+          "withinStock": false
+        },
+        {
+          "id": "p2",
+          "denominations": [
+            5,
+            1
+          ],
+          "correctTotal": false,
+          "withinStock": true
+        },
+        {
+          "id": "p3",
+          "denominations": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "correctTotal": false,
+          "withinStock": true
+        }
+      ],
+      "expectedIds": [
+        "p0"
+      ]
+    },
+    {
+      "activityId": "explore-money-shopping-8",
+      "target": 6,
+      "stock": {
+        "5": 1,
+        "1": 3
+      },
+      "options": [
+        {
+          "id": "p0",
+          "denominations": [
+            5,
+            1
+          ],
+          "correctTotal": true,
+          "withinStock": true
+        },
+        {
+          "id": "p1",
+          "denominations": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "correctTotal": true,
+          "withinStock": false
+        },
+        {
+          "id": "p2",
+          "denominations": [
+            5,
+            1,
+            1
+          ],
+          "correctTotal": false,
+          "withinStock": true
+        },
+        {
+          "id": "p3",
+          "denominations": [
+            5
+          ],
+          "correctTotal": false,
+          "withinStock": true
+        }
+      ],
+      "expectedIds": [
+        "p0"
+      ]
+    },
+    {
+      "activityId": "explore-money-shopping-9",
+      "target": 10,
+      "stock": {
+        "5": 1,
+        "1": 10
+      },
+      "options": [
+        {
+          "id": "p0",
+          "denominations": [
+            5,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "correctTotal": true,
+          "withinStock": true
+        },
+        {
+          "id": "p1",
+          "denominations": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "correctTotal": true,
+          "withinStock": true
+        },
+        {
+          "id": "p2",
+          "denominations": [
+            5,
+            5
+          ],
+          "correctTotal": true,
+          "withinStock": false
+        },
+        {
+          "id": "p3",
+          "denominations": [
+            5,
+            1,
+            1,
+            1,
+            1
+          ],
+          "correctTotal": false,
+          "withinStock": true
+        }
+      ],
+      "expectedIds": [
+        "p0",
+        "p1"
+      ]
+    }
+  ],
+  "markers": [
+    {
+      "activityId": "explore-position-transform-7",
+      "indexing": "zero-based cells from left",
+      "size": 5,
+      "redStart": 1,
+      "blueStart": 4,
+      "steps": 2,
+      "redRule": "start-right-bounce-at-ends",
+      "blueRule": "left-wrap",
+      "redTrace": [
+        1,
+        2,
+        3
+      ],
+      "blueTrace": [
+        4,
+        3,
+        2
+      ],
+      "options": [
+        {
+          "id": "both-correct",
+          "red": 3,
+          "blue": 2
+        },
+        {
+          "id": "red-only",
+          "red": 3,
+          "blue": 3
+        },
+        {
+          "id": "blue-only",
+          "red": 2,
+          "blue": 2
+        },
+        {
+          "id": "neither",
+          "red": 2,
+          "blue": 3
+        }
+      ],
+      "expectedId": "both-correct"
+    },
+    {
+      "activityId": "explore-position-transform-8",
+      "indexing": "zero-based cells from left",
+      "size": 5,
+      "redStart": 2,
+      "blueStart": 3,
+      "steps": 3,
+      "redRule": "start-right-bounce-at-ends",
+      "blueRule": "left-wrap",
+      "redTrace": [
+        2,
+        3,
+        4,
+        3
+      ],
+      "blueTrace": [
+        3,
+        2,
+        1,
+        0
+      ],
+      "options": [
+        {
+          "id": "both-correct",
+          "red": 3,
+          "blue": 0
+        },
+        {
+          "id": "red-only",
+          "red": 3,
+          "blue": 1
+        },
+        {
+          "id": "blue-only",
+          "red": 4,
+          "blue": 0
+        },
+        {
+          "id": "neither",
+          "red": 4,
+          "blue": 1
+        }
+      ],
+      "expectedId": "both-correct"
+    },
+    {
+      "activityId": "explore-position-transform-9",
+      "indexing": "zero-based cells from left",
+      "size": 5,
+      "redStart": 3,
+      "blueStart": 2,
+      "steps": 4,
+      "redRule": "start-right-bounce-at-ends",
+      "blueRule": "left-wrap",
+      "redTrace": [
+        3,
+        4,
+        3,
+        2,
+        1
+      ],
+      "blueTrace": [
+        2,
+        1,
+        0,
+        4,
+        3
+      ],
+      "options": [
+        {
+          "id": "both-correct",
+          "red": 1,
+          "blue": 3
+        },
+        {
+          "id": "red-only",
+          "red": 1,
+          "blue": 4
+        },
+        {
+          "id": "blue-only",
+          "red": 2,
+          "blue": 3
+        },
+        {
+          "id": "neither",
+          "red": 2,
+          "blue": 4
+        }
+      ],
+      "expectedId": "both-correct"
+    }
+  ],
+  "fold": [
+    {
+      "activityId": "explore-fold-cut-4",
+      "originalRows": 4,
+      "originalColumns": 4,
+      "coordinateConvention": "row,column zero-based; flattened index = 4*row+column",
+      "folds": [
+        "left-half-to-right"
+      ],
+      "activeOriginalRows": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "activeOriginalColumns": [
+        2,
+        3
+      ],
+      "foldedShape": {
+        "rows": 4,
+        "columns": 2
+      },
+      "punchOriginalCoordinate": [
+        0,
+        2
+      ],
+      "punchFoldedLocalCoordinate": [
+        0,
+        0
+      ],
+      "afterUndoLastFoldHoleIndices": [
+        1,
+        2
+      ],
+      "expectedUnfoldedHoleIndices": [
+        1,
+        2
+      ],
+      "candidateHoleIndexSets": [
+        [
+          1,
+          2
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          9,
+          10
+        ]
+      ]
+    },
+    {
+      "activityId": "explore-fold-cut-5",
+      "originalRows": 4,
+      "originalColumns": 4,
+      "coordinateConvention": "row,column zero-based; flattened index = 4*row+column",
+      "folds": [
+        "left-half-to-right"
+      ],
+      "activeOriginalRows": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "activeOriginalColumns": [
+        2,
+        3
+      ],
+      "foldedShape": {
+        "rows": 4,
+        "columns": 2
+      },
+      "punchOriginalCoordinate": [
+        1,
+        2
+      ],
+      "punchFoldedLocalCoordinate": [
+        1,
+        0
+      ],
+      "afterUndoLastFoldHoleIndices": [
+        5,
+        6
+      ],
+      "expectedUnfoldedHoleIndices": [
+        5,
+        6
+      ],
+      "candidateHoleIndexSets": [
+        [
+          5,
+          6
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          13,
+          14
+        ]
+      ]
+    },
+    {
+      "activityId": "explore-fold-cut-6",
+      "originalRows": 4,
+      "originalColumns": 4,
+      "coordinateConvention": "row,column zero-based; flattened index = 4*row+column",
+      "folds": [
+        "left-half-to-right"
+      ],
+      "activeOriginalRows": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "activeOriginalColumns": [
+        2,
+        3
+      ],
+      "foldedShape": {
+        "rows": 4,
+        "columns": 2
+      },
+      "punchOriginalCoordinate": [
+        2,
+        2
+      ],
+      "punchFoldedLocalCoordinate": [
+        2,
+        0
+      ],
+      "afterUndoLastFoldHoleIndices": [
+        9,
+        10
+      ],
+      "expectedUnfoldedHoleIndices": [
+        9,
+        10
+      ],
+      "candidateHoleIndexSets": [
+        [
+          9,
+          10
+        ],
+        [
+          13,
+          14
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "activityId": "explore-fold-cut-7",
+      "originalRows": 4,
+      "originalColumns": 4,
+      "coordinateConvention": "row,column zero-based; flattened index = 4*row+column",
+      "folds": [
+        "left-half-to-right",
+        "top-half-to-bottom"
+      ],
+      "activeOriginalRows": [
+        2,
+        3
+      ],
+      "activeOriginalColumns": [
+        2,
+        3
+      ],
+      "foldedShape": {
+        "rows": 2,
+        "columns": 2
+      },
+      "punchOriginalCoordinate": [
+        2,
+        2
+      ],
+      "punchFoldedLocalCoordinate": [
+        0,
+        0
+      ],
+      "afterUndoLastFoldHoleIndices": [
+        6,
+        10
+      ],
+      "expectedUnfoldedHoleIndices": [
+        5,
+        6,
+        9,
+        10
+      ],
+      "candidateHoleIndexSets": [
+        [
+          5,
+          6,
+          9,
+          10
+        ],
+        [
+          4,
+          7,
+          8,
+          11
+        ],
+        [
+          1,
+          2,
+          13,
+          14
+        ],
+        [
+          0,
+          3,
+          12,
+          15
+        ]
+      ]
+    },
+    {
+      "activityId": "explore-fold-cut-8",
+      "originalRows": 4,
+      "originalColumns": 4,
+      "coordinateConvention": "row,column zero-based; flattened index = 4*row+column",
+      "folds": [
+        "left-half-to-right",
+        "top-half-to-bottom"
+      ],
+      "activeOriginalRows": [
+        2,
+        3
+      ],
+      "activeOriginalColumns": [
+        2,
+        3
+      ],
+      "foldedShape": {
+        "rows": 2,
+        "columns": 2
+      },
+      "punchOriginalCoordinate": [
+        2,
+        3
+      ],
+      "punchFoldedLocalCoordinate": [
+        0,
+        1
+      ],
+      "afterUndoLastFoldHoleIndices": [
+        7,
+        11
+      ],
+      "expectedUnfoldedHoleIndices": [
+        4,
+        7,
+        8,
+        11
+      ],
+      "candidateHoleIndexSets": [
+        [
+          5,
+          6,
+          9,
+          10
+        ],
+        [
+          4,
+          7,
+          8,
+          11
+        ],
+        [
+          1,
+          2,
+          13,
+          14
+        ],
+        [
+          0,
+          3,
+          12,
+          15
+        ]
+      ]
+    },
+    {
+      "activityId": "explore-fold-cut-9",
+      "originalRows": 4,
+      "originalColumns": 4,
+      "coordinateConvention": "row,column zero-based; flattened index = 4*row+column",
+      "folds": [
+        "left-half-to-right",
+        "top-half-to-bottom"
+      ],
+      "activeOriginalRows": [
+        2,
+        3
+      ],
+      "activeOriginalColumns": [
+        2,
+        3
+      ],
+      "foldedShape": {
+        "rows": 2,
+        "columns": 2
+      },
+      "punchOriginalCoordinate": [
+        3,
+        3
+      ],
+      "punchFoldedLocalCoordinate": [
+        1,
+        1
+      ],
+      "afterUndoLastFoldHoleIndices": [
+        3,
+        15
+      ],
+      "expectedUnfoldedHoleIndices": [
+        0,
+        3,
+        12,
+        15
+      ],
+      "candidateHoleIndexSets": [
+        [
+          5,
+          6,
+          9,
+          10
+        ],
+        [
+          4,
+          7,
+          8,
+          11
+        ],
+        [
+          1,
+          2,
+          13,
+          14
+        ],
+        [
+          0,
+          3,
+          12,
+          15
+        ]
+      ]
+    }
+  ],
+  "pyramid": [
+    {
+      "activityId": "explore-recursive-composition-1",
+      "operation": "OR",
+      "bitOrder": "3x3 row-major top-left to bottom-right",
+      "base": [
+        "100110010",
+        "010111100"
+      ],
+      "expectedLevelsBottomUp": [
+        [
+          "110111110"
+        ]
+      ],
+      "requiredIntermediateTiles": 1,
+      "allCellsRequired": true
+    },
+    {
+      "activityId": "explore-recursive-composition-2",
+      "operation": "OR",
+      "bitOrder": "3x3 row-major top-left to bottom-right",
+      "base": [
+        "010111100",
+        "110010011"
+      ],
+      "expectedLevelsBottomUp": [
+        [
+          "110111111"
+        ]
+      ],
+      "requiredIntermediateTiles": 1,
+      "allCellsRequired": true
+    },
+    {
+      "activityId": "explore-recursive-composition-3",
+      "operation": "OR",
+      "bitOrder": "3x3 row-major top-left to bottom-right",
+      "base": [
+        "110010011",
+        "100110010"
+      ],
+      "expectedLevelsBottomUp": [
+        [
+          "110110011"
+        ]
+      ],
+      "requiredIntermediateTiles": 1,
+      "allCellsRequired": true
+    },
+    {
+      "activityId": "explore-recursive-composition-4",
+      "operation": "XOR",
+      "bitOrder": "3x3 row-major top-left to bottom-right",
+      "base": [
+        "100110010",
+        "010111100",
+        "110010011"
+      ],
+      "expectedLevelsBottomUp": [
+        [
+          "110001110",
+          "100101111"
+        ],
+        [
+          "010100001"
+        ]
+      ],
+      "requiredIntermediateTiles": 3,
+      "allCellsRequired": true
+    },
+    {
+      "activityId": "explore-recursive-composition-5",
+      "operation": "XOR",
+      "bitOrder": "3x3 row-major top-left to bottom-right",
+      "base": [
+        "010111100",
+        "110010011",
+        "100110010"
+      ],
+      "expectedLevelsBottomUp": [
+        [
+          "100101111",
+          "010100001"
+        ],
+        [
+          "110001110"
+        ]
+      ],
+      "requiredIntermediateTiles": 3,
+      "allCellsRequired": true
+    },
+    {
+      "activityId": "explore-recursive-composition-6",
+      "operation": "XOR",
+      "bitOrder": "3x3 row-major top-left to bottom-right",
+      "base": [
+        "110010011",
+        "100110010",
+        "010111100"
+      ],
+      "expectedLevelsBottomUp": [
+        [
+          "010100001",
+          "110001110"
+        ],
+        [
+          "100101111"
+        ]
+      ],
+      "requiredIntermediateTiles": 3,
+      "allCellsRequired": true
+    },
+    {
+      "activityId": "explore-recursive-composition-7",
+      "operation": "XOR",
+      "bitOrder": "3x3 row-major top-left to bottom-right",
+      "base": [
+        "100110010",
+        "010111100",
+        "110010011",
+        "100010010"
+      ],
+      "expectedLevelsBottomUp": [
+        [
+          "110001110",
+          "100101111",
+          "010000001"
+        ],
+        [
+          "010100001",
+          "110101110"
+        ],
+        [
+          "100001111"
+        ]
+      ],
+      "requiredIntermediateTiles": 6,
+      "allCellsRequired": true
+    },
+    {
+      "activityId": "explore-recursive-composition-8",
+      "operation": "XOR",
+      "bitOrder": "3x3 row-major top-left to bottom-right",
+      "base": [
+        "010111100",
+        "110010011",
+        "100110010",
+        "010101100"
+      ],
+      "expectedLevelsBottomUp": [
+        [
+          "100101111",
+          "010100001",
+          "110011110"
+        ],
+        [
+          "110001110",
+          "100111111"
+        ],
+        [
+          "010110001"
+        ]
+      ],
+      "requiredIntermediateTiles": 6,
+      "allCellsRequired": true
+    },
+    {
+      "activityId": "explore-recursive-composition-9",
+      "operation": "XOR",
+      "bitOrder": "3x3 row-major top-left to bottom-right",
+      "base": [
+        "110010011",
+        "100110010",
+        "010111100",
+        "110011011"
+      ],
+      "expectedLevelsBottomUp": [
+        [
+          "010100001",
+          "110001110",
+          "100100111"
+        ],
+        [
+          "100101111",
+          "010101001"
+        ],
+        [
+          "110000110"
+        ]
+      ],
+      "requiredIntermediateTiles": 6,
+      "allCellsRequired": true
+    }
+  ],
+  "rectangles": [
+    {
+      "activityId": "explore-geometric-counts-7",
+      "rows": 1,
+      "columns": 2,
+      "includeSquares": true,
+      "boundsConvention": "[top,left,bottom,right], grid-line coordinates, bottom/right exclusive cell bounds",
+      "expectedCount": 3,
+      "rectangles": [
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          2
+        ],
+        [
+          0,
+          0,
+          1,
+          2
+        ]
+      ],
+      "countsByHeightWidth": {
+        "1x1": 2,
+        "1x2": 1
+      }
+    },
+    {
+      "activityId": "explore-geometric-counts-8",
+      "rows": 1,
+      "columns": 3,
+      "includeSquares": true,
+      "boundsConvention": "[top,left,bottom,right], grid-line coordinates, bottom/right exclusive cell bounds",
+      "expectedCount": 6,
+      "rectangles": [
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          1,
+          3
+        ],
+        [
+          0,
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          1,
+          3
+        ],
+        [
+          0,
+          0,
+          1,
+          3
+        ]
+      ],
+      "countsByHeightWidth": {
+        "1x1": 3,
+        "1x2": 2,
+        "1x3": 1
+      }
+    },
+    {
+      "activityId": "explore-geometric-counts-9",
+      "rows": 2,
+      "columns": 2,
+      "includeSquares": true,
+      "boundsConvention": "[top,left,bottom,right], grid-line coordinates, bottom/right exclusive cell bounds",
+      "expectedCount": 9,
+      "rectangles": [
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          0,
+          2,
+          1
+        ],
+        [
+          1,
+          1,
+          2,
+          2
+        ],
+        [
+          0,
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          0,
+          2,
+          2
+        ],
+        [
+          0,
+          0,
+          2,
+          1
+        ],
+        [
+          0,
+          1,
+          2,
+          2
+        ],
+        [
+          0,
+          0,
+          2,
+          2
+        ]
+      ],
+      "countsByHeightWidth": {
+        "1x1": 4,
+        "1x2": 2,
+        "2x1": 2,
+        "2x2": 1
+      }
+    }
+  ]
+}

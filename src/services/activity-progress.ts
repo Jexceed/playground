@@ -11,6 +11,7 @@ export type ActivityEvidence = {
   hints: number;
   reveals: number;
   restarts: number;
+  checks?: number;
   skips: number;
   firstCompletedAt: number | null;
   lastUpdatedAt: number;
@@ -25,7 +26,7 @@ export type ActivityProgress = {
 export type EvidenceEvent =
   | { id: string; kind: "attempt"; correct: boolean }
   | { id: string; kind: "observation"; observations: Record<string,"independent"|"supported"|"notYet"> }
-  | { id: string; kind: "hint" | "reveal" | "restart" | "skip" };
+  | { id: string; kind: "hint" | "reveal" | "restart" | "skip" | "check" };
 const empty = (): ActivityProgress => ({ schemaVersion: 1, entries: {} });
 const natural = (value: unknown): value is number =>
   Number.isSafeInteger(value) && Number(value) >= 0;
@@ -69,6 +70,7 @@ export function readActivityProgress(storage: Store | null = browserStore()): {
       )
         return { progress: empty(), writable: false };
       if(entry.observedAt!==undefined && (!natural(entry.observedAt) || !entry.observations || typeof entry.observations!=='object' || !Object.values(entry.observations).every(v=>['independent','supported','notYet'].includes(v))))return {progress:empty(),writable:false};
+      if (entry.checks !== undefined && !natural(entry.checks)) return { progress: empty(), writable: false };
       if (
         entry.correctAttempts > entry.attempts ||
         !(entry.firstCompletedAt === null || natural(entry.firstCompletedAt)) ||
@@ -133,6 +135,9 @@ export function recordActivityEvent(
       break;
     case "restart":
       entry.restarts++;
+      break;
+    case "check":
+      entry.checks = (entry.checks ?? 0) + 1;
       break;
     case "skip":
       entry.skips++;

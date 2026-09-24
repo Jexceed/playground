@@ -1,4 +1,4 @@
-import { ACTIVITY_COPY, activityPromptSpeech } from "../domain/activity";
+import { ACTIVITY_COPY, activityPromptSpeech, pyramidMismatch } from "../domain/activity";
 import type { ActivitySet } from "../domain/activity";
 
 export function activityVoiceLines(sets: ActivitySet[]) {
@@ -18,9 +18,12 @@ export function activityVoiceLines(sets: ActivitySet[]) {
       add("success", activity.success, context);
       add("retry", activity.retry, context);
       add("parent", activity.parentPrompt, context);
+      if (activity.prerequisites) add("parent", activity.prerequisites, context);
       activity.hints.forEach((text) => add("hint", text, context));
       activity.clues.forEach((text) => add("clue", text, context));
       activity.tokens.forEach((token) => add("object", token.speechText ?? token.label, context));
+      if (activity.kind === 'gridPlacement' && activity.presentation?.pyramid)
+        activity.cells.forEach((_, index) => add('clue', pyramidMismatch(activity, index), context));
       if(activity.protocol.kind === "memory" && activity.protocol.audioText) add("stimulus",activity.protocol.audioText,context,activity.protocol.audioLocale??"zh-CN");
       if(activity.kind === "parentObservation") {
         activity.steps.forEach(text=>add("instruction",text,context));
