@@ -1,0 +1,76 @@
+✔ presentation retains all existing curriculum identities and accepts every authored answer (3.99325ms)
+✔ story and natural-change ordering cards use individually addressed illustrations (0.100958ms)
+✖ planting and fruit stories use their own coherent atlas through every event and reference (0.507042ms)
+✖ all registered illustration frames reach a renderable activity surface (1.455375ms)
+✔ concrete household pictures cannot be hidden by the text-only flag (0.088125ms)
+✔ floating experiment preparations show the specified materials, not plastic bricks or cardboard (0.095416ms)
+✔ quantity-story evidence contains only the known counts and exactly one unknown (0.063333ms)
+✔ memory evidence is visible only during observation (0.084667ms)
+✔ topic grouping preserves each entry once and keeps navigation IDs stable (0.171125ms)
+✔ every illustrated frame is registered and has a complete local PNG source (36.61925ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 8
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 569.674209
+
+✖ failing tests:
+
+test at scripts/exploration-presentation.test.mjs:36:1
+✖ planting and fruit stories use their own coherent atlas through every event and reference (0.507042ms)
+  AssertionError [ERR_ASSERTION]: explore-planning-repair-1
+      at TestContext.<anonymous> (file:///Users/chiang/.codex/worktrees/curriculum-benchmark/playground/scripts/exploration-presentation.test.mjs:42:12)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at scripts/exploration-presentation.test.mjs:55:1
+✖ all registered illustration frames reach a renderable activity surface (1.455375ms)
+  AssertionError [ERR_ASSERTION]: an on-disk atlas alone is not complete integration
+  + actual - expected
+
+  + [
+  +   {
+  +     alt: '取花盆',
+  +     index: 0,
+  +     key: 'planting1',
+  +     src: '/images/items/exploration-art/planting-steps.png'
+  +   },
+  +   {
+  +     alt: '放土和种子',
+  +     index: 1,
+  +     key: 'planting2',
+  +     src: '/images/items/exploration-art/planting-steps.png'
+  +   }
+  + ]
+  - []
+
+      at TestContext.<anonymous> (file:///Users/chiang/.codex/worktrees/curriculum-benchmark/playground/scripts/exploration-presentation.test.mjs:60:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: [ { key: 'planting1', src: '/images/items/exploration-art/planting-steps.png', index: 0, alt: '取花盆' }, { key: 'planting2', src: '/images/items/exploration-art/planting-steps.png', index: 1, alt: '放土和种子' } ],
+    expected: [],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }

@@ -3,6 +3,7 @@ import { join } from "node:path";
 import { loadGameData } from "./lib/load-game-data.mjs";
 import { auditActivityCurriculum } from "./lib/audit-activity-curriculum.mjs";
 import { inspectVoiceMedia } from "./lib/voice-media-quality.mjs";
+import { collectIllustrationUsage } from "./lib/illustration-usage.mjs";
 
 const indexHtml = readFileSync("index.html", "utf8");
 const appSource = readFileSync("src/App.tsx", "utf8");
@@ -61,6 +62,10 @@ const visualRuleHints = [
 const singleSurfaceSpatialGameIds = new Set(["logic-address-map", "logic-position-map", "logic-route-steps"]);
 
 const problems = [];
+const illustrationUsage = collectIllustrationUsage(activitySets, imageGallery);
+problems.push(...illustrationUsage.problems);
+for (const frame of illustrationUsage.unusedFrames)
+  problems.push(`Illustration frame is registered but never rendered: ${frame.src}#${frame.index} (${frame.alt})`);
 const brandLogoSrc = "/images/brand/thinking-house-brand-v3.png";
 const brandLogoPath = join("public", brandLogoSrc.replace(/^\/+/, ""));
 const launchBrandAudioSrc = "/audio/brand/launch-brand-shout.wav";

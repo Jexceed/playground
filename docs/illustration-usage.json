@@ -1,0 +1,1774 @@
+{
+  "atlasCount": 11,
+  "registeredFrameCount": 44,
+  "usedFrameCount": 44,
+  "unusedFrames": [],
+  "problems": [],
+  "atlases": [
+    {
+      "src": "/images/items/exploration-art/cat-plant-story.png",
+      "frames": [
+        {
+          "key": "catPlant1",
+          "src": "/images/items/exploration-art/cat-plant-story.png",
+          "index": 0,
+          "columns": 2,
+          "rows": 2,
+          "alt": "小猫收到种子",
+          "references": [
+            {
+              "activityId": "explore-story-sequence-expression-3",
+              "family": "E03",
+              "gameId": "explore-story-sequence-expression",
+              "groupTitle": "故事接起来",
+              "world": "language",
+              "round": 3,
+              "surface": "token",
+              "label": "小猫收到种子"
+            },
+            {
+              "activityId": "explore-story-sequence-expression-6",
+              "family": "E03",
+              "gameId": "explore-story-sequence-expression",
+              "groupTitle": "故事接起来",
+              "world": "language",
+              "round": 6,
+              "surface": "token",
+              "label": "小猫收到种子"
+            },
+            {
+              "activityId": "explore-story-sequence-expression-9",
+              "family": "E03",
+              "gameId": "explore-story-sequence-expression",
+              "groupTitle": "故事接起来",
+              "world": "language",
+              "round": 9,
+              "surface": "story",
+              "label": "小猫收到种子"
+            }
+          ]
+        },
+        {
+          "key": "catPlant2",
+          "src": "/images/items/exploration-art/cat-plant-story.png",
+          "index": 1,
+          "columns": 2,
+          "rows": 2,
+          "alt": "小猫把种子种进土里",
+          "references": [
+            {
+              "activityId": "explore-story-sequence-expression-3",
+              "family": "E03",
+              "gameId": "explore-story-sequence-expression",
+              "groupTitle": "故事接起来",
+              "world": "language",
+              "round": 3,
+              "surface": "token",
+              "label": "把种子种进土里"
+            },
+            {
+              "activityId": "explore-story-sequence-expression-6",
+              "family": "E03",
+              "gameId": "explore-story-sequence-expression",
+              "groupTitle": "故事接起来",
+              "world": "language",
+              "round": 6,
+              "surface": "token",
+              "label": "把种子种进土里"
+            },
+            {
+              "activityId": "explore-story-sequence-expression-9",
+              "family": "E03",
+              "gameId": "explore-story-sequence-expression",
+              "groupTitle": "故事接起来",
+              "world": "language",
+              "round": 9,
+              "surface": "story",
+              "label": "小猫把种子种进土里"
+            }
+          ]
+        },
+        {
+          "key": "catPlant3",
+          "src": "/images/items/exploration-art/cat-plant-story.png",
+          "index": 2,
+          "columns": 2,
+          "rows": 2,
+          "alt": "小猫按记录照顾小苗",
+          "references": [
+            {
+              "activityId": "explore-story-sequence-expression-3",
+              "family": "E03",
+              "gameId": "explore-story-sequence-expression",
+              "groupTitle": "故事接起来",
+              "world": "language",
+              "round": 3,
+              "surface": "token",
+              "label": "按记录照顾小苗"
+            },
+            {
+              "activityId": "explore-story-sequence-expression-6",
+              "family": "E03",
+              "gameId": "explore-story-sequence-expression",
+              "groupTitle": "故事接起来",
+              "world": "language",
+              "round": 6,
+              "surface": "token",
+              "label": "按记录照顾小苗"
+            },
+            {
+              "activityId": "explore-story-sequence-expression-9",
+              "family": "E03",
+              "gameId": "explore-story-sequence-expression",
+              "groupTitle": "故事接起来",
+              "world": "language",
+              "round": 9,
+              "surface": "story",
+              "label": "小猫按记录照顾小苗"
+            }
+          ]
+        },
+        {
+          "key": "catPlant4",
+          "src": "/images/items/exploration-art/cat-plant-story.png",
+          "index": 3,
+          "columns": 2,
+          "rows": 2,
+          "alt": "小猫观察新叶片",
+          "references": [
+            {
+              "activityId": "explore-story-sequence-expression-6",
+              "family": "E03",
+              "gameId": "explore-story-sequence-expression",
+              "groupTitle": "故事接起来",
+              "world": "language",
+              "round": 6,
+              "surface": "token",
+              "label": "小猫观察新叶片"
+            },
+            {
+              "activityId": "explore-story-sequence-expression-9",
+              "family": "E03",
+              "gameId": "explore-story-sequence-expression",
+              "groupTitle": "故事接起来",
+              "world": "language",
+              "round": 9,
+              "surface": "story",
+              "label": "小猫观察新叶片"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "src": "/images/items/exploration-art/bear-tower-story.png",
+      "frames": [
+        {
+          "key": "bearTower1",
+          "src": "/images/items/exploration-art/bear-tower-story.png",
+          "index": 0,
+          "columns": 2,
+          "rows": 2,
+          "alt": "小熊准备木块",
+          "references": [
+            {
+              "activityId": "explore-story-sequence-expression-2",
+              "family": "E03",
+              "gameId": "explore-story-sequence-expression",
+              "groupTitle": "故事接起来",
+              "world": "language",
+              "round": 2,
+              "surface": "token",
+              "label": "小熊准备木块"
+            },
+            {
+              "activityId": "explore-story-sequence-expression-5",
+              "family": "E03",
+              "gameId": "explore-story-sequence-expression",
+              "groupTitle": "故事接起来",
+              "world": "language",
+              "round": 5,
+              "surface": "token",
+              "label": "小熊准备木块"
+            },
+            {
+              "activityId": "explore-story-sequence-expression-8",
+              "family": "E03",
+              "gameId": "explore-story-sequence-expression",
+              "groupTitle": "故事接起来",
+              "world": "language",
+              "round": 8,
+              "surface": "story",
+              "label": "小熊准备木块"
+            }
+          ]
+        },
+        {
+          "key": "bearTower2",
+          "src": "/images/items/exploration-art/bear-tower-story.png",
+          "index": 1,
+          "columns": 2,
+          "rows": 2,
+          "alt": "小熊搭起高塔",
+          "references": [
+            {
+              "activityId": "explore-story-sequence-expression-2",
+              "family": "E03",
+              "gameId": "explore-story-sequence-expression",
+              "groupTitle": "故事接起来",
+              "world": "language",
+              "round": 2,
+              "surface": "token",
+              "label": "小熊搭起高塔"
+            },
+            {
+              "activityId": "explore-story-sequence-expression-5",
+              "family": "E03",
+              "gameId": "explore-story-sequence-expression",
+              "groupTitle": "故事接起来",
+              "world": "language",
+              "round": 5,
+              "surface": "token",
+              "label": "小熊搭起高塔"
+            },
+            {
+              "activityId": "explore-story-sequence-expression-8",
+              "family": "E03",
+              "gameId": "explore-story-sequence-expression",
+              "groupTitle": "故事接起来",
+              "world": "language",
+              "round": 8,
+              "surface": "story",
+              "label": "小熊搭起高塔"
+            }
+          ]
+        },
+        {
+          "key": "bearTower3",
+          "src": "/images/items/exploration-art/bear-tower-story.png",
+          "index": 2,
+          "columns": 2,
+          "rows": 2,
+          "alt": "球碰倒了高塔",
+          "references": [
+            {
+              "activityId": "explore-story-sequence-expression-2",
+              "family": "E03",
+              "gameId": "explore-story-sequence-expression",
+              "groupTitle": "故事接起来",
+              "world": "language",
+              "round": 2,
+              "surface": "token",
+              "label": "球碰倒了高塔"
+            },
+            {
+              "activityId": "explore-story-sequence-expression-5",
+              "family": "E03",
+              "gameId": "explore-story-sequence-expression",
+              "groupTitle": "故事接起来",
+              "world": "language",
+              "round": 5,
+              "surface": "token",
+              "label": "球碰倒了高塔"
+            },
+            {
+              "activityId": "explore-story-sequence-expression-8",
+              "family": "E03",
+              "gameId": "explore-story-sequence-expression",
+              "groupTitle": "故事接起来",
+              "world": "language",
+              "round": 8,
+              "surface": "story",
+              "label": "球碰倒了高塔"
+            }
+          ]
+        },
+        {
+          "key": "bearTower4",
+          "src": "/images/items/exploration-art/bear-tower-story.png",
+          "index": 3,
+          "columns": 2,
+          "rows": 2,
+          "alt": "小熊换宽底座重搭",
+          "references": [
+            {
+              "activityId": "explore-story-sequence-expression-5",
+              "family": "E03",
+              "gameId": "explore-story-sequence-expression",
+              "groupTitle": "故事接起来",
+              "world": "language",
+              "round": 5,
+              "surface": "token",
+              "label": "小熊换宽底座重搭"
+            },
+            {
+              "activityId": "explore-story-sequence-expression-8",
+              "family": "E03",
+              "gameId": "explore-story-sequence-expression",
+              "groupTitle": "故事接起来",
+              "world": "language",
+              "round": 8,
+              "surface": "story",
+              "label": "小熊换宽底座重搭"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "src": "/images/items/exploration-art/rain-story.png",
+      "frames": [
+        {
+          "key": "rain1",
+          "src": "/images/items/exploration-art/rain-story.png",
+          "index": 0,
+          "columns": 2,
+          "rows": 2,
+          "alt": "天上积起乌云",
+          "references": [
+            {
+              "activityId": "explore-story-sequence-expression-1",
+              "family": "E03",
+              "gameId": "explore-story-sequence-expression",
+              "groupTitle": "故事接起来",
+              "world": "language",
+              "round": 1,
+              "surface": "token",
+              "label": "天上积起乌云"
+            },
+            {
+              "activityId": "explore-story-sequence-expression-4",
+              "family": "E03",
+              "gameId": "explore-story-sequence-expression",
+              "groupTitle": "故事接起来",
+              "world": "language",
+              "round": 4,
+              "surface": "token",
+              "label": "天上积起乌云"
+            },
+            {
+              "activityId": "explore-story-sequence-expression-7",
+              "family": "E03",
+              "gameId": "explore-story-sequence-expression",
+              "groupTitle": "故事接起来",
+              "world": "language",
+              "round": 7,
+              "surface": "story",
+              "label": "天上积起乌云"
+            }
+          ]
+        },
+        {
+          "key": "rain2",
+          "src": "/images/items/exploration-art/rain-story.png",
+          "index": 1,
+          "columns": 2,
+          "rows": 2,
+          "alt": "开始下雨",
+          "references": [
+            {
+              "activityId": "explore-story-sequence-expression-1",
+              "family": "E03",
+              "gameId": "explore-story-sequence-expression",
+              "groupTitle": "故事接起来",
+              "world": "language",
+              "round": 1,
+              "surface": "token",
+              "label": "开始下雨"
+            },
+            {
+              "activityId": "explore-story-sequence-expression-4",
+              "family": "E03",
+              "gameId": "explore-story-sequence-expression",
+              "groupTitle": "故事接起来",
+              "world": "language",
+              "round": 4,
+              "surface": "token",
+              "label": "开始下雨"
+            },
+            {
+              "activityId": "explore-story-sequence-expression-7",
+              "family": "E03",
+              "gameId": "explore-story-sequence-expression",
+              "groupTitle": "故事接起来",
+              "world": "language",
+              "round": 7,
+              "surface": "story",
+              "label": "开始下雨"
+            }
+          ]
+        },
+        {
+          "key": "rain3",
+          "src": "/images/items/exploration-art/rain-story.png",
+          "index": 2,
+          "columns": 2,
+          "rows": 2,
+          "alt": "地面留下水洼",
+          "references": [
+            {
+              "activityId": "explore-story-sequence-expression-1",
+              "family": "E03",
+              "gameId": "explore-story-sequence-expression",
+              "groupTitle": "故事接起来",
+              "world": "language",
+              "round": 1,
+              "surface": "token",
+              "label": "地面留下水洼"
+            },
+            {
+              "activityId": "explore-story-sequence-expression-4",
+              "family": "E03",
+              "gameId": "explore-story-sequence-expression",
+              "groupTitle": "故事接起来",
+              "world": "language",
+              "round": 4,
+              "surface": "token",
+              "label": "地面留下水洼"
+            },
+            {
+              "activityId": "explore-story-sequence-expression-7",
+              "family": "E03",
+              "gameId": "explore-story-sequence-expression",
+              "groupTitle": "故事接起来",
+              "world": "language",
+              "round": 7,
+              "surface": "story",
+              "label": "地面留下水洼"
+            }
+          ]
+        },
+        {
+          "key": "rain4",
+          "src": "/images/items/exploration-art/rain-story.png",
+          "index": 3,
+          "columns": 2,
+          "rows": 2,
+          "alt": "小朋友穿雨靴出门",
+          "references": [
+            {
+              "activityId": "explore-story-sequence-expression-4",
+              "family": "E03",
+              "gameId": "explore-story-sequence-expression",
+              "groupTitle": "故事接起来",
+              "world": "language",
+              "round": 4,
+              "surface": "token",
+              "label": "小朋友穿雨靴出门"
+            },
+            {
+              "activityId": "explore-story-sequence-expression-7",
+              "family": "E03",
+              "gameId": "explore-story-sequence-expression",
+              "groupTitle": "故事接起来",
+              "world": "language",
+              "round": 7,
+              "surface": "story",
+              "label": "小朋友穿雨靴出门"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "src": "/images/items/exploration-art/plant-growth.png",
+      "frames": [
+        {
+          "key": "plantGrowth1",
+          "src": "/images/items/exploration-art/plant-growth.png",
+          "index": 0,
+          "columns": 2,
+          "rows": 2,
+          "alt": "种子在土里",
+          "references": [
+            {
+              "activityId": "explore-nature-growth-1",
+              "family": "P02",
+              "gameId": "explore-nature-growth",
+              "groupTitle": "变化观察册",
+              "world": "life",
+              "round": 1,
+              "surface": "token",
+              "label": "种子在土里"
+            },
+            {
+              "activityId": "explore-nature-growth-4",
+              "family": "P02",
+              "gameId": "explore-nature-growth",
+              "groupTitle": "变化观察册",
+              "world": "life",
+              "round": 4,
+              "surface": "token",
+              "label": "种子在土里"
+            },
+            {
+              "activityId": "explore-nature-growth-7",
+              "family": "P02",
+              "gameId": "explore-nature-growth",
+              "groupTitle": "变化观察册",
+              "world": "life",
+              "round": 7,
+              "surface": "story",
+              "label": "种子在土里"
+            }
+          ]
+        },
+        {
+          "key": "plantGrowth2",
+          "src": "/images/items/exploration-art/plant-growth.png",
+          "index": 1,
+          "columns": 2,
+          "rows": 2,
+          "alt": "先长出根",
+          "references": [
+            {
+              "activityId": "explore-nature-growth-4",
+              "family": "P02",
+              "gameId": "explore-nature-growth",
+              "groupTitle": "变化观察册",
+              "world": "life",
+              "round": 4,
+              "surface": "token",
+              "label": "先长出根"
+            },
+            {
+              "activityId": "explore-nature-growth-7",
+              "family": "P02",
+              "gameId": "explore-nature-growth",
+              "groupTitle": "变化观察册",
+              "world": "life",
+              "round": 7,
+              "surface": "story",
+              "label": "先长出根"
+            }
+          ]
+        },
+        {
+          "key": "plantGrowth3",
+          "src": "/images/items/exploration-art/plant-growth.png",
+          "index": 2,
+          "columns": 2,
+          "rows": 2,
+          "alt": "小芽出土",
+          "references": [
+            {
+              "activityId": "explore-nature-growth-1",
+              "family": "P02",
+              "gameId": "explore-nature-growth",
+              "groupTitle": "变化观察册",
+              "world": "life",
+              "round": 1,
+              "surface": "token",
+              "label": "小芽出土"
+            },
+            {
+              "activityId": "explore-nature-growth-4",
+              "family": "P02",
+              "gameId": "explore-nature-growth",
+              "groupTitle": "变化观察册",
+              "world": "life",
+              "round": 4,
+              "surface": "token",
+              "label": "小芽出土"
+            },
+            {
+              "activityId": "explore-nature-growth-7",
+              "family": "P02",
+              "gameId": "explore-nature-growth",
+              "groupTitle": "变化观察册",
+              "world": "life",
+              "round": 7,
+              "surface": "story",
+              "label": "小芽出土"
+            }
+          ]
+        },
+        {
+          "key": "plantGrowth4",
+          "src": "/images/items/exploration-art/plant-growth.png",
+          "index": 3,
+          "columns": 2,
+          "rows": 2,
+          "alt": "叶片展开",
+          "references": [
+            {
+              "activityId": "explore-nature-growth-1",
+              "family": "P02",
+              "gameId": "explore-nature-growth",
+              "groupTitle": "变化观察册",
+              "world": "life",
+              "round": 1,
+              "surface": "token",
+              "label": "叶片展开"
+            },
+            {
+              "activityId": "explore-nature-growth-4",
+              "family": "P02",
+              "gameId": "explore-nature-growth",
+              "groupTitle": "变化观察册",
+              "world": "life",
+              "round": 4,
+              "surface": "token",
+              "label": "叶片展开"
+            },
+            {
+              "activityId": "explore-nature-growth-7",
+              "family": "P02",
+              "gameId": "explore-nature-growth",
+              "groupTitle": "变化观察册",
+              "world": "life",
+              "round": 7,
+              "surface": "story",
+              "label": "叶片展开"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "src": "/images/items/exploration-art/butterfly-growth.png",
+      "frames": [
+        {
+          "key": "butterflyGrowth1",
+          "src": "/images/items/exploration-art/butterfly-growth.png",
+          "index": 0,
+          "columns": 2,
+          "rows": 2,
+          "alt": "毛毛虫吃叶子",
+          "references": [
+            {
+              "activityId": "explore-nature-growth-2",
+              "family": "P02",
+              "gameId": "explore-nature-growth",
+              "groupTitle": "变化观察册",
+              "world": "life",
+              "round": 2,
+              "surface": "token",
+              "label": "毛毛虫吃叶子"
+            },
+            {
+              "activityId": "explore-nature-growth-5",
+              "family": "P02",
+              "gameId": "explore-nature-growth",
+              "groupTitle": "变化观察册",
+              "world": "life",
+              "round": 5,
+              "surface": "token",
+              "label": "毛毛虫吃叶子"
+            },
+            {
+              "activityId": "explore-nature-growth-8",
+              "family": "P02",
+              "gameId": "explore-nature-growth",
+              "groupTitle": "变化观察册",
+              "world": "life",
+              "round": 8,
+              "surface": "story",
+              "label": "毛毛虫吃叶子"
+            }
+          ]
+        },
+        {
+          "key": "butterflyGrowth2",
+          "src": "/images/items/exploration-art/butterfly-growth.png",
+          "index": 1,
+          "columns": 2,
+          "rows": 2,
+          "alt": "形成蛹",
+          "references": [
+            {
+              "activityId": "explore-nature-growth-5",
+              "family": "P02",
+              "gameId": "explore-nature-growth",
+              "groupTitle": "变化观察册",
+              "world": "life",
+              "round": 5,
+              "surface": "token",
+              "label": "形成蛹"
+            },
+            {
+              "activityId": "explore-nature-growth-8",
+              "family": "P02",
+              "gameId": "explore-nature-growth",
+              "groupTitle": "变化观察册",
+              "world": "life",
+              "round": 8,
+              "surface": "story",
+              "label": "形成蛹"
+            }
+          ]
+        },
+        {
+          "key": "butterflyGrowth3",
+          "src": "/images/items/exploration-art/butterfly-growth.png",
+          "index": 2,
+          "columns": 2,
+          "rows": 2,
+          "alt": "蝴蝶出来",
+          "references": [
+            {
+              "activityId": "explore-nature-growth-2",
+              "family": "P02",
+              "gameId": "explore-nature-growth",
+              "groupTitle": "变化观察册",
+              "world": "life",
+              "round": 2,
+              "surface": "token",
+              "label": "蝴蝶出来"
+            },
+            {
+              "activityId": "explore-nature-growth-5",
+              "family": "P02",
+              "gameId": "explore-nature-growth",
+              "groupTitle": "变化观察册",
+              "world": "life",
+              "round": 5,
+              "surface": "token",
+              "label": "蝴蝶出来"
+            },
+            {
+              "activityId": "explore-nature-growth-8",
+              "family": "P02",
+              "gameId": "explore-nature-growth",
+              "groupTitle": "变化观察册",
+              "world": "life",
+              "round": 8,
+              "surface": "story",
+              "label": "蝴蝶出来"
+            }
+          ]
+        },
+        {
+          "key": "butterflyGrowth4",
+          "src": "/images/items/exploration-art/butterfly-growth.png",
+          "index": 3,
+          "columns": 2,
+          "rows": 2,
+          "alt": "蝴蝶展开翅膀",
+          "references": [
+            {
+              "activityId": "explore-nature-growth-2",
+              "family": "P02",
+              "gameId": "explore-nature-growth",
+              "groupTitle": "变化观察册",
+              "world": "life",
+              "round": 2,
+              "surface": "token",
+              "label": "蝴蝶展开翅膀"
+            },
+            {
+              "activityId": "explore-nature-growth-5",
+              "family": "P02",
+              "gameId": "explore-nature-growth",
+              "groupTitle": "变化观察册",
+              "world": "life",
+              "round": 5,
+              "surface": "token",
+              "label": "蝴蝶展开翅膀"
+            },
+            {
+              "activityId": "explore-nature-growth-8",
+              "family": "P02",
+              "gameId": "explore-nature-growth",
+              "groupTitle": "变化观察册",
+              "world": "life",
+              "round": 8,
+              "surface": "story",
+              "label": "蝴蝶展开翅膀"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "src": "/images/items/exploration-art/frog-growth.png",
+      "frames": [
+        {
+          "key": "frogGrowth1",
+          "src": "/images/items/exploration-art/frog-growth.png",
+          "index": 0,
+          "columns": 2,
+          "rows": 2,
+          "alt": "水里有卵",
+          "references": [
+            {
+              "activityId": "explore-nature-growth-3",
+              "family": "P02",
+              "gameId": "explore-nature-growth",
+              "groupTitle": "变化观察册",
+              "world": "life",
+              "round": 3,
+              "surface": "token",
+              "label": "水里有卵"
+            },
+            {
+              "activityId": "explore-nature-growth-6",
+              "family": "P02",
+              "gameId": "explore-nature-growth",
+              "groupTitle": "变化观察册",
+              "world": "life",
+              "round": 6,
+              "surface": "token",
+              "label": "水里有卵"
+            },
+            {
+              "activityId": "explore-nature-growth-9",
+              "family": "P02",
+              "gameId": "explore-nature-growth",
+              "groupTitle": "变化观察册",
+              "world": "life",
+              "round": 9,
+              "surface": "story",
+              "label": "水里有卵"
+            }
+          ]
+        },
+        {
+          "key": "frogGrowth2",
+          "src": "/images/items/exploration-art/frog-growth.png",
+          "index": 1,
+          "columns": 2,
+          "rows": 2,
+          "alt": "孵出蝌蚪",
+          "references": [
+            {
+              "activityId": "explore-nature-growth-6",
+              "family": "P02",
+              "gameId": "explore-nature-growth",
+              "groupTitle": "变化观察册",
+              "world": "life",
+              "round": 6,
+              "surface": "token",
+              "label": "孵出蝌蚪"
+            },
+            {
+              "activityId": "explore-nature-growth-9",
+              "family": "P02",
+              "gameId": "explore-nature-growth",
+              "groupTitle": "变化观察册",
+              "world": "life",
+              "round": 9,
+              "surface": "story",
+              "label": "孵出蝌蚪"
+            }
+          ]
+        },
+        {
+          "key": "frogGrowth3",
+          "src": "/images/items/exploration-art/frog-growth.png",
+          "index": 2,
+          "columns": 2,
+          "rows": 2,
+          "alt": "蝌蚪长出后腿",
+          "references": [
+            {
+              "activityId": "explore-nature-growth-3",
+              "family": "P02",
+              "gameId": "explore-nature-growth",
+              "groupTitle": "变化观察册",
+              "world": "life",
+              "round": 3,
+              "surface": "token",
+              "label": "蝌蚪长出后腿"
+            },
+            {
+              "activityId": "explore-nature-growth-6",
+              "family": "P02",
+              "gameId": "explore-nature-growth",
+              "groupTitle": "变化观察册",
+              "world": "life",
+              "round": 6,
+              "surface": "token",
+              "label": "蝌蚪长出后腿"
+            },
+            {
+              "activityId": "explore-nature-growth-9",
+              "family": "P02",
+              "gameId": "explore-nature-growth",
+              "groupTitle": "变化观察册",
+              "world": "life",
+              "round": 9,
+              "surface": "story",
+              "label": "蝌蚪长出后腿"
+            }
+          ]
+        },
+        {
+          "key": "frogGrowth4",
+          "src": "/images/items/exploration-art/frog-growth.png",
+          "index": 3,
+          "columns": 2,
+          "rows": 2,
+          "alt": "小青蛙尾巴变短",
+          "references": [
+            {
+              "activityId": "explore-nature-growth-3",
+              "family": "P02",
+              "gameId": "explore-nature-growth",
+              "groupTitle": "变化观察册",
+              "world": "life",
+              "round": 3,
+              "surface": "token",
+              "label": "小青蛙尾巴变短"
+            },
+            {
+              "activityId": "explore-nature-growth-6",
+              "family": "P02",
+              "gameId": "explore-nature-growth",
+              "groupTitle": "变化观察册",
+              "world": "life",
+              "round": 6,
+              "surface": "token",
+              "label": "小青蛙尾巴变短"
+            },
+            {
+              "activityId": "explore-nature-growth-9",
+              "family": "P02",
+              "gameId": "explore-nature-growth",
+              "groupTitle": "变化观察册",
+              "world": "life",
+              "round": 9,
+              "surface": "story",
+              "label": "小青蛙尾巴变短"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "src": "/images/items/exploration-art/everyday-tools.png",
+      "frames": [
+        {
+          "key": "tools1",
+          "src": "/images/items/exploration-art/everyday-tools.png",
+          "index": 0,
+          "columns": 2,
+          "rows": 2,
+          "alt": "雨伞",
+          "references": [
+            {
+              "activityId": "explore-everyday-classification-2",
+              "family": "P01",
+              "gameId": "explore-everyday-classification",
+              "groupTitle": "用品放对地方",
+              "world": "life",
+              "round": 2,
+              "surface": "token",
+              "label": "雨伞"
+            },
+            {
+              "activityId": "explore-everyday-classification-5",
+              "family": "P01",
+              "gameId": "explore-everyday-classification",
+              "groupTitle": "用品放对地方",
+              "world": "life",
+              "round": 5,
+              "surface": "token",
+              "label": "雨伞"
+            }
+          ]
+        },
+        {
+          "key": "tools2",
+          "src": "/images/items/exploration-art/everyday-tools.png",
+          "index": 1,
+          "columns": 2,
+          "rows": 2,
+          "alt": "毛巾",
+          "references": [
+            {
+              "activityId": "explore-everyday-classification-4",
+              "family": "P01",
+              "gameId": "explore-everyday-classification",
+              "groupTitle": "用品放对地方",
+              "world": "life",
+              "round": 4,
+              "surface": "token",
+              "label": "毛巾"
+            },
+            {
+              "activityId": "explore-science-experiments-1",
+              "family": "P03",
+              "gameId": "explore-science-experiments",
+              "groupTitle": "一起做小实验",
+              "world": "life",
+              "round": 1,
+              "surface": "material",
+              "label": "擦水布"
+            }
+          ]
+        },
+        {
+          "key": "tools3",
+          "src": "/images/items/exploration-art/everyday-tools.png",
+          "index": 2,
+          "columns": 2,
+          "rows": 2,
+          "alt": "圆头剪刀",
+          "references": [
+            {
+              "activityId": "explore-fold-cut-1",
+              "family": "G15",
+              "gameId": "explore-fold-cut",
+              "groupTitle": "折开会怎样",
+              "world": "graphic",
+              "round": 1,
+              "surface": "material",
+              "label": "圆头儿童剪刀（由家长示范剪口）"
+            },
+            {
+              "activityId": "explore-fold-cut-2",
+              "family": "G15",
+              "gameId": "explore-fold-cut",
+              "groupTitle": "折开会怎样",
+              "world": "graphic",
+              "round": 2,
+              "surface": "material",
+              "label": "圆头儿童剪刀（由家长示范剪口）"
+            },
+            {
+              "activityId": "explore-fold-cut-3",
+              "family": "G15",
+              "gameId": "explore-fold-cut",
+              "groupTitle": "折开会怎样",
+              "world": "graphic",
+              "round": 3,
+              "surface": "material",
+              "label": "圆头儿童剪刀（由家长示范剪口）"
+            },
+            {
+              "activityId": "explore-fine-motor-action-1",
+              "family": "P06",
+              "gameId": "explore-fine-motor-action",
+              "groupTitle": "小手和身体挑战",
+              "world": "life",
+              "round": 1,
+              "surface": "material",
+              "label": "圆头儿童剪刀，由家长陪同操作"
+            }
+          ]
+        },
+        {
+          "key": "tools4",
+          "src": "/images/items/exploration-art/everyday-tools.png",
+          "index": 3,
+          "columns": 2,
+          "rows": 2,
+          "alt": "颜料和画笔",
+          "references": [
+            {
+              "activityId": "explore-science-experiments-2",
+              "family": "P03",
+              "gameId": "explore-science-experiments",
+              "groupTitle": "一起做小实验",
+              "world": "life",
+              "round": 2,
+              "surface": "material",
+              "label": "可水洗颜料"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "src": "/images/items/exploration-art/fruit-salad-steps.png",
+      "frames": [
+        {
+          "key": "fruitSalad1",
+          "src": "/images/items/exploration-art/fruit-salad-steps.png",
+          "index": 0,
+          "columns": 2,
+          "rows": 2,
+          "alt": "洗净水果",
+          "references": [
+            {
+              "activityId": "explore-planning-repair-3",
+              "family": "L06",
+              "gameId": "explore-planning-repair",
+              "groupTitle": "先后有讲究",
+              "world": "logic",
+              "round": 3,
+              "surface": "token",
+              "label": "洗净水果"
+            },
+            {
+              "activityId": "explore-planning-repair-6",
+              "family": "L06",
+              "gameId": "explore-planning-repair",
+              "groupTitle": "先后有讲究",
+              "world": "logic",
+              "round": 6,
+              "surface": "token",
+              "label": "洗净水果"
+            },
+            {
+              "activityId": "explore-planning-repair-9",
+              "family": "L06",
+              "gameId": "explore-planning-repair",
+              "groupTitle": "先后有讲究",
+              "world": "logic",
+              "round": 9,
+              "surface": "token",
+              "label": "洗净水果"
+            },
+            {
+              "activityId": "explore-planning-repair-9",
+              "family": "L06",
+              "gameId": "explore-planning-repair",
+              "groupTitle": "先后有讲究",
+              "world": "logic",
+              "round": 9,
+              "surface": "evidence",
+              "label": "洗净水果"
+            }
+          ]
+        },
+        {
+          "key": "fruitSalad2",
+          "src": "/images/items/exploration-art/fruit-salad-steps.png",
+          "index": 1,
+          "columns": 2,
+          "rows": 2,
+          "alt": "把水果切块",
+          "references": [
+            {
+              "activityId": "explore-planning-repair-3",
+              "family": "L06",
+              "gameId": "explore-planning-repair",
+              "groupTitle": "先后有讲究",
+              "world": "logic",
+              "round": 3,
+              "surface": "token",
+              "label": "把水果切块"
+            },
+            {
+              "activityId": "explore-planning-repair-6",
+              "family": "L06",
+              "gameId": "explore-planning-repair",
+              "groupTitle": "先后有讲究",
+              "world": "logic",
+              "round": 6,
+              "surface": "token",
+              "label": "把水果切块"
+            },
+            {
+              "activityId": "explore-planning-repair-9",
+              "family": "L06",
+              "gameId": "explore-planning-repair",
+              "groupTitle": "先后有讲究",
+              "world": "logic",
+              "round": 9,
+              "surface": "token",
+              "label": "把水果切块"
+            },
+            {
+              "activityId": "explore-planning-repair-9",
+              "family": "L06",
+              "gameId": "explore-planning-repair",
+              "groupTitle": "先后有讲究",
+              "world": "logic",
+              "round": 9,
+              "surface": "evidence",
+              "label": "把水果切块"
+            }
+          ]
+        },
+        {
+          "key": "fruitSalad3",
+          "src": "/images/items/exploration-art/fruit-salad-steps.png",
+          "index": 2,
+          "columns": 2,
+          "rows": 2,
+          "alt": "把果块装碗",
+          "references": [
+            {
+              "activityId": "explore-planning-repair-3",
+              "family": "L06",
+              "gameId": "explore-planning-repair",
+              "groupTitle": "先后有讲究",
+              "world": "logic",
+              "round": 3,
+              "surface": "token",
+              "label": "把果块装碗"
+            },
+            {
+              "activityId": "explore-planning-repair-6",
+              "family": "L06",
+              "gameId": "explore-planning-repair",
+              "groupTitle": "先后有讲究",
+              "world": "logic",
+              "round": 6,
+              "surface": "token",
+              "label": "把果块装碗"
+            },
+            {
+              "activityId": "explore-planning-repair-9",
+              "family": "L06",
+              "gameId": "explore-planning-repair",
+              "groupTitle": "先后有讲究",
+              "world": "logic",
+              "round": 9,
+              "surface": "token",
+              "label": "把果块装碗"
+            },
+            {
+              "activityId": "explore-planning-repair-9",
+              "family": "L06",
+              "gameId": "explore-planning-repair",
+              "groupTitle": "先后有讲究",
+              "world": "logic",
+              "round": 9,
+              "surface": "evidence",
+              "label": "把果块装碗"
+            }
+          ]
+        },
+        {
+          "key": "fruitSalad4",
+          "src": "/images/items/exploration-art/fruit-salad-steps.png",
+          "index": 3,
+          "columns": 2,
+          "rows": 2,
+          "alt": "一起品尝",
+          "references": [
+            {
+              "activityId": "explore-planning-repair-6",
+              "family": "L06",
+              "gameId": "explore-planning-repair",
+              "groupTitle": "先后有讲究",
+              "world": "logic",
+              "round": 6,
+              "surface": "token",
+              "label": "一起品尝"
+            },
+            {
+              "activityId": "explore-planning-repair-9",
+              "family": "L06",
+              "gameId": "explore-planning-repair",
+              "groupTitle": "先后有讲究",
+              "world": "logic",
+              "round": 9,
+              "surface": "token",
+              "label": "一起品尝"
+            },
+            {
+              "activityId": "explore-planning-repair-9",
+              "family": "L06",
+              "gameId": "explore-planning-repair",
+              "groupTitle": "先后有讲究",
+              "world": "logic",
+              "round": 9,
+              "surface": "evidence",
+              "label": "一起品尝"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "src": "/images/items/exploration-art/painting-steps.png",
+      "frames": [
+        {
+          "key": "painting1",
+          "src": "/images/items/exploration-art/painting-steps.png",
+          "index": 0,
+          "columns": 2,
+          "rows": 2,
+          "alt": "准备画纸",
+          "references": [
+            {
+              "activityId": "explore-planning-repair-2",
+              "family": "L06",
+              "gameId": "explore-planning-repair",
+              "groupTitle": "先后有讲究",
+              "world": "logic",
+              "round": 2,
+              "surface": "token",
+              "label": "准备画纸"
+            },
+            {
+              "activityId": "explore-planning-repair-5",
+              "family": "L06",
+              "gameId": "explore-planning-repair",
+              "groupTitle": "先后有讲究",
+              "world": "logic",
+              "round": 5,
+              "surface": "token",
+              "label": "准备画纸"
+            },
+            {
+              "activityId": "explore-planning-repair-8",
+              "family": "L06",
+              "gameId": "explore-planning-repair",
+              "groupTitle": "先后有讲究",
+              "world": "logic",
+              "round": 8,
+              "surface": "token",
+              "label": "准备画纸"
+            },
+            {
+              "activityId": "explore-planning-repair-8",
+              "family": "L06",
+              "gameId": "explore-planning-repair",
+              "groupTitle": "先后有讲究",
+              "world": "logic",
+              "round": 8,
+              "surface": "evidence",
+              "label": "准备画纸"
+            }
+          ]
+        },
+        {
+          "key": "painting2",
+          "src": "/images/items/exploration-art/painting-steps.png",
+          "index": 1,
+          "columns": 2,
+          "rows": 2,
+          "alt": "画出轮廓",
+          "references": [
+            {
+              "activityId": "explore-planning-repair-2",
+              "family": "L06",
+              "gameId": "explore-planning-repair",
+              "groupTitle": "先后有讲究",
+              "world": "logic",
+              "round": 2,
+              "surface": "token",
+              "label": "画出轮廓"
+            },
+            {
+              "activityId": "explore-planning-repair-5",
+              "family": "L06",
+              "gameId": "explore-planning-repair",
+              "groupTitle": "先后有讲究",
+              "world": "logic",
+              "round": 5,
+              "surface": "token",
+              "label": "画出轮廓"
+            },
+            {
+              "activityId": "explore-planning-repair-8",
+              "family": "L06",
+              "gameId": "explore-planning-repair",
+              "groupTitle": "先后有讲究",
+              "world": "logic",
+              "round": 8,
+              "surface": "token",
+              "label": "画出轮廓"
+            },
+            {
+              "activityId": "explore-planning-repair-8",
+              "family": "L06",
+              "gameId": "explore-planning-repair",
+              "groupTitle": "先后有讲究",
+              "world": "logic",
+              "round": 8,
+              "surface": "evidence",
+              "label": "画出轮廓"
+            }
+          ]
+        },
+        {
+          "key": "painting3",
+          "src": "/images/items/exploration-art/painting-steps.png",
+          "index": 2,
+          "columns": 2,
+          "rows": 2,
+          "alt": "给画涂色",
+          "references": [
+            {
+              "activityId": "explore-planning-repair-2",
+              "family": "L06",
+              "gameId": "explore-planning-repair",
+              "groupTitle": "先后有讲究",
+              "world": "logic",
+              "round": 2,
+              "surface": "token",
+              "label": "给画涂色"
+            },
+            {
+              "activityId": "explore-planning-repair-5",
+              "family": "L06",
+              "gameId": "explore-planning-repair",
+              "groupTitle": "先后有讲究",
+              "world": "logic",
+              "round": 5,
+              "surface": "token",
+              "label": "给画涂色"
+            },
+            {
+              "activityId": "explore-planning-repair-8",
+              "family": "L06",
+              "gameId": "explore-planning-repair",
+              "groupTitle": "先后有讲究",
+              "world": "logic",
+              "round": 8,
+              "surface": "token",
+              "label": "给画涂色"
+            },
+            {
+              "activityId": "explore-planning-repair-8",
+              "family": "L06",
+              "gameId": "explore-planning-repair",
+              "groupTitle": "先后有讲究",
+              "world": "logic",
+              "round": 8,
+              "surface": "evidence",
+              "label": "给画涂色"
+            }
+          ]
+        },
+        {
+          "key": "painting4",
+          "src": "/images/items/exploration-art/painting-steps.png",
+          "index": 3,
+          "columns": 2,
+          "rows": 2,
+          "alt": "把画晾干",
+          "references": [
+            {
+              "activityId": "explore-planning-repair-5",
+              "family": "L06",
+              "gameId": "explore-planning-repair",
+              "groupTitle": "先后有讲究",
+              "world": "logic",
+              "round": 5,
+              "surface": "token",
+              "label": "把画晾干"
+            },
+            {
+              "activityId": "explore-planning-repair-8",
+              "family": "L06",
+              "gameId": "explore-planning-repair",
+              "groupTitle": "先后有讲究",
+              "world": "logic",
+              "round": 8,
+              "surface": "token",
+              "label": "把画晾干"
+            },
+            {
+              "activityId": "explore-planning-repair-8",
+              "family": "L06",
+              "gameId": "explore-planning-repair",
+              "groupTitle": "先后有讲究",
+              "world": "logic",
+              "round": 8,
+              "surface": "evidence",
+              "label": "把画晾干"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "src": "/images/items/exploration-art/planting-steps.png",
+      "frames": [
+        {
+          "key": "planting1",
+          "src": "/images/items/exploration-art/planting-steps.png",
+          "index": 0,
+          "columns": 2,
+          "rows": 2,
+          "alt": "取花盆",
+          "references": [
+            {
+              "activityId": "explore-planning-repair-1",
+              "family": "L06",
+              "gameId": "explore-planning-repair",
+              "groupTitle": "先后有讲究",
+              "world": "logic",
+              "round": 1,
+              "surface": "token",
+              "label": "取花盆"
+            },
+            {
+              "activityId": "explore-planning-repair-4",
+              "family": "L06",
+              "gameId": "explore-planning-repair",
+              "groupTitle": "先后有讲究",
+              "world": "logic",
+              "round": 4,
+              "surface": "token",
+              "label": "取花盆"
+            },
+            {
+              "activityId": "explore-planning-repair-7",
+              "family": "L06",
+              "gameId": "explore-planning-repair",
+              "groupTitle": "先后有讲究",
+              "world": "logic",
+              "round": 7,
+              "surface": "token",
+              "label": "取花盆"
+            },
+            {
+              "activityId": "explore-planning-repair-7",
+              "family": "L06",
+              "gameId": "explore-planning-repair",
+              "groupTitle": "先后有讲究",
+              "world": "logic",
+              "round": 7,
+              "surface": "evidence",
+              "label": "取花盆"
+            }
+          ]
+        },
+        {
+          "key": "planting2",
+          "src": "/images/items/exploration-art/planting-steps.png",
+          "index": 1,
+          "columns": 2,
+          "rows": 2,
+          "alt": "放土和种子",
+          "references": [
+            {
+              "activityId": "explore-planning-repair-1",
+              "family": "L06",
+              "gameId": "explore-planning-repair",
+              "groupTitle": "先后有讲究",
+              "world": "logic",
+              "round": 1,
+              "surface": "token",
+              "label": "放土和种子"
+            },
+            {
+              "activityId": "explore-planning-repair-4",
+              "family": "L06",
+              "gameId": "explore-planning-repair",
+              "groupTitle": "先后有讲究",
+              "world": "logic",
+              "round": 4,
+              "surface": "token",
+              "label": "放土和种子"
+            },
+            {
+              "activityId": "explore-planning-repair-7",
+              "family": "L06",
+              "gameId": "explore-planning-repair",
+              "groupTitle": "先后有讲究",
+              "world": "logic",
+              "round": 7,
+              "surface": "token",
+              "label": "放土和种子"
+            },
+            {
+              "activityId": "explore-planning-repair-7",
+              "family": "L06",
+              "gameId": "explore-planning-repair",
+              "groupTitle": "先后有讲究",
+              "world": "logic",
+              "round": 7,
+              "surface": "evidence",
+              "label": "放土和种子"
+            },
+            {
+              "activityId": "explore-story-recall-6",
+              "family": "A05",
+              "gameId": "explore-story-recall",
+              "groupTitle": "故事留在脑海里",
+              "world": "memory",
+              "round": 6,
+              "surface": "token",
+              "label": "把种子放进土里"
+            }
+          ]
+        },
+        {
+          "key": "planting3",
+          "src": "/images/items/exploration-art/planting-steps.png",
+          "index": 2,
+          "columns": 2,
+          "rows": 2,
+          "alt": "轻轻浇水",
+          "references": [
+            {
+              "activityId": "explore-planning-repair-1",
+              "family": "L06",
+              "gameId": "explore-planning-repair",
+              "groupTitle": "先后有讲究",
+              "world": "logic",
+              "round": 1,
+              "surface": "token",
+              "label": "轻轻浇水"
+            },
+            {
+              "activityId": "explore-planning-repair-4",
+              "family": "L06",
+              "gameId": "explore-planning-repair",
+              "groupTitle": "先后有讲究",
+              "world": "logic",
+              "round": 4,
+              "surface": "token",
+              "label": "轻轻浇水"
+            },
+            {
+              "activityId": "explore-planning-repair-7",
+              "family": "L06",
+              "gameId": "explore-planning-repair",
+              "groupTitle": "先后有讲究",
+              "world": "logic",
+              "round": 7,
+              "surface": "token",
+              "label": "轻轻浇水"
+            },
+            {
+              "activityId": "explore-planning-repair-7",
+              "family": "L06",
+              "gameId": "explore-planning-repair",
+              "groupTitle": "先后有讲究",
+              "world": "logic",
+              "round": 7,
+              "surface": "evidence",
+              "label": "轻轻浇水"
+            },
+            {
+              "activityId": "explore-story-recall-6",
+              "family": "A05",
+              "gameId": "explore-story-recall",
+              "groupTitle": "故事留在脑海里",
+              "world": "memory",
+              "round": 6,
+              "surface": "token",
+              "label": "给土浇水"
+            }
+          ]
+        },
+        {
+          "key": "planting4",
+          "src": "/images/items/exploration-art/planting-steps.png",
+          "index": 3,
+          "columns": 2,
+          "rows": 2,
+          "alt": "等待发芽",
+          "references": [
+            {
+              "activityId": "explore-planning-repair-4",
+              "family": "L06",
+              "gameId": "explore-planning-repair",
+              "groupTitle": "先后有讲究",
+              "world": "logic",
+              "round": 4,
+              "surface": "token",
+              "label": "等待发芽"
+            },
+            {
+              "activityId": "explore-planning-repair-7",
+              "family": "L06",
+              "gameId": "explore-planning-repair",
+              "groupTitle": "先后有讲究",
+              "world": "logic",
+              "round": 7,
+              "surface": "token",
+              "label": "等待发芽"
+            },
+            {
+              "activityId": "explore-planning-repair-7",
+              "family": "L06",
+              "gameId": "explore-planning-repair",
+              "groupTitle": "先后有讲究",
+              "world": "logic",
+              "round": 7,
+              "surface": "evidence",
+              "label": "等待发芽"
+            },
+            {
+              "activityId": "explore-story-recall-6",
+              "family": "A05",
+              "gameId": "explore-story-recall",
+              "groupTitle": "故事留在脑海里",
+              "world": "memory",
+              "round": 6,
+              "surface": "token",
+              "label": "告诉小兔发芽了"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "src": "/images/items/exploration-art/experiment-materials.png",
+      "frames": [
+        {
+          "key": "experimentMaterials1",
+          "src": "/images/items/exploration-art/experiment-materials.png",
+          "index": 0,
+          "columns": 2,
+          "rows": 2,
+          "alt": "木块",
+          "references": [
+            {
+              "activityId": "explore-science-experiments-1",
+              "family": "P03",
+              "gameId": "explore-science-experiments",
+              "groupTitle": "一起做小实验",
+              "world": "life",
+              "round": 1,
+              "surface": "material",
+              "label": "木块"
+            }
+          ]
+        },
+        {
+          "key": "experimentMaterials2",
+          "src": "/images/items/exploration-art/experiment-materials.png",
+          "index": 1,
+          "columns": 2,
+          "rows": 2,
+          "alt": "塑料盒",
+          "references": [
+            {
+              "activityId": "explore-science-experiments-1",
+              "family": "P03",
+              "gameId": "explore-science-experiments",
+              "groupTitle": "一起做小实验",
+              "world": "life",
+              "round": 1,
+              "surface": "material",
+              "label": "塑料盒"
+            }
+          ]
+        },
+        {
+          "key": "experimentMaterials3",
+          "src": "/images/items/exploration-art/experiment-materials.png",
+          "index": 2,
+          "columns": 2,
+          "rows": 2,
+          "alt": "金属勺",
+          "references": [
+            {
+              "activityId": "explore-science-experiments-1",
+              "family": "P03",
+              "gameId": "explore-science-experiments",
+              "groupTitle": "一起做小实验",
+              "world": "life",
+              "round": 1,
+              "surface": "material",
+              "label": "金属勺"
+            }
+          ]
+        },
+        {
+          "key": "experimentMaterials4",
+          "src": "/images/items/exploration-art/experiment-materials.png",
+          "index": 3,
+          "columns": 2,
+          "rows": 2,
+          "alt": "一盆浅水",
+          "references": [
+            {
+              "activityId": "explore-science-experiments-1",
+              "family": "P03",
+              "gameId": "explore-science-experiments",
+              "groupTitle": "一起做小实验",
+              "world": "life",
+              "round": 1,
+              "surface": "material",
+              "label": "一盆浅水"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

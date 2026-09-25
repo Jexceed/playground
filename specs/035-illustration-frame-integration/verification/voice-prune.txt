@@ -1,0 +1,17 @@
+Already up to date
+Done in 137ms using pnpm v11.19.0
+$ node scripts/prune-voice-assets.mjs -- --write
+{
+  "mode": "write",
+  "orphanCount": 7,
+  "deletedCount": 7,
+  "orphans": [
+    "public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-先准备种子-再把种子放进土里.mp3",
+    "public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-先把种子放进土里-再轻轻浇水.mp3",
+    "public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-先准备种子-再把种子放进土里.mp3",
+    "public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-准备种子.mp3",
+    "public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-按步骤做事-哪些事要先做-先选图卡-再按位置编号排好-也可以拖过去-先准备种子-再把种子放进土里-先把种子放进土里-再轻轻浇水-先轻轻浇水-再等待.mp3",
+    "public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-按步骤做事-哪些事要先做-先选图卡-再按位置编号排好-也可以拖过去-先准备种子-再把种子放进土里-先把种子放进土里-再轻轻浇水.mp3",
+    "public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-这次顺序弄乱了-请按先后条件修好-先选图卡-再按位置编号排好-也可以拖过去-先准备种子-再把种子放进土里-先把种子放进土里-再轻轻浇水-先轻轻浇水.mp3"
+  ]
+}

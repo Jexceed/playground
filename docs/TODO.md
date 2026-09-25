@@ -5,6 +5,8 @@ small enough to turn into a Spec Kit feature.
 
 ## P0
 
+- Complete the final native display check for 035 after Mac unlock, then push its dev checkpoint. Confirm L06 rounds 4/7 show all planting frames and 6/9 retain all fruit-salad frames; references, local assets and static audits are already aligned.
+
 - Observe 6-, 7- and 8-year-old parent-child play and calibrate reading, interaction and reasoning load for the 597 newly authored activities. Technical QA is not age validation.
 - Finish the historical-release migration/backup/ambiguity handling and finer support-history/next-practice guidance still unchecked in specs/029-curriculum-benchmark/tasks.md. Current legacy content and facts are preserved; do not infer mastery from completion.
 - Keep authoring coverage, original-source review depth and child validation separate. The authored exploration bank now contains 75 groups / 621 activities across 71 families; the original 40 / 489 bank stays in 启蒙.
@@ -98,8 +100,7 @@ small enough to turn into a Spec Kit feature.
   yet.
 - Revisit archived Obsidian notes and extract any still-useful product decisions
   into maintained docs.
-- Consider a lightweight asset manifest report that lists registered but unused
-  assets and files that exist but are not registered.
+- Extend the new per-frame illustration usage audit to other asset families when they gain similar shared-sheet mappings; keep file existence and real-app display checks separate.
 - Add screenshot-based smoke checks for representative desktop and mobile game
   layouts, including the collapsed world switcher, comparison-card groups, and
   evidence-card groups in the left sidebar/game surface; include answer-option

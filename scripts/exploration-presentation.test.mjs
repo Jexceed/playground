@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { existsSync, readFileSync } from 'node:fs';
 import { loadTypeScriptModule } from './lib/load-ts-module.mjs';
+import { collectIllustrationUsage } from './lib/illustration-usage.mjs';
 
 const [{ explorationSets, authoringSolutions }, { evaluateActivity }, { imageGallery }, { evidenceVisible }, { groupExplorationGames }, { getCurriculumSection }] = await Promise.all([
   loadTypeScriptModule('src/curriculum/exploration/index.ts'), loadTypeScriptModule('src/domain/activity-evaluation.ts'),
@@ -17,7 +18,8 @@ test('presentation retains all existing curriculum identities and accepts every 
   for (const a of activities) {
     const revised = (['N13','G04','G09'].includes(a.primaryFamilyId) && a.stage === 3)
       || (a.primaryFamilyId === 'L05' && a.stage === 2)
-      || (['G07','G15'].includes(a.primaryFamilyId) && a.stage > 1);
+      || (['G07','G15'].includes(a.primaryFamilyId) && a.stage > 1)
+      || (a.primaryFamilyId === 'L06' && /-(1|4|7)$/.test(a.id));
     assert.equal(a.revision, revised ? 2 : 1, a.id);
     assert.equal(evaluateActivity(a, authoringSolutions[a.id]).status, a.kind === 'parentObservation' ? 'needsParentObservation' : 'correct', a.id);
   }
@@ -30,6 +32,33 @@ test('story and natural-change ordering cards use individually addressed illustr
       assert.equal(token.textOnly, false);
     }
   }
+});
+
+test('planting and fruit stories use their own coherent atlas through every event and reference', () => {
+  const src = name => `/images/items/exploration-art/${name}.png`;
+  for (const a of activities.filter(a => a.primaryFamilyId === 'L06')) {
+    const round = Number(a.id.split('-').at(-1));
+    const expected = ['planting-steps', 'painting-steps', 'fruit-salad-steps'][(round - 1) % 3];
+    const tokens = [...a.tokens].sort((x,y) => Number(x.id.slice(4)) - Number(y.id.slice(4)));
+    assert.ok(tokens.every(t => t.image.src === src(expected)), a.id);
+    assert.deepEqual(tokens.map(t => t.image.frame.index), a.stage === 1 ? [0,1,2] : [0,1,2,3], a.id);
+    if (a.stage === 3) {
+      assert.ok(a.presentation.evidence.cards.every(i => i.src === src(expected)), a.id);
+      assert.deepEqual(a.presentation.evidence.cards.map(i => i.frame.index), [3,2,1,0], a.id);
+    }
+  }
+  const memory = activities.find(a => a.primaryFamilyId === 'A05' && a.id.endsWith('-6'));
+  assert.deepEqual([...memory.tokens].sort((a,b)=>a.id.localeCompare(b.id)).map(t=>[t.image.src,t.image.frame.index]), [1,2,3].map(i=>[src('planting-steps'),i]));
+  const story = activities.find(a => a.primaryFamilyId === 'E03' && a.id.endsWith('-9'));
+  assert.ok(story.presentation.storyCards.every(i => i.src === src('cat-plant-story')));
+});
+
+test('all registered illustration frames reach a renderable activity surface', () => {
+  const usage = collectIllustrationUsage(explorationSets, imageGallery);
+  assert.equal(usage.atlasCount, 11);
+  assert.equal(usage.registeredFrameCount, 44);
+  assert.deepEqual(usage.problems, []);
+  assert.deepEqual(usage.unusedFrames, [], 'an on-disk atlas alone is not complete integration');
 });
 
 test('concrete household pictures cannot be hidden by the text-only flag', () => {

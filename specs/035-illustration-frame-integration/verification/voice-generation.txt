@@ -1,0 +1,12 @@
+Already up to date
+Done in 139ms using pnpm v11.19.0
+$ node scripts/generate-edge-voices.mjs -- --voice zh-CN-XiaoxiaoNeural --rate -12% --pitch +2Hz --python /Users/chiang/Documents/Projects/playground/local-tts/.venv/bin/python --quiet --retries 3
+Generated 2649/3992: hint-先取花盆-再放土和种子
+Generated 2652/3992: clue-先放土和种子-再轻轻浇水
+Generated 2646/3992: prompt-按步骤做事-哪些事要先做-先选图卡-再按位置编号排好-也可以拖过去-先取花盆-再放土和种子-先放土和种子-再轻轻浇水
+Generated 2653/3992: object-放土和种子
+Generated 2655/3992: object-取花盆
+Generated 2670/3992: prompt-按步骤做事-哪些事要先做-先选图卡-再按位置编号排好-也可以拖过去-先取花盆-再放土和种子-先放土和种子-再轻轻浇水-先轻轻浇水-再等待发芽
+Generated 2651/3992: clue-先取花盆-再放土和种子
+Generated 2680/3992: prompt-这次顺序弄乱了-请按先后条件修好-先选图卡-再按位置编号排好-也可以拖过去-先取花盆-再放土和种子-先放土和种子-再轻轻浇水-先轻轻浇水-再等待发
+Wrote public/audio/voice/manifest.json with 3992 entries and 0 skipped lines.

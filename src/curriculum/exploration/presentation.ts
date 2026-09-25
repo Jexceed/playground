@@ -15,8 +15,6 @@ const storyPictures = Object.fromEntries([
 ].map(image => [image.alt, image]));
 storyPictures['把种子种进土里'] = explorationArt.catPlant[1];
 storyPictures['按记录照顾小苗'] = explorationArt.catPlant[2];
-storyPictures['准备种子'] = explorationArt.catPlant[0];
-storyPictures['把种子放进土里'] = explorationArt.catPlant[1];
 
 function materials(activity: Activity): { label: string; image?: GalleryImage }[] {
   if (activity.kind !== "parentObservation") return [];
@@ -35,9 +33,11 @@ function materials(activity: Activity): { label: string; image?: GalleryImage }[
 export function presentExploration(group: ActivitySet): ActivitySet {
   for (const [i, activity] of group.rounds.entries()) {
     const family = activity.primaryFamilyId, variant = i % 3;
+    const procedurePictures = family === 'L06' ? [explorationArt.planting, explorationArt.painting, explorationArt.fruitSalad][variant] : null;
     if (['A06','A07','L01','L07'].includes(family ?? '') && activity.kind === 'multiSelect') activity.presentation = { ...activity.presentation, compactSymbols: true };
     for (const token of activity.tokens) {
-      const image = concrete[token.label] ?? (['E03', 'P02', 'L06'].includes(family ?? '') ? storyPictures[token.label] : undefined);
+      const image = procedurePictures ? procedurePictures[Number(token.id.slice(4))]
+        : concrete[token.label] ?? (['E03', 'P02'].includes(family ?? '') ? storyPictures[token.label] : undefined);
       if (image) { token.image = image; token.textOnly = false; }
     }
     if (activity.kind === "parentObservation") {
@@ -51,7 +51,7 @@ export function presentExploration(group: ActivitySet): ActivitySet {
       activity.presentation = { evidence: { kind: 'storySequence', cards: reversed.map(token => ({ ...token.image, alt: token.label })) } };
     }
     if (family === 'A05' && variant === 2 && activity.kind === 'orderedPlacement') {
-      const stages = [explorationArt.catPlant[1], explorationArt.planting[2], explorationArt.planting[3]];
+      const stages = [explorationArt.planting[1], explorationArt.planting[2], explorationArt.planting[3]];
       for (const token of activity.tokens) { const index = Number(token.id.slice(1)); token.image = stages[index]; token.textOnly = false; }
     }
     if (family === 'A09' && activity.protocol.kind === 'memory') {

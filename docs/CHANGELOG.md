@@ -5,6 +5,14 @@ grouped by date.
 
 ## 2026-09-25
 
+### Complete planting-illustration integration
+
+- Corrected the distinction between preserving an image file and integrating all of its frames. The fruit-salad atlas remained fully represented in the procedure tasks; two planting-preparation frames had never been referenced, and the planting sequence mixed in the separate received-seeds story.
+- Mapped L06 procedures explicitly by variant and stable event ID. Planting now uses one coherent four-frame atlas, with matching pot/soil/seed wording; L06 rounds 1/4/7 use revision 2 while old facts remain. A05's existing planting-memory story now uses matching pictures from the same atlas; E03's received-seeds story is unchanged.
+- Added per-frame usage auditing to the curriculum gate and a generated illustration entry guide. All 11 atlases / 44 frames are now referenced by renderable surfaces, up from 42. The original illustration files were preserved.
+- Regenerated affected diagrams and standard Edge speech; 3992 voice entries have no failures. Passed 84 regressions and curriculum/media audits. Rebuilt and installed the standard Mac app; final native display acceptance awaits unlock. Current evidence: specs/035-illustration-frame-integration/verification/qa.md.
+
+
 ### Current-Mac exploration quality fixes
 
 - Preserved the three-column shell and all 11 illustration atlases. Fixed the story-frame clipping regression; arranged dense options, reference comparisons, matching cards and parent steps so all 621 initial pages fit the current Mac content area. The full initial-page pass followed a 150-page first/last pass and included corrective rechecks for sixteen-cell reconstruction and three assembly variants. Targeted wrong/hint/partial/complete states also passed; this does not claim every state of every task.

@@ -22,6 +22,7 @@
     "release:validate": "node scripts/validate-desktop-release.mjs",
     "test:desktop-release": "node --test scripts/desktop-release.test.mjs",
     "audit:curriculum": "node scripts/audit-curriculum.mjs",
+    "audit:illustrations": "node scripts/audit-illustration-usage.mjs",
     "audit:voice-media": "node scripts/audit-voice-media.mjs",
     "export:douyin-math": "node scripts/export-douyin-math-island.mjs",
     "meta:douyin-minigame": "node scripts/generate-cocos-metadata.mjs",
