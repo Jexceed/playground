@@ -131,6 +131,10 @@ export const ACTIVITY_COPY = {
   rectangleRecorded: "记下了。可以继续找，也可以点编号回看。",
   parentRecordNext: "做完了，记发现",
   designEstimate: "以上是陪玩起点建议，尚待真实亲子试玩校准，不对应固定年龄。",
+  viewPicture: "看大图",
+  closePicture: "回到题目",
+  previousPicture: "上一张",
+  nextPicture: "下一张",
 } as const;
 
 export function activitySlotLabel(activity: Activity, index: number): string {

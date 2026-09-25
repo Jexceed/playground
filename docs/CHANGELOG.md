@@ -5,6 +5,13 @@ grouped by date.
 
 ## 2026-09-25
 
+### Larger story pictures and independent picture viewing
+
+- Increased illustrated ordering choices from 80px to 132px and parent-story pictures from 84px to 136px. Completed sequences use 140px pictures. Put parent mode and preparation in one row and merged long-task step controls into one row, preserving the current Mac three-column layout.
+- Added single-frame picture viewing with previous/next, arrow keys and Escape/return. Parent pictures open directly; candidate and placed cards have separate enlargement buttons. Viewing preserves selection, placement and attempts. A placed sequence is shown in the child's current order; hidden memory phases cannot open the viewer.
+- Checked all 27 initial pages in E03/P02/L06 at 1280×788, plus ordering/complete, parent-step/hint/record and A05 listening states: no page overflow or broken images in the final pass. Passed 84 regressions and curriculum, illustration and voice-media audits. All 44 illustration frames remain in use; the Edge manifest has 3996 entries and no failures or local-provider fallback.
+- Rebuilt and installed the standard Mac app; build and installed binaries match and strict signature checks pass. Final native UI acceptance awaits manual Mac unlock; dev push remains pending. Evidence: specs/036-story-picture-presentation/verification/qa.md.
+
 ### Complete planting-illustration integration
 
 - Corrected the distinction between preserving an image file and integrating all of its frames. The fruit-salad atlas remained fully represented in the procedure tasks; two planting-preparation frames had never been referenced, and the planting sequence mixed in the separate received-seeds story.

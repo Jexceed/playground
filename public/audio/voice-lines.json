@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-25T06:28:49.214Z",
+  "generatedAt": "2026-09-25T12:01:46.710Z",
   "recommendedVoice": "warm adult female Mandarin, smiling, preschool teacher, 0.85 speed, crisp consonants",
-  "lineCount": 3992,
+  "lineCount": 3996,
   "lines": [
     {
       "id": "game-title-数一数",
@@ -23459,6 +23459,46 @@
       "tone": "friendly, clear, playful",
       "contexts": [
         "activity/designEstimate"
+      ]
+    },
+    {
+      "id": "activity-system-看大图",
+      "kind": "activity-system",
+      "text": "看大图",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "activity/viewPicture"
+      ]
+    },
+    {
+      "id": "activity-system-回到题目",
+      "kind": "activity-system",
+      "text": "回到题目",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "activity/closePicture"
+      ]
+    },
+    {
+      "id": "activity-system-上一张",
+      "kind": "activity-system",
+      "text": "上一张",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "activity/previousPicture"
+      ]
+    },
+    {
+      "id": "activity-system-下一张",
+      "kind": "activity-system",
+      "text": "下一张",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "activity/nextPicture"
       ]
     },
     {

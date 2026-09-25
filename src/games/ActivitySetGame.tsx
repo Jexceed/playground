@@ -1,4 +1,4 @@
-import { Check, Eye, Lightbulb, RotateCcw, Volume2, X } from "lucide-react";
+import { Check, Eye, Lightbulb, RotateCcw, Volume2, X, Maximize2 } from "lucide-react";
 import { useEffect, useReducer, useRef, useState } from "react";
 import type { CSSProperties, PointerEvent as ReactPointerEvent } from "react";
 import {
@@ -29,6 +29,7 @@ import { ActivityTokenArt as TokenArt } from "../interactions/ActivityTokenArt";
 import { ActivityEvidence } from "../interactions/ActivityEvidence";
 import { PyramidBoard } from '../interactions/PyramidBoard';
 import type { ParentMode } from '../interactions/ParentActivity';
+import { ImageViewer } from '../interactions/ImageViewer';
 
 type Props = {
   game: ActivitySet;
@@ -125,6 +126,7 @@ function ActivityRound({
     createSession,
   );
   const [selectedToken, setSelectedToken] = useState<string | null>(null);
+  const [pictureTarget, setPictureTarget] = useState<{ source: 'choices' | 'board'; key: string } | null>(null);
   const [parentMode, setParentMode] = useState<ParentMode>('play');
   const [messageMode, setMessageMode] = useState<'hint' | 'result'>('result');
   const [assetsReady, setAssetsReady] = useState(false);
@@ -166,6 +168,8 @@ function ActivityRound({
     return ()=>{live=false;stopSpeech();};
   },[state.phase,activity,isListening]);
   const tokenById = new Map(activity.tokens.map((token) => [token.id, token]));
+  const pictureTokens = activity.tokens.filter(token => token.image.style === 'illustration' && !token.textOnly && !token.quantityPicture);
+  useEffect(() => { setPictureTarget(null); }, [activity.id, state.phase]);
 
   useEffect(() => {
     void speak(activityPromptSpeech(activity));
@@ -445,6 +449,9 @@ function ActivityRound({
             <X size={12} />
           </button>
         )}
+        {token?.image.style === 'illustration' && previewId === undefined && (state.phase === 'respond' || state.phase === 'complete') && <button
+          type="button" className="picture-peek slot-picture-peek" title={ACTIVITY_COPY.viewPicture}
+          aria-label={`看大图：${label}的${token.label}`} onClick={() => setPictureTarget({ source: 'board', key: slot.id })}><Maximize2 size={14} /></button>}
       </div>
     );
   }
@@ -467,7 +474,7 @@ function ActivityRound({
             }
           ).tokenId === token.id,
       );
-    return (
+    const choice = (
       <button
         key={token.id}
         type="button"
@@ -489,12 +496,23 @@ function ActivityRound({
         )}
       </button>
     );
+    return token.image.style === 'illustration' && !token.textOnly && !token.quantityPicture ? <div className="illustrated-token" key={token.id}>
+      {choice}<button type="button" className="picture-peek" title={ACTIVITY_COPY.viewPicture} aria-label={`看大图：${token.label}`}
+        onClick={() => setPictureTarget({ source: 'choices', key: token.id })}><Maximize2 size={15} /></button>
+    </div> : choice;
   }
   const currentHint =
     state.hints > 0
       ? activity.hints[Math.min(state.hints - 1, activity.hints.length - 1)]
       : null;
   const showResponses = state.phase === "respond" || state.phase === "complete";
+  const pictureChoices = pictureTarget?.source === 'board' ? slotEntries.flatMap(slot => {
+    const value = responseValue(state.response, slot.id);
+    const token = tokenById.get(slot.fixedTokenId ?? (value.state === 'filled' ? value.tokenId : ''));
+    return token?.image.style === 'illustration' && !token.textOnly && !token.quantityPicture
+      ? [{ key: slot.id, image: { ...token.image, alt: `${activitySlotLabel(activity, slot.index)}：${token.label}` } }] : [];
+  }) : pictureTokens.map(token => ({ key: token.id, image: { ...token.image, alt: token.label } }));
+  const pictureIndex = pictureChoices.findIndex(item => item.key === pictureTarget?.key);
   const palette = activity.presentation?.pyramid?.choiceIds.map(id => tokenById.get(id)!) ?? activity.tokens;
   const showHint = Boolean(currentHint && (messageMode === 'hint' || !state.result));
   const statusText = showHint ? currentHint : state.result?.message;
@@ -770,6 +788,9 @@ function ActivityRound({
           这台设备暂时不能保存新的练习记录，可以继续玩。
         </p>
       )}
+      <ImageViewer images={pictureChoices.map(item => item.image)}
+        index={showResponses && pictureIndex >= 0 ? pictureIndex : null}
+        onIndexChange={index => { if (pictureTarget && pictureChoices[index]) setPictureTarget({ ...pictureTarget, key: pictureChoices[index].key }); }} onClose={() => setPictureTarget(null)} />
       {dragPoint && (
         <div
           className="activity-drag-preview"
