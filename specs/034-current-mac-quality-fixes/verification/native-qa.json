@@ -1,0 +1,113 @@
+{
+  "acceptedOn": "2026-09-25",
+  "codeCommit": "507ce171bea2b2a8ea219a89b93d4524188f8d64",
+  "application": "/Applications/小小思考屋.app",
+  "sha256": "bc9e2b36272bc983dbb66f25c1f9819379c2c78b754943be2bbef18cd4a3856f",
+  "method": "CUA native accessibility actions and visual screenshot inspection",
+  "windowLogicalPixels": [
+    1280,
+    820
+  ],
+  "screenshotPixels": [
+    2560,
+    1640
+  ],
+  "cases": [
+    {
+      "id": "N04-9",
+      "result": "passed",
+      "observed": "Nine candidates, wrong answer, hint, clear and correct multi-selection; all controls visible."
+    },
+    {
+      "id": "N13-9",
+      "result": "passed",
+      "observed": "Correct total but excess five-yuan stock rejected; both genuine legal payments accepted."
+    },
+    {
+      "id": "G07-9",
+      "result": "passed",
+      "observed": "First-layer check left whole activity incomplete, with 0 attempts and 1 check. Wrong cell located, clear/undo restored state, full pyramid accepted. Check count persisted after process restart."
+    },
+    {
+      "id": "G09-9",
+      "result": "passed",
+      "observed": "Nine unique rectangles marked; reversed duplicate did not increment. Reviewed first rectangle, undid 9 to 8, re-added 9, submitted count 9 successfully."
+    },
+    {
+      "id": "G15-7",
+      "result": "passed",
+      "observed": "Fold directions, retained paper area and red holes visible. Hint plus empty submit kept controls visible; correct pattern accepted."
+    },
+    {
+      "id": "G04-9",
+      "result": "passed",
+      "observed": "Red-correct/blue-wrong option C rejected; both-correct option B accepted."
+    },
+    {
+      "id": "G14-4",
+      "result": "passed",
+      "observed": "A rotated 90 degrees and placed; B filled the lower-left cell; completed arrangement and controls fit the window."
+    },
+    {
+      "id": "G19-6",
+      "result": "passed",
+      "observed": "Sixteen-cell board and reference visible together. Blue and explicit blank cards placed; undo restored an unfilled cell."
+    },
+    {
+      "id": "L05-4",
+      "result": "passed",
+      "observed": "A-D-B-C-F was legal but too long. A-B-E-F completed in three segments and was accepted."
+    },
+    {
+      "id": "L06-9",
+      "result": "passed",
+      "observed": "All four food-preparation atlas frames, labels, reference and ordering surface rendered correctly."
+    },
+    {
+      "id": "P02-9",
+      "result": "passed",
+      "observed": "Four frog-growth frames and all three parent steps visible, with the main action in the same window."
+    },
+    {
+      "id": "E03-9",
+      "result": "passed",
+      "observed": "Four independent cat-plant frames. Step 6 accessible. Empty observation submit rejected; two supported/one notYet selections survived mode switches, clear and undo; save succeeded."
+    },
+    {
+      "id": "E05-9",
+      "result": "passed",
+      "observed": "Three matching connections aligned with endpoints and reference table. Unlink and right-side-first reconnection worked; complete answer accepted."
+    },
+    {
+      "id": "E06-9",
+      "result": "passed",
+      "observed": "Required local listening disabled answers while playing; choices appeared after playback. Replay entered listening again and incremented repeat count."
+    },
+    {
+      "id": "A09-9",
+      "result": "passed",
+      "observed": "Observation showed four object/count associations (4,5,6,7). Cue disappeared before response; all four recalled pairs accepted."
+    }
+  ],
+  "persistence": {
+    "quitConfirmedByProcessExit": true,
+    "reopenedFromStandardPath": true,
+    "restoredLocation": "exploration / language / E03-9",
+    "restoredCompletionMarker": true,
+    "parentObservationAfterRestart": {
+      "independent": 0,
+      "supported": 2,
+      "notYet": 1
+    },
+    "pyramidAfterRestart": {
+      "attempts": 2,
+      "checks": 1
+    },
+    "enlightenmentCompletedRetained": 273,
+    "enlightenmentTotal": 489
+  },
+  "claimsAll621NativeStatesVerified": false,
+  "claimsChildPlayCalibration": false,
+  "claimsFullHumanVoiceListening": false,
+  "notes": "All observation selections and successful answers in this acceptance run are technical QA, not real child samples. The earlier 621-page browser pass covers initial pages; native acceptance covers the cases above."
+}

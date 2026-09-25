@@ -3,7 +3,7 @@
   "installedHash": "bc9e2b36272bc983dbb66f25c1f9819379c2c78b754943be2bbef18cd4a3856f",
   "builtHash": "bc9e2b36272bc983dbb66f25c1f9819379c2c78b754943be2bbef18cd4a3856f",
   "signatureVerified": true,
-  "nativeFinalUI": "pending-manual-mac-unlock",
+  "nativeFinalUI": "passed",
   "groups": 71,
   "authoredActivities": 597,
   "revisedActivities": [
@@ -65,5 +65,8 @@
     "allInitialPagesFitAfterRechecks": true,
     "allInteractionStatesVerified": false
   },
-  "childPlayCalibration": "pending-no-samples"
+  "childPlayCalibration": "pending-no-samples",
+  "nativeEvidence": "native-qa.json",
+  "acceptedCodeCommit": "507ce171bea2b2a8ea219a89b93d4524188f8d64",
+  "nativeRepresentativeActivities": 15
 }

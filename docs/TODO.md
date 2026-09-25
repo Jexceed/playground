@@ -5,8 +5,6 @@ small enough to turn into a Spec Kit feature.
 
 ## P0
 
-- Finish the final native reopen/interaction acceptance for specs/034-current-mac-quality-fixes after Mac unlock, then commit and push the authorized dev milestone. R1–R7 engineering changes, 621 initial-page Mac-size browser checks and targeted interaction states are implemented; see its verification/qa.md. Retain the current three-column layout.
-
 - Observe 6-, 7- and 8-year-old parent-child play and calibrate reading, interaction and reasoning load for the 597 newly authored activities. Technical QA is not age validation.
 - Finish the historical-release migration/backup/ambiguity handling and finer support-history/next-practice guidance still unchecked in specs/029-curriculum-benchmark/tasks.md. Current legacy content and facts are preserved; do not infer mastery from completion.
 - Keep authoring coverage, original-source review depth and child validation separate. The authored exploration bank now contains 75 groups / 621 activities across 71 families; the original 40 / 489 bank stays in 启蒙.
