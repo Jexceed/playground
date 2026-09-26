@@ -84,7 +84,7 @@ export function presentExploration(group: ActivitySet): ActivitySet {
     if (family === 'N16') activity.presentation = { evidence: { kind: 'calendar' } };
     if (family === 'L06' && activity.stage === 3) {
       const reversed = [...activity.tokens].sort((a, b) => Number(b.id.slice(4)) - Number(a.id.slice(4)));
-      activity.presentation = { evidence: { kind: 'storySequence', cards: reversed.map(token => ({ ...token.image, alt: token.label })) } };
+      activity.presentation = { evidence: { kind: 'storySequence', cards: reversed.map(token => ({ ...token.image, alt: token.label })), tokenIds: reversed.map(token => token.id) } };
     }
     if (family === 'A05' && activity.kind === 'orderedPlacement') {
       const stages = variant === 2 ? [explorationArt.planting[1], explorationArt.planting[2], explorationArt.planting[3]]

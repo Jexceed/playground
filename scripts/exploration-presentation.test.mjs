@@ -47,6 +47,7 @@ test('planting and fruit stories use their own coherent atlas through every even
     if (a.stage === 3) {
       assert.ok(a.presentation.evidence.cards.every(i => i.src === src(expected)), a.id);
       assert.deepEqual(a.presentation.evidence.cards.map(i => i.frame.index), [3,2,1,0], a.id);
+      assert.deepEqual(a.presentation.evidence.tokenIds, ['step3','step2','step1','step0'], 'the palette retains the given scrambled sequence');
     }
   }
   const memory = activities.find(a => a.primaryFamilyId === 'A05' && a.id.endsWith('-6'));

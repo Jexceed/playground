@@ -14,7 +14,7 @@ function renderedImages(activity) {
   }
   const presentation = activity.presentation;
   if (!presentation?.evidence) add(activity.illustration, 'illustration');
-  if (presentation?.evidence?.kind === 'storySequence')
+  if (presentation?.evidence?.kind === 'storySequence' && !(activity.kind === 'orderedPlacement' && presentation.evidence.tokenIds))
     presentation.evidence.cards.forEach(image => add(image, 'evidence'));
   if (presentation?.evidence?.kind === 'collection') add(presentation.evidence.image, 'evidence');
   if (presentation?.evidence?.kind === 'visualComparison')

@@ -62,7 +62,7 @@ export type ActivityBase = {
       | { kind: "shopping"; cost: number; paid: number }
       | { kind: "overlapQueue"; left: number; right: number }
       | { kind: "collection"; count: number; image: GalleryImage; caption: string }
-      | { kind: "storySequence"; cards: GalleryImage[] }
+      | { kind: "storySequence"; cards: GalleryImage[]; tokenIds?: string[] }
       | { kind: "calendar" };
     materialCards?: { label: string; image?: GalleryImage }[];
     storyCards?: GalleryImage[];

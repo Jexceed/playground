@@ -5,6 +5,12 @@ grouped by date.
 
 ## 2026-09-26
 
+### Larger picture cards with captions outside the frame
+
+- Moved illustrated candidate-card borders onto the pictures and placed captions below the frame. Three-card rows now show 178px images instead of 132px; four-card rows use about 149px images, with 14px captions. The picture and caption remain one selectable/keyboard/drag target, with an independent enlargement button.
+- Combined the duplicated reference/candidate pictures in the three L06 order-repair tasks. Their original reversed sequence is now the explicit candidate order, also used by the picture viewer; all original conditions and answers remain.
+- Passed 90 regressions and curriculum/illustration/voice-media audits. The 621 exploration activities' nonvisual fields, enlightenment bank and all 4003 voice lines are unchanged. Rebuilt and installed the standard Mac app; detailed current-Mac UI and native status are in specs/039-picture-card-captions/verification/qa.md.
+
 ### Readable math evidence within the current Mac window
 
 - Replaced tiny composite previews in 移一移比多少 and 变了样没变多 with two full-width comparison columns: 20px HTML headings and 30px countable dots. 凑十 comparisons now show large tens/ones and a 15px legend. Enlarged viewing preserves the same inputs and does not affect answers.

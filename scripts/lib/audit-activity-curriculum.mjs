@@ -76,6 +76,11 @@ export function auditActivityCurriculum(
           problems.push(`${prefix}: invalid or unregistered token ${token.id}`);
       }
       if(activity.illustration && (!registered.has(activity.illustration.src)||!existsSync(join('public',activity.illustration.src))))problems.push(`${prefix}: missing or unregistered illustration`);
+      if (activity.presentation?.evidence?.kind === 'storySequence' && activity.presentation.evidence.tokenIds) {
+        const order = activity.presentation.evidence.tokenIds;
+        if (activity.kind !== 'orderedPlacement' || order.length !== tokens.size || new Set(order).size !== tokens.size || !order.every(id=>tokens.has(id)))
+          problems.push(`${prefix}: story palette must include every token exactly once`);
+      }
       if (activity.presentation?.evidence?.kind === 'visualComparison') {
         const panels = activity.presentation.evidence.panels;
         if (panels.length !== 2) problems.push(`${prefix}: comparisons require two panels`);

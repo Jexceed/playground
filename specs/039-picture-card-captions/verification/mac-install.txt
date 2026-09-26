@@ -1,0 +1,36 @@
+Already up to date
+Done in 161ms using pnpm v11.19.0
+$ pnpm mac:build && pnpm mac:sign && rm -rf "/Applications/小小思考屋.app" && ditto "src-tauri/target/aarch64-apple-darwin/release/bundle/macos/小小思考屋.app" "/Applications/小小思考屋.app" && pnpm mac:refresh-icon
+$ . "$HOME/.cargo/env" 2>/dev/null || true; tauri build --bundles app --target aarch64-apple-darwin
+        Info Looking up installed tauri packages to check mismatched versions...
+     Running beforeBuildCommand `pnpm build`
+$ tsc && vite build
+vite v7.3.6 building client environment for production...
+transforming...
+✓ 1633 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                            1.14 kB │ gzip:   0.62 kB
+dist/assets/index-Db11RRar.css           100.62 kB │ gzip:  19.55 kB
+dist/assets/ActivitySetGame-CXT8iBBl.js   61.54 kB │ gzip:  20.19 kB
+dist/assets/vendor-DgFA4TyW.js           196.01 kB │ gzip:  62.03 kB
+dist/assets/index-CRu6M2ym.js            461.02 kB │ gzip: 144.70 kB
+✓ built in 2.21s
+   Compiling thinking-island v0.1.0 (/Users/chiang/.codex/worktrees/curriculum-benchmark/playground/src-tauri)
+    Finished `release` profile [optimized] target(s) in 25.19s
+       Built application at: /Users/chiang/.codex/worktrees/curriculum-benchmark/playground/src-tauri/target/aarch64-apple-darwin/release/thinking-island
+    Bundling 小小思考屋.app (/Users/chiang/.codex/worktrees/curriculum-benchmark/playground/src-tauri/target/aarch64-apple-darwin/release/bundle/macos/小小思考屋.app)
+     Signing with identity "-"
+Signing with identity "-"
+Signing /Users/chiang/.codex/worktrees/curriculum-benchmark/playground/src-tauri/target/aarch64-apple-darwin/release/bundle/macos/小小思考屋.app/Contents/MacOS/thinking-island
+/Users/chiang/.codex/worktrees/curriculum-benchmark/playground/src-tauri/target/aarch64-apple-darwin/release/bundle/macos/小小思考屋.app/Contents/MacOS/thinking-island: replacing existing signature
+Signing with identity "-"
+Signing /Users/chiang/.codex/worktrees/curriculum-benchmark/playground/src-tauri/target/aarch64-apple-darwin/release/bundle/macos/小小思考屋.app
+/Users/chiang/.codex/worktrees/curriculum-benchmark/playground/src-tauri/target/aarch64-apple-darwin/release/bundle/macos/小小思考屋.app: replacing existing signature
+        Warn skipping app notarization, no APPLE_ID & APPLE_PASSWORD & APPLE_TEAM_ID or APPLE_API_KEY & APPLE_API_ISSUER & APPLE_API_KEY_PATH environment variables found
+    Finished 1 bundle at:
+        /Users/chiang/.codex/worktrees/curriculum-benchmark/playground/src-tauri/target/aarch64-apple-darwin/release/bundle/macos/小小思考屋.app
+
+$ codesign --force --deep --sign - "src-tauri/target/aarch64-apple-darwin/release/bundle/macos/小小思考屋.app"
+src-tauri/target/aarch64-apple-darwin/release/bundle/macos/小小思考屋.app: replacing existing signature
+$ touch "/Applications/小小思考屋.app" && qlmanage -r cache >/dev/null 2>&1 || true; /System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -f "/Applications/小小思考屋.app" || true

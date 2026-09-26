@@ -25,7 +25,7 @@ import { playTone, speak, stopSpeech, playRequiredAudio } from "../speech";
 import { isAdvancedActivity } from "../domain/advanced-activity";
 import { AdvancedInteraction } from "../interactions/AdvancedInteraction";
 import { publicAsset } from "../publicAsset";
-import { ActivityTokenArt as TokenArt } from "../interactions/ActivityTokenArt";
+import { ActivityImage, ActivityTokenArt as TokenArt } from "../interactions/ActivityTokenArt";
 import { ActivityEvidence } from "../interactions/ActivityEvidence";
 import { PyramidBoard } from '../interactions/PyramidBoard';
 import type { ParentMode } from '../interactions/ParentActivity';
@@ -168,7 +168,10 @@ function ActivityRound({
     return ()=>{live=false;stopSpeech();};
   },[state.phase,activity,isListening]);
   const tokenById = new Map(activity.tokens.map((token) => [token.id, token]));
-  const pictureTokens = activity.tokens.filter(token => token.image.style === 'illustration' && !token.textOnly && !token.quantityPicture);
+  const storyTokenIds = activity.kind === 'orderedPlacement' && activity.presentation?.evidence?.kind === 'storySequence' ? activity.presentation.evidence.tokenIds : undefined;
+  const palette = activity.presentation?.pyramid?.choiceIds.map(id => tokenById.get(id)!)
+    ?? (storyTokenIds ? storyTokenIds.map(id => tokenById.get(id)!) : activity.tokens);
+  const pictureTokens = palette.filter(token => token.image.style === 'illustration' && !token.textOnly && !token.quantityPicture);
   useEffect(() => { setPictureTarget(null); }, [activity.id, state.phase]);
 
   useEffect(() => {
@@ -458,6 +461,7 @@ function ActivityRound({
     );
   }
   function tokenButton(token: ActivityToken, multi = false) {
+    const illustrated = token.image.style === 'illustration' && !token.textOnly && !token.quantityPicture && !token.moneyValues;
     const selected =
       multi && state.response.kind === "multiSelect"
         ? state.response.tokenIds.includes(token.id)
@@ -490,15 +494,21 @@ function ActivityRound({
           if (multi || event.detail === 0) chooseToken(token);
         }}
       >
-        <TokenArt token={token} label />
-        {selected && (
+        {illustrated ? <>
+          <span className="illustrated-picture">
+            <ActivityImage image={token.image} className="activity-token-image is-illustration" decorative />
+            {selected && <span className="token-check"><Check size={13} /></span>}
+          </span>
+          <span className="token-label illustrated-caption">{token.label}</span>
+        </> : <TokenArt token={token} label />}
+        {selected && !illustrated && (
           <span className="token-check">
             <Check size={13} />
           </span>
         )}
       </button>
     );
-    return token.image.style === 'illustration' && !token.textOnly && !token.quantityPicture ? <div className="illustrated-token" key={token.id}>
+    return illustrated ? <div className="illustrated-token" key={token.id}>
       {choice}<button type="button" className="picture-peek" title={ACTIVITY_COPY.viewPicture} aria-label={`看大图：${token.label}`}
         onClick={() => setPictureTarget({ source: 'choices', key: token.id })}><Maximize2 size={15} /></button>
     </div> : choice;
@@ -515,7 +525,6 @@ function ActivityRound({
       ? [{ key: slot.id, image: { ...token.image, alt: `${activitySlotLabel(activity, slot.index)}：${token.label}` } }] : [];
   }) : pictureTokens.map(token => ({ key: token.id, image: { ...token.image, alt: token.label } }));
   const pictureIndex = pictureChoices.findIndex(item => item.key === pictureTarget?.key);
-  const palette = activity.presentation?.pyramid?.choiceIds.map(id => tokenById.get(id)!) ?? activity.tokens;
   const showHint = Boolean(currentHint && (messageMode === 'hint' || !state.result));
   const statusText = showHint ? currentHint : state.result?.message;
   const hasStatus = state.phase !== 'observe' && state.phase !== 'retain';
@@ -532,7 +541,7 @@ function ActivityRound({
       data-pyramid={Boolean(activity.presentation?.pyramid) || undefined}
       data-folding={Boolean(activity.presentation?.folding) || undefined}
       data-number-placement={activity.kind === 'orderedPlacement' && activity.tokens.length > 6 && activity.tokens.every(t => t.textOnly && /^\d+$/.test(t.label)) || undefined}
-      data-paired-story={activity.kind === 'orderedPlacement' && activity.presentation?.evidence?.kind === 'storySequence' || undefined}
+      data-paired-story={activity.kind === 'orderedPlacement' && activity.presentation?.evidence?.kind === 'storySequence' && !storyTokenIds || undefined}
       data-paired-matching={activity.kind === 'matching' && Boolean(activity.illustration) && !isMemory || undefined}
       data-paired-choices={activity.kind === 'multiSelect' && Boolean(activity.illustration) && !activity.presentation?.evidence && activity.tokens.length > 4 && !isMemory || undefined}
       data-paired-grid={activity.kind === 'gridPlacement' && activity.cells.length > 9 && Boolean(activity.illustration) && !isMemory || undefined}
@@ -545,7 +554,7 @@ function ActivityRound({
         <p>{activity.instruction}</p>
       </div>
 
-      {(activity.kind !== 'parentObservation' || parentMode === 'play') && <ActivityEvidence activity={activity} phase={state.phase} />}
+      {!storyTokenIds && (activity.kind !== 'parentObservation' || parentMode === 'play') && <ActivityEvidence activity={activity} phase={state.phase} />}
       {activity.clues.length > 0 && (
         <ol className="activity-clues">
           {activity.clues.map((clue, index) => (

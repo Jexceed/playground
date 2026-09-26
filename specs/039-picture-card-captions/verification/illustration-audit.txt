@@ -1,0 +1,12 @@
+Already up to date
+Done in 223ms using pnpm v11.19.0
+$ node scripts/audit-illustration-usage.mjs
+{
+  "atlasCount": 15,
+  "registeredFrameCount": 72,
+  "usedFrameCount": 72,
+  "unusedFrames": [],
+  "problems": [],
+  "output": "docs/illustration-usage.json",
+  "guide": "docs/illustration-guide.md"
+}
