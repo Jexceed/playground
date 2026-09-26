@@ -6,6 +6,7 @@ const {explorationDrawings,soundStimuli,explorationSets}=await loadTypeScriptMod
 const highResolution = new Set(explorationSets.flatMap(group=>group.rounds.flatMap(a=>[
  ...a.tokens.filter(t=>!t.textOnly&&!t.quantityPicture).map(t=>t.image),
  ...(a.illustration&&!a.presentation?.evidence?[a.illustration]:[]),
+ ...(a.presentation?.evidence?.kind==='visualComparison'?a.presentation.evidence.panels.flatMap(p=>p.kind==='image'?[p.image]:[]):[]),
 ])).filter(image=>image.src.startsWith('/images/items/exploration/diagram-')).map(image=>image.src.split('/').pop().replace('.png','')));
 const directory='public/images/items/exploration';mkdirSync(join(directory,'source'),{recursive:true});
 const esc=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');

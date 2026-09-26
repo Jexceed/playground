@@ -5,6 +5,7 @@ import { imageGallery } from "../data/imageGallery";
 import { ActivityImage } from "./ActivityTokenArt";
 import { evidenceVisible } from "./presentation-state";
 import { RectangleExplorer } from './RectangleExplorer';
+import { VisualComparison } from './VisualComparison';
 
 export function ActivityEvidence({ activity, phase }: { activity: Activity; phase: string }) {
   const dialog = useRef<HTMLDialogElement>(null);
@@ -12,7 +13,10 @@ export function ActivityEvidence({ activity, phase }: { activity: Activity; phas
   if (!evidenceVisible(activity, phase)) return null;
   const art = activity.illustration;
   const evidence = activity.presentation?.evidence;
-  const content = evidence?.kind === 'rectangleSearch' ? <RectangleExplorer rows={evidence.rows} columns={evidence.columns} disabled={phase === 'complete'} />
+  const comparison = evidence?.kind === 'visualComparison';
+  const canEnlarge = comparison || Boolean(art && !evidence);
+  const content = comparison ? <VisualComparison panels={evidence.panels} />
+  : evidence?.kind === 'rectangleSearch' ? <RectangleExplorer rows={evidence.rows} columns={evidence.columns} disabled={phase === 'complete'} />
   : evidence?.kind === 'moneyInventory' ? <div className="money-stock"><div><strong>5元</strong><span>{evidence.fives}张</span></div><div><strong>1元</strong><span>{evidence.ones}枚</span></div></div>
   : evidence?.kind === "quantityStory" ? <div className="quantity-story">
     {evidence.parts.map((part, index) => <div className="quantity-story-step" key={part.label}>
@@ -35,11 +39,11 @@ export function ActivityEvidence({ activity, phase }: { activity: Activity; phas
   : art ? <ActivityImage image={art} className={`activity-evidence-image${art.style === 'illustration' ? ' is-illustration' : ''}`} /> : null;
   if (!content) return null;
   return <figure className="activity-evidence-board">
-    <div className="evidence-caption"><span>{evidence?.kind === 'moneyInventory' ? ACTIVITY_COPY.moneyStock : evidence ? '看看发生了什么' : '先看图，找线索'}</span>{art && !evidence && <button type="button" className="image-enlarge" onClick={() => dialog.current?.showModal()} aria-label="放大题目图片"><Maximize2 size={15} />放大看</button>}</div>
+    <div className="evidence-caption"><span>{evidence?.kind === 'moneyInventory' ? ACTIVITY_COPY.moneyStock : evidence && !comparison ? '看看发生了什么' : '先看图，找线索'}</span>{canEnlarge && <button type="button" className="image-enlarge" onClick={() => dialog.current?.showModal()} aria-label="放大题目图片"><Maximize2 size={15} />放大看</button>}</div>
     {content}
-    {art && !evidence && <dialog className="evidence-dialog" ref={dialog} onClick={e => { if (e.target === e.currentTarget) e.currentTarget.close(); }}>
+    {canEnlarge && <dialog className={`evidence-dialog${comparison ? ' comparison-dialog' : ''}`} ref={dialog} onClick={e => { if (e.target === e.currentTarget) e.currentTarget.close(); }}>
       <button type="button" className="evidence-dialog-close" autoFocus onClick={() => dialog.current?.close()} aria-label="关闭放大图片"><X size={22} /></button>
-      <ActivityImage image={art} className="enlarged-evidence" />
+      {comparison ? content : art && <ActivityImage image={art} className="enlarged-evidence" />}
       <p>{activity.prompt}</p>
     </dialog>}
   </figure>;

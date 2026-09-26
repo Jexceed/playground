@@ -183,6 +183,8 @@ function ActivityRound({
     for (const card of activity.presentation?.materialCards ?? []) if (card.image) sources.add(card.image.src);
     if (activity.presentation?.evidence?.kind === 'storySequence')
       for (const image of activity.presentation.evidence.cards) sources.add(image.src);
+    if (activity.presentation?.evidence?.kind === 'visualComparison')
+      for (const panel of activity.presentation.evidence.panels) if (panel.kind === 'image') sources.add(panel.image.src);
     if (activity.illustration) sources.add(activity.illustration.src);
     if (activity.kind === "multiSelect" && activity.example)
       sources.add(activity.example.image.src);
@@ -523,6 +525,7 @@ function ActivityRound({
       data-testid="activity-round"
       data-activity-id={activity.id}
       data-family={activity.primaryFamilyId}
+      data-readable-evidence={activity.presentation?.readableEvidence || undefined}
       data-phase={state.phase}
       data-kind={activity.kind}
       data-dense={activity.tokens.length > 6 && !activity.presentation?.compactSymbols || undefined}

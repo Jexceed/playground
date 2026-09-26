@@ -60,6 +60,8 @@ const lineTemplate = () => {
 export function presentExploration(group: ActivitySet): ActivitySet {
   for (const [i, activity] of group.rounds.entries()) {
     const family = activity.primaryFamilyId, variant = i % 3;
+    if (activity.kind === 'singleChoice' && ['N01','N02','N03','N05','N07','N10','N11','N12','N13','N14','N15'].includes(family ?? ''))
+      activity.presentation = { ...activity.presentation, readableEvidence: true };
     const procedurePictures = family === 'L06' ? [explorationArt.planting, explorationArt.painting, explorationArt.fruitSalad][variant] : null;
     if (['A06','A07','L01','L07'].includes(family ?? '') && activity.kind === 'multiSelect') activity.presentation = { ...activity.presentation, compactSymbols: true };
     for (const token of activity.tokens) {

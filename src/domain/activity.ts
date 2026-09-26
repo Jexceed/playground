@@ -3,6 +3,9 @@ import type { AbilityLevel, GameConfig, WorldId } from "../types";
 import type { AdvancedActivity, AdvancedResponse } from "./advanced-activity";
 
 export type ActivityToken = { id: string; label: string; image: GalleryImage; soundSrc?: string; speechText?: string; textOnly?: boolean; moneyValues?: number[]; quantityPicture?: { image: GalleryImage; count: number } };
+export type ComparisonPanel = { kind: 'dots'; label: string; count: number; columns: number }
+  | { kind: 'placeValue'; label: string; tens: number; ones: number }
+  | { kind: 'image'; label: string; image: GalleryImage };
 export type TokenUse = "once" | "unlimited" | {kind:"counted"; limits:Record<string,number>};
 export type SlotValue =
   | { state: "unfilled" }
@@ -48,10 +51,12 @@ export type ActivityBase = {
   sourceRefs: { sourceId: string; locator: string }[];
   illustration?: GalleryImage;
   presentation?: {
+    readableEvidence?: boolean;
     compactSymbols?: boolean;
     folding?: { folds: ("right" | "down")[]; holeRow: number; holeColumn: number };
     pyramid?: { baseTokenIds: string[]; rowSizes: number[]; choiceIds: string[] };
-    evidence?: { kind: "moneyInventory"; fives: number; ones: number }
+    evidence?: { kind: "visualComparison"; panels: ComparisonPanel[] }
+      | { kind: "moneyInventory"; fives: number; ones: number }
       | { kind: "rectangleSearch"; rows: number; columns: number }
       | { kind: "quantityStory"; parts: { label: string; count: number | null }[] }
       | { kind: "shopping"; cost: number; paid: number }

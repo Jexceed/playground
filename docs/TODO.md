@@ -5,7 +5,7 @@ small enough to turn into a Spec Kit feature.
 
 ## P0
 
-- Complete final native checks for 035/036/037 after Mac unlock, then push the dev checkpoints. Verify P01 action cards/zoom/connection preservation, A05 events after required listening, E04 references/recording, L07's nine cards, P06's template and G17 directions. Also confirm L06 planting/fruit frames and E03 story viewing. The standard app is installed and browser/static checks pass; native acceptance is still pending.
+- Complete final native checks for 035/036/037/038 after Mac unlock, then push the dev checkpoints. Start with the new N02 count comparison, N05 tens/ones and N14 clock layout, including hints/completion. Also verify P01 action/connection preservation, A05 listening, E04/L07/P06 references, G17 directions, L06 planting/fruit frames and E03 viewing. The standard app is installed and browser/static checks pass; native acceptance is still pending.
 
 - Observe 6-, 7- and 8-year-old parent-child play and calibrate reading, interaction and reasoning load for the 597 newly authored activities. Technical QA is not age validation.
 - Finish the historical-release migration/backup/ambiguity handling and finer support-history/next-practice guidance still unchecked in specs/029-curriculum-benchmark/tasks.md. Current legacy content and facts are preserved; do not infer mastery from completion.

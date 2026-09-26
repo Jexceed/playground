@@ -76,6 +76,21 @@ export function auditActivityCurriculum(
           problems.push(`${prefix}: invalid or unregistered token ${token.id}`);
       }
       if(activity.illustration && (!registered.has(activity.illustration.src)||!existsSync(join('public',activity.illustration.src))))problems.push(`${prefix}: missing or unregistered illustration`);
+      if (activity.presentation?.evidence?.kind === 'visualComparison') {
+        const panels = activity.presentation.evidence.panels;
+        if (panels.length !== 2) problems.push(`${prefix}: comparisons require two panels`);
+        for (const panel of panels) {
+          if (!panel.label?.trim()) problems.push(`${prefix}: comparison label is missing`);
+          if (panel.kind === 'dots') {
+            if (!Number.isInteger(panel.count) || panel.count < 0 || !Number.isInteger(panel.columns) || panel.columns < 1)
+              problems.push(`${prefix}: invalid comparison quantity/layout`);
+          } else if (panel.kind === 'placeValue') {
+            if (!Number.isInteger(panel.tens) || panel.tens < 0 || !Number.isInteger(panel.ones) || panel.ones < 0 || panel.ones > 9)
+              problems.push(`${prefix}: invalid comparison place value`);
+          } else if (panel.kind !== 'image' || !registered.has(panel.image?.src) || !existsSync(join('public', panel.image.src)))
+            problems.push(`${prefix}: missing or unregistered comparison image`);
+        }
+      }
       if (
         !["multiSelect", "orderedPlacement", "gridPlacement", "singleChoice", "matching", "network", "route", "construction", "parentObservation"].includes(
           activity.kind,

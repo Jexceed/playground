@@ -58,7 +58,7 @@ export function clock(hour: number, minute: number): Drawing {
         o.push(line(160 + Math.sin(angle) * inner, 160 - Math.cos(angle) * inner, 160 + Math.sin(angle) * 123, 160 - Math.cos(angle) * 123));
     }
     for (let n = 1; n <= 12; n++)
-        o.push(text(160 + Math.sin(n * Math.PI / 6) * 96, 168 - Math.cos(n * Math.PI / 6) * 96, n, 22));
+        o.push(text(160 + Math.sin(n * Math.PI / 6) * 96, 169 - Math.cos(n * Math.PI / 6) * 96, n, 28));
     o.push(line(160, 160, 160 + Math.sin((hour % 12 + minute / 60) * Math.PI / 6) * 65, 160 - Math.cos((hour % 12 + minute / 60) * Math.PI / 6) * 65));
     o.push(line(160, 160, 160 + Math.sin(minute * Math.PI / 30) * 92, 160 - Math.cos(minute * Math.PI / 30) * 92));
     return picture(o, 320, 320);

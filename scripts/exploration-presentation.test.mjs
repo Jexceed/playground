@@ -160,3 +160,38 @@ test('parent references exist and material-specific pictures match their actual 
   for(const a of activities.filter(a=>a.kind==='parentObservation'))for(const c of a.presentation.materialCards)
     if(c.label.includes('图卡')||c.label.includes('颜色形状卡'))assert.notEqual(c.image?.src,imageGallery.characters.cat.src);
 });
+
+test('readable count comparisons preserve all nine input pairs and the required transfer amount', () => {
+  const pairs = [[5,7],[6,9],[7,11],[5,8],[6,10],[7,12],[5,7],[6,10],[7,13]];
+  const rounds = activities.filter(a=>a.primaryFamilyId==='N02');
+  for (const [index,a] of rounds.entries()) {
+    assert.equal(a.presentation.evidence.kind,'visualComparison');
+    assert.deepEqual(a.presentation.evidence.panels.map(p=>p.count),pairs[index]);
+    const answer = Number(a.tokens.find(t=>t.id===a.answerId).label);
+    assert.equal(answer,(pairs[index][1]-pairs[index][0])/(a.stage===3?2:1));
+  }
+});
+
+test('rearrangement keeps the same count and time comparisons provide both registered clock faces', () => {
+  for (const [index,a] of activities.filter(a=>a.primaryFamilyId==='N03'&&a.stage<3).entries()) {
+    const [before,after]=a.presentation.evidence.panels;
+    assert.equal(before.count,6+index);assert.equal(after.count,before.count);
+    assert.notEqual(before.columns,after.columns);
+  }
+  for (const a of activities.filter(a=>a.primaryFamilyId==='N14'&&a.stage===3)) {
+    const panels=a.presentation.evidence.panels;
+    assert.deepEqual(panels.map(p=>p.label),['开始','结束']);
+    assert.notEqual(panels[0].image.src,panels[1].image.src);
+    for(const panel of panels)assert.ok(existsSync('public'+panel.image.src));
+  }
+});
+
+test('making-ten comparisons display the original operands without printing the result', () => {
+  const operands=[[8,5],[9,6],[10,7],[13,7],[14,8],[15,9]];
+  for(const [index,a] of activities.filter(a=>a.primaryFamilyId==='N05'&&a.stage>1).entries()){
+    const [left,right]=a.presentation.evidence.panels;
+    assert.equal(left.kind,'placeValue');assert.equal(right.kind,'dots');
+    assert.deepEqual([left.tens*10+left.ones,right.count],operands[index]);
+    assert.equal(Number(left.label),operands[index][0]);
+  }
+});

@@ -17,6 +17,8 @@ function renderedImages(activity) {
   if (presentation?.evidence?.kind === 'storySequence')
     presentation.evidence.cards.forEach(image => add(image, 'evidence'));
   if (presentation?.evidence?.kind === 'collection') add(presentation.evidence.image, 'evidence');
+  if (presentation?.evidence?.kind === 'visualComparison')
+    presentation.evidence.panels.forEach(panel => { if (panel.kind === 'image') add(panel.image, 'evidence', panel.label); });
   if (activity.kind === 'parentObservation') {
     presentation?.storyCards?.forEach(image => add(image, 'story'));
     presentation?.materialCards?.forEach(card => add(card.image, 'material', card.label));

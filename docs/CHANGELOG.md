@@ -5,6 +5,13 @@ grouped by date.
 
 ## 2026-09-26
 
+### Readable math evidence within the current Mac window
+
+- Replaced tiny composite previews in 移一移比多少 and 变了样没变多 with two full-width comparison columns: 20px HTML headings and 30px countable dots. 凑十 comparisons now show large tens/ones and a 15px legend. Enlarged viewing preserves the same inputs and does not affect answers.
+- Split elapsed-time clocks into independently displayed local images with larger numerals. Allocated more area to simple math evidence such as number structures, place value, equations, rulers and perimeter diagrams; retained the three-column shell and dense interaction layouts.
+- Verified all 99 pages in the 11 related groups at 1280×788, plus representative wrong/hint/completed and enlarged states. Corrected six initial water/clock overflows. Passed 90 regressions and curriculum/illustration/voice-media audits; comparison against ac4b509 confirms every nonvisual field of all 621 exploration activities, the entire enlightenment bank and all 4003 voice lines are unchanged.
+- Rebuilt and installed the standard Mac app. Native access is still blocked by the locked Mac; final native acceptance and dev push remain pending. Evidence: specs/038-readable-math-evidence/verification/qa.md.
+
 ### Complete task pictures and preparation materials
 
 - Reviewed the current representation of all 75 exploration groups / 621 activities. Added 28 illustrated frames: six listening-story events, nine daily-use actions and thirteen preparation materials. All 15 atlases / 72 frames have active references; the previous 44 frames are preserved.
