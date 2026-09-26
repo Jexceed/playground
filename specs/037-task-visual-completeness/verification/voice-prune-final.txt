@@ -1,0 +1,12 @@
+Already up to date
+Done in 147ms using pnpm v11.19.0
+$ node scripts/prune-voice-assets.mjs -- --write
+{
+  "mode": "write",
+  "orphanCount": 2,
+  "deletedCount": 2,
+  "orphans": [
+    "public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-三到五件熟悉-安全的日常用品.mp3",
+    "public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-四张写着事件的卡片.mp3"
+  ]
+}

@@ -12,20 +12,22 @@ export function ParentActivity({ activity, response, disabled, onChange, mode, o
   const [stepIndex, setStepIndex] = useState(0);
   const [pictureIndex, setPictureIndex] = useState<number | null>(null);
   const storyCards = activity.presentation?.storyCards ?? [];
+  const materialCards = (activity.presentation?.materialCards ?? activity.materials.map(label => ({ label, image: undefined })))
+    .filter(material => !material.label.startsWith('屏幕上的'));
   useEffect(() => { setPictureIndex(null); }, [mode]);
   const wasDisabled = useRef(disabled);
   useEffect(() => { if (wasDisabled.current && !disabled) setStepIndex(0); wasDisabled.current = disabled; }, [disabled]);
-  const longTask = activity.steps.length > 3;
+  const longTask = activity.steps.length > 3 || Boolean(activity.illustration);
   const chooseStep = (index: number) => { stopSpeech(); setStepIndex(index); };
   const chooseMode = (next: ParentMode) => { stopSpeech(); setPictureIndex(null); onModeChange(next); };
-  return <div className="parent-playbook" data-mode={mode} data-story={storyCards.length > 0 || undefined}>
+  return <div className="parent-playbook" data-mode={mode} data-story={storyCards.length > 0 || undefined} data-reference={Boolean(activity.illustration) || undefined}>
     <div className="parent-mode" role="group" aria-label="亲子活动内容"><button type="button" aria-pressed={mode === 'play'} onClick={() => chooseMode('play')}>一起玩</button><button type="button" aria-pressed={mode === 'record'} onClick={() => chooseMode('record')}>记发现</button></div>
-    {mode === 'play' && activity.materials.length > 0 && <section className="parent-preparation">
+    {mode === 'play' && materialCards.length > 0 && <section className="parent-preparation">
       <h3><PackageOpen size={19} />先准备</h3>
-      <div className="parent-material-pictures">{(activity.presentation?.materialCards ?? activity.materials.map(label => ({ label, image: undefined }))).map((material, i) => <figure className={material.image ? '' : 'material-text-only'} key={i}>{material.image && <ActivityImage image={material.image} decorative />}<figcaption>{material.label}</figcaption></figure>)}</div>
+      <div className="parent-material-pictures">{materialCards.map((material, i) => <figure className={material.image ? '' : 'material-text-only'} key={i}>{material.image && <ActivityImage image={material.image} decorative />}<figcaption>{material.label}</figcaption></figure>)}</div>
     </section>}
     {mode === 'play' && <section className="parent-steps"><h3><Footprints size={19} />一起试一试</h3>
-      {storyCards.length > 0 && <div className="parent-story-strip">{storyCards.map((art, i) => <figure key={i}><button type="button" className="story-picture" title={ACTIVITY_COPY.viewPicture} aria-label={`放大故事图：${art.alt}`} onClick={() => setPictureIndex(i)}><ActivityImage image={art} decorative /><span className="picture-enlarge-mark" aria-hidden="true"><Maximize2 size={15} /></span></button><figcaption>{art.alt}</figcaption></figure>)}</div>}
+      {storyCards.length > 0 && <div className="parent-story-strip">{storyCards.map((art, i) => <figure key={i}><button type="button" className="story-picture" title={ACTIVITY_COPY.viewPicture} aria-label={`放大故事图：${art.alt}`} onClick={() => setPictureIndex(i)}><ActivityImage image={art} className="parent-story-image" decorative /><span className="picture-enlarge-mark" aria-hidden="true"><Maximize2 size={15} /></span></button><figcaption>{art.alt}</figcaption></figure>)}</div>}
       {longTask && <div className="parent-step-nav" role="group" aria-label="选择操作步骤"><button type="button" aria-label="上一步" disabled={stepIndex === 0} onClick={() => chooseStep(stepIndex - 1)}><ChevronLeft size={17} /></button>{activity.steps.map((_, i) => <button type="button" key={i} aria-pressed={stepIndex === i} aria-label={`查看第${i + 1}步`} onClick={() => chooseStep(i)}>{i + 1}</button>)}<button type="button" aria-label="下一步" disabled={stepIndex === activity.steps.length - 1} onClick={() => chooseStep(stepIndex + 1)}><ChevronRight size={17} /></button><span className="parent-step-progress">第 {stepIndex + 1} / {activity.steps.length} 步</span></div>}
       <ol>{activity.steps.flatMap((step, i) => !longTask || i === stepIndex ? [<li key={step}><span className="parent-step-number">{i + 1}</span><p>{step}</p><button type="button" className="parent-step-listen" aria-label={`听第${i + 1}步`} onClick={() => void speak(step)}><Volume2 size={18} /></button></li>] : [])}</ol>
     </section>}

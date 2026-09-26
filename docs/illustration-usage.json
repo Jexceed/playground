@@ -1,7 +1,7 @@
 {
-  "atlasCount": 11,
-  "registeredFrameCount": 44,
-  "usedFrameCount": 44,
+  "atlasCount": 15,
+  "registeredFrameCount": 72,
+  "usedFrameCount": 72,
   "unusedFrames": [],
   "problems": [],
   "atlases": [
@@ -947,6 +947,16 @@
           "alt": "雨伞",
           "references": [
             {
+              "activityId": "explore-creative-explanation-1",
+              "family": "E04",
+              "gameId": "explore-creative-explanation",
+              "groupTitle": "我的解释和办法",
+              "world": "language",
+              "round": 1,
+              "surface": "story",
+              "label": "雨伞"
+            },
+            {
               "activityId": "explore-everyday-classification-2",
               "family": "P01",
               "gameId": "explore-everyday-classification",
@@ -984,6 +994,16 @@
               "world": "life",
               "round": 4,
               "surface": "token",
+              "label": "毛巾"
+            },
+            {
+              "activityId": "explore-everyday-classification-9",
+              "family": "P01",
+              "gameId": "explore-everyday-classification",
+              "groupTitle": "用品放对地方",
+              "world": "life",
+              "round": 9,
+              "surface": "material",
               "label": "毛巾"
             },
             {
@@ -1717,6 +1737,16 @@
           "alt": "塑料盒",
           "references": [
             {
+              "activityId": "explore-everyday-classification-8",
+              "family": "P01",
+              "gameId": "explore-everyday-classification",
+              "groupTitle": "用品放对地方",
+              "world": "life",
+              "round": 8,
+              "surface": "material",
+              "label": "塑料盒"
+            },
+            {
               "activityId": "explore-science-experiments-1",
               "family": "P03",
               "gameId": "explore-science-experiments",
@@ -1765,6 +1795,786 @@
               "round": 1,
               "surface": "material",
               "label": "一盆浅水"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "src": "/images/items/exploration-art/memory-event-stories.png",
+      "frames": [
+        {
+          "key": "memoryEvents1",
+          "src": "/images/items/exploration-art/memory-event-stories.png",
+          "index": 0,
+          "columns": 3,
+          "rows": 2,
+          "alt": "带苹果出门",
+          "references": [
+            {
+              "activityId": "explore-story-recall-4",
+              "family": "A05",
+              "gameId": "explore-story-recall",
+              "groupTitle": "故事留在脑海里",
+              "world": "memory",
+              "round": 4,
+              "surface": "token",
+              "label": "带苹果出门"
+            }
+          ]
+        },
+        {
+          "key": "memoryEvents2",
+          "src": "/images/items/exploration-art/memory-event-stories.png",
+          "index": 1,
+          "columns": 3,
+          "rows": 2,
+          "alt": "在树下等雨停",
+          "references": [
+            {
+              "activityId": "explore-story-recall-4",
+              "family": "A05",
+              "gameId": "explore-story-recall",
+              "groupTitle": "故事留在脑海里",
+              "world": "memory",
+              "round": 4,
+              "surface": "token",
+              "label": "在树下等雨停"
+            }
+          ]
+        },
+        {
+          "key": "memoryEvents3",
+          "src": "/images/items/exploration-art/memory-event-stories.png",
+          "index": 2,
+          "columns": 3,
+          "rows": 2,
+          "alt": "和小猫分苹果",
+          "references": [
+            {
+              "activityId": "explore-story-recall-4",
+              "family": "A05",
+              "gameId": "explore-story-recall",
+              "groupTitle": "故事留在脑海里",
+              "world": "memory",
+              "round": 4,
+              "surface": "token",
+              "label": "和小猫分苹果"
+            }
+          ]
+        },
+        {
+          "key": "memoryEvents4",
+          "src": "/images/items/exploration-art/memory-event-stories.png",
+          "index": 3,
+          "columns": 3,
+          "rows": 2,
+          "alt": "找来木板",
+          "references": [
+            {
+              "activityId": "explore-story-recall-5",
+              "family": "A05",
+              "gameId": "explore-story-recall",
+              "groupTitle": "故事留在脑海里",
+              "world": "memory",
+              "round": 5,
+              "surface": "token",
+              "label": "找来木板"
+            }
+          ]
+        },
+        {
+          "key": "memoryEvents5",
+          "src": "/images/items/exploration-art/memory-event-stories.png",
+          "index": 4,
+          "columns": 3,
+          "rows": 2,
+          "alt": "合作放好木板",
+          "references": [
+            {
+              "activityId": "explore-story-recall-5",
+              "family": "A05",
+              "gameId": "explore-story-recall",
+              "groupTitle": "故事留在脑海里",
+              "world": "memory",
+              "round": 5,
+              "surface": "token",
+              "label": "合作放好木板"
+            }
+          ]
+        },
+        {
+          "key": "memoryEvents6",
+          "src": "/images/items/exploration-art/memory-event-stories.png",
+          "index": 5,
+          "columns": 3,
+          "rows": 2,
+          "alt": "走过小桥",
+          "references": [
+            {
+              "activityId": "explore-story-recall-5",
+              "family": "A05",
+              "gameId": "explore-story-recall",
+              "groupTitle": "故事留在脑海里",
+              "world": "memory",
+              "round": 5,
+              "surface": "token",
+              "label": "走过小桥"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "src": "/images/items/exploration-art/everyday-actions.png",
+      "frames": [
+        {
+          "key": "everydayActions1",
+          "src": "/images/items/exploration-art/everyday-actions.png",
+          "index": 0,
+          "columns": 3,
+          "rows": 3,
+          "alt": "喝水",
+          "references": [
+            {
+              "activityId": "explore-everyday-classification-1",
+              "family": "P01",
+              "gameId": "explore-everyday-classification",
+              "groupTitle": "用品放对地方",
+              "world": "life",
+              "round": 1,
+              "surface": "token",
+              "label": "喝水"
+            },
+            {
+              "activityId": "explore-everyday-classification-4",
+              "family": "P01",
+              "gameId": "explore-everyday-classification",
+              "groupTitle": "用品放对地方",
+              "world": "life",
+              "round": 4,
+              "surface": "token",
+              "label": "喝水"
+            }
+          ]
+        },
+        {
+          "key": "everydayActions2",
+          "src": "/images/items/exploration-art/everyday-actions.png",
+          "index": 1,
+          "columns": 3,
+          "rows": 3,
+          "alt": "画线",
+          "references": [
+            {
+              "activityId": "explore-everyday-classification-1",
+              "family": "P01",
+              "gameId": "explore-everyday-classification",
+              "groupTitle": "用品放对地方",
+              "world": "life",
+              "round": 1,
+              "surface": "token",
+              "label": "画线"
+            },
+            {
+              "activityId": "explore-everyday-classification-4",
+              "family": "P01",
+              "gameId": "explore-everyday-classification",
+              "groupTitle": "用品放对地方",
+              "world": "life",
+              "round": 4,
+              "surface": "token",
+              "label": "画线"
+            }
+          ]
+        },
+        {
+          "key": "everydayActions3",
+          "src": "/images/items/exploration-art/everyday-actions.png",
+          "index": 2,
+          "columns": 3,
+          "rows": 3,
+          "alt": "擦干",
+          "references": [
+            {
+              "activityId": "explore-everyday-classification-4",
+              "family": "P01",
+              "gameId": "explore-everyday-classification",
+              "groupTitle": "用品放对地方",
+              "world": "life",
+              "round": 4,
+              "surface": "token",
+              "label": "擦干"
+            }
+          ]
+        },
+        {
+          "key": "everydayActions4",
+          "src": "/images/items/exploration-art/everyday-actions.png",
+          "index": 3,
+          "columns": 3,
+          "rows": 3,
+          "alt": "挡雨",
+          "references": [
+            {
+              "activityId": "explore-everyday-classification-2",
+              "family": "P01",
+              "gameId": "explore-everyday-classification",
+              "groupTitle": "用品放对地方",
+              "world": "life",
+              "round": 2,
+              "surface": "token",
+              "label": "挡雨"
+            },
+            {
+              "activityId": "explore-everyday-classification-5",
+              "family": "P01",
+              "gameId": "explore-everyday-classification",
+              "groupTitle": "用品放对地方",
+              "world": "life",
+              "round": 5,
+              "surface": "token",
+              "label": "挡雨"
+            }
+          ]
+        },
+        {
+          "key": "everydayActions5",
+          "src": "/images/items/exploration-art/everyday-actions.png",
+          "index": 4,
+          "columns": 3,
+          "rows": 3,
+          "alt": "遮阳",
+          "references": [
+            {
+              "activityId": "explore-everyday-classification-2",
+              "family": "P01",
+              "gameId": "explore-everyday-classification",
+              "groupTitle": "用品放对地方",
+              "world": "life",
+              "round": 2,
+              "surface": "token",
+              "label": "遮阳"
+            },
+            {
+              "activityId": "explore-everyday-classification-5",
+              "family": "P01",
+              "gameId": "explore-everyday-classification",
+              "groupTitle": "用品放对地方",
+              "world": "life",
+              "round": 5,
+              "surface": "token",
+              "label": "遮阳"
+            }
+          ]
+        },
+        {
+          "key": "everydayActions6",
+          "src": "/images/items/exploration-art/everyday-actions.png",
+          "index": 5,
+          "columns": 3,
+          "rows": 3,
+          "alt": "装饭",
+          "references": [
+            {
+              "activityId": "explore-everyday-classification-5",
+              "family": "P01",
+              "gameId": "explore-everyday-classification",
+              "groupTitle": "用品放对地方",
+              "world": "life",
+              "round": 5,
+              "surface": "token",
+              "label": "装饭"
+            }
+          ]
+        },
+        {
+          "key": "everydayActions7",
+          "src": "/images/items/exploration-art/everyday-actions.png",
+          "index": 6,
+          "columns": 3,
+          "rows": 3,
+          "alt": "拼搭",
+          "references": [
+            {
+              "activityId": "explore-everyday-classification-3",
+              "family": "P01",
+              "gameId": "explore-everyday-classification",
+              "groupTitle": "用品放对地方",
+              "world": "life",
+              "round": 3,
+              "surface": "token",
+              "label": "拼搭"
+            },
+            {
+              "activityId": "explore-everyday-classification-6",
+              "family": "P01",
+              "gameId": "explore-everyday-classification",
+              "groupTitle": "用品放对地方",
+              "world": "life",
+              "round": 6,
+              "surface": "token",
+              "label": "拼搭"
+            }
+          ]
+        },
+        {
+          "key": "everydayActions8",
+          "src": "/images/items/exploration-art/everyday-actions.png",
+          "index": 7,
+          "columns": 3,
+          "rows": 3,
+          "alt": "阅读",
+          "references": [
+            {
+              "activityId": "explore-everyday-classification-3",
+              "family": "P01",
+              "gameId": "explore-everyday-classification",
+              "groupTitle": "用品放对地方",
+              "world": "life",
+              "round": 3,
+              "surface": "token",
+              "label": "阅读"
+            },
+            {
+              "activityId": "explore-everyday-classification-6",
+              "family": "P01",
+              "gameId": "explore-everyday-classification",
+              "groupTitle": "用品放对地方",
+              "world": "life",
+              "round": 6,
+              "surface": "token",
+              "label": "阅读"
+            }
+          ]
+        },
+        {
+          "key": "everydayActions9",
+          "src": "/images/items/exploration-art/everyday-actions.png",
+          "index": 8,
+          "columns": 3,
+          "rows": 3,
+          "alt": "量长度",
+          "references": [
+            {
+              "activityId": "explore-everyday-classification-6",
+              "family": "P01",
+              "gameId": "explore-everyday-classification",
+              "groupTitle": "用品放对地方",
+              "world": "life",
+              "round": 6,
+              "surface": "token",
+              "label": "量长度"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "src": "/images/items/exploration-art/parent-materials.png",
+      "frames": [
+        {
+          "key": "parentMaterials1",
+          "src": "/images/items/exploration-art/parent-materials.png",
+          "index": 0,
+          "columns": 3,
+          "rows": 3,
+          "alt": "圆柱形积木",
+          "references": [
+            {
+              "activityId": "explore-solid-views-count-1",
+              "family": "G16",
+              "gameId": "explore-solid-views-count",
+              "groupTitle": "积木的另一面",
+              "world": "graphic",
+              "round": 1,
+              "surface": "material",
+              "label": "圆柱形积木"
+            },
+            {
+              "activityId": "explore-solid-views-count-2",
+              "family": "G16",
+              "gameId": "explore-solid-views-count",
+              "groupTitle": "积木的另一面",
+              "world": "graphic",
+              "round": 2,
+              "surface": "material",
+              "label": "圆柱形积木"
+            },
+            {
+              "activityId": "explore-solid-views-count-3",
+              "family": "G16",
+              "gameId": "explore-solid-views-count",
+              "groupTitle": "积木的另一面",
+              "world": "graphic",
+              "round": 3,
+              "surface": "material",
+              "label": "圆柱形积木"
+            }
+          ]
+        },
+        {
+          "key": "parentMaterials2",
+          "src": "/images/items/exploration-art/parent-materials.png",
+          "index": 1,
+          "columns": 3,
+          "rows": 3,
+          "alt": "方积木",
+          "references": [
+            {
+              "activityId": "explore-solid-views-count-1",
+              "family": "G16",
+              "gameId": "explore-solid-views-count",
+              "groupTitle": "积木的另一面",
+              "world": "graphic",
+              "round": 1,
+              "surface": "material",
+              "label": "三到五块方积木"
+            },
+            {
+              "activityId": "explore-solid-views-count-2",
+              "family": "G16",
+              "gameId": "explore-solid-views-count",
+              "groupTitle": "积木的另一面",
+              "world": "graphic",
+              "round": 2,
+              "surface": "material",
+              "label": "三到五块方积木"
+            },
+            {
+              "activityId": "explore-solid-views-count-3",
+              "family": "G16",
+              "gameId": "explore-solid-views-count",
+              "groupTitle": "积木的另一面",
+              "world": "graphic",
+              "round": 3,
+              "surface": "material",
+              "label": "三到五块方积木"
+            },
+            {
+              "activityId": "explore-science-experiments-3",
+              "family": "P03",
+              "gameId": "explore-science-experiments",
+              "groupTitle": "一起做小实验",
+              "world": "life",
+              "round": 3,
+              "surface": "material",
+              "label": "不透明积木"
+            },
+            {
+              "activityId": "explore-senses-social-rules-1",
+              "family": "P04",
+              "gameId": "explore-senses-social-rules",
+              "groupTitle": "生活里的判断",
+              "world": "life",
+              "round": 1,
+              "surface": "material",
+              "label": "大积木"
+            },
+            {
+              "activityId": "explore-fine-motor-action-2",
+              "family": "P06",
+              "gameId": "explore-fine-motor-action",
+              "groupTitle": "小手和身体挑战",
+              "world": "life",
+              "round": 2,
+              "surface": "material",
+              "label": "大积木"
+            }
+          ]
+        },
+        {
+          "key": "parentMaterials3",
+          "src": "/images/items/exploration-art/parent-materials.png",
+          "index": 2,
+          "columns": 3,
+          "rows": 3,
+          "alt": "透明杯",
+          "references": [
+            {
+              "activityId": "explore-nature-growth-7",
+              "family": "P02",
+              "gameId": "explore-nature-growth",
+              "groupTitle": "变化观察册",
+              "world": "life",
+              "round": 7,
+              "surface": "material",
+              "label": "透明杯"
+            }
+          ]
+        },
+        {
+          "key": "parentMaterials4",
+          "src": "/images/items/exploration-art/parent-materials.png",
+          "index": 3,
+          "columns": 3,
+          "rows": 3,
+          "alt": "不透明袋",
+          "references": [
+            {
+              "activityId": "explore-everyday-classification-8",
+              "family": "P01",
+              "gameId": "explore-everyday-classification",
+              "groupTitle": "用品放对地方",
+              "world": "life",
+              "round": 8,
+              "surface": "material",
+              "label": "布袋"
+            },
+            {
+              "activityId": "explore-senses-social-rules-1",
+              "family": "P04",
+              "gameId": "explore-senses-social-rules",
+              "groupTitle": "生活里的判断",
+              "world": "life",
+              "round": 1,
+              "surface": "material",
+              "label": "不透明袋"
+            }
+          ]
+        },
+        {
+          "key": "parentMaterials5",
+          "src": "/images/items/exploration-art/parent-materials.png",
+          "index": 4,
+          "columns": 3,
+          "rows": 3,
+          "alt": "布片",
+          "references": [
+            {
+              "activityId": "explore-senses-social-rules-1",
+              "family": "P04",
+              "gameId": "explore-senses-social-rules",
+              "groupTitle": "生活里的判断",
+              "world": "life",
+              "round": 1,
+              "surface": "material",
+              "label": "布片"
+            }
+          ]
+        },
+        {
+          "key": "parentMaterials6",
+          "src": "/images/items/exploration-art/parent-materials.png",
+          "index": 5,
+          "columns": 3,
+          "rows": 3,
+          "alt": "小托盘",
+          "references": [
+            {
+              "activityId": "explore-fine-motor-action-2",
+              "family": "P06",
+              "gameId": "explore-fine-motor-action",
+              "groupTitle": "小手和身体挑战",
+              "world": "life",
+              "round": 2,
+              "surface": "material",
+              "label": "小托盘"
+            }
+          ]
+        },
+        {
+          "key": "parentMaterials7",
+          "src": "/images/items/exploration-art/parent-materials.png",
+          "index": 6,
+          "columns": 3,
+          "rows": 3,
+          "alt": "手电筒",
+          "references": [
+            {
+              "activityId": "explore-science-experiments-3",
+              "family": "P03",
+              "gameId": "explore-science-experiments",
+              "groupTitle": "一起做小实验",
+              "world": "life",
+              "round": 3,
+              "surface": "material",
+              "label": "手电筒"
+            }
+          ]
+        },
+        {
+          "key": "parentMaterials8",
+          "src": "/images/items/exploration-art/parent-materials.png",
+          "index": 7,
+          "columns": 3,
+          "rows": 3,
+          "alt": "橡皮泥",
+          "references": [
+            {
+              "activityId": "explore-science-experiments-3",
+              "family": "P03",
+              "gameId": "explore-science-experiments",
+              "groupTitle": "一起做小实验",
+              "world": "life",
+              "round": 3,
+              "surface": "material",
+              "label": "橡皮泥"
+            }
+          ]
+        },
+        {
+          "key": "parentMaterials9",
+          "src": "/images/items/exploration-art/parent-materials.png",
+          "index": 8,
+          "columns": 3,
+          "rows": 3,
+          "alt": "塑料切刀",
+          "references": [
+            {
+              "activityId": "explore-science-experiments-3",
+              "family": "P03",
+              "gameId": "explore-science-experiments",
+              "groupTitle": "一起做小实验",
+              "world": "life",
+              "round": 3,
+              "surface": "material",
+              "label": "家长操作的塑料切刀"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "src": "/images/items/exploration-art/craft-materials.png",
+      "frames": [
+        {
+          "key": "craftMaterials1",
+          "src": "/images/items/exploration-art/craft-materials.png",
+          "index": 0,
+          "columns": 2,
+          "rows": 2,
+          "alt": "白纸",
+          "references": [
+            {
+              "activityId": "explore-science-experiments-2",
+              "family": "P03",
+              "gameId": "explore-science-experiments",
+              "groupTitle": "一起做小实验",
+              "world": "life",
+              "round": 2,
+              "surface": "material",
+              "label": "白纸"
+            },
+            {
+              "activityId": "explore-fine-motor-action-1",
+              "family": "P06",
+              "gameId": "explore-fine-motor-action",
+              "groupTitle": "小手和身体挑战",
+              "world": "life",
+              "round": 1,
+              "surface": "material",
+              "label": "纸"
+            }
+          ]
+        },
+        {
+          "key": "craftMaterials2",
+          "src": "/images/items/exploration-art/craft-materials.png",
+          "index": 1,
+          "columns": 2,
+          "rows": 2,
+          "alt": "彩笔",
+          "references": [
+            {
+              "activityId": "explore-fold-cut-1",
+              "family": "G15",
+              "gameId": "explore-fold-cut",
+              "groupTitle": "折开会怎样",
+              "world": "graphic",
+              "round": 1,
+              "surface": "material",
+              "label": "彩笔"
+            },
+            {
+              "activityId": "explore-fold-cut-2",
+              "family": "G15",
+              "gameId": "explore-fold-cut",
+              "groupTitle": "折开会怎样",
+              "world": "graphic",
+              "round": 2,
+              "surface": "material",
+              "label": "彩笔"
+            },
+            {
+              "activityId": "explore-fold-cut-3",
+              "family": "G15",
+              "gameId": "explore-fold-cut",
+              "groupTitle": "折开会怎样",
+              "world": "graphic",
+              "round": 3,
+              "surface": "material",
+              "label": "彩笔"
+            },
+            {
+              "activityId": "explore-everyday-classification-7",
+              "family": "P01",
+              "gameId": "explore-everyday-classification",
+              "groupTitle": "用品放对地方",
+              "world": "life",
+              "round": 7,
+              "surface": "material",
+              "label": "彩笔"
+            },
+            {
+              "activityId": "explore-fine-motor-action-1",
+              "family": "P06",
+              "gameId": "explore-fine-motor-action",
+              "groupTitle": "小手和身体挑战",
+              "world": "life",
+              "round": 1,
+              "surface": "material",
+              "label": "彩笔"
+            }
+          ]
+        },
+        {
+          "key": "craftMaterials3",
+          "src": "/images/items/exploration-art/craft-materials.png",
+          "index": 2,
+          "columns": 2,
+          "rows": 2,
+          "alt": "透明彩色片",
+          "references": [
+            {
+              "activityId": "explore-science-experiments-2",
+              "family": "P03",
+              "gameId": "explore-science-experiments",
+              "groupTitle": "一起做小实验",
+              "world": "life",
+              "round": 2,
+              "surface": "material",
+              "label": "透明彩色片"
+            }
+          ]
+        },
+        {
+          "key": "craftMaterials4",
+          "src": "/images/items/exploration-art/craft-materials.png",
+          "index": 3,
+          "columns": 2,
+          "rows": 2,
+          "alt": "软垫",
+          "references": [
+            {
+              "activityId": "explore-senses-social-rules-2",
+              "family": "P04",
+              "gameId": "explore-senses-social-rules",
+              "groupTitle": "生活里的判断",
+              "world": "life",
+              "round": 2,
+              "surface": "material",
+              "label": "软垫"
+            },
+            {
+              "activityId": "explore-fine-motor-action-2",
+              "family": "P06",
+              "gameId": "explore-fine-motor-action",
+              "groupTitle": "小手和身体挑战",
+              "world": "life",
+              "round": 2,
+              "surface": "material",
+              "label": "软垫"
             }
           ]
         }

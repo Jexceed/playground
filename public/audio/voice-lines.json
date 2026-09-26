@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-25T12:01:46.710Z",
+  "generatedAt": "2026-09-26T02:53:42.666Z",
   "recommendedVoice": "warm adult female Mandarin, smiling, preschool teacher, 0.85 speed, crisp consonants",
-  "lineCount": 3996,
+  "lineCount": 4003,
   "lines": [
     {
       "id": "game-title-数一数",
@@ -35122,9 +35122,9 @@
       ]
     },
     {
-      "id": "hint-家长先转身-孩子在心里选一张-九张都留在桌上-不指给家长看",
+      "id": "hint-家长先转身-孩子看图在心里选一张-九张都留在屏幕上-不指给家长看",
       "kind": "hint",
-      "text": "家长先转身。孩子在心里选一张，九张都留在桌上，不指给家长看。",
+      "text": "家长先转身。孩子看图在心里选一张，九张都留在屏幕上，不指给家长看。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -35144,9 +35144,9 @@
       ]
     },
     {
-      "id": "instruction-家长先转身-孩子在心里选一张-九张都留在桌上-不指给家长看",
+      "id": "instruction-家长先转身-孩子看图在心里选一张-九张都留在屏幕上-不指给家长看",
       "kind": "instruction",
-      "text": "家长先转身。孩子在心里选一张，九张都留在桌上，不指给家长看。",
+      "text": "家长先转身。孩子看图在心里选一张，九张都留在屏幕上，不指给家长看。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -35214,9 +35214,9 @@
       ]
     },
     {
-      "id": "parent-三种颜色-三种形状的九张图卡",
+      "id": "parent-屏幕上的九张颜色形状卡",
       "kind": "parent",
-      "text": "三种颜色、三种形状的九张图卡",
+      "text": "屏幕上的九张颜色形状卡",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -40906,7 +40906,9 @@
       "contexts": [
         "explore-fold-cut/explore-fold-cut-1",
         "explore-fold-cut/explore-fold-cut-2",
-        "explore-fold-cut/explore-fold-cut-3"
+        "explore-fold-cut/explore-fold-cut-3",
+        "explore-everyday-classification/explore-everyday-classification-7",
+        "explore-fine-motor-action/explore-fine-motor-action-1"
       ]
     },
     {
@@ -45284,7 +45286,8 @@
       "contexts": [
         "explore-describe-relations/explore-describe-relations-1",
         "explore-describe-relations/explore-describe-relations-2",
-        "explore-describe-relations/explore-describe-relations-3"
+        "explore-describe-relations/explore-describe-relations-3",
+        "explore-creative-explanation/explore-creative-explanation-2"
       ]
     },
     {
@@ -45297,6 +45300,8 @@
         "explore-describe-relations/explore-describe-relations-1",
         "explore-describe-relations/explore-describe-relations-2",
         "explore-describe-relations/explore-describe-relations-3",
+        "explore-everyday-classification/explore-everyday-classification-7",
+        "explore-everyday-classification/explore-everyday-classification-9",
         "explore-science-experiments/explore-science-experiments-2"
       ]
     },
@@ -46002,9 +46007,9 @@
       ]
     },
     {
-      "id": "parent-四张写着事件的卡片",
+      "id": "parent-屏幕上的四张故事图",
       "kind": "parent",
-      "text": "四张写着事件的卡片",
+      "text": "屏幕上的四张故事图",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -46186,9 +46191,9 @@
       ]
     },
     {
-      "id": "hint-选三张图卡-说出角色和地点",
+      "id": "hint-从四张图卡中选三张-说出故事里的角色和地点",
       "kind": "hint",
-      "text": "选三张图卡，说出角色和地点。",
+      "text": "从四张图卡中选三张，说出故事里的角色和地点。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -46196,9 +46201,9 @@
       ]
     },
     {
-      "id": "hint-讲一件把三张图卡连起来的事",
+      "id": "hint-讲一件把选中的三张图卡连起来的事",
       "kind": "hint",
-      "text": "讲一件把三张图卡连起来的事。",
+      "text": "讲一件把选中的三张图卡连起来的事。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -46206,9 +46211,9 @@
       ]
     },
     {
-      "id": "instruction-选三张图卡-说出角色和地点",
+      "id": "instruction-从四张图卡中选三张-说出故事里的角色和地点",
       "kind": "instruction",
-      "text": "选三张图卡，说出角色和地点。",
+      "text": "从四张图卡中选三张，说出故事里的角色和地点。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -46216,9 +46221,9 @@
       ]
     },
     {
-      "id": "instruction-讲一件把三张图卡连起来的事",
+      "id": "instruction-讲一件把选中的三张图卡连起来的事",
       "kind": "instruction",
-      "text": "讲一件把三张图卡连起来的事。",
+      "text": "讲一件把选中的三张图卡连起来的事。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -46226,9 +46231,9 @@
       ]
     },
     {
-      "id": "instruction-家长改变其中一张-孩子调整故事使它仍然连贯",
+      "id": "instruction-用剩下的一张替换其中一张-再调整故事使它仍然连贯",
       "kind": "instruction",
-      "text": "家长改变其中一张，孩子调整故事使它仍然连贯。",
+      "text": "用剩下的一张替换其中一张，再调整故事使它仍然连贯。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -46272,32 +46277,13 @@
       ]
     },
     {
-      "id": "parent-三张喜欢的图卡",
+      "id": "parent-屏幕上的四张图卡",
       "kind": "parent",
-      "text": "三张喜欢的图卡",
+      "text": "屏幕上的四张图卡",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "explore-creative-explanation/explore-creative-explanation-1",
-        "explore-creative-explanation/explore-creative-explanation-2",
-        "explore-creative-explanation/explore-creative-explanation-3"
-      ]
-    },
-    {
-      "id": "parent-纸和笔",
-      "kind": "parent",
-      "text": "纸和笔",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "explore-creative-explanation/explore-creative-explanation-1",
-        "explore-creative-explanation/explore-creative-explanation-2",
-        "explore-creative-explanation/explore-creative-explanation-3",
-        "explore-nature-growth/explore-nature-growth-7",
-        "explore-nature-growth/explore-nature-growth-8",
-        "explore-nature-growth/explore-nature-growth-9",
-        "explore-senses-social-rules/explore-senses-social-rules-3",
-        "explore-culture-world/explore-culture-world-3"
+        "explore-creative-explanation/explore-creative-explanation-1"
       ]
     },
     {
@@ -46321,9 +46307,9 @@
       ]
     },
     {
-      "id": "hint-用积木想两种让玩具过河的办法",
+      "id": "hint-把纸条当小河-用积木想两种让玩具过河的办法",
       "kind": "hint",
-      "text": "用积木想两种让玩具过河的办法。",
+      "text": "把纸条当小河，用积木想两种让玩具过河的办法。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -46341,9 +46327,9 @@
       ]
     },
     {
-      "id": "instruction-用积木想两种让玩具过河的办法",
+      "id": "instruction-把纸条当小河-用积木想两种让玩具过河的办法",
       "kind": "instruction",
-      "text": "用积木想两种让玩具过河的办法。",
+      "text": "把纸条当小河，用积木想两种让玩具过河的办法。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -46371,6 +46357,27 @@
       ]
     },
     {
+      "id": "parent-积木",
+      "kind": "parent",
+      "text": "积木",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-creative-explanation/explore-creative-explanation-2",
+        "explore-everyday-classification/explore-everyday-classification-9"
+      ]
+    },
+    {
+      "id": "parent-纸条当小河",
+      "kind": "parent",
+      "text": "纸条当小河",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-creative-explanation/explore-creative-explanation-2"
+      ]
+    },
+    {
       "id": "prompt-证据够不够-和家长一起操作-说一说-再记录这次的发现",
       "kind": "prompt",
       "text": "证据够不够。和家长一起操作、说一说，再记录这次的发现。",
@@ -46391,9 +46398,9 @@
       ]
     },
     {
-      "id": "hint-家长说-地上有水-所以一定是小狗打翻了杯子",
+      "id": "hint-先看房间图-家长说-地上有水-所以一定是小狗打翻了杯子",
       "kind": "hint",
-      "text": "家长说“地上有水，所以一定是小狗打翻了杯子”。",
+      "text": "先看房间图。家长说“地上有水，所以一定是小狗打翻了杯子”。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -46401,9 +46408,9 @@
       ]
     },
     {
-      "id": "hint-孩子找出这句话里哪些是看到的-哪些是猜的",
+      "id": "hint-指出哪些是图里看到的-哪些只是猜测-靠近水杯也不能证明是谁打翻的",
       "kind": "hint",
-      "text": "孩子找出这句话里哪些是看到的，哪些是猜的。",
+      "text": "指出哪些是图里看到的，哪些只是猜测；靠近水杯也不能证明是谁打翻的。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -46411,9 +46418,9 @@
       ]
     },
     {
-      "id": "instruction-家长说-地上有水-所以一定是小狗打翻了杯子",
+      "id": "instruction-先看房间图-家长说-地上有水-所以一定是小狗打翻了杯子",
       "kind": "instruction",
-      "text": "家长说“地上有水，所以一定是小狗打翻了杯子”。",
+      "text": "先看房间图。家长说“地上有水，所以一定是小狗打翻了杯子”。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -46421,9 +46428,9 @@
       ]
     },
     {
-      "id": "instruction-孩子找出这句话里哪些是看到的-哪些是猜的",
+      "id": "instruction-指出哪些是图里看到的-哪些只是猜测-靠近水杯也不能证明是谁打翻的",
       "kind": "instruction",
-      "text": "孩子找出这句话里哪些是看到的，哪些是猜的。",
+      "text": "指出哪些是图里看到的，哪些只是猜测；靠近水杯也不能证明是谁打翻的。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -46431,9 +46438,19 @@
       ]
     },
     {
-      "id": "instruction-提出另一种可能-并说还想看什么线索",
+      "id": "instruction-提出另一种可能-并说还需要看到什么经过或线索",
       "kind": "instruction",
-      "text": "提出另一种可能，并说还想看什么线索。",
+      "text": "提出另一种可能，并说还需要看到什么经过或线索。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-creative-explanation/explore-creative-explanation-3"
+      ]
+    },
+    {
+      "id": "parent-屏幕上的房间图",
+      "kind": "parent",
+      "text": "屏幕上的房间图",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -47991,18 +48008,6 @@
       ]
     },
     {
-      "id": "parent-三到五件熟悉-安全的日常用品",
-      "kind": "parent",
-      "text": "三到五件熟悉、安全的日常用品",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "explore-everyday-classification/explore-everyday-classification-7",
-        "explore-everyday-classification/explore-everyday-classification-8",
-        "explore-everyday-classification/explore-everyday-classification-9"
-      ]
-    },
-    {
       "id": "prompt-材料和场景-和家长一起操作-说一说-再记录这次的发现",
       "kind": "prompt",
       "text": "材料和场景。和家长一起操作、说一说，再记录这次的发现。",
@@ -48063,6 +48068,47 @@
       ]
     },
     {
+      "id": "parent-纸盒",
+      "kind": "parent",
+      "text": "纸盒",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-everyday-classification/explore-everyday-classification-8"
+      ]
+    },
+    {
+      "id": "parent-布袋",
+      "kind": "parent",
+      "text": "布袋",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-everyday-classification/explore-everyday-classification-8"
+      ]
+    },
+    {
+      "id": "parent-塑料盒",
+      "kind": "parent",
+      "text": "塑料盒",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-everyday-classification/explore-everyday-classification-8",
+        "explore-science-experiments/explore-science-experiments-1"
+      ]
+    },
+    {
+      "id": "parent-少量水或干物品",
+      "kind": "parent",
+      "text": "少量水或干物品",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-everyday-classification/explore-everyday-classification-8"
+      ]
+    },
+    {
       "id": "prompt-整理规则换一换-和家长一起操作-说一说-再记录这次的发现",
       "kind": "prompt",
       "text": "整理规则换一换。和家长一起操作、说一说，再记录这次的发现。",
@@ -48116,6 +48162,26 @@
       "id": "instruction-指出哪件物品换了组-说明改变的是规则而不是物品",
       "kind": "instruction",
       "text": "指出哪件物品换了组，说明改变的是规则而不是物品。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-everyday-classification/explore-everyday-classification-9"
+      ]
+    },
+    {
+      "id": "parent-毛巾",
+      "kind": "parent",
+      "text": "毛巾",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-everyday-classification/explore-everyday-classification-9"
+      ]
+    },
+    {
+      "id": "parent-书本",
+      "kind": "parent",
+      "text": "书本",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -48719,6 +48785,20 @@
       ]
     },
     {
+      "id": "parent-纸和笔",
+      "kind": "parent",
+      "text": "纸和笔",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-nature-growth/explore-nature-growth-7",
+        "explore-nature-growth/explore-nature-growth-8",
+        "explore-nature-growth/explore-nature-growth-9",
+        "explore-senses-social-rules/explore-senses-social-rules-3",
+        "explore-culture-world/explore-culture-world-3"
+      ]
+    },
+    {
       "id": "prompt-寻找小动物的变化-和家长一起操作-说一说-再记录这次的发现",
       "kind": "prompt",
       "text": "寻找小动物的变化。和家长一起操作、说一说，再记录这次的发现。",
@@ -48911,16 +48991,6 @@
       "id": "parent-金属勺",
       "kind": "parent",
       "text": "金属勺",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "explore-science-experiments/explore-science-experiments-1"
-      ]
-    },
-    {
-      "id": "parent-塑料盒",
-      "kind": "parent",
-      "text": "塑料盒",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -49848,9 +49918,9 @@
       ]
     },
     {
-      "id": "hint-先用手指沿粗线走一遍-再尝试沿线折纸",
+      "id": "hint-家长照着模板在纸上画粗线-孩子先用手指沿线走-再沿直线折纸",
       "kind": "hint",
-      "text": "先用手指沿粗线走一遍，再尝试沿线折纸。",
+      "text": "家长照着模板在纸上画粗线，孩子先用手指沿线走，再沿直线折纸。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -49858,9 +49928,9 @@
       ]
     },
     {
-      "id": "hint-由家长示范剪口-孩子按自己的操作能力沿简单线条剪或撕",
+      "id": "hint-家长先示范剪口-孩子按自己的能力沿粗线剪或撕",
       "kind": "hint",
-      "text": "由家长示范剪口，孩子按自己的操作能力沿简单线条剪或撕。",
+      "text": "家长先示范剪口，孩子按自己的能力沿粗线剪或撕。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -49868,9 +49938,9 @@
       ]
     },
     {
-      "id": "instruction-先用手指沿粗线走一遍-再尝试沿线折纸",
+      "id": "instruction-家长照着模板在纸上画粗线-孩子先用手指沿线走-再沿直线折纸",
       "kind": "instruction",
-      "text": "先用手指沿粗线走一遍，再尝试沿线折纸。",
+      "text": "家长照着模板在纸上画粗线，孩子先用手指沿线走，再沿直线折纸。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -49878,9 +49948,9 @@
       ]
     },
     {
-      "id": "instruction-由家长示范剪口-孩子按自己的操作能力沿简单线条剪或撕",
+      "id": "instruction-家长先示范剪口-孩子按自己的能力沿粗线剪或撕",
       "kind": "instruction",
-      "text": "由家长示范剪口，孩子按自己的操作能力沿简单线条剪或撕。",
+      "text": "家长先示范剪口，孩子按自己的能力沿粗线剪或撕。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -49944,9 +50014,9 @@
       ]
     },
     {
-      "id": "parent-粗线模板",
+      "id": "parent-屏幕上的粗线模板",
       "kind": "parent",
-      "text": "粗线模板",
+      "text": "屏幕上的粗线模板",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [

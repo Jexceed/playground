@@ -44,9 +44,9 @@ test('parent observations record participation and support without inventing a c
  let state=session.createSession(a);state=session.transitionSession(a,state,{type:'response',response});state=session.transitionSession(a,state,{type:'submit'});
  assert.equal(state.phase,'complete');assert.equal(state.attempts,0);assert.equal(state.evidence[0].kind,'observation');
  const storage={data:new Map(),getItem(k){return this.data.get(k)??null},setItem(k,v){this.data.set(k,v)}};
- storeApi.recordActivityEvent(a.id,1,{id:'parent-1',...state.evidence[0]},storage,100);
+ storeApi.recordActivityEvent(a.id,a.revision,{id:'parent-1',...state.evidence[0]},storage,100);
  const saved=storeApi.readActivityProgress(storage).progress;
- assert.equal(saved.entries[a.id+'@1'].correctAttempts,0);assert.equal(saved.entries[a.id+'@1'].observedAt,100);
+ assert.equal(saved.entries[`${a.id}@${a.revision}`].correctAttempts,0);assert.equal(saved.entries[`${a.id}@${a.revision}`].observedAt,100);
  assert.ok(storeApi.mergeActivityProgress({completedIds:[],completedRoundIds:[],abilityTags:[]},[{id:'parent-group',rounds:[a]}],saved).completedRoundIds.includes(a.id));
 });
 test('finite inventory prevents overdrawing, but allows replacement and undo without consuming attempts',()=>{

@@ -3,7 +3,7 @@ import { set, nine, choice, numeric, selection, ordered, fillGrid, parent, base,
 import { picture, text, rect, circle, line, grid, mosaic, symbol, panels, blocks, palette, transform, type Drawing, type Primitive } from './draw';
 import type { Activity } from '../../domain/activity';
 import type { ConstructionActivity, Point3, Piece } from '../../domain/advanced-activity';
-import { foldedPaperScene, holePattern } from './task-diagrams';
+import { facingPerson, foldedPaperScene, holePattern } from './task-diagrams';
 import { pyramidActivity } from './pyramid';
 
 /** Empty upper cells show the combination route without exposing any intermediate answer. */
@@ -169,7 +169,7 @@ export const graphicSets = [
         const n = heights.reduce((a, b) => a + b, 0);
         return numeric('G16', i, '每摞从地面连续向上搭，没有空洞。一共几块？', n, [n - 1, n + 1, heights.filter(n => n > 0).length], '把每摞的块数加起来，挡在后面的也不能漏掉。', panels([{ title: '积木', drawing: art }, { title: '从上面标出每摞块数', drawing: grid(heights, columns) }]), { operation: 'add', values: heights });
     } const candidates = [heights, [heights[0], heights[1] + 1, heights[2], heights[3]], [...heights.slice(0, 3), heights[3] + 1], [heights[0], heights[1], heights[2] + 1, heights[3]]]; const front = (h: number[]) => [Math.max(h[0], h[2]), Math.max(h[1], h[3])], side = (h: number[]) => [Math.max(h[0], h[1]), Math.max(h[2], h[3])]; const mask = (h: number[]) => h.map(n => n > 0); const silhouette = (h: number[]) => { const height = Math.max(...h); return mosaic(Array.from({ length: h.length * height }, (_, k) => Number(h[k % h.length] >= height - Math.floor(k / h.length))), h.length, '#405769'); }; const same = (a: unknown, b: unknown) => JSON.stringify(a) === JSON.stringify(b); const expected = candidates.flatMap((h, k) => same(front(h), front(heights)) && same(side(h), side(heights)) && same(mask(h), mask(heights)) ? [`b${k}`] : []); return selection('G16', i, '根据前、侧、上三个视图，哪些搭法都有可能？', candidates.map((h, k) => card(`b${k}`, `搭法${k + 1}`, blocks(h, 2))), expected, '从每个方向看到的轮廓都要相符。只看轮廓，有时不能确定藏在后面的高度。', panels([{ title: '从前面看', drawing: silhouette(front(heights)) }, { title: '从侧面看', drawing: silhouette(side(heights)) }, { title: '上面：有积木的位置', drawing: mosaic([1, 1, 1, 1], 2) }])); })),
-    set('G17', '换个方向看左右', nine((i, s, v) => { const dirs = [[0, -1], [1, 0], [0, 1], [-1, 0]], d = dirs[(s + v) % 4], left = [d[1], -d[0]], onLeft = v !== 1, axis = s === 2 ? d : left, p = [160 + axis[0] * (onLeft ? 95 : -95), 160 + axis[1] * (onLeft ? 95 : -95)]; return choice('G17', i, '小朋友面向箭头。红球在小朋友自己的哪一边？', ['左边', '右边', '前面', '后面'], s === 2 ? (onLeft ? 2 : 3) : (onLeft ? 0 : 1), '先和小朋友朝向同一边，再判断他的左和右。画面左边不一定是他的左边。', picture([circle(160, 160, 28, '#f2d8a8'), line(160, 160, 160 + d[0] * 65, 160 + d[1] * 65), { kind: 'polygon', points: [[160 + d[0] * 80, 160 + d[1] * 80], [160 + d[0] * 55 + left[0] * 10, 160 + d[1] * 55 + left[1] * 10], [160 + d[0] * 55 - left[0] * 10, 160 + d[1] * 55 - left[1] * 10]], fill: '#40566a' }, circle(p[0], p[1], 18, palette[0])], 320, 320)); })),
+    set('G17', '换个方向看左右', nine((i, s, v) => { const dirs = [[0, -1], [1, 0], [0, 1], [-1, 0]], d = dirs[(s + v) % 4], left = [d[1], -d[0]], onLeft = v !== 1, axis = s === 2 ? d : left, p = [160 + axis[0] * (onLeft ? 112 : -112), 160 + axis[1] * (onLeft ? 112 : -112)]; return choice('G17', i, '小朋友面向箭头。红球在小朋友自己的哪一边？', ['左边', '右边', '前面', '后面'], s === 2 ? (onLeft ? 2 : 3) : (onLeft ? 0 : 1), '先和小朋友朝向同一边，再判断他的左和右。画面左边不一定是他的左边。', facingPerson(d, p)); })),
     set('G18', '纸盒六个面', nine((i, s, v) => { const nets: [
         number,
         number

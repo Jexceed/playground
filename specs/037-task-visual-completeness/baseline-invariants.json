@@ -1,0 +1,6196 @@
+[
+  {
+    "id": "rules-red-round-triangle",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "帮小兔收图卡",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "rules-blue-or-triangle",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "把两类图卡收好",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "rules-yellow-two-shapes",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "给小熊挑图卡",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "rules-circles-put-red-back",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "先挑，再放回",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "rules-two-color-shape-pairs",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "照着清单收图卡",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "rules-exactly-one-shared-feature",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "找一个共同点",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "lineup-three-in-order",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "小动物排队啦",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "lineup-four-chain",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "小动物排队啦",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "lineup-fixed-ends",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "小动物排队啦",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "lineup-immediate-neighbor",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "小动物排队啦",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "lineup-two-valid-pairs",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "小动物排队啦",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "lineup-middle-and-neighbor",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "小动物排队啦",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "grid-color-and-shape",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "把图形盘补完整",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "grid-one-missing-rule",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "把图形盘补完整",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "grid-diagonal-clues",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "把图形盘补完整",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "grid-two-attributes",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "把图形盘补完整",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "grid-build-your-own",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "自己搭一个图形盘",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "grid-blank-is-a-card",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "把图形盘补完整",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "memory-animal-line",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "记住这支小队伍",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 10000,
+      "retainMs": 1000,
+      "preview": [
+        "rabbit",
+        "cat",
+        "bear",
+        "dog"
+      ]
+    }
+  },
+  {
+    "id": "memory-repeated-fruit",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "记住这支小队伍",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 12000,
+      "retainMs": 1000,
+      "preview": [
+        "apple",
+        "strawberry",
+        "apple",
+        "cookie",
+        "strawberry"
+      ]
+    }
+  },
+  {
+    "id": "memory-six-positions",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "记住每一格",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 12000,
+      "retainMs": 1000,
+      "preview": [
+        "apple",
+        "bear",
+        "cat",
+        "rabbit",
+        "dog",
+        "cookie"
+      ]
+    }
+  },
+  {
+    "id": "memory-two-groups",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "记住这支小队伍",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 12000,
+      "retainMs": 1000,
+      "preview": [
+        "red-circle",
+        "blue-square",
+        "yellow-triangle",
+        "red-circle",
+        "blue-square",
+        "yellow-triangle"
+      ]
+    }
+  },
+  {
+    "id": "memory-blank-positions",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "记住每一格",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 12000,
+      "retainMs": 1000,
+      "preview": [
+        "rabbit",
+        "blank-card",
+        "dog",
+        "blank-card",
+        "bear",
+        "cat"
+      ]
+    }
+  },
+  {
+    "id": "memory-reverse-five",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "倒着摆回来",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 12000,
+      "retainMs": 1000,
+      "preview": [
+        "red-circle",
+        "blue-square",
+        "yellow-triangle",
+        "blue-circle",
+        "red-square"
+      ]
+    }
+  },
+  {
+    "id": "explore-counting-cardinality-1",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "图里一共有多少个圆点？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-counting-cardinality-2",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "图里一共有多少个圆点？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-counting-cardinality-3",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "图里一共有多少个圆点？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-counting-cardinality-4",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "图里一共有多少个圆点？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-counting-cardinality-5",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "图里一共有多少个圆点？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-counting-cardinality-6",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "图里一共有多少个圆点？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-counting-cardinality-7",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "图里一共有多少个圆点？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-counting-cardinality-8",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "图里一共有多少个圆点？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-counting-cardinality-9",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "图里一共有多少个圆点？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-compare-transfer-1",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "左边还要添几个，才和右边一样多？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-compare-transfer-2",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "左边还要添几个，才和右边一样多？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-compare-transfer-3",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "左边还要添几个，才和右边一样多？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-compare-transfer-4",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "左边还要添几个，才和右边一样多？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-compare-transfer-5",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "左边还要添几个，才和右边一样多？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-compare-transfer-6",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "左边还要添几个，才和右边一样多？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-compare-transfer-7",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "从右边移几个到左边，两边就一样多？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-compare-transfer-8",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "从右边移几个到左边，两边就一样多？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-compare-transfer-9",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "从右边移几个到左边，两边就一样多？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-number-conservation-1",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "重新摆开以后，有多少个圆点？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-number-conservation-2",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "重新摆开以后，有多少个圆点？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-number-conservation-3",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "重新摆开以后，有多少个圆点？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-number-conservation-4",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "重新摆开以后，有多少个圆点？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-number-conservation-5",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "重新摆开以后，有多少个圆点？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-number-conservation-6",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "重新摆开以后，有多少个圆点？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-number-conservation-7",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "把水全部倒进宽杯，水量相当于原来的几小杯？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-number-conservation-8",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "把水全部倒进宽杯，水量相当于原来的几小杯？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-number-conservation-9",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "把水全部倒进宽杯，水量相当于原来的几小杯？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-number-partitions-1",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "把5个圆片分进两个盒子，哪些分法符合要求？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-number-partitions-2",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "把6个圆片分进两个盒子，哪些分法符合要求？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-number-partitions-3",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "把7个圆片分进两个盒子，哪些分法符合要求？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-number-partitions-4",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "把5个圆片分进两个盒子，哪些分法符合要求？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-number-partitions-5",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "把6个圆片分进两个盒子，哪些分法符合要求？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-number-partitions-6",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "把7个圆片分进两个盒子，哪些分法符合要求？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-number-partitions-7",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "把5个圆片分进两个盒子，哪些分法符合要求？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-number-partitions-8",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "把6个圆片分进两个盒子，哪些分法符合要求？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-number-partitions-9",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "把7个圆片分进两个盒子，哪些分法符合要求？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-make-break-ten-1",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "十格框里还差几个就满十个？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-make-break-ten-2",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "十格框里还差几个就满十个？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-make-break-ten-3",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "十格框里还差几个就满十个？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-make-break-ten-4",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "8加5等于多少？先试试凑成十。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-make-break-ten-5",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "9加6等于多少？先试试凑成十。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-make-break-ten-6",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "10加7等于多少？先试试凑成十。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-make-break-ten-7",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "13减7等于多少？试试先从十里面拿。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-make-break-ten-8",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "14减8等于多少？试试先从十里面拿。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-make-break-ten-9",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "15减9等于多少？试试先从十里面拿。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-quantity-stories-1",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "树上有7只鸟，又飞来3只，现在有几只？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-quantity-stories-2",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "树上有8只鸟，又飞来4只，现在有几只？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-quantity-stories-3",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "树上有9只鸟，又飞来5只，现在有几只？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-quantity-stories-4",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "又飞来3只鸟以后，树上有10只。原来有几只？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-quantity-stories-5",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "又飞来4只鸟以后，树上有12只。原来有几只？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-quantity-stories-6",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "又飞来5只鸟以后，树上有14只。原来有几只？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-quantity-stories-7",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "树上原来有7只鸟，后来变成10只。飞来了几只？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-quantity-stories-8",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "树上原来有8只鸟，后来变成12只。飞来了几只？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-quantity-stories-9",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "树上原来有9只鸟，后来变成14只。飞来了几只？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-group-share-1",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "9块饼干平均分给3个人，每人几块？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-group-share-2",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "12块饼干平均分给4个人，每人几块？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-group-share-3",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "15块饼干平均分给5个人，每人几块？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-group-share-4",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "每盒有4个圆片，3盒一共几个？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-group-share-5",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "每盒有4个圆片，4盒一共几个？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-group-share-6",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "每盒有4个圆片，5盒一共几个？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-group-share-7",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "13个圆片每4个装一盒，装完尽量多的整盒后，还剩几个？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-group-share-8",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "18个圆片每4个装一盒，装完尽量多的整盒后，还剩几个？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-group-share-9",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "23个圆片每4个装一盒，装完尽量多的整盒后，还剩几个？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-area-fractions-1",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "哪张图的绿色部分占整张纸的比例，和上面一样？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-area-fractions-2",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "哪张图的绿色部分占整张纸的比例，和上面一样？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-area-fractions-3",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "哪张图的绿色部分占整张纸的比例，和上面一样？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-area-fractions-4",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "哪张图的绿色部分占整张纸的比例，和上面一样？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-area-fractions-5",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "哪张图的绿色部分占整张纸的比例，和上面一样？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-area-fractions-6",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "哪张图的绿色部分占整张纸的比例，和上面一样？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-area-fractions-7",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "哪张图的绿色部分占整张纸的比例，和上面一样？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-area-fractions-8",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "哪张图的绿色部分占整张纸的比例，和上面一样？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-area-fractions-9",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "哪张图的绿色部分占整张纸的比例，和上面一样？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-ordinal-queue-1",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "小兔从左数第3，后面还有3位朋友。队伍一共有几位？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-ordinal-queue-2",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "小兔从左数第4，后面还有4位朋友。队伍一共有几位？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-ordinal-queue-3",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "小兔从左数第5，后面还有5位朋友。队伍一共有几位？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-ordinal-queue-4",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "小兔从左数第3，从右数第4。队伍一共有几位？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-ordinal-queue-5",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "小兔从左数第4，从右数第5。队伍一共有几位？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-ordinal-queue-6",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "小兔从左数第5，从右数第6。队伍一共有几位？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-ordinal-queue-7",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "两个数队伍的小朋友都数到了小兔。左边这组含小兔有3位，右边这组含小兔有4位。合起来有几位？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-ordinal-queue-8",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "两个数队伍的小朋友都数到了小兔。左边这组含小兔有4位，右边这组含小兔有5位。合起来有几位？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-ordinal-queue-9",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "两个数队伍的小朋友都数到了小兔。左边这组含小兔有5位，右边这组含小兔有6位。合起来有几位？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-parity-place-value-1",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "哪些数量能两两牵手，刚好没有剩下？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-parity-place-value-2",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "哪些数量能两两牵手，刚好没有剩下？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-parity-place-value-3",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "哪些数量能两两牵手，刚好没有剩下？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-parity-place-value-4",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "这些长条和小方块一共表示多少？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-parity-place-value-5",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "这些长条和小方块一共表示多少？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-parity-place-value-6",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "这些长条和小方块一共表示多少？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-parity-place-value-7",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "原来有23个，拿走一个以后是多少？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-parity-place-value-8",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "原来有34个，拿走一个以后是多少？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-parity-place-value-9",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "原来有45个，拿走一个以后是多少？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-number-sequences-1",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "先找变化规律，再补出问号处的数。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-number-sequences-2",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "先找变化规律，再补出问号处的数。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-number-sequences-3",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "先找变化规律，再补出问号处的数。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-number-sequences-4",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "先找变化规律，再补出问号处的数。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-number-sequences-5",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "先找变化规律，再补出问号处的数。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-number-sequences-6",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "先找变化规律，再补出问号处的数。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-number-sequences-7",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "按行和列的变化，补出最后一个数。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-number-sequences-8",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "按行和列的变化，补出最后一个数。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-number-sequences-9",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "按行和列的变化，补出最后一个数。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-symbol-equations-1",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "一样的图形表示一样的数。问号是多少？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-symbol-equations-2",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "一样的图形表示一样的数。问号是多少？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-symbol-equations-3",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "一样的图形表示一样的数。问号是多少？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-symbol-equations-4",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "一样的图形表示一样的数。问号是多少？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-symbol-equations-5",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "一样的图形表示一样的数。问号是多少？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-symbol-equations-6",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "一样的图形表示一样的数。问号是多少？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-symbol-equations-7",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "一样的图形表示一样的数。问号是多少？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-symbol-equations-8",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "一样的图形表示一样的数。问号是多少？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-symbol-equations-9",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "一样的图形表示一样的数。问号是多少？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-money-shopping-1",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "把一张10元纸币换成5元纸币，能换几张？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-money-shopping-2",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "把一张20元纸币换成5元纸币，能换几张？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-money-shopping-3",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "把一张50元纸币换成10元纸币，能换几张？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-money-shopping-4",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "买3元的东西，付10元，应找回几元？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-money-shopping-5",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "买4元的东西，付10元，应找回几元？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-money-shopping-6",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "买5元的东西，付10元，应找回几元？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-money-shopping-7",
+    "revision": 2,
+    "kind": "multiSelect",
+    "prompt": "手里有1张5元纸币和4枚1元硬币。哪些方案能刚好付5元？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-money-shopping-8",
+    "revision": 2,
+    "kind": "multiSelect",
+    "prompt": "手里有1张5元纸币和3枚1元硬币。哪些方案能刚好付6元？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-money-shopping-9",
+    "revision": 2,
+    "kind": "multiSelect",
+    "prompt": "手里有1张5元纸币和10枚1元硬币。哪些方案能刚好付10元？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-time-elapsed-1",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "钟面上是几点几分？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-time-elapsed-2",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "钟面上是几点几分？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-time-elapsed-3",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "钟面上是几点几分？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-time-elapsed-4",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "钟面上是几点几分？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-time-elapsed-5",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "钟面上是几点几分？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-time-elapsed-6",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "钟面上是几点几分？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-time-elapsed-7",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "从左边的时刻走到右边，经过了几分钟？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-time-elapsed-8",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "从左边的时刻走到右边，经过了几分钟？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-time-elapsed-9",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "从左边的时刻走到右边，经过了几分钟？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-measurement-boundaries-1",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "黄色纸条从一个刻度到另一个刻度，长多少格？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-measurement-boundaries-2",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "黄色纸条从一个刻度到另一个刻度，长多少格？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-measurement-boundaries-3",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "黄色纸条从一个刻度到另一个刻度，长多少格？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-measurement-boundaries-4",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "黄色纸条从一个刻度到另一个刻度，长多少格？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-measurement-boundaries-5",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "黄色纸条从一个刻度到另一个刻度，长多少格？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-measurement-boundaries-6",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "黄色纸条从一个刻度到另一个刻度，长多少格？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-measurement-boundaries-7",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "沿长方形的四条边走一圈，一共多少格？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-measurement-boundaries-8",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "沿长方形的四条边走一圈，一共多少格？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-measurement-boundaries-9",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "沿长方形的四条边走一圈，一共多少格？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-calendar-cycles-1",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "这张练习日历里，8号是星期几？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-calendar-cycles-2",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "这张练习日历里，11号是星期几？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-calendar-cycles-3",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "这张练习日历里，14号是星期几？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-calendar-cycles-4",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "8号的整整一周以后，是几号？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-calendar-cycles-5",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "11号的整整一周以后，是几号？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-calendar-cycles-6",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "14号的整整一周以后，是几号？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-calendar-cycles-7",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "从2号开始，每过三天浇一次水，第三次是几号？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-calendar-cycles-8",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "从3号开始，每过三天浇一次水，第三次是几号？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-calendar-cycles-9",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "从4号开始，每过三天浇一次水，第三次是几号？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-multi-rule-classification-1",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "按这次的规则整理图卡。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-multi-rule-classification-2",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "按这次的规则整理图卡。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-multi-rule-classification-3",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "按这次的规则整理图卡。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-multi-rule-classification-4",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "按这次的规则整理图卡。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-multi-rule-classification-5",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "按这次的规则整理图卡。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-multi-rule-classification-6",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "按这次的规则整理图卡。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-multi-rule-classification-7",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "按这次的规则整理图卡。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-multi-rule-classification-8",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "按这次的规则整理图卡。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-multi-rule-classification-9",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "按这次的规则整理图卡。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-relations-analogies-1",
+    "revision": 1,
+    "kind": "matching",
+    "prompt": "把点群和表示数量的数连起来。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-relations-analogies-2",
+    "revision": 1,
+    "kind": "matching",
+    "prompt": "把点群和表示数量的数连起来。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-relations-analogies-3",
+    "revision": 1,
+    "kind": "matching",
+    "prompt": "把点群和表示数量的数连起来。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-relations-analogies-4",
+    "revision": 1,
+    "kind": "matching",
+    "prompt": "颜色换了，找到形状关系相同的图。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-relations-analogies-5",
+    "revision": 1,
+    "kind": "matching",
+    "prompt": "颜色换了，找到形状关系相同的图。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-relations-analogies-6",
+    "revision": 1,
+    "kind": "matching",
+    "prompt": "颜色换了，找到形状关系相同的图。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-relations-analogies-7",
+    "revision": 1,
+    "kind": "matching",
+    "prompt": "把左边每个图和右边同形状的图配对，颜色可以不同。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-relations-analogies-8",
+    "revision": 1,
+    "kind": "matching",
+    "prompt": "把左边每个图和右边同形状的图配对，颜色可以不同。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-relations-analogies-9",
+    "revision": 1,
+    "kind": "matching",
+    "prompt": "把左边每个图和右边同形状的图配对，颜色可以不同。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-transitive-order-1",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "根据线索，把队伍排好。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-transitive-order-2",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "根据线索，把队伍排好。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-transitive-order-3",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "根据线索，把队伍排好。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-transitive-order-4",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "根据线索，把队伍排好。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-transitive-order-5",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "根据线索，把队伍排好。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-transitive-order-6",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "根据线索，把队伍排好。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-transitive-order-7",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "只知道小兔比小猫高，小狗也比小猫高。谁更高：小兔还是小狗？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-transitive-order-8",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "只知道小猫比小狗高，小兔也比小狗高。谁更高：小猫还是小兔？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-transitive-order-9",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "只知道小狗比小兔高，小猫也比小兔高。谁更高：小狗还是小猫？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-constraint-grid-1",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "每行每列都要有三位不同的朋友。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-constraint-grid-2",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "每行每列都要有三位不同的朋友。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-constraint-grid-3",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "每行每列都要有三位不同的朋友。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-constraint-grid-4",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "每行每列都要有三位不同的朋友。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-constraint-grid-5",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "每行每列都要有三位不同的朋友。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-constraint-grid-6",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "每行每列都要有三位不同的朋友。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-constraint-grid-7",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "每行每列都要有三位不同的朋友。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-constraint-grid-8",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "每行每列都要有三位不同的朋友。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-constraint-grid-9",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "每行每列都要有三位不同的朋友。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-route-constraints-1",
+    "revision": 1,
+    "kind": "route",
+    "prompt": "从起点一步步走到终点。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-route-constraints-2",
+    "revision": 1,
+    "kind": "route",
+    "prompt": "从起点一步步走到终点。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-route-constraints-3",
+    "revision": 1,
+    "kind": "route",
+    "prompt": "从起点一步步走到终点。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-route-constraints-4",
+    "revision": 2,
+    "kind": "route",
+    "prompt": "经过指定地点，找到少走几段的路。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-route-constraints-5",
+    "revision": 2,
+    "kind": "route",
+    "prompt": "经过指定地点，找到少走几段的路。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-route-constraints-6",
+    "revision": 2,
+    "kind": "route",
+    "prompt": "经过指定地点，找到少走几段的路。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-route-constraints-7",
+    "revision": 1,
+    "kind": "route",
+    "prompt": "每一段路都走一次，走到终点。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-route-constraints-8",
+    "revision": 1,
+    "kind": "route",
+    "prompt": "每一段路都走一次，走到终点。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-route-constraints-9",
+    "revision": 1,
+    "kind": "route",
+    "prompt": "每一段路都走一次，走到终点。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-planning-repair-1",
+    "revision": 2,
+    "kind": "orderedPlacement",
+    "prompt": "按步骤做事，哪些事要先做？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-planning-repair-2",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "按步骤做事，哪些事要先做？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-planning-repair-3",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "按步骤做事，哪些事要先做？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-planning-repair-4",
+    "revision": 2,
+    "kind": "orderedPlacement",
+    "prompt": "按步骤做事，哪些事要先做？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-planning-repair-5",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "按步骤做事，哪些事要先做？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-planning-repair-6",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "按步骤做事，哪些事要先做？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-planning-repair-7",
+    "revision": 2,
+    "kind": "orderedPlacement",
+    "prompt": "这次顺序弄乱了，请按先后条件修好。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-planning-repair-8",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "这次顺序弄乱了，请按先后条件修好。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-planning-repair-9",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "这次顺序弄乱了，请按先后条件修好。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-evidence-reasoning-1",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "哪些图卡仍然有可能藏在盒子里？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-evidence-reasoning-2",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "哪些图卡仍然有可能藏在盒子里？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-evidence-reasoning-3",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "哪些图卡仍然有可能藏在盒子里？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-evidence-reasoning-4",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "哪些图卡仍然有可能藏在盒子里？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-evidence-reasoning-5",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "哪些图卡仍然有可能藏在盒子里？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-evidence-reasoning-6",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "哪些图卡仍然有可能藏在盒子里？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-evidence-reasoning-7",
+    "revision": 1,
+    "kind": "parentObservation",
+    "prompt": "悄悄选一张图卡，用两条线索让家长来找。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-evidence-reasoning-8",
+    "revision": 1,
+    "kind": "parentObservation",
+    "prompt": "先给颜色线索，再补形状。家长能找到吗？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-evidence-reasoning-9",
+    "revision": 1,
+    "kind": "parentObservation",
+    "prompt": "先给形状线索，再补颜色。家长能找到吗？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-learn-rule-transfer-1",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "让2个圆片经过规则机，最后变成几个？",
+    "protocol": {
+      "kind": "learnThenTransfer",
+      "demonstration": "先看例子：一个圆片先添2个，得到3个。接下来换一个起始数量，仍用这条规则。"
+    }
+  },
+  {
+    "id": "explore-learn-rule-transfer-2",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "让3个圆片经过规则机，最后变成几个？",
+    "protocol": {
+      "kind": "learnThenTransfer",
+      "demonstration": "先看例子：一个圆片先添2个，得到3个。接下来换一个起始数量，仍用这条规则。"
+    }
+  },
+  {
+    "id": "explore-learn-rule-transfer-3",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "让4个圆片经过规则机，最后变成几个？",
+    "protocol": {
+      "kind": "learnThenTransfer",
+      "demonstration": "先看例子：一个圆片先添2个，得到3个。接下来换一个起始数量，仍用这条规则。"
+    }
+  },
+  {
+    "id": "explore-learn-rule-transfer-4",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "让2个圆片经过规则机，最后变成几个？",
+    "protocol": {
+      "kind": "learnThenTransfer",
+      "demonstration": "先看例子：一个圆片先添3个，得到4个。接下来换一个起始数量，仍用这条规则。"
+    }
+  },
+  {
+    "id": "explore-learn-rule-transfer-5",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "让3个圆片经过规则机，最后变成几个？",
+    "protocol": {
+      "kind": "learnThenTransfer",
+      "demonstration": "先看例子：一个圆片先添3个，得到4个。接下来换一个起始数量，仍用这条规则。"
+    }
+  },
+  {
+    "id": "explore-learn-rule-transfer-6",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "让4个圆片经过规则机，最后变成几个？",
+    "protocol": {
+      "kind": "learnThenTransfer",
+      "demonstration": "先看例子：一个圆片先添3个，得到4个。接下来换一个起始数量，仍用这条规则。"
+    }
+  },
+  {
+    "id": "explore-learn-rule-transfer-7",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "让2个圆片经过规则机，最后变成几个？",
+    "protocol": {
+      "kind": "learnThenTransfer",
+      "demonstration": "先看例子：一个圆片先添4个，再把总数变成两倍，得到10个。接下来换一个起始数量，仍用这条规则。"
+    }
+  },
+  {
+    "id": "explore-learn-rule-transfer-8",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "让3个圆片经过规则机，最后变成几个？",
+    "protocol": {
+      "kind": "learnThenTransfer",
+      "demonstration": "先看例子：一个圆片先添4个，再把总数变成两倍，得到10个。接下来换一个起始数量，仍用这条规则。"
+    }
+  },
+  {
+    "id": "explore-learn-rule-transfer-9",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "让4个圆片经过规则机，最后变成几个？",
+    "protocol": {
+      "kind": "learnThenTransfer",
+      "demonstration": "先看例子：一个圆片先添4个，再把总数变成两倍，得到10个。接下来换一个起始数量，仍用这条规则。"
+    }
+  },
+  {
+    "id": "explore-toggle-state-1",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "按顺序翻牌，最后每个位置朝上的是哪一面？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-toggle-state-2",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "按顺序翻牌，最后每个位置朝上的是哪一面？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-toggle-state-3",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "按顺序翻牌，最后每个位置朝上的是哪一面？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-toggle-state-4",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "按顺序翻牌，最后每个位置朝上的是哪一面？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-toggle-state-5",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "按顺序翻牌，最后每个位置朝上的是哪一面？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-toggle-state-6",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "按顺序翻牌，最后每个位置朝上的是哪一面？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-toggle-state-7",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "按顺序翻牌，最后每个位置朝上的是哪一面？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-toggle-state-8",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "按顺序翻牌，最后每个位置朝上的是哪一面？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-toggle-state-9",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "按顺序翻牌，最后每个位置朝上的是哪一面？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-multi-agent-movement-1",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "走完以后，两位朋友分别停在哪个数字？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-multi-agent-movement-2",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "走完以后，两位朋友分别停在哪个数字？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-multi-agent-movement-3",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "走完以后，两位朋友分别停在哪个数字？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-multi-agent-movement-4",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "走完以后，两位朋友分别停在哪个数字？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-multi-agent-movement-5",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "走完以后，两位朋友分别停在哪个数字？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-multi-agent-movement-6",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "走完以后，两位朋友分别停在哪个数字？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-multi-agent-movement-7",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "走完以后，两位朋友分别停在哪个数字？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-multi-agent-movement-8",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "走完以后，两位朋友分别停在哪个数字？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-multi-agent-movement-9",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "走完以后，两位朋友分别停在哪个数字？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-board-strategy-1",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "在哪些空格补一颗黑子，能连成三颗黑子？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-board-strategy-2",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "在哪些空格补一颗黑子，能连成三颗黑子？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-board-strategy-3",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "在哪些空格补一颗黑子，能连成三颗黑子？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-board-strategy-4",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "在哪些空格补一颗黑子，能连成三颗黑子？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-board-strategy-5",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "在哪些空格补一颗黑子，能连成三颗黑子？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-board-strategy-6",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "在哪些空格补一颗黑子，能连成三颗黑子？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-board-strategy-7",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "下一颗黑子放在哪里，能夹住最多白子？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-board-strategy-8",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "下一颗黑子放在哪里，能夹住最多白子？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-board-strategy-9",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "下一颗黑子放在哪里，能夹住最多白子？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-bridge-networks-1",
+    "revision": 1,
+    "kind": "network",
+    "prompt": "把所有小岛连起来。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-bridge-networks-2",
+    "revision": 1,
+    "kind": "network",
+    "prompt": "把所有小岛连起来。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-bridge-networks-3",
+    "revision": 1,
+    "kind": "network",
+    "prompt": "把所有小岛连起来。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-bridge-networks-4",
+    "revision": 1,
+    "kind": "network",
+    "prompt": "把所有小岛连起来。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-bridge-networks-5",
+    "revision": 1,
+    "kind": "network",
+    "prompt": "把所有小岛连起来。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-bridge-networks-6",
+    "revision": 1,
+    "kind": "network",
+    "prompt": "把所有小岛连起来。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-bridge-networks-7",
+    "revision": 1,
+    "kind": "network",
+    "prompt": "把所有小岛连起来。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-bridge-networks-8",
+    "revision": 1,
+    "kind": "network",
+    "prompt": "把所有小岛连起来。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-bridge-networks-9",
+    "revision": 1,
+    "kind": "network",
+    "prompt": "把所有小岛连起来。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-visual-search-match-1",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "找出和上面完全相同的图案。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-visual-search-match-2",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "找出和上面完全相同的图案。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-visual-search-match-3",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "找出和上面完全相同的图案。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-visual-search-match-4",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "仔细看每个格子，找出完全相同的图案。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-visual-search-match-5",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "仔细看每个格子，找出完全相同的图案。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-visual-search-match-6",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "仔细看每个格子，找出完全相同的图案。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-visual-search-match-7",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "不漏掉小角落，哪张图案和上面完全一样？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-visual-search-match-8",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "不漏掉小角落，哪张图案和上面完全一样？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-visual-search-match-9",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "不漏掉小角落，哪张图案和上面完全一样？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-occlusion-texture-1",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "灰色纸片下面可能是哪个完整图形？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-occlusion-texture-2",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "灰色纸片下面可能是哪个完整图形？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-occlusion-texture-3",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "灰色纸片下面可能是哪个完整图形？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-occlusion-texture-4",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "选哪一块补片，能把行列里的纹理接上？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-occlusion-texture-5",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "选哪一块补片，能把行列里的纹理接上？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-occlusion-texture-6",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "选哪一块补片，能把行列里的纹理接上？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-occlusion-texture-7",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "选哪一块补片，能把行列里的纹理接上？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-occlusion-texture-8",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "选哪一块补片，能把行列里的纹理接上？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-occlusion-texture-9",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "选哪一块补片，能把行列里的纹理接上？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-feature-matrices-1",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "把每行每列的规律补完整。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-feature-matrices-2",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "把每行每列的规律补完整。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-feature-matrices-3",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "把每行每列的规律补完整。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-feature-matrices-4",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "把每行每列的规律补完整。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-feature-matrices-5",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "把每行每列的规律补完整。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-feature-matrices-6",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "把每行每列的规律补完整。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-feature-matrices-7",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "把每行每列的规律补完整。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-feature-matrices-8",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "把每行每列的规律补完整。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-feature-matrices-9",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "把每行每列的规律补完整。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-position-transform-1",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "标记按规则移动，最后在哪个位置？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-position-transform-2",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "标记按规则移动，最后在哪个位置？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-position-transform-3",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "标记按规则移动，最后在哪个位置？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-position-transform-4",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "标记按规则移动，最后在哪个位置？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-position-transform-5",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "标记按规则移动，最后在哪个位置？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-position-transform-6",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "标记按规则移动，最后在哪个位置？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-position-transform-7",
+    "revision": 2,
+    "kind": "singleChoice",
+    "prompt": "标记按规则移动，最后在哪个位置？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-position-transform-8",
+    "revision": 2,
+    "kind": "singleChoice",
+    "prompt": "标记按规则移动，最后在哪个位置？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-position-transform-9",
+    "revision": 2,
+    "kind": "singleChoice",
+    "prompt": "标记按规则移动，最后在哪个位置？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-rotation-reflection-1",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "把图案顺时针转四分之一圈，得到哪张？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-rotation-reflection-2",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "把图案顺时针转四分之一圈，得到哪张？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-rotation-reflection-3",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "把图案顺时针转四分之一圈，得到哪张？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-rotation-reflection-4",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "把图案照在左右镜子里，得到哪张？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-rotation-reflection-5",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "把图案等比例放大，哪张只变大而没有拉扁？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-rotation-reflection-6",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "只把图案横向拉长，上下高度保持不变。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-rotation-reflection-7",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "先顺时针转四分之一圈，再左右翻过来。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-rotation-reflection-8",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "先顺时针转四分之一圈，再左右翻过来。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-rotation-reflection-9",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "先顺时针转四分之一圈，再左右翻过来。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-shape-set-operations-1",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "按“并起来”的规则，结果是哪张？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-shape-set-operations-2",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "按“并起来”的规则，结果是哪张？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-shape-set-operations-3",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "按“并起来”的规则，结果是哪张？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-shape-set-operations-4",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "按“共同”的规则，结果是哪张？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-shape-set-operations-5",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "按“不同”的规则，结果是哪张？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-shape-set-operations-6",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "按“共同”的规则，结果是哪张？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-shape-set-operations-7",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "按“左减右”的规则，结果是哪张？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-shape-set-operations-8",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "按“右减左”的规则，结果是哪张？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-shape-set-operations-9",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "按“左减右”的规则，结果是哪张？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-recursive-composition-1",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "两块合成上面一块，结果是哪张？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-recursive-composition-2",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "两块合成上面一块，结果是哪张？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-recursive-composition-3",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "两块合成上面一块，结果是哪张？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-recursive-composition-4",
+    "revision": 2,
+    "kind": "gridPlacement",
+    "prompt": "从底层往上，把金字塔每一层都补完整。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-recursive-composition-5",
+    "revision": 2,
+    "kind": "gridPlacement",
+    "prompt": "从底层往上，把金字塔每一层都补完整。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-recursive-composition-6",
+    "revision": 2,
+    "kind": "gridPlacement",
+    "prompt": "从底层往上，把金字塔每一层都补完整。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-recursive-composition-7",
+    "revision": 2,
+    "kind": "gridPlacement",
+    "prompt": "从底层往上，把金字塔每一层都补完整。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-recursive-composition-8",
+    "revision": 2,
+    "kind": "gridPlacement",
+    "prompt": "从底层往上，把金字塔每一层都补完整。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-recursive-composition-9",
+    "revision": 2,
+    "kind": "gridPlacement",
+    "prompt": "从底层往上，把金字塔每一层都补完整。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-symbolic-color-rules-1",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "这是颜色密码规则，算出的图卡是哪张？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-symbolic-color-rules-2",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "这是颜色密码规则，算出的图卡是哪张？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-symbolic-color-rules-3",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "这是颜色密码规则，算出的图卡是哪张？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-symbolic-color-rules-4",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "这是颜色密码规则，算出的图卡是哪张？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-symbolic-color-rules-5",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "这是颜色密码规则，算出的图卡是哪张？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-symbolic-color-rules-6",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "这是颜色密码规则，算出的图卡是哪张？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-symbolic-color-rules-7",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "这是颜色密码规则，算出的图卡是哪张？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-symbolic-color-rules-8",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "这是颜色密码规则，算出的图卡是哪张？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-symbolic-color-rules-9",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "这是颜色密码规则，算出的图卡是哪张？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-geometric-counts-1",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "这个图形有几条边？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-geometric-counts-2",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "这个图形有几个角？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-geometric-counts-3",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "图上有几个顶点？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-geometric-counts-4",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "只数最小的小格，图里有几个面？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-geometric-counts-5",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "把交点作为分界，这个十字共有几段小线段？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-geometric-counts-6",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "只数最小的小格，图里有几个面？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-geometric-counts-7",
+    "revision": 2,
+    "kind": "singleChoice",
+    "prompt": "大小不同的长方形一共有几个？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-geometric-counts-8",
+    "revision": 2,
+    "kind": "singleChoice",
+    "prompt": "大小不同的长方形一共有几个？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-geometric-counts-9",
+    "revision": 2,
+    "kind": "singleChoice",
+    "prompt": "大小不同的长方形一共有几个？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-symmetry-axes-1",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "沿哪些虚线对折，两边能完全重合？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-symmetry-axes-2",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "沿哪些虚线对折，两边能完全重合？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-symmetry-axes-3",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "沿哪些虚线对折，两边能完全重合？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-symmetry-axes-4",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "沿哪些虚线对折，两边能完全重合？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-symmetry-axes-5",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "沿哪些虚线对折，两边能完全重合？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-symmetry-axes-6",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "沿哪些虚线对折，两边能完全重合？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-symmetry-axes-7",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "沿哪些虚线对折，两边能完全重合？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-symmetry-axes-8",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "沿哪些虚线对折，两边能完全重合？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-symmetry-axes-9",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "沿哪些虚线对折，两边能完全重合？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-topology-relations-1",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "哪张图里，蓝色圆完全在红色图形里面？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-topology-relations-2",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "哪张图里，蓝色圆完全在红色图形里面？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-topology-relations-3",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "哪张图里，蓝色圆完全在红色图形里面？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-topology-relations-4",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "哪些图形的边界相碰，但没有交叉？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-topology-relations-5",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "哪些图形的边界互相交叉？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-topology-relations-6",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "哪些图形完全分开？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-topology-relations-7",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "哪些图中，红蓝两块作为一个整体连在一起？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-topology-relations-8",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "哪些图里一个图形完全包含另一个？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-topology-relations-9",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "哪些图里两块有重叠，但互不包含？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-marker-invariants-1",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "小黑点负责标出图形里面。哪张符合这项任务？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-marker-invariants-2",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "小黑点负责标出图形里面。哪张符合这项任务？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-marker-invariants-3",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "小黑点负责标出图形里面。哪张符合这项任务？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-marker-invariants-4",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "小黑点的中心要落在轮廓线上。哪张符合？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-marker-invariants-5",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "小黑点的中心要落在轮廓线上。哪张符合？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-marker-invariants-6",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "小黑点的中心要落在轮廓线上。哪张符合？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-marker-invariants-7",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "小黑点负责标出图形外面。哪张符合？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-marker-invariants-8",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "小黑点负责标出图形外面。哪张符合？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-marker-invariants-9",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "小黑点负责标出图形外面。哪张符合？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-symbol-codes-1",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "把图形密码译成数字。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-symbol-codes-2",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "把图形密码译成数字。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-symbol-codes-3",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "把图形密码译成数字。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-symbol-codes-4",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "把图形密码译成数字。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-symbol-codes-5",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "把图形密码译成数字。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-symbol-codes-6",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "把图形密码译成数字。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-symbol-codes-7",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "把数字密码译回图形。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-symbol-codes-8",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "把数字密码译回图形。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-symbol-codes-9",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "把数字密码译回图形。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-shape-assembly-1",
+    "revision": 1,
+    "kind": "construction",
+    "prompt": "用这些部件，刚好盖住阴影。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-shape-assembly-2",
+    "revision": 1,
+    "kind": "construction",
+    "prompt": "用这些部件，刚好盖住阴影。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-shape-assembly-3",
+    "revision": 1,
+    "kind": "construction",
+    "prompt": "用这些部件，刚好盖住阴影。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-shape-assembly-4",
+    "revision": 1,
+    "kind": "construction",
+    "prompt": "转一转部件，把缺口拼完整。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-shape-assembly-5",
+    "revision": 1,
+    "kind": "construction",
+    "prompt": "转一转部件，把缺口拼完整。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-shape-assembly-6",
+    "revision": 1,
+    "kind": "construction",
+    "prompt": "转一转部件，把缺口拼完整。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-shape-assembly-7",
+    "revision": 1,
+    "kind": "construction",
+    "prompt": "用部件把每一层都搭完整。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-shape-assembly-8",
+    "revision": 1,
+    "kind": "construction",
+    "prompt": "用部件把每一层都搭完整。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-shape-assembly-9",
+    "revision": 1,
+    "kind": "construction",
+    "prompt": "用部件把每一层都搭完整。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-fold-cut-1",
+    "revision": 1,
+    "kind": "parentObservation",
+    "prompt": "对折找重合",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-fold-cut-2",
+    "revision": 1,
+    "kind": "parentObservation",
+    "prompt": "折两次找痕迹",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-fold-cut-3",
+    "revision": 1,
+    "kind": "parentObservation",
+    "prompt": "从折痕倒推折法",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-fold-cut-4",
+    "revision": 2,
+    "kind": "singleChoice",
+    "prompt": "把左半张向右折，再打一个孔。展开后，孔在哪里？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-fold-cut-5",
+    "revision": 2,
+    "kind": "singleChoice",
+    "prompt": "把左半张向右折，再打一个孔。展开后，孔在哪里？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-fold-cut-6",
+    "revision": 2,
+    "kind": "singleChoice",
+    "prompt": "把左半张向右折，再打一个孔。展开后，孔在哪里？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-fold-cut-7",
+    "revision": 2,
+    "kind": "singleChoice",
+    "prompt": "先向右折，再向下折，打一个孔。展开后，孔在哪里？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-fold-cut-8",
+    "revision": 2,
+    "kind": "singleChoice",
+    "prompt": "先向右折，再向下折，打一个孔。展开后，孔在哪里？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-fold-cut-9",
+    "revision": 2,
+    "kind": "singleChoice",
+    "prompt": "先向右折，再向下折，打一个孔。展开后，孔在哪里？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-solid-views-count-1",
+    "revision": 1,
+    "kind": "parentObservation",
+    "prompt": "球、盒子和圆柱",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-solid-views-count-2",
+    "revision": 1,
+    "kind": "parentObservation",
+    "prompt": "找平面和曲面",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-solid-views-count-3",
+    "revision": 1,
+    "kind": "parentObservation",
+    "prompt": "照着视图搭一搭",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-solid-views-count-4",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "每摞从地面连续向上搭，没有空洞。一共几块？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-solid-views-count-5",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "每摞从地面连续向上搭，没有空洞。一共几块？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-solid-views-count-6",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "每摞从地面连续向上搭，没有空洞。一共几块？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-solid-views-count-7",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "根据前、侧、上三个视图，哪些搭法都有可能？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-solid-views-count-8",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "根据前、侧、上三个视图，哪些搭法都有可能？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-solid-views-count-9",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "根据前、侧、上三个视图，哪些搭法都有可能？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-relative-perspective-1",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "小朋友面向箭头。红球在小朋友自己的哪一边？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-relative-perspective-2",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "小朋友面向箭头。红球在小朋友自己的哪一边？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-relative-perspective-3",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "小朋友面向箭头。红球在小朋友自己的哪一边？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-relative-perspective-4",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "小朋友面向箭头。红球在小朋友自己的哪一边？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-relative-perspective-5",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "小朋友面向箭头。红球在小朋友自己的哪一边？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-relative-perspective-6",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "小朋友面向箭头。红球在小朋友自己的哪一边？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-relative-perspective-7",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "小朋友面向箭头。红球在小朋友自己的哪一边？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-relative-perspective-8",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "小朋友面向箭头。红球在小朋友自己的哪一边？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-relative-perspective-9",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "小朋友面向箭头。红球在小朋友自己的哪一边？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-cube-nets-1",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "折成盒子后，哪个面和A面相对？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-cube-nets-2",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "折成盒子后，哪个面和A面相对？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-cube-nets-3",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "折成盒子后，哪个面和A面相对？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-cube-nets-4",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "折成盒子后，哪些面和B面相邻？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-cube-nets-5",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "折成盒子后，哪些面和B面相邻？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-cube-nets-6",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "折成盒子后，哪些面和B面相邻？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-cube-nets-7",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "折成盒子后，哪个面和C面相对？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-cube-nets-8",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "折成盒子后，哪个面和C面相对？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-cube-nets-9",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "折成盒子后，哪个面和C面相对？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-grid-copy-reconstruction-1",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "照着参照图，把蓝格和空白格都摆出来。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-grid-copy-reconstruction-2",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "照着参照图，把蓝格和空白格都摆出来。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-grid-copy-reconstruction-3",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "照着参照图，把蓝格和空白格都摆出来。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-grid-copy-reconstruction-4",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "照着参照图，把蓝格和空白格都摆出来。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-grid-copy-reconstruction-5",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "照着参照图，把蓝格和空白格都摆出来。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-grid-copy-reconstruction-6",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "照着参照图，把蓝格和空白格都摆出来。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-grid-copy-reconstruction-7",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "把参照图左右翻过来，摆进方格里。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-grid-copy-reconstruction-8",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "把参照图左右翻过来，摆进方格里。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-grid-copy-reconstruction-9",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "把参照图左右翻过来，摆进方格里。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-layer-order-planning-1",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "照着遮挡图，把纸片按从底层到顶层排好。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-layer-order-planning-2",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "照着遮挡图，把纸片按从底层到顶层排好。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-layer-order-planning-3",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "照着遮挡图，把纸片按从底层到顶层排好。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-layer-order-planning-4",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "照着遮挡图，把纸片按从底层到顶层排好。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-layer-order-planning-5",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "照着遮挡图，把纸片按从底层到顶层排好。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-layer-order-planning-6",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "照着遮挡图，把纸片按从底层到顶层排好。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-layer-order-planning-7",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "照着遮挡图，把纸片按从底层到顶层排好。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-layer-order-planning-8",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "照着遮挡图，把纸片按从底层到顶层排好。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-layer-order-planning-9",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "照着遮挡图，把纸片按从底层到顶层排好。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-visual-set-memory-1",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "把刚才出现过的图卡都选出来。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 10000,
+      "retainMs": 1500,
+      "preview": [
+        "rabbit",
+        "cat",
+        "bear"
+      ]
+    }
+  },
+  {
+    "id": "explore-visual-set-memory-2",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "把刚才出现过的图卡都选出来。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 10000,
+      "retainMs": 1500,
+      "preview": [
+        "cat",
+        "bear",
+        "dog"
+      ]
+    }
+  },
+  {
+    "id": "explore-visual-set-memory-3",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "把刚才出现过的图卡都选出来。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 10000,
+      "retainMs": 1500,
+      "preview": [
+        "bear",
+        "dog",
+        "apple"
+      ]
+    }
+  },
+  {
+    "id": "explore-visual-set-memory-4",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "把刚才出现过的图卡都选出来。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 12000,
+      "retainMs": 2000,
+      "preview": [
+        "rabbit",
+        "cat",
+        "bear",
+        "dog"
+      ]
+    }
+  },
+  {
+    "id": "explore-visual-set-memory-5",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "把刚才出现过的图卡都选出来。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 12000,
+      "retainMs": 2000,
+      "preview": [
+        "cat",
+        "bear",
+        "dog",
+        "apple"
+      ]
+    }
+  },
+  {
+    "id": "explore-visual-set-memory-6",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "把刚才出现过的图卡都选出来。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 12000,
+      "retainMs": 2000,
+      "preview": [
+        "bear",
+        "dog",
+        "apple",
+        "orange"
+      ]
+    }
+  },
+  {
+    "id": "explore-visual-set-memory-7",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "把刚才没有出现的图卡都选出来。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 14000,
+      "retainMs": 2500,
+      "preview": [
+        "rabbit",
+        "cat",
+        "bear",
+        "dog",
+        "apple"
+      ]
+    }
+  },
+  {
+    "id": "explore-visual-set-memory-8",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "把刚才没有出现的图卡都选出来。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 14000,
+      "retainMs": 2500,
+      "preview": [
+        "cat",
+        "bear",
+        "dog",
+        "apple",
+        "orange"
+      ]
+    }
+  },
+  {
+    "id": "explore-visual-set-memory-9",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "把刚才没有出现的图卡都选出来。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 14000,
+      "retainMs": 2500,
+      "preview": [
+        "bear",
+        "dog",
+        "apple",
+        "orange",
+        "cookie"
+      ]
+    }
+  },
+  {
+    "id": "explore-spatial-memory-1",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "记住每个位置，再把图案摆回来。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 10000,
+      "retainMs": 1500,
+      "preview": [
+        "blank",
+        "cat",
+        "bear",
+        "dog"
+      ]
+    }
+  },
+  {
+    "id": "explore-spatial-memory-2",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "记住每个位置，再把图案摆回来。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 10000,
+      "retainMs": 1500,
+      "preview": [
+        "cat",
+        "blank",
+        "dog",
+        "rabbit"
+      ]
+    }
+  },
+  {
+    "id": "explore-spatial-memory-3",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "记住每个位置，再把图案摆回来。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 10000,
+      "retainMs": 1500,
+      "preview": [
+        "bear",
+        "dog",
+        "blank",
+        "cat"
+      ]
+    }
+  },
+  {
+    "id": "explore-spatial-memory-4",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "记住每个位置，再把图案摆回来。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 12000,
+      "retainMs": 2000,
+      "preview": [
+        "rabbit",
+        "blank",
+        "bear",
+        "dog",
+        "rabbit",
+        "cat"
+      ]
+    }
+  },
+  {
+    "id": "explore-spatial-memory-5",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "记住每个位置，再把图案摆回来。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 12000,
+      "retainMs": 2000,
+      "preview": [
+        "cat",
+        "bear",
+        "blank",
+        "rabbit",
+        "cat",
+        "bear"
+      ]
+    }
+  },
+  {
+    "id": "explore-spatial-memory-6",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "记住每个位置，再把图案摆回来。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 12000,
+      "retainMs": 2000,
+      "preview": [
+        "bear",
+        "dog",
+        "rabbit",
+        "blank",
+        "bear",
+        "dog"
+      ]
+    }
+  },
+  {
+    "id": "explore-spatial-memory-7",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "记住每个位置，再把图案摆回来。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 14000,
+      "retainMs": 2500,
+      "preview": [
+        "rabbit",
+        "cat",
+        "blank",
+        "dog",
+        "rabbit",
+        "cat"
+      ]
+    }
+  },
+  {
+    "id": "explore-spatial-memory-8",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "记住每个位置，再把图案摆回来。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 14000,
+      "retainMs": 2500,
+      "preview": [
+        "cat",
+        "bear",
+        "dog",
+        "blank",
+        "cat",
+        "bear"
+      ]
+    }
+  },
+  {
+    "id": "explore-spatial-memory-9",
+    "revision": 1,
+    "kind": "gridPlacement",
+    "prompt": "记住每个位置，再把图案摆回来。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 14000,
+      "retainMs": 2500,
+      "preview": [
+        "bear",
+        "dog",
+        "rabbit",
+        "cat",
+        "blank",
+        "dog"
+      ]
+    }
+  },
+  {
+    "id": "explore-sequence-memory-1",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "记住图卡的先后，按原来的顺序摆回来。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 10000,
+      "retainMs": 1500,
+      "preview": [
+        "rabbit",
+        "cat",
+        "bear"
+      ]
+    }
+  },
+  {
+    "id": "explore-sequence-memory-2",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "记住图卡的先后，按原来的顺序摆回来。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 10000,
+      "retainMs": 1500,
+      "preview": [
+        "cat",
+        "bear",
+        "dog"
+      ]
+    }
+  },
+  {
+    "id": "explore-sequence-memory-3",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "记住图卡的先后，按原来的顺序摆回来。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 10000,
+      "retainMs": 1500,
+      "preview": [
+        "bear",
+        "dog",
+        "apple"
+      ]
+    }
+  },
+  {
+    "id": "explore-sequence-memory-4",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "记住图卡的先后，按原来的顺序摆回来。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 12000,
+      "retainMs": 2000,
+      "preview": [
+        "rabbit",
+        "bear",
+        "bear",
+        "apple"
+      ]
+    }
+  },
+  {
+    "id": "explore-sequence-memory-5",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "记住图卡的先后，按原来的顺序摆回来。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 12000,
+      "retainMs": 2000,
+      "preview": [
+        "cat",
+        "dog",
+        "dog",
+        "rabbit"
+      ]
+    }
+  },
+  {
+    "id": "explore-sequence-memory-6",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "记住图卡的先后，按原来的顺序摆回来。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 12000,
+      "retainMs": 2000,
+      "preview": [
+        "bear",
+        "apple",
+        "apple",
+        "cat"
+      ]
+    }
+  },
+  {
+    "id": "explore-sequence-memory-7",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "记住以后，倒着摆回来。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 14000,
+      "retainMs": 2500,
+      "preview": [
+        "rabbit",
+        "cat",
+        "bear",
+        "dog",
+        "apple"
+      ]
+    }
+  },
+  {
+    "id": "explore-sequence-memory-8",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "记住以后，倒着摆回来。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 14000,
+      "retainMs": 2500,
+      "preview": [
+        "cat",
+        "bear",
+        "dog",
+        "apple",
+        "rabbit"
+      ]
+    }
+  },
+  {
+    "id": "explore-sequence-memory-9",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "记住以后，倒着摆回来。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 14000,
+      "retainMs": 2500,
+      "preview": [
+        "bear",
+        "dog",
+        "apple",
+        "rabbit",
+        "cat"
+      ]
+    }
+  },
+  {
+    "id": "explore-auditory-instructions-1",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "听完指令，再按要求摆图卡。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 10000,
+      "retainMs": 1500,
+      "preview": [],
+      "audioText": "从左到右，先放小兔，最后放小猫。"
+    }
+  },
+  {
+    "id": "explore-auditory-instructions-2",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "听完指令，再按要求摆图卡。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 10000,
+      "retainMs": 1500,
+      "preview": [],
+      "audioText": "从左到右，先放小猫，最后放小熊。"
+    }
+  },
+  {
+    "id": "explore-auditory-instructions-3",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "听完指令，再按要求摆图卡。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 10000,
+      "retainMs": 1500,
+      "preview": [],
+      "audioText": "从左到右，先放小熊，最后放小狗。"
+    }
+  },
+  {
+    "id": "explore-auditory-instructions-4",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "听完指令，再按要求摆图卡。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 12000,
+      "retainMs": 2000,
+      "preview": [],
+      "audioText": "从左到右，先放小猫，然后放小熊，最后放小狗。"
+    }
+  },
+  {
+    "id": "explore-auditory-instructions-5",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "听完指令，再按要求摆图卡。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 12000,
+      "retainMs": 2000,
+      "preview": [],
+      "audioText": "从左到右，先放小熊，然后放小狗，最后放苹果。"
+    }
+  },
+  {
+    "id": "explore-auditory-instructions-6",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "听完指令，再按要求摆图卡。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 12000,
+      "retainMs": 2000,
+      "preview": [],
+      "audioText": "从左到右，先放小狗，然后放苹果，最后放小兔。"
+    }
+  },
+  {
+    "id": "explore-auditory-instructions-7",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "听完指令，再按要求摆图卡。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 14000,
+      "retainMs": 2500,
+      "preview": [],
+      "audioText": "从左到右，先放小熊，然后放小狗，然后放苹果，最后放小兔。"
+    }
+  },
+  {
+    "id": "explore-auditory-instructions-8",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "听完指令，再按要求摆图卡。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 14000,
+      "retainMs": 2500,
+      "preview": [],
+      "audioText": "从左到右，先放小狗，然后放苹果，然后放小兔，最后放小猫。"
+    }
+  },
+  {
+    "id": "explore-auditory-instructions-9",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "听完指令，再按要求摆图卡。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 14000,
+      "retainMs": 2500,
+      "preview": [],
+      "audioText": "从左到右，先放苹果，然后放小兔，然后放小猫，最后放小熊。"
+    }
+  },
+  {
+    "id": "explore-story-recall-1",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "听过故事以后，回答：故事最先说的是谁？",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 10000,
+      "retainMs": 1500,
+      "preview": [],
+      "audioText": "早上，小兔带着苹果去找小猫。路上小兔看见下雨，就在树下等了一会儿。雨停后，小兔把苹果分给了小猫。"
+    }
+  },
+  {
+    "id": "explore-story-recall-2",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "听过故事以后，回答：故事最先说的是谁？",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 10000,
+      "retainMs": 1500,
+      "preview": [],
+      "audioText": "小熊想搭一座桥，先找来木板。小狗帮忙扶住一头，小熊放好另一头。桥搭好以后，他们一起走过去。"
+    }
+  },
+  {
+    "id": "explore-story-recall-3",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "听过故事以后，回答：故事最先说的是谁？",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 10000,
+      "retainMs": 1500,
+      "preview": [],
+      "audioText": "小猫想种花，先把种子放进土里。小猫记得给土浇水。过了一段时间，小苗长出来了，小猫把这个发现告诉小兔。"
+    }
+  },
+  {
+    "id": "explore-story-recall-4",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "听完故事，把三件事按先后排好。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 12000,
+      "retainMs": 2000,
+      "preview": [],
+      "audioText": "早上，小兔带着苹果去找小猫。路上小兔看见下雨，就在树下等了一会儿。雨停后，小兔把苹果分给了小猫。"
+    }
+  },
+  {
+    "id": "explore-story-recall-5",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "听完故事，把三件事按先后排好。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 12000,
+      "retainMs": 2000,
+      "preview": [],
+      "audioText": "小熊想搭一座桥，先找来木板。小狗帮忙扶住一头，小熊放好另一头。桥搭好以后，他们一起走过去。"
+    }
+  },
+  {
+    "id": "explore-story-recall-6",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "听完故事，把三件事按先后排好。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 12000,
+      "retainMs": 2000,
+      "preview": [],
+      "audioText": "小猫想种花，先把种子放进土里。小猫记得给土浇水。过了一段时间，小苗长出来了，小猫把这个发现告诉小兔。"
+    }
+  },
+  {
+    "id": "explore-story-recall-7",
+    "revision": 1,
+    "kind": "parentObservation",
+    "prompt": "把刚才的故事讲给家长听。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 14000,
+      "retainMs": 2500,
+      "preview": [],
+      "audioText": "早上，小兔带着苹果去找小猫。路上小兔看见下雨，就在树下等了一会儿。雨停后，小兔把苹果分给了小猫。"
+    }
+  },
+  {
+    "id": "explore-story-recall-8",
+    "revision": 1,
+    "kind": "parentObservation",
+    "prompt": "把刚才的故事讲给家长听。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 14000,
+      "retainMs": 2500,
+      "preview": [],
+      "audioText": "小熊想搭一座桥，先找来木板。小狗帮忙扶住一头，小熊放好另一头。桥搭好以后，他们一起走过去。"
+    }
+  },
+  {
+    "id": "explore-story-recall-9",
+    "revision": 1,
+    "kind": "parentObservation",
+    "prompt": "把刚才的故事讲给家长听。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 14000,
+      "retainMs": 2500,
+      "preview": [],
+      "audioText": "小猫想种花，先把种子放进土里。小猫记得给土浇水。过了一段时间，小苗长出来了，小猫把这个发现告诉小兔。"
+    }
+  },
+  {
+    "id": "explore-attention-search-1",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "找出所有圆形。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-attention-search-2",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "找出所有方形。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-attention-search-3",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "找出所有三角形。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-attention-search-4",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "找出所有蓝色圆形。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-attention-search-5",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "找出所有蓝色方形。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-attention-search-6",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "找出所有蓝色三角形。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-attention-search-7",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "这次换规则：选黄色图卡，但跳过圆形。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-attention-search-8",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "这次换规则：选黄色图卡，但跳过方形。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-attention-search-9",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "这次换规则：选黄色图卡，但跳过三角形。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-inhibition-switch-1",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "听清这次的规则，再选择图卡。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 10000,
+      "retainMs": 1500,
+      "preview": [],
+      "audioText": "这次只选圆形，其他形状先不动。"
+    }
+  },
+  {
+    "id": "explore-inhibition-switch-2",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "听清这次的规则，再选择图卡。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 10000,
+      "retainMs": 1500,
+      "preview": [],
+      "audioText": "这次只选方形，其他形状先不动。"
+    }
+  },
+  {
+    "id": "explore-inhibition-switch-3",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "听清这次的规则，再选择图卡。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 10000,
+      "retainMs": 1500,
+      "preview": [],
+      "audioText": "这次只选三角形，其他形状先不动。"
+    }
+  },
+  {
+    "id": "explore-inhibition-switch-4",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "听清这次的规则，再选择图卡。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 12000,
+      "retainMs": 2000,
+      "preview": [],
+      "audioText": "原来选圆形。现在换规则，只选方形。要按新的规则做。"
+    }
+  },
+  {
+    "id": "explore-inhibition-switch-5",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "听清这次的规则，再选择图卡。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 12000,
+      "retainMs": 2000,
+      "preview": [],
+      "audioText": "原来选方形。现在换规则，只选三角形。要按新的规则做。"
+    }
+  },
+  {
+    "id": "explore-inhibition-switch-6",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "听清这次的规则，再选择图卡。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 12000,
+      "retainMs": 2000,
+      "preview": [],
+      "audioText": "原来选三角形。现在换规则，只选圆形。要按新的规则做。"
+    }
+  },
+  {
+    "id": "explore-inhibition-switch-7",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "听清这次的规则，再选择图卡。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 14000,
+      "retainMs": 2500,
+      "preview": [],
+      "audioText": "先记住颜色是红色。但如果看到方形，就不能选。"
+    }
+  },
+  {
+    "id": "explore-inhibition-switch-8",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "听清这次的规则，再选择图卡。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 14000,
+      "retainMs": 2500,
+      "preview": [],
+      "audioText": "先记住颜色是蓝色。但如果看到三角形，就不能选。"
+    }
+  },
+  {
+    "id": "explore-inhibition-switch-9",
+    "revision": 1,
+    "kind": "multiSelect",
+    "prompt": "听清这次的规则，再选择图卡。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 14000,
+      "retainMs": 2500,
+      "preview": [],
+      "audioText": "先记住颜色是黄色。但如果看到圆形，就不能选。"
+    }
+  },
+  {
+    "id": "explore-sound-rhythm-1",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "听声音的先后，再把声音卡排回来。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 10000,
+      "retainMs": 1500,
+      "preview": [],
+      "soundSrc": "/audio/stimuli/sequence-1.wav"
+    }
+  },
+  {
+    "id": "explore-sound-rhythm-2",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "听声音的先后，再把声音卡排回来。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 10000,
+      "retainMs": 1500,
+      "preview": [],
+      "soundSrc": "/audio/stimuli/sequence-2.wav"
+    }
+  },
+  {
+    "id": "explore-sound-rhythm-3",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "听声音的先后，再把声音卡排回来。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 10000,
+      "retainMs": 1500,
+      "preview": [],
+      "soundSrc": "/audio/stimuli/sequence-3.wav"
+    }
+  },
+  {
+    "id": "explore-sound-rhythm-4",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "听声音的先后，再把声音卡排回来。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 12000,
+      "retainMs": 2000,
+      "preview": [],
+      "soundSrc": "/audio/stimuli/sequence-4.wav"
+    }
+  },
+  {
+    "id": "explore-sound-rhythm-5",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "听声音的先后，再把声音卡排回来。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 12000,
+      "retainMs": 2000,
+      "preview": [],
+      "soundSrc": "/audio/stimuli/sequence-5.wav"
+    }
+  },
+  {
+    "id": "explore-sound-rhythm-6",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "听声音的先后，再把声音卡排回来。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 12000,
+      "retainMs": 2000,
+      "preview": [],
+      "soundSrc": "/audio/stimuli/sequence-6.wav"
+    }
+  },
+  {
+    "id": "explore-sound-rhythm-7",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "听声音的先后，再把声音卡排回来。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 14000,
+      "retainMs": 2500,
+      "preview": [],
+      "soundSrc": "/audio/stimuli/sequence-7.wav"
+    }
+  },
+  {
+    "id": "explore-sound-rhythm-8",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "听声音的先后，再把声音卡排回来。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 14000,
+      "retainMs": 2500,
+      "preview": [],
+      "soundSrc": "/audio/stimuli/sequence-8.wav"
+    }
+  },
+  {
+    "id": "explore-sound-rhythm-9",
+    "revision": 1,
+    "kind": "parentObservation",
+    "prompt": "听完节奏，用拍手把它模仿出来。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 14000,
+      "retainMs": 2500,
+      "preview": [],
+      "soundSrc": "/audio/stimuli/rhythm-parent.wav"
+    }
+  },
+  {
+    "id": "explore-relational-quantity-memory-1",
+    "revision": 1,
+    "kind": "matching",
+    "prompt": "记住每位朋友的数量，再把朋友和数量配对。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 10000,
+      "retainMs": 1500,
+      "preview": [
+        "preview0",
+        "preview1"
+      ]
+    }
+  },
+  {
+    "id": "explore-relational-quantity-memory-2",
+    "revision": 1,
+    "kind": "matching",
+    "prompt": "记住每位朋友的数量，再把朋友和数量配对。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 10000,
+      "retainMs": 1500,
+      "preview": [
+        "preview0",
+        "preview1"
+      ]
+    }
+  },
+  {
+    "id": "explore-relational-quantity-memory-3",
+    "revision": 1,
+    "kind": "matching",
+    "prompt": "记住每位朋友的数量，再把朋友和数量配对。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 10000,
+      "retainMs": 1500,
+      "preview": [
+        "preview0",
+        "preview1"
+      ]
+    }
+  },
+  {
+    "id": "explore-relational-quantity-memory-4",
+    "revision": 1,
+    "kind": "matching",
+    "prompt": "记住每位朋友的数量，再把朋友和数量配对。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 12000,
+      "retainMs": 2000,
+      "preview": [
+        "preview0",
+        "preview1",
+        "preview2"
+      ]
+    }
+  },
+  {
+    "id": "explore-relational-quantity-memory-5",
+    "revision": 1,
+    "kind": "matching",
+    "prompt": "记住每位朋友的数量，再把朋友和数量配对。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 12000,
+      "retainMs": 2000,
+      "preview": [
+        "preview0",
+        "preview1",
+        "preview2"
+      ]
+    }
+  },
+  {
+    "id": "explore-relational-quantity-memory-6",
+    "revision": 1,
+    "kind": "matching",
+    "prompt": "记住每位朋友的数量，再把朋友和数量配对。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 12000,
+      "retainMs": 2000,
+      "preview": [
+        "preview0",
+        "preview1",
+        "preview2"
+      ]
+    }
+  },
+  {
+    "id": "explore-relational-quantity-memory-7",
+    "revision": 1,
+    "kind": "matching",
+    "prompt": "记住每位朋友的数量，再把朋友和数量配对。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 14000,
+      "retainMs": 2500,
+      "preview": [
+        "preview0",
+        "preview1",
+        "preview2",
+        "preview3"
+      ]
+    }
+  },
+  {
+    "id": "explore-relational-quantity-memory-8",
+    "revision": 1,
+    "kind": "matching",
+    "prompt": "记住每位朋友的数量，再把朋友和数量配对。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 14000,
+      "retainMs": 2500,
+      "preview": [
+        "preview0",
+        "preview1",
+        "preview2",
+        "preview3"
+      ]
+    }
+  },
+  {
+    "id": "explore-relational-quantity-memory-9",
+    "revision": 1,
+    "kind": "matching",
+    "prompt": "记住每位朋友的数量，再把朋友和数量配对。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 14000,
+      "retainMs": 2500,
+      "preview": [
+        "preview0",
+        "preview1",
+        "preview2",
+        "preview3"
+      ]
+    }
+  },
+  {
+    "id": "explore-vocabulary-relations-1",
+    "revision": 1,
+    "kind": "matching",
+    "prompt": "把意思相反的词配成朋友。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-vocabulary-relations-2",
+    "revision": 1,
+    "kind": "matching",
+    "prompt": "把意思相反的词配成朋友。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-vocabulary-relations-3",
+    "revision": 1,
+    "kind": "matching",
+    "prompt": "把意思相反的词配成朋友。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-vocabulary-relations-4",
+    "revision": 1,
+    "kind": "matching",
+    "prompt": "把意思相反的词配成朋友。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-vocabulary-relations-5",
+    "revision": 1,
+    "kind": "matching",
+    "prompt": "把意思相反的词配成朋友。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-vocabulary-relations-6",
+    "revision": 1,
+    "kind": "matching",
+    "prompt": "把意思相反的词配成朋友。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-vocabulary-relations-7",
+    "revision": 1,
+    "kind": "parentObservation",
+    "prompt": "用动作说开和关",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-vocabulary-relations-8",
+    "revision": 1,
+    "kind": "parentObservation",
+    "prompt": "用实物说长和短",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-vocabulary-relations-9",
+    "revision": 1,
+    "kind": "parentObservation",
+    "prompt": "同一个词换个情境",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-describe-relations-1",
+    "revision": 1,
+    "kind": "parentObservation",
+    "prompt": "给家长指路",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-describe-relations-2",
+    "revision": 1,
+    "kind": "parentObservation",
+    "prompt": "换个位置描述",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-describe-relations-3",
+    "revision": 1,
+    "kind": "parentObservation",
+    "prompt": "比较两种说法",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-story-sequence-expression-1",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "按这个故事的先后，把事件排好。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-story-sequence-expression-2",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "按这个故事的先后，把事件排好。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-story-sequence-expression-3",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "按这个故事的先后，把事件排好。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-story-sequence-expression-4",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "按这个故事的先后，把事件排好。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-story-sequence-expression-5",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "按这个故事的先后，把事件排好。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-story-sequence-expression-6",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "按这个故事的先后，把事件排好。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-story-sequence-expression-7",
+    "revision": 1,
+    "kind": "parentObservation",
+    "prompt": "先讲清故事，再想一个不同的结局。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-story-sequence-expression-8",
+    "revision": 1,
+    "kind": "parentObservation",
+    "prompt": "先讲清故事，再想一个不同的结局。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-story-sequence-expression-9",
+    "revision": 1,
+    "kind": "parentObservation",
+    "prompt": "先讲清故事，再想一个不同的结局。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-creative-explanation-1",
+    "revision": 1,
+    "kind": "parentObservation",
+    "prompt": "给图卡编故事",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-creative-explanation-2",
+    "revision": 1,
+    "kind": "parentObservation",
+    "prompt": "比较两个办法",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-creative-explanation-3",
+    "revision": 1,
+    "kind": "parentObservation",
+    "prompt": "证据够不够",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-character-phonics-1",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "哪张字卡和上面的字完全一样？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-character-phonics-2",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "哪张字卡和上面的字完全一样？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-character-phonics-3",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "哪张字卡和上面的字完全一样？",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-character-phonics-4",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "听词语，选出其中要找的字。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 10000,
+      "retainMs": 500,
+      "preview": [],
+      "audioText": "妈妈。请找妈。",
+      "audioLocale": "zh-CN"
+    }
+  },
+  {
+    "id": "explore-character-phonics-5",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "听词语，选出其中要找的字。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 10000,
+      "retainMs": 500,
+      "preview": [],
+      "audioText": "小猫。请找猫。",
+      "audioLocale": "zh-CN"
+    }
+  },
+  {
+    "id": "explore-character-phonics-6",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "听词语，选出其中要找的字。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 10000,
+      "retainMs": 500,
+      "preview": [],
+      "audioText": "大米。请找米。",
+      "audioLocale": "zh-CN"
+    }
+  },
+  {
+    "id": "explore-character-phonics-7",
+    "revision": 1,
+    "kind": "matching",
+    "prompt": "根据对照表，把汉字和拼音配起来。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-character-phonics-8",
+    "revision": 1,
+    "kind": "matching",
+    "prompt": "根据对照表，把汉字和拼音配起来。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-character-phonics-9",
+    "revision": 1,
+    "kind": "matching",
+    "prompt": "根据对照表，把汉字和拼音配起来。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-english-listening-1",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "听英语，选出对应的小动物。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 10000,
+      "retainMs": 500,
+      "preview": [],
+      "audioText": "rabbit",
+      "audioLocale": "en-US"
+    }
+  },
+  {
+    "id": "explore-english-listening-2",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "听英语，选出对应的小动物。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 10000,
+      "retainMs": 500,
+      "preview": [],
+      "audioText": "cat",
+      "audioLocale": "en-US"
+    }
+  },
+  {
+    "id": "explore-english-listening-3",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "听英语，选出对应的小动物。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 10000,
+      "retainMs": 500,
+      "preview": [],
+      "audioText": "dog",
+      "audioLocale": "en-US"
+    }
+  },
+  {
+    "id": "explore-english-listening-4",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "听英语短句，把颜色和形状都对上。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 10000,
+      "retainMs": 500,
+      "preview": [],
+      "audioText": "Choose the red circle.",
+      "audioLocale": "en-US"
+    }
+  },
+  {
+    "id": "explore-english-listening-5",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "听英语短句，把颜色和形状都对上。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 10000,
+      "retainMs": 500,
+      "preview": [],
+      "audioText": "Choose the blue square.",
+      "audioLocale": "en-US"
+    }
+  },
+  {
+    "id": "explore-english-listening-6",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "听英语短句，把颜色和形状都对上。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 10000,
+      "retainMs": 500,
+      "preview": [],
+      "audioText": "Choose the yellow triangle.",
+      "audioLocale": "en-US"
+    }
+  },
+  {
+    "id": "explore-english-listening-7",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "听英语，找到位置关系相符的图。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 10000,
+      "retainMs": 500,
+      "preview": [],
+      "audioText": "The red circle is on the left of the blue square.",
+      "audioLocale": "en-US"
+    }
+  },
+  {
+    "id": "explore-english-listening-8",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "听英语，找到位置关系相符的图。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 10000,
+      "retainMs": 500,
+      "preview": [],
+      "audioText": "The red square is on the left of the blue triangle.",
+      "audioLocale": "en-US"
+    }
+  },
+  {
+    "id": "explore-english-listening-9",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "听英语，找到位置关系相符的图。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 10000,
+      "retainMs": 500,
+      "preview": [],
+      "audioText": "The red triangle is on the left of the blue circle.",
+      "audioLocale": "en-US"
+    }
+  },
+  {
+    "id": "explore-bilingual-concepts-1",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "听英语，选择相同数量的图。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 10000,
+      "retainMs": 500,
+      "preview": [],
+      "audioText": "There is one circle.",
+      "audioLocale": "en-US"
+    }
+  },
+  {
+    "id": "explore-bilingual-concepts-2",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "听英语，选择相同数量的图。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 10000,
+      "retainMs": 500,
+      "preview": [],
+      "audioText": "There are two circles.",
+      "audioLocale": "en-US"
+    }
+  },
+  {
+    "id": "explore-bilingual-concepts-3",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "听英语，选择相同数量的图。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 10000,
+      "retainMs": 500,
+      "preview": [],
+      "audioText": "There are three circles.",
+      "audioLocale": "en-US"
+    }
+  },
+  {
+    "id": "explore-bilingual-concepts-4",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "听英语，找出对象和位置都对应的图。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 10000,
+      "retainMs": 500,
+      "preview": [],
+      "audioText": "There is one circle above the red square.",
+      "audioLocale": "en-US"
+    }
+  },
+  {
+    "id": "explore-bilingual-concepts-5",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "听英语，找出对象和位置都对应的图。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 10000,
+      "retainMs": 500,
+      "preview": [],
+      "audioText": "There are two circles above the red square.",
+      "audioLocale": "en-US"
+    }
+  },
+  {
+    "id": "explore-bilingual-concepts-6",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "听英语，找出对象和位置都对应的图。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 10000,
+      "retainMs": 500,
+      "preview": [],
+      "audioText": "There are three circles above the red square.",
+      "audioLocale": "en-US"
+    }
+  },
+  {
+    "id": "explore-bilingual-concepts-7",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "听英语比较，选出符合所有关系的图。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 10000,
+      "retainMs": 500,
+      "preview": [],
+      "audioText": "The red bar is longer than the blue bar. The blue bar is longer than the yellow bar.",
+      "audioLocale": "en-US"
+    }
+  },
+  {
+    "id": "explore-bilingual-concepts-8",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "听英语比较，选出符合所有关系的图。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 10000,
+      "retainMs": 500,
+      "preview": [],
+      "audioText": "The red bar is longer than the blue bar. The blue bar is longer than the yellow bar.",
+      "audioLocale": "en-US"
+    }
+  },
+  {
+    "id": "explore-bilingual-concepts-9",
+    "revision": 1,
+    "kind": "singleChoice",
+    "prompt": "听英语比较，选出符合所有关系的图。",
+    "protocol": {
+      "kind": "memory",
+      "observeMs": 10000,
+      "retainMs": 500,
+      "preview": [],
+      "audioText": "The red bar is longer than the blue bar. The blue bar is longer than the yellow bar.",
+      "audioLocale": "en-US"
+    }
+  },
+  {
+    "id": "explore-conversation-self-expression-1",
+    "revision": 1,
+    "kind": "parentObservation",
+    "prompt": "说明一个选择",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-conversation-self-expression-2",
+    "revision": 1,
+    "kind": "parentObservation",
+    "prompt": "回答追问",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-conversation-self-expression-3",
+    "revision": 1,
+    "kind": "parentObservation",
+    "prompt": "轮流问和听",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-everyday-classification-1",
+    "revision": 1,
+    "kind": "matching",
+    "prompt": "把用品和这次要做的事配起来。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-everyday-classification-2",
+    "revision": 1,
+    "kind": "matching",
+    "prompt": "把用品和这次要做的事配起来。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-everyday-classification-3",
+    "revision": 1,
+    "kind": "matching",
+    "prompt": "把用品和这次要做的事配起来。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-everyday-classification-4",
+    "revision": 1,
+    "kind": "matching",
+    "prompt": "把用品和这次要做的事配起来。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-everyday-classification-5",
+    "revision": 1,
+    "kind": "matching",
+    "prompt": "把用品和这次要做的事配起来。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-everyday-classification-6",
+    "revision": 1,
+    "kind": "matching",
+    "prompt": "把用品和这次要做的事配起来。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-everyday-classification-7",
+    "revision": 1,
+    "kind": "parentObservation",
+    "prompt": "一个物品多种用途",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-everyday-classification-8",
+    "revision": 1,
+    "kind": "parentObservation",
+    "prompt": "材料和场景",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-everyday-classification-9",
+    "revision": 1,
+    "kind": "parentObservation",
+    "prompt": "整理规则换一换",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-nature-growth-1",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "根据观察记录，把变化的先后排好。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-nature-growth-2",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "根据观察记录，把变化的先后排好。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-nature-growth-3",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "根据观察记录，把变化的先后排好。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-nature-growth-4",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "根据观察记录，把变化的先后排好。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-nature-growth-5",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "根据观察记录，把变化的先后排好。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-nature-growth-6",
+    "revision": 1,
+    "kind": "orderedPlacement",
+    "prompt": "根据观察记录，把变化的先后排好。",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-nature-growth-7",
+    "revision": 1,
+    "kind": "parentObservation",
+    "prompt": "豆苗连续观察",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-nature-growth-8",
+    "revision": 1,
+    "kind": "parentObservation",
+    "prompt": "寻找小动物的变化",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-nature-growth-9",
+    "revision": 1,
+    "kind": "parentObservation",
+    "prompt": "对照观察记录",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-science-experiments-1",
+    "revision": 1,
+    "kind": "parentObservation",
+    "prompt": "浮沉不只看大小",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-science-experiments-2",
+    "revision": 1,
+    "kind": "parentObservation",
+    "prompt": "颜色和透明叠层",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-science-experiments-3",
+    "revision": 1,
+    "kind": "parentObservation",
+    "prompt": "影子与切面",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-senses-social-rules-1",
+    "revision": 1,
+    "kind": "parentObservation",
+    "prompt": "用什么来观察",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-senses-social-rules-2",
+    "revision": 1,
+    "kind": "parentObservation",
+    "prompt": "玩具通道怎么走",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-senses-social-rules-3",
+    "revision": 1,
+    "kind": "parentObservation",
+    "prompt": "遇到分歧怎么说",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-culture-world-1",
+    "revision": 1,
+    "kind": "parentObservation",
+    "prompt": "家里的节日记忆",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-culture-world-2",
+    "revision": 1,
+    "kind": "parentObservation",
+    "prompt": "同一节日不同做法",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-culture-world-3",
+    "revision": 1,
+    "kind": "parentObservation",
+    "prompt": "地图里的生活",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-fine-motor-action-1",
+    "revision": 1,
+    "kind": "parentObservation",
+    "prompt": "沿线折与剪",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-fine-motor-action-2",
+    "revision": 1,
+    "kind": "parentObservation",
+    "prompt": "搭建和运送",
+    "protocol": {
+      "kind": "practice"
+    }
+  },
+  {
+    "id": "explore-fine-motor-action-3",
+    "revision": 1,
+    "kind": "parentObservation",
+    "prompt": "模仿节拍与动作",
+    "protocol": {
+      "kind": "practice"
+    }
+  }
+]

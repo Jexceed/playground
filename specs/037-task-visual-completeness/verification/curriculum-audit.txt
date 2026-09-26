@@ -1,0 +1,22 @@
+Already up to date
+Done in 164ms using pnpm v11.19.0
+$ node scripts/audit-curriculum.mjs
+{
+  "math": 266,
+  "logic": 445,
+  "graphic": 234,
+  "memory": 81,
+  "language": 54,
+  "life": 30,
+  "totalGames": 115,
+  "totalRounds": 1110,
+  "legacyGames": 40,
+  "legacyRounds": 489,
+  "interactiveGames": 75,
+  "interactiveRounds": 621,
+  "mathTargetMet": true,
+  "logicTargetMet": true,
+  "graphicTargetMet": true,
+  "problemCount": 0,
+  "problems": []
+}

@@ -1,0 +1,81 @@
+{
+  "assets": [
+    {
+      "name": "memory-event-stories",
+      "columns": 3,
+      "rows": 2,
+      "captions": [
+        "带苹果出门",
+        "在树下等雨停",
+        "和小猫分苹果",
+        "找来木板",
+        "合作放好木板",
+        "走过小桥"
+      ],
+      "output": "/Users/chiang/.codex/generated_images/01a0c732-8dad-7890-b961-c9c8cb54599d/exec-8e22c865-1f50-44ff-81e8-223c3808cf51.png"
+    },
+    {
+      "name": "everyday-actions",
+      "columns": 3,
+      "rows": 3,
+      "captions": [
+        "喝水",
+        "画线",
+        "擦干",
+        "挡雨",
+        "遮阳",
+        "装饭",
+        "拼搭",
+        "阅读",
+        "量长度"
+      ],
+      "output": "/Users/chiang/.codex/generated_images/01a0c732-8dad-7890-b961-c9c8cb54599d/exec-453df4e1-3d04-42c6-b2a4-42af53e92278.png"
+    },
+    {
+      "name": "parent-materials",
+      "columns": 3,
+      "rows": 3,
+      "captions": [
+        "圆柱形积木",
+        "方积木",
+        "透明杯",
+        "不透明袋",
+        "布片",
+        "小托盘",
+        "手电筒",
+        "橡皮泥",
+        "塑料切刀"
+      ],
+      "output": "/Users/chiang/.codex/generated_images/01a0c732-8dad-7890-b961-c9c8cb54599d/exec-6784e8c2-b377-40ce-8803-5b75a62c2298.png"
+    },
+    {
+      "name": "craft-materials",
+      "columns": 2,
+      "rows": 2,
+      "captions": [
+        "白纸",
+        "彩笔",
+        "透明彩色片",
+        "软垫"
+      ],
+      "output": "/Users/chiang/.codex/generated_images/01a0c732-8dad-7890-b961-c9c8cb54599d/exec-dd854711-e016-48d1-8592-a0da07c40a0c.png"
+    }
+  ],
+  "edits": [
+    {
+      "name": "everyday-actions",
+      "path": "/Users/chiang/.codex/generated_images/01a0c732-8dad-7890-b961-c9c8cb54599d/exec-dada3979-b6b9-4898-a440-8287f457b273.png",
+      "prompt": "Edit target: the attached 3 by 3 daily-action atlas. Keep all nine illustrations, action details, characters, relative size, equal grid positions and square canvas unchanged. Fix ONLY the narrow seams and alpha/background defects: make the entire image fully opaque RGB with clean subtle ivory-paper gutters; remove every speckled neon-red/yellow edge, every transparent pixel and jagged seam. No new labels, no numbers, no decorative borders. Preserve the nine clear actions exactly. Output a fully OPAQUE square image, no transparency or background removal."
+    },
+    {
+      "name": "craft-materials",
+      "path": "/Users/chiang/.codex/generated_images/01a0c732-8dad-7890-b961-c9c8cb54599d/exec-7aa34d7e-9190-486d-847c-5427720894f6.png",
+      "prompt": "Edit target: the attached 2 by 2 preparation-material atlas. Keep exactly the same four subjects and their equal 2x2 square panel positions: blank white paper sheets, colored pencils, transparent colored acetate sheets, folded green soft mat. Repair ONLY the defective background and cutout edges: replace ALL black/transparent/speckled/neon red/yellow areas with one continuous fully opaque warm ivory paper background, clean naturally painted edges with subtle shadows. Keep paper white and visible against ivory; keep colors and material appearances. Make the entire output opaque RGB; absolutely no alpha transparency, no background removal. Do not add any text, numbers, borders, new objects, or change the 2x2 layout."
+    },
+    {
+      "name": "everyday-actions",
+      "prompt": "Edit target: the attached 3 by 3 daily-action illustration atlas. Change ONLY the RULER in the bottom-right panel. Keep every other pixel's content and all nine actions/composition unchanged. Remove ALL printed numerals and letters from that ruler. It should have only clean evenly-spaced scale tick marks, with a long dark starting tick directly aligned with the LEFT endpoint of the wooden stick, demonstrating correct measurement alignment. The stick, hand, table and clear ruler remain, no pencil. Keep all 9 equal cells and the fully OPAQUE ivory gutters. No new words, numbers, marks outside the ruler, transparency or background removal."
+    }
+  ],
+  "review": "All final panels visually inspected. Two initial alpha/seam artifacts were repaired using built-in image_gen; ruler numerals removed in a targeted image_gen edit. Only final outputs are installed."
+}

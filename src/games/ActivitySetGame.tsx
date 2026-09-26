@@ -522,6 +522,7 @@ function ActivityRound({
       className="activity-round"
       data-testid="activity-round"
       data-activity-id={activity.id}
+      data-family={activity.primaryFamilyId}
       data-phase={state.phase}
       data-kind={activity.kind}
       data-dense={activity.tokens.length > 6 && !activity.presentation?.compactSymbols || undefined}
@@ -541,7 +542,7 @@ function ActivityRound({
         <p>{activity.instruction}</p>
       </div>
 
-      <ActivityEvidence activity={activity} phase={state.phase} />
+      {(activity.kind !== 'parentObservation' || parentMode === 'play') && <ActivityEvidence activity={activity} phase={state.phase} />}
       {activity.clues.length > 0 && (
         <ol className="activity-clues">
           {activity.clues.map((clue, index) => (

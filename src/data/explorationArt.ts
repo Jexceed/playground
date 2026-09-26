@@ -1,8 +1,8 @@
 import type { GalleryImage } from "./imageGallery";
 
 /** Each generated atlas is one source asset. Frame coordinates are explicit and auditable. */
-function story(name: string, captions: string[]): GalleryImage[] {
-  return captions.map((alt, index) => ({ src: `/images/items/exploration-art/${name}.png`, alt, frame: { columns: 2, rows: 2, index }, style: "illustration" }));
+function story(name: string, captions: string[], columns = 2, rows = 2): GalleryImage[] {
+  return captions.map((alt, index) => ({ src: `/images/items/exploration-art/${name}.png`, alt, frame: { columns, rows, index }, style: "illustration" }));
 }
 export const explorationArt = {
   catPlant: story("cat-plant-story", ["小猫收到种子", "小猫把种子种进土里", "小猫按记录照顾小苗", "小猫观察新叶片"]),
@@ -16,5 +16,9 @@ export const explorationArt = {
   painting: story("painting-steps", ["准备画纸", "画出轮廓", "给画涂色", "把画晾干"]),
   planting: story("planting-steps", ["取花盆", "放土和种子", "轻轻浇水", "等待发芽"]),
   experimentMaterials: story("experiment-materials", ["木块", "塑料盒", "金属勺", "一盆浅水"]),
+  memoryEvents: story("memory-event-stories", ["带苹果出门", "在树下等雨停", "和小猫分苹果", "找来木板", "合作放好木板", "走过小桥"], 3, 2),
+  everydayActions: story("everyday-actions", ["喝水", "画线", "擦干", "挡雨", "遮阳", "装饭", "拼搭", "阅读", "量长度"], 3, 3),
+  parentMaterials: story("parent-materials", ["圆柱形积木", "方积木", "透明杯", "不透明袋", "布片", "小托盘", "手电筒", "橡皮泥", "塑料切刀"], 3, 3),
+  craftMaterials: story("craft-materials", ["白纸", "彩笔", "透明彩色片", "软垫"]),
 };
 export const explorationArtImages: Record<string, GalleryImage> = Object.fromEntries(Object.entries(explorationArt).flatMap(([name, frames]) => frames.map((frame, index) => [`${name}${index + 1}`, frame])));

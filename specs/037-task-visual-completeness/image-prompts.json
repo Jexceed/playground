@@ -1,0 +1,66 @@
+{
+  "tool": "built-in image_gen",
+  "useCase": "illustration-story",
+  "assets": [
+    {
+      "name": "memory-event-stories",
+      "columns": 3,
+      "rows": 2,
+      "captions": [
+        "带苹果出门",
+        "在树下等雨停",
+        "和小猫分苹果",
+        "找来木板",
+        "合作放好木板",
+        "走过小桥"
+      ],
+      "prompt": "Use case: illustration-story. Asset type: children's thinking-game event-card atlas, exactly SIX square panels in a precise 3-column by 2-row grid on a 1536 by 1024 landscape canvas. Warm detailed hand-painted picture-book illustrations on cream paper, like a gentle illustrated children's book; clear silhouettes and large actions usable as 130px cards. Each panel is independent, perfectly centered in its equal cell, with a modest cream margin; no connecting arrows, no numbers, no text, no borders intruding into adjacent cells. Top row is one consistent white rabbit carrying red apples and a friendly ginger kitten story: top-left, the white rabbit walks out of its home carrying a small basket of red apples, dry early morning path; top-middle, the SAME white rabbit and basket wait under the leafy canopy of a tree while ordinary rain falls beyond the canopy, no lightning or storm; top-right, after rain, that white rabbit hands a red apple from its basket to the SAME ginger kitten, both clearly visible. Bottom row is one consistent brown bear and brown-and-white puppy story by a tiny calm stream: bottom-left, brown bear picks up a long wooden plank from a small stack on the bank, bridge not built yet; bottom-middle, puppy at one bank holds one end of a plank while the bear at the opposite bank lowers the other end across the very narrow stream, visibly cooperating to build the wooden bridge; bottom-right, bear and puppy walk together over the now completed stable short plank bridge, full bridge and both banks visible. Preserve characters and objects within each story. Each tile contains just its specified event, no composites, no extra event or answers. NO WORDS, NO LABELS, NO LETTERS, NO NUMBERS, NO WATERMARK."
+    },
+    {
+      "name": "everyday-actions",
+      "columns": 3,
+      "rows": 3,
+      "captions": [
+        "喝水",
+        "画线",
+        "擦干",
+        "挡雨",
+        "遮阳",
+        "装饭",
+        "拼搭",
+        "阅读",
+        "量长度"
+      ],
+      "prompt": "Use case: illustration-story. Asset type: nine independent daily-action cards for a child-friendly object-to-use matching game. Exactly 3 columns by 3 rows of equally sized square panels, 1536 by 1536 square canvas. Gentle hand-painted picture-book style, warm natural colors, cream paper backgrounds, clear close or medium views. Each action fills its cell, with breathing room; NO textual labels, numbers, arrows, watermarks. Row 1 left: child lifts a simple handled drinking cup to lips and drinks water. Row 1 middle: close-up hand uses a pencil to draw one clear straight line on white paper, NO ruler or other tool. Row 1 right: child uses a soft towel to dry wet hands, small remaining water droplets make drying recognizable. Row 2 left: child holds an OPEN umbrella overhead shielding from visible rain, the umbrella and rain both clear. Row 2 middle: child outdoors under warm sunshine wearing a wide-brimmed sun hat, the brim visibly shades the face; NO umbrella. Row 2 right: close-up hands put rice and vegetables INTO an open lunchbox, food and container clearly visible; not merely eating. Row 3 left: child assembles several large colorful building blocks into a simple structure. Row 3 middle: child is reading an open picture book, looking at its pages, pages have simple pictures with NO legible writing. Row 3 right: close-up hand lays a marked ruler carefully alongside a plain wooden stick to measure its length, ruler ticks clearly visible, no reading of numeric values required, NO drawing pencil. Each tile must be a real ACTION not a duplicate object cutout. Keep all figures, hands and tools fully inside their own panel, anatomically coherent, uncluttered. The nine cells will be cropped independently. No extra actions."
+    },
+    {
+      "name": "parent-materials",
+      "columns": 3,
+      "rows": 3,
+      "captions": [
+        "圆柱形积木",
+        "方积木",
+        "透明杯",
+        "不透明袋",
+        "布片",
+        "小托盘",
+        "手电筒",
+        "橡皮泥",
+        "塑料切刀"
+      ],
+      "prompt": "Use case: illustration-story. Asset type: 9 isolated material illustrations for children's parent-and-child activity preparation. EXACTLY 3 by 3 equal square cells on a 1536 by 1536 square cream paper canvas. Soft detailed picture-book watercolor/gouache, natural tactile materials, easy-to-recognize centered objects, consistent 3/4 view, no characters, no lettering, no numbers, no borders, no shadows or objects crossing cells. Row1 left: ONE upright plain natural wood CYLINDER building block, clear circular top and curved side, no studs. Row1 middle: FOUR plain natural wood CUBES scattered as a small group, each visibly a cube, no Lego studs. Row1 right: ONE EMPTY transparent glass-like child-safe tumbler, no handle, visibly see-through. Row2 left: ONE opaque fabric drawstring bag, slightly open but no contents visible, warm muted tan fabric. Row2 middle: ONE plain soft square cloth loosely folded, recognizable cloth piece, no labels. Row2 right: ONE empty shallow small wooden carrying tray with raised rim and two handles. Row3 left: ONE handheld flashlight, light OFF, lens and handle visible. Row3 middle: THREE soft colorful lumps of modeling clay, visibly kneadable clay rather than solid balls or food. Row3 right: ONE brightly colored BLUNT PLASTIC modeling-clay knife, round tip and rounded nonmetal blade, unmistakably safe craft tool, not kitchen knife. All requested objects shown completely with generous cream margins, one category per cell, no mixing categories. No logos, no text, no extra props, no effects or experiment results."
+    },
+    {
+      "name": "craft-materials",
+      "columns": 2,
+      "rows": 2,
+      "captions": [
+        "白纸",
+        "彩笔",
+        "透明彩色片",
+        "软垫"
+      ],
+      "prompt": "Use case: illustration-story. Asset type: four isolated preparation materials for children's craft and observation activities. EXACTLY 2 columns by 2 rows of equally sized square panels on 1024 by 1024 square canvas, warm cream paper background. Soft detailed hand-painted picture-book style, clear silhouettes, natural subdued colors, all objects centered and fully visible inside their own cells, modest margins. Top-left: three plain BLANK white paper sheets slightly fanned, clean visible straight edges, NO drawings or marks. Top-right: a small set of colored pencils, colored tips in red blue yellow green purple, no text on shafts. Bottom-left: THREE separate transparent colored acetate sheets, red blue yellow, offset with tiny overlaps so their thin see-through material is recognizable, no frame, no demonstration setup or labels. Bottom-right: one small folded or rolled SOFT floor mat suitable for children's slow walking exercise, gentle green padded material, texture shows softness, no grid/game print. No people, hands, letters, arrows, numbers, logos, captions, borders or watermark; do not let any object cross between cells."
+    }
+  ]
+}

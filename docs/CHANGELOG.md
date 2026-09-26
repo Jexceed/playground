@@ -3,6 +3,15 @@
 All meaningful project changes should be recorded here. Keep entries factual and
 grouped by date.
 
+## 2026-09-26
+
+### Complete task pictures and preparation materials
+
+- Reviewed the current representation of all 75 exploration groups / 621 activities. Added 28 illustrated frames: six listening-story events, nine daily-use actions and thirteen preparation materials. All 15 atlases / 72 frames have active references; the previous 44 frames are preserved.
+- Replaced text-only actions in A05/P01 with matching pictures. Matching cards now have an independent large-picture viewer; viewing keeps pending selections and existing connections. Enlarged action cards retain the current Mac one-page layout through hints and completion.
+- Supplied E04 story ingredients and the spilled-water evidence scene, L07's nine color/shape cards and P06's tracing template. Corrected preparation lists and material pictures, including cylinders, transparent cups, flashlights and craft tools. Parent tasks with reference pictures show one step at a time and hide the reference during observation recording. G17 now shows a recognizable person facing the arrow, with a larger diagram.
+- Revised ten parent activities while keeping stable IDs and historical facts. Regenerated local diagrams and Edge speech; 4003 voice entries have no failures or macOS/mixed-local fallback. Passed 87 regressions and curriculum/illustration/voice-media audits. Rebuilt and installed the standard Mac app; the Mac locked again before final native acceptance, so dev push remains pending. Evidence: specs/037-task-visual-completeness/verification/qa.md.
+
 ## 2026-09-25
 
 ### Larger story pictures and independent picture viewing

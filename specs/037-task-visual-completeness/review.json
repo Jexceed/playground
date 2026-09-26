@@ -1,0 +1,1240 @@
+{
+  "baseCommit": "4f8a362",
+  "date": "2026-09-26",
+  "scope": "75 groups / 621 activities; source/presentation inventory, not all-state UI or child validation",
+  "groupCount": 75,
+  "roundCount": 621,
+  "groups": [
+    {
+      "id": "logic-rule-workshop",
+      "family": "L01",
+      "title": "规则收纳盒",
+      "world": "logic",
+      "rounds": 6,
+      "kinds": [
+        "multiSelect"
+      ],
+      "surfaceReview": "现有点群、几何、网格或直接操作承载关系，未发现需要替换为故事插画的证据。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "logic-lineup-challenge",
+      "family": "L03",
+      "title": "线索排排队",
+      "world": "logic",
+      "rounds": 6,
+      "kinds": [
+        "orderedPlacement"
+      ],
+      "surfaceReview": "现有点群、几何、网格或直接操作承载关系，未发现需要替换为故事插画的证据。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "graphic-rule-grid",
+      "family": "G03",
+      "title": "图形推理盘",
+      "world": "graphic",
+      "rounds": 6,
+      "kinds": [
+        "gridPlacement"
+      ],
+      "surfaceReview": "现有点群、几何、网格或直接操作承载关系，未发现需要替换为故事插画的证据。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "logic-memory-placement",
+      "family": "A03",
+      "title": "记忆摆一摆",
+      "world": "logic",
+      "rounds": 6,
+      "kinds": [
+        "orderedPlacement",
+        "gridPlacement"
+      ],
+      "surfaceReview": "现有点群、几何、网格或直接操作承载关系，未发现需要替换为故事插画的证据。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-counting-cardinality",
+      "family": "N01",
+      "title": "数量结构屋",
+      "world": "math",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice"
+      ],
+      "surfaceReview": "现有点群、几何、网格或直接操作承载关系，未发现需要替换为故事插画的证据。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-compare-transfer",
+      "family": "N02",
+      "title": "移一移比多少",
+      "world": "math",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice"
+      ],
+      "surfaceReview": "现有点群、几何、网格或直接操作承载关系，未发现需要替换为故事插画的证据。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-number-conservation",
+      "family": "N03",
+      "title": "变了样没变多",
+      "world": "math",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice"
+      ],
+      "surfaceReview": "现有点群、几何、网格或直接操作承载关系，未发现需要替换为故事插画的证据。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-number-partitions",
+      "family": "N04",
+      "title": "分法找齐了吗",
+      "world": "math",
+      "rounds": 9,
+      "kinds": [
+        "multiSelect"
+      ],
+      "surfaceReview": "现有点群、几何、网格或直接操作承载关系，未发现需要替换为故事插画的证据。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-make-break-ten",
+      "family": "N05",
+      "title": "十的好朋友",
+      "world": "math",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice"
+      ],
+      "surfaceReview": "现有点群、几何、网格或直接操作承载关系，未发现需要替换为故事插画的证据。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-quantity-stories",
+      "family": "N06",
+      "title": "故事里的未知数",
+      "world": "math",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice"
+      ],
+      "surfaceReview": "现有点群、几何、网格或直接操作承载关系，未发现需要替换为故事插画的证据。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-group-share",
+      "family": "N07",
+      "title": "分组小管家",
+      "world": "math",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice"
+      ],
+      "surfaceReview": "现有点群、几何、网格或直接操作承载关系，未发现需要替换为故事插画的证据。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-area-fractions",
+      "family": "N08",
+      "title": "一样大的那一份",
+      "world": "math",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice"
+      ],
+      "surfaceReview": "现有点群、几何、网格或直接操作承载关系，未发现需要替换为故事插画的证据。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-ordinal-queue",
+      "family": "N09",
+      "title": "队伍有多长",
+      "world": "math",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice"
+      ],
+      "surfaceReview": "现有点群、几何、网格或直接操作承载关系，未发现需要替换为故事插画的证据。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-parity-place-value",
+      "family": "N10",
+      "title": "单双和数位",
+      "world": "math",
+      "rounds": 9,
+      "kinds": [
+        "multiSelect",
+        "singleChoice"
+      ],
+      "surfaceReview": "现有点群、几何、网格或直接操作承载关系，未发现需要替换为故事插画的证据。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-number-sequences",
+      "family": "N11",
+      "title": "数列侦探",
+      "world": "math",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice"
+      ],
+      "surfaceReview": "现有点群、几何、网格或直接操作承载关系，未发现需要替换为故事插画的证据。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-symbol-equations",
+      "family": "N12",
+      "title": "图形等量换",
+      "world": "math",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice"
+      ],
+      "surfaceReview": "现有点群、几何、网格或直接操作承载关系，未发现需要替换为故事插画的证据。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-money-shopping",
+      "family": "N13",
+      "title": "小小零钱铺",
+      "world": "math",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice",
+        "multiSelect"
+      ],
+      "surfaceReview": "现有点群、几何、网格或直接操作承载关系，未发现需要替换为故事插画的证据。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-time-elapsed",
+      "family": "N14",
+      "title": "时钟往前走",
+      "world": "math",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice"
+      ],
+      "surfaceReview": "现有点群、几何、网格或直接操作承载关系，未发现需要替换为故事插画的证据。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-measurement-boundaries",
+      "family": "N15",
+      "title": "量一量围一围",
+      "world": "math",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice"
+      ],
+      "surfaceReview": "现有点群、几何、网格或直接操作承载关系，未发现需要替换为故事插画的证据。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-calendar-cycles",
+      "family": "N16",
+      "title": "练习日历",
+      "world": "math",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice"
+      ],
+      "surfaceReview": "现有点群、几何、网格或直接操作承载关系，未发现需要替换为故事插画的证据。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-multi-rule-classification",
+      "family": "L01",
+      "title": "分类换个角度",
+      "world": "logic",
+      "rounds": 9,
+      "kinds": [
+        "multiSelect"
+      ],
+      "surfaceReview": "现有点群、几何、网格或直接操作承载关系，未发现需要替换为故事插画的证据。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-relations-analogies",
+      "family": "L02",
+      "title": "关系接力",
+      "world": "logic",
+      "rounds": 9,
+      "kinds": [
+        "matching"
+      ],
+      "surfaceReview": "现有点群、几何、网格或直接操作承载关系，未发现需要替换为故事插画的证据。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-transitive-order",
+      "family": "L03",
+      "title": "线索够不够",
+      "world": "logic",
+      "rounds": 9,
+      "kinds": [
+        "orderedPlacement",
+        "singleChoice"
+      ],
+      "surfaceReview": "现有点群、几何、网格或直接操作承载关系，未发现需要替换为故事插画的证据。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-constraint-grid",
+      "family": "L04",
+      "title": "格子里的线索",
+      "world": "logic",
+      "rounds": 9,
+      "kinds": [
+        "gridPlacement"
+      ],
+      "surfaceReview": "现有点群、几何、网格或直接操作承载关系，未发现需要替换为故事插画的证据。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-route-constraints",
+      "family": "L05",
+      "title": "路线设计师",
+      "world": "logic",
+      "rounds": 9,
+      "kinds": [
+        "route"
+      ],
+      "surfaceReview": "现有点群、几何、网格或直接操作承载关系，未发现需要替换为故事插画的证据。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-planning-repair",
+      "family": "L06",
+      "title": "先后有讲究",
+      "world": "logic",
+      "rounds": 9,
+      "kinds": [
+        "orderedPlacement"
+      ],
+      "surfaceReview": "现有点群、几何、网格或直接操作承载关系，未发现需要替换为故事插画的证据。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-evidence-reasoning",
+      "family": "L07",
+      "title": "证据说明什么",
+      "world": "logic",
+      "rounds": 9,
+      "kinds": [
+        "multiSelect",
+        "parentObservation"
+      ],
+      "surfaceReview": "亲子九张色形卡不在屏幕，准备图误用猫头像。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": [],
+      "remediation": "implemented; UI evidence in verification/qa.md"
+    },
+    {
+      "id": "explore-learn-rule-transfer",
+      "family": "L08",
+      "title": "学会新规则",
+      "world": "logic",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice"
+      ],
+      "surfaceReview": "现有点群、几何、网格或直接操作承载关系，未发现需要替换为故事插画的证据。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-toggle-state",
+      "family": "L09",
+      "title": "翻牌小机关",
+      "world": "logic",
+      "rounds": 9,
+      "kinds": [
+        "gridPlacement"
+      ],
+      "surfaceReview": "现有点群、几何、网格或直接操作承载关系，未发现需要替换为故事插画的证据。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-multi-agent-movement",
+      "family": "L10",
+      "title": "两位朋友走格子",
+      "world": "logic",
+      "rounds": 9,
+      "kinds": [
+        "orderedPlacement"
+      ],
+      "surfaceReview": "现有点群、几何、网格或直接操作承载关系，未发现需要替换为故事插画的证据。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-board-strategy",
+      "family": "L11",
+      "title": "棋盘下一步",
+      "world": "logic",
+      "rounds": 9,
+      "kinds": [
+        "multiSelect"
+      ],
+      "surfaceReview": "现有点群、几何、网格或直接操作承载关系，未发现需要替换为故事插画的证据。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-bridge-networks",
+      "family": "L12",
+      "title": "小岛连桥",
+      "world": "logic",
+      "rounds": 9,
+      "kinds": [
+        "network"
+      ],
+      "surfaceReview": "现有点群、几何、网格或直接操作承载关系，未发现需要替换为故事插画的证据。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-visual-search-match",
+      "family": "G01",
+      "title": "图案观察员",
+      "world": "graphic",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice"
+      ],
+      "surfaceReview": "现有点群、几何、网格或直接操作承载关系，未发现需要替换为故事插画的证据。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-occlusion-texture",
+      "family": "G02",
+      "title": "遮住了什么",
+      "world": "graphic",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice"
+      ],
+      "surfaceReview": "现有点群、几何、网格或直接操作承载关系，未发现需要替换为故事插画的证据。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-feature-matrices",
+      "family": "G03",
+      "title": "行列规律研究",
+      "world": "graphic",
+      "rounds": 9,
+      "kinds": [
+        "gridPlacement"
+      ],
+      "surfaceReview": "现有点群、几何、网格或直接操作承载关系，未发现需要替换为故事插画的证据。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-position-transform",
+      "family": "G04",
+      "title": "标记走格子",
+      "world": "graphic",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice"
+      ],
+      "surfaceReview": "现有点群、几何、网格或直接操作承载关系，未发现需要替换为故事插画的证据。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-rotation-reflection",
+      "family": "G05",
+      "title": "转一转照一照",
+      "world": "graphic",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice"
+      ],
+      "surfaceReview": "现有点群、几何、网格或直接操作承载关系，未发现需要替换为故事插画的证据。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-shape-set-operations",
+      "family": "G06",
+      "title": "图形合并机",
+      "world": "graphic",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice"
+      ],
+      "surfaceReview": "现有点群、几何、网格或直接操作承载关系，未发现需要替换为故事插画的证据。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-recursive-composition",
+      "family": "G07",
+      "title": "图形金字塔",
+      "world": "graphic",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice",
+        "gridPlacement"
+      ],
+      "surfaceReview": "现有点群、几何、网格或直接操作承载关系，未发现需要替换为故事插画的证据。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-symbolic-color-rules",
+      "family": "G08",
+      "title": "颜色密码运算",
+      "world": "graphic",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice"
+      ],
+      "surfaceReview": "现有点群、几何、网格或直接操作承载关系，未发现需要替换为故事插画的证据。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-geometric-counts",
+      "family": "G09",
+      "title": "点线面数清楚",
+      "world": "graphic",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice"
+      ],
+      "surfaceReview": "现有点群、几何、网格或直接操作承载关系，未发现需要替换为故事插画的证据。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-symmetry-axes",
+      "family": "G10",
+      "title": "哪里可以对折",
+      "world": "graphic",
+      "rounds": 9,
+      "kinds": [
+        "multiSelect"
+      ],
+      "surfaceReview": "现有点群、几何、网格或直接操作承载关系，未发现需要替换为故事插画的证据。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-topology-relations",
+      "family": "G11",
+      "title": "相碰还是相交",
+      "world": "graphic",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice",
+        "multiSelect"
+      ],
+      "surfaceReview": "现有点群、几何、网格或直接操作承载关系，未发现需要替换为故事插画的证据。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-marker-invariants",
+      "family": "G12",
+      "title": "小黑点的任务",
+      "world": "graphic",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice"
+      ],
+      "surfaceReview": "现有点群、几何、网格或直接操作承载关系，未发现需要替换为故事插画的证据。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-symbol-codes",
+      "family": "G13",
+      "title": "多位图形密码",
+      "world": "graphic",
+      "rounds": 9,
+      "kinds": [
+        "gridPlacement"
+      ],
+      "surfaceReview": "现有点群、几何、网格或直接操作承载关系，未发现需要替换为故事插画的证据。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-shape-assembly",
+      "family": "G14",
+      "title": "拼搭小工坊",
+      "world": "graphic",
+      "rounds": 9,
+      "kinds": [
+        "construction"
+      ],
+      "surfaceReview": "现有点群、几何、网格或直接操作承载关系，未发现需要替换为故事插画的证据。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-fold-cut",
+      "family": "G15",
+      "title": "折开会怎样",
+      "world": "graphic",
+      "rounds": 9,
+      "kinds": [
+        "parentObservation",
+        "singleChoice"
+      ],
+      "surfaceReview": "正方形纸无图、彩笔误用普通铅笔。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": [
+        {
+          "activityId": "explore-fold-cut-1",
+          "label": "正方形纸"
+        },
+        {
+          "activityId": "explore-fold-cut-2",
+          "label": "正方形纸"
+        },
+        {
+          "activityId": "explore-fold-cut-3",
+          "label": "正方形纸"
+        }
+      ],
+      "remediation": "implemented; UI evidence in verification/qa.md"
+    },
+    {
+      "id": "explore-solid-views-count",
+      "family": "G16",
+      "title": "积木的另一面",
+      "world": "graphic",
+      "rounds": 9,
+      "kinds": [
+        "parentObservation",
+        "singleChoice",
+        "multiSelect"
+      ],
+      "surfaceReview": "圆柱形积木误用普通积木，球/方盒无准备图。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": [
+        {
+          "activityId": "explore-solid-views-count-1",
+          "label": "球"
+        },
+        {
+          "activityId": "explore-solid-views-count-1",
+          "label": "方盒"
+        },
+        {
+          "activityId": "explore-solid-views-count-2",
+          "label": "球"
+        },
+        {
+          "activityId": "explore-solid-views-count-2",
+          "label": "方盒"
+        },
+        {
+          "activityId": "explore-solid-views-count-3",
+          "label": "球"
+        },
+        {
+          "activityId": "explore-solid-views-count-3",
+          "label": "方盒"
+        }
+      ],
+      "remediation": "implemented; UI evidence in verification/qa.md"
+    },
+    {
+      "id": "explore-relative-perspective",
+      "family": "G17",
+      "title": "换个方向看左右",
+      "world": "graphic",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice"
+      ],
+      "surfaceReview": "实际截图显示小朋友只用小圆点代替且主体过小；已改为俯视人物与加大方向图。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": [],
+      "uiFinding": true,
+      "remediation": "implemented; UI evidence in verification/qa.md"
+    },
+    {
+      "id": "explore-cube-nets",
+      "family": "G18",
+      "title": "纸盒六个面",
+      "world": "graphic",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice",
+        "multiSelect"
+      ],
+      "surfaceReview": "现有点群、几何、网格或直接操作承载关系，未发现需要替换为故事插画的证据。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-grid-copy-reconstruction",
+      "family": "G19",
+      "title": "方格重建师",
+      "world": "graphic",
+      "rounds": 9,
+      "kinds": [
+        "gridPlacement"
+      ],
+      "surfaceReview": "现有点群、几何、网格或直接操作承载关系，未发现需要替换为故事插画的证据。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-layer-order-planning",
+      "family": "G20",
+      "title": "谁盖住了谁",
+      "world": "graphic",
+      "rounds": 9,
+      "kinds": [
+        "orderedPlacement"
+      ],
+      "surfaceReview": "现有点群、几何、网格或直接操作承载关系，未发现需要替换为故事插画的证据。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-visual-set-memory",
+      "family": "A01",
+      "title": "看过哪些朋友",
+      "world": "memory",
+      "rounds": 9,
+      "kinds": [
+        "multiSelect"
+      ],
+      "surfaceReview": "记忆/听力保持隐去线索；已有物体/符号图或声音，不额外添加答案背景。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-spatial-memory",
+      "family": "A02",
+      "title": "位置藏起来",
+      "world": "memory",
+      "rounds": 9,
+      "kinds": [
+        "gridPlacement"
+      ],
+      "surfaceReview": "记忆/听力保持隐去线索；已有物体/符号图或声音，不额外添加答案背景。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-sequence-memory",
+      "family": "A03",
+      "title": "顺着记倒着摆",
+      "world": "memory",
+      "rounds": 9,
+      "kinds": [
+        "orderedPlacement"
+      ],
+      "surfaceReview": "记忆/听力保持隐去线索；已有物体/符号图或声音，不额外添加答案背景。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-auditory-instructions",
+      "family": "A04",
+      "title": "听懂再行动",
+      "world": "memory",
+      "rounds": 9,
+      "kinds": [
+        "orderedPlacement"
+      ],
+      "surfaceReview": "记忆/听力保持隐去线索；已有物体/符号图或声音，不额外添加答案背景。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-story-recall",
+      "family": "A05",
+      "title": "故事留在脑海里",
+      "world": "memory",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice",
+        "orderedPlacement",
+        "parentObservation"
+      ],
+      "surfaceReview": "第4/5题六张事件卡纯文字；种植事件已有图。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": [],
+      "remediation": "implemented; UI evidence in verification/qa.md"
+    },
+    {
+      "id": "explore-attention-search",
+      "family": "A06",
+      "title": "细心搜索员",
+      "world": "memory",
+      "rounds": 9,
+      "kinds": [
+        "multiSelect"
+      ],
+      "surfaceReview": "已有实物/事件图，或以词语本身及现场操作为目标。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-inhibition-switch",
+      "family": "A07",
+      "title": "记规则再出手",
+      "world": "memory",
+      "rounds": 9,
+      "kinds": [
+        "multiSelect"
+      ],
+      "surfaceReview": "记忆/听力保持隐去线索；已有物体/符号图或声音，不额外添加答案背景。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-sound-rhythm",
+      "family": "A08",
+      "title": "声音排队",
+      "world": "memory",
+      "rounds": 9,
+      "kinds": [
+        "orderedPlacement",
+        "parentObservation"
+      ],
+      "surfaceReview": "记忆/听力保持隐去线索；已有物体/符号图或声音，不额外添加答案背景。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": [
+        {
+          "activityId": "explore-sound-rhythm-9",
+          "label": "双手"
+        }
+      ]
+    },
+    {
+      "id": "explore-relational-quantity-memory",
+      "family": "A09",
+      "title": "谁有几个",
+      "world": "memory",
+      "rounds": 9,
+      "kinds": [
+        "matching"
+      ],
+      "surfaceReview": "记忆/听力保持隐去线索；已有物体/符号图或声音，不额外添加答案背景。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-vocabulary-relations",
+      "family": "E01",
+      "title": "词语有朋友",
+      "world": "language",
+      "rounds": 9,
+      "kinds": [
+        "matching",
+        "parentObservation"
+      ],
+      "surfaceReview": "已有实物/事件图，或以词语本身及现场操作为目标。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-describe-relations",
+      "family": "E02",
+      "title": "把位置说清楚",
+      "world": "language",
+      "rounds": 3,
+      "kinds": [
+        "parentObservation"
+      ],
+      "surfaceReview": "已有实物/事件图，或以词语本身及现场操作为目标。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-story-sequence-expression",
+      "family": "E03",
+      "title": "故事接起来",
+      "world": "language",
+      "rounds": 9,
+      "kinds": [
+        "orderedPlacement",
+        "parentObservation"
+      ],
+      "surfaceReview": "已有实物/事件图，或以词语本身及现场操作为目标。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": [
+        {
+          "activityId": "explore-story-sequence-expression-7",
+          "label": "四张写着事件的卡片"
+        },
+        {
+          "activityId": "explore-story-sequence-expression-8",
+          "label": "四张写着事件的卡片"
+        },
+        {
+          "activityId": "explore-story-sequence-expression-9",
+          "label": "四张写着事件的卡片"
+        }
+      ]
+    },
+    {
+      "id": "explore-creative-explanation",
+      "family": "E04",
+      "title": "我的解释和办法",
+      "world": "language",
+      "rounds": 3,
+      "kinds": [
+        "parentObservation"
+      ],
+      "surfaceReview": "三题材料一律为图卡/纸笔，图卡、过河准备与水杯证据均未对应。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": [],
+      "remediation": "implemented; UI evidence in verification/qa.md"
+    },
+    {
+      "id": "explore-character-phonics",
+      "family": "E05",
+      "title": "字音小花园",
+      "world": "language",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice",
+        "matching"
+      ],
+      "surfaceReview": "记忆/听力保持隐去线索；已有物体/符号图或声音，不额外添加答案背景。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-english-listening",
+      "family": "E06",
+      "title": "英语听一听",
+      "world": "language",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice"
+      ],
+      "surfaceReview": "记忆/听力保持隐去线索；已有物体/符号图或声音，不额外添加答案背景。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-bilingual-concepts",
+      "family": "E07",
+      "title": "英语里的数量位置",
+      "world": "language",
+      "rounds": 9,
+      "kinds": [
+        "singleChoice"
+      ],
+      "surfaceReview": "记忆/听力保持隐去线索；已有物体/符号图或声音，不额外添加答案背景。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-conversation-self-expression",
+      "family": "E08",
+      "title": "把自己的想法说出来",
+      "world": "language",
+      "rounds": 3,
+      "kinds": [
+        "parentObservation"
+      ],
+      "surfaceReview": "已有实物/事件图，或以词语本身及现场操作为目标。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": []
+    },
+    {
+      "id": "explore-everyday-classification",
+      "family": "P01",
+      "title": "用品放对地方",
+      "world": "life",
+      "rounds": 9,
+      "kinds": [
+        "matching",
+        "parentObservation"
+      ],
+      "surfaceReview": "第1～6题用途列仍为纯文字；亲子材料只有泛称。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": [
+        {
+          "activityId": "explore-everyday-classification-7",
+          "label": "三到五件熟悉、安全的日常用品"
+        },
+        {
+          "activityId": "explore-everyday-classification-8",
+          "label": "三到五件熟悉、安全的日常用品"
+        },
+        {
+          "activityId": "explore-everyday-classification-9",
+          "label": "三到五件熟悉、安全的日常用品"
+        }
+      ],
+      "remediation": "implemented; UI evidence in verification/qa.md"
+    },
+    {
+      "id": "explore-nature-growth",
+      "family": "P02",
+      "title": "变化观察册",
+      "world": "life",
+      "rounds": 9,
+      "kinds": [
+        "orderedPlacement",
+        "parentObservation"
+      ],
+      "surfaceReview": "豆苗观察准备区透明杯误用不透明杯。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": [
+        {
+          "activityId": "explore-nature-growth-7",
+          "label": "豆苗或家长准备的种子"
+        },
+        {
+          "activityId": "explore-nature-growth-8",
+          "label": "家长选好的生长过程图片"
+        },
+        {
+          "activityId": "explore-nature-growth-9",
+          "label": "家长选好的生长过程图片"
+        }
+      ],
+      "remediation": "implemented; UI evidence in verification/qa.md"
+    },
+    {
+      "id": "explore-science-experiments",
+      "family": "P03",
+      "title": "一起做小实验",
+      "world": "life",
+      "rounds": 3,
+      "kinds": [
+        "parentObservation"
+      ],
+      "surfaceReview": "光源、橡皮泥、塑料切刀、透明色片无材料图。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": [
+        {
+          "activityId": "explore-science-experiments-2",
+          "label": "透明彩色片"
+        },
+        {
+          "activityId": "explore-science-experiments-2",
+          "label": "白纸"
+        },
+        {
+          "activityId": "explore-science-experiments-3",
+          "label": "手电筒"
+        },
+        {
+          "activityId": "explore-science-experiments-3",
+          "label": "橡皮泥"
+        },
+        {
+          "activityId": "explore-science-experiments-3",
+          "label": "家长操作的塑料切刀"
+        }
+      ],
+      "remediation": "implemented; UI evidence in verification/qa.md"
+    },
+    {
+      "id": "explore-senses-social-rules",
+      "family": "P04",
+      "title": "生活里的判断",
+      "world": "life",
+      "rounds": 3,
+      "kinds": [
+        "parentObservation"
+      ],
+      "surfaceReview": "触觉袋/布片和通道软垫无材料图。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": [
+        {
+          "activityId": "explore-senses-social-rules-1",
+          "label": "不透明袋"
+        },
+        {
+          "activityId": "explore-senses-social-rules-1",
+          "label": "布片"
+        },
+        {
+          "activityId": "explore-senses-social-rules-2",
+          "label": "软垫"
+        }
+      ],
+      "remediation": "implemented; UI evidence in verification/qa.md"
+    },
+    {
+      "id": "explore-culture-world",
+      "family": "P05",
+      "title": "节日和生活发现",
+      "world": "life",
+      "rounds": 3,
+      "kinds": [
+        "parentObservation"
+      ],
+      "surfaceReview": "家庭资料由家长选取，通用节日图不能代表家庭事实。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": [
+        {
+          "activityId": "explore-culture-world-1",
+          "label": "家里愿意分享的节日照片或物品"
+        },
+        {
+          "activityId": "explore-culture-world-2",
+          "label": "两种家庭节日活动的图片或文字介绍"
+        }
+      ]
+    },
+    {
+      "id": "explore-fine-motor-action",
+      "family": "P06",
+      "title": "小手和身体挑战",
+      "world": "life",
+      "rounds": 3,
+      "kinds": [
+        "parentObservation"
+      ],
+      "surfaceReview": "沿线操作没有粗线模板，托盘/软垫无材料图。",
+      "inspection": "current_source_and_presentation_mapping",
+      "uiAcceptance": "record separately in verification",
+      "initialMissingMaterialPictures": [
+        {
+          "activityId": "explore-fine-motor-action-1",
+          "label": "纸"
+        },
+        {
+          "activityId": "explore-fine-motor-action-1",
+          "label": "粗线模板"
+        },
+        {
+          "activityId": "explore-fine-motor-action-2",
+          "label": "小托盘"
+        },
+        {
+          "activityId": "explore-fine-motor-action-2",
+          "label": "软垫"
+        },
+        {
+          "activityId": "explore-fine-motor-action-3",
+          "label": "足够活动的空地"
+        },
+        {
+          "activityId": "explore-fine-motor-action-3",
+          "label": "双手"
+        }
+      ],
+      "remediation": "implemented; UI evidence in verification/qa.md"
+    }
+  ]
+}

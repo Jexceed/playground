@@ -1,0 +1,28 @@
+Already up to date
+Done in 238ms using pnpm v11.19.0
+$ node scripts/generate-edge-voices.mjs -- --voice zh-CN-XiaoxiaoNeural --rate -12% --pitch +2Hz --python /Users/chiang/Documents/Projects/playground/local-tts/.venv/bin/python --quiet --retries 3
+Generated 2719/3999: parent-屏幕上的九张颜色形状卡
+Generated 2713/3999: instruction-家长先转身-孩子看图在心里选一张-九张都留在屏幕上-不指给家长看
+Generated 3625/3999: hint-从四张图卡中选三张-说出故事里的角色和地点
+Generated 2711/3999: hint-家长先转身-孩子看图在心里选一张-九张都留在屏幕上-不指给家长看
+Generated 3626/3999: hint-讲一件把选中的三张图卡连起来的事
+Generated 3627/3999: instruction-从四张图卡中选三张-说出故事里的角色和地点
+Generated 3629/3999: instruction-用剩下的一张替换其中一张-再调整故事使它仍然连贯
+Generated 3628/3999: instruction-讲一件把选中的三张图卡连起来的事
+Generated 3633/3999: parent-屏幕上的四张图卡
+Generated 3638/3999: instruction-把纸条当小河-用积木想两种让玩具过河的办法
+Generated 3636/3999: hint-把纸条当小河-用积木想两种让玩具过河的办法
+Generated 3642/3999: parent-纸条当小河
+Generated 3641/3999: parent-积木
+Generated 3645/3999: hint-先看房间图-家长说-地上有水-所以一定是小狗打翻了杯子
+Generated 3646/3999: hint-指出哪些是图里看到的-哪些只是猜测-靠近水杯也不能证明是谁打翻的
+Generated 3648/3999: instruction-指出哪些是图里看到的-哪些只是猜测-靠近水杯也不能证明是谁打翻的
+Generated 3647/3999: instruction-先看房间图-家长说-地上有水-所以一定是小狗打翻了杯子
+Generated 3649/3999: instruction-提出另一种可能-并说还需要看到什么经过或线索
+Generated 3972/3999: hint-家长照着模板在纸上画粗线-孩子先用手指沿线走-再沿直线折纸
+Generated 3650/3999: parent-屏幕上的房间图
+Generated 3973/3999: hint-家长先示范剪口-孩子按自己的能力沿粗线剪或撕
+Generated 3974/3999: instruction-家长照着模板在纸上画粗线-孩子先用手指沿线走-再沿直线折纸
+Generated 3981/3999: parent-屏幕上的粗线模板
+Generated 3975/3999: instruction-家长先示范剪口-孩子按自己的能力沿粗线剪或撕
+Wrote public/audio/voice/manifest.json with 3999 entries and 0 skipped lines.

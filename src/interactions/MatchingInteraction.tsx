@@ -1,9 +1,11 @@
 import { useEffect, useLayoutEffect, useRef, useState, type CSSProperties, type PointerEvent } from "react";
-import { X } from "lucide-react";
+import { Maximize2, X } from "lucide-react";
 import type { MatchingActivity } from "../domain/advanced-activity";
 import { speak } from "../speech";
 import { connectPair, disconnectPair, type MatchingResponse } from "./connection-state";
 import { ActivityTokenArt } from "./ActivityTokenArt";
+import { ImageViewer } from './ImageViewer';
+import { ACTIVITY_COPY } from '../domain/activity';
 
 type Point = { x: number; y: number };
 type Drag = { id: string; pointerId: number; start: Point; moved: boolean };
@@ -21,13 +23,17 @@ export function MatchingInteraction({ activity, response, disabled, onChange }: 
   const pointer = useRef<Drag | null>(null);
   const suppressClick = useRef(false);
   const [selected, setSelected] = useState<string | null>(null);
+  const [pictureId, setPictureId] = useState<string | null>(null);
   const [preview, setPreview] = useState<{ id: string; point: Point; target: string | null } | null>(null);
   const [layout, setLayout] = useState<{ width: number; height: number; points: Record<string, Point> }>({ width: 1, height: 1, points: {} });
   const token = (id: string) => activity.tokens.find(t => t.id === id)!;
+  const pictureIds = [...activity.leftIds, ...activity.rightIds].filter(id => token(id).image.style === 'illustration' && !token(id).textOnly);
+  const pictureIndex = pictureIds.findIndex(id => id === pictureId);
   const isLeft = (id: string) => activity.leftIds.includes(id);
   const cancel = () => { if (pointer.current?.moved) suppressClick.current = true; pointer.current = null; setPreview(null); setSelected(null); };
 
   useEffect(() => { cancel(); }, [response, disabled, activity.id]);
+  useEffect(() => { setPictureId(null); }, [activity.id]);
   useEffect(() => {
     const onBlur = () => cancel();
     const onVisibility = () => { if (document.hidden) cancel(); };
@@ -96,7 +102,7 @@ export function MatchingInteraction({ activity, response, disabled, onChange }: 
   const pendingEnd = preview && (preview.target ? layout.points[preview.target] : preview.point);
   const selectedLabel = selected ? token(selected).label : "";
 
-  return <section className="matching-workspace" aria-label="连线配对" onKeyDown={e => { if (e.key === "Escape") { e.preventDefault(); cancel(); } }}>
+  return <section className="matching-workspace" aria-label="连线配对" data-picture-matching={pictureIds.length > 0 || undefined} onKeyDown={e => { if (e.key === "Escape" && !(e.target as HTMLElement).closest('dialog')) { e.preventDefault(); cancel(); } }}>
     <div className="connection-toolbar">
       <p role="status">{disabled ? '沿着连线，说说每一对的关系' : selected ? `再选${isLeft(selected) ? '右' : '左'}边一张，和“${selectedLabel}”连起来` : '拖到另一张图卡，或两边各点一下'}</p>
       <span className="connection-count">已连 {response.pairs.length} / {activity.leftIds.length} 对</span>
@@ -132,11 +138,14 @@ export function MatchingInteraction({ activity, response, disabled, onChange }: 
               <ActivityTokenArt token={t} label />
               <span className="matching-port" aria-hidden="true" />
             </button>
+            {pictureIds.includes(id) && <button type="button" className="picture-peek matching-picture-peek" title={ACTIVITY_COPY.viewPicture} aria-label={`看大图：${t.label}`} onClick={() => setPictureId(id)}><Maximize2 size={15} /></button>}
             {pair && !disabled && <button type="button" className="matching-unlink" aria-label={`断开${t.label}和${token(partner!).label}`} title="断开这条线" onClick={() => { cancel(); onChange(disconnectPair(response, id)); }}><X size={15} aria-hidden="true" /></button>}
           </div>;
         })}
       </div>)}
     </div>
     {!disabled && <p className="connection-footnote">想换一个朋友，直接重新连；点卡片上的 × 可以断开。</p>}
+    <ImageViewer images={pictureIds.map(id => ({ ...token(id).image, alt:token(id).label }))} index={pictureIndex >= 0 ? pictureIndex : null}
+      onIndexChange={index => setPictureId(pictureIds[index])} onClose={() => setPictureId(null)} />
   </section>;
 }

@@ -19,7 +19,9 @@ test('presentation retains all existing curriculum identities and accepts every 
     const revised = (['N13','G04','G09'].includes(a.primaryFamilyId) && a.stage === 3)
       || (a.primaryFamilyId === 'L05' && a.stage === 2)
       || (['G07','G15'].includes(a.primaryFamilyId) && a.stage > 1)
-      || (a.primaryFamilyId === 'L06' && /-(1|4|7)$/.test(a.id));
+      || (a.primaryFamilyId === 'L06' && /-(1|4|7)$/.test(a.id))
+      || a.primaryFamilyId === 'E04' || (a.primaryFamilyId === 'L07' && a.stage === 3)
+      || (a.primaryFamilyId === 'P06' && a.id.endsWith('-1')) || (a.primaryFamilyId === 'P01' && a.stage === 3);
     assert.equal(a.revision, revised ? 2 : 1, a.id);
     assert.equal(evaluateActivity(a, authoringSolutions[a.id]).status, a.kind === 'parentObservation' ? 'needsParentObservation' : 'correct', a.id);
   }
@@ -55,8 +57,8 @@ test('planting and fruit stories use their own coherent atlas through every even
 
 test('all registered illustration frames reach a renderable activity surface', () => {
   const usage = collectIllustrationUsage(explorationSets, imageGallery);
-  assert.equal(usage.atlasCount, 11);
-  assert.equal(usage.registeredFrameCount, 44);
+  assert.equal(usage.atlasCount, 15);
+  assert.equal(usage.registeredFrameCount, 72);
   assert.deepEqual(usage.problems, []);
   assert.deepEqual(usage.unusedFrames, [], 'an on-disk atlas alone is not complete integration');
 });
@@ -104,17 +106,57 @@ test('topic grouping preserves each entry once and keeps navigation IDs stable',
 
 test('every illustrated frame is registered and has a complete local PNG source', () => {
   const frames = Object.values(imageGallery.items).filter(image => image.frame);
-  assert.equal(frames.length, 44);
+  assert.equal(frames.length, 72);
   const sources = new Set();
   for (const image of frames) {
     assert.ok(image.frame.index >= 0 && image.frame.index < image.frame.columns * image.frame.rows);
     const file = 'public' + image.src;
     assert.ok(existsSync(file), file);
     const data = readFileSync(file);
-    assert.equal(data.readUInt32BE(16), data.readUInt32BE(20), file + ' is square');
-    assert.ok(data.readUInt32BE(16) >= 1024);
+    assert.equal(data.readUInt32BE(16) / image.frame.columns, data.readUInt32BE(20) / image.frame.rows, file + ' has square cells');
+    assert.ok(data.readUInt32BE(16) / image.frame.columns >= 400, file + ' has legible source frames');
     assert.ok(existsSync(file.replace(/\/([^/]+)\.png$/, '/source/$1-source.png')));
     sources.add(image.src);
   }
-  assert.equal(sources.size, 11);
+  assert.equal(sources.size, 15);
+});
+
+test('all three listening stories have matching event pictures without visual previews', () => {
+  for (const a of activities.filter(a => a.primaryFamilyId === 'A05' && a.kind === 'orderedPlacement')) {
+    assert.deepEqual(a.protocol.preview, []);
+    assert.equal(a.protocol.kind, 'memory');
+    assert.ok(a.protocol.audioText);
+    assert.equal(a.tokens.length, 3);
+    for (const t of a.tokens) { assert.equal(t.textOnly, false, t.label); assert.ok(t.image.frame, t.label); }
+  }
+});
+
+test('daily-use matches use distinct action pictures and preserve the nine existing relationships', () => {
+  const seen = new Set();
+  for (const a of activities.filter(a => a.primaryFamilyId === 'P01' && a.kind === 'matching')) {
+    for (const [left, right] of a.expectedPairs) {
+      const object = a.tokens.find(t => t.id === left), action = a.tokens.find(t => t.id === right);
+      assert.equal(action.textOnly, false, action.label);
+      assert.equal(action.image.alt, action.label);
+      assert.notEqual(action.image.src, object.image.src, 'a use is not the same object copied again');
+      seen.add(action.image.frame.index);
+    }
+  }
+  assert.equal(seen.size, 9);
+});
+
+test('parent references exist and material-specific pictures match their actual object', () => {
+  const find = (family, n) => activities.find(a => a.primaryFamilyId === family && a.id.endsWith('-'+n));
+  assert.equal(find('E04',1).presentation.storyCards.length,4);
+  assert.deepEqual(find('E04',2).materials,['积木','小玩具','纸条当小河']);
+  assert.equal(find('E04',3).illustration.src,imageGallery.scenes.spilledWaterRoom.src);
+  assert.ok(find('E04',3).steps.some(s=>s.includes('不能证明')));
+  for (const n of [7,8,9]) assert.ok(find('L07',n).illustration, 'nine cards must be provided');
+  assert.ok(find('P06',1).illustration, 'the tracing task needs a template');
+  const material=(a,label)=>a.presentation.materialCards.find(c=>c.label===label).image;
+  assert.equal(material(find('G16',1),'圆柱形积木').alt,'圆柱形积木');
+  assert.equal(material(find('P02',7),'透明杯').alt,'透明杯');
+  for(const label of ['手电筒','橡皮泥','家长操作的塑料切刀'])assert.ok(material(find('P03',3),label),label);
+  for(const a of activities.filter(a=>a.kind==='parentObservation'))for(const c of a.presentation.materialCards)
+    if(c.label.includes('图卡')||c.label.includes('颜色形状卡'))assert.notEqual(c.image?.src,imageGallery.characters.cat.src);
 });

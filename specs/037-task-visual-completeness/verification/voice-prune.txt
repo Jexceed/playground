@@ -1,0 +1,31 @@
+Already up to date
+Done in 167ms using pnpm v11.19.0
+$ node scripts/prune-voice-assets.mjs -- --write
+{
+  "mode": "write",
+  "orphanCount": 21,
+  "deletedCount": 21,
+  "orphans": [
+    "public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-先用手指沿粗线走一遍-再尝试沿线折纸.mp3",
+    "public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-孩子找出这句话里哪些是看到的-哪些是猜的.mp3",
+    "public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-家长先转身-孩子在心里选一张-九张都留在桌上-不指给家长看.mp3",
+    "public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-家长说-地上有水-所以一定是小狗打翻了杯子.mp3",
+    "public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-用积木想两种让玩具过河的办法.mp3",
+    "public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-由家长示范剪口-孩子按自己的操作能力沿简单线条剪或撕.mp3",
+    "public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-讲一件把三张图卡连起来的事.mp3",
+    "public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-选三张图卡-说出角色和地点.mp3",
+    "public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/instruction-先用手指沿粗线走一遍-再尝试沿线折纸.mp3",
+    "public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/instruction-孩子找出这句话里哪些是看到的-哪些是猜的.mp3",
+    "public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/instruction-家长先转身-孩子在心里选一张-九张都留在桌上-不指给家长看.mp3",
+    "public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/instruction-家长改变其中一张-孩子调整故事使它仍然连贯.mp3",
+    "public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/instruction-家长说-地上有水-所以一定是小狗打翻了杯子.mp3",
+    "public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/instruction-提出另一种可能-并说还想看什么线索.mp3",
+    "public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/instruction-用积木想两种让玩具过河的办法.mp3",
+    "public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/instruction-由家长示范剪口-孩子按自己的操作能力沿简单线条剪或撕.mp3",
+    "public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/instruction-讲一件把三张图卡连起来的事.mp3",
+    "public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/instruction-选三张图卡-说出角色和地点.mp3",
+    "public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-三张喜欢的图卡.mp3",
+    "public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-三种颜色-三种形状的九张图卡.mp3",
+    "public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-粗线模板.mp3"
+  ]
+}

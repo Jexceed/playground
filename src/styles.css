@@ -3424,3 +3424,21 @@ button:focus-visible {
 
 .parent-playbook[data-story] .parent-story-strip {margin-bottom:8px;}
 .parent-playbook[data-story] .parent-steps ol {gap:5px;}
+
+/* Picture-based uses stay large enough to read while the connection lines remain visible. */
+.matching-workspace[data-picture-matching] .matching-card {height:104px;gap:10px;padding:6px 14px;}
+.matching-workspace[data-picture-matching] .matching-card .activity-token-image {width:88px;height:88px;flex-shrink:0;}
+.matching-workspace[data-picture-matching] .matching-column {gap:8px;}
+.matching-workspace[data-picture-matching] .matching-board {margin-block:6px;}
+.matching-workspace[data-picture-matching] .connection-footnote {margin-block:6px;}
+.matching-workspace[data-picture-matching]+.activity-status-space {min-height:48px;margin-top:0;}
+.matching-picture-peek {top:auto;bottom:5px;left:5px;width:25px;height:25px;}
+.story-picture>.parent-story-image {width:min(100%,136px);height:136px;object-fit:contain;}
+.activity-round[data-parent-mode="play"] .activity-evidence-image {max-height:168px;}
+.parent-playbook[data-reference][data-mode="play"] {grid-template-columns:auto minmax(0,1fr);gap:8px 12px;align-items:center;}
+.parent-playbook[data-reference][data-mode="play"]>.parent-mode {grid-column:1;grid-row:1;}
+.parent-playbook[data-reference][data-mode="play"]>.parent-preparation {grid-column:2;grid-row:1;padding:5px 8px;gap:8px;}
+.parent-playbook[data-reference][data-mode="play"]>.parent-steps {grid-column:1/-1;grid-row:2;}
+.parent-playbook[data-reference] .parent-material-pictures img,.parent-playbook[data-reference] .parent-material-pictures .activity-picture-frame {width:32px;height:32px;}
+.parent-playbook[data-reference] .parent-preparation h3 {font-size:12px;gap:5px;}
+.activity-round[data-family="G17"] .activity-evidence-image {max-height:232px;}

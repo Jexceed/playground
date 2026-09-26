@@ -1,5 +1,23 @@
 import { picture, rect, line, circle, text, palette, type Primitive } from './draw';
 
+/** Top-down person: the head, hands and feet rotate with the same facing vector. */
+export function facingPerson(direction: number[], ballPosition: number[]) {
+  const left = [direction[1], -direction[0]];
+  const point = (side: number, forward: number): [number, number] => [160 + left[0] * side + direction[0] * forward, 160 + left[1] * side + direction[1] * forward];
+  const shape = (points: [number, number][], fill: string): Primitive => ({ kind:'polygon', points:points.map(([x,y])=>point(x,y)), fill });
+  const objects: Primitive[] = [
+    shape([[-20,1],[20,1],[22,-30],[-22,-30]],'#548cb3'),
+    shape([[-21,-23],[-4,-23],[-4,-44],[-17,-44]],'#43576a'),
+    shape([[4,-23],[21,-23],[17,-44],[4,-44]],'#43576a'),
+    circle(...point(-27,-8),8,'#f2d8a8'), circle(...point(27,-8),8,'#f2d8a8'),
+    circle(...point(0,20),21,'#745440'), circle(...point(0,27),15,'#f2d8a8'),
+    shape([[-4,40],[4,40],[0,46]],'#f2d8a8'),
+    shape([[-3,54],[3,54],[3,72],[11,72],[0,88],[-11,72],[-3,72]],'#40566a'),
+    circle(ballPosition[0],ballPosition[1],20,palette[0]),
+  ];
+  return picture(objects,320,320);
+}
+
 export function partitionDiagram(left: number, right: number) {
   const objects: Primitive[] = [];
   [left, right].forEach((count, side) => {

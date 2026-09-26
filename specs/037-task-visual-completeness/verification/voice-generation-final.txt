@@ -1,0 +1,10 @@
+Already up to date
+Done in 223ms using pnpm v11.19.0
+$ node scripts/generate-edge-voices.mjs -- --voice zh-CN-XiaoxiaoNeural --rate -12% --pitch +2Hz --python /Users/chiang/Documents/Projects/playground/local-tts/.venv/bin/python --quiet --retries 3
+Generated 3802/4003: parent-少量水或干物品
+Generated 3800/4003: parent-布袋
+Generated 3799/4003: parent-纸盒
+Generated 3810/4003: parent-书本
+Generated 3809/4003: parent-毛巾
+Generated 3607/4003: parent-屏幕上的四张故事图
+Wrote public/audio/voice/manifest.json with 4003 entries and 0 skipped lines.

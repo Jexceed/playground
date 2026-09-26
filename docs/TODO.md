@@ -5,7 +5,7 @@ small enough to turn into a Spec Kit feature.
 
 ## P0
 
-- Complete the final native display check for 035/036 after Mac unlock, then push the dev checkpoints. In the newly installed app confirm L06 rounds 4/7 show all planting frames and 6/9 retain all fruit-salad frames; check E03 story size, picture navigation/close without changing answers, and P02's same-page layout. Browser interactions, references, assets and static audits are aligned; native acceptance is still pending.
+- Complete final native checks for 035/036/037 after Mac unlock, then push the dev checkpoints. Verify P01 action cards/zoom/connection preservation, A05 events after required listening, E04 references/recording, L07's nine cards, P06's template and G17 directions. Also confirm L06 planting/fruit frames and E03 story viewing. The standard app is installed and browser/static checks pass; native acceptance is still pending.
 
 - Observe 6-, 7- and 8-year-old parent-child play and calibrate reading, interaction and reasoning load for the 597 newly authored activities. Technical QA is not age validation.
 - Finish the historical-release migration/backup/ambiguity handling and finer support-history/next-practice guidance still unchecked in specs/029-curriculum-benchmark/tasks.md. Current legacy content and facts are preserved; do not infer mastery from completion.
