@@ -14,5 +14,20 @@
     }
   },
   "binariesMatch": true,
-  "nativeAcceptance": "pending_unlock_and_restart"
+  "nativeAcceptance": "default_render_verified_input_checks_pending",
+  "nativeVerifiedAt": "2026-09-26T14:40:56.158323+00:00",
+  "nativeEvidence": {
+    "startupObserved": true,
+    "url": "tauri://localhost",
+    "task": "故事接起来 第1题",
+    "screenshotPixels": [
+      2560,
+      1640
+    ],
+    "equalLargeImagesForDifferentCaptions": true,
+    "captionsOutsideFrames": true,
+    "primaryActionAndFooterVisible": true,
+    "selectionDragAndFourCardNativeVerified": false,
+    "remainingBlocker": "Mac relocked after native screenshot"
+  }
 }
