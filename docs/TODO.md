@@ -5,7 +5,7 @@ small enough to turn into a Spec Kit feature.
 
 ## P0
 
-- Complete final native checks for 035–039 after Mac unlock, then push the dev checkpoints. Start with E03's large picture/outer caption, caption selection and drag, plus L06's integrated scrambled sequence. Include N02 comparisons, N05 tens/ones, N14 clocks, P01 connections, A05 listening, E04/L07/P06 references and G17 directions. The standard app is installed and browser/static checks pass; native acceptance is still pending.
+- Complete final native checks for 035–039 after Mac unlock, then push the dev checkpoints. First restart the installed corrective bundle and verify the reproduced WebKit caption-width shrink is gone in E03: equal large images for short/long captions before and after selection, caption clicks and drag. Then check L06's integrated sequence, N02/N05/N14 math layouts, P01 connections, A05 listening and E04/L07/P06/G17 references. The corrective app is installed; new native acceptance is still pending, not satisfied by browser checks.
 
 - Observe 6-, 7- and 8-year-old parent-child play and calibrate reading, interaction and reasoning load for the 597 newly authored activities. Technical QA is not age validation.
 - Finish the historical-release migration/backup/ambiguity handling and finer support-history/next-practice guidance still unchecked in specs/029-curriculum-benchmark/tasks.md. Current legacy content and facts are preserved; do not infer mastery from completion.

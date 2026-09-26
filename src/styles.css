@@ -3471,15 +3471,15 @@ button:focus-visible {
 .comparison-dialog .comparison-place-value {--one-size:26px;--ten-height:152px;}
 .comparison-dialog .comparison-legend {font-size:18px;}
 
-/* The picture owns the frame; its caption remains part of the same selectable card. */
-.activity-token-tray .illustrated-token {width:min(100%,188px);justify-self:center;align-self:start;}
-.illustrated-token>.activity-token {display:block;height:auto;min-height:0;padding:0;border:0;background:transparent;box-shadow:none;}
+/* Visual layout stays outside WebKit's intrinsic button-content box. */
+.activity-token-tray .illustrated-token {width:188px;max-width:100%;justify-self:center;align-self:start;}
+.illustrated-token>.activity-token {position:absolute;inset:0;z-index:1;display:block;width:100%;height:100%;min-width:0;min-height:0;padding:0;border:0;appearance:none;-webkit-appearance:none;background:transparent;box-shadow:none;}
 .illustrated-token>.activity-token:hover {transform:none;}
 .illustrated-picture {display:block;position:relative;width:100%;aspect-ratio:1;padding:3px;border:2px solid #ded7ca;border-radius:12px;background:#fffdf8;box-shadow:0 3px 0 #e7dfd0;}
 .activity-token-tray .illustrated-picture .activity-token-image {width:100%;height:auto;max-width:none;aspect-ratio:1;}
 .activity-token-tray .illustrated-token .illustrated-caption {display:block;min-height:0;padding:0;margin:6px 0 0;font-size:14px;line-height:1.4;font-weight:650;}
 .illustrated-token>.activity-token:is(.is-selected,.is-used) {background:transparent;box-shadow:none;}
-.illustrated-token>.activity-token:hover:not(:disabled) .illustrated-picture {border-color:#a4c4b0;}
-.illustrated-token>.activity-token.is-selected .illustrated-picture {border-color:#468a69;box-shadow:0 3px 0 #a9cbb3;background:#eaf5e9;}
-.illustrated-token>.activity-token.is-used:not(.is-selected) .illustrated-picture {border-color:#c0cbb7;background:#f0eee6;}
+.illustrated-token:has(>.activity-token:hover:not(:disabled)):not(.is-selected) .illustrated-picture {border-color:#a4c4b0;}
+.illustrated-token.is-selected .illustrated-picture {border-color:#468a69;box-shadow:0 3px 0 #a9cbb3;background:#eaf5e9;}
+.illustrated-token.is-used:not(.is-selected) .illustrated-picture {border-color:#c0cbb7;background:#f0eee6;}
 .activity-round[data-illustrated] .activity-token-tray {margin-bottom:4px;}

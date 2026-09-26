@@ -10,6 +10,7 @@ grouped by date.
 - Moved illustrated candidate-card borders onto the pictures and placed captions below the frame. Three-card rows now show 178px images instead of 132px; four-card rows use about 149px images, with 14px captions. The picture and caption remain one selectable/keyboard/drag target, with an independent enlargement button.
 - Combined the duplicated reference/candidate pictures in the three L06 order-repair tasks. Their original reversed sequence is now the explicit candidate order, also used by the picture viewer; all original conditions and answers remain.
 - Passed 90 regressions and curriculum/illustration/voice-media audits. The 621 exploration activities' nonvisual fields, enlightenment bank and all 4003 voice lines are unchanged. Rebuilt and installed the standard Mac app; detailed current-Mac UI and native status are in specs/039-picture-card-captions/verification/qa.md.
+- Follow-up native inspection reproduced a WebKit regression: the image frame inside a button shrank to its caption's width, despite the earlier Chromium-sized browser pass. Moved visual layout outside the button and retained one transparent semantic hit target for image/caption input. The corrective bundle is installed and browser input regressions pass; the Mac relocked before restart/native confirmation. Evidence: specs/039-picture-card-captions/verification/native-fix/qa.md.
 
 ### Readable math evidence within the current Mac window
 

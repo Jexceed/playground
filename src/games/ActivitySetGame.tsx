@@ -494,13 +494,7 @@ function ActivityRound({
           if (multi || event.detail === 0) chooseToken(token);
         }}
       >
-        {illustrated ? <>
-          <span className="illustrated-picture">
-            <ActivityImage image={token.image} className="activity-token-image is-illustration" decorative />
-            {selected && <span className="token-check"><Check size={13} /></span>}
-          </span>
-          <span className="token-label illustrated-caption">{token.label}</span>
-        </> : <TokenArt token={token} label />}
+        {!illustrated && <TokenArt token={token} label />}
         {selected && !illustrated && (
           <span className="token-check">
             <Check size={13} />
@@ -508,7 +502,12 @@ function ActivityRound({
         )}
       </button>
     );
-    return illustrated ? <div className="illustrated-token" key={token.id}>
+    return illustrated ? <div className={`illustrated-token${selected ? ' is-selected' : ''}${used ? ' is-used' : ''}`} key={token.id}>
+      <div className="illustrated-picture" aria-hidden="true">
+        <ActivityImage image={token.image} className="activity-token-image is-illustration" decorative />
+        {selected && <span className="token-check"><Check size={13} /></span>}
+      </div>
+      <span className="token-label illustrated-caption" aria-hidden="true">{token.label}</span>
       {choice}<button type="button" className="picture-peek" title={ACTIVITY_COPY.viewPicture} aria-label={`看大图：${token.label}`}
         onClick={() => setPictureTarget({ source: 'choices', key: token.id })}><Maximize2 size={15} /></button>
     </div> : choice;
