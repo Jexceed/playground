@@ -31,13 +31,14 @@ Independent check: current Mac app contains verified data/assets; local progress
 - [x] T012 [US3] Export/regenerate changed public/audio voice assets and verify provider/manifest/media alignment.
 - [x] T013 [US3] Run required build/curriculum/illustration and regression checks; record logs in verification/.
 - [x] T014 [US3] Verify current-Mac browser surfaces and corrected interactions; record screenshots and outcomes in verification/qa.md.
-- [ ] T015 [US3] Run pnpm mac:install, verify binary/signature and native corrected interactions; record separate evidence in verification/qa.md. Installation passes; native input acceptance awaits Mac unlock.
+- [x] T015 [US3] Run pnpm mac:install, verify binary/signature and native corrected interactions; record separate evidence in verification/qa.md and verification/native/qa.md.
 
 ## Cross-cutting completion
 
 - [x] T016 Complete the 40-group review ledger and final identity/exploration comparison in verification/.
 - [x] T017 Update docs/CHANGELOG.md and docs/TODO.md with completed work and factual limitations.
-- [ ] T018 Audit every spec requirement against current evidence before declaring goal complete.
+- [x] T018 Audit every spec requirement against current evidence before declaring goal complete.
+- [x] T019 Fix scene-image intrinsic-grid clipping found in native acceptance; preserve before/after evidence, rebuild/install, and verify bridge and other scene-only rounds in the real app.
 
 ## Dependencies and execution
 

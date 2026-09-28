@@ -1,0 +1,106 @@
+Window: "小小思考屋", App: 小小思考屋.
+0 standard window 小小思考屋, Secondary Actions: Raise
+	1 scroll area
+		2 HTML content Description: 小小思考屋, URL: tauri://localhost
+			3 container
+				4 container 主题地图
+					5 image 小小思考屋 亲子思维游戏
+					6 container 选择启蒙或探索
+						7 toggle button 启蒙, Value: off
+						8 toggle button 探索, Value: on
+					9 button (collapsed) 数字岛 144 题, Secondary Actions: Expand
+					10 button (collapsed) 逻辑屋 126 题, Secondary Actions: Expand
+					11 button (collapsed) 图形工坊 186 题, Secondary Actions: Expand
+					12 button (expanded) 记忆小屋 81 题, Secondary Actions: Collapse
+					13 button (collapsed) 语言花园 54 题, Secondary Actions: Expand
+					14 button (collapsed) 生活实验室 30 题, Secondary Actions: Expand
+					15 container 关卡列表
+						16 container
+							17 text 探索  ·  记忆小屋
+						18 text 9  个
+						19 search text field (settable) 查找当前主题题组, Placeholder: 查找题组
+							20 text 查找题组
+						21 heading 看与记, Value: 3
+							22 text 看与记
+						23 button 看过哪些朋友 动手 · 9 题
+						24 button 位置藏起来 动手 · 9 题
+						25 button 顺着记倒着摆 动手 · 9 题
+						26 button 谁有几个 动手 · 9 题
+						27 heading 听与记, Value: 3
+							28 text 听与记
+						29 button 听懂再行动 动手 · 9 题
+						30 button 故事留在脑海里 动手 · 9 题
+						31 button 声音排队 动手 · 9 题
+						32 heading 专注与规则, Value: 3
+							33 text 专注与规则
+						34 button 细心搜索员 动手 · 9 题
+						35 button 记规则再出手 动手 · 9 题
+				36 container 当前部分
+					37 text 探索
+					38 text 组合线索，多步思考 75  组 ·  621  题
+				39 container 听懂再行动
+					40 container 听懂再行动
+						41 container
+							42 text 先试一试  · 第  1  / 9  题
+							43 heading 听懂再行动, Value: 1
+								44 text 听懂再行动
+							45 button 听一听题目
+						46 heading 听完指令，再按要求摆图卡。, Value: 2
+							47 text 听完指令，再按要求摆图卡。
+						48 text 先选图卡，再按位置编号排好。也可以拖过去。
+						49 container 按编号排列的队伍
+							50 button 第1个位置，空位
+							51 button 第2个位置，空位
+						52 container
+							53 text 选一张图卡，再点位置放进去；也可以拖过去。 图卡可以重复用
+						54 container 可使用的图卡
+							55 toggle button 小猫, Value: off
+							56 toggle button 小熊, Value: off
+							57 toggle button 小狗, Value: off
+							58 toggle button 苹果, Value: off
+							59 toggle button 小兔, Value: off
+						60 button (disabled) 撤销上一步
+						61 button 清空
+						62 button 提示
+						63 button 再听一次
+						64 button 摆好了，看看
+						65 container
+							66 text 这次尝试  0  次 · 提示  0  次  · 重听 0 次
+							67 button 先跳过
+				68 container 题目导航
+					69 text 题目导航
+					70 text 1  /  9  已做
+					71 button 跳到第 1 题，已做
+					72 button 跳到第 2 题
+					73 button 跳到第 3 题
+					74 button 跳到第 4 题
+					75 button 跳到第 5 题
+					76 button 跳到第 6 题
+					77 button 跳到第 7 题
+					78 button 跳到第 8 题
+					79 button 跳到第 9 题
+				80 summary 给家长 · 陪玩提示, Value: off
+					81 text 给家长 · 陪玩提示
+				82 container (expanded) Secondary Actions: Collapse
+					83 summary 探索 · 成长记录, Value: on
+						84 text 探索
+						85 text  · 成长记录
+					86 container
+						87 text 探索 成长记录
+					88 button 清空探索记录
+					89 container
+						90 text 已完成  21  /  621  题
+					91 text 多条件分类 集合选择 关系排序 条件推理 行列约束 图形推理 点数、基数与数量结构 有序分合与枚举 货币兑换、付款与找零 路线约束与一笔走边 连桥网络、度数与全局连通 位置移动、循环与反弹 还有  9  个
+	92 close button
+	93 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	94 minimize button
+	95 text 小小思考屋
+96 menu bar
+	97 小小思考屋
+	98 File
+	99 Edit
+	100 View
+	101 Window
+	102 Help
+
+The focused UI element is 39 container 听懂再行动

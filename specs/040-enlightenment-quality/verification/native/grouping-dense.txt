@@ -1,0 +1,106 @@
+Window: "小小思考屋", App: 小小思考屋.
+0 standard window 小小思考屋, Secondary Actions: Raise
+	1 scroll area
+		2 HTML content Description: 小小思考屋, URL: tauri://localhost
+			3 container
+				4 container 主题地图
+					5 image 小小思考屋 亲子思维游戏
+					6 container 选择启蒙或探索
+						7 toggle button 启蒙, Value: on
+						8 toggle button 探索, Value: off
+					9 button (expanded) 数字岛 数数、比较、加减、分组、时钟 122 题, Secondary Actions: Collapse
+					10 button (collapsed) 逻辑屋 319 题, Secondary Actions: Expand
+					11 button (collapsed) 图形工坊 48 题, Secondary Actions: Expand
+					12 container 关卡列表
+						13 container
+							14 text 启蒙  ·  数字岛
+						15 text 8  个
+						16 search text field (settable) 查找当前主题题组, Placeholder: 查找题组
+							17 text 查找题组
+						18 button 数一数 18 题
+						19 button 一眼看出来 15 题
+						20 button 多一点，少一点 12 题
+						21 button 合起来，拆开来 28 题
+						22 button 小鸟飞走了 12 题
+						23 button 公平分一分 13 题
+						24 button 几个几个数 12 题
+						25 button 时钟小管家 12 题
+				26 container 当前部分
+					27 text 启蒙
+					28 text 看图发现，轻松起步 40  组 ·  489  题
+				29 container 几个几个数
+					30 container
+						31 text 第  12  /  12  题 ·
+						32 container 难度 L6，挑战：需要工作记忆、连续步骤或综合推理后再选择。 比较 4 组图卡，找共同点、差异或缺失项。主要训练成组计数、早期乘法直觉。, Help: 难度判定：挑战：需要工作记忆、连续步骤或综合推理后再选择。 比较 4 组图卡，找共同点、差异或缺失项。主要训练成组计数、早期乘法直觉。
+							33 text 难度
+							34 text L6
+					35 heading 每组放 4 颗星星，有 4 组，一共有多少颗星星？, Value: 3
+						36 text 每组放 4 颗星星，有 4 组，一共有多少颗星星？
+					37 text 4 颗一组地数，也可以先看有几组。
+					38 button 听题
+					39 container 题目画面
+						40 text 第 1 组
+						41 button 星星
+						42 button 星星
+						43 button 星星
+						44 button 星星
+						45 text 第 2 组
+						46 button 星星
+						47 button 星星
+						48 button 星星
+						49 button 星星
+						50 text 第 3 组
+						51 button 星星
+						52 button 星星
+						53 button 星星
+						54 button 星星
+						55 text 第 4 组
+						56 button 星星
+						57 button 星星
+						58 button 星星
+						59 button 星星
+					60 button 15
+					61 button 16
+					62 button 17
+					63 button 从头来
+					64 button (disabled) 看看对不对
+				65 container 题目导航
+					66 text 题目导航
+					67 text 12  /  12  已做
+					68 button 跳到第 1 题，已做
+					69 button 跳到第 2 题，已做
+					70 button 跳到第 3 题，已做
+					71 button 跳到第 4 题，已做
+					72 button 跳到第 5 题，已做
+					73 button 跳到第 6 题，已做
+					74 button 跳到第 7 题，已做
+					75 button 跳到第 8 题，已做
+					76 button 跳到第 9 题，已做
+					77 button 跳到第 10 题，已做
+					78 button 跳到第 11 题，已做
+					79 button 跳到第 12 题，已做
+				80 container (expanded) Secondary Actions: Collapse
+					81 text 亲子提示卡
+					82 text 可以问：每组几个？一共有几组？几个几个数到多少？
+					83 summary 本题追问, Value: off
+						84 text 本题追问
+				85 container (expanded) Secondary Actions: Collapse
+					86 container
+						87 text 启蒙 成长记录
+					88 button 清空启蒙记录
+					89 container
+						90 text 已完成  273  /  489  题
+					91 text 模式识别 预测 证据推理 排除法 解释理由 影子配对 轮廓抽象 近似排除 抗颜色干扰 遮挡还原 可见线索 局部找整体 还有  97  个
+	92 close button
+	93 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	94 minimize button
+	95 text 小小思考屋
+96 menu bar
+	97 小小思考屋
+	98 File
+	99 Edit
+	100 View
+	101 Window
+	102 Help
+
+The focused UI element is 2 HTML content Description: 小小思考屋, URL: tauri://localhost

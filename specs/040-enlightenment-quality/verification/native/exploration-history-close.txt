@@ -1,0 +1,117 @@
+Window: "小小思考屋", App: 小小思考屋.
+0 standard window 小小思考屋, Secondary Actions: Raise
+	1 scroll area
+		2 HTML content Description: 小小思考屋, URL: tauri://localhost
+			3 container
+				4 container 主题地图
+					5 image 小小思考屋 亲子思维游戏
+					6 container 选择启蒙或探索
+						7 toggle button 启蒙, Value: off
+						8 toggle button 探索, Value: on
+					9 button (collapsed) 数字岛 144 题, Secondary Actions: Expand
+					10 button (collapsed) 逻辑屋 126 题, Secondary Actions: Expand
+					11 button (expanded) 图形工坊 186 题, Secondary Actions: Collapse
+					12 button (collapsed) 记忆小屋 81 题, Secondary Actions: Expand
+					13 button (collapsed) 语言花园 54 题, Secondary Actions: Expand
+					14 button (collapsed) 生活实验室 30 题, Secondary Actions: Expand
+					15 container 关卡列表
+						16 container
+							17 text 探索  ·  图形工坊
+						18 text 21  个
+						19 search text field (settable) 查找当前主题题组, Placeholder: 查找题组
+							20 text 查找题组
+						21 heading 图形与规律, Value: 3
+							22 text 图形与规律
+						23 button 图形推理盘 动手 · 6 题
+						24 button 图案观察员 动手 · 9 题
+						25 button 遮住了什么 动手 · 9 题
+						26 button 行列规律研究 动手 · 9 题
+						27 button 标记走格子 动手 · 9 题
+						28 button 转一转照一照 动手 · 9 题
+						29 button 图形合并机 动手 · 9 题
+						30 button 图形金字塔 动手 · 9 题
+						31 button 颜色密码运算 动手 · 9 题
+						32 heading 观察与空间, Value: 3
+							33 text 观察与空间
+						34 button 点线面数清楚 动手 · 9 题
+						35 button 哪里可以对折 动手 · 9 题
+						36 button 相碰还是相交 动手 · 9 题
+						37 button 小黑点的任务 动手 · 9 题
+						38 button 多位图形密码 动手 · 9 题
+						39 button 拼搭小工坊 动手 · 9 题
+						40 button 折开会怎样 动手 · 9 题
+						41 heading 立体与方向, Value: 3
+							42 text 立体与方向
+						43 button 积木的另一面 动手 · 9 题
+						44 button 换个方向看左右 动手 · 9 题
+						45 button 纸盒六个面 动手 · 9 题
+						46 button 方格重建师 动手 · 9 题
+						47 button 谁盖住了谁 动手 · 9 题
+				48 container 当前部分
+					49 text 探索
+					50 text 组合线索，多步思考 75  组 ·  621  题
+				51 container 图形推理盘
+					52 container 图形推理盘
+						53 container
+							54 text 填图形  · 第  1  / 6  题
+							55 heading 图形推理盘, Value: 1
+								56 text 图形推理盘
+							57 button 听一听题目
+						58 heading 把图形盘补完整, Value: 2
+							59 text 把图形盘补完整
+						60 text 选一张图卡，再点问号格放进去。图卡可以重复用。
+						61 container
+							62 text 1 每一行都是同一种颜色。 2 从左到右，都是圆形、方形、三角形。
+						63 container 图形盘
+							64 container 第1行第1格，红色圆形
+								65 image 红色圆形
+							66 container 第1行第2格，红色方形
+								67 image 红色方形
+							68 button 第1行第3格，空位
+							69 container 第2行第1格，蓝色圆形
+								70 image 蓝色圆形
+							71 button 第2行第2格，空位
+							72 container 第2行第3格，蓝色三角形
+								73 image 蓝色三角形
+						74 text 选一张图卡，再点位置放进去；也可以拖过去。 图卡可以重复用
+						75 container 可使用的图卡
+							76 toggle button 蓝色圆形, Value: off
+							77 toggle button 红色三角形, Value: off
+							78 toggle button 蓝色方形, Value: off
+							79 toggle button 红色方形, Value: off
+							80 toggle button 红色圆形, Value: off
+							81 toggle button 蓝色三角形, Value: off
+						82 button (disabled) 撤销上一步
+						83 button 清空
+						84 button 提示
+						85 button 摆好了，看看
+						86 container
+							87 text 这次尝试  0  次 · 提示  0  次
+							88 button 先跳过
+				89 container 题目导航
+					90 text 题目导航
+					91 text 1  /  6  已做
+					92 button 跳到第 1 题，已做
+					93 button 跳到第 2 题
+					94 button 跳到第 3 题
+					95 button 跳到第 4 题
+					96 button 跳到第 5 题
+					97 button 跳到第 6 题
+				98 summary 给家长 · 陪玩提示, Value: off
+					99 text 给家长 · 陪玩提示
+				100 summary 探索 · 成长记录, Value: off
+					101 text 探索
+					102 text  · 成长记录
+	103 close button
+	104 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	105 minimize button
+	106 text 小小思考屋
+107 menu bar
+	108 小小思考屋
+	109 File
+	110 Edit
+	111 View
+	112 Window
+	113 Help
+
+The focused UI element is 100 summary 探索 · 成长记录, Value: off

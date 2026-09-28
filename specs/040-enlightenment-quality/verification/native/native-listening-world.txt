@@ -1,0 +1,99 @@
+Window: "小小思考屋", App: 小小思考屋.
+0 standard window 小小思考屋, Secondary Actions: Raise
+	1 scroll area
+		2 HTML content Description: 小小思考屋, URL: tauri://localhost
+			3 container
+				4 container 主题地图
+					5 image 小小思考屋 亲子思维游戏
+					6 container 选择启蒙或探索
+						7 toggle button 启蒙, Value: off
+						8 toggle button 探索, Value: on
+					9 button (collapsed) 数字岛 144 题, Secondary Actions: Expand
+					10 button (collapsed) 逻辑屋 126 题, Secondary Actions: Expand
+					11 button (collapsed) 图形工坊 186 题, Secondary Actions: Expand
+					12 button (expanded) 记忆小屋 81 题, Secondary Actions: Collapse
+					13 button (collapsed) 语言花园 54 题, Secondary Actions: Expand
+					14 button (collapsed) 生活实验室 30 题, Secondary Actions: Expand
+					15 container 关卡列表
+						16 container
+							17 text 探索  ·  记忆小屋
+						18 text 9  个
+						19 search text field (settable) 查找当前主题题组, Placeholder: 查找题组
+							20 text 查找题组
+						21 heading 看与记, Value: 3
+							22 text 看与记
+						23 button 看过哪些朋友 动手 · 9 题
+						24 button 位置藏起来 动手 · 9 题
+						25 button 顺着记倒着摆 动手 · 9 题
+						26 button 谁有几个 动手 · 9 题
+						27 heading 听与记, Value: 3
+							28 text 听与记
+						29 button 听懂再行动 动手 · 9 题
+						30 button 故事留在脑海里 动手 · 9 题
+						31 button 声音排队 动手 · 9 题
+						32 heading 专注与规则, Value: 3
+							33 text 专注与规则
+						34 button 细心搜索员 动手 · 9 题
+						35 button 记规则再出手 动手 · 9 题
+				36 container 当前部分
+					37 text 探索
+					38 text 组合线索，多步思考 75  组 ·  621  题
+				39 container 看过哪些朋友
+					40 container 看过哪些朋友
+						41 container
+							42 text 先试一试  · 第  1  / 9  题
+							43 heading 看过哪些朋友, Value: 1
+								44 text 看过哪些朋友
+							45 button 听一听题目
+						46 heading 把刚才出现过的图卡都选出来。, Value: 2
+							47 text 把刚才出现过的图卡都选出来。
+						48 text 把所有符合条件的图卡选出来，再检查一次。
+						49 heading 先看清，再找出来, Value: 3
+							50 text 先看清，再找出来
+						51 text 准备好了再开始。作答时也可以再看一次。
+						52 button 开始记忆
+						53 button (disabled) 撤销上一步
+						54 button (disabled) 清空
+						55 button 提示
+						56 button (disabled) 再看一次
+						57 button (disabled) 选好了，看看
+						58 container
+							59 text 这次尝试  0  次 · 提示  0  次  · 重看 0 次
+							60 button 先跳过
+				61 container 题目导航
+					62 text 题目导航
+					63 text 0  /  9  已做
+					64 button 跳到第 1 题
+					65 button 跳到第 2 题
+					66 button 跳到第 3 题
+					67 button 跳到第 4 题
+					68 button 跳到第 5 题
+					69 button 跳到第 6 题
+					70 button 跳到第 7 题
+					71 button 跳到第 8 题
+					72 button 跳到第 9 题
+				73 summary 给家长 · 陪玩提示, Value: off
+					74 text 给家长 · 陪玩提示
+				75 container (expanded) Secondary Actions: Collapse
+					76 summary 探索 · 成长记录, Value: on
+						77 text 探索
+						78 text  · 成长记录
+					79 container
+						80 text 探索 成长记录
+					81 button 清空探索记录
+					82 container
+						83 text 已完成  21  /  621  题
+					84 text 多条件分类 集合选择 关系排序 条件推理 行列约束 图形推理 点数、基数与数量结构 有序分合与枚举 货币兑换、付款与找零 路线约束与一笔走边 连桥网络、度数与全局连通 位置移动、循环与反弹 还有  9  个
+	85 close button
+	86 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	87 minimize button
+	88 text 小小思考屋
+89 menu bar
+	90 小小思考屋
+	91 File
+	92 Edit
+	93 View
+	94 Window
+	95 Help
+
+The focused UI element is 2 HTML content Description: 小小思考屋, URL: tauri://localhost

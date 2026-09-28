@@ -5,8 +5,6 @@ small enough to turn into a Spec Kit feature.
 
 ## P0
 
-- Finish the native acceptance for specs/040-enlightenment-quality after Mac unlock: restart the installed Applications app, check timed readiness/review, memory re-observation, aligned graphics, corrected pictures, local speech and existing progress. The 489-round browser pass and package/signature checks are recorded separately; they do not close native acceptance.
-
 - Complete the remaining native input checks for 035–039 after Mac unlock. The corrective app's native startup and E03 default screenshot now confirm equal large images for different caption lengths and visible page controls. Selection/drag/zoom and four-card native states still need checks, followed by L06, N02/N05/N14, P01, A05 and E04/L07/P06/G17 cases. Dev checkpoint synchronization is separate from this remaining acceptance coverage; browser input tests are not counted as native tests.
 
 - Observe 6-, 7- and 8-year-old parent-child play and calibrate reading, interaction and reasoning load for the 597 newly authored activities. Technical QA is not age validation.

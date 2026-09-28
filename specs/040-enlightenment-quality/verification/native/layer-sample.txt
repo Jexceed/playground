@@ -1,0 +1,84 @@
+Window: "小小思考屋", App: 小小思考屋.
+0 standard window 小小思考屋, Secondary Actions: Raise
+	1 scroll area
+		2 HTML content Description: 小小思考屋, URL: tauri://localhost
+			3 container
+				4 container 主题地图
+					5 image 小小思考屋 亲子思维游戏
+					6 container 选择启蒙或探索
+						7 toggle button 启蒙, Value: on
+						8 toggle button 探索, Value: off
+					9 button (collapsed) 数字岛 122 题, Secondary Actions: Expand
+					10 button (collapsed) 逻辑屋 319 题, Secondary Actions: Expand
+					11 button (expanded) 图形工坊 轮廓、遮挡、叠合、线索、密码、缺口 48 题, Secondary Actions: Collapse
+					12 container 关卡列表
+						13 container
+							14 text 启蒙  ·  图形工坊
+						15 text 6  个
+						16 search text field (settable) 查找当前主题题组, Placeholder: 查找题组
+							17 text 查找题组
+						18 button 影子配对 8 题
+						19 button 遮挡还原 8 题
+						20 button 局部找整体 8 题
+						21 button 纸片叠叠板 8 题
+						22 button 图形密码机 8 题
+						23 button 缺口补一补 8 题
+				24 container 当前部分
+					25 text 启蒙
+					26 text 看图发现，轻松起步 40  组 ·  489  题
+				27 container 纸片叠叠板
+					28 container
+						29 text 第  7  /  8  题 ·
+						30 container 难度 L6，上实式叠合题：四个选项图形相近，需要同时判断上下层、重叠位置和轮廓是否被换。, Help: 难度判定：上实式叠合题：四个选项图形相近，需要同时判断上下层、重叠位置和轮廓是否被换。
+							31 text 难度
+							32 text L6
+					33 heading 按顺序叠放不透光的彩色纸片，会变成哪张图？, Value: 3
+						34 text 按顺序叠放不透光的彩色纸片，会变成哪张图？
+					35 text 小方框只标位置。对齐小方框，纸片不挪位置，先放1号，再盖2号。
+					36 button 听题
+					37 container 题目画面
+						38 container 先看示例，再看本题要叠加的两张图
+							39 text 先看示例，再看本题要叠加的两张图
+							40 text 示例1 先放 + 示例2 盖上 → 示例叠后 1 先放这张 2 盖上这张
+					41 button A
+					42 button B
+					43 button C
+					44 button D
+					45 button 从头来
+					46 button (disabled) 看看对不对
+				47 container 题目导航
+					48 text 题目导航
+					49 text 8  /  8  已做
+					50 button 跳到第 1 题，已做
+					51 button 跳到第 2 题，已做
+					52 button 跳到第 3 题，已做
+					53 button 跳到第 4 题，已做
+					54 button 跳到第 5 题，已做
+					55 button 跳到第 6 题，已做
+					56 button 跳到第 7 题，已做
+					57 button 跳到第 8 题，已做
+				58 container (expanded) Secondary Actions: Collapse
+					59 text 亲子提示卡
+					60 text 请她说：哪一张在上面？重叠的地方挡住了谁？
+					61 summary 本题追问, Value: off
+						62 text 本题追问
+				63 container (expanded) Secondary Actions: Collapse
+					64 container
+						65 text 启蒙 成长记录
+					66 button 清空启蒙记录
+					67 container
+						68 text 已完成  273  /  489  题
+					69 text 模式识别 预测 证据推理 排除法 解释理由 影子配对 轮廓抽象 近似排除 抗颜色干扰 遮挡还原 可见线索 局部找整体 还有  97  个
+	70 close button
+	71 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	72 minimize button
+	73 text 小小思考屋
+74 menu bar
+	75 小小思考屋
+	76 File
+	77 Edit
+	78 View
+	79 Window
+	80 Help
+
+The focused UI element is 2 HTML content Description: 小小思考屋, URL: tauri://localhost

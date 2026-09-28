@@ -1,0 +1,107 @@
+Window: "小小思考屋", App: 小小思考屋.
+0 standard window 小小思考屋, Secondary Actions: Raise
+	1 scroll area
+		2 HTML content Description: 小小思考屋, URL: tauri://localhost
+			3 container
+				4 container 主题地图
+					5 image 小小思考屋 亲子思维游戏
+					6 container 选择启蒙或探索
+						7 toggle button 启蒙, Value: on
+						8 toggle button 探索, Value: off
+					9 button (expanded) 数字岛 数数、比较、加减、分组、时钟 122 题, Secondary Actions: Collapse
+					10 button (collapsed) 逻辑屋 319 题, Secondary Actions: Expand
+					11 button (collapsed) 图形工坊 48 题, Secondary Actions: Expand
+					12 container 关卡列表
+						13 container
+							14 text 启蒙  ·  数字岛
+						15 text 8  个
+						16 search text field (settable) 查找当前主题题组, Placeholder: 查找题组
+							17 text 查找题组
+						18 button 数一数 18 题
+						19 button 一眼看出来 15 题
+						20 button 多一点，少一点 12 题
+						21 button 合起来，拆开来 28 题
+						22 button 小鸟飞走了 12 题
+						23 button 公平分一分 13 题
+						24 button 几个几个数 12 题
+						25 button 时钟小管家 12 题
+				26 container 当前部分
+					27 text 启蒙
+					28 text 看图发现，轻松起步 40  组 ·  489  题
+				29 container 合起来，拆开来
+					30 container
+						31 text 第  1  /  28  题 ·
+						32 container 难度 L4，中等：需要两步观察或简单比较，不能只看一个显眼线索。 比较 2 组图卡，找共同点、差异或缺失项。主要训练合成分解。, Help: 难度判定：中等：需要两步观察或简单比较，不能只看一个显眼线索。 比较 2 组图卡，找共同点、差异或缺失项。主要训练合成分解。
+							33 text 难度
+							34 text L4
+					35 heading 1 个积木和 2 个积木加起来是几个？, Value: 3
+						36 text 1 个积木和 2 个积木加起来是几个？
+					37 text 先看两堆，再加起来数。
+					38 button 听题
+					39 container 题目画面
+						40 text 第一堆
+						41 button 积木
+						42 text 第二堆
+						43 button 积木
+						44 button 积木
+					45 button 2
+					46 button 4
+					47 button 3
+					48 button 从头来
+					49 button (disabled) 看看对不对
+				50 container 题目导航
+					51 text 题目导航
+					52 text 0  /  28  已做
+					53 button 跳到第 1 题
+					54 button 跳到第 2 题
+					55 button 跳到第 3 题
+					56 button 跳到第 4 题
+					57 button 跳到第 5 题
+					58 button 跳到第 6 题
+					59 button 跳到第 7 题
+					60 button 跳到第 8 题
+					61 button 跳到第 9 题
+					62 button 跳到第 10 题
+					63 button 跳到第 11 题
+					64 button 跳到第 12 题
+					65 button 跳到第 13 题
+					66 button 跳到第 14 题
+					67 button 跳到第 15 题
+					68 button 跳到第 16 题
+					69 button 跳到第 17 题
+					70 button 跳到第 18 题
+					71 button 跳到第 19 题
+					72 button 跳到第 20 题
+					73 button 跳到第 21 题
+					74 button 跳到第 22 题
+					75 button 跳到第 23 题
+					76 button 跳到第 24 题
+					77 button 跳到第 25 题
+					78 button 跳到第 26 题
+					79 button 跳到第 27 题
+					80 button 跳到第 28 题
+				81 container (expanded) Secondary Actions: Collapse
+					82 text 亲子提示卡
+					83 text 可以问：这一堆和那一堆加起来是几？还能怎么分？
+					84 summary 本题追问, Value: off
+						85 text 本题追问
+				86 container (expanded) Secondary Actions: Collapse
+					87 container
+						88 text 启蒙 成长记录
+					89 button 清空启蒙记录
+					90 container
+						91 text 已完成  273  /  489  题
+					92 text 模式识别 预测 证据推理 排除法 解释理由 影子配对 轮廓抽象 近似排除 抗颜色干扰 遮挡还原 可见线索 局部找整体 还有  97  个
+	93 close button
+	94 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	95 minimize button
+	96 text 小小思考屋
+97 menu bar
+	98 小小思考屋
+	99 File
+	100 Edit
+	101 View
+	102 Window
+	103 Help
+
+The focused UI element is 2 HTML content Description: 小小思考屋, URL: tauri://localhost

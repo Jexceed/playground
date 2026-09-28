@@ -47,4 +47,4 @@ Baseline: 23e07a5. All 40 groups / 489 rounds were reviewed through every author
 
 ## Pending acceptance
 
-Both 489-round browser passes, corrected graphic screenshots, current media/build/signature gates and the requirement audit are recorded in qa.md. Fresh installed native interaction checks remain open because the host is locked. Initial screenshots and graphic-layout-initial.json deliberately retain found failures, not passes.
+Both 489-round browser passes, corrected graphic screenshots, media/build/signature gates and the requirement audit are recorded in qa.md. The specified representative native acceptance now passes; native/qa.md records the scene-clipping defect found during that pass, its correction and final installed evidence. The JSON ledger distinguishes sampled native families from those covered by the full browser review. Initial screenshots and graphic-layout-initial.json deliberately retain found failures, not passes.

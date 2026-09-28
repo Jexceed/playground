@@ -1,0 +1,83 @@
+Window: "小小思考屋", App: 小小思考屋.
+0 standard window 小小思考屋, Secondary Actions: Raise
+	1 scroll area
+		2 HTML content Description: 小小思考屋, URL: tauri://localhost
+			3 container
+				4 container 主题地图
+					5 image 小小思考屋 亲子思维游戏
+					6 container 选择启蒙或探索
+						7 toggle button 启蒙, Value: on
+						8 toggle button 探索, Value: off
+					9 button (collapsed) 数字岛 122 题, Secondary Actions: Expand
+					10 button (collapsed) 逻辑屋 319 题, Secondary Actions: Expand
+					11 button (expanded) 图形工坊 轮廓、遮挡、叠合、线索、密码、缺口 48 题, Secondary Actions: Collapse
+					12 container 关卡列表
+						13 container
+							14 text 启蒙  ·  图形工坊
+						15 text 6  个
+						16 search text field (settable) 查找当前主题题组, Placeholder: 查找题组
+							17 text 查找题组
+						18 button 影子配对 8 题
+						19 button 遮挡还原 8 题
+						20 button 局部找整体 8 题
+						21 button 纸片叠叠板 8 题
+						22 button 图形密码机 8 题
+						23 button 缺口补一补 8 题
+				24 container 当前部分
+					25 text 启蒙
+					26 text 看图发现，轻松起步 40  组 ·  489  题
+				27 container 缺口补一补
+					28 container
+						29 text 第  1  /  8  题 ·
+						30 container 难度 L5，上实式视觉闭合题：只给不完整轮廓，四个选项都有相近边角，需要按缺口方向排除。, Help: 难度判定：上实式视觉闭合题：只给不完整轮廓，四个选项都有相近边角，需要按缺口方向排除。
+							31 text 难度
+							32 text L5
+					33 heading 这个轮廓缺了一段，原来是哪张完整的图？, Value: 3
+						34 text 这个轮廓缺了一段，原来是哪张完整的图？
+					35 text 先看缺口在哪一边，再看缺口需要圆边、直边、尖角还是尾巴。
+					36 button 听题
+					37 container 题目画面
+						38 container 缺口轮廓
+							39 text 缺口轮廓
+					40 button A
+					41 button B
+					42 button C
+					43 button D
+					44 button 从头来
+					45 button (disabled) 看看对不对
+				46 container 题目导航
+					47 text 题目导航
+					48 text 8  /  8  已做
+					49 button 跳到第 1 题，已做
+					50 button 跳到第 2 题，已做
+					51 button 跳到第 3 题，已做
+					52 button 跳到第 4 题，已做
+					53 button 跳到第 5 题，已做
+					54 button 跳到第 6 题，已做
+					55 button 跳到第 7 题，已做
+					56 button 跳到第 8 题，已做
+				57 container (expanded) Secondary Actions: Collapse
+					58 text 亲子提示卡
+					59 text 请她先指缺口在哪里，再说选项的哪条边能补进去。
+					60 summary 本题追问, Value: off
+						61 text 本题追问
+				62 container (expanded) Secondary Actions: Collapse
+					63 container
+						64 text 启蒙 成长记录
+					65 button 清空启蒙记录
+					66 container
+						67 text 已完成  273  /  489  题
+					68 text 模式识别 预测 证据推理 排除法 解释理由 影子配对 轮廓抽象 近似排除 抗颜色干扰 遮挡还原 可见线索 局部找整体 还有  97  个
+	69 close button
+	70 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	71 minimize button
+	72 text 小小思考屋
+73 menu bar
+	74 小小思考屋
+	75 File
+	76 Edit
+	77 View
+	78 Window
+	79 Help
+
+The focused UI element is 2 HTML content Description: 小小思考屋, URL: tauri://localhost

@@ -36,3 +36,7 @@ Baseline and full review → coherent content corrections (US1) → observation/
 ## Workflow notes
 
 No extension hooks or update-agent-context script exists in this checkout. All technical choices use verified current project primitives; no unresolved technology research requires delegation. No constitution violations.
+
+## Native acceptance follow-up
+
+The installed app exposed scene-image clipping: an intrinsic grid row exceeded the fixed 330px figure, cutting off the bottom bridge model. Constrain the progressive scene's grid tracks and image minimum size without changing the outer task height or exploration styling. Preserve the failing screenshot, rebuild/install, and check complete scene bounds plus answer/feedback controls in the native app. No content or voice text changes are needed.

@@ -3493,6 +3493,12 @@ button:focus-visible {
   text-align: center;
 }
 .progressive-game .subitize-dot { cursor: default; }
+/* Let the fixed picture frame constrain intrinsic image dimensions in WebKit. */
+.progressive-game .scene-image-card {
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1fr);
+}
+.progressive-game .scene-image-card img { min-width: 0; min-height: 0; }
 .progressive-game[data-game="logic-space-bridge"] .scene-image-card {
   aspect-ratio: auto;
   height: 330px;

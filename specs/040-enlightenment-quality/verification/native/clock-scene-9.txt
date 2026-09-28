@@ -1,0 +1,90 @@
+Window: "小小思考屋", App: 小小思考屋.
+0 standard window 小小思考屋, Secondary Actions: Raise
+	1 scroll area
+		2 HTML content Description: 小小思考屋, URL: tauri://localhost
+			3 container
+				4 container 主题地图
+					5 image 小小思考屋 亲子思维游戏
+					6 container 选择启蒙或探索
+						7 toggle button 启蒙, Value: on
+						8 toggle button 探索, Value: off
+					9 button (expanded) 数字岛 数数、比较、加减、分组、时钟 122 题, Secondary Actions: Collapse
+					10 button (collapsed) 逻辑屋 319 题, Secondary Actions: Expand
+					11 button (collapsed) 图形工坊 48 题, Secondary Actions: Expand
+					12 container 关卡列表
+						13 container
+							14 text 启蒙  ·  数字岛
+						15 text 8  个
+						16 search text field (settable) 查找当前主题题组, Placeholder: 查找题组
+							17 text 查找题组
+						18 button 数一数 18 题
+						19 button 一眼看出来 15 题
+						20 button 多一点，少一点 12 题
+						21 button 合起来，拆开来 28 题
+						22 button 小鸟飞走了 12 题
+						23 button 公平分一分 13 题
+						24 button 几个几个数 12 题
+						25 button 时钟小管家 12 题
+				26 container 当前部分
+					27 text 启蒙
+					28 text 看图发现，轻松起步 40  组 ·  489  题
+				29 container 时钟小管家
+					30 container
+						31 text 第  9  /  12  题 ·
+						32 container 难度 L4，12 小时到 24 小时转换：同一个钟面数字可能对应两个电子钟时间，需要结合场景判断。, Help: 难度判定：12 小时到 24 小时转换：同一个钟面数字可能对应两个电子钟时间，需要结合场景判断。
+							33 text 难度
+							34 text L4
+					35 heading 看图和时钟，电子钟应该显示哪个时间？, Value: 3
+						36 text 看图和时钟，电子钟应该显示哪个时间？
+					37 text 图里在吃早餐。先读钟面，再结合这个活动选择电子钟时间。
+					38 button 听题
+					39 container 题目画面
+						40 image 餐桌旁，小朋友坐着吃早餐，窗外有明亮的阳光。
+						41 container 模拟时钟
+							42 image 时针也就是短针指向8，分针也就是长针在12
+							43 text 先看时针（短针），再看分针（长针）。
+					44 button 20:00
+					45 button 08:00
+					46 button 18:00
+					47 button 从头来
+					48 button (disabled) 看看对不对
+				49 container 题目导航
+					50 text 题目导航
+					51 text 12  /  12  已做
+					52 button 跳到第 1 题，已做
+					53 button 跳到第 2 题，已做
+					54 button 跳到第 3 题，已做
+					55 button 跳到第 4 题，已做
+					56 button 跳到第 5 题，已做
+					57 button 跳到第 6 题，已做
+					58 button 跳到第 7 题，已做
+					59 button 跳到第 8 题，已做
+					60 button 跳到第 9 题，已做
+					61 button 跳到第 10 题，已做
+					62 button 跳到第 11 题，已做
+					63 button 跳到第 12 题，已做
+				64 container (expanded) Secondary Actions: Collapse
+					65 text 亲子提示卡
+					66 text 请她先说时针（短针）在哪里、分针（长针）在哪里，再结合图里的活动选电子钟时间。
+					67 summary 本题追问, Value: off
+						68 text 本题追问
+				69 container (expanded) Secondary Actions: Collapse
+					70 container
+						71 text 启蒙 成长记录
+					72 button 清空启蒙记录
+					73 container
+						74 text 已完成  273  /  489  题
+					75 text 模式识别 预测 证据推理 排除法 解释理由 影子配对 轮廓抽象 近似排除 抗颜色干扰 遮挡还原 可见线索 局部找整体 还有  97  个
+	76 close button
+	77 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	78 minimize button
+	79 text 小小思考屋
+80 menu bar
+	81 小小思考屋
+	82 File
+	83 Edit
+	84 View
+	85 Window
+	86 Help
+
+The focused UI element is 2 HTML content Description: 小小思考屋, URL: tauri://localhost

@@ -1,0 +1,25 @@
+Already up to date
+Done in 161ms using pnpm v11.19.0
+$ node --test scripts/enlightenment-quality.test.mjs
+✔ all stable enlightenment identities and exploration content are preserved (9.198708ms)
+✔ answer positions stay balanced without long runs or a repeating group-wide cycle (0.549958ms)
+✔ reordering preserves each drawn option, semantic answer and display letter (0.331292ms)
+✔ quantity pictures independently agree with addition, subtraction, sharing and grouping (0.16875ms)
+✔ a timed observation cannot silently start on navigation and interruption reopens readiness (0.080666ms)
+✔ jumping to the last round does not invent earlier completion or ability evidence (0.062125ms)
+✔ memory options have exactly one answer supported by the visible sequence (0.136583ms)
+✔ missing and extra picture cards match independent multiset differences (0.094875ms)
+✔ corrected number pairs have a visible repeated rule and no nonexistent color cue (0.056ms)
+✔ bridge plans span every supported gap, not only enough total wood (0.117292ms)
+✔ story corrections specify needs and do not confuse game rules with crossing a road (0.111125ms)
+✔ layer cards expose the exact aligned positions and their opaque stacking order (0.144125ms)
+✔ code-table queries are not always the first example and maps independently determine the answer (0.076667ms)
+✔ counting evidence is not always the middle group and numeric distractors stay nearby (0.118708ms)
+ℹ tests 14
+ℹ suites 0
+ℹ pass 14
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 399.806458
