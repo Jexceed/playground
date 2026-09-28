@@ -1,7 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
-import { createHash } from "node:crypto";
 import { loadGameData } from "./lib/load-game-data.mjs";
 import { loadTypeScriptModule } from "./lib/load-ts-module.mjs";
 import { activitySolutions, permutations } from "./lib/activity-solutions.mjs";
@@ -12,7 +11,7 @@ const { evaluateActivity } = await loadTypeScriptModule(
 const all = data.activitySets.filter(set=>!set.id.startsWith("explore-")).flatMap((set) => set.rounds);
 const filled = (tokenId) => ({ state: "filled", tokenId });
 
-test("catalog contains 24 new activities and the exact unchanged 489-round legacy bank", () => {
+test("catalog retains 24 pilot activities and all 489 stable enlightenment identities", () => {
   const baseline = JSON.parse(
     readFileSync(
       "specs/029-curriculum-benchmark/verification/legacy-baseline.json",
@@ -24,9 +23,10 @@ test("catalog contains 24 new activities and the exact unchanged 489-round legac
     data.legacyGames.reduce((n, g) => n + g.rounds.length, 0),
     489,
   );
-  assert.equal(
-    createHash("sha256").update(JSON.stringify(data.legacyGames)).digest("hex"),
-    baseline.sha256,
+  // Feature 040 explicitly corrects legacy content; historical IDs must still survive.
+  assert.deepEqual(
+    data.legacyGames.map(game => ({ id: game.id, roundIds: game.rounds.map(round => round.id) })),
+    baseline.games.map(game => ({ id: game.id, roundIds: game.roundIds })),
   );
   assert.equal(
     new Set(data.catalogGames.flatMap((g) => g.rounds.map((r) => r.id))).size,

@@ -4,14 +4,16 @@ import type { CSSProperties } from "react";
 import { GuideMascot } from "../components/GuideMascot";
 import { VisualGlyph, VisualToken, visualMetaFor, visualParts } from "../components/VisualToken";
 import { imageGallery } from "../data/imageGallery";
+import { completedGameRounds, ENLIGHTENMENT_COPY, initialObservationPhase, observationTransition, type ObservationPhase } from "../domain/enlightenment";
 import { publicAsset } from "../publicAsset";
-import { playTone, speak } from "../speech";
+import { playTone, speak, stopSpeech } from "../speech";
 import type { GameConfig, GameRound, GraphicChallengeOption, GraphicFigure, GraphicFigureGroup } from "../types";
 
 export function ProgressiveSetGame({
   game,
   requestedRoundIndex,
   requestedRoundReadKey,
+  completedRoundIds,
   onComplete,
   onRoundComplete,
   onRoundIndexChange,
@@ -19,6 +21,7 @@ export function ProgressiveSetGame({
   game: GameConfig;
   requestedRoundIndex: number;
   requestedRoundReadKey: number;
+  completedRoundIds: ReadonlySet<string>;
   onComplete: () => void;
   onRoundComplete: (roundId: string, tags: string[]) => void;
   onRoundIndexChange: (index: number) => void;
@@ -28,8 +31,7 @@ export function ProgressiveSetGame({
   const [answered, setAnswered] = useState(false);
   const [retryMessage, setRetryMessage] = useState<string | null>(null);
   const [completedOnce, setCompletedOnce] = useState(false);
-  const [memoryCovered, setMemoryCovered] = useState(false);
-  const [subitizeVisible, setSubitizeVisible] = useState(true);
+  const [observationPhase, setObservationPhase] = useState<ObservationPhase>(() => initialObservationPhase(game.rounds[0]));
   const lastRoundReadKey = useRef(0);
 
   useEffect(() => {
@@ -38,8 +40,7 @@ export function ProgressiveSetGame({
     setAnswered(false);
     setRetryMessage(null);
     setCompletedOnce(false);
-    setMemoryCovered(false);
-    setSubitizeVisible(true);
+    setObservationPhase(initialObservationPhase(game.rounds[0]));
   }, [game.id]);
 
   useEffect(() => {
@@ -51,8 +52,7 @@ export function ProgressiveSetGame({
       setSelected(null);
       setAnswered(false);
       setRetryMessage(null);
-      setMemoryCovered(false);
-      setSubitizeVisible(true);
+      setObservationPhase(initialObservationPhase(game.rounds[nextIndex]));
     }
     if (shouldReadRequestedRound) {
       const requestedRound = game.rounds[nextIndex];
@@ -63,26 +63,33 @@ export function ProgressiveSetGame({
   const round = game.rounds[roundIndex];
   const isCorrect = answered && selected === round.answer;
   const isLastRound = roundIndex === game.rounds.length - 1;
-  const isSubitizeRound = game.id === "math-subitize-match";
-  const subitizeCoverStartIndex = Math.max(0, game.rounds.length - 5);
-  const shouldAutoCoverSubitize = isSubitizeRound && roundIndex >= subitizeCoverStartIndex;
+  const timedObservation = Boolean(round.observation);
+  const canAnswer = observationPhase === "answering";
+  const completedRounds = useMemo(() => completedGameRounds(game, completedRoundIds), [game, completedRoundIds]);
+  const allRoundsComplete = completedRounds.length === game.rounds.length;
 
   useEffect(() => {
-    if (!shouldAutoCoverSubitize || !subitizeVisible) return;
-    const timer = window.setTimeout(() => setSubitizeVisible(false), 1250);
+    if (!round.observation || observationPhase !== "observing") return;
+    const timer = window.setTimeout(() => setObservationPhase(phase => observationTransition(phase, "hide", true)), round.observation.durationMs);
     return () => window.clearTimeout(timer);
-  }, [round.id, shouldAutoCoverSubitize, subitizeVisible]);
+  }, [round, observationPhase]);
 
-  const completedTags = useMemo(
-    () => Array.from(new Set(game.rounds.slice(0, roundIndex + (isCorrect ? 1 : 0)).flatMap((item) => item.abilityTags))),
-    [game.rounds, isCorrect, roundIndex],
-  );
+  useEffect(() => {
+    const interrupt = () => setObservationPhase(phase => observationTransition(phase, "interrupt", timedObservation));
+    const visibilityChange = () => { if (document.hidden) interrupt(); };
+    window.addEventListener("blur", interrupt);
+    document.addEventListener("visibilitychange", visibilityChange);
+    return () => {
+      window.removeEventListener("blur", interrupt);
+      document.removeEventListener("visibilitychange", visibilityChange);
+    };
+  }, [timedObservation]);
 
   function choose(value: string) {
     if (answered) return;
-    if (round.memory && !memoryCovered) {
+    if (!canAnswer) {
       playTone("notice");
-      speak("先看一看，记住以后再遮住。");
+      speak(ENLIGHTENMENT_COPY.observeFirst);
       return;
     }
     const choice = round.choices.find((item) => item.value === value);
@@ -93,7 +100,7 @@ export function ProgressiveSetGame({
   }
 
   function checkAnswer() {
-    if (!selected) return;
+    if (!selected || !canAnswer || answered) return;
     if (selected === round.answer) {
       setAnswered(true);
       setRetryMessage(null);
@@ -111,22 +118,21 @@ export function ProgressiveSetGame({
 
   function nextRound() {
     if (!isCorrect) return;
-    if (isLastRound) {
+    if (allRoundsComplete) {
       if (!completedOnce) {
         setCompletedOnce(true);
         onComplete();
       }
       return;
     }
-    const nextIndex = roundIndex + 1;
+    const nextIndex = isLastRound ? game.rounds.findIndex(item => !completedRoundIds.has(item.id)) : roundIndex + 1;
     const requestedRound = game.rounds[nextIndex];
     setRoundIndex(nextIndex);
     onRoundIndexChange(nextIndex);
     setSelected(null);
     setAnswered(false);
     setRetryMessage(null);
-    setMemoryCovered(false);
-    setSubitizeVisible(true);
+    setObservationPhase(initialObservationPhase(requestedRound));
     if (requestedRound) speak(joinVoiceLine(requestedRound.prompt, requestedRound.instruction));
   }
 
@@ -137,14 +143,13 @@ export function ProgressiveSetGame({
     setAnswered(false);
     setRetryMessage(null);
     setCompletedOnce(false);
-    setMemoryCovered(false);
-    setSubitizeVisible(true);
+    setObservationPhase(initialObservationPhase(game.rounds[0]));
     const requestedRound = game.rounds[0];
     if (requestedRound) speak(joinVoiceLine(requestedRound.prompt, requestedRound.instruction));
   }
 
   return (
-    <div className="play-area progressive-game">
+    <div className="play-area progressive-game" data-game={game.id}>
       <div className="round-toolbar">
         <div>
           <p className="eyebrow">
@@ -164,6 +169,7 @@ export function ProgressiveSetGame({
         </div>
         <GuideMascot
           onSpeak={() => {
+            if (timedObservation && observationPhase === "observing") setObservationPhase("ready");
             speak(joinVoiceLine(round.prompt, round.instruction));
           }}
         />
@@ -171,23 +177,38 @@ export function ProgressiveSetGame({
 
       <RoundBoard
         gameId={game.id}
-        memoryCovered={memoryCovered}
+        memoryCovered={observationPhase === "answering"}
         round={round}
-        subitizeVisible={!shouldAutoCoverSubitize || subitizeVisible}
+        subitizeVisible={!timedObservation || observationPhase === "observing"}
+        subitizeReady={observationPhase === "ready"}
         onCoverMemory={() => {
-          setMemoryCovered(true);
+          setObservationPhase(phase => observationTransition(phase, "hide", false));
           playTone("notice");
-          speak("遮住啦。现在想一想，再选答案。");
+          speak(ENLIGHTENMENT_COPY.hidden);
+        }}
+        onReviewMemory={answered ? undefined : () => {
+          setSelected(null);
+          setRetryMessage(null);
+          setObservationPhase(phase => observationTransition(phase, "review", false));
         }}
         onSubitizePeek={
-          shouldAutoCoverSubitize
+          timedObservation && !answered
             ? () => {
-                setSubitizeVisible(true);
+                stopSpeech();
+                setSelected(null);
+                setRetryMessage(null);
+                setObservationPhase(phase => observationTransition(phase, "start", true));
                 playTone("notice");
               }
             : undefined
         }
       />
+
+      {(round.observation || round.memory) && !answered && (
+        <p className="observation-status" aria-live="polite">
+          {observationPhase === "ready" ? ENLIGHTENMENT_COPY.ready : observationPhase === "observing" ? ENLIGHTENMENT_COPY.observing : ENLIGHTENMENT_COPY.answering}
+        </p>
+      )}
 
       <div className={`choice-grid answer-grid ${round.graphicChallenge ? "answer-grid-graphic" : ""}`}>
         {round.choices.map((choice) => {
@@ -201,7 +222,7 @@ export function ProgressiveSetGame({
               aria-label={voiceLabel}
               className={`answer-choice ${graphicOption ? "answer-choice-graphic" : ""} ${isVisualCardChoice(choice.value) ? "answer-choice-visual-card" : ""} ${active ? "active" : ""} ${correct ? "correct" : ""} ${wrong ? "wrong" : ""}`}
               data-testid={`answer-${choice.value}`}
-              disabled={answered}
+              disabled={answered || !canAnswer}
               key={choice.value}
               type="button"
               onClick={() => choose(choice.value)}
@@ -219,13 +240,13 @@ export function ProgressiveSetGame({
           从头来
         </button>
         {!answered && (
-          <button type="button" className="primary" disabled={!selected} onClick={checkAnswer} data-testid="check-answer">
+          <button type="button" className="primary" disabled={!selected || !canAnswer} onClick={checkAnswer} data-testid="check-answer">
             <span>看看对不对</span>
           </button>
         )}
         {answered && (
           <button type="button" className="primary" disabled={!isCorrect} onClick={nextRound} data-testid="next-round">
-            <span>{isLastRound ? "完成关卡" : "下一题"}</span>
+            <span>{allRoundsComplete ? "完成关卡" : isLastRound ? "去做还没完成的题" : "下一题"}</span>
             <ArrowRight size={18} />
           </button>
         )}
@@ -237,13 +258,6 @@ export function ProgressiveSetGame({
         </p>
       )}
 
-      {completedTags.length > 0 && (
-        <div className="tag-list">
-          {completedTags.map((tag) => (
-            <span key={tag}>{tag}</span>
-          ))}
-        </div>
-      )}
     </div>
   );
 }
@@ -283,7 +297,7 @@ function GraphicAnswerFigure({ letter, option }: { letter: string; option: Graph
   return (
     <span className="graphic-answer-figure">
       <span className="graphic-choice-letter" aria-hidden="true">{letter}</span>
-      <GraphicFigureSetSvg figures={option.figures ?? (option.figure ? [option.figure] : [])} />
+      <GraphicFigureSetSvg figures={option.figures ?? (option.figure ? [option.figure] : [])} framed={Boolean(option.figures)} />
     </span>
   );
 }
@@ -368,18 +382,24 @@ function RoundBoard({
   gameId,
   memoryCovered,
   subitizeVisible,
+  subitizeReady,
   round,
   onCoverMemory,
   onSubitizePeek,
+  onReviewMemory,
 }: {
   gameId: string;
   memoryCovered: boolean;
   subitizeVisible: boolean;
+  subitizeReady: boolean;
   round: GameRound;
   onCoverMemory: () => void;
   onSubitizePeek?: () => void;
+  onReviewMemory?: () => void;
 }) {
   const scene = sceneForGame(gameId);
+  const inside = round.visualGroups?.find(group => group.label === "盒子里面");
+  const outside = round.visualGroups?.find(group => group.label === "盒子外面");
   const hasOnlySceneImage = Boolean(
     round.sceneImage &&
       !round.visualGroups &&
@@ -395,12 +415,12 @@ function RoundBoard({
     round.sceneImage ? "round-board-with-image" : "",
     hasOnlySceneImage ? "round-board-image-only" : "",
     round.sceneImage && round.visualGroups ? "round-board-image-groups" : "",
+    round.sceneImage && round.sequence ? "round-board-image-sequence" : "",
     round.sceneImage && round.clockChallenge ? "round-board-clock-scene" : "",
     round.clockChallenge ? "round-board-clock" : "",
   ].filter(Boolean).join(" ");
   return (
     <section className={boardClasses} aria-label="题目画面">
-      {!round.sceneImage && !round.graphicChallenge && !round.clockChallenge && <SceneBackdrop scene={scene} />}
       {round.sceneImage && (
         <figure className="scene-image-card">
           <img src={publicAsset(round.sceneImage.src)} alt={round.sceneImage.alt} />
@@ -424,16 +444,24 @@ function RoundBoard({
       {round.matrix && <MatrixBoard cells={round.matrix.cells} />}
 
       {round.memory && (
-        <MemoryBoard covered={memoryCovered} items={round.memory.items} onCover={onCoverMemory} />
+        <MemoryBoard covered={memoryCovered} items={round.memory.items} onCover={onCoverMemory} onReview={onReviewMemory} />
       )}
 
-      {round.visualGroups && (
+      {inside && outside && <div className="containment-scene" aria-label="图卡收纳盒">
+        <div className="containment-box">
+          <div className="containment-cards">{inside.items.map(item => <VisualToken key={item} value={item} />)}</div>
+          <strong>盒子</strong>
+        </div>
+        <div className="containment-outside">{outside.items.map(item => <VisualToken key={item} value={item} />)}</div>
+      </div>}
+
+      {round.visualGroups && !(inside && outside) && (
         <div className={visualGroupClasses(round.visualGroups)}>
           {round.visualGroups.map((group) => (
             <div className="visual-group" key={group.label}>
               <strong>{group.label}</strong>
               {group.layout === "subitize" ? (
-                <SubitizeFrame items={group.items} visible={subitizeVisible} onPeek={onSubitizePeek} />
+                <SubitizeFrame key={round.id} items={group.items} visible={subitizeVisible} ready={subitizeReady} onPeek={onSubitizePeek} />
               ) : (
                 <div className={`object-row ${group.layout === "counting" ? "object-row-counting" : ""}`}>
                   {group.items.map((item, index) => (
@@ -456,10 +484,9 @@ function RoundBoard({
 function ClockChallengeBoard({ challenge, hasSceneImage }: { challenge: NonNullable<GameRound["clockChallenge"]>; hasSceneImage: boolean }) {
   const minuteHand = clockHandEndpoint(challenge.minute * 6, 78);
   const hourHand = clockHandEndpoint(((challenge.hour % 12) + challenge.minute / 60) * 30, 50);
-  const label = formatClockDisplay(challenge.hour, challenge.minute);
   const showContext = Boolean(challenge.activity && !hasSceneImage);
   return (
-    <div className={`clock-challenge-board clock-mode-${challenge.mode} ${showContext ? "clock-with-context" : "clock-no-context"}`} aria-label={`时钟显示${label}`}>
+    <div className={`clock-challenge-board clock-mode-${challenge.mode} ${showContext ? "clock-with-context" : "clock-no-context"}`} aria-label="模拟时钟">
       <div className="clock-card">
         <svg className="clock-face" viewBox="0 0 240 240" role="img" aria-label={`时针也就是短针${challenge.minute === 0 ? `指向${challenge.hour}` : `在${challenge.hour}和${challenge.hour === 12 ? 1 : challenge.hour + 1}中间`}，分针也就是长针在${challenge.minute === 0 ? "12" : "6"}`}>
           <circle className="clock-rim" cx="120" cy="120" r="104" />
@@ -494,8 +521,7 @@ function ClockChallengeBoard({ challenge, hasSceneImage }: { challenge: NonNulla
           <circle className="clock-pin" cx="120" cy="120" r="7" />
         </svg>
         <div className="clock-caption">
-          <strong>{challenge.label}</strong>
-          <span>{challenge.minute === 0 ? "先看时针（短针），再看分针（长针）在 12。" : "先看时针（短针），再看分针（长针）在 6。"}</span>
+          <span>先看时针（短针），再看分针（长针）。</span>
         </div>
       </div>
       {showContext && (
@@ -506,10 +532,6 @@ function ClockChallengeBoard({ challenge, hasSceneImage }: { challenge: NonNulla
       )}
     </div>
   );
-}
-
-function formatClockDisplay(hour: number, minute: 0 | 30) {
-  return `${String(hour).padStart(2, "0")}:${String(minute).padStart(2, "0")}`;
 }
 
 function clockLabelPosition(hour: number) {
@@ -536,7 +558,7 @@ function GraphicChallengeBoard({ challenge }: { challenge: NonNullable<GameRound
         {challenge.groups && (
           <div className="graphic-stem-groups">
             {challenge.groups.map((group, index) => (
-              <GraphicFigureGroupCard group={group} key={`${group.label ?? "group"}-${index}`} />
+              <GraphicFigureGroupCard group={group} compact={challenge.kind === "code-match"} framed={challenge.kind === "layer-overlap"} key={`${group.label ?? "group"}-${index}`} />
             ))}
           </div>
         )}
@@ -556,21 +578,21 @@ function GraphicLayerTaskFigures({ figures }: { figures: GraphicFigure[] }) {
   const [lower, upper] = figures;
   return (
     <div className="graphic-layer-task-figures">
-      {lower && <GraphicFigureGroupCard group={{ label: "1 先放这张", figures: [lower] }} />}
+      {lower && <GraphicFigureGroupCard framed group={{ label: "1 先放这张", figures: [lower] }} />}
       <div className="graphic-layer-stack-cue" aria-hidden="true">
         <span>再盖上</span>
         <strong>{"→"}</strong>
       </div>
-      {upper && <GraphicFigureGroupCard group={{ label: "2 盖上这张", figures: [upper] }} />}
+      {upper && <GraphicFigureGroupCard framed group={{ label: "2 盖上这张", figures: [upper] }} />}
     </div>
   );
 }
 
-function GraphicFigureGroupCard({ group }: { group: GraphicFigureGroup }) {
+function GraphicFigureGroupCard({ group, compact = false, framed = false }: { group: GraphicFigureGroup; compact?: boolean; framed?: boolean }) {
   return (
     <div className={`graphic-figure-group graphic-figure-group-${group.connector ?? "plain"}`}>
       {group.label && <span>{group.label}</span>}
-      <GraphicFigureSetSvg figures={group.figures} />
+      <GraphicFigureSetSvg figures={group.figures} compact={compact} framed={framed} />
     </div>
   );
 }
@@ -579,7 +601,7 @@ function GraphicFigureSvg({ figure, large = false }: { figure: GraphicFigure; la
   return <GraphicFigureSetSvg figures={[figure]} large={large} />;
 }
 
-function GraphicFigureSetSvg({ figures, large = false }: { figures: GraphicFigure[]; large?: boolean }) {
+function GraphicFigureSetSvg({ figures, large = false, compact = false, framed = false }: { figures: GraphicFigure[]; large?: boolean; compact?: boolean; framed?: boolean }) {
   const clipId = useId().replace(/:/g, "");
   const first = figures[0];
   if (!first) {
@@ -603,7 +625,8 @@ function GraphicFigureSetSvg({ figures, large = false }: { figures: GraphicFigur
     );
   }
   return (
-    <svg className={`graphic-figure ${large ? "graphic-figure-large" : ""} graphic-figure-${first.mode ?? "color"}`} viewBox="0 0 120 120" role="img" aria-hidden="true">
+    <svg className={`graphic-figure ${large ? "graphic-figure-large" : ""} ${compact ? "graphic-figure-compact" : ""} graphic-figure-${first.mode ?? "color"}`} viewBox={compact ? "0 20 120 80" : "0 0 120 120"} role="img" aria-hidden="true">
+      {framed && <rect x="2" y="2" width="116" height="116" rx="4" fill="#fffdf7" stroke="#81929b" strokeWidth="2" />}
       {figures.map((figure, index) => {
         const color = figure.mode === "shadow" ? "#242424" : figure.mode === "outline" || figure.mode === "missing" ? "rgba(255, 253, 247, 0.16)" : figure.color ?? defaultGraphicColor(figure.shape);
         const stroke = figure.mode === "shadow" ? "#242424" : "#2f3037";
@@ -743,19 +766,16 @@ function GraphicShape({ fill, shape, stroke }: { fill: string; shape: GraphicFig
 function GraphicDetailShape({ figure }: { figure: GraphicFigure }) {
   const color = figure.color ?? defaultGraphicColor(figure.shape);
   const stroke = "#2f3037";
-  switch (figure.detail) {
-    case "ear":
-      return <GraphicFigureArt figure={{ ...figure, mode: "color" }} fill={color} stroke={stroke} />;
-    case "leaf":
-      return <g transform="translate(-22 -24) scale(1.7)"><GraphicFigureArt figure={{ ...figure, mode: "color" }} fill={color} stroke={stroke} /></g>;
-    case "point":
-      return <g transform="translate(-15 -18) scale(1.65)"><GraphicFigureArt figure={{ ...figure, mode: "color" }} fill={color} stroke={stroke} /></g>;
-    case "tail":
-      return <g transform="translate(-58 -8) scale(1.7)"><GraphicFigureArt figure={{ ...figure, mode: "color" }} fill={color} stroke={stroke} /></g>;
-    case "curve":
-    default:
-      return <g transform="translate(-18 -10) scale(1.55)"><GraphicFigureArt figure={{ ...figure, mode: "color" }} fill={color} stroke={stroke} /></g>;
-  }
+  // Focus points refer to the actual registered artwork in the 120px figure plane.
+  const regions: Partial<Record<GraphicFigure["shape"], [number, number, number]>> = {
+    cat: [39, 32, 2.8], fish: [94, 62, 2.8], apple: [70, 37, 2.6],
+    pear: [66, 34, 2.6], star: [60, 29, 2.8], flower: [42, 40, 2.6],
+    "rounded-square": [30, 30, 2.6], diamond: [60, 29, 2.8],
+  };
+  const [x, y, scale] = regions[figure.shape] ?? [45, 40, 2.6];
+  return <g transform={`translate(60 60) scale(${scale}) translate(${-x} ${-y})`}>
+    <GraphicFigureArt figure={{ ...figure, mode: "color" }} fill={color} stroke={stroke} />
+  </g>;
 }
 
 function CoverMask({ cover }: { cover: NonNullable<GraphicFigure["cover"]> }) {
@@ -883,26 +903,35 @@ function CountingToken({ value }: { value: string }) {
   );
 }
 
-function SubitizeFrame({ items, visible, onPeek }: { items: string[]; visible: boolean; onPeek?: () => void }) {
+function SubitizeFrame({ items, visible, ready, onPeek }: { items: string[]; visible: boolean; ready: boolean; onPeek?: () => void }) {
+  const frame = useRef<HTMLDivElement>(null);
+  const [imagesReady, setImagesReady] = useState(false);
+  useEffect(() => {
+    const images = Array.from(frame.current?.querySelectorAll("img") ?? []);
+    const check = () => setImagesReady(images.every(img => img.complete && img.naturalWidth > 0));
+    check();
+    images.forEach(img => img.addEventListener("load", check));
+    return () => images.forEach(img => img.removeEventListener("load", check));
+  }, [items]);
   return (
-    <div className={`subitize-peek ${visible ? "" : "covered"}`}>
-      <div className="subitize-frame" aria-label="一眼看数量的点阵">
+    <div className={`subitize-peek ${visible ? "" : "covered"}`} ref={frame}>
+      <div className="subitize-frame" aria-label={visible ? "一眼看数量的点阵" : "点阵已遮住"}>
         {items.map((item, index) => {
           const meta = item ? visualMetaFor(item) : null;
           return (
             <div className={`subitize-cell ${item ? "" : "subitize-cell-empty"}`} key={`${item || "empty"}-${index}`}>
-              {item && visible && (
-                <button className="subitize-dot" type="button" onClick={() => speak(meta?.label ?? item)} aria-label={meta?.label ?? item}>
+              {item && (
+                <span className="subitize-dot" aria-hidden={!visible} style={{ visibility: visible ? "visible" : "hidden" }}>
                   {meta ? <VisualGlyph kind={meta.kind} small /> : <span aria-hidden="true">{item}</span>}
-                </button>
+                </span>
               )}
             </div>
           );
         })}
       </div>
       {!visible && onPeek && (
-        <button className="subitize-peek-button" type="button" onClick={onPeek}>
-          再看一眼
+        <button className="subitize-peek-button" type="button" onClick={onPeek} disabled={!imagesReady}>
+          {!imagesReady ? "正在准备图卡…" : ready ? ENLIGHTENMENT_COPY.prepare : ENLIGHTENMENT_COPY.peek}
         </button>
       )}
     </div>
@@ -912,10 +941,11 @@ function SubitizeFrame({ items, visible, onPeek }: { items: string[]; visible: b
 function MapCellToken({ value }: { value: string }) {
   const meta = visualMetaFor(value);
   const label = meta?.label ?? labelForVoice(value);
+  const numeric = /^\d+$/.test(value);
   return (
-    <button className={`map-cell-token ${meta ? "" : "map-cell-token-text"}`} type="button" onClick={() => speak(label)} aria-label={label}>
+    <button className={`map-cell-token ${meta ? "" : "map-cell-token-text"} ${numeric ? "map-cell-token-number" : ""}`} type="button" onClick={() => speak(label)} aria-label={label}>
       {meta ? <VisualGlyph kind={meta.kind} /> : <span className="map-cell-glyph" aria-hidden="true">{value}</span>}
-      <span className="map-cell-label">{label}</span>
+      {!numeric && <span className="map-cell-label">{label}</span>}
     </button>
   );
 }
@@ -956,7 +986,7 @@ function MemoryCardToken({ covered, value }: { covered: boolean; value: string }
   );
 }
 
-function MemoryBoard({ covered, items, onCover }: { covered: boolean; items: string[]; onCover: () => void }) {
+function MemoryBoard({ covered, items, onCover, onReview }: { covered: boolean; items: string[]; onCover: () => void; onReview?: () => void }) {
   return (
     <div className={`memory-board ${covered ? "covered" : ""}`} aria-label="记忆小相机">
       <div className="memory-card-row">
@@ -968,9 +998,10 @@ function MemoryBoard({ covered, items, onCover }: { covered: boolean; items: str
       </div>
       {!covered && (
         <button className="memory-cover-button" type="button" onClick={onCover}>
-          遮住再答
+          {ENLIGHTENMENT_COPY.hideMemory}
         </button>
       )}
+      {covered && onReview && <button className="memory-cover-button" type="button" onClick={onReview}>{ENLIGHTENMENT_COPY.reviewMemory}</button>}
     </div>
   );
 }
@@ -979,7 +1010,7 @@ function AddressGrid({ grid }: { grid: NonNullable<GameRound["grid"]> }) {
   return (
     <div
       className="address-grid"
-      style={{ "--grid-columns": grid.columns.length + 1 } as CSSProperties}
+      style={{ "--grid-columns": grid.columns.length + 1, "--grid-data-columns": grid.columns.length } as CSSProperties}
       aria-label="地址地图"
     >
       <div className="address-cell address-corner" />
@@ -1031,7 +1062,7 @@ function sceneForGame(gameId: string): SceneKind {
     "math-clock-time": "train",
     "logic-pattern-train": "train",
     "logic-sorter-switch": "sorting",
-    "logic-stop-think": "traffic",
+    "logic-stop-think": "sorting",
     "logic-order-plan": "path",
     "logic-story-evidence": "detective",
     "logic-space-bridge": "river",
@@ -1058,89 +1089,4 @@ function sceneForGame(gameId: string): SceneKind {
     "graphic-gap-close": "sorting",
   };
   return scenes[gameId] ?? "garden";
-}
-
-function SceneBackdrop({ scene }: { scene: SceneKind }) {
-  return (
-    <svg className="scene-backdrop" viewBox="0 0 720 220" aria-hidden="true">
-      <defs>
-        <filter id={`sceneCrayon-${scene}`} x="-5%" y="-10%" width="110%" height="120%">
-          <feTurbulence type="fractalNoise" baseFrequency="0.32" numOctaves="2" seed="7" result="noise" />
-          <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.55" />
-        </filter>
-      </defs>
-      <SceneBase />
-      {scene === "garden" && <GardenScene />}
-      {scene === "tray" && <TrayScene />}
-      {scene === "balance" && <BalanceScene />}
-      {scene === "blocks" && <BlocksScene />}
-      {scene === "story" && <StoryScene />}
-      {scene === "picnic" && <PicnicScene />}
-      {scene === "train" && <TrainScene />}
-      {scene === "sorting" && <SortingScene />}
-      {scene === "traffic" && <TrafficScene />}
-      {scene === "path" && <PathScene />}
-      {scene === "detective" && <DetectiveScene />}
-      {scene === "river" && <RiverScene />}
-    </svg>
-  );
-}
-
-function SceneBase() {
-  return (
-    <>
-      <rect className="scene-sky" x="0" y="0" width="720" height="220" rx="16" />
-      <path className="scene-ground" d="M0 168c95-20 162 16 249-2 115-24 191 18 283-4 76-18 129-10 188 7v51H0Z" />
-      <circle className="scene-sun" cx="660" cy="42" r="21" />
-      <path className="scene-cloud" d="M55 55c8-18 31-20 41-5 14-16 43-9 47 11 18-1 31 9 31 23H34c1-17 9-27 21-29Z" />
-    </>
-  );
-}
-
-function GardenScene() {
-  return <><path className="scene-stem" d="M96 176v-25M112 176v-31M128 176v-21" /><circle className="scene-fruit" cx="96" cy="147" r="9" /><circle className="scene-fruit" cx="112" cy="141" r="9" /><circle className="scene-fruit" cx="128" cy="151" r="9" /><path className="scene-fence" d="M508 150h150M525 132v48M565 132v48M605 132v48M645 132v48" /></>;
-}
-
-function TrayScene() {
-  return <><ellipse className="scene-table" cx="360" cy="174" rx="255" ry="28" /><rect className="scene-tray" x="500" y="122" width="120" height="46" rx="18" /><circle className="scene-dot" cx="530" cy="145" r="7" /><circle className="scene-dot" cx="562" cy="145" r="7" /><circle className="scene-dot" cx="594" cy="145" r="7" /></>;
-}
-
-function BalanceScene() {
-  return <><path className="scene-line" d="M360 82v91M300 173h120M260 110h200" /><path className="scene-pan" d="M224 111c15 39 87 39 102 0Z" /><path className="scene-pan" d="M394 111c15 39 87 39 102 0Z" /><circle className="scene-dot" cx="276" cy="133" r="7" /><circle className="scene-dot" cx="442" cy="133" r="7" /></>;
-}
-
-function BlocksScene() {
-  return <><rect className="scene-block-a" x="78" y="146" width="42" height="32" rx="6" /><rect className="scene-block-b" x="123" y="128" width="42" height="50" rx="6" /><rect className="scene-block-c" x="168" y="108" width="42" height="70" rx="6" /><rect className="scene-block-b" x="560" y="142" width="38" height="36" rx="6" /><rect className="scene-block-a" x="603" y="126" width="38" height="52" rx="6" /></>;
-}
-
-function StoryScene() {
-  return <><path className="scene-house" d="M74 113l58-43 58 43v65H74Z" /><rect className="scene-door" x="118" y="135" width="28" height="43" rx="5" /><path className="scene-path" d="M160 180c75-37 136-33 205-10 74 24 141 26 214 1" /></>;
-}
-
-function PicnicScene() {
-  return <><rect className="scene-blanket" x="98" y="128" width="140" height="58" rx="10" /><path className="scene-grid" d="M98 157h140M128 128v58M168 128v58M208 128v58" /><circle className="scene-plate" cx="562" cy="156" r="28" /><circle className="scene-dot" cx="550" cy="154" r="6" /><circle className="scene-dot" cx="574" cy="154" r="6" /></>;
-}
-
-function TrainScene() {
-  return <><path className="scene-rail" d="M65 178h590M76 194h568M125 176l-30 20M210 176l-30 20M295 176l-30 20M380 176l-30 20M465 176l-30 20M550 176l-30 20M635 176l-30 20" /><rect className="scene-car-a" x="92" y="128" width="70" height="42" rx="10" /><rect className="scene-car-b" x="172" y="116" width="78" height="54" rx="10" /><circle className="scene-wheel" cx="115" cy="174" r="9" /><circle className="scene-wheel" cx="218" cy="174" r="9" /></>;
-}
-
-function SortingScene() {
-  return <><rect className="scene-bin-a" x="78" y="128" width="72" height="56" rx="10" /><rect className="scene-bin-b" x="570" y="128" width="72" height="56" rx="10" /><circle className="scene-dot" cx="114" cy="107" r="12" /><rect className="scene-block-b" x="592" y="95" width="26" height="26" rx="5" /></>;
-}
-
-function TrafficScene() {
-  return <><path className="scene-road" d="M0 176c180-25 330-25 720 0v44H0Z" /><rect className="scene-light" x="102" y="70" width="38" height="92" rx="12" /><circle className="scene-red" cx="121" cy="94" r="9" /><circle className="scene-yellow" cx="121" cy="117" r="9" /><circle className="scene-green" cx="121" cy="140" r="9" /><path className="scene-crossing" d="M500 184h96M522 174v38M546 174v38M570 174v38" /></>;
-}
-
-function PathScene() {
-  return <><path className="scene-path" d="M72 184c76-76 169-79 272-33 104 46 181 35 304-18" /><circle className="scene-step" cx="176" cy="143" r="8" /><circle className="scene-step" cx="230" cy="136" r="8" /><circle className="scene-step" cx="284" cy="143" r="8" /><path className="scene-flag" d="M612 83v86M612 84h55v35h-55" /></>;
-}
-
-function DetectiveScene() {
-  return <><circle className="scene-lens" cx="116" cy="129" r="31" /><path className="scene-handle" d="M138 151l42 42" /><circle className="scene-print" cx="564" cy="142" r="10" /><circle className="scene-print" cx="548" cy="126" r="5" /><circle className="scene-print" cx="564" cy="121" r="5" /><circle className="scene-print" cx="580" cy="126" r="5" /></>;
-}
-
-function RiverScene() {
-  return <><path className="scene-river" d="M0 126c96-48 174 34 270-11 105-50 167 25 275-14 67-24 118-3 175 23v96H0Z" /><path className="scene-wave" d="M60 155c58-21 90 16 143-3M320 151c55-19 96 14 151-6M538 158c38-15 72 10 113-5" /><path className="scene-plank" d="M242 122h235v20H242Z" /></>;
 }

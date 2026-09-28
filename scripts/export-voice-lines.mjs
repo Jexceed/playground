@@ -1,6 +1,7 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 import { createHash } from "node:crypto";
 import { loadGameData } from "./lib/load-game-data.mjs";
+import { loadTypeScriptModule } from "./lib/load-ts-module.mjs";
 
 const { games, activitySets, activityVoiceLines } = await loadGameData();
 
@@ -130,6 +131,7 @@ function add(kind, text, context, locale="zh-CN") {
 for (const game of games) {
   add("game-title", game.title, game.id);
   add("game-goal", game.goal, game.id);
+  add("parent", game.parentPrompt, game.id);
   for (const round of game.rounds) {
     const context = `${game.id}/${round.id}`;
     add("prompt", joinVoiceLine(round.prompt, round.instruction), context);
@@ -151,6 +153,9 @@ for (const game of games) {
 }
 
 for (const line of activityVoiceLines(activitySets)) add(line.kind, line.text, line.context, line.locale);
+
+const { ENLIGHTENMENT_COPY } = await loadTypeScriptModule("src/domain/enlightenment.ts");
+for (const [key, text] of Object.entries(ENLIGHTENMENT_COPY)) add("system", text, `enlightenment-${key}`);
 
 add("system", "完成啦。我们再想一想，为什么会这样？", "game-complete");
 

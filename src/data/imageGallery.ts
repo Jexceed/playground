@@ -12,6 +12,39 @@ export type GalleryImage = {
 export const imageGallery = {
   exploration: explorationImages,
   scenes: {
+    enlightenmentBridge1: {
+      src: "/images/scenes/enlightenment-bridge-1.png",
+      alt: "桌面搭桥模型：河岸、小岛和木板按相同格距绘制，图中标出距离和可用木板长度。",
+    },
+    enlightenmentBridge2: {
+      src: "/images/scenes/enlightenment-bridge-2.png",
+      alt: "桌面搭桥模型：河岸、小岛和木板按相同格距绘制，图中标出距离和可用木板长度。",
+    },
+    enlightenmentBridge3: {
+      src: "/images/scenes/enlightenment-bridge-3.png",
+      alt: "桌面搭桥模型：河岸、小岛和木板按相同格距绘制，图中标出距离和可用木板长度。",
+    },
+    enlightenmentBridge4: {
+      src: "/images/scenes/enlightenment-bridge-4.png",
+      alt: "桌面搭桥模型：河岸、小岛和木板按相同格距绘制，图中标出距离和可用木板长度。",
+    },
+    enlightenmentBridge5: {
+      src: "/images/scenes/enlightenment-bridge-5.png",
+      alt: "桌面搭桥模型：河岸、小岛和木板按相同格距绘制，图中标出距离和可用木板长度。",
+    },
+    enlightenmentBridge6: {
+      src: "/images/scenes/enlightenment-bridge-6.png",
+      alt: "桌面搭桥模型：河岸、小岛和木板按相同格距绘制，图中标出距离和可用木板长度。",
+    },
+    enlightenmentBridge7: {
+      src: "/images/scenes/enlightenment-bridge-7.png",
+      alt: "桌面搭桥模型：河岸、小岛和木板按相同格距绘制，图中标出距离和可用木板长度。",
+    },
+    enlightenmentBridge8: {
+      src: "/images/scenes/enlightenment-bridge-8.png",
+      alt: "桌面搭桥模型：河岸、小岛和木板按相同格距绘制，图中标出距离和可用木板长度。",
+    },
+
     bridgeRiverPlanks: {
       src: "/images/scenes/bridge-river-planks.png",
       alt: "小熊站在河边，面前有长短不同的木板，对岸有一面小旗。",
@@ -156,6 +189,13 @@ export const imageGallery = {
     },
   },
   items: {
+    openDoor: { src: "/images/items/enlightenment/open-door.png", alt: "已经打开的门" },
+    setSquare: { src: "/images/items/enlightenment/set-square.png", alt: "带刻度的三角尺" },
+    soilPot: { src: "/images/items/enlightenment/soil-pot.png", alt: "只有土，还没播种的花盆" },
+    hugShoulders: { src: "/images/items/enlightenment/hug-shoulders.png", alt: "双手抱肩" },
+    touchHead: { src: "/images/items/enlightenment/touch-head.png", alt: "双手摸头" },
+    fishOnShore: { src: "/images/items/enlightenment/fish-on-shore.png", alt: "小鱼在岸边，水在旁边" },
+
     ...explorationArtImages,
     thinkingRedCircle: { src: "/images/items/thinking-symbols/red-circle.png", alt: "红色圆形" },
     thinkingRedSquare: { src: "/images/items/thinking-symbols/red-square.png", alt: "红色方形" },

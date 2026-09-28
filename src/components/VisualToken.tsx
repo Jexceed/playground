@@ -151,9 +151,13 @@ const phraseMap: Record<string, TokenMeta> = {
   "停": { label: "停", kind: "stopSign" },
   "慢慢走": { label: "慢慢走", kind: "slowRule" },
   "拍手": { label: "拍手", kind: "clap" },
+  "抱肩": { label: "抱肩", kind: "hugShoulders" },
+  "摸头": { label: "摸头", kind: "touchHead" },
   "停下等": { label: "停下等", kind: "stopSign" },
   "看到门": { label: "看到门", kind: "door" },
   "门关着": { label: "门关着", kind: "door" },
+  "门锁着": { label: "门锁着", kind: "door" },
+  "用钥匙开锁": { label: "用钥匙开锁", kind: "key" },
   "开门": { label: "开门", kind: "openDoor" },
   "进屋": { label: "进屋", kind: "home" },
   "口渴": { label: "口渴", kind: "cup" },
@@ -164,8 +168,8 @@ const phraseMap: Record<string, TokenMeta> = {
   "出门": { label: "出门", kind: "walk" },
   "倒水": { label: "倒水", kind: "pourWater" },
   "喝水": { label: "喝水", kind: "cup" },
-  "空花盆": { label: "空花盆", kind: "seed" },
-  "小鱼在岸上": { label: "小鱼在岸上", kind: "fishWater" },
+  "只有土的花盆": { label: "只有土的花盆", kind: "soilPot" },
+  "小鱼在岸上": { label: "小鱼在岸上", kind: "fishOnShore" },
   "小岛": { label: "小岛", kind: "stone" },
   "先拿杯子": { label: "先拿杯子", kind: "cup" },
   "先找钥匙": { label: "先找钥匙", kind: "key" },
@@ -334,7 +338,7 @@ function TokenButton({ compact, label, kind }: { compact?: boolean; label: strin
 function Illustration({ kind, small = false }: { kind: string; small?: boolean }) {
   const raster = rasterForKind(kind);
   if (raster) {
-    return <img className={`kid-illustration kid-avatar ${small ? "small" : ""}`} src={publicAsset(raster.src)} alt="" aria-hidden="true" />;
+    return <img className={`kid-illustration kid-avatar ${small ? "small" : ""}`} data-visual-kind={kind} style={kind === "smallStar" ? { transform: "scale(0.55)" } : undefined} src={publicAsset(raster.src)} alt="" aria-hidden="true" />;
   }
 
   return (
@@ -346,6 +350,10 @@ function Illustration({ kind, small = false }: { kind: string; small?: boolean }
 }
 
 function rasterForKind(kind: string) {
+  if (kind === "soilPot") return imageGallery.items.soilPot;
+  if (kind === "hugShoulders") return imageGallery.items.hugShoulders;
+  if (kind === "touchHead") return imageGallery.items.touchHead;
+  if (kind === "fishOnShore") return imageGallery.items.fishOnShore;
   if (kind === "patternRedDisc") return imageGallery.items.patternRedDisc;
   if (kind === "patternBlueDisc") return imageGallery.items.patternBlueDisc;
   if (kind === "patternYellowDisc") return imageGallery.items.patternYellowDisc;
@@ -387,7 +395,8 @@ function rasterForKind(kind: string) {
   if (kind === "backpack") return imageGallery.items.backpack;
   if (kind === "book") return imageGallery.items.book;
   if (kind === "pencil") return imageGallery.items.pencil;
-  if (kind === "ruler" || kind === "setSquare") return imageGallery.items.ruler;
+  if (kind === "ruler") return imageGallery.items.ruler;
+  if (kind === "setSquare") return imageGallery.items.setSquare;
   if (kind === "pencilCase") return imageGallery.items.pencilCase;
   if (kind === "waterBottle") return imageGallery.items.waterBottle;
   if (kind === "lunchBox") return imageGallery.items.lunchBox;
@@ -400,7 +409,8 @@ function rasterForKind(kind: string) {
   if (kind === "water") return imageGallery.items.water;
   if (kind === "cup") return imageGallery.items.cup;
   if (kind === "key") return imageGallery.items.key;
-  if (kind === "door" || kind === "openDoor") return imageGallery.items.door;
+  if (kind === "door") return imageGallery.items.door;
+  if (kind === "openDoor") return imageGallery.items.openDoor;
   if (kind === "box") return imageGallery.items.box;
   if (kind === "soccer") return imageGallery.items.soccer;
   if (kind === "kite") return imageGallery.items.kite;

@@ -86,9 +86,12 @@ export function App() {
   const hiddenProgressTagCount = Math.max(0, progress.abilityTags.length - visibleProgressTags.length);
 
   function completeGame(game: GameConfig) {
-    const next = addCompletion(savedProgress, game.id, game.abilityTags);
-    setProgress(next);
-    saveProgress(next);
+    setProgress(current => {
+      if (!game.rounds.every(round => current.completedRoundIds.includes(round.id))) return current;
+      const next = addCompletion(current, game.id, game.abilityTags);
+      saveProgress(next);
+      return next;
+    });
     speak("完成啦。我们再想一想，为什么会这样？");
   }
 
@@ -168,6 +171,11 @@ export function App() {
           <section className="prompt-panel">
             <p className="eyebrow">亲子提示卡</p>
             <p>{selectedGame.kind === "activitySet" ? selectedGame.rounds[requestedRoundIndex]?.parentPrompt : selectedGame.parentPrompt}</p>
+            {selectedGame.kind === "progressiveSet" && <details className="enlightenment-round-guidance">
+              <summary>本题追问</summary>
+              <p>{selectedGame.rounds[requestedRoundIndex]?.parentPrompt}</p>
+              <button type="button" onClick={() => speak(selectedGame.rounds[requestedRoundIndex].parentPrompt)}>听家长提示</button>
+            </details>}
             {selectedGame.kind === "activitySet" && <p className="activity-parent-note">先让孩子自己试，再请他说说线索和理由。提示、重看和尝试会留下记录。</p>}
             {selectedActivity && <p className="activity-parent-focus">这题练习：{selectedActivity.difficultyNote}{selectedActivity.prerequisites ? `。${selectedActivity.prerequisites}` : ""}</p>}
             {selectedActivity?.difficulty?.calibration === 'design-estimate' && <p className="activity-parent-focus">{ACTIVITY_COPY.designEstimate}</p>}
@@ -320,6 +328,7 @@ export function App() {
               game={selectedGame}
               requestedRoundIndex={requestedRoundIndex}
               requestedRoundReadKey={roundReadRequestKey}
+              completedRoundIds={completedRoundSet}
               onComplete={() => completeGame(selectedGame)}
               onRoundIndexChange={setRequestedRoundIndex}
               onRoundComplete={completeRound}

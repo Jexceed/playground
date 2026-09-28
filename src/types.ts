@@ -107,6 +107,7 @@ export type GameRound = {
   grid?: RoundGrid;
   matrix?: RoundMatrix;
   memory?: RoundMemory;
+  observation?: { durationMs: number };
   graphicChallenge?: RoundGraphicChallenge;
   clockChallenge?: RoundClockChallenge;
   choices: RoundOption[];

@@ -1,0 +1,18 @@
+Already up to date
+Done in 139ms using pnpm v11.19.0
+$ node scripts/prune-voice-assets.mjs -- --write
+{
+  "mode": "write",
+  "orphanCount": 8,
+  "deletedCount": 8,
+  "orphans": [
+    "public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-三角形在圆角方块上面对-三角形的底边挡住方块中间-纸片叠合要看后盖上去的图挡住了哪里.mp3",
+    "public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-叶子在花朵上面对-叶子的长弧线压在花瓣前面-纸片叠合要看后盖上去的图挡住了哪里.mp3",
+    "public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-圆形在星星上面对-圆形压住星星中心-只露出外面的尖角-纸片叠合要看后盖上去的图挡住了哪里.mp3",
+    "public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-圆形在菱形上面对-圆形盖住菱形中心-四个尖角还露在外面-纸片叠合要看后盖上去的图挡住了哪里.mp3",
+    "public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-圆角方块在三角形上面对-方块压住三角形中心-只露出三个尖角-纸片叠合要看后盖上去的图挡住了哪里.mp3",
+    "public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-星星在圆形上面对-星星盖住圆形中间-边上还能看到圆弧-纸片叠合要看后盖上去的图挡住了哪里.mp3",
+    "public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-花朵在叶子上面对-圆花瓣盖住叶子中间-只露出叶子尖端-纸片叠合要看后盖上去的图挡住了哪里.mp3",
+    "public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-菱形在圆形上面对-菱形边线压在圆形前面-圆弧只在外侧露出-纸片叠合要看后盖上去的图挡住了哪里.mp3"
+  ]
+}

@@ -42,7 +42,9 @@
     "test:exploration": "node --test scripts/exploration-framework.test.mjs scripts/curriculum-navigation.test.mjs scripts/activity-progress.test.mjs scripts/speech.test.mjs",
     "generate:exploration-media": "node scripts/generate-exploration-media.mjs",
     "review:exploration": "node scripts/review-exploration.mjs",
-    "audit:reference-coverage": "node scripts/audit-reference-coverage.mjs"
+    "audit:reference-coverage": "node scripts/audit-reference-coverage.mjs",
+    "test:enlightenment": "node --test scripts/enlightenment-quality.test.mjs",
+    "generate:enlightenment-media": "node scripts/generate-enlightenment-bridges.mjs && node scripts/generate-enlightenment-symbols.mjs"
   },
   "dependencies": {
     "@vitejs/plugin-react": "^5.0.0",

@@ -1,5 +1,6 @@
 import type { AbilityLevel, GameConfig, GameRound, GraphicChallengeOption, GraphicFigure, GraphicFigureGroup, WorldId } from "../types";
 import { imageGallery } from "./imageGallery";
+import { answerPositionSchedule } from "../domain/enlightenment";
 
 type RoundInput = Omit<GameRound, "id"> & { id?: string };
 
@@ -87,7 +88,7 @@ export const games: GameConfig[] = [
   makeSet({
     id: "math-story-operations",
     world: "math",
-    title: "来了，又走了",
+    title: "小鸟飞走了",
     subtitle: "看小鸟飞走以后还剩多少，先理解拿走会变少。",
     goal: "理解减法是拿走、飞走或变少。",
     parentPrompt: "请她复述：原来几只？飞走几只？还剩几只？",
@@ -154,7 +155,7 @@ export const games: GameConfig[] = [
     id: "logic-stop-think",
     world: "logic",
     title: "停一下再行动",
-    subtitle: "先听规则，再决定走、停、慢慢走或拍手。",
+    subtitle: "看色卡、听本题规则，再选择拍手、抱肩或摸头。",
     goal: "训练抑制控制和按规则行动。",
     parentPrompt: "问她：你刚才有没有想马上点？你怎么停下来的？",
     abilityTags: ["抑制控制", "规则执行", "反着来"],
@@ -343,7 +344,7 @@ export const games: GameConfig[] = [
     title: "转一转方向",
     subtitle: "看箭头按顺时针或逆时针转，猜下一张指向哪里。",
     goal: "训练旋转规律、方向顺序和工作记忆。",
-    parentPrompt: "问她：它是往右边转，还是往左边转？下一步会到哪里？",
+    parentPrompt: "问她：这次沿着钟表方向、反方向，还是两个方向轮流？下一步会到哪里？",
     abilityTags: ["旋转规律", "方向顺序", "工作记忆"],
     level: "L6",
     rounds: makeRotationDirectionRounds(),
@@ -351,8 +352,8 @@ export const games: GameConfig[] = [
   makeSet({
     id: "logic-part-whole-puzzle",
     world: "logic",
-    title: "拼图少哪块",
-    subtitle: "看完整图案和已经有的几块，找出还缺哪一块。",
+    title: "图卡少哪张",
+    subtitle: "对照完整的一组图卡，找出还缺哪张、哪张多余。",
     goal: "训练部分-整体、组合观察和排除法。",
     parentPrompt: "问她：完整图里有什么？已经有了什么？还少什么？",
     abilityTags: ["部分整体", "图形组合", "排除法"],
@@ -418,7 +419,7 @@ export const games: GameConfig[] = [
     id: "graphic-shadow-match",
     world: "graphic",
     title: "影子配对",
-    subtitle: "左边看彩色图，右边在四个黑影里找同一个轮廓。",
+    subtitle: "上面看彩色图，在下面四个黑影里找同一个轮廓。",
     goal: "训练影子配对、轮廓抽象和抗颜色干扰。",
     parentPrompt: "问她：不要看颜色，只看外边一圈，哪个黑影的耳朵、角或尾巴位置一样？",
     abilityTags: ["影子配对", "轮廓抽象", "抗颜色干扰"],
@@ -450,11 +451,11 @@ export const games: GameConfig[] = [
   makeSet({
     id: "graphic-layer-overlap",
     world: "graphic",
-    title: "透明叠叠板",
-    subtitle: "看两张透明图叠在一起后的样子，找出正确的上下关系。",
-    goal: "训练透明叠合、上下层判断和重叠区域观察。",
+    title: "纸片叠叠板",
+    subtitle: "看两张纸片叠在一起后的样子，找出正确的上下关系。",
+    goal: "训练纸片叠合、上下层判断和重叠区域观察。",
     parentPrompt: "请她说：哪一张在上面？重叠的地方挡住了谁？",
-    abilityTags: ["透明叠叠板", "上下层判断", "重叠线索"],
+    abilityTags: ["纸片叠叠板", "上下层判断", "重叠线索"],
     level: "L6",
     rounds: makeGraphicLayerOverlapRounds(),
   }),
@@ -490,6 +491,10 @@ export const worlds = [
 
 function makeSet(input: SetInput): GameConfig {
   const bucketOrdinals = new Map<number, number>();
+  const schedules = new Map<number, number[]>();
+  for (const choiceCount of new Set(input.rounds.map(round => round.choices.length))) {
+    schedules.set(choiceCount, answerPositionSchedule(input.rounds.filter(round => round.choices.length === choiceCount).length, choiceCount, `${input.id}:${choiceCount}`));
+  }
   return {
     ...input,
     kind: "progressiveSet",
@@ -497,7 +502,7 @@ function makeSet(input: SetInput): GameConfig {
       const choiceCount = round.choices.length;
       const ordinal = bucketOrdinals.get(choiceCount) ?? 0;
       bucketOrdinals.set(choiceCount, ordinal + 1);
-      const balancedRound = balanceRoundChoices(round, choiceCount > 0 ? ordinal % choiceCount : 0);
+      const balancedRound = balanceRoundChoices(round, schedules.get(choiceCount)?.[ordinal] ?? 0);
       return {
         ...balancedRound,
         id: round.id ?? `${input.id}-${index + 1}`,
@@ -572,28 +577,29 @@ function makeCountingRounds(): RoundInput[] {
       visualGroups: [{ label: `一共有几${unitOf(token)}${countNames[token]}`, items: repeat(token, count), layout: "counting" }],
       choices: numberChoices(count, 1, 10),
       answer: String(count),
-      success: `对，最后数到 ${count}，所以一共有 ${count} 个。`,
+      success: `对，最后数到 ${count}，所以一共有 ${count} ${unitOf(token)}${countNames[token]}。`,
       retry: "从左到右，一个一个点着数，不要漏掉。",
       parentPrompt: "问她：你最后说的是几？那一共有几个？",
       abilityTags: ["一一对应", "基数理解"],
     });
   }
+  const groupPositions = answerPositionSchedule(8, 3, "counting-evidence-groups");
   for (let count = 3; count <= 10; count++) {
     const token = toyTokens[count % toyTokens.length];
+    const target = groupPositions[count - 3];
+    const counts = [count - 1, count + 1];
+    counts.splice(target, 0, count);
+    const answer = "ABC"[target];
     rounds.push({
       level: count <= 5 ? "L2" : "L3",
       prompt: `找出正好有 ${count} 个的那一组。`,
       instruction: "每一组都数一数，找到和数字配对的一组。",
-      visualGroups: [
-        { label: "A", items: repeat(token, Math.max(1, count - 1)), layout: "counting" },
-        { label: "B", items: repeat(token, count), layout: "counting" },
-        { label: "C", items: repeat(token, count + 1), layout: "counting" },
-      ],
+      visualGroups: counts.map((amount, i) => ({ label: "ABC"[i], items: repeat(token, amount), layout: "counting" as const })),
       choices: [choice("A"), choice("B"), choice("C")],
-      answer: "B",
-      success: `B 组正好有 ${count} 个。`,
+      answer,
+      success: `${answer} 组正好有 ${count} 个。`,
       retry: `找最后数到 ${count} 的那一组。`,
-      parentPrompt: "问她：为什么不是 A？为什么不是 C？",
+      parentPrompt: "问她：另外两组各有几个？哪组多一个，哪组少一个？",
       abilityTags: ["数量配对"],
     });
   }
@@ -622,7 +628,8 @@ function makeSubitizeRounds(): RoundInput[] {
   return layouts.map((layout, index) => ({
     level: layout.count <= 3 ? "L2" : layout.count <= 5 ? "L3" : "L4",
     prompt: "看一眼，这里有几个？",
-    instruction: index >= coverStartIndex ? "图案会遮住，先记整体形状。" : "先看整体形状，不用一个个数。",
+    instruction: index >= coverStartIndex ? "准备好再开始。看两秒，遮住后选出数量，也可以再看一次。" : "先看整体形状，不用一个个数。",
+    observation: index >= coverStartIndex ? { durationMs: 2000 } : undefined,
     visualGroups: [{ label: "看一眼", items: subitizePattern(layout.count, layout.token, layout.variant), layout: "subitize" }],
     choices: numberChoices(layout.count, 1, 6),
     answer: String(layout.count),
@@ -715,7 +722,6 @@ function makeCompareRounds(): RoundInput[] {
 
 function makeComposeRounds(): RoundInput[] {
   const rounds: RoundInput[] = [];
-  const sceneImage = imageGallery.scenes.composeBlocksTogether;
   for (let total = 3; total <= 10; total++) {
     for (let left = 1; left < total && rounds.length < 28; left++) {
       const right = total - left;
@@ -724,7 +730,6 @@ function makeComposeRounds(): RoundInput[] {
         level: total <= 5 ? "L4" : "L5",
         prompt: `${left} 个积木和 ${right} 个积木加起来是几个？`,
         instruction: "先看两堆，再加起来数。",
-        sceneImage,
         visualGroups: [
           countingGroup("第一堆", repeat("🧱", left)),
           countingGroup("第二堆", repeat("🧱", right)),
@@ -742,7 +747,6 @@ function makeComposeRounds(): RoundInput[] {
 }
 
 function makeOperationRounds(): RoundInput[] {
-  const subtractSceneImage = imageGallery.scenes.operationBirdsFlyAway;
   const cases = [
     [2, 1], [3, 1], [4, 1], [4, 2],
     [5, 1], [5, 2], [6, 2], [6, 3],
@@ -754,7 +758,6 @@ function makeOperationRounds(): RoundInput[] {
       level: index < 6 ? "L4" as AbilityLevel : "L5" as AbilityLevel,
       prompt: `树上有 ${start} 只小鸟，飞走 ${gone} 只，还剩几只？`,
       instruction: "飞走以后，数量会变少。",
-      sceneImage: subtractSceneImage,
       visualGroups: [
         countingGroup("原来", repeat("🐦", start)),
         countingGroup("飞走", repeat("🐦", gone)),
@@ -771,7 +774,6 @@ function makeOperationRounds(): RoundInput[] {
 
 function makeShareRounds(): RoundInput[] {
   const rounds: RoundInput[] = [];
-  const sceneImage = imageGallery.scenes.fairSharePicnic;
   const shareCases = [
     [2, 2], [4, 2], [6, 2], [8, 2], [6, 3], [9, 3], [10, 5], [12, 3], [12, 4],
   ] as const;
@@ -784,7 +786,6 @@ function makeShareRounds(): RoundInput[] {
       level: index < 4 ? "L4" : index < 7 ? "L5" : "L6",
       prompt: `${countedItem(itemToken, items)}分给 ${target.label}，${target.each}一样多，${target.each}几${unitOf(itemToken)}${countNames[itemToken]}？`,
       instruction: "可以一个一个轮流分。",
-      sceneImage,
       visualGroups: [
         countingGroup("纸杯蛋糕", repeat(itemToken, items)),
         countingGroup("小朋友", repeat(personToken, people)),
@@ -802,8 +803,7 @@ function makeShareRounds(): RoundInput[] {
     rounds.push({
       level: "L6",
       prompt: `${items} 个纸杯蛋糕分给 ${people} 个小朋友，每人先一样多，最多每人几个？`,
-      instruction: "先公平分，最后可能会剩下。",
-      sceneImage,
+      instruction: "每块蛋糕不切开。先让每人一样多，最后可能会剩下。",
       visualGroups: [
         countingGroup("纸杯蛋糕", repeat("🧁", items)),
         countingGroup("小朋友", repeat("🧒", people)),
@@ -1044,37 +1044,29 @@ function makeSorterRounds(): RoundInput[] {
 }
 
 function makeStopThinkRounds(): RoundInput[] {
-  const trafficScene = imageGallery.scenes.trafficCrosswalk;
   const rules = [
-    { color: "绿灯", token: "🟢", mode: "按红绿灯走", prompt: "绿灯亮了，小朋友应该怎么做？", answer: "go", action: "走过去", level: "L3" as AbilityLevel },
-    { color: "红灯", token: "🔴", mode: "按红绿灯走", prompt: "红灯亮了，小朋友应该怎么做？", answer: "stop", action: "停下等", level: "L3" as AbilityLevel },
-    { color: "绿灯", token: "🟢", mode: "玩反口令", prompt: "现在玩反口令：绿灯亮了，小朋友应该怎么做？", answer: "stop", action: "停下等", level: "L5" as AbilityLevel },
-    { color: "红灯", token: "🔴", mode: "玩反口令", prompt: "现在玩反口令：红灯亮了，小朋友应该怎么做？", answer: "go", action: "走过去", level: "L5" as AbilityLevel },
-    { color: "绿灯", token: "🟢", mode: "绿灯慢慢走", prompt: "这次规则是：绿灯也要慢慢走。小朋友应该怎么做？", answer: "slow", action: "慢慢走", level: "L6" as AbilityLevel },
-    { color: "红灯", token: "🔴", mode: "红灯先拍手", prompt: "这次规则是：红灯亮了先拍手。小朋友应该怎么做？", answer: "clap", action: "先拍手", level: "L6" as AbilityLevel },
+    { token: "🟢", color: "绿色", rule: "绿片拍手，红片抱肩", answer: "clap", action: "拍手", level: "L3" as AbilityLevel },
+    { token: "🔴", color: "红色", rule: "绿片拍手，红片抱肩", answer: "shoulders", action: "抱肩", level: "L3" as AbilityLevel },
+    { token: "🟢", color: "绿色", rule: "换个玩法：绿片抱肩，红片拍手", answer: "shoulders", action: "抱肩", level: "L5" as AbilityLevel },
+    { token: "🔴", color: "红色", rule: "换个玩法：绿片抱肩，红片拍手", answer: "clap", action: "拍手", level: "L5" as AbilityLevel },
+    { token: "🟢", color: "绿色", rule: "再换规则：绿片摸头，红片抱肩", answer: "head", action: "摸头", level: "L6" as AbilityLevel },
+    { token: "🔴", color: "红色", rule: "再换规则：绿片摸头，红片抱肩", answer: "shoulders", action: "抱肩", level: "L6" as AbilityLevel },
   ];
   return rules.map((rule, index) => ({
     level: rule.level,
-    prompt: rule.prompt,
-    instruction: index < 2 ? "看灯的颜色，再选动作。" : "玩法变了，先停一下再想。",
-    sceneImage: trafficScene,
-    sequence: [rule.mode, rule.token, "🧒", "?"],
-    choices: [
-      { label: "走过去", value: "go" },
-      { label: "停下等", value: "stop" },
-      { label: "慢慢走", value: "slow" },
-      { label: "先拍手", value: "clap" },
-    ].slice(index < 4 ? 0 : 1, index < 4 ? 3 : 4),
+    prompt: `桌面色卡游戏：${rule.rule}。看到这张卡，做什么？`,
+    instruction: "先说本题规则，再看圆片的颜色，选好后可以一起做动作。",
+    visualGroups: [{ label: "这次的色卡", items: [rule.token] }],
+    choices: [{ label: "拍手", value: "clap" }, { label: "抱肩", value: "shoulders" }, { label: "摸头", value: "head" }],
     answer: rule.answer,
-    success: `${rule.color}亮了，小朋友要${rule.action}。`,
-    retry: "先停一下，把这次的玩法再听一遍。",
-    parentPrompt: "问她：这一次是按红绿灯走，还是玩法变了？",
+    success: `本题规则是${rule.rule}。这张是${rule.color}圆片，所以${rule.action}。`,
+    retry: "停一下，重新听本题规则。颜色没变，动作也可能变。",
+    parentPrompt: "请她先说这次的规则，再做动作。问她：刚才的规则还能直接用吗？",
     abilityTags: [index < 2 ? "规则执行" : index < 4 ? "反口令" : "工作记忆"],
   }));
 }
 
 function makeOrderRounds(): RoundInput[] {
-  const orderScenes = imageGallery.scenes;
   const orderStepLabel = (step: string) => ({
     "🧒": "小朋友",
     "🌊": "小河",
@@ -1091,25 +1083,22 @@ function makeOrderRounds(): RoundInput[] {
     {
       prompt: "小朋友口渴了，想喝水，先做什么？",
       seq: ["口渴", "?", "倒水", "喝水"],
-      sceneImage: orderScenes.snackWashHands,
       answer: "cup",
       choices: [["先拿杯子", "cup"], ["先倒水", "pour"], ["直接喝水", "drink"]],
       success: "先拿杯子，才好倒水喝水。",
       note: "2 步直接因果：判断目标前必须先做的准备动作。",
     },
     {
-      prompt: "门关着，要开门进去，先做什么？",
-      seq: ["门关着", "?", "开门", "进屋"],
-      sceneImage: orderScenes.keyDoorEntry,
+      prompt: "门锁着，钥匙已经拿到了。接下来用什么开门？",
+      seq: ["门锁着", "?", "开门", "进屋"],
       answer: "key",
-      choices: [["先找钥匙", "key"], ["先推门", "push"], ["先敲门", "knock"]],
-      success: "先找钥匙，才能开门进屋。",
+      choices: [["用钥匙开锁", "key"], ["先推门", "push"], ["先敲门", "knock"]],
+      success: "门锁着时，要用合适的钥匙开锁，再开门进屋。",
       note: "2 步必要条件：找到开门工具，再完成目标。",
     },
     {
       prompt: "小鱼在岸上，需要回到水里，先做什么？",
       seq: ["小鱼在岸上", "?", "🌊"],
-      sceneImage: orderScenes.animalHabitatPairs,
       answer: "carry",
       choices: [["轻轻放回水里", "carry"], ["继续看着", "watch"], ["拿杯子接水", "cup-water"]],
       success: "先轻轻放回水里，小鱼才安全。",
@@ -1119,18 +1108,16 @@ function makeOrderRounds(): RoundInput[] {
 
   const threeStep = [
     {
-      prompt: "花盆是空的，想让花开出来，第一步做什么？",
-      seq: ["空花盆", "?", "🌱", "🌼"],
-      sceneImage: orderScenes.plantGrowthGarden,
+      prompt: "花盆里只有土，还没有种子。想种花，先做什么？",
+      seq: ["只有土的花盆", "?", "🌱", "🌼"],
       answer: "seed",
       choices: [["种下种子", "seed"], ["只给空土浇水", "water"], ["直接等开花", "wait-flower"]],
-      success: "先种下种子，然后发芽，最后开花。",
+      success: "先种下种子，再细心照顾，才有机会发芽开花。",
       note: "3 步自然顺序：起点、变化、结果要连起来。",
     },
     {
       prompt: "吃饼干前，待补位置应该是什么？",
       seq: ["手脏", "?", "拿饼干", "吃"],
-      sceneImage: orderScenes.snackWashHands,
       answer: "wash",
       choices: [["先洗手", "wash"], ["先拿饼干", "take-cookie"], ["先吃饼干", "eat-cookie"]],
       success: "手脏了先洗手，再拿饼干吃。",
@@ -1139,7 +1126,6 @@ function makeOrderRounds(): RoundInput[] {
     {
       prompt: "积木倒了，要重新搭高，先做什么？",
       seq: ["🧱倒了", "?", "高塔"],
-      sceneImage: orderScenes.blockTowerRebuild,
       answer: "pick",
       choices: [["先捡积木", "pick"], ["先搭高塔", "build"], ["先放进盒子", "box"]],
       success: "先捡积木，再一块一块搭高。",
@@ -1151,7 +1137,6 @@ function makeOrderRounds(): RoundInput[] {
     {
       prompt: "玩具散了，想按种类收好，先做什么？",
       seq: ["玩具散了", "?", "放进盒子", "整齐"],
-      sceneImage: orderScenes.tidyPlayroomBlocks,
       answer: "sort",
       choices: [["先分类", "sort"], ["随便塞进盒子", "box"], ["重新弄乱", "mess"]],
       success: "先分类，再放进盒子，最后变整齐。",
@@ -1160,7 +1145,6 @@ function makeOrderRounds(): RoundInput[] {
     {
       prompt: "过马路时，待补位置应该是什么？",
       seq: ["路口", "?", "绿灯", "走过去"],
-      sceneImage: orderScenes.trafficCrosswalk,
       answer: "look",
       choices: [["先看灯", "look"], ["直接走过去", "walk"], ["等别人先走", "wait"]],
       success: "先看灯，等绿灯，再安全走过去。",
@@ -1169,7 +1153,6 @@ function makeOrderRounds(): RoundInput[] {
     {
       prompt: "小朋友要喝水，拿到杯子后还缺哪一步？",
       seq: ["🧒", "先拿杯子", "?", "喝水"],
-      sceneImage: orderScenes.snackWashHands,
       answer: "pour",
       choices: [["先倒水", "pour"], ["再拿一个杯子", "cup-again"], ["端空杯子过去", "empty-cup"]],
       success: "先拿杯子，再倒水，小朋友才能喝。",
@@ -1181,28 +1164,25 @@ function makeOrderRounds(): RoundInput[] {
     {
       prompt: "吃点心的流程里，待补位置应该是什么？",
       seq: ["手脏", "?", "拿盘子", "拿饼干", "吃"],
-      sceneImage: orderScenes.snackWashHands,
       answer: "wash",
       choices: [["先洗手", "wash"], ["先拿盘子", "plate"], ["先吃饼干", "eat-cookie"]],
       success: "手脏了先洗手，再拿盘子和饼干，最后吃。",
       note: "5 步生活流程：要同时记住卫生、工具和目标动作。",
     },
     {
-      prompt: "对岸有胡萝卜，中间有小河，缺少哪一步？",
+      prompt: "桌面模型里，玩具兔要沿桥面到对岸拿胡萝卜。中间还缺哪一步？",
       seq: ["小河", "?", "走过去", "🥕"],
-      sceneImage: orderScenes.bridgeRiverPlanks,
       answer: "bridge",
       choices: [["先搭桥", "bridge"], ["先走进水里", "walk-water"], ["先拿胡萝卜", "carrot"]],
       success: "有小河时先搭桥，走过去以后才能拿胡萝卜。",
       note: "5 步障碍流程：先处理障碍，再继续完成目标。",
     },
     {
-      prompt: "收拾积木到整齐，待补位置应该是什么？",
-      seq: ["🧱倒了", "先捡积木", "?", "高塔", "整齐"],
-      sceneImage: orderScenes.blockTowerRebuild,
+      prompt: "捡起的积木要按种类分别装盒。中间缺哪一步？",
+      seq: ["🧱倒了", "先捡积木", "?", "放进盒子", "整齐"],
       answer: "sort",
       choices: [["先分类", "sort"], ["先搭高塔", "build"], ["先放进盒子", "box"]],
-      success: "先捡起来，再分类，才能更容易搭好收整齐。",
+      success: "先捡起来，再按种类分好，放进对应的盒子。",
       note: "5 步计划流程：不只是先后，还要选择能降低混乱的中间步骤。",
     },
   ];
@@ -1211,16 +1191,14 @@ function makeOrderRounds(): RoundInput[] {
     {
       prompt: "上课要写字，先拿什么最合适？",
       seq: ["上课", "?", "写字"],
-      sceneImage: orderScenes.schoolbagPacking,
       answer: "pencil",
-      choices: [["铅笔", "pencil"], ["玩具车", "car"], ["帽子", "hat"]],
+      choices: [["铅笔", "pencil"], ["书本", "book"], ["尺子", "ruler"]],
       success: "写字前先拿铅笔最合适。",
       note: "2 步用途判断：先找和目标动作最直接相关的工具。",
     },
     {
       prompt: "书要带去学校，应该先放进哪里？",
       seq: ["书本", "?", "去学校"],
-      sceneImage: orderScenes.schoolbagPacking,
       answer: "bag",
       choices: [["书包", "bag"], ["饭盒", "lunch"], ["水壶", "bottle"]],
       success: "书本要先放进书包，才方便带去学校。",
@@ -1229,25 +1207,22 @@ function makeOrderRounds(): RoundInput[] {
     {
       prompt: "下雨要出门，先准备什么？",
       seq: ["下雨", "?", "出门"],
-      sceneImage: orderScenes.schoolbagPacking,
       answer: "raincoat",
       choices: [["雨衣", "raincoat"], ["帽子", "hat"], ["足球", "ball"]],
       success: "下雨出门先准备雨衣，身体才不容易淋湿。",
       note: "2 步生活条件：根据天气先准备合适物品。",
     },
     {
-      prompt: "桌上有饼干，想干净地吃，先拿什么？",
+      prompt: "手洗好了，要把散放的饼干盛好再吃，先拿什么？",
       seq: ["饼干", "?", "吃"],
-      sceneImage: orderScenes.snackWashHands,
       answer: "plate",
-      choices: [["拿盘子", "plate"], ["拿足球", "ball"], ["拿雨衣", "raincoat"]],
+      choices: [["拿盘子", "plate"], ["拿杯子", "cup"], ["拿文具盒", "pencil-case"]],
       success: "先拿盘子，再拿饼干吃更干净。",
       note: "3 步工具准备：先准备承接食物的工具。",
     },
     {
       prompt: "手上有泥，想拿点心，第一步是什么？",
       seq: ["手脏", "?", "拿饼干"],
-      sceneImage: orderScenes.snackWashHands,
       answer: "wash",
       choices: [["先洗手", "wash"], ["先拿饼干", "cookie"], ["先吃饼干", "eat"]],
       success: "手脏了先洗手，再拿点心。",
@@ -1256,7 +1231,6 @@ function makeOrderRounds(): RoundInput[] {
     {
       prompt: "杯子是空的，想喝水，先做什么？",
       seq: ["杯子", "?", "喝水"],
-      sceneImage: orderScenes.snackWashHands,
       answer: "pour",
       choices: [["先倒水", "pour"], ["再拿一个杯子", "cup-again"], ["端空杯子过去", "empty-cup"]],
       success: "空杯子要先倒水，才能喝。",
@@ -1265,7 +1239,6 @@ function makeOrderRounds(): RoundInput[] {
     {
       prompt: "路口是红灯，想安全过马路，先做什么？",
       seq: ["路口", "🔴", "?"],
-      sceneImage: orderScenes.trafficCrosswalk,
       answer: "stop",
       choices: [["停", "stop"], ["走", "go"], ["拍手", "clap"]],
       success: "红灯时先停，等能走的时候再过马路。",
@@ -1274,7 +1247,6 @@ function makeOrderRounds(): RoundInput[] {
     {
       prompt: "路口要过马路，第一步先看什么？",
       seq: ["路口", "?", "走过去"],
-      sceneImage: orderScenes.trafficCrosswalk,
       answer: "look",
       choices: [["先看灯", "look"], ["直接走过去", "walk"], ["闭眼往前走", "blind"]],
       success: "过马路前先看灯，再决定能不能走。",
@@ -1283,25 +1255,22 @@ function makeOrderRounds(): RoundInput[] {
     {
       prompt: "积木散在地上，想重新搭塔，先做什么？",
       seq: ["🧱倒了", "?", "高塔"],
-      sceneImage: orderScenes.blockTowerRebuild,
       answer: "pick",
       choices: [["先捡积木", "pick"], ["直接搭高塔", "build"], ["重新弄乱", "mess"]],
       success: "先把积木捡起来，才好重新搭塔。",
       note: "3 步修复流程：先整理材料，再完成目标。",
     },
     {
-      prompt: "河对岸有小旗，先选什么才能过河？",
+      prompt: "桌面模型里，玩具要沿桥面走到对岸小旗处。先做什么？",
       seq: ["小河", "?", "🏁"],
-      sceneImage: orderScenes.bridgeRiverPlanks,
       answer: "bridge",
       choices: [["先搭桥", "bridge"], ["直接走进水里", "walk"], ["站在岸边等", "wait"]],
       success: "小河挡住了路，要先搭桥。",
       note: "4 步障碍流程：先处理挡路条件，再去拿目标物。",
     },
     {
-      prompt: "花园里要照顾小芽，下一步做什么更合适？",
+      prompt: "花园里的小芽旁边，土已经干了。下一步做什么更合适？",
       seq: ["🌱", "?", "🌼"],
-      sceneImage: orderScenes.plantGrowthGarden,
       answer: "water",
       choices: [["先浇水", "water"], ["先摘花", "pick"], ["直接等开花", "wait"]],
       success: "小芽需要照顾，浇水以后更可能长成花。",
@@ -1310,7 +1279,6 @@ function makeOrderRounds(): RoundInput[] {
     {
       prompt: "玩具已经分好类了，下一步做什么？",
       seq: ["先分类", "?", "整齐"],
-      sceneImage: orderScenes.tidyPlayroomBlocks,
       answer: "box",
       choices: [["先放进盒子", "box"], ["重新弄乱", "mess"], ["先拿饼干", "cookie"]],
       success: "已经分类了，下一步放进盒子，房间就更整齐。",
@@ -1319,8 +1287,7 @@ function makeOrderRounds(): RoundInput[] {
   ];
 
   return [...twoStep, ...threeStep, ...fourStep, ...fiveStep, ...dailyPlans].map((scene, index) => {
-    const stepCount = Number(scene.note.match(/^(\d+)/)?.[1] ?? scene.seq.length);
-    const sceneImage = "sceneImage" in scene ? scene.sceneImage : undefined;
+    const stepCount = scene.seq.length;
     const choices = scene.choices.map(([label, value]) => ({ label, value }));
     const answerLabel = choices.find((item) => item.value === scene.answer)?.label ?? scene.answer;
     const filledSequence = scene.seq.map((step) => step === "?" ? answerLabel : orderStepLabel(step));
@@ -1328,13 +1295,12 @@ function makeOrderRounds(): RoundInput[] {
     return {
       level: index < 3 ? "L4" as AbilityLevel : index < 6 ? "L5" as AbilityLevel : "L6" as AbilityLevel,
       prompt: scene.prompt,
-      instruction: stepCount <= 2 ? "先看目标，再想第一步。" : `这是 ${stepCount} 步流程，按顺序找缺少的一步。`,
-      difficultyNote: scene.note,
-      sceneImage,
+      instruction: "按图卡从左到右，找出缺少的一步。",
+      difficultyNote: `${stepCount} 张流程图卡；${scene.note.replace(/^\d+ 步[^：]*：/, "")}`,
       sequence: scene.seq,
       choices,
       answer: scene.answer,
-      success: `按顺序是${flow}，所以缺少的是${answerLabel}。`,
+      success: `按顺序是${flow}，所以缺少的是${answerLabel}。${scene.success}`,
       retry: `先从左到右按顺序说：${flow}，再想缺少的${answerLabel}让后面能继续。`,
       parentPrompt: `请她指着图卡复述${flow}，说为什么缺少${answerLabel}。`,
       abilityTags: ["顺序推理", stepCount >= 5 ? "多步计划" : stepCount >= 4 ? "生活流程" : "两步计划"],
@@ -1359,14 +1325,14 @@ function makeStoryEvidenceRounds(): RoundInput[] {
     },
     {
       level: "L5",
-      prompt: "谁最不像拿走蛋糕的人？",
+      prompt: "比较小猫和小狗，谁身上和蛋糕直接相关的线索更少？",
       instruction: "这次用排除法。",
       sceneImage: storyScenes.cakeEvidenceKitchen,
       choices: [{ label: "小猫", value: "cat" }, { label: "小狗", value: "dog" }, { label: "两个都一样", value: "same" }],
       answer: "dog",
-      success: "小狗一直在睡觉，线索更少，所以最不像。",
+      success: "图中小狗身上没有看到奶油，比小猫少一条直接线索。但现在睡着，不代表之前一定没吃过。",
       retry: "谁有更多线索指向它？谁线索更少？",
-      parentPrompt: "问她：我们为什么先排除小狗？",
+      parentPrompt: "问她：现在睡着和一直睡着一样吗？线索少，能不能就确定没有吃？",
       abilityTags: ["排除法"],
     },
     {
@@ -1374,7 +1340,7 @@ function makeStoryEvidenceRounds(): RoundInput[] {
       prompt: "只知道“小猫在厨房”，能确定是小猫吃了吗？",
       instruction: "有些线索不够强，不能马上确定。",
       sceneImage: storyScenes.catKitchenWeakClue,
-      choices: [{ label: "证据已经够了", value: "enough" }, { label: "还需要更多线索", value: "not-yet" }, { label: "小猫肯定没偷吃", value: "cat-no" }],
+      choices: [{ label: "证据已经够了", value: "enough" }, { label: "还需要更多线索", value: "not-yet" }, { label: "小猫一定没吃", value: "cat-no" }],
       answer: "not-yet",
       success: "只在厨房还不够，需要更多证据。",
       retry: "在厨房只是线索，还不是足够的证据。",
@@ -1385,8 +1351,8 @@ function makeStoryEvidenceRounds(): RoundInput[] {
   const extra: RoundInput[] = [
     {
       level: "L4",
-      prompt: "谁刚刚玩过泥巴？",
-      instruction: "看脚印和手上的线索。",
+      prompt: "谁可能刚踩过泥地？",
+      instruction: "看脚上和地面的泥巴线索。",
       sceneImage: storyScenes.muddyPawsYard,
       choices: [{ label: "小狗", value: "dog" }, { label: "小兔", value: "rabbit" }, { label: "小猫", value: "cat" }],
       answer: "dog",
@@ -1409,15 +1375,14 @@ function makeStoryEvidenceRounds(): RoundInput[] {
     },
     {
       level: "L5",
-      prompt: "谁最不像摘花的人？",
-      instruction: "用排除法看线索。",
+      prompt: "比较小兔和小猫，谁身上和花直接相关的线索更少？",
+      instruction: "小兔拿着胡萝卜，小猫爪边有花粉。比较这些线索和花的关系。",
       sceneImage: storyScenes.flowerEvidenceGarden,
-      visualGroups: [{ label: "线索", items: ["小兔手里是胡萝卜", "小猫手上有花粉", "花旁边有猫脚印"] }],
       choices: [{ label: "小兔", value: "rabbit" }, { label: "小猫", value: "cat" }, { label: "都一样", value: "same" }],
       answer: "rabbit",
       success: "小兔拿的是胡萝卜，和花的线索更少。",
       retry: "谁和花的线索更少？",
-      parentPrompt: "问她：为什么先排除小兔？",
+      parentPrompt: "问她：小兔身上的线索少，能不能就确定它没碰过花？还需要了解什么？",
       abilityTags: ["排除法"],
     },
     {
@@ -1444,7 +1409,6 @@ function makeConditionDetectiveRounds(): RoundInput[] {
       prompt: "手脏了，能直接吃饼干吗？",
       instruction: "先看卫生条件够不够。",
       difficultyNote: "单一必要条件：目标前有一个必须先满足的条件。",
-      sceneImage: scenes.snackWashHands,
       sequence: ["手脏", "?", "拿饼干", "吃"],
       choices: [{ label: "先洗手", value: "wash" }, { label: "直接吃", value: "eat-now" }, { label: "只拿盘子", value: "plate-only" }],
       answer: "wash",
@@ -1458,7 +1422,6 @@ function makeConditionDetectiveRounds(): RoundInput[] {
       prompt: "红灯亮了，现在能走过去吗？",
       instruction: "先看安全条件够不够。",
       difficultyNote: "单一安全条件：看到信号，再决定能不能行动。",
-      sceneImage: scenes.trafficCrosswalk,
       sequence: ["路口", "🔴", "?"],
       choices: [{ label: "停", value: "stop" }, { label: "走", value: "go" }, { label: "慢慢走", value: "slow" }],
       answer: "stop",
@@ -1469,24 +1432,22 @@ function makeConditionDetectiveRounds(): RoundInput[] {
     },
     {
       level: "L4",
-      prompt: "绿灯亮了，下一步可以做什么？",
+      prompt: "行人绿灯亮了，车辆已停、路面安全。和大人一起可以做什么？",
       instruction: "条件满足了，再选择行动。",
       difficultyNote: "单一条件满足：条件够了以后，选择对应动作。",
-      sceneImage: scenes.trafficCrosswalk,
       sequence: ["路口", "🟢", "?"],
       choices: [{ label: "走过去", value: "walk" }, { label: "继续等着", value: "keep-waiting" }, { label: "等红灯再走", value: "wait-red" }],
       answer: "walk",
-      success: "绿灯亮了，可以安全走过去。",
+      success: "行人绿灯亮了，还要确认车辆已停、路面安全，再和大人一起走过去。",
       retry: "绿灯表示可以走，但还是要看路。",
       parentPrompt: "问她：条件满足以后，动作会不会改变？",
       abilityTags: ["条件判断", "规则执行"],
     },
     {
       level: "L4",
-      prompt: "宽河前只有短木板，够过河吗？",
+      prompt: "模型河宽 5 格，木板长 3 格，能搭到对岸吗？",
       instruction: "看距离和材料是否匹配。",
       difficultyNote: "单一匹配条件：材料长度要和河宽匹配。",
-      sceneImage: scenes.bridgeRiverPlanks,
       sequence: ["宽河", "短木板", "?"],
       choices: [{ label: "还不够", value: "not-enough" }, { label: "已经够了", value: "enough" }, { label: "不用木板", value: "none" }],
       answer: "not-enough",
@@ -1497,10 +1458,9 @@ function makeConditionDetectiveRounds(): RoundInput[] {
     },
     {
       level: "L5",
-      prompt: "想吃点心，已经洗手了，下一步还缺什么？",
+      prompt: "点心要先盛到盘子里再吃。手已经洗好了，下一步做什么？",
       instruction: "条件会一个接一个出现。",
       difficultyNote: "连续条件：卫生条件满足后，还要准备工具。",
-      sceneImage: scenes.snackWashHands,
       sequence: ["先洗手", "?", "拿饼干", "吃"],
       choices: [{ label: "拿盘子", value: "plate" }, { label: "再洗手", value: "wash-again" }, { label: "直接吃", value: "eat-now" }],
       answer: "plate",
@@ -1514,7 +1474,6 @@ function makeConditionDetectiveRounds(): RoundInput[] {
       prompt: "玩具散了，想变整齐，先随便塞进盒子够吗？",
       instruction: "先看这样做能不能让后面更顺。",
       difficultyNote: "整理条件：先分类会让收纳更容易，不只是随便动作。",
-      sceneImage: scenes.tidyPlayroomBlocks,
       sequence: ["玩具散了", "?", "放进盒子", "整齐"],
       choices: [{ label: "先分类", value: "sort" }, { label: "随便塞", value: "stuff" }, { label: "只拿一个", value: "one" }],
       answer: "sort",
@@ -1528,7 +1487,6 @@ function makeConditionDetectiveRounds(): RoundInput[] {
       prompt: "对岸有胡萝卜，看到小河后还缺什么？",
       instruction: "先处理障碍，再完成目标。",
       difficultyNote: "障碍条件：目标在对岸时，先补上过河条件。",
-      sceneImage: scenes.bridgeRiverPlanks,
       sequence: ["小河", "?", "🥕"],
       choices: [{ label: "先搭桥", value: "bridge" }, { label: "直接走进水里", value: "walk-water" }, { label: "站在岸边等", value: "wait-bank" }],
       answer: "bridge",
@@ -1543,7 +1501,7 @@ function makeConditionDetectiveRounds(): RoundInput[] {
       instruction: "线索不够强时，不要急着下结论。",
       difficultyNote: "弱证据判断：出现地点不是直接证据。",
       sceneImage: scenes.catKitchenWeakClue,
-      choices: [{ label: "还需要更多线索", value: "not-yet" }, { label: "证据已经够了", value: "enough" }, { label: "小猫肯定没偷吃", value: "cat-no" }],
+      choices: [{ label: "还需要更多线索", value: "not-yet" }, { label: "证据已经够了", value: "enough" }, { label: "小猫一定没吃", value: "cat-no" }],
       answer: "not-yet",
       success: "只知道在厨房还不够，还需要奶油、脚印这样的更强线索。",
       retry: "在同一个地方只是线索，不是足够证据。",
@@ -1594,11 +1552,10 @@ function makeConditionDetectiveRounds(): RoundInput[] {
       prompt: "短木板过不了宽河，下一步应该先改变什么？",
       instruction: "失败以后，先改最影响结果的条件。",
       difficultyNote: "条件调整：找出失败原因，再改关键条件。",
-      sceneImage: scenes.bridgeRiverPlanks,
       sequence: ["宽河", "短木板", "太短", "?"],
-      choices: [{ label: "把木板接长", value: "extend" }, { label: "继续用短木板", value: "same" }, { label: "换同样短木板", value: "same-short" }],
+      choices: [{ label: "换一块够长的木板", value: "extend" }, { label: "继续用短木板", value: "same" }, { label: "换同样短木板", value: "same-short" }],
       answer: "extend",
-      success: "失败原因是长度不够，所以先把木板接长。",
+      success: "失败原因是长度不够，所以先换一块够长的木板。",
       retry: "先找失败原因，再改最关键的条件。",
       parentPrompt: "问她：失败是因为颜色，还是因为长度？",
       abilityTags: ["试错调整", "条件判断"],
@@ -1616,7 +1573,6 @@ function makeFixPlanRounds(): RoundInput[] {
       prompt: "手脏了就拿饼干，错在哪里？",
       instruction: "先找少掉的必要步骤。",
       difficultyNote: "发现单一步骤错误：目标前缺少必要条件。",
-      sceneImage: scenes.snackWashHands,
       sequence: ["手脏", "拿饼干", "吃"],
       choices: [{ label: "少了先洗手", value: "missing-wash" }, { label: "少了拿盘子", value: "missing-plate" }, { label: "少了多拿饼干", value: "missing-more-cookie" }],
       answer: "missing-wash",
@@ -1630,7 +1586,6 @@ function makeFixPlanRounds(): RoundInput[] {
       prompt: "红灯亮了却走过去，应该怎么改？",
       instruction: "先看哪个动作违反了规则。",
       difficultyNote: "安全规则修正：发现错误动作并换成规则动作。",
-      sceneImage: scenes.trafficCrosswalk,
       sequence: ["路口", "🔴", "走过去"],
       choices: [{ label: "改成停", value: "stop" }, { label: "继续走", value: "keep-walk" }, { label: "等红灯再走", value: "wait-red" }],
       answer: "stop",
@@ -1641,24 +1596,22 @@ function makeFixPlanRounds(): RoundInput[] {
     },
     {
       level: "L4",
-      prompt: "绿灯亮了还一直等，哪里不合适？",
+      prompt: "行人绿灯亮了，大人已确认车辆停稳、路面安全，接下来可以怎么做？",
       instruction: "条件已经满足时，要改变动作。",
       difficultyNote: "条件满足后的行动修正：不只是停，也要在合适时行动。",
-      sceneImage: scenes.trafficCrosswalk,
       sequence: ["路口", "🟢", "停"],
       choices: [{ label: "改成走过去", value: "walk" }, { label: "继续等着", value: "keep-waiting" }, { label: "等红灯再走", value: "wait-red" }],
       answer: "walk",
-      success: "绿灯亮了，确认安全后可以走过去。",
+      success: "行人绿灯亮了，确认安全后，可以和大人一起走过去。",
       retry: "绿灯和红灯的动作不一样。",
       parentPrompt: "问她：什么时候要停？什么时候可以走？",
       abilityTags: ["规则执行", "修正计划"],
     },
     {
       level: "L4",
-      prompt: "宽河只放短木板，为什么失败？",
+      prompt: "模型里的木板另一头碰不到对岸，为什么没搭成功？",
       instruction: "先找失败原因，再想怎么改。",
       difficultyNote: "材料匹配错误：长度条件不满足。",
-      sceneImage: scenes.bridgeRiverPlanks,
       sequence: ["宽河", "短木板", "太短"],
       choices: [{ label: "木板太短", value: "too-short" }, { label: "木板太长", value: "too-long" }, { label: "河太窄", value: "too-narrow" }],
       answer: "too-short",
@@ -1669,10 +1622,9 @@ function makeFixPlanRounds(): RoundInput[] {
     },
     {
       level: "L5",
-      prompt: "洗完手又一直洗，点心还没开始，下一步怎么改？",
+      prompt: "已经洗好手，约定把饼干盛进盘子再吃。接下来做什么？",
       instruction: "已经完成的条件不用一直重复。",
       difficultyNote: "重复步骤修正：区分已经满足和还没满足的条件。",
-      sceneImage: scenes.snackWashHands,
       sequence: ["先洗手", "先洗手", "?"],
       choices: [{ label: "拿盘子", value: "plate" }, { label: "继续洗手", value: "wash-again" }, { label: "直接吃", value: "eat-now" }],
       answer: "plate",
@@ -1686,7 +1638,6 @@ function makeFixPlanRounds(): RoundInput[] {
       prompt: "玩具散了就随便塞进盒子，哪里不够好？",
       instruction: "看这样做会不会让后面更乱。",
       difficultyNote: "低效计划修正：能做不等于最合适。",
-      sceneImage: scenes.tidyPlayroomBlocks,
       sequence: ["玩具散了", "放进盒子", "整齐"],
       choices: [{ label: "先分类", value: "sort" }, { label: "继续随便塞", value: "stuff" }, { label: "只拿一个", value: "one" }],
       answer: "sort",
@@ -1700,7 +1651,6 @@ function makeFixPlanRounds(): RoundInput[] {
       prompt: "看到小河只站着等，怎样改更有用？",
       instruction: "等待不能解决障碍，要处理障碍。",
       difficultyNote: "障碍修正：把无效等待改成解决障碍的动作。",
-      sceneImage: scenes.bridgeRiverPlanks,
       sequence: ["小河", "?"],
       choices: [{ label: "先搭桥", value: "bridge" }, { label: "站在岸边等", value: "wait-bank" }, { label: "直接走进水里", value: "walk-water" }],
       answer: "bridge",
@@ -1715,7 +1665,7 @@ function makeFixPlanRounds(): RoundInput[] {
       instruction: "地点线索不等于强证据。",
       difficultyNote: "结论过早修正：从确定改成还不能确定。",
       sceneImage: scenes.catKitchenWeakClue,
-      choices: [{ label: "还需要更多线索", value: "not-yet" }, { label: "证据已经够了", value: "enough" }, { label: "小猫肯定没偷吃", value: "cat-no" }],
+      choices: [{ label: "还需要更多线索", value: "not-yet" }, { label: "证据已经够了", value: "enough" }, { label: "小猫一定没吃", value: "cat-no" }],
       answer: "not-yet",
       success: "错在太早下结论，只在厨房还不能确定。",
       retry: "还缺奶油、脚印这样的更强线索。",
@@ -1753,7 +1703,6 @@ function makeFixPlanRounds(): RoundInput[] {
       prompt: "短木板失败后，又换一块同样短的，问题解决了吗？",
       instruction: "改法要针对失败原因。",
       difficultyNote: "无效修正识别：改了东西，但没有改关键条件。",
-      sceneImage: scenes.bridgeRiverPlanks,
       sequence: ["宽河", "短木板", "太短", "短木板"],
       choices: [{ label: "还没解决", value: "not-fixed" }, { label: "已经解决", value: "fixed" }, { label: "不用改变", value: "no-change" }],
       answer: "not-fixed",
@@ -1764,11 +1713,10 @@ function makeFixPlanRounds(): RoundInput[] {
     },
     {
       level: "L6",
-      prompt: "玩具已经分类了，却又全倒在地上，下一步怎么改？",
+      prompt: "玩具已经按种类分好了，盒子也打开了。下一步怎么做？",
       instruction: "保留已经做好的部分，再继续完成。",
       difficultyNote: "保护成果修正：不要破坏已经完成的中间条件。",
-      sceneImage: scenes.tidyPlayroomBlocks,
-      sequence: ["玩具散了", "先分类", "玩具散了"],
+      sequence: ["玩具散了", "先分类", "?"],
       choices: [{ label: "放进盒子", value: "box" }, { label: "重新弄乱", value: "mess" }, { label: "只拿一个", value: "one" }],
       answer: "box",
       success: "已经分类了，接着放进盒子就好。",
@@ -1789,7 +1737,6 @@ function makePriorityChoiceRounds(): RoundInput[] {
       prompt: "手脏了，桌上有盘子和饼干，先处理哪一个？",
       instruction: "先看哪个条件最影响后面能不能做。",
       difficultyNote: "单一优先级：先处理卫生条件，再处理工具和食物。",
-      sceneImage: scenes.snackWashHands,
       sequence: ["手脏", "拿盘子", "拿饼干", "吃"],
       choices: [{ label: "先洗手", value: "wash" }, { label: "先拿盘子", value: "plate" }, { label: "先拿饼干", value: "cookie" }],
       answer: "wash",
@@ -1803,7 +1750,6 @@ function makePriorityChoiceRounds(): RoundInput[] {
       prompt: "路口到了，前面有斑马线和信号灯，先看什么？",
       instruction: "先找决定能不能走的信号。",
       difficultyNote: "安全优先：先看规则信号，再行动。",
-      sceneImage: scenes.trafficCrosswalk,
       sequence: ["路口", "?", "走过去"],
       choices: [{ label: "先看灯", value: "look-light" }, { label: "先走过去", value: "walk" }, { label: "先看书包", value: "backpack" }],
       answer: "look-light",
@@ -1814,10 +1760,9 @@ function makePriorityChoiceRounds(): RoundInput[] {
     },
     {
       level: "L4",
-      prompt: "宽河前有短木板和长木板，先选哪一个？",
+      prompt: "模型河宽 4 格，长板 5 格、短板 2 格，哪块能搭到对岸？",
       instruction: "先选最可能满足距离条件的材料。",
       difficultyNote: "关键材料优先：先选最可能解决问题的材料。",
-      sceneImage: scenes.bridgeRiverPlanks,
       sequence: ["宽河", "短木板", "长木板", "🏁"],
       choices: [{ label: "先选长木板", value: "long" }, { label: "先选短木板", value: "short" }, { label: "先选小石头", value: "stone" }],
       answer: "long",
@@ -1831,7 +1776,6 @@ function makePriorityChoiceRounds(): RoundInput[] {
       prompt: "玩具散了，盒子也打开了，先做什么更顺？",
       instruction: "先让后面的收纳更有顺序。",
       difficultyNote: "整理优先：先建立分类，再放进盒子。",
-      sceneImage: scenes.tidyPlayroomBlocks,
       sequence: ["玩具散了", "放进盒子", "整齐"],
       choices: [{ label: "先分类", value: "sort" }, { label: "先随便塞", value: "stuff" }, { label: "先拿一个玩", value: "play-one" }],
       answer: "sort",
@@ -1845,7 +1789,6 @@ function makePriorityChoiceRounds(): RoundInput[] {
       prompt: "想拿对岸胡萝卜，可是中间有小河，先处理什么？",
       instruction: "目标很清楚，但先要处理挡路的问题。",
       difficultyNote: "障碍优先：目标在后面，先处理阻碍目标的条件。",
-      sceneImage: scenes.bridgeRiverPlanks,
       sequence: ["小河", "🥕"],
       choices: [{ label: "先搭桥", value: "bridge" }, { label: "先拿胡萝卜", value: "carrot" }, { label: "站在岸边等", value: "wait" }],
       answer: "bridge",
@@ -1856,10 +1799,9 @@ function makePriorityChoiceRounds(): RoundInput[] {
     },
     {
       level: "L5",
-      prompt: "点心流程里，已经洗手了，盘子和饼干都在，先拿什么？",
+      prompt: "手已洗好，要把饼干盛进盘子再吃。盘子还没拿，下一步先做什么？",
       instruction: "已经满足的条件不用重复，接着看工具。",
       difficultyNote: "连续优先级：跳过已完成条件，选择下一关键步骤。",
-      sceneImage: scenes.snackWashHands,
       sequence: ["先洗手", "?", "拿饼干", "吃"],
       choices: [{ label: "拿盘子", value: "plate" }, { label: "再洗手", value: "wash-again" }, { label: "直接吃", value: "eat-now" }],
       answer: "plate",
@@ -1873,7 +1815,6 @@ function makePriorityChoiceRounds(): RoundInput[] {
       prompt: "过马路时，小朋友想走，车停着，但灯是红的，先听谁的？",
       instruction: "多个线索里，先看最明确的规则。",
       difficultyNote: "规则优先：有多个线索时，先按信号灯规则行动。",
-      sceneImage: scenes.trafficCrosswalk,
       sequence: ["路口", "🔴", "走过去"],
       choices: [{ label: "先按红灯停", value: "red-stop" }, { label: "先跟小朋友走", value: "child-go" }, { label: "只看车停着", value: "car-stop" }],
       answer: "red-stop",
@@ -1910,14 +1851,13 @@ function makePriorityChoiceRounds(): RoundInput[] {
     },
     {
       level: "L6",
-      prompt: "短木板失败后，有两种改法：换同样短的，或把木板接长，先选哪个？",
+      prompt: "短木板失败后，有两种改法：换同样短的，或换一块够长的木板，先选哪个？",
       instruction: "先改真正导致失败的条件。",
       difficultyNote: "失败原因优先：修正要针对关键失败原因。",
-      sceneImage: scenes.bridgeRiverPlanks,
       sequence: ["宽河", "短木板", "太短", "?"],
-      choices: [{ label: "把木板接长", value: "extend" }, { label: "换同样短木板", value: "same-short" }, { label: "继续用短木板", value: "same" }],
+      choices: [{ label: "换一块够长的木板", value: "extend" }, { label: "换同样短木板", value: "same-short" }, { label: "继续用短木板", value: "same" }],
       answer: "extend",
-      success: "失败原因是太短，所以先把木板接长。",
+      success: "失败原因是太短，所以先换一块够长的木板。",
       retry: "没有改长度，问题就还在。",
       parentPrompt: "问她：哪一种改法真的改变了失败原因？",
       abilityTags: ["试错调整", "关键条件"],
@@ -1927,7 +1867,6 @@ function makePriorityChoiceRounds(): RoundInput[] {
       prompt: "玩具已经分类了，接下来有两个选择：放进盒子或重新分一遍，先做哪个？",
       instruction: "保留已经完成的成果，继续向目标走。",
       difficultyNote: "保护成果优先：不重复已经完成的中间步骤。",
-      sceneImage: scenes.tidyPlayroomBlocks,
       sequence: ["玩具散了", "先分类", "?"],
       choices: [{ label: "放进盒子", value: "box" }, { label: "重新分类", value: "sort-again" }, { label: "重新弄乱", value: "mess" }],
       answer: "box",
@@ -1955,7 +1894,6 @@ function makePriorityChoiceRounds(): RoundInput[] {
 }
 
 function makeRuleFilterRounds(): RoundInput[] {
-  const scene = imageGallery.scenes.schoolbagPacking;
   const rounds: RoundInput[] = [
     {
       id: "school-day-book",
@@ -1963,7 +1901,6 @@ function makeRuleFilterRounds(): RoundInput[] {
       prompt: "今天去上课，只能先装一样学习用品，选哪一个？",
       instruction: "先听规则：学习用品。",
       difficultyNote: "单条件筛选：只按用途判断，先排除玩具和衣物。",
-      sceneImage: scene,
       visualGroups: [{ label: "桌上物品", items: ["书本", "玩具车", "雨衣"] }],
       choices: choiceSet(["书本", "玩具车", "雨衣"]),
       answer: "书本",
@@ -1975,15 +1912,14 @@ function makeRuleFilterRounds(): RoundInput[] {
     {
       id: "school-day-pencil-case",
       level: "L4",
-      prompt: "老师说先装能写字用的东西，选哪一个？",
-      instruction: "先找和写字最直接相关的物品。",
+      prompt: "老师让大家把铅笔收好，先装能放铅笔的东西，选哪一个？",
+      instruction: "先找能把铅笔收在里面的物品。",
       difficultyNote: "单条件筛选：在学习用品里继续按功能细分。",
-      sceneImage: scene,
       visualGroups: [{ label: "桌上物品", items: ["文具盒", "书本", "帽子"] }],
       choices: choiceSet(["文具盒", "书本", "帽子"]),
       answer: "文具盒",
-      success: "文具盒里放笔，和写字最直接相关。",
-      retry: "书本也是学习用品，但这次规则是能写字用。",
+      success: "文具盒用来收铅笔。盒子本身不能写字，要用里面的笔。",
+      retry: "书本也是学习用品，但这次要找能收铅笔的容器。",
       parentPrompt: "问她：书本为什么接近答案，但不是这题的答案？",
       abilityTags: ["功能判断", "排除干扰"],
     },
@@ -1993,7 +1929,6 @@ function makeRuleFilterRounds(): RoundInput[] {
       prompt: "要去户外晒太阳，先选能戴在头上的东西，选哪一个？",
       instruction: "先听位置规则：戴在头上。",
       difficultyNote: "单条件筛选：按使用位置判断。",
-      sceneImage: scene,
       visualGroups: [{ label: "桌上物品", items: ["帽子", "水壶", "书本"] }],
       choices: choiceSet(["帽子", "水壶", "书本"]),
       answer: "帽子",
@@ -2008,7 +1943,6 @@ function makeRuleFilterRounds(): RoundInput[] {
       prompt: "外面下雨了，先装防雨用的东西，选哪一个？",
       instruction: "先按天气规则选。",
       difficultyNote: "生活场景筛选：把天气条件和物品用途连起来。",
-      sceneImage: scene,
       visualGroups: [{ label: "桌上物品", items: ["雨衣", "帽子", "饭盒"] }],
       choices: choiceSet(["雨衣", "帽子", "饭盒"]),
       answer: "雨衣",
@@ -2023,7 +1957,6 @@ function makeRuleFilterRounds(): RoundInput[] {
       prompt: "路上会口渴，先装能喝水用的东西，选哪一个？",
       instruction: "先按需求找物品。",
       difficultyNote: "需求筛选：把身体需求和具体工具对应。",
-      sceneImage: scene,
       visualGroups: [{ label: "桌上物品", items: ["水壶", "饭盒", "文具盒"] }],
       choices: choiceSet(["水壶", "饭盒", "文具盒"]),
       answer: "水壶",
@@ -2038,7 +1971,6 @@ function makeRuleFilterRounds(): RoundInput[] {
       prompt: "中午要吃点心，先装能放食物的东西，选哪一个？",
       instruction: "先找和食物直接相关的物品。",
       difficultyNote: "功能筛选：从相近生活用品里选正确功能。",
-      sceneImage: scene,
       visualGroups: [{ label: "桌上物品", items: ["饭盒", "水壶", "玩具车"] }],
       choices: choiceSet(["饭盒", "水壶", "玩具车"]),
       answer: "饭盒",
@@ -2053,7 +1985,6 @@ function makeRuleFilterRounds(): RoundInput[] {
       prompt: "今天上课，规则是：要学习用品，不要玩具。选哪一个？",
       instruction: "先保留符合规则的，再排除玩具。",
       difficultyNote: "正反双规则：既要满足类别，又要避开排除项。",
-      sceneImage: scene,
       visualGroups: [{ label: "桌上物品", items: ["文具盒", "玩具车", "饭盒"] }],
       choices: choiceSet(["文具盒", "玩具车", "饭盒"]),
       answer: "文具盒",
@@ -2065,14 +1996,13 @@ function makeRuleFilterRounds(): RoundInput[] {
     {
       id: "outside-not-food",
       level: "L5",
-      prompt: "要去操场，规则是：带户外用的，不带食物。选哪一个？",
-      instruction: "先看是不是户外用，再看是不是食物类。",
+      prompt: "要去操场晒太阳，规则是：带遮阳用的，不带装点心的盒子。选哪一个？",
+      instruction: "先看能不能遮阳，再排除装点心的容器。",
       difficultyNote: "双条件筛选：在出门物品中排除食物干扰。",
-      sceneImage: scene,
       visualGroups: [{ label: "桌上物品", items: ["帽子", "饭盒", "书本"] }],
       choices: choiceSet(["帽子", "饭盒", "书本"]),
       answer: "帽子",
-      success: "帽子适合户外，饭盒和食物有关，书本不是户外优先物品。",
+      success: "帽子适合戴着遮阳；饭盒用来装点心，被本题规则排除。",
       retry: "不要只看能不能带走，要看是不是户外用。",
       parentPrompt: "问她：饭盒为什么相关，但被第二条规则排除了？",
       abilityTags: ["多条件判断", "生活场景"],
@@ -2083,7 +2013,6 @@ function makeRuleFilterRounds(): RoundInput[] {
       prompt: "下雨出门，规则是：能穿在身上，还能防雨。选哪一个？",
       instruction: "两个条件都要满足。",
       difficultyNote: "交集判断：同时满足穿戴和防雨两个条件。",
-      sceneImage: scene,
       visualGroups: [{ label: "桌上物品", items: ["雨衣", "帽子", "水壶"] }],
       choices: choiceSet(["雨衣", "帽子", "水壶"]),
       answer: "雨衣",
@@ -2095,15 +2024,14 @@ function makeRuleFilterRounds(): RoundInput[] {
     {
       id: "small-hard-safe",
       level: "L5",
-      prompt: "书包空间小，规则是：小小的、硬硬的学习用品。选哪一个？",
-      instruction: "先看学习用品，再看大小和形状。",
-      difficultyNote: "多特征筛选：用途、大小和触感特征同时判断。",
-      sceneImage: scene,
+      prompt: "要把铅笔收好，规则是：能装铅笔，还能合上防止散落。选哪一个？",
+      instruction: "两个条件都要满足：装得进去，也能关好。",
+      difficultyNote: "双条件筛选：既能收铅笔，又能关好防止散落。",
       visualGroups: [{ label: "桌上物品", items: ["文具盒", "书本", "雨衣"] }],
       choices: choiceSet(["文具盒", "书本", "雨衣"]),
       answer: "文具盒",
-      success: "文具盒是学习用品，也比书本更小、更适合先放进小空间。",
-      retry: "书本也是学习用品，但这次还有小小的、硬硬的条件。",
+      success: "文具盒可以装铅笔，也能关好，两个条件都满足。",
+      retry: "书本也是学习用品，但它不是收纳铅笔的盒子。",
       parentPrompt: "问她：如果只说学习用品，书本可不可以？为什么这题不选它？",
       abilityTags: ["多特征观察", "规则筛选"],
     },
@@ -2113,7 +2041,6 @@ function makeRuleFilterRounds(): RoundInput[] {
       prompt: "刚才规则是学习用品，现在换成“能补充水分”。选哪一个？",
       instruction: "规则换了，答案也可能换。",
       difficultyNote: "规则切换：抑制旧规则，按新规则重新筛选。",
-      sceneImage: scene,
       visualGroups: [{ label: "桌上物品", items: ["书本", "文具盒", "水壶"] }],
       choices: choiceSet(["水壶", "书本", "文具盒"]),
       answer: "水壶",
@@ -2128,7 +2055,6 @@ function makeRuleFilterRounds(): RoundInput[] {
       prompt: "规则是：可以玩，但今天不能带去学校。谁应该留下？",
       instruction: "这次不是选要装的，而是选应该留下的。",
       difficultyNote: "反向筛选：根据禁止条件选出不该带的物品。",
-      sceneImage: scene,
       visualGroups: [{ label: "桌上物品", items: ["玩具车", "书本", "水壶"] }],
       choices: choiceSet(["玩具车", "书本", "水壶"]),
       answer: "玩具车",
@@ -2140,30 +2066,28 @@ function makeRuleFilterRounds(): RoundInput[] {
     {
       id: "two-true-one-better",
       level: "L6",
-      prompt: "远足时口渴又要吃点心，书包只能先装一样，先装哪个更急？",
+      prompt: "远足出发前已经口渴了，点心等到休息时再吃。先拿哪个？",
       instruction: "两个都相关时，先看更急的需求。",
       difficultyNote: "优先级筛选：多个相关选项里判断当前最关键需求。",
-      sceneImage: scene,
       visualGroups: [{ label: "桌上物品", items: ["水壶", "饭盒", "玩具车"] }],
       choices: choiceSet(["水壶", "饭盒", "玩具车"]),
       answer: "水壶",
-      success: "远足路上随时会口渴，水壶比饭盒更急，玩具车不符合任务。",
-      retry: "饭盒也相关，但题目问只能先装一样，先处理更急的。",
+      success: "现在已经口渴，先拿装好水的水壶；点心还没到吃的时候。",
+      retry: "比较现在的需要和稍后的需要：已经口渴了，点心等休息时再吃。",
       parentPrompt: "问她：水壶和饭盒都相关时，你怎么决定先后？",
       abilityTags: ["优先级判断", "多条件判断"],
     },
     {
       id: "exclude-almost-right",
       level: "L6",
-      prompt: "规则是：装进书包后马上能在课堂上用。选哪一个？",
-      instruction: "排除看起来能带、但课堂上不马上用的东西。",
+      prompt: "下一节是阅读课，要翻开来看故事。先装哪一个？",
+      instruction: "按这节课的任务选，要能翻开读故事。",
       difficultyNote: "近似干扰筛选：错误项都能带出门，但不符合课堂即时用途。",
-      sceneImage: scene,
       visualGroups: [{ label: "桌上物品", items: ["书本", "水壶", "帽子"] }],
       choices: choiceSet(["书本", "水壶", "帽子"]),
       answer: "书本",
-      success: "书本能马上在课堂上用，水壶和帽子虽然能带，但不是课堂马上用的东西。",
-      retry: "三个都能带出门，但只有一个符合课堂马上用。",
+      success: "书本可以翻开读故事；水壶和帽子也能带去学校，但不符合阅读任务。",
+      retry: "三个都能带出门，但要找可以翻开阅读的那个。",
       parentPrompt: "问她：这三个哪里都相关？哪一个最符合完整规则？",
       abilityTags: ["近似干扰", "规则筛选"],
     },
@@ -2373,7 +2297,7 @@ function makeRelationPairRounds(): RoundInput[] {
     {
       id: "two-containers",
       level: "L6",
-      prompt: "两个东西都能装，饼干更适合放进哪一个？",
+      prompt: "这三个东西都能装物品，饼干更适合放进哪一个？",
       instruction: "先找内容是什么，再决定搭档。",
       difficultyNote: "相近干扰：两个选项都是容器，需要按内容细分。",
       visualGroups: [
@@ -2389,7 +2313,7 @@ function makeRelationPairRounds(): RoundInput[] {
     {
       id: "not-same-kind",
       level: "L6",
-      prompt: "谁和文具盒是“装在里面”的关系？",
+      prompt: "谁通常装在文具盒里面？",
       instruction: "不要只看同类，要看题目问的关系。",
       difficultyNote: "关系优先：在同类干扰中排除不符合关系的选项。",
       visualGroups: [
@@ -2422,16 +2346,16 @@ function makeRelationPairRounds(): RoundInput[] {
     {
       id: "best-reason",
       level: "L6",
-      prompt: "小鸟和谁的关系最稳定？",
-      instruction: "先想小鸟最稳定的活动地方。",
+      prompt: "要配成“动物和它飞行的地方”，小鸟应该配谁？",
+      instruction: "这次找飞行的地方，不是找另一个会飞的东西。",
       difficultyNote: "解释型配对：相近选项都相关，需要说出更稳定的关系。",
       visualGroups: [
         { label: "目标", items: ["小鸟"] },
       ],
       choices: choiceSet(["天空", "风筝", "小河"]),
       answer: "天空",
-      success: "风筝也在天上，但小鸟和天空的关系更稳定：小鸟在天空飞。",
-      retry: "不要只看谁靠得近或谁都在天上，要找最稳定的生活关系。",
+      success: "小鸟在天空飞。风筝也会在天上，但它是物品，不是飞行的地方。",
+      retry: "题目要找地方。风筝和小鸟都会飞，但风筝不是地方。",
       parentPrompt: "问她：风筝为什么也相关？为什么最后还是选天空？",
       abilityTags: ["证据解释", "相近干扰"],
     },
@@ -2441,115 +2365,68 @@ function makeRelationPairRounds(): RoundInput[] {
 }
 
 function makeBridgeRounds(): RoundInput[] {
-  const bridgePlankScene = imageGallery.scenes.bridgeRiverPlanks;
-  const bridgeNarrowScene = imageGallery.scenes.bridgeNarrowRiver;
-  const bridgeWideScene = imageGallery.scenes.bridgeWideRiver;
-  const bridgeTwoPlanksScene = imageGallery.scenes.bridgeTwoPlanks;
-  const bridgeIslandScene = imageGallery.scenes.bridgeIslandStep;
-  const rounds: RoundInput[] = [
+  const cases = [
     {
-      level: "L3",
-      prompt: "小熊要搭桥，先看什么再选木板？",
-      instruction: "先比较河面的距离和木板的长度，再判断够不够。",
-      sceneImage: bridgeNarrowScene,
-      sequence: ["🐻", "🌊", "长木板", "短木板", "🏁"],
-      choices: [{ label: "河有多宽", value: "river-width" }, { label: "先拿看起来最长的", value: "guess-longest" }, { label: "先试离手最近的", value: "try-nearest" }],
-      answer: "river-width",
-      success: "对，先看河有多宽，才知道哪块木板够长。",
-      retry: "搭桥不是先看好不好看，要先看距离够不够。",
-      parentPrompt: "问她：如果不看河宽，可能会选错什么？",
-      abilityTags: ["空间判断"],
+      prompt: "想选一块能搭过去的木板，先看哪个距离决定它至少要多长？",
+      choices: [["两岸之间的距离", "river-width"], ["小熊到木板的距离", "guess-longest"], ["木板到小旗的距离", "try-nearest"]],
+      answer: "river-width", scene: imageGallery.scenes.enlightenmentBridge1,
+      reason: "木板要跨过两岸之间的空隙，所以先比较这段距离和木板长度。",
     },
     {
-      level: "L5",
-      prompt: "河变宽了，一块木板不够。怎么办？",
-      instruction: "比较一块木板和两块接起来的总长度，哪一种能碰到两岸？",
-      sceneImage: bridgeWideScene,
-      sequence: ["🐻", "宽河", "?", "🏁"],
-      choices: [{ label: "用两块木板接起来", value: "two-planks" }, { label: "换一块同样长的", value: "same-length" }, { label: "把两块木板分开放", value: "separate" }],
-      answer: "two-planks",
-      success: "两块木板接起来，长度才够。",
-      retry: "一块不够时，可以想怎么合起来。",
-      parentPrompt: "问她：两块合起来会不会比一块更长？",
-      abilityTags: ["规划"],
+      prompt: "模型河宽 6 格，中间有小岛。两段各宽 3 格，怎样搭过去？",
+      choices: [["两块 4 格木板，各搭一段", "two-planks"], ["只用一块 4 格木板跨整条河", "same-length"], ["两块都放在同一岸边", "separate"]],
+      answer: "two-planks", scene: imageGallery.scenes.enlightenmentBridge2,
+      reason: "4 格木板够跨 3 格。用小岛做支点，一块搭左段，一块搭右段，两段才都连通。",
     },
     {
-      level: "L6",
-      prompt: "只能用 2 块木板，哪种计划更好？",
-      instruction: "把每种两块木板的组合都和河宽比一比。",
-      sceneImage: bridgeTwoPlanksScene,
-      visualGroups: [
-        { label: "木板", items: ["长", "短", "太短"] },
-        { label: "限制", items: ["只能用2块"] },
-      ],
-      choices: [{ label: "长 + 短", value: "long-short" }, { label: "短 + 太短", value: "short-tiny" }, { label: "太短 + 太短", value: "tiny-tiny" }],
-      answer: "long-short",
-      success: "长木板加短木板更可能够到对岸。",
-      retry: "只能用两块，要先选更有用的木板。",
-      parentPrompt: "问她：你是先随便试，还是先想哪个更可能成功？",
-      abilityTags: ["试错调整"],
+      prompt: "小岛两边分别宽 4 格和 2 格。只用两块，哪组能各搭一段？",
+      choices: [["长木板和短木板", "long-short"], ["短木板和最短板", "short-tiny"], ["只用长木板", "long-only"]],
+      answer: "long-short", scene: imageGallery.scenes.enlightenmentBridge3,
+      reason: "5 格长板搭 4 格那段，3 格短板搭 2 格那段。1 格板连较短的一段也不够。",
+    },
+    {
+      prompt: "模型河宽 3 格，中间没有支点。哪块木板能一次搭到对岸？",
+      choices: [["长木板", "long"], ["短木板", "short"], ["最短板", "tiny"]],
+      answer: "long", scene: imageGallery.scenes.enlightenmentBridge4,
+      reason: "4 格长木板能跨过 3 格的河；2 格和 1 格都碰不到对岸。",
+    },
+    {
+      prompt: "模型河宽 7 格，小岛两边分别宽 3 格和 4 格，怎样连通两岸？",
+      choices: [["两块木板分别搭小岛两边", "two-planks"], ["只用 5 格长木板跨整条河", "long-only"], ["只用 4 格短木板跨整条河", "short-only"]],
+      answer: "two-planks", scene: imageGallery.scenes.enlightenmentBridge5,
+      reason: "一块板跨不过 7 格。让 5 格板搭 4 格那段，4 格板搭 3 格那段，就能利用小岛连通。",
+    },
+    {
+      prompt: "小岛两边分别宽 5 格和 3 格。只能用两块，哪组的长度都够？",
+      choices: [["长木板和短木板", "long-short"], ["短木板和最短板", "short-tiny"], ["只用长木板", "long-only"]],
+      answer: "long-short", scene: imageGallery.scenes.enlightenmentBridge6,
+      reason: "6 格长板搭 5 格那段，4 格短板搭 3 格那段。只看总长度不够，还要每段都够长。",
+    },
+    {
+      prompt: "模型河宽 4 格，没有小岛。小熊拿哪块木板能搭到对岸？",
+      choices: [["5 格长木板", "long"], ["2 格短木板", "short"], ["1 格最短板", "tiny"]],
+      answer: "long", scene: imageGallery.scenes.enlightenmentBridge7,
+      reason: "5 格木板能跨过 4 格。另两块都太短，不能只看离手近就选。",
+    },
+    {
+      prompt: "小岛两边分别宽 3 格和 5 格。长短两块木板，应该怎样放？",
+      choices: [["短板搭左段，长板搭右段", "two-planks"], ["只用长木板跨整条河", "long-only"], ["长板搭左段，短板搭右段", "reversed"]],
+      answer: "two-planks", scene: imageGallery.scenes.enlightenmentBridge8,
+      reason: "左段 3 格用 4 格短板，右段 5 格用 6 格长板。反过来，短板就跨不过右段。",
     },
   ];
-  const variants = [
-    {
-      prompt: "图里的河虽然不宽，但短木板仍碰不到对岸。哪块木板能搭过去？",
-      sceneImage: bridgeNarrowScene,
-      animal: "🐻",
-      seq: ["小河", "?", "🏁"],
-      answer: "long",
-      choices: [{ label: "长木板", value: "long" }, { label: "短木板", value: "short" }, { label: "太短木板", value: "tiny" }],
-      success: "长木板能到对岸。",
-    },
-    {
-      prompt: "小狗要过宽河，一块木板不够，怎么办？",
-      sceneImage: bridgeWideScene,
-      animal: "🐶",
-      seq: ["🐶", "宽河", "?", "🏁"],
-      answer: "two-planks",
-      choices: [{ label: "用两块木板", value: "two-planks" }, { label: "只用长木板", value: "long-only" }, { label: "只用短木板", value: "short-only" }],
-      success: "两块木板接起来才够。",
-    },
-    {
-      prompt: "小猫只能拿两块木板，哪种更稳？",
-      sceneImage: bridgeTwoPlanksScene,
-      animal: "🐱",
-      seq: ["🐱", "宽河", "只能用2块", "?", "🏁"],
-      answer: "long-short",
-      choices: [{ label: "长 + 短", value: "long-short" }, { label: "短 + 太短", value: "short-tiny" }, { label: "太短 + 太短", value: "tiny-tiny" }],
-      success: "长木板加短木板更稳。",
-    },
-    {
-      prompt: "小熊面前有石头和木板，过河用什么更好？",
-      sceneImage: bridgeNarrowScene,
-      animal: "🐻",
-      seq: ["🐻", "🌊", "小石头", "?", "🏁"],
-      answer: "long",
-      choices: [{ label: "长木板", value: "long" }, { label: "小石头", value: "stone" }, { label: "不搭桥", value: "none" }],
-      success: "木板能连到对岸，更适合过河。",
-    },
-    {
-      prompt: "河中间有一个小岛，应该怎么搭？",
-      sceneImage: bridgeIslandScene,
-      animal: "🐰",
-      seq: ["🐰", "🌊", "小岛", "?", "🏁"],
-      answer: "two-planks",
-      choices: [{ label: "用两块木板", value: "two-planks" }, { label: "只用长木板", value: "long-only" }, { label: "不搭桥", value: "none" }],
-      success: "先到小岛，再到对岸，是两步计划。",
-    },
-  ].map((variant, index) => ({
-    level: index < 2 ? "L4" as AbilityLevel : "L6" as AbilityLevel,
-    prompt: variant.prompt,
-    instruction: "先看距离，再选材料。",
-    sceneImage: variant.sceneImage,
-    sequence: variant.seq,
-    choices: variant.choices,
-    answer: variant.answer,
-    success: variant.success,
-    retry: "先想哪一种能到对岸，再动手试。",
-    parentPrompt: "问她：你先预测了什么？如果失败，下一步怎么改？",
-    abilityTags: ["空间判断", "规划"],
+  return cases.map((item, index) => ({
+    level: index === 0 ? "L3" : index === 3 || index === 6 ? "L4" : "L6",
+    prompt: item.prompt,
+    instruction: "这是桌面模型。每格一样长，木板两头都要搭在河岸或小岛上。",
+    sceneImage: item.scene,
+    choices: item.choices.map(([label, value]) => ({ label, value })),
+    answer: item.answer,
+    success: item.reason,
+    retry: "先沿每段空隙数格子，再比木板有几格。每一段都要连上，两头也都要有支点。",
+    parentPrompt: "请她用手指画出路线，说说每块板的两头搭在哪里。问她：总长度够了，每一段就一定够吗？",
+    abilityTags: ["空间判断", index === 0 || index === 3 || index === 6 ? "长度比较" : "分段规划"],
   }));
-  return repeatTo([...rounds, ...variants], 24);
 }
 
 function makeClockTimeRounds(): RoundInput[] {
@@ -2647,11 +2524,10 @@ function clockTimeConversionCase(input: {
   level: AbilityLevel;
 }): RoundInput {
   const timeLabel = formatClockTime(input.hour, input.minute);
-  const plainTime = `${String(input.hour).padStart(2, "0")}:${String(input.minute).padStart(2, "0")}`;
   return {
     level: input.level,
     prompt: "看图和时钟，电子钟应该显示哪个时间？",
-    instruction: "先读钟面，再看图里的活动是在一天的前面还是后面。",
+    instruction: `图里在${input.activity}。先读钟面，再结合这个活动选择电子钟时间。`,
     sceneImage: input.sceneImage,
     clockChallenge: {
       hour: input.hour,
@@ -2663,7 +2539,7 @@ function clockTimeConversionCase(input: {
     choices: choiceSet(input.choices),
     answer: input.answer,
     success: `${input.answer}对。先把钟面读作 ${timeLabel}，再看图里的活动，${input.clue}`,
-    retry: `先把钟面读作 ${timeLabel}，再看图里的活动。不要只选 ${plainTime}，要想它在一天里应该写成哪一个 24 小时电子钟时间。`,
+    retry: `钟面读作 ${timeLabel}。一天里会出现两次这样的钟面，再结合${input.activity}和窗外的天色想一想。`,
     parentPrompt: `问她：钟面读作 ${timeLabel}，图里在${input.activity}，为什么电子钟要选 ${input.answer}？`,
     abilityTags: ["24小时制", "生活时间"],
     difficultyNote: "12 小时到 24 小时转换：同一个钟面数字可能对应两个电子钟时间，需要结合场景判断。",
@@ -2698,11 +2574,11 @@ function makeSameKindRounds(): RoundInput[] {
       clue: "它们常常在书桌或书包里。",
     },
     {
-      groupName: "陆地小动物",
+      groupName: "有毛的四脚动物",
       items: ["🐱", "🐶", "🐰"],
       answer: "小熊",
       distractors: ["小鸟", "小鱼"],
-      clue: "它们都是常在地上走的动物。",
+      clue: "这些动物都有毛，也都有四只脚。小鸟有羽毛，小鱼有鳞片。",
     },
     {
       groupName: "圆圆的东西",
@@ -2765,7 +2641,7 @@ function makeNumberPatternRounds(): RoundInput[] {
     { seq: ["0", "2", "4", "6", "?"], answer: "8", rule: "这些都是双数，每次多 2。", level: "L6" },
     { seq: ["1", "2", "1", "2", "?"], answer: "1", rule: "1 和 2 轮流出现。", level: "L4" },
     { seq: ["3", "3", "4", "4", "?"], answer: "5", rule: "每个数出现两次，再换下一个。", level: "L5" },
-    { seq: ["1", "1", "2", "3", "3", "?"], answer: "4", rule: "先看颜色，再看数字往前走。", level: "L6" },
+    { seq: ["2", "2", "3", "3", "4", "?"], answer: "4", rule: "每个数出现两次。4 已经出现一次，还要再出现一次。", level: "L5" },
     { seq: ["10", "9", "8", "7", "?"], answer: "6", rule: "倒着走，每次少 1。", level: "L5" },
     { seq: ["2", "3", "4", "5", "?"], answer: "6", rule: "从 2 开始，每次多 1。", level: "L4" },
     { seq: ["1", "3", "1", "3", "?"], answer: "1", rule: "1 和 3 轮流出现。", level: "L4" },
@@ -2780,13 +2656,13 @@ function makeNumberPatternRounds(): RoundInput[] {
 
   return cases.map((item) => ({
     level: item.level,
-    prompt: "数字小路下一步走到哪里？",
+    prompt: "数字小路里，问号处应该是几？",
     instruction: "从左到右读一读，找数字怎么变化。",
     sequence: [...item.seq],
     choices: numberChoices(Number(item.answer), 1, Math.max(12, Number(item.answer) + 2)),
     answer: item.answer,
     success: item.rule,
-    retry: "先看前两个数差多少，再看后面是不是一样。",
+    retry: "读一读，是一直增加或减少，还是几个数轮流、成对出现？再检查后面的数。",
     parentPrompt: "问她：它是每次多一点、少一点，还是轮流出现？",
     abilityTags: ["数列规律", item.rule.includes("轮流") ? "重复模式" : "跳数"],
   }));
@@ -3066,7 +2942,7 @@ function makePositionMapRounds(): RoundInput[] {
     {
       level: "L5",
       prompt: "谁在盒子里面？",
-      instruction: "看清楚里面和外面。",
+      instruction: "这是图卡收纳盒，看清哪张图卡在里面。",
       visualGroups: [
         { label: "盒子里面", items: ["小鱼"] },
         { label: "盒子外面", items: ["小猫", "小狗"] },
@@ -3081,7 +2957,7 @@ function makePositionMapRounds(): RoundInput[] {
     {
       level: "L5",
       prompt: "谁在盒子外面？",
-      instruction: "这次找没有被装进去的。",
+      instruction: "这是图卡收纳盒，这次找没有装进去的图卡。",
       visualGroups: [
         { label: "盒子里面", items: ["足球", "书包"] },
         { label: "盒子外面", items: ["小兔"] },
@@ -3098,7 +2974,7 @@ function makePositionMapRounds(): RoundInput[] {
   const relative: RoundInput[] = [
     {
       level: "L6",
-      prompt: "小狗看盒子，盒子在小狗的哪边？",
+      prompt: "按画面的左右，从小狗所在格到盒子，要往哪边？",
       instruction: "先找到小狗，再从小狗往盒子看。",
       grid: roomGrid,
       choices: choiceSet(["左边", "右边", "上面"]),
@@ -3110,7 +2986,7 @@ function makePositionMapRounds(): RoundInput[] {
     },
     {
       level: "L6",
-      prompt: "小猫看盒子，盒子在小猫的哪边？",
+      prompt: "按画面的左右，从小猫所在格到盒子，要往哪边？",
       instruction: "先找到小猫，再从小猫往盒子看。",
       grid: roomGrid,
       choices: choiceSet(["左边", "右边", "下面"]),
@@ -3226,53 +3102,37 @@ function makeVisualMatchRounds(): RoundInput[] {
     abilityTags: ["细节观察", "顺序比较"],
   }));
 
+  const oddPositions = answerPositionSchedule(6, 3, "visual-match-evidence");
   const oddCases = [
-    {
-      items: ["🔴🟦", "🔴🟦", "🟦🔴"],
-      answer: "right",
-      reason: "左边和中间这两张一样，右边这张顺序反了。",
-    },
-    {
-      items: ["🟡🟢", "🟡🔵", "🟡🟢"],
-      answer: "middle",
-      reason: "左边和右边这两张一样，中间这张第二个颜色不一样。",
-    },
-    {
-      items: ["🍎🍊", "🍎🍊", "🍊🍎"],
-      answer: "right",
-      reason: "左边和中间这两张一样，右边这张水果顺序不一样。",
-    },
-    {
-      items: ["🐱🐶", "🐱🐰", "🐱🐶"],
-      answer: "middle",
-      reason: "左边和右边这两张一样，中间这张第二个小动物不一样。",
-    },
-    {
-      items: ["🔴🟦⭐", "🔴🟦⭐", "🔴⭐🟦"],
-      answer: "right",
-      reason: "左边和中间这两张一样，右边这张后两块位置换了。",
-    },
-    {
-      items: ["🍓🍪🍬", "🍓🍬🍪", "🍓🍪🍬"],
-      answer: "middle",
-      reason: "左边和右边这两张一样，中间这张饼干和糖果的位置换了。",
-    },
-  ].map((item, index) => ({
-    level: index < 4 ? "L5" as AbilityLevel : "L6" as AbilityLevel,
-    prompt: "哪一张和另外两张不一样？",
-    instruction: "先找两张完全一样的，再看剩下的一张。",
-    visualGroups: [{ label: "三张小卡", items: item.items }],
-    choices: [
-      { label: "左边这张", value: "left" },
-      { label: "中间这张", value: "middle" },
-      { label: "右边这张", value: "right" },
-    ],
-    answer: item.answer,
-    success: item.reason,
-    retry: "先找两张一样的一对，剩下那张就是不一样的。",
-    parentPrompt: "问她：哪两张是一对？剩下那张哪里不同？",
-    abilityTags: ["细节观察", "排除法"],
-  }));
+    { same: "🔴🟦", different: "🟦🔴", difference: "两个图形的顺序反了" },
+    { same: "🟡🟢", different: "🟡🔵", difference: "第二个颜色不一样" },
+    { same: "🍎🍊", different: "🍊🍎", difference: "水果的顺序反了" },
+    { same: "🐱🐶", different: "🐱🐰", difference: "第二个小动物不一样" },
+    { same: "🔴🟦⭐", different: "🔴⭐🟦", difference: "后两块的位置换了" },
+    { same: "🍓🍪🍬", different: "🍓🍬🍪", difference: "饼干和糖果的位置换了" },
+  ].map((item, index) => {
+    const position = oddPositions[index];
+    const items = [item.same, item.same];
+    items.splice(position, 0, item.different);
+    const names = ["左边", "中间", "右边"];
+    const matchingNames = names.filter((_, i) => i !== position);
+    return {
+      level: index < 4 ? "L5" as AbilityLevel : "L6" as AbilityLevel,
+      prompt: "哪一张和另外两张不一样？",
+      instruction: "先找两张完全一样的，再看剩下的一张。",
+      visualGroups: [{ label: "三张小卡", items }],
+      choices: [
+        { label: "左边这张", value: "left" },
+        { label: "中间这张", value: "middle" },
+        { label: "右边这张", value: "right" },
+      ],
+      answer: ["left", "middle", "right"][position],
+      success: `${matchingNames.join("和")}这两张一样，${names[position]}这张${item.difference}。`,
+      retry: "先找两张一样的一对，剩下那张就是不一样的。",
+      parentPrompt: "问她：哪两张是一对？剩下那张哪里不同？",
+      abilityTags: ["细节观察", "排除法"],
+    };
+  });
 
   return repeatTo([...exactRounds, ...oddCases], 18);
 }
@@ -3426,7 +3286,7 @@ function makeRotationDirectionRounds(): RoundInput[] {
   ].map((item, index) => ({
     level: index < 2 ? "L5" as AbilityLevel : "L6" as AbilityLevel,
     prompt: "箭头每次顺时针转一下，下一个指哪里？",
-    instruction: "顺时针就是像钟表一样往右转。",
+    instruction: "像钟表指针那样转，每次转到下一个方向。",
     sceneImage,
     sequence: item.sequence,
     choices: choiceSet(["上面", "右边", "下面", "左边"]),
@@ -3451,7 +3311,7 @@ function makeRotationDirectionRounds(): RoundInput[] {
     choices: choiceSet(["上面", "右边", "下面", "左边"]),
     answer: item.answer,
     success: item.success,
-    retry: "先看它是往左转还是往右转。",
+    retry: "先看前三个方向，按同样方向再转一步。",
     parentPrompt: "问她：这次和钟表方向一样吗？",
     abilityTags: ["旋转规律", "方向顺序"],
   }));
@@ -3532,14 +3392,14 @@ function makePartWholePuzzleRounds(): RoundInput[] {
 
 function makeBalanceSwapRounds(): RoundInput[] {
   const directCases = [
-    { left: "🍎", right: ["🍓", "🍓"], prompt: "1 个苹果和几个草莓一样？", answer: "2 个草莓", choices: ["1 个草莓", "2 个草莓", "3 个草莓"], success: "1 个苹果可以换 2 个草莓。" },
-    { left: "🍊", right: ["🍪", "🍪"], prompt: "1 个橘子和几个饼干一样？", answer: "2 个饼干", choices: ["1 个饼干", "2 个饼干", "3 个饼干"], success: "1 个橘子可以换 2 个饼干。" },
-    { left: "🧁", right: ["🍬", "🍬", "🍬"], prompt: "1 个蛋糕和几个糖果一样？", answer: "3 个糖果", choices: ["2 个糖果", "3 个糖果", "4 个糖果"], success: "1 个蛋糕可以换 3 个糖果。" },
-    { left: "⚽", right: ["⭐", "⭐"], prompt: "1 个足球和几颗星星一样？", answer: "2 颗星星", choices: ["1 颗星星", "2 颗星星", "3 颗星星"], success: "1 个足球可以换 2 颗星星。" },
+    { left: "🍎", right: ["🍓", "🍓"], prompt: "1 个苹果和几个草莓一样重？", answer: "2 个草莓", choices: ["1 个草莓", "2 个草莓", "3 个草莓"], success: "1 个苹果可以换 2 个草莓。" },
+    { left: "🍊", right: ["🍪", "🍪"], prompt: "1 个橘子和几个饼干一样重？", answer: "2 个饼干", choices: ["1 个饼干", "2 个饼干", "3 个饼干"], success: "1 个橘子可以换 2 个饼干。" },
+    { left: "🧁", right: ["🍬", "🍬", "🍬"], prompt: "1 个蛋糕和几个糖果一样重？", answer: "3 个糖果", choices: ["2 个糖果", "3 个糖果", "4 个糖果"], success: "1 个蛋糕可以换 3 个糖果。" },
+    { left: "⚽", right: ["⭐", "⭐"], prompt: "1 个足球和几颗星星一样重？", answer: "2 颗星星", choices: ["1 颗星星", "2 颗星星", "3 颗星星"], success: "1 个足球可以换 2 颗星星。" },
   ].map((item, index) => ({
     level: index < 2 ? "L4" as AbilityLevel : "L5" as AbilityLevel,
     prompt: item.prompt,
-    instruction: "天平两边一样，右边有几个就选几个。",
+    instruction: "这是模型天平，这次两边一样重。数一数右边的图卡。",
     visualGroups: [
       { label: "天平左边", items: [item.left] },
       { label: "天平右边", items: item.right },
@@ -3548,7 +3408,7 @@ function makeBalanceSwapRounds(): RoundInput[] {
     answer: item.answer,
     success: item.success,
     retry: "先数右边一共有几个，再选一样的那一组。",
-    parentPrompt: "问她：为什么天平两边可以互相换？",
+    parentPrompt: "问她：这次模型中两边一样重，各有几个？真实水果大小不同，要称一称才能知道。",
     abilityTags: ["等量代换", "数量对应"],
   }));
 
@@ -3560,7 +3420,7 @@ function makeBalanceSwapRounds(): RoundInput[] {
   ].map((item) => ({
     level: "L6" as AbilityLevel,
     prompt: `${item.count} 个${labelFor(item.unit)}可以换成几个${labelFor(item.unitGroup[0])}？`,
-    instruction: "先看 1 个能换几，再想有几组。",
+    instruction: "按本题模型的重量规则，先看一组，再想有几组。",
     visualGroups: [
       { label: "1 个可以换", items: [item.unit, "➡️", ...item.unitGroup] },
       { label: "现在有", items: repeat(item.unit, item.count) },
@@ -3586,7 +3446,7 @@ function makeBalanceSwapRounds(): RoundInput[] {
       success: "1 个苹果等于 2 个草莓，所以 1 个苹果比 1 个草莓重。",
     },
     {
-      prompt: "哪边一样重？",
+      prompt: "哪边更重，还是两边一样重？",
       visualGroups: [
         { label: "规则", items: ["🍊", "➡️", "🍪", "🍪"] },
         { label: "左边", items: ["🍊"] },
@@ -3599,7 +3459,7 @@ function makeBalanceSwapRounds(): RoundInput[] {
   ].map((item) => ({
     level: "L6" as AbilityLevel,
     prompt: item.prompt,
-    instruction: "先看规则，再比较两边。",
+    instruction: "按本题模型的重量规则，再比较两边。",
     visualGroups: item.visualGroups,
     choices: choiceSet(item.choices),
     answer: item.answer,
@@ -3613,7 +3473,6 @@ function makeBalanceSwapRounds(): RoundInput[] {
 }
 
 function makeMirrorFoldRounds(): RoundInput[] {
-  const sceneImage = imageGallery.scenes.mirrorFoldPaper;
   const judgeCases = [
     {
       prompt: "沿着中间的竖线折起来，两边能重合吗？",
@@ -3638,9 +3497,9 @@ function makeMirrorFoldRounds(): RoundInput[] {
     {
       prompt: "沿着中间的横线折起来，上下能重合吗？",
       cells: [
-        ["🍎", "🍊"],
+        ["🔴", "🔵"],
         ["-", "-"],
-        ["🍎", "🍊"],
+        ["🔴", "🔵"],
       ],
       answer: "上下能重合",
       choices: ["上下能重合", "左右能重合", "不能重合"],
@@ -3649,13 +3508,13 @@ function makeMirrorFoldRounds(): RoundInput[] {
     {
       prompt: "沿着中间的横线折起来，上下能重合吗？",
       cells: [
-        ["🐱", "🐶"],
+        ["🔴", "🔵"],
         ["-", "-"],
-        ["🐶", "🐱"],
+        ["🔵", "🔴"],
       ],
       answer: "不能重合",
       choices: ["上下能重合", "左右能重合", "不能重合"],
-      success: "上下两行顺序反了，对应的位置不一样，不能重合。",
+      success: "上下两行颜色顺序反了，对应的位置不一样，不能重合。",
     },
     {
       prompt: "这张小卡是不是左右对称？",
@@ -3683,7 +3542,6 @@ function makeMirrorFoldRounds(): RoundInput[] {
     level: index < 4 ? "L5" as AbilityLevel : "L6" as AbilityLevel,
     prompt: item.prompt,
     instruction: "先找到中线，再看对应位置是不是一样。",
-    sceneImage,
     matrix: { cells: item.cells },
     choices: choiceSet(item.choices),
     answer: item.answer,
@@ -3702,9 +3560,8 @@ function makeMirrorFoldRounds(): RoundInput[] {
     { left: ["🔵", "🟡", "⭐"], answer: "⭐🟡🔵", choices: ["⭐🟡🔵", "🔵🟡⭐", "🟡⭐🔵"], success: "要从靠近镜子的星星开始补，再到黄色圆片和蓝色圆片。" },
   ].map((item, index) => ({
     level: index < 3 ? "L5" as AbilityLevel : "L6" as AbilityLevel,
-    prompt: "镜子右边应该是什么？",
+    prompt: "只看图卡的左右顺序，镜子右边应该怎样排？",
     instruction: "左边靠近镜子的那个，到了右边也要靠近镜子。",
-    sceneImage,
     visualGroups: [
       { label: "镜子左边", items: item.left },
       { label: "镜子", items: ["|"] },
@@ -3844,7 +3701,7 @@ function makeThreeViewBlockRounds(): RoundInput[] {
     return {
       level: index < 2 ? "L5" as AbilityLevel : "L6" as AbilityLevel,
       prompt: "从上面看，有几个位置放了积木？",
-      instruction: "从上面看只看有没有积木，不管它有几层。",
+      instruction: "数字表示这个位置的层数，0 是空位。只数有积木的位置。",
       grid: { columns, rows, cells: item.cells },
       choices: numberChoices(item.topCount, Math.max(1, item.topCount - 1), Math.min(9, item.topCount + 1)),
       answer: String(item.topCount),
@@ -3861,7 +3718,7 @@ function makeThreeViewBlockRounds(): RoundInput[] {
     return {
       level: index < 2 ? "L5" as AbilityLevel : "L6" as AbilityLevel,
       prompt: "从前面看，每一列最高会看到几层？",
-      instruction: "一列一列看，只记这一列最高的那一层。",
+      instruction: `数字表示层数。按第 ${columns.join("、")} 列的顺序，读出每列最高几层。`,
       grid: { columns, rows, cells: item.cells },
       choices: threeViewChoices(item.front),
       answer: item.front,
@@ -3878,7 +3735,7 @@ function makeThreeViewBlockRounds(): RoundInput[] {
     return {
       level: index < 2 ? "L5" as AbilityLevel : "L6" as AbilityLevel,
       prompt: "从左边看，每一排最高会看到几层？",
-      instruction: "一排一排看，只记这一排最高的那一层。",
+      instruction: `数字表示层数。按 ${rows.join("、")} 排的顺序，读出每排最高几层。`,
       grid: { columns, rows, cells: item.cells },
       choices: threeViewChoices(item.left),
       answer: item.left,
@@ -4063,7 +3920,7 @@ function makeGraphicShadowMatchRounds(): RoundInput[] {
 
   return cases.map((item, index) => graphicRound({
     level: index < 3 ? "L5" : "L6",
-    prompt: "哪一个黑影和左边彩色图是同一个轮廓？",
+    prompt: "哪一个黑影和上面的彩色图轮廓相同？",
     instruction: "不要看颜色，只看外边一圈、耳朵、角和尾巴。",
     kind: "silhouette-match",
     stemLabel: "彩色样图",
@@ -4098,7 +3955,7 @@ function makeGraphicCoveredRestoreRounds(): RoundInput[] {
       optionFigure("circle", "圆形", "圆边相近，但没有叶子。"),
       optionFigure("flower", "花朵", "边缘凸起太多。"),
     ]),
-    coveredCase("fish", "#38bdf8", "fish", "小鱼", "left", "露出的三角尾巴只属于小鱼", [
+    coveredCase("fish", "#38bdf8", "fish", "小鱼", "left", "露出的分叉尾巴属于这条小鱼", [
       optionFigure("leaf", "叶子", "外形也尖，但没有鱼尾分叉。"),
       optionFigure("fish", "小鱼"),
       optionFigure("pear", "梨子", "一头尖，但没有尾巴。"),
@@ -4122,7 +3979,7 @@ function makeGraphicCoveredRestoreRounds(): RoundInput[] {
       optionFigure("star", "星星", "尖角更多，外轮廓不一样。"),
       optionFigure("rounded-square", "圆角方块", "有四边，但角不尖。"),
     ]),
-    coveredCase("pear", "#a3e635", "pear", "梨子", "right", "露出的细上部和小叶子更像梨子，不是圆苹果", [
+    coveredCase("pear", "#a3e635", "pear", "梨子", "right", "露出的细上部和较宽的下部更像梨子，不是圆苹果", [
       optionFigure("apple", "苹果", "也有叶子，但整体更圆。"),
       optionFigure("pear", "梨子"),
       optionFigure("leaf", "叶子", "有绿色弯边，但没有果身。"),
@@ -4155,7 +4012,7 @@ function makeGraphicDetailWholeRounds(): RoundInput[] {
       optionFigure("dog", "小狗", "耳朵垂下去，不是尖耳。"),
       optionFigure("bear", "小熊", "耳朵是圆的。"),
     ]),
-    detailCase("fish", "#38bdf8", "tail", "fish", "小鱼", "放大镜里是分开的三角尾巴，属于小鱼", [
+    detailCase("fish", "#38bdf8", "tail", "fish", "小鱼", "放大镜里是分叉的扇形尾巴，属于小鱼", [
       optionFigure("leaf", "叶子", "两端尖，但没有分叉尾巴。"),
       optionFigure("fish", "小鱼"),
       optionFigure("pear", "梨子", "一头尖但没有尾巴。"),
@@ -4218,20 +4075,20 @@ function makeGraphicDetailWholeRounds(): RoundInput[] {
 
 function makeGraphicLayerOverlapRounds(): RoundInput[] {
   const cases = [
-    layerCase("circle", "#60a5fa", "star", "#facc15", "star-over-circle", "星星在圆形上面", "星星盖住圆形中间，边上还能看到圆弧"),
-    layerCase("star", "#facc15", "circle", "#60a5fa", "circle-over-star", "圆形在星星上面", "圆形压住星星中心，只露出外面的尖角"),
-    layerCase("rounded-square", "#93c5fd", "triangle", "#fb7185", "triangle-over-square", "三角形在圆角方块上面", "三角形的底边挡住方块中间"),
-    layerCase("triangle", "#fb7185", "rounded-square", "#93c5fd", "square-over-triangle", "圆角方块在三角形上面", "方块压住三角形中心，只露出三个尖角"),
-    layerCase("diamond", "#14b8a6", "circle", "#f87171", "circle-over-diamond", "圆形在菱形上面", "圆形盖住菱形中心，四个尖角还露在外面"),
-    layerCase("circle", "#f87171", "diamond", "#14b8a6", "diamond-over-circle", "菱形在圆形上面", "菱形边线压在圆形前面，圆弧只在外侧露出"),
-    layerCase("leaf", "#22c55e", "flower", "#f472b6", "flower-over-leaf", "花朵在叶子上面", "圆花瓣盖住叶子中间，只露出叶子尖端"),
-    layerCase("flower", "#f472b6", "leaf", "#22c55e", "leaf-over-flower", "叶子在花朵上面", "叶子的长弧线压在花瓣前面"),
+    layerCase("circle", "#60a5fa", "star", "#facc15", "star-over-circle", "星星在圆形上面"),
+    layerCase("star", "#facc15", "circle", "#60a5fa", "circle-over-star", "圆形在星星上面"),
+    layerCase("rounded-square", "#93c5fd", "triangle", "#fb7185", "triangle-over-square", "三角形在圆角方块上面"),
+    layerCase("triangle", "#fb7185", "rounded-square", "#93c5fd", "square-over-triangle", "圆角方块在三角形上面"),
+    layerCase("diamond", "#14b8a6", "circle", "#f87171", "circle-over-diamond", "圆形在菱形上面"),
+    layerCase("circle", "#f87171", "diamond", "#14b8a6", "diamond-over-circle", "菱形在圆形上面"),
+    layerCase("leaf", "#22c55e", "flower", "#f472b6", "flower-over-leaf", "花朵在叶子上面"),
+    layerCase("flower", "#f472b6", "leaf", "#22c55e", "leaf-over-flower", "叶子在花朵上面"),
   ];
 
   return cases.map((item, index) => graphicRound({
     level: index < 2 ? "L5" : "L6",
-    prompt: "照着示例理解叠加，把本题两张透明图叠起来，会变成下面哪一张？",
-    instruction: "示例只教叠法；真正要判断的是本题两张图。先放第1张，再把第2张盖到它上面。",
+    prompt: "按顺序叠放不透光的彩色纸片，会变成哪张图？",
+    instruction: "小方框只标位置。对齐小方框，纸片不挪位置，先放1号，再盖2号。",
     kind: "layer-overlap",
     stemLabel: "先看示例，再看本题要叠加的两张图",
     groups: layerExampleGroups(),
@@ -4243,10 +4100,10 @@ function makeGraphicLayerOverlapRounds(): RoundInput[] {
       layerOption(`${item.answer}-wrong-shape`, layerLabel(wrongLayer(item.answerFigures)), wrongLayer(item.answerFigures), "位置像，但其中一个图形轮廓被换了。"),
     ],
     answer: item.answer,
-    success: `${item.label}对，${item.clue}，透明叠合要看后盖上去的图挡住了哪里。`,
+    success: `${item.label}。对齐图卡位置，重叠处是后放的${labelFor(item.topSource.shape)}盖住先放的${labelFor(item.bottomSource.shape)}。`,
     retry: "先按顺序说：第1张先放，第2张盖上去。再看重叠边线，后盖上去的图会挡住前面的图。",
     parentPrompt: "请她指一指重叠的地方，说第2张盖上去以后挡住了哪里，为什么顺序反过来的选项不对。",
-    abilityTags: ["透明叠叠板", "上下层判断", "重叠线索"],
+    abilityTags: ["纸片叠叠板", "上下层判断", "重叠线索"],
     difficultyNote: "上实式叠合题：四个选项图形相近，需要同时判断上下层、重叠位置和轮廓是否被换。",
   }));
 }
@@ -4265,23 +4122,23 @@ function makeGraphicCodeMachineRounds(): RoundInput[] {
 
   return cases.map((item, index) => graphicRound({
     level: index < 3 ? "L5" : "L6",
-    prompt: "看图形密码表，问号这边应该换成哪一个图？",
-    instruction: "一组一组看左边图形对应右边什么，再找到和问号一样的左边图形。",
+    prompt: "照着密码表，问号处应放哪张图？",
+    instruction: "每组左图对应右图。先找与本题相同的左图，再选对应的右图。",
     kind: "code-match",
     stemLabel: "图形密码表",
     groups: item.pairs.map(([left, right]) => ({
       label: "对应",
-      figures: [codeFigure(left, -24), codeFigure(right, 24)],
+      figures: [codeFigure(left, -32), codeFigure(right, 32)],
       connector: "arrow",
     })),
-    figures: [codeFigure(item.query, -20), { shape: "rounded-square", mode: "blank", x: 24, scale: 0.72 }],
+    figures: [codeFigure(item.query, -32), { shape: "rounded-square", mode: "blank", x: 32, scale: 0.72 }],
     options: item.options,
     answer: item.answer,
-    success: `${item.clue}，密码题要按同一行的对应关系找答案。`,
-    retry: "先在密码表里找到和问号左边一样的图形，再看它右边对应哪个图，不要选隔壁一行。",
-    parentPrompt: "问她：问号左边的图在密码表哪一行？这一行右边对应什么？为什么相邻一行不对？",
+    success: `${item.clue}，密码题要按同一组的对应关系找答案。`,
+    retry: "先在密码表里找到和问号左边一样的图形，再看它右边对应哪个图，不要选隔壁一组。",
+    parentPrompt: "问她：问号左边的图在密码表哪一组？这一组右边对应什么？为什么相邻一组不对？",
     abilityTags: ["图形密码机", "对应映射", "近邻排除"],
-    difficultyNote: "上实式编码题：需要从多行图形对应关系中筛选目标行，并排除相邻行的高混淆选项。",
+    difficultyNote: "上实式编码题：需要从多组图形对应关系中筛选目标组，并排除相邻组的高混淆选项。",
   }));
 }
 
@@ -4299,12 +4156,12 @@ function makeGraphicGapCloseRounds(): RoundInput[] {
 
   return cases.map((item, index) => graphicRound({
     level: index < 2 ? "L5" : "L6",
-    prompt: "这个轮廓缺了一块，下面哪一个完整图最能补上？",
+    prompt: "这个轮廓缺了一段，原来是哪张完整的图？",
     instruction: "先看缺口在哪一边，再看缺口需要圆边、直边、尖角还是尾巴。",
     kind: "closure-match",
     stemLabel: "缺口轮廓",
     figures: [{ shape: item.shape, color: item.color, mode: "missing", gap: item.gap }],
-    options: item.options,
+    options: item.options.map(option => ({ ...option, figure: option.figure ? { ...option.figure, mode: "outline" as const } : undefined })),
     answer: item.answer,
     success: `${item.label}对，${item.clue}。补缺口要看边、角和缺口方向。`,
     retry: "先指缺口方向，再说缺口需要圆边、直边、尖角、叶子还是尾巴，然后排除轮廓相近但边角不对的选项。",
@@ -4379,13 +4236,12 @@ function layerCase(
   topColor: string,
   answer: string,
   label: string,
-  clue: string,
 ) {
-  const bottomSource: GraphicFigure = { shape: bottom, color: bottomColor, scale: 0.74, x: -10, y: 8, opacity: 0.62 };
-  const topSource: GraphicFigure = { shape: top, color: topColor, scale: 0.74, x: 12, y: -8, opacity: 0.86 };
-  const taskBottom: GraphicFigure = { ...bottomSource, x: -28, y: 0, scale: 0.62, opacity: 0.72 };
-  const taskTop: GraphicFigure = { ...topSource, x: 28, y: 0, scale: 0.62, opacity: 0.86 };
-  return { answer, answerFigures: [bottomSource, topSource], bottomSource, clue, label, taskFigures: [taskBottom, taskTop], topSource };
+  const bottomSource: GraphicFigure = { shape: bottom, color: bottomColor, scale: 0.74, x: -10, y: 8, opacity: 1 };
+  const topSource: GraphicFigure = { shape: top, color: topColor, scale: 0.74, x: 12, y: -8, opacity: 1 };
+  const taskBottom: GraphicFigure = { ...bottomSource };
+  const taskTop: GraphicFigure = { ...topSource };
+  return { answer, answerFigures: [bottomSource, topSource], bottomSource, label, taskFigures: [taskBottom, taskTop], topSource };
 }
 
 function layerOption(value: string, label: string, figures: GraphicFigure[], nearMiss?: string): GraphicChallengeOption {
@@ -4395,8 +4251,8 @@ function layerOption(value: string, label: string, figures: GraphicFigure[], nea
 function swappedLayer(figures: GraphicFigure[]) {
   const [bottom, top] = figures;
   return [
-    { ...top, x: bottom?.x, y: bottom?.y, opacity: 0.62 },
-    { ...bottom, x: top?.x, y: top?.y, opacity: 0.86 },
+    { ...top },
+    { ...bottom },
   ].filter(Boolean) as GraphicFigure[];
 }
 
@@ -4411,18 +4267,18 @@ function wrongLayer(figures: GraphicFigure[]) {
 }
 
 function layerExampleGroups(): GraphicFigureGroup[] {
-  const exampleBottom: GraphicFigure = { shape: "rounded-square", color: "#93c5fd", scale: 0.68, x: -8, y: 8, opacity: 0.62 };
-  const exampleTop: GraphicFigure = { shape: "fish", color: "#38bdf8", scale: 0.64, x: 12, y: -8, opacity: 0.86 };
+  const exampleBottom: GraphicFigure = { shape: "rounded-square", color: "#93c5fd", scale: 0.68, x: -8, y: 8, opacity: 1 };
+  const exampleTop: GraphicFigure = { shape: "fish", color: "#38bdf8", scale: 0.64, x: 12, y: -8, opacity: 1 };
   return [
-    { label: "示例1 先放", figures: [{ ...exampleBottom, x: 0, y: 0, opacity: 0.72 }], connector: "plus" },
-    { label: "示例2 盖上", figures: [{ ...exampleTop, x: 0, y: 0 }], connector: "arrow" },
+    { label: "示例1 先放", figures: [{ ...exampleBottom }], connector: "plus" },
+    { label: "示例2 盖上", figures: [{ ...exampleTop }], connector: "arrow" },
     { label: "示例叠后", figures: [exampleBottom, exampleTop] },
   ];
 }
 
 function layerLabel(figures: GraphicFigure[]) {
   const [bottom, top] = figures;
-  if (!bottom || !top) return "透明叠合图";
+  if (!bottom || !top) return "纸片叠合图";
   return `${labelFor(top.shape)}在${labelFor(bottom.shape)}上面`;
 }
 
@@ -4439,13 +4295,13 @@ function codeCase(
     answer: answerShape,
     clue,
     options: optionShapes.map((shape, index) => optionFigure(shape, labelFor(shape), index === 0 ? undefined : "这是相邻行的对应图，不是问号这一行。")),
-    pairs,
+    pairs: answerPositionSchedule(pairs.length, pairs.length, `code-table:${query}`).map(index => pairs[index]),
     query,
   };
 }
 
 function codeFigure(shape: GraphicFigure["shape"], x: number): GraphicFigure {
-  return { shape, x, scale: 0.64 };
+  return { shape, x, scale: 0.50 };
 }
 
 function gapCase(
@@ -4486,12 +4342,8 @@ function detailCase(
 }
 
 function numberChoices(answer: number, min: number, max: number) {
-  const values = new Set<number>([answer]);
-  if (answer > min) values.add(answer - 1);
-  if (answer < max) values.add(answer + 1);
-  let cursor = min;
-  while (values.size < 3) values.add(cursor++);
-  return Array.from(values).sort((a, b) => a - b).slice(0, 3).map((value) => ({ label: String(value), value: String(value) }));
+  const values = [answer, answer - 1, answer + 1, answer - 2, answer + 2].filter(value => value >= min && value <= max).slice(0, 3);
+  return values.sort((a, b) => a - b).map(value => ({ label: String(value), value: String(value) }));
 }
 
 function patternChoices(answer: string, unit: readonly string[]) {
@@ -4612,7 +4464,10 @@ function threeViewChoices(answer: string) {
 }
 
 function gridDistractors(grid: { cells: string[][] }, answer: string) {
-  return grid.cells.flat().filter((item) => item !== answer).slice(0, 2);
+  const row = grid.cells.findIndex(items => items.includes(answer));
+  const column = grid.cells[row]?.indexOf(answer) ?? -1;
+  const candidates = [grid.cells[row]?.[column - 1], grid.cells[row - 1]?.[column], grid.cells[row]?.[column + 1], grid.cells[row + 1]?.[column], ...grid.cells.flat()];
+  return Array.from(new Set(candidates.filter((item): item is string => Boolean(item) && item !== answer))).slice(0, 2);
 }
 
 function unitOf(token: string) {

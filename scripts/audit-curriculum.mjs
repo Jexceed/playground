@@ -621,7 +621,7 @@ function checkGraphicWorkshopCoverage() {
     "graphic-rotation-workbench",
     "graphic-memory-window",
   ]);
-  const requiredTags = ["影子配对", "遮挡还原", "局部找整体", "透明叠叠板", "图形密码机", "缺口补一补"];
+  const requiredTags = ["影子配对", "遮挡还原", "局部找整体", "纸片叠叠板", "图形密码机", "缺口补一补"];
   const tags = new Set(graphicGames.flatMap((game) => game.abilityTags));
   for (const tag of requiredTags) {
     if (!tags.has(tag)) problems.push(`graphic world missing ability family: ${tag}`);
@@ -956,8 +956,8 @@ function checkGraphicChallenge(round, context) {
     }
   }
   if (challenge.kind === "layer-overlap") {
-    if (JSON.stringify(challenge.figures) === JSON.stringify(challenge.options.find((option) => option.value === round.answer)?.figures ?? [])) {
-      problems.push(`${context}: layer-overlap stem should not show the correct overlap result before answering`);
+    if (JSON.stringify(challenge.figures) !== JSON.stringify(challenge.options.find((option) => option.value === round.answer)?.figures ?? [])) {
+      problems.push(`${context}: separately displayed layer cards must retain their positions when aligned into the correct answer`);
     }
     const groupLabels = (challenge.groups ?? []).map((group) => group.label ?? "").join(" ");
     if (!/示例/.test(groupLabels) || !/要叠/.test(challenge.stemLabel)) {
@@ -1935,7 +1935,7 @@ function traceRoute(cells, startPosition, moves) {
 }
 
 function checkPositionMapRoundQuality(round, context) {
-  const relativeMatch = round.prompt.match(/^(.+?)看(.+?)，\2在\1的哪边/);
+  const relativeMatch = round.prompt.match(/^按画面的左右，从(.+?)所在格到(.+?)，要往哪边/) ?? round.prompt.match(/^(.+?)看(.+?)，\2在\1的哪边/);
   if (relativeMatch) {
     checkPositionRelativeRound(round, context, relativeMatch[1], relativeMatch[2]);
     return;

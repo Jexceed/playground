@@ -3,6 +3,16 @@
 All meaningful project changes should be recorded here. Keep entries factual and
 grouped by date.
 
+## 2026-09-28
+
+### Enlightenment content and interaction corrections
+
+- Reviewed all 40 enlightenment groups / 489 rounds. Clarified missing daily-life conditions and evidence limits; corrected numeric pattern, container, comparison and clock wording. Counting targets, odd-card positions and code-table matches no longer share predictable fixed locations.
+- Made observation child-triggered, hid occupied-cell clues during a timed glance, stopped question speech when observation starts, and added memory re-observation that clears the pending answer. Skipped rounds no longer create group completion or practice tags.
+- Rebuilt eight bridge models with explicit distances/supports and added six local state/action symbols. Corrected triangle-ruler identity, open-door state, star sizes, local-detail crops, aligned opaque layer cards and exact closure contours. Kept all 621 exploration activities and their existing illustration frames intact.
+- Removed conflicting or duplicate scene backdrops while retaining the actual illustrated task evidence. Revised dense map, grouping, comparison and graphic layouts; long parent/history content now scrolls within the support rail.
+- All 489 authored answers were exercised in a separate browser test origin; a final 489-page pass at 1280×788 also checks full completion-history layout. Current source/voice/package validation and native acceptance status are recorded in specs/040-enlightenment-quality/verification/qa.md. The updated standard Mac app is installed; fresh native input acceptance remains pending because the host is locked.
+
 ## 2026-09-26
 
 ### Larger picture cards with captions outside the frame
