@@ -9,7 +9,7 @@
 继续使用一个“小小思考屋”，一级入口明确为「启蒙」和「探索」，其下再选择主题和题组。启蒙保留原有40组489题，探索集中放置资料对标新内容，现有75组621项（原24项＋新编597项）。题组、题量、成长记录和续玩位置分开，切换后直接恢复该部分上次的题目。界面不使用V1/V2标签。
 原有约4岁内容与进度保留，新增挑战首先面向6–8岁试玩校准。年龄用于推荐；设计要求按规则、步骤、记忆、表征和支持描述难度。目前新题的reading/motor等元数据仍有统一默认值，尚未逐族校准。
 
-代码采用同一应用壳、共享交互/判定/语音和存储服务，课程按部分、能力域与题族组织。src/curriculum/catalog.ts显式注册两部分的题组归属，保留src/data/games.ts原题并接入src/curriculum/pilot/探索试点。分区续玩由src/services/curriculum-navigation.ts管理。统一平铺目录供审计/语音/出口使用，不直接作为混合题目列表。新增六域内容位于src/curriculum/exploration/，新交互使用共享ActivitySet框架；后续按试玩反馈调整。
+代码采用同一应用壳、共享交互/判定/语音和存储服务，课程按部分、能力域与题族组织。src/curriculum/catalog.ts显式注册两部分的题组归属，保留src/data/games.ts原题并接入src/curriculum/pilot/探索试点。分区与每个题组的独立续玩由src/services/curriculum-navigation.ts管理：启动恢复最近位置，重选题组按稳定题目 ID 返回上次停留处；schema 2 承接旧版已知位置，完成记录独立保留。统一平铺目录供审计/语音/出口使用，不直接作为混合题目列表。新增六域内容位于src/curriculum/exploration/，新交互使用共享ActivitySet框架；后续按试玩反馈调整。
 
 ## 资料盘点与阅读口径
 

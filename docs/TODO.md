@@ -72,8 +72,9 @@ small enough to turn into a Spec Kit feature.
 - Review remaining non-侦探 and non-规律火车 `VisualToken` fallbacks such as
   abstract symbols, action phrases, and location phrases, and decide which need
   raster assets.
-- Add deeper automated browser smoke checks for persisted navigation state after
-  the first manual coverage in `016-visual-choice-session-memory`.
+- Extend automated UI smoke coverage of persisted navigation from the service
+  regressions and native group/section/relaunch checks in `041-group-resume`.
+  The per-group resume feature itself is implemented and installed.
 - Add an automated all-48-round 图形工坊 screenshot review that checks stem-option
   spatial relationships, black silhouette rendering, and local Edge voice
   coverage beyond the current representative smoke checks.

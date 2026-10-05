@@ -1,0 +1,97 @@
+Window: "小小思考屋", App: 小小思考屋.
+0 standard window 小小思考屋, Secondary Actions: Raise
+	1 scroll area
+		2 HTML content Description: 小小思考屋, URL: tauri://localhost
+			3 container
+				4 container 主题地图
+					5 image 小小思考屋 亲子思维游戏
+					6 container 选择启蒙或探索
+						7 toggle button 启蒙, Value: on
+						8 toggle button 探索, Value: off
+					9 button (expanded) 数字岛 数数、比较、加减、分组、时钟 122 题, Secondary Actions: Collapse
+					10 button (collapsed) 逻辑屋 319 题, Secondary Actions: Expand
+					11 button (collapsed) 图形工坊 48 题, Secondary Actions: Expand
+					12 container 关卡列表
+						13 container
+							14 text 启蒙  ·  数字岛
+						15 text 8  个
+						16 search text field (settable) 查找当前主题题组, Placeholder: 查找题组
+							17 text 查找题组
+						18 button 数一数 18 题
+						19 button 一眼看出来 15 题
+						20 button 多一点，少一点 12 题
+						21 button 合起来，拆开来 28 题
+						22 button 小鸟飞走了 12 题
+						23 button 公平分一分 13 题
+						24 button 几个几个数 12 题
+						25 button 时钟小管家 12 题
+				26 container 当前部分
+					27 text 启蒙
+					28 text 看图发现，轻松起步 40  组 ·  489  题
+				29 container 数一数
+					30 container
+						31 text 第  4  /  18  题 ·
+						32 container 难度 L2，基础：需要稳定匹配图、数量或声音线索。 比较 1 组图卡，找共同点、差异或缺失项。主要训练一一对应、基数理解。, Help: 难度判定：基础：需要稳定匹配图、数量或声音线索。 比较 1 组图卡，找共同点、差异或缺失项。主要训练一一对应、基数理解。
+							33 text 难度
+							34 text L2
+					35 heading 请数一数，一共有几个橘子？, Value: 3
+						36 text 请数一数，一共有几个橘子？
+					37 text 用手指点着数，再选答案。
+					38 button 听题
+					39 container 题目画面
+						40 text 一共有几个橘子
+						41 button 橘子
+						42 button 橘子
+						43 button 橘子
+						44 button 橘子
+					45 button 3
+					46 button 4
+					47 button 5
+					48 button 从头来
+					49 button (disabled) 看看对不对
+				50 container 题目导航
+					51 text 题目导航
+					52 text 18  /  18  已做
+					53 button 跳到第 1 题，已做
+					54 button 跳到第 2 题，已做
+					55 button 跳到第 3 题，已做
+					56 button 跳到第 4 题，已做
+					57 button 跳到第 5 题，已做
+					58 button 跳到第 6 题，已做
+					59 button 跳到第 7 题，已做
+					60 button 跳到第 8 题，已做
+					61 button 跳到第 9 题，已做
+					62 button 跳到第 10 题，已做
+					63 button 跳到第 11 题，已做
+					64 button 跳到第 12 题，已做
+					65 button 跳到第 13 题，已做
+					66 button 跳到第 14 题，已做
+					67 button 跳到第 15 题，已做
+					68 button 跳到第 16 题，已做
+					69 button 跳到第 17 题，已做
+					70 button 跳到第 18 题，已做
+				71 container (expanded) Secondary Actions: Collapse
+					72 text 亲子提示卡
+					73 text 请她指着每一个物品数，问：最后数到几？所以一共有几个？
+					74 summary 本题追问, Value: off
+						75 text 本题追问
+				76 container (expanded) Secondary Actions: Collapse
+					77 container
+						78 text 启蒙 成长记录
+					79 button 清空启蒙记录
+					80 container
+						81 text 已完成  273  /  489  题
+					82 text 模式识别 预测 证据推理 排除法 解释理由 影子配对 轮廓抽象 近似排除 抗颜色干扰 遮挡还原 可见线索 局部找整体 还有  97  个
+	83 close button
+	84 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	85 minimize button
+	86 text 小小思考屋
+87 menu bar
+	88 小小思考屋
+	89 File
+	90 Edit
+	91 View
+	92 Window
+	93 Help
+
+The focused UI element is 2 HTML content Description: 小小思考屋, URL: tauri://localhost

@@ -26,22 +26,15 @@ export function ProgressiveSetGame({
   onRoundComplete: (roundId: string, tags: string[]) => void;
   onRoundIndexChange: (index: number) => void;
 }) {
-  const [roundIndex, setRoundIndex] = useState(0);
+  // App keys this component by game.id; each mount starts on that group's saved round.
+  const initialRoundIndex = Math.min(Math.max(requestedRoundIndex, 0), game.rounds.length - 1);
+  const [roundIndex, setRoundIndex] = useState(initialRoundIndex);
   const [selected, setSelected] = useState<string | null>(null);
   const [answered, setAnswered] = useState(false);
   const [retryMessage, setRetryMessage] = useState<string | null>(null);
   const [completedOnce, setCompletedOnce] = useState(false);
-  const [observationPhase, setObservationPhase] = useState<ObservationPhase>(() => initialObservationPhase(game.rounds[0]));
+  const [observationPhase, setObservationPhase] = useState<ObservationPhase>(() => initialObservationPhase(game.rounds[initialRoundIndex]));
   const lastRoundReadKey = useRef(0);
-
-  useEffect(() => {
-    setRoundIndex(0);
-    setSelected(null);
-    setAnswered(false);
-    setRetryMessage(null);
-    setCompletedOnce(false);
-    setObservationPhase(initialObservationPhase(game.rounds[0]));
-  }, [game.id]);
 
   useEffect(() => {
     const nextIndex = Math.min(Math.max(requestedRoundIndex, 0), game.rounds.length - 1);

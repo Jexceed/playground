@@ -3,6 +3,14 @@
 All meaningful project changes should be recorded here. Keep entries factual and
 grouped by date.
 
+## 2026-10-05
+
+### Resume each question group
+
+- Each enlightenment and exploration group now remembers its last visited question by stable ID. Launch still restores the most recent section/group; returning to another group restores its own position. Re-clicking the current group or theme keeps the pending selection, while an explicit “从头来” resets only that group's remembered position.
+- Migrated known section-level and legacy positions into navigation schema 2 without changing completion/attempt stores. Removed questions fall back to the beginning of their own group; unknown/future/corrupt navigation payloads remain protected from overwriting. The enlightenment renderer now initializes directly on the restored round and observation state.
+- Reproduced the first-question reset in the old native app, then verified group/theme/section navigation, old-position migration, explicit reset and quit/reopen in the rebuilt Applications app. Completion totals remained 273 enlightenment and 74 exploration rounds. Passed 31 related regressions, production build and curriculum audit; content, pictures and all 4043 voice entries are unchanged. Evidence: specs/041-group-resume/verification/qa.md.
+
 ## 2026-09-28
 
 ### Enlightenment content and interaction corrections

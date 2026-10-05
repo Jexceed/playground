@@ -1,0 +1,116 @@
+Window: "小小思考屋", App: 小小思考屋.
+0 standard window 小小思考屋, Secondary Actions: Raise
+	1 scroll area
+		2 HTML content Description: 小小思考屋, URL: tauri://localhost
+			3 container
+				4 container 主题地图
+					5 image 小小思考屋 亲子思维游戏
+					6 container 选择启蒙或探索
+						7 toggle button 启蒙, Value: on
+						8 toggle button 探索, Value: off
+					9 button (collapsed) 数字岛 122 题, Secondary Actions: Expand
+					10 button (expanded) 逻辑屋 规律、顺序、规则、计划 319 题, Secondary Actions: Collapse
+					11 button (collapsed) 图形工坊 48 题, Secondary Actions: Expand
+					12 container 关卡列表
+						13 container
+							14 text 启蒙  ·  逻辑屋
+						15 text 26  个
+						16 search text field (settable) 查找当前主题题组, Placeholder: 查找题组
+							17 text 查找题组
+						18 button 找规律火车 18 题
+						19 button 会变规则的分类机 11 题
+						20 button 停一下再行动 6 题
+						21 button 先做什么 24 题
+						22 button 故事和线索 7 题
+						23 button 条件小侦探 12 题
+						24 button 错了怎么改 12 题
+						25 button 先处理哪一个 12 题
+						26 button 按规则装书包 14 题
+						27 button 谁和谁一对 16 题
+						28 button 桥怎么搭 8 题
+						29 button 同类小侦探 12 题
+						30 button 数字规律小路 15 题
+						31 button 地图找宝物 12 题
+						32 button 图形补一补 6 题
+						33 button 方位小地图 12 题
+						34 button 记忆小相机 12 题
+						35 button 一模一样在哪里 12 题
+						36 button 找不同侦探 12 题
+						37 button 转一转方向 12 题
+						38 button 图卡少哪张 12 题
+						39 button 天平换一换 10 题
+						40 button 镜子折一折 12 题
+						41 button 积木楼层图 12 题
+						42 button 从哪边看 18 题
+						43 button 路线听指令 10 题
+				44 container 当前部分
+					45 text 启蒙
+					46 text 看图发现，轻松起步 40  组 ·  489  题
+				47 container 找规律火车
+					48 container
+						49 text 第  7  /  18  题 ·
+						50 container 难度 L4，中等：需要两步观察或简单比较，不能只看一个显眼线索。 观察 6 个连续位置，找重复或变化规则。主要训练模式识别、预测。, Help: 难度判定：中等：需要两步观察或简单比较，不能只看一个显眼线索。 观察 6 个连续位置，找重复或变化规则。主要训练模式识别、预测。
+							51 text 难度
+							52 text L4
+					53 heading 找规律，接下来是什么？, Value: 3
+						54 text 找规律，接下来是什么？
+					55 text 先说出重复的一组，再从左到右选空格里的图。
+					56 button 听题
+					57 container 题目画面
+						58 button 太阳
+						59 button 月亮
+						60 button 太阳
+						61 button 月亮
+						62 button 太阳
+						63 button 待补位置
+					64 button 月亮
+					65 button 太阳
+					66 button 星星
+					67 button 从头来
+					68 button 看看对不对
+				69 container 题目导航
+					70 text 题目导航
+					71 text 14  /  18  已做
+					72 button 跳到第 1 题，已做
+					73 button 跳到第 2 题，已做
+					74 button 跳到第 3 题，已做
+					75 button 跳到第 4 题，已做
+					76 button 跳到第 5 题，已做
+					77 button 跳到第 6 题，已做
+					78 button 跳到第 7 题
+					79 button 跳到第 8 题
+					80 button 跳到第 9 题，已做
+					81 button 跳到第 10 题，已做
+					82 button 跳到第 11 题，已做
+					83 button 跳到第 12 题，已做
+					84 button 跳到第 13 题，已做
+					85 button 跳到第 14 题，已做
+					86 button 跳到第 15 题，已做
+					87 button 跳到第 16 题，已做
+					88 button 跳到第 17 题
+					89 button 跳到第 18 题
+				90 container (expanded) Secondary Actions: Collapse
+					91 text 亲子提示卡
+					92 text 可以问：一组里有什么？它是不是一组一组重复？
+					93 summary 本题追问, Value: off
+						94 text 本题追问
+				95 container (expanded) Secondary Actions: Collapse
+					96 container
+						97 text 启蒙 成长记录
+					98 button 清空启蒙记录
+					99 container
+						100 text 已完成  273  /  489  题
+					101 text 模式识别 预测 证据推理 排除法 解释理由 影子配对 轮廓抽象 近似排除 抗颜色干扰 遮挡还原 可见线索 局部找整体 还有  97  个
+	102 close button
+	103 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	104 minimize button
+	105 text 小小思考屋
+106 menu bar
+	107 小小思考屋
+	108 File
+	109 Edit
+	110 View
+	111 Window
+	112 Help
+
+The focused UI element is 2 HTML content Description: 小小思考屋, URL: tauri://localhost

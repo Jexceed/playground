@@ -3,7 +3,7 @@ import { lazy, Suspense, useEffect, useMemo, useRef, useState } from "react";
 import { curriculumSections, getCurriculumSection, worlds, type CurriculumSectionId } from "./curriculum/catalog";
 import { ProgressiveSetGame } from "./games/ProgressiveSetGame";
 import { clearActivityProgress, mergeActivityProgress, readActivityProgress, readCatalogLocation, saveCatalogLocation } from "./services/activity-progress";
-import { readCurriculumNavigation, rememberCurriculumLocation, resolveSectionPlayLocation, saveCurriculumNavigation } from "./services/curriculum-navigation";
+import { readCurriculumNavigation, rememberCurriculumLocation, resolveGamePlayLocation, resolveSectionPlayLocation, saveCurriculumNavigation } from "./services/curriculum-navigation";
 import { groupExplorationGames } from "./curriculum/exploration/navigation";
 import { ACTIVITY_COPY, type CatalogGame } from "./domain/activity";
 import { publicAsset } from "./publicAsset";
@@ -125,16 +125,10 @@ export function App() {
   }
 
   function chooseWorld(worldId: WorldId) {
+    if (worldId === activeWorld) return;
     setGameSearch("");
-    stopSpeech();
-    setActiveWorld(worldId);
     const firstGame = games.find((game) => game.world === worldId);
-    if (firstGame) {
-      setSelectedGameId(firstGame.id);
-      setRequestedRoundIndex(0);
-      requestRoundRead();
-      revealActiveQuestion();
-    }
+    if (firstGame) chooseGame(firstGame.id);
   }
 
   function chooseSection(sectionId: CurriculumSectionId) {
@@ -151,9 +145,12 @@ export function App() {
   }
 
   function chooseGame(gameId: string) {
+    if (gameId === selectedGame.id) return;
     stopSpeech();
-    setSelectedGameId(gameId);
-    setRequestedRoundIndex(0);
+    const location = resolveGamePlayLocation(activeSectionId, gameId, navigation.current.gameLocations[gameId]);
+    setActiveWorld(location.worldId);
+    setSelectedGameId(location.gameId);
+    setRequestedRoundIndex(location.roundIndex);
     requestRoundRead();
     revealActiveQuestion();
   }

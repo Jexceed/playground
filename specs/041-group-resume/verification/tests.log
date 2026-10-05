@@ -1,0 +1,39 @@
+✔ evidence events are idempotent and do not alter legacy records (0.594625ms)
+✔ future and malformed data are not overwritten (0.12025ms)
+✔ stable location uses IDs and leaves the old location untouched (0.396292ms)
+✔ completion display merges evidence without converting old game-level completion into rounds (0.182875ms)
+✔ 启蒙 and 探索 partition the complete catalog without duplicating or changing old questions (0.661625ms)
+✔ both old locations seed their own sections without overwriting storage (0.385958ms)
+✔ switching sections and restarting preserves two independent stable positions (0.204166ms)
+✔ a saved question ID resolves regardless of a stale index and cannot cross section boundaries (0.058042ms)
+✔ future, corrupt and unavailable navigation storage is preserved with usable defaults (0.12125ms)
+✔ each group keeps its own last question across switching and a fresh read (0.188709ms)
+✔ explicit reset changes only the selected group's remembered question (0.077583ms)
+✔ group resolution follows the stable question ID and stays inside the selected group (0.076625ms)
+✔ schema 1 migrates known section and legacy group positions without rewriting on read (0.130125ms)
+✔ invalid schema-2 maps are preserved and cannot overwrite other navigation history (0.1275ms)
+✔ removed questions or groups do not discard the other groups' saved positions (0.100833ms)
+✔ all stable enlightenment identities and exploration content are preserved (6.170208ms)
+✔ answer positions stay balanced without long runs or a repeating group-wide cycle (0.641417ms)
+✔ reordering preserves each drawn option, semantic answer and display letter (0.388417ms)
+✔ quantity pictures independently agree with addition, subtraction, sharing and grouping (0.188084ms)
+✔ a timed observation cannot silently start on navigation and interruption reopens readiness (0.087333ms)
+✔ jumping to the last round does not invent earlier completion or ability evidence (0.0615ms)
+✔ memory options have exactly one answer supported by the visible sequence (0.136333ms)
+✔ missing and extra picture cards match independent multiset differences (0.098125ms)
+✔ corrected number pairs have a visible repeated rule and no nonexistent color cue (0.061083ms)
+✔ bridge plans span every supported gap, not only enough total wood (0.122ms)
+✔ story corrections specify needs and do not confuse game rules with crossing a road (0.121125ms)
+✔ layer cards expose the exact aligned positions and their opaque stacking order (0.151542ms)
+✔ code-table queries are not always the first example and maps independently determine the answer (0.07975ms)
+✔ counting evidence is not always the middle group and numeric distractors stay nearby (0.268625ms)
+✔ round navigator clicks request an immediate round read (0.856625ms)
+✔ game surface reads the requested target round instead of only the current render (0.122042ms)
+ℹ tests 31
+ℹ suites 0
+ℹ pass 31
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 592.263125

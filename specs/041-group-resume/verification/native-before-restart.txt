@@ -1,0 +1,93 @@
+Window: "小小思考屋", App: 小小思考屋.
+0 standard window 小小思考屋, Secondary Actions: Raise
+	1 scroll area
+		2 HTML content Description: 小小思考屋, URL: tauri://localhost
+			3 container
+				4 container 主题地图
+					5 image 小小思考屋 亲子思维游戏
+					6 container 选择启蒙或探索
+						7 toggle button 启蒙, Value: on
+						8 toggle button 探索, Value: off
+					9 button (expanded) 数字岛 数数、比较、加减、分组、时钟 122 题, Secondary Actions: Collapse
+					10 button (collapsed) 逻辑屋 319 题, Secondary Actions: Expand
+					11 button (collapsed) 图形工坊 48 题, Secondary Actions: Expand
+					12 container 关卡列表
+						13 container
+							14 text 启蒙  ·  数字岛
+						15 text 8  个
+						16 search text field (settable) 查找当前主题题组, Placeholder: 查找题组
+							17 text 查找题组
+						18 button 数一数 18 题
+						19 button 一眼看出来 15 题
+						20 button 多一点，少一点 12 题
+						21 button 合起来，拆开来 28 题
+						22 button 小鸟飞走了 12 题
+						23 button 公平分一分 13 题
+						24 button 几个几个数 12 题
+						25 button 时钟小管家 12 题
+				26 container 当前部分
+					27 text 启蒙
+					28 text 看图发现，轻松起步 40  组 ·  489  题
+				29 container 一眼看出来
+					30 container
+						31 text 第  11  /  15  题 ·
+						32 container 难度 L2，基础：需要稳定匹配图、数量或声音线索。 比较 1 组图卡，找共同点、差异或缺失项。主要训练小数量辨认、数量结构。, Help: 难度判定：基础：需要稳定匹配图、数量或声音线索。 比较 1 组图卡，找共同点、差异或缺失项。主要训练小数量辨认、数量结构。
+							33 text 难度
+							34 text L2
+					35 heading 看一眼，这里有几个？, Value: 3
+						36 text 看一眼，这里有几个？
+					37 text 准备好再开始。看两秒，遮住后选出数量，也可以再看一次。
+					38 button 听题
+					39 container 题目画面
+						40 text 看一眼
+						41 container 点阵已遮住
+						42 button 准备好了，看两秒
+					43 text 准备好再看，图卡会显示两秒。
+					44 button (disabled) 1
+					45 button (disabled) 3
+					46 button (disabled) 2
+					47 button 从头来
+					48 button (disabled) 看看对不对
+				49 container 题目导航
+					50 text 题目导航
+					51 text 0  /  15  已做
+					52 button 跳到第 1 题
+					53 button 跳到第 2 题
+					54 button 跳到第 3 题
+					55 button 跳到第 4 题
+					56 button 跳到第 5 题
+					57 button 跳到第 6 题
+					58 button 跳到第 7 题
+					59 button 跳到第 8 题
+					60 button 跳到第 9 题
+					61 button 跳到第 10 题
+					62 button 跳到第 11 题
+					63 button 跳到第 12 题
+					64 button 跳到第 13 题
+					65 button 跳到第 14 题
+					66 button 跳到第 15 题
+				67 container (expanded) Secondary Actions: Collapse
+					68 text 亲子提示卡
+					69 text 可以问：你是一眼看出来的，还是一个个数出来的？
+					70 summary 本题追问, Value: off
+						71 text 本题追问
+				72 container (expanded) Secondary Actions: Collapse
+					73 container
+						74 text 启蒙 成长记录
+					75 button 清空启蒙记录
+					76 container
+						77 text 已完成  273  /  489  题
+					78 text 模式识别 预测 证据推理 排除法 解释理由 影子配对 轮廓抽象 近似排除 抗颜色干扰 遮挡还原 可见线索 局部找整体 还有  97  个
+	79 close button
+	80 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	81 minimize button
+	82 text 小小思考屋
+83 menu bar
+	84 小小思考屋
+	85 File
+	86 Edit
+	87 View
+	88 Window
+	89 Help
+
+The focused UI element is 2 HTML content Description: 小小思考屋, URL: tauri://localhost
