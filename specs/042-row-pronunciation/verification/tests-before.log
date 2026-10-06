@@ -1,0 +1,60 @@
+✖ row references support Chinese, digits, letters and adjacent coordinates (0.615708ms)
+✖ ordinary xing meanings stay intact even next to row instructions (0.093541ms)
+✔ pronunciation input is locale-scoped and idempotent (0.05525ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 1
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 191.718542
+
+✖ failing tests:
+
+test at scripts/speech-pronunciation.test.mjs:7:1
+✖ row references support Chinese, digits, letters and adjacent coordinates (0.615708ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+
+  + '第一行、第二行、第三行'
+  - '第一航、第二航、第三航'
+       ^
+
+      at TestContext.<anonymous> (file:///Users/chiang/.codex/worktrees/curriculum-benchmark/playground/scripts/speech-pronunciation.test.mjs:18:13)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.start (node:internal/test_runner/test:1242:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: '第一行、第二行、第三行',
+    expected: '第一航、第二航、第三航',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/speech-pronunciation.test.mjs:21:1
+✖ ordinary xing meanings stay intact even next to row instructions (0.093541ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+
+  + '看第一行，再执行列表中的行动：让行人安全通行，不要骑自行车逆行。平行、飞行、可行、不行、才行、进行、运行、旅行、行走、行驶、行为、行程、行星、行李、行礼。'
+  - '看第一航，再执行列表中的行动：让行人安全通行，不要骑自行车逆行。平行、飞行、可行、不行、才行、进行、运行、旅行、行走、行驶、行为、行程、行星、行李、行礼。'
+
+      at TestContext.<anonymous> (file:///Users/chiang/.codex/worktrees/curriculum-benchmark/playground/scripts/speech-pronunciation.test.mjs:23:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: '看第一行，再执行列表中的行动：让行人安全通行，不要骑自行车逆行。平行、飞行、可行、不行、才行、进行、运行、旅行、行走、行驶、行为、行程、行星、行李、行礼。',
+    expected: '看第一航，再执行列表中的行动：让行人安全通行，不要骑自行车逆行。平行、飞行、可行、不行、才行、进行、运行、旅行、行走、行驶、行为、行程、行星、行李、行礼。',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

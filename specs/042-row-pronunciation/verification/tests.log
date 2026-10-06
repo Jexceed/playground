@@ -1,0 +1,42 @@
+✔ 启蒙 and 探索 partition the complete catalog without duplicating or changing old questions (0.573792ms)
+✔ both old locations seed their own sections without overwriting storage (0.233834ms)
+✔ switching sections and restarting preserves two independent stable positions (0.180625ms)
+✔ a saved question ID resolves regardless of a stale index and cannot cross section boundaries (0.048583ms)
+✔ future, corrupt and unavailable navigation storage is preserved with usable defaults (0.111583ms)
+✔ each group keeps its own last question across switching and a fresh read (0.154583ms)
+✔ explicit reset changes only the selected group's remembered question (0.073334ms)
+✔ group resolution follows the stable question ID and stays inside the selected group (0.0715ms)
+✔ schema 1 migrates known section and legacy group positions without rewriting on read (0.1215ms)
+✔ invalid schema-2 maps are preserved and cannot overwrite other navigation history (0.122458ms)
+✔ removed questions or groups do not discard the other groups' saved positions (0.092833ms)
+✔ collectVoiceOrphans returns only unreferenced locale voice files (6.134792ms)
+✔ dry run preserves referenced and orphan files (3.677667ms)
+✔ write mode removes only orphans and preserves referenced and brand audio (3.567958ms)
+✔ round navigator clicks request an immediate round read (1.139042ms)
+✔ game surface reads the requested target round instead of only the current render (0.093875ms)
+✔ row references support Chinese, digits, letters and adjacent coordinates (0.527291ms)
+✔ ordinary xing meanings stay intact even next to row instructions (0.063458ms)
+✔ pronunciation input is locale-scoped and idempotent (0.041916ms)
+✔ pronunciation changes invalidate audio URLs while untouched lines keep their cached asset (0.633334ms)
+✔ original row text still resolves the corrected local clip without TTS fallback (39.444041ms)
+✔ missing or failed local audio applies the same row pronunciation to browser fallback (23.449292ms)
+✔ same text in different locales never substitutes another language's local clip (8.650292ms)
+✔ required listening completes only on ended, and cancellation or missing media never count as completion (11.007875ms)
+✔ new speech requests invalidate stale requests before the manifest finishes loading (8.4125ms)
+✔ stopSpeech immediately pauses local audio and prevents pending speech from starting (13.52925ms)
+✔ English listening sentences also have a word-count duration floor (0.45ms)
+✔ inspectMp3 reads complete Edge MPEG-2 Layer III frames (0.633834ms)
+✔ inspectMp3 rejects data without complete MP3 frames (0.089541ms)
+✔ inspectMp3 rejects a truncated final frame (0.073958ms)
+✔ sentence-length Chinese audio must be plausible for its text (0.120166ms)
+✔ short choices use the absolute media floor instead of sentence ratio (0.291167ms)
+✔ normal sentence duration passes the conservative threshold (0.205459ms)
+✔ inspectVoiceFile reports missing files and validates present media (4.079333ms)
+ℹ tests 34
+ℹ suites 0
+ℹ pass 34
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 497.848792

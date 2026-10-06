@@ -10,7 +10,7 @@
     "preview": "vite preview --host 0.0.0.0",
     "release:nas": "node scripts/build-release.mjs",
     "test:release": "node --test scripts/build-release.test.mjs",
-    "test:speech": "node --test scripts/speech.test.mjs scripts/round-speech-navigation.test.mjs",
+    "test:speech": "node --test scripts/speech.test.mjs scripts/round-speech-navigation.test.mjs scripts/speech-pronunciation.test.mjs",
     "test:voice-assets": "node --test scripts/prune-voice-assets.test.mjs scripts/voice-media-quality.test.mjs",
     "mac:dev": ". \"$HOME/.cargo/env\" 2>/dev/null || true; tauri dev",
     "mac:build": ". \"$HOME/.cargo/env\" 2>/dev/null || true; tauri build --bundles app --target aarch64-apple-darwin",

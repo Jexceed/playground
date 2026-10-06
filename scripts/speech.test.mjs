@@ -18,9 +18,13 @@ async function importSpeechWithBrowser(browser) {
   const browserOutput = outputText.replace(
     'import { publicAsset } from "./publicAsset";',
     "const publicAsset = (path) => path;",
-  );
+  ).replace('from "./speech-pronunciation"', 'from "./speech-pronunciation.mjs"');
   const dir = await mkdtemp(join(tmpdir(), "thinking-house-speech-"));
   const modulePath = join(dir, "speech.mjs");
+  const pronunciationSource = await readFile(new URL("../src/speech-pronunciation.ts", import.meta.url), "utf8");
+  await writeFile(join(dir, "speech-pronunciation.mjs"), ts.transpileModule(pronunciationSource, {
+    compilerOptions: { module: ts.ModuleKind.ES2020, target: ts.ScriptTarget.ES2020 },
+  }).outputText);
   await writeFile(modulePath, browserOutput);
   const mod = await import(`${pathToFileURL(modulePath).href}?t=${Date.now()}-${Math.random()}`);
   return {
@@ -38,13 +42,14 @@ function createBrowserHarness({ manifest }) {
   const audioInstances = [];
   const speechSynthesis = {
     cancelCalls: 0,
+    utterances: [],
     cancel() {
       this.cancelCalls += 1;
     },
     getVoices() {
       return [{ lang: "zh-CN", name: "Xiaoxiao" }];
     },
-    speak() {},
+    speak(utterance) { this.utterances.push(utterance); },
   };
   class MockAudio {
     constructor(src) {
@@ -101,6 +106,32 @@ function deferredManifest(manifest) {
   });
   return { ready, resolve };
 }
+
+test("original row text still resolves the corrected local clip without TTS fallback", async () => {
+  const text = "先看第一行再行动";
+  const src = "/audio/voice/prompt-pron-corrected.mp3";
+  const browser = createBrowserHarness({ manifest: { entries: [{ text, spokenText: "先看第一航再行动", src, locale: "zh-CN" }] } });
+  const { mod, cleanup } = await importSpeechWithBrowser(browser);
+  try {
+    await mod.speak(text);
+    assert.equal(browser.audioInstances[0].src, src);
+    assert.equal(browser.audioInstances[0].playCalls, 1);
+    assert.equal(browser.speechSynthesis.utterances.length, 0);
+  } finally { await cleanup(); }
+});
+
+test("missing or failed local audio applies the same row pronunciation to browser fallback", async () => {
+  for (const hasLocal of [false, true]) {
+    const text = "先看第一行再行动";
+    const browser = createBrowserHarness({ manifest: { entries: hasLocal ? [{ text, src: "/audio/broken.mp3" }] : [] } });
+    const { mod, cleanup } = await importSpeechWithBrowser(browser);
+    try {
+      await mod.speak(text);
+      if (hasLocal) browser.audioInstances[0].onerror();
+      assert.equal(browser.speechSynthesis.utterances[0].text, "先看第一航再行动");
+    } finally { await cleanup(); }
+  }
+});
 
 test("same text in different locales never substitutes another language's local clip", async () => {
   const browser = createBrowserHarness({ manifest: { entries: [

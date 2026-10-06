@@ -1,0 +1,2023 @@
+[
+  {
+    "id": "prompt-分类机要红色-也要圆形-选哪一张-两个条件都要满足-少一个都不行",
+    "kind": "prompt",
+    "text": "分类机要红色，也要圆形。选哪一张？两个条件都要满足，少一个都不行。",
+    "spokenText": "分类机要红色，也要圆形。选哪一张？两个条件都要满足，少一个都不行。",
+    "disposition": "preserve-xing",
+    "contexts": [
+      "logic-sorter-switch/logic-sorter-switch-9"
+    ]
+  },
+  {
+    "id": "retry-两个条件都要看-红色和圆形都对才行",
+    "kind": "retry",
+    "text": "两个条件都要看：红色和圆形都对才行。",
+    "spokenText": "两个条件都要看：红色和圆形都对才行。",
+    "disposition": "preserve-xing",
+    "contexts": [
+      "logic-sorter-switch/logic-sorter-switch-9"
+    ]
+  },
+  {
+    "id": "prompt-分类机要蓝色-也要方形-哪一张两个条件都对-两个条件都要满足-少一个都不行",
+    "kind": "prompt",
+    "text": "分类机要蓝色，也要方形。哪一张两个条件都对？两个条件都要满足，少一个都不行。",
+    "spokenText": "分类机要蓝色，也要方形。哪一张两个条件都对？两个条件都要满足，少一个都不行。",
+    "disposition": "preserve-xing",
+    "contexts": [
+      "logic-sorter-switch/logic-sorter-switch-10"
+    ]
+  },
+  {
+    "id": "retry-两个条件都要看-蓝色和方形都对才行",
+    "kind": "retry",
+    "text": "两个条件都要看：蓝色和方形都对才行。",
+    "spokenText": "两个条件都要看：蓝色和方形都对才行。",
+    "disposition": "preserve-xing",
+    "contexts": [
+      "logic-sorter-switch/logic-sorter-switch-10"
+    ]
+  },
+  {
+    "id": "prompt-分类机要黄色-也要圆形-哪一张两个条件都对-两个条件都要满足-少一个都不行",
+    "kind": "prompt",
+    "text": "分类机要黄色，也要圆形。哪一张两个条件都对？两个条件都要满足，少一个都不行。",
+    "spokenText": "分类机要黄色，也要圆形。哪一张两个条件都对？两个条件都要满足，少一个都不行。",
+    "disposition": "preserve-xing",
+    "contexts": [
+      "logic-sorter-switch/logic-sorter-switch-11"
+    ]
+  },
+  {
+    "id": "retry-两个条件都要看-黄色和圆形都对才行",
+    "kind": "retry",
+    "text": "两个条件都要看：黄色和圆形都对才行。",
+    "spokenText": "两个条件都要看：黄色和圆形都对才行。",
+    "disposition": "preserve-xing",
+    "contexts": [
+      "logic-sorter-switch/logic-sorter-switch-11"
+    ]
+  },
+  {
+    "id": "game-title-停一下再行动",
+    "kind": "game-title",
+    "text": "停一下再行动",
+    "spokenText": "停一下再行动",
+    "disposition": "preserve-xing",
+    "contexts": [
+      "logic-stop-think"
+    ]
+  },
+  {
+    "id": "game-goal-训练抑制控制和按规则行动",
+    "kind": "game-goal",
+    "text": "训练抑制控制和按规则行动。",
+    "spokenText": "训练抑制控制和按规则行动。",
+    "disposition": "preserve-xing",
+    "contexts": [
+      "logic-stop-think"
+    ]
+  },
+  {
+    "id": "prompt-行人绿灯亮了-车辆已停-路面安全-和大人一起可以做什么-条件满足了-再选择行动",
+    "kind": "prompt",
+    "text": "行人绿灯亮了，车辆已停、路面安全。和大人一起可以做什么？条件满足了，再选择行动。",
+    "spokenText": "行人绿灯亮了，车辆已停、路面安全。和大人一起可以做什么？条件满足了，再选择行动。",
+    "disposition": "preserve-xing",
+    "contexts": [
+      "logic-condition-detective/logic-condition-detective-3"
+    ]
+  },
+  {
+    "id": "success-行人绿灯亮了-还要确认车辆已停-路面安全-再和大人一起走过去",
+    "kind": "success",
+    "text": "行人绿灯亮了，还要确认车辆已停、路面安全，再和大人一起走过去。",
+    "spokenText": "行人绿灯亮了，还要确认车辆已停、路面安全，再和大人一起走过去。",
+    "disposition": "preserve-xing",
+    "contexts": [
+      "logic-condition-detective/logic-condition-detective-3"
+    ]
+  },
+  {
+    "id": "prompt-行人绿灯亮了-大人已确认车辆停稳-路面安全-接下来可以怎么做-条件已经满足时-要改变动作",
+    "kind": "prompt",
+    "text": "行人绿灯亮了，大人已确认车辆停稳、路面安全，接下来可以怎么做？条件已经满足时，要改变动作。",
+    "spokenText": "行人绿灯亮了，大人已确认车辆停稳、路面安全，接下来可以怎么做？条件已经满足时，要改变动作。",
+    "disposition": "preserve-xing",
+    "contexts": [
+      "logic-fix-plan/logic-fix-plan-3"
+    ]
+  },
+  {
+    "id": "success-行人绿灯亮了-确认安全后-可以和大人一起走过去",
+    "kind": "success",
+    "text": "行人绿灯亮了，确认安全后，可以和大人一起走过去。",
+    "spokenText": "行人绿灯亮了，确认安全后，可以和大人一起走过去。",
+    "disposition": "preserve-xing",
+    "contexts": [
+      "logic-fix-plan/logic-fix-plan-3"
+    ]
+  },
+  {
+    "id": "parent-问她-有几个线索时-哪个最能决定行动",
+    "kind": "parent",
+    "text": "问她：有几个线索时，哪个最能决定行动？",
+    "spokenText": "问她：有几个线索时，哪个最能决定行动？",
+    "disposition": "preserve-xing",
+    "contexts": [
+      "logic-priority-choice/logic-priority-choice-7"
+    ]
+  },
+  {
+    "id": "prompt-要配成-动物和它飞行的地方-小鸟应该配谁-这次找飞行的地方-不是找另一个会飞的东西",
+    "kind": "prompt",
+    "text": "要配成“动物和它飞行的地方”，小鸟应该配谁？这次找飞行的地方，不是找另一个会飞的东西。",
+    "spokenText": "要配成“动物和它飞行的地方”，小鸟应该配谁？这次找飞行的地方，不是找另一个会飞的东西。",
+    "disposition": "preserve-xing",
+    "contexts": [
+      "logic-relation-pairs/best-reason"
+    ]
+  },
+  {
+    "id": "success-小鸟在天空飞-风筝也会在天上-但它是物品-不是飞行的地方",
+    "kind": "success",
+    "text": "小鸟在天空飞。风筝也会在天上，但它是物品，不是飞行的地方。",
+    "spokenText": "小鸟在天空飞。风筝也会在天上，但它是物品，不是飞行的地方。",
+    "disposition": "preserve-xing",
+    "contexts": [
+      "logic-relation-pairs/best-reason"
+    ]
+  },
+  {
+    "id": "object-自行车",
+    "kind": "object",
+    "text": "自行车",
+    "spokenText": "自行车",
+    "disposition": "preserve-xing",
+    "contexts": [
+      "logic-same-kind-detective/logic-same-kind-detective-2",
+      "logic-difference-detective/logic-difference-detective-6"
+    ]
+  },
+  {
+    "id": "game-goal-训练二维定位-行列对应和工作记忆",
+    "kind": "game-goal",
+    "text": "训练二维定位、行列对应和工作记忆。",
+    "spokenText": "训练二维定位、航列对应和工作记忆。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-address-map"
+    ]
+  },
+  {
+    "id": "parent-请她先找字母行-再找数字列-最后说出交叉的格子",
+    "kind": "parent",
+    "text": "请她先找字母行，再找数字列，最后说出交叉的格子。",
+    "spokenText": "请她先找字母航，再找数字列，最后说出交叉的格子。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-address-map"
+    ]
+  },
+  {
+    "id": "prompt-a1-里藏着什么-先找字母行-再找数字列",
+    "kind": "prompt",
+    "text": "A1 里藏着什么？先找字母行，再找数字列。",
+    "spokenText": "A1 里藏着什么？先找字母航，再找数字列。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-address-map/logic-address-map-1"
+    ]
+  },
+  {
+    "id": "success-a1-是-a-行-1-列-格子里是小鸟",
+    "kind": "success",
+    "text": "A1 是 A 行 1 列，格子里是小鸟。",
+    "spokenText": "A1 是 A 航 1 列，格子里是小鸟。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-address-map/logic-address-map-1"
+    ]
+  },
+  {
+    "id": "retry-先找到-a-行-再横着找到-1-列-不要先猜物品",
+    "kind": "retry",
+    "text": "先找到 A 行，再横着找到 1 列，不要先猜物品。",
+    "spokenText": "先找到 A 航，再横着找到 1 列，不要先猜物品。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-address-map/logic-address-map-1"
+    ]
+  },
+  {
+    "id": "parent-请她指着-a-行和-1-列交叉的格子-说为什么是小鸟",
+    "kind": "parent",
+    "text": "请她指着 A 行和 1 列交叉的格子，说为什么是小鸟。",
+    "spokenText": "请她指着 A 航和 1 列交叉的格子，说为什么是小鸟。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-address-map/logic-address-map-1"
+    ]
+  },
+  {
+    "id": "prompt-a3-里藏着什么-先找字母行-再找数字列",
+    "kind": "prompt",
+    "text": "A3 里藏着什么？先找字母行，再找数字列。",
+    "spokenText": "A3 里藏着什么？先找字母航，再找数字列。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-address-map/logic-address-map-2"
+    ]
+  },
+  {
+    "id": "success-a3-是-a-行-3-列-格子里是积木塔",
+    "kind": "success",
+    "text": "A3 是 A 行 3 列，格子里是积木塔。",
+    "spokenText": "A3 是 A 航 3 列，格子里是积木塔。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-address-map/logic-address-map-2"
+    ]
+  },
+  {
+    "id": "retry-先找到-a-行-再横着找到-3-列-不要先猜物品",
+    "kind": "retry",
+    "text": "先找到 A 行，再横着找到 3 列，不要先猜物品。",
+    "spokenText": "先找到 A 航，再横着找到 3 列，不要先猜物品。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-address-map/logic-address-map-2"
+    ]
+  },
+  {
+    "id": "parent-请她指着-a-行和-3-列交叉的格子-说为什么是积木塔",
+    "kind": "parent",
+    "text": "请她指着 A 行和 3 列交叉的格子，说为什么是积木塔。",
+    "spokenText": "请她指着 A 航和 3 列交叉的格子，说为什么是积木塔。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-address-map/logic-address-map-2"
+    ]
+  },
+  {
+    "id": "prompt-b2-里藏着什么-先找字母行-再找数字列",
+    "kind": "prompt",
+    "text": "B2 里藏着什么？先找字母行，再找数字列。",
+    "spokenText": "B2 里藏着什么？先找字母航，再找数字列。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-address-map/logic-address-map-3"
+    ]
+  },
+  {
+    "id": "success-b2-是-b-行-2-列-格子里是小猫",
+    "kind": "success",
+    "text": "B2 是 B 行 2 列，格子里是小猫。",
+    "spokenText": "B2 是 B 航 2 列，格子里是小猫。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-address-map/logic-address-map-3"
+    ]
+  },
+  {
+    "id": "retry-先找到-b-行-再横着找到-2-列-不要先猜物品",
+    "kind": "retry",
+    "text": "先找到 B 行，再横着找到 2 列，不要先猜物品。",
+    "spokenText": "先找到 B 航，再横着找到 2 列，不要先猜物品。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-address-map/logic-address-map-3"
+    ]
+  },
+  {
+    "id": "parent-请她指着-b-行和-2-列交叉的格子-说为什么是小猫",
+    "kind": "parent",
+    "text": "请她指着 B 行和 2 列交叉的格子，说为什么是小猫。",
+    "spokenText": "请她指着 B 航和 2 列交叉的格子，说为什么是小猫。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-address-map/logic-address-map-3"
+    ]
+  },
+  {
+    "id": "prompt-c1-里藏着什么-先找字母行-再找数字列",
+    "kind": "prompt",
+    "text": "C1 里藏着什么？先找字母行，再找数字列。",
+    "spokenText": "C1 里藏着什么？先找字母航，再找数字列。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-address-map/logic-address-map-4"
+    ]
+  },
+  {
+    "id": "success-c1-是-c-行-1-列-格子里是书包",
+    "kind": "success",
+    "text": "C1 是 C 行 1 列，格子里是书包。",
+    "spokenText": "C1 是 C 航 1 列，格子里是书包。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-address-map/logic-address-map-4"
+    ]
+  },
+  {
+    "id": "retry-先找到-c-行-再横着找到-1-列-不要先猜物品",
+    "kind": "retry",
+    "text": "先找到 C 行，再横着找到 1 列，不要先猜物品。",
+    "spokenText": "先找到 C 航，再横着找到 1 列，不要先猜物品。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-address-map/logic-address-map-4"
+    ]
+  },
+  {
+    "id": "parent-请她指着-c-行和-1-列交叉的格子-说为什么是书包",
+    "kind": "parent",
+    "text": "请她指着 C 行和 1 列交叉的格子，说为什么是书包。",
+    "spokenText": "请她指着 C 航和 1 列交叉的格子，说为什么是书包。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-address-map/logic-address-map-4"
+    ]
+  },
+  {
+    "id": "prompt-a4-里藏着什么-先找字母行-再找数字列",
+    "kind": "prompt",
+    "text": "A4 里藏着什么？先找字母行，再找数字列。",
+    "spokenText": "A4 里藏着什么？先找字母航，再找数字列。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-address-map/logic-address-map-5"
+    ]
+  },
+  {
+    "id": "success-a4-是-a-行-4-列-格子里是铅笔",
+    "kind": "success",
+    "text": "A4 是 A 行 4 列，格子里是铅笔。",
+    "spokenText": "A4 是 A 航 4 列，格子里是铅笔。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-address-map/logic-address-map-5"
+    ]
+  },
+  {
+    "id": "retry-先找到-a-行-再横着找到-4-列-不要先猜物品",
+    "kind": "retry",
+    "text": "先找到 A 行，再横着找到 4 列，不要先猜物品。",
+    "spokenText": "先找到 A 航，再横着找到 4 列，不要先猜物品。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-address-map/logic-address-map-5"
+    ]
+  },
+  {
+    "id": "parent-请她指着-a-行和-4-列交叉的格子-说为什么是铅笔",
+    "kind": "parent",
+    "text": "请她指着 A 行和 4 列交叉的格子，说为什么是铅笔。",
+    "spokenText": "请她指着 A 航和 4 列交叉的格子，说为什么是铅笔。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-address-map/logic-address-map-5"
+    ]
+  },
+  {
+    "id": "prompt-b3-里藏着什么-先找字母行-再找数字列",
+    "kind": "prompt",
+    "text": "B3 里藏着什么？先找字母行，再找数字列。",
+    "spokenText": "B3 里藏着什么？先找字母航，再找数字列。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-address-map/logic-address-map-6"
+    ]
+  },
+  {
+    "id": "success-b3-是-b-行-3-列-格子里是积木塔",
+    "kind": "success",
+    "text": "B3 是 B 行 3 列，格子里是积木塔。",
+    "spokenText": "B3 是 B 航 3 列，格子里是积木塔。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-address-map/logic-address-map-6"
+    ]
+  },
+  {
+    "id": "retry-先找到-b-行-再横着找到-3-列-不要先猜物品",
+    "kind": "retry",
+    "text": "先找到 B 行，再横着找到 3 列，不要先猜物品。",
+    "spokenText": "先找到 B 航，再横着找到 3 列，不要先猜物品。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-address-map/logic-address-map-6"
+    ]
+  },
+  {
+    "id": "parent-请她指着-b-行和-3-列交叉的格子-说为什么是积木塔",
+    "kind": "parent",
+    "text": "请她指着 B 行和 3 列交叉的格子，说为什么是积木塔。",
+    "spokenText": "请她指着 B 航和 3 列交叉的格子，说为什么是积木塔。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-address-map/logic-address-map-6"
+    ]
+  },
+  {
+    "id": "prompt-c2-里藏着什么-先找字母行-再找数字列",
+    "kind": "prompt",
+    "text": "C2 里藏着什么？先找字母行，再找数字列。",
+    "spokenText": "C2 里藏着什么？先找字母航，再找数字列。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-address-map/logic-address-map-7"
+    ]
+  },
+  {
+    "id": "success-c2-是-c-行-2-列-格子里是小鱼",
+    "kind": "success",
+    "text": "C2 是 C 行 2 列，格子里是小鱼。",
+    "spokenText": "C2 是 C 航 2 列，格子里是小鱼。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-address-map/logic-address-map-7"
+    ]
+  },
+  {
+    "id": "retry-先找到-c-行-再横着找到-2-列-不要先猜物品",
+    "kind": "retry",
+    "text": "先找到 C 行，再横着找到 2 列，不要先猜物品。",
+    "spokenText": "先找到 C 航，再横着找到 2 列，不要先猜物品。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-address-map/logic-address-map-7"
+    ]
+  },
+  {
+    "id": "parent-请她指着-c-行和-2-列交叉的格子-说为什么是小鱼",
+    "kind": "parent",
+    "text": "请她指着 C 行和 2 列交叉的格子，说为什么是小鱼。",
+    "spokenText": "请她指着 C 航和 2 列交叉的格子，说为什么是小鱼。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-address-map/logic-address-map-7"
+    ]
+  },
+  {
+    "id": "prompt-d4-里藏着什么-先找字母行-再找数字列",
+    "kind": "prompt",
+    "text": "D4 里藏着什么？先找字母行，再找数字列。",
+    "spokenText": "D4 里藏着什么？先找字母航，再找数字列。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-address-map/logic-address-map-8"
+    ]
+  },
+  {
+    "id": "success-d4-是-d-行-4-列-格子里是草莓",
+    "kind": "success",
+    "text": "D4 是 D 行 4 列，格子里是草莓。",
+    "spokenText": "D4 是 D 航 4 列，格子里是草莓。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-address-map/logic-address-map-8"
+    ]
+  },
+  {
+    "id": "retry-先找到-d-行-再横着找到-4-列-不要先猜物品",
+    "kind": "retry",
+    "text": "先找到 D 行，再横着找到 4 列，不要先猜物品。",
+    "spokenText": "先找到 D 航，再横着找到 4 列，不要先猜物品。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-address-map/logic-address-map-8"
+    ]
+  },
+  {
+    "id": "parent-请她指着-d-行和-4-列交叉的格子-说为什么是草莓",
+    "kind": "parent",
+    "text": "请她指着 D 行和 4 列交叉的格子，说为什么是草莓。",
+    "spokenText": "请她指着 D 航和 4 列交叉的格子，说为什么是草莓。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-address-map/logic-address-map-8"
+    ]
+  },
+  {
+    "id": "success-小狗在-a-行-2-列-所以地址是-a2",
+    "kind": "success",
+    "text": "小狗在 A 行 2 列，所以地址是 A2。",
+    "spokenText": "小狗在 A 航 2 列，所以地址是 A2。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-address-map/logic-address-map-9"
+    ]
+  },
+  {
+    "id": "retry-先在图里找到小狗-再读这一行的字母和这一列的数字",
+    "kind": "retry",
+    "text": "先在图里找到小狗，再读这一行的字母和这一列的数字。",
+    "spokenText": "先在图里找到小狗，再读这一航的字母和这一列的数字。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-address-map/logic-address-map-9"
+    ]
+  },
+  {
+    "id": "parent-请她指着小狗-说它在-a-行-2-列-所以地址是-a2",
+    "kind": "parent",
+    "text": "请她指着小狗，说它在 A 行、2 列，所以地址是 A2。",
+    "spokenText": "请她指着小狗，说它在 A 航、2 列，所以地址是 A2。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-address-map/logic-address-map-9"
+    ]
+  },
+  {
+    "id": "success-葡萄在-c-行-3-列-所以地址是-c3",
+    "kind": "success",
+    "text": "葡萄在 C 行 3 列，所以地址是 C3。",
+    "spokenText": "葡萄在 C 航 3 列，所以地址是 C3。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-address-map/logic-address-map-10"
+    ]
+  },
+  {
+    "id": "retry-先在图里找到葡萄-再读这一行的字母和这一列的数字",
+    "kind": "retry",
+    "text": "先在图里找到葡萄，再读这一行的字母和这一列的数字。",
+    "spokenText": "先在图里找到葡萄，再读这一航的字母和这一列的数字。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-address-map/logic-address-map-10"
+    ]
+  },
+  {
+    "id": "parent-请她指着葡萄-说它在-c-行-3-列-所以地址是-c3",
+    "kind": "parent",
+    "text": "请她指着葡萄，说它在 C 行、3 列，所以地址是 C3。",
+    "spokenText": "请她指着葡萄，说它在 C 航、3 列，所以地址是 C3。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-address-map/logic-address-map-10"
+    ]
+  },
+  {
+    "id": "success-足球在-a-行-3-列-所以地址是-a3",
+    "kind": "success",
+    "text": "足球在 A 行 3 列，所以地址是 A3。",
+    "spokenText": "足球在 A 航 3 列，所以地址是 A3。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-address-map/logic-address-map-11"
+    ]
+  },
+  {
+    "id": "retry-先在图里找到足球-再读这一行的字母和这一列的数字",
+    "kind": "retry",
+    "text": "先在图里找到足球，再读这一行的字母和这一列的数字。",
+    "spokenText": "先在图里找到足球，再读这一航的字母和这一列的数字。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-address-map/logic-address-map-11"
+    ]
+  },
+  {
+    "id": "parent-请她指着足球-说它在-a-行-3-列-所以地址是-a3",
+    "kind": "parent",
+    "text": "请她指着足球，说它在 A 行、3 列，所以地址是 A3。",
+    "spokenText": "请她指着足球，说它在 A 航、3 列，所以地址是 A3。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-address-map/logic-address-map-11"
+    ]
+  },
+  {
+    "id": "success-蛋糕在-d-行-3-列-所以地址是-d3",
+    "kind": "success",
+    "text": "蛋糕在 D 行 3 列，所以地址是 D3。",
+    "spokenText": "蛋糕在 D 航 3 列，所以地址是 D3。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-address-map/logic-address-map-12"
+    ]
+  },
+  {
+    "id": "retry-先在图里找到蛋糕-再读这一行的字母和这一列的数字",
+    "kind": "retry",
+    "text": "先在图里找到蛋糕，再读这一行的字母和这一列的数字。",
+    "spokenText": "先在图里找到蛋糕，再读这一航的字母和这一列的数字。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-address-map/logic-address-map-12"
+    ]
+  },
+  {
+    "id": "parent-请她指着蛋糕-说它在-d-行-3-列-所以地址是-d3",
+    "kind": "parent",
+    "text": "请她指着蛋糕，说它在 D 行、3 列，所以地址是 D3。",
+    "spokenText": "请她指着蛋糕，说它在 D 航、3 列，所以地址是 D3。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-address-map/logic-address-map-12"
+    ]
+  },
+  {
+    "id": "parent-问她-这一行少了什么-这一列有没有同样的办法",
+    "kind": "parent",
+    "text": "问她：这一行少了什么？这一列有没有同样的办法？",
+    "spokenText": "问她：这一航少了什么？这一列有没有同样的办法？",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-matrix-puzzle"
+    ]
+  },
+  {
+    "id": "prompt-空格里应该放什么-先读完整的第一行-再用同样规则补第三行",
+    "kind": "prompt",
+    "text": "空格里应该放什么？先读完整的第一行，再用同样规则补第三行。",
+    "spokenText": "空格里应该放什么？先读完整的第一航，再用同样规则补第三航。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-matrix-puzzle/logic-matrix-puzzle-1",
+      "logic-matrix-puzzle/logic-matrix-puzzle-2",
+      "logic-matrix-puzzle/logic-matrix-puzzle-3",
+      "logic-matrix-puzzle/logic-matrix-puzzle-4",
+      "logic-matrix-puzzle/logic-matrix-puzzle-5",
+      "logic-matrix-puzzle/logic-matrix-puzzle-6"
+    ]
+  },
+  {
+    "id": "success-第一行是-和-合起来变成-第三行是-和-所以空格补",
+    "kind": "success",
+    "text": "第一行是 🔴 和 🔵，合起来变成 🔴🔵；第三行是 🟣 和 🔴，所以空格补 🟣🔴。",
+    "spokenText": "第一航是 🔴 和 🔵，合起来变成 🔴🔵；第三航是 🟣 和 🔴，所以空格补 🟣🔴。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-matrix-puzzle/logic-matrix-puzzle-1"
+    ]
+  },
+  {
+    "id": "retry-先读第一行这个完整行-前两个合成最后一个-再看第三行缺的空格",
+    "kind": "retry",
+    "text": "先读第一行这个完整行：前两个合成最后一个；再看第三行缺的空格。",
+    "spokenText": "先读第一航这个完整航：前两个合成最后一个；再看第三航缺的空格。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-matrix-puzzle/logic-matrix-puzzle-1"
+    ]
+  },
+  {
+    "id": "parent-请她说第一行怎么合起来-再说第三行-和-用同一个规则为什么补",
+    "kind": "parent",
+    "text": "请她说第一行怎么合起来，再说第三行 🟣 和 🔴 用同一个规则为什么补 🟣🔴。",
+    "spokenText": "请她说第一航怎么合起来，再说第三航 🟣 和 🔴 用同一个规则为什么补 🟣🔴。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-matrix-puzzle/logic-matrix-puzzle-1"
+    ]
+  },
+  {
+    "id": "success-第一行是-第一个又回来-第三行是-所以空格补",
+    "kind": "success",
+    "text": "第一行是 🍎、🍊、🍎，第一个又回来；第三行是 🔴、🔵，所以空格补 🔴。",
+    "spokenText": "第一航是 🍎、🍊、🍎，第一个又回来；第三航是 🔴、🔵，所以空格补 🔴。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-matrix-puzzle/logic-matrix-puzzle-2"
+    ]
+  },
+  {
+    "id": "retry-先读第一行这个完整行-第一-第二-再回到第一-再看第三行缺的空格",
+    "kind": "retry",
+    "text": "先读第一行这个完整行：第一、第二、再回到第一；再看第三行缺的空格。",
+    "spokenText": "先读第一航这个完整航：第一、第二、再回到第一；再看第三航缺的空格。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-matrix-puzzle/logic-matrix-puzzle-2"
+    ]
+  },
+  {
+    "id": "parent-请她说第一行怎么回到第一个-再说第三行用同一个规则为什么补",
+    "kind": "parent",
+    "text": "请她说第一行怎么回到第一个，再说第三行用同一个规则为什么补 🔴。",
+    "spokenText": "请她说第一航怎么回到第一个，再说第三航用同一个规则为什么补 🔴。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-matrix-puzzle/logic-matrix-puzzle-2"
+    ]
+  },
+  {
+    "id": "success-第一行是-大圆-小圆-大圆-大的又回来-第三行是-大方块-小方块-所以空格补-大方块",
+    "kind": "success",
+    "text": "第一行是 大圆、小圆、大圆，大的又回来；第三行是 大方块、小方块，所以空格补 大方块。",
+    "spokenText": "第一航是 大圆、小圆、大圆，大的又回来；第三航是 大方块、小方块，所以空格补 大方块。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-matrix-puzzle/logic-matrix-puzzle-3"
+    ]
+  },
+  {
+    "id": "retry-先读第一行这个完整行-大-小-再回到大-再看第三行缺的空格",
+    "kind": "retry",
+    "text": "先读第一行这个完整行：大、小、再回到大；再看第三行缺的空格。",
+    "spokenText": "先读第一航这个完整航：大、小、再回到大；再看第三航缺的空格。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-matrix-puzzle/logic-matrix-puzzle-3"
+    ]
+  },
+  {
+    "id": "parent-请她说第一行怎么回到大的-再说第三行用同一个规则为什么补-大方块",
+    "kind": "parent",
+    "text": "请她说第一行怎么回到大的，再说第三行用同一个规则为什么补 大方块。",
+    "spokenText": "请她说第一航怎么回到大的，再说第三航用同一个规则为什么补 大方块。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-matrix-puzzle/logic-matrix-puzzle-3"
+    ]
+  },
+  {
+    "id": "success-第一行有-三个都出现-第三行已经有-和-所以空格补",
+    "kind": "success",
+    "text": "第一行有 🔴、🟡、🟢 三个都出现；第三行已经有 🟢 和 🔴，所以空格补 🟡。",
+    "spokenText": "第一航有 🔴、🟡、🟢 三个都出现；第三航已经有 🟢 和 🔴，所以空格补 🟡。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-matrix-puzzle/logic-matrix-puzzle-4"
+    ]
+  },
+  {
+    "id": "retry-先看第一行这个完整行有哪些颜色-再看第三行缺的空格少了哪一个",
+    "kind": "retry",
+    "text": "先看第一行这个完整行有哪些颜色，再看第三行缺的空格少了哪一个。",
+    "spokenText": "先看第一航这个完整航有哪些颜色，再看第三航缺的空格少了哪一个。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-matrix-puzzle/logic-matrix-puzzle-4"
+    ]
+  },
+  {
+    "id": "parent-请她说第一行有哪些-再说第三行用同一个规则为什么补",
+    "kind": "parent",
+    "text": "请她说第一行有哪些，再说第三行用同一个规则为什么补 🟡。",
+    "spokenText": "请她说第一航有哪些，再说第三航用同一个规则为什么补 🟡。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-matrix-puzzle/logic-matrix-puzzle-4"
+    ]
+  },
+  {
+    "id": "success-第一行是-1-数字-1-就放-1-个-第三行是-3-所以空格补",
+    "kind": "success",
+    "text": "第一行是 🍎、1、🍎，数字 1 就放 1 个；第三行是 🍓、3，所以空格补 🍓🍓🍓。",
+    "spokenText": "第一航是 🍎、1、🍎，数字 1 就放 1 个；第三航是 🍓、3，所以空格补 🍓🍓🍓。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-matrix-puzzle/logic-matrix-puzzle-5"
+    ]
+  },
+  {
+    "id": "retry-先读第一行这个完整行-数字是几就有几个-再看第三行缺的空格",
+    "kind": "retry",
+    "text": "先读第一行这个完整行：数字是几就有几个；再看第三行缺的空格。",
+    "spokenText": "先读第一航这个完整航：数字是几就有几个；再看第三航缺的空格。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-matrix-puzzle/logic-matrix-puzzle-5"
+    ]
+  },
+  {
+    "id": "parent-请她说第一行数字-1-怎么变成-1-个苹果-再说第三行用同一个规则为什么补",
+    "kind": "parent",
+    "text": "请她说第一行数字 1 怎么变成 1 个苹果，再说第三行用同一个规则为什么补 🍓🍓🍓。",
+    "spokenText": "请她说第一航数字 1 怎么变成 1 个苹果，再说第三航用同一个规则为什么补 🍓🍓🍓。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-matrix-puzzle/logic-matrix-puzzle-5"
+    ]
+  },
+  {
+    "id": "success-第一行是-小鸟-和-天空-合成-小鸟天空-第三行是-小狗-和-家-所以空格补-小狗家",
+    "kind": "success",
+    "text": "第一行是 小鸟 和 天空，合成 小鸟天空；第三行是 小狗 和 家，所以空格补 小狗家。",
+    "spokenText": "第一航是 小鸟 和 天空，合成 小鸟天空；第三航是 小狗 和 家，所以空格补 小狗家。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-matrix-puzzle/logic-matrix-puzzle-6"
+    ]
+  },
+  {
+    "id": "retry-先读第一行这个完整行-前两个词连成最后一个-再看第三行缺的空格",
+    "kind": "retry",
+    "text": "先读第一行这个完整行：前两个词连成最后一个；再看第三行缺的空格。",
+    "spokenText": "先读第一航这个完整航：前两个词连成最后一个；再看第三航缺的空格。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-matrix-puzzle/logic-matrix-puzzle-6"
+    ]
+  },
+  {
+    "id": "parent-请她说第一行怎么连成小故事-再说第三行-小狗-和-家-用同一个规则为什么补-小狗家",
+    "kind": "parent",
+    "text": "请她说第一行怎么连成小故事，再说第三行 小狗 和 家 用同一个规则为什么补 小狗家。",
+    "spokenText": "请她说第一航怎么连成小故事，再说第三航 小狗 和 家 用同一个规则为什么补 小狗家。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-matrix-puzzle/logic-matrix-puzzle-6"
+    ]
+  },
+  {
+    "id": "choice-自行车",
+    "kind": "choice",
+    "text": "自行车",
+    "spokenText": "自行车",
+    "disposition": "preserve-xing",
+    "contexts": [
+      "logic-memory-camera/logic-memory-camera-2",
+      "logic-difference-detective/logic-difference-detective-6"
+    ]
+  },
+  {
+    "id": "success-最后一个位置变了-左图是自行车-右图变成飞机",
+    "kind": "success",
+    "text": "最后一个位置变了：左图是自行车，右图变成飞机。",
+    "spokenText": "最后一个位置变了：左图是自行车，右图变成飞机。",
+    "disposition": "preserve-xing",
+    "contexts": [
+      "logic-difference-detective/logic-difference-detective-6"
+    ]
+  },
+  {
+    "id": "success-下面一行左边是黄色圆片-右边是绿色圆片-不能完全重合",
+    "kind": "success",
+    "text": "下面一行左边是黄色圆片，右边是绿色圆片，不能完全重合。",
+    "spokenText": "下面一航左边是黄色圆片，右边是绿色圆片，不能完全重合。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-mirror-fold/logic-mirror-fold-2"
+    ]
+  },
+  {
+    "id": "success-上下两行颜色顺序反了-对应的位置不一样-不能重合",
+    "kind": "success",
+    "text": "上下两行颜色顺序反了，对应的位置不一样，不能重合。",
+    "spokenText": "上下两航颜色顺序反了，对应的位置不一样，不能重合。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-mirror-fold/logic-mirror-fold-4"
+    ]
+  },
+  {
+    "id": "success-每一行的左边和右边都一样-是左右对称",
+    "kind": "success",
+    "text": "每一行的左边和右边都一样，是左右对称。",
+    "spokenText": "每一航的左边和右边都一样，是左右对称。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-mirror-fold/logic-mirror-fold-5"
+    ]
+  },
+  {
+    "id": "success-中间一行左边是星星-右边是黄色圆片-不是左右对称",
+    "kind": "success",
+    "text": "中间一行左边是星星，右边是黄色圆片，不是左右对称。",
+    "spokenText": "中间一航左边是星星，右边是黄色圆片，不是左右对称。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-mirror-fold/logic-mirror-fold-6"
+    ]
+  },
+  {
+    "id": "success-第一行-2-块-第二行-1-块-一共-3-块",
+    "kind": "success",
+    "text": "第一行 2 块，第二行 1 块，一共 3 块。",
+    "spokenText": "第一航 2 块，第二航 1 块，一共 3 块。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-block-height-map/logic-block-height-map-1"
+    ]
+  },
+  {
+    "id": "parent-请她按行读数字-再说这一行一共有几块",
+    "kind": "parent",
+    "text": "请她按行读数字，再说这一行一共有几块。",
+    "spokenText": "请她按航读数字，再说这一航一共有几块。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-block-height-map/logic-block-height-map-1",
+      "logic-block-height-map/logic-block-height-map-2",
+      "logic-block-height-map/logic-block-height-map-3",
+      "logic-block-height-map/logic-block-height-map-4",
+      "logic-block-height-map/logic-block-height-map-5",
+      "logic-block-height-map/logic-block-height-map-6",
+      "logic-block-height-map/logic-block-height-map-7",
+      "logic-block-height-map/logic-block-height-map-8",
+      "logic-block-height-map/logic-block-height-map-9"
+    ]
+  },
+  {
+    "id": "success-第一行-3-块-第二行-1-块-一共-4-块",
+    "kind": "success",
+    "text": "第一行 3 块，第二行 1 块，一共 4 块。",
+    "spokenText": "第一航 3 块，第二航 1 块，一共 4 块。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-block-height-map/logic-block-height-map-2"
+    ]
+  },
+  {
+    "id": "success-第一行-4-块-第二行-2-块-一共-6-块",
+    "kind": "success",
+    "text": "第一行 4 块，第二行 2 块，一共 6 块。",
+    "spokenText": "第一航 4 块，第二航 2 块，一共 6 块。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-block-height-map/logic-block-height-map-3",
+      "logic-block-height-map/logic-block-height-map-4"
+    ]
+  },
+  {
+    "id": "success-第一行-4-块-第二行-1-块-一共-5-块",
+    "kind": "success",
+    "text": "第一行 4 块，第二行 1 块，一共 5 块。",
+    "spokenText": "第一航 4 块，第二航 1 块，一共 5 块。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-block-height-map/logic-block-height-map-5"
+    ]
+  },
+  {
+    "id": "success-第一行-5-块-第二行-2-块-一共-7-块",
+    "kind": "success",
+    "text": "第一行 5 块，第二行 2 块，一共 7 块。",
+    "spokenText": "第一航 5 块，第二航 2 块，一共 7 块。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-block-height-map/logic-block-height-map-6"
+    ]
+  },
+  {
+    "id": "success-第一行-4-块-第二行-3-块-一共-7-块",
+    "kind": "success",
+    "text": "第一行 4 块，第二行 3 块，一共 7 块。",
+    "spokenText": "第一航 4 块，第二航 3 块，一共 7 块。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-block-height-map/logic-block-height-map-7"
+    ]
+  },
+  {
+    "id": "success-按行数-第一行-4-块-第二行-4-块-第三行-2-块-一共-10-块",
+    "kind": "success",
+    "text": "按行数：第一行 4 块，第二行 4 块，第三行 2 块，一共 10 块。",
+    "spokenText": "按航数：第一航 4 块，第二航 4 块，第三航 2 块，一共 10 块。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-block-height-map/logic-block-height-map-8"
+    ]
+  },
+  {
+    "id": "success-按行数-第一行-4-块-第二行-5-块-第三行-1-块-一共-10-块",
+    "kind": "success",
+    "text": "按行数：第一行 4 块，第二行 5 块，第三行 1 块，一共 10 块。",
+    "spokenText": "按航数：第一航 4 块，第二航 5 块，第三航 1 块，一共 10 块。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "logic-block-height-map/logic-block-height-map-9"
+    ]
+  },
+  {
+    "id": "game-goal-训练方向执行-两步工作记忆和路线规划",
+    "kind": "game-goal",
+    "text": "训练方向执行、两步工作记忆和路线规划。",
+    "spokenText": "训练方向执行、两步工作记忆和路线规划。",
+    "disposition": "preserve-xing",
+    "contexts": [
+      "logic-route-steps"
+    ]
+  },
+  {
+    "id": "activity-system-再检查每一行和每一列-看看有没有重复或缺少的图卡",
+    "kind": "activity-system",
+    "text": "再检查每一行和每一列，看看有没有重复或缺少的图卡。",
+    "spokenText": "再检查每一航和每一列，看看有没有重复或缺少的图卡。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "activity/latin"
+    ]
+  },
+  {
+    "id": "prompt-把图形盘补完整-选一张图卡-再点问号格放进去-图卡可以重复用-每一行都是同一种颜色-从左到右-都是圆形-方形-三角形",
+    "kind": "prompt",
+    "text": "把图形盘补完整。选一张图卡，再点问号格放进去。图卡可以重复用。每一行都是同一种颜色。从左到右，都是圆形、方形、三角形。",
+    "spokenText": "把图形盘补完整。选一张图卡，再点问号格放进去。图卡可以重复用。每一航都是同一种颜色。从左到右，都是圆形、方形、三角形。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "graphic-rule-grid/grid-color-and-shape"
+    ]
+  },
+  {
+    "id": "retry-颜色看同一行-形状再从左到右检查",
+    "kind": "retry",
+    "text": "颜色看同一行，形状再从左到右检查。",
+    "spokenText": "颜色看同一航，形状再从左到右检查。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "graphic-rule-grid/grid-color-and-shape"
+    ]
+  },
+  {
+    "id": "parent-请孩子指出最先确定的空位-以及用的是哪一行-哪一列的线索",
+    "kind": "parent",
+    "text": "请孩子指出最先确定的空位，以及用的是哪一行、哪一列的线索。",
+    "spokenText": "请孩子指出最先确定的空位，以及用的是哪一航、哪一列的线索。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "graphic-rule-grid/grid-color-and-shape",
+      "graphic-rule-grid/grid-one-missing-rule",
+      "graphic-rule-grid/grid-two-attributes"
+    ]
+  },
+  {
+    "id": "hint-先看问号和哪种颜色在同一行",
+    "kind": "hint",
+    "text": "先看问号和哪种颜色在同一行。",
+    "spokenText": "先看问号和哪种颜色在同一航。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "graphic-rule-grid/grid-color-and-shape"
+    ]
+  },
+  {
+    "id": "clue-每一行都是同一种颜色",
+    "kind": "clue",
+    "text": "每一行都是同一种颜色。",
+    "spokenText": "每一航都是同一种颜色。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "graphic-rule-grid/grid-color-and-shape"
+    ]
+  },
+  {
+    "id": "prompt-把图形盘补完整-选一张图卡-再点问号格放进去-图卡可以重复用-每一行-三种图卡各出现一次-每一列-三种图卡也各出现一次",
+    "kind": "prompt",
+    "text": "把图形盘补完整。选一张图卡，再点问号格放进去。图卡可以重复用。每一行，三种图卡各出现一次。每一列，三种图卡也各出现一次。",
+    "spokenText": "把图形盘补完整。选一张图卡，再点问号格放进去。图卡可以重复用。每一航，三种图卡各出现一次。每一列，三种图卡也各出现一次。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "graphic-rule-grid/grid-one-missing-rule",
+      "graphic-rule-grid/grid-diagonal-clues"
+    ]
+  },
+  {
+    "id": "success-每一行和每一列都符合规则了",
+    "kind": "success",
+    "text": "每一行和每一列都符合规则了！",
+    "spokenText": "每一航和每一列都符合规则了！",
+    "disposition": "row-hang2",
+    "contexts": [
+      "graphic-rule-grid/grid-one-missing-rule",
+      "graphic-rule-grid/grid-diagonal-clues",
+      "graphic-rule-grid/grid-build-your-own"
+    ]
+  },
+  {
+    "id": "retry-看一看新放的图卡-会不会让同一行或同一列重复",
+    "kind": "retry",
+    "text": "看一看新放的图卡，会不会让同一行或同一列重复？",
+    "spokenText": "看一看新放的图卡，会不会让同一航或同一列重复？",
+    "disposition": "row-hang2",
+    "contexts": [
+      "graphic-rule-grid/grid-one-missing-rule",
+      "graphic-rule-grid/grid-diagonal-clues",
+      "graphic-rule-grid/grid-build-your-own",
+      "graphic-rule-grid/grid-blank-is-a-card"
+    ]
+  },
+  {
+    "id": "hint-先找只差一个空位的那一行或那一列",
+    "kind": "hint",
+    "text": "先找只差一个空位的那一行或那一列。",
+    "spokenText": "先找只差一个空位的那一航或那一列。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "graphic-rule-grid/grid-one-missing-rule",
+      "graphic-rule-grid/grid-blank-is-a-card"
+    ]
+  },
+  {
+    "id": "hint-放好一张以后-再检查它所在的行和列",
+    "kind": "hint",
+    "text": "放好一张以后，再检查它所在的行和列。",
+    "spokenText": "放好一张以后，再检查它所在的航和列。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "graphic-rule-grid/grid-one-missing-rule",
+      "graphic-rule-grid/grid-blank-is-a-card"
+    ]
+  },
+  {
+    "id": "clue-每一行-三种图卡各出现一次",
+    "kind": "clue",
+    "text": "每一行，三种图卡各出现一次。",
+    "spokenText": "每一航，三种图卡各出现一次。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "graphic-rule-grid/grid-one-missing-rule",
+      "graphic-rule-grid/grid-diagonal-clues",
+      "graphic-rule-grid/grid-build-your-own"
+    ]
+  },
+  {
+    "id": "parent-这题可以有不同的完整图案-请逐行-逐列验证-而不是只认一种样子",
+    "kind": "parent",
+    "text": "这题可以有不同的完整图案。请逐行、逐列验证，而不是只认一种样子。",
+    "spokenText": "这题可以有不同的完整图案。请逐航、逐列验证，而不是只认一种样子。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "graphic-rule-grid/grid-diagonal-clues"
+    ]
+  },
+  {
+    "id": "hint-先试着补好一整行",
+    "kind": "hint",
+    "text": "先试着补好一整行。",
+    "spokenText": "先试着补好一整航。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "graphic-rule-grid/grid-diagonal-clues"
+    ]
+  },
+  {
+    "id": "hint-下面的行既要自己不重复-也要和上面的列对上",
+    "kind": "hint",
+    "text": "下面的行既要自己不重复，也要和上面的列对上。",
+    "spokenText": "下面的航既要自己不重复，也要和上面的列对上。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "graphic-rule-grid/grid-diagonal-clues"
+    ]
+  },
+  {
+    "id": "prompt-把图形盘补完整-选一张图卡-再点问号格放进去-图卡可以重复用-每一行的颜色相同-每一列的形状相同",
+    "kind": "prompt",
+    "text": "把图形盘补完整。选一张图卡，再点问号格放进去。图卡可以重复用。每一行的颜色相同。每一列的形状相同。",
+    "spokenText": "把图形盘补完整。选一张图卡，再点问号格放进去。图卡可以重复用。每一航的颜色相同。每一列的形状相同。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "graphic-rule-grid/grid-two-attributes"
+    ]
+  },
+  {
+    "id": "success-补齐了-每行的颜色相同-每列的形状也相同",
+    "kind": "success",
+    "text": "补齐了！每行的颜色相同，每列的形状也相同。",
+    "spokenText": "补齐了！每航的颜色相同，每列的形状也相同。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "graphic-rule-grid/grid-two-attributes"
+    ]
+  },
+  {
+    "id": "retry-每个问号都要同时对上行的颜色和列的形状",
+    "kind": "retry",
+    "text": "每个问号都要同时对上行的颜色和列的形状。",
+    "spokenText": "每个问号都要同时对上航的颜色和列的形状。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "graphic-rule-grid/grid-two-attributes"
+    ]
+  },
+  {
+    "id": "hint-从一行里已经有的图卡看颜色",
+    "kind": "hint",
+    "text": "从一行里已经有的图卡看颜色。",
+    "spokenText": "从一航里已经有的图卡看颜色。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "graphic-rule-grid/grid-two-attributes"
+    ]
+  },
+  {
+    "id": "clue-每一行的颜色相同",
+    "kind": "clue",
+    "text": "每一行的颜色相同。",
+    "spokenText": "每一航的颜色相同。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "graphic-rule-grid/grid-two-attributes"
+    ]
+  },
+  {
+    "id": "prompt-自己搭一个图形盘-选一张图卡-再点问号格放进去-图卡可以重复用-每一行-三种图卡各出现一次-每一列-三种图卡也各出现一次",
+    "kind": "prompt",
+    "text": "自己搭一个图形盘。选一张图卡，再点问号格放进去。图卡可以重复用。每一行，三种图卡各出现一次。每一列，三种图卡也各出现一次。",
+    "spokenText": "自己搭一个图形盘。选一张图卡，再点问号格放进去。图卡可以重复用。每一航，三种图卡各出现一次。每一列，三种图卡也各出现一次。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "graphic-rule-grid/grid-build-your-own"
+    ]
+  },
+  {
+    "id": "hint-先把三种图形放进第一行",
+    "kind": "hint",
+    "text": "先把三种图形放进第一行。",
+    "spokenText": "先把三种图形放进第一航。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "graphic-rule-grid/grid-build-your-own"
+    ]
+  },
+  {
+    "id": "hint-下一行可以换个顺序-避开上面同一列的图形",
+    "kind": "hint",
+    "text": "下一行可以换个顺序，避开上面同一列的图形。",
+    "spokenText": "下一航可以换个顺序，避开上面同一列的图形。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "graphic-rule-grid/grid-build-your-own"
+    ]
+  },
+  {
+    "id": "prompt-把图形盘补完整-空白卡也是一张图卡-每个问号都要放好-再点看看-每行都有一个圆形-一个方形和一张空白卡-每列也要把这三种卡各放一次",
+    "kind": "prompt",
+    "text": "把图形盘补完整。空白卡也是一张图卡。每个问号都要放好，再点看看。每行都有一个圆形、一个方形和一张空白卡。每列也要把这三种卡各放一次。",
+    "spokenText": "把图形盘补完整。空白卡也是一张图卡。每个问号都要放好，再点看看。每航都有一个圆形、一个方形和一张空白卡。每列也要把这三种卡各放一次。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "graphic-rule-grid/grid-blank-is-a-card"
+    ]
+  },
+  {
+    "id": "clue-每行都有一个圆形-一个方形和一张空白卡",
+    "kind": "clue",
+    "text": "每行都有一个圆形、一个方形和一张空白卡。",
+    "spokenText": "每航都有一个圆形、一个方形和一张空白卡。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "graphic-rule-grid/grid-blank-is-a-card"
+    ]
+  },
+  {
+    "id": "parent-能计数到14并按行检查",
+    "kind": "parent",
+    "text": "能计数到14并按行检查",
+    "spokenText": "能计数到14并按航检查",
+    "disposition": "row-hang2",
+    "contexts": [
+      "explore-counting-cardinality/explore-counting-cardinality-4",
+      "explore-counting-cardinality/explore-counting-cardinality-5",
+      "explore-counting-cardinality/explore-counting-cardinality-6"
+    ]
+  },
+  {
+    "id": "prompt-按行和列的变化-补出最后一个数-选出符合条件的一张图卡",
+    "kind": "prompt",
+    "text": "按行和列的变化，补出最后一个数。选出符合条件的一张图卡。",
+    "spokenText": "按航和列的变化，补出最后一个数。选出符合条件的一张图卡。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "explore-number-sequences/explore-number-sequences-7",
+      "explore-number-sequences/explore-number-sequences-8",
+      "explore-number-sequences/explore-number-sequences-9"
+    ]
+  },
+  {
+    "id": "success-每行从左到右加2-每列从上到下加三-两条规则都得到8",
+    "kind": "success",
+    "text": "每行从左到右加2，每列从上到下加三，两条规则都得到8。",
+    "spokenText": "每航从左到右加2，每列从上到下加三，两条规则都得到8。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "explore-number-sequences/explore-number-sequences-7"
+    ]
+  },
+  {
+    "id": "parent-能按行列读取2-3数表",
+    "kind": "parent",
+    "text": "能按行列读取2×3数表",
+    "spokenText": "能按航列读取2×3数表",
+    "disposition": "row-hang2",
+    "contexts": [
+      "explore-number-sequences/explore-number-sequences-7",
+      "explore-number-sequences/explore-number-sequences-8",
+      "explore-number-sequences/explore-number-sequences-9"
+    ]
+  },
+  {
+    "id": "hint-每行从左到右加2-每列从上到下加三-两条规则都得到8",
+    "kind": "hint",
+    "text": "每行从左到右加2，每列从上到下加三，两条规则都得到8。",
+    "spokenText": "每航从左到右加2，每列从上到下加三，两条规则都得到8。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "explore-number-sequences/explore-number-sequences-7"
+    ]
+  },
+  {
+    "id": "success-每行从左到右加3-每列从上到下加三-两条规则都得到11",
+    "kind": "success",
+    "text": "每行从左到右加3，每列从上到下加三，两条规则都得到11。",
+    "spokenText": "每航从左到右加3，每列从上到下加三，两条规则都得到11。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "explore-number-sequences/explore-number-sequences-8"
+    ]
+  },
+  {
+    "id": "hint-每行从左到右加3-每列从上到下加三-两条规则都得到11",
+    "kind": "hint",
+    "text": "每行从左到右加3，每列从上到下加三，两条规则都得到11。",
+    "spokenText": "每航从左到右加3，每列从上到下加三，两条规则都得到11。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "explore-number-sequences/explore-number-sequences-8"
+    ]
+  },
+  {
+    "id": "success-每行从左到右加4-每列从上到下加三-两条规则都得到14",
+    "kind": "success",
+    "text": "每行从左到右加4，每列从上到下加三，两条规则都得到14。",
+    "spokenText": "每航从左到右加4，每列从上到下加三，两条规则都得到14。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "explore-number-sequences/explore-number-sequences-9"
+    ]
+  },
+  {
+    "id": "hint-每行从左到右加4-每列从上到下加三-两条规则都得到14",
+    "kind": "hint",
+    "text": "每行从左到右加4，每列从上到下加三，两条规则都得到14。",
+    "spokenText": "每航从左到右加4，每列从上到下加三，两条规则都得到14。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "explore-number-sequences/explore-number-sequences-9"
+    ]
+  },
+  {
+    "id": "game-goal-找日期-数同一星期-跨行与间隔推算",
+    "kind": "game-goal",
+    "text": "找日期 → 数同一星期 → 跨行与间隔推算",
+    "spokenText": "找日期 → 数同一星期 → 跨航与间隔推算",
+    "disposition": "row-hang2",
+    "contexts": [
+      "explore-calendar-cycles"
+    ]
+  },
+  {
+    "id": "prompt-每行每列都要有三位不同的朋友-选图卡-点问号格放进去-图卡可以重复用-每一行每种动物只有一张-每一列每种动物只有一张",
+    "kind": "prompt",
+    "text": "每行每列都要有三位不同的朋友。选图卡，点问号格放进去。图卡可以重复用。每一行每种动物只有一张。每一列每种动物只有一张。",
+    "spokenText": "每航每列都要有三位不同的朋友。选图卡，点问号格放进去。图卡可以重复用。每一航每种动物只有一张。每一列每种动物只有一张。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "explore-constraint-grid/explore-constraint-grid-1",
+      "explore-constraint-grid/explore-constraint-grid-2",
+      "explore-constraint-grid/explore-constraint-grid-3",
+      "explore-constraint-grid/explore-constraint-grid-4",
+      "explore-constraint-grid/explore-constraint-grid-5",
+      "explore-constraint-grid/explore-constraint-grid-6",
+      "explore-constraint-grid/explore-constraint-grid-7",
+      "explore-constraint-grid/explore-constraint-grid-8",
+      "explore-constraint-grid/explore-constraint-grid-9"
+    ]
+  },
+  {
+    "id": "success-逐行-逐列看-小兔-小猫-小狗都各出现一次",
+    "kind": "success",
+    "text": "逐行、逐列看，小兔、小猫、小狗都各出现一次。",
+    "spokenText": "逐航、逐列看，小兔、小猫、小狗都各出现一次。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "explore-constraint-grid/explore-constraint-grid-1",
+      "explore-constraint-grid/explore-constraint-grid-2",
+      "explore-constraint-grid/explore-constraint-grid-3",
+      "explore-constraint-grid/explore-constraint-grid-4",
+      "explore-constraint-grid/explore-constraint-grid-5",
+      "explore-constraint-grid/explore-constraint-grid-6",
+      "explore-constraint-grid/explore-constraint-grid-7",
+      "explore-constraint-grid/explore-constraint-grid-8",
+      "explore-constraint-grid/explore-constraint-grid-9"
+    ]
+  },
+  {
+    "id": "parent-认三位朋友-理解一行不得重复",
+    "kind": "parent",
+    "text": "认三位朋友，理解一行不得重复",
+    "spokenText": "认三位朋友，理解一航不得重复",
+    "disposition": "row-hang2",
+    "contexts": [
+      "explore-constraint-grid/explore-constraint-grid-1",
+      "explore-constraint-grid/explore-constraint-grid-2",
+      "explore-constraint-grid/explore-constraint-grid-3"
+    ]
+  },
+  {
+    "id": "hint-每一行每种动物只有一张",
+    "kind": "hint",
+    "text": "每一行每种动物只有一张。",
+    "spokenText": "每一航每种动物只有一张。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "explore-constraint-grid/explore-constraint-grid-1",
+      "explore-constraint-grid/explore-constraint-grid-2",
+      "explore-constraint-grid/explore-constraint-grid-3",
+      "explore-constraint-grid/explore-constraint-grid-4",
+      "explore-constraint-grid/explore-constraint-grid-5",
+      "explore-constraint-grid/explore-constraint-grid-6",
+      "explore-constraint-grid/explore-constraint-grid-7",
+      "explore-constraint-grid/explore-constraint-grid-8",
+      "explore-constraint-grid/explore-constraint-grid-9"
+    ]
+  },
+  {
+    "id": "hint-逐行-逐列看-小兔-小猫-小狗都各出现一次",
+    "kind": "hint",
+    "text": "逐行、逐列看，小兔、小猫、小狗都各出现一次。",
+    "spokenText": "逐航、逐列看，小兔、小猫、小狗都各出现一次。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "explore-constraint-grid/explore-constraint-grid-1",
+      "explore-constraint-grid/explore-constraint-grid-2",
+      "explore-constraint-grid/explore-constraint-grid-3",
+      "explore-constraint-grid/explore-constraint-grid-4",
+      "explore-constraint-grid/explore-constraint-grid-5",
+      "explore-constraint-grid/explore-constraint-grid-6",
+      "explore-constraint-grid/explore-constraint-grid-7",
+      "explore-constraint-grid/explore-constraint-grid-8",
+      "explore-constraint-grid/explore-constraint-grid-9"
+    ]
+  },
+  {
+    "id": "clue-每一行每种动物只有一张",
+    "kind": "clue",
+    "text": "每一行每种动物只有一张。",
+    "spokenText": "每一航每种动物只有一张。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "explore-constraint-grid/explore-constraint-grid-1",
+      "explore-constraint-grid/explore-constraint-grid-2",
+      "explore-constraint-grid/explore-constraint-grid-3",
+      "explore-constraint-grid/explore-constraint-grid-4",
+      "explore-constraint-grid/explore-constraint-grid-5",
+      "explore-constraint-grid/explore-constraint-grid-6",
+      "explore-constraint-grid/explore-constraint-grid-7",
+      "explore-constraint-grid/explore-constraint-grid-8",
+      "explore-constraint-grid/explore-constraint-grid-9"
+    ]
+  },
+  {
+    "id": "parent-同时核对行列-能撤回不合适摆放",
+    "kind": "parent",
+    "text": "同时核对行列，能撤回不合适摆放",
+    "spokenText": "同时核对航列，能撤回不合适摆放",
+    "disposition": "row-hang2",
+    "contexts": [
+      "explore-constraint-grid/explore-constraint-grid-4",
+      "explore-constraint-grid/explore-constraint-grid-5",
+      "explore-constraint-grid/explore-constraint-grid-6"
+    ]
+  },
+  {
+    "id": "parent-能区分平行直弯两边并规划每边恰走一次",
+    "kind": "parent",
+    "text": "能区分平行直弯两边并规划每边恰走一次",
+    "spokenText": "能区分平行直弯两边并规划每边恰走一次",
+    "disposition": "preserve-xing",
+    "contexts": [
+      "explore-route-constraints/explore-route-constraints-7",
+      "explore-route-constraints/explore-route-constraints-8",
+      "explore-route-constraints/explore-route-constraints-9"
+    ]
+  },
+  {
+    "id": "game-goal-一个角色执行-不同步长-多角色交会与倒推",
+    "kind": "game-goal",
+    "text": "一个角色执行 → 不同步长 → 多角色交会与倒推",
+    "spokenText": "一个角色执行 → 不同步长 → 多角色交会与倒推",
+    "disposition": "preserve-xing",
+    "contexts": [
+      "explore-multi-agent-movement"
+    ]
+  },
+  {
+    "id": "success-逐行对应-色块的位置-数量都一样",
+    "kind": "success",
+    "text": "逐行对应，色块的位置、数量都一样。",
+    "spokenText": "逐航对应，色块的位置、数量都一样。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "explore-visual-search-match/explore-visual-search-match-1",
+      "explore-visual-search-match/explore-visual-search-match-2",
+      "explore-visual-search-match/explore-visual-search-match-3",
+      "explore-visual-search-match/explore-visual-search-match-4",
+      "explore-visual-search-match/explore-visual-search-match-5",
+      "explore-visual-search-match/explore-visual-search-match-6",
+      "explore-visual-search-match/explore-visual-search-match-7",
+      "explore-visual-search-match/explore-visual-search-match-8",
+      "explore-visual-search-match/explore-visual-search-match-9"
+    ]
+  },
+  {
+    "id": "parent-能按行比较蓝白格",
+    "kind": "parent",
+    "text": "能按行比较蓝白格",
+    "spokenText": "能按航比较蓝白格",
+    "disposition": "row-hang2",
+    "contexts": [
+      "explore-visual-search-match/explore-visual-search-match-1",
+      "explore-visual-search-match/explore-visual-search-match-2",
+      "explore-visual-search-match/explore-visual-search-match-3"
+    ]
+  },
+  {
+    "id": "hint-逐行对应-色块的位置-数量都一样",
+    "kind": "hint",
+    "text": "逐行对应，色块的位置、数量都一样。",
+    "spokenText": "逐航对应，色块的位置、数量都一样。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "explore-visual-search-match/explore-visual-search-match-1",
+      "explore-visual-search-match/explore-visual-search-match-2",
+      "explore-visual-search-match/explore-visual-search-match-3",
+      "explore-visual-search-match/explore-visual-search-match-4",
+      "explore-visual-search-match/explore-visual-search-match-5",
+      "explore-visual-search-match/explore-visual-search-match-6",
+      "explore-visual-search-match/explore-visual-search-match-7",
+      "explore-visual-search-match/explore-visual-search-match-8",
+      "explore-visual-search-match/explore-visual-search-match-9"
+    ]
+  },
+  {
+    "id": "prompt-选哪一块补片-能把行列里的纹理接上-选出符合条件的一张图卡-蓝白格沿每行-每列交替",
+    "kind": "prompt",
+    "text": "选哪一块补片，能把行列里的纹理接上。选出符合条件的一张图卡。蓝白格沿每行、每列交替。",
+    "spokenText": "选哪一块补片，能把航列里的纹理接上。选出符合条件的一张图卡。蓝白格沿每航、每列交替。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "explore-occlusion-texture/explore-occlusion-texture-4",
+      "explore-occlusion-texture/explore-occlusion-texture-5"
+    ]
+  },
+  {
+    "id": "hint-蓝白格沿每行-每列交替",
+    "kind": "hint",
+    "text": "蓝白格沿每行、每列交替。",
+    "spokenText": "蓝白格沿每航、每列交替。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "explore-occlusion-texture/explore-occlusion-texture-4",
+      "explore-occlusion-texture/explore-occlusion-texture-5"
+    ]
+  },
+  {
+    "id": "clue-蓝白格沿每行-每列交替",
+    "kind": "clue",
+    "text": "蓝白格沿每行、每列交替。",
+    "spokenText": "蓝白格沿每航、每列交替。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "explore-occlusion-texture/explore-occlusion-texture-4",
+      "explore-occlusion-texture/explore-occlusion-texture-5"
+    ]
+  },
+  {
+    "id": "prompt-选哪一块补片-能把行列里的纹理接上-选出符合条件的一张图卡-每行同色-蓝白行交替",
+    "kind": "prompt",
+    "text": "选哪一块补片，能把行列里的纹理接上。选出符合条件的一张图卡。每行同色，蓝白行交替。",
+    "spokenText": "选哪一块补片，能把航列里的纹理接上。选出符合条件的一张图卡。每航同色，蓝白航交替。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "explore-occlusion-texture/explore-occlusion-texture-6"
+    ]
+  },
+  {
+    "id": "hint-每行同色-蓝白行交替",
+    "kind": "hint",
+    "text": "每行同色，蓝白行交替。",
+    "spokenText": "每航同色，蓝白航交替。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "explore-occlusion-texture/explore-occlusion-texture-6"
+    ]
+  },
+  {
+    "id": "clue-每行同色-蓝白行交替",
+    "kind": "clue",
+    "text": "每行同色，蓝白行交替。",
+    "spokenText": "每航同色，蓝白航交替。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "explore-occlusion-texture/explore-occlusion-texture-6"
+    ]
+  },
+  {
+    "id": "prompt-选哪一块补片-能把行列里的纹理接上-选出符合条件的一张图卡-相同的一整行保持同色-按三行一组重复",
+    "kind": "prompt",
+    "text": "选哪一块补片，能把行列里的纹理接上。选出符合条件的一张图卡。相同的一整行保持同色，按三行一组重复。",
+    "spokenText": "选哪一块补片，能把航列里的纹理接上。选出符合条件的一张图卡。相同的一整航保持同色，按三航一组重复。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "explore-occlusion-texture/explore-occlusion-texture-7",
+      "explore-occlusion-texture/explore-occlusion-texture-8",
+      "explore-occlusion-texture/explore-occlusion-texture-9"
+    ]
+  },
+  {
+    "id": "parent-理解按三行重复并核对补片边界",
+    "kind": "parent",
+    "text": "理解按三行重复并核对补片边界",
+    "spokenText": "理解按三航重复并核对补片边界",
+    "disposition": "row-hang2",
+    "contexts": [
+      "explore-occlusion-texture/explore-occlusion-texture-7",
+      "explore-occlusion-texture/explore-occlusion-texture-8",
+      "explore-occlusion-texture/explore-occlusion-texture-9"
+    ]
+  },
+  {
+    "id": "hint-相同的一整行保持同色-按三行一组重复",
+    "kind": "hint",
+    "text": "相同的一整行保持同色，按三行一组重复。",
+    "spokenText": "相同的一整航保持同色，按三航一组重复。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "explore-occlusion-texture/explore-occlusion-texture-7",
+      "explore-occlusion-texture/explore-occlusion-texture-8",
+      "explore-occlusion-texture/explore-occlusion-texture-9"
+    ]
+  },
+  {
+    "id": "clue-相同的一整行保持同色-按三行一组重复",
+    "kind": "clue",
+    "text": "相同的一整行保持同色，按三行一组重复。",
+    "spokenText": "相同的一整航保持同色，按三航一组重复。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "explore-occlusion-texture/explore-occlusion-texture-7",
+      "explore-occlusion-texture/explore-occlusion-texture-8",
+      "explore-occlusion-texture/explore-occlusion-texture-9"
+    ]
+  },
+  {
+    "id": "game-title-行列规律研究",
+    "kind": "game-title",
+    "text": "行列规律研究",
+    "spokenText": "航列规律研究",
+    "disposition": "row-hang2",
+    "contexts": [
+      "explore-feature-matrices"
+    ]
+  },
+  {
+    "id": "game-goal-单属性-双属性-行列交叉约束",
+    "kind": "game-goal",
+    "text": "单属性 → 双属性 → 行列交叉约束",
+    "spokenText": "单属性 → 双属性 → 航列交叉约束",
+    "disposition": "row-hang2",
+    "contexts": [
+      "explore-feature-matrices"
+    ]
+  },
+  {
+    "id": "prompt-把每行每列的规律补完整-选图卡-点问号格放进去-图卡可以重复用-每一行颜色相同-从左到右依次是圆-方-三角",
+    "kind": "prompt",
+    "text": "把每行每列的规律补完整。选图卡，点问号格放进去。图卡可以重复用。每一行颜色相同。从左到右依次是圆、方、三角。",
+    "spokenText": "把每航每列的规律补完整。选图卡，点问号格放进去。图卡可以重复用。每一航颜色相同。从左到右依次是圆、方、三角。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "explore-feature-matrices/explore-feature-matrices-1"
+    ]
+  },
+  {
+    "id": "success-同一行的颜色保持不变-同一列的形状也保持不变",
+    "kind": "success",
+    "text": "同一行的颜色保持不变，同一列的形状也保持不变。",
+    "spokenText": "同一航的颜色保持不变，同一列的形状也保持不变。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "explore-feature-matrices/explore-feature-matrices-1",
+      "explore-feature-matrices/explore-feature-matrices-2",
+      "explore-feature-matrices/explore-feature-matrices-3",
+      "explore-feature-matrices/explore-feature-matrices-4",
+      "explore-feature-matrices/explore-feature-matrices-5",
+      "explore-feature-matrices/explore-feature-matrices-6",
+      "explore-feature-matrices/explore-feature-matrices-7",
+      "explore-feature-matrices/explore-feature-matrices-8",
+      "explore-feature-matrices/explore-feature-matrices-9"
+    ]
+  },
+  {
+    "id": "parent-识颜色与形状-会按行列定位",
+    "kind": "parent",
+    "text": "识颜色与形状，会按行列定位",
+    "spokenText": "识颜色与形状，会按航列定位",
+    "disposition": "row-hang2",
+    "contexts": [
+      "explore-feature-matrices/explore-feature-matrices-1",
+      "explore-feature-matrices/explore-feature-matrices-2",
+      "explore-feature-matrices/explore-feature-matrices-3"
+    ]
+  },
+  {
+    "id": "hint-每一行颜色相同",
+    "kind": "hint",
+    "text": "每一行颜色相同。",
+    "spokenText": "每一航颜色相同。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "explore-feature-matrices/explore-feature-matrices-1",
+      "explore-feature-matrices/explore-feature-matrices-2",
+      "explore-feature-matrices/explore-feature-matrices-3",
+      "explore-feature-matrices/explore-feature-matrices-4",
+      "explore-feature-matrices/explore-feature-matrices-5",
+      "explore-feature-matrices/explore-feature-matrices-6",
+      "explore-feature-matrices/explore-feature-matrices-7",
+      "explore-feature-matrices/explore-feature-matrices-8",
+      "explore-feature-matrices/explore-feature-matrices-9"
+    ]
+  },
+  {
+    "id": "hint-同一行的颜色保持不变-同一列的形状也保持不变",
+    "kind": "hint",
+    "text": "同一行的颜色保持不变，同一列的形状也保持不变。",
+    "spokenText": "同一航的颜色保持不变，同一列的形状也保持不变。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "explore-feature-matrices/explore-feature-matrices-1",
+      "explore-feature-matrices/explore-feature-matrices-2",
+      "explore-feature-matrices/explore-feature-matrices-3",
+      "explore-feature-matrices/explore-feature-matrices-4",
+      "explore-feature-matrices/explore-feature-matrices-5",
+      "explore-feature-matrices/explore-feature-matrices-6",
+      "explore-feature-matrices/explore-feature-matrices-7",
+      "explore-feature-matrices/explore-feature-matrices-8",
+      "explore-feature-matrices/explore-feature-matrices-9"
+    ]
+  },
+  {
+    "id": "clue-每一行颜色相同",
+    "kind": "clue",
+    "text": "每一行颜色相同。",
+    "spokenText": "每一航颜色相同。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "explore-feature-matrices/explore-feature-matrices-1",
+      "explore-feature-matrices/explore-feature-matrices-2",
+      "explore-feature-matrices/explore-feature-matrices-3",
+      "explore-feature-matrices/explore-feature-matrices-4",
+      "explore-feature-matrices/explore-feature-matrices-5",
+      "explore-feature-matrices/explore-feature-matrices-6",
+      "explore-feature-matrices/explore-feature-matrices-7",
+      "explore-feature-matrices/explore-feature-matrices-8",
+      "explore-feature-matrices/explore-feature-matrices-9"
+    ]
+  },
+  {
+    "id": "prompt-把每行每列的规律补完整-选图卡-点问号格放进去-图卡可以重复用-每一行颜色相同-从左到右依次是方-三角-圆",
+    "kind": "prompt",
+    "text": "把每行每列的规律补完整。选图卡，点问号格放进去。图卡可以重复用。每一行颜色相同。从左到右依次是方、三角、圆。",
+    "spokenText": "把每航每列的规律补完整。选图卡，点问号格放进去。图卡可以重复用。每一航颜色相同。从左到右依次是方、三角、圆。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "explore-feature-matrices/explore-feature-matrices-2"
+    ]
+  },
+  {
+    "id": "prompt-把每行每列的规律补完整-选图卡-点问号格放进去-图卡可以重复用-每一行颜色相同-从左到右依次是三角-圆-方",
+    "kind": "prompt",
+    "text": "把每行每列的规律补完整。选图卡，点问号格放进去。图卡可以重复用。每一行颜色相同。从左到右依次是三角、圆、方。",
+    "spokenText": "把每航每列的规律补完整。选图卡，点问号格放进去。图卡可以重复用。每一航颜色相同。从左到右依次是三角、圆、方。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "explore-feature-matrices/explore-feature-matrices-3"
+    ]
+  },
+  {
+    "id": "prompt-把每行每列的规律补完整-选图卡-点问号格放进去-图卡可以重复用-每一行颜色相同-从左到右依次是圆-方-三角-从上到下依次是红-蓝-黄",
+    "kind": "prompt",
+    "text": "把每行每列的规律补完整。选图卡，点问号格放进去。图卡可以重复用。每一行颜色相同。从左到右依次是圆、方、三角。从上到下依次是红、蓝、黄。",
+    "spokenText": "把每航每列的规律补完整。选图卡，点问号格放进去。图卡可以重复用。每一航颜色相同。从左到右依次是圆、方、三角。从上到下依次是红、蓝、黄。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "explore-feature-matrices/explore-feature-matrices-4",
+      "explore-feature-matrices/explore-feature-matrices-7"
+    ]
+  },
+  {
+    "id": "parent-能按颜色行次序和形状列次序交叉取值",
+    "kind": "parent",
+    "text": "能按颜色行次序和形状列次序交叉取值",
+    "spokenText": "能按颜色航次序和形状列次序交叉取值",
+    "disposition": "row-hang2",
+    "contexts": [
+      "explore-feature-matrices/explore-feature-matrices-4",
+      "explore-feature-matrices/explore-feature-matrices-5",
+      "explore-feature-matrices/explore-feature-matrices-6"
+    ]
+  },
+  {
+    "id": "prompt-把每行每列的规律补完整-选图卡-点问号格放进去-图卡可以重复用-每一行颜色相同-从左到右依次是方-三角-圆-从上到下依次是红-蓝-黄",
+    "kind": "prompt",
+    "text": "把每行每列的规律补完整。选图卡，点问号格放进去。图卡可以重复用。每一行颜色相同。从左到右依次是方、三角、圆。从上到下依次是红、蓝、黄。",
+    "spokenText": "把每航每列的规律补完整。选图卡，点问号格放进去。图卡可以重复用。每一航颜色相同。从左到右依次是方、三角、圆。从上到下依次是红、蓝、黄。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "explore-feature-matrices/explore-feature-matrices-5",
+      "explore-feature-matrices/explore-feature-matrices-8"
+    ]
+  },
+  {
+    "id": "prompt-把每行每列的规律补完整-选图卡-点问号格放进去-图卡可以重复用-每一行颜色相同-从左到右依次是三角-圆-方-从上到下依次是红-蓝-黄",
+    "kind": "prompt",
+    "text": "把每行每列的规律补完整。选图卡，点问号格放进去。图卡可以重复用。每一行颜色相同。从左到右依次是三角、圆、方。从上到下依次是红、蓝、黄。",
+    "spokenText": "把每航每列的规律补完整。选图卡，点问号格放进去。图卡可以重复用。每一航颜色相同。从左到右依次是三角、圆、方。从上到下依次是红、蓝、黄。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "explore-feature-matrices/explore-feature-matrices-6",
+      "explore-feature-matrices/explore-feature-matrices-9"
+    ]
+  },
+  {
+    "id": "prompt-照着参照图-把蓝格和空白格都摆出来-选图卡-点问号格放进去-图卡可以重复用-按行找位置-模型会一直保留",
+    "kind": "prompt",
+    "text": "照着参照图，把蓝格和空白格都摆出来。选图卡，点问号格放进去。图卡可以重复用。按行找位置，模型会一直保留。",
+    "spokenText": "照着参照图，把蓝格和空白格都摆出来。选图卡，点问号格放进去。图卡可以重复用。按航找位置，模型会一直保留。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "explore-grid-copy-reconstruction/explore-grid-copy-reconstruction-1",
+      "explore-grid-copy-reconstruction/explore-grid-copy-reconstruction-2",
+      "explore-grid-copy-reconstruction/explore-grid-copy-reconstruction-3",
+      "explore-grid-copy-reconstruction/explore-grid-copy-reconstruction-4",
+      "explore-grid-copy-reconstruction/explore-grid-copy-reconstruction-5",
+      "explore-grid-copy-reconstruction/explore-grid-copy-reconstruction-6"
+    ]
+  },
+  {
+    "id": "parent-能逐行定位且把空白当需填写内容",
+    "kind": "parent",
+    "text": "能逐行定位且把空白当需填写内容",
+    "spokenText": "能逐航定位且把空白当需填写内容",
+    "disposition": "row-hang2",
+    "contexts": [
+      "explore-grid-copy-reconstruction/explore-grid-copy-reconstruction-1",
+      "explore-grid-copy-reconstruction/explore-grid-copy-reconstruction-2",
+      "explore-grid-copy-reconstruction/explore-grid-copy-reconstruction-3"
+    ]
+  },
+  {
+    "id": "hint-按行找位置-模型会一直保留",
+    "kind": "hint",
+    "text": "按行找位置，模型会一直保留。",
+    "spokenText": "按航找位置，模型会一直保留。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "explore-grid-copy-reconstruction/explore-grid-copy-reconstruction-1",
+      "explore-grid-copy-reconstruction/explore-grid-copy-reconstruction-2",
+      "explore-grid-copy-reconstruction/explore-grid-copy-reconstruction-3",
+      "explore-grid-copy-reconstruction/explore-grid-copy-reconstruction-4",
+      "explore-grid-copy-reconstruction/explore-grid-copy-reconstruction-5",
+      "explore-grid-copy-reconstruction/explore-grid-copy-reconstruction-6"
+    ]
+  },
+  {
+    "id": "clue-按行找位置-模型会一直保留",
+    "kind": "clue",
+    "text": "按行找位置，模型会一直保留。",
+    "spokenText": "按航找位置，模型会一直保留。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "explore-grid-copy-reconstruction/explore-grid-copy-reconstruction-1",
+      "explore-grid-copy-reconstruction/explore-grid-copy-reconstruction-2",
+      "explore-grid-copy-reconstruction/explore-grid-copy-reconstruction-3",
+      "explore-grid-copy-reconstruction/explore-grid-copy-reconstruction-4",
+      "explore-grid-copy-reconstruction/explore-grid-copy-reconstruction-5",
+      "explore-grid-copy-reconstruction/explore-grid-copy-reconstruction-6"
+    ]
+  },
+  {
+    "id": "parent-能在4-4保持行列对应",
+    "kind": "parent",
+    "text": "能在4×4保持行列对应",
+    "spokenText": "能在4×4保持航列对应",
+    "disposition": "row-hang2",
+    "contexts": [
+      "explore-grid-copy-reconstruction/explore-grid-copy-reconstruction-4",
+      "explore-grid-copy-reconstruction/explore-grid-copy-reconstruction-5",
+      "explore-grid-copy-reconstruction/explore-grid-copy-reconstruction-6"
+    ]
+  },
+  {
+    "id": "game-title-听懂再行动",
+    "kind": "game-title",
+    "text": "听懂再行动",
+    "spokenText": "听懂再行动",
+    "disposition": "preserve-xing",
+    "contexts": [
+      "explore-auditory-instructions"
+    ]
+  },
+  {
+    "id": "success-按听到的次序执行-每一步都不能漏",
+    "kind": "success",
+    "text": "按听到的次序执行，每一步都不能漏。",
+    "spokenText": "按听到的次序执行，每一步都不能漏。",
+    "disposition": "preserve-xing",
+    "contexts": [
+      "explore-auditory-instructions/explore-auditory-instructions-1",
+      "explore-auditory-instructions/explore-auditory-instructions-2",
+      "explore-auditory-instructions/explore-auditory-instructions-3",
+      "explore-auditory-instructions/explore-auditory-instructions-4",
+      "explore-auditory-instructions/explore-auditory-instructions-5",
+      "explore-auditory-instructions/explore-auditory-instructions-6",
+      "explore-auditory-instructions/explore-auditory-instructions-7",
+      "explore-auditory-instructions/explore-auditory-instructions-8",
+      "explore-auditory-instructions/explore-auditory-instructions-9"
+    ]
+  },
+  {
+    "id": "hint-按听到的次序执行-每一步都不能漏",
+    "kind": "hint",
+    "text": "按听到的次序执行，每一步都不能漏。",
+    "spokenText": "按听到的次序执行，每一步都不能漏。",
+    "disposition": "preserve-xing",
+    "contexts": [
+      "explore-auditory-instructions/explore-auditory-instructions-1",
+      "explore-auditory-instructions/explore-auditory-instructions-2",
+      "explore-auditory-instructions/explore-auditory-instructions-3",
+      "explore-auditory-instructions/explore-auditory-instructions-4",
+      "explore-auditory-instructions/explore-auditory-instructions-5",
+      "explore-auditory-instructions/explore-auditory-instructions-6",
+      "explore-auditory-instructions/explore-auditory-instructions-7",
+      "explore-auditory-instructions/explore-auditory-instructions-8",
+      "explore-auditory-instructions/explore-auditory-instructions-9"
+    ]
+  },
+  {
+    "id": "success-一行一行检查-选过的再对照规则看一次-这里不比谁快",
+    "kind": "success",
+    "text": "一行一行检查，选过的再对照规则看一次。这里不比谁快。",
+    "spokenText": "一航一航检查，选过的再对照规则看一次。这里不比谁快。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "explore-attention-search/explore-attention-search-1",
+      "explore-attention-search/explore-attention-search-2",
+      "explore-attention-search/explore-attention-search-3",
+      "explore-attention-search/explore-attention-search-4",
+      "explore-attention-search/explore-attention-search-5",
+      "explore-attention-search/explore-attention-search-6",
+      "explore-attention-search/explore-attention-search-7",
+      "explore-attention-search/explore-attention-search-8",
+      "explore-attention-search/explore-attention-search-9"
+    ]
+  },
+  {
+    "id": "parent-能识一种目标形状并逐行搜索",
+    "kind": "parent",
+    "text": "能识一种目标形状并逐行搜索",
+    "spokenText": "能识一种目标形状并逐航搜索",
+    "disposition": "row-hang2",
+    "contexts": [
+      "explore-attention-search/explore-attention-search-1",
+      "explore-attention-search/explore-attention-search-2",
+      "explore-attention-search/explore-attention-search-3"
+    ]
+  },
+  {
+    "id": "hint-一行一行检查-选过的再对照规则看一次-这里不比谁快",
+    "kind": "hint",
+    "text": "一行一行检查，选过的再对照规则看一次。这里不比谁快。",
+    "spokenText": "一航一航检查，选过的再对照规则看一次。这里不比谁快。",
+    "disposition": "row-hang2",
+    "contexts": [
+      "explore-attention-search/explore-attention-search-1",
+      "explore-attention-search/explore-attention-search-2",
+      "explore-attention-search/explore-attention-search-3",
+      "explore-attention-search/explore-attention-search-4",
+      "explore-attention-search/explore-attention-search-5",
+      "explore-attention-search/explore-attention-search-6",
+      "explore-attention-search/explore-attention-search-7",
+      "explore-attention-search/explore-attention-search-8",
+      "explore-attention-search/explore-attention-search-9"
+    ]
+  },
+  {
+    "id": "game-goal-单规则-规则切换-听取后保持并执行",
+    "kind": "game-goal",
+    "text": "单规则 → 规则切换 → 听取后保持并执行",
+    "spokenText": "单规则 → 规则切换 → 听取后保持并执行",
+    "disposition": "preserve-xing",
+    "contexts": [
+      "explore-inhibition-switch"
+    ]
+  },
+  {
+    "id": "parent-理解材料-可行办法和实际试做",
+    "kind": "parent",
+    "text": "理解材料、可行办法和实际试做",
+    "spokenText": "理解材料、可行办法和实际试做",
+    "disposition": "preserve-xing",
+    "contexts": [
+      "explore-creative-explanation/explore-creative-explanation-2"
+    ]
+  }
+]

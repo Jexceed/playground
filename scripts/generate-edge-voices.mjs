@@ -3,6 +3,8 @@ import { basename, join } from "node:path";
 import { tmpdir } from "node:os";
 import { spawnFile } from "./lib/spawn-file.mjs";
 import { inspectVoiceFile } from "./lib/voice-media-quality.mjs";
+import { safeVoiceFileName, voiceFileName } from "./lib/voice-rendering.mjs";
+import { loadTypeScriptModule } from "./lib/load-ts-module.mjs";
 
 const args = parseArgs(process.argv.slice(2));
 const voice = args.voice ?? "zh-CN-XiaoxiaoNeural";
@@ -17,6 +19,12 @@ const concurrency = Math.max(1, Math.min(6, Number(args.concurrency ?? 4)));
 const manifestPath = join("public", "audio", "voice", "manifest.json");
 const voiceLines = JSON.parse(readFileSync("public/audio/voice-lines.json", "utf8"));
 const selected = selectLines(voiceLines.lines, limit, includeParent);
+const { prepareSpeechText } = await loadTypeScriptModule("src/speech-pronunciation.ts");
+for (const line of selected) {
+  if ((line.spokenText ?? line.text) !== prepareSpeechText(line.text, line.locale)) {
+    throw new Error(`Stale pronunciation input for ${line.id}; run pnpm export:voice-lines first.`);
+  }
+}
 
 const entries = [];
 const failures = [];
@@ -30,7 +38,8 @@ while(cursor<selected.length) {
   const voiceKey=slug(`edge-${effectiveVoice}`);
   const outputDir=join("public", "audio", "voice", locale, voiceKey);
   mkdirSync(outputDir,{recursive:true});
-  const filename = `${safeFileName(line.id)}.mp3`;
+  const spokenText = line.spokenText ?? line.text;
+  const filename = voiceFileName(line, { voice: effectiveVoice, rate, pitch });
   const outputPath = join(outputDir, filename);
   const textPath = join(tmpdir(), `thinking-island-edge-${process.pid}-${index}.txt`);
   const cachedInspection = await inspectVoiceFile(outputPath, line.text);
@@ -43,7 +52,7 @@ while(cursor<selected.length) {
       }
       rmSync(outputPath, { force: true });
     }
-    writeFileSync(textPath, line.text);
+    writeFileSync(textPath, spokenText);
     try {
       await retry(async () => {
         rmSync(outputPath, { force: true });
@@ -81,6 +90,7 @@ while(cursor<selected.length) {
     id: line.id,
     kind: line.kind,
     text: line.text,
+    ...(spokenText !== line.text ? { spokenText } : {}),
     locale,
     voice: effectiveVoice,
     src: `/audio/voice/${locale}/${voiceKey}/${encodeURIComponent(basename(outputPath))}`,
@@ -154,14 +164,6 @@ function parseArgs(values) {
   return parsed;
 }
 
-function safeFileName(input) {
-  return input
-    .normalize("NFKC")
-    .replace(/[^\p{Letter}\p{Number}-]+/gu, "-")
-    .replace(/^-|-$/g, "")
-    .slice(0, 110);
-}
-
 function slug(input) {
-  return safeFileName(input).toLowerCase();
+  return safeVoiceFileName(input).toLowerCase();
 }

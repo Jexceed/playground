@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T12:46:13.115Z",
+  "generatedAt": "2026-10-06T00:45:43.746Z",
   "provider": "edge-tts Python package",
   "voice": "zh-CN-XiaoxiaoNeural",
   "rate": "-12%",
@@ -9734,49 +9734,55 @@
       "id": "game-goal-训练二维定位-行列对应和工作记忆",
       "kind": "game-goal",
       "text": "训练二维定位、行列对应和工作记忆。",
+      "spokenText": "训练二维定位、航列对应和工作记忆。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/game-goal-%E8%AE%AD%E7%BB%83%E4%BA%8C%E7%BB%B4%E5%AE%9A%E4%BD%8D-%E8%A1%8C%E5%88%97%E5%AF%B9%E5%BA%94%E5%92%8C%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BF%86.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/game-goal-%E8%AE%AD%E7%BB%83%E4%BA%8C%E7%BB%B4%E5%AE%9A%E4%BD%8D-%E8%A1%8C%E5%88%97%E5%AF%B9%E5%BA%94%E5%92%8C%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BF%86-pron-704a227f64e4.mp3"
     },
     {
       "id": "parent-请她先找字母行-再找数字列-最后说出交叉的格子",
       "kind": "parent",
       "text": "请她先找字母行，再找数字列，最后说出交叉的格子。",
+      "spokenText": "请她先找字母航，再找数字列，最后说出交叉的格子。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E5%85%88%E6%89%BE%E5%AD%97%E6%AF%8D%E8%A1%8C-%E5%86%8D%E6%89%BE%E6%95%B0%E5%AD%97%E5%88%97-%E6%9C%80%E5%90%8E%E8%AF%B4%E5%87%BA%E4%BA%A4%E5%8F%89%E7%9A%84%E6%A0%BC%E5%AD%90.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E5%85%88%E6%89%BE%E5%AD%97%E6%AF%8D%E8%A1%8C-%E5%86%8D%E6%89%BE%E6%95%B0%E5%AD%97%E5%88%97-%E6%9C%80%E5%90%8E%E8%AF%B4%E5%87%BA%E4%BA%A4%E5%8F%89%E7%9A%84%E6%A0%BC%E5%AD%90-pron-ba423189eab3.mp3"
     },
     {
       "id": "prompt-a1-里藏着什么-先找字母行-再找数字列",
       "kind": "prompt",
       "text": "A1 里藏着什么？先找字母行，再找数字列。",
+      "spokenText": "A1 里藏着什么？先找字母航，再找数字列。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-a1-%E9%87%8C%E8%97%8F%E7%9D%80%E4%BB%80%E4%B9%88-%E5%85%88%E6%89%BE%E5%AD%97%E6%AF%8D%E8%A1%8C-%E5%86%8D%E6%89%BE%E6%95%B0%E5%AD%97%E5%88%97.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-a1-%E9%87%8C%E8%97%8F%E7%9D%80%E4%BB%80%E4%B9%88-%E5%85%88%E6%89%BE%E5%AD%97%E6%AF%8D%E8%A1%8C-%E5%86%8D%E6%89%BE%E6%95%B0%E5%AD%97%E5%88%97-pron-d94228d41015.mp3"
     },
     {
       "id": "success-a1-是-a-行-1-列-格子里是小鸟",
       "kind": "success",
       "text": "A1 是 A 行 1 列，格子里是小鸟。",
+      "spokenText": "A1 是 A 航 1 列，格子里是小鸟。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-a1-%E6%98%AF-a-%E8%A1%8C-1-%E5%88%97-%E6%A0%BC%E5%AD%90%E9%87%8C%E6%98%AF%E5%B0%8F%E9%B8%9F.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-a1-%E6%98%AF-a-%E8%A1%8C-1-%E5%88%97-%E6%A0%BC%E5%AD%90%E9%87%8C%E6%98%AF%E5%B0%8F%E9%B8%9F-pron-b0f02d459b9f.mp3"
     },
     {
       "id": "retry-先找到-a-行-再横着找到-1-列-不要先猜物品",
       "kind": "retry",
       "text": "先找到 A 行，再横着找到 1 列，不要先猜物品。",
+      "spokenText": "先找到 A 航，再横着找到 1 列，不要先猜物品。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E6%89%BE%E5%88%B0-a-%E8%A1%8C-%E5%86%8D%E6%A8%AA%E7%9D%80%E6%89%BE%E5%88%B0-1-%E5%88%97-%E4%B8%8D%E8%A6%81%E5%85%88%E7%8C%9C%E7%89%A9%E5%93%81.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E6%89%BE%E5%88%B0-a-%E8%A1%8C-%E5%86%8D%E6%A8%AA%E7%9D%80%E6%89%BE%E5%88%B0-1-%E5%88%97-%E4%B8%8D%E8%A6%81%E5%85%88%E7%8C%9C%E7%89%A9%E5%93%81-pron-7f9152ed1410.mp3"
     },
     {
       "id": "parent-请她指着-a-行和-1-列交叉的格子-说为什么是小鸟",
       "kind": "parent",
       "text": "请她指着 A 行和 1 列交叉的格子，说为什么是小鸟。",
+      "spokenText": "请她指着 A 航和 1 列交叉的格子，说为什么是小鸟。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80-a-%E8%A1%8C%E5%92%8C-1-%E5%88%97%E4%BA%A4%E5%8F%89%E7%9A%84%E6%A0%BC%E5%AD%90-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E5%B0%8F%E9%B8%9F.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80-a-%E8%A1%8C%E5%92%8C-1-%E5%88%97%E4%BA%A4%E5%8F%89%E7%9A%84%E6%A0%BC%E5%AD%90-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E5%B0%8F%E9%B8%9F-pron-e6d1d5339b02.mp3"
     },
     {
       "id": "object-积木塔",
@@ -9790,129 +9796,145 @@
       "id": "prompt-a3-里藏着什么-先找字母行-再找数字列",
       "kind": "prompt",
       "text": "A3 里藏着什么？先找字母行，再找数字列。",
+      "spokenText": "A3 里藏着什么？先找字母航，再找数字列。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-a3-%E9%87%8C%E8%97%8F%E7%9D%80%E4%BB%80%E4%B9%88-%E5%85%88%E6%89%BE%E5%AD%97%E6%AF%8D%E8%A1%8C-%E5%86%8D%E6%89%BE%E6%95%B0%E5%AD%97%E5%88%97.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-a3-%E9%87%8C%E8%97%8F%E7%9D%80%E4%BB%80%E4%B9%88-%E5%85%88%E6%89%BE%E5%AD%97%E6%AF%8D%E8%A1%8C-%E5%86%8D%E6%89%BE%E6%95%B0%E5%AD%97%E5%88%97-pron-9ecb986c16e4.mp3"
     },
     {
       "id": "success-a3-是-a-行-3-列-格子里是积木塔",
       "kind": "success",
       "text": "A3 是 A 行 3 列，格子里是积木塔。",
+      "spokenText": "A3 是 A 航 3 列，格子里是积木塔。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-a3-%E6%98%AF-a-%E8%A1%8C-3-%E5%88%97-%E6%A0%BC%E5%AD%90%E9%87%8C%E6%98%AF%E7%A7%AF%E6%9C%A8%E5%A1%94.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-a3-%E6%98%AF-a-%E8%A1%8C-3-%E5%88%97-%E6%A0%BC%E5%AD%90%E9%87%8C%E6%98%AF%E7%A7%AF%E6%9C%A8%E5%A1%94-pron-26d2b69ecdbc.mp3"
     },
     {
       "id": "retry-先找到-a-行-再横着找到-3-列-不要先猜物品",
       "kind": "retry",
       "text": "先找到 A 行，再横着找到 3 列，不要先猜物品。",
+      "spokenText": "先找到 A 航，再横着找到 3 列，不要先猜物品。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E6%89%BE%E5%88%B0-a-%E8%A1%8C-%E5%86%8D%E6%A8%AA%E7%9D%80%E6%89%BE%E5%88%B0-3-%E5%88%97-%E4%B8%8D%E8%A6%81%E5%85%88%E7%8C%9C%E7%89%A9%E5%93%81.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E6%89%BE%E5%88%B0-a-%E8%A1%8C-%E5%86%8D%E6%A8%AA%E7%9D%80%E6%89%BE%E5%88%B0-3-%E5%88%97-%E4%B8%8D%E8%A6%81%E5%85%88%E7%8C%9C%E7%89%A9%E5%93%81-pron-29137b611a15.mp3"
     },
     {
       "id": "parent-请她指着-a-行和-3-列交叉的格子-说为什么是积木塔",
       "kind": "parent",
       "text": "请她指着 A 行和 3 列交叉的格子，说为什么是积木塔。",
+      "spokenText": "请她指着 A 航和 3 列交叉的格子，说为什么是积木塔。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80-a-%E8%A1%8C%E5%92%8C-3-%E5%88%97%E4%BA%A4%E5%8F%89%E7%9A%84%E6%A0%BC%E5%AD%90-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E7%A7%AF%E6%9C%A8%E5%A1%94.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80-a-%E8%A1%8C%E5%92%8C-3-%E5%88%97%E4%BA%A4%E5%8F%89%E7%9A%84%E6%A0%BC%E5%AD%90-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E7%A7%AF%E6%9C%A8%E5%A1%94-pron-a2353336b882.mp3"
     },
     {
       "id": "prompt-b2-里藏着什么-先找字母行-再找数字列",
       "kind": "prompt",
       "text": "B2 里藏着什么？先找字母行，再找数字列。",
+      "spokenText": "B2 里藏着什么？先找字母航，再找数字列。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-b2-%E9%87%8C%E8%97%8F%E7%9D%80%E4%BB%80%E4%B9%88-%E5%85%88%E6%89%BE%E5%AD%97%E6%AF%8D%E8%A1%8C-%E5%86%8D%E6%89%BE%E6%95%B0%E5%AD%97%E5%88%97.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-b2-%E9%87%8C%E8%97%8F%E7%9D%80%E4%BB%80%E4%B9%88-%E5%85%88%E6%89%BE%E5%AD%97%E6%AF%8D%E8%A1%8C-%E5%86%8D%E6%89%BE%E6%95%B0%E5%AD%97%E5%88%97-pron-fc121fe46e13.mp3"
     },
     {
       "id": "success-b2-是-b-行-2-列-格子里是小猫",
       "kind": "success",
       "text": "B2 是 B 行 2 列，格子里是小猫。",
+      "spokenText": "B2 是 B 航 2 列，格子里是小猫。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-b2-%E6%98%AF-b-%E8%A1%8C-2-%E5%88%97-%E6%A0%BC%E5%AD%90%E9%87%8C%E6%98%AF%E5%B0%8F%E7%8C%AB.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-b2-%E6%98%AF-b-%E8%A1%8C-2-%E5%88%97-%E6%A0%BC%E5%AD%90%E9%87%8C%E6%98%AF%E5%B0%8F%E7%8C%AB-pron-aed6cb5e031c.mp3"
     },
     {
       "id": "retry-先找到-b-行-再横着找到-2-列-不要先猜物品",
       "kind": "retry",
       "text": "先找到 B 行，再横着找到 2 列，不要先猜物品。",
+      "spokenText": "先找到 B 航，再横着找到 2 列，不要先猜物品。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E6%89%BE%E5%88%B0-b-%E8%A1%8C-%E5%86%8D%E6%A8%AA%E7%9D%80%E6%89%BE%E5%88%B0-2-%E5%88%97-%E4%B8%8D%E8%A6%81%E5%85%88%E7%8C%9C%E7%89%A9%E5%93%81.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E6%89%BE%E5%88%B0-b-%E8%A1%8C-%E5%86%8D%E6%A8%AA%E7%9D%80%E6%89%BE%E5%88%B0-2-%E5%88%97-%E4%B8%8D%E8%A6%81%E5%85%88%E7%8C%9C%E7%89%A9%E5%93%81-pron-adcc80091fe5.mp3"
     },
     {
       "id": "parent-请她指着-b-行和-2-列交叉的格子-说为什么是小猫",
       "kind": "parent",
       "text": "请她指着 B 行和 2 列交叉的格子，说为什么是小猫。",
+      "spokenText": "请她指着 B 航和 2 列交叉的格子，说为什么是小猫。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80-b-%E8%A1%8C%E5%92%8C-2-%E5%88%97%E4%BA%A4%E5%8F%89%E7%9A%84%E6%A0%BC%E5%AD%90-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E5%B0%8F%E7%8C%AB.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80-b-%E8%A1%8C%E5%92%8C-2-%E5%88%97%E4%BA%A4%E5%8F%89%E7%9A%84%E6%A0%BC%E5%AD%90-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E5%B0%8F%E7%8C%AB-pron-972b3eef87c4.mp3"
     },
     {
       "id": "prompt-c1-里藏着什么-先找字母行-再找数字列",
       "kind": "prompt",
       "text": "C1 里藏着什么？先找字母行，再找数字列。",
+      "spokenText": "C1 里藏着什么？先找字母航，再找数字列。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-c1-%E9%87%8C%E8%97%8F%E7%9D%80%E4%BB%80%E4%B9%88-%E5%85%88%E6%89%BE%E5%AD%97%E6%AF%8D%E8%A1%8C-%E5%86%8D%E6%89%BE%E6%95%B0%E5%AD%97%E5%88%97.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-c1-%E9%87%8C%E8%97%8F%E7%9D%80%E4%BB%80%E4%B9%88-%E5%85%88%E6%89%BE%E5%AD%97%E6%AF%8D%E8%A1%8C-%E5%86%8D%E6%89%BE%E6%95%B0%E5%AD%97%E5%88%97-pron-a108b20b49bd.mp3"
     },
     {
       "id": "success-c1-是-c-行-1-列-格子里是书包",
       "kind": "success",
       "text": "C1 是 C 行 1 列，格子里是书包。",
+      "spokenText": "C1 是 C 航 1 列，格子里是书包。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-c1-%E6%98%AF-c-%E8%A1%8C-1-%E5%88%97-%E6%A0%BC%E5%AD%90%E9%87%8C%E6%98%AF%E4%B9%A6%E5%8C%85.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-c1-%E6%98%AF-c-%E8%A1%8C-1-%E5%88%97-%E6%A0%BC%E5%AD%90%E9%87%8C%E6%98%AF%E4%B9%A6%E5%8C%85-pron-001602abaf48.mp3"
     },
     {
       "id": "retry-先找到-c-行-再横着找到-1-列-不要先猜物品",
       "kind": "retry",
       "text": "先找到 C 行，再横着找到 1 列，不要先猜物品。",
+      "spokenText": "先找到 C 航，再横着找到 1 列，不要先猜物品。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E6%89%BE%E5%88%B0-c-%E8%A1%8C-%E5%86%8D%E6%A8%AA%E7%9D%80%E6%89%BE%E5%88%B0-1-%E5%88%97-%E4%B8%8D%E8%A6%81%E5%85%88%E7%8C%9C%E7%89%A9%E5%93%81.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E6%89%BE%E5%88%B0-c-%E8%A1%8C-%E5%86%8D%E6%A8%AA%E7%9D%80%E6%89%BE%E5%88%B0-1-%E5%88%97-%E4%B8%8D%E8%A6%81%E5%85%88%E7%8C%9C%E7%89%A9%E5%93%81-pron-b5fb19fbba98.mp3"
     },
     {
       "id": "parent-请她指着-c-行和-1-列交叉的格子-说为什么是书包",
       "kind": "parent",
       "text": "请她指着 C 行和 1 列交叉的格子，说为什么是书包。",
+      "spokenText": "请她指着 C 航和 1 列交叉的格子，说为什么是书包。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80-c-%E8%A1%8C%E5%92%8C-1-%E5%88%97%E4%BA%A4%E5%8F%89%E7%9A%84%E6%A0%BC%E5%AD%90-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E4%B9%A6%E5%8C%85.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80-c-%E8%A1%8C%E5%92%8C-1-%E5%88%97%E4%BA%A4%E5%8F%89%E7%9A%84%E6%A0%BC%E5%AD%90-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E4%B9%A6%E5%8C%85-pron-b48cfd3dab7b.mp3"
     },
     {
       "id": "prompt-a4-里藏着什么-先找字母行-再找数字列",
       "kind": "prompt",
       "text": "A4 里藏着什么？先找字母行，再找数字列。",
+      "spokenText": "A4 里藏着什么？先找字母航，再找数字列。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-a4-%E9%87%8C%E8%97%8F%E7%9D%80%E4%BB%80%E4%B9%88-%E5%85%88%E6%89%BE%E5%AD%97%E6%AF%8D%E8%A1%8C-%E5%86%8D%E6%89%BE%E6%95%B0%E5%AD%97%E5%88%97.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-a4-%E9%87%8C%E8%97%8F%E7%9D%80%E4%BB%80%E4%B9%88-%E5%85%88%E6%89%BE%E5%AD%97%E6%AF%8D%E8%A1%8C-%E5%86%8D%E6%89%BE%E6%95%B0%E5%AD%97%E5%88%97-pron-dad8dd30ed2b.mp3"
     },
     {
       "id": "success-a4-是-a-行-4-列-格子里是铅笔",
       "kind": "success",
       "text": "A4 是 A 行 4 列，格子里是铅笔。",
+      "spokenText": "A4 是 A 航 4 列，格子里是铅笔。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-a4-%E6%98%AF-a-%E8%A1%8C-4-%E5%88%97-%E6%A0%BC%E5%AD%90%E9%87%8C%E6%98%AF%E9%93%85%E7%AC%94.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-a4-%E6%98%AF-a-%E8%A1%8C-4-%E5%88%97-%E6%A0%BC%E5%AD%90%E9%87%8C%E6%98%AF%E9%93%85%E7%AC%94-pron-a06ae77fb48c.mp3"
     },
     {
       "id": "retry-先找到-a-行-再横着找到-4-列-不要先猜物品",
       "kind": "retry",
       "text": "先找到 A 行，再横着找到 4 列，不要先猜物品。",
+      "spokenText": "先找到 A 航，再横着找到 4 列，不要先猜物品。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E6%89%BE%E5%88%B0-a-%E8%A1%8C-%E5%86%8D%E6%A8%AA%E7%9D%80%E6%89%BE%E5%88%B0-4-%E5%88%97-%E4%B8%8D%E8%A6%81%E5%85%88%E7%8C%9C%E7%89%A9%E5%93%81.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E6%89%BE%E5%88%B0-a-%E8%A1%8C-%E5%86%8D%E6%A8%AA%E7%9D%80%E6%89%BE%E5%88%B0-4-%E5%88%97-%E4%B8%8D%E8%A6%81%E5%85%88%E7%8C%9C%E7%89%A9%E5%93%81-pron-f6039dd94aa0.mp3"
     },
     {
       "id": "parent-请她指着-a-行和-4-列交叉的格子-说为什么是铅笔",
       "kind": "parent",
       "text": "请她指着 A 行和 4 列交叉的格子，说为什么是铅笔。",
+      "spokenText": "请她指着 A 航和 4 列交叉的格子，说为什么是铅笔。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80-a-%E8%A1%8C%E5%92%8C-4-%E5%88%97%E4%BA%A4%E5%8F%89%E7%9A%84%E6%A0%BC%E5%AD%90-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E9%93%85%E7%AC%94.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80-a-%E8%A1%8C%E5%92%8C-4-%E5%88%97%E4%BA%A4%E5%8F%89%E7%9A%84%E6%A0%BC%E5%AD%90-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E9%93%85%E7%AC%94-pron-c7d3f3f343d2.mp3"
     },
     {
       "id": "object-三角尺",
@@ -9934,97 +9956,109 @@
       "id": "prompt-b3-里藏着什么-先找字母行-再找数字列",
       "kind": "prompt",
       "text": "B3 里藏着什么？先找字母行，再找数字列。",
+      "spokenText": "B3 里藏着什么？先找字母航，再找数字列。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-b3-%E9%87%8C%E8%97%8F%E7%9D%80%E4%BB%80%E4%B9%88-%E5%85%88%E6%89%BE%E5%AD%97%E6%AF%8D%E8%A1%8C-%E5%86%8D%E6%89%BE%E6%95%B0%E5%AD%97%E5%88%97.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-b3-%E9%87%8C%E8%97%8F%E7%9D%80%E4%BB%80%E4%B9%88-%E5%85%88%E6%89%BE%E5%AD%97%E6%AF%8D%E8%A1%8C-%E5%86%8D%E6%89%BE%E6%95%B0%E5%AD%97%E5%88%97-pron-4ff0d25c432c.mp3"
     },
     {
       "id": "success-b3-是-b-行-3-列-格子里是积木塔",
       "kind": "success",
       "text": "B3 是 B 行 3 列，格子里是积木塔。",
+      "spokenText": "B3 是 B 航 3 列，格子里是积木塔。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-b3-%E6%98%AF-b-%E8%A1%8C-3-%E5%88%97-%E6%A0%BC%E5%AD%90%E9%87%8C%E6%98%AF%E7%A7%AF%E6%9C%A8%E5%A1%94.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-b3-%E6%98%AF-b-%E8%A1%8C-3-%E5%88%97-%E6%A0%BC%E5%AD%90%E9%87%8C%E6%98%AF%E7%A7%AF%E6%9C%A8%E5%A1%94-pron-1f0aaadfe1e5.mp3"
     },
     {
       "id": "retry-先找到-b-行-再横着找到-3-列-不要先猜物品",
       "kind": "retry",
       "text": "先找到 B 行，再横着找到 3 列，不要先猜物品。",
+      "spokenText": "先找到 B 航，再横着找到 3 列，不要先猜物品。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E6%89%BE%E5%88%B0-b-%E8%A1%8C-%E5%86%8D%E6%A8%AA%E7%9D%80%E6%89%BE%E5%88%B0-3-%E5%88%97-%E4%B8%8D%E8%A6%81%E5%85%88%E7%8C%9C%E7%89%A9%E5%93%81.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E6%89%BE%E5%88%B0-b-%E8%A1%8C-%E5%86%8D%E6%A8%AA%E7%9D%80%E6%89%BE%E5%88%B0-3-%E5%88%97-%E4%B8%8D%E8%A6%81%E5%85%88%E7%8C%9C%E7%89%A9%E5%93%81-pron-8006c4817160.mp3"
     },
     {
       "id": "parent-请她指着-b-行和-3-列交叉的格子-说为什么是积木塔",
       "kind": "parent",
       "text": "请她指着 B 行和 3 列交叉的格子，说为什么是积木塔。",
+      "spokenText": "请她指着 B 航和 3 列交叉的格子，说为什么是积木塔。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80-b-%E8%A1%8C%E5%92%8C-3-%E5%88%97%E4%BA%A4%E5%8F%89%E7%9A%84%E6%A0%BC%E5%AD%90-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E7%A7%AF%E6%9C%A8%E5%A1%94.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80-b-%E8%A1%8C%E5%92%8C-3-%E5%88%97%E4%BA%A4%E5%8F%89%E7%9A%84%E6%A0%BC%E5%AD%90-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E7%A7%AF%E6%9C%A8%E5%A1%94-pron-d56bb4708fc2.mp3"
     },
     {
       "id": "prompt-c2-里藏着什么-先找字母行-再找数字列",
       "kind": "prompt",
       "text": "C2 里藏着什么？先找字母行，再找数字列。",
+      "spokenText": "C2 里藏着什么？先找字母航，再找数字列。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-c2-%E9%87%8C%E8%97%8F%E7%9D%80%E4%BB%80%E4%B9%88-%E5%85%88%E6%89%BE%E5%AD%97%E6%AF%8D%E8%A1%8C-%E5%86%8D%E6%89%BE%E6%95%B0%E5%AD%97%E5%88%97.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-c2-%E9%87%8C%E8%97%8F%E7%9D%80%E4%BB%80%E4%B9%88-%E5%85%88%E6%89%BE%E5%AD%97%E6%AF%8D%E8%A1%8C-%E5%86%8D%E6%89%BE%E6%95%B0%E5%AD%97%E5%88%97-pron-52cbc511716a.mp3"
     },
     {
       "id": "success-c2-是-c-行-2-列-格子里是小鱼",
       "kind": "success",
       "text": "C2 是 C 行 2 列，格子里是小鱼。",
+      "spokenText": "C2 是 C 航 2 列，格子里是小鱼。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-c2-%E6%98%AF-c-%E8%A1%8C-2-%E5%88%97-%E6%A0%BC%E5%AD%90%E9%87%8C%E6%98%AF%E5%B0%8F%E9%B1%BC.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-c2-%E6%98%AF-c-%E8%A1%8C-2-%E5%88%97-%E6%A0%BC%E5%AD%90%E9%87%8C%E6%98%AF%E5%B0%8F%E9%B1%BC-pron-8891e036561a.mp3"
     },
     {
       "id": "retry-先找到-c-行-再横着找到-2-列-不要先猜物品",
       "kind": "retry",
       "text": "先找到 C 行，再横着找到 2 列，不要先猜物品。",
+      "spokenText": "先找到 C 航，再横着找到 2 列，不要先猜物品。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E6%89%BE%E5%88%B0-c-%E8%A1%8C-%E5%86%8D%E6%A8%AA%E7%9D%80%E6%89%BE%E5%88%B0-2-%E5%88%97-%E4%B8%8D%E8%A6%81%E5%85%88%E7%8C%9C%E7%89%A9%E5%93%81.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E6%89%BE%E5%88%B0-c-%E8%A1%8C-%E5%86%8D%E6%A8%AA%E7%9D%80%E6%89%BE%E5%88%B0-2-%E5%88%97-%E4%B8%8D%E8%A6%81%E5%85%88%E7%8C%9C%E7%89%A9%E5%93%81-pron-bbd4708fac6e.mp3"
     },
     {
       "id": "parent-请她指着-c-行和-2-列交叉的格子-说为什么是小鱼",
       "kind": "parent",
       "text": "请她指着 C 行和 2 列交叉的格子，说为什么是小鱼。",
+      "spokenText": "请她指着 C 航和 2 列交叉的格子，说为什么是小鱼。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80-c-%E8%A1%8C%E5%92%8C-2-%E5%88%97%E4%BA%A4%E5%8F%89%E7%9A%84%E6%A0%BC%E5%AD%90-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E5%B0%8F%E9%B1%BC.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80-c-%E8%A1%8C%E5%92%8C-2-%E5%88%97%E4%BA%A4%E5%8F%89%E7%9A%84%E6%A0%BC%E5%AD%90-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E5%B0%8F%E9%B1%BC-pron-ae6777231527.mp3"
     },
     {
       "id": "prompt-d4-里藏着什么-先找字母行-再找数字列",
       "kind": "prompt",
       "text": "D4 里藏着什么？先找字母行，再找数字列。",
+      "spokenText": "D4 里藏着什么？先找字母航，再找数字列。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-d4-%E9%87%8C%E8%97%8F%E7%9D%80%E4%BB%80%E4%B9%88-%E5%85%88%E6%89%BE%E5%AD%97%E6%AF%8D%E8%A1%8C-%E5%86%8D%E6%89%BE%E6%95%B0%E5%AD%97%E5%88%97.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-d4-%E9%87%8C%E8%97%8F%E7%9D%80%E4%BB%80%E4%B9%88-%E5%85%88%E6%89%BE%E5%AD%97%E6%AF%8D%E8%A1%8C-%E5%86%8D%E6%89%BE%E6%95%B0%E5%AD%97%E5%88%97-pron-65ac97a086a8.mp3"
     },
     {
       "id": "success-d4-是-d-行-4-列-格子里是草莓",
       "kind": "success",
       "text": "D4 是 D 行 4 列，格子里是草莓。",
+      "spokenText": "D4 是 D 航 4 列，格子里是草莓。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-d4-%E6%98%AF-d-%E8%A1%8C-4-%E5%88%97-%E6%A0%BC%E5%AD%90%E9%87%8C%E6%98%AF%E8%8D%89%E8%8E%93.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-d4-%E6%98%AF-d-%E8%A1%8C-4-%E5%88%97-%E6%A0%BC%E5%AD%90%E9%87%8C%E6%98%AF%E8%8D%89%E8%8E%93-pron-069db8e66677.mp3"
     },
     {
       "id": "retry-先找到-d-行-再横着找到-4-列-不要先猜物品",
       "kind": "retry",
       "text": "先找到 D 行，再横着找到 4 列，不要先猜物品。",
+      "spokenText": "先找到 D 航，再横着找到 4 列，不要先猜物品。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E6%89%BE%E5%88%B0-d-%E8%A1%8C-%E5%86%8D%E6%A8%AA%E7%9D%80%E6%89%BE%E5%88%B0-4-%E5%88%97-%E4%B8%8D%E8%A6%81%E5%85%88%E7%8C%9C%E7%89%A9%E5%93%81.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E6%89%BE%E5%88%B0-d-%E8%A1%8C-%E5%86%8D%E6%A8%AA%E7%9D%80%E6%89%BE%E5%88%B0-4-%E5%88%97-%E4%B8%8D%E8%A6%81%E5%85%88%E7%8C%9C%E7%89%A9%E5%93%81-pron-cacc5b7d20e4.mp3"
     },
     {
       "id": "parent-请她指着-d-行和-4-列交叉的格子-说为什么是草莓",
       "kind": "parent",
       "text": "请她指着 D 行和 4 列交叉的格子，说为什么是草莓。",
+      "spokenText": "请她指着 D 航和 4 列交叉的格子，说为什么是草莓。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80-d-%E8%A1%8C%E5%92%8C-4-%E5%88%97%E4%BA%A4%E5%8F%89%E7%9A%84%E6%A0%BC%E5%AD%90-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E8%8D%89%E8%8E%93.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80-d-%E8%A1%8C%E5%92%8C-4-%E5%88%97%E4%BA%A4%E5%8F%89%E7%9A%84%E6%A0%BC%E5%AD%90-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E8%8D%89%E8%8E%93-pron-13bebeae1672.mp3"
     },
     {
       "id": "prompt-小狗住在哪个地址-先找到物品-再读左边字母和上面数字",
@@ -10038,25 +10072,28 @@
       "id": "success-小狗在-a-行-2-列-所以地址是-a2",
       "kind": "success",
       "text": "小狗在 A 行 2 列，所以地址是 A2。",
+      "spokenText": "小狗在 A 航 2 列，所以地址是 A2。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%B0%8F%E7%8B%97%E5%9C%A8-a-%E8%A1%8C-2-%E5%88%97-%E6%89%80%E4%BB%A5%E5%9C%B0%E5%9D%80%E6%98%AF-a2.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%B0%8F%E7%8B%97%E5%9C%A8-a-%E8%A1%8C-2-%E5%88%97-%E6%89%80%E4%BB%A5%E5%9C%B0%E5%9D%80%E6%98%AF-a2-pron-0fcb64d639ab.mp3"
     },
     {
       "id": "retry-先在图里找到小狗-再读这一行的字母和这一列的数字",
       "kind": "retry",
       "text": "先在图里找到小狗，再读这一行的字母和这一列的数字。",
+      "spokenText": "先在图里找到小狗，再读这一航的字母和这一列的数字。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E5%9C%A8%E5%9B%BE%E9%87%8C%E6%89%BE%E5%88%B0%E5%B0%8F%E7%8B%97-%E5%86%8D%E8%AF%BB%E8%BF%99%E4%B8%80%E8%A1%8C%E7%9A%84%E5%AD%97%E6%AF%8D%E5%92%8C%E8%BF%99%E4%B8%80%E5%88%97%E7%9A%84%E6%95%B0%E5%AD%97.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E5%9C%A8%E5%9B%BE%E9%87%8C%E6%89%BE%E5%88%B0%E5%B0%8F%E7%8B%97-%E5%86%8D%E8%AF%BB%E8%BF%99%E4%B8%80%E8%A1%8C%E7%9A%84%E5%AD%97%E6%AF%8D%E5%92%8C%E8%BF%99%E4%B8%80%E5%88%97%E7%9A%84%E6%95%B0%E5%AD%97-pron-180800f006e7.mp3"
     },
     {
       "id": "parent-请她指着小狗-说它在-a-行-2-列-所以地址是-a2",
       "kind": "parent",
       "text": "请她指着小狗，说它在 A 行、2 列，所以地址是 A2。",
+      "spokenText": "请她指着小狗，说它在 A 航、2 列，所以地址是 A2。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E5%B0%8F%E7%8B%97-%E8%AF%B4%E5%AE%83%E5%9C%A8-a-%E8%A1%8C-2-%E5%88%97-%E6%89%80%E4%BB%A5%E5%9C%B0%E5%9D%80%E6%98%AF-a2.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E5%B0%8F%E7%8B%97-%E8%AF%B4%E5%AE%83%E5%9C%A8-a-%E8%A1%8C-2-%E5%88%97-%E6%89%80%E4%BB%A5%E5%9C%B0%E5%9D%80%E6%98%AF-a2-pron-469bb33eeb50.mp3"
     },
     {
       "id": "choice-a2",
@@ -10094,25 +10131,28 @@
       "id": "success-葡萄在-c-行-3-列-所以地址是-c3",
       "kind": "success",
       "text": "葡萄在 C 行 3 列，所以地址是 C3。",
+      "spokenText": "葡萄在 C 航 3 列，所以地址是 C3。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%91%A1%E8%90%84%E5%9C%A8-c-%E8%A1%8C-3-%E5%88%97-%E6%89%80%E4%BB%A5%E5%9C%B0%E5%9D%80%E6%98%AF-c3.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%91%A1%E8%90%84%E5%9C%A8-c-%E8%A1%8C-3-%E5%88%97-%E6%89%80%E4%BB%A5%E5%9C%B0%E5%9D%80%E6%98%AF-c3-pron-00a1a9383351.mp3"
     },
     {
       "id": "retry-先在图里找到葡萄-再读这一行的字母和这一列的数字",
       "kind": "retry",
       "text": "先在图里找到葡萄，再读这一行的字母和这一列的数字。",
+      "spokenText": "先在图里找到葡萄，再读这一航的字母和这一列的数字。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E5%9C%A8%E5%9B%BE%E9%87%8C%E6%89%BE%E5%88%B0%E8%91%A1%E8%90%84-%E5%86%8D%E8%AF%BB%E8%BF%99%E4%B8%80%E8%A1%8C%E7%9A%84%E5%AD%97%E6%AF%8D%E5%92%8C%E8%BF%99%E4%B8%80%E5%88%97%E7%9A%84%E6%95%B0%E5%AD%97.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E5%9C%A8%E5%9B%BE%E9%87%8C%E6%89%BE%E5%88%B0%E8%91%A1%E8%90%84-%E5%86%8D%E8%AF%BB%E8%BF%99%E4%B8%80%E8%A1%8C%E7%9A%84%E5%AD%97%E6%AF%8D%E5%92%8C%E8%BF%99%E4%B8%80%E5%88%97%E7%9A%84%E6%95%B0%E5%AD%97-pron-8621ba742d14.mp3"
     },
     {
       "id": "parent-请她指着葡萄-说它在-c-行-3-列-所以地址是-c3",
       "kind": "parent",
       "text": "请她指着葡萄，说它在 C 行、3 列，所以地址是 C3。",
+      "spokenText": "请她指着葡萄，说它在 C 航、3 列，所以地址是 C3。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E8%91%A1%E8%90%84-%E8%AF%B4%E5%AE%83%E5%9C%A8-c-%E8%A1%8C-3-%E5%88%97-%E6%89%80%E4%BB%A5%E5%9C%B0%E5%9D%80%E6%98%AF-c3.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E8%91%A1%E8%90%84-%E8%AF%B4%E5%AE%83%E5%9C%A8-c-%E8%A1%8C-3-%E5%88%97-%E6%89%80%E4%BB%A5%E5%9C%B0%E5%9D%80%E6%98%AF-c3-pron-860af9580393.mp3"
     },
     {
       "id": "choice-a3",
@@ -10150,25 +10190,28 @@
       "id": "success-足球在-a-行-3-列-所以地址是-a3",
       "kind": "success",
       "text": "足球在 A 行 3 列，所以地址是 A3。",
+      "spokenText": "足球在 A 航 3 列，所以地址是 A3。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%B6%B3%E7%90%83%E5%9C%A8-a-%E8%A1%8C-3-%E5%88%97-%E6%89%80%E4%BB%A5%E5%9C%B0%E5%9D%80%E6%98%AF-a3.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%B6%B3%E7%90%83%E5%9C%A8-a-%E8%A1%8C-3-%E5%88%97-%E6%89%80%E4%BB%A5%E5%9C%B0%E5%9D%80%E6%98%AF-a3-pron-ac9a420298e7.mp3"
     },
     {
       "id": "retry-先在图里找到足球-再读这一行的字母和这一列的数字",
       "kind": "retry",
       "text": "先在图里找到足球，再读这一行的字母和这一列的数字。",
+      "spokenText": "先在图里找到足球，再读这一航的字母和这一列的数字。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E5%9C%A8%E5%9B%BE%E9%87%8C%E6%89%BE%E5%88%B0%E8%B6%B3%E7%90%83-%E5%86%8D%E8%AF%BB%E8%BF%99%E4%B8%80%E8%A1%8C%E7%9A%84%E5%AD%97%E6%AF%8D%E5%92%8C%E8%BF%99%E4%B8%80%E5%88%97%E7%9A%84%E6%95%B0%E5%AD%97.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E5%9C%A8%E5%9B%BE%E9%87%8C%E6%89%BE%E5%88%B0%E8%B6%B3%E7%90%83-%E5%86%8D%E8%AF%BB%E8%BF%99%E4%B8%80%E8%A1%8C%E7%9A%84%E5%AD%97%E6%AF%8D%E5%92%8C%E8%BF%99%E4%B8%80%E5%88%97%E7%9A%84%E6%95%B0%E5%AD%97-pron-84eebebcab1a.mp3"
     },
     {
       "id": "parent-请她指着足球-说它在-a-行-3-列-所以地址是-a3",
       "kind": "parent",
       "text": "请她指着足球，说它在 A 行、3 列，所以地址是 A3。",
+      "spokenText": "请她指着足球，说它在 A 航、3 列，所以地址是 A3。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E8%B6%B3%E7%90%83-%E8%AF%B4%E5%AE%83%E5%9C%A8-a-%E8%A1%8C-3-%E5%88%97-%E6%89%80%E4%BB%A5%E5%9C%B0%E5%9D%80%E6%98%AF-a3.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E8%B6%B3%E7%90%83-%E8%AF%B4%E5%AE%83%E5%9C%A8-a-%E8%A1%8C-3-%E5%88%97-%E6%89%80%E4%BB%A5%E5%9C%B0%E5%9D%80%E6%98%AF-a3-pron-e5ff67f8fd9f.mp3"
     },
     {
       "id": "prompt-蛋糕住在哪个地址-先找到物品-再读左边字母和上面数字",
@@ -10182,25 +10225,28 @@
       "id": "success-蛋糕在-d-行-3-列-所以地址是-d3",
       "kind": "success",
       "text": "蛋糕在 D 行 3 列，所以地址是 D3。",
+      "spokenText": "蛋糕在 D 航 3 列，所以地址是 D3。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%9B%8B%E7%B3%95%E5%9C%A8-d-%E8%A1%8C-3-%E5%88%97-%E6%89%80%E4%BB%A5%E5%9C%B0%E5%9D%80%E6%98%AF-d3.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%9B%8B%E7%B3%95%E5%9C%A8-d-%E8%A1%8C-3-%E5%88%97-%E6%89%80%E4%BB%A5%E5%9C%B0%E5%9D%80%E6%98%AF-d3-pron-f5779002bcd8.mp3"
     },
     {
       "id": "retry-先在图里找到蛋糕-再读这一行的字母和这一列的数字",
       "kind": "retry",
       "text": "先在图里找到蛋糕，再读这一行的字母和这一列的数字。",
+      "spokenText": "先在图里找到蛋糕，再读这一航的字母和这一列的数字。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E5%9C%A8%E5%9B%BE%E9%87%8C%E6%89%BE%E5%88%B0%E8%9B%8B%E7%B3%95-%E5%86%8D%E8%AF%BB%E8%BF%99%E4%B8%80%E8%A1%8C%E7%9A%84%E5%AD%97%E6%AF%8D%E5%92%8C%E8%BF%99%E4%B8%80%E5%88%97%E7%9A%84%E6%95%B0%E5%AD%97.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E5%9C%A8%E5%9B%BE%E9%87%8C%E6%89%BE%E5%88%B0%E8%9B%8B%E7%B3%95-%E5%86%8D%E8%AF%BB%E8%BF%99%E4%B8%80%E8%A1%8C%E7%9A%84%E5%AD%97%E6%AF%8D%E5%92%8C%E8%BF%99%E4%B8%80%E5%88%97%E7%9A%84%E6%95%B0%E5%AD%97-pron-777cf6f208af.mp3"
     },
     {
       "id": "parent-请她指着蛋糕-说它在-d-行-3-列-所以地址是-d3",
       "kind": "parent",
       "text": "请她指着蛋糕，说它在 D 行、3 列，所以地址是 D3。",
+      "spokenText": "请她指着蛋糕，说它在 D 航、3 列，所以地址是 D3。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E8%9B%8B%E7%B3%95-%E8%AF%B4%E5%AE%83%E5%9C%A8-d-%E8%A1%8C-3-%E5%88%97-%E6%89%80%E4%BB%A5%E5%9C%B0%E5%9D%80%E6%98%AF-d3.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E8%9B%8B%E7%B3%95-%E8%AF%B4%E5%AE%83%E5%9C%A8-d-%E8%A1%8C-3-%E5%88%97-%E6%89%80%E4%BB%A5%E5%9C%B0%E5%9D%80%E6%98%AF-d3-pron-e2f8c30863d5.mp3"
     },
     {
       "id": "choice-d3",
@@ -10238,41 +10284,46 @@
       "id": "parent-问她-这一行少了什么-这一列有没有同样的办法",
       "kind": "parent",
       "text": "问她：这一行少了什么？这一列有没有同样的办法？",
+      "spokenText": "问她：这一航少了什么？这一列有没有同样的办法？",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E8%BF%99%E4%B8%80%E8%A1%8C%E5%B0%91%E4%BA%86%E4%BB%80%E4%B9%88-%E8%BF%99%E4%B8%80%E5%88%97%E6%9C%89%E6%B2%A1%E6%9C%89%E5%90%8C%E6%A0%B7%E7%9A%84%E5%8A%9E%E6%B3%95.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E8%BF%99%E4%B8%80%E8%A1%8C%E5%B0%91%E4%BA%86%E4%BB%80%E4%B9%88-%E8%BF%99%E4%B8%80%E5%88%97%E6%9C%89%E6%B2%A1%E6%9C%89%E5%90%8C%E6%A0%B7%E7%9A%84%E5%8A%9E%E6%B3%95-pron-4dc9a5c85305.mp3"
     },
     {
       "id": "prompt-空格里应该放什么-先读完整的第一行-再用同样规则补第三行",
       "kind": "prompt",
       "text": "空格里应该放什么？先读完整的第一行，再用同样规则补第三行。",
+      "spokenText": "空格里应该放什么？先读完整的第一航，再用同样规则补第三航。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%A9%BA%E6%A0%BC%E9%87%8C%E5%BA%94%E8%AF%A5%E6%94%BE%E4%BB%80%E4%B9%88-%E5%85%88%E8%AF%BB%E5%AE%8C%E6%95%B4%E7%9A%84%E7%AC%AC%E4%B8%80%E8%A1%8C-%E5%86%8D%E7%94%A8%E5%90%8C%E6%A0%B7%E8%A7%84%E5%88%99%E8%A1%A5%E7%AC%AC%E4%B8%89%E8%A1%8C.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%A9%BA%E6%A0%BC%E9%87%8C%E5%BA%94%E8%AF%A5%E6%94%BE%E4%BB%80%E4%B9%88-%E5%85%88%E8%AF%BB%E5%AE%8C%E6%95%B4%E7%9A%84%E7%AC%AC%E4%B8%80%E8%A1%8C-%E5%86%8D%E7%94%A8%E5%90%8C%E6%A0%B7%E8%A7%84%E5%88%99%E8%A1%A5%E7%AC%AC%E4%B8%89%E8%A1%8C-pron-298731516e04.mp3"
     },
     {
       "id": "success-第一行是-和-合起来变成-第三行是-和-所以空格补",
       "kind": "success",
       "text": "第一行是 🔴 和 🔵，合起来变成 🔴🔵；第三行是 🟣 和 🔴，所以空格补 🟣🔴。",
+      "spokenText": "第一航是 🔴 和 🔵，合起来变成 🔴🔵；第三航是 🟣 和 🔴，所以空格补 🟣🔴。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%AC%AC%E4%B8%80%E8%A1%8C%E6%98%AF-%E5%92%8C-%E5%90%88%E8%B5%B7%E6%9D%A5%E5%8F%98%E6%88%90-%E7%AC%AC%E4%B8%89%E8%A1%8C%E6%98%AF-%E5%92%8C-%E6%89%80%E4%BB%A5%E7%A9%BA%E6%A0%BC%E8%A1%A5.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%AC%AC%E4%B8%80%E8%A1%8C%E6%98%AF-%E5%92%8C-%E5%90%88%E8%B5%B7%E6%9D%A5%E5%8F%98%E6%88%90-%E7%AC%AC%E4%B8%89%E8%A1%8C%E6%98%AF-%E5%92%8C-%E6%89%80%E4%BB%A5%E7%A9%BA%E6%A0%BC%E8%A1%A5-pron-354fbc1192bd.mp3"
     },
     {
       "id": "retry-先读第一行这个完整行-前两个合成最后一个-再看第三行缺的空格",
       "kind": "retry",
       "text": "先读第一行这个完整行：前两个合成最后一个；再看第三行缺的空格。",
+      "spokenText": "先读第一航这个完整航：前两个合成最后一个；再看第三航缺的空格。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E8%AF%BB%E7%AC%AC%E4%B8%80%E8%A1%8C%E8%BF%99%E4%B8%AA%E5%AE%8C%E6%95%B4%E8%A1%8C-%E5%89%8D%E4%B8%A4%E4%B8%AA%E5%90%88%E6%88%90%E6%9C%80%E5%90%8E%E4%B8%80%E4%B8%AA-%E5%86%8D%E7%9C%8B%E7%AC%AC%E4%B8%89%E8%A1%8C%E7%BC%BA%E7%9A%84%E7%A9%BA%E6%A0%BC.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E8%AF%BB%E7%AC%AC%E4%B8%80%E8%A1%8C%E8%BF%99%E4%B8%AA%E5%AE%8C%E6%95%B4%E8%A1%8C-%E5%89%8D%E4%B8%A4%E4%B8%AA%E5%90%88%E6%88%90%E6%9C%80%E5%90%8E%E4%B8%80%E4%B8%AA-%E5%86%8D%E7%9C%8B%E7%AC%AC%E4%B8%89%E8%A1%8C%E7%BC%BA%E7%9A%84%E7%A9%BA%E6%A0%BC-pron-c14cf13dd6db.mp3"
     },
     {
       "id": "parent-请她说第一行怎么合起来-再说第三行-和-用同一个规则为什么补",
       "kind": "parent",
       "text": "请她说第一行怎么合起来，再说第三行 🟣 和 🔴 用同一个规则为什么补 🟣🔴。",
+      "spokenText": "请她说第一航怎么合起来，再说第三航 🟣 和 🔴 用同一个规则为什么补 🟣🔴。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E8%AF%B4%E7%AC%AC%E4%B8%80%E8%A1%8C%E6%80%8E%E4%B9%88%E5%90%88%E8%B5%B7%E6%9D%A5-%E5%86%8D%E8%AF%B4%E7%AC%AC%E4%B8%89%E8%A1%8C-%E5%92%8C-%E7%94%A8%E5%90%8C%E4%B8%80%E4%B8%AA%E8%A7%84%E5%88%99%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A1%A5.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E8%AF%B4%E7%AC%AC%E4%B8%80%E8%A1%8C%E6%80%8E%E4%B9%88%E5%90%88%E8%B5%B7%E6%9D%A5-%E5%86%8D%E8%AF%B4%E7%AC%AC%E4%B8%89%E8%A1%8C-%E5%92%8C-%E7%94%A8%E5%90%8C%E4%B8%80%E4%B8%AA%E8%A7%84%E5%88%99%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A1%A5-pron-978f1d9bd7a1.mp3"
     },
     {
       "id": "choice-红色圆片-蓝色圆片",
@@ -10318,49 +10369,55 @@
       "id": "success-第一行是-第一个又回来-第三行是-所以空格补",
       "kind": "success",
       "text": "第一行是 🍎、🍊、🍎，第一个又回来；第三行是 🔴、🔵，所以空格补 🔴。",
+      "spokenText": "第一航是 🍎、🍊、🍎，第一个又回来；第三航是 🔴、🔵，所以空格补 🔴。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%AC%AC%E4%B8%80%E8%A1%8C%E6%98%AF-%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8F%88%E5%9B%9E%E6%9D%A5-%E7%AC%AC%E4%B8%89%E8%A1%8C%E6%98%AF-%E6%89%80%E4%BB%A5%E7%A9%BA%E6%A0%BC%E8%A1%A5.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%AC%AC%E4%B8%80%E8%A1%8C%E6%98%AF-%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8F%88%E5%9B%9E%E6%9D%A5-%E7%AC%AC%E4%B8%89%E8%A1%8C%E6%98%AF-%E6%89%80%E4%BB%A5%E7%A9%BA%E6%A0%BC%E8%A1%A5-pron-3c7feb3f09f0.mp3"
     },
     {
       "id": "retry-先读第一行这个完整行-第一-第二-再回到第一-再看第三行缺的空格",
       "kind": "retry",
       "text": "先读第一行这个完整行：第一、第二、再回到第一；再看第三行缺的空格。",
+      "spokenText": "先读第一航这个完整航：第一、第二、再回到第一；再看第三航缺的空格。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E8%AF%BB%E7%AC%AC%E4%B8%80%E8%A1%8C%E8%BF%99%E4%B8%AA%E5%AE%8C%E6%95%B4%E8%A1%8C-%E7%AC%AC%E4%B8%80-%E7%AC%AC%E4%BA%8C-%E5%86%8D%E5%9B%9E%E5%88%B0%E7%AC%AC%E4%B8%80-%E5%86%8D%E7%9C%8B%E7%AC%AC%E4%B8%89%E8%A1%8C%E7%BC%BA%E7%9A%84%E7%A9%BA%E6%A0%BC.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E8%AF%BB%E7%AC%AC%E4%B8%80%E8%A1%8C%E8%BF%99%E4%B8%AA%E5%AE%8C%E6%95%B4%E8%A1%8C-%E7%AC%AC%E4%B8%80-%E7%AC%AC%E4%BA%8C-%E5%86%8D%E5%9B%9E%E5%88%B0%E7%AC%AC%E4%B8%80-%E5%86%8D%E7%9C%8B%E7%AC%AC%E4%B8%89%E8%A1%8C%E7%BC%BA%E7%9A%84%E7%A9%BA%E6%A0%BC-pron-bdf9149d327d.mp3"
     },
     {
       "id": "parent-请她说第一行怎么回到第一个-再说第三行用同一个规则为什么补",
       "kind": "parent",
       "text": "请她说第一行怎么回到第一个，再说第三行用同一个规则为什么补 🔴。",
+      "spokenText": "请她说第一航怎么回到第一个，再说第三航用同一个规则为什么补 🔴。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E8%AF%B4%E7%AC%AC%E4%B8%80%E8%A1%8C%E6%80%8E%E4%B9%88%E5%9B%9E%E5%88%B0%E7%AC%AC%E4%B8%80%E4%B8%AA-%E5%86%8D%E8%AF%B4%E7%AC%AC%E4%B8%89%E8%A1%8C%E7%94%A8%E5%90%8C%E4%B8%80%E4%B8%AA%E8%A7%84%E5%88%99%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A1%A5.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E8%AF%B4%E7%AC%AC%E4%B8%80%E8%A1%8C%E6%80%8E%E4%B9%88%E5%9B%9E%E5%88%B0%E7%AC%AC%E4%B8%80%E4%B8%AA-%E5%86%8D%E8%AF%B4%E7%AC%AC%E4%B8%89%E8%A1%8C%E7%94%A8%E5%90%8C%E4%B8%80%E4%B8%AA%E8%A7%84%E5%88%99%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A1%A5-pron-857b89879a08.mp3"
     },
     {
       "id": "success-第一行是-大圆-小圆-大圆-大的又回来-第三行是-大方块-小方块-所以空格补-大方块",
       "kind": "success",
       "text": "第一行是 大圆、小圆、大圆，大的又回来；第三行是 大方块、小方块，所以空格补 大方块。",
+      "spokenText": "第一航是 大圆、小圆、大圆，大的又回来；第三航是 大方块、小方块，所以空格补 大方块。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%AC%AC%E4%B8%80%E8%A1%8C%E6%98%AF-%E5%A4%A7%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%A4%A7%E5%9C%86-%E5%A4%A7%E7%9A%84%E5%8F%88%E5%9B%9E%E6%9D%A5-%E7%AC%AC%E4%B8%89%E8%A1%8C%E6%98%AF-%E5%A4%A7%E6%96%B9%E5%9D%97-%E5%B0%8F%E6%96%B9%E5%9D%97-%E6%89%80%E4%BB%A5%E7%A9%BA%E6%A0%BC%E8%A1%A5-%E5%A4%A7%E6%96%B9%E5%9D%97.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%AC%AC%E4%B8%80%E8%A1%8C%E6%98%AF-%E5%A4%A7%E5%9C%86-%E5%B0%8F%E5%9C%86-%E5%A4%A7%E5%9C%86-%E5%A4%A7%E7%9A%84%E5%8F%88%E5%9B%9E%E6%9D%A5-%E7%AC%AC%E4%B8%89%E8%A1%8C%E6%98%AF-%E5%A4%A7%E6%96%B9%E5%9D%97-%E5%B0%8F%E6%96%B9%E5%9D%97-%E6%89%80%E4%BB%A5%E7%A9%BA%E6%A0%BC%E8%A1%A5-%E5%A4%A7%E6%96%B9%E5%9D%97-pron-8b5b97ba9e37.mp3"
     },
     {
       "id": "retry-先读第一行这个完整行-大-小-再回到大-再看第三行缺的空格",
       "kind": "retry",
       "text": "先读第一行这个完整行：大、小、再回到大；再看第三行缺的空格。",
+      "spokenText": "先读第一航这个完整航：大、小、再回到大；再看第三航缺的空格。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E8%AF%BB%E7%AC%AC%E4%B8%80%E8%A1%8C%E8%BF%99%E4%B8%AA%E5%AE%8C%E6%95%B4%E8%A1%8C-%E5%A4%A7-%E5%B0%8F-%E5%86%8D%E5%9B%9E%E5%88%B0%E5%A4%A7-%E5%86%8D%E7%9C%8B%E7%AC%AC%E4%B8%89%E8%A1%8C%E7%BC%BA%E7%9A%84%E7%A9%BA%E6%A0%BC.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E8%AF%BB%E7%AC%AC%E4%B8%80%E8%A1%8C%E8%BF%99%E4%B8%AA%E5%AE%8C%E6%95%B4%E8%A1%8C-%E5%A4%A7-%E5%B0%8F-%E5%86%8D%E5%9B%9E%E5%88%B0%E5%A4%A7-%E5%86%8D%E7%9C%8B%E7%AC%AC%E4%B8%89%E8%A1%8C%E7%BC%BA%E7%9A%84%E7%A9%BA%E6%A0%BC-pron-d64048c0d9a3.mp3"
     },
     {
       "id": "parent-请她说第一行怎么回到大的-再说第三行用同一个规则为什么补-大方块",
       "kind": "parent",
       "text": "请她说第一行怎么回到大的，再说第三行用同一个规则为什么补 大方块。",
+      "spokenText": "请她说第一航怎么回到大的，再说第三航用同一个规则为什么补 大方块。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E8%AF%B4%E7%AC%AC%E4%B8%80%E8%A1%8C%E6%80%8E%E4%B9%88%E5%9B%9E%E5%88%B0%E5%A4%A7%E7%9A%84-%E5%86%8D%E8%AF%B4%E7%AC%AC%E4%B8%89%E8%A1%8C%E7%94%A8%E5%90%8C%E4%B8%80%E4%B8%AA%E8%A7%84%E5%88%99%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A1%A5-%E5%A4%A7%E6%96%B9%E5%9D%97.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E8%AF%B4%E7%AC%AC%E4%B8%80%E8%A1%8C%E6%80%8E%E4%B9%88%E5%9B%9E%E5%88%B0%E5%A4%A7%E7%9A%84-%E5%86%8D%E8%AF%B4%E7%AC%AC%E4%B8%89%E8%A1%8C%E7%94%A8%E5%90%8C%E4%B8%80%E4%B8%AA%E8%A7%84%E5%88%99%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A1%A5-%E5%A4%A7%E6%96%B9%E5%9D%97-pron-4130769aa17e.mp3"
     },
     {
       "id": "choice-小方块",
@@ -10422,49 +10479,55 @@
       "id": "success-第一行有-三个都出现-第三行已经有-和-所以空格补",
       "kind": "success",
       "text": "第一行有 🔴、🟡、🟢 三个都出现；第三行已经有 🟢 和 🔴，所以空格补 🟡。",
+      "spokenText": "第一航有 🔴、🟡、🟢 三个都出现；第三航已经有 🟢 和 🔴，所以空格补 🟡。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%AC%AC%E4%B8%80%E8%A1%8C%E6%9C%89-%E4%B8%89%E4%B8%AA%E9%83%BD%E5%87%BA%E7%8E%B0-%E7%AC%AC%E4%B8%89%E8%A1%8C%E5%B7%B2%E7%BB%8F%E6%9C%89-%E5%92%8C-%E6%89%80%E4%BB%A5%E7%A9%BA%E6%A0%BC%E8%A1%A5.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%AC%AC%E4%B8%80%E8%A1%8C%E6%9C%89-%E4%B8%89%E4%B8%AA%E9%83%BD%E5%87%BA%E7%8E%B0-%E7%AC%AC%E4%B8%89%E8%A1%8C%E5%B7%B2%E7%BB%8F%E6%9C%89-%E5%92%8C-%E6%89%80%E4%BB%A5%E7%A9%BA%E6%A0%BC%E8%A1%A5-pron-0b4cdc0783b3.mp3"
     },
     {
       "id": "retry-先看第一行这个完整行有哪些颜色-再看第三行缺的空格少了哪一个",
       "kind": "retry",
       "text": "先看第一行这个完整行有哪些颜色，再看第三行缺的空格少了哪一个。",
+      "spokenText": "先看第一航这个完整航有哪些颜色，再看第三航缺的空格少了哪一个。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E7%9C%8B%E7%AC%AC%E4%B8%80%E8%A1%8C%E8%BF%99%E4%B8%AA%E5%AE%8C%E6%95%B4%E8%A1%8C%E6%9C%89%E5%93%AA%E4%BA%9B%E9%A2%9C%E8%89%B2-%E5%86%8D%E7%9C%8B%E7%AC%AC%E4%B8%89%E8%A1%8C%E7%BC%BA%E7%9A%84%E7%A9%BA%E6%A0%BC%E5%B0%91%E4%BA%86%E5%93%AA%E4%B8%80%E4%B8%AA.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E7%9C%8B%E7%AC%AC%E4%B8%80%E8%A1%8C%E8%BF%99%E4%B8%AA%E5%AE%8C%E6%95%B4%E8%A1%8C%E6%9C%89%E5%93%AA%E4%BA%9B%E9%A2%9C%E8%89%B2-%E5%86%8D%E7%9C%8B%E7%AC%AC%E4%B8%89%E8%A1%8C%E7%BC%BA%E7%9A%84%E7%A9%BA%E6%A0%BC%E5%B0%91%E4%BA%86%E5%93%AA%E4%B8%80%E4%B8%AA-pron-b590c46e319f.mp3"
     },
     {
       "id": "parent-请她说第一行有哪些-再说第三行用同一个规则为什么补",
       "kind": "parent",
       "text": "请她说第一行有哪些，再说第三行用同一个规则为什么补 🟡。",
+      "spokenText": "请她说第一航有哪些，再说第三航用同一个规则为什么补 🟡。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E8%AF%B4%E7%AC%AC%E4%B8%80%E8%A1%8C%E6%9C%89%E5%93%AA%E4%BA%9B-%E5%86%8D%E8%AF%B4%E7%AC%AC%E4%B8%89%E8%A1%8C%E7%94%A8%E5%90%8C%E4%B8%80%E4%B8%AA%E8%A7%84%E5%88%99%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A1%A5.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E8%AF%B4%E7%AC%AC%E4%B8%80%E8%A1%8C%E6%9C%89%E5%93%AA%E4%BA%9B-%E5%86%8D%E8%AF%B4%E7%AC%AC%E4%B8%89%E8%A1%8C%E7%94%A8%E5%90%8C%E4%B8%80%E4%B8%AA%E8%A7%84%E5%88%99%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A1%A5-pron-51e05311c316.mp3"
     },
     {
       "id": "success-第一行是-1-数字-1-就放-1-个-第三行是-3-所以空格补",
       "kind": "success",
       "text": "第一行是 🍎、1、🍎，数字 1 就放 1 个；第三行是 🍓、3，所以空格补 🍓🍓🍓。",
+      "spokenText": "第一航是 🍎、1、🍎，数字 1 就放 1 个；第三航是 🍓、3，所以空格补 🍓🍓🍓。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%AC%AC%E4%B8%80%E8%A1%8C%E6%98%AF-1-%E6%95%B0%E5%AD%97-1-%E5%B0%B1%E6%94%BE-1-%E4%B8%AA-%E7%AC%AC%E4%B8%89%E8%A1%8C%E6%98%AF-3-%E6%89%80%E4%BB%A5%E7%A9%BA%E6%A0%BC%E8%A1%A5.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%AC%AC%E4%B8%80%E8%A1%8C%E6%98%AF-1-%E6%95%B0%E5%AD%97-1-%E5%B0%B1%E6%94%BE-1-%E4%B8%AA-%E7%AC%AC%E4%B8%89%E8%A1%8C%E6%98%AF-3-%E6%89%80%E4%BB%A5%E7%A9%BA%E6%A0%BC%E8%A1%A5-pron-165d5b4590a8.mp3"
     },
     {
       "id": "retry-先读第一行这个完整行-数字是几就有几个-再看第三行缺的空格",
       "kind": "retry",
       "text": "先读第一行这个完整行：数字是几就有几个；再看第三行缺的空格。",
+      "spokenText": "先读第一航这个完整航：数字是几就有几个；再看第三航缺的空格。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E8%AF%BB%E7%AC%AC%E4%B8%80%E8%A1%8C%E8%BF%99%E4%B8%AA%E5%AE%8C%E6%95%B4%E8%A1%8C-%E6%95%B0%E5%AD%97%E6%98%AF%E5%87%A0%E5%B0%B1%E6%9C%89%E5%87%A0%E4%B8%AA-%E5%86%8D%E7%9C%8B%E7%AC%AC%E4%B8%89%E8%A1%8C%E7%BC%BA%E7%9A%84%E7%A9%BA%E6%A0%BC.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E8%AF%BB%E7%AC%AC%E4%B8%80%E8%A1%8C%E8%BF%99%E4%B8%AA%E5%AE%8C%E6%95%B4%E8%A1%8C-%E6%95%B0%E5%AD%97%E6%98%AF%E5%87%A0%E5%B0%B1%E6%9C%89%E5%87%A0%E4%B8%AA-%E5%86%8D%E7%9C%8B%E7%AC%AC%E4%B8%89%E8%A1%8C%E7%BC%BA%E7%9A%84%E7%A9%BA%E6%A0%BC-pron-fb193de11efc.mp3"
     },
     {
       "id": "parent-请她说第一行数字-1-怎么变成-1-个苹果-再说第三行用同一个规则为什么补",
       "kind": "parent",
       "text": "请她说第一行数字 1 怎么变成 1 个苹果，再说第三行用同一个规则为什么补 🍓🍓🍓。",
+      "spokenText": "请她说第一航数字 1 怎么变成 1 个苹果，再说第三航用同一个规则为什么补 🍓🍓🍓。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E8%AF%B4%E7%AC%AC%E4%B8%80%E8%A1%8C%E6%95%B0%E5%AD%97-1-%E6%80%8E%E4%B9%88%E5%8F%98%E6%88%90-1-%E4%B8%AA%E8%8B%B9%E6%9E%9C-%E5%86%8D%E8%AF%B4%E7%AC%AC%E4%B8%89%E8%A1%8C%E7%94%A8%E5%90%8C%E4%B8%80%E4%B8%AA%E8%A7%84%E5%88%99%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A1%A5.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E8%AF%B4%E7%AC%AC%E4%B8%80%E8%A1%8C%E6%95%B0%E5%AD%97-1-%E6%80%8E%E4%B9%88%E5%8F%98%E6%88%90-1-%E4%B8%AA%E8%8B%B9%E6%9E%9C-%E5%86%8D%E8%AF%B4%E7%AC%AC%E4%B8%89%E8%A1%8C%E7%94%A8%E5%90%8C%E4%B8%80%E4%B8%AA%E8%A7%84%E5%88%99%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A1%A5-pron-5cdeb4843f4e.mp3"
     },
     {
       "id": "choice-草莓-草莓",
@@ -10502,25 +10565,28 @@
       "id": "success-第一行是-小鸟-和-天空-合成-小鸟天空-第三行是-小狗-和-家-所以空格补-小狗家",
       "kind": "success",
       "text": "第一行是 小鸟 和 天空，合成 小鸟天空；第三行是 小狗 和 家，所以空格补 小狗家。",
+      "spokenText": "第一航是 小鸟 和 天空，合成 小鸟天空；第三航是 小狗 和 家，所以空格补 小狗家。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%AC%AC%E4%B8%80%E8%A1%8C%E6%98%AF-%E5%B0%8F%E9%B8%9F-%E5%92%8C-%E5%A4%A9%E7%A9%BA-%E5%90%88%E6%88%90-%E5%B0%8F%E9%B8%9F%E5%A4%A9%E7%A9%BA-%E7%AC%AC%E4%B8%89%E8%A1%8C%E6%98%AF-%E5%B0%8F%E7%8B%97-%E5%92%8C-%E5%AE%B6-%E6%89%80%E4%BB%A5%E7%A9%BA%E6%A0%BC%E8%A1%A5-%E5%B0%8F%E7%8B%97%E5%AE%B6.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%AC%AC%E4%B8%80%E8%A1%8C%E6%98%AF-%E5%B0%8F%E9%B8%9F-%E5%92%8C-%E5%A4%A9%E7%A9%BA-%E5%90%88%E6%88%90-%E5%B0%8F%E9%B8%9F%E5%A4%A9%E7%A9%BA-%E7%AC%AC%E4%B8%89%E8%A1%8C%E6%98%AF-%E5%B0%8F%E7%8B%97-%E5%92%8C-%E5%AE%B6-%E6%89%80%E4%BB%A5%E7%A9%BA%E6%A0%BC%E8%A1%A5-%E5%B0%8F%E7%8B%97%E5%AE%B6-pron-1b17662987c3.mp3"
     },
     {
       "id": "retry-先读第一行这个完整行-前两个词连成最后一个-再看第三行缺的空格",
       "kind": "retry",
       "text": "先读第一行这个完整行：前两个词连成最后一个；再看第三行缺的空格。",
+      "spokenText": "先读第一航这个完整航：前两个词连成最后一个；再看第三航缺的空格。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E8%AF%BB%E7%AC%AC%E4%B8%80%E8%A1%8C%E8%BF%99%E4%B8%AA%E5%AE%8C%E6%95%B4%E8%A1%8C-%E5%89%8D%E4%B8%A4%E4%B8%AA%E8%AF%8D%E8%BF%9E%E6%88%90%E6%9C%80%E5%90%8E%E4%B8%80%E4%B8%AA-%E5%86%8D%E7%9C%8B%E7%AC%AC%E4%B8%89%E8%A1%8C%E7%BC%BA%E7%9A%84%E7%A9%BA%E6%A0%BC.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E8%AF%BB%E7%AC%AC%E4%B8%80%E8%A1%8C%E8%BF%99%E4%B8%AA%E5%AE%8C%E6%95%B4%E8%A1%8C-%E5%89%8D%E4%B8%A4%E4%B8%AA%E8%AF%8D%E8%BF%9E%E6%88%90%E6%9C%80%E5%90%8E%E4%B8%80%E4%B8%AA-%E5%86%8D%E7%9C%8B%E7%AC%AC%E4%B8%89%E8%A1%8C%E7%BC%BA%E7%9A%84%E7%A9%BA%E6%A0%BC-pron-957cc20b8e2d.mp3"
     },
     {
       "id": "parent-请她说第一行怎么连成小故事-再说第三行-小狗-和-家-用同一个规则为什么补-小狗家",
       "kind": "parent",
       "text": "请她说第一行怎么连成小故事，再说第三行 小狗 和 家 用同一个规则为什么补 小狗家。",
+      "spokenText": "请她说第一航怎么连成小故事，再说第三航 小狗 和 家 用同一个规则为什么补 小狗家。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E8%AF%B4%E7%AC%AC%E4%B8%80%E8%A1%8C%E6%80%8E%E4%B9%88%E8%BF%9E%E6%88%90%E5%B0%8F%E6%95%85%E4%BA%8B-%E5%86%8D%E8%AF%B4%E7%AC%AC%E4%B8%89%E8%A1%8C-%E5%B0%8F%E7%8B%97-%E5%92%8C-%E5%AE%B6-%E7%94%A8%E5%90%8C%E4%B8%80%E4%B8%AA%E8%A7%84%E5%88%99%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A1%A5-%E5%B0%8F%E7%8B%97%E5%AE%B6.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E8%AF%B4%E7%AC%AC%E4%B8%80%E8%A1%8C%E6%80%8E%E4%B9%88%E8%BF%9E%E6%88%90%E5%B0%8F%E6%95%85%E4%BA%8B-%E5%86%8D%E8%AF%B4%E7%AC%AC%E4%B8%89%E8%A1%8C-%E5%B0%8F%E7%8B%97-%E5%92%8C-%E5%AE%B6-%E7%94%A8%E5%90%8C%E4%B8%80%E4%B8%AA%E8%A7%84%E5%88%99%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A1%A5-%E5%B0%8F%E7%8B%97%E5%AE%B6-pron-dd772640903b.mp3"
     },
     {
       "id": "choice-小河和小狗",
@@ -12902,9 +12968,10 @@
       "id": "success-下面一行左边是黄色圆片-右边是绿色圆片-不能完全重合",
       "kind": "success",
       "text": "下面一行左边是黄色圆片，右边是绿色圆片，不能完全重合。",
+      "spokenText": "下面一航左边是黄色圆片，右边是绿色圆片，不能完全重合。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E4%B8%8B%E9%9D%A2%E4%B8%80%E8%A1%8C%E5%B7%A6%E8%BE%B9%E6%98%AF%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E5%8F%B3%E8%BE%B9%E6%98%AF%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E4%B8%8D%E8%83%BD%E5%AE%8C%E5%85%A8%E9%87%8D%E5%90%88.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E4%B8%8B%E9%9D%A2%E4%B8%80%E8%A1%8C%E5%B7%A6%E8%BE%B9%E6%98%AF%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E5%8F%B3%E8%BE%B9%E6%98%AF%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E4%B8%8D%E8%83%BD%E5%AE%8C%E5%85%A8%E9%87%8D%E5%90%88-pron-fc63175891e1.mp3"
     },
     {
       "id": "prompt-沿着中间的横线折起来-上下能重合吗-先找到中线-再看对应位置是不是一样",
@@ -12934,9 +13001,10 @@
       "id": "success-上下两行颜色顺序反了-对应的位置不一样-不能重合",
       "kind": "success",
       "text": "上下两行颜色顺序反了，对应的位置不一样，不能重合。",
+      "spokenText": "上下两航颜色顺序反了，对应的位置不一样，不能重合。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E4%B8%8A%E4%B8%8B%E4%B8%A4%E8%A1%8C%E9%A2%9C%E8%89%B2%E9%A1%BA%E5%BA%8F%E5%8F%8D%E4%BA%86-%E5%AF%B9%E5%BA%94%E7%9A%84%E4%BD%8D%E7%BD%AE%E4%B8%8D%E4%B8%80%E6%A0%B7-%E4%B8%8D%E8%83%BD%E9%87%8D%E5%90%88.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E4%B8%8A%E4%B8%8B%E4%B8%A4%E8%A1%8C%E9%A2%9C%E8%89%B2%E9%A1%BA%E5%BA%8F%E5%8F%8D%E4%BA%86-%E5%AF%B9%E5%BA%94%E7%9A%84%E4%BD%8D%E7%BD%AE%E4%B8%8D%E4%B8%80%E6%A0%B7-%E4%B8%8D%E8%83%BD%E9%87%8D%E5%90%88-pron-d73d3640aef9.mp3"
     },
     {
       "id": "prompt-这张小卡是不是左右对称-先找到中线-再看对应位置是不是一样",
@@ -12950,17 +13018,19 @@
       "id": "success-每一行的左边和右边都一样-是左右对称",
       "kind": "success",
       "text": "每一行的左边和右边都一样，是左右对称。",
+      "spokenText": "每一航的左边和右边都一样，是左右对称。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%AF%8F%E4%B8%80%E8%A1%8C%E7%9A%84%E5%B7%A6%E8%BE%B9%E5%92%8C%E5%8F%B3%E8%BE%B9%E9%83%BD%E4%B8%80%E6%A0%B7-%E6%98%AF%E5%B7%A6%E5%8F%B3%E5%AF%B9%E7%A7%B0.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%AF%8F%E4%B8%80%E8%A1%8C%E7%9A%84%E5%B7%A6%E8%BE%B9%E5%92%8C%E5%8F%B3%E8%BE%B9%E9%83%BD%E4%B8%80%E6%A0%B7-%E6%98%AF%E5%B7%A6%E5%8F%B3%E5%AF%B9%E7%A7%B0-pron-64b7988241df.mp3"
     },
     {
       "id": "success-中间一行左边是星星-右边是黄色圆片-不是左右对称",
       "kind": "success",
       "text": "中间一行左边是星星，右边是黄色圆片，不是左右对称。",
+      "spokenText": "中间一航左边是星星，右边是黄色圆片，不是左右对称。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E4%B8%AD%E9%97%B4%E4%B8%80%E8%A1%8C%E5%B7%A6%E8%BE%B9%E6%98%AF%E6%98%9F%E6%98%9F-%E5%8F%B3%E8%BE%B9%E6%98%AF%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E4%B8%8D%E6%98%AF%E5%B7%A6%E5%8F%B3%E5%AF%B9%E7%A7%B0.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E4%B8%AD%E9%97%B4%E4%B8%80%E8%A1%8C%E5%B7%A6%E8%BE%B9%E6%98%AF%E6%98%9F%E6%98%9F-%E5%8F%B3%E8%BE%B9%E6%98%AF%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87-%E4%B8%8D%E6%98%AF%E5%B7%A6%E5%8F%B3%E5%AF%B9%E7%A7%B0-pron-00ca6547b03a.mp3"
     },
     {
       "id": "prompt-只看图卡的左右顺序-镜子右边应该怎样排-左边靠近镜子的那个-到了右边也要靠近镜子",
@@ -13166,9 +13236,10 @@
       "id": "success-第一行-2-块-第二行-1-块-一共-3-块",
       "kind": "success",
       "text": "第一行 2 块，第二行 1 块，一共 3 块。",
+      "spokenText": "第一航 2 块，第二航 1 块，一共 3 块。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%AC%AC%E4%B8%80%E8%A1%8C-2-%E5%9D%97-%E7%AC%AC%E4%BA%8C%E8%A1%8C-1-%E5%9D%97-%E4%B8%80%E5%85%B1-3-%E5%9D%97.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%AC%AC%E4%B8%80%E8%A1%8C-2-%E5%9D%97-%E7%AC%AC%E4%BA%8C%E8%A1%8C-1-%E5%9D%97-%E4%B8%80%E5%85%B1-3-%E5%9D%97-pron-a337736b2ede.mp3"
     },
     {
       "id": "retry-不要只数格子-要把每个格子里的数字合起来",
@@ -13182,65 +13253,73 @@
       "id": "parent-请她按行读数字-再说这一行一共有几块",
       "kind": "parent",
       "text": "请她按行读数字，再说这一行一共有几块。",
+      "spokenText": "请她按航读数字，再说这一航一共有几块。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%89%E8%A1%8C%E8%AF%BB%E6%95%B0%E5%AD%97-%E5%86%8D%E8%AF%B4%E8%BF%99%E4%B8%80%E8%A1%8C%E4%B8%80%E5%85%B1%E6%9C%89%E5%87%A0%E5%9D%97.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%89%E8%A1%8C%E8%AF%BB%E6%95%B0%E5%AD%97-%E5%86%8D%E8%AF%B4%E8%BF%99%E4%B8%80%E8%A1%8C%E4%B8%80%E5%85%B1%E6%9C%89%E5%87%A0%E5%9D%97-pron-492184670d3d.mp3"
     },
     {
       "id": "success-第一行-3-块-第二行-1-块-一共-4-块",
       "kind": "success",
       "text": "第一行 3 块，第二行 1 块，一共 4 块。",
+      "spokenText": "第一航 3 块，第二航 1 块，一共 4 块。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%AC%AC%E4%B8%80%E8%A1%8C-3-%E5%9D%97-%E7%AC%AC%E4%BA%8C%E8%A1%8C-1-%E5%9D%97-%E4%B8%80%E5%85%B1-4-%E5%9D%97.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%AC%AC%E4%B8%80%E8%A1%8C-3-%E5%9D%97-%E7%AC%AC%E4%BA%8C%E8%A1%8C-1-%E5%9D%97-%E4%B8%80%E5%85%B1-4-%E5%9D%97-pron-9d303c629b82.mp3"
     },
     {
       "id": "success-第一行-4-块-第二行-2-块-一共-6-块",
       "kind": "success",
       "text": "第一行 4 块，第二行 2 块，一共 6 块。",
+      "spokenText": "第一航 4 块，第二航 2 块，一共 6 块。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%AC%AC%E4%B8%80%E8%A1%8C-4-%E5%9D%97-%E7%AC%AC%E4%BA%8C%E8%A1%8C-2-%E5%9D%97-%E4%B8%80%E5%85%B1-6-%E5%9D%97.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%AC%AC%E4%B8%80%E8%A1%8C-4-%E5%9D%97-%E7%AC%AC%E4%BA%8C%E8%A1%8C-2-%E5%9D%97-%E4%B8%80%E5%85%B1-6-%E5%9D%97-pron-ea07e2fda02a.mp3"
     },
     {
       "id": "success-第一行-4-块-第二行-1-块-一共-5-块",
       "kind": "success",
       "text": "第一行 4 块，第二行 1 块，一共 5 块。",
+      "spokenText": "第一航 4 块，第二航 1 块，一共 5 块。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%AC%AC%E4%B8%80%E8%A1%8C-4-%E5%9D%97-%E7%AC%AC%E4%BA%8C%E8%A1%8C-1-%E5%9D%97-%E4%B8%80%E5%85%B1-5-%E5%9D%97.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%AC%AC%E4%B8%80%E8%A1%8C-4-%E5%9D%97-%E7%AC%AC%E4%BA%8C%E8%A1%8C-1-%E5%9D%97-%E4%B8%80%E5%85%B1-5-%E5%9D%97-pron-33293be99cc8.mp3"
     },
     {
       "id": "success-第一行-5-块-第二行-2-块-一共-7-块",
       "kind": "success",
       "text": "第一行 5 块，第二行 2 块，一共 7 块。",
+      "spokenText": "第一航 5 块，第二航 2 块，一共 7 块。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%AC%AC%E4%B8%80%E8%A1%8C-5-%E5%9D%97-%E7%AC%AC%E4%BA%8C%E8%A1%8C-2-%E5%9D%97-%E4%B8%80%E5%85%B1-7-%E5%9D%97.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%AC%AC%E4%B8%80%E8%A1%8C-5-%E5%9D%97-%E7%AC%AC%E4%BA%8C%E8%A1%8C-2-%E5%9D%97-%E4%B8%80%E5%85%B1-7-%E5%9D%97-pron-c5a25edfece7.mp3"
     },
     {
       "id": "success-第一行-4-块-第二行-3-块-一共-7-块",
       "kind": "success",
       "text": "第一行 4 块，第二行 3 块，一共 7 块。",
+      "spokenText": "第一航 4 块，第二航 3 块，一共 7 块。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%AC%AC%E4%B8%80%E8%A1%8C-4-%E5%9D%97-%E7%AC%AC%E4%BA%8C%E8%A1%8C-3-%E5%9D%97-%E4%B8%80%E5%85%B1-7-%E5%9D%97.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%AC%AC%E4%B8%80%E8%A1%8C-4-%E5%9D%97-%E7%AC%AC%E4%BA%8C%E8%A1%8C-3-%E5%9D%97-%E4%B8%80%E5%85%B1-7-%E5%9D%97-pron-2145dc4dde3f.mp3"
     },
     {
       "id": "success-按行数-第一行-4-块-第二行-4-块-第三行-2-块-一共-10-块",
       "kind": "success",
       "text": "按行数：第一行 4 块，第二行 4 块，第三行 2 块，一共 10 块。",
+      "spokenText": "按航数：第一航 4 块，第二航 4 块，第三航 2 块，一共 10 块。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%8C%89%E8%A1%8C%E6%95%B0-%E7%AC%AC%E4%B8%80%E8%A1%8C-4-%E5%9D%97-%E7%AC%AC%E4%BA%8C%E8%A1%8C-4-%E5%9D%97-%E7%AC%AC%E4%B8%89%E8%A1%8C-2-%E5%9D%97-%E4%B8%80%E5%85%B1-10-%E5%9D%97.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%8C%89%E8%A1%8C%E6%95%B0-%E7%AC%AC%E4%B8%80%E8%A1%8C-4-%E5%9D%97-%E7%AC%AC%E4%BA%8C%E8%A1%8C-4-%E5%9D%97-%E7%AC%AC%E4%B8%89%E8%A1%8C-2-%E5%9D%97-%E4%B8%80%E5%85%B1-10-%E5%9D%97-pron-57b00cd15d9e.mp3"
     },
     {
       "id": "success-按行数-第一行-4-块-第二行-5-块-第三行-1-块-一共-10-块",
       "kind": "success",
       "text": "按行数：第一行 4 块，第二行 5 块，第三行 1 块，一共 10 块。",
+      "spokenText": "按航数：第一航 4 块，第二航 5 块，第三航 1 块，一共 10 块。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%8C%89%E8%A1%8C%E6%95%B0-%E7%AC%AC%E4%B8%80%E8%A1%8C-4-%E5%9D%97-%E7%AC%AC%E4%BA%8C%E8%A1%8C-5-%E5%9D%97-%E7%AC%AC%E4%B8%89%E8%A1%8C-1-%E5%9D%97-%E4%B8%80%E5%85%B1-10-%E5%9D%97.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%8C%89%E8%A1%8C%E6%95%B0-%E7%AC%AC%E4%B8%80%E8%A1%8C-4-%E5%9D%97-%E7%AC%AC%E4%BA%8C%E8%A1%8C-5-%E5%9D%97-%E7%AC%AC%E4%B8%89%E8%A1%8C-1-%E5%9D%97-%E4%B8%80%E5%85%B1-10-%E5%9D%97-pron-cadb11583ecb.mp3"
     },
     {
       "id": "prompt-哪张积木楼层图的积木更多-先分别合起来-再比较总数",
@@ -14798,9 +14877,10 @@
       "id": "activity-system-再检查每一行和每一列-看看有没有重复或缺少的图卡",
       "kind": "activity-system",
       "text": "再检查每一行和每一列，看看有没有重复或缺少的图卡。",
+      "spokenText": "再检查每一航和每一列，看看有没有重复或缺少的图卡。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/activity-system-%E5%86%8D%E6%A3%80%E6%9F%A5%E6%AF%8F%E4%B8%80%E8%A1%8C%E5%92%8C%E6%AF%8F%E4%B8%80%E5%88%97-%E7%9C%8B%E7%9C%8B%E6%9C%89%E6%B2%A1%E6%9C%89%E9%87%8D%E5%A4%8D%E6%88%96%E7%BC%BA%E5%B0%91%E7%9A%84%E5%9B%BE%E5%8D%A1.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/activity-system-%E5%86%8D%E6%A3%80%E6%9F%A5%E6%AF%8F%E4%B8%80%E8%A1%8C%E5%92%8C%E6%AF%8F%E4%B8%80%E5%88%97-%E7%9C%8B%E7%9C%8B%E6%9C%89%E6%B2%A1%E6%9C%89%E9%87%8D%E5%A4%8D%E6%88%96%E7%BC%BA%E5%B0%91%E7%9A%84%E5%9B%BE%E5%8D%A1-pron-472c6bf8df14.mp3"
     },
     {
       "id": "activity-system-每张图卡只放一次-再检查一下",
@@ -15718,9 +15798,10 @@
       "id": "prompt-把图形盘补完整-选一张图卡-再点问号格放进去-图卡可以重复用-每一行都是同一种颜色-从左到右-都是圆形-方形-三角形",
       "kind": "prompt",
       "text": "把图形盘补完整。选一张图卡，再点问号格放进去。图卡可以重复用。每一行都是同一种颜色。从左到右，都是圆形、方形、三角形。",
+      "spokenText": "把图形盘补完整。选一张图卡，再点问号格放进去。图卡可以重复用。每一航都是同一种颜色。从左到右，都是圆形、方形、三角形。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8A%8A%E5%9B%BE%E5%BD%A2%E7%9B%98%E8%A1%A5%E5%AE%8C%E6%95%B4-%E9%80%89%E4%B8%80%E5%BC%A0%E5%9B%BE%E5%8D%A1-%E5%86%8D%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8-%E6%AF%8F%E4%B8%80%E8%A1%8C%E9%83%BD%E6%98%AF%E5%90%8C%E4%B8%80%E7%A7%8D%E9%A2%9C%E8%89%B2-%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3-%E9%83%BD%E6%98%AF%E5%9C%86%E5%BD%A2-%E6%96%B9%E5%BD%A2-%E4%B8%89%E8%A7%92%E5%BD%A2.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8A%8A%E5%9B%BE%E5%BD%A2%E7%9B%98%E8%A1%A5%E5%AE%8C%E6%95%B4-%E9%80%89%E4%B8%80%E5%BC%A0%E5%9B%BE%E5%8D%A1-%E5%86%8D%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8-%E6%AF%8F%E4%B8%80%E8%A1%8C%E9%83%BD%E6%98%AF%E5%90%8C%E4%B8%80%E7%A7%8D%E9%A2%9C%E8%89%B2-%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3-%E9%83%BD%E6%98%AF%E5%9C%86%E5%BD%A2-%E6%96%B9%E5%BD%A2-%E4%B8%89%E8%A7%92%E5%BD%A2-pron-c79b44fe62ed.mp3"
     },
     {
       "id": "success-两格都补对了-颜色和形状都接上了",
@@ -15734,25 +15815,28 @@
       "id": "retry-颜色看同一行-形状再从左到右检查",
       "kind": "retry",
       "text": "颜色看同一行，形状再从左到右检查。",
+      "spokenText": "颜色看同一航，形状再从左到右检查。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E9%A2%9C%E8%89%B2%E7%9C%8B%E5%90%8C%E4%B8%80%E8%A1%8C-%E5%BD%A2%E7%8A%B6%E5%86%8D%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E6%A3%80%E6%9F%A5.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E9%A2%9C%E8%89%B2%E7%9C%8B%E5%90%8C%E4%B8%80%E8%A1%8C-%E5%BD%A2%E7%8A%B6%E5%86%8D%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E6%A3%80%E6%9F%A5-pron-1bd29ee1f20d.mp3"
     },
     {
       "id": "parent-请孩子指出最先确定的空位-以及用的是哪一行-哪一列的线索",
       "kind": "parent",
       "text": "请孩子指出最先确定的空位，以及用的是哪一行、哪一列的线索。",
+      "spokenText": "请孩子指出最先确定的空位，以及用的是哪一航、哪一列的线索。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%AD%A9%E5%AD%90%E6%8C%87%E5%87%BA%E6%9C%80%E5%85%88%E7%A1%AE%E5%AE%9A%E7%9A%84%E7%A9%BA%E4%BD%8D-%E4%BB%A5%E5%8F%8A%E7%94%A8%E7%9A%84%E6%98%AF%E5%93%AA%E4%B8%80%E8%A1%8C-%E5%93%AA%E4%B8%80%E5%88%97%E7%9A%84%E7%BA%BF%E7%B4%A2.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%AD%A9%E5%AD%90%E6%8C%87%E5%87%BA%E6%9C%80%E5%85%88%E7%A1%AE%E5%AE%9A%E7%9A%84%E7%A9%BA%E4%BD%8D-%E4%BB%A5%E5%8F%8A%E7%94%A8%E7%9A%84%E6%98%AF%E5%93%AA%E4%B8%80%E8%A1%8C-%E5%93%AA%E4%B8%80%E5%88%97%E7%9A%84%E7%BA%BF%E7%B4%A2-pron-417e5ee7277a.mp3"
     },
     {
       "id": "hint-先看问号和哪种颜色在同一行",
       "kind": "hint",
       "text": "先看问号和哪种颜色在同一行。",
+      "spokenText": "先看问号和哪种颜色在同一航。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E5%85%88%E7%9C%8B%E9%97%AE%E5%8F%B7%E5%92%8C%E5%93%AA%E7%A7%8D%E9%A2%9C%E8%89%B2%E5%9C%A8%E5%90%8C%E4%B8%80%E8%A1%8C.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E5%85%88%E7%9C%8B%E9%97%AE%E5%8F%B7%E5%92%8C%E5%93%AA%E7%A7%8D%E9%A2%9C%E8%89%B2%E5%9C%A8%E5%90%8C%E4%B8%80%E8%A1%8C-pron-b4576a8d7efe.mp3"
     },
     {
       "id": "hint-再看问号在第几列-需要哪种形状",
@@ -15766,9 +15850,10 @@
       "id": "clue-每一行都是同一种颜色",
       "kind": "clue",
       "text": "每一行都是同一种颜色。",
+      "spokenText": "每一航都是同一种颜色。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E6%AF%8F%E4%B8%80%E8%A1%8C%E9%83%BD%E6%98%AF%E5%90%8C%E4%B8%80%E7%A7%8D%E9%A2%9C%E8%89%B2.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E6%AF%8F%E4%B8%80%E8%A1%8C%E9%83%BD%E6%98%AF%E5%90%8C%E4%B8%80%E7%A7%8D%E9%A2%9C%E8%89%B2-pron-eb4ec5ad279d.mp3"
     },
     {
       "id": "clue-从左到右-都是圆形-方形-三角形",
@@ -15782,49 +15867,55 @@
       "id": "prompt-把图形盘补完整-选一张图卡-再点问号格放进去-图卡可以重复用-每一行-三种图卡各出现一次-每一列-三种图卡也各出现一次",
       "kind": "prompt",
       "text": "把图形盘补完整。选一张图卡，再点问号格放进去。图卡可以重复用。每一行，三种图卡各出现一次。每一列，三种图卡也各出现一次。",
+      "spokenText": "把图形盘补完整。选一张图卡，再点问号格放进去。图卡可以重复用。每一航，三种图卡各出现一次。每一列，三种图卡也各出现一次。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8A%8A%E5%9B%BE%E5%BD%A2%E7%9B%98%E8%A1%A5%E5%AE%8C%E6%95%B4-%E9%80%89%E4%B8%80%E5%BC%A0%E5%9B%BE%E5%8D%A1-%E5%86%8D%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8-%E6%AF%8F%E4%B8%80%E8%A1%8C-%E4%B8%89%E7%A7%8D%E5%9B%BE%E5%8D%A1%E5%90%84%E5%87%BA%E7%8E%B0%E4%B8%80%E6%AC%A1-%E6%AF%8F%E4%B8%80%E5%88%97-%E4%B8%89%E7%A7%8D%E5%9B%BE%E5%8D%A1%E4%B9%9F%E5%90%84%E5%87%BA%E7%8E%B0%E4%B8%80%E6%AC%A1.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8A%8A%E5%9B%BE%E5%BD%A2%E7%9B%98%E8%A1%A5%E5%AE%8C%E6%95%B4-%E9%80%89%E4%B8%80%E5%BC%A0%E5%9B%BE%E5%8D%A1-%E5%86%8D%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8-%E6%AF%8F%E4%B8%80%E8%A1%8C-%E4%B8%89%E7%A7%8D%E5%9B%BE%E5%8D%A1%E5%90%84%E5%87%BA%E7%8E%B0%E4%B8%80%E6%AC%A1-%E6%AF%8F%E4%B8%80%E5%88%97-%E4%B8%89%E7%A7%8D%E5%9B%BE%E5%8D%A1%E4%B9%9F%E5%90%84%E5%87%BA%E7%8E%B0%E4%B8%80-pron-17523775b034.mp3"
     },
     {
       "id": "success-每一行和每一列都符合规则了",
       "kind": "success",
       "text": "每一行和每一列都符合规则了！",
+      "spokenText": "每一航和每一列都符合规则了！",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%AF%8F%E4%B8%80%E8%A1%8C%E5%92%8C%E6%AF%8F%E4%B8%80%E5%88%97%E9%83%BD%E7%AC%A6%E5%90%88%E8%A7%84%E5%88%99%E4%BA%86.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%AF%8F%E4%B8%80%E8%A1%8C%E5%92%8C%E6%AF%8F%E4%B8%80%E5%88%97%E9%83%BD%E7%AC%A6%E5%90%88%E8%A7%84%E5%88%99%E4%BA%86-pron-e57b1935bf5f.mp3"
     },
     {
       "id": "retry-看一看新放的图卡-会不会让同一行或同一列重复",
       "kind": "retry",
       "text": "看一看新放的图卡，会不会让同一行或同一列重复？",
+      "spokenText": "看一看新放的图卡，会不会让同一航或同一列重复？",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E7%9C%8B%E4%B8%80%E7%9C%8B%E6%96%B0%E6%94%BE%E7%9A%84%E5%9B%BE%E5%8D%A1-%E4%BC%9A%E4%B8%8D%E4%BC%9A%E8%AE%A9%E5%90%8C%E4%B8%80%E8%A1%8C%E6%88%96%E5%90%8C%E4%B8%80%E5%88%97%E9%87%8D%E5%A4%8D.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E7%9C%8B%E4%B8%80%E7%9C%8B%E6%96%B0%E6%94%BE%E7%9A%84%E5%9B%BE%E5%8D%A1-%E4%BC%9A%E4%B8%8D%E4%BC%9A%E8%AE%A9%E5%90%8C%E4%B8%80%E8%A1%8C%E6%88%96%E5%90%8C%E4%B8%80%E5%88%97%E9%87%8D%E5%A4%8D-pron-3d54746ab56d.mp3"
     },
     {
       "id": "hint-先找只差一个空位的那一行或那一列",
       "kind": "hint",
       "text": "先找只差一个空位的那一行或那一列。",
+      "spokenText": "先找只差一个空位的那一航或那一列。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E5%85%88%E6%89%BE%E5%8F%AA%E5%B7%AE%E4%B8%80%E4%B8%AA%E7%A9%BA%E4%BD%8D%E7%9A%84%E9%82%A3%E4%B8%80%E8%A1%8C%E6%88%96%E9%82%A3%E4%B8%80%E5%88%97.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E5%85%88%E6%89%BE%E5%8F%AA%E5%B7%AE%E4%B8%80%E4%B8%AA%E7%A9%BA%E4%BD%8D%E7%9A%84%E9%82%A3%E4%B8%80%E8%A1%8C%E6%88%96%E9%82%A3%E4%B8%80%E5%88%97-pron-35d9db865e46.mp3"
     },
     {
       "id": "hint-放好一张以后-再检查它所在的行和列",
       "kind": "hint",
       "text": "放好一张以后，再检查它所在的行和列。",
+      "spokenText": "放好一张以后，再检查它所在的航和列。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E6%94%BE%E5%A5%BD%E4%B8%80%E5%BC%A0%E4%BB%A5%E5%90%8E-%E5%86%8D%E6%A3%80%E6%9F%A5%E5%AE%83%E6%89%80%E5%9C%A8%E7%9A%84%E8%A1%8C%E5%92%8C%E5%88%97.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E6%94%BE%E5%A5%BD%E4%B8%80%E5%BC%A0%E4%BB%A5%E5%90%8E-%E5%86%8D%E6%A3%80%E6%9F%A5%E5%AE%83%E6%89%80%E5%9C%A8%E7%9A%84%E8%A1%8C%E5%92%8C%E5%88%97-pron-ad01e3566dde.mp3"
     },
     {
       "id": "clue-每一行-三种图卡各出现一次",
       "kind": "clue",
       "text": "每一行，三种图卡各出现一次。",
+      "spokenText": "每一航，三种图卡各出现一次。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E6%AF%8F%E4%B8%80%E8%A1%8C-%E4%B8%89%E7%A7%8D%E5%9B%BE%E5%8D%A1%E5%90%84%E5%87%BA%E7%8E%B0%E4%B8%80%E6%AC%A1.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E6%AF%8F%E4%B8%80%E8%A1%8C-%E4%B8%89%E7%A7%8D%E5%9B%BE%E5%8D%A1%E5%90%84%E5%87%BA%E7%8E%B0%E4%B8%80%E6%AC%A1-pron-bf3d9823d3e4.mp3"
     },
     {
       "id": "clue-每一列-三种图卡也各出现一次",
@@ -15838,57 +15929,64 @@
       "id": "parent-这题可以有不同的完整图案-请逐行-逐列验证-而不是只认一种样子",
       "kind": "parent",
       "text": "这题可以有不同的完整图案。请逐行、逐列验证，而不是只认一种样子。",
+      "spokenText": "这题可以有不同的完整图案。请逐航、逐列验证，而不是只认一种样子。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%BF%99%E9%A2%98%E5%8F%AF%E4%BB%A5%E6%9C%89%E4%B8%8D%E5%90%8C%E7%9A%84%E5%AE%8C%E6%95%B4%E5%9B%BE%E6%A1%88-%E8%AF%B7%E9%80%90%E8%A1%8C-%E9%80%90%E5%88%97%E9%AA%8C%E8%AF%81-%E8%80%8C%E4%B8%8D%E6%98%AF%E5%8F%AA%E8%AE%A4%E4%B8%80%E7%A7%8D%E6%A0%B7%E5%AD%90.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%BF%99%E9%A2%98%E5%8F%AF%E4%BB%A5%E6%9C%89%E4%B8%8D%E5%90%8C%E7%9A%84%E5%AE%8C%E6%95%B4%E5%9B%BE%E6%A1%88-%E8%AF%B7%E9%80%90%E8%A1%8C-%E9%80%90%E5%88%97%E9%AA%8C%E8%AF%81-%E8%80%8C%E4%B8%8D%E6%98%AF%E5%8F%AA%E8%AE%A4%E4%B8%80%E7%A7%8D%E6%A0%B7%E5%AD%90-pron-5c668f13219a.mp3"
     },
     {
       "id": "hint-先试着补好一整行",
       "kind": "hint",
       "text": "先试着补好一整行。",
+      "spokenText": "先试着补好一整航。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E5%85%88%E8%AF%95%E7%9D%80%E8%A1%A5%E5%A5%BD%E4%B8%80%E6%95%B4%E8%A1%8C.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E5%85%88%E8%AF%95%E7%9D%80%E8%A1%A5%E5%A5%BD%E4%B8%80%E6%95%B4%E8%A1%8C-pron-e77835a22817.mp3"
     },
     {
       "id": "hint-下面的行既要自己不重复-也要和上面的列对上",
       "kind": "hint",
       "text": "下面的行既要自己不重复，也要和上面的列对上。",
+      "spokenText": "下面的航既要自己不重复，也要和上面的列对上。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E4%B8%8B%E9%9D%A2%E7%9A%84%E8%A1%8C%E6%97%A2%E8%A6%81%E8%87%AA%E5%B7%B1%E4%B8%8D%E9%87%8D%E5%A4%8D-%E4%B9%9F%E8%A6%81%E5%92%8C%E4%B8%8A%E9%9D%A2%E7%9A%84%E5%88%97%E5%AF%B9%E4%B8%8A.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E4%B8%8B%E9%9D%A2%E7%9A%84%E8%A1%8C%E6%97%A2%E8%A6%81%E8%87%AA%E5%B7%B1%E4%B8%8D%E9%87%8D%E5%A4%8D-%E4%B9%9F%E8%A6%81%E5%92%8C%E4%B8%8A%E9%9D%A2%E7%9A%84%E5%88%97%E5%AF%B9%E4%B8%8A-pron-d732b03002d8.mp3"
     },
     {
       "id": "prompt-把图形盘补完整-选一张图卡-再点问号格放进去-图卡可以重复用-每一行的颜色相同-每一列的形状相同",
       "kind": "prompt",
       "text": "把图形盘补完整。选一张图卡，再点问号格放进去。图卡可以重复用。每一行的颜色相同。每一列的形状相同。",
+      "spokenText": "把图形盘补完整。选一张图卡，再点问号格放进去。图卡可以重复用。每一航的颜色相同。每一列的形状相同。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8A%8A%E5%9B%BE%E5%BD%A2%E7%9B%98%E8%A1%A5%E5%AE%8C%E6%95%B4-%E9%80%89%E4%B8%80%E5%BC%A0%E5%9B%BE%E5%8D%A1-%E5%86%8D%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8-%E6%AF%8F%E4%B8%80%E8%A1%8C%E7%9A%84%E9%A2%9C%E8%89%B2%E7%9B%B8%E5%90%8C-%E6%AF%8F%E4%B8%80%E5%88%97%E7%9A%84%E5%BD%A2%E7%8A%B6%E7%9B%B8%E5%90%8C.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8A%8A%E5%9B%BE%E5%BD%A2%E7%9B%98%E8%A1%A5%E5%AE%8C%E6%95%B4-%E9%80%89%E4%B8%80%E5%BC%A0%E5%9B%BE%E5%8D%A1-%E5%86%8D%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8-%E6%AF%8F%E4%B8%80%E8%A1%8C%E7%9A%84%E9%A2%9C%E8%89%B2%E7%9B%B8%E5%90%8C-%E6%AF%8F%E4%B8%80%E5%88%97%E7%9A%84%E5%BD%A2%E7%8A%B6%E7%9B%B8%E5%90%8C-pron-2f007a388f11.mp3"
     },
     {
       "id": "success-补齐了-每行的颜色相同-每列的形状也相同",
       "kind": "success",
       "text": "补齐了！每行的颜色相同，每列的形状也相同。",
+      "spokenText": "补齐了！每航的颜色相同，每列的形状也相同。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%A1%A5%E9%BD%90%E4%BA%86-%E6%AF%8F%E8%A1%8C%E7%9A%84%E9%A2%9C%E8%89%B2%E7%9B%B8%E5%90%8C-%E6%AF%8F%E5%88%97%E7%9A%84%E5%BD%A2%E7%8A%B6%E4%B9%9F%E7%9B%B8%E5%90%8C.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%A1%A5%E9%BD%90%E4%BA%86-%E6%AF%8F%E8%A1%8C%E7%9A%84%E9%A2%9C%E8%89%B2%E7%9B%B8%E5%90%8C-%E6%AF%8F%E5%88%97%E7%9A%84%E5%BD%A2%E7%8A%B6%E4%B9%9F%E7%9B%B8%E5%90%8C-pron-1b63d8fa33b6.mp3"
     },
     {
       "id": "retry-每个问号都要同时对上行的颜色和列的形状",
       "kind": "retry",
       "text": "每个问号都要同时对上行的颜色和列的形状。",
+      "spokenText": "每个问号都要同时对上航的颜色和列的形状。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E6%AF%8F%E4%B8%AA%E9%97%AE%E5%8F%B7%E9%83%BD%E8%A6%81%E5%90%8C%E6%97%B6%E5%AF%B9%E4%B8%8A%E8%A1%8C%E7%9A%84%E9%A2%9C%E8%89%B2%E5%92%8C%E5%88%97%E7%9A%84%E5%BD%A2%E7%8A%B6.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E6%AF%8F%E4%B8%AA%E9%97%AE%E5%8F%B7%E9%83%BD%E8%A6%81%E5%90%8C%E6%97%B6%E5%AF%B9%E4%B8%8A%E8%A1%8C%E7%9A%84%E9%A2%9C%E8%89%B2%E5%92%8C%E5%88%97%E7%9A%84%E5%BD%A2%E7%8A%B6-pron-1c1561ea84b6.mp3"
     },
     {
       "id": "hint-从一行里已经有的图卡看颜色",
       "kind": "hint",
       "text": "从一行里已经有的图卡看颜色。",
+      "spokenText": "从一航里已经有的图卡看颜色。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E4%BB%8E%E4%B8%80%E8%A1%8C%E9%87%8C%E5%B7%B2%E7%BB%8F%E6%9C%89%E7%9A%84%E5%9B%BE%E5%8D%A1%E7%9C%8B%E9%A2%9C%E8%89%B2.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E4%BB%8E%E4%B8%80%E8%A1%8C%E9%87%8C%E5%B7%B2%E7%BB%8F%E6%9C%89%E7%9A%84%E5%9B%BE%E5%8D%A1%E7%9C%8B%E9%A2%9C%E8%89%B2-pron-57166f9c8595.mp3"
     },
     {
       "id": "hint-再从同一列里看形状-把两个特点合起来",
@@ -15902,9 +16000,10 @@
       "id": "clue-每一行的颜色相同",
       "kind": "clue",
       "text": "每一行的颜色相同。",
+      "spokenText": "每一航的颜色相同。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E6%AF%8F%E4%B8%80%E8%A1%8C%E7%9A%84%E9%A2%9C%E8%89%B2%E7%9B%B8%E5%90%8C.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E6%AF%8F%E4%B8%80%E8%A1%8C%E7%9A%84%E9%A2%9C%E8%89%B2%E7%9B%B8%E5%90%8C-pron-7898183f37e4.mp3"
     },
     {
       "id": "clue-每一列的形状相同",
@@ -15918,9 +16017,10 @@
       "id": "prompt-自己搭一个图形盘-选一张图卡-再点问号格放进去-图卡可以重复用-每一行-三种图卡各出现一次-每一列-三种图卡也各出现一次",
       "kind": "prompt",
       "text": "自己搭一个图形盘。选一张图卡，再点问号格放进去。图卡可以重复用。每一行，三种图卡各出现一次。每一列，三种图卡也各出现一次。",
+      "spokenText": "自己搭一个图形盘。选一张图卡，再点问号格放进去。图卡可以重复用。每一航，三种图卡各出现一次。每一列，三种图卡也各出现一次。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%87%AA%E5%B7%B1%E6%90%AD%E4%B8%80%E4%B8%AA%E5%9B%BE%E5%BD%A2%E7%9B%98-%E9%80%89%E4%B8%80%E5%BC%A0%E5%9B%BE%E5%8D%A1-%E5%86%8D%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8-%E6%AF%8F%E4%B8%80%E8%A1%8C-%E4%B8%89%E7%A7%8D%E5%9B%BE%E5%8D%A1%E5%90%84%E5%87%BA%E7%8E%B0%E4%B8%80%E6%AC%A1-%E6%AF%8F%E4%B8%80%E5%88%97-%E4%B8%89%E7%A7%8D%E5%9B%BE%E5%8D%A1%E4%B9%9F%E5%90%84%E5%87%BA%E7%8E%B0%E4%B8%80%E6%AC%A1.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%87%AA%E5%B7%B1%E6%90%AD%E4%B8%80%E4%B8%AA%E5%9B%BE%E5%BD%A2%E7%9B%98-%E9%80%89%E4%B8%80%E5%BC%A0%E5%9B%BE%E5%8D%A1-%E5%86%8D%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8-%E6%AF%8F%E4%B8%80%E8%A1%8C-%E4%B8%89%E7%A7%8D%E5%9B%BE%E5%8D%A1%E5%90%84%E5%87%BA%E7%8E%B0%E4%B8%80%E6%AC%A1-%E6%AF%8F%E4%B8%80%E5%88%97-%E4%B8%89%E7%A7%8D%E5%9B%BE%E5%8D%A1%E4%B9%9F%E5%90%84%E5%87%BA%E7%8E%B0-pron-d4f38424efed.mp3"
     },
     {
       "id": "parent-这题有多种解-先让孩子解释当前摆法-再尝试换一种排列",
@@ -15934,25 +16034,28 @@
       "id": "hint-先把三种图形放进第一行",
       "kind": "hint",
       "text": "先把三种图形放进第一行。",
+      "spokenText": "先把三种图形放进第一航。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E5%85%88%E6%8A%8A%E4%B8%89%E7%A7%8D%E5%9B%BE%E5%BD%A2%E6%94%BE%E8%BF%9B%E7%AC%AC%E4%B8%80%E8%A1%8C.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E5%85%88%E6%8A%8A%E4%B8%89%E7%A7%8D%E5%9B%BE%E5%BD%A2%E6%94%BE%E8%BF%9B%E7%AC%AC%E4%B8%80%E8%A1%8C-pron-164a5e2e7adb.mp3"
     },
     {
       "id": "hint-下一行可以换个顺序-避开上面同一列的图形",
       "kind": "hint",
       "text": "下一行可以换个顺序，避开上面同一列的图形。",
+      "spokenText": "下一航可以换个顺序，避开上面同一列的图形。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E4%B8%8B%E4%B8%80%E8%A1%8C%E5%8F%AF%E4%BB%A5%E6%8D%A2%E4%B8%AA%E9%A1%BA%E5%BA%8F-%E9%81%BF%E5%BC%80%E4%B8%8A%E9%9D%A2%E5%90%8C%E4%B8%80%E5%88%97%E7%9A%84%E5%9B%BE%E5%BD%A2.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E4%B8%8B%E4%B8%80%E8%A1%8C%E5%8F%AF%E4%BB%A5%E6%8D%A2%E4%B8%AA%E9%A1%BA%E5%BA%8F-%E9%81%BF%E5%BC%80%E4%B8%8A%E9%9D%A2%E5%90%8C%E4%B8%80%E5%88%97%E7%9A%84%E5%9B%BE%E5%BD%A2-pron-a1720ab912aa.mp3"
     },
     {
       "id": "prompt-把图形盘补完整-空白卡也是一张图卡-每个问号都要放好-再点看看-每行都有一个圆形-一个方形和一张空白卡-每列也要把这三种卡各放一次",
       "kind": "prompt",
       "text": "把图形盘补完整。空白卡也是一张图卡。每个问号都要放好，再点看看。每行都有一个圆形、一个方形和一张空白卡。每列也要把这三种卡各放一次。",
+      "spokenText": "把图形盘补完整。空白卡也是一张图卡。每个问号都要放好，再点看看。每航都有一个圆形、一个方形和一张空白卡。每列也要把这三种卡各放一次。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8A%8A%E5%9B%BE%E5%BD%A2%E7%9B%98%E8%A1%A5%E5%AE%8C%E6%95%B4-%E7%A9%BA%E7%99%BD%E5%8D%A1%E4%B9%9F%E6%98%AF%E4%B8%80%E5%BC%A0%E5%9B%BE%E5%8D%A1-%E6%AF%8F%E4%B8%AA%E9%97%AE%E5%8F%B7%E9%83%BD%E8%A6%81%E6%94%BE%E5%A5%BD-%E5%86%8D%E7%82%B9%E7%9C%8B%E7%9C%8B-%E6%AF%8F%E8%A1%8C%E9%83%BD%E6%9C%89%E4%B8%80%E4%B8%AA%E5%9C%86%E5%BD%A2-%E4%B8%80%E4%B8%AA%E6%96%B9%E5%BD%A2%E5%92%8C%E4%B8%80%E5%BC%A0%E7%A9%BA%E7%99%BD%E5%8D%A1-%E6%AF%8F%E5%88%97%E4%B9%9F%E8%A6%81%E6%8A%8A%E8%BF%99%E4%B8%89%E7%A7%8D%E5%8D%A1%E5%90%84%E6%94%BE%E4%B8%80%E6%AC%A1.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8A%8A%E5%9B%BE%E5%BD%A2%E7%9B%98%E8%A1%A5%E5%AE%8C%E6%95%B4-%E7%A9%BA%E7%99%BD%E5%8D%A1%E4%B9%9F%E6%98%AF%E4%B8%80%E5%BC%A0%E5%9B%BE%E5%8D%A1-%E6%AF%8F%E4%B8%AA%E9%97%AE%E5%8F%B7%E9%83%BD%E8%A6%81%E6%94%BE%E5%A5%BD-%E5%86%8D%E7%82%B9%E7%9C%8B%E7%9C%8B-%E6%AF%8F%E8%A1%8C%E9%83%BD%E6%9C%89%E4%B8%80%E4%B8%AA%E5%9C%86%E5%BD%A2-%E4%B8%80%E4%B8%AA%E6%96%B9%E5%BD%A2%E5%92%8C%E4%B8%80%E5%BC%A0%E7%A9%BA%E7%99%BD%E5%8D%A1-%E6%AF%8F%E5%88%97%E4%B9%9F%E8%A6%81%E6%8A%8A%E8%BF%99-pron-2eecec1c5feb.mp3"
     },
     {
       "id": "success-对了-空白卡也放在了合适的位置",
@@ -15974,9 +16077,10 @@
       "id": "clue-每行都有一个圆形-一个方形和一张空白卡",
       "kind": "clue",
       "text": "每行都有一个圆形、一个方形和一张空白卡。",
+      "spokenText": "每航都有一个圆形、一个方形和一张空白卡。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E6%AF%8F%E8%A1%8C%E9%83%BD%E6%9C%89%E4%B8%80%E4%B8%AA%E5%9C%86%E5%BD%A2-%E4%B8%80%E4%B8%AA%E6%96%B9%E5%BD%A2%E5%92%8C%E4%B8%80%E5%BC%A0%E7%A9%BA%E7%99%BD%E5%8D%A1.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E6%AF%8F%E8%A1%8C%E9%83%BD%E6%9C%89%E4%B8%80%E4%B8%AA%E5%9C%86%E5%BD%A2-%E4%B8%80%E4%B8%AA%E6%96%B9%E5%BD%A2%E5%92%8C%E4%B8%80%E5%BC%A0%E7%A9%BA%E7%99%BD%E5%8D%A1-pron-7f36a3538860.mp3"
     },
     {
       "id": "clue-每列也要把这三种卡各放一次",
@@ -16270,9 +16374,10 @@
       "id": "parent-能计数到14并按行检查",
       "kind": "parent",
       "text": "能计数到14并按行检查",
+      "spokenText": "能计数到14并按航检查",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%83%BD%E8%AE%A1%E6%95%B0%E5%88%B014%E5%B9%B6%E6%8C%89%E8%A1%8C%E6%A3%80%E6%9F%A5.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%83%BD%E8%AE%A1%E6%95%B0%E5%88%B014%E5%B9%B6%E6%8C%89%E8%A1%8C%E6%A3%80%E6%9F%A5-pron-a797943503a9.mp3"
     },
     {
       "id": "hint-一共有12个-可以先把完整的一组数出来-再加上剩下的",
@@ -18926,65 +19031,73 @@
       "id": "prompt-按行和列的变化-补出最后一个数-选出符合条件的一张图卡",
       "kind": "prompt",
       "text": "按行和列的变化，补出最后一个数。选出符合条件的一张图卡。",
+      "spokenText": "按航和列的变化，补出最后一个数。选出符合条件的一张图卡。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8C%89%E8%A1%8C%E5%92%8C%E5%88%97%E7%9A%84%E5%8F%98%E5%8C%96-%E8%A1%A5%E5%87%BA%E6%9C%80%E5%90%8E%E4%B8%80%E4%B8%AA%E6%95%B0-%E9%80%89%E5%87%BA%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E4%B8%80%E5%BC%A0%E5%9B%BE%E5%8D%A1.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8C%89%E8%A1%8C%E5%92%8C%E5%88%97%E7%9A%84%E5%8F%98%E5%8C%96-%E8%A1%A5%E5%87%BA%E6%9C%80%E5%90%8E%E4%B8%80%E4%B8%AA%E6%95%B0-%E9%80%89%E5%87%BA%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E4%B8%80%E5%BC%A0%E5%9B%BE%E5%8D%A1-pron-3f953a56b254.mp3"
     },
     {
       "id": "success-每行从左到右加2-每列从上到下加三-两条规则都得到8",
       "kind": "success",
       "text": "每行从左到右加2，每列从上到下加三，两条规则都得到8。",
+      "spokenText": "每航从左到右加2，每列从上到下加三，两条规则都得到8。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%AF%8F%E8%A1%8C%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E5%8A%A02-%E6%AF%8F%E5%88%97%E4%BB%8E%E4%B8%8A%E5%88%B0%E4%B8%8B%E5%8A%A0%E4%B8%89-%E4%B8%A4%E6%9D%A1%E8%A7%84%E5%88%99%E9%83%BD%E5%BE%97%E5%88%B08.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%AF%8F%E8%A1%8C%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E5%8A%A02-%E6%AF%8F%E5%88%97%E4%BB%8E%E4%B8%8A%E5%88%B0%E4%B8%8B%E5%8A%A0%E4%B8%89-%E4%B8%A4%E6%9D%A1%E8%A7%84%E5%88%99%E9%83%BD%E5%BE%97%E5%88%B08-pron-ced2ffd807bd.mp3"
     },
     {
       "id": "parent-能按行列读取2-3数表",
       "kind": "parent",
       "text": "能按行列读取2×3数表",
+      "spokenText": "能按航列读取2×3数表",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%83%BD%E6%8C%89%E8%A1%8C%E5%88%97%E8%AF%BB%E5%8F%962-3%E6%95%B0%E8%A1%A8.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%83%BD%E6%8C%89%E8%A1%8C%E5%88%97%E8%AF%BB%E5%8F%962-3%E6%95%B0%E8%A1%A8-pron-2af154e2fbe9.mp3"
     },
     {
       "id": "hint-每行从左到右加2-每列从上到下加三-两条规则都得到8",
       "kind": "hint",
       "text": "每行从左到右加2，每列从上到下加三，两条规则都得到8。",
+      "spokenText": "每航从左到右加2，每列从上到下加三，两条规则都得到8。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E6%AF%8F%E8%A1%8C%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E5%8A%A02-%E6%AF%8F%E5%88%97%E4%BB%8E%E4%B8%8A%E5%88%B0%E4%B8%8B%E5%8A%A0%E4%B8%89-%E4%B8%A4%E6%9D%A1%E8%A7%84%E5%88%99%E9%83%BD%E5%BE%97%E5%88%B08.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E6%AF%8F%E8%A1%8C%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E5%8A%A02-%E6%AF%8F%E5%88%97%E4%BB%8E%E4%B8%8A%E5%88%B0%E4%B8%8B%E5%8A%A0%E4%B8%89-%E4%B8%A4%E6%9D%A1%E8%A7%84%E5%88%99%E9%83%BD%E5%BE%97%E5%88%B08-pron-6d55dea9558a.mp3"
     },
     {
       "id": "success-每行从左到右加3-每列从上到下加三-两条规则都得到11",
       "kind": "success",
       "text": "每行从左到右加3，每列从上到下加三，两条规则都得到11。",
+      "spokenText": "每航从左到右加3，每列从上到下加三，两条规则都得到11。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%AF%8F%E8%A1%8C%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E5%8A%A03-%E6%AF%8F%E5%88%97%E4%BB%8E%E4%B8%8A%E5%88%B0%E4%B8%8B%E5%8A%A0%E4%B8%89-%E4%B8%A4%E6%9D%A1%E8%A7%84%E5%88%99%E9%83%BD%E5%BE%97%E5%88%B011.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%AF%8F%E8%A1%8C%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E5%8A%A03-%E6%AF%8F%E5%88%97%E4%BB%8E%E4%B8%8A%E5%88%B0%E4%B8%8B%E5%8A%A0%E4%B8%89-%E4%B8%A4%E6%9D%A1%E8%A7%84%E5%88%99%E9%83%BD%E5%BE%97%E5%88%B011-pron-1e64c50eb670.mp3"
     },
     {
       "id": "hint-每行从左到右加3-每列从上到下加三-两条规则都得到11",
       "kind": "hint",
       "text": "每行从左到右加3，每列从上到下加三，两条规则都得到11。",
+      "spokenText": "每航从左到右加3，每列从上到下加三，两条规则都得到11。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E6%AF%8F%E8%A1%8C%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E5%8A%A03-%E6%AF%8F%E5%88%97%E4%BB%8E%E4%B8%8A%E5%88%B0%E4%B8%8B%E5%8A%A0%E4%B8%89-%E4%B8%A4%E6%9D%A1%E8%A7%84%E5%88%99%E9%83%BD%E5%BE%97%E5%88%B011.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E6%AF%8F%E8%A1%8C%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E5%8A%A03-%E6%AF%8F%E5%88%97%E4%BB%8E%E4%B8%8A%E5%88%B0%E4%B8%8B%E5%8A%A0%E4%B8%89-%E4%B8%A4%E6%9D%A1%E8%A7%84%E5%88%99%E9%83%BD%E5%BE%97%E5%88%B011-pron-e54cdca3d4c5.mp3"
     },
     {
       "id": "success-每行从左到右加4-每列从上到下加三-两条规则都得到14",
       "kind": "success",
       "text": "每行从左到右加4，每列从上到下加三，两条规则都得到14。",
+      "spokenText": "每航从左到右加4，每列从上到下加三，两条规则都得到14。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%AF%8F%E8%A1%8C%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E5%8A%A04-%E6%AF%8F%E5%88%97%E4%BB%8E%E4%B8%8A%E5%88%B0%E4%B8%8B%E5%8A%A0%E4%B8%89-%E4%B8%A4%E6%9D%A1%E8%A7%84%E5%88%99%E9%83%BD%E5%BE%97%E5%88%B014.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%AF%8F%E8%A1%8C%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E5%8A%A04-%E6%AF%8F%E5%88%97%E4%BB%8E%E4%B8%8A%E5%88%B0%E4%B8%8B%E5%8A%A0%E4%B8%89-%E4%B8%A4%E6%9D%A1%E8%A7%84%E5%88%99%E9%83%BD%E5%BE%97%E5%88%B014-pron-392201eb315c.mp3"
     },
     {
       "id": "hint-每行从左到右加4-每列从上到下加三-两条规则都得到14",
       "kind": "hint",
       "text": "每行从左到右加4，每列从上到下加三，两条规则都得到14。",
+      "spokenText": "每航从左到右加4，每列从上到下加三，两条规则都得到14。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E6%AF%8F%E8%A1%8C%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E5%8A%A04-%E6%AF%8F%E5%88%97%E4%BB%8E%E4%B8%8A%E5%88%B0%E4%B8%8B%E5%8A%A0%E4%B8%89-%E4%B8%A4%E6%9D%A1%E8%A7%84%E5%88%99%E9%83%BD%E5%BE%97%E5%88%B014.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E6%AF%8F%E8%A1%8C%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E5%8A%A04-%E6%AF%8F%E5%88%97%E4%BB%8E%E4%B8%8A%E5%88%B0%E4%B8%8B%E5%8A%A0%E4%B8%89-%E4%B8%A4%E6%9D%A1%E8%A7%84%E5%88%99%E9%83%BD%E5%BE%97%E5%88%B014-pron-07a5c93f3ab0.mp3"
     },
     {
       "id": "game-title-图形等量换",
@@ -20142,9 +20255,10 @@
       "id": "game-goal-找日期-数同一星期-跨行与间隔推算",
       "kind": "game-goal",
       "text": "找日期 → 数同一星期 → 跨行与间隔推算",
+      "spokenText": "找日期 → 数同一星期 → 跨航与间隔推算",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/game-goal-%E6%89%BE%E6%97%A5%E6%9C%9F-%E6%95%B0%E5%90%8C%E4%B8%80%E6%98%9F%E6%9C%9F-%E8%B7%A8%E8%A1%8C%E4%B8%8E%E9%97%B4%E9%9A%94%E6%8E%A8%E7%AE%97.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/game-goal-%E6%89%BE%E6%97%A5%E6%9C%9F-%E6%95%B0%E5%90%8C%E4%B8%80%E6%98%9F%E6%9C%9F-%E8%B7%A8%E8%A1%8C%E4%B8%8E%E9%97%B4%E9%9A%94%E6%8E%A8%E7%AE%97-pron-5825468da11c.mp3"
     },
     {
       "id": "prompt-这张练习日历里-8号是星期几-选出符合条件的一张图卡",
@@ -21142,49 +21256,55 @@
       "id": "prompt-每行每列都要有三位不同的朋友-选图卡-点问号格放进去-图卡可以重复用-每一行每种动物只有一张-每一列每种动物只有一张",
       "kind": "prompt",
       "text": "每行每列都要有三位不同的朋友。选图卡，点问号格放进去。图卡可以重复用。每一行每种动物只有一张。每一列每种动物只有一张。",
+      "spokenText": "每航每列都要有三位不同的朋友。选图卡，点问号格放进去。图卡可以重复用。每一航每种动物只有一张。每一列每种动物只有一张。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%AF%8F%E8%A1%8C%E6%AF%8F%E5%88%97%E9%83%BD%E8%A6%81%E6%9C%89%E4%B8%89%E4%BD%8D%E4%B8%8D%E5%90%8C%E7%9A%84%E6%9C%8B%E5%8F%8B-%E9%80%89%E5%9B%BE%E5%8D%A1-%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8-%E6%AF%8F%E4%B8%80%E8%A1%8C%E6%AF%8F%E7%A7%8D%E5%8A%A8%E7%89%A9%E5%8F%AA%E6%9C%89%E4%B8%80%E5%BC%A0-%E6%AF%8F%E4%B8%80%E5%88%97%E6%AF%8F%E7%A7%8D%E5%8A%A8%E7%89%A9%E5%8F%AA%E6%9C%89%E4%B8%80%E5%BC%A0.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%AF%8F%E8%A1%8C%E6%AF%8F%E5%88%97%E9%83%BD%E8%A6%81%E6%9C%89%E4%B8%89%E4%BD%8D%E4%B8%8D%E5%90%8C%E7%9A%84%E6%9C%8B%E5%8F%8B-%E9%80%89%E5%9B%BE%E5%8D%A1-%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8-%E6%AF%8F%E4%B8%80%E8%A1%8C%E6%AF%8F%E7%A7%8D%E5%8A%A8%E7%89%A9%E5%8F%AA%E6%9C%89%E4%B8%80%E5%BC%A0-%E6%AF%8F%E4%B8%80%E5%88%97%E6%AF%8F%E7%A7%8D%E5%8A%A8%E7%89%A9%E5%8F%AA%E6%9C%89%E4%B8%80%E5%BC%A0-pron-6b58d5b64971.mp3"
     },
     {
       "id": "success-逐行-逐列看-小兔-小猫-小狗都各出现一次",
       "kind": "success",
       "text": "逐行、逐列看，小兔、小猫、小狗都各出现一次。",
+      "spokenText": "逐航、逐列看，小兔、小猫、小狗都各出现一次。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E9%80%90%E8%A1%8C-%E9%80%90%E5%88%97%E7%9C%8B-%E5%B0%8F%E5%85%94-%E5%B0%8F%E7%8C%AB-%E5%B0%8F%E7%8B%97%E9%83%BD%E5%90%84%E5%87%BA%E7%8E%B0%E4%B8%80%E6%AC%A1.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E9%80%90%E8%A1%8C-%E9%80%90%E5%88%97%E7%9C%8B-%E5%B0%8F%E5%85%94-%E5%B0%8F%E7%8C%AB-%E5%B0%8F%E7%8B%97%E9%83%BD%E5%90%84%E5%87%BA%E7%8E%B0%E4%B8%80%E6%AC%A1-pron-7825b18ba425.mp3"
     },
     {
       "id": "parent-认三位朋友-理解一行不得重复",
       "kind": "parent",
       "text": "认三位朋友，理解一行不得重复",
+      "spokenText": "认三位朋友，理解一航不得重复",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AE%A4%E4%B8%89%E4%BD%8D%E6%9C%8B%E5%8F%8B-%E7%90%86%E8%A7%A3%E4%B8%80%E8%A1%8C%E4%B8%8D%E5%BE%97%E9%87%8D%E5%A4%8D.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AE%A4%E4%B8%89%E4%BD%8D%E6%9C%8B%E5%8F%8B-%E7%90%86%E8%A7%A3%E4%B8%80%E8%A1%8C%E4%B8%8D%E5%BE%97%E9%87%8D%E5%A4%8D-pron-23a70a808917.mp3"
     },
     {
       "id": "hint-每一行每种动物只有一张",
       "kind": "hint",
       "text": "每一行每种动物只有一张。",
+      "spokenText": "每一航每种动物只有一张。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E6%AF%8F%E4%B8%80%E8%A1%8C%E6%AF%8F%E7%A7%8D%E5%8A%A8%E7%89%A9%E5%8F%AA%E6%9C%89%E4%B8%80%E5%BC%A0.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E6%AF%8F%E4%B8%80%E8%A1%8C%E6%AF%8F%E7%A7%8D%E5%8A%A8%E7%89%A9%E5%8F%AA%E6%9C%89%E4%B8%80%E5%BC%A0-pron-8ae2f0fddef8.mp3"
     },
     {
       "id": "hint-逐行-逐列看-小兔-小猫-小狗都各出现一次",
       "kind": "hint",
       "text": "逐行、逐列看，小兔、小猫、小狗都各出现一次。",
+      "spokenText": "逐航、逐列看，小兔、小猫、小狗都各出现一次。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E9%80%90%E8%A1%8C-%E9%80%90%E5%88%97%E7%9C%8B-%E5%B0%8F%E5%85%94-%E5%B0%8F%E7%8C%AB-%E5%B0%8F%E7%8B%97%E9%83%BD%E5%90%84%E5%87%BA%E7%8E%B0%E4%B8%80%E6%AC%A1.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E9%80%90%E8%A1%8C-%E9%80%90%E5%88%97%E7%9C%8B-%E5%B0%8F%E5%85%94-%E5%B0%8F%E7%8C%AB-%E5%B0%8F%E7%8B%97%E9%83%BD%E5%90%84%E5%87%BA%E7%8E%B0%E4%B8%80%E6%AC%A1-pron-2f92cc8bcfcc.mp3"
     },
     {
       "id": "clue-每一行每种动物只有一张",
       "kind": "clue",
       "text": "每一行每种动物只有一张。",
+      "spokenText": "每一航每种动物只有一张。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E6%AF%8F%E4%B8%80%E8%A1%8C%E6%AF%8F%E7%A7%8D%E5%8A%A8%E7%89%A9%E5%8F%AA%E6%9C%89%E4%B8%80%E5%BC%A0.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E6%AF%8F%E4%B8%80%E8%A1%8C%E6%AF%8F%E7%A7%8D%E5%8A%A8%E7%89%A9%E5%8F%AA%E6%9C%89%E4%B8%80%E5%BC%A0-pron-e53c6dbf6a34.mp3"
     },
     {
       "id": "clue-每一列每种动物只有一张",
@@ -21198,9 +21318,10 @@
       "id": "parent-同时核对行列-能撤回不合适摆放",
       "kind": "parent",
       "text": "同时核对行列，能撤回不合适摆放",
+      "spokenText": "同时核对航列，能撤回不合适摆放",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E5%90%8C%E6%97%B6%E6%A0%B8%E5%AF%B9%E8%A1%8C%E5%88%97-%E8%83%BD%E6%92%A4%E5%9B%9E%E4%B8%8D%E5%90%88%E9%80%82%E6%91%86%E6%94%BE.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E5%90%8C%E6%97%B6%E6%A0%B8%E5%AF%B9%E8%A1%8C%E5%88%97-%E8%83%BD%E6%92%A4%E5%9B%9E%E4%B8%8D%E5%90%88%E9%80%82%E6%91%86%E6%94%BE-pron-15a7ecfcbaea.mp3"
     },
     {
       "id": "parent-可反复利用已填格约束后续空位",
@@ -23294,25 +23415,28 @@
       "id": "success-逐行对应-色块的位置-数量都一样",
       "kind": "success",
       "text": "逐行对应，色块的位置、数量都一样。",
+      "spokenText": "逐航对应，色块的位置、数量都一样。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E9%80%90%E8%A1%8C%E5%AF%B9%E5%BA%94-%E8%89%B2%E5%9D%97%E7%9A%84%E4%BD%8D%E7%BD%AE-%E6%95%B0%E9%87%8F%E9%83%BD%E4%B8%80%E6%A0%B7.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E9%80%90%E8%A1%8C%E5%AF%B9%E5%BA%94-%E8%89%B2%E5%9D%97%E7%9A%84%E4%BD%8D%E7%BD%AE-%E6%95%B0%E9%87%8F%E9%83%BD%E4%B8%80%E6%A0%B7-pron-86950099732e.mp3"
     },
     {
       "id": "parent-能按行比较蓝白格",
       "kind": "parent",
       "text": "能按行比较蓝白格",
+      "spokenText": "能按航比较蓝白格",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%83%BD%E6%8C%89%E8%A1%8C%E6%AF%94%E8%BE%83%E8%93%9D%E7%99%BD%E6%A0%BC.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%83%BD%E6%8C%89%E8%A1%8C%E6%AF%94%E8%BE%83%E8%93%9D%E7%99%BD%E6%A0%BC-pron-83744df94ef6.mp3"
     },
     {
       "id": "hint-逐行对应-色块的位置-数量都一样",
       "kind": "hint",
       "text": "逐行对应，色块的位置、数量都一样。",
+      "spokenText": "逐航对应，色块的位置、数量都一样。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E9%80%90%E8%A1%8C%E5%AF%B9%E5%BA%94-%E8%89%B2%E5%9D%97%E7%9A%84%E4%BD%8D%E7%BD%AE-%E6%95%B0%E9%87%8F%E9%83%BD%E4%B8%80%E6%A0%B7.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E9%80%90%E8%A1%8C%E5%AF%B9%E5%BA%94-%E8%89%B2%E5%9D%97%E7%9A%84%E4%BD%8D%E7%BD%AE-%E6%95%B0%E9%87%8F%E9%83%BD%E4%B8%80%E6%A0%B7-pron-3e1d50b677ca.mp3"
     },
     {
       "id": "object-图d",
@@ -23406,9 +23530,10 @@
       "id": "prompt-选哪一块补片-能把行列里的纹理接上-选出符合条件的一张图卡-蓝白格沿每行-每列交替",
       "kind": "prompt",
       "text": "选哪一块补片，能把行列里的纹理接上。选出符合条件的一张图卡。蓝白格沿每行、每列交替。",
+      "spokenText": "选哪一块补片，能把航列里的纹理接上。选出符合条件的一张图卡。蓝白格沿每航、每列交替。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E9%80%89%E5%93%AA%E4%B8%80%E5%9D%97%E8%A1%A5%E7%89%87-%E8%83%BD%E6%8A%8A%E8%A1%8C%E5%88%97%E9%87%8C%E7%9A%84%E7%BA%B9%E7%90%86%E6%8E%A5%E4%B8%8A-%E9%80%89%E5%87%BA%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E4%B8%80%E5%BC%A0%E5%9B%BE%E5%8D%A1-%E8%93%9D%E7%99%BD%E6%A0%BC%E6%B2%BF%E6%AF%8F%E8%A1%8C-%E6%AF%8F%E5%88%97%E4%BA%A4%E6%9B%BF.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E9%80%89%E5%93%AA%E4%B8%80%E5%9D%97%E8%A1%A5%E7%89%87-%E8%83%BD%E6%8A%8A%E8%A1%8C%E5%88%97%E9%87%8C%E7%9A%84%E7%BA%B9%E7%90%86%E6%8E%A5%E4%B8%8A-%E9%80%89%E5%87%BA%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E4%B8%80%E5%BC%A0%E5%9B%BE%E5%8D%A1-%E8%93%9D%E7%99%BD%E6%A0%BC%E6%B2%BF%E6%AF%8F%E8%A1%8C-%E6%AF%8F%E5%88%97%E4%BA%A4%E6%9B%BF-pron-80f4a6a0d6fd.mp3"
     },
     {
       "id": "success-补片的四条边都要和周围纹理对上",
@@ -23430,9 +23555,10 @@
       "id": "hint-蓝白格沿每行-每列交替",
       "kind": "hint",
       "text": "蓝白格沿每行、每列交替。",
+      "spokenText": "蓝白格沿每航、每列交替。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E8%93%9D%E7%99%BD%E6%A0%BC%E6%B2%BF%E6%AF%8F%E8%A1%8C-%E6%AF%8F%E5%88%97%E4%BA%A4%E6%9B%BF.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E8%93%9D%E7%99%BD%E6%A0%BC%E6%B2%BF%E6%AF%8F%E8%A1%8C-%E6%AF%8F%E5%88%97%E4%BA%A4%E6%9B%BF-pron-1a1a5ccaf855.mp3"
     },
     {
       "id": "hint-补片的四条边都要和周围纹理对上",
@@ -23446,129 +23572,145 @@
       "id": "clue-蓝白格沿每行-每列交替",
       "kind": "clue",
       "text": "蓝白格沿每行、每列交替。",
+      "spokenText": "蓝白格沿每航、每列交替。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E8%93%9D%E7%99%BD%E6%A0%BC%E6%B2%BF%E6%AF%8F%E8%A1%8C-%E6%AF%8F%E5%88%97%E4%BA%A4%E6%9B%BF.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E8%93%9D%E7%99%BD%E6%A0%BC%E6%B2%BF%E6%AF%8F%E8%A1%8C-%E6%AF%8F%E5%88%97%E4%BA%A4%E6%9B%BF-pron-035a387500bf.mp3"
     },
     {
       "id": "prompt-选哪一块补片-能把行列里的纹理接上-选出符合条件的一张图卡-每行同色-蓝白行交替",
       "kind": "prompt",
       "text": "选哪一块补片，能把行列里的纹理接上。选出符合条件的一张图卡。每行同色，蓝白行交替。",
+      "spokenText": "选哪一块补片，能把航列里的纹理接上。选出符合条件的一张图卡。每航同色，蓝白航交替。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E9%80%89%E5%93%AA%E4%B8%80%E5%9D%97%E8%A1%A5%E7%89%87-%E8%83%BD%E6%8A%8A%E8%A1%8C%E5%88%97%E9%87%8C%E7%9A%84%E7%BA%B9%E7%90%86%E6%8E%A5%E4%B8%8A-%E9%80%89%E5%87%BA%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E4%B8%80%E5%BC%A0%E5%9B%BE%E5%8D%A1-%E6%AF%8F%E8%A1%8C%E5%90%8C%E8%89%B2-%E8%93%9D%E7%99%BD%E8%A1%8C%E4%BA%A4%E6%9B%BF.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E9%80%89%E5%93%AA%E4%B8%80%E5%9D%97%E8%A1%A5%E7%89%87-%E8%83%BD%E6%8A%8A%E8%A1%8C%E5%88%97%E9%87%8C%E7%9A%84%E7%BA%B9%E7%90%86%E6%8E%A5%E4%B8%8A-%E9%80%89%E5%87%BA%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E4%B8%80%E5%BC%A0%E5%9B%BE%E5%8D%A1-%E6%AF%8F%E8%A1%8C%E5%90%8C%E8%89%B2-%E8%93%9D%E7%99%BD%E8%A1%8C%E4%BA%A4%E6%9B%BF-pron-4189781d6738.mp3"
     },
     {
       "id": "hint-每行同色-蓝白行交替",
       "kind": "hint",
       "text": "每行同色，蓝白行交替。",
+      "spokenText": "每航同色，蓝白航交替。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E6%AF%8F%E8%A1%8C%E5%90%8C%E8%89%B2-%E8%93%9D%E7%99%BD%E8%A1%8C%E4%BA%A4%E6%9B%BF.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E6%AF%8F%E8%A1%8C%E5%90%8C%E8%89%B2-%E8%93%9D%E7%99%BD%E8%A1%8C%E4%BA%A4%E6%9B%BF-pron-2e8415b7beac.mp3"
     },
     {
       "id": "clue-每行同色-蓝白行交替",
       "kind": "clue",
       "text": "每行同色，蓝白行交替。",
+      "spokenText": "每航同色，蓝白航交替。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E6%AF%8F%E8%A1%8C%E5%90%8C%E8%89%B2-%E8%93%9D%E7%99%BD%E8%A1%8C%E4%BA%A4%E6%9B%BF.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E6%AF%8F%E8%A1%8C%E5%90%8C%E8%89%B2-%E8%93%9D%E7%99%BD%E8%A1%8C%E4%BA%A4%E6%9B%BF-pron-61930a36873d.mp3"
     },
     {
       "id": "prompt-选哪一块补片-能把行列里的纹理接上-选出符合条件的一张图卡-相同的一整行保持同色-按三行一组重复",
       "kind": "prompt",
       "text": "选哪一块补片，能把行列里的纹理接上。选出符合条件的一张图卡。相同的一整行保持同色，按三行一组重复。",
+      "spokenText": "选哪一块补片，能把航列里的纹理接上。选出符合条件的一张图卡。相同的一整航保持同色，按三航一组重复。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E9%80%89%E5%93%AA%E4%B8%80%E5%9D%97%E8%A1%A5%E7%89%87-%E8%83%BD%E6%8A%8A%E8%A1%8C%E5%88%97%E9%87%8C%E7%9A%84%E7%BA%B9%E7%90%86%E6%8E%A5%E4%B8%8A-%E9%80%89%E5%87%BA%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E4%B8%80%E5%BC%A0%E5%9B%BE%E5%8D%A1-%E7%9B%B8%E5%90%8C%E7%9A%84%E4%B8%80%E6%95%B4%E8%A1%8C%E4%BF%9D%E6%8C%81%E5%90%8C%E8%89%B2-%E6%8C%89%E4%B8%89%E8%A1%8C%E4%B8%80%E7%BB%84%E9%87%8D%E5%A4%8D.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E9%80%89%E5%93%AA%E4%B8%80%E5%9D%97%E8%A1%A5%E7%89%87-%E8%83%BD%E6%8A%8A%E8%A1%8C%E5%88%97%E9%87%8C%E7%9A%84%E7%BA%B9%E7%90%86%E6%8E%A5%E4%B8%8A-%E9%80%89%E5%87%BA%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E4%B8%80%E5%BC%A0%E5%9B%BE%E5%8D%A1-%E7%9B%B8%E5%90%8C%E7%9A%84%E4%B8%80%E6%95%B4%E8%A1%8C%E4%BF%9D%E6%8C%81%E5%90%8C%E8%89%B2-%E6%8C%89%E4%B8%89%E8%A1%8C%E4%B8%80%E7%BB%84%E9%87%8D%E5%A4%8D-pron-0536ef3f2362.mp3"
     },
     {
       "id": "parent-理解按三行重复并核对补片边界",
       "kind": "parent",
       "text": "理解按三行重复并核对补片边界",
+      "spokenText": "理解按三航重复并核对补片边界",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E7%90%86%E8%A7%A3%E6%8C%89%E4%B8%89%E8%A1%8C%E9%87%8D%E5%A4%8D%E5%B9%B6%E6%A0%B8%E5%AF%B9%E8%A1%A5%E7%89%87%E8%BE%B9%E7%95%8C.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E7%90%86%E8%A7%A3%E6%8C%89%E4%B8%89%E8%A1%8C%E9%87%8D%E5%A4%8D%E5%B9%B6%E6%A0%B8%E5%AF%B9%E8%A1%A5%E7%89%87%E8%BE%B9%E7%95%8C-pron-1c2552fcfa1d.mp3"
     },
     {
       "id": "hint-相同的一整行保持同色-按三行一组重复",
       "kind": "hint",
       "text": "相同的一整行保持同色，按三行一组重复。",
+      "spokenText": "相同的一整航保持同色，按三航一组重复。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E7%9B%B8%E5%90%8C%E7%9A%84%E4%B8%80%E6%95%B4%E8%A1%8C%E4%BF%9D%E6%8C%81%E5%90%8C%E8%89%B2-%E6%8C%89%E4%B8%89%E8%A1%8C%E4%B8%80%E7%BB%84%E9%87%8D%E5%A4%8D.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E7%9B%B8%E5%90%8C%E7%9A%84%E4%B8%80%E6%95%B4%E8%A1%8C%E4%BF%9D%E6%8C%81%E5%90%8C%E8%89%B2-%E6%8C%89%E4%B8%89%E8%A1%8C%E4%B8%80%E7%BB%84%E9%87%8D%E5%A4%8D-pron-54f3847d0b55.mp3"
     },
     {
       "id": "clue-相同的一整行保持同色-按三行一组重复",
       "kind": "clue",
       "text": "相同的一整行保持同色，按三行一组重复。",
+      "spokenText": "相同的一整航保持同色，按三航一组重复。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E7%9B%B8%E5%90%8C%E7%9A%84%E4%B8%80%E6%95%B4%E8%A1%8C%E4%BF%9D%E6%8C%81%E5%90%8C%E8%89%B2-%E6%8C%89%E4%B8%89%E8%A1%8C%E4%B8%80%E7%BB%84%E9%87%8D%E5%A4%8D.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E7%9B%B8%E5%90%8C%E7%9A%84%E4%B8%80%E6%95%B4%E8%A1%8C%E4%BF%9D%E6%8C%81%E5%90%8C%E8%89%B2-%E6%8C%89%E4%B8%89%E8%A1%8C%E4%B8%80%E7%BB%84%E9%87%8D%E5%A4%8D-pron-ebf5bf93aa63.mp3"
     },
     {
       "id": "game-title-行列规律研究",
       "kind": "game-title",
       "text": "行列规律研究",
+      "spokenText": "航列规律研究",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/game-title-%E8%A1%8C%E5%88%97%E8%A7%84%E5%BE%8B%E7%A0%94%E7%A9%B6.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/game-title-%E8%A1%8C%E5%88%97%E8%A7%84%E5%BE%8B%E7%A0%94%E7%A9%B6-pron-47ee24fd6b41.mp3"
     },
     {
       "id": "game-goal-单属性-双属性-行列交叉约束",
       "kind": "game-goal",
       "text": "单属性 → 双属性 → 行列交叉约束",
+      "spokenText": "单属性 → 双属性 → 航列交叉约束",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/game-goal-%E5%8D%95%E5%B1%9E%E6%80%A7-%E5%8F%8C%E5%B1%9E%E6%80%A7-%E8%A1%8C%E5%88%97%E4%BA%A4%E5%8F%89%E7%BA%A6%E6%9D%9F.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/game-goal-%E5%8D%95%E5%B1%9E%E6%80%A7-%E5%8F%8C%E5%B1%9E%E6%80%A7-%E8%A1%8C%E5%88%97%E4%BA%A4%E5%8F%89%E7%BA%A6%E6%9D%9F-pron-4ce289231d41.mp3"
     },
     {
       "id": "prompt-把每行每列的规律补完整-选图卡-点问号格放进去-图卡可以重复用-每一行颜色相同-从左到右依次是圆-方-三角",
       "kind": "prompt",
       "text": "把每行每列的规律补完整。选图卡，点问号格放进去。图卡可以重复用。每一行颜色相同。从左到右依次是圆、方、三角。",
+      "spokenText": "把每航每列的规律补完整。选图卡，点问号格放进去。图卡可以重复用。每一航颜色相同。从左到右依次是圆、方、三角。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8A%8A%E6%AF%8F%E8%A1%8C%E6%AF%8F%E5%88%97%E7%9A%84%E8%A7%84%E5%BE%8B%E8%A1%A5%E5%AE%8C%E6%95%B4-%E9%80%89%E5%9B%BE%E5%8D%A1-%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8-%E6%AF%8F%E4%B8%80%E8%A1%8C%E9%A2%9C%E8%89%B2%E7%9B%B8%E5%90%8C-%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E4%BE%9D%E6%AC%A1%E6%98%AF%E5%9C%86-%E6%96%B9-%E4%B8%89%E8%A7%92.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8A%8A%E6%AF%8F%E8%A1%8C%E6%AF%8F%E5%88%97%E7%9A%84%E8%A7%84%E5%BE%8B%E8%A1%A5%E5%AE%8C%E6%95%B4-%E9%80%89%E5%9B%BE%E5%8D%A1-%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8-%E6%AF%8F%E4%B8%80%E8%A1%8C%E9%A2%9C%E8%89%B2%E7%9B%B8%E5%90%8C-%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E4%BE%9D%E6%AC%A1%E6%98%AF%E5%9C%86-%E6%96%B9-%E4%B8%89%E8%A7%92-pron-7cb14774b13d.mp3"
     },
     {
       "id": "success-同一行的颜色保持不变-同一列的形状也保持不变",
       "kind": "success",
       "text": "同一行的颜色保持不变，同一列的形状也保持不变。",
+      "spokenText": "同一航的颜色保持不变，同一列的形状也保持不变。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%90%8C%E4%B8%80%E8%A1%8C%E7%9A%84%E9%A2%9C%E8%89%B2%E4%BF%9D%E6%8C%81%E4%B8%8D%E5%8F%98-%E5%90%8C%E4%B8%80%E5%88%97%E7%9A%84%E5%BD%A2%E7%8A%B6%E4%B9%9F%E4%BF%9D%E6%8C%81%E4%B8%8D%E5%8F%98.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%90%8C%E4%B8%80%E8%A1%8C%E7%9A%84%E9%A2%9C%E8%89%B2%E4%BF%9D%E6%8C%81%E4%B8%8D%E5%8F%98-%E5%90%8C%E4%B8%80%E5%88%97%E7%9A%84%E5%BD%A2%E7%8A%B6%E4%B9%9F%E4%BF%9D%E6%8C%81%E4%B8%8D%E5%8F%98-pron-77c39890cff1.mp3"
     },
     {
       "id": "parent-识颜色与形状-会按行列定位",
       "kind": "parent",
       "text": "识颜色与形状，会按行列定位",
+      "spokenText": "识颜色与形状，会按航列定位",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%86%E9%A2%9C%E8%89%B2%E4%B8%8E%E5%BD%A2%E7%8A%B6-%E4%BC%9A%E6%8C%89%E8%A1%8C%E5%88%97%E5%AE%9A%E4%BD%8D.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%86%E9%A2%9C%E8%89%B2%E4%B8%8E%E5%BD%A2%E7%8A%B6-%E4%BC%9A%E6%8C%89%E8%A1%8C%E5%88%97%E5%AE%9A%E4%BD%8D-pron-262410bfabf5.mp3"
     },
     {
       "id": "hint-每一行颜色相同",
       "kind": "hint",
       "text": "每一行颜色相同。",
+      "spokenText": "每一航颜色相同。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E6%AF%8F%E4%B8%80%E8%A1%8C%E9%A2%9C%E8%89%B2%E7%9B%B8%E5%90%8C.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E6%AF%8F%E4%B8%80%E8%A1%8C%E9%A2%9C%E8%89%B2%E7%9B%B8%E5%90%8C-pron-258017f774b5.mp3"
     },
     {
       "id": "hint-同一行的颜色保持不变-同一列的形状也保持不变",
       "kind": "hint",
       "text": "同一行的颜色保持不变，同一列的形状也保持不变。",
+      "spokenText": "同一航的颜色保持不变，同一列的形状也保持不变。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E5%90%8C%E4%B8%80%E8%A1%8C%E7%9A%84%E9%A2%9C%E8%89%B2%E4%BF%9D%E6%8C%81%E4%B8%8D%E5%8F%98-%E5%90%8C%E4%B8%80%E5%88%97%E7%9A%84%E5%BD%A2%E7%8A%B6%E4%B9%9F%E4%BF%9D%E6%8C%81%E4%B8%8D%E5%8F%98.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E5%90%8C%E4%B8%80%E8%A1%8C%E7%9A%84%E9%A2%9C%E8%89%B2%E4%BF%9D%E6%8C%81%E4%B8%8D%E5%8F%98-%E5%90%8C%E4%B8%80%E5%88%97%E7%9A%84%E5%BD%A2%E7%8A%B6%E4%B9%9F%E4%BF%9D%E6%8C%81%E4%B8%8D%E5%8F%98-pron-8e0b707a1f31.mp3"
     },
     {
       "id": "clue-每一行颜色相同",
       "kind": "clue",
       "text": "每一行颜色相同。",
+      "spokenText": "每一航颜色相同。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E6%AF%8F%E4%B8%80%E8%A1%8C%E9%A2%9C%E8%89%B2%E7%9B%B8%E5%90%8C.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E6%AF%8F%E4%B8%80%E8%A1%8C%E9%A2%9C%E8%89%B2%E7%9B%B8%E5%90%8C-pron-8908abe1061d.mp3"
     },
     {
       "id": "clue-从左到右依次是圆-方-三角",
@@ -23654,9 +23796,10 @@
       "id": "prompt-把每行每列的规律补完整-选图卡-点问号格放进去-图卡可以重复用-每一行颜色相同-从左到右依次是方-三角-圆",
       "kind": "prompt",
       "text": "把每行每列的规律补完整。选图卡，点问号格放进去。图卡可以重复用。每一行颜色相同。从左到右依次是方、三角、圆。",
+      "spokenText": "把每航每列的规律补完整。选图卡，点问号格放进去。图卡可以重复用。每一航颜色相同。从左到右依次是方、三角、圆。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8A%8A%E6%AF%8F%E8%A1%8C%E6%AF%8F%E5%88%97%E7%9A%84%E8%A7%84%E5%BE%8B%E8%A1%A5%E5%AE%8C%E6%95%B4-%E9%80%89%E5%9B%BE%E5%8D%A1-%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8-%E6%AF%8F%E4%B8%80%E8%A1%8C%E9%A2%9C%E8%89%B2%E7%9B%B8%E5%90%8C-%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E4%BE%9D%E6%AC%A1%E6%98%AF%E6%96%B9-%E4%B8%89%E8%A7%92-%E5%9C%86.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8A%8A%E6%AF%8F%E8%A1%8C%E6%AF%8F%E5%88%97%E7%9A%84%E8%A7%84%E5%BE%8B%E8%A1%A5%E5%AE%8C%E6%95%B4-%E9%80%89%E5%9B%BE%E5%8D%A1-%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8-%E6%AF%8F%E4%B8%80%E8%A1%8C%E9%A2%9C%E8%89%B2%E7%9B%B8%E5%90%8C-%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E4%BE%9D%E6%AC%A1%E6%98%AF%E6%96%B9-%E4%B8%89%E8%A7%92-%E5%9C%86-pron-8c73f7f2baf1.mp3"
     },
     {
       "id": "clue-从左到右依次是方-三角-圆",
@@ -23670,9 +23813,10 @@
       "id": "prompt-把每行每列的规律补完整-选图卡-点问号格放进去-图卡可以重复用-每一行颜色相同-从左到右依次是三角-圆-方",
       "kind": "prompt",
       "text": "把每行每列的规律补完整。选图卡，点问号格放进去。图卡可以重复用。每一行颜色相同。从左到右依次是三角、圆、方。",
+      "spokenText": "把每航每列的规律补完整。选图卡，点问号格放进去。图卡可以重复用。每一航颜色相同。从左到右依次是三角、圆、方。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8A%8A%E6%AF%8F%E8%A1%8C%E6%AF%8F%E5%88%97%E7%9A%84%E8%A7%84%E5%BE%8B%E8%A1%A5%E5%AE%8C%E6%95%B4-%E9%80%89%E5%9B%BE%E5%8D%A1-%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8-%E6%AF%8F%E4%B8%80%E8%A1%8C%E9%A2%9C%E8%89%B2%E7%9B%B8%E5%90%8C-%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E4%BE%9D%E6%AC%A1%E6%98%AF%E4%B8%89%E8%A7%92-%E5%9C%86-%E6%96%B9.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8A%8A%E6%AF%8F%E8%A1%8C%E6%AF%8F%E5%88%97%E7%9A%84%E8%A7%84%E5%BE%8B%E8%A1%A5%E5%AE%8C%E6%95%B4-%E9%80%89%E5%9B%BE%E5%8D%A1-%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8-%E6%AF%8F%E4%B8%80%E8%A1%8C%E9%A2%9C%E8%89%B2%E7%9B%B8%E5%90%8C-%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E4%BE%9D%E6%AC%A1%E6%98%AF%E4%B8%89%E8%A7%92-%E5%9C%86-%E6%96%B9-pron-10316639de92.mp3"
     },
     {
       "id": "clue-从左到右依次是三角-圆-方",
@@ -23686,17 +23830,19 @@
       "id": "prompt-把每行每列的规律补完整-选图卡-点问号格放进去-图卡可以重复用-每一行颜色相同-从左到右依次是圆-方-三角-从上到下依次是红-蓝-黄",
       "kind": "prompt",
       "text": "把每行每列的规律补完整。选图卡，点问号格放进去。图卡可以重复用。每一行颜色相同。从左到右依次是圆、方、三角。从上到下依次是红、蓝、黄。",
+      "spokenText": "把每航每列的规律补完整。选图卡，点问号格放进去。图卡可以重复用。每一航颜色相同。从左到右依次是圆、方、三角。从上到下依次是红、蓝、黄。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8A%8A%E6%AF%8F%E8%A1%8C%E6%AF%8F%E5%88%97%E7%9A%84%E8%A7%84%E5%BE%8B%E8%A1%A5%E5%AE%8C%E6%95%B4-%E9%80%89%E5%9B%BE%E5%8D%A1-%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8-%E6%AF%8F%E4%B8%80%E8%A1%8C%E9%A2%9C%E8%89%B2%E7%9B%B8%E5%90%8C-%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E4%BE%9D%E6%AC%A1%E6%98%AF%E5%9C%86-%E6%96%B9-%E4%B8%89%E8%A7%92-%E4%BB%8E%E4%B8%8A%E5%88%B0%E4%B8%8B%E4%BE%9D%E6%AC%A1%E6%98%AF%E7%BA%A2-%E8%93%9D-%E9%BB%84.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8A%8A%E6%AF%8F%E8%A1%8C%E6%AF%8F%E5%88%97%E7%9A%84%E8%A7%84%E5%BE%8B%E8%A1%A5%E5%AE%8C%E6%95%B4-%E9%80%89%E5%9B%BE%E5%8D%A1-%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8-%E6%AF%8F%E4%B8%80%E8%A1%8C%E9%A2%9C%E8%89%B2%E7%9B%B8%E5%90%8C-%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E4%BE%9D%E6%AC%A1%E6%98%AF%E5%9C%86-%E6%96%B9-%E4%B8%89%E8%A7%92-%E4%BB%8E%E4%B8%8A%E5%88%B0%E4%B8%8B-pron-538a8e2715db.mp3"
     },
     {
       "id": "parent-能按颜色行次序和形状列次序交叉取值",
       "kind": "parent",
       "text": "能按颜色行次序和形状列次序交叉取值",
+      "spokenText": "能按颜色航次序和形状列次序交叉取值",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%83%BD%E6%8C%89%E9%A2%9C%E8%89%B2%E8%A1%8C%E6%AC%A1%E5%BA%8F%E5%92%8C%E5%BD%A2%E7%8A%B6%E5%88%97%E6%AC%A1%E5%BA%8F%E4%BA%A4%E5%8F%89%E5%8F%96%E5%80%BC.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%83%BD%E6%8C%89%E9%A2%9C%E8%89%B2%E8%A1%8C%E6%AC%A1%E5%BA%8F%E5%92%8C%E5%BD%A2%E7%8A%B6%E5%88%97%E6%AC%A1%E5%BA%8F%E4%BA%A4%E5%8F%89%E5%8F%96%E5%80%BC-pron-d4e863e44a88.mp3"
     },
     {
       "id": "clue-从上到下依次是红-蓝-黄",
@@ -23710,17 +23856,19 @@
       "id": "prompt-把每行每列的规律补完整-选图卡-点问号格放进去-图卡可以重复用-每一行颜色相同-从左到右依次是方-三角-圆-从上到下依次是红-蓝-黄",
       "kind": "prompt",
       "text": "把每行每列的规律补完整。选图卡，点问号格放进去。图卡可以重复用。每一行颜色相同。从左到右依次是方、三角、圆。从上到下依次是红、蓝、黄。",
+      "spokenText": "把每航每列的规律补完整。选图卡，点问号格放进去。图卡可以重复用。每一航颜色相同。从左到右依次是方、三角、圆。从上到下依次是红、蓝、黄。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8A%8A%E6%AF%8F%E8%A1%8C%E6%AF%8F%E5%88%97%E7%9A%84%E8%A7%84%E5%BE%8B%E8%A1%A5%E5%AE%8C%E6%95%B4-%E9%80%89%E5%9B%BE%E5%8D%A1-%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8-%E6%AF%8F%E4%B8%80%E8%A1%8C%E9%A2%9C%E8%89%B2%E7%9B%B8%E5%90%8C-%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E4%BE%9D%E6%AC%A1%E6%98%AF%E6%96%B9-%E4%B8%89%E8%A7%92-%E5%9C%86-%E4%BB%8E%E4%B8%8A%E5%88%B0%E4%B8%8B%E4%BE%9D%E6%AC%A1%E6%98%AF%E7%BA%A2-%E8%93%9D-%E9%BB%84.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8A%8A%E6%AF%8F%E8%A1%8C%E6%AF%8F%E5%88%97%E7%9A%84%E8%A7%84%E5%BE%8B%E8%A1%A5%E5%AE%8C%E6%95%B4-%E9%80%89%E5%9B%BE%E5%8D%A1-%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8-%E6%AF%8F%E4%B8%80%E8%A1%8C%E9%A2%9C%E8%89%B2%E7%9B%B8%E5%90%8C-%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E4%BE%9D%E6%AC%A1%E6%98%AF%E6%96%B9-%E4%B8%89%E8%A7%92-%E5%9C%86-%E4%BB%8E%E4%B8%8A%E5%88%B0%E4%B8%8B-pron-8865f1d3798b.mp3"
     },
     {
       "id": "prompt-把每行每列的规律补完整-选图卡-点问号格放进去-图卡可以重复用-每一行颜色相同-从左到右依次是三角-圆-方-从上到下依次是红-蓝-黄",
       "kind": "prompt",
       "text": "把每行每列的规律补完整。选图卡，点问号格放进去。图卡可以重复用。每一行颜色相同。从左到右依次是三角、圆、方。从上到下依次是红、蓝、黄。",
+      "spokenText": "把每航每列的规律补完整。选图卡，点问号格放进去。图卡可以重复用。每一航颜色相同。从左到右依次是三角、圆、方。从上到下依次是红、蓝、黄。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8A%8A%E6%AF%8F%E8%A1%8C%E6%AF%8F%E5%88%97%E7%9A%84%E8%A7%84%E5%BE%8B%E8%A1%A5%E5%AE%8C%E6%95%B4-%E9%80%89%E5%9B%BE%E5%8D%A1-%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8-%E6%AF%8F%E4%B8%80%E8%A1%8C%E9%A2%9C%E8%89%B2%E7%9B%B8%E5%90%8C-%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E4%BE%9D%E6%AC%A1%E6%98%AF%E4%B8%89%E8%A7%92-%E5%9C%86-%E6%96%B9-%E4%BB%8E%E4%B8%8A%E5%88%B0%E4%B8%8B%E4%BE%9D%E6%AC%A1%E6%98%AF%E7%BA%A2-%E8%93%9D-%E9%BB%84.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8A%8A%E6%AF%8F%E8%A1%8C%E6%AF%8F%E5%88%97%E7%9A%84%E8%A7%84%E5%BE%8B%E8%A1%A5%E5%AE%8C%E6%95%B4-%E9%80%89%E5%9B%BE%E5%8D%A1-%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8-%E6%AF%8F%E4%B8%80%E8%A1%8C%E9%A2%9C%E8%89%B2%E7%9B%B8%E5%90%8C-%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E4%BE%9D%E6%AC%A1%E6%98%AF%E4%B8%89%E8%A7%92-%E5%9C%86-%E6%96%B9-%E4%BB%8E%E4%B8%8A%E5%88%B0%E4%B8%8B-pron-3f034f99ac6f.mp3"
     },
     {
       "id": "parent-能连续填写并回看5空",
@@ -26494,9 +26642,10 @@
       "id": "prompt-照着参照图-把蓝格和空白格都摆出来-选图卡-点问号格放进去-图卡可以重复用-按行找位置-模型会一直保留",
       "kind": "prompt",
       "text": "照着参照图，把蓝格和空白格都摆出来。选图卡，点问号格放进去。图卡可以重复用。按行找位置，模型会一直保留。",
+      "spokenText": "照着参照图，把蓝格和空白格都摆出来。选图卡，点问号格放进去。图卡可以重复用。按航找位置，模型会一直保留。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%85%A7%E7%9D%80%E5%8F%82%E7%85%A7%E5%9B%BE-%E6%8A%8A%E8%93%9D%E6%A0%BC%E5%92%8C%E7%A9%BA%E7%99%BD%E6%A0%BC%E9%83%BD%E6%91%86%E5%87%BA%E6%9D%A5-%E9%80%89%E5%9B%BE%E5%8D%A1-%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8-%E6%8C%89%E8%A1%8C%E6%89%BE%E4%BD%8D%E7%BD%AE-%E6%A8%A1%E5%9E%8B%E4%BC%9A%E4%B8%80%E7%9B%B4%E4%BF%9D%E7%95%99.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%85%A7%E7%9D%80%E5%8F%82%E7%85%A7%E5%9B%BE-%E6%8A%8A%E8%93%9D%E6%A0%BC%E5%92%8C%E7%A9%BA%E7%99%BD%E6%A0%BC%E9%83%BD%E6%91%86%E5%87%BA%E6%9D%A5-%E9%80%89%E5%9B%BE%E5%8D%A1-%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8-%E6%8C%89%E8%A1%8C%E6%89%BE%E4%BD%8D%E7%BD%AE-%E6%A8%A1%E5%9E%8B%E4%BC%9A%E4%B8%80%E7%9B%B4%E4%BF%9D%E7%95%99-pron-0c1c7a19ca11.mp3"
     },
     {
       "id": "success-每个格位都要对应-空白也是图案的一部分",
@@ -26510,17 +26659,19 @@
       "id": "parent-能逐行定位且把空白当需填写内容",
       "kind": "parent",
       "text": "能逐行定位且把空白当需填写内容",
+      "spokenText": "能逐航定位且把空白当需填写内容",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%83%BD%E9%80%90%E8%A1%8C%E5%AE%9A%E4%BD%8D%E4%B8%94%E6%8A%8A%E7%A9%BA%E7%99%BD%E5%BD%93%E9%9C%80%E5%A1%AB%E5%86%99%E5%86%85%E5%AE%B9.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%83%BD%E9%80%90%E8%A1%8C%E5%AE%9A%E4%BD%8D%E4%B8%94%E6%8A%8A%E7%A9%BA%E7%99%BD%E5%BD%93%E9%9C%80%E5%A1%AB%E5%86%99%E5%86%85%E5%AE%B9-pron-1e78329e6c3f.mp3"
     },
     {
       "id": "hint-按行找位置-模型会一直保留",
       "kind": "hint",
       "text": "按行找位置，模型会一直保留。",
+      "spokenText": "按航找位置，模型会一直保留。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E6%8C%89%E8%A1%8C%E6%89%BE%E4%BD%8D%E7%BD%AE-%E6%A8%A1%E5%9E%8B%E4%BC%9A%E4%B8%80%E7%9B%B4%E4%BF%9D%E7%95%99.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E6%8C%89%E8%A1%8C%E6%89%BE%E4%BD%8D%E7%BD%AE-%E6%A8%A1%E5%9E%8B%E4%BC%9A%E4%B8%80%E7%9B%B4%E4%BF%9D%E7%95%99-pron-22eadb52d91b.mp3"
     },
     {
       "id": "hint-每个格位都要对应-空白也是图案的一部分",
@@ -26534,9 +26685,10 @@
       "id": "clue-按行找位置-模型会一直保留",
       "kind": "clue",
       "text": "按行找位置，模型会一直保留。",
+      "spokenText": "按航找位置，模型会一直保留。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E6%8C%89%E8%A1%8C%E6%89%BE%E4%BD%8D%E7%BD%AE-%E6%A8%A1%E5%9E%8B%E4%BC%9A%E4%B8%80%E7%9B%B4%E4%BF%9D%E7%95%99.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E6%8C%89%E8%A1%8C%E6%89%BE%E4%BD%8D%E7%BD%AE-%E6%A8%A1%E5%9E%8B%E4%BC%9A%E4%B8%80%E7%9B%B4%E4%BF%9D%E7%95%99-pron-2359c82ac4d6.mp3"
     },
     {
       "id": "object-空白格",
@@ -26558,9 +26710,10 @@
       "id": "parent-能在4-4保持行列对应",
       "kind": "parent",
       "text": "能在4×4保持行列对应",
+      "spokenText": "能在4×4保持航列对应",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%83%BD%E5%9C%A84-4%E4%BF%9D%E6%8C%81%E8%A1%8C%E5%88%97%E5%AF%B9%E5%BA%94.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%83%BD%E5%9C%A84-4%E4%BF%9D%E6%8C%81%E8%A1%8C%E5%88%97%E5%AF%B9%E5%BA%94-pron-45ab1bce9fb9.mp3"
     },
     {
       "id": "prompt-把参照图左右翻过来-摆进方格里-选图卡-点问号格放进去-图卡可以重复用-左右反过来-上下不变",
@@ -27486,25 +27639,28 @@
       "id": "success-一行一行检查-选过的再对照规则看一次-这里不比谁快",
       "kind": "success",
       "text": "一行一行检查，选过的再对照规则看一次。这里不比谁快。",
+      "spokenText": "一航一航检查，选过的再对照规则看一次。这里不比谁快。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E4%B8%80%E8%A1%8C%E4%B8%80%E8%A1%8C%E6%A3%80%E6%9F%A5-%E9%80%89%E8%BF%87%E7%9A%84%E5%86%8D%E5%AF%B9%E7%85%A7%E8%A7%84%E5%88%99%E7%9C%8B%E4%B8%80%E6%AC%A1-%E8%BF%99%E9%87%8C%E4%B8%8D%E6%AF%94%E8%B0%81%E5%BF%AB.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E4%B8%80%E8%A1%8C%E4%B8%80%E8%A1%8C%E6%A3%80%E6%9F%A5-%E9%80%89%E8%BF%87%E7%9A%84%E5%86%8D%E5%AF%B9%E7%85%A7%E8%A7%84%E5%88%99%E7%9C%8B%E4%B8%80%E6%AC%A1-%E8%BF%99%E9%87%8C%E4%B8%8D%E6%AF%94%E8%B0%81%E5%BF%AB-pron-2fc68a70a374.mp3"
     },
     {
       "id": "parent-能识一种目标形状并逐行搜索",
       "kind": "parent",
       "text": "能识一种目标形状并逐行搜索",
+      "spokenText": "能识一种目标形状并逐航搜索",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%83%BD%E8%AF%86%E4%B8%80%E7%A7%8D%E7%9B%AE%E6%A0%87%E5%BD%A2%E7%8A%B6%E5%B9%B6%E9%80%90%E8%A1%8C%E6%90%9C%E7%B4%A2.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%83%BD%E8%AF%86%E4%B8%80%E7%A7%8D%E7%9B%AE%E6%A0%87%E5%BD%A2%E7%8A%B6%E5%B9%B6%E9%80%90%E8%A1%8C%E6%90%9C%E7%B4%A2-pron-ca6b282cb035.mp3"
     },
     {
       "id": "hint-一行一行检查-选过的再对照规则看一次-这里不比谁快",
       "kind": "hint",
       "text": "一行一行检查，选过的再对照规则看一次。这里不比谁快。",
+      "spokenText": "一航一航检查，选过的再对照规则看一次。这里不比谁快。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E4%B8%80%E8%A1%8C%E4%B8%80%E8%A1%8C%E6%A3%80%E6%9F%A5-%E9%80%89%E8%BF%87%E7%9A%84%E5%86%8D%E5%AF%B9%E7%85%A7%E8%A7%84%E5%88%99%E7%9C%8B%E4%B8%80%E6%AC%A1-%E8%BF%99%E9%87%8C%E4%B8%8D%E6%AF%94%E8%B0%81%E5%BF%AB.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E4%B8%80%E8%A1%8C%E4%B8%80%E8%A1%8C%E6%A3%80%E6%9F%A5-%E9%80%89%E8%BF%87%E7%9A%84%E5%86%8D%E5%AF%B9%E7%85%A7%E8%A7%84%E5%88%99%E7%9C%8B%E4%B8%80%E6%AC%A1-%E8%BF%99%E9%87%8C%E4%B8%8D%E6%AF%94%E8%B0%81%E5%BF%AB-pron-ae53b39279c2.mp3"
     },
     {
       "id": "object-第1张",

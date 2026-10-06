@@ -4,6 +4,7 @@ import { loadGameData } from "./lib/load-game-data.mjs";
 import { loadTypeScriptModule } from "./lib/load-ts-module.mjs";
 
 const { games, activitySets, activityVoiceLines } = await loadGameData();
+const { prepareSpeechText } = await loadTypeScriptModule("src/speech-pronunciation.ts");
 
 const tokenLabels = {
   "🍓": "草莓",
@@ -112,6 +113,7 @@ function add(kind, text, context, locale="zh-CN") {
   const clean = text.replace(/\s+/g, " ").trim();
   if (!clean) return;
   const key = `${kind}:${locale}:${clean}`;
+  const spokenText = prepareSpeechText(clean, locale);
   if (!lines.has(key)) {
     let id=slug(`${kind}-${clean}`).slice(0,80);
     if(usedIds.has(id)&&usedIds.get(id)!==key)id+='-'+createHash('sha256').update(key).digest('hex').slice(0,10);
@@ -120,6 +122,7 @@ function add(kind, text, context, locale="zh-CN") {
       id,
       kind,
       text: clean,
+      ...(spokenText !== clean ? { spokenText } : {}),
       locale,
       tone: kind === "success" ? "warm, delighted, clear" : kind === "retry" ? "gentle, encouraging, slow" : "friendly, clear, playful",
       contexts: [],

@@ -4,6 +4,10 @@ import { loadGameData } from "./lib/load-game-data.mjs";
 import { auditActivityCurriculum } from "./lib/audit-activity-curriculum.mjs";
 import { inspectVoiceMedia } from "./lib/voice-media-quality.mjs";
 import { collectIllustrationUsage } from "./lib/illustration-usage.mjs";
+import { loadTypeScriptModule } from "./lib/load-ts-module.mjs";
+import { voiceFileName } from "./lib/voice-rendering.mjs";
+
+const { prepareSpeechText } = await loadTypeScriptModule("src/speech-pronunciation.ts");
 
 const indexHtml = readFileSync("index.html", "utf8");
 const appSource = readFileSync("src/App.tsx", "utf8");
@@ -503,6 +507,18 @@ if (existsSync("public/audio/voice/manifest.json")) {
         );
       }
       const manifestEntryById = new Map(manifest.entries.map((entry) => [entry.id, entry]));
+      for (const line of voiceLineData.lines) {
+        const expected = prepareSpeechText(line.text, line.locale);
+        const entry = manifestEntryById.get(line.id);
+        if ((line.spokenText ?? line.text) !== expected) problems.push(`voice line pronunciation input is stale: ${line.id}`);
+        if (!entry) continue;
+        if (entry.text !== line.text || (entry.locale ?? "zh-CN") !== (line.locale ?? "zh-CN")) problems.push(`voice lookup text/locale mismatch: ${line.id}`);
+        if ((entry.spokenText ?? entry.text) !== expected) problems.push(`voice manifest pronunciation input is stale: ${line.id}`);
+        if (expected !== line.text) {
+          const expectedFile = voiceFileName({ ...line, spokenText: expected }, { voice: entry.voice ?? manifest.voice, rate: manifest.rate, pitch: manifest.pitch });
+          if (decodeURIComponent(entry.src?.split("/").pop() ?? "") !== expectedFile) problems.push(`voice clip does not identify current pronunciation input: ${line.id}`);
+        }
+      }
       const nonStandardCoreVoiceLines = voiceLineData.lines.filter((line) => {
         const entry = manifestEntryById.get(line.id);
         return (
@@ -527,6 +543,7 @@ if (existsSync("public/audio/voice/manifest.json")) {
       } else {
         for (const entry of manifest.segmentEntries) {
           if (!entry.text?.trim()) problems.push(`audio segment entry missing text: ${entry.id ?? "unknown"}`);
+          else if ((entry.spokenText ?? entry.text) !== prepareSpeechText(entry.text, entry.locale)) problems.push(`audio segment pronunciation input is stale: ${entry.id ?? "unknown"}`);
           if (!Array.isArray(entry.srcs) || entry.srcs.length === 0) {
             problems.push(`audio segment entry missing srcs: ${entry.id ?? entry.text ?? "unknown"}`);
             continue;

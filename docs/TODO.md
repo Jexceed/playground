@@ -45,6 +45,9 @@ small enough to turn into a Spec Kit feature.
 - Close the original-task mapping chain and remaining source reading/listening boundaries (T127). The confirmed eight missing branches and nine partial groups are a lower bound, not an exhaustive missing-task count.
 - Calibrate the new design-load descriptors from real parent-child observations (T112). The 71 explicit profiles are engineering estimates, not an age or mastery score.
 - Perform real acoustic review of all distinct local voice lines by locale, especially English and Chinese numbers/polyphonic words/long instructions (T129). Media integrity and playback completion are not pronunciation or prosody checks.
+  Start with `042-row-pronunciation/verification/after-rows.mp3`, `after-letter.mp3`
+  and `after-matrix.mp3`: row-context synthesis input and the installed pack are
+  corrected, but human listening confirmation of these samples remains pending.
 - Keep T130's other-device scope separate from the current Mac acceptance in 034; do not close its 375px/other-window checks from the Mac-size browser pass.
 
 - Run at least five observed parent-child Math Island sessions; require four

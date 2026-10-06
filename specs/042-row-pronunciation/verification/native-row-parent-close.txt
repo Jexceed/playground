@@ -1,0 +1,108 @@
+Window: "小小思考屋", App: 小小思考屋.
+0 standard window 小小思考屋, Secondary Actions: Raise
+	1 scroll area
+		2 HTML content Description: 小小思考屋, URL: tauri://localhost
+			3 container
+				4 container 主题地图
+					5 image 小小思考屋 亲子思维游戏
+					6 container 选择启蒙或探索
+						7 toggle button 启蒙, Value: on
+						8 toggle button 探索, Value: off
+					9 button (collapsed) 数字岛 122 题, Secondary Actions: Expand
+					10 button (expanded) 逻辑屋 规律、顺序、规则、计划 319 题, Secondary Actions: Collapse
+					11 button (collapsed) 图形工坊 48 题, Secondary Actions: Expand
+					12 container 关卡列表
+						13 container
+							14 text 启蒙  ·  逻辑屋
+						15 text 26  个
+						16 search text field (settable) 查找当前主题题组, Placeholder: 查找题组
+							17 text 查找题组
+						18 button 找规律火车 18 题
+						19 button 会变规则的分类机 11 题
+						20 button 停一下再行动 6 题
+						21 button 先做什么 24 题
+						22 button 故事和线索 7 题
+						23 button 条件小侦探 12 题
+						24 button 错了怎么改 12 题
+						25 button 先处理哪一个 12 题
+						26 button 按规则装书包 14 题
+						27 button 谁和谁一对 16 题
+						28 button 桥怎么搭 8 题
+						29 button 同类小侦探 12 题
+						30 button 数字规律小路 15 题
+						31 button 地图找宝物 12 题
+						32 button 图形补一补 6 题
+						33 button 方位小地图 12 题
+						34 button 记忆小相机 12 题
+						35 button 一模一样在哪里 12 题
+						36 button 找不同侦探 12 题
+						37 button 转一转方向 12 题
+						38 button 图卡少哪张 12 题
+						39 button 天平换一换 10 题
+						40 button 镜子折一折 12 题
+						41 button 积木楼层图 12 题
+						42 button 从哪边看 18 题
+						43 button 路线听指令 10 题
+				44 container 当前部分
+					45 text 启蒙
+					46 text 看图发现，轻松起步 40  组 ·  489  题
+				47 container 图形补一补
+					48 container
+						49 text 第  1  /  6  题 ·
+						50 container 难度 L5，较难：需要抗干扰、换角度或同时比较两个特征。 在 3 行图形表里横向找规律，再纵向检查。主要训练二维规律、图形组合。, Help: 难度判定：较难：需要抗干扰、换角度或同时比较两个特征。 在 3 行图形表里横向找规律，再纵向检查。主要训练二维规律、图形组合。
+							51 text 难度
+							52 text L5
+					53 heading 空格里应该放什么？, Value: 3
+						54 text 空格里应该放什么？
+					55 text 先读完整的第一行，再用同样规则补第三行。
+					56 button 听题
+					57 container 题目画面
+						58 container 图形规律表
+							59 button 红色圆片
+							60 button 蓝色圆片
+							61 button 红色圆片、蓝色圆片
+							62 button 黄色圆片
+							63 button 绿色圆片
+							64 button 黄色圆片、绿色圆片
+							65 button 紫色圆片
+							66 button 红色圆片
+							67 button 待补位置
+					68 button 红色圆片、蓝色圆片
+					69 button 紫色圆片、红色圆片
+					70 button 黄色圆片、绿色圆片
+					71 button 从头来
+					72 button (disabled) 看看对不对
+				73 container 题目导航
+					74 text 题目导航
+					75 text 0  /  6  已做
+					76 button 跳到第 1 题
+					77 button 跳到第 2 题
+					78 button 跳到第 3 题
+					79 button 跳到第 4 题
+					80 button 跳到第 5 题
+					81 button 跳到第 6 题
+				82 container (expanded) Secondary Actions: Collapse
+					83 text 亲子提示卡
+					84 text 问她：这一行少了什么？这一列有没有同样的办法？
+					85 summary 本题追问, Value: off
+						86 text 本题追问
+				87 container (expanded) Secondary Actions: Collapse
+					88 container
+						89 text 启蒙 成长记录
+					90 button 清空启蒙记录
+					91 container
+						92 text 已完成  273  /  489  题
+					93 text 模式识别 预测 证据推理 排除法 解释理由 影子配对 轮廓抽象 近似排除 抗颜色干扰 遮挡还原 可见线索 局部找整体 还有  97  个
+	94 close button
+	95 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	96 minimize button
+	97 text 小小思考屋
+98 menu bar
+	99 小小思考屋
+	100 File
+	101 Edit
+	102 View
+	103 Window
+	104 Help
+
+The focused UI element is 85 summary 本题追问, Value: off

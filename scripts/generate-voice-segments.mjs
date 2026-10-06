@@ -3,6 +3,9 @@ import { existsSync, mkdirSync, readFileSync, rmSync, statSync, writeFileSync } 
 import { basename, join } from "node:path";
 import { tmpdir } from "node:os";
 import { spawnFile } from "./lib/spawn-file.mjs";
+import { loadTypeScriptModule } from "./lib/load-ts-module.mjs";
+
+const { prepareSpeechText } = await loadTypeScriptModule("src/speech-pronunciation.ts");
 
 const args = parseArgs(process.argv.slice(2));
 const threshold = Number(args.threshold ?? 34);
@@ -16,7 +19,7 @@ const voiceKey = slug(`edge-${voice}`);
 const outputDir = join("public", "audio", "voice", "zh-CN", `${voiceKey}-segments`);
 const manifestPath = join("public", "audio", "voice", "manifest.json");
 const manifest = JSON.parse(readFileSync(manifestPath, "utf8"));
-const longEntries = (manifest.entries ?? []).filter((entry) => entry.kind === "prompt" && Array.from(entry.text ?? "").length > threshold);
+const longEntries = (manifest.entries ?? []).filter((entry) => (entry.locale ?? "zh-CN") === "zh-CN" && entry.kind === "prompt" && Array.from(entry.text ?? "").length > threshold);
 
 mkdirSync(outputDir, { recursive: true });
 
@@ -57,12 +60,14 @@ for (const [index, chunk] of uniqueChunks(longEntries).entries()) {
 
 const segmentEntries = [];
 for (const entry of longEntries) {
-  const chunks = splitSpeechText(entry.text);
+  const spokenText = prepareSpeechText(entry.text, entry.locale);
+  const chunks = splitSpeechText(spokenText);
   const srcs = chunks.map((chunk) => chunkToSrc.get(chunk)).filter(Boolean);
   if (srcs.length === chunks.length) {
     segmentEntries.push({
       id: `segments-${entry.id}`,
       text: entry.text,
+      ...(spokenText !== entry.text ? { spokenText } : {}),
       srcs,
     });
   }
@@ -93,7 +98,7 @@ console.log(
 function uniqueChunks(entries) {
   const chunks = new Set();
   for (const entry of entries) {
-    for (const chunk of splitSpeechText(entry.text)) chunks.add(chunk);
+    for (const chunk of splitSpeechText(prepareSpeechText(entry.text, entry.locale))) chunks.add(chunk);
   }
   return Array.from(chunks);
 }

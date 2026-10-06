@@ -1,4 +1,5 @@
 import { publicAsset } from "./publicAsset";
+import { prepareSpeechText } from "./speech-pronunciation";
 
 const voiceMap: Record<string, string> = {};
 const voiceSegments: Record<string, string[]> = {};
@@ -62,7 +63,7 @@ export async function speak(text: string, lang = "zh-CN") {
       fellBack = true;
       recordSpeechFallback(reason);
       recordSpeechSource("speechSynthesis");
-      void speakChunks(splitSpeechText(clean), lang, run);
+      void speakChunks(splitSpeechText(clean, lang), lang, run);
     };
     activeAudio = audio;
     audio.volume = 0.9;
@@ -78,7 +79,7 @@ export async function speak(text: string, lang = "zh-CN") {
   if ("speechSynthesis" in window) {
     recordSpeechFallback(src ? "local-audio-skipped" : "no-local-audio");
     recordSpeechSource("speechSynthesis");
-    void speakChunks(splitSpeechText(clean), lang, run);
+    void speakChunks(splitSpeechText(clean, lang), lang, run);
     return;
   }
 
@@ -249,8 +250,8 @@ function normalizeSpeechText(text: string) {
     .trim();
 }
 
-function splitSpeechText(text: string) {
-  const parts = text
+function splitSpeechText(text: string, lang = "zh-CN") {
+  const parts = prepareSpeechText(text, lang)
     .split(/(?<=[。？！])|(?<=[，、：；])/u)
     .map((part) => part.trim())
     .filter(Boolean);
@@ -284,7 +285,7 @@ async function speakChunks(parts: string[], lang: string, run: number) {
 
 function speakOnce(text: string, lang: string, run: number) {
   return new Promise<void>((resolve) => {
-    const utterance = new SpeechSynthesisUtterance(text);
+    const utterance = new SpeechSynthesisUtterance(prepareSpeechText(text, lang));
     utterance.lang = lang;
     utterance.rate = text.length <= 4 ? 0.78 : 0.84;
     utterance.pitch = 1.08;

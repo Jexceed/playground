@@ -3,6 +3,14 @@
 All meaningful project changes should be recorded here. Keep entries factual and
 grouped by date.
 
+## 2026-10-06
+
+### Context-specific pronunciation for 行
+
+- Reviewed all 182 exported lines containing 行. Added speech-only hang2 preparation for 156 row/column lines (including numbered rows, A/B rows, whole rows and row/column rules), while preserving 26 lines containing xing meanings such as 行动、执行、自行车、平行 and 可行. Display text, lookup text, IDs, questions and progress are unchanged.
+- Exported auditable spokenText metadata and regenerated the affected standard Edge clips under fingerprinted URLs so old pronunciation files cannot survive through generator/app cache reuse. Browser fallback and optional Chinese segmentation use the same preparation; audits reject stale metadata and filenames. The other 3887 clip URLs are retained, and the 26 protected xing clips are byte-identical.
+- Passed 34 regressions, curriculum audit, all 4043 media checks and production build. Installed the updated Applications app and exercised row-question/parent listening controls while preserving 273 enlightenment and 74 exploration completions. Provider remains Edge Xiaoxiao with zero failures and no macOS/mixed-local fallback. Actual audition samples are retained; human listening confirmation is pending, and media/native-button checks are not represented as acoustic proof. Evidence: specs/042-row-pronunciation/verification/qa.md.
+
 ## 2026-10-05
 
 ### Resume each question group

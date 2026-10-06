@@ -163,3 +163,10 @@ Deterministic diagram PNGs and source SVGs live in public/images/items/explorati
 - `pnpm generate:enlightenment-media` regenerates those assets. `imageGallery.ts` is their runtime registry. Partial-detail, aligned-layer and incomplete-contour tasks use explicit rendering geometry consistent with their answer pictures.
 - Decorative quantity/light backdrops are excluded from the question surface. A scene remains only where it supplies useful task evidence; omitted decorative assets are retained in the registry/source history.
 - The voice exporter now includes the actual enlightenment observation copy and all game-level parent guidance, as well as round-level guidance. Follow the standard Edge generation, orphan pruning with `--write`, and media audit before installation.
+
+## Speech pronunciation input (042)
+
+- `src/speech-pronunciation.ts` prepares Chinese speech input separately from display/lookup text. Reviewed row references use the unambiguous homophone 航 for hang2 during synthesis; 行动、执行、自行车、平行 and other protected xing words remain intact. Do not globally replace 行 in content.
+- `voice-lines.json` and `voice/manifest.json` keep original `text`/IDs and add optional `spokenText` only for corrected inputs. The original text remains the runtime key. Browser TTS fallback and optional Chinese prompt segmentation apply the same preparation before chunking.
+- Corrected clips use `scripts/lib/voice-rendering.mjs` to fingerprint text and voice settings into their filenames; unchanged clips retain existing URLs. Export first, then run standard Edge generation. The generator refuses stale exported pronunciation inputs; `audit:curriculum` checks original-text alignment, expected spokenText and current corrected filenames.
+- After generation, prune obsolete files with `pnpm prune:voice-assets -- --write`, then run curriculum/media audits and reinstall the Mac app. Preserve before/after audition samples separately from runtime assets; text/media correctness does not prove every spoken phoneme was heard.
