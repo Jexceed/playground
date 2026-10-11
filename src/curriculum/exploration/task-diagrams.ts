@@ -1,4 +1,14 @@
-import { picture, rect, line, circle, text, palette, type Primitive } from './draw';
+import { picture, rect, line, circle, text, palette, mosaic, viewingArrow, type Primitive } from './draw';
+
+/** Same row/column orientation as blocks(): front at the bottom, right side at the right. */
+export function solidTopView(heights: number[], columns: number) {
+  const drawing = mosaic(heights.map(n => Number(n > 0)), columns);
+  const objects = [...drawing.objects,
+    ...viewingArrow(drawing.width / 2, drawing.height + 17, drawing.width / 2, drawing.height - 12, '前', drawing.width / 2, drawing.height + 43, 32),
+    ...viewingArrow(drawing.width + 17, drawing.height / 2, drawing.width - 12, drawing.height / 2, '侧', drawing.width + 39, drawing.height / 2 + 10, 32),
+  ];
+  return picture(objects, drawing.width + 58, drawing.height + 58);
+}
 
 /** Top-down person: the head, hands and feet rotate with the same facing vector. */
 export function facingPerson(direction: number[], ballPosition: number[]) {

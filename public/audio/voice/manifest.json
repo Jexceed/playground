@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-10-06T00:45:43.746Z",
+  "generatedAt": "2026-10-11T02:23:44.400Z",
   "provider": "edge-tts Python package",
   "voice": "zh-CN-XiaoxiaoNeural",
   "rate": "-12%",
   "pitch": "+2Hz",
   "includeParent": true,
   "format": "mp3",
-  "count": 4043,
-  "requestedCount": 4043,
+  "count": 4055,
+  "requestedCount": 4055,
   "failures": [],
   "entries": [
     {
@@ -3731,20 +3731,28 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E4%B8%A4%E4%B8%AA%E6%9D%A1%E4%BB%B6%E9%83%BD%E8%A6%81%E7%9C%8B-%E7%BA%A2%E8%89%B2%E5%92%8C%E5%9C%86%E5%BD%A2%E9%83%BD%E5%AF%B9%E6%89%8D%E8%A1%8C.mp3"
     },
     {
-      "id": "parent-问她-哪一张两个条件都满足-哪一张只满足圆形-哪一张两个条件都不满足",
+      "id": "parent-问她-哪一张两个条件都满足-哪一张只满足红色-哪一张只满足圆形",
       "kind": "parent",
-      "text": "问她：哪一张两个条件都满足？哪一张只满足圆形？哪一张两个条件都不满足？",
+      "text": "问她：哪一张两个条件都满足？哪一张只满足红色？哪一张只满足圆形？",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E5%93%AA%E4%B8%80%E5%BC%A0%E4%B8%A4%E4%B8%AA%E6%9D%A1%E4%BB%B6%E9%83%BD%E6%BB%A1%E8%B6%B3-%E5%93%AA%E4%B8%80%E5%BC%A0%E5%8F%AA%E6%BB%A1%E8%B6%B3%E5%9C%86%E5%BD%A2-%E5%93%AA%E4%B8%80%E5%BC%A0%E4%B8%A4%E4%B8%AA%E6%9D%A1%E4%BB%B6%E9%83%BD%E4%B8%8D%E6%BB%A1%E8%B6%B3.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E5%93%AA%E4%B8%80%E5%BC%A0%E4%B8%A4%E4%B8%AA%E6%9D%A1%E4%BB%B6%E9%83%BD%E6%BB%A1%E8%B6%B3-%E5%93%AA%E4%B8%80%E5%BC%A0%E5%8F%AA%E6%BB%A1%E8%B6%B3%E7%BA%A2%E8%89%B2-%E5%93%AA%E4%B8%80%E5%BC%A0%E5%8F%AA%E6%BB%A1%E8%B6%B3%E5%9C%86%E5%BD%A2.mp3"
     },
     {
-      "id": "choice-蓝色方块",
+      "id": "choice-红色方块",
       "kind": "choice",
-      "text": "蓝色方块",
+      "text": "红色方块",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E8%93%9D%E8%89%B2%E6%96%B9%E5%9D%97.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E7%BA%A2%E8%89%B2%E6%96%B9%E5%9D%97.mp3"
+    },
+    {
+      "id": "object-红色方块",
+      "kind": "object",
+      "text": "红色方块",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E7%BA%A2%E8%89%B2%E6%96%B9%E5%9D%97.mp3"
     },
     {
       "id": "prompt-分类机要蓝色-也要方形-哪一张两个条件都对-两个条件都要满足-少一个都不行",
@@ -3771,12 +3779,20 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E4%B8%A4%E4%B8%AA%E6%9D%A1%E4%BB%B6%E9%83%BD%E8%A6%81%E7%9C%8B-%E8%93%9D%E8%89%B2%E5%92%8C%E6%96%B9%E5%BD%A2%E9%83%BD%E5%AF%B9%E6%89%8D%E8%A1%8C.mp3"
     },
     {
-      "id": "parent-问她-哪一张两个条件都满足-哪一张只满足颜色-哪一张两个条件都不满足",
+      "id": "parent-问她-哪一张两个条件都满足-哪一张只满足蓝色-哪一张只满足方形",
       "kind": "parent",
-      "text": "问她：哪一张两个条件都满足？哪一张只满足颜色？哪一张两个条件都不满足？",
+      "text": "问她：哪一张两个条件都满足？哪一张只满足蓝色？哪一张只满足方形？",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E5%93%AA%E4%B8%80%E5%BC%A0%E4%B8%A4%E4%B8%AA%E6%9D%A1%E4%BB%B6%E9%83%BD%E6%BB%A1%E8%B6%B3-%E5%93%AA%E4%B8%80%E5%BC%A0%E5%8F%AA%E6%BB%A1%E8%B6%B3%E9%A2%9C%E8%89%B2-%E5%93%AA%E4%B8%80%E5%BC%A0%E4%B8%A4%E4%B8%AA%E6%9D%A1%E4%BB%B6%E9%83%BD%E4%B8%8D%E6%BB%A1%E8%B6%B3.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E5%93%AA%E4%B8%80%E5%BC%A0%E4%B8%A4%E4%B8%AA%E6%9D%A1%E4%BB%B6%E9%83%BD%E6%BB%A1%E8%B6%B3-%E5%93%AA%E4%B8%80%E5%BC%A0%E5%8F%AA%E6%BB%A1%E8%B6%B3%E8%93%9D%E8%89%B2-%E5%93%AA%E4%B8%80%E5%BC%A0%E5%8F%AA%E6%BB%A1%E8%B6%B3%E6%96%B9%E5%BD%A2.mp3"
+    },
+    {
+      "id": "choice-蓝色方块",
+      "kind": "choice",
+      "text": "蓝色方块",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E8%93%9D%E8%89%B2%E6%96%B9%E5%9D%97.mp3"
     },
     {
       "id": "prompt-分类机要黄色-也要圆形-哪一张两个条件都对-两个条件都要满足-少一个都不行",
@@ -3801,6 +3817,30 @@
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E4%B8%A4%E4%B8%AA%E6%9D%A1%E4%BB%B6%E9%83%BD%E8%A6%81%E7%9C%8B-%E9%BB%84%E8%89%B2%E5%92%8C%E5%9C%86%E5%BD%A2%E9%83%BD%E5%AF%B9%E6%89%8D%E8%A1%8C.mp3"
+    },
+    {
+      "id": "parent-问她-哪一张两个条件都满足-哪一张只满足黄色-哪一张只满足圆形",
+      "kind": "parent",
+      "text": "问她：哪一张两个条件都满足？哪一张只满足黄色？哪一张只满足圆形？",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E5%93%AA%E4%B8%80%E5%BC%A0%E4%B8%A4%E4%B8%AA%E6%9D%A1%E4%BB%B6%E9%83%BD%E6%BB%A1%E8%B6%B3-%E5%93%AA%E4%B8%80%E5%BC%A0%E5%8F%AA%E6%BB%A1%E8%B6%B3%E9%BB%84%E8%89%B2-%E5%93%AA%E4%B8%80%E5%BC%A0%E5%8F%AA%E6%BB%A1%E8%B6%B3%E5%9C%86%E5%BD%A2.mp3"
+    },
+    {
+      "id": "choice-黄色方块",
+      "kind": "choice",
+      "text": "黄色方块",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E9%BB%84%E8%89%B2%E6%96%B9%E5%9D%97.mp3"
+    },
+    {
+      "id": "object-黄色方块",
+      "kind": "object",
+      "text": "黄色方块",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E9%BB%84%E8%89%B2%E6%96%B9%E5%9D%97.mp3"
     },
     {
       "id": "game-title-停一下再行动",
@@ -4427,84 +4467,84 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E9%AB%98%E5%A1%94.mp3"
     },
     {
-      "id": "prompt-玩具散了-想按种类收好-先做什么-按图卡从左到右-找出缺少的一步",
+      "id": "prompt-积木和小车散了-想按种类分开放进两个盒子-先做什么-按图卡从左到右-找出缺少的一步",
       "kind": "prompt",
-      "text": "玩具散了，想按种类收好，先做什么？按图卡从左到右，找出缺少的一步。",
+      "text": "积木和小车散了，想按种类分开放进两个盒子，先做什么？按图卡从左到右，找出缺少的一步。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%8E%A9%E5%85%B7%E6%95%A3%E4%BA%86-%E6%83%B3%E6%8C%89%E7%A7%8D%E7%B1%BB%E6%94%B6%E5%A5%BD-%E5%85%88%E5%81%9A%E4%BB%80%E4%B9%88-%E6%8C%89%E5%9B%BE%E5%8D%A1%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%A7%AF%E6%9C%A8%E5%92%8C%E5%B0%8F%E8%BD%A6%E6%95%A3%E4%BA%86-%E6%83%B3%E6%8C%89%E7%A7%8D%E7%B1%BB%E5%88%86%E5%BC%80%E6%94%BE%E8%BF%9B%E4%B8%A4%E4%B8%AA%E7%9B%92%E5%AD%90-%E5%85%88%E5%81%9A%E4%BB%80%E4%B9%88-%E6%8C%89%E5%9B%BE%E5%8D%A1%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
     },
     {
-      "id": "success-按顺序是玩具散了-先分类-放进盒子-整齐-所以缺少的是先分类-先分类-再放进盒子-最后变整齐",
+      "id": "success-按顺序是积木和小车-先分开两类-分开放进盒子-分类装好-所以缺少的是先分开两类-先分类-再把积木和小车放进各自的盒子-下次好找",
       "kind": "success",
-      "text": "按顺序是玩具散了、先分类、放进盒子、整齐，所以缺少的是先分类。先分类，再放进盒子，最后变整齐。",
+      "text": "按顺序是积木和小车、先分开两类、分开放进盒子、分类装好，所以缺少的是先分开两类。先分类，再把积木和小车放进各自的盒子，下次好找。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%98%AF%E7%8E%A9%E5%85%B7%E6%95%A3%E4%BA%86-%E5%85%88%E5%88%86%E7%B1%BB-%E6%94%BE%E8%BF%9B%E7%9B%92%E5%AD%90-%E6%95%B4%E9%BD%90-%E6%89%80%E4%BB%A5%E7%BC%BA%E5%B0%91%E7%9A%84%E6%98%AF%E5%85%88%E5%88%86%E7%B1%BB-%E5%85%88%E5%88%86%E7%B1%BB-%E5%86%8D%E6%94%BE%E8%BF%9B%E7%9B%92%E5%AD%90-%E6%9C%80%E5%90%8E%E5%8F%98%E6%95%B4%E9%BD%90.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%98%AF%E7%A7%AF%E6%9C%A8%E5%92%8C%E5%B0%8F%E8%BD%A6-%E5%85%88%E5%88%86%E5%BC%80%E4%B8%A4%E7%B1%BB-%E5%88%86%E5%BC%80%E6%94%BE%E8%BF%9B%E7%9B%92%E5%AD%90-%E5%88%86%E7%B1%BB%E8%A3%85%E5%A5%BD-%E6%89%80%E4%BB%A5%E7%BC%BA%E5%B0%91%E7%9A%84%E6%98%AF%E5%85%88%E5%88%86%E5%BC%80%E4%B8%A4%E7%B1%BB-%E5%85%88%E5%88%86%E7%B1%BB-%E5%86%8D%E6%8A%8A%E7%A7%AF%E6%9C%A8%E5%92%8C%E5%B0%8F%E8%BD%A6%E6%94%BE%E8%BF%9B%E5%90%84%E8%87%AA%E7%9A%84%E7%9B%92%E5%AD%90-%E4%B8%8B%E6%AC%A1%E5%A5%BD%E6%89%BE.mp3"
     },
     {
-      "id": "retry-先从左到右按顺序说-玩具散了-先分类-放进盒子-整齐-再想缺少的先分类让后面能继续",
+      "id": "retry-先从左到右按顺序说-积木和小车-先分开两类-分开放进盒子-分类装好-再想缺少的先分开两类让后面能继续",
       "kind": "retry",
-      "text": "先从左到右按顺序说：玩具散了、先分类、放进盒子、整齐，再想缺少的先分类让后面能继续。",
+      "text": "先从左到右按顺序说：积木和小车、先分开两类、分开放进盒子、分类装好，再想缺少的先分开两类让后面能继续。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E6%8C%89%E9%A1%BA%E5%BA%8F%E8%AF%B4-%E7%8E%A9%E5%85%B7%E6%95%A3%E4%BA%86-%E5%85%88%E5%88%86%E7%B1%BB-%E6%94%BE%E8%BF%9B%E7%9B%92%E5%AD%90-%E6%95%B4%E9%BD%90-%E5%86%8D%E6%83%B3%E7%BC%BA%E5%B0%91%E7%9A%84%E5%85%88%E5%88%86%E7%B1%BB%E8%AE%A9%E5%90%8E%E9%9D%A2%E8%83%BD%E7%BB%A7%E7%BB%AD.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E6%8C%89%E9%A1%BA%E5%BA%8F%E8%AF%B4-%E7%A7%AF%E6%9C%A8%E5%92%8C%E5%B0%8F%E8%BD%A6-%E5%85%88%E5%88%86%E5%BC%80%E4%B8%A4%E7%B1%BB-%E5%88%86%E5%BC%80%E6%94%BE%E8%BF%9B%E7%9B%92%E5%AD%90-%E5%88%86%E7%B1%BB%E8%A3%85%E5%A5%BD-%E5%86%8D%E6%83%B3%E7%BC%BA%E5%B0%91%E7%9A%84%E5%85%88%E5%88%86%E5%BC%80%E4%B8%A4%E7%B1%BB%E8%AE%A9%E5%90%8E%E9%9D%A2%E8%83%BD%E7%BB%A7%E7%BB%AD.mp3"
     },
     {
-      "id": "parent-请她指着图卡复述玩具散了-先分类-放进盒子-整齐-说为什么缺少先分类",
+      "id": "parent-请她指着图卡复述积木和小车-先分开两类-分开放进盒子-分类装好-说为什么缺少先分开两类",
       "kind": "parent",
-      "text": "请她指着图卡复述玩具散了、先分类、放进盒子、整齐，说为什么缺少先分类。",
+      "text": "请她指着图卡复述积木和小车、先分开两类、分开放进盒子、分类装好，说为什么缺少先分开两类。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E5%9B%BE%E5%8D%A1%E5%A4%8D%E8%BF%B0%E7%8E%A9%E5%85%B7%E6%95%A3%E4%BA%86-%E5%85%88%E5%88%86%E7%B1%BB-%E6%94%BE%E8%BF%9B%E7%9B%92%E5%AD%90-%E6%95%B4%E9%BD%90-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%BC%BA%E5%B0%91%E5%85%88%E5%88%86%E7%B1%BB.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E5%9B%BE%E5%8D%A1%E5%A4%8D%E8%BF%B0%E7%A7%AF%E6%9C%A8%E5%92%8C%E5%B0%8F%E8%BD%A6-%E5%85%88%E5%88%86%E5%BC%80%E4%B8%A4%E7%B1%BB-%E5%88%86%E5%BC%80%E6%94%BE%E8%BF%9B%E7%9B%92%E5%AD%90-%E5%88%86%E7%B1%BB%E8%A3%85%E5%A5%BD-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%BC%BA%E5%B0%91%E5%85%88%E5%88%86%E5%BC%80%E4%B8%A4%E7%B1%BB.mp3"
     },
     {
-      "id": "choice-先分类",
+      "id": "choice-先分开两类",
       "kind": "choice",
-      "text": "先分类",
+      "text": "先分开两类",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%85%88%E5%88%86%E7%B1%BB.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%85%88%E5%88%86%E5%BC%80%E4%B8%A4%E7%B1%BB.mp3"
     },
     {
-      "id": "choice-随便塞进盒子",
+      "id": "choice-全放同一个盒子",
       "kind": "choice",
-      "text": "随便塞进盒子",
+      "text": "全放同一个盒子",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E9%9A%8F%E4%BE%BF%E5%A1%9E%E8%BF%9B%E7%9B%92%E5%AD%90.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%85%A8%E6%94%BE%E5%90%8C%E4%B8%80%E4%B8%AA%E7%9B%92%E5%AD%90.mp3"
     },
     {
-      "id": "choice-重新弄乱",
+      "id": "choice-只收一个玩具",
       "kind": "choice",
-      "text": "重新弄乱",
+      "text": "只收一个玩具",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E9%87%8D%E6%96%B0%E5%BC%84%E4%B9%B1.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%8F%AA%E6%94%B6%E4%B8%80%E4%B8%AA%E7%8E%A9%E5%85%B7.mp3"
     },
     {
-      "id": "object-玩具散了",
+      "id": "object-积木和小车",
       "kind": "object",
-      "text": "玩具散了",
+      "text": "积木和小车",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E7%8E%A9%E5%85%B7%E6%95%A3%E4%BA%86.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E7%A7%AF%E6%9C%A8%E5%92%8C%E5%B0%8F%E8%BD%A6.mp3"
     },
     {
-      "id": "object-放进盒子",
+      "id": "object-分开放进盒子",
       "kind": "object",
-      "text": "放进盒子",
+      "text": "分开放进盒子",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E6%94%BE%E8%BF%9B%E7%9B%92%E5%AD%90.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%88%86%E5%BC%80%E6%94%BE%E8%BF%9B%E7%9B%92%E5%AD%90.mp3"
     },
     {
-      "id": "object-整齐",
+      "id": "object-分类装好",
       "kind": "object",
-      "text": "整齐",
+      "text": "分类装好",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E6%95%B4%E9%BD%90.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%88%86%E7%B1%BB%E8%A3%85%E5%A5%BD.mp3"
     },
     {
       "id": "prompt-过马路时-待补位置应该是什么-按图卡从左到右-找出缺少的一步",
@@ -4787,12 +4827,36 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E5%9B%BE%E5%8D%A1%E5%A4%8D%E8%BF%B0%E7%A7%AF%E6%9C%A8%E5%80%92%E4%BA%86-%E5%85%88%E6%8D%A1%E7%A7%AF%E6%9C%A8-%E5%85%88%E5%88%86%E7%B1%BB-%E6%94%BE%E8%BF%9B%E7%9B%92%E5%AD%90-%E6%95%B4%E9%BD%90-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%BC%BA%E5%B0%91%E5%85%88%E5%88%86%E7%B1%BB.mp3"
     },
     {
+      "id": "choice-先分类",
+      "kind": "choice",
+      "text": "先分类",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%85%88%E5%88%86%E7%B1%BB.mp3"
+    },
+    {
       "id": "object-先捡积木",
       "kind": "object",
       "text": "先捡积木",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%85%88%E6%8D%A1%E7%A7%AF%E6%9C%A8.mp3"
+    },
+    {
+      "id": "object-放进盒子",
+      "kind": "object",
+      "text": "放进盒子",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E6%94%BE%E8%BF%9B%E7%9B%92%E5%AD%90.mp3"
+    },
+    {
+      "id": "object-整齐",
+      "kind": "object",
+      "text": "整齐",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E6%95%B4%E9%BD%90.mp3"
     },
     {
       "id": "prompt-上课要写字-先拿什么最合适-按图卡从左到右-找出缺少的一步",
@@ -5139,20 +5203,20 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E6%9D%AF%E5%AD%90.mp3"
     },
     {
-      "id": "prompt-路口是红灯-想安全过马路-先做什么-按图卡从左到右-找出缺少的一步",
+      "id": "prompt-和大人一起过马路-行人灯是红色的-即使车停着-也要先做什么-按图卡从左到右-找出缺少的一步",
       "kind": "prompt",
-      "text": "路口是红灯，想安全过马路，先做什么？按图卡从左到右，找出缺少的一步。",
+      "text": "和大人一起过马路，行人灯是红色的。即使车停着，也要先做什么？按图卡从左到右，找出缺少的一步。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%B7%AF%E5%8F%A3%E6%98%AF%E7%BA%A2%E7%81%AF-%E6%83%B3%E5%AE%89%E5%85%A8%E8%BF%87%E9%A9%AC%E8%B7%AF-%E5%85%88%E5%81%9A%E4%BB%80%E4%B9%88-%E6%8C%89%E5%9B%BE%E5%8D%A1%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%92%8C%E5%A4%A7%E4%BA%BA%E4%B8%80%E8%B5%B7%E8%BF%87%E9%A9%AC%E8%B7%AF-%E8%A1%8C%E4%BA%BA%E7%81%AF%E6%98%AF%E7%BA%A2%E8%89%B2%E7%9A%84-%E5%8D%B3%E4%BD%BF%E8%BD%A6%E5%81%9C%E7%9D%80-%E4%B9%9F%E8%A6%81%E5%85%88%E5%81%9A%E4%BB%80%E4%B9%88-%E6%8C%89%E5%9B%BE%E5%8D%A1%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
     },
     {
-      "id": "success-按顺序是路口-红灯-停-所以缺少的是停-红灯时先停-等能走的时候再过马路",
+      "id": "success-按顺序是路口-红灯-停-所以缺少的是停-行人红灯亮着要停下等-等绿灯亮了-大人确认安全后再一起走",
       "kind": "success",
-      "text": "按顺序是路口、红灯、停，所以缺少的是停。红灯时先停，等能走的时候再过马路。",
+      "text": "按顺序是路口、红灯、停，所以缺少的是停。行人红灯亮着要停下等。等绿灯亮了，大人确认安全后再一起走。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%98%AF%E8%B7%AF%E5%8F%A3-%E7%BA%A2%E7%81%AF-%E5%81%9C-%E6%89%80%E4%BB%A5%E7%BC%BA%E5%B0%91%E7%9A%84%E6%98%AF%E5%81%9C-%E7%BA%A2%E7%81%AF%E6%97%B6%E5%85%88%E5%81%9C-%E7%AD%89%E8%83%BD%E8%B5%B0%E7%9A%84%E6%97%B6%E5%80%99%E5%86%8D%E8%BF%87%E9%A9%AC%E8%B7%AF.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%98%AF%E8%B7%AF%E5%8F%A3-%E7%BA%A2%E7%81%AF-%E5%81%9C-%E6%89%80%E4%BB%A5%E7%BC%BA%E5%B0%91%E7%9A%84%E6%98%AF%E5%81%9C-%E8%A1%8C%E4%BA%BA%E7%BA%A2%E7%81%AF%E4%BA%AE%E7%9D%80%E8%A6%81%E5%81%9C%E4%B8%8B%E7%AD%89-%E7%AD%89%E7%BB%BF%E7%81%AF%E4%BA%AE%E4%BA%86-%E5%A4%A7%E4%BA%BA%E7%A1%AE%E8%AE%A4%E5%AE%89%E5%85%A8%E5%90%8E%E5%86%8D%E4%B8%80%E8%B5%B7%E8%B5%B0.mp3"
     },
     {
       "id": "retry-先从左到右按顺序说-路口-红灯-停-再想缺少的停让后面能继续",
@@ -5187,20 +5251,28 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%81%9C.mp3"
     },
     {
-      "id": "prompt-路口要过马路-第一步先看什么-按图卡从左到右-找出缺少的一步",
-      "kind": "prompt",
-      "text": "路口要过马路，第一步先看什么？按图卡从左到右，找出缺少的一步。",
+      "id": "choice-只看车停着",
+      "kind": "choice",
+      "text": "只看车停着",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%B7%AF%E5%8F%A3%E8%A6%81%E8%BF%87%E9%A9%AC%E8%B7%AF-%E7%AC%AC%E4%B8%80%E6%AD%A5%E5%85%88%E7%9C%8B%E4%BB%80%E4%B9%88-%E6%8C%89%E5%9B%BE%E5%8D%A1%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%8F%AA%E7%9C%8B%E8%BD%A6%E5%81%9C%E7%9D%80.mp3"
     },
     {
-      "id": "success-按顺序是路口-先看灯-走过去-所以缺少的是先看灯-过马路前先看灯-再决定能不能走",
-      "kind": "success",
-      "text": "按顺序是路口、先看灯、走过去，所以缺少的是先看灯。过马路前先看灯，再决定能不能走。",
+      "id": "prompt-和大人到有行人信号灯的路口-准备过马路-第一步先看什么-按图卡从左到右-找出缺少的一步",
+      "kind": "prompt",
+      "text": "和大人到有行人信号灯的路口，准备过马路。第一步先看什么？按图卡从左到右，找出缺少的一步。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%98%AF%E8%B7%AF%E5%8F%A3-%E5%85%88%E7%9C%8B%E7%81%AF-%E8%B5%B0%E8%BF%87%E5%8E%BB-%E6%89%80%E4%BB%A5%E7%BC%BA%E5%B0%91%E7%9A%84%E6%98%AF%E5%85%88%E7%9C%8B%E7%81%AF-%E8%BF%87%E9%A9%AC%E8%B7%AF%E5%89%8D%E5%85%88%E7%9C%8B%E7%81%AF-%E5%86%8D%E5%86%B3%E5%AE%9A%E8%83%BD%E4%B8%8D%E8%83%BD%E8%B5%B0.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%92%8C%E5%A4%A7%E4%BA%BA%E5%88%B0%E6%9C%89%E8%A1%8C%E4%BA%BA%E4%BF%A1%E5%8F%B7%E7%81%AF%E7%9A%84%E8%B7%AF%E5%8F%A3-%E5%87%86%E5%A4%87%E8%BF%87%E9%A9%AC%E8%B7%AF-%E7%AC%AC%E4%B8%80%E6%AD%A5%E5%85%88%E7%9C%8B%E4%BB%80%E4%B9%88-%E6%8C%89%E5%9B%BE%E5%8D%A1%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
+    },
+    {
+      "id": "success-按顺序是路口-先看灯-走过去-所以缺少的是先看灯-先看行人信号灯-绿灯亮了-还要由大人确认路面安全-再一起走",
+      "kind": "success",
+      "text": "按顺序是路口、先看灯、走过去，所以缺少的是先看灯。先看行人信号灯；绿灯亮了，还要由大人确认路面安全，再一起走。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%98%AF%E8%B7%AF%E5%8F%A3-%E5%85%88%E7%9C%8B%E7%81%AF-%E8%B5%B0%E8%BF%87%E5%8E%BB-%E6%89%80%E4%BB%A5%E7%BC%BA%E5%B0%91%E7%9A%84%E6%98%AF%E5%85%88%E7%9C%8B%E7%81%AF-%E5%85%88%E7%9C%8B%E8%A1%8C%E4%BA%BA%E4%BF%A1%E5%8F%B7%E7%81%AF-%E7%BB%BF%E7%81%AF%E4%BA%AE%E4%BA%86-%E8%BF%98%E8%A6%81%E7%94%B1%E5%A4%A7%E4%BA%BA%E7%A1%AE%E8%AE%A4%E8%B7%AF%E9%9D%A2%E5%AE%89%E5%85%A8-%E5%86%8D%E4%B8%80%E8%B5%B7%E8%B5%B0.mp3"
     },
     {
       "id": "retry-先从左到右按顺序说-路口-先看灯-走过去-再想缺少的先看灯让后面能继续",
@@ -5219,20 +5291,12 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E5%9B%BE%E5%8D%A1%E5%A4%8D%E8%BF%B0%E8%B7%AF%E5%8F%A3-%E5%85%88%E7%9C%8B%E7%81%AF-%E8%B5%B0%E8%BF%87%E5%8E%BB-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%BC%BA%E5%B0%91%E5%85%88%E7%9C%8B%E7%81%AF.mp3"
     },
     {
-      "id": "choice-闭眼往前走",
-      "kind": "choice",
-      "text": "闭眼往前走",
-      "locale": "zh-CN",
-      "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E9%97%AD%E7%9C%BC%E5%BE%80%E5%89%8D%E8%B5%B0.mp3"
-    },
-    {
-      "id": "prompt-积木散在地上-想重新搭塔-先做什么-按图卡从左到右-找出缺少的一步",
+      "id": "prompt-积木散在地上-想拿到桌上重新搭塔-先做什么-按图卡从左到右-找出缺少的一步",
       "kind": "prompt",
-      "text": "积木散在地上，想重新搭塔，先做什么？按图卡从左到右，找出缺少的一步。",
+      "text": "积木散在地上，想拿到桌上重新搭塔，先做什么？按图卡从左到右，找出缺少的一步。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%A7%AF%E6%9C%A8%E6%95%A3%E5%9C%A8%E5%9C%B0%E4%B8%8A-%E6%83%B3%E9%87%8D%E6%96%B0%E6%90%AD%E5%A1%94-%E5%85%88%E5%81%9A%E4%BB%80%E4%B9%88-%E6%8C%89%E5%9B%BE%E5%8D%A1%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%A7%AF%E6%9C%A8%E6%95%A3%E5%9C%A8%E5%9C%B0%E4%B8%8A-%E6%83%B3%E6%8B%BF%E5%88%B0%E6%A1%8C%E4%B8%8A%E9%87%8D%E6%96%B0%E6%90%AD%E5%A1%94-%E5%85%88%E5%81%9A%E4%BB%80%E4%B9%88-%E6%8C%89%E5%9B%BE%E5%8D%A1%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
     },
     {
       "id": "success-按顺序是积木倒了-先捡积木-高塔-所以缺少的是先捡积木-先把积木捡起来-才好重新搭塔",
@@ -5355,44 +5419,60 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%85%88%E6%91%98%E8%8A%B1.mp3"
     },
     {
-      "id": "prompt-玩具已经分好类了-下一步做什么-按图卡从左到右-找出缺少的一步",
+      "id": "prompt-积木和小车已经分好类-两个空盒子也打开了-下一步做什么-按图卡从左到右-找出缺少的一步",
       "kind": "prompt",
-      "text": "玩具已经分好类了，下一步做什么？按图卡从左到右，找出缺少的一步。",
+      "text": "积木和小车已经分好类，两个空盒子也打开了。下一步做什么？按图卡从左到右，找出缺少的一步。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%8E%A9%E5%85%B7%E5%B7%B2%E7%BB%8F%E5%88%86%E5%A5%BD%E7%B1%BB%E4%BA%86-%E4%B8%8B%E4%B8%80%E6%AD%A5%E5%81%9A%E4%BB%80%E4%B9%88-%E6%8C%89%E5%9B%BE%E5%8D%A1%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%A7%AF%E6%9C%A8%E5%92%8C%E5%B0%8F%E8%BD%A6%E5%B7%B2%E7%BB%8F%E5%88%86%E5%A5%BD%E7%B1%BB-%E4%B8%A4%E4%B8%AA%E7%A9%BA%E7%9B%92%E5%AD%90%E4%B9%9F%E6%89%93%E5%BC%80%E4%BA%86-%E4%B8%8B%E4%B8%80%E6%AD%A5%E5%81%9A%E4%BB%80%E4%B9%88-%E6%8C%89%E5%9B%BE%E5%8D%A1%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
     },
     {
-      "id": "success-按顺序是先分类-先放进盒子-整齐-所以缺少的是先放进盒子-已经分类了-下一步放进盒子-房间就更整齐",
+      "id": "success-按顺序是分好的两类玩具-分开放进盒子-分类装好-所以缺少的是分开放进盒子-已经分类了-下一步把积木和小车放进各自的盒子-完成收纳",
       "kind": "success",
-      "text": "按顺序是先分类、先放进盒子、整齐，所以缺少的是先放进盒子。已经分类了，下一步放进盒子，房间就更整齐。",
+      "text": "按顺序是分好的两类玩具、分开放进盒子、分类装好，所以缺少的是分开放进盒子。已经分类了，下一步把积木和小车放进各自的盒子，完成收纳。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%98%AF%E5%85%88%E5%88%86%E7%B1%BB-%E5%85%88%E6%94%BE%E8%BF%9B%E7%9B%92%E5%AD%90-%E6%95%B4%E9%BD%90-%E6%89%80%E4%BB%A5%E7%BC%BA%E5%B0%91%E7%9A%84%E6%98%AF%E5%85%88%E6%94%BE%E8%BF%9B%E7%9B%92%E5%AD%90-%E5%B7%B2%E7%BB%8F%E5%88%86%E7%B1%BB%E4%BA%86-%E4%B8%8B%E4%B8%80%E6%AD%A5%E6%94%BE%E8%BF%9B%E7%9B%92%E5%AD%90-%E6%88%BF%E9%97%B4%E5%B0%B1%E6%9B%B4%E6%95%B4%E9%BD%90.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%98%AF%E5%88%86%E5%A5%BD%E7%9A%84%E4%B8%A4%E7%B1%BB%E7%8E%A9%E5%85%B7-%E5%88%86%E5%BC%80%E6%94%BE%E8%BF%9B%E7%9B%92%E5%AD%90-%E5%88%86%E7%B1%BB%E8%A3%85%E5%A5%BD-%E6%89%80%E4%BB%A5%E7%BC%BA%E5%B0%91%E7%9A%84%E6%98%AF%E5%88%86%E5%BC%80%E6%94%BE%E8%BF%9B%E7%9B%92%E5%AD%90-%E5%B7%B2%E7%BB%8F%E5%88%86%E7%B1%BB%E4%BA%86-%E4%B8%8B%E4%B8%80%E6%AD%A5%E6%8A%8A%E7%A7%AF%E6%9C%A8%E5%92%8C%E5%B0%8F%E8%BD%A6%E6%94%BE%E8%BF%9B%E5%90%84%E8%87%AA%E7%9A%84%E7%9B%92%E5%AD%90-%E5%AE%8C%E6%88%90%E6%94%B6%E7%BA%B3.mp3"
     },
     {
-      "id": "retry-先从左到右按顺序说-先分类-先放进盒子-整齐-再想缺少的先放进盒子让后面能继续",
+      "id": "retry-先从左到右按顺序说-分好的两类玩具-分开放进盒子-分类装好-再想缺少的分开放进盒子让后面能继续",
       "kind": "retry",
-      "text": "先从左到右按顺序说：先分类、先放进盒子、整齐，再想缺少的先放进盒子让后面能继续。",
+      "text": "先从左到右按顺序说：分好的两类玩具、分开放进盒子、分类装好，再想缺少的分开放进盒子让后面能继续。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E6%8C%89%E9%A1%BA%E5%BA%8F%E8%AF%B4-%E5%85%88%E5%88%86%E7%B1%BB-%E5%85%88%E6%94%BE%E8%BF%9B%E7%9B%92%E5%AD%90-%E6%95%B4%E9%BD%90-%E5%86%8D%E6%83%B3%E7%BC%BA%E5%B0%91%E7%9A%84%E5%85%88%E6%94%BE%E8%BF%9B%E7%9B%92%E5%AD%90%E8%AE%A9%E5%90%8E%E9%9D%A2%E8%83%BD%E7%BB%A7%E7%BB%AD.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3%E6%8C%89%E9%A1%BA%E5%BA%8F%E8%AF%B4-%E5%88%86%E5%A5%BD%E7%9A%84%E4%B8%A4%E7%B1%BB%E7%8E%A9%E5%85%B7-%E5%88%86%E5%BC%80%E6%94%BE%E8%BF%9B%E7%9B%92%E5%AD%90-%E5%88%86%E7%B1%BB%E8%A3%85%E5%A5%BD-%E5%86%8D%E6%83%B3%E7%BC%BA%E5%B0%91%E7%9A%84%E5%88%86%E5%BC%80%E6%94%BE%E8%BF%9B%E7%9B%92%E5%AD%90%E8%AE%A9%E5%90%8E%E9%9D%A2%E8%83%BD%E7%BB%A7%E7%BB%AD.mp3"
     },
     {
-      "id": "parent-请她指着图卡复述先分类-先放进盒子-整齐-说为什么缺少先放进盒子",
+      "id": "parent-请她指着图卡复述分好的两类玩具-分开放进盒子-分类装好-说为什么缺少分开放进盒子",
       "kind": "parent",
-      "text": "请她指着图卡复述先分类、先放进盒子、整齐，说为什么缺少先放进盒子。",
+      "text": "请她指着图卡复述分好的两类玩具、分开放进盒子、分类装好，说为什么缺少分开放进盒子。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E5%9B%BE%E5%8D%A1%E5%A4%8D%E8%BF%B0%E5%85%88%E5%88%86%E7%B1%BB-%E5%85%88%E6%94%BE%E8%BF%9B%E7%9B%92%E5%AD%90-%E6%95%B4%E9%BD%90-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%BC%BA%E5%B0%91%E5%85%88%E6%94%BE%E8%BF%9B%E7%9B%92%E5%AD%90.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E5%9B%BE%E5%8D%A1%E5%A4%8D%E8%BF%B0%E5%88%86%E5%A5%BD%E7%9A%84%E4%B8%A4%E7%B1%BB%E7%8E%A9%E5%85%B7-%E5%88%86%E5%BC%80%E6%94%BE%E8%BF%9B%E7%9B%92%E5%AD%90-%E5%88%86%E7%B1%BB%E8%A3%85%E5%A5%BD-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%BC%BA%E5%B0%91%E5%88%86%E5%BC%80%E6%94%BE%E8%BF%9B%E7%9B%92%E5%AD%90.mp3"
     },
     {
-      "id": "object-先分类",
-      "kind": "object",
-      "text": "先分类",
+      "id": "choice-再分类一遍",
+      "kind": "choice",
+      "text": "再分类一遍",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%85%88%E5%88%86%E7%B1%BB.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%86%8D%E5%88%86%E7%B1%BB%E4%B8%80%E9%81%8D.mp3"
+    },
+    {
+      "id": "choice-分开放进盒子",
+      "kind": "choice",
+      "text": "分开放进盒子",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%88%86%E5%BC%80%E6%94%BE%E8%BF%9B%E7%9B%92%E5%AD%90.mp3"
+    },
+    {
+      "id": "object-分好的两类玩具",
+      "kind": "object",
+      "text": "分好的两类玩具",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%88%86%E5%A5%BD%E7%9A%84%E4%B8%A4%E7%B1%BB%E7%8E%A9%E5%85%B7.mp3"
     },
     {
       "id": "game-title-故事和线索",
@@ -6027,52 +6107,36 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%85%88%E6%B4%97%E6%89%8B.mp3"
     },
     {
-      "id": "prompt-玩具散了-想变整齐-先随便塞进盒子够吗-先看这样做能不能让后面更顺",
+      "id": "prompt-积木和小车要分开放进两个盒子-下次好找-它们还混在一起-先做什么-收纳的目标是每一类放一个盒子",
       "kind": "prompt",
-      "text": "玩具散了，想变整齐，先随便塞进盒子够吗？先看这样做能不能让后面更顺。",
+      "text": "积木和小车要分开放进两个盒子，下次好找。它们还混在一起，先做什么？收纳的目标是每一类放一个盒子。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%8E%A9%E5%85%B7%E6%95%A3%E4%BA%86-%E6%83%B3%E5%8F%98%E6%95%B4%E9%BD%90-%E5%85%88%E9%9A%8F%E4%BE%BF%E5%A1%9E%E8%BF%9B%E7%9B%92%E5%AD%90%E5%A4%9F%E5%90%97-%E5%85%88%E7%9C%8B%E8%BF%99%E6%A0%B7%E5%81%9A%E8%83%BD%E4%B8%8D%E8%83%BD%E8%AE%A9%E5%90%8E%E9%9D%A2%E6%9B%B4%E9%A1%BA.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%A7%AF%E6%9C%A8%E5%92%8C%E5%B0%8F%E8%BD%A6%E8%A6%81%E5%88%86%E5%BC%80%E6%94%BE%E8%BF%9B%E4%B8%A4%E4%B8%AA%E7%9B%92%E5%AD%90-%E4%B8%8B%E6%AC%A1%E5%A5%BD%E6%89%BE-%E5%AE%83%E4%BB%AC%E8%BF%98%E6%B7%B7%E5%9C%A8%E4%B8%80%E8%B5%B7-%E5%85%88%E5%81%9A%E4%BB%80%E4%B9%88-%E6%94%B6%E7%BA%B3%E7%9A%84%E7%9B%AE%E6%A0%87%E6%98%AF%E6%AF%8F%E4%B8%80%E7%B1%BB%E6%94%BE%E4%B8%80%E4%B8%AA%E7%9B%92%E5%AD%90.mp3"
     },
     {
-      "id": "success-先分类-再放进盒子-才更容易变整齐",
+      "id": "success-先把积木和小车分开-再各放一个盒子-下次就知道去哪里找",
       "kind": "success",
-      "text": "先分类，再放进盒子，才更容易变整齐。",
+      "text": "先把积木和小车分开，再各放一个盒子，下次就知道去哪里找。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%85%88%E5%88%86%E7%B1%BB-%E5%86%8D%E6%94%BE%E8%BF%9B%E7%9B%92%E5%AD%90-%E6%89%8D%E6%9B%B4%E5%AE%B9%E6%98%93%E5%8F%98%E6%95%B4%E9%BD%90.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%85%88%E6%8A%8A%E7%A7%AF%E6%9C%A8%E5%92%8C%E5%B0%8F%E8%BD%A6%E5%88%86%E5%BC%80-%E5%86%8D%E5%90%84%E6%94%BE%E4%B8%80%E4%B8%AA%E7%9B%92%E5%AD%90-%E4%B8%8B%E6%AC%A1%E5%B0%B1%E7%9F%A5%E9%81%93%E5%8E%BB%E5%93%AA%E9%87%8C%E6%89%BE.mp3"
     },
     {
-      "id": "retry-想想哪一步能让后面的收拾更容易",
+      "id": "retry-目标是分开放-全放在同一个盒子里-积木和小车还是混在一起",
       "kind": "retry",
-      "text": "想想哪一步能让后面的收拾更容易。",
+      "text": "目标是分开放。全放在同一个盒子里，积木和小车还是混在一起。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E6%83%B3%E6%83%B3%E5%93%AA%E4%B8%80%E6%AD%A5%E8%83%BD%E8%AE%A9%E5%90%8E%E9%9D%A2%E7%9A%84%E6%94%B6%E6%8B%BE%E6%9B%B4%E5%AE%B9%E6%98%93.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E7%9B%AE%E6%A0%87%E6%98%AF%E5%88%86%E5%BC%80%E6%94%BE-%E5%85%A8%E6%94%BE%E5%9C%A8%E5%90%8C%E4%B8%80%E4%B8%AA%E7%9B%92%E5%AD%90%E9%87%8C-%E7%A7%AF%E6%9C%A8%E5%92%8C%E5%B0%8F%E8%BD%A6%E8%BF%98%E6%98%AF%E6%B7%B7%E5%9C%A8%E4%B8%80%E8%B5%B7.mp3"
     },
     {
-      "id": "parent-问她-分类以后-放进盒子会不会更快",
+      "id": "parent-问她-要找小车时-分开放和混在一起有什么不同",
       "kind": "parent",
-      "text": "问她：分类以后，放进盒子会不会更快？",
+      "text": "问她：要找小车时，分开放和混在一起有什么不同？",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E5%88%86%E7%B1%BB%E4%BB%A5%E5%90%8E-%E6%94%BE%E8%BF%9B%E7%9B%92%E5%AD%90%E4%BC%9A%E4%B8%8D%E4%BC%9A%E6%9B%B4%E5%BF%AB.mp3"
-    },
-    {
-      "id": "choice-随便塞",
-      "kind": "choice",
-      "text": "随便塞",
-      "locale": "zh-CN",
-      "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E9%9A%8F%E4%BE%BF%E5%A1%9E.mp3"
-    },
-    {
-      "id": "choice-只拿一个",
-      "kind": "choice",
-      "text": "只拿一个",
-      "locale": "zh-CN",
-      "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%8F%AA%E6%8B%BF%E4%B8%80%E4%B8%AA.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E8%A6%81%E6%89%BE%E5%B0%8F%E8%BD%A6%E6%97%B6-%E5%88%86%E5%BC%80%E6%94%BE%E5%92%8C%E6%B7%B7%E5%9C%A8%E4%B8%80%E8%B5%B7%E6%9C%89%E4%BB%80%E4%B9%88%E4%B8%8D%E5%90%8C.mp3"
     },
     {
       "id": "prompt-对岸有胡萝卜-看到小河后还缺什么-先处理障碍-再完成目标",
@@ -6571,76 +6635,108 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E7%BB%A7%E7%BB%AD%E6%B4%97%E6%89%8B.mp3"
     },
     {
-      "id": "prompt-玩具散了就随便塞进盒子-哪里不够好-看这样做会不会让后面更乱",
+      "id": "prompt-要把积木和小车分开放进两个盒子-下次好找-现在却全混在一个盒子里-怎么改-看看混放的结果-和分开放的目标一样吗",
       "kind": "prompt",
-      "text": "玩具散了就随便塞进盒子，哪里不够好？看这样做会不会让后面更乱。",
+      "text": "要把积木和小车分开放进两个盒子，下次好找。现在却全混在一个盒子里，怎么改？看看混放的结果，和分开放的目标一样吗？",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%8E%A9%E5%85%B7%E6%95%A3%E4%BA%86%E5%B0%B1%E9%9A%8F%E4%BE%BF%E5%A1%9E%E8%BF%9B%E7%9B%92%E5%AD%90-%E5%93%AA%E9%87%8C%E4%B8%8D%E5%A4%9F%E5%A5%BD-%E7%9C%8B%E8%BF%99%E6%A0%B7%E5%81%9A%E4%BC%9A%E4%B8%8D%E4%BC%9A%E8%AE%A9%E5%90%8E%E9%9D%A2%E6%9B%B4%E4%B9%B1.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%A6%81%E6%8A%8A%E7%A7%AF%E6%9C%A8%E5%92%8C%E5%B0%8F%E8%BD%A6%E5%88%86%E5%BC%80%E6%94%BE%E8%BF%9B%E4%B8%A4%E4%B8%AA%E7%9B%92%E5%AD%90-%E4%B8%8B%E6%AC%A1%E5%A5%BD%E6%89%BE-%E7%8E%B0%E5%9C%A8%E5%8D%B4%E5%85%A8%E6%B7%B7%E5%9C%A8%E4%B8%80%E4%B8%AA%E7%9B%92%E5%AD%90%E9%87%8C-%E6%80%8E%E4%B9%88%E6%94%B9-%E7%9C%8B%E7%9C%8B%E6%B7%B7%E6%94%BE%E7%9A%84%E7%BB%93%E6%9E%9C-%E5%92%8C%E5%88%86%E5%BC%80%E6%94%BE%E7%9A%84%E7%9B%AE%E6%A0%87%E4%B8%80%E6%A0%B7%E5%90%97.mp3"
     },
     {
-      "id": "success-先分类再收进盒子-更容易整理整齐",
+      "id": "success-把混在一起的玩具取出来-先分类-再让积木和小车各住一个盒子",
       "kind": "success",
-      "text": "先分类再收进盒子，更容易整理整齐。",
+      "text": "把混在一起的玩具取出来，先分类，再让积木和小车各住一个盒子。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%85%88%E5%88%86%E7%B1%BB%E5%86%8D%E6%94%B6%E8%BF%9B%E7%9B%92%E5%AD%90-%E6%9B%B4%E5%AE%B9%E6%98%93%E6%95%B4%E7%90%86%E6%95%B4%E9%BD%90.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%8A%8A%E6%B7%B7%E5%9C%A8%E4%B8%80%E8%B5%B7%E7%9A%84%E7%8E%A9%E5%85%B7%E5%8F%96%E5%87%BA%E6%9D%A5-%E5%85%88%E5%88%86%E7%B1%BB-%E5%86%8D%E8%AE%A9%E7%A7%AF%E6%9C%A8%E5%92%8C%E5%B0%8F%E8%BD%A6%E5%90%84%E4%BD%8F%E4%B8%80%E4%B8%AA%E7%9B%92%E5%AD%90.mp3"
     },
     {
-      "id": "retry-想一想哪一步能让后面的收拾更有顺序",
+      "id": "retry-现在的问题是两类玩具还混在一起-要怎样把它们分开放",
       "kind": "retry",
-      "text": "想一想哪一步能让后面的收拾更有顺序。",
+      "text": "现在的问题是两类玩具还混在一起。要怎样把它们分开放？",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E6%83%B3%E4%B8%80%E6%83%B3%E5%93%AA%E4%B8%80%E6%AD%A5%E8%83%BD%E8%AE%A9%E5%90%8E%E9%9D%A2%E7%9A%84%E6%94%B6%E6%8B%BE%E6%9B%B4%E6%9C%89%E9%A1%BA%E5%BA%8F.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E7%8E%B0%E5%9C%A8%E7%9A%84%E9%97%AE%E9%A2%98%E6%98%AF%E4%B8%A4%E7%B1%BB%E7%8E%A9%E5%85%B7%E8%BF%98%E6%B7%B7%E5%9C%A8%E4%B8%80%E8%B5%B7-%E8%A6%81%E6%80%8E%E6%A0%B7%E6%8A%8A%E5%AE%83%E4%BB%AC%E5%88%86%E5%BC%80%E6%94%BE.mp3"
     },
     {
-      "id": "parent-问她-随便塞和先分类-哪个更容易找东西",
+      "id": "parent-问她-目标是什么-混在一个盒子里完成目标了吗-为什么",
       "kind": "parent",
-      "text": "问她：随便塞和先分类，哪个更容易找东西？",
+      "text": "问她：目标是什么？混在一个盒子里完成目标了吗？为什么？",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E9%9A%8F%E4%BE%BF%E5%A1%9E%E5%92%8C%E5%85%88%E5%88%86%E7%B1%BB-%E5%93%AA%E4%B8%AA%E6%9B%B4%E5%AE%B9%E6%98%93%E6%89%BE%E4%B8%9C%E8%A5%BF.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E7%9B%AE%E6%A0%87%E6%98%AF%E4%BB%80%E4%B9%88-%E6%B7%B7%E5%9C%A8%E4%B8%80%E4%B8%AA%E7%9B%92%E5%AD%90%E9%87%8C%E5%AE%8C%E6%88%90%E7%9B%AE%E6%A0%87%E4%BA%86%E5%90%97-%E4%B8%BA%E4%BB%80%E4%B9%88.mp3"
     },
     {
-      "id": "choice-继续随便塞",
+      "id": "choice-继续混放",
       "kind": "choice",
-      "text": "继续随便塞",
+      "text": "继续混放",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E7%BB%A7%E7%BB%AD%E9%9A%8F%E4%BE%BF%E5%A1%9E.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E7%BB%A7%E7%BB%AD%E6%B7%B7%E6%94%BE.mp3"
     },
     {
-      "id": "prompt-看到小河只站着等-怎样改更有用-等待不能解决障碍-要处理障碍",
+      "id": "choice-取出后先分类",
+      "kind": "choice",
+      "text": "取出后先分类",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%8F%96%E5%87%BA%E5%90%8E%E5%85%88%E5%88%86%E7%B1%BB.mp3"
+    },
+    {
+      "id": "object-混在一个盒子",
+      "kind": "object",
+      "text": "混在一个盒子",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E6%B7%B7%E5%9C%A8%E4%B8%80%E4%B8%AA%E7%9B%92%E5%AD%90.mp3"
+    },
+    {
+      "id": "prompt-桌面模型里-玩具兔想沿桥面去对岸拿胡萝卜-岸边有够长的木板-它一直站着没动-先怎么做-先找到目标-再看小河挡住了哪一段路",
       "kind": "prompt",
-      "text": "看到小河只站着等，怎样改更有用？等待不能解决障碍，要处理障碍。",
+      "text": "桌面模型里，玩具兔想沿桥面去对岸拿胡萝卜，岸边有够长的木板。它一直站着没动，先怎么做？先找到目标，再看小河挡住了哪一段路。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%9C%8B%E5%88%B0%E5%B0%8F%E6%B2%B3%E5%8F%AA%E7%AB%99%E7%9D%80%E7%AD%89-%E6%80%8E%E6%A0%B7%E6%94%B9%E6%9B%B4%E6%9C%89%E7%94%A8-%E7%AD%89%E5%BE%85%E4%B8%8D%E8%83%BD%E8%A7%A3%E5%86%B3%E9%9A%9C%E7%A2%8D-%E8%A6%81%E5%A4%84%E7%90%86%E9%9A%9C%E7%A2%8D.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%A1%8C%E9%9D%A2%E6%A8%A1%E5%9E%8B%E9%87%8C-%E7%8E%A9%E5%85%B7%E5%85%94%E6%83%B3%E6%B2%BF%E6%A1%A5%E9%9D%A2%E5%8E%BB%E5%AF%B9%E5%B2%B8%E6%8B%BF%E8%83%A1%E8%90%9D%E5%8D%9C-%E5%B2%B8%E8%BE%B9%E6%9C%89%E5%A4%9F%E9%95%BF%E7%9A%84%E6%9C%A8%E6%9D%BF-%E5%AE%83%E4%B8%80%E7%9B%B4%E7%AB%99%E7%9D%80%E6%B2%A1%E5%8A%A8-%E5%85%88%E6%80%8E%E4%B9%88%E5%81%9A-%E5%85%88%E6%89%BE%E5%88%B0%E7%9B%AE%E6%A0%87-%E5%86%8D%E7%9C%8B%E5%B0%8F%E6%B2%B3%E6%8C%A1%E4%BD%8F%E4%BA%86%E5%93%AA%E4%B8%80%E6%AE%B5%E8%B7%AF.mp3"
     },
     {
-      "id": "success-小河是障碍-先搭桥才有用",
+      "id": "success-目标是让玩具兔到对岸拿胡萝卜-先用够长的木板搭好桥-它才能沿桥面过去",
       "kind": "success",
-      "text": "小河是障碍，先搭桥才有用。",
+      "text": "目标是让玩具兔到对岸拿胡萝卜。先用够长的木板搭好桥，它才能沿桥面过去。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%B0%8F%E6%B2%B3%E6%98%AF%E9%9A%9C%E7%A2%8D-%E5%85%88%E6%90%AD%E6%A1%A5%E6%89%8D%E6%9C%89%E7%94%A8.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%9B%AE%E6%A0%87%E6%98%AF%E8%AE%A9%E7%8E%A9%E5%85%B7%E5%85%94%E5%88%B0%E5%AF%B9%E5%B2%B8%E6%8B%BF%E8%83%A1%E8%90%9D%E5%8D%9C-%E5%85%88%E7%94%A8%E5%A4%9F%E9%95%BF%E7%9A%84%E6%9C%A8%E6%9D%BF%E6%90%AD%E5%A5%BD%E6%A1%A5-%E5%AE%83%E6%89%8D%E8%83%BD%E6%B2%BF%E6%A1%A5%E9%9D%A2%E8%BF%87%E5%8E%BB.mp3"
     },
     {
-      "id": "retry-站着等不会让小河变没-先想怎么过去",
+      "id": "retry-玩具兔要去对岸-木板已经够长了-哪一步能接通两岸",
       "kind": "retry",
-      "text": "站着等不会让小河变没，先想怎么过去。",
+      "text": "玩具兔要去对岸，木板已经够长了。哪一步能接通两岸？",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E7%AB%99%E7%9D%80%E7%AD%89%E4%B8%8D%E4%BC%9A%E8%AE%A9%E5%B0%8F%E6%B2%B3%E5%8F%98%E6%B2%A1-%E5%85%88%E6%83%B3%E6%80%8E%E4%B9%88%E8%BF%87%E5%8E%BB.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E7%8E%A9%E5%85%B7%E5%85%94%E8%A6%81%E5%8E%BB%E5%AF%B9%E5%B2%B8-%E6%9C%A8%E6%9D%BF%E5%B7%B2%E7%BB%8F%E5%A4%9F%E9%95%BF%E4%BA%86-%E5%93%AA%E4%B8%80%E6%AD%A5%E8%83%BD%E6%8E%A5%E9%80%9A%E4%B8%A4%E5%B2%B8.mp3"
     },
     {
-      "id": "parent-问她-哪一个动作真的解决了小河这个问题",
+      "id": "parent-问她-玩具兔的目标是什么-挡路的是什么-木板能帮什么忙",
       "kind": "parent",
-      "text": "问她：哪一个动作真的解决了小河这个问题？",
+      "text": "问她：玩具兔的目标是什么？挡路的是什么？木板能帮什么忙？",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E5%93%AA%E4%B8%80%E4%B8%AA%E5%8A%A8%E4%BD%9C%E7%9C%9F%E7%9A%84%E8%A7%A3%E5%86%B3%E4%BA%86%E5%B0%8F%E6%B2%B3%E8%BF%99%E4%B8%AA%E9%97%AE%E9%A2%98.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E7%8E%A9%E5%85%B7%E5%85%94%E7%9A%84%E7%9B%AE%E6%A0%87%E6%98%AF%E4%BB%80%E4%B9%88-%E6%8C%A1%E8%B7%AF%E7%9A%84%E6%98%AF%E4%BB%80%E4%B9%88-%E6%9C%A8%E6%9D%BF%E8%83%BD%E5%B8%AE%E4%BB%80%E4%B9%88%E5%BF%99.mp3"
+    },
+    {
+      "id": "object-小兔",
+      "kind": "object",
+      "text": "小兔",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%B0%8F%E5%85%94.mp3"
+    },
+    {
+      "id": "object-长木板",
+      "kind": "object",
+      "text": "长木板",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E9%95%BF%E6%9C%A8%E6%9D%BF.mp3"
     },
     {
       "id": "prompt-只看到小猫在厨房-就说一定是小猫吃了-哪里错-地点线索不等于强证据",
@@ -6835,20 +6931,20 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%B7%B2%E7%BB%8F%E8%A7%A3%E5%86%B3.mp3"
     },
     {
-      "id": "prompt-玩具已经按种类分好了-盒子也打开了-下一步怎么做-保留已经做好的部分-再继续完成",
+      "id": "prompt-积木和小车已经分好类-两个空盒子也打开了-下一步怎么做-保留已经做好的部分-再继续完成",
       "kind": "prompt",
-      "text": "玩具已经按种类分好了，盒子也打开了。下一步怎么做？保留已经做好的部分，再继续完成。",
+      "text": "积木和小车已经分好类，两个空盒子也打开了。下一步怎么做？保留已经做好的部分，再继续完成。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%8E%A9%E5%85%B7%E5%B7%B2%E7%BB%8F%E6%8C%89%E7%A7%8D%E7%B1%BB%E5%88%86%E5%A5%BD%E4%BA%86-%E7%9B%92%E5%AD%90%E4%B9%9F%E6%89%93%E5%BC%80%E4%BA%86-%E4%B8%8B%E4%B8%80%E6%AD%A5%E6%80%8E%E4%B9%88%E5%81%9A-%E4%BF%9D%E7%95%99%E5%B7%B2%E7%BB%8F%E5%81%9A%E5%A5%BD%E7%9A%84%E9%83%A8%E5%88%86-%E5%86%8D%E7%BB%A7%E7%BB%AD%E5%AE%8C%E6%88%90.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%A7%AF%E6%9C%A8%E5%92%8C%E5%B0%8F%E8%BD%A6%E5%B7%B2%E7%BB%8F%E5%88%86%E5%A5%BD%E7%B1%BB-%E4%B8%A4%E4%B8%AA%E7%A9%BA%E7%9B%92%E5%AD%90%E4%B9%9F%E6%89%93%E5%BC%80%E4%BA%86-%E4%B8%8B%E4%B8%80%E6%AD%A5%E6%80%8E%E4%B9%88%E5%81%9A-%E4%BF%9D%E7%95%99%E5%B7%B2%E7%BB%8F%E5%81%9A%E5%A5%BD%E7%9A%84%E9%83%A8%E5%88%86-%E5%86%8D%E7%BB%A7%E7%BB%AD%E5%AE%8C%E6%88%90.mp3"
     },
     {
-      "id": "success-已经分类了-接着放进盒子就好",
+      "id": "success-已经分类了-接着把积木和小车放进各自的盒子就好",
       "kind": "success",
-      "text": "已经分类了，接着放进盒子就好。",
+      "text": "已经分类了，接着把积木和小车放进各自的盒子就好。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%B7%B2%E7%BB%8F%E5%88%86%E7%B1%BB%E4%BA%86-%E6%8E%A5%E7%9D%80%E6%94%BE%E8%BF%9B%E7%9B%92%E5%AD%90%E5%B0%B1%E5%A5%BD.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%B7%B2%E7%BB%8F%E5%88%86%E7%B1%BB%E4%BA%86-%E6%8E%A5%E7%9D%80%E6%8A%8A%E7%A7%AF%E6%9C%A8%E5%92%8C%E5%B0%8F%E8%BD%A6%E6%94%BE%E8%BF%9B%E5%90%84%E8%87%AA%E7%9A%84%E7%9B%92%E5%AD%90%E5%B0%B1%E5%A5%BD.mp3"
     },
     {
       "id": "retry-先保留已经做好的分类-再完成收纳",
@@ -6865,14 +6961,6 @@
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E5%93%AA%E4%BA%9B%E4%BA%8B%E6%83%85%E5%B7%B2%E7%BB%8F%E5%81%9A%E5%A5%BD%E4%BA%86-%E4%B8%8B%E4%B8%80%E6%AD%A5%E6%80%8E%E6%A0%B7%E4%BF%9D%E6%8A%A4%E5%AE%83.mp3"
-    },
-    {
-      "id": "choice-放进盒子",
-      "kind": "choice",
-      "text": "放进盒子",
-      "locale": "zh-CN",
-      "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E6%94%BE%E8%BF%9B%E7%9B%92%E5%AD%90.mp3"
     },
     {
       "id": "game-title-先处理哪一个",
@@ -6931,20 +7019,20 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E7%9B%98%E5%AD%90%E5%92%8C%E9%A5%BC%E5%B9%B2%E9%83%BD%E5%9C%A8-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%98%E8%A6%81%E5%85%88%E6%B4%97%E6%89%8B.mp3"
     },
     {
-      "id": "prompt-路口到了-前面有斑马线和信号灯-先看什么-先找决定能不能走的信号",
+      "id": "prompt-和大人一起到了有斑马线和行人信号灯的路口-先看什么-先找决定能不能走的信号",
       "kind": "prompt",
-      "text": "路口到了，前面有斑马线和信号灯，先看什么？先找决定能不能走的信号。",
+      "text": "和大人一起到了有斑马线和行人信号灯的路口，先看什么？先找决定能不能走的信号。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%B7%AF%E5%8F%A3%E5%88%B0%E4%BA%86-%E5%89%8D%E9%9D%A2%E6%9C%89%E6%96%91%E9%A9%AC%E7%BA%BF%E5%92%8C%E4%BF%A1%E5%8F%B7%E7%81%AF-%E5%85%88%E7%9C%8B%E4%BB%80%E4%B9%88-%E5%85%88%E6%89%BE%E5%86%B3%E5%AE%9A%E8%83%BD%E4%B8%8D%E8%83%BD%E8%B5%B0%E7%9A%84%E4%BF%A1%E5%8F%B7.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%92%8C%E5%A4%A7%E4%BA%BA%E4%B8%80%E8%B5%B7%E5%88%B0%E4%BA%86%E6%9C%89%E6%96%91%E9%A9%AC%E7%BA%BF%E5%92%8C%E8%A1%8C%E4%BA%BA%E4%BF%A1%E5%8F%B7%E7%81%AF%E7%9A%84%E8%B7%AF%E5%8F%A3-%E5%85%88%E7%9C%8B%E4%BB%80%E4%B9%88-%E5%85%88%E6%89%BE%E5%86%B3%E5%AE%9A%E8%83%BD%E4%B8%8D%E8%83%BD%E8%B5%B0%E7%9A%84%E4%BF%A1%E5%8F%B7.mp3"
     },
     {
-      "id": "success-先看灯-确定安全以后再走过去",
+      "id": "success-先看行人信号灯-绿灯亮了还要请大人确认路面安全-再一起走过去",
       "kind": "success",
-      "text": "先看灯，确定安全以后再走过去。",
+      "text": "先看行人信号灯，绿灯亮了还要请大人确认路面安全，再一起走过去。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%85%88%E7%9C%8B%E7%81%AF-%E7%A1%AE%E5%AE%9A%E5%AE%89%E5%85%A8%E4%BB%A5%E5%90%8E%E5%86%8D%E8%B5%B0%E8%BF%87%E5%8E%BB.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%85%88%E7%9C%8B%E8%A1%8C%E4%BA%BA%E4%BF%A1%E5%8F%B7%E7%81%AF-%E7%BB%BF%E7%81%AF%E4%BA%AE%E4%BA%86%E8%BF%98%E8%A6%81%E8%AF%B7%E5%A4%A7%E4%BA%BA%E7%A1%AE%E8%AE%A4%E8%B7%AF%E9%9D%A2%E5%AE%89%E5%85%A8-%E5%86%8D%E4%B8%80%E8%B5%B7%E8%B5%B0%E8%BF%87%E5%8E%BB.mp3"
     },
     {
       "id": "retry-过马路先看能不能走-不是先走",
@@ -6969,14 +7057,6 @@
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%85%88%E8%B5%B0%E8%BF%87%E5%8E%BB.mp3"
-    },
-    {
-      "id": "choice-先看书包",
-      "kind": "choice",
-      "text": "先看书包",
-      "locale": "zh-CN",
-      "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%85%88%E7%9C%8B%E4%B9%A6%E5%8C%85.mp3"
     },
     {
       "id": "prompt-模型河宽-4-格-长板-5-格-短板-2-格-哪块能搭到对岸-先选最可能满足距离条件的材料",
@@ -7035,60 +7115,36 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%85%88%E9%80%89%E5%B0%8F%E7%9F%B3%E5%A4%B4.mp3"
     },
     {
-      "id": "object-长木板",
-      "kind": "object",
-      "text": "长木板",
-      "locale": "zh-CN",
-      "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E9%95%BF%E6%9C%A8%E6%9D%BF.mp3"
-    },
-    {
-      "id": "prompt-玩具散了-盒子也打开了-先做什么更顺-先让后面的收纳更有顺序",
+      "id": "prompt-积木和小车要分开放进两个盒子-下次好找-盒子打开了-玩具还混在一起-先做什么-先想哪一步能让两类玩具分开放",
       "kind": "prompt",
-      "text": "玩具散了，盒子也打开了，先做什么更顺？先让后面的收纳更有顺序。",
+      "text": "积木和小车要分开放进两个盒子，下次好找。盒子打开了，玩具还混在一起，先做什么？先想哪一步能让两类玩具分开放。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%8E%A9%E5%85%B7%E6%95%A3%E4%BA%86-%E7%9B%92%E5%AD%90%E4%B9%9F%E6%89%93%E5%BC%80%E4%BA%86-%E5%85%88%E5%81%9A%E4%BB%80%E4%B9%88%E6%9B%B4%E9%A1%BA-%E5%85%88%E8%AE%A9%E5%90%8E%E9%9D%A2%E7%9A%84%E6%94%B6%E7%BA%B3%E6%9B%B4%E6%9C%89%E9%A1%BA%E5%BA%8F.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%A7%AF%E6%9C%A8%E5%92%8C%E5%B0%8F%E8%BD%A6%E8%A6%81%E5%88%86%E5%BC%80%E6%94%BE%E8%BF%9B%E4%B8%A4%E4%B8%AA%E7%9B%92%E5%AD%90-%E4%B8%8B%E6%AC%A1%E5%A5%BD%E6%89%BE-%E7%9B%92%E5%AD%90%E6%89%93%E5%BC%80%E4%BA%86-%E7%8E%A9%E5%85%B7%E8%BF%98%E6%B7%B7%E5%9C%A8%E4%B8%80%E8%B5%B7-%E5%85%88%E5%81%9A%E4%BB%80%E4%B9%88-%E5%85%88%E6%83%B3%E5%93%AA%E4%B8%80%E6%AD%A5%E8%83%BD%E8%AE%A9%E4%B8%A4%E7%B1%BB%E7%8E%A9%E5%85%B7%E5%88%86%E5%BC%80%E6%94%BE.mp3"
     },
     {
-      "id": "success-先分类-再放进盒子-整理会更顺",
+      "id": "success-先把积木和小车分开-再各放一个盒子-下次好找",
       "kind": "success",
-      "text": "先分类，再放进盒子，整理会更顺。",
+      "text": "先把积木和小车分开，再各放一个盒子，下次好找。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%85%88%E5%88%86%E7%B1%BB-%E5%86%8D%E6%94%BE%E8%BF%9B%E7%9B%92%E5%AD%90-%E6%95%B4%E7%90%86%E4%BC%9A%E6%9B%B4%E9%A1%BA.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%85%88%E6%8A%8A%E7%A7%AF%E6%9C%A8%E5%92%8C%E5%B0%8F%E8%BD%A6%E5%88%86%E5%BC%80-%E5%86%8D%E5%90%84%E6%94%BE%E4%B8%80%E4%B8%AA%E7%9B%92%E5%AD%90-%E4%B8%8B%E6%AC%A1%E5%A5%BD%E6%89%BE.mp3"
     },
     {
-      "id": "retry-想想哪一步能让后面少混乱",
+      "id": "retry-盒子已经准备好了-还缺把两类玩具分开的步骤",
       "kind": "retry",
-      "text": "想想哪一步能让后面少混乱。",
+      "text": "盒子已经准备好了。还缺把两类玩具分开的步骤。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E6%83%B3%E6%83%B3%E5%93%AA%E4%B8%80%E6%AD%A5%E8%83%BD%E8%AE%A9%E5%90%8E%E9%9D%A2%E5%B0%91%E6%B7%B7%E4%B9%B1.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E7%9B%92%E5%AD%90%E5%B7%B2%E7%BB%8F%E5%87%86%E5%A4%87%E5%A5%BD%E4%BA%86-%E8%BF%98%E7%BC%BA%E6%8A%8A%E4%B8%A4%E7%B1%BB%E7%8E%A9%E5%85%B7%E5%88%86%E5%BC%80%E7%9A%84%E6%AD%A5%E9%AA%A4.mp3"
     },
     {
-      "id": "parent-问她-先分类以后-放进盒子会不会更容易",
+      "id": "parent-问她-为什么把全部玩具放进同一个盒子-还没有完成这次的收纳目标",
       "kind": "parent",
-      "text": "问她：先分类以后，放进盒子会不会更容易？",
+      "text": "问她：为什么把全部玩具放进同一个盒子，还没有完成这次的收纳目标？",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E5%85%88%E5%88%86%E7%B1%BB%E4%BB%A5%E5%90%8E-%E6%94%BE%E8%BF%9B%E7%9B%92%E5%AD%90%E4%BC%9A%E4%B8%8D%E4%BC%9A%E6%9B%B4%E5%AE%B9%E6%98%93.mp3"
-    },
-    {
-      "id": "choice-先随便塞",
-      "kind": "choice",
-      "text": "先随便塞",
-      "locale": "zh-CN",
-      "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%85%88%E9%9A%8F%E4%BE%BF%E5%A1%9E.mp3"
-    },
-    {
-      "id": "choice-先拿一个玩",
-      "kind": "choice",
-      "text": "先拿一个玩",
-      "locale": "zh-CN",
-      "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%85%88%E6%8B%BF%E4%B8%80%E4%B8%AA%E7%8E%A9.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E4%B8%BA%E4%BB%80%E4%B9%88%E6%8A%8A%E5%85%A8%E9%83%A8%E7%8E%A9%E5%85%B7%E6%94%BE%E8%BF%9B%E5%90%8C%E4%B8%80%E4%B8%AA%E7%9B%92%E5%AD%90-%E8%BF%98%E6%B2%A1%E6%9C%89%E5%AE%8C%E6%88%90%E8%BF%99%E6%AC%A1%E7%9A%84%E6%94%B6%E7%BA%B3%E7%9B%AE%E6%A0%87.mp3"
     },
     {
       "id": "prompt-想拿对岸胡萝卜-可是中间有小河-先处理什么-目标很清楚-但先要处理挡路的问题",
@@ -7193,14 +7249,6 @@
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%85%88%E8%B7%9F%E5%B0%8F%E6%9C%8B%E5%8F%8B%E8%B5%B0.mp3"
-    },
-    {
-      "id": "choice-只看车停着",
-      "kind": "choice",
-      "text": "只看车停着",
-      "locale": "zh-CN",
-      "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%8F%AA%E7%9C%8B%E8%BD%A6%E5%81%9C%E7%9D%80.mp3"
     },
     {
       "id": "choice-先按红灯停",
@@ -7347,20 +7395,20 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E5%93%AA%E4%B8%80%E7%A7%8D%E6%94%B9%E6%B3%95%E7%9C%9F%E7%9A%84%E6%94%B9%E5%8F%98%E4%BA%86%E5%A4%B1%E8%B4%A5%E5%8E%9F%E5%9B%A0.mp3"
     },
     {
-      "id": "prompt-玩具已经分类了-接下来有两个选择-放进盒子或重新分一遍-先做哪个-保留已经完成的成果-继续向目标走",
+      "id": "prompt-积木和小车已经分好类-要装进各自的盒子-两个空盒子已打开-下一步做什么-保留已经完成的成果-继续向目标走",
       "kind": "prompt",
-      "text": "玩具已经分类了，接下来有两个选择：放进盒子或重新分一遍，先做哪个？保留已经完成的成果，继续向目标走。",
+      "text": "积木和小车已经分好类，要装进各自的盒子。两个空盒子已打开，下一步做什么？保留已经完成的成果，继续向目标走。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%8E%A9%E5%85%B7%E5%B7%B2%E7%BB%8F%E5%88%86%E7%B1%BB%E4%BA%86-%E6%8E%A5%E4%B8%8B%E6%9D%A5%E6%9C%89%E4%B8%A4%E4%B8%AA%E9%80%89%E6%8B%A9-%E6%94%BE%E8%BF%9B%E7%9B%92%E5%AD%90%E6%88%96%E9%87%8D%E6%96%B0%E5%88%86%E4%B8%80%E9%81%8D-%E5%85%88%E5%81%9A%E5%93%AA%E4%B8%AA-%E4%BF%9D%E7%95%99%E5%B7%B2%E7%BB%8F%E5%AE%8C%E6%88%90%E7%9A%84%E6%88%90%E6%9E%9C-%E7%BB%A7%E7%BB%AD%E5%90%91%E7%9B%AE%E6%A0%87%E8%B5%B0.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%A7%AF%E6%9C%A8%E5%92%8C%E5%B0%8F%E8%BD%A6%E5%B7%B2%E7%BB%8F%E5%88%86%E5%A5%BD%E7%B1%BB-%E8%A6%81%E8%A3%85%E8%BF%9B%E5%90%84%E8%87%AA%E7%9A%84%E7%9B%92%E5%AD%90-%E4%B8%A4%E4%B8%AA%E7%A9%BA%E7%9B%92%E5%AD%90%E5%B7%B2%E6%89%93%E5%BC%80-%E4%B8%8B%E4%B8%80%E6%AD%A5%E5%81%9A%E4%BB%80%E4%B9%88-%E4%BF%9D%E7%95%99%E5%B7%B2%E7%BB%8F%E5%AE%8C%E6%88%90%E7%9A%84%E6%88%90%E6%9E%9C-%E7%BB%A7%E7%BB%AD%E5%90%91%E7%9B%AE%E6%A0%87%E8%B5%B0.mp3"
     },
     {
-      "id": "success-已经分类了-先放进盒子-才能变整齐",
+      "id": "success-已经分类了-把积木和小车放进各自的盒子-就完成这次收纳",
       "kind": "success",
-      "text": "已经分类了，先放进盒子，才能变整齐。",
+      "text": "已经分类了，把积木和小车放进各自的盒子，就完成这次收纳。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%B7%B2%E7%BB%8F%E5%88%86%E7%B1%BB%E4%BA%86-%E5%85%88%E6%94%BE%E8%BF%9B%E7%9B%92%E5%AD%90-%E6%89%8D%E8%83%BD%E5%8F%98%E6%95%B4%E9%BD%90.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%B7%B2%E7%BB%8F%E5%88%86%E7%B1%BB%E4%BA%86-%E6%8A%8A%E7%A7%AF%E6%9C%A8%E5%92%8C%E5%B0%8F%E8%BD%A6%E6%94%BE%E8%BF%9B%E5%90%84%E8%87%AA%E7%9A%84%E7%9B%92%E5%AD%90-%E5%B0%B1%E5%AE%8C%E6%88%90%E8%BF%99%E6%AC%A1%E6%94%B6%E7%BA%B3.mp3"
     },
     {
       "id": "retry-已经完成的步骤要保留-再做下一步",
@@ -7377,14 +7425,6 @@
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E5%88%86%E7%B1%BB%E5%B7%B2%E7%BB%8F%E5%81%9A%E5%A5%BD%E4%BA%86-%E4%B8%8B%E4%B8%80%E6%AD%A5%E6%80%8E%E6%A0%B7%E7%A6%BB%E6%95%B4%E9%BD%90%E6%9B%B4%E8%BF%91.mp3"
-    },
-    {
-      "id": "choice-重新分类",
-      "kind": "choice",
-      "text": "重新分类",
-      "locale": "zh-CN",
-      "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E9%87%8D%E6%96%B0%E5%88%86%E7%B1%BB.mp3"
     },
     {
       "id": "prompt-只知道小狗在房间里-玩具散了-先下结论还是先找更多线索-证据不够时-先补线索",
@@ -9203,14 +9243,6 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%B0%8F%E7%8B%97.mp3"
     },
     {
-      "id": "object-小兔",
-      "kind": "object",
-      "text": "小兔",
-      "locale": "zh-CN",
-      "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%B0%8F%E5%85%94.mp3"
-    },
-    {
       "id": "prompt-这些都属于圆圆的东西-谁也能放进这一组-先说它们哪里一样-再选也符合这个规则的",
       "kind": "prompt",
       "text": "这些都属于圆圆的东西。谁也能放进这一组？先说它们哪里一样，再选也符合这个规则的。",
@@ -10562,31 +10594,31 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E6%A9%98%E5%AD%90-%E6%A9%98%E5%AD%90.mp3"
     },
     {
-      "id": "success-第一行是-小鸟-和-天空-合成-小鸟天空-第三行是-小狗-和-家-所以空格补-小狗家",
+      "id": "success-第一行是小鸟和天空-合成小鸟天空图卡-第三行是小狗和家-所以空格补小狗家图卡",
       "kind": "success",
-      "text": "第一行是 小鸟 和 天空，合成 小鸟天空；第三行是 小狗 和 家，所以空格补 小狗家。",
-      "spokenText": "第一航是 小鸟 和 天空，合成 小鸟天空；第三航是 小狗 和 家，所以空格补 小狗家。",
+      "text": "第一行是小鸟和天空，合成小鸟天空图卡；第三行是小狗和家，所以空格补小狗家图卡。",
+      "spokenText": "第一航是小鸟和天空，合成小鸟天空图卡；第三航是小狗和家，所以空格补小狗家图卡。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%AC%AC%E4%B8%80%E8%A1%8C%E6%98%AF-%E5%B0%8F%E9%B8%9F-%E5%92%8C-%E5%A4%A9%E7%A9%BA-%E5%90%88%E6%88%90-%E5%B0%8F%E9%B8%9F%E5%A4%A9%E7%A9%BA-%E7%AC%AC%E4%B8%89%E8%A1%8C%E6%98%AF-%E5%B0%8F%E7%8B%97-%E5%92%8C-%E5%AE%B6-%E6%89%80%E4%BB%A5%E7%A9%BA%E6%A0%BC%E8%A1%A5-%E5%B0%8F%E7%8B%97%E5%AE%B6-pron-1b17662987c3.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%AC%AC%E4%B8%80%E8%A1%8C%E6%98%AF%E5%B0%8F%E9%B8%9F%E5%92%8C%E5%A4%A9%E7%A9%BA-%E5%90%88%E6%88%90%E5%B0%8F%E9%B8%9F%E5%A4%A9%E7%A9%BA%E5%9B%BE%E5%8D%A1-%E7%AC%AC%E4%B8%89%E8%A1%8C%E6%98%AF%E5%B0%8F%E7%8B%97%E5%92%8C%E5%AE%B6-%E6%89%80%E4%BB%A5%E7%A9%BA%E6%A0%BC%E8%A1%A5%E5%B0%8F%E7%8B%97%E5%AE%B6%E5%9B%BE%E5%8D%A1-pron-0dc74219805a.mp3"
     },
     {
-      "id": "retry-先读第一行这个完整行-前两个词连成最后一个-再看第三行缺的空格",
+      "id": "retry-先看第一行-最后一格同时有前两格的图-第三行也要把两张图都放进去",
       "kind": "retry",
-      "text": "先读第一行这个完整行：前两个词连成最后一个；再看第三行缺的空格。",
-      "spokenText": "先读第一航这个完整航：前两个词连成最后一个；再看第三航缺的空格。",
+      "text": "先看第一行：最后一格同时有前两格的图。第三行也要把两张图都放进去。",
+      "spokenText": "先看第一航：最后一格同时有前两格的图。第三航也要把两张图都放进去。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E8%AF%BB%E7%AC%AC%E4%B8%80%E8%A1%8C%E8%BF%99%E4%B8%AA%E5%AE%8C%E6%95%B4%E8%A1%8C-%E5%89%8D%E4%B8%A4%E4%B8%AA%E8%AF%8D%E8%BF%9E%E6%88%90%E6%9C%80%E5%90%8E%E4%B8%80%E4%B8%AA-%E5%86%8D%E7%9C%8B%E7%AC%AC%E4%B8%89%E8%A1%8C%E7%BC%BA%E7%9A%84%E7%A9%BA%E6%A0%BC-pron-957cc20b8e2d.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E7%9C%8B%E7%AC%AC%E4%B8%80%E8%A1%8C-%E6%9C%80%E5%90%8E%E4%B8%80%E6%A0%BC%E5%90%8C%E6%97%B6%E6%9C%89%E5%89%8D%E4%B8%A4%E6%A0%BC%E7%9A%84%E5%9B%BE-%E7%AC%AC%E4%B8%89%E8%A1%8C%E4%B9%9F%E8%A6%81%E6%8A%8A%E4%B8%A4%E5%BC%A0%E5%9B%BE%E9%83%BD%E6%94%BE%E8%BF%9B%E5%8E%BB-pron-90f674e4918c.mp3"
     },
     {
-      "id": "parent-请她说第一行怎么连成小故事-再说第三行-小狗-和-家-用同一个规则为什么补-小狗家",
+      "id": "parent-请她说第一行怎么把两张图合在一起-再说第三行为什么要把小狗和家放在一起",
       "kind": "parent",
-      "text": "请她说第一行怎么连成小故事，再说第三行 小狗 和 家 用同一个规则为什么补 小狗家。",
-      "spokenText": "请她说第一航怎么连成小故事，再说第三航 小狗 和 家 用同一个规则为什么补 小狗家。",
+      "text": "请她说第一行怎么把两张图合在一起，再说第三行为什么要把小狗和家放在一起。",
+      "spokenText": "请她说第一航怎么把两张图合在一起，再说第三行为什么要把小狗和家放在一起。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E8%AF%B4%E7%AC%AC%E4%B8%80%E8%A1%8C%E6%80%8E%E4%B9%88%E8%BF%9E%E6%88%90%E5%B0%8F%E6%95%85%E4%BA%8B-%E5%86%8D%E8%AF%B4%E7%AC%AC%E4%B8%89%E8%A1%8C-%E5%B0%8F%E7%8B%97-%E5%92%8C-%E5%AE%B6-%E7%94%A8%E5%90%8C%E4%B8%80%E4%B8%AA%E8%A7%84%E5%88%99%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A1%A5-%E5%B0%8F%E7%8B%97%E5%AE%B6-pron-dd772640903b.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E8%AF%B4%E7%AC%AC%E4%B8%80%E8%A1%8C%E6%80%8E%E4%B9%88%E6%8A%8A%E4%B8%A4%E5%BC%A0%E5%9B%BE%E5%90%88%E5%9C%A8%E4%B8%80%E8%B5%B7-%E5%86%8D%E8%AF%B4%E7%AC%AC%E4%B8%89%E8%A1%8C%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E6%8A%8A%E5%B0%8F%E7%8B%97%E5%92%8C%E5%AE%B6%E6%94%BE%E5%9C%A8%E4%B8%80%E8%B5%B7-pron-1113fad1bccc.mp3"
     },
     {
       "id": "choice-小河和小狗",
@@ -12325,36 +12357,36 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E5%AE%8C%E6%95%B4%E5%9B%BE%E9%87%8C%E6%9C%89%E4%BB%80%E4%B9%88-%E5%B7%B2%E7%BB%8F%E6%9C%89%E4%BA%86%E4%BB%80%E4%B9%88-%E8%BF%98%E5%B0%91%E4%BB%80%E4%B9%88.mp3"
     },
     {
-      "id": "prompt-拼成完整图-还少哪一块-先看完整图-再看已经有的几块",
+      "id": "prompt-这组图卡还少哪张-先看完整的一组图卡-再看已经有的图卡",
       "kind": "prompt",
-      "text": "拼成完整图，还少哪一块？先看完整图，再看已经有的几块。",
+      "text": "这组图卡还少哪张？先看完整的一组图卡，再看已经有的图卡。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8B%BC%E6%88%90%E5%AE%8C%E6%95%B4%E5%9B%BE-%E8%BF%98%E5%B0%91%E5%93%AA%E4%B8%80%E5%9D%97-%E5%85%88%E7%9C%8B%E5%AE%8C%E6%95%B4%E5%9B%BE-%E5%86%8D%E7%9C%8B%E5%B7%B2%E7%BB%8F%E6%9C%89%E7%9A%84%E5%87%A0%E5%9D%97.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%BF%99%E7%BB%84%E5%9B%BE%E5%8D%A1%E8%BF%98%E5%B0%91%E5%93%AA%E5%BC%A0-%E5%85%88%E7%9C%8B%E5%AE%8C%E6%95%B4%E7%9A%84%E4%B8%80%E7%BB%84%E5%9B%BE%E5%8D%A1-%E5%86%8D%E7%9C%8B%E5%B7%B2%E7%BB%8F%E6%9C%89%E7%9A%84%E5%9B%BE%E5%8D%A1.mp3"
     },
     {
-      "id": "success-完整图里还少星星",
+      "id": "success-这组图卡还少星星",
       "kind": "success",
-      "text": "完整图里还少星星。",
+      "text": "这组图卡还少星星。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%AE%8C%E6%95%B4%E5%9B%BE%E9%87%8C%E8%BF%98%E5%B0%91%E6%98%9F%E6%98%9F.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%BF%99%E7%BB%84%E5%9B%BE%E5%8D%A1%E8%BF%98%E5%B0%91%E6%98%9F%E6%98%9F.mp3"
     },
     {
-      "id": "retry-把完整图里的东西一个一个划掉-看看还剩什么",
+      "id": "retry-拿完整的一组图卡来对照-一张一张找-看看还缺什么",
       "kind": "retry",
-      "text": "把完整图里的东西一个一个划掉，看看还剩什么。",
+      "text": "拿完整的一组图卡来对照，一张一张找，看看还缺什么。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E6%8A%8A%E5%AE%8C%E6%95%B4%E5%9B%BE%E9%87%8C%E7%9A%84%E4%B8%9C%E8%A5%BF%E4%B8%80%E4%B8%AA%E4%B8%80%E4%B8%AA%E5%88%92%E6%8E%89-%E7%9C%8B%E7%9C%8B%E8%BF%98%E5%89%A9%E4%BB%80%E4%B9%88.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E6%8B%BF%E5%AE%8C%E6%95%B4%E7%9A%84%E4%B8%80%E7%BB%84%E5%9B%BE%E5%8D%A1%E6%9D%A5%E5%AF%B9%E7%85%A7-%E4%B8%80%E5%BC%A0%E4%B8%80%E5%BC%A0%E6%89%BE-%E7%9C%8B%E7%9C%8B%E8%BF%98%E7%BC%BA%E4%BB%80%E4%B9%88.mp3"
     },
     {
-      "id": "parent-请她说-完整图有哪几块-现在已经有哪几块",
+      "id": "parent-请她说-这一组有哪几张图卡-现在已经有哪几张",
       "kind": "parent",
-      "text": "请她说：完整图有哪几块？现在已经有哪几块？",
+      "text": "请她说：这一组有哪几张图卡？现在已经有哪几张？",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E8%AF%B4-%E5%AE%8C%E6%95%B4%E5%9B%BE%E6%9C%89%E5%93%AA%E5%87%A0%E5%9D%97-%E7%8E%B0%E5%9C%A8%E5%B7%B2%E7%BB%8F%E6%9C%89%E5%93%AA%E5%87%A0%E5%9D%97.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E8%AF%B4-%E8%BF%99%E4%B8%80%E7%BB%84%E6%9C%89%E5%93%AA%E5%87%A0%E5%BC%A0%E5%9B%BE%E5%8D%A1-%E7%8E%B0%E5%9C%A8%E5%B7%B2%E7%BB%8F%E6%9C%89%E5%93%AA%E5%87%A0%E5%BC%A0.mp3"
     },
     {
       "id": "success-已经有苹果和橘子-还少草莓",
@@ -20477,12 +20509,12 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E4%B8%80%E5%91%A8%E6%98%AF%E4%B8%83%E5%A4%A9-14%E5%8A%A0%E4%B8%83%E6%98%AF21.mp3"
     },
     {
-      "id": "prompt-从2号开始-每过三天浇一次水-第三次是几号-选出符合条件的一张图卡",
+      "id": "prompt-2号浇第一次水-以后每过3天浇一次-第三次是几号-选出符合条件的一张图卡",
       "kind": "prompt",
-      "text": "从2号开始，每过三天浇一次水，第三次是几号。选出符合条件的一张图卡。",
+      "text": "2号浇第一次水，以后每过3天浇一次，第三次是几号。选出符合条件的一张图卡。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E4%BB%8E2%E5%8F%B7%E5%BC%80%E5%A7%8B-%E6%AF%8F%E8%BF%87%E4%B8%89%E5%A4%A9%E6%B5%87%E4%B8%80%E6%AC%A1%E6%B0%B4-%E7%AC%AC%E4%B8%89%E6%AC%A1%E6%98%AF%E5%87%A0%E5%8F%B7-%E9%80%89%E5%87%BA%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E4%B8%80%E5%BC%A0%E5%9B%BE%E5%8D%A1.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-2%E5%8F%B7%E6%B5%87%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%B0%B4-%E4%BB%A5%E5%90%8E%E6%AF%8F%E8%BF%873%E5%A4%A9%E6%B5%87%E4%B8%80%E6%AC%A1-%E7%AC%AC%E4%B8%89%E6%AC%A1%E6%98%AF%E5%87%A0%E5%8F%B7-%E9%80%89%E5%87%BA%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E4%B8%80%E5%BC%A0%E5%9B%BE%E5%8D%A1.mp3"
     },
     {
       "id": "success-第一次2号-第二次5号-第三次8号-开始那次也算一次",
@@ -20509,12 +20541,12 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E7%AC%AC%E4%B8%80%E6%AC%A12%E5%8F%B7-%E7%AC%AC%E4%BA%8C%E6%AC%A15%E5%8F%B7-%E7%AC%AC%E4%B8%89%E6%AC%A18%E5%8F%B7-%E5%BC%80%E5%A7%8B%E9%82%A3%E6%AC%A1%E4%B9%9F%E7%AE%97%E4%B8%80%E6%AC%A1.mp3"
     },
     {
-      "id": "prompt-从3号开始-每过三天浇一次水-第三次是几号-选出符合条件的一张图卡",
+      "id": "prompt-3号浇第一次水-以后每过3天浇一次-第三次是几号-选出符合条件的一张图卡",
       "kind": "prompt",
-      "text": "从3号开始，每过三天浇一次水，第三次是几号。选出符合条件的一张图卡。",
+      "text": "3号浇第一次水，以后每过3天浇一次，第三次是几号。选出符合条件的一张图卡。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E4%BB%8E3%E5%8F%B7%E5%BC%80%E5%A7%8B-%E6%AF%8F%E8%BF%87%E4%B8%89%E5%A4%A9%E6%B5%87%E4%B8%80%E6%AC%A1%E6%B0%B4-%E7%AC%AC%E4%B8%89%E6%AC%A1%E6%98%AF%E5%87%A0%E5%8F%B7-%E9%80%89%E5%87%BA%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E4%B8%80%E5%BC%A0%E5%9B%BE%E5%8D%A1.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-3%E5%8F%B7%E6%B5%87%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%B0%B4-%E4%BB%A5%E5%90%8E%E6%AF%8F%E8%BF%873%E5%A4%A9%E6%B5%87%E4%B8%80%E6%AC%A1-%E7%AC%AC%E4%B8%89%E6%AC%A1%E6%98%AF%E5%87%A0%E5%8F%B7-%E9%80%89%E5%87%BA%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E4%B8%80%E5%BC%A0%E5%9B%BE%E5%8D%A1.mp3"
     },
     {
       "id": "success-第一次3号-第二次6号-第三次9号-开始那次也算一次",
@@ -20533,12 +20565,12 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E7%AC%AC%E4%B8%80%E6%AC%A13%E5%8F%B7-%E7%AC%AC%E4%BA%8C%E6%AC%A16%E5%8F%B7-%E7%AC%AC%E4%B8%89%E6%AC%A19%E5%8F%B7-%E5%BC%80%E5%A7%8B%E9%82%A3%E6%AC%A1%E4%B9%9F%E7%AE%97%E4%B8%80%E6%AC%A1.mp3"
     },
     {
-      "id": "prompt-从4号开始-每过三天浇一次水-第三次是几号-选出符合条件的一张图卡",
+      "id": "prompt-4号浇第一次水-以后每过3天浇一次-第三次是几号-选出符合条件的一张图卡",
       "kind": "prompt",
-      "text": "从4号开始，每过三天浇一次水，第三次是几号。选出符合条件的一张图卡。",
+      "text": "4号浇第一次水，以后每过3天浇一次，第三次是几号。选出符合条件的一张图卡。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E4%BB%8E4%E5%8F%B7%E5%BC%80%E5%A7%8B-%E6%AF%8F%E8%BF%87%E4%B8%89%E5%A4%A9%E6%B5%87%E4%B8%80%E6%AC%A1%E6%B0%B4-%E7%AC%AC%E4%B8%89%E6%AC%A1%E6%98%AF%E5%87%A0%E5%8F%B7-%E9%80%89%E5%87%BA%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E4%B8%80%E5%BC%A0%E5%9B%BE%E5%8D%A1.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-4%E5%8F%B7%E6%B5%87%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%B0%B4-%E4%BB%A5%E5%90%8E%E6%AF%8F%E8%BF%873%E5%A4%A9%E6%B5%87%E4%B8%80%E6%AC%A1-%E7%AC%AC%E4%B8%89%E6%AC%A1%E6%98%AF%E5%87%A0%E5%8F%B7-%E9%80%89%E5%87%BA%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E4%B8%80%E5%BC%A0%E5%9B%BE%E5%8D%A1.mp3"
     },
     {
       "id": "success-第一次4号-第二次7号-第三次10号-开始那次也算一次",
@@ -22492,20 +22524,20 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/game-goal-%E4%B8%80%E6%AC%A1%E7%BF%BB%E8%BD%AC-%E8%BF%9E%E7%BB%AD%E7%BF%BB%E8%BD%AC-%E4%BB%8E%E7%9B%AE%E6%A0%87%E5%80%92%E6%8E%A8%E6%AD%A5%E9%AA%A4.mp3"
     },
     {
-      "id": "prompt-按顺序翻牌-最后每个位置朝上的是哪一面-选图卡-点问号格放进去-图卡可以重复用-翻第1张",
+      "id": "prompt-按顺序翻牌-最后每个位置朝上的是哪一面-选图卡-点问号格放进去-图卡可以重复用-每张牌一面是白色-一面是黄色-翻一次-白色变黄色-黄色变白色-翻第",
       "kind": "prompt",
-      "text": "按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。翻第1张。",
+      "text": "按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。每张牌一面是白色，一面是黄色。翻一次，白色变黄色，黄色变白色。翻第1张。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8C%89%E9%A1%BA%E5%BA%8F%E7%BF%BB%E7%89%8C-%E6%9C%80%E5%90%8E%E6%AF%8F%E4%B8%AA%E4%BD%8D%E7%BD%AE%E6%9C%9D%E4%B8%8A%E7%9A%84%E6%98%AF%E5%93%AA%E4%B8%80%E9%9D%A2-%E9%80%89%E5%9B%BE%E5%8D%A1-%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8-%E7%BF%BB%E7%AC%AC1%E5%BC%A0.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8C%89%E9%A1%BA%E5%BA%8F%E7%BF%BB%E7%89%8C-%E6%9C%80%E5%90%8E%E6%AF%8F%E4%B8%AA%E4%BD%8D%E7%BD%AE%E6%9C%9D%E4%B8%8A%E7%9A%84%E6%98%AF%E5%93%AA%E4%B8%80%E9%9D%A2-%E9%80%89%E5%9B%BE%E5%8D%A1-%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8-%E6%AF%8F%E5%BC%A0%E7%89%8C%E4%B8%80%E9%9D%A2%E6%98%AF%E7%99%BD%E8%89%B2-%E4%B8%80%E9%9D%A2%E6%98%AF%E9%BB%84%E8%89%B2-%E7%BF%BB%E4%B8%80%E6%AC%A1-%E7%99%BD%E8%89%B2%E5%8F%98%E9%BB%84%E8%89%B2-%E9%BB%84%E8%89%B2%E5%8F%98%E7%99%BD%E8%89%B2-%E7%BF%BB%E7%AC%AC.mp3"
     },
     {
-      "id": "success-翻一次换一面-同一张翻两次-又回到原来",
+      "id": "success-翻一次-白色和黄色换一面-同一张翻两次-又回到原来",
       "kind": "success",
-      "text": "翻一次换一面；同一张翻两次，又回到原来。",
+      "text": "翻一次，白色和黄色换一面；同一张翻两次，又回到原来。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%BF%BB%E4%B8%80%E6%AC%A1%E6%8D%A2%E4%B8%80%E9%9D%A2-%E5%90%8C%E4%B8%80%E5%BC%A0%E7%BF%BB%E4%B8%A4%E6%AC%A1-%E5%8F%88%E5%9B%9E%E5%88%B0%E5%8E%9F%E6%9D%A5.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%BF%BB%E4%B8%80%E6%AC%A1-%E7%99%BD%E8%89%B2%E5%92%8C%E9%BB%84%E8%89%B2%E6%8D%A2%E4%B8%80%E9%9D%A2-%E5%90%8C%E4%B8%80%E5%BC%A0%E7%BF%BB%E4%B8%A4%E6%AC%A1-%E5%8F%88%E5%9B%9E%E5%88%B0%E5%8E%9F%E6%9D%A5.mp3"
     },
     {
       "id": "parent-区分两面-会按位置编号找卡",
@@ -22516,20 +22548,36 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E5%8C%BA%E5%88%86%E4%B8%A4%E9%9D%A2-%E4%BC%9A%E6%8C%89%E4%BD%8D%E7%BD%AE%E7%BC%96%E5%8F%B7%E6%89%BE%E5%8D%A1.mp3"
     },
     {
-      "id": "hint-翻第1张",
+      "id": "hint-每张牌一面是白色-一面是黄色",
       "kind": "hint",
-      "text": "翻第1张。",
+      "text": "每张牌一面是白色，一面是黄色。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E7%BF%BB%E7%AC%AC1%E5%BC%A0.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E6%AF%8F%E5%BC%A0%E7%89%8C%E4%B8%80%E9%9D%A2%E6%98%AF%E7%99%BD%E8%89%B2-%E4%B8%80%E9%9D%A2%E6%98%AF%E9%BB%84%E8%89%B2.mp3"
     },
     {
-      "id": "hint-翻一次换一面-同一张翻两次-又回到原来",
+      "id": "hint-翻一次-白色和黄色换一面-同一张翻两次-又回到原来",
       "kind": "hint",
-      "text": "翻一次换一面；同一张翻两次，又回到原来。",
+      "text": "翻一次，白色和黄色换一面；同一张翻两次，又回到原来。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E7%BF%BB%E4%B8%80%E6%AC%A1%E6%8D%A2%E4%B8%80%E9%9D%A2-%E5%90%8C%E4%B8%80%E5%BC%A0%E7%BF%BB%E4%B8%A4%E6%AC%A1-%E5%8F%88%E5%9B%9E%E5%88%B0%E5%8E%9F%E6%9D%A5.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E7%BF%BB%E4%B8%80%E6%AC%A1-%E7%99%BD%E8%89%B2%E5%92%8C%E9%BB%84%E8%89%B2%E6%8D%A2%E4%B8%80%E9%9D%A2-%E5%90%8C%E4%B8%80%E5%BC%A0%E7%BF%BB%E4%B8%A4%E6%AC%A1-%E5%8F%88%E5%9B%9E%E5%88%B0%E5%8E%9F%E6%9D%A5.mp3"
+    },
+    {
+      "id": "clue-每张牌一面是白色-一面是黄色",
+      "kind": "clue",
+      "text": "每张牌一面是白色，一面是黄色。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E6%AF%8F%E5%BC%A0%E7%89%8C%E4%B8%80%E9%9D%A2%E6%98%AF%E7%99%BD%E8%89%B2-%E4%B8%80%E9%9D%A2%E6%98%AF%E9%BB%84%E8%89%B2.mp3"
+    },
+    {
+      "id": "clue-翻一次-白色变黄色-黄色变白色",
+      "kind": "clue",
+      "text": "翻一次，白色变黄色，黄色变白色。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E7%BF%BB%E4%B8%80%E6%AC%A1-%E7%99%BD%E8%89%B2%E5%8F%98%E9%BB%84%E8%89%B2-%E9%BB%84%E8%89%B2%E5%8F%98%E7%99%BD%E8%89%B2.mp3"
     },
     {
       "id": "clue-翻第1张",
@@ -22556,20 +22604,12 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E7%99%BD%E9%9D%A2.mp3"
     },
     {
-      "id": "prompt-按顺序翻牌-最后每个位置朝上的是哪一面-选图卡-点问号格放进去-图卡可以重复用-翻第2张",
+      "id": "prompt-按顺序翻牌-最后每个位置朝上的是哪一面-选图卡-点问号格放进去-图卡可以重复用-每张牌一面是白色-一面是黄色-翻一次-白色变黄色-黄色变白色-翻第-e6b6ad14c0",
       "kind": "prompt",
-      "text": "按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。翻第2张。",
+      "text": "按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。每张牌一面是白色，一面是黄色。翻一次，白色变黄色，黄色变白色。翻第2张。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8C%89%E9%A1%BA%E5%BA%8F%E7%BF%BB%E7%89%8C-%E6%9C%80%E5%90%8E%E6%AF%8F%E4%B8%AA%E4%BD%8D%E7%BD%AE%E6%9C%9D%E4%B8%8A%E7%9A%84%E6%98%AF%E5%93%AA%E4%B8%80%E9%9D%A2-%E9%80%89%E5%9B%BE%E5%8D%A1-%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8-%E7%BF%BB%E7%AC%AC2%E5%BC%A0.mp3"
-    },
-    {
-      "id": "hint-翻第2张",
-      "kind": "hint",
-      "text": "翻第2张。",
-      "locale": "zh-CN",
-      "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E7%BF%BB%E7%AC%AC2%E5%BC%A0.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8C%89%E9%A1%BA%E5%BA%8F%E7%BF%BB%E7%89%8C-%E6%9C%80%E5%90%8E%E6%AF%8F%E4%B8%AA%E4%BD%8D%E7%BD%AE%E6%9C%9D%E4%B8%8A%E7%9A%84%E6%98%AF%E5%93%AA%E4%B8%80%E9%9D%A2-%E9%80%89%E5%9B%BE%E5%8D%A1-%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8-%E6%AF%8F%E5%BC%A0%E7%89%8C%E4%B8%80%E9%9D%A2%E6%98%AF%E7%99%BD%E8%89%B2-%E4%B8%80%E9%9D%A2%E6%98%AF%E9%BB%84%E8%89%B2-%E7%BF%BB%E4%B8%80%E6%AC%A1-%E7%99%BD%E8%89%B2%E5%8F%98%E9%BB%84%E8%89%B2-%E9%BB%84%E8%89%B2%E5%8F%98%E7%99%BD%E8%89%B2-%E7%BF%BB%E7%AC%AC-e6b6ad14c0.mp3"
     },
     {
       "id": "clue-翻第2张",
@@ -22580,20 +22620,12 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E7%BF%BB%E7%AC%AC2%E5%BC%A0.mp3"
     },
     {
-      "id": "prompt-按顺序翻牌-最后每个位置朝上的是哪一面-选图卡-点问号格放进去-图卡可以重复用-翻第3张",
+      "id": "prompt-按顺序翻牌-最后每个位置朝上的是哪一面-选图卡-点问号格放进去-图卡可以重复用-每张牌一面是白色-一面是黄色-翻一次-白色变黄色-黄色变白色-翻第-377da11b48",
       "kind": "prompt",
-      "text": "按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。翻第3张。",
+      "text": "按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。每张牌一面是白色，一面是黄色。翻一次，白色变黄色，黄色变白色。翻第3张。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8C%89%E9%A1%BA%E5%BA%8F%E7%BF%BB%E7%89%8C-%E6%9C%80%E5%90%8E%E6%AF%8F%E4%B8%AA%E4%BD%8D%E7%BD%AE%E6%9C%9D%E4%B8%8A%E7%9A%84%E6%98%AF%E5%93%AA%E4%B8%80%E9%9D%A2-%E9%80%89%E5%9B%BE%E5%8D%A1-%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8-%E7%BF%BB%E7%AC%AC3%E5%BC%A0.mp3"
-    },
-    {
-      "id": "hint-翻第3张",
-      "kind": "hint",
-      "text": "翻第3张。",
-      "locale": "zh-CN",
-      "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E7%BF%BB%E7%AC%AC3%E5%BC%A0.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8C%89%E9%A1%BA%E5%BA%8F%E7%BF%BB%E7%89%8C-%E6%9C%80%E5%90%8E%E6%AF%8F%E4%B8%AA%E4%BD%8D%E7%BD%AE%E6%9C%9D%E4%B8%8A%E7%9A%84%E6%98%AF%E5%93%AA%E4%B8%80%E9%9D%A2-%E9%80%89%E5%9B%BE%E5%8D%A1-%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8-%E6%AF%8F%E5%BC%A0%E7%89%8C%E4%B8%80%E9%9D%A2%E6%98%AF%E7%99%BD%E8%89%B2-%E4%B8%80%E9%9D%A2%E6%98%AF%E9%BB%84%E8%89%B2-%E7%BF%BB%E4%B8%80%E6%AC%A1-%E7%99%BD%E8%89%B2%E5%8F%98%E9%BB%84%E8%89%B2-%E9%BB%84%E8%89%B2%E5%8F%98%E7%99%BD%E8%89%B2-%E7%BF%BB%E7%AC%AC-377da11b48.mp3"
     },
     {
       "id": "clue-翻第3张",
@@ -22604,12 +22636,12 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E7%BF%BB%E7%AC%AC3%E5%BC%A0.mp3"
     },
     {
-      "id": "prompt-按顺序翻牌-最后每个位置朝上的是哪一面-选图卡-点问号格放进去-图卡可以重复用-翻第1张-翻第2张",
+      "id": "prompt-按顺序翻牌-最后每个位置朝上的是哪一面-选图卡-点问号格放进去-图卡可以重复用-每张牌一面是白色-一面是黄色-翻一次-白色变黄色-黄色变白色-翻第-612e141fd1",
       "kind": "prompt",
-      "text": "按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。翻第1张。翻第2张。",
+      "text": "按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。每张牌一面是白色，一面是黄色。翻一次，白色变黄色，黄色变白色。翻第1张。翻第2张。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8C%89%E9%A1%BA%E5%BA%8F%E7%BF%BB%E7%89%8C-%E6%9C%80%E5%90%8E%E6%AF%8F%E4%B8%AA%E4%BD%8D%E7%BD%AE%E6%9C%9D%E4%B8%8A%E7%9A%84%E6%98%AF%E5%93%AA%E4%B8%80%E9%9D%A2-%E9%80%89%E5%9B%BE%E5%8D%A1-%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8-%E7%BF%BB%E7%AC%AC1%E5%BC%A0-%E7%BF%BB%E7%AC%AC2%E5%BC%A0.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8C%89%E9%A1%BA%E5%BA%8F%E7%BF%BB%E7%89%8C-%E6%9C%80%E5%90%8E%E6%AF%8F%E4%B8%AA%E4%BD%8D%E7%BD%AE%E6%9C%9D%E4%B8%8A%E7%9A%84%E6%98%AF%E5%93%AA%E4%B8%80%E9%9D%A2-%E9%80%89%E5%9B%BE%E5%8D%A1-%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8-%E6%AF%8F%E5%BC%A0%E7%89%8C%E4%B8%80%E9%9D%A2%E6%98%AF%E7%99%BD%E8%89%B2-%E4%B8%80%E9%9D%A2%E6%98%AF%E9%BB%84%E8%89%B2-%E7%BF%BB%E4%B8%80%E6%AC%A1-%E7%99%BD%E8%89%B2%E5%8F%98%E9%BB%84%E8%89%B2-%E9%BB%84%E8%89%B2%E5%8F%98%E7%99%BD%E8%89%B2-%E7%BF%BB%E7%AC%AC-612e141fd1.mp3"
     },
     {
       "id": "parent-能连续更新两张卡状态",
@@ -22620,20 +22652,20 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%83%BD%E8%BF%9E%E7%BB%AD%E6%9B%B4%E6%96%B0%E4%B8%A4%E5%BC%A0%E5%8D%A1%E7%8A%B6%E6%80%81.mp3"
     },
     {
-      "id": "prompt-按顺序翻牌-最后每个位置朝上的是哪一面-选图卡-点问号格放进去-图卡可以重复用-翻第2张-翻第3张",
+      "id": "prompt-按顺序翻牌-最后每个位置朝上的是哪一面-选图卡-点问号格放进去-图卡可以重复用-每张牌一面是白色-一面是黄色-翻一次-白色变黄色-黄色变白色-翻第-e108bef9c9",
       "kind": "prompt",
-      "text": "按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。翻第2张。翻第3张。",
+      "text": "按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。每张牌一面是白色，一面是黄色。翻一次，白色变黄色，黄色变白色。翻第2张。翻第3张。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8C%89%E9%A1%BA%E5%BA%8F%E7%BF%BB%E7%89%8C-%E6%9C%80%E5%90%8E%E6%AF%8F%E4%B8%AA%E4%BD%8D%E7%BD%AE%E6%9C%9D%E4%B8%8A%E7%9A%84%E6%98%AF%E5%93%AA%E4%B8%80%E9%9D%A2-%E9%80%89%E5%9B%BE%E5%8D%A1-%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8-%E7%BF%BB%E7%AC%AC2%E5%BC%A0-%E7%BF%BB%E7%AC%AC3%E5%BC%A0.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8C%89%E9%A1%BA%E5%BA%8F%E7%BF%BB%E7%89%8C-%E6%9C%80%E5%90%8E%E6%AF%8F%E4%B8%AA%E4%BD%8D%E7%BD%AE%E6%9C%9D%E4%B8%8A%E7%9A%84%E6%98%AF%E5%93%AA%E4%B8%80%E9%9D%A2-%E9%80%89%E5%9B%BE%E5%8D%A1-%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8-%E6%AF%8F%E5%BC%A0%E7%89%8C%E4%B8%80%E9%9D%A2%E6%98%AF%E7%99%BD%E8%89%B2-%E4%B8%80%E9%9D%A2%E6%98%AF%E9%BB%84%E8%89%B2-%E7%BF%BB%E4%B8%80%E6%AC%A1-%E7%99%BD%E8%89%B2%E5%8F%98%E9%BB%84%E8%89%B2-%E9%BB%84%E8%89%B2%E5%8F%98%E7%99%BD%E8%89%B2-%E7%BF%BB%E7%AC%AC-e108bef9c9.mp3"
     },
     {
-      "id": "prompt-按顺序翻牌-最后每个位置朝上的是哪一面-选图卡-点问号格放进去-图卡可以重复用-翻第3张-翻第4张",
+      "id": "prompt-按顺序翻牌-最后每个位置朝上的是哪一面-选图卡-点问号格放进去-图卡可以重复用-每张牌一面是白色-一面是黄色-翻一次-白色变黄色-黄色变白色-翻第-180dbf63e6",
       "kind": "prompt",
-      "text": "按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。翻第3张。翻第4张。",
+      "text": "按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。每张牌一面是白色，一面是黄色。翻一次，白色变黄色，黄色变白色。翻第3张。翻第4张。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8C%89%E9%A1%BA%E5%BA%8F%E7%BF%BB%E7%89%8C-%E6%9C%80%E5%90%8E%E6%AF%8F%E4%B8%AA%E4%BD%8D%E7%BD%AE%E6%9C%9D%E4%B8%8A%E7%9A%84%E6%98%AF%E5%93%AA%E4%B8%80%E9%9D%A2-%E9%80%89%E5%9B%BE%E5%8D%A1-%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8-%E7%BF%BB%E7%AC%AC3%E5%BC%A0-%E7%BF%BB%E7%AC%AC4%E5%BC%A0.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8C%89%E9%A1%BA%E5%BA%8F%E7%BF%BB%E7%89%8C-%E6%9C%80%E5%90%8E%E6%AF%8F%E4%B8%AA%E4%BD%8D%E7%BD%AE%E6%9C%9D%E4%B8%8A%E7%9A%84%E6%98%AF%E5%93%AA%E4%B8%80%E9%9D%A2-%E9%80%89%E5%9B%BE%E5%8D%A1-%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8-%E6%AF%8F%E5%BC%A0%E7%89%8C%E4%B8%80%E9%9D%A2%E6%98%AF%E7%99%BD%E8%89%B2-%E4%B8%80%E9%9D%A2%E6%98%AF%E9%BB%84%E8%89%B2-%E7%BF%BB%E4%B8%80%E6%AC%A1-%E7%99%BD%E8%89%B2%E5%8F%98%E9%BB%84%E8%89%B2-%E9%BB%84%E8%89%B2%E5%8F%98%E7%99%BD%E8%89%B2-%E7%BF%BB%E7%AC%AC-180dbf63e6.mp3"
     },
     {
       "id": "clue-翻第4张",
@@ -22644,12 +22676,12 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E7%BF%BB%E7%AC%AC4%E5%BC%A0.mp3"
     },
     {
-      "id": "prompt-按顺序翻牌-最后每个位置朝上的是哪一面-选图卡-点问号格放进去-图卡可以重复用-翻第1张-翻第2张-翻第1张",
+      "id": "prompt-按顺序翻牌-最后每个位置朝上的是哪一面-选图卡-点问号格放进去-图卡可以重复用-每张牌一面是白色-一面是黄色-翻一次-白色变黄色-黄色变白色-翻第-35565b0e6b",
       "kind": "prompt",
-      "text": "按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。翻第1张。翻第2张。翻第1张。",
+      "text": "按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。每张牌一面是白色，一面是黄色。翻一次，白色变黄色，黄色变白色。翻第1张。翻第2张。翻第1张。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8C%89%E9%A1%BA%E5%BA%8F%E7%BF%BB%E7%89%8C-%E6%9C%80%E5%90%8E%E6%AF%8F%E4%B8%AA%E4%BD%8D%E7%BD%AE%E6%9C%9D%E4%B8%8A%E7%9A%84%E6%98%AF%E5%93%AA%E4%B8%80%E9%9D%A2-%E9%80%89%E5%9B%BE%E5%8D%A1-%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8-%E7%BF%BB%E7%AC%AC1%E5%BC%A0-%E7%BF%BB%E7%AC%AC2%E5%BC%A0-%E7%BF%BB%E7%AC%AC1%E5%BC%A0.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8C%89%E9%A1%BA%E5%BA%8F%E7%BF%BB%E7%89%8C-%E6%9C%80%E5%90%8E%E6%AF%8F%E4%B8%AA%E4%BD%8D%E7%BD%AE%E6%9C%9D%E4%B8%8A%E7%9A%84%E6%98%AF%E5%93%AA%E4%B8%80%E9%9D%A2-%E9%80%89%E5%9B%BE%E5%8D%A1-%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8-%E6%AF%8F%E5%BC%A0%E7%89%8C%E4%B8%80%E9%9D%A2%E6%98%AF%E7%99%BD%E8%89%B2-%E4%B8%80%E9%9D%A2%E6%98%AF%E9%BB%84%E8%89%B2-%E7%BF%BB%E4%B8%80%E6%AC%A1-%E7%99%BD%E8%89%B2%E5%8F%98%E9%BB%84%E8%89%B2-%E9%BB%84%E8%89%B2%E5%8F%98%E7%99%BD%E8%89%B2-%E7%BF%BB%E7%AC%AC-35565b0e6b.mp3"
     },
     {
       "id": "parent-理解同一卡翻两次恢复原样",
@@ -22660,20 +22692,20 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E7%90%86%E8%A7%A3%E5%90%8C%E4%B8%80%E5%8D%A1%E7%BF%BB%E4%B8%A4%E6%AC%A1%E6%81%A2%E5%A4%8D%E5%8E%9F%E6%A0%B7.mp3"
     },
     {
-      "id": "prompt-按顺序翻牌-最后每个位置朝上的是哪一面-选图卡-点问号格放进去-图卡可以重复用-翻第2张-翻第3张-翻第2张",
+      "id": "prompt-按顺序翻牌-最后每个位置朝上的是哪一面-选图卡-点问号格放进去-图卡可以重复用-每张牌一面是白色-一面是黄色-翻一次-白色变黄色-黄色变白色-翻第-8728ce6a49",
       "kind": "prompt",
-      "text": "按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。翻第2张。翻第3张。翻第2张。",
+      "text": "按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。每张牌一面是白色，一面是黄色。翻一次，白色变黄色，黄色变白色。翻第2张。翻第3张。翻第2张。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8C%89%E9%A1%BA%E5%BA%8F%E7%BF%BB%E7%89%8C-%E6%9C%80%E5%90%8E%E6%AF%8F%E4%B8%AA%E4%BD%8D%E7%BD%AE%E6%9C%9D%E4%B8%8A%E7%9A%84%E6%98%AF%E5%93%AA%E4%B8%80%E9%9D%A2-%E9%80%89%E5%9B%BE%E5%8D%A1-%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8-%E7%BF%BB%E7%AC%AC2%E5%BC%A0-%E7%BF%BB%E7%AC%AC3%E5%BC%A0-%E7%BF%BB%E7%AC%AC2%E5%BC%A0.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8C%89%E9%A1%BA%E5%BA%8F%E7%BF%BB%E7%89%8C-%E6%9C%80%E5%90%8E%E6%AF%8F%E4%B8%AA%E4%BD%8D%E7%BD%AE%E6%9C%9D%E4%B8%8A%E7%9A%84%E6%98%AF%E5%93%AA%E4%B8%80%E9%9D%A2-%E9%80%89%E5%9B%BE%E5%8D%A1-%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8-%E6%AF%8F%E5%BC%A0%E7%89%8C%E4%B8%80%E9%9D%A2%E6%98%AF%E7%99%BD%E8%89%B2-%E4%B8%80%E9%9D%A2%E6%98%AF%E9%BB%84%E8%89%B2-%E7%BF%BB%E4%B8%80%E6%AC%A1-%E7%99%BD%E8%89%B2%E5%8F%98%E9%BB%84%E8%89%B2-%E9%BB%84%E8%89%B2%E5%8F%98%E7%99%BD%E8%89%B2-%E7%BF%BB%E7%AC%AC-8728ce6a49.mp3"
     },
     {
-      "id": "prompt-按顺序翻牌-最后每个位置朝上的是哪一面-选图卡-点问号格放进去-图卡可以重复用-翻第3张-翻第4张-翻第3张",
+      "id": "prompt-按顺序翻牌-最后每个位置朝上的是哪一面-选图卡-点问号格放进去-图卡可以重复用-每张牌一面是白色-一面是黄色-翻一次-白色变黄色-黄色变白色-翻第-7e688f6b0b",
       "kind": "prompt",
-      "text": "按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。翻第3张。翻第4张。翻第3张。",
+      "text": "按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。每张牌一面是白色，一面是黄色。翻一次，白色变黄色，黄色变白色。翻第3张。翻第4张。翻第3张。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8C%89%E9%A1%BA%E5%BA%8F%E7%BF%BB%E7%89%8C-%E6%9C%80%E5%90%8E%E6%AF%8F%E4%B8%AA%E4%BD%8D%E7%BD%AE%E6%9C%9D%E4%B8%8A%E7%9A%84%E6%98%AF%E5%93%AA%E4%B8%80%E9%9D%A2-%E9%80%89%E5%9B%BE%E5%8D%A1-%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8-%E7%BF%BB%E7%AC%AC3%E5%BC%A0-%E7%BF%BB%E7%AC%AC4%E5%BC%A0-%E7%BF%BB%E7%AC%AC3%E5%BC%A0.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8C%89%E9%A1%BA%E5%BA%8F%E7%BF%BB%E7%89%8C-%E6%9C%80%E5%90%8E%E6%AF%8F%E4%B8%AA%E4%BD%8D%E7%BD%AE%E6%9C%9D%E4%B8%8A%E7%9A%84%E6%98%AF%E5%93%AA%E4%B8%80%E9%9D%A2-%E9%80%89%E5%9B%BE%E5%8D%A1-%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8-%E6%AF%8F%E5%BC%A0%E7%89%8C%E4%B8%80%E9%9D%A2%E6%98%AF%E7%99%BD%E8%89%B2-%E4%B8%80%E9%9D%A2%E6%98%AF%E9%BB%84%E8%89%B2-%E7%BF%BB%E4%B8%80%E6%AC%A1-%E7%99%BD%E8%89%B2%E5%8F%98%E9%BB%84%E8%89%B2-%E9%BB%84%E8%89%B2%E5%8F%98%E7%99%BD%E8%89%B2-%E7%BF%BB%E7%AC%AC-7e688f6b0b.mp3"
     },
     {
       "id": "game-title-两位朋友走格子",
@@ -23204,12 +23236,12 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E7%9F%A5%E9%81%93%E7%99%BD%E6%A3%8B%E9%98%BB%E6%96%AD%E9%BB%91%E6%A3%8B%E4%B8%89%E8%BF%9E.mp3"
     },
     {
-      "id": "prompt-下一颗黑子放在哪里-能夹住最多白子-把所有符合条件的图卡选出来-再检查一次-新落下的黑子和已有黑子之间-要连续夹着白子-空格会把夹子断开-找出所有",
+      "id": "prompt-下一颗黑子放在哪里-能夹住最多白子-把所有符合条件的图卡选出来-再检查一次-横着-竖着-斜着都可以夹-每个方向夹到的白子合起来数-新落下的黑子和已",
       "kind": "prompt",
-      "text": "下一颗黑子放在哪里，能夹住最多白子。把所有符合条件的图卡选出来，再检查一次。新落下的黑子和已有黑子之间，要连续夹着白子。空格会把夹子断开。找出所有夹住最多白子的落点。",
+      "text": "下一颗黑子放在哪里，能夹住最多白子。把所有符合条件的图卡选出来，再检查一次。横着、竖着、斜着都可以夹。每个方向夹到的白子合起来数。新落下的黑子和已有黑子之间，要连续夹着白子。空格会把夹子断开。找出所有夹住最多白子的落点。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E4%B8%8B%E4%B8%80%E9%A2%97%E9%BB%91%E5%AD%90%E6%94%BE%E5%9C%A8%E5%93%AA%E9%87%8C-%E8%83%BD%E5%A4%B9%E4%BD%8F%E6%9C%80%E5%A4%9A%E7%99%BD%E5%AD%90-%E6%8A%8A%E6%89%80%E6%9C%89%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E5%9B%BE%E5%8D%A1%E9%80%89%E5%87%BA%E6%9D%A5-%E5%86%8D%E6%A3%80%E6%9F%A5%E4%B8%80%E6%AC%A1-%E6%96%B0%E8%90%BD%E4%B8%8B%E7%9A%84%E9%BB%91%E5%AD%90%E5%92%8C%E5%B7%B2%E6%9C%89%E9%BB%91%E5%AD%90%E4%B9%8B%E9%97%B4-%E8%A6%81%E8%BF%9E%E7%BB%AD%E5%A4%B9%E7%9D%80%E7%99%BD%E5%AD%90-%E7%A9%BA%E6%A0%BC%E4%BC%9A%E6%8A%8A%E5%A4%B9%E5%AD%90%E6%96%AD%E5%BC%80-%E6%89%BE%E5%87%BA%E6%89%80%E6%9C%89.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E4%B8%8B%E4%B8%80%E9%A2%97%E9%BB%91%E5%AD%90%E6%94%BE%E5%9C%A8%E5%93%AA%E9%87%8C-%E8%83%BD%E5%A4%B9%E4%BD%8F%E6%9C%80%E5%A4%9A%E7%99%BD%E5%AD%90-%E6%8A%8A%E6%89%80%E6%9C%89%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E5%9B%BE%E5%8D%A1%E9%80%89%E5%87%BA%E6%9D%A5-%E5%86%8D%E6%A3%80%E6%9F%A5%E4%B8%80%E6%AC%A1-%E6%A8%AA%E7%9D%80-%E7%AB%96%E7%9D%80-%E6%96%9C%E7%9D%80%E9%83%BD%E5%8F%AF%E4%BB%A5%E5%A4%B9-%E6%AF%8F%E4%B8%AA%E6%96%B9%E5%90%91%E5%A4%B9%E5%88%B0%E7%9A%84%E7%99%BD%E5%AD%90%E5%90%88%E8%B5%B7%E6%9D%A5%E6%95%B0-%E6%96%B0%E8%90%BD%E4%B8%8B%E7%9A%84%E9%BB%91%E5%AD%90%E5%92%8C%E5%B7%B2.mp3"
     },
     {
       "id": "success-沿横-竖和斜线检查-两端是黑子-中间连续白子才算夹住-这题最多夹住1颗-并列最多的都可以选",
@@ -23228,12 +23260,12 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E7%90%86%E8%A7%A3%E8%BF%9E%E7%BB%AD%E7%99%BD%E6%A3%8B%E7%94%B1%E4%B8%A4%E9%BB%91%E7%AB%AF%E5%A4%B9%E4%BD%8F-%E5%B9%B6%E8%83%BD%E6%AF%94%E8%BE%83%E5%A4%9A%E4%B8%AA%E8%90%BD%E7%82%B9.mp3"
     },
     {
-      "id": "hint-新落下的黑子和已有黑子之间-要连续夹着白子",
+      "id": "hint-横着-竖着-斜着都可以夹-每个方向夹到的白子合起来数",
       "kind": "hint",
-      "text": "新落下的黑子和已有黑子之间，要连续夹着白子。",
+      "text": "横着、竖着、斜着都可以夹。每个方向夹到的白子合起来数。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E6%96%B0%E8%90%BD%E4%B8%8B%E7%9A%84%E9%BB%91%E5%AD%90%E5%92%8C%E5%B7%B2%E6%9C%89%E9%BB%91%E5%AD%90%E4%B9%8B%E9%97%B4-%E8%A6%81%E8%BF%9E%E7%BB%AD%E5%A4%B9%E7%9D%80%E7%99%BD%E5%AD%90.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E6%A8%AA%E7%9D%80-%E7%AB%96%E7%9D%80-%E6%96%9C%E7%9D%80%E9%83%BD%E5%8F%AF%E4%BB%A5%E5%A4%B9-%E6%AF%8F%E4%B8%AA%E6%96%B9%E5%90%91%E5%A4%B9%E5%88%B0%E7%9A%84%E7%99%BD%E5%AD%90%E5%90%88%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
     },
     {
       "id": "hint-沿横-竖和斜线检查-两端是黑子-中间连续白子才算夹住-这题最多夹住1颗-并列最多的都可以选",
@@ -23242,6 +23274,14 @@
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E6%B2%BF%E6%A8%AA-%E7%AB%96%E5%92%8C%E6%96%9C%E7%BA%BF%E6%A3%80%E6%9F%A5-%E4%B8%A4%E7%AB%AF%E6%98%AF%E9%BB%91%E5%AD%90-%E4%B8%AD%E9%97%B4%E8%BF%9E%E7%BB%AD%E7%99%BD%E5%AD%90%E6%89%8D%E7%AE%97%E5%A4%B9%E4%BD%8F-%E8%BF%99%E9%A2%98%E6%9C%80%E5%A4%9A%E5%A4%B9%E4%BD%8F1%E9%A2%97-%E5%B9%B6%E5%88%97%E6%9C%80%E5%A4%9A%E7%9A%84%E9%83%BD%E5%8F%AF%E4%BB%A5%E9%80%89.mp3"
+    },
+    {
+      "id": "clue-横着-竖着-斜着都可以夹-每个方向夹到的白子合起来数",
+      "kind": "clue",
+      "text": "横着、竖着、斜着都可以夹。每个方向夹到的白子合起来数。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E6%A8%AA%E7%9D%80-%E7%AB%96%E7%9D%80-%E6%96%9C%E7%9D%80%E9%83%BD%E5%8F%AF%E4%BB%A5%E5%A4%B9-%E6%AF%8F%E4%B8%AA%E6%96%B9%E5%90%91%E5%A4%B9%E5%88%B0%E7%9A%84%E7%99%BD%E5%AD%90%E5%90%88%E8%B5%B7%E6%9D%A5%E6%95%B0.mp3"
     },
     {
       "id": "clue-新落下的黑子和已有黑子之间-要连续夹着白子",
@@ -26335,12 +26375,12 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E6%8A%8A%E6%AF%8F%E6%91%9E%E7%9A%84%E5%9D%97%E6%95%B0%E5%8A%A0%E8%B5%B7%E6%9D%A5-%E6%8C%A1%E5%9C%A8%E5%90%8E%E9%9D%A2%E7%9A%84%E4%B9%9F%E4%B8%8D%E8%83%BD%E6%BC%8F%E6%8E%89.mp3"
     },
     {
-      "id": "prompt-根据前-侧-上三个视图-哪些搭法都有可能-把所有符合条件的图卡选出来-再检查一次",
+      "id": "prompt-根据前-侧-上三个视图-哪些搭法都有可能-把所有符合条件的图卡选出来-再检查一次-沿-前-和-侧-的箭头看-上视图的蓝格表示有积木",
       "kind": "prompt",
-      "text": "根据前、侧、上三个视图，哪些搭法都有可能。把所有符合条件的图卡选出来，再检查一次。",
+      "text": "根据前、侧、上三个视图，哪些搭法都有可能。把所有符合条件的图卡选出来，再检查一次。沿“前”和“侧”的箭头看；上视图的蓝格表示有积木。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%A0%B9%E6%8D%AE%E5%89%8D-%E4%BE%A7-%E4%B8%8A%E4%B8%89%E4%B8%AA%E8%A7%86%E5%9B%BE-%E5%93%AA%E4%BA%9B%E6%90%AD%E6%B3%95%E9%83%BD%E6%9C%89%E5%8F%AF%E8%83%BD-%E6%8A%8A%E6%89%80%E6%9C%89%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E5%9B%BE%E5%8D%A1%E9%80%89%E5%87%BA%E6%9D%A5-%E5%86%8D%E6%A3%80%E6%9F%A5%E4%B8%80%E6%AC%A1.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%A0%B9%E6%8D%AE%E5%89%8D-%E4%BE%A7-%E4%B8%8A%E4%B8%89%E4%B8%AA%E8%A7%86%E5%9B%BE-%E5%93%AA%E4%BA%9B%E6%90%AD%E6%B3%95%E9%83%BD%E6%9C%89%E5%8F%AF%E8%83%BD-%E6%8A%8A%E6%89%80%E6%9C%89%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E5%9B%BE%E5%8D%A1%E9%80%89%E5%87%BA%E6%9D%A5-%E5%86%8D%E6%A3%80%E6%9F%A5%E4%B8%80%E6%AC%A1-%E6%B2%BF-%E5%89%8D-%E5%92%8C-%E4%BE%A7-%E7%9A%84%E7%AE%AD%E5%A4%B4%E7%9C%8B-%E4%B8%8A%E8%A7%86%E5%9B%BE%E7%9A%84%E8%93%9D%E6%A0%BC%E8%A1%A8%E7%A4%BA%E6%9C%89%E7%A7%AF%E6%9C%A8.mp3"
     },
     {
       "id": "success-从每个方向看到的轮廓都要相符-只看轮廓-有时不能确定藏在后面的高度",
@@ -26359,12 +26399,28 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E7%90%86%E8%A7%A3%E5%89%8D%E4%BE%A7%E4%B8%8A%E4%B8%89%E4%B8%AA%E8%A7%86%E5%9B%BE%E5%8F%8A%E9%AB%98%E5%BA%A6%E9%81%AE%E6%8C%A1.mp3"
     },
     {
+      "id": "hint-沿-前-和-侧-的箭头看-上视图的蓝格表示有积木",
+      "kind": "hint",
+      "text": "沿“前”和“侧”的箭头看；上视图的蓝格表示有积木。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E6%B2%BF-%E5%89%8D-%E5%92%8C-%E4%BE%A7-%E7%9A%84%E7%AE%AD%E5%A4%B4%E7%9C%8B-%E4%B8%8A%E8%A7%86%E5%9B%BE%E7%9A%84%E8%93%9D%E6%A0%BC%E8%A1%A8%E7%A4%BA%E6%9C%89%E7%A7%AF%E6%9C%A8.mp3"
+    },
+    {
       "id": "hint-从每个方向看到的轮廓都要相符-只看轮廓-有时不能确定藏在后面的高度",
       "kind": "hint",
       "text": "从每个方向看到的轮廓都要相符。只看轮廓，有时不能确定藏在后面的高度。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E4%BB%8E%E6%AF%8F%E4%B8%AA%E6%96%B9%E5%90%91%E7%9C%8B%E5%88%B0%E7%9A%84%E8%BD%AE%E5%BB%93%E9%83%BD%E8%A6%81%E7%9B%B8%E7%AC%A6-%E5%8F%AA%E7%9C%8B%E8%BD%AE%E5%BB%93-%E6%9C%89%E6%97%B6%E4%B8%8D%E8%83%BD%E7%A1%AE%E5%AE%9A%E8%97%8F%E5%9C%A8%E5%90%8E%E9%9D%A2%E7%9A%84%E9%AB%98%E5%BA%A6.mp3"
+    },
+    {
+      "id": "clue-沿-前-和-侧-的箭头看-上视图的蓝格表示有积木",
+      "kind": "clue",
+      "text": "沿“前”和“侧”的箭头看；上视图的蓝格表示有积木。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E6%B2%BF-%E5%89%8D-%E5%92%8C-%E4%BE%A7-%E7%9A%84%E7%AE%AD%E5%A4%B4%E7%9C%8B-%E4%B8%8A%E8%A7%86%E5%9B%BE%E7%9A%84%E8%93%9D%E6%A0%BC%E8%A1%A8%E7%A4%BA%E6%9C%89%E7%A7%AF%E6%9C%A8.mp3"
     },
     {
       "id": "object-搭法1",
@@ -26471,12 +26527,44 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%83%BD%E9%9A%8F%E4%BA%BA%E7%89%A9%E6%9C%9D%E5%90%91%E8%BD%AC%E6%8D%A2%E5%B7%A6%E5%8F%B3%E5%8F%82%E7%85%A7.mp3"
     },
     {
+      "id": "success-箭头指向小朋友面朝的方向-也就是前面-相反方向是后面-红球在小朋友的前面",
+      "kind": "success",
+      "text": "箭头指向小朋友面朝的方向，也就是前面；相反方向是后面。红球在小朋友的前面。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%AE%AD%E5%A4%B4%E6%8C%87%E5%90%91%E5%B0%8F%E6%9C%8B%E5%8F%8B%E9%9D%A2%E6%9C%9D%E7%9A%84%E6%96%B9%E5%90%91-%E4%B9%9F%E5%B0%B1%E6%98%AF%E5%89%8D%E9%9D%A2-%E7%9B%B8%E5%8F%8D%E6%96%B9%E5%90%91%E6%98%AF%E5%90%8E%E9%9D%A2-%E7%BA%A2%E7%90%83%E5%9C%A8%E5%B0%8F%E6%9C%8B%E5%8F%8B%E7%9A%84%E5%89%8D%E9%9D%A2.mp3"
+    },
+    {
       "id": "parent-理解人物前后并与画面上下区分",
       "kind": "parent",
       "text": "理解人物前后并与画面上下区分",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E7%90%86%E8%A7%A3%E4%BA%BA%E7%89%A9%E5%89%8D%E5%90%8E%E5%B9%B6%E4%B8%8E%E7%94%BB%E9%9D%A2%E4%B8%8A%E4%B8%8B%E5%8C%BA%E5%88%86.mp3"
+    },
+    {
+      "id": "hint-箭头指向小朋友面朝的方向-也就是前面-相反方向是后面-红球在小朋友的前面",
+      "kind": "hint",
+      "text": "箭头指向小朋友面朝的方向，也就是前面；相反方向是后面。红球在小朋友的前面。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E7%AE%AD%E5%A4%B4%E6%8C%87%E5%90%91%E5%B0%8F%E6%9C%8B%E5%8F%8B%E9%9D%A2%E6%9C%9D%E7%9A%84%E6%96%B9%E5%90%91-%E4%B9%9F%E5%B0%B1%E6%98%AF%E5%89%8D%E9%9D%A2-%E7%9B%B8%E5%8F%8D%E6%96%B9%E5%90%91%E6%98%AF%E5%90%8E%E9%9D%A2-%E7%BA%A2%E7%90%83%E5%9C%A8%E5%B0%8F%E6%9C%8B%E5%8F%8B%E7%9A%84%E5%89%8D%E9%9D%A2.mp3"
+    },
+    {
+      "id": "success-箭头指向小朋友面朝的方向-也就是前面-相反方向是后面-红球在小朋友的后面",
+      "kind": "success",
+      "text": "箭头指向小朋友面朝的方向，也就是前面；相反方向是后面。红球在小朋友的后面。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%AE%AD%E5%A4%B4%E6%8C%87%E5%90%91%E5%B0%8F%E6%9C%8B%E5%8F%8B%E9%9D%A2%E6%9C%9D%E7%9A%84%E6%96%B9%E5%90%91-%E4%B9%9F%E5%B0%B1%E6%98%AF%E5%89%8D%E9%9D%A2-%E7%9B%B8%E5%8F%8D%E6%96%B9%E5%90%91%E6%98%AF%E5%90%8E%E9%9D%A2-%E7%BA%A2%E7%90%83%E5%9C%A8%E5%B0%8F%E6%9C%8B%E5%8F%8B%E7%9A%84%E5%90%8E%E9%9D%A2.mp3"
+    },
+    {
+      "id": "hint-箭头指向小朋友面朝的方向-也就是前面-相反方向是后面-红球在小朋友的后面",
+      "kind": "hint",
+      "text": "箭头指向小朋友面朝的方向，也就是前面；相反方向是后面。红球在小朋友的后面。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E7%AE%AD%E5%A4%B4%E6%8C%87%E5%90%91%E5%B0%8F%E6%9C%8B%E5%8F%8B%E9%9D%A2%E6%9C%9D%E7%9A%84%E6%96%B9%E5%90%91-%E4%B9%9F%E5%B0%B1%E6%98%AF%E5%89%8D%E9%9D%A2-%E7%9B%B8%E5%8F%8D%E6%96%B9%E5%90%91%E6%98%AF%E5%90%8E%E9%9D%A2-%E7%BA%A2%E7%90%83%E5%9C%A8%E5%B0%8F%E6%9C%8B%E5%8F%8B%E7%9A%84%E5%90%8E%E9%9D%A2.mp3"
     },
     {
       "id": "game-title-纸盒六个面",
@@ -27028,12 +27116,12 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/game-goal-%E5%B0%91%E6%A7%BD%E4%BD%8D-%E4%BD%8D%E7%BD%AE%E4%B8%8E%E5%AF%B9%E8%B1%A1-%E8%A7%84%E5%88%99%E8%BE%85%E5%8A%A9%E8%AE%B0%E5%BF%86.mp3"
     },
     {
-      "id": "prompt-记住每个位置-再把图案摆回来-选图卡-点问号格放进去-图卡可以重复用",
+      "id": "prompt-记住每个位置-再把图案摆回来-原本空着的位置也要放空白卡-选图卡-点问号格放进去-图卡可以重复用",
       "kind": "prompt",
-      "text": "记住每个位置，再把图案摆回来。选图卡，点问号格放进去。图卡可以重复用。",
+      "text": "记住每个位置，再把图案摆回来。原本空着的位置也要放空白卡。选图卡，点问号格放进去。图卡可以重复用。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%AE%B0%E4%BD%8F%E6%AF%8F%E4%B8%AA%E4%BD%8D%E7%BD%AE-%E5%86%8D%E6%8A%8A%E5%9B%BE%E6%A1%88%E6%91%86%E5%9B%9E%E6%9D%A5-%E9%80%89%E5%9B%BE%E5%8D%A1-%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%AE%B0%E4%BD%8F%E6%AF%8F%E4%B8%AA%E4%BD%8D%E7%BD%AE-%E5%86%8D%E6%8A%8A%E5%9B%BE%E6%A1%88%E6%91%86%E5%9B%9E%E6%9D%A5-%E5%8E%9F%E6%9C%AC%E7%A9%BA%E7%9D%80%E7%9A%84%E4%BD%8D%E7%BD%AE%E4%B9%9F%E8%A6%81%E6%94%BE%E7%A9%BA%E7%99%BD%E5%8D%A1-%E9%80%89%E5%9B%BE%E5%8D%A1-%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8.mp3"
     },
     {
       "id": "success-物品和位置都要对应-原本空着的位置-也要用空白卡表示",
@@ -28879,12 +28967,12 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/game-goal-%E4%B8%A4%E5%9B%BE%E5%85%88%E5%90%8E-%E4%BA%8B%E4%BB%B6%E9%93%BE-%E8%A7%A3%E9%87%8A%E5%8E%9F%E5%9B%A0%E4%B8%8E%E4%B8%8D%E5%90%8C%E7%BB%93%E5%B1%80.mp3"
     },
     {
-      "id": "prompt-按这个故事的先后-把事件排好-先选图卡-再按位置编号排好-也可以拖过去-天上积起乌云以后-才开始下雨-开始下雨以后-才地面留下水洼",
+      "id": "prompt-按这个故事的先后-把事件排好-先选图卡-再按位置编号排好-也可以拖过去-乌云聚起来以后-开始下雨-下过雨后-地面留下了水洼",
       "kind": "prompt",
-      "text": "按这个故事的先后，把事件排好。先选图卡，再按位置编号排好。也可以拖过去。天上积起乌云以后，才开始下雨。开始下雨以后，才地面留下水洼。",
+      "text": "按这个故事的先后，把事件排好。先选图卡，再按位置编号排好。也可以拖过去。乌云聚起来以后，开始下雨。下过雨后，地面留下了水洼。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8C%89%E8%BF%99%E4%B8%AA%E6%95%85%E4%BA%8B%E7%9A%84%E5%85%88%E5%90%8E-%E6%8A%8A%E4%BA%8B%E4%BB%B6%E6%8E%92%E5%A5%BD-%E5%85%88%E9%80%89%E5%9B%BE%E5%8D%A1-%E5%86%8D%E6%8C%89%E4%BD%8D%E7%BD%AE%E7%BC%96%E5%8F%B7%E6%8E%92%E5%A5%BD-%E4%B9%9F%E5%8F%AF%E4%BB%A5%E6%8B%96%E8%BF%87%E5%8E%BB-%E5%A4%A9%E4%B8%8A%E7%A7%AF%E8%B5%B7%E4%B9%8C%E4%BA%91%E4%BB%A5%E5%90%8E-%E6%89%8D%E5%BC%80%E5%A7%8B%E4%B8%8B%E9%9B%A8-%E5%BC%80%E5%A7%8B%E4%B8%8B%E9%9B%A8%E4%BB%A5%E5%90%8E-%E6%89%8D%E5%9C%B0%E9%9D%A2%E7%95%99%E4%B8%8B%E6%B0%B4%E6%B4%BC.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8C%89%E8%BF%99%E4%B8%AA%E6%95%85%E4%BA%8B%E7%9A%84%E5%85%88%E5%90%8E-%E6%8A%8A%E4%BA%8B%E4%BB%B6%E6%8E%92%E5%A5%BD-%E5%85%88%E9%80%89%E5%9B%BE%E5%8D%A1-%E5%86%8D%E6%8C%89%E4%BD%8D%E7%BD%AE%E7%BC%96%E5%8F%B7%E6%8E%92%E5%A5%BD-%E4%B9%9F%E5%8F%AF%E4%BB%A5%E6%8B%96%E8%BF%87%E5%8E%BB-%E4%B9%8C%E4%BA%91%E8%81%9A%E8%B5%B7%E6%9D%A5%E4%BB%A5%E5%90%8E-%E5%BC%80%E5%A7%8B%E4%B8%8B%E9%9B%A8-%E4%B8%8B%E8%BF%87%E9%9B%A8%E5%90%8E-%E5%9C%B0%E9%9D%A2%E7%95%99%E4%B8%8B%E4%BA%86%E6%B0%B4%E6%B4%BC.mp3"
     },
     {
       "id": "success-按题目给定的事件关系连接-再用自己的话讲出来",
@@ -28903,12 +28991,12 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E7%90%86%E8%A7%A33%E5%B9%85%E5%9B%BE%E4%BA%8B%E4%BB%B6%E4%B8%8E%E7%BB%99%E5%AE%9A%E5%85%88%E5%90%8E%E5%85%B3%E7%B3%BB.mp3"
     },
     {
-      "id": "hint-天上积起乌云以后-才开始下雨",
+      "id": "hint-乌云聚起来以后-开始下雨",
       "kind": "hint",
-      "text": "天上积起乌云以后，才开始下雨。",
+      "text": "乌云聚起来以后，开始下雨。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E5%A4%A9%E4%B8%8A%E7%A7%AF%E8%B5%B7%E4%B9%8C%E4%BA%91%E4%BB%A5%E5%90%8E-%E6%89%8D%E5%BC%80%E5%A7%8B%E4%B8%8B%E9%9B%A8.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E4%B9%8C%E4%BA%91%E8%81%9A%E8%B5%B7%E6%9D%A5%E4%BB%A5%E5%90%8E-%E5%BC%80%E5%A7%8B%E4%B8%8B%E9%9B%A8.mp3"
     },
     {
       "id": "hint-按题目给定的事件关系连接-再用自己的话讲出来",
@@ -28919,20 +29007,20 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E6%8C%89%E9%A2%98%E7%9B%AE%E7%BB%99%E5%AE%9A%E7%9A%84%E4%BA%8B%E4%BB%B6%E5%85%B3%E7%B3%BB%E8%BF%9E%E6%8E%A5-%E5%86%8D%E7%94%A8%E8%87%AA%E5%B7%B1%E7%9A%84%E8%AF%9D%E8%AE%B2%E5%87%BA%E6%9D%A5.mp3"
     },
     {
-      "id": "clue-天上积起乌云以后-才开始下雨",
+      "id": "clue-乌云聚起来以后-开始下雨",
       "kind": "clue",
-      "text": "天上积起乌云以后，才开始下雨。",
+      "text": "乌云聚起来以后，开始下雨。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E5%A4%A9%E4%B8%8A%E7%A7%AF%E8%B5%B7%E4%B9%8C%E4%BA%91%E4%BB%A5%E5%90%8E-%E6%89%8D%E5%BC%80%E5%A7%8B%E4%B8%8B%E9%9B%A8.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E4%B9%8C%E4%BA%91%E8%81%9A%E8%B5%B7%E6%9D%A5%E4%BB%A5%E5%90%8E-%E5%BC%80%E5%A7%8B%E4%B8%8B%E9%9B%A8.mp3"
     },
     {
-      "id": "clue-开始下雨以后-才地面留下水洼",
+      "id": "clue-下过雨后-地面留下了水洼",
       "kind": "clue",
-      "text": "开始下雨以后，才地面留下水洼。",
+      "text": "下过雨后，地面留下了水洼。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E5%BC%80%E5%A7%8B%E4%B8%8B%E9%9B%A8%E4%BB%A5%E5%90%8E-%E6%89%8D%E5%9C%B0%E9%9D%A2%E7%95%99%E4%B8%8B%E6%B0%B4%E6%B4%BC.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E4%B8%8B%E8%BF%87%E9%9B%A8%E5%90%8E-%E5%9C%B0%E9%9D%A2%E7%95%99%E4%B8%8B%E4%BA%86%E6%B0%B4%E6%B4%BC.mp3"
     },
     {
       "id": "object-开始下雨",
@@ -28959,36 +29047,36 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%A4%A9%E4%B8%8A%E7%A7%AF%E8%B5%B7%E4%B9%8C%E4%BA%91.mp3"
     },
     {
-      "id": "prompt-按这个故事的先后-把事件排好-先选图卡-再按位置编号排好-也可以拖过去-小熊准备木块以后-才小熊搭起高塔-小熊搭起高塔以后-才球碰倒了高塔",
+      "id": "prompt-按这个故事的先后-把事件排好-先选图卡-再按位置编号排好-也可以拖过去-小熊先准备木块-再用木块搭起高塔-高塔搭好后-被滚来的球碰倒了",
       "kind": "prompt",
-      "text": "按这个故事的先后，把事件排好。先选图卡，再按位置编号排好。也可以拖过去。小熊准备木块以后，才小熊搭起高塔。小熊搭起高塔以后，才球碰倒了高塔。",
+      "text": "按这个故事的先后，把事件排好。先选图卡，再按位置编号排好。也可以拖过去。小熊先准备木块，再用木块搭起高塔。高塔搭好后，被滚来的球碰倒了。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8C%89%E8%BF%99%E4%B8%AA%E6%95%85%E4%BA%8B%E7%9A%84%E5%85%88%E5%90%8E-%E6%8A%8A%E4%BA%8B%E4%BB%B6%E6%8E%92%E5%A5%BD-%E5%85%88%E9%80%89%E5%9B%BE%E5%8D%A1-%E5%86%8D%E6%8C%89%E4%BD%8D%E7%BD%AE%E7%BC%96%E5%8F%B7%E6%8E%92%E5%A5%BD-%E4%B9%9F%E5%8F%AF%E4%BB%A5%E6%8B%96%E8%BF%87%E5%8E%BB-%E5%B0%8F%E7%86%8A%E5%87%86%E5%A4%87%E6%9C%A8%E5%9D%97%E4%BB%A5%E5%90%8E-%E6%89%8D%E5%B0%8F%E7%86%8A%E6%90%AD%E8%B5%B7%E9%AB%98%E5%A1%94-%E5%B0%8F%E7%86%8A%E6%90%AD%E8%B5%B7%E9%AB%98%E5%A1%94%E4%BB%A5%E5%90%8E-%E6%89%8D%E7%90%83%E7%A2%B0%E5%80%92%E4%BA%86%E9%AB%98%E5%A1%94.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8C%89%E8%BF%99%E4%B8%AA%E6%95%85%E4%BA%8B%E7%9A%84%E5%85%88%E5%90%8E-%E6%8A%8A%E4%BA%8B%E4%BB%B6%E6%8E%92%E5%A5%BD-%E5%85%88%E9%80%89%E5%9B%BE%E5%8D%A1-%E5%86%8D%E6%8C%89%E4%BD%8D%E7%BD%AE%E7%BC%96%E5%8F%B7%E6%8E%92%E5%A5%BD-%E4%B9%9F%E5%8F%AF%E4%BB%A5%E6%8B%96%E8%BF%87%E5%8E%BB-%E5%B0%8F%E7%86%8A%E5%85%88%E5%87%86%E5%A4%87%E6%9C%A8%E5%9D%97-%E5%86%8D%E7%94%A8%E6%9C%A8%E5%9D%97%E6%90%AD%E8%B5%B7%E9%AB%98%E5%A1%94-%E9%AB%98%E5%A1%94%E6%90%AD%E5%A5%BD%E5%90%8E-%E8%A2%AB%E6%BB%9A%E6%9D%A5%E7%9A%84%E7%90%83%E7%A2%B0%E5%80%92%E4%BA%86.mp3"
     },
     {
-      "id": "hint-小熊准备木块以后-才小熊搭起高塔",
+      "id": "hint-小熊先准备木块-再用木块搭起高塔",
       "kind": "hint",
-      "text": "小熊准备木块以后，才小熊搭起高塔。",
+      "text": "小熊先准备木块，再用木块搭起高塔。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E5%B0%8F%E7%86%8A%E5%87%86%E5%A4%87%E6%9C%A8%E5%9D%97%E4%BB%A5%E5%90%8E-%E6%89%8D%E5%B0%8F%E7%86%8A%E6%90%AD%E8%B5%B7%E9%AB%98%E5%A1%94.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E5%B0%8F%E7%86%8A%E5%85%88%E5%87%86%E5%A4%87%E6%9C%A8%E5%9D%97-%E5%86%8D%E7%94%A8%E6%9C%A8%E5%9D%97%E6%90%AD%E8%B5%B7%E9%AB%98%E5%A1%94.mp3"
     },
     {
-      "id": "clue-小熊准备木块以后-才小熊搭起高塔",
+      "id": "clue-小熊先准备木块-再用木块搭起高塔",
       "kind": "clue",
-      "text": "小熊准备木块以后，才小熊搭起高塔。",
+      "text": "小熊先准备木块，再用木块搭起高塔。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E5%B0%8F%E7%86%8A%E5%87%86%E5%A4%87%E6%9C%A8%E5%9D%97%E4%BB%A5%E5%90%8E-%E6%89%8D%E5%B0%8F%E7%86%8A%E6%90%AD%E8%B5%B7%E9%AB%98%E5%A1%94.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E5%B0%8F%E7%86%8A%E5%85%88%E5%87%86%E5%A4%87%E6%9C%A8%E5%9D%97-%E5%86%8D%E7%94%A8%E6%9C%A8%E5%9D%97%E6%90%AD%E8%B5%B7%E9%AB%98%E5%A1%94.mp3"
     },
     {
-      "id": "clue-小熊搭起高塔以后-才球碰倒了高塔",
+      "id": "clue-高塔搭好后-被滚来的球碰倒了",
       "kind": "clue",
-      "text": "小熊搭起高塔以后，才球碰倒了高塔。",
+      "text": "高塔搭好后，被滚来的球碰倒了。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E5%B0%8F%E7%86%8A%E6%90%AD%E8%B5%B7%E9%AB%98%E5%A1%94%E4%BB%A5%E5%90%8E-%E6%89%8D%E7%90%83%E7%A2%B0%E5%80%92%E4%BA%86%E9%AB%98%E5%A1%94.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E9%AB%98%E5%A1%94%E6%90%AD%E5%A5%BD%E5%90%8E-%E8%A2%AB%E6%BB%9A%E6%9D%A5%E7%9A%84%E7%90%83%E7%A2%B0%E5%80%92%E4%BA%86.mp3"
     },
     {
       "id": "object-球碰倒了高塔",
@@ -29015,36 +29103,36 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%B0%8F%E7%86%8A%E6%90%AD%E8%B5%B7%E9%AB%98%E5%A1%94.mp3"
     },
     {
-      "id": "prompt-按这个故事的先后-把事件排好-先选图卡-再按位置编号排好-也可以拖过去-小猫收到种子以后-才把种子种进土里-把种子种进土里以后-才按记录照顾小苗",
+      "id": "prompt-按这个故事的先后-把事件排好-先选图卡-再按位置编号排好-也可以拖过去-小猫收到种子以后-把种子种进土里-种好以后-小猫按记录照顾长出来的小苗",
       "kind": "prompt",
-      "text": "按这个故事的先后，把事件排好。先选图卡，再按位置编号排好。也可以拖过去。小猫收到种子以后，才把种子种进土里。把种子种进土里以后，才按记录照顾小苗。",
+      "text": "按这个故事的先后，把事件排好。先选图卡，再按位置编号排好。也可以拖过去。小猫收到种子以后，把种子种进土里。种好以后，小猫按记录照顾长出来的小苗。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8C%89%E8%BF%99%E4%B8%AA%E6%95%85%E4%BA%8B%E7%9A%84%E5%85%88%E5%90%8E-%E6%8A%8A%E4%BA%8B%E4%BB%B6%E6%8E%92%E5%A5%BD-%E5%85%88%E9%80%89%E5%9B%BE%E5%8D%A1-%E5%86%8D%E6%8C%89%E4%BD%8D%E7%BD%AE%E7%BC%96%E5%8F%B7%E6%8E%92%E5%A5%BD-%E4%B9%9F%E5%8F%AF%E4%BB%A5%E6%8B%96%E8%BF%87%E5%8E%BB-%E5%B0%8F%E7%8C%AB%E6%94%B6%E5%88%B0%E7%A7%8D%E5%AD%90%E4%BB%A5%E5%90%8E-%E6%89%8D%E6%8A%8A%E7%A7%8D%E5%AD%90%E7%A7%8D%E8%BF%9B%E5%9C%9F%E9%87%8C-%E6%8A%8A%E7%A7%8D%E5%AD%90%E7%A7%8D%E8%BF%9B%E5%9C%9F%E9%87%8C%E4%BB%A5%E5%90%8E-%E6%89%8D%E6%8C%89%E8%AE%B0%E5%BD%95%E7%85%A7%E9%A1%BE%E5%B0%8F%E8%8B%97.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8C%89%E8%BF%99%E4%B8%AA%E6%95%85%E4%BA%8B%E7%9A%84%E5%85%88%E5%90%8E-%E6%8A%8A%E4%BA%8B%E4%BB%B6%E6%8E%92%E5%A5%BD-%E5%85%88%E9%80%89%E5%9B%BE%E5%8D%A1-%E5%86%8D%E6%8C%89%E4%BD%8D%E7%BD%AE%E7%BC%96%E5%8F%B7%E6%8E%92%E5%A5%BD-%E4%B9%9F%E5%8F%AF%E4%BB%A5%E6%8B%96%E8%BF%87%E5%8E%BB-%E5%B0%8F%E7%8C%AB%E6%94%B6%E5%88%B0%E7%A7%8D%E5%AD%90%E4%BB%A5%E5%90%8E-%E6%8A%8A%E7%A7%8D%E5%AD%90%E7%A7%8D%E8%BF%9B%E5%9C%9F%E9%87%8C-%E7%A7%8D%E5%A5%BD%E4%BB%A5%E5%90%8E-%E5%B0%8F%E7%8C%AB%E6%8C%89%E8%AE%B0%E5%BD%95%E7%85%A7%E9%A1%BE%E9%95%BF%E5%87%BA%E6%9D%A5%E7%9A%84%E5%B0%8F%E8%8B%97.mp3"
     },
     {
-      "id": "hint-小猫收到种子以后-才把种子种进土里",
+      "id": "hint-小猫收到种子以后-把种子种进土里",
       "kind": "hint",
-      "text": "小猫收到种子以后，才把种子种进土里。",
+      "text": "小猫收到种子以后，把种子种进土里。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E5%B0%8F%E7%8C%AB%E6%94%B6%E5%88%B0%E7%A7%8D%E5%AD%90%E4%BB%A5%E5%90%8E-%E6%89%8D%E6%8A%8A%E7%A7%8D%E5%AD%90%E7%A7%8D%E8%BF%9B%E5%9C%9F%E9%87%8C.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E5%B0%8F%E7%8C%AB%E6%94%B6%E5%88%B0%E7%A7%8D%E5%AD%90%E4%BB%A5%E5%90%8E-%E6%8A%8A%E7%A7%8D%E5%AD%90%E7%A7%8D%E8%BF%9B%E5%9C%9F%E9%87%8C.mp3"
     },
     {
-      "id": "clue-小猫收到种子以后-才把种子种进土里",
+      "id": "clue-小猫收到种子以后-把种子种进土里",
       "kind": "clue",
-      "text": "小猫收到种子以后，才把种子种进土里。",
+      "text": "小猫收到种子以后，把种子种进土里。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E5%B0%8F%E7%8C%AB%E6%94%B6%E5%88%B0%E7%A7%8D%E5%AD%90%E4%BB%A5%E5%90%8E-%E6%89%8D%E6%8A%8A%E7%A7%8D%E5%AD%90%E7%A7%8D%E8%BF%9B%E5%9C%9F%E9%87%8C.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E5%B0%8F%E7%8C%AB%E6%94%B6%E5%88%B0%E7%A7%8D%E5%AD%90%E4%BB%A5%E5%90%8E-%E6%8A%8A%E7%A7%8D%E5%AD%90%E7%A7%8D%E8%BF%9B%E5%9C%9F%E9%87%8C.mp3"
     },
     {
-      "id": "clue-把种子种进土里以后-才按记录照顾小苗",
+      "id": "clue-种好以后-小猫按记录照顾长出来的小苗",
       "kind": "clue",
-      "text": "把种子种进土里以后，才按记录照顾小苗。",
+      "text": "种好以后，小猫按记录照顾长出来的小苗。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E6%8A%8A%E7%A7%8D%E5%AD%90%E7%A7%8D%E8%BF%9B%E5%9C%9F%E9%87%8C%E4%BB%A5%E5%90%8E-%E6%89%8D%E6%8C%89%E8%AE%B0%E5%BD%95%E7%85%A7%E9%A1%BE%E5%B0%8F%E8%8B%97.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E7%A7%8D%E5%A5%BD%E4%BB%A5%E5%90%8E-%E5%B0%8F%E7%8C%AB%E6%8C%89%E8%AE%B0%E5%BD%95%E7%85%A7%E9%A1%BE%E9%95%BF%E5%87%BA%E6%9D%A5%E7%9A%84%E5%B0%8F%E8%8B%97.mp3"
     },
     {
       "id": "object-小猫收到种子",
@@ -29071,12 +29159,12 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E6%8C%89%E8%AE%B0%E5%BD%95%E7%85%A7%E9%A1%BE%E5%B0%8F%E8%8B%97.mp3"
     },
     {
-      "id": "prompt-按这个故事的先后-把事件排好-先选图卡-再按位置编号排好-也可以拖过去-天上积起乌云以后-才开始下雨-开始下雨以后-才地面留下水洼-地面留下水洼以",
+      "id": "prompt-按这个故事的先后-把事件排好-先选图卡-再按位置编号排好-也可以拖过去-乌云聚起来以后-开始下雨-下过雨后-地面留下了水洼-地面有水洼-小朋友穿上",
       "kind": "prompt",
-      "text": "按这个故事的先后，把事件排好。先选图卡，再按位置编号排好。也可以拖过去。天上积起乌云以后，才开始下雨。开始下雨以后，才地面留下水洼。地面留下水洼以后，才小朋友穿雨靴出门。",
+      "text": "按这个故事的先后，把事件排好。先选图卡，再按位置编号排好。也可以拖过去。乌云聚起来以后，开始下雨。下过雨后，地面留下了水洼。地面有水洼，小朋友穿上雨靴出门。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8C%89%E8%BF%99%E4%B8%AA%E6%95%85%E4%BA%8B%E7%9A%84%E5%85%88%E5%90%8E-%E6%8A%8A%E4%BA%8B%E4%BB%B6%E6%8E%92%E5%A5%BD-%E5%85%88%E9%80%89%E5%9B%BE%E5%8D%A1-%E5%86%8D%E6%8C%89%E4%BD%8D%E7%BD%AE%E7%BC%96%E5%8F%B7%E6%8E%92%E5%A5%BD-%E4%B9%9F%E5%8F%AF%E4%BB%A5%E6%8B%96%E8%BF%87%E5%8E%BB-%E5%A4%A9%E4%B8%8A%E7%A7%AF%E8%B5%B7%E4%B9%8C%E4%BA%91%E4%BB%A5%E5%90%8E-%E6%89%8D%E5%BC%80%E5%A7%8B%E4%B8%8B%E9%9B%A8-%E5%BC%80%E5%A7%8B%E4%B8%8B%E9%9B%A8%E4%BB%A5%E5%90%8E-%E6%89%8D%E5%9C%B0%E9%9D%A2%E7%95%99%E4%B8%8B%E6%B0%B4%E6%B4%BC-%E5%9C%B0%E9%9D%A2%E7%95%99%E4%B8%8B%E6%B0%B4%E6%B4%BC%E4%BB%A5.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8C%89%E8%BF%99%E4%B8%AA%E6%95%85%E4%BA%8B%E7%9A%84%E5%85%88%E5%90%8E-%E6%8A%8A%E4%BA%8B%E4%BB%B6%E6%8E%92%E5%A5%BD-%E5%85%88%E9%80%89%E5%9B%BE%E5%8D%A1-%E5%86%8D%E6%8C%89%E4%BD%8D%E7%BD%AE%E7%BC%96%E5%8F%B7%E6%8E%92%E5%A5%BD-%E4%B9%9F%E5%8F%AF%E4%BB%A5%E6%8B%96%E8%BF%87%E5%8E%BB-%E4%B9%8C%E4%BA%91%E8%81%9A%E8%B5%B7%E6%9D%A5%E4%BB%A5%E5%90%8E-%E5%BC%80%E5%A7%8B%E4%B8%8B%E9%9B%A8-%E4%B8%8B%E8%BF%87%E9%9B%A8%E5%90%8E-%E5%9C%B0%E9%9D%A2%E7%95%99%E4%B8%8B%E4%BA%86%E6%B0%B4%E6%B4%BC-%E5%9C%B0%E9%9D%A2%E6%9C%89%E6%B0%B4%E6%B4%BC-%E5%B0%8F%E6%9C%8B%E5%8F%8B%E7%A9%BF%E4%B8%8A.mp3"
     },
     {
       "id": "parent-能在4事件中逐条核对3条件",
@@ -29087,12 +29175,12 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%83%BD%E5%9C%A84%E4%BA%8B%E4%BB%B6%E4%B8%AD%E9%80%90%E6%9D%A1%E6%A0%B8%E5%AF%B93%E6%9D%A1%E4%BB%B6.mp3"
     },
     {
-      "id": "clue-地面留下水洼以后-才小朋友穿雨靴出门",
+      "id": "clue-地面有水洼-小朋友穿上雨靴出门",
       "kind": "clue",
-      "text": "地面留下水洼以后，才小朋友穿雨靴出门。",
+      "text": "地面有水洼，小朋友穿上雨靴出门。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E5%9C%B0%E9%9D%A2%E7%95%99%E4%B8%8B%E6%B0%B4%E6%B4%BC%E4%BB%A5%E5%90%8E-%E6%89%8D%E5%B0%8F%E6%9C%8B%E5%8F%8B%E7%A9%BF%E9%9B%A8%E9%9D%B4%E5%87%BA%E9%97%A8.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E5%9C%B0%E9%9D%A2%E6%9C%89%E6%B0%B4%E6%B4%BC-%E5%B0%8F%E6%9C%8B%E5%8F%8B%E7%A9%BF%E4%B8%8A%E9%9B%A8%E9%9D%B4%E5%87%BA%E9%97%A8.mp3"
     },
     {
       "id": "object-小朋友穿雨靴出门",
@@ -29103,20 +29191,20 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%B0%8F%E6%9C%8B%E5%8F%8B%E7%A9%BF%E9%9B%A8%E9%9D%B4%E5%87%BA%E9%97%A8.mp3"
     },
     {
-      "id": "prompt-按这个故事的先后-把事件排好-先选图卡-再按位置编号排好-也可以拖过去-小熊准备木块以后-才小熊搭起高塔-小熊搭起高塔以后-才球碰倒了高塔-球碰倒",
+      "id": "prompt-按这个故事的先后-把事件排好-先选图卡-再按位置编号排好-也可以拖过去-小熊先准备木块-再用木块搭起高塔-高塔搭好后-被滚来的球碰倒了-高塔倒了以",
       "kind": "prompt",
-      "text": "按这个故事的先后，把事件排好。先选图卡，再按位置编号排好。也可以拖过去。小熊准备木块以后，才小熊搭起高塔。小熊搭起高塔以后，才球碰倒了高塔。球碰倒了高塔以后，才小熊换宽底座重搭。",
+      "text": "按这个故事的先后，把事件排好。先选图卡，再按位置编号排好。也可以拖过去。小熊先准备木块，再用木块搭起高塔。高塔搭好后，被滚来的球碰倒了。高塔倒了以后，小熊换一个宽底座重新搭。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8C%89%E8%BF%99%E4%B8%AA%E6%95%85%E4%BA%8B%E7%9A%84%E5%85%88%E5%90%8E-%E6%8A%8A%E4%BA%8B%E4%BB%B6%E6%8E%92%E5%A5%BD-%E5%85%88%E9%80%89%E5%9B%BE%E5%8D%A1-%E5%86%8D%E6%8C%89%E4%BD%8D%E7%BD%AE%E7%BC%96%E5%8F%B7%E6%8E%92%E5%A5%BD-%E4%B9%9F%E5%8F%AF%E4%BB%A5%E6%8B%96%E8%BF%87%E5%8E%BB-%E5%B0%8F%E7%86%8A%E5%87%86%E5%A4%87%E6%9C%A8%E5%9D%97%E4%BB%A5%E5%90%8E-%E6%89%8D%E5%B0%8F%E7%86%8A%E6%90%AD%E8%B5%B7%E9%AB%98%E5%A1%94-%E5%B0%8F%E7%86%8A%E6%90%AD%E8%B5%B7%E9%AB%98%E5%A1%94%E4%BB%A5%E5%90%8E-%E6%89%8D%E7%90%83%E7%A2%B0%E5%80%92%E4%BA%86%E9%AB%98%E5%A1%94-%E7%90%83%E7%A2%B0%E5%80%92.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8C%89%E8%BF%99%E4%B8%AA%E6%95%85%E4%BA%8B%E7%9A%84%E5%85%88%E5%90%8E-%E6%8A%8A%E4%BA%8B%E4%BB%B6%E6%8E%92%E5%A5%BD-%E5%85%88%E9%80%89%E5%9B%BE%E5%8D%A1-%E5%86%8D%E6%8C%89%E4%BD%8D%E7%BD%AE%E7%BC%96%E5%8F%B7%E6%8E%92%E5%A5%BD-%E4%B9%9F%E5%8F%AF%E4%BB%A5%E6%8B%96%E8%BF%87%E5%8E%BB-%E5%B0%8F%E7%86%8A%E5%85%88%E5%87%86%E5%A4%87%E6%9C%A8%E5%9D%97-%E5%86%8D%E7%94%A8%E6%9C%A8%E5%9D%97%E6%90%AD%E8%B5%B7%E9%AB%98%E5%A1%94-%E9%AB%98%E5%A1%94%E6%90%AD%E5%A5%BD%E5%90%8E-%E8%A2%AB%E6%BB%9A%E6%9D%A5%E7%9A%84%E7%90%83%E7%A2%B0%E5%80%92%E4%BA%86-%E9%AB%98%E5%A1%94%E5%80%92%E4%BA%86%E4%BB%A5.mp3"
     },
     {
-      "id": "clue-球碰倒了高塔以后-才小熊换宽底座重搭",
+      "id": "clue-高塔倒了以后-小熊换一个宽底座重新搭",
       "kind": "clue",
-      "text": "球碰倒了高塔以后，才小熊换宽底座重搭。",
+      "text": "高塔倒了以后，小熊换一个宽底座重新搭。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E7%90%83%E7%A2%B0%E5%80%92%E4%BA%86%E9%AB%98%E5%A1%94%E4%BB%A5%E5%90%8E-%E6%89%8D%E5%B0%8F%E7%86%8A%E6%8D%A2%E5%AE%BD%E5%BA%95%E5%BA%A7%E9%87%8D%E6%90%AD.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E9%AB%98%E5%A1%94%E5%80%92%E4%BA%86%E4%BB%A5%E5%90%8E-%E5%B0%8F%E7%86%8A%E6%8D%A2%E4%B8%80%E4%B8%AA%E5%AE%BD%E5%BA%95%E5%BA%A7%E9%87%8D%E6%96%B0%E6%90%AD.mp3"
     },
     {
       "id": "object-小熊换宽底座重搭",
@@ -29127,20 +29215,20 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%B0%8F%E7%86%8A%E6%8D%A2%E5%AE%BD%E5%BA%95%E5%BA%A7%E9%87%8D%E6%90%AD.mp3"
     },
     {
-      "id": "prompt-按这个故事的先后-把事件排好-先选图卡-再按位置编号排好-也可以拖过去-小猫收到种子以后-才把种子种进土里-把种子种进土里以后-才按记录照顾小苗-",
+      "id": "prompt-按这个故事的先后-把事件排好-先选图卡-再按位置编号排好-也可以拖过去-小猫收到种子以后-把种子种进土里-种好以后-小猫按记录照顾长出来的小苗-照",
       "kind": "prompt",
-      "text": "按这个故事的先后，把事件排好。先选图卡，再按位置编号排好。也可以拖过去。小猫收到种子以后，才把种子种进土里。把种子种进土里以后，才按记录照顾小苗。按记录照顾小苗以后，才小猫观察新叶片。",
+      "text": "按这个故事的先后，把事件排好。先选图卡，再按位置编号排好。也可以拖过去。小猫收到种子以后，把种子种进土里。种好以后，小猫按记录照顾长出来的小苗。照顾小苗一段时间后，小猫观察新长出的叶片。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8C%89%E8%BF%99%E4%B8%AA%E6%95%85%E4%BA%8B%E7%9A%84%E5%85%88%E5%90%8E-%E6%8A%8A%E4%BA%8B%E4%BB%B6%E6%8E%92%E5%A5%BD-%E5%85%88%E9%80%89%E5%9B%BE%E5%8D%A1-%E5%86%8D%E6%8C%89%E4%BD%8D%E7%BD%AE%E7%BC%96%E5%8F%B7%E6%8E%92%E5%A5%BD-%E4%B9%9F%E5%8F%AF%E4%BB%A5%E6%8B%96%E8%BF%87%E5%8E%BB-%E5%B0%8F%E7%8C%AB%E6%94%B6%E5%88%B0%E7%A7%8D%E5%AD%90%E4%BB%A5%E5%90%8E-%E6%89%8D%E6%8A%8A%E7%A7%8D%E5%AD%90%E7%A7%8D%E8%BF%9B%E5%9C%9F%E9%87%8C-%E6%8A%8A%E7%A7%8D%E5%AD%90%E7%A7%8D%E8%BF%9B%E5%9C%9F%E9%87%8C%E4%BB%A5%E5%90%8E-%E6%89%8D%E6%8C%89%E8%AE%B0%E5%BD%95%E7%85%A7%E9%A1%BE%E5%B0%8F%E8%8B%97.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8C%89%E8%BF%99%E4%B8%AA%E6%95%85%E4%BA%8B%E7%9A%84%E5%85%88%E5%90%8E-%E6%8A%8A%E4%BA%8B%E4%BB%B6%E6%8E%92%E5%A5%BD-%E5%85%88%E9%80%89%E5%9B%BE%E5%8D%A1-%E5%86%8D%E6%8C%89%E4%BD%8D%E7%BD%AE%E7%BC%96%E5%8F%B7%E6%8E%92%E5%A5%BD-%E4%B9%9F%E5%8F%AF%E4%BB%A5%E6%8B%96%E8%BF%87%E5%8E%BB-%E5%B0%8F%E7%8C%AB%E6%94%B6%E5%88%B0%E7%A7%8D%E5%AD%90%E4%BB%A5%E5%90%8E-%E6%8A%8A%E7%A7%8D%E5%AD%90%E7%A7%8D%E8%BF%9B%E5%9C%9F%E9%87%8C-%E7%A7%8D%E5%A5%BD%E4%BB%A5%E5%90%8E-%E5%B0%8F%E7%8C%AB%E6%8C%89%E8%AE%B0%E5%BD%95%E7%85%A7%E9%A1%BE%E9%95%BF%E5%87%BA%E6%9D%A5%E7%9A%84%E5%B0%8F%E8%8B%97-%E7%85%A7.mp3"
     },
     {
-      "id": "clue-按记录照顾小苗以后-才小猫观察新叶片",
+      "id": "clue-照顾小苗一段时间后-小猫观察新长出的叶片",
       "kind": "clue",
-      "text": "按记录照顾小苗以后，才小猫观察新叶片。",
+      "text": "照顾小苗一段时间后，小猫观察新长出的叶片。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E6%8C%89%E8%AE%B0%E5%BD%95%E7%85%A7%E9%A1%BE%E5%B0%8F%E8%8B%97%E4%BB%A5%E5%90%8E-%E6%89%8D%E5%B0%8F%E7%8C%AB%E8%A7%82%E5%AF%9F%E6%96%B0%E5%8F%B6%E7%89%87.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E7%85%A7%E9%A1%BE%E5%B0%8F%E8%8B%97%E4%B8%80%E6%AE%B5%E6%97%B6%E9%97%B4%E5%90%8E-%E5%B0%8F%E7%8C%AB%E8%A7%82%E5%AF%9F%E6%96%B0%E9%95%BF%E5%87%BA%E7%9A%84%E5%8F%B6%E7%89%87.mp3"
     },
     {
       "id": "object-小猫观察新叶片",
@@ -32127,12 +32215,12 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%83%BD%E5%9C%A8%E5%84%BF%E7%AB%A5%E5%9C%B0%E5%9B%BE%E6%88%96%E7%BB%98%E6%9C%AC%E6%89%BE%E5%88%B0%E6%8C%87%E5%AE%9A%E5%9C%B0%E7%82%B9.mp3"
     },
     {
-      "id": "hint-在地图上找一个绘本里出现的地方",
+      "id": "hint-在地图上找到绘本或图片介绍的那个地方",
       "kind": "hint",
-      "text": "在地图上找一个绘本里出现的地方。",
+      "text": "在地图上找到绘本或图片介绍的那个地方。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E5%9C%A8%E5%9C%B0%E5%9B%BE%E4%B8%8A%E6%89%BE%E4%B8%80%E4%B8%AA%E7%BB%98%E6%9C%AC%E9%87%8C%E5%87%BA%E7%8E%B0%E7%9A%84%E5%9C%B0%E6%96%B9.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E5%9C%A8%E5%9C%B0%E5%9B%BE%E4%B8%8A%E6%89%BE%E5%88%B0%E7%BB%98%E6%9C%AC%E6%88%96%E5%9B%BE%E7%89%87%E4%BB%8B%E7%BB%8D%E7%9A%84%E9%82%A3%E4%B8%AA%E5%9C%B0%E6%96%B9.mp3"
     },
     {
       "id": "hint-从给定图片中观察住房-衣物或交通的一处特点",
@@ -32143,12 +32231,12 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E4%BB%8E%E7%BB%99%E5%AE%9A%E5%9B%BE%E7%89%87%E4%B8%AD%E8%A7%82%E5%AF%9F%E4%BD%8F%E6%88%BF-%E8%A1%A3%E7%89%A9%E6%88%96%E4%BA%A4%E9%80%9A%E7%9A%84%E4%B8%80%E5%A4%84%E7%89%B9%E7%82%B9.mp3"
     },
     {
-      "id": "instruction-在地图上找一个绘本里出现的地方",
+      "id": "instruction-在地图上找到绘本或图片介绍的那个地方",
       "kind": "instruction",
-      "text": "在地图上找一个绘本里出现的地方。",
+      "text": "在地图上找到绘本或图片介绍的那个地方。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/instruction-%E5%9C%A8%E5%9C%B0%E5%9B%BE%E4%B8%8A%E6%89%BE%E4%B8%80%E4%B8%AA%E7%BB%98%E6%9C%AC%E9%87%8C%E5%87%BA%E7%8E%B0%E7%9A%84%E5%9C%B0%E6%96%B9.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/instruction-%E5%9C%A8%E5%9C%B0%E5%9B%BE%E4%B8%8A%E6%89%BE%E5%88%B0%E7%BB%98%E6%9C%AC%E6%88%96%E5%9B%BE%E7%89%87%E4%BB%8B%E7%BB%8D%E7%9A%84%E9%82%A3%E4%B8%AA%E5%9C%B0%E6%96%B9.mp3"
     },
     {
       "id": "instruction-从给定图片中观察住房-衣物或交通的一处特点",
@@ -32167,12 +32255,20 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/instruction-%E6%8F%90%E5%87%BA%E4%B8%80%E4%B8%AA%E5%8F%AF%E4%BB%A5%E7%BB%A7%E7%BB%AD%E6%9F%A5%E4%B9%A6%E9%AA%8C%E8%AF%81%E7%9A%84%E9%97%AE%E9%A2%98-%E4%B8%8D%E5%87%AD%E4%B8%80%E5%BC%A0%E5%9B%BE%E7%89%87%E6%A6%82%E6%8B%AC%E6%89%80%E6%9C%89%E4%BA%BA.mp3"
     },
     {
-      "id": "parent-儿童地图或绘本",
+      "id": "parent-一张儿童地图",
       "kind": "parent",
-      "text": "儿童地图或绘本",
+      "text": "一张儿童地图",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E5%84%BF%E7%AB%A5%E5%9C%B0%E5%9B%BE%E6%88%96%E7%BB%98%E6%9C%AC.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E4%B8%80%E5%BC%A0%E5%84%BF%E7%AB%A5%E5%9C%B0%E5%9B%BE.mp3"
+    },
+    {
+      "id": "parent-介绍地图上同一地点生活的绘本或图片",
+      "kind": "parent",
+      "text": "介绍地图上同一地点生活的绘本或图片",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E4%BB%8B%E7%BB%8D%E5%9C%B0%E5%9B%BE%E4%B8%8A%E5%90%8C%E4%B8%80%E5%9C%B0%E7%82%B9%E7%94%9F%E6%B4%BB%E7%9A%84%E7%BB%98%E6%9C%AC%E6%88%96%E5%9B%BE%E7%89%87.mp3"
     },
     {
       "id": "game-title-小手和身体挑战",

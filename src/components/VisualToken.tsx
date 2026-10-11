@@ -20,6 +20,8 @@ const tokenMap: Record<string, TokenMeta> = {
   "🟣": { label: "紫色圆片", kind: "purpleDot" },
   "⬜": { label: "空位", kind: "emptyBox" },
   "🟦": { label: "蓝色方块", kind: "blueSquare" },
+  "🟥": { label: "红色方块", kind: "redSquare" },
+  "🟨": { label: "黄色方块", kind: "yellowSquare" },
   "🍎": { label: "苹果", kind: "patternApple" },
   "🧁": { label: "纸杯蛋糕", kind: "cupcake" },
   "🍊": { label: "橘子", kind: "orange" },
@@ -81,6 +83,8 @@ const phraseMap: Record<string, TokenMeta> = {
   "盒子": { label: "盒子", kind: "box" },
   "小汽车": { label: "小汽车", kind: "car" },
   "玩具车": { label: "玩具车", kind: "car" },
+  "小车": { label: "小车", kind: "car" },
+  "积木": { label: "积木", kind: "block" },
   "公交车": { label: "公交车", kind: "bus" },
   "自行车": { label: "自行车", kind: "bike" },
   "飞机": { label: "飞机", kind: "plane" },
@@ -107,6 +111,8 @@ const phraseMap: Record<string, TokenMeta> = {
   "蓝色圆片": { label: "蓝色圆片", kind: "blueDot" },
   "紫色圆片": { label: "紫色圆片", kind: "purpleDot" },
   "蓝色方块": { label: "蓝色方块", kind: "blueSquare" },
+  "红色方块": { label: "红色方块", kind: "redSquare" },
+  "黄色方块": { label: "黄色方块", kind: "yellowSquare" },
   "大星": { label: "大星", kind: "star" },
   "小星": { label: "小星", kind: "smallStar" },
   "星星": { label: "星星", kind: "star" },
@@ -124,6 +130,9 @@ const phraseMap: Record<string, TokenMeta> = {
   "小鸟天空": { label: "小鸟和天空", kind: "birdSky" },
   "小鱼小河": { label: "小鱼和小河", kind: "fishWater" },
   "小狗家": { label: "小狗和家", kind: "dogHome" },
+  "小河小狗": { label: "小河和小狗", kind: "riverDog" },
+  "天空家": { label: "天空和家", kind: "skyHome" },
+  "积木和小车": { label: "积木和小车", kind: "toysMess" },
   "左边": { label: "左边", kind: "leftArrow" },
   "右边": { label: "右边", kind: "rightArrow" },
   "上面": { label: "上面", kind: "upArrow" },
@@ -183,6 +192,16 @@ const phraseMap: Record<string, TokenMeta> = {
   "先飞回去": { label: "先飞回去", kind: "flyHome" },
   "轻轻放回水里": { label: "放回水里", kind: "fishWater" },
   "先分类": { label: "先分类", kind: "sortToys" },
+  "先分开两类": { label: "先分开两类", kind: "sortTwoToys" },
+  "分好的两类玩具": { label: "分好的两类玩具", kind: "sortTwoToys" },
+  "取出后先分类": { label: "取出后先分类", kind: "sortTwoToys" },
+  "再分类一遍": { label: "再分类一遍", kind: "sortTwoToys" },
+  "只收一个玩具": { label: "只收一个玩具", kind: "car" },
+  "混在一个盒子": { label: "混在一个盒子", kind: "mixedToyBox" },
+  "全放同一个盒子": { label: "全放同一个盒子", kind: "mixedToyBox" },
+  "继续混放": { label: "继续混放", kind: "mixedToyBox" },
+  "分类装好": { label: "分类装好", kind: "classifiedToyBoxes" },
+  "分开放进盒子": { label: "分开放进盒子", kind: "classifiedToyBoxes" },
   "先倒水": { label: "先倒水", kind: "pourWater" },
   "拿杯子接水": { label: "拿杯子接水", kind: "pourWater" },
   "端空杯子过去": { label: "端空杯子过去", kind: "cup" },
@@ -191,6 +210,7 @@ const phraseMap: Record<string, TokenMeta> = {
   "只给空土浇水": { label: "只给空土浇水", kind: "pourWater" },
   "直接等开花": { label: "直接等开花", kind: "flower" },
   "先看灯": { label: "先看灯", kind: "trafficLook" },
+  "只看车停着": { label: "只看车停着", kind: "car" },
   "拿盘子": { label: "拿盘子", kind: "plate" },
   "拿饼干": { label: "拿饼干", kind: "cookie" },
   "放进盒子": { label: "放进盒子", kind: "tidyBox" },
@@ -224,6 +244,8 @@ const phraseMap: Record<string, TokenMeta> = {
   "手脏": { label: "手脏", kind: "dirtyHands" },
   "路口": { label: "路口", kind: "crosswalk" },
   "走过去": { label: "走过去", kind: "walk" },
+  "直接走过去": { label: "直接走过去", kind: "walk" },
+  "先走过去": { label: "先走过去", kind: "walk" },
   "玩具散了": { label: "玩具散了", kind: "toysMess" },
   "整齐": { label: "整齐", kind: "tidyBox" },
   "宽河": { label: "宽河", kind: "wideRiver" },
@@ -280,27 +302,39 @@ const clueRules: Array<[RegExp, TokenMeta]> = [
   [/小鸟在窗边/, { label: "小鸟在窗边", kind: "birdSky" }],
 ];
 
+// Explicit semantic pairs keep examples and distractors equally illustrated.
+// The stored values stay unchanged so existing round identities remain stable.
+const compoundParts: Record<string, string[]> = {
+  "小鸟天空": ["小鸟", "天空"],
+  "小鱼小河": ["小鱼", "小河"],
+  "小狗家": ["小狗", "家"],
+  "小河小狗": ["小河", "小狗"],
+  "天空家": ["天空", "家"],
+  "积木和小车": ["积木", "小车"],
+};
+
 export function VisualToken({ value }: { value: string }) {
   const exact = visualMetaFor(value);
-  if (exact) {
-    return <TokenButton label={exact.label} compact={exact.compact} kind={exact.kind} />;
-  }
-
   const parts = visualParts(value);
-  const repeatedVisuals = parts.length > 1 && parts.length <= 6 && parts.every((part) => tokenMap[part]);
+  const metas = parts.map(visualMetaFor);
+  const repeatedVisuals = parts.length > 1 && parts.length <= 6 && metas.every((meta) => meta !== null);
   if (repeatedVisuals) {
-    const label = parts.map((part) => tokenMap[part].label).join("、");
+    const label = exact?.label ?? metas.map((meta) => meta!.label).join("、");
     return (
       <button className="visual-token visual-token-multi" type="button" onClick={() => speak(label)} aria-label={label}>
         <span className="mini-token-grid" aria-hidden="true">
-          {parts.map((part, index) => (
-            <Illustration kind={tokenMap[part].kind} key={`${part}-${index}`} small />
+          {metas.map((meta, index) => (
+            <Illustration kind={meta!.kind} key={`${parts[index]}-${index}`} small />
           ))}
         </span>
         <small>{label}</small>
         <Volume2 className="token-audio" size={13} aria-hidden="true" />
       </button>
     );
+  }
+
+  if (exact) {
+    return <TokenButton label={exact.label} compact={exact.compact} kind={exact.kind} />;
   }
 
   return (
@@ -312,7 +346,7 @@ export function VisualToken({ value }: { value: string }) {
 }
 
 export function visualParts(value: string) {
-  return Array.from(value).filter((part) => part !== "\uFE0F");
+  return compoundParts[value] ?? Array.from(value).filter((part) => part !== "\uFE0F");
 }
 
 export function visualMetaFor(value: string): TokenMeta | null {
@@ -342,7 +376,7 @@ function Illustration({ kind, small = false }: { kind: string; small?: boolean }
   }
 
   return (
-    <svg className={`kid-illustration ${small ? "small" : ""}`} viewBox="0 0 96 96" role="img" aria-hidden="true">
+    <svg className={`kid-illustration ${small ? "small" : ""}`} data-visual-kind={kind} viewBox="0 0 96 96" role="img" aria-hidden="true">
       <CrayonTexture />
       {draw(kind)}
     </svg>
@@ -350,6 +384,8 @@ function Illustration({ kind, small = false }: { kind: string; small?: boolean }
 }
 
 function rasterForKind(kind: string) {
+  if (kind === "redSquare") return imageGallery.items.thinkingRedSquare;
+  if (kind === "yellowSquare") return imageGallery.items.thinkingYellowSquare;
   if (kind === "soilPot") return imageGallery.items.soilPot;
   if (kind === "hugShoulders") return imageGallery.items.hugShoulders;
   if (kind === "touchHead") return imageGallery.items.touchHead;
@@ -437,7 +473,16 @@ function CrayonTexture() {
   );
 }
 
-function draw(kind: string) {
+function drawPair(first: string, second: string) {
+  return [first, second].map((kind, index) => {
+    const raster = rasterForKind(kind);
+    return <svg key={`${kind}-${index}`} x={index * 48} y="22" width="48" height="48" viewBox="0 0 96 96">
+      {raster ? <image href={publicAsset(raster.src)} width="96" height="96" /> : draw(kind)}
+    </svg>;
+  });
+}
+
+function draw(kind: string): React.ReactNode {
   switch (kind) {
     case "strawberry":
       return <><path className="stroke fill-red" d="M48 82C29 67 20 50 26 36c6-13 19-10 22-3 4-7 17-10 22 3 7 14-3 31-22 46Z" /><path className="fill-leaf" d="M36 28l6-12 6 11 8-11 3 14-12 5Z" /><circle cx="40" cy="50" r="2" /><circle cx="53" cy="57" r="2" /><circle cx="47" cy="43" r="2" /></>;
@@ -511,9 +556,13 @@ function draw(kind: string) {
     case "home":
       return <><path className="stroke fill-coral" d="M20 43l28-25 28 25v35H20Z" /><path className="stroke fill-brown" d="M37 78V55h22v23" /><path className="stroke fill-sky-soft" d="M25 43h46" /></>;
     case "birdSky":
-      return <><circle className="stroke fill-gold" cx="67" cy="24" r="10" /><path className="stroke fill-sky" d="M18 55c13-15 30-15 43-1 10 11 3 23-13 23-15 0-26-7-30-22Z" /><path className="stroke fill-gold" d="M61 54l13 6-13 6Z" /></>;
+      return drawPair("bird", "sky");
     case "dogHome":
-      return <><path className="stroke fill-coral" d="M18 45l30-24 30 24v33H18Z" /><path className="stroke fill-cookie" d="M32 58c5-12 28-12 33 0v20H32Z" /></>;
+      return drawPair("dog", "home");
+    case "riverDog":
+      return drawPair("river", "dog");
+    case "skyHome":
+      return drawPair("sky", "home");
     case "child":
     case "childGirl":
     case "childBoy":
@@ -614,6 +663,29 @@ function draw(kind: string) {
       return <><circle className="stroke fill-red" cx="30" cy="38" r="10" /><rect className="stroke fill-blue" x="54" y="29" width="20" height="20" rx="4" transform="rotate(20 64 39)" /><path className="stroke fill-gold" d="M45 63l10 18H35Z" /><rect className="stroke fill-leaf" x="19" y="66" width="18" height="14" rx="4" /></>;
     case "tidyBox":
       return <><rect className="stroke fill-white" x="21" y="37" width="54" height="37" rx="6" /><rect className="stroke fill-blue" x="30" y="24" width="16" height="16" rx="3" /><rect className="stroke fill-coral" x="51" y="24" width="16" height="16" rx="3" /><path className="stroke" d="M28 54h40" /></>;
+    case "sortTwoToys":
+      return <>{[imageGallery.items.block, imageGallery.items.toyCar].map((item, index) => (
+        <g key={item.src} transform={`translate(${index * 47} 0)`}>
+          <rect x="2" y="20" width="43" height="58" rx="12" fill="#fff9e8" stroke="#b8aa90" strokeWidth="2" strokeDasharray="4 3" />
+          <image href={publicAsset(item.src)} x="4" y="27" width="39" height="44" />
+        </g>
+      ))}</>;
+    case "mixedToyBox":
+      return <g data-storage-box="mixed">
+        <path d="M8 31h80v53H8Z" fill="#ead3a8" stroke="#9c774a" strokeWidth="3" strokeLinejoin="round" />
+        <image href={publicAsset(imageGallery.items.block.src)} x="12" y="13" width="44" height="43" />
+        <image href={publicAsset(imageGallery.items.toyCar.src)} x="41" y="24" width="45" height="36" />
+        <path d="M8 60h80v24H8Z" fill="#ead3a8" stroke="#9c774a" strokeWidth="3" strokeLinejoin="round" />
+      </g>;
+    case "classifiedToyBoxes":
+      return <>{[imageGallery.items.block, imageGallery.items.toyCar].map((item, index) => (
+        <g key={item.src} data-storage-box="classified" transform={`translate(${index * 47} 0)`}>
+          <path d="M4 45h40v39H4Z" fill="#ead3a8" stroke="#9c774a" strokeWidth="3" strokeLinejoin="round" />
+          <image href={publicAsset(item.src)} x="6" y="13" width="36" height="42" />
+          <path d="M4 54h40v30H4Z" fill="#ead3a8" stroke="#9c774a" strokeWidth="3" strokeLinejoin="round" />
+          <image href={publicAsset(item.src)} x="15" y="60" width="18" height="18" />
+        </g>
+      ))}</>;
     case "wideRiver":
       return <><path className="stroke fill-sky" d="M5 25c18-13 32 13 50 0 13-9 24-4 36 4v43c-18-14-32 14-50 0-13-9-25-4-36 4Z" /><path className="stroke" d="M12 45c18-10 30 9 45 0 10-6 19-5 29 1" /></>;
     case "longPlank":

@@ -1,7 +1,7 @@
 import type { Activity, ActivitySet } from "../../domain/activity";
 import { imageGallery, type GalleryImage } from "../../data/imageGallery";
 import { explorationArt } from "../../data/explorationArt";
-import { image as diagram, picture, rect, symbol, transform, text, type Primitive } from './draw';
+import { image as diagram, picture, rect, circle, line, dots, symbol, transform, text, type Primitive } from './draw';
 
 const items = imageGallery.items, characters = imageGallery.characters;
 const concrete: Record<string, GalleryImage> = {
@@ -16,6 +16,25 @@ const storyPictures = Object.fromEntries([
 ].map(image => [image.alt, image]));
 storyPictures['把种子种进土里'] = explorationArt.catPlant[1];
 storyPictures['按记录照顾小苗'] = explorationArt.catPlant[2];
+
+// Pictures support word meaning while the original word and speech stay visible.
+// Exact comparisons share dimensions, colors and reference surfaces.
+const towerWord = (count: number) => diagram(picture([
+  line(40, 274, 280, 274),
+  ...Array.from({ length: count }, (_, i) => rect(124, 234 - i * 40, 72, 40, '#7aa9cf')),
+], 320, 320), count === 5 ? '高高的积木塔' : '低低的积木塔');
+const positionWord = (above: boolean) => diagram(picture([
+  rect(95, 125, 130, 70, '#c7b797'), circle(160, above ? 70 : 250, 24, '#ce7469'),
+], 320, 320), above ? '红球在盒子上方' : '红球在盒子下方');
+const lengthWord = (long: boolean) => diagram(picture([
+  rect(40, 143, long ? 222 : 102, 34, '#d7b660'),
+  { kind: 'polygon', points: [[long ? 262 : 142,143],[long ? 288 : 168,160],[long ? 262 : 142,177]], fill: '#c7b797' },
+], 320, 320), long ? '长铅笔' : '短铅笔');
+const antonymPictures: Record<string, GalleryImage> = {
+  高: towerWord(5), 低: towerWord(2), 开: explorationArt.boxStates[0], 关: explorationArt.boxStates[1],
+  上: positionWord(true), 下: positionWord(false), 长: lengthWord(true), 短: lengthWord(false),
+  多: diagram(dots(6, 3), '六个圆点，比较多'), 少: diagram(dots(2, 3), '两个圆点，比较少'),
+};
 
 function materials(activity: Activity): { label: string; image?: GalleryImage }[] {
   if (activity.kind !== "parentObservation") return [];
@@ -65,7 +84,8 @@ export function presentExploration(group: ActivitySet): ActivitySet {
     const procedurePictures = family === 'L06' ? [explorationArt.planting, explorationArt.painting, explorationArt.fruitSalad][variant] : null;
     if (['A06','A07','L01','L07'].includes(family ?? '') && activity.kind === 'multiSelect') activity.presentation = { ...activity.presentation, compactSymbols: true };
     for (const token of activity.tokens) {
-      const image = family === 'P01' && token.id.startsWith('use') ? explorationArt.everydayActions[variant * 3 + Number(token.id.slice(3))]
+      const image = family === 'E01' && activity.kind === 'matching' ? antonymPictures[token.label]
+        : family === 'P01' && token.id.startsWith('use') ? explorationArt.everydayActions[variant * 3 + Number(token.id.slice(3))]
         : procedurePictures ? procedurePictures[Number(token.id.slice(4))]
         : concrete[token.label] ?? (['E03', 'P02'].includes(family ?? '') ? storyPictures[token.label] : undefined);
       if (image) { token.image = image; token.textOnly = false; }

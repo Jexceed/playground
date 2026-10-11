@@ -245,6 +245,8 @@ const sorterVisualRules = new Map([
   ["🟡", { color: "黄色", shape: "圆形" }],
   ["🟢", { color: "绿色", shape: "圆形" }],
   ["🟦", { color: "蓝色", shape: "方形" }],
+  ["🟥", { color: "红色", shape: "方形" }],
+  ["🟨", { color: "黄色", shape: "方形" }],
   ["⬜", { color: "白色", shape: "方形" }],
 ]);
 const visualMatchPartAliases = new Map([
@@ -1436,7 +1438,7 @@ function visualKindsForItem(item) {
 }
 
 function checkPartWholePuzzleRoundQuality(round, context) {
-  const wholeGroup = round.visualGroups?.find((group) => group.label === "完整图");
+  const wholeGroup = round.visualGroups?.find((group) => ["完整图", "完整的一组图卡"].includes(group.label));
   if (!wholeGroup) {
     problems.push(`${context}: part-whole round should show a 完整图 group`);
     return;
@@ -1444,7 +1446,7 @@ function checkPartWholePuzzleRoundQuality(round, context) {
   if (wholeGroup.items.some((item) => visualKindsForItem(item).length > 1)) {
     problems.push(`${context}: 完整图 should be laid out as separate pieces, not one combined visual token`);
   }
-  if (/还少哪一块/.test(round.prompt)) {
+  if (/还少哪一块|还少哪张/.test(round.prompt)) {
     const haveGroup = round.visualGroups?.find((group) => group.label === "已经有");
     if (!haveGroup) problems.push(`${context}: missing-piece round should show 已经有 pieces`);
     if (haveGroup && wholeGroup.items.length <= haveGroup.items.length) {

@@ -1,0 +1,250 @@
+$ node scripts/generate-edge-voices.mjs -- --voice zh-CN-XiaoxiaoNeural --rate -12% --pitch +2Hz --python ./local-tts/.venv/bin/python --quiet --retries 3
+Retry 1/3 for parent-问她-哪一张两个条件都满足-哪一张只满足红色-哪一张只满足圆形: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 1/3 for choice-红色方块: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 1/3 for object-红色方块: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 1/3 for parent-问她-哪一张两个条件都满足-哪一张只满足蓝色-哪一张只满足方形: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for parent-问她-哪一张两个条件都满足-哪一张只满足红色-哪一张只满足圆形: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for choice-红色方块: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for object-红色方块: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for parent-问她-哪一张两个条件都满足-哪一张只满足蓝色-哪一张只满足方形: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for parent-问她-哪一张两个条件都满足-哪一张只满足红色-哪一张只满足圆形: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for choice-红色方块: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for object-红色方块: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for parent-问她-哪一张两个条件都满足-哪一张只满足蓝色-哪一张只满足方形: spawn ./local-tts/.venv/bin/python ENOENT
+Skipped 466/4056: parent-问她-哪一张两个条件都满足-哪一张只满足红色-哪一张只满足圆形
+Skipped 467/4056: choice-红色方块
+Skipped 468/4056: object-红色方块
+Skipped 472/4056: parent-问她-哪一张两个条件都满足-哪一张只满足蓝色-哪一张只满足方形
+Retry 1/3 for parent-问她-哪一张两个条件都满足-哪一张只满足黄色-哪一张只满足圆形: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 1/3 for choice-黄色方块: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 1/3 for object-黄色方块: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 1/3 for prompt-积木和小车散了-想按种类分开放进两个盒子-先做什么-按图卡从左到右-找出缺少的一步: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for parent-问她-哪一张两个条件都满足-哪一张只满足黄色-哪一张只满足圆形: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for choice-黄色方块: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for object-黄色方块: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for prompt-积木和小车散了-想按种类分开放进两个盒子-先做什么-按图卡从左到右-找出缺少的一步: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for parent-问她-哪一张两个条件都满足-哪一张只满足黄色-哪一张只满足圆形: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for choice-黄色方块: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for object-黄色方块: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for prompt-积木和小车散了-想按种类分开放进两个盒子-先做什么-按图卡从左到右-找出缺少的一步: spawn ./local-tts/.venv/bin/python ENOENT
+Skipped 477/4056: parent-问她-哪一张两个条件都满足-哪一张只满足黄色-哪一张只满足圆形
+Skipped 478/4056: choice-黄色方块
+Skipped 479/4056: object-黄色方块
+Retry 1/3 for success-按顺序是积木和小车-先分开两类-分开放进盒子-分类装好-所以缺少的是先分开两类-先分类-再把积木和小车放进各自的盒子-下次好找: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 1/3 for retry-先从左到右按顺序说-积木和小车-先分开两类-分开放进盒子-分类装好-再想缺少的先分开两类让后面能继续: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 1/3 for parent-请她指着图卡复述积木和小车-先分开两类-分开放进盒子-分类装好-说为什么缺少先分开两类: spawn ./local-tts/.venv/bin/python ENOENT
+Skipped 558/4056: prompt-积木和小车散了-想按种类分开放进两个盒子-先做什么-按图卡从左到右-找出缺少的一步
+Retry 1/3 for choice-先分开两类: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for success-按顺序是积木和小车-先分开两类-分开放进盒子-分类装好-所以缺少的是先分开两类-先分类-再把积木和小车放进各自的盒子-下次好找: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for retry-先从左到右按顺序说-积木和小车-先分开两类-分开放进盒子-分类装好-再想缺少的先分开两类让后面能继续: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for parent-请她指着图卡复述积木和小车-先分开两类-分开放进盒子-分类装好-说为什么缺少先分开两类: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for choice-先分开两类: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for success-按顺序是积木和小车-先分开两类-分开放进盒子-分类装好-所以缺少的是先分开两类-先分类-再把积木和小车放进各自的盒子-下次好找: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for retry-先从左到右按顺序说-积木和小车-先分开两类-分开放进盒子-分类装好-再想缺少的先分开两类让后面能继续: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for parent-请她指着图卡复述积木和小车-先分开两类-分开放进盒子-分类装好-说为什么缺少先分开两类: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for choice-先分开两类: spawn ./local-tts/.venv/bin/python ENOENT
+Skipped 559/4056: success-按顺序是积木和小车-先分开两类-分开放进盒子-分类装好-所以缺少的是先分开两类-先分类-再把积木和小车放进各自的盒子-下次好找
+Skipped 560/4056: retry-先从左到右按顺序说-积木和小车-先分开两类-分开放进盒子-分类装好-再想缺少的先分开两类让后面能继续
+Skipped 561/4056: parent-请她指着图卡复述积木和小车-先分开两类-分开放进盒子-分类装好-说为什么缺少先分开两类
+Retry 1/3 for choice-全放同一个盒子: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 1/3 for choice-只收一个玩具: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 1/3 for object-积木和小车: spawn ./local-tts/.venv/bin/python ENOENT
+Skipped 562/4056: choice-先分开两类
+Retry 1/3 for object-分开放进盒子: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for choice-全放同一个盒子: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for choice-只收一个玩具: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for object-积木和小车: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for object-分开放进盒子: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for choice-全放同一个盒子: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for choice-只收一个玩具: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for object-积木和小车: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for object-分开放进盒子: spawn ./local-tts/.venv/bin/python ENOENT
+Skipped 563/4056: choice-全放同一个盒子
+Skipped 564/4056: choice-只收一个玩具
+Retry 1/3 for object-分类装好: spawn ./local-tts/.venv/bin/python ENOENT
+Skipped 565/4056: object-积木和小车
+Retry 1/3 for prompt-和大人一起过马路-行人灯是红色的-即使车停着-也要先做什么-按图卡从左到右-找出缺少的一步: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 1/3 for success-按顺序是路口-红灯-停-所以缺少的是停-行人红灯亮着要停下等-等绿灯亮了-大人确认安全后再一起走: spawn ./local-tts/.venv/bin/python ENOENT
+Skipped 566/4056: object-分开放进盒子
+Retry 1/3 for prompt-和大人到有行人信号灯的路口-准备过马路-第一步先看什么-按图卡从左到右-找出缺少的一步: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for object-分类装好: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for prompt-和大人一起过马路-行人灯是红色的-即使车停着-也要先做什么-按图卡从左到右-找出缺少的一步: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for success-按顺序是路口-红灯-停-所以缺少的是停-行人红灯亮着要停下等-等绿灯亮了-大人确认安全后再一起走: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for prompt-和大人到有行人信号灯的路口-准备过马路-第一步先看什么-按图卡从左到右-找出缺少的一步: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for object-分类装好: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for prompt-和大人一起过马路-行人灯是红色的-即使车停着-也要先做什么-按图卡从左到右-找出缺少的一步: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for success-按顺序是路口-红灯-停-所以缺少的是停-行人红灯亮着要停下等-等绿灯亮了-大人确认安全后再一起走: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for prompt-和大人到有行人信号灯的路口-准备过马路-第一步先看什么-按图卡从左到右-找出缺少的一步: spawn ./local-tts/.venv/bin/python ENOENT
+Skipped 567/4056: object-分类装好
+Retry 1/3 for success-按顺序是路口-先看灯-走过去-所以缺少的是先看灯-先看行人信号灯-绿灯亮了-还要由大人确认路面安全-再一起走: spawn ./local-tts/.venv/bin/python ENOENT
+Skipped 650/4056: prompt-和大人一起过马路-行人灯是红色的-即使车停着-也要先做什么-按图卡从左到右-找出缺少的一步
+Skipped 651/4056: success-按顺序是路口-红灯-停-所以缺少的是停-行人红灯亮着要停下等-等绿灯亮了-大人确认安全后再一起走
+Retry 1/3 for prompt-积木散在地上-想拿到桌上重新搭塔-先做什么-按图卡从左到右-找出缺少的一步: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 1/3 for prompt-积木和小车已经分好类-两个空盒子也打开了-下一步做什么-按图卡从左到右-找出缺少的一步: spawn ./local-tts/.venv/bin/python ENOENT
+Skipped 657/4056: prompt-和大人到有行人信号灯的路口-准备过马路-第一步先看什么-按图卡从左到右-找出缺少的一步
+Retry 1/3 for success-按顺序是分好的两类玩具-分开放进盒子-分类装好-所以缺少的是分开放进盒子-已经分类了-下一步把积木和小车放进各自的盒子-完成收纳: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for success-按顺序是路口-先看灯-走过去-所以缺少的是先看灯-先看行人信号灯-绿灯亮了-还要由大人确认路面安全-再一起走: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for prompt-积木散在地上-想拿到桌上重新搭塔-先做什么-按图卡从左到右-找出缺少的一步: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for prompt-积木和小车已经分好类-两个空盒子也打开了-下一步做什么-按图卡从左到右-找出缺少的一步: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for success-按顺序是分好的两类玩具-分开放进盒子-分类装好-所以缺少的是分开放进盒子-已经分类了-下一步把积木和小车放进各自的盒子-完成收纳: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for success-按顺序是路口-先看灯-走过去-所以缺少的是先看灯-先看行人信号灯-绿灯亮了-还要由大人确认路面安全-再一起走: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for prompt-积木散在地上-想拿到桌上重新搭塔-先做什么-按图卡从左到右-找出缺少的一步: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for prompt-积木和小车已经分好类-两个空盒子也打开了-下一步做什么-按图卡从左到右-找出缺少的一步: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for success-按顺序是分好的两类玩具-分开放进盒子-分类装好-所以缺少的是分开放进盒子-已经分类了-下一步把积木和小车放进各自的盒子-完成收纳: spawn ./local-tts/.venv/bin/python ENOENT
+Skipped 658/4056: success-按顺序是路口-先看灯-走过去-所以缺少的是先看灯-先看行人信号灯-绿灯亮了-还要由大人确认路面安全-再一起走
+Retry 1/3 for retry-先从左到右按顺序说-分好的两类玩具-分开放进盒子-分类装好-再想缺少的分开放进盒子让后面能继续: spawn ./local-tts/.venv/bin/python ENOENT
+Skipped 661/4056: prompt-积木散在地上-想拿到桌上重新搭塔-先做什么-按图卡从左到右-找出缺少的一步
+Retry 1/3 for parent-请她指着图卡复述分好的两类玩具-分开放进盒子-分类装好-说为什么缺少分开放进盒子: spawn ./local-tts/.venv/bin/python ENOENT
+Skipped 677/4056: prompt-积木和小车已经分好类-两个空盒子也打开了-下一步做什么-按图卡从左到右-找出缺少的一步
+Skipped 678/4056: success-按顺序是分好的两类玩具-分开放进盒子-分类装好-所以缺少的是分开放进盒子-已经分类了-下一步把积木和小车放进各自的盒子-完成收纳
+Retry 1/3 for choice-再分类一遍: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 1/3 for choice-分开放进盒子: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for retry-先从左到右按顺序说-分好的两类玩具-分开放进盒子-分类装好-再想缺少的分开放进盒子让后面能继续: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for parent-请她指着图卡复述分好的两类玩具-分开放进盒子-分类装好-说为什么缺少分开放进盒子: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for choice-再分类一遍: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for choice-分开放进盒子: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for retry-先从左到右按顺序说-分好的两类玩具-分开放进盒子-分类装好-再想缺少的分开放进盒子让后面能继续: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for parent-请她指着图卡复述分好的两类玩具-分开放进盒子-分类装好-说为什么缺少分开放进盒子: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for choice-再分类一遍: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for choice-分开放进盒子: spawn ./local-tts/.venv/bin/python ENOENT
+Skipped 679/4056: retry-先从左到右按顺序说-分好的两类玩具-分开放进盒子-分类装好-再想缺少的分开放进盒子让后面能继续
+Skipped 680/4056: parent-请她指着图卡复述分好的两类玩具-分开放进盒子-分类装好-说为什么缺少分开放进盒子
+Retry 1/3 for object-分好的两类玩具: spawn ./local-tts/.venv/bin/python ENOENT
+Skipped 681/4056: choice-再分类一遍
+Skipped 682/4056: choice-分开放进盒子
+Retry 1/3 for prompt-积木和小车要分开放进两个盒子-下次好找-它们还混在一起-先做什么-收纳的目标是每一类放一个盒子: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 1/3 for success-先把积木和小车分开-再各放一个盒子-下次就知道去哪里找: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 1/3 for retry-目标是分开放-全放在同一个盒子里-积木和小车还是混在一起: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for object-分好的两类玩具: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for prompt-积木和小车要分开放进两个盒子-下次好找-它们还混在一起-先做什么-收纳的目标是每一类放一个盒子: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for success-先把积木和小车分开-再各放一个盒子-下次就知道去哪里找: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for retry-目标是分开放-全放在同一个盒子里-积木和小车还是混在一起: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for object-分好的两类玩具: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for prompt-积木和小车要分开放进两个盒子-下次好找-它们还混在一起-先做什么-收纳的目标是每一类放一个盒子: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for success-先把积木和小车分开-再各放一个盒子-下次就知道去哪里找: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for retry-目标是分开放-全放在同一个盒子里-积木和小车还是混在一起: spawn ./local-tts/.venv/bin/python ENOENT
+Skipped 683/4056: object-分好的两类玩具
+Retry 1/3 for parent-问她-要找小车时-分开放和混在一起有什么不同: spawn ./local-tts/.venv/bin/python ENOENT
+Skipped 763/4056: prompt-积木和小车要分开放进两个盒子-下次好找-它们还混在一起-先做什么-收纳的目标是每一类放一个盒子
+Skipped 764/4056: success-先把积木和小车分开-再各放一个盒子-下次就知道去哪里找
+Skipped 765/4056: retry-目标是分开放-全放在同一个盒子里-积木和小车还是混在一起
+Retry 1/3 for prompt-要把积木和小车分开放进两个盒子-下次好找-现在却全混在一个盒子里-怎么改-看看混放的结果-和分开放的目标一样吗: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 1/3 for success-把混在一起的玩具取出来-先分类-再让积木和小车各住一个盒子: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 1/3 for retry-现在的问题是两类玩具还混在一起-要怎样把它们分开放: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for parent-问她-要找小车时-分开放和混在一起有什么不同: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for prompt-要把积木和小车分开放进两个盒子-下次好找-现在却全混在一个盒子里-怎么改-看看混放的结果-和分开放的目标一样吗: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for success-把混在一起的玩具取出来-先分类-再让积木和小车各住一个盒子: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for retry-现在的问题是两类玩具还混在一起-要怎样把它们分开放: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for parent-问她-要找小车时-分开放和混在一起有什么不同: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for prompt-要把积木和小车分开放进两个盒子-下次好找-现在却全混在一个盒子里-怎么改-看看混放的结果-和分开放的目标一样吗: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for success-把混在一起的玩具取出来-先分类-再让积木和小车各住一个盒子: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for retry-现在的问题是两类玩具还混在一起-要怎样把它们分开放: spawn ./local-tts/.venv/bin/python ENOENT
+Skipped 766/4056: parent-问她-要找小车时-分开放和混在一起有什么不同
+Retry 1/3 for parent-问她-目标是什么-混在一个盒子里完成目标了吗-为什么: spawn ./local-tts/.venv/bin/python ENOENT
+Skipped 829/4056: prompt-要把积木和小车分开放进两个盒子-下次好找-现在却全混在一个盒子里-怎么改-看看混放的结果-和分开放的目标一样吗
+Skipped 830/4056: success-把混在一起的玩具取出来-先分类-再让积木和小车各住一个盒子
+Skipped 831/4056: retry-现在的问题是两类玩具还混在一起-要怎样把它们分开放
+Retry 1/3 for choice-继续混放: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 1/3 for choice-取出后先分类: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 1/3 for object-混在一个盒子: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for parent-问她-目标是什么-混在一个盒子里完成目标了吗-为什么: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for choice-继续混放: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for choice-取出后先分类: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for object-混在一个盒子: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for parent-问她-目标是什么-混在一个盒子里完成目标了吗-为什么: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for choice-继续混放: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for choice-取出后先分类: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for object-混在一个盒子: spawn ./local-tts/.venv/bin/python ENOENT
+Skipped 832/4056: parent-问她-目标是什么-混在一个盒子里完成目标了吗-为什么
+Retry 1/3 for prompt-桌面模型里-玩具兔想沿桥面去对岸拿胡萝卜-岸边有够长的木板-它一直站着没动-先怎么做-先找到目标-再看小河挡住了哪一段路: spawn ./local-tts/.venv/bin/python ENOENT
+Skipped 833/4056: choice-继续混放
+Skipped 834/4056: choice-取出后先分类
+Skipped 835/4056: object-混在一个盒子
+Retry 1/3 for success-目标是让玩具兔到对岸拿胡萝卜-先用够长的木板搭好桥-它才能沿桥面过去: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 1/3 for retry-玩具兔要去对岸-木板已经够长了-哪一步能接通两岸: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 1/3 for parent-问她-玩具兔的目标是什么-挡路的是什么-木板能帮什么忙: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for prompt-桌面模型里-玩具兔想沿桥面去对岸拿胡萝卜-岸边有够长的木板-它一直站着没动-先怎么做-先找到目标-再看小河挡住了哪一段路: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for success-目标是让玩具兔到对岸拿胡萝卜-先用够长的木板搭好桥-它才能沿桥面过去: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for retry-玩具兔要去对岸-木板已经够长了-哪一步能接通两岸: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for parent-问她-玩具兔的目标是什么-挡路的是什么-木板能帮什么忙: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for prompt-桌面模型里-玩具兔想沿桥面去对岸拿胡萝卜-岸边有够长的木板-它一直站着没动-先怎么做-先找到目标-再看小河挡住了哪一段路: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for success-目标是让玩具兔到对岸拿胡萝卜-先用够长的木板搭好桥-它才能沿桥面过去: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for retry-玩具兔要去对岸-木板已经够长了-哪一步能接通两岸: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for parent-问她-玩具兔的目标是什么-挡路的是什么-木板能帮什么忙: spawn ./local-tts/.venv/bin/python ENOENT
+Skipped 836/4056: prompt-桌面模型里-玩具兔想沿桥面去对岸拿胡萝卜-岸边有够长的木板-它一直站着没动-先怎么做-先找到目标-再看小河挡住了哪一段路
+Retry 1/3 for prompt-积木和小车已经分好类-两个空盒子也打开了-下一步怎么做-保留已经做好的部分-再继续完成: spawn ./local-tts/.venv/bin/python ENOENT
+Skipped 837/4056: success-目标是让玩具兔到对岸拿胡萝卜-先用够长的木板搭好桥-它才能沿桥面过去
+Skipped 838/4056: retry-玩具兔要去对岸-木板已经够长了-哪一步能接通两岸
+Skipped 839/4056: parent-问她-玩具兔的目标是什么-挡路的是什么-木板能帮什么忙
+Retry 1/3 for success-已经分类了-接着把积木和小车放进各自的盒子就好: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 1/3 for prompt-和大人一起到了有斑马线和行人信号灯的路口-先看什么-先找决定能不能走的信号: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 1/3 for success-先看行人信号灯-绿灯亮了还要请大人确认路面安全-再一起走过去: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for prompt-积木和小车已经分好类-两个空盒子也打开了-下一步怎么做-保留已经做好的部分-再继续完成: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for success-已经分类了-接着把积木和小车放进各自的盒子就好: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for prompt-和大人一起到了有斑马线和行人信号灯的路口-先看什么-先找决定能不能走的信号: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for success-先看行人信号灯-绿灯亮了还要请大人确认路面安全-再一起走过去: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for prompt-积木和小车已经分好类-两个空盒子也打开了-下一步怎么做-保留已经做好的部分-再继续完成: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for success-已经分类了-接着把积木和小车放进各自的盒子就好: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for prompt-和大人一起到了有斑马线和行人信号灯的路口-先看什么-先找决定能不能走的信号: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for success-先看行人信号灯-绿灯亮了还要请大人确认路面安全-再一起走过去: spawn ./local-tts/.venv/bin/python ENOENT
+Skipped 866/4056: prompt-积木和小车已经分好类-两个空盒子也打开了-下一步怎么做-保留已经做好的部分-再继续完成
+Retry 1/3 for prompt-积木和小车要分开放进两个盒子-下次好找-盒子打开了-玩具还混在一起-先做什么-先想哪一步能让两类玩具分开放: spawn ./local-tts/.venv/bin/python ENOENT
+Skipped 867/4056: success-已经分类了-接着把积木和小车放进各自的盒子就好
+Skipped 877/4056: prompt-和大人一起到了有斑马线和行人信号灯的路口-先看什么-先找决定能不能走的信号
+Skipped 878/4056: success-先看行人信号灯-绿灯亮了还要请大人确认路面安全-再一起走过去
+Retry 1/3 for success-先把积木和小车分开-再各放一个盒子-下次好找: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 1/3 for retry-盒子已经准备好了-还缺把两类玩具分开的步骤: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 1/3 for parent-问她-为什么把全部玩具放进同一个盒子-还没有完成这次的收纳目标: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for prompt-积木和小车要分开放进两个盒子-下次好找-盒子打开了-玩具还混在一起-先做什么-先想哪一步能让两类玩具分开放: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for success-先把积木和小车分开-再各放一个盒子-下次好找: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for retry-盒子已经准备好了-还缺把两类玩具分开的步骤: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for parent-问她-为什么把全部玩具放进同一个盒子-还没有完成这次的收纳目标: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for prompt-积木和小车要分开放进两个盒子-下次好找-盒子打开了-玩具还混在一起-先做什么-先想哪一步能让两类玩具分开放: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for success-先把积木和小车分开-再各放一个盒子-下次好找: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for retry-盒子已经准备好了-还缺把两类玩具分开的步骤: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for parent-问她-为什么把全部玩具放进同一个盒子-还没有完成这次的收纳目标: spawn ./local-tts/.venv/bin/python ENOENT
+Skipped 889/4056: prompt-积木和小车要分开放进两个盒子-下次好找-盒子打开了-玩具还混在一起-先做什么-先想哪一步能让两类玩具分开放
+Skipped 890/4056: success-先把积木和小车分开-再各放一个盒子-下次好找
+Skipped 891/4056: retry-盒子已经准备好了-还缺把两类玩具分开的步骤
+Retry 1/3 for prompt-积木和小车已经分好类-要装进各自的盒子-两个空盒子已打开-下一步做什么-保留已经完成的成果-继续向目标走: spawn ./local-tts/.venv/bin/python ENOENT
+Skipped 892/4056: parent-问她-为什么把全部玩具放进同一个盒子-还没有完成这次的收纳目标
+Retry 1/3 for success-已经分类了-把积木和小车放进各自的盒子-就完成这次收纳: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 1/3 for success-第一行是小鸟和天空-合成小鸟天空图卡-第三行是小狗和家-所以空格补小狗家图卡: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 1/3 for retry-先看第一行-最后一格同时有前两格的图-第三行也要把两张图都放进去: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for prompt-积木和小车已经分好类-要装进各自的盒子-两个空盒子已打开-下一步做什么-保留已经完成的成果-继续向目标走: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for success-已经分类了-把积木和小车放进各自的盒子-就完成这次收纳: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for success-第一行是小鸟和天空-合成小鸟天空图卡-第三行是小狗和家-所以空格补小狗家图卡: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for retry-先看第一行-最后一格同时有前两格的图-第三行也要把两张图都放进去: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for prompt-积木和小车已经分好类-要装进各自的盒子-两个空盒子已打开-下一步做什么-保留已经完成的成果-继续向目标走: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for success-已经分类了-把积木和小车放进各自的盒子-就完成这次收纳: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for success-第一行是小鸟和天空-合成小鸟天空图卡-第三行是小狗和家-所以空格补小狗家图卡: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for retry-先看第一行-最后一格同时有前两格的图-第三行也要把两张图都放进去: spawn ./local-tts/.venv/bin/python ENOENT
+Skipped 924/4056: prompt-积木和小车已经分好类-要装进各自的盒子-两个空盒子已打开-下一步做什么-保留已经完成的成果-继续向目标走
+Skipped 925/4056: success-已经分类了-把积木和小车放进各自的盒子-就完成这次收纳
+Retry 1/3 for parent-请她说第一行怎么把两张图合在一起-再说第三行为什么要把小狗和家放在一起: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 1/3 for prompt-这组图卡还少哪张-先看完整的一组图卡-再看已经有的图卡: spawn ./local-tts/.venv/bin/python ENOENT
+Skipped 1316/4056: success-第一行是小鸟和天空-合成小鸟天空图卡-第三行是小狗和家-所以空格补小狗家图卡
+Skipped 1317/4056: retry-先看第一行-最后一格同时有前两格的图-第三行也要把两张图都放进去
+Retry 1/3 for success-这组图卡还少星星: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 1/3 for retry-拿完整的一组图卡来对照-一张一张找-看看还缺什么: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for parent-请她说第一行怎么把两张图合在一起-再说第三行为什么要把小狗和家放在一起: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for prompt-这组图卡还少哪张-先看完整的一组图卡-再看已经有的图卡: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for success-这组图卡还少星星: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for retry-拿完整的一组图卡来对照-一张一张找-看看还缺什么: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for parent-请她说第一行怎么把两张图合在一起-再说第三行为什么要把小狗和家放在一起: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for prompt-这组图卡还少哪张-先看完整的一组图卡-再看已经有的图卡: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for success-这组图卡还少星星: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 3/3 for retry-拿完整的一组图卡来对照-一张一张找-看看还缺什么: spawn ./local-tts/.venv/bin/python ENOENT
+Skipped 1318/4056: parent-请她说第一行怎么把两张图合在一起-再说第三行为什么要把小狗和家放在一起
+Retry 1/3 for parent-请她说-这一组有哪几张图卡-现在已经有哪几张: spawn ./local-tts/.venv/bin/python ENOENT
+Skipped 1536/4056: prompt-这组图卡还少哪张-先看完整的一组图卡-再看已经有的图卡
+Skipped 1537/4056: success-这组图卡还少星星
+Skipped 1538/4056: retry-拿完整的一组图卡来对照-一张一张找-看看还缺什么
+Retry 1/3 for prompt-2号浇第一次水-以后每过3天浇一次-第三次是几号-选出符合条件的一张图卡: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 1/3 for prompt-3号浇第一次水-以后每过3天浇一次-第三次是几号-选出符合条件的一张图卡: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 1/3 for prompt-4号浇第一次水-以后每过3天浇一次-第三次是几号-选出符合条件的一张图卡: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for parent-请她说-这一组有哪几张图卡-现在已经有哪几张: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for prompt-2号浇第一次水-以后每过3天浇一次-第三次是几号-选出符合条件的一张图卡: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for prompt-3号浇第一次水-以后每过3天浇一次-第三次是几号-选出符合条件的一张图卡: spawn ./local-tts/.venv/bin/python ENOENT
+Retry 2/3 for prompt-4号浇第一次水-以后每过3天浇一次-第三次是几号-选出符合条件的一张图卡: spawn ./local-tts/.venv/bin/python ENOENT
+[ELIFECYCLE] Command failed.

@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-06T00:43:56.258Z",
+  "generatedAt": "2026-10-11T02:23:10.949Z",
   "recommendedVoice": "warm adult female Mandarin, smiling, preschool teacher, 0.85 speed, crisp consonants",
-  "lineCount": 4043,
+  "lineCount": 4055,
   "lines": [
     {
       "id": "game-title-数一数",
@@ -2321,7 +2321,6 @@
         "logic-pattern-train/logic-pattern-train-6",
         "logic-sorter-switch/logic-sorter-switch-7",
         "logic-sorter-switch/logic-sorter-switch-8",
-        "logic-sorter-switch/logic-sorter-switch-10",
         "logic-sorter-switch/logic-sorter-switch-11",
         "logic-matrix-puzzle/logic-matrix-puzzle-1",
         "logic-matrix-puzzle/logic-matrix-puzzle-4",
@@ -2395,6 +2394,7 @@
         "logic-pattern-train/logic-pattern-train-3",
         "logic-pattern-train/logic-pattern-train-3",
         "logic-sorter-switch/logic-sorter-switch-2",
+        "logic-sorter-switch/logic-sorter-switch-9",
         "logic-sorter-switch/logic-sorter-switch-10",
         "logic-matrix-puzzle/logic-matrix-puzzle-1",
         "logic-matrix-puzzle/logic-matrix-puzzle-2",
@@ -2452,7 +2452,6 @@
         "logic-pattern-train/logic-pattern-train-6",
         "logic-pattern-train/logic-pattern-train-6",
         "logic-pattern-train/logic-pattern-train-6",
-        "logic-sorter-switch/logic-sorter-switch-9",
         "logic-sorter-switch/logic-sorter-switch-11",
         "logic-stop-think/logic-stop-think-1",
         "logic-stop-think/logic-stop-think-3",
@@ -2651,9 +2650,7 @@
         "logic-sorter-switch/logic-sorter-switch-4",
         "logic-sorter-switch/logic-sorter-switch-5",
         "logic-sorter-switch/logic-sorter-switch-6",
-        "logic-sorter-switch/logic-sorter-switch-9",
         "logic-sorter-switch/logic-sorter-switch-10",
-        "logic-sorter-switch/logic-sorter-switch-11",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-1",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-1",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-7",
@@ -5791,6 +5788,7 @@
         "logic-pattern-train/logic-pattern-train-1",
         "logic-pattern-train/logic-pattern-train-2",
         "logic-pattern-train/logic-pattern-train-3",
+        "logic-sorter-switch/logic-sorter-switch-9",
         "logic-sorter-switch/logic-sorter-switch-10",
         "logic-matrix-puzzle/logic-matrix-puzzle-2",
         "logic-matrix-puzzle/logic-matrix-puzzle-4",
@@ -5811,7 +5809,6 @@
         "logic-pattern-train/logic-pattern-train-4",
         "logic-pattern-train/logic-pattern-train-5",
         "logic-pattern-train/logic-pattern-train-6",
-        "logic-sorter-switch/logic-sorter-switch-10",
         "logic-sorter-switch/logic-sorter-switch-11",
         "logic-matrix-puzzle/logic-matrix-puzzle-2",
         "logic-matrix-puzzle/logic-matrix-puzzle-4",
@@ -5927,9 +5924,11 @@
         "logic-condition-detective/logic-condition-detective-7",
         "logic-condition-detective/logic-condition-detective-12",
         "logic-fix-plan/logic-fix-plan-5",
+        "logic-fix-plan/logic-fix-plan-6",
         "logic-fix-plan/logic-fix-plan-7",
         "logic-fix-plan/logic-fix-plan-12",
         "logic-priority-choice/logic-priority-choice-2",
+        "logic-priority-choice/logic-priority-choice-4",
         "logic-priority-choice/logic-priority-choice-6",
         "logic-priority-choice/logic-priority-choice-10",
         "logic-priority-choice/logic-priority-choice-11",
@@ -6062,7 +6061,6 @@
         "logic-pattern-train/logic-pattern-train-4",
         "logic-pattern-train/logic-pattern-train-5",
         "logic-pattern-train/logic-pattern-train-6",
-        "logic-sorter-switch/logic-sorter-switch-9",
         "logic-sorter-switch/logic-sorter-switch-11",
         "logic-matrix-puzzle/logic-matrix-puzzle-4",
         "logic-part-whole-puzzle/logic-part-whole-puzzle-4",
@@ -7001,28 +6999,35 @@
       ]
     },
     {
-      "id": "parent-问她-哪一张两个条件都满足-哪一张只满足圆形-哪一张两个条件都不满足",
+      "id": "parent-问她-哪一张两个条件都满足-哪一张只满足红色-哪一张只满足圆形",
       "kind": "parent",
-      "text": "问她：哪一张两个条件都满足？哪一张只满足圆形？哪一张两个条件都不满足？",
+      "text": "问她：哪一张两个条件都满足？哪一张只满足红色？哪一张只满足圆形？",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-sorter-switch/logic-sorter-switch-9",
-        "logic-sorter-switch/logic-sorter-switch-11"
+        "logic-sorter-switch/logic-sorter-switch-9"
       ]
     },
     {
-      "id": "choice-蓝色方块",
+      "id": "choice-红色方块",
       "kind": "choice",
-      "text": "蓝色方块",
+      "text": "红色方块",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-sorter-switch/logic-sorter-switch-9",
-        "logic-sorter-switch/logic-sorter-switch-10",
-        "logic-sorter-switch/logic-sorter-switch-11",
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-1",
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-7"
+        "logic-sorter-switch/logic-sorter-switch-10"
+      ]
+    },
+    {
+      "id": "object-红色方块",
+      "kind": "object",
+      "text": "红色方块",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-sorter-switch/logic-sorter-switch-9",
+        "logic-sorter-switch/logic-sorter-switch-10"
       ]
     },
     {
@@ -7056,13 +7061,25 @@
       ]
     },
     {
-      "id": "parent-问她-哪一张两个条件都满足-哪一张只满足颜色-哪一张两个条件都不满足",
+      "id": "parent-问她-哪一张两个条件都满足-哪一张只满足蓝色-哪一张只满足方形",
       "kind": "parent",
-      "text": "问她：哪一张两个条件都满足？哪一张只满足颜色？哪一张两个条件都不满足？",
+      "text": "问她：哪一张两个条件都满足？哪一张只满足蓝色？哪一张只满足方形？",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-sorter-switch/logic-sorter-switch-10"
+      ]
+    },
+    {
+      "id": "choice-蓝色方块",
+      "kind": "choice",
+      "text": "蓝色方块",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-sorter-switch/logic-sorter-switch-10",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-1",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-7"
       ]
     },
     {
@@ -7091,6 +7108,36 @@
       "text": "两个条件都要看：黄色和圆形都对才行。",
       "locale": "zh-CN",
       "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-sorter-switch/logic-sorter-switch-11"
+      ]
+    },
+    {
+      "id": "parent-问她-哪一张两个条件都满足-哪一张只满足黄色-哪一张只满足圆形",
+      "kind": "parent",
+      "text": "问她：哪一张两个条件都满足？哪一张只满足黄色？哪一张只满足圆形？",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-sorter-switch/logic-sorter-switch-11"
+      ]
+    },
+    {
+      "id": "choice-黄色方块",
+      "kind": "choice",
+      "text": "黄色方块",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-sorter-switch/logic-sorter-switch-11"
+      ]
+    },
+    {
+      "id": "object-黄色方块",
+      "kind": "object",
+      "text": "黄色方块",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "logic-sorter-switch/logic-sorter-switch-11"
       ]
@@ -7188,8 +7235,7 @@
         "logic-stop-think/logic-stop-think-3",
         "logic-stop-think/logic-stop-think-4",
         "logic-stop-think/logic-stop-think-5",
-        "logic-stop-think/logic-stop-think-6",
-        "logic-order-plan/logic-order-plan-19"
+        "logic-stop-think/logic-stop-think-6"
       ]
     },
     {
@@ -7781,7 +7827,6 @@
       "contexts": [
         "logic-order-plan/logic-order-plan-5",
         "logic-order-plan/logic-order-plan-17",
-        "logic-order-plan/logic-order-plan-24",
         "logic-priority-choice/logic-priority-choice-1"
       ]
     },
@@ -7933,7 +7978,7 @@
       "contexts": [
         "logic-order-plan/logic-order-plan-6",
         "logic-order-plan/logic-order-plan-12",
-        "logic-order-plan/logic-order-plan-24"
+        "logic-order-plan/logic-order-plan-21"
       ]
     },
     {
@@ -7960,9 +8005,9 @@
       ]
     },
     {
-      "id": "prompt-玩具散了-想按种类收好-先做什么-按图卡从左到右-找出缺少的一步",
+      "id": "prompt-积木和小车散了-想按种类分开放进两个盒子-先做什么-按图卡从左到右-找出缺少的一步",
       "kind": "prompt",
-      "text": "玩具散了，想按种类收好，先做什么？按图卡从左到右，找出缺少的一步。",
+      "text": "积木和小车散了，想按种类分开放进两个盒子，先做什么？按图卡从左到右，找出缺少的一步。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -7970,9 +8015,9 @@
       ]
     },
     {
-      "id": "success-按顺序是玩具散了-先分类-放进盒子-整齐-所以缺少的是先分类-先分类-再放进盒子-最后变整齐",
+      "id": "success-按顺序是积木和小车-先分开两类-分开放进盒子-分类装好-所以缺少的是先分开两类-先分类-再把积木和小车放进各自的盒子-下次好找",
       "kind": "success",
-      "text": "按顺序是玩具散了、先分类、放进盒子、整齐，所以缺少的是先分类。先分类，再放进盒子，最后变整齐。",
+      "text": "按顺序是积木和小车、先分开两类、分开放进盒子、分类装好，所以缺少的是先分开两类。先分类，再把积木和小车放进各自的盒子，下次好找。",
       "locale": "zh-CN",
       "tone": "warm, delighted, clear",
       "contexts": [
@@ -7980,9 +8025,9 @@
       ]
     },
     {
-      "id": "retry-先从左到右按顺序说-玩具散了-先分类-放进盒子-整齐-再想缺少的先分类让后面能继续",
+      "id": "retry-先从左到右按顺序说-积木和小车-先分开两类-分开放进盒子-分类装好-再想缺少的先分开两类让后面能继续",
       "kind": "retry",
-      "text": "先从左到右按顺序说：玩具散了、先分类、放进盒子、整齐，再想缺少的先分类让后面能继续。",
+      "text": "先从左到右按顺序说：积木和小车、先分开两类、分开放进盒子、分类装好，再想缺少的先分开两类让后面能继续。",
       "locale": "zh-CN",
       "tone": "gentle, encouraging, slow",
       "contexts": [
@@ -7990,9 +8035,9 @@
       ]
     },
     {
-      "id": "parent-请她指着图卡复述玩具散了-先分类-放进盒子-整齐-说为什么缺少先分类",
+      "id": "parent-请她指着图卡复述积木和小车-先分开两类-分开放进盒子-分类装好-说为什么缺少先分开两类",
       "kind": "parent",
-      "text": "请她指着图卡复述玩具散了、先分类、放进盒子、整齐，说为什么缺少先分类。",
+      "text": "请她指着图卡复述积木和小车、先分开两类、分开放进盒子、分类装好，说为什么缺少先分开两类。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -8000,47 +8045,49 @@
       ]
     },
     {
-      "id": "choice-先分类",
+      "id": "choice-先分开两类",
       "kind": "choice",
-      "text": "先分类",
+      "text": "先分开两类",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-7",
-        "logic-order-plan/logic-order-plan-12",
         "logic-condition-detective/logic-condition-detective-6",
-        "logic-fix-plan/logic-fix-plan-6",
         "logic-priority-choice/logic-priority-choice-4"
       ]
     },
     {
-      "id": "choice-随便塞进盒子",
+      "id": "choice-全放同一个盒子",
       "kind": "choice",
-      "text": "随便塞进盒子",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-order-plan/logic-order-plan-7"
-      ]
-    },
-    {
-      "id": "choice-重新弄乱",
-      "kind": "choice",
-      "text": "重新弄乱",
+      "text": "全放同一个盒子",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-7",
-        "logic-order-plan/logic-order-plan-21",
+        "logic-condition-detective/logic-condition-detective-6",
+        "logic-priority-choice/logic-priority-choice-4"
+      ]
+    },
+    {
+      "id": "choice-只收一个玩具",
+      "kind": "choice",
+      "text": "只收一个玩具",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-7",
         "logic-order-plan/logic-order-plan-24",
+        "logic-condition-detective/logic-condition-detective-6",
+        "logic-fix-plan/logic-fix-plan-6",
         "logic-fix-plan/logic-fix-plan-12",
+        "logic-priority-choice/logic-priority-choice-4",
         "logic-priority-choice/logic-priority-choice-11"
       ]
     },
     {
-      "id": "object-玩具散了",
+      "id": "object-积木和小车",
       "kind": "object",
-      "text": "玩具散了",
+      "text": "积木和小车",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -8053,31 +8100,25 @@
       ]
     },
     {
-      "id": "object-放进盒子",
+      "id": "object-分开放进盒子",
       "kind": "object",
-      "text": "放进盒子",
+      "text": "分开放进盒子",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-order-plan/logic-order-plan-7",
-        "logic-order-plan/logic-order-plan-12",
-        "logic-condition-detective/logic-condition-detective-6",
-        "logic-fix-plan/logic-fix-plan-6",
-        "logic-priority-choice/logic-priority-choice-4"
+        "logic-order-plan/logic-order-plan-7"
       ]
     },
     {
-      "id": "object-整齐",
+      "id": "object-分类装好",
       "kind": "object",
-      "text": "整齐",
+      "text": "分类装好",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-7",
-        "logic-order-plan/logic-order-plan-12",
         "logic-order-plan/logic-order-plan-24",
         "logic-condition-detective/logic-condition-detective-6",
-        "logic-fix-plan/logic-fix-plan-6",
         "logic-priority-choice/logic-priority-choice-4"
       ]
     },
@@ -8415,6 +8456,7 @@
       "contexts": [
         "logic-order-plan/logic-order-plan-11",
         "logic-condition-detective/logic-condition-detective-7",
+        "logic-fix-plan/logic-fix-plan-7",
         "logic-priority-choice/logic-priority-choice-5"
       ]
     },
@@ -8459,9 +8501,39 @@
       ]
     },
     {
+      "id": "choice-先分类",
+      "kind": "choice",
+      "text": "先分类",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-12"
+      ]
+    },
+    {
       "id": "object-先捡积木",
       "kind": "object",
       "text": "先捡积木",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-12"
+      ]
+    },
+    {
+      "id": "object-放进盒子",
+      "kind": "object",
+      "text": "放进盒子",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-12"
+      ]
+    },
+    {
+      "id": "object-整齐",
+      "kind": "object",
+      "text": "整齐",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -9041,9 +9113,9 @@
       ]
     },
     {
-      "id": "prompt-路口是红灯-想安全过马路-先做什么-按图卡从左到右-找出缺少的一步",
+      "id": "prompt-和大人一起过马路-行人灯是红色的-即使车停着-也要先做什么-按图卡从左到右-找出缺少的一步",
       "kind": "prompt",
-      "text": "路口是红灯，想安全过马路，先做什么？按图卡从左到右，找出缺少的一步。",
+      "text": "和大人一起过马路，行人灯是红色的。即使车停着，也要先做什么？按图卡从左到右，找出缺少的一步。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -9051,9 +9123,9 @@
       ]
     },
     {
-      "id": "success-按顺序是路口-红灯-停-所以缺少的是停-红灯时先停-等能走的时候再过马路",
+      "id": "success-按顺序是路口-红灯-停-所以缺少的是停-行人红灯亮着要停下等-等绿灯亮了-大人确认安全后再一起走",
       "kind": "success",
-      "text": "按顺序是路口、红灯、停，所以缺少的是停。红灯时先停，等能走的时候再过马路。",
+      "text": "按顺序是路口、红灯、停，所以缺少的是停。行人红灯亮着要停下等。等绿灯亮了，大人确认安全后再一起走。",
       "locale": "zh-CN",
       "tone": "warm, delighted, clear",
       "contexts": [
@@ -9103,9 +9175,22 @@
       ]
     },
     {
-      "id": "prompt-路口要过马路-第一步先看什么-按图卡从左到右-找出缺少的一步",
+      "id": "choice-只看车停着",
+      "kind": "choice",
+      "text": "只看车停着",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-19",
+        "logic-order-plan/logic-order-plan-20",
+        "logic-priority-choice/logic-priority-choice-2",
+        "logic-priority-choice/logic-priority-choice-7"
+      ]
+    },
+    {
+      "id": "prompt-和大人到有行人信号灯的路口-准备过马路-第一步先看什么-按图卡从左到右-找出缺少的一步",
       "kind": "prompt",
-      "text": "路口要过马路，第一步先看什么？按图卡从左到右，找出缺少的一步。",
+      "text": "和大人到有行人信号灯的路口，准备过马路。第一步先看什么？按图卡从左到右，找出缺少的一步。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -9113,9 +9198,9 @@
       ]
     },
     {
-      "id": "success-按顺序是路口-先看灯-走过去-所以缺少的是先看灯-过马路前先看灯-再决定能不能走",
+      "id": "success-按顺序是路口-先看灯-走过去-所以缺少的是先看灯-先看行人信号灯-绿灯亮了-还要由大人确认路面安全-再一起走",
       "kind": "success",
-      "text": "按顺序是路口、先看灯、走过去，所以缺少的是先看灯。过马路前先看灯，再决定能不能走。",
+      "text": "按顺序是路口、先看灯、走过去，所以缺少的是先看灯。先看行人信号灯；绿灯亮了，还要由大人确认路面安全，再一起走。",
       "locale": "zh-CN",
       "tone": "warm, delighted, clear",
       "contexts": [
@@ -9143,19 +9228,9 @@
       ]
     },
     {
-      "id": "choice-闭眼往前走",
-      "kind": "choice",
-      "text": "闭眼往前走",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-order-plan/logic-order-plan-20"
-      ]
-    },
-    {
-      "id": "prompt-积木散在地上-想重新搭塔-先做什么-按图卡从左到右-找出缺少的一步",
+      "id": "prompt-积木散在地上-想拿到桌上重新搭塔-先做什么-按图卡从左到右-找出缺少的一步",
       "kind": "prompt",
-      "text": "积木散在地上，想重新搭塔，先做什么？按图卡从左到右，找出缺少的一步。",
+      "text": "积木散在地上，想拿到桌上重新搭塔，先做什么？按图卡从左到右，找出缺少的一步。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -9329,9 +9404,9 @@
       ]
     },
     {
-      "id": "prompt-玩具已经分好类了-下一步做什么-按图卡从左到右-找出缺少的一步",
+      "id": "prompt-积木和小车已经分好类-两个空盒子也打开了-下一步做什么-按图卡从左到右-找出缺少的一步",
       "kind": "prompt",
-      "text": "玩具已经分好类了，下一步做什么？按图卡从左到右，找出缺少的一步。",
+      "text": "积木和小车已经分好类，两个空盒子也打开了。下一步做什么？按图卡从左到右，找出缺少的一步。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -9339,9 +9414,9 @@
       ]
     },
     {
-      "id": "success-按顺序是先分类-先放进盒子-整齐-所以缺少的是先放进盒子-已经分类了-下一步放进盒子-房间就更整齐",
+      "id": "success-按顺序是分好的两类玩具-分开放进盒子-分类装好-所以缺少的是分开放进盒子-已经分类了-下一步把积木和小车放进各自的盒子-完成收纳",
       "kind": "success",
-      "text": "按顺序是先分类、先放进盒子、整齐，所以缺少的是先放进盒子。已经分类了，下一步放进盒子，房间就更整齐。",
+      "text": "按顺序是分好的两类玩具、分开放进盒子、分类装好，所以缺少的是分开放进盒子。已经分类了，下一步把积木和小车放进各自的盒子，完成收纳。",
       "locale": "zh-CN",
       "tone": "warm, delighted, clear",
       "contexts": [
@@ -9349,9 +9424,9 @@
       ]
     },
     {
-      "id": "retry-先从左到右按顺序说-先分类-先放进盒子-整齐-再想缺少的先放进盒子让后面能继续",
+      "id": "retry-先从左到右按顺序说-分好的两类玩具-分开放进盒子-分类装好-再想缺少的分开放进盒子让后面能继续",
       "kind": "retry",
-      "text": "先从左到右按顺序说：先分类、先放进盒子、整齐，再想缺少的先放进盒子让后面能继续。",
+      "text": "先从左到右按顺序说：分好的两类玩具、分开放进盒子、分类装好，再想缺少的分开放进盒子让后面能继续。",
       "locale": "zh-CN",
       "tone": "gentle, encouraging, slow",
       "contexts": [
@@ -9359,9 +9434,9 @@
       ]
     },
     {
-      "id": "parent-请她指着图卡复述先分类-先放进盒子-整齐-说为什么缺少先放进盒子",
+      "id": "parent-请她指着图卡复述分好的两类玩具-分开放进盒子-分类装好-说为什么缺少分开放进盒子",
       "kind": "parent",
-      "text": "请她指着图卡复述先分类、先放进盒子、整齐，说为什么缺少先放进盒子。",
+      "text": "请她指着图卡复述分好的两类玩具、分开放进盒子、分类装好，说为什么缺少分开放进盒子。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -9369,9 +9444,33 @@
       ]
     },
     {
-      "id": "object-先分类",
+      "id": "choice-再分类一遍",
+      "kind": "choice",
+      "text": "再分类一遍",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-24",
+        "logic-fix-plan/logic-fix-plan-12",
+        "logic-priority-choice/logic-priority-choice-11"
+      ]
+    },
+    {
+      "id": "choice-分开放进盒子",
+      "kind": "choice",
+      "text": "分开放进盒子",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-24",
+        "logic-fix-plan/logic-fix-plan-12",
+        "logic-priority-choice/logic-priority-choice-11"
+      ]
+    },
+    {
+      "id": "object-分好的两类玩具",
       "kind": "object",
-      "text": "先分类",
+      "text": "分好的两类玩具",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -10257,9 +10356,9 @@
       ]
     },
     {
-      "id": "prompt-玩具散了-想变整齐-先随便塞进盒子够吗-先看这样做能不能让后面更顺",
+      "id": "prompt-积木和小车要分开放进两个盒子-下次好找-它们还混在一起-先做什么-收纳的目标是每一类放一个盒子",
       "kind": "prompt",
-      "text": "玩具散了，想变整齐，先随便塞进盒子够吗？先看这样做能不能让后面更顺。",
+      "text": "积木和小车要分开放进两个盒子，下次好找。它们还混在一起，先做什么？收纳的目标是每一类放一个盒子。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -10267,9 +10366,9 @@
       ]
     },
     {
-      "id": "success-先分类-再放进盒子-才更容易变整齐",
+      "id": "success-先把积木和小车分开-再各放一个盒子-下次就知道去哪里找",
       "kind": "success",
-      "text": "先分类，再放进盒子，才更容易变整齐。",
+      "text": "先把积木和小车分开，再各放一个盒子，下次就知道去哪里找。",
       "locale": "zh-CN",
       "tone": "warm, delighted, clear",
       "contexts": [
@@ -10277,9 +10376,9 @@
       ]
     },
     {
-      "id": "retry-想想哪一步能让后面的收拾更容易",
+      "id": "retry-目标是分开放-全放在同一个盒子里-积木和小车还是混在一起",
       "kind": "retry",
-      "text": "想想哪一步能让后面的收拾更容易。",
+      "text": "目标是分开放。全放在同一个盒子里，积木和小车还是混在一起。",
       "locale": "zh-CN",
       "tone": "gentle, encouraging, slow",
       "contexts": [
@@ -10287,35 +10386,13 @@
       ]
     },
     {
-      "id": "parent-问她-分类以后-放进盒子会不会更快",
+      "id": "parent-问她-要找小车时-分开放和混在一起有什么不同",
       "kind": "parent",
-      "text": "问她：分类以后，放进盒子会不会更快？",
+      "text": "问她：要找小车时，分开放和混在一起有什么不同？",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-condition-detective/logic-condition-detective-6"
-      ]
-    },
-    {
-      "id": "choice-随便塞",
-      "kind": "choice",
-      "text": "随便塞",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-condition-detective/logic-condition-detective-6"
-      ]
-    },
-    {
-      "id": "choice-只拿一个",
-      "kind": "choice",
-      "text": "只拿一个",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-condition-detective/logic-condition-detective-6",
-        "logic-fix-plan/logic-fix-plan-6",
-        "logic-fix-plan/logic-fix-plan-12"
       ]
     },
     {
@@ -10945,9 +11022,9 @@
       ]
     },
     {
-      "id": "prompt-玩具散了就随便塞进盒子-哪里不够好-看这样做会不会让后面更乱",
+      "id": "prompt-要把积木和小车分开放进两个盒子-下次好找-现在却全混在一个盒子里-怎么改-看看混放的结果-和分开放的目标一样吗",
       "kind": "prompt",
-      "text": "玩具散了就随便塞进盒子，哪里不够好？看这样做会不会让后面更乱。",
+      "text": "要把积木和小车分开放进两个盒子，下次好找。现在却全混在一个盒子里，怎么改？看看混放的结果，和分开放的目标一样吗？",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -10955,9 +11032,9 @@
       ]
     },
     {
-      "id": "success-先分类再收进盒子-更容易整理整齐",
+      "id": "success-把混在一起的玩具取出来-先分类-再让积木和小车各住一个盒子",
       "kind": "success",
-      "text": "先分类再收进盒子，更容易整理整齐。",
+      "text": "把混在一起的玩具取出来，先分类，再让积木和小车各住一个盒子。",
       "locale": "zh-CN",
       "tone": "warm, delighted, clear",
       "contexts": [
@@ -10965,9 +11042,9 @@
       ]
     },
     {
-      "id": "retry-想一想哪一步能让后面的收拾更有顺序",
+      "id": "retry-现在的问题是两类玩具还混在一起-要怎样把它们分开放",
       "kind": "retry",
-      "text": "想一想哪一步能让后面的收拾更有顺序。",
+      "text": "现在的问题是两类玩具还混在一起。要怎样把它们分开放？",
       "locale": "zh-CN",
       "tone": "gentle, encouraging, slow",
       "contexts": [
@@ -10975,9 +11052,9 @@
       ]
     },
     {
-      "id": "parent-问她-随便塞和先分类-哪个更容易找东西",
+      "id": "parent-问她-目标是什么-混在一个盒子里完成目标了吗-为什么",
       "kind": "parent",
-      "text": "问她：随便塞和先分类，哪个更容易找东西？",
+      "text": "问她：目标是什么？混在一个盒子里完成目标了吗？为什么？",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -10985,9 +11062,9 @@
       ]
     },
     {
-      "id": "choice-继续随便塞",
+      "id": "choice-继续混放",
       "kind": "choice",
-      "text": "继续随便塞",
+      "text": "继续混放",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -10995,9 +11072,29 @@
       ]
     },
     {
-      "id": "prompt-看到小河只站着等-怎样改更有用-等待不能解决障碍-要处理障碍",
+      "id": "choice-取出后先分类",
+      "kind": "choice",
+      "text": "取出后先分类",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-fix-plan/logic-fix-plan-6"
+      ]
+    },
+    {
+      "id": "object-混在一个盒子",
+      "kind": "object",
+      "text": "混在一个盒子",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-fix-plan/logic-fix-plan-6"
+      ]
+    },
+    {
+      "id": "prompt-桌面模型里-玩具兔想沿桥面去对岸拿胡萝卜-岸边有够长的木板-它一直站着没动-先怎么做-先找到目标-再看小河挡住了哪一段路",
       "kind": "prompt",
-      "text": "看到小河只站着等，怎样改更有用？等待不能解决障碍，要处理障碍。",
+      "text": "桌面模型里，玩具兔想沿桥面去对岸拿胡萝卜，岸边有够长的木板。它一直站着没动，先怎么做？先找到目标，再看小河挡住了哪一段路。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -11005,9 +11102,9 @@
       ]
     },
     {
-      "id": "success-小河是障碍-先搭桥才有用",
+      "id": "success-目标是让玩具兔到对岸拿胡萝卜-先用够长的木板搭好桥-它才能沿桥面过去",
       "kind": "success",
-      "text": "小河是障碍，先搭桥才有用。",
+      "text": "目标是让玩具兔到对岸拿胡萝卜。先用够长的木板搭好桥，它才能沿桥面过去。",
       "locale": "zh-CN",
       "tone": "warm, delighted, clear",
       "contexts": [
@@ -11015,9 +11112,9 @@
       ]
     },
     {
-      "id": "retry-站着等不会让小河变没-先想怎么过去",
+      "id": "retry-玩具兔要去对岸-木板已经够长了-哪一步能接通两岸",
       "kind": "retry",
-      "text": "站着等不会让小河变没，先想怎么过去。",
+      "text": "玩具兔要去对岸，木板已经够长了。哪一步能接通两岸？",
       "locale": "zh-CN",
       "tone": "gentle, encouraging, slow",
       "contexts": [
@@ -11025,13 +11122,121 @@
       ]
     },
     {
-      "id": "parent-问她-哪一个动作真的解决了小河这个问题",
+      "id": "parent-问她-玩具兔的目标是什么-挡路的是什么-木板能帮什么忙",
       "kind": "parent",
-      "text": "问她：哪一个动作真的解决了小河这个问题？",
+      "text": "问她：玩具兔的目标是什么？挡路的是什么？木板能帮什么忙？",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-fix-plan/logic-fix-plan-7"
+      ]
+    },
+    {
+      "id": "object-小兔",
+      "kind": "object",
+      "text": "小兔",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-fix-plan/logic-fix-plan-7",
+        "logic-same-kind-detective/logic-same-kind-detective-4",
+        "logic-same-kind-detective/logic-same-kind-detective-10",
+        "logic-position-map/logic-position-map-1",
+        "logic-position-map/logic-position-map-2",
+        "logic-position-map/logic-position-map-10",
+        "logic-memory-camera/logic-memory-camera-4",
+        "logic-difference-detective/logic-difference-detective-11",
+        "logic-difference-detective/logic-difference-detective-11",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-3",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-9",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-9",
+        "logic-lineup-challenge/lineup-three-in-order",
+        "logic-lineup-challenge/lineup-four-chain",
+        "logic-lineup-challenge/lineup-fixed-ends",
+        "logic-lineup-challenge/lineup-immediate-neighbor",
+        "logic-lineup-challenge/lineup-two-valid-pairs",
+        "logic-lineup-challenge/lineup-middle-and-neighbor",
+        "logic-memory-placement/memory-animal-line",
+        "logic-memory-placement/memory-six-positions",
+        "logic-memory-placement/memory-blank-positions",
+        "explore-transitive-order/explore-transitive-order-1",
+        "explore-transitive-order/explore-transitive-order-2",
+        "explore-transitive-order/explore-transitive-order-3",
+        "explore-transitive-order/explore-transitive-order-4",
+        "explore-transitive-order/explore-transitive-order-5",
+        "explore-transitive-order/explore-transitive-order-6",
+        "explore-constraint-grid/explore-constraint-grid-1",
+        "explore-constraint-grid/explore-constraint-grid-2",
+        "explore-constraint-grid/explore-constraint-grid-3",
+        "explore-constraint-grid/explore-constraint-grid-4",
+        "explore-constraint-grid/explore-constraint-grid-5",
+        "explore-constraint-grid/explore-constraint-grid-6",
+        "explore-constraint-grid/explore-constraint-grid-7",
+        "explore-constraint-grid/explore-constraint-grid-8",
+        "explore-constraint-grid/explore-constraint-grid-9",
+        "explore-visual-set-memory/explore-visual-set-memory-1",
+        "explore-visual-set-memory/explore-visual-set-memory-2",
+        "explore-visual-set-memory/explore-visual-set-memory-3",
+        "explore-visual-set-memory/explore-visual-set-memory-4",
+        "explore-visual-set-memory/explore-visual-set-memory-5",
+        "explore-visual-set-memory/explore-visual-set-memory-6",
+        "explore-visual-set-memory/explore-visual-set-memory-7",
+        "explore-visual-set-memory/explore-visual-set-memory-8",
+        "explore-visual-set-memory/explore-visual-set-memory-9",
+        "explore-spatial-memory/explore-spatial-memory-1",
+        "explore-spatial-memory/explore-spatial-memory-2",
+        "explore-spatial-memory/explore-spatial-memory-3",
+        "explore-spatial-memory/explore-spatial-memory-4",
+        "explore-spatial-memory/explore-spatial-memory-5",
+        "explore-spatial-memory/explore-spatial-memory-6",
+        "explore-spatial-memory/explore-spatial-memory-7",
+        "explore-spatial-memory/explore-spatial-memory-8",
+        "explore-spatial-memory/explore-spatial-memory-9",
+        "explore-sequence-memory/explore-sequence-memory-1",
+        "explore-sequence-memory/explore-sequence-memory-2",
+        "explore-sequence-memory/explore-sequence-memory-3",
+        "explore-sequence-memory/explore-sequence-memory-4",
+        "explore-sequence-memory/explore-sequence-memory-5",
+        "explore-sequence-memory/explore-sequence-memory-6",
+        "explore-sequence-memory/explore-sequence-memory-7",
+        "explore-sequence-memory/explore-sequence-memory-8",
+        "explore-sequence-memory/explore-sequence-memory-9",
+        "explore-auditory-instructions/explore-auditory-instructions-1",
+        "explore-auditory-instructions/explore-auditory-instructions-2",
+        "explore-auditory-instructions/explore-auditory-instructions-3",
+        "explore-auditory-instructions/explore-auditory-instructions-4",
+        "explore-auditory-instructions/explore-auditory-instructions-5",
+        "explore-auditory-instructions/explore-auditory-instructions-6",
+        "explore-auditory-instructions/explore-auditory-instructions-7",
+        "explore-auditory-instructions/explore-auditory-instructions-8",
+        "explore-auditory-instructions/explore-auditory-instructions-9",
+        "explore-story-recall/explore-story-recall-1",
+        "explore-story-recall/explore-story-recall-2",
+        "explore-story-recall/explore-story-recall-3",
+        "explore-relational-quantity-memory/explore-relational-quantity-memory-1",
+        "explore-relational-quantity-memory/explore-relational-quantity-memory-2",
+        "explore-relational-quantity-memory/explore-relational-quantity-memory-3",
+        "explore-relational-quantity-memory/explore-relational-quantity-memory-4",
+        "explore-relational-quantity-memory/explore-relational-quantity-memory-5",
+        "explore-relational-quantity-memory/explore-relational-quantity-memory-6",
+        "explore-relational-quantity-memory/explore-relational-quantity-memory-7",
+        "explore-relational-quantity-memory/explore-relational-quantity-memory-8",
+        "explore-relational-quantity-memory/explore-relational-quantity-memory-9",
+        "explore-english-listening/explore-english-listening-1",
+        "explore-english-listening/explore-english-listening-2",
+        "explore-english-listening/explore-english-listening-3"
+      ]
+    },
+    {
+      "id": "object-长木板",
+      "kind": "object",
+      "text": "长木板",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-fix-plan/logic-fix-plan-7",
+        "logic-priority-choice/logic-priority-choice-3",
+        "logic-same-kind-detective/logic-same-kind-detective-11"
       ]
     },
     {
@@ -11275,9 +11480,9 @@
       ]
     },
     {
-      "id": "prompt-玩具已经按种类分好了-盒子也打开了-下一步怎么做-保留已经做好的部分-再继续完成",
+      "id": "prompt-积木和小车已经分好类-两个空盒子也打开了-下一步怎么做-保留已经做好的部分-再继续完成",
       "kind": "prompt",
-      "text": "玩具已经按种类分好了，盒子也打开了。下一步怎么做？保留已经做好的部分，再继续完成。",
+      "text": "积木和小车已经分好类，两个空盒子也打开了。下一步怎么做？保留已经做好的部分，再继续完成。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -11285,9 +11490,9 @@
       ]
     },
     {
-      "id": "success-已经分类了-接着放进盒子就好",
+      "id": "success-已经分类了-接着把积木和小车放进各自的盒子就好",
       "kind": "success",
-      "text": "已经分类了，接着放进盒子就好。",
+      "text": "已经分类了，接着把积木和小车放进各自的盒子就好。",
       "locale": "zh-CN",
       "tone": "warm, delighted, clear",
       "contexts": [
@@ -11312,17 +11517,6 @@
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-fix-plan/logic-fix-plan-12"
-      ]
-    },
-    {
-      "id": "choice-放进盒子",
-      "kind": "choice",
-      "text": "放进盒子",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-fix-plan/logic-fix-plan-12",
-        "logic-priority-choice/logic-priority-choice-11"
       ]
     },
     {
@@ -11396,9 +11590,9 @@
       ]
     },
     {
-      "id": "prompt-路口到了-前面有斑马线和信号灯-先看什么-先找决定能不能走的信号",
+      "id": "prompt-和大人一起到了有斑马线和行人信号灯的路口-先看什么-先找决定能不能走的信号",
       "kind": "prompt",
-      "text": "路口到了，前面有斑马线和信号灯，先看什么？先找决定能不能走的信号。",
+      "text": "和大人一起到了有斑马线和行人信号灯的路口，先看什么？先找决定能不能走的信号。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -11406,9 +11600,9 @@
       ]
     },
     {
-      "id": "success-先看灯-确定安全以后再走过去",
+      "id": "success-先看行人信号灯-绿灯亮了还要请大人确认路面安全-再一起走过去",
       "kind": "success",
-      "text": "先看灯，确定安全以后再走过去。",
+      "text": "先看行人信号灯，绿灯亮了还要请大人确认路面安全，再一起走过去。",
       "locale": "zh-CN",
       "tone": "warm, delighted, clear",
       "contexts": [
@@ -11439,16 +11633,6 @@
       "id": "choice-先走过去",
       "kind": "choice",
       "text": "先走过去",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-priority-choice/logic-priority-choice-2"
-      ]
-    },
-    {
-      "id": "choice-先看书包",
-      "kind": "choice",
-      "text": "先看书包",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -11526,20 +11710,9 @@
       ]
     },
     {
-      "id": "object-长木板",
-      "kind": "object",
-      "text": "长木板",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-priority-choice/logic-priority-choice-3",
-        "logic-same-kind-detective/logic-same-kind-detective-11"
-      ]
-    },
-    {
-      "id": "prompt-玩具散了-盒子也打开了-先做什么更顺-先让后面的收纳更有顺序",
+      "id": "prompt-积木和小车要分开放进两个盒子-下次好找-盒子打开了-玩具还混在一起-先做什么-先想哪一步能让两类玩具分开放",
       "kind": "prompt",
-      "text": "玩具散了，盒子也打开了，先做什么更顺？先让后面的收纳更有顺序。",
+      "text": "积木和小车要分开放进两个盒子，下次好找。盒子打开了，玩具还混在一起，先做什么？先想哪一步能让两类玩具分开放。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -11547,9 +11720,9 @@
       ]
     },
     {
-      "id": "success-先分类-再放进盒子-整理会更顺",
+      "id": "success-先把积木和小车分开-再各放一个盒子-下次好找",
       "kind": "success",
-      "text": "先分类，再放进盒子，整理会更顺。",
+      "text": "先把积木和小车分开，再各放一个盒子，下次好找。",
       "locale": "zh-CN",
       "tone": "warm, delighted, clear",
       "contexts": [
@@ -11557,9 +11730,9 @@
       ]
     },
     {
-      "id": "retry-想想哪一步能让后面少混乱",
+      "id": "retry-盒子已经准备好了-还缺把两类玩具分开的步骤",
       "kind": "retry",
-      "text": "想想哪一步能让后面少混乱。",
+      "text": "盒子已经准备好了。还缺把两类玩具分开的步骤。",
       "locale": "zh-CN",
       "tone": "gentle, encouraging, slow",
       "contexts": [
@@ -11567,29 +11740,9 @@
       ]
     },
     {
-      "id": "parent-问她-先分类以后-放进盒子会不会更容易",
+      "id": "parent-问她-为什么把全部玩具放进同一个盒子-还没有完成这次的收纳目标",
       "kind": "parent",
-      "text": "问她：先分类以后，放进盒子会不会更容易？",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-priority-choice/logic-priority-choice-4"
-      ]
-    },
-    {
-      "id": "choice-先随便塞",
-      "kind": "choice",
-      "text": "先随便塞",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-priority-choice/logic-priority-choice-4"
-      ]
-    },
-    {
-      "id": "choice-先拿一个玩",
-      "kind": "choice",
-      "text": "先拿一个玩",
+      "text": "问她：为什么把全部玩具放进同一个盒子，还没有完成这次的收纳目标？",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -11720,16 +11873,6 @@
       "id": "choice-先跟小朋友走",
       "kind": "choice",
       "text": "先跟小朋友走",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-priority-choice/logic-priority-choice-7"
-      ]
-    },
-    {
-      "id": "choice-只看车停着",
-      "kind": "choice",
-      "text": "只看车停着",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -11917,9 +12060,9 @@
       ]
     },
     {
-      "id": "prompt-玩具已经分类了-接下来有两个选择-放进盒子或重新分一遍-先做哪个-保留已经完成的成果-继续向目标走",
+      "id": "prompt-积木和小车已经分好类-要装进各自的盒子-两个空盒子已打开-下一步做什么-保留已经完成的成果-继续向目标走",
       "kind": "prompt",
-      "text": "玩具已经分类了，接下来有两个选择：放进盒子或重新分一遍，先做哪个？保留已经完成的成果，继续向目标走。",
+      "text": "积木和小车已经分好类，要装进各自的盒子。两个空盒子已打开，下一步做什么？保留已经完成的成果，继续向目标走。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -11927,9 +12070,9 @@
       ]
     },
     {
-      "id": "success-已经分类了-先放进盒子-才能变整齐",
+      "id": "success-已经分类了-把积木和小车放进各自的盒子-就完成这次收纳",
       "kind": "success",
-      "text": "已经分类了，先放进盒子，才能变整齐。",
+      "text": "已经分类了，把积木和小车放进各自的盒子，就完成这次收纳。",
       "locale": "zh-CN",
       "tone": "warm, delighted, clear",
       "contexts": [
@@ -11950,16 +12093,6 @@
       "id": "parent-问她-分类已经做好了-下一步怎样离整齐更近",
       "kind": "parent",
       "text": "问她：分类已经做好了，下一步怎样离整齐更近？",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-priority-choice/logic-priority-choice-11"
-      ]
-    },
-    {
-      "id": "choice-重新分类",
-      "kind": "choice",
-      "text": "重新分类",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -14707,101 +14840,6 @@
         "explore-story-recall/explore-story-recall-1",
         "explore-story-recall/explore-story-recall-2",
         "explore-story-recall/explore-story-recall-3",
-        "explore-relational-quantity-memory/explore-relational-quantity-memory-7",
-        "explore-relational-quantity-memory/explore-relational-quantity-memory-8",
-        "explore-relational-quantity-memory/explore-relational-quantity-memory-9",
-        "explore-english-listening/explore-english-listening-1",
-        "explore-english-listening/explore-english-listening-2",
-        "explore-english-listening/explore-english-listening-3"
-      ]
-    },
-    {
-      "id": "object-小兔",
-      "kind": "object",
-      "text": "小兔",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-same-kind-detective/logic-same-kind-detective-4",
-        "logic-same-kind-detective/logic-same-kind-detective-10",
-        "logic-position-map/logic-position-map-1",
-        "logic-position-map/logic-position-map-2",
-        "logic-position-map/logic-position-map-10",
-        "logic-memory-camera/logic-memory-camera-4",
-        "logic-difference-detective/logic-difference-detective-11",
-        "logic-difference-detective/logic-difference-detective-11",
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-3",
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-9",
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-9",
-        "logic-lineup-challenge/lineup-three-in-order",
-        "logic-lineup-challenge/lineup-four-chain",
-        "logic-lineup-challenge/lineup-fixed-ends",
-        "logic-lineup-challenge/lineup-immediate-neighbor",
-        "logic-lineup-challenge/lineup-two-valid-pairs",
-        "logic-lineup-challenge/lineup-middle-and-neighbor",
-        "logic-memory-placement/memory-animal-line",
-        "logic-memory-placement/memory-six-positions",
-        "logic-memory-placement/memory-blank-positions",
-        "explore-transitive-order/explore-transitive-order-1",
-        "explore-transitive-order/explore-transitive-order-2",
-        "explore-transitive-order/explore-transitive-order-3",
-        "explore-transitive-order/explore-transitive-order-4",
-        "explore-transitive-order/explore-transitive-order-5",
-        "explore-transitive-order/explore-transitive-order-6",
-        "explore-constraint-grid/explore-constraint-grid-1",
-        "explore-constraint-grid/explore-constraint-grid-2",
-        "explore-constraint-grid/explore-constraint-grid-3",
-        "explore-constraint-grid/explore-constraint-grid-4",
-        "explore-constraint-grid/explore-constraint-grid-5",
-        "explore-constraint-grid/explore-constraint-grid-6",
-        "explore-constraint-grid/explore-constraint-grid-7",
-        "explore-constraint-grid/explore-constraint-grid-8",
-        "explore-constraint-grid/explore-constraint-grid-9",
-        "explore-visual-set-memory/explore-visual-set-memory-1",
-        "explore-visual-set-memory/explore-visual-set-memory-2",
-        "explore-visual-set-memory/explore-visual-set-memory-3",
-        "explore-visual-set-memory/explore-visual-set-memory-4",
-        "explore-visual-set-memory/explore-visual-set-memory-5",
-        "explore-visual-set-memory/explore-visual-set-memory-6",
-        "explore-visual-set-memory/explore-visual-set-memory-7",
-        "explore-visual-set-memory/explore-visual-set-memory-8",
-        "explore-visual-set-memory/explore-visual-set-memory-9",
-        "explore-spatial-memory/explore-spatial-memory-1",
-        "explore-spatial-memory/explore-spatial-memory-2",
-        "explore-spatial-memory/explore-spatial-memory-3",
-        "explore-spatial-memory/explore-spatial-memory-4",
-        "explore-spatial-memory/explore-spatial-memory-5",
-        "explore-spatial-memory/explore-spatial-memory-6",
-        "explore-spatial-memory/explore-spatial-memory-7",
-        "explore-spatial-memory/explore-spatial-memory-8",
-        "explore-spatial-memory/explore-spatial-memory-9",
-        "explore-sequence-memory/explore-sequence-memory-1",
-        "explore-sequence-memory/explore-sequence-memory-2",
-        "explore-sequence-memory/explore-sequence-memory-3",
-        "explore-sequence-memory/explore-sequence-memory-4",
-        "explore-sequence-memory/explore-sequence-memory-5",
-        "explore-sequence-memory/explore-sequence-memory-6",
-        "explore-sequence-memory/explore-sequence-memory-7",
-        "explore-sequence-memory/explore-sequence-memory-8",
-        "explore-sequence-memory/explore-sequence-memory-9",
-        "explore-auditory-instructions/explore-auditory-instructions-1",
-        "explore-auditory-instructions/explore-auditory-instructions-2",
-        "explore-auditory-instructions/explore-auditory-instructions-3",
-        "explore-auditory-instructions/explore-auditory-instructions-4",
-        "explore-auditory-instructions/explore-auditory-instructions-5",
-        "explore-auditory-instructions/explore-auditory-instructions-6",
-        "explore-auditory-instructions/explore-auditory-instructions-7",
-        "explore-auditory-instructions/explore-auditory-instructions-8",
-        "explore-auditory-instructions/explore-auditory-instructions-9",
-        "explore-story-recall/explore-story-recall-1",
-        "explore-story-recall/explore-story-recall-2",
-        "explore-story-recall/explore-story-recall-3",
-        "explore-relational-quantity-memory/explore-relational-quantity-memory-1",
-        "explore-relational-quantity-memory/explore-relational-quantity-memory-2",
-        "explore-relational-quantity-memory/explore-relational-quantity-memory-3",
-        "explore-relational-quantity-memory/explore-relational-quantity-memory-4",
-        "explore-relational-quantity-memory/explore-relational-quantity-memory-5",
-        "explore-relational-quantity-memory/explore-relational-quantity-memory-6",
         "explore-relational-quantity-memory/explore-relational-quantity-memory-7",
         "explore-relational-quantity-memory/explore-relational-quantity-memory-8",
         "explore-relational-quantity-memory/explore-relational-quantity-memory-9",
@@ -17559,10 +17597,10 @@
       ]
     },
     {
-      "id": "success-第一行是-小鸟-和-天空-合成-小鸟天空-第三行是-小狗-和-家-所以空格补-小狗家",
+      "id": "success-第一行是小鸟和天空-合成小鸟天空图卡-第三行是小狗和家-所以空格补小狗家图卡",
       "kind": "success",
-      "text": "第一行是 小鸟 和 天空，合成 小鸟天空；第三行是 小狗 和 家，所以空格补 小狗家。",
-      "spokenText": "第一航是 小鸟 和 天空，合成 小鸟天空；第三航是 小狗 和 家，所以空格补 小狗家。",
+      "text": "第一行是小鸟和天空，合成小鸟天空图卡；第三行是小狗和家，所以空格补小狗家图卡。",
+      "spokenText": "第一航是小鸟和天空，合成小鸟天空图卡；第三航是小狗和家，所以空格补小狗家图卡。",
       "locale": "zh-CN",
       "tone": "warm, delighted, clear",
       "contexts": [
@@ -17570,10 +17608,10 @@
       ]
     },
     {
-      "id": "retry-先读第一行这个完整行-前两个词连成最后一个-再看第三行缺的空格",
+      "id": "retry-先看第一行-最后一格同时有前两格的图-第三行也要把两张图都放进去",
       "kind": "retry",
-      "text": "先读第一行这个完整行：前两个词连成最后一个；再看第三行缺的空格。",
-      "spokenText": "先读第一航这个完整航：前两个词连成最后一个；再看第三航缺的空格。",
+      "text": "先看第一行：最后一格同时有前两格的图。第三行也要把两张图都放进去。",
+      "spokenText": "先看第一航：最后一格同时有前两格的图。第三航也要把两张图都放进去。",
       "locale": "zh-CN",
       "tone": "gentle, encouraging, slow",
       "contexts": [
@@ -17581,10 +17619,10 @@
       ]
     },
     {
-      "id": "parent-请她说第一行怎么连成小故事-再说第三行-小狗-和-家-用同一个规则为什么补-小狗家",
+      "id": "parent-请她说第一行怎么把两张图合在一起-再说第三行为什么要把小狗和家放在一起",
       "kind": "parent",
-      "text": "请她说第一行怎么连成小故事，再说第三行 小狗 和 家 用同一个规则为什么补 小狗家。",
-      "spokenText": "请她说第一航怎么连成小故事，再说第三航 小狗 和 家 用同一个规则为什么补 小狗家。",
+      "text": "请她说第一行怎么把两张图合在一起，再说第三行为什么要把小狗和家放在一起。",
+      "spokenText": "请她说第一航怎么把两张图合在一起，再说第三行为什么要把小狗和家放在一起。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -20006,9 +20044,9 @@
       ]
     },
     {
-      "id": "prompt-拼成完整图-还少哪一块-先看完整图-再看已经有的几块",
+      "id": "prompt-这组图卡还少哪张-先看完整的一组图卡-再看已经有的图卡",
       "kind": "prompt",
-      "text": "拼成完整图，还少哪一块？先看完整图，再看已经有的几块。",
+      "text": "这组图卡还少哪张？先看完整的一组图卡，再看已经有的图卡。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -20021,9 +20059,9 @@
       ]
     },
     {
-      "id": "success-完整图里还少星星",
+      "id": "success-这组图卡还少星星",
       "kind": "success",
-      "text": "完整图里还少星星。",
+      "text": "这组图卡还少星星。",
       "locale": "zh-CN",
       "tone": "warm, delighted, clear",
       "contexts": [
@@ -20031,9 +20069,9 @@
       ]
     },
     {
-      "id": "retry-把完整图里的东西一个一个划掉-看看还剩什么",
+      "id": "retry-拿完整的一组图卡来对照-一张一张找-看看还缺什么",
       "kind": "retry",
-      "text": "把完整图里的东西一个一个划掉，看看还剩什么。",
+      "text": "拿完整的一组图卡来对照，一张一张找，看看还缺什么。",
       "locale": "zh-CN",
       "tone": "gentle, encouraging, slow",
       "contexts": [
@@ -20046,9 +20084,9 @@
       ]
     },
     {
-      "id": "parent-请她说-完整图有哪几块-现在已经有哪几块",
+      "id": "parent-请她说-这一组有哪几张图卡-现在已经有哪几张",
       "kind": "parent",
-      "text": "请她说：完整图有哪几块？现在已经有哪几块？",
+      "text": "请她说：这一组有哪几张图卡？现在已经有哪几张？",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -30623,9 +30661,6 @@
         "explore-symmetry-axes/explore-symmetry-axes-7",
         "explore-symmetry-axes/explore-symmetry-axes-8",
         "explore-symmetry-axes/explore-symmetry-axes-9",
-        "explore-solid-views-count/explore-solid-views-count-7",
-        "explore-solid-views-count/explore-solid-views-count-8",
-        "explore-solid-views-count/explore-solid-views-count-9",
         "explore-cube-nets/explore-cube-nets-4",
         "explore-cube-nets/explore-cube-nets-5",
         "explore-cube-nets/explore-cube-nets-6",
@@ -33082,9 +33117,9 @@
       ]
     },
     {
-      "id": "prompt-从2号开始-每过三天浇一次水-第三次是几号-选出符合条件的一张图卡",
+      "id": "prompt-2号浇第一次水-以后每过3天浇一次-第三次是几号-选出符合条件的一张图卡",
       "kind": "prompt",
-      "text": "从2号开始，每过三天浇一次水，第三次是几号。选出符合条件的一张图卡。",
+      "text": "2号浇第一次水，以后每过3天浇一次，第三次是几号。选出符合条件的一张图卡。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -33124,9 +33159,9 @@
       ]
     },
     {
-      "id": "prompt-从3号开始-每过三天浇一次水-第三次是几号-选出符合条件的一张图卡",
+      "id": "prompt-3号浇第一次水-以后每过3天浇一次-第三次是几号-选出符合条件的一张图卡",
       "kind": "prompt",
-      "text": "从3号开始，每过三天浇一次水，第三次是几号。选出符合条件的一张图卡。",
+      "text": "3号浇第一次水，以后每过3天浇一次，第三次是几号。选出符合条件的一张图卡。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -33154,9 +33189,9 @@
       ]
     },
     {
-      "id": "prompt-从4号开始-每过三天浇一次水-第三次是几号-选出符合条件的一张图卡",
+      "id": "prompt-4号浇第一次水-以后每过3天浇一次-第三次是几号-选出符合条件的一张图卡",
       "kind": "prompt",
-      "text": "从4号开始，每过三天浇一次水，第三次是几号。选出符合条件的一张图卡。",
+      "text": "4号浇第一次水，以后每过3天浇一次，第三次是几号。选出符合条件的一张图卡。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -36076,9 +36111,9 @@
       ]
     },
     {
-      "id": "prompt-按顺序翻牌-最后每个位置朝上的是哪一面-选图卡-点问号格放进去-图卡可以重复用-翻第1张",
+      "id": "prompt-按顺序翻牌-最后每个位置朝上的是哪一面-选图卡-点问号格放进去-图卡可以重复用-每张牌一面是白色-一面是黄色-翻一次-白色变黄色-黄色变白色-翻第",
       "kind": "prompt",
-      "text": "按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。翻第1张。",
+      "text": "按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。每张牌一面是白色，一面是黄色。翻一次，白色变黄色，黄色变白色。翻第1张。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -36086,9 +36121,9 @@
       ]
     },
     {
-      "id": "success-翻一次换一面-同一张翻两次-又回到原来",
+      "id": "success-翻一次-白色和黄色换一面-同一张翻两次-又回到原来",
       "kind": "success",
-      "text": "翻一次换一面；同一张翻两次，又回到原来。",
+      "text": "翻一次，白色和黄色换一面；同一张翻两次，又回到原来。",
       "locale": "zh-CN",
       "tone": "warm, delighted, clear",
       "contexts": [
@@ -36116,21 +36151,63 @@
       ]
     },
     {
-      "id": "hint-翻第1张",
+      "id": "hint-每张牌一面是白色-一面是黄色",
       "kind": "hint",
-      "text": "翻第1张。",
+      "text": "每张牌一面是白色，一面是黄色。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
         "explore-toggle-state/explore-toggle-state-1",
+        "explore-toggle-state/explore-toggle-state-2",
+        "explore-toggle-state/explore-toggle-state-3",
         "explore-toggle-state/explore-toggle-state-4",
-        "explore-toggle-state/explore-toggle-state-7"
+        "explore-toggle-state/explore-toggle-state-5",
+        "explore-toggle-state/explore-toggle-state-6",
+        "explore-toggle-state/explore-toggle-state-7",
+        "explore-toggle-state/explore-toggle-state-8",
+        "explore-toggle-state/explore-toggle-state-9"
       ]
     },
     {
-      "id": "hint-翻一次换一面-同一张翻两次-又回到原来",
+      "id": "hint-翻一次-白色和黄色换一面-同一张翻两次-又回到原来",
       "kind": "hint",
-      "text": "翻一次换一面；同一张翻两次，又回到原来。",
+      "text": "翻一次，白色和黄色换一面；同一张翻两次，又回到原来。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-toggle-state/explore-toggle-state-1",
+        "explore-toggle-state/explore-toggle-state-2",
+        "explore-toggle-state/explore-toggle-state-3",
+        "explore-toggle-state/explore-toggle-state-4",
+        "explore-toggle-state/explore-toggle-state-5",
+        "explore-toggle-state/explore-toggle-state-6",
+        "explore-toggle-state/explore-toggle-state-7",
+        "explore-toggle-state/explore-toggle-state-8",
+        "explore-toggle-state/explore-toggle-state-9"
+      ]
+    },
+    {
+      "id": "clue-每张牌一面是白色-一面是黄色",
+      "kind": "clue",
+      "text": "每张牌一面是白色，一面是黄色。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-toggle-state/explore-toggle-state-1",
+        "explore-toggle-state/explore-toggle-state-2",
+        "explore-toggle-state/explore-toggle-state-3",
+        "explore-toggle-state/explore-toggle-state-4",
+        "explore-toggle-state/explore-toggle-state-5",
+        "explore-toggle-state/explore-toggle-state-6",
+        "explore-toggle-state/explore-toggle-state-7",
+        "explore-toggle-state/explore-toggle-state-8",
+        "explore-toggle-state/explore-toggle-state-9"
+      ]
+    },
+    {
+      "id": "clue-翻一次-白色变黄色-黄色变白色",
+      "kind": "clue",
+      "text": "翻一次，白色变黄色，黄色变白色。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -36195,25 +36272,13 @@
       ]
     },
     {
-      "id": "prompt-按顺序翻牌-最后每个位置朝上的是哪一面-选图卡-点问号格放进去-图卡可以重复用-翻第2张",
+      "id": "prompt-按顺序翻牌-最后每个位置朝上的是哪一面-选图卡-点问号格放进去-图卡可以重复用-每张牌一面是白色-一面是黄色-翻一次-白色变黄色-黄色变白色-翻第-e6b6ad14c0",
       "kind": "prompt",
-      "text": "按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。翻第2张。",
+      "text": "按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。每张牌一面是白色，一面是黄色。翻一次，白色变黄色，黄色变白色。翻第2张。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
         "explore-toggle-state/explore-toggle-state-2"
-      ]
-    },
-    {
-      "id": "hint-翻第2张",
-      "kind": "hint",
-      "text": "翻第2张。",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "explore-toggle-state/explore-toggle-state-2",
-        "explore-toggle-state/explore-toggle-state-5",
-        "explore-toggle-state/explore-toggle-state-8"
       ]
     },
     {
@@ -36232,25 +36297,13 @@
       ]
     },
     {
-      "id": "prompt-按顺序翻牌-最后每个位置朝上的是哪一面-选图卡-点问号格放进去-图卡可以重复用-翻第3张",
+      "id": "prompt-按顺序翻牌-最后每个位置朝上的是哪一面-选图卡-点问号格放进去-图卡可以重复用-每张牌一面是白色-一面是黄色-翻一次-白色变黄色-黄色变白色-翻第-377da11b48",
       "kind": "prompt",
-      "text": "按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。翻第3张。",
+      "text": "按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。每张牌一面是白色，一面是黄色。翻一次，白色变黄色，黄色变白色。翻第3张。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
         "explore-toggle-state/explore-toggle-state-3"
-      ]
-    },
-    {
-      "id": "hint-翻第3张",
-      "kind": "hint",
-      "text": "翻第3张。",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "explore-toggle-state/explore-toggle-state-3",
-        "explore-toggle-state/explore-toggle-state-6",
-        "explore-toggle-state/explore-toggle-state-9"
       ]
     },
     {
@@ -36269,9 +36322,9 @@
       ]
     },
     {
-      "id": "prompt-按顺序翻牌-最后每个位置朝上的是哪一面-选图卡-点问号格放进去-图卡可以重复用-翻第1张-翻第2张",
+      "id": "prompt-按顺序翻牌-最后每个位置朝上的是哪一面-选图卡-点问号格放进去-图卡可以重复用-每张牌一面是白色-一面是黄色-翻一次-白色变黄色-黄色变白色-翻第-612e141fd1",
       "kind": "prompt",
-      "text": "按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。翻第1张。翻第2张。",
+      "text": "按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。每张牌一面是白色，一面是黄色。翻一次，白色变黄色，黄色变白色。翻第1张。翻第2张。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -36291,9 +36344,9 @@
       ]
     },
     {
-      "id": "prompt-按顺序翻牌-最后每个位置朝上的是哪一面-选图卡-点问号格放进去-图卡可以重复用-翻第2张-翻第3张",
+      "id": "prompt-按顺序翻牌-最后每个位置朝上的是哪一面-选图卡-点问号格放进去-图卡可以重复用-每张牌一面是白色-一面是黄色-翻一次-白色变黄色-黄色变白色-翻第-e108bef9c9",
       "kind": "prompt",
-      "text": "按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。翻第2张。翻第3张。",
+      "text": "按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。每张牌一面是白色，一面是黄色。翻一次，白色变黄色，黄色变白色。翻第2张。翻第3张。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -36301,9 +36354,9 @@
       ]
     },
     {
-      "id": "prompt-按顺序翻牌-最后每个位置朝上的是哪一面-选图卡-点问号格放进去-图卡可以重复用-翻第3张-翻第4张",
+      "id": "prompt-按顺序翻牌-最后每个位置朝上的是哪一面-选图卡-点问号格放进去-图卡可以重复用-每张牌一面是白色-一面是黄色-翻一次-白色变黄色-黄色变白色-翻第-180dbf63e6",
       "kind": "prompt",
-      "text": "按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。翻第3张。翻第4张。",
+      "text": "按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。每张牌一面是白色，一面是黄色。翻一次，白色变黄色，黄色变白色。翻第3张。翻第4张。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -36322,9 +36375,9 @@
       ]
     },
     {
-      "id": "prompt-按顺序翻牌-最后每个位置朝上的是哪一面-选图卡-点问号格放进去-图卡可以重复用-翻第1张-翻第2张-翻第1张",
+      "id": "prompt-按顺序翻牌-最后每个位置朝上的是哪一面-选图卡-点问号格放进去-图卡可以重复用-每张牌一面是白色-一面是黄色-翻一次-白色变黄色-黄色变白色-翻第-35565b0e6b",
       "kind": "prompt",
-      "text": "按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。翻第1张。翻第2张。翻第1张。",
+      "text": "按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。每张牌一面是白色，一面是黄色。翻一次，白色变黄色，黄色变白色。翻第1张。翻第2张。翻第1张。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -36344,9 +36397,9 @@
       ]
     },
     {
-      "id": "prompt-按顺序翻牌-最后每个位置朝上的是哪一面-选图卡-点问号格放进去-图卡可以重复用-翻第2张-翻第3张-翻第2张",
+      "id": "prompt-按顺序翻牌-最后每个位置朝上的是哪一面-选图卡-点问号格放进去-图卡可以重复用-每张牌一面是白色-一面是黄色-翻一次-白色变黄色-黄色变白色-翻第-8728ce6a49",
       "kind": "prompt",
-      "text": "按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。翻第2张。翻第3张。翻第2张。",
+      "text": "按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。每张牌一面是白色，一面是黄色。翻一次，白色变黄色，黄色变白色。翻第2张。翻第3张。翻第2张。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -36354,9 +36407,9 @@
       ]
     },
     {
-      "id": "prompt-按顺序翻牌-最后每个位置朝上的是哪一面-选图卡-点问号格放进去-图卡可以重复用-翻第3张-翻第4张-翻第3张",
+      "id": "prompt-按顺序翻牌-最后每个位置朝上的是哪一面-选图卡-点问号格放进去-图卡可以重复用-每张牌一面是白色-一面是黄色-翻一次-白色变黄色-黄色变白色-翻第-7e688f6b0b",
       "kind": "prompt",
-      "text": "按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。翻第3张。翻第4张。翻第3张。",
+      "text": "按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。每张牌一面是白色，一面是黄色。翻一次，白色变黄色，黄色变白色。翻第3张。翻第4张。翻第3张。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -37123,9 +37176,9 @@
       ]
     },
     {
-      "id": "prompt-下一颗黑子放在哪里-能夹住最多白子-把所有符合条件的图卡选出来-再检查一次-新落下的黑子和已有黑子之间-要连续夹着白子-空格会把夹子断开-找出所有",
+      "id": "prompt-下一颗黑子放在哪里-能夹住最多白子-把所有符合条件的图卡选出来-再检查一次-横着-竖着-斜着都可以夹-每个方向夹到的白子合起来数-新落下的黑子和已",
       "kind": "prompt",
-      "text": "下一颗黑子放在哪里，能夹住最多白子。把所有符合条件的图卡选出来，再检查一次。新落下的黑子和已有黑子之间，要连续夹着白子。空格会把夹子断开。找出所有夹住最多白子的落点。",
+      "text": "下一颗黑子放在哪里，能夹住最多白子。把所有符合条件的图卡选出来，再检查一次。横着、竖着、斜着都可以夹。每个方向夹到的白子合起来数。新落下的黑子和已有黑子之间，要连续夹着白子。空格会把夹子断开。找出所有夹住最多白子的落点。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -37157,9 +37210,9 @@
       ]
     },
     {
-      "id": "hint-新落下的黑子和已有黑子之间-要连续夹着白子",
+      "id": "hint-横着-竖着-斜着都可以夹-每个方向夹到的白子合起来数",
       "kind": "hint",
-      "text": "新落下的黑子和已有黑子之间，要连续夹着白子。",
+      "text": "横着、竖着、斜着都可以夹。每个方向夹到的白子合起来数。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -37176,6 +37229,18 @@
       "tone": "friendly, clear, playful",
       "contexts": [
         "explore-board-strategy/explore-board-strategy-7"
+      ]
+    },
+    {
+      "id": "clue-横着-竖着-斜着都可以夹-每个方向夹到的白子合起来数",
+      "kind": "clue",
+      "text": "横着、竖着、斜着都可以夹。每个方向夹到的白子合起来数。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-board-strategy/explore-board-strategy-7",
+        "explore-board-strategy/explore-board-strategy-8",
+        "explore-board-strategy/explore-board-strategy-9"
       ]
     },
     {
@@ -41928,9 +41993,9 @@
       ]
     },
     {
-      "id": "prompt-根据前-侧-上三个视图-哪些搭法都有可能-把所有符合条件的图卡选出来-再检查一次",
+      "id": "prompt-根据前-侧-上三个视图-哪些搭法都有可能-把所有符合条件的图卡选出来-再检查一次-沿-前-和-侧-的箭头看-上视图的蓝格表示有积木",
       "kind": "prompt",
-      "text": "根据前、侧、上三个视图，哪些搭法都有可能。把所有符合条件的图卡选出来，再检查一次。",
+      "text": "根据前、侧、上三个视图，哪些搭法都有可能。把所有符合条件的图卡选出来，再检查一次。沿“前”和“侧”的箭头看；上视图的蓝格表示有积木。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -41964,9 +42029,33 @@
       ]
     },
     {
+      "id": "hint-沿-前-和-侧-的箭头看-上视图的蓝格表示有积木",
+      "kind": "hint",
+      "text": "沿“前”和“侧”的箭头看；上视图的蓝格表示有积木。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-solid-views-count/explore-solid-views-count-7",
+        "explore-solid-views-count/explore-solid-views-count-8",
+        "explore-solid-views-count/explore-solid-views-count-9"
+      ]
+    },
+    {
       "id": "hint-从每个方向看到的轮廓都要相符-只看轮廓-有时不能确定藏在后面的高度",
       "kind": "hint",
       "text": "从每个方向看到的轮廓都要相符。只看轮廓，有时不能确定藏在后面的高度。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-solid-views-count/explore-solid-views-count-7",
+        "explore-solid-views-count/explore-solid-views-count-8",
+        "explore-solid-views-count/explore-solid-views-count-9"
+      ]
+    },
+    {
+      "id": "clue-沿-前-和-侧-的箭头看-上视图的蓝格表示有积木",
+      "kind": "clue",
+      "text": "沿“前”和“侧”的箭头看；上视图的蓝格表示有积木。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -42073,10 +42162,7 @@
         "explore-relative-perspective/explore-relative-perspective-3",
         "explore-relative-perspective/explore-relative-perspective-4",
         "explore-relative-perspective/explore-relative-perspective-5",
-        "explore-relative-perspective/explore-relative-perspective-6",
-        "explore-relative-perspective/explore-relative-perspective-7",
-        "explore-relative-perspective/explore-relative-perspective-8",
-        "explore-relative-perspective/explore-relative-perspective-9"
+        "explore-relative-perspective/explore-relative-perspective-6"
       ]
     },
     {
@@ -42103,10 +42189,7 @@
         "explore-relative-perspective/explore-relative-perspective-3",
         "explore-relative-perspective/explore-relative-perspective-4",
         "explore-relative-perspective/explore-relative-perspective-5",
-        "explore-relative-perspective/explore-relative-perspective-6",
-        "explore-relative-perspective/explore-relative-perspective-7",
-        "explore-relative-perspective/explore-relative-perspective-8",
-        "explore-relative-perspective/explore-relative-perspective-9"
+        "explore-relative-perspective/explore-relative-perspective-6"
       ]
     },
     {
@@ -42158,6 +42241,17 @@
       ]
     },
     {
+      "id": "success-箭头指向小朋友面朝的方向-也就是前面-相反方向是后面-红球在小朋友的前面",
+      "kind": "success",
+      "text": "箭头指向小朋友面朝的方向，也就是前面；相反方向是后面。红球在小朋友的前面。",
+      "locale": "zh-CN",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "explore-relative-perspective/explore-relative-perspective-7",
+        "explore-relative-perspective/explore-relative-perspective-9"
+      ]
+    },
+    {
       "id": "parent-理解人物前后并与画面上下区分",
       "kind": "parent",
       "text": "理解人物前后并与画面上下区分",
@@ -42167,6 +42261,37 @@
         "explore-relative-perspective/explore-relative-perspective-7",
         "explore-relative-perspective/explore-relative-perspective-8",
         "explore-relative-perspective/explore-relative-perspective-9"
+      ]
+    },
+    {
+      "id": "hint-箭头指向小朋友面朝的方向-也就是前面-相反方向是后面-红球在小朋友的前面",
+      "kind": "hint",
+      "text": "箭头指向小朋友面朝的方向，也就是前面；相反方向是后面。红球在小朋友的前面。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-relative-perspective/explore-relative-perspective-7",
+        "explore-relative-perspective/explore-relative-perspective-9"
+      ]
+    },
+    {
+      "id": "success-箭头指向小朋友面朝的方向-也就是前面-相反方向是后面-红球在小朋友的后面",
+      "kind": "success",
+      "text": "箭头指向小朋友面朝的方向，也就是前面；相反方向是后面。红球在小朋友的后面。",
+      "locale": "zh-CN",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "explore-relative-perspective/explore-relative-perspective-8"
+      ]
+    },
+    {
+      "id": "hint-箭头指向小朋友面朝的方向-也就是前面-相反方向是后面-红球在小朋友的后面",
+      "kind": "hint",
+      "text": "箭头指向小朋友面朝的方向，也就是前面；相反方向是后面。红球在小朋友的后面。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-relative-perspective/explore-relative-perspective-8"
       ]
     },
     {
@@ -43109,9 +43234,9 @@
       ]
     },
     {
-      "id": "prompt-记住每个位置-再把图案摆回来-选图卡-点问号格放进去-图卡可以重复用",
+      "id": "prompt-记住每个位置-再把图案摆回来-原本空着的位置也要放空白卡-选图卡-点问号格放进去-图卡可以重复用",
       "kind": "prompt",
-      "text": "记住每个位置，再把图案摆回来。选图卡，点问号格放进去。图卡可以重复用。",
+      "text": "记住每个位置，再把图案摆回来。原本空着的位置也要放空白卡。选图卡，点问号格放进去。图卡可以重复用。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -45898,9 +46023,9 @@
       ]
     },
     {
-      "id": "prompt-按这个故事的先后-把事件排好-先选图卡-再按位置编号排好-也可以拖过去-天上积起乌云以后-才开始下雨-开始下雨以后-才地面留下水洼",
+      "id": "prompt-按这个故事的先后-把事件排好-先选图卡-再按位置编号排好-也可以拖过去-乌云聚起来以后-开始下雨-下过雨后-地面留下了水洼",
       "kind": "prompt",
-      "text": "按这个故事的先后，把事件排好。先选图卡，再按位置编号排好。也可以拖过去。天上积起乌云以后，才开始下雨。开始下雨以后，才地面留下水洼。",
+      "text": "按这个故事的先后，把事件排好。先选图卡，再按位置编号排好。也可以拖过去。乌云聚起来以后，开始下雨。下过雨后，地面留下了水洼。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -45935,9 +46060,9 @@
       ]
     },
     {
-      "id": "hint-天上积起乌云以后-才开始下雨",
+      "id": "hint-乌云聚起来以后-开始下雨",
       "kind": "hint",
-      "text": "天上积起乌云以后，才开始下雨。",
+      "text": "乌云聚起来以后，开始下雨。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -45961,9 +46086,9 @@
       ]
     },
     {
-      "id": "clue-天上积起乌云以后-才开始下雨",
+      "id": "clue-乌云聚起来以后-开始下雨",
       "kind": "clue",
-      "text": "天上积起乌云以后，才开始下雨。",
+      "text": "乌云聚起来以后，开始下雨。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -45972,9 +46097,9 @@
       ]
     },
     {
-      "id": "clue-开始下雨以后-才地面留下水洼",
+      "id": "clue-下过雨后-地面留下了水洼",
       "kind": "clue",
-      "text": "开始下雨以后，才地面留下水洼。",
+      "text": "下过雨后，地面留下了水洼。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -46016,9 +46141,9 @@
       ]
     },
     {
-      "id": "prompt-按这个故事的先后-把事件排好-先选图卡-再按位置编号排好-也可以拖过去-小熊准备木块以后-才小熊搭起高塔-小熊搭起高塔以后-才球碰倒了高塔",
+      "id": "prompt-按这个故事的先后-把事件排好-先选图卡-再按位置编号排好-也可以拖过去-小熊先准备木块-再用木块搭起高塔-高塔搭好后-被滚来的球碰倒了",
       "kind": "prompt",
-      "text": "按这个故事的先后，把事件排好。先选图卡，再按位置编号排好。也可以拖过去。小熊准备木块以后，才小熊搭起高塔。小熊搭起高塔以后，才球碰倒了高塔。",
+      "text": "按这个故事的先后，把事件排好。先选图卡，再按位置编号排好。也可以拖过去。小熊先准备木块，再用木块搭起高塔。高塔搭好后，被滚来的球碰倒了。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -46026,9 +46151,9 @@
       ]
     },
     {
-      "id": "hint-小熊准备木块以后-才小熊搭起高塔",
+      "id": "hint-小熊先准备木块-再用木块搭起高塔",
       "kind": "hint",
-      "text": "小熊准备木块以后，才小熊搭起高塔。",
+      "text": "小熊先准备木块，再用木块搭起高塔。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -46037,9 +46162,9 @@
       ]
     },
     {
-      "id": "clue-小熊准备木块以后-才小熊搭起高塔",
+      "id": "clue-小熊先准备木块-再用木块搭起高塔",
       "kind": "clue",
-      "text": "小熊准备木块以后，才小熊搭起高塔。",
+      "text": "小熊先准备木块，再用木块搭起高塔。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -46048,9 +46173,9 @@
       ]
     },
     {
-      "id": "clue-小熊搭起高塔以后-才球碰倒了高塔",
+      "id": "clue-高塔搭好后-被滚来的球碰倒了",
       "kind": "clue",
-      "text": "小熊搭起高塔以后，才球碰倒了高塔。",
+      "text": "高塔搭好后，被滚来的球碰倒了。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -46092,9 +46217,9 @@
       ]
     },
     {
-      "id": "prompt-按这个故事的先后-把事件排好-先选图卡-再按位置编号排好-也可以拖过去-小猫收到种子以后-才把种子种进土里-把种子种进土里以后-才按记录照顾小苗",
+      "id": "prompt-按这个故事的先后-把事件排好-先选图卡-再按位置编号排好-也可以拖过去-小猫收到种子以后-把种子种进土里-种好以后-小猫按记录照顾长出来的小苗",
       "kind": "prompt",
-      "text": "按这个故事的先后，把事件排好。先选图卡，再按位置编号排好。也可以拖过去。小猫收到种子以后，才把种子种进土里。把种子种进土里以后，才按记录照顾小苗。",
+      "text": "按这个故事的先后，把事件排好。先选图卡，再按位置编号排好。也可以拖过去。小猫收到种子以后，把种子种进土里。种好以后，小猫按记录照顾长出来的小苗。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -46102,9 +46227,9 @@
       ]
     },
     {
-      "id": "hint-小猫收到种子以后-才把种子种进土里",
+      "id": "hint-小猫收到种子以后-把种子种进土里",
       "kind": "hint",
-      "text": "小猫收到种子以后，才把种子种进土里。",
+      "text": "小猫收到种子以后，把种子种进土里。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -46113,9 +46238,9 @@
       ]
     },
     {
-      "id": "clue-小猫收到种子以后-才把种子种进土里",
+      "id": "clue-小猫收到种子以后-把种子种进土里",
       "kind": "clue",
-      "text": "小猫收到种子以后，才把种子种进土里。",
+      "text": "小猫收到种子以后，把种子种进土里。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -46124,9 +46249,9 @@
       ]
     },
     {
-      "id": "clue-把种子种进土里以后-才按记录照顾小苗",
+      "id": "clue-种好以后-小猫按记录照顾长出来的小苗",
       "kind": "clue",
-      "text": "把种子种进土里以后，才按记录照顾小苗。",
+      "text": "种好以后，小猫按记录照顾长出来的小苗。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -46168,9 +46293,9 @@
       ]
     },
     {
-      "id": "prompt-按这个故事的先后-把事件排好-先选图卡-再按位置编号排好-也可以拖过去-天上积起乌云以后-才开始下雨-开始下雨以后-才地面留下水洼-地面留下水洼以",
+      "id": "prompt-按这个故事的先后-把事件排好-先选图卡-再按位置编号排好-也可以拖过去-乌云聚起来以后-开始下雨-下过雨后-地面留下了水洼-地面有水洼-小朋友穿上",
       "kind": "prompt",
-      "text": "按这个故事的先后，把事件排好。先选图卡，再按位置编号排好。也可以拖过去。天上积起乌云以后，才开始下雨。开始下雨以后，才地面留下水洼。地面留下水洼以后，才小朋友穿雨靴出门。",
+      "text": "按这个故事的先后，把事件排好。先选图卡，再按位置编号排好。也可以拖过去。乌云聚起来以后，开始下雨。下过雨后，地面留下了水洼。地面有水洼，小朋友穿上雨靴出门。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -46190,9 +46315,9 @@
       ]
     },
     {
-      "id": "clue-地面留下水洼以后-才小朋友穿雨靴出门",
+      "id": "clue-地面有水洼-小朋友穿上雨靴出门",
       "kind": "clue",
-      "text": "地面留下水洼以后，才小朋友穿雨靴出门。",
+      "text": "地面有水洼，小朋友穿上雨靴出门。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -46210,9 +46335,9 @@
       ]
     },
     {
-      "id": "prompt-按这个故事的先后-把事件排好-先选图卡-再按位置编号排好-也可以拖过去-小熊准备木块以后-才小熊搭起高塔-小熊搭起高塔以后-才球碰倒了高塔-球碰倒",
+      "id": "prompt-按这个故事的先后-把事件排好-先选图卡-再按位置编号排好-也可以拖过去-小熊先准备木块-再用木块搭起高塔-高塔搭好后-被滚来的球碰倒了-高塔倒了以",
       "kind": "prompt",
-      "text": "按这个故事的先后，把事件排好。先选图卡，再按位置编号排好。也可以拖过去。小熊准备木块以后，才小熊搭起高塔。小熊搭起高塔以后，才球碰倒了高塔。球碰倒了高塔以后，才小熊换宽底座重搭。",
+      "text": "按这个故事的先后，把事件排好。先选图卡，再按位置编号排好。也可以拖过去。小熊先准备木块，再用木块搭起高塔。高塔搭好后，被滚来的球碰倒了。高塔倒了以后，小熊换一个宽底座重新搭。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -46220,9 +46345,9 @@
       ]
     },
     {
-      "id": "clue-球碰倒了高塔以后-才小熊换宽底座重搭",
+      "id": "clue-高塔倒了以后-小熊换一个宽底座重新搭",
       "kind": "clue",
-      "text": "球碰倒了高塔以后，才小熊换宽底座重搭。",
+      "text": "高塔倒了以后，小熊换一个宽底座重新搭。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -46240,9 +46365,9 @@
       ]
     },
     {
-      "id": "prompt-按这个故事的先后-把事件排好-先选图卡-再按位置编号排好-也可以拖过去-小猫收到种子以后-才把种子种进土里-把种子种进土里以后-才按记录照顾小苗-",
+      "id": "prompt-按这个故事的先后-把事件排好-先选图卡-再按位置编号排好-也可以拖过去-小猫收到种子以后-把种子种进土里-种好以后-小猫按记录照顾长出来的小苗-照",
       "kind": "prompt",
-      "text": "按这个故事的先后，把事件排好。先选图卡，再按位置编号排好。也可以拖过去。小猫收到种子以后，才把种子种进土里。把种子种进土里以后，才按记录照顾小苗。按记录照顾小苗以后，才小猫观察新叶片。",
+      "text": "按这个故事的先后，把事件排好。先选图卡，再按位置编号排好。也可以拖过去。小猫收到种子以后，把种子种进土里。种好以后，小猫按记录照顾长出来的小苗。照顾小苗一段时间后，小猫观察新长出的叶片。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -46250,9 +46375,9 @@
       ]
     },
     {
-      "id": "clue-按记录照顾小苗以后-才小猫观察新叶片",
+      "id": "clue-照顾小苗一段时间后-小猫观察新长出的叶片",
       "kind": "clue",
-      "text": "按记录照顾小苗以后，才小猫观察新叶片。",
+      "text": "照顾小苗一段时间后，小猫观察新长出的叶片。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -50225,9 +50350,9 @@
       ]
     },
     {
-      "id": "hint-在地图上找一个绘本里出现的地方",
+      "id": "hint-在地图上找到绘本或图片介绍的那个地方",
       "kind": "hint",
-      "text": "在地图上找一个绘本里出现的地方。",
+      "text": "在地图上找到绘本或图片介绍的那个地方。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -50245,9 +50370,9 @@
       ]
     },
     {
-      "id": "instruction-在地图上找一个绘本里出现的地方",
+      "id": "instruction-在地图上找到绘本或图片介绍的那个地方",
       "kind": "instruction",
-      "text": "在地图上找一个绘本里出现的地方。",
+      "text": "在地图上找到绘本或图片介绍的那个地方。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -50275,9 +50400,19 @@
       ]
     },
     {
-      "id": "parent-儿童地图或绘本",
+      "id": "parent-一张儿童地图",
       "kind": "parent",
-      "text": "儿童地图或绘本",
+      "text": "一张儿童地图",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-culture-world/explore-culture-world-3"
+      ]
+    },
+    {
+      "id": "parent-介绍地图上同一地点生活的绘本或图片",
+      "kind": "parent",
+      "text": "介绍地图上同一地点生活的绘本或图片",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [

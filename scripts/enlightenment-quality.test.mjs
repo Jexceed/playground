@@ -8,12 +8,16 @@ const [{games,activitySets},state,{enlightenmentBridgeModels}] = await Promise.a
   loadGameData(),loadTypeScriptModule('src/domain/enlightenment.ts'),loadTypeScriptModule('src/data/enlightenmentBridges.ts'),
 ]);
 const baseline=JSON.parse(readFileSync('specs/040-enlightenment-quality/verification/baseline.json','utf8'));
+const reviewBaseline=JSON.parse(readFileSync('specs/043-curriculum-review-fixes/verification/baseline.json','utf8'));
 const group=id=>games.find(game=>game.id===id);
 const hash=value=>createHash('sha256').update(JSON.stringify(value)).digest('hex');
 
-test('all stable enlightenment identities and exploration content are preserved',()=>{
-  assert.deepEqual(games.map(g=>[g.id,g.rounds.map(r=>r.id)]),baseline.groups.map(g=>[g.id,g.rounds.map(r=>r.id)]));
-  assert.equal(hash(activitySets),baseline.explorationHash);
+test('all stable enlightenment and exploration identities survive the authorized review corrections',()=>{
+  for(const [current,original] of [[games,reviewBaseline.games],[activitySets,reviewBaseline.activitySets]])
+    assert.deepEqual(current.map(g=>[g.id,g.rounds.map(r=>r.id)]),original.map(g=>[g.id,g.rounds.map(r=>r.id)]));
+  // Feature 043 intentionally revises selected exploration activities. Its
+  // explicit field allowlist and deep equality for every other activity live
+  // in curriculum-review-invariants.test.mjs; the 040 baseline stays unchanged.
 });
 
 test('answer positions stay balanced without long runs or a repeating group-wide cycle',()=>{

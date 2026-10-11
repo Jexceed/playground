@@ -4,6 +4,11 @@ import type { GalleryImage } from "./imageGallery";
 function story(name: string, captions: string[], columns = 2, rows = 2): GalleryImage[] {
   return captions.map((alt, index) => ({ src: `/images/items/exploration-art/${name}.png`, alt, frame: { columns, rows, index }, style: "illustration" }));
 }
+// A standalone card uses the same auditable frame contract as an atlas.
+const single = (name: string, alt: string): GalleryImage => story(name, [alt], 1, 1)[0];
+const planting = story("planting-steps", ["取花盆", "放土和种子", "轻轻浇水", "等待发芽"]);
+// Keep the original sheet and the other three frames; replace only the sowing action.
+planting[1] = single("sowing-seed", "放土和种子");
 export const explorationArt = {
   catPlant: story("cat-plant-story", ["小猫收到种子", "小猫把种子种进土里", "小猫按记录照顾小苗", "小猫观察新叶片"]),
   bearTower: story("bear-tower-story", ["小熊准备木块", "小熊搭起高塔", "球碰倒了高塔", "小熊换宽底座重搭"]),
@@ -14,7 +19,8 @@ export const explorationArt = {
   tools: story("everyday-tools", ["雨伞", "毛巾", "圆头剪刀", "颜料和画笔"]),
   fruitSalad: story("fruit-salad-steps", ["洗净水果", "把水果切块", "把果块装碗", "一起品尝"]),
   painting: story("painting-steps", ["准备画纸", "画出轮廓", "给画涂色", "把画晾干"]),
-  planting: story("planting-steps", ["取花盆", "放土和种子", "轻轻浇水", "等待发芽"]),
+  planting,
+  boxStates: [single("box-open", "打开的盒子"), single("box-closed", "关上的盒子")],
   experimentMaterials: story("experiment-materials", ["木块", "塑料盒", "金属勺", "一盆浅水"]),
   memoryEvents: story("memory-event-stories", ["带苹果出门", "在树下等雨停", "和小猫分苹果", "找来木板", "合作放好木板", "走过小桥"], 3, 2),
   everydayActions: story("everyday-actions", ["喝水", "画线", "擦干", "挡雨", "遮阳", "装饭", "拼搭", "阅读", "量长度"], 3, 3),

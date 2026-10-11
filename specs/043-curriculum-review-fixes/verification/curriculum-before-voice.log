@@ -1,0 +1,42 @@
+$ node scripts/audit-curriculum.mjs
+{
+  "math": 266,
+  "logic": 445,
+  "graphic": 234,
+  "memory": 81,
+  "language": 54,
+  "life": 30,
+  "totalGames": 115,
+  "totalRounds": 1110,
+  "legacyGames": 40,
+  "legacyRounds": 489,
+  "interactiveGames": 75,
+  "interactiveRounds": 621,
+  "mathTargetMet": true,
+  "logicTargetMet": true,
+  "graphicTargetMet": true,
+  "problemCount": 126,
+  "problems": [
+    "audio manifest missing 112 voice line ids: parent-问她-哪一张两个条件都满足-哪一张只满足红色-哪一张只满足圆形, choice-红色方块, object-红色方块, parent-问她-哪一张两个条件都满足-哪一张只满足蓝色-哪一张只满足方形, parent-问她-哪一张两个条件都满足-哪一张只满足黄色-哪一张只满足圆形, choice-黄色方块, object-黄色方块, prompt-积木和小车散了-想按种类分开放进两个盒子-先做什么-按图卡从左到右-找出缺少的一步, success-按顺序是积木和小车-先分开两类-分开放进盒子-分类装好-所以缺少的是先分开两类-先分类-再把积木和小车放进各自的盒子-下次好找, retry-先从左到右按顺序说-积木和小车-先分开两类-分开放进盒子-分类装好-再想缺少的先分开两类让后面能继续",
+    "audio manifest has 99 extra ids: parent-问她-哪一张两个条件都满足-哪一张只满足圆形-哪一张两个条件都不满足, parent-问她-哪一张两个条件都满足-哪一张只满足颜色-哪一张两个条件都不满足, prompt-玩具散了-想按种类收好-先做什么-按图卡从左到右-找出缺少的一步, success-按顺序是玩具散了-先分类-放进盒子-整齐-所以缺少的是先分类-先分类-再放进盒子-最后变整齐, retry-先从左到右按顺序说-玩具散了-先分类-放进盒子-整齐-再想缺少的先分类让后面能继续, parent-请她指着图卡复述玩具散了-先分类-放进盒子-整齐-说为什么缺少先分类, choice-随便塞进盒子, choice-重新弄乱, object-玩具散了, prompt-路口是红灯-想安全过马路-先做什么-按图卡从左到右-找出缺少的一步",
+    "Missing local activity voice: 2号浇第一次水，以后每过3天浇一次，第三次是几号。选出符合条件的一张图卡。",
+    "Missing local activity voice: 3号浇第一次水，以后每过3天浇一次，第三次是几号。选出符合条件的一张图卡。",
+    "Missing local activity voice: 4号浇第一次水，以后每过3天浇一次，第三次是几号。选出符合条件的一张图卡。",
+    "Missing local activity voice: 按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。每张牌一面是白色，一面是黄色。翻一次，白色变黄色，黄色变白色。翻第1张。",
+    "Missing local activity voice: 翻一次，白色和黄色换一面；同一张翻两次，又回到原来。",
+    "Missing local activity voice: 每张牌一面是白色，一面是黄色。",
+    "Missing local activity voice: 翻一次，白色和黄色换一面；同一张翻两次，又回到原来。",
+    "Missing local activity voice: 每张牌一面是白色，一面是黄色。",
+    "Missing local activity voice: 翻一次，白色变黄色，黄色变白色。",
+    "Missing local activity voice: 按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。每张牌一面是白色，一面是黄色。翻一次，白色变黄色，黄色变白色。翻第2张。",
+    "Missing local activity voice: 翻一次，白色和黄色换一面；同一张翻两次，又回到原来。",
+    "Missing local activity voice: 每张牌一面是白色，一面是黄色。",
+    "Missing local activity voice: 翻一次，白色和黄色换一面；同一张翻两次，又回到原来。",
+    "Missing local activity voice: 每张牌一面是白色，一面是黄色。",
+    "Missing local activity voice: 翻一次，白色变黄色，黄色变白色。",
+    "Missing local activity voice: 按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。每张牌一面是白色，一面是黄色。翻一次，白色变黄色，黄色变白色。翻第3张。",
+    "Missing local activity voice: 翻一次，白色和黄色换一面；同一张翻两次，又回到原来。",
+    "Missing local activity voice: 每张牌一面是白色，一面是黄色。"
+  ]
+}
+[ELIFECYCLE] Command failed with exit code 1.

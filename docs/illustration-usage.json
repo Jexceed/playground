@@ -1,7 +1,7 @@
 {
-  "atlasCount": 15,
-  "registeredFrameCount": 72,
-  "usedFrameCount": 72,
+  "atlasCount": 18,
+  "registeredFrameCount": 74,
+  "usedFrameCount": 74,
   "unusedFrames": [],
   "problems": [],
   "atlases": [
@@ -1444,56 +1444,6 @@
           ]
         },
         {
-          "key": "planting2",
-          "src": "/images/items/exploration-art/planting-steps.png",
-          "index": 1,
-          "columns": 2,
-          "rows": 2,
-          "alt": "放土和种子",
-          "references": [
-            {
-              "activityId": "explore-planning-repair-1",
-              "family": "L06",
-              "gameId": "explore-planning-repair",
-              "groupTitle": "先后有讲究",
-              "world": "logic",
-              "round": 1,
-              "surface": "token",
-              "label": "放土和种子"
-            },
-            {
-              "activityId": "explore-planning-repair-4",
-              "family": "L06",
-              "gameId": "explore-planning-repair",
-              "groupTitle": "先后有讲究",
-              "world": "logic",
-              "round": 4,
-              "surface": "token",
-              "label": "放土和种子"
-            },
-            {
-              "activityId": "explore-planning-repair-7",
-              "family": "L06",
-              "gameId": "explore-planning-repair",
-              "groupTitle": "先后有讲究",
-              "world": "logic",
-              "round": 7,
-              "surface": "token",
-              "label": "放土和种子"
-            },
-            {
-              "activityId": "explore-story-recall-6",
-              "family": "A05",
-              "gameId": "explore-story-recall",
-              "groupTitle": "故事留在脑海里",
-              "world": "memory",
-              "round": 6,
-              "surface": "token",
-              "label": "把种子放进土里"
-            }
-          ]
-        },
-        {
           "key": "planting3",
           "src": "/images/items/exploration-art/planting-steps.png",
           "index": 2,
@@ -1580,6 +1530,171 @@
               "round": 6,
               "surface": "token",
               "label": "告诉小兔发芽了"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "src": "/images/items/exploration-art/sowing-seed.png",
+      "frames": [
+        {
+          "key": "planting2",
+          "src": "/images/items/exploration-art/sowing-seed.png",
+          "index": 0,
+          "columns": 1,
+          "rows": 1,
+          "alt": "放土和种子",
+          "references": [
+            {
+              "activityId": "explore-planning-repair-1",
+              "family": "L06",
+              "gameId": "explore-planning-repair",
+              "groupTitle": "先后有讲究",
+              "world": "logic",
+              "round": 1,
+              "surface": "token",
+              "label": "放土和种子"
+            },
+            {
+              "activityId": "explore-planning-repair-4",
+              "family": "L06",
+              "gameId": "explore-planning-repair",
+              "groupTitle": "先后有讲究",
+              "world": "logic",
+              "round": 4,
+              "surface": "token",
+              "label": "放土和种子"
+            },
+            {
+              "activityId": "explore-planning-repair-7",
+              "family": "L06",
+              "gameId": "explore-planning-repair",
+              "groupTitle": "先后有讲究",
+              "world": "logic",
+              "round": 7,
+              "surface": "token",
+              "label": "放土和种子"
+            },
+            {
+              "activityId": "explore-story-recall-6",
+              "family": "A05",
+              "gameId": "explore-story-recall",
+              "groupTitle": "故事留在脑海里",
+              "world": "memory",
+              "round": 6,
+              "surface": "token",
+              "label": "把种子放进土里"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "src": "/images/items/exploration-art/box-open.png",
+      "frames": [
+        {
+          "key": "boxStates1",
+          "src": "/images/items/exploration-art/box-open.png",
+          "index": 0,
+          "columns": 1,
+          "rows": 1,
+          "alt": "打开的盒子",
+          "references": [
+            {
+              "activityId": "explore-vocabulary-relations-1",
+              "family": "E01",
+              "gameId": "explore-vocabulary-relations",
+              "groupTitle": "词语有朋友",
+              "world": "language",
+              "round": 1,
+              "surface": "token",
+              "label": "开"
+            },
+            {
+              "activityId": "explore-vocabulary-relations-2",
+              "family": "E01",
+              "gameId": "explore-vocabulary-relations",
+              "groupTitle": "词语有朋友",
+              "world": "language",
+              "round": 2,
+              "surface": "token",
+              "label": "开"
+            },
+            {
+              "activityId": "explore-vocabulary-relations-4",
+              "family": "E01",
+              "gameId": "explore-vocabulary-relations",
+              "groupTitle": "词语有朋友",
+              "world": "language",
+              "round": 4,
+              "surface": "token",
+              "label": "开"
+            },
+            {
+              "activityId": "explore-vocabulary-relations-5",
+              "family": "E01",
+              "gameId": "explore-vocabulary-relations",
+              "groupTitle": "词语有朋友",
+              "world": "language",
+              "round": 5,
+              "surface": "token",
+              "label": "开"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "src": "/images/items/exploration-art/box-closed.png",
+      "frames": [
+        {
+          "key": "boxStates2",
+          "src": "/images/items/exploration-art/box-closed.png",
+          "index": 0,
+          "columns": 1,
+          "rows": 1,
+          "alt": "关上的盒子",
+          "references": [
+            {
+              "activityId": "explore-vocabulary-relations-1",
+              "family": "E01",
+              "gameId": "explore-vocabulary-relations",
+              "groupTitle": "词语有朋友",
+              "world": "language",
+              "round": 1,
+              "surface": "token",
+              "label": "关"
+            },
+            {
+              "activityId": "explore-vocabulary-relations-2",
+              "family": "E01",
+              "gameId": "explore-vocabulary-relations",
+              "groupTitle": "词语有朋友",
+              "world": "language",
+              "round": 2,
+              "surface": "token",
+              "label": "关"
+            },
+            {
+              "activityId": "explore-vocabulary-relations-4",
+              "family": "E01",
+              "gameId": "explore-vocabulary-relations",
+              "groupTitle": "词语有朋友",
+              "world": "language",
+              "round": 4,
+              "surface": "token",
+              "label": "关"
+            },
+            {
+              "activityId": "explore-vocabulary-relations-5",
+              "family": "E01",
+              "gameId": "explore-vocabulary-relations",
+              "groupTitle": "词语有朋友",
+              "world": "language",
+              "round": 5,
+              "surface": "token",
+              "label": "关"
             }
           ]
         }

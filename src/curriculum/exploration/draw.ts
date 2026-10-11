@@ -63,7 +63,12 @@ export function clock(hour: number, minute: number): Drawing {
     o.push(line(160, 160, 160 + Math.sin(minute * Math.PI / 30) * 92, 160 - Math.cos(minute * Math.PI / 30) * 92));
     return picture(o, 320, 320);
 }
-export function blocks(heights: number[], columns: number): Drawing {
+export function viewingArrow(x: number, y: number, x2: number, y2: number, label: string, labelX: number, labelY: number, labelSize = 22): Primitive[] {
+    const length = Math.hypot(x2 - x, y2 - y), dx = (x2 - x) / length, dy = (y2 - y) / length;
+    return [line(x, y, x2, y2), { kind: 'polygon', points: [[x2, y2], [x2 - dx * 10 - dy * 5, y2 - dy * 10 + dx * 5], [x2 - dx * 10 + dy * 5, y2 - dy * 10 - dx * 5]], fill: '#405769' }, text(labelX, labelY, label, labelSize)];
+}
+/** Matrix rows run back to front. Front looks toward row 0; the right side looks toward column 0. */
+export function blocks(heights: number[], columns: number, showViews = false): Drawing {
     const o: Primitive[] = [];
     const rows = Math.ceil(heights.length / columns), s = 28;
     for (let y = 0; y < rows; y++)
@@ -76,5 +81,12 @@ export function blocks(heights: number[], columns: number): Drawing {
     if (!points.length) return picture([], 160, 160);
     const xs = points.map(p => p[0]), ys = points.map(p => p[1]);
     const minX = Math.min(...xs), minY = Math.min(...ys);
-    return picture(transform(o, 1, 1, 12 - minX, 12 - minY), Math.max(...xs) - minX + 24, Math.max(...ys) - minY + 24);
+    if (!showViews) return picture(transform(o, 1, 1, 12 - minX, 12 - minY), Math.max(...xs) - minX + 24, Math.max(...ys) - minY + 24);
+    // The arrows approach the two visible ground edges, so their direction
+    // stays independent of which stack happens to be tallest.
+    const frontX = 160 + (columns / 2 - rows) * s, frontY = 235 + (columns / 2 + rows) * s / 2;
+    const sideX = 160 + (columns - rows / 2) * s, sideY = 235 + (columns + rows / 2) * s / 2;
+    o.push(...viewingArrow(frontX - 40, frontY + 20, frontX - 8, frontY + 4, '前', frontX - 43, frontY + 44));
+    o.push(...viewingArrow(sideX + 40, sideY + 20, sideX + 8, sideY + 4, '侧', sideX + 43, sideY + 44));
+    return picture(transform(o, 1, 1, 56 - minX, 12 - minY), Math.max(...xs) - minX + 112, Math.max(...ys) - minY + 72);
 }

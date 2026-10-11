@@ -1,0 +1,5 @@
+$ node scripts/generate-edge-voices.mjs -- --voice zh-CN-XiaoxiaoNeural --rate -12% --pitch +2Hz --python /Users/chiang/Documents/Projects/playground/local-tts/.venv/bin/python --quiet --retries 3
+Generated 3283/4055: clue-沿-前-和-侧-的箭头看-上视图的蓝格表示有积木
+Generated 3281/4055: hint-沿-前-和-侧-的箭头看-上视图的蓝格表示有积木
+Generated 3278/4055: prompt-根据前-侧-上三个视图-哪些搭法都有可能-把所有符合条件的图卡选出来-再检查一次-沿-前-和-侧-的箭头看-上视图的蓝格表示有积木
+Wrote public/audio/voice/manifest.json with 4055 entries and 0 skipped lines.

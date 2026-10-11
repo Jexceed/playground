@@ -3,6 +3,16 @@
 All meaningful project changes should be recorded here. Keep entries factual and
 grouped by date.
 
+## 2026-10-11
+
+### Curriculum clarity and picture-card corrections
+
+- Corrected 34 enlightenment rounds: equal two-picture matrix choices, coherent rotation evidence, explicit sorting/crossing goals, relevant distractors, and genuine two-condition classification. Stable question IDs and answer values remain unchanged.
+- Corrected 50 exploration activities: upfront flip/capture rules, accurate square and oriented three-view diagrams, current-direction feedback, explicit calendar/blank-card/material instructions, natural story language, and visual support for antonyms. Eighteen substantive corrections use revision 2; earlier records remain available.
+- Generated and installed three image-gen cards: a clear seed-entering-soil action plus the same box open and closed. The other three planting frames and original sheet/source remain unchanged. Antonym comparison cards reuse exact generated local diagrams.
+- The current registry contains 18 illustration resources / 74 used cards. Exported and generated 4,055 local voice lines with no failures; Chinese uses Edge Xiaoxiao and existing English uses Jenny. No macOS say or mixed-local fallback remains.
+- Validation and native installation evidence: [043 verification](../specs/043-curriculum-review-fixes/verification.md).
+
 ## 2026-10-06
 
 ### Context-specific pronunciation for 行

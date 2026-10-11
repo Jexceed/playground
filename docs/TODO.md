@@ -5,7 +5,7 @@ small enough to turn into a Spec Kit feature.
 
 ## P0
 
-- Complete the remaining native input checks for 035–039 after Mac unlock. The corrective app's native startup and E03 default screenshot now confirm equal large images for different caption lengths and visible page controls. Selection/drag/zoom and four-card native states still need checks, followed by L06, N02/N05/N14, P01, A05 and E04/L07/P06/G17 cases. Dev checkpoint synchronization is separate from this remaining acceptance coverage; browser input tests are not counted as native tests.
+- Complete the remaining native input checks for 035–039 beyond the targeted 043 acceptance. The corrective app's native startup and E03 default screenshot now confirm equal large images for different caption lengths and visible page controls. 043 adds targeted new-card, rule and direction checks; retain the separate remaining full selection/drag/four-card matrix and N02/N05/N14, P01, A05, E04/L07/P06 cases not expressly signed off there. Dev checkpoint synchronization is separate from this remaining acceptance coverage; browser input tests are not counted as native tests.
 
 - Observe 6-, 7- and 8-year-old parent-child play and calibrate reading, interaction and reasoning load for the 597 newly authored activities. Technical QA is not age validation.
 - Finish the historical-release migration/backup/ambiguity handling and finer support-history/next-practice guidance still unchecked in specs/029-curriculum-benchmark/tasks.md. Stable legacy identities and historical facts are preserved; 040 corrects enlightenment content and visuals. Do not infer mastery from completion.
@@ -40,6 +40,8 @@ small enough to turn into a Spec Kit feature.
   privacy label, screenshots, product page, and review notes.
 
 ## P1
+
+- Observe parent-child play of the 043 corrections, especially two-condition distractors, word-picture support and the front/right-side viewing arrows. Automated correctness and adult UI checks do not establish reading or reasoning load for children.
 
 - Complete the remaining 029 T120–T126 using the detailed gaps in specs/032-exploration-quality-audit/family-coverage.json: quantity/relative-position grids and missing math/logic/graphic/memory/language/physical-task branches. Preserve valid existing basics and stable progress; do not replace a missing operation with a non-equivalent single-choice question.
 - Close the original-task mapping chain and remaining source reading/listening boundaries (T127). The confirmed eight missing branches and nine partial groups are a lower bound, not an exhaustive missing-task count.

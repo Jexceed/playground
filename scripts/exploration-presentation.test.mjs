@@ -4,7 +4,7 @@ import { existsSync, readFileSync } from 'node:fs';
 import { loadTypeScriptModule } from './lib/load-ts-module.mjs';
 import { collectIllustrationUsage } from './lib/illustration-usage.mjs';
 
-const [{ explorationSets, authoringSolutions }, { evaluateActivity }, { imageGallery }, { evidenceVisible }, { groupExplorationGames }, { getCurriculumSection }] = await Promise.all([
+const [{ explorationSets, explorationDrawings, authoringSolutions }, { evaluateActivity }, { imageGallery }, { evidenceVisible }, { groupExplorationGames }, { getCurriculumSection }] = await Promise.all([
   loadTypeScriptModule('src/curriculum/exploration/index.ts'), loadTypeScriptModule('src/domain/activity-evaluation.ts'),
   loadTypeScriptModule('src/data/imageGallery.ts'), loadTypeScriptModule('src/interactions/presentation-state.ts'),
   loadTypeScriptModule('src/curriculum/exploration/navigation.ts'), loadTypeScriptModule('src/curriculum/catalog.ts'),
@@ -21,7 +21,9 @@ test('presentation retains all existing curriculum identities and accepts every 
       || (['G07','G15'].includes(a.primaryFamilyId) && a.stage > 1)
       || (a.primaryFamilyId === 'L06' && /-(1|4|7)$/.test(a.id))
       || a.primaryFamilyId === 'E04' || (a.primaryFamilyId === 'L07' && a.stage === 3)
-      || (a.primaryFamilyId === 'P06' && a.id.endsWith('-1')) || (a.primaryFamilyId === 'P01' && a.stage === 3);
+      || (a.primaryFamilyId === 'P06' && a.id.endsWith('-1')) || (a.primaryFamilyId === 'P01' && a.stage === 3)
+      || a.primaryFamilyId === 'L09' || (['L11','G16'].includes(a.primaryFamilyId) && a.stage === 3)
+      || (a.primaryFamilyId === 'E07' && a.stage === 2);
     assert.equal(a.revision, revised ? 2 : 1, a.id);
     assert.equal(evaluateActivity(a, authoringSolutions[a.id]).status, a.kind === 'parentObservation' ? 'needsParentObservation' : 'correct', a.id);
   }
@@ -36,30 +38,34 @@ test('story and natural-change ordering cards use individually addressed illustr
   }
 });
 
-test('planting and fruit stories use their own coherent atlas through every event and reference', () => {
+test('planting replaces only the sowing frame and other event atlases remain coherent', () => {
   const src = name => `/images/items/exploration-art/${name}.png`;
+  const address = (name, index) => name === 'planting-steps' && index === 1
+    ? [src('sowing-seed'), { columns: 1, rows: 1, index: 0 }]
+    : [src(name), { columns: 2, rows: 2, index }];
+  const imageAddress = image => [image.src, image.frame];
   for (const a of activities.filter(a => a.primaryFamilyId === 'L06')) {
     const round = Number(a.id.split('-').at(-1));
     const expected = ['planting-steps', 'painting-steps', 'fruit-salad-steps'][(round - 1) % 3];
     const tokens = [...a.tokens].sort((x,y) => Number(x.id.slice(4)) - Number(y.id.slice(4)));
-    assert.ok(tokens.every(t => t.image.src === src(expected)), a.id);
-    assert.deepEqual(tokens.map(t => t.image.frame.index), a.stage === 1 ? [0,1,2] : [0,1,2,3], a.id);
+    assert.deepEqual(tokens.map(t => imageAddress(t.image)),
+      (a.stage === 1 ? [0,1,2] : [0,1,2,3]).map(index => address(expected, index)), a.id);
     if (a.stage === 3) {
-      assert.ok(a.presentation.evidence.cards.every(i => i.src === src(expected)), a.id);
-      assert.deepEqual(a.presentation.evidence.cards.map(i => i.frame.index), [3,2,1,0], a.id);
+      assert.deepEqual(a.presentation.evidence.cards.map(imageAddress), [3,2,1,0].map(index => address(expected, index)), a.id);
       assert.deepEqual(a.presentation.evidence.tokenIds, ['step3','step2','step1','step0'], 'the palette retains the given scrambled sequence');
     }
   }
   const memory = activities.find(a => a.primaryFamilyId === 'A05' && a.id.endsWith('-6'));
-  assert.deepEqual([...memory.tokens].sort((a,b)=>a.id.localeCompare(b.id)).map(t=>[t.image.src,t.image.frame.index]), [1,2,3].map(i=>[src('planting-steps'),i]));
+  assert.deepEqual([...memory.tokens].sort((a,b)=>a.id.localeCompare(b.id)).map(t=>imageAddress(t.image)),
+    [1,2,3].map(index=>address('planting-steps',index)));
   const story = activities.find(a => a.primaryFamilyId === 'E03' && a.id.endsWith('-9'));
   assert.ok(story.presentation.storyCards.every(i => i.src === src('cat-plant-story')));
 });
 
 test('all registered illustration frames reach a renderable activity surface', () => {
   const usage = collectIllustrationUsage(explorationSets, imageGallery);
-  assert.equal(usage.atlasCount, 15);
-  assert.equal(usage.registeredFrameCount, 72);
+  assert.equal(usage.atlasCount, 18);
+  assert.equal(usage.registeredFrameCount, 74);
   assert.deepEqual(usage.problems, []);
   assert.deepEqual(usage.unusedFrames, [], 'an on-disk atlas alone is not complete integration');
 });
@@ -107,7 +113,7 @@ test('topic grouping preserves each entry once and keeps navigation IDs stable',
 
 test('every illustrated frame is registered and has a complete local PNG source', () => {
   const frames = Object.values(imageGallery.items).filter(image => image.frame);
-  assert.equal(frames.length, 72);
+  assert.equal(frames.length, 74);
   const sources = new Set();
   for (const image of frames) {
     assert.ok(image.frame.index >= 0 && image.frame.index < image.frame.columns * image.frame.rows);
@@ -119,7 +125,7 @@ test('every illustrated frame is registered and has a complete local PNG source'
     assert.ok(existsSync(file.replace(/\/([^/]+)\.png$/, '/source/$1-source.png')));
     sources.add(image.src);
   }
-  assert.equal(sources.size, 15);
+  assert.equal(sources.size, 18);
 });
 
 test('all three listening stories have matching event pictures without visual previews', () => {
@@ -194,5 +200,29 @@ test('making-ten comparisons display the original operands without printing the 
     assert.equal(left.kind,'placeValue');assert.equal(right.kind,'dots');
     assert.deepEqual([left.tens*10+left.ones,right.count],operands[index]);
     assert.equal(Number(left.label),operands[index][0]);
+  }
+});
+
+
+test('E01 meaning matches keep their words and add matching picture support', () => {
+  const expected = [['高','低'],['开','关'],['上','下'],['长','短'],['多','少']];
+  const registered = new Set([
+    ...Object.values(imageGallery.items).map(image => image.src),
+    ...Object.keys(explorationDrawings).map(id => `/images/items/exploration/${id}.png`),
+  ]);
+  for (const a of activities.filter(a => a.primaryFamilyId === 'E01' && a.kind === 'matching')) {
+    for (const token of a.tokens) {
+      assert.equal(token.textOnly, false, `${a.id}/${token.label}`);
+      assert.ok(registered.has(token.image.src), `${a.id}/${token.image.src}`);
+      assert.ok(existsSync('public' + token.image.src), token.image.src);
+      if (token.label === '开' || token.label === '关') {
+        assert.equal(token.image.src, `/images/items/exploration-art/box-${token.label === '开' ? 'open' : 'closed'}.png`);
+        assert.deepEqual(token.image.frame, { columns: 1, rows: 1, index: 0 });
+      }
+    }
+    for (const [left, right] of a.expectedPairs) {
+      const pair = [left,right].map(id => a.tokens.find(token => token.id === id).label);
+      assert.ok(expected.some(words => words[0] === pair[0] && words[1] === pair[1]), `${a.id}/${pair.join('/')}`);
+    }
   }
 });

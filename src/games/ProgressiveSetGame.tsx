@@ -333,13 +333,13 @@ function isVisualCardChoice(label: string) {
 }
 
 function visualCardParts(value: string) {
-  const exact = visualMetaFor(value);
-  if (exact) return [exact];
   const parts = visualParts(value);
-  if (parts.length <= 1) return [];
   const metas = parts.map((part) => visualMetaFor(part));
-  if (metas.some((item) => !item)) return [];
-  return metas as Array<NonNullable<ReturnType<typeof visualMetaFor>>>;
+  if (parts.length > 1 && metas.every((item) => item !== null)) {
+    return metas as Array<NonNullable<ReturnType<typeof visualMetaFor>>>;
+  }
+  const exact = visualMetaFor(value);
+  return exact ? [exact] : [];
 }
 
 function joinVoiceLine(prompt: string, instruction: string) {

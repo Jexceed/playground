@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-11",
+  "tool": "built-in image_gen",
+  "transparentBackground": false,
+  "assets": [
+    {
+      "name": "sowing-seed",
+      "prompt": "Use case: precise-object-edit. Asset type: a single square illustrated action card for a parent-child thinking game. Input image is a STYLE AND CHARACTER REFERENCE: the orange kitten planting story atlas. Create ONLY ONE standalone square panel, NOT a collage, improving the sowing step. Keep the same cute orange tabby kitten, soft detailed children's book rendering, warm off-white paper background, terracotta flowerpot and green seed bowl. Show the pot ALREADY FULL OF SOIL. Make the action completely unmistakable: the kitten pinches one large pale bean seed directly above a small hole in the soil, placing it into the hole; one additional bean visibly rests partly inside the hole. Its other paw holds the pot rim. A small green bowl with a few seeds may be beside it. No pouring soil, no watering can, no sprout, no other animals, no labels, no arrows, no numbers. Three-quarter close view, whole kitten upper body and pot fully visible, central action large enough for a small card, generous clean margins. Preserve character identity and painterly texture from the supplied reference. Output a single square PNG illustration on opaque warm off-white background.",
+      "reference": "../planting-steps.png",
+      "source": "sowing-seed-source.png",
+      "runtime": "../sowing-seed.png",
+      "reason": "Replace planting action frame only; bean visibly enters soil."
+    },
+    {
+      "name": "box-closed",
+      "prompt": "Use case: illustration-story. Asset type: single object picture card for a children's antonym matching game, word CLOSED. Create one square illustration showing a small plain teal-blue wooden storage box with a hinged lid COMPLETELY CLOSED, lid lying flush with its rim. Front and right side visible in a gentle three-quarter view, eye-level slightly above the box. Rounded child-friendly corners, one simple small round wooden handle on the front, no lock, no clasp. Soft detailed painterly children's-book illustration, subtle wood texture, restrained soft shadow, warm off-white opaque background. Center the full box with ample margin, object occupies about 65% width and 50% height, at center of square. NO person, hands, animals, toys, arrows, labels, words, logos, symbols or extra objects. The state of the lid is the only semantic clue; there must be no gap, no visible interior. This image will be paired with the exact same box OPEN; keep plain simple invariant design for accurate matching.",
+      "source": "box-closed-source.png",
+      "runtime": "../box-closed.png",
+      "reason": "Antonym word card: closed hinged box."
+    },
+    {
+      "name": "box-open",
+      "prompt": "Use case: precise-object-edit. Input image is EDIT TARGET: the teal-blue wooden box. Create its matching OPEN-state picture card. CHANGE ONLY THE LID STATE: rotate the existing lid upward on the rear hinges to about 100 degrees, clearly exposing the empty wooden interior. Preserve the EXACT SAME box body, teal paint, round natural-wood front knob, proportions, camera angle, body position and size, background, shadow style and square canvas. Do not shrink the box body to make room: use the large existing blank upper margin for the raised lid. Hinge at the back edge, lid fully visible within the square, inner lid and inside of box painted lighter teal. The child must instantly see that this is the same box, now open. No objects inside, no arrows, no labels, no text, no hands, no people, no animals. Soft painterly illustration and opaque off-white background identical to the original.",
+      "reference": "box-closed-source.png",
+      "source": "box-open-source.png",
+      "runtime": "../box-open.png",
+      "reason": "Same object with open lid; no unrelated cues."
+    }
+  ]
+}

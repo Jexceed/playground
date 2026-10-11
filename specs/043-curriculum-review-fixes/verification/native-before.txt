@@ -1,0 +1,101 @@
+Window: "小小思考屋", App: 小小思考屋.
+0 standard window 小小思考屋, Secondary Actions: Raise
+	1 scroll area
+		2 HTML content Description: 小小思考屋, URL: tauri://localhost
+			3 container
+				4 container 主题地图
+					5 image 小小思考屋 亲子思维游戏
+					6 container 选择启蒙或探索
+						7 toggle button 启蒙, Value: off
+						8 toggle button 探索, Value: on
+					9 button (collapsed) 数字岛 144 题, Secondary Actions: Expand
+					10 button (collapsed) 逻辑屋 126 题, Secondary Actions: Expand
+					11 button (collapsed) 图形工坊 186 题, Secondary Actions: Expand
+					12 button (collapsed) 记忆小屋 81 题, Secondary Actions: Expand
+					13 button (collapsed) 语言花园 54 题, Secondary Actions: Expand
+					14 button (expanded) 生活实验室 30 题, Secondary Actions: Collapse
+					15 container 关卡列表
+						16 container
+							17 text 探索  ·  生活实验室
+						18 text 6  个
+						19 search text field (settable) 查找当前主题题组, Placeholder: 查找题组
+							20 text 查找题组
+						21 heading 生活与变化, Value: 3
+							22 text 生活与变化
+						23 button 用品放对地方 动手 · 9 题
+						24 button 变化观察册 动手 · 9 题
+						25 heading 动手探索, Value: 3
+							26 text 动手探索
+						27 button 一起做小实验 动手 · 3 题
+						28 button 生活里的判断 动手 · 3 题
+						29 heading 表达与行动, Value: 3
+							30 text 表达与行动
+						31 button 节日和生活发现 动手 · 3 题
+						32 button 小手和身体挑战 动手 · 3 题
+				33 container 当前部分
+					34 text 探索
+					35 text 组合线索，多步思考 75  组 ·  621  题
+				36 container 用品放对地方
+					37 container 用品放对地方
+						38 container
+							39 text 先试一试  · 第  1  / 9  题
+							40 heading 用品放对地方, Value: 1
+								41 text 用品放对地方
+							42 button 听一听题目
+						43 heading 把用品和这次要做的事配起来。, Value: 2
+							44 text 把用品和这次要做的事配起来。
+						45 text 把两边有关的图卡连起来。可以拖过去，也可以两边各点一下。
+						46 container 连线配对
+							47 text 拖到另一张图卡，或两边各点一下
+							48 text 已连  0  /  2  对
+							49 toggle button 杯子，未连接, Value: off
+							50 toggle button 铅笔，未连接, Value: off
+							51 toggle button 画线，未连接, Value: off
+							52 button 看大图：画线, Help: 看大图
+							53 toggle button 喝水，未连接, Value: off
+							54 button 看大图：喝水, Help: 看大图
+							55 text 想换一个朋友，直接重新连；点卡片上的 × 可以断开。
+						56 button (disabled) 撤销上一步
+						57 button 清空
+						58 button 提示
+						59 button 摆好了，看看
+						60 container
+							61 text 这次尝试  0  次 · 提示  0  次
+							62 button 先跳过
+				63 container 题目导航
+					64 text 题目导航
+					65 text 0  /  9  已做
+					66 button 跳到第 1 题
+					67 button 跳到第 2 题
+					68 button 跳到第 3 题
+					69 button 跳到第 4 题
+					70 button 跳到第 5 题
+					71 button 跳到第 6 题
+					72 button 跳到第 7 题
+					73 button 跳到第 8 题
+					74 button 跳到第 9 题
+				75 summary 给家长 · 陪玩提示, Value: off
+					76 text 给家长 · 陪玩提示
+				77 container (expanded) Secondary Actions: Collapse
+					78 summary 探索 · 成长记录, Value: on
+						79 text 探索
+						80 text  · 成长记录
+					81 container
+						82 text 探索 成长记录
+					83 button 清空探索记录
+					84 container
+						85 text 已完成  75  /  621  题
+					86 text 多条件分类 集合选择 分类规则 条件组合 检查顺序 顺序规则 集合变化 条件配对 抗干扰 属性比较 排除与解释 关系排序 还有  29  个
+	87 close button
+	88 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	89 minimize button
+	90 text 小小思考屋
+91 menu bar
+	92 小小思考屋
+	93 File
+	94 Edit
+	95 View
+	96 Window
+	97 Help
+
+The focused UI element is 78 summary 探索 · 成长记录, Value: on
