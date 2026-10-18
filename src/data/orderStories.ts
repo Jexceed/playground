@@ -122,6 +122,8 @@ export function orderStoryImage(round: Pick<GameRound, "id">, label: string) {
   const number = storyNumber(round);
   if (number === undefined) return undefined;
   if ([1, 9, 18].includes(number)) return drinkingImage(label);
+  if (number === 10 && label === "拿饼干") return imageGallery.items.logic046Daily_placeCookies;
+  if ((number === 10 || number === 16) && label === "吃") return imageGallery.items.logic046Daily_eatFromPlate;
   const story = stories[number];
   const card = story?.images[label];
   return card ? (imageGallery.items as Record<string, RoundSceneImage>)[`order045_${story.family}_${card}`] : undefined;

@@ -1,0 +1,24 @@
+{
+  "mode": "exact-scene-crop",
+  "scene": "/images/scenes/muddy-paws-yard.png",
+  "sceneSha256": "7859c99e9a993097bc781e331f93fe7d184fd55afd162328bd0a2a1c3926206e",
+  "coordinateSpace": {
+    "width": 1200,
+    "height": 675
+  },
+  "crop": {
+    "left": 460,
+    "top": 420,
+    "width": 265,
+    "height": 245
+  },
+  "output": "public/images/items/logic-046-evidence-mudTracks.png",
+  "resize": {
+    "width": 600,
+    "height": 600,
+    "fit": "contain",
+    "background": "#fffaf0"
+  },
+  "pixelsPolicy": "Only crop and resize original scene pixels. No generated evidence, no retouching, no extra footprints or behavior.",
+  "alt": "原场景地面已有的泥脚印，不推定脚印一定属于哪个角色。"
+}

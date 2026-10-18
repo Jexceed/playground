@@ -1,0 +1,572 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "art_plans",
+  "date": "2026-10-19",
+  "mode": "independent-read-only-integration-review-plus-authorized-owned-component-fix",
+  "scope": {
+    "lifeRounds": 26,
+    "evidenceRounds": 17,
+    "rounds": 43,
+    "choices": 129,
+    "imageReferences": 288
+  },
+  "status": "review-passed",
+  "openIssues": [],
+  "findings": [
+    {
+      "id": "integration-001",
+      "priority": 1,
+      "status": "resolved",
+      "roundIds": [
+        "logic-priority-choice-3"
+      ],
+      "problem": "库存木板每格25px、河面每格20px，并且分属独立SVG，物理缩放比例不一致。",
+      "resolution": "库存已移入diagram.inventory；LogicBridgeDiagram在同一SVG和同一UNIT=20内输出，viewBox按库存行数扩展；真实SSR确认5/2格宽100/40px、河宽4格80px。"
+    },
+    {
+      "id": "integration-002",
+      "priority": 2,
+      "status": "resolved",
+      "roundIds": [
+        "logic-condition-detective-12",
+        "logic-fix-plan-11",
+        "logic-priority-choice-10"
+      ],
+      "problem": "同样短的备用板start=0且onShore只改y，实际仍伸进水里并与旧板重叠。",
+      "resolution": "主代理改为两个独立diagram并列：原来3格→换来3格，每幅仅一块3格木板。"
+    },
+    {
+      "id": "integration-003",
+      "priority": 1,
+      "status": "resolved",
+      "roundIds": [
+        "logic-condition-detective-5",
+        "logic-fix-plan-5",
+        "logic-priority-choice-6"
+      ],
+      "problem": "题干明确先盛盘再吃，但旧成功流程只拿空盘、从纸垫拿饼干、直接吃，缺实际盛盘。",
+      "resolution": "新增placeCookies/eatFromPlate本地PNG且已注册；三题成功流程改为拿盘子→盛入盘子→从盘吃。两张新图已目视核对。"
+    },
+    {
+      "id": "integration-004",
+      "priority": 2,
+      "status": "resolved",
+      "roundIds": [
+        "logic-fix-plan-1"
+      ],
+      "problem": "共用washPlan插入拿盘子，会让错误选项少了拿盘子也像必要步骤。",
+      "resolution": "washPlan已拆为洗手→拿饼干→吃，不将盘子列作必要；有盛盘条件的题另用platePlan/washPlatePlan。"
+    }
+  ],
+  "confirmed": {
+    "currentFacts": "干净手/未拿盘子、分类前混杂/分类后未装盒、红绿行人灯/成人牵手等当前状态已分开；未把当前状态替换为下一步动作。",
+    "wrongFlow": "LogicLessonBoard成功后只渲染resolution，未继续播放evidence里的错误动作；reason类不自动按流程播放。",
+    "evidence": "17题全部使用同源场景/裁切角色，弱证据猫狗保持清醒、当前未接触；概念候选用中性文字徽记，不增加已实施行为。",
+    "bridgeInventory": "当前库存移入同一SVG，支持单个缩放因子；parent独立inventory SVG已删除。",
+    "checks": [
+      "43题129候选均有图片/图形",
+      "所有实际引用PNG存在",
+      "原choices/answer与冻结logic-rounds.json一致",
+      "成功流程未引用泥手吃/红灯迈步/混装等错误动作",
+      "11/11 logic-choice-picture测试通过，含真实SSR库存输出合同",
+      "pnpm exec tsc --noEmit通过"
+    ]
+  },
+  "visualInspection": [
+    "order-045-snack-take/plate/eat",
+    "order-045-sorting-one",
+    "logic-046-life-takeOutSort",
+    "logic-046-life-trafficGreen/slowRed/redAttempt/mixedBox/dirtyEating",
+    "logic-046-cat-kitchen",
+    "logic-046-evidence-cakeCream/flowerPollen/mudPaws",
+    "dog-room-weak-clue",
+    "spilled-water-room",
+    "logic-046-daily-placeCookies/eatFromPlate"
+  ],
+  "limitations": [
+    "未操作浏览器或原生UI；窗口布局/点击播放验收由主代理完成。",
+    "全部引用已做存在性和合同检查；目视检查范围列于visualInspection，不将其声称为逐PNG全量视觉验收。"
+  ],
+  "sourceHashes": {
+    "src/data/logicLessonVisuals.ts": "2e850505f4c55e92d806534304ba1df2cf331a19f401b4bb6536f5bd3d39e8aa",
+    "src/components/LogicLessonBoard.tsx": "a53c50e20b890b7b88e08f93518023e84565ac822e71c0a87715cf1e80ed9cb7",
+    "src/components/LogicBridgeChoice.tsx": "f650f3efbdf4102e71965e3252a50cea46a4e17dc82ae38de4693832464cbfa6",
+    "src/domain/logic-choice-picture.ts": "c7ef0e15bd5083c997137073613d3ad9351e1733be44ee66f3fa0a8a555087ca",
+    "src/data/logicEvidence.ts": "62cdc0ecc7974aae179ab2ed12cd36dfd8e8e9b74fc4cbf961d96fafedffb4ca"
+  },
+  "rounds": [
+    {
+      "id": "logic-story-evidence-1",
+      "kind": "evidence",
+      "choiceCount": 3,
+      "resolutionFrameCount": 4,
+      "contextLabel": "先看事情发生的地方",
+      "contextImage": "/images/scenes/cake-evidence-kitchen.png",
+      "sourceChoicesAndAnswerUnchanged": true,
+      "imagesExist": true,
+      "successDoesNotReuseWrongAction": true
+    },
+    {
+      "id": "logic-story-evidence-2",
+      "kind": "evidence",
+      "choiceCount": 3,
+      "resolutionFrameCount": 4,
+      "contextLabel": "先看事情发生的地方",
+      "contextImage": "/images/scenes/cake-evidence-kitchen.png",
+      "sourceChoicesAndAnswerUnchanged": true,
+      "imagesExist": true,
+      "successDoesNotReuseWrongAction": true
+    },
+    {
+      "id": "logic-story-evidence-3",
+      "kind": "evidence",
+      "choiceCount": 3,
+      "resolutionFrameCount": 2,
+      "contextLabel": "先看事情发生的地方",
+      "contextImage": "/images/scenes/logic-046-cat-kitchen.png",
+      "sourceChoicesAndAnswerUnchanged": true,
+      "imagesExist": true,
+      "successDoesNotReuseWrongAction": true
+    },
+    {
+      "id": "logic-story-evidence-4",
+      "kind": "evidence",
+      "choiceCount": 3,
+      "resolutionFrameCount": 4,
+      "contextLabel": "先看事情发生的地方",
+      "contextImage": "/images/scenes/muddy-paws-yard.png",
+      "sourceChoicesAndAnswerUnchanged": true,
+      "imagesExist": true,
+      "successDoesNotReuseWrongAction": true
+    },
+    {
+      "id": "logic-story-evidence-5",
+      "kind": "evidence",
+      "choiceCount": 3,
+      "resolutionFrameCount": 3,
+      "contextLabel": "先看事情发生的地方",
+      "contextImage": "/images/scenes/spilled-water-room.png",
+      "sourceChoicesAndAnswerUnchanged": true,
+      "imagesExist": true,
+      "successDoesNotReuseWrongAction": true
+    },
+    {
+      "id": "logic-story-evidence-6",
+      "kind": "evidence",
+      "choiceCount": 3,
+      "resolutionFrameCount": 4,
+      "contextLabel": "先看事情发生的地方",
+      "contextImage": "/images/scenes/flower-evidence-garden.png",
+      "sourceChoicesAndAnswerUnchanged": true,
+      "imagesExist": true,
+      "successDoesNotReuseWrongAction": true
+    },
+    {
+      "id": "logic-story-evidence-7",
+      "kind": "evidence",
+      "choiceCount": 3,
+      "resolutionFrameCount": 3,
+      "contextLabel": "先看事情发生的地方",
+      "contextImage": "/images/scenes/dog-room-weak-clue.png",
+      "sourceChoicesAndAnswerUnchanged": true,
+      "imagesExist": true,
+      "successDoesNotReuseWrongAction": true
+    },
+    {
+      "id": "logic-condition-detective-1",
+      "kind": "life",
+      "choiceCount": 3,
+      "resolutionFrameCount": 3,
+      "contextLabel": "手脏了，饼干还没拿",
+      "contextImage": "/images/scenes/order-045-snack-dirty.png",
+      "sourceChoicesAndAnswerUnchanged": true,
+      "imagesExist": true,
+      "successDoesNotReuseWrongAction": true
+    },
+    {
+      "id": "logic-condition-detective-2",
+      "kind": "life",
+      "choiceCount": 3,
+      "resolutionFrameCount": 1,
+      "contextLabel": "行人红灯亮着",
+      "contextImage": "/images/scenes/order-045-traffic-red.png",
+      "sourceChoicesAndAnswerUnchanged": true,
+      "imagesExist": true,
+      "successDoesNotReuseWrongAction": true
+    },
+    {
+      "id": "logic-condition-detective-3",
+      "kind": "life",
+      "choiceCount": 3,
+      "resolutionFrameCount": 2,
+      "contextLabel": "行人绿灯亮，路面已经安全",
+      "contextImage": "/images/scenes/logic-046-life-trafficGreen.png",
+      "sourceChoicesAndAnswerUnchanged": true,
+      "imagesExist": true,
+      "successDoesNotReuseWrongAction": true
+    },
+    {
+      "id": "logic-condition-detective-4",
+      "kind": "life",
+      "choiceCount": 3,
+      "resolutionFrameCount": 1,
+      "contextLabel": "模型河宽5格，木板长3格",
+      "contextImage": null,
+      "sourceChoicesAndAnswerUnchanged": true,
+      "imagesExist": true,
+      "successDoesNotReuseWrongAction": true
+    },
+    {
+      "id": "logic-condition-detective-5",
+      "kind": "life",
+      "choiceCount": 3,
+      "resolutionFrameCount": 3,
+      "contextLabel": "手已洗好，盘子还没拿",
+      "contextImage": "/images/scenes/order-045-snack-clean.png",
+      "sourceChoicesAndAnswerUnchanged": true,
+      "imagesExist": true,
+      "successDoesNotReuseWrongAction": true
+    },
+    {
+      "id": "logic-condition-detective-6",
+      "kind": "life",
+      "choiceCount": 3,
+      "resolutionFrameCount": 3,
+      "contextLabel": "两类玩具还混在一起",
+      "contextImage": "/images/scenes/order-045-sorting-mixed.png",
+      "sourceChoicesAndAnswerUnchanged": true,
+      "imagesExist": true,
+      "successDoesNotReuseWrongAction": true
+    },
+    {
+      "id": "logic-condition-detective-7",
+      "kind": "life",
+      "choiceCount": 3,
+      "resolutionFrameCount": 3,
+      "contextLabel": "桌面模型里，小河挡在玩具兔和胡萝卜之间",
+      "contextImage": "/images/scenes/order-045-bridge-carrot.png",
+      "sourceChoicesAndAnswerUnchanged": true,
+      "imagesExist": true,
+      "successDoesNotReuseWrongAction": true
+    },
+    {
+      "id": "logic-condition-detective-8",
+      "kind": "evidence",
+      "choiceCount": 3,
+      "resolutionFrameCount": 2,
+      "contextLabel": "先看事情发生的地方",
+      "contextImage": "/images/scenes/logic-046-cat-kitchen.png",
+      "sourceChoicesAndAnswerUnchanged": true,
+      "imagesExist": true,
+      "successDoesNotReuseWrongAction": true
+    },
+    {
+      "id": "logic-condition-detective-9",
+      "kind": "evidence",
+      "choiceCount": 3,
+      "resolutionFrameCount": 4,
+      "contextLabel": "先看事情发生的地方",
+      "contextImage": "/images/scenes/cake-evidence-kitchen.png",
+      "sourceChoicesAndAnswerUnchanged": true,
+      "imagesExist": true,
+      "successDoesNotReuseWrongAction": true
+    },
+    {
+      "id": "logic-condition-detective-10",
+      "kind": "evidence",
+      "choiceCount": 3,
+      "resolutionFrameCount": 3,
+      "contextLabel": "先看事情发生的地方",
+      "contextImage": "/images/scenes/spilled-water-room.png",
+      "sourceChoicesAndAnswerUnchanged": true,
+      "imagesExist": true,
+      "successDoesNotReuseWrongAction": true
+    },
+    {
+      "id": "logic-condition-detective-11",
+      "kind": "evidence",
+      "choiceCount": 3,
+      "resolutionFrameCount": 3,
+      "contextLabel": "先看事情发生的地方",
+      "contextImage": "/images/scenes/dog-room-weak-clue.png",
+      "sourceChoicesAndAnswerUnchanged": true,
+      "imagesExist": true,
+      "successDoesNotReuseWrongAction": true
+    },
+    {
+      "id": "logic-condition-detective-12",
+      "kind": "life",
+      "choiceCount": 3,
+      "resolutionFrameCount": 1,
+      "contextLabel": "模型河宽5格，木板长3格",
+      "contextImage": null,
+      "sourceChoicesAndAnswerUnchanged": true,
+      "imagesExist": true,
+      "successDoesNotReuseWrongAction": true
+    },
+    {
+      "id": "logic-fix-plan-1",
+      "kind": "life",
+      "choiceCount": 3,
+      "resolutionFrameCount": 3,
+      "contextLabel": "泥手直接拿饼干吃了",
+      "contextImage": "/images/scenes/logic-046-life-dirtyEating.png",
+      "sourceChoicesAndAnswerUnchanged": true,
+      "imagesExist": true,
+      "successDoesNotReuseWrongAction": true
+    },
+    {
+      "id": "logic-fix-plan-2",
+      "kind": "life",
+      "choiceCount": 3,
+      "resolutionFrameCount": 1,
+      "contextLabel": "红灯时想迈步",
+      "contextImage": "/images/scenes/logic-046-life-redAttempt.png",
+      "sourceChoicesAndAnswerUnchanged": true,
+      "imagesExist": true,
+      "successDoesNotReuseWrongAction": true
+    },
+    {
+      "id": "logic-fix-plan-3",
+      "kind": "life",
+      "choiceCount": 3,
+      "resolutionFrameCount": 2,
+      "contextLabel": "行人绿灯亮，路面已经安全",
+      "contextImage": "/images/scenes/logic-046-life-trafficGreen.png",
+      "sourceChoicesAndAnswerUnchanged": true,
+      "imagesExist": true,
+      "successDoesNotReuseWrongAction": true
+    },
+    {
+      "id": "logic-fix-plan-4",
+      "kind": "life",
+      "choiceCount": 3,
+      "resolutionFrameCount": 1,
+      "contextLabel": "模型河宽5格，木板长3格",
+      "contextImage": null,
+      "sourceChoicesAndAnswerUnchanged": true,
+      "imagesExist": true,
+      "successDoesNotReuseWrongAction": true
+    },
+    {
+      "id": "logic-fix-plan-5",
+      "kind": "life",
+      "choiceCount": 3,
+      "resolutionFrameCount": 3,
+      "contextLabel": "手已洗好，盘子还没拿",
+      "contextImage": "/images/scenes/order-045-snack-clean.png",
+      "sourceChoicesAndAnswerUnchanged": true,
+      "imagesExist": true,
+      "successDoesNotReuseWrongAction": true
+    },
+    {
+      "id": "logic-fix-plan-6",
+      "kind": "life",
+      "choiceCount": 3,
+      "resolutionFrameCount": 3,
+      "contextLabel": "两类玩具混装在一个盒子里",
+      "contextImage": "/images/scenes/logic-046-life-mixedBox.png",
+      "sourceChoicesAndAnswerUnchanged": true,
+      "imagesExist": true,
+      "successDoesNotReuseWrongAction": true
+    },
+    {
+      "id": "logic-fix-plan-7",
+      "kind": "life",
+      "choiceCount": 3,
+      "resolutionFrameCount": 3,
+      "contextLabel": "桌面模型里，小河挡在玩具兔和胡萝卜之间",
+      "contextImage": "/images/scenes/order-045-bridge-carrot.png",
+      "sourceChoicesAndAnswerUnchanged": true,
+      "imagesExist": true,
+      "successDoesNotReuseWrongAction": true
+    },
+    {
+      "id": "logic-fix-plan-8",
+      "kind": "evidence",
+      "choiceCount": 3,
+      "resolutionFrameCount": 2,
+      "contextLabel": "先看事情发生的地方",
+      "contextImage": "/images/scenes/logic-046-cat-kitchen.png",
+      "sourceChoicesAndAnswerUnchanged": true,
+      "imagesExist": true,
+      "successDoesNotReuseWrongAction": true
+    },
+    {
+      "id": "logic-fix-plan-9",
+      "kind": "evidence",
+      "choiceCount": 3,
+      "resolutionFrameCount": 4,
+      "contextLabel": "先看事情发生的地方",
+      "contextImage": "/images/scenes/cake-evidence-kitchen.png",
+      "sourceChoicesAndAnswerUnchanged": true,
+      "imagesExist": true,
+      "successDoesNotReuseWrongAction": true
+    },
+    {
+      "id": "logic-fix-plan-10",
+      "kind": "evidence",
+      "choiceCount": 3,
+      "resolutionFrameCount": 3,
+      "contextLabel": "先看事情发生的地方",
+      "contextImage": "/images/scenes/spilled-water-room.png",
+      "sourceChoicesAndAnswerUnchanged": true,
+      "imagesExist": true,
+      "successDoesNotReuseWrongAction": true
+    },
+    {
+      "id": "logic-fix-plan-11",
+      "kind": "life",
+      "choiceCount": 3,
+      "resolutionFrameCount": 1,
+      "contextLabel": "模型河宽5格，木板长3格",
+      "contextImage": null,
+      "sourceChoicesAndAnswerUnchanged": true,
+      "imagesExist": true,
+      "successDoesNotReuseWrongAction": true
+    },
+    {
+      "id": "logic-fix-plan-12",
+      "kind": "life",
+      "choiceCount": 3,
+      "resolutionFrameCount": 2,
+      "contextLabel": "两类玩具已经分开，盒子还空着",
+      "contextImage": "/images/scenes/order-045-sorting-sorted.png",
+      "sourceChoicesAndAnswerUnchanged": true,
+      "imagesExist": true,
+      "successDoesNotReuseWrongAction": true
+    },
+    {
+      "id": "logic-priority-choice-1",
+      "kind": "life",
+      "choiceCount": 3,
+      "resolutionFrameCount": 4,
+      "contextLabel": "手脏了，饼干还没拿",
+      "contextImage": "/images/scenes/order-045-snack-dirty.png",
+      "sourceChoicesAndAnswerUnchanged": true,
+      "imagesExist": true,
+      "successDoesNotReuseWrongAction": true
+    },
+    {
+      "id": "logic-priority-choice-2",
+      "kind": "life",
+      "choiceCount": 3,
+      "resolutionFrameCount": 3,
+      "contextLabel": "行人红灯亮着",
+      "contextImage": "/images/scenes/order-045-traffic-red.png",
+      "sourceChoicesAndAnswerUnchanged": true,
+      "imagesExist": true,
+      "successDoesNotReuseWrongAction": true
+    },
+    {
+      "id": "logic-priority-choice-3",
+      "kind": "life",
+      "choiceCount": 3,
+      "resolutionFrameCount": 1,
+      "contextLabel": "河宽4格，长板5格、短板2格",
+      "contextImage": null,
+      "sourceChoicesAndAnswerUnchanged": true,
+      "imagesExist": true,
+      "successDoesNotReuseWrongAction": true
+    },
+    {
+      "id": "logic-priority-choice-4",
+      "kind": "life",
+      "choiceCount": 3,
+      "resolutionFrameCount": 3,
+      "contextLabel": "两类玩具还混在一起",
+      "contextImage": "/images/scenes/order-045-sorting-mixed.png",
+      "sourceChoicesAndAnswerUnchanged": true,
+      "imagesExist": true,
+      "successDoesNotReuseWrongAction": true
+    },
+    {
+      "id": "logic-priority-choice-5",
+      "kind": "life",
+      "choiceCount": 3,
+      "resolutionFrameCount": 3,
+      "contextLabel": "桌面模型里，小河挡在玩具兔和胡萝卜之间",
+      "contextImage": "/images/scenes/order-045-bridge-carrot.png",
+      "sourceChoicesAndAnswerUnchanged": true,
+      "imagesExist": true,
+      "successDoesNotReuseWrongAction": true
+    },
+    {
+      "id": "logic-priority-choice-6",
+      "kind": "life",
+      "choiceCount": 3,
+      "resolutionFrameCount": 3,
+      "contextLabel": "手已洗好，盘子还没拿",
+      "contextImage": "/images/scenes/order-045-snack-clean.png",
+      "sourceChoicesAndAnswerUnchanged": true,
+      "imagesExist": true,
+      "successDoesNotReuseWrongAction": true
+    },
+    {
+      "id": "logic-priority-choice-7",
+      "kind": "life",
+      "choiceCount": 3,
+      "resolutionFrameCount": 1,
+      "contextLabel": "车停了，行人灯仍然是红色",
+      "contextImage": "/images/scenes/logic-046-life-redAttempt.png",
+      "sourceChoicesAndAnswerUnchanged": true,
+      "imagesExist": true,
+      "successDoesNotReuseWrongAction": true
+    },
+    {
+      "id": "logic-priority-choice-8",
+      "kind": "evidence",
+      "choiceCount": 3,
+      "resolutionFrameCount": 4,
+      "contextLabel": "先看事情发生的地方",
+      "contextImage": "/images/scenes/cake-evidence-kitchen.png",
+      "sourceChoicesAndAnswerUnchanged": true,
+      "imagesExist": true,
+      "successDoesNotReuseWrongAction": true
+    },
+    {
+      "id": "logic-priority-choice-9",
+      "kind": "evidence",
+      "choiceCount": 3,
+      "resolutionFrameCount": 3,
+      "contextLabel": "先看事情发生的地方",
+      "contextImage": "/images/scenes/spilled-water-room.png",
+      "sourceChoicesAndAnswerUnchanged": true,
+      "imagesExist": true,
+      "successDoesNotReuseWrongAction": true
+    },
+    {
+      "id": "logic-priority-choice-10",
+      "kind": "life",
+      "choiceCount": 3,
+      "resolutionFrameCount": 1,
+      "contextLabel": "模型河宽5格，木板长3格",
+      "contextImage": null,
+      "sourceChoicesAndAnswerUnchanged": true,
+      "imagesExist": true,
+      "successDoesNotReuseWrongAction": true
+    },
+    {
+      "id": "logic-priority-choice-11",
+      "kind": "life",
+      "choiceCount": 3,
+      "resolutionFrameCount": 2,
+      "contextLabel": "两类玩具已经分开，盒子还空着",
+      "contextImage": "/images/scenes/order-045-sorting-sorted.png",
+      "sourceChoicesAndAnswerUnchanged": true,
+      "imagesExist": true,
+      "successDoesNotReuseWrongAction": true
+    },
+    {
+      "id": "logic-priority-choice-12",
+      "kind": "evidence",
+      "choiceCount": 3,
+      "resolutionFrameCount": 3,
+      "contextLabel": "先看事情发生的地方",
+      "contextImage": "/images/scenes/dog-room-weak-clue.png",
+      "sourceChoicesAndAnswerUnchanged": true,
+      "imagesExist": true,
+      "successDoesNotReuseWrongAction": true
+    }
+  ]
+}

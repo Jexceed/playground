@@ -1,0 +1,24 @@
+{
+  "mode": "exact-scene-crop",
+  "scene": "/images/scenes/dog-room-weak-clue.png",
+  "sceneSha256": "9fe69b4efa7e30f5f53f3857cc5478b2834eca085c2c8efafe1174b450692873",
+  "coordinateSpace": {
+    "width": 1200,
+    "height": 675
+  },
+  "crop": {
+    "left": 0,
+    "top": 0,
+    "width": 1200,
+    "height": 675
+  },
+  "output": "public/images/items/logic-046-evidence-weakDogContext.png",
+  "resize": {
+    "width": 600,
+    "height": 600,
+    "fit": "contain",
+    "background": "#fffaf0"
+  },
+  "pixelsPolicy": "Only crop and resize original scene pixels. No generated evidence, no retouching, no extra footprints or behavior.",
+  "alt": "原场景玩具散落的游戏房和门口清醒的小狗；没有新增作乱行为。"
+}

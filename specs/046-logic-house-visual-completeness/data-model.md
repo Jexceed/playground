@@ -1,0 +1,3 @@
+# 数据模型
+
+LogicLesson以稳定roundId为键。scene引用imageGallery.scenes；evidence当前图卡、choiceImages选项、resolution正确改法分别登记。保留原prompt/sequence/choices/answer合同，视觉附加数据不修改历史判分。需要修题文时仅按明确已记录缺陷调整。

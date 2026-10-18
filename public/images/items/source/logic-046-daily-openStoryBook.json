@@ -1,0 +1,28 @@
+{
+  "model": "gpt-6.1-sol",
+  "generator": "built-in image_gen",
+  "generatedFile": "/Users/chiang/.codex/generated_images/01a14fa7-7829-7452-8423-d2592d12ab53/exec-3bde4959-04a5-4123-a0d6-918c3a96e8d7.png",
+  "prompt": "Use case: illustration-story. Generate ONE SQUARE isolated object illustration for preschool task card. Warm watercolor and colored-pencil texture on cream paper, matching supplied reference style. ONLY a fully OPEN blue-cover picture storybook resting at a slight angle, two facing pages completely visible. Each page has a simple no-text painting of the same little brown rabbit in meadow: left rabbit sitting among daisies, right rabbit running through grass, clear picture story sequence. Absolutely no words, written marks, letters or numbers. IMPORTANT: the ENTIRE book including every cover edge, page corner, spine and back edge is fully visible and comfortably INSET with a wide uninterrupted cream-paper margin of at least 15 percent on ALL FOUR sides. Book occupies only the central 70 percent width and central 65 percent height. No cropped or off-canvas edges. No people hands pencils cups objects, no extra props, no labels watermarks or panels. Square composition.",
+  "reference": "public/images/scenes/source/drinking-thirsty.png",
+  "sourceDimensions": {
+    "width": 1254,
+    "height": 1254
+  },
+  "outputs": [
+    {
+      "key": "openStoryBook",
+      "path": "public/images/items/logic-046-daily-openStoryBook.png",
+      "crop": null,
+      "resize": {
+        "width": 600,
+        "height": 600,
+        "fit": "fill"
+      }
+    }
+  ],
+  "visualReview": {
+    "status": "reviewed",
+    "date": "2026-10-19",
+    "note": "整本图画书完整可见，边角不被裁切；两页均为无字故事图"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "model": "gpt-6.1-sol",
+  "generator": "built-in image_gen",
+  "generatedFile": "/Users/chiang/.codex/generated_images/01a14fa7-7829-7452-8423-d2592d12ab53/exec-45b20b2f-4d02-4b25-89d0-c20e718bc0c5.png",
+  "prompt": "Use case: illustration-story. Generate an educational TWO-CARD ATLAS: EXACT TWO columns by ONE row, two equal SQUARE cells, landscape 2:1 canvas. Both cards match supplied reference warm watercolor colored-pencil on cream paper, SAME cute preschool boy with short dark brown hair, large brown eyes, orange short-sleeved shirt, blue trousers, SAME wooden kitchen table, SAME white ceramic round plate with TWO thin BLUE RINGS around rim, SAME round chocolate-chip cookies. Boy has completely CLEAN hands in BOTH cards, absolutely no mud or brown hand smears. All hands and food interaction anatomically plausible. Large clear action card composition with generous safe margins within each square; no content crosses middle boundary. No words, letters, numbers, labels, arrows, checkmarks, panels or watermark. Ignore reference cup and pencil case: do not include cup, pitcher, bottle, pencil case or other unrelated objects.\nLEFT SQUARE: PLACE COOKIES ON PLATE. Boy sits at table, looks down attentively. A pale clean PAPER MAT on viewer LEFT has TWO loose round cookies remaining on it. A separate WHITE PLATE WITH BLUE RIM lies FLAT ON TABLE at viewer RIGHT, already has ONE cookie resting inside. Boy's right CLEAN hand holds ONE additional cookie at the plate center, fingers lowering it downward to just above/onto the plate, actively transferring cookies FROM PAPER MAT TO PLATE. His other clean hand gently steadies plate rim on table. Plate remains on table, never lifted. Cookie he moves is visibly OVER PLATE, nowhere near his mouth. Clear separation mat with two cookies, blue-rim plate with one cookie already there, hand placing another in plate. He is serving, NOT eating.\nRIGHT SQUARE: EAT FROM PLATE. Same boy at same table with same BLUE-RIM WHITE PLATE flat on table directly in front of him. Plate holds THREE cookies. He holds ONE cookie from that plate in a CLEAN hand up at his open mouth and is taking a small bite, happy natural expression. Other clean hand rests lightly by plate rim. The pale paper mat lies visibly EMPTY to left, ZERO cookies on mat, so plate is clearly the source of food. No loose cookies outside plate. Correct sequence: transfer cookies into plate, then eat cookies from plate.\nEnsure both full blue-rim plates and all relevant cookies and hand actions fully visible, not cropped. Exact 2x1 grid.",
+  "reference": "public/images/scenes/source/order-045-snack-clean.png",
+  "sourceDimensions": {
+    "width": 1774,
+    "height": 887
+  },
+  "grid": {
+    "columns": 2,
+    "rows": 1,
+    "rowMajorKeys": [
+      "placeCookies",
+      "eatFromPlate"
+    ]
+  },
+  "outputs": [
+    {
+      "key": "placeCookies",
+      "path": "public/images/items/logic-046-daily-placeCookies.png",
+      "crop": {
+        "left": 8,
+        "top": 8,
+        "width": 871,
+        "height": 871
+      },
+      "resize": {
+        "width": 600,
+        "height": 600,
+        "fit": "fill"
+      }
+    },
+    {
+      "key": "eatFromPlate",
+      "path": "public/images/items/logic-046-daily-eatFromPlate.png",
+      "crop": {
+        "left": 895,
+        "top": 8,
+        "width": 871,
+        "height": 871
+      },
+      "resize": {
+        "width": 600,
+        "height": 600,
+        "fit": "fill"
+      }
+    }
+  ],
+  "visualReview": {
+    "status": "reviewed",
+    "date": "2026-10-19",
+    "checks": [
+      "双手干净",
+      "蓝边白盘平放桌面",
+      "左格从纸垫把饼干放到盘内且不吃",
+      "右格从装有饼干的盘取食而纸垫为空",
+      "人物与盘款式匹配045"
+    ]
+  }
+}

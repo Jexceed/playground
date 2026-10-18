@@ -1,0 +1,14 @@
+{
+  "tool": "built-in image_gen",
+  "agentModel": "gpt-6.1-sol",
+  "mode": "precise-object-edit",
+  "originalScene": "public/images/scenes/cat-kitchen-weak-clue.png",
+  "originalSceneSha256": "56b28e98d68c49a762ef85395c7082e6a92386b08d5355d0965bf95c3c643bcd",
+  "generatedPath": "/Users/chiang/.codex/generated_images/01a14fa7-1a75-71c3-a797-fcc6410ee5dc/exec-b2712321-17f8-486f-8694-8a6aa86a1c3a.png",
+  "prompt": "Use case: precise-object-edit. Edit the supplied 16:9 watercolor children's book kitchen scene. Make ONE localized change only: REMOVE the complete detached triangular cake SLICE that is sitting on the round small plate in the lower foreground. After removal, that small plate is EMPTY, with no cake, frosting, crumbs, strawberry or traces on it. Keep the empty plate itself and nearby fork. Preserve everything else faithfully: main large cake on table still has exactly its existing missing wedge, same gray clean kitten at doorway on right, its mouth and paws remain perfectly clean with no cream, its pose, distance from table and location unchanged. Preserve kitchen cabinets, stove, window, flowers, tablecloth, lighting, palette, textures and camera composition. Do not add any footprints, cream, guilty gesture, eaten-cake action, suspects or clues. Do not fill missing wedge in main cake. The only changed pixels should be where the detached cake slice covered the empty plate. No text, labels, watermark. Single landscape image 16:9.",
+  "source": "public/images/scenes/source/logic-046-cat-kitchen.png",
+  "output": "public/images/scenes/logic-046-cat-kitchen.png",
+  "width": 1200,
+  "height": 675,
+  "visualCheck": "Removed foreground detached cake slice; kept main cake missing wedge, clean-mouth/paw cat at doorway and composition; no new evidence drawn"
+}

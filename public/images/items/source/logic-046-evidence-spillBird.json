@@ -1,0 +1,24 @@
+{
+  "mode": "exact-scene-crop",
+  "scene": "/images/scenes/spilled-water-room.png",
+  "sceneSha256": "1596220116dffd921a525faffacdce1cd088c76566a07655f280e1e822b322f9",
+  "coordinateSpace": {
+    "width": 1200,
+    "height": 675
+  },
+  "crop": {
+    "left": 210,
+    "top": 55,
+    "width": 190,
+    "height": 110
+  },
+  "output": "public/images/items/logic-046-evidence-spillBird.png",
+  "resize": {
+    "width": 600,
+    "height": 600,
+    "fit": "contain",
+    "background": "#fffaf0"
+  },
+  "pixelsPolicy": "Only crop and resize original scene pixels. No generated evidence, no retouching, no extra footprints or behavior.",
+  "alt": "原场景停在窗台上的蓝色小鸟和窗边区域。"
+}

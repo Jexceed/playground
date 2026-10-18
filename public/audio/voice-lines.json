@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-18T15:40:49.719Z",
+  "generatedAt": "2026-10-18T17:19:40.147Z",
   "recommendedVoice": "warm adult female Mandarin, smiling, preschool teacher, 0.85 speed, crisp consonants",
-  "lineCount": 4068,
+  "lineCount": 4182,
   "lines": [
     {
       "id": "game-title-数一数",
@@ -7271,6 +7271,30 @@
       ]
     },
     {
+      "id": "object-绿片拍手",
+      "kind": "object",
+      "text": "绿片拍手",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-stop-think/logic-stop-think-1",
+        "logic-stop-think/logic-stop-think-2"
+      ]
+    },
+    {
+      "id": "object-红片抱肩",
+      "kind": "object",
+      "text": "红片抱肩",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-stop-think/logic-stop-think-1",
+        "logic-stop-think/logic-stop-think-2",
+        "logic-stop-think/logic-stop-think-5",
+        "logic-stop-think/logic-stop-think-6"
+      ]
+    },
+    {
       "id": "success-本题规则是绿片拍手-红片抱肩-这张是红色圆片-所以抱肩",
       "kind": "success",
       "text": "本题规则是绿片拍手，红片抱肩。这张是红色圆片，所以抱肩。",
@@ -7302,6 +7326,28 @@
       ]
     },
     {
+      "id": "object-绿片抱肩",
+      "kind": "object",
+      "text": "绿片抱肩",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-stop-think/logic-stop-think-3",
+        "logic-stop-think/logic-stop-think-4"
+      ]
+    },
+    {
+      "id": "object-红片拍手",
+      "kind": "object",
+      "text": "红片拍手",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-stop-think/logic-stop-think-3",
+        "logic-stop-think/logic-stop-think-4"
+      ]
+    },
+    {
       "id": "success-本题规则是换个玩法-绿片抱肩-红片拍手-这张是红色圆片-所以拍手",
       "kind": "success",
       "text": "本题规则是换个玩法：绿片抱肩，红片拍手。这张是红色圆片，所以拍手。",
@@ -7330,6 +7376,17 @@
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-stop-think/logic-stop-think-5"
+      ]
+    },
+    {
+      "id": "object-绿片摸头",
+      "kind": "object",
+      "text": "绿片摸头",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-stop-think/logic-stop-think-5",
+        "logic-stop-think/logic-stop-think-6"
       ]
     },
     {
@@ -7941,6 +7998,7 @@
         "logic-order-plan/logic-order-plan-17",
         "logic-condition-detective/logic-condition-detective-1",
         "logic-fix-plan/logic-fix-plan-1",
+        "logic-fix-plan/logic-fix-plan-1",
         "logic-priority-choice/logic-priority-choice-1"
       ]
     },
@@ -7954,9 +8012,12 @@
         "logic-order-plan/logic-order-plan-5",
         "logic-order-plan/logic-order-plan-10",
         "logic-order-plan/logic-order-plan-17",
+        "logic-condition-detective/logic-condition-detective-1",
         "logic-condition-detective/logic-condition-detective-5",
+        "logic-fix-plan/logic-fix-plan-1",
         "logic-fix-plan/logic-fix-plan-5",
         "logic-fix-plan/logic-fix-plan-5",
+        "logic-priority-choice/logic-priority-choice-1",
         "logic-priority-choice/logic-priority-choice-6"
       ]
     },
@@ -7974,7 +8035,9 @@
         "logic-order-plan/logic-order-plan-17",
         "logic-order-plan/logic-order-plan-17",
         "logic-condition-detective/logic-condition-detective-1",
+        "logic-condition-detective/logic-condition-detective-1",
         "logic-condition-detective/logic-condition-detective-5",
+        "logic-fix-plan/logic-fix-plan-1",
         "logic-fix-plan/logic-fix-plan-1",
         "logic-priority-choice/logic-priority-choice-1",
         "logic-priority-choice/logic-priority-choice-6"
@@ -8229,7 +8292,9 @@
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-order-plan/logic-order-plan-7"
+        "logic-order-plan/logic-order-plan-7",
+        "logic-condition-detective/logic-condition-detective-6",
+        "logic-priority-choice/logic-priority-choice-4"
       ]
     },
     {
@@ -8241,7 +8306,12 @@
       "contexts": [
         "logic-order-plan/logic-order-plan-7",
         "logic-order-plan/logic-order-plan-7",
-        "logic-order-plan/logic-order-plan-24"
+        "logic-order-plan/logic-order-plan-24",
+        "logic-condition-detective/logic-condition-detective-6",
+        "logic-fix-plan/logic-fix-plan-6",
+        "logic-fix-plan/logic-fix-plan-12",
+        "logic-priority-choice/logic-priority-choice-4",
+        "logic-priority-choice/logic-priority-choice-11"
       ]
     },
     {
@@ -8256,7 +8326,12 @@
         "logic-order-plan/logic-order-plan-24",
         "logic-order-plan/logic-order-plan-24",
         "logic-condition-detective/logic-condition-detective-6",
-        "logic-priority-choice/logic-priority-choice-4"
+        "logic-condition-detective/logic-condition-detective-6",
+        "logic-fix-plan/logic-fix-plan-6",
+        "logic-fix-plan/logic-fix-plan-12",
+        "logic-priority-choice/logic-priority-choice-4",
+        "logic-priority-choice/logic-priority-choice-4",
+        "logic-priority-choice/logic-priority-choice-11"
       ]
     },
     {
@@ -8527,7 +8602,11 @@
         "logic-order-plan/logic-order-plan-10",
         "logic-order-plan/logic-order-plan-10",
         "logic-order-plan/logic-order-plan-16",
-        "logic-priority-choice/logic-priority-choice-1"
+        "logic-condition-detective/logic-condition-detective-5",
+        "logic-fix-plan/logic-fix-plan-5",
+        "logic-priority-choice/logic-priority-choice-1",
+        "logic-priority-choice/logic-priority-choice-1",
+        "logic-priority-choice/logic-priority-choice-6"
       ]
     },
     {
@@ -8613,7 +8692,10 @@
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-11",
-        "logic-order-plan/logic-order-plan-22"
+        "logic-order-plan/logic-order-plan-22",
+        "logic-condition-detective/logic-condition-detective-7",
+        "logic-fix-plan/logic-fix-plan-7",
+        "logic-priority-choice/logic-priority-choice-5"
       ]
     },
     {
@@ -9955,6 +10037,88 @@
       ]
     },
     {
+      "id": "object-先看事情发生的地方",
+      "kind": "object",
+      "text": "先看事情发生的地方",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-story-evidence/logic-story-evidence-1",
+        "logic-story-evidence/logic-story-evidence-2",
+        "logic-story-evidence/logic-story-evidence-3",
+        "logic-story-evidence/logic-story-evidence-4",
+        "logic-story-evidence/logic-story-evidence-5",
+        "logic-story-evidence/logic-story-evidence-6",
+        "logic-story-evidence/logic-story-evidence-7",
+        "logic-condition-detective/logic-condition-detective-8",
+        "logic-condition-detective/logic-condition-detective-9",
+        "logic-condition-detective/logic-condition-detective-10",
+        "logic-condition-detective/logic-condition-detective-11",
+        "logic-fix-plan/logic-fix-plan-8",
+        "logic-fix-plan/logic-fix-plan-9",
+        "logic-fix-plan/logic-fix-plan-10",
+        "logic-priority-choice/logic-priority-choice-8",
+        "logic-priority-choice/logic-priority-choice-9",
+        "logic-priority-choice/logic-priority-choice-12"
+      ]
+    },
+    {
+      "id": "object-原场景蛋糕的扇形缺口与桌面近景",
+      "kind": "object",
+      "text": "原场景蛋糕的扇形缺口与桌面近景。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-story-evidence/logic-story-evidence-1",
+        "logic-story-evidence/logic-story-evidence-2",
+        "logic-condition-detective/logic-condition-detective-9",
+        "logic-fix-plan/logic-fix-plan-9",
+        "logic-priority-choice/logic-priority-choice-8"
+      ]
+    },
+    {
+      "id": "object-原场景小猫嘴边和前爪的白色奶油近景",
+      "kind": "object",
+      "text": "原场景小猫嘴边和前爪的白色奶油近景。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-story-evidence/logic-story-evidence-1",
+        "logic-story-evidence/logic-story-evidence-2",
+        "logic-condition-detective/logic-condition-detective-9",
+        "logic-fix-plan/logic-fix-plan-9",
+        "logic-priority-choice/logic-priority-choice-8"
+      ]
+    },
+    {
+      "id": "object-同一厨房远处-小狗蜷在蓝垫子上睡觉-身上未见奶油",
+      "kind": "object",
+      "text": "同一厨房远处，小狗蜷在蓝垫子上睡觉，身上未见奶油。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-story-evidence/logic-story-evidence-1",
+        "logic-story-evidence/logic-story-evidence-2",
+        "logic-condition-detective/logic-condition-detective-9",
+        "logic-fix-plan/logic-fix-plan-9",
+        "logic-priority-choice/logic-priority-choice-8"
+      ]
+    },
+    {
+      "id": "object-同一厨房里的灰兔抱着胡萝卜-身上未见奶油",
+      "kind": "object",
+      "text": "同一厨房里的灰兔抱着胡萝卜，身上未见奶油。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-story-evidence/logic-story-evidence-1",
+        "logic-story-evidence/logic-story-evidence-2",
+        "logic-condition-detective/logic-condition-detective-9",
+        "logic-fix-plan/logic-fix-plan-9",
+        "logic-priority-choice/logic-priority-choice-8"
+      ]
+    },
+    {
       "id": "prompt-比较小猫和小狗-谁身上和蛋糕直接相关的线索更少-这次用排除法",
       "kind": "prompt",
       "text": "比较小猫和小狗，谁身上和蛋糕直接相关的线索更少？这次用排除法。",
@@ -10085,6 +10249,30 @@
       ]
     },
     {
+      "id": "object-修正场景的厨房与门口位置-灰猫清醒站着且未接触蛋糕",
+      "kind": "object",
+      "text": "修正场景的厨房与门口位置，灰猫清醒站着且未接触蛋糕。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-story-evidence/logic-story-evidence-3",
+        "logic-condition-detective/logic-condition-detective-8",
+        "logic-fix-plan/logic-fix-plan-8"
+      ]
+    },
+    {
+      "id": "object-修正场景中门口的灰猫-嘴边和前爪干净-只表示当前状态",
+      "kind": "object",
+      "text": "修正场景中门口的灰猫，嘴边和前爪干净；只表示当前状态。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-story-evidence/logic-story-evidence-3",
+        "logic-condition-detective/logic-condition-detective-8",
+        "logic-fix-plan/logic-fix-plan-8"
+      ]
+    },
+    {
       "id": "prompt-谁可能刚踩过泥地-看脚上和地面的泥巴线索",
       "kind": "prompt",
       "text": "谁可能刚踩过泥地？看脚上和地面的泥巴线索。",
@@ -10118,6 +10306,46 @@
       "id": "parent-问她-脚上有泥说明可能去了哪里",
       "kind": "parent",
       "text": "问她：脚上有泥说明可能去了哪里？",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-story-evidence/logic-story-evidence-4"
+      ]
+    },
+    {
+      "id": "object-原场景小狗沾泥的脚与湿泥地近景",
+      "kind": "object",
+      "text": "原场景小狗沾泥的脚与湿泥地近景。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-story-evidence/logic-story-evidence-4"
+      ]
+    },
+    {
+      "id": "object-原场景地面已有的泥脚印-不推定脚印一定属于哪个角色",
+      "kind": "object",
+      "text": "原场景地面已有的泥脚印，不推定脚印一定属于哪个角色。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-story-evidence/logic-story-evidence-4"
+      ]
+    },
+    {
+      "id": "object-原场景坐在干净圆垫上的灰猫-爪子可见且无泥",
+      "kind": "object",
+      "text": "原场景坐在干净圆垫上的灰猫，爪子可见且无泥。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-story-evidence/logic-story-evidence-4"
+      ]
+    },
+    {
+      "id": "object-原场景抱胡萝卜的白兔-脚下草地可见且未见泥",
+      "kind": "object",
+      "text": "原场景抱胡萝卜的白兔，脚下草地可见且未见泥。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -10199,6 +10427,45 @@
       ]
     },
     {
+      "id": "object-原场景倒下的蓝色水杯和紧邻水洼-不新增脚印或碰撞痕迹",
+      "kind": "object",
+      "text": "原场景倒下的蓝色水杯和紧邻水洼，不新增脚印或碰撞痕迹。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-story-evidence/logic-story-evidence-5",
+        "logic-condition-detective/logic-condition-detective-10",
+        "logic-fix-plan/logic-fix-plan-10",
+        "logic-priority-choice/logic-priority-choice-9"
+      ]
+    },
+    {
+      "id": "object-原场景远处蓝垫子上睡着的小狗及其周围地板",
+      "kind": "object",
+      "text": "原场景远处蓝垫子上睡着的小狗及其周围地板。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-story-evidence/logic-story-evidence-5",
+        "logic-condition-detective/logic-condition-detective-10",
+        "logic-fix-plan/logic-fix-plan-10",
+        "logic-priority-choice/logic-priority-choice-9"
+      ]
+    },
+    {
+      "id": "object-原场景停在窗台上的蓝色小鸟和窗边区域",
+      "kind": "object",
+      "text": "原场景停在窗台上的蓝色小鸟和窗边区域。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-story-evidence/logic-story-evidence-5",
+        "logic-condition-detective/logic-condition-detective-10",
+        "logic-fix-plan/logic-fix-plan-10",
+        "logic-priority-choice/logic-priority-choice-9"
+      ]
+    },
+    {
       "id": "prompt-比较小兔和小猫-谁身上和花直接相关的线索更少-小兔拿着胡萝卜-小猫爪边有花粉-比较这些线索和花的关系",
       "kind": "prompt",
       "text": "比较小兔和小猫，谁身上和花直接相关的线索更少？小兔拿着胡萝卜，小猫爪边有花粉。比较这些线索和花的关系。",
@@ -10249,6 +10516,46 @@
       ]
     },
     {
+      "id": "object-原场景花坛中弯折的花-散落花瓣和土壤",
+      "kind": "object",
+      "text": "原场景花坛中弯折的花、散落花瓣和土壤。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-story-evidence/logic-story-evidence-6"
+      ]
+    },
+    {
+      "id": "object-原场景小猫抬起前爪的黄色花粉近景",
+      "kind": "object",
+      "text": "原场景小猫抬起前爪的黄色花粉近景。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-story-evidence/logic-story-evidence-6"
+      ]
+    },
+    {
+      "id": "object-原场景花坛边的小猫-抬起的前爪有黄色花粉",
+      "kind": "object",
+      "text": "原场景花坛边的小猫，抬起的前爪有黄色花粉。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-story-evidence/logic-story-evidence-6"
+      ]
+    },
+    {
+      "id": "object-原场景抱着胡萝卜的小兔-身上未见花粉",
+      "kind": "object",
+      "text": "原场景抱着胡萝卜的小兔，身上未见花粉。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-story-evidence/logic-story-evidence-6"
+      ]
+    },
+    {
       "id": "prompt-只知道-小狗在房间里-能确定是小狗弄乱玩具吗-一个线索不一定够",
       "kind": "prompt",
       "text": "只知道“小狗在房间里”，能确定是小狗弄乱玩具吗？一个线索不一定够。",
@@ -10292,6 +10599,42 @@
       "id": "choice-小狗肯定没弄乱",
       "kind": "choice",
       "text": "小狗肯定没弄乱",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-story-evidence/logic-story-evidence-7",
+        "logic-condition-detective/logic-condition-detective-11",
+        "logic-priority-choice/logic-priority-choice-12"
+      ]
+    },
+    {
+      "id": "object-原场景玩具散落的游戏房和门口清醒的小狗-没有新增作乱行为",
+      "kind": "object",
+      "text": "原场景玩具散落的游戏房和门口清醒的小狗；没有新增作乱行为。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-story-evidence/logic-story-evidence-7",
+        "logic-condition-detective/logic-condition-detective-11",
+        "logic-priority-choice/logic-priority-choice-12"
+      ]
+    },
+    {
+      "id": "object-原场景小狗清醒地坐在门口-未接触玩具-不是睡觉",
+      "kind": "object",
+      "text": "原场景小狗清醒地坐在门口，未接触玩具；不是睡觉。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-story-evidence/logic-story-evidence-7",
+        "logic-condition-detective/logic-condition-detective-11",
+        "logic-priority-choice/logic-priority-choice-12"
+      ]
+    },
+    {
+      "id": "object-原场景地毯上散落的玩具近景-不增加小狗行为或脚印",
+      "kind": "object",
+      "text": "原场景地毯上散落的玩具近景，不增加小狗行为或脚印。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -10394,6 +10737,38 @@
       ]
     },
     {
+      "id": "object-手脏了-饼干还没拿",
+      "kind": "object",
+      "text": "手脏了，饼干还没拿",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-condition-detective/logic-condition-detective-1",
+        "logic-priority-choice/logic-priority-choice-1"
+      ]
+    },
+    {
+      "id": "object-手还脏着",
+      "kind": "object",
+      "text": "手还脏着",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-condition-detective/logic-condition-detective-1"
+      ]
+    },
+    {
+      "id": "object-吃饼干",
+      "kind": "object",
+      "text": "吃饼干",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-condition-detective/logic-condition-detective-1",
+        "logic-fix-plan/logic-fix-plan-1"
+      ]
+    },
+    {
       "id": "prompt-红灯亮了-现在能走过去吗-先看安全条件够不够",
       "kind": "prompt",
       "text": "红灯亮了，现在能走过去吗？先看安全条件够不够。",
@@ -10437,6 +10812,39 @@
       "id": "choice-慢慢走",
       "kind": "choice",
       "text": "慢慢走",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-condition-detective/logic-condition-detective-2"
+      ]
+    },
+    {
+      "id": "object-行人红灯亮着",
+      "kind": "object",
+      "text": "行人红灯亮着",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-condition-detective/logic-condition-detective-2",
+        "logic-priority-choice/logic-priority-choice-2"
+      ]
+    },
+    {
+      "id": "object-行人红灯",
+      "kind": "object",
+      "text": "行人红灯",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-condition-detective/logic-condition-detective-2",
+        "logic-fix-plan/logic-fix-plan-2",
+        "logic-priority-choice/logic-priority-choice-7"
+      ]
+    },
+    {
+      "id": "object-和大人停下等",
+      "kind": "object",
+      "text": "和大人停下等",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -10517,6 +10925,49 @@
       ]
     },
     {
+      "id": "object-行人绿灯亮-路面已经安全",
+      "kind": "object",
+      "text": "行人绿灯亮，路面已经安全",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-condition-detective/logic-condition-detective-3",
+        "logic-fix-plan/logic-fix-plan-3"
+      ]
+    },
+    {
+      "id": "object-绿灯亮-车辆已停",
+      "kind": "object",
+      "text": "绿灯亮，车辆已停",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-condition-detective/logic-condition-detective-3"
+      ]
+    },
+    {
+      "id": "object-和大人确认安全",
+      "kind": "object",
+      "text": "和大人确认安全",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-condition-detective/logic-condition-detective-3"
+      ]
+    },
+    {
+      "id": "object-和大人走过去",
+      "kind": "object",
+      "text": "和大人走过去",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-condition-detective/logic-condition-detective-3",
+        "logic-fix-plan/logic-fix-plan-3",
+        "logic-priority-choice/logic-priority-choice-2"
+      ]
+    },
+    {
       "id": "prompt-模型河宽-5-格-木板长-3-格-能搭到对岸吗-看距离和材料是否匹配",
       "kind": "prompt",
       "text": "模型河宽 5 格，木板长 3 格，能搭到对岸吗？看距离和材料是否匹配。",
@@ -10580,6 +11031,31 @@
       "id": "choice-不用木板",
       "kind": "choice",
       "text": "不用木板",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-condition-detective/logic-condition-detective-4"
+      ]
+    },
+    {
+      "id": "object-模型河宽5格-木板长3格",
+      "kind": "object",
+      "text": "模型河宽5格，木板长3格",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-condition-detective/logic-condition-detective-4",
+        "logic-condition-detective/logic-condition-detective-4",
+        "logic-condition-detective/logic-condition-detective-12",
+        "logic-fix-plan/logic-fix-plan-4",
+        "logic-fix-plan/logic-fix-plan-11",
+        "logic-priority-choice/logic-priority-choice-10"
+      ]
+    },
+    {
+      "id": "object-3格木板还够不到5格河的对岸",
+      "kind": "object",
+      "text": "3格木板还够不到5格河的对岸",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -10669,6 +11145,54 @@
       ]
     },
     {
+      "id": "object-手已洗好-盘子还没拿",
+      "kind": "object",
+      "text": "手已洗好，盘子还没拿",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-condition-detective/logic-condition-detective-5",
+        "logic-fix-plan/logic-fix-plan-5",
+        "logic-priority-choice/logic-priority-choice-6"
+      ]
+    },
+    {
+      "id": "object-手已经洗好了",
+      "kind": "object",
+      "text": "手已经洗好了",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-condition-detective/logic-condition-detective-5"
+      ]
+    },
+    {
+      "id": "object-把饼干盛到盘子里",
+      "kind": "object",
+      "text": "把饼干盛到盘子里",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-condition-detective/logic-condition-detective-5",
+        "logic-fix-plan/logic-fix-plan-5",
+        "logic-priority-choice/logic-priority-choice-1",
+        "logic-priority-choice/logic-priority-choice-6"
+      ]
+    },
+    {
+      "id": "object-从盘子里拿饼干吃",
+      "kind": "object",
+      "text": "从盘子里拿饼干吃",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-condition-detective/logic-condition-detective-5",
+        "logic-fix-plan/logic-fix-plan-5",
+        "logic-priority-choice/logic-priority-choice-1",
+        "logic-priority-choice/logic-priority-choice-6"
+      ]
+    },
+    {
       "id": "prompt-积木和小车要分开放进两个盒子-下次好找-它们还混在一起-先做什么-收纳的目标是每一类放一个盒子",
       "kind": "prompt",
       "text": "积木和小车要分开放进两个盒子，下次好找。它们还混在一起，先做什么？收纳的目标是每一类放一个盒子。",
@@ -10702,6 +11226,27 @@
       "id": "parent-问她-要找小车时-分开放和混在一起有什么不同",
       "kind": "parent",
       "text": "问她：要找小车时，分开放和混在一起有什么不同？",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-condition-detective/logic-condition-detective-6"
+      ]
+    },
+    {
+      "id": "object-两类玩具还混在一起",
+      "kind": "object",
+      "text": "两类玩具还混在一起",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-condition-detective/logic-condition-detective-6",
+        "logic-priority-choice/logic-priority-choice-4"
+      ]
+    },
+    {
+      "id": "object-混在一起的两类玩具",
+      "kind": "object",
+      "text": "混在一起的两类玩具",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -10746,6 +11291,52 @@
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-condition-detective/logic-condition-detective-7"
+      ]
+    },
+    {
+      "id": "object-桌面模型里-小河挡在玩具兔和胡萝卜之间",
+      "kind": "object",
+      "text": "桌面模型里，小河挡在玩具兔和胡萝卜之间",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-condition-detective/logic-condition-detective-7",
+        "logic-fix-plan/logic-fix-plan-7",
+        "logic-priority-choice/logic-priority-choice-5"
+      ]
+    },
+    {
+      "id": "object-小河挡住了去路",
+      "kind": "object",
+      "text": "小河挡住了去路",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-condition-detective/logic-condition-detective-7"
+      ]
+    },
+    {
+      "id": "object-沿桥面走过去",
+      "kind": "object",
+      "text": "沿桥面走过去",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-condition-detective/logic-condition-detective-7",
+        "logic-fix-plan/logic-fix-plan-7",
+        "logic-priority-choice/logic-priority-choice-5"
+      ]
+    },
+    {
+      "id": "object-到对岸拿胡萝卜",
+      "kind": "object",
+      "text": "到对岸拿胡萝卜",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-condition-detective/logic-condition-detective-7",
+        "logic-fix-plan/logic-fix-plan-7",
+        "logic-priority-choice/logic-priority-choice-5"
       ]
     },
     {
@@ -10982,6 +11573,27 @@
       ]
     },
     {
+      "id": "object-木板够不到另一岸",
+      "kind": "object",
+      "text": "木板够不到另一岸",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-condition-detective/logic-condition-detective-12"
+      ]
+    },
+    {
+      "id": "object-换成够长的木板",
+      "kind": "object",
+      "text": "换成够长的木板",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-condition-detective/logic-condition-detective-12",
+        "logic-priority-choice/logic-priority-choice-10"
+      ]
+    },
+    {
       "id": "object-太短",
       "kind": "object",
       "text": "太短",
@@ -11095,6 +11707,36 @@
       ]
     },
     {
+      "id": "object-泥手直接拿饼干吃了",
+      "kind": "object",
+      "text": "泥手直接拿饼干吃了",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-fix-plan/logic-fix-plan-1"
+      ]
+    },
+    {
+      "id": "object-直接拿饼干",
+      "kind": "object",
+      "text": "直接拿饼干",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-fix-plan/logic-fix-plan-1"
+      ]
+    },
+    {
+      "id": "object-直接吃",
+      "kind": "object",
+      "text": "直接吃",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-fix-plan/logic-fix-plan-1"
+      ]
+    },
+    {
       "id": "prompt-红灯亮了却走过去-应该怎么改-先看哪个动作违反了规则",
       "kind": "prompt",
       "text": "红灯亮了却走过去，应该怎么改？先看哪个动作违反了规则。",
@@ -11155,6 +11797,36 @@
       ]
     },
     {
+      "id": "object-红灯时想迈步",
+      "kind": "object",
+      "text": "红灯时想迈步",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-fix-plan/logic-fix-plan-2"
+      ]
+    },
+    {
+      "id": "object-却想往前走",
+      "kind": "object",
+      "text": "却想往前走",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-fix-plan/logic-fix-plan-2"
+      ]
+    },
+    {
+      "id": "object-先停下等",
+      "kind": "object",
+      "text": "先停下等",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-fix-plan/logic-fix-plan-2"
+      ]
+    },
+    {
       "id": "prompt-行人绿灯亮了-大人已确认车辆停稳-路面安全-接下来可以怎么做-条件已经满足时-要改变动作",
       "kind": "prompt",
       "text": "行人绿灯亮了，大人已确认车辆停稳、路面安全，接下来可以怎么做？条件已经满足时，要改变动作。",
@@ -11198,6 +11870,26 @@
       "id": "choice-改成走过去",
       "kind": "choice",
       "text": "改成走过去",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-fix-plan/logic-fix-plan-3"
+      ]
+    },
+    {
+      "id": "object-绿灯亮-仍停在路边",
+      "kind": "object",
+      "text": "绿灯亮，仍停在路边",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-fix-plan/logic-fix-plan-3"
+      ]
+    },
+    {
+      "id": "object-确认路面安全",
+      "kind": "object",
+      "text": "确认路面安全",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -11275,6 +11967,26 @@
       ]
     },
     {
+      "id": "object-木板另一头没有到对岸",
+      "kind": "object",
+      "text": "木板另一头没有到对岸",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-fix-plan/logic-fix-plan-4"
+      ]
+    },
+    {
+      "id": "object-木板的长度不够",
+      "kind": "object",
+      "text": "木板的长度不够",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-fix-plan/logic-fix-plan-4"
+      ]
+    },
+    {
       "id": "prompt-已经洗好手-约定把饼干盛进盘子再吃-接下来做什么-已经完成的条件不用一直重复",
       "kind": "prompt",
       "text": "已经洗好手，约定把饼干盛进盘子再吃。接下来做什么？已经完成的条件不用一直重复。",
@@ -11318,6 +12030,26 @@
       "id": "choice-继续洗手",
       "kind": "choice",
       "text": "继续洗手",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-fix-plan/logic-fix-plan-5"
+      ]
+    },
+    {
+      "id": "object-已经洗好了",
+      "kind": "object",
+      "text": "已经洗好了",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-fix-plan/logic-fix-plan-5"
+      ]
+    },
+    {
+      "id": "object-还在重复洗手",
+      "kind": "object",
+      "text": "还在重复洗手",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -11385,6 +12117,36 @@
       ]
     },
     {
+      "id": "object-两类玩具混装在一个盒子里",
+      "kind": "object",
+      "text": "两类玩具混装在一个盒子里",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-fix-plan/logic-fix-plan-6"
+      ]
+    },
+    {
+      "id": "object-混放的结果",
+      "kind": "object",
+      "text": "混放的结果",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-fix-plan/logic-fix-plan-6"
+      ]
+    },
+    {
+      "id": "object-取出后先分类",
+      "kind": "object",
+      "text": "取出后先分类",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-fix-plan/logic-fix-plan-6"
+      ]
+    },
+    {
       "id": "object-混在一个盒子",
       "kind": "object",
       "text": "混在一个盒子",
@@ -11428,6 +12190,26 @@
       "id": "parent-问她-玩具兔的目标是什么-挡路的是什么-木板能帮什么忙",
       "kind": "parent",
       "text": "问她：玩具兔的目标是什么？挡路的是什么？木板能帮什么忙？",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-fix-plan/logic-fix-plan-7"
+      ]
+    },
+    {
+      "id": "object-一直站着等",
+      "kind": "object",
+      "text": "一直站着等",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-fix-plan/logic-fix-plan-7"
+      ]
+    },
+    {
+      "id": "object-岸边有够长的木板",
+      "kind": "object",
+      "text": "岸边有够长的木板",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -11783,6 +12565,36 @@
       ]
     },
     {
+      "id": "object-原来的木板太短",
+      "kind": "object",
+      "text": "原来的木板太短",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-fix-plan/logic-fix-plan-11"
+      ]
+    },
+    {
+      "id": "object-换来的还是同样短",
+      "kind": "object",
+      "text": "换来的还是同样短",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-fix-plan/logic-fix-plan-11"
+      ]
+    },
+    {
+      "id": "object-长度没有变-仍然够不到",
+      "kind": "object",
+      "text": "长度没有变，仍然够不到",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-fix-plan/logic-fix-plan-11"
+      ]
+    },
+    {
       "id": "prompt-积木和小车已经分好类-两个空盒子也打开了-下一步怎么做-保留已经做好的部分-再继续完成",
       "kind": "prompt",
       "text": "积木和小车已经分好类，两个空盒子也打开了。下一步怎么做？保留已经做好的部分，再继续完成。",
@@ -11820,6 +12632,28 @@
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-fix-plan/logic-fix-plan-12"
+      ]
+    },
+    {
+      "id": "object-两类玩具已经分开-盒子还空着",
+      "kind": "object",
+      "text": "两类玩具已经分开，盒子还空着",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-fix-plan/logic-fix-plan-12",
+        "logic-priority-choice/logic-priority-choice-11"
+      ]
+    },
+    {
+      "id": "object-已经分好的两类玩具",
+      "kind": "object",
+      "text": "已经分好的两类玩具",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-fix-plan/logic-fix-plan-12",
+        "logic-priority-choice/logic-priority-choice-11"
       ]
     },
     {
@@ -11893,6 +12727,26 @@
       ]
     },
     {
+      "id": "object-先看手上的泥",
+      "kind": "object",
+      "text": "先看手上的泥",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-priority-choice/logic-priority-choice-1"
+      ]
+    },
+    {
+      "id": "object-点心准备好了",
+      "kind": "object",
+      "text": "点心准备好了",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-priority-choice/logic-priority-choice-1"
+      ]
+    },
+    {
       "id": "prompt-和大人一起到了有斑马线和行人信号灯的路口-先看什么-先找决定能不能走的信号",
       "kind": "prompt",
       "text": "和大人一起到了有斑马线和行人信号灯的路口，先看什么？先找决定能不能走的信号。",
@@ -11936,6 +12790,36 @@
       "id": "choice-先走过去",
       "kind": "choice",
       "text": "先走过去",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-priority-choice/logic-priority-choice-2"
+      ]
+    },
+    {
+      "id": "object-来到有行人灯的路口",
+      "kind": "object",
+      "text": "来到有行人灯的路口",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-priority-choice/logic-priority-choice-2"
+      ]
+    },
+    {
+      "id": "object-先看行人灯",
+      "kind": "object",
+      "text": "先看行人灯",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-priority-choice/logic-priority-choice-2"
+      ]
+    },
+    {
+      "id": "object-绿灯亮-和大人确认安全",
+      "kind": "object",
+      "text": "绿灯亮，和大人确认安全",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -12013,6 +12897,46 @@
       ]
     },
     {
+      "id": "object-河宽4格-长板5格-短板2格",
+      "kind": "object",
+      "text": "河宽4格，长板5格、短板2格",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-priority-choice/logic-priority-choice-3"
+      ]
+    },
+    {
+      "id": "object-5格长板",
+      "kind": "object",
+      "text": "5格长板",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-priority-choice/logic-priority-choice-3"
+      ]
+    },
+    {
+      "id": "object-2格短板",
+      "kind": "object",
+      "text": "2格短板",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-priority-choice/logic-priority-choice-3"
+      ]
+    },
+    {
+      "id": "object-5格木板可以搭在两岸",
+      "kind": "object",
+      "text": "5格木板可以搭在两岸",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-priority-choice/logic-priority-choice-3"
+      ]
+    },
+    {
       "id": "prompt-积木和小车要分开放进两个盒子-下次好找-盒子打开了-玩具还混在一起-先做什么-先想哪一步能让两类玩具分开放",
       "kind": "prompt",
       "text": "积木和小车要分开放进两个盒子，下次好找。盒子打开了，玩具还混在一起，先做什么？先想哪一步能让两类玩具分开放。",
@@ -12046,6 +12970,16 @@
       "id": "parent-问她-为什么把全部玩具放进同一个盒子-还没有完成这次的收纳目标",
       "kind": "parent",
       "text": "问她：为什么把全部玩具放进同一个盒子，还没有完成这次的收纳目标？",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-priority-choice/logic-priority-choice-4"
+      ]
+    },
+    {
+      "id": "object-盒子打开了-玩具还混着",
+      "kind": "object",
+      "text": "盒子打开了，玩具还混着",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -12093,6 +13027,26 @@
       ]
     },
     {
+      "id": "object-小河挡住去路",
+      "kind": "object",
+      "text": "小河挡住去路",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-priority-choice/logic-priority-choice-5"
+      ]
+    },
+    {
+      "id": "object-胡萝卜在对岸",
+      "kind": "object",
+      "text": "胡萝卜在对岸",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-priority-choice/logic-priority-choice-5"
+      ]
+    },
+    {
       "id": "prompt-手已洗好-要把饼干盛进盘子再吃-盘子还没拿-下一步先做什么-已经满足的条件不用重复-接着看工具",
       "kind": "prompt",
       "text": "手已洗好，要把饼干盛进盘子再吃。盘子还没拿，下一步先做什么？已经满足的条件不用重复，接着看工具。",
@@ -12126,6 +13080,16 @@
       "id": "parent-问她-已经做过的步骤还要重复吗",
       "kind": "parent",
       "text": "问她：已经做过的步骤还要重复吗？",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-priority-choice/logic-priority-choice-6"
+      ]
+    },
+    {
+      "id": "object-手洗好了-点心还没盛好",
+      "kind": "object",
+      "text": "手洗好了，点心还没盛好",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -12186,6 +13150,36 @@
       "id": "choice-先按红灯停",
       "kind": "choice",
       "text": "先按红灯停",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-priority-choice/logic-priority-choice-7"
+      ]
+    },
+    {
+      "id": "object-车停了-行人灯仍然是红色",
+      "kind": "object",
+      "text": "车停了，行人灯仍然是红色",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-priority-choice/logic-priority-choice-7"
+      ]
+    },
+    {
+      "id": "object-有人想走",
+      "kind": "object",
+      "text": "有人想走",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-priority-choice/logic-priority-choice-7"
+      ]
+    },
+    {
+      "id": "object-先按红灯停下",
+      "kind": "object",
+      "text": "先按红灯停下",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -12356,6 +13350,16 @@
       "id": "parent-问她-哪一种改法真的改变了失败原因",
       "kind": "parent",
       "text": "问她：哪一种改法真的改变了失败原因？",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-priority-choice/logic-priority-choice-10"
+      ]
+    },
+    {
+      "id": "object-失败原因是长度不够",
+      "kind": "object",
+      "text": "失败原因是长度不够",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -12547,6 +13551,16 @@
       ]
     },
     {
+      "id": "object-准备上课-找学习用品",
+      "kind": "object",
+      "text": "准备上课，找学习用品",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-filter/school-day-book"
+      ]
+    },
+    {
       "id": "object-玩具车",
       "kind": "object",
       "text": "玩具车",
@@ -12614,6 +13628,16 @@
         "logic-rule-filter/rule-switch-drink",
         "logic-relation-pairs/thirst-hungry",
         "logic-relation-pairs/reverse-pair"
+      ]
+    },
+    {
+      "id": "object-铅笔散着-要收好",
+      "kind": "object",
+      "text": "铅笔散着，要收好",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-filter/school-day-pencil-case"
       ]
     },
     {
@@ -12692,6 +13716,16 @@
       ]
     },
     {
+      "id": "object-去晒太阳-要戴在头上",
+      "kind": "object",
+      "text": "去晒太阳，要戴在头上",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-filter/outdoor-hat"
+      ]
+    },
+    {
       "id": "object-水壶",
       "kind": "object",
       "text": "水壶",
@@ -12708,6 +13742,7 @@
         "logic-rule-filter/exclude-almost-right",
         "logic-relation-pairs/bottle-water",
         "logic-relation-pairs/bottle-case-analogy",
+        "logic-relation-pairs/thirst-hungry",
         "logic-relation-pairs/thirst-hungry",
         "logic-relation-pairs/reverse-pair"
       ]
@@ -12746,6 +13781,16 @@
       "id": "parent-问她-帽子为什么也有一点相关-但不是最好答案",
       "kind": "parent",
       "text": "问她：帽子为什么也有一点相关，但不是最好答案？",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-filter/rainy-day-raincoat"
+      ]
+    },
+    {
+      "id": "object-外面下雨-需要防雨",
+      "kind": "object",
+      "text": "外面下雨，需要防雨",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -12811,6 +13856,16 @@
       ]
     },
     {
+      "id": "object-路上口渴-要能喝水",
+      "kind": "object",
+      "text": "路上口渴，要能喝水",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-filter/need-drink"
+      ]
+    },
+    {
       "id": "prompt-中午要吃点心-先装能放食物的东西-选哪一个-先找和食物直接相关的物品",
       "kind": "prompt",
       "text": "中午要吃点心，先装能放食物的东西，选哪一个？先找和食物直接相关的物品。",
@@ -12844,6 +13899,16 @@
       "id": "parent-问她-饭盒和水壶哪里像-哪里不一样",
       "kind": "parent",
       "text": "问她：饭盒和水壶哪里像？哪里不一样？",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-filter/lunch-box"
+      ]
+    },
+    {
+      "id": "object-点心要带出门",
+      "kind": "object",
+      "text": "点心要带出门",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -12891,6 +13956,26 @@
       ]
     },
     {
+      "id": "object-去上课-带学习用品",
+      "kind": "object",
+      "text": "去上课，带学习用品",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-filter/study-not-toy"
+      ]
+    },
+    {
+      "id": "object-不要玩具",
+      "kind": "object",
+      "text": "不要玩具",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-filter/study-not-toy"
+      ]
+    },
+    {
       "id": "prompt-要去操场晒太阳-规则是-带遮阳用的-不带装点心的盒子-选哪一个-先看能不能遮阳-再排除装点心的容器",
       "kind": "prompt",
       "text": "要去操场晒太阳，规则是：带遮阳用的，不带装点心的盒子。选哪一个？先看能不能遮阳，再排除装点心的容器。",
@@ -12924,6 +14009,26 @@
       "id": "parent-问她-饭盒为什么相关-但被第二条规则排除了",
       "kind": "parent",
       "text": "问她：饭盒为什么相关，但被第二条规则排除了？",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-filter/outside-not-food"
+      ]
+    },
+    {
+      "id": "object-去操场晒太阳",
+      "kind": "object",
+      "text": "去操场晒太阳",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-filter/outside-not-food"
+      ]
+    },
+    {
+      "id": "object-不带装点心的盒子",
+      "kind": "object",
+      "text": "不带装点心的盒子",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -12971,6 +14076,16 @@
       ]
     },
     {
+      "id": "object-要穿在身上-也要防雨",
+      "kind": "object",
+      "text": "要穿在身上，也要防雨",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-filter/rain-and-wear"
+      ]
+    },
+    {
       "id": "prompt-要把铅笔收好-规则是-能装铅笔-还能合上防止散落-选哪一个-两个条件都要满足-装得进去-也能关好",
       "kind": "prompt",
       "text": "要把铅笔收好，规则是：能装铅笔，还能合上防止散落。选哪一个？两个条件都要满足：装得进去，也能关好。",
@@ -13004,6 +14119,26 @@
       "id": "parent-问她-如果只说学习用品-书本可不可以-为什么这题不选它",
       "kind": "parent",
       "text": "问她：如果只说学习用品，书本可不可以？为什么这题不选它？",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-filter/small-hard-safe"
+      ]
+    },
+    {
+      "id": "object-铅笔要收好-不能散落",
+      "kind": "object",
+      "text": "铅笔要收好，不能散落",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-filter/small-hard-safe"
+      ]
+    },
+    {
+      "id": "object-合上笔袋-铅笔不会散落",
+      "kind": "object",
+      "text": "合上笔袋，铅笔不会散落",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -13051,6 +14186,16 @@
       ]
     },
     {
+      "id": "object-现在换成补充水分",
+      "kind": "object",
+      "text": "现在换成补充水分",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-filter/rule-switch-drink"
+      ]
+    },
+    {
       "id": "prompt-规则是-可以玩-但今天不能带去学校-谁应该留下-这次不是选要装的-而是选应该留下的",
       "kind": "prompt",
       "text": "规则是：可以玩，但今天不能带去学校。谁应该留下？这次不是选要装的，而是选应该留下的。",
@@ -13084,6 +14229,16 @@
       "id": "parent-问她-这题的问题方向和前面一样吗",
       "kind": "parent",
       "text": "问她：这题的问题方向和前面一样吗？",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-filter/rule-switch-no-toy"
+      ]
+    },
+    {
+      "id": "object-去上课-这次选应该留下的",
+      "kind": "object",
+      "text": "去上课，这次选应该留下的",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -13131,6 +14286,26 @@
       ]
     },
     {
+      "id": "object-现在-已经口渴",
+      "kind": "object",
+      "text": "现在：已经口渴",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-filter/two-true-one-better"
+      ]
+    },
+    {
+      "id": "object-休息时-再吃点心",
+      "kind": "object",
+      "text": "休息时：再吃点心",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-filter/two-true-one-better"
+      ]
+    },
+    {
       "id": "prompt-下一节是阅读课-要翻开来看故事-先装哪一个-按这节课的任务选-要能翻开读故事",
       "kind": "prompt",
       "text": "下一节是阅读课，要翻开来看故事。先装哪一个？按这节课的任务选，要能翻开读故事。",
@@ -13164,6 +14339,16 @@
       "id": "parent-问她-这三个哪里都相关-哪一个最符合完整规则",
       "kind": "parent",
       "text": "问她：这三个哪里都相关？哪一个最符合完整规则？",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-rule-filter/exclude-almost-right"
+      ]
+    },
+    {
+      "id": "object-下一节要翻开看故事",
+      "kind": "object",
+      "text": "下一节要翻开看故事",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -13523,6 +14708,7 @@
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-relation-pairs/key-door",
+        "logic-relation-pairs/door-river-tool",
         "logic-relation-pairs/door-river-tool"
       ]
     },
@@ -13699,6 +14885,36 @@
       ]
     },
     {
+      "id": "object-太阳大",
+      "kind": "object",
+      "text": "太阳大",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-relation-pairs/sun-raincoat-analogy"
+      ]
+    },
+    {
+      "id": "object-戴帽子",
+      "kind": "object",
+      "text": "戴帽子",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-relation-pairs/sun-raincoat-analogy"
+      ]
+    },
+    {
+      "id": "object-下雨了",
+      "kind": "object",
+      "text": "下雨了",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-relation-pairs/sun-raincoat-analogy"
+      ]
+    },
+    {
       "id": "prompt-口渴配水壶-饿了配什么-先看需要-再找能解决需要的东西",
       "kind": "prompt",
       "text": "口渴配水壶，饿了配什么？先看需要，再找能解决需要的东西。",
@@ -13732,6 +14948,26 @@
       "id": "parent-问她-这题是按物品长相配-还是按需要配",
       "kind": "parent",
       "text": "问她：这题是按物品长相配，还是按需要配？",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-relation-pairs/thirst-hungry"
+      ]
+    },
+    {
+      "id": "object-口渴了",
+      "kind": "object",
+      "text": "口渴了",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-relation-pairs/thirst-hungry"
+      ]
+    },
+    {
+      "id": "object-饿了",
+      "kind": "object",
+      "text": "饿了",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -13789,6 +15025,26 @@
         "logic-space-bridge/logic-space-bridge-4",
         "logic-same-kind-detective/logic-same-kind-detective-5",
         "logic-same-kind-detective/logic-same-kind-detective-11"
+      ]
+    },
+    {
+      "id": "object-打开门",
+      "kind": "object",
+      "text": "打开门",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-relation-pairs/door-river-tool"
+      ]
+    },
+    {
+      "id": "object-桌面小河挡住去路",
+      "kind": "object",
+      "text": "桌面小河挡住去路",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-relation-pairs/door-river-tool"
       ]
     },
     {

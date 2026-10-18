@@ -41,7 +41,7 @@ small enough to turn into a Spec Kit feature.
 
 ## P1
 
-- Observe parent-child play of the full 045 order-plan story group and calibrate the 2.4-second step pace. Reduced-motion behavior has code review coverage; repeat with the OS preference enabled on a suitable acceptance machine without changing a user's personal settings during routine QA.
+- Observe parent-child play of the 045 order-plan story group and 046 Logic House visual corrections and calibrate the 2.4-second step pace. Reduced-motion behavior has code review coverage; repeat with the OS preference enabled on a suitable acceptance machine without changing a user's personal settings during routine QA.
 
 - Observe parent-child play of the 043 corrections, especially two-condition distractors, word-picture support and the front/right-side viewing arrows. Automated correctness and adult UI checks do not establish reading or reasoning load for children.
 
@@ -76,24 +76,14 @@ small enough to turn into a Spec Kit feature.
 - Convert future feature work to the full Spec Kit cycle: `spec.md`, `plan.md`,
   `tasks.md`, implementation, verification, changelog update.
 - Add automated audit coverage for image source-file pairing where practical.
-- Review remaining non-侦探 and non-规律火车 `VisualToken` fallbacks such as
-  abstract symbols, action phrases, and location phrases, and decide which need
-  raster assets.
+- Keep the 046 Logic House visual ledger as the baseline when reviewing remaining `VisualToken` fallbacks in other sections. Logic House actions, exact option pictures and task conditions are covered by 046; avoid treating every geometric symbol as a missing raster asset.
 - Extend automated UI smoke coverage of persisted navigation from the service
   regressions and native group/section/relaunch checks in `041-group-resume`.
   The per-group resume feature itself is implemented and installed.
 - Add an automated all-48-round 图形工坊 screenshot review that checks stem-option
   spatial relationships, black silhouette rendering, and local Edge voice
   coverage beyond the current representative smoke checks.
-- Run a broader logic-house completion review after the audited clusters
-  `logic-pattern-train`, `logic-sorter-switch`,
-  `logic-same-kind-detective`, `logic-visual-match`,
-  `logic-difference-detective`, `logic-block-height-map`,
-  `logic-three-view-blocks`, `logic-route-steps`, `logic-address-map`,
-  `logic-matrix-puzzle`, `logic-position-map`, `logic-memory-camera`, and
-  `logic-order-plan`; include a visual-surface pass like
-  `015-map-visual-surface-quality`, and add targeted audits for any remaining cluster whose
-  picture, text, audio, option quality, or parent explanation is still weak.
+
 
 ## P2
 

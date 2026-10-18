@@ -1,0 +1,24 @@
+{
+  "mode": "exact-scene-crop",
+  "scene": "/images/scenes/dog-room-weak-clue.png",
+  "sceneSha256": "9fe69b4efa7e30f5f53f3857cc5478b2834eca085c2c8efafe1174b450692873",
+  "coordinateSpace": {
+    "width": 1200,
+    "height": 675
+  },
+  "crop": {
+    "left": 0,
+    "top": 400,
+    "width": 1080,
+    "height": 270
+  },
+  "output": "public/images/items/logic-046-evidence-weakToys.png",
+  "resize": {
+    "width": 600,
+    "height": 600,
+    "fit": "contain",
+    "background": "#fffaf0"
+  },
+  "pixelsPolicy": "Only crop and resize original scene pixels. No generated evidence, no retouching, no extra footprints or behavior.",
+  "alt": "原场景地毯上散落的玩具近景，不增加小狗行为或脚印。"
+}

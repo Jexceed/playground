@@ -1,0 +1,487 @@
+{
+  "model": "gpt-6.1-sol",
+  "tool": "built-in image_gen for one scene edit; sharp exact original-scene crops for cards",
+  "scenes": {
+    "cakeKitchen": {
+      "src": "/images/scenes/cake-evidence-kitchen.png",
+      "alt": "厨房里蛋糕有缺口，小猫嘴边有奶油，小狗睡着，小兔抱着胡萝卜。"
+    },
+    "spilledWater": {
+      "src": "/images/scenes/spilled-water-room.png",
+      "alt": "倒下的蓝杯和水洼在地板上，小狗在远处睡觉，小鸟在窗台上。"
+    },
+    "flowerGarden": {
+      "src": "/images/scenes/flower-evidence-garden.png",
+      "alt": "花坛边有弯折的花和脚印，小猫爪边有黄色花粉，小兔抱着胡萝卜。"
+    },
+    "muddyYard": {
+      "src": "/images/scenes/muddy-paws-yard.png",
+      "alt": "小狗脚上有泥并站在泥地里，小猫在干净垫子上，小兔抱着胡萝卜。"
+    },
+    "dogRoom": {
+      "src": "/images/scenes/dog-room-weak-clue.png",
+      "alt": "玩具散落在游戏房里，小狗清醒地坐在门口，当前没有接触玩具。"
+    },
+    "catKitchen": {
+      "src": "/images/scenes/logic-046-cat-kitchen.png",
+      "alt": "厨房里主蛋糕少了一块，前景小盘是空的，小猫站在门口且嘴边和爪子干净。"
+    }
+  },
+  "cards": {
+    "cakeCat": {
+      "src": "/images/items/logic-046-evidence-cakeCat.png",
+      "alt": "同一厨房里的小猫，嘴边和前爪有可见奶油。"
+    },
+    "cakeDog": {
+      "src": "/images/items/logic-046-evidence-cakeDog.png",
+      "alt": "同一厨房远处，小狗蜷在蓝垫子上睡觉，身上未见奶油。"
+    },
+    "cakeRabbit": {
+      "src": "/images/items/logic-046-evidence-cakeRabbit.png",
+      "alt": "同一厨房里的灰兔抱着胡萝卜，身上未见奶油。"
+    },
+    "cakeCream": {
+      "src": "/images/items/logic-046-evidence-cakeCream.png",
+      "alt": "原场景小猫嘴边和前爪的白色奶油近景。"
+    },
+    "cakeKitchenContext": {
+      "src": "/images/items/logic-046-evidence-cakeKitchenContext.png",
+      "alt": "同一厨房全景，说明各角色在厨房中的位置；不增加行为证据。"
+    },
+    "cakeMissing": {
+      "src": "/images/items/logic-046-evidence-cakeMissing.png",
+      "alt": "原场景蛋糕的扇形缺口与桌面近景。"
+    },
+    "spillCup": {
+      "src": "/images/items/logic-046-evidence-spillCup.png",
+      "alt": "原场景倒下的蓝色水杯和紧邻水洼，不新增脚印或碰撞痕迹。"
+    },
+    "spillDog": {
+      "src": "/images/items/logic-046-evidence-spillDog.png",
+      "alt": "原场景远处蓝垫子上睡着的小狗及其周围地板。"
+    },
+    "spillBird": {
+      "src": "/images/items/logic-046-evidence-spillBird.png",
+      "alt": "原场景停在窗台上的蓝色小鸟和窗边区域。"
+    },
+    "flowerCat": {
+      "src": "/images/items/logic-046-evidence-flowerCat.png",
+      "alt": "原场景花坛边的小猫，抬起的前爪有黄色花粉。"
+    },
+    "flowerRabbit": {
+      "src": "/images/items/logic-046-evidence-flowerRabbit.png",
+      "alt": "原场景抱着胡萝卜的小兔，身上未见花粉。"
+    },
+    "flowerPollen": {
+      "src": "/images/items/logic-046-evidence-flowerPollen.png",
+      "alt": "原场景小猫抬起前爪的黄色花粉近景。"
+    },
+    "flowerBent": {
+      "src": "/images/items/logic-046-evidence-flowerBent.png",
+      "alt": "原场景花坛中弯折的花、散落花瓣和土壤。"
+    },
+    "mudDog": {
+      "src": "/images/items/logic-046-evidence-mudDog.png",
+      "alt": "原场景站在泥地里的小狗，四脚沾有泥。"
+    },
+    "mudCat": {
+      "src": "/images/items/logic-046-evidence-mudCat.png",
+      "alt": "原场景坐在干净圆垫上的灰猫，爪子可见且无泥。"
+    },
+    "mudRabbit": {
+      "src": "/images/items/logic-046-evidence-mudRabbit.png",
+      "alt": "原场景抱胡萝卜的白兔，脚下草地可见且未见泥。"
+    },
+    "mudPaws": {
+      "src": "/images/items/logic-046-evidence-mudPaws.png",
+      "alt": "原场景小狗沾泥的脚与湿泥地近景。"
+    },
+    "mudTracks": {
+      "src": "/images/items/logic-046-evidence-mudTracks.png",
+      "alt": "原场景地面已有的泥脚印，不推定脚印一定属于哪个角色。"
+    },
+    "weakCat": {
+      "src": "/images/items/logic-046-evidence-weakCat.png",
+      "alt": "修正场景中门口的灰猫，嘴边和前爪干净；只表示当前状态。"
+    },
+    "weakCatContext": {
+      "src": "/images/items/logic-046-evidence-weakCatContext.png",
+      "alt": "修正场景的厨房与门口位置，灰猫清醒站着且未接触蛋糕。"
+    },
+    "weakDog": {
+      "src": "/images/items/logic-046-evidence-weakDog.png",
+      "alt": "原场景小狗清醒地坐在门口，未接触玩具；不是睡觉。"
+    },
+    "weakDogContext": {
+      "src": "/images/items/logic-046-evidence-weakDogContext.png",
+      "alt": "原场景玩具散落的游戏房和门口清醒的小狗；没有新增作乱行为。"
+    },
+    "weakToys": {
+      "src": "/images/items/logic-046-evidence-weakToys.png",
+      "alt": "原场景地毯上散落的玩具近景，不增加小狗行为或脚印。"
+    }
+  },
+  "rounds": [
+    {
+      "id": "logic-story-evidence-1",
+      "scene": "cakeKitchen",
+      "evidenceFrames": [
+        "cakeMissing",
+        "cakeCream",
+        "cakeDog",
+        "cakeRabbit"
+      ],
+      "choiceImages": {
+        "cat": "cakeCat",
+        "dog": "cakeDog",
+        "rabbit": "cakeRabbit"
+      },
+      "conceptChoices": {}
+    },
+    {
+      "id": "logic-story-evidence-2",
+      "scene": "cakeKitchen",
+      "evidenceFrames": [
+        "cakeMissing",
+        "cakeCream",
+        "cakeDog",
+        "cakeRabbit"
+      ],
+      "choiceImages": {
+        "cat": "cakeCat",
+        "dog": "cakeDog"
+      },
+      "conceptChoices": {
+        "same": {
+          "symbol": "equal",
+          "meaning": "两者一样",
+          "contextCard": null,
+          "renderPolicy": "中性结论/提问符号加原场景角色图与原有文字。不使用绿色正确勾，不把结论画成已发生行为。"
+        }
+      }
+    },
+    {
+      "id": "logic-story-evidence-3",
+      "scene": "catKitchen",
+      "evidenceFrames": [
+        "weakCatContext",
+        "weakCat"
+      ],
+      "choiceImages": {},
+      "conceptChoices": {
+        "not-yet": {
+          "symbol": "question",
+          "meaning": "还需要更多线索",
+          "contextCard": "weakCat",
+          "renderPolicy": "中性结论/提问符号加原场景角色图与原有文字。不使用绿色正确勾，不把结论画成已发生行为。"
+        },
+        "enough": {
+          "symbol": "statement",
+          "meaning": "证据已经够了",
+          "contextCard": "weakCat",
+          "renderPolicy": "中性结论/提问符号加原场景角色图与原有文字。不使用绿色正确勾，不把结论画成已发生行为。"
+        },
+        "cat-no": {
+          "symbol": "negative-claim",
+          "meaning": "小猫一定没吃",
+          "contextCard": "weakCat",
+          "renderPolicy": "中性结论/提问符号加原场景角色图与原有文字。不使用绿色正确勾，不把结论画成已发生行为。"
+        }
+      }
+    },
+    {
+      "id": "logic-story-evidence-4",
+      "scene": "muddyYard",
+      "evidenceFrames": [
+        "mudPaws",
+        "mudTracks",
+        "mudCat",
+        "mudRabbit"
+      ],
+      "choiceImages": {
+        "rabbit": "mudRabbit",
+        "cat": "mudCat",
+        "dog": "mudDog"
+      },
+      "conceptChoices": {}
+    },
+    {
+      "id": "logic-story-evidence-5",
+      "scene": "spilledWater",
+      "evidenceFrames": [
+        "spillCup",
+        "spillDog",
+        "spillBird"
+      ],
+      "choiceImages": {
+        "dog-area": "spillDog",
+        "bird-area": "spillBird",
+        "cup-area": "spillCup"
+      },
+      "conceptChoices": {}
+    },
+    {
+      "id": "logic-story-evidence-6",
+      "scene": "flowerGarden",
+      "evidenceFrames": [
+        "flowerBent",
+        "flowerPollen",
+        "flowerCat",
+        "flowerRabbit"
+      ],
+      "choiceImages": {
+        "rabbit": "flowerRabbit",
+        "cat": "flowerCat"
+      },
+      "conceptChoices": {
+        "same": {
+          "symbol": "equal",
+          "meaning": "两者一样",
+          "contextCard": null,
+          "renderPolicy": "中性结论/提问符号加原场景角色图与原有文字。不使用绿色正确勾，不把结论画成已发生行为。"
+        }
+      }
+    },
+    {
+      "id": "logic-story-evidence-7",
+      "scene": "dogRoom",
+      "evidenceFrames": [
+        "weakDogContext",
+        "weakDog",
+        "weakToys"
+      ],
+      "choiceImages": {},
+      "conceptChoices": {
+        "enough": {
+          "symbol": "statement",
+          "meaning": "证据已经够了",
+          "contextCard": "weakDog",
+          "renderPolicy": "中性结论/提问符号加原场景角色图与原有文字。不使用绿色正确勾，不把结论画成已发生行为。"
+        },
+        "not-yet": {
+          "symbol": "question",
+          "meaning": "还需要更多线索",
+          "contextCard": "weakDog",
+          "renderPolicy": "中性结论/提问符号加原场景角色图与原有文字。不使用绿色正确勾，不把结论画成已发生行为。"
+        },
+        "dog-no": {
+          "symbol": "negative-claim",
+          "meaning": "小狗肯定没弄乱",
+          "contextCard": "weakDog",
+          "renderPolicy": "中性结论/提问符号加原场景角色图与原有文字。不使用绿色正确勾，不把结论画成已发生行为。"
+        }
+      }
+    },
+    {
+      "id": "logic-condition-detective-8",
+      "scene": "catKitchen",
+      "evidenceFrames": [
+        "weakCatContext",
+        "weakCat"
+      ],
+      "choiceImages": {},
+      "conceptChoices": {
+        "enough": {
+          "symbol": "statement",
+          "meaning": "证据已经够了",
+          "contextCard": "weakCat",
+          "renderPolicy": "中性结论/提问符号加原场景角色图与原有文字。不使用绿色正确勾，不把结论画成已发生行为。"
+        },
+        "cat-no": {
+          "symbol": "negative-claim",
+          "meaning": "小猫一定没吃",
+          "contextCard": "weakCat",
+          "renderPolicy": "中性结论/提问符号加原场景角色图与原有文字。不使用绿色正确勾，不把结论画成已发生行为。"
+        },
+        "not-yet": {
+          "symbol": "question",
+          "meaning": "还需要更多线索",
+          "contextCard": "weakCat",
+          "renderPolicy": "中性结论/提问符号加原场景角色图与原有文字。不使用绿色正确勾，不把结论画成已发生行为。"
+        }
+      }
+    },
+    {
+      "id": "logic-condition-detective-9",
+      "scene": "cakeKitchen",
+      "evidenceFrames": [
+        "cakeMissing",
+        "cakeCream",
+        "cakeDog",
+        "cakeRabbit"
+      ],
+      "choiceImages": {
+        "dog": "cakeDog",
+        "cat": "cakeCat",
+        "rabbit": "cakeRabbit"
+      },
+      "conceptChoices": {}
+    },
+    {
+      "id": "logic-condition-detective-10",
+      "scene": "spilledWater",
+      "evidenceFrames": [
+        "spillCup",
+        "spillDog",
+        "spillBird"
+      ],
+      "choiceImages": {
+        "far-dog": "spillDog",
+        "cup-area": "spillCup",
+        "bird-window": "spillBird"
+      },
+      "conceptChoices": {}
+    },
+    {
+      "id": "logic-condition-detective-11",
+      "scene": "dogRoom",
+      "evidenceFrames": [
+        "weakDogContext",
+        "weakDog",
+        "weakToys"
+      ],
+      "choiceImages": {},
+      "conceptChoices": {
+        "not-yet": {
+          "symbol": "question",
+          "meaning": "还需要更多线索",
+          "contextCard": "weakDog",
+          "renderPolicy": "中性结论/提问符号加原场景角色图与原有文字。不使用绿色正确勾，不把结论画成已发生行为。"
+        },
+        "enough": {
+          "symbol": "statement",
+          "meaning": "证据已经够了",
+          "contextCard": "weakDog",
+          "renderPolicy": "中性结论/提问符号加原场景角色图与原有文字。不使用绿色正确勾，不把结论画成已发生行为。"
+        },
+        "dog-no": {
+          "symbol": "negative-claim",
+          "meaning": "小狗肯定没弄乱",
+          "contextCard": "weakDog",
+          "renderPolicy": "中性结论/提问符号加原场景角色图与原有文字。不使用绿色正确勾，不把结论画成已发生行为。"
+        }
+      }
+    },
+    {
+      "id": "logic-fix-plan-8",
+      "scene": "catKitchen",
+      "evidenceFrames": [
+        "weakCatContext",
+        "weakCat"
+      ],
+      "choiceImages": {},
+      "conceptChoices": {
+        "enough": {
+          "symbol": "statement",
+          "meaning": "证据已经够了",
+          "contextCard": "weakCat",
+          "renderPolicy": "中性结论/提问符号加原场景角色图与原有文字。不使用绿色正确勾，不把结论画成已发生行为。"
+        },
+        "not-yet": {
+          "symbol": "question",
+          "meaning": "还需要更多线索",
+          "contextCard": "weakCat",
+          "renderPolicy": "中性结论/提问符号加原场景角色图与原有文字。不使用绿色正确勾，不把结论画成已发生行为。"
+        },
+        "cat-no": {
+          "symbol": "negative-claim",
+          "meaning": "小猫一定没吃",
+          "contextCard": "weakCat",
+          "renderPolicy": "中性结论/提问符号加原场景角色图与原有文字。不使用绿色正确勾，不把结论画成已发生行为。"
+        }
+      }
+    },
+    {
+      "id": "logic-fix-plan-9",
+      "scene": "cakeKitchen",
+      "evidenceFrames": [
+        "cakeMissing",
+        "cakeCream",
+        "cakeDog",
+        "cakeRabbit"
+      ],
+      "choiceImages": {
+        "dog": "cakeDog",
+        "cat": "cakeCat",
+        "rabbit": "cakeRabbit"
+      },
+      "conceptChoices": {}
+    },
+    {
+      "id": "logic-fix-plan-10",
+      "scene": "spilledWater",
+      "evidenceFrames": [
+        "spillCup",
+        "spillDog",
+        "spillBird"
+      ],
+      "choiceImages": {
+        "cup-area": "spillCup",
+        "far-dog": "spillDog",
+        "bird-window": "spillBird"
+      },
+      "conceptChoices": {}
+    },
+    {
+      "id": "logic-priority-choice-8",
+      "scene": "cakeKitchen",
+      "evidenceFrames": [
+        "cakeMissing",
+        "cakeCream",
+        "cakeDog",
+        "cakeRabbit"
+      ],
+      "choiceImages": {
+        "kitchen": "cakeKitchenContext",
+        "cream": "cakeCream",
+        "far": "cakeDog"
+      },
+      "conceptChoices": {}
+    },
+    {
+      "id": "logic-priority-choice-9",
+      "scene": "spilledWater",
+      "evidenceFrames": [
+        "spillCup",
+        "spillDog",
+        "spillBird"
+      ],
+      "choiceImages": {
+        "far-dog": "spillDog",
+        "cup-area": "spillCup",
+        "window-bird": "spillBird"
+      },
+      "conceptChoices": {}
+    },
+    {
+      "id": "logic-priority-choice-12",
+      "scene": "dogRoom",
+      "evidenceFrames": [
+        "weakDogContext",
+        "weakDog",
+        "weakToys"
+      ],
+      "choiceImages": {},
+      "conceptChoices": {
+        "dog-certain": {
+          "symbol": "certain-claim",
+          "meaning": "直接断言小狗弄乱",
+          "contextCard": "weakDog",
+          "renderPolicy": "中性结论/提问符号加原场景角色图与原有文字。不使用绿色正确勾，不把结论画成已发生行为。"
+        },
+        "dog-no": {
+          "symbol": "negative-claim",
+          "meaning": "小狗肯定没弄乱",
+          "contextCard": "weakDog",
+          "renderPolicy": "中性结论/提问符号加原场景角色图与原有文字。不使用绿色正确勾，不把结论画成已发生行为。"
+        },
+        "more-clues": {
+          "symbol": "search",
+          "meaning": "先找更多线索",
+          "contextCard": "weakDog",
+          "renderPolicy": "中性结论/提问符号加原场景角色图与原有文字。不使用绿色正确勾，不把结论画成已发生行为。"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "mode": "exact-scene-crop",
+  "scene": "/images/scenes/logic-046-cat-kitchen.png",
+  "sceneSha256": "1da1ba7a9b3b23f58b94ca36fd94c8fda40a89283f7ce27e4f216da59ca24a65",
+  "coordinateSpace": {
+    "width": 1200,
+    "height": 675
+  },
+  "crop": {
+    "left": 805,
+    "top": 260,
+    "width": 210,
+    "height": 240
+  },
+  "output": "public/images/items/logic-046-evidence-weakCat.png",
+  "resize": {
+    "width": 600,
+    "height": 600,
+    "fit": "contain",
+    "background": "#fffaf0"
+  },
+  "pixelsPolicy": "Only crop and resize original scene pixels. No generated evidence, no retouching, no extra footprints or behavior.",
+  "alt": "修正场景中门口的灰猫，嘴边和前爪干净；只表示当前状态。"
+}

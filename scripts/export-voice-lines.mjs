@@ -4,6 +4,7 @@ import { loadGameData } from "./lib/load-game-data.mjs";
 import { loadTypeScriptModule } from "./lib/load-ts-module.mjs";
 
 const { games, activitySets, activityVoiceLines } = await loadGameData();
+const { logicSupportVoiceLines } = await loadTypeScriptModule("src/data/logicLessonVisuals.ts");
 const { orderStorySteps } = await loadTypeScriptModule("src/data/orderStories.ts");
 const { prepareSpeechText } = await loadTypeScriptModule("src/speech-pronunciation.ts");
 
@@ -152,6 +153,7 @@ for (const game of games) {
       ...(round.matrix?.cells ?? []).flat(),
       ...(round.memory?.items ?? []),
     ];
+    for (const label of logicSupportVoiceLines(game.id, round)) add("object", label, context);
     if (round.sequenceStory) {
       for (const step of orderStorySteps(round, true)) add("object", step.label, context);
     }

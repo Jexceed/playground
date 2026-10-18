@@ -1,0 +1,39 @@
+{
+  "model": "gpt-6.1-sol",
+  "scenes": {
+    "trafficGreen": {
+      "src": "/images/scenes/logic-046-life-trafficGreen.png",
+      "alt": "行人绿灯亮，汽车停在停止线后；大人牵孩子仍站在路缘后，还没有开始过马路。"
+    },
+    "dirtyEating": {
+      "src": "/images/scenes/logic-046-life-dirtyEating.png",
+      "alt": "孩子两只手仍沾着明显泥污，正用泥手把饼干拿到张开的嘴边；水龙头关闭，还没有洗手。"
+    },
+    "mixedBox": {
+      "src": "/images/scenes/logic-046-life-mixedBox.png",
+      "alt": "积木和四辆小车混装在左边积木图案盒中，右边小车图案盒为空；孩子双手放在膝上，尚未取出或分类。"
+    },
+    "redAttempt": {
+      "src": "/images/scenes/logic-046-life-redAttempt.png",
+      "alt": "行人红灯仍亮，孩子想抬脚迈步，被大人牵住，仍在人行道的路缘后；汽车停在停止线后。"
+    }
+  },
+  "cards": {
+    "cleanWashAgain": {
+      "src": "/images/items/logic-046-life-cleanWashAgain.png",
+      "alt": "已经干净的双手又在水龙头下搓洗，皮肤没有泥污。"
+    },
+    "dirtyMoreCookies": {
+      "src": "/images/items/logic-046-life-dirtyMoreCookies.png",
+      "alt": "孩子两手仍有泥，已经拿着两块饼干，又伸泥手拿更多饼干，还没有洗手。"
+    },
+    "slowRed": {
+      "src": "/images/items/logic-046-life-slowRed.png",
+      "alt": "行人红灯时孩子想小步慢挪，大人牵住孩子，双脚仍在路缘后的人行道上。"
+    },
+    "takeOutSort": {
+      "src": "/images/items/logic-046-life-takeOutSort.png",
+      "alt": "孩子从混装盒中取出积木，在盒外把积木和小车分成两堆；原盒仍有部分混杂玩具，另一盒为空。"
+    }
+  }
+}

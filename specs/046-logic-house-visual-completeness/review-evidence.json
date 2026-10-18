@@ -1,0 +1,1390 @@
+{
+  "date": "2026-10-19",
+  "scope": {
+    "rounds": 17,
+    "sets": {
+      "logic-story-evidence": 7,
+      "logic-condition-detective": 4,
+      "logic-fix-plan": 3,
+      "logic-priority-choice": 3
+    },
+    "sharedOriginalScenes": 6
+  },
+  "reviewMethod": "Read frozen logic-rounds.json and live VisualToken/ProgressiveSetGame/imageGallery; visually inspect all six runtime scenes and targeted crops. Source dimensions verified; no UI checks claimed.",
+  "sourceImages": {
+    "cakeKitchen": {
+      "src": "/images/scenes/cake-evidence-kitchen.png",
+      "alt": "厨房里蛋糕有缺口，小猫嘴边有奶油，小狗睡着，小兔抱着胡萝卜。"
+    },
+    "spilledWater": {
+      "src": "/images/scenes/spilled-water-room.png",
+      "alt": "倒下的蓝杯和水洼在地板上，小狗在远处睡觉，小鸟在窗台上。"
+    },
+    "flowerGarden": {
+      "src": "/images/scenes/flower-evidence-garden.png",
+      "alt": "花坛边有弯折的花和脚印，小猫爪边有黄色花粉，小兔抱着胡萝卜。"
+    },
+    "muddyYard": {
+      "src": "/images/scenes/muddy-paws-yard.png",
+      "alt": "小狗脚上有泥并站在泥地里，小猫在干净垫子上，小兔抱着胡萝卜。"
+    },
+    "dogRoom": {
+      "src": "/images/scenes/dog-room-weak-clue.png",
+      "alt": "玩具散落在游戏房里，小狗清醒地坐在门口，当前没有接触玩具。"
+    },
+    "catKitchen": {
+      "src": "/images/scenes/logic-046-cat-kitchen.png",
+      "alt": "厨房里主蛋糕少了一块，前景小盘是空的，小猫站在门口且嘴边和爪子干净。"
+    }
+  },
+  "assetPolicy": "All region cards are exact crop/resize of the same scene. No generated footprints, behavior or extra evidence. One localized scene correction removes an existing contradictory cake slice. Abstract judgments use neutral concept symbols plus existing context.",
+  "summary": {
+    "repairRequired": 12,
+    "visualImprovement": 5,
+    "noProblem": 0,
+    "newGeneratedScenes": 1,
+    "newCropCards": 23
+  },
+  "rounds": [
+    {
+      "id": "logic-story-evidence-1",
+      "setId": "logic-story-evidence",
+      "prompt": "桌上的蛋糕少了一块。谁最可能吃了？",
+      "verdict": "visual-improvement",
+      "issues": [
+        {
+          "code": "avatar-loses-visible-clue",
+          "severity": "improve",
+          "detail": "现有通用猫狗兔PNG可辨身份，但不显示本场景奶油/睡姿/胡萝卜；同源裁切能让孩子就地比较。"
+        }
+      ],
+      "noIssueReasons": [
+        "已实际查看PNG；场景画出了题干所需当前事实，没有提前执行待推断行为。"
+      ],
+      "scene": {
+        "existing": "/images/scenes/cake-evidence-kitchen.png",
+        "recommended": "/images/scenes/cake-evidence-kitchen.png",
+        "key": "cakeKitchen",
+        "method": "retain-existing-scene"
+      },
+      "frames": [
+        "cakeMissing",
+        "cakeCream",
+        "cakeDog",
+        "cakeRabbit"
+      ],
+      "choices": [
+        {
+          "value": "cat",
+          "label": "小猫",
+          "current": {
+            "kind": "cat",
+            "mode": "existing-raster-character"
+          },
+          "problems": [],
+          "recommendation": {
+            "kind": "scene-crop",
+            "card": "cakeCat",
+            "why": "使用同一情境的真实角色或区域，保留可见证据，避免通用头像丢失状态。"
+          }
+        },
+        {
+          "value": "dog",
+          "label": "小狗",
+          "current": {
+            "kind": "dog",
+            "mode": "existing-raster-character"
+          },
+          "problems": [],
+          "recommendation": {
+            "kind": "scene-crop",
+            "card": "cakeDog",
+            "why": "使用同一情境的真实角色或区域，保留可见证据，避免通用头像丢失状态。"
+          }
+        },
+        {
+          "value": "rabbit",
+          "label": "小兔",
+          "current": {
+            "kind": "rabbit",
+            "mode": "existing-raster-character"
+          },
+          "problems": [],
+          "recommendation": {
+            "kind": "scene-crop",
+            "card": "cakeRabbit",
+            "why": "使用同一情境的真实角色或区域，保留可见证据，避免通用头像丢失状态。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "logic-story-evidence-2",
+      "setId": "logic-story-evidence",
+      "prompt": "比较小猫和小狗，谁身上和蛋糕直接相关的线索更少？",
+      "verdict": "visual-improvement",
+      "issues": [
+        {
+          "code": "avatar-loses-visible-clue",
+          "severity": "improve",
+          "detail": "现有通用猫狗兔PNG可辨身份，但不显示本场景奶油/睡姿/胡萝卜；同源裁切能让孩子就地比较。"
+        }
+      ],
+      "noIssueReasons": [
+        "已实际查看PNG；场景画出了题干所需当前事实，没有提前执行待推断行为。"
+      ],
+      "scene": {
+        "existing": "/images/scenes/cake-evidence-kitchen.png",
+        "recommended": "/images/scenes/cake-evidence-kitchen.png",
+        "key": "cakeKitchen",
+        "method": "retain-existing-scene"
+      },
+      "frames": [
+        "cakeMissing",
+        "cakeCream",
+        "cakeDog",
+        "cakeRabbit"
+      ],
+      "choices": [
+        {
+          "value": "cat",
+          "label": "小猫",
+          "current": {
+            "kind": "cat",
+            "mode": "existing-raster-character"
+          },
+          "problems": [],
+          "recommendation": {
+            "kind": "scene-crop",
+            "card": "cakeCat",
+            "why": "使用同一情境的真实角色或区域，保留可见证据，避免通用头像丢失状态。"
+          }
+        },
+        {
+          "value": "dog",
+          "label": "小狗",
+          "current": {
+            "kind": "dog",
+            "mode": "existing-raster-character"
+          },
+          "problems": [],
+          "recommendation": {
+            "kind": "scene-crop",
+            "card": "cakeDog",
+            "why": "使用同一情境的真实角色或区域，保留可见证据，避免通用头像丢失状态。"
+          }
+        },
+        {
+          "value": "same",
+          "label": "两个都一样",
+          "current": {
+            "kind": "same",
+            "mode": "inline-svg-symbol"
+          },
+          "problems": [],
+          "recommendation": {
+            "kind": "neutral-concept",
+            "symbol": "equal",
+            "meaning": "两者一样",
+            "contextCard": null,
+            "renderPolicy": "中性结论/提问符号加原场景角色图与原有文字。不使用绿色正确勾，不把结论画成已发生行为。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "logic-story-evidence-3",
+      "setId": "logic-story-evidence",
+      "prompt": "只知道“小猫在厨房”，能确定是小猫吃了吗？",
+      "verdict": "repair-required",
+      "issues": [
+        {
+          "code": "detached-cake-still-visible",
+          "severity": "fix",
+          "detail": "旧图前景盘上放着完整被切下的一块蛋糕，与“蛋糕少了/吃了”的事件前提冲突。新场景已精确编辑移除该块，保留空盘、主蛋糕缺口和干净小猫。"
+        },
+        {
+          "code": "answer-colored-conclusion",
+          "severity": "improve",
+          "detail": "证据够了的绿色勾容易作为正误提示，换中性陈述符号；这是一项界面建议，不改变答案。"
+        }
+      ],
+      "noIssueReasons": [
+        "当前嘴爪干净/未碰玩具都不能证明过去从未做过；中性结论选项不应生成新的无罪或作乱场景。"
+      ],
+      "scene": {
+        "existing": "/images/scenes/cat-kitchen-weak-clue.png",
+        "recommended": "/images/scenes/logic-046-cat-kitchen.png",
+        "key": "catKitchen",
+        "method": "image-gen-localized-edit"
+      },
+      "frames": [
+        "weakCatContext",
+        "weakCat"
+      ],
+      "choices": [
+        {
+          "value": "not-yet",
+          "label": "还需要更多线索",
+          "current": {
+            "kind": "notYet",
+            "mode": "inline-svg-symbol"
+          },
+          "problems": [],
+          "recommendation": {
+            "kind": "neutral-concept",
+            "symbol": "question",
+            "meaning": "还需要更多线索",
+            "contextCard": "weakCat",
+            "renderPolicy": "中性结论/提问符号加原场景角色图与原有文字。不使用绿色正确勾，不把结论画成已发生行为。"
+          }
+        },
+        {
+          "value": "enough",
+          "label": "证据已经够了",
+          "current": {
+            "kind": "certain",
+            "mode": "inline-svg-symbol"
+          },
+          "problems": [
+            "绿色对勾用于一个待判断的结论，容易被读成正确答案提示；宜改中性陈述符号。"
+          ],
+          "recommendation": {
+            "kind": "neutral-concept",
+            "symbol": "statement",
+            "meaning": "证据已经够了",
+            "contextCard": "weakCat",
+            "renderPolicy": "中性结论/提问符号加原场景角色图与原有文字。不使用绿色正确勾，不把结论画成已发生行为。"
+          }
+        },
+        {
+          "value": "cat-no",
+          "label": "小猫一定没吃",
+          "current": {
+            "kind": null,
+            "mode": "text-only"
+          },
+          "problems": [],
+          "recommendation": {
+            "kind": "neutral-concept",
+            "symbol": "negative-claim",
+            "meaning": "小猫一定没吃",
+            "contextCard": "weakCat",
+            "renderPolicy": "中性结论/提问符号加原场景角色图与原有文字。不使用绿色正确勾，不把结论画成已发生行为。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "logic-story-evidence-4",
+      "setId": "logic-story-evidence",
+      "prompt": "谁可能刚踩过泥地？",
+      "verdict": "visual-improvement",
+      "issues": [
+        {
+          "code": "avatar-loses-visible-clue",
+          "severity": "improve",
+          "detail": "通用头像可辨物种，但丢失泥脚/花粉/干净垫/胡萝卜线索，改用原场景角色区域。"
+        }
+      ],
+      "noIssueReasons": [
+        "已实际查看PNG；场景画出了题干所需当前事实，没有提前执行待推断行为。",
+        "狗四脚可见泥污，猫在干净垫上、兔抱胡萝卜；泥污推论保留“可能”。"
+      ],
+      "scene": {
+        "existing": "/images/scenes/muddy-paws-yard.png",
+        "recommended": "/images/scenes/muddy-paws-yard.png",
+        "key": "muddyYard",
+        "method": "retain-existing-scene"
+      },
+      "frames": [
+        "mudPaws",
+        "mudTracks",
+        "mudCat",
+        "mudRabbit"
+      ],
+      "choices": [
+        {
+          "value": "rabbit",
+          "label": "小兔",
+          "current": {
+            "kind": "rabbit",
+            "mode": "existing-raster-character"
+          },
+          "problems": [],
+          "recommendation": {
+            "kind": "scene-crop",
+            "card": "mudRabbit",
+            "why": "使用同一情境的真实角色或区域，保留可见证据，避免通用头像丢失状态。"
+          }
+        },
+        {
+          "value": "cat",
+          "label": "小猫",
+          "current": {
+            "kind": "cat",
+            "mode": "existing-raster-character"
+          },
+          "problems": [],
+          "recommendation": {
+            "kind": "scene-crop",
+            "card": "mudCat",
+            "why": "使用同一情境的真实角色或区域，保留可见证据，避免通用头像丢失状态。"
+          }
+        },
+        {
+          "value": "dog",
+          "label": "小狗",
+          "current": {
+            "kind": "dog",
+            "mode": "existing-raster-character"
+          },
+          "problems": [],
+          "recommendation": {
+            "kind": "scene-crop",
+            "card": "mudDog",
+            "why": "使用同一情境的真实角色或区域，保留可见证据，避免通用头像丢失状态。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "logic-story-evidence-5",
+      "setId": "logic-story-evidence",
+      "prompt": "水杯倒了，想知道发生了什么，先去哪里找线索？",
+      "verdict": "repair-required",
+      "issues": [
+        {
+          "code": "missing-specific-choice-crops",
+          "severity": "fix",
+          "detail": "具体地点/角色选项只有文字或粗略图标，改用原场景区域卡。"
+        }
+      ],
+      "noIssueReasons": [
+        "已实际查看PNG；场景画出了题干所需当前事实，没有提前执行待推断行为。",
+        "图中已有倒杯、水洼、远处睡狗、窗鸟，但未画出脚印或明确碰撞痕迹；反馈中“可能有”只能作为继续观察提问，不可新增图中不存在的直接证据。"
+      ],
+      "scene": {
+        "existing": "/images/scenes/spilled-water-room.png",
+        "recommended": "/images/scenes/spilled-water-room.png",
+        "key": "spilledWater",
+        "method": "retain-existing-scene"
+      },
+      "frames": [
+        "spillCup",
+        "spillDog",
+        "spillBird"
+      ],
+      "choices": [
+        {
+          "value": "dog-area",
+          "label": "远处的小狗旁边",
+          "current": {
+            "kind": null,
+            "mode": "text-only"
+          },
+          "problems": [
+            "当前具体区域或角色选择没有可辨图像。"
+          ],
+          "recommendation": {
+            "kind": "scene-crop",
+            "card": "spillDog",
+            "why": "使用同一情境的真实角色或区域，保留可见证据，避免通用头像丢失状态。"
+          }
+        },
+        {
+          "value": "bird-area",
+          "label": "窗边的小鸟旁边",
+          "current": {
+            "kind": null,
+            "mode": "text-only"
+          },
+          "problems": [
+            "当前具体区域或角色选择没有可辨图像。"
+          ],
+          "recommendation": {
+            "kind": "scene-crop",
+            "card": "spillBird",
+            "why": "使用同一情境的真实角色或区域，保留可见证据，避免通用头像丢失状态。"
+          }
+        },
+        {
+          "value": "cup-area",
+          "label": "倒下的杯子周围",
+          "current": {
+            "kind": "fallenCup",
+            "mode": "inline-svg-symbol"
+          },
+          "problems": [
+            "倒杯SVG没有同场景水洼与周围区域，且与其他文字选项视觉支持不对等。"
+          ],
+          "recommendation": {
+            "kind": "scene-crop",
+            "card": "spillCup",
+            "why": "使用同一情境的真实角色或区域，保留可见证据，避免通用头像丢失状态。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "logic-story-evidence-6",
+      "setId": "logic-story-evidence",
+      "prompt": "比较小兔和小猫，谁身上和花直接相关的线索更少？",
+      "verdict": "visual-improvement",
+      "issues": [
+        {
+          "code": "avatar-loses-visible-clue",
+          "severity": "improve",
+          "detail": "通用头像可辨物种，但丢失泥脚/花粉/干净垫/胡萝卜线索，改用原场景角色区域。"
+        }
+      ],
+      "noIssueReasons": [
+        "已实际查看PNG；场景画出了题干所需当前事实，没有提前执行待推断行为。",
+        "图中可见小猫抬爪处黄色花粉、弯折花和小兔胡萝卜；地面爪印只能称可见爪印，不能仅凭造型断言属于猫。"
+      ],
+      "scene": {
+        "existing": "/images/scenes/flower-evidence-garden.png",
+        "recommended": "/images/scenes/flower-evidence-garden.png",
+        "key": "flowerGarden",
+        "method": "retain-existing-scene"
+      },
+      "frames": [
+        "flowerBent",
+        "flowerPollen",
+        "flowerCat",
+        "flowerRabbit"
+      ],
+      "choices": [
+        {
+          "value": "rabbit",
+          "label": "小兔",
+          "current": {
+            "kind": "rabbit",
+            "mode": "existing-raster-character"
+          },
+          "problems": [],
+          "recommendation": {
+            "kind": "scene-crop",
+            "card": "flowerRabbit",
+            "why": "使用同一情境的真实角色或区域，保留可见证据，避免通用头像丢失状态。"
+          }
+        },
+        {
+          "value": "cat",
+          "label": "小猫",
+          "current": {
+            "kind": "cat",
+            "mode": "existing-raster-character"
+          },
+          "problems": [],
+          "recommendation": {
+            "kind": "scene-crop",
+            "card": "flowerCat",
+            "why": "使用同一情境的真实角色或区域，保留可见证据，避免通用头像丢失状态。"
+          }
+        },
+        {
+          "value": "same",
+          "label": "都一样",
+          "current": {
+            "kind": "same",
+            "mode": "inline-svg-symbol"
+          },
+          "problems": [],
+          "recommendation": {
+            "kind": "neutral-concept",
+            "symbol": "equal",
+            "meaning": "两者一样",
+            "contextCard": null,
+            "renderPolicy": "中性结论/提问符号加原场景角色图与原有文字。不使用绿色正确勾，不把结论画成已发生行为。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "logic-story-evidence-7",
+      "setId": "logic-story-evidence",
+      "prompt": "只知道“小狗在房间里”，能确定是小狗弄乱玩具吗？",
+      "verdict": "repair-required",
+      "issues": [
+        {
+          "code": "invented-sleep",
+          "severity": "fix",
+          "detail": "“小狗肯定没弄乱”映射到dogSleep，和清醒门口狗场景冲突；改为原狗区域配中性否定结论文字。"
+        },
+        {
+          "code": "answer-colored-conclusion",
+          "severity": "improve",
+          "detail": "证据够了的绿色勾容易作为正误提示，换中性陈述符号；这是一项界面建议，不改变答案。"
+        }
+      ],
+      "noIssueReasons": [
+        "已实际查看PNG；场景画出了题干所需当前事实，没有提前执行待推断行为。",
+        "当前嘴爪干净/未碰玩具都不能证明过去从未做过；中性结论选项不应生成新的无罪或作乱场景。"
+      ],
+      "scene": {
+        "existing": "/images/scenes/dog-room-weak-clue.png",
+        "recommended": "/images/scenes/dog-room-weak-clue.png",
+        "key": "dogRoom",
+        "method": "retain-existing-scene"
+      },
+      "frames": [
+        "weakDogContext",
+        "weakDog",
+        "weakToys"
+      ],
+      "choices": [
+        {
+          "value": "enough",
+          "label": "证据已经够了",
+          "current": {
+            "kind": "certain",
+            "mode": "inline-svg-symbol"
+          },
+          "problems": [
+            "绿色对勾用于一个待判断的结论，容易被读成正确答案提示；宜改中性陈述符号。"
+          ],
+          "recommendation": {
+            "kind": "neutral-concept",
+            "symbol": "statement",
+            "meaning": "证据已经够了",
+            "contextCard": "weakDog",
+            "renderPolicy": "中性结论/提问符号加原场景角色图与原有文字。不使用绿色正确勾，不把结论画成已发生行为。"
+          }
+        },
+        {
+          "value": "not-yet",
+          "label": "还需要更多线索",
+          "current": {
+            "kind": "notYet",
+            "mode": "inline-svg-symbol"
+          },
+          "problems": [],
+          "recommendation": {
+            "kind": "neutral-concept",
+            "symbol": "question",
+            "meaning": "还需要更多线索",
+            "contextCard": "weakDog",
+            "renderPolicy": "中性结论/提问符号加原场景角色图与原有文字。不使用绿色正确勾，不把结论画成已发生行为。"
+          }
+        },
+        {
+          "value": "dog-no",
+          "label": "小狗肯定没弄乱",
+          "current": {
+            "kind": "dogSleep",
+            "mode": "inline-svg-symbol"
+          },
+          "problems": [
+            "原场景狗清醒坐着，睡觉SVG新增原图不存在的行为，且不能证明过去没弄乱。"
+          ],
+          "recommendation": {
+            "kind": "neutral-concept",
+            "symbol": "negative-claim",
+            "meaning": "小狗肯定没弄乱",
+            "contextCard": "weakDog",
+            "renderPolicy": "中性结论/提问符号加原场景角色图与原有文字。不使用绿色正确勾，不把结论画成已发生行为。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "logic-condition-detective-8",
+      "setId": "logic-condition-detective",
+      "prompt": "小猫在厨房，蛋糕少了一块，够确定是小猫吃的吗？",
+      "verdict": "repair-required",
+      "issues": [
+        {
+          "code": "detached-cake-still-visible",
+          "severity": "fix",
+          "detail": "旧图前景盘上放着完整被切下的一块蛋糕，与“蛋糕少了/吃了”的事件前提冲突。新场景已精确编辑移除该块，保留空盘、主蛋糕缺口和干净小猫。"
+        },
+        {
+          "code": "answer-colored-conclusion",
+          "severity": "improve",
+          "detail": "证据够了的绿色勾容易作为正误提示，换中性陈述符号；这是一项界面建议，不改变答案。"
+        }
+      ],
+      "noIssueReasons": [
+        "当前嘴爪干净/未碰玩具都不能证明过去从未做过；中性结论选项不应生成新的无罪或作乱场景。"
+      ],
+      "scene": {
+        "existing": "/images/scenes/cat-kitchen-weak-clue.png",
+        "recommended": "/images/scenes/logic-046-cat-kitchen.png",
+        "key": "catKitchen",
+        "method": "image-gen-localized-edit"
+      },
+      "frames": [
+        "weakCatContext",
+        "weakCat"
+      ],
+      "choices": [
+        {
+          "value": "enough",
+          "label": "证据已经够了",
+          "current": {
+            "kind": "certain",
+            "mode": "inline-svg-symbol"
+          },
+          "problems": [
+            "绿色对勾用于一个待判断的结论，容易被读成正确答案提示；宜改中性陈述符号。"
+          ],
+          "recommendation": {
+            "kind": "neutral-concept",
+            "symbol": "statement",
+            "meaning": "证据已经够了",
+            "contextCard": "weakCat",
+            "renderPolicy": "中性结论/提问符号加原场景角色图与原有文字。不使用绿色正确勾，不把结论画成已发生行为。"
+          }
+        },
+        {
+          "value": "cat-no",
+          "label": "小猫一定没吃",
+          "current": {
+            "kind": null,
+            "mode": "text-only"
+          },
+          "problems": [],
+          "recommendation": {
+            "kind": "neutral-concept",
+            "symbol": "negative-claim",
+            "meaning": "小猫一定没吃",
+            "contextCard": "weakCat",
+            "renderPolicy": "中性结论/提问符号加原场景角色图与原有文字。不使用绿色正确勾，不把结论画成已发生行为。"
+          }
+        },
+        {
+          "value": "not-yet",
+          "label": "还需要更多线索",
+          "current": {
+            "kind": "notYet",
+            "mode": "inline-svg-symbol"
+          },
+          "problems": [],
+          "recommendation": {
+            "kind": "neutral-concept",
+            "symbol": "question",
+            "meaning": "还需要更多线索",
+            "contextCard": "weakCat",
+            "renderPolicy": "中性结论/提问符号加原场景角色图与原有文字。不使用绿色正确勾，不把结论画成已发生行为。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "logic-condition-detective-9",
+      "setId": "logic-condition-detective",
+      "prompt": "蛋糕少了，小猫嘴边有奶油，谁最可能吃了？",
+      "verdict": "visual-improvement",
+      "issues": [
+        {
+          "code": "avatar-loses-visible-clue",
+          "severity": "improve",
+          "detail": "现有通用猫狗兔PNG可辨身份，但不显示本场景奶油/睡姿/胡萝卜；同源裁切能让孩子就地比较。"
+        }
+      ],
+      "noIssueReasons": [
+        "已实际查看PNG；场景画出了题干所需当前事实，没有提前执行待推断行为。"
+      ],
+      "scene": {
+        "existing": "/images/scenes/cake-evidence-kitchen.png",
+        "recommended": "/images/scenes/cake-evidence-kitchen.png",
+        "key": "cakeKitchen",
+        "method": "retain-existing-scene"
+      },
+      "frames": [
+        "cakeMissing",
+        "cakeCream",
+        "cakeDog",
+        "cakeRabbit"
+      ],
+      "choices": [
+        {
+          "value": "dog",
+          "label": "小狗",
+          "current": {
+            "kind": "dog",
+            "mode": "existing-raster-character"
+          },
+          "problems": [],
+          "recommendation": {
+            "kind": "scene-crop",
+            "card": "cakeDog",
+            "why": "使用同一情境的真实角色或区域，保留可见证据，避免通用头像丢失状态。"
+          }
+        },
+        {
+          "value": "cat",
+          "label": "小猫",
+          "current": {
+            "kind": "cat",
+            "mode": "existing-raster-character"
+          },
+          "problems": [],
+          "recommendation": {
+            "kind": "scene-crop",
+            "card": "cakeCat",
+            "why": "使用同一情境的真实角色或区域，保留可见证据，避免通用头像丢失状态。"
+          }
+        },
+        {
+          "value": "rabbit",
+          "label": "小兔",
+          "current": {
+            "kind": "rabbit",
+            "mode": "existing-raster-character"
+          },
+          "problems": [],
+          "recommendation": {
+            "kind": "scene-crop",
+            "card": "cakeRabbit",
+            "why": "使用同一情境的真实角色或区域，保留可见证据，避免通用头像丢失状态。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "logic-condition-detective-10",
+      "setId": "logic-condition-detective",
+      "prompt": "水杯倒了，哪一个地方最值得先检查？",
+      "verdict": "repair-required",
+      "issues": [
+        {
+          "code": "missing-specific-choice-crops",
+          "severity": "fix",
+          "detail": "具体地点/角色选项只有文字或粗略图标，改用原场景区域卡。"
+        }
+      ],
+      "noIssueReasons": [
+        "已实际查看PNG；场景画出了题干所需当前事实，没有提前执行待推断行为。",
+        "图中已有倒杯、水洼、远处睡狗、窗鸟，但未画出脚印或明确碰撞痕迹；反馈中“可能有”只能作为继续观察提问，不可新增图中不存在的直接证据。"
+      ],
+      "scene": {
+        "existing": "/images/scenes/spilled-water-room.png",
+        "recommended": "/images/scenes/spilled-water-room.png",
+        "key": "spilledWater",
+        "method": "retain-existing-scene"
+      },
+      "frames": [
+        "spillCup",
+        "spillDog",
+        "spillBird"
+      ],
+      "choices": [
+        {
+          "value": "far-dog",
+          "label": "远处的小狗旁边",
+          "current": {
+            "kind": null,
+            "mode": "text-only"
+          },
+          "problems": [
+            "当前具体区域或角色选择没有可辨图像。"
+          ],
+          "recommendation": {
+            "kind": "scene-crop",
+            "card": "spillDog",
+            "why": "使用同一情境的真实角色或区域，保留可见证据，避免通用头像丢失状态。"
+          }
+        },
+        {
+          "value": "cup-area",
+          "label": "倒下的杯子周围",
+          "current": {
+            "kind": "fallenCup",
+            "mode": "inline-svg-symbol"
+          },
+          "problems": [
+            "倒杯SVG没有同场景水洼与周围区域，且与其他文字选项视觉支持不对等。"
+          ],
+          "recommendation": {
+            "kind": "scene-crop",
+            "card": "spillCup",
+            "why": "使用同一情境的真实角色或区域，保留可见证据，避免通用头像丢失状态。"
+          }
+        },
+        {
+          "value": "bird-window",
+          "label": "窗边的小鸟旁边",
+          "current": {
+            "kind": null,
+            "mode": "text-only"
+          },
+          "problems": [
+            "当前具体区域或角色选择没有可辨图像。"
+          ],
+          "recommendation": {
+            "kind": "scene-crop",
+            "card": "spillBird",
+            "why": "使用同一情境的真实角色或区域，保留可见证据，避免通用头像丢失状态。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "logic-condition-detective-11",
+      "setId": "logic-condition-detective",
+      "prompt": "只知道小狗在房间里，能确定它弄乱玩具吗？",
+      "verdict": "repair-required",
+      "issues": [
+        {
+          "code": "invented-sleep",
+          "severity": "fix",
+          "detail": "“小狗肯定没弄乱”映射到dogSleep，和清醒门口狗场景冲突；改为原狗区域配中性否定结论文字。"
+        },
+        {
+          "code": "answer-colored-conclusion",
+          "severity": "improve",
+          "detail": "证据够了的绿色勾容易作为正误提示，换中性陈述符号；这是一项界面建议，不改变答案。"
+        }
+      ],
+      "noIssueReasons": [
+        "已实际查看PNG；场景画出了题干所需当前事实，没有提前执行待推断行为。",
+        "当前嘴爪干净/未碰玩具都不能证明过去从未做过；中性结论选项不应生成新的无罪或作乱场景。"
+      ],
+      "scene": {
+        "existing": "/images/scenes/dog-room-weak-clue.png",
+        "recommended": "/images/scenes/dog-room-weak-clue.png",
+        "key": "dogRoom",
+        "method": "retain-existing-scene"
+      },
+      "frames": [
+        "weakDogContext",
+        "weakDog",
+        "weakToys"
+      ],
+      "choices": [
+        {
+          "value": "not-yet",
+          "label": "还需要更多线索",
+          "current": {
+            "kind": "notYet",
+            "mode": "inline-svg-symbol"
+          },
+          "problems": [],
+          "recommendation": {
+            "kind": "neutral-concept",
+            "symbol": "question",
+            "meaning": "还需要更多线索",
+            "contextCard": "weakDog",
+            "renderPolicy": "中性结论/提问符号加原场景角色图与原有文字。不使用绿色正确勾，不把结论画成已发生行为。"
+          }
+        },
+        {
+          "value": "enough",
+          "label": "证据已经够了",
+          "current": {
+            "kind": "certain",
+            "mode": "inline-svg-symbol"
+          },
+          "problems": [
+            "绿色对勾用于一个待判断的结论，容易被读成正确答案提示；宜改中性陈述符号。"
+          ],
+          "recommendation": {
+            "kind": "neutral-concept",
+            "symbol": "statement",
+            "meaning": "证据已经够了",
+            "contextCard": "weakDog",
+            "renderPolicy": "中性结论/提问符号加原场景角色图与原有文字。不使用绿色正确勾，不把结论画成已发生行为。"
+          }
+        },
+        {
+          "value": "dog-no",
+          "label": "小狗肯定没弄乱",
+          "current": {
+            "kind": "dogSleep",
+            "mode": "inline-svg-symbol"
+          },
+          "problems": [
+            "原场景狗清醒坐着，睡觉SVG新增原图不存在的行为，且不能证明过去没弄乱。"
+          ],
+          "recommendation": {
+            "kind": "neutral-concept",
+            "symbol": "negative-claim",
+            "meaning": "小狗肯定没弄乱",
+            "contextCard": "weakDog",
+            "renderPolicy": "中性结论/提问符号加原场景角色图与原有文字。不使用绿色正确勾，不把结论画成已发生行为。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "logic-fix-plan-8",
+      "setId": "logic-fix-plan",
+      "prompt": "只看到小猫在厨房，就说一定是小猫吃了，哪里错？",
+      "verdict": "repair-required",
+      "issues": [
+        {
+          "code": "detached-cake-still-visible",
+          "severity": "fix",
+          "detail": "旧图前景盘上放着完整被切下的一块蛋糕，与“蛋糕少了/吃了”的事件前提冲突。新场景已精确编辑移除该块，保留空盘、主蛋糕缺口和干净小猫。"
+        },
+        {
+          "code": "answer-colored-conclusion",
+          "severity": "improve",
+          "detail": "证据够了的绿色勾容易作为正误提示，换中性陈述符号；这是一项界面建议，不改变答案。"
+        }
+      ],
+      "noIssueReasons": [
+        "当前嘴爪干净/未碰玩具都不能证明过去从未做过；中性结论选项不应生成新的无罪或作乱场景。"
+      ],
+      "scene": {
+        "existing": "/images/scenes/cat-kitchen-weak-clue.png",
+        "recommended": "/images/scenes/logic-046-cat-kitchen.png",
+        "key": "catKitchen",
+        "method": "image-gen-localized-edit"
+      },
+      "frames": [
+        "weakCatContext",
+        "weakCat"
+      ],
+      "choices": [
+        {
+          "value": "enough",
+          "label": "证据已经够了",
+          "current": {
+            "kind": "certain",
+            "mode": "inline-svg-symbol"
+          },
+          "problems": [
+            "绿色对勾用于一个待判断的结论，容易被读成正确答案提示；宜改中性陈述符号。"
+          ],
+          "recommendation": {
+            "kind": "neutral-concept",
+            "symbol": "statement",
+            "meaning": "证据已经够了",
+            "contextCard": "weakCat",
+            "renderPolicy": "中性结论/提问符号加原场景角色图与原有文字。不使用绿色正确勾，不把结论画成已发生行为。"
+          }
+        },
+        {
+          "value": "not-yet",
+          "label": "还需要更多线索",
+          "current": {
+            "kind": "notYet",
+            "mode": "inline-svg-symbol"
+          },
+          "problems": [],
+          "recommendation": {
+            "kind": "neutral-concept",
+            "symbol": "question",
+            "meaning": "还需要更多线索",
+            "contextCard": "weakCat",
+            "renderPolicy": "中性结论/提问符号加原场景角色图与原有文字。不使用绿色正确勾，不把结论画成已发生行为。"
+          }
+        },
+        {
+          "value": "cat-no",
+          "label": "小猫一定没吃",
+          "current": {
+            "kind": null,
+            "mode": "text-only"
+          },
+          "problems": [],
+          "recommendation": {
+            "kind": "neutral-concept",
+            "symbol": "negative-claim",
+            "meaning": "小猫一定没吃",
+            "contextCard": "weakCat",
+            "renderPolicy": "中性结论/提问符号加原场景角色图与原有文字。不使用绿色正确勾，不把结论画成已发生行为。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "logic-fix-plan-9",
+      "setId": "logic-fix-plan",
+      "prompt": "小猫嘴边有奶油，却说小狗最可能吃了，怎么改？",
+      "verdict": "repair-required",
+      "issues": [
+        {
+          "code": "missing-specific-choice-crops",
+          "severity": "fix",
+          "detail": "具体地点/角色选项只有文字或粗略图标，改用原场景区域卡。"
+        },
+        {
+          "code": "avatar-loses-visible-clue",
+          "severity": "improve",
+          "detail": "现有通用猫狗兔PNG可辨身份，但不显示本场景奶油/睡姿/胡萝卜；同源裁切能让孩子就地比较。"
+        }
+      ],
+      "noIssueReasons": [
+        "已实际查看PNG；场景画出了题干所需当前事实，没有提前执行待推断行为。"
+      ],
+      "scene": {
+        "existing": "/images/scenes/cake-evidence-kitchen.png",
+        "recommended": "/images/scenes/cake-evidence-kitchen.png",
+        "key": "cakeKitchen",
+        "method": "retain-existing-scene"
+      },
+      "frames": [
+        "cakeMissing",
+        "cakeCream",
+        "cakeDog",
+        "cakeRabbit"
+      ],
+      "choices": [
+        {
+          "value": "dog",
+          "label": "坚持小狗",
+          "current": {
+            "kind": null,
+            "mode": "text-only"
+          },
+          "problems": [
+            "当前具体区域或角色选择没有可辨图像。"
+          ],
+          "recommendation": {
+            "kind": "scene-crop",
+            "card": "cakeDog",
+            "why": "使用同一情境的真实角色或区域，保留可见证据，避免通用头像丢失状态。"
+          }
+        },
+        {
+          "value": "cat",
+          "label": "改成小猫",
+          "current": {
+            "kind": null,
+            "mode": "text-only"
+          },
+          "problems": [
+            "当前具体区域或角色选择没有可辨图像。"
+          ],
+          "recommendation": {
+            "kind": "scene-crop",
+            "card": "cakeCat",
+            "why": "使用同一情境的真实角色或区域，保留可见证据，避免通用头像丢失状态。"
+          }
+        },
+        {
+          "value": "rabbit",
+          "label": "改成小兔",
+          "current": {
+            "kind": null,
+            "mode": "text-only"
+          },
+          "problems": [
+            "当前具体区域或角色选择没有可辨图像。"
+          ],
+          "recommendation": {
+            "kind": "scene-crop",
+            "card": "cakeRabbit",
+            "why": "使用同一情境的真实角色或区域，保留可见证据，避免通用头像丢失状态。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "logic-fix-plan-10",
+      "setId": "logic-fix-plan",
+      "prompt": "水洒了，却只看远处的小狗，哪里不对？",
+      "verdict": "repair-required",
+      "issues": [
+        {
+          "code": "missing-specific-choice-crops",
+          "severity": "fix",
+          "detail": "具体地点/角色选项只有文字或粗略图标，改用原场景区域卡。"
+        }
+      ],
+      "noIssueReasons": [
+        "已实际查看PNG；场景画出了题干所需当前事实，没有提前执行待推断行为。",
+        "图中已有倒杯、水洼、远处睡狗、窗鸟，但未画出脚印或明确碰撞痕迹；反馈中“可能有”只能作为继续观察提问，不可新增图中不存在的直接证据。"
+      ],
+      "scene": {
+        "existing": "/images/scenes/spilled-water-room.png",
+        "recommended": "/images/scenes/spilled-water-room.png",
+        "key": "spilledWater",
+        "method": "retain-existing-scene"
+      },
+      "frames": [
+        "spillCup",
+        "spillDog",
+        "spillBird"
+      ],
+      "choices": [
+        {
+          "value": "cup-area",
+          "label": "先检查倒下的杯子周围",
+          "current": {
+            "kind": "fallenCup",
+            "mode": "inline-svg-symbol"
+          },
+          "problems": [
+            "倒杯SVG没有同场景水洼与周围区域，且与其他文字选项视觉支持不对等。"
+          ],
+          "recommendation": {
+            "kind": "scene-crop",
+            "card": "spillCup",
+            "why": "使用同一情境的真实角色或区域，保留可见证据，避免通用头像丢失状态。"
+          }
+        },
+        {
+          "value": "far-dog",
+          "label": "只看远处小狗",
+          "current": {
+            "kind": null,
+            "mode": "text-only"
+          },
+          "problems": [
+            "当前具体区域或角色选择没有可辨图像。"
+          ],
+          "recommendation": {
+            "kind": "scene-crop",
+            "card": "spillDog",
+            "why": "使用同一情境的真实角色或区域，保留可见证据，避免通用头像丢失状态。"
+          }
+        },
+        {
+          "value": "bird-window",
+          "label": "只看窗边小鸟",
+          "current": {
+            "kind": null,
+            "mode": "text-only"
+          },
+          "problems": [
+            "当前具体区域或角色选择没有可辨图像。"
+          ],
+          "recommendation": {
+            "kind": "scene-crop",
+            "card": "spillBird",
+            "why": "使用同一情境的真实角色或区域，保留可见证据，避免通用头像丢失状态。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "logic-priority-choice-8",
+      "setId": "logic-priority-choice",
+      "prompt": "蛋糕少了，小猫在厨房，小狗在睡觉，先看哪条线索？",
+      "verdict": "repair-required",
+      "issues": [
+        {
+          "code": "missing-specific-choice-crops",
+          "severity": "fix",
+          "detail": "具体地点/角色选项只有文字或粗略图标，改用原场景区域卡。"
+        }
+      ],
+      "noIssueReasons": [
+        "已实际查看PNG；场景画出了题干所需当前事实，没有提前执行待推断行为。"
+      ],
+      "scene": {
+        "existing": "/images/scenes/cake-evidence-kitchen.png",
+        "recommended": "/images/scenes/cake-evidence-kitchen.png",
+        "key": "cakeKitchen",
+        "method": "retain-existing-scene"
+      },
+      "frames": [
+        "cakeMissing",
+        "cakeCream",
+        "cakeDog",
+        "cakeRabbit"
+      ],
+      "choices": [
+        {
+          "value": "kitchen",
+          "label": "先看谁在厨房",
+          "current": {
+            "kind": null,
+            "mode": "text-only"
+          },
+          "problems": [
+            "当前具体区域或角色选择没有可辨图像。"
+          ],
+          "recommendation": {
+            "kind": "scene-crop",
+            "card": "cakeKitchenContext",
+            "why": "使用同一情境的真实角色或区域，保留可见证据，避免通用头像丢失状态。"
+          }
+        },
+        {
+          "value": "cream",
+          "label": "先看奶油",
+          "current": {
+            "kind": null,
+            "mode": "text-only"
+          },
+          "problems": [
+            "当前具体区域或角色选择没有可辨图像。"
+          ],
+          "recommendation": {
+            "kind": "scene-crop",
+            "card": "cakeCream",
+            "why": "使用同一情境的真实角色或区域，保留可见证据，避免通用头像丢失状态。"
+          }
+        },
+        {
+          "value": "far",
+          "label": "先看谁在远处",
+          "current": {
+            "kind": null,
+            "mode": "text-only"
+          },
+          "problems": [
+            "当前具体区域或角色选择没有可辨图像。"
+          ],
+          "recommendation": {
+            "kind": "scene-crop",
+            "card": "cakeDog",
+            "why": "使用同一情境的真实角色或区域，保留可见证据，避免通用头像丢失状态。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "logic-priority-choice-9",
+      "setId": "logic-priority-choice",
+      "prompt": "水洒了，先去哪里找和洒水直接相关的线索？",
+      "verdict": "repair-required",
+      "issues": [
+        {
+          "code": "missing-specific-choice-crops",
+          "severity": "fix",
+          "detail": "具体地点/角色选项只有文字或粗略图标，改用原场景区域卡。"
+        }
+      ],
+      "noIssueReasons": [
+        "已实际查看PNG；场景画出了题干所需当前事实，没有提前执行待推断行为。",
+        "图中已有倒杯、水洼、远处睡狗、窗鸟，但未画出脚印或明确碰撞痕迹；反馈中“可能有”只能作为继续观察提问，不可新增图中不存在的直接证据。"
+      ],
+      "scene": {
+        "existing": "/images/scenes/spilled-water-room.png",
+        "recommended": "/images/scenes/spilled-water-room.png",
+        "key": "spilledWater",
+        "method": "retain-existing-scene"
+      },
+      "frames": [
+        "spillCup",
+        "spillDog",
+        "spillBird"
+      ],
+      "choices": [
+        {
+          "value": "far-dog",
+          "label": "远处小狗睡觉的地方",
+          "current": {
+            "kind": "dogSleep",
+            "mode": "inline-svg-symbol"
+          },
+          "problems": [],
+          "recommendation": {
+            "kind": "scene-crop",
+            "card": "spillDog",
+            "why": "使用同一情境的真实角色或区域，保留可见证据，避免通用头像丢失状态。"
+          }
+        },
+        {
+          "value": "cup-area",
+          "label": "倒下的杯子周围",
+          "current": {
+            "kind": "fallenCup",
+            "mode": "inline-svg-symbol"
+          },
+          "problems": [
+            "倒杯SVG没有同场景水洼与周围区域，且与其他文字选项视觉支持不对等。"
+          ],
+          "recommendation": {
+            "kind": "scene-crop",
+            "card": "spillCup",
+            "why": "使用同一情境的真实角色或区域，保留可见证据，避免通用头像丢失状态。"
+          }
+        },
+        {
+          "value": "window-bird",
+          "label": "窗边小鸟的位置",
+          "current": {
+            "kind": null,
+            "mode": "text-only"
+          },
+          "problems": [
+            "当前具体区域或角色选择没有可辨图像。"
+          ],
+          "recommendation": {
+            "kind": "scene-crop",
+            "card": "spillBird",
+            "why": "使用同一情境的真实角色或区域，保留可见证据，避免通用头像丢失状态。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "logic-priority-choice-12",
+      "setId": "logic-priority-choice",
+      "prompt": "只知道小狗在房间里，玩具散了，先下结论还是先找更多线索？",
+      "verdict": "repair-required",
+      "issues": [
+        {
+          "code": "invented-sleep",
+          "severity": "fix",
+          "detail": "“小狗肯定没弄乱”映射到dogSleep，和清醒门口狗场景冲突；改为原狗区域配中性否定结论文字。"
+        }
+      ],
+      "noIssueReasons": [
+        "已实际查看PNG；场景画出了题干所需当前事实，没有提前执行待推断行为。",
+        "当前嘴爪干净/未碰玩具都不能证明过去从未做过；中性结论选项不应生成新的无罪或作乱场景。"
+      ],
+      "scene": {
+        "existing": "/images/scenes/dog-room-weak-clue.png",
+        "recommended": "/images/scenes/dog-room-weak-clue.png",
+        "key": "dogRoom",
+        "method": "retain-existing-scene"
+      },
+      "frames": [
+        "weakDogContext",
+        "weakDog",
+        "weakToys"
+      ],
+      "choices": [
+        {
+          "value": "dog-certain",
+          "label": "直接说小狗弄乱",
+          "current": {
+            "kind": null,
+            "mode": "text-only"
+          },
+          "problems": [],
+          "recommendation": {
+            "kind": "neutral-concept",
+            "symbol": "certain-claim",
+            "meaning": "直接断言小狗弄乱",
+            "contextCard": "weakDog",
+            "renderPolicy": "中性结论/提问符号加原场景角色图与原有文字。不使用绿色正确勾，不把结论画成已发生行为。"
+          }
+        },
+        {
+          "value": "dog-no",
+          "label": "小狗肯定没弄乱",
+          "current": {
+            "kind": "dogSleep",
+            "mode": "inline-svg-symbol"
+          },
+          "problems": [
+            "原场景狗清醒坐着，睡觉SVG新增原图不存在的行为，且不能证明过去没弄乱。"
+          ],
+          "recommendation": {
+            "kind": "neutral-concept",
+            "symbol": "negative-claim",
+            "meaning": "小狗肯定没弄乱",
+            "contextCard": "weakDog",
+            "renderPolicy": "中性结论/提问符号加原场景角色图与原有文字。不使用绿色正确勾，不把结论画成已发生行为。"
+          }
+        },
+        {
+          "value": "more-clues",
+          "label": "先找更多线索",
+          "current": {
+            "kind": null,
+            "mode": "text-only"
+          },
+          "problems": [],
+          "recommendation": {
+            "kind": "neutral-concept",
+            "symbol": "search",
+            "meaning": "先找更多线索",
+            "contextCard": "weakDog",
+            "renderPolicy": "中性结论/提问符号加原场景角色图与原有文字。不使用绿色正确勾，不把结论画成已发生行为。"
+          }
+        }
+      ]
+    }
+  ]
+}

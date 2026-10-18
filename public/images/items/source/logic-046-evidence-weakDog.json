@@ -1,0 +1,24 @@
+{
+  "mode": "exact-scene-crop",
+  "scene": "/images/scenes/dog-room-weak-clue.png",
+  "sceneSha256": "9fe69b4efa7e30f5f53f3857cc5478b2834eca085c2c8efafe1174b450692873",
+  "coordinateSpace": {
+    "width": 1200,
+    "height": 675
+  },
+  "crop": {
+    "left": 805,
+    "top": 220,
+    "width": 180,
+    "height": 200
+  },
+  "output": "public/images/items/logic-046-evidence-weakDog.png",
+  "resize": {
+    "width": 600,
+    "height": 600,
+    "fit": "contain",
+    "background": "#fffaf0"
+  },
+  "pixelsPolicy": "Only crop and resize original scene pixels. No generated evidence, no retouching, no extra footprints or behavior.",
+  "alt": "原场景小狗清醒地坐在门口，未接触玩具；不是睡觉。"
+}

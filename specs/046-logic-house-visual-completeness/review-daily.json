@@ -1,0 +1,1422 @@
+{
+  "reviewer": "art_daily",
+  "date": "2026-10-19",
+  "scope": {
+    "logic-rule-filter": 14,
+    "logic-relation-pairs": 16,
+    "logic-stop-think": 6
+  },
+  "summary": {
+    "reviewed": 36,
+    "needsFix": 23,
+    "pass": 13
+  },
+  "limitations": [
+    "只读源代码与本地图像审查；未操作浏览器/原生应用，未宣称实际交互验收。",
+    "没有改动题目合同、代码或图像；仅写本审查JSON。"
+  ],
+  "implementationEvidence": {
+    "visualToken": "src/components/VisualToken.tsx:316; rasterForKind:392; draw(clap):620",
+    "progressiveBoard": "src/games/ProgressiveSetGame.tsx:390 and visualGroups rendering:478",
+    "choiceContent": "src/games/ProgressiveSetGame.tsx:274; maps unknown English values back to Chinese labels before visualMetaFor",
+    "relationLayout": "src/games/ProgressiveSetGame.tsx:886; relation group labels recognized, but labels are text and no automatic new-target creation",
+    "gallery": "src/data/imageGallery.ts and src/data/orderStoryAssets.ts"
+  },
+  "rounds": [
+    {
+      "gameId": "logic-rule-filter",
+      "roundId": "school-day-book",
+      "roundNumber": 1,
+      "prompt": "今天去上课，只能先装一样学习用品，选哪一个？",
+      "currentSceneImage": null,
+      "currentGroups": [
+        {
+          "label": "桌上物品",
+          "items": [
+            "书本",
+            "玩具车",
+            "雨衣"
+          ]
+        }
+      ],
+      "choiceLabels": [
+        "书本",
+        "玩具车",
+        "雨衣"
+      ],
+      "reviewMode": "source-and-local-asset-review-no-browser",
+      "status": "needs-fix",
+      "issues": [
+        {
+          "type": "task-rule-evidence-missing",
+          "priority": "P1",
+          "evidence": "学习/上课用途只存在于题干；桌上书本、车、雨衣均有本地对象图，但图面没有上课任务线索。",
+          "proposedFix": "复用045教室起始图作为上课需求，保留原三对象图；不必画拿书/装书动作。"
+        }
+      ],
+      "existingEvidence": "所有三个选项和桌面对象均通过VisualToken/ChoiceCue映射成本地PNG；问题不是选项没有图。",
+      "scenePolicy": "可使用贴题任务线索/小面板；只在需要环境前提时使用情境图，不要求每题独立大场景。",
+      "assets": [
+        "045-writing-classroom"
+      ]
+    },
+    {
+      "gameId": "logic-rule-filter",
+      "roundId": "school-day-pencil-case",
+      "roundNumber": 2,
+      "prompt": "老师让大家把铅笔收好，先装能放铅笔的东西，选哪一个？",
+      "currentSceneImage": null,
+      "currentGroups": [
+        {
+          "label": "桌上物品",
+          "items": [
+            "文具盒",
+            "书本",
+            "帽子"
+          ]
+        }
+      ],
+      "choiceLabels": [
+        "书本",
+        "文具盒",
+        "帽子"
+      ],
+      "reviewMode": "source-and-local-asset-review-no-browser",
+      "status": "needs-fix",
+      "issues": [
+        {
+          "type": "task-rule-evidence-missing",
+          "priority": "P1",
+          "evidence": "题干要求收铅笔，但图面只有文具盒、书本、帽子，没有待收的铅笔。文具盒PNG本身有铅笔，不能替代独立任务目标。",
+          "proposedFix": "补独立的桌面散落铅笔待收纳线索；不先把铅笔装进正确选项。"
+        }
+      ],
+      "existingEvidence": "所有三个选项和桌面对象均通过VisualToken/ChoiceCue映射成本地PNG；问题不是选项没有图。",
+      "scenePolicy": "可使用贴题任务线索/小面板；只在需要环境前提时使用情境图，不要求每题独立大场景。",
+      "assets": [
+        "new-loose-pencils"
+      ]
+    },
+    {
+      "gameId": "logic-rule-filter",
+      "roundId": "outdoor-hat",
+      "roundNumber": 3,
+      "prompt": "要去户外晒太阳，先选能戴在头上的东西，选哪一个？",
+      "currentSceneImage": null,
+      "currentGroups": [
+        {
+          "label": "桌上物品",
+          "items": [
+            "帽子",
+            "水壶",
+            "书本"
+          ]
+        }
+      ],
+      "choiceLabels": [
+        "水壶",
+        "书本",
+        "帽子"
+      ],
+      "reviewMode": "source-and-local-asset-review-no-browser",
+      "status": "needs-fix",
+      "issues": [
+        {
+          "type": "task-rule-evidence-missing",
+          "priority": "P1",
+          "evidence": "晒太阳和戴在头上的用途条件没有图示；三对象PNG完整。",
+          "proposedFix": "补阳光下准备出门、头上无帽的孩子任务图，继续使用原帽子/水壶/书本选项；不提前戴帽。"
+        }
+      ],
+      "existingEvidence": "所有三个选项和桌面对象均通过VisualToken/ChoiceCue映射成本地PNG；问题不是选项没有图。",
+      "scenePolicy": "可使用贴题任务线索/小面板；只在需要环境前提时使用情境图，不要求每题独立大场景。",
+      "assets": [
+        "new-sunny-outdoor"
+      ]
+    },
+    {
+      "gameId": "logic-rule-filter",
+      "roundId": "rainy-day-raincoat",
+      "roundNumber": 4,
+      "prompt": "外面下雨了，先装防雨用的东西，选哪一个？",
+      "currentSceneImage": null,
+      "currentGroups": [
+        {
+          "label": "桌上物品",
+          "items": [
+            "雨衣",
+            "帽子",
+            "饭盒"
+          ]
+        }
+      ],
+      "choiceLabels": [
+        "帽子",
+        "雨衣",
+        "饭盒"
+      ],
+      "reviewMode": "source-and-local-asset-review-no-browser",
+      "status": "needs-fix",
+      "issues": [
+        {
+          "type": "task-rule-evidence-missing",
+          "priority": "P1",
+          "evidence": "下雨是判定防雨用品的前提，图面只有雨衣/帽子/饭盒，完全看不到天气。",
+          "proposedFix": "复用045下雨初始场景或其雨窗线索，雨衣仍未穿；保留三对象图。"
+        }
+      ],
+      "existingEvidence": "所有三个选项和桌面对象均通过VisualToken/ChoiceCue映射成本地PNG；问题不是选项没有图。",
+      "scenePolicy": "可使用贴题任务线索/小面板；只在需要环境前提时使用情境图，不要求每题独立大场景。",
+      "assets": [
+        "045-rain-rain"
+      ]
+    },
+    {
+      "gameId": "logic-rule-filter",
+      "roundId": "need-drink",
+      "roundNumber": 5,
+      "prompt": "路上会口渴，先装能喝水用的东西，选哪一个？",
+      "currentSceneImage": null,
+      "currentGroups": [
+        {
+          "label": "桌上物品",
+          "items": [
+            "水壶",
+            "饭盒",
+            "文具盒"
+          ]
+        }
+      ],
+      "choiceLabels": [
+        "水壶",
+        "饭盒",
+        "文具盒"
+      ],
+      "reviewMode": "source-and-local-asset-review-no-browser",
+      "status": "needs-fix",
+      "issues": [
+        {
+          "type": "task-rule-evidence-missing",
+          "priority": "P1",
+          "evidence": "路上会口渴这个需求只在题干；图面对象无法区别这次要喝水还是带食物。",
+          "proposedFix": "补远足前口渴的孩子图，双手空着、尚未喝水；不把水壶拿在手里泄漏已完成的动作。"
+        }
+      ],
+      "existingEvidence": "所有三个选项和桌面对象均通过VisualToken/ChoiceCue映射成本地PNG；问题不是选项没有图。",
+      "scenePolicy": "可使用贴题任务线索/小面板；只在需要环境前提时使用情境图，不要求每题独立大场景。",
+      "assets": [
+        "new-thirsty-child"
+      ]
+    },
+    {
+      "gameId": "logic-rule-filter",
+      "roundId": "lunch-box",
+      "roundNumber": 6,
+      "prompt": "中午要吃点心，先装能放食物的东西，选哪一个？",
+      "currentSceneImage": null,
+      "currentGroups": [
+        {
+          "label": "桌上物品",
+          "items": [
+            "饭盒",
+            "水壶",
+            "玩具车"
+          ]
+        }
+      ],
+      "choiceLabels": [
+        "饭盒",
+        "水壶",
+        "玩具车"
+      ],
+      "reviewMode": "source-and-local-asset-review-no-browser",
+      "status": "needs-fix",
+      "issues": [
+        {
+          "type": "task-rule-evidence-missing",
+          "priority": "P1",
+          "evidence": "点心/食物是待匹配的内容，只在题干；饭盒选项虽已画食物，不能替代独立的任务内容。",
+          "proposedFix": "复用045干净纸垫上的饼干图作为待装食物目标，保留饭盒/水壶/玩具车。"
+        }
+      ],
+      "existingEvidence": "所有三个选项和桌面对象均通过VisualToken/ChoiceCue映射成本地PNG；问题不是选项没有图。",
+      "scenePolicy": "可使用贴题任务线索/小面板；只在需要环境前提时使用情境图，不要求每题独立大场景。",
+      "assets": [
+        "045-snack-cookies"
+      ]
+    },
+    {
+      "gameId": "logic-rule-filter",
+      "roundId": "study-not-toy",
+      "roundNumber": 7,
+      "prompt": "今天上课，规则是：要学习用品，不要玩具。选哪一个？",
+      "currentSceneImage": null,
+      "currentGroups": [
+        {
+          "label": "桌上物品",
+          "items": [
+            "文具盒",
+            "玩具车",
+            "饭盒"
+          ]
+        }
+      ],
+      "choiceLabels": [
+        "玩具车",
+        "饭盒",
+        "文具盒"
+      ],
+      "reviewMode": "source-and-local-asset-review-no-browser",
+      "status": "needs-fix",
+      "issues": [
+        {
+          "type": "task-rule-evidence-missing",
+          "priority": "P1",
+          "evidence": "要学习用品且排除玩具两条规则仅文字/语音，物品图完整。",
+          "proposedFix": "复用045教室需求图；独立规则栏用学习任务图与玩具排除标记表达两条件；不增加无关生活大场景。"
+        }
+      ],
+      "existingEvidence": "所有三个选项和桌面对象均通过VisualToken/ChoiceCue映射成本地PNG；问题不是选项没有图。",
+      "scenePolicy": "可使用贴题任务线索/小面板；只在需要环境前提时使用情境图，不要求每题独立大场景。",
+      "assets": [
+        "045-writing-classroom",
+        "existing-toyCar"
+      ]
+    },
+    {
+      "gameId": "logic-rule-filter",
+      "roundId": "outside-not-food",
+      "roundNumber": 8,
+      "prompt": "要去操场晒太阳，规则是：带遮阳用的，不带装点心的盒子。选哪一个？",
+      "currentSceneImage": null,
+      "currentGroups": [
+        {
+          "label": "桌上物品",
+          "items": [
+            "帽子",
+            "饭盒",
+            "书本"
+          ]
+        }
+      ],
+      "choiceLabels": [
+        "饭盒",
+        "帽子",
+        "书本"
+      ],
+      "reviewMode": "source-and-local-asset-review-no-browser",
+      "status": "needs-fix",
+      "issues": [
+        {
+          "type": "task-rule-evidence-missing",
+          "priority": "P1",
+          "evidence": "晒太阳/遮阳与不要点心盒两个条件均只在文字里，现图只有三对象。",
+          "proposedFix": "共享阳光出门未戴帽任务图，规则栏以明确排除标记配已有饭盒图；不提前给孩子戴帽。"
+        }
+      ],
+      "existingEvidence": "所有三个选项和桌面对象均通过VisualToken/ChoiceCue映射成本地PNG；问题不是选项没有图。",
+      "scenePolicy": "可使用贴题任务线索/小面板；只在需要环境前提时使用情境图，不要求每题独立大场景。",
+      "assets": [
+        "new-sunny-outdoor",
+        "existing-lunchBox"
+      ]
+    },
+    {
+      "gameId": "logic-rule-filter",
+      "roundId": "rain-and-wear",
+      "roundNumber": 9,
+      "prompt": "下雨出门，规则是：能穿在身上，还能防雨。选哪一个？",
+      "currentSceneImage": null,
+      "currentGroups": [
+        {
+          "label": "桌上物品",
+          "items": [
+            "雨衣",
+            "帽子",
+            "水壶"
+          ]
+        }
+      ],
+      "choiceLabels": [
+        "帽子",
+        "雨衣",
+        "水壶"
+      ],
+      "reviewMode": "source-and-local-asset-review-no-browser",
+      "status": "needs-fix",
+      "issues": [
+        {
+          "type": "task-rule-evidence-missing",
+          "priority": "P1",
+          "evidence": "防雨且能穿身上的交集条件缺视觉线索；雨衣和帽子本身均有图。",
+          "proposedFix": "共享045雨天初始图，明确孩子未穿雨衣；两个条件可用天气线索与身体穿戴位置图表。"
+        }
+      ],
+      "existingEvidence": "所有三个选项和桌面对象均通过VisualToken/ChoiceCue映射成本地PNG；问题不是选项没有图。",
+      "scenePolicy": "可使用贴题任务线索/小面板；只在需要环境前提时使用情境图，不要求每题独立大场景。",
+      "assets": [
+        "045-rain-rain"
+      ]
+    },
+    {
+      "gameId": "logic-rule-filter",
+      "roundId": "small-hard-safe",
+      "roundNumber": 10,
+      "prompt": "要把铅笔收好，规则是：能装铅笔，还能合上防止散落。选哪一个？",
+      "currentSceneImage": null,
+      "currentGroups": [
+        {
+          "label": "桌上物品",
+          "items": [
+            "文具盒",
+            "书本",
+            "雨衣"
+          ]
+        }
+      ],
+      "choiceLabels": [
+        "书本",
+        "雨衣",
+        "文具盒"
+      ],
+      "reviewMode": "source-and-local-asset-review-no-browser",
+      "status": "needs-fix",
+      "issues": [
+        {
+          "type": "task-rule-evidence-missing",
+          "priority": "P1",
+          "evidence": "待收铅笔未独立出现；两个条件中“可合上防散落”没有规则图示。现文具盒PNG是可见拉链的开口笔袋，识别正确但不能体现合上状态。",
+          "proposedFix": "补待收铅笔目标，补闭合笔袋/拉链状态细节作为规则条件或答后解释；不把已收好当初始情境。"
+        }
+      ],
+      "existingEvidence": "所有三个选项和桌面对象均通过VisualToken/ChoiceCue映射成本地PNG；问题不是选项没有图。",
+      "scenePolicy": "可使用贴题任务线索/小面板；只在需要环境前提时使用情境图，不要求每题独立大场景。",
+      "assets": [
+        "new-loose-pencils",
+        "new-closed-pencil-case-detail"
+      ]
+    },
+    {
+      "gameId": "logic-rule-filter",
+      "roundId": "rule-switch-drink",
+      "roundNumber": 11,
+      "prompt": "刚才规则是学习用品，现在换成“能补充水分”。选哪一个？",
+      "currentSceneImage": null,
+      "currentGroups": [
+        {
+          "label": "桌上物品",
+          "items": [
+            "书本",
+            "文具盒",
+            "水壶"
+          ]
+        }
+      ],
+      "choiceLabels": [
+        "书本",
+        "水壶",
+        "文具盒"
+      ],
+      "reviewMode": "source-and-local-asset-review-no-browser",
+      "status": "needs-fix",
+      "issues": [
+        {
+          "type": "task-rule-evidence-missing",
+          "priority": "P1",
+          "evidence": "规则由学习用品切换成补水只在句子里，图面三对象与一般学习筛选相同，不能看出本次条件已换。",
+          "proposedFix": "共享口渴孩子线索作当前规则；如展示前后规则，前规则弱化并明确指向当前需求，避免双规则同时有效。"
+        }
+      ],
+      "existingEvidence": "所有三个选项和桌面对象均通过VisualToken/ChoiceCue映射成本地PNG；问题不是选项没有图。",
+      "scenePolicy": "可使用贴题任务线索/小面板；只在需要环境前提时使用情境图，不要求每题独立大场景。",
+      "assets": [
+        "new-thirsty-child",
+        "045-writing-classroom"
+      ]
+    },
+    {
+      "gameId": "logic-rule-filter",
+      "roundId": "rule-switch-no-toy",
+      "roundNumber": 12,
+      "prompt": "规则是：可以玩，但今天不能带去学校。谁应该留下？",
+      "currentSceneImage": null,
+      "currentGroups": [
+        {
+          "label": "桌上物品",
+          "items": [
+            "玩具车",
+            "书本",
+            "水壶"
+          ]
+        }
+      ],
+      "choiceLabels": [
+        "玩具车",
+        "书本",
+        "水壶"
+      ],
+      "reviewMode": "source-and-local-asset-review-no-browser",
+      "status": "needs-fix",
+      "issues": [
+        {
+          "type": "task-rule-evidence-missing",
+          "priority": "P1",
+          "evidence": "这题改成选留下物，图面仍只有三张普通对象卡；应留下/装包的任务方向只在文字里。",
+          "proposedFix": "增加“留在家”目标区域与装包区域的明确图示/箭头方向，复用空书包和房屋对象；题目对象仍留桌上，不先把车留好。"
+        }
+      ],
+      "existingEvidence": "所有三个选项和桌面对象均通过VisualToken/ChoiceCue映射成本地PNG；问题不是选项没有图。",
+      "scenePolicy": "可使用贴题任务线索/小面板；只在需要环境前提时使用情境图，不要求每题独立大场景。",
+      "assets": [
+        "045-packing-book",
+        "existing-backpack",
+        "existing-home"
+      ]
+    },
+    {
+      "gameId": "logic-rule-filter",
+      "roundId": "two-true-one-better",
+      "roundNumber": 13,
+      "prompt": "远足出发前已经口渴了，点心等到休息时再吃。先拿哪个？",
+      "currentSceneImage": null,
+      "currentGroups": [
+        {
+          "label": "桌上物品",
+          "items": [
+            "水壶",
+            "饭盒",
+            "玩具车"
+          ]
+        }
+      ],
+      "choiceLabels": [
+        "饭盒",
+        "玩具车",
+        "水壶"
+      ],
+      "reviewMode": "source-and-local-asset-review-no-browser",
+      "status": "needs-fix",
+      "issues": [
+        {
+          "type": "task-rule-evidence-missing",
+          "priority": "P1",
+          "evidence": "已口渴与点心要等休息两条优先级前提完全不在图面；水壶/饭盒/车图只能说明物品，无法比较当前紧急程度。",
+          "proposedFix": "共享远足前口渴孩子初始图；再以休息点/稍后用餐的次要线索或顺序标记保留点心稍后条件；不能只放一个水壶图当口渴。"
+        }
+      ],
+      "existingEvidence": "所有三个选项和桌面对象均通过VisualToken/ChoiceCue映射成本地PNG；问题不是选项没有图。",
+      "scenePolicy": "可使用贴题任务线索/小面板；只在需要环境前提时使用情境图，不要求每题独立大场景。",
+      "assets": [
+        "new-thirsty-child",
+        "existing-lunchBox"
+      ]
+    },
+    {
+      "gameId": "logic-rule-filter",
+      "roundId": "exclude-almost-right",
+      "roundNumber": 14,
+      "prompt": "下一节是阅读课，要翻开来看故事。先装哪一个？",
+      "currentSceneImage": null,
+      "currentGroups": [
+        {
+          "label": "桌上物品",
+          "items": [
+            "书本",
+            "水壶",
+            "帽子"
+          ]
+        }
+      ],
+      "choiceLabels": [
+        "水壶",
+        "帽子",
+        "书本"
+      ],
+      "reviewMode": "source-and-local-asset-review-no-browser",
+      "status": "needs-fix",
+      "issues": [
+        {
+          "type": "task-rule-evidence-missing",
+          "priority": "P1",
+          "evidence": "阅读课与翻开读故事的任务只在题干，现书本PNG闭合且无故事画面。",
+          "proposedFix": "补打开的图画故事书/阅读任务图作为用途线索，仍保留三对象选择，不提前装包。"
+        }
+      ],
+      "existingEvidence": "所有三个选项和桌面对象均通过VisualToken/ChoiceCue映射成本地PNG；问题不是选项没有图。",
+      "scenePolicy": "可使用贴题任务线索/小面板；只在需要环境前提时使用情境图，不要求每题独立大场景。",
+      "assets": [
+        "new-open-story-book"
+      ]
+    },
+    {
+      "gameId": "logic-relation-pairs",
+      "roundId": "bottle-water",
+      "roundNumber": 1,
+      "prompt": "水壶和谁最容易配成一对？",
+      "currentSceneImage": null,
+      "currentGroups": [
+        {
+          "label": "目标",
+          "items": [
+            "水壶"
+          ]
+        }
+      ],
+      "choiceLabels": [
+        "饭盒",
+        "水",
+        "铅笔"
+      ],
+      "reviewMode": "source-and-local-asset-review-no-browser",
+      "status": "pass",
+      "issues": [],
+      "reason": "水壶目标和饭盒/水滴/铅笔选项均有本地PNG；容器与内容关系所需对象齐全，无需添加生活情境。",
+      "assets": []
+    },
+    {
+      "gameId": "logic-relation-pairs",
+      "roundId": "pencil-case-pencil",
+      "roundNumber": 2,
+      "prompt": "文具盒里最常放谁？",
+      "currentSceneImage": null,
+      "currentGroups": [
+        {
+          "label": "目标",
+          "items": [
+            "文具盒"
+          ]
+        }
+      ],
+      "choiceLabels": [
+        "铅笔",
+        "饼干",
+        "雨衣"
+      ],
+      "reviewMode": "source-and-local-asset-review-no-browser",
+      "status": "pass",
+      "issues": [],
+      "reason": "文具盒目标及铅笔/饼干/雨衣选项均有本地PNG，文具盒可见开口与铅笔；目标和干扰图义清楚。",
+      "assets": []
+    },
+    {
+      "gameId": "logic-relation-pairs",
+      "roundId": "lunchbox-cookie",
+      "roundNumber": 3,
+      "prompt": "饭盒和谁最容易配成一对？",
+      "currentSceneImage": null,
+      "currentGroups": [
+        {
+          "label": "目标",
+          "items": [
+            "饭盒"
+          ]
+        }
+      ],
+      "choiceLabels": [
+        "饼干",
+        "水",
+        "铅笔"
+      ],
+      "reviewMode": "source-and-local-asset-review-no-browser",
+      "status": "pass",
+      "issues": [],
+      "reason": "饭盒与饼干/水/铅笔都有本地PNG；饭盒装食物的外观与内容关系一致，无缺失新目标。",
+      "assets": []
+    },
+    {
+      "gameId": "logic-relation-pairs",
+      "roundId": "fish-river",
+      "roundNumber": 4,
+      "prompt": "小鱼最需要和谁配成一对？",
+      "currentSceneImage": null,
+      "currentGroups": [
+        {
+          "label": "目标",
+          "items": [
+            "小鱼"
+          ]
+        }
+      ],
+      "choiceLabels": [
+        "天空",
+        "家",
+        "小河"
+      ],
+      "reviewMode": "source-and-local-asset-review-no-browser",
+      "status": "pass",
+      "issues": [],
+      "reason": "小鱼目标和天空/家/小河均可绘制；本地小鱼、小河、天空PNG加房屋精确小图可理解对象。没有动作或时间前提需要补场景。",
+      "assets": []
+    },
+    {
+      "gameId": "logic-relation-pairs",
+      "roundId": "bird-sky",
+      "roundNumber": 5,
+      "prompt": "小鸟常和谁配成一对？",
+      "currentSceneImage": null,
+      "currentGroups": [
+        {
+          "label": "目标",
+          "items": [
+            "小鸟"
+          ]
+        }
+      ],
+      "choiceLabels": [
+        "小河",
+        "盒子",
+        "天空"
+      ],
+      "reviewMode": "source-and-local-asset-review-no-browser",
+      "status": "pass",
+      "issues": [],
+      "reason": "小鸟目标与小河/盒子/天空选项图完整，飞行地点的三个候选可区分。",
+      "assets": []
+    },
+    {
+      "gameId": "logic-relation-pairs",
+      "roundId": "key-door",
+      "roundNumber": 6,
+      "prompt": "钥匙和谁最容易配成一对？",
+      "currentSceneImage": null,
+      "currentGroups": [
+        {
+          "label": "目标",
+          "items": [
+            "钥匙"
+          ]
+        }
+      ],
+      "choiceLabels": [
+        "饭盒",
+        "门",
+        "足球"
+      ],
+      "reviewMode": "source-and-local-asset-review-no-browser",
+      "status": "pass",
+      "issues": [],
+      "reason": "钥匙及饭盒/门/足球各有对应PNG；这里只考对象功能配对，无需把钥匙对象改成开锁动作图。",
+      "assets": []
+    },
+    {
+      "gameId": "logic-relation-pairs",
+      "roundId": "schoolbag-book-analogy",
+      "roundNumber": 7,
+      "prompt": "书包配书本，像饭盒配什么？",
+      "currentSceneImage": null,
+      "currentGroups": [
+        {
+          "label": "例子",
+          "items": [
+            "书包",
+            "书本"
+          ]
+        },
+        {
+          "label": "新目标",
+          "items": [
+            "饭盒"
+          ]
+        }
+      ],
+      "choiceLabels": [
+        "水",
+        "铅笔",
+        "饼干"
+      ],
+      "reviewMode": "source-and-local-asset-review-no-browser",
+      "status": "pass",
+      "issues": [],
+      "reason": "书包＋书本例子、独立饭盒新目标、三内容选项全部有PNG；例子和新目标分组明确，图像已覆盖类比结构。",
+      "assets": []
+    },
+    {
+      "gameId": "logic-relation-pairs",
+      "roundId": "bottle-case-analogy",
+      "roundNumber": 8,
+      "prompt": "水壶配水，像文具盒配什么？",
+      "currentSceneImage": null,
+      "currentGroups": [
+        {
+          "label": "例子",
+          "items": [
+            "水壶",
+            "水"
+          ]
+        },
+        {
+          "label": "新目标",
+          "items": [
+            "文具盒"
+          ]
+        }
+      ],
+      "choiceLabels": [
+        "饭盒",
+        "雨衣",
+        "铅笔"
+      ],
+      "reviewMode": "source-and-local-asset-review-no-browser",
+      "status": "pass",
+      "issues": [],
+      "reason": "水壶＋水例子、文具盒新目标、三个选项均完整，容器/内容角色由两图并置足够表达。",
+      "assets": []
+    },
+    {
+      "gameId": "logic-relation-pairs",
+      "roundId": "fish-bird-analogy",
+      "roundNumber": 9,
+      "prompt": "小鱼配小河，像小鸟配什么？",
+      "currentSceneImage": null,
+      "currentGroups": [
+        {
+          "label": "例子",
+          "items": [
+            "小鱼",
+            "小河"
+          ]
+        },
+        {
+          "label": "新目标",
+          "items": [
+            "小鸟"
+          ]
+        }
+      ],
+      "choiceLabels": [
+        "天空",
+        "盒子",
+        "家"
+      ],
+      "reviewMode": "source-and-local-asset-review-no-browser",
+      "status": "pass",
+      "issues": [],
+      "reason": "鱼＋河例子、鸟新目标以及天空/盒子/家选项齐全；无需加全场景泄漏鸟飞在天空的答案。",
+      "assets": []
+    },
+    {
+      "gameId": "logic-relation-pairs",
+      "roundId": "sun-raincoat-analogy",
+      "roundNumber": 10,
+      "prompt": "太阳大时配帽子，下雨时配什么？",
+      "currentSceneImage": null,
+      "currentGroups": [
+        {
+          "label": "例子",
+          "items": [
+            "太阳",
+            "帽子"
+          ]
+        }
+      ],
+      "choiceLabels": [
+        "雨衣",
+        "水壶",
+        "书本"
+      ],
+      "reviewMode": "source-and-local-asset-review-no-browser",
+      "status": "needs-fix",
+      "issues": [
+        {
+          "type": "missing-new-target",
+          "priority": "P1",
+          "evidence": "例子只有太阳＋帽子，新目标“下雨”完全缺席。不能用现phraseMap下雨→raincoat补，因为会以答案对象冒充天气。",
+          "proposedFix": "添加新目标雨天/雨窗图；原太阳与帽子例子保留，原三个选项保留。"
+        }
+      ],
+      "assets": [
+        "045-rain-rain"
+      ]
+    },
+    {
+      "gameId": "logic-relation-pairs",
+      "roundId": "thirst-hungry",
+      "roundNumber": 11,
+      "prompt": "口渴配水壶，饿了配什么？",
+      "currentSceneImage": null,
+      "currentGroups": [
+        {
+          "label": "例子",
+          "items": [
+            "水壶",
+            "水"
+          ]
+        }
+      ],
+      "choiceLabels": [
+        "帽子",
+        "饭盒",
+        "文具盒"
+      ],
+      "reviewMode": "source-and-local-asset-review-no-browser",
+      "status": "needs-fix",
+      "issues": [
+        {
+          "type": "wrong-example-and-missing-target",
+          "priority": "P1",
+          "evidence": "题干例子是口渴→水壶，实际例子显示水壶→水；新目标“饿了”完全没有。phraseMap口渴→cup也不能正确表现身体需求。",
+          "proposedFix": "例子改为真正口渴孩子＋水壶，独立新目标补未吃食物、轻摸肚子的饿了孩子图；不在新目标图放饭盒。"
+        }
+      ],
+      "assets": [
+        "new-thirsty-child",
+        "new-hungry-child"
+      ]
+    },
+    {
+      "gameId": "logic-relation-pairs",
+      "roundId": "door-river-tool",
+      "roundNumber": 12,
+      "prompt": "钥匙能帮我们过门，小河挡路时什么能帮我们过去？",
+      "currentSceneImage": null,
+      "currentGroups": [
+        {
+          "label": "例子",
+          "items": [
+            "钥匙",
+            "门"
+          ]
+        },
+        {
+          "label": "新问题",
+          "items": [
+            "小河"
+          ]
+        }
+      ],
+      "choiceLabels": [
+        "帽子",
+        "长木板",
+        "饭盒"
+      ],
+      "reviewMode": "source-and-local-asset-review-no-browser",
+      "status": "needs-fix",
+      "issues": [
+        {
+          "type": "missing-obstacle-context",
+          "priority": "P1",
+          "evidence": "小河目标只是一条蓝色水纹PNG，没有两岸被隔开或要过去的目标；长木板如何解决障碍要依赖题干想象，且容易被理解为在真实河面临时搭木板。",
+          "proposedFix": "将新问题替换为045明确桌面玩具河模型的未搭桥卡，近岸兔子与分隔两岸清楚；保留长木板对象选项，无需格数或新画危险实景。"
+        }
+      ],
+      "assets": [
+        "045-bridge-river"
+      ]
+    },
+    {
+      "gameId": "logic-relation-pairs",
+      "roundId": "two-containers",
+      "roundNumber": 13,
+      "prompt": "这三个东西都能装物品，饼干更适合放进哪一个？",
+      "currentSceneImage": null,
+      "currentGroups": [
+        {
+          "label": "内容",
+          "items": [
+            "饼干"
+          ]
+        }
+      ],
+      "choiceLabels": [
+        "饭盒",
+        "水壶",
+        "书包"
+      ],
+      "reviewMode": "source-and-local-asset-review-no-browser",
+      "status": "pass",
+      "issues": [],
+      "reason": "饼干内容目标明确，饭盒/水壶/书包三个容器均有本地PNG，语义一致。",
+      "assets": []
+    },
+    {
+      "gameId": "logic-relation-pairs",
+      "roundId": "not-same-kind",
+      "roundNumber": 14,
+      "prompt": "谁通常装在文具盒里面？",
+      "currentSceneImage": null,
+      "currentGroups": [
+        {
+          "label": "目标",
+          "items": [
+            "文具盒"
+          ]
+        }
+      ],
+      "choiceLabels": [
+        "书本",
+        "铅笔",
+        "书包"
+      ],
+      "reviewMode": "source-and-local-asset-review-no-browser",
+      "status": "pass",
+      "issues": [],
+      "reason": "文具盒目标、书本/铅笔/书包选项都有图，近似干扰的不同关系可以由对象和口述规则表达。",
+      "assets": []
+    },
+    {
+      "gameId": "logic-relation-pairs",
+      "roundId": "reverse-pair",
+      "roundNumber": 15,
+      "prompt": "看到水，应该想到水壶；看到铅笔，应该想到谁？",
+      "currentSceneImage": null,
+      "currentGroups": [
+        {
+          "label": "例子",
+          "items": [
+            "水",
+            "水壶"
+          ]
+        },
+        {
+          "label": "新内容",
+          "items": [
+            "铅笔"
+          ]
+        }
+      ],
+      "choiceLabels": [
+        "饭盒",
+        "雨衣",
+        "文具盒"
+      ],
+      "reviewMode": "source-and-local-asset-review-no-browser",
+      "status": "pass",
+      "issues": [],
+      "reason": "水＋水壶例子、铅笔新内容、饭盒/雨衣/文具盒选项全部可见，反向关系的新内容未缺失。",
+      "assets": []
+    },
+    {
+      "gameId": "logic-relation-pairs",
+      "roundId": "best-reason",
+      "roundNumber": 16,
+      "prompt": "要配成“动物和它飞行的地方”，小鸟应该配谁？",
+      "currentSceneImage": null,
+      "currentGroups": [
+        {
+          "label": "目标",
+          "items": [
+            "小鸟"
+          ]
+        }
+      ],
+      "choiceLabels": [
+        "风筝",
+        "小河",
+        "天空"
+      ],
+      "reviewMode": "source-and-local-asset-review-no-browser",
+      "status": "pass",
+      "issues": [],
+      "reason": "小鸟及风筝/小河/天空均有本地PNG；风筝是物品而天空为地点的图形区分充分，不必给正确选项新增场景。",
+      "assets": []
+    },
+    {
+      "gameId": "logic-stop-think",
+      "roundId": "logic-stop-think-1",
+      "roundNumber": 1,
+      "prompt": "桌面色卡游戏：绿片拍手，红片抱肩。看到这张卡，做什么？",
+      "currentSceneImage": null,
+      "currentGroups": [
+        {
+          "label": "这次的色卡",
+          "items": [
+            "🟢"
+          ]
+        }
+      ],
+      "choiceLabels": [
+        "拍手",
+        "抱肩",
+        "摸头"
+      ],
+      "reviewMode": "source-and-local-asset-review-no-browser",
+      "status": "needs-fix",
+      "currentRule": "绿片→拍手，红片→抱肩",
+      "existingEvidence": "圆片有本地PNG；抱肩与摸头有本地PNG且动作可辨。英文value通过label拍手/抱肩/摸头回退得到正确kind，因此不是纯文字选项。",
+      "issues": [
+        {
+          "type": "rough-action-illustration",
+          "priority": "P1",
+          "evidence": "clap没有rasterForKind分支，实际draw(clap)为两个无手指轮廓的皮肤色path加放射线，未像另两动作那样有完整人物动作图。",
+          "proposedFix": "补清楚的儿童拍手本地PNG；抱肩/摸头语义已可辨，可为了同一人物和风格同批重绘，后二者是风格统一而不是动作缺失。"
+        },
+        {
+          "type": "rule-mapping-only-in-audio-text",
+          "priority": "P1",
+          "evidence": "当前仅显示一张测试色卡，没有本题两条颜色→动作规则图；1/3/5题同为绿卡但应做三种不同动作，单看卡片无法知道当前规则。",
+          "proposedFix": "增加本题对应的两行色片→动作图规则，测试色片单独显示；保留语音规则，不使用红绿灯/交通背景。"
+        }
+      ],
+      "scenePolicy": "抽象桌面色卡不需要生活大场景；精确色片与规则对应图足够。",
+      "assets": [
+        "new-clap",
+        "existing-hugShoulders",
+        "existing-touchHead",
+        "existing-patternGreenDisc",
+        "existing-patternRedDisc"
+      ]
+    },
+    {
+      "gameId": "logic-stop-think",
+      "roundId": "logic-stop-think-2",
+      "roundNumber": 2,
+      "prompt": "桌面色卡游戏：绿片拍手，红片抱肩。看到这张卡，做什么？",
+      "currentSceneImage": null,
+      "currentGroups": [
+        {
+          "label": "这次的色卡",
+          "items": [
+            "🔴"
+          ]
+        }
+      ],
+      "choiceLabels": [
+        "拍手",
+        "摸头",
+        "抱肩"
+      ],
+      "reviewMode": "source-and-local-asset-review-no-browser",
+      "status": "needs-fix",
+      "currentRule": "绿片→拍手，红片→抱肩",
+      "existingEvidence": "圆片有本地PNG；抱肩与摸头有本地PNG且动作可辨。英文value通过label拍手/抱肩/摸头回退得到正确kind，因此不是纯文字选项。",
+      "issues": [
+        {
+          "type": "rough-action-illustration",
+          "priority": "P1",
+          "evidence": "clap没有rasterForKind分支，实际draw(clap)为两个无手指轮廓的皮肤色path加放射线，未像另两动作那样有完整人物动作图。",
+          "proposedFix": "补清楚的儿童拍手本地PNG；抱肩/摸头语义已可辨，可为了同一人物和风格同批重绘，后二者是风格统一而不是动作缺失。"
+        },
+        {
+          "type": "rule-mapping-only-in-audio-text",
+          "priority": "P1",
+          "evidence": "当前仅显示一张测试色卡，没有本题两条颜色→动作规则图；1/3/5题同为绿卡但应做三种不同动作，单看卡片无法知道当前规则。",
+          "proposedFix": "增加本题对应的两行色片→动作图规则，测试色片单独显示；保留语音规则，不使用红绿灯/交通背景。"
+        }
+      ],
+      "scenePolicy": "抽象桌面色卡不需要生活大场景；精确色片与规则对应图足够。",
+      "assets": [
+        "new-clap",
+        "existing-hugShoulders",
+        "existing-touchHead",
+        "existing-patternGreenDisc",
+        "existing-patternRedDisc"
+      ]
+    },
+    {
+      "gameId": "logic-stop-think",
+      "roundId": "logic-stop-think-3",
+      "roundNumber": 3,
+      "prompt": "桌面色卡游戏：换个玩法：绿片抱肩，红片拍手。看到这张卡，做什么？",
+      "currentSceneImage": null,
+      "currentGroups": [
+        {
+          "label": "这次的色卡",
+          "items": [
+            "🟢"
+          ]
+        }
+      ],
+      "choiceLabels": [
+        "拍手",
+        "抱肩",
+        "摸头"
+      ],
+      "reviewMode": "source-and-local-asset-review-no-browser",
+      "status": "needs-fix",
+      "currentRule": "绿片→抱肩，红片→拍手",
+      "existingEvidence": "圆片有本地PNG；抱肩与摸头有本地PNG且动作可辨。英文value通过label拍手/抱肩/摸头回退得到正确kind，因此不是纯文字选项。",
+      "issues": [
+        {
+          "type": "rough-action-illustration",
+          "priority": "P1",
+          "evidence": "clap没有rasterForKind分支，实际draw(clap)为两个无手指轮廓的皮肤色path加放射线，未像另两动作那样有完整人物动作图。",
+          "proposedFix": "补清楚的儿童拍手本地PNG；抱肩/摸头语义已可辨，可为了同一人物和风格同批重绘，后二者是风格统一而不是动作缺失。"
+        },
+        {
+          "type": "rule-mapping-only-in-audio-text",
+          "priority": "P1",
+          "evidence": "当前仅显示一张测试色卡，没有本题两条颜色→动作规则图；1/3/5题同为绿卡但应做三种不同动作，单看卡片无法知道当前规则。",
+          "proposedFix": "增加本题对应的两行色片→动作图规则，测试色片单独显示；保留语音规则，不使用红绿灯/交通背景。"
+        }
+      ],
+      "scenePolicy": "抽象桌面色卡不需要生活大场景；精确色片与规则对应图足够。",
+      "assets": [
+        "new-clap",
+        "existing-hugShoulders",
+        "existing-touchHead",
+        "existing-patternGreenDisc",
+        "existing-patternRedDisc"
+      ]
+    },
+    {
+      "gameId": "logic-stop-think",
+      "roundId": "logic-stop-think-4",
+      "roundNumber": 4,
+      "prompt": "桌面色卡游戏：换个玩法：绿片抱肩，红片拍手。看到这张卡，做什么？",
+      "currentSceneImage": null,
+      "currentGroups": [
+        {
+          "label": "这次的色卡",
+          "items": [
+            "🔴"
+          ]
+        }
+      ],
+      "choiceLabels": [
+        "抱肩",
+        "拍手",
+        "摸头"
+      ],
+      "reviewMode": "source-and-local-asset-review-no-browser",
+      "status": "needs-fix",
+      "currentRule": "绿片→抱肩，红片→拍手",
+      "existingEvidence": "圆片有本地PNG；抱肩与摸头有本地PNG且动作可辨。英文value通过label拍手/抱肩/摸头回退得到正确kind，因此不是纯文字选项。",
+      "issues": [
+        {
+          "type": "rough-action-illustration",
+          "priority": "P1",
+          "evidence": "clap没有rasterForKind分支，实际draw(clap)为两个无手指轮廓的皮肤色path加放射线，未像另两动作那样有完整人物动作图。",
+          "proposedFix": "补清楚的儿童拍手本地PNG；抱肩/摸头语义已可辨，可为了同一人物和风格同批重绘，后二者是风格统一而不是动作缺失。"
+        },
+        {
+          "type": "rule-mapping-only-in-audio-text",
+          "priority": "P1",
+          "evidence": "当前仅显示一张测试色卡，没有本题两条颜色→动作规则图；1/3/5题同为绿卡但应做三种不同动作，单看卡片无法知道当前规则。",
+          "proposedFix": "增加本题对应的两行色片→动作图规则，测试色片单独显示；保留语音规则，不使用红绿灯/交通背景。"
+        }
+      ],
+      "scenePolicy": "抽象桌面色卡不需要生活大场景；精确色片与规则对应图足够。",
+      "assets": [
+        "new-clap",
+        "existing-hugShoulders",
+        "existing-touchHead",
+        "existing-patternGreenDisc",
+        "existing-patternRedDisc"
+      ]
+    },
+    {
+      "gameId": "logic-stop-think",
+      "roundId": "logic-stop-think-5",
+      "roundNumber": 5,
+      "prompt": "桌面色卡游戏：再换规则：绿片摸头，红片抱肩。看到这张卡，做什么？",
+      "currentSceneImage": null,
+      "currentGroups": [
+        {
+          "label": "这次的色卡",
+          "items": [
+            "🟢"
+          ]
+        }
+      ],
+      "choiceLabels": [
+        "拍手",
+        "抱肩",
+        "摸头"
+      ],
+      "reviewMode": "source-and-local-asset-review-no-browser",
+      "status": "needs-fix",
+      "currentRule": "绿片→摸头，红片→抱肩",
+      "existingEvidence": "圆片有本地PNG；抱肩与摸头有本地PNG且动作可辨。英文value通过label拍手/抱肩/摸头回退得到正确kind，因此不是纯文字选项。",
+      "issues": [
+        {
+          "type": "rough-action-illustration",
+          "priority": "P1",
+          "evidence": "clap没有rasterForKind分支，实际draw(clap)为两个无手指轮廓的皮肤色path加放射线，未像另两动作那样有完整人物动作图。",
+          "proposedFix": "补清楚的儿童拍手本地PNG；抱肩/摸头语义已可辨，可为了同一人物和风格同批重绘，后二者是风格统一而不是动作缺失。"
+        },
+        {
+          "type": "rule-mapping-only-in-audio-text",
+          "priority": "P1",
+          "evidence": "当前仅显示一张测试色卡，没有本题两条颜色→动作规则图；1/3/5题同为绿卡但应做三种不同动作，单看卡片无法知道当前规则。",
+          "proposedFix": "增加本题对应的两行色片→动作图规则，测试色片单独显示；保留语音规则，不使用红绿灯/交通背景。"
+        }
+      ],
+      "scenePolicy": "抽象桌面色卡不需要生活大场景；精确色片与规则对应图足够。",
+      "assets": [
+        "new-clap",
+        "existing-hugShoulders",
+        "existing-touchHead",
+        "existing-patternGreenDisc",
+        "existing-patternRedDisc"
+      ]
+    },
+    {
+      "gameId": "logic-stop-think",
+      "roundId": "logic-stop-think-6",
+      "roundNumber": 6,
+      "prompt": "桌面色卡游戏：再换规则：绿片摸头，红片抱肩。看到这张卡，做什么？",
+      "currentSceneImage": null,
+      "currentGroups": [
+        {
+          "label": "这次的色卡",
+          "items": [
+            "🔴"
+          ]
+        }
+      ],
+      "choiceLabels": [
+        "抱肩",
+        "拍手",
+        "摸头"
+      ],
+      "reviewMode": "source-and-local-asset-review-no-browser",
+      "status": "needs-fix",
+      "currentRule": "绿片→摸头，红片→抱肩",
+      "existingEvidence": "圆片有本地PNG；抱肩与摸头有本地PNG且动作可辨。英文value通过label拍手/抱肩/摸头回退得到正确kind，因此不是纯文字选项。",
+      "issues": [
+        {
+          "type": "rough-action-illustration",
+          "priority": "P1",
+          "evidence": "clap没有rasterForKind分支，实际draw(clap)为两个无手指轮廓的皮肤色path加放射线，未像另两动作那样有完整人物动作图。",
+          "proposedFix": "补清楚的儿童拍手本地PNG；抱肩/摸头语义已可辨，可为了同一人物和风格同批重绘，后二者是风格统一而不是动作缺失。"
+        },
+        {
+          "type": "rule-mapping-only-in-audio-text",
+          "priority": "P1",
+          "evidence": "当前仅显示一张测试色卡，没有本题两条颜色→动作规则图；1/3/5题同为绿卡但应做三种不同动作，单看卡片无法知道当前规则。",
+          "proposedFix": "增加本题对应的两行色片→动作图规则，测试色片单独显示；保留语音规则，不使用红绿灯/交通背景。"
+        }
+      ],
+      "scenePolicy": "抽象桌面色卡不需要生活大场景；精确色片与规则对应图足够。",
+      "assets": [
+        "new-clap",
+        "existing-hugShoulders",
+        "existing-touchHead",
+        "existing-patternGreenDisc",
+        "existing-patternRedDisc"
+      ]
+    }
+  ],
+  "assetPlan": [
+    {
+      "id": "045-writing-classroom",
+      "disposition": "reuse",
+      "src": "/images/scenes/order-045-writing-classroom.png",
+      "use": "上课/学习任务线索",
+      "caveat": "孩子未写字；不要把其中铅笔/尺子当作本题新增选择。"
+    },
+    {
+      "id": "045-rain-rain",
+      "disposition": "reuse",
+      "src": "/images/scenes/order-045-rain-rain.png",
+      "use": "下雨条件或类比新目标",
+      "caveat": "雨衣挂墙未穿，原场景有帽子足球；若只需天气目标，优先雨窗证据，避免把雨衣对象代替下雨。"
+    },
+    {
+      "id": "045-snack-cookies",
+      "disposition": "reuse",
+      "src": "/images/items/order-045-snack-cookies.png",
+      "use": "待装点心内容；只画纸垫饼干，尚未装饭盒"
+    },
+    {
+      "id": "045-packing-book",
+      "disposition": "limited-reuse",
+      "src": "/images/scenes/order-045-packing-book.png",
+      "use": "未装好书包/留家与装包区域任务参考",
+      "caveat": "桌上是书/饭盒/水壶，没有玩具车，不能声称完整覆盖rule-switch-no-toy情境。"
+    },
+    {
+      "id": "045-bridge-river",
+      "disposition": "reuse",
+      "src": "/images/items/order-045-bridge-river.png",
+      "use": "桌面玩具小河作为过河新问题，尚无桥"
+    },
+    {
+      "id": "new-loose-pencils",
+      "disposition": "must-new-or-exact-existing-discovery",
+      "type": "item-task",
+      "brief": "几支铅笔散放在桌上待收，尚未放入文具盒；不带正确容器，图义是收好铅笔的目标。"
+    },
+    {
+      "id": "new-sunny-outdoor",
+      "disposition": "must-new-or-exact-existing-discovery",
+      "type": "scene-or-task-cue",
+      "brief": "阳光明显、准备到户外的橙衣孩子，头上无帽，双手空着，尚未选择或佩戴物品。"
+    },
+    {
+      "id": "new-thirsty-child",
+      "disposition": "must-new-or-exact-existing-discovery",
+      "type": "item-task",
+      "brief": "橙衣孩子轻摸喉咙表示口渴，双手不拿水壶/杯、不饮水；适合远足前、补水换规则、口渴类比例子共同复用。",
+      "existingNearMatch": "drinkingThirsty图可表达口渴但还带杯子/小水壶，若允许带额外工具可复用；纯需求图更准确。"
+    },
+    {
+      "id": "new-hungry-child",
+      "disposition": "must-new",
+      "type": "item-task",
+      "brief": "橙衣孩子轻摸肚子、饿了等待吃东西，没有饭盒/食物在手和嘴；明确是身体需求，不直接画答案对象。"
+    },
+    {
+      "id": "new-open-story-book",
+      "disposition": "must-new-or-exact-existing-discovery",
+      "type": "item-task",
+      "brief": "打开的无文字图画故事书，双页有清晰连续故事小图，用于阅读课任务；不要只画普通闭合书本。"
+    },
+    {
+      "id": "new-closed-pencil-case-detail",
+      "disposition": "must-new-or-exact-existing-discovery",
+      "type": "item-detail",
+      "brief": "同现蓝色拉链笔袋闭合后不散落铅笔的状态，可作为条件细节/答后说明；初始待收目标必须另图。"
+    },
+    {
+      "id": "new-clap",
+      "disposition": "must-new",
+      "type": "action",
+      "brief": "同暖色水彩橙衣孩子双手在胸前拍到一起，双手手指形状清楚，动作与抱肩摸头明显不同。"
+    },
+    {
+      "id": "existing-hugShoulders",
+      "disposition": "reuse-semantically-valid-optional-restyle",
+      "src": "/images/items/enlightenment/hug-shoulders.png",
+      "use": "双臂交叉手在肩上，动作清楚；现风格为简易线条人物PNG。"
+    },
+    {
+      "id": "existing-touchHead",
+      "disposition": "reuse-semantically-valid-optional-restyle",
+      "src": "/images/items/enlightenment/touch-head.png",
+      "use": "双手摸头，动作清楚；现风格为简易线条人物PNG。"
+    },
+    {
+      "id": "existing-toyCar",
+      "disposition": "reuse",
+      "src": "/images/items/toy-car.png",
+      "use": "玩具类别及排除规则图"
+    },
+    {
+      "id": "existing-lunchBox",
+      "disposition": "reuse",
+      "src": "/images/items/lunch-box.png",
+      "use": "食物容器图及排除条件/稍后点心图"
+    },
+    {
+      "id": "existing-backpack",
+      "disposition": "reuse",
+      "src": "/images/items/backpack.png",
+      "use": "装包目标区域"
+    },
+    {
+      "id": "existing-home",
+      "disposition": "reuse-code-native",
+      "source": "src/components/VisualToken.tsx draw(home)",
+      "use": "留在家目标区域；精确房屋图形已有语义，不需新画"
+    },
+    {
+      "id": "existing-patternGreenDisc",
+      "disposition": "reuse",
+      "src": "/images/items/pattern-train/green-disc.png",
+      "use": "纯桌面绿色色片"
+    },
+    {
+      "id": "existing-patternRedDisc",
+      "disposition": "reuse",
+      "src": "/images/items/pattern-train/red-disc.png",
+      "use": "纯桌面红色色片"
+    }
+  ],
+  "nonGoals": [
+    "不重画完整的普通配对对象PNG。",
+    "不要求全部36题新增大场景。",
+    "不把本题正确选择提前执行在初始图。",
+    "不以雨衣代替下雨、杯子代替口渴、饭盒代替饿了。"
+  ]
+}

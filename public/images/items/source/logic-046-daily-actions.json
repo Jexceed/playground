@@ -1,0 +1,74 @@
+{
+  "model": "gpt-6.1-sol",
+  "generator": "built-in image_gen",
+  "generatedFile": "/Users/chiang/.codex/generated_images/01a14fa7-7829-7452-8423-d2592d12ab53/exec-34c3b0ec-08bb-4f23-bf33-0f6406d7376a.png",
+  "prompt": "Use case: precise-object-edit. Edit this THREE-CELL watercolor atlas. Preserve EXACTLY the entire MIDDLE hugging-shoulders boy and entire RIGHT touching-head boy, preserve their scale, face, pose, hands, background, clothing, colors and layout. Preserve LEFT boy identity, face, orange shirt, body position and scale. Change ONLY LEFT boy's forearms and hands to make unmistakable CLAPPING rather than prayer: both hands meeting at chest height to the viewer's right of his sternum, wrists staggered; fingers point diagonally up-right about 45 degrees, not vertically beneath chin. Show one palm tilted facing viewer and the other palm hitting it in an unmistakable sideways asymmetric clap pose, anatomically accurate two hands and ten fingers. Fingers must NOT point vertically, hands must NOT form symmetrical prayer pose. Add TWO or THREE very subtle short curved hand-drawn brown motion strokes immediately outside the clapping hands to indicate a single clap. These are tiny drawn movement marks, not an icon, no text. His face continues looking straight forward with same happy expression. All hands remain within LEFT square. Keep exact THREE equal square cells, exact 3:1 canvas. No words, letters, numbers or watermarks. Absolutely no changes in middle or right.",
+  "originalPrompt": "Use case: illustration-story. Create a THREE-CARD action atlas, exact THREE columns by ONE row, three equal SQUARE cells, wide landscape 3:1 canvas. Aim 2400x800 or larger. Equal regular crop-safe grid with cream paper backgrounds. Use supplied reference for same warm watercolor and colored-pencil medium and SAME preschool boy identity: short dark brown hair, large brown eyes, orange short-sleeved shirt, blue trousers. All THREE cells SAME BOY, SAME FRONT-FACING orientation, SAME scale, SAME waist-up framing from above head to hips, calm happy expressions, same cream background. NO props. Reserve generous blank space around hands/head within each square. No text labels numbers arrows symbols burst lines or watermark. The ONLY difference between cells is the arm and hand action:\nLEFT CELL CLAP: boy CLAPPING HANDS, both palms physically TOUCHING TOGETHER vertically in front of upper chest, both wrists and all arms clearly connected, fingers visibly extended together. Two real anatomically plausible hands meeting palm-to-palm, not praying near face, not hands apart. His shoulders not touched, head not touched.\nCENTER CELL HUG SHOULDERS: boy CROSSES his two forearms in an X across his chest. LEFT hand rests on RIGHT SHOULDER and RIGHT hand rests on LEFT SHOULDER, both palms visibly contact opposite upper shoulder tips. Hands near shoulders not elbows, not a self-hug round stomach. Every arm and hand anatomically plausible and clearly drawn.\nRIGHT CELL TOUCH HEAD: boy raises BOTH arms in smooth arches, elbows open to sides, BOTH hands visibly resting on the TOP CROWN OF HIS HAIR. Hands touch top of head, not ears or cheeks or forehead. Both palms and all fingers plausible and arms clearly connected.\nMake these three physical actions instantly distinct for preschoolers without reading. Exact 3:1 atlas, consistent character and clothing, no background room furniture, no objects, no body parts cropped outside cells.",
+  "editTarget": "/Users/chiang/.codex/generated_images/01a14fa7-7829-7452-8423-d2592d12ab53/exec-c45b4173-554b-460e-961c-b86090534541.png",
+  "reference": "public/images/scenes/source/drinking-thirsty.png",
+  "sourceDimensions": {
+    "width": 2172,
+    "height": 724
+  },
+  "grid": {
+    "columns": 3,
+    "rows": 1,
+    "rowMajorKeys": [
+      "clap",
+      "hugShoulders",
+      "touchHead"
+    ]
+  },
+  "outputs": [
+    {
+      "key": "clap",
+      "path": "public/images/items/logic-046-daily-clap.png",
+      "crop": {
+        "left": 8,
+        "top": 8,
+        "width": 708,
+        "height": 708
+      },
+      "resize": {
+        "width": 600,
+        "height": 600,
+        "fit": "fill"
+      }
+    },
+    {
+      "key": "hugShoulders",
+      "path": "public/images/items/logic-046-daily-hugShoulders.png",
+      "crop": {
+        "left": 732,
+        "top": 8,
+        "width": 708,
+        "height": 708
+      },
+      "resize": {
+        "width": 600,
+        "height": 600,
+        "fit": "fill"
+      }
+    },
+    {
+      "key": "touchHead",
+      "path": "public/images/items/logic-046-daily-touchHead.png",
+      "crop": {
+        "left": 1456,
+        "top": 8,
+        "width": 708,
+        "height": 708
+      },
+      "resize": {
+        "width": 600,
+        "height": 600,
+        "fit": "fill"
+      }
+    }
+  ],
+  "visualReview": {
+    "status": "reviewed",
+    "date": "2026-10-19",
+    "note": "逐格检查需求、物体、手部及候选答案物是否符合要求"
+  }
+}

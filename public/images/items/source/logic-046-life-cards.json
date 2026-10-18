@@ -1,0 +1,72 @@
+{
+  "tool": "built-in image_gen",
+  "agentModel": "gpt-6.1-sol",
+  "source": "public/images/items/source/logic-046-life-cards.png",
+  "generatedPath": "/Users/chiang/.codex/generated_images/01a14fa7-1a75-71c3-a797-fcc6410ee5dc/exec-b732e959-bcfb-482c-923d-8a151b983699.png",
+  "prompt": "Use case: illustration-story. Create ONE STRICT 2 columns x 2 rows square sprite atlas: FOUR equal square independent action cards. Mechanical cuts at exactly half width and half height. Keep all main subjects fully inside each cell, generous pale cream margins, no visible grid border, no text labels numbers arrows watermark. All four use same warm watercolor colored pencil style and same short dark-haired East Asian boy ORANGE T-SHIRT BLUE TROUSERS, matching references. TOP LEFT: SAME kitchen sink, boy is washing his ALREADY PERFECTLY CLEAN HANDS AGAIN under running faucet. Both hands smooth clean peach skin, NO BROWN MUD anywhere on skin, fingers or nails, a little white soap foam and clear water; show face and hands large. TOP RIGHT: SAME snack table, boy's BOTH HANDS clearly COVERED IN BROWN MUD on fingertips and backs. He grasps TWO cookies together in one muddy hand, while the other muddy hand reaches to take an ADDITIONAL cookie from several cookies on paper mat. Not eating, not washing. Empty plate nearby. BOTTOM LEFT: SAME pedestrian crossing, red standing-person PEDESTRIAN light visibly lit. Adult mother in green blouse and cream trousers firmly holds boy's hand on SIDEWALK. Boy attempts a VERY SMALL SLOW SHUFFLE step, feet CLOSE TOGETHER with only a tiny heel lift and knees slightly bent, body slightly forward, NO LARGE STRIDE, no running, both feet entirely BEHIND CURB. Adult stops him safely before entering road. Car stationary behind white stop line. Contrast slow little shuffle with a big stepping action. BOTTOM RIGHT: SAME playroom TWO open wooden boxes (left block picture, right car picture). A FEW blocks and toy cars REMAIN MIXED INSIDE LEFT BOX. RIGHT BOX EMPTY. On floor OUTSIDE left box there are TWO CLEARLY SEPARATED LITTLE GROUPS: all building blocks in one pile, all toy cars in another. Boy reaches into mixed LEFT box to TAKE OUT a blue block and places it with the floor BLOCK pile using other hand; show TAKING OUT AND SEPARATING rather than putting toys into boxes. No final completed tidy result. Keep each cell semantically accurate; wrong actions are depicted literally without success symbols.",
+  "references": [
+    "public/images/scenes/order-045-snack-dirty.png",
+    "public/images/scenes/order-045-traffic-red.png",
+    "public/images/scenes/order-045-sorting-mixed.png"
+  ],
+  "grid": {
+    "columns": 2,
+    "rows": 2
+  },
+  "sourceWidth": 1254,
+  "sourceHeight": 1254,
+  "crops": [
+    {
+      "key": "cleanWashAgain",
+      "crop": {
+        "left": 8,
+        "top": 8,
+        "width": 611,
+        "height": 611
+      },
+      "output": "/images/items/logic-046-life-cleanWashAgain.png",
+      "width": 600,
+      "height": 600,
+      "alt": "已经干净的双手又在水龙头下搓洗，皮肤没有泥污。"
+    },
+    {
+      "key": "dirtyMoreCookies",
+      "crop": {
+        "left": 635,
+        "top": 8,
+        "width": 611,
+        "height": 611
+      },
+      "output": "/images/items/logic-046-life-dirtyMoreCookies.png",
+      "width": 600,
+      "height": 600,
+      "alt": "孩子两手仍有泥，已经拿着两块饼干，又伸泥手拿更多饼干，还没有洗手。"
+    },
+    {
+      "key": "slowRed",
+      "crop": {
+        "left": 8,
+        "top": 635,
+        "width": 611,
+        "height": 611
+      },
+      "output": "/images/items/logic-046-life-slowRed.png",
+      "width": 600,
+      "height": 600,
+      "alt": "行人红灯时孩子想小步慢挪，大人牵住孩子，双脚仍在路缘后的人行道上。"
+    },
+    {
+      "key": "takeOutSort",
+      "crop": {
+        "left": 635,
+        "top": 635,
+        "width": 611,
+        "height": 611
+      },
+      "output": "/images/items/logic-046-life-takeOutSort.png",
+      "width": 600,
+      "height": 600,
+      "alt": "孩子从混装盒中取出积木，在盒外把积木和小车分成两堆；原盒仍有部分混杂玩具，另一盒为空。"
+    }
+  ]
+}

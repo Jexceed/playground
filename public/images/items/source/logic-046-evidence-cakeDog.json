@@ -1,0 +1,24 @@
+{
+  "mode": "exact-scene-crop",
+  "scene": "/images/scenes/cake-evidence-kitchen.png",
+  "sceneSha256": "607a27192f9aa71f4217fed92fd9545b369b0786ad8851ac41b448da47e45898",
+  "coordinateSpace": {
+    "width": 1200,
+    "height": 675
+  },
+  "crop": {
+    "left": 660,
+    "top": 155,
+    "width": 325,
+    "height": 185
+  },
+  "output": "public/images/items/logic-046-evidence-cakeDog.png",
+  "resize": {
+    "width": 600,
+    "height": 600,
+    "fit": "contain",
+    "background": "#fffaf0"
+  },
+  "pixelsPolicy": "Only crop and resize original scene pixels. No generated evidence, no retouching, no extra footprints or behavior.",
+  "alt": "同一厨房远处，小狗蜷在蓝垫子上睡觉，身上未见奶油。"
+}

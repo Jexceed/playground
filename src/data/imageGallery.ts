@@ -1,3 +1,4 @@
+import { logicHouseScenes, logicHouseItems } from "./logicHouseAssets";
 import { orderStoryScenes, orderStoryItems } from "./orderStoryAssets";
 import { explorationImages } from "./explorationImages";
 import { explorationArtImages } from "./explorationArt";
@@ -13,6 +14,7 @@ export type GalleryImage = {
 export const imageGallery = {
   exploration: explorationImages,
   scenes: {
+    ...logicHouseScenes,
     ...orderStoryScenes,
     drinkingThirsty: {
       src: "/images/scenes/drinking-thirsty.png",
@@ -199,6 +201,7 @@ export const imageGallery = {
     },
   },
   items: {
+    ...logicHouseItems,
     ...orderStoryItems,
     drinkingThirsty: { src: "/images/items/drinking-thirsty.png", alt: "小朋友摸着喉咙，口渴了，杯子还放在桌上。" },
     drinkingTakeCup: { src: "/images/items/drinking-take-cup.png", alt: "小朋友拿起一个空杯子，杯子里还没有水。" },

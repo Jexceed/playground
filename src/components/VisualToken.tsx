@@ -387,8 +387,9 @@ function rasterForKind(kind: string) {
   if (kind === "redSquare") return imageGallery.items.thinkingRedSquare;
   if (kind === "yellowSquare") return imageGallery.items.thinkingYellowSquare;
   if (kind === "soilPot") return imageGallery.items.soilPot;
-  if (kind === "hugShoulders") return imageGallery.items.hugShoulders;
-  if (kind === "touchHead") return imageGallery.items.touchHead;
+  if (kind === "clap") return imageGallery.items.logic046Daily_clap;
+  if (kind === "hugShoulders") return imageGallery.items.logic046Daily_hugShoulders;
+  if (kind === "touchHead") return imageGallery.items.logic046Daily_touchHead;
   if (kind === "fishOnShore") return imageGallery.items.fishOnShore;
   if (kind === "patternRedDisc") return imageGallery.items.patternRedDisc;
   if (kind === "patternBlueDisc") return imageGallery.items.patternBlueDisc;

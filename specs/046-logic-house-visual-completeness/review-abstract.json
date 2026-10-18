@@ -1,0 +1,2611 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "art_plans",
+  "date": "2026-10-19",
+  "reviewMode": "read-only-source-and-data-review",
+  "scope": {
+    "groupCount": 18,
+    "roundCount": 216,
+    "issueRounds": 46,
+    "cleanRounds": 170
+  },
+  "limitations": [
+    "未操作用户UI；像素布局结论仅在CSS可直接证明时列为缺陷，其他窗口尺寸留主代理全量页面检查。",
+    "本文件是修复前审核；实现与关闭结果由主代理另行记录，不能将静态审核称为原生验收。"
+  ],
+  "sourceHashes": {
+    "src/components/VisualToken.tsx": "881812ce54b5ef45d24df8174256e6e3dcfdd34f265502e76a9703d0eadb4bf1",
+    "src/games/ProgressiveSetGame.tsx": "08400f7f63a317e07105cca36f1b4f9e036c1f3eebc0e72c921261d1fe0c7403",
+    "src/styles.css": "888356a1ae2ee26ddf681b579a6c21323a9cbf22f1e49c8d2f08e33152ee8833",
+    "specs/046-logic-house-visual-completeness/logic-rounds.json": "19a1d9c199596140ac094fba730dbe0fdc733729ea4d65ddf993e74791fc0353"
+  },
+  "verifiedFacts": {
+    "tokenChoiceMapping": "通过TypeScript转译加载实际visualMetaFor/visualParts，逐候选检查ChoiceContent/ChoiceCue分支。",
+    "patternAssets": "查看large-disc、small-disc以及cookie源PNG；圆片大小确有区别，饼干图为单个对象。",
+    "exactModel": "搭桥统一格长由enlightenmentBridgeModels+generate-enlightenment-bridges生成；方块层数网格、地址、路线、方向按数据复核。"
+  },
+  "groups": [
+    {
+      "gameId": "logic-pattern-train",
+      "title": "找规律火车",
+      "roundCount": 18,
+      "rounds": [
+        {
+          "id": "logic-pattern-train-1",
+          "prompt": "找规律，接下来是什么？",
+          "issue": [],
+          "noChangeReason": "每个序列项与三个候选均有准确本地规律图；缺口有专用占位，圆片大小已看源PNG确认不同，无需情境图。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-pattern-train-2",
+          "prompt": "找规律，空格里是什么？",
+          "issue": [],
+          "noChangeReason": "每个序列项与三个候选均有准确本地规律图；缺口有专用占位，圆片大小已看源PNG确认不同，无需情境图。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-pattern-train-3",
+          "prompt": "找规律，空格里是什么？",
+          "issue": [],
+          "noChangeReason": "每个序列项与三个候选均有准确本地规律图；缺口有专用占位，圆片大小已看源PNG确认不同，无需情境图。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-pattern-train-4",
+          "prompt": "找规律，接下来是什么？",
+          "issue": [],
+          "noChangeReason": "每个序列项与三个候选均有准确本地规律图；缺口有专用占位，圆片大小已看源PNG确认不同，无需情境图。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-pattern-train-5",
+          "prompt": "找规律，空格里是什么？",
+          "issue": [],
+          "noChangeReason": "每个序列项与三个候选均有准确本地规律图；缺口有专用占位，圆片大小已看源PNG确认不同，无需情境图。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-pattern-train-6",
+          "prompt": "找规律，空格里是什么？",
+          "issue": [],
+          "noChangeReason": "每个序列项与三个候选均有准确本地规律图；缺口有专用占位，圆片大小已看源PNG确认不同，无需情境图。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-pattern-train-7",
+          "prompt": "找规律，接下来是什么？",
+          "issue": [],
+          "noChangeReason": "每个序列项与三个候选均有准确本地规律图；缺口有专用占位，圆片大小已看源PNG确认不同，无需情境图。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-pattern-train-8",
+          "prompt": "找规律，空格里是什么？",
+          "issue": [],
+          "noChangeReason": "每个序列项与三个候选均有准确本地规律图；缺口有专用占位，圆片大小已看源PNG确认不同，无需情境图。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-pattern-train-9",
+          "prompt": "找规律，空格里是什么？",
+          "issue": [],
+          "noChangeReason": "每个序列项与三个候选均有准确本地规律图；缺口有专用占位，圆片大小已看源PNG确认不同，无需情境图。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-pattern-train-10",
+          "prompt": "找规律，接下来是什么？",
+          "issue": [],
+          "noChangeReason": "每个序列项与三个候选均有准确本地规律图；缺口有专用占位，圆片大小已看源PNG确认不同，无需情境图。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-pattern-train-11",
+          "prompt": "找规律，空格里是什么？",
+          "issue": [],
+          "noChangeReason": "每个序列项与三个候选均有准确本地规律图；缺口有专用占位，圆片大小已看源PNG确认不同，无需情境图。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-pattern-train-12",
+          "prompt": "找规律，空格里是什么？",
+          "issue": [],
+          "noChangeReason": "每个序列项与三个候选均有准确本地规律图；缺口有专用占位，圆片大小已看源PNG确认不同，无需情境图。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-pattern-train-13",
+          "prompt": "找规律，接下来是什么？",
+          "issue": [],
+          "noChangeReason": "每个序列项与三个候选均有准确本地规律图；缺口有专用占位，圆片大小已看源PNG确认不同，无需情境图。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-pattern-train-14",
+          "prompt": "找规律，空格里是什么？",
+          "issue": [],
+          "noChangeReason": "每个序列项与三个候选均有准确本地规律图；缺口有专用占位，圆片大小已看源PNG确认不同，无需情境图。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-pattern-train-15",
+          "prompt": "找规律，空格里是什么？",
+          "issue": [],
+          "noChangeReason": "每个序列项与三个候选均有准确本地规律图；缺口有专用占位，圆片大小已看源PNG确认不同，无需情境图。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-pattern-train-16",
+          "prompt": "找规律，接下来是什么？",
+          "issue": [],
+          "noChangeReason": "每个序列项与三个候选均有准确本地规律图；缺口有专用占位，圆片大小已看源PNG确认不同，无需情境图。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-pattern-train-17",
+          "prompt": "找规律，空格里是什么？",
+          "issue": [],
+          "noChangeReason": "每个序列项与三个候选均有准确本地规律图；缺口有专用占位，圆片大小已看源PNG确认不同，无需情境图。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-pattern-train-18",
+          "prompt": "找规律，空格里是什么？",
+          "issue": [],
+          "noChangeReason": "每个序列项与三个候选均有准确本地规律图；缺口有专用占位，圆片大小已看源PNG确认不同，无需情境图。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        }
+      ]
+    },
+    {
+      "gameId": "logic-sorter-switch",
+      "title": "会变规则的分类机",
+      "roundCount": 11,
+      "rounds": [
+        {
+          "id": "logic-sorter-switch-1",
+          "prompt": "分类机说：这次只看颜色。红色圆片要进哪个篮子？",
+          "issue": [
+            {
+              "code": "basket-is-only-a-shape",
+              "priority": 2,
+              "description": "篮子选项只画圆点或方块，容器语义缺失；形状篮子还会附带默认紫/蓝颜色。",
+              "evidence": [
+                "src/components/VisualToken.tsx:146-151"
+              ],
+              "minimalImplementation": "空篮子PNG叠加独立颜色/形状标记；形状标记统一中性色，避免增加非题目规则。"
+            }
+          ],
+          "noChangeReason": null,
+          "minimalImplementation": [
+            "空篮子PNG叠加独立颜色/形状标记；形状标记统一中性色，避免增加非题目规则。"
+          ]
+        },
+        {
+          "id": "logic-sorter-switch-2",
+          "prompt": "分类机说：这次只看颜色。蓝色圆片要进哪个篮子？",
+          "issue": [
+            {
+              "code": "basket-is-only-a-shape",
+              "priority": 2,
+              "description": "篮子选项只画圆点或方块，容器语义缺失；形状篮子还会附带默认紫/蓝颜色。",
+              "evidence": [
+                "src/components/VisualToken.tsx:146-151"
+              ],
+              "minimalImplementation": "空篮子PNG叠加独立颜色/形状标记；形状标记统一中性色，避免增加非题目规则。"
+            }
+          ],
+          "noChangeReason": null,
+          "minimalImplementation": [
+            "空篮子PNG叠加独立颜色/形状标记；形状标记统一中性色，避免增加非题目规则。"
+          ]
+        },
+        {
+          "id": "logic-sorter-switch-3",
+          "prompt": "规则换了：这次只看形状。红色圆片要进哪个篮子？",
+          "issue": [
+            {
+              "code": "basket-is-only-a-shape",
+              "priority": 2,
+              "description": "篮子选项只画圆点或方块，容器语义缺失；形状篮子还会附带默认紫/蓝颜色。",
+              "evidence": [
+                "src/components/VisualToken.tsx:146-151"
+              ],
+              "minimalImplementation": "空篮子PNG叠加独立颜色/形状标记；形状标记统一中性色，避免增加非题目规则。"
+            }
+          ],
+          "noChangeReason": null,
+          "minimalImplementation": [
+            "空篮子PNG叠加独立颜色/形状标记；形状标记统一中性色，避免增加非题目规则。"
+          ]
+        },
+        {
+          "id": "logic-sorter-switch-4",
+          "prompt": "规则换了：这次只看形状。蓝色方块要进哪个篮子？",
+          "issue": [
+            {
+              "code": "basket-is-only-a-shape",
+              "priority": 2,
+              "description": "篮子选项只画圆点或方块，容器语义缺失；形状篮子还会附带默认紫/蓝颜色。",
+              "evidence": [
+                "src/components/VisualToken.tsx:146-151"
+              ],
+              "minimalImplementation": "空篮子PNG叠加独立颜色/形状标记；形状标记统一中性色，避免增加非题目规则。"
+            }
+          ],
+          "noChangeReason": null,
+          "minimalImplementation": [
+            "空篮子PNG叠加独立颜色/形状标记；形状标记统一中性色，避免增加非题目规则。"
+          ]
+        },
+        {
+          "id": "logic-sorter-switch-5",
+          "prompt": "刚才看过形状，这次只看颜色。蓝色方块要进哪个篮子？",
+          "issue": [
+            {
+              "code": "basket-is-only-a-shape",
+              "priority": 2,
+              "description": "篮子选项只画圆点或方块，容器语义缺失；形状篮子还会附带默认紫/蓝颜色。",
+              "evidence": [
+                "src/components/VisualToken.tsx:146-151"
+              ],
+              "minimalImplementation": "空篮子PNG叠加独立颜色/形状标记；形状标记统一中性色，避免增加非题目规则。"
+            }
+          ],
+          "noChangeReason": null,
+          "minimalImplementation": [
+            "空篮子PNG叠加独立颜色/形状标记；形状标记统一中性色，避免增加非题目规则。"
+          ]
+        },
+        {
+          "id": "logic-sorter-switch-6",
+          "prompt": "还是蓝色方块，现在只看形状。它要进哪个篮子？",
+          "issue": [
+            {
+              "code": "basket-is-only-a-shape",
+              "priority": 2,
+              "description": "篮子选项只画圆点或方块，容器语义缺失；形状篮子还会附带默认紫/蓝颜色。",
+              "evidence": [
+                "src/components/VisualToken.tsx:146-151"
+              ],
+              "minimalImplementation": "空篮子PNG叠加独立颜色/形状标记；形状标记统一中性色，避免增加非题目规则。"
+            }
+          ],
+          "noChangeReason": null,
+          "minimalImplementation": [
+            "空篮子PNG叠加独立颜色/形状标记；形状标记统一中性色，避免增加非题目规则。"
+          ]
+        },
+        {
+          "id": "logic-sorter-switch-7",
+          "prompt": "黄色圆片有颜色也有形状。这次只看颜色，放哪里？",
+          "issue": [
+            {
+              "code": "basket-is-only-a-shape",
+              "priority": 2,
+              "description": "篮子选项只画圆点或方块，容器语义缺失；形状篮子还会附带默认紫/蓝颜色。",
+              "evidence": [
+                "src/components/VisualToken.tsx:146-151"
+              ],
+              "minimalImplementation": "空篮子PNG叠加独立颜色/形状标记；形状标记统一中性色，避免增加非题目规则。"
+            }
+          ],
+          "noChangeReason": null,
+          "minimalImplementation": [
+            "空篮子PNG叠加独立颜色/形状标记；形状标记统一中性色，避免增加非题目规则。"
+          ]
+        },
+        {
+          "id": "logic-sorter-switch-8",
+          "prompt": "黄色圆片有颜色也有形状。这次只看形状，放哪里？",
+          "issue": [
+            {
+              "code": "basket-is-only-a-shape",
+              "priority": 2,
+              "description": "篮子选项只画圆点或方块，容器语义缺失；形状篮子还会附带默认紫/蓝颜色。",
+              "evidence": [
+                "src/components/VisualToken.tsx:146-151"
+              ],
+              "minimalImplementation": "空篮子PNG叠加独立颜色/形状标记；形状标记统一中性色，避免增加非题目规则。"
+            }
+          ],
+          "noChangeReason": null,
+          "minimalImplementation": [
+            "空篮子PNG叠加独立颜色/形状标记；形状标记统一中性色，避免增加非题目规则。"
+          ]
+        },
+        {
+          "id": "logic-sorter-switch-9",
+          "prompt": "分类机要红色，也要圆形。选哪一张？",
+          "issue": [],
+          "noChangeReason": "候选颜色/形状与目标一致，单张图的双条件判断已配图，无需再加背景。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-sorter-switch-10",
+          "prompt": "分类机要蓝色，也要方形。哪一张两个条件都对？",
+          "issue": [],
+          "noChangeReason": "候选颜色/形状与目标一致，单张图的双条件判断已配图，无需再加背景。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-sorter-switch-11",
+          "prompt": "分类机要黄色，也要圆形。哪一张两个条件都对？",
+          "issue": [],
+          "noChangeReason": "候选颜色/形状与目标一致，单张图的双条件判断已配图，无需再加背景。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        }
+      ]
+    },
+    {
+      "gameId": "logic-space-bridge",
+      "title": "桥怎么搭",
+      "roundCount": 8,
+      "rounds": [
+        {
+          "id": "logic-space-bridge-1",
+          "prompt": "想选一块能搭过去的木板，先看哪个距离决定它至少要多长？",
+          "issue": [
+            {
+              "code": "bridge-candidate-diagrams-missing",
+              "priority": 1,
+              "description": "至少一个候选没有图，少数旧通用木板图也没有绑定本题精确格长/支点/摆放方向。",
+              "evidence": [
+                "src/games/ProgressiveSetGame.tsx:285-301",
+                "src/games/ProgressiveSetGame.tsx:327-331",
+                "src/data/enlightenmentBridges.ts:2-10"
+              ],
+              "minimalImplementation": "用现有模型数据绘制每个候选，统一格长；错误候选保留跨距不足、同岸放置或左右颠倒。第1题用距离端点示意。"
+            }
+          ],
+          "noChangeReason": null,
+          "minimalImplementation": [
+            "用现有模型数据绘制每个候选，统一格长；错误候选保留跨距不足、同岸放置或左右颠倒。第1题用距离端点示意。"
+          ]
+        },
+        {
+          "id": "logic-space-bridge-2",
+          "prompt": "模型河宽 6 格，中间有小岛。两段各宽 3 格，怎样搭过去？",
+          "issue": [
+            {
+              "code": "bridge-candidate-diagrams-missing",
+              "priority": 1,
+              "description": "至少一个候选没有图，少数旧通用木板图也没有绑定本题精确格长/支点/摆放方向。",
+              "evidence": [
+                "src/games/ProgressiveSetGame.tsx:285-301",
+                "src/games/ProgressiveSetGame.tsx:327-331",
+                "src/data/enlightenmentBridges.ts:2-10"
+              ],
+              "minimalImplementation": "用现有模型数据绘制每个候选，统一格长；错误候选保留跨距不足、同岸放置或左右颠倒。第1题用距离端点示意。"
+            }
+          ],
+          "noChangeReason": null,
+          "minimalImplementation": [
+            "用现有模型数据绘制每个候选，统一格长；错误候选保留跨距不足、同岸放置或左右颠倒。第1题用距离端点示意。"
+          ]
+        },
+        {
+          "id": "logic-space-bridge-3",
+          "prompt": "小岛两边分别宽 4 格和 2 格。只用两块，哪组能各搭一段？",
+          "issue": [
+            {
+              "code": "bridge-candidate-diagrams-missing",
+              "priority": 1,
+              "description": "至少一个候选没有图，少数旧通用木板图也没有绑定本题精确格长/支点/摆放方向。",
+              "evidence": [
+                "src/games/ProgressiveSetGame.tsx:285-301",
+                "src/games/ProgressiveSetGame.tsx:327-331",
+                "src/data/enlightenmentBridges.ts:2-10"
+              ],
+              "minimalImplementation": "用现有模型数据绘制每个候选，统一格长；错误候选保留跨距不足、同岸放置或左右颠倒。第1题用距离端点示意。"
+            }
+          ],
+          "noChangeReason": null,
+          "minimalImplementation": [
+            "用现有模型数据绘制每个候选，统一格长；错误候选保留跨距不足、同岸放置或左右颠倒。第1题用距离端点示意。"
+          ]
+        },
+        {
+          "id": "logic-space-bridge-4",
+          "prompt": "模型河宽 3 格，中间没有支点。哪块木板能一次搭到对岸？",
+          "issue": [
+            {
+              "code": "bridge-candidate-diagrams-missing",
+              "priority": 1,
+              "description": "至少一个候选没有图，少数旧通用木板图也没有绑定本题精确格长/支点/摆放方向。",
+              "evidence": [
+                "src/games/ProgressiveSetGame.tsx:285-301",
+                "src/games/ProgressiveSetGame.tsx:327-331",
+                "src/data/enlightenmentBridges.ts:2-10"
+              ],
+              "minimalImplementation": "用现有模型数据绘制每个候选，统一格长；错误候选保留跨距不足、同岸放置或左右颠倒。第1题用距离端点示意。"
+            }
+          ],
+          "noChangeReason": null,
+          "minimalImplementation": [
+            "用现有模型数据绘制每个候选，统一格长；错误候选保留跨距不足、同岸放置或左右颠倒。第1题用距离端点示意。"
+          ]
+        },
+        {
+          "id": "logic-space-bridge-5",
+          "prompt": "模型河宽 7 格，小岛两边分别宽 3 格和 4 格，怎样连通两岸？",
+          "issue": [
+            {
+              "code": "bridge-candidate-diagrams-missing",
+              "priority": 1,
+              "description": "至少一个候选没有图，少数旧通用木板图也没有绑定本题精确格长/支点/摆放方向。",
+              "evidence": [
+                "src/games/ProgressiveSetGame.tsx:285-301",
+                "src/games/ProgressiveSetGame.tsx:327-331",
+                "src/data/enlightenmentBridges.ts:2-10"
+              ],
+              "minimalImplementation": "用现有模型数据绘制每个候选，统一格长；错误候选保留跨距不足、同岸放置或左右颠倒。第1题用距离端点示意。"
+            }
+          ],
+          "noChangeReason": null,
+          "minimalImplementation": [
+            "用现有模型数据绘制每个候选，统一格长；错误候选保留跨距不足、同岸放置或左右颠倒。第1题用距离端点示意。"
+          ]
+        },
+        {
+          "id": "logic-space-bridge-6",
+          "prompt": "小岛两边分别宽 5 格和 3 格。只能用两块，哪组的长度都够？",
+          "issue": [
+            {
+              "code": "bridge-candidate-diagrams-missing",
+              "priority": 1,
+              "description": "至少一个候选没有图，少数旧通用木板图也没有绑定本题精确格长/支点/摆放方向。",
+              "evidence": [
+                "src/games/ProgressiveSetGame.tsx:285-301",
+                "src/games/ProgressiveSetGame.tsx:327-331",
+                "src/data/enlightenmentBridges.ts:2-10"
+              ],
+              "minimalImplementation": "用现有模型数据绘制每个候选，统一格长；错误候选保留跨距不足、同岸放置或左右颠倒。第1题用距离端点示意。"
+            }
+          ],
+          "noChangeReason": null,
+          "minimalImplementation": [
+            "用现有模型数据绘制每个候选，统一格长；错误候选保留跨距不足、同岸放置或左右颠倒。第1题用距离端点示意。"
+          ]
+        },
+        {
+          "id": "logic-space-bridge-7",
+          "prompt": "模型河宽 4 格，没有小岛。小熊拿哪块木板能搭到对岸？",
+          "issue": [
+            {
+              "code": "bridge-candidate-diagrams-missing",
+              "priority": 1,
+              "description": "至少一个候选没有图，少数旧通用木板图也没有绑定本题精确格长/支点/摆放方向。",
+              "evidence": [
+                "src/games/ProgressiveSetGame.tsx:285-301",
+                "src/games/ProgressiveSetGame.tsx:327-331",
+                "src/data/enlightenmentBridges.ts:2-10"
+              ],
+              "minimalImplementation": "用现有模型数据绘制每个候选，统一格长；错误候选保留跨距不足、同岸放置或左右颠倒。第1题用距离端点示意。"
+            }
+          ],
+          "noChangeReason": null,
+          "minimalImplementation": [
+            "用现有模型数据绘制每个候选，统一格长；错误候选保留跨距不足、同岸放置或左右颠倒。第1题用距离端点示意。"
+          ]
+        },
+        {
+          "id": "logic-space-bridge-8",
+          "prompt": "小岛两边分别宽 3 格和 5 格。长短两块木板，应该怎样放？",
+          "issue": [
+            {
+              "code": "bridge-candidate-diagrams-missing",
+              "priority": 1,
+              "description": "至少一个候选没有图，少数旧通用木板图也没有绑定本题精确格长/支点/摆放方向。",
+              "evidence": [
+                "src/games/ProgressiveSetGame.tsx:285-301",
+                "src/games/ProgressiveSetGame.tsx:327-331",
+                "src/data/enlightenmentBridges.ts:2-10"
+              ],
+              "minimalImplementation": "用现有模型数据绘制每个候选，统一格长；错误候选保留跨距不足、同岸放置或左右颠倒。第1题用距离端点示意。"
+            }
+          ],
+          "noChangeReason": null,
+          "minimalImplementation": [
+            "用现有模型数据绘制每个候选，统一格长；错误候选保留跨距不足、同岸放置或左右颠倒。第1题用距离端点示意。"
+          ]
+        }
+      ]
+    },
+    {
+      "gameId": "logic-same-kind-detective",
+      "title": "同类小侦探",
+      "roundCount": 12,
+      "rounds": [
+        {
+          "id": "logic-same-kind-detective-1",
+          "prompt": "这些都属于水果。谁也能放进这一组？",
+          "issue": [],
+          "noChangeReason": "观察组和全部候选都有可辨识的相应物品/动物图片；分类依常识，不需生活背景。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-same-kind-detective-2",
+          "prompt": "这些都属于交通工具。谁也能放进这一组？",
+          "issue": [],
+          "noChangeReason": "观察组和全部候选都有可辨识的相应物品/动物图片；分类依常识，不需生活背景。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-same-kind-detective-3",
+          "prompt": "这些都属于学习用品。谁也能放进这一组？",
+          "issue": [],
+          "noChangeReason": "观察组和全部候选都有可辨识的相应物品/动物图片；分类依常识，不需生活背景。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-same-kind-detective-4",
+          "prompt": "这些都属于有毛的四脚动物。谁也能放进这一组？",
+          "issue": [],
+          "noChangeReason": "观察组和全部候选都有可辨识的相应物品/动物图片；分类依常识，不需生活背景。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-same-kind-detective-5",
+          "prompt": "这些都属于圆圆的东西。谁也能放进这一组？",
+          "issue": [],
+          "noChangeReason": "观察组和全部候选都有可辨识的相应物品/动物图片；分类依常识，不需生活背景。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-same-kind-detective-6",
+          "prompt": "这些都属于可以吃的东西。谁也能放进这一组？",
+          "issue": [],
+          "noChangeReason": "观察组和全部候选都有可辨识的相应物品/动物图片；分类依常识，不需生活背景。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-same-kind-detective-7",
+          "prompt": "哪一个和其他几个最不一样？",
+          "issue": [],
+          "noChangeReason": "观察组和全部候选都有可辨识的相应物品/动物图片；分类依常识，不需生活背景。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-same-kind-detective-8",
+          "prompt": "哪一个和其他几个最不一样？",
+          "issue": [],
+          "noChangeReason": "观察组和全部候选都有可辨识的相应物品/动物图片；分类依常识，不需生活背景。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-same-kind-detective-9",
+          "prompt": "哪一个和其他几个最不一样？",
+          "issue": [],
+          "noChangeReason": "观察组和全部候选都有可辨识的相应物品/动物图片；分类依常识，不需生活背景。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-same-kind-detective-10",
+          "prompt": "哪一个和其他几个最不一样？",
+          "issue": [],
+          "noChangeReason": "观察组和全部候选都有可辨识的相应物品/动物图片；分类依常识，不需生活背景。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-same-kind-detective-11",
+          "prompt": "哪一个和其他几个最不一样？",
+          "issue": [],
+          "noChangeReason": "观察组和全部候选都有可辨识的相应物品/动物图片；分类依常识，不需生活背景。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-same-kind-detective-12",
+          "prompt": "哪一个和其他几个最不一样？",
+          "issue": [],
+          "noChangeReason": "观察组和全部候选都有可辨识的相应物品/动物图片；分类依常识，不需生活背景。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        }
+      ]
+    },
+    {
+      "gameId": "logic-number-pattern-trail",
+      "title": "数字规律小路",
+      "roundCount": 15,
+      "rounds": [
+        {
+          "id": "logic-number-pattern-trail-1",
+          "prompt": "数字小路里，问号处应该是几？",
+          "issue": [],
+          "noChangeReason": "数字本身是精确规律证据；大于10没有点阵不是缺图，不用插画替代数符。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-number-pattern-trail-2",
+          "prompt": "数字小路里，问号处应该是几？",
+          "issue": [],
+          "noChangeReason": "数字本身是精确规律证据；大于10没有点阵不是缺图，不用插画替代数符。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-number-pattern-trail-3",
+          "prompt": "数字小路里，问号处应该是几？",
+          "issue": [],
+          "noChangeReason": "数字本身是精确规律证据；大于10没有点阵不是缺图，不用插画替代数符。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-number-pattern-trail-4",
+          "prompt": "数字小路里，问号处应该是几？",
+          "issue": [],
+          "noChangeReason": "数字本身是精确规律证据；大于10没有点阵不是缺图，不用插画替代数符。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-number-pattern-trail-5",
+          "prompt": "数字小路里，问号处应该是几？",
+          "issue": [],
+          "noChangeReason": "数字本身是精确规律证据；大于10没有点阵不是缺图，不用插画替代数符。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-number-pattern-trail-6",
+          "prompt": "数字小路里，问号处应该是几？",
+          "issue": [],
+          "noChangeReason": "数字本身是精确规律证据；大于10没有点阵不是缺图，不用插画替代数符。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-number-pattern-trail-7",
+          "prompt": "数字小路里，问号处应该是几？",
+          "issue": [],
+          "noChangeReason": "数字本身是精确规律证据；大于10没有点阵不是缺图，不用插画替代数符。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-number-pattern-trail-8",
+          "prompt": "数字小路里，问号处应该是几？",
+          "issue": [],
+          "noChangeReason": "数字本身是精确规律证据；大于10没有点阵不是缺图，不用插画替代数符。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-number-pattern-trail-9",
+          "prompt": "数字小路里，问号处应该是几？",
+          "issue": [],
+          "noChangeReason": "数字本身是精确规律证据；大于10没有点阵不是缺图，不用插画替代数符。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-number-pattern-trail-10",
+          "prompt": "数字小路里，问号处应该是几？",
+          "issue": [],
+          "noChangeReason": "数字本身是精确规律证据；大于10没有点阵不是缺图，不用插画替代数符。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-number-pattern-trail-11",
+          "prompt": "数字小路里，问号处应该是几？",
+          "issue": [],
+          "noChangeReason": "数字本身是精确规律证据；大于10没有点阵不是缺图，不用插画替代数符。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-number-pattern-trail-12",
+          "prompt": "数字小路里，问号处应该是几？",
+          "issue": [],
+          "noChangeReason": "数字本身是精确规律证据；大于10没有点阵不是缺图，不用插画替代数符。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-number-pattern-trail-13",
+          "prompt": "数字小路里，问号处应该是几？",
+          "issue": [],
+          "noChangeReason": "数字本身是精确规律证据；大于10没有点阵不是缺图，不用插画替代数符。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-number-pattern-trail-14",
+          "prompt": "数字小路里，问号处应该是几？",
+          "issue": [],
+          "noChangeReason": "数字本身是精确规律证据；大于10没有点阵不是缺图，不用插画替代数符。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-number-pattern-trail-15",
+          "prompt": "数字小路里，问号处应该是几？",
+          "issue": [],
+          "noChangeReason": "数字本身是精确规律证据；大于10没有点阵不是缺图，不用插画替代数符。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        }
+      ]
+    },
+    {
+      "gameId": "logic-address-map",
+      "title": "地图找宝物",
+      "roundCount": 12,
+      "rounds": [
+        {
+          "id": "logic-address-map-1",
+          "prompt": "A1 里藏着什么？",
+          "issue": [],
+          "noChangeReason": "网格逐格物品已配本地图，行列标题完整；地址候选保留A2等符号正是学习目标，不重复标出答案格。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-address-map-2",
+          "prompt": "A3 里藏着什么？",
+          "issue": [],
+          "noChangeReason": "网格逐格物品已配本地图，行列标题完整；地址候选保留A2等符号正是学习目标，不重复标出答案格。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-address-map-3",
+          "prompt": "B2 里藏着什么？",
+          "issue": [],
+          "noChangeReason": "网格逐格物品已配本地图，行列标题完整；地址候选保留A2等符号正是学习目标，不重复标出答案格。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-address-map-4",
+          "prompt": "C1 里藏着什么？",
+          "issue": [],
+          "noChangeReason": "网格逐格物品已配本地图，行列标题完整；地址候选保留A2等符号正是学习目标，不重复标出答案格。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-address-map-5",
+          "prompt": "A4 里藏着什么？",
+          "issue": [],
+          "noChangeReason": "网格逐格物品已配本地图，行列标题完整；地址候选保留A2等符号正是学习目标，不重复标出答案格。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-address-map-6",
+          "prompt": "B3 里藏着什么？",
+          "issue": [],
+          "noChangeReason": "网格逐格物品已配本地图，行列标题完整；地址候选保留A2等符号正是学习目标，不重复标出答案格。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-address-map-7",
+          "prompt": "C2 里藏着什么？",
+          "issue": [],
+          "noChangeReason": "网格逐格物品已配本地图，行列标题完整；地址候选保留A2等符号正是学习目标，不重复标出答案格。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-address-map-8",
+          "prompt": "D4 里藏着什么？",
+          "issue": [],
+          "noChangeReason": "网格逐格物品已配本地图，行列标题完整；地址候选保留A2等符号正是学习目标，不重复标出答案格。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-address-map-9",
+          "prompt": "小狗住在哪个地址？",
+          "issue": [],
+          "noChangeReason": "网格逐格物品已配本地图，行列标题完整；地址候选保留A2等符号正是学习目标，不重复标出答案格。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-address-map-10",
+          "prompt": "葡萄住在哪个地址？",
+          "issue": [],
+          "noChangeReason": "网格逐格物品已配本地图，行列标题完整；地址候选保留A2等符号正是学习目标，不重复标出答案格。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-address-map-11",
+          "prompt": "足球住在哪个地址？",
+          "issue": [],
+          "noChangeReason": "网格逐格物品已配本地图，行列标题完整；地址候选保留A2等符号正是学习目标，不重复标出答案格。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-address-map-12",
+          "prompt": "蛋糕住在哪个地址？",
+          "issue": [],
+          "noChangeReason": "网格逐格物品已配本地图，行列标题完整；地址候选保留A2等符号正是学习目标，不重复标出答案格。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        }
+      ]
+    },
+    {
+      "gameId": "logic-matrix-puzzle",
+      "title": "图形补一补",
+      "roundCount": 6,
+      "rounds": [
+        {
+          "id": "logic-matrix-puzzle-1",
+          "prompt": "空格里应该放什么？",
+          "issue": [],
+          "noChangeReason": "矩阵支持单物、组合物和明确缺口；全部候选能分解对应图形，数量/颜色/大小/配对证据完整。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-matrix-puzzle-2",
+          "prompt": "空格里应该放什么？",
+          "issue": [],
+          "noChangeReason": "矩阵支持单物、组合物和明确缺口；全部候选能分解对应图形，数量/颜色/大小/配对证据完整。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-matrix-puzzle-3",
+          "prompt": "空格里应该放什么？",
+          "issue": [],
+          "noChangeReason": "矩阵支持单物、组合物和明确缺口；全部候选能分解对应图形，数量/颜色/大小/配对证据完整。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-matrix-puzzle-4",
+          "prompt": "空格里应该放什么？",
+          "issue": [],
+          "noChangeReason": "矩阵支持单物、组合物和明确缺口；全部候选能分解对应图形，数量/颜色/大小/配对证据完整。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-matrix-puzzle-5",
+          "prompt": "空格里应该放什么？",
+          "issue": [],
+          "noChangeReason": "矩阵支持单物、组合物和明确缺口；全部候选能分解对应图形，数量/颜色/大小/配对证据完整。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-matrix-puzzle-6",
+          "prompt": "空格里应该放什么？",
+          "issue": [],
+          "noChangeReason": "矩阵支持单物、组合物和明确缺口；全部候选能分解对应图形，数量/颜色/大小/配对证据完整。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        }
+      ]
+    },
+    {
+      "gameId": "logic-position-map",
+      "title": "方位小地图",
+      "roundCount": 12,
+      "rounds": [
+        {
+          "id": "logic-position-map-1",
+          "prompt": "谁在小猫的左边？",
+          "issue": [],
+          "noChangeReason": "空间网格已有物品图；里面/外面有实际收纳盒布局；方向候选为准确箭头，没有只用文字替代空间证据。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-position-map-2",
+          "prompt": "谁在小猫的右边？",
+          "issue": [],
+          "noChangeReason": "空间网格已有物品图；里面/外面有实际收纳盒布局；方向候选为准确箭头，没有只用文字替代空间证据。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-position-map-3",
+          "prompt": "谁在书包的上面？",
+          "issue": [],
+          "noChangeReason": "空间网格已有物品图；里面/外面有实际收纳盒布局；方向候选为准确箭头，没有只用文字替代空间证据。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-position-map-4",
+          "prompt": "谁在书包的下面？",
+          "issue": [],
+          "noChangeReason": "空间网格已有物品图；里面/外面有实际收纳盒布局；方向候选为准确箭头，没有只用文字替代空间证据。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-position-map-5",
+          "prompt": "盒子的左边是什么？",
+          "issue": [],
+          "noChangeReason": "空间网格已有物品图；里面/外面有实际收纳盒布局；方向候选为准确箭头，没有只用文字替代空间证据。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-position-map-6",
+          "prompt": "盒子的右边是什么？",
+          "issue": [],
+          "noChangeReason": "空间网格已有物品图；里面/外面有实际收纳盒布局；方向候选为准确箭头，没有只用文字替代空间证据。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-position-map-7",
+          "prompt": "盒子的上面是什么？",
+          "issue": [],
+          "noChangeReason": "空间网格已有物品图；里面/外面有实际收纳盒布局；方向候选为准确箭头，没有只用文字替代空间证据。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-position-map-8",
+          "prompt": "盒子的下面是什么？",
+          "issue": [],
+          "noChangeReason": "空间网格已有物品图；里面/外面有实际收纳盒布局；方向候选为准确箭头，没有只用文字替代空间证据。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-position-map-9",
+          "prompt": "谁在盒子里面？",
+          "issue": [],
+          "noChangeReason": "空间网格已有物品图；里面/外面有实际收纳盒布局；方向候选为准确箭头，没有只用文字替代空间证据。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-position-map-10",
+          "prompt": "谁在盒子外面？",
+          "issue": [],
+          "noChangeReason": "空间网格已有物品图；里面/外面有实际收纳盒布局；方向候选为准确箭头，没有只用文字替代空间证据。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-position-map-11",
+          "prompt": "按画面的左右，从小狗所在格到盒子，要往哪边？",
+          "issue": [],
+          "noChangeReason": "空间网格已有物品图；里面/外面有实际收纳盒布局；方向候选为准确箭头，没有只用文字替代空间证据。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-position-map-12",
+          "prompt": "按画面的左右，从小猫所在格到盒子，要往哪边？",
+          "issue": [],
+          "noChangeReason": "空间网格已有物品图；里面/外面有实际收纳盒布局；方向候选为准确箭头，没有只用文字替代空间证据。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        }
+      ]
+    },
+    {
+      "gameId": "logic-memory-camera",
+      "title": "记忆小相机",
+      "roundCount": 12,
+      "rounds": [
+        {
+          "id": "logic-memory-camera-1",
+          "prompt": "刚才相机里出现过谁？",
+          "issue": [],
+          "noChangeReason": "记忆项与候选都有对应PNG，遮盖时替换为覆盖图且不残留原标签；3–4项顺序由数组确定。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-memory-camera-2",
+          "prompt": "刚才相机里出现过谁？",
+          "issue": [],
+          "noChangeReason": "记忆项与候选都有对应PNG，遮盖时替换为覆盖图且不残留原标签；3–4项顺序由数组确定。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-memory-camera-3",
+          "prompt": "刚才相机里出现过谁？",
+          "issue": [],
+          "noChangeReason": "记忆项与候选都有对应PNG，遮盖时替换为覆盖图且不残留原标签；3–4项顺序由数组确定。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-memory-camera-4",
+          "prompt": "刚才相机里出现过谁？",
+          "issue": [],
+          "noChangeReason": "记忆项与候选都有对应PNG，遮盖时替换为覆盖图且不残留原标签；3–4项顺序由数组确定。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-memory-camera-5",
+          "prompt": "哪一个刚才没有出现？",
+          "issue": [],
+          "noChangeReason": "记忆项与候选都有对应PNG，遮盖时替换为覆盖图且不残留原标签；3–4项顺序由数组确定。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-memory-camera-6",
+          "prompt": "哪一个刚才没有出现？",
+          "issue": [],
+          "noChangeReason": "记忆项与候选都有对应PNG，遮盖时替换为覆盖图且不残留原标签；3–4项顺序由数组确定。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-memory-camera-7",
+          "prompt": "哪一个刚才没有出现？",
+          "issue": [],
+          "noChangeReason": "记忆项与候选都有对应PNG，遮盖时替换为覆盖图且不残留原标签；3–4项顺序由数组确定。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-memory-camera-8",
+          "prompt": "哪一个刚才没有出现？",
+          "issue": [],
+          "noChangeReason": "记忆项与候选都有对应PNG，遮盖时替换为覆盖图且不残留原标签；3–4项顺序由数组确定。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-memory-camera-9",
+          "prompt": "刚才第一个是什么？",
+          "issue": [],
+          "noChangeReason": "记忆项与候选都有对应PNG，遮盖时替换为覆盖图且不残留原标签；3–4项顺序由数组确定。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-memory-camera-10",
+          "prompt": "刚才第二个是什么？",
+          "issue": [],
+          "noChangeReason": "记忆项与候选都有对应PNG，遮盖时替换为覆盖图且不残留原标签；3–4项顺序由数组确定。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-memory-camera-11",
+          "prompt": "刚才最后一个是什么？",
+          "issue": [],
+          "noChangeReason": "记忆项与候选都有对应PNG，遮盖时替换为覆盖图且不残留原标签；3–4项顺序由数组确定。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-memory-camera-12",
+          "prompt": "刚才第三个是什么？",
+          "issue": [],
+          "noChangeReason": "记忆项与候选都有对应PNG，遮盖时替换为覆盖图且不残留原标签；3–4项顺序由数组确定。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        }
+      ]
+    },
+    {
+      "gameId": "logic-visual-match",
+      "title": "一模一样在哪里",
+      "roundCount": 12,
+      "rounds": [
+        {
+          "id": "logic-visual-match-1",
+          "prompt": "哪一张和上面完全一样？",
+          "issue": [],
+          "noChangeReason": "样板与候选均能按相同token解析；两图候选无缺图。狭窄窗口排列仍需主流程浏览器检查。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-visual-match-2",
+          "prompt": "哪一张和上面完全一样？",
+          "issue": [],
+          "noChangeReason": "样板与候选均能按相同token解析；两图候选无缺图。狭窄窗口排列仍需主流程浏览器检查。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-visual-match-3",
+          "prompt": "哪一张和上面完全一样？",
+          "issue": [],
+          "noChangeReason": "样板与候选均能按相同token解析；两图候选无缺图。狭窄窗口排列仍需主流程浏览器检查。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-visual-match-4",
+          "prompt": "哪一张和上面完全一样？",
+          "issue": [],
+          "noChangeReason": "样板与候选均能按相同token解析；两图候选无缺图。狭窄窗口排列仍需主流程浏览器检查。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-visual-match-5",
+          "prompt": "哪一张和上面完全一样？",
+          "issue": [
+            {
+              "code": "ordered-sample-and-choice-wrap-differently",
+              "priority": 1,
+              "description": "三图样板必换行，答案三图可以保持单行，与从左到右逐格比较要求不一致。",
+              "evidence": [
+                "src/styles.css:1878-1880",
+                "src/styles.css:2041-2046",
+                "src/styles.css:2185-2195"
+              ],
+              "minimalImplementation": "样板和候选采用同一保序图卡行：图标52×3+间距12=168，大于当前116上限；按数量设置槽位且不换行。"
+            }
+          ],
+          "noChangeReason": null,
+          "minimalImplementation": [
+            "样板和候选采用同一保序图卡行：图标52×3+间距12=168，大于当前116上限；按数量设置槽位且不换行。"
+          ]
+        },
+        {
+          "id": "logic-visual-match-6",
+          "prompt": "哪一张和上面完全一样？",
+          "issue": [
+            {
+              "code": "ordered-sample-and-choice-wrap-differently",
+              "priority": 1,
+              "description": "三图样板必换行，答案三图可以保持单行，与从左到右逐格比较要求不一致。",
+              "evidence": [
+                "src/styles.css:1878-1880",
+                "src/styles.css:2041-2046",
+                "src/styles.css:2185-2195"
+              ],
+              "minimalImplementation": "样板和候选采用同一保序图卡行：图标52×3+间距12=168，大于当前116上限；按数量设置槽位且不换行。"
+            }
+          ],
+          "noChangeReason": null,
+          "minimalImplementation": [
+            "样板和候选采用同一保序图卡行：图标52×3+间距12=168，大于当前116上限；按数量设置槽位且不换行。"
+          ]
+        },
+        {
+          "id": "logic-visual-match-7",
+          "prompt": "哪一张和另外两张不一样？",
+          "issue": [
+            {
+              "code": "position-choice-has-no-corresponding-card",
+              "priority": 2,
+              "description": "左边/中间/右边这张三个选项均为纯文字，没有展示所指候选图卡。",
+              "evidence": [
+                "src/games/ProgressiveSetGame.tsx:285-301",
+                "src/games/ProgressiveSetGame.tsx:327-331"
+              ],
+              "minimalImplementation": "根据位置value取三张小卡对应items，在选项内展示相同图卡并保留位置label。"
+            }
+          ],
+          "noChangeReason": null,
+          "minimalImplementation": [
+            "根据位置value取三张小卡对应items，在选项内展示相同图卡并保留位置label。"
+          ]
+        },
+        {
+          "id": "logic-visual-match-8",
+          "prompt": "哪一张和另外两张不一样？",
+          "issue": [
+            {
+              "code": "position-choice-has-no-corresponding-card",
+              "priority": 2,
+              "description": "左边/中间/右边这张三个选项均为纯文字，没有展示所指候选图卡。",
+              "evidence": [
+                "src/games/ProgressiveSetGame.tsx:285-301",
+                "src/games/ProgressiveSetGame.tsx:327-331"
+              ],
+              "minimalImplementation": "根据位置value取三张小卡对应items，在选项内展示相同图卡并保留位置label。"
+            }
+          ],
+          "noChangeReason": null,
+          "minimalImplementation": [
+            "根据位置value取三张小卡对应items，在选项内展示相同图卡并保留位置label。"
+          ]
+        },
+        {
+          "id": "logic-visual-match-9",
+          "prompt": "哪一张和另外两张不一样？",
+          "issue": [
+            {
+              "code": "position-choice-has-no-corresponding-card",
+              "priority": 2,
+              "description": "左边/中间/右边这张三个选项均为纯文字，没有展示所指候选图卡。",
+              "evidence": [
+                "src/games/ProgressiveSetGame.tsx:285-301",
+                "src/games/ProgressiveSetGame.tsx:327-331"
+              ],
+              "minimalImplementation": "根据位置value取三张小卡对应items，在选项内展示相同图卡并保留位置label。"
+            }
+          ],
+          "noChangeReason": null,
+          "minimalImplementation": [
+            "根据位置value取三张小卡对应items，在选项内展示相同图卡并保留位置label。"
+          ]
+        },
+        {
+          "id": "logic-visual-match-10",
+          "prompt": "哪一张和另外两张不一样？",
+          "issue": [
+            {
+              "code": "position-choice-has-no-corresponding-card",
+              "priority": 2,
+              "description": "左边/中间/右边这张三个选项均为纯文字，没有展示所指候选图卡。",
+              "evidence": [
+                "src/games/ProgressiveSetGame.tsx:285-301",
+                "src/games/ProgressiveSetGame.tsx:327-331"
+              ],
+              "minimalImplementation": "根据位置value取三张小卡对应items，在选项内展示相同图卡并保留位置label。"
+            }
+          ],
+          "noChangeReason": null,
+          "minimalImplementation": [
+            "根据位置value取三张小卡对应items，在选项内展示相同图卡并保留位置label。"
+          ]
+        },
+        {
+          "id": "logic-visual-match-11",
+          "prompt": "哪一张和另外两张不一样？",
+          "issue": [
+            {
+              "code": "position-choice-has-no-corresponding-card",
+              "priority": 2,
+              "description": "左边/中间/右边这张三个选项均为纯文字，没有展示所指候选图卡。",
+              "evidence": [
+                "src/games/ProgressiveSetGame.tsx:285-301",
+                "src/games/ProgressiveSetGame.tsx:327-331"
+              ],
+              "minimalImplementation": "根据位置value取三张小卡对应items，在选项内展示相同图卡并保留位置label。"
+            },
+            {
+              "code": "ordered-sample-and-choice-wrap-differently",
+              "priority": 1,
+              "description": "三图样板必换行，答案三图可以保持单行，与从左到右逐格比较要求不一致。",
+              "evidence": [
+                "src/styles.css:1878-1880",
+                "src/styles.css:2041-2046",
+                "src/styles.css:2185-2195"
+              ],
+              "minimalImplementation": "样板和候选采用同一保序图卡行：图标52×3+间距12=168，大于当前116上限；按数量设置槽位且不换行。"
+            }
+          ],
+          "noChangeReason": null,
+          "minimalImplementation": [
+            "根据位置value取三张小卡对应items，在选项内展示相同图卡并保留位置label。",
+            "样板和候选采用同一保序图卡行：图标52×3+间距12=168，大于当前116上限；按数量设置槽位且不换行。"
+          ]
+        },
+        {
+          "id": "logic-visual-match-12",
+          "prompt": "哪一张和另外两张不一样？",
+          "issue": [
+            {
+              "code": "position-choice-has-no-corresponding-card",
+              "priority": 2,
+              "description": "左边/中间/右边这张三个选项均为纯文字，没有展示所指候选图卡。",
+              "evidence": [
+                "src/games/ProgressiveSetGame.tsx:285-301",
+                "src/games/ProgressiveSetGame.tsx:327-331"
+              ],
+              "minimalImplementation": "根据位置value取三张小卡对应items，在选项内展示相同图卡并保留位置label。"
+            },
+            {
+              "code": "ordered-sample-and-choice-wrap-differently",
+              "priority": 1,
+              "description": "三图样板必换行，答案三图可以保持单行，与从左到右逐格比较要求不一致。",
+              "evidence": [
+                "src/styles.css:1878-1880",
+                "src/styles.css:2041-2046",
+                "src/styles.css:2185-2195"
+              ],
+              "minimalImplementation": "样板和候选采用同一保序图卡行：图标52×3+间距12=168，大于当前116上限；按数量设置槽位且不换行。"
+            }
+          ],
+          "noChangeReason": null,
+          "minimalImplementation": [
+            "根据位置value取三张小卡对应items，在选项内展示相同图卡并保留位置label。",
+            "样板和候选采用同一保序图卡行：图标52×3+间距12=168，大于当前116上限；按数量设置槽位且不换行。"
+          ]
+        }
+      ]
+    },
+    {
+      "gameId": "logic-difference-detective",
+      "title": "找不同侦探",
+      "roundCount": 12,
+      "rounds": [
+        {
+          "id": "logic-difference-detective-1",
+          "prompt": "右图里哪一个变了？",
+          "issue": [],
+          "noChangeReason": "左右图的换物/增物/缺物都由相应本地图逐项表达，候选完整，无需装饰图。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-difference-detective-2",
+          "prompt": "右图里哪一个变了？",
+          "issue": [],
+          "noChangeReason": "左右图的换物/增物/缺物都由相应本地图逐项表达，候选完整，无需装饰图。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-difference-detective-3",
+          "prompt": "右图里哪一个变了？",
+          "issue": [],
+          "noChangeReason": "左右图的换物/增物/缺物都由相应本地图逐项表达，候选完整，无需装饰图。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-difference-detective-4",
+          "prompt": "右图里哪一个变了？",
+          "issue": [],
+          "noChangeReason": "左右图的换物/增物/缺物都由相应本地图逐项表达，候选完整，无需装饰图。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-difference-detective-5",
+          "prompt": "右图里哪一个变了？",
+          "issue": [],
+          "noChangeReason": "左右图的换物/增物/缺物都由相应本地图逐项表达，候选完整，无需装饰图。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-difference-detective-6",
+          "prompt": "右图里哪一个变了？",
+          "issue": [],
+          "noChangeReason": "左右图的换物/增物/缺物都由相应本地图逐项表达，候选完整，无需装饰图。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-difference-detective-7",
+          "prompt": "右图比左图多了什么？",
+          "issue": [],
+          "noChangeReason": "左右图的换物/增物/缺物都由相应本地图逐项表达，候选完整，无需装饰图。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-difference-detective-8",
+          "prompt": "右图比左图多了什么？",
+          "issue": [],
+          "noChangeReason": "左右图的换物/增物/缺物都由相应本地图逐项表达，候选完整，无需装饰图。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-difference-detective-9",
+          "prompt": "右图比左图多了什么？",
+          "issue": [],
+          "noChangeReason": "左右图的换物/增物/缺物都由相应本地图逐项表达，候选完整，无需装饰图。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-difference-detective-10",
+          "prompt": "右图比左图少了什么？",
+          "issue": [],
+          "noChangeReason": "左右图的换物/增物/缺物都由相应本地图逐项表达，候选完整，无需装饰图。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-difference-detective-11",
+          "prompt": "右图比左图少了什么？",
+          "issue": [],
+          "noChangeReason": "左右图的换物/增物/缺物都由相应本地图逐项表达，候选完整，无需装饰图。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-difference-detective-12",
+          "prompt": "右图比左图少了什么？",
+          "issue": [],
+          "noChangeReason": "左右图的换物/增物/缺物都由相应本地图逐项表达，候选完整，无需装饰图。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        }
+      ]
+    },
+    {
+      "gameId": "logic-rotation-direction",
+      "title": "转一转方向",
+      "roundCount": 12,
+      "rounds": [
+        {
+          "id": "logic-rotation-direction-1",
+          "prompt": "箭头每次顺时针转一下，下一个指哪里？",
+          "issue": [],
+          "noChangeReason": "四方向使用精确箭头路径；1–8顺/逆时针，9–12交替模式，现有序列与答案一致。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-rotation-direction-2",
+          "prompt": "箭头每次顺时针转一下，下一个指哪里？",
+          "issue": [],
+          "noChangeReason": "四方向使用精确箭头路径；1–8顺/逆时针，9–12交替模式，现有序列与答案一致。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-rotation-direction-3",
+          "prompt": "箭头每次顺时针转一下，下一个指哪里？",
+          "issue": [],
+          "noChangeReason": "四方向使用精确箭头路径；1–8顺/逆时针，9–12交替模式，现有序列与答案一致。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-rotation-direction-4",
+          "prompt": "箭头每次顺时针转一下，下一个指哪里？",
+          "issue": [],
+          "noChangeReason": "四方向使用精确箭头路径；1–8顺/逆时针，9–12交替模式，现有序列与答案一致。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-rotation-direction-5",
+          "prompt": "箭头每次逆时针转一下，下一个指哪里？",
+          "issue": [],
+          "noChangeReason": "四方向使用精确箭头路径；1–8顺/逆时针，9–12交替模式，现有序列与答案一致。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-rotation-direction-6",
+          "prompt": "箭头每次逆时针转一下，下一个指哪里？",
+          "issue": [],
+          "noChangeReason": "四方向使用精确箭头路径；1–8顺/逆时针，9–12交替模式，现有序列与答案一致。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-rotation-direction-7",
+          "prompt": "箭头每次逆时针转一下，下一个指哪里？",
+          "issue": [],
+          "noChangeReason": "四方向使用精确箭头路径；1–8顺/逆时针，9–12交替模式，现有序列与答案一致。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-rotation-direction-8",
+          "prompt": "箭头每次逆时针转一下，下一个指哪里？",
+          "issue": [],
+          "noChangeReason": "四方向使用精确箭头路径；1–8顺/逆时针，9–12交替模式，现有序列与答案一致。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-rotation-direction-9",
+          "prompt": "箭头按规律转，下一个指哪里？",
+          "issue": [],
+          "noChangeReason": "四方向使用精确箭头路径；1–8顺/逆时针，9–12交替模式，现有序列与答案一致。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-rotation-direction-10",
+          "prompt": "箭头按规律转，下一个指哪里？",
+          "issue": [],
+          "noChangeReason": "四方向使用精确箭头路径；1–8顺/逆时针，9–12交替模式，现有序列与答案一致。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-rotation-direction-11",
+          "prompt": "箭头按规律转，下一个指哪里？",
+          "issue": [],
+          "noChangeReason": "四方向使用精确箭头路径；1–8顺/逆时针，9–12交替模式，现有序列与答案一致。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-rotation-direction-12",
+          "prompt": "箭头按规律转，下一个指哪里？",
+          "issue": [],
+          "noChangeReason": "四方向使用精确箭头路径；1–8顺/逆时针，9–12交替模式，现有序列与答案一致。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        }
+      ]
+    },
+    {
+      "gameId": "logic-part-whole-puzzle",
+      "title": "图卡少哪张",
+      "roundCount": 12,
+      "rounds": [
+        {
+          "id": "logic-part-whole-puzzle-1",
+          "prompt": "这组图卡还少哪张？",
+          "issue": [],
+          "noChangeReason": "完整组、已知组或可选块及全部答案均有对应图；这是集合缺项而非几何拼接，无需新增拼图插画。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-part-whole-puzzle-2",
+          "prompt": "这组图卡还少哪张？",
+          "issue": [],
+          "noChangeReason": "完整组、已知组或可选块及全部答案均有对应图；这是集合缺项而非几何拼接，无需新增拼图插画。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-part-whole-puzzle-3",
+          "prompt": "这组图卡还少哪张？",
+          "issue": [],
+          "noChangeReason": "完整组、已知组或可选块及全部答案均有对应图；这是集合缺项而非几何拼接，无需新增拼图插画。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-part-whole-puzzle-4",
+          "prompt": "这组图卡还少哪张？",
+          "issue": [],
+          "noChangeReason": "完整组、已知组或可选块及全部答案均有对应图；这是集合缺项而非几何拼接，无需新增拼图插画。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-part-whole-puzzle-5",
+          "prompt": "这组图卡还少哪张？",
+          "issue": [],
+          "noChangeReason": "完整组、已知组或可选块及全部答案均有对应图；这是集合缺项而非几何拼接，无需新增拼图插画。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-part-whole-puzzle-6",
+          "prompt": "这组图卡还少哪张？",
+          "issue": [],
+          "noChangeReason": "完整组、已知组或可选块及全部答案均有对应图；这是集合缺项而非几何拼接，无需新增拼图插画。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-part-whole-puzzle-7",
+          "prompt": "哪一块是多余的？",
+          "issue": [],
+          "noChangeReason": "完整组、已知组或可选块及全部答案均有对应图；这是集合缺项而非几何拼接，无需新增拼图插画。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-part-whole-puzzle-8",
+          "prompt": "哪一块是多余的？",
+          "issue": [],
+          "noChangeReason": "完整组、已知组或可选块及全部答案均有对应图；这是集合缺项而非几何拼接，无需新增拼图插画。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-part-whole-puzzle-9",
+          "prompt": "哪一块是多余的？",
+          "issue": [],
+          "noChangeReason": "完整组、已知组或可选块及全部答案均有对应图；这是集合缺项而非几何拼接，无需新增拼图插画。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-part-whole-puzzle-10",
+          "prompt": "哪一块是多余的？",
+          "issue": [],
+          "noChangeReason": "完整组、已知组或可选块及全部答案均有对应图；这是集合缺项而非几何拼接，无需新增拼图插画。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-part-whole-puzzle-11",
+          "prompt": "哪一块是多余的？",
+          "issue": [],
+          "noChangeReason": "完整组、已知组或可选块及全部答案均有对应图；这是集合缺项而非几何拼接，无需新增拼图插画。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-part-whole-puzzle-12",
+          "prompt": "哪一块是多余的？",
+          "issue": [],
+          "noChangeReason": "完整组、已知组或可选块及全部答案均有对应图；这是集合缺项而非几何拼接，无需新增拼图插画。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        }
+      ]
+    },
+    {
+      "gameId": "logic-balance-swap",
+      "title": "天平换一换",
+      "roundCount": 10,
+      "rounds": [
+        {
+          "id": "logic-balance-swap-1",
+          "prompt": "1 个苹果和几个草莓一样重？",
+          "issue": [
+            {
+              "code": "quantity-phrase-choices-have-no-counted-pictures",
+              "priority": 1,
+              "description": "数量候选如2个草莓、6个糖果既非纯数字也非已注册短语，选项图片为空。",
+              "evidence": [
+                "src/games/ProgressiveSetGame.tsx:314-331"
+              ],
+              "minimalImplementation": "解析本题数量/物品候选并重复相应现有PNG，图数严格等于标签数量，保留文字。"
+            }
+          ],
+          "noChangeReason": null,
+          "minimalImplementation": [
+            "解析本题数量/物品候选并重复相应现有PNG，图数严格等于标签数量，保留文字。"
+          ]
+        },
+        {
+          "id": "logic-balance-swap-2",
+          "prompt": "1 个橘子和几个饼干一样重？",
+          "issue": [
+            {
+              "code": "quantity-phrase-choices-have-no-counted-pictures",
+              "priority": 1,
+              "description": "数量候选如2个草莓、6个糖果既非纯数字也非已注册短语，选项图片为空。",
+              "evidence": [
+                "src/games/ProgressiveSetGame.tsx:314-331"
+              ],
+              "minimalImplementation": "解析本题数量/物品候选并重复相应现有PNG，图数严格等于标签数量，保留文字。"
+            }
+          ],
+          "noChangeReason": null,
+          "minimalImplementation": [
+            "解析本题数量/物品候选并重复相应现有PNG，图数严格等于标签数量，保留文字。"
+          ]
+        },
+        {
+          "id": "logic-balance-swap-3",
+          "prompt": "1 个蛋糕和几个糖果一样重？",
+          "issue": [
+            {
+              "code": "quantity-phrase-choices-have-no-counted-pictures",
+              "priority": 1,
+              "description": "数量候选如2个草莓、6个糖果既非纯数字也非已注册短语，选项图片为空。",
+              "evidence": [
+                "src/games/ProgressiveSetGame.tsx:314-331"
+              ],
+              "minimalImplementation": "解析本题数量/物品候选并重复相应现有PNG，图数严格等于标签数量，保留文字。"
+            }
+          ],
+          "noChangeReason": null,
+          "minimalImplementation": [
+            "解析本题数量/物品候选并重复相应现有PNG，图数严格等于标签数量，保留文字。"
+          ]
+        },
+        {
+          "id": "logic-balance-swap-4",
+          "prompt": "1 个足球和几颗星星一样重？",
+          "issue": [
+            {
+              "code": "quantity-phrase-choices-have-no-counted-pictures",
+              "priority": 1,
+              "description": "数量候选如2个草莓、6个糖果既非纯数字也非已注册短语，选项图片为空。",
+              "evidence": [
+                "src/games/ProgressiveSetGame.tsx:314-331"
+              ],
+              "minimalImplementation": "解析本题数量/物品候选并重复相应现有PNG，图数严格等于标签数量，保留文字。"
+            }
+          ],
+          "noChangeReason": null,
+          "minimalImplementation": [
+            "解析本题数量/物品候选并重复相应现有PNG，图数严格等于标签数量，保留文字。"
+          ]
+        },
+        {
+          "id": "logic-balance-swap-5",
+          "prompt": "2 个苹果可以换成几个草莓？",
+          "issue": [
+            {
+              "code": "quantity-phrase-choices-have-no-counted-pictures",
+              "priority": 1,
+              "description": "数量候选如2个草莓、6个糖果既非纯数字也非已注册短语，选项图片为空。",
+              "evidence": [
+                "src/games/ProgressiveSetGame.tsx:314-331"
+              ],
+              "minimalImplementation": "解析本题数量/物品候选并重复相应现有PNG，图数严格等于标签数量，保留文字。"
+            }
+          ],
+          "noChangeReason": null,
+          "minimalImplementation": [
+            "解析本题数量/物品候选并重复相应现有PNG，图数严格等于标签数量，保留文字。"
+          ]
+        },
+        {
+          "id": "logic-balance-swap-6",
+          "prompt": "2 个橘子可以换成几个饼干？",
+          "issue": [
+            {
+              "code": "quantity-phrase-choices-have-no-counted-pictures",
+              "priority": 1,
+              "description": "数量候选如2个草莓、6个糖果既非纯数字也非已注册短语，选项图片为空。",
+              "evidence": [
+                "src/games/ProgressiveSetGame.tsx:314-331"
+              ],
+              "minimalImplementation": "解析本题数量/物品候选并重复相应现有PNG，图数严格等于标签数量，保留文字。"
+            }
+          ],
+          "noChangeReason": null,
+          "minimalImplementation": [
+            "解析本题数量/物品候选并重复相应现有PNG，图数严格等于标签数量，保留文字。"
+          ]
+        },
+        {
+          "id": "logic-balance-swap-7",
+          "prompt": "2 个纸杯蛋糕可以换成几个糖果？",
+          "issue": [
+            {
+              "code": "quantity-phrase-choices-have-no-counted-pictures",
+              "priority": 1,
+              "description": "数量候选如2个草莓、6个糖果既非纯数字也非已注册短语，选项图片为空。",
+              "evidence": [
+                "src/games/ProgressiveSetGame.tsx:314-331"
+              ],
+              "minimalImplementation": "解析本题数量/物品候选并重复相应现有PNG，图数严格等于标签数量，保留文字。"
+            }
+          ],
+          "noChangeReason": null,
+          "minimalImplementation": [
+            "解析本题数量/物品候选并重复相应现有PNG，图数严格等于标签数量，保留文字。"
+          ]
+        },
+        {
+          "id": "logic-balance-swap-8",
+          "prompt": "3 个足球可以换成几个星星？",
+          "issue": [
+            {
+              "code": "quantity-phrase-choices-have-no-counted-pictures",
+              "priority": 1,
+              "description": "数量候选如2个草莓、6个糖果既非纯数字也非已注册短语，选项图片为空。",
+              "evidence": [
+                "src/games/ProgressiveSetGame.tsx:314-331"
+              ],
+              "minimalImplementation": "解析本题数量/物品候选并重复相应现有PNG，图数严格等于标签数量，保留文字。"
+            }
+          ],
+          "noChangeReason": null,
+          "minimalImplementation": [
+            "解析本题数量/物品候选并重复相应现有PNG，图数严格等于标签数量，保留文字。"
+          ]
+        },
+        {
+          "id": "logic-balance-swap-9",
+          "prompt": "哪边更重？",
+          "issue": [],
+          "noChangeReason": "本题重量规则已明确给出，左右图物品数量正确；比较方向为箭头，等重关系可保留文字，无需改变模型。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-balance-swap-10",
+          "prompt": "哪边更重，还是两边一样重？",
+          "issue": [],
+          "noChangeReason": "本题重量规则已明确给出，左右图物品数量正确；比较方向为箭头，等重关系可保留文字，无需改变模型。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        }
+      ]
+    },
+    {
+      "gameId": "logic-mirror-fold",
+      "title": "镜子折一折",
+      "roundCount": 12,
+      "rounds": [
+        {
+          "id": "logic-mirror-fold-1",
+          "prompt": "沿着中间的竖线折起来，两边能重合吗？",
+          "issue": [],
+          "noChangeReason": "竖轴矩阵/镜左序列与轴标记已提供对应关系；镜序题明确只看图卡顺序，候选按反序提供完整图形，无需翻转物品细节或生活背景。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-mirror-fold-2",
+          "prompt": "沿着中间的竖线折起来，两边能重合吗？",
+          "issue": [],
+          "noChangeReason": "竖轴矩阵/镜左序列与轴标记已提供对应关系；镜序题明确只看图卡顺序，候选按反序提供完整图形，无需翻转物品细节或生活背景。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-mirror-fold-3",
+          "prompt": "沿着中间的横线折起来，上下能重合吗？",
+          "issue": [
+            {
+              "code": "two-column-fold-renders-third-empty-column",
+              "priority": 2,
+              "description": "本题每行只有两个格，MatrixBoard样式却固定三列，形成不存在的第三空列，折叠平面不完整。",
+              "evidence": [
+                "src/styles.css:1658-1661",
+                "src/games/ProgressiveSetGame.tsx:1056-1070"
+              ],
+              "minimalImplementation": "矩阵列数取实际行长，横折轴横跨两格；保留原图卡、颜色和答案，无需背景插画。"
+            }
+          ],
+          "noChangeReason": null,
+          "minimalImplementation": [
+            "矩阵列数取实际行长，横折轴横跨两格；保留原图卡、颜色和答案，无需背景插画。"
+          ]
+        },
+        {
+          "id": "logic-mirror-fold-4",
+          "prompt": "沿着中间的横线折起来，上下能重合吗？",
+          "issue": [
+            {
+              "code": "two-column-fold-renders-third-empty-column",
+              "priority": 2,
+              "description": "本题每行只有两个格，MatrixBoard样式却固定三列，形成不存在的第三空列，折叠平面不完整。",
+              "evidence": [
+                "src/styles.css:1658-1661",
+                "src/games/ProgressiveSetGame.tsx:1056-1070"
+              ],
+              "minimalImplementation": "矩阵列数取实际行长，横折轴横跨两格；保留原图卡、颜色和答案，无需背景插画。"
+            }
+          ],
+          "noChangeReason": null,
+          "minimalImplementation": [
+            "矩阵列数取实际行长，横折轴横跨两格；保留原图卡、颜色和答案，无需背景插画。"
+          ]
+        },
+        {
+          "id": "logic-mirror-fold-5",
+          "prompt": "这张小卡是不是左右对称？",
+          "issue": [],
+          "noChangeReason": "竖轴矩阵/镜左序列与轴标记已提供对应关系；镜序题明确只看图卡顺序，候选按反序提供完整图形，无需翻转物品细节或生活背景。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-mirror-fold-6",
+          "prompt": "这张小卡是不是左右对称？",
+          "issue": [],
+          "noChangeReason": "竖轴矩阵/镜左序列与轴标记已提供对应关系；镜序题明确只看图卡顺序，候选按反序提供完整图形，无需翻转物品细节或生活背景。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-mirror-fold-7",
+          "prompt": "只看图卡的左右顺序，镜子右边应该怎样排？",
+          "issue": [],
+          "noChangeReason": "竖轴矩阵/镜左序列与轴标记已提供对应关系；镜序题明确只看图卡顺序，候选按反序提供完整图形，无需翻转物品细节或生活背景。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-mirror-fold-8",
+          "prompt": "只看图卡的左右顺序，镜子右边应该怎样排？",
+          "issue": [],
+          "noChangeReason": "竖轴矩阵/镜左序列与轴标记已提供对应关系；镜序题明确只看图卡顺序，候选按反序提供完整图形，无需翻转物品细节或生活背景。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-mirror-fold-9",
+          "prompt": "只看图卡的左右顺序，镜子右边应该怎样排？",
+          "issue": [],
+          "noChangeReason": "竖轴矩阵/镜左序列与轴标记已提供对应关系；镜序题明确只看图卡顺序，候选按反序提供完整图形，无需翻转物品细节或生活背景。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-mirror-fold-10",
+          "prompt": "只看图卡的左右顺序，镜子右边应该怎样排？",
+          "issue": [],
+          "noChangeReason": "竖轴矩阵/镜左序列与轴标记已提供对应关系；镜序题明确只看图卡顺序，候选按反序提供完整图形，无需翻转物品细节或生活背景。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-mirror-fold-11",
+          "prompt": "只看图卡的左右顺序，镜子右边应该怎样排？",
+          "issue": [],
+          "noChangeReason": "竖轴矩阵/镜左序列与轴标记已提供对应关系；镜序题明确只看图卡顺序，候选按反序提供完整图形，无需翻转物品细节或生活背景。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-mirror-fold-12",
+          "prompt": "只看图卡的左右顺序，镜子右边应该怎样排？",
+          "issue": [],
+          "noChangeReason": "竖轴矩阵/镜左序列与轴标记已提供对应关系；镜序题明确只看图卡顺序，候选按反序提供完整图形，无需翻转物品细节或生活背景。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        }
+      ]
+    },
+    {
+      "gameId": "logic-block-height-map",
+      "title": "积木楼层图",
+      "roundCount": 12,
+      "rounds": [
+        {
+          "id": "logic-block-height-map-1",
+          "prompt": "这张积木楼层图一共有几块积木？",
+          "issue": [],
+          "noChangeReason": "数值明确表示每格层数，总数比较可由现有数符精确推得；数值和左右关系是有效证据，不因无立体背景判缺图。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-block-height-map-2",
+          "prompt": "这张积木楼层图一共有几块积木？",
+          "issue": [],
+          "noChangeReason": "数值明确表示每格层数，总数比较可由现有数符精确推得；数值和左右关系是有效证据，不因无立体背景判缺图。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-block-height-map-3",
+          "prompt": "这张积木楼层图一共有几块积木？",
+          "issue": [],
+          "noChangeReason": "数值明确表示每格层数，总数比较可由现有数符精确推得；数值和左右关系是有效证据，不因无立体背景判缺图。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-block-height-map-4",
+          "prompt": "这张积木楼层图一共有几块积木？",
+          "issue": [],
+          "noChangeReason": "数值明确表示每格层数，总数比较可由现有数符精确推得；数值和左右关系是有效证据，不因无立体背景判缺图。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-block-height-map-5",
+          "prompt": "这张积木楼层图一共有几块积木？",
+          "issue": [],
+          "noChangeReason": "数值明确表示每格层数，总数比较可由现有数符精确推得；数值和左右关系是有效证据，不因无立体背景判缺图。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-block-height-map-6",
+          "prompt": "这张积木楼层图一共有几块积木？",
+          "issue": [],
+          "noChangeReason": "数值明确表示每格层数，总数比较可由现有数符精确推得；数值和左右关系是有效证据，不因无立体背景判缺图。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-block-height-map-7",
+          "prompt": "这张积木楼层图一共有几块积木？",
+          "issue": [],
+          "noChangeReason": "数值明确表示每格层数，总数比较可由现有数符精确推得；数值和左右关系是有效证据，不因无立体背景判缺图。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-block-height-map-8",
+          "prompt": "这张积木楼层图一共有几块积木？",
+          "issue": [],
+          "noChangeReason": "数值明确表示每格层数，总数比较可由现有数符精确推得；数值和左右关系是有效证据，不因无立体背景判缺图。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-block-height-map-9",
+          "prompt": "这张积木楼层图一共有几块积木？",
+          "issue": [],
+          "noChangeReason": "数值明确表示每格层数，总数比较可由现有数符精确推得；数值和左右关系是有效证据，不因无立体背景判缺图。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-block-height-map-10",
+          "prompt": "哪张积木楼层图的积木更多？",
+          "issue": [],
+          "noChangeReason": "数值明确表示每格层数，总数比较可由现有数符精确推得；数值和左右关系是有效证据，不因无立体背景判缺图。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-block-height-map-11",
+          "prompt": "哪张积木楼层图的积木更多？",
+          "issue": [],
+          "noChangeReason": "数值明确表示每格层数，总数比较可由现有数符精确推得；数值和左右关系是有效证据，不因无立体背景判缺图。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-block-height-map-12",
+          "prompt": "哪张积木楼层图的积木更多？",
+          "issue": [],
+          "noChangeReason": "数值明确表示每格层数，总数比较可由现有数符精确推得；数值和左右关系是有效证据，不因无立体背景判缺图。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        }
+      ]
+    },
+    {
+      "gameId": "logic-three-view-blocks",
+      "title": "从哪边看",
+      "roundCount": 18,
+      "rounds": [
+        {
+          "id": "logic-three-view-blocks-1",
+          "prompt": "从上面看，有几个位置放了积木？",
+          "issue": [],
+          "noChangeReason": "顶视题已有明确非零层数网格，数占用位置可得答案；不需要额外立体插画泄露计数或遮挡位置。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-three-view-blocks-2",
+          "prompt": "从上面看，有几个位置放了积木？",
+          "issue": [],
+          "noChangeReason": "顶视题已有明确非零层数网格，数占用位置可得答案；不需要额外立体插画泄露计数或遮挡位置。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-three-view-blocks-3",
+          "prompt": "从上面看，有几个位置放了积木？",
+          "issue": [],
+          "noChangeReason": "顶视题已有明确非零层数网格，数占用位置可得答案；不需要额外立体插画泄露计数或遮挡位置。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-three-view-blocks-4",
+          "prompt": "从上面看，有几个位置放了积木？",
+          "issue": [],
+          "noChangeReason": "顶视题已有明确非零层数网格，数占用位置可得答案；不需要额外立体插画泄露计数或遮挡位置。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-three-view-blocks-5",
+          "prompt": "从上面看，有几个位置放了积木？",
+          "issue": [],
+          "noChangeReason": "顶视题已有明确非零层数网格，数占用位置可得答案；不需要额外立体插画泄露计数或遮挡位置。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-three-view-blocks-6",
+          "prompt": "从上面看，有几个位置放了积木？",
+          "issue": [],
+          "noChangeReason": "顶视题已有明确非零层数网格，数占用位置可得答案；不需要额外立体插画泄露计数或遮挡位置。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-three-view-blocks-7",
+          "prompt": "从前面看，每一列最高会看到几层？",
+          "issue": [
+            {
+              "code": "view-profile-choices-are-text-only",
+              "priority": 1,
+              "description": "候选高度序列只显示2和1、1、2、1等文字，缺少对应方块列。",
+              "evidence": [
+                "src/games/ProgressiveSetGame.tsx:314-331"
+              ],
+              "minimalImplementation": "按候选数据画等单位方块列，列顺序与文字完全一致；不用近似长条，不展示正确答案额外提示。"
+            }
+          ],
+          "noChangeReason": null,
+          "minimalImplementation": [
+            "按候选数据画等单位方块列，列顺序与文字完全一致；不用近似长条，不展示正确答案额外提示。"
+          ]
+        },
+        {
+          "id": "logic-three-view-blocks-8",
+          "prompt": "从前面看，每一列最高会看到几层？",
+          "issue": [
+            {
+              "code": "view-profile-choices-are-text-only",
+              "priority": 1,
+              "description": "候选高度序列只显示2和1、1、2、1等文字，缺少对应方块列。",
+              "evidence": [
+                "src/games/ProgressiveSetGame.tsx:314-331"
+              ],
+              "minimalImplementation": "按候选数据画等单位方块列，列顺序与文字完全一致；不用近似长条，不展示正确答案额外提示。"
+            }
+          ],
+          "noChangeReason": null,
+          "minimalImplementation": [
+            "按候选数据画等单位方块列，列顺序与文字完全一致；不用近似长条，不展示正确答案额外提示。"
+          ]
+        },
+        {
+          "id": "logic-three-view-blocks-9",
+          "prompt": "从前面看，每一列最高会看到几层？",
+          "issue": [
+            {
+              "code": "view-profile-choices-are-text-only",
+              "priority": 1,
+              "description": "候选高度序列只显示2和1、1、2、1等文字，缺少对应方块列。",
+              "evidence": [
+                "src/games/ProgressiveSetGame.tsx:314-331"
+              ],
+              "minimalImplementation": "按候选数据画等单位方块列，列顺序与文字完全一致；不用近似长条，不展示正确答案额外提示。"
+            }
+          ],
+          "noChangeReason": null,
+          "minimalImplementation": [
+            "按候选数据画等单位方块列，列顺序与文字完全一致；不用近似长条，不展示正确答案额外提示。"
+          ]
+        },
+        {
+          "id": "logic-three-view-blocks-10",
+          "prompt": "从前面看，每一列最高会看到几层？",
+          "issue": [
+            {
+              "code": "view-profile-choices-are-text-only",
+              "priority": 1,
+              "description": "候选高度序列只显示2和1、1、2、1等文字，缺少对应方块列。",
+              "evidence": [
+                "src/games/ProgressiveSetGame.tsx:314-331"
+              ],
+              "minimalImplementation": "按候选数据画等单位方块列，列顺序与文字完全一致；不用近似长条，不展示正确答案额外提示。"
+            }
+          ],
+          "noChangeReason": null,
+          "minimalImplementation": [
+            "按候选数据画等单位方块列，列顺序与文字完全一致；不用近似长条，不展示正确答案额外提示。"
+          ]
+        },
+        {
+          "id": "logic-three-view-blocks-11",
+          "prompt": "从前面看，每一列最高会看到几层？",
+          "issue": [
+            {
+              "code": "view-profile-choices-are-text-only",
+              "priority": 1,
+              "description": "候选高度序列只显示2和1、1、2、1等文字，缺少对应方块列。",
+              "evidence": [
+                "src/games/ProgressiveSetGame.tsx:314-331"
+              ],
+              "minimalImplementation": "按候选数据画等单位方块列，列顺序与文字完全一致；不用近似长条，不展示正确答案额外提示。"
+            }
+          ],
+          "noChangeReason": null,
+          "minimalImplementation": [
+            "按候选数据画等单位方块列，列顺序与文字完全一致；不用近似长条，不展示正确答案额外提示。"
+          ]
+        },
+        {
+          "id": "logic-three-view-blocks-12",
+          "prompt": "从前面看，每一列最高会看到几层？",
+          "issue": [
+            {
+              "code": "view-profile-choices-are-text-only",
+              "priority": 1,
+              "description": "候选高度序列只显示2和1、1、2、1等文字，缺少对应方块列。",
+              "evidence": [
+                "src/games/ProgressiveSetGame.tsx:314-331"
+              ],
+              "minimalImplementation": "按候选数据画等单位方块列，列顺序与文字完全一致；不用近似长条，不展示正确答案额外提示。"
+            }
+          ],
+          "noChangeReason": null,
+          "minimalImplementation": [
+            "按候选数据画等单位方块列，列顺序与文字完全一致；不用近似长条，不展示正确答案额外提示。"
+          ]
+        },
+        {
+          "id": "logic-three-view-blocks-13",
+          "prompt": "从左边看，每一排最高会看到几层？",
+          "issue": [
+            {
+              "code": "view-profile-choices-are-text-only",
+              "priority": 1,
+              "description": "候选高度序列只显示2和1、1、2、1等文字，缺少对应方块列。",
+              "evidence": [
+                "src/games/ProgressiveSetGame.tsx:314-331"
+              ],
+              "minimalImplementation": "按候选数据画等单位方块列，列顺序与文字完全一致；不用近似长条，不展示正确答案额外提示。"
+            }
+          ],
+          "noChangeReason": null,
+          "minimalImplementation": [
+            "按候选数据画等单位方块列，列顺序与文字完全一致；不用近似长条，不展示正确答案额外提示。"
+          ]
+        },
+        {
+          "id": "logic-three-view-blocks-14",
+          "prompt": "从左边看，每一排最高会看到几层？",
+          "issue": [
+            {
+              "code": "view-profile-choices-are-text-only",
+              "priority": 1,
+              "description": "候选高度序列只显示2和1、1、2、1等文字，缺少对应方块列。",
+              "evidence": [
+                "src/games/ProgressiveSetGame.tsx:314-331"
+              ],
+              "minimalImplementation": "按候选数据画等单位方块列，列顺序与文字完全一致；不用近似长条，不展示正确答案额外提示。"
+            }
+          ],
+          "noChangeReason": null,
+          "minimalImplementation": [
+            "按候选数据画等单位方块列，列顺序与文字完全一致；不用近似长条，不展示正确答案额外提示。"
+          ]
+        },
+        {
+          "id": "logic-three-view-blocks-15",
+          "prompt": "从左边看，每一排最高会看到几层？",
+          "issue": [
+            {
+              "code": "view-profile-choices-are-text-only",
+              "priority": 1,
+              "description": "候选高度序列只显示2和1、1、2、1等文字，缺少对应方块列。",
+              "evidence": [
+                "src/games/ProgressiveSetGame.tsx:314-331"
+              ],
+              "minimalImplementation": "按候选数据画等单位方块列，列顺序与文字完全一致；不用近似长条，不展示正确答案额外提示。"
+            }
+          ],
+          "noChangeReason": null,
+          "minimalImplementation": [
+            "按候选数据画等单位方块列，列顺序与文字完全一致；不用近似长条，不展示正确答案额外提示。"
+          ]
+        },
+        {
+          "id": "logic-three-view-blocks-16",
+          "prompt": "从左边看，每一排最高会看到几层？",
+          "issue": [
+            {
+              "code": "view-profile-choices-are-text-only",
+              "priority": 1,
+              "description": "候选高度序列只显示2和1、1、2、1等文字，缺少对应方块列。",
+              "evidence": [
+                "src/games/ProgressiveSetGame.tsx:314-331"
+              ],
+              "minimalImplementation": "按候选数据画等单位方块列，列顺序与文字完全一致；不用近似长条，不展示正确答案额外提示。"
+            }
+          ],
+          "noChangeReason": null,
+          "minimalImplementation": [
+            "按候选数据画等单位方块列，列顺序与文字完全一致；不用近似长条，不展示正确答案额外提示。"
+          ]
+        },
+        {
+          "id": "logic-three-view-blocks-17",
+          "prompt": "从左边看，每一排最高会看到几层？",
+          "issue": [
+            {
+              "code": "view-profile-choices-are-text-only",
+              "priority": 1,
+              "description": "候选高度序列只显示2和1、1、2、1等文字，缺少对应方块列。",
+              "evidence": [
+                "src/games/ProgressiveSetGame.tsx:314-331"
+              ],
+              "minimalImplementation": "按候选数据画等单位方块列，列顺序与文字完全一致；不用近似长条，不展示正确答案额外提示。"
+            }
+          ],
+          "noChangeReason": null,
+          "minimalImplementation": [
+            "按候选数据画等单位方块列，列顺序与文字完全一致；不用近似长条，不展示正确答案额外提示。"
+          ]
+        },
+        {
+          "id": "logic-three-view-blocks-18",
+          "prompt": "从左边看，每一排最高会看到几层？",
+          "issue": [
+            {
+              "code": "view-profile-choices-are-text-only",
+              "priority": 1,
+              "description": "候选高度序列只显示2和1、1、2、1等文字，缺少对应方块列。",
+              "evidence": [
+                "src/games/ProgressiveSetGame.tsx:314-331"
+              ],
+              "minimalImplementation": "按候选数据画等单位方块列，列顺序与文字完全一致；不用近似长条，不展示正确答案额外提示。"
+            }
+          ],
+          "noChangeReason": null,
+          "minimalImplementation": [
+            "按候选数据画等单位方块列，列顺序与文字完全一致；不用近似长条，不展示正确答案额外提示。"
+          ]
+        }
+      ]
+    },
+    {
+      "gameId": "logic-route-steps",
+      "title": "路线听指令",
+      "roundCount": 10,
+      "rounds": [
+        {
+          "id": "logic-route-steps-1",
+          "prompt": "从小狗出发，往右一步到哪里？",
+          "issue": [],
+          "noChangeReason": "起点、地图物品、方向/步数与候选图均完整，按指令移动得到唯一目标；无需先画出正确路线。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-route-steps-2",
+          "prompt": "从盒子出发，往上一步到哪里？",
+          "issue": [],
+          "noChangeReason": "起点、地图物品、方向/步数与候选图均完整，按指令移动得到唯一目标；无需先画出正确路线。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-route-steps-3",
+          "prompt": "从盒子出发，往下一步到哪里？",
+          "issue": [],
+          "noChangeReason": "起点、地图物品、方向/步数与候选图均完整，按指令移动得到唯一目标；无需先画出正确路线。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-route-steps-4",
+          "prompt": "从书包出发，往左一步到哪里？",
+          "issue": [],
+          "noChangeReason": "起点、地图物品、方向/步数与候选图均完整，按指令移动得到唯一目标；无需先画出正确路线。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-route-steps-5",
+          "prompt": "从起点出发，先往右一步，再往下一步，到哪里？",
+          "issue": [],
+          "noChangeReason": "起点、地图物品、方向/步数与候选图均完整，按指令移动得到唯一目标；无需先画出正确路线。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-route-steps-6",
+          "prompt": "从小猫出发，先往右一步，再往右一步，到哪里？",
+          "issue": [],
+          "noChangeReason": "起点、地图物品、方向/步数与候选图均完整，按指令移动得到唯一目标；无需先画出正确路线。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-route-steps-7",
+          "prompt": "从盒子出发，先往右一步，再往下一步，到哪里？",
+          "issue": [],
+          "noChangeReason": "起点、地图物品、方向/步数与候选图均完整，按指令移动得到唯一目标；无需先画出正确路线。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-route-steps-8",
+          "prompt": "从书包出发，先往右一步，再往下一步，到哪里？",
+          "issue": [],
+          "noChangeReason": "起点、地图物品、方向/步数与候选图均完整，按指令移动得到唯一目标；无需先画出正确路线。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-route-steps-9",
+          "prompt": "从蛋糕出发，先往右一步，再往右一步，到哪里？",
+          "issue": [],
+          "noChangeReason": "起点、地图物品、方向/步数与候选图均完整，按指令移动得到唯一目标；无需先画出正确路线。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        },
+        {
+          "id": "logic-route-steps-10",
+          "prompt": "从足球出发，先往右一步，再往上一步，到哪里？",
+          "issue": [],
+          "noChangeReason": "起点、地图物品、方向/步数与候选图均完整，按指令移动得到唯一目标；无需先画出正确路线。",
+          "minimalImplementation": [
+            "保留现有数据、题图和答案；进入全量初始页验证。"
+          ]
+        }
+      ]
+    }
+  ]
+}

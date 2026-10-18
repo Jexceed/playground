@@ -197,3 +197,13 @@ Runtime files follow `public/images/scenes/order-045-<family>-<state>.png` (1200
 The 24-question visual contract and per-file SHA-256 evidence are in `specs/045-order-story-completion/verification/visual-contract.json` and `image-assets.json`. The regression requires every registered new card to be rendered by at least one actual step or option. Keep initial situations separate from actions: do not show the key already turning in a “what first” scene, clean hands in a dirty-hand mistake, an active sort in an already-sorted starting state, or normal moist soil in a dry-soil clue.
 
 Removing a mismatched backdrop does not complete a life-sequence visual repair. Supply matching initial-state evidence and check every affected question before closing the work; neither generic item icons nor a repair to only the first question establishes group-wide completion.
+
+## Logic House contexts, evidence and exact choices (046)
+
+`src/data/logicHouseAssets.ts` registers 5 new runtime scenes and 42 task/action/evidence cards. Generated originals and complete prompts are stored in same-category `source/` directories; existing-scene evidence crops retain source paths and exact crop coordinates. `art-daily.json`, `art-life.json` and `art-evidence.json` under feature 046 document gpt-6.1-sol + built-in image_gen production and deterministic crop provenance. Original 045 files and earlier evidence scenes remain unchanged.
+
+`logicLessonVisuals.ts` separates context, current evidence, choices and resolution by stable round identity. Evidence conclusions use neutral proposal markers on the actual scene crop; a claim that a dog did not act must not substitute an unrelated sleeping-dog picture. An incorrect sequence cannot be replayed as the correct plan. Images showing food on a plate are used only where the task requires serving it first.
+
+`LogicChoicePicture` and `LogicBridgeDiagram` use the candidate value and exact model data for quantities, height profiles, ordered cards and bridge spans. River, plank and inventory units share one SVG viewport. Incorrect choices retain their incorrect lengths or placements. These exact diagrams extend the native visual system; they are not approximated through generative art. Scene entry and the bridge viewer preserve larger inspection views while task panels reserve room for retry feedback.
+
+Feature 046's `verification/review-ledger.json` covers all 319 logic rounds. `browser-all-states.json` records all initial task surfaces and the error/success states of changed rounds. Any future removal or substitution of a scene/card must preserve the visible conditions and update this audit contract.

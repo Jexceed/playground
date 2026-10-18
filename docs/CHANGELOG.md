@@ -2,6 +2,16 @@
 
 ## 2026-10-19
 
+### Complete the Logic House visual review
+
+- Reviewed every enlightenment Logic House group: 26 groups / 319 rounds. Updated 126 round surfaces and retained 193 with documented reasons. The original question IDs, wording, options, answers and all other curriculum data remain unchanged.
+- Added current situations, equally illustrated options and distinct correct outcomes to 43 condition/repair/priority/evidence questions. Wrong-handwashing, red-light and mixed-storage sequences are shown as the current problem; successful explanations demonstrate the correction. Evidence choices use crops from the actual scene, and the weak-cat scene no longer places the missing cake slice on a nearby plate.
+- Added task conditions to all 14 packing questions, exposed missing analogy targets, and paired each of the six changing color rules with matching action pictures. New story artwork was produced by gpt-6.1-sol agents through built-in image_gen; exact quantity, height and bridge candidates remain data-driven diagrams.
+- Illustrated quantity, height, positional-card, basket and all bridge choices. Corrected three-icon wrapping, two-column matrix layout, cramped comparison cards and mirror-axis presentation. Explicit plate-serving tasks now show food going onto the plate before eating, including order-plan rounds 10/16. Larger bridge models remain available through a picture viewer.
+- Browser checks cover all 319 task surfaces and wrong/correct states for all 126 changed rounds; final results have no broken images or viewport/label overflow. Passed 70 regressions, production build and curriculum/illustration/voice audits. All 4182 local voice entries align without failures or fallback.
+- Rebuilt and installed the standard Applications app, with matching executable hashes and valid strict deep signature. Native UI acceptance is pending Mac unlock. Evidence: `specs/046-logic-house-visual-completeness/verification.md`.
+
+
 ### Complete all 24 order-plan story surfaces
 
 - Extended the scene-first flow and completed-sequence playback from the three drinking questions to every question in “先做什么”. All 24 questions now have matching context, illustrated steps and equally illustrated answer choices; correct answers fill the blank and support pause, single-step viewing and replay.

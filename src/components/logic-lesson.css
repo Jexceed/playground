@@ -1,0 +1,64 @@
+.logic-lesson { min-width:0; border:1px solid #d6ddcb; border-radius:12px; background:#f8f8ee; padding:12px; }
+.logic-picture { display:flex; position:relative; align-items:center; justify-content:center; min-width:0; gap:4px; }
+.logic-picture>img { display:block; width:100%; height:100%; object-fit:contain; min-width:0; }
+.logic-picture-pair>img { width:calc(50% - 2px); }
+.logic-picture-diagram { flex-direction:column; }
+.logic-picture .logic-choice-bridge { width:100%; max-height:100%; }
+.logic-picture-badge { position:absolute; bottom:2px; left:50%; transform:translateX(-50%); background:#fff5df; border:1px solid #bca779; border-radius:6px; padding:2px 5px; font-size:13px; color:#645533; white-space:nowrap; }
+.logic-inventory { display:block; width:100%; max-height:80px; }
+.logic-lesson-intro>.logic-picture { width:100%; height:280px; }
+.logic-lesson-toolbar { display:flex; align-items:center; justify-content:space-between; gap:10px; margin:0 0 10px; }
+.logic-lesson-intro .logic-lesson-toolbar { margin:10px 0 0; }
+.logic-lesson-toolbar>span { font-size:16px; font-weight:650; }
+.logic-lesson button:not(.logic-frame) { display:inline-flex; align-items:center; justify-content:center; gap:5px; background:#fffdf5; border:1px solid #c1cebd; border-radius:8px; color:#355846; padding:8px 11px; font:inherit; font-size:14px; font-weight:650; cursor:pointer; }
+.logic-lesson button.primary { background:#397d62; color:white; min-width:120px; }
+.logic-lesson button:disabled { opacity:.45; }
+.logic-lesson>.logic-picture { height:260px; }
+.logic-lesson-intro>.logic-picture { height:280px; }
+.logic-frame { border:1px solid #d8cdb8; border-radius:9px; background:#fffdf5; color:#334b40; display:flex; flex-direction:column; align-items:stretch; justify-content:center; gap:5px; padding:6px; min-width:0; cursor:pointer; font:inherit; }
+.logic-frame>.logic-picture { height:140px; }
+.logic-frame-caption { display:flex; align-items:center; justify-content:center; gap:4px; min-height:30px; font-size:15px; line-height:1.35; overflow-wrap:anywhere; }
+.logic-frame-caption svg { flex-shrink:0; }
+.logic-evidence-frames { display:flex; justify-content:center; gap:12px; }
+.logic-evidence-frames>.logic-frame { flex:1 1 0; max-width:240px; }
+.logic-evidence-frames>.logic-frame:only-child { max-width:400px; }
+.logic-evidence-frames>.logic-frame:only-child>.logic-picture { height:220px; }
+.logic-result-focus { display:flex; align-items:center; justify-content:center; gap:18px; }
+.logic-result-focus>.logic-picture { width:180px; height:160px; flex-shrink:0; }
+.logic-result-caption { display:block; max-width:330px; font-size:18px; line-height:1.5; }
+.logic-result-controls { display:flex; gap:6px; margin-top:10px; flex-wrap:wrap; }
+.logic-result-strip { display:flex; gap:8px; justify-content:center; margin-top:12px; }
+.logic-result-strip .logic-frame { flex:1 1 0; max-width:150px; }
+.logic-result-strip .logic-picture { height:66px; }
+.logic-result-strip .logic-frame-caption { font-size:12px; }
+.logic-result-strip .logic-frame-caption svg { display:none; }
+.logic-frame-active { outline:2px solid #dea54a; outline-offset:1px; }
+.answer-grid-lesson .answer-choice { flex-direction:column; justify-content:center; font-size:15px; padding:7px; min-width:0; }
+.answer-grid-lesson .logic-picture { width:100%; height:86px; }
+.answer-choice-picture { flex-direction:column; min-width:0; gap:6px; padding:8px; font-size:15px; }
+.logic-task-cues { display:flex; justify-content:center; gap:12px; }
+.logic-task-cues .logic-frame { display:grid; grid-template-columns:94px minmax(0,1fr); max-width:330px; flex:1 1 0; align-items:center; }
+.logic-task-cues .logic-picture { height:90px; }
+.logic-task-cues .logic-frame-caption { font-size:16px; }
+.logic-action-rules { display:flex; justify-content:center; gap:18px; }
+.logic-action-rule { display:flex; align-items:center; gap:7px; border:1px solid #e0d3bd; padding:6px; border-radius:9px; background:#fffaf0; }
+.logic-action-rule>img { width:36px; height:36px; }
+.logic-action-rule>.logic-frame { width:112px; border:0; padding:0; }
+.logic-action-rule .logic-picture { height:76px; }
+.logic-action-rule .logic-frame-caption { font-size:13px; min-height:22px; }
+.progressive-game .round-board.logic-board-cue { display:grid; grid-template-columns:1fr; min-height:0; padding:12px; gap:12px; }
+.logic-relation-board { display:flex; justify-content:center; align-items:center; gap:20px; padding:18px 8px; background:#f7f8ee; border:1px solid #d6ddcb; border-radius:12px; }
+.logic-relation-board>div { min-width:0; flex:1 1 0; text-align:center; }
+.logic-relation-pair { display:flex; justify-content:center; gap:8px; margin-top:8px; }
+.logic-relation-pair>.logic-frame { min-width:0; flex:1 1 0; }
+.logic-relation-pair .logic-picture { height:112px; }
+.logic-relation-unknown { display:grid; place-items:center; width:70px; font-size:64px; color:#a79067; }
+@media(max-width:700px){.logic-lesson-toolbar{align-items:flex-start;}.logic-lesson-intro>.logic-picture{height:200px;}.logic-task-cues .logic-frame{display:flex;}.logic-evidence-frames{gap:6px;}.logic-frame>.logic-picture{height:90px;}.logic-result-focus{flex-direction:column;}.logic-result-caption{font-size:16px;}.logic-result-strip{flex-wrap:wrap;}.logic-action-rules{gap:6px;}.logic-action-rule{gap:3px;padding:3px;}.logic-action-rule>img{width:24px;height:24px;}.logic-action-rule>.logic-frame{width:80px;}.logic-relation-board{gap:8px;}.logic-relation-pair .logic-picture{height:76px;}.logic-relation-unknown{width:30px;font-size:40px;}}
+.logic-picture-diagram-pair { flex-direction:row; gap:8px; }
+.logic-picture-diagram-pair>.logic-choice-bridge { width:calc(50% - 4px); }
+/* Keep larger illustrated options within the existing desktop task height. */
+.answer-choice-picture { padding:6px; gap:4px; }
+/* The full scene remains available at entry; task space also reserves retry text. */
+.logic-lesson:not(.logic-lesson-intro)>.logic-picture { height:210px; }
+.logic-evidence-frames>.logic-frame:only-child>.logic-picture { height:160px; }
+.progressive-game:has(.feedback.needs-work) .logic-evidence-frames .logic-picture { height:128px; }

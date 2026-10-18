@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-10-18T15:41:12.829Z",
+  "generatedAt": "2026-10-18T17:19:46.746Z",
   "provider": "edge-tts Python package",
   "voice": "zh-CN-XiaoxiaoNeural",
   "rate": "-12%",
   "pitch": "+2Hz",
   "includeParent": true,
   "format": "mp3",
-  "count": 4068,
-  "requestedCount": 4068,
+  "count": 4182,
+  "requestedCount": 4182,
   "failures": [],
   "entries": [
     {
@@ -3923,6 +3923,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E6%91%B8%E5%A4%B4.mp3"
     },
     {
+      "id": "object-绿片拍手",
+      "kind": "object",
+      "text": "绿片拍手",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E7%BB%BF%E7%89%87%E6%8B%8D%E6%89%8B.mp3"
+    },
+    {
+      "id": "object-红片抱肩",
+      "kind": "object",
+      "text": "红片抱肩",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E7%BA%A2%E7%89%87%E6%8A%B1%E8%82%A9.mp3"
+    },
+    {
       "id": "success-本题规则是绿片拍手-红片抱肩-这张是红色圆片-所以抱肩",
       "kind": "success",
       "text": "本题规则是绿片拍手，红片抱肩。这张是红色圆片，所以抱肩。",
@@ -3947,6 +3963,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%9C%AC%E9%A2%98%E8%A7%84%E5%88%99%E6%98%AF%E6%8D%A2%E4%B8%AA%E7%8E%A9%E6%B3%95-%E7%BB%BF%E7%89%87%E6%8A%B1%E8%82%A9-%E7%BA%A2%E7%89%87%E6%8B%8D%E6%89%8B-%E8%BF%99%E5%BC%A0%E6%98%AF%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E6%89%80%E4%BB%A5%E6%8A%B1%E8%82%A9.mp3"
     },
     {
+      "id": "object-绿片抱肩",
+      "kind": "object",
+      "text": "绿片抱肩",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E7%BB%BF%E7%89%87%E6%8A%B1%E8%82%A9.mp3"
+    },
+    {
+      "id": "object-红片拍手",
+      "kind": "object",
+      "text": "红片拍手",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E7%BA%A2%E7%89%87%E6%8B%8D%E6%89%8B.mp3"
+    },
+    {
       "id": "success-本题规则是换个玩法-绿片抱肩-红片拍手-这张是红色圆片-所以拍手",
       "kind": "success",
       "text": "本题规则是换个玩法：绿片抱肩，红片拍手。这张是红色圆片，所以拍手。",
@@ -3969,6 +4001,14 @@
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%9C%AC%E9%A2%98%E8%A7%84%E5%88%99%E6%98%AF%E5%86%8D%E6%8D%A2%E8%A7%84%E5%88%99-%E7%BB%BF%E7%89%87%E6%91%B8%E5%A4%B4-%E7%BA%A2%E7%89%87%E6%8A%B1%E8%82%A9-%E8%BF%99%E5%BC%A0%E6%98%AF%E7%BB%BF%E8%89%B2%E5%9C%86%E7%89%87-%E6%89%80%E4%BB%A5%E6%91%B8%E5%A4%B4.mp3"
+    },
+    {
+      "id": "object-绿片摸头",
+      "kind": "object",
+      "text": "绿片摸头",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E7%BB%BF%E7%89%87%E6%91%B8%E5%A4%B4.mp3"
     },
     {
       "id": "success-本题规则是再换规则-绿片摸头-红片抱肩-这张是红色圆片-所以抱肩",
@@ -5699,6 +5739,46 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%B0%8F%E5%85%94.mp3"
     },
     {
+      "id": "object-先看事情发生的地方",
+      "kind": "object",
+      "text": "先看事情发生的地方",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%85%88%E7%9C%8B%E4%BA%8B%E6%83%85%E5%8F%91%E7%94%9F%E7%9A%84%E5%9C%B0%E6%96%B9.mp3"
+    },
+    {
+      "id": "object-原场景蛋糕的扇形缺口与桌面近景",
+      "kind": "object",
+      "text": "原场景蛋糕的扇形缺口与桌面近景。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%8E%9F%E5%9C%BA%E6%99%AF%E8%9B%8B%E7%B3%95%E7%9A%84%E6%89%87%E5%BD%A2%E7%BC%BA%E5%8F%A3%E4%B8%8E%E6%A1%8C%E9%9D%A2%E8%BF%91%E6%99%AF.mp3"
+    },
+    {
+      "id": "object-原场景小猫嘴边和前爪的白色奶油近景",
+      "kind": "object",
+      "text": "原场景小猫嘴边和前爪的白色奶油近景。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%8E%9F%E5%9C%BA%E6%99%AF%E5%B0%8F%E7%8C%AB%E5%98%B4%E8%BE%B9%E5%92%8C%E5%89%8D%E7%88%AA%E7%9A%84%E7%99%BD%E8%89%B2%E5%A5%B6%E6%B2%B9%E8%BF%91%E6%99%AF.mp3"
+    },
+    {
+      "id": "object-同一厨房远处-小狗蜷在蓝垫子上睡觉-身上未见奶油",
+      "kind": "object",
+      "text": "同一厨房远处，小狗蜷在蓝垫子上睡觉，身上未见奶油。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%90%8C%E4%B8%80%E5%8E%A8%E6%88%BF%E8%BF%9C%E5%A4%84-%E5%B0%8F%E7%8B%97%E8%9C%B7%E5%9C%A8%E8%93%9D%E5%9E%AB%E5%AD%90%E4%B8%8A%E7%9D%A1%E8%A7%89-%E8%BA%AB%E4%B8%8A%E6%9C%AA%E8%A7%81%E5%A5%B6%E6%B2%B9.mp3"
+    },
+    {
+      "id": "object-同一厨房里的灰兔抱着胡萝卜-身上未见奶油",
+      "kind": "object",
+      "text": "同一厨房里的灰兔抱着胡萝卜，身上未见奶油。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%90%8C%E4%B8%80%E5%8E%A8%E6%88%BF%E9%87%8C%E7%9A%84%E7%81%B0%E5%85%94%E6%8A%B1%E7%9D%80%E8%83%A1%E8%90%9D%E5%8D%9C-%E8%BA%AB%E4%B8%8A%E6%9C%AA%E8%A7%81%E5%A5%B6%E6%B2%B9.mp3"
+    },
+    {
       "id": "prompt-比较小猫和小狗-谁身上和蛋糕直接相关的线索更少-这次用排除法",
       "kind": "prompt",
       "text": "比较小猫和小狗，谁身上和蛋糕直接相关的线索更少？这次用排除法。",
@@ -5795,6 +5875,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%B0%8F%E7%8C%AB%E4%B8%80%E5%AE%9A%E6%B2%A1%E5%90%83.mp3"
     },
     {
+      "id": "object-修正场景的厨房与门口位置-灰猫清醒站着且未接触蛋糕",
+      "kind": "object",
+      "text": "修正场景的厨房与门口位置，灰猫清醒站着且未接触蛋糕。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E4%BF%AE%E6%AD%A3%E5%9C%BA%E6%99%AF%E7%9A%84%E5%8E%A8%E6%88%BF%E4%B8%8E%E9%97%A8%E5%8F%A3%E4%BD%8D%E7%BD%AE-%E7%81%B0%E7%8C%AB%E6%B8%85%E9%86%92%E7%AB%99%E7%9D%80%E4%B8%94%E6%9C%AA%E6%8E%A5%E8%A7%A6%E8%9B%8B%E7%B3%95.mp3"
+    },
+    {
+      "id": "object-修正场景中门口的灰猫-嘴边和前爪干净-只表示当前状态",
+      "kind": "object",
+      "text": "修正场景中门口的灰猫，嘴边和前爪干净；只表示当前状态。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E4%BF%AE%E6%AD%A3%E5%9C%BA%E6%99%AF%E4%B8%AD%E9%97%A8%E5%8F%A3%E7%9A%84%E7%81%B0%E7%8C%AB-%E5%98%B4%E8%BE%B9%E5%92%8C%E5%89%8D%E7%88%AA%E5%B9%B2%E5%87%80-%E5%8F%AA%E8%A1%A8%E7%A4%BA%E5%BD%93%E5%89%8D%E7%8A%B6%E6%80%81.mp3"
+    },
+    {
       "id": "prompt-谁可能刚踩过泥地-看脚上和地面的泥巴线索",
       "kind": "prompt",
       "text": "谁可能刚踩过泥地？看脚上和地面的泥巴线索。",
@@ -5825,6 +5921,38 @@
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E8%84%9A%E4%B8%8A%E6%9C%89%E6%B3%A5%E8%AF%B4%E6%98%8E%E5%8F%AF%E8%83%BD%E5%8E%BB%E4%BA%86%E5%93%AA%E9%87%8C.mp3"
+    },
+    {
+      "id": "object-原场景小狗沾泥的脚与湿泥地近景",
+      "kind": "object",
+      "text": "原场景小狗沾泥的脚与湿泥地近景。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%8E%9F%E5%9C%BA%E6%99%AF%E5%B0%8F%E7%8B%97%E6%B2%BE%E6%B3%A5%E7%9A%84%E8%84%9A%E4%B8%8E%E6%B9%BF%E6%B3%A5%E5%9C%B0%E8%BF%91%E6%99%AF.mp3"
+    },
+    {
+      "id": "object-原场景地面已有的泥脚印-不推定脚印一定属于哪个角色",
+      "kind": "object",
+      "text": "原场景地面已有的泥脚印，不推定脚印一定属于哪个角色。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%8E%9F%E5%9C%BA%E6%99%AF%E5%9C%B0%E9%9D%A2%E5%B7%B2%E6%9C%89%E7%9A%84%E6%B3%A5%E8%84%9A%E5%8D%B0-%E4%B8%8D%E6%8E%A8%E5%AE%9A%E8%84%9A%E5%8D%B0%E4%B8%80%E5%AE%9A%E5%B1%9E%E4%BA%8E%E5%93%AA%E4%B8%AA%E8%A7%92%E8%89%B2.mp3"
+    },
+    {
+      "id": "object-原场景坐在干净圆垫上的灰猫-爪子可见且无泥",
+      "kind": "object",
+      "text": "原场景坐在干净圆垫上的灰猫，爪子可见且无泥。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%8E%9F%E5%9C%BA%E6%99%AF%E5%9D%90%E5%9C%A8%E5%B9%B2%E5%87%80%E5%9C%86%E5%9E%AB%E4%B8%8A%E7%9A%84%E7%81%B0%E7%8C%AB-%E7%88%AA%E5%AD%90%E5%8F%AF%E8%A7%81%E4%B8%94%E6%97%A0%E6%B3%A5.mp3"
+    },
+    {
+      "id": "object-原场景抱胡萝卜的白兔-脚下草地可见且未见泥",
+      "kind": "object",
+      "text": "原场景抱胡萝卜的白兔，脚下草地可见且未见泥。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%8E%9F%E5%9C%BA%E6%99%AF%E6%8A%B1%E8%83%A1%E8%90%9D%E5%8D%9C%E7%9A%84%E7%99%BD%E5%85%94-%E8%84%9A%E4%B8%8B%E8%8D%89%E5%9C%B0%E5%8F%AF%E8%A7%81%E4%B8%94%E6%9C%AA%E8%A7%81%E6%B3%A5.mp3"
     },
     {
       "id": "prompt-水杯倒了-想知道发生了什么-先去哪里找线索-先检查和水杯-地上水直接相连的地方",
@@ -5883,6 +6011,30 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%80%92%E4%B8%8B%E7%9A%84%E6%9D%AF%E5%AD%90%E5%91%A8%E5%9B%B4.mp3"
     },
     {
+      "id": "object-原场景倒下的蓝色水杯和紧邻水洼-不新增脚印或碰撞痕迹",
+      "kind": "object",
+      "text": "原场景倒下的蓝色水杯和紧邻水洼，不新增脚印或碰撞痕迹。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%8E%9F%E5%9C%BA%E6%99%AF%E5%80%92%E4%B8%8B%E7%9A%84%E8%93%9D%E8%89%B2%E6%B0%B4%E6%9D%AF%E5%92%8C%E7%B4%A7%E9%82%BB%E6%B0%B4%E6%B4%BC-%E4%B8%8D%E6%96%B0%E5%A2%9E%E8%84%9A%E5%8D%B0%E6%88%96%E7%A2%B0%E6%92%9E%E7%97%95%E8%BF%B9.mp3"
+    },
+    {
+      "id": "object-原场景远处蓝垫子上睡着的小狗及其周围地板",
+      "kind": "object",
+      "text": "原场景远处蓝垫子上睡着的小狗及其周围地板。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%8E%9F%E5%9C%BA%E6%99%AF%E8%BF%9C%E5%A4%84%E8%93%9D%E5%9E%AB%E5%AD%90%E4%B8%8A%E7%9D%A1%E7%9D%80%E7%9A%84%E5%B0%8F%E7%8B%97%E5%8F%8A%E5%85%B6%E5%91%A8%E5%9B%B4%E5%9C%B0%E6%9D%BF.mp3"
+    },
+    {
+      "id": "object-原场景停在窗台上的蓝色小鸟和窗边区域",
+      "kind": "object",
+      "text": "原场景停在窗台上的蓝色小鸟和窗边区域。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%8E%9F%E5%9C%BA%E6%99%AF%E5%81%9C%E5%9C%A8%E7%AA%97%E5%8F%B0%E4%B8%8A%E7%9A%84%E8%93%9D%E8%89%B2%E5%B0%8F%E9%B8%9F%E5%92%8C%E7%AA%97%E8%BE%B9%E5%8C%BA%E5%9F%9F.mp3"
+    },
+    {
       "id": "prompt-比较小兔和小猫-谁身上和花直接相关的线索更少-小兔拿着胡萝卜-小猫爪边有花粉-比较这些线索和花的关系",
       "kind": "prompt",
       "text": "比较小兔和小猫，谁身上和花直接相关的线索更少？小兔拿着胡萝卜，小猫爪边有花粉。比较这些线索和花的关系。",
@@ -5923,6 +6075,38 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E9%83%BD%E4%B8%80%E6%A0%B7.mp3"
     },
     {
+      "id": "object-原场景花坛中弯折的花-散落花瓣和土壤",
+      "kind": "object",
+      "text": "原场景花坛中弯折的花、散落花瓣和土壤。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%8E%9F%E5%9C%BA%E6%99%AF%E8%8A%B1%E5%9D%9B%E4%B8%AD%E5%BC%AF%E6%8A%98%E7%9A%84%E8%8A%B1-%E6%95%A3%E8%90%BD%E8%8A%B1%E7%93%A3%E5%92%8C%E5%9C%9F%E5%A3%A4.mp3"
+    },
+    {
+      "id": "object-原场景小猫抬起前爪的黄色花粉近景",
+      "kind": "object",
+      "text": "原场景小猫抬起前爪的黄色花粉近景。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%8E%9F%E5%9C%BA%E6%99%AF%E5%B0%8F%E7%8C%AB%E6%8A%AC%E8%B5%B7%E5%89%8D%E7%88%AA%E7%9A%84%E9%BB%84%E8%89%B2%E8%8A%B1%E7%B2%89%E8%BF%91%E6%99%AF.mp3"
+    },
+    {
+      "id": "object-原场景花坛边的小猫-抬起的前爪有黄色花粉",
+      "kind": "object",
+      "text": "原场景花坛边的小猫，抬起的前爪有黄色花粉。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%8E%9F%E5%9C%BA%E6%99%AF%E8%8A%B1%E5%9D%9B%E8%BE%B9%E7%9A%84%E5%B0%8F%E7%8C%AB-%E6%8A%AC%E8%B5%B7%E7%9A%84%E5%89%8D%E7%88%AA%E6%9C%89%E9%BB%84%E8%89%B2%E8%8A%B1%E7%B2%89.mp3"
+    },
+    {
+      "id": "object-原场景抱着胡萝卜的小兔-身上未见花粉",
+      "kind": "object",
+      "text": "原场景抱着胡萝卜的小兔，身上未见花粉。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%8E%9F%E5%9C%BA%E6%99%AF%E6%8A%B1%E7%9D%80%E8%83%A1%E8%90%9D%E5%8D%9C%E7%9A%84%E5%B0%8F%E5%85%94-%E8%BA%AB%E4%B8%8A%E6%9C%AA%E8%A7%81%E8%8A%B1%E7%B2%89.mp3"
+    },
+    {
       "id": "prompt-只知道-小狗在房间里-能确定是小狗弄乱玩具吗-一个线索不一定够",
       "kind": "prompt",
       "text": "只知道“小狗在房间里”，能确定是小狗弄乱玩具吗？一个线索不一定够。",
@@ -5961,6 +6145,30 @@
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%B0%8F%E7%8B%97%E8%82%AF%E5%AE%9A%E6%B2%A1%E5%BC%84%E4%B9%B1.mp3"
+    },
+    {
+      "id": "object-原场景玩具散落的游戏房和门口清醒的小狗-没有新增作乱行为",
+      "kind": "object",
+      "text": "原场景玩具散落的游戏房和门口清醒的小狗；没有新增作乱行为。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%8E%9F%E5%9C%BA%E6%99%AF%E7%8E%A9%E5%85%B7%E6%95%A3%E8%90%BD%E7%9A%84%E6%B8%B8%E6%88%8F%E6%88%BF%E5%92%8C%E9%97%A8%E5%8F%A3%E6%B8%85%E9%86%92%E7%9A%84%E5%B0%8F%E7%8B%97-%E6%B2%A1%E6%9C%89%E6%96%B0%E5%A2%9E%E4%BD%9C%E4%B9%B1%E8%A1%8C%E4%B8%BA.mp3"
+    },
+    {
+      "id": "object-原场景小狗清醒地坐在门口-未接触玩具-不是睡觉",
+      "kind": "object",
+      "text": "原场景小狗清醒地坐在门口，未接触玩具；不是睡觉。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%8E%9F%E5%9C%BA%E6%99%AF%E5%B0%8F%E7%8B%97%E6%B8%85%E9%86%92%E5%9C%B0%E5%9D%90%E5%9C%A8%E9%97%A8%E5%8F%A3-%E6%9C%AA%E6%8E%A5%E8%A7%A6%E7%8E%A9%E5%85%B7-%E4%B8%8D%E6%98%AF%E7%9D%A1%E8%A7%89.mp3"
+    },
+    {
+      "id": "object-原场景地毯上散落的玩具近景-不增加小狗行为或脚印",
+      "kind": "object",
+      "text": "原场景地毯上散落的玩具近景，不增加小狗行为或脚印。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%8E%9F%E5%9C%BA%E6%99%AF%E5%9C%B0%E6%AF%AF%E4%B8%8A%E6%95%A3%E8%90%BD%E7%9A%84%E7%8E%A9%E5%85%B7%E8%BF%91%E6%99%AF-%E4%B8%8D%E5%A2%9E%E5%8A%A0%E5%B0%8F%E7%8B%97%E8%A1%8C%E4%B8%BA%E6%88%96%E8%84%9A%E5%8D%B0.mp3"
     },
     {
       "id": "game-title-条件小侦探",
@@ -6035,6 +6243,30 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%8F%AA%E6%8B%BF%E7%9B%98%E5%AD%90.mp3"
     },
     {
+      "id": "object-手脏了-饼干还没拿",
+      "kind": "object",
+      "text": "手脏了，饼干还没拿",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E6%89%8B%E8%84%8F%E4%BA%86-%E9%A5%BC%E5%B9%B2%E8%BF%98%E6%B2%A1%E6%8B%BF.mp3"
+    },
+    {
+      "id": "object-手还脏着",
+      "kind": "object",
+      "text": "手还脏着",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E6%89%8B%E8%BF%98%E8%84%8F%E7%9D%80.mp3"
+    },
+    {
+      "id": "object-吃饼干",
+      "kind": "object",
+      "text": "吃饼干",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%90%83%E9%A5%BC%E5%B9%B2.mp3"
+    },
+    {
       "id": "prompt-红灯亮了-现在能走过去吗-先看安全条件够不够",
       "kind": "prompt",
       "text": "红灯亮了，现在能走过去吗？先看安全条件够不够。",
@@ -6073,6 +6305,30 @@
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E6%85%A2%E6%85%A2%E8%B5%B0.mp3"
+    },
+    {
+      "id": "object-行人红灯亮着",
+      "kind": "object",
+      "text": "行人红灯亮着",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E8%A1%8C%E4%BA%BA%E7%BA%A2%E7%81%AF%E4%BA%AE%E7%9D%80.mp3"
+    },
+    {
+      "id": "object-行人红灯",
+      "kind": "object",
+      "text": "行人红灯",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E8%A1%8C%E4%BA%BA%E7%BA%A2%E7%81%AF.mp3"
+    },
+    {
+      "id": "object-和大人停下等",
+      "kind": "object",
+      "text": "和大人停下等",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%92%8C%E5%A4%A7%E4%BA%BA%E5%81%9C%E4%B8%8B%E7%AD%89.mp3"
     },
     {
       "id": "prompt-行人绿灯亮了-车辆已停-路面安全-和大人一起可以做什么-条件满足了-再选择行动",
@@ -6131,6 +6387,38 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E8%B5%B0%E8%BF%87%E5%8E%BB.mp3"
     },
     {
+      "id": "object-行人绿灯亮-路面已经安全",
+      "kind": "object",
+      "text": "行人绿灯亮，路面已经安全",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E8%A1%8C%E4%BA%BA%E7%BB%BF%E7%81%AF%E4%BA%AE-%E8%B7%AF%E9%9D%A2%E5%B7%B2%E7%BB%8F%E5%AE%89%E5%85%A8.mp3"
+    },
+    {
+      "id": "object-绿灯亮-车辆已停",
+      "kind": "object",
+      "text": "绿灯亮，车辆已停",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E7%BB%BF%E7%81%AF%E4%BA%AE-%E8%BD%A6%E8%BE%86%E5%B7%B2%E5%81%9C.mp3"
+    },
+    {
+      "id": "object-和大人确认安全",
+      "kind": "object",
+      "text": "和大人确认安全",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%92%8C%E5%A4%A7%E4%BA%BA%E7%A1%AE%E8%AE%A4%E5%AE%89%E5%85%A8.mp3"
+    },
+    {
+      "id": "object-和大人走过去",
+      "kind": "object",
+      "text": "和大人走过去",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%92%8C%E5%A4%A7%E4%BA%BA%E8%B5%B0%E8%BF%87%E5%8E%BB.mp3"
+    },
+    {
       "id": "prompt-模型河宽-5-格-木板长-3-格-能搭到对岸吗-看距离和材料是否匹配",
       "kind": "prompt",
       "text": "模型河宽 5 格，木板长 3 格，能搭到对岸吗？看距离和材料是否匹配。",
@@ -6185,6 +6473,22 @@
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E4%B8%8D%E7%94%A8%E6%9C%A8%E6%9D%BF.mp3"
+    },
+    {
+      "id": "object-模型河宽5格-木板长3格",
+      "kind": "object",
+      "text": "模型河宽5格，木板长3格",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E6%A8%A1%E5%9E%8B%E6%B2%B3%E5%AE%BD5%E6%A0%BC-%E6%9C%A8%E6%9D%BF%E9%95%BF3%E6%A0%BC.mp3"
+    },
+    {
+      "id": "object-3格木板还够不到5格河的对岸",
+      "kind": "object",
+      "text": "3格木板还够不到5格河的对岸",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-3%E6%A0%BC%E6%9C%A8%E6%9D%BF%E8%BF%98%E5%A4%9F%E4%B8%8D%E5%88%B05%E6%A0%BC%E6%B2%B3%E7%9A%84%E5%AF%B9%E5%B2%B8.mp3"
     },
     {
       "id": "object-宽河",
@@ -6243,6 +6547,38 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%86%8D%E6%B4%97%E6%89%8B.mp3"
     },
     {
+      "id": "object-手已洗好-盘子还没拿",
+      "kind": "object",
+      "text": "手已洗好，盘子还没拿",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E6%89%8B%E5%B7%B2%E6%B4%97%E5%A5%BD-%E7%9B%98%E5%AD%90%E8%BF%98%E6%B2%A1%E6%8B%BF.mp3"
+    },
+    {
+      "id": "object-手已经洗好了",
+      "kind": "object",
+      "text": "手已经洗好了",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E6%89%8B%E5%B7%B2%E7%BB%8F%E6%B4%97%E5%A5%BD%E4%BA%86.mp3"
+    },
+    {
+      "id": "object-把饼干盛到盘子里",
+      "kind": "object",
+      "text": "把饼干盛到盘子里",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E6%8A%8A%E9%A5%BC%E5%B9%B2%E7%9B%9B%E5%88%B0%E7%9B%98%E5%AD%90%E9%87%8C.mp3"
+    },
+    {
+      "id": "object-从盘子里拿饼干吃",
+      "kind": "object",
+      "text": "从盘子里拿饼干吃",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E4%BB%8E%E7%9B%98%E5%AD%90%E9%87%8C%E6%8B%BF%E9%A5%BC%E5%B9%B2%E5%90%83.mp3"
+    },
+    {
       "id": "prompt-积木和小车要分开放进两个盒子-下次好找-它们还混在一起-先做什么-收纳的目标是每一类放一个盒子",
       "kind": "prompt",
       "text": "积木和小车要分开放进两个盒子，下次好找。它们还混在一起，先做什么？收纳的目标是每一类放一个盒子。",
@@ -6275,6 +6611,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E8%A6%81%E6%89%BE%E5%B0%8F%E8%BD%A6%E6%97%B6-%E5%88%86%E5%BC%80%E6%94%BE%E5%92%8C%E6%B7%B7%E5%9C%A8%E4%B8%80%E8%B5%B7%E6%9C%89%E4%BB%80%E4%B9%88%E4%B8%8D%E5%90%8C.mp3"
     },
     {
+      "id": "object-两类玩具还混在一起",
+      "kind": "object",
+      "text": "两类玩具还混在一起",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E4%B8%A4%E7%B1%BB%E7%8E%A9%E5%85%B7%E8%BF%98%E6%B7%B7%E5%9C%A8%E4%B8%80%E8%B5%B7.mp3"
+    },
+    {
+      "id": "object-混在一起的两类玩具",
+      "kind": "object",
+      "text": "混在一起的两类玩具",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E6%B7%B7%E5%9C%A8%E4%B8%80%E8%B5%B7%E7%9A%84%E4%B8%A4%E7%B1%BB%E7%8E%A9%E5%85%B7.mp3"
+    },
+    {
       "id": "prompt-对岸有胡萝卜-看到小河后还缺什么-先处理障碍-再完成目标",
       "kind": "prompt",
       "text": "对岸有胡萝卜，看到小河后还缺什么？先处理障碍，再完成目标。",
@@ -6305,6 +6657,38 @@
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E5%B0%8F%E6%B2%B3%E6%98%AF%E7%9B%AE%E6%A0%87-%E8%BF%98%E6%98%AF%E9%9A%9C%E7%A2%8D.mp3"
+    },
+    {
+      "id": "object-桌面模型里-小河挡在玩具兔和胡萝卜之间",
+      "kind": "object",
+      "text": "桌面模型里，小河挡在玩具兔和胡萝卜之间",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E6%A1%8C%E9%9D%A2%E6%A8%A1%E5%9E%8B%E9%87%8C-%E5%B0%8F%E6%B2%B3%E6%8C%A1%E5%9C%A8%E7%8E%A9%E5%85%B7%E5%85%94%E5%92%8C%E8%83%A1%E8%90%9D%E5%8D%9C%E4%B9%8B%E9%97%B4.mp3"
+    },
+    {
+      "id": "object-小河挡住了去路",
+      "kind": "object",
+      "text": "小河挡住了去路",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%B0%8F%E6%B2%B3%E6%8C%A1%E4%BD%8F%E4%BA%86%E5%8E%BB%E8%B7%AF.mp3"
+    },
+    {
+      "id": "object-沿桥面走过去",
+      "kind": "object",
+      "text": "沿桥面走过去",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E6%B2%BF%E6%A1%A5%E9%9D%A2%E8%B5%B0%E8%BF%87%E5%8E%BB.mp3"
+    },
+    {
+      "id": "object-到对岸拿胡萝卜",
+      "kind": "object",
+      "text": "到对岸拿胡萝卜",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%88%B0%E5%AF%B9%E5%B2%B8%E6%8B%BF%E8%83%A1%E8%90%9D%E5%8D%9C.mp3"
     },
     {
       "id": "prompt-小猫在厨房-蛋糕少了一块-够确定是小猫吃的吗-线索不够强时-不要急着下结论",
@@ -6491,6 +6875,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E6%8D%A2%E5%90%8C%E6%A0%B7%E7%9F%AD%E6%9C%A8%E6%9D%BF.mp3"
     },
     {
+      "id": "object-木板够不到另一岸",
+      "kind": "object",
+      "text": "木板够不到另一岸",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E6%9C%A8%E6%9D%BF%E5%A4%9F%E4%B8%8D%E5%88%B0%E5%8F%A6%E4%B8%80%E5%B2%B8.mp3"
+    },
+    {
+      "id": "object-换成够长的木板",
+      "kind": "object",
+      "text": "换成够长的木板",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E6%8D%A2%E6%88%90%E5%A4%9F%E9%95%BF%E7%9A%84%E6%9C%A8%E6%9D%BF.mp3"
+    },
+    {
       "id": "object-太短",
       "kind": "object",
       "text": "太短",
@@ -6579,6 +6979,30 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%B0%91%E4%BA%86%E5%A4%9A%E6%8B%BF%E9%A5%BC%E5%B9%B2.mp3"
     },
     {
+      "id": "object-泥手直接拿饼干吃了",
+      "kind": "object",
+      "text": "泥手直接拿饼干吃了",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E6%B3%A5%E6%89%8B%E7%9B%B4%E6%8E%A5%E6%8B%BF%E9%A5%BC%E5%B9%B2%E5%90%83%E4%BA%86.mp3"
+    },
+    {
+      "id": "object-直接拿饼干",
+      "kind": "object",
+      "text": "直接拿饼干",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E7%9B%B4%E6%8E%A5%E6%8B%BF%E9%A5%BC%E5%B9%B2.mp3"
+    },
+    {
+      "id": "object-直接吃",
+      "kind": "object",
+      "text": "直接吃",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E7%9B%B4%E6%8E%A5%E5%90%83.mp3"
+    },
+    {
       "id": "prompt-红灯亮了却走过去-应该怎么改-先看哪个动作违反了规则",
       "kind": "prompt",
       "text": "红灯亮了却走过去，应该怎么改？先看哪个动作违反了规则。",
@@ -6627,6 +7051,30 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E6%94%B9%E6%88%90%E5%81%9C.mp3"
     },
     {
+      "id": "object-红灯时想迈步",
+      "kind": "object",
+      "text": "红灯时想迈步",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E7%BA%A2%E7%81%AF%E6%97%B6%E6%83%B3%E8%BF%88%E6%AD%A5.mp3"
+    },
+    {
+      "id": "object-却想往前走",
+      "kind": "object",
+      "text": "却想往前走",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%8D%B4%E6%83%B3%E5%BE%80%E5%89%8D%E8%B5%B0.mp3"
+    },
+    {
+      "id": "object-先停下等",
+      "kind": "object",
+      "text": "先停下等",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%85%88%E5%81%9C%E4%B8%8B%E7%AD%89.mp3"
+    },
+    {
       "id": "prompt-行人绿灯亮了-大人已确认车辆停稳-路面安全-接下来可以怎么做-条件已经满足时-要改变动作",
       "kind": "prompt",
       "text": "行人绿灯亮了，大人已确认车辆停稳、路面安全，接下来可以怎么做？条件已经满足时，要改变动作。",
@@ -6665,6 +7113,22 @@
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E6%94%B9%E6%88%90%E8%B5%B0%E8%BF%87%E5%8E%BB.mp3"
+    },
+    {
+      "id": "object-绿灯亮-仍停在路边",
+      "kind": "object",
+      "text": "绿灯亮，仍停在路边",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E7%BB%BF%E7%81%AF%E4%BA%AE-%E4%BB%8D%E5%81%9C%E5%9C%A8%E8%B7%AF%E8%BE%B9.mp3"
+    },
+    {
+      "id": "object-确认路面安全",
+      "kind": "object",
+      "text": "确认路面安全",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E7%A1%AE%E8%AE%A4%E8%B7%AF%E9%9D%A2%E5%AE%89%E5%85%A8.mp3"
     },
     {
       "id": "prompt-模型里的木板另一头碰不到对岸-为什么没搭成功-先找失败原因-再想怎么改",
@@ -6723,6 +7187,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E6%9C%A8%E6%9D%BF%E5%A4%AA%E7%9F%AD.mp3"
     },
     {
+      "id": "object-木板另一头没有到对岸",
+      "kind": "object",
+      "text": "木板另一头没有到对岸",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E6%9C%A8%E6%9D%BF%E5%8F%A6%E4%B8%80%E5%A4%B4%E6%B2%A1%E6%9C%89%E5%88%B0%E5%AF%B9%E5%B2%B8.mp3"
+    },
+    {
+      "id": "object-木板的长度不够",
+      "kind": "object",
+      "text": "木板的长度不够",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E6%9C%A8%E6%9D%BF%E7%9A%84%E9%95%BF%E5%BA%A6%E4%B8%8D%E5%A4%9F.mp3"
+    },
+    {
       "id": "prompt-已经洗好手-约定把饼干盛进盘子再吃-接下来做什么-已经完成的条件不用一直重复",
       "kind": "prompt",
       "text": "已经洗好手，约定把饼干盛进盘子再吃。接下来做什么？已经完成的条件不用一直重复。",
@@ -6761,6 +7241,22 @@
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E7%BB%A7%E7%BB%AD%E6%B4%97%E6%89%8B.mp3"
+    },
+    {
+      "id": "object-已经洗好了",
+      "kind": "object",
+      "text": "已经洗好了",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%B7%B2%E7%BB%8F%E6%B4%97%E5%A5%BD%E4%BA%86.mp3"
+    },
+    {
+      "id": "object-还在重复洗手",
+      "kind": "object",
+      "text": "还在重复洗手",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E8%BF%98%E5%9C%A8%E9%87%8D%E5%A4%8D%E6%B4%97%E6%89%8B.mp3"
     },
     {
       "id": "prompt-要把积木和小车分开放进两个盒子-下次好找-现在却全混在一个盒子里-怎么改-看看混放的结果-和分开放的目标一样吗",
@@ -6811,6 +7307,30 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%8F%96%E5%87%BA%E5%90%8E%E5%85%88%E5%88%86%E7%B1%BB.mp3"
     },
     {
+      "id": "object-两类玩具混装在一个盒子里",
+      "kind": "object",
+      "text": "两类玩具混装在一个盒子里",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E4%B8%A4%E7%B1%BB%E7%8E%A9%E5%85%B7%E6%B7%B7%E8%A3%85%E5%9C%A8%E4%B8%80%E4%B8%AA%E7%9B%92%E5%AD%90%E9%87%8C.mp3"
+    },
+    {
+      "id": "object-混放的结果",
+      "kind": "object",
+      "text": "混放的结果",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E6%B7%B7%E6%94%BE%E7%9A%84%E7%BB%93%E6%9E%9C.mp3"
+    },
+    {
+      "id": "object-取出后先分类",
+      "kind": "object",
+      "text": "取出后先分类",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%8F%96%E5%87%BA%E5%90%8E%E5%85%88%E5%88%86%E7%B1%BB.mp3"
+    },
+    {
       "id": "object-混在一个盒子",
       "kind": "object",
       "text": "混在一个盒子",
@@ -6849,6 +7369,22 @@
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E7%8E%A9%E5%85%B7%E5%85%94%E7%9A%84%E7%9B%AE%E6%A0%87%E6%98%AF%E4%BB%80%E4%B9%88-%E6%8C%A1%E8%B7%AF%E7%9A%84%E6%98%AF%E4%BB%80%E4%B9%88-%E6%9C%A8%E6%9D%BF%E8%83%BD%E5%B8%AE%E4%BB%80%E4%B9%88%E5%BF%99.mp3"
+    },
+    {
+      "id": "object-一直站着等",
+      "kind": "object",
+      "text": "一直站着等",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E4%B8%80%E7%9B%B4%E7%AB%99%E7%9D%80%E7%AD%89.mp3"
+    },
+    {
+      "id": "object-岸边有够长的木板",
+      "kind": "object",
+      "text": "岸边有够长的木板",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%B2%B8%E8%BE%B9%E6%9C%89%E5%A4%9F%E9%95%BF%E7%9A%84%E6%9C%A8%E6%9D%BF.mp3"
     },
     {
       "id": "object-小兔",
@@ -7059,6 +7595,30 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%B7%B2%E7%BB%8F%E8%A7%A3%E5%86%B3.mp3"
     },
     {
+      "id": "object-原来的木板太短",
+      "kind": "object",
+      "text": "原来的木板太短",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%8E%9F%E6%9D%A5%E7%9A%84%E6%9C%A8%E6%9D%BF%E5%A4%AA%E7%9F%AD.mp3"
+    },
+    {
+      "id": "object-换来的还是同样短",
+      "kind": "object",
+      "text": "换来的还是同样短",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E6%8D%A2%E6%9D%A5%E7%9A%84%E8%BF%98%E6%98%AF%E5%90%8C%E6%A0%B7%E7%9F%AD.mp3"
+    },
+    {
+      "id": "object-长度没有变-仍然够不到",
+      "kind": "object",
+      "text": "长度没有变，仍然够不到",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E9%95%BF%E5%BA%A6%E6%B2%A1%E6%9C%89%E5%8F%98-%E4%BB%8D%E7%84%B6%E5%A4%9F%E4%B8%8D%E5%88%B0.mp3"
+    },
+    {
       "id": "prompt-积木和小车已经分好类-两个空盒子也打开了-下一步怎么做-保留已经做好的部分-再继续完成",
       "kind": "prompt",
       "text": "积木和小车已经分好类，两个空盒子也打开了。下一步怎么做？保留已经做好的部分，再继续完成。",
@@ -7089,6 +7649,22 @@
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E5%93%AA%E4%BA%9B%E4%BA%8B%E6%83%85%E5%B7%B2%E7%BB%8F%E5%81%9A%E5%A5%BD%E4%BA%86-%E4%B8%8B%E4%B8%80%E6%AD%A5%E6%80%8E%E6%A0%B7%E4%BF%9D%E6%8A%A4%E5%AE%83.mp3"
+    },
+    {
+      "id": "object-两类玩具已经分开-盒子还空着",
+      "kind": "object",
+      "text": "两类玩具已经分开，盒子还空着",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E4%B8%A4%E7%B1%BB%E7%8E%A9%E5%85%B7%E5%B7%B2%E7%BB%8F%E5%88%86%E5%BC%80-%E7%9B%92%E5%AD%90%E8%BF%98%E7%A9%BA%E7%9D%80.mp3"
+    },
+    {
+      "id": "object-已经分好的两类玩具",
+      "kind": "object",
+      "text": "已经分好的两类玩具",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%B7%B2%E7%BB%8F%E5%88%86%E5%A5%BD%E7%9A%84%E4%B8%A4%E7%B1%BB%E7%8E%A9%E5%85%B7.mp3"
     },
     {
       "id": "game-title-先处理哪一个",
@@ -7147,6 +7723,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E7%9B%98%E5%AD%90%E5%92%8C%E9%A5%BC%E5%B9%B2%E9%83%BD%E5%9C%A8-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%98%E8%A6%81%E5%85%88%E6%B4%97%E6%89%8B.mp3"
     },
     {
+      "id": "object-先看手上的泥",
+      "kind": "object",
+      "text": "先看手上的泥",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%85%88%E7%9C%8B%E6%89%8B%E4%B8%8A%E7%9A%84%E6%B3%A5.mp3"
+    },
+    {
+      "id": "object-点心准备好了",
+      "kind": "object",
+      "text": "点心准备好了",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E7%82%B9%E5%BF%83%E5%87%86%E5%A4%87%E5%A5%BD%E4%BA%86.mp3"
+    },
+    {
       "id": "prompt-和大人一起到了有斑马线和行人信号灯的路口-先看什么-先找决定能不能走的信号",
       "kind": "prompt",
       "text": "和大人一起到了有斑马线和行人信号灯的路口，先看什么？先找决定能不能走的信号。",
@@ -7185,6 +7777,30 @@
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%85%88%E8%B5%B0%E8%BF%87%E5%8E%BB.mp3"
+    },
+    {
+      "id": "object-来到有行人灯的路口",
+      "kind": "object",
+      "text": "来到有行人灯的路口",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E6%9D%A5%E5%88%B0%E6%9C%89%E8%A1%8C%E4%BA%BA%E7%81%AF%E7%9A%84%E8%B7%AF%E5%8F%A3.mp3"
+    },
+    {
+      "id": "object-先看行人灯",
+      "kind": "object",
+      "text": "先看行人灯",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%85%88%E7%9C%8B%E8%A1%8C%E4%BA%BA%E7%81%AF.mp3"
+    },
+    {
+      "id": "object-绿灯亮-和大人确认安全",
+      "kind": "object",
+      "text": "绿灯亮，和大人确认安全",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E7%BB%BF%E7%81%AF%E4%BA%AE-%E5%92%8C%E5%A4%A7%E4%BA%BA%E7%A1%AE%E8%AE%A4%E5%AE%89%E5%85%A8.mp3"
     },
     {
       "id": "prompt-模型河宽-4-格-长板-5-格-短板-2-格-哪块能搭到对岸-先选最可能满足距离条件的材料",
@@ -7243,6 +7859,38 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%85%88%E9%80%89%E5%B0%8F%E7%9F%B3%E5%A4%B4.mp3"
     },
     {
+      "id": "object-河宽4格-长板5格-短板2格",
+      "kind": "object",
+      "text": "河宽4格，长板5格、短板2格",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E6%B2%B3%E5%AE%BD4%E6%A0%BC-%E9%95%BF%E6%9D%BF5%E6%A0%BC-%E7%9F%AD%E6%9D%BF2%E6%A0%BC.mp3"
+    },
+    {
+      "id": "object-5格长板",
+      "kind": "object",
+      "text": "5格长板",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-5%E6%A0%BC%E9%95%BF%E6%9D%BF.mp3"
+    },
+    {
+      "id": "object-2格短板",
+      "kind": "object",
+      "text": "2格短板",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-2%E6%A0%BC%E7%9F%AD%E6%9D%BF.mp3"
+    },
+    {
+      "id": "object-5格木板可以搭在两岸",
+      "kind": "object",
+      "text": "5格木板可以搭在两岸",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-5%E6%A0%BC%E6%9C%A8%E6%9D%BF%E5%8F%AF%E4%BB%A5%E6%90%AD%E5%9C%A8%E4%B8%A4%E5%B2%B8.mp3"
+    },
+    {
       "id": "prompt-积木和小车要分开放进两个盒子-下次好找-盒子打开了-玩具还混在一起-先做什么-先想哪一步能让两类玩具分开放",
       "kind": "prompt",
       "text": "积木和小车要分开放进两个盒子，下次好找。盒子打开了，玩具还混在一起，先做什么？先想哪一步能让两类玩具分开放。",
@@ -7273,6 +7921,14 @@
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E4%B8%BA%E4%BB%80%E4%B9%88%E6%8A%8A%E5%85%A8%E9%83%A8%E7%8E%A9%E5%85%B7%E6%94%BE%E8%BF%9B%E5%90%8C%E4%B8%80%E4%B8%AA%E7%9B%92%E5%AD%90-%E8%BF%98%E6%B2%A1%E6%9C%89%E5%AE%8C%E6%88%90%E8%BF%99%E6%AC%A1%E7%9A%84%E6%94%B6%E7%BA%B3%E7%9B%AE%E6%A0%87.mp3"
+    },
+    {
+      "id": "object-盒子打开了-玩具还混着",
+      "kind": "object",
+      "text": "盒子打开了，玩具还混着",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E7%9B%92%E5%AD%90%E6%89%93%E5%BC%80%E4%BA%86-%E7%8E%A9%E5%85%B7%E8%BF%98%E6%B7%B7%E7%9D%80.mp3"
     },
     {
       "id": "prompt-想拿对岸胡萝卜-可是中间有小河-先处理什么-目标很清楚-但先要处理挡路的问题",
@@ -7307,6 +7963,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E8%83%A1%E8%90%9D%E5%8D%9C%E6%98%AF%E7%9B%AE%E6%A0%87-%E5%B0%8F%E6%B2%B3%E6%98%AF%E4%BB%80%E4%B9%88.mp3"
     },
     {
+      "id": "object-小河挡住去路",
+      "kind": "object",
+      "text": "小河挡住去路",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%B0%8F%E6%B2%B3%E6%8C%A1%E4%BD%8F%E5%8E%BB%E8%B7%AF.mp3"
+    },
+    {
+      "id": "object-胡萝卜在对岸",
+      "kind": "object",
+      "text": "胡萝卜在对岸",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E8%83%A1%E8%90%9D%E5%8D%9C%E5%9C%A8%E5%AF%B9%E5%B2%B8.mp3"
+    },
+    {
       "id": "prompt-手已洗好-要把饼干盛进盘子再吃-盘子还没拿-下一步先做什么-已经满足的条件不用重复-接着看工具",
       "kind": "prompt",
       "text": "手已洗好，要把饼干盛进盘子再吃。盘子还没拿，下一步先做什么？已经满足的条件不用重复，接着看工具。",
@@ -7337,6 +8009,14 @@
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E5%B7%B2%E7%BB%8F%E5%81%9A%E8%BF%87%E7%9A%84%E6%AD%A5%E9%AA%A4%E8%BF%98%E8%A6%81%E9%87%8D%E5%A4%8D%E5%90%97.mp3"
+    },
+    {
+      "id": "object-手洗好了-点心还没盛好",
+      "kind": "object",
+      "text": "手洗好了，点心还没盛好",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E6%89%8B%E6%B4%97%E5%A5%BD%E4%BA%86-%E7%82%B9%E5%BF%83%E8%BF%98%E6%B2%A1%E7%9B%9B%E5%A5%BD.mp3"
     },
     {
       "id": "prompt-过马路时-小朋友想走-车停着-但灯是红的-先听谁的-多个线索里-先看最明确的规则",
@@ -7385,6 +8065,30 @@
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%85%88%E6%8C%89%E7%BA%A2%E7%81%AF%E5%81%9C.mp3"
+    },
+    {
+      "id": "object-车停了-行人灯仍然是红色",
+      "kind": "object",
+      "text": "车停了，行人灯仍然是红色",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E8%BD%A6%E5%81%9C%E4%BA%86-%E8%A1%8C%E4%BA%BA%E7%81%AF%E4%BB%8D%E7%84%B6%E6%98%AF%E7%BA%A2%E8%89%B2.mp3"
+    },
+    {
+      "id": "object-有人想走",
+      "kind": "object",
+      "text": "有人想走",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E6%9C%89%E4%BA%BA%E6%83%B3%E8%B5%B0.mp3"
+    },
+    {
+      "id": "object-先按红灯停下",
+      "kind": "object",
+      "text": "先按红灯停下",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%85%88%E6%8C%89%E7%BA%A2%E7%81%AF%E5%81%9C%E4%B8%8B.mp3"
     },
     {
       "id": "prompt-蛋糕少了-小猫在厨房-小狗在睡觉-先看哪条线索-先看和蛋糕最直接相关的线索",
@@ -7521,6 +8225,14 @@
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E5%93%AA%E4%B8%80%E7%A7%8D%E6%94%B9%E6%B3%95%E7%9C%9F%E7%9A%84%E6%94%B9%E5%8F%98%E4%BA%86%E5%A4%B1%E8%B4%A5%E5%8E%9F%E5%9B%A0.mp3"
+    },
+    {
+      "id": "object-失败原因是长度不够",
+      "kind": "object",
+      "text": "失败原因是长度不够",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%A4%B1%E8%B4%A5%E5%8E%9F%E5%9B%A0%E6%98%AF%E9%95%BF%E5%BA%A6%E4%B8%8D%E5%A4%9F.mp3"
     },
     {
       "id": "prompt-积木和小车已经分好类-要装进各自的盒子-两个空盒子已打开-下一步做什么-保留已经完成的成果-继续向目标走",
@@ -7667,6 +8379,14 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E7%8E%A9%E5%85%B7%E8%BD%A6.mp3"
     },
     {
+      "id": "object-准备上课-找学习用品",
+      "kind": "object",
+      "text": "准备上课，找学习用品",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%87%86%E5%A4%87%E4%B8%8A%E8%AF%BE-%E6%89%BE%E5%AD%A6%E4%B9%A0%E7%94%A8%E5%93%81.mp3"
+    },
+    {
       "id": "object-玩具车",
       "kind": "object",
       "text": "玩具车",
@@ -7713,6 +8433,14 @@
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E6%96%87%E5%85%B7%E7%9B%92.mp3"
+    },
+    {
+      "id": "object-铅笔散着-要收好",
+      "kind": "object",
+      "text": "铅笔散着，要收好",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E9%93%85%E7%AC%94%E6%95%A3%E7%9D%80-%E8%A6%81%E6%94%B6%E5%A5%BD.mp3"
     },
     {
       "id": "object-文具盒",
@@ -7763,6 +8491,14 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E5%A6%82%E6%9E%9C%E8%A7%84%E5%88%99%E6%94%B9%E6%88%90-%E8%83%BD%E5%96%9D%E6%B0%B4%E7%94%A8-%E7%AD%94%E6%A1%88%E4%BC%9A%E5%8F%98%E6%88%90%E4%BB%80%E4%B9%88.mp3"
     },
     {
+      "id": "object-去晒太阳-要戴在头上",
+      "kind": "object",
+      "text": "去晒太阳，要戴在头上",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%8E%BB%E6%99%92%E5%A4%AA%E9%98%B3-%E8%A6%81%E6%88%B4%E5%9C%A8%E5%A4%B4%E4%B8%8A.mp3"
+    },
+    {
       "id": "object-水壶",
       "kind": "object",
       "text": "水壶",
@@ -7801,6 +8537,14 @@
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E5%B8%BD%E5%AD%90%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B9%9F%E6%9C%89%E4%B8%80%E7%82%B9%E7%9B%B8%E5%85%B3-%E4%BD%86%E4%B8%8D%E6%98%AF%E6%9C%80%E5%A5%BD%E7%AD%94%E6%A1%88.mp3"
+    },
+    {
+      "id": "object-外面下雨-需要防雨",
+      "kind": "object",
+      "text": "外面下雨，需要防雨",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%A4%96%E9%9D%A2%E4%B8%8B%E9%9B%A8-%E9%9C%80%E8%A6%81%E9%98%B2%E9%9B%A8.mp3"
     },
     {
       "id": "object-饭盒",
@@ -7843,6 +8587,14 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E8%BF%99%E6%AC%A1%E8%A7%84%E5%88%99%E6%98%AF-%E8%83%BD%E5%B8%A6%E5%87%BA%E9%97%A8-%E8%BF%98%E6%98%AF-%E8%83%BD%E5%96%9D%E6%B0%B4.mp3"
     },
     {
+      "id": "object-路上口渴-要能喝水",
+      "kind": "object",
+      "text": "路上口渴，要能喝水",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E8%B7%AF%E4%B8%8A%E5%8F%A3%E6%B8%B4-%E8%A6%81%E8%83%BD%E5%96%9D%E6%B0%B4.mp3"
+    },
+    {
       "id": "prompt-中午要吃点心-先装能放食物的东西-选哪一个-先找和食物直接相关的物品",
       "kind": "prompt",
       "text": "中午要吃点心，先装能放食物的东西，选哪一个？先找和食物直接相关的物品。",
@@ -7873,6 +8625,14 @@
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E9%A5%AD%E7%9B%92%E5%92%8C%E6%B0%B4%E5%A3%B6%E5%93%AA%E9%87%8C%E5%83%8F-%E5%93%AA%E9%87%8C%E4%B8%8D%E4%B8%80%E6%A0%B7.mp3"
+    },
+    {
+      "id": "object-点心要带出门",
+      "kind": "object",
+      "text": "点心要带出门",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E7%82%B9%E5%BF%83%E8%A6%81%E5%B8%A6%E5%87%BA%E9%97%A8.mp3"
     },
     {
       "id": "prompt-今天上课-规则是-要学习用品-不要玩具-选哪一个-先保留符合规则的-再排除玩具",
@@ -7907,6 +8667,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E5%93%AA%E4%B8%AA%E6%98%AF%E8%A2%AB-%E4%B8%8D%E8%A6%81%E7%8E%A9%E5%85%B7-%E6%8E%92%E9%99%A4%E6%8E%89%E7%9A%84.mp3"
     },
     {
+      "id": "object-去上课-带学习用品",
+      "kind": "object",
+      "text": "去上课，带学习用品",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%8E%BB%E4%B8%8A%E8%AF%BE-%E5%B8%A6%E5%AD%A6%E4%B9%A0%E7%94%A8%E5%93%81.mp3"
+    },
+    {
+      "id": "object-不要玩具",
+      "kind": "object",
+      "text": "不要玩具",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E4%B8%8D%E8%A6%81%E7%8E%A9%E5%85%B7.mp3"
+    },
+    {
       "id": "prompt-要去操场晒太阳-规则是-带遮阳用的-不带装点心的盒子-选哪一个-先看能不能遮阳-再排除装点心的容器",
       "kind": "prompt",
       "text": "要去操场晒太阳，规则是：带遮阳用的，不带装点心的盒子。选哪一个？先看能不能遮阳，再排除装点心的容器。",
@@ -7937,6 +8713,22 @@
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E9%A5%AD%E7%9B%92%E4%B8%BA%E4%BB%80%E4%B9%88%E7%9B%B8%E5%85%B3-%E4%BD%86%E8%A2%AB%E7%AC%AC%E4%BA%8C%E6%9D%A1%E8%A7%84%E5%88%99%E6%8E%92%E9%99%A4%E4%BA%86.mp3"
+    },
+    {
+      "id": "object-去操场晒太阳",
+      "kind": "object",
+      "text": "去操场晒太阳",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%8E%BB%E6%93%8D%E5%9C%BA%E6%99%92%E5%A4%AA%E9%98%B3.mp3"
+    },
+    {
+      "id": "object-不带装点心的盒子",
+      "kind": "object",
+      "text": "不带装点心的盒子",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E4%B8%8D%E5%B8%A6%E8%A3%85%E7%82%B9%E5%BF%83%E7%9A%84%E7%9B%92%E5%AD%90.mp3"
     },
     {
       "id": "prompt-下雨出门-规则是-能穿在身上-还能防雨-选哪一个-两个条件都要满足",
@@ -7971,6 +8763,14 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E5%93%AA%E4%B8%AA%E5%8F%AA%E6%BB%A1%E8%B6%B3%E4%B8%80%E4%B8%AA%E6%9D%A1%E4%BB%B6-%E5%93%AA%E4%B8%AA%E4%B8%A4%E4%B8%AA%E6%9D%A1%E4%BB%B6%E9%83%BD%E6%BB%A1%E8%B6%B3.mp3"
     },
     {
+      "id": "object-要穿在身上-也要防雨",
+      "kind": "object",
+      "text": "要穿在身上，也要防雨",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E8%A6%81%E7%A9%BF%E5%9C%A8%E8%BA%AB%E4%B8%8A-%E4%B9%9F%E8%A6%81%E9%98%B2%E9%9B%A8.mp3"
+    },
+    {
       "id": "prompt-要把铅笔收好-规则是-能装铅笔-还能合上防止散落-选哪一个-两个条件都要满足-装得进去-也能关好",
       "kind": "prompt",
       "text": "要把铅笔收好，规则是：能装铅笔，还能合上防止散落。选哪一个？两个条件都要满足：装得进去，也能关好。",
@@ -8001,6 +8801,22 @@
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E5%A6%82%E6%9E%9C%E5%8F%AA%E8%AF%B4%E5%AD%A6%E4%B9%A0%E7%94%A8%E5%93%81-%E4%B9%A6%E6%9C%AC%E5%8F%AF%E4%B8%8D%E5%8F%AF%E4%BB%A5-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%99%E9%A2%98%E4%B8%8D%E9%80%89%E5%AE%83.mp3"
+    },
+    {
+      "id": "object-铅笔要收好-不能散落",
+      "kind": "object",
+      "text": "铅笔要收好，不能散落",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E9%93%85%E7%AC%94%E8%A6%81%E6%94%B6%E5%A5%BD-%E4%B8%8D%E8%83%BD%E6%95%A3%E8%90%BD.mp3"
+    },
+    {
+      "id": "object-合上笔袋-铅笔不会散落",
+      "kind": "object",
+      "text": "合上笔袋，铅笔不会散落",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%90%88%E4%B8%8A%E7%AC%94%E8%A2%8B-%E9%93%85%E7%AC%94%E4%B8%8D%E4%BC%9A%E6%95%A3%E8%90%BD.mp3"
     },
     {
       "id": "prompt-刚才规则是学习用品-现在换成-能补充水分-选哪一个-规则换了-答案也可能换",
@@ -8035,6 +8851,14 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E8%A7%84%E5%88%99%E6%8D%A2%E4%BA%86%E4%BB%A5%E5%90%8E-%E5%8E%9F%E6%9D%A5%E7%9A%84%E7%AD%94%E6%A1%88%E8%BF%98%E4%B8%80%E5%AE%9A%E5%AF%B9%E5%90%97.mp3"
     },
     {
+      "id": "object-现在换成补充水分",
+      "kind": "object",
+      "text": "现在换成补充水分",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E7%8E%B0%E5%9C%A8%E6%8D%A2%E6%88%90%E8%A1%A5%E5%85%85%E6%B0%B4%E5%88%86.mp3"
+    },
+    {
       "id": "prompt-规则是-可以玩-但今天不能带去学校-谁应该留下-这次不是选要装的-而是选应该留下的",
       "kind": "prompt",
       "text": "规则是：可以玩，但今天不能带去学校。谁应该留下？这次不是选要装的，而是选应该留下的。",
@@ -8065,6 +8889,14 @@
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E8%BF%99%E9%A2%98%E7%9A%84%E9%97%AE%E9%A2%98%E6%96%B9%E5%90%91%E5%92%8C%E5%89%8D%E9%9D%A2%E4%B8%80%E6%A0%B7%E5%90%97.mp3"
+    },
+    {
+      "id": "object-去上课-这次选应该留下的",
+      "kind": "object",
+      "text": "去上课，这次选应该留下的",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%8E%BB%E4%B8%8A%E8%AF%BE-%E8%BF%99%E6%AC%A1%E9%80%89%E5%BA%94%E8%AF%A5%E7%95%99%E4%B8%8B%E7%9A%84.mp3"
     },
     {
       "id": "prompt-远足出发前已经口渴了-点心等到休息时再吃-先拿哪个-两个都相关时-先看更急的需求",
@@ -8099,6 +8931,22 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E6%B0%B4%E5%A3%B6%E5%92%8C%E9%A5%AD%E7%9B%92%E9%83%BD%E7%9B%B8%E5%85%B3%E6%97%B6-%E4%BD%A0%E6%80%8E%E4%B9%88%E5%86%B3%E5%AE%9A%E5%85%88%E5%90%8E.mp3"
     },
     {
+      "id": "object-现在-已经口渴",
+      "kind": "object",
+      "text": "现在：已经口渴",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E7%8E%B0%E5%9C%A8-%E5%B7%B2%E7%BB%8F%E5%8F%A3%E6%B8%B4.mp3"
+    },
+    {
+      "id": "object-休息时-再吃点心",
+      "kind": "object",
+      "text": "休息时：再吃点心",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E4%BC%91%E6%81%AF%E6%97%B6-%E5%86%8D%E5%90%83%E7%82%B9%E5%BF%83.mp3"
+    },
+    {
       "id": "prompt-下一节是阅读课-要翻开来看故事-先装哪一个-按这节课的任务选-要能翻开读故事",
       "kind": "prompt",
       "text": "下一节是阅读课，要翻开来看故事。先装哪一个？按这节课的任务选，要能翻开读故事。",
@@ -8129,6 +8977,14 @@
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E8%BF%99%E4%B8%89%E4%B8%AA%E5%93%AA%E9%87%8C%E9%83%BD%E7%9B%B8%E5%85%B3-%E5%93%AA%E4%B8%80%E4%B8%AA%E6%9C%80%E7%AC%A6%E5%90%88%E5%AE%8C%E6%95%B4%E8%A7%84%E5%88%99.mp3"
+    },
+    {
+      "id": "object-下一节要翻开看故事",
+      "kind": "object",
+      "text": "下一节要翻开看故事",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E4%B8%8B%E4%B8%80%E8%8A%82%E8%A6%81%E7%BF%BB%E5%BC%80%E7%9C%8B%E6%95%85%E4%BA%8B.mp3"
     },
     {
       "id": "game-title-谁和谁一对",
@@ -8539,6 +9395,30 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E5%B8%BD%E5%AD%90%E5%92%8C%E9%9B%A8%E8%A1%A3%E9%83%BD%E5%9C%A8%E4%BF%9D%E6%8A%A4%E6%88%91%E4%BB%AC-%E5%88%86%E5%88%AB%E4%BF%9D%E6%8A%A4%E4%BB%80%E4%B9%88%E6%83%85%E5%86%B5.mp3"
     },
     {
+      "id": "object-太阳大",
+      "kind": "object",
+      "text": "太阳大",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%A4%AA%E9%98%B3%E5%A4%A7.mp3"
+    },
+    {
+      "id": "object-戴帽子",
+      "kind": "object",
+      "text": "戴帽子",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E6%88%B4%E5%B8%BD%E5%AD%90.mp3"
+    },
+    {
+      "id": "object-下雨了",
+      "kind": "object",
+      "text": "下雨了",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E4%B8%8B%E9%9B%A8%E4%BA%86.mp3"
+    },
+    {
       "id": "prompt-口渴配水壶-饿了配什么-先看需要-再找能解决需要的东西",
       "kind": "prompt",
       "text": "口渴配水壶，饿了配什么？先看需要，再找能解决需要的东西。",
@@ -8569,6 +9449,22 @@
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E8%BF%99%E9%A2%98%E6%98%AF%E6%8C%89%E7%89%A9%E5%93%81%E9%95%BF%E7%9B%B8%E9%85%8D-%E8%BF%98%E6%98%AF%E6%8C%89%E9%9C%80%E8%A6%81%E9%85%8D.mp3"
+    },
+    {
+      "id": "object-口渴了",
+      "kind": "object",
+      "text": "口渴了",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%8F%A3%E6%B8%B4%E4%BA%86.mp3"
+    },
+    {
+      "id": "object-饿了",
+      "kind": "object",
+      "text": "饿了",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E9%A5%BF%E4%BA%86.mp3"
     },
     {
       "id": "prompt-钥匙能帮我们过门-小河挡路时什么能帮我们过去-先找-解决障碍-的关系",
@@ -8609,6 +9505,22 @@
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E9%95%BF%E6%9C%A8%E6%9D%BF.mp3"
+    },
+    {
+      "id": "object-打开门",
+      "kind": "object",
+      "text": "打开门",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E6%89%93%E5%BC%80%E9%97%A8.mp3"
+    },
+    {
+      "id": "object-桌面小河挡住去路",
+      "kind": "object",
+      "text": "桌面小河挡住去路",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E6%A1%8C%E9%9D%A2%E5%B0%8F%E6%B2%B3%E6%8C%A1%E4%BD%8F%E5%8E%BB%E8%B7%AF.mp3"
     },
     {
       "id": "object-门",

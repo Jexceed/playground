@@ -1,3 +1,8 @@
+import { BridgeContextPicture } from "../components/BridgeContextPicture";
+import { LogicLessonBoard, LogicPicture, LogicTaskCue, LogicRelationBoard } from "../components/LogicLessonBoard";
+import { logicLessonFor, logicTaskCueFor, logicActionRules, logicRelationFrames, type LogicLesson } from "../data/logicLessonVisuals";
+import { LogicChoicePicture, logicChoicePictureFor } from "../components/LogicChoicePicture";
+import { LogicBridgeChoice, logicBridgeChoiceFor } from "../components/LogicBridgeChoice";
 import { ArrowRight, Check, RotateCcw } from "lucide-react";
 import { Fragment, useEffect, useId, useMemo, useRef, useState } from "react";
 import type { CSSProperties } from "react";
@@ -58,7 +63,8 @@ export function ProgressiveSetGame({
   }, [game.rounds, requestedRoundIndex, requestedRoundReadKey, roundIndex]);
 
   const round = game.rounds[roundIndex];
-  const showStoryScene = Boolean(round.sequenceStory && storyTaskRound !== round.id);
+  const logicLesson = logicLessonFor(round);
+  const showStoryScene = Boolean((round.sequenceStory || logicLesson) && storyTaskRound !== round.id);
   const isCorrect = answered && selected === round.answer;
   const isLastRound = roundIndex === game.rounds.length - 1;
   const timedObservation = Boolean(round.observation);
@@ -92,7 +98,7 @@ export function ProgressiveSetGame({
     }
     const choice = round.choices.find((item) => item.value === value);
     playTone("tap");
-    if (choice) speak(labelForVoice(choice.label));
+    if (choice) speak(logicLesson ? choice.label : labelForVoice(choice.label));
     setSelected(value);
     setRetryMessage(null);
   }
@@ -178,6 +184,7 @@ export function ProgressiveSetGame({
       <RoundBoard
         key={round.id}
         solved={isCorrect}
+        logicLesson={logicLesson}
         showStoryScene={showStoryScene}
         onStoryStart={() => { setStoryTaskRound(round.id); speak(joinVoiceLine(round.prompt, round.instruction)); }}
         onStoryScene={() => { stopSpeech(); setStoryTaskRound(null); }}
@@ -215,18 +222,21 @@ export function ProgressiveSetGame({
         </p>
       )}
 
-      {!showStoryScene && !(round.sequenceStory && isCorrect) && <div className={`choice-grid answer-grid ${round.sequenceStory ? "answer-grid-story" : ""} ${round.graphicChallenge ? "answer-grid-graphic" : ""}`}>
+      {!showStoryScene && !((round.sequenceStory || logicLesson) && isCorrect) && <div className={`choice-grid answer-grid ${round.sequenceStory ? "answer-grid-story" : ""} ${logicLesson ? "answer-grid-lesson" : ""} ${round.graphicChallenge ? "answer-grid-graphic" : ""}`}>
         {round.choices.map((choice) => {
           const active = selected === choice.value;
           const wrong = answered && active && choice.value !== round.answer;
           const correct = answered && choice.value === round.answer;
           const graphicOption = round.graphicChallenge?.options.find((option) => option.value === choice.value);
-          const voiceLabel = labelForVoice(choice.label);
+          const voiceLabel = logicLesson ? choice.label : labelForVoice(choice.label);
+          const lessonPicture = logicLesson?.choices[choice.value];
+          const exactPicture = logicChoicePictureFor(game.id, round, choice);
+          const bridgePicture = game.id === "logic-space-bridge" ? logicBridgeChoiceFor(round, choice) : null;
           const storyChoiceImage = round.sequenceStory && round.choices.every(item => orderStoryImage(round, item.label)) ? orderStoryImage(round, choice.label) : undefined;
           return (
             <button
               aria-label={voiceLabel}
-              className={`answer-choice ${graphicOption ? "answer-choice-graphic" : ""} ${isVisualCardChoice(choice.value) ? "answer-choice-visual-card" : ""} ${active ? "active" : ""} ${correct ? "correct" : ""} ${wrong ? "wrong" : ""}`}
+              className={`answer-choice ${exactPicture || bridgePicture ? "answer-choice-picture" : ""} ${graphicOption ? "answer-choice-graphic" : ""} ${isVisualCardChoice(choice.value) ? "answer-choice-visual-card" : ""} ${active ? "active" : ""} ${correct ? "correct" : ""} ${wrong ? "wrong" : ""}`}
               data-testid={`answer-${choice.value}`}
               disabled={answered || !canAnswer}
               key={choice.value}
@@ -234,7 +244,10 @@ export function ProgressiveSetGame({
               onClick={() => choose(choice.value)}
             >
               {correct && <Check size={18} />}
-              {storyChoiceImage
+              {lessonPicture ? <><LogicPicture picture={lessonPicture}/><span>{choice.label}</span></>
+                : bridgePicture ? <><LogicBridgeChoice gameId={game.id} round={round} choice={choice}/><span>{choice.label}</span></>
+                : exactPicture ? <><LogicChoicePicture gameId={game.id} round={round} choice={choice}/><span>{choice.label}</span></>
+                : storyChoiceImage
                 ? <><img className={`order-answer-image ${isCorrect ? "order-answer-image-solved" : ""}`} src={publicAsset(storyChoiceImage.src)} alt="" /><span>{choice.label}</span></>
                 : <ChoiceContent graphicOption={graphicOption} label={choice.label} value={choice.value} />}
 
@@ -388,6 +401,7 @@ function labelForVoice(label: string) {
 }
 
 function RoundBoard({
+  logicLesson,
   solved,
   showStoryScene,
   onStoryStart,
@@ -401,6 +415,7 @@ function RoundBoard({
   onSubitizePeek,
   onReviewMemory,
 }: {
+  logicLesson?: LogicLesson;
   solved: boolean;
   showStoryScene: boolean;
   onStoryStart: () => void;
@@ -414,6 +429,9 @@ function RoundBoard({
   onSubitizePeek?: () => void;
   onReviewMemory?: () => void;
 }) {
+  if (logicLesson) return <LogicLessonBoard lesson={logicLesson} roundId={round.id} solved={solved} showScene={showStoryScene} onStart={onStoryStart} onScene={onStoryScene}/>;
+  if (gameId === "logic-mirror-fold" && round.visualGroups?.some(group => group.label === "镜子")) return <MirrorOrderBoard round={round} solved={solved}/>;
+  if (gameId === "logic-relation-pairs" && logicRelationFrames(round)) return <LogicRelationBoard round={round}/>;
   if (round.sequenceStory && round.sceneImage) {
     return <OrderSequenceBoard round={round} solved={solved} showScene={showStoryScene} onStart={onStoryStart} onScene={onStoryScene} />;
   }
@@ -431,6 +449,7 @@ function RoundBoard({
   );
   const boardClasses = [
     "round-board",
+    logicTaskCueFor(gameId, round) || logicActionRules(round) ? "logic-board-cue" : "",
     `round-scene-${scene}`,
     round.sceneImage ? "round-board-with-image" : "",
     hasOnlySceneImage ? "round-board-image-only" : "",
@@ -441,7 +460,8 @@ function RoundBoard({
   ].filter(Boolean).join(" ");
   return (
     <section className={boardClasses} aria-label="题目画面">
-      {round.sceneImage && (
+      <LogicTaskCue gameId={gameId} round={round} solved={solved}/>
+      {round.sceneImage && (gameId === "logic-space-bridge" ? <BridgeContextPicture image={round.sceneImage}/> :
         <figure className="scene-image-card">
           <img src={publicAsset(round.sceneImage.src)} alt={round.sceneImage.alt} />
         </figure>
@@ -478,7 +498,7 @@ function RoundBoard({
       {round.visualGroups && !(inside && outside) && (
         <div className={visualGroupClasses(round.visualGroups)}>
           {round.visualGroups.map((group) => (
-            <div className="visual-group" key={group.label}>
+            <div className="visual-group" data-label={group.label} key={group.label}>
               <strong>{group.label}</strong>
               {group.layout === "subitize" ? (
                 <SubitizeFrame key={round.id} items={group.items} visible={subitizeVisible} ready={subitizeReady} onPeek={onSubitizePeek} />
@@ -863,6 +883,7 @@ function graphicFigureAssetSrc(shape: GraphicFigure["shape"]) {
 
 const evidenceGroupLabels = new Set([
   "完整图",
+  "完整的一组图卡",
   "已经有",
   "可选小块",
   "天平左边",
@@ -1053,11 +1074,21 @@ function AddressGrid({ grid }: { grid: NonNullable<GameRound["grid"]> }) {
   );
 }
 
+function MirrorOrderBoard({round, solved}: {round: GameRound; solved: boolean}) {
+  const left = round.visualGroups?.find(group => group.label === "镜子左边")?.items ?? [];
+  const right = solved ? visualParts(round.answer) : left.map(() => "?");
+  return <section className="mirror-order-board" aria-label="镜子两边的图卡顺序">
+    <div><strong>镜子左边</strong><div className="mirror-order-cards">{left.map((value,index)=><VisualToken key={index} value={value}/>)}</div></div>
+    <div className="mirror-order-axis" aria-label="竖直镜面"><span>镜子</span></div>
+    <div><strong>{solved ? "镜中的顺序" : "镜中应该怎样排？"}</strong><div className="mirror-order-cards">{right.map((value,index)=><VisualToken key={index} value={value}/>)}</div></div>
+  </section>;
+}
+
 function MatrixBoard({ cells }: { cells: string[][] }) {
   return (
     <div className="matrix-board" aria-label="图形规律表">
       {cells.map((row, rowIndex) => (
-        <div className="matrix-row" key={`matrix-row-${rowIndex}`}>
+        <div className="matrix-row" style={{ gridTemplateColumns: `repeat(${row.length}, minmax(0, 1fr))` }} key={`matrix-row-${rowIndex}`}>
           {row.map((cell, cellIndex) => (
             <div className={`matrix-cell ${cell === "?" ? "matrix-cell-missing" : ""}`} key={`${rowIndex}-${cellIndex}`}>
               <MatrixCellToken value={cell} />

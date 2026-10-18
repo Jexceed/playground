@@ -1,0 +1,112 @@
+{
+  "model": "gpt-6.1-sol",
+  "cards": {
+    "loosePencils": {
+      "src": "/images/items/logic-046-daily-loosePencils.png",
+      "alt": "四支铅笔散放在桌面上，尚未收进文具盒。"
+    },
+    "thirsty": {
+      "src": "/images/items/logic-046-daily-thirsty.png",
+      "alt": "橙衣孩子轻摸喉咙表示口渴，手里没有杯子、水壶或食物。"
+    },
+    "hungry": {
+      "src": "/images/items/logic-046-daily-hungry.png",
+      "alt": "橙衣孩子轻摸肚子，饿了等待吃东西，没有拿食物或饭盒。"
+    },
+    "sunnyChild": {
+      "src": "/images/items/logic-046-daily-sunnyChild.png",
+      "alt": "阳光明亮，橙衣孩子在门内准备到户外，头上无帽、双手空着。"
+    },
+    "rainWindow": {
+      "src": "/images/items/logic-046-daily-rainWindow.png",
+      "alt": "窗外明显下雨，玻璃上有雨滴，没有雨衣或雨伞。"
+    },
+    "openStoryBook": {
+      "src": "/images/items/logic-046-daily-openStoryBook.png",
+      "alt": "打开的图画故事书，两页是小兔在草地上的连续故事画面，没有文字。"
+    },
+    "closedPencilCase": {
+      "src": "/images/items/logic-046-daily-closedPencilCase.png",
+      "alt": "蓝色拉链文具袋完全合好，拉链闭合，没有铅笔露出。"
+    },
+    "emptyBasket": {
+      "src": "/images/items/logic-046-daily-emptyBasket.png",
+      "alt": "空藤编收纳篮，正面和空的内部清楚可见。"
+    },
+    "studyCue": {
+      "src": "/images/items/logic-046-daily-studyCue.png",
+      "alt": "橙衣孩子坐在教室空桌前准备学习，双手空着，桌上没有学习用品。"
+    },
+    "clap": {
+      "src": "/images/items/logic-046-daily-clap.png",
+      "alt": "橙衣孩子在胸前双手拍在一起，正在拍手。"
+    },
+    "hugShoulders": {
+      "src": "/images/items/logic-046-daily-hugShoulders.png",
+      "alt": "橙衣孩子双臂交叉，双手分别放在对侧肩膀上。"
+    },
+    "touchHead": {
+      "src": "/images/items/logic-046-daily-touchHead.png",
+      "alt": "橙衣孩子抬起双臂，双手放在头顶上。"
+    },
+    "stone": {
+      "src": "/images/items/logic-046-daily-stone.png",
+      "alt": "一颗小而圆润的灰色卵石。"
+    },
+    "placeCookies": {
+      "src": "/images/items/logic-046-daily-placeCookies.png",
+      "alt": "孩子用干净手把纸垫上的饼干盛进放在桌上的蓝边白盘，盘内已有一块，纸垫上仍有饼干。"
+    },
+    "eatFromPlate": {
+      "src": "/images/items/logic-046-daily-eatFromPlate.png",
+      "alt": "孩子用干净手从蓝边白盘取一块饼干送到嘴边吃，盘里仍有饼干，纸垫已经空了。"
+    }
+  },
+  "sources": [
+    {
+      "src": "public/images/items/source/logic-046-daily-tasks.png",
+      "metadata": "public/images/items/source/logic-046-daily-tasks.json",
+      "keys": [
+        "loosePencils",
+        "thirsty",
+        "hungry",
+        "sunnyChild",
+        "rainWindow",
+        "closedPencilCase",
+        "emptyBasket",
+        "studyCue"
+      ]
+    },
+    {
+      "src": "public/images/items/source/logic-046-daily-actions.png",
+      "metadata": "public/images/items/source/logic-046-daily-actions.json",
+      "keys": [
+        "clap",
+        "hugShoulders",
+        "touchHead"
+      ]
+    },
+    {
+      "src": "public/images/items/source/logic-046-daily-openStoryBook.png",
+      "metadata": "public/images/items/source/logic-046-daily-openStoryBook.json",
+      "keys": [
+        "openStoryBook"
+      ]
+    },
+    {
+      "src": "public/images/items/source/logic-046-daily-stone.png",
+      "metadata": "public/images/items/source/logic-046-daily-stone.json",
+      "keys": [
+        "stone"
+      ]
+    },
+    {
+      "src": "public/images/items/source/logic-046-daily-snack-serving.png",
+      "metadata": "public/images/items/source/logic-046-daily-snack-serving.json",
+      "keys": [
+        "placeCookies",
+        "eatFromPlate"
+      ]
+    }
+  ]
+}

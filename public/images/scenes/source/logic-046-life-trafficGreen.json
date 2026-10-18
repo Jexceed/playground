@@ -1,0 +1,13 @@
+{
+  "key": "trafficGreen",
+  "src": "/Users/chiang/.codex/generated_images/01a14fa7-1a75-71c3-a797-fcc6410ee5dc/exec-9f420b91-b895-4601-8363-2361da29d4d7.png",
+  "prompt": "Use case: precise-object-edit. Make a SINGLE 16:9 wide initial-situation picture for a preschool road safety reasoning game. Preserve the supplied warm watercolor colored pencil reference's orange-shirt dark-haired boy, adult woman in green blouse/cream trousers and canvas bag, street, zebra crossing, car and framing. Change ONLY the PEDESTRIAN SIGNAL from red standing person to a clearly lit GREEN WALKING PERSON pictogram. The silver CAR stays STATIONARY BEHIND the white stop line. Adult holds boy's hand; BOTH people remain standing still entirely ON THE SIDEWALK BEHIND THE CURB, both feet planted, no foot lifted, no stepping onto crossing, no pointing. They have NOT STARTED crossing. Keep safe separation from traffic, clear green pedestrian signal in upper right. No red illuminated signal. No extra characters, vehicles, arrows, words, watermark. One 16:9 scene.",
+  "reference": "public/images/scenes/order-045-traffic-red.png",
+  "alt": "行人绿灯亮，汽车停在停止线后；大人牵孩子仍站在路缘后，还没有开始过马路。",
+  "tool": "built-in image_gen",
+  "agentModel": "gpt-6.1-sol",
+  "source": "public/images/scenes/source/logic-046-life-trafficGreen.png",
+  "output": "/images/scenes/logic-046-life-trafficGreen.png",
+  "width": 1200,
+  "height": 675
+}

@@ -1,0 +1,28 @@
+{
+  "model": "gpt-6.1-sol",
+  "generator": "built-in image_gen",
+  "generatedFile": "/Users/chiang/.codex/generated_images/01a14fa7-7829-7452-8423-d2592d12ab53/exec-dc0ba82c-7649-493d-a2fe-7baaead1ed8f.png",
+  "prompt": "Use case: illustration-story. One square preschool educational OBJECT card. Subject: exactly ONE SMALL SMOOTH ROUNDED GRAY PEBBLE, a simple oval river-worn stone with softly rounded irregular edges, gray neutral matte mineral surface, very subtle natural speckling, gentle soft shadow underneath. The pebble must be a plain recognizable stone, not a gem, not a crystal, not a mountain or boulder. Match the supplied style reference's warm watercolor and colored-pencil textures on pale cream paper. Clean simple light cream background, no scenery. One pebble centered, occupies approximately central half of square image, generous empty margin on all four sides. No people, hands, faces, water, river, grass, plants, other stones, toys, tools or other objects. No text letters numbers labels arrows icons border panels watermark. Square composition, detailed yet calm toddler-readable illustration.",
+  "reference": "public/images/scenes/source/drinking-thirsty.png",
+  "sourceDimensions": {
+    "width": 1254,
+    "height": 1254
+  },
+  "outputs": [
+    {
+      "key": "stone",
+      "path": "public/images/items/logic-046-daily-stone.png",
+      "crop": null,
+      "resize": {
+        "width": 600,
+        "height": 600,
+        "fit": "fill"
+      }
+    }
+  ],
+  "visualReview": {
+    "status": "reviewed",
+    "date": "2026-10-19",
+    "note": "仅一个圆润灰色卵石，无人物、河流或其他物体，四周留白完整"
+  }
+}

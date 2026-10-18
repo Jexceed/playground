@@ -1,0 +1,451 @@
+✔ 启蒙 and 探索 partition the complete catalog without duplicating or changing old questions (0.630917ms)
+✔ both old locations seed their own sections without overwriting storage (0.263917ms)
+✔ switching sections and restarting preserves two independent stable positions (0.177209ms)
+✔ a saved question ID resolves regardless of a stale index and cannot cross section boundaries (0.049333ms)
+✔ future, corrupt and unavailable navigation storage is preserved with usable defaults (0.111541ms)
+✔ each group keeps its own last question across switching and a fresh read (0.181666ms)
+✔ explicit reset changes only the selected group's remembered question (0.073708ms)
+✔ group resolution follows the stable question ID and stays inside the selected group (0.069208ms)
+✔ schema 1 migrates known section and legacy group positions without rewriting on read (0.118417ms)
+✔ invalid schema-2 maps are preserved and cannot overwrite other navigation history (0.122708ms)
+✔ removed questions or groups do not discard the other groups' saved positions (0.097417ms)
+✔ review corrections preserve every enlightenment identity and correct answer (9.014917ms)
+✔ matrix examples and all answer options render both constituent pictures (4.007459ms)
+✔ two-condition sorter distractors each violate just one different condition (0.124ms)
+✔ rotation sequences independently follow their direction without a contradictory backdrop (0.076ms)
+✔ sorting tasks expose a sorting goal and the failed plan shows the mixed state (0.430667ms)
+✔ replacement distractors remain illustrated, related steps without the reviewed absurd options (0.1115ms)
+✔ the bridge repair states the model, destination, usable material, and visible target (0.053917ms)
+✔ review baseline remains the pre-edit d8dcbf2c snapshot (1.515ms)
+✔ games: only the explicit reviewed rounds and fields may change; all other content stays equal (4.326041ms)
+✔ activitySets: only the explicit reviewed rounds and fields may change; all other content stays equal (13.457417ms)
+✔ exactly eighteen semantic revisions increase while answer contracts remain intact (1.663625ms)
+✔ new revision records never delete or copy the old revision completion evidence (20.211ms)
+✔ original planting atlas and its source retain their pre-edit SHA-256 bytes (2.298625ms)
+✔ drinking answers stay exact through the authorized 045 story-surface completion (8.366625ms)
+✔ unanswered and wrong states keep the only blank and never expose its answer picture (0.251875ms)
+✔ success fills the real blank with the correct distinct action, preserving the sequence (0.154292ms)
+✔ registered scenes have different initial facts and exact scene dimensions (6.221458ms)
+✔ all four action images are local, distinct readable PNGs with retained generation source (4.046792ms)
+✔ every water-task option is illustrated equally, including both empty-cup distractors (1.411334ms)
+✔ all stable enlightenment and exploration identities survive the authorized review corrections (1.264375ms)
+✔ answer positions stay balanced without long runs or a repeating group-wide cycle (0.72175ms)
+✔ reordering preserves each drawn option, semantic answer and display letter (0.735792ms)
+✔ quantity pictures independently agree with addition, subtraction, sharing and grouping (0.270792ms)
+✔ a timed observation cannot silently start on navigation and interruption reopens readiness (0.111625ms)
+✔ jumping to the last round does not invent earlier completion or ability evidence (0.08425ms)
+✔ memory options have exactly one answer supported by the visible sequence (0.18875ms)
+✔ missing and extra picture cards match independent multiset differences (0.116875ms)
+✔ corrected number pairs have a visible repeated rule and no nonexistent color cue (0.08475ms)
+✔ bridge plans span every supported gap, not only enough total wood (0.15475ms)
+✔ story corrections specify needs and do not confuse game rules with crossing a road (0.171041ms)
+✔ layer cards expose the exact aligned positions and their opaque stacking order (0.197583ms)
+✔ code-table queries are not always the first example and maps independently determine the answer (0.176917ms)
+✔ counting evidence is not always the middle group and numeric distractors stay nearby (0.182875ms)
+✔ quantity pictures preserve the counted object and every candidate quantity (0.655041ms)
+✔ height candidates preserve all columns and their order, including distractors (0.609709ms)
+✔ left middle right pictures refer to the actual corresponding sample card (0.09525ms)
+✔ basket shape labels do not introduce a color rule (0.180708ms)
+✔ every bridge candidate has a diagram using only its real plank lengths (0.288292ms)
+✔ bridge distractors remain impossible at the actual river gaps and supports (0.1625ms)
+✔ the initial bridge question depicts distinct measured endpoints (0.093ms)
+✔ picture helpers do not use answer identity or affect unrelated games (0.255625ms)
+✖ all 319 logic questions and all other curriculum data retain their exact IDs, answers and wording (348.163ms)
+✔ all 26 life and 17 evidence problems have complete context, current facts, outcomes and every choice (0.625125ms)
+✔ wrong actions never replay as the recommended correction (0.147458ms)
+✔ evidence choices preserve the photographed scene, including awake dogs and an empty weak-clue plate (0.119375ms)
+✔ all 14 packing tasks have explicit needs while three analogies expose the previously absent target (0.095917ms)
+✔ all six color-action rules display two distinct actions and match the round rule (0.084959ms)
+✔ every spoken support caption has been exported for local narration (3.482209ms)
+✔ 045 changes only the remaining story surfaces; all 1110 identities, answers and unrelated content survive (9.853666ms)
+✔ every initial story is a registered 1200x675 PNG, never a generic old backdrop (12.175959ms)
+✔ all 24 questions keep one unknown until correct, then fill the exact position without changing order (0.665083ms)
+✔ all steps and all options have distinct semantic local art; no correct-only picture cue (28.773416ms)
+✔ meaning conflicts resolve by question and stage, including dirty hands and already-sorted toys (0.369459ms)
+✔ requested gpt-6.1-sol artwork manifests cover every brief scene and card (1.274208ms)
+✔ round navigator clicks request an immediate round read (0.994542ms)
+✔ game surface reads the requested target round instead of only the current render (0.070416ms)
+ℹ tests 67
+ℹ suites 0
+ℹ pass 66
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1131.464959
+
+✖ failing tests:
+
+test at scripts/logic-lesson-visuals.test.mjs:11:1
+✖ all 319 logic questions and all other curriculum data retain their exact IDs, answers and wording (348.163ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  ... Skipped lines
+
+    {
+      activitySets: [
+        {
+          abilityTags: [
+            '多条件分类',
+  ...
+          },
+  +       logic046Daily_clap: {
+  +         alt: '橙衣孩子在胸前双手拍在一起，正在拍手。',
+  +         src: '/images/items/logic-046-daily-clap.png'
+  +       },
+  +       logic046Daily_closedPencilCase: {
+  +         alt: '蓝色拉链文具袋完全合好，拉链闭合，没有铅笔露出。',
+  +         src: '/images/items/logic-046-daily-closedPencilCase.png'
+  +       },
+  +       logic046Daily_emptyBasket: {
+  +         alt: '空藤编收纳篮，正面和空的内部清楚可见。',
+  +         src: '/images/items/logic-046-daily-emptyBasket.png'
+  +       },
+  +       logic046Daily_hugShoulders: {
+  +         alt: '橙衣孩子双臂交叉，双手分别放在对侧肩膀上。',
+  +         src: '/images/items/logic-046-daily-hugShoulders.png'
+  +       },
+  +       logic046Daily_hungry: {
+  +         alt: '橙衣孩子轻摸肚子，饿了等待吃东西，没有拿食物或饭盒。',
+  +         src: '/images/items/logic-046-daily-hungry.png'
+  +       },
+  +       logic046Daily_loosePencils: {
+  +         alt: '四支铅笔散放在桌面上，尚未收进文具盒。',
+  +         src: '/images/items/logic-046-daily-loosePencils.png'
+  +       },
+  +       logic046Daily_openStoryBook: {
+  +         alt: '打开的图画故事书，两页是小兔在草地上的连续故事画面，没有文字。',
+  +         src: '/images/items/logic-046-daily-openStoryBook.png'
+  +       },
+  +       logic046Daily_rainWindow: {
+  +         alt: '窗外明显下雨，玻璃上有雨滴，没有雨衣或雨伞。',
+  +         src: '/images/items/logic-046-daily-rainWindow.png'
+  +       },
+  +       logic046Daily_stone: {
+  +         alt: '一颗小而圆润的灰色卵石。',
+  +         src: '/images/items/logic-046-daily-stone.png'
+  +       },
+  +       logic046Daily_studyCue: {
+  +         alt: '橙衣孩子坐在教室空桌前准备学习，双手空着，桌上没有学习用品。',
+  +         src: '/images/items/logic-046-daily-studyCue.png'
+  +       },
+  +       logic046Daily_sunnyChild: {
+  +         alt: '阳光明亮，橙衣孩子在门内准备到户外，头上无帽、双手空着。',
+  +         src: '/images/items/logic-046-daily-sunnyChild.png'
+  +       },
+  +       logic046Daily_thirsty: {
+  +         alt: '橙衣孩子轻摸喉咙表示口渴，手里没有杯子、水壶或食物。',
+  +         src: '/images/items/logic-046-daily-thirsty.png'
+  +       },
+  +       logic046Daily_touchHead: {
+  +         alt: '橙衣孩子抬起双臂，双手放在头顶上。',
+  +         src: '/images/items/logic-046-daily-touchHead.png'
+  +       },
+  +       logic046Evidence_cakeCat: {
+  +         alt: '同一厨房里的小猫，嘴边和前爪有可见奶油。',
+  +         src: '/images/items/logic-046-evidence-cakeCat.png'
+  +       },
+  +       logic046Evidence_cakeCream: {
+  +         alt: '原场景小猫嘴边和前爪的白色奶油近景。',
+  +         src: '/images/items/logic-046-evidence-cakeCream.png'
+  +       },
+  +       logic046Evidence_cakeDog: {
+  +         alt: '同一厨房远处，小狗蜷在蓝垫子上睡觉，身上未见奶油。',
+  +         src: '/images/items/logic-046-evidence-cakeDog.png'
+  +       },
+  +       logic046Evidence_cakeKitchenContext: {
+  +         alt: '同一厨房全景，说明各角色在厨房中的位置；不增加行为证据。',
+  +         src: '/images/items/logic-046-evidence-cakeKitchenContext.png'
+  +       },
+  +       logic046Evidence_cakeMissing: {
+  +         alt: '原场景蛋糕的扇形缺口与桌面近景。',
+  +         src: '/images/items/logic-046-evidence-cakeMissing.png'
+  +       },
+  +       logic046Evidence_cakeRabbit: {
+  +         alt: '同一厨房里的灰兔抱着胡萝卜，身上未见奶油。',
+  +         src: '/images/items/logic-046-evidence-cakeRabbit.png'
+  +       },
+  +       logic046Evidence_flowerBent: {
+  +         alt: '原场景花坛中弯折的花、散落花瓣和土壤。',
+  +         src: '/images/items/logic-046-evidence-flowerBent.png'
+  +       },
+  +       logic046Evidence_flowerCat: {
+  +         alt: '原场景花坛边的小猫，抬起的前爪有黄色花粉。',
+  +         src: '/images/items/logic-046-evidence-flowerCat.png'
+  +       },
+  +       logic046Evidence_flowerPollen: {
+  +         alt: '原场景小猫抬起前爪的黄色花粉近景。',
+  +         src: '/images/items/logic-046-evidence-flowerPollen.png'
+  +       },
+  +       logic046Evidence_flowerRabbit: {
+  +         alt: '原场景抱着胡萝卜的小兔，身上未见花粉。',
+  +         src: '/images/items/logic-046-evidence-flowerRabbit.png'
+  +       },
+  +       logic046Evidence_mudCat: {
+  +         alt: '原场景坐在干净圆垫上的灰猫，爪子可见且无泥。',
+  +         src: '/images/items/logic-046-evidence-mudCat.png'
+  +       },
+  +       logic046Evidence_mudDog: {
+  +         alt: '原场景站在泥地里的小狗，四脚沾有泥。',
+  +         src: '/images/items/logic-046-evidence-mudDog.png'
+  +       },
+  +       logic046Evidence_mudPaws: {
+  +         alt: '原场景小狗沾泥的脚与湿泥地近景。',
+  +         src: '/images/items/logic-046-evidence-mudPaws.png'
+  +       },
+  +       logic046Evidence_mudRabbit: {
+  +         alt: '原场景抱胡萝卜的白兔，脚下草地可见且未见泥。',
+  +         src: '/images/items/logic-046-evidence-mudRabbit.png'
+  +       },
+  +       logic046Evidence_mudTracks: {
+  +         alt: '原场景地面已有的泥脚印，不推定脚印一定属于哪个角色。',
+  +         src: '/images/items/logic-046-evidence-mudTracks.png'
+  +       },
+  +       logic046Evidence_spillBird: {
+  +         alt: '原场景停在窗台上的蓝色小鸟和窗边区域。',
+  +         src: '/images/items/logic-046-evidence-spillBird.png'
+  +       },
+  +       logic046Evidence_spillCup: {
+  +         alt: '原场景倒下的蓝色水杯和紧邻水洼，不新增脚印或碰撞痕迹。',
+  +         src: '/images/items/logic-046-evidence-spillCup.png'
+  +       },
+  +       logic046Evidence_spillDog: {
+  +         alt: '原场景远处蓝垫子上睡着的小狗及其周围地板。',
+  +         src: '/images/items/logic-046-evidence-spillDog.png'
+  +       },
+  +       logic046Evidence_weakCat: {
+  +         alt: '修正场景中门口的灰猫，嘴边和前爪干净；只表示当前状态。',
+  +         src: '/images/items/logic-046-evidence-weakCat.png'
+  +       },
+  +       logic046Evidence_weakCatContext: {
+  +         alt: '修正场景的厨房与门口位置，灰猫清醒站着且未接触蛋糕。',
+  +         src: '/images/items/logic-046-evidence-weakCatContext.png'
+  +       },
+  +       logic046Evidence_weakDog: {
+  +         alt: '原场景小狗清醒地坐在门口，未接触玩具；不是睡觉。',
+  +         src: '/images/items/logic-046-evidence-weakDog.png'
+  +       },
+  +       logic046Evidence_weakDogContext: {
+  +         alt: '原场景玩具散落的游戏房和门口清醒的小狗；没有新增作乱行为。',
+  +         src: '/images/items/logic-046-evidence-weakDogContext.png'
+  +       },
+  +       logic046Evidence_weakToys: {
+  +         alt: '原场景地毯上散落的玩具近景，不增加小狗行为或脚印。',
+  +         src: '/images/items/logic-046-evidence-weakToys.png'
+  +       },
+  +       logic046Life_cleanWashAgain: {
+  +         alt: '已经干净的双手又在水龙头下搓洗，皮肤没有泥污。',
+  +         src: '/images/items/logic-046-life-cleanWashAgain.png'
+  +       },
+  +       logic046Life_dirtyMoreCookies: {
+  +         alt: '孩子两手仍有泥，已经拿着两块饼干，又伸泥手拿更多饼干，还没有洗手。',
+  +         src: '/images/items/logic-046-life-dirtyMoreCookies.png'
+  +       },
+  +       logic046Life_slowRed: {
+  +         alt: '行人红灯时孩子想小步慢挪，大人牵住孩子，双脚仍在路缘后的人行道上。',
+  +         src: '/images/items/logic-046-life-slowRed.png'
+  +       },
+  +       logic046Life_takeOutSort: {
+  +         alt: '孩子从混装盒中取出积木，在盒外把积木和小车分成两堆；原盒仍有部分混杂玩具，另一盒为空。',
+  +         src: '/images/items/logic-046-life-takeOutSort.png'
+  +       },
+          longPlank: {
+            alt: '长木板',
+            src: '/images/items/long-plank.png'
+          },
+          lunchBox: {
+  ...
+          },
+  +       logic046Evidence_cakeKitchen: {
+  +         alt: '厨房里蛋糕有缺口，小猫嘴边有奶油，小狗睡着，小兔抱着胡萝卜。',
+  +         src: '/images/scenes/cake-evidence-kitchen.png'
+  +       },
+  +       logic046Evidence_catKitchen: {
+  +         alt: '厨房里主蛋糕少了一块，前景小盘是空的，小猫站在门口且嘴边和爪子干净。',
+  +         src: '/images/scenes/logic-046-cat-kitchen.png'
+  +       },
+  +       logic046Evidence_dogRoom: {
+  +         alt: '玩具散落在游戏房里，小狗清醒地坐在门口，当前没有接触玩具。',
+  +         src: '/images/scenes/dog-room-weak-clue.png'
+  +       },
+  +       logic046Evidence_flowerGarden: {
+  +         alt: '花坛边有弯折的花和脚印，小猫爪边有黄色花粉，小兔抱着胡萝卜。',
+  +         src: '/images/scenes/flower-evidence-garden.png'
+  +       },
+  +       logic046Evidence_muddyYard: {
+  +         alt: '小狗脚上有泥并站在泥地里，小猫在干净垫子上，小兔抱着胡萝卜。',
+  +         src: '/images/scenes/muddy-paws-yard.png'
+  +       },
+  +       logic046Evidence_spilledWater: {
+  +         alt: '倒下的蓝杯和水洼在地板上，小狗在远处睡觉，小鸟在窗台上。',
+  +         src: '/images/scenes/spilled-water-room.png'
+  +       },
+  +       logic046Life_dirtyEating: {
+  +         alt: '孩子两只手仍沾着明显泥污，正用泥手把饼干拿到张开的嘴边；水龙头关闭，还没有洗手。',
+  +         src: '/images/scenes/logic-046-life-dirtyEating.png'
+  +       },
+  +       logic046Life_mixedBox: {
+  +         alt: '积木和四辆小车混装在左边积木图案盒中，右边小车图案盒为空；孩子双手放在膝上，尚未取出或分类。',
+  +         src: '/images/scenes/logic-046-life-mixedBox.png'
+  +       },
+  +       logic046Life_redAttempt: {
+  +         alt: '行人红灯仍亮，孩子想抬脚迈步，被大人牵住，仍在人行道的路缘后；汽车停在停止线后。',
+  +         src: '/images/scenes/logic-046-life-redAttempt.png'
+  +       },
+  +       logic046Life_trafficGreen: {
+  +         alt: '行人绿灯亮，汽车停在停止线后；大人牵孩子仍站在路缘后，还没有开始过马路。',
+  +         src: '/images/scenes/logic-046-life-trafficGreen.png'
+  +       },
+          mirrorFoldPaper: {
+            alt: '手工桌上有一张对折纸卡和安全小镜子，纸卡两边有简单彩色图形。',
+            src: '/images/scenes/mirror-fold-paper.png'
+          },
+          muddyPawsYard: {
+
+      at TestContext.<anonymous> (file:///Users/chiang/.codex/worktrees/curriculum-benchmark/playground/scripts/logic-lesson-visuals.test.mjs:11:150)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1325:25)
+      at Test.start (node:internal/test_runner/test:1191:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:385:17)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: {
+      activitySets: [
+        [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object]
+      ],
+      catalogGames: [
+        [Object], [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object],
+        ... 15 more items
+      ],
+      catalogVersion: '2026-09-22-full-exploration',
+      curriculumSections: [ [Object], [Object] ],
+      imageGallery: { exploration: [Object], scenes: [Object], characters: [Object], items: [Object] },
+      legacyGames: [
+        [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object]
+      ],
+      patternTrainSizeDiameters: { '⬤': 196, '●': 124, '•': 64 },
+      worlds: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+      games: [
+        [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object]
+      ]
+    },
+    expected: {
+      activitySets: [
+        [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object]
+      ],
+      catalogGames: [
+        [Object], [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object],
+        ... 15 more items
+      ],
+      catalogVersion: '2026-09-22-full-exploration',
+      curriculumSections: [ [Object], [Object] ],
+      imageGallery: { exploration: [Object], scenes: [Object], characters: [Object], items: [Object] },
+      legacyGames: [
+        [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object]
+      ],
+      patternTrainSizeDiameters: { '⬤': 196, '●': 124, '•': 64 },
+      worlds: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+      games: [
+        [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object]
+      ]
+    },
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }

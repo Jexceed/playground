@@ -1,0 +1,170 @@
+{
+  "model": "gpt-6.1-sol",
+  "generator": "built-in image_gen",
+  "generatedFile": "/Users/chiang/.codex/generated_images/01a14fa7-7829-7452-8423-d2592d12ab53/exec-bb8fe3e1-8a1b-4222-aac1-29f9dc8fc0a4.png",
+  "prompt": "Use case: illustration-story. Generate a high-resolution SQUARE educational illustration ATLAS, exact regular THREE columns by THREE rows, NINE equal SQUARE cells. Aim 2304x2304 or larger. Each cell is a DIFFERENT independent card. Clean cream paper background and very light dividing gutters at exact one-third boundaries. Reserve generous 10% blank inner margin so all art stays safely inside its square; no bleeding across cells. Match supplied reference's warm watercolor and colored-pencil texture, same cute preschool boy short dark brown hair, large brown eyes, orange short-sleeved shirt, blue trousers. Reference is ONLY character and style reference; do NOT copy reference's cup/pitcher/table objects. No text, letters, numbers, labels, arrows, icons or watermark ANYWHERE, including book pages.\nExact NINE cells, row-major order:\nROW1 LEFT (loosePencils): exactly FOUR yellow wooden pencils with graphite tips scattered separately on a small pale wooden tabletop, ready to be tidied; no case, no book, no people, no basket.\nROW1 CENTER (thirsty): same orange-shirt boy waist-up, one hand lightly touching throat, lips slightly open, gentle thirsty expression. Other hand empty at side. Plain cream background. Absolutely NO water, cup, bottle, pitcher, food, plates or containers anywhere. Bodily need only.\nROW1 RIGHT (hungry): same orange-shirt boy waist-up, one hand lightly resting on STOMACH below chest, gently hungry waiting expression, other hand empty at side. Plain cream background. Absolutely NO food, lunchbox, bowl, plate, cups or containers. His hand must touch tummy NOT throat.\nROW2 LEFT (sunnyChild): same orange-shirt boy standing just inside open doorway, looking toward bright sunny outdoors with clearly visible large SUN and sunny path outside. Child's head is BARE and BOTH hands empty. No hat, no bottles, no bag, no raincoat. Ready to go outdoors, not already dressed in sun protection.\nROW2 CENTER (rainWindow): ONLY a wooden framed WINDOW with obvious falling rain, raindrops on glass and wet gray-blue outdoors, no people. Absolutely NO raincoat, umbrella, hat, bag or other tools. This means rainy weather, NOT an answer object.\nROW2 RIGHT (openStoryBook): ONLY one OPEN picture story book, seen obliquely from front, both facing pages clearly visible and each has a simple warm animal-story painting: same little rabbit in a meadow in two sequential pictures. Absolutely NO words, letters, numbers or written marks. No pencils, people or other objects.\nROW3 LEFT (closedPencilCase): ONLY one entirely CLOSED rectangular BLUE fabric ZIPPER PENCIL POUCH, same dark-medium-blue fabric case as existing story assets. Visible silver zipper fully closed along the upper long edge, silver pull at one end. No pencils sticking out, no opening, no hands or people or objects.\nROW3 CENTER (emptyBasket): ONLY one EMPTY shallow WOVEN WICKER STORAGE BASKET in natural tan, front view with slightly elevated angle so broad OPEN EMPTY interior and front wall are clearly visible. Broad plain front wall suitable for a later colored geometric badge overlay. No handles hiding interior, no objects, no label, no badge yet.\nROW3 RIGHT (studyCue): same orange-shirt boy seated front-facing beside an entirely EMPTY wooden classroom desk, hands empty relaxed on desk edges, ready to learn. Quiet classroom with one distant empty desk and a blank chalkboard. Desk has NO papers, pencils, books, cases, hats, bags, lunchboxes or objects. NOT writing or holding any supplies.\nAll subject and object distinctions must be accurate, simple, toddler-readable. Consistent warm watercolor medium across all nine cells. Exact regular 3x3 layout.",
+  "reference": "public/images/scenes/source/drinking-thirsty.png",
+  "sourceDimensions": {
+    "width": 1254,
+    "height": 1254
+  },
+  "grid": {
+    "columns": 3,
+    "rows": 3,
+    "rowMajorKeys": [
+      "loosePencils",
+      "thirsty",
+      "hungry",
+      "sunnyChild",
+      "rainWindow",
+      "openStoryBook",
+      "closedPencilCase",
+      "emptyBasket",
+      "studyCue"
+    ]
+  },
+  "outputs": [
+    {
+      "key": "loosePencils",
+      "path": "public/images/items/logic-046-daily-loosePencils.png",
+      "crop": {
+        "left": 8,
+        "top": 8,
+        "width": 402,
+        "height": 402
+      },
+      "resize": {
+        "width": 600,
+        "height": 600,
+        "fit": "fill"
+      }
+    },
+    {
+      "key": "thirsty",
+      "path": "public/images/items/logic-046-daily-thirsty.png",
+      "crop": {
+        "left": 426,
+        "top": 8,
+        "width": 402,
+        "height": 402
+      },
+      "resize": {
+        "width": 600,
+        "height": 600,
+        "fit": "fill"
+      }
+    },
+    {
+      "key": "hungry",
+      "path": "public/images/items/logic-046-daily-hungry.png",
+      "crop": {
+        "left": 844,
+        "top": 8,
+        "width": 402,
+        "height": 402
+      },
+      "resize": {
+        "width": 600,
+        "height": 600,
+        "fit": "fill"
+      }
+    },
+    {
+      "key": "sunnyChild",
+      "path": "public/images/items/logic-046-daily-sunnyChild.png",
+      "crop": {
+        "left": 8,
+        "top": 426,
+        "width": 402,
+        "height": 402
+      },
+      "resize": {
+        "width": 600,
+        "height": 600,
+        "fit": "fill"
+      }
+    },
+    {
+      "key": "rainWindow",
+      "path": "public/images/items/logic-046-daily-rainWindow.png",
+      "crop": {
+        "left": 426,
+        "top": 426,
+        "width": 402,
+        "height": 402
+      },
+      "resize": {
+        "width": 600,
+        "height": 600,
+        "fit": "fill"
+      }
+    },
+    {
+      "key": "openStoryBook",
+      "path": "public/images/items/logic-046-daily-openStoryBook.png",
+      "crop": {
+        "left": 844,
+        "top": 426,
+        "width": 402,
+        "height": 402
+      },
+      "resize": {
+        "width": 600,
+        "height": 600,
+        "fit": "fill"
+      },
+      "selected": false,
+      "supersededBy": "public/images/items/source/logic-046-daily-openStoryBook.png"
+    },
+    {
+      "key": "closedPencilCase",
+      "path": "public/images/items/logic-046-daily-closedPencilCase.png",
+      "crop": {
+        "left": 8,
+        "top": 844,
+        "width": 402,
+        "height": 402
+      },
+      "resize": {
+        "width": 600,
+        "height": 600,
+        "fit": "fill"
+      }
+    },
+    {
+      "key": "emptyBasket",
+      "path": "public/images/items/logic-046-daily-emptyBasket.png",
+      "crop": {
+        "left": 426,
+        "top": 844,
+        "width": 402,
+        "height": 402
+      },
+      "resize": {
+        "width": 600,
+        "height": 600,
+        "fit": "fill"
+      }
+    },
+    {
+      "key": "studyCue",
+      "path": "public/images/items/logic-046-daily-studyCue.png",
+      "crop": {
+        "left": 844,
+        "top": 844,
+        "width": 402,
+        "height": 402
+      },
+      "resize": {
+        "width": 600,
+        "height": 600,
+        "fit": "fill"
+      }
+    }
+  ],
+  "visualReview": {
+    "status": "reviewed",
+    "date": "2026-10-19",
+    "note": "逐格检查需求、物体、手部及候选答案物是否符合要求"
+  }
+}
