@@ -1,0 +1,99 @@
+{
+  "src": "/Users/chiang/.codex/generated_images/01a14fa7-1a75-71c3-a797-fcc6410ee5dc/exec-cd99ed36-6226-41f8-ad60-3d019e0d062b.png",
+  "prompt": "Use case: illustration-story. ONE EXACT 3x3 SQUARE sprite atlas, nine equal SQUARE cells in perfect regular grid, no irregular comic layout. Each self-contained illustration stays clear of its cell boundaries, large subjects with cream margins, no dividing lines, no labels, NO TEXT numbers arrows watermarks. Same warm watercolor colored pencil cream-paper style as references. Same small dark-haired East Asian boy orange shirt, same orange TERRACOTTA POT, same BLUE watering can in every applicable cell. Each grid cell an independent action/state, read left-to-right top-to-bottom: [1] A terracotta pot containing ONLY BARE SOIL, no plant no seed. [2] Close view child's fingers holding ONE brown SEED, lowering seed INTO a small hole in the pot's soil, no sprout or flowers. Clearly planting seed action. [3] Same pot growing a tiny green sprout with exactly TWO SMALL LEAVES, no flower. [4] Same pot with a grown green plant bearing ONE pink flower. [5] Boy tips blue can and pours water ONTO BARE SOIL in pot which contains NO seed NO sprout NO plant. [6] Boy sits idly hands in lap, watches pot containing ONLY BARE SOIL; blue can untouched aside; no plants, no imagined flower or thought bubble. [7] Boy tips blue can and gently pours onto DRY SOIL around base of an EXISTING tiny TWO-LEAF sprout; leaves clearly visible; no flower. [8] Boy clearly PLUCKS a PINK FLOWER from an already flowering potted plant: fingers grasp stem beneath pink bloom, pulling flower upward; another green stem stays rooted, no watering can held. [9] Boy sits idly hands in lap watching TWO-LEAF SPROUT in CRACKED DRY SOIL; blue watering can rests unused beside it. All nine are distinct and semantically literal; no extra plants as decor, plain backgrounds. Preserve bare soil in cells 1,2,5,6 and sprout only in 3,7,9.",
+  "family": "plant",
+  "keys": [
+    "soil",
+    "sow",
+    "sprout",
+    "flower",
+    "waterSoil",
+    "waitSoil",
+    "waterSprout",
+    "pickFlower",
+    "waitSprout"
+  ],
+  "cols": 3,
+  "rows": 3,
+  "tool": "built-in image_gen",
+  "agentModel": "gpt-6.1-sol",
+  "source": "public/images/items/source/order-045-plant-cards.png",
+  "sourceWidth": 1254,
+  "sourceHeight": 1254,
+  "crops": [
+    {
+      "key": "soil",
+      "output": "public/images/items/order-045-plant-soil.png",
+      "left": 8,
+      "top": 8,
+      "width": 402,
+      "height": 402
+    },
+    {
+      "key": "sow",
+      "output": "public/images/items/order-045-plant-sow.png",
+      "left": 426,
+      "top": 8,
+      "width": 402,
+      "height": 402
+    },
+    {
+      "key": "sprout",
+      "output": "public/images/items/order-045-plant-sprout.png",
+      "left": 844,
+      "top": 8,
+      "width": 402,
+      "height": 402
+    },
+    {
+      "key": "flower",
+      "output": "public/images/items/order-045-plant-flower.png",
+      "left": 8,
+      "top": 426,
+      "width": 402,
+      "height": 402
+    },
+    {
+      "key": "waterSoil",
+      "output": "public/images/items/order-045-plant-waterSoil.png",
+      "left": 426,
+      "top": 426,
+      "width": 402,
+      "height": 402
+    },
+    {
+      "key": "waitSoil",
+      "output": "public/images/items/order-045-plant-waitSoil.png",
+      "left": 844,
+      "top": 426,
+      "width": 402,
+      "height": 402
+    },
+    {
+      "key": "waterSprout",
+      "output": "public/images/items/order-045-plant-waterSprout.png",
+      "left": 8,
+      "top": 844,
+      "width": 402,
+      "height": 402
+    },
+    {
+      "key": "pickFlower",
+      "output": "public/images/items/order-045-plant-pickFlower.png",
+      "left": 426,
+      "top": 844,
+      "width": 402,
+      "height": 402
+    },
+    {
+      "key": "waitSprout",
+      "output": "public/images/items/order-045-plant-waitSprout.png",
+      "left": 844,
+      "top": 844,
+      "width": 402,
+      "height": 402
+    }
+  ],
+  "outputWidth": 600,
+  "outputHeight": 600
+}

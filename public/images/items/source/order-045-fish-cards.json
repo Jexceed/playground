@@ -1,0 +1,63 @@
+{
+  "src": "/Users/chiang/.codex/generated_images/01a14fa7-1a75-71c3-a797-fcc6410ee5dc/exec-0731b8b8-5860-4a13-be08-77ba66fe5462.png",
+  "prompt": "Use case: illustration-story. Produce ONE strict 3 columns by 2 rows rectangular sprite atlas, six equal SQUARE cells, overall 3:2. Artwork mechanically cut at exactly thirds width/half height, so every illustration must be fully contained within its cell and away from boundaries. Pale cream generous margins, no lines or borders, NO TEXT numbers arrows or watermarks. Reference image supplies SAME warm watercolor colored pencil style, SAME orange-shirt short dark-haired East Asian boy, green-bloused adult woman, SAME small silver fish with orange tail and fins. Five distinct small scenes, last cell entirely blank cream. Row1 col1: fish alone lies on DAMP MUD BANK with a distinct strip of mud separating fish from adjacent shallow stream water, not in water. Row1 col2: adult woman kneels supervising close beside boy; boy uses BOTH CUPS OF HIS HANDS TOGETHER to gently lower same small fish into shallow stream. Hands at water surface visibly cradling fish; adult hand supports boy's wrist. Return fish to water action, no cup. Row1 col3: SAME fish swimming freely UNDER clear shallow stream water, ripples over it, tail moving, no humans necessary. Row2 col1: boy merely crouches on bank watching the fish which STILL LIES ON DAMP MUD outside water; his hands rest on his own knees, adult beside, not touching. Row2 col2: boy scoops stream water using a plain clear CUP dipped into water, adult beside; fish stays visibly on mud bank outside water, not inside cup. Row2 col3: completely empty pale cream square. All fish depicted alive and uninjured, safe gentle scene. Make main action large readable at card size.",
+  "family": "fish",
+  "keys": [
+    "shore",
+    "return",
+    "swim",
+    "watch",
+    "cup"
+  ],
+  "cols": 3,
+  "rows": 2,
+  "tool": "built-in image_gen",
+  "agentModel": "gpt-6.1-sol",
+  "source": "public/images/items/source/order-045-fish-cards.png",
+  "sourceWidth": 1536,
+  "sourceHeight": 1024,
+  "crops": [
+    {
+      "key": "shore",
+      "output": "public/images/items/order-045-fish-shore.png",
+      "left": 8,
+      "top": 8,
+      "width": 496,
+      "height": 496
+    },
+    {
+      "key": "return",
+      "output": "public/images/items/order-045-fish-return.png",
+      "left": 520,
+      "top": 8,
+      "width": 496,
+      "height": 496
+    },
+    {
+      "key": "swim",
+      "output": "public/images/items/order-045-fish-swim.png",
+      "left": 1032,
+      "top": 8,
+      "width": 496,
+      "height": 496
+    },
+    {
+      "key": "watch",
+      "output": "public/images/items/order-045-fish-watch.png",
+      "left": 8,
+      "top": 520,
+      "width": 496,
+      "height": 496
+    },
+    {
+      "key": "cup",
+      "output": "public/images/items/order-045-fish-cup.png",
+      "left": 520,
+      "top": 520,
+      "width": 496,
+      "height": 496
+    }
+  ],
+  "outputWidth": 600,
+  "outputHeight": 600
+}

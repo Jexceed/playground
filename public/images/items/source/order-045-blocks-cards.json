@@ -1,0 +1,129 @@
+{
+  "model": "gpt-6.1-sol",
+  "tool": "built-in image_gen",
+  "source": "/Users/chiang/.codex/generated_images/01a14fa7-dab4-7bc1-ae31-12017950ca84/exec-2d91ad74-1239-4c6f-a74b-c97832df55b0.png",
+  "prompt": "Use case: illustration-story. Children’s educational story illustration matching the reference: warm light watercolor and colored pencil on fine cream paper, soft hand-drawn contours, sunlit muted pastel palette, rounded natural proportions. Same cute East Asian child, short dark brown hair, orange-red short sleeve shirt, blue trousers. Concrete unambiguous actions for preschoolers. No text, letters, captions, numerals, arrows, icons, watermarks or decorative frames. Asset: EXACT regular 3 columns by 3 rows action-card atlas, SQUARE canvas of nine equal SQUARE cells; strict grid, no labels, tiny cream separators. Same child, low table, colorful wooden CUBES and CYLINDERS ONLY; two open wooden boxes with painted red CUBE picture and blue CYLINDER picture, NO letters. Each cell independent, main subjects fully contained with safe margin, hands and contents obvious. ROW-MAJOR: (1) FALLEN: colorful cubes and cylinders scattered only on floor, child hands empty, low table empty. (2) PICK: child bent down taking a cylinder from floor with one hand while setting a cube onto low table with other; remaining loose blocks on floor. (3) SORT: ALL blocks on tabletop, child actively separates them into two pure groups, left cubes only, right cylinders only, both boxes EMPTY; floor clear. (4) PUT: child puts one cube into cube box and one cylinder into cylinder box, correct same-kind contents visible, table remains only a few matching leftovers, floor clear. (5) DONE: ALL cubes neatly in cube box, ALL cylinders neatly in cylinder box, table and floor otherwise clear, child empty hands. (6) BUILD: child stacking a tall tower of cubes and cylinders on table, both storage boxes still EMPTY, floor clear. (7) MIXED BOX: child drops a cube and a cylinder into SAME box, cubes and cylinders visibly mixed together inside that single box; other box EMPTY. (8) completely BLANK cream-white. (9) completely BLANK cream-white. No arrows, check/cross marks, word/numerals or other shapes. Depict toys and actions, not abstract icons.",
+  "sourceSize": {
+    "width": 1254,
+    "height": 1254
+  },
+  "grid": {
+    "cols": 3,
+    "rows": 3
+  },
+  "crops": [
+    {
+      "key": "fallen",
+      "cell": {
+        "col": 0,
+        "row": 0
+      },
+      "rect": {
+        "left": 5,
+        "top": 5,
+        "width": 408,
+        "height": 408
+      },
+      "width": 600,
+      "height": 600
+    },
+    {
+      "key": "pick",
+      "cell": {
+        "col": 1,
+        "row": 0
+      },
+      "rect": {
+        "left": 423,
+        "top": 5,
+        "width": 408,
+        "height": 408
+      },
+      "width": 600,
+      "height": 600
+    },
+    {
+      "key": "sort",
+      "cell": {
+        "col": 2,
+        "row": 0
+      },
+      "rect": {
+        "left": 841,
+        "top": 5,
+        "width": 408,
+        "height": 408
+      },
+      "width": 600,
+      "height": 600
+    },
+    {
+      "key": "put",
+      "cell": {
+        "col": 0,
+        "row": 1
+      },
+      "rect": {
+        "left": 5,
+        "top": 423,
+        "width": 408,
+        "height": 408
+      },
+      "width": 600,
+      "height": 600
+    },
+    {
+      "key": "done",
+      "cell": {
+        "col": 1,
+        "row": 1
+      },
+      "rect": {
+        "left": 423,
+        "top": 423,
+        "width": 408,
+        "height": 408
+      },
+      "width": 600,
+      "height": 600
+    },
+    {
+      "key": "build",
+      "cell": {
+        "col": 2,
+        "row": 1
+      },
+      "rect": {
+        "left": 841,
+        "top": 423,
+        "width": 408,
+        "height": 408
+      },
+      "width": 600,
+      "height": 600
+    },
+    {
+      "key": "mixedBox",
+      "cell": {
+        "col": 0,
+        "row": 2
+      },
+      "rect": {
+        "left": 5,
+        "top": 841,
+        "width": 408,
+        "height": 408
+      },
+      "width": 600,
+      "height": 600
+    }
+  ],
+  "runtime": null,
+  "review": "通过：仅圆柱与方块；散落地上/捡到桌上/按形状分类/分别装盒/收好/搭塔空盒/混装一盒均明确。末两格空白。",
+  "overrides": {
+    "sort": {
+      "source": "order-045-blocks-sort.png",
+      "metadata": "order-045-blocks-sort.json"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+$ node scripts/audit-illustration-usage.mjs
+{
+  "atlasCount": 18,
+  "registeredFrameCount": 74,
+  "usedFrameCount": 74,
+  "unusedFrames": [],
+  "problems": [],
+  "output": "docs/illustration-usage.json",
+  "guide": "docs/illustration-guide.md"
+}

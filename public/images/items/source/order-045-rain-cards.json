@@ -1,0 +1,112 @@
+{
+  "model": "gpt-6.1-sol",
+  "generator": "built-in image_gen",
+  "useCase": "illustration-story",
+  "generatedFile": "/Users/chiang/.codex/generated_images/01a14fa7-7829-7452-8423-d2592d12ab53/exec-c9a67ede-8747-4ec2-bb46-f382fe1a81a7.png",
+  "reference": "public/images/scenes/source/drinking-thirsty.png",
+  "prompt": "Use case: illustration-story. Educational action-card atlas EXACT regular THREE columns and TWO rows, six equal SQUARE cells, landscape 3:2 canvas. Cream paper background, equal crop-safe grid no borders, generous inset margin in each cell, last cell blank. Same reference's soft warm watercolor colored-pencil style, same cute preschool boy dark short hair, brown eyes, orange shirt blue trousers. Consistent yellow hooded raincoat, tan straw SUN HAT with dark band, black-white soccer ball. Every active cell includes obvious rain outside window or rain outdoors. Exact row-major:\nTOP LEFT child INSIDE home by window looking at obvious rain droplets outside, both hands empty, wearing only orange shirt blue trousers, yellow raincoat unused on wall hook, hat and soccer ball on bench; INITIAL state.\nTOP MIDDLE child INSIDE home actively PUTTING ON yellow raincoat: left arm already in sleeve, other hand pulling second sleeve over right arm, front OPEN visibly reveals orange shirt; hood still down; clear dressing action. Rain visible outside nearby window.\nTOP RIGHT child OUTDOORS walking in falling rain and puddles, yellow raincoat now fully WORN and CLOSED, HOOD UP, yellow rainboots, no hat ball or umbrella.\nBOTTOM LEFT child INSIDE near rainy window wearing only TAN ordinary straw SUN HAT and orange shirt, NO raincoat on body; unused yellow raincoat remains on wall hook; hands empty.\nBOTTOM MIDDLE child INSIDE near rainy window holding SOCCER BALL in both hands wearing ONLY orange shirt blue trousers, NO raincoat NO hat; unused yellow raincoat remains on wall hook.\nBOTTOM RIGHT wholly blank cream paper with no objects.\nActions and rain evidence easily readable for a preschooler. No text, captions, labels, letters, numbers, arrows, checkmarks, warning icons or watermarks. Exact 3x2 equal square layout.",
+  "sourceDimensions": {
+    "width": 1536,
+    "height": 1024
+  },
+  "outputs": [
+    {
+      "key": "rain",
+      "path": "public/images/items/order-045-rain-rain.png",
+      "crop": {
+        "left": 18,
+        "top": 18,
+        "width": 476,
+        "height": 476
+      },
+      "resize": {
+        "width": 600,
+        "height": 600,
+        "fit": "fill"
+      }
+    },
+    {
+      "key": "raincoat",
+      "path": "public/images/items/order-045-rain-raincoat.png",
+      "crop": {
+        "left": 530,
+        "top": 18,
+        "width": 476,
+        "height": 476
+      },
+      "resize": {
+        "width": 600,
+        "height": 600,
+        "fit": "fill"
+      }
+    },
+    {
+      "key": "out",
+      "path": "public/images/items/order-045-rain-out.png",
+      "crop": {
+        "left": 1042,
+        "top": 18,
+        "width": 476,
+        "height": 476
+      },
+      "resize": {
+        "width": 600,
+        "height": 600,
+        "fit": "fill"
+      }
+    },
+    {
+      "key": "hat",
+      "path": "public/images/items/order-045-rain-hat.png",
+      "crop": {
+        "left": 18,
+        "top": 530,
+        "width": 476,
+        "height": 476
+      },
+      "resize": {
+        "width": 600,
+        "height": 600,
+        "fit": "fill"
+      }
+    },
+    {
+      "key": "ball",
+      "path": "public/images/items/order-045-rain-ball.png",
+      "crop": {
+        "left": 530,
+        "top": 530,
+        "width": 476,
+        "height": 476
+      },
+      "resize": {
+        "width": 600,
+        "height": 600,
+        "fit": "fill"
+      }
+    }
+  ],
+  "grid": {
+    "columns": 3,
+    "rows": 2,
+    "rowMajorKeys": [
+      "rain",
+      "raincoat",
+      "out",
+      "hat",
+      "ball"
+    ]
+  },
+  "visualReview": {
+    "status": "reviewed",
+    "reviewedBy": "gpt-6.1-sol",
+    "date": "2026-10-18",
+    "checks": [
+      "initial situation does not complete intended next action",
+      "each card matches its manifest meaning",
+      "clean and muddy hands distinguished for snack",
+      "cropped action cards have no neighbouring-cell fragments"
+    ],
+    "limitations": "Raster cell crop resized to 600x600; source cell is smaller than runtime dimensions."
+  }
+}

@@ -1,5 +1,17 @@
 # Changelog
 
+## 2026-10-19
+
+### Complete all 24 order-plan story surfaces
+
+- Extended the scene-first flow and completed-sequence playback from the three drinking questions to every question in “先做什么”. All 24 questions now have matching context, illustrated steps and equally illustrated answer choices; correct answers fill the blank and support pause, single-step viewing and replay.
+- Added 16 initial scenes and 84 action cards using gpt-6.1-sol agents calling the built-in image_gen tool. Retained the eight drinking assets. The complete group uses 18 scene images and 90 action pictures for 84 step slots and 72 choice slots. Sources, prompts and crop metadata are stored beside the assets.
+- Kept dirty-hand mistakes distinct from clean-hand steps, already-sorted toys distinct from sorting actions, dry sprouts distinct from healthy sprouts, and road-crossing pictures distinct from toy-bridge pictures. Redrew ambiguous block sorting, traffic pointing and unreachable-carrot cards after review.
+- Fixed long-caption and five-step layout. Completed stories now show the filled sequence without repeating the disabled option row, so the long door/traffic questions retain readable pictures and visible controls/feedback.
+- Preserved every question ID, sequence, choice, answer and existing progress. Only the other 21 order-plan rounds gain instruction/scene/story metadata; the three drinking rounds and all other curriculum content stay unchanged. Synchronized 4068 voice entries and retired only 24 unreferenced old order-plan prompt files.
+- Passed 52 related regressions, build and curriculum/illustration/voice audits. Browser and installed Mac acceptance each covered all 24 questions in scene/task/completed states (72 states each). The standard Applications app was rebuilt, installed and verified; enlightenment completion remained 273/489. Evidence: `specs/045-order-story-completion/verification.md`.
+
+
 ## 2026-10-18
 
 ### Restore drinking-story context and visible action sequences

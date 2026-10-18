@@ -1,0 +1,112 @@
+{
+  "model": "gpt-6.1-sol",
+  "generator": "built-in image_gen",
+  "useCase": "illustration-story",
+  "generatedFile": "/Users/chiang/.codex/generated_images/01a14fa7-7829-7452-8423-d2592d12ab53/exec-db017eda-b51f-4050-ba74-36a59deee290.png",
+  "reference": "public/images/scenes/source/drinking-thirsty.png",
+  "prompt": "Use case: illustration-story. Educational action-card atlas EXACT regular 3 columns by 2 rows, SIX equal square cells, landscape 3:2 canvas. No gaps or borders, cream paper background, each card has all content inset generously from cell boundaries, exact crop-safe grid. Same reference warm watercolor and colored pencil medium, same cute preschool boy short dark-brown hair, orange shirt, blue trousers, same simple wooden classroom desk, yellow pencil, CLOSED BLUE book and wood ruler. Five active cells and one blank. Row-major exact cells: TOP LEFT boy seated before completely blank practice paper, two EMPTY hands on desk sides, pencil book ruler lying separate, no action. TOP MIDDLE boy lifting yellow pencil in one hand above blank paper, pencil clearly NOT touching paper. TOP RIGHT boy writing practice by touching pencil to paper and making three simple short dark strokes, no letters/words/numbers. BOTTOM LEFT boy holding up a CLOSED BLUE BOOK with both hands, paper remains blank, pencil lies on desk. BOTTOM MIDDLE boy holding up a straight WOODEN RULER in his hand, blank paper and pencil still lying on desk. BOTTOM RIGHT completely blank cream paper, no objects. Clear distinguish PICK UP pencil versus WRITE. Keep faces/tool/hand interactions large and complete. No text, letters, captions, labels, arrows, numbers, watermarks. Each cell independent square illustration, never merge.",
+  "sourceDimensions": {
+    "width": 1536,
+    "height": 1024
+  },
+  "outputs": [
+    {
+      "key": "classroom",
+      "path": "public/images/items/order-045-writing-classroom.png",
+      "crop": {
+        "left": 18,
+        "top": 18,
+        "width": 476,
+        "height": 476
+      },
+      "resize": {
+        "width": 600,
+        "height": 600,
+        "fit": "fill"
+      }
+    },
+    {
+      "key": "pencil",
+      "path": "public/images/items/order-045-writing-pencil.png",
+      "crop": {
+        "left": 530,
+        "top": 18,
+        "width": 476,
+        "height": 476
+      },
+      "resize": {
+        "width": 600,
+        "height": 600,
+        "fit": "fill"
+      }
+    },
+    {
+      "key": "write",
+      "path": "public/images/items/order-045-writing-write.png",
+      "crop": {
+        "left": 1042,
+        "top": 18,
+        "width": 476,
+        "height": 476
+      },
+      "resize": {
+        "width": 600,
+        "height": 600,
+        "fit": "fill"
+      }
+    },
+    {
+      "key": "book",
+      "path": "public/images/items/order-045-writing-book.png",
+      "crop": {
+        "left": 18,
+        "top": 530,
+        "width": 476,
+        "height": 476
+      },
+      "resize": {
+        "width": 600,
+        "height": 600,
+        "fit": "fill"
+      }
+    },
+    {
+      "key": "ruler",
+      "path": "public/images/items/order-045-writing-ruler.png",
+      "crop": {
+        "left": 530,
+        "top": 530,
+        "width": 476,
+        "height": 476
+      },
+      "resize": {
+        "width": 600,
+        "height": 600,
+        "fit": "fill"
+      }
+    }
+  ],
+  "grid": {
+    "columns": 3,
+    "rows": 2,
+    "rowMajorKeys": [
+      "classroom",
+      "pencil",
+      "write",
+      "book",
+      "ruler"
+    ]
+  },
+  "visualReview": {
+    "status": "reviewed",
+    "reviewedBy": "gpt-6.1-sol",
+    "date": "2026-10-18",
+    "checks": [
+      "initial situation does not complete intended next action",
+      "each card matches its manifest meaning",
+      "clean and muddy hands distinguished for snack",
+      "cropped action cards have no neighbouring-cell fragments"
+    ],
+    "limitations": "Raster cell crop resized to 600x600; source cell is smaller than runtime dimensions."
+  }
+}

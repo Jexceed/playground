@@ -1,0 +1,112 @@
+{
+  "model": "gpt-6.1-sol",
+  "generator": "built-in image_gen",
+  "useCase": "illustration-story",
+  "generatedFile": "/Users/chiang/.codex/generated_images/01a14fa7-7829-7452-8423-d2592d12ab53/exec-4019cd6d-3808-4423-92b6-6049940da263.png",
+  "reference": "public/images/scenes/source/drinking-thirsty.png",
+  "prompt": "Use case: illustration-story. EXACT 3 columns by 2 rows atlas, six equal SQUARE cells, canvas 3:2 landscape. Strict equal grid crop-safe no border, generous cream-paper margin inside every cell. Five independent action illustrations + last blank. Reference style warm watercolor colored-pencil paper texture. Same cute short dark brown hair boy orange shirt blue trousers; consistent closed blue book, open teal-blue school backpack, green hinged lunchbox and yellow water bottle. Exact row-major cells:\nTOP LEFT blue closed book lies on wooden table, open EMPTY teal backpack beside it, child's empty hands visible above table; book completely outside bag.\nTOP MIDDLE boy actively slides BLUE BOOK vertically down into OPEN TEAL BACKPACK with both hands; book half outside bag half inside, clear packing action.\nTOP RIGHT boy wearing closed TEAL BACKPACK on his back, walking along safe pavement toward a recognizable school gate and school building; school building no writing, boy shown three quarter side so backpack visible.\nBOTTOM LEFT boy holds an OPEN GREEN LUNCHBOX next to BLUE BOOK still lying on wooden table; book OUTSIDE lunchbox and OUTSIDE empty backpack; obvious EMPTY green box with open lid, boy considering lunchbox, not packing book.\nBOTTOM MIDDLE boy lifts YELLOW WATER BOTTLE next to BLUE BOOK still on wooden table and open empty teal backpack; book remains outside backpack.\nBOTTOM RIGHT completely blank cream paper, no objects.\nAll actions large and unmistakable for preschool children. NO text, labels, numbers, logos, arrows, checks, captions, watermarks, decorative icons. Exact equal square layout.",
+  "sourceDimensions": {
+    "width": 1536,
+    "height": 1024
+  },
+  "outputs": [
+    {
+      "key": "book",
+      "path": "public/images/items/order-045-packing-book.png",
+      "crop": {
+        "left": 18,
+        "top": 18,
+        "width": 476,
+        "height": 476
+      },
+      "resize": {
+        "width": 600,
+        "height": 600,
+        "fit": "fill"
+      }
+    },
+    {
+      "key": "bag",
+      "path": "public/images/items/order-045-packing-bag.png",
+      "crop": {
+        "left": 530,
+        "top": 18,
+        "width": 476,
+        "height": 476
+      },
+      "resize": {
+        "width": 600,
+        "height": 600,
+        "fit": "fill"
+      }
+    },
+    {
+      "key": "school",
+      "path": "public/images/items/order-045-packing-school.png",
+      "crop": {
+        "left": 1042,
+        "top": 18,
+        "width": 476,
+        "height": 476
+      },
+      "resize": {
+        "width": 600,
+        "height": 600,
+        "fit": "fill"
+      }
+    },
+    {
+      "key": "lunch",
+      "path": "public/images/items/order-045-packing-lunch.png",
+      "crop": {
+        "left": 18,
+        "top": 530,
+        "width": 476,
+        "height": 476
+      },
+      "resize": {
+        "width": 600,
+        "height": 600,
+        "fit": "fill"
+      }
+    },
+    {
+      "key": "bottle",
+      "path": "public/images/items/order-045-packing-bottle.png",
+      "crop": {
+        "left": 530,
+        "top": 530,
+        "width": 476,
+        "height": 476
+      },
+      "resize": {
+        "width": 600,
+        "height": 600,
+        "fit": "fill"
+      }
+    }
+  ],
+  "grid": {
+    "columns": 3,
+    "rows": 2,
+    "rowMajorKeys": [
+      "book",
+      "bag",
+      "school",
+      "lunch",
+      "bottle"
+    ]
+  },
+  "visualReview": {
+    "status": "reviewed",
+    "reviewedBy": "gpt-6.1-sol",
+    "date": "2026-10-18",
+    "checks": [
+      "initial situation does not complete intended next action",
+      "each card matches its manifest meaning",
+      "clean and muddy hands distinguished for snack",
+      "cropped action cards have no neighbouring-cell fragments"
+    ],
+    "limitations": "Raster cell crop resized to 600x600; source cell is smaller than runtime dimensions."
+  }
+}

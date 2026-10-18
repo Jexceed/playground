@@ -53,12 +53,12 @@ export function OrderSequenceBoard({ round, solved, showScene, onStart, onScene 
   }, []);
 
   if (showScene) return (
-    <section className="order-story order-story-intro" aria-label="喝水故事情境">
+    <section className="order-story order-story-intro" aria-label="故事情境">
       <figure>
         <img src={publicAsset(round.sceneImage!.src)} alt={round.sceneImage!.alt} />
       </figure>
       <div className="order-story-intro-controls">
-        <span>先看看，小朋友遇到了什么事？</span>
+        <span>先看看，发生了什么事？</span>
         <button type="button" className="primary" onClick={onStart}>{solved ? "回到完整顺序" : "开始排顺序"}<ArrowRight size={18} /></button>
       </div>
     </section>
@@ -66,7 +66,7 @@ export function OrderSequenceBoard({ round, solved, showScene, onStart, onScene 
 
   const current = steps[activeStep];
   return (
-    <section className={`order-story order-story-task ${solved ? "order-story-solved" : ""}`} aria-label="喝水顺序图卡">
+    <section className={`order-story order-story-task ${solved ? "order-story-solved" : ""}`} aria-label="顺序图卡">
       <div className="order-story-toolbar">
         <strong>{solved ? "连起来，看一看" : "从左到右，补上缺少的一步"}</strong>
         <button type="button" onClick={onScene}>再看场景</button>
@@ -86,12 +86,12 @@ export function OrderSequenceBoard({ round, solved, showScene, onStart, onScene 
           </div>
         </div>
       </div>}
-      <ol className="order-story-steps">
+      <ol className="order-story-steps" data-step-count={steps.length}>
         {steps.map((step, index) => <li key={index} className={`${step.missing ? "order-step-missing" : ""} ${step.filled ? "order-step-filled" : ""} ${solved && index === activeStep ? "order-step-current" : ""}`}>
           <button type="button" aria-label={`第${index + 1}步：${step.label}`} aria-current={solved && index === activeStep ? "step" : undefined}
             onClick={() => { if (solved) { setPlaying(false); setActiveStep(index); } speak(step.label); }}>
             {step.image ? <img src={publicAsset(step.image.src)} alt={step.image.alt} /> : <span className="order-story-missing" aria-hidden="true">?</span>}
-            <span className="order-story-step-label"><b>{index + 1}</b>{step.label}<Volume2 size={14} /></span>
+            <span className="order-story-step-label"><b>{index + 1}</b><span className="order-story-step-text">{step.label}</span><Volume2 size={14} /></span>
           </button>
         </li>)}
       </ol>

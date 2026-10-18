@@ -1,0 +1,93 @@
+✔ 启蒙 and 探索 partition the complete catalog without duplicating or changing old questions (0.664708ms)
+✔ both old locations seed their own sections without overwriting storage (0.293542ms)
+✔ switching sections and restarting preserves two independent stable positions (0.186083ms)
+✔ a saved question ID resolves regardless of a stale index and cannot cross section boundaries (0.060875ms)
+✔ future, corrupt and unavailable navigation storage is preserved with usable defaults (0.209791ms)
+✔ each group keeps its own last question across switching and a fresh read (0.205334ms)
+✔ explicit reset changes only the selected group's remembered question (0.08625ms)
+✔ group resolution follows the stable question ID and stays inside the selected group (0.075625ms)
+✔ schema 1 migrates known section and legacy group positions without rewriting on read (0.124083ms)
+✔ invalid schema-2 maps are preserved and cannot overwrite other navigation history (0.182459ms)
+✔ removed questions or groups do not discard the other groups' saved positions (0.163542ms)
+✔ review corrections preserve every enlightenment identity and correct answer (9.303ms)
+✔ matrix examples and all answer options render both constituent pictures (4.991416ms)
+✔ two-condition sorter distractors each violate just one different condition (0.182083ms)
+✔ rotation sequences independently follow their direction without a contradictory backdrop (0.082375ms)
+✔ sorting tasks expose a sorting goal and the failed plan shows the mixed state (0.533625ms)
+✔ replacement distractors remain illustrated, related steps without the reviewed absurd options (0.121583ms)
+✔ the bridge repair states the model, destination, usable material, and visible target (0.0555ms)
+✔ review baseline remains the pre-edit d8dcbf2c snapshot (2.12025ms)
+✔ games: only the explicit reviewed rounds and fields may change; all other content stays equal (4.745709ms)
+✔ activitySets: only the explicit reviewed rounds and fields may change; all other content stays equal (12.678375ms)
+✔ exactly eighteen semantic revisions increase while answer contracts remain intact (1.759291ms)
+✔ new revision records never delete or copy the old revision completion evidence (18.215792ms)
+✔ original planting atlas and its source retain their pre-edit SHA-256 bytes (2.558542ms)
+✔ drinking answers stay exact through the authorized 045 story-surface completion (9.148417ms)
+✔ unanswered and wrong states keep the only blank and never expose its answer picture (0.222791ms)
+✔ success fills the real blank with the correct distinct action, preserving the sequence (0.125ms)
+✔ registered scenes have different initial facts and exact scene dimensions (6.5265ms)
+✔ all four action images are local, distinct readable PNGs with retained generation source (4.803417ms)
+✔ every water-task option is illustrated equally, including both empty-cup distractors (2.040416ms)
+✔ all stable enlightenment and exploration identities survive the authorized review corrections (1.623917ms)
+✔ answer positions stay balanced without long runs or a repeating group-wide cycle (2.557917ms)
+✔ reordering preserves each drawn option, semantic answer and display letter (1.979166ms)
+✔ quantity pictures independently agree with addition, subtraction, sharing and grouping (0.325583ms)
+✔ a timed observation cannot silently start on navigation and interruption reopens readiness (0.344958ms)
+✔ jumping to the last round does not invent earlier completion or ability evidence (0.135416ms)
+✔ memory options have exactly one answer supported by the visible sequence (0.383167ms)
+✔ missing and extra picture cards match independent multiset differences (0.202708ms)
+✔ corrected number pairs have a visible repeated rule and no nonexistent color cue (0.235209ms)
+✔ bridge plans span every supported gap, not only enough total wood (0.282666ms)
+✔ story corrections specify needs and do not confuse game rules with crossing a road (0.259333ms)
+✔ layer cards expose the exact aligned positions and their opaque stacking order (0.217875ms)
+✔ code-table queries are not always the first example and maps independently determine the answer (0.105167ms)
+✔ counting evidence is not always the middle group and numeric distractors stay nearby (0.17775ms)
+✔ 045 changes only the remaining story surfaces; all 1110 identities, answers and unrelated content survive (9.341375ms)
+✔ every initial story is a registered 1200x675 PNG, never a generic old backdrop (10.640542ms)
+✖ all 24 questions keep one unknown until correct, then fill the exact position without changing order (1.108583ms)
+✖ all steps and all options have distinct semantic local art; no correct-only picture cue (0.8585ms)
+✔ meaning conflicts resolve by question and stage, including dirty hands and already-sorted toys (0.330666ms)
+✔ requested gpt-6.1-sol artwork manifests cover every brief scene and card (1.273625ms)
+✔ round navigator clicks request an immediate round read (0.794583ms)
+✔ game surface reads the requested target round instead of only the current render (0.063458ms)
+ℹ tests 52
+ℹ suites 0
+ℹ pass 50
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1170.017333
+
+✖ failing tests:
+
+test at scripts/order-story-completion.test.mjs:39:1
+✖ all 24 questions keep one unknown until correct, then fill the exact position without changing order (1.108583ms)
+  AssertionError [ERR_ASSERTION]: logic-order-plan-8
+      at TestContext.<anonymous> (file:///Users/chiang/.codex/worktrees/curriculum-benchmark/playground/scripts/order-story-completion.test.mjs:47:12)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1325:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:911:18)
+      at Test.postRun (node:internal/test_runner/test:1465:19)
+      at Test.run (node:internal/test_runner/test:1390:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:911:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at scripts/order-story-completion.test.mjs:53:1
+✖ all steps and all options have distinct semantic local art; no correct-only picture cue (0.8585ms)
+  TypeError: Cannot read properties of undefined (reading 'src')
+      at file:///Users/chiang/.codex/worktrees/curriculum-benchmark/playground/scripts/order-story-completion.test.mjs:60:79
+      at Array.some (<anonymous>)
+      at TestContext.<anonymous> (file:///Users/chiang/.codex/worktrees/curriculum-benchmark/playground/scripts/order-story-completion.test.mjs:60:51)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1325:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:911:18)
+      at Test.postRun (node:internal/test_runner/test:1465:19)
+      at Test.run (node:internal/test_runner/test:1390:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:911:7)

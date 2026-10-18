@@ -1,0 +1,35 @@
+{
+  "model": "gpt-6.1-sol",
+  "generator": "built-in image_gen",
+  "useCase": "illustration-story",
+  "generatedFile": "/Users/chiang/.codex/generated_images/01a14fa7-7829-7452-8423-d2592d12ab53/exec-9d6d0554-e109-44e4-bf73-b5637fa9ee04.png",
+  "reference": "public/images/scenes/source/drinking-thirsty.png",
+  "prompt": "Use case: illustration-story. ONE wide landscape 16:9 preschool educational INITIAL situation, reference warm watercolor colored-pencil texture on cream paper, same cute preschool boy short dark brown hair, orange short-sleeved shirt and blue trousers. Child stands INSIDE home near CLOSED front door, both empty hands down. Nearby large window shows obvious falling RAIN with raindrops on glass, gray-blue wet outdoors, puddles. A bright YELLOW HOODED RAINCOAT hangs unused from a coat hook beside door, visibly separate from child's body. A plain tan wide-brim SUN HAT and a black-white SOCCER BALL sit separately on low bench. Child has NO hat on head, NO raincoat on body, NO ball in hands, no umbrella anywhere. This scene must show before preparing for rain, before putting on raincoat and before leaving. Warm cozy interior, soft rainy light outside. All visual clues large clear not cluttered. No text, labels, signs, symbols, arrows, panels, watermark. Composition 16:9, all critical objects comfortably inset.",
+  "sourceDimensions": {
+    "width": 1672,
+    "height": 941
+  },
+  "outputs": [
+    {
+      "key": "rain",
+      "path": "public/images/scenes/order-045-rain-rain.png",
+      "resize": {
+        "width": 1200,
+        "height": 675,
+        "fit": "fill"
+      }
+    }
+  ],
+  "visualReview": {
+    "status": "reviewed",
+    "reviewedBy": "gpt-6.1-sol",
+    "date": "2026-10-18",
+    "checks": [
+      "initial situation does not complete intended next action",
+      "each card matches its manifest meaning",
+      "clean and muddy hands distinguished for snack",
+      "cropped action cards have no neighbouring-cell fragments"
+    ],
+    "limitations": []
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "src": "/Users/chiang/.codex/generated_images/01a14fa7-1a75-71c3-a797-fcc6410ee5dc/exec-23f23f8f-da8a-4e9d-90d4-5f9b9f0aed28.png",
+  "prompt": "Use case: illustration-story. ONE EXACT 3x3 square sprite atlas with nine equal SQUARE cells in perfect regular grid, eighth used and ninth blank. Every independent illustration stays fully inside its equal cell with cream margins; NO panels crossing cell boundaries. Warm watercolor colored pencil style from references. Every scene is clearly small TABLETOP TOY MODEL with wood table and visible cardboard edges: green LEFT and RIGHT bank platforms, blue PAPER strip between them, cream wooden toy RABBIT with painted eyes and long ears, and one long rectangular wooden plank. Human hands always belong to orange-shirt boy if needed. Read LEFT TO RIGHT TOP TO BOTTOM: CELL1 rabbit on LEFT green bank, blue paper water gap to RIGHT bank, NO bridge, plank separate in front. CELL2 boy's hands lower wooden plank ACROSS the blue paper so each end rests on a bank, BUILDING bridge; rabbit STAYS LEFT. CELL3 completed wooden plank connects banks, boy's hand gently moves rabbit along bridge toward RIGHT bank, rabbit ON PLANK near right end, no carrot or flag needed. CELL4 rabbit now stands on RIGHT bank holding orange carrot, completed plank still spans water behind it. CELL5 rabbit now stands on RIGHT bank beside red flag, completed plank still spans water behind it; NO carrot. CELL6 NO BRIDGE, boy's hand moves wooden rabbit INTO MIDDLE of blue paper stream between separated green banks; plank lies unused on bare table in front. CELL7 NO BRIDGE, rabbit remains LEFT bank leaning/stretching its little toy paws toward unreachable carrot on RIGHT bank across blue paper; carrot NOT in paw, unused plank separately in front. CELL8 NO BRIDGE, rabbit simply waits on LEFT bank, unused long plank separately in front, no hands moving anything; RIGHT bank empty. CELL9 entirely blank cream. Crucial: bridge ONLY in cells 2 3 4 5; no bridge in 1 6 7 8. Keep rabbit left-to-right direction consistent, clear tabletop scale and water paper edges. No real river, no real live rabbit, no text numbers arrows watermark.",
+  "family": "bridge",
+  "keys": [
+    "river",
+    "build",
+    "cross",
+    "carrot",
+    "flag",
+    "water",
+    "reachCarrot",
+    "wait"
+  ],
+  "cols": 3,
+  "rows": 3,
+  "tool": "built-in image_gen",
+  "agentModel": "gpt-6.1-sol",
+  "source": "public/images/items/source/order-045-bridge-cards.png",
+  "sourceWidth": 1275,
+  "sourceHeight": 1233,
+  "crops": [
+    {
+      "key": "river",
+      "output": "public/images/items/order-045-bridge-river.png",
+      "left": 8,
+      "top": 8,
+      "width": 409,
+      "height": 395
+    },
+    {
+      "key": "build",
+      "output": "public/images/items/order-045-bridge-build.png",
+      "left": 433,
+      "top": 8,
+      "width": 409,
+      "height": 395
+    },
+    {
+      "key": "cross",
+      "output": "public/images/items/order-045-bridge-cross.png",
+      "left": 858,
+      "top": 8,
+      "width": 409,
+      "height": 395
+    },
+    {
+      "key": "carrot",
+      "output": "public/images/items/order-045-bridge-carrot.png",
+      "left": 8,
+      "top": 419,
+      "width": 409,
+      "height": 395
+    },
+    {
+      "key": "flag",
+      "output": "public/images/items/order-045-bridge-flag.png",
+      "left": 433,
+      "top": 419,
+      "width": 409,
+      "height": 395
+    },
+    {
+      "key": "water",
+      "output": "public/images/items/order-045-bridge-water.png",
+      "left": 858,
+      "top": 419,
+      "width": 409,
+      "height": 395
+    },
+    {
+      "key": "reachCarrot",
+      "output": "public/images/items/order-045-bridge-reachCarrot.png",
+      "left": 8,
+      "top": 830,
+      "width": 409,
+      "height": 395
+    },
+    {
+      "key": "wait",
+      "output": "public/images/items/order-045-bridge-wait.png",
+      "left": 433,
+      "top": 830,
+      "width": 409,
+      "height": 395
+    }
+  ],
+  "outputWidth": 600,
+  "outputHeight": 600,
+  "overrides": {
+    "reachCarrot": {
+      "source": "public/images/items/source/order-045-bridge-reachCarrot.png",
+      "output": "public/images/items/order-045-bridge-reachCarrot.png",
+      "reason": "Use standalone image with explicitly forward reaching toy paws"
+    }
+  }
+}

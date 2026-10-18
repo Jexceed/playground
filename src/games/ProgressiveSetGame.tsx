@@ -2,7 +2,7 @@ import { ArrowRight, Check, RotateCcw } from "lucide-react";
 import { Fragment, useEffect, useId, useMemo, useRef, useState } from "react";
 import type { CSSProperties } from "react";
 import { OrderSequenceBoard } from "../components/OrderSequenceBoard";
-import { drinkingImage } from "../data/orderStories";
+import { orderStoryImage } from "../data/orderStories";
 import { GuideMascot } from "../components/GuideMascot";
 import { VisualGlyph, VisualToken, visualMetaFor, visualParts } from "../components/VisualToken";
 import { imageGallery } from "../data/imageGallery";
@@ -215,14 +215,14 @@ export function ProgressiveSetGame({
         </p>
       )}
 
-      {!showStoryScene && <div className={`choice-grid answer-grid ${round.sequenceStory ? "answer-grid-story" : ""} ${round.graphicChallenge ? "answer-grid-graphic" : ""}`}>
+      {!showStoryScene && !(round.sequenceStory && isCorrect) && <div className={`choice-grid answer-grid ${round.sequenceStory ? "answer-grid-story" : ""} ${round.graphicChallenge ? "answer-grid-graphic" : ""}`}>
         {round.choices.map((choice) => {
           const active = selected === choice.value;
           const wrong = answered && active && choice.value !== round.answer;
           const correct = answered && choice.value === round.answer;
           const graphicOption = round.graphicChallenge?.options.find((option) => option.value === choice.value);
           const voiceLabel = labelForVoice(choice.label);
-          const storyChoiceImage = round.sequenceStory && round.choices.every(item => drinkingImage(item.label)) ? drinkingImage(choice.label) : undefined;
+          const storyChoiceImage = round.sequenceStory && round.choices.every(item => orderStoryImage(round, item.label)) ? orderStoryImage(round, choice.label) : undefined;
           return (
             <button
               aria-label={voiceLabel}
@@ -414,7 +414,7 @@ function RoundBoard({
   onSubitizePeek?: () => void;
   onReviewMemory?: () => void;
 }) {
-  if (round.sequenceStory === "drinking" && round.sceneImage) {
+  if (round.sequenceStory && round.sceneImage) {
     return <OrderSequenceBoard round={round} solved={solved} showScene={showStoryScene} onStart={onStoryStart} onScene={onStoryScene} />;
   }
   const scene = sceneForGame(gameId);

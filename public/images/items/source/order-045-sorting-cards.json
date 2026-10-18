@@ -1,0 +1,138 @@
+{
+  "model": "gpt-6.1-sol",
+  "tool": "built-in image_gen",
+  "source": "/Users/chiang/.codex/generated_images/01a14fa7-dab4-7bc1-ae31-12017950ca84/exec-dc26c04a-cb43-4cfe-96a0-844c82da3d24.png",
+  "prompt": "Use case: illustration-story. Children’s educational story illustration matching the reference: warm light watercolor and colored pencil on fine cream paper, soft hand-drawn contours, sunlit muted pastel palette, rounded natural proportions. Same cute East Asian child, short dark brown hair, orange-red short sleeve shirt, blue trousers. Concrete unambiguous actions for preschoolers. No text, letters, captions, numerals, arrows, icons, watermarks or decorative frames. Asset: EXACT regular 3 columns by 3 rows action-card atlas, SQUARE canvas of nine equal SQUARE cells; edge-to-edge strict grid, tiny cream-white separators allowed, no borders. Independent scenes each contained with safe margins. Same orange-shirt child, wooden blocks, little cars, two open boxes; one box has block picture, other red-car picture, NO text. Each panel must show the full toys and both boxes large enough to distinguish contents. READ ROW-MAJOR: (1) MIXED: child hands empty, blocks and toy cars intermixed in a single floor pile, both boxes empty. (2) SORT: child actively moving a car away from blocks to form two pure separate floor groups, both boxes still empty. (3) PUT: child kneels between two boxes, places a block into block box with one hand and a car into car box with other hand, matching contents already inside each, some same-type toys outside. (4) DONE: all blocks neatly in block box, all cars neatly in car box, floor clear, child hands empty. (5) ALL ONE BOX: child putting both blocks and cars MIXED into the SAME block-picture box, clearly visible cars among blocks; other car-picture box COMPLETELY EMPTY. (6) ONLY ONE: child drops ONE toy into one box; MANY OTHER MIXED TOYS still left scattered on floor, other box empty. (7) SORT AGAIN: two already pure groups on floor, blocks group and cars group, child moving one block from one position to another within the SAME blocks group, both boxes empty. (8) SORTED: child hands empty on knees, two pure floor groups with wide gap, left only blocks, right only cars, BOTH boxes entirely EMPTY. (9) totally blank cream-white cell. No arrows, symbols, words, numbers, tick/cross overlays. Specific hand actions and toy positions must match each cell.",
+  "sourceSize": {
+    "width": 1254,
+    "height": 1254
+  },
+  "grid": {
+    "cols": 3,
+    "rows": 3
+  },
+  "crops": [
+    {
+      "key": "mixed",
+      "cell": {
+        "col": 0,
+        "row": 0
+      },
+      "rect": {
+        "left": 5,
+        "top": 5,
+        "width": 408,
+        "height": 408
+      },
+      "width": 600,
+      "height": 600
+    },
+    {
+      "key": "sort",
+      "cell": {
+        "col": 1,
+        "row": 0
+      },
+      "rect": {
+        "left": 423,
+        "top": 5,
+        "width": 408,
+        "height": 408
+      },
+      "width": 600,
+      "height": 600
+    },
+    {
+      "key": "put",
+      "cell": {
+        "col": 2,
+        "row": 0
+      },
+      "rect": {
+        "left": 841,
+        "top": 5,
+        "width": 408,
+        "height": 408
+      },
+      "width": 600,
+      "height": 600
+    },
+    {
+      "key": "done",
+      "cell": {
+        "col": 0,
+        "row": 1
+      },
+      "rect": {
+        "left": 5,
+        "top": 423,
+        "width": 408,
+        "height": 408
+      },
+      "width": 600,
+      "height": 600
+    },
+    {
+      "key": "allOne",
+      "cell": {
+        "col": 1,
+        "row": 1
+      },
+      "rect": {
+        "left": 423,
+        "top": 423,
+        "width": 408,
+        "height": 408
+      },
+      "width": 600,
+      "height": 600
+    },
+    {
+      "key": "one",
+      "cell": {
+        "col": 2,
+        "row": 1
+      },
+      "rect": {
+        "left": 841,
+        "top": 423,
+        "width": 408,
+        "height": 408
+      },
+      "width": 600,
+      "height": 600
+    },
+    {
+      "key": "sortAgain",
+      "cell": {
+        "col": 0,
+        "row": 2
+      },
+      "rect": {
+        "left": 5,
+        "top": 841,
+        "width": 408,
+        "height": 408
+      },
+      "width": 600,
+      "height": 600
+    },
+    {
+      "key": "sorted",
+      "cell": {
+        "col": 1,
+        "row": 2
+      },
+      "rect": {
+        "left": 423,
+        "top": 841,
+        "width": 408,
+        "height": 408
+      },
+      "width": 600,
+      "height": 600
+    }
+  ],
+  "runtime": null,
+  "review": "通过：混杂/分类中/分别装盒/收好/混装一盒/只收一件/重复摆分类堆/分好未操作均独立；末格空白。"
+}

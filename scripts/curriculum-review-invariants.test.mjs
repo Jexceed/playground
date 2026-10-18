@@ -35,6 +35,12 @@ allow(enlightenment, 'logic-matrix-puzzle', [6], fields('success','retry','paren
 allow(enlightenment, 'logic-rotation-direction', range(1,12), fields('difficultyNote','sceneImage'));
 allow(enlightenment, 'logic-part-whole-puzzle', range(1,6), fields('prompt','instruction','visualGroups','success','retry','parentPrompt'));
 
+// 045 completes the remaining 21 story surfaces. Preserve all earlier field gates.
+for (const n of range(1,24)) {
+  const id = `logic-order-plan-${n}`;
+  enlightenment.set(id, [...new Set([...(enlightenment.get(id) ?? []), 'instruction','sceneImage','sequenceStory'])]);
+}
+
 allow(exploration, 'explore-calendar-cycles', [7,8,9], fields('prompt','illustration'));
 allow(exploration, 'explore-planning-repair', [1,4,7], fields('tokens','presentation'));
 allow(exploration, 'explore-toggle-state', range(1,9), fields('revision','clues','hints','success'));

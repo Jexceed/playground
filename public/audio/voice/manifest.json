@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-10-18T10:15:08.016Z",
+  "generatedAt": "2026-10-18T15:41:12.829Z",
   "provider": "edge-tts Python package",
   "voice": "zh-CN-XiaoxiaoNeural",
   "rate": "-12%",
   "pitch": "+2Hz",
   "includeParent": true,
   "format": "mp3",
-  "count": 4055,
-  "requestedCount": 4055,
+  "count": 4068,
+  "requestedCount": 4068,
   "failures": [],
   "entries": [
     {
@@ -4067,6 +4067,14 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%8F%A3%E6%B8%B4.mp3"
     },
     {
+      "id": "object-先拿杯子",
+      "kind": "object",
+      "text": "先拿杯子",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%85%88%E6%8B%BF%E6%9D%AF%E5%AD%90.mp3"
+    },
+    {
       "id": "object-倒水",
       "kind": "object",
       "text": "倒水",
@@ -4083,12 +4091,12 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%96%9D%E6%B0%B4.mp3"
     },
     {
-      "id": "prompt-门锁着-钥匙已经拿到了-接下来用什么开门-按图卡从左到右-找出缺少的一步",
+      "id": "prompt-门锁着-钥匙已经拿到了-接下来用什么开门-先看场景-再按图卡从左到右-找出缺少的一步",
       "kind": "prompt",
-      "text": "门锁着，钥匙已经拿到了。接下来用什么开门？按图卡从左到右，找出缺少的一步。",
+      "text": "门锁着，钥匙已经拿到了。接下来用什么开门？先看场景，再按图卡从左到右，找出缺少的一步。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E9%97%A8%E9%94%81%E7%9D%80-%E9%92%A5%E5%8C%99%E5%B7%B2%E7%BB%8F%E6%8B%BF%E5%88%B0%E4%BA%86-%E6%8E%A5%E4%B8%8B%E6%9D%A5%E7%94%A8%E4%BB%80%E4%B9%88%E5%BC%80%E9%97%A8-%E6%8C%89%E5%9B%BE%E5%8D%A1%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E9%97%A8%E9%94%81%E7%9D%80-%E9%92%A5%E5%8C%99%E5%B7%B2%E7%BB%8F%E6%8B%BF%E5%88%B0%E4%BA%86-%E6%8E%A5%E4%B8%8B%E6%9D%A5%E7%94%A8%E4%BB%80%E4%B9%88%E5%BC%80%E9%97%A8-%E5%85%88%E7%9C%8B%E5%9C%BA%E6%99%AF-%E5%86%8D%E6%8C%89%E5%9B%BE%E5%8D%A1%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
     },
     {
       "id": "success-按顺序是门锁着-用钥匙开锁-开门-进屋-所以缺少的是用钥匙开锁-门锁着时-要用合适的钥匙开锁-再开门进屋",
@@ -4147,6 +4155,14 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E9%97%A8%E9%94%81%E7%9D%80.mp3"
     },
     {
+      "id": "object-用钥匙开锁",
+      "kind": "object",
+      "text": "用钥匙开锁",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E7%94%A8%E9%92%A5%E5%8C%99%E5%BC%80%E9%94%81.mp3"
+    },
+    {
       "id": "object-开门",
       "kind": "object",
       "text": "开门",
@@ -4163,12 +4179,12 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E8%BF%9B%E5%B1%8B.mp3"
     },
     {
-      "id": "prompt-小鱼在岸上-需要回到水里-先做什么-按图卡从左到右-找出缺少的一步",
+      "id": "prompt-小鱼在岸上-需要回到水里-先做什么-先看场景-再按图卡从左到右-找出缺少的一步",
       "kind": "prompt",
-      "text": "小鱼在岸上，需要回到水里，先做什么？按图卡从左到右，找出缺少的一步。",
+      "text": "小鱼在岸上，需要回到水里，先做什么？先看场景，再按图卡从左到右，找出缺少的一步。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%B0%8F%E9%B1%BC%E5%9C%A8%E5%B2%B8%E4%B8%8A-%E9%9C%80%E8%A6%81%E5%9B%9E%E5%88%B0%E6%B0%B4%E9%87%8C-%E5%85%88%E5%81%9A%E4%BB%80%E4%B9%88-%E6%8C%89%E5%9B%BE%E5%8D%A1%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%B0%8F%E9%B1%BC%E5%9C%A8%E5%B2%B8%E4%B8%8A-%E9%9C%80%E8%A6%81%E5%9B%9E%E5%88%B0%E6%B0%B4%E9%87%8C-%E5%85%88%E5%81%9A%E4%BB%80%E4%B9%88-%E5%85%88%E7%9C%8B%E5%9C%BA%E6%99%AF-%E5%86%8D%E6%8C%89%E5%9B%BE%E5%8D%A1%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
     },
     {
       "id": "success-按顺序是小鱼在岸上-轻轻放回水里-小河-所以缺少的是轻轻放回水里-先轻轻放回水里-小鱼才安全",
@@ -4227,6 +4243,14 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%B0%8F%E9%B1%BC%E5%9C%A8%E5%B2%B8%E4%B8%8A.mp3"
     },
     {
+      "id": "object-轻轻放回水里",
+      "kind": "object",
+      "text": "轻轻放回水里",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E8%BD%BB%E8%BD%BB%E6%94%BE%E5%9B%9E%E6%B0%B4%E9%87%8C.mp3"
+    },
+    {
       "id": "object-小河",
       "kind": "object",
       "text": "小河",
@@ -4235,12 +4259,12 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%B0%8F%E6%B2%B3.mp3"
     },
     {
-      "id": "prompt-花盆里只有土-还没有种子-想种花-先做什么-按图卡从左到右-找出缺少的一步",
+      "id": "prompt-花盆里只有土-还没有种子-想种花-先做什么-先看场景-再按图卡从左到右-找出缺少的一步",
       "kind": "prompt",
-      "text": "花盆里只有土，还没有种子。想种花，先做什么？按图卡从左到右，找出缺少的一步。",
+      "text": "花盆里只有土，还没有种子。想种花，先做什么？先看场景，再按图卡从左到右，找出缺少的一步。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%8A%B1%E7%9B%86%E9%87%8C%E5%8F%AA%E6%9C%89%E5%9C%9F-%E8%BF%98%E6%B2%A1%E6%9C%89%E7%A7%8D%E5%AD%90-%E6%83%B3%E7%A7%8D%E8%8A%B1-%E5%85%88%E5%81%9A%E4%BB%80%E4%B9%88-%E6%8C%89%E5%9B%BE%E5%8D%A1%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%8A%B1%E7%9B%86%E9%87%8C%E5%8F%AA%E6%9C%89%E5%9C%9F-%E8%BF%98%E6%B2%A1%E6%9C%89%E7%A7%8D%E5%AD%90-%E6%83%B3%E7%A7%8D%E8%8A%B1-%E5%85%88%E5%81%9A%E4%BB%80%E4%B9%88-%E5%85%88%E7%9C%8B%E5%9C%BA%E6%99%AF-%E5%86%8D%E6%8C%89%E5%9B%BE%E5%8D%A1%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
     },
     {
       "id": "success-按顺序是只有土的花盆-种下种子-小芽-花-所以缺少的是种下种子-先种下种子-再细心照顾-才有机会发芽开花",
@@ -4299,12 +4323,20 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%8F%AA%E6%9C%89%E5%9C%9F%E7%9A%84%E8%8A%B1%E7%9B%86.mp3"
     },
     {
-      "id": "object-发芽",
+      "id": "object-种下种子",
       "kind": "object",
-      "text": "发芽",
+      "text": "种下种子",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%8F%91%E8%8A%BD.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E7%A7%8D%E4%B8%8B%E7%A7%8D%E5%AD%90.mp3"
+    },
+    {
+      "id": "object-小芽",
+      "kind": "object",
+      "text": "小芽",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%B0%8F%E8%8A%BD.mp3"
     },
     {
       "id": "object-花",
@@ -4315,12 +4347,20 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E8%8A%B1.mp3"
     },
     {
-      "id": "prompt-吃饼干前-待补位置应该是什么-按图卡从左到右-找出缺少的一步",
-      "kind": "prompt",
-      "text": "吃饼干前，待补位置应该是什么？按图卡从左到右，找出缺少的一步。",
+      "id": "object-发芽",
+      "kind": "object",
+      "text": "发芽",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%90%83%E9%A5%BC%E5%B9%B2%E5%89%8D-%E5%BE%85%E8%A1%A5%E4%BD%8D%E7%BD%AE%E5%BA%94%E8%AF%A5%E6%98%AF%E4%BB%80%E4%B9%88-%E6%8C%89%E5%9B%BE%E5%8D%A1%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%8F%91%E8%8A%BD.mp3"
+    },
+    {
+      "id": "prompt-吃饼干前-待补位置应该是什么-先看场景-再按图卡从左到右-找出缺少的一步",
+      "kind": "prompt",
+      "text": "吃饼干前，待补位置应该是什么？先看场景，再按图卡从左到右，找出缺少的一步。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%90%83%E9%A5%BC%E5%B9%B2%E5%89%8D-%E5%BE%85%E8%A1%A5%E4%BD%8D%E7%BD%AE%E5%BA%94%E8%AF%A5%E6%98%AF%E4%BB%80%E4%B9%88-%E5%85%88%E7%9C%8B%E5%9C%BA%E6%99%AF-%E5%86%8D%E6%8C%89%E5%9B%BE%E5%8D%A1%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
     },
     {
       "id": "success-按顺序是手脏-先洗手-拿饼干-吃-所以缺少的是先洗手-手脏了先洗手-再拿饼干吃",
@@ -4379,6 +4419,14 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E6%89%8B%E8%84%8F.mp3"
     },
     {
+      "id": "object-先洗手",
+      "kind": "object",
+      "text": "先洗手",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%85%88%E6%B4%97%E6%89%8B.mp3"
+    },
+    {
       "id": "object-拿饼干",
       "kind": "object",
       "text": "拿饼干",
@@ -4395,12 +4443,12 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%90%83.mp3"
     },
     {
-      "id": "prompt-积木倒了-要重新搭高-先做什么-按图卡从左到右-找出缺少的一步",
+      "id": "prompt-积木倒了-要重新搭高-先做什么-先看场景-再按图卡从左到右-找出缺少的一步",
       "kind": "prompt",
-      "text": "积木倒了，要重新搭高，先做什么？按图卡从左到右，找出缺少的一步。",
+      "text": "积木倒了，要重新搭高，先做什么？先看场景，再按图卡从左到右，找出缺少的一步。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%A7%AF%E6%9C%A8%E5%80%92%E4%BA%86-%E8%A6%81%E9%87%8D%E6%96%B0%E6%90%AD%E9%AB%98-%E5%85%88%E5%81%9A%E4%BB%80%E4%B9%88-%E6%8C%89%E5%9B%BE%E5%8D%A1%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%A7%AF%E6%9C%A8%E5%80%92%E4%BA%86-%E8%A6%81%E9%87%8D%E6%96%B0%E6%90%AD%E9%AB%98-%E5%85%88%E5%81%9A%E4%BB%80%E4%B9%88-%E5%85%88%E7%9C%8B%E5%9C%BA%E6%99%AF-%E5%86%8D%E6%8C%89%E5%9B%BE%E5%8D%A1%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
     },
     {
       "id": "success-按顺序是积木倒了-先捡积木-高塔-所以缺少的是先捡积木-先捡积木-再一块一块搭高",
@@ -4451,12 +4499,20 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%85%88%E6%94%BE%E8%BF%9B%E7%9B%92%E5%AD%90.mp3"
     },
     {
-      "id": "object-倒了",
+      "id": "object-积木倒了",
       "kind": "object",
-      "text": "🧱倒了",
+      "text": "积木倒了",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%80%92%E4%BA%86.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E7%A7%AF%E6%9C%A8%E5%80%92%E4%BA%86.mp3"
+    },
+    {
+      "id": "object-先捡积木",
+      "kind": "object",
+      "text": "先捡积木",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%85%88%E6%8D%A1%E7%A7%AF%E6%9C%A8.mp3"
     },
     {
       "id": "object-高塔",
@@ -4467,12 +4523,20 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E9%AB%98%E5%A1%94.mp3"
     },
     {
-      "id": "prompt-积木和小车散了-想按种类分开放进两个盒子-先做什么-按图卡从左到右-找出缺少的一步",
-      "kind": "prompt",
-      "text": "积木和小车散了，想按种类分开放进两个盒子，先做什么？按图卡从左到右，找出缺少的一步。",
+      "id": "object-倒了",
+      "kind": "object",
+      "text": "🧱倒了",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%A7%AF%E6%9C%A8%E5%92%8C%E5%B0%8F%E8%BD%A6%E6%95%A3%E4%BA%86-%E6%83%B3%E6%8C%89%E7%A7%8D%E7%B1%BB%E5%88%86%E5%BC%80%E6%94%BE%E8%BF%9B%E4%B8%A4%E4%B8%AA%E7%9B%92%E5%AD%90-%E5%85%88%E5%81%9A%E4%BB%80%E4%B9%88-%E6%8C%89%E5%9B%BE%E5%8D%A1%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%80%92%E4%BA%86.mp3"
+    },
+    {
+      "id": "prompt-积木和小车散了-想按种类分开放进两个盒子-先做什么-先看场景-再按图卡从左到右-找出缺少的一步",
+      "kind": "prompt",
+      "text": "积木和小车散了，想按种类分开放进两个盒子，先做什么？先看场景，再按图卡从左到右，找出缺少的一步。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%A7%AF%E6%9C%A8%E5%92%8C%E5%B0%8F%E8%BD%A6%E6%95%A3%E4%BA%86-%E6%83%B3%E6%8C%89%E7%A7%8D%E7%B1%BB%E5%88%86%E5%BC%80%E6%94%BE%E8%BF%9B%E4%B8%A4%E4%B8%AA%E7%9B%92%E5%AD%90-%E5%85%88%E5%81%9A%E4%BB%80%E4%B9%88-%E5%85%88%E7%9C%8B%E5%9C%BA%E6%99%AF-%E5%86%8D%E6%8C%89%E5%9B%BE%E5%8D%A1%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
     },
     {
       "id": "success-按顺序是积木和小车-先分开两类-分开放进盒子-分类装好-所以缺少的是先分开两类-先分类-再把积木和小车放进各自的盒子-下次好找",
@@ -4531,6 +4595,14 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E7%A7%AF%E6%9C%A8%E5%92%8C%E5%B0%8F%E8%BD%A6.mp3"
     },
     {
+      "id": "object-先分开两类",
+      "kind": "object",
+      "text": "先分开两类",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%85%88%E5%88%86%E5%BC%80%E4%B8%A4%E7%B1%BB.mp3"
+    },
+    {
       "id": "object-分开放进盒子",
       "kind": "object",
       "text": "分开放进盒子",
@@ -4547,12 +4619,12 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%88%86%E7%B1%BB%E8%A3%85%E5%A5%BD.mp3"
     },
     {
-      "id": "prompt-过马路时-待补位置应该是什么-按图卡从左到右-找出缺少的一步",
+      "id": "prompt-过马路时-待补位置应该是什么-先看场景-再按图卡从左到右-找出缺少的一步",
       "kind": "prompt",
-      "text": "过马路时，待补位置应该是什么？按图卡从左到右，找出缺少的一步。",
+      "text": "过马路时，待补位置应该是什么？先看场景，再按图卡从左到右，找出缺少的一步。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%BF%87%E9%A9%AC%E8%B7%AF%E6%97%B6-%E5%BE%85%E8%A1%A5%E4%BD%8D%E7%BD%AE%E5%BA%94%E8%AF%A5%E6%98%AF%E4%BB%80%E4%B9%88-%E6%8C%89%E5%9B%BE%E5%8D%A1%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%BF%87%E9%A9%AC%E8%B7%AF%E6%97%B6-%E5%BE%85%E8%A1%A5%E4%BD%8D%E7%BD%AE%E5%BA%94%E8%AF%A5%E6%98%AF%E4%BB%80%E4%B9%88-%E5%85%88%E7%9C%8B%E5%9C%BA%E6%99%AF-%E5%86%8D%E6%8C%89%E5%9B%BE%E5%8D%A1%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
     },
     {
       "id": "success-按顺序是路口-先看灯-绿灯-走过去-所以缺少的是先看灯-先看灯-等绿灯-再安全走过去",
@@ -4609,6 +4681,14 @@
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E8%B7%AF%E5%8F%A3.mp3"
+    },
+    {
+      "id": "object-先看灯",
+      "kind": "object",
+      "text": "先看灯",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%85%88%E7%9C%8B%E7%81%AF.mp3"
     },
     {
       "id": "object-绿灯",
@@ -4675,20 +4755,20 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E7%AB%AF%E7%A9%BA%E6%9D%AF%E5%AD%90%E8%BF%87%E5%8E%BB.mp3"
     },
     {
-      "id": "object-先拿杯子",
+      "id": "object-先倒水",
       "kind": "object",
-      "text": "先拿杯子",
+      "text": "先倒水",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%85%88%E6%8B%BF%E6%9D%AF%E5%AD%90.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%85%88%E5%80%92%E6%B0%B4.mp3"
     },
     {
-      "id": "prompt-吃点心的流程里-待补位置应该是什么-按图卡从左到右-找出缺少的一步",
+      "id": "prompt-吃点心的流程里-待补位置应该是什么-先看场景-再按图卡从左到右-找出缺少的一步",
       "kind": "prompt",
-      "text": "吃点心的流程里，待补位置应该是什么？按图卡从左到右，找出缺少的一步。",
+      "text": "吃点心的流程里，待补位置应该是什么？先看场景，再按图卡从左到右，找出缺少的一步。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%90%83%E7%82%B9%E5%BF%83%E7%9A%84%E6%B5%81%E7%A8%8B%E9%87%8C-%E5%BE%85%E8%A1%A5%E4%BD%8D%E7%BD%AE%E5%BA%94%E8%AF%A5%E6%98%AF%E4%BB%80%E4%B9%88-%E6%8C%89%E5%9B%BE%E5%8D%A1%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%90%83%E7%82%B9%E5%BF%83%E7%9A%84%E6%B5%81%E7%A8%8B%E9%87%8C-%E5%BE%85%E8%A1%A5%E4%BD%8D%E7%BD%AE%E5%BA%94%E8%AF%A5%E6%98%AF%E4%BB%80%E4%B9%88-%E5%85%88%E7%9C%8B%E5%9C%BA%E6%99%AF-%E5%86%8D%E6%8C%89%E5%9B%BE%E5%8D%A1%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
     },
     {
       "id": "success-按顺序是手脏-先洗手-拿盘子-拿饼干-吃-所以缺少的是先洗手-手脏了先洗手-再拿盘子和饼干-最后吃",
@@ -4731,12 +4811,12 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E6%8B%BF%E7%9B%98%E5%AD%90.mp3"
     },
     {
-      "id": "prompt-桌面模型里-玩具兔要沿桥面到对岸拿胡萝卜-中间还缺哪一步-按图卡从左到右-找出缺少的一步",
+      "id": "prompt-桌面模型里-玩具兔要沿桥面到对岸拿胡萝卜-中间还缺哪一步-先看场景-再按图卡从左到右-找出缺少的一步",
       "kind": "prompt",
-      "text": "桌面模型里，玩具兔要沿桥面到对岸拿胡萝卜。中间还缺哪一步？按图卡从左到右，找出缺少的一步。",
+      "text": "桌面模型里，玩具兔要沿桥面到对岸拿胡萝卜。中间还缺哪一步？先看场景，再按图卡从左到右，找出缺少的一步。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%A1%8C%E9%9D%A2%E6%A8%A1%E5%9E%8B%E9%87%8C-%E7%8E%A9%E5%85%B7%E5%85%94%E8%A6%81%E6%B2%BF%E6%A1%A5%E9%9D%A2%E5%88%B0%E5%AF%B9%E5%B2%B8%E6%8B%BF%E8%83%A1%E8%90%9D%E5%8D%9C-%E4%B8%AD%E9%97%B4%E8%BF%98%E7%BC%BA%E5%93%AA%E4%B8%80%E6%AD%A5-%E6%8C%89%E5%9B%BE%E5%8D%A1%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%A1%8C%E9%9D%A2%E6%A8%A1%E5%9E%8B%E9%87%8C-%E7%8E%A9%E5%85%B7%E5%85%94%E8%A6%81%E6%B2%BF%E6%A1%A5%E9%9D%A2%E5%88%B0%E5%AF%B9%E5%B2%B8%E6%8B%BF%E8%83%A1%E8%90%9D%E5%8D%9C-%E4%B8%AD%E9%97%B4%E8%BF%98%E7%BC%BA%E5%93%AA%E4%B8%80%E6%AD%A5-%E5%85%88%E7%9C%8B%E5%9C%BA%E6%99%AF-%E5%86%8D%E6%8C%89%E5%9B%BE%E5%8D%A1%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
     },
     {
       "id": "success-按顺序是小河-先搭桥-走过去-胡萝卜-所以缺少的是先搭桥-有小河时先搭桥-走过去以后才能拿胡萝卜",
@@ -4787,6 +4867,14 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%85%88%E6%8B%BF%E8%83%A1%E8%90%9D%E5%8D%9C.mp3"
     },
     {
+      "id": "object-先搭桥",
+      "kind": "object",
+      "text": "先搭桥",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%85%88%E6%90%AD%E6%A1%A5.mp3"
+    },
+    {
       "id": "object-胡萝卜",
       "kind": "object",
       "text": "胡萝卜",
@@ -4795,12 +4883,12 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E8%83%A1%E8%90%9D%E5%8D%9C.mp3"
     },
     {
-      "id": "prompt-捡起的积木要按种类分别装盒-中间缺哪一步-按图卡从左到右-找出缺少的一步",
+      "id": "prompt-捡起的积木要按种类分别装盒-中间缺哪一步-先看场景-再按图卡从左到右-找出缺少的一步",
       "kind": "prompt",
-      "text": "捡起的积木要按种类分别装盒。中间缺哪一步？按图卡从左到右，找出缺少的一步。",
+      "text": "捡起的积木要按种类分别装盒。中间缺哪一步？先看场景，再按图卡从左到右，找出缺少的一步。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8D%A1%E8%B5%B7%E7%9A%84%E7%A7%AF%E6%9C%A8%E8%A6%81%E6%8C%89%E7%A7%8D%E7%B1%BB%E5%88%86%E5%88%AB%E8%A3%85%E7%9B%92-%E4%B8%AD%E9%97%B4%E7%BC%BA%E5%93%AA%E4%B8%80%E6%AD%A5-%E6%8C%89%E5%9B%BE%E5%8D%A1%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8D%A1%E8%B5%B7%E7%9A%84%E7%A7%AF%E6%9C%A8%E8%A6%81%E6%8C%89%E7%A7%8D%E7%B1%BB%E5%88%86%E5%88%AB%E8%A3%85%E7%9B%92-%E4%B8%AD%E9%97%B4%E7%BC%BA%E5%93%AA%E4%B8%80%E6%AD%A5-%E5%85%88%E7%9C%8B%E5%9C%BA%E6%99%AF-%E5%86%8D%E6%8C%89%E5%9B%BE%E5%8D%A1%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
     },
     {
       "id": "success-按顺序是积木倒了-先捡积木-先分类-放进盒子-整齐-所以缺少的是先分类-先捡起来-再按种类分好-放进对应的盒子",
@@ -4835,12 +4923,12 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%85%88%E5%88%86%E7%B1%BB.mp3"
     },
     {
-      "id": "object-先捡积木",
+      "id": "object-先分类",
       "kind": "object",
-      "text": "先捡积木",
+      "text": "先分类",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%85%88%E6%8D%A1%E7%A7%AF%E6%9C%A8.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%85%88%E5%88%86%E7%B1%BB.mp3"
     },
     {
       "id": "object-放进盒子",
@@ -4859,12 +4947,12 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E6%95%B4%E9%BD%90.mp3"
     },
     {
-      "id": "prompt-上课要写字-先拿什么最合适-按图卡从左到右-找出缺少的一步",
+      "id": "prompt-上课要写字-先拿什么最合适-先看场景-再按图卡从左到右-找出缺少的一步",
       "kind": "prompt",
-      "text": "上课要写字，先拿什么最合适？按图卡从左到右，找出缺少的一步。",
+      "text": "上课要写字，先拿什么最合适？先看场景，再按图卡从左到右，找出缺少的一步。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E4%B8%8A%E8%AF%BE%E8%A6%81%E5%86%99%E5%AD%97-%E5%85%88%E6%8B%BF%E4%BB%80%E4%B9%88%E6%9C%80%E5%90%88%E9%80%82-%E6%8C%89%E5%9B%BE%E5%8D%A1%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E4%B8%8A%E8%AF%BE%E8%A6%81%E5%86%99%E5%AD%97-%E5%85%88%E6%8B%BF%E4%BB%80%E4%B9%88%E6%9C%80%E5%90%88%E9%80%82-%E5%85%88%E7%9C%8B%E5%9C%BA%E6%99%AF-%E5%86%8D%E6%8C%89%E5%9B%BE%E5%8D%A1%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
     },
     {
       "id": "success-按顺序是上课-铅笔-写字-所以缺少的是铅笔-写字前先拿铅笔最合适",
@@ -4923,6 +5011,14 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E4%B8%8A%E8%AF%BE.mp3"
     },
     {
+      "id": "object-铅笔",
+      "kind": "object",
+      "text": "铅笔",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E9%93%85%E7%AC%94.mp3"
+    },
+    {
       "id": "object-写字",
       "kind": "object",
       "text": "写字",
@@ -4931,12 +5027,12 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%86%99%E5%AD%97.mp3"
     },
     {
-      "id": "prompt-书要带去学校-应该先放进哪里-按图卡从左到右-找出缺少的一步",
+      "id": "prompt-书要带去学校-应该先放进哪里-先看场景-再按图卡从左到右-找出缺少的一步",
       "kind": "prompt",
-      "text": "书要带去学校，应该先放进哪里？按图卡从左到右，找出缺少的一步。",
+      "text": "书要带去学校，应该先放进哪里？先看场景，再按图卡从左到右，找出缺少的一步。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E4%B9%A6%E8%A6%81%E5%B8%A6%E5%8E%BB%E5%AD%A6%E6%A0%A1-%E5%BA%94%E8%AF%A5%E5%85%88%E6%94%BE%E8%BF%9B%E5%93%AA%E9%87%8C-%E6%8C%89%E5%9B%BE%E5%8D%A1%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E4%B9%A6%E8%A6%81%E5%B8%A6%E5%8E%BB%E5%AD%A6%E6%A0%A1-%E5%BA%94%E8%AF%A5%E5%85%88%E6%94%BE%E8%BF%9B%E5%93%AA%E9%87%8C-%E5%85%88%E7%9C%8B%E5%9C%BA%E6%99%AF-%E5%86%8D%E6%8C%89%E5%9B%BE%E5%8D%A1%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
     },
     {
       "id": "success-按顺序是书本-书包-去学校-所以缺少的是书包-书本要先放进书包-才方便带去学校",
@@ -4995,6 +5091,14 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E4%B9%A6%E6%9C%AC.mp3"
     },
     {
+      "id": "object-书包",
+      "kind": "object",
+      "text": "书包",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E4%B9%A6%E5%8C%85.mp3"
+    },
+    {
       "id": "object-去学校",
       "kind": "object",
       "text": "去学校",
@@ -5003,12 +5107,12 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%8E%BB%E5%AD%A6%E6%A0%A1.mp3"
     },
     {
-      "id": "prompt-下雨要出门-先准备什么-按图卡从左到右-找出缺少的一步",
+      "id": "prompt-下雨要出门-先准备什么-先看场景-再按图卡从左到右-找出缺少的一步",
       "kind": "prompt",
-      "text": "下雨要出门，先准备什么？按图卡从左到右，找出缺少的一步。",
+      "text": "下雨要出门，先准备什么？先看场景，再按图卡从左到右，找出缺少的一步。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E4%B8%8B%E9%9B%A8%E8%A6%81%E5%87%BA%E9%97%A8-%E5%85%88%E5%87%86%E5%A4%87%E4%BB%80%E4%B9%88-%E6%8C%89%E5%9B%BE%E5%8D%A1%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E4%B8%8B%E9%9B%A8%E8%A6%81%E5%87%BA%E9%97%A8-%E5%85%88%E5%87%86%E5%A4%87%E4%BB%80%E4%B9%88-%E5%85%88%E7%9C%8B%E5%9C%BA%E6%99%AF-%E5%86%8D%E6%8C%89%E5%9B%BE%E5%8D%A1%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
     },
     {
       "id": "success-按顺序是下雨-雨衣-出门-所以缺少的是雨衣-下雨出门先准备雨衣-身体才不容易淋湿",
@@ -5067,6 +5171,14 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E4%B8%8B%E9%9B%A8.mp3"
     },
     {
+      "id": "object-雨衣",
+      "kind": "object",
+      "text": "雨衣",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E9%9B%A8%E8%A1%A3.mp3"
+    },
+    {
       "id": "object-出门",
       "kind": "object",
       "text": "出门",
@@ -5075,12 +5187,12 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%87%BA%E9%97%A8.mp3"
     },
     {
-      "id": "prompt-手洗好了-要把散放的饼干盛好再吃-先拿什么-按图卡从左到右-找出缺少的一步",
+      "id": "prompt-手洗好了-要把散放的饼干盛好再吃-先拿什么-先看场景-再按图卡从左到右-找出缺少的一步",
       "kind": "prompt",
-      "text": "手洗好了，要把散放的饼干盛好再吃，先拿什么？按图卡从左到右，找出缺少的一步。",
+      "text": "手洗好了，要把散放的饼干盛好再吃，先拿什么？先看场景，再按图卡从左到右，找出缺少的一步。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%89%8B%E6%B4%97%E5%A5%BD%E4%BA%86-%E8%A6%81%E6%8A%8A%E6%95%A3%E6%94%BE%E7%9A%84%E9%A5%BC%E5%B9%B2%E7%9B%9B%E5%A5%BD%E5%86%8D%E5%90%83-%E5%85%88%E6%8B%BF%E4%BB%80%E4%B9%88-%E6%8C%89%E5%9B%BE%E5%8D%A1%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%89%8B%E6%B4%97%E5%A5%BD%E4%BA%86-%E8%A6%81%E6%8A%8A%E6%95%A3%E6%94%BE%E7%9A%84%E9%A5%BC%E5%B9%B2%E7%9B%9B%E5%A5%BD%E5%86%8D%E5%90%83-%E5%85%88%E6%8B%BF%E4%BB%80%E4%B9%88-%E5%85%88%E7%9C%8B%E5%9C%BA%E6%99%AF-%E5%86%8D%E6%8C%89%E5%9B%BE%E5%8D%A1%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
     },
     {
       "id": "success-按顺序是饼干-拿盘子-吃-所以缺少的是拿盘子-先拿盘子-再拿饼干吃更干净",
@@ -5131,12 +5243,12 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E6%8B%BF%E7%9B%98%E5%AD%90.mp3"
     },
     {
-      "id": "prompt-手上有泥-想拿点心-第一步是什么-按图卡从左到右-找出缺少的一步",
+      "id": "prompt-手上有泥-想拿点心-第一步是什么-先看场景-再按图卡从左到右-找出缺少的一步",
       "kind": "prompt",
-      "text": "手上有泥，想拿点心，第一步是什么？按图卡从左到右，找出缺少的一步。",
+      "text": "手上有泥，想拿点心，第一步是什么？先看场景，再按图卡从左到右，找出缺少的一步。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%89%8B%E4%B8%8A%E6%9C%89%E6%B3%A5-%E6%83%B3%E6%8B%BF%E7%82%B9%E5%BF%83-%E7%AC%AC%E4%B8%80%E6%AD%A5%E6%98%AF%E4%BB%80%E4%B9%88-%E6%8C%89%E5%9B%BE%E5%8D%A1%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%89%8B%E4%B8%8A%E6%9C%89%E6%B3%A5-%E6%83%B3%E6%8B%BF%E7%82%B9%E5%BF%83-%E7%AC%AC%E4%B8%80%E6%AD%A5%E6%98%AF%E4%BB%80%E4%B9%88-%E5%85%88%E7%9C%8B%E5%9C%BA%E6%99%AF-%E5%86%8D%E6%8C%89%E5%9B%BE%E5%8D%A1%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
     },
     {
       "id": "success-按顺序是手脏-先洗手-拿饼干-所以缺少的是先洗手-手脏了先洗手-再拿点心",
@@ -5203,12 +5315,12 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E6%9D%AF%E5%AD%90.mp3"
     },
     {
-      "id": "prompt-和大人一起过马路-行人灯是红色的-即使车停着-也要先做什么-按图卡从左到右-找出缺少的一步",
+      "id": "prompt-和大人一起过马路-行人灯是红色的-即使车停着-也要先做什么-先看场景-再按图卡从左到右-找出缺少的一步",
       "kind": "prompt",
-      "text": "和大人一起过马路，行人灯是红色的。即使车停着，也要先做什么？按图卡从左到右，找出缺少的一步。",
+      "text": "和大人一起过马路，行人灯是红色的。即使车停着，也要先做什么？先看场景，再按图卡从左到右，找出缺少的一步。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%92%8C%E5%A4%A7%E4%BA%BA%E4%B8%80%E8%B5%B7%E8%BF%87%E9%A9%AC%E8%B7%AF-%E8%A1%8C%E4%BA%BA%E7%81%AF%E6%98%AF%E7%BA%A2%E8%89%B2%E7%9A%84-%E5%8D%B3%E4%BD%BF%E8%BD%A6%E5%81%9C%E7%9D%80-%E4%B9%9F%E8%A6%81%E5%85%88%E5%81%9A%E4%BB%80%E4%B9%88-%E6%8C%89%E5%9B%BE%E5%8D%A1%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%92%8C%E5%A4%A7%E4%BA%BA%E4%B8%80%E8%B5%B7%E8%BF%87%E9%A9%AC%E8%B7%AF-%E8%A1%8C%E4%BA%BA%E7%81%AF%E6%98%AF%E7%BA%A2%E8%89%B2%E7%9A%84-%E5%8D%B3%E4%BD%BF%E8%BD%A6%E5%81%9C%E7%9D%80-%E4%B9%9F%E8%A6%81%E5%85%88%E5%81%9A%E4%BB%80%E4%B9%88-%E5%85%88%E7%9C%8B%E5%9C%BA%E6%99%AF-%E5%86%8D%E6%8C%89%E5%9B%BE%E5%8D%A1%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
     },
     {
       "id": "success-按顺序是路口-红灯-停-所以缺少的是停-行人红灯亮着要停下等-等绿灯亮了-大人确认安全后再一起走",
@@ -5259,12 +5371,28 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%8F%AA%E7%9C%8B%E8%BD%A6%E5%81%9C%E7%9D%80.mp3"
     },
     {
-      "id": "prompt-和大人到有行人信号灯的路口-准备过马路-第一步先看什么-按图卡从左到右-找出缺少的一步",
-      "kind": "prompt",
-      "text": "和大人到有行人信号灯的路口，准备过马路。第一步先看什么？按图卡从左到右，找出缺少的一步。",
+      "id": "object-红灯",
+      "kind": "object",
+      "text": "红灯",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%92%8C%E5%A4%A7%E4%BA%BA%E5%88%B0%E6%9C%89%E8%A1%8C%E4%BA%BA%E4%BF%A1%E5%8F%B7%E7%81%AF%E7%9A%84%E8%B7%AF%E5%8F%A3-%E5%87%86%E5%A4%87%E8%BF%87%E9%A9%AC%E8%B7%AF-%E7%AC%AC%E4%B8%80%E6%AD%A5%E5%85%88%E7%9C%8B%E4%BB%80%E4%B9%88-%E6%8C%89%E5%9B%BE%E5%8D%A1%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E7%BA%A2%E7%81%AF.mp3"
+    },
+    {
+      "id": "object-停",
+      "kind": "object",
+      "text": "停",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%81%9C.mp3"
+    },
+    {
+      "id": "prompt-和大人到有行人信号灯的路口-准备过马路-第一步先看什么-先看场景-再按图卡从左到右-找出缺少的一步",
+      "kind": "prompt",
+      "text": "和大人到有行人信号灯的路口，准备过马路。第一步先看什么？先看场景，再按图卡从左到右，找出缺少的一步。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%92%8C%E5%A4%A7%E4%BA%BA%E5%88%B0%E6%9C%89%E8%A1%8C%E4%BA%BA%E4%BF%A1%E5%8F%B7%E7%81%AF%E7%9A%84%E8%B7%AF%E5%8F%A3-%E5%87%86%E5%A4%87%E8%BF%87%E9%A9%AC%E8%B7%AF-%E7%AC%AC%E4%B8%80%E6%AD%A5%E5%85%88%E7%9C%8B%E4%BB%80%E4%B9%88-%E5%85%88%E7%9C%8B%E5%9C%BA%E6%99%AF-%E5%86%8D%E6%8C%89%E5%9B%BE%E5%8D%A1%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
     },
     {
       "id": "success-按顺序是路口-先看灯-走过去-所以缺少的是先看灯-先看行人信号灯-绿灯亮了-还要由大人确认路面安全-再一起走",
@@ -5291,12 +5419,12 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E6%8C%87%E7%9D%80%E5%9B%BE%E5%8D%A1%E5%A4%8D%E8%BF%B0%E8%B7%AF%E5%8F%A3-%E5%85%88%E7%9C%8B%E7%81%AF-%E8%B5%B0%E8%BF%87%E5%8E%BB-%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E7%BC%BA%E5%B0%91%E5%85%88%E7%9C%8B%E7%81%AF.mp3"
     },
     {
-      "id": "prompt-积木散在地上-想拿到桌上重新搭塔-先做什么-按图卡从左到右-找出缺少的一步",
+      "id": "prompt-积木散在地上-想拿到桌上重新搭塔-先做什么-先看场景-再按图卡从左到右-找出缺少的一步",
       "kind": "prompt",
-      "text": "积木散在地上，想拿到桌上重新搭塔，先做什么？按图卡从左到右，找出缺少的一步。",
+      "text": "积木散在地上，想拿到桌上重新搭塔，先做什么？先看场景，再按图卡从左到右，找出缺少的一步。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%A7%AF%E6%9C%A8%E6%95%A3%E5%9C%A8%E5%9C%B0%E4%B8%8A-%E6%83%B3%E6%8B%BF%E5%88%B0%E6%A1%8C%E4%B8%8A%E9%87%8D%E6%96%B0%E6%90%AD%E5%A1%94-%E5%85%88%E5%81%9A%E4%BB%80%E4%B9%88-%E6%8C%89%E5%9B%BE%E5%8D%A1%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%A7%AF%E6%9C%A8%E6%95%A3%E5%9C%A8%E5%9C%B0%E4%B8%8A-%E6%83%B3%E6%8B%BF%E5%88%B0%E6%A1%8C%E4%B8%8A%E9%87%8D%E6%96%B0%E6%90%AD%E5%A1%94-%E5%85%88%E5%81%9A%E4%BB%80%E4%B9%88-%E5%85%88%E7%9C%8B%E5%9C%BA%E6%99%AF-%E5%86%8D%E6%8C%89%E5%9B%BE%E5%8D%A1%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
     },
     {
       "id": "success-按顺序是积木倒了-先捡积木-高塔-所以缺少的是先捡积木-先把积木捡起来-才好重新搭塔",
@@ -5315,12 +5443,12 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E7%9B%B4%E6%8E%A5%E6%90%AD%E9%AB%98%E5%A1%94.mp3"
     },
     {
-      "id": "prompt-桌面模型里-玩具要沿桥面走到对岸小旗处-先做什么-按图卡从左到右-找出缺少的一步",
+      "id": "prompt-桌面模型里-玩具要沿桥面走到对岸小旗处-先做什么-先看场景-再按图卡从左到右-找出缺少的一步",
       "kind": "prompt",
-      "text": "桌面模型里，玩具要沿桥面走到对岸小旗处。先做什么？按图卡从左到右，找出缺少的一步。",
+      "text": "桌面模型里，玩具要沿桥面走到对岸小旗处。先做什么？先看场景，再按图卡从左到右，找出缺少的一步。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%A1%8C%E9%9D%A2%E6%A8%A1%E5%9E%8B%E9%87%8C-%E7%8E%A9%E5%85%B7%E8%A6%81%E6%B2%BF%E6%A1%A5%E9%9D%A2%E8%B5%B0%E5%88%B0%E5%AF%B9%E5%B2%B8%E5%B0%8F%E6%97%97%E5%A4%84-%E5%85%88%E5%81%9A%E4%BB%80%E4%B9%88-%E6%8C%89%E5%9B%BE%E5%8D%A1%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%A1%8C%E9%9D%A2%E6%A8%A1%E5%9E%8B%E9%87%8C-%E7%8E%A9%E5%85%B7%E8%A6%81%E6%B2%BF%E6%A1%A5%E9%9D%A2%E8%B5%B0%E5%88%B0%E5%AF%B9%E5%B2%B8%E5%B0%8F%E6%97%97%E5%A4%84-%E5%85%88%E5%81%9A%E4%BB%80%E4%B9%88-%E5%85%88%E7%9C%8B%E5%9C%BA%E6%99%AF-%E5%86%8D%E6%8C%89%E5%9B%BE%E5%8D%A1%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
     },
     {
       "id": "success-按顺序是小河-先搭桥-小旗-所以缺少的是先搭桥-小河挡住了路-要先搭桥",
@@ -5363,6 +5491,14 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E7%AB%99%E5%9C%A8%E5%B2%B8%E8%BE%B9%E7%AD%89.mp3"
     },
     {
+      "id": "object-小旗",
+      "kind": "object",
+      "text": "小旗",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%B0%8F%E6%97%97.mp3"
+    },
+    {
       "id": "object-终点",
       "kind": "object",
       "text": "终点",
@@ -5371,12 +5507,12 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E7%BB%88%E7%82%B9.mp3"
     },
     {
-      "id": "prompt-花园里的小芽旁边-土已经干了-下一步做什么更合适-按图卡从左到右-找出缺少的一步",
+      "id": "prompt-花园里的小芽旁边-土已经干了-下一步做什么更合适-先看场景-再按图卡从左到右-找出缺少的一步",
       "kind": "prompt",
-      "text": "花园里的小芽旁边，土已经干了。下一步做什么更合适？按图卡从左到右，找出缺少的一步。",
+      "text": "花园里的小芽旁边，土已经干了。下一步做什么更合适？先看场景，再按图卡从左到右，找出缺少的一步。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%8A%B1%E5%9B%AD%E9%87%8C%E7%9A%84%E5%B0%8F%E8%8A%BD%E6%97%81%E8%BE%B9-%E5%9C%9F%E5%B7%B2%E7%BB%8F%E5%B9%B2%E4%BA%86-%E4%B8%8B%E4%B8%80%E6%AD%A5%E5%81%9A%E4%BB%80%E4%B9%88%E6%9B%B4%E5%90%88%E9%80%82-%E6%8C%89%E5%9B%BE%E5%8D%A1%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%8A%B1%E5%9B%AD%E9%87%8C%E7%9A%84%E5%B0%8F%E8%8A%BD%E6%97%81%E8%BE%B9-%E5%9C%9F%E5%B7%B2%E7%BB%8F%E5%B9%B2%E4%BA%86-%E4%B8%8B%E4%B8%80%E6%AD%A5%E5%81%9A%E4%BB%80%E4%B9%88%E6%9B%B4%E5%90%88%E9%80%82-%E5%85%88%E7%9C%8B%E5%9C%BA%E6%99%AF-%E5%86%8D%E6%8C%89%E5%9B%BE%E5%8D%A1%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
     },
     {
       "id": "success-按顺序是小芽-先浇水-花-所以缺少的是先浇水-小芽需要照顾-浇水以后更可能长成花",
@@ -5419,12 +5555,20 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%85%88%E6%91%98%E8%8A%B1.mp3"
     },
     {
-      "id": "prompt-积木和小车已经分好类-两个空盒子也打开了-下一步做什么-按图卡从左到右-找出缺少的一步",
-      "kind": "prompt",
-      "text": "积木和小车已经分好类，两个空盒子也打开了。下一步做什么？按图卡从左到右，找出缺少的一步。",
+      "id": "object-先浇水",
+      "kind": "object",
+      "text": "先浇水",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%A7%AF%E6%9C%A8%E5%92%8C%E5%B0%8F%E8%BD%A6%E5%B7%B2%E7%BB%8F%E5%88%86%E5%A5%BD%E7%B1%BB-%E4%B8%A4%E4%B8%AA%E7%A9%BA%E7%9B%92%E5%AD%90%E4%B9%9F%E6%89%93%E5%BC%80%E4%BA%86-%E4%B8%8B%E4%B8%80%E6%AD%A5%E5%81%9A%E4%BB%80%E4%B9%88-%E6%8C%89%E5%9B%BE%E5%8D%A1%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%85%88%E6%B5%87%E6%B0%B4.mp3"
+    },
+    {
+      "id": "prompt-积木和小车已经分好类-两个空盒子也打开了-下一步做什么-先看场景-再按图卡从左到右-找出缺少的一步",
+      "kind": "prompt",
+      "text": "积木和小车已经分好类，两个空盒子也打开了。下一步做什么？先看场景，再按图卡从左到右，找出缺少的一步。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%A7%AF%E6%9C%A8%E5%92%8C%E5%B0%8F%E8%BD%A6%E5%B7%B2%E7%BB%8F%E5%88%86%E5%A5%BD%E7%B1%BB-%E4%B8%A4%E4%B8%AA%E7%A9%BA%E7%9B%92%E5%AD%90%E4%B9%9F%E6%89%93%E5%BC%80%E4%BA%86-%E4%B8%8B%E4%B8%80%E6%AD%A5%E5%81%9A%E4%BB%80%E4%B9%88-%E5%85%88%E7%9C%8B%E5%9C%BA%E6%99%AF-%E5%86%8D%E6%8C%89%E5%9B%BE%E5%8D%A1%E4%BB%8E%E5%B7%A6%E5%88%B0%E5%8F%B3-%E6%89%BE%E5%87%BA%E7%BC%BA%E5%B0%91%E7%9A%84%E4%B8%80%E6%AD%A5.mp3"
     },
     {
       "id": "success-按顺序是分好的两类玩具-分开放进盒子-分类装好-所以缺少的是分开放进盒子-已经分类了-下一步把积木和小车放进各自的盒子-完成收纳",
@@ -6099,14 +6243,6 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%86%8D%E6%B4%97%E6%89%8B.mp3"
     },
     {
-      "id": "object-先洗手",
-      "kind": "object",
-      "text": "先洗手",
-      "locale": "zh-CN",
-      "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%85%88%E6%B4%97%E6%89%8B.mp3"
-    },
-    {
       "id": "prompt-积木和小车要分开放进两个盒子-下次好找-它们还混在一起-先做什么-收纳的目标是每一类放一个盒子",
       "kind": "prompt",
       "text": "积木和小车要分开放进两个盒子，下次好找。它们还混在一起，先做什么？收纳的目标是每一类放一个盒子。",
@@ -6529,14 +6665,6 @@
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E6%94%B9%E6%88%90%E8%B5%B0%E8%BF%87%E5%8E%BB.mp3"
-    },
-    {
-      "id": "object-停",
-      "kind": "object",
-      "text": "停",
-      "locale": "zh-CN",
-      "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%81%9C.mp3"
     },
     {
       "id": "prompt-模型里的木板另一头碰不到对岸-为什么没搭成功-先找失败原因-再想怎么改",
@@ -7547,14 +7675,6 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E7%8E%A9%E5%85%B7%E8%BD%A6.mp3"
     },
     {
-      "id": "object-雨衣",
-      "kind": "object",
-      "text": "雨衣",
-      "locale": "zh-CN",
-      "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E9%9B%A8%E8%A1%A3.mp3"
-    },
-    {
       "id": "prompt-老师让大家把铅笔收好-先装能放铅笔的东西-选哪一个-先找能把铅笔收在里面的物品",
       "kind": "prompt",
       "text": "老师让大家把铅笔收好，先装能放铅笔的东西，选哪一个？先找能把铅笔收在里面的物品。",
@@ -8315,14 +8435,6 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E8%BF%99%E4%B8%A4%E5%AF%B9%E6%98%AF%E4%B8%8D%E6%98%AF%E9%83%BD%E5%9C%A8%E8%AF%B4-%E8%A3%85%E8%BF%9B%E5%8E%BB.mp3"
     },
     {
-      "id": "object-书包",
-      "kind": "object",
-      "text": "书包",
-      "locale": "zh-CN",
-      "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E4%B9%A6%E5%8C%85.mp3"
-    },
-    {
       "id": "prompt-水壶配水-像文具盒配什么-先找同一种关系-里面常装什么",
       "kind": "prompt",
       "text": "水壶配水，像文具盒配什么？先找同一种关系：里面常装什么。",
@@ -8601,14 +8713,6 @@
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E9%A1%BA%E7%9D%80%E6%89%BE%E5%92%8C%E5%8F%8D%E7%9D%80%E6%89%BE-%E5%85%B3%E7%B3%BB%E6%9C%89%E6%B2%A1%E6%9C%89%E5%8F%98.mp3"
-    },
-    {
-      "id": "object-铅笔",
-      "kind": "object",
-      "text": "铅笔",
-      "locale": "zh-CN",
-      "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E9%93%85%E7%AC%94.mp3"
     },
     {
       "id": "prompt-要配成-动物和它飞行的地方-小鸟应该配谁-这次找飞行的地方-不是找另一个会飞的东西",

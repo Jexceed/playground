@@ -3617,3 +3617,13 @@ button:focus-visible {
 .answer-grid-story .order-answer-image { width: 64px; height: 64px; flex-shrink: 0; }
 .answer-grid-story .order-answer-image-solved { width: 42px; height: 42px; }
 @media (max-width: 700px) { .answer-grid-story .answer-choice { flex-direction: column; font-size: 14px; } .answer-grid-story .order-answer-image { width: 60px; height: 60px; } }
+/* Long five-step captions keep readable pictures and never spill into neighbors. */
+.order-story-step-label { display: grid; grid-template-columns: 17px minmax(0, 1fr) 14px; gap: 4px; white-space: normal; min-height: 36px; }
+.order-story-step-text { min-width: 0; overflow-wrap: anywhere; line-height: 1.35; text-align: center; }
+.order-story-step-label b { flex-shrink: 0; }
+.order-story-solved .order-story-step-label { grid-template-columns: 17px minmax(0, 1fr); }
+.order-story-solved .order-story-steps { max-width: 590px; }
+@media (max-width: 700px) { .order-story-step-label, .order-story-solved .order-story-step-label { grid-template-columns: minmax(0, 1fr); } }
+.order-story-steps[data-step-count="5"] .order-story-step-label { grid-template-columns: 17px minmax(0, 1fr); }
+.order-story-steps[data-step-count="5"] .order-story-step-label svg { display: none; }
+@media (max-width: 700px) { .order-story-steps[data-step-count="5"] .order-story-step-label { grid-template-columns: minmax(0, 1fr); } }

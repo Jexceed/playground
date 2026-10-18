@@ -1,0 +1,35 @@
+{
+  "model": "gpt-6.1-sol",
+  "generator": "built-in image_gen",
+  "useCase": "illustration-story",
+  "generatedFile": "/Users/chiang/.codex/generated_images/01a14fa7-7829-7452-8423-d2592d12ab53/exec-d4b12d7d-e824-42a4-9b36-af72ef2b2307.png",
+  "reference": "public/images/scenes/source/drinking-thirsty.png",
+  "prompt": "Use case: illustration-story. ONE wide 16:9 children's initial situation illustration in reference warm watercolor and colored-pencil style on cream paper. Same cute preschool boy with short dark brown hair, orange shirt and blue trousers, standing at a low wooden home table before going to school. BOTH hands EMPTY at his sides. One CLOSED BLUE BOOK lies flat on table, clearly entirely OUTSIDE a fully OPEN EMPTY teal-blue SCHOOL BACKPACK standing beside it. Backpack mouth open toward viewer so EMPTY interior is obvious. A separate green lunchbox and simple yellow water bottle stand further along table, clear distinct objects. Book not touching backpack opening, no packing action, no book inside bag, not holding tools. Simple warm sunny entry room, coat hooks and door in background. Calm visual evidence of still-unpacked book, clear object separation, no unnecessary decorations. No text, words, labels, logos, arrows, panels, watermark. Wide landscape 16:9 all key objects comfortably inset.",
+  "sourceDimensions": {
+    "width": 1672,
+    "height": 941
+  },
+  "outputs": [
+    {
+      "key": "book",
+      "path": "public/images/scenes/order-045-packing-book.png",
+      "resize": {
+        "width": 1200,
+        "height": 675,
+        "fit": "fill"
+      }
+    }
+  ],
+  "visualReview": {
+    "status": "reviewed",
+    "reviewedBy": "gpt-6.1-sol",
+    "date": "2026-10-18",
+    "checks": [
+      "initial situation does not complete intended next action",
+      "each card matches its manifest meaning",
+      "clean and muddy hands distinguished for snack",
+      "cropped action cards have no neighbouring-cell fragments"
+    ],
+    "limitations": []
+  }
+}

@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-18T10:15:05.644Z",
+  "generatedAt": "2026-10-18T15:40:49.719Z",
   "recommendedVoice": "warm adult female Mandarin, smiling, preschool teacher, 0.85 speed, crisp consonants",
-  "lineCount": 4055,
+  "lineCount": 4068,
   "lines": [
     {
       "id": "game-title-数一数",
@@ -342,6 +342,7 @@
         "logic-pattern-train/logic-pattern-train-17",
         "logic-pattern-train/logic-pattern-train-18",
         "logic-pattern-train/logic-pattern-train-18",
+        "logic-order-plan/logic-order-plan-16",
         "logic-order-plan/logic-order-plan-16",
         "logic-relation-pairs/two-containers",
         "logic-same-kind-detective/logic-same-kind-detective-6",
@@ -4335,6 +4336,7 @@
         "math-fair-share/math-fair-share-13",
         "math-fair-share/math-fair-share-13",
         "math-fair-share/math-fair-share-13",
+        "logic-order-plan/logic-order-plan-9",
         "logic-order-plan/logic-order-plan-9"
       ]
     },
@@ -7449,7 +7451,20 @@
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
+        "logic-order-plan/logic-order-plan-1",
         "logic-order-plan/logic-order-plan-1"
+      ]
+    },
+    {
+      "id": "object-先拿杯子",
+      "kind": "object",
+      "text": "先拿杯子",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-1",
+        "logic-order-plan/logic-order-plan-9",
+        "logic-order-plan/logic-order-plan-9"
       ]
     },
     {
@@ -7459,6 +7474,7 @@
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
+        "logic-order-plan/logic-order-plan-1",
         "logic-order-plan/logic-order-plan-1"
       ]
     },
@@ -7470,16 +7486,19 @@
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-1",
+        "logic-order-plan/logic-order-plan-1",
         "logic-order-plan/logic-order-plan-9",
+        "logic-order-plan/logic-order-plan-9",
+        "logic-order-plan/logic-order-plan-18",
         "logic-order-plan/logic-order-plan-18",
         "explore-everyday-classification/explore-everyday-classification-1",
         "explore-everyday-classification/explore-everyday-classification-4"
       ]
     },
     {
-      "id": "prompt-门锁着-钥匙已经拿到了-接下来用什么开门-按图卡从左到右-找出缺少的一步",
+      "id": "prompt-门锁着-钥匙已经拿到了-接下来用什么开门-先看场景-再按图卡从左到右-找出缺少的一步",
       "kind": "prompt",
-      "text": "门锁着，钥匙已经拿到了。接下来用什么开门？按图卡从左到右，找出缺少的一步。",
+      "text": "门锁着，钥匙已经拿到了。接下来用什么开门？先看场景，再按图卡从左到右，找出缺少的一步。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -7553,6 +7572,17 @@
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
+        "logic-order-plan/logic-order-plan-2",
+        "logic-order-plan/logic-order-plan-2"
+      ]
+    },
+    {
+      "id": "object-用钥匙开锁",
+      "kind": "object",
+      "text": "用钥匙开锁",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
         "logic-order-plan/logic-order-plan-2"
       ]
     },
@@ -7563,6 +7593,7 @@
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
+        "logic-order-plan/logic-order-plan-2",
         "logic-order-plan/logic-order-plan-2"
       ]
     },
@@ -7573,13 +7604,14 @@
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
+        "logic-order-plan/logic-order-plan-2",
         "logic-order-plan/logic-order-plan-2"
       ]
     },
     {
-      "id": "prompt-小鱼在岸上-需要回到水里-先做什么-按图卡从左到右-找出缺少的一步",
+      "id": "prompt-小鱼在岸上-需要回到水里-先做什么-先看场景-再按图卡从左到右-找出缺少的一步",
       "kind": "prompt",
-      "text": "小鱼在岸上，需要回到水里，先做什么？按图卡从左到右，找出缺少的一步。",
+      "text": "小鱼在岸上，需要回到水里，先做什么？先看场景，再按图卡从左到右，找出缺少的一步。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -7653,6 +7685,17 @@
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
+        "logic-order-plan/logic-order-plan-3",
+        "logic-order-plan/logic-order-plan-3"
+      ]
+    },
+    {
+      "id": "object-轻轻放回水里",
+      "kind": "object",
+      "text": "轻轻放回水里",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
         "logic-order-plan/logic-order-plan-3"
       ]
     },
@@ -7664,7 +7707,10 @@
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-3",
+        "logic-order-plan/logic-order-plan-3",
         "logic-order-plan/logic-order-plan-11",
+        "logic-order-plan/logic-order-plan-11",
+        "logic-order-plan/logic-order-plan-22",
         "logic-order-plan/logic-order-plan-22",
         "logic-condition-detective/logic-condition-detective-7",
         "logic-fix-plan/logic-fix-plan-7",
@@ -7676,9 +7722,9 @@
       ]
     },
     {
-      "id": "prompt-花盆里只有土-还没有种子-想种花-先做什么-按图卡从左到右-找出缺少的一步",
+      "id": "prompt-花盆里只有土-还没有种子-想种花-先做什么-先看场景-再按图卡从左到右-找出缺少的一步",
       "kind": "prompt",
-      "text": "花盆里只有土，还没有种子。想种花，先做什么？按图卡从左到右，找出缺少的一步。",
+      "text": "花盆里只有土，还没有种子。想种花，先做什么？先看场景，再按图卡从左到右，找出缺少的一步。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -7753,13 +7799,24 @@
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
+        "logic-order-plan/logic-order-plan-4",
         "logic-order-plan/logic-order-plan-4"
       ]
     },
     {
-      "id": "object-发芽",
+      "id": "object-种下种子",
       "kind": "object",
-      "text": "发芽",
+      "text": "种下种子",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-4"
+      ]
+    },
+    {
+      "id": "object-小芽",
+      "kind": "object",
+      "text": "小芽",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -7775,13 +7832,26 @@
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-4",
+        "logic-order-plan/logic-order-plan-4",
+        "logic-order-plan/logic-order-plan-23",
         "logic-order-plan/logic-order-plan-23"
       ]
     },
     {
-      "id": "prompt-吃饼干前-待补位置应该是什么-按图卡从左到右-找出缺少的一步",
+      "id": "object-发芽",
+      "kind": "object",
+      "text": "发芽",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-4",
+        "logic-order-plan/logic-order-plan-23"
+      ]
+    },
+    {
+      "id": "prompt-吃饼干前-待补位置应该是什么-先看场景-再按图卡从左到右-找出缺少的一步",
       "kind": "prompt",
-      "text": "吃饼干前，待补位置应该是什么？按图卡从左到右，找出缺少的一步。",
+      "text": "吃饼干前，待补位置应该是什么？先看场景，再按图卡从左到右，找出缺少的一步。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -7864,11 +7934,30 @@
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-5",
+        "logic-order-plan/logic-order-plan-5",
         "logic-order-plan/logic-order-plan-10",
+        "logic-order-plan/logic-order-plan-10",
+        "logic-order-plan/logic-order-plan-17",
         "logic-order-plan/logic-order-plan-17",
         "logic-condition-detective/logic-condition-detective-1",
         "logic-fix-plan/logic-fix-plan-1",
         "logic-priority-choice/logic-priority-choice-1"
+      ]
+    },
+    {
+      "id": "object-先洗手",
+      "kind": "object",
+      "text": "先洗手",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-5",
+        "logic-order-plan/logic-order-plan-10",
+        "logic-order-plan/logic-order-plan-17",
+        "logic-condition-detective/logic-condition-detective-5",
+        "logic-fix-plan/logic-fix-plan-5",
+        "logic-fix-plan/logic-fix-plan-5",
+        "logic-priority-choice/logic-priority-choice-6"
       ]
     },
     {
@@ -7879,7 +7968,10 @@
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-5",
+        "logic-order-plan/logic-order-plan-5",
         "logic-order-plan/logic-order-plan-10",
+        "logic-order-plan/logic-order-plan-10",
+        "logic-order-plan/logic-order-plan-17",
         "logic-order-plan/logic-order-plan-17",
         "logic-condition-detective/logic-condition-detective-1",
         "logic-condition-detective/logic-condition-detective-5",
@@ -7896,7 +7988,10 @@
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-5",
+        "logic-order-plan/logic-order-plan-5",
         "logic-order-plan/logic-order-plan-10",
+        "logic-order-plan/logic-order-plan-10",
+        "logic-order-plan/logic-order-plan-16",
         "logic-order-plan/logic-order-plan-16",
         "logic-condition-detective/logic-condition-detective-1",
         "logic-condition-detective/logic-condition-detective-5",
@@ -7906,9 +8001,9 @@
       ]
     },
     {
-      "id": "prompt-积木倒了-要重新搭高-先做什么-按图卡从左到右-找出缺少的一步",
+      "id": "prompt-积木倒了-要重新搭高-先做什么-先看场景-再按图卡从左到右-找出缺少的一步",
       "kind": "prompt",
-      "text": "积木倒了，要重新搭高，先做什么？按图卡从左到右，找出缺少的一步。",
+      "text": "积木倒了，要重新搭高，先做什么？先看场景，再按图卡从左到右，找出缺少的一步。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -7982,13 +8077,26 @@
       ]
     },
     {
-      "id": "object-倒了",
+      "id": "object-积木倒了",
       "kind": "object",
-      "text": "🧱倒了",
+      "text": "积木倒了",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-6",
+        "logic-order-plan/logic-order-plan-12",
+        "logic-order-plan/logic-order-plan-21"
+      ]
+    },
+    {
+      "id": "object-先捡积木",
+      "kind": "object",
+      "text": "先捡积木",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-6",
+        "logic-order-plan/logic-order-plan-12",
         "logic-order-plan/logic-order-plan-12",
         "logic-order-plan/logic-order-plan-21"
       ]
@@ -8001,13 +8109,27 @@
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-6",
+        "logic-order-plan/logic-order-plan-6",
+        "logic-order-plan/logic-order-plan-21",
         "logic-order-plan/logic-order-plan-21"
       ]
     },
     {
-      "id": "prompt-积木和小车散了-想按种类分开放进两个盒子-先做什么-按图卡从左到右-找出缺少的一步",
+      "id": "object-倒了",
+      "kind": "object",
+      "text": "🧱倒了",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-6",
+        "logic-order-plan/logic-order-plan-12",
+        "logic-order-plan/logic-order-plan-21"
+      ]
+    },
+    {
+      "id": "prompt-积木和小车散了-想按种类分开放进两个盒子-先做什么-先看场景-再按图卡从左到右-找出缺少的一步",
       "kind": "prompt",
-      "text": "积木和小车散了，想按种类分开放进两个盒子，先做什么？按图卡从左到右，找出缺少的一步。",
+      "text": "积木和小车散了，想按种类分开放进两个盒子，先做什么？先看场景，再按图卡从左到右，找出缺少的一步。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -8092,11 +8214,22 @@
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-7",
+        "logic-order-plan/logic-order-plan-7",
         "logic-condition-detective/logic-condition-detective-6",
         "logic-fix-plan/logic-fix-plan-6",
         "logic-fix-plan/logic-fix-plan-12",
         "logic-priority-choice/logic-priority-choice-4",
         "logic-priority-choice/logic-priority-choice-11"
+      ]
+    },
+    {
+      "id": "object-先分开两类",
+      "kind": "object",
+      "text": "先分开两类",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-7"
       ]
     },
     {
@@ -8106,7 +8239,9 @@
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-order-plan/logic-order-plan-7"
+        "logic-order-plan/logic-order-plan-7",
+        "logic-order-plan/logic-order-plan-7",
+        "logic-order-plan/logic-order-plan-24"
       ]
     },
     {
@@ -8117,15 +8252,17 @@
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-7",
+        "logic-order-plan/logic-order-plan-7",
+        "logic-order-plan/logic-order-plan-24",
         "logic-order-plan/logic-order-plan-24",
         "logic-condition-detective/logic-condition-detective-6",
         "logic-priority-choice/logic-priority-choice-4"
       ]
     },
     {
-      "id": "prompt-过马路时-待补位置应该是什么-按图卡从左到右-找出缺少的一步",
+      "id": "prompt-过马路时-待补位置应该是什么-先看场景-再按图卡从左到右-找出缺少的一步",
       "kind": "prompt",
-      "text": "过马路时，待补位置应该是什么？按图卡从左到右，找出缺少的一步。",
+      "text": "过马路时，待补位置应该是什么？先看场景，再按图卡从左到右，找出缺少的一步。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -8203,7 +8340,10 @@
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-8",
+        "logic-order-plan/logic-order-plan-8",
         "logic-order-plan/logic-order-plan-19",
+        "logic-order-plan/logic-order-plan-19",
+        "logic-order-plan/logic-order-plan-20",
         "logic-order-plan/logic-order-plan-20",
         "logic-condition-detective/logic-condition-detective-2",
         "logic-condition-detective/logic-condition-detective-3",
@@ -8214,12 +8354,24 @@
       ]
     },
     {
+      "id": "object-先看灯",
+      "kind": "object",
+      "text": "先看灯",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-8",
+        "logic-order-plan/logic-order-plan-20"
+      ]
+    },
+    {
       "id": "object-绿灯",
       "kind": "object",
       "text": "绿灯",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
+        "logic-order-plan/logic-order-plan-8",
         "logic-order-plan/logic-order-plan-8"
       ]
     },
@@ -8231,7 +8383,10 @@
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-8",
+        "logic-order-plan/logic-order-plan-8",
         "logic-order-plan/logic-order-plan-11",
+        "logic-order-plan/logic-order-plan-11",
+        "logic-order-plan/logic-order-plan-20",
         "logic-order-plan/logic-order-plan-20",
         "logic-fix-plan/logic-fix-plan-2",
         "logic-priority-choice/logic-priority-choice-2",
@@ -8301,19 +8456,20 @@
       ]
     },
     {
-      "id": "object-先拿杯子",
+      "id": "object-先倒水",
       "kind": "object",
-      "text": "先拿杯子",
+      "text": "先倒水",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-order-plan/logic-order-plan-9"
+        "logic-order-plan/logic-order-plan-9",
+        "logic-order-plan/logic-order-plan-18"
       ]
     },
     {
-      "id": "prompt-吃点心的流程里-待补位置应该是什么-按图卡从左到右-找出缺少的一步",
+      "id": "prompt-吃点心的流程里-待补位置应该是什么-先看场景-再按图卡从左到右-找出缺少的一步",
       "kind": "prompt",
-      "text": "吃点心的流程里，待补位置应该是什么？按图卡从左到右，找出缺少的一步。",
+      "text": "吃点心的流程里，待补位置应该是什么？先看场景，再按图卡从左到右，找出缺少的一步。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -8369,13 +8525,15 @@
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-10",
+        "logic-order-plan/logic-order-plan-10",
+        "logic-order-plan/logic-order-plan-16",
         "logic-priority-choice/logic-priority-choice-1"
       ]
     },
     {
-      "id": "prompt-桌面模型里-玩具兔要沿桥面到对岸拿胡萝卜-中间还缺哪一步-按图卡从左到右-找出缺少的一步",
+      "id": "prompt-桌面模型里-玩具兔要沿桥面到对岸拿胡萝卜-中间还缺哪一步-先看场景-再按图卡从左到右-找出缺少的一步",
       "kind": "prompt",
-      "text": "桌面模型里，玩具兔要沿桥面到对岸拿胡萝卜。中间还缺哪一步？按图卡从左到右，找出缺少的一步。",
+      "text": "桌面模型里，玩具兔要沿桥面到对岸拿胡萝卜。中间还缺哪一步？先看场景，再按图卡从左到右，找出缺少的一步。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -8448,6 +8606,17 @@
       ]
     },
     {
+      "id": "object-先搭桥",
+      "kind": "object",
+      "text": "先搭桥",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-11",
+        "logic-order-plan/logic-order-plan-22"
+      ]
+    },
+    {
       "id": "object-胡萝卜",
       "kind": "object",
       "text": "胡萝卜",
@@ -8455,15 +8624,16 @@
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-11",
+        "logic-order-plan/logic-order-plan-11",
         "logic-condition-detective/logic-condition-detective-7",
         "logic-fix-plan/logic-fix-plan-7",
         "logic-priority-choice/logic-priority-choice-5"
       ]
     },
     {
-      "id": "prompt-捡起的积木要按种类分别装盒-中间缺哪一步-按图卡从左到右-找出缺少的一步",
+      "id": "prompt-捡起的积木要按种类分别装盒-中间缺哪一步-先看场景-再按图卡从左到右-找出缺少的一步",
       "kind": "prompt",
-      "text": "捡起的积木要按种类分别装盒。中间缺哪一步？按图卡从左到右，找出缺少的一步。",
+      "text": "捡起的积木要按种类分别装盒。中间缺哪一步？先看场景，再按图卡从左到右，找出缺少的一步。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -8511,9 +8681,9 @@
       ]
     },
     {
-      "id": "object-先捡积木",
+      "id": "object-先分类",
       "kind": "object",
-      "text": "先捡积木",
+      "text": "先分类",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -8527,6 +8697,7 @@
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
+        "logic-order-plan/logic-order-plan-12",
         "logic-order-plan/logic-order-plan-12"
       ]
     },
@@ -8537,13 +8708,14 @@
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
+        "logic-order-plan/logic-order-plan-12",
         "logic-order-plan/logic-order-plan-12"
       ]
     },
     {
-      "id": "prompt-上课要写字-先拿什么最合适-按图卡从左到右-找出缺少的一步",
+      "id": "prompt-上课要写字-先拿什么最合适-先看场景-再按图卡从左到右-找出缺少的一步",
       "kind": "prompt",
-      "text": "上课要写字，先拿什么最合适？按图卡从左到右，找出缺少的一步。",
+      "text": "上课要写字，先拿什么最合适？先看场景，再按图卡从左到右，找出缺少的一步。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -8653,7 +8825,46 @@
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
+        "logic-order-plan/logic-order-plan-13",
         "logic-order-plan/logic-order-plan-13"
+      ]
+    },
+    {
+      "id": "object-铅笔",
+      "kind": "object",
+      "text": "铅笔",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-13",
+        "logic-relation-pairs/reverse-pair",
+        "logic-same-kind-detective/logic-same-kind-detective-3",
+        "logic-same-kind-detective/logic-same-kind-detective-9",
+        "logic-address-map/logic-address-map-1",
+        "logic-address-map/logic-address-map-2",
+        "logic-address-map/logic-address-map-3",
+        "logic-address-map/logic-address-map-4",
+        "logic-address-map/logic-address-map-5",
+        "logic-address-map/logic-address-map-6",
+        "logic-address-map/logic-address-map-7",
+        "logic-address-map/logic-address-map-8",
+        "logic-address-map/logic-address-map-9",
+        "logic-address-map/logic-address-map-10",
+        "logic-address-map/logic-address-map-11",
+        "logic-address-map/logic-address-map-12",
+        "logic-memory-camera/logic-memory-camera-3",
+        "logic-memory-camera/logic-memory-camera-8",
+        "logic-memory-camera/logic-memory-camera-11",
+        "logic-difference-detective/logic-difference-detective-3",
+        "logic-difference-detective/logic-difference-detective-3",
+        "logic-difference-detective/logic-difference-detective-9",
+        "logic-difference-detective/logic-difference-detective-9",
+        "logic-difference-detective/logic-difference-detective-12",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-6",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-12",
+        "logic-part-whole-puzzle/logic-part-whole-puzzle-12",
+        "explore-everyday-classification/explore-everyday-classification-1",
+        "explore-everyday-classification/explore-everyday-classification-4"
       ]
     },
     {
@@ -8663,13 +8874,14 @@
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
+        "logic-order-plan/logic-order-plan-13",
         "logic-order-plan/logic-order-plan-13"
       ]
     },
     {
-      "id": "prompt-书要带去学校-应该先放进哪里-按图卡从左到右-找出缺少的一步",
+      "id": "prompt-书要带去学校-应该先放进哪里-先看场景-再按图卡从左到右-找出缺少的一步",
       "kind": "prompt",
-      "text": "书要带去学校，应该先放进哪里？按图卡从左到右，找出缺少的一步。",
+      "text": "书要带去学校，应该先放进哪里？先看场景，再按图卡从左到右，找出缺少的一步。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -8784,6 +8996,7 @@
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-14",
+        "logic-order-plan/logic-order-plan-14",
         "logic-rule-filter/school-day-book",
         "logic-rule-filter/school-day-pencil-case",
         "logic-rule-filter/outdoor-hat",
@@ -8802,19 +9015,73 @@
       ]
     },
     {
+      "id": "object-书包",
+      "kind": "object",
+      "text": "书包",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-14",
+        "logic-relation-pairs/schoolbag-book-analogy",
+        "logic-same-kind-detective/logic-same-kind-detective-3",
+        "logic-same-kind-detective/logic-same-kind-detective-9",
+        "logic-address-map/logic-address-map-1",
+        "logic-address-map/logic-address-map-2",
+        "logic-address-map/logic-address-map-3",
+        "logic-address-map/logic-address-map-4",
+        "logic-address-map/logic-address-map-5",
+        "logic-address-map/logic-address-map-6",
+        "logic-address-map/logic-address-map-7",
+        "logic-address-map/logic-address-map-8",
+        "logic-address-map/logic-address-map-9",
+        "logic-address-map/logic-address-map-10",
+        "logic-address-map/logic-address-map-11",
+        "logic-address-map/logic-address-map-12",
+        "logic-position-map/logic-position-map-3",
+        "logic-position-map/logic-position-map-4",
+        "logic-position-map/logic-position-map-5",
+        "logic-position-map/logic-position-map-6",
+        "logic-position-map/logic-position-map-7",
+        "logic-position-map/logic-position-map-8",
+        "logic-position-map/logic-position-map-10",
+        "logic-position-map/logic-position-map-11",
+        "logic-position-map/logic-position-map-12",
+        "logic-memory-camera/logic-memory-camera-3",
+        "logic-memory-camera/logic-memory-camera-8",
+        "logic-memory-camera/logic-memory-camera-9",
+        "logic-difference-detective/logic-difference-detective-1",
+        "logic-difference-detective/logic-difference-detective-1",
+        "logic-difference-detective/logic-difference-detective-3",
+        "logic-difference-detective/logic-difference-detective-3",
+        "logic-difference-detective/logic-difference-detective-9",
+        "logic-difference-detective/logic-difference-detective-9",
+        "logic-route-steps/logic-route-steps-1",
+        "logic-route-steps/logic-route-steps-2",
+        "logic-route-steps/logic-route-steps-3",
+        "logic-route-steps/logic-route-steps-4",
+        "logic-route-steps/logic-route-steps-5",
+        "logic-route-steps/logic-route-steps-6",
+        "logic-route-steps/logic-route-steps-7",
+        "logic-route-steps/logic-route-steps-8",
+        "logic-route-steps/logic-route-steps-9",
+        "logic-route-steps/logic-route-steps-10"
+      ]
+    },
+    {
       "id": "object-去学校",
       "kind": "object",
       "text": "去学校",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
+        "logic-order-plan/logic-order-plan-14",
         "logic-order-plan/logic-order-plan-14"
       ]
     },
     {
-      "id": "prompt-下雨要出门-先准备什么-按图卡从左到右-找出缺少的一步",
+      "id": "prompt-下雨要出门-先准备什么-先看场景-再按图卡从左到右-找出缺少的一步",
       "kind": "prompt",
-      "text": "下雨要出门，先准备什么？按图卡从左到右，找出缺少的一步。",
+      "text": "下雨要出门，先准备什么？先看场景，再按图卡从左到右，找出缺少的一步。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -8922,7 +9189,22 @@
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
+        "logic-order-plan/logic-order-plan-15",
         "logic-order-plan/logic-order-plan-15"
+      ]
+    },
+    {
+      "id": "object-雨衣",
+      "kind": "object",
+      "text": "雨衣",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-15",
+        "logic-rule-filter/school-day-book",
+        "logic-rule-filter/rainy-day-raincoat",
+        "logic-rule-filter/rain-and-wear",
+        "logic-rule-filter/small-hard-safe"
       ]
     },
     {
@@ -8932,13 +9214,14 @@
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
+        "logic-order-plan/logic-order-plan-15",
         "logic-order-plan/logic-order-plan-15"
       ]
     },
     {
-      "id": "prompt-手洗好了-要把散放的饼干盛好再吃-先拿什么-按图卡从左到右-找出缺少的一步",
+      "id": "prompt-手洗好了-要把散放的饼干盛好再吃-先拿什么-先看场景-再按图卡从左到右-找出缺少的一步",
       "kind": "prompt",
-      "text": "手洗好了，要把散放的饼干盛好再吃，先拿什么？按图卡从左到右，找出缺少的一步。",
+      "text": "手洗好了，要把散放的饼干盛好再吃，先拿什么？先看场景，再按图卡从左到右，找出缺少的一步。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -9009,9 +9292,9 @@
       ]
     },
     {
-      "id": "prompt-手上有泥-想拿点心-第一步是什么-按图卡从左到右-找出缺少的一步",
+      "id": "prompt-手上有泥-想拿点心-第一步是什么-先看场景-再按图卡从左到右-找出缺少的一步",
       "kind": "prompt",
-      "text": "手上有泥，想拿点心，第一步是什么？按图卡从左到右，找出缺少的一步。",
+      "text": "手上有泥，想拿点心，第一步是什么？先看场景，再按图卡从左到右，找出缺少的一步。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -9096,6 +9379,7 @@
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-order-plan/logic-order-plan-18",
+        "logic-order-plan/logic-order-plan-18",
         "logic-same-kind-detective/logic-same-kind-detective-10",
         "logic-address-map/logic-address-map-5",
         "logic-address-map/logic-address-map-6",
@@ -9113,9 +9397,9 @@
       ]
     },
     {
-      "id": "prompt-和大人一起过马路-行人灯是红色的-即使车停着-也要先做什么-按图卡从左到右-找出缺少的一步",
+      "id": "prompt-和大人一起过马路-行人灯是红色的-即使车停着-也要先做什么-先看场景-再按图卡从左到右-找出缺少的一步",
       "kind": "prompt",
-      "text": "和大人一起过马路，行人灯是红色的。即使车停着，也要先做什么？按图卡从左到右，找出缺少的一步。",
+      "text": "和大人一起过马路，行人灯是红色的。即使车停着，也要先做什么？先看场景，再按图卡从左到右，找出缺少的一步。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -9188,9 +9472,30 @@
       ]
     },
     {
-      "id": "prompt-和大人到有行人信号灯的路口-准备过马路-第一步先看什么-按图卡从左到右-找出缺少的一步",
+      "id": "object-红灯",
+      "kind": "object",
+      "text": "红灯",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-19"
+      ]
+    },
+    {
+      "id": "object-停",
+      "kind": "object",
+      "text": "停",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-19",
+        "logic-fix-plan/logic-fix-plan-3"
+      ]
+    },
+    {
+      "id": "prompt-和大人到有行人信号灯的路口-准备过马路-第一步先看什么-先看场景-再按图卡从左到右-找出缺少的一步",
       "kind": "prompt",
-      "text": "和大人到有行人信号灯的路口，准备过马路。第一步先看什么？按图卡从左到右，找出缺少的一步。",
+      "text": "和大人到有行人信号灯的路口，准备过马路。第一步先看什么？先看场景，再按图卡从左到右，找出缺少的一步。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -9228,9 +9533,9 @@
       ]
     },
     {
-      "id": "prompt-积木散在地上-想拿到桌上重新搭塔-先做什么-按图卡从左到右-找出缺少的一步",
+      "id": "prompt-积木散在地上-想拿到桌上重新搭塔-先做什么-先看场景-再按图卡从左到右-找出缺少的一步",
       "kind": "prompt",
-      "text": "积木散在地上，想拿到桌上重新搭塔，先做什么？按图卡从左到右，找出缺少的一步。",
+      "text": "积木散在地上，想拿到桌上重新搭塔，先做什么？先看场景，再按图卡从左到右，找出缺少的一步。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -9258,9 +9563,9 @@
       ]
     },
     {
-      "id": "prompt-桌面模型里-玩具要沿桥面走到对岸小旗处-先做什么-按图卡从左到右-找出缺少的一步",
+      "id": "prompt-桌面模型里-玩具要沿桥面走到对岸小旗处-先做什么-先看场景-再按图卡从左到右-找出缺少的一步",
       "kind": "prompt",
-      "text": "桌面模型里，玩具要沿桥面走到对岸小旗处。先做什么？按图卡从左到右，找出缺少的一步。",
+      "text": "桌面模型里，玩具要沿桥面走到对岸小旗处。先做什么？先看场景，再按图卡从左到右，找出缺少的一步。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -9323,6 +9628,16 @@
       ]
     },
     {
+      "id": "object-小旗",
+      "kind": "object",
+      "text": "小旗",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-22"
+      ]
+    },
+    {
       "id": "object-终点",
       "kind": "object",
       "text": "终点",
@@ -9344,9 +9659,9 @@
       ]
     },
     {
-      "id": "prompt-花园里的小芽旁边-土已经干了-下一步做什么更合适-按图卡从左到右-找出缺少的一步",
+      "id": "prompt-花园里的小芽旁边-土已经干了-下一步做什么更合适-先看场景-再按图卡从左到右-找出缺少的一步",
       "kind": "prompt",
-      "text": "花园里的小芽旁边，土已经干了。下一步做什么更合适？按图卡从左到右，找出缺少的一步。",
+      "text": "花园里的小芽旁边，土已经干了。下一步做什么更合适？先看场景，再按图卡从左到右，找出缺少的一步。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -9404,9 +9719,19 @@
       ]
     },
     {
-      "id": "prompt-积木和小车已经分好类-两个空盒子也打开了-下一步做什么-按图卡从左到右-找出缺少的一步",
+      "id": "object-先浇水",
+      "kind": "object",
+      "text": "先浇水",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-order-plan/logic-order-plan-23"
+      ]
+    },
+    {
+      "id": "prompt-积木和小车已经分好类-两个空盒子也打开了-下一步做什么-先看场景-再按图卡从左到右-找出缺少的一步",
       "kind": "prompt",
-      "text": "积木和小车已经分好类，两个空盒子也打开了。下一步做什么？按图卡从左到右，找出缺少的一步。",
+      "text": "积木和小车已经分好类，两个空盒子也打开了。下一步做什么？先看场景，再按图卡从左到右，找出缺少的一步。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -9474,6 +9799,7 @@
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
+        "logic-order-plan/logic-order-plan-24",
         "logic-order-plan/logic-order-plan-24",
         "logic-fix-plan/logic-fix-plan-12",
         "logic-priority-choice/logic-priority-choice-11"
@@ -10343,19 +10669,6 @@
       ]
     },
     {
-      "id": "object-先洗手",
-      "kind": "object",
-      "text": "先洗手",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-condition-detective/logic-condition-detective-5",
-        "logic-fix-plan/logic-fix-plan-5",
-        "logic-fix-plan/logic-fix-plan-5",
-        "logic-priority-choice/logic-priority-choice-6"
-      ]
-    },
-    {
       "id": "prompt-积木和小车要分开放进两个盒子-下次好找-它们还混在一起-先做什么-收纳的目标是每一类放一个盒子",
       "kind": "prompt",
       "text": "积木和小车要分开放进两个盒子，下次好找。它们还混在一起，先做什么？收纳的目标是每一类放一个盒子。",
@@ -10885,16 +11198,6 @@
       "id": "choice-改成走过去",
       "kind": "choice",
       "text": "改成走过去",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-fix-plan/logic-fix-plan-3"
-      ]
-    },
-    {
-      "id": "object-停",
-      "kind": "object",
-      "text": "停",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -12258,19 +12561,6 @@
       ]
     },
     {
-      "id": "object-雨衣",
-      "kind": "object",
-      "text": "雨衣",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-rule-filter/school-day-book",
-        "logic-rule-filter/rainy-day-raincoat",
-        "logic-rule-filter/rain-and-wear",
-        "logic-rule-filter/small-hard-safe"
-      ]
-    },
-    {
       "id": "prompt-老师让大家把铅笔收好-先装能放铅笔的东西-选哪一个-先找能把铅笔收在里面的物品",
       "kind": "prompt",
       "text": "老师让大家把铅笔收好，先装能放铅笔的东西，选哪一个？先找能把铅笔收在里面的物品。",
@@ -13277,58 +13567,6 @@
       ]
     },
     {
-      "id": "object-书包",
-      "kind": "object",
-      "text": "书包",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-relation-pairs/schoolbag-book-analogy",
-        "logic-same-kind-detective/logic-same-kind-detective-3",
-        "logic-same-kind-detective/logic-same-kind-detective-9",
-        "logic-address-map/logic-address-map-1",
-        "logic-address-map/logic-address-map-2",
-        "logic-address-map/logic-address-map-3",
-        "logic-address-map/logic-address-map-4",
-        "logic-address-map/logic-address-map-5",
-        "logic-address-map/logic-address-map-6",
-        "logic-address-map/logic-address-map-7",
-        "logic-address-map/logic-address-map-8",
-        "logic-address-map/logic-address-map-9",
-        "logic-address-map/logic-address-map-10",
-        "logic-address-map/logic-address-map-11",
-        "logic-address-map/logic-address-map-12",
-        "logic-position-map/logic-position-map-3",
-        "logic-position-map/logic-position-map-4",
-        "logic-position-map/logic-position-map-5",
-        "logic-position-map/logic-position-map-6",
-        "logic-position-map/logic-position-map-7",
-        "logic-position-map/logic-position-map-8",
-        "logic-position-map/logic-position-map-10",
-        "logic-position-map/logic-position-map-11",
-        "logic-position-map/logic-position-map-12",
-        "logic-memory-camera/logic-memory-camera-3",
-        "logic-memory-camera/logic-memory-camera-8",
-        "logic-memory-camera/logic-memory-camera-9",
-        "logic-difference-detective/logic-difference-detective-1",
-        "logic-difference-detective/logic-difference-detective-1",
-        "logic-difference-detective/logic-difference-detective-3",
-        "logic-difference-detective/logic-difference-detective-3",
-        "logic-difference-detective/logic-difference-detective-9",
-        "logic-difference-detective/logic-difference-detective-9",
-        "logic-route-steps/logic-route-steps-1",
-        "logic-route-steps/logic-route-steps-2",
-        "logic-route-steps/logic-route-steps-3",
-        "logic-route-steps/logic-route-steps-4",
-        "logic-route-steps/logic-route-steps-5",
-        "logic-route-steps/logic-route-steps-6",
-        "logic-route-steps/logic-route-steps-7",
-        "logic-route-steps/logic-route-steps-8",
-        "logic-route-steps/logic-route-steps-9",
-        "logic-route-steps/logic-route-steps-10"
-      ]
-    },
-    {
       "id": "prompt-水壶配水-像文具盒配什么-先找同一种关系-里面常装什么",
       "kind": "prompt",
       "text": "水壶配水，像文具盒配什么？先找同一种关系：里面常装什么。",
@@ -13681,43 +13919,6 @@
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-relation-pairs/reverse-pair"
-      ]
-    },
-    {
-      "id": "object-铅笔",
-      "kind": "object",
-      "text": "铅笔",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-relation-pairs/reverse-pair",
-        "logic-same-kind-detective/logic-same-kind-detective-3",
-        "logic-same-kind-detective/logic-same-kind-detective-9",
-        "logic-address-map/logic-address-map-1",
-        "logic-address-map/logic-address-map-2",
-        "logic-address-map/logic-address-map-3",
-        "logic-address-map/logic-address-map-4",
-        "logic-address-map/logic-address-map-5",
-        "logic-address-map/logic-address-map-6",
-        "logic-address-map/logic-address-map-7",
-        "logic-address-map/logic-address-map-8",
-        "logic-address-map/logic-address-map-9",
-        "logic-address-map/logic-address-map-10",
-        "logic-address-map/logic-address-map-11",
-        "logic-address-map/logic-address-map-12",
-        "logic-memory-camera/logic-memory-camera-3",
-        "logic-memory-camera/logic-memory-camera-8",
-        "logic-memory-camera/logic-memory-camera-11",
-        "logic-difference-detective/logic-difference-detective-3",
-        "logic-difference-detective/logic-difference-detective-3",
-        "logic-difference-detective/logic-difference-detective-9",
-        "logic-difference-detective/logic-difference-detective-9",
-        "logic-difference-detective/logic-difference-detective-12",
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-6",
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-12",
-        "logic-part-whole-puzzle/logic-part-whole-puzzle-12",
-        "explore-everyday-classification/explore-everyday-classification-1",
-        "explore-everyday-classification/explore-everyday-classification-4"
       ]
     },
     {

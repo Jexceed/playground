@@ -14,13 +14,13 @@ const ids = ['logic-order-plan-1', 'logic-order-plan-9', 'logic-order-plan-18'];
 const rounds = current.games.flatMap(game => game.rounds).filter(round => ids.includes(round.id));
 const omit = (value, keys) => Object.fromEntries(Object.entries(value).filter(([key]) => !keys.includes(key)));
 
-test('only three drinking rounds gain context; all other questions and answer contracts stay exact', () => {
+test('drinking answers stay exact through the authorized 045 story-surface completion', () => {
   assert.deepEqual(rounds.map(round => round.id), ids);
   assert.deepEqual(current.activitySets, baseline.activitySets);
   for (const [i, game] of current.games.entries()) {
     assert.deepEqual(omit(game, ['rounds']), omit(baseline.games[i], ['rounds']));
     for (const [j, round] of game.rounds.entries()) {
-      const allowed = ids.includes(round.id) ? ['instruction','sceneImage','sequenceStory'] : [];
+      const allowed = round.id.startsWith('logic-order-plan-') ? ['instruction','sceneImage','sequenceStory'] : [];
       assert.deepEqual(omit(round, allowed), omit(baseline.games[i].rounds[j], allowed), round.id);
     }
   }

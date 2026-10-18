@@ -1,0 +1,23 @@
+$ node scripts/audit-curriculum.mjs
+{
+  "math": 266,
+  "logic": 445,
+  "graphic": 234,
+  "memory": 81,
+  "language": 54,
+  "life": 30,
+  "totalGames": 115,
+  "totalRounds": 1110,
+  "legacyGames": 40,
+  "legacyRounds": 489,
+  "interactiveGames": 75,
+  "interactiveRounds": 621,
+  "mathTargetMet": true,
+  "logicTargetMet": true,
+  "graphicTargetMet": true,
+  "problemCount": 1,
+  "problems": [
+    "runtime voice directory has 24 unreferenced files: public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-上课要写字-先拿什么最合适-按图卡从左到右-找出缺少的一步.mp3, public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-下雨要出门-先准备什么-按图卡从左到右-找出缺少的一步.mp3, public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-书要带去学校-应该先放进哪里-按图卡从左到右-找出缺少的一步.mp3, public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-吃点心的流程里-待补位置应该是什么-按图卡从左到右-找出缺少的一步.mp3, public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-吃饼干前-待补位置应该是什么-按图卡从左到右-找出缺少的一步.mp3, public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-和大人一起过马路-行人灯是红色的-即使车停着-也要先做什么-按图卡从左到右-找出缺少的一步.mp3, public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-和大人到有行人信号灯的路口-准备过马路-第一步先看什么-按图卡从左到右-找出缺少的一步.mp3, public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-小朋友口渴了-想喝水-先做什么-按图卡从左到右-找出缺少的一步.mp3, public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-小朋友要喝水-拿到杯子后还缺哪一步-按图卡从左到右-找出缺少的一步.mp3, public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-小鱼在岸上-需要回到水里-先做什么-按图卡从左到右-找出缺少的一步.mp3"
+  ]
+}
+[ELIFECYCLE] Command failed with exit code 1.

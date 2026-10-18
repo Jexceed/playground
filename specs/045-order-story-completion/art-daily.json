@@ -1,0 +1,153 @@
+{
+  "model": "gpt-6.1-sol",
+  "families": {
+    "snack": {
+      "scenes": {
+        "dirty": {
+          "src": "/images/scenes/order-045-snack-dirty.png",
+          "alt": "孩子伸出有清楚泥污的双手；桌上有散放饼干、旁边空盘子；水槽在旁边但手尚未放到水下。孩子没有拿吃的。"
+        },
+        "clean": {
+          "src": "/images/scenes/order-045-snack-clean.png",
+          "alt": "孩子双手洗干净了。桌上几块饼干散放在干净纸垫上，旁边一个空盘子、空杯和文具盒。没有盛装、没有拿饼干或吃。"
+        }
+      },
+      "cards": {
+        "dirty": {
+          "src": "/images/items/order-045-snack-dirty.png",
+          "alt": "孩子展示有泥的双手，饼干未碰"
+        },
+        "wash": {
+          "src": "/images/items/order-045-snack-wash.png",
+          "alt": "双手在水龙头清水下用肥皂洗干净，明显洗手动作"
+        },
+        "take": {
+          "src": "/images/items/order-045-snack-take.png",
+          "alt": "孩子用干净手拿一块饼干"
+        },
+        "eat": {
+          "src": "/images/items/order-045-snack-eat.png",
+          "alt": "孩子用干净手拿饼干到嘴边吃"
+        },
+        "plate": {
+          "src": "/images/items/order-045-snack-plate.png",
+          "alt": "孩子拿起空盘子，饼干尚未盛放"
+        },
+        "cookies": {
+          "src": "/images/items/order-045-snack-cookies.png",
+          "alt": "散放在干净纸垫上的几块饼干，未盛到盘子"
+        },
+        "cup": {
+          "src": "/images/items/order-045-snack-cup.png",
+          "alt": "孩子拿起一个空杯，饼干仍散放"
+        },
+        "pencilCase": {
+          "src": "/images/items/order-045-snack-pencilCase.png",
+          "alt": "孩子拿起文具盒，饼干仍散放"
+        },
+        "dirtyTake": {
+          "src": "/images/items/order-045-snack-dirtyTake.png",
+          "alt": "孩子用有明显泥污的手直接拿饼干，尚未洗手"
+        },
+        "dirtyEat": {
+          "src": "/images/items/order-045-snack-dirtyEat.png",
+          "alt": "孩子用有明显泥污的手直接把饼干送到嘴边，尚未洗手"
+        },
+        "dirtyPlate": {
+          "src": "/images/items/order-045-snack-dirtyPlate.png",
+          "alt": "孩子用有明显泥污的手先拿空盘子，尚未洗手"
+        }
+      }
+    },
+    "writing": {
+      "scenes": {
+        "classroom": {
+          "src": "/images/scenes/order-045-writing-classroom.png",
+          "alt": "孩子坐在教室书桌前，面前空白练习纸，铅笔、闭合书本和尺子放桌上，双手空着，尚未写字。"
+        }
+      },
+      "cards": {
+        "classroom": {
+          "src": "/images/items/order-045-writing-classroom.png",
+          "alt": "孩子坐在教室书桌，面前空白纸还未动笔"
+        },
+        "pencil": {
+          "src": "/images/items/order-045-writing-pencil.png",
+          "alt": "孩子拿起铅笔，旁边空白纸"
+        },
+        "write": {
+          "src": "/images/items/order-045-writing-write.png",
+          "alt": "孩子用铅笔在纸上画简单短线练习写字，不需要文字"
+        },
+        "book": {
+          "src": "/images/items/order-045-writing-book.png",
+          "alt": "孩子拿起一本闭合书本"
+        },
+        "ruler": {
+          "src": "/images/items/order-045-writing-ruler.png",
+          "alt": "孩子拿起尺子"
+        }
+      }
+    },
+    "packing": {
+      "scenes": {
+        "book": {
+          "src": "/images/scenes/order-045-packing-book.png",
+          "alt": "上学前孩子站在桌边，书本在书包外的桌面上，打开的空书包在旁边，另有饭盒和水壶，尚未装书。"
+        }
+      },
+      "cards": {
+        "book": {
+          "src": "/images/items/order-045-packing-book.png",
+          "alt": "一本书放在桌上，打开的空书包在旁边"
+        },
+        "bag": {
+          "src": "/images/items/order-045-packing-bag.png",
+          "alt": "孩子把书装入打开的书包"
+        },
+        "school": {
+          "src": "/images/items/order-045-packing-school.png",
+          "alt": "孩子背着装好书的书包走向校门"
+        },
+        "lunch": {
+          "src": "/images/items/order-045-packing-lunch.png",
+          "alt": "孩子拿打开的饭盒到书旁，书尚未放进去"
+        },
+        "bottle": {
+          "src": "/images/items/order-045-packing-bottle.png",
+          "alt": "孩子拿水壶到书旁，书尚未收进书包"
+        }
+      }
+    },
+    "rain": {
+      "scenes": {
+        "rain": {
+          "src": "/images/scenes/order-045-rain-rain.png",
+          "alt": "窗外明显下雨。孩子在室内门旁准备出门，还未穿雨具；雨衣挂在旁边，帽子和足球放在凳子上，没有雨伞。"
+        }
+      },
+      "cards": {
+        "rain": {
+          "src": "/images/items/order-045-rain-rain.png",
+          "alt": "窗外下雨，孩子在屋里看见雨滴"
+        },
+        "raincoat": {
+          "src": "/images/items/order-045-rain-raincoat.png",
+          "alt": "孩子正在穿上黄色雨衣"
+        },
+        "out": {
+          "src": "/images/items/order-045-rain-out.png",
+          "alt": "孩子穿好雨衣在下雨的室外走"
+        },
+        "hat": {
+          "src": "/images/items/order-045-rain-hat.png",
+          "alt": "孩子只戴普通遮阳帽，没有穿雨衣"
+        },
+        "ball": {
+          "src": "/images/items/order-045-rain-ball.png",
+          "alt": "孩子只拿足球准备出门，没有穿雨衣"
+        }
+      }
+    }
+  }
+}

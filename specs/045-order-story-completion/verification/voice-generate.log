@@ -1,0 +1,36 @@
+$ node scripts/generate-edge-voices.mjs -- --voice zh-CN-XiaoxiaoNeural --rate -12% --pitch +2Hz --python /Users/chiang/Documents/Projects/playground/local-tts/.venv/bin/python --quiet --retries 3
+Generated 511/4068: prompt-门锁着-钥匙已经拿到了-接下来用什么开门-先看场景-再按图卡从左到右-找出缺少的一步
+Generated 530/4068: object-轻轻放回水里
+Generated 540/4068: object-种下种子
+Generated 519/4068: object-用钥匙开锁
+Generated 532/4068: prompt-花盆里只有土-还没有种子-想种花-先做什么-先看场景-再按图卡从左到右-找出缺少的一步
+Generated 541/4068: object-小芽
+Generated 562/4068: object-积木倒了
+Generated 555/4068: prompt-积木倒了-要重新搭高-先做什么-先看场景-再按图卡从左到右-找出缺少的一步
+Generated 544/4068: prompt-吃饼干前-待补位置应该是什么-先看场景-再按图卡从左到右-找出缺少的一步
+Generated 566/4068: prompt-积木和小车散了-想按种类分开放进两个盒子-先做什么-先看场景-再按图卡从左到右-找出缺少的一步
+Generated 574/4068: object-先分开两类
+Generated 577/4068: prompt-过马路时-待补位置应该是什么-先看场景-再按图卡从左到右-找出缺少的一步
+Generated 594/4068: object-先倒水
+Generated 595/4068: prompt-吃点心的流程里-待补位置应该是什么-先看场景-再按图卡从左到右-找出缺少的一步
+Generated 522/4068: prompt-小鱼在岸上-需要回到水里-先做什么-先看场景-再按图卡从左到右-找出缺少的一步
+Generated 601/4068: prompt-桌面模型里-玩具兔要沿桥面到对岸拿胡萝卜-中间还缺哪一步-先看场景-再按图卡从左到右-找出缺少的一步
+Generated 585/4068: object-先看灯
+Generated 608/4068: object-先搭桥
+Generated 615/4068: object-先分类
+Generated 618/4068: prompt-上课要写字-先拿什么最合适-先看场景-再按图卡从左到右-找出缺少的一步
+Generated 610/4068: prompt-捡起的积木要按种类分别装盒-中间缺哪一步-先看场景-再按图卡从左到右-找出缺少的一步
+Generated 628/4068: prompt-书要带去学校-应该先放进哪里-先看场景-再按图卡从左到右-找出缺少的一步
+Generated 655/4068: prompt-手上有泥-想拿点心-第一步是什么-先看场景-再按图卡从左到右-找出缺少的一步
+Generated 664/4068: prompt-和大人一起过马路-行人灯是红色的-即使车停着-也要先做什么-先看场景-再按图卡从左到右-找出缺少的一步
+Generated 638/4068: prompt-下雨要出门-先准备什么-先看场景-再按图卡从左到右-找出缺少的一步
+Generated 671/4068: object-红灯
+Generated 648/4068: prompt-手洗好了-要把散放的饼干盛好再吃-先拿什么-先看场景-再按图卡从左到右-找出缺少的一步
+Generated 673/4068: prompt-和大人到有行人信号灯的路口-准备过马路-第一步先看什么-先看场景-再按图卡从左到右-找出缺少的一步
+Generated 677/4068: prompt-积木散在地上-想拿到桌上重新搭塔-先做什么-先看场景-再按图卡从左到右-找出缺少的一步
+Generated 686/4068: object-小旗
+Generated 688/4068: prompt-花园里的小芽旁边-土已经干了-下一步做什么更合适-先看场景-再按图卡从左到右-找出缺少的一步
+Generated 680/4068: prompt-桌面模型里-玩具要沿桥面走到对岸小旗处-先做什么-先看场景-再按图卡从左到右-找出缺少的一步
+Generated 694/4068: object-先浇水
+Generated 695/4068: prompt-积木和小车已经分好类-两个空盒子也打开了-下一步做什么-先看场景-再按图卡从左到右-找出缺少的一步
+Wrote public/audio/voice/manifest.json with 4068 entries and 0 skipped lines.

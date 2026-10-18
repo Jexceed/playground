@@ -1,3 +1,4 @@
+import { orderStoryScenes, orderStoryItems } from "./orderStoryAssets";
 import { explorationImages } from "./explorationImages";
 import { explorationArtImages } from "./explorationArt";
 export type GalleryImage = {
@@ -12,6 +13,7 @@ export type GalleryImage = {
 export const imageGallery = {
   exploration: explorationImages,
   scenes: {
+    ...orderStoryScenes,
     drinkingThirsty: {
       src: "/images/scenes/drinking-thirsty.png",
       alt: "小朋友口渴了，手还空着。桌上放着一个空杯子和装有饮用水的小水壶。",
@@ -197,6 +199,7 @@ export const imageGallery = {
     },
   },
   items: {
+    ...orderStoryItems,
     drinkingThirsty: { src: "/images/items/drinking-thirsty.png", alt: "小朋友摸着喉咙，口渴了，杯子还放在桌上。" },
     drinkingTakeCup: { src: "/images/items/drinking-take-cup.png", alt: "小朋友拿起一个空杯子，杯子里还没有水。" },
     drinkingPour: { src: "/images/items/drinking-pour.png", alt: "小朋友把水壶里的饮用水倒进桌上的杯子，水流进入杯中。" },

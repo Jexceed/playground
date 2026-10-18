@@ -4,6 +4,7 @@ import { loadGameData } from "./lib/load-game-data.mjs";
 import { loadTypeScriptModule } from "./lib/load-ts-module.mjs";
 
 const { games, activitySets, activityVoiceLines } = await loadGameData();
+const { orderStorySteps } = await loadTypeScriptModule("src/data/orderStories.ts");
 const { prepareSpeechText } = await loadTypeScriptModule("src/speech-pronunciation.ts");
 
 const tokenLabels = {
@@ -151,6 +152,9 @@ for (const game of games) {
       ...(round.matrix?.cells ?? []).flat(),
       ...(round.memory?.items ?? []),
     ];
+    if (round.sequenceStory) {
+      for (const step of orderStorySteps(round, true)) add("object", step.label, context);
+    }
     for (const item of visualItems) {
       add("object", labelForObject(item), context);
     }

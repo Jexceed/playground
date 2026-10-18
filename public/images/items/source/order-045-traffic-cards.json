@@ -1,0 +1,159 @@
+{
+  "model": "gpt-6.1-sol",
+  "tool": "built-in image_gen",
+  "source": "/Users/chiang/.codex/generated_images/01a14fa7-dab4-7bc1-ae31-12017950ca84/exec-a95cb31c-9130-4b99-a107-165d9eb3127a.png",
+  "prompt": "Use case: illustration-story. Children’s educational story illustration matching the reference: warm light watercolor and colored pencil on fine cream paper, soft hand-drawn contours, sunlit muted pastel palette, rounded natural proportions. Same cute East Asian child, short dark brown hair, orange-red short sleeve shirt, blue trousers. Concrete unambiguous actions for preschoolers. No text, letters, captions, numerals, arrows, icons, watermarks or decorative frames. Asset: EXACT regular 3 columns by 3 rows action-card atlas, SQUARE canvas, 9 equal SQUARE cells in strict row-major grid. Same orange-shirt child and green-shirt adult mother HOLDING HANDS in EVERY cell. Each independent scene contains distinct sidewalk curb, zebra crossing, one black square PEDESTRIAN signal showing a HUMAN figure (red standing or green walking), no vehicle traffic lights or round signal dots. All full bodies fully contained, feet visible; small scenes legible. ROW 1 LEFT JUNCTION: stand hand in hand on sidewalk behind curb at zebra crossing, red standing human signal visible, no action. ROW 1 CENTER LOOK: remain behind curb holding hands, mother free hand POINTS UP toward pedestrian signal, BOTH faces and eyes look UP at the signal; red standing human signal bright. ROW 1 RIGHT GREEN: signal is bright GREEN WALKING HUMAN, both still standing hand in hand behind curb, turn heads to look for vehicles; car stopped behind line outside crossing. ROW 2 LEFT CROSS: signal bright GREEN WALKING HUMAN, mother holds child hand as both WALK ON zebra stripes safely, one stopped car BEHIND stop line away from them. ROW 2 CENTER RED: close prominent LARGE black-square signal with RED STANDING HUMAN on right, mother and child holding hands waiting behind curb visible on left background. ROW 2 RIGHT STOP: signal red standing human, both visibly stand feet together motionless behind curb holding hands patiently. ROW 3 LEFT WATCH OTHERS: signal red standing human at upper right, mother and child on sidewalk behind curb holding hands with heads looking LEFT at two other pedestrians standing on same sidewalk, clearly NOT looking up at signal. ROW 3 CENTER CAR ONLY: mother and child behind curb holding hands, both turn heads to look at a car on LEFT stopped behind its painted stop line, red standing human signal upper RIGHT; gaze away from signal. ROW 3 RIGHT TOO SOON: signal RED STANDING HUMAN, child leans toward road with one foot lifted but BOTH feet remain over SIDEWALK, mother firmly holds child's hand pulling back and other free hand raised STOP gesture; child has NOT entered road or zebra stripes. No text or labels, no arrows, no check/cross marks. Pedestrian human symbol must be clearly recognizable in every cell; green only in GREEN and CROSS cells. Keep cars outside zebra crossing.",
+  "sourceSize": {
+    "width": 1254,
+    "height": 1254
+  },
+  "grid": {
+    "cols": 3,
+    "rows": 3
+  },
+  "crops": [
+    {
+      "key": "junction",
+      "cell": {
+        "col": 0,
+        "row": 0
+      },
+      "rect": {
+        "left": 5,
+        "top": 5,
+        "width": 408,
+        "height": 408
+      },
+      "width": 600,
+      "height": 600
+    },
+    {
+      "key": "look",
+      "cell": {
+        "col": 1,
+        "row": 0
+      },
+      "rect": {
+        "left": 423,
+        "top": 5,
+        "width": 408,
+        "height": 408
+      },
+      "width": 600,
+      "height": 600
+    },
+    {
+      "key": "green",
+      "cell": {
+        "col": 2,
+        "row": 0
+      },
+      "rect": {
+        "left": 841,
+        "top": 5,
+        "width": 408,
+        "height": 408
+      },
+      "width": 600,
+      "height": 600
+    },
+    {
+      "key": "cross",
+      "cell": {
+        "col": 0,
+        "row": 1
+      },
+      "rect": {
+        "left": 5,
+        "top": 423,
+        "width": 408,
+        "height": 408
+      },
+      "width": 600,
+      "height": 600
+    },
+    {
+      "key": "red",
+      "cell": {
+        "col": 1,
+        "row": 1
+      },
+      "rect": {
+        "left": 423,
+        "top": 423,
+        "width": 408,
+        "height": 408
+      },
+      "width": 600,
+      "height": 600
+    },
+    {
+      "key": "stop",
+      "cell": {
+        "col": 2,
+        "row": 1
+      },
+      "rect": {
+        "left": 841,
+        "top": 423,
+        "width": 408,
+        "height": 408
+      },
+      "width": 600,
+      "height": 600
+    },
+    {
+      "key": "waitOthers",
+      "cell": {
+        "col": 0,
+        "row": 2
+      },
+      "rect": {
+        "left": 5,
+        "top": 841,
+        "width": 408,
+        "height": 408
+      },
+      "width": 600,
+      "height": 600
+    },
+    {
+      "key": "carOnly",
+      "cell": {
+        "col": 1,
+        "row": 2
+      },
+      "rect": {
+        "left": 423,
+        "top": 841,
+        "width": 408,
+        "height": 408
+      },
+      "width": 600,
+      "height": 600
+    },
+    {
+      "key": "directCross",
+      "cell": {
+        "col": 2,
+        "row": 2
+      },
+      "rect": {
+        "left": 841,
+        "top": 841,
+        "width": 408,
+        "height": 408
+      },
+      "width": 600,
+      "height": 600
+    }
+  ],
+  "runtime": null,
+  "review": "通过：全组有成人牵手；红色站立/绿色行走行人信号清楚；green仍在路缘后、cross绿灯过街、错误迈步由成人牵住留在人行道；look手部需以单独修订图覆盖。",
+  "overrides": {
+    "look": {
+      "source": "order-045-traffic-look.png",
+      "metadata": "order-045-traffic-look.json"
+    }
+  }
+}

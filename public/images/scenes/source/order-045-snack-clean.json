@@ -1,0 +1,35 @@
+{
+  "model": "gpt-6.1-sol",
+  "generator": "built-in image_gen",
+  "useCase": "illustration-story",
+  "generatedFile": "/Users/chiang/.codex/generated_images/01a14fa7-7829-7452-8423-d2592d12ab53/exec-87ff2fbb-e2eb-4ce6-bd0d-cbc9db0ed419.png",
+  "reference": "public/images/scenes/source/drinking-thirsty.png",
+  "prompt": "Use case: illustration-story. ONE wide 16:9 educational initial-situation scene. Match supplied reference watercolor and colored pencil warm cream paper texture, same short dark brown hair, brown-eyed preschool boy in orange shirt and blue trousers. He stands behind a low wooden home kitchen table, showing BOTH clean empty open palms at chest level. Hands have NO mud, no food. On table 4 loose round cookies scattered on a clean pale paper mat, separate EMPTY blue-rim ceramic plate, EMPTY glass cup, CLOSED blue pencil case. All four object groups clearly distinct. Kitchen sink in background, faucet off. Child has finished washing, but has NOT taken cookies, has NOT lifted any plate/cup/case, has NOT eaten or served cookies. No actions at all, hands held empty. Minimal tidy kitchen, soft sunny window, restful warm friendly style. No text, labels, symbols, arrows, panels, watermarks. Wide landscape 16:9 composition all items inset.",
+  "sourceDimensions": {
+    "width": 1672,
+    "height": 941
+  },
+  "outputs": [
+    {
+      "key": "clean",
+      "path": "public/images/scenes/order-045-snack-clean.png",
+      "resize": {
+        "width": 1200,
+        "height": 675,
+        "fit": "fill"
+      }
+    }
+  ],
+  "visualReview": {
+    "status": "reviewed",
+    "reviewedBy": "gpt-6.1-sol",
+    "date": "2026-10-18",
+    "checks": [
+      "initial situation does not complete intended next action",
+      "each card matches its manifest meaning",
+      "clean and muddy hands distinguished for snack",
+      "cropped action cards have no neighbouring-cell fragments"
+    ],
+    "limitations": []
+  }
+}

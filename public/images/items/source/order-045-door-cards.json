@@ -1,0 +1,72 @@
+{
+  "src": "/Users/chiang/.codex/generated_images/01a14fa7-1a75-71c3-a797-fcc6410ee5dc/exec-36ea2c54-2bd9-4543-b4de-3542c0a286c5.png",
+  "prompt": "Use case: illustration-story. Produce ONE strict 3 columns x 2 rows rectangular sprite atlas, six equal SQUARE cells, overall aspect ratio 3:2. Artwork will be mechanically cut at exactly one-third width and one-half height, so each illustration MUST remain fully within its cell, with generous cream margins and no shared objects. No gutter required, no visible grid lines, no borders, NO TEXT or numbers anywhere. Match reference warm watercolor/colored pencil on cream paper, same short dark-haired East Asian boy orange T-shirt blue trousers, same wooden home door with brass keyhole and handle. Each independent scene in its own cell. Row1 col1: closed LOCKED door, boy outside holding single brass key DOWN at waist away from lock; other hand at side. Row1 col2: close clear action of boy inserting the brass key into the door's KEYHOLE ABOVE HANDLE and turning it to UNLOCK the still closed door. Key shaft visibly goes INTO keyhole and fingers hold bow; do not depict opening. Row1 col3: boy PUSHES already UNLOCKED door OPEN with palm, door visibly partly open revealing interior. Row2 col1: boy walks through OPEN doorway INTO home, one foot over threshold, seen from back or three-quarter back. Row2 col2: boy PUSHES a still CLOSED LOCKED door with his empty palm, door stays shut with no gap, key held separately DOWN in other hand NOT contacting lock. Row2 col3: boy KNOCKS on the still CLOSED door with raised bent knuckles, single key held DOWN in other hand, not in keyhole. Keep key, door status and actions explicit and different. All six same scale readable action illustrations with pale minimal backgrounds.",
+  "family": "door",
+  "keys": [
+    "locked",
+    "unlock",
+    "open",
+    "enter",
+    "push",
+    "knock"
+  ],
+  "cols": 3,
+  "rows": 2,
+  "tool": "built-in image_gen",
+  "agentModel": "gpt-6.1-sol",
+  "source": "public/images/items/source/order-045-door-cards.png",
+  "sourceWidth": 1536,
+  "sourceHeight": 1024,
+  "crops": [
+    {
+      "key": "locked",
+      "output": "public/images/items/order-045-door-locked.png",
+      "left": 8,
+      "top": 8,
+      "width": 496,
+      "height": 496
+    },
+    {
+      "key": "unlock",
+      "output": "public/images/items/order-045-door-unlock.png",
+      "left": 520,
+      "top": 8,
+      "width": 496,
+      "height": 496
+    },
+    {
+      "key": "open",
+      "output": "public/images/items/order-045-door-open.png",
+      "left": 1032,
+      "top": 8,
+      "width": 496,
+      "height": 496
+    },
+    {
+      "key": "enter",
+      "output": "public/images/items/order-045-door-enter.png",
+      "left": 8,
+      "top": 520,
+      "width": 496,
+      "height": 496
+    },
+    {
+      "key": "push",
+      "output": "public/images/items/order-045-door-push.png",
+      "left": 520,
+      "top": 520,
+      "width": 496,
+      "height": 496
+    },
+    {
+      "key": "knock",
+      "output": "public/images/items/order-045-door-knock.png",
+      "left": 1032,
+      "top": 520,
+      "width": 496,
+      "height": 496
+    }
+  ],
+  "outputWidth": 600,
+  "outputHeight": 600
+}

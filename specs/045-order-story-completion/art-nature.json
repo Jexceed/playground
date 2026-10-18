@@ -1,0 +1,169 @@
+{
+  "model": "gpt-6.1-sol",
+  "families": {
+    "door": {
+      "scenes": {
+        "locked": {
+          "src": "/images/scenes/order-045-door-locked.png",
+          "alt": "孩子站在关闭且锁着的家门外，已经把一把钥匙拿在手里，但钥匙没有接触锁孔，没有开锁动作。"
+        }
+      },
+      "cards": {
+        "locked": {
+          "src": "/images/items/order-045-door-locked.png",
+          "alt": "门锁着，孩子拿着钥匙站在门外"
+        },
+        "unlock": {
+          "src": "/images/items/order-045-door-unlock.png",
+          "alt": "用钥匙插入门锁并转动开锁"
+        },
+        "open": {
+          "src": "/images/items/order-045-door-open.png",
+          "alt": "孩子推开已解锁的门"
+        },
+        "enter": {
+          "src": "/images/items/order-045-door-enter.png",
+          "alt": "孩子从打开的门走进家"
+        },
+        "push": {
+          "src": "/images/items/order-045-door-push.png",
+          "alt": "孩子把钥匙留在手里，只推仍锁着的门，门未打开"
+        },
+        "knock": {
+          "src": "/images/items/order-045-door-knock.png",
+          "alt": "孩子敲仍关闭的门，钥匙留在另一只手"
+        }
+      }
+    },
+    "fish": {
+      "scenes": {
+        "shore": {
+          "src": "/images/scenes/order-045-fish-shore.png",
+          "alt": "一条小鱼在紧邻浅水小河的湿岸边，孩子和大人在旁边看见它，尚未碰鱼。可见鱼与水隔开。"
+        }
+      },
+      "cards": {
+        "shore": {
+          "src": "/images/items/order-045-fish-shore.png",
+          "alt": "小鱼在湿润岸边，尚未回到水里"
+        },
+        "return": {
+          "src": "/images/items/order-045-fish-return.png",
+          "alt": "在大人陪同下双手轻轻把小鱼放回紧邻的浅水中"
+        },
+        "swim": {
+          "src": "/images/items/order-045-fish-swim.png",
+          "alt": "同一条小鱼在小河水里自在游动"
+        },
+        "watch": {
+          "src": "/images/items/order-045-fish-watch.png",
+          "alt": "孩子只是蹲在岸边继续看小鱼，没有拿鱼"
+        },
+        "cup": {
+          "src": "/images/items/order-045-fish-cup.png",
+          "alt": "孩子拿空杯从小河舀水，小鱼仍在岸边"
+        }
+      }
+    },
+    "plant": {
+      "scenes": {
+        "soil": {
+          "src": "/images/scenes/order-045-plant-soil.png",
+          "alt": "花盆里只有土，土面没有种子/小芽/花。孩子旁有未打开的种子小袋与浇水壶，还未操作。"
+        },
+        "dry": {
+          "src": "/images/scenes/order-045-plant-dry.png",
+          "alt": "同款花盆已有一株小芽，周围土壤干燥、有细小裂纹，未开花。孩子旁边水壶未被拿起。"
+        }
+      },
+      "cards": {
+        "soil": {
+          "src": "/images/items/order-045-plant-soil.png",
+          "alt": "只有土的花盆，没有种子/芽/花"
+        },
+        "sow": {
+          "src": "/images/items/order-045-plant-sow.png",
+          "alt": "手把一粒种子放进花盆土中小洞，尚未发芽"
+        },
+        "sprout": {
+          "src": "/images/items/order-045-plant-sprout.png",
+          "alt": "同款花盆中小芽生长，只有两片小叶"
+        },
+        "flower": {
+          "src": "/images/items/order-045-plant-flower.png",
+          "alt": "同款花盆长出花朵"
+        },
+        "waterSoil": {
+          "src": "/images/items/order-045-plant-waterSoil.png",
+          "alt": "给只有土、没有种子的空花盆浇水"
+        },
+        "waitSoil": {
+          "src": "/images/items/order-045-plant-waitSoil.png",
+          "alt": "孩子坐着等只有土的花盆开花，没有播种"
+        },
+        "waterSprout": {
+          "src": "/images/items/order-045-plant-waterSprout.png",
+          "alt": "给现有小芽周围干燥的土浇水"
+        },
+        "pickFlower": {
+          "src": "/images/items/order-045-plant-pickFlower.png",
+          "alt": "孩子从已开花的花盆摘一朵花，表现摘花动作，不是浇水"
+        },
+        "waitSprout": {
+          "src": "/images/items/order-045-plant-waitSprout.png",
+          "alt": "孩子只是坐着看干土里的小芽，水壶放旁边未使用"
+        },
+        "drySprout": {
+          "src": "/images/items/order-045-plant-drySprout.png",
+          "alt": "同款花盆中的两叶小芽，浅褐土面明显干裂，尚未浇水"
+        }
+      }
+    },
+    "bridge": {
+      "scenes": {
+        "carrot": {
+          "src": "/images/scenes/order-045-bridge-carrot.png",
+          "alt": "明确桌面玩具模型，蓝纸表示小河，两岸有明显间隙，无桥。玩具兔在近岸，胡萝卜在对岸，旁边一块足够长的木板还没搭。孩子手未移动玩具。"
+        },
+        "flag": {
+          "src": "/images/scenes/order-045-bridge-flag.png",
+          "alt": "同款桌面模型，玩具兔在近岸，对岸一面小旗，无桥，足够长木板在旁边未搭。不要胡萝卜。"
+        }
+      },
+      "cards": {
+        "river": {
+          "src": "/images/items/order-045-bridge-river.png",
+          "alt": "桌面模型玩具兔在近岸、蓝纸小河隔开两岸，尚无桥"
+        },
+        "build": {
+          "src": "/images/items/order-045-bridge-build.png",
+          "alt": "孩子把木板横跨模型小河，连接两岸，兔子仍在近岸"
+        },
+        "cross": {
+          "src": "/images/items/order-045-bridge-cross.png",
+          "alt": "玩具兔沿已经搭好的木板桥走到对岸"
+        },
+        "carrot": {
+          "src": "/images/items/order-045-bridge-carrot.png",
+          "alt": "玩具兔已到对岸拿到胡萝卜，木板桥仍连接两岸"
+        },
+        "flag": {
+          "src": "/images/items/order-045-bridge-flag.png",
+          "alt": "玩具兔已到对岸小旗处，木板桥仍连接两岸"
+        },
+        "water": {
+          "src": "/images/items/order-045-bridge-water.png",
+          "alt": "尚无桥，手把玩具兔从近岸移进蓝纸小河里"
+        },
+        "reachCarrot": {
+          "src": "/images/items/order-045-bridge-reachCarrot.png",
+          "alt": "尚无桥，玩具兔留在近岸伸向够不着的对岸胡萝卜"
+        },
+        "wait": {
+          "src": "/images/items/order-045-bridge-wait.png",
+          "alt": "尚无桥，玩具兔仍等在近岸，木板没有搭上"
+        }
+      }
+    }
+  }
+}

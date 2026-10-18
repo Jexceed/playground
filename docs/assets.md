@@ -187,3 +187,13 @@ Deterministic diagram PNGs and source SVGs live in public/images/items/explorati
 Six 600×600 action PNGs live in `public/images/items/drinking-*.png` and are registered in `imageGallery.items`. Four steps come from the 2×2 `items/source/drinking-actions.png`; the two distractors come from the 2×1 `items/source/drinking-distractors.png`. Preparation uses exact quadrant/half extraction with Sharp, then 600×600 resizing. Scene sources are resized to 1200×675. Generation used the built-in image_gen tool. Prompts and provenance are retained in `scenes/source/drinking-044-generation.json` and `items/source/drinking-distractors-prompt.txt`.
 
 All six action images are rendered by `src/data/orderStories.ts` and `OrderSequenceBoard`; answer choices use the same semantic image mapping. No runtime reference points into `.codex/generated_images`. A shared cup icon is not an adequate representation of thirst, pouring or drinking.
+
+## Complete order-plan story assets (045)
+
+All 24 order-plan questions now use the scene-first story surface. `src/data/orderStoryAssets.ts` supplies 16 new scenes and 84 new action cards to `imageGallery.scenes/items`; `src/data/orderStories.ts` selects pictures by stable question ID and exact step/choice meaning. The earlier drinking scenes/cards remain registered and in use.
+
+Runtime files follow `public/images/scenes/order-045-<family>-<state>.png` (1200×675) and `public/images/items/order-045-<family>-<action>.png` (600×600). Same-category `source/` directories contain original PNGs and JSON with the complete image_gen prompt, source path, crop grid and overrides. Three agents explicitly selected as gpt-6.1-sol called built-in image_gen; see `specs/045-order-story-completion/art-{nature,daily,plans}.json`. Atlas tiles are normalized to 600×600; this is not a claim that each tile was natively generated at that resolution.
+
+The 24-question visual contract and per-file SHA-256 evidence are in `specs/045-order-story-completion/verification/visual-contract.json` and `image-assets.json`. The regression requires every registered new card to be rendered by at least one actual step or option. Keep initial situations separate from actions: do not show the key already turning in a “what first” scene, clean hands in a dirty-hand mistake, an active sort in an already-sorted starting state, or normal moist soil in a dry-soil clue.
+
+Removing a mismatched backdrop does not complete a life-sequence visual repair. Supply matching initial-state evidence and check every affected question before closing the work; neither generic item icons nor a repair to only the first question establishes group-wide completion.

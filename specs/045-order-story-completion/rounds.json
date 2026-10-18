@@ -1,0 +1,845 @@
+[
+  {
+    "level": "L4",
+    "prompt": "小朋友口渴了，想喝水，先做什么？",
+    "instruction": "先看场景，再按图卡从左到右，找出缺少的一步。",
+    "sequenceStory": "drinking",
+    "sceneImage": {
+      "src": "/images/scenes/drinking-thirsty.png",
+      "alt": "小朋友口渴了，手还空着。桌上放着一个空杯子和装有饮用水的小水壶。"
+    },
+    "difficultyNote": "4 张流程图卡；判断目标前必须先做的准备动作。",
+    "sequence": [
+      "口渴",
+      "?",
+      "倒水",
+      "喝水"
+    ],
+    "choices": [
+      {
+        "label": "先拿杯子",
+        "value": "cup"
+      },
+      {
+        "label": "先倒水",
+        "value": "pour"
+      },
+      {
+        "label": "直接喝水",
+        "value": "drink"
+      }
+    ],
+    "answer": "cup",
+    "success": "按顺序是口渴、先拿杯子、倒水、喝水，所以缺少的是先拿杯子。先拿杯子，才好倒水喝水。",
+    "retry": "先从左到右按顺序说：口渴、先拿杯子、倒水、喝水，再想缺少的先拿杯子让后面能继续。",
+    "parentPrompt": "请她指着图卡复述口渴、先拿杯子、倒水、喝水，说为什么缺少先拿杯子。",
+    "abilityTags": [
+      "顺序推理",
+      "生活流程"
+    ],
+    "id": "logic-order-plan-1"
+  },
+  {
+    "level": "L4",
+    "prompt": "门锁着，钥匙已经拿到了。接下来用什么开门？",
+    "instruction": "按图卡从左到右，找出缺少的一步。",
+    "difficultyNote": "4 张流程图卡；找到开门工具，再完成目标。",
+    "sequence": [
+      "门锁着",
+      "?",
+      "开门",
+      "进屋"
+    ],
+    "choices": [
+      {
+        "label": "先推门",
+        "value": "push"
+      },
+      {
+        "label": "先敲门",
+        "value": "knock"
+      },
+      {
+        "label": "用钥匙开锁",
+        "value": "key"
+      }
+    ],
+    "answer": "key",
+    "success": "按顺序是门锁着、用钥匙开锁、开门、进屋，所以缺少的是用钥匙开锁。门锁着时，要用合适的钥匙开锁，再开门进屋。",
+    "retry": "先从左到右按顺序说：门锁着、用钥匙开锁、开门、进屋，再想缺少的用钥匙开锁让后面能继续。",
+    "parentPrompt": "请她指着图卡复述门锁着、用钥匙开锁、开门、进屋，说为什么缺少用钥匙开锁。",
+    "abilityTags": [
+      "顺序推理",
+      "生活流程"
+    ],
+    "id": "logic-order-plan-2"
+  },
+  {
+    "level": "L4",
+    "prompt": "小鱼在岸上，需要回到水里，先做什么？",
+    "instruction": "按图卡从左到右，找出缺少的一步。",
+    "difficultyNote": "3 张流程图卡；先处理最紧急的需要。",
+    "sequence": [
+      "小鱼在岸上",
+      "?",
+      "🌊"
+    ],
+    "choices": [
+      {
+        "label": "继续看着",
+        "value": "watch"
+      },
+      {
+        "label": "轻轻放回水里",
+        "value": "carry"
+      },
+      {
+        "label": "拿杯子接水",
+        "value": "cup-water"
+      }
+    ],
+    "answer": "carry",
+    "success": "按顺序是小鱼在岸上、轻轻放回水里、小河，所以缺少的是轻轻放回水里。先轻轻放回水里，小鱼才安全。",
+    "retry": "先从左到右按顺序说：小鱼在岸上、轻轻放回水里、小河，再想缺少的轻轻放回水里让后面能继续。",
+    "parentPrompt": "请她指着图卡复述小鱼在岸上、轻轻放回水里、小河，说为什么缺少轻轻放回水里。",
+    "abilityTags": [
+      "顺序推理",
+      "两步计划"
+    ],
+    "id": "logic-order-plan-3"
+  },
+  {
+    "level": "L5",
+    "prompt": "花盆里只有土，还没有种子。想种花，先做什么？",
+    "instruction": "按图卡从左到右，找出缺少的一步。",
+    "difficultyNote": "4 张流程图卡；起点、变化、结果要连起来。",
+    "sequence": [
+      "只有土的花盆",
+      "?",
+      "🌱",
+      "🌼"
+    ],
+    "choices": [
+      {
+        "label": "只给空土浇水",
+        "value": "water"
+      },
+      {
+        "label": "直接等开花",
+        "value": "wait-flower"
+      },
+      {
+        "label": "种下种子",
+        "value": "seed"
+      }
+    ],
+    "answer": "seed",
+    "success": "按顺序是只有土的花盆、种下种子、小芽、花，所以缺少的是种下种子。先种下种子，再细心照顾，才有机会发芽开花。",
+    "retry": "先从左到右按顺序说：只有土的花盆、种下种子、小芽、花，再想缺少的种下种子让后面能继续。",
+    "parentPrompt": "请她指着图卡复述只有土的花盆、种下种子、小芽、花，说为什么缺少种下种子。",
+    "abilityTags": [
+      "顺序推理",
+      "生活流程"
+    ],
+    "id": "logic-order-plan-4"
+  },
+  {
+    "level": "L5",
+    "prompt": "吃饼干前，待补位置应该是什么？",
+    "instruction": "按图卡从左到右，找出缺少的一步。",
+    "difficultyNote": "4 张流程图卡；先解决前置条件，再做目标动作。",
+    "sequence": [
+      "手脏",
+      "?",
+      "拿饼干",
+      "吃"
+    ],
+    "choices": [
+      {
+        "label": "先拿饼干",
+        "value": "take-cookie"
+      },
+      {
+        "label": "先洗手",
+        "value": "wash"
+      },
+      {
+        "label": "先吃饼干",
+        "value": "eat-cookie"
+      }
+    ],
+    "answer": "wash",
+    "success": "按顺序是手脏、先洗手、拿饼干、吃，所以缺少的是先洗手。手脏了先洗手，再拿饼干吃。",
+    "retry": "先从左到右按顺序说：手脏、先洗手、拿饼干、吃，再想缺少的先洗手让后面能继续。",
+    "parentPrompt": "请她指着图卡复述手脏、先洗手、拿饼干、吃，说为什么缺少先洗手。",
+    "abilityTags": [
+      "顺序推理",
+      "生活流程"
+    ],
+    "id": "logic-order-plan-5"
+  },
+  {
+    "level": "L5",
+    "prompt": "积木倒了，要重新搭高，先做什么？",
+    "instruction": "按图卡从左到右，找出缺少的一步。",
+    "difficultyNote": "3 张流程图卡；先整理材料，再完成搭建。",
+    "sequence": [
+      "🧱倒了",
+      "?",
+      "高塔"
+    ],
+    "choices": [
+      {
+        "label": "先搭高塔",
+        "value": "build"
+      },
+      {
+        "label": "先捡积木",
+        "value": "pick"
+      },
+      {
+        "label": "先放进盒子",
+        "value": "box"
+      }
+    ],
+    "answer": "pick",
+    "success": "按顺序是积木倒了、先捡积木、高塔，所以缺少的是先捡积木。先捡积木，再一块一块搭高。",
+    "retry": "先从左到右按顺序说：积木倒了、先捡积木、高塔，再想缺少的先捡积木让后面能继续。",
+    "parentPrompt": "请她指着图卡复述积木倒了、先捡积木、高塔，说为什么缺少先捡积木。",
+    "abilityTags": [
+      "顺序推理",
+      "两步计划"
+    ],
+    "id": "logic-order-plan-6"
+  },
+  {
+    "level": "L6",
+    "prompt": "积木和小车散了，想按种类分开放进两个盒子，先做什么？",
+    "instruction": "按图卡从左到右，找出缺少的一步。",
+    "difficultyNote": "4 张流程图卡；先按类别处理，再收纳到目标位置。",
+    "sequence": [
+      "积木和小车",
+      "?",
+      "分开放进盒子",
+      "分类装好"
+    ],
+    "choices": [
+      {
+        "label": "先分开两类",
+        "value": "sort"
+      },
+      {
+        "label": "全放同一个盒子",
+        "value": "box"
+      },
+      {
+        "label": "只收一个玩具",
+        "value": "one"
+      }
+    ],
+    "answer": "sort",
+    "success": "按顺序是积木和小车、先分开两类、分开放进盒子、分类装好，所以缺少的是先分开两类。先分类，再把积木和小车放进各自的盒子，下次好找。",
+    "retry": "先从左到右按顺序说：积木和小车、先分开两类、分开放进盒子、分类装好，再想缺少的先分开两类让后面能继续。",
+    "parentPrompt": "请她指着图卡复述积木和小车、先分开两类、分开放进盒子、分类装好，说为什么缺少先分开两类。",
+    "abilityTags": [
+      "顺序推理",
+      "生活流程"
+    ],
+    "id": "logic-order-plan-7"
+  },
+  {
+    "level": "L6",
+    "prompt": "过马路时，待补位置应该是什么？",
+    "instruction": "按图卡从左到右，找出缺少的一步。",
+    "difficultyNote": "4 张流程图卡；先观察信号，再决定行动。",
+    "sequence": [
+      "路口",
+      "?",
+      "绿灯",
+      "走过去"
+    ],
+    "choices": [
+      {
+        "label": "先看灯",
+        "value": "look"
+      },
+      {
+        "label": "直接走过去",
+        "value": "walk"
+      },
+      {
+        "label": "等别人先走",
+        "value": "wait"
+      }
+    ],
+    "answer": "look",
+    "success": "按顺序是路口、先看灯、绿灯、走过去，所以缺少的是先看灯。先看灯，等绿灯，再安全走过去。",
+    "retry": "先从左到右按顺序说：路口、先看灯、绿灯、走过去，再想缺少的先看灯让后面能继续。",
+    "parentPrompt": "请她指着图卡复述路口、先看灯、绿灯、走过去，说为什么缺少先看灯。",
+    "abilityTags": [
+      "顺序推理",
+      "生活流程"
+    ],
+    "id": "logic-order-plan-8"
+  },
+  {
+    "level": "L6",
+    "prompt": "小朋友要喝水，拿到杯子后还缺哪一步？",
+    "instruction": "先看场景，再按图卡从左到右，找出缺少的一步。",
+    "sequenceStory": "drinking",
+    "sceneImage": {
+      "src": "/images/scenes/drinking-empty-cup.png",
+      "alt": "小朋友已经拿到了杯子，杯子里面还是空的。装有饮用水的小水壶放在桌上。"
+    },
+    "difficultyNote": "4 张流程图卡；先准备容器，再加入需要的东西。",
+    "sequence": [
+      "🧒",
+      "先拿杯子",
+      "?",
+      "喝水"
+    ],
+    "choices": [
+      {
+        "label": "再拿一个杯子",
+        "value": "cup-again"
+      },
+      {
+        "label": "端空杯子过去",
+        "value": "empty-cup"
+      },
+      {
+        "label": "先倒水",
+        "value": "pour"
+      }
+    ],
+    "answer": "pour",
+    "success": "按顺序是小朋友、先拿杯子、先倒水、喝水，所以缺少的是先倒水。先拿杯子，再倒水，小朋友才能喝。",
+    "retry": "先从左到右按顺序说：小朋友、先拿杯子、先倒水、喝水，再想缺少的先倒水让后面能继续。",
+    "parentPrompt": "请她指着图卡复述小朋友、先拿杯子、先倒水、喝水，说为什么缺少先倒水。",
+    "abilityTags": [
+      "顺序推理",
+      "生活流程"
+    ],
+    "id": "logic-order-plan-9"
+  },
+  {
+    "level": "L6",
+    "prompt": "吃点心的流程里，待补位置应该是什么？",
+    "instruction": "按图卡从左到右，找出缺少的一步。",
+    "difficultyNote": "5 张流程图卡；要同时记住卫生、工具和目标动作。",
+    "sequence": [
+      "手脏",
+      "?",
+      "拿盘子",
+      "拿饼干",
+      "吃"
+    ],
+    "choices": [
+      {
+        "label": "先拿盘子",
+        "value": "plate"
+      },
+      {
+        "label": "先吃饼干",
+        "value": "eat-cookie"
+      },
+      {
+        "label": "先洗手",
+        "value": "wash"
+      }
+    ],
+    "answer": "wash",
+    "success": "按顺序是手脏、先洗手、拿盘子、拿饼干、吃，所以缺少的是先洗手。手脏了先洗手，再拿盘子和饼干，最后吃。",
+    "retry": "先从左到右按顺序说：手脏、先洗手、拿盘子、拿饼干、吃，再想缺少的先洗手让后面能继续。",
+    "parentPrompt": "请她指着图卡复述手脏、先洗手、拿盘子、拿饼干、吃，说为什么缺少先洗手。",
+    "abilityTags": [
+      "顺序推理",
+      "多步计划"
+    ],
+    "id": "logic-order-plan-10"
+  },
+  {
+    "level": "L6",
+    "prompt": "桌面模型里，玩具兔要沿桥面到对岸拿胡萝卜。中间还缺哪一步？",
+    "instruction": "按图卡从左到右，找出缺少的一步。",
+    "difficultyNote": "4 张流程图卡；先处理障碍，再继续完成目标。",
+    "sequence": [
+      "小河",
+      "?",
+      "走过去",
+      "🥕"
+    ],
+    "choices": [
+      {
+        "label": "先走进水里",
+        "value": "walk-water"
+      },
+      {
+        "label": "先搭桥",
+        "value": "bridge"
+      },
+      {
+        "label": "先拿胡萝卜",
+        "value": "carrot"
+      }
+    ],
+    "answer": "bridge",
+    "success": "按顺序是小河、先搭桥、走过去、胡萝卜，所以缺少的是先搭桥。有小河时先搭桥，走过去以后才能拿胡萝卜。",
+    "retry": "先从左到右按顺序说：小河、先搭桥、走过去、胡萝卜，再想缺少的先搭桥让后面能继续。",
+    "parentPrompt": "请她指着图卡复述小河、先搭桥、走过去、胡萝卜，说为什么缺少先搭桥。",
+    "abilityTags": [
+      "顺序推理",
+      "生活流程"
+    ],
+    "id": "logic-order-plan-11"
+  },
+  {
+    "level": "L6",
+    "prompt": "捡起的积木要按种类分别装盒。中间缺哪一步？",
+    "instruction": "按图卡从左到右，找出缺少的一步。",
+    "difficultyNote": "5 张流程图卡；不只是先后，还要选择能降低混乱的中间步骤。",
+    "sequence": [
+      "🧱倒了",
+      "先捡积木",
+      "?",
+      "放进盒子",
+      "整齐"
+    ],
+    "choices": [
+      {
+        "label": "先分类",
+        "value": "sort"
+      },
+      {
+        "label": "先搭高塔",
+        "value": "build"
+      },
+      {
+        "label": "先放进盒子",
+        "value": "box"
+      }
+    ],
+    "answer": "sort",
+    "success": "按顺序是积木倒了、先捡积木、先分类、放进盒子、整齐，所以缺少的是先分类。先捡起来，再按种类分好，放进对应的盒子。",
+    "retry": "先从左到右按顺序说：积木倒了、先捡积木、先分类、放进盒子、整齐，再想缺少的先分类让后面能继续。",
+    "parentPrompt": "请她指着图卡复述积木倒了、先捡积木、先分类、放进盒子、整齐，说为什么缺少先分类。",
+    "abilityTags": [
+      "顺序推理",
+      "多步计划"
+    ],
+    "id": "logic-order-plan-12"
+  },
+  {
+    "level": "L6",
+    "prompt": "上课要写字，先拿什么最合适？",
+    "instruction": "按图卡从左到右，找出缺少的一步。",
+    "difficultyNote": "3 张流程图卡；先找和目标动作最直接相关的工具。",
+    "sequence": [
+      "上课",
+      "?",
+      "写字"
+    ],
+    "choices": [
+      {
+        "label": "书本",
+        "value": "book"
+      },
+      {
+        "label": "铅笔",
+        "value": "pencil"
+      },
+      {
+        "label": "尺子",
+        "value": "ruler"
+      }
+    ],
+    "answer": "pencil",
+    "success": "按顺序是上课、铅笔、写字，所以缺少的是铅笔。写字前先拿铅笔最合适。",
+    "retry": "先从左到右按顺序说：上课、铅笔、写字，再想缺少的铅笔让后面能继续。",
+    "parentPrompt": "请她指着图卡复述上课、铅笔、写字，说为什么缺少铅笔。",
+    "abilityTags": [
+      "顺序推理",
+      "两步计划"
+    ],
+    "id": "logic-order-plan-13"
+  },
+  {
+    "level": "L6",
+    "prompt": "书要带去学校，应该先放进哪里？",
+    "instruction": "按图卡从左到右，找出缺少的一步。",
+    "difficultyNote": "3 张流程图卡；先找能装目标物的地方。",
+    "sequence": [
+      "书本",
+      "?",
+      "去学校"
+    ],
+    "choices": [
+      {
+        "label": "饭盒",
+        "value": "lunch"
+      },
+      {
+        "label": "书包",
+        "value": "bag"
+      },
+      {
+        "label": "水壶",
+        "value": "bottle"
+      }
+    ],
+    "answer": "bag",
+    "success": "按顺序是书本、书包、去学校，所以缺少的是书包。书本要先放进书包，才方便带去学校。",
+    "retry": "先从左到右按顺序说：书本、书包、去学校，再想缺少的书包让后面能继续。",
+    "parentPrompt": "请她指着图卡复述书本、书包、去学校，说为什么缺少书包。",
+    "abilityTags": [
+      "顺序推理",
+      "两步计划"
+    ],
+    "id": "logic-order-plan-14"
+  },
+  {
+    "level": "L6",
+    "prompt": "下雨要出门，先准备什么？",
+    "instruction": "按图卡从左到右，找出缺少的一步。",
+    "difficultyNote": "3 张流程图卡；根据天气先准备合适物品。",
+    "sequence": [
+      "下雨",
+      "?",
+      "出门"
+    ],
+    "choices": [
+      {
+        "label": "帽子",
+        "value": "hat"
+      },
+      {
+        "label": "足球",
+        "value": "ball"
+      },
+      {
+        "label": "雨衣",
+        "value": "raincoat"
+      }
+    ],
+    "answer": "raincoat",
+    "success": "按顺序是下雨、雨衣、出门，所以缺少的是雨衣。下雨出门先准备雨衣，身体才不容易淋湿。",
+    "retry": "先从左到右按顺序说：下雨、雨衣、出门，再想缺少的雨衣让后面能继续。",
+    "parentPrompt": "请她指着图卡复述下雨、雨衣、出门，说为什么缺少雨衣。",
+    "abilityTags": [
+      "顺序推理",
+      "两步计划"
+    ],
+    "id": "logic-order-plan-15"
+  },
+  {
+    "level": "L6",
+    "prompt": "手洗好了，要把散放的饼干盛好再吃，先拿什么？",
+    "instruction": "按图卡从左到右，找出缺少的一步。",
+    "difficultyNote": "3 张流程图卡；先准备承接食物的工具。",
+    "sequence": [
+      "饼干",
+      "?",
+      "吃"
+    ],
+    "choices": [
+      {
+        "label": "拿杯子",
+        "value": "cup"
+      },
+      {
+        "label": "拿文具盒",
+        "value": "pencil-case"
+      },
+      {
+        "label": "拿盘子",
+        "value": "plate"
+      }
+    ],
+    "answer": "plate",
+    "success": "按顺序是饼干、拿盘子、吃，所以缺少的是拿盘子。先拿盘子，再拿饼干吃更干净。",
+    "retry": "先从左到右按顺序说：饼干、拿盘子、吃，再想缺少的拿盘子让后面能继续。",
+    "parentPrompt": "请她指着图卡复述饼干、拿盘子、吃，说为什么缺少拿盘子。",
+    "abilityTags": [
+      "顺序推理",
+      "两步计划"
+    ],
+    "id": "logic-order-plan-16"
+  },
+  {
+    "level": "L6",
+    "prompt": "手上有泥，想拿点心，第一步是什么？",
+    "instruction": "按图卡从左到右，找出缺少的一步。",
+    "difficultyNote": "3 张流程图卡；先满足卫生条件，再接触食物。",
+    "sequence": [
+      "手脏",
+      "?",
+      "拿饼干"
+    ],
+    "choices": [
+      {
+        "label": "先洗手",
+        "value": "wash"
+      },
+      {
+        "label": "先拿饼干",
+        "value": "cookie"
+      },
+      {
+        "label": "先吃饼干",
+        "value": "eat"
+      }
+    ],
+    "answer": "wash",
+    "success": "按顺序是手脏、先洗手、拿饼干，所以缺少的是先洗手。手脏了先洗手，再拿点心。",
+    "retry": "先从左到右按顺序说：手脏、先洗手、拿饼干，再想缺少的先洗手让后面能继续。",
+    "parentPrompt": "请她指着图卡复述手脏、先洗手、拿饼干，说为什么缺少先洗手。",
+    "abilityTags": [
+      "顺序推理",
+      "两步计划"
+    ],
+    "id": "logic-order-plan-17"
+  },
+  {
+    "level": "L6",
+    "prompt": "杯子是空的，想喝水，先做什么？",
+    "instruction": "先看场景，再按图卡从左到右，找出缺少的一步。",
+    "sequenceStory": "drinking",
+    "sceneImage": {
+      "src": "/images/scenes/drinking-empty-cup.png",
+      "alt": "小朋友已经拿到了杯子，杯子里面还是空的。装有饮用水的小水壶放在桌上。"
+    },
+    "difficultyNote": "3 张流程图卡；容器准备好后，还要加入需要的东西。",
+    "sequence": [
+      "杯子",
+      "?",
+      "喝水"
+    ],
+    "choices": [
+      {
+        "label": "先倒水",
+        "value": "pour"
+      },
+      {
+        "label": "再拿一个杯子",
+        "value": "cup-again"
+      },
+      {
+        "label": "端空杯子过去",
+        "value": "empty-cup"
+      }
+    ],
+    "answer": "pour",
+    "success": "按顺序是杯子、先倒水、喝水，所以缺少的是先倒水。空杯子要先倒水，才能喝。",
+    "retry": "先从左到右按顺序说：杯子、先倒水、喝水，再想缺少的先倒水让后面能继续。",
+    "parentPrompt": "请她指着图卡复述杯子、先倒水、喝水，说为什么缺少先倒水。",
+    "abilityTags": [
+      "顺序推理",
+      "两步计划"
+    ],
+    "id": "logic-order-plan-18"
+  },
+  {
+    "level": "L6",
+    "prompt": "和大人一起过马路，行人灯是红色的。即使车停着，也要先做什么？",
+    "instruction": "按图卡从左到右，找出缺少的一步。",
+    "difficultyNote": "3 张流程图卡；先按信号停下，再等待条件变化。",
+    "sequence": [
+      "路口",
+      "🔴",
+      "?"
+    ],
+    "choices": [
+      {
+        "label": "走",
+        "value": "go"
+      },
+      {
+        "label": "停",
+        "value": "stop"
+      },
+      {
+        "label": "只看车停着",
+        "value": "car-stop"
+      }
+    ],
+    "answer": "stop",
+    "success": "按顺序是路口、红灯、停，所以缺少的是停。行人红灯亮着要停下等。等绿灯亮了，大人确认安全后再一起走。",
+    "retry": "先从左到右按顺序说：路口、红灯、停，再想缺少的停让后面能继续。",
+    "parentPrompt": "请她指着图卡复述路口、红灯、停，说为什么缺少停。",
+    "abilityTags": [
+      "顺序推理",
+      "两步计划"
+    ],
+    "id": "logic-order-plan-19"
+  },
+  {
+    "level": "L6",
+    "prompt": "和大人到有行人信号灯的路口，准备过马路。第一步先看什么？",
+    "instruction": "按图卡从左到右，找出缺少的一步。",
+    "difficultyNote": "3 张流程图卡；先观察，再行动。",
+    "sequence": [
+      "路口",
+      "?",
+      "走过去"
+    ],
+    "choices": [
+      {
+        "label": "直接走过去",
+        "value": "walk"
+      },
+      {
+        "label": "先看灯",
+        "value": "look"
+      },
+      {
+        "label": "只看车停着",
+        "value": "car-stop"
+      }
+    ],
+    "answer": "look",
+    "success": "按顺序是路口、先看灯、走过去，所以缺少的是先看灯。先看行人信号灯；绿灯亮了，还要由大人确认路面安全，再一起走。",
+    "retry": "先从左到右按顺序说：路口、先看灯、走过去，再想缺少的先看灯让后面能继续。",
+    "parentPrompt": "请她指着图卡复述路口、先看灯、走过去，说为什么缺少先看灯。",
+    "abilityTags": [
+      "顺序推理",
+      "两步计划"
+    ],
+    "id": "logic-order-plan-20"
+  },
+  {
+    "level": "L6",
+    "prompt": "积木散在地上，想拿到桌上重新搭塔，先做什么？",
+    "instruction": "按图卡从左到右，找出缺少的一步。",
+    "difficultyNote": "3 张流程图卡；先整理材料，再完成目标。",
+    "sequence": [
+      "🧱倒了",
+      "?",
+      "高塔"
+    ],
+    "choices": [
+      {
+        "label": "先捡积木",
+        "value": "pick"
+      },
+      {
+        "label": "直接搭高塔",
+        "value": "build"
+      },
+      {
+        "label": "先放进盒子",
+        "value": "box"
+      }
+    ],
+    "answer": "pick",
+    "success": "按顺序是积木倒了、先捡积木、高塔，所以缺少的是先捡积木。先把积木捡起来，才好重新搭塔。",
+    "retry": "先从左到右按顺序说：积木倒了、先捡积木、高塔，再想缺少的先捡积木让后面能继续。",
+    "parentPrompt": "请她指着图卡复述积木倒了、先捡积木、高塔，说为什么缺少先捡积木。",
+    "abilityTags": [
+      "顺序推理",
+      "两步计划"
+    ],
+    "id": "logic-order-plan-21"
+  },
+  {
+    "level": "L6",
+    "prompt": "桌面模型里，玩具要沿桥面走到对岸小旗处。先做什么？",
+    "instruction": "按图卡从左到右，找出缺少的一步。",
+    "difficultyNote": "3 张流程图卡；先处理挡路条件，再去拿目标物。",
+    "sequence": [
+      "小河",
+      "?",
+      "🏁"
+    ],
+    "choices": [
+      {
+        "label": "直接走进水里",
+        "value": "walk"
+      },
+      {
+        "label": "站在岸边等",
+        "value": "wait"
+      },
+      {
+        "label": "先搭桥",
+        "value": "bridge"
+      }
+    ],
+    "answer": "bridge",
+    "success": "按顺序是小河、先搭桥、小旗，所以缺少的是先搭桥。小河挡住了路，要先搭桥。",
+    "retry": "先从左到右按顺序说：小河、先搭桥、小旗，再想缺少的先搭桥让后面能继续。",
+    "parentPrompt": "请她指着图卡复述小河、先搭桥、小旗，说为什么缺少先搭桥。",
+    "abilityTags": [
+      "顺序推理",
+      "两步计划"
+    ],
+    "id": "logic-order-plan-22"
+  },
+  {
+    "level": "L6",
+    "prompt": "花园里的小芽旁边，土已经干了。下一步做什么更合适？",
+    "instruction": "按图卡从左到右，找出缺少的一步。",
+    "difficultyNote": "3 张流程图卡；已有小芽时，下一步是照顾它继续长。",
+    "sequence": [
+      "🌱",
+      "?",
+      "🌼"
+    ],
+    "choices": [
+      {
+        "label": "先浇水",
+        "value": "water"
+      },
+      {
+        "label": "先摘花",
+        "value": "pick"
+      },
+      {
+        "label": "直接等开花",
+        "value": "wait"
+      }
+    ],
+    "answer": "water",
+    "success": "按顺序是小芽、先浇水、花，所以缺少的是先浇水。小芽需要照顾，浇水以后更可能长成花。",
+    "retry": "先从左到右按顺序说：小芽、先浇水、花，再想缺少的先浇水让后面能继续。",
+    "parentPrompt": "请她指着图卡复述小芽、先浇水、花，说为什么缺少先浇水。",
+    "abilityTags": [
+      "顺序推理",
+      "两步计划"
+    ],
+    "id": "logic-order-plan-23"
+  },
+  {
+    "level": "L6",
+    "prompt": "积木和小车已经分好类，两个空盒子也打开了。下一步做什么？",
+    "instruction": "按图卡从左到右，找出缺少的一步。",
+    "difficultyNote": "3 张流程图卡；保留已经完成的步骤，再做下一步。",
+    "sequence": [
+      "分好的两类玩具",
+      "?",
+      "分类装好"
+    ],
+    "choices": [
+      {
+        "label": "再分类一遍",
+        "value": "sort-again"
+      },
+      {
+        "label": "只收一个玩具",
+        "value": "one"
+      },
+      {
+        "label": "分开放进盒子",
+        "value": "box"
+      }
+    ],
+    "answer": "box",
+    "success": "按顺序是分好的两类玩具、分开放进盒子、分类装好，所以缺少的是分开放进盒子。已经分类了，下一步把积木和小车放进各自的盒子，完成收纳。",
+    "retry": "先从左到右按顺序说：分好的两类玩具、分开放进盒子、分类装好，再想缺少的分开放进盒子让后面能继续。",
+    "parentPrompt": "请她指着图卡复述分好的两类玩具、分开放进盒子、分类装好，说为什么缺少分开放进盒子。",
+    "abilityTags": [
+      "顺序推理",
+      "两步计划"
+    ],
+    "id": "logic-order-plan-24"
+  }
+]

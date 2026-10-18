@@ -1,0 +1,35 @@
+{
+  "model": "gpt-6.1-sol",
+  "generator": "built-in image_gen",
+  "useCase": "illustration-story",
+  "generatedFile": "/Users/chiang/.codex/generated_images/01a14fa7-7829-7452-8423-d2592d12ab53/exec-dc633680-233e-41d5-968b-f55f3f55eec8.png",
+  "reference": "public/images/scenes/source/drinking-thirsty.png",
+  "prompt": "Use case: illustration-story. ONE wide landscape 16:9 children's educational initial story scene, same reference's warm watercolor colored-pencil texture on cream paper, same cute short dark-brown-haired preschool boy, brown eyes, orange shirt and blue trousers. Child seated at small wooden desk in simple bright classroom. In front of him completely BLANK cream practice paper; a yellow wooden pencil, a CLOSED blue book, and a straight wooden ruler lying separately on desk. BOTH hands empty resting visibly on opposite sides of paper, no touching tools, no writing, no marks on paper. Child is ready to choose what to pick up first. Friendly quiet classroom with distant empty desks and sunny window, no teacher needed. Main boy and all three tools large clear and unambiguous. No text, letters, numbers, labels, arrows, panels, watermarks. All objects safely inset, 16:9 composition.",
+  "sourceDimensions": {
+    "width": 1672,
+    "height": 940
+  },
+  "outputs": [
+    {
+      "key": "classroom",
+      "path": "public/images/scenes/order-045-writing-classroom.png",
+      "resize": {
+        "width": 1200,
+        "height": 675,
+        "fit": "fill"
+      }
+    }
+  ],
+  "visualReview": {
+    "status": "reviewed",
+    "reviewedBy": "gpt-6.1-sol",
+    "date": "2026-10-18",
+    "checks": [
+      "initial situation does not complete intended next action",
+      "each card matches its manifest meaning",
+      "clean and muddy hands distinguished for snack",
+      "cropped action cards have no neighbouring-cell fragments"
+    ],
+    "limitations": []
+  }
+}

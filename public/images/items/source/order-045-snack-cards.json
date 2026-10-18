@@ -1,0 +1,208 @@
+{
+  "model": "gpt-6.1-sol",
+  "generator": "built-in image_gen",
+  "useCase": "illustration-story",
+  "generatedFile": "/Users/chiang/.codex/generated_images/01a14fa7-7829-7452-8423-d2592d12ab53/exec-b5e116f4-c010-4bb3-866e-763b2f8c9572.png",
+  "reference": "public/images/scenes/source/drinking-thirsty.png",
+  "prompt": "Use case: illustration-story. Children's action-card ATLAS, exact 3 columns by 4 rows, twelve equal SQUARE cells, portrait 3:4 canvas. Regular strict grid edge-to-edge, no gaps, no printed borders, each illustration entirely inside its cell with generous cream-paper blank margin so cells can be cropped. Read row-major. Match reference warm watercolor colored-pencil children's book style, same preschool boy short dark brown hair, orange shirt, blue trousers. Simple wooden table, recognizable round chocolate-chip cookies on clean pale paper mat and blue-rim plate, blue pencil case, clear empty glass. NO text, numbers, arrows, labels, icons, watermarks. Each card ONE specific action, not multiple stages. Exact cell content:\nRow1 left: boy displays two muddy open palms, cookies untouched on table. Row1 middle: close view boy washing BOTH hands with SOAP foam under flowing sink faucet, mud being washed off. Row1 right: boy's visibly CLEAN hand picks up ONE cookie from paper mat, away from mouth.\nRow2 left: clean-handed boy holding cookie to open mouth, eating. Row2 middle: boy's CLEAN hands lift a completely EMPTY blue-rim plate, cookies still loose on paper mat. Row2 right: only several loose cookies on paper mat, NO plate NO hands.\nRow3 left: boy lifts a completely EMPTY clear glass cup, loose cookies stay on mat. Row3 middle: boy lifts CLOSED BLUE PENCIL CASE, loose cookies stay on mat. Row3 right: boy picks up cookie with a clearly BROWN MUD-SMEARED hand, mouth far away, his other muddy hand visible; no washing.\nRow4 left: boy eats cookie held to mouth in clearly BROWN MUD-SMEARED hand, both hands muddy, no washing. Row4 middle: boy lifts completely EMPTY plate with clearly BROWN MUD-SMEARED hands, cookies untouched on mat, no washing. Row4 right: entirely blank cream paper with absolutely no objects.\nMaintain exact 3x4 equal square cell geometry. Keep boy and focal actions large and clear. Dirty hands very obvious brown patches; clean cards absolutely no brown stains. No checks/crosses or moral cues.",
+  "sourceDimensions": {
+    "width": 1086,
+    "height": 1448
+  },
+  "outputs": [
+    {
+      "key": "dirty",
+      "path": "public/images/items/order-045-snack-dirty.png",
+      "crop": {
+        "left": 18,
+        "top": 18,
+        "width": 326,
+        "height": 326
+      },
+      "resize": {
+        "width": 600,
+        "height": 600,
+        "fit": "fill"
+      }
+    },
+    {
+      "key": "wash",
+      "path": "public/images/items/order-045-snack-wash.png",
+      "crop": {
+        "left": 380,
+        "top": 18,
+        "width": 326,
+        "height": 326
+      },
+      "resize": {
+        "width": 600,
+        "height": 600,
+        "fit": "fill"
+      }
+    },
+    {
+      "key": "take",
+      "path": "public/images/items/order-045-snack-take.png",
+      "crop": {
+        "left": 742,
+        "top": 18,
+        "width": 326,
+        "height": 326
+      },
+      "resize": {
+        "width": 600,
+        "height": 600,
+        "fit": "fill"
+      }
+    },
+    {
+      "key": "eat",
+      "path": "public/images/items/order-045-snack-eat.png",
+      "crop": {
+        "left": 18,
+        "top": 380,
+        "width": 326,
+        "height": 326
+      },
+      "resize": {
+        "width": 600,
+        "height": 600,
+        "fit": "fill"
+      }
+    },
+    {
+      "key": "plate",
+      "path": "public/images/items/order-045-snack-plate.png",
+      "crop": {
+        "left": 380,
+        "top": 380,
+        "width": 326,
+        "height": 326
+      },
+      "resize": {
+        "width": 600,
+        "height": 600,
+        "fit": "fill"
+      }
+    },
+    {
+      "key": "cookies",
+      "path": "public/images/items/order-045-snack-cookies.png",
+      "crop": {
+        "left": 742,
+        "top": 380,
+        "width": 326,
+        "height": 326
+      },
+      "resize": {
+        "width": 600,
+        "height": 600,
+        "fit": "fill"
+      }
+    },
+    {
+      "key": "cup",
+      "path": "public/images/items/order-045-snack-cup.png",
+      "crop": {
+        "left": 18,
+        "top": 742,
+        "width": 326,
+        "height": 326
+      },
+      "resize": {
+        "width": 600,
+        "height": 600,
+        "fit": "fill"
+      }
+    },
+    {
+      "key": "pencilCase",
+      "path": "public/images/items/order-045-snack-pencilCase.png",
+      "crop": {
+        "left": 380,
+        "top": 742,
+        "width": 326,
+        "height": 326
+      },
+      "resize": {
+        "width": 600,
+        "height": 600,
+        "fit": "fill"
+      }
+    },
+    {
+      "key": "dirtyTake",
+      "path": "public/images/items/order-045-snack-dirtyTake.png",
+      "crop": {
+        "left": 742,
+        "top": 742,
+        "width": 326,
+        "height": 326
+      },
+      "resize": {
+        "width": 600,
+        "height": 600,
+        "fit": "fill"
+      }
+    },
+    {
+      "key": "dirtyEat",
+      "path": "public/images/items/order-045-snack-dirtyEat.png",
+      "crop": {
+        "left": 18,
+        "top": 1104,
+        "width": 326,
+        "height": 326
+      },
+      "resize": {
+        "width": 600,
+        "height": 600,
+        "fit": "fill"
+      }
+    },
+    {
+      "key": "dirtyPlate",
+      "path": "public/images/items/order-045-snack-dirtyPlate.png",
+      "crop": {
+        "left": 380,
+        "top": 1104,
+        "width": 326,
+        "height": 326
+      },
+      "resize": {
+        "width": 600,
+        "height": 600,
+        "fit": "fill"
+      }
+    }
+  ],
+  "grid": {
+    "columns": 3,
+    "rows": 4,
+    "rowMajorKeys": [
+      "dirty",
+      "wash",
+      "take",
+      "eat",
+      "plate",
+      "cookies",
+      "cup",
+      "pencilCase",
+      "dirtyTake",
+      "dirtyEat",
+      "dirtyPlate"
+    ]
+  },
+  "visualReview": {
+    "status": "reviewed",
+    "reviewedBy": "gpt-6.1-sol",
+    "date": "2026-10-18",
+    "checks": [
+      "initial situation does not complete intended next action",
+      "each card matches its manifest meaning",
+      "clean and muddy hands distinguished for snack",
+      "cropped action cards have no neighbouring-cell fragments"
+    ],
+    "limitations": "Raster cell crop resized to 600x600; source cell is smaller than runtime dimensions."
+  }
+}

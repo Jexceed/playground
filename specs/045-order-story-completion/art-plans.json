@@ -1,0 +1,165 @@
+{
+  "model": "gpt-6.1-sol",
+  "families": {
+    "tower": {
+      "scenes": {
+        "fallen": {
+          "src": "/images/scenes/order-045-tower-fallen.png",
+          "alt": "积木塔倒了，积木散在地板，孩子双手空着，低桌和盒子还空着"
+        }
+      },
+      "cards": {
+        "fallen": {
+          "src": "/images/items/order-045-tower-fallen.png",
+          "alt": "孩子双手空着，积木散在地板上"
+        },
+        "pick": {
+          "src": "/images/items/order-045-tower-pick.png",
+          "alt": "孩子把地板上的积木捡到低桌上"
+        },
+        "tower": {
+          "src": "/images/items/order-045-tower-tower.png",
+          "alt": "积木已在低桌上搭成高塔"
+        },
+        "build": {
+          "src": "/images/items/order-045-tower-build.png",
+          "alt": "大部分积木还在地板，孩子就开始在低桌搭塔"
+        },
+        "box": {
+          "src": "/images/items/order-045-tower-box.png",
+          "alt": "孩子把积木放进盒子，桌上没有塔"
+        }
+      }
+    },
+    "sorting": {
+      "scenes": {
+        "mixed": {
+          "src": "/images/scenes/order-045-sorting-mixed.png",
+          "alt": "积木与小汽车混杂在地上，两个收纳盒都还空着，孩子还没有分类"
+        },
+        "sorted": {
+          "src": "/images/scenes/order-045-sorting-sorted.png",
+          "alt": "积木和小汽车已分成两堆，孩子双手放在膝上，两个盒子还空着"
+        }
+      },
+      "cards": {
+        "mixed": {
+          "src": "/images/items/order-045-sorting-mixed.png",
+          "alt": "积木和小车混杂在地上，两个空盒在旁"
+        },
+        "sort": {
+          "src": "/images/items/order-045-sorting-sort.png",
+          "alt": "孩子正在把积木与小汽车分成两堆，盒子还空着"
+        },
+        "put": {
+          "src": "/images/items/order-045-sorting-put.png",
+          "alt": "孩子把积木放进积木盒，把小汽车放进小车盒"
+        },
+        "done": {
+          "src": "/images/items/order-045-sorting-done.png",
+          "alt": "积木和小汽车分别整齐收在各自盒里"
+        },
+        "allOne": {
+          "src": "/images/items/order-045-sorting-allOne.png",
+          "alt": "孩子把积木和小汽车混装到同一个盒，另一个盒空着"
+        },
+        "one": {
+          "src": "/images/items/order-045-sorting-one.png",
+          "alt": "孩子只把一个玩具放进盒，其余玩具还散在地上"
+        },
+        "sortAgain": {
+          "src": "/images/items/order-045-sorting-sortAgain.png",
+          "alt": "两类玩具已经分堆，孩子又摆动同一堆积木，盒子仍空"
+        },
+        "sorted": {
+          "src": "/images/items/order-045-sorting-sorted.png",
+          "alt": "两类玩具已经分成两堆，孩子双手空着，两盒尚未装玩具"
+        }
+      }
+    },
+    "blocks": {
+      "scenes": {
+        "picked": {
+          "src": "/images/scenes/order-045-blocks-picked.png",
+          "alt": "圆柱和方块积木已捡到低桌上混放，两个盒子还空着，地面没有积木"
+        }
+      },
+      "cards": {
+        "fallen": {
+          "src": "/images/items/order-045-blocks-fallen.png",
+          "alt": "圆柱和方块积木散在地上，低桌还空着"
+        },
+        "pick": {
+          "src": "/images/items/order-045-blocks-pick.png",
+          "alt": "孩子把地上圆柱和方块积木捡到低桌上"
+        },
+        "sort": {
+          "src": "/images/items/order-045-blocks-sort.png",
+          "alt": "孩子把桌上的方块和圆柱按形状分成两堆"
+        },
+        "put": {
+          "src": "/images/items/order-045-blocks-put.png",
+          "alt": "孩子把方块与圆柱分别放入对应收纳盒"
+        },
+        "done": {
+          "src": "/images/items/order-045-blocks-done.png",
+          "alt": "方块和圆柱分别整齐放在两个盒中"
+        },
+        "build": {
+          "src": "/images/items/order-045-blocks-build.png",
+          "alt": "孩子把圆柱和方块搭成高塔，两个收纳盒还空着"
+        },
+        "mixedBox": {
+          "src": "/images/items/order-045-blocks-mixedBox.png",
+          "alt": "孩子把圆柱和方块混装进同一个盒，另一个盒空着"
+        }
+      }
+    },
+    "traffic": {
+      "scenes": {
+        "red": {
+          "src": "/images/scenes/order-045-traffic-red.png",
+          "alt": "孩子和成人牵手站在路缘后，行人红灯亮着，车停在停止线后，还没有迈步或指灯"
+        }
+      },
+      "cards": {
+        "junction": {
+          "src": "/images/items/order-045-traffic-junction.png",
+          "alt": "孩子和成人牵手站在斑马线路口，双脚还在路缘后"
+        },
+        "look": {
+          "src": "/images/items/order-045-traffic-look.png",
+          "alt": "孩子和成人牵手留在路缘后，一起抬头看并指向行人信号灯"
+        },
+        "green": {
+          "src": "/images/items/order-045-traffic-green.png",
+          "alt": "绿色行人信号亮着，孩子与成人仍牵手站在路缘后观察车辆"
+        },
+        "cross": {
+          "src": "/images/items/order-045-traffic-cross.png",
+          "alt": "绿色行人信号亮着，成人牵孩子走斑马线，汽车停在停止线后"
+        },
+        "red": {
+          "src": "/images/items/order-045-traffic-red.png",
+          "alt": "红色站立小人行人信号亮着，孩子与成人牵手等在路缘后"
+        },
+        "stop": {
+          "src": "/images/items/order-045-traffic-stop.png",
+          "alt": "行人红灯时，孩子和成人牵手停在路缘后，双脚没有迈出"
+        },
+        "waitOthers": {
+          "src": "/images/items/order-045-traffic-waitOthers.png",
+          "alt": "孩子和成人牵手留在路缘后，只看旁边行人而没有看灯"
+        },
+        "carOnly": {
+          "src": "/images/items/order-045-traffic-carOnly.png",
+          "alt": "孩子和成人牵手留在路缘后，只看停止线后的汽车而没有看灯"
+        },
+        "directCross": {
+          "src": "/images/items/order-045-traffic-directCross.png",
+          "alt": "行人仍是红灯，孩子想过早迈步，成人拉住他使他还留在人行道"
+        }
+      }
+    }
+  }
+}

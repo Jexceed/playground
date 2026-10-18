@@ -1,0 +1,35 @@
+{
+  "model": "gpt-6.1-sol",
+  "generator": "built-in image_gen",
+  "useCase": "illustration-story",
+  "generatedFile": "/Users/chiang/.codex/generated_images/01a14fa7-7829-7452-8423-d2592d12ab53/exec-7c7212ff-564a-41f1-bb99-b7d47fcc6bc7.png",
+  "reference": "public/images/scenes/source/drinking-thirsty.png",
+  "prompt": "Use case: illustration-story. Create ONE wide 16:9 children's educational story scene, matching the attached reference's warm watercolor and colored-pencil texture on cream paper, same cute preschool boy with short dark brown hair, large brown eyes, orange short-sleeved shirt and blue trousers. Reference image is style and character reference only. Scene: sunny simple home kitchen, child standing behind a low wooden table. He holds up BOTH open empty hands at chest height toward viewer: very clear brown mud smears on palms and fingers. His expression attentive, no food in hands. On table are 4 loose round cookies resting directly on a clean pale paper mat, a separate visibly EMPTY ceramic plate. At left is small sink and faucet, OFF, hands nowhere near water. This is INITIAL situation BEFORE washing or eating; no washing action, no cookie in mouth, no food touching child, no completed correct action. Focus cleanly on muddy hands, loose cookies, empty plate. Warm soft natural light, tidy sparse backdrop, age-4 clarity. No text, labels, symbols, arrows, borders, panels or watermark. Landscape 16:9 composition, all key items safely inset.",
+  "sourceDimensions": {
+    "width": 1672,
+    "height": 941
+  },
+  "outputs": [
+    {
+      "key": "dirty",
+      "path": "public/images/scenes/order-045-snack-dirty.png",
+      "resize": {
+        "width": 1200,
+        "height": 675,
+        "fit": "fill"
+      }
+    }
+  ],
+  "visualReview": {
+    "status": "reviewed",
+    "reviewedBy": "gpt-6.1-sol",
+    "date": "2026-10-18",
+    "checks": [
+      "initial situation does not complete intended next action",
+      "each card matches its manifest meaning",
+      "clean and muddy hands distinguished for snack",
+      "cropped action cards have no neighbouring-cell fragments"
+    ],
+    "limitations": []
+  }
+}
