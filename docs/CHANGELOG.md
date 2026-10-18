@@ -1,5 +1,16 @@
 # Changelog
 
+## 2026-10-18
+
+### Restore drinking-story context and visible action sequences
+
+- Traced the scene regression to `940271cb`: all 24 order-plan scene references were removed. The drinking questions previously borrowed a handwashing/snack picture, so the correction uses two matching initial scenes instead of restoring that mismatch.
+- Restored context for `logic-order-plan-1/-9/-18`. Children first see the situation, then open the missing-step task; they can return to the scene without losing their answer. Added six local action pictures for thirst, taking a cup, pouring, drinking, taking another cup and carrying an empty cup.
+- Correct answers now fill the blank and show a paced four/three-step demonstration with pause, previous/next, card selection and replay. Reduced-motion settings disable autoplay and visual transitions. Incorrect answers keep the gap. Navigation/reset cancels the previous playback.
+- Stable IDs, choices, answers and existing progress remain unchanged. Other enlightenment questions and all exploration content are unchanged. The other 21 order-plan contexts remain a separate visual-content follow-up; this is not a full restoration of that group.
+- Passed production build, curriculum audit, 46 targeted regressions and all 4055 voice-media checks. Standard Edge voice export/manifest align with no failures or macOS/mixed-local fallback. Rebuilt/installed the Applications app and completed targeted native context/playback/input checks. Evidence: `specs/044-drinking-sequence-story/verification.md`.
+
+
 All meaningful project changes should be recorded here. Keep entries factual and
 grouped by date.
 

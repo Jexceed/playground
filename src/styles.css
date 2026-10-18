@@ -3563,3 +3563,57 @@ button:focus-visible {
 .progressive-game[data-game="logic-stop-think"] .visual-token .kid-illustration { width:88px; height:88px; }
 /* Long history or expanded parent notes scroll within the support rail. */
 [data-section="enlightenment"] .side-panel { position:sticky; top:12px; max-height:calc(100vh - 24px); overflow-y:auto; align-content:start; scrollbar-width:thin; }
+
+/* Water stories keep the initial context and the action sequence separately readable. */
+.progressive-game .order-story { border: 1px solid #d2dfcb; border-radius: 12px; padding: 12px; background: #f7f8ed; min-width: 0; }
+.order-story-intro figure { margin: 0; width: 100%; height: 300px; display: grid; place-items: center; }
+.order-story-intro figure img { width: 100%; height: 100%; min-height: 0; object-fit: contain; border-radius: 8px; }
+.order-story-intro-controls, .order-story-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.order-story-intro-controls { margin-top: 10px; font-weight: 650; }
+.order-story-toolbar { margin-bottom: 12px; }
+.order-story-toolbar button { padding: 6px 12px; font-size: 14px; }
+.order-story-steps { display: flex; list-style: none; padding: 0; margin: 0; gap: 18px; }
+.order-story-steps li { flex: 1 1 0; min-width: 0; position: relative; border: 2px solid #d8cebb; background: #fffdf5; border-radius: 10px; }
+.order-story-steps li + li::before { content: '→'; position: absolute; left: -18px; top: 42%; width: 16px; text-align: center; color: #73806f; }
+.order-story-steps button { display: flex; flex-direction: column; padding: 6px; width: 100%; height: 100%; border: none; border-radius: 8px; background: transparent; box-shadow: none; color: #304536; }
+.order-story-steps img, .order-story-missing { display: block; width: 100%; aspect-ratio: 1; object-fit: contain; border-radius: 5px; }
+.order-story-missing { display: grid; place-items: center; font-size: 72px; font-weight: 600; color: #a88d60; background: #f4eddc; }
+.order-story-step-label { width: 100%; display: flex; align-items: center; justify-content: center; gap: 4px; padding-top: 6px; font-size: 16px; white-space: nowrap; }
+.order-story-step-label b { font-size: 12px; width: 17px; height: 17px; border-radius: 50%; background: #e8eddf; }
+.order-story-step-label svg { flex-shrink: 0; }
+.order-story-steps .order-step-filled { border-color: #56a785; }
+.order-story-steps .order-step-current { outline: 3px solid #e7a740; outline-offset: 2px; background: #fff3d9; }
+.order-story-demonstration { display: flex; align-items: center; justify-content: center; gap: 24px; padding-bottom: 10px; }
+.order-story-demonstration > img { width: 160px; height: 160px; object-fit: contain; border-radius: 10px; }
+.order-story-current { margin: 0 0 12px; font-size: 21px; font-weight: 750; }
+.order-story-playback { display: flex; gap: 6px; flex-wrap: wrap; }
+.order-story-playback button { padding: 8px 10px; font-size: 14px; }
+.order-story-solved .order-story-steps { max-width: 500px; margin: 0 auto; }
+.order-story-solved .order-story-steps img { max-height: 72px; }
+.order-story-solved .order-story-step-label { font-size: 13px; }
+.order-story-solved .order-story-step-label svg { display: none; }
+.order-answer-image { width: 42px; height: 42px; object-fit: contain; border-radius: 5px; }
+.order-story-frame-playing { animation: order-frame-enter 450ms ease-out; }
+@keyframes order-frame-enter { from { opacity: .35; transform: translateX(8px); } to { opacity: 1; transform: translateX(0); } }
+@media (prefers-reduced-motion: reduce) { .order-story-frame-playing { animation: none; } }
+@media (max-width: 700px) {
+  .order-story-intro figure { height: auto; aspect-ratio: 16 / 9; }
+  .order-story-intro-controls { flex-direction: column; align-items: stretch; }
+  .order-story-steps { gap: 10px; }
+  .order-story-steps li + li::before { left: -12px; width: 10px; font-size: 12px; }
+  .order-story-step-label { font-size: 12px; white-space: normal; flex-wrap: wrap; }
+  .order-story-step-label svg { display: none; }
+  .order-story-step-label b { display: none; }
+  .order-story-missing { font-size: 40px; }
+  .order-story-demonstration { gap: 10px; }
+  .order-story-demonstration > img { width: 120px; height: 120px; }
+  .order-story-current { font-size: 16px; }
+}
+.order-story-intro-controls button, .order-story-toolbar button, .order-story-playback button { display: inline-flex; align-items: center; justify-content: center; gap: 6px; border: 1px solid #bbccba; border-radius: 9px; min-height: 38px; padding: 8px 12px; background: #fffdf7; color: #355746; font: inherit; font-size: 14px; font-weight: 650; cursor: pointer; }
+.order-story-intro-controls button.primary { background: #397d62; border-color: #397d62; color: white; font-size: 17px; min-height: 44px; }
+.order-story-playback button:disabled { opacity: .4; cursor: default; }
+.order-story button:focus-visible { outline: 3px solid #d39528; outline-offset: 3px; }
+.answer-grid-story .answer-choice { gap: 6px; padding: 8px; font-size: 16px; }
+.answer-grid-story .order-answer-image { width: 64px; height: 64px; flex-shrink: 0; }
+.answer-grid-story .order-answer-image-solved { width: 42px; height: 42px; }
+@media (max-width: 700px) { .answer-grid-story .answer-choice { flex-direction: column; font-size: 14px; } .answer-grid-story .order-answer-image { width: 60px; height: 60px; } }

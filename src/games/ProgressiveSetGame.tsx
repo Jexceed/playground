@@ -1,6 +1,8 @@
 import { ArrowRight, Check, RotateCcw } from "lucide-react";
 import { Fragment, useEffect, useId, useMemo, useRef, useState } from "react";
 import type { CSSProperties } from "react";
+import { OrderSequenceBoard } from "../components/OrderSequenceBoard";
+import { drinkingImage } from "../data/orderStories";
 import { GuideMascot } from "../components/GuideMascot";
 import { VisualGlyph, VisualToken, visualMetaFor, visualParts } from "../components/VisualToken";
 import { imageGallery } from "../data/imageGallery";
@@ -29,6 +31,7 @@ export function ProgressiveSetGame({
   // App keys this component by game.id; each mount starts on that group's saved round.
   const initialRoundIndex = Math.min(Math.max(requestedRoundIndex, 0), game.rounds.length - 1);
   const [roundIndex, setRoundIndex] = useState(initialRoundIndex);
+  const [storyTaskRound, setStoryTaskRound] = useState<string | null>(null);
   const [selected, setSelected] = useState<string | null>(null);
   const [answered, setAnswered] = useState(false);
   const [retryMessage, setRetryMessage] = useState<string | null>(null);
@@ -41,6 +44,7 @@ export function ProgressiveSetGame({
     const shouldReadRequestedRound = requestedRoundReadKey !== lastRoundReadKey.current;
     if (shouldReadRequestedRound) lastRoundReadKey.current = requestedRoundReadKey;
     if (nextIndex !== roundIndex) {
+      setStoryTaskRound(null);
       setRoundIndex(nextIndex);
       setSelected(null);
       setAnswered(false);
@@ -54,6 +58,7 @@ export function ProgressiveSetGame({
   }, [game.rounds, requestedRoundIndex, requestedRoundReadKey, roundIndex]);
 
   const round = game.rounds[roundIndex];
+  const showStoryScene = Boolean(round.sequenceStory && storyTaskRound !== round.id);
   const isCorrect = answered && selected === round.answer;
   const isLastRound = roundIndex === game.rounds.length - 1;
   const timedObservation = Boolean(round.observation);
@@ -120,6 +125,7 @@ export function ProgressiveSetGame({
     }
     const nextIndex = isLastRound ? game.rounds.findIndex(item => !completedRoundIds.has(item.id)) : roundIndex + 1;
     const requestedRound = game.rounds[nextIndex];
+    setStoryTaskRound(null);
     setRoundIndex(nextIndex);
     onRoundIndexChange(nextIndex);
     setSelected(null);
@@ -130,6 +136,7 @@ export function ProgressiveSetGame({
   }
 
   function resetGame() {
+    setStoryTaskRound(null);
     setRoundIndex(0);
     onRoundIndexChange(0);
     setSelected(null);
@@ -169,6 +176,11 @@ export function ProgressiveSetGame({
       </div>
 
       <RoundBoard
+        key={round.id}
+        solved={isCorrect}
+        showStoryScene={showStoryScene}
+        onStoryStart={() => { setStoryTaskRound(round.id); speak(joinVoiceLine(round.prompt, round.instruction)); }}
+        onStoryScene={() => { stopSpeech(); setStoryTaskRound(null); }}
         gameId={game.id}
         memoryCovered={observationPhase === "answering"}
         round={round}
@@ -203,13 +215,14 @@ export function ProgressiveSetGame({
         </p>
       )}
 
-      <div className={`choice-grid answer-grid ${round.graphicChallenge ? "answer-grid-graphic" : ""}`}>
+      {!showStoryScene && <div className={`choice-grid answer-grid ${round.sequenceStory ? "answer-grid-story" : ""} ${round.graphicChallenge ? "answer-grid-graphic" : ""}`}>
         {round.choices.map((choice) => {
           const active = selected === choice.value;
           const wrong = answered && active && choice.value !== round.answer;
           const correct = answered && choice.value === round.answer;
           const graphicOption = round.graphicChallenge?.options.find((option) => option.value === choice.value);
           const voiceLabel = labelForVoice(choice.label);
+          const storyChoiceImage = round.sequenceStory && round.choices.every(item => drinkingImage(item.label)) ? drinkingImage(choice.label) : undefined;
           return (
             <button
               aria-label={voiceLabel}
@@ -221,13 +234,16 @@ export function ProgressiveSetGame({
               onClick={() => choose(choice.value)}
             >
               {correct && <Check size={18} />}
-              <ChoiceContent graphicOption={graphicOption} label={choice.label} value={choice.value} />
+              {storyChoiceImage
+                ? <><img className={`order-answer-image ${isCorrect ? "order-answer-image-solved" : ""}`} src={publicAsset(storyChoiceImage.src)} alt="" /><span>{choice.label}</span></>
+                : <ChoiceContent graphicOption={graphicOption} label={choice.label} value={choice.value} />}
+
             </button>
           );
         })}
-      </div>
+      </div>}
 
-      <div className="control-row">
+      {!showStoryScene && <div className="control-row">
         <button type="button" onClick={resetGame}>
           <RotateCcw size={18} />
           从头来
@@ -243,9 +259,9 @@ export function ProgressiveSetGame({
             <ArrowRight size={18} />
           </button>
         )}
-      </div>
+      </div>}
 
-      {(answered || retryMessage) && (
+      {!showStoryScene && (answered || retryMessage) && (
         <p className={`feedback ${isCorrect ? "success" : "needs-work"}`}>
           {isCorrect ? round.success : retryMessage}
         </p>
@@ -372,6 +388,10 @@ function labelForVoice(label: string) {
 }
 
 function RoundBoard({
+  solved,
+  showStoryScene,
+  onStoryStart,
+  onStoryScene,
   gameId,
   memoryCovered,
   subitizeVisible,
@@ -381,6 +401,10 @@ function RoundBoard({
   onSubitizePeek,
   onReviewMemory,
 }: {
+  solved: boolean;
+  showStoryScene: boolean;
+  onStoryStart: () => void;
+  onStoryScene: () => void;
   gameId: string;
   memoryCovered: boolean;
   subitizeVisible: boolean;
@@ -390,6 +414,9 @@ function RoundBoard({
   onSubitizePeek?: () => void;
   onReviewMemory?: () => void;
 }) {
+  if (round.sequenceStory === "drinking" && round.sceneImage) {
+    return <OrderSequenceBoard round={round} solved={solved} showScene={showStoryScene} onStart={onStoryStart} onScene={onStoryScene} />;
+  }
   const scene = sceneForGame(gameId);
   const inside = round.visualGroups?.find(group => group.label === "盒子里面");
   const outside = round.visualGroups?.find(group => group.label === "盒子外面");

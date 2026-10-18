@@ -41,6 +41,9 @@ small enough to turn into a Spec Kit feature.
 
 ## P1
 
+- Review and supply matching initial-state scenes for the other 21 “先做什么” questions whose scene references were removed in `940271cb`. Feature 044 repairs drinking rounds 1/9/18 only. Use `specs/044-drinking-sequence-story/verification/removed-order-scenes.json` as the inventory; do not blindly reattach scenes that depict the wrong condition or already perform the missing action. Keep useful context distinct from decorative or contradictory pictures.
+- Observe parent-child play of the 044 drinking story and calibrate the 2.4-second step pace. Reduced-motion behavior has code review coverage; repeat with the OS preference enabled on a suitable acceptance machine without changing a user's personal settings during routine QA.
+
 - Observe parent-child play of the 043 corrections, especially two-condition distractors, word-picture support and the front/right-side viewing arrows. Automated correctness and adult UI checks do not establish reading or reasoning load for children.
 
 - Complete the remaining 029 T120–T126 using the detailed gaps in specs/032-exploration-quality-audit/family-coverage.json: quantity/relative-position grids and missing math/logic/graphic/memory/language/physical-task branches. Preserve valid existing basics and stable progress; do not replace a missing operation with a non-equivalent single-choice question.

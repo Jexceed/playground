@@ -1,0 +1,20 @@
+Window: "小小思考屋", App: 小小思考屋.
+0 standard window 小小思考屋, Secondary Actions: Raise
+	1 scroll area
+		2 HTML content Description: 小小思考屋, URL: tauri://localhost
+			3 container 小小思考屋启动页
+				4 text 小小思考屋
+				5 text 正在打开今天的小小问题
+	6 close button
+	7 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	8 minimize button
+	9 text 小小思考屋
+10 menu bar
+	11 小小思考屋
+	12 File
+	13 Edit
+	14 View
+	15 Window
+	16 Help
+
+The focused UI element is 2 HTML content Description: 小小思考屋, URL: tauri://localhost

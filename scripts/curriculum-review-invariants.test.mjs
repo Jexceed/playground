@@ -21,6 +21,9 @@ allow(enlightenment, 'logic-sorter-switch', [9,10,11], fields('visualGroups','ch
 allow(enlightenment, 'logic-order-plan', [7,24], fields('prompt','sequence','choices','success','retry','parentPrompt'));
 allow(enlightenment, 'logic-order-plan', [19,20], fields('prompt','choices','success'));
 allow(enlightenment, 'logic-order-plan', [21], fields('prompt','choices'));
+// 044 restores context for these three unchanged answer contracts. Its own
+// frozen c6c72277 baseline checks this narrower field set independently.
+allow(enlightenment, 'logic-order-plan', [1,9,18], fields('instruction','sceneImage','sequenceStory'));
 allow(enlightenment, 'logic-condition-detective', [6], fields('prompt','instruction','difficultyNote','sequence','choices','success','retry','parentPrompt'));
 allow(enlightenment, 'logic-fix-plan', [6], fields('prompt','instruction','difficultyNote','sequence','choices','success','retry','parentPrompt'));
 allow(enlightenment, 'logic-fix-plan', [7], fields('prompt','instruction','sequence','visualGroups','success','retry','parentPrompt'));

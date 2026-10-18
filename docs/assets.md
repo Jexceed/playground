@@ -179,3 +179,11 @@ Deterministic diagram PNGs and source SVGs live in public/images/items/explorati
 - `explorationArt.boxStates` registers matching open/closed illustrations. E01 matching rounds keep original word labels and voice and add these pictures plus exact high/low, above/below, long/short and many/few diagrams. Generated math diagrams remain reproducible through `pnpm generate:exploration-media`.
 - G16 direction arrows use the matrix's front edge and right side consistently; the right-side silhouette lists front row before back row. E07 red squares have equal width and height. Exact geometric evidence is code-generated, not image-gen.
 - Illustration usage remains strict: every registered card has a rendered reference, including all three new 1×1 cards. Original atlas/source preservation and the authorized per-question scope have regression coverage in `scripts/curriculum-review-invariants.test.mjs`.
+
+## Drinking story assets (044)
+
+`public/images/scenes/drinking-thirsty.png` and `drinking-empty-cup.png` are 1200×675 PNGs registered in `imageGallery.scenes`. They represent different initial states: an empty cup still on the table, or an empty cup already held. Both retain their generation originals under `scenes/source/`.
+
+Six 600×600 action PNGs live in `public/images/items/drinking-*.png` and are registered in `imageGallery.items`. Four steps come from the 2×2 `items/source/drinking-actions.png`; the two distractors come from the 2×1 `items/source/drinking-distractors.png`. Preparation uses exact quadrant/half extraction with Sharp, then 600×600 resizing. Scene sources are resized to 1200×675. Generation used the built-in image_gen tool. Prompts and provenance are retained in `scenes/source/drinking-044-generation.json` and `items/source/drinking-distractors-prompt.txt`.
+
+All six action images are rendered by `src/data/orderStories.ts` and `OrderSequenceBoard`; answer choices use the same semantic image mapping. No runtime reference points into `.codex/generated_images`. A shared cup icon is not an adequate representation of thirst, pouring or drinking.

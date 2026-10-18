@@ -1295,7 +1295,11 @@ function makeOrderRounds(): RoundInput[] {
     return {
       level: index < 3 ? "L4" as AbilityLevel : index < 6 ? "L5" as AbilityLevel : "L6" as AbilityLevel,
       prompt: scene.prompt,
-      instruction: "按图卡从左到右，找出缺少的一步。",
+      instruction: [0, 8, 17].includes(index) ? "先看场景，再按图卡从左到右，找出缺少的一步。" : "按图卡从左到右，找出缺少的一步。",
+      ...([0, 8, 17].includes(index) ? {
+        sequenceStory: "drinking" as const,
+        sceneImage: index === 0 ? imageGallery.scenes.drinkingThirsty : imageGallery.scenes.drinkingEmptyCup,
+      } : {}),
       difficultyNote: `${stepCount} 张流程图卡；${scene.note.replace(/^\d+ 步[^：]*：/, "")}`,
       sequence: scene.seq,
       choices,

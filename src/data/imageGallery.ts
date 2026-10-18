@@ -12,6 +12,14 @@ export type GalleryImage = {
 export const imageGallery = {
   exploration: explorationImages,
   scenes: {
+    drinkingThirsty: {
+      src: "/images/scenes/drinking-thirsty.png",
+      alt: "小朋友口渴了，手还空着。桌上放着一个空杯子和装有饮用水的小水壶。",
+    },
+    drinkingEmptyCup: {
+      src: "/images/scenes/drinking-empty-cup.png",
+      alt: "小朋友已经拿到了杯子，杯子里面还是空的。装有饮用水的小水壶放在桌上。",
+    },
     enlightenmentBridge1: {
       src: "/images/scenes/enlightenment-bridge-1.png",
       alt: "桌面搭桥模型：河岸、小岛和木板按相同格距绘制，图中标出距离和可用木板长度。",
@@ -189,6 +197,12 @@ export const imageGallery = {
     },
   },
   items: {
+    drinkingThirsty: { src: "/images/items/drinking-thirsty.png", alt: "小朋友摸着喉咙，口渴了，杯子还放在桌上。" },
+    drinkingTakeCup: { src: "/images/items/drinking-take-cup.png", alt: "小朋友拿起一个空杯子，杯子里还没有水。" },
+    drinkingPour: { src: "/images/items/drinking-pour.png", alt: "小朋友把水壶里的饮用水倒进桌上的杯子，水流进入杯中。" },
+    drinkingDrink: { src: "/images/items/drinking-drink.png", alt: "小朋友双手拿着杯子，杯口贴着嘴，正在喝水。" },
+    drinkingAnotherCup: { src: "/images/items/drinking-another-cup.png", alt: "桌上已经有一个空杯子，小朋友又拿起了第二个空杯子。" },
+    drinkingCarryEmpty: { src: "/images/items/drinking-carry-empty.png", alt: "小朋友双手端着没有水的空杯子往前走，水壶还留在桌上。" },
     openDoor: { src: "/images/items/enlightenment/open-door.png", alt: "已经打开的门" },
     setSquare: { src: "/images/items/enlightenment/set-square.png", alt: "带刻度的三角尺" },
     soilPot: { src: "/images/items/enlightenment/soil-pot.png", alt: "只有土，还没播种的花盆" },

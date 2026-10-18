@@ -101,6 +101,7 @@ export type GameRound = {
   instruction: string;
   difficultyNote?: string;
   sceneImage?: RoundSceneImage;
+  sequenceStory?: "drinking";
   visualGroups?: RoundVisualGroup[];
   sequence?: string[];
   patternUnit?: string[];
