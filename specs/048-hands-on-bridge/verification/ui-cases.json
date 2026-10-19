@@ -1,0 +1,375 @@
+{
+  "game": {
+    "id": "logic-space-bridge",
+    "world": "logic",
+    "title": "桥怎么搭",
+    "subtitle": "看河宽和木板长短，先预测，再调整计划。",
+    "goal": "训练空间判断、规划和试错调整。",
+    "parentPrompt": "可以问：这块够不够长？如果不够，下一步换什么？",
+    "abilityTags": [
+      "空间判断",
+      "规划",
+      "试错调整"
+    ],
+    "level": "L6",
+    "rounds": [
+      {
+        "level": "L3",
+        "prompt": "选木板前，先量哪一段？",
+        "instruction": "点两个地方，连出要量的距离。",
+        "difficultyNote": "比较起点与终点，找出木板需要跨过的距离。",
+        "sceneImage": {
+          "src": "/images/scenes/enlightenment-bridge-1.png",
+          "alt": "桌面搭桥模型：河岸、小岛和木板按相同格距绘制，图中标出距离和可用木板长度。"
+        },
+        "choices": [
+          {
+            "label": "小熊到木板",
+            "value": "guess-longest"
+          },
+          {
+            "label": "木板到小旗",
+            "value": "try-nearest"
+          },
+          {
+            "label": "两岸之间",
+            "value": "river-width"
+          }
+        ],
+        "answer": "river-width",
+        "success": "要量两岸之间有多远，才能选够长的木板。",
+        "retry": "看看木板要跨过哪里，再点两个地方。",
+        "parentPrompt": "问她：你点了哪两个地方？木板要跨过哪一段？",
+        "abilityTags": [
+          "空间判断",
+          "长度比较"
+        ],
+        "id": "logic-space-bridge-1"
+      },
+      {
+        "level": "L6",
+        "prompt": "借助小岛，把两边都搭上。",
+        "instruction": "先点木板，再点河上的空位。点已放的木板可以拿回。",
+        "difficultyNote": "选木板并试放，逐段比较长度和支点。",
+        "sceneImage": {
+          "src": "/images/scenes/enlightenment-bridge-2.png",
+          "alt": "桌面搭桥模型：河岸、小岛和木板按相同格距绘制，图中标出距离和可用木板长度。"
+        },
+        "choices": [
+          {
+            "label": "只用一块",
+            "value": "same-length"
+          },
+          {
+            "label": "每边搭一块",
+            "value": "two-planks"
+          },
+          {
+            "label": "都放岸边",
+            "value": "separate"
+          }
+        ],
+        "answer": "two-planks",
+        "success": "两边都搭上了，小熊能经过小岛到对岸。",
+        "retry": "找找哪里还没搭上，换一块木板试试。",
+        "parentPrompt": "请她指着木板两头，说说搭在哪里。没搭上时，先试着修改，再解释原因。",
+        "abilityTags": [
+          "空间判断",
+          "分段规划"
+        ],
+        "id": "logic-space-bridge-2"
+      },
+      {
+        "level": "L6",
+        "prompt": "用两块木板，搭到对岸。",
+        "instruction": "先点木板，再点河上的空位。点已放的木板可以拿回。",
+        "difficultyNote": "选木板并试放，逐段比较长度和支点。",
+        "sceneImage": {
+          "src": "/images/scenes/enlightenment-bridge-3.png",
+          "alt": "桌面搭桥模型：河岸、小岛和木板按相同格距绘制，图中标出距离和可用木板长度。"
+        },
+        "choices": [
+          {
+            "label": "短木板和最短板",
+            "value": "short-tiny"
+          },
+          {
+            "label": "只用长木板",
+            "value": "long-only"
+          },
+          {
+            "label": "长木板和短木板",
+            "value": "long-short"
+          }
+        ],
+        "answer": "long-short",
+        "success": "两块木板分别连上两段，小熊可以过去了。",
+        "retry": "找找哪里还没搭上，换一块木板试试。",
+        "parentPrompt": "请她指着木板两头，说说搭在哪里。没搭上时，先试着修改，再解释原因。",
+        "abilityTags": [
+          "空间判断",
+          "分段规划"
+        ],
+        "id": "logic-space-bridge-3"
+      },
+      {
+        "level": "L4",
+        "prompt": "哪块木板能让小熊过去？",
+        "instruction": "先点木板，再点河上的空位。点已放的木板可以拿回。",
+        "difficultyNote": "选木板并试放，逐段比较长度和支点。",
+        "sceneImage": {
+          "src": "/images/scenes/enlightenment-bridge-4.png",
+          "alt": "桌面搭桥模型：河岸、小岛和木板按相同格距绘制，图中标出距离和可用木板长度。"
+        },
+        "choices": [
+          {
+            "label": "长木板",
+            "value": "long"
+          },
+          {
+            "label": "短木板",
+            "value": "short"
+          },
+          {
+            "label": "最短板",
+            "value": "tiny"
+          }
+        ],
+        "answer": "long",
+        "success": "这块木板够长，两头都搭在岸上。",
+        "retry": "找找哪里还没搭上，换一块木板试试。",
+        "parentPrompt": "请她指着木板两头，说说搭在哪里。没搭上时，先试着修改，再解释原因。",
+        "abilityTags": [
+          "空间判断",
+          "长度比较"
+        ],
+        "id": "logic-space-bridge-4"
+      },
+      {
+        "level": "L6",
+        "prompt": "两边都要有桥，试着搭一搭。",
+        "instruction": "先点木板，再点河上的空位。点已放的木板可以拿回。",
+        "difficultyNote": "选木板并试放，逐段比较长度和支点。",
+        "sceneImage": {
+          "src": "/images/scenes/enlightenment-bridge-5.png",
+          "alt": "桌面搭桥模型：河岸、小岛和木板按相同格距绘制，图中标出距离和可用木板长度。"
+        },
+        "choices": [
+          {
+            "label": "只用长板",
+            "value": "long-only"
+          },
+          {
+            "label": "只用短板",
+            "value": "short-only"
+          },
+          {
+            "label": "每边搭一块",
+            "value": "two-planks"
+          }
+        ],
+        "answer": "two-planks",
+        "success": "两段都连上了，木板两头都有支点。",
+        "retry": "找找哪里还没搭上，换一块木板试试。",
+        "parentPrompt": "请她指着木板两头，说说搭在哪里。没搭上时，先试着修改，再解释原因。",
+        "abilityTags": [
+          "空间判断",
+          "分段规划"
+        ],
+        "id": "logic-space-bridge-5"
+      },
+      {
+        "level": "L6",
+        "prompt": "每一段都搭好，让小熊过去。",
+        "instruction": "先点木板，再点河上的空位。点已放的木板可以拿回。",
+        "difficultyNote": "选木板并试放，逐段比较长度和支点。",
+        "sceneImage": {
+          "src": "/images/scenes/enlightenment-bridge-6.png",
+          "alt": "桌面搭桥模型：河岸、小岛和木板按相同格距绘制，图中标出距离和可用木板长度。"
+        },
+        "choices": [
+          {
+            "label": "长木板和短木板",
+            "value": "long-short"
+          },
+          {
+            "label": "短木板和最短板",
+            "value": "short-tiny"
+          },
+          {
+            "label": "只用长木板",
+            "value": "long-only"
+          }
+        ],
+        "answer": "long-short",
+        "success": "每一段的木板都够长，小熊可以经过小岛。",
+        "retry": "找找哪里还没搭上，换一块木板试试。",
+        "parentPrompt": "请她指着木板两头，说说搭在哪里。没搭上时，先试着修改，再解释原因。",
+        "abilityTags": [
+          "空间判断",
+          "分段规划"
+        ],
+        "id": "logic-space-bridge-6"
+      },
+      {
+        "level": "L4",
+        "prompt": "选一块木板，搭到对岸。",
+        "instruction": "先点木板，再点河上的空位。点已放的木板可以拿回。",
+        "difficultyNote": "选木板并试放，逐段比较长度和支点。",
+        "sceneImage": {
+          "src": "/images/scenes/enlightenment-bridge-7.png",
+          "alt": "桌面搭桥模型：河岸、小岛和木板按相同格距绘制，图中标出距离和可用木板长度。"
+        },
+        "choices": [
+          {
+            "label": "5 格长木板",
+            "value": "long"
+          },
+          {
+            "label": "2 格短木板",
+            "value": "short"
+          },
+          {
+            "label": "1 格最短板",
+            "value": "tiny"
+          }
+        ],
+        "answer": "long",
+        "success": "这块木板够长，两头都搭在岸上。",
+        "retry": "找找哪里还没搭上，换一块木板试试。",
+        "parentPrompt": "请她指着木板两头，说说搭在哪里。没搭上时，先试着修改，再解释原因。",
+        "abilityTags": [
+          "空间判断",
+          "长度比较"
+        ],
+        "id": "logic-space-bridge-7"
+      },
+      {
+        "level": "L6",
+        "prompt": "长板和短板，分别放哪边？",
+        "instruction": "先点木板，再点河上的空位。点已放的木板可以拿回。",
+        "difficultyNote": "选木板并试放，逐段比较长度和支点。",
+        "sceneImage": {
+          "src": "/images/scenes/enlightenment-bridge-8.png",
+          "alt": "桌面搭桥模型：河岸、小岛和木板按相同格距绘制，图中标出距离和可用木板长度。"
+        },
+        "choices": [
+          {
+            "label": "只用长板",
+            "value": "long-only"
+          },
+          {
+            "label": "左短右长",
+            "value": "two-planks"
+          },
+          {
+            "label": "左长右短",
+            "value": "reversed"
+          }
+        ],
+        "answer": "two-planks",
+        "success": "短板搭左边，长板搭右边，两段都连上了。",
+        "retry": "找找哪里还没搭上，换一块木板试试。",
+        "parentPrompt": "请她指着木板两头，说说搭在哪里。没搭上时，先试着修改，再解释原因。",
+        "abilityTags": [
+          "空间判断",
+          "分段规划"
+        ],
+        "id": "logic-space-bridge-8"
+      }
+    ],
+    "kind": "progressiveSet"
+  },
+  "models": [
+    {
+      "key": "enlightenmentBridge1",
+      "width": 5,
+      "supports": [],
+      "lengths": [
+        6,
+        4,
+        2
+      ]
+    },
+    {
+      "key": "enlightenmentBridge2",
+      "width": 6,
+      "supports": [
+        3
+      ],
+      "lengths": [
+        4,
+        4,
+        2
+      ]
+    },
+    {
+      "key": "enlightenmentBridge3",
+      "width": 6,
+      "supports": [
+        4
+      ],
+      "lengths": [
+        5,
+        3,
+        1
+      ]
+    },
+    {
+      "key": "enlightenmentBridge4",
+      "width": 3,
+      "supports": [],
+      "lengths": [
+        4,
+        2,
+        1
+      ]
+    },
+    {
+      "key": "enlightenmentBridge5",
+      "width": 7,
+      "supports": [
+        3
+      ],
+      "lengths": [
+        5,
+        4,
+        2
+      ]
+    },
+    {
+      "key": "enlightenmentBridge6",
+      "width": 8,
+      "supports": [
+        5
+      ],
+      "lengths": [
+        6,
+        4,
+        2
+      ]
+    },
+    {
+      "key": "enlightenmentBridge7",
+      "width": 4,
+      "supports": [],
+      "lengths": [
+        5,
+        2,
+        1
+      ]
+    },
+    {
+      "key": "enlightenmentBridge8",
+      "width": 8,
+      "supports": [
+        3
+      ],
+      "lengths": [
+        6,
+        4,
+        2
+      ]
+    }
+  ]
+}

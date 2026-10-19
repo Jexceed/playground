@@ -2,6 +2,14 @@
 
 ## 2026-10-19
 
+### Let children measure and build bridges directly
+
+- Replaced the eight “桥怎么搭” thumbnail-choice screens with one large interactive scene. Children connect two endpoints in round 1, then select and place real-length boards in rounds 2–8; misplaced boards can be taken back or replaced without restarting the group.
+- Water gaps, available boards and placed boards share one scale. Each physical board has its own identity, including equal-length pieces. Feedback points out the missing span; round 5 accepts both valid arrangements. Success moves the bear across the completed route, with replay and current-round reset controls.
+- Simplified only these eight rounds' wording and retained IDs, model data, answer values, option order and saved progress. Exported 4210 aligned local voice entries with no failures or fallback.
+- Passed 81 regressions, build and curriculum/illustration/voice audits. Browser checks covered all eight rounds and interaction boundaries at Mac-sized viewports; the rebuilt installed Mac app passed task/wrong/correct checks for all eight. Completion stayed 274/489 and the original question was restored. Evidence: `specs/048-hands-on-bridge/verification.md`.
+
+
 ### Make Logic House pictures readable for young children
 
 - Replaced the eight labeled-basket choices with direct color/shape groups and enlarged the target card. Updated wording consistently while preserving stable answer values and progress.

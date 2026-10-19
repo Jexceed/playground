@@ -5,6 +5,7 @@ import { loadTypeScriptModule } from "./lib/load-ts-module.mjs";
 
 const { games, activitySets, activityVoiceLines } = await loadGameData();
 const { logicSupportVoiceLines } = await loadTypeScriptModule("src/data/logicLessonVisuals.ts");
+const { bridgePlayVoiceLines } = await loadTypeScriptModule("src/domain/bridge-play.ts");
 const { orderStorySteps } = await loadTypeScriptModule("src/data/orderStories.ts");
 const { prepareSpeechText } = await loadTypeScriptModule("src/speech-pronunciation.ts");
 
@@ -162,6 +163,8 @@ for (const game of games) {
     }
   }
 }
+
+for (const text of bridgePlayVoiceLines()) add("system", text, "hands-on-bridge");
 
 for (const line of activityVoiceLines(activitySets)) add(line.kind, line.text, line.context, line.locale);
 

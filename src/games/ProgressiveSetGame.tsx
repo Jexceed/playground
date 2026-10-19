@@ -1,10 +1,10 @@
-import { BridgeContextPicture } from "../components/BridgeContextPicture";
+import { BridgePlayBoard } from "../components/BridgePlayBoard";
+import { bridgePlayCopy, type BridgeAttempt } from "../domain/bridge-play";
 import { LogicLessonBoard, LogicPicture, hasLogicPicture, LogicTaskCue, LogicRelationBoard } from "../components/LogicLessonBoard";
 import { logicLessonFor, logicTaskCueFor, logicActionRules, logicRelationFrames, type LogicLesson } from "../data/logicLessonVisuals";
 import { LogicChoicePicture, logicChoicePictureFor } from "../components/LogicChoicePicture";
-import { LogicBridgeChoice, logicBridgeChoiceFor } from "../components/LogicBridgeChoice";
 import { ArrowRight, Check, RotateCcw } from "lucide-react";
-import { Fragment, useEffect, useId, useMemo, useRef, useState } from "react";
+import { Fragment, useCallback, useEffect, useId, useMemo, useRef, useState } from "react";
 import type { CSSProperties } from "react";
 import { OrderSequenceBoard } from "../components/OrderSequenceBoard";
 import { orderStoryImage } from "../data/orderStories";
@@ -41,6 +41,9 @@ export function ProgressiveSetGame({
   const [answered, setAnswered] = useState(false);
   const [retryMessage, setRetryMessage] = useState<string | null>(null);
   const [completedOnce, setCompletedOnce] = useState(false);
+  const [bridgeAttempt, setBridgeAttempt] = useState<BridgeAttempt | null>(null);
+  const [bridgeReset, setBridgeReset] = useState(0);
+  const onBridgeChange = useCallback((attempt: BridgeAttempt) => { setBridgeAttempt(attempt); setRetryMessage(null); }, []);
   const [observationPhase, setObservationPhase] = useState<ObservationPhase>(() => initialObservationPhase(game.rounds[initialRoundIndex]));
   const lastRoundReadKey = useRef(0);
 
@@ -54,6 +57,7 @@ export function ProgressiveSetGame({
       setSelected(null);
       setAnswered(false);
       setRetryMessage(null);
+      setBridgeAttempt(null);
       setObservationPhase(initialObservationPhase(game.rounds[nextIndex]));
     }
     if (shouldReadRequestedRound) {
@@ -63,6 +67,7 @@ export function ProgressiveSetGame({
   }, [game.rounds, requestedRoundIndex, requestedRoundReadKey, roundIndex]);
 
   const round = game.rounds[roundIndex];
+  const handsOnBridge = game.id === "logic-space-bridge";
   const logicLesson = logicLessonFor(round);
   const showStoryScene = Boolean((round.sequenceStory || logicLesson) && storyTaskRound !== round.id);
   const isCorrect = answered && selected === round.answer;
@@ -104,6 +109,22 @@ export function ProgressiveSetGame({
   }
 
   function checkAnswer() {
+    if (handsOnBridge) {
+      if (!bridgeAttempt?.ready || answered) return;
+      if (bridgeAttempt.valid) {
+        setSelected(round.answer);
+        setAnswered(true);
+        setRetryMessage(null);
+        onRoundComplete(round.id, round.abilityTags);
+        playTone("success");
+        speak(round.success);
+      } else {
+        setRetryMessage(bridgeAttempt.feedback);
+        playTone("error");
+        speak(bridgeAttempt.feedback);
+      }
+      return;
+    }
     if (!selected || !canAnswer || answered) return;
     if (selected === round.answer) {
       setAnswered(true);
@@ -137,6 +158,7 @@ export function ProgressiveSetGame({
     setSelected(null);
     setAnswered(false);
     setRetryMessage(null);
+    setBridgeAttempt(null);
     setObservationPhase(initialObservationPhase(requestedRound));
     if (requestedRound) speak(joinVoiceLine(requestedRound.prompt, requestedRound.instruction));
   }
@@ -148,6 +170,8 @@ export function ProgressiveSetGame({
     setSelected(null);
     setAnswered(false);
     setRetryMessage(null);
+    setBridgeAttempt(null);
+    setBridgeReset(value => value + 1);
     setCompletedOnce(false);
     setObservationPhase(initialObservationPhase(game.rounds[0]));
     const requestedRound = game.rounds[0];
@@ -181,7 +205,9 @@ export function ProgressiveSetGame({
         />
       </div>
 
-      <RoundBoard
+      {handsOnBridge ? <BridgePlayBoard key={`${round.id}-${bridgeReset}`} roundId={round.id} solved={isCorrect} showErrors={Boolean(retryMessage)} onChange={onBridgeChange} onReset={() => {
+        stopSpeech(); setSelected(null); setAnswered(false); setRetryMessage(null); setBridgeAttempt(null); setBridgeReset(value => value + 1);
+      }} /> : <RoundBoard
         key={round.id}
         solved={isCorrect}
         logicLesson={logicLesson}
@@ -214,7 +240,7 @@ export function ProgressiveSetGame({
               }
             : undefined
         }
-      />
+      />}
 
       {(round.observation || round.memory) && !answered && (
         <p className="observation-status" aria-live="polite">
@@ -222,7 +248,7 @@ export function ProgressiveSetGame({
         </p>
       )}
 
-      {!showStoryScene && !((round.sequenceStory || logicLesson) && isCorrect) && <div className={`choice-grid answer-grid ${round.sequenceStory ? "answer-grid-story" : ""} ${logicLesson ? "answer-grid-lesson" : ""} ${round.graphicChallenge ? "answer-grid-graphic" : ""}`}>
+      {!handsOnBridge && !showStoryScene && !((round.sequenceStory || logicLesson) && isCorrect) && <div className={`choice-grid answer-grid ${round.sequenceStory ? "answer-grid-story" : ""} ${logicLesson ? "answer-grid-lesson" : ""} ${round.graphicChallenge ? "answer-grid-graphic" : ""}`}>
         {round.choices.map((choice) => {
           const active = selected === choice.value;
           const wrong = answered && active && choice.value !== round.answer;
@@ -232,12 +258,11 @@ export function ProgressiveSetGame({
           const lessonPicture = logicLesson?.choices[choice.value];
           const illustratedLessonChoice = lessonPicture && hasLogicPicture(lessonPicture);
           const exactPicture = logicChoicePictureFor(game.id, round, choice);
-          const bridgePicture = game.id === "logic-space-bridge" ? logicBridgeChoiceFor(round, choice) : null;
           const storyChoiceImage = round.sequenceStory && round.choices.every(item => orderStoryImage(round, item.label)) ? orderStoryImage(round, choice.label) : undefined;
           return (
             <button
               aria-label={voiceLabel}
-              className={`answer-choice ${exactPicture || bridgePicture ? "answer-choice-picture" : ""} ${graphicOption ? "answer-choice-graphic" : ""} ${isVisualCardChoice(choice.value) ? "answer-choice-visual-card" : ""} ${active ? "active" : ""} ${correct ? "correct" : ""} ${wrong ? "wrong" : ""}`}
+              className={`answer-choice ${exactPicture ? "answer-choice-picture" : ""} ${graphicOption ? "answer-choice-graphic" : ""} ${isVisualCardChoice(choice.value) ? "answer-choice-visual-card" : ""} ${active ? "active" : ""} ${correct ? "correct" : ""} ${wrong ? "wrong" : ""}`}
               data-testid={`answer-${choice.value}`}
               disabled={answered || !canAnswer}
               key={choice.value}
@@ -247,7 +272,6 @@ export function ProgressiveSetGame({
               {correct && <Check size={18} />}
               {illustratedLessonChoice ? <><LogicPicture picture={lessonPicture!}/><span>{choice.label}</span></>
                 : lessonPicture?.textOnly ? <span>{choice.label}</span>
-                : bridgePicture ? <><LogicBridgeChoice gameId={game.id} round={round} choice={choice}/><span>{choice.label}</span></>
                 : exactPicture ? <><LogicChoicePicture gameId={game.id} round={round} choice={choice}/><span>{choice.label}</span></>
                 : storyChoiceImage
                 ? <><img className={`order-answer-image ${isCorrect ? "order-answer-image-solved" : ""}`} src={publicAsset(storyChoiceImage.src)} alt="" /><span>{choice.label}</span></>
@@ -261,11 +285,11 @@ export function ProgressiveSetGame({
       {!showStoryScene && <div className="control-row">
         <button type="button" onClick={resetGame}>
           <RotateCcw size={18} />
-          从头来
+          {handsOnBridge ? "回第1题" : "从头来"}
         </button>
         {!answered && (
-          <button type="button" className="primary" disabled={!selected || !canAnswer} onClick={checkAnswer} data-testid="check-answer">
-            <span>看看对不对</span>
+          <button type="button" className="primary" disabled={handsOnBridge ? !bridgeAttempt?.ready : !selected || !canAnswer} onClick={checkAnswer} data-testid="check-answer">
+            <span>{handsOnBridge ? bridgePlayCopy.check : "看看对不对"}</span>
           </button>
         )}
         {answered && (
@@ -463,7 +487,7 @@ function RoundBoard({
   return (
     <section className={boardClasses} aria-label="题目画面">
       <LogicTaskCue gameId={gameId} round={round} solved={solved}/>
-      {round.sceneImage && (gameId === "logic-space-bridge" ? <BridgeContextPicture image={round.sceneImage}/> :
+      {round.sceneImage && (
         <figure className="scene-image-card">
           <img src={publicAsset(round.sceneImage.src)} alt={round.sceneImage.alt} />
         </figure>

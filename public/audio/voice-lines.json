@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-19T02:26:53.980Z",
+  "generatedAt": "2026-10-19T03:28:15.704Z",
   "recommendedVoice": "warm adult female Mandarin, smiling, preschool teacher, 0.85 speed, crisp consonants",
-  "lineCount": 4171,
+  "lineCount": 4210,
   "lines": [
     {
       "id": "game-title-数一数",
@@ -15196,9 +15196,9 @@
       ]
     },
     {
-      "id": "prompt-想选一块能搭过去的木板-先看哪个距离决定它至少要多长-这是桌面模型-每格一样长-木板两头都要搭在河岸或小岛上",
+      "id": "prompt-选木板前-先量哪一段-点两个地方-连出要量的距离",
       "kind": "prompt",
-      "text": "想选一块能搭过去的木板，先看哪个距离决定它至少要多长？这是桌面模型。每格一样长，木板两头都要搭在河岸或小岛上。",
+      "text": "选木板前，先量哪一段？点两个地方，连出要量的距离。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -15206,9 +15206,9 @@
       ]
     },
     {
-      "id": "success-木板要跨过两岸之间的空隙-所以先比较这段距离和木板长度",
+      "id": "success-要量两岸之间有多远-才能选够长的木板",
       "kind": "success",
-      "text": "木板要跨过两岸之间的空隙，所以先比较这段距离和木板长度。",
+      "text": "要量两岸之间有多远，才能选够长的木板。",
       "locale": "zh-CN",
       "tone": "warm, delighted, clear",
       "contexts": [
@@ -15216,37 +15216,23 @@
       ]
     },
     {
-      "id": "retry-先沿每段空隙数格子-再比木板有几格-每一段都要连上-两头也都要有支点",
+      "id": "retry-看看木板要跨过哪里-再点两个地方",
       "kind": "retry",
-      "text": "先沿每段空隙数格子，再比木板有几格。每一段都要连上，两头也都要有支点。",
+      "text": "看看木板要跨过哪里，再点两个地方。",
       "locale": "zh-CN",
       "tone": "gentle, encouraging, slow",
       "contexts": [
-        "logic-space-bridge/logic-space-bridge-1",
-        "logic-space-bridge/logic-space-bridge-2",
-        "logic-space-bridge/logic-space-bridge-3",
-        "logic-space-bridge/logic-space-bridge-4",
-        "logic-space-bridge/logic-space-bridge-5",
-        "logic-space-bridge/logic-space-bridge-6",
-        "logic-space-bridge/logic-space-bridge-7",
-        "logic-space-bridge/logic-space-bridge-8"
+        "logic-space-bridge/logic-space-bridge-1"
       ]
     },
     {
-      "id": "parent-请她用手指画出路线-说说每块板的两头搭在哪里-问她-总长度够了-每一段就一定够吗",
+      "id": "parent-问她-你点了哪两个地方-木板要跨过哪一段",
       "kind": "parent",
-      "text": "请她用手指画出路线，说说每块板的两头搭在哪里。问她：总长度够了，每一段就一定够吗？",
+      "text": "问她：你点了哪两个地方？木板要跨过哪一段？",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-space-bridge/logic-space-bridge-1",
-        "logic-space-bridge/logic-space-bridge-2",
-        "logic-space-bridge/logic-space-bridge-3",
-        "logic-space-bridge/logic-space-bridge-4",
-        "logic-space-bridge/logic-space-bridge-5",
-        "logic-space-bridge/logic-space-bridge-6",
-        "logic-space-bridge/logic-space-bridge-7",
-        "logic-space-bridge/logic-space-bridge-8"
+        "logic-space-bridge/logic-space-bridge-1"
       ]
     },
     {
@@ -15280,9 +15266,9 @@
       ]
     },
     {
-      "id": "prompt-模型河宽-6-格-中间有小岛-两段各宽-3-格-怎样搭过去-这是桌面模型-每格一样长-木板两头都要搭在河岸或小岛上",
+      "id": "prompt-借助小岛-把两边都搭上-先点木板-再点河上的空位-点已放的木板可以拿回",
       "kind": "prompt",
-      "text": "模型河宽 6 格，中间有小岛。两段各宽 3 格，怎样搭过去？这是桌面模型。每格一样长，木板两头都要搭在河岸或小岛上。",
+      "text": "借助小岛，把两边都搭上。先点木板，再点河上的空位。点已放的木板可以拿回。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -15290,13 +15276,45 @@
       ]
     },
     {
-      "id": "success-4-格木板够跨-3-格-用小岛做支点-一块搭左段-一块搭右段-两段才都连通",
+      "id": "success-两边都搭上了-小熊能经过小岛到对岸",
       "kind": "success",
-      "text": "4 格木板够跨 3 格。用小岛做支点，一块搭左段，一块搭右段，两段才都连通。",
+      "text": "两边都搭上了，小熊能经过小岛到对岸。",
       "locale": "zh-CN",
       "tone": "warm, delighted, clear",
       "contexts": [
         "logic-space-bridge/logic-space-bridge-2"
+      ]
+    },
+    {
+      "id": "retry-找找哪里还没搭上-换一块木板试试",
+      "kind": "retry",
+      "text": "找找哪里还没搭上，换一块木板试试。",
+      "locale": "zh-CN",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "logic-space-bridge/logic-space-bridge-2",
+        "logic-space-bridge/logic-space-bridge-3",
+        "logic-space-bridge/logic-space-bridge-4",
+        "logic-space-bridge/logic-space-bridge-5",
+        "logic-space-bridge/logic-space-bridge-6",
+        "logic-space-bridge/logic-space-bridge-7",
+        "logic-space-bridge/logic-space-bridge-8"
+      ]
+    },
+    {
+      "id": "parent-请她指着木板两头-说说搭在哪里-没搭上时-先试着修改-再解释原因",
+      "kind": "parent",
+      "text": "请她指着木板两头，说说搭在哪里。没搭上时，先试着修改，再解释原因。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "logic-space-bridge/logic-space-bridge-2",
+        "logic-space-bridge/logic-space-bridge-3",
+        "logic-space-bridge/logic-space-bridge-4",
+        "logic-space-bridge/logic-space-bridge-5",
+        "logic-space-bridge/logic-space-bridge-6",
+        "logic-space-bridge/logic-space-bridge-7",
+        "logic-space-bridge/logic-space-bridge-8"
       ]
     },
     {
@@ -15331,9 +15349,9 @@
       ]
     },
     {
-      "id": "prompt-小岛两边分别宽-4-格和-2-格-只用两块-哪组能各搭一段-这是桌面模型-每格一样长-木板两头都要搭在河岸或小岛上",
+      "id": "prompt-用两块木板-搭到对岸-先点木板-再点河上的空位-点已放的木板可以拿回",
       "kind": "prompt",
-      "text": "小岛两边分别宽 4 格和 2 格。只用两块，哪组能各搭一段？这是桌面模型。每格一样长，木板两头都要搭在河岸或小岛上。",
+      "text": "用两块木板，搭到对岸。先点木板，再点河上的空位。点已放的木板可以拿回。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -15341,9 +15359,9 @@
       ]
     },
     {
-      "id": "success-5-格长板搭-4-格那段-3-格短板搭-2-格那段-1-格板连较短的一段也不够",
+      "id": "success-两块木板分别连上两段-小熊可以过去了",
       "kind": "success",
-      "text": "5 格长板搭 4 格那段，3 格短板搭 2 格那段。1 格板连较短的一段也不够。",
+      "text": "两块木板分别连上两段，小熊可以过去了。",
       "locale": "zh-CN",
       "tone": "warm, delighted, clear",
       "contexts": [
@@ -15384,9 +15402,9 @@
       ]
     },
     {
-      "id": "prompt-模型河宽-3-格-中间没有支点-哪块木板能一次搭到对岸-这是桌面模型-每格一样长-木板两头都要搭在河岸或小岛上",
+      "id": "prompt-哪块木板能让小熊过去-先点木板-再点河上的空位-点已放的木板可以拿回",
       "kind": "prompt",
-      "text": "模型河宽 3 格，中间没有支点。哪块木板能一次搭到对岸？这是桌面模型。每格一样长，木板两头都要搭在河岸或小岛上。",
+      "text": "哪块木板能让小熊过去？先点木板，再点河上的空位。点已放的木板可以拿回。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -15394,13 +15412,14 @@
       ]
     },
     {
-      "id": "success-4-格长木板能跨过-3-格的河-2-格和-1-格都碰不到对岸",
+      "id": "success-这块木板够长-两头都搭在岸上",
       "kind": "success",
-      "text": "4 格长木板能跨过 3 格的河；2 格和 1 格都碰不到对岸。",
+      "text": "这块木板够长，两头都搭在岸上。",
       "locale": "zh-CN",
       "tone": "warm, delighted, clear",
       "contexts": [
-        "logic-space-bridge/logic-space-bridge-4"
+        "logic-space-bridge/logic-space-bridge-4",
+        "logic-space-bridge/logic-space-bridge-7"
       ]
     },
     {
@@ -15414,9 +15433,9 @@
       ]
     },
     {
-      "id": "prompt-模型河宽-7-格-小岛两边分别宽-3-格和-4-格-怎样连通两岸-这是桌面模型-每格一样长-木板两头都要搭在河岸或小岛上",
+      "id": "prompt-两边都要有桥-试着搭一搭-先点木板-再点河上的空位-点已放的木板可以拿回",
       "kind": "prompt",
-      "text": "模型河宽 7 格，小岛两边分别宽 3 格和 4 格，怎样连通两岸？这是桌面模型。每格一样长，木板两头都要搭在河岸或小岛上。",
+      "text": "两边都要有桥，试着搭一搭。先点木板，再点河上的空位。点已放的木板可以拿回。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -15424,9 +15443,9 @@
       ]
     },
     {
-      "id": "success-一块板跨不过-7-格-让-5-格板搭-4-格那段-4-格板搭-3-格那段-就能利用小岛连通",
+      "id": "success-两段都连上了-木板两头都有支点",
       "kind": "success",
-      "text": "一块板跨不过 7 格。让 5 格板搭 4 格那段，4 格板搭 3 格那段，就能利用小岛连通。",
+      "text": "两段都连上了，木板两头都有支点。",
       "locale": "zh-CN",
       "tone": "warm, delighted, clear",
       "contexts": [
@@ -15455,9 +15474,9 @@
       ]
     },
     {
-      "id": "prompt-小岛两边分别宽-5-格和-3-格-只能用两块-哪组的长度都够-这是桌面模型-每格一样长-木板两头都要搭在河岸或小岛上",
+      "id": "prompt-每一段都搭好-让小熊过去-先点木板-再点河上的空位-点已放的木板可以拿回",
       "kind": "prompt",
-      "text": "小岛两边分别宽 5 格和 3 格。只能用两块，哪组的长度都够？这是桌面模型。每格一样长，木板两头都要搭在河岸或小岛上。",
+      "text": "每一段都搭好，让小熊过去。先点木板，再点河上的空位。点已放的木板可以拿回。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -15465,9 +15484,9 @@
       ]
     },
     {
-      "id": "success-6-格长板搭-5-格那段-4-格短板搭-3-格那段-只看总长度不够-还要每段都够长",
+      "id": "success-每一段的木板都够长-小熊可以经过小岛",
       "kind": "success",
-      "text": "6 格长板搭 5 格那段，4 格短板搭 3 格那段。只看总长度不够，还要每段都够长。",
+      "text": "每一段的木板都够长，小熊可以经过小岛。",
       "locale": "zh-CN",
       "tone": "warm, delighted, clear",
       "contexts": [
@@ -15475,21 +15494,11 @@
       ]
     },
     {
-      "id": "prompt-模型河宽-4-格-没有小岛-小熊拿哪块木板能搭到对岸-这是桌面模型-每格一样长-木板两头都要搭在河岸或小岛上",
+      "id": "prompt-选一块木板-搭到对岸-先点木板-再点河上的空位-点已放的木板可以拿回",
       "kind": "prompt",
-      "text": "模型河宽 4 格，没有小岛。小熊拿哪块木板能搭到对岸？这是桌面模型。每格一样长，木板两头都要搭在河岸或小岛上。",
+      "text": "选一块木板，搭到对岸。先点木板，再点河上的空位。点已放的木板可以拿回。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-space-bridge/logic-space-bridge-7"
-      ]
-    },
-    {
-      "id": "success-5-格木板能跨过-4-格-另两块都太短-不能只看离手近就选",
-      "kind": "success",
-      "text": "5 格木板能跨过 4 格。另两块都太短，不能只看离手近就选。",
-      "locale": "zh-CN",
-      "tone": "warm, delighted, clear",
       "contexts": [
         "logic-space-bridge/logic-space-bridge-7"
       ]
@@ -15525,9 +15534,9 @@
       ]
     },
     {
-      "id": "prompt-小岛两边分别宽-3-格和-5-格-长短两块木板-应该怎样放-这是桌面模型-每格一样长-木板两头都要搭在河岸或小岛上",
+      "id": "prompt-长板和短板-分别放哪边-先点木板-再点河上的空位-点已放的木板可以拿回",
       "kind": "prompt",
-      "text": "小岛两边分别宽 3 格和 5 格。长短两块木板，应该怎样放？这是桌面模型。每格一样长，木板两头都要搭在河岸或小岛上。",
+      "text": "长板和短板，分别放哪边？先点木板，再点河上的空位。点已放的木板可以拿回。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -15535,9 +15544,9 @@
       ]
     },
     {
-      "id": "success-左段-3-格用-4-格短板-右段-5-格用-6-格长板-反过来-短板就跨不过右段",
+      "id": "success-短板搭左边-长板搭右边-两段都连上了",
       "kind": "success",
-      "text": "左段 3 格用 4 格短板，右段 5 格用 6 格长板。反过来，短板就跨不过右段。",
+      "text": "短板搭左边，长板搭右边，两段都连上了。",
       "locale": "zh-CN",
       "tone": "warm, delighted, clear",
       "contexts": [
@@ -24801,6 +24810,386 @@
       "tone": "warm, delighted, clear",
       "contexts": [
         "graphic-gap-close/graphic-gap-close-8"
+      ]
+    },
+    {
+      "id": "system-先选木板-再点河上的空位",
+      "kind": "system",
+      "text": "先选木板，再点河上的空位。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "hands-on-bridge"
+      ]
+    },
+    {
+      "id": "system-再点一个地方-连出要量的距离",
+      "kind": "system",
+      "text": "再点一个地方，连出要量的距离。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "hands-on-bridge"
+      ]
+    },
+    {
+      "id": "system-每小格一样长",
+      "kind": "system",
+      "text": "每小格一样长",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "hands-on-bridge"
+      ]
+    },
+    {
+      "id": "system-清空重搭",
+      "kind": "system",
+      "text": "清空重搭",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "hands-on-bridge"
+      ]
+    },
+    {
+      "id": "system-再搭一次",
+      "kind": "system",
+      "text": "再搭一次",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "hands-on-bridge"
+      ]
+    },
+    {
+      "id": "system-重新量一量",
+      "kind": "system",
+      "text": "重新量一量",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "hands-on-bridge"
+      ]
+    },
+    {
+      "id": "system-再走一遍",
+      "kind": "system",
+      "text": "再走一遍",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "hands-on-bridge"
+      ]
+    },
+    {
+      "id": "system-试试看",
+      "kind": "system",
+      "text": "试试看",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "hands-on-bridge"
+      ]
+    },
+    {
+      "id": "system-摆好了-可以试试看",
+      "kind": "system",
+      "text": "摆好了，可以试试看。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "hands-on-bridge"
+      ]
+    },
+    {
+      "id": "system-连好了-可以试试看",
+      "kind": "system",
+      "text": "连好了，可以试试看。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "hands-on-bridge"
+      ]
+    },
+    {
+      "id": "system-小熊",
+      "kind": "system",
+      "text": "小熊",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "hands-on-bridge"
+      ]
+    },
+    {
+      "id": "system-这边岸",
+      "kind": "system",
+      "text": "这边岸",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "hands-on-bridge"
+      ]
+    },
+    {
+      "id": "system-那边岸",
+      "kind": "system",
+      "text": "那边岸",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "hands-on-bridge"
+      ]
+    },
+    {
+      "id": "system-木板",
+      "kind": "system",
+      "text": "木板",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "hands-on-bridge"
+      ]
+    },
+    {
+      "id": "system-小旗",
+      "kind": "system",
+      "text": "小旗",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "hands-on-bridge"
+      ]
+    },
+    {
+      "id": "system-看看木板要跨过哪里-再点两个地方",
+      "kind": "system",
+      "text": "看看木板要跨过哪里，再点两个地方。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "hands-on-bridge"
+      ]
+    },
+    {
+      "id": "system-要量的是两岸之间的距离",
+      "kind": "system",
+      "text": "要量的是两岸之间的距离。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "hands-on-bridge"
+      ]
+    },
+    {
+      "id": "system-6-格木板",
+      "kind": "system",
+      "text": "6 格木板",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "hands-on-bridge"
+      ]
+    },
+    {
+      "id": "system-4-格木板",
+      "kind": "system",
+      "text": "4 格木板",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "hands-on-bridge"
+      ]
+    },
+    {
+      "id": "system-2-格木板",
+      "kind": "system",
+      "text": "2 格木板",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "hands-on-bridge"
+      ]
+    },
+    {
+      "id": "system-这里还没有桥-选一块木板放上去",
+      "kind": "system",
+      "text": "这里还没有桥。选一块木板放上去。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "hands-on-bridge"
+      ]
+    },
+    {
+      "id": "system-每一段都连上了-木板两头都有支点",
+      "kind": "system",
+      "text": "每一段都连上了，木板两头都有支点。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "hands-on-bridge"
+      ]
+    },
+    {
+      "id": "system-这里还差-1-格-换一块长些的木板试试",
+      "kind": "system",
+      "text": "这里还差 1 格。换一块长些的木板试试。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "hands-on-bridge"
+      ]
+    },
+    {
+      "id": "system-这里还差-3-格-换一块长些的木板试试",
+      "kind": "system",
+      "text": "这里还差 3 格。换一块长些的木板试试。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "hands-on-bridge"
+      ]
+    },
+    {
+      "id": "system-第1块-4-格木板",
+      "kind": "system",
+      "text": "第1块 4 格木板",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "hands-on-bridge"
+      ]
+    },
+    {
+      "id": "system-第2块-4-格木板",
+      "kind": "system",
+      "text": "第2块 4 格木板",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "hands-on-bridge"
+      ]
+    },
+    {
+      "id": "system-左边还没有桥-选一块木板放上去",
+      "kind": "system",
+      "text": "左边还没有桥。选一块木板放上去。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "hands-on-bridge"
+      ]
+    },
+    {
+      "id": "system-右边还没有桥-选一块木板放上去",
+      "kind": "system",
+      "text": "右边还没有桥。选一块木板放上去。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "hands-on-bridge"
+      ]
+    },
+    {
+      "id": "system-每块木板只能放一处-拿回来再试试",
+      "kind": "system",
+      "text": "每块木板只能放一处，拿回来再试试。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "hands-on-bridge"
+      ]
+    },
+    {
+      "id": "system-右边还差-1-格-换一块长些的木板试试",
+      "kind": "system",
+      "text": "右边还差 1 格。换一块长些的木板试试。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "hands-on-bridge"
+      ]
+    },
+    {
+      "id": "system-左边还差-1-格-换一块长些的木板试试",
+      "kind": "system",
+      "text": "左边还差 1 格。换一块长些的木板试试。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "hands-on-bridge"
+      ]
+    },
+    {
+      "id": "system-5-格木板",
+      "kind": "system",
+      "text": "5 格木板",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "hands-on-bridge"
+      ]
+    },
+    {
+      "id": "system-3-格木板",
+      "kind": "system",
+      "text": "3 格木板",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "hands-on-bridge"
+      ]
+    },
+    {
+      "id": "system-1-格木板",
+      "kind": "system",
+      "text": "1 格木板",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "hands-on-bridge"
+      ]
+    },
+    {
+      "id": "system-左边还差-3-格-换一块长些的木板试试",
+      "kind": "system",
+      "text": "左边还差 3 格。换一块长些的木板试试。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "hands-on-bridge"
+      ]
+    },
+    {
+      "id": "system-这里还差-2-格-换一块长些的木板试试",
+      "kind": "system",
+      "text": "这里还差 2 格。换一块长些的木板试试。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "hands-on-bridge"
+      ]
+    },
+    {
+      "id": "system-右边还差-2-格-换一块长些的木板试试",
+      "kind": "system",
+      "text": "右边还差 2 格。换一块长些的木板试试。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "hands-on-bridge"
+      ]
+    },
+    {
+      "id": "system-右边还差-3-格-换一块长些的木板试试",
+      "kind": "system",
+      "text": "右边还差 3 格。换一块长些的木板试试。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "hands-on-bridge"
       ]
     },
     {

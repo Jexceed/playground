@@ -1,0 +1,226 @@
+[
+  {
+    "id": "logic-space-bridge-1",
+    "gameId": "logic-space-bridge",
+    "fields": [
+      "prompt",
+      "instruction",
+      "difficultyNote",
+      "success",
+      "retry",
+      "parentPrompt"
+    ],
+    "before": {
+      "prompt": "想选一块能搭过去的木板，先看哪个距离决定它至少要多长？",
+      "instruction": "这是桌面模型。每格一样长，木板两头都要搭在河岸或小岛上。",
+      "difficultyNote": "基础进阶：按一个明确规则判断，并说出观察依据。 主要从生活场景图里找证据。主要训练空间判断、长度比较。",
+      "success": "木板要跨过两岸之间的空隙，所以先比较这段距离和木板长度。",
+      "retry": "先沿每段空隙数格子，再比木板有几格。每一段都要连上，两头也都要有支点。",
+      "parentPrompt": "请她用手指画出路线，说说每块板的两头搭在哪里。问她：总长度够了，每一段就一定够吗？"
+    },
+    "after": {
+      "prompt": "选木板前，先量哪一段？",
+      "instruction": "点两个地方，连出要量的距离。",
+      "difficultyNote": "比较起点与终点，找出木板需要跨过的距离。",
+      "success": "要量两岸之间有多远，才能选够长的木板。",
+      "retry": "看看木板要跨过哪里，再点两个地方。",
+      "parentPrompt": "问她：你点了哪两个地方？木板要跨过哪一段？"
+    }
+  },
+  {
+    "id": "logic-space-bridge-2",
+    "gameId": "logic-space-bridge",
+    "fields": [
+      "prompt",
+      "instruction",
+      "difficultyNote",
+      "success",
+      "retry",
+      "parentPrompt"
+    ],
+    "before": {
+      "prompt": "模型河宽 6 格，中间有小岛。两段各宽 3 格，怎样搭过去？",
+      "instruction": "这是桌面模型。每格一样长，木板两头都要搭在河岸或小岛上。",
+      "difficultyNote": "挑战：需要工作记忆、连续步骤或综合推理后再选择。 主要从生活场景图里找证据。主要训练空间判断、分段规划。",
+      "success": "4 格木板够跨 3 格。用小岛做支点，一块搭左段，一块搭右段，两段才都连通。",
+      "retry": "先沿每段空隙数格子，再比木板有几格。每一段都要连上，两头也都要有支点。",
+      "parentPrompt": "请她用手指画出路线，说说每块板的两头搭在哪里。问她：总长度够了，每一段就一定够吗？"
+    },
+    "after": {
+      "prompt": "借助小岛，把两边都搭上。",
+      "instruction": "先点木板，再点河上的空位。点已放的木板可以拿回。",
+      "difficultyNote": "选木板并试放，逐段比较长度和支点。",
+      "success": "两边都搭上了，小熊能经过小岛到对岸。",
+      "retry": "找找哪里还没搭上，换一块木板试试。",
+      "parentPrompt": "请她指着木板两头，说说搭在哪里。没搭上时，先试着修改，再解释原因。"
+    }
+  },
+  {
+    "id": "logic-space-bridge-3",
+    "gameId": "logic-space-bridge",
+    "fields": [
+      "prompt",
+      "instruction",
+      "difficultyNote",
+      "success",
+      "retry",
+      "parentPrompt"
+    ],
+    "before": {
+      "prompt": "小岛两边分别宽 4 格和 2 格。只用两块，哪组能各搭一段？",
+      "instruction": "这是桌面模型。每格一样长，木板两头都要搭在河岸或小岛上。",
+      "difficultyNote": "挑战：需要工作记忆、连续步骤或综合推理后再选择。 主要从生活场景图里找证据。主要训练空间判断、分段规划。",
+      "success": "5 格长板搭 4 格那段，3 格短板搭 2 格那段。1 格板连较短的一段也不够。",
+      "retry": "先沿每段空隙数格子，再比木板有几格。每一段都要连上，两头也都要有支点。",
+      "parentPrompt": "请她用手指画出路线，说说每块板的两头搭在哪里。问她：总长度够了，每一段就一定够吗？"
+    },
+    "after": {
+      "prompt": "用两块木板，搭到对岸。",
+      "instruction": "先点木板，再点河上的空位。点已放的木板可以拿回。",
+      "difficultyNote": "选木板并试放，逐段比较长度和支点。",
+      "success": "两块木板分别连上两段，小熊可以过去了。",
+      "retry": "找找哪里还没搭上，换一块木板试试。",
+      "parentPrompt": "请她指着木板两头，说说搭在哪里。没搭上时，先试着修改，再解释原因。"
+    }
+  },
+  {
+    "id": "logic-space-bridge-4",
+    "gameId": "logic-space-bridge",
+    "fields": [
+      "prompt",
+      "instruction",
+      "difficultyNote",
+      "success",
+      "retry",
+      "parentPrompt"
+    ],
+    "before": {
+      "prompt": "模型河宽 3 格，中间没有支点。哪块木板能一次搭到对岸？",
+      "instruction": "这是桌面模型。每格一样长，木板两头都要搭在河岸或小岛上。",
+      "difficultyNote": "中等：需要两步观察或简单比较，不能只看一个显眼线索。 主要从生活场景图里找证据。主要训练空间判断、长度比较。",
+      "success": "4 格长木板能跨过 3 格的河；2 格和 1 格都碰不到对岸。",
+      "retry": "先沿每段空隙数格子，再比木板有几格。每一段都要连上，两头也都要有支点。",
+      "parentPrompt": "请她用手指画出路线，说说每块板的两头搭在哪里。问她：总长度够了，每一段就一定够吗？"
+    },
+    "after": {
+      "prompt": "哪块木板能让小熊过去？",
+      "instruction": "先点木板，再点河上的空位。点已放的木板可以拿回。",
+      "difficultyNote": "选木板并试放，逐段比较长度和支点。",
+      "success": "这块木板够长，两头都搭在岸上。",
+      "retry": "找找哪里还没搭上，换一块木板试试。",
+      "parentPrompt": "请她指着木板两头，说说搭在哪里。没搭上时，先试着修改，再解释原因。"
+    }
+  },
+  {
+    "id": "logic-space-bridge-5",
+    "gameId": "logic-space-bridge",
+    "fields": [
+      "prompt",
+      "instruction",
+      "difficultyNote",
+      "success",
+      "retry",
+      "parentPrompt"
+    ],
+    "before": {
+      "prompt": "模型河宽 7 格，小岛两边分别宽 3 格和 4 格，怎样连通两岸？",
+      "instruction": "这是桌面模型。每格一样长，木板两头都要搭在河岸或小岛上。",
+      "difficultyNote": "挑战：需要工作记忆、连续步骤或综合推理后再选择。 主要从生活场景图里找证据。主要训练空间判断、分段规划。",
+      "success": "一块板跨不过 7 格。让 5 格板搭 4 格那段，4 格板搭 3 格那段，就能利用小岛连通。",
+      "retry": "先沿每段空隙数格子，再比木板有几格。每一段都要连上，两头也都要有支点。",
+      "parentPrompt": "请她用手指画出路线，说说每块板的两头搭在哪里。问她：总长度够了，每一段就一定够吗？"
+    },
+    "after": {
+      "prompt": "两边都要有桥，试着搭一搭。",
+      "instruction": "先点木板，再点河上的空位。点已放的木板可以拿回。",
+      "difficultyNote": "选木板并试放，逐段比较长度和支点。",
+      "success": "两段都连上了，木板两头都有支点。",
+      "retry": "找找哪里还没搭上，换一块木板试试。",
+      "parentPrompt": "请她指着木板两头，说说搭在哪里。没搭上时，先试着修改，再解释原因。"
+    }
+  },
+  {
+    "id": "logic-space-bridge-6",
+    "gameId": "logic-space-bridge",
+    "fields": [
+      "prompt",
+      "instruction",
+      "difficultyNote",
+      "success",
+      "retry",
+      "parentPrompt"
+    ],
+    "before": {
+      "prompt": "小岛两边分别宽 5 格和 3 格。只能用两块，哪组的长度都够？",
+      "instruction": "这是桌面模型。每格一样长，木板两头都要搭在河岸或小岛上。",
+      "difficultyNote": "挑战：需要工作记忆、连续步骤或综合推理后再选择。 主要从生活场景图里找证据。主要训练空间判断、分段规划。",
+      "success": "6 格长板搭 5 格那段，4 格短板搭 3 格那段。只看总长度不够，还要每段都够长。",
+      "retry": "先沿每段空隙数格子，再比木板有几格。每一段都要连上，两头也都要有支点。",
+      "parentPrompt": "请她用手指画出路线，说说每块板的两头搭在哪里。问她：总长度够了，每一段就一定够吗？"
+    },
+    "after": {
+      "prompt": "每一段都搭好，让小熊过去。",
+      "instruction": "先点木板，再点河上的空位。点已放的木板可以拿回。",
+      "difficultyNote": "选木板并试放，逐段比较长度和支点。",
+      "success": "每一段的木板都够长，小熊可以经过小岛。",
+      "retry": "找找哪里还没搭上，换一块木板试试。",
+      "parentPrompt": "请她指着木板两头，说说搭在哪里。没搭上时，先试着修改，再解释原因。"
+    }
+  },
+  {
+    "id": "logic-space-bridge-7",
+    "gameId": "logic-space-bridge",
+    "fields": [
+      "prompt",
+      "instruction",
+      "difficultyNote",
+      "success",
+      "retry",
+      "parentPrompt"
+    ],
+    "before": {
+      "prompt": "模型河宽 4 格，没有小岛。小熊拿哪块木板能搭到对岸？",
+      "instruction": "这是桌面模型。每格一样长，木板两头都要搭在河岸或小岛上。",
+      "difficultyNote": "中等：需要两步观察或简单比较，不能只看一个显眼线索。 主要从生活场景图里找证据。主要训练空间判断、长度比较。",
+      "success": "5 格木板能跨过 4 格。另两块都太短，不能只看离手近就选。",
+      "retry": "先沿每段空隙数格子，再比木板有几格。每一段都要连上，两头也都要有支点。",
+      "parentPrompt": "请她用手指画出路线，说说每块板的两头搭在哪里。问她：总长度够了，每一段就一定够吗？"
+    },
+    "after": {
+      "prompt": "选一块木板，搭到对岸。",
+      "instruction": "先点木板，再点河上的空位。点已放的木板可以拿回。",
+      "difficultyNote": "选木板并试放，逐段比较长度和支点。",
+      "success": "这块木板够长，两头都搭在岸上。",
+      "retry": "找找哪里还没搭上，换一块木板试试。",
+      "parentPrompt": "请她指着木板两头，说说搭在哪里。没搭上时，先试着修改，再解释原因。"
+    }
+  },
+  {
+    "id": "logic-space-bridge-8",
+    "gameId": "logic-space-bridge",
+    "fields": [
+      "prompt",
+      "instruction",
+      "difficultyNote",
+      "success",
+      "retry",
+      "parentPrompt"
+    ],
+    "before": {
+      "prompt": "小岛两边分别宽 3 格和 5 格。长短两块木板，应该怎样放？",
+      "instruction": "这是桌面模型。每格一样长，木板两头都要搭在河岸或小岛上。",
+      "difficultyNote": "挑战：需要工作记忆、连续步骤或综合推理后再选择。 主要从生活场景图里找证据。主要训练空间判断、分段规划。",
+      "success": "左段 3 格用 4 格短板，右段 5 格用 6 格长板。反过来，短板就跨不过右段。",
+      "retry": "先沿每段空隙数格子，再比木板有几格。每一段都要连上，两头也都要有支点。",
+      "parentPrompt": "请她用手指画出路线，说说每块板的两头搭在哪里。问她：总长度够了，每一段就一定够吗？"
+    },
+    "after": {
+      "prompt": "长板和短板，分别放哪边？",
+      "instruction": "先点木板，再点河上的空位。点已放的木板可以拿回。",
+      "difficultyNote": "选木板并试放，逐段比较长度和支点。",
+      "success": "短板搭左边，长板搭右边，两段都连上了。",
+      "retry": "找找哪里还没搭上，换一块木板试试。",
+      "parentPrompt": "请她指着木板两头，说说搭在哪里。没搭上时，先试着修改，再解释原因。"
+    }
+  }
+]

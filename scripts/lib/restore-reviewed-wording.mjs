@@ -1,3 +1,4 @@
+import {restoreBridgeWording} from "./restore-bridge-wording.mjs";
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 
@@ -5,7 +6,7 @@ import {readFileSync} from 'node:fs';
 // reverse only its reviewed text edits for the earlier feature's boundary test.
 export function restoreChildReadableWording(data) {
   const changes = new Map(JSON.parse(readFileSync('specs/047-child-readable-logic/content-changes.json')).map(change => [change.id, change]));
-  const copy = JSON.parse(JSON.stringify(data));
+  const copy = restoreBridgeWording(data);
   function visit(value) {
     if (!value || typeof value !== 'object') return;
     const change = changes.get(value.id);

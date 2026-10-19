@@ -1,0 +1,29 @@
+$ node scripts/audit-curriculum.mjs
+{
+  "math": 266,
+  "logic": 445,
+  "graphic": 234,
+  "memory": 81,
+  "language": 54,
+  "life": 30,
+  "totalGames": 115,
+  "totalRounds": 1110,
+  "legacyGames": 40,
+  "legacyRounds": 489,
+  "interactiveGames": 75,
+  "interactiveRounds": 621,
+  "mathTargetMet": true,
+  "logicTargetMet": true,
+  "graphicTargetMet": true,
+  "problemCount": 7,
+  "problems": [
+    "logic-space-bridge/logic-space-bridge-2: logic difficultyNote should name the reasoning load or visual surface",
+    "logic-space-bridge/logic-space-bridge-3: logic difficultyNote should name the reasoning load or visual surface",
+    "logic-space-bridge/logic-space-bridge-4: logic difficultyNote should name the reasoning load or visual surface",
+    "logic-space-bridge/logic-space-bridge-5: logic difficultyNote should name the reasoning load or visual surface",
+    "logic-space-bridge/logic-space-bridge-6: logic difficultyNote should name the reasoning load or visual surface",
+    "logic-space-bridge/logic-space-bridge-7: logic difficultyNote should name the reasoning load or visual surface",
+    "logic-space-bridge/logic-space-bridge-8: logic difficultyNote should name the reasoning load or visual surface"
+  ]
+}
+[ELIFECYCLE] Command failed with exit code 1.
