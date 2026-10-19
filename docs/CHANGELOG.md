@@ -2,6 +2,10 @@
 
 ## 2026-10-19
 
+### Use main as the default working branch
+
+- Fast-forwarded the validated curriculum and interaction work through `f8157e7c` onto `main`, following the user’s explicit request. Future routine work and requested pushes default to `main`; existing branches and unrelated local files are preserved.
+
 ### Let children measure and build bridges directly
 
 - Replaced the eight “桥怎么搭” thumbnail-choice screens with one large interactive scene. Children connect two endpoints in round 1, then select and place real-length boards in rounds 2–8; misplaced boards can be taken back or replaced without restarting the group.

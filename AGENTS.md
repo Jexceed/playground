@@ -99,19 +99,21 @@
 
 ## Commit And Push Policy
 
-- Do not make frequent commits or pushes to `main` while a design or implementation direction is still being discussed.
-- Before pushing to `main`, wait for the user to confirm the方案 or explicitly ask for a release-style/big-version commit.
-- Use `main` for confirmed milestones only. Keep intermediate exploration and rollback points off `main`.
+- Work directly on `main` by default, as requested by the user. Do not use `dev`
+  for routine work unless the user explicitly asks for it.
+- Keep commits scoped and descriptive, and complete the required validation
+  before pushing finished changes.
+- When the user asks to commit and push, deliver to `origin/main` unless they
+  explicitly name another branch. Release and deployment remain separate actions.
 
 ## Local Checkpoint Policy
 
-- Use a local `dev` branch for work-in-progress checkpoints.
-- It is acceptable to commit locally on `dev` after meaningful steps so the project can be rolled back safely.
-- Prefer small, descriptive local commits on `dev` over untracked or hard-to-recover changes.
-- Do not push `dev` unless the user explicitly asks.
+- Meaningful local checkpoints should also use `main` by default.
+- Use a separate branch or worktree when the user requests isolation; preserve
+  existing branches, worktrees, and unrelated changes.
 
 ## Working Rules
 
 - Keep the worktree clean before switching context when feasible.
 - Never discard user changes unless explicitly asked.
-- When unsure whether a change is ready for `main`, keep it on `dev` and report what has been changed and verified.
+- Continue on `main` unless the user requests another branch; report what changed, what was verified, and any unfinished checks.
