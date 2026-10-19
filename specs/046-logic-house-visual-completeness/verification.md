@@ -46,10 +46,14 @@
 
 标准安装已完成，安装与构建可执行文件SHA-256相同，strict deep签名通过：[installed-app.json](verification/installed-app.json)。
 
-原生UI检查当前被Mac锁屏阻挡。已请求用户手动解锁；尚不能将本轮浏览器检查等同于原生UI验收。解锁后补充真实应用状态与进度记录再提交推送。
+用户解锁后，重启真实 `/Applications/小小思考屋.app`（`tauri://localhost`），完成15组49道不同代表题的原生检查，其中28道已完成题重做正确提交、2道核对错误反馈。未完成题保留未完成状态。覆盖情境入口、证据/动作卡、规则变化、类比、数量、搭桥、镜像、比较和三视图；播放会停在末步，暂停/逐步/回看情境有效，搭桥模型放大返回保留成功状态。记录：[native-acceptance.json](verification/native-acceptance.json)。这不是319题全部原生作答。
+
+原生截图复核发现“一模一样在哪里”的三张样板卡相互遮挡：卡片增宽后外层仍采用五列网格。已同步修正网格列宽，保留[失败截图](verification/before/native-logic-visual-match-12-task.png)，并补查12题的浏览器同级卡片交叠（此前页面/标签越界检查不覆盖同级遮挡）：[browser-comparison-overlap.json](verification/browser-comparison-overlap.json)。再次执行 `mac:install`（包含生产构建）和课程审计，12题在最终安装版全部重新打开：[原生复查](verification/native-comparison-followup.json)、[第12题最终截图](verification/native-final-visual-match-12.png)、[安装日志](verification/mac-layout-install.log)。两处CSS布局修改没有改变题库、图像或语音。
+
+验收前后启蒙完成数均273/489；最后恢复“先做什么”第2题的场景入口，并验证退出重启后恢复。重做已有搭桥题刷新了一个现行能力标签，标签溢出计数从97变为98，未新增题目完成数；不声称用户存储逐字节不变。[最终状态](verification/native-final-restored.txt)。最终安装二进制与构建产物一致，strict deep签名通过。
 
 ## 交付状态与边界
 
-本轮保存为dev本地检查点；原生验收等待手动解锁，因此尚未推送。已有3个本地dev修复提交会随本轮授权一并正常推送，不推main、不强推、不发布NAS。
+运行时主修复已保存为dev `d5484575`，原生补验发现的比较卡布局修复与验收记录另存一个提交。按用户授权将这些提交及此前3个dev修复提交一起正常推送 `origin/dev`；交付时核对远端SHA、ahead/behind和工作区状态。main和NAS不在本次交付目标内。
 
 本轮覆盖启蒙逻辑屋；探索逻辑及其他主题没有被宣称全部重做。未做儿童适龄试玩、全语音人工听辨或其他设备原生验收。

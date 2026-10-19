@@ -1,0 +1,27 @@
+Window: "小小思考屋", App: 小小思考屋.
+0 standard window 小小思考屋, Secondary Actions: Raise
+	1 scroll area
+		2 HTML content Description: 小小思考屋, URL: tauri://localhost
+			3 container 看大图
+				4 container
+					5 text 1  /  1
+					6 button 回到题目
+				7 container
+					8 image 桌面搭桥模型：河岸、小岛和木板按相同格距绘制，图中标出距离和可用木板长度。
+					9 text 桌面搭桥模型：河岸、小岛和木板按相同格距绘制，图中标出距离和可用木板长度。
+				10 container 切换大图
+					11 button (disabled) 上一张
+					12 button (disabled) 下一张
+	13 close button
+	14 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	15 minimize button
+	16 text 小小思考屋
+17 menu bar
+	18 小小思考屋
+	19 File
+	20 Edit
+	21 View
+	22 Window
+	23 Help
+
+The focused UI element is 6 button 回到题目
