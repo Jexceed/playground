@@ -16,6 +16,14 @@ export const imageGallery = {
   scenes: {
     ...logicHouseScenes,
     ...orderStoryScenes,
+    childBridgeGap: {
+      src: "/images/scenes/logic-047-short-plank-gap.png",
+      alt: "小狗站在河岸上，短木板一头搭在近岸，另一头与对岸之间还隔着一段明显的河水。",
+    },
+    childBridgeCrossing: {
+      src: "/images/scenes/logic-047-long-plank-crossing.png",
+      alt: "同一条河换上长木板，两头都搭在岸上，小狗可以沿桥去对岸的小旗旁。",
+    },
     drinkingThirsty: {
       src: "/images/scenes/drinking-thirsty.png",
       alt: "小朋友口渴了，手还空着。桌上放着一个空杯子和装有饮用水的小水壶。",

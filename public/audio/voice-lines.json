@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-18T17:19:40.147Z",
+  "generatedAt": "2026-10-19T02:26:53.980Z",
   "recommendedVoice": "warm adult female Mandarin, smiling, preschool teacher, 0.85 speed, crisp consonants",
-  "lineCount": 4182,
+  "lineCount": 4171,
   "lines": [
     {
       "id": "game-title-数一数",
@@ -2878,6 +2878,7 @@
         "math-compare-equalize/math-compare-equalize-5",
         "math-compare-equalize/math-compare-equalize-6",
         "math-compare-equalize/math-compare-equalize-7",
+        "logic-story-evidence/logic-story-evidence-2",
         "logic-block-height-map/logic-block-height-map-10",
         "logic-block-height-map/logic-block-height-map-11",
         "logic-block-height-map/logic-block-height-map-12"
@@ -6582,9 +6583,9 @@
       ]
     },
     {
-      "id": "prompt-分类机说-这次只看颜色-红色圆片要进哪个篮子-先说一遍规则-只看颜色-再看这张图",
+      "id": "prompt-分类机说-这次只看颜色-红色圆片要进哪一组-先说一遍规则-只看颜色-再看这张图",
       "kind": "prompt",
-      "text": "分类机说：这次只看颜色。红色圆片要进哪个篮子？先说一遍规则：只看颜色，再看这张图。",
+      "text": "分类机说：这次只看颜色。红色圆片要进哪一组？先说一遍规则：只看颜色，再看这张图。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -6592,9 +6593,9 @@
       ]
     },
     {
-      "id": "success-看颜色时-红色圆片和红色篮子是一对-圆形先不管",
+      "id": "success-看颜色时-红色圆片和红色组是一对-圆形先不管",
       "kind": "success",
-      "text": "看颜色时，红色圆片和红色篮子是一对；圆形先不管。",
+      "text": "看颜色时，红色圆片和红色组是一对；圆形先不管。",
       "locale": "zh-CN",
       "tone": "warm, delighted, clear",
       "contexts": [
@@ -6602,9 +6603,9 @@
       ]
     },
     {
-      "id": "retry-这题只看颜色-先找红色-再选红色篮子",
+      "id": "retry-这题只看颜色-先找红色-再选红色组",
       "kind": "retry",
-      "text": "这题只看颜色。先找红色，再选红色篮子。",
+      "text": "这题只看颜色。先找红色，再选红色组。",
       "locale": "zh-CN",
       "tone": "gentle, encouraging, slow",
       "contexts": [
@@ -6623,9 +6624,9 @@
       ]
     },
     {
-      "id": "choice-红色篮子",
+      "id": "choice-红色组",
       "kind": "choice",
-      "text": "红色篮子",
+      "text": "红色组",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -6635,9 +6636,9 @@
       ]
     },
     {
-      "id": "choice-蓝色篮子",
+      "id": "choice-蓝色组",
       "kind": "choice",
-      "text": "蓝色篮子",
+      "text": "蓝色组",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -6649,9 +6650,9 @@
       ]
     },
     {
-      "id": "choice-绿色篮子",
+      "id": "choice-绿色组",
       "kind": "choice",
-      "text": "绿色篮子",
+      "text": "绿色组",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -6659,9 +6660,9 @@
       ]
     },
     {
-      "id": "prompt-分类机说-这次只看颜色-蓝色圆片要进哪个篮子-先说一遍规则-只看颜色-再看这张图",
+      "id": "prompt-分类机说-这次只看颜色-蓝色圆片要进哪一组-先说一遍规则-只看颜色-再看这张图",
       "kind": "prompt",
-      "text": "分类机说：这次只看颜色。蓝色圆片要进哪个篮子？先说一遍规则：只看颜色，再看这张图。",
+      "text": "分类机说：这次只看颜色。蓝色圆片要进哪一组？先说一遍规则：只看颜色，再看这张图。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -6669,9 +6670,9 @@
       ]
     },
     {
-      "id": "success-看颜色时-蓝色圆片和蓝色篮子是一对-圆形先不管",
+      "id": "success-看颜色时-蓝色圆片和蓝色组是一对-圆形先不管",
       "kind": "success",
-      "text": "看颜色时，蓝色圆片和蓝色篮子是一对；圆形先不管。",
+      "text": "看颜色时，蓝色圆片和蓝色组是一对；圆形先不管。",
       "locale": "zh-CN",
       "tone": "warm, delighted, clear",
       "contexts": [
@@ -6679,9 +6680,9 @@
       ]
     },
     {
-      "id": "retry-这题只看颜色-先找蓝色-再选蓝色篮子",
+      "id": "retry-这题只看颜色-先找蓝色-再选蓝色组",
       "kind": "retry",
-      "text": "这题只看颜色。先找蓝色，再选蓝色篮子。",
+      "text": "这题只看颜色。先找蓝色，再选蓝色组。",
       "locale": "zh-CN",
       "tone": "gentle, encouraging, slow",
       "contexts": [
@@ -6689,9 +6690,9 @@
       ]
     },
     {
-      "id": "choice-黄色篮子",
+      "id": "choice-黄色组",
       "kind": "choice",
-      "text": "黄色篮子",
+      "text": "黄色组",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -6701,9 +6702,9 @@
       ]
     },
     {
-      "id": "prompt-规则换了-这次只看形状-红色圆片要进哪个篮子-先说一遍规则-只看形状-再看这张图",
+      "id": "prompt-规则换了-这次只看形状-红色圆片要进哪一组-先说一遍规则-只看形状-再看这张图",
       "kind": "prompt",
-      "text": "规则换了：这次只看形状。红色圆片要进哪个篮子？先说一遍规则：只看形状，再看这张图。",
+      "text": "规则换了：这次只看形状。红色圆片要进哪一组？先说一遍规则：只看形状，再看这张图。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -6711,9 +6712,9 @@
       ]
     },
     {
-      "id": "success-看形状时-圆片进圆形篮子-红色先不管",
+      "id": "success-看形状时-圆片进圆形组-红色先不管",
       "kind": "success",
-      "text": "看形状时，圆片进圆形篮子；红色先不管。",
+      "text": "看形状时，圆片进圆形组；红色先不管。",
       "locale": "zh-CN",
       "tone": "warm, delighted, clear",
       "contexts": [
@@ -6721,9 +6722,9 @@
       ]
     },
     {
-      "id": "retry-这题只看形状-先找圆形-再选圆形篮子",
+      "id": "retry-这题只看形状-先找圆形-再选圆形组",
       "kind": "retry",
-      "text": "这题只看形状。先找圆形，再选圆形篮子。",
+      "text": "这题只看形状。先找圆形，再选圆形组。",
       "locale": "zh-CN",
       "tone": "gentle, encouraging, slow",
       "contexts": [
@@ -6741,9 +6742,9 @@
       ]
     },
     {
-      "id": "choice-方形篮子",
+      "id": "choice-方形组",
       "kind": "choice",
-      "text": "方形篮子",
+      "text": "方形组",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -6756,9 +6757,9 @@
       ]
     },
     {
-      "id": "choice-圆形篮子",
+      "id": "choice-圆形组",
       "kind": "choice",
-      "text": "圆形篮子",
+      "text": "圆形组",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -6771,9 +6772,9 @@
       ]
     },
     {
-      "id": "prompt-规则换了-这次只看形状-蓝色方块要进哪个篮子-先说一遍规则-只看形状-再看这张图",
+      "id": "prompt-规则换了-这次只看形状-蓝色方块要进哪一组-先说一遍规则-只看形状-再看这张图",
       "kind": "prompt",
-      "text": "规则换了：这次只看形状。蓝色方块要进哪个篮子？先说一遍规则：只看形状，再看这张图。",
+      "text": "规则换了：这次只看形状。蓝色方块要进哪一组？先说一遍规则：只看形状，再看这张图。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -6781,9 +6782,9 @@
       ]
     },
     {
-      "id": "success-看形状时-方块进方形篮子-蓝色先不管",
+      "id": "success-看形状时-方块进方形组-蓝色先不管",
       "kind": "success",
-      "text": "看形状时，方块进方形篮子；蓝色先不管。",
+      "text": "看形状时，方块进方形组；蓝色先不管。",
       "locale": "zh-CN",
       "tone": "warm, delighted, clear",
       "contexts": [
@@ -6791,9 +6792,9 @@
       ]
     },
     {
-      "id": "retry-这题只看形状-先找方形-再选方形篮子",
+      "id": "retry-这题只看形状-先找方形-再选方形组",
       "kind": "retry",
-      "text": "这题只看形状。先找方形，再选方形篮子。",
+      "text": "这题只看形状。先找方形，再选方形组。",
       "locale": "zh-CN",
       "tone": "gentle, encouraging, slow",
       "contexts": [
@@ -6811,9 +6812,9 @@
       ]
     },
     {
-      "id": "prompt-刚才看过形状-这次只看颜色-蓝色方块要进哪个篮子-先说一遍规则-只看颜色-再看这张图",
+      "id": "prompt-刚才看过形状-这次只看颜色-蓝色方块要进哪一组-先说一遍规则-只看颜色-再看这张图",
       "kind": "prompt",
-      "text": "刚才看过形状，这次只看颜色。蓝色方块要进哪个篮子？先说一遍规则：只看颜色，再看这张图。",
+      "text": "刚才看过形状，这次只看颜色。蓝色方块要进哪一组？先说一遍规则：只看颜色，再看这张图。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -6821,9 +6822,9 @@
       ]
     },
     {
-      "id": "success-虽然它是方块-但这次看颜色-所以进蓝色篮子",
+      "id": "success-虽然它是方块-但这次看颜色-所以进蓝色组",
       "kind": "success",
-      "text": "虽然它是方块，但这次看颜色，所以进蓝色篮子。",
+      "text": "虽然它是方块，但这次看颜色，所以进蓝色组。",
       "locale": "zh-CN",
       "tone": "warm, delighted, clear",
       "contexts": [
@@ -6841,9 +6842,9 @@
       ]
     },
     {
-      "id": "parent-问她-如果选方形篮子-是看了颜色还是看了形状-这次规则是什么",
+      "id": "parent-问她-如果选方形组-是看了颜色还是看了形状-这次规则是什么",
       "kind": "parent",
-      "text": "问她：如果选方形篮子，是看了颜色还是看了形状？这次规则是什么？",
+      "text": "问她：如果选方形组，是看了颜色还是看了形状？这次规则是什么？",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -6851,9 +6852,9 @@
       ]
     },
     {
-      "id": "prompt-还是蓝色方块-现在只看形状-它要进哪个篮子-先说一遍规则-只看形状-再看这张图",
+      "id": "prompt-还是蓝色方块-现在只看形状-它要进哪一组-先说一遍规则-只看形状-再看这张图",
       "kind": "prompt",
-      "text": "还是蓝色方块，现在只看形状。它要进哪个篮子？先说一遍规则：只看形状，再看这张图。",
+      "text": "还是蓝色方块，现在只看形状。它要进哪一组？先说一遍规则：只看形状，再看这张图。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -6861,9 +6862,9 @@
       ]
     },
     {
-      "id": "success-虽然它是蓝色-但这次看形状-所以进方形篮子",
+      "id": "success-虽然它是蓝色-但这次看形状-所以进方形组",
       "kind": "success",
-      "text": "虽然它是蓝色，但这次看形状，所以进方形篮子。",
+      "text": "虽然它是蓝色，但这次看形状，所以进方形组。",
       "locale": "zh-CN",
       "tone": "warm, delighted, clear",
       "contexts": [
@@ -6881,9 +6882,9 @@
       ]
     },
     {
-      "id": "parent-问她-如果选蓝色篮子-是看了形状还是看了颜色-这次规则是什么",
+      "id": "parent-问她-如果选蓝色组-是看了形状还是看了颜色-这次规则是什么",
       "kind": "parent",
-      "text": "问她：如果选蓝色篮子，是看了形状还是看了颜色？这次规则是什么？",
+      "text": "问她：如果选蓝色组，是看了形状还是看了颜色？这次规则是什么？",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -6901,9 +6902,9 @@
       ]
     },
     {
-      "id": "success-听到只看颜色-就找黄色篮子-圆形先不管",
+      "id": "success-听到只看颜色-就找黄色组-圆形先不管",
       "kind": "success",
-      "text": "听到只看颜色，就找黄色篮子；圆形先不管。",
+      "text": "听到只看颜色，就找黄色组；圆形先不管。",
       "locale": "zh-CN",
       "tone": "warm, delighted, clear",
       "contexts": [
@@ -6911,9 +6912,9 @@
       ]
     },
     {
-      "id": "retry-这题只看颜色-圆形篮子是看形状时才用的",
+      "id": "retry-这题只看颜色-圆形组是看形状时才用的",
       "kind": "retry",
-      "text": "这题只看颜色。圆形篮子是看形状时才用的。",
+      "text": "这题只看颜色。圆形组是看形状时才用的。",
       "locale": "zh-CN",
       "tone": "gentle, encouraging, slow",
       "contexts": [
@@ -6921,9 +6922,9 @@
       ]
     },
     {
-      "id": "parent-问她-黄色篮子和圆形篮子都像对的-为什么这次选颜色",
+      "id": "parent-问她-黄色组和圆形组都像对的-为什么这次选颜色",
       "kind": "parent",
-      "text": "问她：黄色篮子和圆形篮子都像对的，为什么这次选颜色？",
+      "text": "问她：黄色组和圆形组都像对的，为什么这次选颜色？",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -6941,9 +6942,9 @@
       ]
     },
     {
-      "id": "success-听到只看形状-就找圆形篮子-黄色先不管",
+      "id": "success-听到只看形状-就找圆形组-黄色先不管",
       "kind": "success",
-      "text": "听到只看形状，就找圆形篮子；黄色先不管。",
+      "text": "听到只看形状，就找圆形组；黄色先不管。",
       "locale": "zh-CN",
       "tone": "warm, delighted, clear",
       "contexts": [
@@ -6951,9 +6952,9 @@
       ]
     },
     {
-      "id": "retry-这题只看形状-黄色篮子是看颜色时才用的",
+      "id": "retry-这题只看形状-黄色组是看颜色时才用的",
       "kind": "retry",
-      "text": "这题只看形状。黄色篮子是看颜色时才用的。",
+      "text": "这题只看形状。黄色组是看颜色时才用的。",
       "locale": "zh-CN",
       "tone": "gentle, encouraging, slow",
       "contexts": [
@@ -6961,9 +6962,9 @@
       ]
     },
     {
-      "id": "parent-问她-圆形篮子和黄色篮子都像对的-为什么这次选形状",
+      "id": "parent-问她-圆形组和黄色组都像对的-为什么这次选形状",
       "kind": "parent",
-      "text": "问她：圆形篮子和黄色篮子都像对的，为什么这次选形状？",
+      "text": "问她：圆形组和黄色组都像对的，为什么这次选形状？",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -10159,16 +10160,6 @@
       ]
     },
     {
-      "id": "choice-两个都一样",
-      "kind": "choice",
-      "text": "两个都一样",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-story-evidence/logic-story-evidence-2"
-      ]
-    },
-    {
       "id": "prompt-只知道-小猫在厨房-能确定是小猫吃了吗-有些线索不够强-不能马上确定",
       "kind": "prompt",
       "text": "只知道“小猫在厨房”，能确定是小猫吃了吗？有些线索不够强，不能马上确定。",
@@ -10209,9 +10200,9 @@
       ]
     },
     {
-      "id": "choice-还需要更多线索",
+      "id": "choice-还不能确定",
       "kind": "choice",
-      "text": "还需要更多线索",
+      "text": "还不能确定",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -10223,9 +10214,9 @@
       ]
     },
     {
-      "id": "choice-证据已经够了",
+      "id": "choice-能确定了",
       "kind": "choice",
-      "text": "证据已经够了",
+      "text": "能确定了",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -10237,9 +10228,9 @@
       ]
     },
     {
-      "id": "choice-小猫一定没吃",
+      "id": "choice-肯定没吃",
       "kind": "choice",
-      "text": "小猫一定没吃",
+      "text": "肯定没吃",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -10393,31 +10384,33 @@
       ]
     },
     {
-      "id": "choice-远处的小狗旁边",
+      "id": "choice-小狗旁边",
       "kind": "choice",
-      "text": "远处的小狗旁边",
+      "text": "小狗旁边",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-story-evidence/logic-story-evidence-5",
-        "logic-condition-detective/logic-condition-detective-10"
+        "logic-condition-detective/logic-condition-detective-10",
+        "logic-priority-choice/logic-priority-choice-9"
       ]
     },
     {
-      "id": "choice-窗边的小鸟旁边",
+      "id": "choice-小鸟旁边",
       "kind": "choice",
-      "text": "窗边的小鸟旁边",
+      "text": "小鸟旁边",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
         "logic-story-evidence/logic-story-evidence-5",
-        "logic-condition-detective/logic-condition-detective-10"
+        "logic-condition-detective/logic-condition-detective-10",
+        "logic-priority-choice/logic-priority-choice-9"
       ]
     },
     {
-      "id": "choice-倒下的杯子周围",
+      "id": "choice-杯子周围",
       "kind": "choice",
-      "text": "倒下的杯子周围",
+      "text": "杯子周围",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -10596,9 +10589,9 @@
       ]
     },
     {
-      "id": "choice-小狗肯定没弄乱",
+      "id": "choice-肯定没弄乱",
       "kind": "choice",
-      "text": "小狗肯定没弄乱",
+      "text": "肯定没弄乱",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -10968,9 +10961,9 @@
       ]
     },
     {
-      "id": "prompt-模型河宽-5-格-木板长-3-格-能搭到对岸吗-看距离和材料是否匹配",
+      "id": "prompt-这块木板能搭到对岸吗-看看木板的另一头-有没有碰到对岸",
       "kind": "prompt",
-      "text": "模型河宽 5 格，木板长 3 格，能搭到对岸吗？看距离和材料是否匹配。",
+      "text": "这块木板能搭到对岸吗？看看木板的另一头，有没有碰到对岸。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -11038,9 +11031,9 @@
       ]
     },
     {
-      "id": "object-模型河宽5格-木板长3格",
+      "id": "object-木板还没搭到对岸",
       "kind": "object",
-      "text": "模型河宽5格，木板长3格",
+      "text": "木板还没搭到对岸",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -11049,13 +11042,15 @@
         "logic-condition-detective/logic-condition-detective-12",
         "logic-fix-plan/logic-fix-plan-4",
         "logic-fix-plan/logic-fix-plan-11",
+        "logic-priority-choice/logic-priority-choice-3",
+        "logic-priority-choice/logic-priority-choice-3",
         "logic-priority-choice/logic-priority-choice-10"
       ]
     },
     {
-      "id": "object-3格木板还够不到5格河的对岸",
+      "id": "object-还差一段-木板不够长",
       "kind": "object",
-      "text": "3格木板还够不到5格河的对岸",
+      "text": "还差一段，木板不够长",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -11500,9 +11495,9 @@
       ]
     },
     {
-      "id": "prompt-短木板过不了宽河-下一步应该先改变什么-失败以后-先改最影响结果的条件",
+      "id": "prompt-短木板搭不到对岸-先换什么-先找能让木板搭到对岸的办法",
       "kind": "prompt",
-      "text": "短木板过不了宽河，下一步应该先改变什么？失败以后，先改最影响结果的条件。",
+      "text": "短木板搭不到对岸，先换什么？先找能让木板搭到对岸的办法。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -11540,9 +11535,9 @@
       ]
     },
     {
-      "id": "choice-换一块够长的木板",
+      "id": "choice-换长木板",
       "kind": "choice",
-      "text": "换一块够长的木板",
+      "text": "换长木板",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -11551,9 +11546,9 @@
       ]
     },
     {
-      "id": "choice-继续用短木板",
+      "id": "choice-接着用短板",
       "kind": "choice",
-      "text": "继续用短木板",
+      "text": "接着用短板",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -11562,9 +11557,9 @@
       ]
     },
     {
-      "id": "choice-换同样短木板",
+      "id": "choice-换同样短的",
       "kind": "choice",
-      "text": "换同样短木板",
+      "text": "换同样短的",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -11897,9 +11892,9 @@
       ]
     },
     {
-      "id": "prompt-模型里的木板另一头碰不到对岸-为什么没搭成功-先找失败原因-再想怎么改",
+      "id": "prompt-木板搭不到对岸-哪里出了问题-看看木板另一头还差在哪里",
       "kind": "prompt",
-      "text": "模型里的木板另一头碰不到对岸，为什么没搭成功？先找失败原因，再想怎么改。",
+      "text": "木板搭不到对岸，哪里出了问题？看看木板另一头还差在哪里。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -12475,9 +12470,9 @@
       ]
     },
     {
-      "id": "choice-先检查倒下的杯子周围",
+      "id": "choice-看杯子周围",
       "kind": "choice",
-      "text": "先检查倒下的杯子周围",
+      "text": "看杯子周围",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -12485,9 +12480,9 @@
       ]
     },
     {
-      "id": "choice-只看远处小狗",
+      "id": "choice-只看小狗",
       "kind": "choice",
-      "text": "只看远处小狗",
+      "text": "只看小狗",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -12495,9 +12490,9 @@
       ]
     },
     {
-      "id": "choice-只看窗边小鸟",
+      "id": "choice-只看小鸟",
       "kind": "choice",
-      "text": "只看窗边小鸟",
+      "text": "只看小鸟",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -12505,9 +12500,9 @@
       ]
     },
     {
-      "id": "prompt-短木板失败后-又换一块同样短的-问题解决了吗-改法要针对失败原因",
+      "id": "prompt-换来一块同样短的木板-能搭过去了吗-比一比-新木板变长了吗",
       "kind": "prompt",
-      "text": "短木板失败后，又换一块同样短的，问题解决了吗？改法要针对失败原因。",
+      "text": "换来一块同样短的木板，能搭过去了吗？比一比，新木板变长了吗？",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -12558,16 +12553,6 @@
       "id": "choice-已经解决",
       "kind": "choice",
       "text": "已经解决",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-fix-plan/logic-fix-plan-11"
-      ]
-    },
-    {
-      "id": "object-原来的木板太短",
-      "kind": "object",
-      "text": "原来的木板太短",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -12827,9 +12812,9 @@
       ]
     },
     {
-      "id": "prompt-模型河宽-4-格-长板-5-格-短板-2-格-哪块能搭到对岸-先选最可能满足距离条件的材料",
+      "id": "prompt-短木板搭不到对岸-换哪块试试-比一比-哪块木板更长",
       "kind": "prompt",
-      "text": "模型河宽 4 格，长板 5 格、短板 2 格，哪块能搭到对岸？先选最可能满足距离条件的材料。",
+      "text": "短木板搭不到对岸，换哪块试试？比一比，哪块木板更长？",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -12867,29 +12852,34 @@
       ]
     },
     {
-      "id": "choice-先选长木板",
+      "id": "choice-长木板",
       "kind": "choice",
-      "text": "先选长木板",
+      "text": "长木板",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-priority-choice/logic-priority-choice-3"
+        "logic-priority-choice/logic-priority-choice-3",
+        "logic-relation-pairs/door-river-tool",
+        "logic-space-bridge/logic-space-bridge-4",
+        "logic-same-kind-detective/logic-same-kind-detective-5",
+        "logic-same-kind-detective/logic-same-kind-detective-11"
       ]
     },
     {
-      "id": "choice-先选短木板",
+      "id": "choice-短木板",
       "kind": "choice",
-      "text": "先选短木板",
+      "text": "短木板",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-priority-choice/logic-priority-choice-3"
+        "logic-priority-choice/logic-priority-choice-3",
+        "logic-space-bridge/logic-space-bridge-4"
       ]
     },
     {
-      "id": "choice-先选小石头",
+      "id": "choice-小石头",
       "kind": "choice",
-      "text": "先选小石头",
+      "text": "小石头",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -12897,39 +12887,9 @@
       ]
     },
     {
-      "id": "object-河宽4格-长板5格-短板2格",
+      "id": "object-长木板搭到了两岸",
       "kind": "object",
-      "text": "河宽4格，长板5格、短板2格",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-priority-choice/logic-priority-choice-3"
-      ]
-    },
-    {
-      "id": "object-5格长板",
-      "kind": "object",
-      "text": "5格长板",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-priority-choice/logic-priority-choice-3"
-      ]
-    },
-    {
-      "id": "object-2格短板",
-      "kind": "object",
-      "text": "2格短板",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-priority-choice/logic-priority-choice-3"
-      ]
-    },
-    {
-      "id": "object-5格木板可以搭在两岸",
-      "kind": "object",
-      "text": "5格木板可以搭在两岸",
+      "text": "长木板搭到了两岸",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -13297,29 +13257,9 @@
       ]
     },
     {
-      "id": "choice-远处小狗睡觉的地方",
-      "kind": "choice",
-      "text": "远处小狗睡觉的地方",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-priority-choice/logic-priority-choice-9"
-      ]
-    },
-    {
-      "id": "choice-窗边小鸟的位置",
-      "kind": "choice",
-      "text": "窗边小鸟的位置",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-priority-choice/logic-priority-choice-9"
-      ]
-    },
-    {
-      "id": "prompt-短木板失败后-有两种改法-换同样短的-或换一块够长的木板-先选哪个-先改真正导致失败的条件",
+      "id": "prompt-短木板搭不到对岸-先怎么改-先找能让木板搭到对岸的办法",
       "kind": "prompt",
-      "text": "短木板失败后，有两种改法：换同样短的，或换一块够长的木板，先选哪个？先改真正导致失败的条件。",
+      "text": "短木板搭不到对岸，先怎么改？先找能让木板搭到对岸的办法。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -13447,9 +13387,9 @@
       ]
     },
     {
-      "id": "choice-直接说小狗弄乱",
+      "id": "choice-就是小狗",
       "kind": "choice",
-      "text": "直接说小狗弄乱",
+      "text": "就是小狗",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -13457,9 +13397,9 @@
       ]
     },
     {
-      "id": "choice-先找更多线索",
+      "id": "choice-再找线索",
       "kind": "choice",
-      "text": "先找更多线索",
+      "text": "再找线索",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -15015,19 +14955,6 @@
       ]
     },
     {
-      "id": "choice-长木板",
-      "kind": "choice",
-      "text": "长木板",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-relation-pairs/door-river-tool",
-        "logic-space-bridge/logic-space-bridge-4",
-        "logic-same-kind-detective/logic-same-kind-detective-5",
-        "logic-same-kind-detective/logic-same-kind-detective-11"
-      ]
-    },
-    {
       "id": "object-打开门",
       "kind": "object",
       "text": "打开门",
@@ -15323,9 +15250,9 @@
       ]
     },
     {
-      "id": "choice-小熊到木板的距离",
+      "id": "choice-小熊到木板",
       "kind": "choice",
-      "text": "小熊到木板的距离",
+      "text": "小熊到木板",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -15333,9 +15260,9 @@
       ]
     },
     {
-      "id": "choice-木板到小旗的距离",
+      "id": "choice-木板到小旗",
       "kind": "choice",
-      "text": "木板到小旗的距离",
+      "text": "木板到小旗",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -15343,9 +15270,9 @@
       ]
     },
     {
-      "id": "choice-两岸之间的距离",
+      "id": "choice-两岸之间",
       "kind": "choice",
-      "text": "两岸之间的距离",
+      "text": "两岸之间",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -15373,9 +15300,9 @@
       ]
     },
     {
-      "id": "choice-只用一块-4-格木板跨整条河",
+      "id": "choice-只用一块",
       "kind": "choice",
-      "text": "只用一块 4 格木板跨整条河",
+      "text": "只用一块",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -15383,19 +15310,20 @@
       ]
     },
     {
-      "id": "choice-两块-4-格木板-各搭一段",
+      "id": "choice-每边搭一块",
       "kind": "choice",
-      "text": "两块 4 格木板，各搭一段",
+      "text": "每边搭一块",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-space-bridge/logic-space-bridge-2"
+        "logic-space-bridge/logic-space-bridge-2",
+        "logic-space-bridge/logic-space-bridge-5"
       ]
     },
     {
-      "id": "choice-两块都放在同一岸边",
+      "id": "choice-都放岸边",
       "kind": "choice",
-      "text": "两块都放在同一岸边",
+      "text": "都放岸边",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -15476,16 +15404,6 @@
       ]
     },
     {
-      "id": "choice-短木板",
-      "kind": "choice",
-      "text": "短木板",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-space-bridge/logic-space-bridge-4"
-      ]
-    },
-    {
       "id": "choice-最短板",
       "kind": "choice",
       "text": "最短板",
@@ -15516,29 +15434,20 @@
       ]
     },
     {
-      "id": "choice-只用-5-格长木板跨整条河",
+      "id": "choice-只用长板",
       "kind": "choice",
-      "text": "只用 5 格长木板跨整条河",
+      "text": "只用长板",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "logic-space-bridge/logic-space-bridge-5"
+        "logic-space-bridge/logic-space-bridge-5",
+        "logic-space-bridge/logic-space-bridge-8"
       ]
     },
     {
-      "id": "choice-只用-4-格短木板跨整条河",
+      "id": "choice-只用短板",
       "kind": "choice",
-      "text": "只用 4 格短木板跨整条河",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-space-bridge/logic-space-bridge-5"
-      ]
-    },
-    {
-      "id": "choice-两块木板分别搭小岛两边",
-      "kind": "choice",
-      "text": "两块木板分别搭小岛两边",
+      "text": "只用短板",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -15636,9 +15545,9 @@
       ]
     },
     {
-      "id": "choice-只用长木板跨整条河",
+      "id": "choice-左短右长",
       "kind": "choice",
-      "text": "只用长木板跨整条河",
+      "text": "左短右长",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -15646,19 +15555,9 @@
       ]
     },
     {
-      "id": "choice-短板搭左段-长板搭右段",
+      "id": "choice-左长右短",
       "kind": "choice",
-      "text": "短板搭左段，长板搭右段",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "logic-space-bridge/logic-space-bridge-8"
-      ]
-    },
-    {
-      "id": "choice-长板搭左段-短板搭右段",
-      "kind": "choice",
-      "text": "长板搭左段，短板搭右段",
+      "text": "左长右短",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [

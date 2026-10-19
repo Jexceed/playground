@@ -1,0 +1,31 @@
+$ node scripts/audit-curriculum.mjs
+{
+  "math": 266,
+  "logic": 445,
+  "graphic": 234,
+  "memory": 81,
+  "language": 54,
+  "life": 30,
+  "totalGames": 115,
+  "totalRounds": 1110,
+  "legacyGames": 40,
+  "legacyRounds": 489,
+  "interactiveGames": 75,
+  "interactiveRounds": 621,
+  "mathTargetMet": true,
+  "logicTargetMet": true,
+  "graphicTargetMet": true,
+  "problemCount": 9,
+  "problems": [
+    "logic-sorter-switch/logic-sorter-switch-1: sorter answer should match the visible 颜色 feature (红色篮子)",
+    "logic-sorter-switch/logic-sorter-switch-2: sorter answer should match the visible 颜色 feature (蓝色篮子)",
+    "logic-sorter-switch/logic-sorter-switch-3: sorter answer should match the visible 形状 feature (圆形篮子)",
+    "logic-sorter-switch/logic-sorter-switch-4: sorter answer should match the visible 形状 feature (方形篮子)",
+    "logic-sorter-switch/logic-sorter-switch-5: sorter answer should match the visible 颜色 feature (蓝色篮子)",
+    "logic-sorter-switch/logic-sorter-switch-6: sorter answer should match the visible 形状 feature (方形篮子)",
+    "logic-sorter-switch/logic-sorter-switch-7: sorter answer should match the visible 颜色 feature (黄色篮子)",
+    "logic-sorter-switch/logic-sorter-switch-8: sorter answer should match the visible 形状 feature (圆形篮子)",
+    "runtime voice directory has 76 unreferenced files: public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-两个都一样.mp3, public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-两块-4-格木板-各搭一段.mp3, public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-两块木板分别搭小岛两边.mp3, public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-两块都放在同一岸边.mp3, public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-两岸之间的距离.mp3, public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-倒下的杯子周围.mp3, public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-先找更多线索.mp3, public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-先检查倒下的杯子周围.mp3, public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-先选小石头.mp3, public/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-先选短木板.mp3"
+  ]
+}
+[ELIFECYCLE] Command failed with exit code 1.

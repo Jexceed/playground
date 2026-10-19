@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-10-18T17:19:46.746Z",
+  "generatedAt": "2026-10-19T02:27:20.248Z",
   "provider": "edge-tts Python package",
   "voice": "zh-CN-XiaoxiaoNeural",
   "rate": "-12%",
   "pitch": "+2Hz",
   "includeParent": true,
   "format": "mp3",
-  "count": 4182,
-  "requestedCount": 4182,
+  "count": 4171,
+  "requestedCount": 4171,
   "failures": [],
   "entries": [
     {
@@ -3411,28 +3411,28 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E5%88%9A%E6%89%8D%E6%8C%89%E4%BB%80%E4%B9%88%E5%88%86-%E7%8E%B0%E5%9C%A8%E8%A7%84%E5%88%99%E6%8D%A2%E6%88%90%E4%BB%80%E4%B9%88.mp3"
     },
     {
-      "id": "prompt-分类机说-这次只看颜色-红色圆片要进哪个篮子-先说一遍规则-只看颜色-再看这张图",
+      "id": "prompt-分类机说-这次只看颜色-红色圆片要进哪一组-先说一遍规则-只看颜色-再看这张图",
       "kind": "prompt",
-      "text": "分类机说：这次只看颜色。红色圆片要进哪个篮子？先说一遍规则：只看颜色，再看这张图。",
+      "text": "分类机说：这次只看颜色。红色圆片要进哪一组？先说一遍规则：只看颜色，再看这张图。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%88%86%E7%B1%BB%E6%9C%BA%E8%AF%B4-%E8%BF%99%E6%AC%A1%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87%E8%A6%81%E8%BF%9B%E5%93%AA%E4%B8%AA%E7%AF%AE%E5%AD%90-%E5%85%88%E8%AF%B4%E4%B8%80%E9%81%8D%E8%A7%84%E5%88%99-%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E5%86%8D%E7%9C%8B%E8%BF%99%E5%BC%A0%E5%9B%BE.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%88%86%E7%B1%BB%E6%9C%BA%E8%AF%B4-%E8%BF%99%E6%AC%A1%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87%E8%A6%81%E8%BF%9B%E5%93%AA%E4%B8%80%E7%BB%84-%E5%85%88%E8%AF%B4%E4%B8%80%E9%81%8D%E8%A7%84%E5%88%99-%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E5%86%8D%E7%9C%8B%E8%BF%99%E5%BC%A0%E5%9B%BE.mp3"
     },
     {
-      "id": "success-看颜色时-红色圆片和红色篮子是一对-圆形先不管",
+      "id": "success-看颜色时-红色圆片和红色组是一对-圆形先不管",
       "kind": "success",
-      "text": "看颜色时，红色圆片和红色篮子是一对；圆形先不管。",
+      "text": "看颜色时，红色圆片和红色组是一对；圆形先不管。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%9C%8B%E9%A2%9C%E8%89%B2%E6%97%B6-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87%E5%92%8C%E7%BA%A2%E8%89%B2%E7%AF%AE%E5%AD%90%E6%98%AF%E4%B8%80%E5%AF%B9-%E5%9C%86%E5%BD%A2%E5%85%88%E4%B8%8D%E7%AE%A1.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%9C%8B%E9%A2%9C%E8%89%B2%E6%97%B6-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87%E5%92%8C%E7%BA%A2%E8%89%B2%E7%BB%84%E6%98%AF%E4%B8%80%E5%AF%B9-%E5%9C%86%E5%BD%A2%E5%85%88%E4%B8%8D%E7%AE%A1.mp3"
     },
     {
-      "id": "retry-这题只看颜色-先找红色-再选红色篮子",
+      "id": "retry-这题只看颜色-先找红色-再选红色组",
       "kind": "retry",
-      "text": "这题只看颜色。先找红色，再选红色篮子。",
+      "text": "这题只看颜色。先找红色，再选红色组。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E8%BF%99%E9%A2%98%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E5%85%88%E6%89%BE%E7%BA%A2%E8%89%B2-%E5%86%8D%E9%80%89%E7%BA%A2%E8%89%B2%E7%AF%AE%E5%AD%90.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E8%BF%99%E9%A2%98%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E5%85%88%E6%89%BE%E7%BA%A2%E8%89%B2-%E5%86%8D%E9%80%89%E7%BA%A2%E8%89%B2%E7%BB%84.mp3"
     },
     {
       "id": "parent-问她-你看的是颜色还是形状-为什么圆形先不管",
@@ -3443,84 +3443,84 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E4%BD%A0%E7%9C%8B%E7%9A%84%E6%98%AF%E9%A2%9C%E8%89%B2%E8%BF%98%E6%98%AF%E5%BD%A2%E7%8A%B6-%E4%B8%BA%E4%BB%80%E4%B9%88%E5%9C%86%E5%BD%A2%E5%85%88%E4%B8%8D%E7%AE%A1.mp3"
     },
     {
-      "id": "choice-红色篮子",
+      "id": "choice-红色组",
       "kind": "choice",
-      "text": "红色篮子",
+      "text": "红色组",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E7%BA%A2%E8%89%B2%E7%AF%AE%E5%AD%90.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E7%BA%A2%E8%89%B2%E7%BB%84.mp3"
     },
     {
-      "id": "choice-蓝色篮子",
+      "id": "choice-蓝色组",
       "kind": "choice",
-      "text": "蓝色篮子",
+      "text": "蓝色组",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E8%93%9D%E8%89%B2%E7%AF%AE%E5%AD%90.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E8%93%9D%E8%89%B2%E7%BB%84.mp3"
     },
     {
-      "id": "choice-绿色篮子",
+      "id": "choice-绿色组",
       "kind": "choice",
-      "text": "绿色篮子",
+      "text": "绿色组",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E7%BB%BF%E8%89%B2%E7%AF%AE%E5%AD%90.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E7%BB%BF%E8%89%B2%E7%BB%84.mp3"
     },
     {
-      "id": "prompt-分类机说-这次只看颜色-蓝色圆片要进哪个篮子-先说一遍规则-只看颜色-再看这张图",
+      "id": "prompt-分类机说-这次只看颜色-蓝色圆片要进哪一组-先说一遍规则-只看颜色-再看这张图",
       "kind": "prompt",
-      "text": "分类机说：这次只看颜色。蓝色圆片要进哪个篮子？先说一遍规则：只看颜色，再看这张图。",
+      "text": "分类机说：这次只看颜色。蓝色圆片要进哪一组？先说一遍规则：只看颜色，再看这张图。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%88%86%E7%B1%BB%E6%9C%BA%E8%AF%B4-%E8%BF%99%E6%AC%A1%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87%E8%A6%81%E8%BF%9B%E5%93%AA%E4%B8%AA%E7%AF%AE%E5%AD%90-%E5%85%88%E8%AF%B4%E4%B8%80%E9%81%8D%E8%A7%84%E5%88%99-%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E5%86%8D%E7%9C%8B%E8%BF%99%E5%BC%A0%E5%9B%BE.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%88%86%E7%B1%BB%E6%9C%BA%E8%AF%B4-%E8%BF%99%E6%AC%A1%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87%E8%A6%81%E8%BF%9B%E5%93%AA%E4%B8%80%E7%BB%84-%E5%85%88%E8%AF%B4%E4%B8%80%E9%81%8D%E8%A7%84%E5%88%99-%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E5%86%8D%E7%9C%8B%E8%BF%99%E5%BC%A0%E5%9B%BE.mp3"
     },
     {
-      "id": "success-看颜色时-蓝色圆片和蓝色篮子是一对-圆形先不管",
+      "id": "success-看颜色时-蓝色圆片和蓝色组是一对-圆形先不管",
       "kind": "success",
-      "text": "看颜色时，蓝色圆片和蓝色篮子是一对；圆形先不管。",
+      "text": "看颜色时，蓝色圆片和蓝色组是一对；圆形先不管。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%9C%8B%E9%A2%9C%E8%89%B2%E6%97%B6-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87%E5%92%8C%E8%93%9D%E8%89%B2%E7%AF%AE%E5%AD%90%E6%98%AF%E4%B8%80%E5%AF%B9-%E5%9C%86%E5%BD%A2%E5%85%88%E4%B8%8D%E7%AE%A1.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%9C%8B%E9%A2%9C%E8%89%B2%E6%97%B6-%E8%93%9D%E8%89%B2%E5%9C%86%E7%89%87%E5%92%8C%E8%93%9D%E8%89%B2%E7%BB%84%E6%98%AF%E4%B8%80%E5%AF%B9-%E5%9C%86%E5%BD%A2%E5%85%88%E4%B8%8D%E7%AE%A1.mp3"
     },
     {
-      "id": "retry-这题只看颜色-先找蓝色-再选蓝色篮子",
+      "id": "retry-这题只看颜色-先找蓝色-再选蓝色组",
       "kind": "retry",
-      "text": "这题只看颜色。先找蓝色，再选蓝色篮子。",
+      "text": "这题只看颜色。先找蓝色，再选蓝色组。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E8%BF%99%E9%A2%98%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E5%85%88%E6%89%BE%E8%93%9D%E8%89%B2-%E5%86%8D%E9%80%89%E8%93%9D%E8%89%B2%E7%AF%AE%E5%AD%90.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E8%BF%99%E9%A2%98%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E5%85%88%E6%89%BE%E8%93%9D%E8%89%B2-%E5%86%8D%E9%80%89%E8%93%9D%E8%89%B2%E7%BB%84.mp3"
     },
     {
-      "id": "choice-黄色篮子",
+      "id": "choice-黄色组",
       "kind": "choice",
-      "text": "黄色篮子",
+      "text": "黄色组",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E9%BB%84%E8%89%B2%E7%AF%AE%E5%AD%90.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E9%BB%84%E8%89%B2%E7%BB%84.mp3"
     },
     {
-      "id": "prompt-规则换了-这次只看形状-红色圆片要进哪个篮子-先说一遍规则-只看形状-再看这张图",
+      "id": "prompt-规则换了-这次只看形状-红色圆片要进哪一组-先说一遍规则-只看形状-再看这张图",
       "kind": "prompt",
-      "text": "规则换了：这次只看形状。红色圆片要进哪个篮子？先说一遍规则：只看形状，再看这张图。",
+      "text": "规则换了：这次只看形状。红色圆片要进哪一组？先说一遍规则：只看形状，再看这张图。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%A7%84%E5%88%99%E6%8D%A2%E4%BA%86-%E8%BF%99%E6%AC%A1%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87%E8%A6%81%E8%BF%9B%E5%93%AA%E4%B8%AA%E7%AF%AE%E5%AD%90-%E5%85%88%E8%AF%B4%E4%B8%80%E9%81%8D%E8%A7%84%E5%88%99-%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E5%86%8D%E7%9C%8B%E8%BF%99%E5%BC%A0%E5%9B%BE.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%A7%84%E5%88%99%E6%8D%A2%E4%BA%86-%E8%BF%99%E6%AC%A1%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E7%BA%A2%E8%89%B2%E5%9C%86%E7%89%87%E8%A6%81%E8%BF%9B%E5%93%AA%E4%B8%80%E7%BB%84-%E5%85%88%E8%AF%B4%E4%B8%80%E9%81%8D%E8%A7%84%E5%88%99-%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E5%86%8D%E7%9C%8B%E8%BF%99%E5%BC%A0%E5%9B%BE.mp3"
     },
     {
-      "id": "success-看形状时-圆片进圆形篮子-红色先不管",
+      "id": "success-看形状时-圆片进圆形组-红色先不管",
       "kind": "success",
-      "text": "看形状时，圆片进圆形篮子；红色先不管。",
+      "text": "看形状时，圆片进圆形组；红色先不管。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%9C%8B%E5%BD%A2%E7%8A%B6%E6%97%B6-%E5%9C%86%E7%89%87%E8%BF%9B%E5%9C%86%E5%BD%A2%E7%AF%AE%E5%AD%90-%E7%BA%A2%E8%89%B2%E5%85%88%E4%B8%8D%E7%AE%A1.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%9C%8B%E5%BD%A2%E7%8A%B6%E6%97%B6-%E5%9C%86%E7%89%87%E8%BF%9B%E5%9C%86%E5%BD%A2%E7%BB%84-%E7%BA%A2%E8%89%B2%E5%85%88%E4%B8%8D%E7%AE%A1.mp3"
     },
     {
-      "id": "retry-这题只看形状-先找圆形-再选圆形篮子",
+      "id": "retry-这题只看形状-先找圆形-再选圆形组",
       "kind": "retry",
-      "text": "这题只看形状。先找圆形，再选圆形篮子。",
+      "text": "这题只看形状。先找圆形，再选圆形组。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E8%BF%99%E9%A2%98%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E5%85%88%E6%89%BE%E5%9C%86%E5%BD%A2-%E5%86%8D%E9%80%89%E5%9C%86%E5%BD%A2%E7%AF%AE%E5%AD%90.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E8%BF%99%E9%A2%98%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E5%85%88%E6%89%BE%E5%9C%86%E5%BD%A2-%E5%86%8D%E9%80%89%E5%9C%86%E5%BD%A2%E7%BB%84.mp3"
     },
     {
       "id": "parent-问她-你看的是形状还是颜色-为什么红色先不管",
@@ -3531,44 +3531,44 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E4%BD%A0%E7%9C%8B%E7%9A%84%E6%98%AF%E5%BD%A2%E7%8A%B6%E8%BF%98%E6%98%AF%E9%A2%9C%E8%89%B2-%E4%B8%BA%E4%BB%80%E4%B9%88%E7%BA%A2%E8%89%B2%E5%85%88%E4%B8%8D%E7%AE%A1.mp3"
     },
     {
-      "id": "choice-方形篮子",
+      "id": "choice-方形组",
       "kind": "choice",
-      "text": "方形篮子",
+      "text": "方形组",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E6%96%B9%E5%BD%A2%E7%AF%AE%E5%AD%90.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E6%96%B9%E5%BD%A2%E7%BB%84.mp3"
     },
     {
-      "id": "choice-圆形篮子",
+      "id": "choice-圆形组",
       "kind": "choice",
-      "text": "圆形篮子",
+      "text": "圆形组",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%9C%86%E5%BD%A2%E7%AF%AE%E5%AD%90.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%9C%86%E5%BD%A2%E7%BB%84.mp3"
     },
     {
-      "id": "prompt-规则换了-这次只看形状-蓝色方块要进哪个篮子-先说一遍规则-只看形状-再看这张图",
+      "id": "prompt-规则换了-这次只看形状-蓝色方块要进哪一组-先说一遍规则-只看形状-再看这张图",
       "kind": "prompt",
-      "text": "规则换了：这次只看形状。蓝色方块要进哪个篮子？先说一遍规则：只看形状，再看这张图。",
+      "text": "规则换了：这次只看形状。蓝色方块要进哪一组？先说一遍规则：只看形状，再看这张图。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%A7%84%E5%88%99%E6%8D%A2%E4%BA%86-%E8%BF%99%E6%AC%A1%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E8%93%9D%E8%89%B2%E6%96%B9%E5%9D%97%E8%A6%81%E8%BF%9B%E5%93%AA%E4%B8%AA%E7%AF%AE%E5%AD%90-%E5%85%88%E8%AF%B4%E4%B8%80%E9%81%8D%E8%A7%84%E5%88%99-%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E5%86%8D%E7%9C%8B%E8%BF%99%E5%BC%A0%E5%9B%BE.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%A7%84%E5%88%99%E6%8D%A2%E4%BA%86-%E8%BF%99%E6%AC%A1%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E8%93%9D%E8%89%B2%E6%96%B9%E5%9D%97%E8%A6%81%E8%BF%9B%E5%93%AA%E4%B8%80%E7%BB%84-%E5%85%88%E8%AF%B4%E4%B8%80%E9%81%8D%E8%A7%84%E5%88%99-%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E5%86%8D%E7%9C%8B%E8%BF%99%E5%BC%A0%E5%9B%BE.mp3"
     },
     {
-      "id": "success-看形状时-方块进方形篮子-蓝色先不管",
+      "id": "success-看形状时-方块进方形组-蓝色先不管",
       "kind": "success",
-      "text": "看形状时，方块进方形篮子；蓝色先不管。",
+      "text": "看形状时，方块进方形组；蓝色先不管。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%9C%8B%E5%BD%A2%E7%8A%B6%E6%97%B6-%E6%96%B9%E5%9D%97%E8%BF%9B%E6%96%B9%E5%BD%A2%E7%AF%AE%E5%AD%90-%E8%93%9D%E8%89%B2%E5%85%88%E4%B8%8D%E7%AE%A1.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%9C%8B%E5%BD%A2%E7%8A%B6%E6%97%B6-%E6%96%B9%E5%9D%97%E8%BF%9B%E6%96%B9%E5%BD%A2%E7%BB%84-%E8%93%9D%E8%89%B2%E5%85%88%E4%B8%8D%E7%AE%A1.mp3"
     },
     {
-      "id": "retry-这题只看形状-先找方形-再选方形篮子",
+      "id": "retry-这题只看形状-先找方形-再选方形组",
       "kind": "retry",
-      "text": "这题只看形状。先找方形，再选方形篮子。",
+      "text": "这题只看形状。先找方形，再选方形组。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E8%BF%99%E9%A2%98%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E5%85%88%E6%89%BE%E6%96%B9%E5%BD%A2-%E5%86%8D%E9%80%89%E6%96%B9%E5%BD%A2%E7%AF%AE%E5%AD%90.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E8%BF%99%E9%A2%98%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E5%85%88%E6%89%BE%E6%96%B9%E5%BD%A2-%E5%86%8D%E9%80%89%E6%96%B9%E5%BD%A2%E7%BB%84.mp3"
     },
     {
       "id": "parent-问她-你看的是形状还是颜色-为什么蓝色先不管",
@@ -3579,20 +3579,20 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E4%BD%A0%E7%9C%8B%E7%9A%84%E6%98%AF%E5%BD%A2%E7%8A%B6%E8%BF%98%E6%98%AF%E9%A2%9C%E8%89%B2-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%93%9D%E8%89%B2%E5%85%88%E4%B8%8D%E7%AE%A1.mp3"
     },
     {
-      "id": "prompt-刚才看过形状-这次只看颜色-蓝色方块要进哪个篮子-先说一遍规则-只看颜色-再看这张图",
+      "id": "prompt-刚才看过形状-这次只看颜色-蓝色方块要进哪一组-先说一遍规则-只看颜色-再看这张图",
       "kind": "prompt",
-      "text": "刚才看过形状，这次只看颜色。蓝色方块要进哪个篮子？先说一遍规则：只看颜色，再看这张图。",
+      "text": "刚才看过形状，这次只看颜色。蓝色方块要进哪一组？先说一遍规则：只看颜色，再看这张图。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%88%9A%E6%89%8D%E7%9C%8B%E8%BF%87%E5%BD%A2%E7%8A%B6-%E8%BF%99%E6%AC%A1%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E8%93%9D%E8%89%B2%E6%96%B9%E5%9D%97%E8%A6%81%E8%BF%9B%E5%93%AA%E4%B8%AA%E7%AF%AE%E5%AD%90-%E5%85%88%E8%AF%B4%E4%B8%80%E9%81%8D%E8%A7%84%E5%88%99-%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E5%86%8D%E7%9C%8B%E8%BF%99%E5%BC%A0%E5%9B%BE.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%88%9A%E6%89%8D%E7%9C%8B%E8%BF%87%E5%BD%A2%E7%8A%B6-%E8%BF%99%E6%AC%A1%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E8%93%9D%E8%89%B2%E6%96%B9%E5%9D%97%E8%A6%81%E8%BF%9B%E5%93%AA%E4%B8%80%E7%BB%84-%E5%85%88%E8%AF%B4%E4%B8%80%E9%81%8D%E8%A7%84%E5%88%99-%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E5%86%8D%E7%9C%8B%E8%BF%99%E5%BC%A0%E5%9B%BE.mp3"
     },
     {
-      "id": "success-虽然它是方块-但这次看颜色-所以进蓝色篮子",
+      "id": "success-虽然它是方块-但这次看颜色-所以进蓝色组",
       "kind": "success",
-      "text": "虽然它是方块，但这次看颜色，所以进蓝色篮子。",
+      "text": "虽然它是方块，但这次看颜色，所以进蓝色组。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%99%BD%E7%84%B6%E5%AE%83%E6%98%AF%E6%96%B9%E5%9D%97-%E4%BD%86%E8%BF%99%E6%AC%A1%E7%9C%8B%E9%A2%9C%E8%89%B2-%E6%89%80%E4%BB%A5%E8%BF%9B%E8%93%9D%E8%89%B2%E7%AF%AE%E5%AD%90.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%99%BD%E7%84%B6%E5%AE%83%E6%98%AF%E6%96%B9%E5%9D%97-%E4%BD%86%E8%BF%99%E6%AC%A1%E7%9C%8B%E9%A2%9C%E8%89%B2-%E6%89%80%E4%BB%A5%E8%BF%9B%E8%93%9D%E8%89%B2%E7%BB%84.mp3"
     },
     {
       "id": "retry-先停一下听规则-现在只看颜色-不看形状",
@@ -3603,28 +3603,28 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E5%81%9C%E4%B8%80%E4%B8%8B%E5%90%AC%E8%A7%84%E5%88%99-%E7%8E%B0%E5%9C%A8%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E4%B8%8D%E7%9C%8B%E5%BD%A2%E7%8A%B6.mp3"
     },
     {
-      "id": "parent-问她-如果选方形篮子-是看了颜色还是看了形状-这次规则是什么",
+      "id": "parent-问她-如果选方形组-是看了颜色还是看了形状-这次规则是什么",
       "kind": "parent",
-      "text": "问她：如果选方形篮子，是看了颜色还是看了形状？这次规则是什么？",
+      "text": "问她：如果选方形组，是看了颜色还是看了形状？这次规则是什么？",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E5%A6%82%E6%9E%9C%E9%80%89%E6%96%B9%E5%BD%A2%E7%AF%AE%E5%AD%90-%E6%98%AF%E7%9C%8B%E4%BA%86%E9%A2%9C%E8%89%B2%E8%BF%98%E6%98%AF%E7%9C%8B%E4%BA%86%E5%BD%A2%E7%8A%B6-%E8%BF%99%E6%AC%A1%E8%A7%84%E5%88%99%E6%98%AF%E4%BB%80%E4%B9%88.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E5%A6%82%E6%9E%9C%E9%80%89%E6%96%B9%E5%BD%A2%E7%BB%84-%E6%98%AF%E7%9C%8B%E4%BA%86%E9%A2%9C%E8%89%B2%E8%BF%98%E6%98%AF%E7%9C%8B%E4%BA%86%E5%BD%A2%E7%8A%B6-%E8%BF%99%E6%AC%A1%E8%A7%84%E5%88%99%E6%98%AF%E4%BB%80%E4%B9%88.mp3"
     },
     {
-      "id": "prompt-还是蓝色方块-现在只看形状-它要进哪个篮子-先说一遍规则-只看形状-再看这张图",
+      "id": "prompt-还是蓝色方块-现在只看形状-它要进哪一组-先说一遍规则-只看形状-再看这张图",
       "kind": "prompt",
-      "text": "还是蓝色方块，现在只看形状。它要进哪个篮子？先说一遍规则：只看形状，再看这张图。",
+      "text": "还是蓝色方块，现在只看形状。它要进哪一组？先说一遍规则：只看形状，再看这张图。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%BF%98%E6%98%AF%E8%93%9D%E8%89%B2%E6%96%B9%E5%9D%97-%E7%8E%B0%E5%9C%A8%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E5%AE%83%E8%A6%81%E8%BF%9B%E5%93%AA%E4%B8%AA%E7%AF%AE%E5%AD%90-%E5%85%88%E8%AF%B4%E4%B8%80%E9%81%8D%E8%A7%84%E5%88%99-%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E5%86%8D%E7%9C%8B%E8%BF%99%E5%BC%A0%E5%9B%BE.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%BF%98%E6%98%AF%E8%93%9D%E8%89%B2%E6%96%B9%E5%9D%97-%E7%8E%B0%E5%9C%A8%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E5%AE%83%E8%A6%81%E8%BF%9B%E5%93%AA%E4%B8%80%E7%BB%84-%E5%85%88%E8%AF%B4%E4%B8%80%E9%81%8D%E8%A7%84%E5%88%99-%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E5%86%8D%E7%9C%8B%E8%BF%99%E5%BC%A0%E5%9B%BE.mp3"
     },
     {
-      "id": "success-虽然它是蓝色-但这次看形状-所以进方形篮子",
+      "id": "success-虽然它是蓝色-但这次看形状-所以进方形组",
       "kind": "success",
-      "text": "虽然它是蓝色，但这次看形状，所以进方形篮子。",
+      "text": "虽然它是蓝色，但这次看形状，所以进方形组。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%99%BD%E7%84%B6%E5%AE%83%E6%98%AF%E8%93%9D%E8%89%B2-%E4%BD%86%E8%BF%99%E6%AC%A1%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E6%89%80%E4%BB%A5%E8%BF%9B%E6%96%B9%E5%BD%A2%E7%AF%AE%E5%AD%90.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E8%99%BD%E7%84%B6%E5%AE%83%E6%98%AF%E8%93%9D%E8%89%B2-%E4%BD%86%E8%BF%99%E6%AC%A1%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E6%89%80%E4%BB%A5%E8%BF%9B%E6%96%B9%E5%BD%A2%E7%BB%84.mp3"
     },
     {
       "id": "retry-先停一下听规则-现在只看形状-不看颜色",
@@ -3635,12 +3635,12 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%85%88%E5%81%9C%E4%B8%80%E4%B8%8B%E5%90%AC%E8%A7%84%E5%88%99-%E7%8E%B0%E5%9C%A8%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E4%B8%8D%E7%9C%8B%E9%A2%9C%E8%89%B2.mp3"
     },
     {
-      "id": "parent-问她-如果选蓝色篮子-是看了形状还是看了颜色-这次规则是什么",
+      "id": "parent-问她-如果选蓝色组-是看了形状还是看了颜色-这次规则是什么",
       "kind": "parent",
-      "text": "问她：如果选蓝色篮子，是看了形状还是看了颜色？这次规则是什么？",
+      "text": "问她：如果选蓝色组，是看了形状还是看了颜色？这次规则是什么？",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E5%A6%82%E6%9E%9C%E9%80%89%E8%93%9D%E8%89%B2%E7%AF%AE%E5%AD%90-%E6%98%AF%E7%9C%8B%E4%BA%86%E5%BD%A2%E7%8A%B6%E8%BF%98%E6%98%AF%E7%9C%8B%E4%BA%86%E9%A2%9C%E8%89%B2-%E8%BF%99%E6%AC%A1%E8%A7%84%E5%88%99%E6%98%AF%E4%BB%80%E4%B9%88.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E5%A6%82%E6%9E%9C%E9%80%89%E8%93%9D%E8%89%B2%E7%BB%84-%E6%98%AF%E7%9C%8B%E4%BA%86%E5%BD%A2%E7%8A%B6%E8%BF%98%E6%98%AF%E7%9C%8B%E4%BA%86%E9%A2%9C%E8%89%B2-%E8%BF%99%E6%AC%A1%E8%A7%84%E5%88%99%E6%98%AF%E4%BB%80%E4%B9%88.mp3"
     },
     {
       "id": "prompt-黄色圆片有颜色也有形状-这次只看颜色-放哪里-先说一遍规则-只看颜色-再看这张图",
@@ -3651,28 +3651,28 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87%E6%9C%89%E9%A2%9C%E8%89%B2%E4%B9%9F%E6%9C%89%E5%BD%A2%E7%8A%B6-%E8%BF%99%E6%AC%A1%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E6%94%BE%E5%93%AA%E9%87%8C-%E5%85%88%E8%AF%B4%E4%B8%80%E9%81%8D%E8%A7%84%E5%88%99-%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E5%86%8D%E7%9C%8B%E8%BF%99%E5%BC%A0%E5%9B%BE.mp3"
     },
     {
-      "id": "success-听到只看颜色-就找黄色篮子-圆形先不管",
+      "id": "success-听到只看颜色-就找黄色组-圆形先不管",
       "kind": "success",
-      "text": "听到只看颜色，就找黄色篮子；圆形先不管。",
+      "text": "听到只看颜色，就找黄色组；圆形先不管。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%90%AC%E5%88%B0%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E5%B0%B1%E6%89%BE%E9%BB%84%E8%89%B2%E7%AF%AE%E5%AD%90-%E5%9C%86%E5%BD%A2%E5%85%88%E4%B8%8D%E7%AE%A1.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%90%AC%E5%88%B0%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E5%B0%B1%E6%89%BE%E9%BB%84%E8%89%B2%E7%BB%84-%E5%9C%86%E5%BD%A2%E5%85%88%E4%B8%8D%E7%AE%A1.mp3"
     },
     {
-      "id": "retry-这题只看颜色-圆形篮子是看形状时才用的",
+      "id": "retry-这题只看颜色-圆形组是看形状时才用的",
       "kind": "retry",
-      "text": "这题只看颜色。圆形篮子是看形状时才用的。",
+      "text": "这题只看颜色。圆形组是看形状时才用的。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E8%BF%99%E9%A2%98%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E5%9C%86%E5%BD%A2%E7%AF%AE%E5%AD%90%E6%98%AF%E7%9C%8B%E5%BD%A2%E7%8A%B6%E6%97%B6%E6%89%8D%E7%94%A8%E7%9A%84.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E8%BF%99%E9%A2%98%E5%8F%AA%E7%9C%8B%E9%A2%9C%E8%89%B2-%E5%9C%86%E5%BD%A2%E7%BB%84%E6%98%AF%E7%9C%8B%E5%BD%A2%E7%8A%B6%E6%97%B6%E6%89%8D%E7%94%A8%E7%9A%84.mp3"
     },
     {
-      "id": "parent-问她-黄色篮子和圆形篮子都像对的-为什么这次选颜色",
+      "id": "parent-问她-黄色组和圆形组都像对的-为什么这次选颜色",
       "kind": "parent",
-      "text": "问她：黄色篮子和圆形篮子都像对的，为什么这次选颜色？",
+      "text": "问她：黄色组和圆形组都像对的，为什么这次选颜色？",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E9%BB%84%E8%89%B2%E7%AF%AE%E5%AD%90%E5%92%8C%E5%9C%86%E5%BD%A2%E7%AF%AE%E5%AD%90%E9%83%BD%E5%83%8F%E5%AF%B9%E7%9A%84-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%99%E6%AC%A1%E9%80%89%E9%A2%9C%E8%89%B2.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E9%BB%84%E8%89%B2%E7%BB%84%E5%92%8C%E5%9C%86%E5%BD%A2%E7%BB%84%E9%83%BD%E5%83%8F%E5%AF%B9%E7%9A%84-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%99%E6%AC%A1%E9%80%89%E9%A2%9C%E8%89%B2.mp3"
     },
     {
       "id": "prompt-黄色圆片有颜色也有形状-这次只看形状-放哪里-先说一遍规则-只看形状-再看这张图",
@@ -3683,28 +3683,28 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E9%BB%84%E8%89%B2%E5%9C%86%E7%89%87%E6%9C%89%E9%A2%9C%E8%89%B2%E4%B9%9F%E6%9C%89%E5%BD%A2%E7%8A%B6-%E8%BF%99%E6%AC%A1%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E6%94%BE%E5%93%AA%E9%87%8C-%E5%85%88%E8%AF%B4%E4%B8%80%E9%81%8D%E8%A7%84%E5%88%99-%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E5%86%8D%E7%9C%8B%E8%BF%99%E5%BC%A0%E5%9B%BE.mp3"
     },
     {
-      "id": "success-听到只看形状-就找圆形篮子-黄色先不管",
+      "id": "success-听到只看形状-就找圆形组-黄色先不管",
       "kind": "success",
-      "text": "听到只看形状，就找圆形篮子；黄色先不管。",
+      "text": "听到只看形状，就找圆形组；黄色先不管。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%90%AC%E5%88%B0%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E5%B0%B1%E6%89%BE%E5%9C%86%E5%BD%A2%E7%AF%AE%E5%AD%90-%E9%BB%84%E8%89%B2%E5%85%88%E4%B8%8D%E7%AE%A1.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%90%AC%E5%88%B0%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E5%B0%B1%E6%89%BE%E5%9C%86%E5%BD%A2%E7%BB%84-%E9%BB%84%E8%89%B2%E5%85%88%E4%B8%8D%E7%AE%A1.mp3"
     },
     {
-      "id": "retry-这题只看形状-黄色篮子是看颜色时才用的",
+      "id": "retry-这题只看形状-黄色组是看颜色时才用的",
       "kind": "retry",
-      "text": "这题只看形状。黄色篮子是看颜色时才用的。",
+      "text": "这题只看形状。黄色组是看颜色时才用的。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E8%BF%99%E9%A2%98%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E9%BB%84%E8%89%B2%E7%AF%AE%E5%AD%90%E6%98%AF%E7%9C%8B%E9%A2%9C%E8%89%B2%E6%97%B6%E6%89%8D%E7%94%A8%E7%9A%84.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E8%BF%99%E9%A2%98%E5%8F%AA%E7%9C%8B%E5%BD%A2%E7%8A%B6-%E9%BB%84%E8%89%B2%E7%BB%84%E6%98%AF%E7%9C%8B%E9%A2%9C%E8%89%B2%E6%97%B6%E6%89%8D%E7%94%A8%E7%9A%84.mp3"
     },
     {
-      "id": "parent-问她-圆形篮子和黄色篮子都像对的-为什么这次选形状",
+      "id": "parent-问她-圆形组和黄色组都像对的-为什么这次选形状",
       "kind": "parent",
-      "text": "问她：圆形篮子和黄色篮子都像对的，为什么这次选形状？",
+      "text": "问她：圆形组和黄色组都像对的，为什么这次选形状？",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E5%9C%86%E5%BD%A2%E7%AF%AE%E5%AD%90%E5%92%8C%E9%BB%84%E8%89%B2%E7%AF%AE%E5%AD%90%E9%83%BD%E5%83%8F%E5%AF%B9%E7%9A%84-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%99%E6%AC%A1%E9%80%89%E5%BD%A2%E7%8A%B6.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E5%9C%86%E5%BD%A2%E7%BB%84%E5%92%8C%E9%BB%84%E8%89%B2%E7%BB%84%E9%83%BD%E5%83%8F%E5%AF%B9%E7%9A%84-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%99%E6%AC%A1%E9%80%89%E5%BD%A2%E7%8A%B6.mp3"
     },
     {
       "id": "prompt-分类机要红色-也要圆形-选哪一张-两个条件都要满足-少一个都不行",
@@ -5811,14 +5811,6 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E7%8E%B0%E5%9C%A8%E7%9D%A1%E7%9D%80%E5%92%8C%E4%B8%80%E7%9B%B4%E7%9D%A1%E7%9D%80%E4%B8%80%E6%A0%B7%E5%90%97-%E7%BA%BF%E7%B4%A2%E5%B0%91-%E8%83%BD%E4%B8%8D%E8%83%BD%E5%B0%B1%E7%A1%AE%E5%AE%9A%E6%B2%A1%E6%9C%89%E5%90%83.mp3"
     },
     {
-      "id": "choice-两个都一样",
-      "kind": "choice",
-      "text": "两个都一样",
-      "locale": "zh-CN",
-      "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E4%B8%A4%E4%B8%AA%E9%83%BD%E4%B8%80%E6%A0%B7.mp3"
-    },
-    {
       "id": "prompt-只知道-小猫在厨房-能确定是小猫吃了吗-有些线索不够强-不能马上确定",
       "kind": "prompt",
       "text": "只知道“小猫在厨房”，能确定是小猫吃了吗？有些线索不够强，不能马上确定。",
@@ -5851,28 +5843,28 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E8%BF%98%E9%9C%80%E8%A6%81%E7%9C%8B%E5%88%B0%E4%BB%80%E4%B9%88-%E6%89%8D%E8%83%BD%E6%9B%B4%E7%A1%AE%E5%AE%9A.mp3"
     },
     {
-      "id": "choice-还需要更多线索",
+      "id": "choice-还不能确定",
       "kind": "choice",
-      "text": "还需要更多线索",
+      "text": "还不能确定",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E8%BF%98%E9%9C%80%E8%A6%81%E6%9B%B4%E5%A4%9A%E7%BA%BF%E7%B4%A2.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E8%BF%98%E4%B8%8D%E8%83%BD%E7%A1%AE%E5%AE%9A.mp3"
     },
     {
-      "id": "choice-证据已经够了",
+      "id": "choice-能确定了",
       "kind": "choice",
-      "text": "证据已经够了",
+      "text": "能确定了",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E8%AF%81%E6%8D%AE%E5%B7%B2%E7%BB%8F%E5%A4%9F%E4%BA%86.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E8%83%BD%E7%A1%AE%E5%AE%9A%E4%BA%86.mp3"
     },
     {
-      "id": "choice-小猫一定没吃",
+      "id": "choice-肯定没吃",
       "kind": "choice",
-      "text": "小猫一定没吃",
+      "text": "肯定没吃",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%B0%8F%E7%8C%AB%E4%B8%80%E5%AE%9A%E6%B2%A1%E5%90%83.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E8%82%AF%E5%AE%9A%E6%B2%A1%E5%90%83.mp3"
     },
     {
       "id": "object-修正场景的厨房与门口位置-灰猫清醒站着且未接触蛋糕",
@@ -5987,28 +5979,28 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E6%9D%AF%E5%AD%90%E5%91%A8%E5%9B%B4%E8%BF%98%E5%8F%AF%E8%83%BD%E7%95%99%E4%B8%8B%E4%BB%80%E4%B9%88%E7%97%95%E8%BF%B9-%E7%9C%8B%E5%88%B0%E7%97%95%E8%BF%B9%E4%BB%A5%E5%90%8E%E8%83%BD%E9%A9%AC%E4%B8%8A%E7%A1%AE%E5%AE%9A%E6%98%AF%E8%B0%81%E5%90%97.mp3"
     },
     {
-      "id": "choice-远处的小狗旁边",
+      "id": "choice-小狗旁边",
       "kind": "choice",
-      "text": "远处的小狗旁边",
+      "text": "小狗旁边",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E8%BF%9C%E5%A4%84%E7%9A%84%E5%B0%8F%E7%8B%97%E6%97%81%E8%BE%B9.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%B0%8F%E7%8B%97%E6%97%81%E8%BE%B9.mp3"
     },
     {
-      "id": "choice-窗边的小鸟旁边",
+      "id": "choice-小鸟旁边",
       "kind": "choice",
-      "text": "窗边的小鸟旁边",
+      "text": "小鸟旁边",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E7%AA%97%E8%BE%B9%E7%9A%84%E5%B0%8F%E9%B8%9F%E6%97%81%E8%BE%B9.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%B0%8F%E9%B8%9F%E6%97%81%E8%BE%B9.mp3"
     },
     {
-      "id": "choice-倒下的杯子周围",
+      "id": "choice-杯子周围",
       "kind": "choice",
-      "text": "倒下的杯子周围",
+      "text": "杯子周围",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%80%92%E4%B8%8B%E7%9A%84%E6%9D%AF%E5%AD%90%E5%91%A8%E5%9B%B4.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E6%9D%AF%E5%AD%90%E5%91%A8%E5%9B%B4.mp3"
     },
     {
       "id": "object-原场景倒下的蓝色水杯和紧邻水洼-不新增脚印或碰撞痕迹",
@@ -6139,12 +6131,12 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E8%BF%98%E8%A6%81%E7%9C%8B%E5%88%B0%E4%BB%80%E4%B9%88%E7%BA%BF%E7%B4%A2-%E6%89%8D%E6%9B%B4%E7%A1%AE%E5%AE%9A.mp3"
     },
     {
-      "id": "choice-小狗肯定没弄乱",
+      "id": "choice-肯定没弄乱",
       "kind": "choice",
-      "text": "小狗肯定没弄乱",
+      "text": "肯定没弄乱",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%B0%8F%E7%8B%97%E8%82%AF%E5%AE%9A%E6%B2%A1%E5%BC%84%E4%B9%B1.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E8%82%AF%E5%AE%9A%E6%B2%A1%E5%BC%84%E4%B9%B1.mp3"
     },
     {
       "id": "object-原场景玩具散落的游戏房和门口清醒的小狗-没有新增作乱行为",
@@ -6419,12 +6411,12 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%92%8C%E5%A4%A7%E4%BA%BA%E8%B5%B0%E8%BF%87%E5%8E%BB.mp3"
     },
     {
-      "id": "prompt-模型河宽-5-格-木板长-3-格-能搭到对岸吗-看距离和材料是否匹配",
+      "id": "prompt-这块木板能搭到对岸吗-看看木板的另一头-有没有碰到对岸",
       "kind": "prompt",
-      "text": "模型河宽 5 格，木板长 3 格，能搭到对岸吗？看距离和材料是否匹配。",
+      "text": "这块木板能搭到对岸吗？看看木板的另一头，有没有碰到对岸。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%A8%A1%E5%9E%8B%E6%B2%B3%E5%AE%BD-5-%E6%A0%BC-%E6%9C%A8%E6%9D%BF%E9%95%BF-3-%E6%A0%BC-%E8%83%BD%E6%90%AD%E5%88%B0%E5%AF%B9%E5%B2%B8%E5%90%97-%E7%9C%8B%E8%B7%9D%E7%A6%BB%E5%92%8C%E6%9D%90%E6%96%99%E6%98%AF%E5%90%A6%E5%8C%B9%E9%85%8D.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E8%BF%99%E5%9D%97%E6%9C%A8%E6%9D%BF%E8%83%BD%E6%90%AD%E5%88%B0%E5%AF%B9%E5%B2%B8%E5%90%97-%E7%9C%8B%E7%9C%8B%E6%9C%A8%E6%9D%BF%E7%9A%84%E5%8F%A6%E4%B8%80%E5%A4%B4-%E6%9C%89%E6%B2%A1%E6%9C%89%E7%A2%B0%E5%88%B0%E5%AF%B9%E5%B2%B8.mp3"
     },
     {
       "id": "success-宽河只用短木板还不够-要换更合适的材料",
@@ -6475,20 +6467,20 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E4%B8%8D%E7%94%A8%E6%9C%A8%E6%9D%BF.mp3"
     },
     {
-      "id": "object-模型河宽5格-木板长3格",
+      "id": "object-木板还没搭到对岸",
       "kind": "object",
-      "text": "模型河宽5格，木板长3格",
+      "text": "木板还没搭到对岸",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E6%A8%A1%E5%9E%8B%E6%B2%B3%E5%AE%BD5%E6%A0%BC-%E6%9C%A8%E6%9D%BF%E9%95%BF3%E6%A0%BC.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E6%9C%A8%E6%9D%BF%E8%BF%98%E6%B2%A1%E6%90%AD%E5%88%B0%E5%AF%B9%E5%B2%B8.mp3"
     },
     {
-      "id": "object-3格木板还够不到5格河的对岸",
+      "id": "object-还差一段-木板不够长",
       "kind": "object",
-      "text": "3格木板还够不到5格河的对岸",
+      "text": "还差一段，木板不够长",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-3%E6%A0%BC%E6%9C%A8%E6%9D%BF%E8%BF%98%E5%A4%9F%E4%B8%8D%E5%88%B05%E6%A0%BC%E6%B2%B3%E7%9A%84%E5%AF%B9%E5%B2%B8.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E8%BF%98%E5%B7%AE%E4%B8%80%E6%AE%B5-%E6%9C%A8%E6%9D%BF%E4%B8%8D%E5%A4%9F%E9%95%BF.mp3"
     },
     {
       "id": "object-宽河",
@@ -6819,12 +6811,12 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E4%BB%80%E4%B9%88%E7%BA%BF%E7%B4%A2%E8%83%BD%E6%9B%B4%E7%9B%B4%E6%8E%A5%E8%AF%B4%E6%98%8E%E5%B0%8F%E7%8B%97%E5%BC%84%E4%B9%B1%E4%BA%86.mp3"
     },
     {
-      "id": "prompt-短木板过不了宽河-下一步应该先改变什么-失败以后-先改最影响结果的条件",
+      "id": "prompt-短木板搭不到对岸-先换什么-先找能让木板搭到对岸的办法",
       "kind": "prompt",
-      "text": "短木板过不了宽河，下一步应该先改变什么？失败以后，先改最影响结果的条件。",
+      "text": "短木板搭不到对岸，先换什么？先找能让木板搭到对岸的办法。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%9F%AD%E6%9C%A8%E6%9D%BF%E8%BF%87%E4%B8%8D%E4%BA%86%E5%AE%BD%E6%B2%B3-%E4%B8%8B%E4%B8%80%E6%AD%A5%E5%BA%94%E8%AF%A5%E5%85%88%E6%94%B9%E5%8F%98%E4%BB%80%E4%B9%88-%E5%A4%B1%E8%B4%A5%E4%BB%A5%E5%90%8E-%E5%85%88%E6%94%B9%E6%9C%80%E5%BD%B1%E5%93%8D%E7%BB%93%E6%9E%9C%E7%9A%84%E6%9D%A1%E4%BB%B6.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%9F%AD%E6%9C%A8%E6%9D%BF%E6%90%AD%E4%B8%8D%E5%88%B0%E5%AF%B9%E5%B2%B8-%E5%85%88%E6%8D%A2%E4%BB%80%E4%B9%88-%E5%85%88%E6%89%BE%E8%83%BD%E8%AE%A9%E6%9C%A8%E6%9D%BF%E6%90%AD%E5%88%B0%E5%AF%B9%E5%B2%B8%E7%9A%84%E5%8A%9E%E6%B3%95.mp3"
     },
     {
       "id": "success-失败原因是长度不够-所以先换一块够长的木板",
@@ -6851,28 +6843,28 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E5%A4%B1%E8%B4%A5%E6%98%AF%E5%9B%A0%E4%B8%BA%E9%A2%9C%E8%89%B2-%E8%BF%98%E6%98%AF%E5%9B%A0%E4%B8%BA%E9%95%BF%E5%BA%A6.mp3"
     },
     {
-      "id": "choice-换一块够长的木板",
+      "id": "choice-换长木板",
       "kind": "choice",
-      "text": "换一块够长的木板",
+      "text": "换长木板",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E6%8D%A2%E4%B8%80%E5%9D%97%E5%A4%9F%E9%95%BF%E7%9A%84%E6%9C%A8%E6%9D%BF.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E6%8D%A2%E9%95%BF%E6%9C%A8%E6%9D%BF.mp3"
     },
     {
-      "id": "choice-继续用短木板",
+      "id": "choice-接着用短板",
       "kind": "choice",
-      "text": "继续用短木板",
+      "text": "接着用短板",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E7%BB%A7%E7%BB%AD%E7%94%A8%E7%9F%AD%E6%9C%A8%E6%9D%BF.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E6%8E%A5%E7%9D%80%E7%94%A8%E7%9F%AD%E6%9D%BF.mp3"
     },
     {
-      "id": "choice-换同样短木板",
+      "id": "choice-换同样短的",
       "kind": "choice",
-      "text": "换同样短木板",
+      "text": "换同样短的",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E6%8D%A2%E5%90%8C%E6%A0%B7%E7%9F%AD%E6%9C%A8%E6%9D%BF.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E6%8D%A2%E5%90%8C%E6%A0%B7%E7%9F%AD%E7%9A%84.mp3"
     },
     {
       "id": "object-木板够不到另一岸",
@@ -7131,12 +7123,12 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E7%A1%AE%E8%AE%A4%E8%B7%AF%E9%9D%A2%E5%AE%89%E5%85%A8.mp3"
     },
     {
-      "id": "prompt-模型里的木板另一头碰不到对岸-为什么没搭成功-先找失败原因-再想怎么改",
+      "id": "prompt-木板搭不到对岸-哪里出了问题-看看木板另一头还差在哪里",
       "kind": "prompt",
-      "text": "模型里的木板另一头碰不到对岸，为什么没搭成功？先找失败原因，再想怎么改。",
+      "text": "木板搭不到对岸，哪里出了问题？看看木板另一头还差在哪里。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%A8%A1%E5%9E%8B%E9%87%8C%E7%9A%84%E6%9C%A8%E6%9D%BF%E5%8F%A6%E4%B8%80%E5%A4%B4%E7%A2%B0%E4%B8%8D%E5%88%B0%E5%AF%B9%E5%B2%B8-%E4%B8%BA%E4%BB%80%E4%B9%88%E6%B2%A1%E6%90%AD%E6%88%90%E5%8A%9F-%E5%85%88%E6%89%BE%E5%A4%B1%E8%B4%A5%E5%8E%9F%E5%9B%A0-%E5%86%8D%E6%83%B3%E6%80%8E%E4%B9%88%E6%94%B9.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%9C%A8%E6%9D%BF%E6%90%AD%E4%B8%8D%E5%88%B0%E5%AF%B9%E5%B2%B8-%E5%93%AA%E9%87%8C%E5%87%BA%E4%BA%86%E9%97%AE%E9%A2%98-%E7%9C%8B%E7%9C%8B%E6%9C%A8%E6%9D%BF%E5%8F%A6%E4%B8%80%E5%A4%B4%E8%BF%98%E5%B7%AE%E5%9C%A8%E5%93%AA%E9%87%8C.mp3"
     },
     {
       "id": "success-失败原因是木板太短-长度不够",
@@ -7523,36 +7515,36 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E4%BB%80%E4%B9%88%E7%97%95%E8%BF%B9%E5%92%8C%E6%B4%92%E6%B0%B4%E8%BF%99%E4%BB%B6%E4%BA%8B%E7%9B%B4%E6%8E%A5%E7%9B%B8%E5%85%B3-%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E8%83%BD%E5%85%88%E7%8C%9C%E8%A7%92%E8%89%B2.mp3"
     },
     {
-      "id": "choice-先检查倒下的杯子周围",
+      "id": "choice-看杯子周围",
       "kind": "choice",
-      "text": "先检查倒下的杯子周围",
+      "text": "看杯子周围",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%85%88%E6%A3%80%E6%9F%A5%E5%80%92%E4%B8%8B%E7%9A%84%E6%9D%AF%E5%AD%90%E5%91%A8%E5%9B%B4.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E7%9C%8B%E6%9D%AF%E5%AD%90%E5%91%A8%E5%9B%B4.mp3"
     },
     {
-      "id": "choice-只看远处小狗",
+      "id": "choice-只看小狗",
       "kind": "choice",
-      "text": "只看远处小狗",
+      "text": "只看小狗",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%8F%AA%E7%9C%8B%E8%BF%9C%E5%A4%84%E5%B0%8F%E7%8B%97.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%8F%AA%E7%9C%8B%E5%B0%8F%E7%8B%97.mp3"
     },
     {
-      "id": "choice-只看窗边小鸟",
+      "id": "choice-只看小鸟",
       "kind": "choice",
-      "text": "只看窗边小鸟",
+      "text": "只看小鸟",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%8F%AA%E7%9C%8B%E7%AA%97%E8%BE%B9%E5%B0%8F%E9%B8%9F.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%8F%AA%E7%9C%8B%E5%B0%8F%E9%B8%9F.mp3"
     },
     {
-      "id": "prompt-短木板失败后-又换一块同样短的-问题解决了吗-改法要针对失败原因",
+      "id": "prompt-换来一块同样短的木板-能搭过去了吗-比一比-新木板变长了吗",
       "kind": "prompt",
-      "text": "短木板失败后，又换一块同样短的，问题解决了吗？改法要针对失败原因。",
+      "text": "换来一块同样短的木板，能搭过去了吗？比一比，新木板变长了吗？",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%9F%AD%E6%9C%A8%E6%9D%BF%E5%A4%B1%E8%B4%A5%E5%90%8E-%E5%8F%88%E6%8D%A2%E4%B8%80%E5%9D%97%E5%90%8C%E6%A0%B7%E7%9F%AD%E7%9A%84-%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E4%BA%86%E5%90%97-%E6%94%B9%E6%B3%95%E8%A6%81%E9%92%88%E5%AF%B9%E5%A4%B1%E8%B4%A5%E5%8E%9F%E5%9B%A0.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8D%A2%E6%9D%A5%E4%B8%80%E5%9D%97%E5%90%8C%E6%A0%B7%E7%9F%AD%E7%9A%84%E6%9C%A8%E6%9D%BF-%E8%83%BD%E6%90%AD%E8%BF%87%E5%8E%BB%E4%BA%86%E5%90%97-%E6%AF%94%E4%B8%80%E6%AF%94-%E6%96%B0%E6%9C%A8%E6%9D%BF%E5%8F%98%E9%95%BF%E4%BA%86%E5%90%97.mp3"
     },
     {
       "id": "success-还是同样短-关键问题没有改-所以还没解决",
@@ -7593,14 +7585,6 @@
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%B7%B2%E7%BB%8F%E8%A7%A3%E5%86%B3.mp3"
-    },
-    {
-      "id": "object-原来的木板太短",
-      "kind": "object",
-      "text": "原来的木板太短",
-      "locale": "zh-CN",
-      "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E5%8E%9F%E6%9D%A5%E7%9A%84%E6%9C%A8%E6%9D%BF%E5%A4%AA%E7%9F%AD.mp3"
     },
     {
       "id": "object-换来的还是同样短",
@@ -7803,12 +7787,12 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E7%BB%BF%E7%81%AF%E4%BA%AE-%E5%92%8C%E5%A4%A7%E4%BA%BA%E7%A1%AE%E8%AE%A4%E5%AE%89%E5%85%A8.mp3"
     },
     {
-      "id": "prompt-模型河宽-4-格-长板-5-格-短板-2-格-哪块能搭到对岸-先选最可能满足距离条件的材料",
+      "id": "prompt-短木板搭不到对岸-换哪块试试-比一比-哪块木板更长",
       "kind": "prompt",
-      "text": "模型河宽 4 格，长板 5 格、短板 2 格，哪块能搭到对岸？先选最可能满足距离条件的材料。",
+      "text": "短木板搭不到对岸，换哪块试试？比一比，哪块木板更长？",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%A8%A1%E5%9E%8B%E6%B2%B3%E5%AE%BD-4-%E6%A0%BC-%E9%95%BF%E6%9D%BF-5-%E6%A0%BC-%E7%9F%AD%E6%9D%BF-2-%E6%A0%BC-%E5%93%AA%E5%9D%97%E8%83%BD%E6%90%AD%E5%88%B0%E5%AF%B9%E5%B2%B8-%E5%85%88%E9%80%89%E6%9C%80%E5%8F%AF%E8%83%BD%E6%BB%A1%E8%B6%B3%E8%B7%9D%E7%A6%BB%E6%9D%A1%E4%BB%B6%E7%9A%84%E6%9D%90%E6%96%99.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%9F%AD%E6%9C%A8%E6%9D%BF%E6%90%AD%E4%B8%8D%E5%88%B0%E5%AF%B9%E5%B2%B8-%E6%8D%A2%E5%93%AA%E5%9D%97%E8%AF%95%E8%AF%95-%E6%AF%94%E4%B8%80%E6%AF%94-%E5%93%AA%E5%9D%97%E6%9C%A8%E6%9D%BF%E6%9B%B4%E9%95%BF.mp3"
     },
     {
       "id": "success-宽河要先选更可能够长的木板",
@@ -7835,60 +7819,36 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E6%98%AF%E5%85%88%E6%8B%BF%E7%9F%AD%E6%9C%A8%E6%9D%BF%E8%AF%95.mp3"
     },
     {
-      "id": "choice-先选长木板",
+      "id": "choice-长木板",
       "kind": "choice",
-      "text": "先选长木板",
+      "text": "长木板",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%85%88%E9%80%89%E9%95%BF%E6%9C%A8%E6%9D%BF.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E9%95%BF%E6%9C%A8%E6%9D%BF.mp3"
     },
     {
-      "id": "choice-先选短木板",
+      "id": "choice-短木板",
       "kind": "choice",
-      "text": "先选短木板",
+      "text": "短木板",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%85%88%E9%80%89%E7%9F%AD%E6%9C%A8%E6%9D%BF.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E7%9F%AD%E6%9C%A8%E6%9D%BF.mp3"
     },
     {
-      "id": "choice-先选小石头",
+      "id": "choice-小石头",
       "kind": "choice",
-      "text": "先选小石头",
+      "text": "小石头",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%85%88%E9%80%89%E5%B0%8F%E7%9F%B3%E5%A4%B4.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%B0%8F%E7%9F%B3%E5%A4%B4.mp3"
     },
     {
-      "id": "object-河宽4格-长板5格-短板2格",
+      "id": "object-长木板搭到了两岸",
       "kind": "object",
-      "text": "河宽4格，长板5格、短板2格",
+      "text": "长木板搭到了两岸",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E6%B2%B3%E5%AE%BD4%E6%A0%BC-%E9%95%BF%E6%9D%BF5%E6%A0%BC-%E7%9F%AD%E6%9D%BF2%E6%A0%BC.mp3"
-    },
-    {
-      "id": "object-5格长板",
-      "kind": "object",
-      "text": "5格长板",
-      "locale": "zh-CN",
-      "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-5%E6%A0%BC%E9%95%BF%E6%9D%BF.mp3"
-    },
-    {
-      "id": "object-2格短板",
-      "kind": "object",
-      "text": "2格短板",
-      "locale": "zh-CN",
-      "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-2%E6%A0%BC%E7%9F%AD%E6%9D%BF.mp3"
-    },
-    {
-      "id": "object-5格木板可以搭在两岸",
-      "kind": "object",
-      "text": "5格木板可以搭在两岸",
-      "locale": "zh-CN",
-      "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-5%E6%A0%BC%E6%9C%A8%E6%9D%BF%E5%8F%AF%E4%BB%A5%E6%90%AD%E5%9C%A8%E4%B8%A4%E5%B2%B8.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E9%95%BF%E6%9C%A8%E6%9D%BF%E6%90%AD%E5%88%B0%E4%BA%86%E4%B8%A4%E5%B2%B8.mp3"
     },
     {
       "id": "prompt-积木和小车要分开放进两个盒子-下次好找-盒子打开了-玩具还混在一起-先做什么-先想哪一步能让两类玩具分开放",
@@ -8179,28 +8139,12 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E6%9D%AF%E5%AD%90%E5%91%A8%E5%9B%B4%E5%8F%AF%E8%83%BD%E7%95%99%E4%B8%8B%E5%93%AA%E4%BA%9B%E7%9B%B4%E6%8E%A5%E7%97%95%E8%BF%B9-%E8%BF%9C%E5%A4%84%E7%9A%84%E8%A7%92%E8%89%B2%E4%B8%BA%E4%BB%80%E4%B9%88%E6%9A%82%E6%97%B6%E4%B8%8D%E8%83%BD%E8%AF%B4%E6%98%8E%E5%8E%9F%E5%9B%A0.mp3"
     },
     {
-      "id": "choice-远处小狗睡觉的地方",
-      "kind": "choice",
-      "text": "远处小狗睡觉的地方",
-      "locale": "zh-CN",
-      "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E8%BF%9C%E5%A4%84%E5%B0%8F%E7%8B%97%E7%9D%A1%E8%A7%89%E7%9A%84%E5%9C%B0%E6%96%B9.mp3"
-    },
-    {
-      "id": "choice-窗边小鸟的位置",
-      "kind": "choice",
-      "text": "窗边小鸟的位置",
-      "locale": "zh-CN",
-      "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E7%AA%97%E8%BE%B9%E5%B0%8F%E9%B8%9F%E7%9A%84%E4%BD%8D%E7%BD%AE.mp3"
-    },
-    {
-      "id": "prompt-短木板失败后-有两种改法-换同样短的-或换一块够长的木板-先选哪个-先改真正导致失败的条件",
+      "id": "prompt-短木板搭不到对岸-先怎么改-先找能让木板搭到对岸的办法",
       "kind": "prompt",
-      "text": "短木板失败后，有两种改法：换同样短的，或换一块够长的木板，先选哪个？先改真正导致失败的条件。",
+      "text": "短木板搭不到对岸，先怎么改？先找能让木板搭到对岸的办法。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%9F%AD%E6%9C%A8%E6%9D%BF%E5%A4%B1%E8%B4%A5%E5%90%8E-%E6%9C%89%E4%B8%A4%E7%A7%8D%E6%94%B9%E6%B3%95-%E6%8D%A2%E5%90%8C%E6%A0%B7%E7%9F%AD%E7%9A%84-%E6%88%96%E6%8D%A2%E4%B8%80%E5%9D%97%E5%A4%9F%E9%95%BF%E7%9A%84%E6%9C%A8%E6%9D%BF-%E5%85%88%E9%80%89%E5%93%AA%E4%B8%AA-%E5%85%88%E6%94%B9%E7%9C%9F%E6%AD%A3%E5%AF%BC%E8%87%B4%E5%A4%B1%E8%B4%A5%E7%9A%84%E6%9D%A1%E4%BB%B6.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%9F%AD%E6%9C%A8%E6%9D%BF%E6%90%AD%E4%B8%8D%E5%88%B0%E5%AF%B9%E5%B2%B8-%E5%85%88%E6%80%8E%E4%B9%88%E6%94%B9-%E5%85%88%E6%89%BE%E8%83%BD%E8%AE%A9%E6%9C%A8%E6%9D%BF%E6%90%AD%E5%88%B0%E5%AF%B9%E5%B2%B8%E7%9A%84%E5%8A%9E%E6%B3%95.mp3"
     },
     {
       "id": "success-失败原因是太短-所以先换一块够长的木板",
@@ -8299,20 +8243,20 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E5%8F%AF%E4%BB%A5%E7%A1%AE%E5%AE%9A-%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E5%BA%94%E8%AF%A5%E7%BB%A7%E7%BB%AD%E6%89%BE%E7%BA%BF%E7%B4%A2.mp3"
     },
     {
-      "id": "choice-直接说小狗弄乱",
+      "id": "choice-就是小狗",
       "kind": "choice",
-      "text": "直接说小狗弄乱",
+      "text": "就是小狗",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E7%9B%B4%E6%8E%A5%E8%AF%B4%E5%B0%8F%E7%8B%97%E5%BC%84%E4%B9%B1.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%B0%B1%E6%98%AF%E5%B0%8F%E7%8B%97.mp3"
     },
     {
-      "id": "choice-先找更多线索",
+      "id": "choice-再找线索",
       "kind": "choice",
-      "text": "先找更多线索",
+      "text": "再找线索",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%85%88%E6%89%BE%E6%9B%B4%E5%A4%9A%E7%BA%BF%E7%B4%A2.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%86%8D%E6%89%BE%E7%BA%BF%E7%B4%A2.mp3"
     },
     {
       "id": "game-title-按规则装书包",
@@ -9499,14 +9443,6 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E9%97%AE%E5%A5%B9-%E9%97%A8%E5%92%8C%E5%B0%8F%E6%B2%B3%E9%83%BD%E6%8C%A1%E4%BD%8F%E4%BA%86%E8%B7%AF-%E5%88%86%E5%88%AB%E7%94%A8%E4%BB%80%E4%B9%88%E8%A7%A3%E5%86%B3.mp3"
     },
     {
-      "id": "choice-长木板",
-      "kind": "choice",
-      "text": "长木板",
-      "locale": "zh-CN",
-      "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E9%95%BF%E6%9C%A8%E6%9D%BF.mp3"
-    },
-    {
       "id": "object-打开门",
       "kind": "object",
       "text": "打开门",
@@ -9723,28 +9659,28 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%A5%B9%E7%94%A8%E6%89%8B%E6%8C%87%E7%94%BB%E5%87%BA%E8%B7%AF%E7%BA%BF-%E8%AF%B4%E8%AF%B4%E6%AF%8F%E5%9D%97%E6%9D%BF%E7%9A%84%E4%B8%A4%E5%A4%B4%E6%90%AD%E5%9C%A8%E5%93%AA%E9%87%8C-%E9%97%AE%E5%A5%B9-%E6%80%BB%E9%95%BF%E5%BA%A6%E5%A4%9F%E4%BA%86-%E6%AF%8F%E4%B8%80%E6%AE%B5%E5%B0%B1%E4%B8%80%E5%AE%9A%E5%A4%9F%E5%90%97.mp3"
     },
     {
-      "id": "choice-小熊到木板的距离",
+      "id": "choice-小熊到木板",
       "kind": "choice",
-      "text": "小熊到木板的距离",
+      "text": "小熊到木板",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%B0%8F%E7%86%8A%E5%88%B0%E6%9C%A8%E6%9D%BF%E7%9A%84%E8%B7%9D%E7%A6%BB.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%B0%8F%E7%86%8A%E5%88%B0%E6%9C%A8%E6%9D%BF.mp3"
     },
     {
-      "id": "choice-木板到小旗的距离",
+      "id": "choice-木板到小旗",
       "kind": "choice",
-      "text": "木板到小旗的距离",
+      "text": "木板到小旗",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E6%9C%A8%E6%9D%BF%E5%88%B0%E5%B0%8F%E6%97%97%E7%9A%84%E8%B7%9D%E7%A6%BB.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E6%9C%A8%E6%9D%BF%E5%88%B0%E5%B0%8F%E6%97%97.mp3"
     },
     {
-      "id": "choice-两岸之间的距离",
+      "id": "choice-两岸之间",
       "kind": "choice",
-      "text": "两岸之间的距离",
+      "text": "两岸之间",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E4%B8%A4%E5%B2%B8%E4%B9%8B%E9%97%B4%E7%9A%84%E8%B7%9D%E7%A6%BB.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E4%B8%A4%E5%B2%B8%E4%B9%8B%E9%97%B4.mp3"
     },
     {
       "id": "prompt-模型河宽-6-格-中间有小岛-两段各宽-3-格-怎样搭过去-这是桌面模型-每格一样长-木板两头都要搭在河岸或小岛上",
@@ -9763,28 +9699,28 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-4-%E6%A0%BC%E6%9C%A8%E6%9D%BF%E5%A4%9F%E8%B7%A8-3-%E6%A0%BC-%E7%94%A8%E5%B0%8F%E5%B2%9B%E5%81%9A%E6%94%AF%E7%82%B9-%E4%B8%80%E5%9D%97%E6%90%AD%E5%B7%A6%E6%AE%B5-%E4%B8%80%E5%9D%97%E6%90%AD%E5%8F%B3%E6%AE%B5-%E4%B8%A4%E6%AE%B5%E6%89%8D%E9%83%BD%E8%BF%9E%E9%80%9A.mp3"
     },
     {
-      "id": "choice-只用一块-4-格木板跨整条河",
+      "id": "choice-只用一块",
       "kind": "choice",
-      "text": "只用一块 4 格木板跨整条河",
+      "text": "只用一块",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%8F%AA%E7%94%A8%E4%B8%80%E5%9D%97-4-%E6%A0%BC%E6%9C%A8%E6%9D%BF%E8%B7%A8%E6%95%B4%E6%9D%A1%E6%B2%B3.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%8F%AA%E7%94%A8%E4%B8%80%E5%9D%97.mp3"
     },
     {
-      "id": "choice-两块-4-格木板-各搭一段",
+      "id": "choice-每边搭一块",
       "kind": "choice",
-      "text": "两块 4 格木板，各搭一段",
+      "text": "每边搭一块",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E4%B8%A4%E5%9D%97-4-%E6%A0%BC%E6%9C%A8%E6%9D%BF-%E5%90%84%E6%90%AD%E4%B8%80%E6%AE%B5.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E6%AF%8F%E8%BE%B9%E6%90%AD%E4%B8%80%E5%9D%97.mp3"
     },
     {
-      "id": "choice-两块都放在同一岸边",
+      "id": "choice-都放岸边",
       "kind": "choice",
-      "text": "两块都放在同一岸边",
+      "text": "都放岸边",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E4%B8%A4%E5%9D%97%E9%83%BD%E6%94%BE%E5%9C%A8%E5%90%8C%E4%B8%80%E5%B2%B8%E8%BE%B9.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E9%83%BD%E6%94%BE%E5%B2%B8%E8%BE%B9.mp3"
     },
     {
       "id": "prompt-小岛两边分别宽-4-格和-2-格-只用两块-哪组能各搭一段-这是桌面模型-每格一样长-木板两头都要搭在河岸或小岛上",
@@ -9843,14 +9779,6 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-4-%E6%A0%BC%E9%95%BF%E6%9C%A8%E6%9D%BF%E8%83%BD%E8%B7%A8%E8%BF%87-3-%E6%A0%BC%E7%9A%84%E6%B2%B3-2-%E6%A0%BC%E5%92%8C-1-%E6%A0%BC%E9%83%BD%E7%A2%B0%E4%B8%8D%E5%88%B0%E5%AF%B9%E5%B2%B8.mp3"
     },
     {
-      "id": "choice-短木板",
-      "kind": "choice",
-      "text": "短木板",
-      "locale": "zh-CN",
-      "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E7%9F%AD%E6%9C%A8%E6%9D%BF.mp3"
-    },
-    {
       "id": "choice-最短板",
       "kind": "choice",
       "text": "最短板",
@@ -9875,28 +9803,20 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E4%B8%80%E5%9D%97%E6%9D%BF%E8%B7%A8%E4%B8%8D%E8%BF%87-7-%E6%A0%BC-%E8%AE%A9-5-%E6%A0%BC%E6%9D%BF%E6%90%AD-4-%E6%A0%BC%E9%82%A3%E6%AE%B5-4-%E6%A0%BC%E6%9D%BF%E6%90%AD-3-%E6%A0%BC%E9%82%A3%E6%AE%B5-%E5%B0%B1%E8%83%BD%E5%88%A9%E7%94%A8%E5%B0%8F%E5%B2%9B%E8%BF%9E%E9%80%9A.mp3"
     },
     {
-      "id": "choice-只用-5-格长木板跨整条河",
+      "id": "choice-只用长板",
       "kind": "choice",
-      "text": "只用 5 格长木板跨整条河",
+      "text": "只用长板",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%8F%AA%E7%94%A8-5-%E6%A0%BC%E9%95%BF%E6%9C%A8%E6%9D%BF%E8%B7%A8%E6%95%B4%E6%9D%A1%E6%B2%B3.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%8F%AA%E7%94%A8%E9%95%BF%E6%9D%BF.mp3"
     },
     {
-      "id": "choice-只用-4-格短木板跨整条河",
+      "id": "choice-只用短板",
       "kind": "choice",
-      "text": "只用 4 格短木板跨整条河",
+      "text": "只用短板",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%8F%AA%E7%94%A8-4-%E6%A0%BC%E7%9F%AD%E6%9C%A8%E6%9D%BF%E8%B7%A8%E6%95%B4%E6%9D%A1%E6%B2%B3.mp3"
-    },
-    {
-      "id": "choice-两块木板分别搭小岛两边",
-      "kind": "choice",
-      "text": "两块木板分别搭小岛两边",
-      "locale": "zh-CN",
-      "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E4%B8%A4%E5%9D%97%E6%9C%A8%E6%9D%BF%E5%88%86%E5%88%AB%E6%90%AD%E5%B0%8F%E5%B2%9B%E4%B8%A4%E8%BE%B9.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%8F%AA%E7%94%A8%E7%9F%AD%E6%9D%BF.mp3"
     },
     {
       "id": "prompt-小岛两边分别宽-5-格和-3-格-只能用两块-哪组的长度都够-这是桌面模型-每格一样长-木板两头都要搭在河岸或小岛上",
@@ -9971,28 +9891,20 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%B7%A6%E6%AE%B5-3-%E6%A0%BC%E7%94%A8-4-%E6%A0%BC%E7%9F%AD%E6%9D%BF-%E5%8F%B3%E6%AE%B5-5-%E6%A0%BC%E7%94%A8-6-%E6%A0%BC%E9%95%BF%E6%9D%BF-%E5%8F%8D%E8%BF%87%E6%9D%A5-%E7%9F%AD%E6%9D%BF%E5%B0%B1%E8%B7%A8%E4%B8%8D%E8%BF%87%E5%8F%B3%E6%AE%B5.mp3"
     },
     {
-      "id": "choice-只用长木板跨整条河",
+      "id": "choice-左短右长",
       "kind": "choice",
-      "text": "只用长木板跨整条河",
+      "text": "左短右长",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%8F%AA%E7%94%A8%E9%95%BF%E6%9C%A8%E6%9D%BF%E8%B7%A8%E6%95%B4%E6%9D%A1%E6%B2%B3.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%B7%A6%E7%9F%AD%E5%8F%B3%E9%95%BF.mp3"
     },
     {
-      "id": "choice-短板搭左段-长板搭右段",
+      "id": "choice-左长右短",
       "kind": "choice",
-      "text": "短板搭左段，长板搭右段",
+      "text": "左长右短",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E7%9F%AD%E6%9D%BF%E6%90%AD%E5%B7%A6%E6%AE%B5-%E9%95%BF%E6%9D%BF%E6%90%AD%E5%8F%B3%E6%AE%B5.mp3"
-    },
-    {
-      "id": "choice-长板搭左段-短板搭右段",
-      "kind": "choice",
-      "text": "长板搭左段，短板搭右段",
-      "locale": "zh-CN",
-      "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E9%95%BF%E6%9D%BF%E6%90%AD%E5%B7%A6%E6%AE%B5-%E7%9F%AD%E6%9D%BF%E6%90%AD%E5%8F%B3%E6%AE%B5.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/choice-%E5%B7%A6%E9%95%BF%E5%8F%B3%E7%9F%AD.mp3"
     },
     {
       "id": "game-title-同类小侦探",

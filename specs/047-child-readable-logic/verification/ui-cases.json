@@ -1,0 +1,2359 @@
+[
+  {
+    "id": "logic-sorter-switch",
+    "world": "logic",
+    "title": "会变规则的分类机",
+    "subtitle": "先听分类机的规则，再决定看颜色还是看形状。",
+    "goal": "训练分类、规则切换和认知灵活性。",
+    "parentPrompt": "问她：刚才按什么分？现在规则换成什么？",
+    "abilityTags": [
+      "分类",
+      "规则切换",
+      "认知灵活性"
+    ],
+    "level": "L5",
+    "rounds": [
+      {
+        "level": "L3",
+        "prompt": "分类机说：这次只看颜色。红色圆片要进哪一组？",
+        "instruction": "先说一遍规则：只看颜色，再看这张图。",
+        "visualGroups": [
+          {
+            "label": "这次要放的图",
+            "items": [
+              "🔴"
+            ]
+          }
+        ],
+        "choices": [
+          {
+            "label": "红色组",
+            "value": "红色篮子"
+          },
+          {
+            "label": "蓝色组",
+            "value": "蓝色篮子"
+          },
+          {
+            "label": "绿色组",
+            "value": "绿色篮子"
+          }
+        ],
+        "answer": "红色篮子",
+        "success": "看颜色时，红色圆片和红色组是一对；圆形先不管。",
+        "retry": "这题只看颜色。先找红色，再选红色组。",
+        "parentPrompt": "问她：你看的是颜色还是形状？为什么圆形先不管？",
+        "abilityTags": [
+          "规则切换",
+          "分类"
+        ],
+        "id": "logic-sorter-switch-1",
+        "difficultyNote": "基础进阶：按一个明确规则判断，并说出观察依据。 比较 1 组图卡，找共同点、差异或缺失项。主要训练规则切换、分类。",
+        "number": 1,
+        "lesson": false
+      },
+      {
+        "level": "L3",
+        "prompt": "分类机说：这次只看颜色。蓝色圆片要进哪一组？",
+        "instruction": "先说一遍规则：只看颜色，再看这张图。",
+        "visualGroups": [
+          {
+            "label": "这次要放的图",
+            "items": [
+              "🔵"
+            ]
+          }
+        ],
+        "choices": [
+          {
+            "label": "红色组",
+            "value": "红色篮子"
+          },
+          {
+            "label": "黄色组",
+            "value": "黄色篮子"
+          },
+          {
+            "label": "蓝色组",
+            "value": "蓝色篮子"
+          }
+        ],
+        "answer": "蓝色篮子",
+        "success": "看颜色时，蓝色圆片和蓝色组是一对；圆形先不管。",
+        "retry": "这题只看颜色。先找蓝色，再选蓝色组。",
+        "parentPrompt": "问她：你看的是颜色还是形状？为什么圆形先不管？",
+        "abilityTags": [
+          "规则切换",
+          "分类"
+        ],
+        "id": "logic-sorter-switch-2",
+        "difficultyNote": "基础进阶：按一个明确规则判断，并说出观察依据。 比较 1 组图卡，找共同点、差异或缺失项。主要训练规则切换、分类。",
+        "number": 2,
+        "lesson": false
+      },
+      {
+        "level": "L4",
+        "prompt": "规则换了：这次只看形状。红色圆片要进哪一组？",
+        "instruction": "先说一遍规则：只看形状，再看这张图。",
+        "visualGroups": [
+          {
+            "label": "这次要放的图",
+            "items": [
+              "🔴"
+            ]
+          }
+        ],
+        "choices": [
+          {
+            "label": "红色组",
+            "value": "红色篮子"
+          },
+          {
+            "label": "方形组",
+            "value": "方形篮子"
+          },
+          {
+            "label": "圆形组",
+            "value": "圆形篮子"
+          }
+        ],
+        "answer": "圆形篮子",
+        "success": "看形状时，圆片进圆形组；红色先不管。",
+        "retry": "这题只看形状。先找圆形，再选圆形组。",
+        "parentPrompt": "问她：你看的是形状还是颜色？为什么红色先不管？",
+        "abilityTags": [
+          "规则切换",
+          "分类"
+        ],
+        "id": "logic-sorter-switch-3",
+        "difficultyNote": "中等：需要两步观察或简单比较，不能只看一个显眼线索。 比较 1 组图卡，找共同点、差异或缺失项。主要训练规则切换、分类。",
+        "number": 3,
+        "lesson": false
+      },
+      {
+        "level": "L4",
+        "prompt": "规则换了：这次只看形状。蓝色方块要进哪一组？",
+        "instruction": "先说一遍规则：只看形状，再看这张图。",
+        "visualGroups": [
+          {
+            "label": "这次要放的图",
+            "items": [
+              "🟦"
+            ]
+          }
+        ],
+        "choices": [
+          {
+            "label": "蓝色组",
+            "value": "蓝色篮子"
+          },
+          {
+            "label": "方形组",
+            "value": "方形篮子"
+          },
+          {
+            "label": "圆形组",
+            "value": "圆形篮子"
+          }
+        ],
+        "answer": "方形篮子",
+        "success": "看形状时，方块进方形组；蓝色先不管。",
+        "retry": "这题只看形状。先找方形，再选方形组。",
+        "parentPrompt": "问她：你看的是形状还是颜色？为什么蓝色先不管？",
+        "abilityTags": [
+          "规则切换",
+          "分类"
+        ],
+        "id": "logic-sorter-switch-4",
+        "difficultyNote": "中等：需要两步观察或简单比较，不能只看一个显眼线索。 比较 1 组图卡，找共同点、差异或缺失项。主要训练规则切换、分类。",
+        "number": 4,
+        "lesson": false
+      },
+      {
+        "level": "L5",
+        "prompt": "刚才看过形状，这次只看颜色。蓝色方块要进哪一组？",
+        "instruction": "先说一遍规则：只看颜色，再看这张图。",
+        "visualGroups": [
+          {
+            "label": "这次要放的图",
+            "items": [
+              "🟦"
+            ]
+          }
+        ],
+        "choices": [
+          {
+            "label": "蓝色组",
+            "value": "蓝色篮子"
+          },
+          {
+            "label": "方形组",
+            "value": "方形篮子"
+          },
+          {
+            "label": "圆形组",
+            "value": "圆形篮子"
+          }
+        ],
+        "answer": "蓝色篮子",
+        "success": "虽然它是方块，但这次看颜色，所以进蓝色组。",
+        "retry": "先停一下听规则：现在只看颜色，不看形状。",
+        "parentPrompt": "问她：如果选方形组，是看了颜色还是看了形状？这次规则是什么？",
+        "abilityTags": [
+          "规则切换",
+          "分类"
+        ],
+        "id": "logic-sorter-switch-5",
+        "difficultyNote": "较难：需要抗干扰、换角度或同时比较两个特征。 比较 1 组图卡，找共同点、差异或缺失项。主要训练规则切换、分类。",
+        "number": 5,
+        "lesson": false
+      },
+      {
+        "level": "L5",
+        "prompt": "还是蓝色方块，现在只看形状。它要进哪一组？",
+        "instruction": "先说一遍规则：只看形状，再看这张图。",
+        "visualGroups": [
+          {
+            "label": "这次要放的图",
+            "items": [
+              "🟦"
+            ]
+          }
+        ],
+        "choices": [
+          {
+            "label": "蓝色组",
+            "value": "蓝色篮子"
+          },
+          {
+            "label": "方形组",
+            "value": "方形篮子"
+          },
+          {
+            "label": "圆形组",
+            "value": "圆形篮子"
+          }
+        ],
+        "answer": "方形篮子",
+        "success": "虽然它是蓝色，但这次看形状，所以进方形组。",
+        "retry": "先停一下听规则：现在只看形状，不看颜色。",
+        "parentPrompt": "问她：如果选蓝色组，是看了形状还是看了颜色？这次规则是什么？",
+        "abilityTags": [
+          "规则切换",
+          "分类"
+        ],
+        "id": "logic-sorter-switch-6",
+        "difficultyNote": "较难：需要抗干扰、换角度或同时比较两个特征。 比较 1 组图卡，找共同点、差异或缺失项。主要训练规则切换、分类。",
+        "number": 6,
+        "lesson": false
+      },
+      {
+        "level": "L5",
+        "prompt": "黄色圆片有颜色也有形状。这次只看颜色，放哪里？",
+        "instruction": "先说一遍规则：只看颜色，再看这张图。",
+        "visualGroups": [
+          {
+            "label": "这次要放的图",
+            "items": [
+              "🟡"
+            ]
+          }
+        ],
+        "choices": [
+          {
+            "label": "黄色组",
+            "value": "黄色篮子"
+          },
+          {
+            "label": "圆形组",
+            "value": "圆形篮子"
+          },
+          {
+            "label": "方形组",
+            "value": "方形篮子"
+          }
+        ],
+        "answer": "黄色篮子",
+        "success": "听到只看颜色，就找黄色组；圆形先不管。",
+        "retry": "这题只看颜色。圆形组是看形状时才用的。",
+        "parentPrompt": "问她：黄色组和圆形组都像对的，为什么这次选颜色？",
+        "abilityTags": [
+          "规则切换",
+          "分类"
+        ],
+        "id": "logic-sorter-switch-7",
+        "difficultyNote": "较难：需要抗干扰、换角度或同时比较两个特征。 比较 1 组图卡，找共同点、差异或缺失项。主要训练规则切换、分类。",
+        "number": 7,
+        "lesson": false
+      },
+      {
+        "level": "L5",
+        "prompt": "黄色圆片有颜色也有形状。这次只看形状，放哪里？",
+        "instruction": "先说一遍规则：只看形状，再看这张图。",
+        "visualGroups": [
+          {
+            "label": "这次要放的图",
+            "items": [
+              "🟡"
+            ]
+          }
+        ],
+        "choices": [
+          {
+            "label": "黄色组",
+            "value": "黄色篮子"
+          },
+          {
+            "label": "方形组",
+            "value": "方形篮子"
+          },
+          {
+            "label": "圆形组",
+            "value": "圆形篮子"
+          }
+        ],
+        "answer": "圆形篮子",
+        "success": "听到只看形状，就找圆形组；黄色先不管。",
+        "retry": "这题只看形状。黄色组是看颜色时才用的。",
+        "parentPrompt": "问她：圆形组和黄色组都像对的，为什么这次选形状？",
+        "abilityTags": [
+          "规则切换",
+          "分类"
+        ],
+        "id": "logic-sorter-switch-8",
+        "difficultyNote": "较难：需要抗干扰、换角度或同时比较两个特征。 比较 1 组图卡，找共同点、差异或缺失项。主要训练规则切换、分类。",
+        "number": 8,
+        "lesson": false
+      },
+      {
+        "level": "L5",
+        "prompt": "分类机要红色，也要圆形。选哪一张？",
+        "instruction": "两个条件都要满足，少一个都不行。",
+        "visualGroups": [
+          {
+            "label": "候选图",
+            "items": [
+              "🔴",
+              "🟥",
+              "🔵"
+            ]
+          }
+        ],
+        "choices": [
+          {
+            "label": "红色方块",
+            "value": "🟥"
+          },
+          {
+            "label": "红色圆片",
+            "value": "🔴"
+          },
+          {
+            "label": "蓝色圆片",
+            "value": "🔵"
+          }
+        ],
+        "answer": "🔴",
+        "success": "红色圆片同时满足红色和圆形。",
+        "retry": "两个条件都要看：红色和圆形都对才行。",
+        "parentPrompt": "问她：哪一张两个条件都满足？哪一张只满足红色？哪一张只满足圆形？",
+        "abilityTags": [
+          "多条件判断",
+          "分类"
+        ],
+        "id": "logic-sorter-switch-9",
+        "difficultyNote": "较难：需要抗干扰、换角度或同时比较两个特征。 比较 1 组图卡，找共同点、差异或缺失项。主要训练多条件判断、分类。",
+        "number": 9,
+        "lesson": false
+      },
+      {
+        "level": "L5",
+        "prompt": "分类机要蓝色，也要方形。哪一张两个条件都对？",
+        "instruction": "两个条件都要满足，少一个都不行。",
+        "visualGroups": [
+          {
+            "label": "候选图",
+            "items": [
+              "🔵",
+              "🟦",
+              "🟥"
+            ]
+          }
+        ],
+        "choices": [
+          {
+            "label": "蓝色圆片",
+            "value": "🔵"
+          },
+          {
+            "label": "蓝色方块",
+            "value": "🟦"
+          },
+          {
+            "label": "红色方块",
+            "value": "🟥"
+          }
+        ],
+        "answer": "🟦",
+        "success": "蓝色方块同时满足蓝色和方形。",
+        "retry": "两个条件都要看：蓝色和方形都对才行。",
+        "parentPrompt": "问她：哪一张两个条件都满足？哪一张只满足蓝色？哪一张只满足方形？",
+        "abilityTags": [
+          "多条件判断",
+          "分类"
+        ],
+        "id": "logic-sorter-switch-10",
+        "difficultyNote": "较难：需要抗干扰、换角度或同时比较两个特征。 比较 1 组图卡，找共同点、差异或缺失项。主要训练多条件判断、分类。",
+        "number": 10,
+        "lesson": false
+      },
+      {
+        "level": "L5",
+        "prompt": "分类机要黄色，也要圆形。哪一张两个条件都对？",
+        "instruction": "两个条件都要满足，少一个都不行。",
+        "visualGroups": [
+          {
+            "label": "候选图",
+            "items": [
+              "🟨",
+              "🟢",
+              "🟡"
+            ]
+          }
+        ],
+        "choices": [
+          {
+            "label": "黄色方块",
+            "value": "🟨"
+          },
+          {
+            "label": "绿色圆片",
+            "value": "🟢"
+          },
+          {
+            "label": "黄色圆片",
+            "value": "🟡"
+          }
+        ],
+        "answer": "🟡",
+        "success": "黄色圆片同时满足黄色和圆形。",
+        "retry": "两个条件都要看：黄色和圆形都对才行。",
+        "parentPrompt": "问她：哪一张两个条件都满足？哪一张只满足黄色？哪一张只满足圆形？",
+        "abilityTags": [
+          "多条件判断",
+          "分类"
+        ],
+        "id": "logic-sorter-switch-11",
+        "difficultyNote": "较难：需要抗干扰、换角度或同时比较两个特征。 比较 1 组图卡，找共同点、差异或缺失项。主要训练多条件判断、分类。",
+        "number": 11,
+        "lesson": false
+      }
+    ],
+    "kind": "progressiveSet"
+  },
+  {
+    "id": "logic-story-evidence",
+    "world": "logic",
+    "title": "故事和线索",
+    "subtitle": "看奶油、脚印、杯子这些线索，判断谁最可能。",
+    "goal": "训练证据推理、解释理由和简单排除法。",
+    "parentPrompt": "可以问：你看到什么线索？这个线索说明什么？",
+    "abilityTags": [
+      "故事顺序",
+      "证据推理",
+      "排除法"
+    ],
+    "level": "L6",
+    "rounds": [
+      {
+        "level": "L4",
+        "prompt": "桌上的蛋糕少了一块。谁最可能吃了？",
+        "instruction": "看嘴边的线索。",
+        "sceneImage": {
+          "src": "/images/scenes/cake-evidence-kitchen.png",
+          "alt": "厨房桌上蛋糕少了一块，小猫嘴边有奶油，小狗在睡觉，小兔拿着胡萝卜。"
+        },
+        "choices": [
+          {
+            "label": "小猫",
+            "value": "cat"
+          },
+          {
+            "label": "小狗",
+            "value": "dog"
+          },
+          {
+            "label": "小兔",
+            "value": "rabbit"
+          }
+        ],
+        "answer": "cat",
+        "success": "小猫嘴边有奶油，这是重要线索。",
+        "retry": "谁身上有和蛋糕有关的线索？",
+        "parentPrompt": "问她：嘴边有奶油说明什么？",
+        "abilityTags": [
+          "证据推理"
+        ],
+        "id": "logic-story-evidence-1",
+        "difficultyNote": "中等：需要两步观察或简单比较，不能只看一个显眼线索。 主要从生活场景图里找证据。主要训练证据推理。",
+        "number": 1,
+        "lesson": true
+      },
+      {
+        "level": "L5",
+        "prompt": "比较小猫和小狗，谁身上和蛋糕直接相关的线索更少？",
+        "instruction": "这次用排除法。",
+        "sceneImage": {
+          "src": "/images/scenes/cake-evidence-kitchen.png",
+          "alt": "厨房桌上蛋糕少了一块，小猫嘴边有奶油，小狗在睡觉，小兔拿着胡萝卜。"
+        },
+        "choices": [
+          {
+            "label": "小猫",
+            "value": "cat"
+          },
+          {
+            "label": "小狗",
+            "value": "dog"
+          },
+          {
+            "label": "一样多",
+            "value": "same"
+          }
+        ],
+        "answer": "dog",
+        "success": "图中小狗身上没有看到奶油，比小猫少一条直接线索。但现在睡着，不代表之前一定没吃过。",
+        "retry": "谁有更多线索指向它？谁线索更少？",
+        "parentPrompt": "问她：现在睡着和一直睡着一样吗？线索少，能不能就确定没有吃？",
+        "abilityTags": [
+          "排除法"
+        ],
+        "id": "logic-story-evidence-2",
+        "difficultyNote": "较难：需要抗干扰、换角度或同时比较两个特征。 主要从生活场景图里找证据。主要训练排除法。",
+        "number": 2,
+        "lesson": true
+      },
+      {
+        "level": "L6",
+        "prompt": "只知道“小猫在厨房”，能确定是小猫吃了吗？",
+        "instruction": "有些线索不够强，不能马上确定。",
+        "sceneImage": {
+          "src": "/images/scenes/cat-kitchen-weak-clue.png",
+          "alt": "厨房桌上蛋糕少了一块，小猫站在厨房门口，嘴边和爪子都很干净。"
+        },
+        "choices": [
+          {
+            "label": "还不能确定",
+            "value": "not-yet"
+          },
+          {
+            "label": "能确定了",
+            "value": "enough"
+          },
+          {
+            "label": "肯定没吃",
+            "value": "cat-no"
+          }
+        ],
+        "answer": "not-yet",
+        "success": "只在厨房还不够，需要更多证据。",
+        "retry": "在厨房只是线索，还不是足够的证据。",
+        "parentPrompt": "问她：还需要看到什么，才能更确定？",
+        "abilityTags": [
+          "解释理由"
+        ],
+        "id": "logic-story-evidence-3",
+        "difficultyNote": "挑战：需要工作记忆、连续步骤或综合推理后再选择。 主要从生活场景图里找证据。主要训练解释理由。",
+        "number": 3,
+        "lesson": true
+      },
+      {
+        "level": "L4",
+        "prompt": "谁可能刚踩过泥地？",
+        "instruction": "看脚上和地面的泥巴线索。",
+        "sceneImage": {
+          "src": "/images/scenes/muddy-paws-yard.png",
+          "alt": "雨后小院里有泥坑和脚印，小狗脚上有泥，小兔拿着胡萝卜，小猫坐在干净垫子上。"
+        },
+        "choices": [
+          {
+            "label": "小兔",
+            "value": "rabbit"
+          },
+          {
+            "label": "小猫",
+            "value": "cat"
+          },
+          {
+            "label": "小狗",
+            "value": "dog"
+          }
+        ],
+        "answer": "dog",
+        "success": "小狗脚上有泥，这是强线索。",
+        "retry": "谁身上有泥巴的线索？",
+        "parentPrompt": "问她：脚上有泥说明可能去了哪里？",
+        "abilityTags": [
+          "证据推理"
+        ],
+        "id": "logic-story-evidence-4",
+        "difficultyNote": "中等：需要两步观察或简单比较，不能只看一个显眼线索。 主要从生活场景图里找证据。主要训练证据推理。",
+        "number": 4,
+        "lesson": true
+      },
+      {
+        "level": "L5",
+        "prompt": "水杯倒了，想知道发生了什么，先去哪里找线索？",
+        "instruction": "先检查和水杯、地上水直接相连的地方。",
+        "sceneImage": {
+          "src": "/images/scenes/spilled-water-room.png",
+          "alt": "房间里小熊站在倒下的水杯旁，地上有水，小狗在远处睡觉，小鸟在窗边。"
+        },
+        "choices": [
+          {
+            "label": "小狗旁边",
+            "value": "dog-area"
+          },
+          {
+            "label": "小鸟旁边",
+            "value": "bird-area"
+          },
+          {
+            "label": "杯子周围",
+            "value": "cup-area"
+          }
+        ],
+        "answer": "cup-area",
+        "success": "先检查倒下的杯子周围有没有湿痕、脚印或碰倒的东西。角色站得近只说明这里值得观察，不能直接确定是谁碰倒的。",
+        "retry": "先从事情发生的地方找直接痕迹，再判断这些痕迹能说明什么。",
+        "parentPrompt": "问她：杯子周围还可能留下什么痕迹？看到痕迹以后能马上确定是谁吗？",
+        "abilityTags": [
+          "证据推理"
+        ],
+        "id": "logic-story-evidence-5",
+        "difficultyNote": "较难：需要抗干扰、换角度或同时比较两个特征。 主要从生活场景图里找证据。主要训练证据推理。",
+        "number": 5,
+        "lesson": true
+      },
+      {
+        "level": "L5",
+        "prompt": "比较小兔和小猫，谁身上和花直接相关的线索更少？",
+        "instruction": "小兔拿着胡萝卜，小猫爪边有花粉。比较这些线索和花的关系。",
+        "sceneImage": {
+          "src": "/images/scenes/flower-evidence-garden.png",
+          "alt": "花园里有被碰过的花、猫脚印、小猫爪上的花粉、小兔拿着胡萝卜，小狗在远处。"
+        },
+        "choices": [
+          {
+            "label": "小兔",
+            "value": "rabbit"
+          },
+          {
+            "label": "小猫",
+            "value": "cat"
+          },
+          {
+            "label": "都一样",
+            "value": "same"
+          }
+        ],
+        "answer": "rabbit",
+        "success": "小兔拿的是胡萝卜，和花的线索更少。",
+        "retry": "谁和花的线索更少？",
+        "parentPrompt": "问她：小兔身上的线索少，能不能就确定它没碰过花？还需要了解什么？",
+        "abilityTags": [
+          "排除法"
+        ],
+        "id": "logic-story-evidence-6",
+        "difficultyNote": "较难：需要抗干扰、换角度或同时比较两个特征。 主要从生活场景图里找证据。主要训练排除法。",
+        "number": 6,
+        "lesson": true
+      },
+      {
+        "level": "L6",
+        "prompt": "只知道“小狗在房间里”，能确定是小狗弄乱玩具吗？",
+        "instruction": "一个线索不一定够。",
+        "sceneImage": {
+          "src": "/images/scenes/dog-room-weak-clue.png",
+          "alt": "游戏房里玩具散在地上，小狗坐在门口，没有碰玩具。"
+        },
+        "choices": [
+          {
+            "label": "能确定了",
+            "value": "enough"
+          },
+          {
+            "label": "还不能确定",
+            "value": "not-yet"
+          },
+          {
+            "label": "肯定没弄乱",
+            "value": "dog-no"
+          }
+        ],
+        "answer": "not-yet",
+        "success": "只在房间里还不够，需要更多线索。",
+        "retry": "在房间里只是线索，不是足够证据。",
+        "parentPrompt": "问她：还要看到什么线索，才更确定？",
+        "abilityTags": [
+          "解释理由"
+        ],
+        "id": "logic-story-evidence-7",
+        "difficultyNote": "挑战：需要工作记忆、连续步骤或综合推理后再选择。 主要从生活场景图里找证据。主要训练解释理由。",
+        "number": 7,
+        "lesson": true
+      }
+    ],
+    "kind": "progressiveSet"
+  },
+  {
+    "id": "logic-condition-detective",
+    "world": "logic",
+    "title": "条件小侦探",
+    "subtitle": "看目标和线索，判断现在能不能做、能不能确定，还缺哪一个条件。",
+    "goal": "训练必要条件、证据强弱和条件缺口判断。",
+    "parentPrompt": "问她：现在已经知道什么？还缺什么？有了这个条件，事情才能发生吗？",
+    "abilityTags": [
+      "条件判断",
+      "证据强弱",
+      "必要条件"
+    ],
+    "level": "L6",
+    "rounds": [
+      {
+        "level": "L4",
+        "prompt": "手脏了，能直接吃饼干吗？",
+        "instruction": "先看卫生条件够不够。",
+        "difficultyNote": "单一必要条件：目标前有一个必须先满足的条件。",
+        "sequence": [
+          "手脏",
+          "?",
+          "拿饼干",
+          "吃"
+        ],
+        "choices": [
+          {
+            "label": "先洗手",
+            "value": "wash"
+          },
+          {
+            "label": "直接吃",
+            "value": "eat-now"
+          },
+          {
+            "label": "只拿盘子",
+            "value": "plate-only"
+          }
+        ],
+        "answer": "wash",
+        "success": "手脏时先洗手，卫生条件够了才能吃点心。",
+        "retry": "先想：如果少了这一步，后面还能不能安全发生？",
+        "parentPrompt": "问她：洗手是可有可无，还是必须先做？",
+        "abilityTags": [
+          "必要条件",
+          "生活判断"
+        ],
+        "id": "logic-condition-detective-1",
+        "number": 1,
+        "lesson": true
+      },
+      {
+        "level": "L4",
+        "prompt": "红灯亮了，现在能走过去吗？",
+        "instruction": "先看安全条件够不够。",
+        "difficultyNote": "单一安全条件：看到信号，再决定能不能行动。",
+        "sequence": [
+          "路口",
+          "🔴",
+          "?"
+        ],
+        "choices": [
+          {
+            "label": "走",
+            "value": "go"
+          },
+          {
+            "label": "慢慢走",
+            "value": "slow"
+          },
+          {
+            "label": "停",
+            "value": "stop"
+          }
+        ],
+        "answer": "stop",
+        "success": "红灯时安全条件不够，要先停。",
+        "retry": "看清灯的颜色，再决定能不能走。",
+        "parentPrompt": "问她：绿灯和红灯分别告诉我们什么？",
+        "abilityTags": [
+          "条件判断",
+          "安全规则"
+        ],
+        "id": "logic-condition-detective-2",
+        "number": 2,
+        "lesson": true
+      },
+      {
+        "level": "L4",
+        "prompt": "行人绿灯亮了，车辆已停、路面安全。和大人一起可以做什么？",
+        "instruction": "条件满足了，再选择行动。",
+        "difficultyNote": "单一条件满足：条件够了以后，选择对应动作。",
+        "sequence": [
+          "路口",
+          "🟢",
+          "?"
+        ],
+        "choices": [
+          {
+            "label": "继续等着",
+            "value": "keep-waiting"
+          },
+          {
+            "label": "等红灯再走",
+            "value": "wait-red"
+          },
+          {
+            "label": "走过去",
+            "value": "walk"
+          }
+        ],
+        "answer": "walk",
+        "success": "行人绿灯亮了，还要确认车辆已停、路面安全，再和大人一起走过去。",
+        "retry": "绿灯表示可以走，但还是要看路。",
+        "parentPrompt": "问她：条件满足以后，动作会不会改变？",
+        "abilityTags": [
+          "条件判断",
+          "规则执行"
+        ],
+        "id": "logic-condition-detective-3",
+        "number": 3,
+        "lesson": true
+      },
+      {
+        "level": "L4",
+        "prompt": "这块木板能搭到对岸吗？",
+        "instruction": "看看木板的另一头，有没有碰到对岸。",
+        "difficultyNote": "单一匹配条件：材料长度要和河宽匹配。",
+        "sequence": [
+          "宽河",
+          "短木板",
+          "?"
+        ],
+        "choices": [
+          {
+            "label": "还不够",
+            "value": "not-enough"
+          },
+          {
+            "label": "已经够了",
+            "value": "enough"
+          },
+          {
+            "label": "不用木板",
+            "value": "none"
+          }
+        ],
+        "answer": "not-enough",
+        "success": "宽河只用短木板还不够，要换更合适的材料。",
+        "retry": "先比一比河宽和木板长短。",
+        "parentPrompt": "问她：短木板为什么不够？还可以怎么改？",
+        "abilityTags": [
+          "空间判断",
+          "必要条件"
+        ],
+        "id": "logic-condition-detective-4",
+        "number": 4,
+        "lesson": true
+      },
+      {
+        "level": "L5",
+        "prompt": "点心要先盛到盘子里再吃。手已经洗好了，下一步做什么？",
+        "instruction": "条件会一个接一个出现。",
+        "difficultyNote": "连续条件：卫生条件满足后，还要准备工具。",
+        "sequence": [
+          "先洗手",
+          "?",
+          "拿饼干",
+          "吃"
+        ],
+        "choices": [
+          {
+            "label": "再洗手",
+            "value": "wash-again"
+          },
+          {
+            "label": "拿盘子",
+            "value": "plate"
+          },
+          {
+            "label": "直接吃",
+            "value": "eat-now"
+          }
+        ],
+        "answer": "plate",
+        "success": "洗手以后拿盘子，再拿饼干吃。",
+        "retry": "已经洗过手了，下一步看吃点心还需要什么工具。",
+        "parentPrompt": "问她：已经满足的条件，还要不要重复做？",
+        "abilityTags": [
+          "多步计划",
+          "条件判断"
+        ],
+        "id": "logic-condition-detective-5",
+        "number": 5,
+        "lesson": true
+      },
+      {
+        "level": "L5",
+        "prompt": "积木和小车要分开放进两个盒子，下次好找。它们还混在一起，先做什么？",
+        "instruction": "收纳的目标是每一类放一个盒子。",
+        "difficultyNote": "整理条件：按种类收纳的目标，需要先区分两类玩具。",
+        "sequence": [
+          "积木和小车",
+          "?",
+          "分类装好"
+        ],
+        "choices": [
+          {
+            "label": "全放同一个盒子",
+            "value": "stuff"
+          },
+          {
+            "label": "只收一个玩具",
+            "value": "one"
+          },
+          {
+            "label": "先分开两类",
+            "value": "sort"
+          }
+        ],
+        "answer": "sort",
+        "success": "先把积木和小车分开，再各放一个盒子，下次就知道去哪里找。",
+        "retry": "目标是分开放。全放在同一个盒子里，积木和小车还是混在一起。",
+        "parentPrompt": "问她：要找小车时，分开放和混在一起有什么不同？",
+        "abilityTags": [
+          "计划",
+          "条件判断"
+        ],
+        "id": "logic-condition-detective-6",
+        "number": 6,
+        "lesson": true
+      },
+      {
+        "level": "L5",
+        "prompt": "对岸有胡萝卜，看到小河后还缺什么？",
+        "instruction": "先处理障碍，再完成目标。",
+        "difficultyNote": "障碍条件：目标在对岸时，先补上过河条件。",
+        "sequence": [
+          "小河",
+          "?",
+          "🥕"
+        ],
+        "choices": [
+          {
+            "label": "直接走进水里",
+            "value": "walk-water"
+          },
+          {
+            "label": "先搭桥",
+            "value": "bridge"
+          },
+          {
+            "label": "站在岸边等",
+            "value": "wait-bank"
+          }
+        ],
+        "answer": "bridge",
+        "success": "有小河挡住时，先搭桥，才能到对岸拿胡萝卜。",
+        "retry": "目标还没法直接拿到，先看中间缺了什么条件。",
+        "parentPrompt": "问她：小河是目标，还是障碍？",
+        "abilityTags": [
+          "障碍处理",
+          "必要条件"
+        ],
+        "id": "logic-condition-detective-7",
+        "number": 7,
+        "lesson": true
+      },
+      {
+        "level": "L5",
+        "prompt": "小猫在厨房，蛋糕少了一块，够确定是小猫吃的吗？",
+        "instruction": "线索不够强时，不要急着下结论。",
+        "difficultyNote": "弱证据判断：出现地点不是直接证据。",
+        "sceneImage": {
+          "src": "/images/scenes/cat-kitchen-weak-clue.png",
+          "alt": "厨房桌上蛋糕少了一块，小猫站在厨房门口，嘴边和爪子都很干净。"
+        },
+        "choices": [
+          {
+            "label": "能确定了",
+            "value": "enough"
+          },
+          {
+            "label": "肯定没吃",
+            "value": "cat-no"
+          },
+          {
+            "label": "还不能确定",
+            "value": "not-yet"
+          }
+        ],
+        "answer": "not-yet",
+        "success": "只知道在厨房还不够，还需要奶油、脚印这样的更强线索。",
+        "retry": "在同一个地方只是线索，不是足够证据。",
+        "parentPrompt": "问她：还要看到什么，才更像小猫吃了？",
+        "abilityTags": [
+          "证据强弱",
+          "解释理由"
+        ],
+        "id": "logic-condition-detective-8",
+        "number": 8,
+        "lesson": true
+      },
+      {
+        "level": "L6",
+        "prompt": "蛋糕少了，小猫嘴边有奶油，谁最可能吃了？",
+        "instruction": "把目标和强线索连起来。",
+        "difficultyNote": "强证据判断：线索直接指向目标行为。",
+        "sceneImage": {
+          "src": "/images/scenes/cake-evidence-kitchen.png",
+          "alt": "厨房桌上蛋糕少了一块，小猫嘴边有奶油，小狗在睡觉，小兔拿着胡萝卜。"
+        },
+        "choices": [
+          {
+            "label": "小狗",
+            "value": "dog"
+          },
+          {
+            "label": "小猫",
+            "value": "cat"
+          },
+          {
+            "label": "小兔",
+            "value": "rabbit"
+          }
+        ],
+        "answer": "cat",
+        "success": "奶油和蛋糕直接相关，所以小猫最可能。",
+        "retry": "谁身上有和蛋糕最相关的线索？",
+        "parentPrompt": "问她：奶油为什么比“在厨房”更有用？",
+        "abilityTags": [
+          "证据强弱",
+          "证据推理"
+        ],
+        "id": "logic-condition-detective-9",
+        "number": 9,
+        "lesson": true
+      },
+      {
+        "level": "L6",
+        "prompt": "水杯倒了，哪一个地方最值得先检查？",
+        "instruction": "先找事情发生的地方，再看有没有直接痕迹。",
+        "difficultyNote": "关键线索判断：比较事件现场的直接痕迹和无关地点。",
+        "sceneImage": {
+          "src": "/images/scenes/spilled-water-room.png",
+          "alt": "房间里小熊站在倒下的水杯旁，地上有水，小狗在远处睡觉，小鸟在窗边。"
+        },
+        "choices": [
+          {
+            "label": "小狗旁边",
+            "value": "far-dog"
+          },
+          {
+            "label": "杯子周围",
+            "value": "cup-area"
+          },
+          {
+            "label": "小鸟旁边",
+            "value": "bird-window"
+          }
+        ],
+        "answer": "cup-area",
+        "success": "先检查倒下的杯子周围，那里可能有湿痕、脚印或碰撞痕迹；只看谁站得近还不能确定原因。",
+        "retry": "先找事情发生处留下的直接痕迹，不要只按角色远近猜。",
+        "parentPrompt": "问她：什么样的痕迹能帮助我们判断？只有站在旁边够不够？",
+        "abilityTags": [
+          "关键线索",
+          "证据强弱"
+        ],
+        "id": "logic-condition-detective-10",
+        "number": 10,
+        "lesson": true
+      },
+      {
+        "level": "L6",
+        "prompt": "只知道小狗在房间里，能确定它弄乱玩具吗？",
+        "instruction": "要分清“可能”和“确定”。",
+        "difficultyNote": "证据不足：只有地点线索，不能推出行为一定发生。",
+        "sceneImage": {
+          "src": "/images/scenes/dog-room-weak-clue.png",
+          "alt": "游戏房里玩具散在地上，小狗坐在门口，没有碰玩具。"
+        },
+        "choices": [
+          {
+            "label": "还不能确定",
+            "value": "not-yet"
+          },
+          {
+            "label": "能确定了",
+            "value": "enough"
+          },
+          {
+            "label": "肯定没弄乱",
+            "value": "dog-no"
+          }
+        ],
+        "answer": "not-yet",
+        "success": "小狗在房间里只是可能，还缺更直接的线索。",
+        "retry": "在房间里不等于一定弄乱了玩具。",
+        "parentPrompt": "问她：什么线索能更直接说明小狗弄乱了？",
+        "abilityTags": [
+          "证据不足",
+          "解释理由"
+        ],
+        "id": "logic-condition-detective-11",
+        "number": 11,
+        "lesson": true
+      },
+      {
+        "level": "L6",
+        "prompt": "短木板搭不到对岸，先换什么？",
+        "instruction": "先找能让木板搭到对岸的办法。",
+        "difficultyNote": "条件调整：找出失败原因，再改关键条件。",
+        "sequence": [
+          "宽河",
+          "短木板",
+          "太短",
+          "?"
+        ],
+        "choices": [
+          {
+            "label": "换长木板",
+            "value": "extend"
+          },
+          {
+            "label": "接着用短板",
+            "value": "same"
+          },
+          {
+            "label": "换同样短的",
+            "value": "same-short"
+          }
+        ],
+        "answer": "extend",
+        "success": "失败原因是长度不够，所以先换一块够长的木板。",
+        "retry": "先找失败原因，再改最关键的条件。",
+        "parentPrompt": "问她：失败是因为颜色，还是因为长度？",
+        "abilityTags": [
+          "试错调整",
+          "条件判断"
+        ],
+        "id": "logic-condition-detective-12",
+        "number": 12,
+        "lesson": true
+      }
+    ],
+    "kind": "progressiveSet"
+  },
+  {
+    "id": "logic-fix-plan",
+    "world": "logic",
+    "title": "错了怎么改",
+    "subtitle": "看一个做错的流程，找出问题，再选一个更合适的修正办法。",
+    "goal": "训练错误诊断、修正计划和因果解释。",
+    "parentPrompt": "问她：错在条件不够、顺序不对，还是线索太弱？下一步怎么改才有用？",
+    "abilityTags": [
+      "错误诊断",
+      "修正计划",
+      "因果解释"
+    ],
+    "level": "L6",
+    "rounds": [
+      {
+        "level": "L4",
+        "prompt": "手脏了就拿饼干，错在哪里？",
+        "instruction": "先找少掉的必要步骤。",
+        "difficultyNote": "发现单一步骤错误：目标前缺少必要条件。",
+        "sequence": [
+          "手脏",
+          "拿饼干",
+          "吃"
+        ],
+        "choices": [
+          {
+            "label": "少了先洗手",
+            "value": "missing-wash"
+          },
+          {
+            "label": "少了拿盘子",
+            "value": "missing-plate"
+          },
+          {
+            "label": "少了多拿饼干",
+            "value": "missing-more-cookie"
+          }
+        ],
+        "answer": "missing-wash",
+        "success": "错在手脏时直接拿饼干，少了先洗手。",
+        "retry": "看第一张图，手还脏着，吃东西前先要做什么？",
+        "parentPrompt": "问她：这个流程少了哪一步？为什么这一步重要？",
+        "abilityTags": [
+          "错误诊断",
+          "必要条件"
+        ],
+        "id": "logic-fix-plan-1",
+        "number": 1,
+        "lesson": true
+      },
+      {
+        "level": "L4",
+        "prompt": "红灯亮了却走过去，应该怎么改？",
+        "instruction": "先看哪个动作违反了规则。",
+        "difficultyNote": "安全规则修正：发现错误动作并换成规则动作。",
+        "sequence": [
+          "路口",
+          "🔴",
+          "走过去"
+        ],
+        "choices": [
+          {
+            "label": "继续走",
+            "value": "keep-walk"
+          },
+          {
+            "label": "等红灯再走",
+            "value": "wait-red"
+          },
+          {
+            "label": "改成停",
+            "value": "stop"
+          }
+        ],
+        "answer": "stop",
+        "success": "红灯亮了应该停，不能走过去。",
+        "retry": "红灯告诉我们停，不是走。",
+        "parentPrompt": "问她：如果这一步不改，会有什么危险？",
+        "abilityTags": [
+          "错误诊断",
+          "安全规则"
+        ],
+        "id": "logic-fix-plan-2",
+        "number": 2,
+        "lesson": true
+      },
+      {
+        "level": "L4",
+        "prompt": "行人绿灯亮了，大人已确认车辆停稳、路面安全，接下来可以怎么做？",
+        "instruction": "条件已经满足时，要改变动作。",
+        "difficultyNote": "条件满足后的行动修正：不只是停，也要在合适时行动。",
+        "sequence": [
+          "路口",
+          "🟢",
+          "停"
+        ],
+        "choices": [
+          {
+            "label": "继续等着",
+            "value": "keep-waiting"
+          },
+          {
+            "label": "改成走过去",
+            "value": "walk"
+          },
+          {
+            "label": "等红灯再走",
+            "value": "wait-red"
+          }
+        ],
+        "answer": "walk",
+        "success": "行人绿灯亮了，确认安全后，可以和大人一起走过去。",
+        "retry": "绿灯和红灯的动作不一样。",
+        "parentPrompt": "问她：什么时候要停？什么时候可以走？",
+        "abilityTags": [
+          "规则执行",
+          "修正计划"
+        ],
+        "id": "logic-fix-plan-3",
+        "number": 3,
+        "lesson": true
+      },
+      {
+        "level": "L4",
+        "prompt": "木板搭不到对岸，哪里出了问题？",
+        "instruction": "看看木板另一头还差在哪里。",
+        "difficultyNote": "材料匹配错误：长度条件不满足。",
+        "sequence": [
+          "宽河",
+          "短木板",
+          "太短"
+        ],
+        "choices": [
+          {
+            "label": "木板太长",
+            "value": "too-long"
+          },
+          {
+            "label": "河太窄",
+            "value": "too-narrow"
+          },
+          {
+            "label": "木板太短",
+            "value": "too-short"
+          }
+        ],
+        "answer": "too-short",
+        "success": "失败原因是木板太短，长度不够。",
+        "retry": "搭桥看的是距离和长度，不是颜色。",
+        "parentPrompt": "问她：错的是材料长度，还是别的东西？",
+        "abilityTags": [
+          "空间判断",
+          "错误诊断"
+        ],
+        "id": "logic-fix-plan-4",
+        "number": 4,
+        "lesson": true
+      },
+      {
+        "level": "L5",
+        "prompt": "已经洗好手，约定把饼干盛进盘子再吃。接下来做什么？",
+        "instruction": "已经完成的条件不用一直重复。",
+        "difficultyNote": "重复步骤修正：区分已经满足和还没满足的条件。",
+        "sequence": [
+          "先洗手",
+          "先洗手",
+          "?"
+        ],
+        "choices": [
+          {
+            "label": "拿盘子",
+            "value": "plate"
+          },
+          {
+            "label": "继续洗手",
+            "value": "wash-again"
+          },
+          {
+            "label": "直接吃",
+            "value": "eat-now"
+          }
+        ],
+        "answer": "plate",
+        "success": "洗手已经完成了，下一步准备盘子和饼干。",
+        "retry": "已经满足的条件不用一直重复，想下一步还缺什么。",
+        "parentPrompt": "问她：哪一步已经做过？接下来缺什么？",
+        "abilityTags": [
+          "条件判断",
+          "修正计划"
+        ],
+        "id": "logic-fix-plan-5",
+        "number": 5,
+        "lesson": true
+      },
+      {
+        "level": "L5",
+        "prompt": "要把积木和小车分开放进两个盒子，下次好找。现在却全混在一个盒子里，怎么改？",
+        "instruction": "看看混放的结果，和分开放的目标一样吗？",
+        "difficultyNote": "目标对照修正：混放没有满足按种类收纳的要求。",
+        "sequence": [
+          "积木和小车",
+          "混在一个盒子",
+          "?"
+        ],
+        "choices": [
+          {
+            "label": "继续混放",
+            "value": "stuff"
+          },
+          {
+            "label": "只收一个玩具",
+            "value": "one"
+          },
+          {
+            "label": "取出后先分类",
+            "value": "sort"
+          }
+        ],
+        "answer": "sort",
+        "success": "把混在一起的玩具取出来，先分类，再让积木和小车各住一个盒子。",
+        "retry": "现在的问题是两类玩具还混在一起。要怎样把它们分开放？",
+        "parentPrompt": "问她：目标是什么？混在一个盒子里完成目标了吗？为什么？",
+        "abilityTags": [
+          "计划",
+          "修正计划"
+        ],
+        "id": "logic-fix-plan-6",
+        "number": 6,
+        "lesson": true
+      },
+      {
+        "level": "L5",
+        "prompt": "桌面模型里，玩具兔想沿桥面去对岸拿胡萝卜，岸边有够长的木板。它一直站着没动，先怎么做？",
+        "instruction": "先找到目标，再看小河挡住了哪一段路。",
+        "difficultyNote": "障碍修正：把无效等待改成解决障碍的动作。",
+        "sequence": [
+          "小兔",
+          "小河",
+          "?",
+          "🥕"
+        ],
+        "visualGroups": [
+          {
+            "label": "岸边的材料",
+            "items": [
+              "长木板"
+            ]
+          }
+        ],
+        "choices": [
+          {
+            "label": "站在岸边等",
+            "value": "wait-bank"
+          },
+          {
+            "label": "直接走进水里",
+            "value": "walk-water"
+          },
+          {
+            "label": "先搭桥",
+            "value": "bridge"
+          }
+        ],
+        "answer": "bridge",
+        "success": "目标是让玩具兔到对岸拿胡萝卜。先用够长的木板搭好桥，它才能沿桥面过去。",
+        "retry": "玩具兔要去对岸，木板已经够长了。哪一步能接通两岸？",
+        "parentPrompt": "问她：玩具兔的目标是什么？挡路的是什么？木板能帮什么忙？",
+        "abilityTags": [
+          "障碍处理",
+          "错误诊断"
+        ],
+        "id": "logic-fix-plan-7",
+        "number": 7,
+        "lesson": true
+      },
+      {
+        "level": "L5",
+        "prompt": "只看到小猫在厨房，就说一定是小猫吃了，哪里错？",
+        "instruction": "地点线索不等于强证据。",
+        "difficultyNote": "结论过早修正：从确定改成还不能确定。",
+        "sceneImage": {
+          "src": "/images/scenes/cat-kitchen-weak-clue.png",
+          "alt": "厨房桌上蛋糕少了一块，小猫站在厨房门口，嘴边和爪子都很干净。"
+        },
+        "choices": [
+          {
+            "label": "能确定了",
+            "value": "enough"
+          },
+          {
+            "label": "还不能确定",
+            "value": "not-yet"
+          },
+          {
+            "label": "肯定没吃",
+            "value": "cat-no"
+          }
+        ],
+        "answer": "not-yet",
+        "success": "错在太早下结论，只在厨房还不能确定。",
+        "retry": "还缺奶油、脚印这样的更强线索。",
+        "parentPrompt": "问她：什么线索才更能说明小猫吃了？",
+        "abilityTags": [
+          "证据强弱",
+          "错误诊断"
+        ],
+        "id": "logic-fix-plan-8",
+        "number": 8,
+        "lesson": true
+      },
+      {
+        "level": "L6",
+        "prompt": "小猫嘴边有奶油，却说小狗最可能吃了，怎么改？",
+        "instruction": "强线索要和结论对应起来。",
+        "difficultyNote": "证据对应修正：把结论改到最相关的线索上。",
+        "sceneImage": {
+          "src": "/images/scenes/cake-evidence-kitchen.png",
+          "alt": "厨房桌上蛋糕少了一块，小猫嘴边有奶油，小狗在睡觉，小兔拿着胡萝卜。"
+        },
+        "choices": [
+          {
+            "label": "坚持小狗",
+            "value": "dog"
+          },
+          {
+            "label": "改成小猫",
+            "value": "cat"
+          },
+          {
+            "label": "改成小兔",
+            "value": "rabbit"
+          }
+        ],
+        "answer": "cat",
+        "success": "奶油在小猫嘴边，结论要改成小猫最可能。",
+        "retry": "谁身上的线索和蛋糕直接相关？",
+        "parentPrompt": "问她：这个结论应该跟哪条线索配上？",
+        "abilityTags": [
+          "证据推理",
+          "修正计划"
+        ],
+        "id": "logic-fix-plan-9",
+        "number": 9,
+        "lesson": true
+      },
+      {
+        "level": "L6",
+        "prompt": "水洒了，却只看远处的小狗，哪里不对？",
+        "instruction": "关键线索要和事情直接相关。",
+        "difficultyNote": "注意焦点修正：从远处角色改回事件现场的直接痕迹。",
+        "sceneImage": {
+          "src": "/images/scenes/spilled-water-room.png",
+          "alt": "房间里小熊站在倒下的水杯旁，地上有水，小狗在远处睡觉，小鸟在窗边。"
+        },
+        "choices": [
+          {
+            "label": "看杯子周围",
+            "value": "cup-area"
+          },
+          {
+            "label": "只看小狗",
+            "value": "far-dog"
+          },
+          {
+            "label": "只看小鸟",
+            "value": "bird-window"
+          }
+        ],
+        "answer": "cup-area",
+        "success": "要先检查倒下的杯子和水周围有没有直接痕迹，再根据痕迹判断。",
+        "retry": "先看事情发生的地方留下了什么，不要先猜是哪一个角色。",
+        "parentPrompt": "问她：什么痕迹和洒水这件事直接相关？为什么不能先猜角色？",
+        "abilityTags": [
+          "关键线索",
+          "错误诊断"
+        ],
+        "id": "logic-fix-plan-10",
+        "number": 10,
+        "lesson": true
+      },
+      {
+        "level": "L6",
+        "prompt": "换来一块同样短的木板，能搭过去了吗？",
+        "instruction": "比一比，新木板变长了吗？",
+        "difficultyNote": "无效修正识别：改了东西，但没有改关键条件。",
+        "sequence": [
+          "宽河",
+          "短木板",
+          "太短",
+          "短木板"
+        ],
+        "choices": [
+          {
+            "label": "还没解决",
+            "value": "not-fixed"
+          },
+          {
+            "label": "已经解决",
+            "value": "fixed"
+          },
+          {
+            "label": "不用改变",
+            "value": "no-change"
+          }
+        ],
+        "answer": "not-fixed",
+        "success": "还是同样短，关键问题没有改，所以还没解决。",
+        "retry": "失败原因是太短，换同样短的还是不够。",
+        "parentPrompt": "问她：这次修改真的改变了失败原因吗？",
+        "abilityTags": [
+          "试错调整",
+          "因果解释"
+        ],
+        "id": "logic-fix-plan-11",
+        "number": 11,
+        "lesson": true
+      },
+      {
+        "level": "L6",
+        "prompt": "积木和小车已经分好类，两个空盒子也打开了。下一步怎么做？",
+        "instruction": "保留已经做好的部分，再继续完成。",
+        "difficultyNote": "保护成果修正：不要破坏已经完成的中间条件。",
+        "sequence": [
+          "积木和小车",
+          "分好的两类玩具",
+          "?"
+        ],
+        "choices": [
+          {
+            "label": "再分类一遍",
+            "value": "sort-again"
+          },
+          {
+            "label": "分开放进盒子",
+            "value": "box"
+          },
+          {
+            "label": "只收一个玩具",
+            "value": "one"
+          }
+        ],
+        "answer": "box",
+        "success": "已经分类了，接着把积木和小车放进各自的盒子就好。",
+        "retry": "先保留已经做好的分类，再完成收纳。",
+        "parentPrompt": "问她：哪些事情已经做好了？下一步怎样保护它？",
+        "abilityTags": [
+          "多步计划",
+          "修正计划"
+        ],
+        "id": "logic-fix-plan-12",
+        "number": 12,
+        "lesson": true
+      }
+    ],
+    "kind": "progressiveSet"
+  },
+  {
+    "id": "logic-priority-choice",
+    "world": "logic",
+    "title": "先处理哪一个",
+    "subtitle": "遇到几个都相关的动作，先判断哪个最紧急、最关键、最能让后面顺利。",
+    "goal": "训练优先级判断、关键条件识别和生活场景决策。",
+    "parentPrompt": "问她：哪个问题最急？哪个动作做了以后，后面才更容易？如果先做别的会怎样？",
+    "abilityTags": [
+      "优先级判断",
+      "关键条件",
+      "生活决策"
+    ],
+    "level": "L6",
+    "rounds": [
+      {
+        "level": "L4",
+        "prompt": "手脏了，桌上有盘子和饼干，先处理哪一个？",
+        "instruction": "先看哪个条件最影响后面能不能做。",
+        "difficultyNote": "单一优先级：先处理卫生条件，再处理工具和食物。",
+        "sequence": [
+          "手脏",
+          "拿盘子",
+          "拿饼干",
+          "吃"
+        ],
+        "choices": [
+          {
+            "label": "先拿盘子",
+            "value": "plate"
+          },
+          {
+            "label": "先洗手",
+            "value": "wash"
+          },
+          {
+            "label": "先拿饼干",
+            "value": "cookie"
+          }
+        ],
+        "answer": "wash",
+        "success": "手脏最先处理，洗手以后再拿盘子和饼干。",
+        "retry": "想想哪一件事不做，后面就不卫生。",
+        "parentPrompt": "问她：盘子和饼干都在，为什么还要先洗手？",
+        "abilityTags": [
+          "优先级判断",
+          "必要条件"
+        ],
+        "id": "logic-priority-choice-1",
+        "number": 1,
+        "lesson": true
+      },
+      {
+        "level": "L4",
+        "prompt": "和大人一起到了有斑马线和行人信号灯的路口，先看什么？",
+        "instruction": "先找决定能不能走的信号。",
+        "difficultyNote": "安全优先：先看规则信号，再行动。",
+        "sequence": [
+          "路口",
+          "?",
+          "走过去"
+        ],
+        "choices": [
+          {
+            "label": "先看灯",
+            "value": "look-light"
+          },
+          {
+            "label": "先走过去",
+            "value": "walk"
+          },
+          {
+            "label": "只看车停着",
+            "value": "car-stop"
+          }
+        ],
+        "answer": "look-light",
+        "success": "先看行人信号灯，绿灯亮了还要请大人确认路面安全，再一起走过去。",
+        "retry": "过马路先看能不能走，不是先走。",
+        "parentPrompt": "问她：什么信息能告诉我们现在能不能过马路？",
+        "abilityTags": [
+          "安全规则",
+          "优先级判断"
+        ],
+        "id": "logic-priority-choice-2",
+        "number": 2,
+        "lesson": true
+      },
+      {
+        "level": "L4",
+        "prompt": "短木板搭不到对岸，换哪块试试？",
+        "instruction": "比一比，哪块木板更长？",
+        "difficultyNote": "关键材料优先：先选最可能解决问题的材料。",
+        "sequence": [
+          "宽河",
+          "短木板",
+          "长木板",
+          "🏁"
+        ],
+        "choices": [
+          {
+            "label": "长木板",
+            "value": "long"
+          },
+          {
+            "label": "短木板",
+            "value": "short"
+          },
+          {
+            "label": "小石头",
+            "value": "stone"
+          }
+        ],
+        "answer": "long",
+        "success": "宽河要先选更可能够长的木板。",
+        "retry": "先比距离，宽河需要更长的材料。",
+        "parentPrompt": "问她：为什么不是先拿短木板试？",
+        "abilityTags": [
+          "空间判断",
+          "关键条件"
+        ],
+        "id": "logic-priority-choice-3",
+        "number": 3,
+        "lesson": true
+      },
+      {
+        "level": "L4",
+        "prompt": "积木和小车要分开放进两个盒子，下次好找。盒子打开了，玩具还混在一起，先做什么？",
+        "instruction": "先想哪一步能让两类玩具分开放。",
+        "difficultyNote": "整理优先：先建立分类，再放进盒子。",
+        "sequence": [
+          "积木和小车",
+          "?",
+          "分类装好"
+        ],
+        "choices": [
+          {
+            "label": "全放同一个盒子",
+            "value": "stuff"
+          },
+          {
+            "label": "只收一个玩具",
+            "value": "one"
+          },
+          {
+            "label": "先分开两类",
+            "value": "sort"
+          }
+        ],
+        "answer": "sort",
+        "success": "先把积木和小车分开，再各放一个盒子，下次好找。",
+        "retry": "盒子已经准备好了。还缺把两类玩具分开的步骤。",
+        "parentPrompt": "问她：为什么把全部玩具放进同一个盒子，还没有完成这次的收纳目标？",
+        "abilityTags": [
+          "整理计划",
+          "优先级判断"
+        ],
+        "id": "logic-priority-choice-4",
+        "number": 4,
+        "lesson": true
+      },
+      {
+        "level": "L5",
+        "prompt": "想拿对岸胡萝卜，可是中间有小河，先处理什么？",
+        "instruction": "目标很清楚，但先要处理挡路的问题。",
+        "difficultyNote": "障碍优先：目标在后面，先处理阻碍目标的条件。",
+        "sequence": [
+          "小河",
+          "🥕"
+        ],
+        "choices": [
+          {
+            "label": "先搭桥",
+            "value": "bridge"
+          },
+          {
+            "label": "先拿胡萝卜",
+            "value": "carrot"
+          },
+          {
+            "label": "站在岸边等",
+            "value": "wait"
+          }
+        ],
+        "answer": "bridge",
+        "success": "小河挡住了路，先搭桥才拿得到胡萝卜。",
+        "retry": "目标在对岸，先想怎么过去。",
+        "parentPrompt": "问她：胡萝卜是目标，小河是什么？",
+        "abilityTags": [
+          "障碍处理",
+          "关键条件"
+        ],
+        "id": "logic-priority-choice-5",
+        "number": 5,
+        "lesson": true
+      },
+      {
+        "level": "L5",
+        "prompt": "手已洗好，要把饼干盛进盘子再吃。盘子还没拿，下一步先做什么？",
+        "instruction": "已经满足的条件不用重复，接着看工具。",
+        "difficultyNote": "连续优先级：跳过已完成条件，选择下一关键步骤。",
+        "sequence": [
+          "先洗手",
+          "?",
+          "拿饼干",
+          "吃"
+        ],
+        "choices": [
+          {
+            "label": "再洗手",
+            "value": "wash-again"
+          },
+          {
+            "label": "直接吃",
+            "value": "eat-now"
+          },
+          {
+            "label": "拿盘子",
+            "value": "plate"
+          }
+        ],
+        "answer": "plate",
+        "success": "洗手已经完成，下一步先拿盘子。",
+        "retry": "先看哪些条件已经满足了，再找还缺哪一步。",
+        "parentPrompt": "问她：已经做过的步骤还要重复吗？",
+        "abilityTags": [
+          "多步计划",
+          "优先级判断"
+        ],
+        "id": "logic-priority-choice-6",
+        "number": 6,
+        "lesson": true
+      },
+      {
+        "level": "L5",
+        "prompt": "过马路时，小朋友想走，车停着，但灯是红的，先听谁的？",
+        "instruction": "多个线索里，先看最明确的规则。",
+        "difficultyNote": "规则优先：有多个线索时，先按信号灯规则行动。",
+        "sequence": [
+          "路口",
+          "🔴",
+          "走过去"
+        ],
+        "choices": [
+          {
+            "label": "先跟小朋友走",
+            "value": "child-go"
+          },
+          {
+            "label": "只看车停着",
+            "value": "car-stop"
+          },
+          {
+            "label": "先按红灯停",
+            "value": "red-stop"
+          }
+        ],
+        "answer": "red-stop",
+        "success": "红灯是明确规则，要先停。",
+        "retry": "车停着也是线索，但红灯规则更关键。",
+        "parentPrompt": "问她：有几个线索时，哪个最能决定行动？",
+        "abilityTags": [
+          "规则执行",
+          "关键条件"
+        ],
+        "id": "logic-priority-choice-7",
+        "number": 7,
+        "lesson": true
+      },
+      {
+        "level": "L5",
+        "prompt": "蛋糕少了，小猫在厨房，小狗在睡觉，先看哪条线索？",
+        "instruction": "先看和蛋糕最直接相关的线索。",
+        "difficultyNote": "线索优先：先找强证据，再考虑弱线索。",
+        "sceneImage": {
+          "src": "/images/scenes/cake-evidence-kitchen.png",
+          "alt": "厨房桌上蛋糕少了一块，小猫嘴边有奶油，小狗在睡觉，小兔拿着胡萝卜。"
+        },
+        "choices": [
+          {
+            "label": "先看谁在厨房",
+            "value": "kitchen"
+          },
+          {
+            "label": "先看奶油",
+            "value": "cream"
+          },
+          {
+            "label": "先看谁在远处",
+            "value": "far"
+          }
+        ],
+        "answer": "cream",
+        "success": "奶油和蛋糕最直接相关，要优先看。",
+        "retry": "厨房是地点线索，奶油更能说明吃过蛋糕。",
+        "parentPrompt": "问她：哪条线索和蛋糕关系最近？",
+        "abilityTags": [
+          "证据强弱",
+          "优先级判断"
+        ],
+        "id": "logic-priority-choice-8",
+        "number": 8,
+        "lesson": true
+      },
+      {
+        "level": "L6",
+        "prompt": "水洒了，先去哪里找和洒水直接相关的线索？",
+        "instruction": "先检查事情发生的地方，再根据留下的痕迹判断。",
+        "difficultyNote": "关键线索优先：先检查事件现场的直接痕迹，再排除无关地点。",
+        "sceneImage": {
+          "src": "/images/scenes/spilled-water-room.png",
+          "alt": "房间里小熊站在倒下的水杯旁，地上有水，小狗在远处睡觉，小鸟在窗边。"
+        },
+        "choices": [
+          {
+            "label": "小狗旁边",
+            "value": "far-dog"
+          },
+          {
+            "label": "杯子周围",
+            "value": "cup-area"
+          },
+          {
+            "label": "小鸟旁边",
+            "value": "window-bird"
+          }
+        ],
+        "answer": "cup-area",
+        "success": "先检查倒下的杯子周围有没有湿痕、脚印或碰撞痕迹，这些才和洒水直接相关。",
+        "retry": "先找事情发生处留下的直接痕迹，再判断它能说明什么。",
+        "parentPrompt": "问她：杯子周围可能留下哪些直接痕迹？远处的角色为什么暂时不能说明原因？",
+        "abilityTags": [
+          "关键线索",
+          "证据推理"
+        ],
+        "id": "logic-priority-choice-9",
+        "number": 9,
+        "lesson": true
+      },
+      {
+        "level": "L6",
+        "prompt": "短木板搭不到对岸，先怎么改？",
+        "instruction": "先找能让木板搭到对岸的办法。",
+        "difficultyNote": "失败原因优先：修正要针对关键失败原因。",
+        "sequence": [
+          "宽河",
+          "短木板",
+          "太短",
+          "?"
+        ],
+        "choices": [
+          {
+            "label": "换长木板",
+            "value": "extend"
+          },
+          {
+            "label": "换同样短的",
+            "value": "same-short"
+          },
+          {
+            "label": "接着用短板",
+            "value": "same"
+          }
+        ],
+        "answer": "extend",
+        "success": "失败原因是太短，所以先换一块够长的木板。",
+        "retry": "没有改长度，问题就还在。",
+        "parentPrompt": "问她：哪一种改法真的改变了失败原因？",
+        "abilityTags": [
+          "试错调整",
+          "关键条件"
+        ],
+        "id": "logic-priority-choice-10",
+        "number": 10,
+        "lesson": true
+      },
+      {
+        "level": "L6",
+        "prompt": "积木和小车已经分好类，要装进各自的盒子。两个空盒子已打开，下一步做什么？",
+        "instruction": "保留已经完成的成果，继续向目标走。",
+        "difficultyNote": "保护成果优先：不重复已经完成的中间步骤。",
+        "sequence": [
+          "积木和小车",
+          "分好的两类玩具",
+          "?"
+        ],
+        "choices": [
+          {
+            "label": "再分类一遍",
+            "value": "sort-again"
+          },
+          {
+            "label": "分开放进盒子",
+            "value": "box"
+          },
+          {
+            "label": "只收一个玩具",
+            "value": "one"
+          }
+        ],
+        "answer": "box",
+        "success": "已经分类了，把积木和小车放进各自的盒子，就完成这次收纳。",
+        "retry": "已经完成的步骤要保留，再做下一步。",
+        "parentPrompt": "问她：分类已经做好了，下一步怎样离整齐更近？",
+        "abilityTags": [
+          "多步计划",
+          "优先级判断"
+        ],
+        "id": "logic-priority-choice-11",
+        "number": 11,
+        "lesson": true
+      },
+      {
+        "level": "L6",
+        "prompt": "只知道小狗在房间里，玩具散了，先下结论还是先找更多线索？",
+        "instruction": "证据不够时，先补线索。",
+        "difficultyNote": "证据不足优先：先补证据，再下结论。",
+        "sceneImage": {
+          "src": "/images/scenes/dog-room-weak-clue.png",
+          "alt": "游戏房里玩具散在地上，小狗坐在门口，没有碰玩具。"
+        },
+        "choices": [
+          {
+            "label": "就是小狗",
+            "value": "dog-certain"
+          },
+          {
+            "label": "肯定没弄乱",
+            "value": "dog-no"
+          },
+          {
+            "label": "再找线索",
+            "value": "more-clues"
+          }
+        ],
+        "answer": "more-clues",
+        "success": "证据还不够，先找更多线索，再下结论。",
+        "retry": "在房间里只是可能，还不能直接确定。",
+        "parentPrompt": "问她：什么时候可以确定？什么时候应该继续找线索？",
+        "abilityTags": [
+          "证据不足",
+          "生活决策"
+        ],
+        "id": "logic-priority-choice-12",
+        "number": 12,
+        "lesson": true
+      }
+    ],
+    "kind": "progressiveSet"
+  },
+  {
+    "id": "logic-space-bridge",
+    "world": "logic",
+    "title": "桥怎么搭",
+    "subtitle": "看河宽和木板长短，先预测，再调整计划。",
+    "goal": "训练空间判断、规划和试错调整。",
+    "parentPrompt": "可以问：这块够不够长？如果不够，下一步换什么？",
+    "abilityTags": [
+      "空间判断",
+      "规划",
+      "试错调整"
+    ],
+    "level": "L6",
+    "rounds": [
+      {
+        "level": "L3",
+        "prompt": "想选一块能搭过去的木板，先看哪个距离决定它至少要多长？",
+        "instruction": "这是桌面模型。每格一样长，木板两头都要搭在河岸或小岛上。",
+        "sceneImage": {
+          "src": "/images/scenes/enlightenment-bridge-1.png",
+          "alt": "桌面搭桥模型：河岸、小岛和木板按相同格距绘制，图中标出距离和可用木板长度。"
+        },
+        "choices": [
+          {
+            "label": "小熊到木板",
+            "value": "guess-longest"
+          },
+          {
+            "label": "木板到小旗",
+            "value": "try-nearest"
+          },
+          {
+            "label": "两岸之间",
+            "value": "river-width"
+          }
+        ],
+        "answer": "river-width",
+        "success": "木板要跨过两岸之间的空隙，所以先比较这段距离和木板长度。",
+        "retry": "先沿每段空隙数格子，再比木板有几格。每一段都要连上，两头也都要有支点。",
+        "parentPrompt": "请她用手指画出路线，说说每块板的两头搭在哪里。问她：总长度够了，每一段就一定够吗？",
+        "abilityTags": [
+          "空间判断",
+          "长度比较"
+        ],
+        "id": "logic-space-bridge-1",
+        "difficultyNote": "基础进阶：按一个明确规则判断，并说出观察依据。 主要从生活场景图里找证据。主要训练空间判断、长度比较。",
+        "number": 1,
+        "lesson": false
+      },
+      {
+        "level": "L6",
+        "prompt": "模型河宽 6 格，中间有小岛。两段各宽 3 格，怎样搭过去？",
+        "instruction": "这是桌面模型。每格一样长，木板两头都要搭在河岸或小岛上。",
+        "sceneImage": {
+          "src": "/images/scenes/enlightenment-bridge-2.png",
+          "alt": "桌面搭桥模型：河岸、小岛和木板按相同格距绘制，图中标出距离和可用木板长度。"
+        },
+        "choices": [
+          {
+            "label": "只用一块",
+            "value": "same-length"
+          },
+          {
+            "label": "每边搭一块",
+            "value": "two-planks"
+          },
+          {
+            "label": "都放岸边",
+            "value": "separate"
+          }
+        ],
+        "answer": "two-planks",
+        "success": "4 格木板够跨 3 格。用小岛做支点，一块搭左段，一块搭右段，两段才都连通。",
+        "retry": "先沿每段空隙数格子，再比木板有几格。每一段都要连上，两头也都要有支点。",
+        "parentPrompt": "请她用手指画出路线，说说每块板的两头搭在哪里。问她：总长度够了，每一段就一定够吗？",
+        "abilityTags": [
+          "空间判断",
+          "分段规划"
+        ],
+        "id": "logic-space-bridge-2",
+        "difficultyNote": "挑战：需要工作记忆、连续步骤或综合推理后再选择。 主要从生活场景图里找证据。主要训练空间判断、分段规划。",
+        "number": 2,
+        "lesson": false
+      },
+      {
+        "level": "L6",
+        "prompt": "小岛两边分别宽 4 格和 2 格。只用两块，哪组能各搭一段？",
+        "instruction": "这是桌面模型。每格一样长，木板两头都要搭在河岸或小岛上。",
+        "sceneImage": {
+          "src": "/images/scenes/enlightenment-bridge-3.png",
+          "alt": "桌面搭桥模型：河岸、小岛和木板按相同格距绘制，图中标出距离和可用木板长度。"
+        },
+        "choices": [
+          {
+            "label": "短木板和最短板",
+            "value": "short-tiny"
+          },
+          {
+            "label": "只用长木板",
+            "value": "long-only"
+          },
+          {
+            "label": "长木板和短木板",
+            "value": "long-short"
+          }
+        ],
+        "answer": "long-short",
+        "success": "5 格长板搭 4 格那段，3 格短板搭 2 格那段。1 格板连较短的一段也不够。",
+        "retry": "先沿每段空隙数格子，再比木板有几格。每一段都要连上，两头也都要有支点。",
+        "parentPrompt": "请她用手指画出路线，说说每块板的两头搭在哪里。问她：总长度够了，每一段就一定够吗？",
+        "abilityTags": [
+          "空间判断",
+          "分段规划"
+        ],
+        "id": "logic-space-bridge-3",
+        "difficultyNote": "挑战：需要工作记忆、连续步骤或综合推理后再选择。 主要从生活场景图里找证据。主要训练空间判断、分段规划。",
+        "number": 3,
+        "lesson": false
+      },
+      {
+        "level": "L4",
+        "prompt": "模型河宽 3 格，中间没有支点。哪块木板能一次搭到对岸？",
+        "instruction": "这是桌面模型。每格一样长，木板两头都要搭在河岸或小岛上。",
+        "sceneImage": {
+          "src": "/images/scenes/enlightenment-bridge-4.png",
+          "alt": "桌面搭桥模型：河岸、小岛和木板按相同格距绘制，图中标出距离和可用木板长度。"
+        },
+        "choices": [
+          {
+            "label": "长木板",
+            "value": "long"
+          },
+          {
+            "label": "短木板",
+            "value": "short"
+          },
+          {
+            "label": "最短板",
+            "value": "tiny"
+          }
+        ],
+        "answer": "long",
+        "success": "4 格长木板能跨过 3 格的河；2 格和 1 格都碰不到对岸。",
+        "retry": "先沿每段空隙数格子，再比木板有几格。每一段都要连上，两头也都要有支点。",
+        "parentPrompt": "请她用手指画出路线，说说每块板的两头搭在哪里。问她：总长度够了，每一段就一定够吗？",
+        "abilityTags": [
+          "空间判断",
+          "长度比较"
+        ],
+        "id": "logic-space-bridge-4",
+        "difficultyNote": "中等：需要两步观察或简单比较，不能只看一个显眼线索。 主要从生活场景图里找证据。主要训练空间判断、长度比较。",
+        "number": 4,
+        "lesson": false
+      },
+      {
+        "level": "L6",
+        "prompt": "模型河宽 7 格，小岛两边分别宽 3 格和 4 格，怎样连通两岸？",
+        "instruction": "这是桌面模型。每格一样长，木板两头都要搭在河岸或小岛上。",
+        "sceneImage": {
+          "src": "/images/scenes/enlightenment-bridge-5.png",
+          "alt": "桌面搭桥模型：河岸、小岛和木板按相同格距绘制，图中标出距离和可用木板长度。"
+        },
+        "choices": [
+          {
+            "label": "只用长板",
+            "value": "long-only"
+          },
+          {
+            "label": "只用短板",
+            "value": "short-only"
+          },
+          {
+            "label": "每边搭一块",
+            "value": "two-planks"
+          }
+        ],
+        "answer": "two-planks",
+        "success": "一块板跨不过 7 格。让 5 格板搭 4 格那段，4 格板搭 3 格那段，就能利用小岛连通。",
+        "retry": "先沿每段空隙数格子，再比木板有几格。每一段都要连上，两头也都要有支点。",
+        "parentPrompt": "请她用手指画出路线，说说每块板的两头搭在哪里。问她：总长度够了，每一段就一定够吗？",
+        "abilityTags": [
+          "空间判断",
+          "分段规划"
+        ],
+        "id": "logic-space-bridge-5",
+        "difficultyNote": "挑战：需要工作记忆、连续步骤或综合推理后再选择。 主要从生活场景图里找证据。主要训练空间判断、分段规划。",
+        "number": 5,
+        "lesson": false
+      },
+      {
+        "level": "L6",
+        "prompt": "小岛两边分别宽 5 格和 3 格。只能用两块，哪组的长度都够？",
+        "instruction": "这是桌面模型。每格一样长，木板两头都要搭在河岸或小岛上。",
+        "sceneImage": {
+          "src": "/images/scenes/enlightenment-bridge-6.png",
+          "alt": "桌面搭桥模型：河岸、小岛和木板按相同格距绘制，图中标出距离和可用木板长度。"
+        },
+        "choices": [
+          {
+            "label": "长木板和短木板",
+            "value": "long-short"
+          },
+          {
+            "label": "短木板和最短板",
+            "value": "short-tiny"
+          },
+          {
+            "label": "只用长木板",
+            "value": "long-only"
+          }
+        ],
+        "answer": "long-short",
+        "success": "6 格长板搭 5 格那段，4 格短板搭 3 格那段。只看总长度不够，还要每段都够长。",
+        "retry": "先沿每段空隙数格子，再比木板有几格。每一段都要连上，两头也都要有支点。",
+        "parentPrompt": "请她用手指画出路线，说说每块板的两头搭在哪里。问她：总长度够了，每一段就一定够吗？",
+        "abilityTags": [
+          "空间判断",
+          "分段规划"
+        ],
+        "id": "logic-space-bridge-6",
+        "difficultyNote": "挑战：需要工作记忆、连续步骤或综合推理后再选择。 主要从生活场景图里找证据。主要训练空间判断、分段规划。",
+        "number": 6,
+        "lesson": false
+      },
+      {
+        "level": "L4",
+        "prompt": "模型河宽 4 格，没有小岛。小熊拿哪块木板能搭到对岸？",
+        "instruction": "这是桌面模型。每格一样长，木板两头都要搭在河岸或小岛上。",
+        "sceneImage": {
+          "src": "/images/scenes/enlightenment-bridge-7.png",
+          "alt": "桌面搭桥模型：河岸、小岛和木板按相同格距绘制，图中标出距离和可用木板长度。"
+        },
+        "choices": [
+          {
+            "label": "5 格长木板",
+            "value": "long"
+          },
+          {
+            "label": "2 格短木板",
+            "value": "short"
+          },
+          {
+            "label": "1 格最短板",
+            "value": "tiny"
+          }
+        ],
+        "answer": "long",
+        "success": "5 格木板能跨过 4 格。另两块都太短，不能只看离手近就选。",
+        "retry": "先沿每段空隙数格子，再比木板有几格。每一段都要连上，两头也都要有支点。",
+        "parentPrompt": "请她用手指画出路线，说说每块板的两头搭在哪里。问她：总长度够了，每一段就一定够吗？",
+        "abilityTags": [
+          "空间判断",
+          "长度比较"
+        ],
+        "id": "logic-space-bridge-7",
+        "difficultyNote": "中等：需要两步观察或简单比较，不能只看一个显眼线索。 主要从生活场景图里找证据。主要训练空间判断、长度比较。",
+        "number": 7,
+        "lesson": false
+      },
+      {
+        "level": "L6",
+        "prompt": "小岛两边分别宽 3 格和 5 格。长短两块木板，应该怎样放？",
+        "instruction": "这是桌面模型。每格一样长，木板两头都要搭在河岸或小岛上。",
+        "sceneImage": {
+          "src": "/images/scenes/enlightenment-bridge-8.png",
+          "alt": "桌面搭桥模型：河岸、小岛和木板按相同格距绘制，图中标出距离和可用木板长度。"
+        },
+        "choices": [
+          {
+            "label": "只用长板",
+            "value": "long-only"
+          },
+          {
+            "label": "左短右长",
+            "value": "two-planks"
+          },
+          {
+            "label": "左长右短",
+            "value": "reversed"
+          }
+        ],
+        "answer": "two-planks",
+        "success": "左段 3 格用 4 格短板，右段 5 格用 6 格长板。反过来，短板就跨不过右段。",
+        "retry": "先沿每段空隙数格子，再比木板有几格。每一段都要连上，两头也都要有支点。",
+        "parentPrompt": "请她用手指画出路线，说说每块板的两头搭在哪里。问她：总长度够了，每一段就一定够吗？",
+        "abilityTags": [
+          "空间判断",
+          "分段规划"
+        ],
+        "id": "logic-space-bridge-8",
+        "difficultyNote": "挑战：需要工作记忆、连续步骤或综合推理后再选择。 主要从生活场景图里找证据。主要训练空间判断、分段规划。",
+        "number": 8,
+        "lesson": false
+      }
+    ],
+    "kind": "progressiveSet"
+  }
+]

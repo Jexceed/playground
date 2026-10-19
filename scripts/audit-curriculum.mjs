@@ -1206,8 +1206,10 @@ function checkSorterRoundQuality(round, context) {
       problems.push(`${context}: sorter parentPrompt should ask the child to explain the active ${rule} rule`);
     }
     const itemRule = sorterVisualRules.get(candidateItems[0]);
-    const expectedAnswerText = rule === "颜色" ? `${itemRule.color}篮子` : `${itemRule.shape}篮子`;
-    if (!round.choices.some((choice) => choice.label === expectedAnswerText && choice.value === round.answer)) {
+    const feature = rule === "颜色" ? itemRule.color : itemRule.shape;
+    const expectedAnswerText = `${feature}组`;
+    // Keep legacy values stable for saved progress; the child sees direct groups.
+    if (round.answer !== `${feature}篮子` || !round.choices.some((choice) => choice.label === expectedAnswerText && choice.value === round.answer)) {
       problems.push(`${context}: sorter answer should match the visible ${rule} feature (${expectedAnswerText})`);
     }
   }

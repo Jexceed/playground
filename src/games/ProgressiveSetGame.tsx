@@ -1,5 +1,5 @@
 import { BridgeContextPicture } from "../components/BridgeContextPicture";
-import { LogicLessonBoard, LogicPicture, LogicTaskCue, LogicRelationBoard } from "../components/LogicLessonBoard";
+import { LogicLessonBoard, LogicPicture, hasLogicPicture, LogicTaskCue, LogicRelationBoard } from "../components/LogicLessonBoard";
 import { logicLessonFor, logicTaskCueFor, logicActionRules, logicRelationFrames, type LogicLesson } from "../data/logicLessonVisuals";
 import { LogicChoicePicture, logicChoicePictureFor } from "../components/LogicChoicePicture";
 import { LogicBridgeChoice, logicBridgeChoiceFor } from "../components/LogicBridgeChoice";
@@ -230,6 +230,7 @@ export function ProgressiveSetGame({
           const graphicOption = round.graphicChallenge?.options.find((option) => option.value === choice.value);
           const voiceLabel = logicLesson ? choice.label : labelForVoice(choice.label);
           const lessonPicture = logicLesson?.choices[choice.value];
+          const illustratedLessonChoice = lessonPicture && hasLogicPicture(lessonPicture);
           const exactPicture = logicChoicePictureFor(game.id, round, choice);
           const bridgePicture = game.id === "logic-space-bridge" ? logicBridgeChoiceFor(round, choice) : null;
           const storyChoiceImage = round.sequenceStory && round.choices.every(item => orderStoryImage(round, item.label)) ? orderStoryImage(round, choice.label) : undefined;
@@ -244,7 +245,8 @@ export function ProgressiveSetGame({
               onClick={() => choose(choice.value)}
             >
               {correct && <Check size={18} />}
-              {lessonPicture ? <><LogicPicture picture={lessonPicture}/><span>{choice.label}</span></>
+              {illustratedLessonChoice ? <><LogicPicture picture={lessonPicture!}/><span>{choice.label}</span></>
+                : lessonPicture?.textOnly ? <span>{choice.label}</span>
                 : bridgePicture ? <><LogicBridgeChoice gameId={game.id} round={round} choice={choice}/><span>{choice.label}</span></>
                 : exactPicture ? <><LogicChoicePicture gameId={game.id} round={round} choice={choice}/><span>{choice.label}</span></>
                 : storyChoiceImage

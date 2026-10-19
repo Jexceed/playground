@@ -5,8 +5,8 @@ export type LogicChoicePictureModel =
   | { kind: "quantity"; count: number; item: string }
   | { kind: "height-profile"; heights: number[] }
   | { kind: "ordered-card"; value: string; position: number }
-  | { kind: "basket"; marker: "color"; color: string }
-  | { kind: "basket"; marker: "circle" | "square" };
+  | { kind: "category"; marker: "color"; color: string }
+  | { kind: "category"; marker: "circle" | "square" };
 
 /** Candidate values, never the answer, determine the picture. */
 export function logicChoicePictureFor(gameId: string, round: GameRound, choice: RoundOption): LogicChoicePictureModel | null {
@@ -28,10 +28,10 @@ export function logicChoicePictureFor(gameId: string, round: GameRound, choice: 
     if (value !== undefined) return { kind: "ordered-card", value, position };
   }
   if (gameId === "logic-sorter-switch") {
-    const colors: Record<string, string> = { 红色篮子: "#df6358", 蓝色篮子: "#4b95c3", 绿色篮子: "#75bb83", 黄色篮子: "#eabb49" };
-    if (colors[choice.value]) return { kind: "basket", marker: "color", color: colors[choice.value] };
-    if (choice.value === "圆形篮子") return { kind: "basket", marker: "circle" };
-    if (choice.value === "方形篮子") return { kind: "basket", marker: "square" };
+    const colors: Record<string, string> = { 红色篮子: "#e43b30", 蓝色篮子: "#298ac7", 绿色篮子: "#48a65c", 黄色篮子: "#efc330" };
+    if (colors[choice.value]) return { kind: "category", marker: "color", color: colors[choice.value] };
+    if (choice.value === "圆形篮子") return { kind: "category", marker: "circle" };
+    if (choice.value === "方形篮子") return { kind: "category", marker: "square" };
   }
   return null;
 }

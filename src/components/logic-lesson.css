@@ -35,6 +35,15 @@
 .logic-frame-active { outline:2px solid #dea54a; outline-offset:1px; }
 .answer-grid-lesson .answer-choice { flex-direction:column; justify-content:center; font-size:15px; padding:7px; min-width:0; }
 .answer-grid-lesson .logic-picture { width:100%; height:86px; }
+.answer-grid-lesson .answer-choice { font-size:17px; }
+.answer-grid-lesson .logic-material { height:108px; gap:4px; }
+.logic-material>img.logic-material-long { width:144px; height:108px; flex:none; }
+.logic-material>img.logic-material-short { width:96px; height:80px; flex:none; }
+.logic-material-swap>img.logic-material-short { width:72px; height:66px; }
+.logic-material-swap>svg { flex:none; }
+.logic-result-scene { flex-direction:column; gap:8px; }
+.logic-result-scene>.logic-picture { width:100%; height:240px; }
+.logic-result-scene .logic-result-caption { max-width:none; }
 .answer-choice-picture { flex-direction:column; min-width:0; gap:6px; padding:8px; font-size:15px; }
 .logic-task-cues { display:flex; justify-content:center; gap:12px; }
 .logic-task-cues .logic-frame { display:grid; grid-template-columns:94px minmax(0,1fr); max-width:330px; flex:1 1 0; align-items:center; }

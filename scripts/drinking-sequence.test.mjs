@@ -1,3 +1,4 @@
+import {restoreChildReadableWording} from "./lib/restore-reviewed-wording.mjs";
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
@@ -7,7 +8,7 @@ import { loadGameData } from './lib/load-game-data.mjs';
 import { loadTypeScriptModule } from './lib/load-ts-module.mjs';
 
 const baseline = JSON.parse(readFileSync('specs/044-drinking-sequence-story/verification/baseline.json'));
-const current = JSON.parse(JSON.stringify(await loadGameData()));
+const current = restoreChildReadableWording(await loadGameData());
 const { orderStorySteps, drinkingImage } = await loadTypeScriptModule('src/data/orderStories.ts');
 const { imageGallery } = await loadTypeScriptModule('src/data/imageGallery.ts');
 const ids = ['logic-order-plan-1', 'logic-order-plan-9', 'logic-order-plan-18'];

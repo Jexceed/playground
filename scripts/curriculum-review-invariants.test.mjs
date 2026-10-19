@@ -1,3 +1,4 @@
+import {restoreChildReadableWording} from "./lib/restore-reviewed-wording.mjs";
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
@@ -10,7 +11,7 @@ const baselinePath = 'specs/043-curriculum-review-fixes/verification/baseline.js
 const baselineBytes = readFileSync(baselinePath);
 const baseline = JSON.parse(baselineBytes);
 // Match JSON's representation of absent optional fields, not undefined JS keys.
-const current = JSON.parse(JSON.stringify(await loadGameData()));
+const current = restoreChildReadableWording(await loadGameData());
 const range = (from, to) => Array.from({ length: to - from + 1 }, (_, i) => from + i);
 const fields = (...keys) => keys;
 const enlightenment = new Map(), exploration = new Map();

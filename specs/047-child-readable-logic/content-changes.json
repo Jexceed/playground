@@ -1,0 +1,1154 @@
+[
+  {
+    "id": "logic-sorter-switch-1",
+    "gameId": "logic-sorter-switch",
+    "fields": [
+      "prompt",
+      "choices",
+      "success",
+      "retry"
+    ],
+    "before": {
+      "prompt": "分类机说：这次只看颜色。红色圆片要进哪个篮子？",
+      "choices": [
+        {
+          "label": "红色篮子",
+          "value": "红色篮子"
+        },
+        {
+          "label": "蓝色篮子",
+          "value": "蓝色篮子"
+        },
+        {
+          "label": "绿色篮子",
+          "value": "绿色篮子"
+        }
+      ],
+      "success": "看颜色时，红色圆片和红色篮子是一对；圆形先不管。",
+      "retry": "这题只看颜色。先找红色，再选红色篮子。"
+    },
+    "after": {
+      "prompt": "分类机说：这次只看颜色。红色圆片要进哪一组？",
+      "choices": [
+        {
+          "label": "红色组",
+          "value": "红色篮子"
+        },
+        {
+          "label": "蓝色组",
+          "value": "蓝色篮子"
+        },
+        {
+          "label": "绿色组",
+          "value": "绿色篮子"
+        }
+      ],
+      "success": "看颜色时，红色圆片和红色组是一对；圆形先不管。",
+      "retry": "这题只看颜色。先找红色，再选红色组。"
+    }
+  },
+  {
+    "id": "logic-sorter-switch-2",
+    "gameId": "logic-sorter-switch",
+    "fields": [
+      "prompt",
+      "choices",
+      "success",
+      "retry"
+    ],
+    "before": {
+      "prompt": "分类机说：这次只看颜色。蓝色圆片要进哪个篮子？",
+      "choices": [
+        {
+          "label": "红色篮子",
+          "value": "红色篮子"
+        },
+        {
+          "label": "黄色篮子",
+          "value": "黄色篮子"
+        },
+        {
+          "label": "蓝色篮子",
+          "value": "蓝色篮子"
+        }
+      ],
+      "success": "看颜色时，蓝色圆片和蓝色篮子是一对；圆形先不管。",
+      "retry": "这题只看颜色。先找蓝色，再选蓝色篮子。"
+    },
+    "after": {
+      "prompt": "分类机说：这次只看颜色。蓝色圆片要进哪一组？",
+      "choices": [
+        {
+          "label": "红色组",
+          "value": "红色篮子"
+        },
+        {
+          "label": "黄色组",
+          "value": "黄色篮子"
+        },
+        {
+          "label": "蓝色组",
+          "value": "蓝色篮子"
+        }
+      ],
+      "success": "看颜色时，蓝色圆片和蓝色组是一对；圆形先不管。",
+      "retry": "这题只看颜色。先找蓝色，再选蓝色组。"
+    }
+  },
+  {
+    "id": "logic-sorter-switch-3",
+    "gameId": "logic-sorter-switch",
+    "fields": [
+      "prompt",
+      "choices",
+      "success",
+      "retry"
+    ],
+    "before": {
+      "prompt": "规则换了：这次只看形状。红色圆片要进哪个篮子？",
+      "choices": [
+        {
+          "label": "红色篮子",
+          "value": "红色篮子"
+        },
+        {
+          "label": "方形篮子",
+          "value": "方形篮子"
+        },
+        {
+          "label": "圆形篮子",
+          "value": "圆形篮子"
+        }
+      ],
+      "success": "看形状时，圆片进圆形篮子；红色先不管。",
+      "retry": "这题只看形状。先找圆形，再选圆形篮子。"
+    },
+    "after": {
+      "prompt": "规则换了：这次只看形状。红色圆片要进哪一组？",
+      "choices": [
+        {
+          "label": "红色组",
+          "value": "红色篮子"
+        },
+        {
+          "label": "方形组",
+          "value": "方形篮子"
+        },
+        {
+          "label": "圆形组",
+          "value": "圆形篮子"
+        }
+      ],
+      "success": "看形状时，圆片进圆形组；红色先不管。",
+      "retry": "这题只看形状。先找圆形，再选圆形组。"
+    }
+  },
+  {
+    "id": "logic-sorter-switch-4",
+    "gameId": "logic-sorter-switch",
+    "fields": [
+      "prompt",
+      "choices",
+      "success",
+      "retry"
+    ],
+    "before": {
+      "prompt": "规则换了：这次只看形状。蓝色方块要进哪个篮子？",
+      "choices": [
+        {
+          "label": "蓝色篮子",
+          "value": "蓝色篮子"
+        },
+        {
+          "label": "方形篮子",
+          "value": "方形篮子"
+        },
+        {
+          "label": "圆形篮子",
+          "value": "圆形篮子"
+        }
+      ],
+      "success": "看形状时，方块进方形篮子；蓝色先不管。",
+      "retry": "这题只看形状。先找方形，再选方形篮子。"
+    },
+    "after": {
+      "prompt": "规则换了：这次只看形状。蓝色方块要进哪一组？",
+      "choices": [
+        {
+          "label": "蓝色组",
+          "value": "蓝色篮子"
+        },
+        {
+          "label": "方形组",
+          "value": "方形篮子"
+        },
+        {
+          "label": "圆形组",
+          "value": "圆形篮子"
+        }
+      ],
+      "success": "看形状时，方块进方形组；蓝色先不管。",
+      "retry": "这题只看形状。先找方形，再选方形组。"
+    }
+  },
+  {
+    "id": "logic-sorter-switch-5",
+    "gameId": "logic-sorter-switch",
+    "fields": [
+      "prompt",
+      "choices",
+      "success",
+      "parentPrompt"
+    ],
+    "before": {
+      "prompt": "刚才看过形状，这次只看颜色。蓝色方块要进哪个篮子？",
+      "choices": [
+        {
+          "label": "蓝色篮子",
+          "value": "蓝色篮子"
+        },
+        {
+          "label": "方形篮子",
+          "value": "方形篮子"
+        },
+        {
+          "label": "圆形篮子",
+          "value": "圆形篮子"
+        }
+      ],
+      "success": "虽然它是方块，但这次看颜色，所以进蓝色篮子。",
+      "parentPrompt": "问她：如果选方形篮子，是看了颜色还是看了形状？这次规则是什么？"
+    },
+    "after": {
+      "prompt": "刚才看过形状，这次只看颜色。蓝色方块要进哪一组？",
+      "choices": [
+        {
+          "label": "蓝色组",
+          "value": "蓝色篮子"
+        },
+        {
+          "label": "方形组",
+          "value": "方形篮子"
+        },
+        {
+          "label": "圆形组",
+          "value": "圆形篮子"
+        }
+      ],
+      "success": "虽然它是方块，但这次看颜色，所以进蓝色组。",
+      "parentPrompt": "问她：如果选方形组，是看了颜色还是看了形状？这次规则是什么？"
+    }
+  },
+  {
+    "id": "logic-sorter-switch-6",
+    "gameId": "logic-sorter-switch",
+    "fields": [
+      "prompt",
+      "choices",
+      "success",
+      "parentPrompt"
+    ],
+    "before": {
+      "prompt": "还是蓝色方块，现在只看形状。它要进哪个篮子？",
+      "choices": [
+        {
+          "label": "蓝色篮子",
+          "value": "蓝色篮子"
+        },
+        {
+          "label": "方形篮子",
+          "value": "方形篮子"
+        },
+        {
+          "label": "圆形篮子",
+          "value": "圆形篮子"
+        }
+      ],
+      "success": "虽然它是蓝色，但这次看形状，所以进方形篮子。",
+      "parentPrompt": "问她：如果选蓝色篮子，是看了形状还是看了颜色？这次规则是什么？"
+    },
+    "after": {
+      "prompt": "还是蓝色方块，现在只看形状。它要进哪一组？",
+      "choices": [
+        {
+          "label": "蓝色组",
+          "value": "蓝色篮子"
+        },
+        {
+          "label": "方形组",
+          "value": "方形篮子"
+        },
+        {
+          "label": "圆形组",
+          "value": "圆形篮子"
+        }
+      ],
+      "success": "虽然它是蓝色，但这次看形状，所以进方形组。",
+      "parentPrompt": "问她：如果选蓝色组，是看了形状还是看了颜色？这次规则是什么？"
+    }
+  },
+  {
+    "id": "logic-sorter-switch-7",
+    "gameId": "logic-sorter-switch",
+    "fields": [
+      "choices",
+      "success",
+      "retry",
+      "parentPrompt"
+    ],
+    "before": {
+      "choices": [
+        {
+          "label": "黄色篮子",
+          "value": "黄色篮子"
+        },
+        {
+          "label": "圆形篮子",
+          "value": "圆形篮子"
+        },
+        {
+          "label": "方形篮子",
+          "value": "方形篮子"
+        }
+      ],
+      "success": "听到只看颜色，就找黄色篮子；圆形先不管。",
+      "retry": "这题只看颜色。圆形篮子是看形状时才用的。",
+      "parentPrompt": "问她：黄色篮子和圆形篮子都像对的，为什么这次选颜色？"
+    },
+    "after": {
+      "choices": [
+        {
+          "label": "黄色组",
+          "value": "黄色篮子"
+        },
+        {
+          "label": "圆形组",
+          "value": "圆形篮子"
+        },
+        {
+          "label": "方形组",
+          "value": "方形篮子"
+        }
+      ],
+      "success": "听到只看颜色，就找黄色组；圆形先不管。",
+      "retry": "这题只看颜色。圆形组是看形状时才用的。",
+      "parentPrompt": "问她：黄色组和圆形组都像对的，为什么这次选颜色？"
+    }
+  },
+  {
+    "id": "logic-sorter-switch-8",
+    "gameId": "logic-sorter-switch",
+    "fields": [
+      "choices",
+      "success",
+      "retry",
+      "parentPrompt"
+    ],
+    "before": {
+      "choices": [
+        {
+          "label": "黄色篮子",
+          "value": "黄色篮子"
+        },
+        {
+          "label": "方形篮子",
+          "value": "方形篮子"
+        },
+        {
+          "label": "圆形篮子",
+          "value": "圆形篮子"
+        }
+      ],
+      "success": "听到只看形状，就找圆形篮子；黄色先不管。",
+      "retry": "这题只看形状。黄色篮子是看颜色时才用的。",
+      "parentPrompt": "问她：圆形篮子和黄色篮子都像对的，为什么这次选形状？"
+    },
+    "after": {
+      "choices": [
+        {
+          "label": "黄色组",
+          "value": "黄色篮子"
+        },
+        {
+          "label": "方形组",
+          "value": "方形篮子"
+        },
+        {
+          "label": "圆形组",
+          "value": "圆形篮子"
+        }
+      ],
+      "success": "听到只看形状，就找圆形组；黄色先不管。",
+      "retry": "这题只看形状。黄色组是看颜色时才用的。",
+      "parentPrompt": "问她：圆形组和黄色组都像对的，为什么这次选形状？"
+    }
+  },
+  {
+    "id": "logic-story-evidence-2",
+    "gameId": "logic-story-evidence",
+    "fields": [
+      "choices"
+    ],
+    "before": {
+      "choices": [
+        {
+          "label": "小猫",
+          "value": "cat"
+        },
+        {
+          "label": "小狗",
+          "value": "dog"
+        },
+        {
+          "label": "两个都一样",
+          "value": "same"
+        }
+      ]
+    },
+    "after": {
+      "choices": [
+        {
+          "label": "小猫",
+          "value": "cat"
+        },
+        {
+          "label": "小狗",
+          "value": "dog"
+        },
+        {
+          "label": "一样多",
+          "value": "same"
+        }
+      ]
+    }
+  },
+  {
+    "id": "logic-story-evidence-3",
+    "gameId": "logic-story-evidence",
+    "fields": [
+      "choices"
+    ],
+    "before": {
+      "choices": [
+        {
+          "label": "还需要更多线索",
+          "value": "not-yet"
+        },
+        {
+          "label": "证据已经够了",
+          "value": "enough"
+        },
+        {
+          "label": "小猫一定没吃",
+          "value": "cat-no"
+        }
+      ]
+    },
+    "after": {
+      "choices": [
+        {
+          "label": "还不能确定",
+          "value": "not-yet"
+        },
+        {
+          "label": "能确定了",
+          "value": "enough"
+        },
+        {
+          "label": "肯定没吃",
+          "value": "cat-no"
+        }
+      ]
+    }
+  },
+  {
+    "id": "logic-story-evidence-5",
+    "gameId": "logic-story-evidence",
+    "fields": [
+      "choices"
+    ],
+    "before": {
+      "choices": [
+        {
+          "label": "远处的小狗旁边",
+          "value": "dog-area"
+        },
+        {
+          "label": "窗边的小鸟旁边",
+          "value": "bird-area"
+        },
+        {
+          "label": "倒下的杯子周围",
+          "value": "cup-area"
+        }
+      ]
+    },
+    "after": {
+      "choices": [
+        {
+          "label": "小狗旁边",
+          "value": "dog-area"
+        },
+        {
+          "label": "小鸟旁边",
+          "value": "bird-area"
+        },
+        {
+          "label": "杯子周围",
+          "value": "cup-area"
+        }
+      ]
+    }
+  },
+  {
+    "id": "logic-story-evidence-7",
+    "gameId": "logic-story-evidence",
+    "fields": [
+      "choices"
+    ],
+    "before": {
+      "choices": [
+        {
+          "label": "证据已经够了",
+          "value": "enough"
+        },
+        {
+          "label": "还需要更多线索",
+          "value": "not-yet"
+        },
+        {
+          "label": "小狗肯定没弄乱",
+          "value": "dog-no"
+        }
+      ]
+    },
+    "after": {
+      "choices": [
+        {
+          "label": "能确定了",
+          "value": "enough"
+        },
+        {
+          "label": "还不能确定",
+          "value": "not-yet"
+        },
+        {
+          "label": "肯定没弄乱",
+          "value": "dog-no"
+        }
+      ]
+    }
+  },
+  {
+    "id": "logic-condition-detective-4",
+    "gameId": "logic-condition-detective",
+    "fields": [
+      "prompt",
+      "instruction"
+    ],
+    "before": {
+      "prompt": "模型河宽 5 格，木板长 3 格，能搭到对岸吗？",
+      "instruction": "看距离和材料是否匹配。"
+    },
+    "after": {
+      "prompt": "这块木板能搭到对岸吗？",
+      "instruction": "看看木板的另一头，有没有碰到对岸。"
+    }
+  },
+  {
+    "id": "logic-condition-detective-8",
+    "gameId": "logic-condition-detective",
+    "fields": [
+      "choices"
+    ],
+    "before": {
+      "choices": [
+        {
+          "label": "证据已经够了",
+          "value": "enough"
+        },
+        {
+          "label": "小猫一定没吃",
+          "value": "cat-no"
+        },
+        {
+          "label": "还需要更多线索",
+          "value": "not-yet"
+        }
+      ]
+    },
+    "after": {
+      "choices": [
+        {
+          "label": "能确定了",
+          "value": "enough"
+        },
+        {
+          "label": "肯定没吃",
+          "value": "cat-no"
+        },
+        {
+          "label": "还不能确定",
+          "value": "not-yet"
+        }
+      ]
+    }
+  },
+  {
+    "id": "logic-condition-detective-10",
+    "gameId": "logic-condition-detective",
+    "fields": [
+      "choices"
+    ],
+    "before": {
+      "choices": [
+        {
+          "label": "远处的小狗旁边",
+          "value": "far-dog"
+        },
+        {
+          "label": "倒下的杯子周围",
+          "value": "cup-area"
+        },
+        {
+          "label": "窗边的小鸟旁边",
+          "value": "bird-window"
+        }
+      ]
+    },
+    "after": {
+      "choices": [
+        {
+          "label": "小狗旁边",
+          "value": "far-dog"
+        },
+        {
+          "label": "杯子周围",
+          "value": "cup-area"
+        },
+        {
+          "label": "小鸟旁边",
+          "value": "bird-window"
+        }
+      ]
+    }
+  },
+  {
+    "id": "logic-condition-detective-11",
+    "gameId": "logic-condition-detective",
+    "fields": [
+      "choices"
+    ],
+    "before": {
+      "choices": [
+        {
+          "label": "还需要更多线索",
+          "value": "not-yet"
+        },
+        {
+          "label": "证据已经够了",
+          "value": "enough"
+        },
+        {
+          "label": "小狗肯定没弄乱",
+          "value": "dog-no"
+        }
+      ]
+    },
+    "after": {
+      "choices": [
+        {
+          "label": "还不能确定",
+          "value": "not-yet"
+        },
+        {
+          "label": "能确定了",
+          "value": "enough"
+        },
+        {
+          "label": "肯定没弄乱",
+          "value": "dog-no"
+        }
+      ]
+    }
+  },
+  {
+    "id": "logic-condition-detective-12",
+    "gameId": "logic-condition-detective",
+    "fields": [
+      "prompt",
+      "instruction",
+      "choices"
+    ],
+    "before": {
+      "prompt": "短木板过不了宽河，下一步应该先改变什么？",
+      "instruction": "失败以后，先改最影响结果的条件。",
+      "choices": [
+        {
+          "label": "换一块够长的木板",
+          "value": "extend"
+        },
+        {
+          "label": "继续用短木板",
+          "value": "same"
+        },
+        {
+          "label": "换同样短木板",
+          "value": "same-short"
+        }
+      ]
+    },
+    "after": {
+      "prompt": "短木板搭不到对岸，先换什么？",
+      "instruction": "先找能让木板搭到对岸的办法。",
+      "choices": [
+        {
+          "label": "换长木板",
+          "value": "extend"
+        },
+        {
+          "label": "接着用短板",
+          "value": "same"
+        },
+        {
+          "label": "换同样短的",
+          "value": "same-short"
+        }
+      ]
+    }
+  },
+  {
+    "id": "logic-fix-plan-4",
+    "gameId": "logic-fix-plan",
+    "fields": [
+      "prompt",
+      "instruction"
+    ],
+    "before": {
+      "prompt": "模型里的木板另一头碰不到对岸，为什么没搭成功？",
+      "instruction": "先找失败原因，再想怎么改。"
+    },
+    "after": {
+      "prompt": "木板搭不到对岸，哪里出了问题？",
+      "instruction": "看看木板另一头还差在哪里。"
+    }
+  },
+  {
+    "id": "logic-fix-plan-8",
+    "gameId": "logic-fix-plan",
+    "fields": [
+      "choices"
+    ],
+    "before": {
+      "choices": [
+        {
+          "label": "证据已经够了",
+          "value": "enough"
+        },
+        {
+          "label": "还需要更多线索",
+          "value": "not-yet"
+        },
+        {
+          "label": "小猫一定没吃",
+          "value": "cat-no"
+        }
+      ]
+    },
+    "after": {
+      "choices": [
+        {
+          "label": "能确定了",
+          "value": "enough"
+        },
+        {
+          "label": "还不能确定",
+          "value": "not-yet"
+        },
+        {
+          "label": "肯定没吃",
+          "value": "cat-no"
+        }
+      ]
+    }
+  },
+  {
+    "id": "logic-fix-plan-10",
+    "gameId": "logic-fix-plan",
+    "fields": [
+      "choices"
+    ],
+    "before": {
+      "choices": [
+        {
+          "label": "先检查倒下的杯子周围",
+          "value": "cup-area"
+        },
+        {
+          "label": "只看远处小狗",
+          "value": "far-dog"
+        },
+        {
+          "label": "只看窗边小鸟",
+          "value": "bird-window"
+        }
+      ]
+    },
+    "after": {
+      "choices": [
+        {
+          "label": "看杯子周围",
+          "value": "cup-area"
+        },
+        {
+          "label": "只看小狗",
+          "value": "far-dog"
+        },
+        {
+          "label": "只看小鸟",
+          "value": "bird-window"
+        }
+      ]
+    }
+  },
+  {
+    "id": "logic-fix-plan-11",
+    "gameId": "logic-fix-plan",
+    "fields": [
+      "prompt",
+      "instruction"
+    ],
+    "before": {
+      "prompt": "短木板失败后，又换一块同样短的，问题解决了吗？",
+      "instruction": "改法要针对失败原因。"
+    },
+    "after": {
+      "prompt": "换来一块同样短的木板，能搭过去了吗？",
+      "instruction": "比一比，新木板变长了吗？"
+    }
+  },
+  {
+    "id": "logic-priority-choice-3",
+    "gameId": "logic-priority-choice",
+    "fields": [
+      "prompt",
+      "instruction",
+      "choices"
+    ],
+    "before": {
+      "prompt": "模型河宽 4 格，长板 5 格、短板 2 格，哪块能搭到对岸？",
+      "instruction": "先选最可能满足距离条件的材料。",
+      "choices": [
+        {
+          "label": "先选长木板",
+          "value": "long"
+        },
+        {
+          "label": "先选短木板",
+          "value": "short"
+        },
+        {
+          "label": "先选小石头",
+          "value": "stone"
+        }
+      ]
+    },
+    "after": {
+      "prompt": "短木板搭不到对岸，换哪块试试？",
+      "instruction": "比一比，哪块木板更长？",
+      "choices": [
+        {
+          "label": "长木板",
+          "value": "long"
+        },
+        {
+          "label": "短木板",
+          "value": "short"
+        },
+        {
+          "label": "小石头",
+          "value": "stone"
+        }
+      ]
+    }
+  },
+  {
+    "id": "logic-priority-choice-9",
+    "gameId": "logic-priority-choice",
+    "fields": [
+      "choices"
+    ],
+    "before": {
+      "choices": [
+        {
+          "label": "远处小狗睡觉的地方",
+          "value": "far-dog"
+        },
+        {
+          "label": "倒下的杯子周围",
+          "value": "cup-area"
+        },
+        {
+          "label": "窗边小鸟的位置",
+          "value": "window-bird"
+        }
+      ]
+    },
+    "after": {
+      "choices": [
+        {
+          "label": "小狗旁边",
+          "value": "far-dog"
+        },
+        {
+          "label": "杯子周围",
+          "value": "cup-area"
+        },
+        {
+          "label": "小鸟旁边",
+          "value": "window-bird"
+        }
+      ]
+    }
+  },
+  {
+    "id": "logic-priority-choice-10",
+    "gameId": "logic-priority-choice",
+    "fields": [
+      "prompt",
+      "instruction",
+      "choices"
+    ],
+    "before": {
+      "prompt": "短木板失败后，有两种改法：换同样短的，或换一块够长的木板，先选哪个？",
+      "instruction": "先改真正导致失败的条件。",
+      "choices": [
+        {
+          "label": "换一块够长的木板",
+          "value": "extend"
+        },
+        {
+          "label": "换同样短木板",
+          "value": "same-short"
+        },
+        {
+          "label": "继续用短木板",
+          "value": "same"
+        }
+      ]
+    },
+    "after": {
+      "prompt": "短木板搭不到对岸，先怎么改？",
+      "instruction": "先找能让木板搭到对岸的办法。",
+      "choices": [
+        {
+          "label": "换长木板",
+          "value": "extend"
+        },
+        {
+          "label": "换同样短的",
+          "value": "same-short"
+        },
+        {
+          "label": "接着用短板",
+          "value": "same"
+        }
+      ]
+    }
+  },
+  {
+    "id": "logic-priority-choice-12",
+    "gameId": "logic-priority-choice",
+    "fields": [
+      "choices"
+    ],
+    "before": {
+      "choices": [
+        {
+          "label": "直接说小狗弄乱",
+          "value": "dog-certain"
+        },
+        {
+          "label": "小狗肯定没弄乱",
+          "value": "dog-no"
+        },
+        {
+          "label": "先找更多线索",
+          "value": "more-clues"
+        }
+      ]
+    },
+    "after": {
+      "choices": [
+        {
+          "label": "就是小狗",
+          "value": "dog-certain"
+        },
+        {
+          "label": "肯定没弄乱",
+          "value": "dog-no"
+        },
+        {
+          "label": "再找线索",
+          "value": "more-clues"
+        }
+      ]
+    }
+  },
+  {
+    "id": "logic-space-bridge-1",
+    "gameId": "logic-space-bridge",
+    "fields": [
+      "choices"
+    ],
+    "before": {
+      "choices": [
+        {
+          "label": "小熊到木板的距离",
+          "value": "guess-longest"
+        },
+        {
+          "label": "木板到小旗的距离",
+          "value": "try-nearest"
+        },
+        {
+          "label": "两岸之间的距离",
+          "value": "river-width"
+        }
+      ]
+    },
+    "after": {
+      "choices": [
+        {
+          "label": "小熊到木板",
+          "value": "guess-longest"
+        },
+        {
+          "label": "木板到小旗",
+          "value": "try-nearest"
+        },
+        {
+          "label": "两岸之间",
+          "value": "river-width"
+        }
+      ]
+    }
+  },
+  {
+    "id": "logic-space-bridge-2",
+    "gameId": "logic-space-bridge",
+    "fields": [
+      "choices"
+    ],
+    "before": {
+      "choices": [
+        {
+          "label": "只用一块 4 格木板跨整条河",
+          "value": "same-length"
+        },
+        {
+          "label": "两块 4 格木板，各搭一段",
+          "value": "two-planks"
+        },
+        {
+          "label": "两块都放在同一岸边",
+          "value": "separate"
+        }
+      ]
+    },
+    "after": {
+      "choices": [
+        {
+          "label": "只用一块",
+          "value": "same-length"
+        },
+        {
+          "label": "每边搭一块",
+          "value": "two-planks"
+        },
+        {
+          "label": "都放岸边",
+          "value": "separate"
+        }
+      ]
+    }
+  },
+  {
+    "id": "logic-space-bridge-5",
+    "gameId": "logic-space-bridge",
+    "fields": [
+      "choices"
+    ],
+    "before": {
+      "choices": [
+        {
+          "label": "只用 5 格长木板跨整条河",
+          "value": "long-only"
+        },
+        {
+          "label": "只用 4 格短木板跨整条河",
+          "value": "short-only"
+        },
+        {
+          "label": "两块木板分别搭小岛两边",
+          "value": "two-planks"
+        }
+      ]
+    },
+    "after": {
+      "choices": [
+        {
+          "label": "只用长板",
+          "value": "long-only"
+        },
+        {
+          "label": "只用短板",
+          "value": "short-only"
+        },
+        {
+          "label": "每边搭一块",
+          "value": "two-planks"
+        }
+      ]
+    }
+  },
+  {
+    "id": "logic-space-bridge-8",
+    "gameId": "logic-space-bridge",
+    "fields": [
+      "choices"
+    ],
+    "before": {
+      "choices": [
+        {
+          "label": "只用长木板跨整条河",
+          "value": "long-only"
+        },
+        {
+          "label": "短板搭左段，长板搭右段",
+          "value": "two-planks"
+        },
+        {
+          "label": "长板搭左段，短板搭右段",
+          "value": "reversed"
+        }
+      ]
+    },
+    "after": {
+      "choices": [
+        {
+          "label": "只用长板",
+          "value": "long-only"
+        },
+        {
+          "label": "左短右长",
+          "value": "two-planks"
+        },
+        {
+          "label": "左长右短",
+          "value": "reversed"
+        }
+      ]
+    }
+  }
+]

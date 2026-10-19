@@ -1,0 +1,65 @@
+{
+  "feature": "047-child-readable-logic",
+  "createdAt": "2026-10-19T02:20:49.411Z",
+  "tool": "built-in image_gen.imagegen",
+  "mode": "built-in reference generation followed by precise-object edit",
+  "agentModelRequested": "gpt-6.1-sol",
+  "imageModel": "not exposed by built-in tool; no API or CLI model override",
+  "originalReference": "public/images/scenes/bridge-wide-river.png",
+  "originalReferenceSha256": "44488ebee1b4f2fc5ceea0e93b5b9081aca672e5fa4700100e0028cab3c39f5a",
+  "postprocess": {
+    "tool": "sharp",
+    "version": "0.34.4",
+    "operation": "resize only; no drawn overlays or retouching",
+    "width": 1200,
+    "height": 675,
+    "fit": "cover",
+    "position": "centre",
+    "kernel": "lanczos3",
+    "format": "png"
+  },
+  "assets": [
+    {
+      "key": "short-plank-gap",
+      "source": "/Users/chiang/.codex/generated_images/01a151f4-6d46-75c2-9245-6f8a5af117e0/exec-2b0a8d79-e7a5-4241-b1b6-32317606ce6f.png",
+      "prompt": "Use case: illustration-story\nAsset type: 16:9 preschool thinking-game scene, final runtime 1200x675 PNG.\nInput image 1 is a style, character and environment reference. Reuse the exact cute golden puppy with a blue collar, sunny lush grassy riverbanks, rich soft children's storybook 3D illustration, blue natural flowing river, red triangular flag on the far bank.\nPrimary request: Create the FIRST scene in a matched pair: a wooden plank is clearly TOO SHORT to bridge this river. Rearrange to an easy-to-read slightly elevated three-quarter view. Show two clearly separated grassy banks with a medium-width blue flowing river between them. Puppy stands safely on the near bank at lower left, looks toward the red flag on the far bank upper right. Exactly ONE broad wooden plank points diagonally from the near bank toward the opposite bank. Its near end is visibly and securely resting on a substantial patch of dry near-bank soil; its far end projects out over the blue water and stops well before the far bank. Leave a very obvious large OPEN WATER GAP, at least one third of the entire crossing distance, between the plank tip and the opposite bank. Both plank tip and opposite bank must be unobscured. The plank must be one straight rectangular piece, not a bridge, not floating detached in the river. No extra planks, no long spare plank, no stepping stones. The far and near grassy river edges must read as a natural river scene, not a hole or canal diagram. Keep the crossing gap visually simple. Puppy stays completely on land, never steps on the plank. The plank takes up enough of the scene for a four-year-old to immediately see that it cannot reach the other bank.\nStyle: match input warm friendly detailed storybook rendering and golden puppy identity. Natural sky, a few trees, gentle soft shadows, grass, restrained flowers away from key plank edges.\nConstraints: no text, no letters, no numbers, no logos, no watermarks, no arrows, no grid, no diagrams. Single scene, no panels, no borders. Landscape 16:9.",
+      "input": "public/images/scenes/bridge-wide-river.png",
+      "review": "Pass: single plank near end visibly supported on dry near bank; far tip ends over river with large unobstructed water gap to opposite bank; no extra board; puppy stays on land.",
+      "raw": "public/images/scenes/source/logic-047-short-plank-gap.png",
+      "runtime": "public/images/scenes/logic-047-short-plank-gap.png",
+      "sourceMetadata": {
+        "width": 1672,
+        "height": 941,
+        "format": "png",
+        "sha256": "479c4f741dabc2eacf8c34e9b5037d3dbade07d3d04a89e65b48ccfc5794b78c"
+      },
+      "runtimeMetadata": {
+        "width": 1200,
+        "height": 675,
+        "format": "png",
+        "sha256": "14cdcc725d20b7ccbbc4d52e24058c604635f5c298fef296bca74edd87b2dc97"
+      }
+    },
+    {
+      "key": "long-plank-crossing",
+      "source": "/Users/chiang/.codex/generated_images/01a151f4-6d46-75c2-9245-6f8a5af117e0/exec-6aff2f15-557d-421e-aee9-bed4b8b92739.png",
+      "prompt": "Use case: precise-object-edit\nAsset type: second scene of a matched pair for a four-year-old children's thinking game, 16:9 landscape.\nInput image 1 is the EXACT edit target, depicting a golden puppy on the near bank, a single too-short plank, a natural blue river and a red flag on the far grassy bank.\nPrimary request: Change ONLY the length of this single wooden plank so it is now LONG ENOUGH to cross the whole river and clearly rests with BOTH ENDS ON DRY LAND. Keep its near end at the exact current lower-left dry-soil position, preserve its width, orange-brown wood grain, straight rectangular form and direction. Extend its far end along the SAME diagonal toward the upper right until it visibly overlaps a substantial patch of grass/dry soil on the far bank near the red flag. The far endpoint must lie unmistakably BEYOND the far shoreline and onto solid land, with clear dry-ground support. One continuous broad wooden plank forms a visibly unbroken path between the two banks. At each end, show enough board overlapping land for a child to understand that both ends are supported. Do not add another board. Puppy stays at the exact same spot completely on the near-bank ground, never on the board.\nStrict invariants: keep the puppy's golden fur, blue collar, face, pose and size EXACTLY the same. Keep both banks, river width, all shoreline positions, trees, red flag, flowers, sky, shadows, rocks, viewing angle and composition unchanged. Never narrow the river, move either bank or flag, zoom, crop, or change character identity. The only meaningful change is that the existing board is extended straight across to rest on the far bank.\nConstraints: no text, no letters, no digits, no arrows, no logos, no grid, no watermarks, no borders. Match the same soft sunny children's storybook 3D illustration. Landscape 16:9.",
+      "input": "public/images/scenes/source/logic-047-short-plank-gap.png",
+      "review": "Pass: one continuous straight plank visibly overlaps dry land at both banks; puppy remains on near bank; camera, bank shape, river width, red flag and puppy identity remain visually consistent.",
+      "raw": "public/images/scenes/source/logic-047-long-plank-crossing.png",
+      "runtime": "public/images/scenes/logic-047-long-plank-crossing.png",
+      "sourceMetadata": {
+        "width": 1672,
+        "height": 941,
+        "format": "png",
+        "sha256": "7506b007f409582e5360e2668146721e2b1d10f77a90cc9e12c2781d6d57b345"
+      },
+      "runtimeMetadata": {
+        "width": 1200,
+        "height": 675,
+        "format": "png",
+        "sha256": "8b963954caed927f50680f2e93e776336c3c2a53a54322f215973d3139aa694e"
+      }
+    }
+  ]
+}

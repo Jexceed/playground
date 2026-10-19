@@ -54,11 +54,11 @@ test('left middle right pictures refer to the actual corresponding sample card',
   }
 });
 
-test('basket shape labels do not introduce a color rule', () => {
+test('direct category shapes do not introduce a color rule', () => {
   const game = group('logic-sorter-switch');
   for (const round of game.rounds.slice(0, 8)) for (const choice of round.choices) {
     const picture = logicChoicePictureFor(game.id, round, choice);
-    assert.equal(picture.kind, 'basket');
+    assert.equal(picture.kind, 'category');
     if (choice.value === '圆形篮子' || choice.value === '方形篮子') {
       assert.equal(picture.marker, choice.value === '圆形篮子' ? 'circle' : 'square');
       assert.equal(picture.color, undefined);

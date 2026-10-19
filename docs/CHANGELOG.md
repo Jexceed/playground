@@ -2,6 +2,15 @@
 
 ## 2026-10-19
 
+### Make Logic House pictures readable for young children
+
+- Replaced the eight labeled-basket choices with direct color/shape groups and enlarged the target card. Updated wording consistently while preserving stable answer values and progress.
+- Restored a concrete river story for six everyday length/repair questions, using two matching, word-free image_gen scenes with a visible short-plank gap and a successful long plank. Material choices use large local plank pictures; measured bridge tasks retain exact geometry and gain shorter labels and larger numbers.
+- Removed repeated animal pictures and text badges from eight evidence judgments. Choices now use one short, spoken label; factual animal/location choices keep the relevant scene crops. Reviewed text changes affect 29 rounds.
+- Passed 74 regressions, build, curriculum/illustration/voice checks, and 229 browser states across 62 relevant rounds at 1280×788. The updated Mac app was installed and checked on 20 representative rounds; completion stayed 274/489 and the previous question was restored. All 4171 local voice entries align without failures or fallback.
+- Added explicit child-understanding and single-layer option rules to AGENTS.md. Evidence: `specs/047-child-readable-logic/verification.md`; actual child play remains separate from engineering acceptance.
+
+
 ### Complete the Logic House visual review
 
 - Reviewed every enlightenment Logic House group: 26 groups / 319 rounds. Updated 126 round surfaces and retained 193 with documented reasons. The original question IDs, wording, options, answers and all other curriculum data remain unchanged.

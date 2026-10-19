@@ -5,7 +5,10 @@
 .logic-choice-ordered { gap: 3px; flex-wrap: nowrap; }
 .logic-choice-slot { display: grid; place-items: center; width: 39px; height: 45px; border: 1px solid #e1d6c5; border-radius: 5px; background: #fffdf7; }
 .logic-choice-slot .kid-illustration { width: 35px; height: 35px; }
-.logic-choice-basket { position: relative; width: 122px; height: 100px; }
-.logic-choice-basket > img { width: 100%; height: 100%; object-fit: contain; }
-.logic-choice-basket .logic-basket-marker { position: absolute; width: 33px; height: 33px; top: 51px; left: 44px; padding: 1px; border-radius: 5px; background: #fff9ec; }
+.logic-choice-category { width:86px; height:86px; }
+.logic-choice-category>svg { width:100%; height:100%; }
+.progressive-game[data-game="logic-sorter-switch"] .object-row:has(>.visual-token:only-child) { display:flex; justify-content:center; }
+.progressive-game[data-game="logic-sorter-switch"] .object-row>.visual-token:only-child { width:128px; min-height:124px; }
+.progressive-game[data-game="logic-sorter-switch"] .object-row>.visual-token:only-child .kid-illustration { width:72px; height:72px; }
 .logic-choice-bridge { width: min(280px, 100%); height: auto; }
+.answer-choice-picture>.logic-choice-bridge { width:100%; height:112px; }

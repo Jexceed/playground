@@ -1,7 +1,5 @@
 import { visualMetaFor, visualParts, VisualGlyph } from "./VisualToken";
-import { imageGallery } from "../data/imageGallery";
 import { logicChoicePictureFor } from "../domain/logic-choice-picture";
-import { publicAsset } from "../publicAsset";
 import type { GameRound, RoundOption } from "../types";
 import "./logic-choice-picture.css";
 
@@ -35,12 +33,12 @@ export function LogicChoicePicture({ gameId, round, choice }: { gameId: string; 
       {metas.map((meta, index) => <span className="logic-choice-slot" key={index}><VisualGlyph kind={meta!.kind} /></span>)}
     </span>;
   }
-  return <span className="logic-choice-picture logic-choice-basket" aria-hidden="true">
-    <img src={publicAsset(imageGallery.items.logic046Daily_emptyBasket.src)} alt="" />
-    <svg className="logic-basket-marker" viewBox="0 0 40 40">
+  return <span className="logic-choice-picture logic-choice-category" aria-hidden="true">
+    <svg viewBox="0 0 64 64">
       {model.marker === "square"
-        ? <rect x="8" y="8" width="24" height="24" fill="#fffaf0" stroke="#3d4852" strokeWidth="3" />
-        : <circle cx="20" cy="20" r="13" fill={model.marker === "color" ? model.color : "#fffaf0"} stroke="#3d4852" strokeWidth="3" />}
+        ? <rect x="12" y="12" width="40" height="40" fill="none" stroke="#3d4852" strokeWidth="4" />
+        : model.marker === "circle" ? <circle cx="32" cy="32" r="22" fill="none" stroke="#3d4852" strokeWidth="4" />
+        : <path d="M13 17Q9 7 25 10L48 12Q60 14 55 28L52 47Q50 57 35 53L15 51Q5 48 10 34Z" fill={model.marker === 'color' ? model.color : undefined} />}
     </svg>
   </span>;
 }

@@ -1,3 +1,4 @@
+import {restoreChildReadableWording} from "./lib/restore-reviewed-wording.mjs";
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
@@ -6,7 +7,7 @@ import { loadGameData } from './lib/load-game-data.mjs';
 import { loadTypeScriptModule } from './lib/load-ts-module.mjs';
 
 const baseline=JSON.parse(readFileSync('specs/045-order-story-completion/verification/baseline.json'));
-const current=JSON.parse(JSON.stringify(await loadGameData()));
+const current=restoreChildReadableWording(await loadGameData());
 const {orderStorySteps,orderStoryImage}=await loadTypeScriptModule('src/data/orderStories.ts');
 const {imageGallery}=await loadTypeScriptModule('src/data/imageGallery.ts');
 const rounds=current.games.find(g=>g.id==='logic-order-plan').rounds;

@@ -41,7 +41,7 @@ small enough to turn into a Spec Kit feature.
 
 ## P1
 
-- Observe parent-child play of the 045 order-plan story group and 046 Logic House visual corrections and calibrate the 2.4-second step pace. Reduced-motion behavior has code review coverage; repeat with the OS preference enabled on a suitable acceptance machine without changing a user's personal settings during routine QA.
+- Observe parent-child play of the 045 order-plan story group and 046/047 Logic House visual corrections, including direct category groups, concrete river gaps and short spoken judgments, and calibrate the 2.4-second step pace. Reduced-motion behavior has code review coverage; repeat with the OS preference enabled on a suitable acceptance machine without changing a user's personal settings during routine QA.
 
 - Observe parent-child play of the 043 corrections, especially two-condition distractors, word-picture support and the front/right-side viewing arrows. Automated correctness and adult UI checks do not establish reading or reasoning load for children.
 

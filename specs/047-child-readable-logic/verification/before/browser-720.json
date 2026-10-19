@@ -1,0 +1,4247 @@
+[
+  {
+    "id": "logic-sorter-switch-1",
+    "phase": "task",
+    "article": {
+      "bottom": 694.6015625,
+      "height": 622.1015625,
+      "left": 286,
+      "right": 984,
+      "top": 72.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "红色组",
+        "left": 302,
+        "overflow": false,
+        "right": 518.6640625,
+        "text": "红色组",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "蓝色组",
+        "left": 526.6640625,
+        "overflow": false,
+        "right": 743.328125,
+        "text": "蓝色组",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "绿色组",
+        "left": 751.328125,
+        "overflow": false,
+        "right": 968,
+        "text": "绿色组",
+        "top": 484.6015625,
+        "width": 216.671875
+      }
+    ],
+    "controls": [
+      {
+        "bottom": 670.6015625,
+        "height": 38.5,
+        "left": 302,
+        "right": 399,
+        "text": "从头来",
+        "top": 632.1015625,
+        "width": 97
+      },
+      {
+        "bottom": 670.6015625,
+        "height": 38.5,
+        "left": 407,
+        "right": 511,
+        "text": "看看对不对",
+        "top": 632.1015625,
+        "width": 104
+      }
+    ],
+    "pageOverflow": false,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": []
+  },
+  {
+    "id": "logic-sorter-switch-1",
+    "phase": "wrong",
+    "article": {
+      "bottom": 742.6015625,
+      "height": 670.1015625,
+      "left": 286,
+      "right": 984,
+      "top": 72.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "红色组",
+        "left": 302,
+        "overflow": false,
+        "right": 518.6640625,
+        "text": "红色组",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "蓝色组",
+        "left": 526.6640625,
+        "overflow": false,
+        "right": 743.328125,
+        "text": "蓝色组",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "绿色组",
+        "left": 751.328125,
+        "overflow": false,
+        "right": 968,
+        "text": "绿色组",
+        "top": 484.6015625,
+        "width": 216.671875
+      }
+    ],
+    "controls": [
+      {
+        "bottom": 670.6015625,
+        "height": 38.5,
+        "left": 302,
+        "right": 399,
+        "text": "从头来",
+        "top": 632.1015625,
+        "width": 97
+      },
+      {
+        "bottom": 669.6015625,
+        "height": 38.5,
+        "left": 407,
+        "right": 511,
+        "text": "看看对不对",
+        "top": 631.1015625,
+        "width": 104
+      }
+    ],
+    "pageOverflow": true,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": [
+      "page overflow"
+    ]
+  },
+  {
+    "id": "logic-sorter-switch-1",
+    "phase": "solved",
+    "article": {
+      "bottom": 742.6015625,
+      "height": 670.1015625,
+      "left": 286,
+      "right": 984,
+      "top": 72.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "红色组",
+        "left": 302,
+        "overflow": false,
+        "right": 518.6640625,
+        "text": "红色组",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "蓝色组",
+        "left": 526.6640625,
+        "overflow": false,
+        "right": 743.328125,
+        "text": "蓝色组",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "绿色组",
+        "left": 751.328125,
+        "overflow": false,
+        "right": 968,
+        "text": "绿色组",
+        "top": 484.6015625,
+        "width": 216.671875
+      }
+    ],
+    "controls": [
+      {
+        "bottom": 670.6015625,
+        "height": 38.5,
+        "left": 302,
+        "right": 399,
+        "text": "从头来",
+        "top": 632.1015625,
+        "width": 97
+      },
+      {
+        "bottom": 669.6015625,
+        "height": 38.5,
+        "left": 407,
+        "right": 504,
+        "text": "下一题",
+        "top": 631.1015625,
+        "width": 97
+      }
+    ],
+    "pageOverflow": true,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": [
+      "page overflow"
+    ]
+  },
+  {
+    "id": "logic-sorter-switch-2",
+    "phase": "task",
+    "article": {
+      "bottom": 694.6015625,
+      "height": 622.1015625,
+      "left": 286,
+      "right": 984,
+      "top": 72.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "红色组",
+        "left": 302,
+        "overflow": false,
+        "right": 518.6640625,
+        "text": "红色组",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "黄色组",
+        "left": 526.6640625,
+        "overflow": false,
+        "right": 743.328125,
+        "text": "黄色组",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "蓝色组",
+        "left": 751.328125,
+        "overflow": false,
+        "right": 968,
+        "text": "蓝色组",
+        "top": 484.6015625,
+        "width": 216.671875
+      }
+    ],
+    "controls": [
+      {
+        "bottom": 670.6015625,
+        "height": 38.5,
+        "left": 302,
+        "right": 399,
+        "text": "从头来",
+        "top": 632.1015625,
+        "width": 97
+      },
+      {
+        "bottom": 670.6015625,
+        "height": 38.5,
+        "left": 407,
+        "right": 511,
+        "text": "看看对不对",
+        "top": 632.1015625,
+        "width": 104
+      }
+    ],
+    "pageOverflow": false,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": []
+  },
+  {
+    "id": "logic-sorter-switch-2",
+    "phase": "wrong",
+    "article": {
+      "bottom": 742.6015625,
+      "height": 670.1015625,
+      "left": 286,
+      "right": 984,
+      "top": 72.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "红色组",
+        "left": 302,
+        "overflow": false,
+        "right": 518.6640625,
+        "text": "红色组",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "黄色组",
+        "left": 526.6640625,
+        "overflow": false,
+        "right": 743.328125,
+        "text": "黄色组",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "蓝色组",
+        "left": 751.328125,
+        "overflow": false,
+        "right": 968,
+        "text": "蓝色组",
+        "top": 484.6015625,
+        "width": 216.671875
+      }
+    ],
+    "controls": [
+      {
+        "bottom": 670.6015625,
+        "height": 38.5,
+        "left": 302,
+        "right": 399,
+        "text": "从头来",
+        "top": 632.1015625,
+        "width": 97
+      },
+      {
+        "bottom": 669.6015625,
+        "height": 38.5,
+        "left": 407,
+        "right": 511,
+        "text": "看看对不对",
+        "top": 631.1015625,
+        "width": 104
+      }
+    ],
+    "pageOverflow": true,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": [
+      "page overflow"
+    ]
+  },
+  {
+    "id": "logic-sorter-switch-2",
+    "phase": "solved",
+    "article": {
+      "bottom": 742.6015625,
+      "height": 670.1015625,
+      "left": 286,
+      "right": 984,
+      "top": 72.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "红色组",
+        "left": 302,
+        "overflow": false,
+        "right": 518.6640625,
+        "text": "红色组",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "黄色组",
+        "left": 526.6640625,
+        "overflow": false,
+        "right": 743.328125,
+        "text": "黄色组",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "蓝色组",
+        "left": 751.328125,
+        "overflow": false,
+        "right": 968,
+        "text": "蓝色组",
+        "top": 484.6015625,
+        "width": 216.671875
+      }
+    ],
+    "controls": [
+      {
+        "bottom": 670.6015625,
+        "height": 38.5,
+        "left": 302,
+        "right": 399,
+        "text": "从头来",
+        "top": 632.1015625,
+        "width": 97
+      },
+      {
+        "bottom": 669.6015625,
+        "height": 38.5,
+        "left": 407,
+        "right": 504,
+        "text": "下一题",
+        "top": 631.1015625,
+        "width": 97
+      }
+    ],
+    "pageOverflow": true,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": [
+      "page overflow"
+    ]
+  },
+  {
+    "id": "logic-sorter-switch-3",
+    "phase": "task",
+    "article": {
+      "bottom": 694.6015625,
+      "height": 622.1015625,
+      "left": 286,
+      "right": 984,
+      "top": 72.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "红色组",
+        "left": 302,
+        "overflow": false,
+        "right": 518.6640625,
+        "text": "红色组",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "方形组",
+        "left": 526.6640625,
+        "overflow": false,
+        "right": 743.328125,
+        "text": "方形组",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "圆形组",
+        "left": 751.328125,
+        "overflow": false,
+        "right": 968,
+        "text": "圆形组",
+        "top": 484.6015625,
+        "width": 216.671875
+      }
+    ],
+    "controls": [
+      {
+        "bottom": 670.6015625,
+        "height": 38.5,
+        "left": 302,
+        "right": 399,
+        "text": "从头来",
+        "top": 632.1015625,
+        "width": 97
+      },
+      {
+        "bottom": 670.6015625,
+        "height": 38.5,
+        "left": 407,
+        "right": 511,
+        "text": "看看对不对",
+        "top": 632.1015625,
+        "width": 104
+      }
+    ],
+    "pageOverflow": false,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": []
+  },
+  {
+    "id": "logic-sorter-switch-3",
+    "phase": "wrong",
+    "article": {
+      "bottom": 742.6015625,
+      "height": 670.1015625,
+      "left": 286,
+      "right": 984,
+      "top": 72.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "红色组",
+        "left": 302,
+        "overflow": false,
+        "right": 518.6640625,
+        "text": "红色组",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "方形组",
+        "left": 526.6640625,
+        "overflow": false,
+        "right": 743.328125,
+        "text": "方形组",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "圆形组",
+        "left": 751.328125,
+        "overflow": false,
+        "right": 968,
+        "text": "圆形组",
+        "top": 484.6015625,
+        "width": 216.671875
+      }
+    ],
+    "controls": [
+      {
+        "bottom": 670.6015625,
+        "height": 38.5,
+        "left": 302,
+        "right": 399,
+        "text": "从头来",
+        "top": 632.1015625,
+        "width": 97
+      },
+      {
+        "bottom": 669.6015625,
+        "height": 38.5,
+        "left": 407,
+        "right": 511,
+        "text": "看看对不对",
+        "top": 631.1015625,
+        "width": 104
+      }
+    ],
+    "pageOverflow": true,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": [
+      "page overflow"
+    ]
+  },
+  {
+    "id": "logic-sorter-switch-3",
+    "phase": "solved",
+    "article": {
+      "bottom": 742.6015625,
+      "height": 670.1015625,
+      "left": 286,
+      "right": 984,
+      "top": 72.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "红色组",
+        "left": 302,
+        "overflow": false,
+        "right": 518.6640625,
+        "text": "红色组",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "方形组",
+        "left": 526.6640625,
+        "overflow": false,
+        "right": 743.328125,
+        "text": "方形组",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "圆形组",
+        "left": 751.328125,
+        "overflow": false,
+        "right": 968,
+        "text": "圆形组",
+        "top": 484.6015625,
+        "width": 216.671875
+      }
+    ],
+    "controls": [
+      {
+        "bottom": 670.6015625,
+        "height": 38.5,
+        "left": 302,
+        "right": 399,
+        "text": "从头来",
+        "top": 632.1015625,
+        "width": 97
+      },
+      {
+        "bottom": 669.6015625,
+        "height": 38.5,
+        "left": 407,
+        "right": 504,
+        "text": "下一题",
+        "top": 631.1015625,
+        "width": 97
+      }
+    ],
+    "pageOverflow": true,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": [
+      "page overflow"
+    ]
+  },
+  {
+    "id": "logic-sorter-switch-4",
+    "phase": "task",
+    "article": {
+      "bottom": 694.6015625,
+      "height": 622.1015625,
+      "left": 286,
+      "right": 984,
+      "top": 72.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "蓝色组",
+        "left": 302,
+        "overflow": false,
+        "right": 518.6640625,
+        "text": "蓝色组",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "方形组",
+        "left": 526.6640625,
+        "overflow": false,
+        "right": 743.328125,
+        "text": "方形组",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "圆形组",
+        "left": 751.328125,
+        "overflow": false,
+        "right": 968,
+        "text": "圆形组",
+        "top": 484.6015625,
+        "width": 216.671875
+      }
+    ],
+    "controls": [
+      {
+        "bottom": 670.6015625,
+        "height": 38.5,
+        "left": 302,
+        "right": 399,
+        "text": "从头来",
+        "top": 632.1015625,
+        "width": 97
+      },
+      {
+        "bottom": 670.6015625,
+        "height": 38.5,
+        "left": 407,
+        "right": 511,
+        "text": "看看对不对",
+        "top": 632.1015625,
+        "width": 104
+      }
+    ],
+    "pageOverflow": false,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": []
+  },
+  {
+    "id": "logic-sorter-switch-4",
+    "phase": "wrong",
+    "article": {
+      "bottom": 742.6015625,
+      "height": 670.1015625,
+      "left": 286,
+      "right": 984,
+      "top": 72.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "蓝色组",
+        "left": 302,
+        "overflow": false,
+        "right": 518.6640625,
+        "text": "蓝色组",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "方形组",
+        "left": 526.6640625,
+        "overflow": false,
+        "right": 743.328125,
+        "text": "方形组",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "圆形组",
+        "left": 751.328125,
+        "overflow": false,
+        "right": 968,
+        "text": "圆形组",
+        "top": 484.6015625,
+        "width": 216.671875
+      }
+    ],
+    "controls": [
+      {
+        "bottom": 670.6015625,
+        "height": 38.5,
+        "left": 302,
+        "right": 399,
+        "text": "从头来",
+        "top": 632.1015625,
+        "width": 97
+      },
+      {
+        "bottom": 669.6015625,
+        "height": 38.5,
+        "left": 407,
+        "right": 511,
+        "text": "看看对不对",
+        "top": 631.1015625,
+        "width": 104
+      }
+    ],
+    "pageOverflow": true,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": [
+      "page overflow"
+    ]
+  },
+  {
+    "id": "logic-sorter-switch-4",
+    "phase": "solved",
+    "article": {
+      "bottom": 742.6015625,
+      "height": 670.1015625,
+      "left": 286,
+      "right": 984,
+      "top": 72.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "蓝色组",
+        "left": 302,
+        "overflow": false,
+        "right": 518.6640625,
+        "text": "蓝色组",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "方形组",
+        "left": 526.6640625,
+        "overflow": false,
+        "right": 743.328125,
+        "text": "方形组",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "圆形组",
+        "left": 751.328125,
+        "overflow": false,
+        "right": 968,
+        "text": "圆形组",
+        "top": 484.6015625,
+        "width": 216.671875
+      }
+    ],
+    "controls": [
+      {
+        "bottom": 670.6015625,
+        "height": 38.5,
+        "left": 302,
+        "right": 399,
+        "text": "从头来",
+        "top": 632.1015625,
+        "width": 97
+      },
+      {
+        "bottom": 669.6015625,
+        "height": 38.5,
+        "left": 407,
+        "right": 504,
+        "text": "下一题",
+        "top": 631.1015625,
+        "width": 97
+      }
+    ],
+    "pageOverflow": true,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": [
+      "page overflow"
+    ]
+  },
+  {
+    "id": "logic-sorter-switch-5",
+    "phase": "task",
+    "article": {
+      "bottom": 694.6015625,
+      "height": 622.1015625,
+      "left": 286,
+      "right": 984,
+      "top": 72.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "蓝色组",
+        "left": 302,
+        "overflow": false,
+        "right": 518.6640625,
+        "text": "蓝色组",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "方形组",
+        "left": 526.6640625,
+        "overflow": false,
+        "right": 743.328125,
+        "text": "方形组",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "圆形组",
+        "left": 751.328125,
+        "overflow": false,
+        "right": 968,
+        "text": "圆形组",
+        "top": 484.6015625,
+        "width": 216.671875
+      }
+    ],
+    "controls": [
+      {
+        "bottom": 670.6015625,
+        "height": 38.5,
+        "left": 302,
+        "right": 399,
+        "text": "从头来",
+        "top": 632.1015625,
+        "width": 97
+      },
+      {
+        "bottom": 670.6015625,
+        "height": 38.5,
+        "left": 407,
+        "right": 511,
+        "text": "看看对不对",
+        "top": 632.1015625,
+        "width": 104
+      }
+    ],
+    "pageOverflow": false,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": []
+  },
+  {
+    "id": "logic-sorter-switch-5",
+    "phase": "wrong",
+    "article": {
+      "bottom": 742.6015625,
+      "height": 670.1015625,
+      "left": 286,
+      "right": 984,
+      "top": 72.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "蓝色组",
+        "left": 302,
+        "overflow": false,
+        "right": 518.6640625,
+        "text": "蓝色组",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "方形组",
+        "left": 526.6640625,
+        "overflow": false,
+        "right": 743.328125,
+        "text": "方形组",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "圆形组",
+        "left": 751.328125,
+        "overflow": false,
+        "right": 968,
+        "text": "圆形组",
+        "top": 484.6015625,
+        "width": 216.671875
+      }
+    ],
+    "controls": [
+      {
+        "bottom": 670.6015625,
+        "height": 38.5,
+        "left": 302,
+        "right": 399,
+        "text": "从头来",
+        "top": 632.1015625,
+        "width": 97
+      },
+      {
+        "bottom": 669.6015625,
+        "height": 38.5,
+        "left": 407,
+        "right": 511,
+        "text": "看看对不对",
+        "top": 631.1015625,
+        "width": 104
+      }
+    ],
+    "pageOverflow": true,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": [
+      "page overflow"
+    ]
+  },
+  {
+    "id": "logic-sorter-switch-5",
+    "phase": "solved",
+    "article": {
+      "bottom": 742.6015625,
+      "height": 670.1015625,
+      "left": 286,
+      "right": 984,
+      "top": 72.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "蓝色组",
+        "left": 302,
+        "overflow": false,
+        "right": 518.6640625,
+        "text": "蓝色组",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "方形组",
+        "left": 526.6640625,
+        "overflow": false,
+        "right": 743.328125,
+        "text": "方形组",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "圆形组",
+        "left": 751.328125,
+        "overflow": false,
+        "right": 968,
+        "text": "圆形组",
+        "top": 484.6015625,
+        "width": 216.671875
+      }
+    ],
+    "controls": [
+      {
+        "bottom": 670.6015625,
+        "height": 38.5,
+        "left": 302,
+        "right": 399,
+        "text": "从头来",
+        "top": 632.1015625,
+        "width": 97
+      },
+      {
+        "bottom": 669.6015625,
+        "height": 38.5,
+        "left": 407,
+        "right": 504,
+        "text": "下一题",
+        "top": 631.1015625,
+        "width": 97
+      }
+    ],
+    "pageOverflow": true,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": [
+      "page overflow"
+    ]
+  },
+  {
+    "id": "logic-sorter-switch-6",
+    "phase": "task",
+    "article": {
+      "bottom": 694.6015625,
+      "height": 622.1015625,
+      "left": 286,
+      "right": 984,
+      "top": 72.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "蓝色组",
+        "left": 302,
+        "overflow": false,
+        "right": 518.6640625,
+        "text": "蓝色组",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "方形组",
+        "left": 526.6640625,
+        "overflow": false,
+        "right": 743.328125,
+        "text": "方形组",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "圆形组",
+        "left": 751.328125,
+        "overflow": false,
+        "right": 968,
+        "text": "圆形组",
+        "top": 484.6015625,
+        "width": 216.671875
+      }
+    ],
+    "controls": [
+      {
+        "bottom": 670.6015625,
+        "height": 38.5,
+        "left": 302,
+        "right": 399,
+        "text": "从头来",
+        "top": 632.1015625,
+        "width": 97
+      },
+      {
+        "bottom": 670.6015625,
+        "height": 38.5,
+        "left": 407,
+        "right": 511,
+        "text": "看看对不对",
+        "top": 632.1015625,
+        "width": 104
+      }
+    ],
+    "pageOverflow": false,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": []
+  },
+  {
+    "id": "logic-sorter-switch-6",
+    "phase": "wrong",
+    "article": {
+      "bottom": 742.6015625,
+      "height": 670.1015625,
+      "left": 286,
+      "right": 984,
+      "top": 72.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "蓝色组",
+        "left": 302,
+        "overflow": false,
+        "right": 518.6640625,
+        "text": "蓝色组",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "方形组",
+        "left": 526.6640625,
+        "overflow": false,
+        "right": 743.328125,
+        "text": "方形组",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "圆形组",
+        "left": 751.328125,
+        "overflow": false,
+        "right": 968,
+        "text": "圆形组",
+        "top": 484.6015625,
+        "width": 216.671875
+      }
+    ],
+    "controls": [
+      {
+        "bottom": 670.6015625,
+        "height": 38.5,
+        "left": 302,
+        "right": 399,
+        "text": "从头来",
+        "top": 632.1015625,
+        "width": 97
+      },
+      {
+        "bottom": 669.6015625,
+        "height": 38.5,
+        "left": 407,
+        "right": 511,
+        "text": "看看对不对",
+        "top": 631.1015625,
+        "width": 104
+      }
+    ],
+    "pageOverflow": true,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": [
+      "page overflow"
+    ]
+  },
+  {
+    "id": "logic-sorter-switch-6",
+    "phase": "solved",
+    "article": {
+      "bottom": 742.6015625,
+      "height": 670.1015625,
+      "left": 286,
+      "right": 984,
+      "top": 72.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "蓝色组",
+        "left": 302,
+        "overflow": false,
+        "right": 518.6640625,
+        "text": "蓝色组",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "方形组",
+        "left": 526.6640625,
+        "overflow": false,
+        "right": 743.328125,
+        "text": "方形组",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "圆形组",
+        "left": 751.328125,
+        "overflow": false,
+        "right": 968,
+        "text": "圆形组",
+        "top": 484.6015625,
+        "width": 216.671875
+      }
+    ],
+    "controls": [
+      {
+        "bottom": 670.6015625,
+        "height": 38.5,
+        "left": 302,
+        "right": 399,
+        "text": "从头来",
+        "top": 632.1015625,
+        "width": 97
+      },
+      {
+        "bottom": 669.6015625,
+        "height": 38.5,
+        "left": 407,
+        "right": 504,
+        "text": "下一题",
+        "top": 631.1015625,
+        "width": 97
+      }
+    ],
+    "pageOverflow": true,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": [
+      "page overflow"
+    ]
+  },
+  {
+    "id": "logic-sorter-switch-7",
+    "phase": "task",
+    "article": {
+      "bottom": 694.6015625,
+      "height": 622.1015625,
+      "left": 286,
+      "right": 984,
+      "top": 72.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "黄色组",
+        "left": 302,
+        "overflow": false,
+        "right": 518.6640625,
+        "text": "黄色组",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "圆形组",
+        "left": 526.6640625,
+        "overflow": false,
+        "right": 743.328125,
+        "text": "圆形组",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "方形组",
+        "left": 751.328125,
+        "overflow": false,
+        "right": 968,
+        "text": "方形组",
+        "top": 484.6015625,
+        "width": 216.671875
+      }
+    ],
+    "controls": [
+      {
+        "bottom": 670.6015625,
+        "height": 38.5,
+        "left": 302,
+        "right": 399,
+        "text": "从头来",
+        "top": 632.1015625,
+        "width": 97
+      },
+      {
+        "bottom": 670.6015625,
+        "height": 38.5,
+        "left": 407,
+        "right": 511,
+        "text": "看看对不对",
+        "top": 632.1015625,
+        "width": 104
+      }
+    ],
+    "pageOverflow": false,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": []
+  },
+  {
+    "id": "logic-sorter-switch-7",
+    "phase": "wrong",
+    "article": {
+      "bottom": 742.6015625,
+      "height": 670.1015625,
+      "left": 286,
+      "right": 984,
+      "top": 72.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "黄色组",
+        "left": 302,
+        "overflow": false,
+        "right": 518.6640625,
+        "text": "黄色组",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "圆形组",
+        "left": 526.6640625,
+        "overflow": false,
+        "right": 743.328125,
+        "text": "圆形组",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "方形组",
+        "left": 751.328125,
+        "overflow": false,
+        "right": 968,
+        "text": "方形组",
+        "top": 484.6015625,
+        "width": 216.671875
+      }
+    ],
+    "controls": [
+      {
+        "bottom": 670.6015625,
+        "height": 38.5,
+        "left": 302,
+        "right": 399,
+        "text": "从头来",
+        "top": 632.1015625,
+        "width": 97
+      },
+      {
+        "bottom": 669.6015625,
+        "height": 38.5,
+        "left": 407,
+        "right": 511,
+        "text": "看看对不对",
+        "top": 631.1015625,
+        "width": 104
+      }
+    ],
+    "pageOverflow": true,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": [
+      "page overflow"
+    ]
+  },
+  {
+    "id": "logic-sorter-switch-7",
+    "phase": "solved",
+    "article": {
+      "bottom": 742.6015625,
+      "height": 670.1015625,
+      "left": 286,
+      "right": 984,
+      "top": 72.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "黄色组",
+        "left": 302,
+        "overflow": false,
+        "right": 518.6640625,
+        "text": "黄色组",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "圆形组",
+        "left": 526.6640625,
+        "overflow": false,
+        "right": 743.328125,
+        "text": "圆形组",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "方形组",
+        "left": 751.328125,
+        "overflow": false,
+        "right": 968,
+        "text": "方形组",
+        "top": 484.6015625,
+        "width": 216.671875
+      }
+    ],
+    "controls": [
+      {
+        "bottom": 670.6015625,
+        "height": 38.5,
+        "left": 302,
+        "right": 399,
+        "text": "从头来",
+        "top": 632.1015625,
+        "width": 97
+      },
+      {
+        "bottom": 669.6015625,
+        "height": 38.5,
+        "left": 407,
+        "right": 504,
+        "text": "下一题",
+        "top": 631.1015625,
+        "width": 97
+      }
+    ],
+    "pageOverflow": true,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": [
+      "page overflow"
+    ]
+  },
+  {
+    "id": "logic-sorter-switch-8",
+    "phase": "task",
+    "article": {
+      "bottom": 694.6015625,
+      "height": 622.1015625,
+      "left": 286,
+      "right": 984,
+      "top": 72.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "黄色组",
+        "left": 302,
+        "overflow": false,
+        "right": 518.6640625,
+        "text": "黄色组",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "方形组",
+        "left": 526.6640625,
+        "overflow": false,
+        "right": 743.328125,
+        "text": "方形组",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "圆形组",
+        "left": 751.328125,
+        "overflow": false,
+        "right": 968,
+        "text": "圆形组",
+        "top": 484.6015625,
+        "width": 216.671875
+      }
+    ],
+    "controls": [
+      {
+        "bottom": 670.6015625,
+        "height": 38.5,
+        "left": 302,
+        "right": 399,
+        "text": "从头来",
+        "top": 632.1015625,
+        "width": 97
+      },
+      {
+        "bottom": 670.6015625,
+        "height": 38.5,
+        "left": 407,
+        "right": 511,
+        "text": "看看对不对",
+        "top": 632.1015625,
+        "width": 104
+      }
+    ],
+    "pageOverflow": false,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": []
+  },
+  {
+    "id": "logic-sorter-switch-8",
+    "phase": "wrong",
+    "article": {
+      "bottom": 742.6015625,
+      "height": 670.1015625,
+      "left": 286,
+      "right": 984,
+      "top": 72.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "黄色组",
+        "left": 302,
+        "overflow": false,
+        "right": 518.6640625,
+        "text": "黄色组",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "方形组",
+        "left": 526.6640625,
+        "overflow": false,
+        "right": 743.328125,
+        "text": "方形组",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "圆形组",
+        "left": 751.328125,
+        "overflow": false,
+        "right": 968,
+        "text": "圆形组",
+        "top": 484.6015625,
+        "width": 216.671875
+      }
+    ],
+    "controls": [
+      {
+        "bottom": 670.6015625,
+        "height": 38.5,
+        "left": 302,
+        "right": 399,
+        "text": "从头来",
+        "top": 632.1015625,
+        "width": 97
+      },
+      {
+        "bottom": 669.6015625,
+        "height": 38.5,
+        "left": 407,
+        "right": 511,
+        "text": "看看对不对",
+        "top": 631.1015625,
+        "width": 104
+      }
+    ],
+    "pageOverflow": true,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": [
+      "page overflow"
+    ]
+  },
+  {
+    "id": "logic-sorter-switch-8",
+    "phase": "solved",
+    "article": {
+      "bottom": 742.6015625,
+      "height": 670.1015625,
+      "left": 286,
+      "right": 984,
+      "top": 72.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "黄色组",
+        "left": 302,
+        "overflow": false,
+        "right": 518.6640625,
+        "text": "黄色组",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "方形组",
+        "left": 526.6640625,
+        "overflow": false,
+        "right": 743.328125,
+        "text": "方形组",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 622.1015625,
+        "height": 137.5,
+        "images": 0,
+        "label": "圆形组",
+        "left": 751.328125,
+        "overflow": false,
+        "right": 968,
+        "text": "圆形组",
+        "top": 484.6015625,
+        "width": 216.671875
+      }
+    ],
+    "controls": [
+      {
+        "bottom": 670.6015625,
+        "height": 38.5,
+        "left": 302,
+        "right": 399,
+        "text": "从头来",
+        "top": 632.1015625,
+        "width": 97
+      },
+      {
+        "bottom": 669.6015625,
+        "height": 38.5,
+        "left": 407,
+        "right": 504,
+        "text": "下一题",
+        "top": 631.1015625,
+        "width": 97
+      }
+    ],
+    "pageOverflow": true,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": [
+      "page overflow"
+    ]
+  },
+  {
+    "id": "logic-sorter-switch-9",
+    "phase": "task",
+    "article": {
+      "bottom": 672.5,
+      "height": 600,
+      "left": 286,
+      "right": 984,
+      "top": 72.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [
+      {
+        "badge": 0,
+        "bottom": 503.6484375,
+        "height": 54,
+        "images": 1,
+        "label": "红色方块",
+        "left": 302,
+        "overflow": false,
+        "right": 518.6640625,
+        "text": "红色方块",
+        "top": 449.6484375,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 503.6484375,
+        "height": 54,
+        "images": 1,
+        "label": "红色圆片",
+        "left": 526.6640625,
+        "overflow": false,
+        "right": 743.328125,
+        "text": "红色圆片",
+        "top": 449.6484375,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 503.6484375,
+        "height": 54,
+        "images": 1,
+        "label": "蓝色圆片",
+        "left": 751.328125,
+        "overflow": false,
+        "right": 968,
+        "text": "蓝色圆片",
+        "top": 449.6484375,
+        "width": 216.671875
+      }
+    ],
+    "controls": [
+      {
+        "bottom": 552.1484375,
+        "height": 38.5,
+        "left": 302,
+        "right": 399,
+        "text": "从头来",
+        "top": 513.6484375,
+        "width": 97
+      },
+      {
+        "bottom": 552.1484375,
+        "height": 38.5,
+        "left": 407,
+        "right": 511,
+        "text": "看看对不对",
+        "top": 513.6484375,
+        "width": 104
+      }
+    ],
+    "pageOverflow": false,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": []
+  },
+  {
+    "id": "logic-sorter-switch-9",
+    "phase": "wrong",
+    "article": {
+      "bottom": 672.5,
+      "height": 600,
+      "left": 286,
+      "right": 984,
+      "top": 72.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [
+      {
+        "badge": 0,
+        "bottom": 503.6484375,
+        "height": 54,
+        "images": 1,
+        "label": "红色方块",
+        "left": 302,
+        "overflow": false,
+        "right": 518.6640625,
+        "text": "红色方块",
+        "top": 449.6484375,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 503.6484375,
+        "height": 54,
+        "images": 1,
+        "label": "红色圆片",
+        "left": 526.6640625,
+        "overflow": false,
+        "right": 743.328125,
+        "text": "红色圆片",
+        "top": 449.6484375,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 503.6484375,
+        "height": 54,
+        "images": 1,
+        "label": "蓝色圆片",
+        "left": 751.328125,
+        "overflow": false,
+        "right": 968,
+        "text": "蓝色圆片",
+        "top": 449.6484375,
+        "width": 216.671875
+      }
+    ],
+    "controls": [
+      {
+        "bottom": 552.1484375,
+        "height": 38.5,
+        "left": 302,
+        "right": 399,
+        "text": "从头来",
+        "top": 513.6484375,
+        "width": 97
+      },
+      {
+        "bottom": 551.1484375,
+        "height": 38.5,
+        "left": 407,
+        "right": 511,
+        "text": "看看对不对",
+        "top": 512.6484375,
+        "width": 104
+      }
+    ],
+    "pageOverflow": false,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": []
+  },
+  {
+    "id": "logic-sorter-switch-9",
+    "phase": "solved",
+    "article": {
+      "bottom": 672.5,
+      "height": 600,
+      "left": 286,
+      "right": 984,
+      "top": 72.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [
+      {
+        "badge": 0,
+        "bottom": 503.6484375,
+        "height": 54,
+        "images": 1,
+        "label": "红色方块",
+        "left": 302,
+        "overflow": false,
+        "right": 518.6640625,
+        "text": "红色方块",
+        "top": 449.6484375,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 503.6484375,
+        "height": 54,
+        "images": 1,
+        "label": "红色圆片",
+        "left": 526.6640625,
+        "overflow": false,
+        "right": 743.328125,
+        "text": "红色圆片",
+        "top": 449.6484375,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 503.6484375,
+        "height": 54,
+        "images": 1,
+        "label": "蓝色圆片",
+        "left": 751.328125,
+        "overflow": false,
+        "right": 968,
+        "text": "蓝色圆片",
+        "top": 449.6484375,
+        "width": 216.671875
+      }
+    ],
+    "controls": [
+      {
+        "bottom": 552.1484375,
+        "height": 38.5,
+        "left": 302,
+        "right": 399,
+        "text": "从头来",
+        "top": 513.6484375,
+        "width": 97
+      },
+      {
+        "bottom": 551.1484375,
+        "height": 38.5,
+        "left": 407,
+        "right": 504,
+        "text": "下一题",
+        "top": 512.6484375,
+        "width": 97
+      }
+    ],
+    "pageOverflow": false,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": []
+  },
+  {
+    "id": "logic-sorter-switch-10",
+    "phase": "task",
+    "article": {
+      "bottom": 672.5,
+      "height": 600,
+      "left": 286,
+      "right": 984,
+      "top": 72.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [
+      {
+        "badge": 0,
+        "bottom": 538.6015625,
+        "height": 54,
+        "images": 1,
+        "label": "蓝色圆片",
+        "left": 302,
+        "overflow": false,
+        "right": 518.6640625,
+        "text": "蓝色圆片",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 538.6015625,
+        "height": 54,
+        "images": 0,
+        "label": "蓝色方块",
+        "left": 526.6640625,
+        "overflow": false,
+        "right": 743.328125,
+        "text": "蓝色方块",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 538.6015625,
+        "height": 54,
+        "images": 1,
+        "label": "红色方块",
+        "left": 751.328125,
+        "overflow": false,
+        "right": 968,
+        "text": "红色方块",
+        "top": 484.6015625,
+        "width": 216.671875
+      }
+    ],
+    "controls": [
+      {
+        "bottom": 587.1015625,
+        "height": 38.5,
+        "left": 302,
+        "right": 399,
+        "text": "从头来",
+        "top": 548.6015625,
+        "width": 97
+      },
+      {
+        "bottom": 587.1015625,
+        "height": 38.5,
+        "left": 407,
+        "right": 511,
+        "text": "看看对不对",
+        "top": 548.6015625,
+        "width": 104
+      }
+    ],
+    "pageOverflow": false,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": []
+  },
+  {
+    "id": "logic-sorter-switch-10",
+    "phase": "wrong",
+    "article": {
+      "bottom": 672.5,
+      "height": 600,
+      "left": 286,
+      "right": 984,
+      "top": 72.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [
+      {
+        "badge": 0,
+        "bottom": 538.6015625,
+        "height": 54,
+        "images": 1,
+        "label": "蓝色圆片",
+        "left": 302,
+        "overflow": false,
+        "right": 518.6640625,
+        "text": "蓝色圆片",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 538.6015625,
+        "height": 54,
+        "images": 0,
+        "label": "蓝色方块",
+        "left": 526.6640625,
+        "overflow": false,
+        "right": 743.328125,
+        "text": "蓝色方块",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 538.6015625,
+        "height": 54,
+        "images": 1,
+        "label": "红色方块",
+        "left": 751.328125,
+        "overflow": false,
+        "right": 968,
+        "text": "红色方块",
+        "top": 484.6015625,
+        "width": 216.671875
+      }
+    ],
+    "controls": [
+      {
+        "bottom": 587.1015625,
+        "height": 38.5,
+        "left": 302,
+        "right": 399,
+        "text": "从头来",
+        "top": 548.6015625,
+        "width": 97
+      },
+      {
+        "bottom": 586.1015625,
+        "height": 38.5,
+        "left": 407,
+        "right": 511,
+        "text": "看看对不对",
+        "top": 547.6015625,
+        "width": 104
+      }
+    ],
+    "pageOverflow": false,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": []
+  },
+  {
+    "id": "logic-sorter-switch-10",
+    "phase": "solved",
+    "article": {
+      "bottom": 672.5,
+      "height": 600,
+      "left": 286,
+      "right": 984,
+      "top": 72.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [
+      {
+        "badge": 0,
+        "bottom": 538.6015625,
+        "height": 54,
+        "images": 1,
+        "label": "蓝色圆片",
+        "left": 302,
+        "overflow": false,
+        "right": 518.6640625,
+        "text": "蓝色圆片",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 538.6015625,
+        "height": 54,
+        "images": 0,
+        "label": "蓝色方块",
+        "left": 526.6640625,
+        "overflow": false,
+        "right": 743.328125,
+        "text": "蓝色方块",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 538.6015625,
+        "height": 54,
+        "images": 1,
+        "label": "红色方块",
+        "left": 751.328125,
+        "overflow": false,
+        "right": 968,
+        "text": "红色方块",
+        "top": 484.6015625,
+        "width": 216.671875
+      }
+    ],
+    "controls": [
+      {
+        "bottom": 587.1015625,
+        "height": 38.5,
+        "left": 302,
+        "right": 399,
+        "text": "从头来",
+        "top": 548.6015625,
+        "width": 97
+      },
+      {
+        "bottom": 586.1015625,
+        "height": 38.5,
+        "left": 407,
+        "right": 504,
+        "text": "下一题",
+        "top": 547.6015625,
+        "width": 97
+      }
+    ],
+    "pageOverflow": false,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": []
+  },
+  {
+    "id": "logic-sorter-switch-11",
+    "phase": "task",
+    "article": {
+      "bottom": 672.5,
+      "height": 600,
+      "left": 286,
+      "right": 984,
+      "top": 72.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [
+      {
+        "badge": 0,
+        "bottom": 538.6015625,
+        "height": 54,
+        "images": 1,
+        "label": "黄色方块",
+        "left": 302,
+        "overflow": false,
+        "right": 518.6640625,
+        "text": "黄色方块",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 538.6015625,
+        "height": 54,
+        "images": 1,
+        "label": "绿色圆片",
+        "left": 526.6640625,
+        "overflow": false,
+        "right": 743.328125,
+        "text": "绿色圆片",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 538.6015625,
+        "height": 54,
+        "images": 1,
+        "label": "黄色圆片",
+        "left": 751.328125,
+        "overflow": false,
+        "right": 968,
+        "text": "黄色圆片",
+        "top": 484.6015625,
+        "width": 216.671875
+      }
+    ],
+    "controls": [
+      {
+        "bottom": 587.1015625,
+        "height": 38.5,
+        "left": 302,
+        "right": 399,
+        "text": "从头来",
+        "top": 548.6015625,
+        "width": 97
+      },
+      {
+        "bottom": 587.1015625,
+        "height": 38.5,
+        "left": 407,
+        "right": 511,
+        "text": "看看对不对",
+        "top": 548.6015625,
+        "width": 104
+      }
+    ],
+    "pageOverflow": false,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": []
+  },
+  {
+    "id": "logic-sorter-switch-11",
+    "phase": "wrong",
+    "article": {
+      "bottom": 672.5,
+      "height": 600,
+      "left": 286,
+      "right": 984,
+      "top": 72.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [
+      {
+        "badge": 0,
+        "bottom": 538.6015625,
+        "height": 54,
+        "images": 1,
+        "label": "黄色方块",
+        "left": 302,
+        "overflow": false,
+        "right": 518.6640625,
+        "text": "黄色方块",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 538.6015625,
+        "height": 54,
+        "images": 1,
+        "label": "绿色圆片",
+        "left": 526.6640625,
+        "overflow": false,
+        "right": 743.328125,
+        "text": "绿色圆片",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 538.6015625,
+        "height": 54,
+        "images": 1,
+        "label": "黄色圆片",
+        "left": 751.328125,
+        "overflow": false,
+        "right": 968,
+        "text": "黄色圆片",
+        "top": 484.6015625,
+        "width": 216.671875
+      }
+    ],
+    "controls": [
+      {
+        "bottom": 587.1015625,
+        "height": 38.5,
+        "left": 302,
+        "right": 399,
+        "text": "从头来",
+        "top": 548.6015625,
+        "width": 97
+      },
+      {
+        "bottom": 586.1015625,
+        "height": 38.5,
+        "left": 407,
+        "right": 511,
+        "text": "看看对不对",
+        "top": 547.6015625,
+        "width": 104
+      }
+    ],
+    "pageOverflow": false,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": []
+  },
+  {
+    "id": "logic-sorter-switch-11",
+    "phase": "solved",
+    "article": {
+      "bottom": 672.5,
+      "height": 600,
+      "left": 286,
+      "right": 984,
+      "top": 72.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [
+      {
+        "badge": 0,
+        "bottom": 538.6015625,
+        "height": 54,
+        "images": 1,
+        "label": "黄色方块",
+        "left": 302,
+        "overflow": false,
+        "right": 518.6640625,
+        "text": "黄色方块",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 538.6015625,
+        "height": 54,
+        "images": 1,
+        "label": "绿色圆片",
+        "left": 526.6640625,
+        "overflow": false,
+        "right": 743.328125,
+        "text": "绿色圆片",
+        "top": 484.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 538.6015625,
+        "height": 54,
+        "images": 1,
+        "label": "黄色圆片",
+        "left": 751.328125,
+        "overflow": false,
+        "right": 968,
+        "text": "黄色圆片",
+        "top": 484.6015625,
+        "width": 216.671875
+      }
+    ],
+    "controls": [
+      {
+        "bottom": 587.1015625,
+        "height": 38.5,
+        "left": 302,
+        "right": 399,
+        "text": "从头来",
+        "top": 548.6015625,
+        "width": 97
+      },
+      {
+        "bottom": 586.1015625,
+        "height": 38.5,
+        "left": 407,
+        "right": 520,
+        "text": "完成关卡",
+        "top": 547.6015625,
+        "width": 113
+      }
+    ],
+    "pageOverflow": false,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": []
+  },
+  {
+    "id": "logic-story-evidence-1",
+    "phase": "context",
+    "article": {
+      "bottom": 672.5,
+      "height": 600,
+      "left": 286,
+      "right": 984,
+      "top": 72.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [],
+    "controls": [],
+    "pageOverflow": false,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": []
+  },
+  {
+    "id": "logic-story-evidence-1",
+    "phase": "task",
+    "article": {
+      "bottom": 692.1484375,
+      "height": 619.6484375,
+      "left": 286,
+      "right": 984,
+      "top": 72.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [
+      {
+        "badge": 0,
+        "bottom": 619.6484375,
+        "height": 136,
+        "images": 1,
+        "label": "小猫",
+        "left": 302,
+        "overflow": false,
+        "right": 518.6640625,
+        "text": "小猫",
+        "top": 483.6484375,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 619.6484375,
+        "height": 136,
+        "images": 1,
+        "label": "小狗",
+        "left": 526.6640625,
+        "overflow": false,
+        "right": 743.328125,
+        "text": "小狗",
+        "top": 483.6484375,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 618.6484375,
+        "height": 136,
+        "images": 1,
+        "label": "小兔",
+        "left": 751.328125,
+        "overflow": false,
+        "right": 968,
+        "text": "小兔",
+        "top": 482.6484375,
+        "width": 216.671875
+      }
+    ],
+    "controls": [
+      {
+        "bottom": 668.1484375,
+        "height": 38.5,
+        "left": 302,
+        "right": 399,
+        "text": "从头来",
+        "top": 629.6484375,
+        "width": 97
+      },
+      {
+        "bottom": 668.1484375,
+        "height": 38.5,
+        "left": 407,
+        "right": 511,
+        "text": "看看对不对",
+        "top": 629.6484375,
+        "width": 104
+      }
+    ],
+    "pageOverflow": false,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": []
+  },
+  {
+    "id": "logic-story-evidence-1",
+    "phase": "wrong",
+    "article": {
+      "bottom": 740.1484375,
+      "height": 667.6484375,
+      "left": 286,
+      "right": 984,
+      "top": 72.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [
+      {
+        "badge": 0,
+        "bottom": 619.6484375,
+        "height": 136,
+        "images": 1,
+        "label": "小猫",
+        "left": 302,
+        "overflow": false,
+        "right": 518.6640625,
+        "text": "小猫",
+        "top": 483.6484375,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 619.6484375,
+        "height": 136,
+        "images": 1,
+        "label": "小狗",
+        "left": 526.6640625,
+        "overflow": false,
+        "right": 743.328125,
+        "text": "小狗",
+        "top": 483.6484375,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 619.6484375,
+        "height": 136,
+        "images": 1,
+        "label": "小兔",
+        "left": 751.328125,
+        "overflow": false,
+        "right": 968,
+        "text": "小兔",
+        "top": 483.6484375,
+        "width": 216.671875
+      }
+    ],
+    "controls": [
+      {
+        "bottom": 668.1484375,
+        "height": 38.5,
+        "left": 302,
+        "right": 399,
+        "text": "从头来",
+        "top": 629.6484375,
+        "width": 97
+      },
+      {
+        "bottom": 667.1484375,
+        "height": 38.5,
+        "left": 407,
+        "right": 511,
+        "text": "看看对不对",
+        "top": 628.6484375,
+        "width": 104
+      }
+    ],
+    "pageOverflow": true,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": [
+      "page overflow"
+    ]
+  },
+  {
+    "id": "logic-story-evidence-1",
+    "phase": "solved",
+    "article": {
+      "bottom": 699.734375,
+      "height": 627.234375,
+      "left": 286,
+      "right": 984,
+      "top": 72.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [],
+    "controls": [
+      {
+        "bottom": 617.734375,
+        "height": 38.5,
+        "left": 302,
+        "right": 399,
+        "text": "从头来",
+        "top": 579.234375,
+        "width": 97
+      },
+      {
+        "bottom": 617.734375,
+        "height": 38.5,
+        "left": 407,
+        "right": 520,
+        "text": "完成关卡",
+        "top": 579.234375,
+        "width": 113
+      }
+    ],
+    "pageOverflow": false,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": []
+  },
+  {
+    "id": "logic-story-evidence-2",
+    "phase": "context",
+    "article": {
+      "bottom": 672.5,
+      "height": 600,
+      "left": 286,
+      "right": 984,
+      "top": 72.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [],
+    "controls": [],
+    "pageOverflow": false,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": []
+  },
+  {
+    "id": "logic-story-evidence-2",
+    "phase": "task",
+    "article": {
+      "bottom": 727.1015625,
+      "height": 654.6015625,
+      "left": 286,
+      "right": 984,
+      "top": 72.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [
+      {
+        "badge": 0,
+        "bottom": 654.6015625,
+        "height": 136,
+        "images": 1,
+        "label": "小猫",
+        "left": 302,
+        "overflow": false,
+        "right": 518.6640625,
+        "text": "小猫",
+        "top": 518.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 654.6015625,
+        "height": 136,
+        "images": 1,
+        "label": "小狗",
+        "left": 526.6640625,
+        "overflow": false,
+        "right": 743.328125,
+        "text": "小狗",
+        "top": 518.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 653.6015625,
+        "height": 136,
+        "images": 0,
+        "label": "一样多",
+        "left": 751.328125,
+        "overflow": false,
+        "right": 968,
+        "text": "一样多",
+        "top": 517.6015625,
+        "width": 216.671875
+      }
+    ],
+    "controls": [
+      {
+        "bottom": 703.1015625,
+        "height": 38.5,
+        "left": 302,
+        "right": 399,
+        "text": "从头来",
+        "top": 664.6015625,
+        "width": 97
+      },
+      {
+        "bottom": 703.1015625,
+        "height": 38.5,
+        "left": 407,
+        "right": 511,
+        "text": "看看对不对",
+        "top": 664.6015625,
+        "width": 104
+      }
+    ],
+    "pageOverflow": true,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": [
+      "page overflow"
+    ]
+  },
+  {
+    "id": "logic-story-evidence-2",
+    "phase": "wrong",
+    "article": {
+      "bottom": 756.1015625,
+      "height": 702.6015625,
+      "left": 286,
+      "right": 984,
+      "top": 53.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [
+      {
+        "badge": 0,
+        "bottom": 635.6015625,
+        "height": 136,
+        "images": 1,
+        "label": "小猫",
+        "left": 302,
+        "overflow": false,
+        "right": 518.6640625,
+        "text": "小猫",
+        "top": 499.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 635.6015625,
+        "height": 136,
+        "images": 1,
+        "label": "小狗",
+        "left": 526.6640625,
+        "overflow": false,
+        "right": 743.328125,
+        "text": "小狗",
+        "top": 499.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 635.6015625,
+        "height": 136,
+        "images": 0,
+        "label": "一样多",
+        "left": 751.328125,
+        "overflow": false,
+        "right": 968,
+        "text": "一样多",
+        "top": 499.6015625,
+        "width": 216.671875
+      }
+    ],
+    "controls": [
+      {
+        "bottom": 684.1015625,
+        "height": 38.5,
+        "left": 302,
+        "right": 399,
+        "text": "从头来",
+        "top": 645.6015625,
+        "width": 97
+      },
+      {
+        "bottom": 683.1015625,
+        "height": 38.5,
+        "left": 407,
+        "right": 511,
+        "text": "看看对不对",
+        "top": 644.6015625,
+        "width": 104
+      }
+    ],
+    "pageOverflow": true,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": [
+      "page overflow"
+    ]
+  },
+  {
+    "id": "logic-story-evidence-2",
+    "phase": "solved",
+    "article": {
+      "bottom": 738.078125,
+      "height": 684.578125,
+      "left": 286,
+      "right": 984,
+      "top": 53.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [],
+    "controls": [
+      {
+        "bottom": 633.6875,
+        "height": 38.5,
+        "left": 302,
+        "right": 399,
+        "text": "从头来",
+        "top": 595.1875,
+        "width": 97
+      },
+      {
+        "bottom": 633.6875,
+        "height": 38.5,
+        "left": 407,
+        "right": 520,
+        "text": "完成关卡",
+        "top": 595.1875,
+        "width": 113
+      }
+    ],
+    "pageOverflow": true,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": [
+      "page overflow"
+    ]
+  },
+  {
+    "id": "logic-story-evidence-3",
+    "phase": "context",
+    "article": {
+      "bottom": 672.5,
+      "height": 600,
+      "left": 286,
+      "right": 984,
+      "top": 72.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [],
+    "controls": [],
+    "pageOverflow": false,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": []
+  },
+  {
+    "id": "logic-story-evidence-3",
+    "phase": "task",
+    "article": {
+      "bottom": 672.5,
+      "height": 600,
+      "left": 286,
+      "right": 984,
+      "top": 72.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [
+      {
+        "badge": 0,
+        "bottom": 570.6015625,
+        "height": 52,
+        "images": 0,
+        "label": "还不能确定",
+        "left": 302,
+        "overflow": false,
+        "right": 518.6640625,
+        "text": "还不能确定",
+        "top": 518.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 570.6015625,
+        "height": 52,
+        "images": 0,
+        "label": "能确定了",
+        "left": 526.6640625,
+        "overflow": false,
+        "right": 743.328125,
+        "text": "能确定了",
+        "top": 518.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 569.6015625,
+        "height": 52,
+        "images": 0,
+        "label": "肯定没吃",
+        "left": 751.328125,
+        "overflow": false,
+        "right": 968,
+        "text": "肯定没吃",
+        "top": 517.6015625,
+        "width": 216.671875
+      }
+    ],
+    "controls": [
+      {
+        "bottom": 619.1015625,
+        "height": 38.5,
+        "left": 302,
+        "right": 399,
+        "text": "从头来",
+        "top": 580.6015625,
+        "width": 97
+      },
+      {
+        "bottom": 619.1015625,
+        "height": 38.5,
+        "left": 407,
+        "right": 511,
+        "text": "看看对不对",
+        "top": 580.6015625,
+        "width": 104
+      }
+    ],
+    "pageOverflow": false,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": []
+  },
+  {
+    "id": "logic-story-evidence-3",
+    "phase": "wrong",
+    "article": {
+      "bottom": 691.1015625,
+      "height": 618.6015625,
+      "left": 286,
+      "right": 984,
+      "top": 72.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [
+      {
+        "badge": 0,
+        "bottom": 570.6015625,
+        "height": 52,
+        "images": 0,
+        "label": "还不能确定",
+        "left": 302,
+        "overflow": false,
+        "right": 518.6640625,
+        "text": "还不能确定",
+        "top": 518.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 570.6015625,
+        "height": 52,
+        "images": 0,
+        "label": "能确定了",
+        "left": 526.6640625,
+        "overflow": false,
+        "right": 743.328125,
+        "text": "能确定了",
+        "top": 518.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 570.6015625,
+        "height": 52,
+        "images": 0,
+        "label": "肯定没吃",
+        "left": 751.328125,
+        "overflow": false,
+        "right": 968,
+        "text": "肯定没吃",
+        "top": 518.6015625,
+        "width": 216.671875
+      }
+    ],
+    "controls": [
+      {
+        "bottom": 619.1015625,
+        "height": 38.5,
+        "left": 302,
+        "right": 399,
+        "text": "从头来",
+        "top": 580.6015625,
+        "width": 97
+      },
+      {
+        "bottom": 618.1015625,
+        "height": 38.5,
+        "left": 407,
+        "right": 511,
+        "text": "看看对不对",
+        "top": 579.6015625,
+        "width": 104
+      }
+    ],
+    "pageOverflow": false,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": []
+  },
+  {
+    "id": "logic-story-evidence-3",
+    "phase": "solved",
+    "article": {
+      "bottom": 734.6875,
+      "height": 662.1875,
+      "left": 286,
+      "right": 984,
+      "top": 72.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [],
+    "controls": [
+      {
+        "bottom": 652.6875,
+        "height": 38.5,
+        "left": 302,
+        "right": 399,
+        "text": "从头来",
+        "top": 614.1875,
+        "width": 97
+      },
+      {
+        "bottom": 652.6875,
+        "height": 38.5,
+        "left": 407,
+        "right": 520,
+        "text": "完成关卡",
+        "top": 614.1875,
+        "width": 113
+      }
+    ],
+    "pageOverflow": true,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": [
+      "page overflow"
+    ]
+  },
+  {
+    "id": "logic-story-evidence-4",
+    "phase": "context",
+    "article": {
+      "bottom": 672.5,
+      "height": 600,
+      "left": 286,
+      "right": 984,
+      "top": 72.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [],
+    "controls": [],
+    "pageOverflow": false,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": []
+  },
+  {
+    "id": "logic-story-evidence-4",
+    "phase": "task",
+    "article": {
+      "bottom": 692.1484375,
+      "height": 619.6484375,
+      "left": 286,
+      "right": 984,
+      "top": 72.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [
+      {
+        "badge": 0,
+        "bottom": 619.6484375,
+        "height": 136,
+        "images": 1,
+        "label": "小兔",
+        "left": 302,
+        "overflow": false,
+        "right": 518.6640625,
+        "text": "小兔",
+        "top": 483.6484375,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 619.6484375,
+        "height": 136,
+        "images": 1,
+        "label": "小猫",
+        "left": 526.6640625,
+        "overflow": false,
+        "right": 743.328125,
+        "text": "小猫",
+        "top": 483.6484375,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 618.6484375,
+        "height": 136,
+        "images": 1,
+        "label": "小狗",
+        "left": 751.328125,
+        "overflow": false,
+        "right": 968,
+        "text": "小狗",
+        "top": 482.6484375,
+        "width": 216.671875
+      }
+    ],
+    "controls": [
+      {
+        "bottom": 668.1484375,
+        "height": 38.5,
+        "left": 302,
+        "right": 399,
+        "text": "从头来",
+        "top": 629.6484375,
+        "width": 97
+      },
+      {
+        "bottom": 668.1484375,
+        "height": 38.5,
+        "left": 407,
+        "right": 511,
+        "text": "看看对不对",
+        "top": 629.6484375,
+        "width": 104
+      }
+    ],
+    "pageOverflow": false,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": []
+  },
+  {
+    "id": "logic-story-evidence-4",
+    "phase": "wrong",
+    "article": {
+      "bottom": 740.1484375,
+      "height": 667.6484375,
+      "left": 286,
+      "right": 984,
+      "top": 72.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [
+      {
+        "badge": 0,
+        "bottom": 619.6484375,
+        "height": 136,
+        "images": 1,
+        "label": "小兔",
+        "left": 302,
+        "overflow": false,
+        "right": 518.6640625,
+        "text": "小兔",
+        "top": 483.6484375,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 619.6484375,
+        "height": 136,
+        "images": 1,
+        "label": "小猫",
+        "left": 526.6640625,
+        "overflow": false,
+        "right": 743.328125,
+        "text": "小猫",
+        "top": 483.6484375,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 619.6484375,
+        "height": 136,
+        "images": 1,
+        "label": "小狗",
+        "left": 751.328125,
+        "overflow": false,
+        "right": 968,
+        "text": "小狗",
+        "top": 483.6484375,
+        "width": 216.671875
+      }
+    ],
+    "controls": [
+      {
+        "bottom": 668.1484375,
+        "height": 38.5,
+        "left": 302,
+        "right": 399,
+        "text": "从头来",
+        "top": 629.6484375,
+        "width": 97
+      },
+      {
+        "bottom": 667.1484375,
+        "height": 38.5,
+        "left": 407,
+        "right": 511,
+        "text": "看看对不对",
+        "top": 628.6484375,
+        "width": 104
+      }
+    ],
+    "pageOverflow": true,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": [
+      "page overflow"
+    ]
+  },
+  {
+    "id": "logic-story-evidence-4",
+    "phase": "solved",
+    "article": {
+      "bottom": 699.734375,
+      "height": 627.234375,
+      "left": 286,
+      "right": 984,
+      "top": 72.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [],
+    "controls": [
+      {
+        "bottom": 617.734375,
+        "height": 38.5,
+        "left": 302,
+        "right": 399,
+        "text": "从头来",
+        "top": 579.234375,
+        "width": 97
+      },
+      {
+        "bottom": 617.734375,
+        "height": 38.5,
+        "left": 407,
+        "right": 520,
+        "text": "完成关卡",
+        "top": 579.234375,
+        "width": 113
+      }
+    ],
+    "pageOverflow": false,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": []
+  },
+  {
+    "id": "logic-story-evidence-5",
+    "phase": "context",
+    "article": {
+      "bottom": 672.5,
+      "height": 600,
+      "left": 286,
+      "right": 984,
+      "top": 72.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [],
+    "controls": [],
+    "pageOverflow": false,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": []
+  },
+  {
+    "id": "logic-story-evidence-5",
+    "phase": "task",
+    "article": {
+      "bottom": 727.1015625,
+      "height": 654.6015625,
+      "left": 286,
+      "right": 984,
+      "top": 72.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [
+      {
+        "badge": 0,
+        "bottom": 654.6015625,
+        "height": 136,
+        "images": 1,
+        "label": "小狗旁边",
+        "left": 302,
+        "overflow": false,
+        "right": 518.6640625,
+        "text": "小狗旁边",
+        "top": 518.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 654.6015625,
+        "height": 136,
+        "images": 1,
+        "label": "小鸟旁边",
+        "left": 526.6640625,
+        "overflow": false,
+        "right": 743.328125,
+        "text": "小鸟旁边",
+        "top": 518.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 653.6015625,
+        "height": 136,
+        "images": 1,
+        "label": "杯子周围",
+        "left": 751.328125,
+        "overflow": false,
+        "right": 968,
+        "text": "杯子周围",
+        "top": 517.6015625,
+        "width": 216.671875
+      }
+    ],
+    "controls": [
+      {
+        "bottom": 703.1015625,
+        "height": 38.5,
+        "left": 302,
+        "right": 399,
+        "text": "从头来",
+        "top": 664.6015625,
+        "width": 97
+      },
+      {
+        "bottom": 703.1015625,
+        "height": 38.5,
+        "left": 407,
+        "right": 511,
+        "text": "看看对不对",
+        "top": 664.6015625,
+        "width": 104
+      }
+    ],
+    "pageOverflow": true,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": [
+      "page overflow"
+    ]
+  },
+  {
+    "id": "logic-story-evidence-5",
+    "phase": "wrong",
+    "article": {
+      "bottom": 756.1015625,
+      "height": 702.6015625,
+      "left": 286,
+      "right": 984,
+      "top": 53.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [
+      {
+        "badge": 0,
+        "bottom": 635.6015625,
+        "height": 136,
+        "images": 1,
+        "label": "小狗旁边",
+        "left": 302,
+        "overflow": false,
+        "right": 518.6640625,
+        "text": "小狗旁边",
+        "top": 499.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 635.6015625,
+        "height": 136,
+        "images": 1,
+        "label": "小鸟旁边",
+        "left": 526.6640625,
+        "overflow": false,
+        "right": 743.328125,
+        "text": "小鸟旁边",
+        "top": 499.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 635.6015625,
+        "height": 136,
+        "images": 1,
+        "label": "杯子周围",
+        "left": 751.328125,
+        "overflow": false,
+        "right": 968,
+        "text": "杯子周围",
+        "top": 499.6015625,
+        "width": 216.671875
+      }
+    ],
+    "controls": [
+      {
+        "bottom": 684.1015625,
+        "height": 38.5,
+        "left": 302,
+        "right": 399,
+        "text": "从头来",
+        "top": 645.6015625,
+        "width": 97
+      },
+      {
+        "bottom": 683.1015625,
+        "height": 38.5,
+        "left": 407,
+        "right": 511,
+        "text": "看看对不对",
+        "top": 644.6015625,
+        "width": 104
+      }
+    ],
+    "pageOverflow": true,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": [
+      "page overflow"
+    ]
+  },
+  {
+    "id": "logic-story-evidence-5",
+    "phase": "solved",
+    "article": {
+      "bottom": 738.078125,
+      "height": 684.578125,
+      "left": 286,
+      "right": 984,
+      "top": 53.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [],
+    "controls": [
+      {
+        "bottom": 633.6875,
+        "height": 38.5,
+        "left": 302,
+        "right": 399,
+        "text": "从头来",
+        "top": 595.1875,
+        "width": 97
+      },
+      {
+        "bottom": 633.6875,
+        "height": 38.5,
+        "left": 407,
+        "right": 520,
+        "text": "完成关卡",
+        "top": 595.1875,
+        "width": 113
+      }
+    ],
+    "pageOverflow": true,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": [
+      "page overflow"
+    ]
+  },
+  {
+    "id": "logic-story-evidence-6",
+    "phase": "context",
+    "article": {
+      "bottom": 672.5,
+      "height": 600,
+      "left": 286,
+      "right": 984,
+      "top": 72.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [],
+    "controls": [],
+    "pageOverflow": false,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": []
+  },
+  {
+    "id": "logic-story-evidence-6",
+    "phase": "task",
+    "article": {
+      "bottom": 727.1015625,
+      "height": 654.6015625,
+      "left": 286,
+      "right": 984,
+      "top": 72.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [
+      {
+        "badge": 0,
+        "bottom": 654.6015625,
+        "height": 136,
+        "images": 1,
+        "label": "小兔",
+        "left": 302,
+        "overflow": false,
+        "right": 518.6640625,
+        "text": "小兔",
+        "top": 518.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 654.6015625,
+        "height": 136,
+        "images": 1,
+        "label": "小猫",
+        "left": 526.6640625,
+        "overflow": false,
+        "right": 743.328125,
+        "text": "小猫",
+        "top": 518.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 653.6015625,
+        "height": 136,
+        "images": 0,
+        "label": "都一样",
+        "left": 751.328125,
+        "overflow": false,
+        "right": 968,
+        "text": "都一样",
+        "top": 517.6015625,
+        "width": 216.671875
+      }
+    ],
+    "controls": [
+      {
+        "bottom": 703.1015625,
+        "height": 38.5,
+        "left": 302,
+        "right": 399,
+        "text": "从头来",
+        "top": 664.6015625,
+        "width": 97
+      },
+      {
+        "bottom": 703.1015625,
+        "height": 38.5,
+        "left": 407,
+        "right": 511,
+        "text": "看看对不对",
+        "top": 664.6015625,
+        "width": 104
+      }
+    ],
+    "pageOverflow": true,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": [
+      "page overflow"
+    ]
+  },
+  {
+    "id": "logic-story-evidence-6",
+    "phase": "wrong",
+    "article": {
+      "bottom": 756.1015625,
+      "height": 702.6015625,
+      "left": 286,
+      "right": 984,
+      "top": 53.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [
+      {
+        "badge": 0,
+        "bottom": 635.6015625,
+        "height": 136,
+        "images": 1,
+        "label": "小兔",
+        "left": 302,
+        "overflow": false,
+        "right": 518.6640625,
+        "text": "小兔",
+        "top": 499.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 635.6015625,
+        "height": 136,
+        "images": 1,
+        "label": "小猫",
+        "left": 526.6640625,
+        "overflow": false,
+        "right": 743.328125,
+        "text": "小猫",
+        "top": 499.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 635.6015625,
+        "height": 136,
+        "images": 0,
+        "label": "都一样",
+        "left": 751.328125,
+        "overflow": false,
+        "right": 968,
+        "text": "都一样",
+        "top": 499.6015625,
+        "width": 216.671875
+      }
+    ],
+    "controls": [
+      {
+        "bottom": 684.1015625,
+        "height": 38.5,
+        "left": 302,
+        "right": 399,
+        "text": "从头来",
+        "top": 645.6015625,
+        "width": 97
+      },
+      {
+        "bottom": 683.1015625,
+        "height": 38.5,
+        "left": 407,
+        "right": 511,
+        "text": "看看对不对",
+        "top": 644.6015625,
+        "width": 104
+      }
+    ],
+    "pageOverflow": true,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": [
+      "page overflow"
+    ]
+  },
+  {
+    "id": "logic-story-evidence-6",
+    "phase": "solved",
+    "article": {
+      "bottom": 707.9921875,
+      "height": 645.9921875,
+      "left": 286,
+      "right": 984,
+      "top": 62,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [],
+    "controls": [
+      {
+        "bottom": 625.9921875,
+        "height": 38.5,
+        "left": 302,
+        "right": 399,
+        "text": "从头来",
+        "top": 587.4921875,
+        "width": 97
+      },
+      {
+        "bottom": 625.9921875,
+        "height": 38.5,
+        "left": 407,
+        "right": 520,
+        "text": "完成关卡",
+        "top": 587.4921875,
+        "width": 113
+      }
+    ],
+    "pageOverflow": true,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": [
+      "page overflow"
+    ]
+  },
+  {
+    "id": "logic-story-evidence-7",
+    "phase": "context",
+    "article": {
+      "bottom": 672.5,
+      "height": 600,
+      "left": 286,
+      "right": 984,
+      "top": 72.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [],
+    "controls": [],
+    "pageOverflow": false,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": []
+  },
+  {
+    "id": "logic-story-evidence-7",
+    "phase": "task",
+    "article": {
+      "bottom": 672.5,
+      "height": 600,
+      "left": 286,
+      "right": 984,
+      "top": 72.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [
+      {
+        "badge": 0,
+        "bottom": 570.6015625,
+        "height": 52,
+        "images": 0,
+        "label": "能确定了",
+        "left": 302,
+        "overflow": false,
+        "right": 518.6640625,
+        "text": "能确定了",
+        "top": 518.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 570.6015625,
+        "height": 52,
+        "images": 0,
+        "label": "还不能确定",
+        "left": 526.6640625,
+        "overflow": false,
+        "right": 743.328125,
+        "text": "还不能确定",
+        "top": 518.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 569.6015625,
+        "height": 52,
+        "images": 0,
+        "label": "肯定没弄乱",
+        "left": 751.328125,
+        "overflow": false,
+        "right": 968,
+        "text": "肯定没弄乱",
+        "top": 517.6015625,
+        "width": 216.671875
+      }
+    ],
+    "controls": [
+      {
+        "bottom": 619.1015625,
+        "height": 38.5,
+        "left": 302,
+        "right": 399,
+        "text": "从头来",
+        "top": 580.6015625,
+        "width": 97
+      },
+      {
+        "bottom": 619.1015625,
+        "height": 38.5,
+        "left": 407,
+        "right": 511,
+        "text": "看看对不对",
+        "top": 580.6015625,
+        "width": 104
+      }
+    ],
+    "pageOverflow": false,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": []
+  },
+  {
+    "id": "logic-story-evidence-7",
+    "phase": "wrong",
+    "article": {
+      "bottom": 691.1015625,
+      "height": 618.6015625,
+      "left": 286,
+      "right": 984,
+      "top": 72.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [
+      {
+        "badge": 0,
+        "bottom": 570.6015625,
+        "height": 52,
+        "images": 0,
+        "label": "能确定了",
+        "left": 302,
+        "overflow": false,
+        "right": 518.6640625,
+        "text": "能确定了",
+        "top": 518.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 570.6015625,
+        "height": 52,
+        "images": 0,
+        "label": "还不能确定",
+        "left": 526.6640625,
+        "overflow": false,
+        "right": 743.328125,
+        "text": "还不能确定",
+        "top": 518.6015625,
+        "width": 216.6640625
+      },
+      {
+        "badge": 0,
+        "bottom": 570.6015625,
+        "height": 52,
+        "images": 0,
+        "label": "肯定没弄乱",
+        "left": 751.328125,
+        "overflow": false,
+        "right": 968,
+        "text": "肯定没弄乱",
+        "top": 518.6015625,
+        "width": 216.671875
+      }
+    ],
+    "controls": [
+      {
+        "bottom": 619.1015625,
+        "height": 38.5,
+        "left": 302,
+        "right": 399,
+        "text": "从头来",
+        "top": 580.6015625,
+        "width": 97
+      },
+      {
+        "bottom": 618.1015625,
+        "height": 38.5,
+        "left": 407,
+        "right": 511,
+        "text": "看看对不对",
+        "top": 579.6015625,
+        "width": 104
+      }
+    ],
+    "pageOverflow": false,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": []
+  },
+  {
+    "id": "logic-story-evidence-7",
+    "phase": "solved",
+    "article": {
+      "bottom": 734.6875,
+      "height": 662.1875,
+      "left": 286,
+      "right": 984,
+      "top": 72.5,
+      "width": 698
+    },
+    "broken": [],
+    "choices": [],
+    "controls": [
+      {
+        "bottom": 652.6875,
+        "height": 38.5,
+        "left": 302,
+        "right": 399,
+        "text": "从头来",
+        "top": 614.1875,
+        "width": 97
+      },
+      {
+        "bottom": 652.6875,
+        "height": 38.5,
+        "left": 407,
+        "right": 520,
+        "text": "完成关卡",
+        "top": 614.1875,
+        "width": 113
+      }
+    ],
+    "pageOverflow": true,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "problems": [
+      "page overflow"
+    ]
+  }
+]

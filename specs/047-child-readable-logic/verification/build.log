@@ -1,0 +1,4 @@
+$ tsc && vite build
+src/components/LogicChoicePicture.tsx(41,104): error TS2339: Property 'color' does not exist on type '{ kind: "category"; marker: "color"; color: string; } | { kind: "category"; marker: "circle" | "square"; }'.
+  Property 'color' does not exist on type '{ kind: "category"; marker: "circle" | "square"; }'.
+[ELIFECYCLE] Command failed with exit code 2.
