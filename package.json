@@ -43,7 +43,7 @@
     "generate:exploration-media": "node scripts/generate-exploration-media.mjs",
     "review:exploration": "node scripts/review-exploration.mjs",
     "audit:reference-coverage": "node scripts/audit-reference-coverage.mjs",
-    "test:enlightenment": "node --test scripts/enlightenment-quality.test.mjs",
+    "test:enlightenment": "node --test scripts/enlightenment-quality.test.mjs scripts/enlightenment-navigation.test.mjs",
     "generate:enlightenment-media": "node scripts/generate-enlightenment-bridges.mjs && node scripts/generate-enlightenment-symbols.mjs"
   },
   "dependencies": {

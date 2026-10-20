@@ -3,7 +3,7 @@ import { lazy, Suspense, useEffect, useMemo, useRef, useState } from "react";
 import { curriculumSections, getCurriculumSection, worlds, type CurriculumSectionId } from "./curriculum/catalog";
 import { ProgressiveSetGame } from "./games/ProgressiveSetGame";
 import { clearActivityProgress, mergeActivityProgress, readActivityProgress, readCatalogLocation, saveCatalogLocation } from "./services/activity-progress";
-import { readCurriculumNavigation, rememberCurriculumLocation, resolveGamePlayLocation, resolveSectionPlayLocation, saveCurriculumNavigation } from "./services/curriculum-navigation";
+import { nextGameInWorld, readCurriculumNavigation, rememberCurriculumLocation, resolveGamePlayLocation, resolveSectionPlayLocation, saveCurriculumNavigation } from "./services/curriculum-navigation";
 import { groupExplorationGames } from "./curriculum/exploration/navigation";
 import { ACTIVITY_COPY, type CatalogGame } from "./domain/activity";
 import { publicAsset } from "./publicAsset";
@@ -79,6 +79,7 @@ export function App() {
     };
   }, [games]);
   const completed = progress.completedIds.includes(selectedGame.id);
+  const nextGame = selectedGame.kind === "progressiveSet" ? nextGameInWorld(activeSectionId, selectedGame.id) : undefined;
   const selectedActivity = selectedGame.kind === "activitySet" ? selectedGame.rounds[requestedRoundIndex] : undefined;
   const activityEvidence = selectedActivity ? activityProgress.entries[`${selectedActivity.id}@${selectedActivity.revision}`] : undefined;
   const completedRoundSet = useMemo(() => new Set(progress.completedRoundIds), [progress.completedRoundIds]);
@@ -92,7 +93,12 @@ export function App() {
       saveProgress(next);
       return next;
     });
-    speak("完成啦。我们再想一想，为什么会这样？");
+    if (nextGame) {
+      setGameSearch("");
+      chooseGame(nextGame.id, true);
+    } else {
+      speak("完成啦。我们再想一想，为什么会这样？");
+    }
   }
 
   function completeRound(roundId: string, tags: string[]) {
@@ -144,10 +150,10 @@ export function App() {
     revealActiveQuestion();
   }
 
-  function chooseGame(gameId: string) {
+  function chooseGame(gameId: string, fromBeginning = false) {
     if (gameId === selectedGame.id) return;
     stopSpeech();
-    const location = resolveGamePlayLocation(activeSectionId, gameId, navigation.current.gameLocations[gameId]);
+    const location = resolveGamePlayLocation(activeSectionId, gameId, fromBeginning ? undefined : navigation.current.gameLocations[gameId]);
     setActiveWorld(location.worldId);
     setSelectedGameId(location.gameId);
     setRequestedRoundIndex(location.roundIndex);
@@ -326,6 +332,7 @@ export function App() {
               requestedRoundIndex={requestedRoundIndex}
               requestedRoundReadKey={roundReadRequestKey}
               completedRoundIds={completedRoundSet}
+              nextGameTitle={nextGame?.title}
               onComplete={() => completeGame(selectedGame)}
               onRoundIndexChange={setRequestedRoundIndex}
               onRoundComplete={completeRound}

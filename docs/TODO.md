@@ -41,6 +41,8 @@ small enough to turn into a Spec Kit feature.
 
 ## P1
 
+- Include 049's “下一题 / 下一组 / 再玩一遍” transitions in the next parent-child observation, especially whether a completed group clearly leads to the next group. Engineering regression and native checks are complete; child comprehension remains an observation task.
+
 - Observe parent-child play of the 048 hands-on bridge group: selecting two endpoints, choosing a board then a gap, taking back a board, and distinguishing a complete route from enough total wood. Confirm the interaction needs no extra adult explanation; engineering/native acceptance is not child-comprehension validation.
 
 - Observe parent-child play of the 045 order-plan story group and 046/047 Logic House visual corrections, including direct category groups, concrete river gaps and short spoken judgments, and calibrate the 2.4-second step pace. Reduced-motion behavior has code review coverage; repeat with the OS preference enabled on a suitable acceptance machine without changing a user's personal settings during routine QA.

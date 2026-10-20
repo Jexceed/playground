@@ -1,0 +1,42 @@
+[
+  {
+    "case": "completed bridge round 2",
+    "result": "下一题 → 第3/8题，木板空置，试试看待操作"
+  },
+  {
+    "case": "completed bridge last round with search filter and saved next group last question",
+    "result": "下一组 → 同类小侦探第1/12题"
+  },
+  {
+    "case": "last round with only round 2 missing",
+    "result": "去做还没完成的题 → 第2/8题，完成数7/489"
+  },
+  {
+    "case": "fill final historical gap at round 2",
+    "result": "8/8已做后仍显示下一题并到第3题"
+  },
+  {
+    "case": "reload after next round",
+    "result": "恢复桥第3/8题"
+  },
+  {
+    "case": "last group last question completed",
+    "result": "完成关卡 → 可见完成提示与再玩一遍"
+  },
+  {
+    "case": "replay after final group completion",
+    "result": "第1/10题，保留10/10历史完成"
+  },
+  {
+    "case": "memory question next state",
+    "result": "第2/12题重新展示图卡及遮住再答，不能沿用上题可答状态"
+  },
+  {
+    "case": "wrong answer",
+    "result": "保留本题反馈，没有下一题按钮"
+  },
+  {
+    "case": "timed observation next question",
+    "result": "第12/15题停在准备好再看，未自动计时，检查按钮禁用"
+  }
+]

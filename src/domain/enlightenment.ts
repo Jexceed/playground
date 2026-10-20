@@ -30,6 +30,13 @@ export function completedGameRounds(game: GameConfig, completedIds: ReadonlySet<
   return game.rounds.filter(round => completedIds.has(round.id));
 }
 
+/** Replay follows question order; history only decides where to go at the end. */
+export function nextEnlightenmentRoundIndex(game: Pick<GameConfig, "rounds">, currentIndex: number, completedIds: ReadonlySet<string>): number | null {
+  if (currentIndex < game.rounds.length - 1) return currentIndex + 1;
+  const firstIncomplete = game.rounds.findIndex(round => !completedIds.has(round.id));
+  return firstIncomplete < 0 ? null : firstIncomplete;
+}
+
 /** Balanced positions, stable per group, without repeating a fixed answer cycle. */
 export function answerPositionSchedule(length: number, choices: number, key: string): number[] {
   if (choices < 2) return Array(length).fill(0);

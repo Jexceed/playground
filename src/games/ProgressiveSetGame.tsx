@@ -4,14 +4,14 @@ import { LogicLessonBoard, LogicPicture, hasLogicPicture, LogicTaskCue, LogicRel
 import { logicLessonFor, logicTaskCueFor, logicActionRules, logicRelationFrames, type LogicLesson } from "../data/logicLessonVisuals";
 import { LogicChoicePicture, logicChoicePictureFor } from "../components/LogicChoicePicture";
 import { ArrowRight, Check, RotateCcw } from "lucide-react";
-import { Fragment, useCallback, useEffect, useId, useMemo, useRef, useState } from "react";
+import { Fragment, useCallback, useEffect, useId, useRef, useState } from "react";
 import type { CSSProperties } from "react";
 import { OrderSequenceBoard } from "../components/OrderSequenceBoard";
 import { orderStoryImage } from "../data/orderStories";
 import { GuideMascot } from "../components/GuideMascot";
 import { VisualGlyph, VisualToken, visualMetaFor, visualParts } from "../components/VisualToken";
 import { imageGallery } from "../data/imageGallery";
-import { completedGameRounds, ENLIGHTENMENT_COPY, initialObservationPhase, observationTransition, type ObservationPhase } from "../domain/enlightenment";
+import { nextEnlightenmentRoundIndex, ENLIGHTENMENT_COPY, initialObservationPhase, observationTransition, type ObservationPhase } from "../domain/enlightenment";
 import { publicAsset } from "../publicAsset";
 import { playTone, speak, stopSpeech } from "../speech";
 import type { GameConfig, GameRound, GraphicChallengeOption, GraphicFigure, GraphicFigureGroup } from "../types";
@@ -21,6 +21,7 @@ export function ProgressiveSetGame({
   requestedRoundIndex,
   requestedRoundReadKey,
   completedRoundIds,
+  nextGameTitle,
   onComplete,
   onRoundComplete,
   onRoundIndexChange,
@@ -29,6 +30,7 @@ export function ProgressiveSetGame({
   requestedRoundIndex: number;
   requestedRoundReadKey: number;
   completedRoundIds: ReadonlySet<string>;
+  nextGameTitle?: string;
   onComplete: () => void;
   onRoundComplete: (roundId: string, tags: string[]) => void;
   onRoundIndexChange: (index: number) => void;
@@ -50,8 +52,12 @@ export function ProgressiveSetGame({
   useEffect(() => {
     const nextIndex = Math.min(Math.max(requestedRoundIndex, 0), game.rounds.length - 1);
     const shouldReadRequestedRound = requestedRoundReadKey !== lastRoundReadKey.current;
-    if (shouldReadRequestedRound) lastRoundReadKey.current = requestedRoundReadKey;
+    if (shouldReadRequestedRound) {
+      lastRoundReadKey.current = requestedRoundReadKey;
+      setCompletedOnce(false);
+    }
     if (nextIndex !== roundIndex) {
+      setCompletedOnce(false);
       setStoryTaskRound(null);
       setRoundIndex(nextIndex);
       setSelected(null);
@@ -74,8 +80,7 @@ export function ProgressiveSetGame({
   const isLastRound = roundIndex === game.rounds.length - 1;
   const timedObservation = Boolean(round.observation);
   const canAnswer = observationPhase === "answering";
-  const completedRounds = useMemo(() => completedGameRounds(game, completedRoundIds), [game, completedRoundIds]);
-  const allRoundsComplete = completedRounds.length === game.rounds.length;
+  const nextIndex = nextEnlightenmentRoundIndex(game, roundIndex, completedRoundIds);
 
   useEffect(() => {
     if (!round.observation || observationPhase !== "observing") return;
@@ -143,14 +148,15 @@ export function ProgressiveSetGame({
 
   function nextRound() {
     if (!isCorrect) return;
-    if (allRoundsComplete) {
-      if (!completedOnce) {
-        setCompletedOnce(true);
-        onComplete();
-      }
+    if (completedOnce) {
+      resetGame();
       return;
     }
-    const nextIndex = isLastRound ? game.rounds.findIndex(item => !completedRoundIds.has(item.id)) : roundIndex + 1;
+    if (nextIndex === null) {
+      setCompletedOnce(true);
+      onComplete();
+      return;
+    }
     const requestedRound = game.rounds[nextIndex];
     setStoryTaskRound(null);
     setRoundIndex(nextIndex);
@@ -293,12 +299,15 @@ export function ProgressiveSetGame({
           </button>
         )}
         {answered && (
-          <button type="button" className="primary" disabled={!isCorrect} onClick={nextRound} data-testid="next-round">
-            <span>{allRoundsComplete ? "完成关卡" : isLastRound ? "去做还没完成的题" : "下一题"}</span>
+          <button type="button" className="primary" disabled={!isCorrect} onClick={nextRound} data-testid="next-round"
+            title={!completedOnce && nextIndex === null && nextGameTitle ? `下一组：${nextGameTitle}` : undefined}>
+            <span>{completedOnce ? "再玩一遍" : nextIndex !== null ? (isLastRound ? "去做还没完成的题" : "下一题") : nextGameTitle ? "下一组" : "完成关卡"}</span>
             <ArrowRight size={18} />
           </button>
         )}
       </div>}
+
+      {completedOnce && !nextGameTitle && <p className="feedback success" role="status">完成啦。我们再想一想，为什么会这样？</p>}
 
       {!showStoryScene && (answered || retryMessage) && (
         <p className={`feedback ${isCorrect ? "success" : "needs-work"}`}>

@@ -39,6 +39,15 @@ function isNavigation(value: unknown): value is CurriculumNavigation | SectionNa
     && Object.entries(nav.gameLocations).every(([id, location]) => isLocation(location) && location.gameId === id);
 }
 
+/** Continue within the full world catalog, independent of the sidebar search. */
+export function nextGameInWorld(sectionId: CurriculumSectionId, gameId: string) {
+  const games = getCurriculumSection(sectionId).games;
+  const current = games.find(game => game.id === gameId);
+  if (!current) return undefined;
+  const worldGames = games.filter(game => game.world === current.world);
+  return worldGames[worldGames.findIndex(game => game.id === gameId) + 1];
+}
+
 /** Missing questions start at the selected group's beginning, never another group. */
 export function resolveGamePlayLocation(sectionId: CurriculumSectionId, gameId: string, location?: CatalogLocation): LastPlayLocation {
   const section = getCurriculumSection(sectionId);

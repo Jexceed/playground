@@ -1,0 +1,30 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>049 隔离导航验收</title>
+<h1>049 隔离导航验收</h1><p>仅允许在127.0.0.1:5297覆盖本轮测试数据；不读取Mac应用记录。</p>
+<label>题组<select id="game"></select></label><label>题号<input id="round" type="number" value="2" min="1"></label>
+<label>完成记录<select id="history"><option value="all">全部已做</option><option value="last">只做末题</option><option value="gap">仅第2题未做</option><option value="none">都没做</option></select></label>
+<button id="seed">设置并打开</button><h2>当前测试数据</h2><pre id="report"></pre>
+<script type="module">
+import { games } from '/src/data/games.ts';
+const pick=document.querySelector('#game');
+for(const game of games)pick.add(new Option(game.title,game.id));pick.value='logic-space-bridge';
+const stored=JSON.parse(localStorage.getItem('thinking-island-progress')||'null');
+const nav=JSON.parse(localStorage.getItem('thinking-island-curriculum-navigation')||'null');
+document.querySelector('#report').textContent=JSON.stringify({progress:stored,navigation:nav},null,2);
+document.querySelector('#seed').onclick=()=>{
+if(location.origin!=='http://127.0.0.1:5297')throw Error('Use isolated QA origin');
+const game=games.find(g=>g.id===pick.value), index=Math.min(game.rounds.length-1,Math.max(0,+document.querySelector('#round').value-1));
+const mode=document.querySelector('#history').value;
+const rounds=mode==='all'?game.rounds:mode==='last'?[game.rounds.at(-1)]:mode==='gap'?game.rounds.filter((r,i)=>i!==1):[];
+const progress={completedIds:mode==='all'?[game.id]:[],completedRoundIds:rounds.map(r=>r.id),abilityTags:[]};
+const loc={schemaVersion:1,worldId:game.world,gameId:game.id,roundId:game.rounds[index].id};
+// Also seed a later saved position in the following group, to distinguish resume from explicit continuation.
+const same=games.filter(g=>g.world===game.world), next=same[same.indexOf(game)+1];
+const nextLoc=next?{schemaVersion:1,worldId:next.world,gameId:next.id,roundId:next.rounds.at(-1).id}:null;
+localStorage.setItem('thinking-island-progress',JSON.stringify(progress));
+localStorage.setItem('thinking-island-catalog-location',JSON.stringify(loc));
+localStorage.setItem('thinking-island-last-play-location',JSON.stringify({worldId:game.world,gameId:game.id,roundIndex:index}));
+const old=JSON.parse(localStorage.getItem('thinking-island-curriculum-navigation'));
+if(old){old.activeSectionId='enlightenment';old.locations.enlightenment=loc;old.gameLocations={[game.id]:loc,...(nextLoc?{[next.id]:nextLoc}:{})};localStorage.setItem('thinking-island-curriculum-navigation',JSON.stringify(old));}
+location.href='/';
+};
+</script></html>

@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-10-20
+
+### Fix enlightenment replay and end-of-group navigation
+
+- Fixed “完成关卡” appearing in the middle of previously completed groups and leaving children on the same question. Every non-final correct answer now offers “下一题”, independently of historical completion.
+- At the last question, continue to the first missing question or start the next group in the same theme at question 1. Search filters and the next group's old resume position do not change that destination. The theme's final group shows visible completion feedback and “再玩一遍”.
+- Passed 45 related regressions, including navigation checks across all 40 enlightenment groups, production build and curriculum audit. Browser checks covered replay, gap recovery, filtered next-group navigation, reload, wrong answers, memory and timed observation. The rebuilt Applications app passed real question/group transitions, final completion and replay checks; existing completion stayed 274/489 and the original position was restored.
+- Curriculum content, answers, pictures and the 4210 aligned Edge voice entries are unchanged. Evidence: [049 verification](../specs/049-enlightenment-next-round/verification.md).
+
 ## 2026-10-19
 
 ### Use main as the default working branch

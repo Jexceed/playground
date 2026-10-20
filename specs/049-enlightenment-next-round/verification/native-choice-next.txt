@@ -1,0 +1,16 @@
+The following is a diff from the previous accessibility tree for Window: "小小思考屋" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 71-78, 109
+~						63 text 第  2  /  12  题 ·
+~					67 heading 这些都属于交通工具。谁也能放进这一组？, Value: 3
+~						68 text 这些都属于交通工具。谁也能放进这一组？
+~					108 container 题目画面
++						109 text 交通工具
++						110 button 小汽车
++						111 button 公交车
++						112 button 自行车
++					113 button 风筝
++					114 button 足球
++					115 button 飞机
++					79 button 从头来
++					116 button (disabled) 看看对不对
+The focused UI element is 61 container 同类小侦探

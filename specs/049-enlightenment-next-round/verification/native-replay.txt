@@ -1,0 +1,25 @@
+The following is a diff from the previous accessibility tree for Window: "小小思考屋" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 157-159, 161-166
+~						106 text 第  1  /  10  题 ·
+~						107 container 难度 L4，中等：需要两步观察或简单比较，不能只看一个显眼线索。 在 3 行 x 3 列小地图中定位。主要训练方向执行、一步路线。, Help: 难度判定：中等：需要两步观察或简单比较，不能只看一个显眼线索。 在 3 行 x 3 列小地图中定位。主要训练方向执行、一步路线。
+~							109 text L4
+~					110 heading 从小狗出发，往右一步到哪里？, Value: 3
+~						111 text 从小狗出发，往右一步到哪里？
+~					112 text 先找到起点，再走一步。
+~							145 text 1 2 3 A
+~							146 button 小狗
+~							147 button 苹果
+~							148 button 小鸟
+~							149 text B
+~							150 button 足球
+~							151 button 盒子
+~							152 button 书包
+~							153 text C
+~							154 button 小鱼
+~							155 button 蛋糕
+~							156 button 终点
++					157 button 苹果
++					158 button 足球
++					159 button 小鸟
++					160 button (disabled) 看看对不对
+The focused UI element is 47 container 路线听指令
