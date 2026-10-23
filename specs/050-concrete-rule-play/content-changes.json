@@ -1,0 +1,1286 @@
+[
+  {
+    "id": "explore-learn-rule-transfer-1",
+    "fields": [
+      "prompt",
+      "instruction",
+      "clues",
+      "hints",
+      "success",
+      "parentPrompt",
+      "protocol",
+      "illustration",
+      "presentation"
+    ],
+    "before": {
+      "prompt": "让2个圆片经过规则机，最后变成几个？",
+      "instruction": "选出符合条件的一张图卡。",
+      "clues": [
+        "先添上2个。"
+      ],
+      "hints": [
+        "先添上2个。",
+        "先加2，得到4。换了起始数量，也要按同一条规则做。"
+      ],
+      "success": "先加2，得到4。换了起始数量，也要按同一条规则做。",
+      "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+      "protocol": {
+        "kind": "learnThenTransfer",
+        "demonstration": "先看例子：一个圆片先添2个，得到3个。接下来换一个起始数量，仍用这条规则。"
+      },
+      "illustration": {
+        "src": "/images/items/exploration/diagram-c6635eb6.png",
+        "alt": "让2个圆片经过规则机，最后变成几个？",
+        "width": 600,
+        "height": 310
+      }
+    },
+    "after": {
+      "prompt": "放进2个圆片，最后有几个？",
+      "instruction": "数一数，选出最后的圆片。",
+      "clues": [
+        "添上2个圆片。"
+      ],
+      "hints": [
+        "先看看原来的圆片，再数添进来的圆片。",
+        "原来的和添进来的，都要数进去。"
+      ],
+      "success": "先添上2个，一共有4个。起先的圆片换了，玩法还是一样。",
+      "parentPrompt": "添进来的是哪几个？换一个起始数量，你还会用这条规则吗？",
+      "protocol": {
+        "kind": "learnThenTransfer",
+        "demonstration": "先用一个圆片试一试。添上2个圆片，看看会变成几个。"
+      },
+      "illustration": {
+        "src": "/images/items/exploration/diagram-c6635eb6.png",
+        "alt": "放进2个圆片，最后有几个？",
+        "width": 600,
+        "height": 310
+      },
+      "presentation": {
+        "evidence": {
+          "kind": "ruleMachine",
+          "start": 2,
+          "add": 2,
+          "multiplier": 1
+        }
+      }
+    }
+  },
+  {
+    "id": "explore-learn-rule-transfer-2",
+    "fields": [
+      "prompt",
+      "instruction",
+      "clues",
+      "hints",
+      "success",
+      "parentPrompt",
+      "protocol",
+      "illustration",
+      "presentation"
+    ],
+    "before": {
+      "prompt": "让3个圆片经过规则机，最后变成几个？",
+      "instruction": "选出符合条件的一张图卡。",
+      "clues": [
+        "先添上2个。"
+      ],
+      "hints": [
+        "先添上2个。",
+        "先加2，得到5。换了起始数量，也要按同一条规则做。"
+      ],
+      "success": "先加2，得到5。换了起始数量，也要按同一条规则做。",
+      "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+      "protocol": {
+        "kind": "learnThenTransfer",
+        "demonstration": "先看例子：一个圆片先添2个，得到3个。接下来换一个起始数量，仍用这条规则。"
+      },
+      "illustration": {
+        "src": "/images/items/exploration/diagram-694cb9f7.png",
+        "alt": "让3个圆片经过规则机，最后变成几个？",
+        "width": 600,
+        "height": 310
+      }
+    },
+    "after": {
+      "prompt": "放进3个圆片，最后有几个？",
+      "instruction": "数一数，选出最后的圆片。",
+      "clues": [
+        "添上2个圆片。"
+      ],
+      "hints": [
+        "先看看原来的圆片，再数添进来的圆片。",
+        "原来的和添进来的，都要数进去。"
+      ],
+      "success": "先添上2个，一共有5个。起先的圆片换了，玩法还是一样。",
+      "parentPrompt": "添进来的是哪几个？换一个起始数量，你还会用这条规则吗？",
+      "protocol": {
+        "kind": "learnThenTransfer",
+        "demonstration": "先用一个圆片试一试。添上2个圆片，看看会变成几个。"
+      },
+      "illustration": {
+        "src": "/images/items/exploration/diagram-694cb9f7.png",
+        "alt": "放进3个圆片，最后有几个？",
+        "width": 600,
+        "height": 310
+      },
+      "presentation": {
+        "evidence": {
+          "kind": "ruleMachine",
+          "start": 3,
+          "add": 2,
+          "multiplier": 1
+        }
+      }
+    }
+  },
+  {
+    "id": "explore-learn-rule-transfer-3",
+    "fields": [
+      "prompt",
+      "instruction",
+      "clues",
+      "hints",
+      "success",
+      "parentPrompt",
+      "protocol",
+      "illustration",
+      "presentation"
+    ],
+    "before": {
+      "prompt": "让4个圆片经过规则机，最后变成几个？",
+      "instruction": "选出符合条件的一张图卡。",
+      "clues": [
+        "先添上2个。"
+      ],
+      "hints": [
+        "先添上2个。",
+        "先加2，得到6。换了起始数量，也要按同一条规则做。"
+      ],
+      "success": "先加2，得到6。换了起始数量，也要按同一条规则做。",
+      "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+      "protocol": {
+        "kind": "learnThenTransfer",
+        "demonstration": "先看例子：一个圆片先添2个，得到3个。接下来换一个起始数量，仍用这条规则。"
+      },
+      "illustration": {
+        "src": "/images/items/exploration/diagram-5b7371c8.png",
+        "alt": "让4个圆片经过规则机，最后变成几个？",
+        "width": 600,
+        "height": 310
+      }
+    },
+    "after": {
+      "prompt": "放进4个圆片，最后有几个？",
+      "instruction": "数一数，选出最后的圆片。",
+      "clues": [
+        "添上2个圆片。"
+      ],
+      "hints": [
+        "先看看原来的圆片，再数添进来的圆片。",
+        "原来的和添进来的，都要数进去。"
+      ],
+      "success": "先添上2个，一共有6个。起先的圆片换了，玩法还是一样。",
+      "parentPrompt": "添进来的是哪几个？换一个起始数量，你还会用这条规则吗？",
+      "protocol": {
+        "kind": "learnThenTransfer",
+        "demonstration": "先用一个圆片试一试。添上2个圆片，看看会变成几个。"
+      },
+      "illustration": {
+        "src": "/images/items/exploration/diagram-5b7371c8.png",
+        "alt": "放进4个圆片，最后有几个？",
+        "width": 600,
+        "height": 310
+      },
+      "presentation": {
+        "evidence": {
+          "kind": "ruleMachine",
+          "start": 4,
+          "add": 2,
+          "multiplier": 1
+        }
+      }
+    }
+  },
+  {
+    "id": "explore-learn-rule-transfer-4",
+    "fields": [
+      "prompt",
+      "instruction",
+      "clues",
+      "hints",
+      "success",
+      "parentPrompt",
+      "protocol",
+      "illustration",
+      "presentation"
+    ],
+    "before": {
+      "prompt": "让2个圆片经过规则机，最后变成几个？",
+      "instruction": "选出符合条件的一张图卡。",
+      "clues": [
+        "先添上3个。"
+      ],
+      "hints": [
+        "先添上3个。",
+        "先加3，得到5。换了起始数量，也要按同一条规则做。"
+      ],
+      "success": "先加3，得到5。换了起始数量，也要按同一条规则做。",
+      "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+      "protocol": {
+        "kind": "learnThenTransfer",
+        "demonstration": "先看例子：一个圆片先添3个，得到4个。接下来换一个起始数量，仍用这条规则。"
+      },
+      "illustration": {
+        "src": "/images/items/exploration/diagram-3a4f682d.png",
+        "alt": "让2个圆片经过规则机，最后变成几个？",
+        "width": 600,
+        "height": 310
+      }
+    },
+    "after": {
+      "prompt": "放进2个圆片，最后有几个？",
+      "instruction": "数一数，选出最后的圆片。",
+      "clues": [
+        "添上3个圆片。"
+      ],
+      "hints": [
+        "先看看原来的圆片，再数添进来的圆片。",
+        "原来的和添进来的，都要数进去。"
+      ],
+      "success": "先添上3个，一共有5个。起先的圆片换了，玩法还是一样。",
+      "parentPrompt": "添进来的是哪几个？换一个起始数量，你还会用这条规则吗？",
+      "protocol": {
+        "kind": "learnThenTransfer",
+        "demonstration": "先用一个圆片试一试。添上3个圆片，看看会变成几个。"
+      },
+      "illustration": {
+        "src": "/images/items/exploration/diagram-3a4f682d.png",
+        "alt": "放进2个圆片，最后有几个？",
+        "width": 600,
+        "height": 310
+      },
+      "presentation": {
+        "evidence": {
+          "kind": "ruleMachine",
+          "start": 2,
+          "add": 3,
+          "multiplier": 1
+        }
+      }
+    }
+  },
+  {
+    "id": "explore-learn-rule-transfer-5",
+    "fields": [
+      "prompt",
+      "instruction",
+      "clues",
+      "hints",
+      "success",
+      "parentPrompt",
+      "protocol",
+      "illustration",
+      "presentation"
+    ],
+    "before": {
+      "prompt": "让3个圆片经过规则机，最后变成几个？",
+      "instruction": "选出符合条件的一张图卡。",
+      "clues": [
+        "先添上3个。"
+      ],
+      "hints": [
+        "先添上3个。",
+        "先加3，得到6。换了起始数量，也要按同一条规则做。"
+      ],
+      "success": "先加3，得到6。换了起始数量，也要按同一条规则做。",
+      "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+      "protocol": {
+        "kind": "learnThenTransfer",
+        "demonstration": "先看例子：一个圆片先添3个，得到4个。接下来换一个起始数量，仍用这条规则。"
+      },
+      "illustration": {
+        "src": "/images/items/exploration/diagram-c2237464.png",
+        "alt": "让3个圆片经过规则机，最后变成几个？",
+        "width": 600,
+        "height": 310
+      }
+    },
+    "after": {
+      "prompt": "放进3个圆片，最后有几个？",
+      "instruction": "数一数，选出最后的圆片。",
+      "clues": [
+        "添上3个圆片。"
+      ],
+      "hints": [
+        "先看看原来的圆片，再数添进来的圆片。",
+        "原来的和添进来的，都要数进去。"
+      ],
+      "success": "先添上3个，一共有6个。起先的圆片换了，玩法还是一样。",
+      "parentPrompt": "添进来的是哪几个？换一个起始数量，你还会用这条规则吗？",
+      "protocol": {
+        "kind": "learnThenTransfer",
+        "demonstration": "先用一个圆片试一试。添上3个圆片，看看会变成几个。"
+      },
+      "illustration": {
+        "src": "/images/items/exploration/diagram-c2237464.png",
+        "alt": "放进3个圆片，最后有几个？",
+        "width": 600,
+        "height": 310
+      },
+      "presentation": {
+        "evidence": {
+          "kind": "ruleMachine",
+          "start": 3,
+          "add": 3,
+          "multiplier": 1
+        }
+      }
+    }
+  },
+  {
+    "id": "explore-learn-rule-transfer-6",
+    "fields": [
+      "prompt",
+      "instruction",
+      "clues",
+      "hints",
+      "success",
+      "parentPrompt",
+      "protocol",
+      "illustration",
+      "presentation"
+    ],
+    "before": {
+      "prompt": "让4个圆片经过规则机，最后变成几个？",
+      "instruction": "选出符合条件的一张图卡。",
+      "clues": [
+        "先添上3个。"
+      ],
+      "hints": [
+        "先添上3个。",
+        "先加3，得到7。换了起始数量，也要按同一条规则做。"
+      ],
+      "success": "先加3，得到7。换了起始数量，也要按同一条规则做。",
+      "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+      "protocol": {
+        "kind": "learnThenTransfer",
+        "demonstration": "先看例子：一个圆片先添3个，得到4个。接下来换一个起始数量，仍用这条规则。"
+      },
+      "illustration": {
+        "src": "/images/items/exploration/diagram-a12ade1b.png",
+        "alt": "让4个圆片经过规则机，最后变成几个？",
+        "width": 600,
+        "height": 310
+      }
+    },
+    "after": {
+      "prompt": "放进4个圆片，最后有几个？",
+      "instruction": "数一数，选出最后的圆片。",
+      "clues": [
+        "添上3个圆片。"
+      ],
+      "hints": [
+        "先看看原来的圆片，再数添进来的圆片。",
+        "原来的和添进来的，都要数进去。"
+      ],
+      "success": "先添上3个，一共有7个。起先的圆片换了，玩法还是一样。",
+      "parentPrompt": "添进来的是哪几个？换一个起始数量，你还会用这条规则吗？",
+      "protocol": {
+        "kind": "learnThenTransfer",
+        "demonstration": "先用一个圆片试一试。添上3个圆片，看看会变成几个。"
+      },
+      "illustration": {
+        "src": "/images/items/exploration/diagram-a12ade1b.png",
+        "alt": "放进4个圆片，最后有几个？",
+        "width": 600,
+        "height": 310
+      },
+      "presentation": {
+        "evidence": {
+          "kind": "ruleMachine",
+          "start": 4,
+          "add": 3,
+          "multiplier": 1
+        }
+      }
+    }
+  },
+  {
+    "id": "explore-learn-rule-transfer-7",
+    "fields": [
+      "prompt",
+      "instruction",
+      "clues",
+      "hints",
+      "success",
+      "parentPrompt",
+      "protocol",
+      "illustration",
+      "presentation"
+    ],
+    "before": {
+      "prompt": "让2个圆片经过规则机，最后变成几个？",
+      "instruction": "选出符合条件的一张图卡。",
+      "clues": [
+        "先添上4个。",
+        "再把所有圆片变成两倍。"
+      ],
+      "hints": [
+        "先添上4个。",
+        "先加4，再把总数变成两倍，得到12。换了起始数量，也要按同一条规则做。"
+      ],
+      "success": "先加4，再把总数变成两倍，得到12。换了起始数量，也要按同一条规则做。",
+      "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+      "protocol": {
+        "kind": "learnThenTransfer",
+        "demonstration": "先看例子：一个圆片先添4个，再把总数变成两倍，得到10个。接下来换一个起始数量，仍用这条规则。"
+      },
+      "illustration": {
+        "src": "/images/items/exploration/diagram-bc076d1e.png",
+        "alt": "让2个圆片经过规则机，最后变成几个？",
+        "width": 600,
+        "height": 310
+      }
+    },
+    "after": {
+      "prompt": "放进2个圆片，最后有几个？",
+      "instruction": "数一数，选出最后的圆片。",
+      "clues": [
+        "添上4个圆片。",
+        "再摆一份一样多的圆片。"
+      ],
+      "hints": [
+        "先看看原来的圆片，再数添进来的圆片。",
+        "第二步要把刚才所有的圆片，再摆一份。"
+      ],
+      "success": "先添上4个，再摆一份一样多的圆片，一共有12个。起先的圆片换了，玩法还是一样。",
+      "parentPrompt": "添进来的是哪几个？换一个起始数量，你还会用这条规则吗？",
+      "protocol": {
+        "kind": "learnThenTransfer",
+        "demonstration": "先用一个圆片试一试。添上4个圆片，再摆一份一样多的圆片，看看会变成几个。"
+      },
+      "illustration": {
+        "src": "/images/items/exploration/diagram-bc076d1e.png",
+        "alt": "放进2个圆片，最后有几个？",
+        "width": 600,
+        "height": 310
+      },
+      "presentation": {
+        "evidence": {
+          "kind": "ruleMachine",
+          "start": 2,
+          "add": 4,
+          "multiplier": 2
+        }
+      }
+    }
+  },
+  {
+    "id": "explore-learn-rule-transfer-8",
+    "fields": [
+      "prompt",
+      "instruction",
+      "clues",
+      "hints",
+      "success",
+      "parentPrompt",
+      "protocol",
+      "illustration",
+      "presentation"
+    ],
+    "before": {
+      "prompt": "让3个圆片经过规则机，最后变成几个？",
+      "instruction": "选出符合条件的一张图卡。",
+      "clues": [
+        "先添上4个。",
+        "再把所有圆片变成两倍。"
+      ],
+      "hints": [
+        "先添上4个。",
+        "先加4，再把总数变成两倍，得到14。换了起始数量，也要按同一条规则做。"
+      ],
+      "success": "先加4，再把总数变成两倍，得到14。换了起始数量，也要按同一条规则做。",
+      "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+      "protocol": {
+        "kind": "learnThenTransfer",
+        "demonstration": "先看例子：一个圆片先添4个，再把总数变成两倍，得到10个。接下来换一个起始数量，仍用这条规则。"
+      },
+      "illustration": {
+        "src": "/images/items/exploration/diagram-9af2b2bf.png",
+        "alt": "让3个圆片经过规则机，最后变成几个？",
+        "width": 600,
+        "height": 310
+      }
+    },
+    "after": {
+      "prompt": "放进3个圆片，最后有几个？",
+      "instruction": "数一数，选出最后的圆片。",
+      "clues": [
+        "添上4个圆片。",
+        "再摆一份一样多的圆片。"
+      ],
+      "hints": [
+        "先看看原来的圆片，再数添进来的圆片。",
+        "第二步要把刚才所有的圆片，再摆一份。"
+      ],
+      "success": "先添上4个，再摆一份一样多的圆片，一共有14个。起先的圆片换了，玩法还是一样。",
+      "parentPrompt": "添进来的是哪几个？换一个起始数量，你还会用这条规则吗？",
+      "protocol": {
+        "kind": "learnThenTransfer",
+        "demonstration": "先用一个圆片试一试。添上4个圆片，再摆一份一样多的圆片，看看会变成几个。"
+      },
+      "illustration": {
+        "src": "/images/items/exploration/diagram-9af2b2bf.png",
+        "alt": "放进3个圆片，最后有几个？",
+        "width": 600,
+        "height": 310
+      },
+      "presentation": {
+        "evidence": {
+          "kind": "ruleMachine",
+          "start": 3,
+          "add": 4,
+          "multiplier": 2
+        }
+      }
+    }
+  },
+  {
+    "id": "explore-learn-rule-transfer-9",
+    "fields": [
+      "prompt",
+      "instruction",
+      "clues",
+      "hints",
+      "success",
+      "parentPrompt",
+      "protocol",
+      "illustration",
+      "presentation"
+    ],
+    "before": {
+      "prompt": "让4个圆片经过规则机，最后变成几个？",
+      "instruction": "选出符合条件的一张图卡。",
+      "clues": [
+        "先添上4个。",
+        "再把所有圆片变成两倍。"
+      ],
+      "hints": [
+        "先添上4个。",
+        "先加4，再把总数变成两倍，得到16。换了起始数量，也要按同一条规则做。"
+      ],
+      "success": "先加4，再把总数变成两倍，得到16。换了起始数量，也要按同一条规则做。",
+      "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+      "protocol": {
+        "kind": "learnThenTransfer",
+        "demonstration": "先看例子：一个圆片先添4个，再把总数变成两倍，得到10个。接下来换一个起始数量，仍用这条规则。"
+      },
+      "illustration": {
+        "src": "/images/items/exploration/diagram-7ba86ed0.png",
+        "alt": "让4个圆片经过规则机，最后变成几个？",
+        "width": 600,
+        "height": 310
+      }
+    },
+    "after": {
+      "prompt": "放进4个圆片，最后有几个？",
+      "instruction": "数一数，选出最后的圆片。",
+      "clues": [
+        "添上4个圆片。",
+        "再摆一份一样多的圆片。"
+      ],
+      "hints": [
+        "先看看原来的圆片，再数添进来的圆片。",
+        "第二步要把刚才所有的圆片，再摆一份。"
+      ],
+      "success": "先添上4个，再摆一份一样多的圆片，一共有16个。起先的圆片换了，玩法还是一样。",
+      "parentPrompt": "添进来的是哪几个？换一个起始数量，你还会用这条规则吗？",
+      "protocol": {
+        "kind": "learnThenTransfer",
+        "demonstration": "先用一个圆片试一试。添上4个圆片，再摆一份一样多的圆片，看看会变成几个。"
+      },
+      "illustration": {
+        "src": "/images/items/exploration/diagram-7ba86ed0.png",
+        "alt": "放进4个圆片，最后有几个？",
+        "width": 600,
+        "height": 310
+      },
+      "presentation": {
+        "evidence": {
+          "kind": "ruleMachine",
+          "start": 4,
+          "add": 4,
+          "multiplier": 2
+        }
+      }
+    }
+  },
+  {
+    "id": "explore-toggle-state-1",
+    "fields": [
+      "prompt",
+      "instruction",
+      "clues",
+      "hints",
+      "success",
+      "retry",
+      "parentPrompt",
+      "illustration",
+      "presentation"
+    ],
+    "before": {
+      "prompt": "按顺序翻牌，最后每个位置朝上的是哪一面？",
+      "instruction": "选图卡，点问号格放进去。图卡可以重复用。",
+      "clues": [
+        "每张牌一面是白色，一面是黄色。",
+        "翻一次，白色变黄色，黄色变白色。",
+        "翻第1张。"
+      ],
+      "hints": [
+        "每张牌一面是白色，一面是黄色。",
+        "翻一次，白色和黄色换一面；同一张翻两次，又回到原来。"
+      ],
+      "success": "翻一次，白色和黄色换一面；同一张翻两次，又回到原来。",
+      "retry": "再对照图和题目的条件，一步一步检查。",
+      "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+      "illustration": {
+        "src": "/images/items/exploration/diagram-c13ff8a9.png",
+        "alt": "按顺序翻牌，最后每个位置朝上的是哪一面？",
+        "width": 295,
+        "height": 125
+      }
+    },
+    "after": {
+      "prompt": "照着顺序，动手翻一翻。",
+      "instruction": "看小图的顺序，点下面的大牌。",
+      "clues": [
+        "点一下大牌，就翻一面。",
+        "第1步，翻第1张。"
+      ],
+      "hints": [
+        "先看开始时的牌面，再按小图从左往右翻。",
+        "同一张牌翻两次，会回到原来的样子。"
+      ],
+      "success": "翻一次就换一面。同一张牌翻两次，又回到原来的样子。",
+      "retry": "对照开始时的牌面，按顺序再翻一遍。也可以点“重新翻”。",
+      "parentPrompt": "哪张牌翻过两次？它和开始时有什么不同？",
+      "illustration": {
+        "src": "/images/items/exploration/diagram-c13ff8a9.png",
+        "alt": "照着顺序，动手翻一翻。",
+        "width": 295,
+        "height": 125
+      },
+      "presentation": {
+        "evidence": {
+          "kind": "cardFlip",
+          "initial": [
+            "off",
+            "on",
+            "off"
+          ],
+          "steps": [
+            0
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "explore-toggle-state-2",
+    "fields": [
+      "prompt",
+      "instruction",
+      "clues",
+      "hints",
+      "success",
+      "retry",
+      "parentPrompt",
+      "illustration",
+      "presentation"
+    ],
+    "before": {
+      "prompt": "按顺序翻牌，最后每个位置朝上的是哪一面？",
+      "instruction": "选图卡，点问号格放进去。图卡可以重复用。",
+      "clues": [
+        "每张牌一面是白色，一面是黄色。",
+        "翻一次，白色变黄色，黄色变白色。",
+        "翻第2张。"
+      ],
+      "hints": [
+        "每张牌一面是白色，一面是黄色。",
+        "翻一次，白色和黄色换一面；同一张翻两次，又回到原来。"
+      ],
+      "success": "翻一次，白色和黄色换一面；同一张翻两次，又回到原来。",
+      "retry": "再对照图和题目的条件，一步一步检查。",
+      "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+      "illustration": {
+        "src": "/images/items/exploration/diagram-12433ad6.png",
+        "alt": "按顺序翻牌，最后每个位置朝上的是哪一面？",
+        "width": 295,
+        "height": 125
+      }
+    },
+    "after": {
+      "prompt": "照着顺序，动手翻一翻。",
+      "instruction": "看小图的顺序，点下面的大牌。",
+      "clues": [
+        "点一下大牌，就翻一面。",
+        "第1步，翻第2张。"
+      ],
+      "hints": [
+        "先看开始时的牌面，再按小图从左往右翻。",
+        "同一张牌翻两次，会回到原来的样子。"
+      ],
+      "success": "翻一次就换一面。同一张牌翻两次，又回到原来的样子。",
+      "retry": "对照开始时的牌面，按顺序再翻一遍。也可以点“重新翻”。",
+      "parentPrompt": "哪张牌翻过两次？它和开始时有什么不同？",
+      "illustration": {
+        "src": "/images/items/exploration/diagram-12433ad6.png",
+        "alt": "照着顺序，动手翻一翻。",
+        "width": 295,
+        "height": 125
+      },
+      "presentation": {
+        "evidence": {
+          "kind": "cardFlip",
+          "initial": [
+            "on",
+            "off",
+            "on"
+          ],
+          "steps": [
+            1
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "explore-toggle-state-3",
+    "fields": [
+      "prompt",
+      "instruction",
+      "clues",
+      "hints",
+      "success",
+      "retry",
+      "parentPrompt",
+      "illustration",
+      "presentation"
+    ],
+    "before": {
+      "prompt": "按顺序翻牌，最后每个位置朝上的是哪一面？",
+      "instruction": "选图卡，点问号格放进去。图卡可以重复用。",
+      "clues": [
+        "每张牌一面是白色，一面是黄色。",
+        "翻一次，白色变黄色，黄色变白色。",
+        "翻第3张。"
+      ],
+      "hints": [
+        "每张牌一面是白色，一面是黄色。",
+        "翻一次，白色和黄色换一面；同一张翻两次，又回到原来。"
+      ],
+      "success": "翻一次，白色和黄色换一面；同一张翻两次，又回到原来。",
+      "retry": "再对照图和题目的条件，一步一步检查。",
+      "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+      "illustration": {
+        "src": "/images/items/exploration/diagram-c13ff8a9.png",
+        "alt": "按顺序翻牌，最后每个位置朝上的是哪一面？",
+        "width": 295,
+        "height": 125
+      }
+    },
+    "after": {
+      "prompt": "照着顺序，动手翻一翻。",
+      "instruction": "看小图的顺序，点下面的大牌。",
+      "clues": [
+        "点一下大牌，就翻一面。",
+        "第1步，翻第3张。"
+      ],
+      "hints": [
+        "先看开始时的牌面，再按小图从左往右翻。",
+        "同一张牌翻两次，会回到原来的样子。"
+      ],
+      "success": "翻一次就换一面。同一张牌翻两次，又回到原来的样子。",
+      "retry": "对照开始时的牌面，按顺序再翻一遍。也可以点“重新翻”。",
+      "parentPrompt": "哪张牌翻过两次？它和开始时有什么不同？",
+      "illustration": {
+        "src": "/images/items/exploration/diagram-c13ff8a9.png",
+        "alt": "照着顺序，动手翻一翻。",
+        "width": 295,
+        "height": 125
+      },
+      "presentation": {
+        "evidence": {
+          "kind": "cardFlip",
+          "initial": [
+            "off",
+            "on",
+            "off"
+          ],
+          "steps": [
+            2
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "explore-toggle-state-4",
+    "fields": [
+      "prompt",
+      "instruction",
+      "clues",
+      "hints",
+      "success",
+      "retry",
+      "parentPrompt",
+      "illustration",
+      "presentation"
+    ],
+    "before": {
+      "prompt": "按顺序翻牌，最后每个位置朝上的是哪一面？",
+      "instruction": "选图卡，点问号格放进去。图卡可以重复用。",
+      "clues": [
+        "每张牌一面是白色，一面是黄色。",
+        "翻一次，白色变黄色，黄色变白色。",
+        "翻第1张。",
+        "翻第2张。"
+      ],
+      "hints": [
+        "每张牌一面是白色，一面是黄色。",
+        "翻一次，白色和黄色换一面；同一张翻两次，又回到原来。"
+      ],
+      "success": "翻一次，白色和黄色换一面；同一张翻两次，又回到原来。",
+      "retry": "再对照图和题目的条件，一步一步检查。",
+      "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+      "illustration": {
+        "src": "/images/items/exploration/diagram-e83d73eb.png",
+        "alt": "按顺序翻牌，最后每个位置朝上的是哪一面？",
+        "width": 380,
+        "height": 125
+      }
+    },
+    "after": {
+      "prompt": "照着顺序，动手翻一翻。",
+      "instruction": "看小图的顺序，点下面的大牌。",
+      "clues": [
+        "点一下大牌，就翻一面。",
+        "第1步，翻第1张。",
+        "第2步，翻第2张。"
+      ],
+      "hints": [
+        "先看开始时的牌面，再按小图从左往右翻。",
+        "同一张牌翻两次，会回到原来的样子。"
+      ],
+      "success": "翻一次就换一面。同一张牌翻两次，又回到原来的样子。",
+      "retry": "对照开始时的牌面，按顺序再翻一遍。也可以点“重新翻”。",
+      "parentPrompt": "哪张牌翻过两次？它和开始时有什么不同？",
+      "illustration": {
+        "src": "/images/items/exploration/diagram-e83d73eb.png",
+        "alt": "照着顺序，动手翻一翻。",
+        "width": 380,
+        "height": 125
+      },
+      "presentation": {
+        "evidence": {
+          "kind": "cardFlip",
+          "initial": [
+            "off",
+            "on",
+            "off",
+            "on"
+          ],
+          "steps": [
+            0,
+            1
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "explore-toggle-state-5",
+    "fields": [
+      "prompt",
+      "instruction",
+      "clues",
+      "hints",
+      "success",
+      "retry",
+      "parentPrompt",
+      "illustration",
+      "presentation"
+    ],
+    "before": {
+      "prompt": "按顺序翻牌，最后每个位置朝上的是哪一面？",
+      "instruction": "选图卡，点问号格放进去。图卡可以重复用。",
+      "clues": [
+        "每张牌一面是白色，一面是黄色。",
+        "翻一次，白色变黄色，黄色变白色。",
+        "翻第2张。",
+        "翻第3张。"
+      ],
+      "hints": [
+        "每张牌一面是白色，一面是黄色。",
+        "翻一次，白色和黄色换一面；同一张翻两次，又回到原来。"
+      ],
+      "success": "翻一次，白色和黄色换一面；同一张翻两次，又回到原来。",
+      "retry": "再对照图和题目的条件，一步一步检查。",
+      "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+      "illustration": {
+        "src": "/images/items/exploration/diagram-a86dad97.png",
+        "alt": "按顺序翻牌，最后每个位置朝上的是哪一面？",
+        "width": 380,
+        "height": 125
+      }
+    },
+    "after": {
+      "prompt": "照着顺序，动手翻一翻。",
+      "instruction": "看小图的顺序，点下面的大牌。",
+      "clues": [
+        "点一下大牌，就翻一面。",
+        "第1步，翻第2张。",
+        "第2步，翻第3张。"
+      ],
+      "hints": [
+        "先看开始时的牌面，再按小图从左往右翻。",
+        "同一张牌翻两次，会回到原来的样子。"
+      ],
+      "success": "翻一次就换一面。同一张牌翻两次，又回到原来的样子。",
+      "retry": "对照开始时的牌面，按顺序再翻一遍。也可以点“重新翻”。",
+      "parentPrompt": "哪张牌翻过两次？它和开始时有什么不同？",
+      "illustration": {
+        "src": "/images/items/exploration/diagram-a86dad97.png",
+        "alt": "照着顺序，动手翻一翻。",
+        "width": 380,
+        "height": 125
+      },
+      "presentation": {
+        "evidence": {
+          "kind": "cardFlip",
+          "initial": [
+            "on",
+            "off",
+            "on",
+            "off"
+          ],
+          "steps": [
+            1,
+            2
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "explore-toggle-state-6",
+    "fields": [
+      "prompt",
+      "instruction",
+      "clues",
+      "hints",
+      "success",
+      "retry",
+      "parentPrompt",
+      "illustration",
+      "presentation"
+    ],
+    "before": {
+      "prompt": "按顺序翻牌，最后每个位置朝上的是哪一面？",
+      "instruction": "选图卡，点问号格放进去。图卡可以重复用。",
+      "clues": [
+        "每张牌一面是白色，一面是黄色。",
+        "翻一次，白色变黄色，黄色变白色。",
+        "翻第3张。",
+        "翻第4张。"
+      ],
+      "hints": [
+        "每张牌一面是白色，一面是黄色。",
+        "翻一次，白色和黄色换一面；同一张翻两次，又回到原来。"
+      ],
+      "success": "翻一次，白色和黄色换一面；同一张翻两次，又回到原来。",
+      "retry": "再对照图和题目的条件，一步一步检查。",
+      "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+      "illustration": {
+        "src": "/images/items/exploration/diagram-e83d73eb.png",
+        "alt": "按顺序翻牌，最后每个位置朝上的是哪一面？",
+        "width": 380,
+        "height": 125
+      }
+    },
+    "after": {
+      "prompt": "照着顺序，动手翻一翻。",
+      "instruction": "看小图的顺序，点下面的大牌。",
+      "clues": [
+        "点一下大牌，就翻一面。",
+        "第1步，翻第3张。",
+        "第2步，翻第4张。"
+      ],
+      "hints": [
+        "先看开始时的牌面，再按小图从左往右翻。",
+        "同一张牌翻两次，会回到原来的样子。"
+      ],
+      "success": "翻一次就换一面。同一张牌翻两次，又回到原来的样子。",
+      "retry": "对照开始时的牌面，按顺序再翻一遍。也可以点“重新翻”。",
+      "parentPrompt": "哪张牌翻过两次？它和开始时有什么不同？",
+      "illustration": {
+        "src": "/images/items/exploration/diagram-e83d73eb.png",
+        "alt": "照着顺序，动手翻一翻。",
+        "width": 380,
+        "height": 125
+      },
+      "presentation": {
+        "evidence": {
+          "kind": "cardFlip",
+          "initial": [
+            "off",
+            "on",
+            "off",
+            "on"
+          ],
+          "steps": [
+            2,
+            3
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "explore-toggle-state-7",
+    "fields": [
+      "prompt",
+      "instruction",
+      "clues",
+      "hints",
+      "success",
+      "retry",
+      "parentPrompt",
+      "illustration",
+      "presentation"
+    ],
+    "before": {
+      "prompt": "按顺序翻牌，最后每个位置朝上的是哪一面？",
+      "instruction": "选图卡，点问号格放进去。图卡可以重复用。",
+      "clues": [
+        "每张牌一面是白色，一面是黄色。",
+        "翻一次，白色变黄色，黄色变白色。",
+        "翻第1张。",
+        "翻第2张。",
+        "翻第1张。"
+      ],
+      "hints": [
+        "每张牌一面是白色，一面是黄色。",
+        "翻一次，白色和黄色换一面；同一张翻两次，又回到原来。"
+      ],
+      "success": "翻一次，白色和黄色换一面；同一张翻两次，又回到原来。",
+      "retry": "再对照图和题目的条件，一步一步检查。",
+      "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+      "illustration": {
+        "src": "/images/items/exploration/diagram-8d00fa26.png",
+        "alt": "按顺序翻牌，最后每个位置朝上的是哪一面？",
+        "width": 465,
+        "height": 125
+      }
+    },
+    "after": {
+      "prompt": "照着顺序，动手翻一翻。",
+      "instruction": "看小图的顺序，点下面的大牌。",
+      "clues": [
+        "点一下大牌，就翻一面。",
+        "第1步，翻第1张。",
+        "第2步，翻第2张。",
+        "第3步，翻第1张。"
+      ],
+      "hints": [
+        "先看开始时的牌面，再按小图从左往右翻。",
+        "同一张牌翻两次，会回到原来的样子。"
+      ],
+      "success": "翻一次就换一面。同一张牌翻两次，又回到原来的样子。",
+      "retry": "对照开始时的牌面，按顺序再翻一遍。也可以点“重新翻”。",
+      "parentPrompt": "哪张牌翻过两次？它和开始时有什么不同？",
+      "illustration": {
+        "src": "/images/items/exploration/diagram-8d00fa26.png",
+        "alt": "照着顺序，动手翻一翻。",
+        "width": 465,
+        "height": 125
+      },
+      "presentation": {
+        "evidence": {
+          "kind": "cardFlip",
+          "initial": [
+            "off",
+            "on",
+            "off",
+            "on",
+            "off"
+          ],
+          "steps": [
+            0,
+            1,
+            0
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "explore-toggle-state-8",
+    "fields": [
+      "prompt",
+      "instruction",
+      "clues",
+      "hints",
+      "success",
+      "retry",
+      "parentPrompt",
+      "illustration",
+      "presentation"
+    ],
+    "before": {
+      "prompt": "按顺序翻牌，最后每个位置朝上的是哪一面？",
+      "instruction": "选图卡，点问号格放进去。图卡可以重复用。",
+      "clues": [
+        "每张牌一面是白色，一面是黄色。",
+        "翻一次，白色变黄色，黄色变白色。",
+        "翻第2张。",
+        "翻第3张。",
+        "翻第2张。"
+      ],
+      "hints": [
+        "每张牌一面是白色，一面是黄色。",
+        "翻一次，白色和黄色换一面；同一张翻两次，又回到原来。"
+      ],
+      "success": "翻一次，白色和黄色换一面；同一张翻两次，又回到原来。",
+      "retry": "再对照图和题目的条件，一步一步检查。",
+      "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+      "illustration": {
+        "src": "/images/items/exploration/diagram-a7633f87.png",
+        "alt": "按顺序翻牌，最后每个位置朝上的是哪一面？",
+        "width": 465,
+        "height": 125
+      }
+    },
+    "after": {
+      "prompt": "照着顺序，动手翻一翻。",
+      "instruction": "看小图的顺序，点下面的大牌。",
+      "clues": [
+        "点一下大牌，就翻一面。",
+        "第1步，翻第2张。",
+        "第2步，翻第3张。",
+        "第3步，翻第2张。"
+      ],
+      "hints": [
+        "先看开始时的牌面，再按小图从左往右翻。",
+        "同一张牌翻两次，会回到原来的样子。"
+      ],
+      "success": "翻一次就换一面。同一张牌翻两次，又回到原来的样子。",
+      "retry": "对照开始时的牌面，按顺序再翻一遍。也可以点“重新翻”。",
+      "parentPrompt": "哪张牌翻过两次？它和开始时有什么不同？",
+      "illustration": {
+        "src": "/images/items/exploration/diagram-a7633f87.png",
+        "alt": "照着顺序，动手翻一翻。",
+        "width": 465,
+        "height": 125
+      },
+      "presentation": {
+        "evidence": {
+          "kind": "cardFlip",
+          "initial": [
+            "on",
+            "off",
+            "on",
+            "off",
+            "on"
+          ],
+          "steps": [
+            1,
+            2,
+            1
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "explore-toggle-state-9",
+    "fields": [
+      "prompt",
+      "instruction",
+      "clues",
+      "hints",
+      "success",
+      "retry",
+      "parentPrompt",
+      "illustration",
+      "presentation"
+    ],
+    "before": {
+      "prompt": "按顺序翻牌，最后每个位置朝上的是哪一面？",
+      "instruction": "选图卡，点问号格放进去。图卡可以重复用。",
+      "clues": [
+        "每张牌一面是白色，一面是黄色。",
+        "翻一次，白色变黄色，黄色变白色。",
+        "翻第3张。",
+        "翻第4张。",
+        "翻第3张。"
+      ],
+      "hints": [
+        "每张牌一面是白色，一面是黄色。",
+        "翻一次，白色和黄色换一面；同一张翻两次，又回到原来。"
+      ],
+      "success": "翻一次，白色和黄色换一面；同一张翻两次，又回到原来。",
+      "retry": "再对照图和题目的条件，一步一步检查。",
+      "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+      "illustration": {
+        "src": "/images/items/exploration/diagram-8d00fa26.png",
+        "alt": "按顺序翻牌，最后每个位置朝上的是哪一面？",
+        "width": 465,
+        "height": 125
+      }
+    },
+    "after": {
+      "prompt": "照着顺序，动手翻一翻。",
+      "instruction": "看小图的顺序，点下面的大牌。",
+      "clues": [
+        "点一下大牌，就翻一面。",
+        "第1步，翻第3张。",
+        "第2步，翻第4张。",
+        "第3步，翻第3张。"
+      ],
+      "hints": [
+        "先看开始时的牌面，再按小图从左往右翻。",
+        "同一张牌翻两次，会回到原来的样子。"
+      ],
+      "success": "翻一次就换一面。同一张牌翻两次，又回到原来的样子。",
+      "retry": "对照开始时的牌面，按顺序再翻一遍。也可以点“重新翻”。",
+      "parentPrompt": "哪张牌翻过两次？它和开始时有什么不同？",
+      "illustration": {
+        "src": "/images/items/exploration/diagram-8d00fa26.png",
+        "alt": "照着顺序，动手翻一翻。",
+        "width": 465,
+        "height": 125
+      },
+      "presentation": {
+        "evidence": {
+          "kind": "cardFlip",
+          "initial": [
+            "off",
+            "on",
+            "off",
+            "on",
+            "off"
+          ],
+          "steps": [
+            2,
+            3,
+            2
+          ]
+        }
+      }
+    }
+  }
+]

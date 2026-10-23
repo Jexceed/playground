@@ -30,6 +30,9 @@ import { ActivityEvidence } from "../interactions/ActivityEvidence";
 import { PyramidBoard } from '../interactions/PyramidBoard';
 import type { ParentMode } from '../interactions/ParentActivity';
 import { ImageViewer } from '../interactions/ImageViewer';
+import { CardFlipBoard, RuleMachineBoard } from '../interactions/RulePlayBoards';
+import { RULE_PLAY_COPY } from '../domain/rule-play';
+import { imageGallery } from '../data/imageGallery';
 
 type Props = {
   game: ActivitySet;
@@ -41,6 +44,7 @@ type Props = {
   onComplete: () => void;
 };
 export function ActivitySetGame(props: Props) {
+  const [listenRequests, setListenRequests] = useState(0);
   const index = Math.min(
     Math.max(props.requestedRoundIndex, 0),
     props.game.rounds.length - 1,
@@ -76,7 +80,7 @@ export function ActivitySetGame(props: Props) {
         <button
           className="activity-listen"
           type="button"
-          onClick={() => void speak(activityPromptSpeech(activity))}
+          onClick={() => setListenRequests(value => value + 1)}
           aria-label="听一听题目"
         >
           <Volume2 size={21} />
@@ -87,6 +91,7 @@ export function ActivitySetGame(props: Props) {
         key={`${activity.id}@${activity.revision}`}
         activity={activity}
         readKey={props.requestedRoundReadKey}
+        listenRequests={listenRequests}
         onProgressChange={props.onProgressChange}
         onNext={next}
         onSkip={() =>
@@ -107,6 +112,7 @@ export function ActivitySetGame(props: Props) {
 function ActivityRound({
   activity,
   readKey,
+  listenRequests,
   onProgressChange,
   onNext,
   onSkip,
@@ -114,6 +120,7 @@ function ActivityRound({
 }: {
   activity: Activity;
   readKey: number;
+  listenRequests: number;
   onProgressChange: (p: ActivityProgress) => void;
   onNext: () => void;
   onSkip: () => void;
@@ -155,6 +162,9 @@ function ActivityRound({
   const previousPhase = useRef(state.phase);
   const slotEntries = activitySlots(activity);
   const canEdit = state.phase === "respond" && assetsReady;
+  const evidence = activity.presentation?.evidence;
+  const ruleMachine = evidence?.kind === 'ruleMachine' ? evidence : undefined;
+  const cardFlip = evidence?.kind === 'cardFlip' ? evidence : undefined;
   const isMemory = activity.protocol.kind === "memory";
   const isListening = activity.protocol.kind === "memory" && !!(activity.protocol.audioText || activity.protocol.soundSrc);
   useEffect(()=>{
@@ -174,14 +184,29 @@ function ActivityRound({
   const pictureTokens = palette.filter(token => token.image.style === 'illustration' && !token.textOnly && !token.quantityPicture);
   useEffect(() => { setPictureTarget(null); }, [activity.id, state.phase]);
 
+  const narration = activityPromptSpeech(activity, state.phase);
   useEffect(() => {
-    void speak(activityPromptSpeech(activity));
+    void speak(narration);
     return stopSpeech;
-  }, [activity, readKey]);
+  }, [activity, readKey, listenRequests, narration]);
 
   useEffect(() => {
     let cancelled = false;
     const sources = new Set(activity.tokens.map((t) => t.image.src));
+    if (activity.kind === "network") sources.add(imageGallery.items.art052Island.src);
+    if (activity.tokens.some(token => token.quantityPicture) ||
+        (evidence?.kind === 'visualComparison' && evidence.panels.some(panel => panel.kind === 'dots')))
+      sources.add(imageGallery.items.patternBlueDisc.src);
+    if (ruleMachine) {
+      sources.add(imageGallery.items.patternBlueDisc.src);
+      sources.add(imageGallery.items.patternYellowDisc.src);
+      sources.add(imageGallery.items.rulePlayMachine.src);
+      sources.add(imageGallery.items.rulePlayTray.src);
+    }
+    if (cardFlip) {
+      sources.add(imageGallery.items.rulePlayCardWhite.src);
+      sources.add(imageGallery.items.rulePlayCardYellow.src);
+    }
     for (const image of activity.presentation?.storyCards ?? []) sources.add(image.src);
     for (const card of activity.presentation?.materialCards ?? []) if (card.image) sources.add(card.image.src);
     if (activity.presentation?.evidence?.kind === 'storySequence')
@@ -533,6 +558,7 @@ function ActivityRound({
       data-testid="activity-round"
       data-activity-id={activity.id}
       data-family={activity.primaryFamilyId}
+      data-rule-play={ruleMachine ? 'machine' : cardFlip ? 'flip' : undefined}
       data-readable-evidence={activity.presentation?.readableEvidence || undefined}
       data-phase={state.phase}
       data-kind={activity.kind}
@@ -549,12 +575,13 @@ function ActivityRound({
       data-illustrated={activity.tokens.some(t => t.image.style === "illustration") || undefined}
     >
       <div className="activity-question">
-        <h2>{activity.prompt}</h2>
-        <p>{activity.instruction}</p>
+        <h2>{ruleMachine && state.phase === 'ready' ? '动一动，看看圆片怎么变。' : activity.prompt}</h2>
+        <p>{ruleMachine && state.phase === 'ready' ? '先用 1 个圆片试一试。' : activity.instruction}</p>
       </div>
 
-      {!storyTokenIds && (activity.kind !== 'parentObservation' || parentMode === 'play') && <ActivityEvidence activity={activity} phase={state.phase} />}
-      {activity.clues.length > 0 && (
+      {ruleMachine && <RuleMachineBoard model={ruleMachine} clues={activity.clues} phase={state.phase} disabled={!assetsReady} onStart={() => dispatch({ type: 'start' })} />}
+      {!ruleMachine && !cardFlip && !storyTokenIds && (activity.kind !== 'parentObservation' || parentMode === 'play') && <ActivityEvidence activity={activity} phase={state.phase} />}
+      {!ruleMachine && !cardFlip && activity.clues.length > 0 && (
         <ol className="activity-clues">
           {activity.clues.map((clue, index) => (
             <li
@@ -576,7 +603,7 @@ function ActivityRound({
       )}
       {assetError && <p role="alert">图卡没有加载好，请重新打开这个关卡。</p>}
       {!assetsReady && !assetError && <p className="muted">正在准备图卡…</p>}
-      {state.phase === "ready" && (
+      {state.phase === "ready" && !ruleMachine && (
         <div className="memory-stage memory-ready">
           {isListening ? <Volume2 size={38} /> : <Eye size={38} />}
           <h3>{activity.protocol.kind === "learnThenTransfer" ? "先学一条新规则" : isListening ? "先听清，再来试" : activity.kind === "multiSelect" ? "先看清，再找出来" : activity.kind === "matching" ? "先看清，再连起来" : "先看清，再摆回来"}</h3>
@@ -643,7 +670,8 @@ function ActivityRound({
       )}
       {showResponses && (
         <>
-          {isAdvancedActivity(activity) ? <AdvancedInteraction activity={activity} response={state.response} disabled={!canEdit} onChange={response=>dispatch({type:"response",response})} parentMode={parentMode} onParentModeChange={setParentMode}/> : activity.kind === "multiSelect" ? (
+          {cardFlip ? <CardFlipBoard model={cardFlip} response={state.response} disabled={!canEdit} onFlip={(slotId, tokenId) => { dispatch({ type: 'place', slotId, tokenId }); playTone('tap'); }} />
+          : isAdvancedActivity(activity) ? <AdvancedInteraction activity={activity} response={state.response} disabled={!canEdit} onChange={response=>dispatch({type:"response",response})} parentMode={parentMode} onParentModeChange={setParentMode}/> : activity.kind === "multiSelect" ? (
             <div className={`activity-choice-grid ${activity.presentation?.compactSymbols ? 'is-symbol-grid' : ''} ${activity.tokens.some(t => (t.image.width ?? 1) / (t.image.height ?? 1) > 1.4) ? "has-wide-options" : ""}`} style={{ '--symbol-columns': activity.tokens.length > 15 ? 7 : Math.min(5, Math.ceil(Math.sqrt(activity.tokens.length))), '--mobile-symbol-columns': Math.min(4, Math.ceil(Math.sqrt(activity.tokens.length))) } as CSSProperties} aria-label="可多选的图卡">
               {activity.tokens.map((t) => tokenButton(t, true))}
             </div>
@@ -748,7 +776,7 @@ function ActivityRound({
                   setSelectedToken(null);
                 }}
               >
-                清空
+                {cardFlip ? RULE_PLAY_COPY.flipReset : '清空'}
               </button>
               <button
                 type="button"
@@ -778,7 +806,7 @@ function ActivityRound({
               disabled={!canEdit}
               onClick={submit}
             >
-              {activity.kind === "parentObservation" ? parentMode === 'play' ? ACTIVITY_COPY.parentRecordNext : "记录这次活动" : activity.presentation?.pyramid ? ACTIVITY_COPY.checkPyramid : activity.kind === "multiSelect" || activity.kind === "singleChoice"
+              {cardFlip ? RULE_PLAY_COPY.flipCheck : activity.kind === "parentObservation" ? parentMode === 'play' ? ACTIVITY_COPY.parentRecordNext : "记录这次活动" : activity.presentation?.pyramid ? ACTIVITY_COPY.checkPyramid : activity.kind === "multiSelect" || activity.kind === "singleChoice"
                 ? "选好了，看看"
                 : "摆好了，看看"}
             </button>

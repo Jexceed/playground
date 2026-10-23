@@ -1,0 +1,63 @@
+{
+  "baseline": {
+    "section": "启蒙",
+    "world": "逻辑屋",
+    "game": "同类小侦探",
+    "round": 1,
+    "completed": 278,
+    "groupCompleted": 12
+  },
+  "explorationBaseline": {
+    "world": "记忆小屋",
+    "game": "看过哪些朋友",
+    "round": 9
+  },
+  "cases": [
+    {
+      "game": "学会新规则",
+      "round": 1,
+      "action": "示例添加2个后进入自己尝试，未提交",
+      "screenshot": "native-rule-machine.png",
+      "passed": true
+    },
+    {
+      "game": "翻牌小机关",
+      "round": 1,
+      "action": "白面翻为黄面，撤销恢复，未提交",
+      "passed": true,
+      "screenshot": "native-flip.png"
+    },
+    {
+      "game": "小岛连桥",
+      "round": 1,
+      "action": "A-B单桥增为双桥，撤销恢复现成桥，未提交",
+      "passed": true,
+      "screenshot": "native-island.png"
+    },
+    {
+      "game": "时钟往前走",
+      "round": 1,
+      "action": "木质表圈、长短针和刻度目视检查",
+      "passed": true,
+      "screenshot": "native-clock.png"
+    },
+    {
+      "game": "换个方向看左右",
+      "round": 1,
+      "action": "人物、箭头、球的位置目视检查",
+      "passed": true,
+      "screenshot": "native-facing.png"
+    },
+    {
+      "game": "字音小花园",
+      "round": 7,
+      "action": "汉字与拼音分行、连线选项完整；未作答",
+      "passed": true,
+      "screenshot": "native-phonics.png"
+    }
+  ],
+  "completedAfter": 278,
+  "submitted": false,
+  "hintsUsed": false,
+  "navigationRestored": true
+}

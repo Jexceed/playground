@@ -1,0 +1,53 @@
+[
+  {
+    "art": {
+      "backgroundColor": "rgb(65, 125, 95)",
+      "borderColor": "rgb(255, 255, 255)",
+      "borderRadius": "11px",
+      "boxShadow": "rgb(47, 95, 71) 0px 3px 0px 0px",
+      "color": "rgb(255, 255, 255)"
+    },
+    "base": {
+      "backgroundColor": "rgb(65, 125, 95)",
+      "borderColor": "rgb(255, 255, 255)",
+      "borderRadius": "11px",
+      "boxShadow": "rgb(47, 95, 71) 0px 3px 0px 0px",
+      "color": "rgb(255, 255, 255)"
+    },
+    "selector": ".activity-primary"
+  },
+  {
+    "art": {
+      "backgroundColor": "rgb(237, 241, 229)",
+      "borderColor": "rgb(205, 212, 195)",
+      "borderRadius": "11px",
+      "boxShadow": "none",
+      "color": "rgb(81, 104, 84)"
+    },
+    "base": {
+      "backgroundColor": "rgb(237, 241, 229)",
+      "borderColor": "rgb(205, 212, 195)",
+      "borderRadius": "11px",
+      "boxShadow": "none",
+      "color": "rgb(81, 104, 84)"
+    },
+    "selector": ".activity-secondary"
+  },
+  {
+    "art": {
+      "backgroundColor": "rgb(243, 239, 229)",
+      "borderColor": "rgb(222, 214, 199)",
+      "borderRadius": "9px",
+      "boxShadow": "none",
+      "color": "rgb(104, 114, 99)"
+    },
+    "base": {
+      "backgroundColor": "rgb(243, 239, 229)",
+      "borderColor": "rgb(222, 214, 199)",
+      "borderRadius": "9px",
+      "boxShadow": "none",
+      "color": "rgb(104, 114, 99)"
+    },
+    "selector": ".activity-tools button"
+  }
+]

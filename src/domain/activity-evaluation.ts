@@ -22,6 +22,11 @@ export function emptyResponse(activity: Activity): ActivityResponse {
         slots: Array.from({ length: activity.slotCount }, unfilled),
       };
     case "gridPlacement":
+      if (activity.presentation?.evidence?.kind === 'cardFlip') return {
+        kind: 'gridPlacement',
+        cells: Object.fromEntries(activity.presentation.evidence.initial.map((tokenId, index) =>
+          [`cell-${index}`, { state: 'filled', tokenId }])),
+      };
       return {
         kind: activity.kind,
         cells: Object.fromEntries(

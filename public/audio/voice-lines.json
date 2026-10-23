@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-19T03:28:15.704Z",
+  "generatedAt": "2026-10-23T06:46:39.997Z",
   "recommendedVoice": "warm adult female Mandarin, smiling, preschool teacher, 0.85 speed, crisp consonants",
-  "lineCount": 4210,
+  "lineCount": 4224,
   "lines": [
     {
       "id": "game-title-数一数",
@@ -25303,6 +25303,136 @@
       ]
     },
     {
+      "id": "activity-system-先玩一个小例子",
+      "kind": "activity-system",
+      "text": "先玩一个小例子",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "rule-play/example"
+      ]
+    },
+    {
+      "id": "activity-system-轮到你了",
+      "kind": "activity-system",
+      "text": "轮到你了",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "rule-play/yourTurn"
+      ]
+    },
+    {
+      "id": "activity-system-添进来",
+      "kind": "activity-system",
+      "text": "添进来",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "rule-play/add"
+      ]
+    },
+    {
+      "id": "activity-system-再摆一份",
+      "kind": "activity-system",
+      "text": "再摆一份",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "rule-play/another"
+      ]
+    },
+    {
+      "id": "activity-system-我来试一试",
+      "kind": "activity-system",
+      "text": "我来试一试",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "rule-play/try"
+      ]
+    },
+    {
+      "id": "activity-system-再看小例子",
+      "kind": "activity-system",
+      "text": "再看小例子",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "rule-play/replay"
+      ]
+    },
+    {
+      "id": "activity-system-回到这道题",
+      "kind": "activity-system",
+      "text": "回到这道题",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "rule-play/back"
+      ]
+    },
+    {
+      "id": "activity-system-再演示一次",
+      "kind": "activity-system",
+      "text": "再演示一次",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "rule-play/again"
+      ]
+    },
+    {
+      "id": "activity-system-点这张牌-试试翻面",
+      "kind": "activity-system",
+      "text": "点这张牌，试试翻面",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "rule-play/flipDemo"
+      ]
+    },
+    {
+      "id": "activity-system-现在是白面-再点一下就变成黄面",
+      "kind": "activity-system",
+      "text": "现在是白面，再点一下就变成黄面。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "rule-play/white"
+      ]
+    },
+    {
+      "id": "activity-system-现在是黄面-再点一下就变成白面",
+      "kind": "activity-system",
+      "text": "现在是黄面，再点一下就变成白面。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "rule-play/yellow"
+      ]
+    },
+    {
+      "id": "activity-system-重新翻",
+      "kind": "activity-system",
+      "text": "重新翻",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "rule-play/flipReset"
+      ]
+    },
+    {
+      "id": "activity-system-翻好了-看看",
+      "kind": "activity-system",
+      "text": "翻好了，看看",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "rule-play/flipCheck"
+      ]
+    },
+    {
       "id": "activity-system-还有空位没有放好-再看一看",
       "kind": "activity-system",
       "text": "还有空位没有放好，再看一看。",
@@ -27823,15 +27953,6 @@
         "explore-learn-rule-transfer/explore-learn-rule-transfer-7",
         "explore-learn-rule-transfer/explore-learn-rule-transfer-8",
         "explore-learn-rule-transfer/explore-learn-rule-transfer-9",
-        "explore-toggle-state/explore-toggle-state-1",
-        "explore-toggle-state/explore-toggle-state-2",
-        "explore-toggle-state/explore-toggle-state-3",
-        "explore-toggle-state/explore-toggle-state-4",
-        "explore-toggle-state/explore-toggle-state-5",
-        "explore-toggle-state/explore-toggle-state-6",
-        "explore-toggle-state/explore-toggle-state-7",
-        "explore-toggle-state/explore-toggle-state-8",
-        "explore-toggle-state/explore-toggle-state-9",
         "explore-multi-agent-movement/explore-multi-agent-movement-1",
         "explore-multi-agent-movement/explore-multi-agent-movement-2",
         "explore-multi-agent-movement/explore-multi-agent-movement-3",
@@ -28411,24 +28532,6 @@
         "explore-evidence-reasoning/explore-evidence-reasoning-4",
         "explore-evidence-reasoning/explore-evidence-reasoning-5",
         "explore-evidence-reasoning/explore-evidence-reasoning-6",
-        "explore-learn-rule-transfer/explore-learn-rule-transfer-1",
-        "explore-learn-rule-transfer/explore-learn-rule-transfer-2",
-        "explore-learn-rule-transfer/explore-learn-rule-transfer-3",
-        "explore-learn-rule-transfer/explore-learn-rule-transfer-4",
-        "explore-learn-rule-transfer/explore-learn-rule-transfer-5",
-        "explore-learn-rule-transfer/explore-learn-rule-transfer-6",
-        "explore-learn-rule-transfer/explore-learn-rule-transfer-7",
-        "explore-learn-rule-transfer/explore-learn-rule-transfer-8",
-        "explore-learn-rule-transfer/explore-learn-rule-transfer-9",
-        "explore-toggle-state/explore-toggle-state-1",
-        "explore-toggle-state/explore-toggle-state-2",
-        "explore-toggle-state/explore-toggle-state-3",
-        "explore-toggle-state/explore-toggle-state-4",
-        "explore-toggle-state/explore-toggle-state-5",
-        "explore-toggle-state/explore-toggle-state-6",
-        "explore-toggle-state/explore-toggle-state-7",
-        "explore-toggle-state/explore-toggle-state-8",
-        "explore-toggle-state/explore-toggle-state-9",
         "explore-multi-agent-movement/explore-multi-agent-movement-1",
         "explore-multi-agent-movement/explore-multi-agent-movement-2",
         "explore-multi-agent-movement/explore-multi-agent-movement-3",
@@ -37446,9 +37549,9 @@
       ]
     },
     {
-      "id": "prompt-先看例子-一个圆片先添2个-得到3个-接下来换一个起始数量-仍用这条规则-让2个圆片经过规则机-最后变成几个-选出符合条件的一张图卡-先添上2个",
+      "id": "prompt-放进2个圆片-最后有几个-数一数-选出最后的圆片-添上2个圆片",
       "kind": "prompt",
-      "text": "先看例子：一个圆片先添2个，得到3个。接下来换一个起始数量，仍用这条规则。让2个圆片经过规则机，最后变成几个。选出符合条件的一张图卡。先添上2个。",
+      "text": "放进2个圆片，最后有几个。数一数，选出最后的圆片。添上2个圆片。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -37456,13 +37559,43 @@
       ]
     },
     {
-      "id": "success-先加2-得到4-换了起始数量-也要按同一条规则做",
+      "id": "prompt-先用一个圆片试一试-添上2个圆片-看看会变成几个",
+      "kind": "prompt",
+      "text": "先用一个圆片试一试。添上2个圆片，看看会变成几个。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-learn-rule-transfer/explore-learn-rule-transfer-1",
+        "explore-learn-rule-transfer/explore-learn-rule-transfer-2",
+        "explore-learn-rule-transfer/explore-learn-rule-transfer-3"
+      ]
+    },
+    {
+      "id": "success-先添上2个-一共有4个-起先的圆片换了-玩法还是一样",
       "kind": "success",
-      "text": "先加2，得到4。换了起始数量，也要按同一条规则做。",
+      "text": "先添上2个，一共有4个。起先的圆片换了，玩法还是一样。",
       "locale": "zh-CN",
       "tone": "warm, delighted, clear",
       "contexts": [
         "explore-learn-rule-transfer/explore-learn-rule-transfer-1"
+      ]
+    },
+    {
+      "id": "parent-添进来的是哪几个-换一个起始数量-你还会用这条规则吗",
+      "kind": "parent",
+      "text": "添进来的是哪几个？换一个起始数量，你还会用这条规则吗？",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-learn-rule-transfer/explore-learn-rule-transfer-1",
+        "explore-learn-rule-transfer/explore-learn-rule-transfer-2",
+        "explore-learn-rule-transfer/explore-learn-rule-transfer-3",
+        "explore-learn-rule-transfer/explore-learn-rule-transfer-4",
+        "explore-learn-rule-transfer/explore-learn-rule-transfer-5",
+        "explore-learn-rule-transfer/explore-learn-rule-transfer-6",
+        "explore-learn-rule-transfer/explore-learn-rule-transfer-7",
+        "explore-learn-rule-transfer/explore-learn-rule-transfer-8",
+        "explore-learn-rule-transfer/explore-learn-rule-transfer-9"
       ]
     },
     {
@@ -37478,31 +37611,42 @@
       ]
     },
     {
-      "id": "hint-先添上2个",
+      "id": "hint-先看看原来的圆片-再数添进来的圆片",
       "kind": "hint",
-      "text": "先添上2个。",
+      "text": "先看看原来的圆片，再数添进来的圆片。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
         "explore-learn-rule-transfer/explore-learn-rule-transfer-1",
         "explore-learn-rule-transfer/explore-learn-rule-transfer-2",
-        "explore-learn-rule-transfer/explore-learn-rule-transfer-3"
+        "explore-learn-rule-transfer/explore-learn-rule-transfer-3",
+        "explore-learn-rule-transfer/explore-learn-rule-transfer-4",
+        "explore-learn-rule-transfer/explore-learn-rule-transfer-5",
+        "explore-learn-rule-transfer/explore-learn-rule-transfer-6",
+        "explore-learn-rule-transfer/explore-learn-rule-transfer-7",
+        "explore-learn-rule-transfer/explore-learn-rule-transfer-8",
+        "explore-learn-rule-transfer/explore-learn-rule-transfer-9"
       ]
     },
     {
-      "id": "hint-先加2-得到4-换了起始数量-也要按同一条规则做",
+      "id": "hint-原来的和添进来的-都要数进去",
       "kind": "hint",
-      "text": "先加2，得到4。换了起始数量，也要按同一条规则做。",
+      "text": "原来的和添进来的，都要数进去。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "explore-learn-rule-transfer/explore-learn-rule-transfer-1"
+        "explore-learn-rule-transfer/explore-learn-rule-transfer-1",
+        "explore-learn-rule-transfer/explore-learn-rule-transfer-2",
+        "explore-learn-rule-transfer/explore-learn-rule-transfer-3",
+        "explore-learn-rule-transfer/explore-learn-rule-transfer-4",
+        "explore-learn-rule-transfer/explore-learn-rule-transfer-5",
+        "explore-learn-rule-transfer/explore-learn-rule-transfer-6"
       ]
     },
     {
-      "id": "clue-先添上2个",
+      "id": "clue-添上2个圆片",
       "kind": "clue",
-      "text": "先添上2个。",
+      "text": "添上2个圆片。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -37512,9 +37656,9 @@
       ]
     },
     {
-      "id": "prompt-先看例子-一个圆片先添2个-得到3个-接下来换一个起始数量-仍用这条规则-让3个圆片经过规则机-最后变成几个-选出符合条件的一张图卡-先添上2个",
+      "id": "prompt-放进3个圆片-最后有几个-数一数-选出最后的圆片-添上2个圆片",
       "kind": "prompt",
-      "text": "先看例子：一个圆片先添2个，得到3个。接下来换一个起始数量，仍用这条规则。让3个圆片经过规则机，最后变成几个。选出符合条件的一张图卡。先添上2个。",
+      "text": "放进3个圆片，最后有几个。数一数，选出最后的圆片。添上2个圆片。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -37522,9 +37666,9 @@
       ]
     },
     {
-      "id": "success-先加2-得到5-换了起始数量-也要按同一条规则做",
+      "id": "success-先添上2个-一共有5个-起先的圆片换了-玩法还是一样",
       "kind": "success",
-      "text": "先加2，得到5。换了起始数量，也要按同一条规则做。",
+      "text": "先添上2个，一共有5个。起先的圆片换了，玩法还是一样。",
       "locale": "zh-CN",
       "tone": "warm, delighted, clear",
       "contexts": [
@@ -37532,19 +37676,9 @@
       ]
     },
     {
-      "id": "hint-先加2-得到5-换了起始数量-也要按同一条规则做",
-      "kind": "hint",
-      "text": "先加2，得到5。换了起始数量，也要按同一条规则做。",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "explore-learn-rule-transfer/explore-learn-rule-transfer-2"
-      ]
-    },
-    {
-      "id": "prompt-先看例子-一个圆片先添2个-得到3个-接下来换一个起始数量-仍用这条规则-让4个圆片经过规则机-最后变成几个-选出符合条件的一张图卡-先添上2个",
+      "id": "prompt-放进4个圆片-最后有几个-数一数-选出最后的圆片-添上2个圆片",
       "kind": "prompt",
-      "text": "先看例子：一个圆片先添2个，得到3个。接下来换一个起始数量，仍用这条规则。让4个圆片经过规则机，最后变成几个。选出符合条件的一张图卡。先添上2个。",
+      "text": "放进4个圆片，最后有几个。数一数，选出最后的圆片。添上2个圆片。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -37552,9 +37686,9 @@
       ]
     },
     {
-      "id": "success-先加2-得到6-换了起始数量-也要按同一条规则做",
+      "id": "success-先添上2个-一共有6个-起先的圆片换了-玩法还是一样",
       "kind": "success",
-      "text": "先加2，得到6。换了起始数量，也要按同一条规则做。",
+      "text": "先添上2个，一共有6个。起先的圆片换了，玩法还是一样。",
       "locale": "zh-CN",
       "tone": "warm, delighted, clear",
       "contexts": [
@@ -37562,19 +37696,9 @@
       ]
     },
     {
-      "id": "hint-先加2-得到6-换了起始数量-也要按同一条规则做",
-      "kind": "hint",
-      "text": "先加2，得到6。换了起始数量，也要按同一条规则做。",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "explore-learn-rule-transfer/explore-learn-rule-transfer-3"
-      ]
-    },
-    {
-      "id": "prompt-先看例子-一个圆片先添3个-得到4个-接下来换一个起始数量-仍用这条规则-让2个圆片经过规则机-最后变成几个-选出符合条件的一张图卡-先添上3个",
+      "id": "prompt-放进2个圆片-最后有几个-数一数-选出最后的圆片-添上3个圆片",
       "kind": "prompt",
-      "text": "先看例子：一个圆片先添3个，得到4个。接下来换一个起始数量，仍用这条规则。让2个圆片经过规则机，最后变成几个。选出符合条件的一张图卡。先添上3个。",
+      "text": "放进2个圆片，最后有几个。数一数，选出最后的圆片。添上3个圆片。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -37582,9 +37706,21 @@
       ]
     },
     {
-      "id": "success-先加3-得到5-换了起始数量-也要按同一条规则做",
+      "id": "prompt-先用一个圆片试一试-添上3个圆片-看看会变成几个",
+      "kind": "prompt",
+      "text": "先用一个圆片试一试。添上3个圆片，看看会变成几个。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-learn-rule-transfer/explore-learn-rule-transfer-4",
+        "explore-learn-rule-transfer/explore-learn-rule-transfer-5",
+        "explore-learn-rule-transfer/explore-learn-rule-transfer-6"
+      ]
+    },
+    {
+      "id": "success-先添上3个-一共有5个-起先的圆片换了-玩法还是一样",
       "kind": "success",
-      "text": "先加3，得到5。换了起始数量，也要按同一条规则做。",
+      "text": "先添上3个，一共有5个。起先的圆片换了，玩法还是一样。",
       "locale": "zh-CN",
       "tone": "warm, delighted, clear",
       "contexts": [
@@ -37604,31 +37740,9 @@
       ]
     },
     {
-      "id": "hint-先添上3个",
-      "kind": "hint",
-      "text": "先添上3个。",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "explore-learn-rule-transfer/explore-learn-rule-transfer-4",
-        "explore-learn-rule-transfer/explore-learn-rule-transfer-5",
-        "explore-learn-rule-transfer/explore-learn-rule-transfer-6"
-      ]
-    },
-    {
-      "id": "hint-先加3-得到5-换了起始数量-也要按同一条规则做",
-      "kind": "hint",
-      "text": "先加3，得到5。换了起始数量，也要按同一条规则做。",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "explore-learn-rule-transfer/explore-learn-rule-transfer-4"
-      ]
-    },
-    {
-      "id": "clue-先添上3个",
+      "id": "clue-添上3个圆片",
       "kind": "clue",
-      "text": "先添上3个。",
+      "text": "添上3个圆片。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -37638,9 +37752,9 @@
       ]
     },
     {
-      "id": "prompt-先看例子-一个圆片先添3个-得到4个-接下来换一个起始数量-仍用这条规则-让3个圆片经过规则机-最后变成几个-选出符合条件的一张图卡-先添上3个",
+      "id": "prompt-放进3个圆片-最后有几个-数一数-选出最后的圆片-添上3个圆片",
       "kind": "prompt",
-      "text": "先看例子：一个圆片先添3个，得到4个。接下来换一个起始数量，仍用这条规则。让3个圆片经过规则机，最后变成几个。选出符合条件的一张图卡。先添上3个。",
+      "text": "放进3个圆片，最后有几个。数一数，选出最后的圆片。添上3个圆片。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -37648,9 +37762,9 @@
       ]
     },
     {
-      "id": "success-先加3-得到6-换了起始数量-也要按同一条规则做",
+      "id": "success-先添上3个-一共有6个-起先的圆片换了-玩法还是一样",
       "kind": "success",
-      "text": "先加3，得到6。换了起始数量，也要按同一条规则做。",
+      "text": "先添上3个，一共有6个。起先的圆片换了，玩法还是一样。",
       "locale": "zh-CN",
       "tone": "warm, delighted, clear",
       "contexts": [
@@ -37658,19 +37772,9 @@
       ]
     },
     {
-      "id": "hint-先加3-得到6-换了起始数量-也要按同一条规则做",
-      "kind": "hint",
-      "text": "先加3，得到6。换了起始数量，也要按同一条规则做。",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "explore-learn-rule-transfer/explore-learn-rule-transfer-5"
-      ]
-    },
-    {
-      "id": "prompt-先看例子-一个圆片先添3个-得到4个-接下来换一个起始数量-仍用这条规则-让4个圆片经过规则机-最后变成几个-选出符合条件的一张图卡-先添上3个",
+      "id": "prompt-放进4个圆片-最后有几个-数一数-选出最后的圆片-添上3个圆片",
       "kind": "prompt",
-      "text": "先看例子：一个圆片先添3个，得到4个。接下来换一个起始数量，仍用这条规则。让4个圆片经过规则机，最后变成几个。选出符合条件的一张图卡。先添上3个。",
+      "text": "放进4个圆片，最后有几个。数一数，选出最后的圆片。添上3个圆片。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -37678,9 +37782,9 @@
       ]
     },
     {
-      "id": "success-先加3-得到7-换了起始数量-也要按同一条规则做",
+      "id": "success-先添上3个-一共有7个-起先的圆片换了-玩法还是一样",
       "kind": "success",
-      "text": "先加3，得到7。换了起始数量，也要按同一条规则做。",
+      "text": "先添上3个，一共有7个。起先的圆片换了，玩法还是一样。",
       "locale": "zh-CN",
       "tone": "warm, delighted, clear",
       "contexts": [
@@ -37688,19 +37792,9 @@
       ]
     },
     {
-      "id": "hint-先加3-得到7-换了起始数量-也要按同一条规则做",
-      "kind": "hint",
-      "text": "先加3，得到7。换了起始数量，也要按同一条规则做。",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "explore-learn-rule-transfer/explore-learn-rule-transfer-6"
-      ]
-    },
-    {
-      "id": "prompt-先看例子-一个圆片先添4个-再把总数变成两倍-得到10个-接下来换一个起始数量-仍用这条规则-让2个圆片经过规则机-最后变成几个-选出符合条件的一",
+      "id": "prompt-放进2个圆片-最后有几个-数一数-选出最后的圆片-添上4个圆片-再摆一份一样多的圆片",
       "kind": "prompt",
-      "text": "先看例子：一个圆片先添4个，再把总数变成两倍，得到10个。接下来换一个起始数量，仍用这条规则。让2个圆片经过规则机，最后变成几个。选出符合条件的一张图卡。先添上4个。再把所有圆片变成两倍。",
+      "text": "放进2个圆片，最后有几个。数一数，选出最后的圆片。添上4个圆片。再摆一份一样多的圆片。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -37708,9 +37802,21 @@
       ]
     },
     {
-      "id": "success-先加4-再把总数变成两倍-得到12-换了起始数量-也要按同一条规则做",
+      "id": "prompt-先用一个圆片试一试-添上4个圆片-再摆一份一样多的圆片-看看会变成几个",
+      "kind": "prompt",
+      "text": "先用一个圆片试一试。添上4个圆片，再摆一份一样多的圆片，看看会变成几个。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-learn-rule-transfer/explore-learn-rule-transfer-7",
+        "explore-learn-rule-transfer/explore-learn-rule-transfer-8",
+        "explore-learn-rule-transfer/explore-learn-rule-transfer-9"
+      ]
+    },
+    {
+      "id": "success-先添上4个-再摆一份一样多的圆片-一共有12个-起先的圆片换了-玩法还是一样",
       "kind": "success",
-      "text": "先加4，再把总数变成两倍，得到12。换了起始数量，也要按同一条规则做。",
+      "text": "先添上4个，再摆一份一样多的圆片，一共有12个。起先的圆片换了，玩法还是一样。",
       "locale": "zh-CN",
       "tone": "warm, delighted, clear",
       "contexts": [
@@ -37730,9 +37836,9 @@
       ]
     },
     {
-      "id": "hint-先添上4个",
+      "id": "hint-第二步要把刚才所有的圆片-再摆一份",
       "kind": "hint",
-      "text": "先添上4个。",
+      "text": "第二步要把刚才所有的圆片，再摆一份。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -37742,19 +37848,9 @@
       ]
     },
     {
-      "id": "hint-先加4-再把总数变成两倍-得到12-换了起始数量-也要按同一条规则做",
-      "kind": "hint",
-      "text": "先加4，再把总数变成两倍，得到12。换了起始数量，也要按同一条规则做。",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "explore-learn-rule-transfer/explore-learn-rule-transfer-7"
-      ]
-    },
-    {
-      "id": "clue-先添上4个",
+      "id": "clue-添上4个圆片",
       "kind": "clue",
-      "text": "先添上4个。",
+      "text": "添上4个圆片。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -37764,9 +37860,9 @@
       ]
     },
     {
-      "id": "clue-再把所有圆片变成两倍",
+      "id": "clue-再摆一份一样多的圆片",
       "kind": "clue",
-      "text": "再把所有圆片变成两倍。",
+      "text": "再摆一份一样多的圆片。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -37776,9 +37872,9 @@
       ]
     },
     {
-      "id": "prompt-先看例子-一个圆片先添4个-再把总数变成两倍-得到10个-接下来换一个起始数量-仍用这条规则-让3个圆片经过规则机-最后变成几个-选出符合条件的一",
+      "id": "prompt-放进3个圆片-最后有几个-数一数-选出最后的圆片-添上4个圆片-再摆一份一样多的圆片",
       "kind": "prompt",
-      "text": "先看例子：一个圆片先添4个，再把总数变成两倍，得到10个。接下来换一个起始数量，仍用这条规则。让3个圆片经过规则机，最后变成几个。选出符合条件的一张图卡。先添上4个。再把所有圆片变成两倍。",
+      "text": "放进3个圆片，最后有几个。数一数，选出最后的圆片。添上4个圆片。再摆一份一样多的圆片。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -37786,9 +37882,9 @@
       ]
     },
     {
-      "id": "success-先加4-再把总数变成两倍-得到14-换了起始数量-也要按同一条规则做",
+      "id": "success-先添上4个-再摆一份一样多的圆片-一共有14个-起先的圆片换了-玩法还是一样",
       "kind": "success",
-      "text": "先加4，再把总数变成两倍，得到14。换了起始数量，也要按同一条规则做。",
+      "text": "先添上4个，再摆一份一样多的圆片，一共有14个。起先的圆片换了，玩法还是一样。",
       "locale": "zh-CN",
       "tone": "warm, delighted, clear",
       "contexts": [
@@ -37796,19 +37892,9 @@
       ]
     },
     {
-      "id": "hint-先加4-再把总数变成两倍-得到14-换了起始数量-也要按同一条规则做",
-      "kind": "hint",
-      "text": "先加4，再把总数变成两倍，得到14。换了起始数量，也要按同一条规则做。",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "explore-learn-rule-transfer/explore-learn-rule-transfer-8"
-      ]
-    },
-    {
-      "id": "prompt-先看例子-一个圆片先添4个-再把总数变成两倍-得到10个-接下来换一个起始数量-仍用这条规则-让4个圆片经过规则机-最后变成几个-选出符合条件的一",
+      "id": "prompt-放进4个圆片-最后有几个-数一数-选出最后的圆片-添上4个圆片-再摆一份一样多的圆片",
       "kind": "prompt",
-      "text": "先看例子：一个圆片先添4个，再把总数变成两倍，得到10个。接下来换一个起始数量，仍用这条规则。让4个圆片经过规则机，最后变成几个。选出符合条件的一张图卡。先添上4个。再把所有圆片变成两倍。",
+      "text": "放进4个圆片，最后有几个。数一数，选出最后的圆片。添上4个圆片。再摆一份一样多的圆片。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -37816,21 +37902,11 @@
       ]
     },
     {
-      "id": "success-先加4-再把总数变成两倍-得到16-换了起始数量-也要按同一条规则做",
+      "id": "success-先添上4个-再摆一份一样多的圆片-一共有16个-起先的圆片换了-玩法还是一样",
       "kind": "success",
-      "text": "先加4，再把总数变成两倍，得到16。换了起始数量，也要按同一条规则做。",
+      "text": "先添上4个，再摆一份一样多的圆片，一共有16个。起先的圆片换了，玩法还是一样。",
       "locale": "zh-CN",
       "tone": "warm, delighted, clear",
-      "contexts": [
-        "explore-learn-rule-transfer/explore-learn-rule-transfer-9"
-      ]
-    },
-    {
-      "id": "hint-先加4-再把总数变成两倍-得到16-换了起始数量-也要按同一条规则做",
-      "kind": "hint",
-      "text": "先加4，再把总数变成两倍，得到16。换了起始数量，也要按同一条规则做。",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
       "contexts": [
         "explore-learn-rule-transfer/explore-learn-rule-transfer-9"
       ]
@@ -37856,9 +37932,9 @@
       ]
     },
     {
-      "id": "prompt-按顺序翻牌-最后每个位置朝上的是哪一面-选图卡-点问号格放进去-图卡可以重复用-每张牌一面是白色-一面是黄色-翻一次-白色变黄色-黄色变白色-翻第",
+      "id": "prompt-照着顺序-动手翻一翻-看小图的顺序-点下面的大牌-点一下大牌-就翻一面-第1步-翻第1张",
       "kind": "prompt",
-      "text": "按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。每张牌一面是白色，一面是黄色。翻一次，白色变黄色，黄色变白色。翻第1张。",
+      "text": "照着顺序，动手翻一翻。看小图的顺序，点下面的大牌。点一下大牌，就翻一面。第1步，翻第1张。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -37866,11 +37942,47 @@
       ]
     },
     {
-      "id": "success-翻一次-白色和黄色换一面-同一张翻两次-又回到原来",
+      "id": "success-翻一次就换一面-同一张牌翻两次-又回到原来的样子",
       "kind": "success",
-      "text": "翻一次，白色和黄色换一面；同一张翻两次，又回到原来。",
+      "text": "翻一次就换一面。同一张牌翻两次，又回到原来的样子。",
       "locale": "zh-CN",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "explore-toggle-state/explore-toggle-state-1",
+        "explore-toggle-state/explore-toggle-state-2",
+        "explore-toggle-state/explore-toggle-state-3",
+        "explore-toggle-state/explore-toggle-state-4",
+        "explore-toggle-state/explore-toggle-state-5",
+        "explore-toggle-state/explore-toggle-state-6",
+        "explore-toggle-state/explore-toggle-state-7",
+        "explore-toggle-state/explore-toggle-state-8",
+        "explore-toggle-state/explore-toggle-state-9"
+      ]
+    },
+    {
+      "id": "retry-对照开始时的牌面-按顺序再翻一遍-也可以点-重新翻",
+      "kind": "retry",
+      "text": "对照开始时的牌面，按顺序再翻一遍。也可以点“重新翻”。",
+      "locale": "zh-CN",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "explore-toggle-state/explore-toggle-state-1",
+        "explore-toggle-state/explore-toggle-state-2",
+        "explore-toggle-state/explore-toggle-state-3",
+        "explore-toggle-state/explore-toggle-state-4",
+        "explore-toggle-state/explore-toggle-state-5",
+        "explore-toggle-state/explore-toggle-state-6",
+        "explore-toggle-state/explore-toggle-state-7",
+        "explore-toggle-state/explore-toggle-state-8",
+        "explore-toggle-state/explore-toggle-state-9"
+      ]
+    },
+    {
+      "id": "parent-哪张牌翻过两次-它和开始时有什么不同",
+      "kind": "parent",
+      "text": "哪张牌翻过两次？它和开始时有什么不同？",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "explore-toggle-state/explore-toggle-state-1",
         "explore-toggle-state/explore-toggle-state-2",
@@ -37896,9 +38008,9 @@
       ]
     },
     {
-      "id": "hint-每张牌一面是白色-一面是黄色",
+      "id": "hint-先看开始时的牌面-再按小图从左往右翻",
       "kind": "hint",
-      "text": "每张牌一面是白色，一面是黄色。",
+      "text": "先看开始时的牌面，再按小图从左往右翻。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -37914,9 +38026,9 @@
       ]
     },
     {
-      "id": "hint-翻一次-白色和黄色换一面-同一张翻两次-又回到原来",
+      "id": "hint-同一张牌翻两次-会回到原来的样子",
       "kind": "hint",
-      "text": "翻一次，白色和黄色换一面；同一张翻两次，又回到原来。",
+      "text": "同一张牌翻两次，会回到原来的样子。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -37932,9 +38044,9 @@
       ]
     },
     {
-      "id": "clue-每张牌一面是白色-一面是黄色",
+      "id": "clue-点一下大牌-就翻一面",
       "kind": "clue",
-      "text": "每张牌一面是白色，一面是黄色。",
+      "text": "点一下大牌，就翻一面。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -37950,33 +38062,14 @@
       ]
     },
     {
-      "id": "clue-翻一次-白色变黄色-黄色变白色",
+      "id": "clue-第1步-翻第1张",
       "kind": "clue",
-      "text": "翻一次，白色变黄色，黄色变白色。",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "explore-toggle-state/explore-toggle-state-1",
-        "explore-toggle-state/explore-toggle-state-2",
-        "explore-toggle-state/explore-toggle-state-3",
-        "explore-toggle-state/explore-toggle-state-4",
-        "explore-toggle-state/explore-toggle-state-5",
-        "explore-toggle-state/explore-toggle-state-6",
-        "explore-toggle-state/explore-toggle-state-7",
-        "explore-toggle-state/explore-toggle-state-8",
-        "explore-toggle-state/explore-toggle-state-9"
-      ]
-    },
-    {
-      "id": "clue-翻第1张",
-      "kind": "clue",
-      "text": "翻第1张。",
+      "text": "第1步，翻第1张。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
         "explore-toggle-state/explore-toggle-state-1",
         "explore-toggle-state/explore-toggle-state-4",
-        "explore-toggle-state/explore-toggle-state-7",
         "explore-toggle-state/explore-toggle-state-7"
       ]
     },
@@ -38017,9 +38110,9 @@
       ]
     },
     {
-      "id": "prompt-按顺序翻牌-最后每个位置朝上的是哪一面-选图卡-点问号格放进去-图卡可以重复用-每张牌一面是白色-一面是黄色-翻一次-白色变黄色-黄色变白色-翻第-e6b6ad14c0",
+      "id": "prompt-照着顺序-动手翻一翻-看小图的顺序-点下面的大牌-点一下大牌-就翻一面-第1步-翻第2张",
       "kind": "prompt",
-      "text": "按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。每张牌一面是白色，一面是黄色。翻一次，白色变黄色，黄色变白色。翻第2张。",
+      "text": "照着顺序，动手翻一翻。看小图的顺序，点下面的大牌。点一下大牌，就翻一面。第1步，翻第2张。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -38027,24 +38120,21 @@
       ]
     },
     {
-      "id": "clue-翻第2张",
+      "id": "clue-第1步-翻第2张",
       "kind": "clue",
-      "text": "翻第2张。",
+      "text": "第1步，翻第2张。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
         "explore-toggle-state/explore-toggle-state-2",
-        "explore-toggle-state/explore-toggle-state-4",
         "explore-toggle-state/explore-toggle-state-5",
-        "explore-toggle-state/explore-toggle-state-7",
-        "explore-toggle-state/explore-toggle-state-8",
         "explore-toggle-state/explore-toggle-state-8"
       ]
     },
     {
-      "id": "prompt-按顺序翻牌-最后每个位置朝上的是哪一面-选图卡-点问号格放进去-图卡可以重复用-每张牌一面是白色-一面是黄色-翻一次-白色变黄色-黄色变白色-翻第-377da11b48",
+      "id": "prompt-照着顺序-动手翻一翻-看小图的顺序-点下面的大牌-点一下大牌-就翻一面-第1步-翻第3张",
       "kind": "prompt",
-      "text": "按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。每张牌一面是白色，一面是黄色。翻一次，白色变黄色，黄色变白色。翻第3张。",
+      "text": "照着顺序，动手翻一翻。看小图的顺序，点下面的大牌。点一下大牌，就翻一面。第1步，翻第3张。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -38052,24 +38142,21 @@
       ]
     },
     {
-      "id": "clue-翻第3张",
+      "id": "clue-第1步-翻第3张",
       "kind": "clue",
-      "text": "翻第3张。",
+      "text": "第1步，翻第3张。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
         "explore-toggle-state/explore-toggle-state-3",
-        "explore-toggle-state/explore-toggle-state-5",
         "explore-toggle-state/explore-toggle-state-6",
-        "explore-toggle-state/explore-toggle-state-8",
-        "explore-toggle-state/explore-toggle-state-9",
         "explore-toggle-state/explore-toggle-state-9"
       ]
     },
     {
-      "id": "prompt-按顺序翻牌-最后每个位置朝上的是哪一面-选图卡-点问号格放进去-图卡可以重复用-每张牌一面是白色-一面是黄色-翻一次-白色变黄色-黄色变白色-翻第-612e141fd1",
+      "id": "prompt-照着顺序-动手翻一翻-看小图的顺序-点下面的大牌-点一下大牌-就翻一面-第1步-翻第1张-第2步-翻第2张",
       "kind": "prompt",
-      "text": "按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。每张牌一面是白色，一面是黄色。翻一次，白色变黄色，黄色变白色。翻第1张。翻第2张。",
+      "text": "照着顺序，动手翻一翻。看小图的顺序，点下面的大牌。点一下大牌，就翻一面。第1步，翻第1张。第2步，翻第2张。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -38089,9 +38176,20 @@
       ]
     },
     {
-      "id": "prompt-按顺序翻牌-最后每个位置朝上的是哪一面-选图卡-点问号格放进去-图卡可以重复用-每张牌一面是白色-一面是黄色-翻一次-白色变黄色-黄色变白色-翻第-e108bef9c9",
+      "id": "clue-第2步-翻第2张",
+      "kind": "clue",
+      "text": "第2步，翻第2张。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-toggle-state/explore-toggle-state-4",
+        "explore-toggle-state/explore-toggle-state-7"
+      ]
+    },
+    {
+      "id": "prompt-照着顺序-动手翻一翻-看小图的顺序-点下面的大牌-点一下大牌-就翻一面-第1步-翻第2张-第2步-翻第3张",
       "kind": "prompt",
-      "text": "按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。每张牌一面是白色，一面是黄色。翻一次，白色变黄色，黄色变白色。翻第2张。翻第3张。",
+      "text": "照着顺序，动手翻一翻。看小图的顺序，点下面的大牌。点一下大牌，就翻一面。第1步，翻第2张。第2步，翻第3张。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -38099,9 +38197,20 @@
       ]
     },
     {
-      "id": "prompt-按顺序翻牌-最后每个位置朝上的是哪一面-选图卡-点问号格放进去-图卡可以重复用-每张牌一面是白色-一面是黄色-翻一次-白色变黄色-黄色变白色-翻第-180dbf63e6",
+      "id": "clue-第2步-翻第3张",
+      "kind": "clue",
+      "text": "第2步，翻第3张。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-toggle-state/explore-toggle-state-5",
+        "explore-toggle-state/explore-toggle-state-8"
+      ]
+    },
+    {
+      "id": "prompt-照着顺序-动手翻一翻-看小图的顺序-点下面的大牌-点一下大牌-就翻一面-第1步-翻第3张-第2步-翻第4张",
       "kind": "prompt",
-      "text": "按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。每张牌一面是白色，一面是黄色。翻一次，白色变黄色，黄色变白色。翻第3张。翻第4张。",
+      "text": "照着顺序，动手翻一翻。看小图的顺序，点下面的大牌。点一下大牌，就翻一面。第1步，翻第3张。第2步，翻第4张。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -38109,9 +38218,9 @@
       ]
     },
     {
-      "id": "clue-翻第4张",
+      "id": "clue-第2步-翻第4张",
       "kind": "clue",
-      "text": "翻第4张。",
+      "text": "第2步，翻第4张。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -38120,9 +38229,9 @@
       ]
     },
     {
-      "id": "prompt-按顺序翻牌-最后每个位置朝上的是哪一面-选图卡-点问号格放进去-图卡可以重复用-每张牌一面是白色-一面是黄色-翻一次-白色变黄色-黄色变白色-翻第-35565b0e6b",
+      "id": "prompt-照着顺序-动手翻一翻-看小图的顺序-点下面的大牌-点一下大牌-就翻一面-第1步-翻第1张-第2步-翻第2张-第3步-翻第1张",
       "kind": "prompt",
-      "text": "按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。每张牌一面是白色，一面是黄色。翻一次，白色变黄色，黄色变白色。翻第1张。翻第2张。翻第1张。",
+      "text": "照着顺序，动手翻一翻。看小图的顺序，点下面的大牌。点一下大牌，就翻一面。第1步，翻第1张。第2步，翻第2张。第3步，翻第1张。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -38142,9 +38251,19 @@
       ]
     },
     {
-      "id": "prompt-按顺序翻牌-最后每个位置朝上的是哪一面-选图卡-点问号格放进去-图卡可以重复用-每张牌一面是白色-一面是黄色-翻一次-白色变黄色-黄色变白色-翻第-8728ce6a49",
+      "id": "clue-第3步-翻第1张",
+      "kind": "clue",
+      "text": "第3步，翻第1张。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-toggle-state/explore-toggle-state-7"
+      ]
+    },
+    {
+      "id": "prompt-照着顺序-动手翻一翻-看小图的顺序-点下面的大牌-点一下大牌-就翻一面-第1步-翻第2张-第2步-翻第3张-第3步-翻第2张",
       "kind": "prompt",
-      "text": "按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。每张牌一面是白色，一面是黄色。翻一次，白色变黄色，黄色变白色。翻第2张。翻第3张。翻第2张。",
+      "text": "照着顺序，动手翻一翻。看小图的顺序，点下面的大牌。点一下大牌，就翻一面。第1步，翻第2张。第2步，翻第3张。第3步，翻第2张。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -38152,9 +38271,29 @@
       ]
     },
     {
-      "id": "prompt-按顺序翻牌-最后每个位置朝上的是哪一面-选图卡-点问号格放进去-图卡可以重复用-每张牌一面是白色-一面是黄色-翻一次-白色变黄色-黄色变白色-翻第-7e688f6b0b",
+      "id": "clue-第3步-翻第2张",
+      "kind": "clue",
+      "text": "第3步，翻第2张。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-toggle-state/explore-toggle-state-8"
+      ]
+    },
+    {
+      "id": "prompt-照着顺序-动手翻一翻-看小图的顺序-点下面的大牌-点一下大牌-就翻一面-第1步-翻第3张-第2步-翻第4张-第3步-翻第3张",
       "kind": "prompt",
-      "text": "按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。每张牌一面是白色，一面是黄色。翻一次，白色变黄色，黄色变白色。翻第3张。翻第4张。翻第3张。",
+      "text": "照着顺序，动手翻一翻。看小图的顺序，点下面的大牌。点一下大牌，就翻一面。第1步，翻第3张。第2步，翻第4张。第3步，翻第3张。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-toggle-state/explore-toggle-state-9"
+      ]
+    },
+    {
+      "id": "clue-第3步-翻第3张",
+      "kind": "clue",
+      "text": "第3步，翻第3张。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [

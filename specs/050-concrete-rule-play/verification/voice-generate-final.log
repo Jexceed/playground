@@ -1,0 +1,14 @@
+$ node scripts/generate-edge-voices.mjs -- --voice zh-CN-XiaoxiaoNeural --rate -12% --pitch +2Hz --python /Users/chiang/Documents/Projects/playground/local-tts/.venv/bin/python --quiet --retries 3
+Generated 2929/4224: prompt-放进2个圆片-最后有几个-数一数-选出最后的圆片-添上2个圆片
+Generated 2930/4224: prompt-先用一个圆片试一试-添上2个圆片-看看会变成几个
+Generated 2937/4224: prompt-放进3个圆片-最后有几个-数一数-选出最后的圆片-添上2个圆片
+Generated 2939/4224: prompt-放进4个圆片-最后有几个-数一数-选出最后的圆片-添上2个圆片
+Generated 2942/4224: prompt-先用一个圆片试一试-添上3个圆片-看看会变成几个
+Generated 2941/4224: prompt-放进2个圆片-最后有几个-数一数-选出最后的圆片-添上3个圆片
+Generated 2946/4224: prompt-放进3个圆片-最后有几个-数一数-选出最后的圆片-添上3个圆片
+Generated 2948/4224: prompt-放进4个圆片-最后有几个-数一数-选出最后的圆片-添上3个圆片
+Generated 2950/4224: prompt-放进2个圆片-最后有几个-数一数-选出最后的圆片-添上4个圆片-再摆一份一样多的圆片
+Generated 2951/4224: prompt-先用一个圆片试一试-添上4个圆片-再摆一份一样多的圆片-看看会变成几个
+Generated 2959/4224: prompt-放进4个圆片-最后有几个-数一数-选出最后的圆片-添上4个圆片-再摆一份一样多的圆片
+Generated 2957/4224: prompt-放进3个圆片-最后有几个-数一数-选出最后的圆片-添上4个圆片-再摆一份一样多的圆片
+Wrote public/audio/voice/manifest.json with 4224 entries and 0 skipped lines.

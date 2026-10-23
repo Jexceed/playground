@@ -89,12 +89,11 @@ test('sorting tasks expose a sorting goal and the failed plan shows the mixed st
   assert.ok(!failed.sequence.includes('整齐'));
   const mixed = renderToStaticMarkup(VisualToken({ value: '混在一个盒子' }));
   const sorted = renderToStaticMarkup(VisualToken({ value: '分类装好' }));
-  assert.match(mixed, /block\.png/);
-  assert.match(mixed, /toy-car\.png/);
-  assert.equal([...mixed.matchAll(/data-storage-box="mixed"/g)].length, 1);
-  assert.equal([...sorted.matchAll(/data-storage-box="classified"/g)].length, 2);
-  assert.match(sorted, /block\.png/);
-  assert.match(sorted, /toy-car\.png/);
+  // These reviewed photographs show one mixed box and two classified boxes.
+  // Their visible contents are covered by 052's per-image visual review.
+  assert.match(mixed, /order-045-blocks-mixedBox\.png/);
+  assert.match(sorted, /order-045-sorting-done\.png/);
+  assert.notEqual(mixed.match(/src="([^"]+)"/)[1], sorted.match(/src="([^"]+)"/)[1]);
   assert.doesNotMatch(sorted, /tidy-box\.png/);
 });
 

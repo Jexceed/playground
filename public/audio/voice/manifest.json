@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-10-19T03:28:39.051Z",
+  "generatedAt": "2026-10-23T06:46:46.016Z",
   "provider": "edge-tts Python package",
   "voice": "zh-CN-XiaoxiaoNeural",
   "rate": "-12%",
   "pitch": "+2Hz",
   "includeParent": true,
   "format": "mp3",
-  "count": 4210,
-  "requestedCount": 4210,
+  "count": 4224,
+  "requestedCount": 4224,
   "failures": [],
   "entries": [
     {
@@ -16082,6 +16082,110 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/activity-system-%E8%BF%99%E6%AC%A1%E4%BA%B2%E5%AD%90%E6%B4%BB%E5%8A%A8%E5%B7%B2%E7%BB%8F%E8%AE%B0%E5%BD%95-%E4%B8%8B%E6%AC%A1%E5%8F%AF%E4%BB%A5%E6%8D%A2%E4%B8%AA%E6%9D%A1%E4%BB%B6%E5%86%8D%E8%AF%95%E8%AF%95.mp3"
     },
     {
+      "id": "activity-system-先玩一个小例子",
+      "kind": "activity-system",
+      "text": "先玩一个小例子",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/activity-system-%E5%85%88%E7%8E%A9%E4%B8%80%E4%B8%AA%E5%B0%8F%E4%BE%8B%E5%AD%90.mp3"
+    },
+    {
+      "id": "activity-system-轮到你了",
+      "kind": "activity-system",
+      "text": "轮到你了",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/activity-system-%E8%BD%AE%E5%88%B0%E4%BD%A0%E4%BA%86.mp3"
+    },
+    {
+      "id": "activity-system-添进来",
+      "kind": "activity-system",
+      "text": "添进来",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/activity-system-%E6%B7%BB%E8%BF%9B%E6%9D%A5.mp3"
+    },
+    {
+      "id": "activity-system-再摆一份",
+      "kind": "activity-system",
+      "text": "再摆一份",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/activity-system-%E5%86%8D%E6%91%86%E4%B8%80%E4%BB%BD.mp3"
+    },
+    {
+      "id": "activity-system-我来试一试",
+      "kind": "activity-system",
+      "text": "我来试一试",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/activity-system-%E6%88%91%E6%9D%A5%E8%AF%95%E4%B8%80%E8%AF%95.mp3"
+    },
+    {
+      "id": "activity-system-再看小例子",
+      "kind": "activity-system",
+      "text": "再看小例子",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/activity-system-%E5%86%8D%E7%9C%8B%E5%B0%8F%E4%BE%8B%E5%AD%90.mp3"
+    },
+    {
+      "id": "activity-system-回到这道题",
+      "kind": "activity-system",
+      "text": "回到这道题",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/activity-system-%E5%9B%9E%E5%88%B0%E8%BF%99%E9%81%93%E9%A2%98.mp3"
+    },
+    {
+      "id": "activity-system-再演示一次",
+      "kind": "activity-system",
+      "text": "再演示一次",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/activity-system-%E5%86%8D%E6%BC%94%E7%A4%BA%E4%B8%80%E6%AC%A1.mp3"
+    },
+    {
+      "id": "activity-system-点这张牌-试试翻面",
+      "kind": "activity-system",
+      "text": "点这张牌，试试翻面",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/activity-system-%E7%82%B9%E8%BF%99%E5%BC%A0%E7%89%8C-%E8%AF%95%E8%AF%95%E7%BF%BB%E9%9D%A2.mp3"
+    },
+    {
+      "id": "activity-system-现在是白面-再点一下就变成黄面",
+      "kind": "activity-system",
+      "text": "现在是白面，再点一下就变成黄面。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/activity-system-%E7%8E%B0%E5%9C%A8%E6%98%AF%E7%99%BD%E9%9D%A2-%E5%86%8D%E7%82%B9%E4%B8%80%E4%B8%8B%E5%B0%B1%E5%8F%98%E6%88%90%E9%BB%84%E9%9D%A2.mp3"
+    },
+    {
+      "id": "activity-system-现在是黄面-再点一下就变成白面",
+      "kind": "activity-system",
+      "text": "现在是黄面，再点一下就变成白面。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/activity-system-%E7%8E%B0%E5%9C%A8%E6%98%AF%E9%BB%84%E9%9D%A2-%E5%86%8D%E7%82%B9%E4%B8%80%E4%B8%8B%E5%B0%B1%E5%8F%98%E6%88%90%E7%99%BD%E9%9D%A2.mp3"
+    },
+    {
+      "id": "activity-system-重新翻",
+      "kind": "activity-system",
+      "text": "重新翻",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/activity-system-%E9%87%8D%E6%96%B0%E7%BF%BB.mp3"
+    },
+    {
+      "id": "activity-system-翻好了-看看",
+      "kind": "activity-system",
+      "text": "翻好了，看看",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/activity-system-%E7%BF%BB%E5%A5%BD%E4%BA%86-%E7%9C%8B%E7%9C%8B.mp3"
+    },
+    {
       "id": "activity-system-还有空位没有放好-再看一看",
       "kind": "activity-system",
       "text": "还有空位没有放好，再看一看。",
@@ -23452,20 +23556,36 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/game-goal-%E6%93%8D%E4%BD%9C%E7%A4%BA%E4%BE%8B-%E6%8D%A2%E6%9D%90%E6%96%99%E5%BA%94%E7%94%A8-%E9%80%86%E5%90%91%E6%88%96%E8%BF%9E%E7%BB%AD%E5%8F%98%E6%8D%A2.mp3"
     },
     {
-      "id": "prompt-先看例子-一个圆片先添2个-得到3个-接下来换一个起始数量-仍用这条规则-让2个圆片经过规则机-最后变成几个-选出符合条件的一张图卡-先添上2个",
+      "id": "prompt-放进2个圆片-最后有几个-数一数-选出最后的圆片-添上2个圆片",
       "kind": "prompt",
-      "text": "先看例子：一个圆片先添2个，得到3个。接下来换一个起始数量，仍用这条规则。让2个圆片经过规则机，最后变成几个。选出符合条件的一张图卡。先添上2个。",
+      "text": "放进2个圆片，最后有几个。数一数，选出最后的圆片。添上2个圆片。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%85%88%E7%9C%8B%E4%BE%8B%E5%AD%90-%E4%B8%80%E4%B8%AA%E5%9C%86%E7%89%87%E5%85%88%E6%B7%BB2%E4%B8%AA-%E5%BE%97%E5%88%B03%E4%B8%AA-%E6%8E%A5%E4%B8%8B%E6%9D%A5%E6%8D%A2%E4%B8%80%E4%B8%AA%E8%B5%B7%E5%A7%8B%E6%95%B0%E9%87%8F-%E4%BB%8D%E7%94%A8%E8%BF%99%E6%9D%A1%E8%A7%84%E5%88%99-%E8%AE%A92%E4%B8%AA%E5%9C%86%E7%89%87%E7%BB%8F%E8%BF%87%E8%A7%84%E5%88%99%E6%9C%BA-%E6%9C%80%E5%90%8E%E5%8F%98%E6%88%90%E5%87%A0%E4%B8%AA-%E9%80%89%E5%87%BA%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E4%B8%80%E5%BC%A0%E5%9B%BE%E5%8D%A1-%E5%85%88%E6%B7%BB%E4%B8%8A2%E4%B8%AA.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%94%BE%E8%BF%9B2%E4%B8%AA%E5%9C%86%E7%89%87-%E6%9C%80%E5%90%8E%E6%9C%89%E5%87%A0%E4%B8%AA-%E6%95%B0%E4%B8%80%E6%95%B0-%E9%80%89%E5%87%BA%E6%9C%80%E5%90%8E%E7%9A%84%E5%9C%86%E7%89%87-%E6%B7%BB%E4%B8%8A2%E4%B8%AA%E5%9C%86%E7%89%87.mp3"
     },
     {
-      "id": "success-先加2-得到4-换了起始数量-也要按同一条规则做",
-      "kind": "success",
-      "text": "先加2，得到4。换了起始数量，也要按同一条规则做。",
+      "id": "prompt-先用一个圆片试一试-添上2个圆片-看看会变成几个",
+      "kind": "prompt",
+      "text": "先用一个圆片试一试。添上2个圆片，看看会变成几个。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%85%88%E5%8A%A02-%E5%BE%97%E5%88%B04-%E6%8D%A2%E4%BA%86%E8%B5%B7%E5%A7%8B%E6%95%B0%E9%87%8F-%E4%B9%9F%E8%A6%81%E6%8C%89%E5%90%8C%E4%B8%80%E6%9D%A1%E8%A7%84%E5%88%99%E5%81%9A.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%85%88%E7%94%A8%E4%B8%80%E4%B8%AA%E5%9C%86%E7%89%87%E8%AF%95%E4%B8%80%E8%AF%95-%E6%B7%BB%E4%B8%8A2%E4%B8%AA%E5%9C%86%E7%89%87-%E7%9C%8B%E7%9C%8B%E4%BC%9A%E5%8F%98%E6%88%90%E5%87%A0%E4%B8%AA.mp3"
+    },
+    {
+      "id": "success-先添上2个-一共有4个-起先的圆片换了-玩法还是一样",
+      "kind": "success",
+      "text": "先添上2个，一共有4个。起先的圆片换了，玩法还是一样。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%85%88%E6%B7%BB%E4%B8%8A2%E4%B8%AA-%E4%B8%80%E5%85%B1%E6%9C%894%E4%B8%AA-%E8%B5%B7%E5%85%88%E7%9A%84%E5%9C%86%E7%89%87%E6%8D%A2%E4%BA%86-%E7%8E%A9%E6%B3%95%E8%BF%98%E6%98%AF%E4%B8%80%E6%A0%B7.mp3"
+    },
+    {
+      "id": "parent-添进来的是哪几个-换一个起始数量-你还会用这条规则吗",
+      "kind": "parent",
+      "text": "添进来的是哪几个？换一个起始数量，你还会用这条规则吗？",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E6%B7%BB%E8%BF%9B%E6%9D%A5%E7%9A%84%E6%98%AF%E5%93%AA%E5%87%A0%E4%B8%AA-%E6%8D%A2%E4%B8%80%E4%B8%AA%E8%B5%B7%E5%A7%8B%E6%95%B0%E9%87%8F-%E4%BD%A0%E8%BF%98%E4%BC%9A%E7%94%A8%E8%BF%99%E6%9D%A1%E8%A7%84%E5%88%99%E5%90%97.mp3"
     },
     {
       "id": "parent-会按给定加2规则处理新起始数",
@@ -23476,92 +23596,84 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E4%BC%9A%E6%8C%89%E7%BB%99%E5%AE%9A%E5%8A%A02%E8%A7%84%E5%88%99%E5%A4%84%E7%90%86%E6%96%B0%E8%B5%B7%E5%A7%8B%E6%95%B0.mp3"
     },
     {
-      "id": "hint-先添上2个",
+      "id": "hint-先看看原来的圆片-再数添进来的圆片",
       "kind": "hint",
-      "text": "先添上2个。",
+      "text": "先看看原来的圆片，再数添进来的圆片。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E5%85%88%E6%B7%BB%E4%B8%8A2%E4%B8%AA.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E5%85%88%E7%9C%8B%E7%9C%8B%E5%8E%9F%E6%9D%A5%E7%9A%84%E5%9C%86%E7%89%87-%E5%86%8D%E6%95%B0%E6%B7%BB%E8%BF%9B%E6%9D%A5%E7%9A%84%E5%9C%86%E7%89%87.mp3"
     },
     {
-      "id": "hint-先加2-得到4-换了起始数量-也要按同一条规则做",
+      "id": "hint-原来的和添进来的-都要数进去",
       "kind": "hint",
-      "text": "先加2，得到4。换了起始数量，也要按同一条规则做。",
+      "text": "原来的和添进来的，都要数进去。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E5%85%88%E5%8A%A02-%E5%BE%97%E5%88%B04-%E6%8D%A2%E4%BA%86%E8%B5%B7%E5%A7%8B%E6%95%B0%E9%87%8F-%E4%B9%9F%E8%A6%81%E6%8C%89%E5%90%8C%E4%B8%80%E6%9D%A1%E8%A7%84%E5%88%99%E5%81%9A.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E5%8E%9F%E6%9D%A5%E7%9A%84%E5%92%8C%E6%B7%BB%E8%BF%9B%E6%9D%A5%E7%9A%84-%E9%83%BD%E8%A6%81%E6%95%B0%E8%BF%9B%E5%8E%BB.mp3"
     },
     {
-      "id": "clue-先添上2个",
+      "id": "clue-添上2个圆片",
       "kind": "clue",
-      "text": "先添上2个。",
+      "text": "添上2个圆片。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E5%85%88%E6%B7%BB%E4%B8%8A2%E4%B8%AA.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E6%B7%BB%E4%B8%8A2%E4%B8%AA%E5%9C%86%E7%89%87.mp3"
     },
     {
-      "id": "prompt-先看例子-一个圆片先添2个-得到3个-接下来换一个起始数量-仍用这条规则-让3个圆片经过规则机-最后变成几个-选出符合条件的一张图卡-先添上2个",
+      "id": "prompt-放进3个圆片-最后有几个-数一数-选出最后的圆片-添上2个圆片",
       "kind": "prompt",
-      "text": "先看例子：一个圆片先添2个，得到3个。接下来换一个起始数量，仍用这条规则。让3个圆片经过规则机，最后变成几个。选出符合条件的一张图卡。先添上2个。",
+      "text": "放进3个圆片，最后有几个。数一数，选出最后的圆片。添上2个圆片。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%85%88%E7%9C%8B%E4%BE%8B%E5%AD%90-%E4%B8%80%E4%B8%AA%E5%9C%86%E7%89%87%E5%85%88%E6%B7%BB2%E4%B8%AA-%E5%BE%97%E5%88%B03%E4%B8%AA-%E6%8E%A5%E4%B8%8B%E6%9D%A5%E6%8D%A2%E4%B8%80%E4%B8%AA%E8%B5%B7%E5%A7%8B%E6%95%B0%E9%87%8F-%E4%BB%8D%E7%94%A8%E8%BF%99%E6%9D%A1%E8%A7%84%E5%88%99-%E8%AE%A93%E4%B8%AA%E5%9C%86%E7%89%87%E7%BB%8F%E8%BF%87%E8%A7%84%E5%88%99%E6%9C%BA-%E6%9C%80%E5%90%8E%E5%8F%98%E6%88%90%E5%87%A0%E4%B8%AA-%E9%80%89%E5%87%BA%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E4%B8%80%E5%BC%A0%E5%9B%BE%E5%8D%A1-%E5%85%88%E6%B7%BB%E4%B8%8A2%E4%B8%AA.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%94%BE%E8%BF%9B3%E4%B8%AA%E5%9C%86%E7%89%87-%E6%9C%80%E5%90%8E%E6%9C%89%E5%87%A0%E4%B8%AA-%E6%95%B0%E4%B8%80%E6%95%B0-%E9%80%89%E5%87%BA%E6%9C%80%E5%90%8E%E7%9A%84%E5%9C%86%E7%89%87-%E6%B7%BB%E4%B8%8A2%E4%B8%AA%E5%9C%86%E7%89%87.mp3"
     },
     {
-      "id": "success-先加2-得到5-换了起始数量-也要按同一条规则做",
+      "id": "success-先添上2个-一共有5个-起先的圆片换了-玩法还是一样",
       "kind": "success",
-      "text": "先加2，得到5。换了起始数量，也要按同一条规则做。",
+      "text": "先添上2个，一共有5个。起先的圆片换了，玩法还是一样。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%85%88%E5%8A%A02-%E5%BE%97%E5%88%B05-%E6%8D%A2%E4%BA%86%E8%B5%B7%E5%A7%8B%E6%95%B0%E9%87%8F-%E4%B9%9F%E8%A6%81%E6%8C%89%E5%90%8C%E4%B8%80%E6%9D%A1%E8%A7%84%E5%88%99%E5%81%9A.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%85%88%E6%B7%BB%E4%B8%8A2%E4%B8%AA-%E4%B8%80%E5%85%B1%E6%9C%895%E4%B8%AA-%E8%B5%B7%E5%85%88%E7%9A%84%E5%9C%86%E7%89%87%E6%8D%A2%E4%BA%86-%E7%8E%A9%E6%B3%95%E8%BF%98%E6%98%AF%E4%B8%80%E6%A0%B7.mp3"
     },
     {
-      "id": "hint-先加2-得到5-换了起始数量-也要按同一条规则做",
-      "kind": "hint",
-      "text": "先加2，得到5。换了起始数量，也要按同一条规则做。",
-      "locale": "zh-CN",
-      "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E5%85%88%E5%8A%A02-%E5%BE%97%E5%88%B05-%E6%8D%A2%E4%BA%86%E8%B5%B7%E5%A7%8B%E6%95%B0%E9%87%8F-%E4%B9%9F%E8%A6%81%E6%8C%89%E5%90%8C%E4%B8%80%E6%9D%A1%E8%A7%84%E5%88%99%E5%81%9A.mp3"
-    },
-    {
-      "id": "prompt-先看例子-一个圆片先添2个-得到3个-接下来换一个起始数量-仍用这条规则-让4个圆片经过规则机-最后变成几个-选出符合条件的一张图卡-先添上2个",
+      "id": "prompt-放进4个圆片-最后有几个-数一数-选出最后的圆片-添上2个圆片",
       "kind": "prompt",
-      "text": "先看例子：一个圆片先添2个，得到3个。接下来换一个起始数量，仍用这条规则。让4个圆片经过规则机，最后变成几个。选出符合条件的一张图卡。先添上2个。",
+      "text": "放进4个圆片，最后有几个。数一数，选出最后的圆片。添上2个圆片。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%85%88%E7%9C%8B%E4%BE%8B%E5%AD%90-%E4%B8%80%E4%B8%AA%E5%9C%86%E7%89%87%E5%85%88%E6%B7%BB2%E4%B8%AA-%E5%BE%97%E5%88%B03%E4%B8%AA-%E6%8E%A5%E4%B8%8B%E6%9D%A5%E6%8D%A2%E4%B8%80%E4%B8%AA%E8%B5%B7%E5%A7%8B%E6%95%B0%E9%87%8F-%E4%BB%8D%E7%94%A8%E8%BF%99%E6%9D%A1%E8%A7%84%E5%88%99-%E8%AE%A94%E4%B8%AA%E5%9C%86%E7%89%87%E7%BB%8F%E8%BF%87%E8%A7%84%E5%88%99%E6%9C%BA-%E6%9C%80%E5%90%8E%E5%8F%98%E6%88%90%E5%87%A0%E4%B8%AA-%E9%80%89%E5%87%BA%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E4%B8%80%E5%BC%A0%E5%9B%BE%E5%8D%A1-%E5%85%88%E6%B7%BB%E4%B8%8A2%E4%B8%AA.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%94%BE%E8%BF%9B4%E4%B8%AA%E5%9C%86%E7%89%87-%E6%9C%80%E5%90%8E%E6%9C%89%E5%87%A0%E4%B8%AA-%E6%95%B0%E4%B8%80%E6%95%B0-%E9%80%89%E5%87%BA%E6%9C%80%E5%90%8E%E7%9A%84%E5%9C%86%E7%89%87-%E6%B7%BB%E4%B8%8A2%E4%B8%AA%E5%9C%86%E7%89%87.mp3"
     },
     {
-      "id": "success-先加2-得到6-换了起始数量-也要按同一条规则做",
+      "id": "success-先添上2个-一共有6个-起先的圆片换了-玩法还是一样",
       "kind": "success",
-      "text": "先加2，得到6。换了起始数量，也要按同一条规则做。",
+      "text": "先添上2个，一共有6个。起先的圆片换了，玩法还是一样。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%85%88%E5%8A%A02-%E5%BE%97%E5%88%B06-%E6%8D%A2%E4%BA%86%E8%B5%B7%E5%A7%8B%E6%95%B0%E9%87%8F-%E4%B9%9F%E8%A6%81%E6%8C%89%E5%90%8C%E4%B8%80%E6%9D%A1%E8%A7%84%E5%88%99%E5%81%9A.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%85%88%E6%B7%BB%E4%B8%8A2%E4%B8%AA-%E4%B8%80%E5%85%B1%E6%9C%896%E4%B8%AA-%E8%B5%B7%E5%85%88%E7%9A%84%E5%9C%86%E7%89%87%E6%8D%A2%E4%BA%86-%E7%8E%A9%E6%B3%95%E8%BF%98%E6%98%AF%E4%B8%80%E6%A0%B7.mp3"
     },
     {
-      "id": "hint-先加2-得到6-换了起始数量-也要按同一条规则做",
-      "kind": "hint",
-      "text": "先加2，得到6。换了起始数量，也要按同一条规则做。",
-      "locale": "zh-CN",
-      "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E5%85%88%E5%8A%A02-%E5%BE%97%E5%88%B06-%E6%8D%A2%E4%BA%86%E8%B5%B7%E5%A7%8B%E6%95%B0%E9%87%8F-%E4%B9%9F%E8%A6%81%E6%8C%89%E5%90%8C%E4%B8%80%E6%9D%A1%E8%A7%84%E5%88%99%E5%81%9A.mp3"
-    },
-    {
-      "id": "prompt-先看例子-一个圆片先添3个-得到4个-接下来换一个起始数量-仍用这条规则-让2个圆片经过规则机-最后变成几个-选出符合条件的一张图卡-先添上3个",
+      "id": "prompt-放进2个圆片-最后有几个-数一数-选出最后的圆片-添上3个圆片",
       "kind": "prompt",
-      "text": "先看例子：一个圆片先添3个，得到4个。接下来换一个起始数量，仍用这条规则。让2个圆片经过规则机，最后变成几个。选出符合条件的一张图卡。先添上3个。",
+      "text": "放进2个圆片，最后有几个。数一数，选出最后的圆片。添上3个圆片。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%85%88%E7%9C%8B%E4%BE%8B%E5%AD%90-%E4%B8%80%E4%B8%AA%E5%9C%86%E7%89%87%E5%85%88%E6%B7%BB3%E4%B8%AA-%E5%BE%97%E5%88%B04%E4%B8%AA-%E6%8E%A5%E4%B8%8B%E6%9D%A5%E6%8D%A2%E4%B8%80%E4%B8%AA%E8%B5%B7%E5%A7%8B%E6%95%B0%E9%87%8F-%E4%BB%8D%E7%94%A8%E8%BF%99%E6%9D%A1%E8%A7%84%E5%88%99-%E8%AE%A92%E4%B8%AA%E5%9C%86%E7%89%87%E7%BB%8F%E8%BF%87%E8%A7%84%E5%88%99%E6%9C%BA-%E6%9C%80%E5%90%8E%E5%8F%98%E6%88%90%E5%87%A0%E4%B8%AA-%E9%80%89%E5%87%BA%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E4%B8%80%E5%BC%A0%E5%9B%BE%E5%8D%A1-%E5%85%88%E6%B7%BB%E4%B8%8A3%E4%B8%AA.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%94%BE%E8%BF%9B2%E4%B8%AA%E5%9C%86%E7%89%87-%E6%9C%80%E5%90%8E%E6%9C%89%E5%87%A0%E4%B8%AA-%E6%95%B0%E4%B8%80%E6%95%B0-%E9%80%89%E5%87%BA%E6%9C%80%E5%90%8E%E7%9A%84%E5%9C%86%E7%89%87-%E6%B7%BB%E4%B8%8A3%E4%B8%AA%E5%9C%86%E7%89%87.mp3"
     },
     {
-      "id": "success-先加3-得到5-换了起始数量-也要按同一条规则做",
-      "kind": "success",
-      "text": "先加3，得到5。换了起始数量，也要按同一条规则做。",
+      "id": "prompt-先用一个圆片试一试-添上3个圆片-看看会变成几个",
+      "kind": "prompt",
+      "text": "先用一个圆片试一试。添上3个圆片，看看会变成几个。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%85%88%E5%8A%A03-%E5%BE%97%E5%88%B05-%E6%8D%A2%E4%BA%86%E8%B5%B7%E5%A7%8B%E6%95%B0%E9%87%8F-%E4%B9%9F%E8%A6%81%E6%8C%89%E5%90%8C%E4%B8%80%E6%9D%A1%E8%A7%84%E5%88%99%E5%81%9A.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%85%88%E7%94%A8%E4%B8%80%E4%B8%AA%E5%9C%86%E7%89%87%E8%AF%95%E4%B8%80%E8%AF%95-%E6%B7%BB%E4%B8%8A3%E4%B8%AA%E5%9C%86%E7%89%87-%E7%9C%8B%E7%9C%8B%E4%BC%9A%E5%8F%98%E6%88%90%E5%87%A0%E4%B8%AA.mp3"
+    },
+    {
+      "id": "success-先添上3个-一共有5个-起先的圆片换了-玩法还是一样",
+      "kind": "success",
+      "text": "先添上3个，一共有5个。起先的圆片换了，玩法还是一样。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%85%88%E6%B7%BB%E4%B8%8A3%E4%B8%AA-%E4%B8%80%E5%85%B1%E6%9C%895%E4%B8%AA-%E8%B5%B7%E5%85%88%E7%9A%84%E5%9C%86%E7%89%87%E6%8D%A2%E4%BA%86-%E7%8E%A9%E6%B3%95%E8%BF%98%E6%98%AF%E4%B8%80%E6%A0%B7.mp3"
     },
     {
       "id": "parent-会按给定加3规则处理新起始数",
@@ -23572,92 +23684,68 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E4%BC%9A%E6%8C%89%E7%BB%99%E5%AE%9A%E5%8A%A03%E8%A7%84%E5%88%99%E5%A4%84%E7%90%86%E6%96%B0%E8%B5%B7%E5%A7%8B%E6%95%B0.mp3"
     },
     {
-      "id": "hint-先添上3个",
-      "kind": "hint",
-      "text": "先添上3个。",
-      "locale": "zh-CN",
-      "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E5%85%88%E6%B7%BB%E4%B8%8A3%E4%B8%AA.mp3"
-    },
-    {
-      "id": "hint-先加3-得到5-换了起始数量-也要按同一条规则做",
-      "kind": "hint",
-      "text": "先加3，得到5。换了起始数量，也要按同一条规则做。",
-      "locale": "zh-CN",
-      "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E5%85%88%E5%8A%A03-%E5%BE%97%E5%88%B05-%E6%8D%A2%E4%BA%86%E8%B5%B7%E5%A7%8B%E6%95%B0%E9%87%8F-%E4%B9%9F%E8%A6%81%E6%8C%89%E5%90%8C%E4%B8%80%E6%9D%A1%E8%A7%84%E5%88%99%E5%81%9A.mp3"
-    },
-    {
-      "id": "clue-先添上3个",
+      "id": "clue-添上3个圆片",
       "kind": "clue",
-      "text": "先添上3个。",
+      "text": "添上3个圆片。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E5%85%88%E6%B7%BB%E4%B8%8A3%E4%B8%AA.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E6%B7%BB%E4%B8%8A3%E4%B8%AA%E5%9C%86%E7%89%87.mp3"
     },
     {
-      "id": "prompt-先看例子-一个圆片先添3个-得到4个-接下来换一个起始数量-仍用这条规则-让3个圆片经过规则机-最后变成几个-选出符合条件的一张图卡-先添上3个",
+      "id": "prompt-放进3个圆片-最后有几个-数一数-选出最后的圆片-添上3个圆片",
       "kind": "prompt",
-      "text": "先看例子：一个圆片先添3个，得到4个。接下来换一个起始数量，仍用这条规则。让3个圆片经过规则机，最后变成几个。选出符合条件的一张图卡。先添上3个。",
+      "text": "放进3个圆片，最后有几个。数一数，选出最后的圆片。添上3个圆片。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%85%88%E7%9C%8B%E4%BE%8B%E5%AD%90-%E4%B8%80%E4%B8%AA%E5%9C%86%E7%89%87%E5%85%88%E6%B7%BB3%E4%B8%AA-%E5%BE%97%E5%88%B04%E4%B8%AA-%E6%8E%A5%E4%B8%8B%E6%9D%A5%E6%8D%A2%E4%B8%80%E4%B8%AA%E8%B5%B7%E5%A7%8B%E6%95%B0%E9%87%8F-%E4%BB%8D%E7%94%A8%E8%BF%99%E6%9D%A1%E8%A7%84%E5%88%99-%E8%AE%A93%E4%B8%AA%E5%9C%86%E7%89%87%E7%BB%8F%E8%BF%87%E8%A7%84%E5%88%99%E6%9C%BA-%E6%9C%80%E5%90%8E%E5%8F%98%E6%88%90%E5%87%A0%E4%B8%AA-%E9%80%89%E5%87%BA%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E4%B8%80%E5%BC%A0%E5%9B%BE%E5%8D%A1-%E5%85%88%E6%B7%BB%E4%B8%8A3%E4%B8%AA.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%94%BE%E8%BF%9B3%E4%B8%AA%E5%9C%86%E7%89%87-%E6%9C%80%E5%90%8E%E6%9C%89%E5%87%A0%E4%B8%AA-%E6%95%B0%E4%B8%80%E6%95%B0-%E9%80%89%E5%87%BA%E6%9C%80%E5%90%8E%E7%9A%84%E5%9C%86%E7%89%87-%E6%B7%BB%E4%B8%8A3%E4%B8%AA%E5%9C%86%E7%89%87.mp3"
     },
     {
-      "id": "success-先加3-得到6-换了起始数量-也要按同一条规则做",
+      "id": "success-先添上3个-一共有6个-起先的圆片换了-玩法还是一样",
       "kind": "success",
-      "text": "先加3，得到6。换了起始数量，也要按同一条规则做。",
+      "text": "先添上3个，一共有6个。起先的圆片换了，玩法还是一样。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%85%88%E5%8A%A03-%E5%BE%97%E5%88%B06-%E6%8D%A2%E4%BA%86%E8%B5%B7%E5%A7%8B%E6%95%B0%E9%87%8F-%E4%B9%9F%E8%A6%81%E6%8C%89%E5%90%8C%E4%B8%80%E6%9D%A1%E8%A7%84%E5%88%99%E5%81%9A.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%85%88%E6%B7%BB%E4%B8%8A3%E4%B8%AA-%E4%B8%80%E5%85%B1%E6%9C%896%E4%B8%AA-%E8%B5%B7%E5%85%88%E7%9A%84%E5%9C%86%E7%89%87%E6%8D%A2%E4%BA%86-%E7%8E%A9%E6%B3%95%E8%BF%98%E6%98%AF%E4%B8%80%E6%A0%B7.mp3"
     },
     {
-      "id": "hint-先加3-得到6-换了起始数量-也要按同一条规则做",
-      "kind": "hint",
-      "text": "先加3，得到6。换了起始数量，也要按同一条规则做。",
-      "locale": "zh-CN",
-      "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E5%85%88%E5%8A%A03-%E5%BE%97%E5%88%B06-%E6%8D%A2%E4%BA%86%E8%B5%B7%E5%A7%8B%E6%95%B0%E9%87%8F-%E4%B9%9F%E8%A6%81%E6%8C%89%E5%90%8C%E4%B8%80%E6%9D%A1%E8%A7%84%E5%88%99%E5%81%9A.mp3"
-    },
-    {
-      "id": "prompt-先看例子-一个圆片先添3个-得到4个-接下来换一个起始数量-仍用这条规则-让4个圆片经过规则机-最后变成几个-选出符合条件的一张图卡-先添上3个",
+      "id": "prompt-放进4个圆片-最后有几个-数一数-选出最后的圆片-添上3个圆片",
       "kind": "prompt",
-      "text": "先看例子：一个圆片先添3个，得到4个。接下来换一个起始数量，仍用这条规则。让4个圆片经过规则机，最后变成几个。选出符合条件的一张图卡。先添上3个。",
+      "text": "放进4个圆片，最后有几个。数一数，选出最后的圆片。添上3个圆片。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%85%88%E7%9C%8B%E4%BE%8B%E5%AD%90-%E4%B8%80%E4%B8%AA%E5%9C%86%E7%89%87%E5%85%88%E6%B7%BB3%E4%B8%AA-%E5%BE%97%E5%88%B04%E4%B8%AA-%E6%8E%A5%E4%B8%8B%E6%9D%A5%E6%8D%A2%E4%B8%80%E4%B8%AA%E8%B5%B7%E5%A7%8B%E6%95%B0%E9%87%8F-%E4%BB%8D%E7%94%A8%E8%BF%99%E6%9D%A1%E8%A7%84%E5%88%99-%E8%AE%A94%E4%B8%AA%E5%9C%86%E7%89%87%E7%BB%8F%E8%BF%87%E8%A7%84%E5%88%99%E6%9C%BA-%E6%9C%80%E5%90%8E%E5%8F%98%E6%88%90%E5%87%A0%E4%B8%AA-%E9%80%89%E5%87%BA%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E4%B8%80%E5%BC%A0%E5%9B%BE%E5%8D%A1-%E5%85%88%E6%B7%BB%E4%B8%8A3%E4%B8%AA.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%94%BE%E8%BF%9B4%E4%B8%AA%E5%9C%86%E7%89%87-%E6%9C%80%E5%90%8E%E6%9C%89%E5%87%A0%E4%B8%AA-%E6%95%B0%E4%B8%80%E6%95%B0-%E9%80%89%E5%87%BA%E6%9C%80%E5%90%8E%E7%9A%84%E5%9C%86%E7%89%87-%E6%B7%BB%E4%B8%8A3%E4%B8%AA%E5%9C%86%E7%89%87.mp3"
     },
     {
-      "id": "success-先加3-得到7-换了起始数量-也要按同一条规则做",
+      "id": "success-先添上3个-一共有7个-起先的圆片换了-玩法还是一样",
       "kind": "success",
-      "text": "先加3，得到7。换了起始数量，也要按同一条规则做。",
+      "text": "先添上3个，一共有7个。起先的圆片换了，玩法还是一样。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%85%88%E5%8A%A03-%E5%BE%97%E5%88%B07-%E6%8D%A2%E4%BA%86%E8%B5%B7%E5%A7%8B%E6%95%B0%E9%87%8F-%E4%B9%9F%E8%A6%81%E6%8C%89%E5%90%8C%E4%B8%80%E6%9D%A1%E8%A7%84%E5%88%99%E5%81%9A.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%85%88%E6%B7%BB%E4%B8%8A3%E4%B8%AA-%E4%B8%80%E5%85%B1%E6%9C%897%E4%B8%AA-%E8%B5%B7%E5%85%88%E7%9A%84%E5%9C%86%E7%89%87%E6%8D%A2%E4%BA%86-%E7%8E%A9%E6%B3%95%E8%BF%98%E6%98%AF%E4%B8%80%E6%A0%B7.mp3"
     },
     {
-      "id": "hint-先加3-得到7-换了起始数量-也要按同一条规则做",
-      "kind": "hint",
-      "text": "先加3，得到7。换了起始数量，也要按同一条规则做。",
-      "locale": "zh-CN",
-      "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E5%85%88%E5%8A%A03-%E5%BE%97%E5%88%B07-%E6%8D%A2%E4%BA%86%E8%B5%B7%E5%A7%8B%E6%95%B0%E9%87%8F-%E4%B9%9F%E8%A6%81%E6%8C%89%E5%90%8C%E4%B8%80%E6%9D%A1%E8%A7%84%E5%88%99%E5%81%9A.mp3"
-    },
-    {
-      "id": "prompt-先看例子-一个圆片先添4个-再把总数变成两倍-得到10个-接下来换一个起始数量-仍用这条规则-让2个圆片经过规则机-最后变成几个-选出符合条件的一",
+      "id": "prompt-放进2个圆片-最后有几个-数一数-选出最后的圆片-添上4个圆片-再摆一份一样多的圆片",
       "kind": "prompt",
-      "text": "先看例子：一个圆片先添4个，再把总数变成两倍，得到10个。接下来换一个起始数量，仍用这条规则。让2个圆片经过规则机，最后变成几个。选出符合条件的一张图卡。先添上4个。再把所有圆片变成两倍。",
+      "text": "放进2个圆片，最后有几个。数一数，选出最后的圆片。添上4个圆片。再摆一份一样多的圆片。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%85%88%E7%9C%8B%E4%BE%8B%E5%AD%90-%E4%B8%80%E4%B8%AA%E5%9C%86%E7%89%87%E5%85%88%E6%B7%BB4%E4%B8%AA-%E5%86%8D%E6%8A%8A%E6%80%BB%E6%95%B0%E5%8F%98%E6%88%90%E4%B8%A4%E5%80%8D-%E5%BE%97%E5%88%B010%E4%B8%AA-%E6%8E%A5%E4%B8%8B%E6%9D%A5%E6%8D%A2%E4%B8%80%E4%B8%AA%E8%B5%B7%E5%A7%8B%E6%95%B0%E9%87%8F-%E4%BB%8D%E7%94%A8%E8%BF%99%E6%9D%A1%E8%A7%84%E5%88%99-%E8%AE%A92%E4%B8%AA%E5%9C%86%E7%89%87%E7%BB%8F%E8%BF%87%E8%A7%84%E5%88%99%E6%9C%BA-%E6%9C%80%E5%90%8E%E5%8F%98%E6%88%90%E5%87%A0%E4%B8%AA-%E9%80%89%E5%87%BA%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E4%B8%80.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%94%BE%E8%BF%9B2%E4%B8%AA%E5%9C%86%E7%89%87-%E6%9C%80%E5%90%8E%E6%9C%89%E5%87%A0%E4%B8%AA-%E6%95%B0%E4%B8%80%E6%95%B0-%E9%80%89%E5%87%BA%E6%9C%80%E5%90%8E%E7%9A%84%E5%9C%86%E7%89%87-%E6%B7%BB%E4%B8%8A4%E4%B8%AA%E5%9C%86%E7%89%87-%E5%86%8D%E6%91%86%E4%B8%80%E4%BB%BD%E4%B8%80%E6%A0%B7%E5%A4%9A%E7%9A%84%E5%9C%86%E7%89%87.mp3"
     },
     {
-      "id": "success-先加4-再把总数变成两倍-得到12-换了起始数量-也要按同一条规则做",
-      "kind": "success",
-      "text": "先加4，再把总数变成两倍，得到12。换了起始数量，也要按同一条规则做。",
+      "id": "prompt-先用一个圆片试一试-添上4个圆片-再摆一份一样多的圆片-看看会变成几个",
+      "kind": "prompt",
+      "text": "先用一个圆片试一试。添上4个圆片，再摆一份一样多的圆片，看看会变成几个。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%85%88%E5%8A%A04-%E5%86%8D%E6%8A%8A%E6%80%BB%E6%95%B0%E5%8F%98%E6%88%90%E4%B8%A4%E5%80%8D-%E5%BE%97%E5%88%B012-%E6%8D%A2%E4%BA%86%E8%B5%B7%E5%A7%8B%E6%95%B0%E9%87%8F-%E4%B9%9F%E8%A6%81%E6%8C%89%E5%90%8C%E4%B8%80%E6%9D%A1%E8%A7%84%E5%88%99%E5%81%9A.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%85%88%E7%94%A8%E4%B8%80%E4%B8%AA%E5%9C%86%E7%89%87%E8%AF%95%E4%B8%80%E8%AF%95-%E6%B7%BB%E4%B8%8A4%E4%B8%AA%E5%9C%86%E7%89%87-%E5%86%8D%E6%91%86%E4%B8%80%E4%BB%BD%E4%B8%80%E6%A0%B7%E5%A4%9A%E7%9A%84%E5%9C%86%E7%89%87-%E7%9C%8B%E7%9C%8B%E4%BC%9A%E5%8F%98%E6%88%90%E5%87%A0%E4%B8%AA.mp3"
+    },
+    {
+      "id": "success-先添上4个-再摆一份一样多的圆片-一共有12个-起先的圆片换了-玩法还是一样",
+      "kind": "success",
+      "text": "先添上4个，再摆一份一样多的圆片，一共有12个。起先的圆片换了，玩法还是一样。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%85%88%E6%B7%BB%E4%B8%8A4%E4%B8%AA-%E5%86%8D%E6%91%86%E4%B8%80%E4%BB%BD%E4%B8%80%E6%A0%B7%E5%A4%9A%E7%9A%84%E5%9C%86%E7%89%87-%E4%B8%80%E5%85%B1%E6%9C%8912%E4%B8%AA-%E8%B5%B7%E5%85%88%E7%9A%84%E5%9C%86%E7%89%87%E6%8D%A2%E4%BA%86-%E7%8E%A9%E6%B3%95%E8%BF%98%E6%98%AF%E4%B8%80%E6%A0%B7.mp3"
     },
     {
       "id": "parent-理解先加4再变两倍且顺序不可交换",
@@ -23668,84 +23756,60 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E7%90%86%E8%A7%A3%E5%85%88%E5%8A%A04%E5%86%8D%E5%8F%98%E4%B8%A4%E5%80%8D%E4%B8%94%E9%A1%BA%E5%BA%8F%E4%B8%8D%E5%8F%AF%E4%BA%A4%E6%8D%A2.mp3"
     },
     {
-      "id": "hint-先添上4个",
+      "id": "hint-第二步要把刚才所有的圆片-再摆一份",
       "kind": "hint",
-      "text": "先添上4个。",
+      "text": "第二步要把刚才所有的圆片，再摆一份。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E5%85%88%E6%B7%BB%E4%B8%8A4%E4%B8%AA.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E7%AC%AC%E4%BA%8C%E6%AD%A5%E8%A6%81%E6%8A%8A%E5%88%9A%E6%89%8D%E6%89%80%E6%9C%89%E7%9A%84%E5%9C%86%E7%89%87-%E5%86%8D%E6%91%86%E4%B8%80%E4%BB%BD.mp3"
     },
     {
-      "id": "hint-先加4-再把总数变成两倍-得到12-换了起始数量-也要按同一条规则做",
-      "kind": "hint",
-      "text": "先加4，再把总数变成两倍，得到12。换了起始数量，也要按同一条规则做。",
-      "locale": "zh-CN",
-      "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E5%85%88%E5%8A%A04-%E5%86%8D%E6%8A%8A%E6%80%BB%E6%95%B0%E5%8F%98%E6%88%90%E4%B8%A4%E5%80%8D-%E5%BE%97%E5%88%B012-%E6%8D%A2%E4%BA%86%E8%B5%B7%E5%A7%8B%E6%95%B0%E9%87%8F-%E4%B9%9F%E8%A6%81%E6%8C%89%E5%90%8C%E4%B8%80%E6%9D%A1%E8%A7%84%E5%88%99%E5%81%9A.mp3"
-    },
-    {
-      "id": "clue-先添上4个",
+      "id": "clue-添上4个圆片",
       "kind": "clue",
-      "text": "先添上4个。",
+      "text": "添上4个圆片。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E5%85%88%E6%B7%BB%E4%B8%8A4%E4%B8%AA.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E6%B7%BB%E4%B8%8A4%E4%B8%AA%E5%9C%86%E7%89%87.mp3"
     },
     {
-      "id": "clue-再把所有圆片变成两倍",
+      "id": "clue-再摆一份一样多的圆片",
       "kind": "clue",
-      "text": "再把所有圆片变成两倍。",
+      "text": "再摆一份一样多的圆片。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E5%86%8D%E6%8A%8A%E6%89%80%E6%9C%89%E5%9C%86%E7%89%87%E5%8F%98%E6%88%90%E4%B8%A4%E5%80%8D.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E5%86%8D%E6%91%86%E4%B8%80%E4%BB%BD%E4%B8%80%E6%A0%B7%E5%A4%9A%E7%9A%84%E5%9C%86%E7%89%87.mp3"
     },
     {
-      "id": "prompt-先看例子-一个圆片先添4个-再把总数变成两倍-得到10个-接下来换一个起始数量-仍用这条规则-让3个圆片经过规则机-最后变成几个-选出符合条件的一",
+      "id": "prompt-放进3个圆片-最后有几个-数一数-选出最后的圆片-添上4个圆片-再摆一份一样多的圆片",
       "kind": "prompt",
-      "text": "先看例子：一个圆片先添4个，再把总数变成两倍，得到10个。接下来换一个起始数量，仍用这条规则。让3个圆片经过规则机，最后变成几个。选出符合条件的一张图卡。先添上4个。再把所有圆片变成两倍。",
+      "text": "放进3个圆片，最后有几个。数一数，选出最后的圆片。添上4个圆片。再摆一份一样多的圆片。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%85%88%E7%9C%8B%E4%BE%8B%E5%AD%90-%E4%B8%80%E4%B8%AA%E5%9C%86%E7%89%87%E5%85%88%E6%B7%BB4%E4%B8%AA-%E5%86%8D%E6%8A%8A%E6%80%BB%E6%95%B0%E5%8F%98%E6%88%90%E4%B8%A4%E5%80%8D-%E5%BE%97%E5%88%B010%E4%B8%AA-%E6%8E%A5%E4%B8%8B%E6%9D%A5%E6%8D%A2%E4%B8%80%E4%B8%AA%E8%B5%B7%E5%A7%8B%E6%95%B0%E9%87%8F-%E4%BB%8D%E7%94%A8%E8%BF%99%E6%9D%A1%E8%A7%84%E5%88%99-%E8%AE%A93%E4%B8%AA%E5%9C%86%E7%89%87%E7%BB%8F%E8%BF%87%E8%A7%84%E5%88%99%E6%9C%BA-%E6%9C%80%E5%90%8E%E5%8F%98%E6%88%90%E5%87%A0%E4%B8%AA-%E9%80%89%E5%87%BA%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E4%B8%80.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%94%BE%E8%BF%9B3%E4%B8%AA%E5%9C%86%E7%89%87-%E6%9C%80%E5%90%8E%E6%9C%89%E5%87%A0%E4%B8%AA-%E6%95%B0%E4%B8%80%E6%95%B0-%E9%80%89%E5%87%BA%E6%9C%80%E5%90%8E%E7%9A%84%E5%9C%86%E7%89%87-%E6%B7%BB%E4%B8%8A4%E4%B8%AA%E5%9C%86%E7%89%87-%E5%86%8D%E6%91%86%E4%B8%80%E4%BB%BD%E4%B8%80%E6%A0%B7%E5%A4%9A%E7%9A%84%E5%9C%86%E7%89%87.mp3"
     },
     {
-      "id": "success-先加4-再把总数变成两倍-得到14-换了起始数量-也要按同一条规则做",
+      "id": "success-先添上4个-再摆一份一样多的圆片-一共有14个-起先的圆片换了-玩法还是一样",
       "kind": "success",
-      "text": "先加4，再把总数变成两倍，得到14。换了起始数量，也要按同一条规则做。",
+      "text": "先添上4个，再摆一份一样多的圆片，一共有14个。起先的圆片换了，玩法还是一样。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%85%88%E5%8A%A04-%E5%86%8D%E6%8A%8A%E6%80%BB%E6%95%B0%E5%8F%98%E6%88%90%E4%B8%A4%E5%80%8D-%E5%BE%97%E5%88%B014-%E6%8D%A2%E4%BA%86%E8%B5%B7%E5%A7%8B%E6%95%B0%E9%87%8F-%E4%B9%9F%E8%A6%81%E6%8C%89%E5%90%8C%E4%B8%80%E6%9D%A1%E8%A7%84%E5%88%99%E5%81%9A.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%85%88%E6%B7%BB%E4%B8%8A4%E4%B8%AA-%E5%86%8D%E6%91%86%E4%B8%80%E4%BB%BD%E4%B8%80%E6%A0%B7%E5%A4%9A%E7%9A%84%E5%9C%86%E7%89%87-%E4%B8%80%E5%85%B1%E6%9C%8914%E4%B8%AA-%E8%B5%B7%E5%85%88%E7%9A%84%E5%9C%86%E7%89%87%E6%8D%A2%E4%BA%86-%E7%8E%A9%E6%B3%95%E8%BF%98%E6%98%AF%E4%B8%80%E6%A0%B7.mp3"
     },
     {
-      "id": "hint-先加4-再把总数变成两倍-得到14-换了起始数量-也要按同一条规则做",
-      "kind": "hint",
-      "text": "先加4，再把总数变成两倍，得到14。换了起始数量，也要按同一条规则做。",
-      "locale": "zh-CN",
-      "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E5%85%88%E5%8A%A04-%E5%86%8D%E6%8A%8A%E6%80%BB%E6%95%B0%E5%8F%98%E6%88%90%E4%B8%A4%E5%80%8D-%E5%BE%97%E5%88%B014-%E6%8D%A2%E4%BA%86%E8%B5%B7%E5%A7%8B%E6%95%B0%E9%87%8F-%E4%B9%9F%E8%A6%81%E6%8C%89%E5%90%8C%E4%B8%80%E6%9D%A1%E8%A7%84%E5%88%99%E5%81%9A.mp3"
-    },
-    {
-      "id": "prompt-先看例子-一个圆片先添4个-再把总数变成两倍-得到10个-接下来换一个起始数量-仍用这条规则-让4个圆片经过规则机-最后变成几个-选出符合条件的一",
+      "id": "prompt-放进4个圆片-最后有几个-数一数-选出最后的圆片-添上4个圆片-再摆一份一样多的圆片",
       "kind": "prompt",
-      "text": "先看例子：一个圆片先添4个，再把总数变成两倍，得到10个。接下来换一个起始数量，仍用这条规则。让4个圆片经过规则机，最后变成几个。选出符合条件的一张图卡。先添上4个。再把所有圆片变成两倍。",
+      "text": "放进4个圆片，最后有几个。数一数，选出最后的圆片。添上4个圆片。再摆一份一样多的圆片。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%85%88%E7%9C%8B%E4%BE%8B%E5%AD%90-%E4%B8%80%E4%B8%AA%E5%9C%86%E7%89%87%E5%85%88%E6%B7%BB4%E4%B8%AA-%E5%86%8D%E6%8A%8A%E6%80%BB%E6%95%B0%E5%8F%98%E6%88%90%E4%B8%A4%E5%80%8D-%E5%BE%97%E5%88%B010%E4%B8%AA-%E6%8E%A5%E4%B8%8B%E6%9D%A5%E6%8D%A2%E4%B8%80%E4%B8%AA%E8%B5%B7%E5%A7%8B%E6%95%B0%E9%87%8F-%E4%BB%8D%E7%94%A8%E8%BF%99%E6%9D%A1%E8%A7%84%E5%88%99-%E8%AE%A94%E4%B8%AA%E5%9C%86%E7%89%87%E7%BB%8F%E8%BF%87%E8%A7%84%E5%88%99%E6%9C%BA-%E6%9C%80%E5%90%8E%E5%8F%98%E6%88%90%E5%87%A0%E4%B8%AA-%E9%80%89%E5%87%BA%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E4%B8%80.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%94%BE%E8%BF%9B4%E4%B8%AA%E5%9C%86%E7%89%87-%E6%9C%80%E5%90%8E%E6%9C%89%E5%87%A0%E4%B8%AA-%E6%95%B0%E4%B8%80%E6%95%B0-%E9%80%89%E5%87%BA%E6%9C%80%E5%90%8E%E7%9A%84%E5%9C%86%E7%89%87-%E6%B7%BB%E4%B8%8A4%E4%B8%AA%E5%9C%86%E7%89%87-%E5%86%8D%E6%91%86%E4%B8%80%E4%BB%BD%E4%B8%80%E6%A0%B7%E5%A4%9A%E7%9A%84%E5%9C%86%E7%89%87.mp3"
     },
     {
-      "id": "success-先加4-再把总数变成两倍-得到16-换了起始数量-也要按同一条规则做",
+      "id": "success-先添上4个-再摆一份一样多的圆片-一共有16个-起先的圆片换了-玩法还是一样",
       "kind": "success",
-      "text": "先加4，再把总数变成两倍，得到16。换了起始数量，也要按同一条规则做。",
+      "text": "先添上4个，再摆一份一样多的圆片，一共有16个。起先的圆片换了，玩法还是一样。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%85%88%E5%8A%A04-%E5%86%8D%E6%8A%8A%E6%80%BB%E6%95%B0%E5%8F%98%E6%88%90%E4%B8%A4%E5%80%8D-%E5%BE%97%E5%88%B016-%E6%8D%A2%E4%BA%86%E8%B5%B7%E5%A7%8B%E6%95%B0%E9%87%8F-%E4%B9%9F%E8%A6%81%E6%8C%89%E5%90%8C%E4%B8%80%E6%9D%A1%E8%A7%84%E5%88%99%E5%81%9A.mp3"
-    },
-    {
-      "id": "hint-先加4-再把总数变成两倍-得到16-换了起始数量-也要按同一条规则做",
-      "kind": "hint",
-      "text": "先加4，再把总数变成两倍，得到16。换了起始数量，也要按同一条规则做。",
-      "locale": "zh-CN",
-      "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E5%85%88%E5%8A%A04-%E5%86%8D%E6%8A%8A%E6%80%BB%E6%95%B0%E5%8F%98%E6%88%90%E4%B8%A4%E5%80%8D-%E5%BE%97%E5%88%B016-%E6%8D%A2%E4%BA%86%E8%B5%B7%E5%A7%8B%E6%95%B0%E9%87%8F-%E4%B9%9F%E8%A6%81%E6%8C%89%E5%90%8C%E4%B8%80%E6%9D%A1%E8%A7%84%E5%88%99%E5%81%9A.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%85%88%E6%B7%BB%E4%B8%8A4%E4%B8%AA-%E5%86%8D%E6%91%86%E4%B8%80%E4%BB%BD%E4%B8%80%E6%A0%B7%E5%A4%9A%E7%9A%84%E5%9C%86%E7%89%87-%E4%B8%80%E5%85%B1%E6%9C%8916%E4%B8%AA-%E8%B5%B7%E5%85%88%E7%9A%84%E5%9C%86%E7%89%87%E6%8D%A2%E4%BA%86-%E7%8E%A9%E6%B3%95%E8%BF%98%E6%98%AF%E4%B8%80%E6%A0%B7.mp3"
     },
     {
       "id": "game-title-翻牌小机关",
@@ -23764,20 +23828,36 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/game-goal-%E4%B8%80%E6%AC%A1%E7%BF%BB%E8%BD%AC-%E8%BF%9E%E7%BB%AD%E7%BF%BB%E8%BD%AC-%E4%BB%8E%E7%9B%AE%E6%A0%87%E5%80%92%E6%8E%A8%E6%AD%A5%E9%AA%A4.mp3"
     },
     {
-      "id": "prompt-按顺序翻牌-最后每个位置朝上的是哪一面-选图卡-点问号格放进去-图卡可以重复用-每张牌一面是白色-一面是黄色-翻一次-白色变黄色-黄色变白色-翻第",
+      "id": "prompt-照着顺序-动手翻一翻-看小图的顺序-点下面的大牌-点一下大牌-就翻一面-第1步-翻第1张",
       "kind": "prompt",
-      "text": "按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。每张牌一面是白色，一面是黄色。翻一次，白色变黄色，黄色变白色。翻第1张。",
+      "text": "照着顺序，动手翻一翻。看小图的顺序，点下面的大牌。点一下大牌，就翻一面。第1步，翻第1张。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8C%89%E9%A1%BA%E5%BA%8F%E7%BF%BB%E7%89%8C-%E6%9C%80%E5%90%8E%E6%AF%8F%E4%B8%AA%E4%BD%8D%E7%BD%AE%E6%9C%9D%E4%B8%8A%E7%9A%84%E6%98%AF%E5%93%AA%E4%B8%80%E9%9D%A2-%E9%80%89%E5%9B%BE%E5%8D%A1-%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8-%E6%AF%8F%E5%BC%A0%E7%89%8C%E4%B8%80%E9%9D%A2%E6%98%AF%E7%99%BD%E8%89%B2-%E4%B8%80%E9%9D%A2%E6%98%AF%E9%BB%84%E8%89%B2-%E7%BF%BB%E4%B8%80%E6%AC%A1-%E7%99%BD%E8%89%B2%E5%8F%98%E9%BB%84%E8%89%B2-%E9%BB%84%E8%89%B2%E5%8F%98%E7%99%BD%E8%89%B2-%E7%BF%BB%E7%AC%AC.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%85%A7%E7%9D%80%E9%A1%BA%E5%BA%8F-%E5%8A%A8%E6%89%8B%E7%BF%BB%E4%B8%80%E7%BF%BB-%E7%9C%8B%E5%B0%8F%E5%9B%BE%E7%9A%84%E9%A1%BA%E5%BA%8F-%E7%82%B9%E4%B8%8B%E9%9D%A2%E7%9A%84%E5%A4%A7%E7%89%8C-%E7%82%B9%E4%B8%80%E4%B8%8B%E5%A4%A7%E7%89%8C-%E5%B0%B1%E7%BF%BB%E4%B8%80%E9%9D%A2-%E7%AC%AC1%E6%AD%A5-%E7%BF%BB%E7%AC%AC1%E5%BC%A0.mp3"
     },
     {
-      "id": "success-翻一次-白色和黄色换一面-同一张翻两次-又回到原来",
+      "id": "success-翻一次就换一面-同一张牌翻两次-又回到原来的样子",
       "kind": "success",
-      "text": "翻一次，白色和黄色换一面；同一张翻两次，又回到原来。",
+      "text": "翻一次就换一面。同一张牌翻两次，又回到原来的样子。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%BF%BB%E4%B8%80%E6%AC%A1-%E7%99%BD%E8%89%B2%E5%92%8C%E9%BB%84%E8%89%B2%E6%8D%A2%E4%B8%80%E9%9D%A2-%E5%90%8C%E4%B8%80%E5%BC%A0%E7%BF%BB%E4%B8%A4%E6%AC%A1-%E5%8F%88%E5%9B%9E%E5%88%B0%E5%8E%9F%E6%9D%A5.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E7%BF%BB%E4%B8%80%E6%AC%A1%E5%B0%B1%E6%8D%A2%E4%B8%80%E9%9D%A2-%E5%90%8C%E4%B8%80%E5%BC%A0%E7%89%8C%E7%BF%BB%E4%B8%A4%E6%AC%A1-%E5%8F%88%E5%9B%9E%E5%88%B0%E5%8E%9F%E6%9D%A5%E7%9A%84%E6%A0%B7%E5%AD%90.mp3"
+    },
+    {
+      "id": "retry-对照开始时的牌面-按顺序再翻一遍-也可以点-重新翻",
+      "kind": "retry",
+      "text": "对照开始时的牌面，按顺序再翻一遍。也可以点“重新翻”。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E5%AF%B9%E7%85%A7%E5%BC%80%E5%A7%8B%E6%97%B6%E7%9A%84%E7%89%8C%E9%9D%A2-%E6%8C%89%E9%A1%BA%E5%BA%8F%E5%86%8D%E7%BF%BB%E4%B8%80%E9%81%8D-%E4%B9%9F%E5%8F%AF%E4%BB%A5%E7%82%B9-%E9%87%8D%E6%96%B0%E7%BF%BB.mp3"
+    },
+    {
+      "id": "parent-哪张牌翻过两次-它和开始时有什么不同",
+      "kind": "parent",
+      "text": "哪张牌翻过两次？它和开始时有什么不同？",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E5%93%AA%E5%BC%A0%E7%89%8C%E7%BF%BB%E8%BF%87%E4%B8%A4%E6%AC%A1-%E5%AE%83%E5%92%8C%E5%BC%80%E5%A7%8B%E6%97%B6%E6%9C%89%E4%BB%80%E4%B9%88%E4%B8%8D%E5%90%8C.mp3"
     },
     {
       "id": "parent-区分两面-会按位置编号找卡",
@@ -23788,44 +23868,36 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E5%8C%BA%E5%88%86%E4%B8%A4%E9%9D%A2-%E4%BC%9A%E6%8C%89%E4%BD%8D%E7%BD%AE%E7%BC%96%E5%8F%B7%E6%89%BE%E5%8D%A1.mp3"
     },
     {
-      "id": "hint-每张牌一面是白色-一面是黄色",
+      "id": "hint-先看开始时的牌面-再按小图从左往右翻",
       "kind": "hint",
-      "text": "每张牌一面是白色，一面是黄色。",
+      "text": "先看开始时的牌面，再按小图从左往右翻。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E6%AF%8F%E5%BC%A0%E7%89%8C%E4%B8%80%E9%9D%A2%E6%98%AF%E7%99%BD%E8%89%B2-%E4%B8%80%E9%9D%A2%E6%98%AF%E9%BB%84%E8%89%B2.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E5%85%88%E7%9C%8B%E5%BC%80%E5%A7%8B%E6%97%B6%E7%9A%84%E7%89%8C%E9%9D%A2-%E5%86%8D%E6%8C%89%E5%B0%8F%E5%9B%BE%E4%BB%8E%E5%B7%A6%E5%BE%80%E5%8F%B3%E7%BF%BB.mp3"
     },
     {
-      "id": "hint-翻一次-白色和黄色换一面-同一张翻两次-又回到原来",
+      "id": "hint-同一张牌翻两次-会回到原来的样子",
       "kind": "hint",
-      "text": "翻一次，白色和黄色换一面；同一张翻两次，又回到原来。",
+      "text": "同一张牌翻两次，会回到原来的样子。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E7%BF%BB%E4%B8%80%E6%AC%A1-%E7%99%BD%E8%89%B2%E5%92%8C%E9%BB%84%E8%89%B2%E6%8D%A2%E4%B8%80%E9%9D%A2-%E5%90%8C%E4%B8%80%E5%BC%A0%E7%BF%BB%E4%B8%A4%E6%AC%A1-%E5%8F%88%E5%9B%9E%E5%88%B0%E5%8E%9F%E6%9D%A5.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E5%90%8C%E4%B8%80%E5%BC%A0%E7%89%8C%E7%BF%BB%E4%B8%A4%E6%AC%A1-%E4%BC%9A%E5%9B%9E%E5%88%B0%E5%8E%9F%E6%9D%A5%E7%9A%84%E6%A0%B7%E5%AD%90.mp3"
     },
     {
-      "id": "clue-每张牌一面是白色-一面是黄色",
+      "id": "clue-点一下大牌-就翻一面",
       "kind": "clue",
-      "text": "每张牌一面是白色，一面是黄色。",
+      "text": "点一下大牌，就翻一面。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E6%AF%8F%E5%BC%A0%E7%89%8C%E4%B8%80%E9%9D%A2%E6%98%AF%E7%99%BD%E8%89%B2-%E4%B8%80%E9%9D%A2%E6%98%AF%E9%BB%84%E8%89%B2.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E7%82%B9%E4%B8%80%E4%B8%8B%E5%A4%A7%E7%89%8C-%E5%B0%B1%E7%BF%BB%E4%B8%80%E9%9D%A2.mp3"
     },
     {
-      "id": "clue-翻一次-白色变黄色-黄色变白色",
+      "id": "clue-第1步-翻第1张",
       "kind": "clue",
-      "text": "翻一次，白色变黄色，黄色变白色。",
+      "text": "第1步，翻第1张。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E7%BF%BB%E4%B8%80%E6%AC%A1-%E7%99%BD%E8%89%B2%E5%8F%98%E9%BB%84%E8%89%B2-%E9%BB%84%E8%89%B2%E5%8F%98%E7%99%BD%E8%89%B2.mp3"
-    },
-    {
-      "id": "clue-翻第1张",
-      "kind": "clue",
-      "text": "翻第1张。",
-      "locale": "zh-CN",
-      "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E7%BF%BB%E7%AC%AC1%E5%BC%A0.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E7%AC%AC1%E6%AD%A5-%E7%BF%BB%E7%AC%AC1%E5%BC%A0.mp3"
     },
     {
       "id": "object-黄面",
@@ -23844,44 +23916,44 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-%E7%99%BD%E9%9D%A2.mp3"
     },
     {
-      "id": "prompt-按顺序翻牌-最后每个位置朝上的是哪一面-选图卡-点问号格放进去-图卡可以重复用-每张牌一面是白色-一面是黄色-翻一次-白色变黄色-黄色变白色-翻第-e6b6ad14c0",
+      "id": "prompt-照着顺序-动手翻一翻-看小图的顺序-点下面的大牌-点一下大牌-就翻一面-第1步-翻第2张",
       "kind": "prompt",
-      "text": "按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。每张牌一面是白色，一面是黄色。翻一次，白色变黄色，黄色变白色。翻第2张。",
+      "text": "照着顺序，动手翻一翻。看小图的顺序，点下面的大牌。点一下大牌，就翻一面。第1步，翻第2张。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8C%89%E9%A1%BA%E5%BA%8F%E7%BF%BB%E7%89%8C-%E6%9C%80%E5%90%8E%E6%AF%8F%E4%B8%AA%E4%BD%8D%E7%BD%AE%E6%9C%9D%E4%B8%8A%E7%9A%84%E6%98%AF%E5%93%AA%E4%B8%80%E9%9D%A2-%E9%80%89%E5%9B%BE%E5%8D%A1-%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8-%E6%AF%8F%E5%BC%A0%E7%89%8C%E4%B8%80%E9%9D%A2%E6%98%AF%E7%99%BD%E8%89%B2-%E4%B8%80%E9%9D%A2%E6%98%AF%E9%BB%84%E8%89%B2-%E7%BF%BB%E4%B8%80%E6%AC%A1-%E7%99%BD%E8%89%B2%E5%8F%98%E9%BB%84%E8%89%B2-%E9%BB%84%E8%89%B2%E5%8F%98%E7%99%BD%E8%89%B2-%E7%BF%BB%E7%AC%AC-e6b6ad14c0.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%85%A7%E7%9D%80%E9%A1%BA%E5%BA%8F-%E5%8A%A8%E6%89%8B%E7%BF%BB%E4%B8%80%E7%BF%BB-%E7%9C%8B%E5%B0%8F%E5%9B%BE%E7%9A%84%E9%A1%BA%E5%BA%8F-%E7%82%B9%E4%B8%8B%E9%9D%A2%E7%9A%84%E5%A4%A7%E7%89%8C-%E7%82%B9%E4%B8%80%E4%B8%8B%E5%A4%A7%E7%89%8C-%E5%B0%B1%E7%BF%BB%E4%B8%80%E9%9D%A2-%E7%AC%AC1%E6%AD%A5-%E7%BF%BB%E7%AC%AC2%E5%BC%A0.mp3"
     },
     {
-      "id": "clue-翻第2张",
+      "id": "clue-第1步-翻第2张",
       "kind": "clue",
-      "text": "翻第2张。",
+      "text": "第1步，翻第2张。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E7%BF%BB%E7%AC%AC2%E5%BC%A0.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E7%AC%AC1%E6%AD%A5-%E7%BF%BB%E7%AC%AC2%E5%BC%A0.mp3"
     },
     {
-      "id": "prompt-按顺序翻牌-最后每个位置朝上的是哪一面-选图卡-点问号格放进去-图卡可以重复用-每张牌一面是白色-一面是黄色-翻一次-白色变黄色-黄色变白色-翻第-377da11b48",
+      "id": "prompt-照着顺序-动手翻一翻-看小图的顺序-点下面的大牌-点一下大牌-就翻一面-第1步-翻第3张",
       "kind": "prompt",
-      "text": "按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。每张牌一面是白色，一面是黄色。翻一次，白色变黄色，黄色变白色。翻第3张。",
+      "text": "照着顺序，动手翻一翻。看小图的顺序，点下面的大牌。点一下大牌，就翻一面。第1步，翻第3张。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8C%89%E9%A1%BA%E5%BA%8F%E7%BF%BB%E7%89%8C-%E6%9C%80%E5%90%8E%E6%AF%8F%E4%B8%AA%E4%BD%8D%E7%BD%AE%E6%9C%9D%E4%B8%8A%E7%9A%84%E6%98%AF%E5%93%AA%E4%B8%80%E9%9D%A2-%E9%80%89%E5%9B%BE%E5%8D%A1-%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8-%E6%AF%8F%E5%BC%A0%E7%89%8C%E4%B8%80%E9%9D%A2%E6%98%AF%E7%99%BD%E8%89%B2-%E4%B8%80%E9%9D%A2%E6%98%AF%E9%BB%84%E8%89%B2-%E7%BF%BB%E4%B8%80%E6%AC%A1-%E7%99%BD%E8%89%B2%E5%8F%98%E9%BB%84%E8%89%B2-%E9%BB%84%E8%89%B2%E5%8F%98%E7%99%BD%E8%89%B2-%E7%BF%BB%E7%AC%AC-377da11b48.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%85%A7%E7%9D%80%E9%A1%BA%E5%BA%8F-%E5%8A%A8%E6%89%8B%E7%BF%BB%E4%B8%80%E7%BF%BB-%E7%9C%8B%E5%B0%8F%E5%9B%BE%E7%9A%84%E9%A1%BA%E5%BA%8F-%E7%82%B9%E4%B8%8B%E9%9D%A2%E7%9A%84%E5%A4%A7%E7%89%8C-%E7%82%B9%E4%B8%80%E4%B8%8B%E5%A4%A7%E7%89%8C-%E5%B0%B1%E7%BF%BB%E4%B8%80%E9%9D%A2-%E7%AC%AC1%E6%AD%A5-%E7%BF%BB%E7%AC%AC3%E5%BC%A0.mp3"
     },
     {
-      "id": "clue-翻第3张",
+      "id": "clue-第1步-翻第3张",
       "kind": "clue",
-      "text": "翻第3张。",
+      "text": "第1步，翻第3张。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E7%BF%BB%E7%AC%AC3%E5%BC%A0.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E7%AC%AC1%E6%AD%A5-%E7%BF%BB%E7%AC%AC3%E5%BC%A0.mp3"
     },
     {
-      "id": "prompt-按顺序翻牌-最后每个位置朝上的是哪一面-选图卡-点问号格放进去-图卡可以重复用-每张牌一面是白色-一面是黄色-翻一次-白色变黄色-黄色变白色-翻第-612e141fd1",
+      "id": "prompt-照着顺序-动手翻一翻-看小图的顺序-点下面的大牌-点一下大牌-就翻一面-第1步-翻第1张-第2步-翻第2张",
       "kind": "prompt",
-      "text": "按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。每张牌一面是白色，一面是黄色。翻一次，白色变黄色，黄色变白色。翻第1张。翻第2张。",
+      "text": "照着顺序，动手翻一翻。看小图的顺序，点下面的大牌。点一下大牌，就翻一面。第1步，翻第1张。第2步，翻第2张。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8C%89%E9%A1%BA%E5%BA%8F%E7%BF%BB%E7%89%8C-%E6%9C%80%E5%90%8E%E6%AF%8F%E4%B8%AA%E4%BD%8D%E7%BD%AE%E6%9C%9D%E4%B8%8A%E7%9A%84%E6%98%AF%E5%93%AA%E4%B8%80%E9%9D%A2-%E9%80%89%E5%9B%BE%E5%8D%A1-%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8-%E6%AF%8F%E5%BC%A0%E7%89%8C%E4%B8%80%E9%9D%A2%E6%98%AF%E7%99%BD%E8%89%B2-%E4%B8%80%E9%9D%A2%E6%98%AF%E9%BB%84%E8%89%B2-%E7%BF%BB%E4%B8%80%E6%AC%A1-%E7%99%BD%E8%89%B2%E5%8F%98%E9%BB%84%E8%89%B2-%E9%BB%84%E8%89%B2%E5%8F%98%E7%99%BD%E8%89%B2-%E7%BF%BB%E7%AC%AC-612e141fd1.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%85%A7%E7%9D%80%E9%A1%BA%E5%BA%8F-%E5%8A%A8%E6%89%8B%E7%BF%BB%E4%B8%80%E7%BF%BB-%E7%9C%8B%E5%B0%8F%E5%9B%BE%E7%9A%84%E9%A1%BA%E5%BA%8F-%E7%82%B9%E4%B8%8B%E9%9D%A2%E7%9A%84%E5%A4%A7%E7%89%8C-%E7%82%B9%E4%B8%80%E4%B8%8B%E5%A4%A7%E7%89%8C-%E5%B0%B1%E7%BF%BB%E4%B8%80%E9%9D%A2-%E7%AC%AC1%E6%AD%A5-%E7%BF%BB%E7%AC%AC1%E5%BC%A0-%E7%AC%AC2%E6%AD%A5-%E7%BF%BB%E7%AC%AC2%E5%BC%A0.mp3"
     },
     {
       "id": "parent-能连续更新两张卡状态",
@@ -23892,36 +23964,52 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%83%BD%E8%BF%9E%E7%BB%AD%E6%9B%B4%E6%96%B0%E4%B8%A4%E5%BC%A0%E5%8D%A1%E7%8A%B6%E6%80%81.mp3"
     },
     {
-      "id": "prompt-按顺序翻牌-最后每个位置朝上的是哪一面-选图卡-点问号格放进去-图卡可以重复用-每张牌一面是白色-一面是黄色-翻一次-白色变黄色-黄色变白色-翻第-e108bef9c9",
-      "kind": "prompt",
-      "text": "按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。每张牌一面是白色，一面是黄色。翻一次，白色变黄色，黄色变白色。翻第2张。翻第3张。",
-      "locale": "zh-CN",
-      "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8C%89%E9%A1%BA%E5%BA%8F%E7%BF%BB%E7%89%8C-%E6%9C%80%E5%90%8E%E6%AF%8F%E4%B8%AA%E4%BD%8D%E7%BD%AE%E6%9C%9D%E4%B8%8A%E7%9A%84%E6%98%AF%E5%93%AA%E4%B8%80%E9%9D%A2-%E9%80%89%E5%9B%BE%E5%8D%A1-%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8-%E6%AF%8F%E5%BC%A0%E7%89%8C%E4%B8%80%E9%9D%A2%E6%98%AF%E7%99%BD%E8%89%B2-%E4%B8%80%E9%9D%A2%E6%98%AF%E9%BB%84%E8%89%B2-%E7%BF%BB%E4%B8%80%E6%AC%A1-%E7%99%BD%E8%89%B2%E5%8F%98%E9%BB%84%E8%89%B2-%E9%BB%84%E8%89%B2%E5%8F%98%E7%99%BD%E8%89%B2-%E7%BF%BB%E7%AC%AC-e108bef9c9.mp3"
-    },
-    {
-      "id": "prompt-按顺序翻牌-最后每个位置朝上的是哪一面-选图卡-点问号格放进去-图卡可以重复用-每张牌一面是白色-一面是黄色-翻一次-白色变黄色-黄色变白色-翻第-180dbf63e6",
-      "kind": "prompt",
-      "text": "按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。每张牌一面是白色，一面是黄色。翻一次，白色变黄色，黄色变白色。翻第3张。翻第4张。",
-      "locale": "zh-CN",
-      "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8C%89%E9%A1%BA%E5%BA%8F%E7%BF%BB%E7%89%8C-%E6%9C%80%E5%90%8E%E6%AF%8F%E4%B8%AA%E4%BD%8D%E7%BD%AE%E6%9C%9D%E4%B8%8A%E7%9A%84%E6%98%AF%E5%93%AA%E4%B8%80%E9%9D%A2-%E9%80%89%E5%9B%BE%E5%8D%A1-%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8-%E6%AF%8F%E5%BC%A0%E7%89%8C%E4%B8%80%E9%9D%A2%E6%98%AF%E7%99%BD%E8%89%B2-%E4%B8%80%E9%9D%A2%E6%98%AF%E9%BB%84%E8%89%B2-%E7%BF%BB%E4%B8%80%E6%AC%A1-%E7%99%BD%E8%89%B2%E5%8F%98%E9%BB%84%E8%89%B2-%E9%BB%84%E8%89%B2%E5%8F%98%E7%99%BD%E8%89%B2-%E7%BF%BB%E7%AC%AC-180dbf63e6.mp3"
-    },
-    {
-      "id": "clue-翻第4张",
+      "id": "clue-第2步-翻第2张",
       "kind": "clue",
-      "text": "翻第4张。",
+      "text": "第2步，翻第2张。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E7%BF%BB%E7%AC%AC4%E5%BC%A0.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E7%AC%AC2%E6%AD%A5-%E7%BF%BB%E7%AC%AC2%E5%BC%A0.mp3"
     },
     {
-      "id": "prompt-按顺序翻牌-最后每个位置朝上的是哪一面-选图卡-点问号格放进去-图卡可以重复用-每张牌一面是白色-一面是黄色-翻一次-白色变黄色-黄色变白色-翻第-35565b0e6b",
+      "id": "prompt-照着顺序-动手翻一翻-看小图的顺序-点下面的大牌-点一下大牌-就翻一面-第1步-翻第2张-第2步-翻第3张",
       "kind": "prompt",
-      "text": "按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。每张牌一面是白色，一面是黄色。翻一次，白色变黄色，黄色变白色。翻第1张。翻第2张。翻第1张。",
+      "text": "照着顺序，动手翻一翻。看小图的顺序，点下面的大牌。点一下大牌，就翻一面。第1步，翻第2张。第2步，翻第3张。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8C%89%E9%A1%BA%E5%BA%8F%E7%BF%BB%E7%89%8C-%E6%9C%80%E5%90%8E%E6%AF%8F%E4%B8%AA%E4%BD%8D%E7%BD%AE%E6%9C%9D%E4%B8%8A%E7%9A%84%E6%98%AF%E5%93%AA%E4%B8%80%E9%9D%A2-%E9%80%89%E5%9B%BE%E5%8D%A1-%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8-%E6%AF%8F%E5%BC%A0%E7%89%8C%E4%B8%80%E9%9D%A2%E6%98%AF%E7%99%BD%E8%89%B2-%E4%B8%80%E9%9D%A2%E6%98%AF%E9%BB%84%E8%89%B2-%E7%BF%BB%E4%B8%80%E6%AC%A1-%E7%99%BD%E8%89%B2%E5%8F%98%E9%BB%84%E8%89%B2-%E9%BB%84%E8%89%B2%E5%8F%98%E7%99%BD%E8%89%B2-%E7%BF%BB%E7%AC%AC-35565b0e6b.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%85%A7%E7%9D%80%E9%A1%BA%E5%BA%8F-%E5%8A%A8%E6%89%8B%E7%BF%BB%E4%B8%80%E7%BF%BB-%E7%9C%8B%E5%B0%8F%E5%9B%BE%E7%9A%84%E9%A1%BA%E5%BA%8F-%E7%82%B9%E4%B8%8B%E9%9D%A2%E7%9A%84%E5%A4%A7%E7%89%8C-%E7%82%B9%E4%B8%80%E4%B8%8B%E5%A4%A7%E7%89%8C-%E5%B0%B1%E7%BF%BB%E4%B8%80%E9%9D%A2-%E7%AC%AC1%E6%AD%A5-%E7%BF%BB%E7%AC%AC2%E5%BC%A0-%E7%AC%AC2%E6%AD%A5-%E7%BF%BB%E7%AC%AC3%E5%BC%A0.mp3"
+    },
+    {
+      "id": "clue-第2步-翻第3张",
+      "kind": "clue",
+      "text": "第2步，翻第3张。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E7%AC%AC2%E6%AD%A5-%E7%BF%BB%E7%AC%AC3%E5%BC%A0.mp3"
+    },
+    {
+      "id": "prompt-照着顺序-动手翻一翻-看小图的顺序-点下面的大牌-点一下大牌-就翻一面-第1步-翻第3张-第2步-翻第4张",
+      "kind": "prompt",
+      "text": "照着顺序，动手翻一翻。看小图的顺序，点下面的大牌。点一下大牌，就翻一面。第1步，翻第3张。第2步，翻第4张。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%85%A7%E7%9D%80%E9%A1%BA%E5%BA%8F-%E5%8A%A8%E6%89%8B%E7%BF%BB%E4%B8%80%E7%BF%BB-%E7%9C%8B%E5%B0%8F%E5%9B%BE%E7%9A%84%E9%A1%BA%E5%BA%8F-%E7%82%B9%E4%B8%8B%E9%9D%A2%E7%9A%84%E5%A4%A7%E7%89%8C-%E7%82%B9%E4%B8%80%E4%B8%8B%E5%A4%A7%E7%89%8C-%E5%B0%B1%E7%BF%BB%E4%B8%80%E9%9D%A2-%E7%AC%AC1%E6%AD%A5-%E7%BF%BB%E7%AC%AC3%E5%BC%A0-%E7%AC%AC2%E6%AD%A5-%E7%BF%BB%E7%AC%AC4%E5%BC%A0.mp3"
+    },
+    {
+      "id": "clue-第2步-翻第4张",
+      "kind": "clue",
+      "text": "第2步，翻第4张。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E7%AC%AC2%E6%AD%A5-%E7%BF%BB%E7%AC%AC4%E5%BC%A0.mp3"
+    },
+    {
+      "id": "prompt-照着顺序-动手翻一翻-看小图的顺序-点下面的大牌-点一下大牌-就翻一面-第1步-翻第1张-第2步-翻第2张-第3步-翻第1张",
+      "kind": "prompt",
+      "text": "照着顺序，动手翻一翻。看小图的顺序，点下面的大牌。点一下大牌，就翻一面。第1步，翻第1张。第2步，翻第2张。第3步，翻第1张。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%85%A7%E7%9D%80%E9%A1%BA%E5%BA%8F-%E5%8A%A8%E6%89%8B%E7%BF%BB%E4%B8%80%E7%BF%BB-%E7%9C%8B%E5%B0%8F%E5%9B%BE%E7%9A%84%E9%A1%BA%E5%BA%8F-%E7%82%B9%E4%B8%8B%E9%9D%A2%E7%9A%84%E5%A4%A7%E7%89%8C-%E7%82%B9%E4%B8%80%E4%B8%8B%E5%A4%A7%E7%89%8C-%E5%B0%B1%E7%BF%BB%E4%B8%80%E9%9D%A2-%E7%AC%AC1%E6%AD%A5-%E7%BF%BB%E7%AC%AC1%E5%BC%A0-%E7%AC%AC2%E6%AD%A5-%E7%BF%BB%E7%AC%AC2%E5%BC%A0-%E7%AC%AC3%E6%AD%A5-%E7%BF%BB%E7%AC%AC1%E5%BC%A0.mp3"
     },
     {
       "id": "parent-理解同一卡翻两次恢复原样",
@@ -23932,20 +24020,44 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E7%90%86%E8%A7%A3%E5%90%8C%E4%B8%80%E5%8D%A1%E7%BF%BB%E4%B8%A4%E6%AC%A1%E6%81%A2%E5%A4%8D%E5%8E%9F%E6%A0%B7.mp3"
     },
     {
-      "id": "prompt-按顺序翻牌-最后每个位置朝上的是哪一面-选图卡-点问号格放进去-图卡可以重复用-每张牌一面是白色-一面是黄色-翻一次-白色变黄色-黄色变白色-翻第-8728ce6a49",
-      "kind": "prompt",
-      "text": "按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。每张牌一面是白色，一面是黄色。翻一次，白色变黄色，黄色变白色。翻第2张。翻第3张。翻第2张。",
+      "id": "clue-第3步-翻第1张",
+      "kind": "clue",
+      "text": "第3步，翻第1张。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8C%89%E9%A1%BA%E5%BA%8F%E7%BF%BB%E7%89%8C-%E6%9C%80%E5%90%8E%E6%AF%8F%E4%B8%AA%E4%BD%8D%E7%BD%AE%E6%9C%9D%E4%B8%8A%E7%9A%84%E6%98%AF%E5%93%AA%E4%B8%80%E9%9D%A2-%E9%80%89%E5%9B%BE%E5%8D%A1-%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8-%E6%AF%8F%E5%BC%A0%E7%89%8C%E4%B8%80%E9%9D%A2%E6%98%AF%E7%99%BD%E8%89%B2-%E4%B8%80%E9%9D%A2%E6%98%AF%E9%BB%84%E8%89%B2-%E7%BF%BB%E4%B8%80%E6%AC%A1-%E7%99%BD%E8%89%B2%E5%8F%98%E9%BB%84%E8%89%B2-%E9%BB%84%E8%89%B2%E5%8F%98%E7%99%BD%E8%89%B2-%E7%BF%BB%E7%AC%AC-8728ce6a49.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E7%AC%AC3%E6%AD%A5-%E7%BF%BB%E7%AC%AC1%E5%BC%A0.mp3"
     },
     {
-      "id": "prompt-按顺序翻牌-最后每个位置朝上的是哪一面-选图卡-点问号格放进去-图卡可以重复用-每张牌一面是白色-一面是黄色-翻一次-白色变黄色-黄色变白色-翻第-7e688f6b0b",
+      "id": "prompt-照着顺序-动手翻一翻-看小图的顺序-点下面的大牌-点一下大牌-就翻一面-第1步-翻第2张-第2步-翻第3张-第3步-翻第2张",
       "kind": "prompt",
-      "text": "按顺序翻牌，最后每个位置朝上的是哪一面。选图卡，点问号格放进去。图卡可以重复用。每张牌一面是白色，一面是黄色。翻一次，白色变黄色，黄色变白色。翻第3张。翻第4张。翻第3张。",
+      "text": "照着顺序，动手翻一翻。看小图的顺序，点下面的大牌。点一下大牌，就翻一面。第1步，翻第2张。第2步，翻第3张。第3步，翻第2张。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E6%8C%89%E9%A1%BA%E5%BA%8F%E7%BF%BB%E7%89%8C-%E6%9C%80%E5%90%8E%E6%AF%8F%E4%B8%AA%E4%BD%8D%E7%BD%AE%E6%9C%9D%E4%B8%8A%E7%9A%84%E6%98%AF%E5%93%AA%E4%B8%80%E9%9D%A2-%E9%80%89%E5%9B%BE%E5%8D%A1-%E7%82%B9%E9%97%AE%E5%8F%B7%E6%A0%BC%E6%94%BE%E8%BF%9B%E5%8E%BB-%E5%9B%BE%E5%8D%A1%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E7%94%A8-%E6%AF%8F%E5%BC%A0%E7%89%8C%E4%B8%80%E9%9D%A2%E6%98%AF%E7%99%BD%E8%89%B2-%E4%B8%80%E9%9D%A2%E6%98%AF%E9%BB%84%E8%89%B2-%E7%BF%BB%E4%B8%80%E6%AC%A1-%E7%99%BD%E8%89%B2%E5%8F%98%E9%BB%84%E8%89%B2-%E9%BB%84%E8%89%B2%E5%8F%98%E7%99%BD%E8%89%B2-%E7%BF%BB%E7%AC%AC-7e688f6b0b.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%85%A7%E7%9D%80%E9%A1%BA%E5%BA%8F-%E5%8A%A8%E6%89%8B%E7%BF%BB%E4%B8%80%E7%BF%BB-%E7%9C%8B%E5%B0%8F%E5%9B%BE%E7%9A%84%E9%A1%BA%E5%BA%8F-%E7%82%B9%E4%B8%8B%E9%9D%A2%E7%9A%84%E5%A4%A7%E7%89%8C-%E7%82%B9%E4%B8%80%E4%B8%8B%E5%A4%A7%E7%89%8C-%E5%B0%B1%E7%BF%BB%E4%B8%80%E9%9D%A2-%E7%AC%AC1%E6%AD%A5-%E7%BF%BB%E7%AC%AC2%E5%BC%A0-%E7%AC%AC2%E6%AD%A5-%E7%BF%BB%E7%AC%AC3%E5%BC%A0-%E7%AC%AC3%E6%AD%A5-%E7%BF%BB%E7%AC%AC2%E5%BC%A0.mp3"
+    },
+    {
+      "id": "clue-第3步-翻第2张",
+      "kind": "clue",
+      "text": "第3步，翻第2张。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E7%AC%AC3%E6%AD%A5-%E7%BF%BB%E7%AC%AC2%E5%BC%A0.mp3"
+    },
+    {
+      "id": "prompt-照着顺序-动手翻一翻-看小图的顺序-点下面的大牌-点一下大牌-就翻一面-第1步-翻第3张-第2步-翻第4张-第3步-翻第3张",
+      "kind": "prompt",
+      "text": "照着顺序，动手翻一翻。看小图的顺序，点下面的大牌。点一下大牌，就翻一面。第1步，翻第3张。第2步，翻第4张。第3步，翻第3张。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%85%A7%E7%9D%80%E9%A1%BA%E5%BA%8F-%E5%8A%A8%E6%89%8B%E7%BF%BB%E4%B8%80%E7%BF%BB-%E7%9C%8B%E5%B0%8F%E5%9B%BE%E7%9A%84%E9%A1%BA%E5%BA%8F-%E7%82%B9%E4%B8%8B%E9%9D%A2%E7%9A%84%E5%A4%A7%E7%89%8C-%E7%82%B9%E4%B8%80%E4%B8%8B%E5%A4%A7%E7%89%8C-%E5%B0%B1%E7%BF%BB%E4%B8%80%E9%9D%A2-%E7%AC%AC1%E6%AD%A5-%E7%BF%BB%E7%AC%AC3%E5%BC%A0-%E7%AC%AC2%E6%AD%A5-%E7%BF%BB%E7%AC%AC4%E5%BC%A0-%E7%AC%AC3%E6%AD%A5-%E7%BF%BB%E7%AC%AC3%E5%BC%A0.mp3"
+    },
+    {
+      "id": "clue-第3步-翻第3张",
+      "kind": "clue",
+      "text": "第3步，翻第3张。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E7%AC%AC3%E6%AD%A5-%E7%BF%BB%E7%AC%AC3%E5%BC%A0.mp3"
     },
     {
       "id": "game-title-两位朋友走格子",

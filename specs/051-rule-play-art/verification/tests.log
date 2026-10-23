@@ -1,0 +1,36 @@
+✔ multi-select compares sets, rejects duplicate/unknown tokens, and permits a deliberately empty answer (0.571333ms)
+✔ order constraints accept all valid orders rather than one stored sequence (0.255375ms)
+✔ placement moves a once-only token, replaces occupied slots, and supports reusable tokens (0.637083ms)
+✔ grid constraints distinguish an unfilled cell from a legitimate blank card and accept alternate Latin squares (0.221166ms)
+✔ session retains undo history; only complete submitted answers count as attempts (0.437958ms)
+✔ memory hides before retention, replays record support, and background interruption restarts safely (0.078916ms)
+✔ batched actions retain individual evidence instead of losing intermediate attempts (0.107375ms)
+✔ evidence events are idempotent and do not alter legacy records (0.580959ms)
+✔ future and malformed data are not overwritten (0.093041ms)
+✔ stable location uses IDs and leaves the old location untouched (0.332959ms)
+✔ completion display merges evidence without converting old game-level completion into rounds (0.276042ms)
+✔ all 71 adopted families have their required stage/variant counts and accepted authored answers (2.366709ms)
+✔ independent graph search and exact cover alternatives satisfy every route, bridge and construction activity (5.932083ms)
+✔ bridge degree counts cannot substitute for global connectivity or crossing constraints (0.208792ms)
+✔ routes distinguish parallel edges, reject disconnected jumps and separate legal from shortest (0.075667ms)
+✔ construction accepts rotated tilings and rejects overlap, wrong inventory and out-of-bounds placement (0.161917ms)
+✔ parent observations record participation and support without inventing a correct attempt (0.698917ms)
+✔ finite inventory prevents overdrawing, but allows replacement and undo without consuming attempts (0.219292ms)
+✔ learn-then-transfer keeps responding disabled until the example has been acknowledged (0.067417ms)
+✔ cube-net orientation produces six distinct faces and reciprocal opposite pairs (0.097875ms)
+✔ diagram identity is stable across insignificant floating-point differences between engines (6.814292ms)
+✔ round navigator clicks request an immediate round read (1.016959ms)
+✔ game surface reads the requested target round instead of only the current render (0.090334ms)
+✔ all nine quantity tasks teach with one chip and transfer to a different start (0.914375ms)
+✔ all nine flip tasks start with visible faces and follow the authored operation sequence (1.234666ms)
+✔ every position can be flipped twice, undone, reset and retried without losing the initial reference (0.605ms)
+✔ other grid tasks keep their unfilled starting state and original authored solutions (0.540916ms)
+✔ rule-machine narration separates the one-chip example from the transfer question (9.749333ms)
+ℹ tests 28
+ℹ suites 0
+ℹ pass 28
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 492.876084

@@ -1,3 +1,4 @@
+import {restoreReviewedArt,restoreRulePlayPresentation} from "./lib/restore-reviewed-art.mjs";
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
@@ -10,7 +11,7 @@ const model=n=>play.bridgeModelFor(`logic-space-bridge-${n}`);
 
 test('the original eight rounds keep identities, answers, option order and all unrelated curriculum',()=>{
  const baseline=JSON.parse(readFileSync('specs/048-hands-on-bridge/verification/baseline.json'));
- assert.deepEqual(restoreBridgeWording(data),baseline);
+ assert.deepEqual(restoreBridgeWording(restoreRulePlayPresentation(restoreReviewedArt(data))),baseline);
  const changes=JSON.parse(readFileSync('specs/048-hands-on-bridge/content-changes.json'));
  assert.deepEqual(changes.map(c=>c.id),Array.from({length:8},(_,i)=>`logic-space-bridge-${i+1}`));
 });

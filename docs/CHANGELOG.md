@@ -1,5 +1,28 @@
 # Changelog
 
+## 2026-10-23
+
+### Restore shared controls and complete the image review
+
+- Restored the rule-play confirm/reset/clear colors, borders, shadows and corner radii to the shared theme. The machine’s demonstration buttons use the existing green accent again. Picture styling is confined to the activity artwork.
+- Reviewed all 1176 existing image files, 74 registered illustration frames and the old SVG glyph routes. Added 16 original local image_gen assets, reused appropriate detailed pictures for old fallback routes, and refined 111 generated quantity/clock/phonics/facing/reference images while retaining all 858 authored drawing models.
+- Added actual island art and clearer bridge surfaces to “小岛连桥”; node locations, edge paths, bridge counts and input behavior stay data-driven. Existing precise bridge, grid, projection and silhouette drawings were retained with review reasons.
+- Improved quantity pictures in comparison and memory surfaces, separated crowded Hanzi/pinyin references, and fixed mobile phonics-card squeezing. The 1110 question contracts and 4224 existing voice entries remain unchanged.
+- Added rendering and shared-style guards; preserved historical baselines with exact declared-change normalization. Validation, the image ledger and local Mac installation evidence are in [052 verification](../specs/052-art-review-framework-guard/verification.md).
+
+### Redesign the rule toys with generated artwork
+
+- Rebuilt the two exploration boards around four original transparent image_gen sprites: a jade wooden machine, maple tray, ivory cloud card and golden sun card. Exact counting chips, answers and card positions remain controlled by the activity data.
+- Replaced nested grey-green boxes with a warm toy-table composition, quieter borders, terracotta controls and coordinated typography. The machine itself is the demonstration control; wooden cards flip in 3D and preserve keyboard, undo and reset behavior.
+- The 18 activities retain their content, IDs, answers, progress and all 4224 existing local voice entries. Source images and generation prompts are saved beside the registered runtime assets. Validation and installed Mac screenshots are recorded in [051 verification](../specs/051-rule-play-art/verification.md).
+
+### Make rule learning and card flipping concrete
+
+- Reworked all 18 “学会新规则 / 翻牌小机关” exploration activities. Children add local picture chips in a small example, see a second equal group for doubling, then choose among actual quantities. Card flipping now happens directly on large cards, with a visible initial reference, pictured operation order, an independent practice card, undo and reset.
+- Replaced repeated small instruction strips with short, larger labels and spoken controls. Example narration and the new question are separate; replay preserves the selected answer. Five-chip trays adapt to narrow screens, and keyboard/reduced-motion support is included.
+- Preserved IDs, revisions, answer values, option ordering and stored progress. The other 579 authored exploration activities compare unchanged. Existing registered PNG chips are reused.
+- Passed 28 focused regressions, production build, the 115-group / 1110-activity curriculum audit, and all 4224 aligned Edge voice entries with no failures or fallback. Browser interaction checks cover every changed question; native installation and checks are recorded in [050 verification](../specs/050-concrete-rule-play/verification.md).
+
 ## 2026-10-20
 
 ### Fix enlightenment replay and end-of-group navigation

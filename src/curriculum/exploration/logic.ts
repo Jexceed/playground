@@ -64,8 +64,40 @@ export const logicSets = [
         a.evaluation = { kind: 'constraints', rules: ts.slice(1).map((t, k) => ({ type: 'before', first: ts[k].id, second: t.id, text: clues[k] })) }; return a; })),
     set('L07', '证据说明什么', nine((i, s, v) => { if (s === 2) {
         const a = parent('L07', i, ['悄悄选一张图卡，用两条线索让家长来找。', '先给颜色线索，再补形状。家长能找到吗？', '先给形状线索，再补颜色。家长能找到吗？'][v], ['屏幕上的九张颜色形状卡'], ['家长先转身。孩子看图在心里选一张，九张都留在屏幕上，不指给家长看。', v === 0 ? '家长转回来后，孩子说一条颜色线索和一条形状线索，请家长找图卡。' : v === 1 ? '先只说颜色，请家长指出所有可能的图卡；再补上形状线索。' : '先只说形状，请家长指出所有可能的图卡；再补上颜色线索。', '最后公布选中的图卡。少说一条线索时，还有哪几张也有可能？'], ['能说出观察到的事实', '能让两条线索共同确定目标', '能解释少一条线索时为什么可能有多个答案']); a.revision = 2; return a; } const ts = featureCards(); const expected = ts.filter((_, k) => Math.floor(k / 3) === v && (s === 0 || k % 3 !== 1)).map(t => t.id); return selection('L07', i, '哪些图卡仍然有可能藏在盒子里？', ts, expected, '没有被线索排除的都还是可能的。线索不够时，不急着选唯一答案。', undefined, [`它的颜色是${['红', '蓝', '黄'][v]}色。`, ...(s === 1 ? ['它不是方形。'] : [])]); })),
-    set('L08', '学会新规则', nine((i, s, v) => { const start = 2 + v, add = 2 + s, mult = s === 2 ? 2 : 1, answer = (start + add) * mult; const a = numeric('L08', i, `让${start}个圆片经过规则机，最后变成几个？`, answer, [start + add + 1, start * mult + add, answer + 2], `先加${add}，${s === 2 ? '再把总数变成两倍，' : ''}得到${answer}。换了起始数量，也要按同一条规则做。`, panels([{ title: '先看例子', drawing: grid([1, '→', (1 + add) * mult], 3) }, { title: '轮到你', drawing: grid([start, '→', '?'], 3) }]), { operation: 'affine', values: [start, add, mult] }, [`先添上${add}个。`, ...(s === 2 ? ['再把所有圆片变成两倍。'] : [])]); a.protocol = { kind: 'learnThenTransfer', demonstration: `先看例子：一个圆片先添${add}个，${s === 2 ? '再把总数变成两倍，' : ''}得到${(1 + add) * mult}个。接下来换一个起始数量，仍用这条规则。` }; return a; })),
-    set('L09', '翻牌小机关', nine((i, s, v) => { const n = 3 + s, initial = Array.from({ length: n }, (_, k) => (k + v) % 2), steps = s === 0 ? [v % n] : s === 1 ? [v % n, (v + 1) % n] : [v % n, (v + 1) % n, v % n]; const final = [...initial]; steps.forEach(k => final[k] = 1 - final[k]); const ts = [card('off', '白面', grid([''], 1)), card('on', '黄面', symbol(1, 2))]; const a = fillGrid('L09', i, '按顺序翻牌，最后每个位置朝上的是哪一面？', ts, n, final.map(n => n ? 'on' : 'off'), Array.from({ length: n }, (_, k) => k), '翻一次，白色和黄色换一面；同一张翻两次，又回到原来。', ['每张牌一面是白色，一面是黄色。', '翻一次，白色变黄色，黄色变白色。', ...steps.map(k => `翻第${k + 1}张。`)], grid(initial.map(() => ''), n, [], initial.map(n => n ? palette[2] : '#fffdf7'))); a.revision = 2; return a; })),
+    set('L08', '学会新规则', nine((i, s, v) => {
+        const start = 2 + v, add = 2 + s, mult = s === 2 ? 2 : 1, answer = (start + add) * mult;
+        const clues = [`添上${add}个圆片。`, ...(s === 2 ? ['再摆一份一样多的圆片。'] : [])];
+        const a = numeric('L08', i, `放进${start}个圆片，最后有几个？`, answer,
+            [start + add + 1, start * mult + add, answer + 2],
+            `先添上${add}个，${s === 2 ? '再摆一份一样多的圆片，' : ''}一共有${answer}个。起先的圆片换了，玩法还是一样。`,
+            panels([{ title: '先看例子', drawing: grid([1, '→', (1 + add) * mult], 3) }, { title: '轮到你', drawing: grid([start, '→', '?'], 3) }]),
+            { operation: 'affine', values: [start, add, mult] }, clues);
+        a.instruction = '数一数，选出最后的圆片。';
+        a.presentation = { evidence: { kind: 'ruleMachine', start, add, multiplier: mult } };
+        a.protocol = { kind: 'learnThenTransfer', demonstration: `先用一个圆片试一试。添上${add}个圆片，${s === 2 ? '再摆一份一样多的圆片，' : ''}看看会变成几个。` };
+        a.hints = ['先看看原来的圆片，再数添进来的圆片。', s === 2 ? '第二步要把刚才所有的圆片，再摆一份。' : '原来的和添进来的，都要数进去。'];
+        a.parentPrompt = '添进来的是哪几个？换一个起始数量，你还会用这条规则吗？';
+        return a;
+    })),
+    set('L09', '翻牌小机关', nine((i, s, v) => {
+        const n = 3 + s, initial = Array.from({ length: n }, (_, k) => (k + v) % 2);
+        const steps = s === 0 ? [v % n] : s === 1 ? [v % n, (v + 1) % n] : [v % n, (v + 1) % n, v % n];
+        const final = [...initial];
+        steps.forEach(k => final[k] = 1 - final[k]);
+        const ts = [card('off', '白面', grid([''], 1)), card('on', '黄面', symbol(1, 2))];
+        const a = fillGrid('L09', i, '照着顺序，动手翻一翻。', ts, n,
+            final.map(n => n ? 'on' : 'off'), Array.from({ length: n }, (_, k) => k),
+            '翻一次就换一面。同一张牌翻两次，又回到原来的样子。',
+            ['点一下大牌，就翻一面。', ...steps.map((k, step) => `第${step + 1}步，翻第${k + 1}张。`)],
+            grid(initial.map(() => ''), n, [], initial.map(n => n ? palette[2] : '#fffdf7')));
+        a.instruction = '看小图的顺序，点下面的大牌。';
+        a.presentation = { evidence: { kind: 'cardFlip', initial: initial.map(value => value ? 'on' : 'off'), steps } };
+        a.hints = ['先看开始时的牌面，再按小图从左往右翻。', '同一张牌翻两次，会回到原来的样子。'];
+        a.retry = '对照开始时的牌面，按顺序再翻一遍。也可以点“重新翻”。';
+        a.parentPrompt = '哪张牌翻过两次？它和开始时有什么不同？';
+        a.revision = 2;
+        return a;
+    })),
     set('L10', '两位朋友走格子', nine((i, s, v) => { const a = 1 + v, b = 9 + v, steps = 2 + s, redStep = 1, blueStep = s === 0 ? 1 : 2, red = a + steps * redStep, blue = b - steps * blueStep; const ts = Array.from({ length: 12 }, (_, k) => card(`n${k}`, k)); const result = ordered('L10', i, '走完以后，两位朋友分别停在哪个数字？', ts, [`n${red}`, `n${blue}`], `每走一次都更新位置。红色停在${red}，蓝色停在${blue}。两个位置可以相同。`, [`红色从${a}出发，每次向右走${redStep}格。`, `蓝色从${b}出发，每次向左走${blueStep}格。`, `同时走${steps}次。先摆红色位置，再摆蓝色位置。`], grid(Array.from({ length: 12 }, (_, k) => k), 12)); if (result.kind === 'orderedPlacement')
         result.tokenUse = 'unlimited'; return result; })),
     set('L11', '棋盘下一步', nine((i, s, v) => { if (s === 2) {

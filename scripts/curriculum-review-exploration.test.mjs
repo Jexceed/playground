@@ -30,10 +30,13 @@ test('E07 spoken square is square in every candidate, with exactly one complete 
 
 test('L09 states the white/yellow reverse face before operations and both colors toggle exactly', () => {
   for (const activity of family('L09')) {
-    assert.match(activity.clues[0], /每张牌.*白色.*黄色/);
-    assert.match(activity.clues[1], /白色变黄色.*黄色变白色/);
+    assert.equal(activity.presentation.evidence.kind, 'cardFlip');
+    assert.ok(activity.tokens.some(t => t.id === 'off' && t.label === '白面'));
+    assert.ok(activity.tokens.some(t => t.id === 'on' && t.label === '黄面'));
+    assert.equal(activity.presentation.evidence.initial.length, activity.cells.length);
     const initial = drawing(activity.illustration).objects.filter(o => o.kind === 'rect').map(o => o.fill === '#e8b64e');
-    const flips = activity.clues.flatMap(clue => /^翻第(\d+)张。$/.test(clue) ? [Number(clue.match(/\d+/)[0]) - 1] : []);
+    const flips = activity.presentation.evidence.steps;
+    assert.deepEqual(activity.presentation.evidence.initial, initial.map(yellow => yellow ? 'on' : 'off'));
     const expected = initial.map((wasYellow, index) => wasYellow !== (flips.filter(flip => flip === index).length % 2 === 1) ? 'on' : 'off');
     assert.deepEqual(Object.values(activity.evaluation.cells), expected, activity.id);
     assert.equal(activity.revision, 2);

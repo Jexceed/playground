@@ -36,11 +36,42 @@ evidence. This document records the planned boundary, not new active audio.
   color/shape/blank cards for interactive activities. Their SVG sources live in
   `source/`; regenerate with `pnpm generate:thinking-symbols`. All are
   registered in `src/data/imageGallery.ts`.
+- `public/images/items/rule-play/`: four transparent image_gen toy sprites for
+  the rule-machine and flip-card activities: machine, empty maple tray, ivory
+  cloud face, and golden sun face. Registered as `rulePlayMachine`, `rulePlayTray`,
+  `rulePlayCardWhite`, and `rulePlayCardYellow`. Original PNGs, exact prompts and
+  size/source metadata are retained in `source/`. Runtime copies are only
+  proportionally downscaled; alpha is preserved. Quantities and position numbers
+  are rendered from activity data and never painted into these sprites.
 - `public/images/scenes/`: full scene images that carry question clues.
 
 Generated or source images belong in a `source/` child directory under the same
 category. For example, a generated scene source belongs in
 `public/images/scenes/source/`.
+
+## Art Changes And Shared Controls
+
+Image refinement must stay within the picture, diagram and necessary picture
+layout. Keep the shared confirm/reset/clear buttons, navigation, panel frame and
+selection theme unchanged unless the user explicitly requests a framework redesign.
+`rule-play.css` must not override shared button colors, borders, shadows or radii;
+`art-review.test.mjs` and the 052 computed-style comparison cover this boundary.
+
+The 052 review covers 1176 existing image files and 74 registered frames, plus
+code-drawn glyphs and representative diagram renderers. Its per-item decisions
+live in `specs/052-art-review-framework-guard/review/ledger.json`.
+
+- `public/images/items/art-052/`: 16 original image_gen cutouts; source PNGs,
+  exact prompts and hashes are in `source/manifest.json`.
+- The exploration renderer finishes quantity chips, clocks, phonics cells and
+  facing-person illustrations from the unchanged authored drawing models.
+  `scripts/lib/exploration-renderer.mjs` owns this presentation only.
+- PNG generation compares the SVG source as well as dimensions, so an art edit
+  is not silently skipped when the size stays the same. Existing high-resolution
+  files are retained when a reference becomes hidden.
+- Old snapshot baselines remain immutable. The historical test adapter first
+  verifies exact reviewed 050/051/052 changes, then reverses only those declared
+  presentation changes for comparison. It must never normalize answer fields.
 
 ## Runtime Registration
 

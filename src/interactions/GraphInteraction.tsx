@@ -1,5 +1,7 @@
 import { useEffect, useId, useState } from "react";
 import { Footprints } from "lucide-react";
+import { imageGallery } from "../data/imageGallery";
+import { ActivityImage } from "./ActivityTokenArt";
 import { routeNodes, type GraphEdge, type NetworkActivity, type RouteActivity } from "../domain/advanced-activity";
 import { connectionGeometry, canWalkEdge, cycleBridge, walkEdge, type NetworkResponse, type RouteResponse } from "./connection-state";
 
@@ -46,6 +48,7 @@ export function GraphInteraction({ activity, response, disabled, onChange }: Pro
     <div className="connection-toolbar"><p role="status">{disabled ? route ? '沿着箭头，说说刚才走过的路' : '一起数一数每个岛连出的桥' : toolbar}</p>{route && <span className="connection-count">已走 {response.edgeIds.length} 段</span>}</div>
     <div className="graph-map">
       <svg className="graph-board" viewBox="0 0 600 340" preserveAspectRatio="none" role="group" aria-label="可操作的连接线">
+        {activity.kind === "network" && <rect width="600" height="340" fill="#edf7f8" />}
         <defs><marker id={markerId} viewBox="0 0 10 10" refX="5" refY="5" markerWidth="4" markerHeight="4" orient="auto"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#367a68" /></marker></defs>
         {edges.map(edge => {
           const count = response.kind === "network" ? response.counts[edge.id] ?? edge.fixed ?? 0 : response.edgeIds.filter(id => id === edge.id).length;
@@ -63,8 +66,8 @@ export function GraphInteraction({ activity, response, disabled, onChange }: Pro
             <title>{title}</title>
             <path className="graph-edge-focus" d={d} />
             {response.kind === "network" && count === 2
-              ? [-9, 9].map(offset => <path key={offset} className="graph-visible-line is-bridge" d={geometry(edge, offset).d} />)
-              : <path className={`graph-visible-line${response.kind === 'network' ? ' is-bridge' : ''}`} d={d} markerMid={route && count ? `url(#${markerId})` : undefined} />}
+              ? [-9, 9].map(offset => <g key={offset}><path className="graph-bridge-base" d={geometry(edge, offset).d} /><path className="graph-visible-line is-bridge" d={geometry(edge, offset).d} /></g>)
+              : <>{response.kind === "network" && count > 0 && <path className="graph-bridge-base" d={d} />}<path className={`graph-visible-line${response.kind === 'network' ? ' is-bridge' : ''}`} d={d} markerMid={route && count ? `url(#${markerId})` : undefined} /></>}
             {blocked && <g className="graph-road-block" transform={`translate(${mid.x} ${mid.y})`}><circle r="15" /><path d="M -6 -6 L 6 6 M -6 6 L 6 -6" /></g>}
             <path className="graph-edge-hit" d={d} />
           </g>;
@@ -93,7 +96,7 @@ export function GraphInteraction({ activity, response, disabled, onChange }: Pro
             disabled={disabled || (route && node.id !== current && !reachable)}
             className={`graph-node${node.id === (route ? current : selected) ? ' is-current' : ''}${reachable ? ' is-reachable' : ''}`}
             onClick={() => useNode(node.id)}>
-            {activity.kind === "network" ? <><span className="graph-island-name">{node.label}</span><strong>{node.degree}</strong><small>已连 {islandCount}</small></> : <strong>{node.label}</strong>}
+            {activity.kind === "network" ? <><ActivityImage image={imageGallery.items.art052Island} className="graph-island-art" decorative /><span className="graph-island-name">{node.label}</span><strong>{node.degree}</strong><small>已连 {islandCount}</small></> : <strong>{node.label}</strong>}
           </button>
           {activity.kind === "route" && <span className="graph-place-note">{node.id === activity.start ? '起点' : node.id === activity.end ? '终点' : activity.requiredNodes.includes(node.id) ? '要经过' : ''}</span>}
         </div>;

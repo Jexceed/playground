@@ -1,0 +1,106 @@
+Window: "小小思考屋", App: 小小思考屋.
+0 standard window 小小思考屋, Secondary Actions: Raise
+	1 scroll area
+		2 HTML content Description: 小小思考屋, URL: tauri://localhost
+			3 container
+				4 container 主题地图
+					5 image 小小思考屋 亲子思维游戏
+					6 container 选择启蒙或探索
+						7 toggle button 启蒙, Value: off
+						8 toggle button 探索, Value: on
+					9 button (collapsed) 数字岛 144 题, Secondary Actions: Expand
+					10 button (expanded) 逻辑屋 126 题, Secondary Actions: Collapse
+					11 button (collapsed) 图形工坊 186 题, Secondary Actions: Expand
+					12 button (collapsed) 记忆小屋 81 题, Secondary Actions: Expand
+					13 button (collapsed) 语言花园 54 题, Secondary Actions: Expand
+					14 button (collapsed) 生活实验室 30 题, Secondary Actions: Expand
+					15 container 关卡列表
+						16 container
+							17 text 探索  ·  逻辑屋
+						18 text 15  个
+						19 search text field (settable) 查找当前主题题组, Placeholder: 查找题组
+							20 text 查找题组
+						21 heading 分类与线索, Value: 3
+							22 text 分类与线索
+						23 button 规则收纳盒 动手 · 6 题
+						24 button 线索排排队 动手 · 6 题
+						25 button 分类换个角度 动手 · 9 题
+						26 button 关系接力 动手 · 9 题
+						27 button 线索够不够 动手 · 9 题
+						28 button 格子里的线索 动手 · 9 题
+						29 heading 看与记, Value: 3
+							30 text 看与记
+						31 button 记忆摆一摆 动手 · 6 题
+						32 heading 顺序与推理, Value: 3
+							33 text 顺序与推理
+						34 button 路线设计师 动手 · 9 题
+						35 button 先后有讲究 动手 · 9 题
+						36 button 证据说明什么 动手 · 9 题
+						37 button 学会新规则 动手 · 9 题
+						38 heading 变化与策略, Value: 3
+							39 text 变化与策略
+						40 button 翻牌小机关 动手 · 9 题
+						41 button 两位朋友走格子 动手 · 9 题
+						42 button 棋盘下一步 动手 · 9 题
+						43 button 小岛连桥 动手 · 9 题
+				44 container 当前部分
+					45 text 探索
+					46 text 组合线索，多步思考 75  组 ·  621  题
+				47 container 翻牌小机关
+					48 container 翻牌小机关
+						49 container
+							50 text 先试一试  · 第  1  / 9  题
+							51 heading 翻牌小机关, Value: 1
+								52 text 翻牌小机关
+							53 button 听一听题目
+						54 heading 照着顺序，动手翻一翻。, Value: 2
+							55 text 照着顺序，动手翻一翻。
+						56 text 看小图的顺序，点下面的大牌。
+						57 container 动手翻牌
+							58 image 开始时：第1张白面，第2张黄面，第3张白面
+							59 button 点这张牌，试试翻面
+							60 container 翻牌顺序
+								61 button 听第1步：翻第1张
+							62 text 轮到你，点大牌翻面 1
+							63 button 第1张，白面，点一下翻面
+							64 text 2
+							65 button 第2张，黄面，点一下翻面
+							66 text 3
+							67 button 第3张，白面，点一下翻面
+						68 button (disabled) 撤销上一步
+						69 button 重新翻
+						70 button 提示
+						71 button 翻好了，看看
+						72 container
+							73 text 这次尝试  0  次 · 提示  0  次
+							74 button 先跳过
+				75 container 题目导航
+					76 text 题目导航
+					77 text 0  /  9  已做
+					78 button 跳到第 1 题
+					79 button 跳到第 2 题
+					80 button 跳到第 3 题
+					81 button 跳到第 4 题
+					82 button 跳到第 5 题
+					83 button 跳到第 6 题
+					84 button 跳到第 7 题
+					85 button 跳到第 8 题
+					86 button 跳到第 9 题
+				87 summary 给家长 · 陪玩提示, Value: off
+					88 text 给家长 · 陪玩提示
+				89 summary 探索 · 成长记录, Value: off
+					90 text 探索
+					91 text  · 成长记录
+	92 close button
+	93 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	94 minimize button
+	95 text 小小思考屋
+96 menu bar
+	97 小小思考屋
+	98 File
+	99 Edit
+	100 View
+	101 Window
+	102 Help
+
+The focused UI element is 2 HTML content Description: 小小思考屋, URL: tauri://localhost

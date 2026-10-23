@@ -2082,11 +2082,10 @@ button:focus-visible {
 }
 
 .kid-illustration .stroke {
-  stroke: #293241;
-  stroke-width: 4.5;
+  stroke: #344555;
+  stroke-width: 3;
   stroke-linecap: round;
   stroke-linejoin: round;
-  filter: url(#crayonNoise);
 }
 
 .kid-illustration .fill-red { fill: #e85d58; }
@@ -3142,7 +3141,7 @@ button:focus-visible {
 .memory-quantity-picture {display:flex;align-items:center;gap:10px;padding:8px;}
 .memory-quantity-picture>img {width:60px;height:60px;object-fit:contain;}
 .memory-quantity-picture>div {display:grid;grid-template-columns:repeat(3,14px);gap:5px;}
-.quantity-dot {width:14px;height:14px;border-radius:50%;background:#588ba8;}
+.quantity-dot {width:14px;height:14px;object-fit:contain;}
 .parent-playbook {display:grid;gap:8px;margin:6px 0;}
 .parent-playbook h3 {display:flex;align-items:center;gap:9px;margin:0 0 6px;color:#536c56;font-size:15px;font-weight:700;}
 .parent-preparation {display:flex;align-items:center;gap:12px;flex-wrap:wrap;border:1px solid #e2e7da;border-radius:14px;padding:6px 12px;background:#f7f9f0;}
@@ -3449,7 +3448,7 @@ button:focus-visible {
 .comparison-panel h3 {margin:0 0 8px;text-align:center;font-size:20px;line-height:1.35;font-weight:650;color:#425953;}
 .comparison-body {display:grid;place-items:center;min-height:114px;}
 .comparison-dots {display:grid;grid-template-columns:repeat(var(--comparison-columns),var(--comparison-dot-size));grid-template-rows:repeat(var(--comparison-rows),var(--comparison-dot-size));gap:var(--comparison-dot-gap);padding:10px 0;}
-.comparison-dot {width:var(--comparison-dot-size);height:var(--comparison-dot-size);border:2px solid #344555;border-radius:50%;background:#548cb3;}
+.comparison-dot {width:var(--comparison-dot-size);height:var(--comparison-dot-size);object-fit:contain;}
 .comparison-image {display:block;width:180px;height:180px;max-width:100%;object-fit:contain;}
 .comparison-dialog .visual-comparison {--comparison-dot-size:44px;--comparison-dot-gap:16px;margin-top:26px;}
 .comparison-dialog .comparison-panel h3 {font-size:26px;}
@@ -3464,9 +3463,9 @@ button:focus-visible {
 .comparison-place-value {--one-size:18px;--ten-height:104px;width:100%;}
 .place-value-blocks {display:flex;justify-content:center;align-items:center;gap:24px;min-height:104px;}
 .comparison-tens {display:flex;gap:10px;}
-.comparison-tens>span {width:var(--one-size);height:var(--ten-height);border:2px solid #344555;background:#548cb3;}
+.comparison-tens>span {width:var(--one-size);height:var(--ten-height);border:1px solid #3f7899;background:linear-gradient(90deg,#8abada,#548cb3 42%,#447da1);box-shadow:inset 1px 0 #c5e3f1;}
 .comparison-ones {display:grid;grid-template-columns:repeat(5,var(--one-size));gap:9px;}
-.comparison-ones>span {width:var(--one-size);height:var(--one-size);border:2px solid #344555;background:#e8b64e;}
+.comparison-ones>span {width:var(--one-size);height:var(--one-size);border:1px solid #b68d35;background:linear-gradient(135deg,#ffe2a1,#e8b64e);box-shadow:inset 1px 1px #fff0c7;}
 .comparison-legend {display:flex;justify-content:center;flex-wrap:wrap;gap:4px 12px;margin:10px 0 0;font-size:15px;line-height:1.4;color:#425953;}
 .comparison-dialog .comparison-place-value {--one-size:26px;--ten-height:152px;}
 .comparison-dialog .comparison-legend {font-size:18px;}
@@ -3657,3 +3656,18 @@ button:focus-visible {
 .mirror-order-axis { position:relative; width:12px; margin-top:28px; background:linear-gradient(90deg,#c4e3ee,#f9ffff,#98bfd3); border:2px solid #8bb7ce; border-radius:5px; }
 .mirror-order-axis>span { position:absolute; top:-28px; left:50%; transform:translateX(-50%); white-space:nowrap; font-size:13px; }
 @media(max-width:700px){.mirror-order-board{gap:8px;padding:15px 4px;}.mirror-order-cards{gap:3px;}.mirror-order-cards .visual-token{width:38px;min-width:38px;padding:3px 1px 16px;}.mirror-order-cards .kid-illustration{width:30px;height:30px;}.mirror-order-cards .visual-token small{font-size:9px;}}
+
+/* Illustrated islands are confined to the network drawing; shared controls keep their theme. */
+.is-network .graph-node {isolation:isolate;background:transparent;border-color:transparent;box-shadow:none;}
+.is-network .graph-island-art {position:absolute;inset:0;width:100%;height:100%;object-fit:fill;z-index:-1;pointer-events:none;}
+.is-network .graph-node strong {position:relative;color:#344f3d;}
+.is-network .graph-node small {position:relative;background:#fffdf7e8;border-radius:5px;padding:0 3px;}
+.is-network .graph-node.is-current {outline:2px solid #d19a3d;outline-offset:2px;}
+.is-network .graph-bridge-base {fill:none;stroke:#9a7544;stroke-width:10;stroke-linecap:round;}
+.is-network .graph-edge.is-used .graph-visible-line {stroke:#e5c18b;stroke-width:6;stroke-linecap:round;}
+.is-network .graph-board {border-radius:inherit;overflow:hidden;}
+
+/* Keep the phonics reference and complete syllables readable on a narrow screen. */
+@media (max-width:760px) {
+  .activity-round[data-family="E05"][data-paired-matching] {display:block;}
+}

@@ -1,0 +1,395 @@
+[
+  {
+    "family": "L09",
+    "round": 1,
+    "stepTargets": [
+      0
+    ],
+    "wrongThenCorrect": true,
+    "broken": 0,
+    "overflow": [
+      "flip-playing-cards"
+    ]
+  },
+  {
+    "family": "L09",
+    "round": 2,
+    "stepTargets": [
+      1
+    ],
+    "wrongThenCorrect": true,
+    "broken": 0,
+    "overflow": [
+      "flip-playing-cards"
+    ]
+  },
+  {
+    "family": "L09",
+    "round": 3,
+    "stepTargets": [
+      2
+    ],
+    "wrongThenCorrect": true,
+    "broken": 0,
+    "overflow": [
+      "flip-playing-cards"
+    ]
+  },
+  {
+    "family": "L09",
+    "round": 4,
+    "stepTargets": [
+      0,
+      1
+    ],
+    "wrongThenCorrect": true,
+    "broken": 0,
+    "overflow": [
+      "flip-playing-cards",
+      "flip-card-position",
+      "flip-card-position",
+      "flip-card-position",
+      "flip-card-position"
+    ]
+  },
+  {
+    "family": "L09",
+    "round": 5,
+    "stepTargets": [
+      1,
+      2
+    ],
+    "wrongThenCorrect": true,
+    "broken": 0,
+    "overflow": [
+      "flip-playing-cards",
+      "flip-card-position",
+      "flip-card-position",
+      "flip-card-position",
+      "flip-card-position"
+    ]
+  },
+  {
+    "family": "L09",
+    "round": 6,
+    "stepTargets": [
+      2,
+      3
+    ],
+    "wrongThenCorrect": true,
+    "broken": 0,
+    "overflow": [
+      "flip-playing-cards",
+      "flip-card-position",
+      "flip-card-position",
+      "flip-card-position",
+      "flip-card-position"
+    ]
+  },
+  {
+    "family": "L09",
+    "round": 7,
+    "stepTargets": [
+      0,
+      1,
+      0
+    ],
+    "wrongThenCorrect": true,
+    "broken": 0,
+    "overflow": [
+      "flip-playing-cards"
+    ]
+  },
+  {
+    "family": "L09",
+    "round": 8,
+    "stepTargets": [
+      1,
+      2,
+      1
+    ],
+    "wrongThenCorrect": true,
+    "broken": 0,
+    "overflow": [
+      "flip-playing-cards"
+    ]
+  },
+  {
+    "family": "L09",
+    "round": 9,
+    "stepTargets": [
+      2,
+      3,
+      2
+    ],
+    "wrongThenCorrect": true,
+    "broken": 0,
+    "overflow": [
+      "flip-playing-cards"
+    ]
+  },
+  {
+    "family": "L08",
+    "round": 1,
+    "start": 2,
+    "add": 2,
+    "doubled": false,
+    "demonstrated": "3 个",
+    "choices": [
+      {
+        "discs": 5,
+        "label": "5"
+      },
+      {
+        "discs": 4,
+        "label": "4"
+      },
+      {
+        "discs": 6,
+        "label": "6"
+      }
+    ],
+    "wrongThenCorrect": true,
+    "replayPreservedSelection": true,
+    "broken": 0,
+    "overflow": [
+      "rule-machine-action"
+    ]
+  },
+  {
+    "family": "L08",
+    "round": 2,
+    "start": 3,
+    "add": 2,
+    "doubled": false,
+    "demonstrated": "3 个",
+    "choices": [
+      {
+        "discs": 6,
+        "label": "6"
+      },
+      {
+        "discs": 5,
+        "label": "5"
+      },
+      {
+        "discs": 7,
+        "label": "7"
+      }
+    ],
+    "wrongThenCorrect": true,
+    "replayPreservedSelection": true,
+    "broken": 0,
+    "overflow": [
+      "rule-machine-action"
+    ]
+  },
+  {
+    "family": "L08",
+    "round": 3,
+    "start": 4,
+    "add": 2,
+    "doubled": false,
+    "demonstrated": "3 个",
+    "choices": [
+      {
+        "discs": 8,
+        "label": "8"
+      },
+      {
+        "discs": 7,
+        "label": "7"
+      },
+      {
+        "discs": 6,
+        "label": "6"
+      }
+    ],
+    "wrongThenCorrect": true,
+    "replayPreservedSelection": true,
+    "broken": 0,
+    "overflow": [
+      "rule-machine-action"
+    ]
+  },
+  {
+    "family": "L08",
+    "round": 4,
+    "start": 2,
+    "add": 3,
+    "doubled": false,
+    "demonstrated": "4 个",
+    "choices": [
+      {
+        "discs": 5,
+        "label": "5"
+      },
+      {
+        "discs": 6,
+        "label": "6"
+      },
+      {
+        "discs": 7,
+        "label": "7"
+      }
+    ],
+    "wrongThenCorrect": true,
+    "replayPreservedSelection": true,
+    "broken": 0,
+    "overflow": [
+      "rule-machine-action"
+    ]
+  },
+  {
+    "family": "L08",
+    "round": 5,
+    "start": 3,
+    "add": 3,
+    "doubled": false,
+    "demonstrated": "4 个",
+    "choices": [
+      {
+        "discs": 7,
+        "label": "7"
+      },
+      {
+        "discs": 6,
+        "label": "6"
+      },
+      {
+        "discs": 8,
+        "label": "8"
+      }
+    ],
+    "wrongThenCorrect": true,
+    "replayPreservedSelection": true,
+    "broken": 0,
+    "overflow": [
+      "rule-machine-action"
+    ]
+  },
+  {
+    "family": "L08",
+    "round": 6,
+    "start": 4,
+    "add": 3,
+    "doubled": false,
+    "demonstrated": "4 个",
+    "choices": [
+      {
+        "discs": 8,
+        "label": "8"
+      },
+      {
+        "discs": 7,
+        "label": "7"
+      },
+      {
+        "discs": 9,
+        "label": "9"
+      }
+    ],
+    "wrongThenCorrect": true,
+    "replayPreservedSelection": true,
+    "broken": 0,
+    "overflow": [
+      "rule-machine-action"
+    ]
+  },
+  {
+    "family": "L08",
+    "round": 7,
+    "start": 2,
+    "add": 4,
+    "doubled": true,
+    "demonstrated": "10 个",
+    "choices": [
+      {
+        "discs": 7,
+        "label": "7"
+      },
+      {
+        "discs": 12,
+        "label": "12"
+      },
+      {
+        "discs": 8,
+        "label": "8"
+      },
+      {
+        "discs": 14,
+        "label": "14"
+      }
+    ],
+    "wrongThenCorrect": true,
+    "replayPreservedSelection": true,
+    "broken": 0,
+    "overflow": [
+      "rule-machine-action"
+    ]
+  },
+  {
+    "family": "L08",
+    "round": 8,
+    "start": 3,
+    "add": 4,
+    "doubled": true,
+    "demonstrated": "10 个",
+    "choices": [
+      {
+        "discs": 16,
+        "label": "16"
+      },
+      {
+        "discs": 14,
+        "label": "14"
+      },
+      {
+        "discs": 10,
+        "label": "10"
+      },
+      {
+        "discs": 8,
+        "label": "8"
+      }
+    ],
+    "wrongThenCorrect": true,
+    "replayPreservedSelection": true,
+    "broken": 0,
+    "overflow": [
+      "rule-machine-action"
+    ]
+  },
+  {
+    "family": "L08",
+    "round": 9,
+    "start": 4,
+    "add": 4,
+    "doubled": true,
+    "demonstrated": "10 个",
+    "choices": [
+      {
+        "discs": 12,
+        "label": "12"
+      },
+      {
+        "discs": 9,
+        "label": "9"
+      },
+      {
+        "discs": 16,
+        "label": "16"
+      },
+      {
+        "discs": 18,
+        "label": "18"
+      }
+    ],
+    "wrongThenCorrect": true,
+    "replayPreservedSelection": true,
+    "broken": 0,
+    "overflow": [
+      "rule-machine-action"
+    ]
+  }
+]

@@ -1,6 +1,7 @@
 import type { CSSProperties } from 'react';
 import type { ComparisonPanel } from '../domain/activity';
 import { ActivityImage } from './ActivityTokenArt';
+import { imageGallery } from '../data/imageGallery';
 
 /** Keep labels at reading size instead of shrinking them with a composite bitmap. */
 export function VisualComparison({ panels }: { panels: ComparisonPanel[] }) {
@@ -11,7 +12,7 @@ export function VisualComparison({ panels }: { panels: ComparisonPanel[] }) {
       <div className="comparison-body">
         {panel.kind === 'dots' ? <div className="comparison-dots" role="img" aria-label={`${panel.label}的圆点图`}
           style={{ '--comparison-columns': panel.columns } as CSSProperties}>
-          {Array.from({ length: panel.count }, (_, i) => <span className="comparison-dot" aria-hidden="true" key={i} />)}
+          {Array.from({ length: panel.count }, (_, i) => <ActivityImage key={i} image={imageGallery.items.patternBlueDisc} className="comparison-dot" decorative />)}
         </div> : panel.kind === 'placeValue' ? <div className="comparison-place-value">
           <div className="place-value-blocks" role="img" aria-label="用长条和小方块表示数量">
             {panel.tens > 0 && <div className="comparison-tens">{Array.from({ length:panel.tens }, (_, i)=><span key={i} />)}</div>}

@@ -217,12 +217,12 @@ export const imageGallery = {
     drinkingDrink: { src: "/images/items/drinking-drink.png", alt: "小朋友双手拿着杯子，杯口贴着嘴，正在喝水。" },
     drinkingAnotherCup: { src: "/images/items/drinking-another-cup.png", alt: "桌上已经有一个空杯子，小朋友又拿起了第二个空杯子。" },
     drinkingCarryEmpty: { src: "/images/items/drinking-carry-empty.png", alt: "小朋友双手端着没有水的空杯子往前走，水壶还留在桌上。" },
-    openDoor: { src: "/images/items/enlightenment/open-door.png", alt: "已经打开的门" },
-    setSquare: { src: "/images/items/enlightenment/set-square.png", alt: "带刻度的三角尺" },
-    soilPot: { src: "/images/items/enlightenment/soil-pot.png", alt: "只有土，还没播种的花盆" },
-    hugShoulders: { src: "/images/items/enlightenment/hug-shoulders.png", alt: "双手抱肩" },
-    touchHead: { src: "/images/items/enlightenment/touch-head.png", alt: "双手摸头" },
-    fishOnShore: { src: "/images/items/enlightenment/fish-on-shore.png", alt: "小鱼在岸边，水在旁边" },
+    openDoor: { src: "/images/items/art-052/open-door.png", alt: "已经打开的门" },
+    setSquare: { src: "/images/items/art-052/set-square.png", alt: "带刻度的三角尺" },
+    soilPot: { src: "/images/items/order-045-plant-soil.png", alt: "只有土，还没播种的花盆" },
+    hugShoulders: { src: "/images/items/logic-046-daily-hugShoulders.png", alt: "双手抱肩" },
+    touchHead: { src: "/images/items/logic-046-daily-touchHead.png", alt: "双手摸头" },
+    fishOnShore: { src: "/images/items/art-052/fish-on-shore.png", alt: "小鱼在岸边，水在旁边" },
 
     ...explorationArtImages,
     thinkingRedCircle: { src: "/images/items/thinking-symbols/red-circle.png", alt: "红色圆形" },
@@ -235,6 +235,17 @@ export const imageGallery = {
     thinkingYellowSquare: { src: "/images/items/thinking-symbols/yellow-square.png", alt: "黄色方形" },
     thinkingYellowTriangle: { src: "/images/items/thinking-symbols/yellow-triangle.png", alt: "黄色三角形" },
     thinkingBlankCard: { src: "/images/items/thinking-symbols/blank-card.png", alt: "空白卡" },
+    art052Island: { src: "/images/items/art-052/island.png", alt: "中央留白的绿色小岛" },
+    art052Home: { src: "/images/items/art-052/home.png", alt: "小房子" },
+    art052Carrot: { src: "/images/items/art-052/carrot.png", alt: "胡萝卜" },
+    art052Gift: { src: "/images/items/art-052/gift.png", alt: "礼物盒" },
+    art052Seed: { src: "/images/items/art-052/seed.png", alt: "没有发芽的种子" },
+    art052Puddle: { src: "/images/items/art-052/puddle.png", alt: "地上的水洼" },
+    art052TopDownChild: { src: "/images/items/art-052/top-down-child.png", alt: "从上方看的蓝衣小朋友，鼻子朝上" },
+    rulePlayMachine: { src: "/images/items/rule-play/machine.png", alt: "带木质漏斗和转柄的青绿色规则机", width: 640, height: 640 },
+    rulePlayTray: { src: "/images/items/rule-play/tray.png", alt: "空的浅木色圆片托盘", width: 800, height: 309 },
+    rulePlayCardWhite: { src: "/images/items/rule-play/card-white.png", alt: "有云朵浮雕的奶白色木卡面", width: 640, height: 853 },
+    rulePlayCardYellow: { src: "/images/items/rule-play/card-yellow.png", alt: "有太阳浮雕的金黄色木卡面", width: 640, height: 853 },
     patternRedDisc: {
       src: "/images/items/pattern-train/red-disc.png",
       alt: "规律图卡红色圆片",
@@ -356,7 +367,7 @@ export const imageGallery = {
       alt: "橘子",
     },
     grape: {
-      src: "/images/items/grape.png",
+      src: "/images/items/art-052/grape.png",
       alt: "葡萄",
     },
     cookie: {
@@ -440,7 +451,7 @@ export const imageGallery = {
       alt: "铅笔",
     },
     ruler: {
-      src: "/images/items/ruler.png",
+      src: "/images/items/art-052/ruler.png",
       alt: "尺子",
     },
     pencilCase: {
@@ -468,15 +479,15 @@ export const imageGallery = {
       alt: "玩具车",
     },
     bus: {
-      src: "/images/items/bus.png",
+      src: "/images/items/art-052/bus.png",
       alt: "公交车",
     },
     bike: {
-      src: "/images/items/bike.png",
+      src: "/images/items/art-052/bike.png",
       alt: "自行车",
     },
     plane: {
-      src: "/images/items/plane.png",
+      src: "/images/items/art-052/plane.png",
       alt: "飞机",
     },
     water: {
@@ -528,7 +539,7 @@ export const imageGallery = {
       alt: "积木",
     },
     blockTower: {
-      src: "/images/items/block-tower.png",
+      src: "/images/items/art-052/block-tower.png",
       alt: "积木塔",
     },
     star: {

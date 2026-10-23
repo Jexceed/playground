@@ -1,0 +1,101 @@
+Window: "小小思考屋", App: 小小思考屋.
+0 standard window 小小思考屋, Secondary Actions: Raise
+	1 scroll area
+		2 HTML content Description: 小小思考屋, URL: tauri://localhost
+			3 container
+				4 container 主题地图
+					5 image 小小思考屋 亲子思维游戏
+					6 container 选择启蒙或探索
+						7 toggle button 启蒙, Value: off
+						8 toggle button 探索, Value: on
+					9 button (collapsed) 数字岛 144 题, Secondary Actions: Expand
+					10 button (expanded) 逻辑屋 126 题, Secondary Actions: Collapse
+					11 button (collapsed) 图形工坊 186 题, Secondary Actions: Expand
+					12 button (collapsed) 记忆小屋 81 题, Secondary Actions: Expand
+					13 button (collapsed) 语言花园 54 题, Secondary Actions: Expand
+					14 button (collapsed) 生活实验室 30 题, Secondary Actions: Expand
+					15 container 关卡列表
+						16 container
+							17 text 探索  ·  逻辑屋
+						18 text 15  个
+						19 search text field (settable) 查找当前主题题组, Placeholder: 查找题组
+							20 text 查找题组
+						21 heading 分类与线索, Value: 3
+							22 text 分类与线索
+						23 button 规则收纳盒 动手 · 6 题
+						24 button 线索排排队 动手 · 6 题
+						25 button 分类换个角度 动手 · 9 题
+						26 button 关系接力 动手 · 9 题
+						27 button 线索够不够 动手 · 9 题
+						28 button 格子里的线索 动手 · 9 题
+						29 heading 看与记, Value: 3
+							30 text 看与记
+						31 button 记忆摆一摆 动手 · 6 题
+						32 heading 顺序与推理, Value: 3
+							33 text 顺序与推理
+						34 button 路线设计师 动手 · 9 题
+						35 button 先后有讲究 动手 · 9 题
+						36 button 证据说明什么 动手 · 9 题
+						37 button 学会新规则 动手 · 9 题
+						38 heading 变化与策略, Value: 3
+							39 text 变化与策略
+						40 button 翻牌小机关 动手 · 9 题
+						41 button 两位朋友走格子 动手 · 9 题
+						42 button 棋盘下一步 动手 · 9 题
+						43 button 小岛连桥 动手 · 9 题
+				44 container 当前部分
+					45 text 探索
+					46 text 组合线索，多步思考 75  组 ·  621  题
+				47 container 关系接力
+					48 container 关系接力
+						49 container
+							50 text 先试一试  · 第  1  / 9  题
+							51 heading 关系接力, Value: 1
+								52 text 关系接力
+							53 button 听一听题目
+						54 heading 把点群和表示数量的数连起来。, Value: 2
+							55 text 把点群和表示数量的数连起来。
+						56 text 把两边有关的图卡连起来。可以拖过去，也可以两边各点一下。
+						57 container 连线配对
+							58 text 拖到另一张图卡，或两边各点一下
+							59 text 已连  0  /  2  对
+							60 toggle button 左图1，未连接, Value: off
+							61 toggle button 左图2，未连接, Value: off
+							62 toggle button 2，未连接, Value: off
+							63 toggle button 3，未连接, Value: off
+							64 text 想换一个朋友，直接重新连；点卡片上的 × 可以断开。
+						65 button 撤销上一步
+						66 button 清空
+						67 button 提示
+						68 button 摆好了，看看
+						69 container
+							70 text 这次尝试  0  次 · 提示  0  次
+							71 button 先跳过
+				72 container 题目导航
+					73 text 题目导航
+					74 text 0  /  9  已做
+					75 button 跳到第 1 题
+					76 button 跳到第 2 题
+					77 button 跳到第 3 题
+					78 button 跳到第 4 题
+					79 button 跳到第 5 题
+					80 button 跳到第 6 题
+					81 button 跳到第 7 题
+					82 button 跳到第 8 题
+					83 button 跳到第 9 题
+				84 summary 给家长 · 陪玩提示, Value: off
+					85 text 给家长 · 陪玩提示
+				86 summary 探索 · 成长记录, Value: off
+					87 text 探索
+					88 text  · 成长记录
+	89 close button
+	90 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	91 minimize button
+	92 text 小小思考屋
+93 menu bar
+	94 小小思考屋
+	95 File
+	96 Edit
+	97 View
+	98 Window
+	99 Help

@@ -1,0 +1,58 @@
+{
+  "generator": "built-in image_gen",
+  "date": "2026-10-23",
+  "entries": [
+    {
+      "name": "machine",
+      "source": "public/images/items/rule-play/source/machine.png",
+      "target": "public/images/items/rule-play/machine.png",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "width": 640,
+      "height": 640,
+      "hasAlpha": true,
+      "processing": "Proportional downscale only; transparent pixels preserved."
+    },
+    {
+      "name": "tray",
+      "source": "public/images/items/rule-play/source/tray.png",
+      "target": "public/images/items/rule-play/tray.png",
+      "sourceDimensions": [
+        2017,
+        780
+      ],
+      "width": 800,
+      "height": 309,
+      "hasAlpha": true,
+      "processing": "Proportional downscale only; transparent pixels preserved."
+    },
+    {
+      "name": "card-white",
+      "source": "public/images/items/rule-play/source/card-white.png",
+      "target": "public/images/items/rule-play/card-white.png",
+      "sourceDimensions": [
+        1086,
+        1448
+      ],
+      "width": 640,
+      "height": 853,
+      "hasAlpha": true,
+      "processing": "Proportional downscale only; transparent pixels preserved."
+    },
+    {
+      "name": "card-yellow",
+      "source": "public/images/items/rule-play/source/card-yellow.png",
+      "target": "public/images/items/rule-play/card-yellow.png",
+      "sourceDimensions": [
+        1086,
+        1448
+      ],
+      "width": 640,
+      "height": 853,
+      "hasAlpha": true,
+      "processing": "Proportional downscale only; transparent pixels preserved."
+    }
+  ]
+}

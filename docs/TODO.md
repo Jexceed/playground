@@ -41,6 +41,10 @@ small enough to turn into a Spec Kit feature.
 
 ## P1
 
+- Observe parent-child play after the 052 art review, especially quantity-chip readability, the overhead facing figure, phonics references and pictured islands. Technical and adult visual checks do not establish child comprehension. Keep shared controls and navigation outside future picture-art styling changes.
+
+- Observe parent-child play of the 050 interactions with 051’s illustrated rule-machine and flip-card boards: whether the pictured steps can be followed with minimal reading, whether “再摆一份” conveys doubling, and whether children can explain why two flips restore a card. Technical interaction checks do not establish child comprehension.
+
 - Include 049's “下一题 / 下一组 / 再玩一遍” transitions in the next parent-child observation, especially whether a completed group clearly leads to the next group. Engineering regression and native checks are complete; child comprehension remains an observation task.
 
 - Observe parent-child play of the 048 hands-on bridge group: selecting two endpoints, choosing a board then a gap, taking back a board, and distinguishing a complete route from enough total wood. Confirm the interaction needs no extra adult explanation; engineering/native acceptance is not child-comprehension validation.

@@ -6,6 +6,8 @@ export type ActivityToken = { id: string; label: string; image: GalleryImage; so
 export type ComparisonPanel = { kind: 'dots'; label: string; count: number; columns: number }
   | { kind: 'placeValue'; label: string; tens: number; ones: number }
   | { kind: 'image'; label: string; image: GalleryImage };
+export type RuleMachineEvidence = { kind: 'ruleMachine'; start: number; add: number; multiplier: 1 | 2 };
+export type CardFlipEvidence = { kind: 'cardFlip'; initial: ('off' | 'on')[]; steps: number[] };
 export type TokenUse = "once" | "unlimited" | {kind:"counted"; limits:Record<string,number>};
 export type SlotValue =
   | { state: "unfilled" }
@@ -56,6 +58,8 @@ export type ActivityBase = {
     folding?: { folds: ("right" | "down")[]; holeRow: number; holeColumn: number };
     pyramid?: { baseTokenIds: string[]; rowSizes: number[]; choiceIds: string[] };
     evidence?: { kind: "visualComparison"; panels: ComparisonPanel[] }
+      | RuleMachineEvidence
+      | CardFlipEvidence
       | { kind: "moneyInventory"; fives: number; ones: number }
       | { kind: "rectangleSearch"; rows: number; columns: number }
       | { kind: "quantityStory"; parts: { label: string; count: number | null }[] }
@@ -157,7 +161,11 @@ export function pyramidMismatch(activity: Activity, index: number): string {
   return `${activitySlotLabel(activity, index)}还没对上。对照它下面相邻的两张图，再试试。`;
 }
 
-export function activityPromptSpeech(activity: Activity) {
+export function activityPromptSpeech(activity: Activity, phase?: string) {
+  if (activity.presentation?.evidence?.kind === 'ruleMachine') {
+    if (phase === 'ready' && activity.protocol.kind === 'learnThenTransfer') return activity.protocol.demonstration;
+    return [activity.prompt, activity.instruction, ...activity.clues].join('。').replace(/[。？！]。/g, '。');
+  }
   return [...(activity.protocol.kind === "learnThenTransfer" ? [activity.protocol.demonstration] : []),activity.prompt, activity.instruction, ...activity.clues]
     .join("。")
     .replace(/[。？！]。/g, "。");

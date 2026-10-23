@@ -1,5 +1,6 @@
 import { Volume2 } from "lucide-react";
 import { imageGallery } from "../data/imageGallery";
+import { orderStoryItems } from "../data/orderStoryAssets";
 import { publicAsset } from "../publicAsset";
 import { speak } from "../speech";
 
@@ -63,6 +64,9 @@ const tokenMap: Record<string, TokenMeta> = {
 };
 
 const phraseMap: Record<string, TokenMeta> = {
+  "胡萝卜": { label: "胡萝卜", kind: "carrot" },
+  "礼物盒": { label: "礼物盒", kind: "magicBox" },
+  "种子": { label: "种子", kind: "seed" },
   "小猫": { label: "小猫", kind: "cat" },
   "小狗": { label: "小狗", kind: "dog" },
   "小兔": { label: "小兔", kind: "rabbit" },
@@ -183,8 +187,8 @@ const phraseMap: Record<string, TokenMeta> = {
   "先拿杯子": { label: "先拿杯子", kind: "cup" },
   "先找钥匙": { label: "先找钥匙", kind: "key" },
   "先搭桥": { label: "先搭桥", kind: "bridge" },
-  "种下种子": { label: "种下种子", kind: "seed" },
-  "先浇水": { label: "先浇水", kind: "pourWater" },
+  "种下种子": { label: "种下种子", kind: "plantSeed" },
+  "先浇水": { label: "先浇水", kind: "waterSoil" },
   "先摘花": { label: "先摘花", kind: "flower" },
   "先洗手": { label: "先洗手", kind: "washHands" },
   "少了先洗手": { label: "少了先洗手", kind: "washHands" },
@@ -207,7 +211,7 @@ const phraseMap: Record<string, TokenMeta> = {
   "端空杯子过去": { label: "端空杯子过去", kind: "cup" },
   "再拿一个杯子": { label: "再拿一个杯子", kind: "cup" },
   "继续看着": { label: "继续看着", kind: "notYet" },
-  "只给空土浇水": { label: "只给空土浇水", kind: "pourWater" },
+  "只给空土浇水": { label: "只给空土浇水", kind: "waterSoil" },
   "直接等开花": { label: "直接等开花", kind: "flower" },
   "先看灯": { label: "先看灯", kind: "trafficLook" },
   "只看车停着": { label: "只看车停着", kind: "car" },
@@ -384,6 +388,33 @@ function Illustration({ kind, small = false }: { kind: string; small?: boolean }
 }
 
 function rasterForKind(kind: string) {
+  const refined: Record<string, typeof imageGallery.items.apple> = {
+    home: imageGallery.items.art052Home, magicBox: imageGallery.items.art052Gift,
+    carrot: imageGallery.items.art052Carrot, seed: imageGallery.items.art052Seed,
+    waterPuddle: imageGallery.items.art052Puddle,
+    sun: imageGallery.items.patternSun, moon: imageGallery.items.patternMoon,
+    sprout: orderStoryItems.order045_plant_sprout, flower: imageGallery.items.graphicFlower,
+    pickBlocks: orderStoryItems.order045_tower_pick,
+    fallenBlocks: orderStoryItems.order045_tower_fallen,
+    fishWater: orderStoryItems.order045_fish_swim,
+    pourWater: imageGallery.items.drinkingPour,
+    waterSoil: orderStoryItems.order045_plant_waterSoil,
+    plantSeed: orderStoryItems.order045_plant_sow,
+    catCream: imageGallery.items.logic046Evidence_cakeCat,
+    dogSleep: imageGallery.items.logic046Evidence_cakeDog,
+    rabbitCarrot: imageGallery.items.logic046Evidence_cakeRabbit,
+    catKitchen: imageGallery.items.logic046Evidence_weakCatContext,
+    dogMud: imageGallery.items.logic046Evidence_mudDog,
+    cleanCat: imageGallery.characters.cat,
+    fallenCup: imageGallery.items.logic046Evidence_spillCup,
+    pollenPaw: imageGallery.items.logic046Evidence_flowerPollen,
+    dogRoom: imageGallery.items.logic046Evidence_weakDogContext,
+    stone: imageGallery.items.logic046Daily_stone,
+    mixedToyBox: orderStoryItems.order045_blocks_mixedBox,
+    classifiedToyBoxes: orderStoryItems.order045_sorting_done,
+    sortTwoToys: orderStoryItems.order045_sorting_sorted,
+  };
+  if (refined[kind]) return refined[kind];
   if (kind === "redSquare") return imageGallery.items.thinkingRedSquare;
   if (kind === "yellowSquare") return imageGallery.items.thinkingYellowSquare;
   if (kind === "soilPot") return imageGallery.items.soilPot;
