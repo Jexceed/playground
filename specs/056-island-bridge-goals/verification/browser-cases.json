@@ -1,0 +1,1127 @@
+[
+  {
+    "action": "初始现成桥",
+    "edges": [
+      {
+        "count": 1,
+        "id": "e0"
+      },
+      {
+        "count": 1,
+        "id": "e1"
+      },
+      {
+        "count": 0,
+        "id": "e2"
+      },
+      {
+        "count": 0,
+        "id": "e3"
+      }
+    ],
+    "goals": [
+      {
+        "current": 1,
+        "empty": 2,
+        "extra": 0,
+        "filled": 1,
+        "id": "island-goal-n0",
+        "label": "还差2座",
+        "state": "short",
+        "target": 3
+      },
+      {
+        "current": 2,
+        "empty": 1,
+        "extra": 0,
+        "filled": 2,
+        "id": "island-goal-n1",
+        "label": "还差1座",
+        "state": "short",
+        "target": 3
+      },
+      {
+        "current": 1,
+        "empty": 1,
+        "extra": 0,
+        "filled": 1,
+        "id": "island-goal-n2",
+        "label": "还差1座",
+        "state": "short",
+        "target": 2
+      },
+      {
+        "current": 0,
+        "empty": 2,
+        "extra": 0,
+        "filled": 0,
+        "id": "island-goal-n3",
+        "label": "还差2座",
+        "state": "short",
+        "target": 2
+      }
+    ],
+    "phase": "respond",
+    "primary": "rgb(65, 125, 95)",
+    "status": "",
+    "viewport": 1280,
+    "width": 1280
+  },
+  {
+    "action": "加一座双端填格",
+    "edges": [
+      {
+        "count": 2,
+        "id": "e0"
+      },
+      {
+        "count": 1,
+        "id": "e1"
+      },
+      {
+        "count": 0,
+        "id": "e2"
+      },
+      {
+        "count": 0,
+        "id": "e3"
+      }
+    ],
+    "goals": [
+      {
+        "current": 2,
+        "empty": 1,
+        "extra": 0,
+        "filled": 2,
+        "id": "island-goal-n0",
+        "label": "还差1座",
+        "state": "short",
+        "target": 3
+      },
+      {
+        "current": 3,
+        "empty": 0,
+        "extra": 0,
+        "filled": 3,
+        "id": "island-goal-n1",
+        "label": "刚好",
+        "state": "exact",
+        "target": 3
+      },
+      {
+        "current": 1,
+        "empty": 1,
+        "extra": 0,
+        "filled": 1,
+        "id": "island-goal-n2",
+        "label": "还差1座",
+        "state": "short",
+        "target": 2
+      },
+      {
+        "current": 0,
+        "empty": 2,
+        "extra": 0,
+        "filled": 0,
+        "id": "island-goal-n3",
+        "label": "还差2座",
+        "state": "short",
+        "target": 2
+      }
+    ],
+    "phase": "respond",
+    "primary": "rgb(65, 125, 95)",
+    "status": "",
+    "viewport": 1280,
+    "width": 1280
+  },
+  {
+    "action": "A岛刚好",
+    "edges": [
+      {
+        "count": 2,
+        "id": "e0"
+      },
+      {
+        "count": 1,
+        "id": "e1"
+      },
+      {
+        "count": 0,
+        "id": "e2"
+      },
+      {
+        "count": 1,
+        "id": "e3"
+      }
+    ],
+    "goals": [
+      {
+        "current": 3,
+        "empty": 0,
+        "extra": 0,
+        "filled": 3,
+        "id": "island-goal-n0",
+        "label": "刚好",
+        "state": "exact",
+        "target": 3
+      },
+      {
+        "current": 3,
+        "empty": 0,
+        "extra": 0,
+        "filled": 3,
+        "id": "island-goal-n1",
+        "label": "刚好",
+        "state": "exact",
+        "target": 3
+      },
+      {
+        "current": 1,
+        "empty": 1,
+        "extra": 0,
+        "filled": 1,
+        "id": "island-goal-n2",
+        "label": "还差1座",
+        "state": "short",
+        "target": 2
+      },
+      {
+        "current": 1,
+        "empty": 1,
+        "extra": 0,
+        "filled": 1,
+        "id": "island-goal-n3",
+        "label": "还差1座",
+        "state": "short",
+        "target": 2
+      }
+    ],
+    "phase": "respond",
+    "primary": "rgb(65, 125, 95)",
+    "status": "",
+    "viewport": 1280,
+    "width": 1280
+  },
+  {
+    "action": "复现用户图中超额状态",
+    "edges": [
+      {
+        "count": 2,
+        "id": "e0"
+      },
+      {
+        "count": 1,
+        "id": "e1"
+      },
+      {
+        "count": 1,
+        "id": "e2"
+      },
+      {
+        "count": 2,
+        "id": "e3"
+      }
+    ],
+    "goals": [
+      {
+        "current": 4,
+        "empty": 0,
+        "extra": 1,
+        "filled": 3,
+        "id": "island-goal-n0",
+        "label": "多1座",
+        "state": "over",
+        "target": 3
+      },
+      {
+        "current": 3,
+        "empty": 0,
+        "extra": 0,
+        "filled": 3,
+        "id": "island-goal-n1",
+        "label": "刚好",
+        "state": "exact",
+        "target": 3
+      },
+      {
+        "current": 2,
+        "empty": 0,
+        "extra": 0,
+        "filled": 2,
+        "id": "island-goal-n2",
+        "label": "刚好",
+        "state": "exact",
+        "target": 2
+      },
+      {
+        "current": 3,
+        "empty": 0,
+        "extra": 1,
+        "filled": 2,
+        "id": "island-goal-n3",
+        "label": "多1座",
+        "state": "over",
+        "target": 2
+      }
+    ],
+    "phase": "respond",
+    "primary": "rgb(65, 125, 95)",
+    "status": "",
+    "viewport": 1280,
+    "width": 1280
+  },
+  {
+    "action": "撤销后双端恢复",
+    "edges": [
+      {
+        "count": 2,
+        "id": "e0"
+      },
+      {
+        "count": 1,
+        "id": "e1"
+      },
+      {
+        "count": 0,
+        "id": "e2"
+      },
+      {
+        "count": 2,
+        "id": "e3"
+      }
+    ],
+    "goals": [
+      {
+        "current": 4,
+        "empty": 0,
+        "extra": 1,
+        "filled": 3,
+        "id": "island-goal-n0",
+        "label": "多1座",
+        "state": "over",
+        "target": 3
+      },
+      {
+        "current": 3,
+        "empty": 0,
+        "extra": 0,
+        "filled": 3,
+        "id": "island-goal-n1",
+        "label": "刚好",
+        "state": "exact",
+        "target": 3
+      },
+      {
+        "current": 1,
+        "empty": 1,
+        "extra": 0,
+        "filled": 1,
+        "id": "island-goal-n2",
+        "label": "还差1座",
+        "state": "short",
+        "target": 2
+      },
+      {
+        "current": 2,
+        "empty": 0,
+        "extra": 0,
+        "filled": 2,
+        "id": "island-goal-n3",
+        "label": "刚好",
+        "state": "exact",
+        "target": 2
+      }
+    ],
+    "phase": "respond",
+    "primary": "rgb(65, 125, 95)",
+    "status": "",
+    "viewport": 1280,
+    "width": 1280
+  },
+  {
+    "action": "清空保留现成桥",
+    "edges": [
+      {
+        "count": 1,
+        "id": "e0"
+      },
+      {
+        "count": 1,
+        "id": "e1"
+      },
+      {
+        "count": 0,
+        "id": "e2"
+      },
+      {
+        "count": 0,
+        "id": "e3"
+      }
+    ],
+    "goals": [
+      {
+        "current": 1,
+        "empty": 2,
+        "extra": 0,
+        "filled": 1,
+        "id": "island-goal-n0",
+        "label": "还差2座",
+        "state": "short",
+        "target": 3
+      },
+      {
+        "current": 2,
+        "empty": 1,
+        "extra": 0,
+        "filled": 2,
+        "id": "island-goal-n1",
+        "label": "还差1座",
+        "state": "short",
+        "target": 3
+      },
+      {
+        "current": 1,
+        "empty": 1,
+        "extra": 0,
+        "filled": 1,
+        "id": "island-goal-n2",
+        "label": "还差1座",
+        "state": "short",
+        "target": 2
+      },
+      {
+        "current": 0,
+        "empty": 2,
+        "extra": 0,
+        "filled": 0,
+        "id": "island-goal-n3",
+        "label": "还差2座",
+        "state": "short",
+        "target": 2
+      }
+    ],
+    "phase": "respond",
+    "primary": "rgb(65, 125, 95)",
+    "status": "",
+    "viewport": 1280,
+    "width": 1280
+  },
+  {
+    "round": 1,
+    "wrongStatus": "看看每个岛的小格：空着的还要搭桥，红色的是多出来的桥。",
+    "edges": [
+      {
+        "count": 2,
+        "id": "e0"
+      },
+      {
+        "count": 1,
+        "id": "e1"
+      },
+      {
+        "count": 1,
+        "id": "e2"
+      },
+      {
+        "count": 1,
+        "id": "e3"
+      }
+    ],
+    "goals": [
+      {
+        "current": 3,
+        "empty": 0,
+        "extra": 0,
+        "filled": 3,
+        "id": "island-goal-n0",
+        "label": "刚好",
+        "state": "exact",
+        "target": 3
+      },
+      {
+        "current": 3,
+        "empty": 0,
+        "extra": 0,
+        "filled": 3,
+        "id": "island-goal-n1",
+        "label": "刚好",
+        "state": "exact",
+        "target": 3
+      },
+      {
+        "current": 2,
+        "empty": 0,
+        "extra": 0,
+        "filled": 2,
+        "id": "island-goal-n2",
+        "label": "刚好",
+        "state": "exact",
+        "target": 2
+      },
+      {
+        "current": 2,
+        "empty": 0,
+        "extra": 0,
+        "filled": 2,
+        "id": "island-goal-n3",
+        "label": "刚好",
+        "state": "exact",
+        "target": 2
+      }
+    ],
+    "phase": "complete",
+    "primary": "rgb(65, 125, 95)",
+    "status": "每个岛的小格都填满了，没有多搭，所有岛也连在一起了。",
+    "viewport": 1280,
+    "width": 1280
+  },
+  {
+    "round": 2,
+    "wrongStatus": "看看每个岛的小格：空着的还要搭桥，红色的是多出来的桥。",
+    "edges": [
+      {
+        "count": 1,
+        "id": "e0"
+      },
+      {
+        "count": 2,
+        "id": "e1"
+      },
+      {
+        "count": 1,
+        "id": "e2"
+      },
+      {
+        "count": 1,
+        "id": "e3"
+      }
+    ],
+    "goals": [
+      {
+        "current": 2,
+        "empty": 0,
+        "extra": 0,
+        "filled": 2,
+        "id": "island-goal-n0",
+        "label": "刚好",
+        "state": "exact",
+        "target": 2
+      },
+      {
+        "current": 3,
+        "empty": 0,
+        "extra": 0,
+        "filled": 3,
+        "id": "island-goal-n1",
+        "label": "刚好",
+        "state": "exact",
+        "target": 3
+      },
+      {
+        "current": 3,
+        "empty": 0,
+        "extra": 0,
+        "filled": 3,
+        "id": "island-goal-n2",
+        "label": "刚好",
+        "state": "exact",
+        "target": 3
+      },
+      {
+        "current": 2,
+        "empty": 0,
+        "extra": 0,
+        "filled": 2,
+        "id": "island-goal-n3",
+        "label": "刚好",
+        "state": "exact",
+        "target": 2
+      }
+    ],
+    "phase": "complete",
+    "primary": "rgb(65, 125, 95)",
+    "status": "每个岛的小格都填满了，没有多搭，所有岛也连在一起了。",
+    "viewport": 1280,
+    "width": 1280
+  },
+  {
+    "round": 3,
+    "wrongStatus": "看看每个岛的小格：空着的还要搭桥，红色的是多出来的桥。",
+    "edges": [
+      {
+        "count": 1,
+        "id": "e0"
+      },
+      {
+        "count": 1,
+        "id": "e1"
+      },
+      {
+        "count": 2,
+        "id": "e2"
+      },
+      {
+        "count": 1,
+        "id": "e3"
+      }
+    ],
+    "goals": [
+      {
+        "current": 2,
+        "empty": 0,
+        "extra": 0,
+        "filled": 2,
+        "id": "island-goal-n0",
+        "label": "刚好",
+        "state": "exact",
+        "target": 2
+      },
+      {
+        "current": 2,
+        "empty": 0,
+        "extra": 0,
+        "filled": 2,
+        "id": "island-goal-n1",
+        "label": "刚好",
+        "state": "exact",
+        "target": 2
+      },
+      {
+        "current": 3,
+        "empty": 0,
+        "extra": 0,
+        "filled": 3,
+        "id": "island-goal-n2",
+        "label": "刚好",
+        "state": "exact",
+        "target": 3
+      },
+      {
+        "current": 3,
+        "empty": 0,
+        "extra": 0,
+        "filled": 3,
+        "id": "island-goal-n3",
+        "label": "刚好",
+        "state": "exact",
+        "target": 3
+      }
+    ],
+    "phase": "complete",
+    "primary": "rgb(65, 125, 95)",
+    "status": "每个岛的小格都填满了，没有多搭，所有岛也连在一起了。",
+    "viewport": 1280,
+    "width": 1280
+  },
+  {
+    "round": 4,
+    "wrongStatus": "看看每个岛的小格：空着的还要搭桥，红色的是多出来的桥。",
+    "edges": [
+      {
+        "count": 2,
+        "id": "e0"
+      },
+      {
+        "count": 1,
+        "id": "e1"
+      },
+      {
+        "count": 1,
+        "id": "e2"
+      },
+      {
+        "count": 1,
+        "id": "e3"
+      }
+    ],
+    "goals": [
+      {
+        "current": 3,
+        "empty": 0,
+        "extra": 0,
+        "filled": 3,
+        "id": "island-goal-n0",
+        "label": "刚好",
+        "state": "exact",
+        "target": 3
+      },
+      {
+        "current": 3,
+        "empty": 0,
+        "extra": 0,
+        "filled": 3,
+        "id": "island-goal-n1",
+        "label": "刚好",
+        "state": "exact",
+        "target": 3
+      },
+      {
+        "current": 2,
+        "empty": 0,
+        "extra": 0,
+        "filled": 2,
+        "id": "island-goal-n2",
+        "label": "刚好",
+        "state": "exact",
+        "target": 2
+      },
+      {
+        "current": 2,
+        "empty": 0,
+        "extra": 0,
+        "filled": 2,
+        "id": "island-goal-n3",
+        "label": "刚好",
+        "state": "exact",
+        "target": 2
+      }
+    ],
+    "phase": "complete",
+    "primary": "rgb(65, 125, 95)",
+    "status": "每个岛的小格都填满了，没有多搭，所有岛也连在一起了。",
+    "viewport": 1280,
+    "width": 1280
+  },
+  {
+    "round": 5,
+    "wrongStatus": "看看每个岛的小格：空着的还要搭桥，红色的是多出来的桥。",
+    "edges": [
+      {
+        "count": 1,
+        "id": "e0"
+      },
+      {
+        "count": 2,
+        "id": "e1"
+      },
+      {
+        "count": 1,
+        "id": "e2"
+      },
+      {
+        "count": 1,
+        "id": "e3"
+      }
+    ],
+    "goals": [
+      {
+        "current": 2,
+        "empty": 0,
+        "extra": 0,
+        "filled": 2,
+        "id": "island-goal-n0",
+        "label": "刚好",
+        "state": "exact",
+        "target": 2
+      },
+      {
+        "current": 3,
+        "empty": 0,
+        "extra": 0,
+        "filled": 3,
+        "id": "island-goal-n1",
+        "label": "刚好",
+        "state": "exact",
+        "target": 3
+      },
+      {
+        "current": 3,
+        "empty": 0,
+        "extra": 0,
+        "filled": 3,
+        "id": "island-goal-n2",
+        "label": "刚好",
+        "state": "exact",
+        "target": 3
+      },
+      {
+        "current": 2,
+        "empty": 0,
+        "extra": 0,
+        "filled": 2,
+        "id": "island-goal-n3",
+        "label": "刚好",
+        "state": "exact",
+        "target": 2
+      }
+    ],
+    "phase": "complete",
+    "primary": "rgb(65, 125, 95)",
+    "status": "每个岛的小格都填满了，没有多搭，所有岛也连在一起了。",
+    "viewport": 1280,
+    "width": 1280
+  },
+  {
+    "round": 6,
+    "wrongStatus": "看看每个岛的小格：空着的还要搭桥，红色的是多出来的桥。",
+    "edges": [
+      {
+        "count": 1,
+        "id": "e0"
+      },
+      {
+        "count": 1,
+        "id": "e1"
+      },
+      {
+        "count": 2,
+        "id": "e2"
+      },
+      {
+        "count": 1,
+        "id": "e3"
+      }
+    ],
+    "goals": [
+      {
+        "current": 2,
+        "empty": 0,
+        "extra": 0,
+        "filled": 2,
+        "id": "island-goal-n0",
+        "label": "刚好",
+        "state": "exact",
+        "target": 2
+      },
+      {
+        "current": 2,
+        "empty": 0,
+        "extra": 0,
+        "filled": 2,
+        "id": "island-goal-n1",
+        "label": "刚好",
+        "state": "exact",
+        "target": 2
+      },
+      {
+        "current": 3,
+        "empty": 0,
+        "extra": 0,
+        "filled": 3,
+        "id": "island-goal-n2",
+        "label": "刚好",
+        "state": "exact",
+        "target": 3
+      },
+      {
+        "current": 3,
+        "empty": 0,
+        "extra": 0,
+        "filled": 3,
+        "id": "island-goal-n3",
+        "label": "刚好",
+        "state": "exact",
+        "target": 3
+      }
+    ],
+    "phase": "complete",
+    "primary": "rgb(65, 125, 95)",
+    "status": "每个岛的小格都填满了，没有多搭，所有岛也连在一起了。",
+    "viewport": 1280,
+    "width": 1280
+  },
+  {
+    "round": 7,
+    "wrongStatus": "看看每个岛的小格：空着的还要搭桥，红色的是多出来的桥。",
+    "edges": [
+      {
+        "count": 2,
+        "id": "e0"
+      },
+      {
+        "count": 1,
+        "id": "e1"
+      },
+      {
+        "count": 1,
+        "id": "e2"
+      },
+      {
+        "count": 1,
+        "id": "e3"
+      },
+      {
+        "count": 1,
+        "id": "e4"
+      },
+      {
+        "count": 1,
+        "id": "e5"
+      },
+      {
+        "count": 0,
+        "id": "middle"
+      }
+    ],
+    "goals": [
+      {
+        "current": 3,
+        "empty": 0,
+        "extra": 0,
+        "filled": 3,
+        "id": "island-goal-n0",
+        "label": "刚好",
+        "state": "exact",
+        "target": 3
+      },
+      {
+        "current": 3,
+        "empty": 0,
+        "extra": 0,
+        "filled": 3,
+        "id": "island-goal-n1",
+        "label": "刚好",
+        "state": "exact",
+        "target": 3
+      },
+      {
+        "current": 2,
+        "empty": 0,
+        "extra": 0,
+        "filled": 2,
+        "id": "island-goal-n2",
+        "label": "刚好",
+        "state": "exact",
+        "target": 2
+      },
+      {
+        "current": 2,
+        "empty": 0,
+        "extra": 0,
+        "filled": 2,
+        "id": "island-goal-n3",
+        "label": "刚好",
+        "state": "exact",
+        "target": 2
+      },
+      {
+        "current": 2,
+        "empty": 0,
+        "extra": 0,
+        "filled": 2,
+        "id": "island-goal-n4",
+        "label": "刚好",
+        "state": "exact",
+        "target": 2
+      },
+      {
+        "current": 2,
+        "empty": 0,
+        "extra": 0,
+        "filled": 2,
+        "id": "island-goal-n5",
+        "label": "刚好",
+        "state": "exact",
+        "target": 2
+      }
+    ],
+    "phase": "complete",
+    "primary": "rgb(65, 125, 95)",
+    "status": "每个岛的小格都填满了，没有多搭，所有岛也连在一起了。",
+    "viewport": 1280,
+    "width": 1280
+  },
+  {
+    "round": 8,
+    "wrongStatus": "看看每个岛的小格：空着的还要搭桥，红色的是多出来的桥。",
+    "edges": [
+      {
+        "count": 1,
+        "id": "e0"
+      },
+      {
+        "count": 2,
+        "id": "e1"
+      },
+      {
+        "count": 1,
+        "id": "e2"
+      },
+      {
+        "count": 1,
+        "id": "e3"
+      },
+      {
+        "count": 1,
+        "id": "e4"
+      },
+      {
+        "count": 1,
+        "id": "e5"
+      },
+      {
+        "count": 0,
+        "id": "middle"
+      }
+    ],
+    "goals": [
+      {
+        "current": 2,
+        "empty": 0,
+        "extra": 0,
+        "filled": 2,
+        "id": "island-goal-n0",
+        "label": "刚好",
+        "state": "exact",
+        "target": 2
+      },
+      {
+        "current": 3,
+        "empty": 0,
+        "extra": 0,
+        "filled": 3,
+        "id": "island-goal-n1",
+        "label": "刚好",
+        "state": "exact",
+        "target": 3
+      },
+      {
+        "current": 3,
+        "empty": 0,
+        "extra": 0,
+        "filled": 3,
+        "id": "island-goal-n2",
+        "label": "刚好",
+        "state": "exact",
+        "target": 3
+      },
+      {
+        "current": 2,
+        "empty": 0,
+        "extra": 0,
+        "filled": 2,
+        "id": "island-goal-n3",
+        "label": "刚好",
+        "state": "exact",
+        "target": 2
+      },
+      {
+        "current": 2,
+        "empty": 0,
+        "extra": 0,
+        "filled": 2,
+        "id": "island-goal-n4",
+        "label": "刚好",
+        "state": "exact",
+        "target": 2
+      },
+      {
+        "current": 2,
+        "empty": 0,
+        "extra": 0,
+        "filled": 2,
+        "id": "island-goal-n5",
+        "label": "刚好",
+        "state": "exact",
+        "target": 2
+      }
+    ],
+    "phase": "complete",
+    "primary": "rgb(65, 125, 95)",
+    "status": "每个岛的小格都填满了，没有多搭，所有岛也连在一起了。",
+    "viewport": 1280,
+    "width": 1280
+  },
+  {
+    "round": 9,
+    "wrongStatus": "看看每个岛的小格：空着的还要搭桥，红色的是多出来的桥。",
+    "edges": [
+      {
+        "count": 1,
+        "id": "e0"
+      },
+      {
+        "count": 1,
+        "id": "e1"
+      },
+      {
+        "count": 2,
+        "id": "e2"
+      },
+      {
+        "count": 1,
+        "id": "e3"
+      },
+      {
+        "count": 1,
+        "id": "e4"
+      },
+      {
+        "count": 1,
+        "id": "e5"
+      },
+      {
+        "count": 0,
+        "id": "middle"
+      }
+    ],
+    "goals": [
+      {
+        "current": 2,
+        "empty": 0,
+        "extra": 0,
+        "filled": 2,
+        "id": "island-goal-n0",
+        "label": "刚好",
+        "state": "exact",
+        "target": 2
+      },
+      {
+        "current": 2,
+        "empty": 0,
+        "extra": 0,
+        "filled": 2,
+        "id": "island-goal-n1",
+        "label": "刚好",
+        "state": "exact",
+        "target": 2
+      },
+      {
+        "current": 3,
+        "empty": 0,
+        "extra": 0,
+        "filled": 3,
+        "id": "island-goal-n2",
+        "label": "刚好",
+        "state": "exact",
+        "target": 3
+      },
+      {
+        "current": 3,
+        "empty": 0,
+        "extra": 0,
+        "filled": 3,
+        "id": "island-goal-n3",
+        "label": "刚好",
+        "state": "exact",
+        "target": 3
+      },
+      {
+        "current": 2,
+        "empty": 0,
+        "extra": 0,
+        "filled": 2,
+        "id": "island-goal-n4",
+        "label": "刚好",
+        "state": "exact",
+        "target": 2
+      },
+      {
+        "current": 2,
+        "empty": 0,
+        "extra": 0,
+        "filled": 2,
+        "id": "island-goal-n5",
+        "label": "刚好",
+        "state": "exact",
+        "target": 2
+      }
+    ],
+    "phase": "complete",
+    "primary": "rgb(65, 125, 95)",
+    "status": "每个岛的小格都填满了，没有多搭，所有岛也连在一起了。",
+    "viewport": 1280,
+    "width": 1280
+  }
+]

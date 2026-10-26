@@ -1,0 +1,387 @@
+{
+  "lines": 4224,
+  "entries": 4224,
+  "mismatch": 0,
+  "failures": [],
+  "fallback": false,
+  "cases": [
+    {
+      "id": "explore-multi-agent-movement-1",
+      "prompt": "红色从1出发，每次向右走1格。蓝色从9出发，每次向左走1格。同时走2次。先摆红色位置，再摆蓝色位置。选一位朋友，再点数字格，把它放到走完的位置。",
+      "model": {
+        "kind": "numberWalk",
+        "min": 0,
+        "max": 11,
+        "turns": 2,
+        "actors": [
+          {
+            "id": "red",
+            "slotId": "slot-0",
+            "start": 1,
+            "delta": 1
+          },
+          {
+            "id": "blue",
+            "slotId": "slot-1",
+            "start": 9,
+            "delta": -1
+          }
+        ]
+      },
+      "clips": [
+        {
+          "text": "红色从1出发，每次向右走1格。蓝色从9出发，每次向左走1格。同时走2次。先摆红色位置，再摆蓝色位置。选一位朋友，再点数字格，把它放到走完的位置。",
+          "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%BA%A2%E8%89%B2%E4%BB%8E1%E5%87%BA%E5%8F%91-%E6%AF%8F%E6%AC%A1%E5%90%91%E5%8F%B3%E8%B5%B01%E6%A0%BC-%E8%93%9D%E8%89%B2%E4%BB%8E9%E5%87%BA%E5%8F%91-%E6%AF%8F%E6%AC%A1%E5%90%91%E5%B7%A6%E8%B5%B01%E6%A0%BC-%E5%90%8C%E6%97%B6%E8%B5%B02%E6%AC%A1-%E5%85%88%E6%91%86%E7%BA%A2%E8%89%B2%E4%BD%8D%E7%BD%AE-%E5%86%8D%E6%91%86%E8%93%9D%E8%89%B2%E4%BD%8D%E7%BD%AE-%E9%80%89%E4%B8%80%E4%BD%8D%E6%9C%8B%E5%8F%8B-%E5%86%8D%E7%82%B9%E6%95%B0%E5%AD%97%E6%A0%BC-%E6%8A%8A%E5%AE%83%E6%94%BE%E5%88%B0%E8%B5%B0%E5%AE%8C%E7%9A%84%E4%BD%8D%E7%BD%AE.mp3"
+        },
+        {
+          "text": "红色从1出发，每次向右走1格。",
+          "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E7%BA%A2%E8%89%B2%E4%BB%8E1%E5%87%BA%E5%8F%91-%E6%AF%8F%E6%AC%A1%E5%90%91%E5%8F%B3%E8%B5%B01%E6%A0%BC.mp3"
+        },
+        {
+          "text": "蓝色从9出发，每次向左走1格。",
+          "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E8%93%9D%E8%89%B2%E4%BB%8E9%E5%87%BA%E5%8F%91-%E6%AF%8F%E6%AC%A1%E5%90%91%E5%B7%A6%E8%B5%B01%E6%A0%BC.mp3"
+        },
+        {
+          "text": "同时走2次。先摆红色位置，再摆蓝色位置。",
+          "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E5%90%8C%E6%97%B6%E8%B5%B02%E6%AC%A1-%E5%85%88%E6%91%86%E7%BA%A2%E8%89%B2%E4%BD%8D%E7%BD%AE-%E5%86%8D%E6%91%86%E8%93%9D%E8%89%B2%E4%BD%8D%E7%BD%AE.mp3"
+        }
+      ]
+    },
+    {
+      "id": "explore-multi-agent-movement-2",
+      "prompt": "红色从2出发，每次向右走1格。蓝色从10出发，每次向左走1格。同时走2次。先摆红色位置，再摆蓝色位置。选一位朋友，再点数字格，把它放到走完的位置。",
+      "model": {
+        "kind": "numberWalk",
+        "min": 0,
+        "max": 11,
+        "turns": 2,
+        "actors": [
+          {
+            "id": "red",
+            "slotId": "slot-0",
+            "start": 2,
+            "delta": 1
+          },
+          {
+            "id": "blue",
+            "slotId": "slot-1",
+            "start": 10,
+            "delta": -1
+          }
+        ]
+      },
+      "clips": [
+        {
+          "text": "红色从2出发，每次向右走1格。蓝色从10出发，每次向左走1格。同时走2次。先摆红色位置，再摆蓝色位置。选一位朋友，再点数字格，把它放到走完的位置。",
+          "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%BA%A2%E8%89%B2%E4%BB%8E2%E5%87%BA%E5%8F%91-%E6%AF%8F%E6%AC%A1%E5%90%91%E5%8F%B3%E8%B5%B01%E6%A0%BC-%E8%93%9D%E8%89%B2%E4%BB%8E10%E5%87%BA%E5%8F%91-%E6%AF%8F%E6%AC%A1%E5%90%91%E5%B7%A6%E8%B5%B01%E6%A0%BC-%E5%90%8C%E6%97%B6%E8%B5%B02%E6%AC%A1-%E5%85%88%E6%91%86%E7%BA%A2%E8%89%B2%E4%BD%8D%E7%BD%AE-%E5%86%8D%E6%91%86%E8%93%9D%E8%89%B2%E4%BD%8D%E7%BD%AE-%E9%80%89%E4%B8%80%E4%BD%8D%E6%9C%8B%E5%8F%8B-%E5%86%8D%E7%82%B9%E6%95%B0%E5%AD%97%E6%A0%BC-%E6%8A%8A%E5%AE%83%E6%94%BE%E5%88%B0%E8%B5%B0%E5%AE%8C%E7%9A%84%E4%BD%8D%E7%BD%AE.mp3"
+        },
+        {
+          "text": "红色从2出发，每次向右走1格。",
+          "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E7%BA%A2%E8%89%B2%E4%BB%8E2%E5%87%BA%E5%8F%91-%E6%AF%8F%E6%AC%A1%E5%90%91%E5%8F%B3%E8%B5%B01%E6%A0%BC.mp3"
+        },
+        {
+          "text": "蓝色从10出发，每次向左走1格。",
+          "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E8%93%9D%E8%89%B2%E4%BB%8E10%E5%87%BA%E5%8F%91-%E6%AF%8F%E6%AC%A1%E5%90%91%E5%B7%A6%E8%B5%B01%E6%A0%BC.mp3"
+        },
+        {
+          "text": "同时走2次。先摆红色位置，再摆蓝色位置。",
+          "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E5%90%8C%E6%97%B6%E8%B5%B02%E6%AC%A1-%E5%85%88%E6%91%86%E7%BA%A2%E8%89%B2%E4%BD%8D%E7%BD%AE-%E5%86%8D%E6%91%86%E8%93%9D%E8%89%B2%E4%BD%8D%E7%BD%AE.mp3"
+        }
+      ]
+    },
+    {
+      "id": "explore-multi-agent-movement-3",
+      "prompt": "红色从3出发，每次向右走1格。蓝色从11出发，每次向左走1格。同时走2次。先摆红色位置，再摆蓝色位置。选一位朋友，再点数字格，把它放到走完的位置。",
+      "model": {
+        "kind": "numberWalk",
+        "min": 0,
+        "max": 11,
+        "turns": 2,
+        "actors": [
+          {
+            "id": "red",
+            "slotId": "slot-0",
+            "start": 3,
+            "delta": 1
+          },
+          {
+            "id": "blue",
+            "slotId": "slot-1",
+            "start": 11,
+            "delta": -1
+          }
+        ]
+      },
+      "clips": [
+        {
+          "text": "红色从3出发，每次向右走1格。蓝色从11出发，每次向左走1格。同时走2次。先摆红色位置，再摆蓝色位置。选一位朋友，再点数字格，把它放到走完的位置。",
+          "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%BA%A2%E8%89%B2%E4%BB%8E3%E5%87%BA%E5%8F%91-%E6%AF%8F%E6%AC%A1%E5%90%91%E5%8F%B3%E8%B5%B01%E6%A0%BC-%E8%93%9D%E8%89%B2%E4%BB%8E11%E5%87%BA%E5%8F%91-%E6%AF%8F%E6%AC%A1%E5%90%91%E5%B7%A6%E8%B5%B01%E6%A0%BC-%E5%90%8C%E6%97%B6%E8%B5%B02%E6%AC%A1-%E5%85%88%E6%91%86%E7%BA%A2%E8%89%B2%E4%BD%8D%E7%BD%AE-%E5%86%8D%E6%91%86%E8%93%9D%E8%89%B2%E4%BD%8D%E7%BD%AE-%E9%80%89%E4%B8%80%E4%BD%8D%E6%9C%8B%E5%8F%8B-%E5%86%8D%E7%82%B9%E6%95%B0%E5%AD%97%E6%A0%BC-%E6%8A%8A%E5%AE%83%E6%94%BE%E5%88%B0%E8%B5%B0%E5%AE%8C%E7%9A%84%E4%BD%8D%E7%BD%AE.mp3"
+        },
+        {
+          "text": "红色从3出发，每次向右走1格。",
+          "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E7%BA%A2%E8%89%B2%E4%BB%8E3%E5%87%BA%E5%8F%91-%E6%AF%8F%E6%AC%A1%E5%90%91%E5%8F%B3%E8%B5%B01%E6%A0%BC.mp3"
+        },
+        {
+          "text": "蓝色从11出发，每次向左走1格。",
+          "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E8%93%9D%E8%89%B2%E4%BB%8E11%E5%87%BA%E5%8F%91-%E6%AF%8F%E6%AC%A1%E5%90%91%E5%B7%A6%E8%B5%B01%E6%A0%BC.mp3"
+        },
+        {
+          "text": "同时走2次。先摆红色位置，再摆蓝色位置。",
+          "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E5%90%8C%E6%97%B6%E8%B5%B02%E6%AC%A1-%E5%85%88%E6%91%86%E7%BA%A2%E8%89%B2%E4%BD%8D%E7%BD%AE-%E5%86%8D%E6%91%86%E8%93%9D%E8%89%B2%E4%BD%8D%E7%BD%AE.mp3"
+        }
+      ]
+    },
+    {
+      "id": "explore-multi-agent-movement-4",
+      "prompt": "红色从1出发，每次向右走1格。蓝色从9出发，每次向左走2格。同时走3次。先摆红色位置，再摆蓝色位置。选一位朋友，再点数字格，把它放到走完的位置。",
+      "model": {
+        "kind": "numberWalk",
+        "min": 0,
+        "max": 11,
+        "turns": 3,
+        "actors": [
+          {
+            "id": "red",
+            "slotId": "slot-0",
+            "start": 1,
+            "delta": 1
+          },
+          {
+            "id": "blue",
+            "slotId": "slot-1",
+            "start": 9,
+            "delta": -2
+          }
+        ]
+      },
+      "clips": [
+        {
+          "text": "红色从1出发，每次向右走1格。蓝色从9出发，每次向左走2格。同时走3次。先摆红色位置，再摆蓝色位置。选一位朋友，再点数字格，把它放到走完的位置。",
+          "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%BA%A2%E8%89%B2%E4%BB%8E1%E5%87%BA%E5%8F%91-%E6%AF%8F%E6%AC%A1%E5%90%91%E5%8F%B3%E8%B5%B01%E6%A0%BC-%E8%93%9D%E8%89%B2%E4%BB%8E9%E5%87%BA%E5%8F%91-%E6%AF%8F%E6%AC%A1%E5%90%91%E5%B7%A6%E8%B5%B02%E6%A0%BC-%E5%90%8C%E6%97%B6%E8%B5%B03%E6%AC%A1-%E5%85%88%E6%91%86%E7%BA%A2%E8%89%B2%E4%BD%8D%E7%BD%AE-%E5%86%8D%E6%91%86%E8%93%9D%E8%89%B2%E4%BD%8D%E7%BD%AE-%E9%80%89%E4%B8%80%E4%BD%8D%E6%9C%8B%E5%8F%8B-%E5%86%8D%E7%82%B9%E6%95%B0%E5%AD%97%E6%A0%BC-%E6%8A%8A%E5%AE%83%E6%94%BE%E5%88%B0%E8%B5%B0%E5%AE%8C%E7%9A%84%E4%BD%8D%E7%BD%AE.mp3"
+        },
+        {
+          "text": "红色从1出发，每次向右走1格。",
+          "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E7%BA%A2%E8%89%B2%E4%BB%8E1%E5%87%BA%E5%8F%91-%E6%AF%8F%E6%AC%A1%E5%90%91%E5%8F%B3%E8%B5%B01%E6%A0%BC.mp3"
+        },
+        {
+          "text": "蓝色从9出发，每次向左走2格。",
+          "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E8%93%9D%E8%89%B2%E4%BB%8E9%E5%87%BA%E5%8F%91-%E6%AF%8F%E6%AC%A1%E5%90%91%E5%B7%A6%E8%B5%B02%E6%A0%BC.mp3"
+        },
+        {
+          "text": "同时走3次。先摆红色位置，再摆蓝色位置。",
+          "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E5%90%8C%E6%97%B6%E8%B5%B03%E6%AC%A1-%E5%85%88%E6%91%86%E7%BA%A2%E8%89%B2%E4%BD%8D%E7%BD%AE-%E5%86%8D%E6%91%86%E8%93%9D%E8%89%B2%E4%BD%8D%E7%BD%AE.mp3"
+        }
+      ]
+    },
+    {
+      "id": "explore-multi-agent-movement-5",
+      "prompt": "红色从2出发，每次向右走1格。蓝色从10出发，每次向左走2格。同时走3次。先摆红色位置，再摆蓝色位置。选一位朋友，再点数字格，把它放到走完的位置。",
+      "model": {
+        "kind": "numberWalk",
+        "min": 0,
+        "max": 11,
+        "turns": 3,
+        "actors": [
+          {
+            "id": "red",
+            "slotId": "slot-0",
+            "start": 2,
+            "delta": 1
+          },
+          {
+            "id": "blue",
+            "slotId": "slot-1",
+            "start": 10,
+            "delta": -2
+          }
+        ]
+      },
+      "clips": [
+        {
+          "text": "红色从2出发，每次向右走1格。蓝色从10出发，每次向左走2格。同时走3次。先摆红色位置，再摆蓝色位置。选一位朋友，再点数字格，把它放到走完的位置。",
+          "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%BA%A2%E8%89%B2%E4%BB%8E2%E5%87%BA%E5%8F%91-%E6%AF%8F%E6%AC%A1%E5%90%91%E5%8F%B3%E8%B5%B01%E6%A0%BC-%E8%93%9D%E8%89%B2%E4%BB%8E10%E5%87%BA%E5%8F%91-%E6%AF%8F%E6%AC%A1%E5%90%91%E5%B7%A6%E8%B5%B02%E6%A0%BC-%E5%90%8C%E6%97%B6%E8%B5%B03%E6%AC%A1-%E5%85%88%E6%91%86%E7%BA%A2%E8%89%B2%E4%BD%8D%E7%BD%AE-%E5%86%8D%E6%91%86%E8%93%9D%E8%89%B2%E4%BD%8D%E7%BD%AE-%E9%80%89%E4%B8%80%E4%BD%8D%E6%9C%8B%E5%8F%8B-%E5%86%8D%E7%82%B9%E6%95%B0%E5%AD%97%E6%A0%BC-%E6%8A%8A%E5%AE%83%E6%94%BE%E5%88%B0%E8%B5%B0%E5%AE%8C%E7%9A%84%E4%BD%8D%E7%BD%AE.mp3"
+        },
+        {
+          "text": "红色从2出发，每次向右走1格。",
+          "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E7%BA%A2%E8%89%B2%E4%BB%8E2%E5%87%BA%E5%8F%91-%E6%AF%8F%E6%AC%A1%E5%90%91%E5%8F%B3%E8%B5%B01%E6%A0%BC.mp3"
+        },
+        {
+          "text": "蓝色从10出发，每次向左走2格。",
+          "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E8%93%9D%E8%89%B2%E4%BB%8E10%E5%87%BA%E5%8F%91-%E6%AF%8F%E6%AC%A1%E5%90%91%E5%B7%A6%E8%B5%B02%E6%A0%BC.mp3"
+        },
+        {
+          "text": "同时走3次。先摆红色位置，再摆蓝色位置。",
+          "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E5%90%8C%E6%97%B6%E8%B5%B03%E6%AC%A1-%E5%85%88%E6%91%86%E7%BA%A2%E8%89%B2%E4%BD%8D%E7%BD%AE-%E5%86%8D%E6%91%86%E8%93%9D%E8%89%B2%E4%BD%8D%E7%BD%AE.mp3"
+        }
+      ]
+    },
+    {
+      "id": "explore-multi-agent-movement-6",
+      "prompt": "红色从3出发，每次向右走1格。蓝色从11出发，每次向左走2格。同时走3次。先摆红色位置，再摆蓝色位置。选一位朋友，再点数字格，把它放到走完的位置。",
+      "model": {
+        "kind": "numberWalk",
+        "min": 0,
+        "max": 11,
+        "turns": 3,
+        "actors": [
+          {
+            "id": "red",
+            "slotId": "slot-0",
+            "start": 3,
+            "delta": 1
+          },
+          {
+            "id": "blue",
+            "slotId": "slot-1",
+            "start": 11,
+            "delta": -2
+          }
+        ]
+      },
+      "clips": [
+        {
+          "text": "红色从3出发，每次向右走1格。蓝色从11出发，每次向左走2格。同时走3次。先摆红色位置，再摆蓝色位置。选一位朋友，再点数字格，把它放到走完的位置。",
+          "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%BA%A2%E8%89%B2%E4%BB%8E3%E5%87%BA%E5%8F%91-%E6%AF%8F%E6%AC%A1%E5%90%91%E5%8F%B3%E8%B5%B01%E6%A0%BC-%E8%93%9D%E8%89%B2%E4%BB%8E11%E5%87%BA%E5%8F%91-%E6%AF%8F%E6%AC%A1%E5%90%91%E5%B7%A6%E8%B5%B02%E6%A0%BC-%E5%90%8C%E6%97%B6%E8%B5%B03%E6%AC%A1-%E5%85%88%E6%91%86%E7%BA%A2%E8%89%B2%E4%BD%8D%E7%BD%AE-%E5%86%8D%E6%91%86%E8%93%9D%E8%89%B2%E4%BD%8D%E7%BD%AE-%E9%80%89%E4%B8%80%E4%BD%8D%E6%9C%8B%E5%8F%8B-%E5%86%8D%E7%82%B9%E6%95%B0%E5%AD%97%E6%A0%BC-%E6%8A%8A%E5%AE%83%E6%94%BE%E5%88%B0%E8%B5%B0%E5%AE%8C%E7%9A%84%E4%BD%8D%E7%BD%AE.mp3"
+        },
+        {
+          "text": "红色从3出发，每次向右走1格。",
+          "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E7%BA%A2%E8%89%B2%E4%BB%8E3%E5%87%BA%E5%8F%91-%E6%AF%8F%E6%AC%A1%E5%90%91%E5%8F%B3%E8%B5%B01%E6%A0%BC.mp3"
+        },
+        {
+          "text": "蓝色从11出发，每次向左走2格。",
+          "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E8%93%9D%E8%89%B2%E4%BB%8E11%E5%87%BA%E5%8F%91-%E6%AF%8F%E6%AC%A1%E5%90%91%E5%B7%A6%E8%B5%B02%E6%A0%BC.mp3"
+        },
+        {
+          "text": "同时走3次。先摆红色位置，再摆蓝色位置。",
+          "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E5%90%8C%E6%97%B6%E8%B5%B03%E6%AC%A1-%E5%85%88%E6%91%86%E7%BA%A2%E8%89%B2%E4%BD%8D%E7%BD%AE-%E5%86%8D%E6%91%86%E8%93%9D%E8%89%B2%E4%BD%8D%E7%BD%AE.mp3"
+        }
+      ]
+    },
+    {
+      "id": "explore-multi-agent-movement-7",
+      "prompt": "红色从1出发，每次向右走1格。蓝色从9出发，每次向左走2格。同时走4次。先摆红色位置，再摆蓝色位置。选一位朋友，再点数字格，把它放到走完的位置。",
+      "model": {
+        "kind": "numberWalk",
+        "min": 0,
+        "max": 11,
+        "turns": 4,
+        "actors": [
+          {
+            "id": "red",
+            "slotId": "slot-0",
+            "start": 1,
+            "delta": 1
+          },
+          {
+            "id": "blue",
+            "slotId": "slot-1",
+            "start": 9,
+            "delta": -2
+          }
+        ]
+      },
+      "clips": [
+        {
+          "text": "红色从1出发，每次向右走1格。蓝色从9出发，每次向左走2格。同时走4次。先摆红色位置，再摆蓝色位置。选一位朋友，再点数字格，把它放到走完的位置。",
+          "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%BA%A2%E8%89%B2%E4%BB%8E1%E5%87%BA%E5%8F%91-%E6%AF%8F%E6%AC%A1%E5%90%91%E5%8F%B3%E8%B5%B01%E6%A0%BC-%E8%93%9D%E8%89%B2%E4%BB%8E9%E5%87%BA%E5%8F%91-%E6%AF%8F%E6%AC%A1%E5%90%91%E5%B7%A6%E8%B5%B02%E6%A0%BC-%E5%90%8C%E6%97%B6%E8%B5%B04%E6%AC%A1-%E5%85%88%E6%91%86%E7%BA%A2%E8%89%B2%E4%BD%8D%E7%BD%AE-%E5%86%8D%E6%91%86%E8%93%9D%E8%89%B2%E4%BD%8D%E7%BD%AE-%E9%80%89%E4%B8%80%E4%BD%8D%E6%9C%8B%E5%8F%8B-%E5%86%8D%E7%82%B9%E6%95%B0%E5%AD%97%E6%A0%BC-%E6%8A%8A%E5%AE%83%E6%94%BE%E5%88%B0%E8%B5%B0%E5%AE%8C%E7%9A%84%E4%BD%8D%E7%BD%AE.mp3"
+        },
+        {
+          "text": "红色从1出发，每次向右走1格。",
+          "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E7%BA%A2%E8%89%B2%E4%BB%8E1%E5%87%BA%E5%8F%91-%E6%AF%8F%E6%AC%A1%E5%90%91%E5%8F%B3%E8%B5%B01%E6%A0%BC.mp3"
+        },
+        {
+          "text": "蓝色从9出发，每次向左走2格。",
+          "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E8%93%9D%E8%89%B2%E4%BB%8E9%E5%87%BA%E5%8F%91-%E6%AF%8F%E6%AC%A1%E5%90%91%E5%B7%A6%E8%B5%B02%E6%A0%BC.mp3"
+        },
+        {
+          "text": "同时走4次。先摆红色位置，再摆蓝色位置。",
+          "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E5%90%8C%E6%97%B6%E8%B5%B04%E6%AC%A1-%E5%85%88%E6%91%86%E7%BA%A2%E8%89%B2%E4%BD%8D%E7%BD%AE-%E5%86%8D%E6%91%86%E8%93%9D%E8%89%B2%E4%BD%8D%E7%BD%AE.mp3"
+        }
+      ]
+    },
+    {
+      "id": "explore-multi-agent-movement-8",
+      "prompt": "红色从2出发，每次向右走1格。蓝色从10出发，每次向左走2格。同时走4次。先摆红色位置，再摆蓝色位置。选一位朋友，再点数字格，把它放到走完的位置。",
+      "model": {
+        "kind": "numberWalk",
+        "min": 0,
+        "max": 11,
+        "turns": 4,
+        "actors": [
+          {
+            "id": "red",
+            "slotId": "slot-0",
+            "start": 2,
+            "delta": 1
+          },
+          {
+            "id": "blue",
+            "slotId": "slot-1",
+            "start": 10,
+            "delta": -2
+          }
+        ]
+      },
+      "clips": [
+        {
+          "text": "红色从2出发，每次向右走1格。蓝色从10出发，每次向左走2格。同时走4次。先摆红色位置，再摆蓝色位置。选一位朋友，再点数字格，把它放到走完的位置。",
+          "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%BA%A2%E8%89%B2%E4%BB%8E2%E5%87%BA%E5%8F%91-%E6%AF%8F%E6%AC%A1%E5%90%91%E5%8F%B3%E8%B5%B01%E6%A0%BC-%E8%93%9D%E8%89%B2%E4%BB%8E10%E5%87%BA%E5%8F%91-%E6%AF%8F%E6%AC%A1%E5%90%91%E5%B7%A6%E8%B5%B02%E6%A0%BC-%E5%90%8C%E6%97%B6%E8%B5%B04%E6%AC%A1-%E5%85%88%E6%91%86%E7%BA%A2%E8%89%B2%E4%BD%8D%E7%BD%AE-%E5%86%8D%E6%91%86%E8%93%9D%E8%89%B2%E4%BD%8D%E7%BD%AE-%E9%80%89%E4%B8%80%E4%BD%8D%E6%9C%8B%E5%8F%8B-%E5%86%8D%E7%82%B9%E6%95%B0%E5%AD%97%E6%A0%BC-%E6%8A%8A%E5%AE%83%E6%94%BE%E5%88%B0%E8%B5%B0%E5%AE%8C%E7%9A%84%E4%BD%8D%E7%BD%AE.mp3"
+        },
+        {
+          "text": "红色从2出发，每次向右走1格。",
+          "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E7%BA%A2%E8%89%B2%E4%BB%8E2%E5%87%BA%E5%8F%91-%E6%AF%8F%E6%AC%A1%E5%90%91%E5%8F%B3%E8%B5%B01%E6%A0%BC.mp3"
+        },
+        {
+          "text": "蓝色从10出发，每次向左走2格。",
+          "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E8%93%9D%E8%89%B2%E4%BB%8E10%E5%87%BA%E5%8F%91-%E6%AF%8F%E6%AC%A1%E5%90%91%E5%B7%A6%E8%B5%B02%E6%A0%BC.mp3"
+        },
+        {
+          "text": "同时走4次。先摆红色位置，再摆蓝色位置。",
+          "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E5%90%8C%E6%97%B6%E8%B5%B04%E6%AC%A1-%E5%85%88%E6%91%86%E7%BA%A2%E8%89%B2%E4%BD%8D%E7%BD%AE-%E5%86%8D%E6%91%86%E8%93%9D%E8%89%B2%E4%BD%8D%E7%BD%AE.mp3"
+        }
+      ]
+    },
+    {
+      "id": "explore-multi-agent-movement-9",
+      "prompt": "红色从3出发，每次向右走1格。蓝色从11出发，每次向左走2格。同时走4次。先摆红色位置，再摆蓝色位置。选一位朋友，再点数字格，把它放到走完的位置。",
+      "model": {
+        "kind": "numberWalk",
+        "min": 0,
+        "max": 11,
+        "turns": 4,
+        "actors": [
+          {
+            "id": "red",
+            "slotId": "slot-0",
+            "start": 3,
+            "delta": 1
+          },
+          {
+            "id": "blue",
+            "slotId": "slot-1",
+            "start": 11,
+            "delta": -2
+          }
+        ]
+      },
+      "clips": [
+        {
+          "text": "红色从3出发，每次向右走1格。蓝色从11出发，每次向左走2格。同时走4次。先摆红色位置，再摆蓝色位置。选一位朋友，再点数字格，把它放到走完的位置。",
+          "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%BA%A2%E8%89%B2%E4%BB%8E3%E5%87%BA%E5%8F%91-%E6%AF%8F%E6%AC%A1%E5%90%91%E5%8F%B3%E8%B5%B01%E6%A0%BC-%E8%93%9D%E8%89%B2%E4%BB%8E11%E5%87%BA%E5%8F%91-%E6%AF%8F%E6%AC%A1%E5%90%91%E5%B7%A6%E8%B5%B02%E6%A0%BC-%E5%90%8C%E6%97%B6%E8%B5%B04%E6%AC%A1-%E5%85%88%E6%91%86%E7%BA%A2%E8%89%B2%E4%BD%8D%E7%BD%AE-%E5%86%8D%E6%91%86%E8%93%9D%E8%89%B2%E4%BD%8D%E7%BD%AE-%E9%80%89%E4%B8%80%E4%BD%8D%E6%9C%8B%E5%8F%8B-%E5%86%8D%E7%82%B9%E6%95%B0%E5%AD%97%E6%A0%BC-%E6%8A%8A%E5%AE%83%E6%94%BE%E5%88%B0%E8%B5%B0%E5%AE%8C%E7%9A%84%E4%BD%8D%E7%BD%AE.mp3"
+        },
+        {
+          "text": "红色从3出发，每次向右走1格。",
+          "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E7%BA%A2%E8%89%B2%E4%BB%8E3%E5%87%BA%E5%8F%91-%E6%AF%8F%E6%AC%A1%E5%90%91%E5%8F%B3%E8%B5%B01%E6%A0%BC.mp3"
+        },
+        {
+          "text": "蓝色从11出发，每次向左走2格。",
+          "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E8%93%9D%E8%89%B2%E4%BB%8E11%E5%87%BA%E5%8F%91-%E6%AF%8F%E6%AC%A1%E5%90%91%E5%B7%A6%E8%B5%B02%E6%A0%BC.mp3"
+        },
+        {
+          "text": "同时走4次。先摆红色位置，再摆蓝色位置。",
+          "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E5%90%8C%E6%97%B6%E8%B5%B04%E6%AC%A1-%E5%85%88%E6%91%86%E7%BA%A2%E8%89%B2%E4%BD%8D%E7%BD%AE-%E5%86%8D%E6%91%86%E8%93%9D%E8%89%B2%E4%BD%8D%E7%BD%AE.mp3"
+        }
+      ]
+    }
+  ]
+}

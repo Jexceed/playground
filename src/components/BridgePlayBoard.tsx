@@ -61,7 +61,6 @@ export function BridgePlayBoard({roundId,solved,showErrors,onChange,onReset}:{
         {Array.from({length:model.width+1},(_,i)=><path key={i} d={`M${layout.left+i*layout.unit} 64V186`} stroke="#d9f0f6" strokeWidth="2"/>)}
         {Array.from({length:model.width},(_,i)=><path key={i} d={`M${layout.left+i*layout.unit+12} 164q6 7 12 0t12 0`} fill="none" stroke="#5bafcf" strokeWidth="2"/>)}
         {model.supports.map(point=><rect key={point} x={layout.left+point*layout.unit-12} y="57" width="24" height="136" rx="10" fill="#a8ce78" stroke="#718c4c" strokeWidth="2"/>)}
-        {layout.gaps.map((gap,i)=><g key={i}><path d={`M${gap.x} 51v-11h${gap.pixels}v11`} fill="none" stroke="#667968" strokeWidth="2"/><text x={gap.x+gap.pixels/2} y="29" textAnchor="middle" fontSize="24" fill="#374d45">{gap.width} 格</text></g>)}
         <path d="M637 149V84l32 12-32 12" stroke="#775333" strokeWidth="4" fill="#e8994f"/>
         {measuring?<Wood x={252} y={225} length={model.lengths[0]}/>:placements.map((wood,gap)=>{
           if(wood===null)return null;const shape=placedBridgeShape(model,gap,wood);
@@ -69,6 +68,7 @@ export function BridgePlayBoard({roundId,solved,showErrors,onChange,onReset}:{
         })}
         {measuring&&points.length===2&&<path data-measure-line="true" d={`M${anchors[points[0]].x} ${anchors[points[0]].y}L${anchors[points[1]].x} ${anchors[points[1]].y}`} stroke={showErrors?'#c66b4f':'#367b61'} strokeWidth="6" strokeDasharray="10 6"/>}
       </svg>
+      {layout.gaps.map((gap,i)=><span className="bridge-gap-label" key={i} style={{left:`${gap.x/720*100}%`,width:`${gap.pixels/720*100}%`}}>{gap.width} 格</span>)}
       <img key={walkRun} className={`bridge-play-bear ${solved&&!measuring?'bridge-bear-crossing':''}`} src={publicAsset(imageGallery.characters.bear.src)} alt="小熊" style={{'--bear-start':'7%','--bear-end':'85%',top:`${(measuring?85:67)/sceneHeight*100}%` } as CSSProperties}/>
       {measuring?(Object.keys(anchors) as MeasurePoint[]).map(point=><button key={point} type="button" className={`bridge-measure-point ${points.includes(point)?'selected':''}`} style={{left:`${anchors[point].x/720*100}%`,top:`${anchors[point].y/sceneHeight*100}%`}} aria-label={`量距离：${measurePointLabels[point]}`} aria-pressed={points.includes(point)} disabled={solved} onClick={()=>selectPoint(point)}><span className="bridge-point-dot"/><span>{measurePointLabels[point]}</span></button>)
         :layout.gaps.map((gap,index)=>{const wood=placements[index],tooShort=wood!==null&&model.lengths[wood]<gap.width;return <button key={index} type="button" className={`bridge-place-target ${wood!==null?'filled':''} ${armed!==null?'armed':''} ${showErrors&&(wood===null||tooShort)?'problem':''}`} style={{left:`${gap.x/720*100}%`,width:`${gap.pixels/720*100}%`}} disabled={solved} aria-label={`${bridgeGapLabel(model,index)}河段，${wood===null?'空着':`已放${bridgeMaterialLabel(model,wood)}，点一下拿回`}`} onClick={()=>place(index)}><span>{wood===null?'点这里放':'点一下拿回'}</span></button>;})}
@@ -76,7 +76,8 @@ export function BridgePlayBoard({roundId,solved,showErrors,onChange,onReset}:{
     {!measuring&&<div className="bridge-materials" aria-label="可用木板">{model.lengths.map((length,index)=>{
       const used=placements.indexOf(index),selected=armed===index;
       return <button type="button" key={index} className={`bridge-material ${selected?'selected':''} ${used>=0?'placed':''}`} aria-label={`选${bridgeMaterialLabel(model,index)}`} aria-pressed={selected} disabled={solved} onClick={()=>selectMaterial(index)}>
-        <svg viewBox="0 0 720 56" aria-hidden="true"><text x="20" y="35" fontSize="21" fill="#354c46">{bridgeMaterialLabel(model,index)}</text><Wood x={220} y={12} length={length} tone={index}/><text x="700" y="35" fontSize="19" textAnchor="end" fill="#466954">{selected?'已选':used>=0?'已放到'+bridgeGapLabel(model,used):'点选'}</text></svg>
+        <span className="bridge-material-label"><span>{bridgeMaterialLabel(model,index)}</span><span>{selected?'已选':used>=0?'已放到'+bridgeGapLabel(model,used):'点选'}</span></span>
+        <svg viewBox="0 0 720 56" aria-hidden="true"><Wood x={32} y={12} length={length} tone={index}/></svg>
       </button>;
     })}</div>}
   </section>;

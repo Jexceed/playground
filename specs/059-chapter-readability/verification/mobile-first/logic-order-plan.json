@@ -1,0 +1,507 @@
+{
+  "gameId": "logic-order-plan",
+  "round": 1,
+  "font": {
+    "pageWidth": 375,
+    "small": [],
+    "texts": [
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "STRONG",
+        "text": "启蒙",
+        "width": 36
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "STRONG",
+        "text": "探索",
+        "width": 36
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 62.0859375,
+        "px": 18,
+        "tag": "STRONG",
+        "text": "数字岛",
+        "width": 18
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "EM",
+        "text": "122 题",
+        "width": 52.984375
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 41.390625,
+        "px": 18,
+        "tag": "STRONG",
+        "text": "逻辑屋",
+        "width": 42
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 56,
+        "px": 18,
+        "tag": "EM",
+        "text": "319 题",
+        "width": 42.984375
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 82.78125,
+        "px": 18,
+        "tag": "STRONG",
+        "text": "图形工坊",
+        "width": 18
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "EM",
+        "text": "48 题",
+        "width": 45.6015625
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "STRONG",
+        "text": "启蒙 · 逻辑屋",
+        "width": 110.9921875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "26 个",
+        "width": 45.6015625
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "选择关卡",
+        "width": 327
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "STRONG",
+        "text": "启蒙",
+        "width": 36
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "看图发现，轻松起步",
+        "width": 162
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SMALL",
+        "text": "40 组 · 489 题",
+        "width": 122.9921875
+      },
+      {
+        "class": "eyebrow",
+        "cssPx": 18,
+        "height": 31,
+        "px": 18,
+        "tag": "P",
+        "text": "第 1 / 24 题 ·",
+        "width": 219
+      },
+      {
+        "class": "difficulty-badge",
+        "cssPx": 18,
+        "height": 31,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "难度 L4",
+        "width": 79.4609375
+      },
+      {
+        "class": null,
+        "cssPx": 20.8,
+        "height": 47.828125,
+        "px": 20.8,
+        "tag": "H3",
+        "text": "小朋友口渴了，想喝水，先做什么？",
+        "width": 219
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 48.59375,
+        "px": 18,
+        "tag": "P",
+        "text": "先看场景，再按图卡从左到右，找出缺少的一步。",
+        "width": 219
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "STRONG",
+        "text": "听题",
+        "width": 36
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "先看看，发生了什么事？",
+        "width": 293
+      },
+      {
+        "class": "primary",
+        "cssPx": 18,
+        "height": 44,
+        "px": 18,
+        "tag": "BUTTON",
+        "text": "开始排顺序",
+        "width": 293
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "STRONG",
+        "text": "题目导航",
+        "width": 72
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "0 / 24 已做",
+        "width": 95.3984375
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "1",
+        "width": 7.3828125
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "2",
+        "width": 10.8046875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "3",
+        "width": 10.8046875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "4",
+        "width": 10.8046875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "5",
+        "width": 10.8046875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "6",
+        "width": 10.8046875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "7",
+        "width": 9.9609375
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "8",
+        "width": 10.8046875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "9",
+        "width": 10.8046875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "10",
+        "width": 18.1875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "11",
+        "width": 14.765625
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "12",
+        "width": 18.1875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "13",
+        "width": 18.1875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "14",
+        "width": 18.1875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "15",
+        "width": 18.1875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "16",
+        "width": 18.1875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "17",
+        "width": 17.3359375
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "18",
+        "width": 18.1875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "19",
+        "width": 18.1875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "20",
+        "width": 21.6015625
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "21",
+        "width": 18.1875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "22",
+        "width": 21.6015625
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "23",
+        "width": 21.6015625
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "24",
+        "width": 21.6015625
+      },
+      {
+        "class": "eyebrow",
+        "cssPx": 18,
+        "height": 26.09375,
+        "px": 18,
+        "tag": "P",
+        "text": "亲子提示卡",
+        "width": 319
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 26.09375,
+        "px": 18,
+        "tag": "P",
+        "text": "可以问：如果顺序反了，会发生什么？",
+        "width": 319
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SUMMARY",
+        "text": "本题追问",
+        "width": 319
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 52.1875,
+        "px": 18,
+        "tag": "P",
+        "text": "请她指着图卡复述口渴、先拿杯子、倒水、喝水，说为什么缺少先拿杯子。",
+        "width": 319
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 27,
+        "px": 18,
+        "tag": "BUTTON",
+        "text": "听家长提示",
+        "width": 102
+      },
+      {
+        "class": "eyebrow",
+        "cssPx": 18,
+        "height": 26.09375,
+        "px": 18,
+        "tag": "P",
+        "text": "启蒙成长记录",
+        "width": 108
+      },
+      {
+        "class": "section-progress-count",
+        "cssPx": 18,
+        "height": 26.09375,
+        "px": 18,
+        "tag": "P",
+        "text": "已完成 0 / 489 题",
+        "width": 319
+      },
+      {
+        "class": "muted",
+        "cssPx": 18,
+        "height": 52.1875,
+        "px": 18,
+        "tag": "P",
+        "text": "完成一个小任务后，这里会留下能力标签。",
+        "width": 319
+      }
+    ],
+    "width": 375
+  },
+  "clips": []
+}

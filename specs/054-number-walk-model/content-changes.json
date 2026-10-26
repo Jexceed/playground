@@ -1,0 +1,317 @@
+[
+  {
+    "id": "explore-multi-agent-movement-1",
+    "fields": [
+      "instruction",
+      "presentation"
+    ],
+    "before": {
+      "instruction": "先选图卡，再按位置编号排好。也可以拖过去。"
+    },
+    "after": {
+      "instruction": "选一位朋友，再点数字格，把它放到走完的位置。",
+      "presentation": {
+        "evidence": {
+          "kind": "numberWalk",
+          "min": 0,
+          "max": 11,
+          "turns": 2,
+          "actors": [
+            {
+              "id": "red",
+              "slotId": "slot-0",
+              "start": 1,
+              "delta": 1
+            },
+            {
+              "id": "blue",
+              "slotId": "slot-1",
+              "start": 9,
+              "delta": -1
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "explore-multi-agent-movement-2",
+    "fields": [
+      "instruction",
+      "presentation"
+    ],
+    "before": {
+      "instruction": "先选图卡，再按位置编号排好。也可以拖过去。"
+    },
+    "after": {
+      "instruction": "选一位朋友，再点数字格，把它放到走完的位置。",
+      "presentation": {
+        "evidence": {
+          "kind": "numberWalk",
+          "min": 0,
+          "max": 11,
+          "turns": 2,
+          "actors": [
+            {
+              "id": "red",
+              "slotId": "slot-0",
+              "start": 2,
+              "delta": 1
+            },
+            {
+              "id": "blue",
+              "slotId": "slot-1",
+              "start": 10,
+              "delta": -1
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "explore-multi-agent-movement-3",
+    "fields": [
+      "instruction",
+      "presentation"
+    ],
+    "before": {
+      "instruction": "先选图卡，再按位置编号排好。也可以拖过去。"
+    },
+    "after": {
+      "instruction": "选一位朋友，再点数字格，把它放到走完的位置。",
+      "presentation": {
+        "evidence": {
+          "kind": "numberWalk",
+          "min": 0,
+          "max": 11,
+          "turns": 2,
+          "actors": [
+            {
+              "id": "red",
+              "slotId": "slot-0",
+              "start": 3,
+              "delta": 1
+            },
+            {
+              "id": "blue",
+              "slotId": "slot-1",
+              "start": 11,
+              "delta": -1
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "explore-multi-agent-movement-4",
+    "fields": [
+      "instruction",
+      "presentation"
+    ],
+    "before": {
+      "instruction": "先选图卡，再按位置编号排好。也可以拖过去。"
+    },
+    "after": {
+      "instruction": "选一位朋友，再点数字格，把它放到走完的位置。",
+      "presentation": {
+        "evidence": {
+          "kind": "numberWalk",
+          "min": 0,
+          "max": 11,
+          "turns": 3,
+          "actors": [
+            {
+              "id": "red",
+              "slotId": "slot-0",
+              "start": 1,
+              "delta": 1
+            },
+            {
+              "id": "blue",
+              "slotId": "slot-1",
+              "start": 9,
+              "delta": -2
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "explore-multi-agent-movement-5",
+    "fields": [
+      "instruction",
+      "presentation"
+    ],
+    "before": {
+      "instruction": "先选图卡，再按位置编号排好。也可以拖过去。"
+    },
+    "after": {
+      "instruction": "选一位朋友，再点数字格，把它放到走完的位置。",
+      "presentation": {
+        "evidence": {
+          "kind": "numberWalk",
+          "min": 0,
+          "max": 11,
+          "turns": 3,
+          "actors": [
+            {
+              "id": "red",
+              "slotId": "slot-0",
+              "start": 2,
+              "delta": 1
+            },
+            {
+              "id": "blue",
+              "slotId": "slot-1",
+              "start": 10,
+              "delta": -2
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "explore-multi-agent-movement-6",
+    "fields": [
+      "instruction",
+      "presentation"
+    ],
+    "before": {
+      "instruction": "先选图卡，再按位置编号排好。也可以拖过去。"
+    },
+    "after": {
+      "instruction": "选一位朋友，再点数字格，把它放到走完的位置。",
+      "presentation": {
+        "evidence": {
+          "kind": "numberWalk",
+          "min": 0,
+          "max": 11,
+          "turns": 3,
+          "actors": [
+            {
+              "id": "red",
+              "slotId": "slot-0",
+              "start": 3,
+              "delta": 1
+            },
+            {
+              "id": "blue",
+              "slotId": "slot-1",
+              "start": 11,
+              "delta": -2
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "explore-multi-agent-movement-7",
+    "fields": [
+      "instruction",
+      "presentation"
+    ],
+    "before": {
+      "instruction": "先选图卡，再按位置编号排好。也可以拖过去。"
+    },
+    "after": {
+      "instruction": "选一位朋友，再点数字格，把它放到走完的位置。",
+      "presentation": {
+        "evidence": {
+          "kind": "numberWalk",
+          "min": 0,
+          "max": 11,
+          "turns": 4,
+          "actors": [
+            {
+              "id": "red",
+              "slotId": "slot-0",
+              "start": 1,
+              "delta": 1
+            },
+            {
+              "id": "blue",
+              "slotId": "slot-1",
+              "start": 9,
+              "delta": -2
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "explore-multi-agent-movement-8",
+    "fields": [
+      "instruction",
+      "presentation"
+    ],
+    "before": {
+      "instruction": "先选图卡，再按位置编号排好。也可以拖过去。"
+    },
+    "after": {
+      "instruction": "选一位朋友，再点数字格，把它放到走完的位置。",
+      "presentation": {
+        "evidence": {
+          "kind": "numberWalk",
+          "min": 0,
+          "max": 11,
+          "turns": 4,
+          "actors": [
+            {
+              "id": "red",
+              "slotId": "slot-0",
+              "start": 2,
+              "delta": 1
+            },
+            {
+              "id": "blue",
+              "slotId": "slot-1",
+              "start": 10,
+              "delta": -2
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "explore-multi-agent-movement-9",
+    "fields": [
+      "instruction",
+      "presentation"
+    ],
+    "before": {
+      "instruction": "先选图卡，再按位置编号排好。也可以拖过去。"
+    },
+    "after": {
+      "instruction": "选一位朋友，再点数字格，把它放到走完的位置。",
+      "presentation": {
+        "evidence": {
+          "kind": "numberWalk",
+          "min": 0,
+          "max": 11,
+          "turns": 4,
+          "actors": [
+            {
+              "id": "red",
+              "slotId": "slot-0",
+              "start": 3,
+              "delta": 1
+            },
+            {
+              "id": "blue",
+              "slotId": "slot-1",
+              "start": 11,
+              "delta": -2
+            }
+          ]
+        }
+      }
+    }
+  }
+]

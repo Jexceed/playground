@@ -1,0 +1,25 @@
+{
+  "flipRound": 3,
+  "actions": [
+    "打开翻牌第3题",
+    "点击顶部听题",
+    "点击第1步翻第3张小喇叭"
+  ],
+  "flipCompletedBefore": 2,
+  "flipCompletedAfter": 2,
+  "submitted": false,
+  "hintsUsed": false,
+  "restored": {
+    "game": "小岛连桥",
+    "round": 1,
+    "bridgeCounts": [
+      2,
+      1,
+      1,
+      2
+    ],
+    "completed": 1
+  },
+  "bridgeLabelsRestored": true,
+  "scope": "原生入口与安装检查；完整音频ended事件在独立浏览器记录，未做系统输出转录"
+}

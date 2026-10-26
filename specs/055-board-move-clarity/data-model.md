@@ -1,0 +1,2 @@
+# 数据
+BoardMoveEvidence包含columns、goal、cells和candidates，不含expectedTokenIds。cells与原作者board数组逐格对应，candidates取原token.id pN。原multiSelect与authoringSolutions不变。previewCell是组件局部暂态，不保存、不计尝试；已选择位置只来自response。声明变更仅instruction和presentation。

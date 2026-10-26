@@ -1,4 +1,5 @@
 import type { ActivityBase, ActivityResponse } from "./activity";
+import { ISLAND_BRIDGE_COPY } from './island-bridges';
 export type GraphNode = {
     id: string;
     x: number;
@@ -181,7 +182,7 @@ export function evaluateAdvanced(activity: AdvancedActivity, response: ActivityR
             degree.set(e.to, degree.get(e.to)! + n);
         }
         if (nodes.some(n => degree.get(n.id) !== n.degree))
-            return wrong("数一数每个岛连出的桥，和岛上的数字一样多吗？");
+            return wrong(ISLAND_BRIDGE_COPY.countsFeedback);
         for (const a of active)
             for (const b of active) {
                 if (a.id === b.id || [a.from, a.to].some(id => id === b.from || id === b.to))

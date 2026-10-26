@@ -1,0 +1,685 @@
+{
+  "catalogSHA256": "5ea7393a85938c82b4a398564df4cccedd03b7be1ffc1d706a000301757dcb0f",
+  "rounds": 1110,
+  "group": {
+    "id": "graphic-gap-close",
+    "world": "graphic",
+    "title": "缺口补一补",
+    "subtitle": "看轮廓缺了哪一边，在选项里找能补上的那一块。",
+    "goal": "训练视觉闭合、缺口方向和边角形状匹配。",
+    "parentPrompt": "请她先指缺口在哪里，再说选项的哪条边能补进去。",
+    "abilityTags": [
+      "缺口补一补",
+      "视觉闭合",
+      "边角匹配"
+    ],
+    "level": "L6",
+    "rounds": [
+      {
+        "level": "L5",
+        "prompt": "这个轮廓缺了一段，原来是哪张完整的图？",
+        "instruction": "先看缺口在哪一边，再看缺口需要圆边、直边、尖角还是尾巴。",
+        "graphicChallenge": {
+          "kind": "closure-match",
+          "stemLabel": "缺口轮廓",
+          "figures": [
+            {
+              "shape": "circle",
+              "color": "#60a5fa",
+              "mode": "missing",
+              "gap": "right"
+            }
+          ],
+          "options": [
+            {
+              "value": "rounded-square",
+              "label": "圆角方块",
+              "figure": {
+                "shape": "rounded-square",
+                "mode": "outline"
+              },
+              "nearMiss": "轮廓有相近边角，但缺口方向或边形不吻合。"
+            },
+            {
+              "value": "apple",
+              "label": "苹果",
+              "figure": {
+                "shape": "apple",
+                "mode": "outline"
+              },
+              "nearMiss": "轮廓有相近边角，但缺口方向或边形不吻合。"
+            },
+            {
+              "value": "circle",
+              "label": "圆形",
+              "figure": {
+                "shape": "circle",
+                "mode": "outline"
+              }
+            },
+            {
+              "value": "diamond",
+              "label": "菱形",
+              "figure": {
+                "shape": "diamond",
+                "mode": "outline"
+              },
+              "nearMiss": "轮廓有相近边角，但缺口方向或边形不吻合。"
+            }
+          ]
+        },
+        "choices": [
+          {
+            "label": "A",
+            "value": "rounded-square"
+          },
+          {
+            "label": "B",
+            "value": "apple"
+          },
+          {
+            "label": "C",
+            "value": "circle"
+          },
+          {
+            "label": "D",
+            "value": "diamond"
+          }
+        ],
+        "answer": "circle",
+        "success": "圆形对，圆形右边缺一段圆弧，补上的也要是圆弧。补缺口要看边、角和缺口方向。",
+        "retry": "先指缺口方向，再说缺口需要圆边、直边、尖角、叶子还是尾巴，然后排除轮廓相近但边角不对的选项。",
+        "parentPrompt": "请她指着缺口说：缺的是哪里？为什么这个图能补上，其他相近图形的边角哪里不一样？",
+        "abilityTags": [
+          "缺口补一补",
+          "视觉闭合",
+          "边角匹配"
+        ],
+        "difficultyNote": "上实式视觉闭合题：只给不完整轮廓，四个选项都有相近边角，需要按缺口方向排除。",
+        "id": "graphic-gap-close-1"
+      },
+      {
+        "level": "L5",
+        "prompt": "这个轮廓缺了一段，原来是哪张完整的图？",
+        "instruction": "先看缺口在哪一边，再看缺口需要圆边、直边、尖角还是尾巴。",
+        "graphicChallenge": {
+          "kind": "closure-match",
+          "stemLabel": "缺口轮廓",
+          "figures": [
+            {
+              "shape": "rounded-square",
+              "color": "#3b82f6",
+              "mode": "missing",
+              "gap": "top"
+            }
+          ],
+          "options": [
+            {
+              "value": "circle",
+              "label": "圆形",
+              "figure": {
+                "shape": "circle",
+                "mode": "outline"
+              },
+              "nearMiss": "轮廓有相近边角，但缺口方向或边形不吻合。"
+            },
+            {
+              "value": "diamond",
+              "label": "菱形",
+              "figure": {
+                "shape": "diamond",
+                "mode": "outline"
+              },
+              "nearMiss": "轮廓有相近边角，但缺口方向或边形不吻合。"
+            },
+            {
+              "value": "star",
+              "label": "星星",
+              "figure": {
+                "shape": "star",
+                "mode": "outline"
+              },
+              "nearMiss": "轮廓有相近边角，但缺口方向或边形不吻合。"
+            },
+            {
+              "value": "rounded-square",
+              "label": "圆角方块",
+              "figure": {
+                "shape": "rounded-square",
+                "mode": "outline"
+              }
+            }
+          ]
+        },
+        "choices": [
+          {
+            "label": "A",
+            "value": "circle"
+          },
+          {
+            "label": "B",
+            "value": "diamond"
+          },
+          {
+            "label": "C",
+            "value": "star"
+          },
+          {
+            "label": "D",
+            "value": "rounded-square"
+          }
+        ],
+        "answer": "rounded-square",
+        "success": "圆角方块对，圆角方块上边缺直边接圆角。补缺口要看边、角和缺口方向。",
+        "retry": "先指缺口方向，再说缺口需要圆边、直边、尖角、叶子还是尾巴，然后排除轮廓相近但边角不对的选项。",
+        "parentPrompt": "请她指着缺口说：缺的是哪里？为什么这个图能补上，其他相近图形的边角哪里不一样？",
+        "abilityTags": [
+          "缺口补一补",
+          "视觉闭合",
+          "边角匹配"
+        ],
+        "difficultyNote": "上实式视觉闭合题：只给不完整轮廓，四个选项都有相近边角，需要按缺口方向排除。",
+        "id": "graphic-gap-close-2"
+      },
+      {
+        "level": "L6",
+        "prompt": "这个轮廓缺了一段，原来是哪张完整的图？",
+        "instruction": "先看缺口在哪一边，再看缺口需要圆边、直边、尖角还是尾巴。",
+        "graphicChallenge": {
+          "kind": "closure-match",
+          "stemLabel": "缺口轮廓",
+          "figures": [
+            {
+              "shape": "triangle",
+              "color": "#fb7185",
+              "mode": "missing",
+              "gap": "bottom"
+            }
+          ],
+          "options": [
+            {
+              "value": "diamond",
+              "label": "菱形",
+              "figure": {
+                "shape": "diamond",
+                "mode": "outline"
+              },
+              "nearMiss": "轮廓有相近边角，但缺口方向或边形不吻合。"
+            },
+            {
+              "value": "triangle",
+              "label": "三角形",
+              "figure": {
+                "shape": "triangle",
+                "mode": "outline"
+              }
+            },
+            {
+              "value": "star",
+              "label": "星星",
+              "figure": {
+                "shape": "star",
+                "mode": "outline"
+              },
+              "nearMiss": "轮廓有相近边角，但缺口方向或边形不吻合。"
+            },
+            {
+              "value": "leaf",
+              "label": "叶子",
+              "figure": {
+                "shape": "leaf",
+                "mode": "outline"
+              },
+              "nearMiss": "轮廓有相近边角，但缺口方向或边形不吻合。"
+            }
+          ]
+        },
+        "choices": [
+          {
+            "label": "A",
+            "value": "diamond"
+          },
+          {
+            "label": "B",
+            "value": "triangle"
+          },
+          {
+            "label": "C",
+            "value": "star"
+          },
+          {
+            "label": "D",
+            "value": "leaf"
+          }
+        ],
+        "answer": "triangle",
+        "success": "三角形对，三角形底下缺一条直边。补缺口要看边、角和缺口方向。",
+        "retry": "先指缺口方向，再说缺口需要圆边、直边、尖角、叶子还是尾巴，然后排除轮廓相近但边角不对的选项。",
+        "parentPrompt": "请她指着缺口说：缺的是哪里？为什么这个图能补上，其他相近图形的边角哪里不一样？",
+        "abilityTags": [
+          "缺口补一补",
+          "视觉闭合",
+          "边角匹配"
+        ],
+        "difficultyNote": "上实式视觉闭合题：只给不完整轮廓，四个选项都有相近边角，需要按缺口方向排除。",
+        "id": "graphic-gap-close-3"
+      },
+      {
+        "level": "L6",
+        "prompt": "这个轮廓缺了一段，原来是哪张完整的图？",
+        "instruction": "先看缺口在哪一边，再看缺口需要圆边、直边、尖角还是尾巴。",
+        "graphicChallenge": {
+          "kind": "closure-match",
+          "stemLabel": "缺口轮廓",
+          "figures": [
+            {
+              "shape": "diamond",
+              "color": "#14b8a6",
+              "mode": "missing",
+              "gap": "left"
+            }
+          ],
+          "options": [
+            {
+              "value": "diamond",
+              "label": "菱形",
+              "figure": {
+                "shape": "diamond",
+                "mode": "outline"
+              }
+            },
+            {
+              "value": "triangle",
+              "label": "三角形",
+              "figure": {
+                "shape": "triangle",
+                "mode": "outline"
+              },
+              "nearMiss": "轮廓有相近边角，但缺口方向或边形不吻合。"
+            },
+            {
+              "value": "rounded-square",
+              "label": "圆角方块",
+              "figure": {
+                "shape": "rounded-square",
+                "mode": "outline"
+              },
+              "nearMiss": "轮廓有相近边角，但缺口方向或边形不吻合。"
+            },
+            {
+              "value": "star",
+              "label": "星星",
+              "figure": {
+                "shape": "star",
+                "mode": "outline"
+              },
+              "nearMiss": "轮廓有相近边角，但缺口方向或边形不吻合。"
+            }
+          ]
+        },
+        "choices": [
+          {
+            "label": "A",
+            "value": "diamond"
+          },
+          {
+            "label": "B",
+            "value": "triangle"
+          },
+          {
+            "label": "C",
+            "value": "rounded-square"
+          },
+          {
+            "label": "D",
+            "value": "star"
+          }
+        ],
+        "answer": "diamond",
+        "success": "菱形对，菱形左边缺两条斜边夹尖角。补缺口要看边、角和缺口方向。",
+        "retry": "先指缺口方向，再说缺口需要圆边、直边、尖角、叶子还是尾巴，然后排除轮廓相近但边角不对的选项。",
+        "parentPrompt": "请她指着缺口说：缺的是哪里？为什么这个图能补上，其他相近图形的边角哪里不一样？",
+        "abilityTags": [
+          "缺口补一补",
+          "视觉闭合",
+          "边角匹配"
+        ],
+        "difficultyNote": "上实式视觉闭合题：只给不完整轮廓，四个选项都有相近边角，需要按缺口方向排除。",
+        "id": "graphic-gap-close-4"
+      },
+      {
+        "level": "L6",
+        "prompt": "这个轮廓缺了一段，原来是哪张完整的图？",
+        "instruction": "先看缺口在哪一边，再看缺口需要圆边、直边、尖角还是尾巴。",
+        "graphicChallenge": {
+          "kind": "closure-match",
+          "stemLabel": "缺口轮廓",
+          "figures": [
+            {
+              "shape": "star",
+              "color": "#facc15",
+              "mode": "missing",
+              "gap": "right"
+            }
+          ],
+          "options": [
+            {
+              "value": "star",
+              "label": "星星",
+              "figure": {
+                "shape": "star",
+                "mode": "outline"
+              }
+            },
+            {
+              "value": "flower",
+              "label": "花朵",
+              "figure": {
+                "shape": "flower",
+                "mode": "outline"
+              },
+              "nearMiss": "轮廓有相近边角，但缺口方向或边形不吻合。"
+            },
+            {
+              "value": "triangle",
+              "label": "三角形",
+              "figure": {
+                "shape": "triangle",
+                "mode": "outline"
+              },
+              "nearMiss": "轮廓有相近边角，但缺口方向或边形不吻合。"
+            },
+            {
+              "value": "diamond",
+              "label": "菱形",
+              "figure": {
+                "shape": "diamond",
+                "mode": "outline"
+              },
+              "nearMiss": "轮廓有相近边角，但缺口方向或边形不吻合。"
+            }
+          ]
+        },
+        "choices": [
+          {
+            "label": "A",
+            "value": "star"
+          },
+          {
+            "label": "B",
+            "value": "flower"
+          },
+          {
+            "label": "C",
+            "value": "triangle"
+          },
+          {
+            "label": "D",
+            "value": "diamond"
+          }
+        ],
+        "answer": "star",
+        "success": "星星对，星星右边缺尖角和凹进去的边。补缺口要看边、角和缺口方向。",
+        "retry": "先指缺口方向，再说缺口需要圆边、直边、尖角、叶子还是尾巴，然后排除轮廓相近但边角不对的选项。",
+        "parentPrompt": "请她指着缺口说：缺的是哪里？为什么这个图能补上，其他相近图形的边角哪里不一样？",
+        "abilityTags": [
+          "缺口补一补",
+          "视觉闭合",
+          "边角匹配"
+        ],
+        "difficultyNote": "上实式视觉闭合题：只给不完整轮廓，四个选项都有相近边角，需要按缺口方向排除。",
+        "id": "graphic-gap-close-5"
+      },
+      {
+        "level": "L6",
+        "prompt": "这个轮廓缺了一段，原来是哪张完整的图？",
+        "instruction": "先看缺口在哪一边，再看缺口需要圆边、直边、尖角还是尾巴。",
+        "graphicChallenge": {
+          "kind": "closure-match",
+          "stemLabel": "缺口轮廓",
+          "figures": [
+            {
+              "shape": "flower",
+              "color": "#f472b6",
+              "mode": "missing",
+              "gap": "top"
+            }
+          ],
+          "options": [
+            {
+              "value": "circle",
+              "label": "圆形",
+              "figure": {
+                "shape": "circle",
+                "mode": "outline"
+              },
+              "nearMiss": "轮廓有相近边角，但缺口方向或边形不吻合。"
+            },
+            {
+              "value": "star",
+              "label": "星星",
+              "figure": {
+                "shape": "star",
+                "mode": "outline"
+              },
+              "nearMiss": "轮廓有相近边角，但缺口方向或边形不吻合。"
+            },
+            {
+              "value": "flower",
+              "label": "花朵",
+              "figure": {
+                "shape": "flower",
+                "mode": "outline"
+              }
+            },
+            {
+              "value": "apple",
+              "label": "苹果",
+              "figure": {
+                "shape": "apple",
+                "mode": "outline"
+              },
+              "nearMiss": "轮廓有相近边角，但缺口方向或边形不吻合。"
+            }
+          ]
+        },
+        "choices": [
+          {
+            "label": "A",
+            "value": "circle"
+          },
+          {
+            "label": "B",
+            "value": "star"
+          },
+          {
+            "label": "C",
+            "value": "flower"
+          },
+          {
+            "label": "D",
+            "value": "apple"
+          }
+        ],
+        "answer": "flower",
+        "success": "花朵对，花朵上方缺圆圆花瓣。补缺口要看边、角和缺口方向。",
+        "retry": "先指缺口方向，再说缺口需要圆边、直边、尖角、叶子还是尾巴，然后排除轮廓相近但边角不对的选项。",
+        "parentPrompt": "请她指着缺口说：缺的是哪里？为什么这个图能补上，其他相近图形的边角哪里不一样？",
+        "abilityTags": [
+          "缺口补一补",
+          "视觉闭合",
+          "边角匹配"
+        ],
+        "difficultyNote": "上实式视觉闭合题：只给不完整轮廓，四个选项都有相近边角，需要按缺口方向排除。",
+        "id": "graphic-gap-close-6"
+      },
+      {
+        "level": "L6",
+        "prompt": "这个轮廓缺了一段，原来是哪张完整的图？",
+        "instruction": "先看缺口在哪一边，再看缺口需要圆边、直边、尖角还是尾巴。",
+        "graphicChallenge": {
+          "kind": "closure-match",
+          "stemLabel": "缺口轮廓",
+          "figures": [
+            {
+              "shape": "apple",
+              "color": "#ef4444",
+              "mode": "missing",
+              "gap": "top"
+            }
+          ],
+          "options": [
+            {
+              "value": "pear",
+              "label": "梨子",
+              "figure": {
+                "shape": "pear",
+                "mode": "outline"
+              },
+              "nearMiss": "轮廓有相近边角，但缺口方向或边形不吻合。"
+            },
+            {
+              "value": "circle",
+              "label": "圆形",
+              "figure": {
+                "shape": "circle",
+                "mode": "outline"
+              },
+              "nearMiss": "轮廓有相近边角，但缺口方向或边形不吻合。"
+            },
+            {
+              "value": "flower",
+              "label": "花朵",
+              "figure": {
+                "shape": "flower",
+                "mode": "outline"
+              },
+              "nearMiss": "轮廓有相近边角，但缺口方向或边形不吻合。"
+            },
+            {
+              "value": "apple",
+              "label": "苹果",
+              "figure": {
+                "shape": "apple",
+                "mode": "outline"
+              }
+            }
+          ]
+        },
+        "choices": [
+          {
+            "label": "A",
+            "value": "pear"
+          },
+          {
+            "label": "B",
+            "value": "circle"
+          },
+          {
+            "label": "C",
+            "value": "flower"
+          },
+          {
+            "label": "D",
+            "value": "apple"
+          }
+        ],
+        "answer": "apple",
+        "success": "苹果对，苹果上方缺叶子和圆鼓鼓的边。补缺口要看边、角和缺口方向。",
+        "retry": "先指缺口方向，再说缺口需要圆边、直边、尖角、叶子还是尾巴，然后排除轮廓相近但边角不对的选项。",
+        "parentPrompt": "请她指着缺口说：缺的是哪里？为什么这个图能补上，其他相近图形的边角哪里不一样？",
+        "abilityTags": [
+          "缺口补一补",
+          "视觉闭合",
+          "边角匹配"
+        ],
+        "difficultyNote": "上实式视觉闭合题：只给不完整轮廓，四个选项都有相近边角，需要按缺口方向排除。",
+        "id": "graphic-gap-close-7"
+      },
+      {
+        "level": "L6",
+        "prompt": "这个轮廓缺了一段，原来是哪张完整的图？",
+        "instruction": "先看缺口在哪一边，再看缺口需要圆边、直边、尖角还是尾巴。",
+        "graphicChallenge": {
+          "kind": "closure-match",
+          "stemLabel": "缺口轮廓",
+          "figures": [
+            {
+              "shape": "fish",
+              "color": "#38bdf8",
+              "mode": "missing",
+              "gap": "right"
+            }
+          ],
+          "options": [
+            {
+              "value": "leaf",
+              "label": "叶子",
+              "figure": {
+                "shape": "leaf",
+                "mode": "outline"
+              },
+              "nearMiss": "轮廓有相近边角，但缺口方向或边形不吻合。"
+            },
+            {
+              "value": "fish",
+              "label": "小鱼",
+              "figure": {
+                "shape": "fish",
+                "mode": "outline"
+              }
+            },
+            {
+              "value": "pear",
+              "label": "梨子",
+              "figure": {
+                "shape": "pear",
+                "mode": "outline"
+              },
+              "nearMiss": "轮廓有相近边角，但缺口方向或边形不吻合。"
+            },
+            {
+              "value": "star",
+              "label": "星星",
+              "figure": {
+                "shape": "star",
+                "mode": "outline"
+              },
+              "nearMiss": "轮廓有相近边角，但缺口方向或边形不吻合。"
+            }
+          ]
+        },
+        "choices": [
+          {
+            "label": "A",
+            "value": "leaf"
+          },
+          {
+            "label": "B",
+            "value": "fish"
+          },
+          {
+            "label": "C",
+            "value": "pear"
+          },
+          {
+            "label": "D",
+            "value": "star"
+          }
+        ],
+        "answer": "fish",
+        "success": "小鱼对，小鱼右边缺三角尾巴。补缺口要看边、角和缺口方向。",
+        "retry": "先指缺口方向，再说缺口需要圆边、直边、尖角、叶子还是尾巴，然后排除轮廓相近但边角不对的选项。",
+        "parentPrompt": "请她指着缺口说：缺的是哪里？为什么这个图能补上，其他相近图形的边角哪里不一样？",
+        "abilityTags": [
+          "缺口补一补",
+          "视觉闭合",
+          "边角匹配"
+        ],
+        "difficultyNote": "上实式视觉闭合题：只给不完整轮廓，四个选项都有相近边角，需要按缺口方向排除。",
+        "id": "graphic-gap-close-8"
+      }
+    ],
+    "kind": "progressiveSet"
+  }
+}

@@ -179,17 +179,19 @@ test('readable count comparisons preserve all nine input pairs and the required 
   }
 });
 
-test('rearrangement keeps the same count and time comparisons provide both registered clock faces', () => {
+test('rearrangement keeps the same count and time comparisons provide both exact clock states', () => {
   for (const [index,a] of activities.filter(a=>a.primaryFamilyId==='N03'&&a.stage<3).entries()) {
     const [before,after]=a.presentation.evidence.panels;
     assert.equal(before.count,6+index);assert.equal(after.count,before.count);
     assert.notEqual(before.columns,after.columns);
   }
   for (const a of activities.filter(a=>a.primaryFamilyId==='N14'&&a.stage===3)) {
-    const panels=a.presentation.evidence.panels;
-    assert.deepEqual(panels.map(p=>p.label),['开始','结束']);
-    assert.notEqual(panels[0].image.src,panels[1].image.src);
-    for(const panel of panels)assert.ok(existsSync('public'+panel.image.src));
+    assert.equal(a.presentation.evidence.kind,'clockModel');
+    const [start,end]=a.presentation.evidence.clocks;
+    assert.deepEqual([start.label,end.label],['开始','结束']);
+    const variant=(Number(a.id.split('-').at(-1))-1)%3;
+    assert.deepEqual([start.hour,start.minute],[3+variant,20]);
+    assert.equal(end.hour*60+end.minute-start.hour*60-start.minute,25+variant*10);
   }
 });
 

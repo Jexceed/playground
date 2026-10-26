@@ -1,0 +1,54 @@
+.island-bridge-lesson { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:9px 16px; padding:12px 15px; margin:0 0 16px; border:1px solid #e3dfcd; border-radius:16px; background:#fffaf0; color:#5a6657; }
+.island-bridge-key { display:grid; gap:7px; }
+.island-bridge-key strong { font-size:18px; }
+.island-bridge-key > div { display:flex; gap:13px; }
+.island-bridge-key > div > span { display:flex; align-items:center; gap:5px; font-size:18px; }
+.island-bridge-slot { display:inline-flex; align-items:center; justify-content:center; flex-shrink:0; width:23px; height:24px; border:1.5px dashed #98a085; border-radius:5px; background:#fffef1e8; }
+.island-bridge-slot.is-filled { border:1px solid #ad8a4f; background:#f8e4bd; box-shadow:0 1px 0 #9d7f4930; }
+.island-bridge-chip { width:21px; height:20px; }
+.island-chip-deck { fill:#d5ab6d; stroke:#98743e; stroke-width:1; }
+.island-chip-plank { fill:none; stroke:#ae854d; stroke-width:1; }
+.island-chip-rail { fill:none; stroke:#8c6834; stroke-width:2; stroke-linecap:round; }
+.island-bridge-example { display:flex; align-items:center; gap:9px; margin:0; }
+.island-demo-model { display:flex; align-items:flex-start; width:102px; }
+.island-demo-end { position:relative; width:34px; display:flex; flex-direction:column; align-items:center; gap:2px; }
+.island-demo-end img { width:34px; height:28px; object-fit:contain; }
+.island-demo-end .island-bridge-slot { width:22px; height:19px; }
+.island-demo-end .island-bridge-chip { height:17px; }
+.island-demo-crossing { position:relative; flex:1; height:9px; margin:10px -2px 0; border-top:2px solid #98743e; border-bottom:2px solid #98743e; background:repeating-linear-gradient(90deg,#d5ab6d 0 5px,#ae854d 5px 6px); }
+.island-bridge-example figcaption { font-size:18px; line-height:1.55; }
+.island-bridge-listen { display:grid; place-items:center; width:38px; height:38px; flex-shrink:0; border:1px solid #cad9c5; border-radius:50%; background:#eef4e7; color:#47785d; cursor:pointer; }
+.island-map-scroll { overflow-x:auto; max-width:100%; padding:3px 0 5px; overscroll-behavior-x:contain; scrollbar-width:thin; scrollbar-color:#9abeb7 #edf7f8; }
+.is-network .graph-map { height:380px; background:#edf7f8; }
+.is-network[data-island-count="6"] .graph-map { min-width:460px; }
+.is-network .graph-node { width:112px; height:110px; padding:7px 4px; }
+.is-network .graph-island-name { top:-15px; font-size:18px; border-radius:5px; background:#fffdf1ed; color:#4f6853; padding:2px 5px; }
+.island-bridge-goal { display:flex; align-items:center; flex-direction:column; gap:3px; width:100%; }
+.island-goal-total { display:inline-flex; align-items:baseline; gap:3px; padding:2px 6px; border-radius:8px; font-size:18px; line-height:1.1; color:#344f3d; background:#fffdf4eb; white-space:nowrap; }
+.island-goal-total b { font-size:19px; font-weight:800; }
+.island-goal-slots { display:flex; gap:3px; justify-content:center; }
+.island-goal-slots .is-filled { animation:island-bridge-fill .22s ease-out; }
+.island-goal-extra { display:flex; align-items:center; justify-content:center; gap:2px; color:#a64c3a; margin:-2px 0; padding:1px 4px; border-radius:6px; background:#fff5ed; }
+.island-goal-extra .island-bridge-slot { width:16px; height:17px; border-color:#b36250; background:#f7d5c5; }
+.island-goal-extra .island-bridge-chip { width:14px; height:15px; }
+.island-goal-extra .island-chip-deck { fill:#d4957e; stroke:#a15a45; }
+.island-goal-extra .island-chip-rail,.island-goal-extra .island-chip-plank { stroke:#9c5541; }
+.island-goal-status { display:flex; align-items:center; gap:2px; padding:2px 7px; border-radius:7px; background:#fffdf1ed; color:#7c6c3e; font-size:18px; line-height:1.15; font-weight:650; white-space:nowrap; }
+.island-bridge-goal[data-status="exact"] .island-goal-status { color:#3a754f; background:#edf9e7; }
+.island-bridge-goal[data-status="over"] .island-goal-status { color:#a34c3a; background:#fff0e7; }
+.is-network .graph-road-control { width:40px; height:40px; }
+.island-connection-note { display:flex; align-items:center; flex-wrap:wrap; gap:6px 12px; margin:10px 0 0; color:#687d70; font-size:18px; }
+.island-connection-note .island-pan-hint { display:none; }
+@keyframes island-bridge-fill { from { transform:scale(.78); opacity:.4; } to { transform:scale(1); opacity:1; } }
+@media(max-width:600px) {
+  .island-bridge-lesson { padding:10px; gap:10px; }
+  .island-bridge-key strong { font-size:18px; }
+  .island-bridge-key > div > span { font-size:18px; }
+  .island-bridge-example { gap:5px; }
+  .island-demo-model { width:85px; }
+  .island-bridge-example figcaption { font-size:18px; }
+  .island-bridge-listen { width:34px; height:34px; margin-left:auto; }
+  .is-network[data-island-count="6"] .island-pan-hint { display:inline; }
+  .island-connection-note { font-size:18px; }
+}
+@media(prefers-reduced-motion:reduce) { .island-goal-slots .is-filled { animation:none; } }

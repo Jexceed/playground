@@ -1,0 +1,93 @@
+[
+  {
+    "action": "进入第1题",
+    "fallback": null,
+    "source": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E7%AC%AC1%E6%AD%A5-%E7%BF%BB%E7%AC%AC1%E5%BC%A0.mp3",
+    "state": "ended",
+    "text": "ended /audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-第1步-翻第1张.mp3"
+  },
+  {
+    "action": "进入第2题",
+    "fallback": null,
+    "source": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E7%AC%AC1%E6%AD%A5-%E7%BF%BB%E7%AC%AC2%E5%BC%A0.mp3",
+    "state": "ended",
+    "text": "ended /audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-第1步-翻第2张.mp3"
+  },
+  {
+    "action": "进入第3题",
+    "fallback": null,
+    "source": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E7%AC%AC1%E6%AD%A5-%E7%BF%BB%E7%AC%AC3%E5%BC%A0.mp3",
+    "state": "ended",
+    "text": "ended /audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-第1步-翻第3张.mp3"
+  },
+  {
+    "action": "进入第4题",
+    "fallback": null,
+    "source": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%AC%AC1%E6%AD%A5-%E7%BF%BB%E7%AC%AC1%E5%BC%A0-%E7%AC%AC2%E6%AD%A5-%E7%BF%BB%E7%AC%AC2%E5%BC%A0.mp3",
+    "state": "ended",
+    "text": "ended /audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-第1步-翻第1张-第2步-翻第2张.mp3"
+  },
+  {
+    "action": "进入第5题",
+    "fallback": null,
+    "source": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%AC%AC1%E6%AD%A5-%E7%BF%BB%E7%AC%AC2%E5%BC%A0-%E7%AC%AC2%E6%AD%A5-%E7%BF%BB%E7%AC%AC3%E5%BC%A0.mp3",
+    "state": "ended",
+    "text": "ended /audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-第1步-翻第2张-第2步-翻第3张.mp3"
+  },
+  {
+    "action": "进入第6题",
+    "fallback": null,
+    "source": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%AC%AC1%E6%AD%A5-%E7%BF%BB%E7%AC%AC3%E5%BC%A0-%E7%AC%AC2%E6%AD%A5-%E7%BF%BB%E7%AC%AC4%E5%BC%A0.mp3",
+    "state": "ended",
+    "text": "ended /audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-第1步-翻第3张-第2步-翻第4张.mp3"
+  },
+  {
+    "action": "进入第7题",
+    "fallback": null,
+    "source": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%AC%AC1%E6%AD%A5-%E7%BF%BB%E7%AC%AC1%E5%BC%A0-%E7%AC%AC2%E6%AD%A5-%E7%BF%BB%E7%AC%AC2%E5%BC%A0-%E7%AC%AC3%E6%AD%A5-%E7%BF%BB%E7%AC%AC1%E5%BC%A0.mp3",
+    "state": "ended",
+    "text": "ended /audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-第1步-翻第1张-第2步-翻第2张-第3步-翻第1张.mp3"
+  },
+  {
+    "action": "进入第8题",
+    "fallback": null,
+    "source": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%AC%AC1%E6%AD%A5-%E7%BF%BB%E7%AC%AC2%E5%BC%A0-%E7%AC%AC2%E6%AD%A5-%E7%BF%BB%E7%AC%AC3%E5%BC%A0-%E7%AC%AC3%E6%AD%A5-%E7%BF%BB%E7%AC%AC2%E5%BC%A0.mp3",
+    "state": "ended",
+    "text": "ended /audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-第1步-翻第2张-第2步-翻第3张-第3步-翻第2张.mp3"
+  },
+  {
+    "action": "进入第9题",
+    "fallback": null,
+    "source": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E7%AC%AC1%E6%AD%A5-%E7%BF%BB%E7%AC%AC3%E5%BC%A0-%E7%AC%AC2%E6%AD%A5-%E7%BF%BB%E7%AC%AC4%E5%BC%A0-%E7%AC%AC3%E6%AD%A5-%E7%BF%BB%E7%AC%AC3%E5%BC%A0.mp3",
+    "state": "ended",
+    "text": "ended /audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-第1步-翻第3张-第2步-翻第4张-第3步-翻第3张.mp3"
+  },
+  {
+    "action": "切回第3题",
+    "fallback": null,
+    "source": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E7%AC%AC1%E6%AD%A5-%E7%BF%BB%E7%AC%AC3%E5%BC%A0.mp3",
+    "state": "ended",
+    "text": "ended /audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-第1步-翻第3张.mp3"
+  },
+  {
+    "action": "第3题顶部听题",
+    "fallback": null,
+    "source": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E7%AC%AC1%E6%AD%A5-%E7%BF%BB%E7%AC%AC3%E5%BC%A0.mp3",
+    "state": "ended",
+    "text": "ended /audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-第1步-翻第3张.mp3"
+  },
+  {
+    "action": "第3题单步按钮",
+    "fallback": null,
+    "source": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E7%AC%AC1%E6%AD%A5-%E7%BF%BB%E7%AC%AC3%E5%BC%A0.mp3",
+    "state": "ended",
+    "text": "ended /audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-第1步-翻第3张.mp3"
+  },
+  {
+    "action": "中断第9题后切回第3题",
+    "fallback": null,
+    "source": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E7%AC%AC1%E6%AD%A5-%E7%BF%BB%E7%AC%AC3%E5%BC%A0.mp3",
+    "state": "ended",
+    "text": "ended /audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-第1步-翻第3张.mp3"
+  }
+]

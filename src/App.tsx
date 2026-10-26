@@ -300,7 +300,7 @@ export function App() {
                   >
                     {progress.completedIds.includes(game.id) && <Check size={16} />}
                     <span>{game.title}</span>
-                    <small>{game.kind === "activitySet" ? "动手 · " : ""}{game.rounds.length} 题</small>
+                    <small>{game.rounds.length} 题</small>
                   </button>
                   ))}
                 </div>)

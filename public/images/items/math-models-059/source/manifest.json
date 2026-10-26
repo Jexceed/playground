@@ -1,0 +1,85 @@
+{
+  "tool": "built-in image_gen",
+  "assets": [
+    {
+      "name": "note",
+      "original": "/Users/chiang/.codex/generated_images/01a1676c-5068-7762-9155-f135af567176/exec-895897be-2c91-4eaa-98a4-28ec8f2cf846.png",
+      "source": "public/images/items/math-models-059/source/note.png",
+      "runtime": "public/images/items/math-models-059/note.png",
+      "prompt": "Use case: stylized-concept. Asset type: one transparent play-money banknote sprite for a polished children's maths app. A single flat rectangular paper banknote viewed exactly front-on, perfectly horizontal, aspect ratio 2:1. Warm muted sage-green and cream toy currency, rounded corners, tasteful engraved leaf ornaments around the outer border, subtle paper fibre and softly embossed print, high quality storybook 3D illustration, soft upper-left studio light and a very small contact shadow. The large central oval is completely blank light cream, occupying the middle 55% width and 55% height, reserved for an app-rendered denomination. No words, numbers, letters, signatures, flags, portrait, brand or real currency designs. Exactly one note, no stacks, hands or other objects. Actual transparent alpha outside the note; no white rectangle backdrop. Note occupies about 90% canvas width with equal margins, clear straight edges, no perspective or tilt.",
+      "processing": "Proportional downscale only, full canvas and alpha preserved.",
+      "sourceSize": [
+        1774,
+        887
+      ],
+      "size": [
+        640,
+        320
+      ],
+      "hasAlpha": true,
+      "sourceSHA256": "872dd166ed454b858062b3f4e906229a3149f2ef8d975e8d5e157d74a43132e8",
+      "sha256": "0d3ad8b0cd3c3373ed1920ecf409dcfd45cbd4b24696913b894a12e848561490"
+    },
+    {
+      "name": "coin",
+      "original": "/Users/chiang/.codex/generated_images/01a1676c-5068-7762-9155-f135af567176/exec-83e6aab8-cf40-4039-b636-6110c5205885.png",
+      "source": "public/images/items/math-models-059/source/coin.png",
+      "runtime": "public/images/items/math-models-059/coin.png",
+      "prompt": "Use case: stylized-concept. Asset type: one transparent play-money coin sprite for a polished children's maths app. A single round warm golden coin viewed exactly front-on, a perfectly circular outline. High quality softly modelled storybook 3D illustration, subtle fine metal texture, gently raised ridged rim with a simple restrained leaf decoration around the outermost border. Large central face completely blank matte pale gold, reserved for a large app-rendered denomination. Soft upper-left studio light, just a slight edge thickness/shadow, no perspective ellipse or tilt. No words, letters, numerals, currency symbols, portrait, logo, stars or other objects. Exactly one coin centered, circle occupies 86% of square canvas width. True transparent alpha outside the coin; no white/colored backdrop.",
+      "processing": "Proportional downscale only, full canvas and alpha preserved.",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        320,
+        320
+      ],
+      "hasAlpha": true,
+      "sourceSHA256": "c150bf013caa5e1da78a5b98ef33878664e13377a6ca8531fd3e4f4ec47aab1c",
+      "sha256": "f7c425b868bc07562eb1dec4861cc6e506ce924487e8ca430bb139c4ba310f58"
+    },
+    {
+      "name": "water-tall",
+      "original": "/Users/chiang/.codex/generated_images/01a1676c-5068-7762-9155-f135af567176/exec-c3477769-efd0-445b-b5a4-1e4d5fe622a3.png",
+      "source": "public/images/items/math-models-059/source/water-tall.png",
+      "runtime": "public/images/items/math-models-059/water-tall.png",
+      "prompt": "Use case: scientific-educational. One isolated drinking glass sprite on a true transparent background for a children's water-conservation activity. Square canvas, frontal view with a slight visible oval top rim. A clear cylindrical tall narrow glass, flat base on y=88% of the canvas, top rim at y=18%, diameter about30% of canvas width, centered horizontally. It contains clean pale turquoise water up to y=38%, so water depth is50% of canvas height. Water surface is a gentle horizontal ellipse; sides are vertical, not a cone. Sophisticated softly modelled storybook 3D illustration, subtle glass reflections, delicate highlights, soft upper-left lighting, tiny soft ground shadow. Entire glass and margins visible. No text, markings, graduations, numbers, arrows, decorations, hands, people or other objects. The neutral canvas framing is deliberate: do not zoom or tightly crop. Preserve a clean transparent alpha around and through the glass where appropriate. This will be paired with a wider low vessel holding the same amount.",
+      "originalBrief": "Use case: scientific-educational. One isolated drinking glass sprite on a true transparent background for a children's water-conservation activity. Square canvas, frontal view with a slight visible oval top rim. A clear cylindrical tall narrow glass, flat base on y=88% of the canvas, top rim at y=18%, diameter about30% of canvas width, centered horizontally. It contains clean pale turquoise water up to y=38%, so water depth is50% of canvas height. Water surface is a gentle horizontal ellipse; sides are vertical, not a cone. Sophisticated softly modelled storybook 3D illustration, subtle glass reflections, delicate highlights, soft upper-left lighting, tiny soft ground shadow. Entire glass and margins visible. No text, markings, graduations, numbers, arrows, decorations, hands, people or other objects. The neutral canvas framing is deliberate: do not zoom or tightly crop. Preserve a clean transparent alpha around and through the glass where appropriate. This will be paired with a wider low vessel holding the same amount.",
+      "reference": null,
+      "processing": "Proportional downscale only; full comparison canvas and alpha preserved.",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        640,
+        640
+      ],
+      "hasAlpha": true,
+      "sourceSHA256": "0375cc215a354cfb656784d81c3f26c3f5751ae6e3d8c625bbf8d23af9e214d6",
+      "sha256": "a7fea6576fb1a4f71659dd0ebff88f38cbfbab9095709f15f0309aa82e2c43d7"
+    },
+    {
+      "name": "water-wide",
+      "original": "/Users/chiang/.codex/generated_images/01a1676c-5068-7762-9155-f135af567176/exec-98d49413-a588-4fe7-b7ff-3f1d056b37e2.png",
+      "source": "public/images/items/math-models-059/source/water-wide.png",
+      "runtime": "public/images/items/math-models-059/water-wide.png",
+      "prompt": "Use case: precise-object-edit. Edit this wide low cylindrical glass only by lowering the water surface. Preserve the exact vessel, square canvas, camera, glass rim, diameter, height, base, reflections, position, and transparent background. The water is currently too deep. Keep the water bottom at the existing inner bottom of the vessel, but REDUCE THE VERTICAL DEPTH OF WATER TO HALF of its current depth. Lower the horizontal oval water surface accordingly, leaving a visibly shallow turquoise layer close to the bottom. No changes to vessel size or perspective, no text, numbers, objects, spilling or splashing. The intended companion is a narrow glass about 2.3 times narrower with a taller water column; this correction is required so the wide vessel does not appear to gain water.",
+      "originalBrief": "Use case: scientific-educational. One isolated wide low glass vessel sprite on a true transparent background for a children's water-conservation activity. Square canvas, frontal view with a slight visible oval top rim. A clear cylindrical wide low glass bowl, flat base on y=88% of canvas, top rim at y=54%, diameter about60% of canvas width, centered horizontally. It contains clean pale turquoise water up to y=75.5%, so the water is visibly shallow, only12.5% of canvas height. Water surface is a gentle horizontal ellipse; sides vertical, not tapered. This cylinder has twice the diameter and one quarter the water depth of its tall-glass companion, representing the same volume. Sophisticated softly modelled storybook 3D illustration, subtle glass reflections, delicate highlights, soft upper-left lighting, tiny soft ground shadow. Entire vessel and full canvas visible. No text, markings, graduations, numbers, arrows, decorations, hands, people or other objects. The neutral canvas framing is deliberate: do not zoom or tightly crop. Preserve clean transparent alpha around and through the glass where appropriate.",
+      "reference": "public/images/items/math-models-059/source/water-wide-initial.png",
+      "processing": "Proportional downscale only; full comparison canvas and alpha preserved.",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        640,
+        640
+      ],
+      "hasAlpha": true,
+      "sourceSHA256": "59b1cde99d1516f71d0d1bd069cfbd1567ce3fcf557d9e7372160160c52eb7c3",
+      "sha256": "aeafd717804f88c18dd7833b555a9056d31d7dde28adb9fcd8fde68a39d5ada6"
+    }
+  ]
+}

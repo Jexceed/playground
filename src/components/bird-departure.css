@@ -1,0 +1,23 @@
+.bird-departure-board { overflow:hidden; margin:18px 0; border:1px solid #dce5d5; border-radius:20px; background:#f8fbf3; }
+.bird-departure-scene { position:relative; height:310px; background:linear-gradient(180deg,#edf7f7,#fafcf3); }
+.bird-branch-label,.bird-away-label { position:absolute; top:16px; font-size:20px; font-weight:650; color:#4f6d59; }
+.bird-branch-label { left:20px; }
+.bird-away-label { right:14px; display:flex; align-items:center; gap:4px; color:#56808e; }
+.bird-away-label svg { width:24px; height:24px; }
+.bird-perch { position:absolute; left:0; width:78%; height:auto; transform:translateY(-57%); pointer-events:none; }
+.departure-bird { position:absolute; width:clamp(38px,4.3vw,64px); aspect-ratio:1; transform:translate(-50%,-94%); transition:left 1.1s ease-in-out,top 1.1s ease-in-out; }
+.departure-bird img { width:100%; height:100%; object-fit:contain; transform:scaleX(-1); }
+.departure-bird.is-flying { width:clamp(38px,4.3vw,64px); }
+.bird-departure-controls { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px; padding:14px 18px 18px; }
+.bird-departure-controls p { margin:0; font-size:20px; line-height:1.5; color:#4d685a; }
+.bird-departure-controls button { display:flex; align-items:center; justify-content:center; gap:8px; min-height:48px; padding:10px 16px; font-size:20px; line-height:1.4; border:1px solid #adc9b6; border-radius:12px; color:#38664e; background:#edf6eb; }
+.bird-departure-controls button:hover { background:#e0efdc; }
+.bird-departure-controls button:focus-visible { outline:3px solid #bc984d; outline-offset:3px; }
+@media(max-width:600px) {
+ .bird-departure-scene { height:285px; }
+ .bird-departure-controls { padding:12px; }
+ .bird-departure-controls button { width:100%; }
+ .bird-branch-label,.bird-away-label { font-size:18px; }
+ .bird-away-label { top:14px; right:8px; }
+}
+@media(prefers-reduced-motion:reduce) { .departure-bird { transition:none; } }

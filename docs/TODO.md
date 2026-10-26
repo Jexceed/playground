@@ -5,6 +5,10 @@ small enough to turn into a Spec Kit feature.
 
 ## P0
 
+- Continue 059 from `specs/059-chapter-readability/reviews/chapter-ledger.json`: all 24 math groups/266 questions now have browser review; the other 91 groups still need full content/variant review. Per the user's 2026-10-26 corrections, prioritize the actual current Mac window and do not expand responsive layout work. Equivalent text roles in 启蒙/探索 now share sizes; keep them aligned rather than restoring the old exploration-only smaller overrides. Do not reintroduce a universal 18px minimum: auxiliary question numbers, counts and progress tags must retain the original hierarchy; remove small-print explanation layers and use concrete models/short task cues instead. Check completed markers and title/count alignment in addition to font size and overflow; those earlier measurements missed the sidebar regression. Preserve the full scope and existing younger-child activities.
+
+
+
 - Complete the remaining native input checks for 035–039 beyond the targeted 043 acceptance. The corrective app's native startup and E03 default screenshot now confirm equal large images for different caption lengths and visible page controls. 043 adds targeted new-card, rule and direction checks; retain the separate remaining full selection/drag/four-card matrix and N02/N05/N14, P01, A05, E04/L07/P06 cases not expressly signed off there. Dev checkpoint synchronization is separate from this remaining acceptance coverage; browser input tests are not counted as native tests.
 
 - Observe 6-, 7- and 8-year-old parent-child play and calibrate reading, interaction and reasoning load for the 597 newly authored activities. Technical QA is not age validation.
@@ -40,6 +44,20 @@ small enough to turn into a Spec Kit feature.
   privacy label, screenshots, product page, and review notes.
 
 ## P1
+
+- Resolve the two full-suite failures reproduced at the pre-checkpoint commit `014a56a3` on 2026-10-26: synchronize the Douyin Math Island export with the current source wording (`douyin-math-export.test.mjs`), and compare unique registered image paths in the 045 story-art coverage check (`order-story-completion.test.mjs`, the soil-pot image has two gallery aliases). The current 053–059 checkpoint passes 280/282 tests; these existing failures remain open.
+
+- Observe parent-child play of 058's concrete word cards: whether the fixed tree/child reference conveys high/low, the kitten/table relation conveys up/down, and common picture scale supports length/count comparison. Retain the short spoken words and parent explanation; adult art review does not substitute for this observation.
+
+- Observe parent-child play of 057's redrawn closure figures: whether the continuous contour and small endpoint marks make each local gap clear, especially the apple top and fish tail. Visual/geometric/native checks do not substitute for child-comprehension observation.
+
+- Observe parent-child play of 056: whether one slot conveys one required bridge, a bridge being counted at both ends is understood, and excess red bridges prompt adjustment. Confirm that “刚好” is understood as a local bridge count while all islands must still connect.
+
+- Observe parent-child play of 055: whether children distinguish fixed pieces, the one trial stone and checked independent positions, and understand that previewing a square is separate from selecting it. Keep this observation separate from verified geometric/scoring and input behavior.
+
+- Observe children using 054's number-walk model: whether the jump diagram distinguishes one from two squares, paired footprints convey both friends moving each turn, and selecting a friend before placing it is understood. Keep the full nine-round engineering pass separate from child-comprehension validation.
+
+- Include 053's action-first flip narration in the next parent-child observation: confirm children hear which card to flip on entry and can replay the ordered steps. Keep this child-understanding check distinct from local-audio playback and engineering validation.
 
 - Observe parent-child play after the 052 art review, especially quantity-chip readability, the overhead facing figure, phonics references and pictured islands. Technical and adult visual checks do not establish child comprehension. Keep shared controls and navigation outside future picture-art styling changes.
 

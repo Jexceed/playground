@@ -1,0 +1,126 @@
+Window: "小小思考屋", App: 小小思考屋.
+0 standard window 小小思考屋, Secondary Actions: Raise
+	1 scroll area
+		2 HTML content Description: 小小思考屋, URL: tauri://localhost
+			3 container
+				4 container 主题地图
+					5 image 小小思考屋 亲子思维游戏
+					6 container 选择启蒙或探索
+						7 toggle button 启蒙, Value: off
+						8 toggle button 探索, Value: on
+					9 button (collapsed) 数字岛 144 题, Secondary Actions: Expand
+					10 button (expanded) 逻辑屋 126 题, Secondary Actions: Collapse
+					11 button (collapsed) 图形工坊 186 题, Secondary Actions: Expand
+					12 button (collapsed) 记忆小屋 81 题, Secondary Actions: Expand
+					13 button (collapsed) 语言花园 54 题, Secondary Actions: Expand
+					14 button (collapsed) 生活实验室 30 题, Secondary Actions: Expand
+					15 container 关卡列表
+						16 container
+							17 text 探索  ·  逻辑屋
+						18 text 15  个
+						19 search text field (settable) 查找当前主题题组, Placeholder: 查找题组
+							20 text 查找题组
+						21 heading 分类与线索, Value: 3
+							22 text 分类与线索
+						23 button 规则收纳盒 动手 · 6 题
+						24 button 线索排排队 动手 · 6 题
+						25 button 分类换个角度 动手 · 9 题
+						26 button 关系接力 动手 · 9 题
+						27 button 线索够不够 动手 · 9 题
+						28 button 格子里的线索 动手 · 9 题
+						29 heading 看与记, Value: 3
+							30 text 看与记
+						31 button 记忆摆一摆 动手 · 6 题
+						32 heading 顺序与推理, Value: 3
+							33 text 顺序与推理
+						34 button 路线设计师 动手 · 9 题
+						35 button 先后有讲究 动手 · 9 题
+						36 button 证据说明什么 动手 · 9 题
+						37 button 学会新规则 动手 · 9 题
+						38 heading 变化与策略, Value: 3
+							39 text 变化与策略
+						40 button 翻牌小机关 动手 · 9 题
+						41 button 两位朋友走格子 动手 · 9 题
+						42 button 棋盘下一步 动手 · 9 题
+						43 button 小岛连桥 动手 · 9 题
+				44 container 当前部分
+					45 text 探索
+					46 text 组合线索，多步思考 75  组 ·  621  题
+				47 container 棋盘下一步
+					48 container 棋盘下一步
+						49 container
+							50 text 先试一试  · 第  1  / 9  题
+							51 heading 棋盘下一步, Value: 1
+								52 text 棋盘下一步
+							53 button 听一听题目
+						54 heading 在哪些空格补一颗黑子，能连成三颗黑子？, Value: 2
+							55 text 在哪些空格补一颗黑子，能连成三颗黑子？
+						56 text 点空格试放一颗，合适就选上。每个位置单独试。
+						57 container 在空格里试放一颗棋子
+							58 text 原有棋子 点圈内试放 新补的一颗
+							59 button 听棋盘怎么玩
+							60 container 原棋盘与一颗试放棋子
+								61 image 第1行第1列，原有黑子
+								62 image 第1行第2列，原有黑子
+								63 button 第1行第3列，空格，点这里试放
+								64 button 第2行第1列，空格，点这里试放
+								65 button 第2行第2列，空格，点这里试放
+								66 button 第2行第3列，空格，点这里试放
+								67 button 第3行第1列，空格，点这里试放
+								68 button 第3行第2列，空格，点这里试放
+								69 button 第3行第3列，空格，点这里试放
+							70 heading 三颗连成一条线, Value: 3
+								71 text 三颗连成一条线
+							72 container
+								73 image 横着三颗黑子连成一线
+								74 text 横着
+							75 container
+								76 image 竖着三颗黑子连成一线
+								77 text 竖着
+							78 container
+								79 image 斜着三颗黑子连成一线
+								80 text 斜着
+							81 container
+								82 text 点一个圈，试放一颗 换一个空格，上一颗会收回。
+								83 button (disabled) 选这个空格
+								84 button (disabled) 拿回试放的棋子
+							85 text 已选 0 个位置
+							86 text 勾选的是位置，每个都单独试。
+						87 button (disabled) 撤销上一步
+						88 button 清空
+						89 button 提示
+						90 button 选好了，看看
+						91 container
+							92 text 这次尝试  0  次 · 提示  0  次
+							93 button 先跳过
+				94 container 题目导航
+					95 text 题目导航
+					96 text 0  /  9  已做
+					97 button 跳到第 1 题
+					98 button 跳到第 2 题
+					99 button 跳到第 3 题
+					100 button 跳到第 4 题
+					101 button 跳到第 5 题
+					102 button 跳到第 6 题
+					103 button 跳到第 7 题
+					104 button 跳到第 8 题
+					105 button 跳到第 9 题
+				106 summary 给家长 · 陪玩提示, Value: off
+					107 text 给家长 · 陪玩提示
+				108 summary 探索 · 成长记录, Value: off
+					109 text 探索
+					110 text  · 成长记录
+		111 scroll bar (settable, float) 0.6612903
+	112 close button
+	113 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	114 minimize button
+	115 text 小小思考屋
+116 menu bar
+	117 小小思考屋
+	118 File
+	119 Edit
+	120 View
+	121 Window
+	122 Help
+
+The focused UI element is 2 HTML content Description: 小小思考屋, URL: tauri://localhost

@@ -1,7 +1,7 @@
 import { ArrowRight, Check, Pointer, RotateCcw, RotateCw, Volume2 } from 'lucide-react';
 import { useEffect, useState, type CSSProperties, type ReactNode } from 'react';
 import type { ActivityResponse, CardFlipEvidence, RuleMachineEvidence } from '../domain/activity';
-import { RULE_PLAY_COPY } from '../domain/rule-play';
+import { RULE_PLAY_COPY, cardFlipStepSpeech } from '../domain/rule-play';
 import { imageGallery } from '../data/imageGallery';
 import { speak } from '../speech';
 import { ActivityImage } from './ActivityTokenArt';
@@ -121,7 +121,7 @@ export function CardFlipBoard({ model, response, disabled, onFlip }: {
       </button>
     </div>
     <ol className="flip-step-list" aria-label="翻牌顺序">{model.steps.map((target, index) => <li key={index}>
-      <button type="button" className="flip-step" aria-label={`听第${index + 1}步：翻第${target + 1}张`} onClick={() => void speak(`第${index + 1}步，翻第${target + 1}张。`)}>
+      <button type="button" className="flip-step" aria-label={`听第${index + 1}步：翻第${target + 1}张`} onClick={() => void speak(cardFlipStepSpeech(target, index))}>
         <span className="flip-step-title"><b>{index + 1}</b>翻第 {target + 1} 张<Volume2 size={16} /></span>
         <SmallCards initial={model.initial} target={target} />
       </button>{index < model.steps.length - 1 && <ArrowRight className="flip-step-arrow" size={20} aria-hidden="true" />}

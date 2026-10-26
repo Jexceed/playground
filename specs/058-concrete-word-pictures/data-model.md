@@ -1,0 +1,2 @@
+# 数据
+8个GalleryImage为独立PNG，style=illustration，实际width/height登记，源图与完整prompt记录。E01matching只替换token.image，不改label/speechText/tokenId/leftIds/rightIds/expectedPairs/revision。旧diagram仍注册以保留历史完整性。新增精确image-change和gallery-addition记录用于旧冻结快照比较，不归一化答案或文案。

@@ -1,0 +1,212 @@
+{
+  "mobile": {
+    "buttonWidth": 112,
+    "mapWidth": 460,
+    "page": 375,
+    "scrollWidth": 460,
+    "viewport": 375,
+    "visibleWidth": 321
+  },
+  "voice": {
+    "lastLocalVoiceSource": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-a%E5%B2%9B%E8%A6%813%E5%BA%A7%E6%A1%A5.mp3",
+    "lastSpeechSource": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-a%E5%B2%9B%E8%A6%813%E5%BA%A7%E6%A1%A5.mp3"
+  },
+  "nodeConnection": {
+    "edges": [
+      {
+        "count": 1,
+        "id": "e0"
+      },
+      {
+        "count": 0,
+        "id": "e1"
+      },
+      {
+        "count": 0,
+        "id": "e2"
+      },
+      {
+        "count": 0,
+        "id": "e3"
+      },
+      {
+        "count": 0,
+        "id": "e4"
+      },
+      {
+        "count": 0,
+        "id": "e5"
+      },
+      {
+        "count": 0,
+        "id": "middle"
+      }
+    ],
+    "goals": [
+      {
+        "current": 1,
+        "empty": 2,
+        "extra": 0,
+        "filled": 1,
+        "id": "island-goal-n0",
+        "label": "还差2座",
+        "state": "short",
+        "target": 3
+      },
+      {
+        "current": 1,
+        "empty": 2,
+        "extra": 0,
+        "filled": 1,
+        "id": "island-goal-n1",
+        "label": "还差2座",
+        "state": "short",
+        "target": 3
+      },
+      {
+        "current": 0,
+        "empty": 2,
+        "extra": 0,
+        "filled": 0,
+        "id": "island-goal-n2",
+        "label": "还差2座",
+        "state": "short",
+        "target": 2
+      },
+      {
+        "current": 0,
+        "empty": 2,
+        "extra": 0,
+        "filled": 0,
+        "id": "island-goal-n3",
+        "label": "还差2座",
+        "state": "short",
+        "target": 2
+      },
+      {
+        "current": 0,
+        "empty": 2,
+        "extra": 0,
+        "filled": 0,
+        "id": "island-goal-n4",
+        "label": "还差2座",
+        "state": "short",
+        "target": 2
+      },
+      {
+        "current": 0,
+        "empty": 2,
+        "extra": 0,
+        "filled": 0,
+        "id": "island-goal-n5",
+        "label": "还差2座",
+        "state": "short",
+        "target": 2
+      }
+    ],
+    "phase": "respond",
+    "primary": "rgb(65, 125, 95)",
+    "status": "",
+    "viewport": 375,
+    "width": 375
+  },
+  "keyboard": {
+    "edges": [
+      {
+        "count": 1,
+        "id": "e0"
+      },
+      {
+        "count": 0,
+        "id": "e1"
+      },
+      {
+        "count": 0,
+        "id": "e2"
+      },
+      {
+        "count": 0,
+        "id": "e3"
+      },
+      {
+        "count": 0,
+        "id": "e4"
+      },
+      {
+        "count": 0,
+        "id": "e5"
+      },
+      {
+        "count": 1,
+        "id": "middle"
+      }
+    ],
+    "goals": [
+      {
+        "current": 1,
+        "empty": 2,
+        "extra": 0,
+        "filled": 1,
+        "id": "island-goal-n0",
+        "label": "还差2座",
+        "state": "short",
+        "target": 3
+      },
+      {
+        "current": 2,
+        "empty": 1,
+        "extra": 0,
+        "filled": 2,
+        "id": "island-goal-n1",
+        "label": "还差1座",
+        "state": "short",
+        "target": 3
+      },
+      {
+        "current": 0,
+        "empty": 2,
+        "extra": 0,
+        "filled": 0,
+        "id": "island-goal-n2",
+        "label": "还差2座",
+        "state": "short",
+        "target": 2
+      },
+      {
+        "current": 0,
+        "empty": 2,
+        "extra": 0,
+        "filled": 0,
+        "id": "island-goal-n3",
+        "label": "还差2座",
+        "state": "short",
+        "target": 2
+      },
+      {
+        "current": 1,
+        "empty": 1,
+        "extra": 0,
+        "filled": 1,
+        "id": "island-goal-n4",
+        "label": "还差1座",
+        "state": "short",
+        "target": 2
+      },
+      {
+        "current": 0,
+        "empty": 2,
+        "extra": 0,
+        "filled": 0,
+        "id": "island-goal-n5",
+        "label": "还差2座",
+        "state": "short",
+        "target": 2
+      }
+    ],
+    "phase": "respond",
+    "primary": "rgb(65, 125, 95)",
+    "status": "",
+    "viewport": 375,
+    "width": 375
+  }
+}

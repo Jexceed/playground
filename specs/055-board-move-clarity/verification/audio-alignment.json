@@ -1,0 +1,54 @@
+{
+  "lines": 4232,
+  "manifest": 4232,
+  "mismatches": 0,
+  "failures": [],
+  "fallback": false,
+  "cases": [
+    {
+      "id": "explore-board-strategy-1",
+      "narration": "在哪些空格补一颗黑子，能连成三颗黑子？圈里是空格，没有棋子。点一个空格试放一颗黑子，合适就选上，再试别的空格。每个选中的位置，都要单独试。横、竖或对角线，三颗黑子连成一条直线。把所有能达成的空格都找出来。",
+      "localClip": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%9C%A8%E5%93%AA%E4%BA%9B%E7%A9%BA%E6%A0%BC%E8%A1%A5%E4%B8%80%E9%A2%97%E9%BB%91%E5%AD%90-%E8%83%BD%E8%BF%9E%E6%88%90%E4%B8%89%E9%A2%97%E9%BB%91%E5%AD%90-%E5%9C%88%E9%87%8C%E6%98%AF%E7%A9%BA%E6%A0%BC-%E6%B2%A1%E6%9C%89%E6%A3%8B%E5%AD%90-%E7%82%B9%E4%B8%80%E4%B8%AA%E7%A9%BA%E6%A0%BC%E8%AF%95%E6%94%BE%E4%B8%80%E9%A2%97%E9%BB%91%E5%AD%90-%E5%90%88%E9%80%82%E5%B0%B1%E9%80%89%E4%B8%8A-%E5%86%8D%E8%AF%95%E5%88%AB%E7%9A%84%E7%A9%BA%E6%A0%BC-%E6%AF%8F%E4%B8%AA%E9%80%89%E4%B8%AD%E7%9A%84%E4%BD%8D%E7%BD%AE-%E9%83%BD%E8%A6%81%E5%8D%95%E7%8B%AC%E8%AF%95-%E6%A8%AA-%E7%AB%96%E6%88%96.mp3"
+    },
+    {
+      "id": "explore-board-strategy-2",
+      "narration": "在哪些空格补一颗黑子，能连成三颗黑子？圈里是空格，没有棋子。点一个空格试放一颗黑子，合适就选上，再试别的空格。每个选中的位置，都要单独试。横、竖或对角线，三颗黑子连成一条直线。把所有能达成的空格都找出来。",
+      "localClip": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%9C%A8%E5%93%AA%E4%BA%9B%E7%A9%BA%E6%A0%BC%E8%A1%A5%E4%B8%80%E9%A2%97%E9%BB%91%E5%AD%90-%E8%83%BD%E8%BF%9E%E6%88%90%E4%B8%89%E9%A2%97%E9%BB%91%E5%AD%90-%E5%9C%88%E9%87%8C%E6%98%AF%E7%A9%BA%E6%A0%BC-%E6%B2%A1%E6%9C%89%E6%A3%8B%E5%AD%90-%E7%82%B9%E4%B8%80%E4%B8%AA%E7%A9%BA%E6%A0%BC%E8%AF%95%E6%94%BE%E4%B8%80%E9%A2%97%E9%BB%91%E5%AD%90-%E5%90%88%E9%80%82%E5%B0%B1%E9%80%89%E4%B8%8A-%E5%86%8D%E8%AF%95%E5%88%AB%E7%9A%84%E7%A9%BA%E6%A0%BC-%E6%AF%8F%E4%B8%AA%E9%80%89%E4%B8%AD%E7%9A%84%E4%BD%8D%E7%BD%AE-%E9%83%BD%E8%A6%81%E5%8D%95%E7%8B%AC%E8%AF%95-%E6%A8%AA-%E7%AB%96%E6%88%96.mp3"
+    },
+    {
+      "id": "explore-board-strategy-3",
+      "narration": "在哪些空格补一颗黑子，能连成三颗黑子？圈里是空格，没有棋子。点一个空格试放一颗黑子，合适就选上，再试别的空格。每个选中的位置，都要单独试。横、竖或对角线，三颗黑子连成一条直线。把所有能达成的空格都找出来。",
+      "localClip": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%9C%A8%E5%93%AA%E4%BA%9B%E7%A9%BA%E6%A0%BC%E8%A1%A5%E4%B8%80%E9%A2%97%E9%BB%91%E5%AD%90-%E8%83%BD%E8%BF%9E%E6%88%90%E4%B8%89%E9%A2%97%E9%BB%91%E5%AD%90-%E5%9C%88%E9%87%8C%E6%98%AF%E7%A9%BA%E6%A0%BC-%E6%B2%A1%E6%9C%89%E6%A3%8B%E5%AD%90-%E7%82%B9%E4%B8%80%E4%B8%AA%E7%A9%BA%E6%A0%BC%E8%AF%95%E6%94%BE%E4%B8%80%E9%A2%97%E9%BB%91%E5%AD%90-%E5%90%88%E9%80%82%E5%B0%B1%E9%80%89%E4%B8%8A-%E5%86%8D%E8%AF%95%E5%88%AB%E7%9A%84%E7%A9%BA%E6%A0%BC-%E6%AF%8F%E4%B8%AA%E9%80%89%E4%B8%AD%E7%9A%84%E4%BD%8D%E7%BD%AE-%E9%83%BD%E8%A6%81%E5%8D%95%E7%8B%AC%E8%AF%95-%E6%A8%AA-%E7%AB%96%E6%88%96.mp3"
+    },
+    {
+      "id": "explore-board-strategy-4",
+      "narration": "在哪些空格补一颗黑子，能连成三颗黑子？圈里是空格，没有棋子。点一个空格试放一颗黑子，合适就选上，再试别的空格。每个选中的位置，都要单独试。横、竖或对角线，三颗黑子连成一条直线。把所有能达成的空格都找出来。",
+      "localClip": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%9C%A8%E5%93%AA%E4%BA%9B%E7%A9%BA%E6%A0%BC%E8%A1%A5%E4%B8%80%E9%A2%97%E9%BB%91%E5%AD%90-%E8%83%BD%E8%BF%9E%E6%88%90%E4%B8%89%E9%A2%97%E9%BB%91%E5%AD%90-%E5%9C%88%E9%87%8C%E6%98%AF%E7%A9%BA%E6%A0%BC-%E6%B2%A1%E6%9C%89%E6%A3%8B%E5%AD%90-%E7%82%B9%E4%B8%80%E4%B8%AA%E7%A9%BA%E6%A0%BC%E8%AF%95%E6%94%BE%E4%B8%80%E9%A2%97%E9%BB%91%E5%AD%90-%E5%90%88%E9%80%82%E5%B0%B1%E9%80%89%E4%B8%8A-%E5%86%8D%E8%AF%95%E5%88%AB%E7%9A%84%E7%A9%BA%E6%A0%BC-%E6%AF%8F%E4%B8%AA%E9%80%89%E4%B8%AD%E7%9A%84%E4%BD%8D%E7%BD%AE-%E9%83%BD%E8%A6%81%E5%8D%95%E7%8B%AC%E8%AF%95-%E6%A8%AA-%E7%AB%96%E6%88%96.mp3"
+    },
+    {
+      "id": "explore-board-strategy-5",
+      "narration": "在哪些空格补一颗黑子，能连成三颗黑子？圈里是空格，没有棋子。点一个空格试放一颗黑子，合适就选上，再试别的空格。每个选中的位置，都要单独试。横、竖或对角线，三颗黑子连成一条直线。把所有能达成的空格都找出来。",
+      "localClip": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%9C%A8%E5%93%AA%E4%BA%9B%E7%A9%BA%E6%A0%BC%E8%A1%A5%E4%B8%80%E9%A2%97%E9%BB%91%E5%AD%90-%E8%83%BD%E8%BF%9E%E6%88%90%E4%B8%89%E9%A2%97%E9%BB%91%E5%AD%90-%E5%9C%88%E9%87%8C%E6%98%AF%E7%A9%BA%E6%A0%BC-%E6%B2%A1%E6%9C%89%E6%A3%8B%E5%AD%90-%E7%82%B9%E4%B8%80%E4%B8%AA%E7%A9%BA%E6%A0%BC%E8%AF%95%E6%94%BE%E4%B8%80%E9%A2%97%E9%BB%91%E5%AD%90-%E5%90%88%E9%80%82%E5%B0%B1%E9%80%89%E4%B8%8A-%E5%86%8D%E8%AF%95%E5%88%AB%E7%9A%84%E7%A9%BA%E6%A0%BC-%E6%AF%8F%E4%B8%AA%E9%80%89%E4%B8%AD%E7%9A%84%E4%BD%8D%E7%BD%AE-%E9%83%BD%E8%A6%81%E5%8D%95%E7%8B%AC%E8%AF%95-%E6%A8%AA-%E7%AB%96%E6%88%96.mp3"
+    },
+    {
+      "id": "explore-board-strategy-6",
+      "narration": "在哪些空格补一颗黑子，能连成三颗黑子？圈里是空格，没有棋子。点一个空格试放一颗黑子，合适就选上，再试别的空格。每个选中的位置，都要单独试。横、竖或对角线，三颗黑子连成一条直线。把所有能达成的空格都找出来。",
+      "localClip": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%9C%A8%E5%93%AA%E4%BA%9B%E7%A9%BA%E6%A0%BC%E8%A1%A5%E4%B8%80%E9%A2%97%E9%BB%91%E5%AD%90-%E8%83%BD%E8%BF%9E%E6%88%90%E4%B8%89%E9%A2%97%E9%BB%91%E5%AD%90-%E5%9C%88%E9%87%8C%E6%98%AF%E7%A9%BA%E6%A0%BC-%E6%B2%A1%E6%9C%89%E6%A3%8B%E5%AD%90-%E7%82%B9%E4%B8%80%E4%B8%AA%E7%A9%BA%E6%A0%BC%E8%AF%95%E6%94%BE%E4%B8%80%E9%A2%97%E9%BB%91%E5%AD%90-%E5%90%88%E9%80%82%E5%B0%B1%E9%80%89%E4%B8%8A-%E5%86%8D%E8%AF%95%E5%88%AB%E7%9A%84%E7%A9%BA%E6%A0%BC-%E6%AF%8F%E4%B8%AA%E9%80%89%E4%B8%AD%E7%9A%84%E4%BD%8D%E7%BD%AE-%E9%83%BD%E8%A6%81%E5%8D%95%E7%8B%AC%E8%AF%95-%E6%A8%AA-%E7%AB%96%E6%88%96.mp3"
+    },
+    {
+      "id": "explore-board-strategy-7",
+      "narration": "下一颗黑子放在哪里，能夹住最多白子？圈里是空格，没有棋子。点一个空格试放一颗黑子，合适就选上，再试别的空格。每个选中的位置，都要单独试。横着、竖着、斜着都可以夹。每个方向夹到的白子合起来数。新落下的黑子和已有黑子之间，要连续夹着白子。空格会把夹子断开。找出所有夹住最多白子的落点。",
+      "localClip": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E4%B8%8B%E4%B8%80%E9%A2%97%E9%BB%91%E5%AD%90%E6%94%BE%E5%9C%A8%E5%93%AA%E9%87%8C-%E8%83%BD%E5%A4%B9%E4%BD%8F%E6%9C%80%E5%A4%9A%E7%99%BD%E5%AD%90-%E5%9C%88%E9%87%8C%E6%98%AF%E7%A9%BA%E6%A0%BC-%E6%B2%A1%E6%9C%89%E6%A3%8B%E5%AD%90-%E7%82%B9%E4%B8%80%E4%B8%AA%E7%A9%BA%E6%A0%BC%E8%AF%95%E6%94%BE%E4%B8%80%E9%A2%97%E9%BB%91%E5%AD%90-%E5%90%88%E9%80%82%E5%B0%B1%E9%80%89%E4%B8%8A-%E5%86%8D%E8%AF%95%E5%88%AB%E7%9A%84%E7%A9%BA%E6%A0%BC-%E6%AF%8F%E4%B8%AA%E9%80%89%E4%B8%AD%E7%9A%84%E4%BD%8D%E7%BD%AE-%E9%83%BD%E8%A6%81%E5%8D%95%E7%8B%AC%E8%AF%95-%E6%A8%AA%E7%9D%80-%E7%AB%96%E7%9D%80.mp3"
+    },
+    {
+      "id": "explore-board-strategy-8",
+      "narration": "下一颗黑子放在哪里，能夹住最多白子？圈里是空格，没有棋子。点一个空格试放一颗黑子，合适就选上，再试别的空格。每个选中的位置，都要单独试。横着、竖着、斜着都可以夹。每个方向夹到的白子合起来数。新落下的黑子和已有黑子之间，要连续夹着白子。空格会把夹子断开。找出所有夹住最多白子的落点。",
+      "localClip": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E4%B8%8B%E4%B8%80%E9%A2%97%E9%BB%91%E5%AD%90%E6%94%BE%E5%9C%A8%E5%93%AA%E9%87%8C-%E8%83%BD%E5%A4%B9%E4%BD%8F%E6%9C%80%E5%A4%9A%E7%99%BD%E5%AD%90-%E5%9C%88%E9%87%8C%E6%98%AF%E7%A9%BA%E6%A0%BC-%E6%B2%A1%E6%9C%89%E6%A3%8B%E5%AD%90-%E7%82%B9%E4%B8%80%E4%B8%AA%E7%A9%BA%E6%A0%BC%E8%AF%95%E6%94%BE%E4%B8%80%E9%A2%97%E9%BB%91%E5%AD%90-%E5%90%88%E9%80%82%E5%B0%B1%E9%80%89%E4%B8%8A-%E5%86%8D%E8%AF%95%E5%88%AB%E7%9A%84%E7%A9%BA%E6%A0%BC-%E6%AF%8F%E4%B8%AA%E9%80%89%E4%B8%AD%E7%9A%84%E4%BD%8D%E7%BD%AE-%E9%83%BD%E8%A6%81%E5%8D%95%E7%8B%AC%E8%AF%95-%E6%A8%AA%E7%9D%80-%E7%AB%96%E7%9D%80.mp3"
+    },
+    {
+      "id": "explore-board-strategy-9",
+      "narration": "下一颗黑子放在哪里，能夹住最多白子？圈里是空格，没有棋子。点一个空格试放一颗黑子，合适就选上，再试别的空格。每个选中的位置，都要单独试。横着、竖着、斜着都可以夹。每个方向夹到的白子合起来数。新落下的黑子和已有黑子之间，要连续夹着白子。空格会把夹子断开。找出所有夹住最多白子的落点。",
+      "localClip": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E4%B8%8B%E4%B8%80%E9%A2%97%E9%BB%91%E5%AD%90%E6%94%BE%E5%9C%A8%E5%93%AA%E9%87%8C-%E8%83%BD%E5%A4%B9%E4%BD%8F%E6%9C%80%E5%A4%9A%E7%99%BD%E5%AD%90-%E5%9C%88%E9%87%8C%E6%98%AF%E7%A9%BA%E6%A0%BC-%E6%B2%A1%E6%9C%89%E6%A3%8B%E5%AD%90-%E7%82%B9%E4%B8%80%E4%B8%AA%E7%A9%BA%E6%A0%BC%E8%AF%95%E6%94%BE%E4%B8%80%E9%A2%97%E9%BB%91%E5%AD%90-%E5%90%88%E9%80%82%E5%B0%B1%E9%80%89%E4%B8%8A-%E5%86%8D%E8%AF%95%E5%88%AB%E7%9A%84%E7%A9%BA%E6%A0%BC-%E6%AF%8F%E4%B8%AA%E9%80%89%E4%B8%AD%E7%9A%84%E4%BD%8D%E7%BD%AE-%E9%83%BD%E8%A6%81%E5%8D%95%E7%8B%AC%E8%AF%95-%E6%A8%AA%E7%9D%80-%E7%AB%96%E7%9D%80.mp3"
+    }
+  ]
+}

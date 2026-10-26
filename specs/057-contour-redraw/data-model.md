@@ -1,0 +1,2 @@
+# 数据
+ContourArtwork以start和有端点的L/C/A segments描述闭合轮廓；details保存叶、枝、眼和叶脉。缺口为方向+连续segment索引，只有苹果顶部隐藏相应附属细节。visibleContour从同源路径剔除缺口并返回两个开放端点；不新增题库字段。所有GameRound和gallery注册保持字节等价。

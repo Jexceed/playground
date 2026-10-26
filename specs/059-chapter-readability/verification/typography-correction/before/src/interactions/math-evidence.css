@@ -1,0 +1,154 @@
+/* Labels stay in CSS pixels; only the pictured objects scale. */
+.math-model-label { display:block; font-size:20px; line-height:1.45; text-align:center; color:#4f6358; }
+.math-model-arrow { display:block; flex-shrink:0; width:30px; height:30px; color:#82977e; margin:10px auto; }
+.math-loose-objects { display:grid; grid-template-columns:repeat(5, minmax(24px,40px)); gap:9px; justify-content:center; margin:12px auto; }
+.math-loose-objects img { display:block; width:100%; aspect-ratio:1; object-fit:contain; }
+.math-recipients { display:grid; grid-template-columns:repeat(auto-fit,minmax(76px,1fr)); gap:8px; max-width:500px; margin:0 auto; }
+.math-recipient { display:flex; flex-direction:column; align-items:center; gap:3px; }
+.math-recipient>img { width:55px; height:65px; object-fit:contain; }
+.math-empty-plate { position:relative; width:78px; height:46px; }
+.math-empty-plate img { width:100%; height:100%; object-fit:contain; }
+.math-empty-plate strong { position:absolute; inset:0; display:grid; place-items:center; font-size:25px; color:#6e876d; }
+.math-known-groups { display:flex; flex-wrap:wrap; gap:12px; justify-content:center; margin-top:12px; }
+.math-chip-box { border:2px solid #cbb591; border-top-width:5px; border-radius:12px; background:#fff9eb; padding:7px 15px; box-shadow:0 4px 0 #e6dac3; }
+.math-chip-box .math-loose-objects { grid-template-columns:repeat(2,26px); gap:8px; margin:4px; }
+.math-capacity-model { display:flex; align-items:center; justify-content:center; flex-wrap:wrap; gap:12px; }
+.math-empty-box { display:grid; grid-template-columns:repeat(4,30px); gap:8px; padding:14px; border:2px solid #c5af89; border-radius:12px; background:#fff9eb; }
+.math-empty-box>span { height:30px; border:2px dashed #aaa992; border-radius:50%; }
+
+.partition-card { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; width:100%; }
+.partition-side { display:flex; flex-direction:column; align-items:center; gap:7px; min-width:0; }
+.partition-side-title { font-size:18px; color:#657263; }
+.partition-side strong { font-size:20px; font-weight:650; }
+.partition-box { display:grid; grid-template-columns:repeat(4,18px); grid-auto-rows:18px; gap:5px; align-content:center; justify-content:center; min-height:66px; width:100%; border:2px solid #c7b695; border-top-width:4px; border-radius:9px; background:#fff9e9; }
+.partition-box img { width:18px; height:18px; object-fit:contain; }
+.partition-empty { grid-column:1/-1; align-self:center; font-size:18px; color:#8d887a; }
+.activity-round[data-family="N04"][data-kind="multiSelect"] .activity-choice-grid.has-wide-options { grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; max-width:680px; }
+.activity-round[data-family="N04"] .activity-token { padding:14px 10px; }
+
+.math-money-piece { position:relative; display:inline-flex; align-items:center; justify-content:center; flex-shrink:0; }
+.math-money-piece.is-note { width:170px; aspect-ratio:2; }
+.math-money-piece.is-coin { width:56px; aspect-ratio:1; }
+.math-money-piece>img { display:block; width:100%; height:100%; object-fit:contain; }
+.math-money-piece>strong { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; gap:3px; font-size:32px; color:#375c46; font-weight:750; }
+.math-money-piece>strong>span { font-size:20px; }
+.math-money-piece.is-coin>strong,.math-money-piece.is-coin>strong>span { font-size:18px; color:#6d4a18; gap:1px; }
+.math-money-collection { display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:7px; width:100%; }
+.math-money-collection .is-note { width:130px; }
+.math-money-collection .is-note>strong { font-size:26px; }
+.math-money-inventory { display:grid; grid-template-columns:180px minmax(0,1fr); gap:16px; align-items:center; }
+.math-money-inventory>div { display:flex; flex-direction:column; align-items:center; gap:10px; }
+.math-money-inventory strong { font-size:20px; }
+.math-money-exchange { display:grid; grid-template-columns:minmax(0,1fr) 30px minmax(0,1fr); gap:10px; align-items:center; padding:10px 0; }
+.math-money-exchange>div { display:flex; align-items:center; flex-direction:column; gap:12px; min-width:0; }
+.math-money-exchange .math-money-piece { max-width:100%; }
+.math-money-exchange>div>strong { font-size:24px; }
+.math-unknown-count { color:#8c8253; }
+.activity-round[data-family="N13"][data-kind="multiSelect"] .activity-choice-grid.has-wide-options { grid-template-columns:repeat(2,minmax(0,1fr)); }
+.activity-round[data-family="N13"] .activity-token:has(.math-money-collection) { padding:16px 10px; min-height:130px; }
+
+.math-clock-row { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; width:100%; max-width:580px; margin:4px auto 12px; }
+.math-clock-row.is-single { grid-template-columns:minmax(0,280px); justify-content:center; }
+.math-clock-panel { min-width:0; display:flex; flex-direction:column; align-items:center; gap:10px; }
+.math-clock { position:relative; width:100%; aspect-ratio:1; }
+.math-clock>svg { display:block; width:100%; height:100%; }
+.math-clock-rim { fill:#e8cd99; stroke:#b59763; stroke-width:2; }
+.math-clock-number { position:absolute; transform:translate(-50%,-50%); font-size:clamp(18px,1.8vw,24px); line-height:1; font-weight:650; color:#485955; }
+
+.math-ruler { padding:12px 10px 20px; width:100%; }
+.math-ruler-track { position:relative; height:132px; margin:0 12px; }
+.math-measured-paper { position:absolute; top:8px; height:38px; border:1px solid #b99647; border-radius:3px; background:linear-gradient(#f4d479,#eac056); box-shadow:0 4px 5px #b99e5f22; }
+.math-ruler-guide { position:absolute; top:49px; height:41px; border-left:2px dashed #bc9d55; }
+.math-ruler-line { position:absolute; left:0; right:0; top:86px; border-top:2px solid #7e8a80; }
+.math-ruler-tick { position:absolute; top:80px; transform:translateX(-50%); display:flex; flex-direction:column; align-items:center; gap:6px; }
+.math-ruler-tick i { height:14px; border-left:2px solid #7e8a80; }
+.math-ruler-tick b { font-size:20px; font-weight:600; color:#4d6255; line-height:1.2; }
+.math-perimeter { position:relative; width:calc(var(--perimeter-columns) * 32px); height:calc(var(--perimeter-rows) * 32px); margin:50px auto 42px; }
+.math-perimeter-grid { position:absolute; inset:0; display:grid; grid-template-columns:repeat(var(--perimeter-columns),1fr); grid-template-rows:repeat(var(--perimeter-rows),1fr); outline:3px solid #ac874a; background:#e6edda; }
+.math-perimeter-grid>span { border:1px solid #c8d3b6; }
+.math-perimeter strong { position:absolute; font-size:20px; color:#536b4d; white-space:nowrap; }
+.math-perimeter-width { left:50%; top:-38px; transform:translateX(-50%); }
+.math-perimeter-height { right:calc(100% + 16px); top:50%; transform:translateY(-50%); }
+.math-perimeter>svg { position:absolute; width:22px; height:22px; color:#aa7c39; }
+.math-perimeter-top { top:-12px;left:50%;transform:translateX(-50%); }
+.math-perimeter-right { right:-12px;top:50%;transform:translateY(-50%); }
+.math-perimeter-bottom { bottom:-12px;left:50%;transform:translateX(-50%); }
+.math-perimeter-left { left:-12px;top:25%; }
+@media(max-width:600px) {
+  .activity-round[data-family="N04"][data-kind="multiSelect"] .activity-choice-grid.has-wide-options,.activity-round[data-family="N13"][data-kind="multiSelect"] .activity-choice-grid.has-wide-options { grid-template-columns:1fr; }
+  .math-clock-row { gap:12px; }
+  .math-clock-number { font-size:18px; }
+  .math-money-piece.is-note { width:138px; }
+  .math-money-piece.is-note>strong { font-size:26px; }
+  .math-money-exchange { gap:6px; grid-template-columns:minmax(0,1fr) 24px minmax(0,1fr); }
+  .math-money-exchange .math-model-arrow { width:24px; }
+  .math-money-inventory { grid-template-columns:1fr; }
+  .math-ruler { padding:8px 0 12px; }
+  .math-ruler-tick b { font-size:18px; }
+  .math-perimeter { margin-left:auto; margin-right:10px; }
+}
+.math-place-value { --place-unit:16px; --place-gap:4px; width:100%; }
+.math-place-value-pieces { display:flex; justify-content:center; align-items:center; gap:18px; min-height:100px; padding:10px 0; }
+.math-tens { display:flex; gap:7px; }
+.math-ten-rod { display:grid; grid-template-rows:repeat(10,1fr); width:var(--place-unit); height:calc(var(--place-unit) * 10); border:1px solid #507e92; background:linear-gradient(90deg,#aed1e4,#78a8c2 60%,#5f93ac); box-shadow:2px 2px 0 #4c758927; }
+.math-ten-rod i+i { border-top:1px solid #4c7a92; }
+.math-ones { display:grid; grid-template-columns:repeat(5,var(--place-unit)); gap:var(--place-gap); }
+.math-ones>span { width:var(--place-unit); height:var(--place-unit); border:1px solid #bd974b; background:linear-gradient(135deg,#ffe5a5,#edc46b); box-shadow:1px 1px 0 #9a712822; }
+.math-place-value-key { display:flex; flex-wrap:wrap; justify-content:center; gap:6px 18px; margin:8px 0 2px; font-size:18px; line-height:1.5; text-align:center; color:#52664f; }
+.math-number-pattern { display:grid; grid-template-columns:repeat(var(--pattern-columns),minmax(0,1fr)); gap:7px; padding:15px 0; max-width:630px; margin:auto; }
+.math-number-pattern>span { display:grid; place-items:center; min-height:64px; border:2px solid #bac9ad; border-radius:9px; background:#fffdf6; color:#3e5c4d; font-size:28px; font-weight:650; }
+.math-shape-equations { display:grid; gap:22px; padding:22px 8px; }
+.math-equation,.math-equation-term { display:flex; align-items:center; justify-content:center; gap:12px; }
+.math-equation b,.math-equation strong { font-size:28px; color:#4d6258; }
+.math-equation-shape { display:block; width:36px; height:36px; background:#eab757; border:2px solid #af8540; box-shadow:0 3px 0 #c1a57333; }
+.math-equation-shape.is-circle { border-radius:50%; background:#89b5d0; border-color:#5c8fae; }
+.math-equation-shape.is-triangle { clip-path:polygon(50% 0,100% 100%,0 100%); border:0; }
+.queue-overlap-evidence { position:relative; isolation:isolate; }
+.queue-overlap-evidence::before,.queue-overlap-evidence::after { content:""; position:absolute; top:0; bottom:0; width:calc(50% + 42px); border:2px solid #b7cba9; border-radius:14px; z-index:-1; background:#e2ecd585; }
+.queue-overlap-evidence::before { left:0; }.queue-overlap-evidence::after { right:0; border-color:#adc6d5; background:#d9e8f180; }
+.queue-overlap-evidence>div,.queue-overlap-evidence>div:last-child { background:transparent; }
+@media(max-width:600px) {
+ .math-number-pattern { gap:4px; }.math-number-pattern>span { font-size:24px; min-height:54px; }
+ .math-equation,.math-equation-term { gap:8px; }.math-equation-shape { width:30px;height:30px; }
+ .comparison-panel .math-place-value-pieces { flex-wrap:wrap;gap:10px; }
+ .queue-overlap-evidence::before,.queue-overlap-evidence::after { width:calc(50% + 32px); }
+}
+.math-water-model { position:relative; display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:18px; }
+.math-water-model figure { display:flex; flex-direction:column; align-items:center; gap:8px; margin:0; min-width:0; }
+.math-water-model figure>img { width:100%; max-width:260px; height:auto; aspect-ratio:1; }
+.math-water-model figcaption,.math-water-model strong { font-size:20px; line-height:1.5; text-align:center; color:#4e685e; }
+.math-water-transfer { position:absolute; left:50%; top:30%; transform:translate(-50%,-50%); display:flex; flex-direction:column; align-items:center; gap:3px; font-size:18px; color:#638681; }
+.math-water-transfer>svg { width:32px; height:32px; }
+@media(max-width:600px) { .math-water-model { gap:12px; }.math-water-model figcaption,.math-water-model strong { font-size:18px; }.math-water-transfer { top:35%; } }
+
+.math-evidence-dialog .evidence-dialog-close { width:44px; height:44px; }
+.math-zoom-scroll { width:100%; max-width:100%; overflow:auto; overscroll-behavior:contain; padding-bottom:8px; }
+.math-model-enlarged { min-width:560px; padding:18px 14px 4px; }
+.math-evidence-dialog .math-zoom-note { margin:20px 0 12px; font-size:18px; }
+.math-model-enlarged .math-model-label,.math-model-enlarged .math-clock-number,.math-model-enlarged .math-ruler-tick b,.math-model-enlarged .math-perimeter strong { font-size:24px; }
+.math-model-enlarged .math-money-piece.is-note { width:220px; }
+.math-model-enlarged .math-money-piece.is-note>strong { font-size:36px; }
+.math-model-enlarged .math-money-piece.is-note>strong>span { font-size:24px; }
+.math-model-enlarged .math-perimeter { width:calc(var(--perimeter-columns) * 48px); height:calc(var(--perimeter-rows) * 48px); margin-left:auto; margin-right:auto; }
+.math-model-enlarged .math-place-value,.comparison-dialog .math-place-value { --place-unit:22px; --place-gap:6px; }
+.math-model-enlarged .math-number-pattern>span { font-size:32px; }
+.math-model-enlarged .math-clock-row { max-width:800px; }
+.math-model-enlarged .math-clock-row.is-single { grid-template-columns:minmax(0,420px); }
+.math-model-enlarged .math-clock-number { font-size:32px; }
+.math-model-enlarged .math-loose-objects { grid-template-columns:repeat(5,56px); gap:12px; }
+.math-model-enlarged .math-chip-box .math-loose-objects { grid-template-columns:repeat(2,42px); }
+.math-model-enlarged .math-recipient>img { width:82px; height:96px; }
+.math-model-enlarged .math-empty-plate { width:110px; height:64px; }
+.math-model-enlarged .math-empty-box { grid-template-columns:repeat(4,44px); }
+.math-model-enlarged .math-empty-box>span { height:44px; }
+.math-model-enlarged .math-equation-shape { width:56px; height:56px; }
+.math-model-enlarged .math-water-model figure>img { max-width:380px; }
+@media(min-width:700px) { .math-evidence-dialog .math-zoom-note { display:none; } }
+
+.comparison-dialog .math-model-enlarged { min-width:800px; }
+@media(max-width:600px) {
+  .comparison-dialog .math-model-enlarged { min-width:600px; }
+  .comparison-dialog .visual-comparison { --comparison-dot-size:32px; --comparison-dot-gap:8px; gap:16px; }
+  .comparison-dialog .comparison-panel { padding:8px 4px; }
+  .comparison-dialog .comparison-panel h3 { font-size:24px; }
+}

@@ -1,0 +1,111 @@
+Window: "小小思考屋", App: 小小思考屋.
+0 standard window 小小思考屋, Secondary Actions: Raise
+	1 scroll area
+		2 HTML content Description: 小小思考屋, URL: tauri://localhost
+			3 container
+				4 container 主题地图
+					5 image 小小思考屋 亲子思维游戏
+					6 container 选择启蒙或探索
+						7 toggle button 启蒙, Value: off
+						8 toggle button 探索, Value: on
+					9 button (collapsed) 数字岛 144 题, Secondary Actions: Expand
+					10 button (collapsed) 逻辑屋 126 题, Secondary Actions: Expand
+					11 button (collapsed) 图形工坊 186 题, Secondary Actions: Expand
+					12 button (collapsed) 记忆小屋 81 题, Secondary Actions: Expand
+					13 button (collapsed) 语言花园 54 题, Secondary Actions: Expand
+					14 button (expanded) 生活实验室 30 题, Secondary Actions: Collapse
+					15 container 关卡列表
+						16 container
+							17 text 探索  ·  生活实验室
+						18 text 6  个
+						19 search text field (settable) 查找当前主题题组, Placeholder: 查找题组
+							20 text 查找题组
+						21 heading 生活与变化, Value: 3
+							22 text 生活与变化
+						23 button 用品放对地方 动手 · 9 题
+						24 button 变化观察册 动手 · 9 题
+						25 heading 动手探索, Value: 3
+							26 text 动手探索
+						27 button 一起做小实验 动手 · 3 题
+						28 button 生活里的判断 动手 · 3 题
+						29 heading 表达与行动, Value: 3
+							30 text 表达与行动
+						31 button 节日和生活发现 动手 · 3 题
+						32 button 小手和身体挑战 动手 · 3 题
+				33 container 当前部分
+					34 text 探索
+					35 text 组合线索，多步思考 75  组 ·  621  题
+				36 container 用品放对地方
+					37 container 用品放对地方
+						38 container
+							39 text 组合挑战  · 第  9  / 9  题
+							40 heading 用品放对地方, Value: 1
+								41 text 用品放对地方
+							42 button 听一听题目
+						43 heading 整理规则换一换, Value: 2
+							44 text 整理规则换一换
+						45 text 和家长一起操作、说一说，再记录这次的发现。
+						46 container 亲子活动内容
+							47 toggle button 一起玩, Value: on
+							48 toggle button 记发现, Value: off
+						49 heading 先准备, Value: 3
+							50 text 先准备
+						51 container
+							52 image
+							53 text 杯子
+						54 text 毛巾
+						55 container
+							56 image
+							57 text 积木
+						58 container
+							59 image
+							60 text 书本
+						61 heading 一起试一试, Value: 3
+							62 text 一起试一试
+						63 container
+							64 text 1
+							65 text 第一次按用途给用品分组。
+							66 button 听第1步
+							67 text 2
+							68 text 第二次按材料重新分组。
+							69 button 听第2步
+							70 text 3
+							71 text 指出哪件物品换了组，说明改变的是规则而不是物品。
+							72 button 听第3步
+						73 button (disabled) 撤销上一步
+						74 button 清空
+						75 button 提示
+						76 button 做完了，记发现
+						77 container
+							78 text 这次尝试  0  次 · 提示  0  次
+							79 button 先跳过
+				80 container 题目导航
+					81 text 题目导航
+					82 text 0  /  9  已做
+					83 button 跳到第 1 题
+					84 button 跳到第 2 题
+					85 button 跳到第 3 题
+					86 button 跳到第 4 题
+					87 button 跳到第 5 题
+					88 button 跳到第 6 题
+					89 button 跳到第 7 题
+					90 button 跳到第 8 题
+					91 button 跳到第 9 题
+				92 summary 给家长 · 陪玩提示, Value: off
+					93 text 给家长 · 陪玩提示
+				94 summary 探索 · 成长记录, Value: off
+					95 text 探索
+					96 text  · 成长记录
+	97 close button
+	98 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	99 minimize button
+	100 text 小小思考屋
+101 menu bar
+	102 小小思考屋
+	103 File
+	104 Edit
+	105 View
+	106 Window
+	107 Help
+
+The focused UI element is 2 HTML content Description: 小小思考屋, URL: tauri://localhost

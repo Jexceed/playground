@@ -2,6 +2,8 @@ import type { CSSProperties } from "react";
 import type { ActivityToken } from "../domain/activity";
 import { imageGallery, type GalleryImage } from "../data/imageGallery";
 import { publicAsset } from "../publicAsset";
+import { MoneyCollection } from './MoneyArt';
+import { PartitionCard } from './PartitionCard';
 
 export function ActivityImage({ image, className = "", decorative = false }: { image: GalleryImage; className?: string; decorative?: boolean }) {
   if (image.frame) {
@@ -15,10 +17,8 @@ export function ActivityImage({ image, className = "", decorative = false }: { i
 
 export function ActivityTokenArt({ token, label = false }: { token?: ActivityToken; label?: boolean }) {
   if (!token) return <span className="slot-question">?</span>;
-  if (token.moneyValues) return <><span className="money-token">{[5, 1].map(value => {
-    const count = token.moneyValues!.filter(n => n === value).length;
-    return count ? <span className="money-denomination" key={value}><strong>{value}元</strong><span>{count}{value === 5 ? '张' : '枚'}</span></span> : null;
-  })}</span>{label && <span className="token-label">{token.label}</span>}</>;
+  if (token.partitionCounts) return <PartitionCard {...token.partitionCounts} />;
+  if (token.moneyValues) return <MoneyCollection values={token.moneyValues} />;
   if (token.quantityPicture) return <div className="memory-quantity-picture"><ActivityImage image={token.quantityPicture.image} /><div aria-label={`${token.quantityPicture.count}个圆点`}>{Array.from({ length: token.quantityPicture.count }, (_, i) => <ActivityImage image={imageGallery.items.patternBlueDisc} className="quantity-dot" decorative key={i} />)}</div></div>;
   if (token.textOnly) return <span className={`activity-text-card${Array.from(token.label).length > 5 ? ' is-phrase' : ''}`}>{token.label}</span>;
   return <><ActivityImage image={token.image} className={`activity-token-image${token.image.style === 'illustration' ? ' is-illustration' : ''}`} decorative={label} />{label && <span className="token-label">{token.label}</span>}</>;

@@ -2,8 +2,19 @@ import { set, nine, choice, numeric, selection, ordered, fillGrid, parent, base,
 import { picture, text, grid, dots, symbol, panels, palette } from './draw';
 import { tokens as familiar } from '../pilot/tokens';
 import type { Activity } from '../../domain/activity';
+import { cardFlipStepSpeech } from '../../domain/rule-play';
+import { BOARD_MOVE_COPY } from '../../domain/board-move';
+import { ISLAND_BRIDGE_COPY } from '../../domain/island-bridges';
 import type { Graph, RouteActivity } from '../../domain/advanced-activity';
 const equation = (value: string) => picture([text(300, 135, value, 35)]);
+function withBoardMove(a: Activity, board: string[], columns: 3 | 4): Activity {
+    a.instruction = BOARD_MOVE_COPY.instruction;
+    a.presentation = { evidence: { kind: 'boardMove', columns, goal: columns === 3 ? 'line3' : 'capture',
+        cells: board.map(piece => piece === '●' ? 'black' : piece === '○' ? 'white' : null),
+        candidates: a.tokens.map(token => ({ cell: Number(token.id.slice(1)), tokenId: token.id })),
+    } };
+    return a;
+}
 function routeSolution(a: RouteActivity) { const found: string[][] = []; function walk(node: string, path: string[]) { if (node === a.end && a.requiredNodes.every(id => visitedNodes(path).includes(id)) && a.requiredEdges.every(id => path.includes(id)))
     found.push(path); if (path.length >= a.graph.edges.length)
     return; for (const e of a.graph.edges) {
@@ -88,7 +99,7 @@ export const logicSets = [
         const a = fillGrid('L09', i, '照着顺序，动手翻一翻。', ts, n,
             final.map(n => n ? 'on' : 'off'), Array.from({ length: n }, (_, k) => k),
             '翻一次就换一面。同一张牌翻两次，又回到原来的样子。',
-            ['点一下大牌，就翻一面。', ...steps.map((k, step) => `第${step + 1}步，翻第${k + 1}张。`)],
+            ['点一下大牌，就翻一面。', ...steps.map(cardFlipStepSpeech)],
             grid(initial.map(() => ''), n, [], initial.map(n => n ? palette[2] : '#fffdf7')));
         a.instruction = '看小图的顺序，点下面的大牌。';
         a.presentation = { evidence: { kind: 'cardFlip', initial: initial.map(value => value ? 'on' : 'off'), steps } };
@@ -99,7 +110,13 @@ export const logicSets = [
         return a;
     })),
     set('L10', '两位朋友走格子', nine((i, s, v) => { const a = 1 + v, b = 9 + v, steps = 2 + s, redStep = 1, blueStep = s === 0 ? 1 : 2, red = a + steps * redStep, blue = b - steps * blueStep; const ts = Array.from({ length: 12 }, (_, k) => card(`n${k}`, k)); const result = ordered('L10', i, '走完以后，两位朋友分别停在哪个数字？', ts, [`n${red}`, `n${blue}`], `每走一次都更新位置。红色停在${red}，蓝色停在${blue}。两个位置可以相同。`, [`红色从${a}出发，每次向右走${redStep}格。`, `蓝色从${b}出发，每次向左走${blueStep}格。`, `同时走${steps}次。先摆红色位置，再摆蓝色位置。`], grid(Array.from({ length: 12 }, (_, k) => k), 12)); if (result.kind === 'orderedPlacement')
-        result.tokenUse = 'unlimited'; return result; })),
+        result.tokenUse = 'unlimited';
+        result.instruction = '选一位朋友，再点数字格，把它放到走完的位置。';
+        result.presentation = { evidence: { kind: 'numberWalk', min: 0, max: 11, turns: steps, actors: [
+            { id: 'red', slotId: 'slot-0', start: a, delta: redStep },
+            { id: 'blue', slotId: 'slot-1', start: b, delta: -blueStep },
+        ] } };
+        return result; })),
     set('L11', '棋盘下一步', nine((i, s, v) => { if (s === 2) {
         const b = Array(16).fill('');
         b[5] = '○';
@@ -129,12 +146,12 @@ export const logicSets = [
         const wrong = open.find(k => captures(k) === 0);
         if (wrong !== undefined)
             candidates.push(wrong);
-        const a = selection('L11', i, '下一颗黑子放在哪里，能夹住最多白子？', candidates.map(k => card(`p${k}`, `第${k + 1}格`, grid(b.map((x, j) => j === k ? '●' : x), 4))), candidates.filter(k => captures(k) === max).map(k => `p${k}`), `沿横、竖和斜线检查，两端是黑子、中间连续白子才算夹住。这题最多夹住${max}颗，并列最多的都可以选。`, grid(b.map((n, k) => n || String(k + 1)), 4), ['横着、竖着、斜着都可以夹。每个方向夹到的白子合起来数。', '新落下的黑子和已有黑子之间，要连续夹着白子。', '空格会把夹子断开。', '找出所有夹住最多白子的落点。']); a.revision = 2; return a;
+        const a = selection('L11', i, '下一颗黑子放在哪里，能夹住最多白子？', candidates.map(k => card(`p${k}`, `第${k + 1}格`, grid(b.map((x, j) => j === k ? '●' : x), 4))), candidates.filter(k => captures(k) === max).map(k => `p${k}`), `沿横、竖和斜线检查，两端是黑子、中间连续白子才算夹住。这题最多夹住${max}颗，并列最多的都可以选。`, grid(b.map((n, k) => n || String(k + 1)), 4), ['横着、竖着、斜着都可以夹。每个方向夹到的白子合起来数。', '新落下的黑子和已有黑子之间，要连续夹着白子。', '空格会把夹子断开。', '找出所有夹住最多白子的落点。']); a.revision = 2; return withBoardMove(a, b, 4);
     } const board = Array(9).fill(''); const lineSets = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]]; const target = lineSets[(s * 2 + v) % lineSets.length]; board[target[0]] = '●'; board[target[1]] = '●'; if (s > 0)
-        board[(target[2] + 1) % 9] = board[(target[2] + 1) % 9] || '○'; const open = board.flatMap((n, k) => n === '' ? [k] : []); const winners = open.filter(k => lineSets.some(xs => xs.every(x => x === k || board[x] === '●'))); return selection('L11', i, '在哪些空格补一颗黑子，能连成三颗黑子？', open.map(k => card(`p${k}`, `第${k + 1}格`, grid(board.map((x, j) => j === k ? '●' : x), 3))), winners.map(k => `p${k}`), '检查横、竖和两条对角线。只补一颗，已有白子不能算成黑子。', grid(board.map((n, k) => n || String(k + 1)), 3), ['横、竖或对角线，三颗黑子连成一条直线。', '把所有能达成的空格都找出来。']); })),
+        board[(target[2] + 1) % 9] = board[(target[2] + 1) % 9] || '○'; const open = board.flatMap((n, k) => n === '' ? [k] : []); const winners = open.filter(k => lineSets.some(xs => xs.every(x => x === k || board[x] === '●'))); return withBoardMove(selection('L11', i, '在哪些空格补一颗黑子，能连成三颗黑子？', open.map(k => card(`p${k}`, `第${k + 1}格`, grid(board.map((x, j) => j === k ? '●' : x), 3))), winners.map(k => `p${k}`), '检查横、竖和两条对角线。只补一颗，已有白子不能算成黑子。', grid(board.map((n, k) => n || String(k + 1)), 3), ['横、竖或对角线，三颗黑子连成一条直线。', '把所有能达成的空格都找出来。']), board, 3); })),
     set('L12', '小岛连桥', nine((i, s, v) => { const count = s === 2 ? 6 : 4; const nodes = Array.from({ length: count }, (_, k) => ({ id: `n${k}`, label: String.fromCharCode(65 + k), x: count === 4 ? [130, 470, 470, 130][k] : [90, 300, 510, 510, 300, 90][k], y: count === 4 ? [65, 65, 235, 235][k] : [65, 65, 65, 235, 235, 235][k], degree: 0 })); const edges = nodes.map((n, k) => ({ id: `e${k}`, from: n.id, to: nodes[(k + 1) % count].id, max: 2, fixed: s === 0 && k < 2 ? 1 : s === 1 && k === v ? 1 : 0 })); if (count === 6)
         edges.push({ id: 'middle', from: 'n1', to: 'n4', max: 2, fixed: 0 }); const counts = Object.fromEntries(edges.map((e, k) => [e.id, k === v ? 2 : e.id === 'middle' ? 0 : 1])); for (const e of edges) {
         nodes.find(n => n.id === e.from)!.degree += counts[e.id];
         nodes.find(n => n.id === e.to)!.degree += counts[e.id];
-    } const a: Activity = { ...base('L12', i, '把所有小岛连起来。', '直接点两个小岛之间的线来搭桥，再点可以改变桥数。每处最多两座桥。', '每个岛连出的桥数和数字相同，所有小岛也连成了一个整体。'), kind: 'network', graph: { nodes, edges }, connected: true }; a.clues = ['数字表示这个岛连出的桥数。', '桥不能交叉，所有岛要互相通达。']; authoringSolutions[a.id] = { kind: 'network', counts }; return a; })),
+    } const a: Activity = { ...base('L12', i, '把所有小岛连起来。', ISLAND_BRIDGE_COPY.instruction, ISLAND_BRIDGE_COPY.success), kind: 'network', graph: { nodes, edges }, connected: true }; a.clues = [ISLAND_BRIDGE_COPY.clue, ISLAND_BRIDGE_COPY.connection]; a.hints = [ISLAND_BRIDGE_COPY.hintCount, ISLAND_BRIDGE_COPY.hintAll]; authoringSolutions[a.id] = { kind: 'network', counts }; return a; })),
 ];

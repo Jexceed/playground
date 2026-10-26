@@ -1,0 +1,264 @@
+[
+  {
+    "action": "初始",
+    "boardText": "",
+    "fixed": 2,
+    "phase": "respond",
+    "preview": null,
+    "primary": "rgb(65, 125, 95)",
+    "selected": [],
+    "status": "",
+    "trial": 0,
+    "viewport": 1280,
+    "width": 1280
+  },
+  {
+    "action": "试放第1行第3列",
+    "boardText": "试放",
+    "fixed": 2,
+    "phase": "respond",
+    "preview": "board-move-cell-2",
+    "primary": "rgb(65, 125, 95)",
+    "selected": [],
+    "status": "",
+    "trial": 1,
+    "viewport": 1280,
+    "width": 1280
+  },
+  {
+    "action": "换格仍仅一颗",
+    "boardText": "试放",
+    "fixed": 2,
+    "phase": "respond",
+    "preview": "board-move-cell-4",
+    "primary": "rgb(65, 125, 95)",
+    "selected": [],
+    "status": "",
+    "trial": 1,
+    "viewport": 1280,
+    "width": 1280
+  },
+  {
+    "action": "答案为空时清空试放",
+    "boardText": "",
+    "fixed": 2,
+    "phase": "respond",
+    "preview": null,
+    "primary": "rgb(65, 125, 95)",
+    "selected": [],
+    "status": "",
+    "trial": 0,
+    "viewport": 1280,
+    "width": 1280
+  },
+  {
+    "action": "选两个位置并非补两颗棋子",
+    "boardText": "",
+    "fixed": 2,
+    "phase": "respond",
+    "preview": null,
+    "primary": "rgb(65, 125, 95)",
+    "selected": [
+      2,
+      4
+    ],
+    "status": "",
+    "trial": 0,
+    "viewport": 1280,
+    "width": 1280
+  },
+  {
+    "action": "取消第一个位置",
+    "boardText": "",
+    "fixed": 2,
+    "phase": "respond",
+    "preview": null,
+    "primary": "rgb(65, 125, 95)",
+    "selected": [
+      4
+    ],
+    "status": "",
+    "trial": 0,
+    "viewport": 1280,
+    "width": 1280
+  },
+  {
+    "action": "撤销取消选择",
+    "boardText": "",
+    "fixed": 2,
+    "phase": "respond",
+    "preview": null,
+    "primary": "rgb(65, 125, 95)",
+    "selected": [
+      2,
+      4
+    ],
+    "status": "",
+    "trial": 0,
+    "viewport": 1280,
+    "width": 1280
+  },
+  {
+    "action": "清空已选位置",
+    "boardText": "",
+    "fixed": 2,
+    "phase": "respond",
+    "preview": null,
+    "primary": "rgb(65, 125, 95)",
+    "selected": [],
+    "status": "",
+    "trial": 0,
+    "viewport": 1280,
+    "width": 1280
+  },
+  {
+    "round": 1,
+    "wrongStatus": "再对照图和题目的条件，一步一步检查。",
+    "boardText": "",
+    "fixed": 2,
+    "phase": "complete",
+    "preview": null,
+    "primary": "rgb(65, 125, 95)",
+    "selected": [
+      2
+    ],
+    "status": "检查横、竖和两条对角线。只补一颗，已有白子不能算成黑子。",
+    "trial": 0,
+    "viewport": 1280,
+    "width": 1280
+  },
+  {
+    "round": 2,
+    "wrongStatus": "再对照图和题目的条件，一步一步检查。",
+    "boardText": "",
+    "fixed": 2,
+    "phase": "complete",
+    "preview": null,
+    "primary": "rgb(65, 125, 95)",
+    "selected": [
+      5
+    ],
+    "status": "检查横、竖和两条对角线。只补一颗，已有白子不能算成黑子。",
+    "trial": 0,
+    "viewport": 1280,
+    "width": 1280
+  },
+  {
+    "round": 3,
+    "wrongStatus": "再对照图和题目的条件，一步一步检查。",
+    "boardText": "",
+    "fixed": 2,
+    "phase": "complete",
+    "preview": null,
+    "primary": "rgb(65, 125, 95)",
+    "selected": [
+      8
+    ],
+    "status": "检查横、竖和两条对角线。只补一颗，已有白子不能算成黑子。",
+    "trial": 0,
+    "viewport": 1280,
+    "width": 1280
+  },
+  {
+    "round": 4,
+    "wrongStatus": "再对照图和题目的条件，一步一步检查。",
+    "boardText": "",
+    "fixed": 3,
+    "phase": "complete",
+    "preview": null,
+    "primary": "rgb(65, 125, 95)",
+    "selected": [
+      8
+    ],
+    "status": "检查横、竖和两条对角线。只补一颗，已有白子不能算成黑子。",
+    "trial": 0,
+    "viewport": 1280,
+    "width": 1280
+  },
+  {
+    "round": 5,
+    "wrongStatus": "再对照图和题目的条件，一步一步检查。",
+    "boardText": "",
+    "fixed": 3,
+    "phase": "complete",
+    "preview": null,
+    "primary": "rgb(65, 125, 95)",
+    "selected": [
+      6
+    ],
+    "status": "检查横、竖和两条对角线。只补一颗，已有白子不能算成黑子。",
+    "trial": 0,
+    "viewport": 1280,
+    "width": 1280
+  },
+  {
+    "round": 6,
+    "wrongStatus": "再对照图和题目的条件，一步一步检查。",
+    "boardText": "",
+    "fixed": 3,
+    "phase": "complete",
+    "preview": null,
+    "primary": "rgb(65, 125, 95)",
+    "selected": [
+      7
+    ],
+    "status": "检查横、竖和两条对角线。只补一颗，已有白子不能算成黑子。",
+    "trial": 0,
+    "viewport": 1280,
+    "width": 1280
+  },
+  {
+    "round": 7,
+    "wrongStatus": "再对照图和题目的条件，一步一步检查。",
+    "boardText": "",
+    "fixed": 4,
+    "phase": "complete",
+    "preview": null,
+    "primary": "rgb(65, 125, 95)",
+    "selected": [
+      1,
+      4,
+      11,
+      14
+    ],
+    "status": "沿横、竖和斜线检查，两端是黑子、中间连续白子才算夹住。这题最多夹住1颗，并列最多的都可以选。",
+    "trial": 0,
+    "viewport": 1280,
+    "width": 1280
+  },
+  {
+    "round": 8,
+    "wrongStatus": "再对照图和题目的条件，一步一步检查。",
+    "boardText": "",
+    "fixed": 7,
+    "phase": "complete",
+    "preview": null,
+    "primary": "rgb(65, 125, 95)",
+    "selected": [
+      3,
+      15
+    ],
+    "status": "沿横、竖和斜线检查，两端是黑子、中间连续白子才算夹住。这题最多夹住2颗，并列最多的都可以选。",
+    "trial": 0,
+    "viewport": 1280,
+    "width": 1280
+  },
+  {
+    "round": 9,
+    "wrongStatus": "再对照图和题目的条件，一步一步检查。",
+    "boardText": "",
+    "fixed": 9,
+    "phase": "complete",
+    "preview": null,
+    "primary": "rgb(65, 125, 95)",
+    "selected": [
+      3,
+      12,
+      15
+    ],
+    "status": "沿横、竖和斜线检查，两端是黑子、中间连续白子才算夹住。这题最多夹住2颗，并列最多的都可以选。",
+    "trial": 0,
+    "viewport": 1280,
+    "width": 1280
+  }
+]

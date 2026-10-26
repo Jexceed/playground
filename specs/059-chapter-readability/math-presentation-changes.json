@@ -1,0 +1,3731 @@
+[
+  {
+    "id": "explore-number-conservation-7",
+    "fields": [
+      "clues",
+      "hints",
+      "presentation"
+    ],
+    "before": {
+      "clues": [
+        "这里比较水量，不比较水面有多高。"
+      ],
+      "hints": [
+        "这里比较水量，不比较水面有多高。",
+        "还是12小杯的水。题目说明全部倒入且没有洒出，水面高低不能直接表示水量多少。"
+      ],
+      "presentation": {
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "clues": [
+        "全部倒入，没有洒出。",
+        "原来是12小杯的水。",
+        "这里比较水量，不比较水面有多高。"
+      ],
+      "hints": [
+        "全部倒入，没有洒出。",
+        "还是12小杯的水。题目说明全部倒入且没有洒出，水面高低不能直接表示水量多少。"
+      ],
+      "presentation": {
+        "evidence": {
+          "kind": "waterModel",
+          "smallCups": 12
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-number-conservation-8",
+    "fields": [
+      "clues",
+      "hints",
+      "presentation"
+    ],
+    "before": {
+      "clues": [
+        "这里比较水量，不比较水面有多高。"
+      ],
+      "hints": [
+        "这里比较水量，不比较水面有多高。",
+        "还是13小杯的水。题目说明全部倒入且没有洒出，水面高低不能直接表示水量多少。"
+      ],
+      "presentation": {
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "clues": [
+        "全部倒入，没有洒出。",
+        "原来是13小杯的水。",
+        "这里比较水量，不比较水面有多高。"
+      ],
+      "hints": [
+        "全部倒入，没有洒出。",
+        "还是13小杯的水。题目说明全部倒入且没有洒出，水面高低不能直接表示水量多少。"
+      ],
+      "presentation": {
+        "evidence": {
+          "kind": "waterModel",
+          "smallCups": 13
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-number-conservation-9",
+    "fields": [
+      "clues",
+      "hints",
+      "presentation"
+    ],
+    "before": {
+      "clues": [
+        "这里比较水量，不比较水面有多高。"
+      ],
+      "hints": [
+        "这里比较水量，不比较水面有多高。",
+        "还是14小杯的水。题目说明全部倒入且没有洒出，水面高低不能直接表示水量多少。"
+      ],
+      "presentation": {
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "clues": [
+        "全部倒入，没有洒出。",
+        "原来是14小杯的水。",
+        "这里比较水量，不比较水面有多高。"
+      ],
+      "hints": [
+        "全部倒入，没有洒出。",
+        "还是14小杯的水。题目说明全部倒入且没有洒出，水面高低不能直接表示水量多少。"
+      ],
+      "presentation": {
+        "evidence": {
+          "kind": "waterModel",
+          "smallCups": 14
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-number-partitions-1",
+    "fields": [
+      "tokens"
+    ],
+    "before": {
+      "tokens": [
+        {
+          "id": "p0",
+          "label": "左0右5",
+          "image": {
+            "src": "/images/items/exploration/diagram-a9dc4c0a.png",
+            "alt": "左0右5",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p1",
+          "label": "左1右4",
+          "image": {
+            "src": "/images/items/exploration/diagram-242dbffb.png",
+            "alt": "左1右4",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p2",
+          "label": "左2右3",
+          "image": {
+            "src": "/images/items/exploration/diagram-b314b407.png",
+            "alt": "左2右3",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p3",
+          "label": "左3右2",
+          "image": {
+            "src": "/images/items/exploration/diagram-adf20900.png",
+            "alt": "左3右2",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p4",
+          "label": "左4右1",
+          "image": {
+            "src": "/images/items/exploration/diagram-f6d24565.png",
+            "alt": "左4右1",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p5",
+          "label": "左5右0",
+          "image": {
+            "src": "/images/items/exploration/diagram-dc6fb202.png",
+            "alt": "左5右0",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p6",
+          "label": "左5右1",
+          "image": {
+            "src": "/images/items/exploration/diagram-b6abfd8b.png",
+            "alt": "左5右1",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        }
+      ]
+    },
+    "after": {
+      "tokens": [
+        {
+          "id": "p0",
+          "label": "左0右5",
+          "image": {
+            "src": "/images/items/exploration/diagram-a9dc4c0a.png",
+            "alt": "左0右5",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 0,
+            "right": 5
+          }
+        },
+        {
+          "id": "p1",
+          "label": "左1右4",
+          "image": {
+            "src": "/images/items/exploration/diagram-242dbffb.png",
+            "alt": "左1右4",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 1,
+            "right": 4
+          }
+        },
+        {
+          "id": "p2",
+          "label": "左2右3",
+          "image": {
+            "src": "/images/items/exploration/diagram-b314b407.png",
+            "alt": "左2右3",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 2,
+            "right": 3
+          }
+        },
+        {
+          "id": "p3",
+          "label": "左3右2",
+          "image": {
+            "src": "/images/items/exploration/diagram-adf20900.png",
+            "alt": "左3右2",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 3,
+            "right": 2
+          }
+        },
+        {
+          "id": "p4",
+          "label": "左4右1",
+          "image": {
+            "src": "/images/items/exploration/diagram-f6d24565.png",
+            "alt": "左4右1",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 4,
+            "right": 1
+          }
+        },
+        {
+          "id": "p5",
+          "label": "左5右0",
+          "image": {
+            "src": "/images/items/exploration/diagram-dc6fb202.png",
+            "alt": "左5右0",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 5,
+            "right": 0
+          }
+        },
+        {
+          "id": "p6",
+          "label": "左5右1",
+          "image": {
+            "src": "/images/items/exploration/diagram-b6abfd8b.png",
+            "alt": "左5右1",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 5,
+            "right": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "explore-number-partitions-2",
+    "fields": [
+      "tokens"
+    ],
+    "before": {
+      "tokens": [
+        {
+          "id": "p0",
+          "label": "左0右6",
+          "image": {
+            "src": "/images/items/exploration/diagram-c7227e0.png",
+            "alt": "左0右6",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p1",
+          "label": "左1右5",
+          "image": {
+            "src": "/images/items/exploration/diagram-b76fccab.png",
+            "alt": "左1右5",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p2",
+          "label": "左2右4",
+          "image": {
+            "src": "/images/items/exploration/diagram-6e2a7544.png",
+            "alt": "左2右4",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p3",
+          "label": "左3右3",
+          "image": {
+            "src": "/images/items/exploration/diagram-d5da75e0.png",
+            "alt": "左3右3",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p4",
+          "label": "左4右2",
+          "image": {
+            "src": "/images/items/exploration/diagram-5118c747.png",
+            "alt": "左4右2",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p5",
+          "label": "左5右1",
+          "image": {
+            "src": "/images/items/exploration/diagram-b6abfd8b.png",
+            "alt": "左5右1",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p6",
+          "label": "左6右0",
+          "image": {
+            "src": "/images/items/exploration/diagram-c22fa94d.png",
+            "alt": "左6右0",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p7",
+          "label": "左6右1",
+          "image": {
+            "src": "/images/items/exploration/diagram-a8d3cfec.png",
+            "alt": "左6右1",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        }
+      ]
+    },
+    "after": {
+      "tokens": [
+        {
+          "id": "p0",
+          "label": "左0右6",
+          "image": {
+            "src": "/images/items/exploration/diagram-c7227e0.png",
+            "alt": "左0右6",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 0,
+            "right": 6
+          }
+        },
+        {
+          "id": "p1",
+          "label": "左1右5",
+          "image": {
+            "src": "/images/items/exploration/diagram-b76fccab.png",
+            "alt": "左1右5",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 1,
+            "right": 5
+          }
+        },
+        {
+          "id": "p2",
+          "label": "左2右4",
+          "image": {
+            "src": "/images/items/exploration/diagram-6e2a7544.png",
+            "alt": "左2右4",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 2,
+            "right": 4
+          }
+        },
+        {
+          "id": "p3",
+          "label": "左3右3",
+          "image": {
+            "src": "/images/items/exploration/diagram-d5da75e0.png",
+            "alt": "左3右3",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 3,
+            "right": 3
+          }
+        },
+        {
+          "id": "p4",
+          "label": "左4右2",
+          "image": {
+            "src": "/images/items/exploration/diagram-5118c747.png",
+            "alt": "左4右2",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 4,
+            "right": 2
+          }
+        },
+        {
+          "id": "p5",
+          "label": "左5右1",
+          "image": {
+            "src": "/images/items/exploration/diagram-b6abfd8b.png",
+            "alt": "左5右1",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 5,
+            "right": 1
+          }
+        },
+        {
+          "id": "p6",
+          "label": "左6右0",
+          "image": {
+            "src": "/images/items/exploration/diagram-c22fa94d.png",
+            "alt": "左6右0",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 6,
+            "right": 0
+          }
+        },
+        {
+          "id": "p7",
+          "label": "左6右1",
+          "image": {
+            "src": "/images/items/exploration/diagram-a8d3cfec.png",
+            "alt": "左6右1",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 6,
+            "right": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "explore-number-partitions-3",
+    "fields": [
+      "tokens"
+    ],
+    "before": {
+      "tokens": [
+        {
+          "id": "p0",
+          "label": "左0右7",
+          "image": {
+            "src": "/images/items/exploration/diagram-e1eb0675.png",
+            "alt": "左0右7",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p1",
+          "label": "左1右6",
+          "image": {
+            "src": "/images/items/exploration/diagram-fb56f9b9.png",
+            "alt": "左1右6",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p2",
+          "label": "左2右5",
+          "image": {
+            "src": "/images/items/exploration/diagram-914fea58.png",
+            "alt": "左2右5",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p3",
+          "label": "左3右4",
+          "image": {
+            "src": "/images/items/exploration/diagram-ac4608af.png",
+            "alt": "左3右4",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p4",
+          "label": "左4右3",
+          "image": {
+            "src": "/images/items/exploration/diagram-c5a283f7.png",
+            "alt": "左4右3",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p5",
+          "label": "左5右2",
+          "image": {
+            "src": "/images/items/exploration/diagram-20c2995d.png",
+            "alt": "左5右2",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p6",
+          "label": "左6右1",
+          "image": {
+            "src": "/images/items/exploration/diagram-a8d3cfec.png",
+            "alt": "左6右1",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p7",
+          "label": "左7右0",
+          "image": {
+            "src": "/images/items/exploration/diagram-d10fbd18.png",
+            "alt": "左7右0",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p8",
+          "label": "左7右1",
+          "image": {
+            "src": "/images/items/exploration/diagram-214deff5.png",
+            "alt": "左7右1",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        }
+      ]
+    },
+    "after": {
+      "tokens": [
+        {
+          "id": "p0",
+          "label": "左0右7",
+          "image": {
+            "src": "/images/items/exploration/diagram-e1eb0675.png",
+            "alt": "左0右7",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 0,
+            "right": 7
+          }
+        },
+        {
+          "id": "p1",
+          "label": "左1右6",
+          "image": {
+            "src": "/images/items/exploration/diagram-fb56f9b9.png",
+            "alt": "左1右6",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 1,
+            "right": 6
+          }
+        },
+        {
+          "id": "p2",
+          "label": "左2右5",
+          "image": {
+            "src": "/images/items/exploration/diagram-914fea58.png",
+            "alt": "左2右5",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 2,
+            "right": 5
+          }
+        },
+        {
+          "id": "p3",
+          "label": "左3右4",
+          "image": {
+            "src": "/images/items/exploration/diagram-ac4608af.png",
+            "alt": "左3右4",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 3,
+            "right": 4
+          }
+        },
+        {
+          "id": "p4",
+          "label": "左4右3",
+          "image": {
+            "src": "/images/items/exploration/diagram-c5a283f7.png",
+            "alt": "左4右3",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 4,
+            "right": 3
+          }
+        },
+        {
+          "id": "p5",
+          "label": "左5右2",
+          "image": {
+            "src": "/images/items/exploration/diagram-20c2995d.png",
+            "alt": "左5右2",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 5,
+            "right": 2
+          }
+        },
+        {
+          "id": "p6",
+          "label": "左6右1",
+          "image": {
+            "src": "/images/items/exploration/diagram-a8d3cfec.png",
+            "alt": "左6右1",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 6,
+            "right": 1
+          }
+        },
+        {
+          "id": "p7",
+          "label": "左7右0",
+          "image": {
+            "src": "/images/items/exploration/diagram-d10fbd18.png",
+            "alt": "左7右0",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 7,
+            "right": 0
+          }
+        },
+        {
+          "id": "p8",
+          "label": "左7右1",
+          "image": {
+            "src": "/images/items/exploration/diagram-214deff5.png",
+            "alt": "左7右1",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 7,
+            "right": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "explore-number-partitions-4",
+    "fields": [
+      "tokens"
+    ],
+    "before": {
+      "tokens": [
+        {
+          "id": "p0",
+          "label": "左0右5",
+          "image": {
+            "src": "/images/items/exploration/diagram-a9dc4c0a.png",
+            "alt": "左0右5",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p1",
+          "label": "左1右4",
+          "image": {
+            "src": "/images/items/exploration/diagram-242dbffb.png",
+            "alt": "左1右4",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p2",
+          "label": "左2右3",
+          "image": {
+            "src": "/images/items/exploration/diagram-b314b407.png",
+            "alt": "左2右3",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p3",
+          "label": "左3右2",
+          "image": {
+            "src": "/images/items/exploration/diagram-adf20900.png",
+            "alt": "左3右2",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p4",
+          "label": "左4右1",
+          "image": {
+            "src": "/images/items/exploration/diagram-f6d24565.png",
+            "alt": "左4右1",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p5",
+          "label": "左5右0",
+          "image": {
+            "src": "/images/items/exploration/diagram-dc6fb202.png",
+            "alt": "左5右0",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p6",
+          "label": "左5右1",
+          "image": {
+            "src": "/images/items/exploration/diagram-b6abfd8b.png",
+            "alt": "左5右1",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        }
+      ]
+    },
+    "after": {
+      "tokens": [
+        {
+          "id": "p0",
+          "label": "左0右5",
+          "image": {
+            "src": "/images/items/exploration/diagram-a9dc4c0a.png",
+            "alt": "左0右5",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 0,
+            "right": 5
+          }
+        },
+        {
+          "id": "p1",
+          "label": "左1右4",
+          "image": {
+            "src": "/images/items/exploration/diagram-242dbffb.png",
+            "alt": "左1右4",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 1,
+            "right": 4
+          }
+        },
+        {
+          "id": "p2",
+          "label": "左2右3",
+          "image": {
+            "src": "/images/items/exploration/diagram-b314b407.png",
+            "alt": "左2右3",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 2,
+            "right": 3
+          }
+        },
+        {
+          "id": "p3",
+          "label": "左3右2",
+          "image": {
+            "src": "/images/items/exploration/diagram-adf20900.png",
+            "alt": "左3右2",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 3,
+            "right": 2
+          }
+        },
+        {
+          "id": "p4",
+          "label": "左4右1",
+          "image": {
+            "src": "/images/items/exploration/diagram-f6d24565.png",
+            "alt": "左4右1",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 4,
+            "right": 1
+          }
+        },
+        {
+          "id": "p5",
+          "label": "左5右0",
+          "image": {
+            "src": "/images/items/exploration/diagram-dc6fb202.png",
+            "alt": "左5右0",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 5,
+            "right": 0
+          }
+        },
+        {
+          "id": "p6",
+          "label": "左5右1",
+          "image": {
+            "src": "/images/items/exploration/diagram-b6abfd8b.png",
+            "alt": "左5右1",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 5,
+            "right": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "explore-number-partitions-5",
+    "fields": [
+      "tokens"
+    ],
+    "before": {
+      "tokens": [
+        {
+          "id": "p0",
+          "label": "左0右6",
+          "image": {
+            "src": "/images/items/exploration/diagram-c7227e0.png",
+            "alt": "左0右6",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p1",
+          "label": "左1右5",
+          "image": {
+            "src": "/images/items/exploration/diagram-b76fccab.png",
+            "alt": "左1右5",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p2",
+          "label": "左2右4",
+          "image": {
+            "src": "/images/items/exploration/diagram-6e2a7544.png",
+            "alt": "左2右4",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p3",
+          "label": "左3右3",
+          "image": {
+            "src": "/images/items/exploration/diagram-d5da75e0.png",
+            "alt": "左3右3",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p4",
+          "label": "左4右2",
+          "image": {
+            "src": "/images/items/exploration/diagram-5118c747.png",
+            "alt": "左4右2",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p5",
+          "label": "左5右1",
+          "image": {
+            "src": "/images/items/exploration/diagram-b6abfd8b.png",
+            "alt": "左5右1",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p6",
+          "label": "左6右0",
+          "image": {
+            "src": "/images/items/exploration/diagram-c22fa94d.png",
+            "alt": "左6右0",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p7",
+          "label": "左6右1",
+          "image": {
+            "src": "/images/items/exploration/diagram-a8d3cfec.png",
+            "alt": "左6右1",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        }
+      ]
+    },
+    "after": {
+      "tokens": [
+        {
+          "id": "p0",
+          "label": "左0右6",
+          "image": {
+            "src": "/images/items/exploration/diagram-c7227e0.png",
+            "alt": "左0右6",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 0,
+            "right": 6
+          }
+        },
+        {
+          "id": "p1",
+          "label": "左1右5",
+          "image": {
+            "src": "/images/items/exploration/diagram-b76fccab.png",
+            "alt": "左1右5",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 1,
+            "right": 5
+          }
+        },
+        {
+          "id": "p2",
+          "label": "左2右4",
+          "image": {
+            "src": "/images/items/exploration/diagram-6e2a7544.png",
+            "alt": "左2右4",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 2,
+            "right": 4
+          }
+        },
+        {
+          "id": "p3",
+          "label": "左3右3",
+          "image": {
+            "src": "/images/items/exploration/diagram-d5da75e0.png",
+            "alt": "左3右3",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 3,
+            "right": 3
+          }
+        },
+        {
+          "id": "p4",
+          "label": "左4右2",
+          "image": {
+            "src": "/images/items/exploration/diagram-5118c747.png",
+            "alt": "左4右2",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 4,
+            "right": 2
+          }
+        },
+        {
+          "id": "p5",
+          "label": "左5右1",
+          "image": {
+            "src": "/images/items/exploration/diagram-b6abfd8b.png",
+            "alt": "左5右1",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 5,
+            "right": 1
+          }
+        },
+        {
+          "id": "p6",
+          "label": "左6右0",
+          "image": {
+            "src": "/images/items/exploration/diagram-c22fa94d.png",
+            "alt": "左6右0",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 6,
+            "right": 0
+          }
+        },
+        {
+          "id": "p7",
+          "label": "左6右1",
+          "image": {
+            "src": "/images/items/exploration/diagram-a8d3cfec.png",
+            "alt": "左6右1",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 6,
+            "right": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "explore-number-partitions-6",
+    "fields": [
+      "tokens"
+    ],
+    "before": {
+      "tokens": [
+        {
+          "id": "p0",
+          "label": "左0右7",
+          "image": {
+            "src": "/images/items/exploration/diagram-e1eb0675.png",
+            "alt": "左0右7",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p1",
+          "label": "左1右6",
+          "image": {
+            "src": "/images/items/exploration/diagram-fb56f9b9.png",
+            "alt": "左1右6",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p2",
+          "label": "左2右5",
+          "image": {
+            "src": "/images/items/exploration/diagram-914fea58.png",
+            "alt": "左2右5",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p3",
+          "label": "左3右4",
+          "image": {
+            "src": "/images/items/exploration/diagram-ac4608af.png",
+            "alt": "左3右4",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p4",
+          "label": "左4右3",
+          "image": {
+            "src": "/images/items/exploration/diagram-c5a283f7.png",
+            "alt": "左4右3",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p5",
+          "label": "左5右2",
+          "image": {
+            "src": "/images/items/exploration/diagram-20c2995d.png",
+            "alt": "左5右2",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p6",
+          "label": "左6右1",
+          "image": {
+            "src": "/images/items/exploration/diagram-a8d3cfec.png",
+            "alt": "左6右1",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p7",
+          "label": "左7右0",
+          "image": {
+            "src": "/images/items/exploration/diagram-d10fbd18.png",
+            "alt": "左7右0",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p8",
+          "label": "左7右1",
+          "image": {
+            "src": "/images/items/exploration/diagram-214deff5.png",
+            "alt": "左7右1",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        }
+      ]
+    },
+    "after": {
+      "tokens": [
+        {
+          "id": "p0",
+          "label": "左0右7",
+          "image": {
+            "src": "/images/items/exploration/diagram-e1eb0675.png",
+            "alt": "左0右7",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 0,
+            "right": 7
+          }
+        },
+        {
+          "id": "p1",
+          "label": "左1右6",
+          "image": {
+            "src": "/images/items/exploration/diagram-fb56f9b9.png",
+            "alt": "左1右6",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 1,
+            "right": 6
+          }
+        },
+        {
+          "id": "p2",
+          "label": "左2右5",
+          "image": {
+            "src": "/images/items/exploration/diagram-914fea58.png",
+            "alt": "左2右5",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 2,
+            "right": 5
+          }
+        },
+        {
+          "id": "p3",
+          "label": "左3右4",
+          "image": {
+            "src": "/images/items/exploration/diagram-ac4608af.png",
+            "alt": "左3右4",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 3,
+            "right": 4
+          }
+        },
+        {
+          "id": "p4",
+          "label": "左4右3",
+          "image": {
+            "src": "/images/items/exploration/diagram-c5a283f7.png",
+            "alt": "左4右3",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 4,
+            "right": 3
+          }
+        },
+        {
+          "id": "p5",
+          "label": "左5右2",
+          "image": {
+            "src": "/images/items/exploration/diagram-20c2995d.png",
+            "alt": "左5右2",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 5,
+            "right": 2
+          }
+        },
+        {
+          "id": "p6",
+          "label": "左6右1",
+          "image": {
+            "src": "/images/items/exploration/diagram-a8d3cfec.png",
+            "alt": "左6右1",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 6,
+            "right": 1
+          }
+        },
+        {
+          "id": "p7",
+          "label": "左7右0",
+          "image": {
+            "src": "/images/items/exploration/diagram-d10fbd18.png",
+            "alt": "左7右0",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 7,
+            "right": 0
+          }
+        },
+        {
+          "id": "p8",
+          "label": "左7右1",
+          "image": {
+            "src": "/images/items/exploration/diagram-214deff5.png",
+            "alt": "左7右1",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 7,
+            "right": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "explore-number-partitions-7",
+    "fields": [
+      "tokens"
+    ],
+    "before": {
+      "tokens": [
+        {
+          "id": "p0",
+          "label": "左0右5",
+          "image": {
+            "src": "/images/items/exploration/diagram-a9dc4c0a.png",
+            "alt": "左0右5",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p1",
+          "label": "左1右4",
+          "image": {
+            "src": "/images/items/exploration/diagram-242dbffb.png",
+            "alt": "左1右4",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p2",
+          "label": "左2右3",
+          "image": {
+            "src": "/images/items/exploration/diagram-b314b407.png",
+            "alt": "左2右3",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p3",
+          "label": "左3右2",
+          "image": {
+            "src": "/images/items/exploration/diagram-adf20900.png",
+            "alt": "左3右2",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p4",
+          "label": "左4右1",
+          "image": {
+            "src": "/images/items/exploration/diagram-f6d24565.png",
+            "alt": "左4右1",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p5",
+          "label": "左5右0",
+          "image": {
+            "src": "/images/items/exploration/diagram-dc6fb202.png",
+            "alt": "左5右0",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p6",
+          "label": "左5右1",
+          "image": {
+            "src": "/images/items/exploration/diagram-b6abfd8b.png",
+            "alt": "左5右1",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        }
+      ]
+    },
+    "after": {
+      "tokens": [
+        {
+          "id": "p0",
+          "label": "左0右5",
+          "image": {
+            "src": "/images/items/exploration/diagram-a9dc4c0a.png",
+            "alt": "左0右5",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 0,
+            "right": 5
+          }
+        },
+        {
+          "id": "p1",
+          "label": "左1右4",
+          "image": {
+            "src": "/images/items/exploration/diagram-242dbffb.png",
+            "alt": "左1右4",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 1,
+            "right": 4
+          }
+        },
+        {
+          "id": "p2",
+          "label": "左2右3",
+          "image": {
+            "src": "/images/items/exploration/diagram-b314b407.png",
+            "alt": "左2右3",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 2,
+            "right": 3
+          }
+        },
+        {
+          "id": "p3",
+          "label": "左3右2",
+          "image": {
+            "src": "/images/items/exploration/diagram-adf20900.png",
+            "alt": "左3右2",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 3,
+            "right": 2
+          }
+        },
+        {
+          "id": "p4",
+          "label": "左4右1",
+          "image": {
+            "src": "/images/items/exploration/diagram-f6d24565.png",
+            "alt": "左4右1",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 4,
+            "right": 1
+          }
+        },
+        {
+          "id": "p5",
+          "label": "左5右0",
+          "image": {
+            "src": "/images/items/exploration/diagram-dc6fb202.png",
+            "alt": "左5右0",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 5,
+            "right": 0
+          }
+        },
+        {
+          "id": "p6",
+          "label": "左5右1",
+          "image": {
+            "src": "/images/items/exploration/diagram-b6abfd8b.png",
+            "alt": "左5右1",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 5,
+            "right": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "explore-number-partitions-8",
+    "fields": [
+      "tokens"
+    ],
+    "before": {
+      "tokens": [
+        {
+          "id": "p0",
+          "label": "左0右6",
+          "image": {
+            "src": "/images/items/exploration/diagram-c7227e0.png",
+            "alt": "左0右6",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p1",
+          "label": "左1右5",
+          "image": {
+            "src": "/images/items/exploration/diagram-b76fccab.png",
+            "alt": "左1右5",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p2",
+          "label": "左2右4",
+          "image": {
+            "src": "/images/items/exploration/diagram-6e2a7544.png",
+            "alt": "左2右4",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p3",
+          "label": "左3右3",
+          "image": {
+            "src": "/images/items/exploration/diagram-d5da75e0.png",
+            "alt": "左3右3",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p4",
+          "label": "左4右2",
+          "image": {
+            "src": "/images/items/exploration/diagram-5118c747.png",
+            "alt": "左4右2",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p5",
+          "label": "左5右1",
+          "image": {
+            "src": "/images/items/exploration/diagram-b6abfd8b.png",
+            "alt": "左5右1",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p6",
+          "label": "左6右0",
+          "image": {
+            "src": "/images/items/exploration/diagram-c22fa94d.png",
+            "alt": "左6右0",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p7",
+          "label": "左6右1",
+          "image": {
+            "src": "/images/items/exploration/diagram-a8d3cfec.png",
+            "alt": "左6右1",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        }
+      ]
+    },
+    "after": {
+      "tokens": [
+        {
+          "id": "p0",
+          "label": "左0右6",
+          "image": {
+            "src": "/images/items/exploration/diagram-c7227e0.png",
+            "alt": "左0右6",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 0,
+            "right": 6
+          }
+        },
+        {
+          "id": "p1",
+          "label": "左1右5",
+          "image": {
+            "src": "/images/items/exploration/diagram-b76fccab.png",
+            "alt": "左1右5",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 1,
+            "right": 5
+          }
+        },
+        {
+          "id": "p2",
+          "label": "左2右4",
+          "image": {
+            "src": "/images/items/exploration/diagram-6e2a7544.png",
+            "alt": "左2右4",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 2,
+            "right": 4
+          }
+        },
+        {
+          "id": "p3",
+          "label": "左3右3",
+          "image": {
+            "src": "/images/items/exploration/diagram-d5da75e0.png",
+            "alt": "左3右3",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 3,
+            "right": 3
+          }
+        },
+        {
+          "id": "p4",
+          "label": "左4右2",
+          "image": {
+            "src": "/images/items/exploration/diagram-5118c747.png",
+            "alt": "左4右2",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 4,
+            "right": 2
+          }
+        },
+        {
+          "id": "p5",
+          "label": "左5右1",
+          "image": {
+            "src": "/images/items/exploration/diagram-b6abfd8b.png",
+            "alt": "左5右1",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 5,
+            "right": 1
+          }
+        },
+        {
+          "id": "p6",
+          "label": "左6右0",
+          "image": {
+            "src": "/images/items/exploration/diagram-c22fa94d.png",
+            "alt": "左6右0",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 6,
+            "right": 0
+          }
+        },
+        {
+          "id": "p7",
+          "label": "左6右1",
+          "image": {
+            "src": "/images/items/exploration/diagram-a8d3cfec.png",
+            "alt": "左6右1",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 6,
+            "right": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "explore-number-partitions-9",
+    "fields": [
+      "tokens"
+    ],
+    "before": {
+      "tokens": [
+        {
+          "id": "p0",
+          "label": "左0右7",
+          "image": {
+            "src": "/images/items/exploration/diagram-e1eb0675.png",
+            "alt": "左0右7",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p1",
+          "label": "左1右6",
+          "image": {
+            "src": "/images/items/exploration/diagram-fb56f9b9.png",
+            "alt": "左1右6",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p2",
+          "label": "左2右5",
+          "image": {
+            "src": "/images/items/exploration/diagram-914fea58.png",
+            "alt": "左2右5",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p3",
+          "label": "左3右4",
+          "image": {
+            "src": "/images/items/exploration/diagram-ac4608af.png",
+            "alt": "左3右4",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p4",
+          "label": "左4右3",
+          "image": {
+            "src": "/images/items/exploration/diagram-c5a283f7.png",
+            "alt": "左4右3",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p5",
+          "label": "左5右2",
+          "image": {
+            "src": "/images/items/exploration/diagram-20c2995d.png",
+            "alt": "左5右2",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p6",
+          "label": "左6右1",
+          "image": {
+            "src": "/images/items/exploration/diagram-a8d3cfec.png",
+            "alt": "左6右1",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p7",
+          "label": "左7右0",
+          "image": {
+            "src": "/images/items/exploration/diagram-d10fbd18.png",
+            "alt": "左7右0",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        },
+        {
+          "id": "p8",
+          "label": "左7右1",
+          "image": {
+            "src": "/images/items/exploration/diagram-214deff5.png",
+            "alt": "左7右1",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false
+        }
+      ]
+    },
+    "after": {
+      "tokens": [
+        {
+          "id": "p0",
+          "label": "左0右7",
+          "image": {
+            "src": "/images/items/exploration/diagram-e1eb0675.png",
+            "alt": "左0右7",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 0,
+            "right": 7
+          }
+        },
+        {
+          "id": "p1",
+          "label": "左1右6",
+          "image": {
+            "src": "/images/items/exploration/diagram-fb56f9b9.png",
+            "alt": "左1右6",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 1,
+            "right": 6
+          }
+        },
+        {
+          "id": "p2",
+          "label": "左2右5",
+          "image": {
+            "src": "/images/items/exploration/diagram-914fea58.png",
+            "alt": "左2右5",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 2,
+            "right": 5
+          }
+        },
+        {
+          "id": "p3",
+          "label": "左3右4",
+          "image": {
+            "src": "/images/items/exploration/diagram-ac4608af.png",
+            "alt": "左3右4",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 3,
+            "right": 4
+          }
+        },
+        {
+          "id": "p4",
+          "label": "左4右3",
+          "image": {
+            "src": "/images/items/exploration/diagram-c5a283f7.png",
+            "alt": "左4右3",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 4,
+            "right": 3
+          }
+        },
+        {
+          "id": "p5",
+          "label": "左5右2",
+          "image": {
+            "src": "/images/items/exploration/diagram-20c2995d.png",
+            "alt": "左5右2",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 5,
+            "right": 2
+          }
+        },
+        {
+          "id": "p6",
+          "label": "左6右1",
+          "image": {
+            "src": "/images/items/exploration/diagram-a8d3cfec.png",
+            "alt": "左6右1",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 6,
+            "right": 1
+          }
+        },
+        {
+          "id": "p7",
+          "label": "左7右0",
+          "image": {
+            "src": "/images/items/exploration/diagram-d10fbd18.png",
+            "alt": "左7右0",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 7,
+            "right": 0
+          }
+        },
+        {
+          "id": "p8",
+          "label": "左7右1",
+          "image": {
+            "src": "/images/items/exploration/diagram-214deff5.png",
+            "alt": "左7右1",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 7,
+            "right": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "explore-group-share-1",
+    "fields": [
+      "presentation"
+    ],
+    "before": {
+      "presentation": {
+        "evidence": {
+          "kind": "collection",
+          "count": 9,
+          "image": {
+            "src": "/images/items/cookie.png",
+            "alt": "饼干"
+          },
+          "caption": "9块饼干，平均分给3个人"
+        },
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "presentation": {
+        "evidence": {
+          "kind": "sharingModel",
+          "mode": "share",
+          "total": 9,
+          "people": 3
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-group-share-2",
+    "fields": [
+      "presentation"
+    ],
+    "before": {
+      "presentation": {
+        "evidence": {
+          "kind": "collection",
+          "count": 12,
+          "image": {
+            "src": "/images/items/cookie.png",
+            "alt": "饼干"
+          },
+          "caption": "12块饼干，平均分给4个人"
+        },
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "presentation": {
+        "evidence": {
+          "kind": "sharingModel",
+          "mode": "share",
+          "total": 12,
+          "people": 4
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-group-share-3",
+    "fields": [
+      "presentation"
+    ],
+    "before": {
+      "presentation": {
+        "evidence": {
+          "kind": "collection",
+          "count": 15,
+          "image": {
+            "src": "/images/items/cookie.png",
+            "alt": "饼干"
+          },
+          "caption": "15块饼干，平均分给5个人"
+        },
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "presentation": {
+        "evidence": {
+          "kind": "sharingModel",
+          "mode": "share",
+          "total": 15,
+          "people": 5
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-group-share-4",
+    "fields": [
+      "presentation"
+    ],
+    "before": {
+      "presentation": {
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "presentation": {
+        "evidence": {
+          "kind": "sharingModel",
+          "mode": "groups",
+          "groups": 3,
+          "each": 4
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-group-share-5",
+    "fields": [
+      "presentation"
+    ],
+    "before": {
+      "presentation": {
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "presentation": {
+        "evidence": {
+          "kind": "sharingModel",
+          "mode": "groups",
+          "groups": 4,
+          "each": 4
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-group-share-6",
+    "fields": [
+      "presentation"
+    ],
+    "before": {
+      "presentation": {
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "presentation": {
+        "evidence": {
+          "kind": "sharingModel",
+          "mode": "groups",
+          "groups": 5,
+          "each": 4
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-group-share-7",
+    "fields": [
+      "presentation"
+    ],
+    "before": {
+      "presentation": {
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "presentation": {
+        "evidence": {
+          "kind": "sharingModel",
+          "mode": "remainder",
+          "total": 13,
+          "capacity": 4
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-group-share-8",
+    "fields": [
+      "presentation"
+    ],
+    "before": {
+      "presentation": {
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "presentation": {
+        "evidence": {
+          "kind": "sharingModel",
+          "mode": "remainder",
+          "total": 18,
+          "capacity": 4
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-group-share-9",
+    "fields": [
+      "presentation"
+    ],
+    "before": {
+      "presentation": {
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "presentation": {
+        "evidence": {
+          "kind": "sharingModel",
+          "mode": "remainder",
+          "total": 23,
+          "capacity": 4
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-parity-place-value-4",
+    "fields": [
+      "clues",
+      "hints",
+      "presentation"
+    ],
+    "before": {
+      "clues": [],
+      "hints": [
+        "先找到图里和问题有关的部分。",
+        "2个十和3个一，组成23。"
+      ],
+      "presentation": {
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "clues": [
+        "一长条代表10，一小块代表1。"
+      ],
+      "hints": [
+        "一长条代表10，一小块代表1。",
+        "2个十和3个一，组成23。"
+      ],
+      "presentation": {
+        "evidence": {
+          "kind": "placeValueModel",
+          "tens": 2,
+          "ones": 3
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-parity-place-value-5",
+    "fields": [
+      "clues",
+      "hints",
+      "presentation"
+    ],
+    "before": {
+      "clues": [],
+      "hints": [
+        "先找到图里和问题有关的部分。",
+        "3个十和4个一，组成34。"
+      ],
+      "presentation": {
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "clues": [
+        "一长条代表10，一小块代表1。"
+      ],
+      "hints": [
+        "一长条代表10，一小块代表1。",
+        "3个十和4个一，组成34。"
+      ],
+      "presentation": {
+        "evidence": {
+          "kind": "placeValueModel",
+          "tens": 3,
+          "ones": 4
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-parity-place-value-6",
+    "fields": [
+      "clues",
+      "hints",
+      "presentation"
+    ],
+    "before": {
+      "clues": [],
+      "hints": [
+        "先找到图里和问题有关的部分。",
+        "4个十和5个一，组成45。"
+      ],
+      "presentation": {
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "clues": [
+        "一长条代表10，一小块代表1。"
+      ],
+      "hints": [
+        "一长条代表10，一小块代表1。",
+        "4个十和5个一，组成45。"
+      ],
+      "presentation": {
+        "evidence": {
+          "kind": "placeValueModel",
+          "tens": 4,
+          "ones": 5
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-parity-place-value-7",
+    "fields": [
+      "clues",
+      "hints",
+      "presentation"
+    ],
+    "before": {
+      "clues": [],
+      "hints": [
+        "先找到图里和问题有关的部分。",
+        "23拿走一变成22。每增加或减少一个，单双都会改变。"
+      ],
+      "presentation": {
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "clues": [
+        "一长条代表10，一小块代表1。"
+      ],
+      "hints": [
+        "一长条代表10，一小块代表1。",
+        "23拿走一变成22。每增加或减少一个，单双都会改变。"
+      ],
+      "presentation": {
+        "evidence": {
+          "kind": "placeValueModel",
+          "tens": 2,
+          "ones": 3
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-parity-place-value-8",
+    "fields": [
+      "clues",
+      "hints",
+      "presentation"
+    ],
+    "before": {
+      "clues": [],
+      "hints": [
+        "先找到图里和问题有关的部分。",
+        "34拿走一变成33。每增加或减少一个，单双都会改变。"
+      ],
+      "presentation": {
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "clues": [
+        "一长条代表10，一小块代表1。"
+      ],
+      "hints": [
+        "一长条代表10，一小块代表1。",
+        "34拿走一变成33。每增加或减少一个，单双都会改变。"
+      ],
+      "presentation": {
+        "evidence": {
+          "kind": "placeValueModel",
+          "tens": 3,
+          "ones": 4
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-parity-place-value-9",
+    "fields": [
+      "clues",
+      "hints",
+      "presentation"
+    ],
+    "before": {
+      "clues": [],
+      "hints": [
+        "先找到图里和问题有关的部分。",
+        "45拿走一变成44。每增加或减少一个，单双都会改变。"
+      ],
+      "presentation": {
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "clues": [
+        "一长条代表10，一小块代表1。"
+      ],
+      "hints": [
+        "一长条代表10，一小块代表1。",
+        "45拿走一变成44。每增加或减少一个，单双都会改变。"
+      ],
+      "presentation": {
+        "evidence": {
+          "kind": "placeValueModel",
+          "tens": 4,
+          "ones": 5
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-number-sequences-1",
+    "fields": [
+      "presentation"
+    ],
+    "before": {
+      "presentation": {
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "presentation": {
+        "evidence": {
+          "kind": "numberPattern",
+          "values": [
+            1,
+            3,
+            5,
+            null
+          ],
+          "columns": 4
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-number-sequences-2",
+    "fields": [
+      "presentation"
+    ],
+    "before": {
+      "presentation": {
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "presentation": {
+        "evidence": {
+          "kind": "numberPattern",
+          "values": [
+            2,
+            5,
+            8,
+            null
+          ],
+          "columns": 4
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-number-sequences-3",
+    "fields": [
+      "presentation"
+    ],
+    "before": {
+      "presentation": {
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "presentation": {
+        "evidence": {
+          "kind": "numberPattern",
+          "values": [
+            3,
+            7,
+            11,
+            null
+          ],
+          "columns": 4
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-number-sequences-4",
+    "fields": [
+      "presentation"
+    ],
+    "before": {
+      "presentation": {
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "presentation": {
+        "evidence": {
+          "kind": "numberPattern",
+          "values": [
+            1,
+            20,
+            3,
+            22,
+            5,
+            null
+          ],
+          "columns": 6
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-number-sequences-5",
+    "fields": [
+      "presentation"
+    ],
+    "before": {
+      "presentation": {
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "presentation": {
+        "evidence": {
+          "kind": "numberPattern",
+          "values": [
+            2,
+            21,
+            5,
+            23,
+            8,
+            null
+          ],
+          "columns": 6
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-number-sequences-6",
+    "fields": [
+      "presentation"
+    ],
+    "before": {
+      "presentation": {
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "presentation": {
+        "evidence": {
+          "kind": "numberPattern",
+          "values": [
+            3,
+            22,
+            7,
+            24,
+            11,
+            null
+          ],
+          "columns": 6
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-number-sequences-7",
+    "fields": [
+      "presentation"
+    ],
+    "before": {
+      "presentation": {
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "presentation": {
+        "evidence": {
+          "kind": "numberPattern",
+          "values": [
+            1,
+            3,
+            5,
+            4,
+            6,
+            null
+          ],
+          "columns": 3
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-number-sequences-8",
+    "fields": [
+      "presentation"
+    ],
+    "before": {
+      "presentation": {
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "presentation": {
+        "evidence": {
+          "kind": "numberPattern",
+          "values": [
+            2,
+            5,
+            8,
+            5,
+            8,
+            null
+          ],
+          "columns": 3
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-number-sequences-9",
+    "fields": [
+      "presentation"
+    ],
+    "before": {
+      "presentation": {
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "presentation": {
+        "evidence": {
+          "kind": "numberPattern",
+          "values": [
+            3,
+            7,
+            11,
+            6,
+            10,
+            null
+          ],
+          "columns": 3
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-symbol-equations-1",
+    "fields": [
+      "presentation"
+    ],
+    "before": {
+      "presentation": {
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "presentation": {
+        "evidence": {
+          "kind": "shapeEquations",
+          "relations": [
+            {
+              "shapes": [
+                "circle",
+                "circle"
+              ],
+              "total": 6
+            },
+            {
+              "shapes": [
+                "circle"
+              ],
+              "total": null
+            }
+          ]
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-symbol-equations-2",
+    "fields": [
+      "presentation"
+    ],
+    "before": {
+      "presentation": {
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "presentation": {
+        "evidence": {
+          "kind": "shapeEquations",
+          "relations": [
+            {
+              "shapes": [
+                "circle",
+                "circle"
+              ],
+              "total": 8
+            },
+            {
+              "shapes": [
+                "circle"
+              ],
+              "total": null
+            }
+          ]
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-symbol-equations-3",
+    "fields": [
+      "presentation"
+    ],
+    "before": {
+      "presentation": {
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "presentation": {
+        "evidence": {
+          "kind": "shapeEquations",
+          "relations": [
+            {
+              "shapes": [
+                "circle",
+                "circle"
+              ],
+              "total": 10
+            },
+            {
+              "shapes": [
+                "circle"
+              ],
+              "total": null
+            }
+          ]
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-symbol-equations-4",
+    "fields": [
+      "presentation"
+    ],
+    "before": {
+      "presentation": {
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "presentation": {
+        "evidence": {
+          "kind": "shapeEquations",
+          "relations": [
+            {
+              "shapes": [
+                "circle",
+                "circle"
+              ],
+              "total": 6
+            },
+            {
+              "shapes": [
+                "circle",
+                "triangle"
+              ],
+              "total": 5
+            },
+            {
+              "shapes": [
+                "triangle"
+              ],
+              "total": null
+            }
+          ]
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-symbol-equations-5",
+    "fields": [
+      "presentation"
+    ],
+    "before": {
+      "presentation": {
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "presentation": {
+        "evidence": {
+          "kind": "shapeEquations",
+          "relations": [
+            {
+              "shapes": [
+                "circle",
+                "circle"
+              ],
+              "total": 8
+            },
+            {
+              "shapes": [
+                "circle",
+                "triangle"
+              ],
+              "total": 7
+            },
+            {
+              "shapes": [
+                "triangle"
+              ],
+              "total": null
+            }
+          ]
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-symbol-equations-6",
+    "fields": [
+      "presentation"
+    ],
+    "before": {
+      "presentation": {
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "presentation": {
+        "evidence": {
+          "kind": "shapeEquations",
+          "relations": [
+            {
+              "shapes": [
+                "circle",
+                "circle"
+              ],
+              "total": 10
+            },
+            {
+              "shapes": [
+                "circle",
+                "triangle"
+              ],
+              "total": 9
+            },
+            {
+              "shapes": [
+                "triangle"
+              ],
+              "total": null
+            }
+          ]
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-symbol-equations-7",
+    "fields": [
+      "presentation"
+    ],
+    "before": {
+      "presentation": {
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "presentation": {
+        "evidence": {
+          "kind": "shapeEquations",
+          "relations": [
+            {
+              "shapes": [
+                "circle",
+                "circle"
+              ],
+              "total": 6
+            },
+            {
+              "shapes": [
+                "circle",
+                "triangle"
+              ],
+              "total": 5
+            },
+            {
+              "shapes": [
+                "circle",
+                "triangle",
+                "triangle"
+              ],
+              "total": null
+            }
+          ]
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-symbol-equations-8",
+    "fields": [
+      "presentation"
+    ],
+    "before": {
+      "presentation": {
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "presentation": {
+        "evidence": {
+          "kind": "shapeEquations",
+          "relations": [
+            {
+              "shapes": [
+                "circle",
+                "circle"
+              ],
+              "total": 8
+            },
+            {
+              "shapes": [
+                "circle",
+                "triangle"
+              ],
+              "total": 7
+            },
+            {
+              "shapes": [
+                "circle",
+                "triangle",
+                "triangle"
+              ],
+              "total": null
+            }
+          ]
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-symbol-equations-9",
+    "fields": [
+      "presentation"
+    ],
+    "before": {
+      "presentation": {
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "presentation": {
+        "evidence": {
+          "kind": "shapeEquations",
+          "relations": [
+            {
+              "shapes": [
+                "circle",
+                "circle"
+              ],
+              "total": 10
+            },
+            {
+              "shapes": [
+                "circle",
+                "triangle"
+              ],
+              "total": 9
+            },
+            {
+              "shapes": [
+                "circle",
+                "triangle",
+                "triangle"
+              ],
+              "total": null
+            }
+          ]
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-money-shopping-1",
+    "fields": [
+      "presentation"
+    ],
+    "before": {
+      "presentation": {
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "presentation": {
+        "evidence": {
+          "kind": "moneyExchange",
+          "from": 10,
+          "denomination": 5
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-money-shopping-2",
+    "fields": [
+      "presentation"
+    ],
+    "before": {
+      "presentation": {
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "presentation": {
+        "evidence": {
+          "kind": "moneyExchange",
+          "from": 20,
+          "denomination": 5
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-money-shopping-3",
+    "fields": [
+      "presentation"
+    ],
+    "before": {
+      "presentation": {
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "presentation": {
+        "evidence": {
+          "kind": "moneyExchange",
+          "from": 50,
+          "denomination": 10
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-time-elapsed-1",
+    "fields": [
+      "presentation"
+    ],
+    "before": {
+      "presentation": {
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "presentation": {
+        "evidence": {
+          "kind": "clockModel",
+          "clocks": [
+            {
+              "label": "",
+              "hour": 3,
+              "minute": 30
+            }
+          ]
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-time-elapsed-2",
+    "fields": [
+      "presentation"
+    ],
+    "before": {
+      "presentation": {
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "presentation": {
+        "evidence": {
+          "kind": "clockModel",
+          "clocks": [
+            {
+              "label": "",
+              "hour": 4,
+              "minute": 30
+            }
+          ]
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-time-elapsed-3",
+    "fields": [
+      "presentation"
+    ],
+    "before": {
+      "presentation": {
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "presentation": {
+        "evidence": {
+          "kind": "clockModel",
+          "clocks": [
+            {
+              "label": "",
+              "hour": 5,
+              "minute": 30
+            }
+          ]
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-time-elapsed-4",
+    "fields": [
+      "presentation"
+    ],
+    "before": {
+      "presentation": {
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "presentation": {
+        "evidence": {
+          "kind": "clockModel",
+          "clocks": [
+            {
+              "label": "",
+              "hour": 3,
+              "minute": 15
+            }
+          ]
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-time-elapsed-5",
+    "fields": [
+      "presentation"
+    ],
+    "before": {
+      "presentation": {
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "presentation": {
+        "evidence": {
+          "kind": "clockModel",
+          "clocks": [
+            {
+              "label": "",
+              "hour": 4,
+              "minute": 25
+            }
+          ]
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-time-elapsed-6",
+    "fields": [
+      "presentation"
+    ],
+    "before": {
+      "presentation": {
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "presentation": {
+        "evidence": {
+          "kind": "clockModel",
+          "clocks": [
+            {
+              "label": "",
+              "hour": 5,
+              "minute": 35
+            }
+          ]
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-time-elapsed-7",
+    "fields": [
+      "presentation"
+    ],
+    "before": {
+      "presentation": {
+        "evidence": {
+          "kind": "visualComparison",
+          "panels": [
+            {
+              "kind": "image",
+              "label": "开始",
+              "image": {
+                "src": "/images/items/exploration/diagram-9b3b5231.png",
+                "alt": "开始时刻的钟面",
+                "width": 320,
+                "height": 320
+              }
+            },
+            {
+              "kind": "image",
+              "label": "结束",
+              "image": {
+                "src": "/images/items/exploration/diagram-9869403a.png",
+                "alt": "结束时刻的钟面",
+                "width": 320,
+                "height": 320
+              }
+            }
+          ]
+        },
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "presentation": {
+        "evidence": {
+          "kind": "clockModel",
+          "clocks": [
+            {
+              "label": "开始",
+              "hour": 3,
+              "minute": 20
+            },
+            {
+              "label": "结束",
+              "hour": 3,
+              "minute": 45
+            }
+          ]
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-time-elapsed-8",
+    "fields": [
+      "presentation"
+    ],
+    "before": {
+      "presentation": {
+        "evidence": {
+          "kind": "visualComparison",
+          "panels": [
+            {
+              "kind": "image",
+              "label": "开始",
+              "image": {
+                "src": "/images/items/exploration/diagram-24c5a825.png",
+                "alt": "开始时刻的钟面",
+                "width": 320,
+                "height": 320
+              }
+            },
+            {
+              "kind": "image",
+              "label": "结束",
+              "image": {
+                "src": "/images/items/exploration/diagram-56a28cf2.png",
+                "alt": "结束时刻的钟面",
+                "width": 320,
+                "height": 320
+              }
+            }
+          ]
+        },
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "presentation": {
+        "evidence": {
+          "kind": "clockModel",
+          "clocks": [
+            {
+              "label": "开始",
+              "hour": 4,
+              "minute": 20
+            },
+            {
+              "label": "结束",
+              "hour": 4,
+              "minute": 55
+            }
+          ]
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-time-elapsed-9",
+    "fields": [
+      "presentation"
+    ],
+    "before": {
+      "presentation": {
+        "evidence": {
+          "kind": "visualComparison",
+          "panels": [
+            {
+              "kind": "image",
+              "label": "开始",
+              "image": {
+                "src": "/images/items/exploration/diagram-feb12725.png",
+                "alt": "开始时刻的钟面",
+                "width": 320,
+                "height": 320
+              }
+            },
+            {
+              "kind": "image",
+              "label": "结束",
+              "image": {
+                "src": "/images/items/exploration/diagram-cbd0e5f3.png",
+                "alt": "结束时刻的钟面",
+                "width": 320,
+                "height": 320
+              }
+            }
+          ]
+        },
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "presentation": {
+        "evidence": {
+          "kind": "clockModel",
+          "clocks": [
+            {
+              "label": "开始",
+              "hour": 5,
+              "minute": 20
+            },
+            {
+              "label": "结束",
+              "hour": 6,
+              "minute": 5
+            }
+          ]
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-measurement-boundaries-1",
+    "fields": [
+      "presentation"
+    ],
+    "before": {
+      "presentation": {
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "presentation": {
+        "evidence": {
+          "kind": "rulerModel",
+          "start": 0,
+          "end": 4,
+          "maximum": 12
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-measurement-boundaries-2",
+    "fields": [
+      "presentation"
+    ],
+    "before": {
+      "presentation": {
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "presentation": {
+        "evidence": {
+          "kind": "rulerModel",
+          "start": 0,
+          "end": 5,
+          "maximum": 12
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-measurement-boundaries-3",
+    "fields": [
+      "presentation"
+    ],
+    "before": {
+      "presentation": {
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "presentation": {
+        "evidence": {
+          "kind": "rulerModel",
+          "start": 0,
+          "end": 6,
+          "maximum": 12
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-measurement-boundaries-4",
+    "fields": [
+      "presentation"
+    ],
+    "before": {
+      "presentation": {
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "presentation": {
+        "evidence": {
+          "kind": "rulerModel",
+          "start": 2,
+          "end": 6,
+          "maximum": 12
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-measurement-boundaries-5",
+    "fields": [
+      "presentation"
+    ],
+    "before": {
+      "presentation": {
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "presentation": {
+        "evidence": {
+          "kind": "rulerModel",
+          "start": 3,
+          "end": 8,
+          "maximum": 12
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-measurement-boundaries-6",
+    "fields": [
+      "presentation"
+    ],
+    "before": {
+      "presentation": {
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "presentation": {
+        "evidence": {
+          "kind": "rulerModel",
+          "start": 4,
+          "end": 10,
+          "maximum": 12
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-measurement-boundaries-7",
+    "fields": [
+      "presentation"
+    ],
+    "before": {
+      "presentation": {
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "presentation": {
+        "evidence": {
+          "kind": "perimeterModel",
+          "columns": 4,
+          "rows": 2
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-measurement-boundaries-8",
+    "fields": [
+      "presentation"
+    ],
+    "before": {
+      "presentation": {
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "presentation": {
+        "evidence": {
+          "kind": "perimeterModel",
+          "columns": 5,
+          "rows": 3
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-measurement-boundaries-9",
+    "fields": [
+      "presentation"
+    ],
+    "before": {
+      "presentation": {
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "presentation": {
+        "evidence": {
+          "kind": "perimeterModel",
+          "columns": 6,
+          "rows": 4
+        },
+        "readableEvidence": true
+      }
+    }
+  }
+]

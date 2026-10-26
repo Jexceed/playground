@@ -1,0 +1,6029 @@
+[
+  {
+    "id": "explore-vocabulary-relations",
+    "kind": "activitySet",
+    "world": "language",
+    "title": "词语有朋友",
+    "subtitle": "动作词、反义词与词义关系",
+    "goal": "看图命名 → 关系对照 → 在情境中使用",
+    "parentPrompt": "先让孩子操作和解释，再按需要给一点提示。",
+    "abilityTags": [
+      "动作词、反义词与词义关系"
+    ],
+    "level": "L3",
+    "rounds": [
+      {
+        "id": "explore-vocabulary-relations-1",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "E01",
+        "level": "L2",
+        "stage": 1,
+        "difficultyNote": "看图命名",
+        "prerequisites": "理解高低、开关等常用词或由成人读出",
+        "prompt": "把意思相反的词配成朋友。",
+        "instruction": "把两边有关的图卡连起来。可以拖过去，也可以两边各点一下。",
+        "clues": [],
+        "tokens": [
+          {
+            "id": "a0",
+            "label": "高",
+            "image": {
+              "src": "/images/items/vocabulary-058/high-kite.png",
+              "alt": "同一棵树和孩子作参照，红风筝飞得高",
+              "style": "illustration",
+              "width": 640,
+              "height": 640
+            },
+            "textOnly": false
+          },
+          {
+            "id": "a1",
+            "label": "开",
+            "image": {
+              "src": "/images/items/exploration-art/box-open.png",
+              "alt": "打开的盒子",
+              "frame": {
+                "columns": 1,
+                "rows": 1,
+                "index": 0
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "b0",
+            "label": "低",
+            "image": {
+              "src": "/images/items/vocabulary-058/low-kite.png",
+              "alt": "同一棵树和孩子作参照，红风筝飞得低",
+              "style": "illustration",
+              "width": 640,
+              "height": 640
+            },
+            "textOnly": false
+          },
+          {
+            "id": "b1",
+            "label": "关",
+            "image": {
+              "src": "/images/items/exploration-art/box-closed.png",
+              "alt": "关上的盒子",
+              "frame": {
+                "columns": 1,
+                "rows": 1,
+                "index": 0
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          }
+        ],
+        "hints": [
+          "先说说左边这张图卡的特点，再找对应关系。",
+          "可以先做一个动作或摆出实物，再比较两个词的意思。"
+        ],
+        "success": "可以先做一个动作或摆出实物，再比较两个词的意思。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+        "abilityTags": [
+          "动作词、反义词与词义关系"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S109",
+            "locator": "20-23"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide15"
+          },
+          {
+            "sourceId": "S071",
+            "locator": "render19"
+          },
+          {
+            "sourceId": "S117",
+            "locator": "20-22"
+          }
+        ],
+        "kind": "matching",
+        "leftIds": [
+          "a0",
+          "a1"
+        ],
+        "rightIds": [
+          "b0",
+          "b1"
+        ],
+        "expectedPairs": [
+          [
+            "a0",
+            "b0"
+          ],
+          [
+            "a1",
+            "b1"
+          ]
+        ],
+        "difficulty": {
+          "rules": 1,
+          "steps": 1,
+          "reading": 2,
+          "motor": 2,
+          "representation": "symbols",
+          "basis": "2组汉字词卡反义匹配，字卡负荷要和概念掌握分开",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "pairs": 2
+          }
+        }
+      },
+      {
+        "id": "explore-vocabulary-relations-2",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "E01",
+        "level": "L2",
+        "stage": 1,
+        "difficultyNote": "看图命名",
+        "prerequisites": "理解高低、开关等常用词或由成人读出",
+        "prompt": "把意思相反的词配成朋友。",
+        "instruction": "把两边有关的图卡连起来。可以拖过去，也可以两边各点一下。",
+        "clues": [],
+        "tokens": [
+          {
+            "id": "a0",
+            "label": "开",
+            "image": {
+              "src": "/images/items/exploration-art/box-open.png",
+              "alt": "打开的盒子",
+              "frame": {
+                "columns": 1,
+                "rows": 1,
+                "index": 0
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "a1",
+            "label": "上",
+            "image": {
+              "src": "/images/items/vocabulary-058/above-table.png",
+              "alt": "小猫坐在桌子上",
+              "style": "illustration",
+              "width": 640,
+              "height": 640
+            },
+            "textOnly": false
+          },
+          {
+            "id": "b0",
+            "label": "关",
+            "image": {
+              "src": "/images/items/exploration-art/box-closed.png",
+              "alt": "关上的盒子",
+              "frame": {
+                "columns": 1,
+                "rows": 1,
+                "index": 0
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "b1",
+            "label": "下",
+            "image": {
+              "src": "/images/items/vocabulary-058/below-table.png",
+              "alt": "同样大小的小猫坐在同一张桌子下",
+              "style": "illustration",
+              "width": 640,
+              "height": 640
+            },
+            "textOnly": false
+          }
+        ],
+        "hints": [
+          "先说说左边这张图卡的特点，再找对应关系。",
+          "可以先做一个动作或摆出实物，再比较两个词的意思。"
+        ],
+        "success": "可以先做一个动作或摆出实物，再比较两个词的意思。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+        "abilityTags": [
+          "动作词、反义词与词义关系"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S109",
+            "locator": "20-23"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide15"
+          },
+          {
+            "sourceId": "S071",
+            "locator": "render19"
+          },
+          {
+            "sourceId": "S117",
+            "locator": "20-22"
+          }
+        ],
+        "kind": "matching",
+        "leftIds": [
+          "a0",
+          "a1"
+        ],
+        "rightIds": [
+          "b0",
+          "b1"
+        ],
+        "expectedPairs": [
+          [
+            "a0",
+            "b0"
+          ],
+          [
+            "a1",
+            "b1"
+          ]
+        ],
+        "difficulty": {
+          "rules": 1,
+          "steps": 1,
+          "reading": 2,
+          "motor": 2,
+          "representation": "symbols",
+          "basis": "2组汉字词卡反义匹配，字卡负荷要和概念掌握分开",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "pairs": 2
+          }
+        }
+      },
+      {
+        "id": "explore-vocabulary-relations-3",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "E01",
+        "level": "L2",
+        "stage": 1,
+        "difficultyNote": "看图命名",
+        "prerequisites": "理解高低、开关等常用词或由成人读出",
+        "prompt": "把意思相反的词配成朋友。",
+        "instruction": "把两边有关的图卡连起来。可以拖过去，也可以两边各点一下。",
+        "clues": [],
+        "tokens": [
+          {
+            "id": "a0",
+            "label": "上",
+            "image": {
+              "src": "/images/items/vocabulary-058/above-table.png",
+              "alt": "小猫坐在桌子上",
+              "style": "illustration",
+              "width": 640,
+              "height": 640
+            },
+            "textOnly": false
+          },
+          {
+            "id": "a1",
+            "label": "长",
+            "image": {
+              "src": "/images/items/vocabulary-058/long-pencil.png",
+              "alt": "同一画幅和尺度下的长铅笔",
+              "style": "illustration",
+              "width": 640,
+              "height": 640
+            },
+            "textOnly": false
+          },
+          {
+            "id": "b0",
+            "label": "下",
+            "image": {
+              "src": "/images/items/vocabulary-058/below-table.png",
+              "alt": "同样大小的小猫坐在同一张桌子下",
+              "style": "illustration",
+              "width": 640,
+              "height": 640
+            },
+            "textOnly": false
+          },
+          {
+            "id": "b1",
+            "label": "短",
+            "image": {
+              "src": "/images/items/vocabulary-058/short-pencil.png",
+              "alt": "同一画幅和尺度下的短铅笔",
+              "style": "illustration",
+              "width": 640,
+              "height": 640
+            },
+            "textOnly": false
+          }
+        ],
+        "hints": [
+          "先说说左边这张图卡的特点，再找对应关系。",
+          "可以先做一个动作或摆出实物，再比较两个词的意思。"
+        ],
+        "success": "可以先做一个动作或摆出实物，再比较两个词的意思。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+        "abilityTags": [
+          "动作词、反义词与词义关系"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S109",
+            "locator": "20-23"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide15"
+          },
+          {
+            "sourceId": "S071",
+            "locator": "render19"
+          },
+          {
+            "sourceId": "S117",
+            "locator": "20-22"
+          }
+        ],
+        "kind": "matching",
+        "leftIds": [
+          "a0",
+          "a1"
+        ],
+        "rightIds": [
+          "b0",
+          "b1"
+        ],
+        "expectedPairs": [
+          [
+            "a0",
+            "b0"
+          ],
+          [
+            "a1",
+            "b1"
+          ]
+        ],
+        "difficulty": {
+          "rules": 1,
+          "steps": 1,
+          "reading": 2,
+          "motor": 2,
+          "representation": "symbols",
+          "basis": "2组汉字词卡反义匹配，字卡负荷要和概念掌握分开",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "pairs": 2
+          }
+        }
+      },
+      {
+        "id": "explore-vocabulary-relations-4",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "E01",
+        "level": "L3",
+        "stage": 2,
+        "difficultyNote": "关系对照",
+        "prerequisites": "能将3组词与相反意义对应",
+        "prompt": "把意思相反的词配成朋友。",
+        "instruction": "把两边有关的图卡连起来。可以拖过去，也可以两边各点一下。",
+        "clues": [],
+        "tokens": [
+          {
+            "id": "a0",
+            "label": "高",
+            "image": {
+              "src": "/images/items/vocabulary-058/high-kite.png",
+              "alt": "同一棵树和孩子作参照，红风筝飞得高",
+              "style": "illustration",
+              "width": 640,
+              "height": 640
+            },
+            "textOnly": false
+          },
+          {
+            "id": "a1",
+            "label": "开",
+            "image": {
+              "src": "/images/items/exploration-art/box-open.png",
+              "alt": "打开的盒子",
+              "frame": {
+                "columns": 1,
+                "rows": 1,
+                "index": 0
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "a2",
+            "label": "上",
+            "image": {
+              "src": "/images/items/vocabulary-058/above-table.png",
+              "alt": "小猫坐在桌子上",
+              "style": "illustration",
+              "width": 640,
+              "height": 640
+            },
+            "textOnly": false
+          },
+          {
+            "id": "b0",
+            "label": "低",
+            "image": {
+              "src": "/images/items/vocabulary-058/low-kite.png",
+              "alt": "同一棵树和孩子作参照，红风筝飞得低",
+              "style": "illustration",
+              "width": 640,
+              "height": 640
+            },
+            "textOnly": false
+          },
+          {
+            "id": "b1",
+            "label": "关",
+            "image": {
+              "src": "/images/items/exploration-art/box-closed.png",
+              "alt": "关上的盒子",
+              "frame": {
+                "columns": 1,
+                "rows": 1,
+                "index": 0
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "b2",
+            "label": "下",
+            "image": {
+              "src": "/images/items/vocabulary-058/below-table.png",
+              "alt": "同样大小的小猫坐在同一张桌子下",
+              "style": "illustration",
+              "width": 640,
+              "height": 640
+            },
+            "textOnly": false
+          }
+        ],
+        "hints": [
+          "先说说左边这张图卡的特点，再找对应关系。",
+          "可以先做一个动作或摆出实物，再比较两个词的意思。"
+        ],
+        "success": "可以先做一个动作或摆出实物，再比较两个词的意思。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+        "abilityTags": [
+          "动作词、反义词与词义关系"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S109",
+            "locator": "20-23"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide15"
+          },
+          {
+            "sourceId": "S071",
+            "locator": "render19"
+          },
+          {
+            "sourceId": "S117",
+            "locator": "20-22"
+          }
+        ],
+        "kind": "matching",
+        "leftIds": [
+          "a0",
+          "a1",
+          "a2"
+        ],
+        "rightIds": [
+          "b2",
+          "b0",
+          "b1"
+        ],
+        "expectedPairs": [
+          [
+            "a0",
+            "b0"
+          ],
+          [
+            "a1",
+            "b1"
+          ],
+          [
+            "a2",
+            "b2"
+          ]
+        ],
+        "difficulty": {
+          "rules": 1,
+          "steps": 1,
+          "reading": 2,
+          "motor": 2,
+          "representation": "symbols",
+          "basis": "3组反义词匹配，关系仍一种；项目数变多",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "pairs": 3
+          }
+        }
+      },
+      {
+        "id": "explore-vocabulary-relations-5",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "E01",
+        "level": "L3",
+        "stage": 2,
+        "difficultyNote": "关系对照",
+        "prerequisites": "能将3组词与相反意义对应",
+        "prompt": "把意思相反的词配成朋友。",
+        "instruction": "把两边有关的图卡连起来。可以拖过去，也可以两边各点一下。",
+        "clues": [],
+        "tokens": [
+          {
+            "id": "a0",
+            "label": "开",
+            "image": {
+              "src": "/images/items/exploration-art/box-open.png",
+              "alt": "打开的盒子",
+              "frame": {
+                "columns": 1,
+                "rows": 1,
+                "index": 0
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "a1",
+            "label": "上",
+            "image": {
+              "src": "/images/items/vocabulary-058/above-table.png",
+              "alt": "小猫坐在桌子上",
+              "style": "illustration",
+              "width": 640,
+              "height": 640
+            },
+            "textOnly": false
+          },
+          {
+            "id": "a2",
+            "label": "长",
+            "image": {
+              "src": "/images/items/vocabulary-058/long-pencil.png",
+              "alt": "同一画幅和尺度下的长铅笔",
+              "style": "illustration",
+              "width": 640,
+              "height": 640
+            },
+            "textOnly": false
+          },
+          {
+            "id": "b0",
+            "label": "关",
+            "image": {
+              "src": "/images/items/exploration-art/box-closed.png",
+              "alt": "关上的盒子",
+              "frame": {
+                "columns": 1,
+                "rows": 1,
+                "index": 0
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "b1",
+            "label": "下",
+            "image": {
+              "src": "/images/items/vocabulary-058/below-table.png",
+              "alt": "同样大小的小猫坐在同一张桌子下",
+              "style": "illustration",
+              "width": 640,
+              "height": 640
+            },
+            "textOnly": false
+          },
+          {
+            "id": "b2",
+            "label": "短",
+            "image": {
+              "src": "/images/items/vocabulary-058/short-pencil.png",
+              "alt": "同一画幅和尺度下的短铅笔",
+              "style": "illustration",
+              "width": 640,
+              "height": 640
+            },
+            "textOnly": false
+          }
+        ],
+        "hints": [
+          "先说说左边这张图卡的特点，再找对应关系。",
+          "可以先做一个动作或摆出实物，再比较两个词的意思。"
+        ],
+        "success": "可以先做一个动作或摆出实物，再比较两个词的意思。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+        "abilityTags": [
+          "动作词、反义词与词义关系"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S109",
+            "locator": "20-23"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide15"
+          },
+          {
+            "sourceId": "S071",
+            "locator": "render19"
+          },
+          {
+            "sourceId": "S117",
+            "locator": "20-22"
+          }
+        ],
+        "kind": "matching",
+        "leftIds": [
+          "a0",
+          "a1",
+          "a2"
+        ],
+        "rightIds": [
+          "b1",
+          "b2",
+          "b0"
+        ],
+        "expectedPairs": [
+          [
+            "a0",
+            "b0"
+          ],
+          [
+            "a1",
+            "b1"
+          ],
+          [
+            "a2",
+            "b2"
+          ]
+        ],
+        "difficulty": {
+          "rules": 1,
+          "steps": 1,
+          "reading": 2,
+          "motor": 2,
+          "representation": "symbols",
+          "basis": "3组反义词匹配，关系仍一种；项目数变多",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "pairs": 3
+          }
+        }
+      },
+      {
+        "id": "explore-vocabulary-relations-6",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "E01",
+        "level": "L3",
+        "stage": 2,
+        "difficultyNote": "关系对照",
+        "prerequisites": "能将3组词与相反意义对应",
+        "prompt": "把意思相反的词配成朋友。",
+        "instruction": "把两边有关的图卡连起来。可以拖过去，也可以两边各点一下。",
+        "clues": [],
+        "tokens": [
+          {
+            "id": "a0",
+            "label": "上",
+            "image": {
+              "src": "/images/items/vocabulary-058/above-table.png",
+              "alt": "小猫坐在桌子上",
+              "style": "illustration",
+              "width": 640,
+              "height": 640
+            },
+            "textOnly": false
+          },
+          {
+            "id": "a1",
+            "label": "长",
+            "image": {
+              "src": "/images/items/vocabulary-058/long-pencil.png",
+              "alt": "同一画幅和尺度下的长铅笔",
+              "style": "illustration",
+              "width": 640,
+              "height": 640
+            },
+            "textOnly": false
+          },
+          {
+            "id": "a2",
+            "label": "多",
+            "image": {
+              "src": "/images/items/vocabulary-058/many-berries.png",
+              "alt": "同样的盘子装着六个草莓，比较多",
+              "style": "illustration",
+              "width": 640,
+              "height": 640
+            },
+            "textOnly": false
+          },
+          {
+            "id": "b0",
+            "label": "下",
+            "image": {
+              "src": "/images/items/vocabulary-058/below-table.png",
+              "alt": "同样大小的小猫坐在同一张桌子下",
+              "style": "illustration",
+              "width": 640,
+              "height": 640
+            },
+            "textOnly": false
+          },
+          {
+            "id": "b1",
+            "label": "短",
+            "image": {
+              "src": "/images/items/vocabulary-058/short-pencil.png",
+              "alt": "同一画幅和尺度下的短铅笔",
+              "style": "illustration",
+              "width": 640,
+              "height": 640
+            },
+            "textOnly": false
+          },
+          {
+            "id": "b2",
+            "label": "少",
+            "image": {
+              "src": "/images/items/vocabulary-058/few-berries.png",
+              "alt": "同样的盘子装着两个同样大小的草莓，比较少",
+              "style": "illustration",
+              "width": 640,
+              "height": 640
+            },
+            "textOnly": false
+          }
+        ],
+        "hints": [
+          "先说说左边这张图卡的特点，再找对应关系。",
+          "可以先做一个动作或摆出实物，再比较两个词的意思。"
+        ],
+        "success": "可以先做一个动作或摆出实物，再比较两个词的意思。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+        "abilityTags": [
+          "动作词、反义词与词义关系"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S109",
+            "locator": "20-23"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide15"
+          },
+          {
+            "sourceId": "S071",
+            "locator": "render19"
+          },
+          {
+            "sourceId": "S117",
+            "locator": "20-22"
+          }
+        ],
+        "kind": "matching",
+        "leftIds": [
+          "a0",
+          "a1",
+          "a2"
+        ],
+        "rightIds": [
+          "b1",
+          "b0",
+          "b2"
+        ],
+        "expectedPairs": [
+          [
+            "a0",
+            "b0"
+          ],
+          [
+            "a1",
+            "b1"
+          ],
+          [
+            "a2",
+            "b2"
+          ]
+        ],
+        "difficulty": {
+          "rules": 1,
+          "steps": 1,
+          "reading": 2,
+          "motor": 2,
+          "representation": "symbols",
+          "basis": "3组反义词匹配，关系仍一种；项目数变多",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "pairs": 3
+          }
+        }
+      },
+      {
+        "id": "explore-vocabulary-relations-7",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "E01",
+        "level": "L4",
+        "stage": 3,
+        "difficultyNote": "在情境中使用",
+        "prerequisites": "能用动作/实物表示词义并说完整句",
+        "prompt": "用动作说开和关",
+        "instruction": "和家长一起操作、说一说，再记录这次的发现。",
+        "clues": [],
+        "tokens": [],
+        "hints": [
+          "家长说一个词，孩子用动作或实物表示。",
+          "交换角色，孩子说词，家长操作。"
+        ],
+        "success": "这次亲子活动已经记录。下次可以换个条件再试试。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "能把词和实际意义对应；能找到相反或相关的词；能在新情境里使用这个词",
+        "abilityTags": [
+          "动作词、反义词与词义关系"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S109",
+            "locator": "20-23"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide15"
+          },
+          {
+            "sourceId": "S071",
+            "locator": "render19"
+          },
+          {
+            "sourceId": "S117",
+            "locator": "20-22"
+          }
+        ],
+        "kind": "parentObservation",
+        "materials": [
+          "两个盒子或两条纸带"
+        ],
+        "steps": [
+          "家长说一个词，孩子用动作或实物表示。",
+          "交换角色，孩子说词，家长操作。",
+          "把这个词放进一个完整句子，说明哪里看出来。"
+        ],
+        "observations": [
+          {
+            "id": "observe-0",
+            "text": "能把词和实际意义对应"
+          },
+          {
+            "id": "observe-1",
+            "text": "能找到相反或相关的词"
+          },
+          {
+            "id": "observe-2",
+            "text": "能在新情境里使用这个词"
+          }
+        ],
+        "presentation": {
+          "materialCards": [
+            {
+              "label": "两个盒子或两条纸带",
+              "image": {
+                "src": "/images/items/box.png",
+                "alt": "盒子"
+              }
+            }
+          ]
+        },
+        "difficulty": {
+          "rules": 2,
+          "steps": 3,
+          "reading": 0,
+          "motor": 2,
+          "representation": "physical",
+          "basis": "听词表演、交换角色、迁移到句子，亲子观察而非识字测试",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "observationItems": 3
+          }
+        }
+      },
+      {
+        "id": "explore-vocabulary-relations-8",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "E01",
+        "level": "L4",
+        "stage": 3,
+        "difficultyNote": "在情境中使用",
+        "prerequisites": "能用动作/实物表示词义并说完整句",
+        "prompt": "用实物说长和短",
+        "instruction": "和家长一起操作、说一说，再记录这次的发现。",
+        "clues": [],
+        "tokens": [],
+        "hints": [
+          "家长说一个词，孩子用动作或实物表示。",
+          "交换角色，孩子说词，家长操作。"
+        ],
+        "success": "这次亲子活动已经记录。下次可以换个条件再试试。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "能把词和实际意义对应；能找到相反或相关的词；能在新情境里使用这个词",
+        "abilityTags": [
+          "动作词、反义词与词义关系"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S109",
+            "locator": "20-23"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide15"
+          },
+          {
+            "sourceId": "S071",
+            "locator": "render19"
+          },
+          {
+            "sourceId": "S117",
+            "locator": "20-22"
+          }
+        ],
+        "kind": "parentObservation",
+        "materials": [
+          "两个盒子或两条纸带"
+        ],
+        "steps": [
+          "家长说一个词，孩子用动作或实物表示。",
+          "交换角色，孩子说词，家长操作。",
+          "把这个词放进一个完整句子，说明哪里看出来。"
+        ],
+        "observations": [
+          {
+            "id": "observe-0",
+            "text": "能把词和实际意义对应"
+          },
+          {
+            "id": "observe-1",
+            "text": "能找到相反或相关的词"
+          },
+          {
+            "id": "observe-2",
+            "text": "能在新情境里使用这个词"
+          }
+        ],
+        "presentation": {
+          "materialCards": [
+            {
+              "label": "两个盒子或两条纸带",
+              "image": {
+                "src": "/images/items/box.png",
+                "alt": "盒子"
+              }
+            }
+          ]
+        },
+        "difficulty": {
+          "rules": 2,
+          "steps": 3,
+          "reading": 0,
+          "motor": 2,
+          "representation": "physical",
+          "basis": "听词表演、交换角色、迁移到句子，亲子观察而非识字测试",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "observationItems": 3
+          }
+        }
+      },
+      {
+        "id": "explore-vocabulary-relations-9",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "E01",
+        "level": "L4",
+        "stage": 3,
+        "difficultyNote": "在情境中使用",
+        "prerequisites": "能用动作/实物表示词义并说完整句",
+        "prompt": "同一个词换个情境",
+        "instruction": "和家长一起操作、说一说，再记录这次的发现。",
+        "clues": [],
+        "tokens": [],
+        "hints": [
+          "家长说一个词，孩子用动作或实物表示。",
+          "交换角色，孩子说词，家长操作。"
+        ],
+        "success": "这次亲子活动已经记录。下次可以换个条件再试试。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "能把词和实际意义对应；能找到相反或相关的词；能在新情境里使用这个词",
+        "abilityTags": [
+          "动作词、反义词与词义关系"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S109",
+            "locator": "20-23"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide15"
+          },
+          {
+            "sourceId": "S071",
+            "locator": "render19"
+          },
+          {
+            "sourceId": "S117",
+            "locator": "20-22"
+          }
+        ],
+        "kind": "parentObservation",
+        "materials": [
+          "两个盒子或两条纸带"
+        ],
+        "steps": [
+          "家长说一个词，孩子用动作或实物表示。",
+          "交换角色，孩子说词，家长操作。",
+          "把这个词放进一个完整句子，说明哪里看出来。"
+        ],
+        "observations": [
+          {
+            "id": "observe-0",
+            "text": "能把词和实际意义对应"
+          },
+          {
+            "id": "observe-1",
+            "text": "能找到相反或相关的词"
+          },
+          {
+            "id": "observe-2",
+            "text": "能在新情境里使用这个词"
+          }
+        ],
+        "presentation": {
+          "materialCards": [
+            {
+              "label": "两个盒子或两条纸带",
+              "image": {
+                "src": "/images/items/box.png",
+                "alt": "盒子"
+              }
+            }
+          ]
+        },
+        "difficulty": {
+          "rules": 2,
+          "steps": 3,
+          "reading": 0,
+          "motor": 2,
+          "representation": "physical",
+          "basis": "听词表演、交换角色、迁移到句子，亲子观察而非识字测试",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "observationItems": 3
+          }
+        }
+      }
+    ],
+    "interactionLabel": "探索练习"
+  },
+  {
+    "id": "explore-describe-relations",
+    "kind": "activitySet",
+    "world": "language",
+    "title": "把位置说清楚",
+    "subtitle": "完整句、方位和比较表达",
+    "goal": "观察描述 → 换参照描述 → 解释依据",
+    "parentPrompt": "先让孩子操作和解释，再按需要给一点提示。",
+    "abilityTags": [
+      "完整句、方位和比较表达"
+    ],
+    "level": "L3",
+    "rounds": [
+      {
+        "id": "explore-describe-relations-1",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "E02",
+        "level": "L2",
+        "stage": 1,
+        "difficultyNote": "观察描述",
+        "prerequisites": "理解对象、旁边及参照物",
+        "prompt": "给家长指路",
+        "instruction": "和家长一起操作、说一说，再记录这次的发现。",
+        "clues": [],
+        "tokens": [],
+        "hints": [
+          "把玩具放在盒子旁边，用完整句子告诉家长在哪里。",
+          "家长只听你的话寻找玩具。"
+        ],
+        "success": "这次亲子活动已经记录。下次可以换个条件再试试。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "说清对象；说清参照物和关系；能根据听者的疑问补充信息",
+        "abilityTags": [
+          "完整句、方位和比较表达"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S109",
+            "locator": "20-23"
+          },
+          {
+            "sourceId": "S110",
+            "locator": "18-21"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide25"
+          }
+        ],
+        "kind": "parentObservation",
+        "materials": [
+          "小玩具",
+          "杯子",
+          "盒子"
+        ],
+        "steps": [
+          "把玩具放在盒子旁边，用完整句子告诉家长在哪里。",
+          "家长只听你的话寻找玩具。",
+          "加入一个更清楚的参照物，再说一遍。"
+        ],
+        "observations": [
+          {
+            "id": "observe-0",
+            "text": "说清对象"
+          },
+          {
+            "id": "observe-1",
+            "text": "说清参照物和关系"
+          },
+          {
+            "id": "observe-2",
+            "text": "能根据听者的疑问补充信息"
+          }
+        ],
+        "presentation": {
+          "materialCards": [
+            {
+              "label": "小玩具",
+              "image": {
+                "src": "/images/items/toy-car.png",
+                "alt": "玩具车"
+              }
+            },
+            {
+              "label": "杯子",
+              "image": {
+                "src": "/images/items/cup.png",
+                "alt": "杯子"
+              }
+            },
+            {
+              "label": "盒子",
+              "image": {
+                "src": "/images/items/box.png",
+                "alt": "盒子"
+              }
+            }
+          ]
+        },
+        "difficulty": {
+          "rules": 2,
+          "steps": 3,
+          "reading": 0,
+          "motor": 2,
+          "representation": "physical",
+          "basis": "第1项放玩具、描述、根据听者寻找结果补充参照物",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "observationItems": 3
+          }
+        }
+      },
+      {
+        "id": "explore-describe-relations-2",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "E02",
+        "level": "L2",
+        "stage": 1,
+        "difficultyNote": "观察描述",
+        "prerequisites": "理解面对面者左右参照可不同",
+        "prompt": "换个位置描述",
+        "instruction": "和家长一起操作、说一说，再记录这次的发现。",
+        "clues": [],
+        "tokens": [],
+        "hints": [
+          "家长和孩子面对面坐，放好玩具和杯子。",
+          "分别从自己的方向说玩具在杯子的哪边。"
+        ],
+        "success": "这次亲子活动已经记录。下次可以换个条件再试试。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "说清对象；说清参照物和关系；能根据听者的疑问补充信息",
+        "abilityTags": [
+          "完整句、方位和比较表达"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S109",
+            "locator": "20-23"
+          },
+          {
+            "sourceId": "S110",
+            "locator": "18-21"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide25"
+          }
+        ],
+        "kind": "parentObservation",
+        "materials": [
+          "小玩具",
+          "杯子",
+          "盒子"
+        ],
+        "steps": [
+          "家长和孩子面对面坐，放好玩具和杯子。",
+          "分别从自己的方向说玩具在杯子的哪边。",
+          "换到同一方向，再比较说法为什么改变。"
+        ],
+        "observations": [
+          {
+            "id": "observe-0",
+            "text": "说清对象"
+          },
+          {
+            "id": "observe-1",
+            "text": "说清参照物和关系"
+          },
+          {
+            "id": "observe-2",
+            "text": "能根据听者的疑问补充信息"
+          }
+        ],
+        "presentation": {
+          "materialCards": [
+            {
+              "label": "小玩具",
+              "image": {
+                "src": "/images/items/toy-car.png",
+                "alt": "玩具车"
+              }
+            },
+            {
+              "label": "杯子",
+              "image": {
+                "src": "/images/items/cup.png",
+                "alt": "杯子"
+              }
+            },
+            {
+              "label": "盒子",
+              "image": {
+                "src": "/images/items/box.png",
+                "alt": "盒子"
+              }
+            }
+          ]
+        },
+        "difficulty": {
+          "rules": 2,
+          "steps": 3,
+          "reading": 0,
+          "motor": 2,
+          "representation": "physical",
+          "basis": "第2项面对面分别描述，再同向比较，两个参照系须明确",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "observationItems": 3
+          }
+        }
+      },
+      {
+        "id": "explore-describe-relations-3",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "E02",
+        "level": "L2",
+        "stage": 1,
+        "difficultyNote": "观察描述",
+        "prerequisites": "能听出那在那里缺对象、参照与位置",
+        "prompt": "比较两种说法",
+        "instruction": "和家长一起操作、说一说，再记录这次的发现。",
+        "clues": [],
+        "tokens": [],
+        "hints": [
+          "家长先说“那个在那里”。",
+          "孩子指出这句话缺少哪些信息。"
+        ],
+        "success": "这次亲子活动已经记录。下次可以换个条件再试试。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "说清对象；说清参照物和关系；能根据听者的疑问补充信息",
+        "abilityTags": [
+          "完整句、方位和比较表达"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S109",
+            "locator": "20-23"
+          },
+          {
+            "sourceId": "S110",
+            "locator": "18-21"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide25"
+          }
+        ],
+        "kind": "parentObservation",
+        "materials": [
+          "小玩具",
+          "杯子",
+          "盒子"
+        ],
+        "steps": [
+          "家长先说“那个在那里”。",
+          "孩子指出这句话缺少哪些信息。",
+          "补充对象、参照物和位置，让另一个人可以找到。"
+        ],
+        "observations": [
+          {
+            "id": "observe-0",
+            "text": "说清对象"
+          },
+          {
+            "id": "observe-1",
+            "text": "说清参照物和关系"
+          },
+          {
+            "id": "observe-2",
+            "text": "能根据听者的疑问补充信息"
+          }
+        ],
+        "presentation": {
+          "materialCards": [
+            {
+              "label": "小玩具",
+              "image": {
+                "src": "/images/items/toy-car.png",
+                "alt": "玩具车"
+              }
+            },
+            {
+              "label": "杯子",
+              "image": {
+                "src": "/images/items/cup.png",
+                "alt": "杯子"
+              }
+            },
+            {
+              "label": "盒子",
+              "image": {
+                "src": "/images/items/box.png",
+                "alt": "盒子"
+              }
+            }
+          ]
+        },
+        "difficulty": {
+          "rules": 3,
+          "steps": 3,
+          "reading": 0,
+          "motor": 0,
+          "representation": "physical",
+          "basis": "第3项诊断模糊表达并补对象参照位置；现三活动都为stage1，按活动索引取此配置",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "observationItems": 3
+          }
+        }
+      }
+    ],
+    "interactionLabel": "亲子活动"
+  },
+  {
+    "id": "explore-story-sequence-expression",
+    "kind": "activitySet",
+    "world": "language",
+    "title": "故事接起来",
+    "subtitle": "故事排序、因果和复述",
+    "goal": "两图先后 → 事件链 → 解释原因与不同结局",
+    "parentPrompt": "先让孩子操作和解释，再按需要给一点提示。",
+    "abilityTags": [
+      "故事排序、因果和复述"
+    ],
+    "level": "L3",
+    "rounds": [
+      {
+        "id": "explore-story-sequence-expression-1",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "E03",
+        "level": "L2",
+        "stage": 1,
+        "difficultyNote": "两图先后",
+        "prerequisites": "理解3幅图事件与给定先后关系",
+        "prompt": "按这个故事的先后，把事件排好。",
+        "instruction": "先选图卡，再按位置编号排好。也可以拖过去。",
+        "clues": [
+          "乌云聚起来以后，开始下雨。",
+          "下过雨后，地面留下了水洼。"
+        ],
+        "tokens": [
+          {
+            "id": "e1",
+            "label": "开始下雨",
+            "image": {
+              "src": "/images/items/exploration-art/rain-story.png",
+              "alt": "开始下雨",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 1
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "e2",
+            "label": "地面留下水洼",
+            "image": {
+              "src": "/images/items/exploration-art/rain-story.png",
+              "alt": "地面留下水洼",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 2
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "e0",
+            "label": "天上积起乌云",
+            "image": {
+              "src": "/images/items/exploration-art/rain-story.png",
+              "alt": "天上积起乌云",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 0
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          }
+        ],
+        "hints": [
+          "乌云聚起来以后，开始下雨。",
+          "按题目给定的事件关系连接，再用自己的话讲出来。"
+        ],
+        "success": "按题目给定的事件关系连接，再用自己的话讲出来。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+        "abilityTags": [
+          "故事排序、因果和复述"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S109",
+            "locator": "20-23"
+          },
+          {
+            "sourceId": "S110",
+            "locator": "18-21"
+          },
+          {
+            "sourceId": "S102",
+            "locator": "3"
+          },
+          {
+            "sourceId": "S118",
+            "locator": "21-24"
+          },
+          {
+            "sourceId": "S120",
+            "locator": "20-23"
+          },
+          {
+            "sourceId": "S069",
+            "locator": "42"
+          }
+        ],
+        "kind": "orderedPlacement",
+        "slotCount": 3,
+        "tokenUse": "once",
+        "evaluation": {
+          "kind": "sequence",
+          "tokenIds": [
+            "e0",
+            "e1",
+            "e2"
+          ]
+        },
+        "difficulty": {
+          "rules": 2,
+          "steps": 2,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "basis": "3事件2条先后条件，图卡排列；条件已给不推自主发现因果",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "slots": 3
+          }
+        }
+      },
+      {
+        "id": "explore-story-sequence-expression-2",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "E03",
+        "level": "L2",
+        "stage": 1,
+        "difficultyNote": "两图先后",
+        "prerequisites": "理解3幅图事件与给定先后关系",
+        "prompt": "按这个故事的先后，把事件排好。",
+        "instruction": "先选图卡，再按位置编号排好。也可以拖过去。",
+        "clues": [
+          "小熊先准备木块，再用木块搭起高塔。",
+          "高塔搭好后，被滚来的球碰倒了。"
+        ],
+        "tokens": [
+          {
+            "id": "e2",
+            "label": "球碰倒了高塔",
+            "image": {
+              "src": "/images/items/exploration-art/bear-tower-story.png",
+              "alt": "球碰倒了高塔",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 2
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "e0",
+            "label": "小熊准备木块",
+            "image": {
+              "src": "/images/items/exploration-art/bear-tower-story.png",
+              "alt": "小熊准备木块",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 0
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "e1",
+            "label": "小熊搭起高塔",
+            "image": {
+              "src": "/images/items/exploration-art/bear-tower-story.png",
+              "alt": "小熊搭起高塔",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 1
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          }
+        ],
+        "hints": [
+          "小熊先准备木块，再用木块搭起高塔。",
+          "按题目给定的事件关系连接，再用自己的话讲出来。"
+        ],
+        "success": "按题目给定的事件关系连接，再用自己的话讲出来。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+        "abilityTags": [
+          "故事排序、因果和复述"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S109",
+            "locator": "20-23"
+          },
+          {
+            "sourceId": "S110",
+            "locator": "18-21"
+          },
+          {
+            "sourceId": "S102",
+            "locator": "3"
+          },
+          {
+            "sourceId": "S118",
+            "locator": "21-24"
+          },
+          {
+            "sourceId": "S120",
+            "locator": "20-23"
+          },
+          {
+            "sourceId": "S069",
+            "locator": "42"
+          }
+        ],
+        "kind": "orderedPlacement",
+        "slotCount": 3,
+        "tokenUse": "once",
+        "evaluation": {
+          "kind": "sequence",
+          "tokenIds": [
+            "e0",
+            "e1",
+            "e2"
+          ]
+        },
+        "difficulty": {
+          "rules": 2,
+          "steps": 2,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "basis": "3事件2条先后条件，图卡排列；条件已给不推自主发现因果",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "slots": 3
+          }
+        }
+      },
+      {
+        "id": "explore-story-sequence-expression-3",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "E03",
+        "level": "L2",
+        "stage": 1,
+        "difficultyNote": "两图先后",
+        "prerequisites": "理解3幅图事件与给定先后关系",
+        "prompt": "按这个故事的先后，把事件排好。",
+        "instruction": "先选图卡，再按位置编号排好。也可以拖过去。",
+        "clues": [
+          "小猫收到种子以后，把种子种进土里。",
+          "种好以后，小猫按记录照顾长出来的小苗。"
+        ],
+        "tokens": [
+          {
+            "id": "e0",
+            "label": "小猫收到种子",
+            "image": {
+              "src": "/images/items/exploration-art/cat-plant-story.png",
+              "alt": "小猫收到种子",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 0
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "e1",
+            "label": "把种子种进土里",
+            "image": {
+              "src": "/images/items/exploration-art/cat-plant-story.png",
+              "alt": "小猫把种子种进土里",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 1
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "e2",
+            "label": "按记录照顾小苗",
+            "image": {
+              "src": "/images/items/exploration-art/cat-plant-story.png",
+              "alt": "小猫按记录照顾小苗",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 2
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          }
+        ],
+        "hints": [
+          "小猫收到种子以后，把种子种进土里。",
+          "按题目给定的事件关系连接，再用自己的话讲出来。"
+        ],
+        "success": "按题目给定的事件关系连接，再用自己的话讲出来。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+        "abilityTags": [
+          "故事排序、因果和复述"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S109",
+            "locator": "20-23"
+          },
+          {
+            "sourceId": "S110",
+            "locator": "18-21"
+          },
+          {
+            "sourceId": "S102",
+            "locator": "3"
+          },
+          {
+            "sourceId": "S118",
+            "locator": "21-24"
+          },
+          {
+            "sourceId": "S120",
+            "locator": "20-23"
+          },
+          {
+            "sourceId": "S069",
+            "locator": "42"
+          }
+        ],
+        "kind": "orderedPlacement",
+        "slotCount": 3,
+        "tokenUse": "once",
+        "evaluation": {
+          "kind": "sequence",
+          "tokenIds": [
+            "e0",
+            "e1",
+            "e2"
+          ]
+        },
+        "difficulty": {
+          "rules": 2,
+          "steps": 2,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "basis": "3事件2条先后条件，图卡排列；条件已给不推自主发现因果",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "slots": 3
+          }
+        }
+      },
+      {
+        "id": "explore-story-sequence-expression-4",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "E03",
+        "level": "L3",
+        "stage": 2,
+        "difficultyNote": "事件链",
+        "prerequisites": "能在4事件中逐条核对3条件",
+        "prompt": "按这个故事的先后，把事件排好。",
+        "instruction": "先选图卡，再按位置编号排好。也可以拖过去。",
+        "clues": [
+          "乌云聚起来以后，开始下雨。",
+          "下过雨后，地面留下了水洼。",
+          "地面有水洼，小朋友穿上雨靴出门。"
+        ],
+        "tokens": [
+          {
+            "id": "e0",
+            "label": "天上积起乌云",
+            "image": {
+              "src": "/images/items/exploration-art/rain-story.png",
+              "alt": "天上积起乌云",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 0
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "e1",
+            "label": "开始下雨",
+            "image": {
+              "src": "/images/items/exploration-art/rain-story.png",
+              "alt": "开始下雨",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 1
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "e2",
+            "label": "地面留下水洼",
+            "image": {
+              "src": "/images/items/exploration-art/rain-story.png",
+              "alt": "地面留下水洼",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 2
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "e3",
+            "label": "小朋友穿雨靴出门",
+            "image": {
+              "src": "/images/items/exploration-art/rain-story.png",
+              "alt": "小朋友穿雨靴出门",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 3
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          }
+        ],
+        "hints": [
+          "乌云聚起来以后，开始下雨。",
+          "按题目给定的事件关系连接，再用自己的话讲出来。"
+        ],
+        "success": "按题目给定的事件关系连接，再用自己的话讲出来。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+        "abilityTags": [
+          "故事排序、因果和复述"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S109",
+            "locator": "20-23"
+          },
+          {
+            "sourceId": "S110",
+            "locator": "18-21"
+          },
+          {
+            "sourceId": "S102",
+            "locator": "3"
+          },
+          {
+            "sourceId": "S118",
+            "locator": "21-24"
+          },
+          {
+            "sourceId": "S120",
+            "locator": "20-23"
+          },
+          {
+            "sourceId": "S069",
+            "locator": "42"
+          }
+        ],
+        "kind": "orderedPlacement",
+        "slotCount": 4,
+        "tokenUse": "once",
+        "evaluation": {
+          "kind": "sequence",
+          "tokenIds": [
+            "e0",
+            "e1",
+            "e2",
+            "e3"
+          ]
+        },
+        "difficulty": {
+          "rules": 3,
+          "steps": 3,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "basis": "4事件3条先后条件，排序并复述",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "slots": 4
+          }
+        }
+      },
+      {
+        "id": "explore-story-sequence-expression-5",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "E03",
+        "level": "L3",
+        "stage": 2,
+        "difficultyNote": "事件链",
+        "prerequisites": "能在4事件中逐条核对3条件",
+        "prompt": "按这个故事的先后，把事件排好。",
+        "instruction": "先选图卡，再按位置编号排好。也可以拖过去。",
+        "clues": [
+          "小熊先准备木块，再用木块搭起高塔。",
+          "高塔搭好后，被滚来的球碰倒了。",
+          "高塔倒了以后，小熊换一个宽底座重新搭。"
+        ],
+        "tokens": [
+          {
+            "id": "e1",
+            "label": "小熊搭起高塔",
+            "image": {
+              "src": "/images/items/exploration-art/bear-tower-story.png",
+              "alt": "小熊搭起高塔",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 1
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "e2",
+            "label": "球碰倒了高塔",
+            "image": {
+              "src": "/images/items/exploration-art/bear-tower-story.png",
+              "alt": "球碰倒了高塔",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 2
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "e3",
+            "label": "小熊换宽底座重搭",
+            "image": {
+              "src": "/images/items/exploration-art/bear-tower-story.png",
+              "alt": "小熊换宽底座重搭",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 3
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "e0",
+            "label": "小熊准备木块",
+            "image": {
+              "src": "/images/items/exploration-art/bear-tower-story.png",
+              "alt": "小熊准备木块",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 0
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          }
+        ],
+        "hints": [
+          "小熊先准备木块，再用木块搭起高塔。",
+          "按题目给定的事件关系连接，再用自己的话讲出来。"
+        ],
+        "success": "按题目给定的事件关系连接，再用自己的话讲出来。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+        "abilityTags": [
+          "故事排序、因果和复述"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S109",
+            "locator": "20-23"
+          },
+          {
+            "sourceId": "S110",
+            "locator": "18-21"
+          },
+          {
+            "sourceId": "S102",
+            "locator": "3"
+          },
+          {
+            "sourceId": "S118",
+            "locator": "21-24"
+          },
+          {
+            "sourceId": "S120",
+            "locator": "20-23"
+          },
+          {
+            "sourceId": "S069",
+            "locator": "42"
+          }
+        ],
+        "kind": "orderedPlacement",
+        "slotCount": 4,
+        "tokenUse": "once",
+        "evaluation": {
+          "kind": "sequence",
+          "tokenIds": [
+            "e0",
+            "e1",
+            "e2",
+            "e3"
+          ]
+        },
+        "difficulty": {
+          "rules": 3,
+          "steps": 3,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "basis": "4事件3条先后条件，排序并复述",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "slots": 4
+          }
+        }
+      },
+      {
+        "id": "explore-story-sequence-expression-6",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "E03",
+        "level": "L3",
+        "stage": 2,
+        "difficultyNote": "事件链",
+        "prerequisites": "能在4事件中逐条核对3条件",
+        "prompt": "按这个故事的先后，把事件排好。",
+        "instruction": "先选图卡，再按位置编号排好。也可以拖过去。",
+        "clues": [
+          "小猫收到种子以后，把种子种进土里。",
+          "种好以后，小猫按记录照顾长出来的小苗。",
+          "照顾小苗一段时间后，小猫观察新长出的叶片。"
+        ],
+        "tokens": [
+          {
+            "id": "e2",
+            "label": "按记录照顾小苗",
+            "image": {
+              "src": "/images/items/exploration-art/cat-plant-story.png",
+              "alt": "小猫按记录照顾小苗",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 2
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "e3",
+            "label": "小猫观察新叶片",
+            "image": {
+              "src": "/images/items/exploration-art/cat-plant-story.png",
+              "alt": "小猫观察新叶片",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 3
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "e0",
+            "label": "小猫收到种子",
+            "image": {
+              "src": "/images/items/exploration-art/cat-plant-story.png",
+              "alt": "小猫收到种子",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 0
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "e1",
+            "label": "把种子种进土里",
+            "image": {
+              "src": "/images/items/exploration-art/cat-plant-story.png",
+              "alt": "小猫把种子种进土里",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 1
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          }
+        ],
+        "hints": [
+          "小猫收到种子以后，把种子种进土里。",
+          "按题目给定的事件关系连接，再用自己的话讲出来。"
+        ],
+        "success": "按题目给定的事件关系连接，再用自己的话讲出来。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+        "abilityTags": [
+          "故事排序、因果和复述"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S109",
+            "locator": "20-23"
+          },
+          {
+            "sourceId": "S110",
+            "locator": "18-21"
+          },
+          {
+            "sourceId": "S102",
+            "locator": "3"
+          },
+          {
+            "sourceId": "S118",
+            "locator": "21-24"
+          },
+          {
+            "sourceId": "S120",
+            "locator": "20-23"
+          },
+          {
+            "sourceId": "S069",
+            "locator": "42"
+          }
+        ],
+        "kind": "orderedPlacement",
+        "slotCount": 4,
+        "tokenUse": "once",
+        "evaluation": {
+          "kind": "sequence",
+          "tokenIds": [
+            "e0",
+            "e1",
+            "e2",
+            "e3"
+          ]
+        },
+        "difficulty": {
+          "rules": 3,
+          "steps": 3,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "basis": "4事件3条先后条件，排序并复述",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "slots": 4
+          }
+        }
+      },
+      {
+        "id": "explore-story-sequence-expression-7",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "E03",
+        "level": "L4",
+        "stage": 3,
+        "difficultyNote": "解释原因与不同结局",
+        "prerequisites": "能口述4件事并提出与前文相容的不同结局",
+        "prompt": "先讲清故事，再想一个不同的结局。",
+        "instruction": "和家长一起操作、说一说，再记录这次的发现。",
+        "clues": [],
+        "tokens": [],
+        "hints": [
+          "第1张：天上积起乌云。",
+          "第2张：开始下雨。"
+        ],
+        "success": "这次亲子活动已经记录。下次可以换个条件再试试。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "事件先后清楚；能用因为或所以连接理由；不同结局和前面的事情有关",
+        "abilityTags": [
+          "故事排序、因果和复述"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S109",
+            "locator": "20-23"
+          },
+          {
+            "sourceId": "S110",
+            "locator": "18-21"
+          },
+          {
+            "sourceId": "S102",
+            "locator": "3"
+          },
+          {
+            "sourceId": "S118",
+            "locator": "21-24"
+          },
+          {
+            "sourceId": "S120",
+            "locator": "20-23"
+          },
+          {
+            "sourceId": "S069",
+            "locator": "42"
+          }
+        ],
+        "kind": "parentObservation",
+        "materials": [
+          "屏幕上的四张故事图"
+        ],
+        "steps": [
+          "第1张：天上积起乌云。",
+          "第2张：开始下雨。",
+          "第3张：地面留下水洼。",
+          "第4张：小朋友穿雨靴出门。",
+          "按原先顺序复述一次。",
+          "改变最后一件事，再解释为什么也说得通。"
+        ],
+        "observations": [
+          {
+            "id": "observe-0",
+            "text": "事件先后清楚"
+          },
+          {
+            "id": "observe-1",
+            "text": "能用因为或所以连接理由"
+          },
+          {
+            "id": "observe-2",
+            "text": "不同结局和前面的事情有关"
+          }
+        ],
+        "presentation": {
+          "materialCards": [
+            {
+              "label": "屏幕上的四张故事图"
+            }
+          ],
+          "storyCards": [
+            {
+              "src": "/images/items/exploration-art/rain-story.png",
+              "alt": "天上积起乌云",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 0
+              },
+              "style": "illustration"
+            },
+            {
+              "src": "/images/items/exploration-art/rain-story.png",
+              "alt": "开始下雨",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 1
+              },
+              "style": "illustration"
+            },
+            {
+              "src": "/images/items/exploration-art/rain-story.png",
+              "alt": "地面留下水洼",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 2
+              },
+              "style": "illustration"
+            },
+            {
+              "src": "/images/items/exploration-art/rain-story.png",
+              "alt": "小朋友穿雨靴出门",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 3
+              },
+              "style": "illustration"
+            }
+          ]
+        },
+        "difficulty": {
+          "rules": 2,
+          "steps": 3,
+          "reading": 0,
+          "motor": 0,
+          "representation": "physical",
+          "basis": "读图复述4事件后改结局再解释因果，家长记观察；6条显示步骤不等于6条规则",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "observationItems": 3
+          }
+        }
+      },
+      {
+        "id": "explore-story-sequence-expression-8",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "E03",
+        "level": "L4",
+        "stage": 3,
+        "difficultyNote": "解释原因与不同结局",
+        "prerequisites": "能口述4件事并提出与前文相容的不同结局",
+        "prompt": "先讲清故事，再想一个不同的结局。",
+        "instruction": "和家长一起操作、说一说，再记录这次的发现。",
+        "clues": [],
+        "tokens": [],
+        "hints": [
+          "第1张：小熊准备木块。",
+          "第2张：小熊搭起高塔。"
+        ],
+        "success": "这次亲子活动已经记录。下次可以换个条件再试试。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "事件先后清楚；能用因为或所以连接理由；不同结局和前面的事情有关",
+        "abilityTags": [
+          "故事排序、因果和复述"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S109",
+            "locator": "20-23"
+          },
+          {
+            "sourceId": "S110",
+            "locator": "18-21"
+          },
+          {
+            "sourceId": "S102",
+            "locator": "3"
+          },
+          {
+            "sourceId": "S118",
+            "locator": "21-24"
+          },
+          {
+            "sourceId": "S120",
+            "locator": "20-23"
+          },
+          {
+            "sourceId": "S069",
+            "locator": "42"
+          }
+        ],
+        "kind": "parentObservation",
+        "materials": [
+          "屏幕上的四张故事图"
+        ],
+        "steps": [
+          "第1张：小熊准备木块。",
+          "第2张：小熊搭起高塔。",
+          "第3张：球碰倒了高塔。",
+          "第4张：小熊换宽底座重搭。",
+          "按原先顺序复述一次。",
+          "改变最后一件事，再解释为什么也说得通。"
+        ],
+        "observations": [
+          {
+            "id": "observe-0",
+            "text": "事件先后清楚"
+          },
+          {
+            "id": "observe-1",
+            "text": "能用因为或所以连接理由"
+          },
+          {
+            "id": "observe-2",
+            "text": "不同结局和前面的事情有关"
+          }
+        ],
+        "presentation": {
+          "materialCards": [
+            {
+              "label": "屏幕上的四张故事图"
+            }
+          ],
+          "storyCards": [
+            {
+              "src": "/images/items/exploration-art/bear-tower-story.png",
+              "alt": "小熊准备木块",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 0
+              },
+              "style": "illustration"
+            },
+            {
+              "src": "/images/items/exploration-art/bear-tower-story.png",
+              "alt": "小熊搭起高塔",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 1
+              },
+              "style": "illustration"
+            },
+            {
+              "src": "/images/items/exploration-art/bear-tower-story.png",
+              "alt": "球碰倒了高塔",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 2
+              },
+              "style": "illustration"
+            },
+            {
+              "src": "/images/items/exploration-art/bear-tower-story.png",
+              "alt": "小熊换宽底座重搭",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 3
+              },
+              "style": "illustration"
+            }
+          ]
+        },
+        "difficulty": {
+          "rules": 2,
+          "steps": 3,
+          "reading": 0,
+          "motor": 0,
+          "representation": "physical",
+          "basis": "读图复述4事件后改结局再解释因果，家长记观察；6条显示步骤不等于6条规则",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "observationItems": 3
+          }
+        }
+      },
+      {
+        "id": "explore-story-sequence-expression-9",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "E03",
+        "level": "L4",
+        "stage": 3,
+        "difficultyNote": "解释原因与不同结局",
+        "prerequisites": "能口述4件事并提出与前文相容的不同结局",
+        "prompt": "先讲清故事，再想一个不同的结局。",
+        "instruction": "和家长一起操作、说一说，再记录这次的发现。",
+        "clues": [],
+        "tokens": [],
+        "hints": [
+          "第1张：小猫收到种子。",
+          "第2张：把种子种进土里。"
+        ],
+        "success": "这次亲子活动已经记录。下次可以换个条件再试试。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "事件先后清楚；能用因为或所以连接理由；不同结局和前面的事情有关",
+        "abilityTags": [
+          "故事排序、因果和复述"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S109",
+            "locator": "20-23"
+          },
+          {
+            "sourceId": "S110",
+            "locator": "18-21"
+          },
+          {
+            "sourceId": "S102",
+            "locator": "3"
+          },
+          {
+            "sourceId": "S118",
+            "locator": "21-24"
+          },
+          {
+            "sourceId": "S120",
+            "locator": "20-23"
+          },
+          {
+            "sourceId": "S069",
+            "locator": "42"
+          }
+        ],
+        "kind": "parentObservation",
+        "materials": [
+          "屏幕上的四张故事图"
+        ],
+        "steps": [
+          "第1张：小猫收到种子。",
+          "第2张：把种子种进土里。",
+          "第3张：按记录照顾小苗。",
+          "第4张：小猫观察新叶片。",
+          "按原先顺序复述一次。",
+          "改变最后一件事，再解释为什么也说得通。"
+        ],
+        "observations": [
+          {
+            "id": "observe-0",
+            "text": "事件先后清楚"
+          },
+          {
+            "id": "observe-1",
+            "text": "能用因为或所以连接理由"
+          },
+          {
+            "id": "observe-2",
+            "text": "不同结局和前面的事情有关"
+          }
+        ],
+        "presentation": {
+          "materialCards": [
+            {
+              "label": "屏幕上的四张故事图"
+            }
+          ],
+          "storyCards": [
+            {
+              "src": "/images/items/exploration-art/cat-plant-story.png",
+              "alt": "小猫收到种子",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 0
+              },
+              "style": "illustration"
+            },
+            {
+              "src": "/images/items/exploration-art/cat-plant-story.png",
+              "alt": "小猫把种子种进土里",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 1
+              },
+              "style": "illustration"
+            },
+            {
+              "src": "/images/items/exploration-art/cat-plant-story.png",
+              "alt": "小猫按记录照顾小苗",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 2
+              },
+              "style": "illustration"
+            },
+            {
+              "src": "/images/items/exploration-art/cat-plant-story.png",
+              "alt": "小猫观察新叶片",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 3
+              },
+              "style": "illustration"
+            }
+          ]
+        },
+        "difficulty": {
+          "rules": 2,
+          "steps": 3,
+          "reading": 0,
+          "motor": 0,
+          "representation": "physical",
+          "basis": "读图复述4事件后改结局再解释因果，家长记观察；6条显示步骤不等于6条规则",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "observationItems": 3
+          }
+        }
+      }
+    ],
+    "interactionLabel": "探索练习"
+  },
+  {
+    "id": "explore-creative-explanation",
+    "kind": "activitySet",
+    "world": "language",
+    "title": "我的解释和办法",
+    "subtitle": "创编故事、比较方案与理由表达",
+    "goal": "描述线索 → 给出理由 → 提出替代方案",
+    "parentPrompt": "先让孩子操作和解释，再按需要给一点提示。",
+    "abilityTags": [
+      "创编故事、比较方案与理由表达"
+    ],
+    "level": "L3",
+    "rounds": [
+      {
+        "id": "explore-creative-explanation-1",
+        "schemaVersion": 1,
+        "revision": 2,
+        "primaryFamilyId": "E04",
+        "level": "L2",
+        "stage": 1,
+        "difficultyNote": "描述线索",
+        "prerequisites": "能辨3张图卡并说角色地点事件",
+        "prompt": "给图卡编故事",
+        "instruction": "和家长一起操作、说一说，再记录这次的发现。",
+        "clues": [],
+        "tokens": [],
+        "hints": [
+          "从四张图卡中选三张，说出故事里的角色和地点。",
+          "讲一件把选中的三张图卡连起来的事。"
+        ],
+        "success": "这次亲子活动已经记录。下次可以换个条件再试试。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "观点能和线索对应；能说明一个理由；能接受或提出另一种合理解释",
+        "abilityTags": [
+          "创编故事、比较方案与理由表达"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S109",
+            "locator": "20-23"
+          },
+          {
+            "sourceId": "S110",
+            "locator": "18-21"
+          }
+        ],
+        "kind": "parentObservation",
+        "materials": [
+          "屏幕上的四张图卡"
+        ],
+        "steps": [
+          "从四张图卡中选三张，说出故事里的角色和地点。",
+          "讲一件把选中的三张图卡连起来的事。",
+          "用剩下的一张替换其中一张，再调整故事使它仍然连贯。"
+        ],
+        "observations": [
+          {
+            "id": "observe-0",
+            "text": "观点能和线索对应"
+          },
+          {
+            "id": "observe-1",
+            "text": "能说明一个理由"
+          },
+          {
+            "id": "observe-2",
+            "text": "能接受或提出另一种合理解释"
+          }
+        ],
+        "presentation": {
+          "materialCards": [
+            {
+              "label": "屏幕上的四张图卡"
+            }
+          ],
+          "storyCards": [
+            {
+              "src": "/images/characters/rabbit.png",
+              "alt": "小兔"
+            },
+            {
+              "src": "/images/items/river.png",
+              "alt": "小河边"
+            },
+            {
+              "src": "/images/items/apple.png",
+              "alt": "苹果"
+            },
+            {
+              "src": "/images/items/exploration-art/everyday-tools.png",
+              "alt": "雨伞",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 0
+              },
+              "style": "illustration"
+            }
+          ]
+        },
+        "difficulty": {
+          "rules": 2,
+          "steps": 3,
+          "reading": 0,
+          "motor": 2,
+          "representation": "physical",
+          "basis": "第1项连三图编故事，换一图后重建连贯性；按活动索引",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "observationItems": 3
+          }
+        }
+      },
+      {
+        "id": "explore-creative-explanation-2",
+        "schemaVersion": 1,
+        "revision": 2,
+        "primaryFamilyId": "E04",
+        "level": "L2",
+        "stage": 1,
+        "difficultyNote": "描述线索",
+        "prerequisites": "理解材料、可行办法和实际试做",
+        "prompt": "比较两个办法",
+        "instruction": "和家长一起操作、说一说，再记录这次的发现。",
+        "clues": [],
+        "tokens": [],
+        "hints": [
+          "把纸条当小河，用积木想两种让玩具过河的办法。",
+          "分别说需要哪些材料，哪里可能失败。"
+        ],
+        "success": "这次亲子活动已经记录。下次可以换个条件再试试。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "观点能和线索对应；能说明一个理由；能接受或提出另一种合理解释",
+        "abilityTags": [
+          "创编故事、比较方案与理由表达"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S109",
+            "locator": "20-23"
+          },
+          {
+            "sourceId": "S110",
+            "locator": "18-21"
+          }
+        ],
+        "kind": "parentObservation",
+        "materials": [
+          "积木",
+          "小玩具",
+          "纸条当小河"
+        ],
+        "steps": [
+          "把纸条当小河，用积木想两种让玩具过河的办法。",
+          "分别说需要哪些材料，哪里可能失败。",
+          "选一种试做，再用观察到的结果解释选择。"
+        ],
+        "observations": [
+          {
+            "id": "observe-0",
+            "text": "观点能和线索对应"
+          },
+          {
+            "id": "observe-1",
+            "text": "能说明一个理由"
+          },
+          {
+            "id": "observe-2",
+            "text": "能接受或提出另一种合理解释"
+          }
+        ],
+        "presentation": {
+          "materialCards": [
+            {
+              "label": "积木",
+              "image": {
+                "src": "/images/items/block.png",
+                "alt": "积木"
+              }
+            },
+            {
+              "label": "小玩具",
+              "image": {
+                "src": "/images/items/toy-car.png",
+                "alt": "玩具车"
+              }
+            },
+            {
+              "label": "纸条当小河",
+              "image": {
+                "src": "/images/items/exploration/diagram-c878422d.png",
+                "alt": "代替小河的纸条",
+                "width": 320,
+                "height": 320
+              }
+            }
+          ]
+        },
+        "difficulty": {
+          "rules": 2,
+          "steps": 4,
+          "reading": 0,
+          "motor": 2,
+          "representation": "physical",
+          "basis": "第2项想两种过河方案、预测、试做、据结果选，实物材料支持",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "observationItems": 3
+          }
+        }
+      },
+      {
+        "id": "explore-creative-explanation-3",
+        "schemaVersion": 1,
+        "revision": 2,
+        "primaryFamilyId": "E04",
+        "level": "L2",
+        "stage": 1,
+        "difficultyNote": "描述线索",
+        "prerequisites": "能区分亲眼看到的线索与推测",
+        "prompt": "证据够不够",
+        "instruction": "和家长一起操作、说一说，再记录这次的发现。",
+        "clues": [],
+        "tokens": [],
+        "hints": [
+          "先看房间图。家长说“地上有水，所以一定是小狗打翻了杯子”。",
+          "指出哪些是图里看到的，哪些只是猜测；靠近水杯也不能证明是谁打翻的。"
+        ],
+        "success": "这次亲子活动已经记录。下次可以换个条件再试试。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "观点能和线索对应；能说明一个理由；能接受或提出另一种合理解释",
+        "abilityTags": [
+          "创编故事、比较方案与理由表达"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S109",
+            "locator": "20-23"
+          },
+          {
+            "sourceId": "S110",
+            "locator": "18-21"
+          }
+        ],
+        "kind": "parentObservation",
+        "materials": [
+          "屏幕上的房间图"
+        ],
+        "steps": [
+          "先看房间图。家长说“地上有水，所以一定是小狗打翻了杯子”。",
+          "指出哪些是图里看到的，哪些只是猜测；靠近水杯也不能证明是谁打翻的。",
+          "提出另一种可能，并说还需要看到什么经过或线索。"
+        ],
+        "observations": [
+          {
+            "id": "observe-0",
+            "text": "观点能和线索对应"
+          },
+          {
+            "id": "observe-1",
+            "text": "能说明一个理由"
+          },
+          {
+            "id": "observe-2",
+            "text": "能接受或提出另一种合理解释"
+          }
+        ],
+        "illustration": {
+          "src": "/images/scenes/spilled-water-room.png",
+          "alt": "房间里小熊站在倒下的水杯旁，地上有水，小狗在远处睡觉，小鸟在窗边。",
+          "width": 1200,
+          "height": 675
+        },
+        "presentation": {
+          "materialCards": [
+            {
+              "label": "屏幕上的房间图"
+            }
+          ]
+        },
+        "difficulty": {
+          "rules": 2,
+          "steps": 3,
+          "reading": 0,
+          "motor": 0,
+          "representation": "physical",
+          "basis": "第3项地上有水的归因，拆事实猜测、另提解释、说需新证据；不是自动逻辑评分",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "observationItems": 3
+          }
+        }
+      }
+    ],
+    "interactionLabel": "亲子活动"
+  },
+  {
+    "id": "explore-character-phonics",
+    "kind": "activitySet",
+    "world": "language",
+    "title": "字音小花园",
+    "subtitle": "字形、拼音与词语对应",
+    "goal": "清楚字形 → 音形对应 → 情境词义辨别",
+    "parentPrompt": "先让孩子操作和解释，再按需要给一点提示。",
+    "abilityTags": [
+      "字形、拼音与词语对应"
+    ],
+    "level": "L3",
+    "rounds": [
+      {
+        "id": "explore-character-phonics-1",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "E05",
+        "level": "L2",
+        "stage": 1,
+        "difficultyNote": "清楚字形",
+        "prerequisites": "能逐笔比较字形，无须已能读出",
+        "prompt": "哪张字卡和上面的字完全一样？",
+        "instruction": "选出符合条件的一张图卡。",
+        "clues": [],
+        "tokens": [
+          {
+            "id": "o2",
+            "label": "未",
+            "image": {
+              "src": "/images/items/exploration/diagram-9ab33c9f.png",
+              "alt": "未",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": true
+          },
+          {
+            "id": "o1",
+            "label": "本",
+            "image": {
+              "src": "/images/items/exploration/diagram-74cdf995.png",
+              "alt": "本",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": true
+          },
+          {
+            "id": "o0",
+            "label": "木",
+            "image": {
+              "src": "/images/items/exploration/diagram-62e6e511.png",
+              "alt": "木",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": true
+          }
+        ],
+        "hints": [
+          "先找到图里和问题有关的部分。",
+          "看清每一笔的位置，不能只看整体有点像。"
+        ],
+        "success": "看清每一笔的位置，不能只看整体有点像。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+        "abilityTags": [
+          "字形、拼音与词语对应"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S105",
+            "locator": "slide18"
+          },
+          {
+            "sourceId": "S064",
+            "locator": "image"
+          }
+        ],
+        "kind": "singleChoice",
+        "answerId": "o0",
+        "illustration": {
+          "src": "/images/items/exploration/diagram-fc24942d.png",
+          "alt": "哪张字卡和上面的字完全一样？",
+          "width": 320,
+          "height": 320
+        },
+        "difficulty": {
+          "rules": 1,
+          "steps": 1,
+          "reading": 1,
+          "motor": 1,
+          "representation": "symbols",
+          "basis": "木本未等相似字找同形；视觉辨同不等于识读",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "candidates": 3
+          }
+        }
+      },
+      {
+        "id": "explore-character-phonics-2",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "E05",
+        "level": "L2",
+        "stage": 1,
+        "difficultyNote": "清楚字形",
+        "prerequisites": "能逐笔比较字形，无须已能读出",
+        "prompt": "哪张字卡和上面的字完全一样？",
+        "instruction": "选出符合条件的一张图卡。",
+        "clues": [],
+        "tokens": [
+          {
+            "id": "o0",
+            "label": "日",
+            "image": {
+              "src": "/images/items/exploration/diagram-60f6661a.png",
+              "alt": "日",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": true
+          },
+          {
+            "id": "o1",
+            "label": "目",
+            "image": {
+              "src": "/images/items/exploration/diagram-162a48d3.png",
+              "alt": "目",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": true
+          },
+          {
+            "id": "o2",
+            "label": "田",
+            "image": {
+              "src": "/images/items/exploration/diagram-9afd03c9.png",
+              "alt": "田",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": true
+          }
+        ],
+        "hints": [
+          "先找到图里和问题有关的部分。",
+          "看清每一笔的位置，不能只看整体有点像。"
+        ],
+        "success": "看清每一笔的位置，不能只看整体有点像。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+        "abilityTags": [
+          "字形、拼音与词语对应"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S105",
+            "locator": "slide18"
+          },
+          {
+            "sourceId": "S064",
+            "locator": "image"
+          }
+        ],
+        "kind": "singleChoice",
+        "answerId": "o0",
+        "illustration": {
+          "src": "/images/items/exploration/diagram-9c4ef524.png",
+          "alt": "哪张字卡和上面的字完全一样？",
+          "width": 320,
+          "height": 320
+        },
+        "difficulty": {
+          "rules": 1,
+          "steps": 1,
+          "reading": 1,
+          "motor": 1,
+          "representation": "symbols",
+          "basis": "木本未等相似字找同形；视觉辨同不等于识读",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "candidates": 3
+          }
+        }
+      },
+      {
+        "id": "explore-character-phonics-3",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "E05",
+        "level": "L2",
+        "stage": 1,
+        "difficultyNote": "清楚字形",
+        "prerequisites": "能逐笔比较字形，无须已能读出",
+        "prompt": "哪张字卡和上面的字完全一样？",
+        "instruction": "选出符合条件的一张图卡。",
+        "clues": [],
+        "tokens": [
+          {
+            "id": "o1",
+            "label": "入",
+            "image": {
+              "src": "/images/items/exploration/diagram-9a4d8f9a.png",
+              "alt": "入",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": true
+          },
+          {
+            "id": "o2",
+            "label": "大",
+            "image": {
+              "src": "/images/items/exploration/diagram-b854fdc8.png",
+              "alt": "大",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": true
+          },
+          {
+            "id": "o0",
+            "label": "人",
+            "image": {
+              "src": "/images/items/exploration/diagram-3f0d2aaf.png",
+              "alt": "人",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": true
+          }
+        ],
+        "hints": [
+          "先找到图里和问题有关的部分。",
+          "看清每一笔的位置，不能只看整体有点像。"
+        ],
+        "success": "看清每一笔的位置，不能只看整体有点像。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+        "abilityTags": [
+          "字形、拼音与词语对应"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S105",
+            "locator": "slide18"
+          },
+          {
+            "sourceId": "S064",
+            "locator": "image"
+          }
+        ],
+        "kind": "singleChoice",
+        "answerId": "o0",
+        "illustration": {
+          "src": "/images/items/exploration/diagram-68e9e9d7.png",
+          "alt": "哪张字卡和上面的字完全一样？",
+          "width": 320,
+          "height": 320
+        },
+        "difficulty": {
+          "rules": 1,
+          "steps": 1,
+          "reading": 1,
+          "motor": 1,
+          "representation": "symbols",
+          "basis": "木本未等相似字找同形；视觉辨同不等于识读",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "candidates": 3
+          }
+        }
+      },
+      {
+        "id": "explore-character-phonics-4",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "E05",
+        "level": "L3",
+        "stage": 2,
+        "difficultyNote": "音形对应",
+        "prerequisites": "需认识目标字或能从已学音形对应定位",
+        "prompt": "听词语，选出其中要找的字。",
+        "instruction": "选出符合条件的一张图卡。",
+        "clues": [],
+        "tokens": [
+          {
+            "id": "o0",
+            "label": "妈",
+            "image": {
+              "src": "/images/items/exploration/diagram-936bb4b1.png",
+              "alt": "妈",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": true
+          },
+          {
+            "id": "o1",
+            "label": "马",
+            "image": {
+              "src": "/images/items/exploration/diagram-66365ed5.png",
+              "alt": "马",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": true
+          },
+          {
+            "id": "o2",
+            "label": "木",
+            "image": {
+              "src": "/images/items/exploration/diagram-62e6e511.png",
+              "alt": "木",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": true
+          }
+        ],
+        "hints": [
+          "先找到图里和问题有关的部分。",
+          "这次听到的词语是妈妈，要找的是妈。"
+        ],
+        "success": "这次听到的词语是妈妈，要找的是妈。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+        "abilityTags": [
+          "字形、拼音与词语对应"
+        ],
+        "protocol": {
+          "kind": "memory",
+          "observeMs": 10000,
+          "retainMs": 500,
+          "preview": [],
+          "audioText": "妈妈。请找妈。",
+          "audioLocale": "zh-CN"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S105",
+            "locator": "slide18"
+          },
+          {
+            "sourceId": "S064",
+            "locator": "image"
+          }
+        ],
+        "kind": "singleChoice",
+        "answerId": "o0",
+        "difficulty": {
+          "rules": 1,
+          "steps": 1,
+          "reading": 2,
+          "motor": 1,
+          "representation": "symbols",
+          "basis": "听妈妈/小猫/大米找指定汉字，音到字对应有先修识字",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "candidates": 3
+          },
+          "languageLocale": "zh-CN"
+        }
+      },
+      {
+        "id": "explore-character-phonics-5",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "E05",
+        "level": "L3",
+        "stage": 2,
+        "difficultyNote": "音形对应",
+        "prerequisites": "需认识目标字或能从已学音形对应定位",
+        "prompt": "听词语，选出其中要找的字。",
+        "instruction": "选出符合条件的一张图卡。",
+        "clues": [],
+        "tokens": [
+          {
+            "id": "o0",
+            "label": "猫",
+            "image": {
+              "src": "/images/items/exploration/diagram-9513fdcc.png",
+              "alt": "猫",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": true
+          },
+          {
+            "id": "o1",
+            "label": "苗",
+            "image": {
+              "src": "/images/items/exploration/diagram-6c85dfb8.png",
+              "alt": "苗",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": true
+          },
+          {
+            "id": "o2",
+            "label": "毛",
+            "image": {
+              "src": "/images/items/exploration/diagram-2eeb3fc.png",
+              "alt": "毛",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": true
+          }
+        ],
+        "hints": [
+          "先找到图里和问题有关的部分。",
+          "这次听到的词语是小猫，要找的是猫。"
+        ],
+        "success": "这次听到的词语是小猫，要找的是猫。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+        "abilityTags": [
+          "字形、拼音与词语对应"
+        ],
+        "protocol": {
+          "kind": "memory",
+          "observeMs": 10000,
+          "retainMs": 500,
+          "preview": [],
+          "audioText": "小猫。请找猫。",
+          "audioLocale": "zh-CN"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S105",
+            "locator": "slide18"
+          },
+          {
+            "sourceId": "S064",
+            "locator": "image"
+          }
+        ],
+        "kind": "singleChoice",
+        "answerId": "o0",
+        "difficulty": {
+          "rules": 1,
+          "steps": 1,
+          "reading": 2,
+          "motor": 1,
+          "representation": "symbols",
+          "basis": "听妈妈/小猫/大米找指定汉字，音到字对应有先修识字",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "candidates": 3
+          },
+          "languageLocale": "zh-CN"
+        }
+      },
+      {
+        "id": "explore-character-phonics-6",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "E05",
+        "level": "L3",
+        "stage": 2,
+        "difficultyNote": "音形对应",
+        "prerequisites": "需认识目标字或能从已学音形对应定位",
+        "prompt": "听词语，选出其中要找的字。",
+        "instruction": "选出符合条件的一张图卡。",
+        "clues": [],
+        "tokens": [
+          {
+            "id": "o0",
+            "label": "米",
+            "image": {
+              "src": "/images/items/exploration/diagram-1635aa24.png",
+              "alt": "米",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": true
+          },
+          {
+            "id": "o1",
+            "label": "木",
+            "image": {
+              "src": "/images/items/exploration/diagram-62e6e511.png",
+              "alt": "木",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": true
+          },
+          {
+            "id": "o2",
+            "label": "来",
+            "image": {
+              "src": "/images/items/exploration/diagram-75445d9a.png",
+              "alt": "来",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": true
+          }
+        ],
+        "hints": [
+          "先找到图里和问题有关的部分。",
+          "这次听到的词语是大米，要找的是米。"
+        ],
+        "success": "这次听到的词语是大米，要找的是米。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+        "abilityTags": [
+          "字形、拼音与词语对应"
+        ],
+        "protocol": {
+          "kind": "memory",
+          "observeMs": 10000,
+          "retainMs": 500,
+          "preview": [],
+          "audioText": "大米。请找米。",
+          "audioLocale": "zh-CN"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S105",
+            "locator": "slide18"
+          },
+          {
+            "sourceId": "S064",
+            "locator": "image"
+          }
+        ],
+        "kind": "singleChoice",
+        "answerId": "o0",
+        "difficulty": {
+          "rules": 1,
+          "steps": 1,
+          "reading": 2,
+          "motor": 1,
+          "representation": "symbols",
+          "basis": "听妈妈/小猫/大米找指定汉字，音到字对应有先修识字",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "candidates": 3
+          },
+          "languageLocale": "zh-CN"
+        }
+      },
+      {
+        "id": "explore-character-phonics-7",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "E05",
+        "level": "L4",
+        "stage": 3,
+        "difficultyNote": "情境词义辨别",
+        "prerequisites": "能查汉字拼音对照表并区分声母韵母声调",
+        "prompt": "根据对照表，把汉字和拼音配起来。",
+        "instruction": "把两边有关的图卡连起来。可以拖过去，也可以两边各点一下。",
+        "clues": [],
+        "tokens": [
+          {
+            "id": "h0",
+            "label": "妈",
+            "image": {
+              "src": "/images/items/exploration/diagram-936bb4b1.png",
+              "alt": "妈",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": true
+          },
+          {
+            "id": "h1",
+            "label": "马",
+            "image": {
+              "src": "/images/items/exploration/diagram-66365ed5.png",
+              "alt": "马",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": true
+          },
+          {
+            "id": "h2",
+            "label": "米",
+            "image": {
+              "src": "/images/items/exploration/diagram-1635aa24.png",
+              "alt": "米",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": true
+          },
+          {
+            "id": "p0",
+            "label": "mā",
+            "speechText": "妈",
+            "image": {
+              "src": "/images/items/exploration/diagram-c7f530c1.png",
+              "alt": "mā",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": true
+          },
+          {
+            "id": "p1",
+            "label": "mǎ",
+            "speechText": "马",
+            "image": {
+              "src": "/images/items/exploration/diagram-f71e678.png",
+              "alt": "mǎ",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": true
+          },
+          {
+            "id": "p2",
+            "label": "mǐ",
+            "speechText": "米",
+            "image": {
+              "src": "/images/items/exploration/diagram-3ec89b8e.png",
+              "alt": "mǐ",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": true
+          }
+        ],
+        "hints": [
+          "先说说左边这张图卡的特点，再找对应关系。",
+          "字母和声调都要核对。识读不熟时，可以先由家长带着看对照表。"
+        ],
+        "success": "字母和声调都要核对。识读不熟时，可以先由家长带着看对照表。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+        "abilityTags": [
+          "字形、拼音与词语对应"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S105",
+            "locator": "slide18"
+          },
+          {
+            "sourceId": "S064",
+            "locator": "image"
+          }
+        ],
+        "kind": "matching",
+        "leftIds": [
+          "h0",
+          "h1",
+          "h2"
+        ],
+        "rightIds": [
+          "p0",
+          "p2",
+          "p1"
+        ],
+        "expectedPairs": [
+          [
+            "h0",
+            "p0"
+          ],
+          [
+            "h1",
+            "p1"
+          ],
+          [
+            "h2",
+            "p2"
+          ]
+        ],
+        "illustration": {
+          "src": "/images/items/exploration/diagram-1737feee.png",
+          "alt": "根据对照表，把汉字和拼音配起来。",
+          "width": 295,
+          "height": 125
+        },
+        "difficulty": {
+          "rules": 2,
+          "steps": 2,
+          "reading": 2,
+          "motor": 2,
+          "representation": "symbols",
+          "basis": "3组查表配对，字母及声调均核对；不声称无表独立拼读",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "pairs": 3
+          }
+        }
+      },
+      {
+        "id": "explore-character-phonics-8",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "E05",
+        "level": "L4",
+        "stage": 3,
+        "difficultyNote": "情境词义辨别",
+        "prerequisites": "能查汉字拼音对照表并区分声母韵母声调",
+        "prompt": "根据对照表，把汉字和拼音配起来。",
+        "instruction": "把两边有关的图卡连起来。可以拖过去，也可以两边各点一下。",
+        "clues": [],
+        "tokens": [
+          {
+            "id": "h0",
+            "label": "八",
+            "image": {
+              "src": "/images/items/exploration/diagram-2dd04d0c.png",
+              "alt": "八",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": true
+          },
+          {
+            "id": "h1",
+            "label": "爸",
+            "image": {
+              "src": "/images/items/exploration/diagram-58952861.png",
+              "alt": "爸",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": true
+          },
+          {
+            "id": "h2",
+            "label": "比",
+            "image": {
+              "src": "/images/items/exploration/diagram-928d9d2d.png",
+              "alt": "比",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": true
+          },
+          {
+            "id": "p0",
+            "label": "bā",
+            "speechText": "八",
+            "image": {
+              "src": "/images/items/exploration/diagram-91511396.png",
+              "alt": "bā",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": true
+          },
+          {
+            "id": "p1",
+            "label": "bà",
+            "speechText": "爸",
+            "image": {
+              "src": "/images/items/exploration/diagram-f6a2a3d9.png",
+              "alt": "bà",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": true
+          },
+          {
+            "id": "p2",
+            "label": "bǐ",
+            "speechText": "比",
+            "image": {
+              "src": "/images/items/exploration/diagram-fe4af689.png",
+              "alt": "bǐ",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": true
+          }
+        ],
+        "hints": [
+          "先说说左边这张图卡的特点，再找对应关系。",
+          "字母和声调都要核对。识读不熟时，可以先由家长带着看对照表。"
+        ],
+        "success": "字母和声调都要核对。识读不熟时，可以先由家长带着看对照表。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+        "abilityTags": [
+          "字形、拼音与词语对应"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S105",
+            "locator": "slide18"
+          },
+          {
+            "sourceId": "S064",
+            "locator": "image"
+          }
+        ],
+        "kind": "matching",
+        "leftIds": [
+          "h0",
+          "h1",
+          "h2"
+        ],
+        "rightIds": [
+          "p1",
+          "p0",
+          "p2"
+        ],
+        "expectedPairs": [
+          [
+            "h0",
+            "p0"
+          ],
+          [
+            "h1",
+            "p1"
+          ],
+          [
+            "h2",
+            "p2"
+          ]
+        ],
+        "illustration": {
+          "src": "/images/items/exploration/diagram-b975bcf3.png",
+          "alt": "根据对照表，把汉字和拼音配起来。",
+          "width": 295,
+          "height": 125
+        },
+        "difficulty": {
+          "rules": 2,
+          "steps": 2,
+          "reading": 2,
+          "motor": 2,
+          "representation": "symbols",
+          "basis": "3组查表配对，字母及声调均核对；不声称无表独立拼读",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "pairs": 3
+          }
+        }
+      },
+      {
+        "id": "explore-character-phonics-9",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "E05",
+        "level": "L4",
+        "stage": 3,
+        "difficultyNote": "情境词义辨别",
+        "prerequisites": "能查汉字拼音对照表并区分声母韵母声调",
+        "prompt": "根据对照表，把汉字和拼音配起来。",
+        "instruction": "把两边有关的图卡连起来。可以拖过去，也可以两边各点一下。",
+        "clues": [],
+        "tokens": [
+          {
+            "id": "h0",
+            "label": "大",
+            "image": {
+              "src": "/images/items/exploration/diagram-b854fdc8.png",
+              "alt": "大",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": true
+          },
+          {
+            "id": "h1",
+            "label": "打",
+            "image": {
+              "src": "/images/items/exploration/diagram-89346744.png",
+              "alt": "打",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": true
+          },
+          {
+            "id": "h2",
+            "label": "地",
+            "image": {
+              "src": "/images/items/exploration/diagram-4e5adc9.png",
+              "alt": "地",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": true
+          },
+          {
+            "id": "p0",
+            "label": "dà",
+            "speechText": "大",
+            "image": {
+              "src": "/images/items/exploration/diagram-3a05946b.png",
+              "alt": "dà",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": true
+          },
+          {
+            "id": "p1",
+            "label": "dǎ",
+            "speechText": "打",
+            "image": {
+              "src": "/images/items/exploration/diagram-d5d673a1.png",
+              "alt": "dǎ",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": true
+          },
+          {
+            "id": "p2",
+            "label": "dì",
+            "speechText": "地",
+            "image": {
+              "src": "/images/items/exploration/diagram-c2ad690f.png",
+              "alt": "dì",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": true
+          }
+        ],
+        "hints": [
+          "先说说左边这张图卡的特点，再找对应关系。",
+          "字母和声调都要核对。识读不熟时，可以先由家长带着看对照表。"
+        ],
+        "success": "字母和声调都要核对。识读不熟时，可以先由家长带着看对照表。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+        "abilityTags": [
+          "字形、拼音与词语对应"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S105",
+            "locator": "slide18"
+          },
+          {
+            "sourceId": "S064",
+            "locator": "image"
+          }
+        ],
+        "kind": "matching",
+        "leftIds": [
+          "h0",
+          "h1",
+          "h2"
+        ],
+        "rightIds": [
+          "p0",
+          "p1",
+          "p2"
+        ],
+        "expectedPairs": [
+          [
+            "h0",
+            "p0"
+          ],
+          [
+            "h1",
+            "p1"
+          ],
+          [
+            "h2",
+            "p2"
+          ]
+        ],
+        "illustration": {
+          "src": "/images/items/exploration/diagram-89430e1b.png",
+          "alt": "根据对照表，把汉字和拼音配起来。",
+          "width": 295,
+          "height": 125
+        },
+        "difficulty": {
+          "rules": 2,
+          "steps": 2,
+          "reading": 2,
+          "motor": 2,
+          "representation": "symbols",
+          "basis": "3组查表配对，字母及声调均核对；不声称无表独立拼读",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "pairs": 3
+          }
+        }
+      }
+    ],
+    "interactionLabel": "探索练习"
+  },
+  {
+    "id": "explore-english-listening",
+    "kind": "activitySet",
+    "world": "language",
+    "title": "英语听一听",
+    "subtitle": "英语听辨与短句理解",
+    "goal": "词音辨认 → 短句对应 → 关系指令理解",
+    "parentPrompt": "先让孩子操作和解释，再按需要给一点提示。",
+    "abilityTags": [
+      "英语听辨与短句理解"
+    ],
+    "level": "L3",
+    "rounds": [
+      {
+        "id": "explore-english-listening-1",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "E06",
+        "level": "L2",
+        "stage": 1,
+        "difficultyNote": "词音辨认",
+        "prerequisites": "已接触rabbit/cat/dog的声音意义",
+        "prompt": "听英语，选出对应的小动物。",
+        "instruction": "选出符合条件的一张图卡。",
+        "clues": [],
+        "tokens": [
+          {
+            "id": "o0",
+            "label": "小兔",
+            "image": {
+              "src": "/images/characters/rabbit.png",
+              "alt": "小兔头像"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "o1",
+            "label": "小猫",
+            "image": {
+              "src": "/images/characters/cat.png",
+              "alt": "小猫头像"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "o2",
+            "label": "小狗",
+            "image": {
+              "src": "/images/characters/dog.png",
+              "alt": "小狗头像"
+            },
+            "textOnly": false
+          }
+        ],
+        "hints": [
+          "先找到图里和问题有关的部分。",
+          "把听到的英语词和对应的小动物连起来。"
+        ],
+        "success": "把听到的英语词和对应的小动物连起来。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+        "abilityTags": [
+          "英语听辨与短句理解"
+        ],
+        "protocol": {
+          "kind": "memory",
+          "observeMs": 10000,
+          "retainMs": 500,
+          "preview": [],
+          "audioText": "rabbit",
+          "audioLocale": "en-US"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S071",
+            "locator": "render16-20"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide23-25"
+          }
+        ],
+        "kind": "singleChoice",
+        "answerId": "o0",
+        "difficulty": {
+          "rules": 1,
+          "steps": 1,
+          "reading": 0,
+          "motor": 1,
+          "representation": "pictures",
+          "basis": "英语动物词单听选图片，reading0不代表英语负荷0",
+          "memory": 1,
+          "calibration": "design-estimate",
+          "workload": {
+            "candidates": 3
+          },
+          "languageLocale": "en-US"
+        }
+      },
+      {
+        "id": "explore-english-listening-2",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "E06",
+        "level": "L2",
+        "stage": 1,
+        "difficultyNote": "词音辨认",
+        "prerequisites": "已接触rabbit/cat/dog的声音意义",
+        "prompt": "听英语，选出对应的小动物。",
+        "instruction": "选出符合条件的一张图卡。",
+        "clues": [],
+        "tokens": [
+          {
+            "id": "o2",
+            "label": "小狗",
+            "image": {
+              "src": "/images/characters/dog.png",
+              "alt": "小狗头像"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "o0",
+            "label": "小兔",
+            "image": {
+              "src": "/images/characters/rabbit.png",
+              "alt": "小兔头像"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "o1",
+            "label": "小猫",
+            "image": {
+              "src": "/images/characters/cat.png",
+              "alt": "小猫头像"
+            },
+            "textOnly": false
+          }
+        ],
+        "hints": [
+          "先找到图里和问题有关的部分。",
+          "把听到的英语词和对应的小动物连起来。"
+        ],
+        "success": "把听到的英语词和对应的小动物连起来。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+        "abilityTags": [
+          "英语听辨与短句理解"
+        ],
+        "protocol": {
+          "kind": "memory",
+          "observeMs": 10000,
+          "retainMs": 500,
+          "preview": [],
+          "audioText": "cat",
+          "audioLocale": "en-US"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S071",
+            "locator": "render16-20"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide23-25"
+          }
+        ],
+        "kind": "singleChoice",
+        "answerId": "o1",
+        "difficulty": {
+          "rules": 1,
+          "steps": 1,
+          "reading": 0,
+          "motor": 1,
+          "representation": "pictures",
+          "basis": "英语动物词单听选图片，reading0不代表英语负荷0",
+          "memory": 1,
+          "calibration": "design-estimate",
+          "workload": {
+            "candidates": 3
+          },
+          "languageLocale": "en-US"
+        }
+      },
+      {
+        "id": "explore-english-listening-3",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "E06",
+        "level": "L2",
+        "stage": 1,
+        "difficultyNote": "词音辨认",
+        "prerequisites": "已接触rabbit/cat/dog的声音意义",
+        "prompt": "听英语，选出对应的小动物。",
+        "instruction": "选出符合条件的一张图卡。",
+        "clues": [],
+        "tokens": [
+          {
+            "id": "o0",
+            "label": "小兔",
+            "image": {
+              "src": "/images/characters/rabbit.png",
+              "alt": "小兔头像"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "o2",
+            "label": "小狗",
+            "image": {
+              "src": "/images/characters/dog.png",
+              "alt": "小狗头像"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "o1",
+            "label": "小猫",
+            "image": {
+              "src": "/images/characters/cat.png",
+              "alt": "小猫头像"
+            },
+            "textOnly": false
+          }
+        ],
+        "hints": [
+          "先找到图里和问题有关的部分。",
+          "把听到的英语词和对应的小动物连起来。"
+        ],
+        "success": "把听到的英语词和对应的小动物连起来。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+        "abilityTags": [
+          "英语听辨与短句理解"
+        ],
+        "protocol": {
+          "kind": "memory",
+          "observeMs": 10000,
+          "retainMs": 500,
+          "preview": [],
+          "audioText": "dog",
+          "audioLocale": "en-US"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S071",
+            "locator": "render16-20"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide23-25"
+          }
+        ],
+        "kind": "singleChoice",
+        "answerId": "o2",
+        "difficulty": {
+          "rules": 1,
+          "steps": 1,
+          "reading": 0,
+          "motor": 1,
+          "representation": "pictures",
+          "basis": "英语动物词单听选图片，reading0不代表英语负荷0",
+          "memory": 1,
+          "calibration": "design-estimate",
+          "workload": {
+            "candidates": 3
+          },
+          "languageLocale": "en-US"
+        }
+      },
+      {
+        "id": "explore-english-listening-4",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "E06",
+        "level": "L3",
+        "stage": 2,
+        "difficultyNote": "短句对应",
+        "prerequisites": "已接触red/blue/yellow及三种shape英语词",
+        "prompt": "听英语短句，把颜色和形状都对上。",
+        "instruction": "选出符合条件的一张图卡。",
+        "clues": [],
+        "tokens": [
+          {
+            "id": "o2",
+            "label": "图1",
+            "image": {
+              "src": "/images/items/exploration/diagram-4d6d100d.png",
+              "alt": "图1",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": false
+          },
+          {
+            "id": "o1",
+            "label": "图2",
+            "image": {
+              "src": "/images/items/exploration/diagram-a7d48458.png",
+              "alt": "图2",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": false
+          },
+          {
+            "id": "o0",
+            "label": "图3",
+            "image": {
+              "src": "/images/items/exploration/diagram-6964a49.png",
+              "alt": "图3",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": false
+          }
+        ],
+        "hints": [
+          "先找到图里和问题有关的部分。",
+          "要同时听到颜色和形状，不能只对上一项。"
+        ],
+        "success": "要同时听到颜色和形状，不能只对上一项。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+        "abilityTags": [
+          "英语听辨与短句理解"
+        ],
+        "protocol": {
+          "kind": "memory",
+          "observeMs": 10000,
+          "retainMs": 500,
+          "preview": [],
+          "audioText": "Choose the red circle.",
+          "audioLocale": "en-US"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S071",
+            "locator": "render16-20"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide23-25"
+          }
+        ],
+        "kind": "singleChoice",
+        "answerId": "o0",
+        "difficulty": {
+          "rules": 2,
+          "steps": 2,
+          "reading": 0,
+          "motor": 1,
+          "representation": "pictures",
+          "basis": "听颜色+形状双属性，再对应图卡",
+          "memory": 2,
+          "calibration": "design-estimate",
+          "workload": {
+            "candidates": 3
+          },
+          "languageLocale": "en-US"
+        }
+      },
+      {
+        "id": "explore-english-listening-5",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "E06",
+        "level": "L3",
+        "stage": 2,
+        "difficultyNote": "短句对应",
+        "prerequisites": "已接触red/blue/yellow及三种shape英语词",
+        "prompt": "听英语短句，把颜色和形状都对上。",
+        "instruction": "选出符合条件的一张图卡。",
+        "clues": [],
+        "tokens": [
+          {
+            "id": "o1",
+            "label": "图1",
+            "image": {
+              "src": "/images/items/exploration/diagram-4db6e41.png",
+              "alt": "图1",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": false
+          },
+          {
+            "id": "o2",
+            "label": "图2",
+            "image": {
+              "src": "/images/items/exploration/diagram-124ee1e3.png",
+              "alt": "图2",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": false
+          },
+          {
+            "id": "o0",
+            "label": "图3",
+            "image": {
+              "src": "/images/items/exploration/diagram-776fadc4.png",
+              "alt": "图3",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": false
+          }
+        ],
+        "hints": [
+          "先找到图里和问题有关的部分。",
+          "要同时听到颜色和形状，不能只对上一项。"
+        ],
+        "success": "要同时听到颜色和形状，不能只对上一项。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+        "abilityTags": [
+          "英语听辨与短句理解"
+        ],
+        "protocol": {
+          "kind": "memory",
+          "observeMs": 10000,
+          "retainMs": 500,
+          "preview": [],
+          "audioText": "Choose the blue square.",
+          "audioLocale": "en-US"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S071",
+            "locator": "render16-20"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide23-25"
+          }
+        ],
+        "kind": "singleChoice",
+        "answerId": "o0",
+        "difficulty": {
+          "rules": 2,
+          "steps": 2,
+          "reading": 0,
+          "motor": 1,
+          "representation": "pictures",
+          "basis": "听颜色+形状双属性，再对应图卡",
+          "memory": 2,
+          "calibration": "design-estimate",
+          "workload": {
+            "candidates": 3
+          },
+          "languageLocale": "en-US"
+        }
+      },
+      {
+        "id": "explore-english-listening-6",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "E06",
+        "level": "L3",
+        "stage": 2,
+        "difficultyNote": "短句对应",
+        "prerequisites": "已接触red/blue/yellow及三种shape英语词",
+        "prompt": "听英语短句，把颜色和形状都对上。",
+        "instruction": "选出符合条件的一张图卡。",
+        "clues": [],
+        "tokens": [
+          {
+            "id": "o2",
+            "label": "图1",
+            "image": {
+              "src": "/images/items/exploration/diagram-e86abf05.png",
+              "alt": "图1",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": false
+          },
+          {
+            "id": "o1",
+            "label": "图2",
+            "image": {
+              "src": "/images/items/exploration/diagram-b5760604.png",
+              "alt": "图2",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": false
+          },
+          {
+            "id": "o0",
+            "label": "图3",
+            "image": {
+              "src": "/images/items/exploration/diagram-83c7c2c8.png",
+              "alt": "图3",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": false
+          }
+        ],
+        "hints": [
+          "先找到图里和问题有关的部分。",
+          "要同时听到颜色和形状，不能只对上一项。"
+        ],
+        "success": "要同时听到颜色和形状，不能只对上一项。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+        "abilityTags": [
+          "英语听辨与短句理解"
+        ],
+        "protocol": {
+          "kind": "memory",
+          "observeMs": 10000,
+          "retainMs": 500,
+          "preview": [],
+          "audioText": "Choose the yellow triangle.",
+          "audioLocale": "en-US"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S071",
+            "locator": "render16-20"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide23-25"
+          }
+        ],
+        "kind": "singleChoice",
+        "answerId": "o0",
+        "difficulty": {
+          "rules": 2,
+          "steps": 2,
+          "reading": 0,
+          "motor": 1,
+          "representation": "pictures",
+          "basis": "听颜色+形状双属性，再对应图卡",
+          "memory": 2,
+          "calibration": "design-estimate",
+          "workload": {
+            "candidates": 3
+          },
+          "languageLocale": "en-US"
+        }
+      },
+      {
+        "id": "explore-english-listening-7",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "E06",
+        "level": "L4",
+        "stage": 3,
+        "difficultyNote": "关系指令理解",
+        "prerequisites": "听懂red/blue、两形状名及left of",
+        "prompt": "听英语，找到位置关系相符的图。",
+        "instruction": "选出符合条件的一张图卡。",
+        "clues": [],
+        "tokens": [
+          {
+            "id": "o1",
+            "label": "图A",
+            "image": {
+              "src": "/images/items/exploration/diagram-6ad70303.png",
+              "alt": "图A",
+              "width": 600,
+              "height": 310
+            },
+            "textOnly": false
+          },
+          {
+            "id": "o0",
+            "label": "图B",
+            "image": {
+              "src": "/images/items/exploration/diagram-ee55da57.png",
+              "alt": "图B",
+              "width": 600,
+              "height": 310
+            },
+            "textOnly": false
+          },
+          {
+            "id": "o2",
+            "label": "图C",
+            "image": {
+              "src": "/images/items/exploration/diagram-3f0b3f7f.png",
+              "alt": "图C",
+              "width": 600,
+              "height": 310
+            },
+            "textOnly": false
+          }
+        ],
+        "hints": [
+          "先找到图里和问题有关的部分。",
+          "两个对象、颜色和左右关系都要对应。"
+        ],
+        "success": "两个对象、颜色和左右关系都要对应。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+        "abilityTags": [
+          "英语听辨与短句理解"
+        ],
+        "protocol": {
+          "kind": "memory",
+          "observeMs": 10000,
+          "retainMs": 500,
+          "preview": [],
+          "audioText": "The red circle is on the left of the blue square.",
+          "audioLocale": "en-US"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S071",
+            "locator": "render16-20"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide23-25"
+          }
+        ],
+        "kind": "singleChoice",
+        "answerId": "o0",
+        "difficulty": {
+          "rules": 3,
+          "steps": 3,
+          "reading": 0,
+          "motor": 1,
+          "representation": "pictures",
+          "basis": "听两对象属性与left of关系后联合选图；独立记录英语先修和中文帮助",
+          "memory": 2,
+          "calibration": "design-estimate",
+          "workload": {
+            "candidates": 3
+          },
+          "languageLocale": "en-US"
+        }
+      },
+      {
+        "id": "explore-english-listening-8",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "E06",
+        "level": "L4",
+        "stage": 3,
+        "difficultyNote": "关系指令理解",
+        "prerequisites": "听懂red/blue、两形状名及left of",
+        "prompt": "听英语，找到位置关系相符的图。",
+        "instruction": "选出符合条件的一张图卡。",
+        "clues": [],
+        "tokens": [
+          {
+            "id": "o0",
+            "label": "图A",
+            "image": {
+              "src": "/images/items/exploration/diagram-9f3b5ccf.png",
+              "alt": "图A",
+              "width": 600,
+              "height": 310
+            },
+            "textOnly": false
+          },
+          {
+            "id": "o2",
+            "label": "图B",
+            "image": {
+              "src": "/images/items/exploration/diagram-f8edd2af.png",
+              "alt": "图B",
+              "width": 600,
+              "height": 310
+            },
+            "textOnly": false
+          },
+          {
+            "id": "o1",
+            "label": "图C",
+            "image": {
+              "src": "/images/items/exploration/diagram-65758673.png",
+              "alt": "图C",
+              "width": 600,
+              "height": 310
+            },
+            "textOnly": false
+          }
+        ],
+        "hints": [
+          "先找到图里和问题有关的部分。",
+          "两个对象、颜色和左右关系都要对应。"
+        ],
+        "success": "两个对象、颜色和左右关系都要对应。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+        "abilityTags": [
+          "英语听辨与短句理解"
+        ],
+        "protocol": {
+          "kind": "memory",
+          "observeMs": 10000,
+          "retainMs": 500,
+          "preview": [],
+          "audioText": "The red square is on the left of the blue triangle.",
+          "audioLocale": "en-US"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S071",
+            "locator": "render16-20"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide23-25"
+          }
+        ],
+        "kind": "singleChoice",
+        "answerId": "o0",
+        "difficulty": {
+          "rules": 3,
+          "steps": 3,
+          "reading": 0,
+          "motor": 1,
+          "representation": "pictures",
+          "basis": "听两对象属性与left of关系后联合选图；独立记录英语先修和中文帮助",
+          "memory": 2,
+          "calibration": "design-estimate",
+          "workload": {
+            "candidates": 3
+          },
+          "languageLocale": "en-US"
+        }
+      },
+      {
+        "id": "explore-english-listening-9",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "E06",
+        "level": "L4",
+        "stage": 3,
+        "difficultyNote": "关系指令理解",
+        "prerequisites": "听懂red/blue、两形状名及left of",
+        "prompt": "听英语，找到位置关系相符的图。",
+        "instruction": "选出符合条件的一张图卡。",
+        "clues": [],
+        "tokens": [
+          {
+            "id": "o0",
+            "label": "图A",
+            "image": {
+              "src": "/images/items/exploration/diagram-6917b3c0.png",
+              "alt": "图A",
+              "width": 600,
+              "height": 310
+            },
+            "textOnly": false
+          },
+          {
+            "id": "o2",
+            "label": "图B",
+            "image": {
+              "src": "/images/items/exploration/diagram-d4ed03b8.png",
+              "alt": "图B",
+              "width": 600,
+              "height": 310
+            },
+            "textOnly": false
+          },
+          {
+            "id": "o1",
+            "label": "图C",
+            "image": {
+              "src": "/images/items/exploration/diagram-c37d0b82.png",
+              "alt": "图C",
+              "width": 600,
+              "height": 310
+            },
+            "textOnly": false
+          }
+        ],
+        "hints": [
+          "先找到图里和问题有关的部分。",
+          "两个对象、颜色和左右关系都要对应。"
+        ],
+        "success": "两个对象、颜色和左右关系都要对应。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+        "abilityTags": [
+          "英语听辨与短句理解"
+        ],
+        "protocol": {
+          "kind": "memory",
+          "observeMs": 10000,
+          "retainMs": 500,
+          "preview": [],
+          "audioText": "The red triangle is on the left of the blue circle.",
+          "audioLocale": "en-US"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S071",
+            "locator": "render16-20"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide23-25"
+          }
+        ],
+        "kind": "singleChoice",
+        "answerId": "o0",
+        "difficulty": {
+          "rules": 3,
+          "steps": 3,
+          "reading": 0,
+          "motor": 1,
+          "representation": "pictures",
+          "basis": "听两对象属性与left of关系后联合选图；独立记录英语先修和中文帮助",
+          "memory": 2,
+          "calibration": "design-estimate",
+          "workload": {
+            "candidates": 3
+          },
+          "languageLocale": "en-US"
+        }
+      }
+    ],
+    "interactionLabel": "探索练习"
+  },
+  {
+    "id": "explore-bilingual-concepts",
+    "kind": "activitySet",
+    "world": "language",
+    "title": "英语里的数量位置",
+    "subtitle": "英语中的数量、空间与比较表达",
+    "goal": "词与图对应 → 关系短句 → 多信息理解",
+    "parentPrompt": "先让孩子操作和解释，再按需要给一点提示。",
+    "abilityTags": [
+      "英语中的数量、空间与比较表达"
+    ],
+    "level": "L3",
+    "rounds": [
+      {
+        "id": "explore-bilingual-concepts-1",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "E07",
+        "level": "L2",
+        "stage": 1,
+        "difficultyNote": "词与图对应",
+        "prerequisites": "听懂one/two/three和circle，会数1–3",
+        "prompt": "听英语，选择相同数量的图。",
+        "instruction": "选出符合条件的一张图卡。",
+        "clues": [],
+        "tokens": [
+          {
+            "id": "o0",
+            "label": "图1",
+            "image": {
+              "src": "/images/items/exploration/diagram-90477e96.png",
+              "alt": "图1",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": false
+          },
+          {
+            "id": "o1",
+            "label": "图2",
+            "image": {
+              "src": "/images/items/exploration/diagram-ee0e54b3.png",
+              "alt": "图2",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": false
+          },
+          {
+            "id": "o2",
+            "label": "图3",
+            "image": {
+              "src": "/images/items/exploration/diagram-2f9a914.png",
+              "alt": "图3",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": false
+          }
+        ],
+        "hints": [
+          "先找到图里和问题有关的部分。",
+          "数量对应以后，再指着图卡核对一次。"
+        ],
+        "success": "数量对应以后，再指着图卡核对一次。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+        "abilityTags": [
+          "英语中的数量、空间与比较表达"
+        ],
+        "protocol": {
+          "kind": "memory",
+          "observeMs": 10000,
+          "retainMs": 500,
+          "preview": [],
+          "audioText": "There is one circle.",
+          "audioLocale": "en-US"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S105",
+            "locator": "slide10-11"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide18"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide24-25"
+          }
+        ],
+        "kind": "singleChoice",
+        "answerId": "o0",
+        "difficulty": {
+          "rules": 1,
+          "steps": 1,
+          "reading": 0,
+          "motor": 1,
+          "representation": "pictures",
+          "basis": "英语1–3圆数量听选，图形答案无文字要求",
+          "memory": 1,
+          "calibration": "design-estimate",
+          "workload": {
+            "candidates": 3
+          },
+          "languageLocale": "en-US"
+        }
+      },
+      {
+        "id": "explore-bilingual-concepts-2",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "E07",
+        "level": "L2",
+        "stage": 1,
+        "difficultyNote": "词与图对应",
+        "prerequisites": "听懂one/two/three和circle，会数1–3",
+        "prompt": "听英语，选择相同数量的图。",
+        "instruction": "选出符合条件的一张图卡。",
+        "clues": [],
+        "tokens": [
+          {
+            "id": "o1",
+            "label": "图1",
+            "image": {
+              "src": "/images/items/exploration/diagram-ee0e54b3.png",
+              "alt": "图1",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": false
+          },
+          {
+            "id": "o0",
+            "label": "图2",
+            "image": {
+              "src": "/images/items/exploration/diagram-90477e96.png",
+              "alt": "图2",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": false
+          },
+          {
+            "id": "o2",
+            "label": "图3",
+            "image": {
+              "src": "/images/items/exploration/diagram-2f9a914.png",
+              "alt": "图3",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": false
+          }
+        ],
+        "hints": [
+          "先找到图里和问题有关的部分。",
+          "数量对应以后，再指着图卡核对一次。"
+        ],
+        "success": "数量对应以后，再指着图卡核对一次。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+        "abilityTags": [
+          "英语中的数量、空间与比较表达"
+        ],
+        "protocol": {
+          "kind": "memory",
+          "observeMs": 10000,
+          "retainMs": 500,
+          "preview": [],
+          "audioText": "There are two circles.",
+          "audioLocale": "en-US"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S105",
+            "locator": "slide10-11"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide18"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide24-25"
+          }
+        ],
+        "kind": "singleChoice",
+        "answerId": "o1",
+        "difficulty": {
+          "rules": 1,
+          "steps": 1,
+          "reading": 0,
+          "motor": 1,
+          "representation": "pictures",
+          "basis": "英语1–3圆数量听选，图形答案无文字要求",
+          "memory": 1,
+          "calibration": "design-estimate",
+          "workload": {
+            "candidates": 3
+          },
+          "languageLocale": "en-US"
+        }
+      },
+      {
+        "id": "explore-bilingual-concepts-3",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "E07",
+        "level": "L2",
+        "stage": 1,
+        "difficultyNote": "词与图对应",
+        "prerequisites": "听懂one/two/three和circle，会数1–3",
+        "prompt": "听英语，选择相同数量的图。",
+        "instruction": "选出符合条件的一张图卡。",
+        "clues": [],
+        "tokens": [
+          {
+            "id": "o0",
+            "label": "图1",
+            "image": {
+              "src": "/images/items/exploration/diagram-90477e96.png",
+              "alt": "图1",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": false
+          },
+          {
+            "id": "o1",
+            "label": "图2",
+            "image": {
+              "src": "/images/items/exploration/diagram-ee0e54b3.png",
+              "alt": "图2",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": false
+          },
+          {
+            "id": "o2",
+            "label": "图3",
+            "image": {
+              "src": "/images/items/exploration/diagram-2f9a914.png",
+              "alt": "图3",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": false
+          }
+        ],
+        "hints": [
+          "先找到图里和问题有关的部分。",
+          "数量对应以后，再指着图卡核对一次。"
+        ],
+        "success": "数量对应以后，再指着图卡核对一次。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+        "abilityTags": [
+          "英语中的数量、空间与比较表达"
+        ],
+        "protocol": {
+          "kind": "memory",
+          "observeMs": 10000,
+          "retainMs": 500,
+          "preview": [],
+          "audioText": "There are three circles.",
+          "audioLocale": "en-US"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S105",
+            "locator": "slide10-11"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide18"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide24-25"
+          }
+        ],
+        "kind": "singleChoice",
+        "answerId": "o2",
+        "difficulty": {
+          "rules": 1,
+          "steps": 1,
+          "reading": 0,
+          "motor": 1,
+          "representation": "pictures",
+          "basis": "英语1–3圆数量听选，图形答案无文字要求",
+          "memory": 1,
+          "calibration": "design-estimate",
+          "workload": {
+            "candidates": 3
+          },
+          "languageLocale": "en-US"
+        }
+      },
+      {
+        "id": "explore-bilingual-concepts-4",
+        "schemaVersion": 1,
+        "revision": 2,
+        "primaryFamilyId": "E07",
+        "level": "L3",
+        "stage": 2,
+        "difficultyNote": "关系短句",
+        "prerequisites": "听懂above和red square且理解上下",
+        "prompt": "听英语，找出对象和位置都对应的图。",
+        "instruction": "选出符合条件的一张图卡。",
+        "clues": [],
+        "tokens": [
+          {
+            "id": "o0",
+            "label": "图A",
+            "image": {
+              "src": "/images/items/exploration/diagram-71891477.png",
+              "alt": "图A",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": false
+          },
+          {
+            "id": "o1",
+            "label": "图B",
+            "image": {
+              "src": "/images/items/exploration/diagram-7b003075.png",
+              "alt": "图B",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": false
+          },
+          {
+            "id": "o2",
+            "label": "图C",
+            "image": {
+              "src": "/images/items/exploration/diagram-e17881bc.png",
+              "alt": "图C",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": false
+          }
+        ],
+        "hints": [
+          "先找到图里和问题有关的部分。",
+          "听清数量，再听对象在上面还是下面。"
+        ],
+        "success": "听清数量，再听对象在上面还是下面。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+        "abilityTags": [
+          "英语中的数量、空间与比较表达"
+        ],
+        "protocol": {
+          "kind": "memory",
+          "observeMs": 10000,
+          "retainMs": 500,
+          "preview": [],
+          "audioText": "There is one circle above the red square.",
+          "audioLocale": "en-US"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S105",
+            "locator": "slide10-11"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide18"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide24-25"
+          }
+        ],
+        "kind": "singleChoice",
+        "answerId": "o0",
+        "difficulty": {
+          "rules": 2,
+          "steps": 2,
+          "reading": 0,
+          "motor": 1,
+          "representation": "pictures",
+          "basis": "听数量与above关系，排除数量错或位置错",
+          "memory": 2,
+          "calibration": "design-estimate",
+          "workload": {
+            "candidates": 3
+          },
+          "languageLocale": "en-US"
+        }
+      },
+      {
+        "id": "explore-bilingual-concepts-5",
+        "schemaVersion": 1,
+        "revision": 2,
+        "primaryFamilyId": "E07",
+        "level": "L3",
+        "stage": 2,
+        "difficultyNote": "关系短句",
+        "prerequisites": "听懂above和red square且理解上下",
+        "prompt": "听英语，找出对象和位置都对应的图。",
+        "instruction": "选出符合条件的一张图卡。",
+        "clues": [],
+        "tokens": [
+          {
+            "id": "o0",
+            "label": "图A",
+            "image": {
+              "src": "/images/items/exploration/diagram-e17881bc.png",
+              "alt": "图A",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": false
+          },
+          {
+            "id": "o2",
+            "label": "图B",
+            "image": {
+              "src": "/images/items/exploration/diagram-3e02f819.png",
+              "alt": "图B",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": false
+          },
+          {
+            "id": "o1",
+            "label": "图C",
+            "image": {
+              "src": "/images/items/exploration/diagram-50790d1.png",
+              "alt": "图C",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": false
+          }
+        ],
+        "hints": [
+          "先找到图里和问题有关的部分。",
+          "听清数量，再听对象在上面还是下面。"
+        ],
+        "success": "听清数量，再听对象在上面还是下面。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+        "abilityTags": [
+          "英语中的数量、空间与比较表达"
+        ],
+        "protocol": {
+          "kind": "memory",
+          "observeMs": 10000,
+          "retainMs": 500,
+          "preview": [],
+          "audioText": "There are two circles above the red square.",
+          "audioLocale": "en-US"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S105",
+            "locator": "slide10-11"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide18"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide24-25"
+          }
+        ],
+        "kind": "singleChoice",
+        "answerId": "o0",
+        "difficulty": {
+          "rules": 2,
+          "steps": 2,
+          "reading": 0,
+          "motor": 1,
+          "representation": "pictures",
+          "basis": "听数量与above关系，排除数量错或位置错",
+          "memory": 2,
+          "calibration": "design-estimate",
+          "workload": {
+            "candidates": 3
+          },
+          "languageLocale": "en-US"
+        }
+      },
+      {
+        "id": "explore-bilingual-concepts-6",
+        "schemaVersion": 1,
+        "revision": 2,
+        "primaryFamilyId": "E07",
+        "level": "L3",
+        "stage": 2,
+        "difficultyNote": "关系短句",
+        "prerequisites": "听懂above和red square且理解上下",
+        "prompt": "听英语，找出对象和位置都对应的图。",
+        "instruction": "选出符合条件的一张图卡。",
+        "clues": [],
+        "tokens": [
+          {
+            "id": "o0",
+            "label": "图A",
+            "image": {
+              "src": "/images/items/exploration/diagram-3e02f819.png",
+              "alt": "图A",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": false
+          },
+          {
+            "id": "o2",
+            "label": "图B",
+            "image": {
+              "src": "/images/items/exploration/diagram-df41190b.png",
+              "alt": "图B",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": false
+          },
+          {
+            "id": "o1",
+            "label": "图C",
+            "image": {
+              "src": "/images/items/exploration/diagram-4c0ccb19.png",
+              "alt": "图C",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": false
+          }
+        ],
+        "hints": [
+          "先找到图里和问题有关的部分。",
+          "听清数量，再听对象在上面还是下面。"
+        ],
+        "success": "听清数量，再听对象在上面还是下面。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+        "abilityTags": [
+          "英语中的数量、空间与比较表达"
+        ],
+        "protocol": {
+          "kind": "memory",
+          "observeMs": 10000,
+          "retainMs": 500,
+          "preview": [],
+          "audioText": "There are three circles above the red square.",
+          "audioLocale": "en-US"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S105",
+            "locator": "slide10-11"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide18"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide24-25"
+          }
+        ],
+        "kind": "singleChoice",
+        "answerId": "o0",
+        "difficulty": {
+          "rules": 2,
+          "steps": 2,
+          "reading": 0,
+          "motor": 1,
+          "representation": "pictures",
+          "basis": "听数量与above关系，排除数量错或位置错",
+          "memory": 2,
+          "calibration": "design-estimate",
+          "workload": {
+            "candidates": 3
+          },
+          "languageLocale": "en-US"
+        }
+      },
+      {
+        "id": "explore-bilingual-concepts-7",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "E07",
+        "level": "L4",
+        "stage": 3,
+        "difficultyNote": "多信息理解",
+        "prerequisites": "听懂longer than及红蓝黄，理解传递长短",
+        "prompt": "听英语比较，选出符合所有关系的图。",
+        "instruction": "选出符合条件的一张图卡。",
+        "clues": [],
+        "tokens": [
+          {
+            "id": "o2",
+            "label": "图A",
+            "image": {
+              "src": "/images/items/exploration/diagram-47a6c6ea.png",
+              "alt": "图A",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": false
+          },
+          {
+            "id": "o1",
+            "label": "图B",
+            "image": {
+              "src": "/images/items/exploration/diagram-453fcd0c.png",
+              "alt": "图B",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": false
+          },
+          {
+            "id": "o0",
+            "label": "图C",
+            "image": {
+              "src": "/images/items/exploration/diagram-93bee36e.png",
+              "alt": "图C",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": false
+          }
+        ],
+        "hints": [
+          "先找到图里和问题有关的部分。",
+          "要让红条比蓝条长，蓝条又比黄条长，两条比较都成立。"
+        ],
+        "success": "要让红条比蓝条长，蓝条又比黄条长，两条比较都成立。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+        "abilityTags": [
+          "英语中的数量、空间与比较表达"
+        ],
+        "protocol": {
+          "kind": "memory",
+          "observeMs": 10000,
+          "retainMs": 500,
+          "preview": [],
+          "audioText": "The red bar is longer than the blue bar. The blue bar is longer than the yellow bar.",
+          "audioLocale": "en-US"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S105",
+            "locator": "slide10-11"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide18"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide24-25"
+          }
+        ],
+        "kind": "singleChoice",
+        "answerId": "o0",
+        "difficulty": {
+          "rules": 2,
+          "steps": 2,
+          "reading": 0,
+          "motor": 1,
+          "representation": "pictures",
+          "basis": "听红长于蓝、蓝长于黄两比较，图上同时核对；语言与数理负荷分开记录",
+          "memory": 2,
+          "calibration": "design-estimate",
+          "workload": {
+            "candidates": 3
+          },
+          "languageLocale": "en-US"
+        }
+      },
+      {
+        "id": "explore-bilingual-concepts-8",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "E07",
+        "level": "L4",
+        "stage": 3,
+        "difficultyNote": "多信息理解",
+        "prerequisites": "听懂longer than及红蓝黄，理解传递长短",
+        "prompt": "听英语比较，选出符合所有关系的图。",
+        "instruction": "选出符合条件的一张图卡。",
+        "clues": [],
+        "tokens": [
+          {
+            "id": "o1",
+            "label": "图A",
+            "image": {
+              "src": "/images/items/exploration/diagram-f868c2f7.png",
+              "alt": "图A",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": false
+          },
+          {
+            "id": "o0",
+            "label": "图B",
+            "image": {
+              "src": "/images/items/exploration/diagram-458b8b17.png",
+              "alt": "图B",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": false
+          },
+          {
+            "id": "o2",
+            "label": "图C",
+            "image": {
+              "src": "/images/items/exploration/diagram-f64f3deb.png",
+              "alt": "图C",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": false
+          }
+        ],
+        "hints": [
+          "先找到图里和问题有关的部分。",
+          "要让红条比蓝条长，蓝条又比黄条长，两条比较都成立。"
+        ],
+        "success": "要让红条比蓝条长，蓝条又比黄条长，两条比较都成立。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+        "abilityTags": [
+          "英语中的数量、空间与比较表达"
+        ],
+        "protocol": {
+          "kind": "memory",
+          "observeMs": 10000,
+          "retainMs": 500,
+          "preview": [],
+          "audioText": "The red bar is longer than the blue bar. The blue bar is longer than the yellow bar.",
+          "audioLocale": "en-US"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S105",
+            "locator": "slide10-11"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide18"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide24-25"
+          }
+        ],
+        "kind": "singleChoice",
+        "answerId": "o0",
+        "difficulty": {
+          "rules": 2,
+          "steps": 2,
+          "reading": 0,
+          "motor": 1,
+          "representation": "pictures",
+          "basis": "听红长于蓝、蓝长于黄两比较，图上同时核对；语言与数理负荷分开记录",
+          "memory": 2,
+          "calibration": "design-estimate",
+          "workload": {
+            "candidates": 3
+          },
+          "languageLocale": "en-US"
+        }
+      },
+      {
+        "id": "explore-bilingual-concepts-9",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "E07",
+        "level": "L4",
+        "stage": 3,
+        "difficultyNote": "多信息理解",
+        "prerequisites": "听懂longer than及红蓝黄，理解传递长短",
+        "prompt": "听英语比较，选出符合所有关系的图。",
+        "instruction": "选出符合条件的一张图卡。",
+        "clues": [],
+        "tokens": [
+          {
+            "id": "o1",
+            "label": "图A",
+            "image": {
+              "src": "/images/items/exploration/diagram-47408b09.png",
+              "alt": "图A",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": false
+          },
+          {
+            "id": "o2",
+            "label": "图B",
+            "image": {
+              "src": "/images/items/exploration/diagram-8d2e1585.png",
+              "alt": "图B",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": false
+          },
+          {
+            "id": "o0",
+            "label": "图C",
+            "image": {
+              "src": "/images/items/exploration/diagram-d038a479.png",
+              "alt": "图C",
+              "width": 320,
+              "height": 320
+            },
+            "textOnly": false
+          }
+        ],
+        "hints": [
+          "先找到图里和问题有关的部分。",
+          "要让红条比蓝条长，蓝条又比黄条长，两条比较都成立。"
+        ],
+        "success": "要让红条比蓝条长，蓝条又比黄条长，两条比较都成立。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+        "abilityTags": [
+          "英语中的数量、空间与比较表达"
+        ],
+        "protocol": {
+          "kind": "memory",
+          "observeMs": 10000,
+          "retainMs": 500,
+          "preview": [],
+          "audioText": "The red bar is longer than the blue bar. The blue bar is longer than the yellow bar.",
+          "audioLocale": "en-US"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S105",
+            "locator": "slide10-11"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide18"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide24-25"
+          }
+        ],
+        "kind": "singleChoice",
+        "answerId": "o0",
+        "difficulty": {
+          "rules": 2,
+          "steps": 2,
+          "reading": 0,
+          "motor": 1,
+          "representation": "pictures",
+          "basis": "听红长于蓝、蓝长于黄两比较，图上同时核对；语言与数理负荷分开记录",
+          "memory": 2,
+          "calibration": "design-estimate",
+          "workload": {
+            "candidates": 3
+          },
+          "languageLocale": "en-US"
+        }
+      }
+    ],
+    "interactionLabel": "探索练习"
+  },
+  {
+    "id": "explore-conversation-self-expression",
+    "kind": "activitySet",
+    "world": "language",
+    "title": "把自己的想法说出来",
+    "subtitle": "交流、听问与自我表达",
+    "goal": "听懂问题 → 完整回应 → 追问与补充说明",
+    "parentPrompt": "先让孩子操作和解释，再按需要给一点提示。",
+    "abilityTags": [
+      "交流、听问与自我表达"
+    ],
+    "level": "L3",
+    "rounds": [
+      {
+        "id": "explore-conversation-self-expression-1",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "E08",
+        "level": "L2",
+        "stage": 1,
+        "difficultyNote": "听懂问题",
+        "prerequisites": "能对熟悉玩具作选择并口述",
+        "prompt": "说明一个选择",
+        "instruction": "和家长一起操作、说一说，再记录这次的发现。",
+        "clues": [],
+        "tokens": [],
+        "hints": [
+          "从两件玩具里选一件。",
+          "说清楚选的是什么、想怎样玩。"
+        ],
+        "success": "这次亲子活动已经记录。下次可以换个条件再试试。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "回应的问题和话题相关；能说出具体原因或细节；能听完追问再补充",
+        "abilityTags": [
+          "交流、听问与自我表达"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S003",
+            "locator": "1-3"
+          }
+        ],
+        "kind": "parentObservation",
+        "materials": [
+          "两件孩子熟悉的玩具"
+        ],
+        "steps": [
+          "从两件玩具里选一件。",
+          "说清楚选的是什么、想怎样玩。",
+          "家长追问一个原因，孩子补充说明。"
+        ],
+        "observations": [
+          {
+            "id": "observe-0",
+            "text": "回应的问题和话题相关"
+          },
+          {
+            "id": "observe-1",
+            "text": "能说出具体原因或细节"
+          },
+          {
+            "id": "observe-2",
+            "text": "能听完追问再补充"
+          }
+        ],
+        "presentation": {
+          "materialCards": [
+            {
+              "label": "两件孩子熟悉的玩具",
+              "image": {
+                "src": "/images/items/toy-car.png",
+                "alt": "玩具车"
+              }
+            }
+          ]
+        },
+        "difficulty": {
+          "rules": 1,
+          "steps": 2,
+          "reading": 0,
+          "motor": 0,
+          "representation": "physical",
+          "basis": "第1项说明选择和玩法，回答一个为什么；按活动索引",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "observationItems": 3
+          }
+        }
+      },
+      {
+        "id": "explore-conversation-self-expression-2",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "E08",
+        "level": "L2",
+        "stage": 1,
+        "difficultyNote": "听懂问题",
+        "prerequisites": "能回忆熟悉活动与具体经历",
+        "prompt": "回答追问",
+        "instruction": "和家长一起操作、说一说，再记录这次的发现。",
+        "clues": [],
+        "tokens": [],
+        "hints": [
+          "描述一次想再去的活动，不必说姓名或住址。",
+          "家长问“那里有什么吸引你”。"
+        ],
+        "success": "这次亲子活动已经记录。下次可以换个条件再试试。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "回应的问题和话题相关；能说出具体原因或细节；能听完追问再补充",
+        "abilityTags": [
+          "交流、听问与自我表达"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S003",
+            "locator": "1-3"
+          }
+        ],
+        "kind": "parentObservation",
+        "materials": [
+          "两件孩子熟悉的玩具"
+        ],
+        "steps": [
+          "描述一次想再去的活动，不必说姓名或住址。",
+          "家长问“那里有什么吸引你”。",
+          "孩子用具体经历回答，再补充一个细节。"
+        ],
+        "observations": [
+          {
+            "id": "observe-0",
+            "text": "回应的问题和话题相关"
+          },
+          {
+            "id": "observe-1",
+            "text": "能说出具体原因或细节"
+          },
+          {
+            "id": "observe-2",
+            "text": "能听完追问再补充"
+          }
+        ],
+        "presentation": {
+          "materialCards": [
+            {
+              "label": "两件孩子熟悉的玩具",
+              "image": {
+                "src": "/images/items/toy-car.png",
+                "alt": "玩具车"
+              }
+            }
+          ]
+        },
+        "difficulty": {
+          "rules": 1,
+          "steps": 2,
+          "reading": 0,
+          "motor": 0,
+          "representation": "physical",
+          "basis": "第2项回应活动追问并补具体细节；同一话题不新增规则",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "observationItems": 3
+          }
+        }
+      },
+      {
+        "id": "explore-conversation-self-expression-3",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "E08",
+        "level": "L2",
+        "stage": 1,
+        "difficultyNote": "听懂问题",
+        "prerequisites": "能等对方说完且围绕内容提问",
+        "prompt": "轮流问和听",
+        "instruction": "和家长一起操作、说一说，再记录这次的发现。",
+        "clues": [],
+        "tokens": [],
+        "hints": [
+          "家长先描述自己喜欢的一种玩法。",
+          "孩子听完后问一个和内容有关的问题。"
+        ],
+        "success": "这次亲子活动已经记录。下次可以换个条件再试试。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "回应的问题和话题相关；能说出具体原因或细节；能听完追问再补充",
+        "abilityTags": [
+          "交流、听问与自我表达"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S003",
+            "locator": "1-3"
+          }
+        ],
+        "kind": "parentObservation",
+        "materials": [
+          "两件孩子熟悉的玩具"
+        ],
+        "steps": [
+          "家长先描述自己喜欢的一种玩法。",
+          "孩子听完后问一个和内容有关的问题。",
+          "交换角色，练习等对方说完再回答。"
+        ],
+        "observations": [
+          {
+            "id": "observe-0",
+            "text": "回应的问题和话题相关"
+          },
+          {
+            "id": "observe-1",
+            "text": "能说出具体原因或细节"
+          },
+          {
+            "id": "observe-2",
+            "text": "能听完追问再补充"
+          }
+        ],
+        "presentation": {
+          "materialCards": [
+            {
+              "label": "两件孩子熟悉的玩具",
+              "image": {
+                "src": "/images/items/toy-car.png",
+                "alt": "玩具车"
+              }
+            }
+          ]
+        },
+        "difficulty": {
+          "rules": 2,
+          "steps": 2,
+          "reading": 0,
+          "motor": 0,
+          "representation": "physical",
+          "basis": "第3项轮流听问和换角色，两项社交要求；无儿童屏幕动作",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "observationItems": 3
+          }
+        }
+      }
+    ],
+    "interactionLabel": "亲子活动"
+  }
+]

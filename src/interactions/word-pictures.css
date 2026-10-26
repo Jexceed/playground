@@ -1,0 +1,11 @@
+/* Larger concrete pictures for word meaning; keep other matching activities unchanged. */
+.activity-round[data-family="E01"] .matching-board { max-width:720px; gap:clamp(48px,8vw,96px); }
+.activity-round[data-family="E01"] .matching-workspace .matching-card { height:156px; gap:12px; padding:10px 14px; }
+.activity-round[data-family="E01"] .matching-workspace .matching-card .activity-token-image { width:132px; height:132px; flex-shrink:0; }
+.activity-round[data-family="E01"] .matching-workspace .matching-card .token-label { font-size:21px; line-height:1.2; font-weight:650; }
+@media(max-width:600px) {
+  .activity-round[data-family="E01"] .matching-board { gap:42px; }
+  .activity-round[data-family="E01"] .matching-workspace .matching-card { height:160px; flex-direction:column; gap:4px; padding:8px; }
+  .activity-round[data-family="E01"] .matching-workspace .matching-card .activity-token-image { width:min(108px,100%); height:108px; }
+  .activity-round[data-family="E01"] .matching-workspace .matching-card .token-label { font-size:19px; }
+}

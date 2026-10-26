@@ -6,6 +6,7 @@ import { connectPair, disconnectPair, type MatchingResponse } from "./connection
 import { ActivityTokenArt } from "./ActivityTokenArt";
 import { ImageViewer } from './ImageViewer';
 import { ACTIVITY_COPY } from '../domain/activity';
+import './word-pictures.css';
 
 type Point = { x: number; y: number };
 type Drag = { id: string; pointerId: number; start: Point; moved: boolean };
@@ -104,7 +105,7 @@ export function MatchingInteraction({ activity, response, disabled, onChange }: 
 
   return <section className="matching-workspace" aria-label="连线配对" data-picture-matching={pictureIds.length > 0 || undefined} onKeyDown={e => { if (e.key === "Escape" && !(e.target as HTMLElement).closest('dialog')) { e.preventDefault(); cancel(); } }}>
     <div className="connection-toolbar">
-      <p role="status">{disabled ? '沿着连线，说说每一对的关系' : selected ? `再选${isLeft(selected) ? '右' : '左'}边一张，和“${selectedLabel}”连起来` : '拖到另一张图卡，或两边各点一下'}</p>
+      <p role="status">{disabled ? '沿着连线，说说每一对的关系' : selected ? `再选${isLeft(selected) ? '右' : '左'}边一张，和“${selectedLabel}”连起来` : ''}</p>
       <span className="connection-count">已连 {response.pairs.length} / {activity.leftIds.length} 对</span>
     </div>
     <div className={`matching-board${selected ? ' has-selection' : ''}`} ref={board} onPointerMove={move} onPointerUp={finish} onPointerCancel={cancel} onLostPointerCapture={() => { if (pointer.current) cancel(); }}>
@@ -144,7 +145,6 @@ export function MatchingInteraction({ activity, response, disabled, onChange }: 
         })}
       </div>)}
     </div>
-    {!disabled && <p className="connection-footnote">想换一个朋友，直接重新连；点卡片上的 × 可以断开。</p>}
     <ImageViewer images={pictureIds.map(id => ({ ...token(id).image, alt:token(id).label }))} index={pictureIndex >= 0 ? pictureIndex : null}
       onIndexChange={index => setPictureId(pictureIds[index])} onClose={() => setPictureId(null)} />
   </section>;

@@ -1,0 +1,705 @@
+{
+  "gameId": "explore-bridge-networks",
+  "round": 1,
+  "font": {
+    "pageWidth": 375,
+    "small": [],
+    "texts": [
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "STRONG",
+        "text": "启蒙",
+        "width": 36
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "STRONG",
+        "text": "探索",
+        "width": 36
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 20.6953125,
+        "px": 18,
+        "tag": "STRONG",
+        "text": "数字岛",
+        "width": 54
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "EM",
+        "text": "144 题",
+        "width": 52.984375
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 20.6953125,
+        "px": 18,
+        "tag": "STRONG",
+        "text": "逻辑屋",
+        "width": 54
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 56,
+        "px": 18,
+        "tag": "EM",
+        "text": "126 题",
+        "width": 60
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 41.390625,
+        "px": 18,
+        "tag": "STRONG",
+        "text": "图形工坊",
+        "width": 60
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "EM",
+        "text": "186 题",
+        "width": 52.984375
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 41.390625,
+        "px": 18,
+        "tag": "STRONG",
+        "text": "记忆小屋",
+        "width": 60
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "EM",
+        "text": "81 题",
+        "width": 42.1875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 41.390625,
+        "px": 18,
+        "tag": "STRONG",
+        "text": "语言花园",
+        "width": 60
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "EM",
+        "text": "54 题",
+        "width": 45.6015625
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 41.390625,
+        "px": 18,
+        "tag": "STRONG",
+        "text": "生活实验室",
+        "width": 60
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "EM",
+        "text": "30 题",
+        "width": 45.6015625
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "STRONG",
+        "text": "探索 · 逻辑屋",
+        "width": 110.9921875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "15 个",
+        "width": 42.1875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "选择关卡",
+        "width": 327
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "STRONG",
+        "text": "探索",
+        "width": 36
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "组合线索，多步思考",
+        "width": 162
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SMALL",
+        "text": "75 组 · 621 题",
+        "width": 118.453125
+      },
+      {
+        "class": "eyebrow",
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "P",
+        "text": "先试一试 · 第 1 / 9 题",
+        "width": 200.328125
+      },
+      {
+        "class": null,
+        "cssPx": 21,
+        "height": 28.34375,
+        "px": 21,
+        "tag": "H1",
+        "text": "小岛连桥",
+        "width": 200.328125
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "听题",
+        "width": 36
+      },
+      {
+        "class": null,
+        "cssPx": 20,
+        "height": 28,
+        "px": 20,
+        "tag": "H2",
+        "text": "把所有小岛连起来。",
+        "width": 321
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 57.59375,
+        "px": 18,
+        "tag": "P",
+        "text": "点加号搭桥，把每个岛的小格填满。两个岛之间最多搭两座桥。",
+        "width": 321
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "STRONG",
+        "text": "每个小格是一座桥。",
+        "width": 177
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "还要搭",
+        "width": 82
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "搭好了",
+        "width": 82
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 55.796875,
+        "px": 18,
+        "tag": "FIGCAPTION",
+        "text": "一座桥，两边各算一座。",
+        "width": 126
+      },
+      {
+        "class": null,
+        "cssPx": 20,
+        "height": 20,
+        "px": 20,
+        "tag": "SPAN",
+        "text": "+",
+        "width": 12.1015625
+      },
+      {
+        "class": null,
+        "cssPx": 20,
+        "height": 20,
+        "px": 20,
+        "tag": "SPAN",
+        "text": "+",
+        "width": 12.1015625
+      },
+      {
+        "class": null,
+        "cssPx": 22,
+        "height": 22,
+        "px": 22,
+        "tag": "SPAN",
+        "text": "+",
+        "width": 13.3125
+      },
+      {
+        "class": null,
+        "cssPx": 22,
+        "height": 22,
+        "px": 22,
+        "tag": "SPAN",
+        "text": "+",
+        "width": 13.3125
+      },
+      {
+        "class": "graph-island-name",
+        "cssPx": 18,
+        "height": 22.8984375,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "A岛",
+        "width": 40.2265625
+      },
+      {
+        "class": "island-goal-total",
+        "cssPx": 18,
+        "height": 24.8984375,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "要  座桥",
+        "width": 83.40625
+      },
+      {
+        "class": null,
+        "cssPx": 19,
+        "height": 20.8984375,
+        "px": 19,
+        "tag": "B",
+        "text": "3",
+        "width": 11.40625
+      },
+      {
+        "class": "island-goal-status",
+        "cssPx": 18,
+        "height": 24.6953125,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "还差2座",
+        "width": 78.8046875
+      },
+      {
+        "class": "graph-island-name",
+        "cssPx": 18,
+        "height": 22.8984375,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "B岛",
+        "width": 40.421875
+      },
+      {
+        "class": "island-goal-total",
+        "cssPx": 18,
+        "height": 24.8984375,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "要  座桥",
+        "width": 83.40625
+      },
+      {
+        "class": null,
+        "cssPx": 19,
+        "height": 20.8984375,
+        "px": 19,
+        "tag": "B",
+        "text": "3",
+        "width": 11.40625
+      },
+      {
+        "class": "island-goal-status",
+        "cssPx": 18,
+        "height": 24.6953125,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "还差1座",
+        "width": 75.3828125
+      },
+      {
+        "class": "graph-island-name",
+        "cssPx": 18,
+        "height": 22.8984375,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "C岛",
+        "width": 41.1796875
+      },
+      {
+        "class": "island-goal-total",
+        "cssPx": 18,
+        "height": 24.8984375,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "要  座桥",
+        "width": 83.40625
+      },
+      {
+        "class": null,
+        "cssPx": 19,
+        "height": 20.8984375,
+        "px": 19,
+        "tag": "B",
+        "text": "2",
+        "width": 11.40625
+      },
+      {
+        "class": "island-goal-status",
+        "cssPx": 18,
+        "height": 24.6953125,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "还差1座",
+        "width": 75.3828125
+      },
+      {
+        "class": "graph-island-name",
+        "cssPx": 18,
+        "height": 22.8984375,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "D岛",
+        "width": 40.9609375
+      },
+      {
+        "class": "island-goal-total",
+        "cssPx": 18,
+        "height": 24.8984375,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "要  座桥",
+        "width": 83.40625
+      },
+      {
+        "class": null,
+        "cssPx": 19,
+        "height": 20.8984375,
+        "px": 19,
+        "tag": "B",
+        "text": "2",
+        "width": 11.40625
+      },
+      {
+        "class": "island-goal-status",
+        "cssPx": 18,
+        "height": 24.6953125,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "还差2座",
+        "width": 78.8046875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "每个岛都要刚好，还要能走遍所有岛。",
+        "width": 306
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 50,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "＋添一座 · ↶收回新搭的桥，现成桥会留下。",
+        "width": 321
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 41,
+        "px": 18,
+        "tag": "BUTTON",
+        "text": "清空",
+        "width": 56
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 41,
+        "px": 18,
+        "tag": "BUTTON",
+        "text": "提示",
+        "width": 77
+      },
+      {
+        "class": "activity-primary",
+        "cssPx": 18,
+        "height": 45,
+        "px": 18,
+        "tag": "BUTTON",
+        "text": "摆好了，看看",
+        "width": 136
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "这次尝试 0 次 · 提示 0 次",
+        "width": 210.5859375
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 33,
+        "px": 18,
+        "tag": "BUTTON",
+        "text": "先跳过",
+        "width": 62
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "STRONG",
+        "text": "题目导航",
+        "width": 72
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "0 / 9 已做",
+        "width": 84.6015625
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "1",
+        "width": 7.3828125
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "2",
+        "width": 10.8046875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "3",
+        "width": 10.8046875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "4",
+        "width": 10.8046875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "5",
+        "width": 10.8046875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "6",
+        "width": 10.8046875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "7",
+        "width": 9.9609375
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "8",
+        "width": 10.8046875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "9",
+        "width": 10.8046875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 51,
+        "px": 18,
+        "tag": "SUMMARY",
+        "text": "给家长 · 陪玩提示",
+        "width": 349
+      },
+      {
+        "class": "eyebrow",
+        "cssPx": 18,
+        "height": 26.09375,
+        "px": 18,
+        "tag": "P",
+        "text": "亲子提示卡",
+        "width": 317
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 52.1875,
+        "px": 18,
+        "tag": "P",
+        "text": "你先用了哪条线索？能换一种方法检查吗？",
+        "width": 317
+      },
+      {
+        "class": "activity-parent-note",
+        "cssPx": 18,
+        "height": 52.1875,
+        "px": 18,
+        "tag": "P",
+        "text": "先让孩子自己试，再请他说说线索和理由。提示、重看和尝试会留下记录。",
+        "width": 317
+      },
+      {
+        "class": "activity-parent-focus",
+        "cssPx": 18,
+        "height": 52.1875,
+        "px": 18,
+        "tag": "P",
+        "text": "这题练习：读现成桥计数。会读岛上数字和一条/两条桥",
+        "width": 317
+      },
+      {
+        "class": "activity-parent-focus",
+        "cssPx": 18,
+        "height": 52.1875,
+        "px": 18,
+        "tag": "P",
+        "text": "以上是陪玩起点建议，尚待真实亲子试玩校准，不对应固定年龄。",
+        "width": 317
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 51,
+        "px": 18,
+        "tag": "SUMMARY",
+        "text": "探索 · 成长记录",
+        "width": 349
+      },
+      {
+        "class": "eyebrow",
+        "cssPx": 18,
+        "height": 26.09375,
+        "px": 18,
+        "tag": "P",
+        "text": "探索成长记录",
+        "width": 108
+      },
+      {
+        "class": "section-progress-count",
+        "cssPx": 18,
+        "height": 26.09375,
+        "px": 18,
+        "tag": "P",
+        "text": "已完成 0 / 621 题",
+        "width": 317
+      },
+      {
+        "class": "muted",
+        "cssPx": 18,
+        "height": 52.1875,
+        "px": 18,
+        "tag": "P",
+        "text": "完成一个小任务后，这里会留下能力标签。",
+        "width": 317
+      }
+    ],
+    "width": 375
+  },
+  "clips": []
+}

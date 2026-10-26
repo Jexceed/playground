@@ -1,0 +1,954 @@
+{
+  "gameId": "explore-position-transform",
+  "round": 1,
+  "font": {
+    "pageWidth": 1280,
+    "small": [],
+    "texts": [
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "STRONG",
+        "text": "启蒙",
+        "width": 36
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "STRONG",
+        "text": "探索",
+        "width": 36
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 20.6953125,
+        "px": 18,
+        "tag": "STRONG",
+        "text": "数字岛",
+        "width": 54
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "EM",
+        "text": "144 题",
+        "width": 52.984375
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 20.6953125,
+        "px": 18,
+        "tag": "STRONG",
+        "text": "逻辑屋",
+        "width": 54
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "EM",
+        "text": "126 题",
+        "width": 52.984375
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 41.390625,
+        "px": 18,
+        "tag": "STRONG",
+        "text": "图形工坊",
+        "width": 69
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 31,
+        "px": 18,
+        "tag": "EM",
+        "text": "186 题",
+        "width": 66.984375
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 41.390625,
+        "px": 18,
+        "tag": "STRONG",
+        "text": "记忆小屋",
+        "width": 69
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "EM",
+        "text": "81 题",
+        "width": 42.1875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 41.390625,
+        "px": 18,
+        "tag": "STRONG",
+        "text": "语言花园",
+        "width": 69
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "EM",
+        "text": "54 题",
+        "width": 45.6015625
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 41.390625,
+        "px": 18,
+        "tag": "STRONG",
+        "text": "生活实验室",
+        "width": 69
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "EM",
+        "text": "30 题",
+        "width": 45.6015625
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "STRONG",
+        "text": "探索 · 图形工坊",
+        "width": 128.9921875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "21 个",
+        "width": 42.1875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "H3",
+        "text": "图形与规律",
+        "width": 206
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25.1953125,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "图形推理盘",
+        "width": 200
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 24.6953125,
+        "px": 18,
+        "tag": "SMALL",
+        "text": "动手 · 6 题",
+        "width": 103.796875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25.1953125,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "图案观察员",
+        "width": 200
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 24.6953125,
+        "px": 18,
+        "tag": "SMALL",
+        "text": "动手 · 9 题",
+        "width": 103.796875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25.1953125,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "遮住了什么",
+        "width": 200
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 24.6953125,
+        "px": 18,
+        "tag": "SMALL",
+        "text": "动手 · 9 题",
+        "width": 103.796875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25.1953125,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "行列规律研究",
+        "width": 200
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 24.6953125,
+        "px": 18,
+        "tag": "SMALL",
+        "text": "动手 · 9 题",
+        "width": 103.796875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25.1953125,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "标记走格子",
+        "width": 200
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 24.6953125,
+        "px": 18,
+        "tag": "SMALL",
+        "text": "动手 · 9 题",
+        "width": 103.796875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25.1953125,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "转一转照一照",
+        "width": 200
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 24.6953125,
+        "px": 18,
+        "tag": "SMALL",
+        "text": "动手 · 9 题",
+        "width": 103.796875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25.1953125,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "图形合并机",
+        "width": 200
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 24.6953125,
+        "px": 18,
+        "tag": "SMALL",
+        "text": "动手 · 9 题",
+        "width": 103.796875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25.1953125,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "图形金字塔",
+        "width": 200
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 24.6953125,
+        "px": 18,
+        "tag": "SMALL",
+        "text": "动手 · 9 题",
+        "width": 103.796875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25.1953125,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "颜色密码运算",
+        "width": 200
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 24.6953125,
+        "px": 18,
+        "tag": "SMALL",
+        "text": "动手 · 9 题",
+        "width": 103.796875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "H3",
+        "text": "观察与空间",
+        "width": 206
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25.1953125,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "点线面数清楚",
+        "width": 200
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 24.6953125,
+        "px": 18,
+        "tag": "SMALL",
+        "text": "动手 · 9 题",
+        "width": 103.796875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25.1953125,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "哪里可以对折",
+        "width": 200
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 24.6953125,
+        "px": 18,
+        "tag": "SMALL",
+        "text": "动手 · 9 题",
+        "width": 103.796875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25.1953125,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "相碰还是相交",
+        "width": 200
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 24.6953125,
+        "px": 18,
+        "tag": "SMALL",
+        "text": "动手 · 9 题",
+        "width": 103.796875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25.1953125,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "小黑点的任务",
+        "width": 200
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 24.6953125,
+        "px": 18,
+        "tag": "SMALL",
+        "text": "动手 · 9 题",
+        "width": 103.796875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25.1953125,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "多位图形密码",
+        "width": 200
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 24.6953125,
+        "px": 18,
+        "tag": "SMALL",
+        "text": "动手 · 9 题",
+        "width": 103.796875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25.1953125,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "拼搭小工坊",
+        "width": 200
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 24.6953125,
+        "px": 18,
+        "tag": "SMALL",
+        "text": "动手 · 9 题",
+        "width": 103.796875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25.1953125,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "折开会怎样",
+        "width": 200
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 24.6953125,
+        "px": 18,
+        "tag": "SMALL",
+        "text": "动手 · 9 题",
+        "width": 103.796875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "H3",
+        "text": "立体与方向",
+        "width": 206
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25.1953125,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "积木的另一面",
+        "width": 200
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 24.6953125,
+        "px": 18,
+        "tag": "SMALL",
+        "text": "动手 · 9 题",
+        "width": 103.796875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25.1953125,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "换个方向看左右",
+        "width": 200
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 24.6953125,
+        "px": 18,
+        "tag": "SMALL",
+        "text": "动手 · 9 题",
+        "width": 103.796875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25.1953125,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "纸盒六个面",
+        "width": 200
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 24.6953125,
+        "px": 18,
+        "tag": "SMALL",
+        "text": "动手 · 9 题",
+        "width": 103.796875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25.1953125,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "方格重建师",
+        "width": 200
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 24.6953125,
+        "px": 18,
+        "tag": "SMALL",
+        "text": "动手 · 9 题",
+        "width": 103.796875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25.1953125,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "谁盖住了谁",
+        "width": 200
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 24.6953125,
+        "px": 18,
+        "tag": "SMALL",
+        "text": "动手 · 9 题",
+        "width": 103.796875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "STRONG",
+        "text": "探索",
+        "width": 36
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "组合线索，多步思考",
+        "width": 162
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SMALL",
+        "text": "75 组 · 621 题",
+        "width": 118.453125
+      },
+      {
+        "class": "eyebrow",
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "P",
+        "text": "先试一试 · 第 1 / 9 题",
+        "width": 200.328125
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 24.296875,
+        "px": 18,
+        "tag": "H1",
+        "text": "标记走格子",
+        "width": 200.328125
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "听题",
+        "width": 36
+      },
+      {
+        "class": null,
+        "cssPx": 20,
+        "height": 28,
+        "px": 20,
+        "tag": "H2",
+        "text": "标记按规则移动，最后在哪个位置？",
+        "width": 656
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 28.796875,
+        "px": 18,
+        "tag": "P",
+        "text": "选出符合条件的一张图卡。",
+        "width": 656
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "先看图，找线索",
+        "width": 126
+      },
+      {
+        "class": "image-enlarge",
+        "cssPx": 18,
+        "height": 33,
+        "px": 18,
+        "tag": "BUTTON",
+        "text": "放大看",
+        "width": 86
+      },
+      {
+        "class": "",
+        "cssPx": 18,
+        "height": 37,
+        "px": 18,
+        "tag": "LI",
+        "text": "红标记每次向右一格，走到边上就回最左。",
+        "width": 387
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 20,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "1",
+        "width": 20
+      },
+      {
+        "class": "",
+        "cssPx": 18,
+        "height": 37,
+        "px": 18,
+        "tag": "LI",
+        "text": "走2步。",
+        "width": 109.8046875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 20,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "2",
+        "width": 20
+      },
+      {
+        "class": "token-label",
+        "cssPx": 18,
+        "height": 27,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "图A",
+        "width": 30.2265625
+      },
+      {
+        "class": "token-label",
+        "cssPx": 18,
+        "height": 27,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "图B",
+        "width": 30.421875
+      },
+      {
+        "class": "token-label",
+        "cssPx": 18,
+        "height": 27,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "图C",
+        "width": 31.1796875
+      },
+      {
+        "class": "token-label",
+        "cssPx": 18,
+        "height": 27,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "图D",
+        "width": 30.9609375
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 41,
+        "px": 18,
+        "tag": "BUTTON",
+        "text": "清空",
+        "width": 56
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 41,
+        "px": 18,
+        "tag": "BUTTON",
+        "text": "提示",
+        "width": 77
+      },
+      {
+        "class": "activity-primary",
+        "cssPx": 18,
+        "height": 41,
+        "px": 18,
+        "tag": "BUTTON",
+        "text": "选好了，看看",
+        "width": 140
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "这次尝试 0 次 · 提示 0 次",
+        "width": 210.5859375
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 33,
+        "px": 18,
+        "tag": "BUTTON",
+        "text": "先跳过",
+        "width": 62
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "STRONG",
+        "text": "题目导航",
+        "width": 72
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "0 / 9 已做",
+        "width": 84.6015625
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "1",
+        "width": 7.3828125
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "2",
+        "width": 10.8046875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "3",
+        "width": 10.8046875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "4",
+        "width": 10.8046875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "5",
+        "width": 10.8046875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "6",
+        "width": 10.8046875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "7",
+        "width": 9.9609375
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "8",
+        "width": 10.8046875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "9",
+        "width": 10.8046875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 51,
+        "px": 18,
+        "tag": "SUMMARY",
+        "text": "给家长 · 陪玩提示",
+        "width": 258
+      },
+      {
+        "class": "eyebrow",
+        "cssPx": 18,
+        "height": 26.09375,
+        "px": 18,
+        "tag": "P",
+        "text": "亲子提示卡",
+        "width": 226
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 52.1875,
+        "px": 18,
+        "tag": "P",
+        "text": "你先用了哪条线索？能换一种方法检查吗？",
+        "width": 226
+      },
+      {
+        "class": "activity-parent-note",
+        "cssPx": 18,
+        "height": 78.28125,
+        "px": 18,
+        "tag": "P",
+        "text": "先让孩子自己试，再请他说说线索和理由。提示、重看和尝试会留下记录。",
+        "width": 226
+      },
+      {
+        "class": "activity-parent-focus",
+        "cssPx": 18,
+        "height": 78.28125,
+        "px": 18,
+        "tag": "P",
+        "text": "这题练习：一个标记。能从起格移动并理解越边回到另一侧",
+        "width": 226
+      },
+      {
+        "class": "activity-parent-focus",
+        "cssPx": 18,
+        "height": 78.28125,
+        "px": 18,
+        "tag": "P",
+        "text": "以上是陪玩起点建议，尚待真实亲子试玩校准，不对应固定年龄。",
+        "width": 226
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 51,
+        "px": 18,
+        "tag": "SUMMARY",
+        "text": "探索 · 成长记录",
+        "width": 258
+      },
+      {
+        "class": "section-progress-count",
+        "cssPx": 18,
+        "height": 26.09375,
+        "px": 18,
+        "tag": "P",
+        "text": "已完成 0 / 621 题",
+        "width": 226
+      },
+      {
+        "class": "muted",
+        "cssPx": 18,
+        "height": 52.1875,
+        "px": 18,
+        "tag": "P",
+        "text": "完成一个小任务后，这里会留下能力标签。",
+        "width": 226
+      }
+    ],
+    "width": 1280
+  },
+  "stage": {
+    "height": 705.09375,
+    "width": 698,
+    "x": 286,
+    "y": 73
+  },
+  "dom": "- main:\n  - navigation \"主题地图\":\n    - img \"小小思考屋 亲子思维游戏\"\n    - group \"选择启蒙或探索\":\n      - button \"启蒙\":\n        - strong: 启蒙\n      - button \"探索\" [pressed]:\n        - strong: 探索\n    - button \"数字岛 144 题\":\n      - strong: 数字岛\n      - emphasis: 144 题\n    - button \"逻辑屋 126 题\":\n      - strong: 逻辑屋\n      - emphasis: 126 题\n    - button \"图形工坊 186 题\" [expanded]:\n      - strong: 图形工坊\n      - emphasis: 186 题\n    - button \"记忆小屋 81 题\":\n      - generic: 忆\n      - strong: 记忆小屋\n      - emphasis: 81 题\n    - button \"语言花园 54 题\":\n      - generic: 语\n      - strong: 语言花园\n      - emphasis: 54 题\n    - button \"生活实验室 30 题\":\n      - generic: 探\n      - strong: 生活实验室\n      - emphasis: 30 题\n    - region \"关卡列表\":\n      - strong: 探索 · 图形工坊\n      - generic: 21 个\n      - searchbox \"查找当前主题题组\"\n      - heading \"图形与规律\" [level=3]\n      - button \"图形推理盘 动手 · 6 题\":\n        - generic: 图形推理盘\n        - generic: 动手 · 6 题\n      - button \"图案观察员 动手 · 9 题\":\n        - generic: 图案观察员\n        - generic: 动手 · 9 题\n      - button \"遮住了什么 动手 · 9 题\":\n        - generic: 遮住了什么\n        - generic: 动手 · 9 题\n      - button \"行列规律研究 动手 · 9 题\":\n        - generic: 行列规律研究\n        - generic: 动手 · 9 题\n      - button \"标记走格子 动手 · 9 题\":\n        - generic: 标记走格子\n        - generic: 动手 · 9 题\n      - button \"转一转照一照 动手 · 9 题\":\n        - generic: 转一转照一照\n        - generic: 动手 · 9 题\n      - button \"图形合并机 动手 · 9 题\":\n        - generic: 图形合并机\n        - generic: 动手 · 9 题\n      - button \"图形金字塔 动手 · 9 题\":\n        - generic: 图形金字塔\n        - generic: 动手 · 9 题\n      - button \"颜色密码运算 动手 · 9 题\":\n        - generic: 颜色密码运算\n        - generic: 动手 · 9 题\n      - heading \"观察与空间\" [level=3]\n      - button \"点线面数清楚 动手 · 9 题\":\n        - generic: 点线面数清楚\n        - generic: 动手 · 9 题\n      - button \"哪里可以对折 动手 · 9 题\":\n        - generic: 哪里可以对折\n        - generic: 动手 · 9 题\n      - button \"相碰还是相交 动手 · 9 题\":\n        - generic: 相碰还是相交\n        - generic: 动手 · 9 题\n      - button \"小黑点的任务 动手 · 9 题\":\n        - generic: 小黑点的任务\n        - generic: 动手 · 9 题\n      - button \"多位图形密码 动手 · 9 题\":\n        - generic: 多位图形密码\n        - generic: 动手 · 9 题\n      - button \"拼搭小工坊 动手 · 9 题\":\n        - generic: 拼搭小工坊\n        - generic: 动手 · 9 题\n      - button \"折开会怎样 动手 · 9 题\":\n        - generic: 折开会怎样\n        - generic: 动手 · 9 题\n      - heading \"立体与方向\" [level=3]\n      - button \"积木的另一面 动手 · 9 题\":\n        - generic: 积木的另一面\n        - generic: 动手 · 9 题\n      - button \"换个方向看左右 动手 · 9 题\":\n        - generic: 换个方向看左右\n        - generic: 动手 · 9 题\n      - button \"纸盒六个面 动手 · 9 题\":\n        - generic: 纸盒六个面\n        - generic: 动手 · 9 题\n      - button \"方格重建师 动手 · 9 题\":\n        - generic: 方格重建师\n        - generic: 动手 · 9 题\n      - button \"谁盖住了谁 动手 · 9 题\":\n        - generic: 谁盖住了谁\n        - generic: 动手 · 9 题\n  - generic \"当前部分\":\n    - strong: 探索\n    - generic: 组合线索，多步思考\n    - generic: 75 组 · 621 题\n  - article \"标记走格子\":\n    - region \"标记走格子\":\n      - paragraph: 先试一试 · 第 1 / 9 题\n      - heading \"标记走格子\" [level=1]\n      - button \"听一听题目\":\n        - generic: 听题\n      - heading \"标记按规则移动，最后在哪个位置？\" [level=2]\n      - paragraph: 选出符合条件的一张图卡。\n      - figure:\n        - generic: 先看图，找线索\n        - button \"放大题目图片\":\n          - text: 放大看\n        - img \"标记按规则移动，最后在哪个位置？\"\n      - list:\n        - generic: \"1\"\n        - text: 红标记每次向右一格，走到边上就回最左。\n        - generic: \"2\"\n        - text: 走2步。\n      - generic \"选择一个答案\":\n        - button \"图A\":\n          - generic: 图A\n        - button \"图B\":\n          - generic: 图B\n        - button \"图C\":\n          - generic: 图C\n        - button \"图D\":\n          - generic: 图D\n      - button \"撤销上一步\" [disabled]:\n      - button \"清空\"\n      - button \"提示\":\n        - text: 提示\n      - button \"选好了，看看\"\n      - generic: 这次尝试 0 次 · 提示 0 次\n      - button \"先跳过\"\n  - complementary:\n    - region \"题目导航\":\n      - strong: 题目导航\n      - generic: 0 / 9 已做\n      - button \"跳到第 1 题\" [active]:\n        - generic: \"1\"\n      - button \"跳到第 2 题\":\n        - generic: \"2\"\n      - button \"跳到第 3 题\":\n        - generic: \"3\"\n      - button \"跳到第 4 题\":\n        - generic: \"4\"\n      - button \"跳到第 5 题\":\n        - generic: \"5\"\n      - button \"跳到第 6 题\":\n        - generic: \"6\"\n      - button \"跳到第 7 题\":\n        - generic: \"7\"\n      - button \"跳到第 8 题\":\n        - generic: \"8\"\n      - button \"跳到第 9 题\":\n        - generic: \"9\"\n    - generic \"给家长 · 陪玩提示\"\n    - generic \"探索 · 成长记录\""
+}

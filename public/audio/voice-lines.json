@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-23T06:46:39.997Z",
+  "generatedAt": "2026-10-26T09:00:52.154Z",
   "recommendedVoice": "warm adult female Mandarin, smiling, preschool teacher, 0.85 speed, crisp consonants",
-  "lineCount": 4224,
+  "lineCount": 4287,
   "lines": [
     {
       "id": "game-title-数一数",
@@ -3986,6 +3986,42 @@
       ]
     },
     {
+      "id": "system-飞走-1-只-看看树上还剩几只",
+      "kind": "system",
+      "text": "飞走 1 只，看看树上还剩几只。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-story-operations/math-story-operations-1",
+        "math-story-operations/math-story-operations-2",
+        "math-story-operations/math-story-operations-3",
+        "math-story-operations/math-story-operations-5"
+      ]
+    },
+    {
+      "id": "system-让-1-只小鸟飞走",
+      "kind": "system",
+      "text": "让 1 只小鸟飞走",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-story-operations/math-story-operations-1",
+        "math-story-operations/math-story-operations-2",
+        "math-story-operations/math-story-operations-3",
+        "math-story-operations/math-story-operations-5"
+      ]
+    },
+    {
+      "id": "system-原来有-2-只小鸟",
+      "kind": "system",
+      "text": "原来有 2 只小鸟。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-story-operations/math-story-operations-1"
+      ]
+    },
+    {
       "id": "prompt-树上有-3-只小鸟-飞走-1-只-还剩几只-飞走以后-数量会变少",
       "kind": "prompt",
       "text": "树上有 3 只小鸟，飞走 1 只，还剩几只？飞走以后，数量会变少。",
@@ -4001,6 +4037,16 @@
       "text": "3 只飞走 1 只，还剩 2 只。",
       "locale": "zh-CN",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "math-story-operations/math-story-operations-2"
+      ]
+    },
+    {
+      "id": "system-原来有-3-只小鸟",
+      "kind": "system",
+      "text": "原来有 3 只小鸟。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "math-story-operations/math-story-operations-2"
       ]
@@ -4026,6 +4072,17 @@
       ]
     },
     {
+      "id": "system-原来有-4-只小鸟",
+      "kind": "system",
+      "text": "原来有 4 只小鸟。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-story-operations/math-story-operations-3",
+        "math-story-operations/math-story-operations-4"
+      ]
+    },
+    {
       "id": "prompt-树上有-4-只小鸟-飞走-2-只-还剩几只-飞走以后-数量会变少",
       "kind": "prompt",
       "text": "树上有 4 只小鸟，飞走 2 只，还剩几只？飞走以后，数量会变少。",
@@ -4046,6 +4103,34 @@
       ]
     },
     {
+      "id": "system-飞走-2-只-看看树上还剩几只",
+      "kind": "system",
+      "text": "飞走 2 只，看看树上还剩几只。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-story-operations/math-story-operations-4",
+        "math-story-operations/math-story-operations-6",
+        "math-story-operations/math-story-operations-7",
+        "math-story-operations/math-story-operations-9",
+        "math-story-operations/math-story-operations-11"
+      ]
+    },
+    {
+      "id": "system-让-2-只小鸟飞走",
+      "kind": "system",
+      "text": "让 2 只小鸟飞走",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-story-operations/math-story-operations-4",
+        "math-story-operations/math-story-operations-6",
+        "math-story-operations/math-story-operations-7",
+        "math-story-operations/math-story-operations-9",
+        "math-story-operations/math-story-operations-11"
+      ]
+    },
+    {
       "id": "prompt-树上有-5-只小鸟-飞走-1-只-还剩几只-飞走以后-数量会变少",
       "kind": "prompt",
       "text": "树上有 5 只小鸟，飞走 1 只，还剩几只？飞走以后，数量会变少。",
@@ -4063,6 +4148,17 @@
       "tone": "warm, delighted, clear",
       "contexts": [
         "math-story-operations/math-story-operations-5"
+      ]
+    },
+    {
+      "id": "system-原来有-5-只小鸟",
+      "kind": "system",
+      "text": "原来有 5 只小鸟。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-story-operations/math-story-operations-5",
+        "math-story-operations/math-story-operations-6"
       ]
     },
     {
@@ -4106,6 +4202,17 @@
       ]
     },
     {
+      "id": "system-原来有-6-只小鸟",
+      "kind": "system",
+      "text": "原来有 6 只小鸟。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-story-operations/math-story-operations-7",
+        "math-story-operations/math-story-operations-8"
+      ]
+    },
+    {
       "id": "prompt-树上有-6-只小鸟-飞走-3-只-还剩几只-飞走以后-数量会变少",
       "kind": "prompt",
       "text": "树上有 6 只小鸟，飞走 3 只，还剩几只？飞走以后，数量会变少。",
@@ -4126,6 +4233,30 @@
       ]
     },
     {
+      "id": "system-飞走-3-只-看看树上还剩几只",
+      "kind": "system",
+      "text": "飞走 3 只，看看树上还剩几只。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-story-operations/math-story-operations-8",
+        "math-story-operations/math-story-operations-10",
+        "math-story-operations/math-story-operations-12"
+      ]
+    },
+    {
+      "id": "system-让-3-只小鸟飞走",
+      "kind": "system",
+      "text": "让 3 只小鸟飞走",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-story-operations/math-story-operations-8",
+        "math-story-operations/math-story-operations-10",
+        "math-story-operations/math-story-operations-12"
+      ]
+    },
+    {
       "id": "prompt-树上有-7-只小鸟-飞走-2-只-还剩几只-飞走以后-数量会变少",
       "kind": "prompt",
       "text": "树上有 7 只小鸟，飞走 2 只，还剩几只？飞走以后，数量会变少。",
@@ -4141,6 +4272,16 @@
       "text": "7 只飞走 2 只，还剩 5 只。",
       "locale": "zh-CN",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "math-story-operations/math-story-operations-9"
+      ]
+    },
+    {
+      "id": "system-原来有-7-只小鸟",
+      "kind": "system",
+      "text": "原来有 7 只小鸟。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "math-story-operations/math-story-operations-9"
       ]
@@ -4166,6 +4307,16 @@
       ]
     },
     {
+      "id": "system-原来有-8-只小鸟",
+      "kind": "system",
+      "text": "原来有 8 只小鸟。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-story-operations/math-story-operations-10"
+      ]
+    },
+    {
       "id": "prompt-树上有-9-只小鸟-飞走-2-只-还剩几只-飞走以后-数量会变少",
       "kind": "prompt",
       "text": "树上有 9 只小鸟，飞走 2 只，还剩几只？飞走以后，数量会变少。",
@@ -4186,6 +4337,16 @@
       ]
     },
     {
+      "id": "system-原来有-9-只小鸟",
+      "kind": "system",
+      "text": "原来有 9 只小鸟。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "math-story-operations/math-story-operations-11"
+      ]
+    },
+    {
       "id": "prompt-树上有-10-只小鸟-飞走-3-只-还剩几只-飞走以后-数量会变少",
       "kind": "prompt",
       "text": "树上有 10 只小鸟，飞走 3 只，还剩几只？飞走以后，数量会变少。",
@@ -4201,6 +4362,16 @@
       "text": "10 只飞走 3 只，还剩 7 只。",
       "locale": "zh-CN",
       "tone": "warm, delighted, clear",
+      "contexts": [
+        "math-story-operations/math-story-operations-12"
+      ]
+    },
+    {
+      "id": "system-原来有-10-只小鸟",
+      "kind": "system",
+      "text": "原来有 10 只小鸟。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
       "contexts": [
         "math-story-operations/math-story-operations-12"
       ]
@@ -25193,6 +25364,46 @@
       ]
     },
     {
+      "id": "system-树上",
+      "kind": "system",
+      "text": "树上",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "birds-departure"
+      ]
+    },
+    {
+      "id": "system-飞走了",
+      "kind": "system",
+      "text": "飞走了",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "birds-departure"
+      ]
+    },
+    {
+      "id": "system-回到开始-再看一次",
+      "kind": "system",
+      "text": "回到开始，再看一次",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "birds-departure"
+      ]
+    },
+    {
+      "id": "system-数数树上还剩几只",
+      "kind": "system",
+      "text": "数数树上还剩几只。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "birds-departure"
+      ]
+    },
+    {
       "id": "activity-system-先选一个答案-再看看",
       "kind": "activity-system",
       "text": "先选一个答案，再看看。",
@@ -25226,16 +25437,6 @@
       "id": "activity-system-这条路能走通-再找找-有没有少走几段的路",
       "kind": "activity-system",
       "text": "这条路能走通。再找找，有没有少走几段的路？",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "advanced"
-      ]
-    },
-    {
-      "id": "activity-system-数一数每个岛连出的桥-和岛上的数字一样多吗",
-      "kind": "activity-system",
-      "text": "数一数每个岛连出的桥，和岛上的数字一样多吗？",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -25430,6 +25631,196 @@
       "tone": "friendly, clear, playful",
       "contexts": [
         "rule-play/flipCheck"
+      ]
+    },
+    {
+      "id": "activity-system-点空格试放一颗-合适就选上-每个位置单独试",
+      "kind": "activity-system",
+      "text": "点空格试放一颗，合适就选上。每个位置单独试。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "board-move/instruction"
+      ]
+    },
+    {
+      "id": "activity-system-圈里是空格-没有棋子-点一个空格试放一颗黑子-合适就选上-再试别的空格-每个选中的位置-都要单独试",
+      "kind": "activity-system",
+      "text": "圈里是空格，没有棋子。点一个空格试放一颗黑子，合适就选上，再试别的空格。每个选中的位置，都要单独试。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "board-move/howToPlay"
+      ]
+    },
+    {
+      "id": "activity-system-选这个空格",
+      "kind": "activity-system",
+      "text": "选这个空格",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "board-move/choose"
+      ]
+    },
+    {
+      "id": "activity-system-取消这个选择",
+      "kind": "activity-system",
+      "text": "取消这个选择",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "board-move/unchoose"
+      ]
+    },
+    {
+      "id": "activity-system-拿回试放的棋子",
+      "kind": "activity-system",
+      "text": "拿回试放的棋子",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "board-move/takeBack"
+      ]
+    },
+    {
+      "id": "activity-system-点一个圈-试放一颗",
+      "kind": "activity-system",
+      "text": "点一个圈，试放一颗",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "board-move/empty"
+      ]
+    },
+    {
+      "id": "activity-system-这次只补这一颗",
+      "kind": "activity-system",
+      "text": "这次只补这一颗",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "board-move/trial"
+      ]
+    },
+    {
+      "id": "activity-system-勾选的是位置-每个都单独试",
+      "kind": "activity-system",
+      "text": "勾选的是位置，每个都单独试。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "board-move/separate"
+      ]
+    },
+    {
+      "id": "activity-system-每个小格是一座桥",
+      "kind": "activity-system",
+      "text": "每个小格是一座桥。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "island-bridges/unit"
+      ]
+    },
+    {
+      "id": "activity-system-点加号搭桥-把每个岛的小格填满-两个岛之间最多搭两座桥",
+      "kind": "activity-system",
+      "text": "点加号搭桥，把每个岛的小格填满。两个岛之间最多搭两座桥。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "island-bridges/instruction"
+      ]
+    },
+    {
+      "id": "activity-system-一座桥-两边各算一座",
+      "kind": "activity-system",
+      "text": "一座桥，两边各算一座。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "island-bridges/relation"
+      ]
+    },
+    {
+      "id": "activity-system-一座桥连着两个岛-两边各填一个小格",
+      "kind": "activity-system",
+      "text": "一座桥连着两个岛，两边各填一个小格。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "island-bridges/clue"
+      ]
+    },
+    {
+      "id": "activity-system-桥不能交叉-所有岛要互相通达",
+      "kind": "activity-system",
+      "text": "桥不能交叉，所有岛要互相通达。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "island-bridges/connection"
+      ]
+    },
+    {
+      "id": "activity-system-每个岛的小格都填满了-没有多搭-所有岛也连在一起了",
+      "kind": "activity-system",
+      "text": "每个岛的小格都填满了，没有多搭，所有岛也连在一起了。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "island-bridges/success"
+      ]
+    },
+    {
+      "id": "activity-system-先数小岛上有几个小格-再看看还有几个空着",
+      "kind": "activity-system",
+      "text": "先数小岛上有几个小格，再看看还有几个空着。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "island-bridges/hintCount"
+      ]
+    },
+    {
+      "id": "activity-system-多出来的桥会单独标红-别忘了所有岛要互相通达",
+      "kind": "activity-system",
+      "text": "多出来的桥会单独标红。别忘了所有岛要互相通达。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "island-bridges/hintAll"
+      ]
+    },
+    {
+      "id": "activity-system-看看每个岛的小格-空着的还要搭桥-红色的是多出来的桥",
+      "kind": "activity-system",
+      "text": "看看每个岛的小格：空着的还要搭桥，红色的是多出来的桥。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "island-bridges/countsFeedback"
+      ]
+    },
+    {
+      "id": "activity-system-点加号添一座-搭满两座后再点-会收回新搭的桥-现成的桥会留下",
+      "kind": "activity-system",
+      "text": "点加号添一座，搭满两座后再点，会收回新搭的桥；现成的桥会留下。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "island-bridges/controls"
+      ]
+    },
+    {
+      "id": "activity-system-每个小格是一座桥-一座桥连着两个岛-两边各填一个小格-空着的还要搭-红色的是多出来的桥-点加号添一座-搭满两座后再点-会收回新搭",
+      "kind": "activity-system",
+      "text": "每个小格是一座桥。一座桥连着两个岛，两边各填一个小格。空着的还要搭，红色的是多出来的桥。点加号添一座，搭满两座后再点，会收回新搭的桥；现成的桥会留下。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "island-bridges/howToPlay"
       ]
     },
     {
@@ -25701,6 +26092,16 @@
       "tone": "friendly, clear, playful",
       "contexts": [
         "activity/viewPicture"
+      ]
+    },
+    {
+      "id": "activity-system-左右滑动-看看细节",
+      "kind": "activity-system",
+      "text": "左右滑动，看看细节。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "activity/imageScrollHint"
       ]
     },
     {
@@ -28936,12 +29337,6 @@
         "explore-ordinal-queue/explore-ordinal-queue-7",
         "explore-ordinal-queue/explore-ordinal-queue-8",
         "explore-ordinal-queue/explore-ordinal-queue-9",
-        "explore-parity-place-value/explore-parity-place-value-4",
-        "explore-parity-place-value/explore-parity-place-value-5",
-        "explore-parity-place-value/explore-parity-place-value-6",
-        "explore-parity-place-value/explore-parity-place-value-7",
-        "explore-parity-place-value/explore-parity-place-value-8",
-        "explore-parity-place-value/explore-parity-place-value-9",
         "explore-number-sequences/explore-number-sequences-1",
         "explore-number-sequences/explore-number-sequences-2",
         "explore-number-sequences/explore-number-sequences-3",
@@ -29829,15 +30224,13 @@
       ]
     },
     {
-      "id": "prompt-把水全部倒进宽杯-水量相当于原来的几小杯-选出符合条件的一张图卡-这里比较水量-不比较水面有多高",
+      "id": "prompt-把水全部倒进宽杯-水量相当于原来的几小杯-选出符合条件的一张图卡-全部倒入-没有洒出-原来是12小杯的水-这里比较水量-不比较水面有多高",
       "kind": "prompt",
-      "text": "把水全部倒进宽杯，水量相当于原来的几小杯。选出符合条件的一张图卡。这里比较水量，不比较水面有多高。",
+      "text": "把水全部倒进宽杯，水量相当于原来的几小杯。选出符合条件的一张图卡。全部倒入，没有洒出。原来是12小杯的水。这里比较水量，不比较水面有多高。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "explore-number-conservation/explore-number-conservation-7",
-        "explore-number-conservation/explore-number-conservation-8",
-        "explore-number-conservation/explore-number-conservation-9"
+        "explore-number-conservation/explore-number-conservation-7"
       ]
     },
     {
@@ -29863,9 +30256,9 @@
       ]
     },
     {
-      "id": "hint-这里比较水量-不比较水面有多高",
+      "id": "hint-全部倒入-没有洒出",
       "kind": "hint",
-      "text": "这里比较水量，不比较水面有多高。",
+      "text": "全部倒入，没有洒出。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -29885,6 +30278,28 @@
       ]
     },
     {
+      "id": "clue-全部倒入-没有洒出",
+      "kind": "clue",
+      "text": "全部倒入，没有洒出。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-number-conservation/explore-number-conservation-7",
+        "explore-number-conservation/explore-number-conservation-8",
+        "explore-number-conservation/explore-number-conservation-9"
+      ]
+    },
+    {
+      "id": "clue-原来是12小杯的水",
+      "kind": "clue",
+      "text": "原来是12小杯的水。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-number-conservation/explore-number-conservation-7"
+      ]
+    },
+    {
       "id": "clue-这里比较水量-不比较水面有多高",
       "kind": "clue",
       "text": "这里比较水量，不比较水面有多高。",
@@ -29894,6 +30309,16 @@
         "explore-number-conservation/explore-number-conservation-7",
         "explore-number-conservation/explore-number-conservation-8",
         "explore-number-conservation/explore-number-conservation-9"
+      ]
+    },
+    {
+      "id": "prompt-把水全部倒进宽杯-水量相当于原来的几小杯-选出符合条件的一张图卡-全部倒入-没有洒出-原来是13小杯的水-这里比较水量-不比较水面有多高",
+      "kind": "prompt",
+      "text": "把水全部倒进宽杯，水量相当于原来的几小杯。选出符合条件的一张图卡。全部倒入，没有洒出。原来是13小杯的水。这里比较水量，不比较水面有多高。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-number-conservation/explore-number-conservation-8"
       ]
     },
     {
@@ -29917,6 +30342,26 @@
       ]
     },
     {
+      "id": "clue-原来是13小杯的水",
+      "kind": "clue",
+      "text": "原来是13小杯的水。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-number-conservation/explore-number-conservation-8"
+      ]
+    },
+    {
+      "id": "prompt-把水全部倒进宽杯-水量相当于原来的几小杯-选出符合条件的一张图卡-全部倒入-没有洒出-原来是14小杯的水-这里比较水量-不比较水面有多高",
+      "kind": "prompt",
+      "text": "把水全部倒进宽杯，水量相当于原来的几小杯。选出符合条件的一张图卡。全部倒入，没有洒出。原来是14小杯的水。这里比较水量，不比较水面有多高。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-number-conservation/explore-number-conservation-9"
+      ]
+    },
+    {
       "id": "success-还是14小杯的水-题目说明全部倒入且没有洒出-水面高低不能直接表示水量多少",
       "kind": "success",
       "text": "还是14小杯的水。题目说明全部倒入且没有洒出，水面高低不能直接表示水量多少。",
@@ -29930,6 +30375,16 @@
       "id": "hint-还是14小杯的水-题目说明全部倒入且没有洒出-水面高低不能直接表示水量多少",
       "kind": "hint",
       "text": "还是14小杯的水。题目说明全部倒入且没有洒出，水面高低不能直接表示水量多少。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-number-conservation/explore-number-conservation-9"
+      ]
+    },
+    {
+      "id": "clue-原来是14小杯的水",
+      "kind": "clue",
+      "text": "原来是14小杯的水。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -32554,9 +33009,9 @@
       ]
     },
     {
-      "id": "prompt-这些长条和小方块一共表示多少-选出符合条件的一张图卡",
+      "id": "prompt-这些长条和小方块一共表示多少-选出符合条件的一张图卡-一长条代表10-一小块代表1",
       "kind": "prompt",
-      "text": "这些长条和小方块一共表示多少。选出符合条件的一张图卡。",
+      "text": "这些长条和小方块一共表示多少。选出符合条件的一张图卡。一长条代表10，一小块代表1。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -32588,6 +33043,21 @@
       ]
     },
     {
+      "id": "hint-一长条代表10-一小块代表1",
+      "kind": "hint",
+      "text": "一长条代表10，一小块代表1。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-parity-place-value/explore-parity-place-value-4",
+        "explore-parity-place-value/explore-parity-place-value-5",
+        "explore-parity-place-value/explore-parity-place-value-6",
+        "explore-parity-place-value/explore-parity-place-value-7",
+        "explore-parity-place-value/explore-parity-place-value-8",
+        "explore-parity-place-value/explore-parity-place-value-9"
+      ]
+    },
+    {
       "id": "hint-2个十和3个一-组成23",
       "kind": "hint",
       "text": "2个十和3个一，组成23。",
@@ -32595,6 +33065,21 @@
       "tone": "friendly, clear, playful",
       "contexts": [
         "explore-parity-place-value/explore-parity-place-value-4"
+      ]
+    },
+    {
+      "id": "clue-一长条代表10-一小块代表1",
+      "kind": "clue",
+      "text": "一长条代表10，一小块代表1。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-parity-place-value/explore-parity-place-value-4",
+        "explore-parity-place-value/explore-parity-place-value-5",
+        "explore-parity-place-value/explore-parity-place-value-6",
+        "explore-parity-place-value/explore-parity-place-value-7",
+        "explore-parity-place-value/explore-parity-place-value-8",
+        "explore-parity-place-value/explore-parity-place-value-9"
       ]
     },
     {
@@ -32708,9 +33193,9 @@
       ]
     },
     {
-      "id": "prompt-原来有23个-拿走一个以后是多少-选出符合条件的一张图卡",
+      "id": "prompt-原来有23个-拿走一个以后是多少-选出符合条件的一张图卡-一长条代表10-一小块代表1",
       "kind": "prompt",
-      "text": "原来有23个，拿走一个以后是多少。选出符合条件的一张图卡。",
+      "text": "原来有23个，拿走一个以后是多少。选出符合条件的一张图卡。一长条代表10，一小块代表1。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -32760,9 +33245,9 @@
       ]
     },
     {
-      "id": "prompt-原来有34个-拿走一个以后是多少-选出符合条件的一张图卡",
+      "id": "prompt-原来有34个-拿走一个以后是多少-选出符合条件的一张图卡-一长条代表10-一小块代表1",
       "kind": "prompt",
-      "text": "原来有34个，拿走一个以后是多少。选出符合条件的一张图卡。",
+      "text": "原来有34个，拿走一个以后是多少。选出符合条件的一张图卡。一长条代表10，一小块代表1。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -32800,9 +33285,9 @@
       ]
     },
     {
-      "id": "prompt-原来有45个-拿走一个以后是多少-选出符合条件的一张图卡",
+      "id": "prompt-原来有45个-拿走一个以后是多少-选出符合条件的一张图卡-一长条代表10-一小块代表1",
       "kind": "prompt",
-      "text": "原来有45个，拿走一个以后是多少。选出符合条件的一张图卡。",
+      "text": "原来有45个，拿走一个以后是多少。选出符合条件的一张图卡。一长条代表10，一小块代表1。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -36306,15 +36791,6 @@
         "explore-route-constraints/explore-route-constraints-7",
         "explore-route-constraints/explore-route-constraints-8",
         "explore-route-constraints/explore-route-constraints-9",
-        "explore-bridge-networks/explore-bridge-networks-1",
-        "explore-bridge-networks/explore-bridge-networks-2",
-        "explore-bridge-networks/explore-bridge-networks-3",
-        "explore-bridge-networks/explore-bridge-networks-4",
-        "explore-bridge-networks/explore-bridge-networks-5",
-        "explore-bridge-networks/explore-bridge-networks-6",
-        "explore-bridge-networks/explore-bridge-networks-7",
-        "explore-bridge-networks/explore-bridge-networks-8",
-        "explore-bridge-networks/explore-bridge-networks-9",
         "explore-shape-assembly/explore-shape-assembly-1",
         "explore-shape-assembly/explore-shape-assembly-2",
         "explore-shape-assembly/explore-shape-assembly-3",
@@ -36339,15 +36815,6 @@
         "explore-route-constraints/explore-route-constraints-7",
         "explore-route-constraints/explore-route-constraints-8",
         "explore-route-constraints/explore-route-constraints-9",
-        "explore-bridge-networks/explore-bridge-networks-1",
-        "explore-bridge-networks/explore-bridge-networks-2",
-        "explore-bridge-networks/explore-bridge-networks-3",
-        "explore-bridge-networks/explore-bridge-networks-4",
-        "explore-bridge-networks/explore-bridge-networks-5",
-        "explore-bridge-networks/explore-bridge-networks-6",
-        "explore-bridge-networks/explore-bridge-networks-7",
-        "explore-bridge-networks/explore-bridge-networks-8",
-        "explore-bridge-networks/explore-bridge-networks-9",
         "explore-shape-assembly/explore-shape-assembly-1",
         "explore-shape-assembly/explore-shape-assembly-2",
         "explore-shape-assembly/explore-shape-assembly-3",
@@ -37932,13 +38399,28 @@
       ]
     },
     {
-      "id": "prompt-照着顺序-动手翻一翻-看小图的顺序-点下面的大牌-点一下大牌-就翻一面-第1步-翻第1张",
+      "id": "prompt-第1步-翻第1张",
       "kind": "prompt",
-      "text": "照着顺序，动手翻一翻。看小图的顺序，点下面的大牌。点一下大牌，就翻一面。第1步，翻第1张。",
+      "text": "第1步，翻第1张。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
         "explore-toggle-state/explore-toggle-state-1"
+      ]
+    },
+    {
+      "id": "clue-第1步-翻第1张",
+      "kind": "clue",
+      "text": "第1步，翻第1张。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-toggle-state/explore-toggle-state-1",
+        "explore-toggle-state/explore-toggle-state-1",
+        "explore-toggle-state/explore-toggle-state-4",
+        "explore-toggle-state/explore-toggle-state-4",
+        "explore-toggle-state/explore-toggle-state-7",
+        "explore-toggle-state/explore-toggle-state-7"
       ]
     },
     {
@@ -38062,18 +38544,6 @@
       ]
     },
     {
-      "id": "clue-第1步-翻第1张",
-      "kind": "clue",
-      "text": "第1步，翻第1张。",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "explore-toggle-state/explore-toggle-state-1",
-        "explore-toggle-state/explore-toggle-state-4",
-        "explore-toggle-state/explore-toggle-state-7"
-      ]
-    },
-    {
       "id": "object-黄面",
       "kind": "object",
       "text": "黄面",
@@ -38110,9 +38580,9 @@
       ]
     },
     {
-      "id": "prompt-照着顺序-动手翻一翻-看小图的顺序-点下面的大牌-点一下大牌-就翻一面-第1步-翻第2张",
+      "id": "prompt-第1步-翻第2张",
       "kind": "prompt",
-      "text": "照着顺序，动手翻一翻。看小图的顺序，点下面的大牌。点一下大牌，就翻一面。第1步，翻第2张。",
+      "text": "第1步，翻第2张。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -38127,14 +38597,17 @@
       "tone": "friendly, clear, playful",
       "contexts": [
         "explore-toggle-state/explore-toggle-state-2",
+        "explore-toggle-state/explore-toggle-state-2",
         "explore-toggle-state/explore-toggle-state-5",
+        "explore-toggle-state/explore-toggle-state-5",
+        "explore-toggle-state/explore-toggle-state-8",
         "explore-toggle-state/explore-toggle-state-8"
       ]
     },
     {
-      "id": "prompt-照着顺序-动手翻一翻-看小图的顺序-点下面的大牌-点一下大牌-就翻一面-第1步-翻第3张",
+      "id": "prompt-第1步-翻第3张",
       "kind": "prompt",
-      "text": "照着顺序，动手翻一翻。看小图的顺序，点下面的大牌。点一下大牌，就翻一面。第1步，翻第3张。",
+      "text": "第1步，翻第3张。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -38149,18 +38622,34 @@
       "tone": "friendly, clear, playful",
       "contexts": [
         "explore-toggle-state/explore-toggle-state-3",
+        "explore-toggle-state/explore-toggle-state-3",
         "explore-toggle-state/explore-toggle-state-6",
+        "explore-toggle-state/explore-toggle-state-6",
+        "explore-toggle-state/explore-toggle-state-9",
         "explore-toggle-state/explore-toggle-state-9"
       ]
     },
     {
-      "id": "prompt-照着顺序-动手翻一翻-看小图的顺序-点下面的大牌-点一下大牌-就翻一面-第1步-翻第1张-第2步-翻第2张",
+      "id": "prompt-第1步-翻第1张-第2步-翻第2张",
       "kind": "prompt",
-      "text": "照着顺序，动手翻一翻。看小图的顺序，点下面的大牌。点一下大牌，就翻一面。第1步，翻第1张。第2步，翻第2张。",
+      "text": "第1步，翻第1张。第2步，翻第2张。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
         "explore-toggle-state/explore-toggle-state-4"
+      ]
+    },
+    {
+      "id": "clue-第2步-翻第2张",
+      "kind": "clue",
+      "text": "第2步，翻第2张。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-toggle-state/explore-toggle-state-4",
+        "explore-toggle-state/explore-toggle-state-4",
+        "explore-toggle-state/explore-toggle-state-7",
+        "explore-toggle-state/explore-toggle-state-7"
       ]
     },
     {
@@ -38176,20 +38665,9 @@
       ]
     },
     {
-      "id": "clue-第2步-翻第2张",
-      "kind": "clue",
-      "text": "第2步，翻第2张。",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "explore-toggle-state/explore-toggle-state-4",
-        "explore-toggle-state/explore-toggle-state-7"
-      ]
-    },
-    {
-      "id": "prompt-照着顺序-动手翻一翻-看小图的顺序-点下面的大牌-点一下大牌-就翻一面-第1步-翻第2张-第2步-翻第3张",
+      "id": "prompt-第1步-翻第2张-第2步-翻第3张",
       "kind": "prompt",
-      "text": "照着顺序，动手翻一翻。看小图的顺序，点下面的大牌。点一下大牌，就翻一面。第1步，翻第2张。第2步，翻第3张。",
+      "text": "第1步，翻第2张。第2步，翻第3张。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -38204,13 +38682,15 @@
       "tone": "friendly, clear, playful",
       "contexts": [
         "explore-toggle-state/explore-toggle-state-5",
+        "explore-toggle-state/explore-toggle-state-5",
+        "explore-toggle-state/explore-toggle-state-8",
         "explore-toggle-state/explore-toggle-state-8"
       ]
     },
     {
-      "id": "prompt-照着顺序-动手翻一翻-看小图的顺序-点下面的大牌-点一下大牌-就翻一面-第1步-翻第3张-第2步-翻第4张",
+      "id": "prompt-第1步-翻第3张-第2步-翻第4张",
       "kind": "prompt",
-      "text": "照着顺序，动手翻一翻。看小图的顺序，点下面的大牌。点一下大牌，就翻一面。第1步，翻第3张。第2步，翻第4张。",
+      "text": "第1步，翻第3张。第2步，翻第4张。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -38225,16 +38705,29 @@
       "tone": "friendly, clear, playful",
       "contexts": [
         "explore-toggle-state/explore-toggle-state-6",
+        "explore-toggle-state/explore-toggle-state-6",
+        "explore-toggle-state/explore-toggle-state-9",
         "explore-toggle-state/explore-toggle-state-9"
       ]
     },
     {
-      "id": "prompt-照着顺序-动手翻一翻-看小图的顺序-点下面的大牌-点一下大牌-就翻一面-第1步-翻第1张-第2步-翻第2张-第3步-翻第1张",
+      "id": "prompt-第1步-翻第1张-第2步-翻第2张-第3步-翻第1张",
       "kind": "prompt",
-      "text": "照着顺序，动手翻一翻。看小图的顺序，点下面的大牌。点一下大牌，就翻一面。第1步，翻第1张。第2步，翻第2张。第3步，翻第1张。",
+      "text": "第1步，翻第1张。第2步，翻第2张。第3步，翻第1张。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
+        "explore-toggle-state/explore-toggle-state-7"
+      ]
+    },
+    {
+      "id": "clue-第3步-翻第1张",
+      "kind": "clue",
+      "text": "第3步，翻第1张。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-toggle-state/explore-toggle-state-7",
         "explore-toggle-state/explore-toggle-state-7"
       ]
     },
@@ -38251,19 +38744,9 @@
       ]
     },
     {
-      "id": "clue-第3步-翻第1张",
-      "kind": "clue",
-      "text": "第3步，翻第1张。",
-      "locale": "zh-CN",
-      "tone": "friendly, clear, playful",
-      "contexts": [
-        "explore-toggle-state/explore-toggle-state-7"
-      ]
-    },
-    {
-      "id": "prompt-照着顺序-动手翻一翻-看小图的顺序-点下面的大牌-点一下大牌-就翻一面-第1步-翻第2张-第2步-翻第3张-第3步-翻第2张",
+      "id": "prompt-第1步-翻第2张-第2步-翻第3张-第3步-翻第2张",
       "kind": "prompt",
-      "text": "照着顺序，动手翻一翻。看小图的顺序，点下面的大牌。点一下大牌，就翻一面。第1步，翻第2张。第2步，翻第3张。第3步，翻第2张。",
+      "text": "第1步，翻第2张。第2步，翻第3张。第3步，翻第2张。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -38277,13 +38760,14 @@
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
+        "explore-toggle-state/explore-toggle-state-8",
         "explore-toggle-state/explore-toggle-state-8"
       ]
     },
     {
-      "id": "prompt-照着顺序-动手翻一翻-看小图的顺序-点下面的大牌-点一下大牌-就翻一面-第1步-翻第3张-第2步-翻第4张-第3步-翻第3张",
+      "id": "prompt-第1步-翻第3张-第2步-翻第4张-第3步-翻第3张",
       "kind": "prompt",
-      "text": "照着顺序，动手翻一翻。看小图的顺序，点下面的大牌。点一下大牌，就翻一面。第1步，翻第3张。第2步，翻第4张。第3步，翻第3张。",
+      "text": "第1步，翻第3张。第2步，翻第4张。第3步，翻第3张。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -38297,6 +38781,7 @@
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
+        "explore-toggle-state/explore-toggle-state-9",
         "explore-toggle-state/explore-toggle-state-9"
       ]
     },
@@ -38321,9 +38806,9 @@
       ]
     },
     {
-      "id": "prompt-走完以后-两位朋友分别停在哪个数字-先选图卡-再按位置编号排好-也可以拖过去-红色从1出发-每次向右走1格-蓝色从9出发-每次向左走1格-同时走2",
+      "id": "prompt-红色从1出发-每次向右走1格-蓝色从9出发-每次向左走1格-同时走2次-先摆红色位置-再摆蓝色位置-选一位朋友-再点数字格-把它放到走完的位置",
       "kind": "prompt",
-      "text": "走完以后，两位朋友分别停在哪个数字。先选图卡，再按位置编号排好。也可以拖过去。红色从1出发，每次向右走1格。蓝色从9出发，每次向左走1格。同时走2次。先摆红色位置，再摆蓝色位置。",
+      "text": "红色从1出发，每次向右走1格。蓝色从9出发，每次向左走1格。同时走2次。先摆红色位置，再摆蓝色位置。选一位朋友，再点数字格，把它放到走完的位置。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -38409,9 +38894,9 @@
       ]
     },
     {
-      "id": "prompt-走完以后-两位朋友分别停在哪个数字-先选图卡-再按位置编号排好-也可以拖过去-红色从2出发-每次向右走1格-蓝色从10出发-每次向左走1格-同时走",
+      "id": "prompt-红色从2出发-每次向右走1格-蓝色从10出发-每次向左走1格-同时走2次-先摆红色位置-再摆蓝色位置-选一位朋友-再点数字格-把它放到走完的位置",
       "kind": "prompt",
-      "text": "走完以后，两位朋友分别停在哪个数字。先选图卡，再按位置编号排好。也可以拖过去。红色从2出发，每次向右走1格。蓝色从10出发，每次向左走1格。同时走2次。先摆红色位置，再摆蓝色位置。",
+      "text": "红色从2出发，每次向右走1格。蓝色从10出发，每次向左走1格。同时走2次。先摆红色位置，再摆蓝色位置。选一位朋友，再点数字格，把它放到走完的位置。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -38473,9 +38958,9 @@
       ]
     },
     {
-      "id": "prompt-走完以后-两位朋友分别停在哪个数字-先选图卡-再按位置编号排好-也可以拖过去-红色从3出发-每次向右走1格-蓝色从11出发-每次向左走1格-同时走",
+      "id": "prompt-红色从3出发-每次向右走1格-蓝色从11出发-每次向左走1格-同时走2次-先摆红色位置-再摆蓝色位置-选一位朋友-再点数字格-把它放到走完的位置",
       "kind": "prompt",
-      "text": "走完以后，两位朋友分别停在哪个数字。先选图卡，再按位置编号排好。也可以拖过去。红色从3出发，每次向右走1格。蓝色从11出发，每次向左走1格。同时走2次。先摆红色位置，再摆蓝色位置。",
+      "text": "红色从3出发，每次向右走1格。蓝色从11出发，每次向左走1格。同时走2次。先摆红色位置，再摆蓝色位置。选一位朋友，再点数字格，把它放到走完的位置。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -38537,9 +39022,9 @@
       ]
     },
     {
-      "id": "prompt-走完以后-两位朋友分别停在哪个数字-先选图卡-再按位置编号排好-也可以拖过去-红色从1出发-每次向右走1格-蓝色从9出发-每次向左走2格-同时走3",
+      "id": "prompt-红色从1出发-每次向右走1格-蓝色从9出发-每次向左走2格-同时走3次-先摆红色位置-再摆蓝色位置-选一位朋友-再点数字格-把它放到走完的位置",
       "kind": "prompt",
-      "text": "走完以后，两位朋友分别停在哪个数字。先选图卡，再按位置编号排好。也可以拖过去。红色从1出发，每次向右走1格。蓝色从9出发，每次向左走2格。同时走3次。先摆红色位置，再摆蓝色位置。",
+      "text": "红色从1出发，每次向右走1格。蓝色从9出发，每次向左走2格。同时走3次。先摆红色位置，再摆蓝色位置。选一位朋友，再点数字格，把它放到走完的位置。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -38602,9 +39087,9 @@
       ]
     },
     {
-      "id": "prompt-走完以后-两位朋友分别停在哪个数字-先选图卡-再按位置编号排好-也可以拖过去-红色从2出发-每次向右走1格-蓝色从10出发-每次向左走2格-同时走",
+      "id": "prompt-红色从2出发-每次向右走1格-蓝色从10出发-每次向左走2格-同时走3次-先摆红色位置-再摆蓝色位置-选一位朋友-再点数字格-把它放到走完的位置",
       "kind": "prompt",
-      "text": "走完以后，两位朋友分别停在哪个数字。先选图卡，再按位置编号排好。也可以拖过去。红色从2出发，每次向右走1格。蓝色从10出发，每次向左走2格。同时走3次。先摆红色位置，再摆蓝色位置。",
+      "text": "红色从2出发，每次向右走1格。蓝色从10出发，每次向左走2格。同时走3次。先摆红色位置，再摆蓝色位置。选一位朋友，再点数字格，把它放到走完的位置。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -38643,9 +39128,9 @@
       ]
     },
     {
-      "id": "prompt-走完以后-两位朋友分别停在哪个数字-先选图卡-再按位置编号排好-也可以拖过去-红色从3出发-每次向右走1格-蓝色从11出发-每次向左走2格-同时走",
+      "id": "prompt-红色从3出发-每次向右走1格-蓝色从11出发-每次向左走2格-同时走3次-先摆红色位置-再摆蓝色位置-选一位朋友-再点数字格-把它放到走完的位置",
       "kind": "prompt",
-      "text": "走完以后，两位朋友分别停在哪个数字。先选图卡，再按位置编号排好。也可以拖过去。红色从3出发，每次向右走1格。蓝色从11出发，每次向左走2格。同时走3次。先摆红色位置，再摆蓝色位置。",
+      "text": "红色从3出发，每次向右走1格。蓝色从11出发，每次向左走2格。同时走3次。先摆红色位置，再摆蓝色位置。选一位朋友，再点数字格，把它放到走完的位置。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -38684,9 +39169,9 @@
       ]
     },
     {
-      "id": "prompt-走完以后-两位朋友分别停在哪个数字-先选图卡-再按位置编号排好-也可以拖过去-红色从1出发-每次向右走1格-蓝色从9出发-每次向左走2格-同时走4",
+      "id": "prompt-红色从1出发-每次向右走1格-蓝色从9出发-每次向左走2格-同时走4次-先摆红色位置-再摆蓝色位置-选一位朋友-再点数字格-把它放到走完的位置",
       "kind": "prompt",
-      "text": "走完以后，两位朋友分别停在哪个数字。先选图卡，再按位置编号排好。也可以拖过去。红色从1出发，每次向右走1格。蓝色从9出发，每次向左走2格。同时走4次。先摆红色位置，再摆蓝色位置。",
+      "text": "红色从1出发，每次向右走1格。蓝色从9出发，每次向左走2格。同时走4次。先摆红色位置，再摆蓝色位置。选一位朋友，再点数字格，把它放到走完的位置。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -38738,9 +39223,9 @@
       ]
     },
     {
-      "id": "prompt-走完以后-两位朋友分别停在哪个数字-先选图卡-再按位置编号排好-也可以拖过去-红色从2出发-每次向右走1格-蓝色从10出发-每次向左走2格-同时走-9cb7e8439a",
+      "id": "prompt-红色从2出发-每次向右走1格-蓝色从10出发-每次向左走2格-同时走4次-先摆红色位置-再摆蓝色位置-选一位朋友-再点数字格-把它放到走完的位置",
       "kind": "prompt",
-      "text": "走完以后，两位朋友分别停在哪个数字。先选图卡，再按位置编号排好。也可以拖过去。红色从2出发，每次向右走1格。蓝色从10出发，每次向左走2格。同时走4次。先摆红色位置，再摆蓝色位置。",
+      "text": "红色从2出发，每次向右走1格。蓝色从10出发，每次向左走2格。同时走4次。先摆红色位置，再摆蓝色位置。选一位朋友，再点数字格，把它放到走完的位置。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -38768,9 +39253,9 @@
       ]
     },
     {
-      "id": "prompt-走完以后-两位朋友分别停在哪个数字-先选图卡-再按位置编号排好-也可以拖过去-红色从3出发-每次向右走1格-蓝色从11出发-每次向左走2格-同时走-594e528c86",
+      "id": "prompt-红色从3出发-每次向右走1格-蓝色从11出发-每次向左走2格-同时走4次-先摆红色位置-再摆蓝色位置-选一位朋友-再点数字格-把它放到走完的位置",
       "kind": "prompt",
-      "text": "走完以后，两位朋友分别停在哪个数字。先选图卡，再按位置编号排好。也可以拖过去。红色从3出发，每次向右走1格。蓝色从11出发，每次向左走2格。同时走4次。先摆红色位置，再摆蓝色位置。",
+      "text": "红色从3出发，每次向右走1格。蓝色从11出发，每次向左走2格。同时走4次。先摆红色位置，再摆蓝色位置。选一位朋友，再点数字格，把它放到走完的位置。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -38818,9 +39303,9 @@
       ]
     },
     {
-      "id": "prompt-在哪些空格补一颗黑子-能连成三颗黑子-把所有符合条件的图卡选出来-再检查一次-横-竖或对角线-三颗黑子连成一条直线-把所有能达成的空格都找出来",
+      "id": "prompt-在哪些空格补一颗黑子-能连成三颗黑子-圈里是空格-没有棋子-点一个空格试放一颗黑子-合适就选上-再试别的空格-每个选中的位置-都要单独试-横-竖或",
       "kind": "prompt",
-      "text": "在哪些空格补一颗黑子，能连成三颗黑子。把所有符合条件的图卡选出来，再检查一次。横、竖或对角线，三颗黑子连成一条直线。把所有能达成的空格都找出来。",
+      "text": "在哪些空格补一颗黑子，能连成三颗黑子？圈里是空格，没有棋子。点一个空格试放一颗黑子，合适就选上，再试别的空格。每个选中的位置，都要单独试。横、竖或对角线，三颗黑子连成一条直线。把所有能达成的空格都找出来。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -39060,9 +39545,9 @@
       ]
     },
     {
-      "id": "prompt-下一颗黑子放在哪里-能夹住最多白子-把所有符合条件的图卡选出来-再检查一次-横着-竖着-斜着都可以夹-每个方向夹到的白子合起来数-新落下的黑子和已",
+      "id": "prompt-下一颗黑子放在哪里-能夹住最多白子-圈里是空格-没有棋子-点一个空格试放一颗黑子-合适就选上-再试别的空格-每个选中的位置-都要单独试-横着-竖着",
       "kind": "prompt",
-      "text": "下一颗黑子放在哪里，能夹住最多白子。把所有符合条件的图卡选出来，再检查一次。横着、竖着、斜着都可以夹。每个方向夹到的白子合起来数。新落下的黑子和已有黑子之间，要连续夹着白子。空格会把夹子断开。找出所有夹住最多白子的落点。",
+      "text": "下一颗黑子放在哪里，能夹住最多白子？圈里是空格，没有棋子。点一个空格试放一颗黑子，合适就选上，再试别的空格。每个选中的位置，都要单独试。横着、竖着、斜着都可以夹。每个方向夹到的白子合起来数。新落下的黑子和已有黑子之间，要连续夹着白子。空格会把夹子断开。找出所有夹住最多白子的落点。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -39251,27 +39736,74 @@
       ]
     },
     {
-      "id": "prompt-把所有小岛连起来-直接点两个小岛之间的线来搭桥-再点可以改变桥数-每处最多两座桥-数字表示这个岛连出的桥数-桥不能交叉-所有岛要互相通达",
+      "id": "prompt-每个小格是一座桥-a岛要3座桥-b岛要3座桥-c岛要2座桥-d岛要2座桥-一座桥连着两个岛-两边各填一个小格-点加号搭桥-把每个岛的小格填满-两个",
       "kind": "prompt",
-      "text": "把所有小岛连起来。直接点两个小岛之间的线来搭桥，再点可以改变桥数。每处最多两座桥。数字表示这个岛连出的桥数。桥不能交叉，所有岛要互相通达。",
+      "text": "每个小格是一座桥。A岛要3座桥。B岛要3座桥。C岛要2座桥。D岛要2座桥。一座桥连着两个岛，两边各填一个小格。点加号搭桥，把每个岛的小格填满。两个岛之间最多搭两座桥。点加号添一座，搭满两座后再点，会收回新搭的桥；现成的桥会留下。桥不能交叉，所有岛要互相通达。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-bridge-networks/explore-bridge-networks-1",
+        "explore-bridge-networks/explore-bridge-networks-4"
+      ]
+    },
+    {
+      "id": "clue-a岛要3座桥",
+      "kind": "clue",
+      "text": "A岛要3座桥。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-bridge-networks/explore-bridge-networks-1",
+        "explore-bridge-networks/explore-bridge-networks-4",
+        "explore-bridge-networks/explore-bridge-networks-7"
+      ]
+    },
+    {
+      "id": "clue-b岛要3座桥",
+      "kind": "clue",
+      "text": "B岛要3座桥。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
         "explore-bridge-networks/explore-bridge-networks-1",
         "explore-bridge-networks/explore-bridge-networks-2",
-        "explore-bridge-networks/explore-bridge-networks-3",
         "explore-bridge-networks/explore-bridge-networks-4",
         "explore-bridge-networks/explore-bridge-networks-5",
-        "explore-bridge-networks/explore-bridge-networks-6",
         "explore-bridge-networks/explore-bridge-networks-7",
-        "explore-bridge-networks/explore-bridge-networks-8",
-        "explore-bridge-networks/explore-bridge-networks-9"
+        "explore-bridge-networks/explore-bridge-networks-8"
       ]
     },
     {
-      "id": "success-每个岛连出的桥数和数字相同-所有小岛也连成了一个整体",
+      "id": "clue-c岛要2座桥",
+      "kind": "clue",
+      "text": "C岛要2座桥。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-bridge-networks/explore-bridge-networks-1",
+        "explore-bridge-networks/explore-bridge-networks-4",
+        "explore-bridge-networks/explore-bridge-networks-7"
+      ]
+    },
+    {
+      "id": "clue-d岛要2座桥",
+      "kind": "clue",
+      "text": "D岛要2座桥。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-bridge-networks/explore-bridge-networks-1",
+        "explore-bridge-networks/explore-bridge-networks-2",
+        "explore-bridge-networks/explore-bridge-networks-4",
+        "explore-bridge-networks/explore-bridge-networks-5",
+        "explore-bridge-networks/explore-bridge-networks-7",
+        "explore-bridge-networks/explore-bridge-networks-8"
+      ]
+    },
+    {
+      "id": "success-每个岛的小格都填满了-没有多搭-所有岛也连在一起了",
       "kind": "success",
-      "text": "每个岛连出的桥数和数字相同，所有小岛也连成了一个整体。",
+      "text": "每个岛的小格都填满了，没有多搭，所有岛也连在一起了。",
       "locale": "zh-CN",
       "tone": "warm, delighted, clear",
       "contexts": [
@@ -39299,9 +39831,45 @@
       ]
     },
     {
-      "id": "clue-数字表示这个岛连出的桥数",
+      "id": "hint-先数小岛上有几个小格-再看看还有几个空着",
+      "kind": "hint",
+      "text": "先数小岛上有几个小格，再看看还有几个空着。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-bridge-networks/explore-bridge-networks-1",
+        "explore-bridge-networks/explore-bridge-networks-2",
+        "explore-bridge-networks/explore-bridge-networks-3",
+        "explore-bridge-networks/explore-bridge-networks-4",
+        "explore-bridge-networks/explore-bridge-networks-5",
+        "explore-bridge-networks/explore-bridge-networks-6",
+        "explore-bridge-networks/explore-bridge-networks-7",
+        "explore-bridge-networks/explore-bridge-networks-8",
+        "explore-bridge-networks/explore-bridge-networks-9"
+      ]
+    },
+    {
+      "id": "hint-多出来的桥会单独标红-别忘了所有岛要互相通达",
+      "kind": "hint",
+      "text": "多出来的桥会单独标红。别忘了所有岛要互相通达。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-bridge-networks/explore-bridge-networks-1",
+        "explore-bridge-networks/explore-bridge-networks-2",
+        "explore-bridge-networks/explore-bridge-networks-3",
+        "explore-bridge-networks/explore-bridge-networks-4",
+        "explore-bridge-networks/explore-bridge-networks-5",
+        "explore-bridge-networks/explore-bridge-networks-6",
+        "explore-bridge-networks/explore-bridge-networks-7",
+        "explore-bridge-networks/explore-bridge-networks-8",
+        "explore-bridge-networks/explore-bridge-networks-9"
+      ]
+    },
+    {
+      "id": "clue-一座桥连着两个岛-两边各填一个小格",
       "kind": "clue",
-      "text": "数字表示这个岛连出的桥数。",
+      "text": "一座桥连着两个岛，两边各填一个小格。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -39335,6 +39903,82 @@
       ]
     },
     {
+      "id": "prompt-每个小格是一座桥-a岛要2座桥-b岛要3座桥-c岛要3座桥-d岛要2座桥-一座桥连着两个岛-两边各填一个小格-点加号搭桥-把每个岛的小格填满-两个",
+      "kind": "prompt",
+      "text": "每个小格是一座桥。A岛要2座桥。B岛要3座桥。C岛要3座桥。D岛要2座桥。一座桥连着两个岛，两边各填一个小格。点加号搭桥，把每个岛的小格填满。两个岛之间最多搭两座桥。点加号添一座，搭满两座后再点，会收回新搭的桥；现成的桥会留下。桥不能交叉，所有岛要互相通达。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-bridge-networks/explore-bridge-networks-2",
+        "explore-bridge-networks/explore-bridge-networks-5"
+      ]
+    },
+    {
+      "id": "clue-a岛要2座桥",
+      "kind": "clue",
+      "text": "A岛要2座桥。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-bridge-networks/explore-bridge-networks-2",
+        "explore-bridge-networks/explore-bridge-networks-3",
+        "explore-bridge-networks/explore-bridge-networks-5",
+        "explore-bridge-networks/explore-bridge-networks-6",
+        "explore-bridge-networks/explore-bridge-networks-8",
+        "explore-bridge-networks/explore-bridge-networks-9"
+      ]
+    },
+    {
+      "id": "clue-c岛要3座桥",
+      "kind": "clue",
+      "text": "C岛要3座桥。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-bridge-networks/explore-bridge-networks-2",
+        "explore-bridge-networks/explore-bridge-networks-3",
+        "explore-bridge-networks/explore-bridge-networks-5",
+        "explore-bridge-networks/explore-bridge-networks-6",
+        "explore-bridge-networks/explore-bridge-networks-8",
+        "explore-bridge-networks/explore-bridge-networks-9"
+      ]
+    },
+    {
+      "id": "prompt-每个小格是一座桥-a岛要2座桥-b岛要2座桥-c岛要3座桥-d岛要3座桥-一座桥连着两个岛-两边各填一个小格-点加号搭桥-把每个岛的小格填满-两个",
+      "kind": "prompt",
+      "text": "每个小格是一座桥。A岛要2座桥。B岛要2座桥。C岛要3座桥。D岛要3座桥。一座桥连着两个岛，两边各填一个小格。点加号搭桥，把每个岛的小格填满。两个岛之间最多搭两座桥。点加号添一座，搭满两座后再点，会收回新搭的桥；现成的桥会留下。桥不能交叉，所有岛要互相通达。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-bridge-networks/explore-bridge-networks-3",
+        "explore-bridge-networks/explore-bridge-networks-6"
+      ]
+    },
+    {
+      "id": "clue-b岛要2座桥",
+      "kind": "clue",
+      "text": "B岛要2座桥。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-bridge-networks/explore-bridge-networks-3",
+        "explore-bridge-networks/explore-bridge-networks-6",
+        "explore-bridge-networks/explore-bridge-networks-9"
+      ]
+    },
+    {
+      "id": "clue-d岛要3座桥",
+      "kind": "clue",
+      "text": "D岛要3座桥。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-bridge-networks/explore-bridge-networks-3",
+        "explore-bridge-networks/explore-bridge-networks-6",
+        "explore-bridge-networks/explore-bridge-networks-9"
+      ]
+    },
+    {
       "id": "parent-能同时考虑两端岛剩余桥数",
       "kind": "parent",
       "text": "能同时考虑两端岛剩余桥数",
@@ -39347,6 +39991,40 @@
       ]
     },
     {
+      "id": "prompt-每个小格是一座桥-a岛要3座桥-b岛要3座桥-c岛要2座桥-d岛要2座桥-e岛要2座桥-f岛要2座桥-一座桥连着两个岛-两边各填一个小格-点加号搭",
+      "kind": "prompt",
+      "text": "每个小格是一座桥。A岛要3座桥。B岛要3座桥。C岛要2座桥。D岛要2座桥。E岛要2座桥。F岛要2座桥。一座桥连着两个岛，两边各填一个小格。点加号搭桥，把每个岛的小格填满。两个岛之间最多搭两座桥。点加号添一座，搭满两座后再点，会收回新搭的桥；现成的桥会留下。桥不能交叉，所有岛要互相通达。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-bridge-networks/explore-bridge-networks-7"
+      ]
+    },
+    {
+      "id": "clue-e岛要2座桥",
+      "kind": "clue",
+      "text": "E岛要2座桥。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-bridge-networks/explore-bridge-networks-7",
+        "explore-bridge-networks/explore-bridge-networks-8",
+        "explore-bridge-networks/explore-bridge-networks-9"
+      ]
+    },
+    {
+      "id": "clue-f岛要2座桥",
+      "kind": "clue",
+      "text": "F岛要2座桥。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-bridge-networks/explore-bridge-networks-7",
+        "explore-bridge-networks/explore-bridge-networks-8",
+        "explore-bridge-networks/explore-bridge-networks-9"
+      ]
+    },
+    {
       "id": "parent-理解各岛达标还要全网连通",
       "kind": "parent",
       "text": "理解各岛达标还要全网连通",
@@ -39355,6 +40033,26 @@
       "contexts": [
         "explore-bridge-networks/explore-bridge-networks-7",
         "explore-bridge-networks/explore-bridge-networks-8",
+        "explore-bridge-networks/explore-bridge-networks-9"
+      ]
+    },
+    {
+      "id": "prompt-每个小格是一座桥-a岛要2座桥-b岛要3座桥-c岛要3座桥-d岛要2座桥-e岛要2座桥-f岛要2座桥-一座桥连着两个岛-两边各填一个小格-点加号搭",
+      "kind": "prompt",
+      "text": "每个小格是一座桥。A岛要2座桥。B岛要3座桥。C岛要3座桥。D岛要2座桥。E岛要2座桥。F岛要2座桥。一座桥连着两个岛，两边各填一个小格。点加号搭桥，把每个岛的小格填满。两个岛之间最多搭两座桥。点加号添一座，搭满两座后再点，会收回新搭的桥；现成的桥会留下。桥不能交叉，所有岛要互相通达。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-bridge-networks/explore-bridge-networks-8"
+      ]
+    },
+    {
+      "id": "prompt-每个小格是一座桥-a岛要2座桥-b岛要2座桥-c岛要3座桥-d岛要3座桥-e岛要2座桥-f岛要2座桥-一座桥连着两个岛-两边各填一个小格-点加号搭",
+      "kind": "prompt",
+      "text": "每个小格是一座桥。A岛要2座桥。B岛要2座桥。C岛要3座桥。D岛要3座桥。E岛要2座桥。F岛要2座桥。一座桥连着两个岛，两边各填一个小格。点加号搭桥，把每个岛的小格填满。两个岛之间最多搭两座桥。点加号添一座，搭满两座后再点，会收回新搭的桥；现成的桥会留下。桥不能交叉，所有岛要互相通达。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
         "explore-bridge-networks/explore-bridge-networks-9"
       ]
     },

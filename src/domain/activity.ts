@@ -1,13 +1,26 @@
 import type { GalleryImage } from "../data/imageGallery";
+import { cardFlipSpeech } from './rule-play';
+import { BOARD_MOVE_COPY } from './board-move';
+import { networkPromptSpeech } from './island-bridges';
 import type { AbilityLevel, GameConfig, WorldId } from "../types";
 import type { AdvancedActivity, AdvancedResponse } from "./advanced-activity";
+import type { MathEvidence } from './math-evidence';
 
-export type ActivityToken = { id: string; label: string; image: GalleryImage; soundSrc?: string; speechText?: string; textOnly?: boolean; moneyValues?: number[]; quantityPicture?: { image: GalleryImage; count: number } };
+export type ActivityToken = { id: string; label: string; image: GalleryImage; soundSrc?: string; speechText?: string; textOnly?: boolean; moneyValues?: number[]; partitionCounts?: { left: number; right: number }; quantityPicture?: { image: GalleryImage; count: number } };
 export type ComparisonPanel = { kind: 'dots'; label: string; count: number; columns: number }
   | { kind: 'placeValue'; label: string; tens: number; ones: number }
   | { kind: 'image'; label: string; image: GalleryImage };
 export type RuleMachineEvidence = { kind: 'ruleMachine'; start: number; add: number; multiplier: 1 | 2 };
 export type CardFlipEvidence = { kind: 'cardFlip'; initial: ('off' | 'on')[]; steps: number[] };
+export type NumberWalkEvidence = {
+  kind: 'numberWalk'; min: number; max: number; turns: number;
+  actors: { id: 'red' | 'blue'; slotId: string; start: number; delta: number }[];
+};
+export type BoardMoveEvidence = {
+  kind: 'boardMove'; columns: 3 | 4; goal: 'line3' | 'capture';
+  cells: ('black' | 'white' | null)[];
+  candidates: { cell: number; tokenId: string }[];
+};
 export type TokenUse = "once" | "unlimited" | {kind:"counted"; limits:Record<string,number>};
 export type SlotValue =
   | { state: "unfilled" }
@@ -60,6 +73,9 @@ export type ActivityBase = {
     evidence?: { kind: "visualComparison"; panels: ComparisonPanel[] }
       | RuleMachineEvidence
       | CardFlipEvidence
+      | NumberWalkEvidence
+      | BoardMoveEvidence
+      | MathEvidence
       | { kind: "moneyInventory"; fives: number; ones: number }
       | { kind: "rectangleSearch"; rows: number; columns: number }
       | { kind: "quantityStory"; parts: { label: string; count: number | null }[] }
@@ -141,6 +157,7 @@ export const ACTIVITY_COPY = {
   parentRecordNext: "做完了，记发现",
   designEstimate: "以上是陪玩起点建议，尚待真实亲子试玩校准，不对应固定年龄。",
   viewPicture: "看大图",
+  imageScrollHint: "左右滑动，看看细节。",
   closePicture: "回到题目",
   previousPicture: "上一张",
   nextPicture: "下一张",
@@ -162,6 +179,16 @@ export function pyramidMismatch(activity: Activity, index: number): string {
 }
 
 export function activityPromptSpeech(activity: Activity, phase?: string) {
+  if (activity.kind === 'network') return networkPromptSpeech(activity);
+  if (activity.presentation?.evidence?.kind === 'boardMove') {
+    return [activity.prompt, BOARD_MOVE_COPY.howToPlay, ...activity.clues].join('');
+  }
+  if (activity.presentation?.evidence?.kind === 'cardFlip') {
+    return cardFlipSpeech(activity.presentation.evidence);
+  }
+  if (activity.presentation?.evidence?.kind === 'numberWalk') {
+    return [...activity.clues, activity.instruction].join('');
+  }
   if (activity.presentation?.evidence?.kind === 'ruleMachine') {
     if (phase === 'ready' && activity.protocol.kind === 'learnThenTransfer') return activity.protocol.demonstration;
     return [activity.prompt, activity.instruction, ...activity.clues].join('。').replace(/[。？！]。/g, '。');

@@ -1,0 +1,730 @@
+{
+  "id": "explore-ordinal-queue-6",
+  "group": "explore-ordinal-queue",
+  "round": 6,
+  "fonts": [
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 25,
+      "px": 18,
+      "tag": "STRONG",
+      "text": "启蒙",
+      "width": 36
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 25,
+      "px": 18,
+      "tag": "STRONG",
+      "text": "探索",
+      "width": 36
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 20.6953125,
+      "px": 18,
+      "tag": "STRONG",
+      "text": "数字岛",
+      "width": 152.5
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 31,
+      "px": 18,
+      "tag": "EM",
+      "text": "144 题",
+      "width": 66.984375
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 20.6953125,
+      "px": 18,
+      "tag": "STRONG",
+      "text": "逻辑屋",
+      "width": 152.5
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 25,
+      "px": 18,
+      "tag": "EM",
+      "text": "126 题",
+      "width": 52.984375
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 20.6953125,
+      "px": 18,
+      "tag": "STRONG",
+      "text": "图形工坊",
+      "width": 152.5
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 25,
+      "px": 18,
+      "tag": "EM",
+      "text": "186 题",
+      "width": 52.984375
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 20.6953125,
+      "px": 18,
+      "tag": "STRONG",
+      "text": "记忆小屋",
+      "width": 152.5
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 25,
+      "px": 18,
+      "tag": "EM",
+      "text": "81 题",
+      "width": 42.1875
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 20.6953125,
+      "px": 18,
+      "tag": "STRONG",
+      "text": "语言花园",
+      "width": 152.5
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 25,
+      "px": 18,
+      "tag": "EM",
+      "text": "54 题",
+      "width": 45.6015625
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 20.6953125,
+      "px": 18,
+      "tag": "STRONG",
+      "text": "生活实验室",
+      "width": 152.5
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 25,
+      "px": 18,
+      "tag": "EM",
+      "text": "30 题",
+      "width": 45.6015625
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 25,
+      "px": 18,
+      "tag": "STRONG",
+      "text": "探索 · 数字岛",
+      "width": 110.9921875
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 25,
+      "px": 18,
+      "tag": "SPAN",
+      "text": "16 个",
+      "width": 42.1875
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 25,
+      "px": 18,
+      "tag": "SPAN",
+      "text": "选择关卡",
+      "width": 327
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 25,
+      "px": 18,
+      "tag": "STRONG",
+      "text": "探索",
+      "width": 36
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 25,
+      "px": 18,
+      "tag": "SPAN",
+      "text": "组合线索，多步思考",
+      "width": 162
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 25,
+      "px": 18,
+      "tag": "SMALL",
+      "text": "75 组 · 621 题",
+      "width": 118.453125
+    },
+    {
+      "class": "eyebrow",
+      "cssPx": 18,
+      "height": 25,
+      "px": 18,
+      "tag": "P",
+      "text": "多想一步 · 第 6 / 9 题",
+      "width": 203.75
+    },
+    {
+      "class": null,
+      "cssPx": 21,
+      "height": 28.34375,
+      "px": 21,
+      "tag": "H1",
+      "text": "队伍有多长",
+      "width": 203.75
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 25,
+      "px": 18,
+      "tag": "SPAN",
+      "text": "听题",
+      "width": 36
+    },
+    {
+      "class": null,
+      "cssPx": 22,
+      "height": 61.59375,
+      "px": 22,
+      "tag": "H2",
+      "text": "小兔从左数第5，从右数第6。队伍一共有几位？",
+      "width": 321
+    },
+    {
+      "class": null,
+      "cssPx": 20,
+      "height": 32,
+      "px": 20,
+      "tag": "P",
+      "text": "选出符合条件的一张图卡。",
+      "width": 321
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 25,
+      "px": 18,
+      "tag": "SPAN",
+      "text": "看看发生了什么",
+      "width": 126
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 50,
+      "px": 18,
+      "tag": "SPAN",
+      "text": "从左数到小兔",
+      "width": 98.5
+    },
+    {
+      "class": null,
+      "cssPx": 23,
+      "height": 32.5,
+      "px": 23,
+      "tag": "STRONG",
+      "text": "5 位",
+      "width": 44.46875
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 50,
+      "px": 18,
+      "tag": "SMALL",
+      "text": "这一组里有小兔",
+      "width": 98.5
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 75,
+      "px": 18,
+      "tag": "SPAN",
+      "text": "两边都数到了我",
+      "width": 66
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 50,
+      "px": 18,
+      "tag": "SPAN",
+      "text": "从右数到小兔",
+      "width": 98.5
+    },
+    {
+      "class": null,
+      "cssPx": 23,
+      "height": 32.5,
+      "px": 23,
+      "tag": "STRONG",
+      "text": "6 位",
+      "width": 44.46875
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 50,
+      "px": 18,
+      "tag": "SMALL",
+      "text": "这一组里也有小兔",
+      "width": 98.5
+    },
+    {
+      "class": "numeric-answer",
+      "cssPx": 28,
+      "height": 56,
+      "px": 28,
+      "tag": "SPAN",
+      "text": "12",
+      "width": 28.28125
+    },
+    {
+      "class": "numeric-answer",
+      "cssPx": 28,
+      "height": 56,
+      "px": 28,
+      "tag": "SPAN",
+      "text": "11",
+      "width": 22.9609375
+    },
+    {
+      "class": "numeric-answer",
+      "cssPx": 28,
+      "height": 56,
+      "px": 28,
+      "tag": "SPAN",
+      "text": "10",
+      "width": 28.28125
+    },
+    {
+      "class": "numeric-answer",
+      "cssPx": 28,
+      "height": 56,
+      "px": 28,
+      "tag": "SPAN",
+      "text": "9",
+      "width": 16.8046875
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 41,
+      "px": 18,
+      "tag": "BUTTON",
+      "text": "清空",
+      "width": 56
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 41,
+      "px": 18,
+      "tag": "BUTTON",
+      "text": "提示",
+      "width": 77
+    },
+    {
+      "class": "activity-primary",
+      "cssPx": 20,
+      "height": 48,
+      "px": 20,
+      "tag": "BUTTON",
+      "text": "选好了，看看",
+      "width": 148
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 25,
+      "px": 18,
+      "tag": "SPAN",
+      "text": "这次尝试 0 次 · 提示 0 次",
+      "width": 210.5859375
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 33,
+      "px": 18,
+      "tag": "BUTTON",
+      "text": "先跳过",
+      "width": 62
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 25,
+      "px": 18,
+      "tag": "STRONG",
+      "text": "题目导航",
+      "width": 72
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 25,
+      "px": 18,
+      "tag": "SPAN",
+      "text": "9 / 9 已做",
+      "width": 84.6015625
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 25,
+      "px": 18,
+      "tag": "SPAN",
+      "text": "1",
+      "width": 7.3828125
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 25,
+      "px": 18,
+      "tag": "SPAN",
+      "text": "2",
+      "width": 10.8046875
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 25,
+      "px": 18,
+      "tag": "SPAN",
+      "text": "3",
+      "width": 10.8046875
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 25,
+      "px": 18,
+      "tag": "SPAN",
+      "text": "4",
+      "width": 10.8046875
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 25,
+      "px": 18,
+      "tag": "SPAN",
+      "text": "5",
+      "width": 10.8046875
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 25,
+      "px": 18,
+      "tag": "SPAN",
+      "text": "6",
+      "width": 10.8046875
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 25,
+      "px": 18,
+      "tag": "SPAN",
+      "text": "7",
+      "width": 9.9609375
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 25,
+      "px": 18,
+      "tag": "SPAN",
+      "text": "8",
+      "width": 10.8046875
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 25,
+      "px": 18,
+      "tag": "SPAN",
+      "text": "9",
+      "width": 10.8046875
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 51,
+      "px": 18,
+      "tag": "SUMMARY",
+      "text": "给家长 · 陪玩提示",
+      "width": 349
+    },
+    {
+      "class": "eyebrow",
+      "cssPx": 18,
+      "height": 26.09375,
+      "px": 18,
+      "tag": "P",
+      "text": "亲子提示卡",
+      "width": 317
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 52.1875,
+      "px": 18,
+      "tag": "P",
+      "text": "你先用了哪条线索？能换一种方法检查吗？",
+      "width": 317
+    },
+    {
+      "class": "activity-parent-note",
+      "cssPx": 18,
+      "height": 52.1875,
+      "px": 18,
+      "tag": "P",
+      "text": "先让孩子自己试，再请他说说线索和理由。提示、重看和尝试会留下记录。",
+      "width": 317
+    },
+    {
+      "class": "activity-parent-focus",
+      "cssPx": 18,
+      "height": 52.1875,
+      "px": 18,
+      "tag": "P",
+      "text": "这题练习：双向序数。知道双向序数都含同一个人",
+      "width": 317
+    },
+    {
+      "class": "activity-parent-focus",
+      "cssPx": 18,
+      "height": 52.1875,
+      "px": 18,
+      "tag": "P",
+      "text": "以上是陪玩起点建议，尚待真实亲子试玩校准，不对应固定年龄。",
+      "width": 317
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 27,
+      "px": 18,
+      "tag": "STRONG",
+      "text": "这题做过了",
+      "width": 317
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 27,
+      "px": 18,
+      "tag": "SPAN",
+      "text": "累计尝试 2 次",
+      "width": 317
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 27,
+      "px": 18,
+      "tag": "SPAN",
+      "text": "提示 0 次 · 重看或重听 0 次",
+      "width": 317
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 51,
+      "px": 18,
+      "tag": "SUMMARY",
+      "text": "探索 · 成长记录",
+      "width": 349
+    },
+    {
+      "class": "eyebrow",
+      "cssPx": 18,
+      "height": 26.09375,
+      "px": 18,
+      "tag": "P",
+      "text": "探索成长记录",
+      "width": 108
+    },
+    {
+      "class": "section-progress-count",
+      "cssPx": 18,
+      "height": 26.09375,
+      "px": 18,
+      "tag": "P",
+      "text": "已完成 144 / 621 题",
+      "width": 317
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 35,
+      "px": 18,
+      "tag": "SPAN",
+      "text": "点数、基数与数量结构",
+      "width": 198
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 35,
+      "px": 18,
+      "tag": "SPAN",
+      "text": "数量比较、补齐与移动补差",
+      "width": 234
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 35,
+      "px": 18,
+      "tag": "SPAN",
+      "text": "数量、排列与容积守恒",
+      "width": 198
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 35,
+      "px": 18,
+      "tag": "SPAN",
+      "text": "有序分合与枚举",
+      "width": 144
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 35,
+      "px": 18,
+      "tag": "SPAN",
+      "text": "凑十、破十与数位表征",
+      "width": 198
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 35,
+      "px": 18,
+      "tag": "SPAN",
+      "text": "情境加减与逆向数量关系",
+      "width": 216
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 35,
+      "px": 18,
+      "tag": "SPAN",
+      "text": "成组计数、等分与剩余",
+      "width": 198
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 35,
+      "px": 18,
+      "tag": "SPAN",
+      "text": "连续量等分与面积占比",
+      "width": 198
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 35,
+      "px": 18,
+      "tag": "SPAN",
+      "text": "序数、排队与重叠计数",
+      "width": 198
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 35,
+      "px": 18,
+      "tag": "SPAN",
+      "text": "单双、十与个位",
+      "width": 144
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 35,
+      "px": 18,
+      "tag": "SPAN",
+      "text": "数列、交错规律与数表",
+      "width": 198
+    },
+    {
+      "class": null,
+      "cssPx": 18,
+      "height": 35,
+      "px": 18,
+      "tag": "SPAN",
+      "text": "等量替换与图形代数",
+      "width": 180
+    },
+    {
+      "class": "tag-overflow",
+      "cssPx": 18,
+      "height": 35,
+      "px": 18,
+      "tag": "SPAN",
+      "text": "还有 4 个",
+      "width": 94.8046875
+    }
+  ],
+  "small": [],
+  "pageWidth": 375,
+  "clips": [],
+  "images": [
+    {
+      "height": 80,
+      "naturalHeight": 320,
+      "naturalWidth": 320,
+      "src": "/images/characters/rabbit.png",
+      "width": 64
+    }
+  ],
+  "stage": {
+    "height": 899.4375,
+    "width": 351,
+    "x": 12,
+    "y": 822.234375
+  },
+  "interactionTested": false,
+  "correctAccepted": null,
+  "feedbackSmall": []
+}

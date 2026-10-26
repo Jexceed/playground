@@ -27,12 +27,14 @@ import { AdvancedInteraction } from "../interactions/AdvancedInteraction";
 import { publicAsset } from "../publicAsset";
 import { ActivityImage, ActivityTokenArt as TokenArt } from "../interactions/ActivityTokenArt";
 import { ActivityEvidence } from "../interactions/ActivityEvidence";
+import { NumberWalkBoard } from "../interactions/NumberWalkBoard";
+import { BoardMoveBoard } from "../interactions/BoardMoveBoard";
 import { PyramidBoard } from '../interactions/PyramidBoard';
 import type { ParentMode } from '../interactions/ParentActivity';
 import { ImageViewer } from '../interactions/ImageViewer';
 import { CardFlipBoard, RuleMachineBoard } from '../interactions/RulePlayBoards';
 import { RULE_PLAY_COPY } from '../domain/rule-play';
-import { imageGallery } from '../data/imageGallery';
+import { activityImageSources } from '../domain/activity-assets';
 
 type Props = {
   game: ActivitySet;
@@ -133,6 +135,7 @@ function ActivityRound({
     createSession,
   );
   const [selectedToken, setSelectedToken] = useState<string | null>(null);
+  const [boardPreviewReset, setBoardPreviewReset] = useState(0);
   const [pictureTarget, setPictureTarget] = useState<{ source: 'choices' | 'board'; key: string } | null>(null);
   const [parentMode, setParentMode] = useState<ParentMode>('play');
   const [messageMode, setMessageMode] = useState<'hint' | 'result'>('result');
@@ -165,6 +168,8 @@ function ActivityRound({
   const evidence = activity.presentation?.evidence;
   const ruleMachine = evidence?.kind === 'ruleMachine' ? evidence : undefined;
   const cardFlip = evidence?.kind === 'cardFlip' ? evidence : undefined;
+  const numberWalk = evidence?.kind === 'numberWalk' ? evidence : undefined;
+  const boardMove = evidence?.kind === 'boardMove' ? evidence : undefined;
   const isMemory = activity.protocol.kind === "memory";
   const isListening = activity.protocol.kind === "memory" && !!(activity.protocol.audioText || activity.protocol.soundSrc);
   useEffect(()=>{
@@ -192,32 +197,9 @@ function ActivityRound({
 
   useEffect(() => {
     let cancelled = false;
-    const sources = new Set(activity.tokens.map((t) => t.image.src));
-    if (activity.kind === "network") sources.add(imageGallery.items.art052Island.src);
-    if (activity.tokens.some(token => token.quantityPicture) ||
-        (evidence?.kind === 'visualComparison' && evidence.panels.some(panel => panel.kind === 'dots')))
-      sources.add(imageGallery.items.patternBlueDisc.src);
-    if (ruleMachine) {
-      sources.add(imageGallery.items.patternBlueDisc.src);
-      sources.add(imageGallery.items.patternYellowDisc.src);
-      sources.add(imageGallery.items.rulePlayMachine.src);
-      sources.add(imageGallery.items.rulePlayTray.src);
-    }
-    if (cardFlip) {
-      sources.add(imageGallery.items.rulePlayCardWhite.src);
-      sources.add(imageGallery.items.rulePlayCardYellow.src);
-    }
-    for (const image of activity.presentation?.storyCards ?? []) sources.add(image.src);
-    for (const card of activity.presentation?.materialCards ?? []) if (card.image) sources.add(card.image.src);
-    if (activity.presentation?.evidence?.kind === 'storySequence')
-      for (const image of activity.presentation.evidence.cards) sources.add(image.src);
-    if (activity.presentation?.evidence?.kind === 'visualComparison')
-      for (const panel of activity.presentation.evidence.panels) if (panel.kind === 'image') sources.add(panel.image.src);
-    if (activity.illustration) sources.add(activity.illustration.src);
-    if (activity.kind === "multiSelect" && activity.example)
-      sources.add(activity.example.image.src);
+    const sources = activityImageSources(activity);
     Promise.all(
-      [...sources].map(
+      sources.map(
         (src) =>
           new Promise<void>((resolve, reject) => {
             const image = new Image();
@@ -486,7 +468,7 @@ function ActivityRound({
     );
   }
   function tokenButton(token: ActivityToken, multi = false) {
-    const illustrated = token.image.style === 'illustration' && !token.textOnly && !token.quantityPicture && !token.moneyValues;
+    const illustrated = token.image.style === 'illustration' && !token.textOnly && !token.quantityPicture && !token.moneyValues && !token.partitionCounts;
     const selected =
       multi && state.response.kind === "multiSelect"
         ? state.response.tokenIds.includes(token.id)
@@ -580,8 +562,8 @@ function ActivityRound({
       </div>
 
       {ruleMachine && <RuleMachineBoard model={ruleMachine} clues={activity.clues} phase={state.phase} disabled={!assetsReady} onStart={() => dispatch({ type: 'start' })} />}
-      {!ruleMachine && !cardFlip && !storyTokenIds && (activity.kind !== 'parentObservation' || parentMode === 'play') && <ActivityEvidence activity={activity} phase={state.phase} />}
-      {!ruleMachine && !cardFlip && activity.clues.length > 0 && (
+      {!ruleMachine && !cardFlip && !numberWalk && !boardMove && !storyTokenIds && (activity.kind !== 'parentObservation' || parentMode === 'play') && <ActivityEvidence activity={activity} phase={state.phase} />}
+      {!ruleMachine && !cardFlip && !numberWalk && !boardMove && activity.kind !== 'network' && activity.clues.length > 0 && (
         <ol className="activity-clues">
           {activity.clues.map((clue, index) => (
             <li
@@ -670,7 +652,9 @@ function ActivityRound({
       )}
       {showResponses && (
         <>
-          {cardFlip ? <CardFlipBoard model={cardFlip} response={state.response} disabled={!canEdit} onFlip={(slotId, tokenId) => { dispatch({ type: 'place', slotId, tokenId }); playTone('tap'); }} />
+          {boardMove ? <BoardMoveBoard key={activity.id} model={boardMove} response={state.response} disabled={!canEdit} resetKey={boardPreviewReset} onToggle={tokenId => { dispatch({ type: 'toggle', tokenId }); playTone('tap'); }} />
+          : numberWalk ? <NumberWalkBoard key={activity.id} model={numberWalk} clues={activity.clues} response={state.response} disabled={!canEdit} onPlace={put} />
+          : cardFlip ? <CardFlipBoard model={cardFlip} response={state.response} disabled={!canEdit} onFlip={(slotId, tokenId) => { dispatch({ type: 'place', slotId, tokenId }); playTone('tap'); }} />
           : isAdvancedActivity(activity) ? <AdvancedInteraction activity={activity} response={state.response} disabled={!canEdit} onChange={response=>dispatch({type:"response",response})} parentMode={parentMode} onParentModeChange={setParentMode}/> : activity.kind === "multiSelect" ? (
             <div className={`activity-choice-grid ${activity.presentation?.compactSymbols ? 'is-symbol-grid' : ''} ${activity.tokens.some(t => (t.image.width ?? 1) / (t.image.height ?? 1) > 1.4) ? "has-wide-options" : ""}`} style={{ '--symbol-columns': activity.tokens.length > 15 ? 7 : Math.min(5, Math.ceil(Math.sqrt(activity.tokens.length))), '--mobile-symbol-columns': Math.min(4, Math.ceil(Math.sqrt(activity.tokens.length))) } as CSSProperties} aria-label="可多选的图卡">
               {activity.tokens.map((t) => tokenButton(t, true))}
@@ -773,6 +757,7 @@ function ActivityRound({
                 disabled={!canEdit}
                 onClick={() => {
                   dispatch({ type: "clear" });
+                  if (boardMove) setBoardPreviewReset(key => key + 1);
                   setSelectedToken(null);
                 }}
               >

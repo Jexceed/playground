@@ -1,0 +1,720 @@
+{
+  "gameId": "explore-nature-growth",
+  "round": 1,
+  "font": {
+    "pageWidth": 1280,
+    "small": [],
+    "texts": [
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "STRONG",
+        "text": "启蒙",
+        "width": 36
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "STRONG",
+        "text": "探索",
+        "width": 36
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 20.6953125,
+        "px": 18,
+        "tag": "STRONG",
+        "text": "数字岛",
+        "width": 54
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "EM",
+        "text": "144 题",
+        "width": 52.984375
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 20.6953125,
+        "px": 18,
+        "tag": "STRONG",
+        "text": "逻辑屋",
+        "width": 54
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "EM",
+        "text": "126 题",
+        "width": 52.984375
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 41.390625,
+        "px": 18,
+        "tag": "STRONG",
+        "text": "图形工坊",
+        "width": 69
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "EM",
+        "text": "186 题",
+        "width": 52.984375
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 41.390625,
+        "px": 18,
+        "tag": "STRONG",
+        "text": "记忆小屋",
+        "width": 69
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "EM",
+        "text": "81 题",
+        "width": 42.1875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 41.390625,
+        "px": 18,
+        "tag": "STRONG",
+        "text": "语言花园",
+        "width": 69
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "EM",
+        "text": "54 题",
+        "width": 45.6015625
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 41.390625,
+        "px": 18,
+        "tag": "STRONG",
+        "text": "生活实验室",
+        "width": 69
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 31,
+        "px": 18,
+        "tag": "EM",
+        "text": "30 题",
+        "width": 59.6015625
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "STRONG",
+        "text": "探索 · 生活实验室",
+        "width": 146.9921875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "6 个",
+        "width": 34.8046875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "H3",
+        "text": "生活与变化",
+        "width": 206
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25.1953125,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "用品放对地方",
+        "width": 200
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 24.6953125,
+        "px": 18,
+        "tag": "SMALL",
+        "text": "动手 · 9 题",
+        "width": 103.796875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25.1953125,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "变化观察册",
+        "width": 200
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 24.6953125,
+        "px": 18,
+        "tag": "SMALL",
+        "text": "动手 · 9 题",
+        "width": 103.796875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "H3",
+        "text": "动手探索",
+        "width": 206
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25.1953125,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "一起做小实验",
+        "width": 200
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 24.6953125,
+        "px": 18,
+        "tag": "SMALL",
+        "text": "动手 · 3 题",
+        "width": 103.796875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25.1953125,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "生活里的判断",
+        "width": 200
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 24.6953125,
+        "px": 18,
+        "tag": "SMALL",
+        "text": "动手 · 3 题",
+        "width": 103.796875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "H3",
+        "text": "表达与行动",
+        "width": 206
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25.1953125,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "节日和生活发现",
+        "width": 200
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 24.6953125,
+        "px": 18,
+        "tag": "SMALL",
+        "text": "动手 · 3 题",
+        "width": 103.796875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25.1953125,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "小手和身体挑战",
+        "width": 200
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 24.6953125,
+        "px": 18,
+        "tag": "SMALL",
+        "text": "动手 · 3 题",
+        "width": 103.796875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "STRONG",
+        "text": "探索",
+        "width": 36
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "组合线索，多步思考",
+        "width": 162
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SMALL",
+        "text": "75 组 · 621 题",
+        "width": 118.453125
+      },
+      {
+        "class": "eyebrow",
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "P",
+        "text": "先试一试 · 第 1 / 9 题",
+        "width": 200.328125
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 24.296875,
+        "px": 18,
+        "tag": "H1",
+        "text": "变化观察册",
+        "width": 200.328125
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "听题",
+        "width": 36
+      },
+      {
+        "class": null,
+        "cssPx": 20,
+        "height": 28,
+        "px": 20,
+        "tag": "H2",
+        "text": "根据观察记录，把变化的先后排好。",
+        "width": 656
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 28.796875,
+        "px": 18,
+        "tag": "P",
+        "text": "先选图卡，再按位置编号排好。也可以拖过去。",
+        "width": 656
+      },
+      {
+        "class": "",
+        "cssPx": 18,
+        "height": 37,
+        "px": 18,
+        "tag": "LI",
+        "text": "种子在土里之后，记录到小芽出土。",
+        "width": 333
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 20,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "1",
+        "width": 20
+      },
+      {
+        "class": "",
+        "cssPx": 18,
+        "height": 37,
+        "px": 18,
+        "tag": "LI",
+        "text": "小芽出土之后，记录到叶片展开。",
+        "width": 315
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 20,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "2",
+        "width": 20
+      },
+      {
+        "class": "slot-number",
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "1",
+        "width": 7.3828125
+      },
+      {
+        "class": "slot-question",
+        "cssPx": 29,
+        "height": 40.5,
+        "px": 29,
+        "tag": "SPAN",
+        "text": "?",
+        "width": 16.1875
+      },
+      {
+        "class": "slot-number",
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "2",
+        "width": 10.8046875
+      },
+      {
+        "class": "slot-question",
+        "cssPx": 29,
+        "height": 40.5,
+        "px": 29,
+        "tag": "SPAN",
+        "text": "?",
+        "width": 16.1875
+      },
+      {
+        "class": "slot-number",
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "3",
+        "width": 10.8046875
+      },
+      {
+        "class": "slot-question",
+        "cssPx": 29,
+        "height": 40.5,
+        "px": 29,
+        "tag": "SPAN",
+        "text": "?",
+        "width": 16.1875
+      },
+      {
+        "class": "tray-instruction",
+        "cssPx": 18,
+        "height": 28.796875,
+        "px": 18,
+        "tag": "P",
+        "text": "选一张图卡，再点位置放进去；也可以拖过去。",
+        "width": 656
+      },
+      {
+        "class": "token-label illustrated-caption",
+        "cssPx": 18,
+        "height": 25.1953125,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "小芽出土",
+        "width": 188
+      },
+      {
+        "class": "token-label illustrated-caption",
+        "cssPx": 18,
+        "height": 25.1953125,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "叶片展开",
+        "width": 188
+      },
+      {
+        "class": "token-label illustrated-caption",
+        "cssPx": 18,
+        "height": 25.1953125,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "种子在土里",
+        "width": 188
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 41,
+        "px": 18,
+        "tag": "BUTTON",
+        "text": "清空",
+        "width": 56
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 41,
+        "px": 18,
+        "tag": "BUTTON",
+        "text": "提示",
+        "width": 77
+      },
+      {
+        "class": "activity-primary",
+        "cssPx": 18,
+        "height": 41,
+        "px": 18,
+        "tag": "BUTTON",
+        "text": "摆好了，看看",
+        "width": 140
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "这次尝试 0 次 · 提示 0 次",
+        "width": 210.5859375
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 33,
+        "px": 18,
+        "tag": "BUTTON",
+        "text": "先跳过",
+        "width": 62
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "STRONG",
+        "text": "题目导航",
+        "width": 72
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "0 / 9 已做",
+        "width": 84.6015625
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "1",
+        "width": 7.3828125
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "2",
+        "width": 10.8046875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "3",
+        "width": 10.8046875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "4",
+        "width": 10.8046875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "5",
+        "width": 10.8046875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "6",
+        "width": 10.8046875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "7",
+        "width": 9.9609375
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "8",
+        "width": 10.8046875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "9",
+        "width": 10.8046875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 51,
+        "px": 18,
+        "tag": "SUMMARY",
+        "text": "给家长 · 陪玩提示",
+        "width": 258
+      },
+      {
+        "class": "eyebrow",
+        "cssPx": 18,
+        "height": 26.09375,
+        "px": 18,
+        "tag": "P",
+        "text": "亲子提示卡",
+        "width": 226
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 52.1875,
+        "px": 18,
+        "tag": "P",
+        "text": "你先用了哪条线索？能换一种方法检查吗？",
+        "width": 226
+      },
+      {
+        "class": "activity-parent-note",
+        "cssPx": 18,
+        "height": 78.28125,
+        "px": 18,
+        "tag": "P",
+        "text": "先让孩子自己试，再请他说说线索和理由。提示、重看和尝试会留下记录。",
+        "width": 226
+      },
+      {
+        "class": "activity-parent-focus",
+        "cssPx": 18,
+        "height": 52.1875,
+        "px": 18,
+        "tag": "P",
+        "text": "这题练习：观察特征。能辨成长图并听懂已给先后",
+        "width": 226
+      },
+      {
+        "class": "activity-parent-focus",
+        "cssPx": 18,
+        "height": 78.28125,
+        "px": 18,
+        "tag": "P",
+        "text": "以上是陪玩起点建议，尚待真实亲子试玩校准，不对应固定年龄。",
+        "width": 226
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 51,
+        "px": 18,
+        "tag": "SUMMARY",
+        "text": "探索 · 成长记录",
+        "width": 258
+      },
+      {
+        "class": "section-progress-count",
+        "cssPx": 18,
+        "height": 26.09375,
+        "px": 18,
+        "tag": "P",
+        "text": "已完成 0 / 621 题",
+        "width": 226
+      },
+      {
+        "class": "muted",
+        "cssPx": 18,
+        "height": 52.1875,
+        "px": 18,
+        "tag": "P",
+        "text": "完成一个小任务后，这里会留下能力标签。",
+        "width": 226
+      }
+    ],
+    "width": 1280
+  },
+  "stage": {
+    "height": 740.0859375,
+    "width": 698,
+    "x": 286,
+    "y": 73
+  },
+  "dom": "- main:\n  - navigation \"主题地图\":\n    - img \"小小思考屋 亲子思维游戏\"\n    - group \"选择启蒙或探索\":\n      - button \"启蒙\":\n        - strong: 启蒙\n      - button \"探索\" [pressed]:\n        - strong: 探索\n    - button \"数字岛 144 题\":\n      - strong: 数字岛\n      - emphasis: 144 题\n    - button \"逻辑屋 126 题\":\n      - strong: 逻辑屋\n      - emphasis: 126 题\n    - button \"图形工坊 186 题\":\n      - strong: 图形工坊\n      - emphasis: 186 题\n    - button \"记忆小屋 81 题\":\n      - generic: 忆\n      - strong: 记忆小屋\n      - emphasis: 81 题\n    - button \"语言花园 54 题\":\n      - generic: 语\n      - strong: 语言花园\n      - emphasis: 54 题\n    - button \"生活实验室 30 题\" [expanded]:\n      - generic: 探\n      - strong: 生活实验室\n      - emphasis: 30 题\n    - region \"关卡列表\":\n      - strong: 探索 · 生活实验室\n      - generic: 6 个\n      - searchbox \"查找当前主题题组\"\n      - heading \"生活与变化\" [level=3]\n      - button \"用品放对地方 动手 · 9 题\":\n        - generic: 用品放对地方\n        - generic: 动手 · 9 题\n      - button \"变化观察册 动手 · 9 题\":\n        - generic: 变化观察册\n        - generic: 动手 · 9 题\n      - heading \"动手探索\" [level=3]\n      - button \"一起做小实验 动手 · 3 题\":\n        - generic: 一起做小实验\n        - generic: 动手 · 3 题\n      - button \"生活里的判断 动手 · 3 题\":\n        - generic: 生活里的判断\n        - generic: 动手 · 3 题\n      - heading \"表达与行动\" [level=3]\n      - button \"节日和生活发现 动手 · 3 题\":\n        - generic: 节日和生活发现\n        - generic: 动手 · 3 题\n      - button \"小手和身体挑战 动手 · 3 题\":\n        - generic: 小手和身体挑战\n        - generic: 动手 · 3 题\n  - generic \"当前部分\":\n    - strong: 探索\n    - generic: 组合线索，多步思考\n    - generic: 75 组 · 621 题\n  - article \"变化观察册\":\n    - region \"变化观察册\":\n      - paragraph: 先试一试 · 第 1 / 9 题\n      - heading \"变化观察册\" [level=1]\n      - button \"听一听题目\":\n        - generic: 听题\n      - heading \"根据观察记录，把变化的先后排好。\" [level=2]\n      - paragraph: 先选图卡，再按位置编号排好。也可以拖过去。\n      - list:\n        - generic: \"1\"\n        - text: 种子在土里之后，记录到小芽出土。\n        - generic: \"2\"\n        - text: 小芽出土之后，记录到叶片展开。\n      - generic \"按编号排列的队伍\":\n        - generic: \"1\"\n        - button \"第1个位置，空位\":\n          - generic: \"?\"\n        - generic: \"2\"\n        - button \"第2个位置，空位\":\n          - generic: \"?\"\n        - generic: \"3\"\n        - button \"第3个位置，空位\":\n          - generic: \"?\"\n      - paragraph: 选一张图卡，再点位置放进去；也可以拖过去。\n      - generic \"可使用的图卡\":\n        - generic: 小芽出土\n        - button \"小芽出土\"\n        - button \"看大图：小芽出土\":\n        - generic: 叶片展开\n        - button \"叶片展开\"\n        - button \"看大图：叶片展开\":\n        - generic: 种子在土里\n        - button \"种子在土里\"\n        - button \"看大图：种子在土里\":\n      - button \"撤销上一步\" [disabled]:\n      - button \"清空\"\n      - button \"提示\":\n        - text: 提示\n      - button \"摆好了，看看\"\n      - generic: 这次尝试 0 次 · 提示 0 次\n      - button \"先跳过\"\n  - complementary:\n    - region \"题目导航\":\n      - strong: 题目导航\n      - generic: 0 / 9 已做\n      - button \"跳到第 1 题\" [active]:\n        - generic: \"1\"\n      - button \"跳到第 2 题\":\n        - generic: \"2\"\n      - button \"跳到第 3 题\":\n        - generic: \"3\"\n      - button \"跳到第 4 题\":\n        - generic: \"4\"\n      - button \"跳到第 5 题\":\n        - generic: \"5\"\n      - button \"跳到第 6 题\":\n        - generic: \"6\"\n      - button \"跳到第 7 题\":\n        - generic: \"7\"\n      - button \"跳到第 8 题\":\n        - generic: \"8\"\n      - button \"跳到第 9 题\":\n        - generic: \"9\"\n    - generic \"给家长 · 陪玩提示\"\n    - generic \"探索 · 成长记录\""
+}

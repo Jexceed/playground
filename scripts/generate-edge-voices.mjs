@@ -3,7 +3,7 @@ import { basename, join } from "node:path";
 import { tmpdir } from "node:os";
 import { spawnFile } from "./lib/spawn-file.mjs";
 import { inspectVoiceFile } from "./lib/voice-media-quality.mjs";
-import { safeVoiceFileName, voiceFileName } from "./lib/voice-rendering.mjs";
+import { safeVoiceFileName, voiceFileName, canReuseVoiceInput } from "./lib/voice-rendering.mjs";
 import { loadTypeScriptModule } from "./lib/load-ts-module.mjs";
 
 const args = parseArgs(process.argv.slice(2));
@@ -17,6 +17,8 @@ const retries = Number(args.retries ?? 4);
 const python = args.python ?? process.env.PYTHON ?? "python3";
 const concurrency = Math.max(1, Math.min(6, Number(args.concurrency ?? 4)));
 const manifestPath = join("public", "audio", "voice", "manifest.json");
+const previousManifest = existsSync(manifestPath) ? JSON.parse(readFileSync(manifestPath, 'utf8')) : null;
+const previousEntries = new Map((previousManifest?.entries ?? []).map(entry => [entry.id, entry]));
 const voiceLines = JSON.parse(readFileSync("public/audio/voice-lines.json", "utf8"));
 const selected = selectLines(voiceLines.lines, limit, includeParent);
 const { prepareSpeechText } = await loadTypeScriptModule("src/speech-pronunciation.ts");
@@ -41,9 +43,11 @@ while(cursor<selected.length) {
   const spokenText = line.spokenText ?? line.text;
   const filename = voiceFileName(line, { voice: effectiveVoice, rate, pitch });
   const outputPath = join(outputDir, filename);
+  const src = `/audio/voice/${locale}/${voiceKey}/${encodeURIComponent(basename(outputPath))}`;
   const textPath = join(tmpdir(), `thinking-island-edge-${process.pid}-${index}.txt`);
   const cachedInspection = await inspectVoiceFile(outputPath, line.text);
-  const reusable = cachedInspection.problems.length === 0;
+  const reusable = cachedInspection.problems.length === 0 && canReuseVoiceInput(line, previousEntries.get(line.id),
+    { voice: effectiveVoice, rate, pitch, src }, previousManifest);
 
   if (!reusable) {
     if (existsSync(outputPath)) {
@@ -93,7 +97,7 @@ while(cursor<selected.length) {
     ...(spokenText !== line.text ? { spokenText } : {}),
     locale,
     voice: effectiveVoice,
-    src: `/audio/voice/${locale}/${voiceKey}/${encodeURIComponent(basename(outputPath))}`,
+    src,
   };
 }
 }));

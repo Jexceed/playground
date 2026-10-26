@@ -1,0 +1,149 @@
+Window: "小小思考屋", App: 小小思考屋.
+0 standard window 小小思考屋, Secondary Actions: Raise
+	1 scroll area
+		2 HTML content Description: 小小思考屋, URL: tauri://localhost
+			3 container
+				4 container 主题地图
+					5 image 小小思考屋 亲子思维游戏
+					6 container 选择启蒙或探索
+						7 toggle button 启蒙, Value: off
+						8 toggle button 探索, Value: on
+					9 button (expanded) 数字岛 144 题, Secondary Actions: Collapse
+					10 button (collapsed) 逻辑屋 126 题, Secondary Actions: Expand
+					11 button (collapsed) 图形工坊 186 题, Secondary Actions: Expand
+					12 button (collapsed) 记忆小屋 81 题, Secondary Actions: Expand
+					13 button (collapsed) 语言花园 54 题, Secondary Actions: Expand
+					14 button (collapsed) 生活实验室 30 题, Secondary Actions: Expand
+					15 container 关卡列表
+						16 container
+							17 text 探索  ·  数字岛
+						18 text 16  个
+						19 search text field (settable) 查找当前主题题组, Placeholder: 查找题组
+							20 text 查找题组
+						21 heading 数量与分组, Value: 3
+							22 text 数量与分组
+						23 button 数量结构屋 动手 · 9 题
+						24 button 移一移比多少 动手 · 9 题
+						25 button 变了样没变多 动手 · 9 题
+						26 button 分法找齐了吗 动手 · 9 题
+						27 heading 数的关系, Value: 3
+							28 text 数的关系
+						29 button 十的好朋友 动手 · 9 题
+						30 button 故事里的未知数 动手 · 9 题
+						31 button 分组小管家 动手 · 9 题
+						32 button 一样大的那一份 动手 · 9 题
+						33 button 队伍有多长 动手 · 9 题
+						34 button 单双和数位 动手 · 9 题
+						35 button 数列侦探 动手 · 9 题
+						36 button 图形等量换 动手 · 9 题
+						37 heading 生活中的数学, Value: 3
+							38 text 生活中的数学
+						39 button 小小零钱铺 动手 · 9 题
+						40 button 时钟往前走 动手 · 9 题
+						41 button 量一量围一围 动手 · 9 题
+						42 button 练习日历 动手 · 9 题
+				43 container 当前部分
+					44 text 探索
+					45 text 组合线索，多步思考 75  组 ·  621  题
+				46 container 练习日历
+					47 container 练习日历
+						48 container
+							49 text 组合挑战  · 第  7  / 9  题
+							50 heading 练习日历, Value: 1
+								51 text 练习日历
+							52 button 听一听题目
+						53 heading 2号浇第一次水，以后每过3天浇一次，第三次是几号？, Value: 2
+							54 text 2号浇第一次水，以后每过3天浇一次，第三次是几号？
+						55 text 选出符合条件的一张图卡。
+						56 container
+							57 text 看看发生了什么
+							58 table 练习日历
+								59 row (selectable) 周
+一
+周
+二
+周
+三
+周
+四
+周
+五
+周
+六
+周
+日
+								60 row (selectable)
+									61 cell (selectable) 1
+									62 cell (selectable) 2
+									63 cell (selectable) 3
+									64 cell (selectable) 4
+									65 cell (selectable) 5
+									66 cell (selectable) 6
+									67 cell (selectable) 7
+								68 row (selectable)
+									69 cell (selectable) 8
+									70 cell (selectable) 9
+									71 cell (selectable) 10
+									72 cell (selectable) 11
+									73 cell (selectable) 12
+									74 cell (selectable) 13
+									75 cell (selectable) 14
+								76 row (selectable)
+									77 cell (selectable) 15
+									78 cell (selectable) 16
+									79 cell (selectable) 17
+									80 cell (selectable) 18
+									81 cell (selectable) 19
+									82 cell (selectable) 20
+									83 cell (selectable) 21
+								84 row (selectable)
+									85 cell (selectable) 22
+									86 cell (selectable) 23
+									87 cell (selectable) 24
+									88 cell (selectable) 25
+									89 cell (selectable) 26
+									90 cell (selectable) 27
+									91 cell (selectable) 28
+						92 container 选择一个答案
+							93 toggle button 8, Value: off
+							94 toggle button 7, Value: off
+							95 toggle button 5, Value: off
+							96 toggle button 11, Value: off
+						97 button (disabled) 撤销上一步
+						98 button 清空
+						99 button 提示
+						100 button 选好了，看看
+						101 container
+							102 text 这次尝试  0  次 · 提示  0  次
+							103 button 先跳过
+				104 container 题目导航
+					105 text 题目导航
+					106 text 0  /  9  已做
+					107 button 跳到第 1 题
+					108 button 跳到第 2 题
+					109 button 跳到第 3 题
+					110 button 跳到第 4 题
+					111 button 跳到第 5 题
+					112 button 跳到第 6 题
+					113 button 跳到第 7 题
+					114 button 跳到第 8 题
+					115 button 跳到第 9 题
+				116 summary 给家长 · 陪玩提示, Value: off
+					117 text 给家长 · 陪玩提示
+				118 summary 探索 · 成长记录, Value: off
+					119 text 探索
+					120 text  · 成长记录
+		121 scroll bar (settable, float) 0
+	122 close button
+	123 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	124 minimize button
+	125 text 小小思考屋
+126 menu bar
+	127 小小思考屋
+	128 File
+	129 Edit
+	130 View
+	131 Window
+	132 Help
+
+The focused UI element is 2 HTML content Description: 小小思考屋, URL: tauri://localhost

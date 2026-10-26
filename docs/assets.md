@@ -1,5 +1,11 @@
 # Asset Registry And Taxonomy
 
+## 059 math models and bird departure
+
+- `public/images/items/math-models-059/`: four transparent local image_gen assets for practice notes, coins, and narrow/wide water vessels. Values and labels render in HTML; clock, ruler, partition and equation models use precise authored quantities. Originals, prompts and hashes are in `source/`.
+- `public/images/items/birds-departure-059/`: `bird-flying.png` (384×384) and `branch.png` (1008×336), registered as `items.birdFlying` and `items.birdBranch`. Built-in image_gen generated the branch and derived the flight pose from the existing `items.bird` reference. `source/prompts.json` and `source/manifest.json` retain exact prompts, original paths, dimensions, hashes and alpha range. Runtime files are proportional whole-canvas downscales, with transparency preserved.
+- The bird scene is composed from these props and the existing bird image; it is not a static `sceneImage`. Both initial and departing counts come from the original authored visual groups, never the answer. New controls and action narration are included in the standard 4287-entry Edge voice pack.
+
 This project uses local, auditable assets for the child-facing experience. Asset
 paths are part of the product contract: move them only with code, docs, and audit
 updates in the same change.
@@ -50,6 +56,59 @@ category. For example, a generated scene source belongs in
 `public/images/scenes/source/`.
 
 ## Art Changes And Shared Controls
+
+The ongoing 059 readability review measures visible text at its rendered size,
+including SVG viewBox scaling. CSS font size alone does not prove readability of
+text embedded in PNGs. Bridge gap and material labels now remain HTML text while
+the river/plank geometry retains one shared length unit. Keep the chapter ledger's
+pending bitmap and later-state checks distinct from the completed initial screen
+font scan; do not report the whole app as free of small text until those pass.
+
+The 058 word-picture pairs live in `public/images/items/vocabulary-058/` and are
+registered as `wordHighKite`, `wordLowKite`, `wordAboveTable`, `wordBelowTable`,
+`wordLongPencil`, `wordShortPencil`, `wordManyBerries`, and `wordFewBerries`.
+Built-in image_gen originals, actual prompts, references and hashes are retained
+in `source/manifest.json`. Each runtime PNG is a proportional 640×640 downscale
+of the complete square source. Never auto-trim these comparison canvases: shared
+camera, reference objects, pencil thickness and fruit/plate scale carry meaning.
+Images are evidence-bearing cards rather than decorative `sceneImage` values.
+Only E01 matching cards opt into the larger 132px desktop/108px narrow-screen
+picture sizing; the words, local voice lines and shared controls remain intact.
+The older diagrams stay registered for historical exact-model audits.
+
+The 057 closure figures use shared vector geometry in `src/data/contourArtwork.ts`.
+Each complete outline is one closed sequence of segments; a missing figure emits
+the same segments with one authored interval removed. Associated apple leaf/stem
+details disappear with its top gap. `GraphicContourFigure` is restricted to the
+current outline/missing surfaces; existing color, silhouette and occlusion PNGs
+remain in their own render paths. Review SVGs and the eight-round contact sheet
+are verification artifacts under `specs/057-contour-redraw/verification/`.
+
+The 056 island goal display reuses the registered `art052Island` image. Its small
+bridge pictures and empty slots are deterministic geometry: `GraphNode.degree`
+sets the number of target slots, incident edge counts fill them, and excess
+bridges remain separately visible. Slots express quantity, not prescribed bridge
+directions. The same bridge increments both endpoint displays. Route diagrams
+keep their separate presentation.
+
+Edge voice generation must compare the previous manifest's full rendering input
+before reusing an audio file: a truncated voice-line ID is not a text fingerprint.
+Changed text/spoken text, locale, voice/rate/pitch, source path or absent input
+provenance requires generation even if the old media file passes duration checks.
+
+The 055 chess model stores exact black/white/empty cells and original candidate
+positions in `BoardMoveEvidence`. The interactive CSS board uses distinct solid
+stones, dashed empty circles and a highlighted temporary stone, with no numeric
+placeholder inside an empty square. Selection check marks are separate from
+pieces. Legacy bitmap references remain for historical audits; the live L11
+surface uses the explicit model. Generic rule diagrams never encode an answer.
+
+The 054 number-walk model reuses `imageGallery.characters.rabbit` and `.dog`
+with red/blue bases, preserving the existing registered PNGs. Starts, signed
+move sizes and turn counts live in `NumberWalkEvidence`; diagrams are rendered
+from that model and never contain precomputed answer positions. A child's
+placement is represented by the existing ordered-placement token IDs. Both
+characters share one continuous number path and remain visible in separate lanes.
 
 Image refinement must stay within the picture, diagram and necessary picture
 layout. Keep the shared confirm/reset/clear buttons, navigation, panel frame and

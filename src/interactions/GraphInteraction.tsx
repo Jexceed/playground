@@ -2,6 +2,9 @@ import { useEffect, useId, useState } from "react";
 import { Footprints } from "lucide-react";
 import { imageGallery } from "../data/imageGallery";
 import { ActivityImage } from "./ActivityTokenArt";
+import { IslandBridgeGoal, IslandBridgeLegend } from "./IslandBridgeGoal";
+import { bridgeQuota, countIslandBridges, islandRequirementSpeech } from "../domain/island-bridges";
+import { speak } from "../speech";
 import { routeNodes, type GraphEdge, type NetworkActivity, type RouteActivity } from "../domain/advanced-activity";
 import { connectionGeometry, canWalkEdge, cycleBridge, walkEdge, type NetworkResponse, type RouteResponse } from "./connection-state";
 
@@ -36,16 +39,17 @@ export function GraphInteraction({ activity, response, disabled, onChange }: Pro
     const options = edges.filter(e => ((e.from === from && e.to === id) || (e.to === from && e.from === id)) && canUse(e));
     if (options.length === 1) useEdge(options[0]);
     else if (options.length > 1) setChooseLanes(id);
-    else if (!route) setSelected(id);
+    else if (!route) { setSelected(id); void speak(islandRequirementSpeech(nodes.find(node => node.id === id)!)); }
   };
   const geometry = (edge: GraphEdge, offset = 0, backwards = false) => connectionGeometry(activity.graph, edge, offset, backwards);
   const toolbar = activity.kind === "network"
     ? selected ? `再点一个相邻小岛，和 ${name(selected)} 搭桥` : '直接点岛之间的线，试着搭一座桥'
     : chooseLanes ? `到 ${name(chooseLanes)} 有几条路，请直接点想走的那一条` : `现在在 ${current ? name(current) : '起点'}，点相邻地点或蓝色路段`;
 
-  return <section className={`graph-workspace is-${activity.kind}`} aria-label={activity.kind === "network" ? "搭桥操作图" : "路线操作图"}
+  return <section className={`graph-workspace is-${activity.kind}`} data-island-count={activity.kind === 'network' ? nodes.length : undefined} aria-label={activity.kind === "network" ? "搭桥操作图" : "路线操作图"}
     onKeyDown={e => { if (e.key === "Escape") { setSelected(null); setChooseLanes(null); } }}>
-    <div className="connection-toolbar"><p role="status">{disabled ? route ? '沿着箭头，说说刚才走过的路' : '一起数一数每个岛连出的桥' : toolbar}</p>{route && <span className="connection-count">已走 {response.edgeIds.length} 段</span>}</div>
+    {route ? <div className="connection-toolbar"><p role="status">{disabled ? '沿着箭头，说说刚才走过的路' : toolbar}</p><span className="connection-count">已走 {response.edgeIds.length} 段</span></div> : <IslandBridgeLegend />}
+    <div className={route ? undefined : 'island-map-scroll'}>
     <div className="graph-map">
       <svg className="graph-board" viewBox="0 0 600 340" preserveAspectRatio="none" role="group" aria-label="可操作的连接线">
         {activity.kind === "network" && <rect width="600" height="340" fill="#edf7f8" />}
@@ -87,22 +91,23 @@ export function GraphInteraction({ activity, response, disabled, onChange }: Pro
         </button>;
       })}
       {nodes.map(node => {
-        const islandCount = response.kind === "network" ? edges.filter(e => e.from === node.id || e.to === node.id).reduce((sum, e) => sum + (response.counts[e.id] ?? e.fixed ?? 0), 0) : 0;
+        const islandCount = response.kind === "network" ? countIslandBridges(activity.graph, response.counts, node.id) : 0;
         const reachable = edges.some(e => canUse(e) && ((e.from === (route ? current : selected) && e.to === node.id) || (e.to === (route ? current : selected) && e.from === node.id)));
-        const label = activity.kind === 'network' ? `${node.label}岛，需要${node.degree}座桥，已连${islandCount}座` : `${node.label}${node.id === current ? '，当前位置' : reachable ? '，可以走到这里' : ''}`;
+        const label = activity.kind === 'network' ? `${node.label}岛，要${node.degree}座桥，现在${islandCount}座，${bridgeQuota(node.degree ?? 0, islandCount).label}` : `${node.label}${node.id === current ? '，当前位置' : reachable ? '，可以走到这里' : ''}`;
         return <div className="graph-node-position" key={node.id} style={{ left: `${node.x / 6}%`, top: `${node.y / 3.4}%` }}>
           {route && node.id === current && <span className="graph-you-are-here">我在这里</span>}
           <button type="button" aria-label={label} aria-pressed={node.id === (route ? current : selected)}
             disabled={disabled || (route && node.id !== current && !reachable)}
             className={`graph-node${node.id === (route ? current : selected) ? ' is-current' : ''}${reachable ? ' is-reachable' : ''}`}
             onClick={() => useNode(node.id)}>
-            {activity.kind === "network" ? <><ActivityImage image={imageGallery.items.art052Island} className="graph-island-art" decorative /><span className="graph-island-name">{node.label}</span><strong>{node.degree}</strong><small>已连 {islandCount}</small></> : <strong>{node.label}</strong>}
+            {activity.kind === "network" ? <><ActivityImage image={imageGallery.items.art052Island} className="graph-island-art" decorative /><span className="graph-island-name">{node.label}岛</span><IslandBridgeGoal id={node.id} target={node.degree ?? 0} current={islandCount} /></> : <strong>{node.label}</strong>}
           </button>
           {activity.kind === "route" && <span className="graph-place-note">{node.id === activity.start ? '起点' : node.id === activity.end ? '终点' : activity.requiredNodes.includes(node.id) ? '要经过' : ''}</span>}
         </div>;
       })}
     </div>
+    </div>
     {route ? <p className="graph-route-trail" aria-label="已走路线">{walked.map((id, i) => <span key={`${id}-${i}`}>{i > 0 && <span aria-hidden="true"> → </span>}<b className={i === walked.length - 1 ? 'is-current' : ''}>{name(id)}</b></span>)}</p>
-      : !disabled && <p className="connection-footnote">大数字是需要的桥数。点线加桥，两座后再点可重连；现成的桥会保留。</p>}
+      : <div className="island-connection-note"><span role="status">{selected ? toolbar : '每个岛都要刚好，还要能走遍所有岛。'}</span><span>＋添一座 · ↶收回新搭的桥，现成桥会留下。</span><span className="island-pan-hint">↔ 左右滑动看小岛</span></div>}
   </section>;
 }

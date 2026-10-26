@@ -1,0 +1,296 @@
+[
+  {
+    "action": "同格",
+    "answers": [
+      "6",
+      "6"
+    ],
+    "broken": 0,
+    "positions": [
+      {
+        "actor": "red",
+        "filled": "true",
+        "position": "6"
+      },
+      {
+        "actor": "blue",
+        "filled": "true",
+        "position": "6"
+      }
+    ],
+    "status": "",
+    "viewport": 1280,
+    "width": 1280
+  },
+  {
+    "action": "撤销蓝色",
+    "answers": [
+      "6",
+      "?"
+    ],
+    "broken": 0,
+    "positions": [
+      {
+        "actor": "red",
+        "filled": "true",
+        "position": "6"
+      },
+      {
+        "actor": "blue",
+        "filled": "false",
+        "position": "9"
+      }
+    ],
+    "status": "",
+    "viewport": 1280,
+    "width": 1280
+  },
+  {
+    "action": "清空回起点",
+    "answers": [
+      "?",
+      "?"
+    ],
+    "broken": 0,
+    "positions": [
+      {
+        "actor": "red",
+        "filled": "false",
+        "position": "1"
+      },
+      {
+        "actor": "blue",
+        "filled": "false",
+        "position": "9"
+      }
+    ],
+    "status": "",
+    "viewport": 1280,
+    "width": 1280
+  },
+  {
+    "round": 1,
+    "wrongStatus": "再对照图和题目的条件，一步一步检查。",
+    "correct": true,
+    "answers": [
+      "3",
+      "7"
+    ],
+    "broken": 0,
+    "positions": [
+      {
+        "actor": "red",
+        "filled": "true",
+        "position": "3"
+      },
+      {
+        "actor": "blue",
+        "filled": "true",
+        "position": "7"
+      }
+    ],
+    "status": "每走一次都更新位置。红色停在3，蓝色停在7。两个位置可以相同。",
+    "viewport": 1280,
+    "width": 1280
+  },
+  {
+    "round": 2,
+    "wrongStatus": "再对照图和题目的条件，一步一步检查。",
+    "correct": true,
+    "answers": [
+      "4",
+      "8"
+    ],
+    "broken": 0,
+    "positions": [
+      {
+        "actor": "red",
+        "filled": "true",
+        "position": "4"
+      },
+      {
+        "actor": "blue",
+        "filled": "true",
+        "position": "8"
+      }
+    ],
+    "status": "每走一次都更新位置。红色停在4，蓝色停在8。两个位置可以相同。",
+    "viewport": 1280,
+    "width": 1280
+  },
+  {
+    "round": 3,
+    "wrongStatus": "再对照图和题目的条件，一步一步检查。",
+    "correct": true,
+    "answers": [
+      "5",
+      "9"
+    ],
+    "broken": 0,
+    "positions": [
+      {
+        "actor": "red",
+        "filled": "true",
+        "position": "5"
+      },
+      {
+        "actor": "blue",
+        "filled": "true",
+        "position": "9"
+      }
+    ],
+    "status": "每走一次都更新位置。红色停在5，蓝色停在9。两个位置可以相同。",
+    "viewport": 1280,
+    "width": 1280
+  },
+  {
+    "round": 4,
+    "wrongStatus": "再对照图和题目的条件，一步一步检查。",
+    "correct": true,
+    "answers": [
+      "4",
+      "3"
+    ],
+    "broken": 0,
+    "positions": [
+      {
+        "actor": "blue",
+        "filled": "true",
+        "position": "3"
+      },
+      {
+        "actor": "red",
+        "filled": "true",
+        "position": "4"
+      }
+    ],
+    "status": "每走一次都更新位置。红色停在4，蓝色停在3。两个位置可以相同。",
+    "viewport": 1280,
+    "width": 1280
+  },
+  {
+    "round": 5,
+    "wrongStatus": "再对照图和题目的条件，一步一步检查。",
+    "correct": true,
+    "answers": [
+      "5",
+      "4"
+    ],
+    "broken": 0,
+    "positions": [
+      {
+        "actor": "blue",
+        "filled": "true",
+        "position": "4"
+      },
+      {
+        "actor": "red",
+        "filled": "true",
+        "position": "5"
+      }
+    ],
+    "status": "每走一次都更新位置。红色停在5，蓝色停在4。两个位置可以相同。",
+    "viewport": 1280,
+    "width": 1280
+  },
+  {
+    "round": 6,
+    "wrongStatus": "再对照图和题目的条件，一步一步检查。",
+    "correct": true,
+    "answers": [
+      "6",
+      "5"
+    ],
+    "broken": 0,
+    "positions": [
+      {
+        "actor": "blue",
+        "filled": "true",
+        "position": "5"
+      },
+      {
+        "actor": "red",
+        "filled": "true",
+        "position": "6"
+      }
+    ],
+    "status": "每走一次都更新位置。红色停在6，蓝色停在5。两个位置可以相同。",
+    "viewport": 1280,
+    "width": 1280
+  },
+  {
+    "round": 7,
+    "wrongStatus": "再对照图和题目的条件，一步一步检查。",
+    "correct": true,
+    "answers": [
+      "5",
+      "1"
+    ],
+    "broken": 0,
+    "positions": [
+      {
+        "actor": "blue",
+        "filled": "true",
+        "position": "1"
+      },
+      {
+        "actor": "red",
+        "filled": "true",
+        "position": "5"
+      }
+    ],
+    "status": "每走一次都更新位置。红色停在5，蓝色停在1。两个位置可以相同。",
+    "viewport": 1280,
+    "width": 1280
+  },
+  {
+    "round": 8,
+    "wrongStatus": "再对照图和题目的条件，一步一步检查。",
+    "correct": true,
+    "answers": [
+      "6",
+      "2"
+    ],
+    "broken": 0,
+    "positions": [
+      {
+        "actor": "blue",
+        "filled": "true",
+        "position": "2"
+      },
+      {
+        "actor": "red",
+        "filled": "true",
+        "position": "6"
+      }
+    ],
+    "status": "每走一次都更新位置。红色停在6，蓝色停在2。两个位置可以相同。",
+    "viewport": 1280,
+    "width": 1280
+  },
+  {
+    "round": 9,
+    "wrongStatus": "再对照图和题目的条件，一步一步检查。",
+    "correct": true,
+    "answers": [
+      "7",
+      "3"
+    ],
+    "broken": 0,
+    "positions": [
+      {
+        "actor": "blue",
+        "filled": "true",
+        "position": "3"
+      },
+      {
+        "actor": "red",
+        "filled": "true",
+        "position": "7"
+      }
+    ],
+    "status": "每走一次都更新位置。红色停在7，蓝色停在3。两个位置可以相同。",
+    "viewport": 1280,
+    "width": 1280
+  }
+]

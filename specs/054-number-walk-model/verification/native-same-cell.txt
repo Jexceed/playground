@@ -1,0 +1,132 @@
+Window: "小小思考屋", App: 小小思考屋.
+0 standard window 小小思考屋, Secondary Actions: Raise
+	1 scroll area
+		2 HTML content Description: 小小思考屋, URL: tauri://localhost
+			3 container
+				4 container 主题地图
+					5 image 小小思考屋 亲子思维游戏
+					6 container 选择启蒙或探索
+						7 toggle button 启蒙, Value: off
+						8 toggle button 探索, Value: on
+					9 button (collapsed) 数字岛 144 题, Secondary Actions: Expand
+					10 button (expanded) 逻辑屋 126 题, Secondary Actions: Collapse
+					11 button (collapsed) 图形工坊 186 题, Secondary Actions: Expand
+					12 button (collapsed) 记忆小屋 81 题, Secondary Actions: Expand
+					13 button (collapsed) 语言花园 54 题, Secondary Actions: Expand
+					14 button (collapsed) 生活实验室 30 题, Secondary Actions: Expand
+					15 container 关卡列表
+						16 container
+							17 text 探索  ·  逻辑屋
+						18 text 15  个
+						19 search text field (settable) 查找当前主题题组, Placeholder: 查找题组
+							20 text 查找题组
+						21 heading 分类与线索, Value: 3
+							22 text 分类与线索
+						23 button 规则收纳盒 动手 · 6 题
+						24 button 线索排排队 动手 · 6 题
+						25 button 分类换个角度 动手 · 9 题
+						26 button 关系接力 动手 · 9 题
+						27 button 线索够不够 动手 · 9 题
+						28 button 格子里的线索 动手 · 9 题
+						29 heading 看与记, Value: 3
+							30 text 看与记
+						31 button 记忆摆一摆 动手 · 6 题
+						32 heading 顺序与推理, Value: 3
+							33 text 顺序与推理
+						34 button 路线设计师 动手 · 9 题
+						35 button 先后有讲究 动手 · 9 题
+						36 button 证据说明什么 动手 · 9 题
+						37 button 学会新规则 动手 · 9 题
+						38 heading 变化与策略, Value: 3
+							39 text 变化与策略
+						40 button 翻牌小机关 动手 · 9 题
+						41 button 两位朋友走格子 动手 · 9 题
+						42 button 棋盘下一步 动手 · 9 题
+						43 button 小岛连桥 动手 · 9 题
+				44 container 当前部分
+					45 text 探索
+					46 text 组合线索，多步思考 75  组 ·  621  题
+				47 container 两位朋友走格子
+					48 container 两位朋友走格子
+						49 container
+							50 text 先试一试  · 第  1  / 9  题
+							51 heading 两位朋友走格子, Value: 1
+								52 text 两位朋友走格子
+							53 button 听一听题目
+						54 heading 走完以后，两位朋友分别停在哪个数字？, Value: 2
+							55 text 走完以后，两位朋友分别停在哪个数字？
+						56 text 选一位朋友，再点数字格，把它放到走完的位置。
+						57 container 两位朋友走格子模型
+							58 container
+								59 toggle button 选择红色朋友, Value: off
+								60 image 每次向右走1格
+								61 button 听红色朋友的走法
+							62 container
+								63 toggle button 选择蓝色朋友, Value: on
+								64 image 每次向左走1格
+								65 button 听蓝色朋友的走法
+							66 text 一起走  2  次
+							67 container 两位朋友都走2次
+								68 text 1
+								69 text 2
+							70 button 听一起走几次
+							71 text 选一位朋友，点格子让它走
+							72 container 从0到11的连续格子，可左右滑动
+								73 button 把蓝色朋友放到0
+								74 container 红色朋友从1出发
+									75 text 起点
+								76 button 把蓝色朋友放到1
+								77 button 把蓝色朋友放到2
+								78 button 把蓝色朋友放到3
+								79 button 把蓝色朋友放到4
+								80 button 把蓝色朋友放到5
+								81 toggle button 红色朋友，现在在6，点选后点数字格, Value: off
+								82 button 把蓝色朋友放到6
+								83 toggle button 蓝色朋友，现在在6，点选后点数字格, Value: on
+								84 button 把蓝色朋友放到7
+								85 button 把蓝色朋友放到8
+								86 button 把蓝色朋友放到9
+								87 container 蓝色朋友从9出发
+									88 text 起点
+								89 button 把蓝色朋友放到10
+								90 button 把蓝色朋友放到11
+							91 container 两位朋友最后的位置
+								92 text 红色朋友 停在 6 蓝色朋友 停在 6
+						93 button 撤销上一步
+						94 button 清空
+						95 button 提示
+						96 button 摆好了，看看
+						97 container
+							98 text 这次尝试  0  次 · 提示  0  次
+							99 button 先跳过
+				100 container 题目导航
+					101 text 题目导航
+					102 text 0  /  9  已做
+					103 button 跳到第 1 题
+					104 button 跳到第 2 题
+					105 button 跳到第 3 题
+					106 button 跳到第 4 题
+					107 button 跳到第 5 题
+					108 button 跳到第 6 题
+					109 button 跳到第 7 题
+					110 button 跳到第 8 题
+					111 button 跳到第 9 题
+				112 summary 给家长 · 陪玩提示, Value: off
+					113 text 给家长 · 陪玩提示
+				114 summary 探索 · 成长记录, Value: off
+					115 text 探索
+					116 text  · 成长记录
+		117 scroll bar (settable, float) 1
+	118 close button
+	119 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	120 minimize button
+	121 text 小小思考屋
+122 menu bar
+	123 小小思考屋
+	124 File
+	125 Edit
+	126 View
+	127 Window
+	128 Help
+
+The focused UI element is 47 container 两位朋友走格子

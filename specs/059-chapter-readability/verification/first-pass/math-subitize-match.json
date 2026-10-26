@@ -1,0 +1,603 @@
+{
+  "gameId": "math-subitize-match",
+  "round": 1,
+  "font": {
+    "pageWidth": 1280,
+    "small": [],
+    "texts": [
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "STRONG",
+        "text": "启蒙",
+        "width": 36
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "STRONG",
+        "text": "探索",
+        "width": 36
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 20.6953125,
+        "px": 18,
+        "tag": "STRONG",
+        "text": "数字岛",
+        "width": 102.015625
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 45,
+        "px": 18,
+        "tag": "SMALL",
+        "text": "数数、比较、加减、分组、时钟",
+        "width": 177
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 31,
+        "px": 18,
+        "tag": "EM",
+        "text": "122 题",
+        "width": 66.984375
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 20.6953125,
+        "px": 18,
+        "tag": "STRONG",
+        "text": "逻辑屋",
+        "width": 54
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "EM",
+        "text": "319 题",
+        "width": 52.984375
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 20.6953125,
+        "px": 18,
+        "tag": "STRONG",
+        "text": "图形工坊",
+        "width": 72
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "EM",
+        "text": "48 题",
+        "width": 45.6015625
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "STRONG",
+        "text": "启蒙 · 数字岛",
+        "width": 110.9921875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "8 个",
+        "width": 34.8046875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 26.09375,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "数一数",
+        "width": 139.8125
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 24.6953125,
+        "px": 18,
+        "tag": "SMALL",
+        "text": "18 题",
+        "width": 54.1875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 26.09375,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "一眼看出来",
+        "width": 139.8125
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 24.6953125,
+        "px": 18,
+        "tag": "SMALL",
+        "text": "15 题",
+        "width": 54.1875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 26.09375,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "多一点，少一点",
+        "width": 139.8125
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 24.6953125,
+        "px": 18,
+        "tag": "SMALL",
+        "text": "12 题",
+        "width": 54.1875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 26.09375,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "合起来，拆开来",
+        "width": 136.3984375
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 24.6953125,
+        "px": 18,
+        "tag": "SMALL",
+        "text": "28 题",
+        "width": 57.6015625
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 26.09375,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "小鸟飞走了",
+        "width": 139.8125
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 24.6953125,
+        "px": 18,
+        "tag": "SMALL",
+        "text": "12 题",
+        "width": 54.1875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 26.09375,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "公平分一分",
+        "width": 139.8125
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 24.6953125,
+        "px": 18,
+        "tag": "SMALL",
+        "text": "13 题",
+        "width": 54.1875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 26.09375,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "几个几个数",
+        "width": 139.8125
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 24.6953125,
+        "px": 18,
+        "tag": "SMALL",
+        "text": "12 题",
+        "width": 54.1875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 26.09375,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "时钟小管家",
+        "width": 139.8125
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 24.6953125,
+        "px": 18,
+        "tag": "SMALL",
+        "text": "12 题",
+        "width": 54.1875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "STRONG",
+        "text": "启蒙",
+        "width": 36
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "看图发现，轻松起步",
+        "width": 162
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SMALL",
+        "text": "40 组 · 489 题",
+        "width": 122.9921875
+      },
+      {
+        "class": "eyebrow",
+        "cssPx": 18,
+        "height": 31,
+        "px": 18,
+        "tag": "P",
+        "text": "第 1 / 15 题 ·",
+        "width": 566
+      },
+      {
+        "class": "difficulty-badge",
+        "cssPx": 18,
+        "height": 31,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "难度 L2",
+        "width": 79.4609375
+      },
+      {
+        "class": null,
+        "cssPx": 30.4,
+        "height": 34.953125,
+        "px": 30.4,
+        "tag": "H3",
+        "text": "看一眼，这里有几个？",
+        "width": 566
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 26.09375,
+        "px": 18,
+        "tag": "P",
+        "text": "先看整体形状，不用一个个数。",
+        "width": 566
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "STRONG",
+        "text": "听题",
+        "width": 36
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "STRONG",
+        "text": "看一眼",
+        "width": 600
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "1",
+        "width": 7.3828125
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "3",
+        "width": 10.8046875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "2",
+        "width": 10.8046875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 41,
+        "px": 18,
+        "tag": "BUTTON",
+        "text": "从头来",
+        "width": 103
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "看看对不对",
+        "width": 90
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "STRONG",
+        "text": "题目导航",
+        "width": 72
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "0 / 15 已做",
+        "width": 91.984375
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "1",
+        "width": 7.3828125
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "2",
+        "width": 10.8046875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "3",
+        "width": 10.8046875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "4",
+        "width": 10.8046875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "5",
+        "width": 10.8046875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "6",
+        "width": 10.8046875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "7",
+        "width": 9.9609375
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "8",
+        "width": 10.8046875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "9",
+        "width": 10.8046875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "10",
+        "width": 18.1875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "11",
+        "width": 14.765625
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "12",
+        "width": 18.1875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "13",
+        "width": 18.1875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "14",
+        "width": 18.1875
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SPAN",
+        "text": "15",
+        "width": 18.1875
+      },
+      {
+        "class": "eyebrow",
+        "cssPx": 18,
+        "height": 26.09375,
+        "px": 18,
+        "tag": "P",
+        "text": "亲子提示卡",
+        "width": 228
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 52.1875,
+        "px": 18,
+        "tag": "P",
+        "text": "可以问：你是一眼看出来的，还是一个个数出来的？",
+        "width": 228
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 25,
+        "px": 18,
+        "tag": "SUMMARY",
+        "text": "本题追问",
+        "width": 228
+      },
+      {
+        "class": null,
+        "cssPx": 18,
+        "height": 27,
+        "px": 18,
+        "tag": "BUTTON",
+        "text": "听家长提示",
+        "width": 102
+      },
+      {
+        "class": "eyebrow",
+        "cssPx": 18,
+        "height": 26.09375,
+        "px": 18,
+        "tag": "P",
+        "text": "启蒙成长记录",
+        "width": 108
+      },
+      {
+        "class": "section-progress-count",
+        "cssPx": 18,
+        "height": 26.09375,
+        "px": 18,
+        "tag": "P",
+        "text": "已完成 0 / 489 题",
+        "width": 228
+      },
+      {
+        "class": "muted",
+        "cssPx": 18,
+        "height": 52.1875,
+        "px": 18,
+        "tag": "P",
+        "text": "完成一个小任务后，这里会留下能力标签。",
+        "width": 228
+      }
+    ],
+    "width": 1280
+  },
+  "stage": {
+    "height": 600,
+    "width": 698,
+    "x": 286,
+    "y": 73
+  },
+  "dom": "- main:\n  - navigation \"主题地图\":\n    - img \"小小思考屋 亲子思维游戏\"\n    - group \"选择启蒙或探索\":\n      - button \"启蒙\" [pressed]:\n        - strong: 启蒙\n      - button \"探索\":\n        - strong: 探索\n    - button \"数字岛 数数、比较、加减、分组、时钟 122 题\" [expanded]:\n      - strong: 数字岛\n      - generic: 数数、比较、加减、分组、时钟\n      - emphasis: 122 题\n    - button \"逻辑屋 319 题\":\n      - strong: 逻辑屋\n      - emphasis: 319 题\n    - button \"图形工坊 48 题\":\n      - strong: 图形工坊\n      - emphasis: 48 题\n    - region \"关卡列表\":\n      - strong: 启蒙 · 数字岛\n      - generic: 8 个\n      - searchbox \"查找当前主题题组\"\n      - button \"数一数 18 题\":\n        - generic: 数一数\n        - generic: 18 题\n      - button \"一眼看出来 15 题\":\n        - generic: 一眼看出来\n        - generic: 15 题\n      - button \"多一点，少一点 12 题\":\n        - generic: 多一点，少一点\n        - generic: 12 题\n      - button \"合起来，拆开来 28 题\":\n        - generic: 合起来，拆开来\n        - generic: 28 题\n      - button \"小鸟飞走了 12 题\":\n        - generic: 小鸟飞走了\n        - generic: 12 题\n      - button \"公平分一分 13 题\":\n        - generic: 公平分一分\n        - generic: 13 题\n      - button \"几个几个数 12 题\":\n        - generic: 几个几个数\n        - generic: 12 题\n      - button \"时钟小管家 12 题\":\n        - generic: 时钟小管家\n        - generic: 12 题\n  - generic \"当前部分\":\n    - strong: 启蒙\n    - generic: 看图发现，轻松起步\n    - generic: 40 组 · 489 题\n  - article \"一眼看出来\":\n    - paragraph:\n      - text: 第 1 / 15 题 ·\n      - generic \"难度 L2，基础：需要稳定匹配图、数量或声音线索。 比较 1 组图卡，找共同点、差异或缺失项。主要训练小数量辨认、数量结构。\": 难度 L2\n    - heading \"看一眼，这里有几个？\" [level=3]\n    - paragraph: 先看整体形状，不用一个个数。\n    - button \"听题\":\n      - strong: 听题\n    - region \"题目画面\":\n      - strong: 看一眼\n      - generic \"一眼看数量的点阵\":\n    - button \"1\":\n      - generic: \"1\"\n    - button \"3\":\n      - generic: \"3\"\n    - button \"2\":\n      - generic: \"2\"\n    - button \"从头来\":\n      - text: 从头来\n    - button \"看看对不对\" [disabled]:\n      - generic: 看看对不对\n  - complementary:\n    - region \"题目导航\":\n      - strong: 题目导航\n      - generic: 0 / 15 已做\n      - button \"跳到第 1 题\" [active]:\n        - generic: \"1\"\n      - button \"跳到第 2 题\":\n        - generic: \"2\"\n      - button \"跳到第 3 题\":\n        - generic: \"3\"\n      - button \"跳到第 4 题\":\n        - generic: \"4\"\n      - button \"跳到第 5 题\":\n        - generic: \"5\"\n      - button \"跳到第 6 题\":\n        - generic: \"6\"\n      - button \"跳到第 7 题\":\n        - generic: \"7\"\n      - button \"跳到第 8 题\":\n        - generic: \"8\"\n      - button \"跳到第 9 题\":\n        - generic: \"9\"\n      - button \"跳到第 10 题\":\n        - generic: \"10\"\n      - button \"跳到第 11 题\":\n        - generic: \"11\"\n      - button \"跳到第 12 题\":\n        - generic: \"12\"\n      - button \"跳到第 13 题\":\n        - generic: \"13\"\n      - button \"跳到第 14 题\":\n        - generic: \"14\"\n      - button \"跳到第 15 题\":\n        - generic: \"15\"\n    - paragraph: 亲子提示卡\n    - paragraph: 可以问：你是一眼看出来的，还是一个个数出来的？\n    - generic \"本题追问\"\n    - paragraph: 启蒙成长记录\n    - button \"清空启蒙记录\":\n    - paragraph: 已完成 0 / 489 题\n    - paragraph: 完成一个小任务后，这里会留下能力标签。"
+}

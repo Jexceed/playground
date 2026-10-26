@@ -8,6 +8,7 @@ const { logicSupportVoiceLines } = await loadTypeScriptModule("src/data/logicLes
 const { bridgePlayVoiceLines } = await loadTypeScriptModule("src/domain/bridge-play.ts");
 const { orderStorySteps } = await loadTypeScriptModule("src/data/orderStories.ts");
 const { prepareSpeechText } = await loadTypeScriptModule("src/speech-pronunciation.ts");
+const { BIRD_DEPARTURE_COPY, birdDepartureModel, birdFlightSpeech } = await loadTypeScriptModule('src/domain/bird-departure.ts');
 
 const tokenLabels = {
   "🍓": "草莓",
@@ -146,6 +147,12 @@ for (const game of games) {
     add("success", round.success, context);
     add("retry", round.retry, context);
     add("parent", round.parentPrompt, context);
+    if (game.id === 'math-story-operations') {
+      const model = birdDepartureModel(round);
+      add('system', birdFlightSpeech(model), context);
+      add('system', `让 ${model.gone} 只小鸟飞走`, context);
+      add('system', `原来有 ${model.start} 只小鸟。`, context);
+    }
     for (const choice of round.choices) add("choice", labelForObject(choice.label), context);
     const visualItems = [
       ...(round.sequence ?? []),
@@ -165,6 +172,7 @@ for (const game of games) {
 }
 
 for (const text of bridgePlayVoiceLines()) add("system", text, "hands-on-bridge");
+for (const text of Object.values(BIRD_DEPARTURE_COPY)) add('system', text, 'birds-departure');
 
 for (const line of activityVoiceLines(activitySets)) add(line.kind, line.text, line.context, line.locale);
 

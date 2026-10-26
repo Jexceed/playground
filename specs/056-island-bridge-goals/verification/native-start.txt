@@ -1,0 +1,117 @@
+Window: "小小思考屋", App: 小小思考屋.
+0 standard window 小小思考屋, Secondary Actions: Raise
+	1 scroll area
+		2 HTML content Description: 小小思考屋, URL: tauri://localhost
+			3 container
+				4 container 主题地图
+					5 image 小小思考屋 亲子思维游戏
+					6 container 选择启蒙或探索
+						7 toggle button 启蒙, Value: off
+						8 toggle button 探索, Value: on
+					9 button (collapsed) 数字岛 144 题, Secondary Actions: Expand
+					10 button (expanded) 逻辑屋 126 题, Secondary Actions: Collapse
+					11 button (collapsed) 图形工坊 186 题, Secondary Actions: Expand
+					12 button (collapsed) 记忆小屋 81 题, Secondary Actions: Expand
+					13 button (collapsed) 语言花园 54 题, Secondary Actions: Expand
+					14 button (collapsed) 生活实验室 30 题, Secondary Actions: Expand
+					15 container 关卡列表
+						16 container
+							17 text 探索  ·  逻辑屋
+						18 text 15  个
+						19 search text field (settable) 查找当前主题题组, Placeholder: 查找题组
+							20 text 查找题组
+						21 heading 分类与线索, Value: 3
+							22 text 分类与线索
+						23 button 规则收纳盒 动手 · 6 题
+						24 button 线索排排队 动手 · 6 题
+						25 button 分类换个角度 动手 · 9 题
+						26 button 关系接力 动手 · 9 题
+						27 button 线索够不够 动手 · 9 题
+						28 button 格子里的线索 动手 · 9 题
+						29 heading 看与记, Value: 3
+							30 text 看与记
+						31 button 记忆摆一摆 动手 · 6 题
+						32 heading 顺序与推理, Value: 3
+							33 text 顺序与推理
+						34 button 路线设计师 动手 · 9 题
+						35 button 先后有讲究 动手 · 9 题
+						36 button 证据说明什么 动手 · 9 题
+						37 button 学会新规则 动手 · 9 题
+						38 heading 变化与策略, Value: 3
+							39 text 变化与策略
+						40 button 翻牌小机关 动手 · 9 题
+						41 button 两位朋友走格子 动手 · 9 题
+						42 button 棋盘下一步 动手 · 9 题
+						43 button 小岛连桥 动手 · 9 题
+				44 container 当前部分
+					45 text 探索
+					46 text 组合线索，多步思考 75  组 ·  621  题
+				47 container 小岛连桥
+					48 container 小岛连桥
+						49 container
+							50 text 先试一试  · 第  1  / 9  题
+							51 heading 小岛连桥, Value: 1
+								52 text 小岛连桥
+							53 button 听一听题目
+						54 heading 把所有小岛连起来。, Value: 2
+							55 text 把所有小岛连起来。
+						56 text 点加号搭桥，把每个岛的小格填满。两个岛之间最多搭两座桥。
+						57 container 搭桥操作图
+							58 text 每个小格是一座桥。
+							59 text 还要搭 搭好了
+							60 container
+								61 image 同一座桥连接两个岛，两边各填一个桥格
+								62 text 一座桥， 两边各算一座。
+							63 button 听小岛的桥怎么算
+							64 container
+								65 container 可操作的连接线
+									66 image
+									67 image
+								68 button A 到 B，1座桥，保留1座现成桥
+								69 button B 到 C，1座桥，保留1座现成桥
+								70 button C 到 D，0座桥
+								71 button D 到 A，0座桥
+								72 toggle button A岛，要3座桥，现在1座，还差2座, Value: off
+								73 toggle button B岛，要3座桥，现在2座，还差1座, Value: off
+								74 toggle button C岛，要2座桥，现在1座，还差1座, Value: off
+								75 toggle button D岛，要2座桥，现在0座，还差2座, Value: off
+							76 text 每个岛都要刚好，还要能走遍所有岛。
+							77 text ＋添一座 · ↶收回新搭的桥，现成桥会留下。
+						78 button (disabled) 撤销上一步
+						79 button 清空
+						80 button 提示
+						81 button 摆好了，看看
+						82 container
+							83 text 这次尝试  0  次 · 提示  0  次
+							84 button 先跳过
+				85 container 题目导航
+					86 text 题目导航
+					87 text 1  /  9  已做
+					88 button 跳到第 1 题，已做
+					89 button 跳到第 2 题
+					90 button 跳到第 3 题
+					91 button 跳到第 4 题
+					92 button 跳到第 5 题
+					93 button 跳到第 6 题
+					94 button 跳到第 7 题
+					95 button 跳到第 8 题
+					96 button 跳到第 9 题
+				97 summary 给家长 · 陪玩提示, Value: off
+					98 text 给家长 · 陪玩提示
+				99 summary 探索 · 成长记录, Value: off
+					100 text 探索
+					101 text  · 成长记录
+		102 scroll bar (settable, float) 0
+	103 close button
+	104 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	105 minimize button
+	106 text 小小思考屋
+107 menu bar
+	108 小小思考屋
+	109 File
+	110 Edit
+	111 View
+	112 Window
+	113 Help
+
+The focused UI element is 2 HTML content Description: 小小思考屋, URL: tauri://localhost

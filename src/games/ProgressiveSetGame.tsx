@@ -1,4 +1,5 @@
 import { BridgePlayBoard } from "../components/BridgePlayBoard";
+import { BirdDepartureBoard } from '../components/BirdDepartureBoard';
 import { bridgePlayCopy, type BridgeAttempt } from "../domain/bridge-play";
 import { LogicLessonBoard, LogicPicture, hasLogicPicture, LogicTaskCue, LogicRelationBoard } from "../components/LogicLessonBoard";
 import { logicLessonFor, logicTaskCueFor, logicActionRules, logicRelationFrames, type LogicLesson } from "../data/logicLessonVisuals";
@@ -15,6 +16,8 @@ import { nextEnlightenmentRoundIndex, ENLIGHTENMENT_COPY, initialObservationPhas
 import { publicAsset } from "../publicAsset";
 import { playTone, speak, stopSpeech } from "../speech";
 import type { GameConfig, GameRound, GraphicChallengeOption, GraphicFigure, GraphicFigureGroup } from "../types";
+import { GraphicContourFigure } from '../components/GraphicContourFigure';
+import { contourArtwork, hasContourArtwork } from '../data/contourArtwork';
 
 export function ProgressiveSetGame({
   game,
@@ -465,6 +468,7 @@ function RoundBoard({
   onReviewMemory?: () => void;
 }) {
   if (logicLesson) return <LogicLessonBoard lesson={logicLesson} roundId={round.id} solved={solved} showScene={showStoryScene} onStart={onStoryStart} onScene={onStoryScene}/>;
+  if (gameId === 'math-story-operations') return <BirdDepartureBoard key={round.id} round={round} />;
   if (gameId === "logic-mirror-fold" && round.visualGroups?.some(group => group.label === "镜子")) return <MirrorOrderBoard round={round} solved={solved}/>;
   if (gameId === "logic-relation-pairs" && logicRelationFrames(round)) return <LogicRelationBoard round={round}/>;
   if (round.sequenceStory && round.sceneImage) {
@@ -682,6 +686,10 @@ function GraphicFigureSetSvg({ figures, large = false, compact = false, framed =
   if (!first) {
     return <svg className={`graphic-figure ${large ? "graphic-figure-large" : ""}`} viewBox="0 0 120 120" aria-hidden="true" />;
   }
+  if (figures.length === 1 && hasContourArtwork(first.shape) &&
+    (first.mode === 'outline' || (first.mode === 'missing' && contourArtwork[first.shape].gap?.side === first.gap))) {
+    return <GraphicContourFigure figure={first} large={large} />;
+  }
   if (figures.length === 1 && first.mode === "detail") {
     return (
       <svg className={`graphic-figure ${large ? "graphic-figure-large" : ""} graphic-figure-detail`} viewBox="0 0 120 120" role="img" aria-hidden="true">
@@ -863,7 +871,7 @@ function CoverMask({ cover }: { cover: NonNullable<GraphicFigure["cover"]> }) {
   return (
     <g>
       <rect {...rect} rx="10" fill="#f8fafc" stroke="#64748b" strokeDasharray="7 6" strokeWidth="4" />
-      <text x={rect.x + rect.width / 2} y={rect.y + rect.height / 2 + 5} textAnchor="middle" fontSize="15" fontWeight="700" fill="#64748b">遮住</text>
+      <text x={rect.x + rect.width / 2} y={rect.y + rect.height / 2 + 5} textAnchor="middle" fontSize="20" fontWeight="700" fill="#64748b">遮住</text>
     </g>
   );
 }

@@ -1,0 +1,120 @@
+Window: "小小思考屋", App: 小小思考屋.
+0 standard window 小小思考屋, Secondary Actions: Raise
+	1 scroll area
+		2 HTML content Description: 小小思考屋, URL: tauri://localhost
+			3 container
+				4 container 主题地图
+					5 image 小小思考屋 亲子思维游戏
+					6 container 选择启蒙或探索
+						7 toggle button 启蒙, Value: off
+						8 toggle button 探索, Value: on
+					9 button (expanded) 数字岛 144 题, Secondary Actions: Collapse
+					10 button (collapsed) 逻辑屋 126 题, Secondary Actions: Expand
+					11 button (collapsed) 图形工坊 186 题, Secondary Actions: Expand
+					12 button (collapsed) 记忆小屋 81 题, Secondary Actions: Expand
+					13 button (collapsed) 语言花园 54 题, Secondary Actions: Expand
+					14 button (collapsed) 生活实验室 30 题, Secondary Actions: Expand
+					15 container 关卡列表
+						16 container
+							17 text 探索  ·  数字岛
+						18 text 16  个
+						19 search text field (settable) 查找当前主题题组, Placeholder: 查找题组
+							20 text 查找题组
+						21 heading 数量与分组, Value: 3
+							22 text 数量与分组
+						23 button 数量结构屋 动手 · 9 题
+						24 button 移一移比多少 动手 · 9 题
+						25 button 变了样没变多 动手 · 9 题
+						26 button 分法找齐了吗 动手 · 9 题
+						27 heading 数的关系, Value: 3
+							28 text 数的关系
+						29 button 十的好朋友 动手 · 9 题
+						30 button 故事里的未知数 动手 · 9 题
+						31 button 分组小管家 动手 · 9 题
+						32 button 一样大的那一份 动手 · 9 题
+						33 button 队伍有多长 动手 · 9 题
+						34 button 单双和数位 动手 · 9 题
+						35 button 数列侦探 动手 · 9 题
+						36 button 图形等量换 动手 · 9 题
+						37 heading 生活中的数学, Value: 3
+							38 text 生活中的数学
+						39 button 小小零钱铺 动手 · 9 题
+						40 button 时钟往前走 动手 · 9 题
+						41 button 量一量围一围 动手 · 9 题
+						42 button 练习日历 动手 · 9 题
+				43 container 当前部分
+					44 text 探索
+					45 text 组合线索，多步思考 75  组 ·  621  题
+				46 container 故事里的未知数
+					47 container 故事里的未知数
+						48 container
+							49 text 组合挑战  · 第  7  / 9  题
+							50 heading 故事里的未知数, Value: 1
+								51 text 故事里的未知数
+							52 button 听一听题目
+						53 heading 树上原来有7只鸟，后来变成10只。飞来了几只？, Value: 2
+							54 text 树上原来有7只鸟，后来变成10只。飞来了几只？
+						55 text 选出符合条件的一张图卡。
+						56 container
+							57 text 看看发生了什么 原来
+							58 image
+							59 image
+							60 image
+							61 image
+							62 image
+							63 image
+							64 image
+							65 text 7 只 飞来了 ? 想一想 现在
+							66 image
+							67 image
+							68 image
+							69 image
+							70 image
+							71 image
+							72 image
+							73 image
+							74 image
+							75 image
+							76 text 10 只
+						77 container 选择一个答案
+							78 toggle button 4, Value: off
+							79 toggle button 3, Value: off
+							80 toggle button 2, Value: off
+							81 toggle button 17, Value: off
+						82 button (disabled) 撤销上一步
+						83 button 清空
+						84 button 提示
+						85 button 选好了，看看
+						86 container
+							87 text 这次尝试  0  次 · 提示  0  次
+							88 button 先跳过
+				89 container 题目导航
+					90 text 题目导航
+					91 text 1  /  9  已做
+					92 button 跳到第 1 题，已做
+					93 button 跳到第 2 题
+					94 button 跳到第 3 题
+					95 button 跳到第 4 题
+					96 button 跳到第 5 题
+					97 button 跳到第 6 题
+					98 button 跳到第 7 题
+					99 button 跳到第 8 题
+					100 button 跳到第 9 题
+				101 summary 给家长 · 陪玩提示, Value: off
+					102 text 给家长 · 陪玩提示
+				103 summary 探索 · 成长记录, Value: off
+					104 text 探索
+					105 text  · 成长记录
+	106 close button
+	107 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	108 minimize button
+	109 text 小小思考屋
+110 menu bar
+	111 小小思考屋
+	112 File
+	113 Edit
+	114 View
+	115 Window
+	116 Help
+
+The focused UI element is 2 HTML content Description: 小小思考屋, URL: tauri://localhost

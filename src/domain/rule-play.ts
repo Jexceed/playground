@@ -1,3 +1,14 @@
+import type { CardFlipEvidence } from './activity';
+
+/** The target and step number come from the same model as the pictured steps. */
+export function cardFlipStepSpeech(target: number, index: number): string {
+  return `第${index + 1}步，翻第${target + 1}张。`;
+}
+
+export function cardFlipSpeech(model: Pick<CardFlipEvidence, 'steps'>): string {
+  return model.steps.map(cardFlipStepSpeech).join('');
+}
+
 /** Shared with the local voice export; visual demonstrations never submit answers. */
 export const RULE_PLAY_COPY = {
   example: '先玩一个小例子',

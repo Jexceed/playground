@@ -1,0 +1,4135 @@
+[
+  {
+    "id": "explore-everyday-classification",
+    "kind": "activitySet",
+    "world": "life",
+    "title": "用品放对地方",
+    "subtitle": "生活用品、功能、材料与场景分类",
+    "goal": "观察用途 → 按规则整理 → 换场景解释",
+    "parentPrompt": "先让孩子操作和解释，再按需要给一点提示。",
+    "abilityTags": [
+      "生活用品、功能、材料与场景分类"
+    ],
+    "level": "L3",
+    "rounds": [
+      {
+        "id": "explore-everyday-classification-1",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "P01",
+        "level": "L2",
+        "stage": 1,
+        "difficultyNote": "观察用途",
+        "prerequisites": "知道2种常见用品的用途；短语可由家长读",
+        "prompt": "把用品和这次要做的事配起来。",
+        "instruction": "把两边有关的图卡连起来。可以拖过去，也可以两边各点一下。",
+        "clues": [],
+        "tokens": [
+          {
+            "id": "item0",
+            "label": "杯子",
+            "image": {
+              "src": "/images/items/cup.png",
+              "alt": "杯子"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "item1",
+            "label": "铅笔",
+            "image": {
+              "src": "/images/items/pencil.png",
+              "alt": "铅笔"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "use0",
+            "label": "喝水",
+            "image": {
+              "src": "/images/items/exploration-art/everyday-actions.png",
+              "alt": "喝水",
+              "frame": {
+                "columns": 3,
+                "rows": 3,
+                "index": 0
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "use1",
+            "label": "画线",
+            "image": {
+              "src": "/images/items/exploration-art/everyday-actions.png",
+              "alt": "画线",
+              "frame": {
+                "columns": 3,
+                "rows": 3,
+                "index": 1
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          }
+        ],
+        "hints": [
+          "先说说左边这张图卡的特点，再找对应关系。",
+          "用具体功能来解释配对。这是这些用品的一种常见用途，不代表只有这一种。"
+        ],
+        "success": "用具体功能来解释配对。这是这些用品的一种常见用途，不代表只有这一种。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+        "abilityTags": [
+          "生活用品、功能、材料与场景分类"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S099",
+            "locator": "4-5"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide1"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide11"
+          },
+          {
+            "sourceId": "S116",
+            "locator": "28-29"
+          }
+        ],
+        "kind": "matching",
+        "leftIds": [
+          "item0",
+          "item1"
+        ],
+        "rightIds": [
+          "use1",
+          "use0"
+        ],
+        "expectedPairs": [
+          [
+            "item0",
+            "use0"
+          ],
+          [
+            "item1",
+            "use1"
+          ]
+        ],
+        "difficulty": {
+          "rules": 1,
+          "steps": 1,
+          "reading": 2,
+          "motor": 2,
+          "representation": "pictures",
+          "basis": "2组用品功能匹配；用途卡为短词，图片支持不等于全无识读",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "pairs": 2
+          }
+        }
+      },
+      {
+        "id": "explore-everyday-classification-2",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "P01",
+        "level": "L2",
+        "stage": 1,
+        "difficultyNote": "观察用途",
+        "prerequisites": "知道2种常见用品的用途；短语可由家长读",
+        "prompt": "把用品和这次要做的事配起来。",
+        "instruction": "把两边有关的图卡连起来。可以拖过去，也可以两边各点一下。",
+        "clues": [],
+        "tokens": [
+          {
+            "id": "item0",
+            "label": "雨伞",
+            "image": {
+              "src": "/images/items/exploration-art/everyday-tools.png",
+              "alt": "雨伞",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 0
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "item1",
+            "label": "帽子",
+            "image": {
+              "src": "/images/items/sun-hat.png",
+              "alt": "帽子"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "use0",
+            "label": "挡雨",
+            "image": {
+              "src": "/images/items/exploration-art/everyday-actions.png",
+              "alt": "挡雨",
+              "frame": {
+                "columns": 3,
+                "rows": 3,
+                "index": 3
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "use1",
+            "label": "遮阳",
+            "image": {
+              "src": "/images/items/exploration-art/everyday-actions.png",
+              "alt": "遮阳",
+              "frame": {
+                "columns": 3,
+                "rows": 3,
+                "index": 4
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          }
+        ],
+        "hints": [
+          "先说说左边这张图卡的特点，再找对应关系。",
+          "用具体功能来解释配对。这是这些用品的一种常见用途，不代表只有这一种。"
+        ],
+        "success": "用具体功能来解释配对。这是这些用品的一种常见用途，不代表只有这一种。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+        "abilityTags": [
+          "生活用品、功能、材料与场景分类"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S099",
+            "locator": "4-5"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide1"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide11"
+          },
+          {
+            "sourceId": "S116",
+            "locator": "28-29"
+          }
+        ],
+        "kind": "matching",
+        "leftIds": [
+          "item0",
+          "item1"
+        ],
+        "rightIds": [
+          "use1",
+          "use0"
+        ],
+        "expectedPairs": [
+          [
+            "item0",
+            "use0"
+          ],
+          [
+            "item1",
+            "use1"
+          ]
+        ],
+        "difficulty": {
+          "rules": 1,
+          "steps": 1,
+          "reading": 2,
+          "motor": 2,
+          "representation": "pictures",
+          "basis": "2组用品功能匹配；用途卡为短词，图片支持不等于全无识读",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "pairs": 2
+          }
+        }
+      },
+      {
+        "id": "explore-everyday-classification-3",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "P01",
+        "level": "L2",
+        "stage": 1,
+        "difficultyNote": "观察用途",
+        "prerequisites": "知道2种常见用品的用途；短语可由家长读",
+        "prompt": "把用品和这次要做的事配起来。",
+        "instruction": "把两边有关的图卡连起来。可以拖过去，也可以两边各点一下。",
+        "clues": [],
+        "tokens": [
+          {
+            "id": "item0",
+            "label": "积木",
+            "image": {
+              "src": "/images/items/block.png",
+              "alt": "积木"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "item1",
+            "label": "书本",
+            "image": {
+              "src": "/images/items/book.png",
+              "alt": "书本"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "use0",
+            "label": "拼搭",
+            "image": {
+              "src": "/images/items/exploration-art/everyday-actions.png",
+              "alt": "拼搭",
+              "frame": {
+                "columns": 3,
+                "rows": 3,
+                "index": 6
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "use1",
+            "label": "阅读",
+            "image": {
+              "src": "/images/items/exploration-art/everyday-actions.png",
+              "alt": "阅读",
+              "frame": {
+                "columns": 3,
+                "rows": 3,
+                "index": 7
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          }
+        ],
+        "hints": [
+          "先说说左边这张图卡的特点，再找对应关系。",
+          "用具体功能来解释配对。这是这些用品的一种常见用途，不代表只有这一种。"
+        ],
+        "success": "用具体功能来解释配对。这是这些用品的一种常见用途，不代表只有这一种。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+        "abilityTags": [
+          "生活用品、功能、材料与场景分类"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S099",
+            "locator": "4-5"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide1"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide11"
+          },
+          {
+            "sourceId": "S116",
+            "locator": "28-29"
+          }
+        ],
+        "kind": "matching",
+        "leftIds": [
+          "item0",
+          "item1"
+        ],
+        "rightIds": [
+          "use0",
+          "use1"
+        ],
+        "expectedPairs": [
+          [
+            "item0",
+            "use0"
+          ],
+          [
+            "item1",
+            "use1"
+          ]
+        ],
+        "difficulty": {
+          "rules": 1,
+          "steps": 1,
+          "reading": 2,
+          "motor": 2,
+          "representation": "pictures",
+          "basis": "2组用品功能匹配；用途卡为短词，图片支持不等于全无识读",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "pairs": 2
+          }
+        }
+      },
+      {
+        "id": "explore-everyday-classification-4",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "P01",
+        "level": "L3",
+        "stage": 2,
+        "difficultyNote": "按规则整理",
+        "prerequisites": "知道3种用品与常见功能",
+        "prompt": "把用品和这次要做的事配起来。",
+        "instruction": "把两边有关的图卡连起来。可以拖过去，也可以两边各点一下。",
+        "clues": [],
+        "tokens": [
+          {
+            "id": "item0",
+            "label": "杯子",
+            "image": {
+              "src": "/images/items/cup.png",
+              "alt": "杯子"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "item1",
+            "label": "铅笔",
+            "image": {
+              "src": "/images/items/pencil.png",
+              "alt": "铅笔"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "item2",
+            "label": "毛巾",
+            "image": {
+              "src": "/images/items/exploration-art/everyday-tools.png",
+              "alt": "毛巾",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 1
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "use0",
+            "label": "喝水",
+            "image": {
+              "src": "/images/items/exploration-art/everyday-actions.png",
+              "alt": "喝水",
+              "frame": {
+                "columns": 3,
+                "rows": 3,
+                "index": 0
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "use1",
+            "label": "画线",
+            "image": {
+              "src": "/images/items/exploration-art/everyday-actions.png",
+              "alt": "画线",
+              "frame": {
+                "columns": 3,
+                "rows": 3,
+                "index": 1
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "use2",
+            "label": "擦干",
+            "image": {
+              "src": "/images/items/exploration-art/everyday-actions.png",
+              "alt": "擦干",
+              "frame": {
+                "columns": 3,
+                "rows": 3,
+                "index": 2
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          }
+        ],
+        "hints": [
+          "先说说左边这张图卡的特点，再找对应关系。",
+          "用具体功能来解释配对。这是这些用品的一种常见用途，不代表只有这一种。"
+        ],
+        "success": "用具体功能来解释配对。这是这些用品的一种常见用途，不代表只有这一种。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+        "abilityTags": [
+          "生活用品、功能、材料与场景分类"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S099",
+            "locator": "4-5"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide1"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide11"
+          },
+          {
+            "sourceId": "S116",
+            "locator": "28-29"
+          }
+        ],
+        "kind": "matching",
+        "leftIds": [
+          "item0",
+          "item1",
+          "item2"
+        ],
+        "rightIds": [
+          "use2",
+          "use1",
+          "use0"
+        ],
+        "expectedPairs": [
+          [
+            "item0",
+            "use0"
+          ],
+          [
+            "item1",
+            "use1"
+          ],
+          [
+            "item2",
+            "use2"
+          ]
+        ],
+        "difficulty": {
+          "rules": 1,
+          "steps": 1,
+          "reading": 2,
+          "motor": 2,
+          "representation": "pictures",
+          "basis": "3组用品功能匹配，规则仍一种常见功能关系",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "pairs": 3
+          }
+        }
+      },
+      {
+        "id": "explore-everyday-classification-5",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "P01",
+        "level": "L3",
+        "stage": 2,
+        "difficultyNote": "按规则整理",
+        "prerequisites": "知道3种用品与常见功能",
+        "prompt": "把用品和这次要做的事配起来。",
+        "instruction": "把两边有关的图卡连起来。可以拖过去，也可以两边各点一下。",
+        "clues": [],
+        "tokens": [
+          {
+            "id": "item0",
+            "label": "雨伞",
+            "image": {
+              "src": "/images/items/exploration-art/everyday-tools.png",
+              "alt": "雨伞",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 0
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "item1",
+            "label": "帽子",
+            "image": {
+              "src": "/images/items/sun-hat.png",
+              "alt": "帽子"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "item2",
+            "label": "饭盒",
+            "image": {
+              "src": "/images/items/lunch-box.png",
+              "alt": "饭盒"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "use0",
+            "label": "挡雨",
+            "image": {
+              "src": "/images/items/exploration-art/everyday-actions.png",
+              "alt": "挡雨",
+              "frame": {
+                "columns": 3,
+                "rows": 3,
+                "index": 3
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "use1",
+            "label": "遮阳",
+            "image": {
+              "src": "/images/items/exploration-art/everyday-actions.png",
+              "alt": "遮阳",
+              "frame": {
+                "columns": 3,
+                "rows": 3,
+                "index": 4
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "use2",
+            "label": "装饭",
+            "image": {
+              "src": "/images/items/exploration-art/everyday-actions.png",
+              "alt": "装饭",
+              "frame": {
+                "columns": 3,
+                "rows": 3,
+                "index": 5
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          }
+        ],
+        "hints": [
+          "先说说左边这张图卡的特点，再找对应关系。",
+          "用具体功能来解释配对。这是这些用品的一种常见用途，不代表只有这一种。"
+        ],
+        "success": "用具体功能来解释配对。这是这些用品的一种常见用途，不代表只有这一种。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+        "abilityTags": [
+          "生活用品、功能、材料与场景分类"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S099",
+            "locator": "4-5"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide1"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide11"
+          },
+          {
+            "sourceId": "S116",
+            "locator": "28-29"
+          }
+        ],
+        "kind": "matching",
+        "leftIds": [
+          "item0",
+          "item1",
+          "item2"
+        ],
+        "rightIds": [
+          "use2",
+          "use1",
+          "use0"
+        ],
+        "expectedPairs": [
+          [
+            "item0",
+            "use0"
+          ],
+          [
+            "item1",
+            "use1"
+          ],
+          [
+            "item2",
+            "use2"
+          ]
+        ],
+        "difficulty": {
+          "rules": 1,
+          "steps": 1,
+          "reading": 2,
+          "motor": 2,
+          "representation": "pictures",
+          "basis": "3组用品功能匹配，规则仍一种常见功能关系",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "pairs": 3
+          }
+        }
+      },
+      {
+        "id": "explore-everyday-classification-6",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "P01",
+        "level": "L3",
+        "stage": 2,
+        "difficultyNote": "按规则整理",
+        "prerequisites": "知道3种用品与常见功能",
+        "prompt": "把用品和这次要做的事配起来。",
+        "instruction": "把两边有关的图卡连起来。可以拖过去，也可以两边各点一下。",
+        "clues": [],
+        "tokens": [
+          {
+            "id": "item0",
+            "label": "积木",
+            "image": {
+              "src": "/images/items/block.png",
+              "alt": "积木"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "item1",
+            "label": "书本",
+            "image": {
+              "src": "/images/items/book.png",
+              "alt": "书本"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "item2",
+            "label": "尺子",
+            "image": {
+              "src": "/images/items/art-052/ruler.png",
+              "alt": "尺子"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "use0",
+            "label": "拼搭",
+            "image": {
+              "src": "/images/items/exploration-art/everyday-actions.png",
+              "alt": "拼搭",
+              "frame": {
+                "columns": 3,
+                "rows": 3,
+                "index": 6
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "use1",
+            "label": "阅读",
+            "image": {
+              "src": "/images/items/exploration-art/everyday-actions.png",
+              "alt": "阅读",
+              "frame": {
+                "columns": 3,
+                "rows": 3,
+                "index": 7
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "use2",
+            "label": "量长度",
+            "image": {
+              "src": "/images/items/exploration-art/everyday-actions.png",
+              "alt": "量长度",
+              "frame": {
+                "columns": 3,
+                "rows": 3,
+                "index": 8
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          }
+        ],
+        "hints": [
+          "先说说左边这张图卡的特点，再找对应关系。",
+          "用具体功能来解释配对。这是这些用品的一种常见用途，不代表只有这一种。"
+        ],
+        "success": "用具体功能来解释配对。这是这些用品的一种常见用途，不代表只有这一种。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+        "abilityTags": [
+          "生活用品、功能、材料与场景分类"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S099",
+            "locator": "4-5"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide1"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide11"
+          },
+          {
+            "sourceId": "S116",
+            "locator": "28-29"
+          }
+        ],
+        "kind": "matching",
+        "leftIds": [
+          "item0",
+          "item1",
+          "item2"
+        ],
+        "rightIds": [
+          "use2",
+          "use0",
+          "use1"
+        ],
+        "expectedPairs": [
+          [
+            "item0",
+            "use0"
+          ],
+          [
+            "item1",
+            "use1"
+          ],
+          [
+            "item2",
+            "use2"
+          ]
+        ],
+        "difficulty": {
+          "rules": 1,
+          "steps": 1,
+          "reading": 2,
+          "motor": 2,
+          "representation": "pictures",
+          "basis": "3组用品功能匹配，规则仍一种常见功能关系",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "pairs": 3
+          }
+        }
+      },
+      {
+        "id": "explore-everyday-classification-7",
+        "schemaVersion": 1,
+        "revision": 2,
+        "primaryFamilyId": "P01",
+        "level": "L4",
+        "stage": 3,
+        "difficultyNote": "换场景解释",
+        "prerequisites": "能说物品特征并按用途或材料作比较",
+        "prompt": "一个物品多种用途",
+        "instruction": "和家长一起操作、说一说，再记录这次的发现。",
+        "clues": [],
+        "tokens": [],
+        "hints": [
+          "选一个杯子，先说平时用它做什么。",
+          "再想一种合理的新用途，比如分装画笔。"
+        ],
+        "success": "这次亲子活动已经记录。下次可以换个条件再试试。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "分类有明确依据；能承认一个物品可能有多种用途；能根据场景调整选择",
+        "abilityTags": [
+          "生活用品、功能、材料与场景分类"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S099",
+            "locator": "4-5"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide1"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide11"
+          },
+          {
+            "sourceId": "S116",
+            "locator": "28-29"
+          }
+        ],
+        "kind": "parentObservation",
+        "materials": [
+          "杯子",
+          "彩笔"
+        ],
+        "steps": [
+          "选一个杯子，先说平时用它做什么。",
+          "再想一种合理的新用途，比如分装画笔。",
+          "说清新用途需要满足什么条件。"
+        ],
+        "observations": [
+          {
+            "id": "observe-0",
+            "text": "分类有明确依据"
+          },
+          {
+            "id": "observe-1",
+            "text": "能承认一个物品可能有多种用途"
+          },
+          {
+            "id": "observe-2",
+            "text": "能根据场景调整选择"
+          }
+        ],
+        "presentation": {
+          "materialCards": [
+            {
+              "label": "杯子",
+              "image": {
+                "src": "/images/items/cup.png",
+                "alt": "杯子"
+              }
+            },
+            {
+              "label": "彩笔",
+              "image": {
+                "src": "/images/items/exploration-art/craft-materials.png",
+                "alt": "彩笔",
+                "frame": {
+                  "columns": 2,
+                  "rows": 2,
+                  "index": 1
+                },
+                "style": "illustration"
+              }
+            }
+          ]
+        },
+        "difficulty": {
+          "rules": 2,
+          "steps": 3,
+          "reading": 0,
+          "motor": 2,
+          "representation": "physical",
+          "basis": "三变体为多用途、材料适用、换分类规则，需观察/比较/解释；家长准备实物",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "observationItems": 3
+          }
+        }
+      },
+      {
+        "id": "explore-everyday-classification-8",
+        "schemaVersion": 1,
+        "revision": 2,
+        "primaryFamilyId": "P01",
+        "level": "L4",
+        "stage": 3,
+        "difficultyNote": "换场景解释",
+        "prerequisites": "能说物品特征并按用途或材料作比较",
+        "prompt": "材料和场景",
+        "instruction": "和家长一起操作、说一说，再记录这次的发现。",
+        "clues": [],
+        "tokens": [],
+        "hints": [
+          "把纸盒、布袋、塑料盒放在一起，观察材料。",
+          "讨论哪种适合放干画笔，哪种适合装湿东西，并说明理由。"
+        ],
+        "success": "这次亲子活动已经记录。下次可以换个条件再试试。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "分类有明确依据；能承认一个物品可能有多种用途；能根据场景调整选择",
+        "abilityTags": [
+          "生活用品、功能、材料与场景分类"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S099",
+            "locator": "4-5"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide1"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide11"
+          },
+          {
+            "sourceId": "S116",
+            "locator": "28-29"
+          }
+        ],
+        "kind": "parentObservation",
+        "materials": [
+          "纸盒",
+          "布袋",
+          "塑料盒",
+          "少量水或干物品"
+        ],
+        "steps": [
+          "把纸盒、布袋、塑料盒放在一起，观察材料。",
+          "讨论哪种适合放干画笔，哪种适合装湿东西，并说明理由。",
+          "用家长准备的少量水或干物品做观察，修正原判断。"
+        ],
+        "observations": [
+          {
+            "id": "observe-0",
+            "text": "分类有明确依据"
+          },
+          {
+            "id": "observe-1",
+            "text": "能承认一个物品可能有多种用途"
+          },
+          {
+            "id": "observe-2",
+            "text": "能根据场景调整选择"
+          }
+        ],
+        "presentation": {
+          "materialCards": [
+            {
+              "label": "纸盒",
+              "image": {
+                "src": "/images/items/box.png",
+                "alt": "盒子"
+              }
+            },
+            {
+              "label": "布袋",
+              "image": {
+                "src": "/images/items/exploration-art/parent-materials.png",
+                "alt": "不透明袋",
+                "frame": {
+                  "columns": 3,
+                  "rows": 3,
+                  "index": 3
+                },
+                "style": "illustration"
+              }
+            },
+            {
+              "label": "塑料盒",
+              "image": {
+                "src": "/images/items/exploration-art/experiment-materials.png",
+                "alt": "塑料盒",
+                "frame": {
+                  "columns": 2,
+                  "rows": 2,
+                  "index": 1
+                },
+                "style": "illustration"
+              }
+            },
+            {
+              "label": "少量水或干物品"
+            }
+          ]
+        },
+        "difficulty": {
+          "rules": 2,
+          "steps": 3,
+          "reading": 0,
+          "motor": 2,
+          "representation": "physical",
+          "basis": "三变体为多用途、材料适用、换分类规则，需观察/比较/解释；家长准备实物",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "observationItems": 3
+          }
+        }
+      },
+      {
+        "id": "explore-everyday-classification-9",
+        "schemaVersion": 1,
+        "revision": 2,
+        "primaryFamilyId": "P01",
+        "level": "L4",
+        "stage": 3,
+        "difficultyNote": "换场景解释",
+        "prerequisites": "能说物品特征并按用途或材料作比较",
+        "prompt": "整理规则换一换",
+        "instruction": "和家长一起操作、说一说，再记录这次的发现。",
+        "clues": [],
+        "tokens": [],
+        "hints": [
+          "第一次按用途给用品分组。",
+          "第二次按材料重新分组。"
+        ],
+        "success": "这次亲子活动已经记录。下次可以换个条件再试试。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "分类有明确依据；能承认一个物品可能有多种用途；能根据场景调整选择",
+        "abilityTags": [
+          "生活用品、功能、材料与场景分类"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S099",
+            "locator": "4-5"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide1"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide11"
+          },
+          {
+            "sourceId": "S116",
+            "locator": "28-29"
+          }
+        ],
+        "kind": "parentObservation",
+        "materials": [
+          "杯子",
+          "毛巾",
+          "积木",
+          "书本"
+        ],
+        "steps": [
+          "第一次按用途给用品分组。",
+          "第二次按材料重新分组。",
+          "指出哪件物品换了组，说明改变的是规则而不是物品。"
+        ],
+        "observations": [
+          {
+            "id": "observe-0",
+            "text": "分类有明确依据"
+          },
+          {
+            "id": "observe-1",
+            "text": "能承认一个物品可能有多种用途"
+          },
+          {
+            "id": "observe-2",
+            "text": "能根据场景调整选择"
+          }
+        ],
+        "presentation": {
+          "materialCards": [
+            {
+              "label": "杯子",
+              "image": {
+                "src": "/images/items/cup.png",
+                "alt": "杯子"
+              }
+            },
+            {
+              "label": "毛巾",
+              "image": {
+                "src": "/images/items/exploration-art/everyday-tools.png",
+                "alt": "毛巾",
+                "frame": {
+                  "columns": 2,
+                  "rows": 2,
+                  "index": 1
+                },
+                "style": "illustration"
+              }
+            },
+            {
+              "label": "积木",
+              "image": {
+                "src": "/images/items/block.png",
+                "alt": "积木"
+              }
+            },
+            {
+              "label": "书本",
+              "image": {
+                "src": "/images/items/book.png",
+                "alt": "书本"
+              }
+            }
+          ]
+        },
+        "difficulty": {
+          "rules": 2,
+          "steps": 3,
+          "reading": 0,
+          "motor": 2,
+          "representation": "physical",
+          "basis": "三变体为多用途、材料适用、换分类规则，需观察/比较/解释；家长准备实物",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "observationItems": 3
+          }
+        }
+      }
+    ],
+    "interactionLabel": "探索练习"
+  },
+  {
+    "id": "explore-nature-growth",
+    "kind": "activitySet",
+    "world": "life",
+    "title": "变化观察册",
+    "subtitle": "自然观察、生物特征与成长顺序",
+    "goal": "观察特征 → 排列变化 → 解释关系",
+    "parentPrompt": "先让孩子操作和解释，再按需要给一点提示。",
+    "abilityTags": [
+      "自然观察、生物特征与成长顺序"
+    ],
+    "level": "L3",
+    "rounds": [
+      {
+        "id": "explore-nature-growth-1",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "P02",
+        "level": "L2",
+        "stage": 1,
+        "difficultyNote": "观察特征",
+        "prerequisites": "能辨成长图并听懂已给先后",
+        "prompt": "根据观察记录，把变化的先后排好。",
+        "instruction": "先选图卡，再按位置编号排好。也可以拖过去。",
+        "clues": [
+          "种子在土里之后，记录到小芽出土。",
+          "小芽出土之后，记录到叶片展开。"
+        ],
+        "tokens": [
+          {
+            "id": "phase1",
+            "label": "小芽出土",
+            "image": {
+              "src": "/images/items/exploration-art/plant-growth.png",
+              "alt": "小芽出土",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 2
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "phase2",
+            "label": "叶片展开",
+            "image": {
+              "src": "/images/items/exploration-art/plant-growth.png",
+              "alt": "叶片展开",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 3
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "phase0",
+            "label": "种子在土里",
+            "image": {
+              "src": "/images/items/exploration-art/plant-growth.png",
+              "alt": "种子在土里",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 0
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          }
+        ],
+        "hints": [
+          "种子在土里之后，记录到小芽出土。",
+          "用记录里的变化解释顺序，不能只凭图卡大小判断。"
+        ],
+        "success": "用记录里的变化解释顺序，不能只凭图卡大小判断。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+        "abilityTags": [
+          "自然观察、生物特征与成长顺序"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S071",
+            "locator": "render7"
+          },
+          {
+            "sourceId": "S071",
+            "locator": "render20"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide3"
+          },
+          {
+            "sourceId": "S109",
+            "locator": "30-32"
+          },
+          {
+            "sourceId": "S112",
+            "locator": "26-28"
+          },
+          {
+            "sourceId": "S115",
+            "locator": "33-35"
+          },
+          {
+            "sourceId": "S117",
+            "locator": "29-31"
+          },
+          {
+            "sourceId": "S119",
+            "locator": "29"
+          }
+        ],
+        "kind": "orderedPlacement",
+        "slotCount": 3,
+        "tokenUse": "once",
+        "evaluation": {
+          "kind": "sequence",
+          "tokenIds": [
+            "phase0",
+            "phase1",
+            "phase2"
+          ]
+        },
+        "difficulty": {
+          "rules": 2,
+          "steps": 2,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "basis": "3阶段图排序，有2条明示先后；不是已掌握所有生物知识",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "slots": 3
+          }
+        }
+      },
+      {
+        "id": "explore-nature-growth-2",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "P02",
+        "level": "L2",
+        "stage": 1,
+        "difficultyNote": "观察特征",
+        "prerequisites": "能辨成长图并听懂已给先后",
+        "prompt": "根据观察记录，把变化的先后排好。",
+        "instruction": "先选图卡，再按位置编号排好。也可以拖过去。",
+        "clues": [
+          "毛毛虫吃叶子之后，记录到蝴蝶出来。",
+          "蝴蝶出来之后，记录到蝴蝶展开翅膀。"
+        ],
+        "tokens": [
+          {
+            "id": "phase2",
+            "label": "蝴蝶展开翅膀",
+            "image": {
+              "src": "/images/items/exploration-art/butterfly-growth.png",
+              "alt": "蝴蝶展开翅膀",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 3
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "phase0",
+            "label": "毛毛虫吃叶子",
+            "image": {
+              "src": "/images/items/exploration-art/butterfly-growth.png",
+              "alt": "毛毛虫吃叶子",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 0
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "phase1",
+            "label": "蝴蝶出来",
+            "image": {
+              "src": "/images/items/exploration-art/butterfly-growth.png",
+              "alt": "蝴蝶出来",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 2
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          }
+        ],
+        "hints": [
+          "毛毛虫吃叶子之后，记录到蝴蝶出来。",
+          "用记录里的变化解释顺序，不能只凭图卡大小判断。"
+        ],
+        "success": "用记录里的变化解释顺序，不能只凭图卡大小判断。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+        "abilityTags": [
+          "自然观察、生物特征与成长顺序"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S071",
+            "locator": "render7"
+          },
+          {
+            "sourceId": "S071",
+            "locator": "render20"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide3"
+          },
+          {
+            "sourceId": "S109",
+            "locator": "30-32"
+          },
+          {
+            "sourceId": "S112",
+            "locator": "26-28"
+          },
+          {
+            "sourceId": "S115",
+            "locator": "33-35"
+          },
+          {
+            "sourceId": "S117",
+            "locator": "29-31"
+          },
+          {
+            "sourceId": "S119",
+            "locator": "29"
+          }
+        ],
+        "kind": "orderedPlacement",
+        "slotCount": 3,
+        "tokenUse": "once",
+        "evaluation": {
+          "kind": "sequence",
+          "tokenIds": [
+            "phase0",
+            "phase1",
+            "phase2"
+          ]
+        },
+        "difficulty": {
+          "rules": 2,
+          "steps": 2,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "basis": "3阶段图排序，有2条明示先后；不是已掌握所有生物知识",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "slots": 3
+          }
+        }
+      },
+      {
+        "id": "explore-nature-growth-3",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "P02",
+        "level": "L2",
+        "stage": 1,
+        "difficultyNote": "观察特征",
+        "prerequisites": "能辨成长图并听懂已给先后",
+        "prompt": "根据观察记录，把变化的先后排好。",
+        "instruction": "先选图卡，再按位置编号排好。也可以拖过去。",
+        "clues": [
+          "水里有卵之后，记录到蝌蚪长出后腿。",
+          "蝌蚪长出后腿之后，记录到小青蛙尾巴变短。"
+        ],
+        "tokens": [
+          {
+            "id": "phase0",
+            "label": "水里有卵",
+            "image": {
+              "src": "/images/items/exploration-art/frog-growth.png",
+              "alt": "水里有卵",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 0
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "phase1",
+            "label": "蝌蚪长出后腿",
+            "image": {
+              "src": "/images/items/exploration-art/frog-growth.png",
+              "alt": "蝌蚪长出后腿",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 2
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "phase2",
+            "label": "小青蛙尾巴变短",
+            "image": {
+              "src": "/images/items/exploration-art/frog-growth.png",
+              "alt": "小青蛙尾巴变短",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 3
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          }
+        ],
+        "hints": [
+          "水里有卵之后，记录到蝌蚪长出后腿。",
+          "用记录里的变化解释顺序，不能只凭图卡大小判断。"
+        ],
+        "success": "用记录里的变化解释顺序，不能只凭图卡大小判断。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+        "abilityTags": [
+          "自然观察、生物特征与成长顺序"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S071",
+            "locator": "render7"
+          },
+          {
+            "sourceId": "S071",
+            "locator": "render20"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide3"
+          },
+          {
+            "sourceId": "S109",
+            "locator": "30-32"
+          },
+          {
+            "sourceId": "S112",
+            "locator": "26-28"
+          },
+          {
+            "sourceId": "S115",
+            "locator": "33-35"
+          },
+          {
+            "sourceId": "S117",
+            "locator": "29-31"
+          },
+          {
+            "sourceId": "S119",
+            "locator": "29"
+          }
+        ],
+        "kind": "orderedPlacement",
+        "slotCount": 3,
+        "tokenUse": "once",
+        "evaluation": {
+          "kind": "sequence",
+          "tokenIds": [
+            "phase0",
+            "phase1",
+            "phase2"
+          ]
+        },
+        "difficulty": {
+          "rules": 2,
+          "steps": 2,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "basis": "3阶段图排序，有2条明示先后；不是已掌握所有生物知识",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "slots": 3
+          }
+        }
+      },
+      {
+        "id": "explore-nature-growth-4",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "P02",
+        "level": "L3",
+        "stage": 2,
+        "difficultyNote": "排列变化",
+        "prerequisites": "能把4阶段与3先后条件匹配",
+        "prompt": "根据观察记录，把变化的先后排好。",
+        "instruction": "先选图卡，再按位置编号排好。也可以拖过去。",
+        "clues": [
+          "种子在土里之后，记录到先长出根。",
+          "先长出根之后，记录到小芽出土。",
+          "小芽出土之后，记录到叶片展开。"
+        ],
+        "tokens": [
+          {
+            "id": "phase0",
+            "label": "种子在土里",
+            "image": {
+              "src": "/images/items/exploration-art/plant-growth.png",
+              "alt": "种子在土里",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 0
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "phase1",
+            "label": "先长出根",
+            "image": {
+              "src": "/images/items/exploration-art/plant-growth.png",
+              "alt": "先长出根",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 1
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "phase2",
+            "label": "小芽出土",
+            "image": {
+              "src": "/images/items/exploration-art/plant-growth.png",
+              "alt": "小芽出土",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 2
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "phase3",
+            "label": "叶片展开",
+            "image": {
+              "src": "/images/items/exploration-art/plant-growth.png",
+              "alt": "叶片展开",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 3
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          }
+        ],
+        "hints": [
+          "种子在土里之后，记录到先长出根。",
+          "用记录里的变化解释顺序，不能只凭图卡大小判断。"
+        ],
+        "success": "用记录里的变化解释顺序，不能只凭图卡大小判断。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+        "abilityTags": [
+          "自然观察、生物特征与成长顺序"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S071",
+            "locator": "render7"
+          },
+          {
+            "sourceId": "S071",
+            "locator": "render20"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide3"
+          },
+          {
+            "sourceId": "S109",
+            "locator": "30-32"
+          },
+          {
+            "sourceId": "S112",
+            "locator": "26-28"
+          },
+          {
+            "sourceId": "S115",
+            "locator": "33-35"
+          },
+          {
+            "sourceId": "S117",
+            "locator": "29-31"
+          },
+          {
+            "sourceId": "S119",
+            "locator": "29"
+          }
+        ],
+        "kind": "orderedPlacement",
+        "slotCount": 4,
+        "tokenUse": "once",
+        "evaluation": {
+          "kind": "sequence",
+          "tokenIds": [
+            "phase0",
+            "phase1",
+            "phase2",
+            "phase3"
+          ]
+        },
+        "difficulty": {
+          "rules": 3,
+          "steps": 3,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "basis": "4阶段图排序，有3条明示先后",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "slots": 4
+          }
+        }
+      },
+      {
+        "id": "explore-nature-growth-5",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "P02",
+        "level": "L3",
+        "stage": 2,
+        "difficultyNote": "排列变化",
+        "prerequisites": "能把4阶段与3先后条件匹配",
+        "prompt": "根据观察记录，把变化的先后排好。",
+        "instruction": "先选图卡，再按位置编号排好。也可以拖过去。",
+        "clues": [
+          "毛毛虫吃叶子之后，记录到形成蛹。",
+          "形成蛹之后，记录到蝴蝶出来。",
+          "蝴蝶出来之后，记录到蝴蝶展开翅膀。"
+        ],
+        "tokens": [
+          {
+            "id": "phase1",
+            "label": "形成蛹",
+            "image": {
+              "src": "/images/items/exploration-art/butterfly-growth.png",
+              "alt": "形成蛹",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 1
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "phase2",
+            "label": "蝴蝶出来",
+            "image": {
+              "src": "/images/items/exploration-art/butterfly-growth.png",
+              "alt": "蝴蝶出来",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 2
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "phase3",
+            "label": "蝴蝶展开翅膀",
+            "image": {
+              "src": "/images/items/exploration-art/butterfly-growth.png",
+              "alt": "蝴蝶展开翅膀",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 3
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "phase0",
+            "label": "毛毛虫吃叶子",
+            "image": {
+              "src": "/images/items/exploration-art/butterfly-growth.png",
+              "alt": "毛毛虫吃叶子",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 0
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          }
+        ],
+        "hints": [
+          "毛毛虫吃叶子之后，记录到形成蛹。",
+          "用记录里的变化解释顺序，不能只凭图卡大小判断。"
+        ],
+        "success": "用记录里的变化解释顺序，不能只凭图卡大小判断。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+        "abilityTags": [
+          "自然观察、生物特征与成长顺序"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S071",
+            "locator": "render7"
+          },
+          {
+            "sourceId": "S071",
+            "locator": "render20"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide3"
+          },
+          {
+            "sourceId": "S109",
+            "locator": "30-32"
+          },
+          {
+            "sourceId": "S112",
+            "locator": "26-28"
+          },
+          {
+            "sourceId": "S115",
+            "locator": "33-35"
+          },
+          {
+            "sourceId": "S117",
+            "locator": "29-31"
+          },
+          {
+            "sourceId": "S119",
+            "locator": "29"
+          }
+        ],
+        "kind": "orderedPlacement",
+        "slotCount": 4,
+        "tokenUse": "once",
+        "evaluation": {
+          "kind": "sequence",
+          "tokenIds": [
+            "phase0",
+            "phase1",
+            "phase2",
+            "phase3"
+          ]
+        },
+        "difficulty": {
+          "rules": 3,
+          "steps": 3,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "basis": "4阶段图排序，有3条明示先后",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "slots": 4
+          }
+        }
+      },
+      {
+        "id": "explore-nature-growth-6",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "P02",
+        "level": "L3",
+        "stage": 2,
+        "difficultyNote": "排列变化",
+        "prerequisites": "能把4阶段与3先后条件匹配",
+        "prompt": "根据观察记录，把变化的先后排好。",
+        "instruction": "先选图卡，再按位置编号排好。也可以拖过去。",
+        "clues": [
+          "水里有卵之后，记录到孵出蝌蚪。",
+          "孵出蝌蚪之后，记录到蝌蚪长出后腿。",
+          "蝌蚪长出后腿之后，记录到小青蛙尾巴变短。"
+        ],
+        "tokens": [
+          {
+            "id": "phase2",
+            "label": "蝌蚪长出后腿",
+            "image": {
+              "src": "/images/items/exploration-art/frog-growth.png",
+              "alt": "蝌蚪长出后腿",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 2
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "phase3",
+            "label": "小青蛙尾巴变短",
+            "image": {
+              "src": "/images/items/exploration-art/frog-growth.png",
+              "alt": "小青蛙尾巴变短",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 3
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "phase0",
+            "label": "水里有卵",
+            "image": {
+              "src": "/images/items/exploration-art/frog-growth.png",
+              "alt": "水里有卵",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 0
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          },
+          {
+            "id": "phase1",
+            "label": "孵出蝌蚪",
+            "image": {
+              "src": "/images/items/exploration-art/frog-growth.png",
+              "alt": "孵出蝌蚪",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 1
+              },
+              "style": "illustration"
+            },
+            "textOnly": false
+          }
+        ],
+        "hints": [
+          "水里有卵之后，记录到孵出蝌蚪。",
+          "用记录里的变化解释顺序，不能只凭图卡大小判断。"
+        ],
+        "success": "用记录里的变化解释顺序，不能只凭图卡大小判断。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+        "abilityTags": [
+          "自然观察、生物特征与成长顺序"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S071",
+            "locator": "render7"
+          },
+          {
+            "sourceId": "S071",
+            "locator": "render20"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide3"
+          },
+          {
+            "sourceId": "S109",
+            "locator": "30-32"
+          },
+          {
+            "sourceId": "S112",
+            "locator": "26-28"
+          },
+          {
+            "sourceId": "S115",
+            "locator": "33-35"
+          },
+          {
+            "sourceId": "S117",
+            "locator": "29-31"
+          },
+          {
+            "sourceId": "S119",
+            "locator": "29"
+          }
+        ],
+        "kind": "orderedPlacement",
+        "slotCount": 4,
+        "tokenUse": "once",
+        "evaluation": {
+          "kind": "sequence",
+          "tokenIds": [
+            "phase0",
+            "phase1",
+            "phase2",
+            "phase3"
+          ]
+        },
+        "difficulty": {
+          "rules": 3,
+          "steps": 3,
+          "reading": 0,
+          "motor": 2,
+          "representation": "pictures",
+          "basis": "4阶段图排序，有3条明示先后",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "slots": 4
+          }
+        }
+      },
+      {
+        "id": "explore-nature-growth-7",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "P02",
+        "level": "L4",
+        "stage": 3,
+        "difficultyNote": "解释关系",
+        "prerequisites": "能用有日期记录比较具体变化并区分猜想",
+        "prompt": "豆苗连续观察",
+        "instruction": "和家长一起操作、说一说，再记录这次的发现。",
+        "clues": [],
+        "tokens": [],
+        "hints": [
+          "按日期摆好观察图片或记录。",
+          "指出两个时间点之间确实发生的变化。"
+        ],
+        "success": "这次亲子活动已经记录。下次可以换个条件再试试。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "能依据记录说出先后；能指出具体变化；能区分观察和猜想",
+        "abilityTags": [
+          "自然观察、生物特征与成长顺序"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S071",
+            "locator": "render7"
+          },
+          {
+            "sourceId": "S071",
+            "locator": "render20"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide3"
+          },
+          {
+            "sourceId": "S109",
+            "locator": "30-32"
+          },
+          {
+            "sourceId": "S112",
+            "locator": "26-28"
+          },
+          {
+            "sourceId": "S115",
+            "locator": "33-35"
+          },
+          {
+            "sourceId": "S117",
+            "locator": "29-31"
+          },
+          {
+            "sourceId": "S119",
+            "locator": "29"
+          }
+        ],
+        "kind": "parentObservation",
+        "materials": [
+          "豆苗或家长准备的种子",
+          "透明杯",
+          "纸和笔"
+        ],
+        "steps": [
+          "按日期摆好观察图片或记录。",
+          "指出两个时间点之间确实发生的变化。",
+          "区分亲眼看到的和根据资料猜想的，下次再观察验证。"
+        ],
+        "observations": [
+          {
+            "id": "observe-0",
+            "text": "能依据记录说出先后"
+          },
+          {
+            "id": "observe-1",
+            "text": "能指出具体变化"
+          },
+          {
+            "id": "observe-2",
+            "text": "能区分观察和猜想"
+          }
+        ],
+        "presentation": {
+          "materialCards": [
+            {
+              "label": "豆苗或家长准备的种子"
+            },
+            {
+              "label": "透明杯",
+              "image": {
+                "src": "/images/items/exploration-art/parent-materials.png",
+                "alt": "透明杯",
+                "frame": {
+                  "columns": 3,
+                  "rows": 3,
+                  "index": 2
+                },
+                "style": "illustration"
+              }
+            },
+            {
+              "label": "纸和笔"
+            }
+          ],
+          "storyCards": [
+            {
+              "src": "/images/items/exploration-art/plant-growth.png",
+              "alt": "种子在土里",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 0
+              },
+              "style": "illustration"
+            },
+            {
+              "src": "/images/items/exploration-art/plant-growth.png",
+              "alt": "先长出根",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 1
+              },
+              "style": "illustration"
+            },
+            {
+              "src": "/images/items/exploration-art/plant-growth.png",
+              "alt": "小芽出土",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 2
+              },
+              "style": "illustration"
+            },
+            {
+              "src": "/images/items/exploration-art/plant-growth.png",
+              "alt": "叶片展开",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 3
+              },
+              "style": "illustration"
+            }
+          ]
+        },
+        "difficulty": {
+          "rules": 2,
+          "steps": 3,
+          "reading": 0,
+          "motor": 2,
+          "representation": "physical",
+          "basis": "按日期摆记录、比变化、区分观察猜想；实物/图片依赖家长准备",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "observationItems": 3
+          }
+        }
+      },
+      {
+        "id": "explore-nature-growth-8",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "P02",
+        "level": "L4",
+        "stage": 3,
+        "difficultyNote": "解释关系",
+        "prerequisites": "能用有日期记录比较具体变化并区分猜想",
+        "prompt": "寻找小动物的变化",
+        "instruction": "和家长一起操作、说一说，再记录这次的发现。",
+        "clues": [],
+        "tokens": [],
+        "hints": [
+          "按日期摆好观察图片或记录。",
+          "指出两个时间点之间确实发生的变化。"
+        ],
+        "success": "这次亲子活动已经记录。下次可以换个条件再试试。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "能依据记录说出先后；能指出具体变化；能区分观察和猜想",
+        "abilityTags": [
+          "自然观察、生物特征与成长顺序"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S071",
+            "locator": "render7"
+          },
+          {
+            "sourceId": "S071",
+            "locator": "render20"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide3"
+          },
+          {
+            "sourceId": "S109",
+            "locator": "30-32"
+          },
+          {
+            "sourceId": "S112",
+            "locator": "26-28"
+          },
+          {
+            "sourceId": "S115",
+            "locator": "33-35"
+          },
+          {
+            "sourceId": "S117",
+            "locator": "29-31"
+          },
+          {
+            "sourceId": "S119",
+            "locator": "29"
+          }
+        ],
+        "kind": "parentObservation",
+        "materials": [
+          "家长选好的生长过程图片",
+          "纸和笔"
+        ],
+        "steps": [
+          "按日期摆好观察图片或记录。",
+          "指出两个时间点之间确实发生的变化。",
+          "区分亲眼看到的和根据资料猜想的，下次再观察验证。"
+        ],
+        "observations": [
+          {
+            "id": "observe-0",
+            "text": "能依据记录说出先后"
+          },
+          {
+            "id": "observe-1",
+            "text": "能指出具体变化"
+          },
+          {
+            "id": "observe-2",
+            "text": "能区分观察和猜想"
+          }
+        ],
+        "presentation": {
+          "materialCards": [
+            {
+              "label": "家长选好的生长过程图片"
+            },
+            {
+              "label": "纸和笔"
+            }
+          ],
+          "storyCards": [
+            {
+              "src": "/images/items/exploration-art/butterfly-growth.png",
+              "alt": "毛毛虫吃叶子",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 0
+              },
+              "style": "illustration"
+            },
+            {
+              "src": "/images/items/exploration-art/butterfly-growth.png",
+              "alt": "形成蛹",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 1
+              },
+              "style": "illustration"
+            },
+            {
+              "src": "/images/items/exploration-art/butterfly-growth.png",
+              "alt": "蝴蝶出来",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 2
+              },
+              "style": "illustration"
+            },
+            {
+              "src": "/images/items/exploration-art/butterfly-growth.png",
+              "alt": "蝴蝶展开翅膀",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 3
+              },
+              "style": "illustration"
+            }
+          ]
+        },
+        "difficulty": {
+          "rules": 2,
+          "steps": 3,
+          "reading": 0,
+          "motor": 2,
+          "representation": "physical",
+          "basis": "按日期摆记录、比变化、区分观察猜想；实物/图片依赖家长准备",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "observationItems": 3
+          }
+        }
+      },
+      {
+        "id": "explore-nature-growth-9",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "P02",
+        "level": "L4",
+        "stage": 3,
+        "difficultyNote": "解释关系",
+        "prerequisites": "能用有日期记录比较具体变化并区分猜想",
+        "prompt": "对照观察记录",
+        "instruction": "和家长一起操作、说一说，再记录这次的发现。",
+        "clues": [],
+        "tokens": [],
+        "hints": [
+          "按日期摆好观察图片或记录。",
+          "指出两个时间点之间确实发生的变化。"
+        ],
+        "success": "这次亲子活动已经记录。下次可以换个条件再试试。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "能依据记录说出先后；能指出具体变化；能区分观察和猜想",
+        "abilityTags": [
+          "自然观察、生物特征与成长顺序"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S071",
+            "locator": "render7"
+          },
+          {
+            "sourceId": "S071",
+            "locator": "render20"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide3"
+          },
+          {
+            "sourceId": "S109",
+            "locator": "30-32"
+          },
+          {
+            "sourceId": "S112",
+            "locator": "26-28"
+          },
+          {
+            "sourceId": "S115",
+            "locator": "33-35"
+          },
+          {
+            "sourceId": "S117",
+            "locator": "29-31"
+          },
+          {
+            "sourceId": "S119",
+            "locator": "29"
+          }
+        ],
+        "kind": "parentObservation",
+        "materials": [
+          "家长选好的生长过程图片",
+          "纸和笔"
+        ],
+        "steps": [
+          "按日期摆好观察图片或记录。",
+          "指出两个时间点之间确实发生的变化。",
+          "区分亲眼看到的和根据资料猜想的，下次再观察验证。"
+        ],
+        "observations": [
+          {
+            "id": "observe-0",
+            "text": "能依据记录说出先后"
+          },
+          {
+            "id": "observe-1",
+            "text": "能指出具体变化"
+          },
+          {
+            "id": "observe-2",
+            "text": "能区分观察和猜想"
+          }
+        ],
+        "presentation": {
+          "materialCards": [
+            {
+              "label": "家长选好的生长过程图片"
+            },
+            {
+              "label": "纸和笔"
+            }
+          ],
+          "storyCards": [
+            {
+              "src": "/images/items/exploration-art/frog-growth.png",
+              "alt": "水里有卵",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 0
+              },
+              "style": "illustration"
+            },
+            {
+              "src": "/images/items/exploration-art/frog-growth.png",
+              "alt": "孵出蝌蚪",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 1
+              },
+              "style": "illustration"
+            },
+            {
+              "src": "/images/items/exploration-art/frog-growth.png",
+              "alt": "蝌蚪长出后腿",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 2
+              },
+              "style": "illustration"
+            },
+            {
+              "src": "/images/items/exploration-art/frog-growth.png",
+              "alt": "小青蛙尾巴变短",
+              "frame": {
+                "columns": 2,
+                "rows": 2,
+                "index": 3
+              },
+              "style": "illustration"
+            }
+          ]
+        },
+        "difficulty": {
+          "rules": 2,
+          "steps": 3,
+          "reading": 0,
+          "motor": 2,
+          "representation": "physical",
+          "basis": "按日期摆记录、比变化、区分观察猜想；实物/图片依赖家长准备",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "observationItems": 3
+          }
+        }
+      }
+    ],
+    "interactionLabel": "探索练习"
+  },
+  {
+    "id": "explore-science-experiments",
+    "kind": "activitySet",
+    "world": "life",
+    "title": "一起做小实验",
+    "subtitle": "生活科学：浮沉、颜色、影子与切面",
+    "goal": "提出预测 → 一次对照 → 改变条件再解释",
+    "parentPrompt": "先让孩子操作和解释，再按需要给一点提示。",
+    "abilityTags": [
+      "生活科学：浮沉、颜色、影子与切面"
+    ],
+    "level": "L3",
+    "rounds": [
+      {
+        "id": "explore-science-experiments-1",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "P03",
+        "level": "L2",
+        "stage": 1,
+        "difficultyNote": "提出预测",
+        "prerequisites": "能在成人协助下预测浮沉并逐件观察",
+        "prompt": "浮沉不只看大小",
+        "instruction": "和家长一起操作、说一说，再记录这次的发现。",
+        "clues": [],
+        "tokens": [],
+        "hints": [
+          "先预测每件物品放进水里会怎样，并说明依据。",
+          "逐件放入浅水中，记录浮或沉，比较预测。"
+        ],
+        "success": "这次亲子活动已经记录。下次可以换个条件再试试。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "能在操作前提出预测；能一次改变一个条件并观察；能根据结果修正解释",
+        "abilityTags": [
+          "生活科学：浮沉、颜色、影子与切面"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S105",
+            "locator": "slide1"
+          },
+          {
+            "sourceId": "S099",
+            "locator": "1-2"
+          },
+          {
+            "sourceId": "S071",
+            "locator": "render6"
+          },
+          {
+            "sourceId": "S074",
+            "locator": "97"
+          },
+          {
+            "sourceId": "S111",
+            "locator": "29-31"
+          },
+          {
+            "sourceId": "S113",
+            "locator": "28-30"
+          },
+          {
+            "sourceId": "S117",
+            "locator": "29-31"
+          }
+        ],
+        "kind": "parentObservation",
+        "materials": [
+          "一盆浅水",
+          "木块",
+          "金属勺",
+          "塑料盒",
+          "擦水布"
+        ],
+        "steps": [
+          "先预测每件物品放进水里会怎样，并说明依据。",
+          "逐件放入浅水中，记录浮或沉，比较预测。",
+          "把同一个塑料盒改变朝向或加一点水，观察条件改变后的结果。"
+        ],
+        "observations": [
+          {
+            "id": "observe-0",
+            "text": "能在操作前提出预测"
+          },
+          {
+            "id": "observe-1",
+            "text": "能一次改变一个条件并观察"
+          },
+          {
+            "id": "observe-2",
+            "text": "能根据结果修正解释"
+          }
+        ],
+        "presentation": {
+          "materialCards": [
+            {
+              "label": "一盆浅水",
+              "image": {
+                "src": "/images/items/exploration-art/experiment-materials.png",
+                "alt": "一盆浅水",
+                "frame": {
+                  "columns": 2,
+                  "rows": 2,
+                  "index": 3
+                },
+                "style": "illustration"
+              }
+            },
+            {
+              "label": "木块",
+              "image": {
+                "src": "/images/items/exploration-art/experiment-materials.png",
+                "alt": "木块",
+                "frame": {
+                  "columns": 2,
+                  "rows": 2,
+                  "index": 0
+                },
+                "style": "illustration"
+              }
+            },
+            {
+              "label": "金属勺",
+              "image": {
+                "src": "/images/items/exploration-art/experiment-materials.png",
+                "alt": "金属勺",
+                "frame": {
+                  "columns": 2,
+                  "rows": 2,
+                  "index": 2
+                },
+                "style": "illustration"
+              }
+            },
+            {
+              "label": "塑料盒",
+              "image": {
+                "src": "/images/items/exploration-art/experiment-materials.png",
+                "alt": "塑料盒",
+                "frame": {
+                  "columns": 2,
+                  "rows": 2,
+                  "index": 1
+                },
+                "style": "illustration"
+              }
+            },
+            {
+              "label": "擦水布",
+              "image": {
+                "src": "/images/items/exploration-art/everyday-tools.png",
+                "alt": "毛巾",
+                "frame": {
+                  "columns": 2,
+                  "rows": 2,
+                  "index": 1
+                },
+                "style": "illustration"
+              }
+            }
+          ]
+        },
+        "difficulty": {
+          "rules": 2,
+          "steps": 3,
+          "reading": 0,
+          "motor": 2,
+          "representation": "physical",
+          "basis": "第1项浮沉预测—实测—改变塑料盒条件并解释，控制条件与据证据修正",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "observationItems": 3
+          }
+        }
+      },
+      {
+        "id": "explore-science-experiments-2",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "P03",
+        "level": "L2",
+        "stage": 1,
+        "difficultyNote": "提出预测",
+        "prerequisites": "能使用颜料和透明片并比较颜色",
+        "prompt": "颜色和透明叠层",
+        "instruction": "和家长一起操作、说一说，再记录这次的发现。",
+        "clues": [],
+        "tokens": [],
+        "hints": [
+          "在白纸上观察两种颜料，先预测少量混合后的颜色。",
+          "实际混合，和预测比较，再改变一种颜料的比例。"
+        ],
+        "success": "这次亲子活动已经记录。下次可以换个条件再试试。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "能在操作前提出预测；能一次改变一个条件并观察；能根据结果修正解释",
+        "abilityTags": [
+          "生活科学：浮沉、颜色、影子与切面"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S105",
+            "locator": "slide1"
+          },
+          {
+            "sourceId": "S099",
+            "locator": "1-2"
+          },
+          {
+            "sourceId": "S071",
+            "locator": "render6"
+          },
+          {
+            "sourceId": "S074",
+            "locator": "97"
+          },
+          {
+            "sourceId": "S111",
+            "locator": "29-31"
+          },
+          {
+            "sourceId": "S113",
+            "locator": "28-30"
+          },
+          {
+            "sourceId": "S117",
+            "locator": "29-31"
+          }
+        ],
+        "kind": "parentObservation",
+        "materials": [
+          "可水洗颜料",
+          "透明彩色片",
+          "白纸",
+          "杯子"
+        ],
+        "steps": [
+          "在白纸上观察两种颜料，先预测少量混合后的颜色。",
+          "实际混合，和预测比较，再改变一种颜料的比例。",
+          "用透明彩色片在白纸前叠放，比较透光效果，说明这和颜料混合是不同操作。"
+        ],
+        "observations": [
+          {
+            "id": "observe-0",
+            "text": "能在操作前提出预测"
+          },
+          {
+            "id": "observe-1",
+            "text": "能一次改变一个条件并观察"
+          },
+          {
+            "id": "observe-2",
+            "text": "能根据结果修正解释"
+          }
+        ],
+        "presentation": {
+          "materialCards": [
+            {
+              "label": "可水洗颜料",
+              "image": {
+                "src": "/images/items/exploration-art/everyday-tools.png",
+                "alt": "颜料和画笔",
+                "frame": {
+                  "columns": 2,
+                  "rows": 2,
+                  "index": 3
+                },
+                "style": "illustration"
+              }
+            },
+            {
+              "label": "透明彩色片",
+              "image": {
+                "src": "/images/items/exploration-art/craft-materials.png",
+                "alt": "透明彩色片",
+                "frame": {
+                  "columns": 2,
+                  "rows": 2,
+                  "index": 2
+                },
+                "style": "illustration"
+              }
+            },
+            {
+              "label": "白纸",
+              "image": {
+                "src": "/images/items/exploration-art/craft-materials.png",
+                "alt": "白纸",
+                "frame": {
+                  "columns": 2,
+                  "rows": 2,
+                  "index": 0
+                },
+                "style": "illustration"
+              }
+            },
+            {
+              "label": "杯子",
+              "image": {
+                "src": "/images/items/cup.png",
+                "alt": "杯子"
+              }
+            }
+          ]
+        },
+        "difficulty": {
+          "rules": 2,
+          "steps": 3,
+          "reading": 0,
+          "motor": 2,
+          "representation": "physical",
+          "basis": "第2项颜料混合改比例，再比透明片叠层；两个操作体系不能混为同一规则",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "observationItems": 3
+          }
+        }
+      },
+      {
+        "id": "explore-science-experiments-3",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "P03",
+        "level": "L2",
+        "stage": 1,
+        "difficultyNote": "提出预测",
+        "prerequisites": "能观察光源影子关系，切面由家长操作",
+        "prompt": "影子与切面",
+        "instruction": "和家长一起操作、说一说，再记录这次的发现。",
+        "clues": [],
+        "tokens": [],
+        "hints": [
+          "把手电和积木摆好，预测移动光源后影子怎样变化。",
+          "一次只改变光源位置，观察影子的大小和方向。"
+        ],
+        "success": "这次亲子活动已经记录。下次可以换个条件再试试。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "能在操作前提出预测；能一次改变一个条件并观察；能根据结果修正解释",
+        "abilityTags": [
+          "生活科学：浮沉、颜色、影子与切面"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S105",
+            "locator": "slide1"
+          },
+          {
+            "sourceId": "S099",
+            "locator": "1-2"
+          },
+          {
+            "sourceId": "S071",
+            "locator": "render6"
+          },
+          {
+            "sourceId": "S074",
+            "locator": "97"
+          },
+          {
+            "sourceId": "S111",
+            "locator": "29-31"
+          },
+          {
+            "sourceId": "S113",
+            "locator": "28-30"
+          },
+          {
+            "sourceId": "S117",
+            "locator": "29-31"
+          }
+        ],
+        "kind": "parentObservation",
+        "materials": [
+          "手电筒",
+          "不透明积木",
+          "橡皮泥",
+          "家长操作的塑料切刀"
+        ],
+        "steps": [
+          "把手电和积木摆好，预测移动光源后影子怎样变化。",
+          "一次只改变光源位置，观察影子的大小和方向。",
+          "由家长沿不同方向切开橡皮泥，比较切面形状，指出哪些是实际看到的。"
+        ],
+        "observations": [
+          {
+            "id": "observe-0",
+            "text": "能在操作前提出预测"
+          },
+          {
+            "id": "observe-1",
+            "text": "能一次改变一个条件并观察"
+          },
+          {
+            "id": "observe-2",
+            "text": "能根据结果修正解释"
+          }
+        ],
+        "presentation": {
+          "materialCards": [
+            {
+              "label": "手电筒",
+              "image": {
+                "src": "/images/items/exploration-art/parent-materials.png",
+                "alt": "手电筒",
+                "frame": {
+                  "columns": 3,
+                  "rows": 3,
+                  "index": 6
+                },
+                "style": "illustration"
+              }
+            },
+            {
+              "label": "不透明积木",
+              "image": {
+                "src": "/images/items/exploration-art/parent-materials.png",
+                "alt": "方积木",
+                "frame": {
+                  "columns": 3,
+                  "rows": 3,
+                  "index": 1
+                },
+                "style": "illustration"
+              }
+            },
+            {
+              "label": "橡皮泥",
+              "image": {
+                "src": "/images/items/exploration-art/parent-materials.png",
+                "alt": "橡皮泥",
+                "frame": {
+                  "columns": 3,
+                  "rows": 3,
+                  "index": 7
+                },
+                "style": "illustration"
+              }
+            },
+            {
+              "label": "家长操作的塑料切刀",
+              "image": {
+                "src": "/images/items/exploration-art/parent-materials.png",
+                "alt": "塑料切刀",
+                "frame": {
+                  "columns": 3,
+                  "rows": 3,
+                  "index": 8
+                },
+                "style": "illustration"
+              }
+            }
+          ]
+        },
+        "difficulty": {
+          "rules": 2,
+          "steps": 3,
+          "reading": 0,
+          "motor": 2,
+          "representation": "physical",
+          "basis": "第3项单独改变光源观察影子，再由家长切橡皮泥看切面；两子任务负荷分记，非stage3必更难",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "observationItems": 3
+          }
+        }
+      }
+    ],
+    "interactionLabel": "亲子活动"
+  },
+  {
+    "id": "explore-senses-social-rules",
+    "kind": "activitySet",
+    "world": "life",
+    "title": "生活里的判断",
+    "subtitle": "感官、生活安全与社会情境",
+    "goal": "识别情境 → 说明选择 → 比较不同处理",
+    "parentPrompt": "先让孩子操作和解释，再按需要给一点提示。",
+    "abilityTags": [
+      "感官、生活安全与社会情境"
+    ],
+    "level": "L3",
+    "rounds": [
+      {
+        "id": "explore-senses-social-rules-1",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "P04",
+        "level": "L2",
+        "stage": 1,
+        "difficultyNote": "识别情境",
+        "prerequisites": "能描述安全大物品的触感和可见特征",
+        "prompt": "用什么来观察",
+        "instruction": "和家长一起操作、说一说，再记录这次的发现。",
+        "clues": [],
+        "tokens": [],
+        "hints": [
+          "把安全的大物品放进袋里，先摸一摸描述触感。",
+          "拿出来用眼睛观察，比较两种感官得到的信息。"
+        ],
+        "success": "这次亲子活动已经记录。下次可以换个条件再试试。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "说明自己知道的线索；给出和情境有关的理由；能比较不同的处理办法",
+        "abilityTags": [
+          "感官、生活安全与社会情境"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S105",
+            "locator": "slide23"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide25"
+          },
+          {
+            "sourceId": "S071",
+            "locator": "render14"
+          },
+          {
+            "sourceId": "S110",
+            "locator": "27-29"
+          },
+          {
+            "sourceId": "S114",
+            "locator": "27-29"
+          },
+          {
+            "sourceId": "S118",
+            "locator": "30-31"
+          }
+        ],
+        "kind": "parentObservation",
+        "materials": [
+          "不透明袋",
+          "大积木",
+          "布片"
+        ],
+        "steps": [
+          "把安全的大物品放进袋里，先摸一摸描述触感。",
+          "拿出来用眼睛观察，比较两种感官得到的信息。",
+          "说明还有什么信息不能只靠摸来确定。"
+        ],
+        "observations": [
+          {
+            "id": "observe-0",
+            "text": "说明自己知道的线索"
+          },
+          {
+            "id": "observe-1",
+            "text": "给出和情境有关的理由"
+          },
+          {
+            "id": "observe-2",
+            "text": "能比较不同的处理办法"
+          }
+        ],
+        "presentation": {
+          "materialCards": [
+            {
+              "label": "不透明袋",
+              "image": {
+                "src": "/images/items/exploration-art/parent-materials.png",
+                "alt": "不透明袋",
+                "frame": {
+                  "columns": 3,
+                  "rows": 3,
+                  "index": 3
+                },
+                "style": "illustration"
+              }
+            },
+            {
+              "label": "大积木",
+              "image": {
+                "src": "/images/items/exploration-art/parent-materials.png",
+                "alt": "方积木",
+                "frame": {
+                  "columns": 3,
+                  "rows": 3,
+                  "index": 1
+                },
+                "style": "illustration"
+              }
+            },
+            {
+              "label": "布片",
+              "image": {
+                "src": "/images/items/exploration-art/parent-materials.png",
+                "alt": "布片",
+                "frame": {
+                  "columns": 3,
+                  "rows": 3,
+                  "index": 4
+                },
+                "style": "illustration"
+              }
+            }
+          ]
+        },
+        "difficulty": {
+          "rules": 2,
+          "steps": 3,
+          "reading": 0,
+          "motor": 2,
+          "representation": "physical",
+          "basis": "第1项先摸后看比较感官信息，再指出单感官不能判断的属性",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "observationItems": 3
+          }
+        }
+      },
+      {
+        "id": "explore-senses-social-rules-2",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "P04",
+        "level": "L2",
+        "stage": 1,
+        "difficultyNote": "识别情境",
+        "prerequisites": "能指出障碍并摆玩具验证路线",
+        "prompt": "玩具通道怎么走",
+        "instruction": "和家长一起操作、说一说，再记录这次的发现。",
+        "clues": [],
+        "tokens": [],
+        "hints": [
+          "用玩具摆一条通道，设置盒子和一块假想水洼。",
+          "先说哪条路线更稳妥，指出具体障碍。"
+        ],
+        "success": "这次亲子活动已经记录。下次可以换个条件再试试。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "说明自己知道的线索；给出和情境有关的理由；能比较不同的处理办法",
+        "abilityTags": [
+          "感官、生活安全与社会情境"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S105",
+            "locator": "slide23"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide25"
+          },
+          {
+            "sourceId": "S071",
+            "locator": "render14"
+          },
+          {
+            "sourceId": "S110",
+            "locator": "27-29"
+          },
+          {
+            "sourceId": "S114",
+            "locator": "27-29"
+          },
+          {
+            "sourceId": "S118",
+            "locator": "30-31"
+          }
+        ],
+        "kind": "parentObservation",
+        "materials": [
+          "软垫",
+          "玩具",
+          "盒子"
+        ],
+        "steps": [
+          "用玩具摆一条通道，设置盒子和一块假想水洼。",
+          "先说哪条路线更稳妥，指出具体障碍。",
+          "实际用玩具走一遍，检查是否需要绕开或整理障碍。"
+        ],
+        "observations": [
+          {
+            "id": "observe-0",
+            "text": "说明自己知道的线索"
+          },
+          {
+            "id": "observe-1",
+            "text": "给出和情境有关的理由"
+          },
+          {
+            "id": "observe-2",
+            "text": "能比较不同的处理办法"
+          }
+        ],
+        "presentation": {
+          "materialCards": [
+            {
+              "label": "软垫",
+              "image": {
+                "src": "/images/items/exploration-art/craft-materials.png",
+                "alt": "软垫",
+                "frame": {
+                  "columns": 2,
+                  "rows": 2,
+                  "index": 3
+                },
+                "style": "illustration"
+              }
+            },
+            {
+              "label": "玩具",
+              "image": {
+                "src": "/images/items/toy-car.png",
+                "alt": "玩具车"
+              }
+            },
+            {
+              "label": "盒子",
+              "image": {
+                "src": "/images/items/box.png",
+                "alt": "盒子"
+              }
+            }
+          ]
+        },
+        "difficulty": {
+          "rules": 2,
+          "steps": 3,
+          "reading": 0,
+          "motor": 2,
+          "representation": "physical",
+          "basis": "第2项观察玩具障碍、规划较稳妥路线、走一遍修正",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "observationItems": 3
+          }
+        }
+      },
+      {
+        "id": "explore-senses-social-rules-3",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "P04",
+        "level": "L2",
+        "stage": 1,
+        "difficultyNote": "识别情境",
+        "prerequisites": "能表述自己愿望并复述对方愿望",
+        "prompt": "遇到分歧怎么说",
+        "instruction": "和家长一起操作、说一说，再记录这次的发现。",
+        "clues": [],
+        "tokens": [],
+        "hints": [
+          "模拟两个人都想玩同一件玩具的情况。",
+          "各说自己的想法，再复述对方想要什么。"
+        ],
+        "success": "这次亲子活动已经记录。下次可以换个条件再试试。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "说明自己知道的线索；给出和情境有关的理由；能比较不同的处理办法",
+        "abilityTags": [
+          "感官、生活安全与社会情境"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S105",
+            "locator": "slide23"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide25"
+          },
+          {
+            "sourceId": "S071",
+            "locator": "render14"
+          },
+          {
+            "sourceId": "S110",
+            "locator": "27-29"
+          },
+          {
+            "sourceId": "S114",
+            "locator": "27-29"
+          },
+          {
+            "sourceId": "S118",
+            "locator": "30-31"
+          }
+        ],
+        "kind": "parentObservation",
+        "materials": [
+          "两件玩具",
+          "纸和笔"
+        ],
+        "steps": [
+          "模拟两个人都想玩同一件玩具的情况。",
+          "各说自己的想法，再复述对方想要什么。",
+          "提出轮流、合作等不同办法，比较是否照顾到双方。"
+        ],
+        "observations": [
+          {
+            "id": "observe-0",
+            "text": "说明自己知道的线索"
+          },
+          {
+            "id": "observe-1",
+            "text": "给出和情境有关的理由"
+          },
+          {
+            "id": "observe-2",
+            "text": "能比较不同的处理办法"
+          }
+        ],
+        "presentation": {
+          "materialCards": [
+            {
+              "label": "两件玩具",
+              "image": {
+                "src": "/images/items/toy-car.png",
+                "alt": "玩具车"
+              }
+            },
+            {
+              "label": "纸和笔"
+            }
+          ]
+        },
+        "difficulty": {
+          "rules": 2,
+          "steps": 3,
+          "reading": 0,
+          "motor": 0,
+          "representation": "physical",
+          "basis": "第3项共同玩具冲突，听双方、提出方案、比较是否照顾双方；不用真实危险作刺激",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "observationItems": 3
+          }
+        }
+      }
+    ],
+    "interactionLabel": "亲子活动"
+  },
+  {
+    "id": "explore-culture-world",
+    "kind": "activitySet",
+    "world": "life",
+    "title": "节日和生活发现",
+    "subtitle": "节日、文化与世界常识",
+    "goal": "共同观察 → 寻找关系 → 联系生活讲述",
+    "parentPrompt": "先让孩子操作和解释，再按需要给一点提示。",
+    "abilityTags": [
+      "节日、文化与世界常识"
+    ],
+    "level": "L3",
+    "rounds": [
+      {
+        "id": "explore-culture-world-1",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "P05",
+        "level": "L2",
+        "stage": 1,
+        "difficultyNote": "共同观察",
+        "prerequisites": "能指认熟悉节日照片并回忆经历",
+        "prompt": "家里的节日记忆",
+        "instruction": "和家长一起操作、说一说，再记录这次的发现。",
+        "clues": [],
+        "tokens": [],
+        "hints": [
+          "选一件熟悉的节日物品，说一说在什么时候见过。",
+          "家长补充这个家庭为什么这样使用它。"
+        ],
+        "success": "这次亲子活动已经记录。下次可以换个条件再试试。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "能引用所给图片或介绍；能比较相同与不同；会提出一个有依据的问题",
+        "abilityTags": [
+          "节日、文化与世界常识"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S105",
+            "locator": "slide3"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide17"
+          },
+          {
+            "sourceId": "S071",
+            "locator": "render12-14"
+          }
+        ],
+        "kind": "parentObservation",
+        "materials": [
+          "家里愿意分享的节日照片或物品"
+        ],
+        "steps": [
+          "选一件熟悉的节日物品，说一说在什么时候见过。",
+          "家长补充这个家庭为什么这样使用它。",
+          "把自己的经历和刚听到的信息分开说明。"
+        ],
+        "observations": [
+          {
+            "id": "observe-0",
+            "text": "能引用所给图片或介绍"
+          },
+          {
+            "id": "observe-1",
+            "text": "能比较相同与不同"
+          },
+          {
+            "id": "observe-2",
+            "text": "会提出一个有依据的问题"
+          }
+        ],
+        "presentation": {
+          "materialCards": [
+            {
+              "label": "家里愿意分享的节日照片或物品"
+            }
+          ]
+        },
+        "difficulty": {
+          "rules": 1,
+          "steps": 3,
+          "reading": 0,
+          "motor": 1,
+          "representation": "physical",
+          "basis": "第1项说经验、听家长补充、区分亲历与听来；材料须自备",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "observationItems": 3
+          }
+        }
+      },
+      {
+        "id": "explore-culture-world-2",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "P05",
+        "level": "L2",
+        "stage": 1,
+        "difficultyNote": "共同观察",
+        "prerequisites": "能在成人读图介绍下比较两种做法",
+        "prompt": "同一节日不同做法",
+        "instruction": "和家长一起操作、说一说，再记录这次的发现。",
+        "clues": [],
+        "tokens": [],
+        "hints": [
+          "共同阅读两份节日生活介绍。",
+          "指出一处相同和一处不同，不把一种做法当成所有人的做法。"
+        ],
+        "success": "这次亲子活动已经记录。下次可以换个条件再试试。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "能引用所给图片或介绍；能比较相同与不同；会提出一个有依据的问题",
+        "abilityTags": [
+          "节日、文化与世界常识"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S105",
+            "locator": "slide3"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide17"
+          },
+          {
+            "sourceId": "S071",
+            "locator": "render12-14"
+          }
+        ],
+        "kind": "parentObservation",
+        "materials": [
+          "两种家庭节日活动的图片或文字介绍"
+        ],
+        "steps": [
+          "共同阅读两份节日生活介绍。",
+          "指出一处相同和一处不同，不把一种做法当成所有人的做法。",
+          "说说如果参加其中一种活动，你还想了解什么。"
+        ],
+        "observations": [
+          {
+            "id": "observe-0",
+            "text": "能引用所给图片或介绍"
+          },
+          {
+            "id": "observe-1",
+            "text": "能比较相同与不同"
+          },
+          {
+            "id": "observe-2",
+            "text": "会提出一个有依据的问题"
+          }
+        ],
+        "presentation": {
+          "materialCards": [
+            {
+              "label": "两种家庭节日活动的图片或文字介绍"
+            }
+          ]
+        },
+        "difficulty": {
+          "rules": 2,
+          "steps": 3,
+          "reading": 0,
+          "motor": 1,
+          "representation": "physical",
+          "basis": "第2项读两份活动介绍、找同异、不把一种做法推广所有人",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "observationItems": 3
+          }
+        }
+      },
+      {
+        "id": "explore-culture-world-3",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "P05",
+        "level": "L2",
+        "stage": 1,
+        "difficultyNote": "共同观察",
+        "prerequisites": "能在儿童地图或绘本找到指定地点",
+        "prompt": "地图里的生活",
+        "instruction": "和家长一起操作、说一说，再记录这次的发现。",
+        "clues": [],
+        "tokens": [],
+        "hints": [
+          "在地图上找到绘本或图片介绍的那个地方。",
+          "从给定图片中观察住房、衣物或交通的一处特点。"
+        ],
+        "success": "这次亲子活动已经记录。下次可以换个条件再试试。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "能引用所给图片或介绍；能比较相同与不同；会提出一个有依据的问题",
+        "abilityTags": [
+          "节日、文化与世界常识"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S105",
+            "locator": "slide3"
+          },
+          {
+            "sourceId": "S105",
+            "locator": "slide17"
+          },
+          {
+            "sourceId": "S071",
+            "locator": "render12-14"
+          }
+        ],
+        "kind": "parentObservation",
+        "materials": [
+          "一张儿童地图",
+          "介绍地图上同一地点生活的绘本或图片",
+          "纸和笔"
+        ],
+        "steps": [
+          "在地图上找到绘本或图片介绍的那个地方。",
+          "从给定图片中观察住房、衣物或交通的一处特点。",
+          "提出一个可以继续查书验证的问题，不凭一张图片概括所有人。"
+        ],
+        "observations": [
+          {
+            "id": "observe-0",
+            "text": "能引用所给图片或介绍"
+          },
+          {
+            "id": "observe-1",
+            "text": "能比较相同与不同"
+          },
+          {
+            "id": "observe-2",
+            "text": "会提出一个有依据的问题"
+          }
+        ],
+        "presentation": {
+          "materialCards": [
+            {
+              "label": "一张儿童地图"
+            },
+            {
+              "label": "介绍地图上同一地点生活的绘本或图片",
+              "image": {
+                "src": "/images/items/book.png",
+                "alt": "书本"
+              }
+            },
+            {
+              "label": "纸和笔"
+            }
+          ]
+        },
+        "difficulty": {
+          "rules": 2,
+          "steps": 3,
+          "reading": 0,
+          "motor": 1,
+          "representation": "physical",
+          "basis": "第3项地图定位、据图片描述一个特征、提可查问题；儿童不要求独立阅读资料",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "observationItems": 3
+          }
+        }
+      }
+    ],
+    "interactionLabel": "亲子活动"
+  },
+  {
+    "id": "explore-fine-motor-action",
+    "kind": "activitySet",
+    "world": "life",
+    "title": "小手和身体挑战",
+    "subtitle": "亲子动作、精细操作与协调",
+    "goal": "模仿操作 → 遵循简单要求 → 解释并调整",
+    "parentPrompt": "先让孩子操作和解释，再按需要给一点提示。",
+    "abilityTags": [
+      "亲子动作、精细操作与协调"
+    ],
+    "level": "L3",
+    "rounds": [
+      {
+        "id": "explore-fine-motor-action-1",
+        "schemaVersion": 1,
+        "revision": 2,
+        "primaryFamilyId": "P06",
+        "level": "L2",
+        "stage": 1,
+        "difficultyNote": "模仿操作",
+        "prerequisites": "在成人陪同下可沿线折、撕或用儿童剪刀",
+        "prompt": "沿线折与剪",
+        "instruction": "和家长一起操作、说一说，再记录这次的发现。",
+        "clues": [],
+        "tokens": [],
+        "hints": [
+          "家长照着模板在纸上画粗线，孩子先用手指沿线走，再沿直线折纸。",
+          "家长先示范剪口，孩子按自己的能力沿粗线剪或撕。"
+        ],
+        "success": "这次亲子活动已经记录。下次可以换个条件再试试。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "能遵循给定的简单要求；能发现并调整一次操作偏差；能说出调整的理由",
+        "abilityTags": [
+          "亲子动作、精细操作与协调"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S114",
+            "locator": "14-17"
+          },
+          {
+            "sourceId": "S115",
+            "locator": "38"
+          },
+          {
+            "sourceId": "S109",
+            "locator": "9"
+          },
+          {
+            "sourceId": "S110",
+            "locator": "5-7"
+          },
+          {
+            "sourceId": "S076",
+            "locator": "3"
+          },
+          {
+            "sourceId": "S089",
+            "locator": "video"
+          },
+          {
+            "sourceId": "S003",
+            "locator": "2"
+          },
+          {
+            "sourceId": "S003",
+            "locator": "4-5"
+          },
+          {
+            "sourceId": "S003",
+            "locator": "8"
+          }
+        ],
+        "kind": "parentObservation",
+        "materials": [
+          "纸",
+          "彩笔",
+          "屏幕上的粗线模板",
+          "圆头儿童剪刀，由家长陪同操作"
+        ],
+        "steps": [
+          "家长照着模板在纸上画粗线，孩子先用手指沿线走，再沿直线折纸。",
+          "家长先示范剪口，孩子按自己的能力沿粗线剪或撕。",
+          "比较成品与线条，指出哪里偏了，调整握持和速度后再试。"
+        ],
+        "observations": [
+          {
+            "id": "observe-0",
+            "text": "能遵循给定的简单要求"
+          },
+          {
+            "id": "observe-1",
+            "text": "能发现并调整一次操作偏差"
+          },
+          {
+            "id": "observe-2",
+            "text": "能说出调整的理由"
+          }
+        ],
+        "illustration": {
+          "src": "/images/items/exploration/diagram-8aabdcd9.png",
+          "alt": "可照画的粗线模板：左边是直线，右边是折线。",
+          "width": 600,
+          "height": 230
+        },
+        "presentation": {
+          "materialCards": [
+            {
+              "label": "纸",
+              "image": {
+                "src": "/images/items/exploration-art/craft-materials.png",
+                "alt": "白纸",
+                "frame": {
+                  "columns": 2,
+                  "rows": 2,
+                  "index": 0
+                },
+                "style": "illustration"
+              }
+            },
+            {
+              "label": "彩笔",
+              "image": {
+                "src": "/images/items/exploration-art/craft-materials.png",
+                "alt": "彩笔",
+                "frame": {
+                  "columns": 2,
+                  "rows": 2,
+                  "index": 1
+                },
+                "style": "illustration"
+              }
+            },
+            {
+              "label": "屏幕上的粗线模板"
+            },
+            {
+              "label": "圆头儿童剪刀，由家长陪同操作",
+              "image": {
+                "src": "/images/items/exploration-art/everyday-tools.png",
+                "alt": "圆头剪刀",
+                "frame": {
+                  "columns": 2,
+                  "rows": 2,
+                  "index": 2
+                },
+                "style": "illustration"
+              }
+            }
+          ]
+        },
+        "difficulty": {
+          "rules": 2,
+          "steps": 3,
+          "reading": 0,
+          "motor": 3,
+          "representation": "physical",
+          "basis": "第1项沿粗线描走/折剪、比较偏差、调整再做；精细控制，剪撕按能力选择",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "observationItems": 3
+          }
+        }
+      },
+      {
+        "id": "explore-fine-motor-action-2",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "P06",
+        "level": "L2",
+        "stage": 1,
+        "difficultyNote": "模仿操作",
+        "prerequisites": "能稳放大积木及双手托盘慢走",
+        "prompt": "搭建和运送",
+        "instruction": "和家长一起操作、说一说，再记录这次的发现。",
+        "clues": [],
+        "tokens": [],
+        "hints": [
+          "用大积木搭一个有宽底座的结构，观察是否稳。",
+          "把少量大积木放在托盘上，沿地面软垫旁的直线慢走。"
+        ],
+        "success": "这次亲子活动已经记录。下次可以换个条件再试试。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "能遵循给定的简单要求；能发现并调整一次操作偏差；能说出调整的理由",
+        "abilityTags": [
+          "亲子动作、精细操作与协调"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S114",
+            "locator": "14-17"
+          },
+          {
+            "sourceId": "S115",
+            "locator": "38"
+          },
+          {
+            "sourceId": "S109",
+            "locator": "9"
+          },
+          {
+            "sourceId": "S110",
+            "locator": "5-7"
+          },
+          {
+            "sourceId": "S076",
+            "locator": "3"
+          },
+          {
+            "sourceId": "S089",
+            "locator": "video"
+          },
+          {
+            "sourceId": "S003",
+            "locator": "2"
+          },
+          {
+            "sourceId": "S003",
+            "locator": "4-5"
+          },
+          {
+            "sourceId": "S003",
+            "locator": "8"
+          }
+        ],
+        "kind": "parentObservation",
+        "materials": [
+          "大积木",
+          "小托盘",
+          "软垫"
+        ],
+        "steps": [
+          "用大积木搭一个有宽底座的结构，观察是否稳。",
+          "把少量大积木放在托盘上，沿地面软垫旁的直线慢走。",
+          "改变积木位置，比较怎样更容易保持平衡，再解释调整。"
+        ],
+        "observations": [
+          {
+            "id": "observe-0",
+            "text": "能遵循给定的简单要求"
+          },
+          {
+            "id": "observe-1",
+            "text": "能发现并调整一次操作偏差"
+          },
+          {
+            "id": "observe-2",
+            "text": "能说出调整的理由"
+          }
+        ],
+        "presentation": {
+          "materialCards": [
+            {
+              "label": "大积木",
+              "image": {
+                "src": "/images/items/exploration-art/parent-materials.png",
+                "alt": "方积木",
+                "frame": {
+                  "columns": 3,
+                  "rows": 3,
+                  "index": 1
+                },
+                "style": "illustration"
+              }
+            },
+            {
+              "label": "小托盘",
+              "image": {
+                "src": "/images/items/exploration-art/parent-materials.png",
+                "alt": "小托盘",
+                "frame": {
+                  "columns": 3,
+                  "rows": 3,
+                  "index": 5
+                },
+                "style": "illustration"
+              }
+            },
+            {
+              "label": "软垫",
+              "image": {
+                "src": "/images/items/exploration-art/craft-materials.png",
+                "alt": "软垫",
+                "frame": {
+                  "columns": 2,
+                  "rows": 2,
+                  "index": 3
+                },
+                "style": "illustration"
+              }
+            }
+          ]
+        },
+        "difficulty": {
+          "rules": 2,
+          "steps": 3,
+          "reading": 0,
+          "motor": 3,
+          "representation": "physical",
+          "basis": "第2项搭宽底座、托盘行走、改变积木位置再比较稳定；包含平衡控制",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "observationItems": 3
+          }
+        }
+      },
+      {
+        "id": "explore-fine-motor-action-3",
+        "schemaVersion": 1,
+        "revision": 1,
+        "primaryFamilyId": "P06",
+        "level": "L2",
+        "stage": 1,
+        "difficultyNote": "模仿操作",
+        "prerequisites": "能听完后模仿2节拍和2–3动作",
+        "prompt": "模仿节拍与动作",
+        "instruction": "和家长一起操作、说一说，再记录这次的发现。",
+        "clues": [],
+        "tokens": [],
+        "hints": [
+          "家长拍两个不同节拍，孩子先听完再模仿。",
+          "加入拍手、摸肩等两到三个动作，按次序重复。"
+        ],
+        "success": "这次亲子活动已经记录。下次可以换个条件再试试。",
+        "retry": "再对照图和题目的条件，一步一步检查。",
+        "parentPrompt": "能遵循给定的简单要求；能发现并调整一次操作偏差；能说出调整的理由",
+        "abilityTags": [
+          "亲子动作、精细操作与协调"
+        ],
+        "protocol": {
+          "kind": "practice"
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "S114",
+            "locator": "14-17"
+          },
+          {
+            "sourceId": "S115",
+            "locator": "38"
+          },
+          {
+            "sourceId": "S109",
+            "locator": "9"
+          },
+          {
+            "sourceId": "S110",
+            "locator": "5-7"
+          },
+          {
+            "sourceId": "S076",
+            "locator": "3"
+          },
+          {
+            "sourceId": "S089",
+            "locator": "video"
+          },
+          {
+            "sourceId": "S003",
+            "locator": "2"
+          },
+          {
+            "sourceId": "S003",
+            "locator": "4-5"
+          },
+          {
+            "sourceId": "S003",
+            "locator": "8"
+          }
+        ],
+        "kind": "parentObservation",
+        "materials": [
+          "足够活动的空地",
+          "双手"
+        ],
+        "steps": [
+          "家长拍两个不同节拍，孩子先听完再模仿。",
+          "加入拍手、摸肩等两到三个动作，按次序重复。",
+          "交换角色，由孩子编节拍或动作，家长跟做并核对顺序。"
+        ],
+        "observations": [
+          {
+            "id": "observe-0",
+            "text": "能遵循给定的简单要求"
+          },
+          {
+            "id": "observe-1",
+            "text": "能发现并调整一次操作偏差"
+          },
+          {
+            "id": "observe-2",
+            "text": "能说出调整的理由"
+          }
+        ],
+        "presentation": {
+          "materialCards": [
+            {
+              "label": "足够活动的空地"
+            },
+            {
+              "label": "双手"
+            }
+          ]
+        },
+        "difficulty": {
+          "rules": 2,
+          "steps": 3,
+          "reading": 0,
+          "motor": 3,
+          "representation": "physical",
+          "basis": "第3项听节拍、重复动作、交换角色编序列；需记录实际拍数和动作数",
+          "memory": 0,
+          "calibration": "design-estimate",
+          "workload": {
+            "observationItems": 3
+          }
+        }
+      }
+    ],
+    "interactionLabel": "亲子活动"
+  }
+]

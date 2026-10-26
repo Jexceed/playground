@@ -1,0 +1,5584 @@
+[
+  {
+    "id": "graphic-shadow-match",
+    "world": "graphic",
+    "title": "影子配对",
+    "subtitle": "上面看彩色图，在下面四个黑影里找同一个轮廓。",
+    "goal": "训练影子配对、轮廓抽象和抗颜色干扰。",
+    "parentPrompt": "问她：不要看颜色，只看外边一圈，哪个黑影的耳朵、角或尾巴位置一样？",
+    "abilityTags": [
+      "影子配对",
+      "轮廓抽象",
+      "抗颜色干扰"
+    ],
+    "level": "L5",
+    "rounds": [
+      {
+        "level": "L5",
+        "prompt": "哪一个黑影和上面的彩色图轮廓相同？",
+        "instruction": "不要看颜色，只看外边一圈、耳朵、角和尾巴。",
+        "graphicChallenge": {
+          "kind": "silhouette-match",
+          "stemLabel": "彩色样图",
+          "figures": [
+            {
+              "shape": "cat",
+              "color": "#f59e0b",
+              "mode": "color"
+            }
+          ],
+          "options": [
+            {
+              "value": "dog",
+              "label": "小狗影子",
+              "figure": {
+                "shape": "dog",
+                "mode": "shadow"
+              },
+              "nearMiss": "同样是圆脸动物，但耳朵垂下来，不是尖耳朵。"
+            },
+            {
+              "value": "rabbit",
+              "label": "小兔影子",
+              "figure": {
+                "shape": "rabbit",
+                "mode": "shadow"
+              },
+              "nearMiss": "也有耳朵，但耳朵太长。"
+            },
+            {
+              "value": "cat",
+              "label": "小猫影子",
+              "figure": {
+                "shape": "cat",
+                "mode": "shadow"
+              }
+            },
+            {
+              "value": "bear",
+              "label": "小熊影子",
+              "figure": {
+                "shape": "bear",
+                "mode": "shadow"
+              },
+              "nearMiss": "也是圆脸，但头顶是圆耳朵。"
+            }
+          ]
+        },
+        "choices": [
+          {
+            "label": "A",
+            "value": "dog"
+          },
+          {
+            "label": "B",
+            "value": "rabbit"
+          },
+          {
+            "label": "C",
+            "value": "cat"
+          },
+          {
+            "label": "D",
+            "value": "bear"
+          }
+        ],
+        "answer": "cat",
+        "success": "小猫影子的轮廓对上了，尖尖猫耳朵和圆脸轮廓都对，所以选这个影子。",
+        "retry": "先用手沿着彩色图的轮廓走一圈，再看黑影的耳朵、角、尾巴是不是一样。",
+        "parentPrompt": "问她：哪个影子的轮廓哪里最像？为什么不是其它相近的影子？",
+        "abilityTags": [
+          "影子配对",
+          "轮廓抽象",
+          "近似排除"
+        ],
+        "difficultyNote": "上实式影子题：四个选项都是相近轮廓，需要排除耳朵、角、尾巴等局部差异。",
+        "id": "graphic-shadow-match-1"
+      },
+      {
+        "level": "L5",
+        "prompt": "哪一个黑影和上面的彩色图轮廓相同？",
+        "instruction": "不要看颜色，只看外边一圈、耳朵、角和尾巴。",
+        "graphicChallenge": {
+          "kind": "silhouette-match",
+          "stemLabel": "彩色样图",
+          "figures": [
+            {
+              "shape": "rabbit",
+              "color": "#f8fafc",
+              "mode": "color"
+            }
+          ],
+          "options": [
+            {
+              "value": "dog",
+              "label": "小狗影子",
+              "figure": {
+                "shape": "dog",
+                "mode": "shadow"
+              },
+              "nearMiss": "耳朵在两边垂下去。"
+            },
+            {
+              "value": "cat",
+              "label": "小猫影子",
+              "figure": {
+                "shape": "cat",
+                "mode": "shadow"
+              },
+              "nearMiss": "有尖耳朵，但耳朵不够长。"
+            },
+            {
+              "value": "bear",
+              "label": "小熊影子",
+              "figure": {
+                "shape": "bear",
+                "mode": "shadow"
+              },
+              "nearMiss": "头顶是圆耳朵。"
+            },
+            {
+              "value": "rabbit",
+              "label": "小兔影子",
+              "figure": {
+                "shape": "rabbit",
+                "mode": "shadow"
+              }
+            }
+          ]
+        },
+        "choices": [
+          {
+            "label": "A",
+            "value": "dog"
+          },
+          {
+            "label": "B",
+            "value": "cat"
+          },
+          {
+            "label": "C",
+            "value": "bear"
+          },
+          {
+            "label": "D",
+            "value": "rabbit"
+          }
+        ],
+        "answer": "rabbit",
+        "success": "小兔影子的轮廓对上了，两只长耳朵最明显，所以选这个影子。",
+        "retry": "先用手沿着彩色图的轮廓走一圈，再看黑影的耳朵、角、尾巴是不是一样。",
+        "parentPrompt": "问她：哪个影子的轮廓哪里最像？为什么不是其它相近的影子？",
+        "abilityTags": [
+          "影子配对",
+          "轮廓抽象",
+          "近似排除"
+        ],
+        "difficultyNote": "上实式影子题：四个选项都是相近轮廓，需要排除耳朵、角、尾巴等局部差异。",
+        "id": "graphic-shadow-match-2"
+      },
+      {
+        "level": "L5",
+        "prompt": "哪一个黑影和上面的彩色图轮廓相同？",
+        "instruction": "不要看颜色，只看外边一圈、耳朵、角和尾巴。",
+        "graphicChallenge": {
+          "kind": "silhouette-match",
+          "stemLabel": "彩色样图",
+          "figures": [
+            {
+              "shape": "fish",
+              "color": "#38bdf8",
+              "mode": "color"
+            }
+          ],
+          "options": [
+            {
+              "value": "leaf",
+              "label": "叶子影子",
+              "figure": {
+                "shape": "leaf",
+                "mode": "shadow"
+              },
+              "nearMiss": "两头都尖，但没有鱼尾。"
+            },
+            {
+              "value": "fish",
+              "label": "小鱼影子",
+              "figure": {
+                "shape": "fish",
+                "mode": "shadow"
+              }
+            },
+            {
+              "value": "apple",
+              "label": "苹果影子",
+              "figure": {
+                "shape": "apple",
+                "mode": "shadow"
+              },
+              "nearMiss": "有圆肚子，但没有尾巴。"
+            },
+            {
+              "value": "pear",
+              "label": "梨子影子",
+              "figure": {
+                "shape": "pear",
+                "mode": "shadow"
+              },
+              "nearMiss": "一头大一头小，尾巴不对。"
+            }
+          ]
+        },
+        "choices": [
+          {
+            "label": "A",
+            "value": "leaf"
+          },
+          {
+            "label": "B",
+            "value": "fish"
+          },
+          {
+            "label": "C",
+            "value": "apple"
+          },
+          {
+            "label": "D",
+            "value": "pear"
+          }
+        ],
+        "answer": "fish",
+        "success": "小鱼影子的轮廓对上了，身体后面有三角尾巴，所以选这个影子。",
+        "retry": "先用手沿着彩色图的轮廓走一圈，再看黑影的耳朵、角、尾巴是不是一样。",
+        "parentPrompt": "问她：哪个影子的轮廓哪里最像？为什么不是其它相近的影子？",
+        "abilityTags": [
+          "影子配对",
+          "轮廓抽象",
+          "近似排除"
+        ],
+        "difficultyNote": "上实式影子题：四个选项都是相近轮廓，需要排除耳朵、角、尾巴等局部差异。",
+        "id": "graphic-shadow-match-3"
+      },
+      {
+        "level": "L6",
+        "prompt": "哪一个黑影和上面的彩色图轮廓相同？",
+        "instruction": "不要看颜色，只看外边一圈、耳朵、角和尾巴。",
+        "graphicChallenge": {
+          "kind": "silhouette-match",
+          "stemLabel": "彩色样图",
+          "figures": [
+            {
+              "shape": "apple",
+              "color": "#ef4444",
+              "mode": "color"
+            }
+          ],
+          "options": [
+            {
+              "value": "apple",
+              "label": "苹果影子",
+              "figure": {
+                "shape": "apple",
+                "mode": "shadow"
+              }
+            },
+            {
+              "value": "pear",
+              "label": "梨子影子",
+              "figure": {
+                "shape": "pear",
+                "mode": "shadow"
+              },
+              "nearMiss": "也有叶子，但下半部更细长。"
+            },
+            {
+              "value": "circle",
+              "label": "圆形影子",
+              "figure": {
+                "shape": "circle",
+                "mode": "shadow"
+              },
+              "nearMiss": "圆边相近，但没有叶子。"
+            },
+            {
+              "value": "flower",
+              "label": "花朵影子",
+              "figure": {
+                "shape": "flower",
+                "mode": "shadow"
+              },
+              "nearMiss": "有外凸边，但花瓣太多。"
+            }
+          ]
+        },
+        "choices": [
+          {
+            "label": "A",
+            "value": "apple"
+          },
+          {
+            "label": "B",
+            "value": "pear"
+          },
+          {
+            "label": "C",
+            "value": "circle"
+          },
+          {
+            "label": "D",
+            "value": "flower"
+          }
+        ],
+        "answer": "apple",
+        "success": "苹果影子的轮廓对上了，上面有小叶子，下面是圆鼓鼓的，所以选这个影子。",
+        "retry": "先用手沿着彩色图的轮廓走一圈，再看黑影的耳朵、角、尾巴是不是一样。",
+        "parentPrompt": "问她：哪个影子的轮廓哪里最像？为什么不是其它相近的影子？",
+        "abilityTags": [
+          "影子配对",
+          "轮廓抽象",
+          "近似排除"
+        ],
+        "difficultyNote": "上实式影子题：四个选项都是相近轮廓，需要排除耳朵、角、尾巴等局部差异。",
+        "id": "graphic-shadow-match-4"
+      },
+      {
+        "level": "L6",
+        "prompt": "哪一个黑影和上面的彩色图轮廓相同？",
+        "instruction": "不要看颜色，只看外边一圈、耳朵、角和尾巴。",
+        "graphicChallenge": {
+          "kind": "silhouette-match",
+          "stemLabel": "彩色样图",
+          "figures": [
+            {
+              "shape": "star",
+              "color": "#facc15",
+              "mode": "color"
+            }
+          ],
+          "options": [
+            {
+              "value": "star",
+              "label": "星星影子",
+              "figure": {
+                "shape": "star",
+                "mode": "shadow"
+              }
+            },
+            {
+              "value": "flower",
+              "label": "花朵影子",
+              "figure": {
+                "shape": "flower",
+                "mode": "shadow"
+              },
+              "nearMiss": "外边也有凸起，但每个瓣是圆的。"
+            },
+            {
+              "value": "leaf",
+              "label": "叶子影子",
+              "figure": {
+                "shape": "leaf",
+                "mode": "shadow"
+              },
+              "nearMiss": "有尖角，但只有两头尖。"
+            },
+            {
+              "value": "rounded-square",
+              "label": "圆角方块影子",
+              "figure": {
+                "shape": "rounded-square",
+                "mode": "shadow"
+              },
+              "nearMiss": "有角，但不是尖尖星角。"
+            }
+          ]
+        },
+        "choices": [
+          {
+            "label": "A",
+            "value": "star"
+          },
+          {
+            "label": "B",
+            "value": "flower"
+          },
+          {
+            "label": "C",
+            "value": "leaf"
+          },
+          {
+            "label": "D",
+            "value": "rounded-square"
+          }
+        ],
+        "answer": "star",
+        "success": "星星影子的轮廓对上了，外边一圈都是尖尖的角，所以选这个影子。",
+        "retry": "先用手沿着彩色图的轮廓走一圈，再看黑影的耳朵、角、尾巴是不是一样。",
+        "parentPrompt": "问她：哪个影子的轮廓哪里最像？为什么不是其它相近的影子？",
+        "abilityTags": [
+          "影子配对",
+          "轮廓抽象",
+          "近似排除"
+        ],
+        "difficultyNote": "上实式影子题：四个选项都是相近轮廓，需要排除耳朵、角、尾巴等局部差异。",
+        "id": "graphic-shadow-match-5"
+      },
+      {
+        "level": "L6",
+        "prompt": "哪一个黑影和上面的彩色图轮廓相同？",
+        "instruction": "不要看颜色，只看外边一圈、耳朵、角和尾巴。",
+        "graphicChallenge": {
+          "kind": "silhouette-match",
+          "stemLabel": "彩色样图",
+          "figures": [
+            {
+              "shape": "rounded-square",
+              "color": "#3b82f6",
+              "mode": "color"
+            }
+          ],
+          "options": [
+            {
+              "value": "circle",
+              "label": "圆形影子",
+              "figure": {
+                "shape": "circle",
+                "mode": "shadow"
+              },
+              "nearMiss": "边是圆的，但没有四条直边。"
+            },
+            {
+              "value": "star",
+              "label": "星星影子",
+              "figure": {
+                "shape": "star",
+                "mode": "shadow"
+              },
+              "nearMiss": "有角，但角太尖。"
+            },
+            {
+              "value": "rounded-square",
+              "label": "圆角方块影子",
+              "figure": {
+                "shape": "rounded-square",
+                "mode": "shadow"
+              }
+            },
+            {
+              "value": "apple",
+              "label": "苹果影子",
+              "figure": {
+                "shape": "apple",
+                "mode": "shadow"
+              },
+              "nearMiss": "外边鼓起，但顶部有叶子。"
+            }
+          ]
+        },
+        "choices": [
+          {
+            "label": "A",
+            "value": "circle"
+          },
+          {
+            "label": "B",
+            "value": "star"
+          },
+          {
+            "label": "C",
+            "value": "rounded-square"
+          },
+          {
+            "label": "D",
+            "value": "apple"
+          }
+        ],
+        "answer": "rounded-square",
+        "success": "圆角方块影子的轮廓对上了，四条边接近方形，角是圆圆的，所以选这个影子。",
+        "retry": "先用手沿着彩色图的轮廓走一圈，再看黑影的耳朵、角、尾巴是不是一样。",
+        "parentPrompt": "问她：哪个影子的轮廓哪里最像？为什么不是其它相近的影子？",
+        "abilityTags": [
+          "影子配对",
+          "轮廓抽象",
+          "近似排除"
+        ],
+        "difficultyNote": "上实式影子题：四个选项都是相近轮廓，需要排除耳朵、角、尾巴等局部差异。",
+        "id": "graphic-shadow-match-6"
+      },
+      {
+        "level": "L6",
+        "prompt": "哪一个黑影和上面的彩色图轮廓相同？",
+        "instruction": "不要看颜色，只看外边一圈、耳朵、角和尾巴。",
+        "graphicChallenge": {
+          "kind": "silhouette-match",
+          "stemLabel": "彩色样图",
+          "figures": [
+            {
+              "shape": "triangle",
+              "color": "#fb7185",
+              "mode": "color"
+            }
+          ],
+          "options": [
+            {
+              "value": "star",
+              "label": "星星影子",
+              "figure": {
+                "shape": "star",
+                "mode": "shadow"
+              },
+              "nearMiss": "也有尖角，但尖角太多。"
+            },
+            {
+              "value": "diamond",
+              "label": "菱形影子",
+              "figure": {
+                "shape": "diamond",
+                "mode": "shadow"
+              },
+              "nearMiss": "有角，但上下左右四个角都尖。"
+            },
+            {
+              "value": "leaf",
+              "label": "叶子影子",
+              "figure": {
+                "shape": "leaf",
+                "mode": "shadow"
+              },
+              "nearMiss": "两端尖，但边是弯的。"
+            },
+            {
+              "value": "triangle",
+              "label": "三角形影子",
+              "figure": {
+                "shape": "triangle",
+                "mode": "shadow"
+              }
+            }
+          ]
+        },
+        "choices": [
+          {
+            "label": "A",
+            "value": "star"
+          },
+          {
+            "label": "B",
+            "value": "diamond"
+          },
+          {
+            "label": "C",
+            "value": "leaf"
+          },
+          {
+            "label": "D",
+            "value": "triangle"
+          }
+        ],
+        "answer": "triangle",
+        "success": "三角形影子的轮廓对上了，只有三个尖角，下面是一条直边，所以选这个影子。",
+        "retry": "先用手沿着彩色图的轮廓走一圈，再看黑影的耳朵、角、尾巴是不是一样。",
+        "parentPrompt": "问她：哪个影子的轮廓哪里最像？为什么不是其它相近的影子？",
+        "abilityTags": [
+          "影子配对",
+          "轮廓抽象",
+          "近似排除"
+        ],
+        "difficultyNote": "上实式影子题：四个选项都是相近轮廓，需要排除耳朵、角、尾巴等局部差异。",
+        "id": "graphic-shadow-match-7"
+      },
+      {
+        "level": "L6",
+        "prompt": "哪一个黑影和上面的彩色图轮廓相同？",
+        "instruction": "不要看颜色，只看外边一圈、耳朵、角和尾巴。",
+        "graphicChallenge": {
+          "kind": "silhouette-match",
+          "stemLabel": "彩色样图",
+          "figures": [
+            {
+              "shape": "diamond",
+              "color": "#14b8a6",
+              "mode": "color"
+            }
+          ],
+          "options": [
+            {
+              "value": "rounded-square",
+              "label": "圆角方块影子",
+              "figure": {
+                "shape": "rounded-square",
+                "mode": "shadow"
+              },
+              "nearMiss": "也是四边形，但角是圆的。"
+            },
+            {
+              "value": "diamond",
+              "label": "菱形影子",
+              "figure": {
+                "shape": "diamond",
+                "mode": "shadow"
+              }
+            },
+            {
+              "value": "triangle",
+              "label": "三角形影子",
+              "figure": {
+                "shape": "triangle",
+                "mode": "shadow"
+              },
+              "nearMiss": "有尖角，但只有三个角。"
+            },
+            {
+              "value": "star",
+              "label": "星星影子",
+              "figure": {
+                "shape": "star",
+                "mode": "shadow"
+              },
+              "nearMiss": "有尖角，但外边有五个尖。"
+            }
+          ]
+        },
+        "choices": [
+          {
+            "label": "A",
+            "value": "rounded-square"
+          },
+          {
+            "label": "B",
+            "value": "diamond"
+          },
+          {
+            "label": "C",
+            "value": "triangle"
+          },
+          {
+            "label": "D",
+            "value": "star"
+          }
+        ],
+        "answer": "diamond",
+        "success": "菱形影子的轮廓对上了，上下左右四个尖角一样清楚，所以选这个影子。",
+        "retry": "先用手沿着彩色图的轮廓走一圈，再看黑影的耳朵、角、尾巴是不是一样。",
+        "parentPrompt": "问她：哪个影子的轮廓哪里最像？为什么不是其它相近的影子？",
+        "abilityTags": [
+          "影子配对",
+          "轮廓抽象",
+          "近似排除"
+        ],
+        "difficultyNote": "上实式影子题：四个选项都是相近轮廓，需要排除耳朵、角、尾巴等局部差异。",
+        "id": "graphic-shadow-match-8"
+      }
+    ],
+    "kind": "progressiveSet"
+  },
+  {
+    "id": "graphic-covered-restore",
+    "world": "graphic",
+    "title": "遮挡还原",
+    "subtitle": "上面的图被盖住一部分，下面选四个完整图里最可能的那个。",
+    "goal": "训练遮挡还原、可见线索提取和近似选项排除。",
+    "parentPrompt": "请她先说露出来的线索，再说为什么另外几个完整图虽然像但不对。",
+    "abilityTags": [
+      "遮挡还原",
+      "可见线索",
+      "近似排除"
+    ],
+    "level": "L6",
+    "rounds": [
+      {
+        "level": "L5",
+        "prompt": "上面的图被遮住一部分，完整图最可能是哪一个？",
+        "instruction": "只看还露出来的边、角、耳朵、叶子或尾巴，再选完整图。",
+        "graphicChallenge": {
+          "kind": "covered-match",
+          "stemLabel": "被遮住的图",
+          "figures": [
+            {
+              "shape": "cat",
+              "color": "#f59e0b",
+              "mode": "covered",
+              "cover": "right"
+            }
+          ],
+          "options": [
+            {
+              "value": "rabbit",
+              "label": "小兔",
+              "figure": {
+                "shape": "rabbit",
+                "mode": "color"
+              },
+              "nearMiss": "也有耳朵，但露出的耳朵没有那么长。"
+            },
+            {
+              "value": "cat",
+              "label": "小猫",
+              "figure": {
+                "shape": "cat",
+                "mode": "color"
+              }
+            },
+            {
+              "value": "dog",
+              "label": "小狗",
+              "figure": {
+                "shape": "dog",
+                "mode": "color"
+              },
+              "nearMiss": "脸相近，但小狗耳朵是垂下来的。"
+            },
+            {
+              "value": "bear",
+              "label": "小熊",
+              "figure": {
+                "shape": "bear",
+                "mode": "color"
+              },
+              "nearMiss": "圆脸相近，但圆耳朵位置不对。"
+            }
+          ]
+        },
+        "choices": [
+          {
+            "label": "A",
+            "value": "rabbit"
+          },
+          {
+            "label": "B",
+            "value": "cat"
+          },
+          {
+            "label": "C",
+            "value": "dog"
+          },
+          {
+            "label": "D",
+            "value": "bear"
+          }
+        ],
+        "answer": "cat",
+        "success": "小猫对，露出的尖耳朵和圆脸边线指向小猫。遮住以后要抓住露出的线索。",
+        "retry": "先指一指还露出来的线索：是圆边、尖角、耳朵、叶子还是尾巴，再排除很像但局部不对的选项。",
+        "parentPrompt": "请她说哪里被遮住了，哪里还露出来了，为什么其它完整图虽然像但不对。",
+        "abilityTags": [
+          "遮挡还原",
+          "可见线索",
+          "近似排除"
+        ],
+        "difficultyNote": "上实式遮挡题：只能看局部露出线索，四个完整候选图都有相似轮廓。",
+        "id": "graphic-covered-restore-1"
+      },
+      {
+        "level": "L5",
+        "prompt": "上面的图被遮住一部分，完整图最可能是哪一个？",
+        "instruction": "只看还露出来的边、角、耳朵、叶子或尾巴，再选完整图。",
+        "graphicChallenge": {
+          "kind": "covered-match",
+          "stemLabel": "被遮住的图",
+          "figures": [
+            {
+              "shape": "rabbit",
+              "color": "#f8fafc",
+              "mode": "covered",
+              "cover": "bottom"
+            }
+          ],
+          "options": [
+            {
+              "value": "cat",
+              "label": "小猫",
+              "figure": {
+                "shape": "cat",
+                "mode": "color"
+              },
+              "nearMiss": "也有耳朵，但耳朵短而尖。"
+            },
+            {
+              "value": "dog",
+              "label": "小狗",
+              "figure": {
+                "shape": "dog",
+                "mode": "color"
+              },
+              "nearMiss": "耳朵方向和长度都不对。"
+            },
+            {
+              "value": "rabbit",
+              "label": "小兔",
+              "figure": {
+                "shape": "rabbit",
+                "mode": "color"
+              }
+            },
+            {
+              "value": "bear",
+              "label": "小熊",
+              "figure": {
+                "shape": "bear",
+                "mode": "color"
+              },
+              "nearMiss": "只有圆耳朵。"
+            }
+          ]
+        },
+        "choices": [
+          {
+            "label": "A",
+            "value": "cat"
+          },
+          {
+            "label": "B",
+            "value": "dog"
+          },
+          {
+            "label": "C",
+            "value": "rabbit"
+          },
+          {
+            "label": "D",
+            "value": "bear"
+          }
+        ],
+        "answer": "rabbit",
+        "success": "小兔对，上面露出两只长耳朵，所以完整图是小兔。遮住以后要抓住露出的线索。",
+        "retry": "先指一指还露出来的线索：是圆边、尖角、耳朵、叶子还是尾巴，再排除很像但局部不对的选项。",
+        "parentPrompt": "请她说哪里被遮住了，哪里还露出来了，为什么其它完整图虽然像但不对。",
+        "abilityTags": [
+          "遮挡还原",
+          "可见线索",
+          "近似排除"
+        ],
+        "difficultyNote": "上实式遮挡题：只能看局部露出线索，四个完整候选图都有相似轮廓。",
+        "id": "graphic-covered-restore-2"
+      },
+      {
+        "level": "L6",
+        "prompt": "上面的图被遮住一部分，完整图最可能是哪一个？",
+        "instruction": "只看还露出来的边、角、耳朵、叶子或尾巴，再选完整图。",
+        "graphicChallenge": {
+          "kind": "covered-match",
+          "stemLabel": "被遮住的图",
+          "figures": [
+            {
+              "shape": "apple",
+              "color": "#ef4444",
+              "mode": "covered",
+              "cover": "left"
+            }
+          ],
+          "options": [
+            {
+              "value": "apple",
+              "label": "苹果",
+              "figure": {
+                "shape": "apple",
+                "mode": "color"
+              }
+            },
+            {
+              "value": "pear",
+              "label": "梨子",
+              "figure": {
+                "shape": "pear",
+                "mode": "color"
+              },
+              "nearMiss": "也有叶子，但底部更细长。"
+            },
+            {
+              "value": "circle",
+              "label": "圆形",
+              "figure": {
+                "shape": "circle",
+                "mode": "color"
+              },
+              "nearMiss": "圆边相近，但没有叶子。"
+            },
+            {
+              "value": "flower",
+              "label": "花朵",
+              "figure": {
+                "shape": "flower",
+                "mode": "color"
+              },
+              "nearMiss": "边缘凸起太多。"
+            }
+          ]
+        },
+        "choices": [
+          {
+            "label": "A",
+            "value": "apple"
+          },
+          {
+            "label": "B",
+            "value": "pear"
+          },
+          {
+            "label": "C",
+            "value": "circle"
+          },
+          {
+            "label": "D",
+            "value": "flower"
+          }
+        ],
+        "answer": "apple",
+        "success": "苹果对，右边露出的圆肚子和小叶子属于苹果。遮住以后要抓住露出的线索。",
+        "retry": "先指一指还露出来的线索：是圆边、尖角、耳朵、叶子还是尾巴，再排除很像但局部不对的选项。",
+        "parentPrompt": "请她说哪里被遮住了，哪里还露出来了，为什么其它完整图虽然像但不对。",
+        "abilityTags": [
+          "遮挡还原",
+          "可见线索",
+          "近似排除"
+        ],
+        "difficultyNote": "上实式遮挡题：只能看局部露出线索，四个完整候选图都有相似轮廓。",
+        "id": "graphic-covered-restore-3"
+      },
+      {
+        "level": "L6",
+        "prompt": "上面的图被遮住一部分，完整图最可能是哪一个？",
+        "instruction": "只看还露出来的边、角、耳朵、叶子或尾巴，再选完整图。",
+        "graphicChallenge": {
+          "kind": "covered-match",
+          "stemLabel": "被遮住的图",
+          "figures": [
+            {
+              "shape": "fish",
+              "color": "#38bdf8",
+              "mode": "covered",
+              "cover": "left"
+            }
+          ],
+          "options": [
+            {
+              "value": "leaf",
+              "label": "叶子",
+              "figure": {
+                "shape": "leaf",
+                "mode": "color"
+              },
+              "nearMiss": "外形也尖，但没有鱼尾分叉。"
+            },
+            {
+              "value": "pear",
+              "label": "梨子",
+              "figure": {
+                "shape": "pear",
+                "mode": "color"
+              },
+              "nearMiss": "一头尖，但没有尾巴。"
+            },
+            {
+              "value": "fish",
+              "label": "小鱼",
+              "figure": {
+                "shape": "fish",
+                "mode": "color"
+              }
+            },
+            {
+              "value": "star",
+              "label": "星星",
+              "figure": {
+                "shape": "star",
+                "mode": "color"
+              },
+              "nearMiss": "有尖角，但不是尾巴。"
+            }
+          ]
+        },
+        "choices": [
+          {
+            "label": "A",
+            "value": "leaf"
+          },
+          {
+            "label": "B",
+            "value": "pear"
+          },
+          {
+            "label": "C",
+            "value": "fish"
+          },
+          {
+            "label": "D",
+            "value": "star"
+          }
+        ],
+        "answer": "fish",
+        "success": "小鱼对，露出的分叉尾巴属于这条小鱼。遮住以后要抓住露出的线索。",
+        "retry": "先指一指还露出来的线索：是圆边、尖角、耳朵、叶子还是尾巴，再排除很像但局部不对的选项。",
+        "parentPrompt": "请她说哪里被遮住了，哪里还露出来了，为什么其它完整图虽然像但不对。",
+        "abilityTags": [
+          "遮挡还原",
+          "可见线索",
+          "近似排除"
+        ],
+        "difficultyNote": "上实式遮挡题：只能看局部露出线索，四个完整候选图都有相似轮廓。",
+        "id": "graphic-covered-restore-4"
+      },
+      {
+        "level": "L6",
+        "prompt": "上面的图被遮住一部分，完整图最可能是哪一个？",
+        "instruction": "只看还露出来的边、角、耳朵、叶子或尾巴，再选完整图。",
+        "graphicChallenge": {
+          "kind": "covered-match",
+          "stemLabel": "被遮住的图",
+          "figures": [
+            {
+              "shape": "star",
+              "color": "#facc15",
+              "mode": "covered",
+              "cover": "middle"
+            }
+          ],
+          "options": [
+            {
+              "value": "flower",
+              "label": "花朵",
+              "figure": {
+                "shape": "flower",
+                "mode": "color"
+              },
+              "nearMiss": "也有外凸，但花瓣是圆边。"
+            },
+            {
+              "value": "rounded-square",
+              "label": "圆角方块",
+              "figure": {
+                "shape": "rounded-square",
+                "mode": "color"
+              },
+              "nearMiss": "有角，但角不是尖的。"
+            },
+            {
+              "value": "leaf",
+              "label": "叶子",
+              "figure": {
+                "shape": "leaf",
+                "mode": "color"
+              },
+              "nearMiss": "两端尖，但没有五个尖角。"
+            },
+            {
+              "value": "star",
+              "label": "星星",
+              "figure": {
+                "shape": "star",
+                "mode": "color"
+              }
+            }
+          ]
+        },
+        "choices": [
+          {
+            "label": "A",
+            "value": "flower"
+          },
+          {
+            "label": "B",
+            "value": "rounded-square"
+          },
+          {
+            "label": "C",
+            "value": "leaf"
+          },
+          {
+            "label": "D",
+            "value": "star"
+          }
+        ],
+        "answer": "star",
+        "success": "星星对，四周露出的尖角说明完整图是星星。遮住以后要抓住露出的线索。",
+        "retry": "先指一指还露出来的线索：是圆边、尖角、耳朵、叶子还是尾巴，再排除很像但局部不对的选项。",
+        "parentPrompt": "请她说哪里被遮住了，哪里还露出来了，为什么其它完整图虽然像但不对。",
+        "abilityTags": [
+          "遮挡还原",
+          "可见线索",
+          "近似排除"
+        ],
+        "difficultyNote": "上实式遮挡题：只能看局部露出线索，四个完整候选图都有相似轮廓。",
+        "id": "graphic-covered-restore-5"
+      },
+      {
+        "level": "L6",
+        "prompt": "上面的图被遮住一部分，完整图最可能是哪一个？",
+        "instruction": "只看还露出来的边、角、耳朵、叶子或尾巴，再选完整图。",
+        "graphicChallenge": {
+          "kind": "covered-match",
+          "stemLabel": "被遮住的图",
+          "figures": [
+            {
+              "shape": "flower",
+              "color": "#f472b6",
+              "mode": "covered",
+              "cover": "bottom"
+            }
+          ],
+          "options": [
+            {
+              "value": "star",
+              "label": "星星",
+              "figure": {
+                "shape": "star",
+                "mode": "color"
+              },
+              "nearMiss": "外形也放射，但边是尖的。"
+            },
+            {
+              "value": "circle",
+              "label": "圆形",
+              "figure": {
+                "shape": "circle",
+                "mode": "color"
+              },
+              "nearMiss": "圆边相近，但没有一瓣一瓣的外轮廓。"
+            },
+            {
+              "value": "apple",
+              "label": "苹果",
+              "figure": {
+                "shape": "apple",
+                "mode": "color"
+              },
+              "nearMiss": "有圆边，但顶部是叶子不是花瓣。"
+            },
+            {
+              "value": "flower",
+              "label": "花朵",
+              "figure": {
+                "shape": "flower",
+                "mode": "color"
+              }
+            }
+          ]
+        },
+        "choices": [
+          {
+            "label": "A",
+            "value": "star"
+          },
+          {
+            "label": "B",
+            "value": "circle"
+          },
+          {
+            "label": "C",
+            "value": "apple"
+          },
+          {
+            "label": "D",
+            "value": "flower"
+          }
+        ],
+        "answer": "flower",
+        "success": "花朵对，上方露出一圈圆花瓣，不是尖角。遮住以后要抓住露出的线索。",
+        "retry": "先指一指还露出来的线索：是圆边、尖角、耳朵、叶子还是尾巴，再排除很像但局部不对的选项。",
+        "parentPrompt": "请她说哪里被遮住了，哪里还露出来了，为什么其它完整图虽然像但不对。",
+        "abilityTags": [
+          "遮挡还原",
+          "可见线索",
+          "近似排除"
+        ],
+        "difficultyNote": "上实式遮挡题：只能看局部露出线索，四个完整候选图都有相似轮廓。",
+        "id": "graphic-covered-restore-6"
+      },
+      {
+        "level": "L6",
+        "prompt": "上面的图被遮住一部分，完整图最可能是哪一个？",
+        "instruction": "只看还露出来的边、角、耳朵、叶子或尾巴，再选完整图。",
+        "graphicChallenge": {
+          "kind": "covered-match",
+          "stemLabel": "被遮住的图",
+          "figures": [
+            {
+              "shape": "diamond",
+              "color": "#14b8a6",
+              "mode": "covered",
+              "cover": "middle"
+            }
+          ],
+          "options": [
+            {
+              "value": "diamond",
+              "label": "菱形",
+              "figure": {
+                "shape": "diamond",
+                "mode": "color"
+              }
+            },
+            {
+              "value": "triangle",
+              "label": "三角形",
+              "figure": {
+                "shape": "triangle",
+                "mode": "color"
+              },
+              "nearMiss": "也有尖角，但缺少左右两个尖。"
+            },
+            {
+              "value": "star",
+              "label": "星星",
+              "figure": {
+                "shape": "star",
+                "mode": "color"
+              },
+              "nearMiss": "尖角更多，外轮廓不一样。"
+            },
+            {
+              "value": "rounded-square",
+              "label": "圆角方块",
+              "figure": {
+                "shape": "rounded-square",
+                "mode": "color"
+              },
+              "nearMiss": "有四边，但角不尖。"
+            }
+          ]
+        },
+        "choices": [
+          {
+            "label": "A",
+            "value": "diamond"
+          },
+          {
+            "label": "B",
+            "value": "triangle"
+          },
+          {
+            "label": "C",
+            "value": "star"
+          },
+          {
+            "label": "D",
+            "value": "rounded-square"
+          }
+        ],
+        "answer": "diamond",
+        "success": "菱形对，四个方向露出尖角，说明完整图是菱形。遮住以后要抓住露出的线索。",
+        "retry": "先指一指还露出来的线索：是圆边、尖角、耳朵、叶子还是尾巴，再排除很像但局部不对的选项。",
+        "parentPrompt": "请她说哪里被遮住了，哪里还露出来了，为什么其它完整图虽然像但不对。",
+        "abilityTags": [
+          "遮挡还原",
+          "可见线索",
+          "近似排除"
+        ],
+        "difficultyNote": "上实式遮挡题：只能看局部露出线索，四个完整候选图都有相似轮廓。",
+        "id": "graphic-covered-restore-7"
+      },
+      {
+        "level": "L6",
+        "prompt": "上面的图被遮住一部分，完整图最可能是哪一个？",
+        "instruction": "只看还露出来的边、角、耳朵、叶子或尾巴，再选完整图。",
+        "graphicChallenge": {
+          "kind": "covered-match",
+          "stemLabel": "被遮住的图",
+          "figures": [
+            {
+              "shape": "pear",
+              "color": "#a3e635",
+              "mode": "covered",
+              "cover": "right"
+            }
+          ],
+          "options": [
+            {
+              "value": "apple",
+              "label": "苹果",
+              "figure": {
+                "shape": "apple",
+                "mode": "color"
+              },
+              "nearMiss": "也有叶子，但整体更圆。"
+            },
+            {
+              "value": "pear",
+              "label": "梨子",
+              "figure": {
+                "shape": "pear",
+                "mode": "color"
+              }
+            },
+            {
+              "value": "leaf",
+              "label": "叶子",
+              "figure": {
+                "shape": "leaf",
+                "mode": "color"
+              },
+              "nearMiss": "有绿色弯边，但没有果身。"
+            },
+            {
+              "value": "circle",
+              "label": "圆形",
+              "figure": {
+                "shape": "circle",
+                "mode": "color"
+              },
+              "nearMiss": "有圆边，但没有叶子和细上部。"
+            }
+          ]
+        },
+        "choices": [
+          {
+            "label": "A",
+            "value": "apple"
+          },
+          {
+            "label": "B",
+            "value": "pear"
+          },
+          {
+            "label": "C",
+            "value": "leaf"
+          },
+          {
+            "label": "D",
+            "value": "circle"
+          }
+        ],
+        "answer": "pear",
+        "success": "梨子对，露出的细上部和较宽的下部更像梨子，不是圆苹果。遮住以后要抓住露出的线索。",
+        "retry": "先指一指还露出来的线索：是圆边、尖角、耳朵、叶子还是尾巴，再排除很像但局部不对的选项。",
+        "parentPrompt": "请她说哪里被遮住了，哪里还露出来了，为什么其它完整图虽然像但不对。",
+        "abilityTags": [
+          "遮挡还原",
+          "可见线索",
+          "近似排除"
+        ],
+        "difficultyNote": "上实式遮挡题：只能看局部露出线索，四个完整候选图都有相似轮廓。",
+        "id": "graphic-covered-restore-8"
+      }
+    ],
+    "kind": "progressiveSet"
+  },
+  {
+    "id": "graphic-detail-whole",
+    "world": "graphic",
+    "title": "局部找整体",
+    "subtitle": "只看放大镜里的局部线索，在四个完整图里找来源。",
+    "goal": "训练局部找整体、边角特征识别和高混淆选项排除。",
+    "parentPrompt": "问她：放大镜里的局部是耳朵、尾巴、叶子还是尖角？它在完整图的哪里？",
+    "abilityTags": [
+      "局部找整体",
+      "边角特征",
+      "近似排除"
+    ],
+    "level": "L6",
+    "rounds": [
+      {
+        "level": "L5",
+        "prompt": "放大镜里的局部来自哪一个完整图？",
+        "instruction": "先看局部的边、角、耳朵、叶子或尾巴，再去下面找完整图。",
+        "graphicChallenge": {
+          "kind": "detail-match",
+          "stemLabel": "放大局部",
+          "figures": [
+            {
+              "shape": "cat",
+              "color": "#f59e0b",
+              "mode": "detail",
+              "detail": "ear"
+            }
+          ],
+          "options": [
+            {
+              "value": "cat",
+              "label": "小猫",
+              "figure": {
+                "shape": "cat",
+                "mode": "color"
+              }
+            },
+            {
+              "value": "rabbit",
+              "label": "小兔",
+              "figure": {
+                "shape": "rabbit",
+                "mode": "color"
+              },
+              "nearMiss": "也有耳朵，但耳朵更长。"
+            },
+            {
+              "value": "dog",
+              "label": "小狗",
+              "figure": {
+                "shape": "dog",
+                "mode": "color"
+              },
+              "nearMiss": "耳朵垂下去，不是尖耳。"
+            },
+            {
+              "value": "bear",
+              "label": "小熊",
+              "figure": {
+                "shape": "bear",
+                "mode": "color"
+              },
+              "nearMiss": "耳朵是圆的。"
+            }
+          ]
+        },
+        "choices": [
+          {
+            "label": "A",
+            "value": "cat"
+          },
+          {
+            "label": "B",
+            "value": "rabbit"
+          },
+          {
+            "label": "C",
+            "value": "dog"
+          },
+          {
+            "label": "D",
+            "value": "bear"
+          }
+        ],
+        "answer": "cat",
+        "success": "小猫对，放大镜里是短短的尖耳朵，属于小猫。局部线索要回到完整图里找位置。",
+        "retry": "先说放大镜里的局部是什么：耳朵、尾巴、叶子、尖角还是圆边，再看哪个完整图有同样局部。",
+        "parentPrompt": "问她：这个局部线索在完整图的哪里？为什么其它选项的相似局部不一样？",
+        "abilityTags": [
+          "局部找整体",
+          "边角特征",
+          "近似排除"
+        ],
+        "difficultyNote": "上实式局部识别题：只给放大局部线索，四个完整候选图都有相近边角，需要排除。",
+        "id": "graphic-detail-whole-1"
+      },
+      {
+        "level": "L5",
+        "prompt": "放大镜里的局部来自哪一个完整图？",
+        "instruction": "先看局部的边、角、耳朵、叶子或尾巴，再去下面找完整图。",
+        "graphicChallenge": {
+          "kind": "detail-match",
+          "stemLabel": "放大局部",
+          "figures": [
+            {
+              "shape": "fish",
+              "color": "#38bdf8",
+              "mode": "detail",
+              "detail": "tail"
+            }
+          ],
+          "options": [
+            {
+              "value": "leaf",
+              "label": "叶子",
+              "figure": {
+                "shape": "leaf",
+                "mode": "color"
+              },
+              "nearMiss": "两端尖，但没有分叉尾巴。"
+            },
+            {
+              "value": "fish",
+              "label": "小鱼",
+              "figure": {
+                "shape": "fish",
+                "mode": "color"
+              }
+            },
+            {
+              "value": "pear",
+              "label": "梨子",
+              "figure": {
+                "shape": "pear",
+                "mode": "color"
+              },
+              "nearMiss": "一头尖但没有尾巴。"
+            },
+            {
+              "value": "star",
+              "label": "星星",
+              "figure": {
+                "shape": "star",
+                "mode": "color"
+              },
+              "nearMiss": "有尖角但不是尾巴。"
+            }
+          ]
+        },
+        "choices": [
+          {
+            "label": "A",
+            "value": "leaf"
+          },
+          {
+            "label": "B",
+            "value": "fish"
+          },
+          {
+            "label": "C",
+            "value": "pear"
+          },
+          {
+            "label": "D",
+            "value": "star"
+          }
+        ],
+        "answer": "fish",
+        "success": "小鱼对，放大镜里是分叉的扇形尾巴，属于小鱼。局部线索要回到完整图里找位置。",
+        "retry": "先说放大镜里的局部是什么：耳朵、尾巴、叶子、尖角还是圆边，再看哪个完整图有同样局部。",
+        "parentPrompt": "问她：这个局部线索在完整图的哪里？为什么其它选项的相似局部不一样？",
+        "abilityTags": [
+          "局部找整体",
+          "边角特征",
+          "近似排除"
+        ],
+        "difficultyNote": "上实式局部识别题：只给放大局部线索，四个完整候选图都有相近边角，需要排除。",
+        "id": "graphic-detail-whole-2"
+      },
+      {
+        "level": "L6",
+        "prompt": "放大镜里的局部来自哪一个完整图？",
+        "instruction": "先看局部的边、角、耳朵、叶子或尾巴，再去下面找完整图。",
+        "graphicChallenge": {
+          "kind": "detail-match",
+          "stemLabel": "放大局部",
+          "figures": [
+            {
+              "shape": "apple",
+              "color": "#ef4444",
+              "mode": "detail",
+              "detail": "leaf"
+            }
+          ],
+          "options": [
+            {
+              "value": "pear",
+              "label": "梨子",
+              "figure": {
+                "shape": "pear",
+                "mode": "color"
+              },
+              "nearMiss": "也有叶子，但整体下半部更细。"
+            },
+            {
+              "value": "circle",
+              "label": "圆形",
+              "figure": {
+                "shape": "circle",
+                "mode": "color"
+              },
+              "nearMiss": "有圆边但没有叶子。"
+            },
+            {
+              "value": "apple",
+              "label": "苹果",
+              "figure": {
+                "shape": "apple",
+                "mode": "color"
+              }
+            },
+            {
+              "value": "flower",
+              "label": "花朵",
+              "figure": {
+                "shape": "flower",
+                "mode": "color"
+              },
+              "nearMiss": "也有圆边，但局部是花瓣。"
+            }
+          ]
+        },
+        "choices": [
+          {
+            "label": "A",
+            "value": "pear"
+          },
+          {
+            "label": "B",
+            "value": "circle"
+          },
+          {
+            "label": "C",
+            "value": "apple"
+          },
+          {
+            "label": "D",
+            "value": "flower"
+          }
+        ],
+        "answer": "apple",
+        "success": "苹果对，放大镜里是顶部小叶子和圆边，属于苹果。局部线索要回到完整图里找位置。",
+        "retry": "先说放大镜里的局部是什么：耳朵、尾巴、叶子、尖角还是圆边，再看哪个完整图有同样局部。",
+        "parentPrompt": "问她：这个局部线索在完整图的哪里？为什么其它选项的相似局部不一样？",
+        "abilityTags": [
+          "局部找整体",
+          "边角特征",
+          "近似排除"
+        ],
+        "difficultyNote": "上实式局部识别题：只给放大局部线索，四个完整候选图都有相近边角，需要排除。",
+        "id": "graphic-detail-whole-3"
+      },
+      {
+        "level": "L6",
+        "prompt": "放大镜里的局部来自哪一个完整图？",
+        "instruction": "先看局部的边、角、耳朵、叶子或尾巴，再去下面找完整图。",
+        "graphicChallenge": {
+          "kind": "detail-match",
+          "stemLabel": "放大局部",
+          "figures": [
+            {
+              "shape": "star",
+              "color": "#facc15",
+              "mode": "detail",
+              "detail": "point"
+            }
+          ],
+          "options": [
+            {
+              "value": "flower",
+              "label": "花朵",
+              "figure": {
+                "shape": "flower",
+                "mode": "color"
+              },
+              "nearMiss": "外轮廓凸出但花瓣是圆的。"
+            },
+            {
+              "value": "star",
+              "label": "星星",
+              "figure": {
+                "shape": "star",
+                "mode": "color"
+              }
+            },
+            {
+              "value": "rounded-square",
+              "label": "圆角方块",
+              "figure": {
+                "shape": "rounded-square",
+                "mode": "color"
+              },
+              "nearMiss": "有角但不是尖角。"
+            },
+            {
+              "value": "leaf",
+              "label": "叶子",
+              "figure": {
+                "shape": "leaf",
+                "mode": "color"
+              },
+              "nearMiss": "有尖头但只有两端尖。"
+            }
+          ]
+        },
+        "choices": [
+          {
+            "label": "A",
+            "value": "flower"
+          },
+          {
+            "label": "B",
+            "value": "star"
+          },
+          {
+            "label": "C",
+            "value": "rounded-square"
+          },
+          {
+            "label": "D",
+            "value": "leaf"
+          }
+        ],
+        "answer": "star",
+        "success": "星星对，放大镜里是尖尖星角，属于星星。局部线索要回到完整图里找位置。",
+        "retry": "先说放大镜里的局部是什么：耳朵、尾巴、叶子、尖角还是圆边，再看哪个完整图有同样局部。",
+        "parentPrompt": "问她：这个局部线索在完整图的哪里？为什么其它选项的相似局部不一样？",
+        "abilityTags": [
+          "局部找整体",
+          "边角特征",
+          "近似排除"
+        ],
+        "difficultyNote": "上实式局部识别题：只给放大局部线索，四个完整候选图都有相近边角，需要排除。",
+        "id": "graphic-detail-whole-4"
+      },
+      {
+        "level": "L6",
+        "prompt": "放大镜里的局部来自哪一个完整图？",
+        "instruction": "先看局部的边、角、耳朵、叶子或尾巴，再去下面找完整图。",
+        "graphicChallenge": {
+          "kind": "detail-match",
+          "stemLabel": "放大局部",
+          "figures": [
+            {
+              "shape": "flower",
+              "color": "#f472b6",
+              "mode": "detail",
+              "detail": "curve"
+            }
+          ],
+          "options": [
+            {
+              "value": "flower",
+              "label": "花朵",
+              "figure": {
+                "shape": "flower",
+                "mode": "color"
+              }
+            },
+            {
+              "value": "circle",
+              "label": "圆形",
+              "figure": {
+                "shape": "circle",
+                "mode": "color"
+              },
+              "nearMiss": "圆边相近，但没有一片一片的花瓣。"
+            },
+            {
+              "value": "apple",
+              "label": "苹果",
+              "figure": {
+                "shape": "apple",
+                "mode": "color"
+              },
+              "nearMiss": "有圆边，但不是花瓣排列。"
+            },
+            {
+              "value": "star",
+              "label": "星星",
+              "figure": {
+                "shape": "star",
+                "mode": "color"
+              },
+              "nearMiss": "外轮廓放射，但尖角不对。"
+            }
+          ]
+        },
+        "choices": [
+          {
+            "label": "A",
+            "value": "flower"
+          },
+          {
+            "label": "B",
+            "value": "circle"
+          },
+          {
+            "label": "C",
+            "value": "apple"
+          },
+          {
+            "label": "D",
+            "value": "star"
+          }
+        ],
+        "answer": "flower",
+        "success": "花朵对，放大镜里是一片圆圆花瓣，属于花朵。局部线索要回到完整图里找位置。",
+        "retry": "先说放大镜里的局部是什么：耳朵、尾巴、叶子、尖角还是圆边，再看哪个完整图有同样局部。",
+        "parentPrompt": "问她：这个局部线索在完整图的哪里？为什么其它选项的相似局部不一样？",
+        "abilityTags": [
+          "局部找整体",
+          "边角特征",
+          "近似排除"
+        ],
+        "difficultyNote": "上实式局部识别题：只给放大局部线索，四个完整候选图都有相近边角，需要排除。",
+        "id": "graphic-detail-whole-5"
+      },
+      {
+        "level": "L6",
+        "prompt": "放大镜里的局部来自哪一个完整图？",
+        "instruction": "先看局部的边、角、耳朵、叶子或尾巴，再去下面找完整图。",
+        "graphicChallenge": {
+          "kind": "detail-match",
+          "stemLabel": "放大局部",
+          "figures": [
+            {
+              "shape": "rounded-square",
+              "color": "#3b82f6",
+              "mode": "detail",
+              "detail": "curve"
+            }
+          ],
+          "options": [
+            {
+              "value": "circle",
+              "label": "圆形",
+              "figure": {
+                "shape": "circle",
+                "mode": "color"
+              },
+              "nearMiss": "有圆边，但没有直边。"
+            },
+            {
+              "value": "star",
+              "label": "星星",
+              "figure": {
+                "shape": "star",
+                "mode": "color"
+              },
+              "nearMiss": "有角，但角太尖。"
+            },
+            {
+              "value": "apple",
+              "label": "苹果",
+              "figure": {
+                "shape": "apple",
+                "mode": "color"
+              },
+              "nearMiss": "边缘鼓起，但没有直边接圆角。"
+            },
+            {
+              "value": "rounded-square",
+              "label": "圆角方块",
+              "figure": {
+                "shape": "rounded-square",
+                "mode": "color"
+              }
+            }
+          ]
+        },
+        "choices": [
+          {
+            "label": "A",
+            "value": "circle"
+          },
+          {
+            "label": "B",
+            "value": "star"
+          },
+          {
+            "label": "C",
+            "value": "apple"
+          },
+          {
+            "label": "D",
+            "value": "rounded-square"
+          }
+        ],
+        "answer": "rounded-square",
+        "success": "圆角方块对，放大镜里是直边接圆角，属于圆角方块。局部线索要回到完整图里找位置。",
+        "retry": "先说放大镜里的局部是什么：耳朵、尾巴、叶子、尖角还是圆边，再看哪个完整图有同样局部。",
+        "parentPrompt": "问她：这个局部线索在完整图的哪里？为什么其它选项的相似局部不一样？",
+        "abilityTags": [
+          "局部找整体",
+          "边角特征",
+          "近似排除"
+        ],
+        "difficultyNote": "上实式局部识别题：只给放大局部线索，四个完整候选图都有相近边角，需要排除。",
+        "id": "graphic-detail-whole-6"
+      },
+      {
+        "level": "L6",
+        "prompt": "放大镜里的局部来自哪一个完整图？",
+        "instruction": "先看局部的边、角、耳朵、叶子或尾巴，再去下面找完整图。",
+        "graphicChallenge": {
+          "kind": "detail-match",
+          "stemLabel": "放大局部",
+          "figures": [
+            {
+              "shape": "diamond",
+              "color": "#14b8a6",
+              "mode": "detail",
+              "detail": "point"
+            }
+          ],
+          "options": [
+            {
+              "value": "triangle",
+              "label": "三角形",
+              "figure": {
+                "shape": "triangle",
+                "mode": "color"
+              },
+              "nearMiss": "也有尖角，但完整图只有三个角。"
+            },
+            {
+              "value": "star",
+              "label": "星星",
+              "figure": {
+                "shape": "star",
+                "mode": "color"
+              },
+              "nearMiss": "也有尖角，但角旁边还有凹进去的边。"
+            },
+            {
+              "value": "diamond",
+              "label": "菱形",
+              "figure": {
+                "shape": "diamond",
+                "mode": "color"
+              }
+            },
+            {
+              "value": "rounded-square",
+              "label": "圆角方块",
+              "figure": {
+                "shape": "rounded-square",
+                "mode": "color"
+              },
+              "nearMiss": "角是圆的，不是尖的。"
+            }
+          ]
+        },
+        "choices": [
+          {
+            "label": "A",
+            "value": "triangle"
+          },
+          {
+            "label": "B",
+            "value": "star"
+          },
+          {
+            "label": "C",
+            "value": "diamond"
+          },
+          {
+            "label": "D",
+            "value": "rounded-square"
+          }
+        ],
+        "answer": "diamond",
+        "success": "菱形对，放大镜里是两条直边夹出的尖角，属于菱形。局部线索要回到完整图里找位置。",
+        "retry": "先说放大镜里的局部是什么：耳朵、尾巴、叶子、尖角还是圆边，再看哪个完整图有同样局部。",
+        "parentPrompt": "问她：这个局部线索在完整图的哪里？为什么其它选项的相似局部不一样？",
+        "abilityTags": [
+          "局部找整体",
+          "边角特征",
+          "近似排除"
+        ],
+        "difficultyNote": "上实式局部识别题：只给放大局部线索，四个完整候选图都有相近边角，需要排除。",
+        "id": "graphic-detail-whole-7"
+      },
+      {
+        "level": "L6",
+        "prompt": "放大镜里的局部来自哪一个完整图？",
+        "instruction": "先看局部的边、角、耳朵、叶子或尾巴，再去下面找完整图。",
+        "graphicChallenge": {
+          "kind": "detail-match",
+          "stemLabel": "放大局部",
+          "figures": [
+            {
+              "shape": "pear",
+              "color": "#a3e635",
+              "mode": "detail",
+              "detail": "leaf"
+            }
+          ],
+          "options": [
+            {
+              "value": "apple",
+              "label": "苹果",
+              "figure": {
+                "shape": "apple",
+                "mode": "color"
+              },
+              "nearMiss": "也有叶子，但叶子下面是圆鼓鼓的上部。"
+            },
+            {
+              "value": "leaf",
+              "label": "叶子",
+              "figure": {
+                "shape": "leaf",
+                "mode": "color"
+              },
+              "nearMiss": "整张都是叶子，没有果身连接。"
+            },
+            {
+              "value": "flower",
+              "label": "花朵",
+              "figure": {
+                "shape": "flower",
+                "mode": "color"
+              },
+              "nearMiss": "有圆瓣，但没有小叶子接果身。"
+            },
+            {
+              "value": "pear",
+              "label": "梨子",
+              "figure": {
+                "shape": "pear",
+                "mode": "color"
+              }
+            }
+          ]
+        },
+        "choices": [
+          {
+            "label": "A",
+            "value": "apple"
+          },
+          {
+            "label": "B",
+            "value": "leaf"
+          },
+          {
+            "label": "C",
+            "value": "flower"
+          },
+          {
+            "label": "D",
+            "value": "pear"
+          }
+        ],
+        "answer": "pear",
+        "success": "梨子对，放大镜里是小叶子连着细细的上部，属于梨子。局部线索要回到完整图里找位置。",
+        "retry": "先说放大镜里的局部是什么：耳朵、尾巴、叶子、尖角还是圆边，再看哪个完整图有同样局部。",
+        "parentPrompt": "问她：这个局部线索在完整图的哪里？为什么其它选项的相似局部不一样？",
+        "abilityTags": [
+          "局部找整体",
+          "边角特征",
+          "近似排除"
+        ],
+        "difficultyNote": "上实式局部识别题：只给放大局部线索，四个完整候选图都有相近边角，需要排除。",
+        "id": "graphic-detail-whole-8"
+      }
+    ],
+    "kind": "progressiveSet"
+  },
+  {
+    "id": "graphic-layer-overlap",
+    "world": "graphic",
+    "title": "纸片叠叠板",
+    "subtitle": "看两张纸片叠在一起后的样子，找出正确的上下关系。",
+    "goal": "训练纸片叠合、上下层判断和重叠区域观察。",
+    "parentPrompt": "请她说：哪一张在上面？重叠的地方挡住了谁？",
+    "abilityTags": [
+      "纸片叠叠板",
+      "上下层判断",
+      "重叠线索"
+    ],
+    "level": "L6",
+    "rounds": [
+      {
+        "level": "L5",
+        "prompt": "按顺序叠放不透光的彩色纸片，会变成哪张图？",
+        "instruction": "小方框只标位置。对齐小方框，纸片不挪位置，先放1号，再盖2号。",
+        "graphicChallenge": {
+          "kind": "layer-overlap",
+          "stemLabel": "先看示例，再看本题要叠加的两张图",
+          "figures": [
+            {
+              "shape": "circle",
+              "color": "#60a5fa",
+              "scale": 0.74,
+              "x": -10,
+              "y": 8,
+              "opacity": 1
+            },
+            {
+              "shape": "star",
+              "color": "#facc15",
+              "scale": 0.74,
+              "x": 12,
+              "y": -8,
+              "opacity": 1
+            }
+          ],
+          "groups": [
+            {
+              "label": "示例1 先放",
+              "figures": [
+                {
+                  "shape": "rounded-square",
+                  "color": "#93c5fd",
+                  "scale": 0.68,
+                  "x": -8,
+                  "y": 8,
+                  "opacity": 1
+                }
+              ],
+              "connector": "plus"
+            },
+            {
+              "label": "示例2 盖上",
+              "figures": [
+                {
+                  "shape": "fish",
+                  "color": "#38bdf8",
+                  "scale": 0.64,
+                  "x": 12,
+                  "y": -8,
+                  "opacity": 1
+                }
+              ],
+              "connector": "arrow"
+            },
+            {
+              "label": "示例叠后",
+              "figures": [
+                {
+                  "shape": "rounded-square",
+                  "color": "#93c5fd",
+                  "scale": 0.68,
+                  "x": -8,
+                  "y": 8,
+                  "opacity": 1
+                },
+                {
+                  "shape": "fish",
+                  "color": "#38bdf8",
+                  "scale": 0.64,
+                  "x": 12,
+                  "y": -8,
+                  "opacity": 1
+                }
+              ]
+            }
+          ],
+          "options": [
+            {
+              "value": "circle-over-star",
+              "label": "圆形在星星上面",
+              "figures": [
+                {
+                  "shape": "star",
+                  "color": "#facc15",
+                  "scale": 0.74,
+                  "x": 12,
+                  "y": -8,
+                  "opacity": 1
+                },
+                {
+                  "shape": "circle",
+                  "color": "#60a5fa",
+                  "scale": 0.74,
+                  "x": -10,
+                  "y": 8,
+                  "opacity": 1
+                }
+              ],
+              "nearMiss": "两个图形一样，但上面和下面反了。"
+            },
+            {
+              "value": "star-over-circle",
+              "label": "星星在圆形上面",
+              "figures": [
+                {
+                  "shape": "circle",
+                  "color": "#60a5fa",
+                  "scale": 0.74,
+                  "x": -10,
+                  "y": 8,
+                  "opacity": 1
+                },
+                {
+                  "shape": "star",
+                  "color": "#facc15",
+                  "scale": 0.74,
+                  "x": 12,
+                  "y": -8,
+                  "opacity": 1
+                }
+              ]
+            },
+            {
+              "value": "star-over-circle-shift",
+              "label": "星星在圆形上面，偏右下叠放",
+              "figures": [
+                {
+                  "shape": "circle",
+                  "color": "#60a5fa",
+                  "scale": 0.74,
+                  "x": 0,
+                  "y": 20,
+                  "opacity": 1
+                },
+                {
+                  "shape": "star",
+                  "color": "#facc15",
+                  "scale": 0.74,
+                  "x": 4,
+                  "y": 4,
+                  "opacity": 1
+                }
+              ],
+              "nearMiss": "上下顺序像，但重叠中心偏到一边。"
+            },
+            {
+              "value": "star-over-circle-wrong-shape",
+              "label": "花朵在圆形上面",
+              "figures": [
+                {
+                  "shape": "circle",
+                  "color": "#60a5fa",
+                  "scale": 0.74,
+                  "x": -10,
+                  "y": 8,
+                  "opacity": 1
+                },
+                {
+                  "shape": "flower",
+                  "color": "#facc15",
+                  "scale": 0.74,
+                  "x": 12,
+                  "y": -8,
+                  "opacity": 1
+                }
+              ],
+              "nearMiss": "位置像，但其中一个图形轮廓被换了。"
+            }
+          ]
+        },
+        "choices": [
+          {
+            "label": "A",
+            "value": "circle-over-star"
+          },
+          {
+            "label": "B",
+            "value": "star-over-circle"
+          },
+          {
+            "label": "C",
+            "value": "star-over-circle-shift"
+          },
+          {
+            "label": "D",
+            "value": "star-over-circle-wrong-shape"
+          }
+        ],
+        "answer": "star-over-circle",
+        "success": "星星在圆形上面。对齐图卡位置，重叠处是后放的星星盖住先放的圆形。",
+        "retry": "先按顺序说：第1张先放，第2张盖上去。再看重叠边线，后盖上去的图会挡住前面的图。",
+        "parentPrompt": "请她指一指重叠的地方，说第2张盖上去以后挡住了哪里，为什么顺序反过来的选项不对。",
+        "abilityTags": [
+          "纸片叠叠板",
+          "上下层判断",
+          "重叠线索"
+        ],
+        "difficultyNote": "上实式叠合题：四个选项图形相近，需要同时判断上下层、重叠位置和轮廓是否被换。",
+        "id": "graphic-layer-overlap-1"
+      },
+      {
+        "level": "L5",
+        "prompt": "按顺序叠放不透光的彩色纸片，会变成哪张图？",
+        "instruction": "小方框只标位置。对齐小方框，纸片不挪位置，先放1号，再盖2号。",
+        "graphicChallenge": {
+          "kind": "layer-overlap",
+          "stemLabel": "先看示例，再看本题要叠加的两张图",
+          "figures": [
+            {
+              "shape": "star",
+              "color": "#facc15",
+              "scale": 0.74,
+              "x": -10,
+              "y": 8,
+              "opacity": 1
+            },
+            {
+              "shape": "circle",
+              "color": "#60a5fa",
+              "scale": 0.74,
+              "x": 12,
+              "y": -8,
+              "opacity": 1
+            }
+          ],
+          "groups": [
+            {
+              "label": "示例1 先放",
+              "figures": [
+                {
+                  "shape": "rounded-square",
+                  "color": "#93c5fd",
+                  "scale": 0.68,
+                  "x": -8,
+                  "y": 8,
+                  "opacity": 1
+                }
+              ],
+              "connector": "plus"
+            },
+            {
+              "label": "示例2 盖上",
+              "figures": [
+                {
+                  "shape": "fish",
+                  "color": "#38bdf8",
+                  "scale": 0.64,
+                  "x": 12,
+                  "y": -8,
+                  "opacity": 1
+                }
+              ],
+              "connector": "arrow"
+            },
+            {
+              "label": "示例叠后",
+              "figures": [
+                {
+                  "shape": "rounded-square",
+                  "color": "#93c5fd",
+                  "scale": 0.68,
+                  "x": -8,
+                  "y": 8,
+                  "opacity": 1
+                },
+                {
+                  "shape": "fish",
+                  "color": "#38bdf8",
+                  "scale": 0.64,
+                  "x": 12,
+                  "y": -8,
+                  "opacity": 1
+                }
+              ]
+            }
+          ],
+          "options": [
+            {
+              "value": "star-over-circle",
+              "label": "星星在圆形上面",
+              "figures": [
+                {
+                  "shape": "circle",
+                  "color": "#60a5fa",
+                  "scale": 0.74,
+                  "x": 12,
+                  "y": -8,
+                  "opacity": 1
+                },
+                {
+                  "shape": "star",
+                  "color": "#facc15",
+                  "scale": 0.74,
+                  "x": -10,
+                  "y": 8,
+                  "opacity": 1
+                }
+              ],
+              "nearMiss": "两个图形一样，但上面和下面反了。"
+            },
+            {
+              "value": "circle-over-star-shift",
+              "label": "圆形在星星上面，偏右下叠放",
+              "figures": [
+                {
+                  "shape": "star",
+                  "color": "#facc15",
+                  "scale": 0.74,
+                  "x": 0,
+                  "y": 20,
+                  "opacity": 1
+                },
+                {
+                  "shape": "circle",
+                  "color": "#60a5fa",
+                  "scale": 0.74,
+                  "x": 4,
+                  "y": 4,
+                  "opacity": 1
+                }
+              ],
+              "nearMiss": "上下顺序像，但重叠中心偏到一边。"
+            },
+            {
+              "value": "circle-over-star-wrong-shape",
+              "label": "圆角方块在星星上面",
+              "figures": [
+                {
+                  "shape": "star",
+                  "color": "#facc15",
+                  "scale": 0.74,
+                  "x": -10,
+                  "y": 8,
+                  "opacity": 1
+                },
+                {
+                  "shape": "rounded-square",
+                  "color": "#60a5fa",
+                  "scale": 0.74,
+                  "x": 12,
+                  "y": -8,
+                  "opacity": 1
+                }
+              ],
+              "nearMiss": "位置像，但其中一个图形轮廓被换了。"
+            },
+            {
+              "value": "circle-over-star",
+              "label": "圆形在星星上面",
+              "figures": [
+                {
+                  "shape": "star",
+                  "color": "#facc15",
+                  "scale": 0.74,
+                  "x": -10,
+                  "y": 8,
+                  "opacity": 1
+                },
+                {
+                  "shape": "circle",
+                  "color": "#60a5fa",
+                  "scale": 0.74,
+                  "x": 12,
+                  "y": -8,
+                  "opacity": 1
+                }
+              ]
+            }
+          ]
+        },
+        "choices": [
+          {
+            "label": "A",
+            "value": "star-over-circle"
+          },
+          {
+            "label": "B",
+            "value": "circle-over-star-shift"
+          },
+          {
+            "label": "C",
+            "value": "circle-over-star-wrong-shape"
+          },
+          {
+            "label": "D",
+            "value": "circle-over-star"
+          }
+        ],
+        "answer": "circle-over-star",
+        "success": "圆形在星星上面。对齐图卡位置，重叠处是后放的圆形盖住先放的星星。",
+        "retry": "先按顺序说：第1张先放，第2张盖上去。再看重叠边线，后盖上去的图会挡住前面的图。",
+        "parentPrompt": "请她指一指重叠的地方，说第2张盖上去以后挡住了哪里，为什么顺序反过来的选项不对。",
+        "abilityTags": [
+          "纸片叠叠板",
+          "上下层判断",
+          "重叠线索"
+        ],
+        "difficultyNote": "上实式叠合题：四个选项图形相近，需要同时判断上下层、重叠位置和轮廓是否被换。",
+        "id": "graphic-layer-overlap-2"
+      },
+      {
+        "level": "L6",
+        "prompt": "按顺序叠放不透光的彩色纸片，会变成哪张图？",
+        "instruction": "小方框只标位置。对齐小方框，纸片不挪位置，先放1号，再盖2号。",
+        "graphicChallenge": {
+          "kind": "layer-overlap",
+          "stemLabel": "先看示例，再看本题要叠加的两张图",
+          "figures": [
+            {
+              "shape": "rounded-square",
+              "color": "#93c5fd",
+              "scale": 0.74,
+              "x": -10,
+              "y": 8,
+              "opacity": 1
+            },
+            {
+              "shape": "triangle",
+              "color": "#fb7185",
+              "scale": 0.74,
+              "x": 12,
+              "y": -8,
+              "opacity": 1
+            }
+          ],
+          "groups": [
+            {
+              "label": "示例1 先放",
+              "figures": [
+                {
+                  "shape": "rounded-square",
+                  "color": "#93c5fd",
+                  "scale": 0.68,
+                  "x": -8,
+                  "y": 8,
+                  "opacity": 1
+                }
+              ],
+              "connector": "plus"
+            },
+            {
+              "label": "示例2 盖上",
+              "figures": [
+                {
+                  "shape": "fish",
+                  "color": "#38bdf8",
+                  "scale": 0.64,
+                  "x": 12,
+                  "y": -8,
+                  "opacity": 1
+                }
+              ],
+              "connector": "arrow"
+            },
+            {
+              "label": "示例叠后",
+              "figures": [
+                {
+                  "shape": "rounded-square",
+                  "color": "#93c5fd",
+                  "scale": 0.68,
+                  "x": -8,
+                  "y": 8,
+                  "opacity": 1
+                },
+                {
+                  "shape": "fish",
+                  "color": "#38bdf8",
+                  "scale": 0.64,
+                  "x": 12,
+                  "y": -8,
+                  "opacity": 1
+                }
+              ]
+            }
+          ],
+          "options": [
+            {
+              "value": "triangle-over-square",
+              "label": "三角形在圆角方块上面",
+              "figures": [
+                {
+                  "shape": "rounded-square",
+                  "color": "#93c5fd",
+                  "scale": 0.74,
+                  "x": -10,
+                  "y": 8,
+                  "opacity": 1
+                },
+                {
+                  "shape": "triangle",
+                  "color": "#fb7185",
+                  "scale": 0.74,
+                  "x": 12,
+                  "y": -8,
+                  "opacity": 1
+                }
+              ]
+            },
+            {
+              "value": "rounded-square-over-triangle",
+              "label": "圆角方块在三角形上面",
+              "figures": [
+                {
+                  "shape": "triangle",
+                  "color": "#fb7185",
+                  "scale": 0.74,
+                  "x": 12,
+                  "y": -8,
+                  "opacity": 1
+                },
+                {
+                  "shape": "rounded-square",
+                  "color": "#93c5fd",
+                  "scale": 0.74,
+                  "x": -10,
+                  "y": 8,
+                  "opacity": 1
+                }
+              ],
+              "nearMiss": "两个图形一样，但上面和下面反了。"
+            },
+            {
+              "value": "triangle-over-square-shift",
+              "label": "三角形在圆角方块上面，偏右下叠放",
+              "figures": [
+                {
+                  "shape": "rounded-square",
+                  "color": "#93c5fd",
+                  "scale": 0.74,
+                  "x": 0,
+                  "y": 20,
+                  "opacity": 1
+                },
+                {
+                  "shape": "triangle",
+                  "color": "#fb7185",
+                  "scale": 0.74,
+                  "x": 4,
+                  "y": 4,
+                  "opacity": 1
+                }
+              ],
+              "nearMiss": "上下顺序像，但重叠中心偏到一边。"
+            },
+            {
+              "value": "triangle-over-square-wrong-shape",
+              "label": "星星在圆角方块上面",
+              "figures": [
+                {
+                  "shape": "rounded-square",
+                  "color": "#93c5fd",
+                  "scale": 0.74,
+                  "x": -10,
+                  "y": 8,
+                  "opacity": 1
+                },
+                {
+                  "shape": "star",
+                  "color": "#fb7185",
+                  "scale": 0.74,
+                  "x": 12,
+                  "y": -8,
+                  "opacity": 1
+                }
+              ],
+              "nearMiss": "位置像，但其中一个图形轮廓被换了。"
+            }
+          ]
+        },
+        "choices": [
+          {
+            "label": "A",
+            "value": "triangle-over-square"
+          },
+          {
+            "label": "B",
+            "value": "rounded-square-over-triangle"
+          },
+          {
+            "label": "C",
+            "value": "triangle-over-square-shift"
+          },
+          {
+            "label": "D",
+            "value": "triangle-over-square-wrong-shape"
+          }
+        ],
+        "answer": "triangle-over-square",
+        "success": "三角形在圆角方块上面。对齐图卡位置，重叠处是后放的三角形盖住先放的圆角方块。",
+        "retry": "先按顺序说：第1张先放，第2张盖上去。再看重叠边线，后盖上去的图会挡住前面的图。",
+        "parentPrompt": "请她指一指重叠的地方，说第2张盖上去以后挡住了哪里，为什么顺序反过来的选项不对。",
+        "abilityTags": [
+          "纸片叠叠板",
+          "上下层判断",
+          "重叠线索"
+        ],
+        "difficultyNote": "上实式叠合题：四个选项图形相近，需要同时判断上下层、重叠位置和轮廓是否被换。",
+        "id": "graphic-layer-overlap-3"
+      },
+      {
+        "level": "L6",
+        "prompt": "按顺序叠放不透光的彩色纸片，会变成哪张图？",
+        "instruction": "小方框只标位置。对齐小方框，纸片不挪位置，先放1号，再盖2号。",
+        "graphicChallenge": {
+          "kind": "layer-overlap",
+          "stemLabel": "先看示例，再看本题要叠加的两张图",
+          "figures": [
+            {
+              "shape": "triangle",
+              "color": "#fb7185",
+              "scale": 0.74,
+              "x": -10,
+              "y": 8,
+              "opacity": 1
+            },
+            {
+              "shape": "rounded-square",
+              "color": "#93c5fd",
+              "scale": 0.74,
+              "x": 12,
+              "y": -8,
+              "opacity": 1
+            }
+          ],
+          "groups": [
+            {
+              "label": "示例1 先放",
+              "figures": [
+                {
+                  "shape": "rounded-square",
+                  "color": "#93c5fd",
+                  "scale": 0.68,
+                  "x": -8,
+                  "y": 8,
+                  "opacity": 1
+                }
+              ],
+              "connector": "plus"
+            },
+            {
+              "label": "示例2 盖上",
+              "figures": [
+                {
+                  "shape": "fish",
+                  "color": "#38bdf8",
+                  "scale": 0.64,
+                  "x": 12,
+                  "y": -8,
+                  "opacity": 1
+                }
+              ],
+              "connector": "arrow"
+            },
+            {
+              "label": "示例叠后",
+              "figures": [
+                {
+                  "shape": "rounded-square",
+                  "color": "#93c5fd",
+                  "scale": 0.68,
+                  "x": -8,
+                  "y": 8,
+                  "opacity": 1
+                },
+                {
+                  "shape": "fish",
+                  "color": "#38bdf8",
+                  "scale": 0.64,
+                  "x": 12,
+                  "y": -8,
+                  "opacity": 1
+                }
+              ]
+            }
+          ],
+          "options": [
+            {
+              "value": "triangle-over-rounded-square",
+              "label": "三角形在圆角方块上面",
+              "figures": [
+                {
+                  "shape": "rounded-square",
+                  "color": "#93c5fd",
+                  "scale": 0.74,
+                  "x": 12,
+                  "y": -8,
+                  "opacity": 1
+                },
+                {
+                  "shape": "triangle",
+                  "color": "#fb7185",
+                  "scale": 0.74,
+                  "x": -10,
+                  "y": 8,
+                  "opacity": 1
+                }
+              ],
+              "nearMiss": "两个图形一样，但上面和下面反了。"
+            },
+            {
+              "value": "square-over-triangle-shift",
+              "label": "圆角方块在三角形上面，偏右下叠放",
+              "figures": [
+                {
+                  "shape": "triangle",
+                  "color": "#fb7185",
+                  "scale": 0.74,
+                  "x": 0,
+                  "y": 20,
+                  "opacity": 1
+                },
+                {
+                  "shape": "rounded-square",
+                  "color": "#93c5fd",
+                  "scale": 0.74,
+                  "x": 4,
+                  "y": 4,
+                  "opacity": 1
+                }
+              ],
+              "nearMiss": "上下顺序像，但重叠中心偏到一边。"
+            },
+            {
+              "value": "square-over-triangle",
+              "label": "圆角方块在三角形上面",
+              "figures": [
+                {
+                  "shape": "triangle",
+                  "color": "#fb7185",
+                  "scale": 0.74,
+                  "x": -10,
+                  "y": 8,
+                  "opacity": 1
+                },
+                {
+                  "shape": "rounded-square",
+                  "color": "#93c5fd",
+                  "scale": 0.74,
+                  "x": 12,
+                  "y": -8,
+                  "opacity": 1
+                }
+              ]
+            },
+            {
+              "value": "square-over-triangle-wrong-shape",
+              "label": "星星在三角形上面",
+              "figures": [
+                {
+                  "shape": "triangle",
+                  "color": "#fb7185",
+                  "scale": 0.74,
+                  "x": -10,
+                  "y": 8,
+                  "opacity": 1
+                },
+                {
+                  "shape": "star",
+                  "color": "#93c5fd",
+                  "scale": 0.74,
+                  "x": 12,
+                  "y": -8,
+                  "opacity": 1
+                }
+              ],
+              "nearMiss": "位置像，但其中一个图形轮廓被换了。"
+            }
+          ]
+        },
+        "choices": [
+          {
+            "label": "A",
+            "value": "triangle-over-rounded-square"
+          },
+          {
+            "label": "B",
+            "value": "square-over-triangle-shift"
+          },
+          {
+            "label": "C",
+            "value": "square-over-triangle"
+          },
+          {
+            "label": "D",
+            "value": "square-over-triangle-wrong-shape"
+          }
+        ],
+        "answer": "square-over-triangle",
+        "success": "圆角方块在三角形上面。对齐图卡位置，重叠处是后放的圆角方块盖住先放的三角形。",
+        "retry": "先按顺序说：第1张先放，第2张盖上去。再看重叠边线，后盖上去的图会挡住前面的图。",
+        "parentPrompt": "请她指一指重叠的地方，说第2张盖上去以后挡住了哪里，为什么顺序反过来的选项不对。",
+        "abilityTags": [
+          "纸片叠叠板",
+          "上下层判断",
+          "重叠线索"
+        ],
+        "difficultyNote": "上实式叠合题：四个选项图形相近，需要同时判断上下层、重叠位置和轮廓是否被换。",
+        "id": "graphic-layer-overlap-4"
+      },
+      {
+        "level": "L6",
+        "prompt": "按顺序叠放不透光的彩色纸片，会变成哪张图？",
+        "instruction": "小方框只标位置。对齐小方框，纸片不挪位置，先放1号，再盖2号。",
+        "graphicChallenge": {
+          "kind": "layer-overlap",
+          "stemLabel": "先看示例，再看本题要叠加的两张图",
+          "figures": [
+            {
+              "shape": "diamond",
+              "color": "#14b8a6",
+              "scale": 0.74,
+              "x": -10,
+              "y": 8,
+              "opacity": 1
+            },
+            {
+              "shape": "circle",
+              "color": "#f87171",
+              "scale": 0.74,
+              "x": 12,
+              "y": -8,
+              "opacity": 1
+            }
+          ],
+          "groups": [
+            {
+              "label": "示例1 先放",
+              "figures": [
+                {
+                  "shape": "rounded-square",
+                  "color": "#93c5fd",
+                  "scale": 0.68,
+                  "x": -8,
+                  "y": 8,
+                  "opacity": 1
+                }
+              ],
+              "connector": "plus"
+            },
+            {
+              "label": "示例2 盖上",
+              "figures": [
+                {
+                  "shape": "fish",
+                  "color": "#38bdf8",
+                  "scale": 0.64,
+                  "x": 12,
+                  "y": -8,
+                  "opacity": 1
+                }
+              ],
+              "connector": "arrow"
+            },
+            {
+              "label": "示例叠后",
+              "figures": [
+                {
+                  "shape": "rounded-square",
+                  "color": "#93c5fd",
+                  "scale": 0.68,
+                  "x": -8,
+                  "y": 8,
+                  "opacity": 1
+                },
+                {
+                  "shape": "fish",
+                  "color": "#38bdf8",
+                  "scale": 0.64,
+                  "x": 12,
+                  "y": -8,
+                  "opacity": 1
+                }
+              ]
+            }
+          ],
+          "options": [
+            {
+              "value": "circle-over-diamond",
+              "label": "圆形在菱形上面",
+              "figures": [
+                {
+                  "shape": "diamond",
+                  "color": "#14b8a6",
+                  "scale": 0.74,
+                  "x": -10,
+                  "y": 8,
+                  "opacity": 1
+                },
+                {
+                  "shape": "circle",
+                  "color": "#f87171",
+                  "scale": 0.74,
+                  "x": 12,
+                  "y": -8,
+                  "opacity": 1
+                }
+              ]
+            },
+            {
+              "value": "diamond-over-circle",
+              "label": "菱形在圆形上面",
+              "figures": [
+                {
+                  "shape": "circle",
+                  "color": "#f87171",
+                  "scale": 0.74,
+                  "x": 12,
+                  "y": -8,
+                  "opacity": 1
+                },
+                {
+                  "shape": "diamond",
+                  "color": "#14b8a6",
+                  "scale": 0.74,
+                  "x": -10,
+                  "y": 8,
+                  "opacity": 1
+                }
+              ],
+              "nearMiss": "两个图形一样，但上面和下面反了。"
+            },
+            {
+              "value": "circle-over-diamond-shift",
+              "label": "圆形在菱形上面，偏右下叠放",
+              "figures": [
+                {
+                  "shape": "diamond",
+                  "color": "#14b8a6",
+                  "scale": 0.74,
+                  "x": 0,
+                  "y": 20,
+                  "opacity": 1
+                },
+                {
+                  "shape": "circle",
+                  "color": "#f87171",
+                  "scale": 0.74,
+                  "x": 4,
+                  "y": 4,
+                  "opacity": 1
+                }
+              ],
+              "nearMiss": "上下顺序像，但重叠中心偏到一边。"
+            },
+            {
+              "value": "circle-over-diamond-wrong-shape",
+              "label": "圆角方块在菱形上面",
+              "figures": [
+                {
+                  "shape": "diamond",
+                  "color": "#14b8a6",
+                  "scale": 0.74,
+                  "x": -10,
+                  "y": 8,
+                  "opacity": 1
+                },
+                {
+                  "shape": "rounded-square",
+                  "color": "#f87171",
+                  "scale": 0.74,
+                  "x": 12,
+                  "y": -8,
+                  "opacity": 1
+                }
+              ],
+              "nearMiss": "位置像，但其中一个图形轮廓被换了。"
+            }
+          ]
+        },
+        "choices": [
+          {
+            "label": "A",
+            "value": "circle-over-diamond"
+          },
+          {
+            "label": "B",
+            "value": "diamond-over-circle"
+          },
+          {
+            "label": "C",
+            "value": "circle-over-diamond-shift"
+          },
+          {
+            "label": "D",
+            "value": "circle-over-diamond-wrong-shape"
+          }
+        ],
+        "answer": "circle-over-diamond",
+        "success": "圆形在菱形上面。对齐图卡位置，重叠处是后放的圆形盖住先放的菱形。",
+        "retry": "先按顺序说：第1张先放，第2张盖上去。再看重叠边线，后盖上去的图会挡住前面的图。",
+        "parentPrompt": "请她指一指重叠的地方，说第2张盖上去以后挡住了哪里，为什么顺序反过来的选项不对。",
+        "abilityTags": [
+          "纸片叠叠板",
+          "上下层判断",
+          "重叠线索"
+        ],
+        "difficultyNote": "上实式叠合题：四个选项图形相近，需要同时判断上下层、重叠位置和轮廓是否被换。",
+        "id": "graphic-layer-overlap-5"
+      },
+      {
+        "level": "L6",
+        "prompt": "按顺序叠放不透光的彩色纸片，会变成哪张图？",
+        "instruction": "小方框只标位置。对齐小方框，纸片不挪位置，先放1号，再盖2号。",
+        "graphicChallenge": {
+          "kind": "layer-overlap",
+          "stemLabel": "先看示例，再看本题要叠加的两张图",
+          "figures": [
+            {
+              "shape": "circle",
+              "color": "#f87171",
+              "scale": 0.74,
+              "x": -10,
+              "y": 8,
+              "opacity": 1
+            },
+            {
+              "shape": "diamond",
+              "color": "#14b8a6",
+              "scale": 0.74,
+              "x": 12,
+              "y": -8,
+              "opacity": 1
+            }
+          ],
+          "groups": [
+            {
+              "label": "示例1 先放",
+              "figures": [
+                {
+                  "shape": "rounded-square",
+                  "color": "#93c5fd",
+                  "scale": 0.68,
+                  "x": -8,
+                  "y": 8,
+                  "opacity": 1
+                }
+              ],
+              "connector": "plus"
+            },
+            {
+              "label": "示例2 盖上",
+              "figures": [
+                {
+                  "shape": "fish",
+                  "color": "#38bdf8",
+                  "scale": 0.64,
+                  "x": 12,
+                  "y": -8,
+                  "opacity": 1
+                }
+              ],
+              "connector": "arrow"
+            },
+            {
+              "label": "示例叠后",
+              "figures": [
+                {
+                  "shape": "rounded-square",
+                  "color": "#93c5fd",
+                  "scale": 0.68,
+                  "x": -8,
+                  "y": 8,
+                  "opacity": 1
+                },
+                {
+                  "shape": "fish",
+                  "color": "#38bdf8",
+                  "scale": 0.64,
+                  "x": 12,
+                  "y": -8,
+                  "opacity": 1
+                }
+              ]
+            }
+          ],
+          "options": [
+            {
+              "value": "circle-over-diamond",
+              "label": "圆形在菱形上面",
+              "figures": [
+                {
+                  "shape": "diamond",
+                  "color": "#14b8a6",
+                  "scale": 0.74,
+                  "x": 12,
+                  "y": -8,
+                  "opacity": 1
+                },
+                {
+                  "shape": "circle",
+                  "color": "#f87171",
+                  "scale": 0.74,
+                  "x": -10,
+                  "y": 8,
+                  "opacity": 1
+                }
+              ],
+              "nearMiss": "两个图形一样，但上面和下面反了。"
+            },
+            {
+              "value": "diamond-over-circle-shift",
+              "label": "菱形在圆形上面，偏右下叠放",
+              "figures": [
+                {
+                  "shape": "circle",
+                  "color": "#f87171",
+                  "scale": 0.74,
+                  "x": 0,
+                  "y": 20,
+                  "opacity": 1
+                },
+                {
+                  "shape": "diamond",
+                  "color": "#14b8a6",
+                  "scale": 0.74,
+                  "x": 4,
+                  "y": 4,
+                  "opacity": 1
+                }
+              ],
+              "nearMiss": "上下顺序像，但重叠中心偏到一边。"
+            },
+            {
+              "value": "diamond-over-circle-wrong-shape",
+              "label": "星星在圆形上面",
+              "figures": [
+                {
+                  "shape": "circle",
+                  "color": "#f87171",
+                  "scale": 0.74,
+                  "x": -10,
+                  "y": 8,
+                  "opacity": 1
+                },
+                {
+                  "shape": "star",
+                  "color": "#14b8a6",
+                  "scale": 0.74,
+                  "x": 12,
+                  "y": -8,
+                  "opacity": 1
+                }
+              ],
+              "nearMiss": "位置像，但其中一个图形轮廓被换了。"
+            },
+            {
+              "value": "diamond-over-circle",
+              "label": "菱形在圆形上面",
+              "figures": [
+                {
+                  "shape": "circle",
+                  "color": "#f87171",
+                  "scale": 0.74,
+                  "x": -10,
+                  "y": 8,
+                  "opacity": 1
+                },
+                {
+                  "shape": "diamond",
+                  "color": "#14b8a6",
+                  "scale": 0.74,
+                  "x": 12,
+                  "y": -8,
+                  "opacity": 1
+                }
+              ]
+            }
+          ]
+        },
+        "choices": [
+          {
+            "label": "A",
+            "value": "circle-over-diamond"
+          },
+          {
+            "label": "B",
+            "value": "diamond-over-circle-shift"
+          },
+          {
+            "label": "C",
+            "value": "diamond-over-circle-wrong-shape"
+          },
+          {
+            "label": "D",
+            "value": "diamond-over-circle"
+          }
+        ],
+        "answer": "diamond-over-circle",
+        "success": "菱形在圆形上面。对齐图卡位置，重叠处是后放的菱形盖住先放的圆形。",
+        "retry": "先按顺序说：第1张先放，第2张盖上去。再看重叠边线，后盖上去的图会挡住前面的图。",
+        "parentPrompt": "请她指一指重叠的地方，说第2张盖上去以后挡住了哪里，为什么顺序反过来的选项不对。",
+        "abilityTags": [
+          "纸片叠叠板",
+          "上下层判断",
+          "重叠线索"
+        ],
+        "difficultyNote": "上实式叠合题：四个选项图形相近，需要同时判断上下层、重叠位置和轮廓是否被换。",
+        "id": "graphic-layer-overlap-6"
+      },
+      {
+        "level": "L6",
+        "prompt": "按顺序叠放不透光的彩色纸片，会变成哪张图？",
+        "instruction": "小方框只标位置。对齐小方框，纸片不挪位置，先放1号，再盖2号。",
+        "graphicChallenge": {
+          "kind": "layer-overlap",
+          "stemLabel": "先看示例，再看本题要叠加的两张图",
+          "figures": [
+            {
+              "shape": "leaf",
+              "color": "#22c55e",
+              "scale": 0.74,
+              "x": -10,
+              "y": 8,
+              "opacity": 1
+            },
+            {
+              "shape": "flower",
+              "color": "#f472b6",
+              "scale": 0.74,
+              "x": 12,
+              "y": -8,
+              "opacity": 1
+            }
+          ],
+          "groups": [
+            {
+              "label": "示例1 先放",
+              "figures": [
+                {
+                  "shape": "rounded-square",
+                  "color": "#93c5fd",
+                  "scale": 0.68,
+                  "x": -8,
+                  "y": 8,
+                  "opacity": 1
+                }
+              ],
+              "connector": "plus"
+            },
+            {
+              "label": "示例2 盖上",
+              "figures": [
+                {
+                  "shape": "fish",
+                  "color": "#38bdf8",
+                  "scale": 0.64,
+                  "x": 12,
+                  "y": -8,
+                  "opacity": 1
+                }
+              ],
+              "connector": "arrow"
+            },
+            {
+              "label": "示例叠后",
+              "figures": [
+                {
+                  "shape": "rounded-square",
+                  "color": "#93c5fd",
+                  "scale": 0.68,
+                  "x": -8,
+                  "y": 8,
+                  "opacity": 1
+                },
+                {
+                  "shape": "fish",
+                  "color": "#38bdf8",
+                  "scale": 0.64,
+                  "x": 12,
+                  "y": -8,
+                  "opacity": 1
+                }
+              ]
+            }
+          ],
+          "options": [
+            {
+              "value": "leaf-over-flower",
+              "label": "叶子在花朵上面",
+              "figures": [
+                {
+                  "shape": "flower",
+                  "color": "#f472b6",
+                  "scale": 0.74,
+                  "x": 12,
+                  "y": -8,
+                  "opacity": 1
+                },
+                {
+                  "shape": "leaf",
+                  "color": "#22c55e",
+                  "scale": 0.74,
+                  "x": -10,
+                  "y": 8,
+                  "opacity": 1
+                }
+              ],
+              "nearMiss": "两个图形一样，但上面和下面反了。"
+            },
+            {
+              "value": "flower-over-leaf-shift",
+              "label": "花朵在叶子上面，偏右下叠放",
+              "figures": [
+                {
+                  "shape": "leaf",
+                  "color": "#22c55e",
+                  "scale": 0.74,
+                  "x": 0,
+                  "y": 20,
+                  "opacity": 1
+                },
+                {
+                  "shape": "flower",
+                  "color": "#f472b6",
+                  "scale": 0.74,
+                  "x": 4,
+                  "y": 4,
+                  "opacity": 1
+                }
+              ],
+              "nearMiss": "上下顺序像，但重叠中心偏到一边。"
+            },
+            {
+              "value": "flower-over-leaf",
+              "label": "花朵在叶子上面",
+              "figures": [
+                {
+                  "shape": "leaf",
+                  "color": "#22c55e",
+                  "scale": 0.74,
+                  "x": -10,
+                  "y": 8,
+                  "opacity": 1
+                },
+                {
+                  "shape": "flower",
+                  "color": "#f472b6",
+                  "scale": 0.74,
+                  "x": 12,
+                  "y": -8,
+                  "opacity": 1
+                }
+              ]
+            },
+            {
+              "value": "flower-over-leaf-wrong-shape",
+              "label": "星星在叶子上面",
+              "figures": [
+                {
+                  "shape": "leaf",
+                  "color": "#22c55e",
+                  "scale": 0.74,
+                  "x": -10,
+                  "y": 8,
+                  "opacity": 1
+                },
+                {
+                  "shape": "star",
+                  "color": "#f472b6",
+                  "scale": 0.74,
+                  "x": 12,
+                  "y": -8,
+                  "opacity": 1
+                }
+              ],
+              "nearMiss": "位置像，但其中一个图形轮廓被换了。"
+            }
+          ]
+        },
+        "choices": [
+          {
+            "label": "A",
+            "value": "leaf-over-flower"
+          },
+          {
+            "label": "B",
+            "value": "flower-over-leaf-shift"
+          },
+          {
+            "label": "C",
+            "value": "flower-over-leaf"
+          },
+          {
+            "label": "D",
+            "value": "flower-over-leaf-wrong-shape"
+          }
+        ],
+        "answer": "flower-over-leaf",
+        "success": "花朵在叶子上面。对齐图卡位置，重叠处是后放的花朵盖住先放的叶子。",
+        "retry": "先按顺序说：第1张先放，第2张盖上去。再看重叠边线，后盖上去的图会挡住前面的图。",
+        "parentPrompt": "请她指一指重叠的地方，说第2张盖上去以后挡住了哪里，为什么顺序反过来的选项不对。",
+        "abilityTags": [
+          "纸片叠叠板",
+          "上下层判断",
+          "重叠线索"
+        ],
+        "difficultyNote": "上实式叠合题：四个选项图形相近，需要同时判断上下层、重叠位置和轮廓是否被换。",
+        "id": "graphic-layer-overlap-7"
+      },
+      {
+        "level": "L6",
+        "prompt": "按顺序叠放不透光的彩色纸片，会变成哪张图？",
+        "instruction": "小方框只标位置。对齐小方框，纸片不挪位置，先放1号，再盖2号。",
+        "graphicChallenge": {
+          "kind": "layer-overlap",
+          "stemLabel": "先看示例，再看本题要叠加的两张图",
+          "figures": [
+            {
+              "shape": "flower",
+              "color": "#f472b6",
+              "scale": 0.74,
+              "x": -10,
+              "y": 8,
+              "opacity": 1
+            },
+            {
+              "shape": "leaf",
+              "color": "#22c55e",
+              "scale": 0.74,
+              "x": 12,
+              "y": -8,
+              "opacity": 1
+            }
+          ],
+          "groups": [
+            {
+              "label": "示例1 先放",
+              "figures": [
+                {
+                  "shape": "rounded-square",
+                  "color": "#93c5fd",
+                  "scale": 0.68,
+                  "x": -8,
+                  "y": 8,
+                  "opacity": 1
+                }
+              ],
+              "connector": "plus"
+            },
+            {
+              "label": "示例2 盖上",
+              "figures": [
+                {
+                  "shape": "fish",
+                  "color": "#38bdf8",
+                  "scale": 0.64,
+                  "x": 12,
+                  "y": -8,
+                  "opacity": 1
+                }
+              ],
+              "connector": "arrow"
+            },
+            {
+              "label": "示例叠后",
+              "figures": [
+                {
+                  "shape": "rounded-square",
+                  "color": "#93c5fd",
+                  "scale": 0.68,
+                  "x": -8,
+                  "y": 8,
+                  "opacity": 1
+                },
+                {
+                  "shape": "fish",
+                  "color": "#38bdf8",
+                  "scale": 0.64,
+                  "x": 12,
+                  "y": -8,
+                  "opacity": 1
+                }
+              ]
+            }
+          ],
+          "options": [
+            {
+              "value": "flower-over-leaf",
+              "label": "花朵在叶子上面",
+              "figures": [
+                {
+                  "shape": "leaf",
+                  "color": "#22c55e",
+                  "scale": 0.74,
+                  "x": 12,
+                  "y": -8,
+                  "opacity": 1
+                },
+                {
+                  "shape": "flower",
+                  "color": "#f472b6",
+                  "scale": 0.74,
+                  "x": -10,
+                  "y": 8,
+                  "opacity": 1
+                }
+              ],
+              "nearMiss": "两个图形一样，但上面和下面反了。"
+            },
+            {
+              "value": "leaf-over-flower",
+              "label": "叶子在花朵上面",
+              "figures": [
+                {
+                  "shape": "flower",
+                  "color": "#f472b6",
+                  "scale": 0.74,
+                  "x": -10,
+                  "y": 8,
+                  "opacity": 1
+                },
+                {
+                  "shape": "leaf",
+                  "color": "#22c55e",
+                  "scale": 0.74,
+                  "x": 12,
+                  "y": -8,
+                  "opacity": 1
+                }
+              ]
+            },
+            {
+              "value": "leaf-over-flower-shift",
+              "label": "叶子在花朵上面，偏右下叠放",
+              "figures": [
+                {
+                  "shape": "flower",
+                  "color": "#f472b6",
+                  "scale": 0.74,
+                  "x": 0,
+                  "y": 20,
+                  "opacity": 1
+                },
+                {
+                  "shape": "leaf",
+                  "color": "#22c55e",
+                  "scale": 0.74,
+                  "x": 4,
+                  "y": 4,
+                  "opacity": 1
+                }
+              ],
+              "nearMiss": "上下顺序像，但重叠中心偏到一边。"
+            },
+            {
+              "value": "leaf-over-flower-wrong-shape",
+              "label": "小鱼在花朵上面",
+              "figures": [
+                {
+                  "shape": "flower",
+                  "color": "#f472b6",
+                  "scale": 0.74,
+                  "x": -10,
+                  "y": 8,
+                  "opacity": 1
+                },
+                {
+                  "shape": "fish",
+                  "color": "#22c55e",
+                  "scale": 0.74,
+                  "x": 12,
+                  "y": -8,
+                  "opacity": 1
+                }
+              ],
+              "nearMiss": "位置像，但其中一个图形轮廓被换了。"
+            }
+          ]
+        },
+        "choices": [
+          {
+            "label": "A",
+            "value": "flower-over-leaf"
+          },
+          {
+            "label": "B",
+            "value": "leaf-over-flower"
+          },
+          {
+            "label": "C",
+            "value": "leaf-over-flower-shift"
+          },
+          {
+            "label": "D",
+            "value": "leaf-over-flower-wrong-shape"
+          }
+        ],
+        "answer": "leaf-over-flower",
+        "success": "叶子在花朵上面。对齐图卡位置，重叠处是后放的叶子盖住先放的花朵。",
+        "retry": "先按顺序说：第1张先放，第2张盖上去。再看重叠边线，后盖上去的图会挡住前面的图。",
+        "parentPrompt": "请她指一指重叠的地方，说第2张盖上去以后挡住了哪里，为什么顺序反过来的选项不对。",
+        "abilityTags": [
+          "纸片叠叠板",
+          "上下层判断",
+          "重叠线索"
+        ],
+        "difficultyNote": "上实式叠合题：四个选项图形相近，需要同时判断上下层、重叠位置和轮廓是否被换。",
+        "id": "graphic-layer-overlap-8"
+      }
+    ],
+    "kind": "progressiveSet"
+  },
+  {
+    "id": "graphic-code-machine",
+    "world": "graphic",
+    "title": "图形密码机",
+    "subtitle": "看密码表里的图形对应关系，找出问号应该换成什么。",
+    "goal": "训练图形编码、对应映射和近邻干扰排除。",
+    "parentPrompt": "问她：密码表里左边图形对应右边哪个图？问号要照哪一组对应？",
+    "abilityTags": [
+      "图形密码机",
+      "对应映射",
+      "近邻排除"
+    ],
+    "level": "L6",
+    "rounds": [
+      {
+        "level": "L5",
+        "prompt": "照着密码表，问号处应放哪张图？",
+        "instruction": "每组左图对应右图。先找与本题相同的左图，再选对应的右图。",
+        "graphicChallenge": {
+          "kind": "code-match",
+          "stemLabel": "图形密码表",
+          "figures": [
+            {
+              "shape": "cat",
+              "x": -32,
+              "scale": 0.5
+            },
+            {
+              "shape": "rounded-square",
+              "mode": "blank",
+              "x": 32,
+              "scale": 0.72
+            }
+          ],
+          "groups": [
+            {
+              "label": "对应",
+              "figures": [
+                {
+                  "shape": "fish",
+                  "x": -32,
+                  "scale": 0.5
+                },
+                {
+                  "shape": "star",
+                  "x": 32,
+                  "scale": 0.5
+                }
+              ],
+              "connector": "arrow"
+            },
+            {
+              "label": "对应",
+              "figures": [
+                {
+                  "shape": "rabbit",
+                  "x": -32,
+                  "scale": 0.5
+                },
+                {
+                  "shape": "leaf",
+                  "x": 32,
+                  "scale": 0.5
+                }
+              ],
+              "connector": "arrow"
+            },
+            {
+              "label": "对应",
+              "figures": [
+                {
+                  "shape": "cat",
+                  "x": -32,
+                  "scale": 0.5
+                },
+                {
+                  "shape": "apple",
+                  "x": 32,
+                  "scale": 0.5
+                }
+              ],
+              "connector": "arrow"
+            },
+            {
+              "label": "对应",
+              "figures": [
+                {
+                  "shape": "dog",
+                  "x": -32,
+                  "scale": 0.5
+                },
+                {
+                  "shape": "pear",
+                  "x": 32,
+                  "scale": 0.5
+                }
+              ],
+              "connector": "arrow"
+            }
+          ],
+          "options": [
+            {
+              "value": "star",
+              "label": "星星",
+              "figure": {
+                "shape": "star",
+                "mode": "color"
+              },
+              "nearMiss": "这是相邻行的对应图，不是问号这一行。"
+            },
+            {
+              "value": "leaf",
+              "label": "叶子",
+              "figure": {
+                "shape": "leaf",
+                "mode": "color"
+              },
+              "nearMiss": "这是相邻行的对应图，不是问号这一行。"
+            },
+            {
+              "value": "pear",
+              "label": "梨子",
+              "figure": {
+                "shape": "pear",
+                "mode": "color"
+              },
+              "nearMiss": "这是相邻行的对应图，不是问号这一行。"
+            },
+            {
+              "value": "apple",
+              "label": "苹果",
+              "figure": {
+                "shape": "apple",
+                "mode": "color"
+              }
+            }
+          ]
+        },
+        "choices": [
+          {
+            "label": "A",
+            "value": "star"
+          },
+          {
+            "label": "B",
+            "value": "leaf"
+          },
+          {
+            "label": "C",
+            "value": "pear"
+          },
+          {
+            "label": "D",
+            "value": "apple"
+          }
+        ],
+        "answer": "apple",
+        "success": "小猫对应苹果，密码题要按同一组的对应关系找答案。",
+        "retry": "先在密码表里找到和问号左边一样的图形，再看它右边对应哪个图，不要选隔壁一组。",
+        "parentPrompt": "问她：问号左边的图在密码表哪一组？这一组右边对应什么？为什么相邻一组不对？",
+        "abilityTags": [
+          "图形密码机",
+          "对应映射",
+          "近邻排除"
+        ],
+        "difficultyNote": "上实式编码题：需要从多组图形对应关系中筛选目标组，并排除相邻组的高混淆选项。",
+        "id": "graphic-code-machine-1"
+      },
+      {
+        "level": "L5",
+        "prompt": "照着密码表，问号处应放哪张图？",
+        "instruction": "每组左图对应右图。先找与本题相同的左图，再选对应的右图。",
+        "graphicChallenge": {
+          "kind": "code-match",
+          "stemLabel": "图形密码表",
+          "figures": [
+            {
+              "shape": "fish",
+              "x": -32,
+              "scale": 0.5
+            },
+            {
+              "shape": "rounded-square",
+              "mode": "blank",
+              "x": 32,
+              "scale": 0.72
+            }
+          ],
+          "groups": [
+            {
+              "label": "对应",
+              "figures": [
+                {
+                  "shape": "dog",
+                  "x": -32,
+                  "scale": 0.5
+                },
+                {
+                  "shape": "pear",
+                  "x": 32,
+                  "scale": 0.5
+                }
+              ],
+              "connector": "arrow"
+            },
+            {
+              "label": "对应",
+              "figures": [
+                {
+                  "shape": "cat",
+                  "x": -32,
+                  "scale": 0.5
+                },
+                {
+                  "shape": "apple",
+                  "x": 32,
+                  "scale": 0.5
+                }
+              ],
+              "connector": "arrow"
+            },
+            {
+              "label": "对应",
+              "figures": [
+                {
+                  "shape": "rabbit",
+                  "x": -32,
+                  "scale": 0.5
+                },
+                {
+                  "shape": "leaf",
+                  "x": 32,
+                  "scale": 0.5
+                }
+              ],
+              "connector": "arrow"
+            },
+            {
+              "label": "对应",
+              "figures": [
+                {
+                  "shape": "fish",
+                  "x": -32,
+                  "scale": 0.5
+                },
+                {
+                  "shape": "star",
+                  "x": 32,
+                  "scale": 0.5
+                }
+              ],
+              "connector": "arrow"
+            }
+          ],
+          "options": [
+            {
+              "value": "star",
+              "label": "星星",
+              "figure": {
+                "shape": "star",
+                "mode": "color"
+              }
+            },
+            {
+              "value": "apple",
+              "label": "苹果",
+              "figure": {
+                "shape": "apple",
+                "mode": "color"
+              },
+              "nearMiss": "这是相邻行的对应图，不是问号这一行。"
+            },
+            {
+              "value": "leaf",
+              "label": "叶子",
+              "figure": {
+                "shape": "leaf",
+                "mode": "color"
+              },
+              "nearMiss": "这是相邻行的对应图，不是问号这一行。"
+            },
+            {
+              "value": "pear",
+              "label": "梨子",
+              "figure": {
+                "shape": "pear",
+                "mode": "color"
+              },
+              "nearMiss": "这是相邻行的对应图，不是问号这一行。"
+            }
+          ]
+        },
+        "choices": [
+          {
+            "label": "A",
+            "value": "star"
+          },
+          {
+            "label": "B",
+            "value": "apple"
+          },
+          {
+            "label": "C",
+            "value": "leaf"
+          },
+          {
+            "label": "D",
+            "value": "pear"
+          }
+        ],
+        "answer": "star",
+        "success": "小鱼对应星星，密码题要按同一组的对应关系找答案。",
+        "retry": "先在密码表里找到和问号左边一样的图形，再看它右边对应哪个图，不要选隔壁一组。",
+        "parentPrompt": "问她：问号左边的图在密码表哪一组？这一组右边对应什么？为什么相邻一组不对？",
+        "abilityTags": [
+          "图形密码机",
+          "对应映射",
+          "近邻排除"
+        ],
+        "difficultyNote": "上实式编码题：需要从多组图形对应关系中筛选目标组，并排除相邻组的高混淆选项。",
+        "id": "graphic-code-machine-2"
+      },
+      {
+        "level": "L5",
+        "prompt": "照着密码表，问号处应放哪张图？",
+        "instruction": "每组左图对应右图。先找与本题相同的左图，再选对应的右图。",
+        "graphicChallenge": {
+          "kind": "code-match",
+          "stemLabel": "图形密码表",
+          "figures": [
+            {
+              "shape": "rabbit",
+              "x": -32,
+              "scale": 0.5
+            },
+            {
+              "shape": "rounded-square",
+              "mode": "blank",
+              "x": 32,
+              "scale": 0.72
+            }
+          ],
+          "groups": [
+            {
+              "label": "对应",
+              "figures": [
+                {
+                  "shape": "fish",
+                  "x": -32,
+                  "scale": 0.5
+                },
+                {
+                  "shape": "star",
+                  "x": 32,
+                  "scale": 0.5
+                }
+              ],
+              "connector": "arrow"
+            },
+            {
+              "label": "对应",
+              "figures": [
+                {
+                  "shape": "cat",
+                  "x": -32,
+                  "scale": 0.5
+                },
+                {
+                  "shape": "apple",
+                  "x": 32,
+                  "scale": 0.5
+                }
+              ],
+              "connector": "arrow"
+            },
+            {
+              "label": "对应",
+              "figures": [
+                {
+                  "shape": "dog",
+                  "x": -32,
+                  "scale": 0.5
+                },
+                {
+                  "shape": "pear",
+                  "x": 32,
+                  "scale": 0.5
+                }
+              ],
+              "connector": "arrow"
+            },
+            {
+              "label": "对应",
+              "figures": [
+                {
+                  "shape": "rabbit",
+                  "x": -32,
+                  "scale": 0.5
+                },
+                {
+                  "shape": "leaf",
+                  "x": 32,
+                  "scale": 0.5
+                }
+              ],
+              "connector": "arrow"
+            }
+          ],
+          "options": [
+            {
+              "value": "apple",
+              "label": "苹果",
+              "figure": {
+                "shape": "apple",
+                "mode": "color"
+              },
+              "nearMiss": "这是相邻行的对应图，不是问号这一行。"
+            },
+            {
+              "value": "star",
+              "label": "星星",
+              "figure": {
+                "shape": "star",
+                "mode": "color"
+              },
+              "nearMiss": "这是相邻行的对应图，不是问号这一行。"
+            },
+            {
+              "value": "leaf",
+              "label": "叶子",
+              "figure": {
+                "shape": "leaf",
+                "mode": "color"
+              }
+            },
+            {
+              "value": "pear",
+              "label": "梨子",
+              "figure": {
+                "shape": "pear",
+                "mode": "color"
+              },
+              "nearMiss": "这是相邻行的对应图，不是问号这一行。"
+            }
+          ]
+        },
+        "choices": [
+          {
+            "label": "A",
+            "value": "apple"
+          },
+          {
+            "label": "B",
+            "value": "star"
+          },
+          {
+            "label": "C",
+            "value": "leaf"
+          },
+          {
+            "label": "D",
+            "value": "pear"
+          }
+        ],
+        "answer": "leaf",
+        "success": "小兔对应叶子，密码题要按同一组的对应关系找答案。",
+        "retry": "先在密码表里找到和问号左边一样的图形，再看它右边对应哪个图，不要选隔壁一组。",
+        "parentPrompt": "问她：问号左边的图在密码表哪一组？这一组右边对应什么？为什么相邻一组不对？",
+        "abilityTags": [
+          "图形密码机",
+          "对应映射",
+          "近邻排除"
+        ],
+        "difficultyNote": "上实式编码题：需要从多组图形对应关系中筛选目标组，并排除相邻组的高混淆选项。",
+        "id": "graphic-code-machine-3"
+      },
+      {
+        "level": "L6",
+        "prompt": "照着密码表，问号处应放哪张图？",
+        "instruction": "每组左图对应右图。先找与本题相同的左图，再选对应的右图。",
+        "graphicChallenge": {
+          "kind": "code-match",
+          "stemLabel": "图形密码表",
+          "figures": [
+            {
+              "shape": "dog",
+              "x": -32,
+              "scale": 0.5
+            },
+            {
+              "shape": "rounded-square",
+              "mode": "blank",
+              "x": 32,
+              "scale": 0.72
+            }
+          ],
+          "groups": [
+            {
+              "label": "对应",
+              "figures": [
+                {
+                  "shape": "rabbit",
+                  "x": -32,
+                  "scale": 0.5
+                },
+                {
+                  "shape": "leaf",
+                  "x": 32,
+                  "scale": 0.5
+                }
+              ],
+              "connector": "arrow"
+            },
+            {
+              "label": "对应",
+              "figures": [
+                {
+                  "shape": "cat",
+                  "x": -32,
+                  "scale": 0.5
+                },
+                {
+                  "shape": "apple",
+                  "x": 32,
+                  "scale": 0.5
+                }
+              ],
+              "connector": "arrow"
+            },
+            {
+              "label": "对应",
+              "figures": [
+                {
+                  "shape": "dog",
+                  "x": -32,
+                  "scale": 0.5
+                },
+                {
+                  "shape": "pear",
+                  "x": 32,
+                  "scale": 0.5
+                }
+              ],
+              "connector": "arrow"
+            },
+            {
+              "label": "对应",
+              "figures": [
+                {
+                  "shape": "fish",
+                  "x": -32,
+                  "scale": 0.5
+                },
+                {
+                  "shape": "star",
+                  "x": 32,
+                  "scale": 0.5
+                }
+              ],
+              "connector": "arrow"
+            }
+          ],
+          "options": [
+            {
+              "value": "pear",
+              "label": "梨子",
+              "figure": {
+                "shape": "pear",
+                "mode": "color"
+              }
+            },
+            {
+              "value": "apple",
+              "label": "苹果",
+              "figure": {
+                "shape": "apple",
+                "mode": "color"
+              },
+              "nearMiss": "这是相邻行的对应图，不是问号这一行。"
+            },
+            {
+              "value": "star",
+              "label": "星星",
+              "figure": {
+                "shape": "star",
+                "mode": "color"
+              },
+              "nearMiss": "这是相邻行的对应图，不是问号这一行。"
+            },
+            {
+              "value": "leaf",
+              "label": "叶子",
+              "figure": {
+                "shape": "leaf",
+                "mode": "color"
+              },
+              "nearMiss": "这是相邻行的对应图，不是问号这一行。"
+            }
+          ]
+        },
+        "choices": [
+          {
+            "label": "A",
+            "value": "pear"
+          },
+          {
+            "label": "B",
+            "value": "apple"
+          },
+          {
+            "label": "C",
+            "value": "star"
+          },
+          {
+            "label": "D",
+            "value": "leaf"
+          }
+        ],
+        "answer": "pear",
+        "success": "小狗对应梨子，密码题要按同一组的对应关系找答案。",
+        "retry": "先在密码表里找到和问号左边一样的图形，再看它右边对应哪个图，不要选隔壁一组。",
+        "parentPrompt": "问她：问号左边的图在密码表哪一组？这一组右边对应什么？为什么相邻一组不对？",
+        "abilityTags": [
+          "图形密码机",
+          "对应映射",
+          "近邻排除"
+        ],
+        "difficultyNote": "上实式编码题：需要从多组图形对应关系中筛选目标组，并排除相邻组的高混淆选项。",
+        "id": "graphic-code-machine-4"
+      },
+      {
+        "level": "L6",
+        "prompt": "照着密码表，问号处应放哪张图？",
+        "instruction": "每组左图对应右图。先找与本题相同的左图，再选对应的右图。",
+        "graphicChallenge": {
+          "kind": "code-match",
+          "stemLabel": "图形密码表",
+          "figures": [
+            {
+              "shape": "circle",
+              "x": -32,
+              "scale": 0.5
+            },
+            {
+              "shape": "rounded-square",
+              "mode": "blank",
+              "x": 32,
+              "scale": 0.72
+            }
+          ],
+          "groups": [
+            {
+              "label": "对应",
+              "figures": [
+                {
+                  "shape": "star",
+                  "x": -32,
+                  "scale": 0.5
+                },
+                {
+                  "shape": "flower",
+                  "x": 32,
+                  "scale": 0.5
+                }
+              ],
+              "connector": "arrow"
+            },
+            {
+              "label": "对应",
+              "figures": [
+                {
+                  "shape": "diamond",
+                  "x": -32,
+                  "scale": 0.5
+                },
+                {
+                  "shape": "rounded-square",
+                  "x": 32,
+                  "scale": 0.5
+                }
+              ],
+              "connector": "arrow"
+            },
+            {
+              "label": "对应",
+              "figures": [
+                {
+                  "shape": "circle",
+                  "x": -32,
+                  "scale": 0.5
+                },
+                {
+                  "shape": "triangle",
+                  "x": 32,
+                  "scale": 0.5
+                }
+              ],
+              "connector": "arrow"
+            },
+            {
+              "label": "对应",
+              "figures": [
+                {
+                  "shape": "leaf",
+                  "x": -32,
+                  "scale": 0.5
+                },
+                {
+                  "shape": "fish",
+                  "x": 32,
+                  "scale": 0.5
+                }
+              ],
+              "connector": "arrow"
+            }
+          ],
+          "options": [
+            {
+              "value": "flower",
+              "label": "花朵",
+              "figure": {
+                "shape": "flower",
+                "mode": "color"
+              },
+              "nearMiss": "这是相邻行的对应图，不是问号这一行。"
+            },
+            {
+              "value": "triangle",
+              "label": "三角形",
+              "figure": {
+                "shape": "triangle",
+                "mode": "color"
+              }
+            },
+            {
+              "value": "rounded-square",
+              "label": "圆角方块",
+              "figure": {
+                "shape": "rounded-square",
+                "mode": "color"
+              },
+              "nearMiss": "这是相邻行的对应图，不是问号这一行。"
+            },
+            {
+              "value": "fish",
+              "label": "小鱼",
+              "figure": {
+                "shape": "fish",
+                "mode": "color"
+              },
+              "nearMiss": "这是相邻行的对应图，不是问号这一行。"
+            }
+          ]
+        },
+        "choices": [
+          {
+            "label": "A",
+            "value": "flower"
+          },
+          {
+            "label": "B",
+            "value": "triangle"
+          },
+          {
+            "label": "C",
+            "value": "rounded-square"
+          },
+          {
+            "label": "D",
+            "value": "fish"
+          }
+        ],
+        "answer": "triangle",
+        "success": "圆形对应三角形，密码题要按同一组的对应关系找答案。",
+        "retry": "先在密码表里找到和问号左边一样的图形，再看它右边对应哪个图，不要选隔壁一组。",
+        "parentPrompt": "问她：问号左边的图在密码表哪一组？这一组右边对应什么？为什么相邻一组不对？",
+        "abilityTags": [
+          "图形密码机",
+          "对应映射",
+          "近邻排除"
+        ],
+        "difficultyNote": "上实式编码题：需要从多组图形对应关系中筛选目标组，并排除相邻组的高混淆选项。",
+        "id": "graphic-code-machine-5"
+      },
+      {
+        "level": "L6",
+        "prompt": "照着密码表，问号处应放哪张图？",
+        "instruction": "每组左图对应右图。先找与本题相同的左图，再选对应的右图。",
+        "graphicChallenge": {
+          "kind": "code-match",
+          "stemLabel": "图形密码表",
+          "figures": [
+            {
+              "shape": "star",
+              "x": -32,
+              "scale": 0.5
+            },
+            {
+              "shape": "rounded-square",
+              "mode": "blank",
+              "x": 32,
+              "scale": 0.72
+            }
+          ],
+          "groups": [
+            {
+              "label": "对应",
+              "figures": [
+                {
+                  "shape": "diamond",
+                  "x": -32,
+                  "scale": 0.5
+                },
+                {
+                  "shape": "rounded-square",
+                  "x": 32,
+                  "scale": 0.5
+                }
+              ],
+              "connector": "arrow"
+            },
+            {
+              "label": "对应",
+              "figures": [
+                {
+                  "shape": "star",
+                  "x": -32,
+                  "scale": 0.5
+                },
+                {
+                  "shape": "flower",
+                  "x": 32,
+                  "scale": 0.5
+                }
+              ],
+              "connector": "arrow"
+            },
+            {
+              "label": "对应",
+              "figures": [
+                {
+                  "shape": "leaf",
+                  "x": -32,
+                  "scale": 0.5
+                },
+                {
+                  "shape": "fish",
+                  "x": 32,
+                  "scale": 0.5
+                }
+              ],
+              "connector": "arrow"
+            },
+            {
+              "label": "对应",
+              "figures": [
+                {
+                  "shape": "circle",
+                  "x": -32,
+                  "scale": 0.5
+                },
+                {
+                  "shape": "triangle",
+                  "x": 32,
+                  "scale": 0.5
+                }
+              ],
+              "connector": "arrow"
+            }
+          ],
+          "options": [
+            {
+              "value": "triangle",
+              "label": "三角形",
+              "figure": {
+                "shape": "triangle",
+                "mode": "color"
+              },
+              "nearMiss": "这是相邻行的对应图，不是问号这一行。"
+            },
+            {
+              "value": "rounded-square",
+              "label": "圆角方块",
+              "figure": {
+                "shape": "rounded-square",
+                "mode": "color"
+              },
+              "nearMiss": "这是相邻行的对应图，不是问号这一行。"
+            },
+            {
+              "value": "flower",
+              "label": "花朵",
+              "figure": {
+                "shape": "flower",
+                "mode": "color"
+              }
+            },
+            {
+              "value": "fish",
+              "label": "小鱼",
+              "figure": {
+                "shape": "fish",
+                "mode": "color"
+              },
+              "nearMiss": "这是相邻行的对应图，不是问号这一行。"
+            }
+          ]
+        },
+        "choices": [
+          {
+            "label": "A",
+            "value": "triangle"
+          },
+          {
+            "label": "B",
+            "value": "rounded-square"
+          },
+          {
+            "label": "C",
+            "value": "flower"
+          },
+          {
+            "label": "D",
+            "value": "fish"
+          }
+        ],
+        "answer": "flower",
+        "success": "星星对应花朵，密码题要按同一组的对应关系找答案。",
+        "retry": "先在密码表里找到和问号左边一样的图形，再看它右边对应哪个图，不要选隔壁一组。",
+        "parentPrompt": "问她：问号左边的图在密码表哪一组？这一组右边对应什么？为什么相邻一组不对？",
+        "abilityTags": [
+          "图形密码机",
+          "对应映射",
+          "近邻排除"
+        ],
+        "difficultyNote": "上实式编码题：需要从多组图形对应关系中筛选目标组，并排除相邻组的高混淆选项。",
+        "id": "graphic-code-machine-6"
+      },
+      {
+        "level": "L6",
+        "prompt": "照着密码表，问号处应放哪张图？",
+        "instruction": "每组左图对应右图。先找与本题相同的左图，再选对应的右图。",
+        "graphicChallenge": {
+          "kind": "code-match",
+          "stemLabel": "图形密码表",
+          "figures": [
+            {
+              "shape": "diamond",
+              "x": -32,
+              "scale": 0.5
+            },
+            {
+              "shape": "rounded-square",
+              "mode": "blank",
+              "x": 32,
+              "scale": 0.72
+            }
+          ],
+          "groups": [
+            {
+              "label": "对应",
+              "figures": [
+                {
+                  "shape": "circle",
+                  "x": -32,
+                  "scale": 0.5
+                },
+                {
+                  "shape": "triangle",
+                  "x": 32,
+                  "scale": 0.5
+                }
+              ],
+              "connector": "arrow"
+            },
+            {
+              "label": "对应",
+              "figures": [
+                {
+                  "shape": "leaf",
+                  "x": -32,
+                  "scale": 0.5
+                },
+                {
+                  "shape": "fish",
+                  "x": 32,
+                  "scale": 0.5
+                }
+              ],
+              "connector": "arrow"
+            },
+            {
+              "label": "对应",
+              "figures": [
+                {
+                  "shape": "diamond",
+                  "x": -32,
+                  "scale": 0.5
+                },
+                {
+                  "shape": "rounded-square",
+                  "x": 32,
+                  "scale": 0.5
+                }
+              ],
+              "connector": "arrow"
+            },
+            {
+              "label": "对应",
+              "figures": [
+                {
+                  "shape": "star",
+                  "x": -32,
+                  "scale": 0.5
+                },
+                {
+                  "shape": "flower",
+                  "x": 32,
+                  "scale": 0.5
+                }
+              ],
+              "connector": "arrow"
+            }
+          ],
+          "options": [
+            {
+              "value": "triangle",
+              "label": "三角形",
+              "figure": {
+                "shape": "triangle",
+                "mode": "color"
+              },
+              "nearMiss": "这是相邻行的对应图，不是问号这一行。"
+            },
+            {
+              "value": "rounded-square",
+              "label": "圆角方块",
+              "figure": {
+                "shape": "rounded-square",
+                "mode": "color"
+              }
+            },
+            {
+              "value": "flower",
+              "label": "花朵",
+              "figure": {
+                "shape": "flower",
+                "mode": "color"
+              },
+              "nearMiss": "这是相邻行的对应图，不是问号这一行。"
+            },
+            {
+              "value": "fish",
+              "label": "小鱼",
+              "figure": {
+                "shape": "fish",
+                "mode": "color"
+              },
+              "nearMiss": "这是相邻行的对应图，不是问号这一行。"
+            }
+          ]
+        },
+        "choices": [
+          {
+            "label": "A",
+            "value": "triangle"
+          },
+          {
+            "label": "B",
+            "value": "rounded-square"
+          },
+          {
+            "label": "C",
+            "value": "flower"
+          },
+          {
+            "label": "D",
+            "value": "fish"
+          }
+        ],
+        "answer": "rounded-square",
+        "success": "菱形对应圆角方块，密码题要按同一组的对应关系找答案。",
+        "retry": "先在密码表里找到和问号左边一样的图形，再看它右边对应哪个图，不要选隔壁一组。",
+        "parentPrompt": "问她：问号左边的图在密码表哪一组？这一组右边对应什么？为什么相邻一组不对？",
+        "abilityTags": [
+          "图形密码机",
+          "对应映射",
+          "近邻排除"
+        ],
+        "difficultyNote": "上实式编码题：需要从多组图形对应关系中筛选目标组，并排除相邻组的高混淆选项。",
+        "id": "graphic-code-machine-7"
+      },
+      {
+        "level": "L6",
+        "prompt": "照着密码表，问号处应放哪张图？",
+        "instruction": "每组左图对应右图。先找与本题相同的左图，再选对应的右图。",
+        "graphicChallenge": {
+          "kind": "code-match",
+          "stemLabel": "图形密码表",
+          "figures": [
+            {
+              "shape": "leaf",
+              "x": -32,
+              "scale": 0.5
+            },
+            {
+              "shape": "rounded-square",
+              "mode": "blank",
+              "x": 32,
+              "scale": 0.72
+            }
+          ],
+          "groups": [
+            {
+              "label": "对应",
+              "figures": [
+                {
+                  "shape": "diamond",
+                  "x": -32,
+                  "scale": 0.5
+                },
+                {
+                  "shape": "rounded-square",
+                  "x": 32,
+                  "scale": 0.5
+                }
+              ],
+              "connector": "arrow"
+            },
+            {
+              "label": "对应",
+              "figures": [
+                {
+                  "shape": "star",
+                  "x": -32,
+                  "scale": 0.5
+                },
+                {
+                  "shape": "flower",
+                  "x": 32,
+                  "scale": 0.5
+                }
+              ],
+              "connector": "arrow"
+            },
+            {
+              "label": "对应",
+              "figures": [
+                {
+                  "shape": "leaf",
+                  "x": -32,
+                  "scale": 0.5
+                },
+                {
+                  "shape": "fish",
+                  "x": 32,
+                  "scale": 0.5
+                }
+              ],
+              "connector": "arrow"
+            },
+            {
+              "label": "对应",
+              "figures": [
+                {
+                  "shape": "circle",
+                  "x": -32,
+                  "scale": 0.5
+                },
+                {
+                  "shape": "triangle",
+                  "x": 32,
+                  "scale": 0.5
+                }
+              ],
+              "connector": "arrow"
+            }
+          ],
+          "options": [
+            {
+              "value": "triangle",
+              "label": "三角形",
+              "figure": {
+                "shape": "triangle",
+                "mode": "color"
+              },
+              "nearMiss": "这是相邻行的对应图，不是问号这一行。"
+            },
+            {
+              "value": "flower",
+              "label": "花朵",
+              "figure": {
+                "shape": "flower",
+                "mode": "color"
+              },
+              "nearMiss": "这是相邻行的对应图，不是问号这一行。"
+            },
+            {
+              "value": "rounded-square",
+              "label": "圆角方块",
+              "figure": {
+                "shape": "rounded-square",
+                "mode": "color"
+              },
+              "nearMiss": "这是相邻行的对应图，不是问号这一行。"
+            },
+            {
+              "value": "fish",
+              "label": "小鱼",
+              "figure": {
+                "shape": "fish",
+                "mode": "color"
+              }
+            }
+          ]
+        },
+        "choices": [
+          {
+            "label": "A",
+            "value": "triangle"
+          },
+          {
+            "label": "B",
+            "value": "flower"
+          },
+          {
+            "label": "C",
+            "value": "rounded-square"
+          },
+          {
+            "label": "D",
+            "value": "fish"
+          }
+        ],
+        "answer": "fish",
+        "success": "叶子对应小鱼，密码题要按同一组的对应关系找答案。",
+        "retry": "先在密码表里找到和问号左边一样的图形，再看它右边对应哪个图，不要选隔壁一组。",
+        "parentPrompt": "问她：问号左边的图在密码表哪一组？这一组右边对应什么？为什么相邻一组不对？",
+        "abilityTags": [
+          "图形密码机",
+          "对应映射",
+          "近邻排除"
+        ],
+        "difficultyNote": "上实式编码题：需要从多组图形对应关系中筛选目标组，并排除相邻组的高混淆选项。",
+        "id": "graphic-code-machine-8"
+      }
+    ],
+    "kind": "progressiveSet"
+  },
+  {
+    "id": "graphic-gap-close",
+    "world": "graphic",
+    "title": "缺口补一补",
+    "subtitle": "看轮廓缺了哪一边，在选项里找能补上的那一块。",
+    "goal": "训练视觉闭合、缺口方向和边角形状匹配。",
+    "parentPrompt": "请她先指缺口在哪里，再说选项的哪条边能补进去。",
+    "abilityTags": [
+      "缺口补一补",
+      "视觉闭合",
+      "边角匹配"
+    ],
+    "level": "L6",
+    "rounds": [
+      {
+        "level": "L5",
+        "prompt": "这个轮廓缺了一段，原来是哪张完整的图？",
+        "instruction": "先看缺口在哪一边，再看缺口需要圆边、直边、尖角还是尾巴。",
+        "graphicChallenge": {
+          "kind": "closure-match",
+          "stemLabel": "缺口轮廓",
+          "figures": [
+            {
+              "shape": "circle",
+              "color": "#60a5fa",
+              "mode": "missing",
+              "gap": "right"
+            }
+          ],
+          "options": [
+            {
+              "value": "rounded-square",
+              "label": "圆角方块",
+              "figure": {
+                "shape": "rounded-square",
+                "mode": "outline"
+              },
+              "nearMiss": "轮廓有相近边角，但缺口方向或边形不吻合。"
+            },
+            {
+              "value": "apple",
+              "label": "苹果",
+              "figure": {
+                "shape": "apple",
+                "mode": "outline"
+              },
+              "nearMiss": "轮廓有相近边角，但缺口方向或边形不吻合。"
+            },
+            {
+              "value": "circle",
+              "label": "圆形",
+              "figure": {
+                "shape": "circle",
+                "mode": "outline"
+              }
+            },
+            {
+              "value": "diamond",
+              "label": "菱形",
+              "figure": {
+                "shape": "diamond",
+                "mode": "outline"
+              },
+              "nearMiss": "轮廓有相近边角，但缺口方向或边形不吻合。"
+            }
+          ]
+        },
+        "choices": [
+          {
+            "label": "A",
+            "value": "rounded-square"
+          },
+          {
+            "label": "B",
+            "value": "apple"
+          },
+          {
+            "label": "C",
+            "value": "circle"
+          },
+          {
+            "label": "D",
+            "value": "diamond"
+          }
+        ],
+        "answer": "circle",
+        "success": "圆形对，圆形右边缺一段圆弧，补上的也要是圆弧。补缺口要看边、角和缺口方向。",
+        "retry": "先指缺口方向，再说缺口需要圆边、直边、尖角、叶子还是尾巴，然后排除轮廓相近但边角不对的选项。",
+        "parentPrompt": "请她指着缺口说：缺的是哪里？为什么这个图能补上，其他相近图形的边角哪里不一样？",
+        "abilityTags": [
+          "缺口补一补",
+          "视觉闭合",
+          "边角匹配"
+        ],
+        "difficultyNote": "上实式视觉闭合题：只给不完整轮廓，四个选项都有相近边角，需要按缺口方向排除。",
+        "id": "graphic-gap-close-1"
+      },
+      {
+        "level": "L5",
+        "prompt": "这个轮廓缺了一段，原来是哪张完整的图？",
+        "instruction": "先看缺口在哪一边，再看缺口需要圆边、直边、尖角还是尾巴。",
+        "graphicChallenge": {
+          "kind": "closure-match",
+          "stemLabel": "缺口轮廓",
+          "figures": [
+            {
+              "shape": "rounded-square",
+              "color": "#3b82f6",
+              "mode": "missing",
+              "gap": "top"
+            }
+          ],
+          "options": [
+            {
+              "value": "circle",
+              "label": "圆形",
+              "figure": {
+                "shape": "circle",
+                "mode": "outline"
+              },
+              "nearMiss": "轮廓有相近边角，但缺口方向或边形不吻合。"
+            },
+            {
+              "value": "diamond",
+              "label": "菱形",
+              "figure": {
+                "shape": "diamond",
+                "mode": "outline"
+              },
+              "nearMiss": "轮廓有相近边角，但缺口方向或边形不吻合。"
+            },
+            {
+              "value": "star",
+              "label": "星星",
+              "figure": {
+                "shape": "star",
+                "mode": "outline"
+              },
+              "nearMiss": "轮廓有相近边角，但缺口方向或边形不吻合。"
+            },
+            {
+              "value": "rounded-square",
+              "label": "圆角方块",
+              "figure": {
+                "shape": "rounded-square",
+                "mode": "outline"
+              }
+            }
+          ]
+        },
+        "choices": [
+          {
+            "label": "A",
+            "value": "circle"
+          },
+          {
+            "label": "B",
+            "value": "diamond"
+          },
+          {
+            "label": "C",
+            "value": "star"
+          },
+          {
+            "label": "D",
+            "value": "rounded-square"
+          }
+        ],
+        "answer": "rounded-square",
+        "success": "圆角方块对，圆角方块上边缺直边接圆角。补缺口要看边、角和缺口方向。",
+        "retry": "先指缺口方向，再说缺口需要圆边、直边、尖角、叶子还是尾巴，然后排除轮廓相近但边角不对的选项。",
+        "parentPrompt": "请她指着缺口说：缺的是哪里？为什么这个图能补上，其他相近图形的边角哪里不一样？",
+        "abilityTags": [
+          "缺口补一补",
+          "视觉闭合",
+          "边角匹配"
+        ],
+        "difficultyNote": "上实式视觉闭合题：只给不完整轮廓，四个选项都有相近边角，需要按缺口方向排除。",
+        "id": "graphic-gap-close-2"
+      },
+      {
+        "level": "L6",
+        "prompt": "这个轮廓缺了一段，原来是哪张完整的图？",
+        "instruction": "先看缺口在哪一边，再看缺口需要圆边、直边、尖角还是尾巴。",
+        "graphicChallenge": {
+          "kind": "closure-match",
+          "stemLabel": "缺口轮廓",
+          "figures": [
+            {
+              "shape": "triangle",
+              "color": "#fb7185",
+              "mode": "missing",
+              "gap": "bottom"
+            }
+          ],
+          "options": [
+            {
+              "value": "diamond",
+              "label": "菱形",
+              "figure": {
+                "shape": "diamond",
+                "mode": "outline"
+              },
+              "nearMiss": "轮廓有相近边角，但缺口方向或边形不吻合。"
+            },
+            {
+              "value": "triangle",
+              "label": "三角形",
+              "figure": {
+                "shape": "triangle",
+                "mode": "outline"
+              }
+            },
+            {
+              "value": "star",
+              "label": "星星",
+              "figure": {
+                "shape": "star",
+                "mode": "outline"
+              },
+              "nearMiss": "轮廓有相近边角，但缺口方向或边形不吻合。"
+            },
+            {
+              "value": "leaf",
+              "label": "叶子",
+              "figure": {
+                "shape": "leaf",
+                "mode": "outline"
+              },
+              "nearMiss": "轮廓有相近边角，但缺口方向或边形不吻合。"
+            }
+          ]
+        },
+        "choices": [
+          {
+            "label": "A",
+            "value": "diamond"
+          },
+          {
+            "label": "B",
+            "value": "triangle"
+          },
+          {
+            "label": "C",
+            "value": "star"
+          },
+          {
+            "label": "D",
+            "value": "leaf"
+          }
+        ],
+        "answer": "triangle",
+        "success": "三角形对，三角形底下缺一条直边。补缺口要看边、角和缺口方向。",
+        "retry": "先指缺口方向，再说缺口需要圆边、直边、尖角、叶子还是尾巴，然后排除轮廓相近但边角不对的选项。",
+        "parentPrompt": "请她指着缺口说：缺的是哪里？为什么这个图能补上，其他相近图形的边角哪里不一样？",
+        "abilityTags": [
+          "缺口补一补",
+          "视觉闭合",
+          "边角匹配"
+        ],
+        "difficultyNote": "上实式视觉闭合题：只给不完整轮廓，四个选项都有相近边角，需要按缺口方向排除。",
+        "id": "graphic-gap-close-3"
+      },
+      {
+        "level": "L6",
+        "prompt": "这个轮廓缺了一段，原来是哪张完整的图？",
+        "instruction": "先看缺口在哪一边，再看缺口需要圆边、直边、尖角还是尾巴。",
+        "graphicChallenge": {
+          "kind": "closure-match",
+          "stemLabel": "缺口轮廓",
+          "figures": [
+            {
+              "shape": "diamond",
+              "color": "#14b8a6",
+              "mode": "missing",
+              "gap": "left"
+            }
+          ],
+          "options": [
+            {
+              "value": "diamond",
+              "label": "菱形",
+              "figure": {
+                "shape": "diamond",
+                "mode": "outline"
+              }
+            },
+            {
+              "value": "triangle",
+              "label": "三角形",
+              "figure": {
+                "shape": "triangle",
+                "mode": "outline"
+              },
+              "nearMiss": "轮廓有相近边角，但缺口方向或边形不吻合。"
+            },
+            {
+              "value": "rounded-square",
+              "label": "圆角方块",
+              "figure": {
+                "shape": "rounded-square",
+                "mode": "outline"
+              },
+              "nearMiss": "轮廓有相近边角，但缺口方向或边形不吻合。"
+            },
+            {
+              "value": "star",
+              "label": "星星",
+              "figure": {
+                "shape": "star",
+                "mode": "outline"
+              },
+              "nearMiss": "轮廓有相近边角，但缺口方向或边形不吻合。"
+            }
+          ]
+        },
+        "choices": [
+          {
+            "label": "A",
+            "value": "diamond"
+          },
+          {
+            "label": "B",
+            "value": "triangle"
+          },
+          {
+            "label": "C",
+            "value": "rounded-square"
+          },
+          {
+            "label": "D",
+            "value": "star"
+          }
+        ],
+        "answer": "diamond",
+        "success": "菱形对，菱形左边缺两条斜边夹尖角。补缺口要看边、角和缺口方向。",
+        "retry": "先指缺口方向，再说缺口需要圆边、直边、尖角、叶子还是尾巴，然后排除轮廓相近但边角不对的选项。",
+        "parentPrompt": "请她指着缺口说：缺的是哪里？为什么这个图能补上，其他相近图形的边角哪里不一样？",
+        "abilityTags": [
+          "缺口补一补",
+          "视觉闭合",
+          "边角匹配"
+        ],
+        "difficultyNote": "上实式视觉闭合题：只给不完整轮廓，四个选项都有相近边角，需要按缺口方向排除。",
+        "id": "graphic-gap-close-4"
+      },
+      {
+        "level": "L6",
+        "prompt": "这个轮廓缺了一段，原来是哪张完整的图？",
+        "instruction": "先看缺口在哪一边，再看缺口需要圆边、直边、尖角还是尾巴。",
+        "graphicChallenge": {
+          "kind": "closure-match",
+          "stemLabel": "缺口轮廓",
+          "figures": [
+            {
+              "shape": "star",
+              "color": "#facc15",
+              "mode": "missing",
+              "gap": "right"
+            }
+          ],
+          "options": [
+            {
+              "value": "star",
+              "label": "星星",
+              "figure": {
+                "shape": "star",
+                "mode": "outline"
+              }
+            },
+            {
+              "value": "flower",
+              "label": "花朵",
+              "figure": {
+                "shape": "flower",
+                "mode": "outline"
+              },
+              "nearMiss": "轮廓有相近边角，但缺口方向或边形不吻合。"
+            },
+            {
+              "value": "triangle",
+              "label": "三角形",
+              "figure": {
+                "shape": "triangle",
+                "mode": "outline"
+              },
+              "nearMiss": "轮廓有相近边角，但缺口方向或边形不吻合。"
+            },
+            {
+              "value": "diamond",
+              "label": "菱形",
+              "figure": {
+                "shape": "diamond",
+                "mode": "outline"
+              },
+              "nearMiss": "轮廓有相近边角，但缺口方向或边形不吻合。"
+            }
+          ]
+        },
+        "choices": [
+          {
+            "label": "A",
+            "value": "star"
+          },
+          {
+            "label": "B",
+            "value": "flower"
+          },
+          {
+            "label": "C",
+            "value": "triangle"
+          },
+          {
+            "label": "D",
+            "value": "diamond"
+          }
+        ],
+        "answer": "star",
+        "success": "星星对，星星右边缺尖角和凹进去的边。补缺口要看边、角和缺口方向。",
+        "retry": "先指缺口方向，再说缺口需要圆边、直边、尖角、叶子还是尾巴，然后排除轮廓相近但边角不对的选项。",
+        "parentPrompt": "请她指着缺口说：缺的是哪里？为什么这个图能补上，其他相近图形的边角哪里不一样？",
+        "abilityTags": [
+          "缺口补一补",
+          "视觉闭合",
+          "边角匹配"
+        ],
+        "difficultyNote": "上实式视觉闭合题：只给不完整轮廓，四个选项都有相近边角，需要按缺口方向排除。",
+        "id": "graphic-gap-close-5"
+      },
+      {
+        "level": "L6",
+        "prompt": "这个轮廓缺了一段，原来是哪张完整的图？",
+        "instruction": "先看缺口在哪一边，再看缺口需要圆边、直边、尖角还是尾巴。",
+        "graphicChallenge": {
+          "kind": "closure-match",
+          "stemLabel": "缺口轮廓",
+          "figures": [
+            {
+              "shape": "flower",
+              "color": "#f472b6",
+              "mode": "missing",
+              "gap": "top"
+            }
+          ],
+          "options": [
+            {
+              "value": "circle",
+              "label": "圆形",
+              "figure": {
+                "shape": "circle",
+                "mode": "outline"
+              },
+              "nearMiss": "轮廓有相近边角，但缺口方向或边形不吻合。"
+            },
+            {
+              "value": "star",
+              "label": "星星",
+              "figure": {
+                "shape": "star",
+                "mode": "outline"
+              },
+              "nearMiss": "轮廓有相近边角，但缺口方向或边形不吻合。"
+            },
+            {
+              "value": "flower",
+              "label": "花朵",
+              "figure": {
+                "shape": "flower",
+                "mode": "outline"
+              }
+            },
+            {
+              "value": "apple",
+              "label": "苹果",
+              "figure": {
+                "shape": "apple",
+                "mode": "outline"
+              },
+              "nearMiss": "轮廓有相近边角，但缺口方向或边形不吻合。"
+            }
+          ]
+        },
+        "choices": [
+          {
+            "label": "A",
+            "value": "circle"
+          },
+          {
+            "label": "B",
+            "value": "star"
+          },
+          {
+            "label": "C",
+            "value": "flower"
+          },
+          {
+            "label": "D",
+            "value": "apple"
+          }
+        ],
+        "answer": "flower",
+        "success": "花朵对，花朵上方缺圆圆花瓣。补缺口要看边、角和缺口方向。",
+        "retry": "先指缺口方向，再说缺口需要圆边、直边、尖角、叶子还是尾巴，然后排除轮廓相近但边角不对的选项。",
+        "parentPrompt": "请她指着缺口说：缺的是哪里？为什么这个图能补上，其他相近图形的边角哪里不一样？",
+        "abilityTags": [
+          "缺口补一补",
+          "视觉闭合",
+          "边角匹配"
+        ],
+        "difficultyNote": "上实式视觉闭合题：只给不完整轮廓，四个选项都有相近边角，需要按缺口方向排除。",
+        "id": "graphic-gap-close-6"
+      },
+      {
+        "level": "L6",
+        "prompt": "这个轮廓缺了一段，原来是哪张完整的图？",
+        "instruction": "先看缺口在哪一边，再看缺口需要圆边、直边、尖角还是尾巴。",
+        "graphicChallenge": {
+          "kind": "closure-match",
+          "stemLabel": "缺口轮廓",
+          "figures": [
+            {
+              "shape": "apple",
+              "color": "#ef4444",
+              "mode": "missing",
+              "gap": "top"
+            }
+          ],
+          "options": [
+            {
+              "value": "pear",
+              "label": "梨子",
+              "figure": {
+                "shape": "pear",
+                "mode": "outline"
+              },
+              "nearMiss": "轮廓有相近边角，但缺口方向或边形不吻合。"
+            },
+            {
+              "value": "circle",
+              "label": "圆形",
+              "figure": {
+                "shape": "circle",
+                "mode": "outline"
+              },
+              "nearMiss": "轮廓有相近边角，但缺口方向或边形不吻合。"
+            },
+            {
+              "value": "flower",
+              "label": "花朵",
+              "figure": {
+                "shape": "flower",
+                "mode": "outline"
+              },
+              "nearMiss": "轮廓有相近边角，但缺口方向或边形不吻合。"
+            },
+            {
+              "value": "apple",
+              "label": "苹果",
+              "figure": {
+                "shape": "apple",
+                "mode": "outline"
+              }
+            }
+          ]
+        },
+        "choices": [
+          {
+            "label": "A",
+            "value": "pear"
+          },
+          {
+            "label": "B",
+            "value": "circle"
+          },
+          {
+            "label": "C",
+            "value": "flower"
+          },
+          {
+            "label": "D",
+            "value": "apple"
+          }
+        ],
+        "answer": "apple",
+        "success": "苹果对，苹果上方缺叶子和圆鼓鼓的边。补缺口要看边、角和缺口方向。",
+        "retry": "先指缺口方向，再说缺口需要圆边、直边、尖角、叶子还是尾巴，然后排除轮廓相近但边角不对的选项。",
+        "parentPrompt": "请她指着缺口说：缺的是哪里？为什么这个图能补上，其他相近图形的边角哪里不一样？",
+        "abilityTags": [
+          "缺口补一补",
+          "视觉闭合",
+          "边角匹配"
+        ],
+        "difficultyNote": "上实式视觉闭合题：只给不完整轮廓，四个选项都有相近边角，需要按缺口方向排除。",
+        "id": "graphic-gap-close-7"
+      },
+      {
+        "level": "L6",
+        "prompt": "这个轮廓缺了一段，原来是哪张完整的图？",
+        "instruction": "先看缺口在哪一边，再看缺口需要圆边、直边、尖角还是尾巴。",
+        "graphicChallenge": {
+          "kind": "closure-match",
+          "stemLabel": "缺口轮廓",
+          "figures": [
+            {
+              "shape": "fish",
+              "color": "#38bdf8",
+              "mode": "missing",
+              "gap": "right"
+            }
+          ],
+          "options": [
+            {
+              "value": "leaf",
+              "label": "叶子",
+              "figure": {
+                "shape": "leaf",
+                "mode": "outline"
+              },
+              "nearMiss": "轮廓有相近边角，但缺口方向或边形不吻合。"
+            },
+            {
+              "value": "fish",
+              "label": "小鱼",
+              "figure": {
+                "shape": "fish",
+                "mode": "outline"
+              }
+            },
+            {
+              "value": "pear",
+              "label": "梨子",
+              "figure": {
+                "shape": "pear",
+                "mode": "outline"
+              },
+              "nearMiss": "轮廓有相近边角，但缺口方向或边形不吻合。"
+            },
+            {
+              "value": "star",
+              "label": "星星",
+              "figure": {
+                "shape": "star",
+                "mode": "outline"
+              },
+              "nearMiss": "轮廓有相近边角，但缺口方向或边形不吻合。"
+            }
+          ]
+        },
+        "choices": [
+          {
+            "label": "A",
+            "value": "leaf"
+          },
+          {
+            "label": "B",
+            "value": "fish"
+          },
+          {
+            "label": "C",
+            "value": "pear"
+          },
+          {
+            "label": "D",
+            "value": "star"
+          }
+        ],
+        "answer": "fish",
+        "success": "小鱼对，小鱼右边缺三角尾巴。补缺口要看边、角和缺口方向。",
+        "retry": "先指缺口方向，再说缺口需要圆边、直边、尖角、叶子还是尾巴，然后排除轮廓相近但边角不对的选项。",
+        "parentPrompt": "请她指着缺口说：缺的是哪里？为什么这个图能补上，其他相近图形的边角哪里不一样？",
+        "abilityTags": [
+          "缺口补一补",
+          "视觉闭合",
+          "边角匹配"
+        ],
+        "difficultyNote": "上实式视觉闭合题：只给不完整轮廓，四个选项都有相近边角，需要按缺口方向排除。",
+        "id": "graphic-gap-close-8"
+      }
+    ],
+    "kind": "progressiveSet"
+  }
+]

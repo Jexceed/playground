@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-25",
+  "scope": "All 32 exact relative-word token uses, the 9 E01 rounds, and related explicit comparison/height-reasoning contexts. Not an exhaustive child-comprehension review of all 1110 rounds.",
+  "counts": {
+    "exactWordUses": 32,
+    "E01MatchingTokens": 30,
+    "redrawnReferences": 22,
+    "retainedOpenClosed": 8,
+    "retainedCharacterTargets": 2,
+    "newAssets": 8
+  },
+  "pairs": [
+    {
+      "words": "高/低",
+      "before": "Abstract blue stack heights",
+      "after": "Same child, tree, ground and kite; kite moves from above the crown to below it.",
+      "review": "Whole scene and reference scale retained. Low kite moves slightly right to avoid covering the tree. Both remain above the child’s hand; the difference is elevation, not size."
+    },
+    {
+      "words": "上/下",
+      "before": "Red dot and floating rectangle",
+      "after": "Same small orange kitten on the tabletop and on the floor beneath the same table.",
+      "review": "Initial kitten scale was corrected before deriving the below companion. Entire kitten visible between the legs; no floating or hidden cat."
+    },
+    {
+      "words": "长/短",
+      "before": "Rectangle and wedge pencil schematic",
+      "after": "Same yellow pencil, eraser, ferrule and sharpened tip.",
+      "review": "Same left origin, centreline and thickness. Short total length is approximately half. Full square canvases retained so image fitting cannot equalize lengths."
+    },
+    {
+      "words": "多/少",
+      "before": "Six/two abstract dots",
+      "after": "Same blue plate holding exactly six or two separate strawberries.",
+      "review": "Counted visually: two rows of three versus two in the retained middle column; same-sized fruit, plate and camera."
+    }
+  ],
+  "retained": [
+    {
+      "context": "E01 开/关, 8 token references",
+      "reason": "Existing images already show the same recognizable blue box with its lid open/closed."
+    },
+    {
+      "context": "E05 大, 2 token references",
+      "reason": "The written character itself is the task evidence, not a substitute for a pictured size relation."
+    },
+    {
+      "context": "E01 rounds 7–9",
+      "reason": "Physical action and parent observation remain ungraded; no fabricated pictorial answer."
+    },
+    {
+      "context": "E07 colored bar comparisons",
+      "reason": "An explicitly defined mathematical comparison model, not a word-meaning illustration."
+    },
+    {
+      "context": "L03 height-order reasoning",
+      "reason": "Unknown relative heights are the inference target. Painting absolute heights would reveal an unearned answer."
+    }
+  ],
+  "method": "Inspected all eight originals, the 680×1360 contact sheet, desktop rendered cards and 375px responsive cards. Adult visual QA does not establish child comprehension."
+}

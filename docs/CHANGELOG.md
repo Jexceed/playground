@@ -1,6 +1,81 @@
 # Changelog
 
+## 2026-10-26
+
+### Record the 053–059 delivery checkpoint
+
+- Saved the current interaction, picture, speech and readability changes with their specifications and review evidence. Feature 059 remains in progress; its remaining 91 groups retain their review tasks.
+- Re-exported 4287 voice lines and verified the matching Edge manifest, curriculum and illustration audits, production build, and a fresh Mac installation. The installed app reopens the existing word-picture activity and displays its local enlarged image.
+- Ran all 282 regression tests: 280 passed. Both failures also reproduce with source and tests from `014a56a3`; the stale Douyin export and duplicate-path story-art assertion are recorded in TODO. See [checkpoint verification](../specs/059-chapter-readability/verification/commit-checkpoint-2026-10-26.md).
+
+### Align equivalent text between curriculum sections
+
+- Removed smaller exploration-only type rules. Question prompts, instructions, topic names, chapter names and stage labels now share the corresponding enlightenment sizes, including rule-machine and card-flip pages. Kept the restored question-number/count/progress-tag hierarchy.
+- Adjusted only the exploration topic cards' inner spacing for full names. Checked all 115 navigation labels at the current Mac size, a long prompt and the toy-specific styles; rebuilt, installed and compared the same enlightenment/exploration pages in the native app without altering progress.
+
+### Restore the original type hierarchy
+
+- Corrected the interpretation of “no small-print instructions”: removed the blanket 18px rule and restored 268 mechanically enlarged declarations to their saved pre-review values. Question navigation, stage labels, counts, progress tags and supporting controls again use their original hierarchy; the original font family was never changed.
+- Restored compact exploration topic buttons and natural spacing around chapter counts while retaining aligned completion marks. Kept local images, playable models, answers and progress intact. Essential task cues use a local 16px style rather than scaling the whole interface.
+- Removed duplicate standing instructions and the small-print footnote from matching pages; the main instruction remains, and contextual guidance appears after selecting a card. Existing unlink, undo, clear and narration remain available.
+
+### Fix the current Mac chapter list and continue the visual review
+
+- Fixed completed chapter rows pushing the question count onto a new line. The completion mark, left-aligned title and count now occupy stable columns. Removed the repeated “动手” prefix from exploration counts so ordinary titles fit; kept the frame, font sizes and colors. The current-window navigation audit covers all 115 chapter entries, including a completed row.
+- Replaced the two static groups in all 12 “小鸟飞走了” questions with one branch scene. The authored number of birds visibly flies away, the others stay in place, and children can return to the beginning. Added two local image_gen assets and 19 Edge voice lines; existing questions, answers and progress remain unchanged.
+- Fixed native clock rounds 7–9 being blocked by preloading unused historical pictures. Readiness now follows the pictures actually used by the model; real picture dependencies still load before answering. Enlarged model views now enlarge the clocks and objects themselves.
+- Completed browser review of the remaining seven enlightenment math chapters, bringing the math review to 24 groups/266 questions. Full content review of the other 91 groups remains tracked in [059](../specs/059-chapter-readability/verification.md). Completed the previously blocked installed-app contour and word-picture checks.
+
+## 2026-10-25
+
+### Improve reading size and begin the chapter-by-chapter review
+
+- Raised 268 undersized CSS declarations to at least 18px, enlarged primary exploration instructions/actions, and let long chapter names wrap. Kept the existing palette and button styling; compact world navigation now gives names a full row.
+- Fixed narrow-screen clipping in counting comparison panels and object groups. Moved bridge gap/material text out of shrinking SVGs, enlarged covered-image text, and checked all 12 enlightenment clock rounds at desktop/375px, including feedback and four time-conversion scenes.
+- Started the full 115-group/1110-round review in [059](../specs/059-chapter-readability/spec.md). Initial desktop and mobile states were collected for every group; later rounds, memory/listening phases, embedded bitmap text and remaining model improvements are still tracked as pending. This checkpoint is not completion of the whole review.
+
+### Replace abstract word cards with concrete paired pictures
+
+- Redrew 高/低 as one kite above/below the same tree, 上/下 as the same kitten on/under one table, 长/短 as the same pencil at a fixed scale, and 多/少 as six/two strawberries on the same plate. Eight local image_gen assets replace 22 references across six “词语有朋友” matching rounds; the clear open/closed boxes remain.
+- Enlarged only E01 picture cards and retained one readable word per card. Matching, speech, answers, identities, progress, the three parent-observation activities and shared buttons remain unchanged. Full comparison canvases prevent the short pencil from being enlarged to the long pencil's size.
+- Audited 32 exact relative-word token uses and related comparison/reasoning contexts. Prompts, originals, hashes, the visual review and delivery checks are recorded in [058 verification](../specs/058-concrete-word-pictures/verification.md).
+
+### Redraw the visual-closure contours
+
+- Redrew the ten shapes used by all eight “缺口补一补” rounds with balanced proportions, smooth curves and consistent line weights. Enlarged the main figure and answer figures while keeping the existing cards and controls.
+- Replaced the dotted full outline and generic erasing rectangle with one exact missing interval in the shared contour. The apple now genuinely loses its top edge and leaf, the fish loses its tail, and the flower has a clean unified perimeter. Stem and complete options share their geometry.
+- All 1110 question records and 4259 voice lines remain unchanged. Verification, the eight-round review sheet and Mac installation evidence: [057 verification](../specs/057-contour-redraw/verification.md).
+- Completed the previously blocked native acceptance for 054–056 after unlock: number-walk same-cell/undo/clear, chess trial/independent selection, and island bridge deficits/excess/fixed-bridge reset. No native answers were submitted, and the prior positions were restored.
+
+## 2026-10-24
+
+### Show each island's bridge requirement as countable slots
+
+- All nine “小岛连桥” rounds now explicitly label “要 N 座桥” and show N bridge slots. Built bridges fill the slots, empty slots remain visible, and excess bridges appear separately in red with “多 N 座”. Replaced the ambiguous bare target number and “已连” overlay with “还差 / 刚好 / 多”.
+- Added a pictured example of one bridge counting at both ends, per-island target narration and matching hints/feedback. Existing bridges, double bridges, edge cycling, island-to-island input, undo, clear and global connectivity/crossing evaluation stay intact. Six-island maps scroll locally on narrow screens; shared controls keep their theme.
+- Fixed Edge voice-cache reuse after changes beyond a truncated voice-line ID. Cache reuse now also requires the previous full text, spoken text, locale, voice/rate/pitch and source path to match. Regenerated the six confirmed affected prompts and saved before/after hashes and durations.
+- Verification, visual states and Mac installation status: [056 verification](../specs/056-island-bridge-goals/verification.md).
+
+### Make empty chess squares and independent trial moves explicit
+
+- Replaced all nine “棋盘下一步” numbered reference boards and repeated small answer diagrams with one large interactive board. Fixed black/white pieces, dashed empty candidate circles and the single highlighted trial stone have distinct appearances; position numbers no longer fill empty squares.
+- Clicking a candidate only tries one black stone. “选这个空格” records the independent choice, then removes the trial stone. Other selections remain check marks, so several answers never create a misleading simultaneous winning line. Original candidate sets, answer IDs, positions and scoring are preserved.
+- Added pictured three-in-a-line and capture rules, local spoken instructions, keyboard operation and responsive layouts. Existing shared confirm/reset/clear styles remain in use. Browser cases, tests and Mac installation status: [055 verification](../specs/055-board-move-clarity/verification.md).
+
+### Put the two walking friends on an interactive number path
+
+- Replaced all nine “两位朋友走格子” abstract reference strips and repeated number-card trays with a pictured model. Rabbit and puppy pieces stand on their actual starting squares; one- or two-square direction diagrams and paired footprints show the move size and number of turns.
+- Children select a friend and click a number square, or drag the piece there. Both friends can occupy the same square without obscuring each other or its number. Initial pieces show their starts without filling an answer; shared undo, clear and evaluation remain in charge.
+- Kept the shared frame/button theme, existing question identities, revisions, answers and progress. Reused registered local character art. Narrow screens keep one continuous path with local horizontal scrolling and at least 46×48 px number targets.
+- Spoken instructions now begin with the actual start/direction/turn rules; each pictured rule can be replayed. Rebuilt local Edge prompts. Verification and Mac delivery: [054 verification](../specs/054-number-walk-model/verification.md).
+
 ## 2026-10-23
+
+### Speak the actual flip instruction first
+
+- All nine “翻牌小机关” rounds now begin their entry/read-again narration with the actual ordered operations, such as “第1步，翻第3张。”. Removed the three generic spoken lead-in sentences from this narration so the child hears the required action immediately.
+- Main narration, individual step buttons, curriculum clues and voice export share the same structured-step formatter. Repeated targets in three-step rounds remain spoken in order. Question content, answers, artwork and saved progress are unchanged.
+- Regenerated the local Edge prompt clips and removed nine superseded clips. Verification and Mac installation evidence: [053 verification](../specs/053-card-flip-speech/verification.md).
 
 ### Restore shared controls and complete the image review
 

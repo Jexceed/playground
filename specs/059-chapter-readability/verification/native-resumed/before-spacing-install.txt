@@ -1,0 +1,99 @@
+Window: "小小思考屋", App: 小小思考屋.
+0 standard window 小小思考屋, Secondary Actions: Raise
+	1 scroll area
+		2 HTML content Description: 小小思考屋, URL: tauri://localhost
+			3 container
+				4 container 主题地图
+					5 image 小小思考屋 亲子思维游戏
+					6 container 选择启蒙或探索
+						7 toggle button 启蒙, Value: off
+						8 toggle button 探索, Value: on
+					9 button (collapsed) 数字岛 144 题, Secondary Actions: Expand
+					10 button (collapsed) 逻辑屋 126 题, Secondary Actions: Expand
+					11 button (collapsed) 图形工坊 186 题, Secondary Actions: Expand
+					12 button (collapsed) 记忆小屋 81 题, Secondary Actions: Expand
+					13 button (expanded) 语言花园 54 题, Secondary Actions: Collapse
+					14 button (collapsed) 生活实验室 30 题, Secondary Actions: Expand
+					15 container 关卡列表
+						16 container
+							17 text 探索  ·  语言花园
+						18 text 8  个
+						19 search text field (settable) 查找当前主题题组, Placeholder: 查找题组
+							20 text 查找题组
+						21 heading 词语与故事, Value: 3
+							22 text 词语与故事
+						23 button 词语有朋友 9 题
+						24 button 把位置说清楚 3 题
+						25 button 故事接起来 9 题
+						26 button 我的解释和办法 3 题
+						27 button 把自己的想法说出来 3 题
+						28 heading 汉字与字音, Value: 3
+							29 text 汉字与字音
+						30 button 字音小花园 9 题
+						31 heading 英语听与想, Value: 3
+							32 text 英语听与想
+						33 button 英语听一听 9 题
+						34 button 英语里的数量位置 9 题
+				35 container 当前部分
+					36 text 探索
+					37 text 组合线索，多步思考 75  组 ·  621  题
+				38 container 词语有朋友
+					39 container 词语有朋友
+						40 container
+							41 text 先试一试  · 第  1  / 9  题
+							42 heading 词语有朋友, Value: 1
+								43 text 词语有朋友
+							44 button 听一听题目
+						45 heading 把意思相反的词配成朋友。, Value: 2
+							46 text 把意思相反的词配成朋友。
+						47 text 把两边有关的图卡连起来。可以拖过去，也可以两边各点一下。
+						48 container 连线配对
+							49 text 拖到另一张图卡，或两边各点一下
+							50 text 已连  0  /  2  对
+							51 toggle button 高，未连接, Value: off
+							52 button 看大图：高, Help: 看大图
+							53 toggle button 开，未连接, Value: off
+							54 button 看大图：开, Help: 看大图
+							55 toggle button 低，未连接, Value: off
+							56 button 看大图：低, Help: 看大图
+							57 toggle button 关，未连接, Value: off
+							58 button 看大图：关, Help: 看大图
+							59 text 想换一个朋友，直接重新连；点卡片上的 × 可以断开。
+						60 button (disabled) 撤销上一步
+						61 button 清空
+						62 button 提示
+						63 button 摆好了，看看
+						64 container
+							65 text 这次尝试  0  次 · 提示  0  次
+							66 button 先跳过
+				67 container 题目导航
+					68 text 题目导航
+					69 text 1  /  9  已做
+					70 button 跳到第 1 题，已做
+					71 button 跳到第 2 题
+					72 button 跳到第 3 题
+					73 button 跳到第 4 题
+					74 button 跳到第 5 题
+					75 button 跳到第 6 题
+					76 button 跳到第 7 题
+					77 button 跳到第 8 题
+					78 button 跳到第 9 题
+				79 summary 给家长 · 陪玩提示, Value: off
+					80 text 给家长 · 陪玩提示
+				81 summary 探索 · 成长记录, Value: off
+					82 text 探索
+					83 text  · 成长记录
+		84 scroll bar (settable, float) 0
+	85 close button
+	86 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	87 minimize button
+	88 text 小小思考屋
+89 menu bar
+	90 小小思考屋
+	91 File
+	92 Edit
+	93 View
+	94 Window
+	95 Help
+
+The focused UI element is 2 HTML content Description: 小小思考屋, URL: tauri://localhost

@@ -30,10 +30,18 @@ const lengthWord = (long: boolean) => diagram(picture([
   rect(40, 143, long ? 222 : 102, 34, '#d7b660'),
   { kind: 'polygon', points: [[long ? 262 : 142,143],[long ? 288 : 168,160],[long ? 262 : 142,177]], fill: '#c7b797' },
 ], 320, 320), long ? '长铅笔' : '短铅笔');
-const antonymPictures: Record<string, GalleryImage> = {
+// Retain these registered diagrams as historical references and for exact-model audits.
+const legacyAntonymPictures: Record<string, GalleryImage> = {
   高: towerWord(5), 低: towerWord(2), 开: explorationArt.boxStates[0], 关: explorationArt.boxStates[1],
   上: positionWord(true), 下: positionWord(false), 长: lengthWord(true), 短: lengthWord(false),
   多: diagram(dots(6, 3), '六个圆点，比较多'), 少: diagram(dots(2, 3), '两个圆点，比较少'),
+};
+const antonymPictures: Record<string, GalleryImage> = {
+  ...legacyAntonymPictures,
+  高: items.wordHighKite, 低: items.wordLowKite,
+  上: items.wordAboveTable, 下: items.wordBelowTable,
+  长: items.wordLongPencil, 短: items.wordShortPencil,
+  多: items.wordManyBerries, 少: items.wordFewBerries,
 };
 
 function materials(activity: Activity): { label: string; image?: GalleryImage }[] {

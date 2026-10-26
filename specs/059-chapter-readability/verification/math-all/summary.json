@@ -1,0 +1,20 @@
+{
+  "groups": 16,
+  "rounds": 144,
+  "desktop": {
+    "records": 144,
+    "wrongRejected": 144,
+    "correctAccepted": 144
+  },
+  "mobile": {
+    "records": 144,
+    "interactions": 64,
+    "correctAccepted": 64
+  },
+  "smallText": [],
+  "clippedSurfaces": [],
+  "unloadedImages": [],
+  "bitmapText": [],
+  "scope": "All 144 initial question surfaces, all desktop wrong/correct attempts, 64 mobile correct attempts. Whole-app and native acceptance remain separate.",
+  "remainingBitmapText": "Only ten-frame filled-circle glyphs; no remaining word/number labels in shown generated mathematical PNGs."
+}

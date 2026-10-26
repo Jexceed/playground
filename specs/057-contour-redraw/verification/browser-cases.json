@@ -1,0 +1,402 @@
+[
+  {
+    "round": 1,
+    "figures": [
+      {
+        "dash": "none",
+        "height": 224,
+        "mode": "missing",
+        "shape": "circle",
+        "width": 224
+      },
+      {
+        "dash": "none",
+        "height": 116,
+        "mode": "complete",
+        "shape": "rounded-square",
+        "width": 116
+      },
+      {
+        "dash": "none",
+        "height": 116,
+        "mode": "complete",
+        "shape": "apple",
+        "width": 116
+      },
+      {
+        "dash": "none",
+        "height": 116,
+        "mode": "complete",
+        "shape": "circle",
+        "width": 116
+      },
+      {
+        "dash": "none",
+        "height": 116,
+        "mode": "complete",
+        "shape": "diamond",
+        "width": 116
+      }
+    ],
+    "options": [
+      "answer-rounded-square",
+      "answer-apple",
+      "answer-circle",
+      "answer-diamond"
+    ],
+    "viewport": 1280,
+    "width": 1280,
+    "wrong": "先指缺口方向，再说缺口需要圆边、直边、尖角、叶子还是尾巴，然后排除轮廓相近但边角不对的选项。",
+    "correct": "圆形对，圆形右边缺一段圆弧，补上的也要是圆弧。补缺口要看边、角和缺口方向。"
+  },
+  {
+    "round": 2,
+    "figures": [
+      {
+        "dash": "none",
+        "height": 224,
+        "mode": "missing",
+        "shape": "rounded-square",
+        "width": 224
+      },
+      {
+        "dash": "none",
+        "height": 116,
+        "mode": "complete",
+        "shape": "circle",
+        "width": 116
+      },
+      {
+        "dash": "none",
+        "height": 116,
+        "mode": "complete",
+        "shape": "diamond",
+        "width": 116
+      },
+      {
+        "dash": "none",
+        "height": 116,
+        "mode": "complete",
+        "shape": "star",
+        "width": 116
+      },
+      {
+        "dash": "none",
+        "height": 116,
+        "mode": "complete",
+        "shape": "rounded-square",
+        "width": 116
+      }
+    ],
+    "options": [
+      "answer-circle",
+      "answer-diamond",
+      "answer-star",
+      "answer-rounded-square"
+    ],
+    "viewport": 1280,
+    "width": 1280,
+    "wrong": "先指缺口方向，再说缺口需要圆边、直边、尖角、叶子还是尾巴，然后排除轮廓相近但边角不对的选项。",
+    "correct": "圆角方块对，圆角方块上边缺直边接圆角。补缺口要看边、角和缺口方向。"
+  },
+  {
+    "round": 3,
+    "figures": [
+      {
+        "dash": "none",
+        "height": 224,
+        "mode": "missing",
+        "shape": "triangle",
+        "width": 224
+      },
+      {
+        "dash": "none",
+        "height": 116,
+        "mode": "complete",
+        "shape": "diamond",
+        "width": 116
+      },
+      {
+        "dash": "none",
+        "height": 116,
+        "mode": "complete",
+        "shape": "triangle",
+        "width": 116
+      },
+      {
+        "dash": "none",
+        "height": 116,
+        "mode": "complete",
+        "shape": "star",
+        "width": 116
+      },
+      {
+        "dash": "none",
+        "height": 116,
+        "mode": "complete",
+        "shape": "leaf",
+        "width": 116
+      }
+    ],
+    "options": [
+      "answer-diamond",
+      "answer-triangle",
+      "answer-star",
+      "answer-leaf"
+    ],
+    "viewport": 1280,
+    "width": 1280,
+    "wrong": "先指缺口方向，再说缺口需要圆边、直边、尖角、叶子还是尾巴，然后排除轮廓相近但边角不对的选项。",
+    "correct": "三角形对，三角形底下缺一条直边。补缺口要看边、角和缺口方向。"
+  },
+  {
+    "round": 4,
+    "figures": [
+      {
+        "dash": "none",
+        "height": 224,
+        "mode": "missing",
+        "shape": "diamond",
+        "width": 224
+      },
+      {
+        "dash": "none",
+        "height": 116,
+        "mode": "complete",
+        "shape": "diamond",
+        "width": 116
+      },
+      {
+        "dash": "none",
+        "height": 116,
+        "mode": "complete",
+        "shape": "triangle",
+        "width": 116
+      },
+      {
+        "dash": "none",
+        "height": 116,
+        "mode": "complete",
+        "shape": "rounded-square",
+        "width": 116
+      },
+      {
+        "dash": "none",
+        "height": 116,
+        "mode": "complete",
+        "shape": "star",
+        "width": 116
+      }
+    ],
+    "options": [
+      "answer-diamond",
+      "answer-triangle",
+      "answer-rounded-square",
+      "answer-star"
+    ],
+    "viewport": 1280,
+    "width": 1280,
+    "wrong": "先指缺口方向，再说缺口需要圆边、直边、尖角、叶子还是尾巴，然后排除轮廓相近但边角不对的选项。",
+    "correct": "菱形对，菱形左边缺两条斜边夹尖角。补缺口要看边、角和缺口方向。"
+  },
+  {
+    "round": 5,
+    "figures": [
+      {
+        "dash": "none",
+        "height": 224,
+        "mode": "missing",
+        "shape": "star",
+        "width": 224
+      },
+      {
+        "dash": "none",
+        "height": 116,
+        "mode": "complete",
+        "shape": "star",
+        "width": 116
+      },
+      {
+        "dash": "none",
+        "height": 116,
+        "mode": "complete",
+        "shape": "flower",
+        "width": 116
+      },
+      {
+        "dash": "none",
+        "height": 116,
+        "mode": "complete",
+        "shape": "triangle",
+        "width": 116
+      },
+      {
+        "dash": "none",
+        "height": 116,
+        "mode": "complete",
+        "shape": "diamond",
+        "width": 116
+      }
+    ],
+    "options": [
+      "answer-star",
+      "answer-flower",
+      "answer-triangle",
+      "answer-diamond"
+    ],
+    "viewport": 1280,
+    "width": 1280,
+    "wrong": "先指缺口方向，再说缺口需要圆边、直边、尖角、叶子还是尾巴，然后排除轮廓相近但边角不对的选项。",
+    "correct": "星星对，星星右边缺尖角和凹进去的边。补缺口要看边、角和缺口方向。"
+  },
+  {
+    "round": 6,
+    "figures": [
+      {
+        "dash": "none",
+        "height": 224,
+        "mode": "missing",
+        "shape": "flower",
+        "width": 224
+      },
+      {
+        "dash": "none",
+        "height": 116,
+        "mode": "complete",
+        "shape": "circle",
+        "width": 116
+      },
+      {
+        "dash": "none",
+        "height": 116,
+        "mode": "complete",
+        "shape": "star",
+        "width": 116
+      },
+      {
+        "dash": "none",
+        "height": 116,
+        "mode": "complete",
+        "shape": "flower",
+        "width": 116
+      },
+      {
+        "dash": "none",
+        "height": 116,
+        "mode": "complete",
+        "shape": "apple",
+        "width": 116
+      }
+    ],
+    "options": [
+      "answer-circle",
+      "answer-star",
+      "answer-flower",
+      "answer-apple"
+    ],
+    "viewport": 1280,
+    "width": 1280,
+    "wrong": "先指缺口方向，再说缺口需要圆边、直边、尖角、叶子还是尾巴，然后排除轮廓相近但边角不对的选项。",
+    "correct": "花朵对，花朵上方缺圆圆花瓣。补缺口要看边、角和缺口方向。"
+  },
+  {
+    "round": 7,
+    "figures": [
+      {
+        "dash": "none",
+        "height": 224,
+        "mode": "missing",
+        "shape": "apple",
+        "width": 224
+      },
+      {
+        "dash": "none",
+        "height": 116,
+        "mode": "complete",
+        "shape": "pear",
+        "width": 116
+      },
+      {
+        "dash": "none",
+        "height": 116,
+        "mode": "complete",
+        "shape": "circle",
+        "width": 116
+      },
+      {
+        "dash": "none",
+        "height": 116,
+        "mode": "complete",
+        "shape": "flower",
+        "width": 116
+      },
+      {
+        "dash": "none",
+        "height": 116,
+        "mode": "complete",
+        "shape": "apple",
+        "width": 116
+      }
+    ],
+    "options": [
+      "answer-pear",
+      "answer-circle",
+      "answer-flower",
+      "answer-apple"
+    ],
+    "viewport": 1280,
+    "width": 1280,
+    "wrong": "先指缺口方向，再说缺口需要圆边、直边、尖角、叶子还是尾巴，然后排除轮廓相近但边角不对的选项。",
+    "correct": "苹果对，苹果上方缺叶子和圆鼓鼓的边。补缺口要看边、角和缺口方向。"
+  },
+  {
+    "round": 8,
+    "figures": [
+      {
+        "dash": "none",
+        "height": 224,
+        "mode": "missing",
+        "shape": "fish",
+        "width": 224
+      },
+      {
+        "dash": "none",
+        "height": 116,
+        "mode": "complete",
+        "shape": "leaf",
+        "width": 116
+      },
+      {
+        "dash": "none",
+        "height": 116,
+        "mode": "complete",
+        "shape": "fish",
+        "width": 116
+      },
+      {
+        "dash": "none",
+        "height": 116,
+        "mode": "complete",
+        "shape": "pear",
+        "width": 116
+      },
+      {
+        "dash": "none",
+        "height": 116,
+        "mode": "complete",
+        "shape": "star",
+        "width": 116
+      }
+    ],
+    "options": [
+      "answer-leaf",
+      "answer-fish",
+      "answer-pear",
+      "answer-star"
+    ],
+    "viewport": 1280,
+    "width": 1280,
+    "wrong": "先指缺口方向，再说缺口需要圆边、直边、尖角、叶子还是尾巴，然后排除轮廓相近但边角不对的选项。",
+    "correct": "小鱼对，小鱼右边缺三角尾巴。补缺口要看边、角和缺口方向。"
+  }
+]

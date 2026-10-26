@@ -6,6 +6,9 @@ import { ActivityImage } from "./ActivityTokenArt";
 import { evidenceVisible } from "./presentation-state";
 import { RectangleExplorer } from './RectangleExplorer';
 import { VisualComparison } from './VisualComparison';
+import { MathEvidence } from './MathEvidence';
+import { MATH_EVIDENCE_KINDS, type MathEvidence as MathEvidenceData } from '../domain/math-evidence';
+import { MoneyPiece, MoneyCollection } from './MoneyArt';
 
 export function ActivityEvidence({ activity, phase }: { activity: Activity; phase: string }) {
   const dialog = useRef<HTMLDialogElement>(null);
@@ -14,10 +17,13 @@ export function ActivityEvidence({ activity, phase }: { activity: Activity; phas
   const art = activity.illustration;
   const evidence = activity.presentation?.evidence;
   const comparison = evidence?.kind === 'visualComparison';
-  const canEnlarge = comparison || Boolean(art && !evidence);
-  const content = comparison ? <VisualComparison panels={evidence.panels} />
+  const mathModel = evidence && MATH_EVIDENCE_KINDS.has(evidence.kind);
+  const staticMathModel = evidence && ['clockModel','rulerModel','perimeterModel','numberPattern','shapeEquations','placeValueModel'].includes(evidence.kind);
+  const canEnlarge = comparison || mathModel || Boolean(art && !evidence);
+  const content = mathModel ? <MathEvidence evidence={evidence as MathEvidenceData} />
+  : comparison ? <VisualComparison panels={evidence.panels} />
   : evidence?.kind === 'rectangleSearch' ? <RectangleExplorer rows={evidence.rows} columns={evidence.columns} disabled={phase === 'complete'} />
-  : evidence?.kind === 'moneyInventory' ? <div className="money-stock"><div><strong>5元</strong><span>{evidence.fives}张</span></div><div><strong>1元</strong><span>{evidence.ones}枚</span></div></div>
+  : evidence?.kind === 'moneyInventory' ? <div className="math-money-inventory"><div><MoneyCollection values={Array(evidence.fives).fill(5)} /><strong>{evidence.fives} 张</strong></div><div><MoneyCollection values={Array(evidence.ones).fill(1)} /><strong>{evidence.ones} 枚</strong></div></div>
   : evidence?.kind === "quantityStory" ? <div className="quantity-story">
     {evidence.parts.map((part, index) => <div className="quantity-story-step" key={part.label}>
       <span className="evidence-step-label">{part.label}</span>
@@ -27,7 +33,7 @@ export function ActivityEvidence({ activity, phase }: { activity: Activity; phas
     </div>)}
   </div> : evidence?.kind === "shopping" ? <div className="shopping-evidence">
     <div className="shop-object"><ActivityImage image={imageGallery.items.book} /><span>价格 <b>{evidence.cost} 元</b></span></div>
-    <div className="shop-payment"><span>付给店主</span><strong>{evidence.paid} <small>元</small></strong></div>
+    <div className="shop-payment"><span>付给店主</span><MoneyPiece value={evidence.paid} /></div>
     <div className="shop-change"><span>找回</span><strong>?</strong><span>元</span></div>
   </div> : evidence?.kind === "overlapQueue" ? <div className="queue-overlap-evidence">
     <div><span>从左数到小兔</span><strong>{evidence.left} 位</strong><small>这一组里有小兔</small></div>
@@ -39,11 +45,11 @@ export function ActivityEvidence({ activity, phase }: { activity: Activity; phas
   : art ? <ActivityImage image={art} className={`activity-evidence-image${art.style === 'illustration' ? ' is-illustration' : ''}`} /> : null;
   if (!content) return null;
   return <figure className="activity-evidence-board">
-    <div className="evidence-caption"><span>{evidence?.kind === 'moneyInventory' ? ACTIVITY_COPY.moneyStock : evidence && !comparison ? '看看发生了什么' : '先看图，找线索'}</span>{canEnlarge && <button type="button" className="image-enlarge" onClick={() => dialog.current?.showModal()} aria-label="放大题目图片"><Maximize2 size={15} />放大看</button>}</div>
+    <div className="evidence-caption"><span>{evidence?.kind === 'moneyInventory' ? ACTIVITY_COPY.moneyStock : evidence && !comparison && !staticMathModel ? '看看发生了什么' : '先看图，找线索'}</span>{canEnlarge && <button type="button" className="image-enlarge" onClick={() => dialog.current?.showModal()} aria-label="放大题目图片"><Maximize2 size={15} />放大看</button>}</div>
     {content}
-    {canEnlarge && <dialog className={`evidence-dialog${comparison ? ' comparison-dialog' : ''}`} ref={dialog} onClick={e => { if (e.target === e.currentTarget) e.currentTarget.close(); }}>
+    {canEnlarge && <dialog className={`evidence-dialog${comparison ? ' comparison-dialog' : ''}${mathModel || comparison ? ' math-evidence-dialog' : ''}`} ref={dialog} onClick={e => { if (e.target === e.currentTarget) e.currentTarget.close(); }}>
       <button type="button" className="evidence-dialog-close" autoFocus onClick={() => dialog.current?.close()} aria-label="关闭放大图片"><X size={22} /></button>
-      {comparison ? content : art && <ActivityImage image={art} className="enlarged-evidence" />}
+      {mathModel || comparison ? <><p className="math-zoom-note">{ACTIVITY_COPY.imageScrollHint}</p><div className="math-zoom-scroll" role="region" aria-label="放大的题图" tabIndex={0}><div className="math-model-enlarged">{content}</div></div></> : art && <ActivityImage image={art} className="enlarged-evidence" />}
       <p>{activity.prompt}</p>
     </dialog>}
   </figure>;

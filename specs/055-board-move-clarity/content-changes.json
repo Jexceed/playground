@@ -1,0 +1,544 @@
+[
+  {
+    "id": "explore-board-strategy-1",
+    "fields": [
+      "instruction",
+      "presentation"
+    ],
+    "before": {
+      "instruction": "把所有符合条件的图卡选出来，再检查一次。"
+    },
+    "after": {
+      "instruction": "点空格试放一颗，合适就选上。每个位置单独试。",
+      "presentation": {
+        "evidence": {
+          "kind": "boardMove",
+          "columns": 3,
+          "goal": "line3",
+          "cells": [
+            "black",
+            "black",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "candidates": [
+            {
+              "cell": 2,
+              "tokenId": "p2"
+            },
+            {
+              "cell": 3,
+              "tokenId": "p3"
+            },
+            {
+              "cell": 4,
+              "tokenId": "p4"
+            },
+            {
+              "cell": 5,
+              "tokenId": "p5"
+            },
+            {
+              "cell": 6,
+              "tokenId": "p6"
+            },
+            {
+              "cell": 7,
+              "tokenId": "p7"
+            },
+            {
+              "cell": 8,
+              "tokenId": "p8"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "explore-board-strategy-2",
+    "fields": [
+      "instruction",
+      "presentation"
+    ],
+    "before": {
+      "instruction": "把所有符合条件的图卡选出来，再检查一次。"
+    },
+    "after": {
+      "instruction": "点空格试放一颗，合适就选上。每个位置单独试。",
+      "presentation": {
+        "evidence": {
+          "kind": "boardMove",
+          "columns": 3,
+          "goal": "line3",
+          "cells": [
+            null,
+            null,
+            null,
+            "black",
+            "black",
+            null,
+            null,
+            null,
+            null
+          ],
+          "candidates": [
+            {
+              "cell": 0,
+              "tokenId": "p0"
+            },
+            {
+              "cell": 1,
+              "tokenId": "p1"
+            },
+            {
+              "cell": 2,
+              "tokenId": "p2"
+            },
+            {
+              "cell": 5,
+              "tokenId": "p5"
+            },
+            {
+              "cell": 6,
+              "tokenId": "p6"
+            },
+            {
+              "cell": 7,
+              "tokenId": "p7"
+            },
+            {
+              "cell": 8,
+              "tokenId": "p8"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "explore-board-strategy-3",
+    "fields": [
+      "instruction",
+      "presentation"
+    ],
+    "before": {
+      "instruction": "把所有符合条件的图卡选出来，再检查一次。"
+    },
+    "after": {
+      "instruction": "点空格试放一颗，合适就选上。每个位置单独试。",
+      "presentation": {
+        "evidence": {
+          "kind": "boardMove",
+          "columns": 3,
+          "goal": "line3",
+          "cells": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "black",
+            "black",
+            null
+          ],
+          "candidates": [
+            {
+              "cell": 0,
+              "tokenId": "p0"
+            },
+            {
+              "cell": 1,
+              "tokenId": "p1"
+            },
+            {
+              "cell": 2,
+              "tokenId": "p2"
+            },
+            {
+              "cell": 3,
+              "tokenId": "p3"
+            },
+            {
+              "cell": 4,
+              "tokenId": "p4"
+            },
+            {
+              "cell": 5,
+              "tokenId": "p5"
+            },
+            {
+              "cell": 8,
+              "tokenId": "p8"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "explore-board-strategy-4",
+    "fields": [
+      "instruction",
+      "presentation"
+    ],
+    "before": {
+      "instruction": "把所有符合条件的图卡选出来，再检查一次。"
+    },
+    "after": {
+      "instruction": "点空格试放一颗，合适就选上。每个位置单独试。",
+      "presentation": {
+        "evidence": {
+          "kind": "boardMove",
+          "columns": 3,
+          "goal": "line3",
+          "cells": [
+            "white",
+            null,
+            null,
+            null,
+            null,
+            null,
+            "black",
+            "black",
+            null
+          ],
+          "candidates": [
+            {
+              "cell": 1,
+              "tokenId": "p1"
+            },
+            {
+              "cell": 2,
+              "tokenId": "p2"
+            },
+            {
+              "cell": 3,
+              "tokenId": "p3"
+            },
+            {
+              "cell": 4,
+              "tokenId": "p4"
+            },
+            {
+              "cell": 5,
+              "tokenId": "p5"
+            },
+            {
+              "cell": 8,
+              "tokenId": "p8"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "explore-board-strategy-5",
+    "fields": [
+      "instruction",
+      "presentation"
+    ],
+    "before": {
+      "instruction": "把所有符合条件的图卡选出来，再检查一次。"
+    },
+    "after": {
+      "instruction": "点空格试放一颗，合适就选上。每个位置单独试。",
+      "presentation": {
+        "evidence": {
+          "kind": "boardMove",
+          "columns": 3,
+          "goal": "line3",
+          "cells": [
+            "black",
+            null,
+            null,
+            "black",
+            null,
+            null,
+            null,
+            "white",
+            null
+          ],
+          "candidates": [
+            {
+              "cell": 1,
+              "tokenId": "p1"
+            },
+            {
+              "cell": 2,
+              "tokenId": "p2"
+            },
+            {
+              "cell": 4,
+              "tokenId": "p4"
+            },
+            {
+              "cell": 5,
+              "tokenId": "p5"
+            },
+            {
+              "cell": 6,
+              "tokenId": "p6"
+            },
+            {
+              "cell": 8,
+              "tokenId": "p8"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "explore-board-strategy-6",
+    "fields": [
+      "instruction",
+      "presentation"
+    ],
+    "before": {
+      "instruction": "把所有符合条件的图卡选出来，再检查一次。"
+    },
+    "after": {
+      "instruction": "点空格试放一颗，合适就选上。每个位置单独试。",
+      "presentation": {
+        "evidence": {
+          "kind": "boardMove",
+          "columns": 3,
+          "goal": "line3",
+          "cells": [
+            null,
+            "black",
+            null,
+            null,
+            "black",
+            null,
+            null,
+            null,
+            "white"
+          ],
+          "candidates": [
+            {
+              "cell": 0,
+              "tokenId": "p0"
+            },
+            {
+              "cell": 2,
+              "tokenId": "p2"
+            },
+            {
+              "cell": 3,
+              "tokenId": "p3"
+            },
+            {
+              "cell": 5,
+              "tokenId": "p5"
+            },
+            {
+              "cell": 6,
+              "tokenId": "p6"
+            },
+            {
+              "cell": 7,
+              "tokenId": "p7"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "explore-board-strategy-7",
+    "fields": [
+      "instruction",
+      "presentation"
+    ],
+    "before": {
+      "instruction": "把所有符合条件的图卡选出来，再检查一次。"
+    },
+    "after": {
+      "instruction": "点空格试放一颗，合适就选上。每个位置单独试。",
+      "presentation": {
+        "evidence": {
+          "kind": "boardMove",
+          "columns": 4,
+          "goal": "capture",
+          "cells": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            "white",
+            "black",
+            null,
+            null,
+            "black",
+            "white",
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "candidates": [
+            {
+              "cell": 1,
+              "tokenId": "p1"
+            },
+            {
+              "cell": 4,
+              "tokenId": "p4"
+            },
+            {
+              "cell": 11,
+              "tokenId": "p11"
+            },
+            {
+              "cell": 14,
+              "tokenId": "p14"
+            },
+            {
+              "cell": 0,
+              "tokenId": "p0"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "explore-board-strategy-8",
+    "fields": [
+      "instruction",
+      "presentation"
+    ],
+    "before": {
+      "instruction": "把所有符合条件的图卡选出来，再检查一次。"
+    },
+    "after": {
+      "instruction": "点空格试放一颗，合适就选上。每个位置单独试。",
+      "presentation": {
+        "evidence": {
+          "kind": "boardMove",
+          "columns": 4,
+          "goal": "capture",
+          "cells": [
+            "black",
+            "white",
+            "white",
+            null,
+            null,
+            "white",
+            "black",
+            null,
+            null,
+            "black",
+            "white",
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "candidates": [
+            {
+              "cell": 3,
+              "tokenId": "p3"
+            },
+            {
+              "cell": 4,
+              "tokenId": "p4"
+            },
+            {
+              "cell": 11,
+              "tokenId": "p11"
+            },
+            {
+              "cell": 14,
+              "tokenId": "p14"
+            },
+            {
+              "cell": 15,
+              "tokenId": "p15"
+            },
+            {
+              "cell": 7,
+              "tokenId": "p7"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "explore-board-strategy-9",
+    "fields": [
+      "instruction",
+      "presentation"
+    ],
+    "before": {
+      "instruction": "把所有符合条件的图卡选出来，再检查一次。"
+    },
+    "after": {
+      "instruction": "点空格试放一颗，合适就选上。每个位置单独试。",
+      "presentation": {
+        "evidence": {
+          "kind": "boardMove",
+          "columns": 4,
+          "goal": "capture",
+          "cells": [
+            "black",
+            "white",
+            "white",
+            null,
+            "white",
+            "white",
+            "black",
+            null,
+            "white",
+            "black",
+            "white",
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "candidates": [
+            {
+              "cell": 3,
+              "tokenId": "p3"
+            },
+            {
+              "cell": 11,
+              "tokenId": "p11"
+            },
+            {
+              "cell": 12,
+              "tokenId": "p12"
+            },
+            {
+              "cell": 14,
+              "tokenId": "p14"
+            },
+            {
+              "cell": 15,
+              "tokenId": "p15"
+            },
+            {
+              "cell": 7,
+              "tokenId": "p7"
+            }
+          ]
+        }
+      }
+    }
+  }
+]
