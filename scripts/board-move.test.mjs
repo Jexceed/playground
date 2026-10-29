@@ -33,7 +33,7 @@ test('line and capture answers are still the original independent one-stone move
  for(const a of rounds){const m=a.presentation.evidence;let valid;if(m.goal==='line3')valid=m.candidates.filter(c=>lineSets.some(line=>line.every(i=>i===c.cell||m.cells[i]==='black'))).map(c=>c.tokenId);else{const maximum=Math.max(...m.cells.flatMap((c,i)=>c===null?[captureCount(m.cells,i,m.columns)]:[]));valid=m.candidates.filter(c=>captureCount(m.cells,c.cell,m.columns)===maximum).map(c=>c.tokenId);}assert.deepEqual(valid,a.expectedTokenIds,a.id);assert.deepEqual(exploration.authoringSolutions[a.id],{kind:'multiSelect',tokenIds:a.expectedTokenIds});}
 });
 test('only the declared instruction and presentation change the full curriculum',()=>{
- assert.equal(catalog.catalogGames.flatMap(g=>g.rounds).length,1110);
+ assert.equal(restoreBoardMovePresentation(catalog.catalogGames).flatMap(g=>g.rounds).length,1110);
  assert.equal(hash(restoreBoardMovePresentation(catalog.catalogGames)),'ca4bf435c5e8ab141e5908e423af5ac8345789e206ee7e1f4658903dd7b26e88');
  const altered=structuredClone(catalog.catalogGames),a=altered.flatMap(g=>g.rounds).find(a=>a.primaryFamilyId==='L11');a.expectedTokenIds=['p8'];assert.equal(restoreBoardMovePresentation(altered).flatMap(g=>g.rounds).find(x=>x.id===a.id).expectedTokenIds[0],'p8');assert.notEqual(hash(restoreBoardMovePresentation(altered)),'ca4bf435c5e8ab141e5908e423af5ac8345789e206ee7e1f4658903dd7b26e88');
  a.presentation.evidence.cells[0]='white';assert.throws(()=>restoreBoardMovePresentation(altered),/exact reviewed 055/);

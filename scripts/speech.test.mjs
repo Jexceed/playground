@@ -153,6 +153,24 @@ test("same text in different locales never substitutes another language's local 
   } finally { await cleanup(); }
 });
 
+test("English conversation replay cancels the previous line and keeps English in browser fallback", async () => {
+  const browser = createBrowserHarness({ manifest: { entries: [
+    { text: "Good morning!", locale: "en-US", src: "/audio/morning.mp3" },
+  ] } });
+  const { mod, cleanup } = await importSpeechWithBrowser(browser);
+  try {
+    await mod.speak("Good morning!", "en-US");
+    const first = browser.audioInstances.at(-1);
+    assert.equal(first.src, "/audio/morning.mp3");
+    await mod.speak("Can you help me, please?", "en-US");
+    assert.equal(first.paused, true);
+    assert.equal(browser.speechSynthesis.utterances.at(-1).text, "Can you help me, please?");
+    assert.equal(browser.speechSynthesis.utterances.at(-1).lang, "en-US");
+    mod.stopSpeech();
+    assert.ok(browser.speechSynthesis.cancelCalls >= 3);
+  } finally { await cleanup(); }
+});
+
 test("required listening completes only on ended, and cancellation or missing media never count as completion", async()=>{
  const browser=createBrowserHarness({manifest:{entries:[{text:'听取线索',src:'/audio/cue.mp3'}]}});
  const {mod,cleanup}=await importSpeechWithBrowser(browser);

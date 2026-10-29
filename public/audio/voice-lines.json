@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-26T09:00:52.154Z",
+  "generatedAt": "2026-10-29T14:47:32.238Z",
   "recommendedVoice": "warm adult female Mandarin, smiling, preschool teacher, 0.85 speed, crisp consonants",
-  "lineCount": 4287,
+  "lineCount": 4397,
   "lines": [
     {
       "id": "game-title-数一数",
@@ -53327,6 +53327,1198 @@
       "tone": "friendly, clear, playful",
       "contexts": [
         "explore-fine-motor-action/explore-fine-motor-action-3"
+      ]
+    },
+    {
+      "id": "game-title-见面与告别",
+      "kind": "game-title",
+      "text": "见面与告别",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-greetings"
+      ]
+    },
+    {
+      "id": "game-goal-听懂早晨问候和告别-和家长轮流说",
+      "kind": "game-goal",
+      "text": "听懂早晨问候和告别，和家长轮流说。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-greetings"
+      ]
+    },
+    {
+      "id": "parent-先听-指一指-再试着轮流说-可以跟说或用动作帮忙-不用纠结每个音是否完美",
+      "kind": "parent",
+      "text": "先听、指一指，再试着轮流说。可以跟说或用动作帮忙，不用纠结每个音是否完美。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-greetings",
+        "everyday-english-kind-words",
+        "everyday-english-asking"
+      ]
+    },
+    {
+      "id": "prompt-早上起床-孩子想向家长说-早上好-选哪一句-点句子听英语-再点-选好了-看看",
+      "kind": "prompt",
+      "text": "早上起床，孩子想向家长说“早上好”。选哪一句。点句子听英语，再点“选好了，看看”。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-greetings/everyday-english-morning-choose"
+      ]
+    },
+    {
+      "id": "success-这是早晨见面时的问候-说的时候-可以看看对方-挥挥手",
+      "kind": "success",
+      "text": "这是早晨见面时的问候。说的时候，可以看看对方，挥挥手。",
+      "locale": "zh-CN",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "everyday-english-greetings/everyday-english-morning-choose"
+      ]
+    },
+    {
+      "id": "retry-再想想现在是谁在说话-想表达什么-可以点句子再听听",
+      "kind": "retry",
+      "text": "再想想现在是谁在说话，想表达什么。可以点句子再听听。",
+      "locale": "zh-CN",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
+        "everyday-english-greetings/everyday-english-morning-choose",
+        "everyday-english-greetings/everyday-english-morning-talk",
+        "everyday-english-greetings/everyday-english-farewell-choose",
+        "everyday-english-greetings/everyday-english-farewell-talk",
+        "everyday-english-kind-words/everyday-english-thanks-choose",
+        "everyday-english-kind-words/everyday-english-thanks-talk",
+        "everyday-english-kind-words/everyday-english-sorry-choose",
+        "everyday-english-kind-words/everyday-english-sorry-talk",
+        "everyday-english-asking/everyday-english-water-choose",
+        "everyday-english-asking/everyday-english-water-talk",
+        "everyday-english-asking/everyday-english-help-choose",
+        "everyday-english-asking/everyday-english-help-talk"
+      ]
+    },
+    {
+      "id": "parent-从哪里看出是早晨-晚上准备睡觉时-还会用同一句话吗",
+      "kind": "parent",
+      "text": "从哪里看出是早晨？晚上准备睡觉时，还会用同一句话吗？",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-greetings/everyday-english-morning-choose",
+        "everyday-english-greetings/everyday-english-morning-talk"
+      ]
+    },
+    {
+      "id": "parent-不需要先会读英语-可以请家长一起听和说",
+      "kind": "parent",
+      "text": "不需要先会读英语，可以请家长一起听和说。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-greetings/everyday-english-morning-choose",
+        "everyday-english-greetings/everyday-english-morning-talk",
+        "everyday-english-greetings/everyday-english-farewell-choose",
+        "everyday-english-greetings/everyday-english-farewell-talk",
+        "everyday-english-kind-words/everyday-english-thanks-choose",
+        "everyday-english-kind-words/everyday-english-thanks-talk",
+        "everyday-english-kind-words/everyday-english-sorry-choose",
+        "everyday-english-kind-words/everyday-english-sorry-talk",
+        "everyday-english-asking/everyday-english-water-choose",
+        "everyday-english-asking/everyday-english-water-talk",
+        "everyday-english-asking/everyday-english-help-choose",
+        "everyday-english-asking/everyday-english-help-talk"
+      ]
+    },
+    {
+      "id": "hint-现在刚起床-是早晨-孩子想问好-还没有准备告别",
+      "kind": "hint",
+      "text": "现在刚起床，是早晨。孩子想问好，还没有准备告别。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-greetings/everyday-english-morning-choose",
+        "everyday-english-greetings/everyday-english-morning-talk"
+      ]
+    },
+    {
+      "id": "hint-这是早晨见面时的问候-说的时候-可以看看对方-挥挥手",
+      "kind": "hint",
+      "text": "这是早晨见面时的问候。说的时候，可以看看对方，挥挥手。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-greetings/everyday-english-morning-choose",
+        "everyday-english-greetings/everyday-english-morning-talk"
+      ]
+    },
+    {
+      "id": "object-good-night",
+      "kind": "object",
+      "text": "Good night.",
+      "locale": "en-US",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-greetings/everyday-english-morning-choose"
+      ]
+    },
+    {
+      "id": "object-good-morning",
+      "kind": "object",
+      "text": "Good morning.",
+      "locale": "en-US",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-greetings/everyday-english-morning-choose",
+        "everyday-english-greetings/everyday-english-farewell-choose"
+      ]
+    },
+    {
+      "id": "object-goodbye",
+      "kind": "object",
+      "text": "Goodbye.",
+      "locale": "en-US",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-greetings/everyday-english-morning-choose",
+        "everyday-english-greetings/everyday-english-farewell-choose"
+      ]
+    },
+    {
+      "id": "dialogue-good-morning",
+      "kind": "dialogue",
+      "text": "Good morning.",
+      "locale": "en-US",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-greetings/everyday-english-morning-choose",
+        "everyday-english-greetings/everyday-english-morning-choose",
+        "everyday-english-greetings/everyday-english-morning-talk",
+        "everyday-english-greetings/everyday-english-morning-talk"
+      ]
+    },
+    {
+      "id": "dialogue-meaning-早上好",
+      "kind": "dialogue-meaning",
+      "text": "早上好。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-greetings/everyday-english-morning-choose",
+        "everyday-english-greetings/everyday-english-morning-choose",
+        "everyday-english-greetings/everyday-english-morning-talk",
+        "everyday-english-greetings/everyday-english-morning-talk"
+      ]
+    },
+    {
+      "id": "prompt-早上好-和家长换角色说一说-点示范句听一听-再轮流说-需要时可以看图-做动作",
+      "kind": "prompt",
+      "text": "早上好：和家长换角色说一说。点示范句听一听，再轮流说。需要时可以看图、做动作。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-greetings/everyday-english-morning-talk"
+      ]
+    },
+    {
+      "id": "success-这次亲子对话已经记录-下次遇到这样的情境-再试着说一说",
+      "kind": "success",
+      "text": "这次亲子对话已经记录。下次遇到这样的情境，再试着说一说。",
+      "locale": "zh-CN",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "everyday-english-greetings/everyday-english-morning-talk",
+        "everyday-english-greetings/everyday-english-farewell-talk",
+        "everyday-english-kind-words/everyday-english-thanks-talk",
+        "everyday-english-kind-words/everyday-english-sorry-talk",
+        "everyday-english-asking/everyday-english-water-talk",
+        "everyday-english-asking/everyday-english-help-talk"
+      ]
+    },
+    {
+      "id": "instruction-看看窗外的阳光-听一听两个人怎样问好",
+      "kind": "instruction",
+      "text": "看看窗外的阳光，听一听两个人怎样问好。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-greetings/everyday-english-morning-talk"
+      ]
+    },
+    {
+      "id": "instruction-一个人扮孩子-一个人扮家长-挥手说早上好",
+      "kind": "instruction",
+      "text": "一个人扮孩子，一个人扮家长，挥手说早上好。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-greetings/everyday-english-morning-talk"
+      ]
+    },
+    {
+      "id": "instruction-交换角色再说一次-明天起床时-也可以试着用上这句话",
+      "kind": "instruction",
+      "text": "交换角色再说一次。明天起床时，也可以试着用上这句话。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-greetings/everyday-english-morning-talk"
+      ]
+    },
+    {
+      "id": "parent-能用指图-动作或说话表示这句话的意思",
+      "kind": "parent",
+      "text": "能用指图、动作或说话表示这句话的意思",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-greetings/everyday-english-morning-talk",
+        "everyday-english-greetings/everyday-english-farewell-talk",
+        "everyday-english-kind-words/everyday-english-thanks-talk",
+        "everyday-english-kind-words/everyday-english-sorry-talk",
+        "everyday-english-asking/everyday-english-water-talk",
+        "everyday-english-asking/everyday-english-help-talk"
+      ]
+    },
+    {
+      "id": "parent-能尝试跟说或用一句英语回应",
+      "kind": "parent",
+      "text": "能尝试跟说或用一句英语回应",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-greetings/everyday-english-morning-talk",
+        "everyday-english-greetings/everyday-english-farewell-talk",
+        "everyday-english-kind-words/everyday-english-thanks-talk",
+        "everyday-english-kind-words/everyday-english-sorry-talk",
+        "everyday-english-asking/everyday-english-water-talk",
+        "everyday-english-asking/everyday-english-help-talk"
+      ]
+    },
+    {
+      "id": "parent-能等对方说完-再轮到自己说",
+      "kind": "parent",
+      "text": "能等对方说完，再轮到自己说",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-greetings/everyday-english-morning-talk",
+        "everyday-english-greetings/everyday-english-farewell-talk",
+        "everyday-english-kind-words/everyday-english-thanks-talk",
+        "everyday-english-kind-words/everyday-english-sorry-talk",
+        "everyday-english-asking/everyday-english-water-talk",
+        "everyday-english-asking/everyday-english-help-talk"
+      ]
+    },
+    {
+      "id": "parent-屏幕上的早晨图",
+      "kind": "parent",
+      "text": "屏幕上的早晨图",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-greetings/everyday-english-morning-talk"
+      ]
+    },
+    {
+      "id": "prompt-幼儿园放学了-孩子想和老师说-再见-再跟家长回家-选哪一句-点句子听英语-再点-选好了-看看",
+      "kind": "prompt",
+      "text": "幼儿园放学了，孩子想和老师说“再见”，再跟家长回家。选哪一句。点句子听英语，再点“选好了，看看”。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-greetings/everyday-english-farewell-choose"
+      ]
+    },
+    {
+      "id": "success-放学要回家时-可以向老师说再见-再跟着家长走",
+      "kind": "success",
+      "text": "放学要回家时，可以向老师说再见，再跟着家长走。",
+      "locale": "zh-CN",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "everyday-english-greetings/everyday-english-farewell-choose"
+      ]
+    },
+    {
+      "id": "parent-家长来接了-老师还在门口挥手-离开前可以怎样和老师告别",
+      "kind": "parent",
+      "text": "家长来接了，老师还在门口挥手。离开前可以怎样和老师告别？",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-greetings/everyday-english-farewell-choose",
+        "everyday-english-greetings/everyday-english-farewell-talk"
+      ]
+    },
+    {
+      "id": "hint-孩子背好书包-家长来接她了-她正在向教室门口的老师告别",
+      "kind": "hint",
+      "text": "孩子背好书包，家长来接她了。她正在向教室门口的老师告别。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-greetings/everyday-english-farewell-choose",
+        "everyday-english-greetings/everyday-english-farewell-talk"
+      ]
+    },
+    {
+      "id": "hint-放学要回家时-可以向老师说再见-再跟着家长走",
+      "kind": "hint",
+      "text": "放学要回家时，可以向老师说再见，再跟着家长走。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-greetings/everyday-english-farewell-choose",
+        "everyday-english-greetings/everyday-english-farewell-talk"
+      ]
+    },
+    {
+      "id": "object-hello",
+      "kind": "object",
+      "text": "Hello.",
+      "locale": "en-US",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-greetings/everyday-english-farewell-choose"
+      ]
+    },
+    {
+      "id": "dialogue-goodbye",
+      "kind": "dialogue",
+      "text": "Goodbye.",
+      "locale": "en-US",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-greetings/everyday-english-farewell-choose",
+        "everyday-english-greetings/everyday-english-farewell-talk"
+      ]
+    },
+    {
+      "id": "dialogue-meaning-再见",
+      "kind": "dialogue-meaning",
+      "text": "再见。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-greetings/everyday-english-farewell-choose",
+        "everyday-english-greetings/everyday-english-farewell-talk"
+      ]
+    },
+    {
+      "id": "dialogue-see-you-later",
+      "kind": "dialogue",
+      "text": "See you later.",
+      "locale": "en-US",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-greetings/everyday-english-farewell-choose",
+        "everyday-english-greetings/everyday-english-farewell-talk"
+      ]
+    },
+    {
+      "id": "dialogue-meaning-回头见",
+      "kind": "dialogue-meaning",
+      "text": "回头见。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-greetings/everyday-english-farewell-choose",
+        "everyday-english-greetings/everyday-english-farewell-talk"
+      ]
+    },
+    {
+      "id": "prompt-下次见-和家长换角色说一说-点示范句听一听-再轮流说-需要时可以看图-做动作",
+      "kind": "prompt",
+      "text": "下次见：和家长换角色说一说。点示范句听一听，再轮流说。需要时可以看图、做动作。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-greetings/everyday-english-farewell-talk"
+      ]
+    },
+    {
+      "id": "instruction-指一指孩子-家长和教室门口的老师-听听孩子和老师的告别",
+      "kind": "instruction",
+      "text": "指一指孩子、家长和教室门口的老师，听听孩子和老师的告别。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-greetings/everyday-english-farewell-talk"
+      ]
+    },
+    {
+      "id": "instruction-一个人扮放学的孩子-一个人扮老师-孩子挥手告别-老师回应",
+      "kind": "instruction",
+      "text": "一个人扮放学的孩子，一个人扮老师。孩子挥手告别，老师回应。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-greetings/everyday-english-farewell-talk"
+      ]
+    },
+    {
+      "id": "instruction-交换角色再试一次-下次离开幼儿园时-也可以这样和老师说再见",
+      "kind": "instruction",
+      "text": "交换角色再试一次。下次离开幼儿园时，也可以这样和老师说再见。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-greetings/everyday-english-farewell-talk"
+      ]
+    },
+    {
+      "id": "parent-屏幕上的告别图",
+      "kind": "parent",
+      "text": "屏幕上的告别图",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-greetings/everyday-english-farewell-talk"
+      ]
+    },
+    {
+      "id": "game-title-谢谢与抱歉",
+      "kind": "game-title",
+      "text": "谢谢与抱歉",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-kind-words"
+      ]
+    },
+    {
+      "id": "game-goal-看懂谁得到帮助-谁需要道歉-练习礼貌回应",
+      "kind": "game-goal",
+      "text": "看懂谁得到帮助、谁需要道歉，练习礼貌回应。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-kind-words"
+      ]
+    },
+    {
+      "id": "prompt-朋友把掉落的小熊递回来-接过小熊的孩子想说-谢谢-选哪一句-点句子听英语-再点-选好了-看看",
+      "kind": "prompt",
+      "text": "朋友把掉落的小熊递回来。接过小熊的孩子想说“谢谢”。选哪一句。点句子听英语，再点“选好了，看看”。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-kind-words/everyday-english-thanks-choose"
+      ]
+    },
+    {
+      "id": "success-接过小熊的孩子得到了帮助-可以先说谢谢-帮忙的朋友可以回应不客气",
+      "kind": "success",
+      "text": "接过小熊的孩子得到了帮助，可以先说谢谢。帮忙的朋友可以回应不客气。",
+      "locale": "zh-CN",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "everyday-english-kind-words/everyday-english-thanks-choose"
+      ]
+    },
+    {
+      "id": "parent-是谁得到了帮助-为什么先说谢谢的是接过小熊的孩子",
+      "kind": "parent",
+      "text": "是谁得到了帮助？为什么先说谢谢的是接过小熊的孩子？",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-kind-words/everyday-english-thanks-choose",
+        "everyday-english-kind-words/everyday-english-thanks-talk"
+      ]
+    },
+    {
+      "id": "hint-先找接过小熊的孩子-她得到了帮助-想感谢朋友",
+      "kind": "hint",
+      "text": "先找接过小熊的孩子：她得到了帮助，想感谢朋友。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-kind-words/everyday-english-thanks-choose",
+        "everyday-english-kind-words/everyday-english-thanks-talk"
+      ]
+    },
+    {
+      "id": "hint-接过小熊的孩子得到了帮助-可以先说谢谢-帮忙的朋友可以回应不客气",
+      "kind": "hint",
+      "text": "接过小熊的孩子得到了帮助，可以先说谢谢。帮忙的朋友可以回应不客气。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-kind-words/everyday-english-thanks-choose",
+        "everyday-english-kind-words/everyday-english-thanks-talk"
+      ]
+    },
+    {
+      "id": "object-i-m-sorry",
+      "kind": "object",
+      "text": "I'm sorry.",
+      "locale": "en-US",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-kind-words/everyday-english-thanks-choose",
+        "everyday-english-kind-words/everyday-english-sorry-choose"
+      ]
+    },
+    {
+      "id": "object-thank-you",
+      "kind": "object",
+      "text": "Thank you.",
+      "locale": "en-US",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-kind-words/everyday-english-thanks-choose"
+      ]
+    },
+    {
+      "id": "object-you-re-welcome",
+      "kind": "object",
+      "text": "You're welcome.",
+      "locale": "en-US",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-kind-words/everyday-english-thanks-choose",
+        "everyday-english-kind-words/everyday-english-sorry-choose"
+      ]
+    },
+    {
+      "id": "dialogue-thank-you",
+      "kind": "dialogue",
+      "text": "Thank you.",
+      "locale": "en-US",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-kind-words/everyday-english-thanks-choose",
+        "everyday-english-kind-words/everyday-english-thanks-talk"
+      ]
+    },
+    {
+      "id": "dialogue-meaning-谢谢你",
+      "kind": "dialogue-meaning",
+      "text": "谢谢你。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-kind-words/everyday-english-thanks-choose",
+        "everyday-english-kind-words/everyday-english-thanks-talk"
+      ]
+    },
+    {
+      "id": "dialogue-you-re-welcome",
+      "kind": "dialogue",
+      "text": "You're welcome.",
+      "locale": "en-US",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-kind-words/everyday-english-thanks-choose",
+        "everyday-english-kind-words/everyday-english-thanks-talk"
+      ]
+    },
+    {
+      "id": "dialogue-meaning-不客气",
+      "kind": "dialogue-meaning",
+      "text": "不客气。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-kind-words/everyday-english-thanks-choose",
+        "everyday-english-kind-words/everyday-english-thanks-talk"
+      ]
+    },
+    {
+      "id": "prompt-谢谢你帮我-和家长换角色说一说-点示范句听一听-再轮流说-需要时可以看图-做动作",
+      "kind": "prompt",
+      "text": "谢谢你帮我：和家长换角色说一说。点示范句听一听，再轮流说。需要时可以看图、做动作。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-kind-words/everyday-english-thanks-talk"
+      ]
+    },
+    {
+      "id": "instruction-听听得到帮助的孩子和帮忙的朋友各说什么",
+      "kind": "instruction",
+      "text": "听听得到帮助的孩子和帮忙的朋友各说什么。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-kind-words/everyday-english-thanks-talk"
+      ]
+    },
+    {
+      "id": "instruction-一个人帮忙递回玩具-另一个人接过玩具说谢谢-再听朋友回应",
+      "kind": "instruction",
+      "text": "一个人帮忙递回玩具，另一个人接过玩具说谢谢，再听朋友回应。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-kind-words/everyday-english-thanks-talk"
+      ]
+    },
+    {
+      "id": "instruction-交换角色-也可以换成帮忙递书-试着说同样的两句话",
+      "kind": "instruction",
+      "text": "交换角色；也可以换成帮忙递书，试着说同样的两句话。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-kind-words/everyday-english-thanks-talk"
+      ]
+    },
+    {
+      "id": "parent-一个小玩具",
+      "kind": "parent",
+      "text": "一个小玩具",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-kind-words/everyday-english-thanks-talk"
+      ]
+    },
+    {
+      "id": "prompt-孩子不小心碰倒朋友的积木-想先说-对不起-选哪一句-点句子听英语-再点-选好了-看看",
+      "kind": "prompt",
+      "text": "孩子不小心碰倒朋友的积木，想先说“对不起”。选哪一句。点句子听英语，再点“选好了，看看”。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-kind-words/everyday-english-sorry-choose"
+      ]
+    },
+    {
+      "id": "success-碰倒积木的孩子可以先道歉-再问问朋友需不需要帮忙重搭",
+      "kind": "success",
+      "text": "碰倒积木的孩子可以先道歉，再问问朋友需不需要帮忙重搭。",
+      "locale": "zh-CN",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "everyday-english-kind-words/everyday-english-sorry-choose"
+      ]
+    },
+    {
+      "id": "parent-朋友还难过时-可以先听朋友说-不必催着回答没关系-除了道歉-我们还能怎样补救",
+      "kind": "parent",
+      "text": "朋友还难过时，可以先听朋友说，不必催着回答没关系。除了道歉，我们还能怎样补救？",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-kind-words/everyday-english-sorry-choose",
+        "everyday-english-kind-words/everyday-english-sorry-talk"
+      ]
+    },
+    {
+      "id": "hint-是碰倒积木的孩子先说话-她想为刚才的事情道歉",
+      "kind": "hint",
+      "text": "是碰倒积木的孩子先说话。她想为刚才的事情道歉。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-kind-words/everyday-english-sorry-choose",
+        "everyday-english-kind-words/everyday-english-sorry-talk"
+      ]
+    },
+    {
+      "id": "hint-碰倒积木的孩子可以先道歉-再问问朋友需不需要帮忙重搭",
+      "kind": "hint",
+      "text": "碰倒积木的孩子可以先道歉，再问问朋友需不需要帮忙重搭。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-kind-words/everyday-english-sorry-choose",
+        "everyday-english-kind-words/everyday-english-sorry-talk"
+      ]
+    },
+    {
+      "id": "object-that-s-ok",
+      "kind": "object",
+      "text": "That's OK.",
+      "locale": "en-US",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-kind-words/everyday-english-sorry-choose"
+      ]
+    },
+    {
+      "id": "dialogue-i-m-sorry",
+      "kind": "dialogue",
+      "text": "I'm sorry.",
+      "locale": "en-US",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-kind-words/everyday-english-sorry-choose",
+        "everyday-english-kind-words/everyday-english-sorry-talk"
+      ]
+    },
+    {
+      "id": "dialogue-meaning-对不起",
+      "kind": "dialogue-meaning",
+      "text": "对不起。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-kind-words/everyday-english-sorry-choose",
+        "everyday-english-kind-words/everyday-english-sorry-talk"
+      ]
+    },
+    {
+      "id": "dialogue-that-s-ok",
+      "kind": "dialogue",
+      "text": "That's OK.",
+      "locale": "en-US",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-kind-words/everyday-english-sorry-choose",
+        "everyday-english-kind-words/everyday-english-sorry-talk"
+      ]
+    },
+    {
+      "id": "dialogue-meaning-没关系",
+      "kind": "dialogue-meaning",
+      "text": "没关系。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-kind-words/everyday-english-sorry-choose",
+        "everyday-english-kind-words/everyday-english-sorry-talk"
+      ]
+    },
+    {
+      "id": "prompt-不小心碰倒了-和家长换角色说一说-点示范句听一听-再轮流说-需要时可以看图-做动作",
+      "kind": "prompt",
+      "text": "不小心碰倒了：和家长换角色说一说。点示范句听一听，再轮流说。需要时可以看图、做动作。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-kind-words/everyday-english-sorry-talk"
+      ]
+    },
+    {
+      "id": "instruction-听听道歉和回应-先商量好-一起演一次-不小心碰倒积木",
+      "kind": "instruction",
+      "text": "听听道歉和回应。先商量好，一起演一次“不小心碰倒积木”。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-kind-words/everyday-english-sorry-talk"
+      ]
+    },
+    {
+      "id": "instruction-碰倒积木的人道歉-另一人可以照着示范回应-也可以说自己还难过",
+      "kind": "instruction",
+      "text": "碰倒积木的人道歉，另一人可以照着示范回应，也可以说自己还难过。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-kind-words/everyday-english-sorry-talk"
+      ]
+    },
+    {
+      "id": "instruction-交换角色-再一起把积木搭好-想想道歉以后还能做什么",
+      "kind": "instruction",
+      "text": "交换角色，再一起把积木搭好，想想道歉以后还能做什么。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-kind-words/everyday-english-sorry-talk"
+      ]
+    },
+    {
+      "id": "parent-几块积木",
+      "kind": "parent",
+      "text": "几块积木",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-kind-words/everyday-english-sorry-talk"
+      ]
+    },
+    {
+      "id": "game-title-我需要帮助",
+      "kind": "game-title",
+      "text": "我需要帮助",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-asking"
+      ]
+    },
+    {
+      "id": "game-goal-用简短英语说出需要-听懂对方的回应",
+      "kind": "game-goal",
+      "text": "用简短英语说出需要，听懂对方的回应。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-asking"
+      ]
+    },
+    {
+      "id": "prompt-孩子口渴了-想请家长给自己一点水-选哪一句-点句子听英语-再点-选好了-看看",
+      "kind": "prompt",
+      "text": "孩子口渴了，想请家长给自己一点水。选哪一句。点句子听英语，再点“选好了，看看”。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-asking/everyday-english-water-choose"
+      ]
+    },
+    {
+      "id": "success-想喝水时-可以礼貌地说出自己需要水-递水的人再回应-给你",
+      "kind": "success",
+      "text": "想喝水时，可以礼貌地说出自己需要水。递水的人再回应“给你”。",
+      "locale": "zh-CN",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "everyday-english-asking/everyday-english-water-choose"
+      ]
+    },
+    {
+      "id": "parent-哪句话说出了需要什么-如果只伸手-对方一定知道你想要水吗",
+      "kind": "parent",
+      "text": "哪句话说出了需要什么？如果只伸手，对方一定知道你想要水吗？",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-asking/everyday-english-water-choose",
+        "everyday-english-asking/everyday-english-water-talk"
+      ]
+    },
+    {
+      "id": "hint-孩子还没有拿到水-她现在想请求一点水",
+      "kind": "hint",
+      "text": "孩子还没有拿到水。她现在想请求一点水。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-asking/everyday-english-water-choose",
+        "everyday-english-asking/everyday-english-water-talk"
+      ]
+    },
+    {
+      "id": "hint-想喝水时-可以礼貌地说出自己需要水-递水的人再回应-给你",
+      "kind": "hint",
+      "text": "想喝水时，可以礼貌地说出自己需要水。递水的人再回应“给你”。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-asking/everyday-english-water-choose",
+        "everyday-english-asking/everyday-english-water-talk"
+      ]
+    },
+    {
+      "id": "object-no-thank-you",
+      "kind": "object",
+      "text": "No, thank you.",
+      "locale": "en-US",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-asking/everyday-english-water-choose"
+      ]
+    },
+    {
+      "id": "object-here-you-are",
+      "kind": "object",
+      "text": "Here you are.",
+      "locale": "en-US",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-asking/everyday-english-water-choose"
+      ]
+    },
+    {
+      "id": "object-can-i-have-some-water-please",
+      "kind": "object",
+      "text": "Can I have some water, please?",
+      "locale": "en-US",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-asking/everyday-english-water-choose"
+      ]
+    },
+    {
+      "id": "dialogue-can-i-have-some-water-please",
+      "kind": "dialogue",
+      "text": "Can I have some water, please?",
+      "locale": "en-US",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-asking/everyday-english-water-choose",
+        "everyday-english-asking/everyday-english-water-talk"
+      ]
+    },
+    {
+      "id": "dialogue-meaning-请给我一点水-好吗",
+      "kind": "dialogue-meaning",
+      "text": "请给我一点水，好吗？",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-asking/everyday-english-water-choose",
+        "everyday-english-asking/everyday-english-water-talk"
+      ]
+    },
+    {
+      "id": "dialogue-here-you-are",
+      "kind": "dialogue",
+      "text": "Here you are.",
+      "locale": "en-US",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-asking/everyday-english-water-choose",
+        "everyday-english-asking/everyday-english-water-talk"
+      ]
+    },
+    {
+      "id": "dialogue-meaning-给你",
+      "kind": "dialogue-meaning",
+      "text": "给你。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-asking/everyday-english-water-choose",
+        "everyday-english-asking/everyday-english-water-talk"
+      ]
+    },
+    {
+      "id": "prompt-我想喝点水-和家长换角色说一说-点示范句听一听-再轮流说-需要时可以看图-做动作",
+      "kind": "prompt",
+      "text": "我想喝点水：和家长换角色说一说。点示范句听一听，再轮流说。需要时可以看图、做动作。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-asking/everyday-english-water-talk"
+      ]
+    },
+    {
+      "id": "instruction-指着杯子听请求-再听递水的人怎样回应",
+      "kind": "instruction",
+      "text": "指着杯子听请求，再听递水的人怎样回应。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-asking/everyday-english-water-talk"
+      ]
+    },
+    {
+      "id": "instruction-孩子可以先跟着说关键词-再试着说整句-家长回应并递杯子",
+      "kind": "instruction",
+      "text": "孩子可以先跟着说关键词，再试着说整句；家长回应并递杯子。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-asking/everyday-english-water-talk"
+      ]
+    },
+    {
+      "id": "instruction-交换角色-喝水时先停下说话-喝完再谢谢对方",
+      "kind": "instruction",
+      "text": "交换角色。喝水时先停下说话，喝完再谢谢对方。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-asking/everyday-english-water-talk"
+      ]
+    },
+    {
+      "id": "parent-一个杯子",
+      "kind": "parent",
+      "text": "一个杯子",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-asking/everyday-english-water-talk"
+      ]
+    },
+    {
+      "id": "parent-一点饮用水-也可以先假装递水",
+      "kind": "parent",
+      "text": "一点饮用水，也可以先假装递水",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-asking/everyday-english-water-talk"
+      ]
+    },
+    {
+      "id": "prompt-孩子拉不上外套拉链-想请家长帮忙-选哪一句-点句子听英语-再点-选好了-看看",
+      "kind": "prompt",
+      "text": "孩子拉不上外套拉链，想请家长帮忙。选哪一句。点句子听英语，再点“选好了，看看”。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-asking/everyday-english-help-choose"
+      ]
+    },
+    {
+      "id": "success-遇到困难可以开口求助-再指一指需要帮忙的地方-家长愿意帮忙时可以回应-当然可以",
+      "kind": "success",
+      "text": "遇到困难可以开口求助，再指一指需要帮忙的地方。家长愿意帮忙时可以回应“当然可以”。",
+      "locale": "zh-CN",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "everyday-english-asking/everyday-english-help-choose"
+      ]
+    },
+    {
+      "id": "parent-为什么这里要请求帮助-同一句求助还能用在哪件小事上",
+      "kind": "parent",
+      "text": "为什么这里要请求帮助？同一句求助还能用在哪件小事上？",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-asking/everyday-english-help-choose",
+        "everyday-english-asking/everyday-english-help-talk"
+      ]
+    },
+    {
+      "id": "hint-拉链还没有拉好-孩子需要帮助-现在轮到她开口请求",
+      "kind": "hint",
+      "text": "拉链还没有拉好。孩子需要帮助，现在轮到她开口请求。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-asking/everyday-english-help-choose",
+        "everyday-english-asking/everyday-english-help-talk"
+      ]
+    },
+    {
+      "id": "hint-遇到困难可以开口求助-再指一指需要帮忙的地方-家长愿意帮忙时可以回应-当然可以",
+      "kind": "hint",
+      "text": "遇到困难可以开口求助，再指一指需要帮忙的地方。家长愿意帮忙时可以回应“当然可以”。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-asking/everyday-english-help-choose",
+        "everyday-english-asking/everyday-english-help-talk"
+      ]
+    },
+    {
+      "id": "object-i-can-do-it",
+      "kind": "object",
+      "text": "I can do it.",
+      "locale": "en-US",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-asking/everyday-english-help-choose"
+      ]
+    },
+    {
+      "id": "object-of-course",
+      "kind": "object",
+      "text": "Of course.",
+      "locale": "en-US",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-asking/everyday-english-help-choose"
+      ]
+    },
+    {
+      "id": "object-can-you-help-me-please",
+      "kind": "object",
+      "text": "Can you help me, please?",
+      "locale": "en-US",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-asking/everyday-english-help-choose"
+      ]
+    },
+    {
+      "id": "dialogue-can-you-help-me-please",
+      "kind": "dialogue",
+      "text": "Can you help me, please?",
+      "locale": "en-US",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-asking/everyday-english-help-choose",
+        "everyday-english-asking/everyday-english-help-talk"
+      ]
+    },
+    {
+      "id": "dialogue-meaning-请帮帮我-好吗",
+      "kind": "dialogue-meaning",
+      "text": "请帮帮我，好吗？",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-asking/everyday-english-help-choose",
+        "everyday-english-asking/everyday-english-help-talk"
+      ]
+    },
+    {
+      "id": "dialogue-of-course",
+      "kind": "dialogue",
+      "text": "Of course.",
+      "locale": "en-US",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-asking/everyday-english-help-choose",
+        "everyday-english-asking/everyday-english-help-talk"
+      ]
+    },
+    {
+      "id": "dialogue-meaning-当然可以",
+      "kind": "dialogue-meaning",
+      "text": "当然可以。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-asking/everyday-english-help-choose",
+        "everyday-english-asking/everyday-english-help-talk"
+      ]
+    },
+    {
+      "id": "prompt-请帮帮我-和家长换角色说一说-点示范句听一听-再轮流说-需要时可以看图-做动作",
+      "kind": "prompt",
+      "text": "请帮帮我：和家长换角色说一说。点示范句听一听，再轮流说。需要时可以看图、做动作。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-asking/everyday-english-help-talk"
+      ]
+    },
+    {
+      "id": "instruction-找一找孩子需要帮助的地方-逐句听听请求和回应",
+      "kind": "instruction",
+      "text": "找一找孩子需要帮助的地方，逐句听听请求和回应。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-asking/everyday-english-help-talk"
+      ]
+    },
+    {
+      "id": "instruction-一个人指着拉链请求帮忙-另一个人回应-再一起完成",
+      "kind": "instruction",
+      "text": "一个人指着拉链请求帮忙，另一个人回应，再一起完成。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-asking/everyday-english-help-talk"
+      ]
+    },
+    {
+      "id": "instruction-交换角色-换成拿不到书的情境-试试同一句求助",
+      "kind": "instruction",
+      "text": "交换角色。换成拿不到书的情境，试试同一句求助。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-asking/everyday-english-help-talk"
+      ]
+    },
+    {
+      "id": "parent-一件带拉链的外套-也可以指着图演",
+      "kind": "parent",
+      "text": "一件带拉链的外套，也可以指着图演",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "everyday-english-asking/everyday-english-help-talk"
       ]
     },
     {

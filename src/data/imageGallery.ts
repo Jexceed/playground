@@ -14,6 +14,12 @@ export type GalleryImage = {
 export const imageGallery = {
   exploration: explorationImages,
   scenes: {
+    englishDailyMorning: { src: "/images/scenes/english-daily-morning.png", alt: "早晨，窗外太阳升起，扎高马尾、穿粉色背带装的小女孩在早餐桌旁向家长挥手问好。", style: "illustration", width: 1200, height: 675 },
+    englishDailyFarewell: { src: "/images/scenes/english-daily-farewell.png", alt: "放学了，扎高马尾、穿粉色背带装的小女孩背着蓝色书包走向家长，门口的老师也挥手告别。", style: "illustration", width: 1200, height: 675 },
+    englishDailyThanks: { src: "/images/scenes/english-daily-thanks.png", alt: "扎高马尾、穿粉色背带装的小女孩把捡到的泰迪熊递还给蓝裙女孩，蓝裙女孩开心地伸手接过。", style: "illustration", width: 1200, height: 675 },
+    englishDailySorry: { src: "/images/scenes/english-daily-sorry.png", alt: "扎高马尾、穿粉色背带装的小女孩碰倒了蓝裙女孩搭的积木塔，看着散落的积木露出歉意。", style: "illustration", width: 1200, height: 675 },
+    englishDailyWater: { src: "/images/scenes/english-daily-water.png", alt: "扎高马尾、穿粉色背带装的小女孩指向桌上的空杯子向家长请求喝水，家长拿着一壶饮用水准备倒水。", style: "illustration", width: 1200, height: 675 },
+    englishDailyHelp: { src: "/images/scenes/english-daily-help.png", alt: "扎高马尾、穿青绿色外套的小女孩拿着还没拉好的拉链望向家长，敞开的外套里露出粉色背带装，家长蹲下准备帮忙。", style: "illustration", width: 1200, height: 675 },
     ...logicHouseScenes,
     ...orderStoryScenes,
     childBridgeGap: {

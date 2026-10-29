@@ -1,5 +1,17 @@
 # Asset Registry And Taxonomy
 
+## 061 logo girl in everyday English
+
+- All six `english-daily-*.png` runtime scenes now use the girl from `brand/thinking-house-brand-v3.png` as their character reference. They retain the original 1200×675 paths and scene clues. The high ponytail, pink hair tie, cream shirt and pink overalls identify her; the zipper-help scene keeps its teal outer jacket.
+- Edited built-in image_gen originals are saved as `scenes/source/english-daily-*-girl-061-source.png`. The earlier `english-daily-*-source.png` originals are retained. The exact prompts are in [family-girl-061-prompts.json](../public/images/scenes/source/family-girl-061-prompts.json); reference, source and runtime hashes plus Sharp resize details are in [family-girl-061-manifest.json](../public/images/scenes/source/family-girl-061-manifest.json).
+- Gallery descriptions and the Chinese voice script match the new character. The current Edge manifest contains 4397 matching lines with no failures or fallback providers. Seven superseded male-pronoun recordings were moved to `.tmp/family-girl-061-superseded-voice/` rather than shipped; [the recovery record](../specs/061-family-girl-character/verification/superseded-voices.json) preserves paths and hashes.
+
+## 060 everyday English scenes and speech
+
+- Six 1200×675 PNGs at `public/images/scenes/english-daily-{morning,farewell,thanks,sorry,water,help}.png` are registered in `imageGallery.scenes` and used as the single situation illustration for choice and parent dialogue activities. They depict morning greetings, saying goodbye to a teacher, returning a toy, an accidental block-tower knockdown, asking for water, and asking for zipper help.
+- The initial built-in image_gen originals are retained under `scenes/source/english-daily-*-source.png`; 061's edited sources now produce the runtime scenes. Sharp resizes/crops to 1200×675 without adding text. Original prompts and visual checks: [primary scenes](../specs/060-everyday-english/verification/art-prompts-primary.md), [secondary scenes](../specs/060-everyday-english/verification/art-prompts-secondary.md).
+- English option `speechLocale` and `presentation.dialogue` export `en-US` lines for Edge Jenny; Chinese instructions use Xiaoxiao. All lines remain in the shared manifest; sentence playback uses the existing cancellation and local-cache path. No speech recording or pronunciation scoring was introduced.
+
 ## 059 math models and bird departure
 
 - `public/images/items/math-models-059/`: four transparent local image_gen assets for practice notes, coins, and narrow/wide water vessels. Values and labels render in HTML; clock, ruler, partition and equation models use precise authored quantities. Originals, prompts and hashes are in `source/`.

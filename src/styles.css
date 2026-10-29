@@ -3687,6 +3687,30 @@ button:focus-visible {
 
 /* Keep full-sized words and comparison objects inside narrow task surfaces. */
 .activity-actions { flex-wrap:wrap; }
+/* Daily conversations keep one scene and readable spoken phrases. */
+.english-dialogue {margin:10px 0;padding:10px 12px;border:1px solid #dbe4d1;border-radius:12px;background:#f5f8ee;}
+.english-dialogue h3 {margin:0 0 8px;font-size:16px;color:#526d47;}
+.english-dialogue ol {display:grid;gap:8px;margin:0;padding:0;list-style:none;}
+.english-dialogue li {display:grid;grid-template-columns:64px minmax(0,1fr) auto;gap:10px;align-items:center;}
+.dialogue-speaker {font-size:14px;color:#6a795f;overflow-wrap:anywhere;}
+.dialogue-words {min-width:0;}
+.dialogue-words p {margin:0;overflow-wrap:anywhere;}
+.dialogue-english {font-size:19px;font-weight:650;line-height:1.45;color:#354940;}
+.dialogue-meaning {font-size:14px;line-height:1.5;color:#6a795f;}
+.dialogue-listen {display:flex;align-items:center;justify-content:center;gap:5px;min-height:42px;padding:8px 10px;border:1px solid #b9cda9;border-radius:9px;background:#fffef8;color:#526d47;font-size:13px;cursor:pointer;}
+.dialogue-listen svg {flex-shrink:0;}
+.dialogue-listen:hover {background:#e9f2df;}
+.dialogue-listen:focus-visible {outline:3px solid #86a96c;outline-offset:2px;}
+.listening-review {display:inline-flex;align-items:center;gap:6px;}
+.activity-round[data-dialogue] .activity-evidence-image {max-height:240px;}
+.activity-round[data-dialogue] .activity-text-card[lang="en-US"] {font-size:19px;line-height:1.4;overflow-wrap:anywhere;}
+.activity-round[data-dialogue] .activity-status-space {min-height:0;margin-top:8px;}
+@media(max-width:600px) {
+  .english-dialogue {padding:10px;}
+  .english-dialogue li {grid-template-columns:48px minmax(0,1fr) auto;gap:7px;}
+  .dialogue-listen {padding:8px;}
+  .dialogue-listen span {display:none;}
+}
 /* Essential task cues stay readable; navigation and metadata keep the original scale. */
 .activity-question p,.activity-clues li { font-size:var(--task-body-size); }
 .matching-workspace .connection-toolbar p { font-size:16px; }

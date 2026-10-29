@@ -13,7 +13,7 @@ small enough to turn into a Spec Kit feature.
 
 - Observe 6-, 7- and 8-year-old parent-child play and calibrate reading, interaction and reasoning load for the 597 newly authored activities. Technical QA is not age validation.
 - Finish the historical-release migration/backup/ambiguity handling and finer support-history/next-practice guidance still unchecked in specs/029-curriculum-benchmark/tasks.md. Stable legacy identities and historical facts are preserved; 040 corrects enlightenment content and visuals. Do not infer mastery from completion.
-- Keep authoring coverage, original-source review depth and child validation separate. The authored exploration bank now contains 75 groups / 621 activities across 71 families; the original 40 / 489 bank stays in 启蒙.
+- Keep authoring coverage, original-source review depth and child validation separate. Exploration has 78 groups / 633 activities: 71 reference-aligned families / 597 activities, 4 pilot groups / 24 activities, and 060's 3 original everyday-English groups / 12 activities. The original 40 / 489 bank stays in 启蒙; the supplement does not increase source benchmark coverage.
 
 - Complete the exact Cocos Web Mobile manual pass at 667×375, 844×390, and
   932×430. The official Creator 3.8.8 landscape command build plus iPhone 15 Pro
@@ -45,7 +45,9 @@ small enough to turn into a Spec Kit feature.
 
 ## P1
 
-- Resolve the two full-suite failures reproduced at the pre-checkpoint commit `014a56a3` on 2026-10-26: synchronize the Douyin Math Island export with the current source wording (`douyin-math-export.test.mjs`), and compare unique registered image paths in the 045 story-art coverage check (`order-story-completion.test.mjs`, the soil-pot image has two gallery aliases). The current 053–059 checkpoint passes 280/282 tests; these existing failures remain open.
+- Playtest 060's six English situations, now using 061's logo girl, with children and parents: whether pictures make the speaker's intention clear, the pink-overall protagonist and blue-dress friend are distinguishable, children can listen without reading English, and the longer water/help requests need shorter practice steps. Native inspection of all six scenes, enlargement and parent dialogue is complete in [061 acceptance](../specs/061-family-girl-character/verification/acceptance.md). Playback controls were triggered, but human listening confirmation of speaker output/pronunciation remains part of acoustic review below. Calibrate support from observations; adult UI/resource checks do not establish pronunciation or age mastery. Continue the older 059 review separately.
+
+- Resolve the two full-suite failures: synchronize the Douyin Math Island export with the current source wording (`douyin-math-export.test.mjs`), and compare unique registered image paths in the 045 story-art coverage check (`order-story-completion.test.mjs`, the soil-pot image has two gallery aliases). On 2026-10-30 both reproduce with the source/tests at `8fb7e58c` (280/282 passed); the 060/061 candidate passes 295/297 with the same two failures and no additional failures. See [commit validation](../specs/060-everyday-english/verification/commit-validation-2026-10-30.md).
 
 - Observe parent-child play of 058's concrete word cards: whether the fixed tree/child reference conveys high/low, the kitten/table relation conveys up/down, and common picture scale supports length/count comparison. Retain the short spoken words and parent explanation; adult art review does not substitute for this observation.
 

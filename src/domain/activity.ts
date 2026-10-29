@@ -6,7 +6,8 @@ import type { AbilityLevel, GameConfig, WorldId } from "../types";
 import type { AdvancedActivity, AdvancedResponse } from "./advanced-activity";
 import type { MathEvidence } from './math-evidence';
 
-export type ActivityToken = { id: string; label: string; image: GalleryImage; soundSrc?: string; speechText?: string; textOnly?: boolean; moneyValues?: number[]; partitionCounts?: { left: number; right: number }; quantityPicture?: { image: GalleryImage; count: number } };
+export type ActivityToken = { id: string; label: string; image: GalleryImage; soundSrc?: string; speechText?: string; speechLocale?: "zh-CN" | "en-US"; textOnly?: boolean; moneyValues?: number[]; partitionCounts?: { left: number; right: number }; quantityPicture?: { image: GalleryImage; count: number } };
+export type DialogueLine = { speaker: string; english: string; chinese: string };
 export type ComparisonPanel = { kind: 'dots'; label: string; count: number; columns: number }
   | { kind: 'placeValue'; label: string; tens: number; ones: number }
   | { kind: 'image'; label: string; image: GalleryImage };
@@ -66,6 +67,7 @@ export type ActivityBase = {
   sourceRefs: { sourceId: string; locator: string }[];
   illustration?: GalleryImage;
   presentation?: {
+    dialogue?: DialogueLine[];
     readableEvidence?: boolean;
     compactSymbols?: boolean;
     folding?: { folds: ("right" | "down")[]; holeRow: number; holeColumn: number };

@@ -31,7 +31,11 @@ export function activityVoiceLines(sets: ActivitySet[]) {
       if (activity.prerequisites) add("parent", activity.prerequisites, context);
       activity.hints.forEach((text) => add("hint", text, context));
       activity.clues.forEach((text) => add("clue", text, context));
-      activity.tokens.forEach((token) => add("object", token.speechText ?? token.label, context));
+      activity.tokens.forEach((token) => add("object", token.speechText ?? token.label, context, token.speechLocale ?? "zh-CN"));
+      activity.presentation?.dialogue?.forEach((line) => {
+        add("dialogue", line.english, context, "en-US");
+        add("dialogue-meaning", line.chinese, context);
+      });
       if (activity.kind === 'gridPlacement' && activity.presentation?.pyramid)
         activity.cells.forEach((_, index) => add('clue', pyramidMismatch(activity, index), context));
       if(activity.protocol.kind === "memory" && activity.protocol.audioText) add("stimulus",activity.protocol.audioText,context,activity.protocol.audioLocale??"zh-CN");
@@ -41,7 +45,7 @@ export function activityVoiceLines(sets: ActivitySet[]) {
         activity.materials.forEach(text=>add("parent",text,context));
       }
       if (activity.kind === "multiSelect" && activity.example)
-        add("object", activity.example.label, context);
+        add("object", activity.example.speechText ?? activity.example.label, context, activity.example.speechLocale ?? "zh-CN");
       if (
         activity.kind === "orderedPlacement" &&
         activity.evaluation.kind === "constraints"

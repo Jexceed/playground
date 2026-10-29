@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-30",
+  "baselineCommit": "8fb7e58cfcb8419a1a4a6e9b9e51bfac34ebc539",
+  "baseline": {
+    "tests": 282,
+    "pass": 280,
+    "fail": 2,
+    "failures": [
+      "generated catalog preserves the complete Math Island source",
+      "all steps and all options have distinct semantic local art; no correct-only picture cue"
+    ]
+  },
+  "candidate": {
+    "tests": 297,
+    "pass": 295,
+    "fail": 2,
+    "failures": [
+      "generated catalog preserves the complete Math Island source",
+      "all steps and all options have distinct semantic local art; no correct-only picture cue"
+    ]
+  },
+  "build": "passed",
+  "curriculum": {
+    "math": 266,
+    "logic": 445,
+    "graphic": 234,
+    "memory": 81,
+    "language": 66,
+    "life": 30,
+    "totalGames": 118,
+    "totalRounds": 1122,
+    "legacyGames": 40,
+    "legacyRounds": 489,
+    "interactiveGames": 78,
+    "interactiveRounds": 633,
+    "mathTargetMet": true,
+    "logicTargetMet": true,
+    "graphicTargetMet": true,
+    "problemCount": 0,
+    "problems": []
+  },
+  "voiceMedia": {
+    "manifestCount": 4397,
+    "checkedCount": 4397,
+    "problemCount": 0,
+    "problems": [],
+    "minimumHanSeconds": 0.18
+  },
+  "illustrationProblems": [],
+  "additionalFailures": []
+}

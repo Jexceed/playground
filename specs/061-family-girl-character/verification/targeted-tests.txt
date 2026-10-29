@@ -1,0 +1,25 @@
+✔ English token overrides and dialogue use the English local-voice key; existing tokens stay Chinese (1.517458ms)
+✔ example tokens retain their speech language instead of inheriting the Chinese instruction language (0.232959ms)
+✔ model dialogue stays hidden until a choice is complete (0.090333ms)
+✔ parent dialogue follows the play/record switch without turning observation into a quiz (0.065625ms)
+✔ completed conversation choices make room for the model while other response surfaces remain (0.081792ms)
+✔ original everyday English adds three discoverable groups while retaining both existing banks (2.05025ms)
+✔ six independently specified situation meanings each have one accepted English response (0.571792ms)
+✔ each scene uses one registered local 1200×675 illustration shared only with its companion role play (3.472042ms)
+✔ everyday English dialogues and options export English audio separately from Chinese instructions (0.769875ms)
+✔ all six role plays record support observations without claiming an automatic speech score (0.738583ms)
+✔ original row text still resolves the corrected local clip without TTS fallback (69.513292ms)
+✔ missing or failed local audio applies the same row pronunciation to browser fallback (33.792208ms)
+✔ same text in different locales never substitutes another language's local clip (16.930125ms)
+✔ English conversation replay cancels the previous line and keeps English in browser fallback (16.830209ms)
+✔ required listening completes only on ended, and cancellation or missing media never count as completion (13.654833ms)
+✔ new speech requests invalidate stale requests before the manifest finishes loading (14.40625ms)
+✔ stopSpeech immediately pauses local audio and prevents pending speech from starting (20.098625ms)
+ℹ tests 17
+ℹ suites 0
+ℹ pass 17
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 790.872458

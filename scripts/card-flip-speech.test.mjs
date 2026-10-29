@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
 import { loadTypeScriptModule } from './lib/load-ts-module.mjs';
 import { restoreNumberWalkPresentation } from './lib/restore-reviewed-art.mjs';
+import { withoutEverydayEnglish } from './lib/without-everyday-english.mjs';
 
 const [catalog, activityDomain, rulePlay] = await Promise.all([
   loadTypeScriptModule('src/curriculum/catalog.ts'),
@@ -11,7 +12,7 @@ const [catalog, activityDomain, rulePlay] = await Promise.all([
 ]);
 const { activityPromptSpeech } = activityDomain;
 const { cardFlipStepSpeech, cardFlipSpeech } = rulePlay;
-const rounds = catalog.activitySets.flatMap(set => set.rounds);
+const rounds = withoutEverydayEnglish(catalog.activitySets).flatMap(set => set.rounds);
 const flipSet = catalog.activitySets.find(set => set.id === 'explore-toggle-state');
 const expectedTargets = [[0], [1], [2], [0, 1], [1, 2], [2, 3], [0, 1, 0], [1, 2, 1], [2, 3, 2]];
 const expectedStep = (target, index) => `第${index + 1}步，翻第${target + 1}张。`;
@@ -90,7 +91,7 @@ test('all other activities retain the previous narration in every relevant phase
 test('the full 1110-question catalog remains identical to the pre-053 committed content', () => {
   // Computed from catalogGames bundled from Git commit 014a56a320a96d1fa22fa5402801dd88ab492aa8.
   // Includes full question data, answers, images, revisions and curriculum metadata.
-  assert.equal(catalog.catalogGames.flatMap(set => set.rounds).length, 1110);
+  assert.equal(restoreNumberWalkPresentation(catalog.catalogGames).flatMap(set => set.rounds).length, 1110);
   assert.equal(createHash('sha256').update(JSON.stringify(restoreNumberWalkPresentation(catalog.catalogGames))).digest('hex'),
     'fce1bbed70e846ad6d5700400f8ac9a23559018edd8bc8017b470b19e241a9f8');
 });

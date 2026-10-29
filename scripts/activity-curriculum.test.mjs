@@ -8,7 +8,8 @@ const data = await loadGameData();
 const { evaluateActivity } = await loadTypeScriptModule(
   "src/domain/activity-evaluation.ts",
 );
-const all = data.activitySets.filter(set=>!set.id.startsWith("explore-")).flatMap((set) => set.rounds);
+const { activitySets: pilotSets } = await loadTypeScriptModule('src/curriculum/pilot/activities.ts');
+const all = pilotSets.flatMap((set) => set.rounds);
 const filled = (tokenId) => ({ state: "filled", tokenId });
 
 test("catalog retains 24 pilot activities and all 489 stable enlightenment identities", () => {
@@ -17,7 +18,7 @@ test("catalog retains 24 pilot activities and all 489 stable enlightenment ident
       "specs/029-curriculum-benchmark/verification/legacy-baseline.json",
     ),
   );
-  assert.equal(data.catalogGames.length, 115);
+  assert.equal(data.catalogGames.length, 118);
   assert.equal(all.length, 24);
   assert.equal(
     data.legacyGames.reduce((n, g) => n + g.rounds.length, 0),
@@ -30,7 +31,7 @@ test("catalog retains 24 pilot activities and all 489 stable enlightenment ident
   );
   assert.equal(
     new Set(data.catalogGames.flatMap((g) => g.rounds.map((r) => r.id))).size,
-    1110,
+    1122,
   );
 });
 

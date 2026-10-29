@@ -5,12 +5,13 @@ import {
 import { imageGallery } from "../data/imageGallery";
 import { activitySets as pilotSets } from "./pilot/activities";
 import { explorationSets } from "./exploration";
+import { everydayEnglishSets } from "./everyday-english";
 import { worlds } from "./domains";
 import type { CatalogGame } from "../domain/activity";
 
 // The legacy bank stays authoritative until it is deliberately migrated.
 // New activities are independent modules, never copied into GameRound.
-export const activitySets=[...pilotSets,...explorationSets];
+export const activitySets=[...pilotSets,...explorationSets,...everydayEnglishSets];
 export {
   legacyGames,
   worlds,

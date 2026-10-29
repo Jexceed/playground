@@ -1,0 +1,66 @@
+{
+  "feature": "061-family-girl-character",
+  "created": "2026-10-29",
+  "prompts": [
+    {
+      "id": "morning",
+      "tool": "built-in image_gen",
+      "prompt": "Use case: precise-object-edit. Asset type: an evidence-bearing illustration in a young-child and parent learning game. Input image 1 is the EDIT TARGET; input image 2 is an IDENTITY REFERENCE, the current app logo. Edit only the original short-haired boy into the little GIRL depicted in the logo. Preserve the target scene's warm watercolor picture-book style (do not copy the logo's 3D rendering). The girl must have dark brown-black hair, straight softly separated bangs, a high ponytail tied with a pink beaded hair tie, large warm brown eyes, rosy cheeks, and the same friendly young-child face and proportions as the logo. Outfit: cream/off-white long-sleeve top and dusty pink bib overalls with round golden buttons, unless the scene-specific instruction requires an outer jacket. Do not copy any logo, words, letters, brand symbols or puzzle board from the reference. Keep all other people, the environment, objects, scene framing, relative positions, gestures, eyelines, and original narrative exactly as shown unless replacing the child's hair/clothing requires local changes. Full-bleed landscape 16:9, ideally 1200x675, no borders, no collage, no added text/arrows. This is one illustration, not a character sheet. No short-haired boy remains in the edited position.\nScene-specific invariants: The child on the LEFT sits at the breakfast table, looking at and raising her hand to greet the mother on the RIGHT. Preserve both greeting palms, plates and food, and the low rising sun visible through the center window. Replace the orange shirt with the girl's cream top and pink overalls. Keep a natural, cheerful smile. Preserve the mother exactly.",
+      "referenced_image_paths": [
+        "/Users/chiang/Documents/Projects/playground/public/images/scenes/english-daily-morning.png",
+        "/Users/chiang/Documents/Projects/playground/public/images/brand/thinking-house-brand-v3.png"
+      ],
+      "transparent_background": false
+    },
+    {
+      "id": "farewell",
+      "tool": "built-in image_gen",
+      "prompt": "Use case: precise-object-edit. Asset type: an evidence-bearing illustration in a young-child and parent learning game. Input image 1 is the EDIT TARGET; input image 2 is an IDENTITY REFERENCE, the current app logo. Edit only the original short-haired boy into the little GIRL depicted in the logo. Preserve the target scene's warm watercolor picture-book style (do not copy the logo's 3D rendering). The girl must have dark brown-black hair, straight softly separated bangs, a high ponytail tied with a pink beaded hair tie, large warm brown eyes, rosy cheeks, and the same friendly young-child face and proportions as the logo. Outfit: cream/off-white long-sleeve top and dusty pink bib overalls with round golden buttons, unless the scene-specific instruction requires an outer jacket. Do not copy any logo, words, letters, brand symbols or puzzle board from the reference. Keep all other people, the environment, objects, scene framing, relative positions, gestures, eyelines, and original narrative exactly as shown unless replacing the child's hair/clothing requires local changes. Full-bleed landscape 16:9, ideally 1200x675, no borders, no collage, no added text/arrows. This is one illustration, not a character sheet. No short-haired boy remains in the edited position.\nScene-specific invariants: Replace only the central short-haired child wearing the blue bear backpack. She still walks out of the classroom toward the father on the RIGHT, with the teacher standing waving at the doorway on the LEFT. Keep the blue backpack and the child's raised waving hand, pose, shoes, school doorway and all adult roles. Pink overalls and cream top replace orange shirt and blue shorts, with the backpack over them. Show the ponytail clearly. Do not change who is leaving or the pickup situation.",
+      "referenced_image_paths": [
+        "/Users/chiang/Documents/Projects/playground/public/images/scenes/english-daily-farewell.png",
+        "/Users/chiang/Documents/Projects/playground/public/images/brand/thinking-house-brand-v3.png"
+      ],
+      "transparent_background": false
+    },
+    {
+      "id": "thanks",
+      "tool": "built-in image_gen",
+      "prompt": "Use case: precise-object-edit. Asset type: an evidence-bearing illustration in a young-child and parent learning game. Input image 1 is the EDIT TARGET; input image 2 is an IDENTITY REFERENCE, the current app logo. Edit only the original short-haired boy into the little GIRL depicted in the logo. Preserve the target scene's warm watercolor picture-book style (do not copy the logo's 3D rendering). The girl must have dark brown-black hair, straight softly separated bangs, a high ponytail tied with a pink beaded hair tie, large warm brown eyes, rosy cheeks, and the same friendly young-child face and proportions as the logo. Outfit: cream/off-white long-sleeve top and dusty pink bib overalls with round golden buttons, unless the scene-specific instruction requires an outer jacket. Do not copy any logo, words, letters, brand symbols or puzzle board from the reference. Keep all other people, the environment, objects, scene framing, relative positions, gestures, eyelines, and original narrative exactly as shown unless replacing the child's hair/clothing requires local changes. Full-bleed landscape 16:9, ideally 1200x675, no borders, no collage, no added text/arrows. This is one illustration, not a character sheet. No short-haired boy remains in the edited position.\nScene-specific invariants: Replace only the short-haired child on the LEFT, who is returning the teddy bear, with the logo girl in pink overalls. The other girl on the RIGHT keeps her blue dress, brown low ponytail and blue bow. Keep two clearly distinct girls. Preserve the teddy bear held out from left to right and the blue-dress friend's open receiving hands and happy expression. Do not swap giver and receiver.",
+      "referenced_image_paths": [
+        "/Users/chiang/Documents/Projects/playground/public/images/scenes/english-daily-thanks.png",
+        "/Users/chiang/Documents/Projects/playground/public/images/brand/thinking-house-brand-v3.png"
+      ],
+      "transparent_background": false
+    },
+    {
+      "id": "sorry",
+      "tool": "built-in image_gen",
+      "prompt": "Use case: precise-object-edit. Asset type: an evidence-bearing illustration in a young-child and parent learning game. Input image 1 is the EDIT TARGET; input image 2 is an IDENTITY REFERENCE, the current app logo. Edit only the original short-haired boy into the little GIRL depicted in the logo. Preserve the target scene's warm watercolor picture-book style (do not copy the logo's 3D rendering). The girl must have dark brown-black hair, straight softly separated bangs, a high ponytail tied with a pink beaded hair tie, large warm brown eyes, rosy cheeks, and the same friendly young-child face and proportions as the logo. Outfit: cream/off-white long-sleeve top and dusty pink bib overalls with round golden buttons, unless the scene-specific instruction requires an outer jacket. Do not copy any logo, words, letters, brand symbols or puzzle board from the reference. Keep all other people, the environment, objects, scene framing, relative positions, gestures, eyelines, and original narrative exactly as shown unless replacing the child's hair/clothing requires local changes. Full-bleed landscape 16:9, ideally 1200x675, no borders, no collage, no added text/arrows. This is one illustration, not a character sheet. No short-haired boy remains in the edited position.\nScene-specific invariants: Replace only the short-haired child kneeling on the LEFT with the logo girl in pink overalls and cream sleeves. Preserve her apologetic worried expression, reaching hand and kneeling pose. The friend on the RIGHT keeps her blue dress, brown loose hair and blue headband, surprised/sad expression. Keep the already-scattered blocks and the tilted/falling block; do not rebuild the tower. Keep two clearly distinct girls, and the original accidental-knockdown narrative.",
+      "referenced_image_paths": [
+        "/Users/chiang/Documents/Projects/playground/public/images/scenes/english-daily-sorry.png",
+        "/Users/chiang/Documents/Projects/playground/public/images/brand/thinking-house-brand-v3.png"
+      ],
+      "transparent_background": false
+    },
+    {
+      "id": "water",
+      "tool": "built-in image_gen",
+      "prompt": "Use case: precise-object-edit. Asset type: an evidence-bearing illustration in a young-child and parent learning game. Input image 1 is the EDIT TARGET; input image 2 is an IDENTITY REFERENCE, the current app logo. Edit only the original short-haired boy into the little GIRL depicted in the logo. Preserve the target scene's warm watercolor picture-book style (do not copy the logo's 3D rendering). The girl must have dark brown-black hair, straight softly separated bangs, a high ponytail tied with a pink beaded hair tie, large warm brown eyes, rosy cheeks, and the same friendly young-child face and proportions as the logo. Outfit: cream/off-white long-sleeve top and dusty pink bib overalls with round golden buttons, unless the scene-specific instruction requires an outer jacket. Do not copy any logo, words, letters, brand symbols or puzzle board from the reference. Keep all other people, the environment, objects, scene framing, relative positions, gestures, eyelines, and original narrative exactly as shown unless replacing the child's hair/clothing requires local changes. Full-bleed landscape 16:9, ideally 1200x675, no borders, no collage, no added text/arrows. This is one illustration, not a character sheet. No short-haired boy remains in the edited position.\nScene-specific invariants: Replace only the child on the LEFT at the kitchen table. The girl points at the EMPTY clear tumbler on the table while looking up at the mother on the RIGHT. Keep the girl's hands empty; the mother holds the clear pitcher containing drinking water but has not yet poured. Preserve the mother's pose, apron, pitcher and all kitchen details. Cream top and pink overalls replace the orange shirt. Do not fill the glass or put it in the girl's hands.",
+      "referenced_image_paths": [
+        "/Users/chiang/Documents/Projects/playground/public/images/scenes/english-daily-water.png",
+        "/Users/chiang/Documents/Projects/playground/public/images/brand/thinking-house-brand-v3.png"
+      ],
+      "transparent_background": false
+    },
+    {
+      "id": "help",
+      "tool": "built-in image_gen",
+      "prompt": "Use case: precise-object-edit. Asset type: an evidence-bearing illustration in a young-child and parent learning game. Input image 1 is the EDIT TARGET; input image 2 is an IDENTITY REFERENCE, the current app logo. Edit only the original short-haired boy into the little GIRL depicted in the logo. Preserve the target scene's warm watercolor picture-book style (do not copy the logo's 3D rendering). The girl must have dark brown-black hair, straight softly separated bangs, a high ponytail tied with a pink beaded hair tie, large warm brown eyes, rosy cheeks, and the same friendly young-child face and proportions as the logo. Outfit: cream/off-white long-sleeve top and dusty pink bib overalls with round golden buttons, unless the scene-specific instruction requires an outer jacket. Do not copy any logo, words, letters, brand symbols or puzzle board from the reference. Keep all other people, the environment, objects, scene framing, relative positions, gestures, eyelines, and original narrative exactly as shown unless replacing the child's hair/clothing requires local changes. Full-bleed landscape 16:9, ideally 1200x675, no borders, no collage, no added text/arrows. This is one illustration, not a character sheet. No short-haired boy remains in the edited position.\nScene-specific invariants: Replace only the child on the LEFT with the logo girl. Preserve the TEAL ZIP-UP OUTER JACKET, its visibly open/unfastened lower zipper and the exact hand positions showing the child needs help. Under the open teal jacket show a cream top and a little pink bib-overall fabric, not orange. The high ponytail, bangs and pink tie stay clearly recognizable. Keep the mother kneeling on the RIGHT with her hand near the zipper and looking at the child. Do not close the zipper, remove the jacket or obscure the key zipper detail. Keep the entryway, backpack and shoes.",
+      "referenced_image_paths": [
+        "/Users/chiang/Documents/Projects/playground/public/images/scenes/english-daily-help.png",
+        "/Users/chiang/Documents/Projects/playground/public/images/brand/thinking-house-brand-v3.png"
+      ],
+      "transparent_background": false
+    }
+  ]
+}

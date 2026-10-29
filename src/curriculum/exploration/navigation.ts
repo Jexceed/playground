@@ -3,6 +3,7 @@ import type { CatalogGame } from "../../domain/activity";
 export function explorationUnit(game: CatalogGame): string {
   const id = game.kind === "activitySet" ? game.rounds[0]?.primaryFamilyId : undefined;
   if (!id) return "动手热身";
+  if (id.startsWith('original-english-')) return '英语日常说';
   const n = Number(id.slice(1));
   switch (id[0]) {
     case 'N': return n <= 4 ? '数量与分组' : n <= 12 ? '数的关系' : '生活中的数学';

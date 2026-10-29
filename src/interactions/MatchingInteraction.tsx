@@ -68,7 +68,7 @@ export function MatchingInteraction({ activity, response, disabled, onChange }: 
     if (disabled) return;
     if (selected && isLeft(selected) !== isLeft(id)) connect(selected, id);
     else setSelected(selected === id ? null : id);
-    void speak(token(id).speechText ?? token(id).label);
+    void speak(token(id).speechText ?? token(id).label, token(id).speechLocale);
   };
   const hitCard = (x: number, y: number) => {
     for (const [id, element] of cards.current) {

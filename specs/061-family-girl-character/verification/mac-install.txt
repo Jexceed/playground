@@ -1,0 +1,40 @@
+$ pnpm mac:build && pnpm mac:sign && rm -rf "/Applications/小小思考屋.app" && ditto "src-tauri/target/aarch64-apple-darwin/release/bundle/macos/小小思考屋.app" "/Applications/小小思考屋.app" && pnpm mac:refresh-icon
+$ . "$HOME/.cargo/env" 2>/dev/null || true; tauri build --bundles app --target aarch64-apple-darwin
+        Info Looking up installed tauri packages to check mismatched versions...
+     Running beforeBuildCommand `pnpm build`
+$ tsc && vite build
+vite v7.3.6 building client environment for production...
+transforming...
+✓ 1678 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                             1.14 kB │ gzip:   0.62 kB
+dist/assets/ActivitySetGame-DDANgDMU.css   46.18 kB │ gzip:   9.83 kB
+dist/assets/index-CBpuJdKN.css            132.59 kB │ gzip:  25.60 kB
+dist/assets/ActivitySetGame-36OOH05U.js    94.64 kB │ gzip:  29.58 kB
+dist/assets/vendor-D-VIVaRx.js            197.91 kB │ gzip:  62.64 kB
+dist/assets/index-B3uE-iY-.js             560.18 kB │ gzip: 177.66 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 4.40s
+   Compiling thinking-island v0.1.0 (/Users/chiang/Documents/Projects/playground/src-tauri)
+    Finished `release` profile [optimized] target(s) in 48.10s
+       Built application at: /Users/chiang/Documents/Projects/playground/src-tauri/target/aarch64-apple-darwin/release/thinking-island
+    Bundling 小小思考屋.app (/Users/chiang/Documents/Projects/playground/src-tauri/target/aarch64-apple-darwin/release/bundle/macos/小小思考屋.app)
+     Signing with identity "-"
+Signing with identity "-"
+Signing /Users/chiang/Documents/Projects/playground/src-tauri/target/aarch64-apple-darwin/release/bundle/macos/小小思考屋.app/Contents/MacOS/thinking-island
+/Users/chiang/Documents/Projects/playground/src-tauri/target/aarch64-apple-darwin/release/bundle/macos/小小思考屋.app/Contents/MacOS/thinking-island: replacing existing signature
+Signing with identity "-"
+Signing /Users/chiang/Documents/Projects/playground/src-tauri/target/aarch64-apple-darwin/release/bundle/macos/小小思考屋.app
+/Users/chiang/Documents/Projects/playground/src-tauri/target/aarch64-apple-darwin/release/bundle/macos/小小思考屋.app: replacing existing signature
+        Warn skipping app notarization, no APPLE_ID & APPLE_PASSWORD & APPLE_TEAM_ID or APPLE_API_KEY & APPLE_API_ISSUER & APPLE_API_KEY_PATH environment variables found
+    Finished 1 bundle at:
+        /Users/chiang/Documents/Projects/playground/src-tauri/target/aarch64-apple-darwin/release/bundle/macos/小小思考屋.app
+
+$ codesign --force --deep --sign - "src-tauri/target/aarch64-apple-darwin/release/bundle/macos/小小思考屋.app"
+src-tauri/target/aarch64-apple-darwin/release/bundle/macos/小小思考屋.app: replacing existing signature
+$ touch "/Applications/小小思考屋.app" && qlmanage -r cache >/dev/null 2>&1 || true; /System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -f "/Applications/小小思考屋.app" || true

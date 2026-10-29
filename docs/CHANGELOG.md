@@ -1,5 +1,28 @@
 # Changelog
 
+## 2026-10-30
+
+### Validate the everyday-English delivery checkpoint
+
+- Kept the frozen 040–059 curriculum snapshots intact while explicitly separating 060's three new groups, twelve activities and six scene registrations from historical comparisons. Guard tests ensure unknown additions, old-content changes and reused identities cannot disappear from those comparisons.
+- Re-ran the complete regression suite: 295/297 passed. The same two existing failures reproduce with source and tests from `8fb7e58c`; no additional failures remain. Build, curriculum, illustration and voice-media audits pass. See [commit validation](../specs/060-everyday-english/verification/commit-validation-2026-10-30.md).
+
+## 2026-10-29
+
+### Use the logo girl in everyday English scenes
+
+- Replaced the boy in all six everyday-English situations with the current logo's girl: high ponytail, pink hair tie, cream top and pink overalls. The zipper-help scene retains the teal jacket; the blue-dress friend remains distinct. Original gestures and situation clues are preserved.
+- Aligned image descriptions and Chinese pronouns with the girl. Re-exported and checked all 4397 Edge voice lines; seven superseded male-pronoun files were backed up outside the runtime directory. The 12 activity IDs, accepted answers, English dialogue and parent-observation rules are unchanged.
+- Kept original and edited image sources, exact prompts and hashes. See [061 validation](../specs/061-family-girl-character/verification/acceptance.md) for build, curriculum, media and Mac checks.
+
+### Add illustrated everyday English to Language Garden
+
+- Added “英语日常说” under 探索 → 语言花园, with three groups: 见面与告别、谢谢与抱歉、我需要帮助. Six illustrated situations each have a choice activity and a parent-child conversation, covering 11 distinct model expressions. Speaking is recorded through parent observation, without automatic pronunciation scores.
+- Added six local 1200×675 picture-book scenes, their generation originals and prompt records. Each activity shows one situation; English options use text and audio, and completed choices give way to bilingual dialogue examples.
+- Added explicit English pronunciation for option cards and individual dialogue playback. Existing English listening questions retain replay after completion without clearing the answer.
+- Kept the 71 reference-aligned families / 597 activities unchanged. Exploration now contains 78 groups / 633 activities, including 24 pilot and 12 original supplement activities; reference audit totals now distinguish those scopes.
+- See [060 validation](../specs/060-everyday-english/verification/acceptance.md) for build, resource, regression and native installation evidence. Parent-child play calibration remains pending.
+
 ## 2026-10-26
 
 ### Record the 053–059 delivery checkpoint

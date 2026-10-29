@@ -108,7 +108,7 @@ test('topic grouping preserves each entry once and keeps navigation IDs stable',
   const games = getCurriculumSection('exploration').games;
   const flattened = groupExplorationGames(games).flatMap(g => g.games.map(g => g.id));
   assert.deepEqual([...flattened].sort(), games.map(g => g.id).sort());
-  assert.equal(new Set(flattened).size, 75);
+  assert.equal(new Set(flattened).size, 78);
 });
 
 test('every illustrated frame is registered and has a complete local PNG source', () => {

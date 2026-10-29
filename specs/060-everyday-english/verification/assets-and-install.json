@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-29",
+  "installedMatchesBuilt": true,
+  "binaries": [
+    {
+      "path": "/Applications/小小思考屋.app/Contents/MacOS/thinking-island",
+      "sha256": "32820659529314b98babf3689b276eab97a6eb2f9d4c57b0ce118f5156292c4d",
+      "bytes": 753925296
+    },
+    {
+      "path": "src-tauri/target/aarch64-apple-darwin/release/bundle/macos/小小思考屋.app/Contents/MacOS/thinking-island",
+      "sha256": "32820659529314b98babf3689b276eab97a6eb2f9d4c57b0ce118f5156292c4d",
+      "bytes": 753925296
+    }
+  ],
+  "images": [
+    {
+      "path": "public/images/scenes/english-daily-morning.png",
+      "width": 1200,
+      "height": 675,
+      "sha256": "f45cb74959eb9f12296504d9e058c27d2887b4a5c3dcbddf38d3d1bf3dd8ce32"
+    },
+    {
+      "path": "public/images/scenes/english-daily-farewell.png",
+      "width": 1200,
+      "height": 675,
+      "sha256": "370754704a597aa1990f6bc34623b47aade36e8e8a687f1bbbc9c7dc5147cbc5"
+    },
+    {
+      "path": "public/images/scenes/english-daily-thanks.png",
+      "width": 1200,
+      "height": 675,
+      "sha256": "4b0c322366cdc44cea393ad766fb9c62d6b66240cae501e6ddb72af1d517d1f6"
+    },
+    {
+      "path": "public/images/scenes/english-daily-sorry.png",
+      "width": 1200,
+      "height": 675,
+      "sha256": "3904043b9a8f45d29b546eaf01e6f84c67217ede83a656d051d51e3dd504d922"
+    },
+    {
+      "path": "public/images/scenes/english-daily-water.png",
+      "width": 1200,
+      "height": 675,
+      "sha256": "3c1a523dd6160651e930e2a1174614a2230323636ca2331a477b16501154b046"
+    },
+    {
+      "path": "public/images/scenes/english-daily-help.png",
+      "width": 1200,
+      "height": 675,
+      "sha256": "dc42d9bb40e5d70025b98e1c1bf376c970b7c3434cfaafd86eedee772cf6e79e"
+    }
+  ],
+  "voice": {
+    "lines": 4397,
+    "entries": 4397,
+    "failures": [],
+    "mismatches": 0,
+    "provider": "edge-tts Python package",
+    "voicesByLocale": {
+      "zh-CN": "zh-CN-XiaoxiaoNeural",
+      "en-US": "en-US-JennyNeural"
+    }
+  },
+  "nativeLaunch": "blocked: macOS locked; attempted final launch; user asked to unlock"
+}

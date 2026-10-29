@@ -20,6 +20,6 @@ export function ActivityTokenArt({ token, label = false }: { token?: ActivityTok
   if (token.partitionCounts) return <PartitionCard {...token.partitionCounts} />;
   if (token.moneyValues) return <MoneyCollection values={token.moneyValues} />;
   if (token.quantityPicture) return <div className="memory-quantity-picture"><ActivityImage image={token.quantityPicture.image} /><div aria-label={`${token.quantityPicture.count}个圆点`}>{Array.from({ length: token.quantityPicture.count }, (_, i) => <ActivityImage image={imageGallery.items.patternBlueDisc} className="quantity-dot" decorative key={i} />)}</div></div>;
-  if (token.textOnly) return <span className={`activity-text-card${Array.from(token.label).length > 5 ? ' is-phrase' : ''}`}>{token.label}</span>;
+  if (token.textOnly) return <span lang={token.speechLocale} className={`activity-text-card${Array.from(token.label).length > 5 ? ' is-phrase' : ''}`}>{token.label}</span>;
   return <><ActivityImage image={token.image} className={`activity-token-image${token.image.style === 'illustration' ? ' is-illustration' : ''}`} decorative={label} />{label && <span className="token-label">{token.label}</span>}</>;
 }

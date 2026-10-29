@@ -4,6 +4,7 @@ import { readFileSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { loadGameData } from './lib/load-game-data.mjs';
 import { loadTypeScriptModule } from './lib/load-ts-module.mjs';
+import { withoutEverydayEnglish } from './lib/without-everyday-english.mjs';
 const [{games,activitySets},state,{enlightenmentBridgeModels}] = await Promise.all([
   loadGameData(),loadTypeScriptModule('src/domain/enlightenment.ts'),loadTypeScriptModule('src/data/enlightenmentBridges.ts'),
 ]);
@@ -13,7 +14,7 @@ const group=id=>games.find(game=>game.id===id);
 const hash=value=>createHash('sha256').update(JSON.stringify(value)).digest('hex');
 
 test('all stable enlightenment and exploration identities survive the authorized review corrections',()=>{
-  for(const [current,original] of [[games,reviewBaseline.games],[activitySets,reviewBaseline.activitySets]])
+  for(const [current,original] of [[games,reviewBaseline.games],[withoutEverydayEnglish(activitySets),reviewBaseline.activitySets]])
     assert.deepEqual(current.map(g=>[g.id,g.rounds.map(r=>r.id)]),original.map(g=>[g.id,g.rounds.map(r=>r.id)]));
   // Feature 043 intentionally revises selected exploration activities. Its
   // explicit field allowlist and deep equality for every other activity live

@@ -35,6 +35,8 @@ import { ImageViewer } from '../interactions/ImageViewer';
 import { CardFlipBoard, RuleMachineBoard } from '../interactions/RulePlayBoards';
 import { RULE_PLAY_COPY } from '../domain/rule-play';
 import { activityImageSources } from '../domain/activity-assets';
+import { EnglishDialogue } from '../interactions/EnglishDialogue';
+import { dialogueVisible, responsesVisible } from '../interactions/presentation-state';
 
 type Props = {
   game: ActivitySet;
@@ -290,7 +292,7 @@ function ActivityRound({
   function chooseToken(token: ActivityToken) {
     if (!canEdit) return;
     playTone("tap");
-    if (token.soundSrc) void playRequiredAudio({src:token.soundSrc}); else void speak(token.speechText ?? token.label);
+    if (token.soundSrc) void playRequiredAudio({src:token.soundSrc}); else void speak(token.speechText ?? token.label, token.speechLocale);
     if (activity.kind === "multiSelect")
       dispatch({ type: "toggle", tokenId: token.id });
     else setSelectedToken(token.id);
@@ -523,7 +525,7 @@ function ActivityRound({
     state.hints > 0
       ? activity.hints[Math.min(state.hints - 1, activity.hints.length - 1)]
       : null;
-  const showResponses = state.phase === "respond" || state.phase === "complete";
+  const showResponses = responsesVisible(activity, state.phase);
   const pictureChoices = pictureTarget?.source === 'board' ? slotEntries.flatMap(slot => {
     const value = responseValue(state.response, slot.id);
     const token = tokenById.get(slot.fixedTokenId ?? (value.state === 'filled' ? value.tokenId : ''));
@@ -554,6 +556,7 @@ function ActivityRound({
       data-paired-grid={activity.kind === 'gridPlacement' && activity.cells.length > 9 && Boolean(activity.illustration) && !isMemory || undefined}
       data-wide-reference={Boolean(activity.illustration && (activity.illustration.width ?? 1) / (activity.illustration.height ?? 1) > 2.5 && !activity.presentation?.folding) || undefined}
       data-parent-mode={activity.kind === 'parentObservation' ? parentMode : undefined}
+      data-dialogue={Boolean(activity.presentation?.dialogue?.length) || undefined}
       data-illustrated={activity.tokens.some(t => t.image.style === "illustration") || undefined}
     >
       <div className="activity-question">
@@ -563,6 +566,7 @@ function ActivityRound({
 
       {ruleMachine && <RuleMachineBoard model={ruleMachine} clues={activity.clues} phase={state.phase} disabled={!assetsReady} onStart={() => dispatch({ type: 'start' })} />}
       {!ruleMachine && !cardFlip && !numberWalk && !boardMove && !storyTokenIds && (activity.kind !== 'parentObservation' || parentMode === 'play') && <ActivityEvidence activity={activity} phase={state.phase} />}
+      {activity.kind === 'parentObservation' && dialogueVisible(activity, state.phase, parentMode) && <EnglishDialogue lines={activity.presentation!.dialogue!} />}
       {!ruleMachine && !cardFlip && !numberWalk && !boardMove && activity.kind !== 'network' && activity.clues.length > 0 && (
         <ol className="activity-clues">
           {activity.clues.map((clue, index) => (
@@ -712,6 +716,7 @@ function ActivityRound({
           )}
         </>
       )}
+      {activity.kind !== 'parentObservation' && dialogueVisible(activity, state.phase, parentMode) && <EnglishDialogue lines={activity.presentation!.dialogue!} />}
       {hasStatus && <div className="activity-status-space" data-testid="activity-status">
         {statusText && <div className={`activity-feedback ${showHint ? 'is-hint' : state.result?.status === 'correct' ? 'is-correct' : ''}`} role="status" aria-live="polite">
           {showHint ? <Lightbulb size={18}/> : state.result?.status === 'correct' ? <Check size={20}/> : null}
@@ -722,10 +727,18 @@ function ActivityRound({
       <div className="activity-actions">
         {state.phase === "complete" ? (
           <>
+            {activity.protocol.kind === "memory" && activity.protocol.audioLocale === "en-US" && activity.protocol.audioText && <button
+              type="button"
+              className="activity-secondary listening-review"
+              onClick={() => {
+                if (activity.protocol.kind === "memory" && activity.protocol.audioText)
+                  void speak(activity.protocol.audioText, activity.protocol.audioLocale);
+              }}
+            ><Volume2 size={18} />再听英语</button>}
             <button
               type="button"
               className="activity-secondary"
-              onClick={() => { dispatch({ type: "again" }); setParentMode('play'); setMessageMode('result'); }}
+              onClick={() => { stopSpeech(); dispatch({ type: "again" }); setParentMode('play'); setMessageMode('result'); }}
             >
               再试一次
             </button>

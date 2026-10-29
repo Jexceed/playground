@@ -24,7 +24,7 @@ export function AdvancedInteraction({ activity, response, disabled, onChange, pa
         return <div className={`activity-choice-grid single-choice ${activity.tokens.some(t => (t.image.width ?? 1) / (t.image.height ?? 1) > 1.4) ? "has-wide-options" : ""}`} style={{ "--choice-columns": Math.min(4, activity.tokens.length) } as CSSProperties} aria-label="选择一个答案">{activity.tokens.map(t => <button type="button" className={`activity-token ${response.tokenId === t.id ? 'is-selected' : ''}`} key={t.id} aria-pressed={response.tokenId === t.id} aria-label={t.label} disabled={disabled} onClick={() => { onChange({ kind: "singleChoice", tokenId: t.id }); if (t.soundSrc)
             void playRequiredAudio({ src: t.soundSrc });
         else
-            void speak(t.speechText ?? t.label); }}>{activity.presentation?.evidence?.kind === 'ruleMachine' && <CountingDiscs count={Number(t.label)} />}{/^\d+$/.test(t.label) ? <span className="numeric-answer">{t.label}</span> : tokenArt(t.id)}</button>)}</div>;
+            void speak(t.speechText ?? t.label, t.speechLocale); }}>{activity.presentation?.evidence?.kind === 'ruleMachine' && <CountingDiscs count={Number(t.label)} />}{/^\d+$/.test(t.label) ? <span className="numeric-answer">{t.label}</span> : tokenArt(t.id)}</button>)}</div>;
     if (activity.kind === "matching" && response.kind === "matching")
         return <MatchingInteraction activity={activity} response={response} disabled={disabled} onChange={onChange} />;
     if (activity.kind === "network" && response.kind === "network")

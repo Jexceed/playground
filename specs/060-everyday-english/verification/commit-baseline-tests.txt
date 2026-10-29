@@ -1,0 +1,435 @@
+✔ catalog retains 24 pilot activities and all 489 stable enlightenment identities (1.394ms)
+✔ all pilot definitions have solutions and accept every enumerated legal result (1.175542ms)
+✔ selection answers match independently stated color/shape conditions for every subset (0.731541ms)
+✔ ordering matches independent authored outcomes for all permutations (0.467833ms)
+✔ memory uses the visible cue sequence/positions; only the final task reverses recall (0.110208ms)
+✔ multi-select compares sets, rejects duplicate/unknown tokens, and permits a deliberately empty answer (0.629083ms)
+✔ order constraints accept all valid orders rather than one stored sequence (0.224625ms)
+✔ placement moves a once-only token, replaces occupied slots, and supports reusable tokens (0.512125ms)
+✔ grid constraints distinguish an unfilled cell from a legitimate blank card and accept alternate Latin squares (0.240917ms)
+✔ session retains undo history; only complete submitted answers count as attempts (0.622125ms)
+✔ memory hides before retention, replays record support, and background interruption restarts safely (0.1435ms)
+✔ batched actions retain individual evidence instead of losing intermediate attempts (0.148167ms)
+✔ evidence events are idempotent and do not alter legacy records (0.916333ms)
+✔ future and malformed data are not overwritten (0.241625ms)
+✔ stable location uses IDs and leaves the old location untouched (0.541292ms)
+✔ completion display merges evidence without converting old game-level completion into rounds (0.199583ms)
+✔ quantity sprites keep every authored centre and diameter without mutating the model (4.031709ms)
+✔ holes, overlapping geometry and large shape comparisons never become quantity chips (0.120833ms)
+✔ clock hands keep exact authored endpoints, and reference glyphs fit inside their cells (28.776667ms)
+✔ facing artwork keeps the original ball and direction arrow (0.917709ms)
+✔ art styles cannot recolor the shared primary, secondary or tool buttons (5.553208ms)
+✔ every new cutout is registered, source-backed and has a persisted generation prompt (45.432291ms)
+✔ historical normalization rejects unreviewed artwork and never rewrites an answer (607.623167ms)
+✔ all 12 subtraction scenes conserve birds and use only the authored known quantities (1.362667ms)
+✔ nine exact board models preserve every original stone and candidate (0.993833ms)
+✔ line and capture answers are still the original independent one-stone moves (0.317041ms)
+✔ only the declared instruction and presentation change the full curriculum (219.535708ms)
+✔ selection history, retry, clear and completion retain original evaluation (4.870792ms)
+✔ local narration explains empty circles, one trial stone and independent selected positions (7.123916ms)
+✔ real initial board has no centre numbers, only original stones and empty trial targets (1780.152625ms)
+✔ multiple selected positions never become multiple added black pieces, including completed boards (14.542792ms)
+✔ the original eight rounds keep identities, answers, option order and all unrelated curriculum (459.194291ms)
+✔ measuring accepts either bank order and rejects every other pair (0.147292ms)
+✔ each round accepts all and only its geometrically valid physical assignments (4.712208ms)
+✔ identical length boards are distinct; moving and replacing return physical pieces (0.311291ms)
+✔ failure distinguishes empty gaps and exact remaining shortfall (0.159ms)
+✔ wood and water use one unit and short pieces keep the visible gap (0.124208ms)
+✔ all spoken interaction feedback and material names have local voice lines (11.381625ms)
+✔ fails with an actionable message when dist is missing (53.376792ms)
+✔ generates a NAS static package from dist without importing game logic (78.41375ms)
+✔ all nine flip instructions speak every authored operation in order, including repeated cards (1.039ms)
+✔ round three starts immediately with the requested third card rather than generic directions (0.162916ms)
+✔ voice export contains the exact main narration and each individual step for all nine rounds (2.748834ms)
+✔ structured steps still drive narration and exported button audio without duplicated clue text (0.239791ms)
+✔ all other activities retain the previous narration in every relevant phase (2.746917ms)
+✔ the full 1110-question catalog remains identical to the pre-053 committed content (66.415875ms)
+✔ 047 edits only declared wording fields, preserving all identities, choices, answers and other courses (470.773875ms)
+✔ classification uses groups throughout speech and labels without changing the two-condition rounds (0.321167ms)
+✔ life bridge evidence is a concrete failed state, distinct from the successful crossing (0.273209ms)
+✔ concept judgments never repeat animals or written badges, while actual evidence choices keep their scene crops (0.345ms)
+✔ matching accepts either starting side and arbitrary wrong pairs without consulting an answer (0.731708ms)
+✔ reconnecting frees both occupied endpoints in a single undoable operation (0.336041ms)
+✔ disconnecting affects only that connection; repeating the same connection is a no-op (0.086458ms)
+✔ every authored matching exercise remains one-to-one and playable through the editing contract (0.796209ms)
+✔ identical shape cards can swap partners, while wrong shapes and repeated endpoints are rejected (0.25175ms)
+✔ bridge editing cycles within fixed and max values without losing other bridges (0.123ms)
+✔ route editing rejects jumps, closed roads and forbidden repeats, while preserving parallel edges (0.138959ms)
+✔ every authored route and bridge answer is still reachable through direct graph controls (0.570041ms)
+✔ parallel lanes stay visibly separated, reverse travel stays on that lane, and arrows clear the controls (0.478209ms)
+✔ redrawing keeps all 1110 questions and this group exactly unchanged (55.682083ms)
+✔ all ten full contours are closed, distinct and safely inside their canvas (0.200833ms)
+✔ each authored gap removes exactly one continuous interval from the same source contour (0.211542ms)
+✔ apple top and fish tail are actually missing rather than merely dashed (0.06175ms)
+✔ all answer shapes share these same contours and unsupported figures remain outside this renderer (0.340833ms)
+✔ the real figure renders open stems and full options without dashed strokes or paint-over masks (66.900333ms)
+✔ the actual game uses one new stem and four new options in all eight rounds (2095.923833ms)
+✔ 启蒙 and 探索 partition the complete catalog without duplicating or changing old questions (0.8085ms)
+✔ both old locations seed their own sections without overwriting storage (0.309542ms)
+✔ switching sections and restarting preserves two independent stable positions (0.203125ms)
+✔ a saved question ID resolves regardless of a stale index and cannot cross section boundaries (0.053584ms)
+✔ future, corrupt and unavailable navigation storage is preserved with usable defaults (0.146167ms)
+✔ each group keeps its own last question across switching and a fresh read (0.405208ms)
+✔ explicit reset changes only the selected group's remembered question (0.551ms)
+✔ group resolution follows the stable question ID and stays inside the selected group (0.132792ms)
+✔ schema 1 migrates known section and legacy group positions without rewriting on read (0.472375ms)
+✔ invalid schema-2 maps are preserved and cannot overwrite other navigation history (0.758875ms)
+✔ removed questions or groups do not discard the other groups' saved positions (0.5245ms)
+✔ review corrections preserve every enlightenment identity and correct answer (21.78525ms)
+✔ matrix examples and all answer options render both constituent pictures (13.664792ms)
+✔ two-condition sorter distractors each violate just one different condition (0.242542ms)
+✔ rotation sequences independently follow their direction without a contradictory backdrop (0.112709ms)
+✔ sorting tasks expose a sorting goal and the failed plan shows the mixed state (0.690417ms)
+✔ replacement distractors remain illustrated, related steps without the reviewed absurd options (0.205833ms)
+✔ the bridge repair states the model, destination, usable material, and visible target (0.084084ms)
+✔ E07 spoken square is square in every candidate, with exactly one complete quantity/position match (0.960333ms)
+✔ L09 states the white/yellow reverse face before operations and both colors toggle exactly (0.288625ms)
+✔ L11 teaches all capture directions before play and includes diagonal-only optimal moves (0.414417ms)
+✔ G16 front/right-side silhouettes and arrows agree, including asymmetric row order (0.278125ms)
+✔ review baseline remains the pre-edit d8dcbf2c snapshot (2.0305ms)
+✔ games: only the explicit reviewed rounds and fields may change; all other content stays equal (5.010625ms)
+✔ activitySets: only the explicit reviewed rounds and fields may change; all other content stays equal (58.868667ms)
+✔ exactly eighteen semantic revisions increase while answer contracts remain intact (1.5435ms)
+✔ new revision records never delete or copy the old revision completion evidence (67.067959ms)
+✔ original planting atlas and its source retain their pre-edit SHA-256 bytes (2.084125ms)
+✔ release validator accepts a matching semantic version tag (37.696667ms)
+✔ release validator rejects a tag that does not match source metadata (33.412625ms)
+✔ release validator rejects malformed release tags (38.248125ms)
+✔ release validator rejects inconsistent source versions (41.290042ms)
+✔ desktop release supports tag pushes and manual existing-tag runs (0.815166ms)
+✔ desktop release validates before a two-platform native matrix (0.463208ms)
+✔ desktop release remains draft until every platform asset is verified (0.222125ms)
+✔ local build scripts target only the requested desktop architectures (0.203917ms)
+✔ release assets identify product, version, OS, and architecture (0.147166ms)
+✔ release notes explain supported computers and test-signing warnings (0.161125ms)
+✔ release retries reuse drafts but reject completed releases (0.264542ms)
+✔ release evidence records the validated tag, revision, checks, and signing status (0.093292ms)
+✔ Douyin build template preserves the Cocos 3.8.8 boot contract (2.855791ms)
+✔ sidebar lifecycle is registered before the Cocos boot starts (0.928542ms)
+✖ generated catalog preserves the complete Math Island source (732.714416ms)
+✔ content digest is deterministic across non-writing exports (831.954458ms)
+✔ export contract records the approved application scope (4.2145ms)
+✔ Cocos metadata uses real importers and stable scene/script UUIDs (7.078583ms)
+✔ all exported rounds use supported visual surfaces and valid answers (10.246458ms)
+✔ every round voice and scene reference exists in the generated package (100.687709ms)
+✔ clock challenges cover whole hours, half hours, and day-period conversion (3.192958ms)
+✔ every game and round preserves a useful parent conversation prompt (5.665583ms)
+✔ child-facing runtime contains no ad, payment, countdown, or score pressure (7.3175ms)
+✔ missing, corrupt, and unknown progress safely become empty (0.757ms)
+✔ valid progress is deduplicated and out-of-scope IDs are removed (0.204333ms)
+✔ legacy collection strings cannot leak into growth tags (0.06775ms)
+✔ completion mutations retain unique IDs and tags (0.10525ms)
+✔ drinking answers stay exact through the authorized 045 story-surface completion (7.935041ms)
+✔ unanswered and wrong states keep the only blank and never expose its answer picture (0.273ms)
+✔ success fills the real blank with the correct distinct action, preserving the sequence (0.137333ms)
+✔ registered scenes have different initial facts and exact scene dimensions (2.391167ms)
+✔ all four action images are local, distinct readable PNGs with retained generation source (3.426792ms)
+✔ every water-task option is illustrated equally, including both empty-cup distractors (1.016083ms)
+✔ the reported completed bridge round 2 advances to round 3 (0.4865ms)
+✔ every non-final enlightenment round advances in order regardless of history (0.4515ms)
+✔ final rounds return the first missing question without inventing completions (1.1065ms)
+✔ filling the last gap in the middle still allows replaying subsequent questions (0.068708ms)
+✔ a one-question group reaches completion only when its question is complete (0.056292ms)
+✔ next group follows the full section/world catalog and stops at each world end (0.24225ms)
+✔ repeated question/group completion preserves historical evidence and deduplicates (0.221167ms)
+✔ all stable enlightenment and exploration identities survive the authorized review corrections (1.742791ms)
+✔ answer positions stay balanced without long runs or a repeating group-wide cycle (0.791417ms)
+✔ reordering preserves each drawn option, semantic answer and display letter (0.70775ms)
+✔ quantity pictures independently agree with addition, subtraction, sharing and grouping (0.230667ms)
+✔ a timed observation cannot silently start on navigation and interruption reopens readiness (0.102291ms)
+✔ jumping to the last round does not invent earlier completion or ability evidence (0.07925ms)
+✔ memory options have exactly one answer supported by the visible sequence (0.194166ms)
+✔ missing and extra picture cards match independent multiset differences (0.127375ms)
+✔ corrected number pairs have a visible repeated rule and no nonexistent color cue (0.074042ms)
+✔ bridge plans span every supported gap, not only enough total wood (0.15675ms)
+✔ story corrections specify needs and do not confuse game rules with crossing a road (0.176917ms)
+✔ layer cards expose the exact aligned positions and their opaque stacking order (0.188917ms)
+✔ code-table queries are not always the first example and maps independently determine the answer (0.113917ms)
+✔ counting evidence is not always the middle group and numeric distractors stay nearby (0.1915ms)
+✔ all 71 adopted families have their required stage/variant counts and accepted authored answers (2.85175ms)
+✔ independent graph search and exact cover alternatives satisfy every route, bridge and construction activity (7.551708ms)
+✔ bridge degree counts cannot substitute for global connectivity or crossing constraints (0.22ms)
+✔ routes distinguish parallel edges, reject disconnected jumps and separate legal from shortest (0.089583ms)
+✔ construction accepts rotated tilings and rejects overlap, wrong inventory and out-of-bounds placement (0.142625ms)
+✔ parent observations record participation and support without inventing a correct attempt (0.76325ms)
+✔ finite inventory prevents overdrawing, but allows replacement and undo without consuming attempts (0.254875ms)
+✔ learn-then-transfer keeps responding disabled until the example has been acknowledged (0.079916ms)
+✔ cube-net orientation produces six distinct faces and reciprocal opposite pairs (0.141125ms)
+✔ diagram identity is stable across insignificant floating-point differences between engines (50.477667ms)
+✔ presentation retains all existing curriculum identities and accepts every authored answer (3.142667ms)
+✔ story and natural-change ordering cards use individually addressed illustrations (0.241917ms)
+✔ planting replaces only the sowing frame and other event atlases remain coherent (1.307375ms)
+✔ all registered illustration frames reach a renderable activity surface (2.312917ms)
+✔ concrete household pictures cannot be hidden by the text-only flag (0.444833ms)
+✔ floating experiment preparations show the specified materials, not plastic bricks or cardboard (0.188208ms)
+✔ quantity-story evidence contains only the known counts and exactly one unknown (0.120333ms)
+✔ memory evidence is visible only during observation (0.134791ms)
+✔ topic grouping preserves each entry once and keeps navigation IDs stable (0.370041ms)
+✔ every illustrated frame is registered and has a complete local PNG source (20.479167ms)
+✔ all three listening stories have matching event pictures without visual previews (0.186708ms)
+✔ daily-use matches use distinct action pictures and preserve the nine existing relationships (0.141042ms)
+✔ parent references exist and material-specific pictures match their actual object (0.34175ms)
+✔ readable count comparisons preserve all nine input pairs and the required transfer amount (0.099583ms)
+✔ rearrangement keeps the same count and time comparisons provide both exact clock states (0.110916ms)
+✔ making-ten comparisons display the original operands without printing the result (0.068083ms)
+✔ E01 meaning matches keep their words and add matching picture support (0.482666ms)
+✔ generic choice labels describe display order, not the hidden authoring/answer index (11.317834ms)
+✔ choice order is stable per activity, but not a predictable global round-number rotation (1.552041ms)
+✔ occluded lower layers can swap when their final visible picture is identical (5.537375ms)
+✔ fraction comparisons subdivide the same whole instead of changing its outer proportions (1.768167ms)
+✔ money challenges have correct-total overstock decoys and preserve genuine valid payments (1.470916ms)
+✔ shortest-route tasks include a longer legal route and accept every equal optimum (0.829917ms)
+✔ two-marker choices exercise both independent movement rules (0.209042ms)
+✔ folded paper has an explicit retained region and holes unfold by independent coordinate reflection (0.432792ms)
+✔ pyramid cells expose and independently verify each intermediate OR/XOR result (1.087917ms)
+✔ partial pyramid checks are support events, never completed activities or transferred old mastery (0.872917ms)
+✔ rectangle-count progression is 3, 6, 9 with a marking surface, not a sudden jump to 60 (0.126917ms)
+✔ rectangle marking rejects lines and outside points; corner order cannot double-count a shape (0.137542ms)
+✔ every family has explicit design-load provenance and no claim of child calibration (0.401917ms)
+✔ only the reviewed wording changes; all 1110 questions retain original data and graphs (123.24975ms)
+✔ goal models account for every fixed, parallel, missing and extra bridge (3.502375ms)
+✔ adding or removing a bridge updates both endpoints and no unrelated island (0.920416ms)
+✔ excess bridges remain editable; undo, clear and correct submissions preserve the original engine (1.296958ms)
+✔ all local quotas matching never bypasses global connectivity or crossing rules (0.689666ms)
+✔ speech exports concrete per-island targets and the one-bridge-two-ends explanation (3.289708ms)
+✔ the real quota visual shows exactly N target slots and separates overage (1101.839291ms)
+✔ network rendering uses quotas while route rendering keeps its own node and trail presentation (883.498083ms)
+✔ quantity pictures preserve the counted object and every candidate quantity (1.507583ms)
+✔ height candidates preserve all columns and their order, including distractors (0.709292ms)
+✔ left middle right pictures refer to the actual corresponding sample card (0.115167ms)
+✔ direct category shapes do not introduce a color rule (0.190917ms)
+✔ every bridge candidate has a diagram using only its real plank lengths (0.362167ms)
+✔ bridge distractors remain impossible at the actual river gaps and supports (0.229416ms)
+✔ the initial bridge question depicts distinct measured endpoints (0.12225ms)
+✔ picture helpers do not use answer identity or affect unrelated games (0.392125ms)
+✔ life inventory and river share the same unit, viewport, and unclipped bounds (0.43425ms)
+✔ all bridge candidate wood has exact lengths and stays within its SVG viewport (0.277ms)
+✔ the rendered life inventory is inside the river SVG and retains exact lengths (209.264625ms)
+✔ 046 content boundary remains exact except for the explicit 047 child-readable wording changes (252.605625ms)
+✔ all 26 life and 17 evidence problems have complete context, current facts, outcomes and every choice (1.161833ms)
+✔ wrong actions never replay as the recommended correction (0.220375ms)
+✔ evidence choices preserve the photographed scene, including awake dogs and an empty weak-clue plate (0.143625ms)
+✔ all 14 packing tasks have explicit needs while three analogies expose the previously absent target (0.149458ms)
+✔ all six color-action rules display two distinct actions and match the round rule (0.108709ms)
+✔ every spoken support caption has been exported for local narration (4.326166ms)
+✔ only the exact 66 reviewed presentations/critical clues change; all answers and 1110 identities remain intact (50.861625ms)
+✔ all sharing models use the given quantities and leave the asked quantity unknown (10.1265ms)
+✔ partition labels and counts match the frozen left/right diagrams, including explicitly empty boxes (5.413458ms)
+✔ clock hours include minute offsets and the comparison preserves the exact elapsed duration (5.084334ms)
+✔ ruler endpoints and perimeter sides agree with the original arithmetic, labels remain outside scaled SVG (1.396416ms)
+✔ number patterns and equations have one unknown and do not print the derived answer in their model (0.2685ms)
+✔ all four generated assets are registered, preserve alpha/canvas, and have auditable originals and prompts (757.543333ms)
+✔ HTML number and equation models preserve every symbol and known value in the original registered drawings (0.403708ms)
+✔ every new mathematical reference retains enlargement using the readable model rather than the former tiny bitmap (20.254667ms)
+✔ all nine number walks match the original starts, directions, turn counts and authored answers (2.15375ms)
+✔ only the exact reviewed instruction and number-walk presentation change the 1110-question catalog (28.634625ms)
+✔ main narration starts with concrete positions, direction and turns, then explains placement without giving answers (3.051167ms)
+✔ visible starting positions never prefill responses or silently complete the task (1.03375ms)
+✔ every cell is a legal guess for either actor and placing one never moves the other (1.016084ms)
+✔ wrong placements are preserved for feedback and correct placements use the unchanged evaluator (0.532417ms)
+✔ two friends may occupy the same numbered cell without displacing either friend (1.181625ms)
+✔ undo and clear restore placements, including empty starts, without submitting (0.217ms)
+✔ invalid cells or actors cannot change a response and completed tasks stay locked (0.287291ms)
+✔ the real board renders all twelve cells and visible starts while answers remain unanswered (1028.10075ms)
+✔ the real board keeps both friends visible in one cell and disables placements after completion (11.083209ms)
+✔ 045 changes only the remaining story surfaces; all 1110 identities, answers and unrelated content survive (8.170417ms)
+✔ every initial story is a registered 1200x675 PNG, never a generic old backdrop (5.27825ms)
+✔ all 24 questions keep one unknown until correct, then fill the exact position without changing order (0.466792ms)
+✖ all steps and all options have distinct semantic local art; no correct-only picture cue (2.818709ms)
+✔ meaning conflicts resolve by question and stage, including dirty hands and already-sorted toys (0.136375ms)
+✔ requested gpt-6.1-sol artwork manifests cover every brief scene and card (0.950583ms)
+✔ growth record caps visible ability tags and reports hidden count (0.371625ms)
+✔ growth record overflow marker is visually subdued (0.2465ms)
+✔ collectVoiceOrphans returns only unreferenced locale voice files (11.9865ms)
+✔ dry run preserves referenced and orphan files (19.761208ms)
+✔ write mode removes only orphans and preserves referenced and brand audio (13.716834ms)
+✔ round navigator clicks request an immediate round read (0.537917ms)
+✔ game surface reads the requested target round instead of only the current render (0.11125ms)
+✔ all nine quantity tasks teach with one chip and transfer to a different start (1.01525ms)
+✔ all nine flip tasks start with visible faces and follow the authored operation sequence (1.225916ms)
+✔ every position can be flipped twice, undone, reset and retried without losing the initial reference (0.692459ms)
+✔ other grid tasks keep their unfilled starting state and original authored solutions (0.971125ms)
+✔ rule-machine narration separates the one-chip example from the transfer question (20.863042ms)
+✔ world switcher exposes expanded and collapsed states (0.393917ms)
+✔ collapsed world buttons are compact and hide summaries (0.961375ms)
+✔ row references support Chinese, digits, letters and adjacent coordinates (2.316666ms)
+✔ ordinary xing meanings stay intact even next to row instructions (0.101125ms)
+✔ pronunciation input is locale-scoped and idempotent (0.056625ms)
+✔ pronunciation changes invalidate audio URLs while untouched lines keep their cached asset (0.874792ms)
+✔ original row text still resolves the corrected local clip without TTS fallback (82.935667ms)
+✔ missing or failed local audio applies the same row pronunciation to browser fallback (78.048916ms)
+✔ same text in different locales never substitutes another language's local clip (14.48225ms)
+✔ required listening completes only on ended, and cancellation or missing media never count as completion (17.547375ms)
+✔ new speech requests invalidate stale requests before the manifest finishes loading (23.002625ms)
+✔ stopSpeech immediately pauses local audio and prevents pending speech from starting (33.119667ms)
+✔ native clock rounds cannot be blocked by unused bitmap references (1.287709ms)
+✔ real picture evidence and illustrated choices remain required (0.174417ms)
+✔ models preload the images they actually render, including specialized tokens (0.155667ms)
+✔ an unchanged fully identified voice input can reuse its media (0.456708ms)
+✔ a stable truncated ID cannot reuse audio when the full text or spoken text changes (0.112166ms)
+✔ unknown files and changed rendering parameters are not trusted cache inputs (0.088667ms)
+✔ English listening sentences also have a word-count duration floor (0.602625ms)
+✔ inspectMp3 reads complete Edge MPEG-2 Layer III frames (0.849333ms)
+✔ inspectMp3 rejects data without complete MP3 frames (0.158917ms)
+✔ inspectMp3 rejects a truncated final frame (0.106083ms)
+✔ sentence-length Chinese audio must be plausible for its text (0.195875ms)
+✔ short choices use the absolute media floor instead of sentence ratio (0.382042ms)
+✔ normal sentence duration passes the conservative threshold (0.116916ms)
+✔ inspectVoiceFile reports missing files and validates present media (7.071084ms)
+✔ all 1110 questions differ only in the 22 reviewed word pictures (21.455958ms)
+✔ all eight meanings use unique registered concrete pictures; open and closed retain their existing pair (0.325417ms)
+✔ source originals, prompts and 640px whole-canvas PNGs are reproducible and untrimmed (227.079084ms)
+✔ historical normalization rejects unreviewed images and never masks word, answer or progress changes (91.670166ms)
+ℹ tests 282
+ℹ suites 0
+ℹ pass 280
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4889.356375
+
+✖ failing tests:
+
+test at scripts/douyin-math-export.test.mjs:8:1
+✖ generated catalog preserves the complete Math Island source (732.714416ms)
+  AssertionError [ERR_ASSERTION]: math-counting-cardinality-1:success
+  + actual - expected
+
+  + '对，最后数到 1，所以一共有 1 个。'
+  - '对，最后数到 1，所以一共有 1 个草莓。'
+                       ^
+
+      at TestContext.<anonymous> (file:///private/var/folders/fk/zsl87q392931z6lpm79w0y500000gn/T/playground-pre060-eideapl4/scripts/douyin-math-export.test.mjs:27:16)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1332:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: '对，最后数到 1，所以一共有 1 个。',
+    expected: '对，最后数到 1，所以一共有 1 个草莓。',
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/order-story-completion.test.mjs:54:1
+✖ all steps and all options have distinct semantic local art; no correct-only picture cue (2.818709ms)
+  AssertionError [ERR_ASSERTION]: every registered new action has an actual task use
+  + actual - expected
+  ... Skipped lines
+
+    [
+      '/images/items/order-045-blocks-build.png',
+      '/images/items/order-045-blocks-done.png',
+      '/images/items/order-045-blocks-fallen.png',
+      '/images/items/order-045-blocks-mixedBox.png',
+  ...
+      '/images/items/order-045-plant-soil.png',
+  -   '/images/items/order-045-plant-soil.png',
+      '/images/items/order-045-plant-sow.png',
+      '/images/items/order-045-plant-sprout.png',
+      '/images/items/order-045-plant-waitSoil.png',
+      '/images/items/order-045-plant-waitSprout.png',
+      '/images/items/order-045-plant-waterSoil.png',
+
+      at TestContext.<anonymous> (file:///private/var/folders/fk/zsl87q392931z6lpm79w0y500000gn/T/playground-pre060-eideapl4/scripts/order-story-completion.test.mjs:66:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1325:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:911:18)
+      at Test.postRun (node:internal/test_runner/test:1465:19)
+      at Test.run (node:internal/test_runner/test:1390:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:911:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: [
+      '/images/items/order-045-blocks-build.png',        '/images/items/order-045-blocks-done.png',
+      '/images/items/order-045-blocks-fallen.png',       '/images/items/order-045-blocks-mixedBox.png',
+      '/images/items/order-045-blocks-pick.png',         '/images/items/order-045-blocks-put.png',
+      '/images/items/order-045-blocks-sort.png',         '/images/items/order-045-bridge-build.png',
+      '/images/items/order-045-bridge-carrot.png',       '/images/items/order-045-bridge-cross.png',
+      '/images/items/order-045-bridge-flag.png',         '/images/items/order-045-bridge-reachCarrot.png',
+      '/images/items/order-045-bridge-river.png',        '/images/items/order-045-bridge-wait.png',
+      '/images/items/order-045-bridge-water.png',        '/images/items/order-045-door-enter.png',
+      '/images/items/order-045-door-knock.png',          '/images/items/order-045-door-locked.png',
+      '/images/items/order-045-door-open.png',           '/images/items/order-045-door-push.png',
+      '/images/items/order-045-door-unlock.png',         '/images/items/order-045-fish-cup.png',
+      '/images/items/order-045-fish-return.png',         '/images/items/order-045-fish-shore.png',
+      '/images/items/order-045-fish-swim.png',           '/images/items/order-045-fish-watch.png',
+      '/images/items/order-045-packing-bag.png',         '/images/items/order-045-packing-book.png',
+      '/images/items/order-045-packing-bottle.png',      '/images/items/order-045-packing-lunch.png',
+      '/images/items/order-045-packing-school.png',      '/images/items/order-045-plant-drySprout.png',
+      '/images/items/order-045-plant-flower.png',        '/images/items/order-045-plant-pickFlower.png',
+      '/images/items/order-045-plant-soil.png',          '/images/items/order-045-plant-sow.png',
+      '/images/items/order-045-plant-sprout.png',        '/images/items/order-045-plant-waitSoil.png',
+      '/images/items/order-045-plant-waitSprout.png',    '/images/items/order-045-plant-waterSoil.png',
+      '/images/items/order-045-plant-waterSprout.png',   '/images/items/order-045-rain-ball.png',
+      '/images/items/order-045-rain-hat.png',            '/images/items/order-045-rain-out.png',
+      '/images/items/order-045-rain-rain.png',           '/images/items/order-045-rain-raincoat.png',
+      '/images/items/order-045-snack-cookies.png',       '/images/items/order-045-snack-cup.png',
+      '/images/items/order-045-snack-dirty.png',         '/images/items/order-045-snack-dirtyEat.png',
+      '/images/items/order-045-snack-dirtyPlate.png',    '/images/items/order-045-snack-dirtyTake.png',
+      '/images/items/order-045-snack-eat.png',           '/images/items/order-045-snack-pencilCase.png',
+      '/images/items/order-045-snack-plate.png',         '/images/items/order-045-snack-take.png',
+      '/images/items/order-045-snack-wash.png',          '/images/items/order-045-sorting-allOne.png',
+      '/images/items/order-045-sorting-done.png',        '/images/items/order-045-sorting-mixed.png',
+      '/images/items/order-045-sorting-one.png',         '/images/items/order-045-sorting-put.png',
+      '/images/items/order-045-sorting-sort.png',        '/images/items/order-045-sorting-sortAgain.png',
+      '/images/items/order-045-sorting-sorted.png',      '/images/items/order-045-tower-box.png',
+      '/images/items/order-045-tower-build.png',         '/images/items/order-045-tower-fallen.png',
+      '/images/items/order-045-tower-pick.png',          '/images/items/order-045-tower-tower.png',
+      '/images/items/order-045-traffic-carOnly.png',     '/images/items/order-045-traffic-cross.png',
+      '/images/items/order-045-traffic-directCross.png', '/images/items/order-045-traffic-green.png',
+      '/images/items/order-045-traffic-junction.png',    '/images/items/order-045-traffic-look.png',
+      '/images/items/order-045-traffic-red.png',         '/images/items/order-045-traffic-stop.png',
+      '/images/items/order-045-traffic-waitOthers.png',  '/images/items/order-045-writing-book.png',
+      '/images/items/order-045-writing-classroom.png',   '/images/items/order-045-writing-pencil.png',
+      '/images/items/order-045-writing-ruler.png',       '/images/items/order-045-writing-write.png'
+    ],
+    expected: [
+      '/images/items/order-045-blocks-build.png',      '/images/items/order-045-blocks-done.png',
+      '/images/items/order-045-blocks-fallen.png',     '/images/items/order-045-blocks-mixedBox.png',
+      '/images/items/order-045-blocks-pick.png',       '/images/items/order-045-blocks-put.png',
+      '/images/items/order-045-blocks-sort.png',       '/images/items/order-045-bridge-build.png',
+      '/images/items/order-045-bridge-carrot.png',     '/images/items/order-045-bridge-cross.png',
+      '/images/items/order-045-bridge-flag.png',       '/images/items/order-045-bridge-reachCarrot.png',
+      '/images/items/order-045-bridge-river.png',      '/images/items/order-045-bridge-wait.png',
+      '/images/items/order-045-bridge-water.png',      '/images/items/order-045-door-enter.png',
+      '/images/items/order-045-door-knock.png',        '/images/items/order-045-door-locked.png',
+      '/images/items/order-045-door-open.png',         '/images/items/order-045-door-push.png',
+      '/images/items/order-045-door-unlock.png',       '/images/items/order-045-fish-cup.png',
+      '/images/items/order-045-fish-return.png',       '/images/items/order-045-fish-shore.png',
+      '/images/items/order-045-fish-swim.png',         '/images/items/order-045-fish-watch.png',
+      '/images/items/order-045-packing-bag.png',       '/images/items/order-045-packing-book.png',
+      '/images/items/order-045-packing-bottle.png',    '/images/items/order-045-packing-lunch.png',
+      '/images/items/order-045-packing-school.png',    '/images/items/order-045-plant-drySprout.png',
+      '/images/items/order-045-plant-flower.png',      '/images/items/order-045-plant-pickFlower.png',
+      '/images/items/order-045-plant-soil.png',        '/images/items/order-045-plant-soil.png',
+      '/images/items/order-045-plant-sow.png',         '/images/items/order-045-plant-sprout.png',
+      '/images/items/order-045-plant-waitSoil.png',    '/images/items/order-045-plant-waitSprout.png',
+      '/images/items/order-045-plant-waterSoil.png',   '/images/items/order-045-plant-waterSprout.png',
+      '/images/items/order-045-rain-ball.png',         '/images/items/order-045-rain-hat.png',
+      '/images/items/order-045-rain-out.png',          '/images/items/order-045-rain-rain.png',
+      '/images/items/order-045-rain-raincoat.png',     '/images/items/order-045-snack-cookies.png',
+      '/images/items/order-045-snack-cup.png',         '/images/items/order-045-snack-dirty.png',
+      '/images/items/order-045-snack-dirtyEat.png',    '/images/items/order-045-snack-dirtyPlate.png',
+      '/images/items/order-045-snack-dirtyTake.png',   '/images/items/order-045-snack-eat.png',
+      '/images/items/order-045-snack-pencilCase.png',  '/images/items/order-045-snack-plate.png',
+      '/images/items/order-045-snack-take.png',        '/images/items/order-045-snack-wash.png',
+      '/images/items/order-045-sorting-allOne.png',    '/images/items/order-045-sorting-done.png',
+      '/images/items/order-045-sorting-mixed.png',     '/images/items/order-045-sorting-one.png',
+      '/images/items/order-045-sorting-put.png',       '/images/items/order-045-sorting-sort.png',
+      '/images/items/order-045-sorting-sortAgain.png', '/images/items/order-045-sorting-sorted.png',
+      '/images/items/order-045-tower-box.png',         '/images/items/order-045-tower-build.png',
+      '/images/items/order-045-tower-fallen.png',      '/images/items/order-045-tower-pick.png',
+      '/images/items/order-045-tower-tower.png',       '/images/items/order-045-traffic-carOnly.png',
+      '/images/items/order-045-traffic-cross.png',     '/images/items/order-045-traffic-directCross.png',
+      '/images/items/order-045-traffic-green.png',     '/images/items/order-045-traffic-junction.png',
+      '/images/items/order-045-traffic-look.png',      '/images/items/order-045-traffic-red.png',
+      '/images/items/order-045-traffic-stop.png',      '/images/items/order-045-traffic-waitOthers.png',
+      '/images/items/order-045-writing-book.png',      '/images/items/order-045-writing-classroom.png',
+      '/images/items/order-045-writing-pencil.png',    '/images/items/order-045-writing-ruler.png',
+      '/images/items/order-045-writing-write.png'
+    ],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }

@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
+import {withoutEverydayEnglish} from './without-everyday-english.mjs';
 
 // Immutable historical tests still compare their own snapshot. Validate each
 // later, explicitly reviewed change before reversing it solely for that comparison.
@@ -114,7 +115,7 @@ export function restoreVocabularyArt(data) {
 }
 
 export function restoreMathReadability(data) {
-  const copy=JSON.parse(JSON.stringify(data));
+  const copy=withoutEverydayEnglish(data);
   const changes=new Map(JSON.parse(readFileSync('specs/059-chapter-readability/math-presentation-changes.json')).map(c=>[c.id,c]));
   function visit(value) {
     if(!value || typeof value!=='object')return;

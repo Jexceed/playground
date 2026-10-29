@@ -16,7 +16,7 @@ const manifest=json('public/images/items/vocabulary-058/source/manifest.json');
 const game=catalogGames.find(g=>g.id==='explore-vocabulary-relations');
 const digest=x=>createHash('sha256').update(x).digest('hex');
 test('all 1110 questions differ only in the 22 reviewed word pictures',()=>{
-  assert.equal(catalogGames.flatMap(g=>g.rounds).length,1110);
+  assert.equal(restoreVocabularyArt(catalogGames).flatMap(g=>g.rounds).length,1110);
   assert.equal(digest(JSON.stringify(restoreVocabularyArt(catalogGames))),baseline.catalogSHA256);
   assert.equal(changes.length,6);assert.equal(changes.flatMap(c=>c.tokens).length,22);
   assert.equal(game.rounds.length,9);

@@ -1,0 +1,138 @@
+{
+  "feature": "061-family-girl-character",
+  "date": "2026-10-29",
+  "tool": "built-in image_gen",
+  "prompts": "public/images/scenes/source/family-girl-061-prompts.json",
+  "identityReference": {
+    "path": "public/images/brand/thinking-house-brand-v3.png",
+    "sha256": "205e0488acda17891025862c7c64a062a38506359d27878f8022c16625c52ed6"
+  },
+  "images": [
+    {
+      "id": "morning",
+      "generatedPath": "/Users/chiang/.codex/generated_images/01a187e2-746f-7962-93c0-e60052d05485/exec-dcfe68aa-dff9-4a74-b571-8ef9c6f19631.png",
+      "sourcePath": "public/images/scenes/source/english-daily-morning-girl-061-source.png",
+      "runtimePath": "public/images/scenes/english-daily-morning.png",
+      "sourceDimensions": [
+        1672,
+        941
+      ],
+      "runtimeDimensions": [
+        1200,
+        675
+      ],
+      "sourceSha256": "b8f2fcc735a3696578efb8ae7e6765d1d6679c9629e0cb995e8e8541161c0626",
+      "runtimeSha256": "3a9dfea622d5bd11ad630477a1698c9c67db773235eb506d54f758bb33b92310",
+      "originalSourcePath": "public/images/scenes/source/english-daily-morning-source.png",
+      "originalSourceSha256": "d55ec49c34ee838a2c31aedb2fc54f372e06cc0bd97f3e9d5c87e2cc9892f700",
+      "replacedRuntimeSha256": "f45cb74959eb9f12296504d9e058c27d2887b4a5c3dcbddf38d3d1bf3dd8ce32",
+      "transform": "Sharp resize(1200, 675, { fit: cover, position: centre }), PNG; no painting or compositing",
+      "visualCheck": "High ponytail, bangs, pink hair tie and pink overalls; original scene evidence and other people retained."
+    },
+    {
+      "id": "farewell",
+      "generatedPath": "/Users/chiang/.codex/generated_images/01a187e2-746f-7962-93c0-e60052d05485/exec-1265e671-0a68-46c7-967c-de3226569712.png",
+      "sourcePath": "public/images/scenes/source/english-daily-farewell-girl-061-source.png",
+      "runtimePath": "public/images/scenes/english-daily-farewell.png",
+      "sourceDimensions": [
+        1672,
+        941
+      ],
+      "runtimeDimensions": [
+        1200,
+        675
+      ],
+      "sourceSha256": "37ed4ba40e5c132f5f9f7e263b988b326ebc121006d493f097fe09ced2b9c7b7",
+      "runtimeSha256": "f6520cba5bd6c154aed54c81b9d75455e3ed31e2a1e5bbc13b9f31873c1f5052",
+      "originalSourcePath": "public/images/scenes/source/english-daily-farewell-source.png",
+      "originalSourceSha256": "3c1eb53e55fc7917cf09e21a1e56f1839399061a2649ed543d274e767118eb69",
+      "replacedRuntimeSha256": "370754704a597aa1990f6bc34623b47aade36e8e8a687f1bbbc9c7dc5147cbc5",
+      "transform": "Sharp resize(1200, 675, { fit: cover, position: centre }), PNG; no painting or compositing",
+      "visualCheck": "High ponytail, bangs, pink hair tie and pink overalls; original scene evidence and other people retained."
+    },
+    {
+      "id": "thanks",
+      "generatedPath": "/Users/chiang/.codex/generated_images/01a187e2-746f-7962-93c0-e60052d05485/exec-4aa5bfda-e2ea-4d34-9fc5-0a2e6ef6d1af.png",
+      "sourcePath": "public/images/scenes/source/english-daily-thanks-girl-061-source.png",
+      "runtimePath": "public/images/scenes/english-daily-thanks.png",
+      "sourceDimensions": [
+        1672,
+        941
+      ],
+      "runtimeDimensions": [
+        1200,
+        675
+      ],
+      "sourceSha256": "535cdfb6a58e42ee5b651ac18e92a70eb7d2c3b45791b3c2edbe8bc88056ed35",
+      "runtimeSha256": "5866964681fdfae76f3544b98858f5727c371594f40419cabd2a33d8460f57b5",
+      "originalSourcePath": "public/images/scenes/source/english-daily-thanks-source.png",
+      "originalSourceSha256": "fc6b0c8b9f2f9befcd66719b993019a4a42a6c9bb8210c249181329901811203",
+      "replacedRuntimeSha256": "4b0c322366cdc44cea393ad766fb9c62d6b66240cae501e6ddb72af1d517d1f6",
+      "transform": "Sharp resize(1200, 675, { fit: cover, position: centre }), PNG; no painting or compositing",
+      "visualCheck": "High ponytail, bangs, pink hair tie and pink overalls; original scene evidence and other people retained."
+    },
+    {
+      "id": "sorry",
+      "generatedPath": "/Users/chiang/.codex/generated_images/01a187e2-746f-7962-93c0-e60052d05485/exec-0fdb1c46-3247-4f00-ba15-a75b159a9a43.png",
+      "sourcePath": "public/images/scenes/source/english-daily-sorry-girl-061-source.png",
+      "runtimePath": "public/images/scenes/english-daily-sorry.png",
+      "sourceDimensions": [
+        1672,
+        941
+      ],
+      "runtimeDimensions": [
+        1200,
+        675
+      ],
+      "sourceSha256": "3c9065ea107d22e8b9d2ea42552bb6a74577df5e96a460b3d8a890fd9a326f95",
+      "runtimeSha256": "b3d6cf3ce87899914168fedb5d2b4ddd515a191d7c9c084e988c171f011157e7",
+      "originalSourcePath": "public/images/scenes/source/english-daily-sorry-source.png",
+      "originalSourceSha256": "6ad392a1f66fc1b154b33aa08b96a4512dec48e16a89e607f8365ba9a61fc617",
+      "replacedRuntimeSha256": "3904043b9a8f45d29b546eaf01e6f84c67217ede83a656d051d51e3dd504d922",
+      "transform": "Sharp resize(1200, 675, { fit: cover, position: centre }), PNG; no painting or compositing",
+      "visualCheck": "High ponytail, bangs, pink hair tie and pink overalls; original scene evidence and other people retained."
+    },
+    {
+      "id": "water",
+      "generatedPath": "/Users/chiang/.codex/generated_images/01a187e2-746f-7962-93c0-e60052d05485/exec-6c269d88-0247-4e4f-8e32-c764005896ac.png",
+      "sourcePath": "public/images/scenes/source/english-daily-water-girl-061-source.png",
+      "runtimePath": "public/images/scenes/english-daily-water.png",
+      "sourceDimensions": [
+        1672,
+        941
+      ],
+      "runtimeDimensions": [
+        1200,
+        675
+      ],
+      "sourceSha256": "fe633c6feb2a9b321015a119d8c6232cf2cdeb86b8db7c7e942f4ee020eb12a9",
+      "runtimeSha256": "ab896ab8e9eed7da2245fb9c2ae5da15b53e40fcb3cd5f5f9cac6240f98dfa7d",
+      "originalSourcePath": "public/images/scenes/source/english-daily-water-source.png",
+      "originalSourceSha256": "97a5a34167e8b6ec01f5278be76cd7dc01e0c8e6fe47cc355bb425b1adafc526",
+      "replacedRuntimeSha256": "3c1a523dd6160651e930e2a1174614a2230323636ca2331a477b16501154b046",
+      "transform": "Sharp resize(1200, 675, { fit: cover, position: centre }), PNG; no painting or compositing",
+      "visualCheck": "High ponytail, bangs, pink hair tie and pink overalls; original scene evidence and other people retained."
+    },
+    {
+      "id": "help",
+      "generatedPath": "/Users/chiang/.codex/generated_images/01a187e2-746f-7962-93c0-e60052d05485/exec-945f657c-6345-457e-8fad-6e1ecf6fe32b.png",
+      "sourcePath": "public/images/scenes/source/english-daily-help-girl-061-source.png",
+      "runtimePath": "public/images/scenes/english-daily-help.png",
+      "sourceDimensions": [
+        1672,
+        941
+      ],
+      "runtimeDimensions": [
+        1200,
+        675
+      ],
+      "sourceSha256": "9538e13011588329c1671c478e6ba0d711b38d63654f6fd92953024a78b045d2",
+      "runtimeSha256": "02792790fe2c8c5a718652073c2c61e8e47aff2bd441c0bca672835f58bbfb66",
+      "originalSourcePath": "public/images/scenes/source/english-daily-help-source.png",
+      "originalSourceSha256": "fdcb1d8202228a0fa6a83c152d5b4fb773148d6c785446cd91433f2d745e1208",
+      "replacedRuntimeSha256": "dc42d9bb40e5d70025b98e1c1bf376c970b7c3434cfaafd86eedee772cf6e79e",
+      "transform": "Sharp resize(1200, 675, { fit: cover, position: centre }), PNG; no painting or compositing",
+      "visualCheck": "High ponytail, bangs, pink hair tie and pink overalls; original scene evidence and other people retained."
+    }
+  ]
+}
