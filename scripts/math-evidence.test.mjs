@@ -19,4 +19,28 @@ test('all four generated assets are registered, preserve alpha/canvas, and have 
 test('HTML number and equation models preserve every symbol and known value in the original registered drawings',()=>{for(const family of ['N11','N12'])for(const a of rounds(family)){const id=a.illustration.src.split('/').at(-1).replace('.png','');const oldText=exp.explorationDrawings[id].objects.filter(o=>o.kind==='text').map(o=>o.text);const e=a.presentation.evidence;const text=family==='N11'?e.values.map(v=>v===null?'?':String(v)):e.relations.map(r=>r.shapes.map(s=>s==='circle'?'○':'△').join(' + ')+' = '+(r.total===null?'?':r.total));assert.deepEqual(text,oldText,a.id);}});
 
 const evidenceModule=await loadComponent('src/interactions/ActivityEvidence.tsx');
+test('removing one marks exactly one original unit, preserves all given blocks and leaves the remainder unknown',()=>{
+ for(const a of rounds('N10').filter(a=>a.stage>1)){
+  const e=a.presentation.evidence,html=render(e),text=html.replace(/<[^>]*>/g,'');
+  if(a.stage===2){assert.doesNotMatch(html,/is-taken-away/);assert.equal(e.removeOnes,undefined);continue;}
+  const n=Number(a.prompt.match(/原来有(\d+)个/)[1]);
+  assert.equal(e.tens*10+e.ones,n);
+  assert.equal((html.match(/class="math-ten-rod"/g)||[]).length,Math.floor(n/10));
+  assert.equal((html.match(/<i><\/i>/g)||[]).length,Math.floor(n/10)*10);
+  const onesMarkup=html.match(/class="math-ones">(.*?)<\/div>/)[1];
+  assert.equal((onesMarkup.match(/<span/g)||[]).length,n%10);
+  assert.equal((html.match(/class="is-taken-away"/g)||[]).length,1);
+  assert.match(text,/原来/);assert.match(text,/拿走 1 小块，还剩 \?/);
+  assert.ok(!text.includes(String(n-1)),a.id+': do not print the answer');
+  assert.equal(a.tokens.find(t=>t.id===a.answerId).label,String(n-1));
+ }
+});
+test('an addend already equal to ten does not ask children to split seven into zero and seven',()=>{
+ const a=rounds('N05')[5];
+ assert.equal(a.prompt,'10加7等于多少？');
+ assert.equal(a.tokens.find(t=>t.id===a.answerId).label,'17');
+ assert.match(a.success,/已经有1个十，再加7个一，是17/);
+ assert.doesNotMatch([a.prompt,a.success,...a.hints].join(''),/拆成0|先凑十|试试凑成十/);
+ assert.equal(a.illustration.alt,a.prompt);
+});
 test('every new mathematical reference retains enlargement using the readable model rather than the former tiny bitmap',()=>{for(const a of all.filter(a=>['sharingModel','moneyExchange','clockModel','rulerModel','perimeterModel','placeValueModel','numberPattern','shapeEquations','waterModel'].includes(a.presentation?.evidence?.kind))){const html=renderToStaticMarkup(createElement(evidenceModule.ActivityEvidence,{activity:a,phase:'respond'}));assert.equal((html.match(/aria-label="放大题目图片"/g)||[]).length,1,a.id);assert.match(html,/math-zoom-scroll/);assert.match(html,/左右滑动，看看细节/);assert.doesNotMatch(html,/src="[^"]*exploration\/diagram-/);}});

@@ -1,5 +1,12 @@
 # Asset Registry And Taxonomy
 
+## 065 queue coat variants
+
+- Six transparent 320×320 PNG portraits live in `public/images/characters/queue-065/`: `cat-silver`, `cat-cream`, `dog-chocolate`, `dog-silver`, `bear-black`, and `bear-ivory`. They are registered under the corresponding `queueCat*`, `queueDog*` and `queueBear*` keys in `imageGallery.characters`.
+- The built-in imagegen tool edited the existing cat/dog/bear portraits to add natural coat colors. All six 1254×1254 outputs are preserved in the same directory's `source/` folder. Runtime PNGs are proportional whole-canvas Sharp downscales with alpha preserved; original portraits and generated originals are retained.
+- [Exact prompts and generation paths](../public/images/characters/queue-065/source/prompts.json) and [input/source/runtime hashes and conversion details](../public/images/characters/queue-065/source/manifest.json) provide provenance. Queue appearance is assigned by species occurrence, independent of the answer. Preloading uses the same `imageKey` as rendering.
+- This asset-only wording scope leaves the question bank and 4411-entry Edge voice script/manifest byte-for-byte unchanged. Existing voices have no failures or macOS say / mixed local fallback.
+
 ## 061 logo girl in everyday English
 
 - All six `english-daily-*.png` runtime scenes now use the girl from `brand/thinking-house-brand-v3.png` as their character reference. They retain the original 1200×675 paths and scene clues. The high ponytail, pink hair tie, cream shirt and pink overalls identify her; the zipper-help scene keeps its teal outer jacket.

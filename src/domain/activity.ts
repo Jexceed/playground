@@ -82,7 +82,8 @@ export type ActivityBase = {
       | { kind: "rectangleSearch"; rows: number; columns: number }
       | { kind: "quantityStory"; parts: { label: string; count: number | null }[] }
       | { kind: "shopping"; cost: number; paid: number }
-      | { kind: "overlapQueue"; left: number; right: number }
+      | { kind: "queuePositionAndTail"; leftPosition: number; behind: number }
+      | { kind: "overlapQueue"; left: number; right: number; wording: "positions" | "groups" }
       | { kind: "collection"; count: number; image: GalleryImage; caption: string }
       | { kind: "storySequence"; cards: GalleryImage[]; tokenIds?: string[] }
       | { kind: "calendar" };

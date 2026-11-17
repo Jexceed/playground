@@ -1,0 +1,32 @@
+The following is a diff from the previous accessibility tree for Window: "小小思考屋" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 61
++					79 container 单双和数位
++						80 container
++							81 text 组合挑战  · 第  7  / 9  题
++							82 heading 单双和数位, Value: 1
++								83 text 单双和数位
++							84 button 听一听题目
++						85 heading 原来有23个，拿走一个以后是多少？, Value: 2
++							86 text 原来有23个，拿走一个以后是多少？
++						87 text 选出剩下的数量。
++						88 container
++							89 text 先看图，找线索
++							90 button 放大题目图片
++							91 text 原来
++							92 image 长条和小方块，划掉的1小块要拿走
++							93 text 一长条代表10 一小块代表1 拿走  1  小块，还剩  ?
++						94 container
++							95 text 1 一长条代表10，一小块代表1。
++						96 container 选择一个答案
++							97 toggle button 33, Value: off
++							98 toggle button 24, Value: off
++							99 toggle button 22, Value: off
++							100 toggle button 13, Value: off
++						101 button (disabled) 撤销上一步
++						102 button 清空
++						103 button 提示
++						104 button 选好了，看看
++						105 container
++							106 text 这次尝试  0  次 · 提示  0  次
++							107 button 先跳过
++		108 scroll bar (settable, float) 0

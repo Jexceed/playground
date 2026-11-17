@@ -1,6 +1,7 @@
 import type { Activity } from './activity';
 import { imageGallery } from '../data/imageGallery';
 import { MATH_EVIDENCE_KINDS } from './math-evidence';
+import { queueCountingModel } from './queue-counting';
 
 /** Readiness depends on rendered media, not historical diagram references. */
 export function activityImageSources(activity: Activity): string[] {
@@ -35,7 +36,8 @@ export function activityImageSources(activity: Activity): string[] {
   if (evidence?.kind === 'moneyExchange' || evidence?.kind === 'moneyInventory' || evidence?.kind === 'shopping') money();
   if (evidence?.kind === 'shopping') sources.add(items.book.src);
   if (evidence?.kind === 'quantityStory') sources.add(items.bird.src);
-  if (evidence?.kind === 'overlapQueue') sources.add(imageGallery.characters.rabbit.src);
+  if (evidence?.kind === 'queuePositionAndTail' || evidence?.kind === 'overlapQueue')
+    for (const friend of queueCountingModel(evidence).friends) sources.add(imageGallery.characters[friend.imageKey].src);
   if (evidence?.kind === 'collection') sources.add(evidence.image.src);
   if (evidence?.kind === 'storySequence') for (const image of evidence.cards) sources.add(image.src);
   if (evidence?.kind === 'visualComparison') for (const panel of evidence.panels) {
@@ -46,7 +48,7 @@ export function activityImageSources(activity: Activity): string[] {
   for (const card of activity.presentation?.materialCards ?? []) if (card.image) sources.add(card.image.src);
   const replacesIllustration = evidence && (MATH_EVIDENCE_KINDS.has(evidence.kind) || [
     'visualComparison', 'rectangleSearch', 'moneyInventory', 'quantityStory', 'shopping',
-    'overlapQueue', 'collection', 'storySequence', 'calendar',
+    'queuePositionAndTail', 'overlapQueue', 'collection', 'storySequence', 'calendar',
   ].includes(evidence.kind));
   if (activity.illustration && !replacesIllustration) sources.add(activity.illustration.src);
   if (activity.kind === 'multiSelect' && activity.example) sources.add(activity.example.image.src);

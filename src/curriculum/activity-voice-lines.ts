@@ -3,6 +3,7 @@ import { BOARD_MOVE_COPY } from "../domain/board-move";
 import { ISLAND_BRIDGE_COPY, islandRequirementSpeech } from "../domain/island-bridges";
 import { ACTIVITY_COPY, activityPromptSpeech, pyramidMismatch } from "../domain/activity";
 import type { ActivitySet } from "../domain/activity";
+import { queueCountingModel } from '../domain/queue-counting';
 
 export function activityVoiceLines(sets: ActivitySet[]) {
   const lines: { kind: string; text: string; context: string; locale: string }[] = [];
@@ -21,6 +22,9 @@ export function activityVoiceLines(sets: ActivitySet[]) {
     for (const activity of set.rounds) {
       const context = `${set.id}/${activity.id}`;
       add("prompt", activityPromptSpeech(activity), context);
+      const evidence = activity.presentation?.evidence;
+      if (evidence?.kind === 'queuePositionAndTail' || evidence?.kind === 'overlapQueue')
+        add('clue', queueCountingModel(evidence).speech, context);
       if (activity.kind === 'network') activity.graph.nodes.forEach(node => add('clue', islandRequirementSpeech(node), context));
       if (activity.presentation?.evidence?.kind === 'cardFlip')
         activity.presentation.evidence.steps.forEach((target, index) => add('clue', cardFlipStepSpeech(target, index), context));

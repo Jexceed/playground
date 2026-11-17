@@ -3218,13 +3218,6 @@ button:focus-visible {
 .game-unit h3 {font-size:11px;font-weight:650;color:#85917d;margin:13px 9px 0;letter-spacing:.08em;}
 .game-unit:first-child h3 {margin-top:3px;}
 [data-section="exploration"] .round-jump-grid {gap:5px;}
-.queue-overlap-evidence {display:grid;grid-template-columns:1fr 140px 1fr;align-items:center;text-align:center;gap:10px;padding:10px 0;}
-.queue-overlap-evidence>div {display:flex;flex-direction:column;align-items:center;gap:8px;border-radius:12px;padding:12px;background:#eef3e5;color:#5f7855;}
-.queue-overlap-evidence>div:last-child {background:#eaf0f5;color:#4e7089;}
-.queue-overlap-evidence strong {font-size:24px;}
-.queue-overlap-evidence small {font-size:12px;}
-.queue-overlap-evidence .queue-common-friend {padding:0;background:none;color:#a3874c;font-size:12px;}
-.queue-common-friend img {width:88px;height:88px;object-fit:contain;}
 .collection-evidence p {text-align:center;color:#778269;font-size:14px;margin:0 0 10px;}
 .collection-evidence>div {display:flex;flex-wrap:wrap;justify-content:center;gap:8px;max-width:600px;margin:auto;}
 .collection-evidence img {width:52px;height:52px;object-fit:contain;}
@@ -3232,7 +3225,7 @@ button:focus-visible {
 .practice-calendar th {font-size:13px;color:#768969;padding:6px;}
 .practice-calendar td {font-size:19px;background:#fffdf7;border:1px solid #e2e7db;border-radius:7px;padding:8px 5px;}
 .practice-calendar td:nth-child(n+6) {background:#f6efdf;color:#9e7f4a;}
-@media(max-width:760px){.queue-overlap-evidence{grid-template-columns:1fr 66px 1fr;gap:6px;}.queue-overlap-evidence>div{padding:12px 5px;font-size:12px;gap:10px;}.queue-common-friend img{width:64px;height:80px;}.queue-overlap-evidence small{font-size:10px;}.queue-overlap-evidence strong{font-size:23px;}.practice-calendar{border-spacing:3px;}.practice-calendar th{font-size:11px;padding:6px 0;}.practice-calendar td{font-size:17px;padding:10px 0;}.collection-evidence img{width:48px;height:48px;}}
+@media(max-width:760px){.practice-calendar{border-spacing:3px;}.practice-calendar th{font-size:11px;padding:6px 0;}.practice-calendar td{font-size:17px;padding:10px 0;}.collection-evidence img{width:48px;height:48px;}}
 .activity-token-tray .has-illustration .activity-token-image {width:132px;height:132px;max-width:100%;}
 [data-illustrated="true"] .activity-board.is-order .slot-target,[data-illustrated="true"] .activity-board.is-order .fixed-token {min-height:100px;}
 [data-illustrated="true"] .activity-board.is-order .activity-token-image {width:80px;height:80px;max-width:100%;}

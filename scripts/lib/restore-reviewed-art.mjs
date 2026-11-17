@@ -115,7 +115,7 @@ export function restoreVocabularyArt(data) {
 }
 
 export function restoreMathReadability(data) {
-  const copy=withoutEverydayEnglish(data);
+  const copy=restoreMathConsistency(withoutEverydayEnglish(data));
   const changes=new Map(JSON.parse(readFileSync('specs/059-chapter-readability/math-presentation-changes.json')).map(c=>[c.id,c]));
   function visit(value) {
     if(!value || typeof value!=='object')return;
@@ -131,6 +131,58 @@ export function restoreMathReadability(data) {
   if(copy.imageGallery)for(const change of JSON.parse(readFileSync('specs/059-chapter-readability/math-gallery-additions.json'))) {
     assert.deepEqual(copy.imageGallery[change.category][change.key],change.after,`exact reviewed 059 math asset ${change.key}`);
     delete copy.imageGallery[change.category][change.key];
+  }
+  return copy;
+}
+
+// Validate 063's exact corrections before comparing against immutable older
+// reviews. Answers, options and all undeclared changes remain visible.
+export function restoreMathConsistency(data) {
+  const copy=restoreVisibleQueueCounting(data);
+  const changes=new Map(JSON.parse(readFileSync('specs/063-queue-evidence-alignment/content-changes.json')).map(c=>[c.id,c]));
+  const permitted=new Set(['revision','prompt','instruction','hints','success','retry','parentPrompt','presentation','illustration']);
+  const images=[...changes.values()].filter(c=>c.fields.includes('illustration'));
+  function visit(value) {
+    if(!value || typeof value!=='object')return;
+    const change=changes.get(value.id);
+    if(change && value.schemaVersion===1)for(const field of change.fields) {
+      assert.ok(permitted.has(field));
+      assert.deepEqual(value[field],change.after[field],`${value.id}/${field}: exact reviewed 063 math consistency`);
+      value[field]=structuredClone(change.before[field]);
+    }
+    const image=images.find(c=>value.src===c.after.illustration.src && value.alt===c.after.illustration.alt);
+    if(image)value.alt=image.before.illustration.alt;
+    for(const child of Object.values(value))visit(child);
+  }
+  visit(copy);
+  return copy;
+}
+
+// 064 makes the full queue and calculation visible as a learning aid. Keep
+// the prior 063 review immutable while checking the new copy exactly.
+export function restoreVisibleQueueCounting(data) {
+  const copy=withoutQueueColorAdditions(data);
+  const changes=new Map(JSON.parse(readFileSync('specs/064-visible-queue-counting/content-changes.json')).map(c=>[c.id,c]));
+  function visit(value) {
+    if(!value || typeof value!=='object')return;
+    const change=changes.get(value.id);
+    if(change && value.schemaVersion===1)for(const field of change.fields) {
+      assert.ok(['revision','instruction','hints','retry','parentPrompt'].includes(field));
+      assert.deepEqual(value[field],change.after[field],`${value.id}/${field}: exact reviewed 064 queue teaching`);
+      value[field]=structuredClone(change.before[field]);
+    }
+    for(const child of Object.values(value))visit(child);
+  }
+  visit(copy);return copy;
+}
+
+// 065 adds portraits only; every old image and curriculum field stays visible
+// to historical snapshot comparisons.
+export function withoutQueueColorAdditions(data) {
+  const copy=JSON.parse(JSON.stringify(data));
+  if(copy.imageGallery)for(const addition of JSON.parse(readFileSync('specs/065-queue-portrait-fit/gallery-additions.json'))) {
+    assert.deepEqual(copy.imageGallery[addition.category][addition.key],addition.after,`exact reviewed 065 portrait ${addition.key}`);
+    delete copy.imageGallery[addition.category][addition.key];
   }
   return copy;
 }

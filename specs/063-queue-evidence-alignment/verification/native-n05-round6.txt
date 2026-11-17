@@ -1,0 +1,31 @@
+The following is a diff from the previous accessibility tree for Window: "小小思考屋" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 205-223
+~							201 text 多想一步  · 第  6  / 9  题
++						233 heading 10加7等于多少？, Value: 2
++							234 text 10加7等于多少？
++						235 text 选出符合条件的一张图卡。
++						236 container
++							237 text 先看图，找线索
++							238 button 放大题目图片
++							239 container 10
++								240 heading 10, Value: 3
++									241 text 10
++								242 image 长条和小方块
++								243 text 一长条代表10 一小块代表1
++							244 container 再加7
++								245 heading 再加7, Value: 3
++									246 text 再加7
++								247 image 再加7的圆点图
++						248 container 选择一个答案
++							249 toggle button 18, Value: off
++							250 toggle button 17, Value: off
++							251 toggle button 16, Value: off
++						252 button (disabled) 撤销上一步
++						253 button 清空
++						254 button 提示
++						255 button 选好了，看看
++						256 container
++							257 text 这次尝试  0  次 · 提示  0  次
++							258 button 先跳过
++		259 scroll bar (settable, float) 0
+The focused UI element is 2 HTML content Description: 小小思考屋, URL: tauri://localhost

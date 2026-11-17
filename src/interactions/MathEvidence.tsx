@@ -36,7 +36,11 @@ export function MathEvidence({ evidence }: { evidence: Evidence }) {
     <div className="math-water-transfer"><ArrowRight aria-hidden="true" /><span>全部倒入</span></div>
     <figure><figcaption>现在</figcaption><ActivityImage image={imageGallery.items.mathWaterWide} /><strong>? 小杯的水</strong></figure>
   </div>;
-  if (evidence.kind === 'placeValueModel') return <PlaceValueBlocks tens={evidence.tens} ones={evidence.ones} />;
+  if (evidence.kind === 'placeValueModel') return evidence.removeOnes ? <div className="math-place-value-change">
+    <strong className="math-model-label">原来</strong>
+    <PlaceValueBlocks tens={evidence.tens} ones={evidence.ones} removeOnes={evidence.removeOnes} />
+    <p className="math-place-value-action">拿走 {evidence.removeOnes} 小块，还剩 <strong>?</strong></p>
+  </div> : <PlaceValueBlocks tens={evidence.tens} ones={evidence.ones} />;
   if (evidence.kind === 'numberPattern') return <div className="math-number-pattern" style={{ '--pattern-columns': evidence.columns } as CSSProperties}>
     {evidence.values.map((value, i) => <span key={i}>{value ?? '?'}</span>)}
   </div>;

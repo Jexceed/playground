@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-10-29T14:47:32.850Z",
+  "generatedAt": "2026-11-16T15:13:05.003Z",
   "provider": "edge-tts Python package",
   "voice": "zh-CN-XiaoxiaoNeural",
   "rate": "-12%",
   "pitch": "+2Hz",
   "includeParent": true,
   "format": "mp3",
-  "count": 4397,
-  "requestedCount": 4397,
+  "count": 4411,
+  "requestedCount": 4411,
   "failures": [],
   "entries": [
     {
@@ -19276,28 +19276,28 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E6%8A%8A6%E6%8B%86%E6%88%901%E5%92%8C5-%E5%85%88%E5%87%91%E5%8D%81-%E5%86%8D%E5%8A%A0%E5%89%A9%E4%B8%8B%E7%9A%84-%E5%BE%97%E5%88%B015.mp3"
     },
     {
-      "id": "prompt-10加7等于多少-先试试凑成十-选出符合条件的一张图卡",
+      "id": "prompt-10加7等于多少-选出符合条件的一张图卡",
       "kind": "prompt",
-      "text": "10加7等于多少？先试试凑成十。选出符合条件的一张图卡。",
+      "text": "10加7等于多少。选出符合条件的一张图卡。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-10%E5%8A%A07%E7%AD%89%E4%BA%8E%E5%A4%9A%E5%B0%91-%E5%85%88%E8%AF%95%E8%AF%95%E5%87%91%E6%88%90%E5%8D%81-%E9%80%89%E5%87%BA%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E4%B8%80%E5%BC%A0%E5%9B%BE%E5%8D%A1.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-10%E5%8A%A07%E7%AD%89%E4%BA%8E%E5%A4%9A%E5%B0%91-%E9%80%89%E5%87%BA%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E4%B8%80%E5%BC%A0%E5%9B%BE%E5%8D%A1.mp3"
     },
     {
-      "id": "success-把7拆成0和7-先凑十-再加剩下的-得到17",
+      "id": "success-已经有1个十-再加7个一-是17",
       "kind": "success",
-      "text": "把7拆成0和7，先凑十，再加剩下的，得到17。",
+      "text": "已经有1个十，再加7个一，是17。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E6%8A%8A7%E6%8B%86%E6%88%900%E5%92%8C7-%E5%85%88%E5%87%91%E5%8D%81-%E5%86%8D%E5%8A%A0%E5%89%A9%E4%B8%8B%E7%9A%84-%E5%BE%97%E5%88%B017.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E5%B7%B2%E7%BB%8F%E6%9C%891%E4%B8%AA%E5%8D%81-%E5%86%8D%E5%8A%A07%E4%B8%AA%E4%B8%80-%E6%98%AF17.mp3"
     },
     {
-      "id": "hint-把7拆成0和7-先凑十-再加剩下的-得到17",
+      "id": "hint-已经有1个十-再加7个一-是17",
       "kind": "hint",
-      "text": "把7拆成0和7，先凑十，再加剩下的，得到17。",
+      "text": "已经有1个十，再加7个一，是17。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E6%8A%8A7%E6%8B%86%E6%88%900%E5%92%8C7-%E5%85%88%E5%87%91%E5%8D%81-%E5%86%8D%E5%8A%A0%E5%89%A9%E4%B8%8B%E7%9A%84-%E5%BE%97%E5%88%B017.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E5%B7%B2%E7%BB%8F%E6%9C%891%E4%B8%AA%E5%8D%81-%E5%86%8D%E5%8A%A07%E4%B8%AA%E4%B8%80-%E6%98%AF17.mp3"
     },
     {
       "id": "prompt-13减7等于多少-试试先从十里面拿-选出符合条件的一张图卡",
@@ -20156,20 +20156,44 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/game-goal-%E5%AE%9E%E9%99%85%E6%8E%92%E9%98%9F-%E5%8F%8C%E5%90%91%E5%BA%8F%E6%95%B0-%E5%90%88%E5%B9%B6%E9%87%8D%E5%8F%A0%E4%BF%A1%E6%81%AF.mp3"
     },
     {
-      "id": "prompt-小兔从左数第3-后面还有3位朋友-队伍一共有几位-选出符合条件的一张图卡",
+      "id": "prompt-小兔从左数第3-后面还有3位朋友-队伍一共有几位-指着朋友数一数-再选队伍的总人数",
       "kind": "prompt",
-      "text": "小兔从左数第3，后面还有3位朋友。队伍一共有几位。选出符合条件的一张图卡。",
+      "text": "小兔从左数第3，后面还有3位朋友。队伍一共有几位。指着朋友数一数，再选队伍的总人数。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%B0%8F%E5%85%94%E4%BB%8E%E5%B7%A6%E6%95%B0%E7%AC%AC3-%E5%90%8E%E9%9D%A2%E8%BF%98%E6%9C%893%E4%BD%8D%E6%9C%8B%E5%8F%8B-%E9%98%9F%E4%BC%8D%E4%B8%80%E5%85%B1%E6%9C%89%E5%87%A0%E4%BD%8D-%E9%80%89%E5%87%BA%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E4%B8%80%E5%BC%A0%E5%9B%BE%E5%8D%A1.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%B0%8F%E5%85%94%E4%BB%8E%E5%B7%A6%E6%95%B0%E7%AC%AC3-%E5%90%8E%E9%9D%A2%E8%BF%98%E6%9C%893%E4%BD%8D%E6%9C%8B%E5%8F%8B-%E9%98%9F%E4%BC%8D%E4%B8%80%E5%85%B1%E6%9C%89%E5%87%A0%E4%BD%8D-%E6%8C%87%E7%9D%80%E6%9C%8B%E5%8F%8B%E6%95%B0%E4%B8%80%E6%95%B0-%E5%86%8D%E9%80%89%E9%98%9F%E4%BC%8D%E7%9A%84%E6%80%BB%E4%BA%BA%E6%95%B0.mp3"
     },
     {
-      "id": "success-两边都数到小兔-小兔重复了一次-3加4再减一-是6",
-      "kind": "success",
-      "text": "两边都数到小兔，小兔重复了一次。3加4再减一，是6。",
+      "id": "clue-从左边开始数-1-2-3-数到小兔-是3位-小兔后面的朋友-从下一位开始数-1-2-3-后面还有3位-3加3-一共6位",
+      "kind": "clue",
+      "text": "从左边开始数：1，2，3。数到小兔，是3位。小兔后面的朋友，从下一位开始数：1，2，3。后面还有3位。3加3，一共6位。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E4%B8%A4%E8%BE%B9%E9%83%BD%E6%95%B0%E5%88%B0%E5%B0%8F%E5%85%94-%E5%B0%8F%E5%85%94%E9%87%8D%E5%A4%8D%E4%BA%86%E4%B8%80%E6%AC%A1-3%E5%8A%A04%E5%86%8D%E5%87%8F%E4%B8%80-%E6%98%AF6.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E4%BB%8E%E5%B7%A6%E8%BE%B9%E5%BC%80%E5%A7%8B%E6%95%B0-1-2-3-%E6%95%B0%E5%88%B0%E5%B0%8F%E5%85%94-%E6%98%AF3%E4%BD%8D-%E5%B0%8F%E5%85%94%E5%90%8E%E9%9D%A2%E7%9A%84%E6%9C%8B%E5%8F%8B-%E4%BB%8E%E4%B8%8B%E4%B8%80%E4%BD%8D%E5%BC%80%E5%A7%8B%E6%95%B0-1-2-3-%E5%90%8E%E9%9D%A2%E8%BF%98%E6%9C%893%E4%BD%8D-3%E5%8A%A03-%E4%B8%80%E5%85%B16%E4%BD%8D.mp3"
+    },
+    {
+      "id": "success-从左数到小兔有3位-后面还有3位-3加3是6",
+      "kind": "success",
+      "text": "从左数到小兔有3位，后面还有3位。3加3是6。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E4%BB%8E%E5%B7%A6%E6%95%B0%E5%88%B0%E5%B0%8F%E5%85%94%E6%9C%893%E4%BD%8D-%E5%90%8E%E9%9D%A2%E8%BF%98%E6%9C%893%E4%BD%8D-3%E5%8A%A03%E6%98%AF6.mp3"
+    },
+    {
+      "id": "retry-沿着图中的两条数数线-再指一指每位朋友",
+      "kind": "retry",
+      "text": "沿着图中的两条数数线，再指一指每位朋友。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/retry-%E6%B2%BF%E7%9D%80%E5%9B%BE%E4%B8%AD%E7%9A%84%E4%B8%A4%E6%9D%A1%E6%95%B0%E6%95%B0%E7%BA%BF-%E5%86%8D%E6%8C%87%E4%B8%80%E6%8C%87%E6%AF%8F%E4%BD%8D%E6%9C%8B%E5%8F%8B.mp3"
+    },
+    {
+      "id": "parent-请孩子指着小兔-说说为什么后面从下一位开始数-再从另一头数整队-看看总数是否一样",
+      "kind": "parent",
+      "text": "请孩子指着小兔，说说为什么后面从下一位开始数；再从另一头数整队，看看总数是否一样。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%AD%A9%E5%AD%90%E6%8C%87%E7%9D%80%E5%B0%8F%E5%85%94-%E8%AF%B4%E8%AF%B4%E4%B8%BA%E4%BB%80%E4%B9%88%E5%90%8E%E9%9D%A2%E4%BB%8E%E4%B8%8B%E4%B8%80%E4%BD%8D%E5%BC%80%E5%A7%8B%E6%95%B0-%E5%86%8D%E4%BB%8E%E5%8F%A6%E4%B8%80%E5%A4%B4%E6%95%B0%E6%95%B4%E9%98%9F-%E7%9C%8B%E7%9C%8B%E6%80%BB%E6%95%B0%E6%98%AF%E5%90%A6%E4%B8%80%E6%A0%B7.mp3"
     },
     {
       "id": "parent-理解从一边数第几与后面还有几位",
@@ -20180,68 +20204,100 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E7%90%86%E8%A7%A3%E4%BB%8E%E4%B8%80%E8%BE%B9%E6%95%B0%E7%AC%AC%E5%87%A0%E4%B8%8E%E5%90%8E%E9%9D%A2%E8%BF%98%E6%9C%89%E5%87%A0%E4%BD%8D.mp3"
     },
     {
-      "id": "hint-两边都数到小兔-小兔重复了一次-3加4再减一-是6",
+      "id": "hint-先沿绿色的数字-从左边数到小兔",
       "kind": "hint",
+      "text": "先沿绿色的数字，从左边数到小兔。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E5%85%88%E6%B2%BF%E7%BB%BF%E8%89%B2%E7%9A%84%E6%95%B0%E5%AD%97-%E4%BB%8E%E5%B7%A6%E8%BE%B9%E6%95%B0%E5%88%B0%E5%B0%8F%E5%85%94.mp3"
+    },
+    {
+      "id": "hint-再沿蓝色的数字-数小兔后面的朋友",
+      "kind": "hint",
+      "text": "再沿蓝色的数字，数小兔后面的朋友。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E5%86%8D%E6%B2%BF%E8%93%9D%E8%89%B2%E7%9A%84%E6%95%B0%E5%AD%97-%E6%95%B0%E5%B0%8F%E5%85%94%E5%90%8E%E9%9D%A2%E7%9A%84%E6%9C%8B%E5%8F%8B.mp3"
+    },
+    {
+      "id": "prompt-小兔从左数第4-后面还有4位朋友-队伍一共有几位-指着朋友数一数-再选队伍的总人数",
+      "kind": "prompt",
+      "text": "小兔从左数第4，后面还有4位朋友。队伍一共有几位。指着朋友数一数，再选队伍的总人数。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%B0%8F%E5%85%94%E4%BB%8E%E5%B7%A6%E6%95%B0%E7%AC%AC4-%E5%90%8E%E9%9D%A2%E8%BF%98%E6%9C%894%E4%BD%8D%E6%9C%8B%E5%8F%8B-%E9%98%9F%E4%BC%8D%E4%B8%80%E5%85%B1%E6%9C%89%E5%87%A0%E4%BD%8D-%E6%8C%87%E7%9D%80%E6%9C%8B%E5%8F%8B%E6%95%B0%E4%B8%80%E6%95%B0-%E5%86%8D%E9%80%89%E9%98%9F%E4%BC%8D%E7%9A%84%E6%80%BB%E4%BA%BA%E6%95%B0.mp3"
+    },
+    {
+      "id": "clue-从左边开始数-1-2-3-4-数到小兔-是4位-小兔后面的朋友-从下一位开始数-1-2-3-4-后面还有4位-4加4-一共8位",
+      "kind": "clue",
+      "text": "从左边开始数：1，2，3，4。数到小兔，是4位。小兔后面的朋友，从下一位开始数：1，2，3，4。后面还有4位。4加4，一共8位。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E4%BB%8E%E5%B7%A6%E8%BE%B9%E5%BC%80%E5%A7%8B%E6%95%B0-1-2-3-4-%E6%95%B0%E5%88%B0%E5%B0%8F%E5%85%94-%E6%98%AF4%E4%BD%8D-%E5%B0%8F%E5%85%94%E5%90%8E%E9%9D%A2%E7%9A%84%E6%9C%8B%E5%8F%8B-%E4%BB%8E%E4%B8%8B%E4%B8%80%E4%BD%8D%E5%BC%80%E5%A7%8B%E6%95%B0-1-2-3-4-%E5%90%8E%E9%9D%A2%E8%BF%98%E6%9C%894%E4%BD%8D-4%E5%8A%A04-%E4%B8%80%E5%85%B18%E4%BD%8D.mp3"
+    },
+    {
+      "id": "success-从左数到小兔有4位-后面还有4位-4加4是8",
+      "kind": "success",
+      "text": "从左数到小兔有4位，后面还有4位。4加4是8。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E4%BB%8E%E5%B7%A6%E6%95%B0%E5%88%B0%E5%B0%8F%E5%85%94%E6%9C%894%E4%BD%8D-%E5%90%8E%E9%9D%A2%E8%BF%98%E6%9C%894%E4%BD%8D-4%E5%8A%A04%E6%98%AF8.mp3"
+    },
+    {
+      "id": "prompt-小兔从左数第5-后面还有5位朋友-队伍一共有几位-指着朋友数一数-再选队伍的总人数",
+      "kind": "prompt",
+      "text": "小兔从左数第5，后面还有5位朋友。队伍一共有几位。指着朋友数一数，再选队伍的总人数。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%B0%8F%E5%85%94%E4%BB%8E%E5%B7%A6%E6%95%B0%E7%AC%AC5-%E5%90%8E%E9%9D%A2%E8%BF%98%E6%9C%895%E4%BD%8D%E6%9C%8B%E5%8F%8B-%E9%98%9F%E4%BC%8D%E4%B8%80%E5%85%B1%E6%9C%89%E5%87%A0%E4%BD%8D-%E6%8C%87%E7%9D%80%E6%9C%8B%E5%8F%8B%E6%95%B0%E4%B8%80%E6%95%B0-%E5%86%8D%E9%80%89%E9%98%9F%E4%BC%8D%E7%9A%84%E6%80%BB%E4%BA%BA%E6%95%B0.mp3"
+    },
+    {
+      "id": "clue-从左边开始数-1-2-3-4-5-数到小兔-是5位-小兔后面的朋友-从下一位开始数-1-2-3-4-5-后面还有5位-5加5-一共10位",
+      "kind": "clue",
+      "text": "从左边开始数：1，2，3，4，5。数到小兔，是5位。小兔后面的朋友，从下一位开始数：1，2，3，4，5。后面还有5位。5加5，一共10位。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E4%BB%8E%E5%B7%A6%E8%BE%B9%E5%BC%80%E5%A7%8B%E6%95%B0-1-2-3-4-5-%E6%95%B0%E5%88%B0%E5%B0%8F%E5%85%94-%E6%98%AF5%E4%BD%8D-%E5%B0%8F%E5%85%94%E5%90%8E%E9%9D%A2%E7%9A%84%E6%9C%8B%E5%8F%8B-%E4%BB%8E%E4%B8%8B%E4%B8%80%E4%BD%8D%E5%BC%80%E5%A7%8B%E6%95%B0-1-2-3-4-5-%E5%90%8E%E9%9D%A2%E8%BF%98%E6%9C%895%E4%BD%8D-5%E5%8A%A05-%E4%B8%80%E5%85%B110%E4%BD%8D.mp3"
+    },
+    {
+      "id": "success-从左数到小兔有5位-后面还有5位-5加5是10",
+      "kind": "success",
+      "text": "从左数到小兔有5位，后面还有5位。5加5是10。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E4%BB%8E%E5%B7%A6%E6%95%B0%E5%88%B0%E5%B0%8F%E5%85%94%E6%9C%895%E4%BD%8D-%E5%90%8E%E9%9D%A2%E8%BF%98%E6%9C%895%E4%BD%8D-5%E5%8A%A05%E6%98%AF10.mp3"
+    },
+    {
+      "id": "prompt-小兔从左数第3-从右数第4-队伍一共有几位-指着朋友数一数-再选队伍的总人数",
+      "kind": "prompt",
+      "text": "小兔从左数第3，从右数第4。队伍一共有几位。指着朋友数一数，再选队伍的总人数。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%B0%8F%E5%85%94%E4%BB%8E%E5%B7%A6%E6%95%B0%E7%AC%AC3-%E4%BB%8E%E5%8F%B3%E6%95%B0%E7%AC%AC4-%E9%98%9F%E4%BC%8D%E4%B8%80%E5%85%B1%E6%9C%89%E5%87%A0%E4%BD%8D-%E6%8C%87%E7%9D%80%E6%9C%8B%E5%8F%8B%E6%95%B0%E4%B8%80%E6%95%B0-%E5%86%8D%E9%80%89%E9%98%9F%E4%BC%8D%E7%9A%84%E6%80%BB%E4%BA%BA%E6%95%B0.mp3"
+    },
+    {
+      "id": "clue-从左边开始数-1-2-3-数到小兔-是3位-再从右边数-1-2-3-4-也数到这只小兔-是4位-小兔被两边各数了一次-合起来时只算一次-3加4再减一-",
+      "kind": "clue",
+      "text": "从左边开始数：1，2，3。数到小兔，是3位。再从右边数：1，2，3，4。也数到这只小兔，是4位。小兔被两边各数了一次，合起来时只算一次。3加4再减一，一共6位。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E4%BB%8E%E5%B7%A6%E8%BE%B9%E5%BC%80%E5%A7%8B%E6%95%B0-1-2-3-%E6%95%B0%E5%88%B0%E5%B0%8F%E5%85%94-%E6%98%AF3%E4%BD%8D-%E5%86%8D%E4%BB%8E%E5%8F%B3%E8%BE%B9%E6%95%B0-1-2-3-4-%E4%B9%9F%E6%95%B0%E5%88%B0%E8%BF%99%E5%8F%AA%E5%B0%8F%E5%85%94-%E6%98%AF4%E4%BD%8D-%E5%B0%8F%E5%85%94%E8%A2%AB%E4%B8%A4%E8%BE%B9%E5%90%84%E6%95%B0%E4%BA%86%E4%B8%80%E6%AC%A1-%E5%90%88%E8%B5%B7%E6%9D%A5%E6%97%B6%E5%8F%AA%E7%AE%97%E4%B8%80%E6%AC%A1-3%E5%8A%A04%E5%86%8D%E5%87%8F%E4%B8%80.mp3"
+    },
+    {
+      "id": "success-两边都数到小兔-小兔重复了一次-3加4再减一-是6",
+      "kind": "success",
       "text": "两边都数到小兔，小兔重复了一次。3加4再减一，是6。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E4%B8%A4%E8%BE%B9%E9%83%BD%E6%95%B0%E5%88%B0%E5%B0%8F%E5%85%94-%E5%B0%8F%E5%85%94%E9%87%8D%E5%A4%8D%E4%BA%86%E4%B8%80%E6%AC%A1-3%E5%8A%A04%E5%86%8D%E5%87%8F%E4%B8%80-%E6%98%AF6.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E4%B8%A4%E8%BE%B9%E9%83%BD%E6%95%B0%E5%88%B0%E5%B0%8F%E5%85%94-%E5%B0%8F%E5%85%94%E9%87%8D%E5%A4%8D%E4%BA%86%E4%B8%80%E6%AC%A1-3%E5%8A%A04%E5%86%8D%E5%87%8F%E4%B8%80-%E6%98%AF6.mp3"
     },
     {
-      "id": "prompt-小兔从左数第4-后面还有4位朋友-队伍一共有几位-选出符合条件的一张图卡",
-      "kind": "prompt",
-      "text": "小兔从左数第4，后面还有4位朋友。队伍一共有几位。选出符合条件的一张图卡。",
+      "id": "parent-请孩子指出两条数数线在哪里相交-队伍里有几只小兔-为什么合起来时只算它一次",
+      "kind": "parent",
+      "text": "请孩子指出两条数数线在哪里相交：队伍里有几只小兔？为什么合起来时只算它一次？",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%B0%8F%E5%85%94%E4%BB%8E%E5%B7%A6%E6%95%B0%E7%AC%AC4-%E5%90%8E%E9%9D%A2%E8%BF%98%E6%9C%894%E4%BD%8D%E6%9C%8B%E5%8F%8B-%E9%98%9F%E4%BC%8D%E4%B8%80%E5%85%B1%E6%9C%89%E5%87%A0%E4%BD%8D-%E9%80%89%E5%87%BA%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E4%B8%80%E5%BC%A0%E5%9B%BE%E5%8D%A1.mp3"
-    },
-    {
-      "id": "success-两边都数到小兔-小兔重复了一次-4加5再减一-是8",
-      "kind": "success",
-      "text": "两边都数到小兔，小兔重复了一次。4加5再减一，是8。",
-      "locale": "zh-CN",
-      "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E4%B8%A4%E8%BE%B9%E9%83%BD%E6%95%B0%E5%88%B0%E5%B0%8F%E5%85%94-%E5%B0%8F%E5%85%94%E9%87%8D%E5%A4%8D%E4%BA%86%E4%B8%80%E6%AC%A1-4%E5%8A%A05%E5%86%8D%E5%87%8F%E4%B8%80-%E6%98%AF8.mp3"
-    },
-    {
-      "id": "hint-两边都数到小兔-小兔重复了一次-4加5再减一-是8",
-      "kind": "hint",
-      "text": "两边都数到小兔，小兔重复了一次。4加5再减一，是8。",
-      "locale": "zh-CN",
-      "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E4%B8%A4%E8%BE%B9%E9%83%BD%E6%95%B0%E5%88%B0%E5%B0%8F%E5%85%94-%E5%B0%8F%E5%85%94%E9%87%8D%E5%A4%8D%E4%BA%86%E4%B8%80%E6%AC%A1-4%E5%8A%A05%E5%86%8D%E5%87%8F%E4%B8%80-%E6%98%AF8.mp3"
-    },
-    {
-      "id": "prompt-小兔从左数第5-后面还有5位朋友-队伍一共有几位-选出符合条件的一张图卡",
-      "kind": "prompt",
-      "text": "小兔从左数第5，后面还有5位朋友。队伍一共有几位。选出符合条件的一张图卡。",
-      "locale": "zh-CN",
-      "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%B0%8F%E5%85%94%E4%BB%8E%E5%B7%A6%E6%95%B0%E7%AC%AC5-%E5%90%8E%E9%9D%A2%E8%BF%98%E6%9C%895%E4%BD%8D%E6%9C%8B%E5%8F%8B-%E9%98%9F%E4%BC%8D%E4%B8%80%E5%85%B1%E6%9C%89%E5%87%A0%E4%BD%8D-%E9%80%89%E5%87%BA%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E4%B8%80%E5%BC%A0%E5%9B%BE%E5%8D%A1.mp3"
-    },
-    {
-      "id": "success-两边都数到小兔-小兔重复了一次-5加6再减一-是10",
-      "kind": "success",
-      "text": "两边都数到小兔，小兔重复了一次。5加6再减一，是10。",
-      "locale": "zh-CN",
-      "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E4%B8%A4%E8%BE%B9%E9%83%BD%E6%95%B0%E5%88%B0%E5%B0%8F%E5%85%94-%E5%B0%8F%E5%85%94%E9%87%8D%E5%A4%8D%E4%BA%86%E4%B8%80%E6%AC%A1-5%E5%8A%A06%E5%86%8D%E5%87%8F%E4%B8%80-%E6%98%AF10.mp3"
-    },
-    {
-      "id": "hint-两边都数到小兔-小兔重复了一次-5加6再减一-是10",
-      "kind": "hint",
-      "text": "两边都数到小兔，小兔重复了一次。5加6再减一，是10。",
-      "locale": "zh-CN",
-      "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E4%B8%A4%E8%BE%B9%E9%83%BD%E6%95%B0%E5%88%B0%E5%B0%8F%E5%85%94-%E5%B0%8F%E5%85%94%E9%87%8D%E5%A4%8D%E4%BA%86%E4%B8%80%E6%AC%A1-5%E5%8A%A06%E5%86%8D%E5%87%8F%E4%B8%80-%E6%98%AF10.mp3"
-    },
-    {
-      "id": "prompt-小兔从左数第3-从右数第4-队伍一共有几位-选出符合条件的一张图卡",
-      "kind": "prompt",
-      "text": "小兔从左数第3，从右数第4。队伍一共有几位。选出符合条件的一张图卡。",
-      "locale": "zh-CN",
-      "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%B0%8F%E5%85%94%E4%BB%8E%E5%B7%A6%E6%95%B0%E7%AC%AC3-%E4%BB%8E%E5%8F%B3%E6%95%B0%E7%AC%AC4-%E9%98%9F%E4%BC%8D%E4%B8%80%E5%85%B1%E6%9C%89%E5%87%A0%E4%BD%8D-%E9%80%89%E5%87%BA%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E4%B8%80%E5%BC%A0%E5%9B%BE%E5%8D%A1.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%AF%B7%E5%AD%A9%E5%AD%90%E6%8C%87%E5%87%BA%E4%B8%A4%E6%9D%A1%E6%95%B0%E6%95%B0%E7%BA%BF%E5%9C%A8%E5%93%AA%E9%87%8C%E7%9B%B8%E4%BA%A4-%E9%98%9F%E4%BC%8D%E9%87%8C%E6%9C%89%E5%87%A0%E5%8F%AA%E5%B0%8F%E5%85%94-%E4%B8%BA%E4%BB%80%E4%B9%88%E5%90%88%E8%B5%B7%E6%9D%A5%E6%97%B6%E5%8F%AA%E7%AE%97%E5%AE%83%E4%B8%80%E6%AC%A1.mp3"
     },
     {
       "id": "parent-知道双向序数都含同一个人",
@@ -20252,28 +20308,76 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E7%9F%A5%E9%81%93%E5%8F%8C%E5%90%91%E5%BA%8F%E6%95%B0%E9%83%BD%E5%90%AB%E5%90%8C%E4%B8%80%E4%B8%AA%E4%BA%BA.mp3"
     },
     {
-      "id": "prompt-小兔从左数第4-从右数第5-队伍一共有几位-选出符合条件的一张图卡",
-      "kind": "prompt",
-      "text": "小兔从左数第4，从右数第5。队伍一共有几位。选出符合条件的一张图卡。",
+      "id": "hint-先看绿色这组数到了哪些朋友",
+      "kind": "hint",
+      "text": "先看绿色这组数到了哪些朋友。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%B0%8F%E5%85%94%E4%BB%8E%E5%B7%A6%E6%95%B0%E7%AC%AC4-%E4%BB%8E%E5%8F%B3%E6%95%B0%E7%AC%AC5-%E9%98%9F%E4%BC%8D%E4%B8%80%E5%85%B1%E6%9C%89%E5%87%A0%E4%BD%8D-%E9%80%89%E5%87%BA%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E4%B8%80%E5%BC%A0%E5%9B%BE%E5%8D%A1.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E5%85%88%E7%9C%8B%E7%BB%BF%E8%89%B2%E8%BF%99%E7%BB%84%E6%95%B0%E5%88%B0%E4%BA%86%E5%93%AA%E4%BA%9B%E6%9C%8B%E5%8F%8B.mp3"
     },
     {
-      "id": "prompt-小兔从左数第5-从右数第6-队伍一共有几位-选出符合条件的一张图卡",
-      "kind": "prompt",
-      "text": "小兔从左数第5，从右数第6。队伍一共有几位。选出符合条件的一张图卡。",
+      "id": "hint-再看蓝色这组-小兔是不是又被数到了",
+      "kind": "hint",
+      "text": "再看蓝色这组，小兔是不是又被数到了？",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%B0%8F%E5%85%94%E4%BB%8E%E5%B7%A6%E6%95%B0%E7%AC%AC5-%E4%BB%8E%E5%8F%B3%E6%95%B0%E7%AC%AC6-%E9%98%9F%E4%BC%8D%E4%B8%80%E5%85%B1%E6%9C%89%E5%87%A0%E4%BD%8D-%E9%80%89%E5%87%BA%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E4%B8%80%E5%BC%A0%E5%9B%BE%E5%8D%A1.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E5%86%8D%E7%9C%8B%E8%93%9D%E8%89%B2%E8%BF%99%E7%BB%84-%E5%B0%8F%E5%85%94%E6%98%AF%E4%B8%8D%E6%98%AF%E5%8F%88%E8%A2%AB%E6%95%B0%E5%88%B0%E4%BA%86.mp3"
     },
     {
-      "id": "prompt-两个数队伍的小朋友都数到了小兔-左边这组含小兔有3位-右边这组含小兔有4位-合起来有几位-选出符合条件的一张图卡",
+      "id": "prompt-小兔从左数第4-从右数第5-队伍一共有几位-指着朋友数一数-再选队伍的总人数",
       "kind": "prompt",
-      "text": "两个数队伍的小朋友都数到了小兔。左边这组含小兔有3位，右边这组含小兔有4位。合起来有几位。选出符合条件的一张图卡。",
+      "text": "小兔从左数第4，从右数第5。队伍一共有几位。指着朋友数一数，再选队伍的总人数。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E4%B8%A4%E4%B8%AA%E6%95%B0%E9%98%9F%E4%BC%8D%E7%9A%84%E5%B0%8F%E6%9C%8B%E5%8F%8B%E9%83%BD%E6%95%B0%E5%88%B0%E4%BA%86%E5%B0%8F%E5%85%94-%E5%B7%A6%E8%BE%B9%E8%BF%99%E7%BB%84%E5%90%AB%E5%B0%8F%E5%85%94%E6%9C%893%E4%BD%8D-%E5%8F%B3%E8%BE%B9%E8%BF%99%E7%BB%84%E5%90%AB%E5%B0%8F%E5%85%94%E6%9C%894%E4%BD%8D-%E5%90%88%E8%B5%B7%E6%9D%A5%E6%9C%89%E5%87%A0%E4%BD%8D-%E9%80%89%E5%87%BA%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E4%B8%80%E5%BC%A0%E5%9B%BE%E5%8D%A1.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%B0%8F%E5%85%94%E4%BB%8E%E5%B7%A6%E6%95%B0%E7%AC%AC4-%E4%BB%8E%E5%8F%B3%E6%95%B0%E7%AC%AC5-%E9%98%9F%E4%BC%8D%E4%B8%80%E5%85%B1%E6%9C%89%E5%87%A0%E4%BD%8D-%E6%8C%87%E7%9D%80%E6%9C%8B%E5%8F%8B%E6%95%B0%E4%B8%80%E6%95%B0-%E5%86%8D%E9%80%89%E9%98%9F%E4%BC%8D%E7%9A%84%E6%80%BB%E4%BA%BA%E6%95%B0.mp3"
+    },
+    {
+      "id": "clue-从左边开始数-1-2-3-4-数到小兔-是4位-再从右边数-1-2-3-4-5-也数到这只小兔-是5位-小兔被两边各数了一次-合起来时只算一次-4加5",
+      "kind": "clue",
+      "text": "从左边开始数：1，2，3，4。数到小兔，是4位。再从右边数：1，2，3，4，5。也数到这只小兔，是5位。小兔被两边各数了一次，合起来时只算一次。4加5再减一，一共8位。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E4%BB%8E%E5%B7%A6%E8%BE%B9%E5%BC%80%E5%A7%8B%E6%95%B0-1-2-3-4-%E6%95%B0%E5%88%B0%E5%B0%8F%E5%85%94-%E6%98%AF4%E4%BD%8D-%E5%86%8D%E4%BB%8E%E5%8F%B3%E8%BE%B9%E6%95%B0-1-2-3-4-5-%E4%B9%9F%E6%95%B0%E5%88%B0%E8%BF%99%E5%8F%AA%E5%B0%8F%E5%85%94-%E6%98%AF5%E4%BD%8D-%E5%B0%8F%E5%85%94%E8%A2%AB%E4%B8%A4%E8%BE%B9%E5%90%84%E6%95%B0%E4%BA%86%E4%B8%80%E6%AC%A1-%E5%90%88%E8%B5%B7%E6%9D%A5%E6%97%B6%E5%8F%AA%E7%AE%97%E4%B8%80%E6%AC%A1-4%E5%8A%A05.mp3"
+    },
+    {
+      "id": "success-两边都数到小兔-小兔重复了一次-4加5再减一-是8",
+      "kind": "success",
+      "text": "两边都数到小兔，小兔重复了一次。4加5再减一，是8。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E4%B8%A4%E8%BE%B9%E9%83%BD%E6%95%B0%E5%88%B0%E5%B0%8F%E5%85%94-%E5%B0%8F%E5%85%94%E9%87%8D%E5%A4%8D%E4%BA%86%E4%B8%80%E6%AC%A1-4%E5%8A%A05%E5%86%8D%E5%87%8F%E4%B8%80-%E6%98%AF8.mp3"
+    },
+    {
+      "id": "prompt-小兔从左数第5-从右数第6-队伍一共有几位-指着朋友数一数-再选队伍的总人数",
+      "kind": "prompt",
+      "text": "小兔从左数第5，从右数第6。队伍一共有几位。指着朋友数一数，再选队伍的总人数。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%B0%8F%E5%85%94%E4%BB%8E%E5%B7%A6%E6%95%B0%E7%AC%AC5-%E4%BB%8E%E5%8F%B3%E6%95%B0%E7%AC%AC6-%E9%98%9F%E4%BC%8D%E4%B8%80%E5%85%B1%E6%9C%89%E5%87%A0%E4%BD%8D-%E6%8C%87%E7%9D%80%E6%9C%8B%E5%8F%8B%E6%95%B0%E4%B8%80%E6%95%B0-%E5%86%8D%E9%80%89%E9%98%9F%E4%BC%8D%E7%9A%84%E6%80%BB%E4%BA%BA%E6%95%B0.mp3"
+    },
+    {
+      "id": "clue-从左边开始数-1-2-3-4-5-数到小兔-是5位-再从右边数-1-2-3-4-5-6-也数到这只小兔-是6位-小兔被两边各数了一次-合起来时只算一次",
+      "kind": "clue",
+      "text": "从左边开始数：1，2，3，4，5。数到小兔，是5位。再从右边数：1，2，3，4，5，6。也数到这只小兔，是6位。小兔被两边各数了一次，合起来时只算一次。5加6再减一，一共10位。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/clue-%E4%BB%8E%E5%B7%A6%E8%BE%B9%E5%BC%80%E5%A7%8B%E6%95%B0-1-2-3-4-5-%E6%95%B0%E5%88%B0%E5%B0%8F%E5%85%94-%E6%98%AF5%E4%BD%8D-%E5%86%8D%E4%BB%8E%E5%8F%B3%E8%BE%B9%E6%95%B0-1-2-3-4-5-6-%E4%B9%9F%E6%95%B0%E5%88%B0%E8%BF%99%E5%8F%AA%E5%B0%8F%E5%85%94-%E6%98%AF6%E4%BD%8D-%E5%B0%8F%E5%85%94%E8%A2%AB%E4%B8%A4%E8%BE%B9%E5%90%84%E6%95%B0%E4%BA%86%E4%B8%80%E6%AC%A1-%E5%90%88%E8%B5%B7%E6%9D%A5%E6%97%B6%E5%8F%AA%E7%AE%97%E4%B8%80%E6%AC%A1.mp3"
+    },
+    {
+      "id": "success-两边都数到小兔-小兔重复了一次-5加6再减一-是10",
+      "kind": "success",
+      "text": "两边都数到小兔，小兔重复了一次。5加6再减一，是10。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/success-%E4%B8%A4%E8%BE%B9%E9%83%BD%E6%95%B0%E5%88%B0%E5%B0%8F%E5%85%94-%E5%B0%8F%E5%85%94%E9%87%8D%E5%A4%8D%E4%BA%86%E4%B8%80%E6%AC%A1-5%E5%8A%A06%E5%86%8D%E5%87%8F%E4%B8%80-%E6%98%AF10.mp3"
+    },
+    {
+      "id": "prompt-两个数队伍的小朋友都数到了小兔-左边这组含小兔有3位-右边这组含小兔有4位-合起来有几位-指着朋友数一数-再选队伍的总人数",
+      "kind": "prompt",
+      "text": "两个数队伍的小朋友都数到了小兔。左边这组含小兔有3位，右边这组含小兔有4位。合起来有几位。指着朋友数一数，再选队伍的总人数。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E4%B8%A4%E4%B8%AA%E6%95%B0%E9%98%9F%E4%BC%8D%E7%9A%84%E5%B0%8F%E6%9C%8B%E5%8F%8B%E9%83%BD%E6%95%B0%E5%88%B0%E4%BA%86%E5%B0%8F%E5%85%94-%E5%B7%A6%E8%BE%B9%E8%BF%99%E7%BB%84%E5%90%AB%E5%B0%8F%E5%85%94%E6%9C%893%E4%BD%8D-%E5%8F%B3%E8%BE%B9%E8%BF%99%E7%BB%84%E5%90%AB%E5%B0%8F%E5%85%94%E6%9C%894%E4%BD%8D-%E5%90%88%E8%B5%B7%E6%9D%A5%E6%9C%89%E5%87%A0%E4%BD%8D-%E6%8C%87%E7%9D%80%E6%9C%8B%E5%8F%8B%E6%95%B0%E4%B8%80%E6%95%B0-%E5%86%8D%E9%80%89%E9%98%9F%E4%BC%8D%E7%9A%84%E6%80%BB%E4%BA%BA%E6%95%B0.mp3"
     },
     {
       "id": "parent-能辨认两组共同包含的对象",
@@ -20284,20 +20388,20 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E8%83%BD%E8%BE%A8%E8%AE%A4%E4%B8%A4%E7%BB%84%E5%85%B1%E5%90%8C%E5%8C%85%E5%90%AB%E7%9A%84%E5%AF%B9%E8%B1%A1.mp3"
     },
     {
-      "id": "prompt-两个数队伍的小朋友都数到了小兔-左边这组含小兔有4位-右边这组含小兔有5位-合起来有几位-选出符合条件的一张图卡",
+      "id": "prompt-两个数队伍的小朋友都数到了小兔-左边这组含小兔有4位-右边这组含小兔有5位-合起来有几位-指着朋友数一数-再选队伍的总人数",
       "kind": "prompt",
-      "text": "两个数队伍的小朋友都数到了小兔。左边这组含小兔有4位，右边这组含小兔有5位。合起来有几位。选出符合条件的一张图卡。",
+      "text": "两个数队伍的小朋友都数到了小兔。左边这组含小兔有4位，右边这组含小兔有5位。合起来有几位。指着朋友数一数，再选队伍的总人数。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E4%B8%A4%E4%B8%AA%E6%95%B0%E9%98%9F%E4%BC%8D%E7%9A%84%E5%B0%8F%E6%9C%8B%E5%8F%8B%E9%83%BD%E6%95%B0%E5%88%B0%E4%BA%86%E5%B0%8F%E5%85%94-%E5%B7%A6%E8%BE%B9%E8%BF%99%E7%BB%84%E5%90%AB%E5%B0%8F%E5%85%94%E6%9C%894%E4%BD%8D-%E5%8F%B3%E8%BE%B9%E8%BF%99%E7%BB%84%E5%90%AB%E5%B0%8F%E5%85%94%E6%9C%895%E4%BD%8D-%E5%90%88%E8%B5%B7%E6%9D%A5%E6%9C%89%E5%87%A0%E4%BD%8D-%E9%80%89%E5%87%BA%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E4%B8%80%E5%BC%A0%E5%9B%BE%E5%8D%A1.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E4%B8%A4%E4%B8%AA%E6%95%B0%E9%98%9F%E4%BC%8D%E7%9A%84%E5%B0%8F%E6%9C%8B%E5%8F%8B%E9%83%BD%E6%95%B0%E5%88%B0%E4%BA%86%E5%B0%8F%E5%85%94-%E5%B7%A6%E8%BE%B9%E8%BF%99%E7%BB%84%E5%90%AB%E5%B0%8F%E5%85%94%E6%9C%894%E4%BD%8D-%E5%8F%B3%E8%BE%B9%E8%BF%99%E7%BB%84%E5%90%AB%E5%B0%8F%E5%85%94%E6%9C%895%E4%BD%8D-%E5%90%88%E8%B5%B7%E6%9D%A5%E6%9C%89%E5%87%A0%E4%BD%8D-%E6%8C%87%E7%9D%80%E6%9C%8B%E5%8F%8B%E6%95%B0%E4%B8%80%E6%95%B0-%E5%86%8D%E9%80%89%E9%98%9F%E4%BC%8D%E7%9A%84%E6%80%BB%E4%BA%BA%E6%95%B0.mp3"
     },
     {
-      "id": "prompt-两个数队伍的小朋友都数到了小兔-左边这组含小兔有5位-右边这组含小兔有6位-合起来有几位-选出符合条件的一张图卡",
+      "id": "prompt-两个数队伍的小朋友都数到了小兔-左边这组含小兔有5位-右边这组含小兔有6位-合起来有几位-指着朋友数一数-再选队伍的总人数",
       "kind": "prompt",
-      "text": "两个数队伍的小朋友都数到了小兔。左边这组含小兔有5位，右边这组含小兔有6位。合起来有几位。选出符合条件的一张图卡。",
+      "text": "两个数队伍的小朋友都数到了小兔。左边这组含小兔有5位，右边这组含小兔有6位。合起来有几位。指着朋友数一数，再选队伍的总人数。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E4%B8%A4%E4%B8%AA%E6%95%B0%E9%98%9F%E4%BC%8D%E7%9A%84%E5%B0%8F%E6%9C%8B%E5%8F%8B%E9%83%BD%E6%95%B0%E5%88%B0%E4%BA%86%E5%B0%8F%E5%85%94-%E5%B7%A6%E8%BE%B9%E8%BF%99%E7%BB%84%E5%90%AB%E5%B0%8F%E5%85%94%E6%9C%895%E4%BD%8D-%E5%8F%B3%E8%BE%B9%E8%BF%99%E7%BB%84%E5%90%AB%E5%B0%8F%E5%85%94%E6%9C%896%E4%BD%8D-%E5%90%88%E8%B5%B7%E6%9D%A5%E6%9C%89%E5%87%A0%E4%BD%8D-%E9%80%89%E5%87%BA%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E4%B8%80%E5%BC%A0%E5%9B%BE%E5%8D%A1.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E4%B8%A4%E4%B8%AA%E6%95%B0%E9%98%9F%E4%BC%8D%E7%9A%84%E5%B0%8F%E6%9C%8B%E5%8F%8B%E9%83%BD%E6%95%B0%E5%88%B0%E4%BA%86%E5%B0%8F%E5%85%94-%E5%B7%A6%E8%BE%B9%E8%BF%99%E7%BB%84%E5%90%AB%E5%B0%8F%E5%85%94%E6%9C%895%E4%BD%8D-%E5%8F%B3%E8%BE%B9%E8%BF%99%E7%BB%84%E5%90%AB%E5%B0%8F%E5%85%94%E6%9C%896%E4%BD%8D-%E5%90%88%E8%B5%B7%E6%9D%A5%E6%9C%89%E5%87%A0%E4%BD%8D-%E6%8C%87%E7%9D%80%E6%9C%8B%E5%8F%8B%E6%95%B0%E4%B8%80%E6%95%B0-%E5%86%8D%E9%80%89%E9%98%9F%E4%BC%8D%E7%9A%84%E6%80%BB%E4%BA%BA%E6%95%B0.mp3"
     },
     {
       "id": "game-title-单双和数位",
@@ -20484,12 +20588,12 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/object-35.mp3"
     },
     {
-      "id": "prompt-原来有23个-拿走一个以后是多少-选出符合条件的一张图卡-一长条代表10-一小块代表1",
+      "id": "prompt-原来有23个-拿走一个以后是多少-选出剩下的数量-一长条代表10-一小块代表1",
       "kind": "prompt",
-      "text": "原来有23个，拿走一个以后是多少。选出符合条件的一张图卡。一长条代表10，一小块代表1。",
+      "text": "原来有23个，拿走一个以后是多少。选出剩下的数量。一长条代表10，一小块代表1。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%8E%9F%E6%9D%A5%E6%9C%8923%E4%B8%AA-%E6%8B%BF%E8%B5%B0%E4%B8%80%E4%B8%AA%E4%BB%A5%E5%90%8E%E6%98%AF%E5%A4%9A%E5%B0%91-%E9%80%89%E5%87%BA%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E4%B8%80%E5%BC%A0%E5%9B%BE%E5%8D%A1-%E4%B8%80%E9%95%BF%E6%9D%A1%E4%BB%A3%E8%A1%A810-%E4%B8%80%E5%B0%8F%E5%9D%97%E4%BB%A3%E8%A1%A81.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%8E%9F%E6%9D%A5%E6%9C%8923%E4%B8%AA-%E6%8B%BF%E8%B5%B0%E4%B8%80%E4%B8%AA%E4%BB%A5%E5%90%8E%E6%98%AF%E5%A4%9A%E5%B0%91-%E9%80%89%E5%87%BA%E5%89%A9%E4%B8%8B%E7%9A%84%E6%95%B0%E9%87%8F-%E4%B8%80%E9%95%BF%E6%9D%A1%E4%BB%A3%E8%A1%A810-%E4%B8%80%E5%B0%8F%E5%9D%97%E4%BB%A3%E8%A1%A81.mp3"
     },
     {
       "id": "success-23拿走一变成22-每增加或减少一个-单双都会改变",
@@ -20516,6 +20620,14 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/parent-%E4%BC%9A%E4%B8%A4%E4%BD%8D%E6%95%B0%E5%87%8F1-%E5%8F%A3%E8%BF%B0%E5%8D%95%E5%8F%8C%E9%9C%80%E5%B7%B2%E7%90%86%E8%A7%A3%E6%88%90%E5%AF%B9.mp3"
     },
     {
+      "id": "hint-只拿走一小块-一长条保持不动",
+      "kind": "hint",
+      "text": "只拿走一小块，一长条保持不动。",
+      "locale": "zh-CN",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-%E5%8F%AA%E6%8B%BF%E8%B5%B0%E4%B8%80%E5%B0%8F%E5%9D%97-%E4%B8%80%E9%95%BF%E6%9D%A1%E4%BF%9D%E6%8C%81%E4%B8%8D%E5%8A%A8.mp3"
+    },
+    {
       "id": "hint-23拿走一变成22-每增加或减少一个-单双都会改变",
       "kind": "hint",
       "text": "23拿走一变成22。每增加或减少一个，单双都会改变。",
@@ -20524,12 +20636,12 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-23%E6%8B%BF%E8%B5%B0%E4%B8%80%E5%8F%98%E6%88%9022-%E6%AF%8F%E5%A2%9E%E5%8A%A0%E6%88%96%E5%87%8F%E5%B0%91%E4%B8%80%E4%B8%AA-%E5%8D%95%E5%8F%8C%E9%83%BD%E4%BC%9A%E6%94%B9%E5%8F%98.mp3"
     },
     {
-      "id": "prompt-原来有34个-拿走一个以后是多少-选出符合条件的一张图卡-一长条代表10-一小块代表1",
+      "id": "prompt-原来有34个-拿走一个以后是多少-选出剩下的数量-一长条代表10-一小块代表1",
       "kind": "prompt",
-      "text": "原来有34个，拿走一个以后是多少。选出符合条件的一张图卡。一长条代表10，一小块代表1。",
+      "text": "原来有34个，拿走一个以后是多少。选出剩下的数量。一长条代表10，一小块代表1。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%8E%9F%E6%9D%A5%E6%9C%8934%E4%B8%AA-%E6%8B%BF%E8%B5%B0%E4%B8%80%E4%B8%AA%E4%BB%A5%E5%90%8E%E6%98%AF%E5%A4%9A%E5%B0%91-%E9%80%89%E5%87%BA%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E4%B8%80%E5%BC%A0%E5%9B%BE%E5%8D%A1-%E4%B8%80%E9%95%BF%E6%9D%A1%E4%BB%A3%E8%A1%A810-%E4%B8%80%E5%B0%8F%E5%9D%97%E4%BB%A3%E8%A1%A81.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%8E%9F%E6%9D%A5%E6%9C%8934%E4%B8%AA-%E6%8B%BF%E8%B5%B0%E4%B8%80%E4%B8%AA%E4%BB%A5%E5%90%8E%E6%98%AF%E5%A4%9A%E5%B0%91-%E9%80%89%E5%87%BA%E5%89%A9%E4%B8%8B%E7%9A%84%E6%95%B0%E9%87%8F-%E4%B8%80%E9%95%BF%E6%9D%A1%E4%BB%A3%E8%A1%A810-%E4%B8%80%E5%B0%8F%E5%9D%97%E4%BB%A3%E8%A1%A81.mp3"
     },
     {
       "id": "success-34拿走一变成33-每增加或减少一个-单双都会改变",
@@ -20556,12 +20668,12 @@
       "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/hint-34%E6%8B%BF%E8%B5%B0%E4%B8%80%E5%8F%98%E6%88%9033-%E6%AF%8F%E5%A2%9E%E5%8A%A0%E6%88%96%E5%87%8F%E5%B0%91%E4%B8%80%E4%B8%AA-%E5%8D%95%E5%8F%8C%E9%83%BD%E4%BC%9A%E6%94%B9%E5%8F%98.mp3"
     },
     {
-      "id": "prompt-原来有45个-拿走一个以后是多少-选出符合条件的一张图卡-一长条代表10-一小块代表1",
+      "id": "prompt-原来有45个-拿走一个以后是多少-选出剩下的数量-一长条代表10-一小块代表1",
       "kind": "prompt",
-      "text": "原来有45个，拿走一个以后是多少。选出符合条件的一张图卡。一长条代表10，一小块代表1。",
+      "text": "原来有45个，拿走一个以后是多少。选出剩下的数量。一长条代表10，一小块代表1。",
       "locale": "zh-CN",
       "voice": "zh-CN-XiaoxiaoNeural",
-      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%8E%9F%E6%9D%A5%E6%9C%8945%E4%B8%AA-%E6%8B%BF%E8%B5%B0%E4%B8%80%E4%B8%AA%E4%BB%A5%E5%90%8E%E6%98%AF%E5%A4%9A%E5%B0%91-%E9%80%89%E5%87%BA%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E4%B8%80%E5%BC%A0%E5%9B%BE%E5%8D%A1-%E4%B8%80%E9%95%BF%E6%9D%A1%E4%BB%A3%E8%A1%A810-%E4%B8%80%E5%B0%8F%E5%9D%97%E4%BB%A3%E8%A1%A81.mp3"
+      "src": "/audio/voice/zh-CN/edge-zh-cn-xiaoxiaoneural/prompt-%E5%8E%9F%E6%9D%A5%E6%9C%8945%E4%B8%AA-%E6%8B%BF%E8%B5%B0%E4%B8%80%E4%B8%AA%E4%BB%A5%E5%90%8E%E6%98%AF%E5%A4%9A%E5%B0%91-%E9%80%89%E5%87%BA%E5%89%A9%E4%B8%8B%E7%9A%84%E6%95%B0%E9%87%8F-%E4%B8%80%E9%95%BF%E6%9D%A1%E4%BB%A3%E8%A1%A810-%E4%B8%80%E5%B0%8F%E5%9D%97%E4%BB%A3%E8%A1%A81.mp3"
     },
     {
       "id": "success-45拿走一变成44-每增加或减少一个-单双都会改变",

@@ -1,0 +1,55 @@
+The following is a diff from the previous accessibility tree for Window: "小小思考屋" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 146-166
+~				57 container 队伍有多长
+~					133 container 队伍有多长
+~							135 text 组合挑战  · 第  9  / 9  题
+~							136 heading 队伍有多长, Value: 1
+~								137 text 队伍有多长
+~						139 heading 两个数队伍的小朋友都数到了小兔。左边这组含小兔有5位，右边这组含小兔有6位。合起来有几位？, Value: 2
+~							140 text 两个数队伍的小朋友都数到了小兔。左边这组含小兔有5位，右边这组含小兔有6位。合起来有几位？
+~						141 text 指着朋友数一数，再选队伍的总人数。
+~							143 text 一起排队数一数
+~							145 container 朋友排队和两次计数
++								146 container 左边这一组：5位
++									147 text 左边这一组：5位 1 2 3 4 5
++								148 container 完整的朋友队伍
++									149 image 队伍第1位：小猫
++									150 image 队伍第2位：小狗
++									151 image 队伍第3位：小熊
++									152 image 队伍第4位：小猫
++									153 container
++										154 image 队伍第5位：小兔
++										155 text 小兔
++									156 image 队伍第6位：小狗
++									157 image 队伍第7位：小熊
++									158 image 队伍第8位：小猫
++									159 image 队伍第9位：小狗
++									160 image 队伍第10位：小熊
++								161 container 右边这一组：6位
++									162 text 右边这一组：6位 6 5 4 3 2 1
++							163 text 5 + 6 − 1 = 10 位 小兔被两边各数了一次，合起来时只算一次。
++							164 button 听图解
++						165 container 选择一个答案
++							166 toggle button 11, Value: off
++							167 toggle button 9, Value: off
++							168 toggle button 12, Value: off
++							169 toggle button 10, Value: off
++						170 button (disabled) 撤销上一步
++						171 button 清空
++						172 button 提示
++						173 button 选好了，看看
++						174 container
++							175 text 这次尝试  0  次 · 提示  0  次
++							176 button 先跳过
+~					96 text 0  /  9  已做
++					177 button 跳到第 1 题
++					178 button 跳到第 2 题
++					179 button 跳到第 3 题
++					180 button 跳到第 4 题
++					181 button 跳到第 5 题
++					182 button 跳到第 6 题
++					183 button 跳到第 7 题
++					184 button 跳到第 8 题
++					185 button 跳到第 9 题
++		186 scroll bar (settable, float) 0
+The focused UI element is 2 HTML content Description: 小小思考屋, URL: tauri://localhost

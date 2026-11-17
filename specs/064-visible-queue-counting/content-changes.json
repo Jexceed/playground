@@ -1,0 +1,272 @@
+[
+  {
+    "id": "explore-ordinal-queue-1",
+    "fields": [
+      "revision",
+      "instruction",
+      "hints",
+      "retry",
+      "parentPrompt"
+    ],
+    "before": {
+      "revision": 2,
+      "instruction": "选出队伍的总人数。",
+      "hints": [
+        "从左数到小兔时，小兔也算在里面。",
+        "再加上小兔后面的朋友。"
+      ],
+      "retry": "从左数到小兔有几位？后面还有几位？把这两部分合起来。",
+      "parentPrompt": "从左数到小兔的这一部分包括小兔吗？后面的朋友包括小兔吗？"
+    },
+    "after": {
+      "revision": 3,
+      "instruction": "指着朋友数一数，再选队伍的总人数。",
+      "hints": [
+        "先沿绿色的数字，从左边数到小兔。",
+        "再沿蓝色的数字，数小兔后面的朋友。"
+      ],
+      "retry": "沿着图中的两条数数线，再指一指每位朋友。",
+      "parentPrompt": "请孩子指着小兔，说说为什么后面从下一位开始数；再从另一头数整队，看看总数是否一样。"
+    }
+  },
+  {
+    "id": "explore-ordinal-queue-2",
+    "fields": [
+      "revision",
+      "instruction",
+      "hints",
+      "retry",
+      "parentPrompt"
+    ],
+    "before": {
+      "revision": 2,
+      "instruction": "选出队伍的总人数。",
+      "hints": [
+        "从左数到小兔时，小兔也算在里面。",
+        "再加上小兔后面的朋友。"
+      ],
+      "retry": "从左数到小兔有几位？后面还有几位？把这两部分合起来。",
+      "parentPrompt": "从左数到小兔的这一部分包括小兔吗？后面的朋友包括小兔吗？"
+    },
+    "after": {
+      "revision": 3,
+      "instruction": "指着朋友数一数，再选队伍的总人数。",
+      "hints": [
+        "先沿绿色的数字，从左边数到小兔。",
+        "再沿蓝色的数字，数小兔后面的朋友。"
+      ],
+      "retry": "沿着图中的两条数数线，再指一指每位朋友。",
+      "parentPrompt": "请孩子指着小兔，说说为什么后面从下一位开始数；再从另一头数整队，看看总数是否一样。"
+    }
+  },
+  {
+    "id": "explore-ordinal-queue-3",
+    "fields": [
+      "revision",
+      "instruction",
+      "hints",
+      "retry",
+      "parentPrompt"
+    ],
+    "before": {
+      "revision": 2,
+      "instruction": "选出队伍的总人数。",
+      "hints": [
+        "从左数到小兔时，小兔也算在里面。",
+        "再加上小兔后面的朋友。"
+      ],
+      "retry": "从左数到小兔有几位？后面还有几位？把这两部分合起来。",
+      "parentPrompt": "从左数到小兔的这一部分包括小兔吗？后面的朋友包括小兔吗？"
+    },
+    "after": {
+      "revision": 3,
+      "instruction": "指着朋友数一数，再选队伍的总人数。",
+      "hints": [
+        "先沿绿色的数字，从左边数到小兔。",
+        "再沿蓝色的数字，数小兔后面的朋友。"
+      ],
+      "retry": "沿着图中的两条数数线，再指一指每位朋友。",
+      "parentPrompt": "请孩子指着小兔，说说为什么后面从下一位开始数；再从另一头数整队，看看总数是否一样。"
+    }
+  },
+  {
+    "id": "explore-ordinal-queue-4",
+    "fields": [
+      "revision",
+      "instruction",
+      "hints",
+      "retry",
+      "parentPrompt"
+    ],
+    "before": {
+      "revision": 2,
+      "instruction": "选出队伍的总人数。",
+      "hints": [
+        "先找到图里和问题有关的部分。",
+        "两边都数到小兔，小兔重复了一次。3加4再减一，是6。"
+      ],
+      "retry": "再对照图和题目的条件，一步一步检查。",
+      "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？"
+    },
+    "after": {
+      "revision": 3,
+      "instruction": "指着朋友数一数，再选队伍的总人数。",
+      "hints": [
+        "先看绿色这组数到了哪些朋友。",
+        "再看蓝色这组，小兔是不是又被数到了？"
+      ],
+      "retry": "沿着图中的两条数数线，再指一指每位朋友。",
+      "parentPrompt": "请孩子指出两条数数线在哪里相交：队伍里有几只小兔？为什么合起来时只算它一次？"
+    }
+  },
+  {
+    "id": "explore-ordinal-queue-5",
+    "fields": [
+      "revision",
+      "instruction",
+      "hints",
+      "retry",
+      "parentPrompt"
+    ],
+    "before": {
+      "revision": 2,
+      "instruction": "选出队伍的总人数。",
+      "hints": [
+        "先找到图里和问题有关的部分。",
+        "两边都数到小兔，小兔重复了一次。4加5再减一，是8。"
+      ],
+      "retry": "再对照图和题目的条件，一步一步检查。",
+      "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？"
+    },
+    "after": {
+      "revision": 3,
+      "instruction": "指着朋友数一数，再选队伍的总人数。",
+      "hints": [
+        "先看绿色这组数到了哪些朋友。",
+        "再看蓝色这组，小兔是不是又被数到了？"
+      ],
+      "retry": "沿着图中的两条数数线，再指一指每位朋友。",
+      "parentPrompt": "请孩子指出两条数数线在哪里相交：队伍里有几只小兔？为什么合起来时只算它一次？"
+    }
+  },
+  {
+    "id": "explore-ordinal-queue-6",
+    "fields": [
+      "revision",
+      "instruction",
+      "hints",
+      "retry",
+      "parentPrompt"
+    ],
+    "before": {
+      "revision": 2,
+      "instruction": "选出队伍的总人数。",
+      "hints": [
+        "先找到图里和问题有关的部分。",
+        "两边都数到小兔，小兔重复了一次。5加6再减一，是10。"
+      ],
+      "retry": "再对照图和题目的条件，一步一步检查。",
+      "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？"
+    },
+    "after": {
+      "revision": 3,
+      "instruction": "指着朋友数一数，再选队伍的总人数。",
+      "hints": [
+        "先看绿色这组数到了哪些朋友。",
+        "再看蓝色这组，小兔是不是又被数到了？"
+      ],
+      "retry": "沿着图中的两条数数线，再指一指每位朋友。",
+      "parentPrompt": "请孩子指出两条数数线在哪里相交：队伍里有几只小兔？为什么合起来时只算它一次？"
+    }
+  },
+  {
+    "id": "explore-ordinal-queue-7",
+    "fields": [
+      "revision",
+      "instruction",
+      "hints",
+      "retry",
+      "parentPrompt"
+    ],
+    "before": {
+      "revision": 2,
+      "instruction": "选出队伍的总人数。",
+      "hints": [
+        "先找到图里和问题有关的部分。",
+        "两边都数到小兔，小兔重复了一次。3加4再减一，是6。"
+      ],
+      "retry": "再对照图和题目的条件，一步一步检查。",
+      "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？"
+    },
+    "after": {
+      "revision": 3,
+      "instruction": "指着朋友数一数，再选队伍的总人数。",
+      "hints": [
+        "先看绿色这组数到了哪些朋友。",
+        "再看蓝色这组，小兔是不是又被数到了？"
+      ],
+      "retry": "沿着图中的两条数数线，再指一指每位朋友。",
+      "parentPrompt": "请孩子指出两条数数线在哪里相交：队伍里有几只小兔？为什么合起来时只算它一次？"
+    }
+  },
+  {
+    "id": "explore-ordinal-queue-8",
+    "fields": [
+      "revision",
+      "instruction",
+      "hints",
+      "retry",
+      "parentPrompt"
+    ],
+    "before": {
+      "revision": 2,
+      "instruction": "选出队伍的总人数。",
+      "hints": [
+        "先找到图里和问题有关的部分。",
+        "两边都数到小兔，小兔重复了一次。4加5再减一，是8。"
+      ],
+      "retry": "再对照图和题目的条件，一步一步检查。",
+      "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？"
+    },
+    "after": {
+      "revision": 3,
+      "instruction": "指着朋友数一数，再选队伍的总人数。",
+      "hints": [
+        "先看绿色这组数到了哪些朋友。",
+        "再看蓝色这组，小兔是不是又被数到了？"
+      ],
+      "retry": "沿着图中的两条数数线，再指一指每位朋友。",
+      "parentPrompt": "请孩子指出两条数数线在哪里相交：队伍里有几只小兔？为什么合起来时只算它一次？"
+    }
+  },
+  {
+    "id": "explore-ordinal-queue-9",
+    "fields": [
+      "revision",
+      "instruction",
+      "hints",
+      "retry",
+      "parentPrompt"
+    ],
+    "before": {
+      "revision": 2,
+      "instruction": "选出队伍的总人数。",
+      "hints": [
+        "先找到图里和问题有关的部分。",
+        "两边都数到小兔，小兔重复了一次。5加6再减一，是10。"
+      ],
+      "retry": "再对照图和题目的条件，一步一步检查。",
+      "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？"
+    },
+    "after": {
+      "revision": 3,
+      "instruction": "指着朋友数一数，再选队伍的总人数。",
+      "hints": [
+        "先看绿色这组数到了哪些朋友。",
+        "再看蓝色这组，小兔是不是又被数到了？"
+      ],
+      "retry": "沿着图中的两条数数线，再指一指每位朋友。",
+      "parentPrompt": "请孩子指出两条数数线在哪里相交：队伍里有几只小兔？为什么合起来时只算它一次？"
+    }
+  }
+]

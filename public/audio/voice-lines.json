@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-29T14:47:32.238Z",
+  "generatedAt": "2026-11-16T15:10:01.067Z",
   "recommendedVoice": "warm adult female Mandarin, smiling, preschool teacher, 0.85 speed, crisp consonants",
-  "lineCount": 4397,
+  "lineCount": 4411,
   "lines": [
     {
       "id": "game-title-数一数",
@@ -28210,15 +28210,6 @@
         "explore-area-fractions/explore-area-fractions-7",
         "explore-area-fractions/explore-area-fractions-8",
         "explore-area-fractions/explore-area-fractions-9",
-        "explore-ordinal-queue/explore-ordinal-queue-1",
-        "explore-ordinal-queue/explore-ordinal-queue-2",
-        "explore-ordinal-queue/explore-ordinal-queue-3",
-        "explore-ordinal-queue/explore-ordinal-queue-4",
-        "explore-ordinal-queue/explore-ordinal-queue-5",
-        "explore-ordinal-queue/explore-ordinal-queue-6",
-        "explore-ordinal-queue/explore-ordinal-queue-7",
-        "explore-ordinal-queue/explore-ordinal-queue-8",
-        "explore-ordinal-queue/explore-ordinal-queue-9",
         "explore-parity-place-value/explore-parity-place-value-1",
         "explore-parity-place-value/explore-parity-place-value-2",
         "explore-parity-place-value/explore-parity-place-value-3",
@@ -28807,15 +28798,6 @@
         "explore-area-fractions/explore-area-fractions-7",
         "explore-area-fractions/explore-area-fractions-8",
         "explore-area-fractions/explore-area-fractions-9",
-        "explore-ordinal-queue/explore-ordinal-queue-1",
-        "explore-ordinal-queue/explore-ordinal-queue-2",
-        "explore-ordinal-queue/explore-ordinal-queue-3",
-        "explore-ordinal-queue/explore-ordinal-queue-4",
-        "explore-ordinal-queue/explore-ordinal-queue-5",
-        "explore-ordinal-queue/explore-ordinal-queue-6",
-        "explore-ordinal-queue/explore-ordinal-queue-7",
-        "explore-ordinal-queue/explore-ordinal-queue-8",
-        "explore-ordinal-queue/explore-ordinal-queue-9",
         "explore-parity-place-value/explore-parity-place-value-1",
         "explore-parity-place-value/explore-parity-place-value-2",
         "explore-parity-place-value/explore-parity-place-value-3",
@@ -29328,15 +29310,6 @@
         "explore-group-share/explore-group-share-7",
         "explore-group-share/explore-group-share-8",
         "explore-group-share/explore-group-share-9",
-        "explore-ordinal-queue/explore-ordinal-queue-1",
-        "explore-ordinal-queue/explore-ordinal-queue-2",
-        "explore-ordinal-queue/explore-ordinal-queue-3",
-        "explore-ordinal-queue/explore-ordinal-queue-4",
-        "explore-ordinal-queue/explore-ordinal-queue-5",
-        "explore-ordinal-queue/explore-ordinal-queue-6",
-        "explore-ordinal-queue/explore-ordinal-queue-7",
-        "explore-ordinal-queue/explore-ordinal-queue-8",
-        "explore-ordinal-queue/explore-ordinal-queue-9",
         "explore-number-sequences/explore-number-sequences-1",
         "explore-number-sequences/explore-number-sequences-2",
         "explore-number-sequences/explore-number-sequences-3",
@@ -31263,9 +31236,9 @@
       ]
     },
     {
-      "id": "prompt-10加7等于多少-先试试凑成十-选出符合条件的一张图卡",
+      "id": "prompt-10加7等于多少-选出符合条件的一张图卡",
       "kind": "prompt",
-      "text": "10加7等于多少？先试试凑成十。选出符合条件的一张图卡。",
+      "text": "10加7等于多少。选出符合条件的一张图卡。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -31273,9 +31246,9 @@
       ]
     },
     {
-      "id": "success-把7拆成0和7-先凑十-再加剩下的-得到17",
+      "id": "success-已经有1个十-再加7个一-是17",
       "kind": "success",
-      "text": "把7拆成0和7，先凑十，再加剩下的，得到17。",
+      "text": "已经有1个十，再加7个一，是17。",
       "locale": "zh-CN",
       "tone": "warm, delighted, clear",
       "contexts": [
@@ -31283,9 +31256,9 @@
       ]
     },
     {
-      "id": "hint-把7拆成0和7-先凑十-再加剩下的-得到17",
+      "id": "hint-已经有1个十-再加7个一-是17",
       "kind": "hint",
-      "text": "把7拆成0和7，先凑十，再加剩下的，得到17。",
+      "text": "已经有1个十，再加7个一，是17。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -32692,9 +32665,9 @@
       ]
     },
     {
-      "id": "prompt-小兔从左数第3-后面还有3位朋友-队伍一共有几位-选出符合条件的一张图卡",
+      "id": "prompt-小兔从左数第3-后面还有3位朋友-队伍一共有几位-指着朋友数一数-再选队伍的总人数",
       "kind": "prompt",
-      "text": "小兔从左数第3，后面还有3位朋友。队伍一共有几位。选出符合条件的一张图卡。",
+      "text": "小兔从左数第3，后面还有3位朋友。队伍一共有几位。指着朋友数一数，再选队伍的总人数。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -32702,15 +32675,53 @@
       ]
     },
     {
-      "id": "success-两边都数到小兔-小兔重复了一次-3加4再减一-是6",
+      "id": "clue-从左边开始数-1-2-3-数到小兔-是3位-小兔后面的朋友-从下一位开始数-1-2-3-后面还有3位-3加3-一共6位",
+      "kind": "clue",
+      "text": "从左边开始数：1，2，3。数到小兔，是3位。小兔后面的朋友，从下一位开始数：1，2，3。后面还有3位。3加3，一共6位。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-ordinal-queue/explore-ordinal-queue-1"
+      ]
+    },
+    {
+      "id": "success-从左数到小兔有3位-后面还有3位-3加3是6",
       "kind": "success",
-      "text": "两边都数到小兔，小兔重复了一次。3加4再减一，是6。",
+      "text": "从左数到小兔有3位，后面还有3位。3加3是6。",
       "locale": "zh-CN",
       "tone": "warm, delighted, clear",
       "contexts": [
+        "explore-ordinal-queue/explore-ordinal-queue-1"
+      ]
+    },
+    {
+      "id": "retry-沿着图中的两条数数线-再指一指每位朋友",
+      "kind": "retry",
+      "text": "沿着图中的两条数数线，再指一指每位朋友。",
+      "locale": "zh-CN",
+      "tone": "gentle, encouraging, slow",
+      "contexts": [
         "explore-ordinal-queue/explore-ordinal-queue-1",
+        "explore-ordinal-queue/explore-ordinal-queue-2",
+        "explore-ordinal-queue/explore-ordinal-queue-3",
         "explore-ordinal-queue/explore-ordinal-queue-4",
-        "explore-ordinal-queue/explore-ordinal-queue-7"
+        "explore-ordinal-queue/explore-ordinal-queue-5",
+        "explore-ordinal-queue/explore-ordinal-queue-6",
+        "explore-ordinal-queue/explore-ordinal-queue-7",
+        "explore-ordinal-queue/explore-ordinal-queue-8",
+        "explore-ordinal-queue/explore-ordinal-queue-9"
+      ]
+    },
+    {
+      "id": "parent-请孩子指着小兔-说说为什么后面从下一位开始数-再从另一头数整队-看看总数是否一样",
+      "kind": "parent",
+      "text": "请孩子指着小兔，说说为什么后面从下一位开始数；再从另一头数整队，看看总数是否一样。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-ordinal-queue/explore-ordinal-queue-1",
+        "explore-ordinal-queue/explore-ordinal-queue-2",
+        "explore-ordinal-queue/explore-ordinal-queue-3"
       ]
     },
     {
@@ -32726,21 +32737,33 @@
       ]
     },
     {
-      "id": "hint-两边都数到小兔-小兔重复了一次-3加4再减一-是6",
+      "id": "hint-先沿绿色的数字-从左边数到小兔",
       "kind": "hint",
-      "text": "两边都数到小兔，小兔重复了一次。3加4再减一，是6。",
+      "text": "先沿绿色的数字，从左边数到小兔。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
         "explore-ordinal-queue/explore-ordinal-queue-1",
-        "explore-ordinal-queue/explore-ordinal-queue-4",
-        "explore-ordinal-queue/explore-ordinal-queue-7"
+        "explore-ordinal-queue/explore-ordinal-queue-2",
+        "explore-ordinal-queue/explore-ordinal-queue-3"
       ]
     },
     {
-      "id": "prompt-小兔从左数第4-后面还有4位朋友-队伍一共有几位-选出符合条件的一张图卡",
+      "id": "hint-再沿蓝色的数字-数小兔后面的朋友",
+      "kind": "hint",
+      "text": "再沿蓝色的数字，数小兔后面的朋友。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-ordinal-queue/explore-ordinal-queue-1",
+        "explore-ordinal-queue/explore-ordinal-queue-2",
+        "explore-ordinal-queue/explore-ordinal-queue-3"
+      ]
+    },
+    {
+      "id": "prompt-小兔从左数第4-后面还有4位朋友-队伍一共有几位-指着朋友数一数-再选队伍的总人数",
       "kind": "prompt",
-      "text": "小兔从左数第4，后面还有4位朋友。队伍一共有几位。选出符合条件的一张图卡。",
+      "text": "小兔从左数第4，后面还有4位朋友。队伍一共有几位。指着朋友数一数，再选队伍的总人数。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -32748,33 +32771,29 @@
       ]
     },
     {
-      "id": "success-两边都数到小兔-小兔重复了一次-4加5再减一-是8",
-      "kind": "success",
-      "text": "两边都数到小兔，小兔重复了一次。4加5再减一，是8。",
-      "locale": "zh-CN",
-      "tone": "warm, delighted, clear",
-      "contexts": [
-        "explore-ordinal-queue/explore-ordinal-queue-2",
-        "explore-ordinal-queue/explore-ordinal-queue-5",
-        "explore-ordinal-queue/explore-ordinal-queue-8"
-      ]
-    },
-    {
-      "id": "hint-两边都数到小兔-小兔重复了一次-4加5再减一-是8",
-      "kind": "hint",
-      "text": "两边都数到小兔，小兔重复了一次。4加5再减一，是8。",
+      "id": "clue-从左边开始数-1-2-3-4-数到小兔-是4位-小兔后面的朋友-从下一位开始数-1-2-3-4-后面还有4位-4加4-一共8位",
+      "kind": "clue",
+      "text": "从左边开始数：1，2，3，4。数到小兔，是4位。小兔后面的朋友，从下一位开始数：1，2，3，4。后面还有4位。4加4，一共8位。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "explore-ordinal-queue/explore-ordinal-queue-2",
-        "explore-ordinal-queue/explore-ordinal-queue-5",
-        "explore-ordinal-queue/explore-ordinal-queue-8"
+        "explore-ordinal-queue/explore-ordinal-queue-2"
       ]
     },
     {
-      "id": "prompt-小兔从左数第5-后面还有5位朋友-队伍一共有几位-选出符合条件的一张图卡",
+      "id": "success-从左数到小兔有4位-后面还有4位-4加4是8",
+      "kind": "success",
+      "text": "从左数到小兔有4位，后面还有4位。4加4是8。",
+      "locale": "zh-CN",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "explore-ordinal-queue/explore-ordinal-queue-2"
+      ]
+    },
+    {
+      "id": "prompt-小兔从左数第5-后面还有5位朋友-队伍一共有几位-指着朋友数一数-再选队伍的总人数",
       "kind": "prompt",
-      "text": "小兔从左数第5，后面还有5位朋友。队伍一共有几位。选出符合条件的一张图卡。",
+      "text": "小兔从左数第5，后面还有5位朋友。队伍一共有几位。指着朋友数一数，再选队伍的总人数。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -32782,37 +32801,70 @@
       ]
     },
     {
-      "id": "success-两边都数到小兔-小兔重复了一次-5加6再减一-是10",
-      "kind": "success",
-      "text": "两边都数到小兔，小兔重复了一次。5加6再减一，是10。",
-      "locale": "zh-CN",
-      "tone": "warm, delighted, clear",
-      "contexts": [
-        "explore-ordinal-queue/explore-ordinal-queue-3",
-        "explore-ordinal-queue/explore-ordinal-queue-6",
-        "explore-ordinal-queue/explore-ordinal-queue-9"
-      ]
-    },
-    {
-      "id": "hint-两边都数到小兔-小兔重复了一次-5加6再减一-是10",
-      "kind": "hint",
-      "text": "两边都数到小兔，小兔重复了一次。5加6再减一，是10。",
+      "id": "clue-从左边开始数-1-2-3-4-5-数到小兔-是5位-小兔后面的朋友-从下一位开始数-1-2-3-4-5-后面还有5位-5加5-一共10位",
+      "kind": "clue",
+      "text": "从左边开始数：1，2，3，4，5。数到小兔，是5位。小兔后面的朋友，从下一位开始数：1，2，3，4，5。后面还有5位。5加5，一共10位。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
-        "explore-ordinal-queue/explore-ordinal-queue-3",
-        "explore-ordinal-queue/explore-ordinal-queue-6",
-        "explore-ordinal-queue/explore-ordinal-queue-9"
+        "explore-ordinal-queue/explore-ordinal-queue-3"
       ]
     },
     {
-      "id": "prompt-小兔从左数第3-从右数第4-队伍一共有几位-选出符合条件的一张图卡",
+      "id": "success-从左数到小兔有5位-后面还有5位-5加5是10",
+      "kind": "success",
+      "text": "从左数到小兔有5位，后面还有5位。5加5是10。",
+      "locale": "zh-CN",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "explore-ordinal-queue/explore-ordinal-queue-3"
+      ]
+    },
+    {
+      "id": "prompt-小兔从左数第3-从右数第4-队伍一共有几位-指着朋友数一数-再选队伍的总人数",
       "kind": "prompt",
-      "text": "小兔从左数第3，从右数第4。队伍一共有几位。选出符合条件的一张图卡。",
+      "text": "小兔从左数第3，从右数第4。队伍一共有几位。指着朋友数一数，再选队伍的总人数。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
         "explore-ordinal-queue/explore-ordinal-queue-4"
+      ]
+    },
+    {
+      "id": "clue-从左边开始数-1-2-3-数到小兔-是3位-再从右边数-1-2-3-4-也数到这只小兔-是4位-小兔被两边各数了一次-合起来时只算一次-3加4再减一-",
+      "kind": "clue",
+      "text": "从左边开始数：1，2，3。数到小兔，是3位。再从右边数：1，2，3，4。也数到这只小兔，是4位。小兔被两边各数了一次，合起来时只算一次。3加4再减一，一共6位。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-ordinal-queue/explore-ordinal-queue-4",
+        "explore-ordinal-queue/explore-ordinal-queue-7"
+      ]
+    },
+    {
+      "id": "success-两边都数到小兔-小兔重复了一次-3加4再减一-是6",
+      "kind": "success",
+      "text": "两边都数到小兔，小兔重复了一次。3加4再减一，是6。",
+      "locale": "zh-CN",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "explore-ordinal-queue/explore-ordinal-queue-4",
+        "explore-ordinal-queue/explore-ordinal-queue-7"
+      ]
+    },
+    {
+      "id": "parent-请孩子指出两条数数线在哪里相交-队伍里有几只小兔-为什么合起来时只算它一次",
+      "kind": "parent",
+      "text": "请孩子指出两条数数线在哪里相交：队伍里有几只小兔？为什么合起来时只算它一次？",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-ordinal-queue/explore-ordinal-queue-4",
+        "explore-ordinal-queue/explore-ordinal-queue-5",
+        "explore-ordinal-queue/explore-ordinal-queue-6",
+        "explore-ordinal-queue/explore-ordinal-queue-7",
+        "explore-ordinal-queue/explore-ordinal-queue-8",
+        "explore-ordinal-queue/explore-ordinal-queue-9"
       ]
     },
     {
@@ -32828,9 +32880,39 @@
       ]
     },
     {
-      "id": "prompt-小兔从左数第4-从右数第5-队伍一共有几位-选出符合条件的一张图卡",
+      "id": "hint-先看绿色这组数到了哪些朋友",
+      "kind": "hint",
+      "text": "先看绿色这组数到了哪些朋友。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-ordinal-queue/explore-ordinal-queue-4",
+        "explore-ordinal-queue/explore-ordinal-queue-5",
+        "explore-ordinal-queue/explore-ordinal-queue-6",
+        "explore-ordinal-queue/explore-ordinal-queue-7",
+        "explore-ordinal-queue/explore-ordinal-queue-8",
+        "explore-ordinal-queue/explore-ordinal-queue-9"
+      ]
+    },
+    {
+      "id": "hint-再看蓝色这组-小兔是不是又被数到了",
+      "kind": "hint",
+      "text": "再看蓝色这组，小兔是不是又被数到了？",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-ordinal-queue/explore-ordinal-queue-4",
+        "explore-ordinal-queue/explore-ordinal-queue-5",
+        "explore-ordinal-queue/explore-ordinal-queue-6",
+        "explore-ordinal-queue/explore-ordinal-queue-7",
+        "explore-ordinal-queue/explore-ordinal-queue-8",
+        "explore-ordinal-queue/explore-ordinal-queue-9"
+      ]
+    },
+    {
+      "id": "prompt-小兔从左数第4-从右数第5-队伍一共有几位-指着朋友数一数-再选队伍的总人数",
       "kind": "prompt",
-      "text": "小兔从左数第4，从右数第5。队伍一共有几位。选出符合条件的一张图卡。",
+      "text": "小兔从左数第4，从右数第5。队伍一共有几位。指着朋友数一数，再选队伍的总人数。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -32838,9 +32920,31 @@
       ]
     },
     {
-      "id": "prompt-小兔从左数第5-从右数第6-队伍一共有几位-选出符合条件的一张图卡",
+      "id": "clue-从左边开始数-1-2-3-4-数到小兔-是4位-再从右边数-1-2-3-4-5-也数到这只小兔-是5位-小兔被两边各数了一次-合起来时只算一次-4加5",
+      "kind": "clue",
+      "text": "从左边开始数：1，2，3，4。数到小兔，是4位。再从右边数：1，2，3，4，5。也数到这只小兔，是5位。小兔被两边各数了一次，合起来时只算一次。4加5再减一，一共8位。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-ordinal-queue/explore-ordinal-queue-5",
+        "explore-ordinal-queue/explore-ordinal-queue-8"
+      ]
+    },
+    {
+      "id": "success-两边都数到小兔-小兔重复了一次-4加5再减一-是8",
+      "kind": "success",
+      "text": "两边都数到小兔，小兔重复了一次。4加5再减一，是8。",
+      "locale": "zh-CN",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "explore-ordinal-queue/explore-ordinal-queue-5",
+        "explore-ordinal-queue/explore-ordinal-queue-8"
+      ]
+    },
+    {
+      "id": "prompt-小兔从左数第5-从右数第6-队伍一共有几位-指着朋友数一数-再选队伍的总人数",
       "kind": "prompt",
-      "text": "小兔从左数第5，从右数第6。队伍一共有几位。选出符合条件的一张图卡。",
+      "text": "小兔从左数第5，从右数第6。队伍一共有几位。指着朋友数一数，再选队伍的总人数。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -32848,9 +32952,31 @@
       ]
     },
     {
-      "id": "prompt-两个数队伍的小朋友都数到了小兔-左边这组含小兔有3位-右边这组含小兔有4位-合起来有几位-选出符合条件的一张图卡",
+      "id": "clue-从左边开始数-1-2-3-4-5-数到小兔-是5位-再从右边数-1-2-3-4-5-6-也数到这只小兔-是6位-小兔被两边各数了一次-合起来时只算一次",
+      "kind": "clue",
+      "text": "从左边开始数：1，2，3，4，5。数到小兔，是5位。再从右边数：1，2，3，4，5，6。也数到这只小兔，是6位。小兔被两边各数了一次，合起来时只算一次。5加6再减一，一共10位。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-ordinal-queue/explore-ordinal-queue-6",
+        "explore-ordinal-queue/explore-ordinal-queue-9"
+      ]
+    },
+    {
+      "id": "success-两边都数到小兔-小兔重复了一次-5加6再减一-是10",
+      "kind": "success",
+      "text": "两边都数到小兔，小兔重复了一次。5加6再减一，是10。",
+      "locale": "zh-CN",
+      "tone": "warm, delighted, clear",
+      "contexts": [
+        "explore-ordinal-queue/explore-ordinal-queue-6",
+        "explore-ordinal-queue/explore-ordinal-queue-9"
+      ]
+    },
+    {
+      "id": "prompt-两个数队伍的小朋友都数到了小兔-左边这组含小兔有3位-右边这组含小兔有4位-合起来有几位-指着朋友数一数-再选队伍的总人数",
       "kind": "prompt",
-      "text": "两个数队伍的小朋友都数到了小兔。左边这组含小兔有3位，右边这组含小兔有4位。合起来有几位。选出符合条件的一张图卡。",
+      "text": "两个数队伍的小朋友都数到了小兔。左边这组含小兔有3位，右边这组含小兔有4位。合起来有几位。指着朋友数一数，再选队伍的总人数。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -32870,9 +32996,9 @@
       ]
     },
     {
-      "id": "prompt-两个数队伍的小朋友都数到了小兔-左边这组含小兔有4位-右边这组含小兔有5位-合起来有几位-选出符合条件的一张图卡",
+      "id": "prompt-两个数队伍的小朋友都数到了小兔-左边这组含小兔有4位-右边这组含小兔有5位-合起来有几位-指着朋友数一数-再选队伍的总人数",
       "kind": "prompt",
-      "text": "两个数队伍的小朋友都数到了小兔。左边这组含小兔有4位，右边这组含小兔有5位。合起来有几位。选出符合条件的一张图卡。",
+      "text": "两个数队伍的小朋友都数到了小兔。左边这组含小兔有4位，右边这组含小兔有5位。合起来有几位。指着朋友数一数，再选队伍的总人数。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -32880,9 +33006,9 @@
       ]
     },
     {
-      "id": "prompt-两个数队伍的小朋友都数到了小兔-左边这组含小兔有5位-右边这组含小兔有6位-合起来有几位-选出符合条件的一张图卡",
+      "id": "prompt-两个数队伍的小朋友都数到了小兔-左边这组含小兔有5位-右边这组含小兔有6位-合起来有几位-指着朋友数一数-再选队伍的总人数",
       "kind": "prompt",
-      "text": "两个数队伍的小朋友都数到了小兔。左边这组含小兔有5位，右边这组含小兔有6位。合起来有几位。选出符合条件的一张图卡。",
+      "text": "两个数队伍的小朋友都数到了小兔。左边这组含小兔有5位，右边这组含小兔有6位。合起来有几位。指着朋友数一数，再选队伍的总人数。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -33051,10 +33177,7 @@
       "contexts": [
         "explore-parity-place-value/explore-parity-place-value-4",
         "explore-parity-place-value/explore-parity-place-value-5",
-        "explore-parity-place-value/explore-parity-place-value-6",
-        "explore-parity-place-value/explore-parity-place-value-7",
-        "explore-parity-place-value/explore-parity-place-value-8",
-        "explore-parity-place-value/explore-parity-place-value-9"
+        "explore-parity-place-value/explore-parity-place-value-6"
       ]
     },
     {
@@ -33193,9 +33316,9 @@
       ]
     },
     {
-      "id": "prompt-原来有23个-拿走一个以后是多少-选出符合条件的一张图卡-一长条代表10-一小块代表1",
+      "id": "prompt-原来有23个-拿走一个以后是多少-选出剩下的数量-一长条代表10-一小块代表1",
       "kind": "prompt",
-      "text": "原来有23个，拿走一个以后是多少。选出符合条件的一张图卡。一长条代表10，一小块代表1。",
+      "text": "原来有23个，拿走一个以后是多少。选出剩下的数量。一长条代表10，一小块代表1。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -33235,6 +33358,18 @@
       ]
     },
     {
+      "id": "hint-只拿走一小块-一长条保持不动",
+      "kind": "hint",
+      "text": "只拿走一小块，一长条保持不动。",
+      "locale": "zh-CN",
+      "tone": "friendly, clear, playful",
+      "contexts": [
+        "explore-parity-place-value/explore-parity-place-value-7",
+        "explore-parity-place-value/explore-parity-place-value-8",
+        "explore-parity-place-value/explore-parity-place-value-9"
+      ]
+    },
+    {
       "id": "hint-23拿走一变成22-每增加或减少一个-单双都会改变",
       "kind": "hint",
       "text": "23拿走一变成22。每增加或减少一个，单双都会改变。",
@@ -33245,9 +33380,9 @@
       ]
     },
     {
-      "id": "prompt-原来有34个-拿走一个以后是多少-选出符合条件的一张图卡-一长条代表10-一小块代表1",
+      "id": "prompt-原来有34个-拿走一个以后是多少-选出剩下的数量-一长条代表10-一小块代表1",
       "kind": "prompt",
-      "text": "原来有34个，拿走一个以后是多少。选出符合条件的一张图卡。一长条代表10，一小块代表1。",
+      "text": "原来有34个，拿走一个以后是多少。选出剩下的数量。一长条代表10，一小块代表1。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [
@@ -33285,9 +33420,9 @@
       ]
     },
     {
-      "id": "prompt-原来有45个-拿走一个以后是多少-选出符合条件的一张图卡-一长条代表10-一小块代表1",
+      "id": "prompt-原来有45个-拿走一个以后是多少-选出剩下的数量-一长条代表10-一小块代表1",
       "kind": "prompt",
-      "text": "原来有45个，拿走一个以后是多少。选出符合条件的一张图卡。一长条代表10，一小块代表1。",
+      "text": "原来有45个，拿走一个以后是多少。选出剩下的数量。一长条代表10，一小块代表1。",
       "locale": "zh-CN",
       "tone": "friendly, clear, playful",
       "contexts": [

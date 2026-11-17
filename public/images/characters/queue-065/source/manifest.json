@@ -1,0 +1,150 @@
+{
+  "date": "2026-11-16",
+  "tool": "built-in image_gen",
+  "assets": [
+    {
+      "key": "queueCatSilver",
+      "name": "cat-silver",
+      "reference": "public/images/characters/cat.png",
+      "referenceSHA256": "ea888ee9f66021e810d1c841a5c52ddb6a46acab0c4c75592501834246941f6b",
+      "source": "public/images/characters/queue-065/source/cat-silver-source.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceSHA256": "3213fb7f7b7e6e1424ad80ff92f341b72ea9df4fa23e78156cf1c0c37d6fbaea",
+      "runtime": "public/images/characters/queue-065/cat-silver.png",
+      "size": [
+        320,
+        320
+      ],
+      "runtimeSHA256": "b5e98bea73d555faa2ec14ca1b5b1839fff5f9b2d37f65a738169f3971999ecc",
+      "alpha": [
+        0,
+        255
+      ],
+      "conversion": "sharp resize 320x320, contain, transparent padding, complete source canvas",
+      "prompt": "Use case: precise-object-edit.\nAsset type: transparent animal portrait for a children's counting game.\nInput image 1 is the edit target. Change ONLY the fur coloration of this same cat to cool silver-gray tabby fur with charcoal gray stripes, a white muzzle and white chest.\nPreserve the exact original character's face, expression, large eyes, ear shape, head and body proportions, front-facing pose, furry illustrated rendering, lighting, silhouette, crop, and placement. This is a color variant of the same portrait, not a redesign. Keep the original portrait filling the same square canvas and preserve the original transparent background and soft alpha edges. Preserve the eye highlights and natural nose colors. One single animal, no added accessories, no new pose, no extra objects, no text, no border, no frame, no background or shadow. Output with genuine transparency."
+    },
+    {
+      "key": "queueCatCream",
+      "name": "cat-cream",
+      "reference": "public/images/characters/cat.png",
+      "referenceSHA256": "ea888ee9f66021e810d1c841a5c52ddb6a46acab0c4c75592501834246941f6b",
+      "source": "public/images/characters/queue-065/source/cat-cream-source.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceSHA256": "8feb98223cc7eb041944efa87431df9ae8b327642cbc7a9d957a333eb5dd5369",
+      "runtime": "public/images/characters/queue-065/cat-cream.png",
+      "size": [
+        320,
+        320
+      ],
+      "runtimeSHA256": "d8545bb3616dc20c71002f22e42118c9fdaa5e76e7a7650e86329102698f499d",
+      "alpha": [
+        0,
+        255
+      ],
+      "conversion": "sharp resize 320x320, contain, transparent padding, complete source canvas",
+      "prompt": "Use case: precise-object-edit.\nAsset type: transparent animal portrait for a children's counting game.\nInput image 1 is the edit target. Change ONLY the fur coloration of this same cat to very pale ivory-cream tabby fur with soft beige stripes, a white muzzle and white chest; distinctly lighter than the orange original.\nPreserve the exact original character's face, expression, large eyes, ear shape, head and body proportions, front-facing pose, furry illustrated rendering, lighting, silhouette, crop, and placement. This is a color variant of the same portrait, not a redesign. Keep the original portrait filling the same square canvas and preserve the original transparent background and soft alpha edges. Preserve the eye highlights and natural nose colors. One single animal, no added accessories, no new pose, no extra objects, no text, no border, no frame, no background or shadow. Output with genuine transparency."
+    },
+    {
+      "key": "queueDogChocolate",
+      "name": "dog-chocolate",
+      "reference": "public/images/characters/dog.png",
+      "referenceSHA256": "2ca80905fdf8b89fd444d3b313cdecd624bb1a5435ac7d796a138160422d7be8",
+      "source": "public/images/characters/queue-065/source/dog-chocolate-source.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceSHA256": "288e651911ef3eda12ed3f796b0a822f6182c4e7f51d8a55831c54ad01f3a5a8",
+      "runtime": "public/images/characters/queue-065/dog-chocolate.png",
+      "size": [
+        320,
+        320
+      ],
+      "runtimeSHA256": "af1340bad2584b0b1dce566940398d3d2c420ef61aa76aa382b933fdc562fe56",
+      "alpha": [
+        0,
+        255
+      ],
+      "conversion": "sharp resize 320x320, contain, transparent padding, complete source canvas",
+      "prompt": "Use case: precise-object-edit.\nAsset type: transparent animal portrait for a children's counting game.\nInput image 1 is the edit target. Change ONLY the fur coloration of this same dog to deep chocolate-brown outer fur and floppy ears, keeping the lighter cream muzzle and chest.\nPreserve the exact original character's face, expression, large eyes, ear shape, head and body proportions, front-facing pose, furry illustrated rendering, lighting, silhouette, crop, and placement. This is a color variant of the same portrait, not a redesign. Keep the original portrait filling the same square canvas and preserve the original transparent background and soft alpha edges. Preserve the eye highlights and natural nose colors. One single animal, no added accessories, no new pose, no extra objects, no text, no border, no frame, no background or shadow. Output with genuine transparency."
+    },
+    {
+      "key": "queueDogSilver",
+      "name": "dog-silver",
+      "reference": "public/images/characters/dog.png",
+      "referenceSHA256": "2ca80905fdf8b89fd444d3b313cdecd624bb1a5435ac7d796a138160422d7be8",
+      "source": "public/images/characters/queue-065/source/dog-silver-source.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceSHA256": "51aa5c9587ce963ff4290e3c577828e92e59ab39bb5be336efc4531781cf2db4",
+      "runtime": "public/images/characters/queue-065/dog-silver.png",
+      "size": [
+        320,
+        320
+      ],
+      "runtimeSHA256": "f75dce2d77aeacaa59b227085ee2f4a3751fd2e75367ed18595c9672fa854823",
+      "alpha": [
+        0,
+        255
+      ],
+      "conversion": "sharp resize 320x320, contain, transparent padding, complete source canvas",
+      "prompt": "Use case: precise-object-edit.\nAsset type: transparent animal portrait for a children's counting game.\nInput image 1 is the edit target. Change ONLY the fur coloration of this same dog to soft cool silver-gray outer fur and floppy ears, keeping the white-cream muzzle and chest.\nPreserve the exact original character's face, expression, large eyes, ear shape, head and body proportions, front-facing pose, furry illustrated rendering, lighting, silhouette, crop, and placement. This is a color variant of the same portrait, not a redesign. Keep the original portrait filling the same square canvas and preserve the original transparent background and soft alpha edges. Preserve the eye highlights and natural nose colors. One single animal, no added accessories, no new pose, no extra objects, no text, no border, no frame, no background or shadow. Output with genuine transparency."
+    },
+    {
+      "key": "queueBearBlack",
+      "name": "bear-black",
+      "reference": "public/images/characters/bear.png",
+      "referenceSHA256": "3ec3054cb7a83574b7ebbf5285003233c9c4f47aa3e77345c8cc870fa9f0f6b8",
+      "source": "public/images/characters/queue-065/source/bear-black-source.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceSHA256": "499d979be7f038056be2304c781c5ce5300fc87adebbe239e6ab18a21e933a34",
+      "runtime": "public/images/characters/queue-065/bear-black.png",
+      "size": [
+        320,
+        320
+      ],
+      "runtimeSHA256": "f3ab58e95c85337c1b9dd39de90a6c7acd0dbcb94603f79171cf75f54987d175",
+      "alpha": [
+        0,
+        255
+      ],
+      "conversion": "sharp resize 320x320, contain, transparent padding, complete source canvas",
+      "prompt": "Use case: precise-object-edit.\nAsset type: transparent animal portrait for a children's counting game.\nInput image 1 is the edit target. Change ONLY the fur coloration of this same bear to soft charcoal-black outer fur, lighter warm tan muzzle and chest; keep facial features clearly readable.\nPreserve the exact original character's face, expression, large eyes, ear shape, head and body proportions, front-facing pose, furry illustrated rendering, lighting, silhouette, crop, and placement. This is a color variant of the same portrait, not a redesign. Keep the original portrait filling the same square canvas and preserve the original transparent background and soft alpha edges. Preserve the eye highlights and natural nose colors. One single animal, no added accessories, no new pose, no extra objects, no text, no border, no frame, no background or shadow. Output with genuine transparency."
+    },
+    {
+      "key": "queueBearIvory",
+      "name": "bear-ivory",
+      "reference": "public/images/characters/bear.png",
+      "referenceSHA256": "3ec3054cb7a83574b7ebbf5285003233c9c4f47aa3e77345c8cc870fa9f0f6b8",
+      "source": "public/images/characters/queue-065/source/bear-ivory-source.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceSHA256": "ac5ec6dd9e80306863c5a2b5aa29d992f4d4cebd8046c108147a07c154c319f4",
+      "runtime": "public/images/characters/queue-065/bear-ivory.png",
+      "size": [
+        320,
+        320
+      ],
+      "runtimeSHA256": "f0e9ad4436b040372361d742877805074c56fa2feb2b4e4624aca5a651318d01",
+      "alpha": [
+        0,
+        255
+      ],
+      "conversion": "sharp resize 320x320, contain, transparent padding, complete source canvas",
+      "prompt": "Use case: precise-object-edit.\nAsset type: transparent animal portrait for a children's counting game.\nInput image 1 is the edit target. Change ONLY the fur coloration of this same bear to natural ivory-white polar-bear fur, subtle pale beige muzzle and pale cream inner ears; keep eyes and nose dark and clearly readable.\nPreserve the exact original character's face, expression, large eyes, ear shape, head and body proportions, front-facing pose, furry illustrated rendering, lighting, silhouette, crop, and placement. This is a color variant of the same portrait, not a redesign. Keep the original portrait filling the same square canvas and preserve the original transparent background and soft alpha edges. Preserve the eye highlights and natural nose colors. One single animal, no added accessories, no new pose, no extra objects, no text, no border, no frame, no background or shadow. Output with genuine transparency."
+    }
+  ]
+}

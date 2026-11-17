@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-16",
+  "regression": {
+    "passed": 57,
+    "failed": 0,
+    "files": [
+      "queue-evidence",
+      "math-evidence",
+      "exploration-presentation",
+      "visible-activity-assets",
+      "curriculum-review-invariants",
+      "activity-progress",
+      "activity-framework",
+      "round-speech-navigation"
+    ]
+  },
+  "curriculum": {
+    "groups": 118,
+    "rounds": 1122,
+    "problems": 0
+  },
+  "voice": {
+    "entries": 4411,
+    "failures": 0,
+    "mediaProblems": 0
+  },
+  "build": "passed; existing chunk size advisory remains",
+  "browser": {
+    "rounds": 9,
+    "allImagesLoaded": true,
+    "people": [
+      6,
+      8,
+      10,
+      6,
+      8,
+      10,
+      6,
+      8,
+      10
+    ],
+    "singleRabbit": true,
+    "maximumAlignmentErrorPx": 0.00390625,
+    "noHorizontalOverflowAtObservedViewport": true
+  },
+  "scope": "queue group teaching presentation; preserves earlier 062/063 changes"
+}

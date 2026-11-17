@@ -1,0 +1,73 @@
+The following is a diff from the previous accessibility tree for Window: "小小思考屋" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 186, 205-226, 231-274, 278-286
+~					193 button (collapsed) 数字岛 144 题, Secondary Actions: Expand
+~					197 button (expanded) 语言花园 66 题, Secondary Actions: Collapse
+~							201 text 探索  ·  语言花园
+~						202 text 11  个
++						292 heading 词语与故事, Value: 3
++							293 text 词语与故事
++						294 button 词语有朋友 9 题
++						295 button 把位置说清楚 3 题
++						296 button 故事接起来 9 题
++						297 button 我的解释和办法 3 题
++						298 button 把自己的想法说出来 3 题
++						299 heading 汉字与字音, Value: 3
++							300 text 汉字与字音
++						301 button 字音小花园 9 题
++						302 heading 英语听与想, Value: 3
++							303 text 英语听与想
++						304 button 英语听一听 9 题
++						305 button 英语里的数量位置 9 题
++						306 heading 英语日常说, Value: 3
++							307 text 英语日常说
++						308 button 见面与告别 4 题
++						309 button 谢谢与抱歉 4 题
++						310 button 我需要帮助 4 题
+~				230 container 词语有朋友
++					311 container 词语有朋友
++						312 container
++							313 text 组合挑战  · 第  7  / 9  题
++							314 heading 词语有朋友, Value: 1
++								315 text 词语有朋友
++							316 button 听一听题目
++						317 heading 用动作说开和关, Value: 2
++							318 text 用动作说开和关
++						319 text 和家长一起操作、说一说，再记录这次的发现。
++						320 container 亲子活动内容
++							321 toggle button 一起玩, Value: on
++							322 toggle button 记发现, Value: off
++						323 heading 先准备, Value: 3
++							324 text 先准备
++						325 container
++							326 image
++							327 text 两个盒子或两条纸带
++						328 heading 一起试一试, Value: 3
++							329 text 一起试一试
++						330 container
++							331 text 1
++							332 text 家长说一个词，孩子用动作或实物表示。
++							333 button 听第1步
++							334 text 2
++							335 text 交换角色，孩子说词，家长操作。
++							336 button 听第2步
++							337 text 3
++							338 text 把这个词放进一个完整句子，说明哪里看出来。
++							339 button 听第3步
++						340 button (disabled) 撤销上一步
++						341 button 清空
++						342 button 提示
++						343 button 做完了，记发现
++						344 container
++							345 text 这次尝试  0  次 · 提示  0  次
++							346 button 先跳过
+~					277 text 6  /  9  已做
++					347 button 跳到第 1 题，已做
++					348 button 跳到第 2 题，已做
++					349 button 跳到第 3 题，已做
++					350 button 跳到第 4 题，已做
++					351 button 跳到第 5 题，已做
++					352 button 跳到第 6 题，已做
++					353 button 跳到第 7 题
++					354 button 跳到第 8 题
++					355 button 跳到第 9 题
+The focused UI element is 2 HTML content Description: 小小思考屋, URL: tauri://localhost

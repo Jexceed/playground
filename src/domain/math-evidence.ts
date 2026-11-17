@@ -7,7 +7,7 @@ export type MathEvidence =
   | { kind: 'clockModel'; clocks: { label: string; hour: number; minute: number }[] }
   | { kind: 'rulerModel'; start: number; end: number; maximum: number }
   | { kind: 'perimeterModel'; columns: number; rows: number }
-  | { kind: 'placeValueModel'; tens: number; ones: number }
+  | { kind: 'placeValueModel'; tens: number; ones: number; removeOnes?: number }
   | { kind: 'numberPattern'; values: (number | null)[]; columns: number }
   | { kind: 'shapeEquations'; relations: { shapes: ('circle' | 'triangle')[]; total: number | null }[] }
   | { kind: 'waterModel'; smallCups: number };

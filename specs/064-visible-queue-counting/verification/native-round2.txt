@@ -1,0 +1,40 @@
+The following is a diff from the previous accessibility tree for Window: "小小思考屋" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 139-176
+~							135 text 先试一试  · 第  2  / 9  题
++						187 heading 小兔从左数第4，后面还有4位朋友。队伍一共有几位？, Value: 2
++							188 text 小兔从左数第4，后面还有4位朋友。队伍一共有几位？
++						189 text 指着朋友数一数，再选队伍的总人数。
++						190 container
++							191 text 一起排队数一数
++							192 button 放大题目图片
++							193 container 朋友排队和两次计数
++								194 container 从左数到小兔：4位
++									195 text 从左数到小兔：4位 1 2 3 4
++								196 container 完整的朋友队伍
++									197 image 队伍第1位：小猫
++									198 image 队伍第2位：小狗
++									199 image 队伍第3位：小熊
++									200 container
++										201 image 队伍第4位：小兔
++										202 text 小兔
++									203 image 队伍第5位：小猫
++									204 image 队伍第6位：小狗
++									205 image 队伍第7位：小熊
++									206 image 队伍第8位：小猫
++								207 container 小兔后面还有：4位
++									208 text 小兔后面还有：4位 1 2 3 4
++							209 text 4 + 4 = 8 位 小兔已经在绿色这一组里，蓝色从它后面一位开始数。
++							210 button 听图解
++						211 container 选择一个答案
++							212 toggle button 10, Value: off
++							213 toggle button 7, Value: off
++							214 toggle button 8, Value: off
++							215 toggle button 9, Value: off
++						216 button (disabled) 撤销上一步
++						217 button 清空
++						218 button 提示
++						219 button 选好了，看看
++						220 container
++							221 text 这次尝试  0  次 · 提示  0  次
++							222 button 先跳过
+The focused UI element is 2 HTML content Description: 小小思考屋, URL: tauri://localhost

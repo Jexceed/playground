@@ -1,0 +1,23 @@
+The following is a diff from the previous accessibility tree for Window: "小小思考屋" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 205-223
+~							201 text 先试一试  · 第  1  / 9  题
++						233 heading 小兔从左数第3，后面还有3位朋友。队伍一共有几位？, Value: 2
++							234 text 小兔从左数第3，后面还有3位朋友。队伍一共有几位？
++						235 text 选出队伍的总人数。
++						236 container
++							237 text 看看发生了什么 小兔从左数第  3
++							238 image 小兔头像
++							239 text 后面还有  3  位朋友
++						240 container 选择一个答案
++							241 toggle button 7, Value: off
++							242 toggle button 5, Value: off
++							243 toggle button 6, Value: off
++							244 toggle button 8, Value: off
++						245 button (disabled) 撤销上一步
++						246 button 清空
++						247 button 提示
++						248 button 选好了，看看
++						249 container
++							250 text 这次尝试  0  次 · 提示  0  次
++							251 button 先跳过
+The focused UI element is 2 HTML content Description: 小小思考屋, URL: tauri://localhost

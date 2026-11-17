@@ -1,0 +1,1106 @@
+[
+  {
+    "id": "explore-ordinal-queue-1",
+    "schemaVersion": 1,
+    "revision": 2,
+    "primaryFamilyId": "N09",
+    "level": "L2",
+    "stage": 1,
+    "difficultyNote": "实际排队",
+    "prerequisites": "理解从一边数第几与后面还有几位",
+    "prompt": "小兔从左数第3，后面还有3位朋友。队伍一共有几位？",
+    "instruction": "选出队伍的总人数。",
+    "clues": [],
+    "tokens": [
+      {
+        "id": "o1",
+        "label": "7",
+        "image": {
+          "src": "/images/items/exploration/diagram-655c5258.png",
+          "alt": "7",
+          "width": 320,
+          "height": 320
+        },
+        "textOnly": true
+      },
+      {
+        "id": "o2",
+        "label": "5",
+        "image": {
+          "src": "/images/items/exploration/diagram-edb8e72a.png",
+          "alt": "5",
+          "width": 320,
+          "height": 320
+        },
+        "textOnly": true
+      },
+      {
+        "id": "o0",
+        "label": "6",
+        "image": {
+          "src": "/images/items/exploration/diagram-77c1a60b.png",
+          "alt": "6",
+          "width": 320,
+          "height": 320
+        },
+        "textOnly": true
+      },
+      {
+        "id": "o3",
+        "label": "8",
+        "image": {
+          "src": "/images/items/exploration/diagram-ad444e61.png",
+          "alt": "8",
+          "width": 320,
+          "height": 320
+        },
+        "textOnly": true
+      }
+    ],
+    "hints": [
+      "从左数到小兔时，小兔也算在里面。",
+      "再加上小兔后面的朋友。"
+    ],
+    "success": "从左数到小兔有3位，后面还有3位。3加3是6。",
+    "retry": "从左数到小兔有几位？后面还有几位？把这两部分合起来。",
+    "parentPrompt": "从左数到小兔的这一部分包括小兔吗？后面的朋友包括小兔吗？",
+    "abilityTags": [
+      "序数、排队与重叠计数"
+    ],
+    "protocol": {
+      "kind": "practice"
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "S103",
+        "locator": "2-5"
+      },
+      {
+        "sourceId": "S105",
+        "locator": "slide1"
+      },
+      {
+        "sourceId": "S105",
+        "locator": "slide19"
+      },
+      {
+        "sourceId": "S071",
+        "locator": "render5"
+      },
+      {
+        "sourceId": "S109",
+        "locator": "7-9"
+      }
+    ],
+    "kind": "singleChoice",
+    "answerId": "o0",
+    "illustration": {
+      "src": "/images/items/exploration/diagram-12357d5a.png",
+      "alt": "小兔从左数第3，后面还有3位朋友。队伍一共有几位？",
+      "width": 600,
+      "height": 280
+    },
+    "presentation": {
+      "evidence": {
+        "kind": "queuePositionAndTail",
+        "leftPosition": 3,
+        "behind": 3
+      }
+    },
+    "difficulty": {
+      "rules": 1,
+      "steps": 1,
+      "reading": 1,
+      "motor": 1,
+      "representation": "pictures",
+      "basis": "左序数3–5加后面3–5，直接求总量；按题干可一加完成",
+      "memory": 0,
+      "calibration": "design-estimate",
+      "workload": {
+        "candidates": 4
+      }
+    }
+  },
+  {
+    "id": "explore-ordinal-queue-2",
+    "schemaVersion": 1,
+    "revision": 2,
+    "primaryFamilyId": "N09",
+    "level": "L2",
+    "stage": 1,
+    "difficultyNote": "实际排队",
+    "prerequisites": "理解从一边数第几与后面还有几位",
+    "prompt": "小兔从左数第4，后面还有4位朋友。队伍一共有几位？",
+    "instruction": "选出队伍的总人数。",
+    "clues": [],
+    "tokens": [
+      {
+        "id": "o3",
+        "label": "10",
+        "image": {
+          "src": "/images/items/exploration/diagram-5d4b00aa.png",
+          "alt": "10",
+          "width": 320,
+          "height": 320
+        },
+        "textOnly": true
+      },
+      {
+        "id": "o2",
+        "label": "7",
+        "image": {
+          "src": "/images/items/exploration/diagram-655c5258.png",
+          "alt": "7",
+          "width": 320,
+          "height": 320
+        },
+        "textOnly": true
+      },
+      {
+        "id": "o0",
+        "label": "8",
+        "image": {
+          "src": "/images/items/exploration/diagram-ad444e61.png",
+          "alt": "8",
+          "width": 320,
+          "height": 320
+        },
+        "textOnly": true
+      },
+      {
+        "id": "o1",
+        "label": "9",
+        "image": {
+          "src": "/images/items/exploration/diagram-1edab53e.png",
+          "alt": "9",
+          "width": 320,
+          "height": 320
+        },
+        "textOnly": true
+      }
+    ],
+    "hints": [
+      "从左数到小兔时，小兔也算在里面。",
+      "再加上小兔后面的朋友。"
+    ],
+    "success": "从左数到小兔有4位，后面还有4位。4加4是8。",
+    "retry": "从左数到小兔有几位？后面还有几位？把这两部分合起来。",
+    "parentPrompt": "从左数到小兔的这一部分包括小兔吗？后面的朋友包括小兔吗？",
+    "abilityTags": [
+      "序数、排队与重叠计数"
+    ],
+    "protocol": {
+      "kind": "practice"
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "S103",
+        "locator": "2-5"
+      },
+      {
+        "sourceId": "S105",
+        "locator": "slide1"
+      },
+      {
+        "sourceId": "S105",
+        "locator": "slide19"
+      },
+      {
+        "sourceId": "S071",
+        "locator": "render5"
+      },
+      {
+        "sourceId": "S109",
+        "locator": "7-9"
+      }
+    ],
+    "kind": "singleChoice",
+    "answerId": "o0",
+    "illustration": {
+      "src": "/images/items/exploration/diagram-3c551eb6.png",
+      "alt": "小兔从左数第4，后面还有4位朋友。队伍一共有几位？",
+      "width": 600,
+      "height": 280
+    },
+    "presentation": {
+      "evidence": {
+        "kind": "queuePositionAndTail",
+        "leftPosition": 4,
+        "behind": 4
+      }
+    },
+    "difficulty": {
+      "rules": 1,
+      "steps": 1,
+      "reading": 1,
+      "motor": 1,
+      "representation": "pictures",
+      "basis": "左序数3–5加后面3–5，直接求总量；按题干可一加完成",
+      "memory": 0,
+      "calibration": "design-estimate",
+      "workload": {
+        "candidates": 4
+      }
+    }
+  },
+  {
+    "id": "explore-ordinal-queue-3",
+    "schemaVersion": 1,
+    "revision": 2,
+    "primaryFamilyId": "N09",
+    "level": "L2",
+    "stage": 1,
+    "difficultyNote": "实际排队",
+    "prerequisites": "理解从一边数第几与后面还有几位",
+    "prompt": "小兔从左数第5，后面还有5位朋友。队伍一共有几位？",
+    "instruction": "选出队伍的总人数。",
+    "clues": [],
+    "tokens": [
+      {
+        "id": "o0",
+        "label": "10",
+        "image": {
+          "src": "/images/items/exploration/diagram-5d4b00aa.png",
+          "alt": "10",
+          "width": 320,
+          "height": 320
+        },
+        "textOnly": true
+      },
+      {
+        "id": "o1",
+        "label": "11",
+        "image": {
+          "src": "/images/items/exploration/diagram-595490cd.png",
+          "alt": "11",
+          "width": 320,
+          "height": 320
+        },
+        "textOnly": true
+      },
+      {
+        "id": "o3",
+        "label": "12",
+        "image": {
+          "src": "/images/items/exploration/diagram-d4ee6bd8.png",
+          "alt": "12",
+          "width": 320,
+          "height": 320
+        },
+        "textOnly": true
+      },
+      {
+        "id": "o2",
+        "label": "9",
+        "image": {
+          "src": "/images/items/exploration/diagram-1edab53e.png",
+          "alt": "9",
+          "width": 320,
+          "height": 320
+        },
+        "textOnly": true
+      }
+    ],
+    "hints": [
+      "从左数到小兔时，小兔也算在里面。",
+      "再加上小兔后面的朋友。"
+    ],
+    "success": "从左数到小兔有5位，后面还有5位。5加5是10。",
+    "retry": "从左数到小兔有几位？后面还有几位？把这两部分合起来。",
+    "parentPrompt": "从左数到小兔的这一部分包括小兔吗？后面的朋友包括小兔吗？",
+    "abilityTags": [
+      "序数、排队与重叠计数"
+    ],
+    "protocol": {
+      "kind": "practice"
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "S103",
+        "locator": "2-5"
+      },
+      {
+        "sourceId": "S105",
+        "locator": "slide1"
+      },
+      {
+        "sourceId": "S105",
+        "locator": "slide19"
+      },
+      {
+        "sourceId": "S071",
+        "locator": "render5"
+      },
+      {
+        "sourceId": "S109",
+        "locator": "7-9"
+      }
+    ],
+    "kind": "singleChoice",
+    "answerId": "o0",
+    "illustration": {
+      "src": "/images/items/exploration/diagram-20f32512.png",
+      "alt": "小兔从左数第5，后面还有5位朋友。队伍一共有几位？",
+      "width": 600,
+      "height": 280
+    },
+    "presentation": {
+      "evidence": {
+        "kind": "queuePositionAndTail",
+        "leftPosition": 5,
+        "behind": 5
+      }
+    },
+    "difficulty": {
+      "rules": 1,
+      "steps": 1,
+      "reading": 1,
+      "motor": 1,
+      "representation": "pictures",
+      "basis": "左序数3–5加后面3–5，直接求总量；按题干可一加完成",
+      "memory": 0,
+      "calibration": "design-estimate",
+      "workload": {
+        "candidates": 4
+      }
+    }
+  },
+  {
+    "id": "explore-ordinal-queue-4",
+    "schemaVersion": 1,
+    "revision": 2,
+    "primaryFamilyId": "N09",
+    "level": "L3",
+    "stage": 2,
+    "difficultyNote": "双向序数",
+    "prerequisites": "知道双向序数都含同一个人",
+    "prompt": "小兔从左数第3，从右数第4。队伍一共有几位？",
+    "instruction": "选出队伍的总人数。",
+    "clues": [],
+    "tokens": [
+      {
+        "id": "o0",
+        "label": "6",
+        "image": {
+          "src": "/images/items/exploration/diagram-77c1a60b.png",
+          "alt": "6",
+          "width": 320,
+          "height": 320
+        },
+        "textOnly": true
+      },
+      {
+        "id": "o1",
+        "label": "7",
+        "image": {
+          "src": "/images/items/exploration/diagram-655c5258.png",
+          "alt": "7",
+          "width": 320,
+          "height": 320
+        },
+        "textOnly": true
+      },
+      {
+        "id": "o3",
+        "label": "8",
+        "image": {
+          "src": "/images/items/exploration/diagram-ad444e61.png",
+          "alt": "8",
+          "width": 320,
+          "height": 320
+        },
+        "textOnly": true
+      },
+      {
+        "id": "o2",
+        "label": "5",
+        "image": {
+          "src": "/images/items/exploration/diagram-edb8e72a.png",
+          "alt": "5",
+          "width": 320,
+          "height": 320
+        },
+        "textOnly": true
+      }
+    ],
+    "hints": [
+      "先找到图里和问题有关的部分。",
+      "两边都数到小兔，小兔重复了一次。3加4再减一，是6。"
+    ],
+    "success": "两边都数到小兔，小兔重复了一次。3加4再减一，是6。",
+    "retry": "再对照图和题目的条件，一步一步检查。",
+    "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+    "abilityTags": [
+      "序数、排队与重叠计数"
+    ],
+    "protocol": {
+      "kind": "practice"
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "S103",
+        "locator": "2-5"
+      },
+      {
+        "sourceId": "S105",
+        "locator": "slide1"
+      },
+      {
+        "sourceId": "S105",
+        "locator": "slide19"
+      },
+      {
+        "sourceId": "S071",
+        "locator": "render5"
+      },
+      {
+        "sourceId": "S109",
+        "locator": "7-9"
+      }
+    ],
+    "kind": "singleChoice",
+    "answerId": "o0",
+    "illustration": {
+      "src": "/images/items/exploration/diagram-12357d5a.png",
+      "alt": "小兔从左数第3，从右数第4。队伍一共有几位？",
+      "width": 600,
+      "height": 280
+    },
+    "presentation": {
+      "evidence": {
+        "kind": "overlapQueue",
+        "left": 3,
+        "right": 4,
+        "wording": "positions"
+      }
+    },
+    "difficulty": {
+      "rules": 2,
+      "steps": 2,
+      "reading": 1,
+      "motor": 1,
+      "representation": "pictures",
+      "basis": "左序数和右序数相加，再去掉重复计入的小兔",
+      "memory": 0,
+      "calibration": "design-estimate",
+      "workload": {
+        "candidates": 4
+      }
+    }
+  },
+  {
+    "id": "explore-ordinal-queue-5",
+    "schemaVersion": 1,
+    "revision": 2,
+    "primaryFamilyId": "N09",
+    "level": "L3",
+    "stage": 2,
+    "difficultyNote": "双向序数",
+    "prerequisites": "知道双向序数都含同一个人",
+    "prompt": "小兔从左数第4，从右数第5。队伍一共有几位？",
+    "instruction": "选出队伍的总人数。",
+    "clues": [],
+    "tokens": [
+      {
+        "id": "o1",
+        "label": "9",
+        "image": {
+          "src": "/images/items/exploration/diagram-1edab53e.png",
+          "alt": "9",
+          "width": 320,
+          "height": 320
+        },
+        "textOnly": true
+      },
+      {
+        "id": "o0",
+        "label": "8",
+        "image": {
+          "src": "/images/items/exploration/diagram-ad444e61.png",
+          "alt": "8",
+          "width": 320,
+          "height": 320
+        },
+        "textOnly": true
+      },
+      {
+        "id": "o3",
+        "label": "10",
+        "image": {
+          "src": "/images/items/exploration/diagram-5d4b00aa.png",
+          "alt": "10",
+          "width": 320,
+          "height": 320
+        },
+        "textOnly": true
+      },
+      {
+        "id": "o2",
+        "label": "7",
+        "image": {
+          "src": "/images/items/exploration/diagram-655c5258.png",
+          "alt": "7",
+          "width": 320,
+          "height": 320
+        },
+        "textOnly": true
+      }
+    ],
+    "hints": [
+      "先找到图里和问题有关的部分。",
+      "两边都数到小兔，小兔重复了一次。4加5再减一，是8。"
+    ],
+    "success": "两边都数到小兔，小兔重复了一次。4加5再减一，是8。",
+    "retry": "再对照图和题目的条件，一步一步检查。",
+    "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+    "abilityTags": [
+      "序数、排队与重叠计数"
+    ],
+    "protocol": {
+      "kind": "practice"
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "S103",
+        "locator": "2-5"
+      },
+      {
+        "sourceId": "S105",
+        "locator": "slide1"
+      },
+      {
+        "sourceId": "S105",
+        "locator": "slide19"
+      },
+      {
+        "sourceId": "S071",
+        "locator": "render5"
+      },
+      {
+        "sourceId": "S109",
+        "locator": "7-9"
+      }
+    ],
+    "kind": "singleChoice",
+    "answerId": "o0",
+    "illustration": {
+      "src": "/images/items/exploration/diagram-3c551eb6.png",
+      "alt": "小兔从左数第4，从右数第5。队伍一共有几位？",
+      "width": 600,
+      "height": 280
+    },
+    "presentation": {
+      "evidence": {
+        "kind": "overlapQueue",
+        "left": 4,
+        "right": 5,
+        "wording": "positions"
+      }
+    },
+    "difficulty": {
+      "rules": 2,
+      "steps": 2,
+      "reading": 1,
+      "motor": 1,
+      "representation": "pictures",
+      "basis": "左序数和右序数相加，再去掉重复计入的小兔",
+      "memory": 0,
+      "calibration": "design-estimate",
+      "workload": {
+        "candidates": 4
+      }
+    }
+  },
+  {
+    "id": "explore-ordinal-queue-6",
+    "schemaVersion": 1,
+    "revision": 2,
+    "primaryFamilyId": "N09",
+    "level": "L3",
+    "stage": 2,
+    "difficultyNote": "双向序数",
+    "prerequisites": "知道双向序数都含同一个人",
+    "prompt": "小兔从左数第5，从右数第6。队伍一共有几位？",
+    "instruction": "选出队伍的总人数。",
+    "clues": [],
+    "tokens": [
+      {
+        "id": "o3",
+        "label": "12",
+        "image": {
+          "src": "/images/items/exploration/diagram-d4ee6bd8.png",
+          "alt": "12",
+          "width": 320,
+          "height": 320
+        },
+        "textOnly": true
+      },
+      {
+        "id": "o1",
+        "label": "11",
+        "image": {
+          "src": "/images/items/exploration/diagram-595490cd.png",
+          "alt": "11",
+          "width": 320,
+          "height": 320
+        },
+        "textOnly": true
+      },
+      {
+        "id": "o0",
+        "label": "10",
+        "image": {
+          "src": "/images/items/exploration/diagram-5d4b00aa.png",
+          "alt": "10",
+          "width": 320,
+          "height": 320
+        },
+        "textOnly": true
+      },
+      {
+        "id": "o2",
+        "label": "9",
+        "image": {
+          "src": "/images/items/exploration/diagram-1edab53e.png",
+          "alt": "9",
+          "width": 320,
+          "height": 320
+        },
+        "textOnly": true
+      }
+    ],
+    "hints": [
+      "先找到图里和问题有关的部分。",
+      "两边都数到小兔，小兔重复了一次。5加6再减一，是10。"
+    ],
+    "success": "两边都数到小兔，小兔重复了一次。5加6再减一，是10。",
+    "retry": "再对照图和题目的条件，一步一步检查。",
+    "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+    "abilityTags": [
+      "序数、排队与重叠计数"
+    ],
+    "protocol": {
+      "kind": "practice"
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "S103",
+        "locator": "2-5"
+      },
+      {
+        "sourceId": "S105",
+        "locator": "slide1"
+      },
+      {
+        "sourceId": "S105",
+        "locator": "slide19"
+      },
+      {
+        "sourceId": "S071",
+        "locator": "render5"
+      },
+      {
+        "sourceId": "S109",
+        "locator": "7-9"
+      }
+    ],
+    "kind": "singleChoice",
+    "answerId": "o0",
+    "illustration": {
+      "src": "/images/items/exploration/diagram-20f32512.png",
+      "alt": "小兔从左数第5，从右数第6。队伍一共有几位？",
+      "width": 600,
+      "height": 280
+    },
+    "presentation": {
+      "evidence": {
+        "kind": "overlapQueue",
+        "left": 5,
+        "right": 6,
+        "wording": "positions"
+      }
+    },
+    "difficulty": {
+      "rules": 2,
+      "steps": 2,
+      "reading": 1,
+      "motor": 1,
+      "representation": "pictures",
+      "basis": "左序数和右序数相加，再去掉重复计入的小兔",
+      "memory": 0,
+      "calibration": "design-estimate",
+      "workload": {
+        "candidates": 4
+      }
+    }
+  },
+  {
+    "id": "explore-ordinal-queue-7",
+    "schemaVersion": 1,
+    "revision": 2,
+    "primaryFamilyId": "N09",
+    "level": "L4",
+    "stage": 3,
+    "difficultyNote": "合并重叠信息",
+    "prerequisites": "能辨认两组共同包含的对象",
+    "prompt": "两个数队伍的小朋友都数到了小兔。左边这组含小兔有3位，右边这组含小兔有4位。合起来有几位？",
+    "instruction": "选出队伍的总人数。",
+    "clues": [],
+    "tokens": [
+      {
+        "id": "o1",
+        "label": "7",
+        "image": {
+          "src": "/images/items/exploration/diagram-655c5258.png",
+          "alt": "7",
+          "width": 320,
+          "height": 320
+        },
+        "textOnly": true
+      },
+      {
+        "id": "o0",
+        "label": "6",
+        "image": {
+          "src": "/images/items/exploration/diagram-77c1a60b.png",
+          "alt": "6",
+          "width": 320,
+          "height": 320
+        },
+        "textOnly": true
+      },
+      {
+        "id": "o3",
+        "label": "8",
+        "image": {
+          "src": "/images/items/exploration/diagram-ad444e61.png",
+          "alt": "8",
+          "width": 320,
+          "height": 320
+        },
+        "textOnly": true
+      },
+      {
+        "id": "o2",
+        "label": "5",
+        "image": {
+          "src": "/images/items/exploration/diagram-edb8e72a.png",
+          "alt": "5",
+          "width": 320,
+          "height": 320
+        },
+        "textOnly": true
+      }
+    ],
+    "hints": [
+      "先找到图里和问题有关的部分。",
+      "两边都数到小兔，小兔重复了一次。3加4再减一，是6。"
+    ],
+    "success": "两边都数到小兔，小兔重复了一次。3加4再减一，是6。",
+    "retry": "再对照图和题目的条件，一步一步检查。",
+    "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+    "abilityTags": [
+      "序数、排队与重叠计数"
+    ],
+    "protocol": {
+      "kind": "practice"
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "S103",
+        "locator": "2-5"
+      },
+      {
+        "sourceId": "S105",
+        "locator": "slide1"
+      },
+      {
+        "sourceId": "S105",
+        "locator": "slide19"
+      },
+      {
+        "sourceId": "S071",
+        "locator": "render5"
+      },
+      {
+        "sourceId": "S109",
+        "locator": "7-9"
+      }
+    ],
+    "kind": "singleChoice",
+    "answerId": "o0",
+    "illustration": {
+      "src": "/images/items/exploration/diagram-12357d5a.png",
+      "alt": "两个数队伍的小朋友都数到了小兔。左边这组含小兔有3位，右边这组含小兔有4位。合起来有几位？",
+      "width": 600,
+      "height": 280
+    },
+    "presentation": {
+      "evidence": {
+        "kind": "overlapQueue",
+        "left": 3,
+        "right": 4,
+        "wording": "groups"
+      }
+    },
+    "difficulty": {
+      "rules": 2,
+      "steps": 2,
+      "reading": 1,
+      "motor": 1,
+      "representation": "pictures",
+      "basis": "两个集合都含小兔，先合再去重一次，与第二阶同种重叠规则",
+      "memory": 0,
+      "calibration": "design-estimate",
+      "workload": {
+        "candidates": 4
+      }
+    }
+  },
+  {
+    "id": "explore-ordinal-queue-8",
+    "schemaVersion": 1,
+    "revision": 2,
+    "primaryFamilyId": "N09",
+    "level": "L4",
+    "stage": 3,
+    "difficultyNote": "合并重叠信息",
+    "prerequisites": "能辨认两组共同包含的对象",
+    "prompt": "两个数队伍的小朋友都数到了小兔。左边这组含小兔有4位，右边这组含小兔有5位。合起来有几位？",
+    "instruction": "选出队伍的总人数。",
+    "clues": [],
+    "tokens": [
+      {
+        "id": "o0",
+        "label": "8",
+        "image": {
+          "src": "/images/items/exploration/diagram-ad444e61.png",
+          "alt": "8",
+          "width": 320,
+          "height": 320
+        },
+        "textOnly": true
+      },
+      {
+        "id": "o1",
+        "label": "9",
+        "image": {
+          "src": "/images/items/exploration/diagram-1edab53e.png",
+          "alt": "9",
+          "width": 320,
+          "height": 320
+        },
+        "textOnly": true
+      },
+      {
+        "id": "o3",
+        "label": "10",
+        "image": {
+          "src": "/images/items/exploration/diagram-5d4b00aa.png",
+          "alt": "10",
+          "width": 320,
+          "height": 320
+        },
+        "textOnly": true
+      },
+      {
+        "id": "o2",
+        "label": "7",
+        "image": {
+          "src": "/images/items/exploration/diagram-655c5258.png",
+          "alt": "7",
+          "width": 320,
+          "height": 320
+        },
+        "textOnly": true
+      }
+    ],
+    "hints": [
+      "先找到图里和问题有关的部分。",
+      "两边都数到小兔，小兔重复了一次。4加5再减一，是8。"
+    ],
+    "success": "两边都数到小兔，小兔重复了一次。4加5再减一，是8。",
+    "retry": "再对照图和题目的条件，一步一步检查。",
+    "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+    "abilityTags": [
+      "序数、排队与重叠计数"
+    ],
+    "protocol": {
+      "kind": "practice"
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "S103",
+        "locator": "2-5"
+      },
+      {
+        "sourceId": "S105",
+        "locator": "slide1"
+      },
+      {
+        "sourceId": "S105",
+        "locator": "slide19"
+      },
+      {
+        "sourceId": "S071",
+        "locator": "render5"
+      },
+      {
+        "sourceId": "S109",
+        "locator": "7-9"
+      }
+    ],
+    "kind": "singleChoice",
+    "answerId": "o0",
+    "illustration": {
+      "src": "/images/items/exploration/diagram-3c551eb6.png",
+      "alt": "两个数队伍的小朋友都数到了小兔。左边这组含小兔有4位，右边这组含小兔有5位。合起来有几位？",
+      "width": 600,
+      "height": 280
+    },
+    "presentation": {
+      "evidence": {
+        "kind": "overlapQueue",
+        "left": 4,
+        "right": 5,
+        "wording": "groups"
+      }
+    },
+    "difficulty": {
+      "rules": 2,
+      "steps": 2,
+      "reading": 1,
+      "motor": 1,
+      "representation": "pictures",
+      "basis": "两个集合都含小兔，先合再去重一次，与第二阶同种重叠规则",
+      "memory": 0,
+      "calibration": "design-estimate",
+      "workload": {
+        "candidates": 4
+      }
+    }
+  },
+  {
+    "id": "explore-ordinal-queue-9",
+    "schemaVersion": 1,
+    "revision": 2,
+    "primaryFamilyId": "N09",
+    "level": "L4",
+    "stage": 3,
+    "difficultyNote": "合并重叠信息",
+    "prerequisites": "能辨认两组共同包含的对象",
+    "prompt": "两个数队伍的小朋友都数到了小兔。左边这组含小兔有5位，右边这组含小兔有6位。合起来有几位？",
+    "instruction": "选出队伍的总人数。",
+    "clues": [],
+    "tokens": [
+      {
+        "id": "o1",
+        "label": "11",
+        "image": {
+          "src": "/images/items/exploration/diagram-595490cd.png",
+          "alt": "11",
+          "width": 320,
+          "height": 320
+        },
+        "textOnly": true
+      },
+      {
+        "id": "o2",
+        "label": "9",
+        "image": {
+          "src": "/images/items/exploration/diagram-1edab53e.png",
+          "alt": "9",
+          "width": 320,
+          "height": 320
+        },
+        "textOnly": true
+      },
+      {
+        "id": "o3",
+        "label": "12",
+        "image": {
+          "src": "/images/items/exploration/diagram-d4ee6bd8.png",
+          "alt": "12",
+          "width": 320,
+          "height": 320
+        },
+        "textOnly": true
+      },
+      {
+        "id": "o0",
+        "label": "10",
+        "image": {
+          "src": "/images/items/exploration/diagram-5d4b00aa.png",
+          "alt": "10",
+          "width": 320,
+          "height": 320
+        },
+        "textOnly": true
+      }
+    ],
+    "hints": [
+      "先找到图里和问题有关的部分。",
+      "两边都数到小兔，小兔重复了一次。5加6再减一，是10。"
+    ],
+    "success": "两边都数到小兔，小兔重复了一次。5加6再减一，是10。",
+    "retry": "再对照图和题目的条件，一步一步检查。",
+    "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+    "abilityTags": [
+      "序数、排队与重叠计数"
+    ],
+    "protocol": {
+      "kind": "practice"
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "S103",
+        "locator": "2-5"
+      },
+      {
+        "sourceId": "S105",
+        "locator": "slide1"
+      },
+      {
+        "sourceId": "S105",
+        "locator": "slide19"
+      },
+      {
+        "sourceId": "S071",
+        "locator": "render5"
+      },
+      {
+        "sourceId": "S109",
+        "locator": "7-9"
+      }
+    ],
+    "kind": "singleChoice",
+    "answerId": "o0",
+    "illustration": {
+      "src": "/images/items/exploration/diagram-20f32512.png",
+      "alt": "两个数队伍的小朋友都数到了小兔。左边这组含小兔有5位，右边这组含小兔有6位。合起来有几位？",
+      "width": 600,
+      "height": 280
+    },
+    "presentation": {
+      "evidence": {
+        "kind": "overlapQueue",
+        "left": 5,
+        "right": 6,
+        "wording": "groups"
+      }
+    },
+    "difficulty": {
+      "rules": 2,
+      "steps": 2,
+      "reading": 1,
+      "motor": 1,
+      "representation": "pictures",
+      "basis": "两个集合都含小兔，先合再去重一次，与第二阶同种重叠规则",
+      "memory": 0,
+      "calibration": "design-estimate",
+      "workload": {
+        "candidates": 4
+      }
+    }
+  }
+]

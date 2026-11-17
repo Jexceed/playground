@@ -1,5 +1,35 @@
 # Changelog
 
+## 2026-11-16
+
+### Fit queue highlights to portraits and distinguish repeated animals
+
+- Removed the fixed 100/120px friend-row heights. Each portrait and the rabbit highlight now share a square wrapper that scales with its column in both normal and enlarged views, including ten-friend queues.
+- Added six transparent local imagegen coat variants: silver/cream cats, chocolate/silver dogs, and black/ivory bears. Repeated species receive a distinct portrait in occurrence order, so every friend in the largest queue has a different image. Original source portraits remain intact.
+- Kept all 1122 question records and the 4411-entry voice pack unchanged. All 57 related regressions, build, curriculum and voice-media audits pass. Measured all nine browser views and the 6/8/10-friend enlargement cases; rebuilt and installed the Mac app and checked the same three sizes in normal/enlarged views. See [065 verification](../specs/065-queue-portrait-fit/verification.md).
+
+### Show the whole queue and how each count is formed
+
+- Replaced the nine “队伍有多长” text panels with a complete row of 6, 8 or 10 local animal pictures. Numbered green and blue paths align with each friend; the rabbit appears once, and the two paths visibly share it only when both counts include it.
+- Made the combination equation and explanation visible from the start, following the user's correction that the activity should support understanding. Added “听图解”, reading each counting sequence and its reasoning, and a larger view of the same queue. Updated prompts for pointing, recounting and explaining while preserving question conditions, IDs, choices, answers and saved progress.
+- Clarified this teaching principle in `AGENTS.md`. Generated 22 Edge clips and backed up/removed 16 retired clips; all 4411 voice entries align without failures or macOS say / mixed local fallback. Relevant regressions pass 57/57; build, curriculum and media audits pass. All nine browser layouts and targeted installed Mac screens were checked. See [064 verification](../specs/064-visible-queue-counting/verification.md).
+
+## 2026-11-14
+
+### Align Number Island conditions, pictures and explanations
+
+- Reviewed all 16 exploration Number Island groups / 144 activities against their final content and rendered evidence. Updated 13 activities while preserving IDs, choices, answers and saved progress.
+- “队伍有多长” now shows the stated left-hand position plus friends behind for its first stage; the other stages distinguish two-sided positions from inclusive groups. Its introductory hints and explanation now use addition directly.
+- “单双和数位” rounds 7–9 label the original quantity and visibly cross out the single small block being removed, including in the enlarged picture. “十的好朋友” round 6 now explains an existing ten plus seven ones instead of splitting seven into zero and seven.
+- Generated 23 Edge voice clips, backed up and removed 15 superseded runtime clips, and verified all 4405 manifest entries with no failures or macOS say / mixed local fallback. Relevant regressions pass 59/59; build, curriculum and voice audits pass. Rebuilt, installed and checked the actual Mac app. See [063 verification](../specs/063-queue-evidence-alignment/verification.md) for exact native coverage and remaining observation boundaries.
+
+## 2026-11-08
+
+### Deliver the first click when returning to the Mac window
+
+- Enabled the existing Tauri main window's `acceptFirstMouse` option so a click on an inactive Mac window can also reach its enabled page control. The previous omitted setting defaulted to false.
+- Kept the existing click, drag, keyboard, disabled-state and memory-interruption logic, all questions and stored progress unchanged. This corrects a concrete focus-related cause; the user's intermittent misses while already active and ready have not been reproduced. See [062 validation](../specs/062-mac-first-click/verification.md) for tests and native installation evidence.
+
 ## 2026-10-30
 
 ### Validate the everyday-English delivery checkpoint

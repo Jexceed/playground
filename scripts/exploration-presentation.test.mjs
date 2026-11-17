@@ -23,8 +23,10 @@ test('presentation retains all existing curriculum identities and accepts every 
       || a.primaryFamilyId === 'E04' || (a.primaryFamilyId === 'L07' && a.stage === 3)
       || (a.primaryFamilyId === 'P06' && a.id.endsWith('-1')) || (a.primaryFamilyId === 'P01' && a.stage === 3)
       || a.primaryFamilyId === 'L09' || (['L11','G16'].includes(a.primaryFamilyId) && a.stage === 3)
-      || (a.primaryFamilyId === 'E07' && a.stage === 2);
-    assert.equal(a.revision, revised ? 2 : 1, a.id);
+      || (a.primaryFamilyId === 'E07' && a.stage === 2)
+      || a.primaryFamilyId === 'N09' || (a.primaryFamilyId === 'N10' && a.stage === 3)
+      || a.id === 'explore-make-break-ten-6';
+    assert.equal(a.revision, a.primaryFamilyId === 'N09' ? 3 : revised ? 2 : 1, a.id);
     assert.equal(evaluateActivity(a, authoringSolutions[a.id]).status, a.kind === 'parentObservation' ? 'needsParentObservation' : 'correct', a.id);
   }
 });

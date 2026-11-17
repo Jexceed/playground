@@ -1,0 +1,498 @@
+[
+  {
+    "id": "explore-make-break-ten-6",
+    "fields": [
+      "revision",
+      "prompt",
+      "hints",
+      "success",
+      "illustration"
+    ],
+    "before": {
+      "revision": 1,
+      "prompt": "10加7等于多少？先试试凑成十。",
+      "hints": [
+        "先找到图里和问题有关的部分。",
+        "把7拆成0和7，先凑十，再加剩下的，得到17。"
+      ],
+      "success": "把7拆成0和7，先凑十，再加剩下的，得到17。",
+      "illustration": {
+        "src": "/images/items/exploration/diagram-3e77210d.png",
+        "alt": "10加7等于多少？先试试凑成十。",
+        "width": 600,
+        "height": 310
+      }
+    },
+    "after": {
+      "revision": 2,
+      "prompt": "10加7等于多少？",
+      "hints": [
+        "先找到图里和问题有关的部分。",
+        "已经有1个十，再加7个一，是17。"
+      ],
+      "success": "已经有1个十，再加7个一，是17。",
+      "illustration": {
+        "src": "/images/items/exploration/diagram-3e77210d.png",
+        "alt": "10加7等于多少？",
+        "width": 600,
+        "height": 310
+      }
+    }
+  },
+  {
+    "id": "explore-ordinal-queue-1",
+    "fields": [
+      "revision",
+      "instruction",
+      "hints",
+      "success",
+      "retry",
+      "parentPrompt",
+      "presentation"
+    ],
+    "before": {
+      "revision": 1,
+      "instruction": "选出符合条件的一张图卡。",
+      "hints": [
+        "先找到图里和问题有关的部分。",
+        "两边都数到小兔，小兔重复了一次。3加4再减一，是6。"
+      ],
+      "success": "两边都数到小兔，小兔重复了一次。3加4再减一，是6。",
+      "retry": "再对照图和题目的条件，一步一步检查。",
+      "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+      "presentation": {
+        "evidence": {
+          "kind": "overlapQueue",
+          "left": 3,
+          "right": 4
+        }
+      }
+    },
+    "after": {
+      "revision": 2,
+      "instruction": "选出队伍的总人数。",
+      "hints": [
+        "从左数到小兔时，小兔也算在里面。",
+        "再加上小兔后面的朋友。"
+      ],
+      "success": "从左数到小兔有3位，后面还有3位。3加3是6。",
+      "retry": "从左数到小兔有几位？后面还有几位？把这两部分合起来。",
+      "parentPrompt": "从左数到小兔的这一部分包括小兔吗？后面的朋友包括小兔吗？",
+      "presentation": {
+        "evidence": {
+          "kind": "queuePositionAndTail",
+          "leftPosition": 3,
+          "behind": 3
+        }
+      }
+    }
+  },
+  {
+    "id": "explore-ordinal-queue-2",
+    "fields": [
+      "revision",
+      "instruction",
+      "hints",
+      "success",
+      "retry",
+      "parentPrompt",
+      "presentation"
+    ],
+    "before": {
+      "revision": 1,
+      "instruction": "选出符合条件的一张图卡。",
+      "hints": [
+        "先找到图里和问题有关的部分。",
+        "两边都数到小兔，小兔重复了一次。4加5再减一，是8。"
+      ],
+      "success": "两边都数到小兔，小兔重复了一次。4加5再减一，是8。",
+      "retry": "再对照图和题目的条件，一步一步检查。",
+      "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+      "presentation": {
+        "evidence": {
+          "kind": "overlapQueue",
+          "left": 4,
+          "right": 5
+        }
+      }
+    },
+    "after": {
+      "revision": 2,
+      "instruction": "选出队伍的总人数。",
+      "hints": [
+        "从左数到小兔时，小兔也算在里面。",
+        "再加上小兔后面的朋友。"
+      ],
+      "success": "从左数到小兔有4位，后面还有4位。4加4是8。",
+      "retry": "从左数到小兔有几位？后面还有几位？把这两部分合起来。",
+      "parentPrompt": "从左数到小兔的这一部分包括小兔吗？后面的朋友包括小兔吗？",
+      "presentation": {
+        "evidence": {
+          "kind": "queuePositionAndTail",
+          "leftPosition": 4,
+          "behind": 4
+        }
+      }
+    }
+  },
+  {
+    "id": "explore-ordinal-queue-3",
+    "fields": [
+      "revision",
+      "instruction",
+      "hints",
+      "success",
+      "retry",
+      "parentPrompt",
+      "presentation"
+    ],
+    "before": {
+      "revision": 1,
+      "instruction": "选出符合条件的一张图卡。",
+      "hints": [
+        "先找到图里和问题有关的部分。",
+        "两边都数到小兔，小兔重复了一次。5加6再减一，是10。"
+      ],
+      "success": "两边都数到小兔，小兔重复了一次。5加6再减一，是10。",
+      "retry": "再对照图和题目的条件，一步一步检查。",
+      "parentPrompt": "你先用了哪条线索？能换一种方法检查吗？",
+      "presentation": {
+        "evidence": {
+          "kind": "overlapQueue",
+          "left": 5,
+          "right": 6
+        }
+      }
+    },
+    "after": {
+      "revision": 2,
+      "instruction": "选出队伍的总人数。",
+      "hints": [
+        "从左数到小兔时，小兔也算在里面。",
+        "再加上小兔后面的朋友。"
+      ],
+      "success": "从左数到小兔有5位，后面还有5位。5加5是10。",
+      "retry": "从左数到小兔有几位？后面还有几位？把这两部分合起来。",
+      "parentPrompt": "从左数到小兔的这一部分包括小兔吗？后面的朋友包括小兔吗？",
+      "presentation": {
+        "evidence": {
+          "kind": "queuePositionAndTail",
+          "leftPosition": 5,
+          "behind": 5
+        }
+      }
+    }
+  },
+  {
+    "id": "explore-ordinal-queue-4",
+    "fields": [
+      "revision",
+      "instruction",
+      "presentation"
+    ],
+    "before": {
+      "revision": 1,
+      "instruction": "选出符合条件的一张图卡。",
+      "presentation": {
+        "evidence": {
+          "kind": "overlapQueue",
+          "left": 3,
+          "right": 4
+        }
+      }
+    },
+    "after": {
+      "revision": 2,
+      "instruction": "选出队伍的总人数。",
+      "presentation": {
+        "evidence": {
+          "kind": "overlapQueue",
+          "left": 3,
+          "right": 4,
+          "wording": "positions"
+        }
+      }
+    }
+  },
+  {
+    "id": "explore-ordinal-queue-5",
+    "fields": [
+      "revision",
+      "instruction",
+      "presentation"
+    ],
+    "before": {
+      "revision": 1,
+      "instruction": "选出符合条件的一张图卡。",
+      "presentation": {
+        "evidence": {
+          "kind": "overlapQueue",
+          "left": 4,
+          "right": 5
+        }
+      }
+    },
+    "after": {
+      "revision": 2,
+      "instruction": "选出队伍的总人数。",
+      "presentation": {
+        "evidence": {
+          "kind": "overlapQueue",
+          "left": 4,
+          "right": 5,
+          "wording": "positions"
+        }
+      }
+    }
+  },
+  {
+    "id": "explore-ordinal-queue-6",
+    "fields": [
+      "revision",
+      "instruction",
+      "presentation"
+    ],
+    "before": {
+      "revision": 1,
+      "instruction": "选出符合条件的一张图卡。",
+      "presentation": {
+        "evidence": {
+          "kind": "overlapQueue",
+          "left": 5,
+          "right": 6
+        }
+      }
+    },
+    "after": {
+      "revision": 2,
+      "instruction": "选出队伍的总人数。",
+      "presentation": {
+        "evidence": {
+          "kind": "overlapQueue",
+          "left": 5,
+          "right": 6,
+          "wording": "positions"
+        }
+      }
+    }
+  },
+  {
+    "id": "explore-ordinal-queue-7",
+    "fields": [
+      "revision",
+      "instruction",
+      "presentation"
+    ],
+    "before": {
+      "revision": 1,
+      "instruction": "选出符合条件的一张图卡。",
+      "presentation": {
+        "evidence": {
+          "kind": "overlapQueue",
+          "left": 3,
+          "right": 4
+        }
+      }
+    },
+    "after": {
+      "revision": 2,
+      "instruction": "选出队伍的总人数。",
+      "presentation": {
+        "evidence": {
+          "kind": "overlapQueue",
+          "left": 3,
+          "right": 4,
+          "wording": "groups"
+        }
+      }
+    }
+  },
+  {
+    "id": "explore-ordinal-queue-8",
+    "fields": [
+      "revision",
+      "instruction",
+      "presentation"
+    ],
+    "before": {
+      "revision": 1,
+      "instruction": "选出符合条件的一张图卡。",
+      "presentation": {
+        "evidence": {
+          "kind": "overlapQueue",
+          "left": 4,
+          "right": 5
+        }
+      }
+    },
+    "after": {
+      "revision": 2,
+      "instruction": "选出队伍的总人数。",
+      "presentation": {
+        "evidence": {
+          "kind": "overlapQueue",
+          "left": 4,
+          "right": 5,
+          "wording": "groups"
+        }
+      }
+    }
+  },
+  {
+    "id": "explore-ordinal-queue-9",
+    "fields": [
+      "revision",
+      "instruction",
+      "presentation"
+    ],
+    "before": {
+      "revision": 1,
+      "instruction": "选出符合条件的一张图卡。",
+      "presentation": {
+        "evidence": {
+          "kind": "overlapQueue",
+          "left": 5,
+          "right": 6
+        }
+      }
+    },
+    "after": {
+      "revision": 2,
+      "instruction": "选出队伍的总人数。",
+      "presentation": {
+        "evidence": {
+          "kind": "overlapQueue",
+          "left": 5,
+          "right": 6,
+          "wording": "groups"
+        }
+      }
+    }
+  },
+  {
+    "id": "explore-parity-place-value-7",
+    "fields": [
+      "revision",
+      "instruction",
+      "hints",
+      "presentation"
+    ],
+    "before": {
+      "revision": 1,
+      "instruction": "选出符合条件的一张图卡。",
+      "hints": [
+        "一长条代表10，一小块代表1。",
+        "23拿走一变成22。每增加或减少一个，单双都会改变。"
+      ],
+      "presentation": {
+        "evidence": {
+          "kind": "placeValueModel",
+          "tens": 2,
+          "ones": 3
+        },
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "revision": 2,
+      "instruction": "选出剩下的数量。",
+      "hints": [
+        "只拿走一小块，一长条保持不动。",
+        "23拿走一变成22。每增加或减少一个，单双都会改变。"
+      ],
+      "presentation": {
+        "evidence": {
+          "kind": "placeValueModel",
+          "tens": 2,
+          "ones": 3,
+          "removeOnes": 1
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-parity-place-value-8",
+    "fields": [
+      "revision",
+      "instruction",
+      "hints",
+      "presentation"
+    ],
+    "before": {
+      "revision": 1,
+      "instruction": "选出符合条件的一张图卡。",
+      "hints": [
+        "一长条代表10，一小块代表1。",
+        "34拿走一变成33。每增加或减少一个，单双都会改变。"
+      ],
+      "presentation": {
+        "evidence": {
+          "kind": "placeValueModel",
+          "tens": 3,
+          "ones": 4
+        },
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "revision": 2,
+      "instruction": "选出剩下的数量。",
+      "hints": [
+        "只拿走一小块，一长条保持不动。",
+        "34拿走一变成33。每增加或减少一个，单双都会改变。"
+      ],
+      "presentation": {
+        "evidence": {
+          "kind": "placeValueModel",
+          "tens": 3,
+          "ones": 4,
+          "removeOnes": 1
+        },
+        "readableEvidence": true
+      }
+    }
+  },
+  {
+    "id": "explore-parity-place-value-9",
+    "fields": [
+      "revision",
+      "instruction",
+      "hints",
+      "presentation"
+    ],
+    "before": {
+      "revision": 1,
+      "instruction": "选出符合条件的一张图卡。",
+      "hints": [
+        "一长条代表10，一小块代表1。",
+        "45拿走一变成44。每增加或减少一个，单双都会改变。"
+      ],
+      "presentation": {
+        "evidence": {
+          "kind": "placeValueModel",
+          "tens": 4,
+          "ones": 5
+        },
+        "readableEvidence": true
+      }
+    },
+    "after": {
+      "revision": 2,
+      "instruction": "选出剩下的数量。",
+      "hints": [
+        "只拿走一小块，一长条保持不动。",
+        "45拿走一变成44。每增加或减少一个，单双都会改变。"
+      ],
+      "presentation": {
+        "evidence": {
+          "kind": "placeValueModel",
+          "tens": 4,
+          "ones": 5,
+          "removeOnes": 1
+        },
+        "readableEvidence": true
+      }
+    }
+  }
+]

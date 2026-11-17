@@ -213,6 +213,12 @@ export const imageGallery = {
       src: "/images/characters/bear.png",
       alt: "小熊头像",
     },
+    queueCatSilver: { src: "/images/characters/queue-065/cat-silver.png", alt: "银灰色小猫头像" },
+    queueCatCream: { src: "/images/characters/queue-065/cat-cream.png", alt: "奶油色小猫头像" },
+    queueDogChocolate: { src: "/images/characters/queue-065/dog-chocolate.png", alt: "巧克力色小狗头像" },
+    queueDogSilver: { src: "/images/characters/queue-065/dog-silver.png", alt: "银灰色小狗头像" },
+    queueBearBlack: { src: "/images/characters/queue-065/bear-black.png", alt: "黑色小熊头像" },
+    queueBearIvory: { src: "/images/characters/queue-065/bear-ivory.png", alt: "象牙白小熊头像" },
   },
   items: {
     ...logicHouseItems,

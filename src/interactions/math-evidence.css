@@ -94,6 +94,11 @@
 .math-ten-rod i+i { border-top:1px solid #4c7a92; }
 .math-ones { display:grid; grid-template-columns:repeat(5,var(--place-unit)); gap:var(--place-gap); }
 .math-ones>span { width:var(--place-unit); height:var(--place-unit); border:1px solid #bd974b; background:linear-gradient(135deg,#ffe5a5,#edc46b); box-shadow:1px 1px 0 #9a712822; }
+.math-ones>span.is-taken-away { position:relative; border-style:dashed; }
+.math-ones>span.is-taken-away::after { content:""; position:absolute; left:-4px; right:-4px; top:50%; height:3px; background:#a65647; transform:rotate(-45deg); }
+.math-place-value-change { display:flex; flex-direction:column; align-items:center; gap:8px; }
+.math-place-value-action { margin:6px 0 0; font-size:20px; color:#52664f; }
+.math-place-value-action strong { font-size:28px; }
 .math-place-value-key { display:flex; flex-wrap:wrap; justify-content:center; gap:6px 18px; margin:8px 0 2px; font-size:18px; line-height:1.5; text-align:center; color:#52664f; }
 .math-number-pattern { display:grid; grid-template-columns:repeat(var(--pattern-columns),minmax(0,1fr)); gap:7px; padding:15px 0; max-width:630px; margin:auto; }
 .math-number-pattern>span { display:grid; place-items:center; min-height:64px; border:2px solid #bac9ad; border-radius:9px; background:#fffdf6; color:#3e5c4d; font-size:28px; font-weight:650; }
@@ -103,15 +108,10 @@
 .math-equation-shape { display:block; width:36px; height:36px; background:#eab757; border:2px solid #af8540; box-shadow:0 3px 0 #c1a57333; }
 .math-equation-shape.is-circle { border-radius:50%; background:#89b5d0; border-color:#5c8fae; }
 .math-equation-shape.is-triangle { clip-path:polygon(50% 0,100% 100%,0 100%); border:0; }
-.queue-overlap-evidence { position:relative; isolation:isolate; }
-.queue-overlap-evidence::before,.queue-overlap-evidence::after { content:""; position:absolute; top:0; bottom:0; width:calc(50% + 42px); border:2px solid #b7cba9; border-radius:14px; z-index:-1; background:#e2ecd585; }
-.queue-overlap-evidence::before { left:0; }.queue-overlap-evidence::after { right:0; border-color:#adc6d5; background:#d9e8f180; }
-.queue-overlap-evidence>div,.queue-overlap-evidence>div:last-child { background:transparent; }
 @media(max-width:600px) {
  .math-number-pattern { gap:4px; }.math-number-pattern>span { font-size:24px; min-height:54px; }
  .math-equation,.math-equation-term { gap:8px; }.math-equation-shape { width:30px;height:30px; }
  .comparison-panel .math-place-value-pieces { flex-wrap:wrap;gap:10px; }
- .queue-overlap-evidence::before,.queue-overlap-evidence::after { width:calc(50% + 32px); }
 }
 .math-water-model { position:relative; display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:18px; }
 .math-water-model figure { display:flex; flex-direction:column; align-items:center; gap:8px; margin:0; min-width:0; }
