@@ -86,8 +86,6 @@ export function transitionSession(
           {
             ...state,
             phase: "ready",
-            response: emptyResponse(activity),
-            history: [],
             result: null,
             restarts: state.restarts + 1,
           },
@@ -122,8 +120,6 @@ export function transitionSession(
         ...state,
         phase: "observe",
         reveals: state.reveals + 1,
-        response: emptyResponse(activity),
-        history: [],
         result: null,
       },
       { kind: "reveal" },

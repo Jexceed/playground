@@ -1,11 +1,12 @@
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {withoutEverydayEnglish} from './without-everyday-english.mjs';
+import {beforeCurriculumReview} from './before-curriculum-review.mjs';
 
 // Immutable historical tests still compare their own snapshot. Validate each
 // later, explicitly reviewed change before reversing it solely for that comparison.
 export function restoreReviewedArt(data) {
-  const copy=JSON.parse(JSON.stringify(data));
+  const copy=beforeCurriculumReview(data);
   const changes=[...JSON.parse(readFileSync('specs/051-rule-play-art/image-changes.json')).map(c=>({...c,feature:'051'})),...JSON.parse(readFileSync('specs/052-art-review-framework-guard/image-changes.json')).map(c=>({...c,feature:'052'}))];
   for(const change of changes)assert.deepEqual(copy.imageGallery[change.category][change.key],change.after,`exact reviewed ${change.feature} asset ${change.key}`);
   function visit(value){
@@ -179,7 +180,7 @@ export function restoreVisibleQueueCounting(data) {
 // 065 adds portraits only; every old image and curriculum field stays visible
 // to historical snapshot comparisons.
 export function withoutQueueColorAdditions(data) {
-  const copy=JSON.parse(JSON.stringify(data));
+  const copy=beforeCurriculumReview(data);
   if(copy.imageGallery)for(const addition of JSON.parse(readFileSync('specs/065-queue-portrait-fit/gallery-additions.json'))) {
     assert.deepEqual(copy.imageGallery[addition.category][addition.key],addition.after,`exact reviewed 065 portrait ${addition.key}`);
     delete copy.imageGallery[addition.category][addition.key];

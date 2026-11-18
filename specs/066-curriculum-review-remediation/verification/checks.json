@@ -1,0 +1,92 @@
+{
+  "base": "2053cb74b185",
+  "date": "2026-11-18",
+  "catalog": {
+    "math": 266,
+    "logic": 445,
+    "graphic": 234,
+    "memory": 81,
+    "language": 66,
+    "life": 30,
+    "totalGames": 118,
+    "totalRounds": 1122,
+    "legacyGames": 40,
+    "legacyRounds": 489,
+    "interactiveGames": 78,
+    "interactiveRounds": 633,
+    "mathTargetMet": true,
+    "logicTargetMet": true,
+    "graphicTargetMet": true,
+    "problemCount": 0,
+    "problems": []
+  },
+  "desktopReplay": {
+    "stages": 2,
+    "sets": 118,
+    "rounds": 1122,
+    "automaticAnswers": 1070,
+    "parentForms": 52,
+    "singleChoicesWithExpectedRetry": 276,
+    "genericSingleChoiceRetries": 0,
+    "untouchedMultiSelect": 93,
+    "undecodedBoardImages": 0,
+    "pageErrors": 0
+  },
+  "independentMathLogic": {
+    "roundCount": 252,
+    "independentCases": 10920,
+    "errors": []
+  },
+  "authoredAnswers": {
+    "groups": 71,
+    "activities": 597,
+    "problems": [],
+    "duplicates": []
+  },
+  "nodeTests": {
+    "tests": 322,
+    "pass": 322,
+    "fail": 0,
+    "skipped": 0
+  },
+  "voice": {
+    "entries": 4576,
+    "addedAudioPaths": 235,
+    "retiredAudioPaths": 70,
+    "provider": "edge-tts Python package",
+    "voicesByLocale": {
+      "zh-CN": "zh-CN-XiaoxiaoNeural",
+      "en-US": "en-US-JennyNeural"
+    },
+    "failed": 0,
+    "media": {
+      "manifestCount": 4576,
+      "checkedCount": 4576,
+      "problemCount": 0,
+      "problems": [],
+      "minimumHanSeconds": 0.18
+    },
+    "manifestSHA256": "960758ada7ff3cf6822dce0e356a1d5b7b9d927a4aab5a2fb8cc3d4daf242fcd"
+  },
+  "illustrations": {
+    "atlasCount": 18,
+    "usedFrameCount": 74,
+    "unusedFrames": [],
+    "problems": []
+  },
+  "douyinOfflineExport": {
+    "appId": "tta51dd3a03b67523202",
+    "games": 8,
+    "rounds": 122,
+    "assets": 359,
+    "runtimeAssetMB": 9.26,
+    "problems": []
+  },
+  "mac": {
+    "path": "/Applications/小小思考屋.app",
+    "binarySHA256": "1fe8e6fcc42b9229af002df9b094c0518b72d9b16c56e57ca4d4a68b035071be",
+    "buildMatchesInstall": true,
+    "strictDeepSignature": "valid",
+    "observed": "Launched the installed Tauri build, entered 公平分一分 round 1, moved one of two cakes to plate 1 and returned it. Remaining count 2→1→2 and plate 0→1→0. Returned to 启蒙/先做什么/7 then 探索/队伍有多长/9. No new completion was submitted in the native session."
+  }
+}

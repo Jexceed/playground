@@ -50,6 +50,10 @@ export function assessExploration(group: ActivitySet): ActivitySet {
     if (a.presentation?.pyramid) workload.compositionLayers = a.presentation.pyramid.rowSizes.length;
     a.difficulty = { ...load, memory: memoryItems(a), calibration: 'design-estimate', workload };
     a.prerequisites = prerequisites;
+    if (a.id === 'explore-nature-growth-7') {
+      a.prerequisites = '能指出豆苗的一处特点，可由家长代写日期。';
+      a.difficulty.basis = '第一天画下或记下所见。以后用同一株豆苗的带日期记录比较变化。';
+    }
     if (a.protocol.kind === 'memory' && a.protocol.audioLocale) a.difficulty.languageLocale = a.protocol.audioLocale;
     // The third story has pictures; the first two use written event phrases with voice support.
     if (a.primaryFamilyId === 'A05' && a.stage === 2) {

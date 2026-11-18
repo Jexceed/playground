@@ -1,4 +1,5 @@
 import {restoreChildReadableWording} from "./lib/restore-reviewed-wording.mjs";
+import {beforeCurriculumReview} from "./lib/before-curriculum-review.mjs";
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
@@ -11,7 +12,7 @@ const {logicLessonFor}=await loadTypeScriptModule('src/data/logicLessonVisuals.t
 const {logicEvidenceDefinitions}=await loadTypeScriptModule('src/data/logicEvidence.ts');
 const byId=new Map(current.games.flatMap(g=>g.rounds).map(r=>[r.id,r]));
 test('047 edits only declared wording fields, preserving all identities, choices, answers and other courses',()=>{
- const restored=structuredClone(current);
+ const restored=beforeCurriculumReview(current);
  for(const change of changes){
   assert.ok(['logic-sorter-switch','logic-story-evidence','logic-condition-detective','logic-fix-plan','logic-priority-choice','logic-space-bridge'].includes(change.gameId));
   const round=restored.games.find(g=>g.id===change.gameId).rounds.find(r=>r.id===change.id);

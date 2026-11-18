@@ -8,7 +8,8 @@ const uri='data:image/png;base64,TEST',discUris=Object.fromEntries(['#548cb3','#
 test('quantity sprites keep every authored centre and diameter without mutating the model',()=>{
  let count=0;
  for(const d of Object.values(explorationDrawings))if(drawingFinish(d).quantity){const before=JSON.stringify(d),svg=renderExplorationSvg(d,{discUris});const circles=d.objects.filter(o=>o.kind==='circle');assert.equal((svg.match(/data-quantity-dot=/g)||[]).length,circles.length);for(const o of circles)assert.ok(svg.includes(`x="${o.x-o.r}" y="${o.y-o.r}" width="${o.r*2}" height="${o.r*2}"`));assert.equal(JSON.stringify(d),before);count++;}
- assert.equal(count,81);
+ // The memory preview now draws its dots alongside the actual friend portrait.
+ assert.equal(count,69);
 });
 test('holes, overlapping geometry and large shape comparisons never become quantity chips',()=>{
  const hole={width:100,height:100,objects:[{kind:'rect',x:0,y:0,w:100,h:100,fill:'#fffdf7'},{kind:'circle',x:50,y:50,r:9,fill:'#db675e'}]};

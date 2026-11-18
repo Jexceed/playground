@@ -1,0 +1,959 @@
+{
+  "viewport": [
+    1440,
+    960
+  ],
+  "host": "Chrome, isolated browser contexts",
+  "entry": "App section, world, group and individual round controls",
+  "submissions": "Programmatic activation of page controls. Parent observations use simulated selections. Targeted touch and mouse replay is recorded separately.",
+  "rounds": 1122,
+  "completed": 1122,
+  "groups": [
+    {
+      "group": "math-counting-cardinality",
+      "count": 18,
+      "completed": 18,
+      "parentForms": 0,
+      "wrongThenCorrect": 18,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "math-subitize-match",
+      "count": 15,
+      "completed": 15,
+      "parentForms": 0,
+      "wrongThenCorrect": 15,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "math-compare-equalize",
+      "count": 12,
+      "completed": 12,
+      "parentForms": 0,
+      "wrongThenCorrect": 12,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "math-compose-decompose",
+      "count": 28,
+      "completed": 28,
+      "parentForms": 0,
+      "wrongThenCorrect": 28,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "math-story-operations",
+      "count": 12,
+      "completed": 12,
+      "parentForms": 0,
+      "wrongThenCorrect": 12,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "math-fair-share",
+      "count": 13,
+      "completed": 13,
+      "parentForms": 0,
+      "wrongThenCorrect": 13,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "math-group-counting",
+      "count": 12,
+      "completed": 12,
+      "parentForms": 0,
+      "wrongThenCorrect": 12,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "math-clock-time",
+      "count": 12,
+      "completed": 12,
+      "parentForms": 0,
+      "wrongThenCorrect": 12,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "logic-pattern-train",
+      "count": 18,
+      "completed": 18,
+      "parentForms": 0,
+      "wrongThenCorrect": 18,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "logic-sorter-switch",
+      "count": 11,
+      "completed": 11,
+      "parentForms": 0,
+      "wrongThenCorrect": 11,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "logic-stop-think",
+      "count": 6,
+      "completed": 6,
+      "parentForms": 0,
+      "wrongThenCorrect": 6,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "logic-order-plan",
+      "count": 24,
+      "completed": 24,
+      "parentForms": 0,
+      "wrongThenCorrect": 24,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "logic-story-evidence",
+      "count": 7,
+      "completed": 7,
+      "parentForms": 0,
+      "wrongThenCorrect": 7,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "logic-condition-detective",
+      "count": 12,
+      "completed": 12,
+      "parentForms": 0,
+      "wrongThenCorrect": 12,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "logic-fix-plan",
+      "count": 12,
+      "completed": 12,
+      "parentForms": 0,
+      "wrongThenCorrect": 12,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "logic-priority-choice",
+      "count": 12,
+      "completed": 12,
+      "parentForms": 0,
+      "wrongThenCorrect": 12,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "logic-rule-filter",
+      "count": 14,
+      "completed": 14,
+      "parentForms": 0,
+      "wrongThenCorrect": 14,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "logic-relation-pairs",
+      "count": 16,
+      "completed": 16,
+      "parentForms": 0,
+      "wrongThenCorrect": 16,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "logic-space-bridge",
+      "count": 8,
+      "completed": 8,
+      "parentForms": 0,
+      "wrongThenCorrect": 0,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "logic-same-kind-detective",
+      "count": 12,
+      "completed": 12,
+      "parentForms": 0,
+      "wrongThenCorrect": 12,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "logic-number-pattern-trail",
+      "count": 15,
+      "completed": 15,
+      "parentForms": 0,
+      "wrongThenCorrect": 15,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "logic-address-map",
+      "count": 12,
+      "completed": 12,
+      "parentForms": 0,
+      "wrongThenCorrect": 12,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "logic-matrix-puzzle",
+      "count": 6,
+      "completed": 6,
+      "parentForms": 0,
+      "wrongThenCorrect": 6,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "logic-position-map",
+      "count": 12,
+      "completed": 12,
+      "parentForms": 0,
+      "wrongThenCorrect": 12,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "logic-memory-camera",
+      "count": 12,
+      "completed": 12,
+      "parentForms": 0,
+      "wrongThenCorrect": 12,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "logic-visual-match",
+      "count": 12,
+      "completed": 12,
+      "parentForms": 0,
+      "wrongThenCorrect": 12,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "logic-difference-detective",
+      "count": 12,
+      "completed": 12,
+      "parentForms": 0,
+      "wrongThenCorrect": 12,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "logic-rotation-direction",
+      "count": 12,
+      "completed": 12,
+      "parentForms": 0,
+      "wrongThenCorrect": 12,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "logic-part-whole-puzzle",
+      "count": 12,
+      "completed": 12,
+      "parentForms": 0,
+      "wrongThenCorrect": 12,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "logic-balance-swap",
+      "count": 10,
+      "completed": 10,
+      "parentForms": 0,
+      "wrongThenCorrect": 10,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "logic-mirror-fold",
+      "count": 12,
+      "completed": 12,
+      "parentForms": 0,
+      "wrongThenCorrect": 12,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "logic-block-height-map",
+      "count": 12,
+      "completed": 12,
+      "parentForms": 0,
+      "wrongThenCorrect": 12,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "logic-three-view-blocks",
+      "count": 18,
+      "completed": 18,
+      "parentForms": 0,
+      "wrongThenCorrect": 18,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "logic-route-steps",
+      "count": 10,
+      "completed": 10,
+      "parentForms": 0,
+      "wrongThenCorrect": 10,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "graphic-shadow-match",
+      "count": 8,
+      "completed": 8,
+      "parentForms": 0,
+      "wrongThenCorrect": 8,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "graphic-covered-restore",
+      "count": 8,
+      "completed": 8,
+      "parentForms": 0,
+      "wrongThenCorrect": 8,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "graphic-detail-whole",
+      "count": 8,
+      "completed": 8,
+      "parentForms": 0,
+      "wrongThenCorrect": 8,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "graphic-layer-overlap",
+      "count": 8,
+      "completed": 8,
+      "parentForms": 0,
+      "wrongThenCorrect": 8,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "graphic-code-machine",
+      "count": 8,
+      "completed": 8,
+      "parentForms": 0,
+      "wrongThenCorrect": 8,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "graphic-gap-close",
+      "count": 8,
+      "completed": 8,
+      "parentForms": 0,
+      "wrongThenCorrect": 8,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "logic-rule-workshop",
+      "count": 6,
+      "completed": 6,
+      "parentForms": 0,
+      "wrongThenCorrect": 0,
+      "untouchedMultiSelect": 6
+    },
+    {
+      "group": "logic-lineup-challenge",
+      "count": 6,
+      "completed": 6,
+      "parentForms": 0,
+      "wrongThenCorrect": 0,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "graphic-rule-grid",
+      "count": 6,
+      "completed": 6,
+      "parentForms": 0,
+      "wrongThenCorrect": 0,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "logic-memory-placement",
+      "count": 6,
+      "completed": 6,
+      "parentForms": 0,
+      "wrongThenCorrect": 0,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-counting-cardinality",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 0,
+      "wrongThenCorrect": 9,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-compare-transfer",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 0,
+      "wrongThenCorrect": 9,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-number-conservation",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 0,
+      "wrongThenCorrect": 9,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-number-partitions",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 0,
+      "wrongThenCorrect": 0,
+      "untouchedMultiSelect": 9
+    },
+    {
+      "group": "explore-make-break-ten",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 0,
+      "wrongThenCorrect": 9,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-quantity-stories",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 0,
+      "wrongThenCorrect": 9,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-group-share",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 0,
+      "wrongThenCorrect": 9,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-area-fractions",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 0,
+      "wrongThenCorrect": 9,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-ordinal-queue",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 0,
+      "wrongThenCorrect": 9,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-parity-place-value",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 0,
+      "wrongThenCorrect": 6,
+      "untouchedMultiSelect": 3
+    },
+    {
+      "group": "explore-number-sequences",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 0,
+      "wrongThenCorrect": 9,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-symbol-equations",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 0,
+      "wrongThenCorrect": 9,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-money-shopping",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 0,
+      "wrongThenCorrect": 6,
+      "untouchedMultiSelect": 3
+    },
+    {
+      "group": "explore-time-elapsed",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 0,
+      "wrongThenCorrect": 9,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-measurement-boundaries",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 0,
+      "wrongThenCorrect": 9,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-calendar-cycles",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 0,
+      "wrongThenCorrect": 9,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-multi-rule-classification",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 0,
+      "wrongThenCorrect": 0,
+      "untouchedMultiSelect": 9
+    },
+    {
+      "group": "explore-relations-analogies",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 0,
+      "wrongThenCorrect": 0,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-transitive-order",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 0,
+      "wrongThenCorrect": 3,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-constraint-grid",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 0,
+      "wrongThenCorrect": 0,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-route-constraints",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 0,
+      "wrongThenCorrect": 0,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-planning-repair",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 0,
+      "wrongThenCorrect": 0,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-evidence-reasoning",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 3,
+      "wrongThenCorrect": 0,
+      "untouchedMultiSelect": 6
+    },
+    {
+      "group": "explore-learn-rule-transfer",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 0,
+      "wrongThenCorrect": 9,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-toggle-state",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 0,
+      "wrongThenCorrect": 0,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-multi-agent-movement",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 0,
+      "wrongThenCorrect": 0,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-board-strategy",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 0,
+      "wrongThenCorrect": 0,
+      "untouchedMultiSelect": 9
+    },
+    {
+      "group": "explore-bridge-networks",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 0,
+      "wrongThenCorrect": 0,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-visual-search-match",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 0,
+      "wrongThenCorrect": 9,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-occlusion-texture",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 0,
+      "wrongThenCorrect": 9,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-feature-matrices",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 0,
+      "wrongThenCorrect": 0,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-position-transform",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 0,
+      "wrongThenCorrect": 9,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-rotation-reflection",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 0,
+      "wrongThenCorrect": 9,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-shape-set-operations",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 0,
+      "wrongThenCorrect": 9,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-recursive-composition",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 0,
+      "wrongThenCorrect": 3,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-symbolic-color-rules",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 0,
+      "wrongThenCorrect": 9,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-geometric-counts",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 0,
+      "wrongThenCorrect": 9,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-symmetry-axes",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 0,
+      "wrongThenCorrect": 0,
+      "untouchedMultiSelect": 9
+    },
+    {
+      "group": "explore-topology-relations",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 0,
+      "wrongThenCorrect": 3,
+      "untouchedMultiSelect": 6
+    },
+    {
+      "group": "explore-marker-invariants",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 0,
+      "wrongThenCorrect": 9,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-symbol-codes",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 0,
+      "wrongThenCorrect": 0,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-shape-assembly",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 0,
+      "wrongThenCorrect": 0,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-fold-cut",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 3,
+      "wrongThenCorrect": 6,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-solid-views-count",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 3,
+      "wrongThenCorrect": 3,
+      "untouchedMultiSelect": 3
+    },
+    {
+      "group": "explore-relative-perspective",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 0,
+      "wrongThenCorrect": 9,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-cube-nets",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 0,
+      "wrongThenCorrect": 6,
+      "untouchedMultiSelect": 3
+    },
+    {
+      "group": "explore-grid-copy-reconstruction",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 0,
+      "wrongThenCorrect": 0,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-layer-order-planning",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 0,
+      "wrongThenCorrect": 0,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-visual-set-memory",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 0,
+      "wrongThenCorrect": 0,
+      "untouchedMultiSelect": 9
+    },
+    {
+      "group": "explore-spatial-memory",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 0,
+      "wrongThenCorrect": 0,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-sequence-memory",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 0,
+      "wrongThenCorrect": 0,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-auditory-instructions",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 0,
+      "wrongThenCorrect": 0,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-story-recall",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 3,
+      "wrongThenCorrect": 3,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-attention-search",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 0,
+      "wrongThenCorrect": 0,
+      "untouchedMultiSelect": 9
+    },
+    {
+      "group": "explore-inhibition-switch",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 0,
+      "wrongThenCorrect": 0,
+      "untouchedMultiSelect": 9
+    },
+    {
+      "group": "explore-sound-rhythm",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 1,
+      "wrongThenCorrect": 0,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-relational-quantity-memory",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 0,
+      "wrongThenCorrect": 0,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-vocabulary-relations",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 3,
+      "wrongThenCorrect": 0,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-describe-relations",
+      "count": 3,
+      "completed": 3,
+      "parentForms": 3,
+      "wrongThenCorrect": 0,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-story-sequence-expression",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 3,
+      "wrongThenCorrect": 0,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-creative-explanation",
+      "count": 3,
+      "completed": 3,
+      "parentForms": 3,
+      "wrongThenCorrect": 0,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-character-phonics",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 0,
+      "wrongThenCorrect": 6,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-english-listening",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 0,
+      "wrongThenCorrect": 9,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-bilingual-concepts",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 0,
+      "wrongThenCorrect": 9,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-conversation-self-expression",
+      "count": 3,
+      "completed": 3,
+      "parentForms": 3,
+      "wrongThenCorrect": 0,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-everyday-classification",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 3,
+      "wrongThenCorrect": 0,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-nature-growth",
+      "count": 9,
+      "completed": 9,
+      "parentForms": 3,
+      "wrongThenCorrect": 0,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-science-experiments",
+      "count": 3,
+      "completed": 3,
+      "parentForms": 3,
+      "wrongThenCorrect": 0,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-senses-social-rules",
+      "count": 3,
+      "completed": 3,
+      "parentForms": 3,
+      "wrongThenCorrect": 0,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-culture-world",
+      "count": 3,
+      "completed": 3,
+      "parentForms": 3,
+      "wrongThenCorrect": 0,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "explore-fine-motor-action",
+      "count": 3,
+      "completed": 3,
+      "parentForms": 3,
+      "wrongThenCorrect": 0,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "everyday-english-greetings",
+      "count": 4,
+      "completed": 4,
+      "parentForms": 2,
+      "wrongThenCorrect": 2,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "everyday-english-kind-words",
+      "count": 4,
+      "completed": 4,
+      "parentForms": 2,
+      "wrongThenCorrect": 2,
+      "untouchedMultiSelect": 0
+    },
+    {
+      "group": "everyday-english-asking",
+      "count": 4,
+      "completed": 4,
+      "parentForms": 2,
+      "wrongThenCorrect": 2,
+      "untouchedMultiSelect": 0
+    }
+  ],
+  "undecodedBoardImages": 0,
+  "pageErrors": 0
+}

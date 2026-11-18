@@ -133,6 +133,8 @@ export type CatalogLocation = {
 };
 
 export const ACTIVITY_COPY = {
+  selectCards: "先选一张图卡，再看看。",
+  selectMove: "先在棋盘上试放，再选中你想留下的位置。",
   incomplete: "还有空位没有放好，再看一看。",
   invalid: "这次摆放没有对上，请重新放一放。",
   noHistory: "先试着放一张图卡吧。",

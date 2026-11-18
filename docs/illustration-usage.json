@@ -500,16 +500,6 @@
               "round": 4,
               "surface": "token",
               "label": "种子在土里"
-            },
-            {
-              "activityId": "explore-nature-growth-7",
-              "family": "P02",
-              "gameId": "explore-nature-growth",
-              "groupTitle": "变化观察册",
-              "world": "life",
-              "round": 7,
-              "surface": "story",
-              "label": "种子在土里"
             }
           ]
         },
@@ -529,16 +519,6 @@
               "world": "life",
               "round": 4,
               "surface": "token",
-              "label": "先长出根"
-            },
-            {
-              "activityId": "explore-nature-growth-7",
-              "family": "P02",
-              "gameId": "explore-nature-growth",
-              "groupTitle": "变化观察册",
-              "world": "life",
-              "round": 7,
-              "surface": "story",
               "label": "先长出根"
             }
           ]
@@ -569,16 +549,6 @@
               "world": "life",
               "round": 4,
               "surface": "token",
-              "label": "小芽出土"
-            },
-            {
-              "activityId": "explore-nature-growth-7",
-              "family": "P02",
-              "gameId": "explore-nature-growth",
-              "groupTitle": "变化观察册",
-              "world": "life",
-              "round": 7,
-              "surface": "story",
               "label": "小芽出土"
             }
           ]
@@ -618,8 +588,8 @@
               "groupTitle": "变化观察册",
               "world": "life",
               "round": 7,
-              "surface": "story",
-              "label": "叶片展开"
+              "surface": "material",
+              "label": "一株豆苗"
             }
           ]
         }
@@ -1640,6 +1610,26 @@
               "round": 5,
               "surface": "token",
               "label": "开"
+            },
+            {
+              "activityId": "explore-vocabulary-relations-7",
+              "family": "E01",
+              "gameId": "explore-vocabulary-relations",
+              "groupTitle": "词语有朋友",
+              "world": "language",
+              "round": 7,
+              "surface": "material",
+              "label": "能开合的盒子"
+            },
+            {
+              "activityId": "explore-vocabulary-relations-9",
+              "family": "E01",
+              "gameId": "explore-vocabulary-relations",
+              "groupTitle": "词语有朋友",
+              "world": "language",
+              "round": 9,
+              "surface": "material",
+              "label": "能开合的盒子"
             }
           ]
         }
@@ -2441,6 +2431,16 @@
           "rows": 2,
           "alt": "白纸",
           "references": [
+            {
+              "activityId": "explore-nature-growth-7",
+              "family": "P02",
+              "gameId": "explore-nature-growth",
+              "groupTitle": "变化观察册",
+              "world": "life",
+              "round": 7,
+              "surface": "material",
+              "label": "白纸"
+            },
             {
               "activityId": "explore-science-experiments-2",
               "family": "P03",

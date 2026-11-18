@@ -27,7 +27,27 @@ function routeSolution(a: RouteActivity) { const found: string[][] = []; functio
 const featureCards = () => Array.from({ length: 9 }, (_, k) => card(`f${k}`, `${['红', '蓝', '黄'][Math.floor(k / 3)]}色${['圆形', '方形', '三角形'][k % 3]}`, symbol(k % 3, Math.floor(k / 3))));
 export const logicSets = [
     set('L01', '分类换个角度', nine((i, s, v) => { const ts = featureCards(); const valid = ts.filter((_, k) => s === 0 ? Math.floor(k / 3) === v : s === 1 ? k % 3 === v : Math.floor(k / 3) !== v && k % 3 !== ((v + 1) % 3)); const clues = s === 0 ? [`选出${['红', '蓝', '黄'][v]}色。`] : s === 1 ? [`选出${['圆形', '方形', '三角形'][v]}。`] : [`颜色不是${['红', '蓝', '黄'][v]}色。`, `形状不是${['圆形', '方形', '三角形'][(v + 1) % 3]}。`]; return selection('L01', i, '按这次的规则整理图卡。', ts, valid.map(t => t.id), '每一张留下的图卡都符合这次的条件。换一个条件，原来同组的图卡也可能分开。', undefined, clues); })),
-    set('L02', '关系接力', nine((i, s, v) => { const n = 2 + s; const left = Array.from({ length: n }, (_, k) => card(`a${k}`, `左图${k + 1}`, s === 0 ? dots(k + 2 + v) : symbol(k % 3, v))); const right = Array.from({ length: n }, (_, k) => card(`b${k}`, s === 0 ? String(k + 2 + v) : `右图${k + 1}`, s === 0 ? undefined : symbol(k % 3, (v + 1) % 3))); const a = matching('L02', i, s === 0 ? '把点群和表示数量的数连起来。' : s === 1 ? '颜色换了，找到形状关系相同的图。' : '把左边每个图和右边同形状的图配对，颜色可以不同。', left, right, left.map((t, k) => [t.id, right[k].id]), s === 0 ? '点的数量和数字一一对应，排法不会改变这个关系。' : '颜色不同不会改变形状关系。先说出形状，再寻找对应图。'); if (a.kind === 'matching' && s === 2) a.alternativePairings = [[['a0', 'b3'], ['a1', 'b1'], ['a2', 'b2'], ['a3', 'b0']]]; return a; })),
+    set('L02', '关系接力', nine((i, s, v) => {
+        const count = 2 + s;
+        const left = Array.from({ length: count }, (_, k) => card(`a${k}`, `左图${k + 1}`, s === 0 ? dots(k + 2 + v) : symbol(k % 3, v)));
+        const right = Array.from({ length: count }, (_, k) => card(`b${k}`, s === 0 ? String(k + 2 + v) : `右图${k + 1}`, s === 0 ? undefined : symbol(k % 3, (v + 1) % 3)));
+        const pairs: [string, string][] = left.map((t, k) => [t.id, right[k].id]);
+        const a = matching('L02', i, s === 0 ? '把点群和表示数量的数连起来。' : s === 1 ? '颜色换了，找到形状关系相同的图。' : '把左边每个图和右边同形状的图配对，颜色可以不同。',
+            left, right, pairs, s === 0 ? '点的数量和数字一一对应，排法不会改变这个关系。' : '颜色不同不会改变形状关系。先说出形状，再寻找对应图。');
+        if (s > 0 && a.kind === 'matching') {
+            // Number the cards by their actual position on each side. Keep the answer in shape pairs.
+            const order = (s === 1 ? [[1, 2, 0], [2, 0, 1], [1, 0, 2]] : [[2, 0, 3, 1], [1, 3, 0, 2], [3, 2, 1, 0]])[v];
+            a.rightIds = order.map((k, position) => {
+                const t = right[k];
+                t.label = `右图${position + 1}`;
+                t.image = { ...t.image, alt: t.label };
+                return t.id;
+            });
+            if (s === 2) a.alternativePairings = [[['a0', 'b3'], ['a1', 'b1'], ['a2', 'b2'], ['a3', 'b0']]];
+            a.revision = 2;
+        }
+        return a;
+    })),
     set('L03', '线索够不够', nine((i, s, v) => { if (s === 2) {
         const ts = ['小兔', '小猫', '小狗'];
         return choice('L03', i, `只知道${ts[v]}比${ts[(v + 1) % 3]}高，${ts[(v + 2) % 3]}也比${ts[(v + 1) % 3]}高。谁更高：${ts[v]}还是${ts[(v + 2) % 3]}？`, [`${ts[v]}更高`, `${ts[(v + 2) % 3]}更高`, '现在还不能确定'], 2, '两位都比同一位高，不能确定这两位之间谁更高。还需要比较他们的线索。', equation(`${ts[v]} > ${ts[(v + 1) % 3]} < ${ts[(v + 2) % 3]}`));
@@ -96,16 +116,23 @@ export const logicSets = [
         const final = [...initial];
         steps.forEach(k => final[k] = 1 - final[k]);
         const ts = [card('off', '白面', grid([''], 1)), card('on', '黄面', symbol(1, 2))];
-        const a = fillGrid('L09', i, '照着顺序，动手翻一翻。', ts, n,
+        const result = s === 0 ? '翻过的那张牌换了颜色，其余牌还是原来的颜色。'
+            : s === 1 ? '两张不同的牌各翻了一次，这两张都换了颜色。'
+            : '同一张牌翻两次会回到原来的颜色。只翻一次的那张换了颜色。';
+        const a = fillGrid('L09', i, '看小图，最后每张牌是什么颜色？', ts, n,
             final.map(n => n ? 'on' : 'off'), Array.from({ length: n }, (_, k) => k),
-            '翻一次就换一面。同一张牌翻两次，又回到原来的样子。',
+            result,
             ['点一下大牌，就翻一面。', ...steps.map(cardFlipStepSpeech)],
             grid(initial.map(() => ''), n, [], initial.map(n => n ? palette[2] : '#fffdf7')));
-        a.instruction = '看小图的顺序，点下面的大牌。';
+        a.instruction = '可以照着小图翻，也可以先想一想，把大牌翻到最后的颜色。';
+        if (s === 2) a.difficultyNote = '判断同一张牌翻两次后的颜色';
         a.presentation = { evidence: { kind: 'cardFlip', initial: initial.map(value => value ? 'on' : 'off'), steps } };
-        a.hints = ['先看开始时的牌面，再按小图从左往右翻。', '同一张牌翻两次，会回到原来的样子。'];
+        a.hints = ['先看开始时的牌面，再按小图从左往右翻。',
+            s === 2 ? '同一张牌翻两次，会回到原来的颜色。' : '只翻小图指到的牌，其余牌保持原来的颜色。'];
         a.retry = '对照开始时的牌面，按顺序再翻一遍。也可以点“重新翻”。';
-        a.parentPrompt = '哪张牌翻过两次？它和开始时有什么不同？';
+        a.parentPrompt = s === 0 ? '哪张牌换了颜色？指一张一直没变的牌。'
+            : s === 1 ? '哪两张牌换了颜色？和开始的牌面对一对。'
+            : '照着小图，哪张牌会翻两次？如果跳过这两次，最后的牌面会怎样？';
         a.revision = 2;
         return a;
     })),

@@ -1,0 +1,87 @@
+{
+  "browser": "Chrome, isolated context, mouse at 1440 px and touch at 390 px",
+  "screens": [
+    {
+      "width": 390,
+      "rows": [
+        {
+          "id": "explore-bilingual-concepts-7",
+          "kind": "singleChoice",
+          "complete": true,
+          "english": {
+            "text": "The red bar is longer than the blue bar. The blue bar is longer than the yellow bar.",
+            "voice": "en-US-JennyNeural",
+            "src": "/audio/voice/en-US/edge-en-us-jennyneural/stimulus-the-red-bar-is-longer-than-the-blue-bar-the-blue-bar-is-longer-than-the.mp3",
+            "status": 206
+          },
+          "loadedImages": 3
+        },
+        {
+          "id": "explore-bilingual-concepts-8",
+          "kind": "singleChoice",
+          "complete": true,
+          "english": {
+            "text": "The blue bar is longer than the yellow bar. The yellow bar is longer than the red bar.",
+            "voice": "en-US-JennyNeural",
+            "src": "/audio/voice/en-US/edge-en-us-jennyneural/stimulus-the-blue-bar-is-longer-than-the-yellow-bar-the-yellow-bar-is-longer-tha.mp3",
+            "status": 206
+          },
+          "loadedImages": 3
+        },
+        {
+          "id": "explore-bilingual-concepts-9",
+          "kind": "singleChoice",
+          "complete": true,
+          "english": {
+            "text": "The yellow bar is longer than the red bar. The red bar is longer than the blue bar.",
+            "voice": "en-US-JennyNeural",
+            "src": "/audio/voice/en-US/edge-en-us-jennyneural/stimulus-the-yellow-bar-is-longer-than-the-red-bar-the-red-bar-is-longer-than-th.mp3",
+            "status": 206
+          },
+          "loadedImages": 3
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "rows": [
+        {
+          "id": "explore-bilingual-concepts-7",
+          "kind": "singleChoice",
+          "complete": true,
+          "english": {
+            "text": "The red bar is longer than the blue bar. The blue bar is longer than the yellow bar.",
+            "voice": "en-US-JennyNeural",
+            "src": "/audio/voice/en-US/edge-en-us-jennyneural/stimulus-the-red-bar-is-longer-than-the-blue-bar-the-blue-bar-is-longer-than-the.mp3",
+            "status": 206
+          },
+          "loadedImages": 3
+        },
+        {
+          "id": "explore-bilingual-concepts-8",
+          "kind": "singleChoice",
+          "complete": true,
+          "english": {
+            "text": "The blue bar is longer than the yellow bar. The yellow bar is longer than the red bar.",
+            "voice": "en-US-JennyNeural",
+            "src": "/audio/voice/en-US/edge-en-us-jennyneural/stimulus-the-blue-bar-is-longer-than-the-yellow-bar-the-yellow-bar-is-longer-tha.mp3",
+            "status": 206
+          },
+          "loadedImages": 3
+        },
+        {
+          "id": "explore-bilingual-concepts-9",
+          "kind": "singleChoice",
+          "complete": true,
+          "english": {
+            "text": "The yellow bar is longer than the red bar. The red bar is longer than the blue bar.",
+            "voice": "en-US-JennyNeural",
+            "src": "/audio/voice/en-US/edge-en-us-jennyneural/stimulus-the-yellow-bar-is-longer-than-the-red-bar-the-red-bar-is-longer-than-th.mp3",
+            "status": 206
+          },
+          "loadedImages": 3
+        }
+      ]
+    }
+  ]
+}

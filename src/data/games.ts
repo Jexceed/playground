@@ -723,10 +723,34 @@ function makeCompareRounds(): RoundInput[] {
 
 function makeComposeRounds(): RoundInput[] {
   const rounds: RoundInput[] = [];
+  // Some turns give the whole and one box. The missing part stays within ten.
+  const knownPartByRound: Record<number, number> = {
+    2: 2, 4: 3, 6: 1, 8: 4, 11: 2, 13: 4, 15: 1, 17: 2, 19: 3, 21: 1, 23: 2, 27: 1,
+  };
   for (let total = 3; total <= 10; total++) {
     for (let left = 1; left < total && rounds.length < 28; left++) {
       const right = total - left;
       if (right < 1 || right > 6 || left > 6) continue;
+      const known = knownPartByRound[rounds.length + 1];
+      if (known !== undefined) {
+        const whole = total + known;
+        rounds.push({
+          level: whole <= 7 ? "L4" : "L5",
+          prompt: `两盒一共有 ${whole} 块积木。蓝盒里有 ${known} 块，黄盒里有几块？`,
+          instruction: "指一指蓝盒里分好的积木，再数黄盒里的那一份。用两盒的总数检查一下。",
+          visualGroups: [
+            countingGroup("蓝盒", repeat("🧱", known)),
+            countingGroup("黄盒", repeat("🧱", total)),
+          ],
+          choices: numberChoices(total, 2, 10),
+          answer: String(total),
+          success: `蓝盒 ${known} 块，黄盒 ${total} 块，两盒合起来正好 ${whole} 块。`,
+          retry: "蓝盒里的积木已经分好了。再数一数剩下的那一份。",
+          parentPrompt: "如果从黄盒拿一块放到蓝盒，总数会变吗？每一盒呢？",
+          abilityTags: ["合成分解"],
+        });
+        continue;
+      }
       rounds.push({
         level: total <= 5 ? "L4" : "L5",
         prompt: `${left} 个积木和 ${right} 个积木加起来是几个？`,
@@ -795,7 +819,7 @@ function makeShareRounds(): RoundInput[] {
       answer: String(each),
       success: `${countedItem(itemToken, items)}分给 ${target.label}，${target.each} ${each} ${unitOf(itemToken)}，正好一样多。`,
       retry: `轮流分：${target.each}先 1 ${unitOf(itemToken)}，再${target.each} 1 ${unitOf(itemToken)}。`,
-      parentPrompt: "请她用手指做轮流分的动作。",
+      parentPrompt: "请孩子说说，每个人得到了几块？怎样检查每个人分得一样多？",
       abilityTags: ["公平分配", "平均分"],
     });
   });
@@ -1435,15 +1459,15 @@ function makeConditionDetectiveRounds(): RoundInput[] {
     },
     {
       level: "L4",
-      prompt: "行人绿灯亮了，车辆已停、路面安全。和大人一起可以做什么？",
-      instruction: "条件满足了，再选择行动。",
+      prompt: "行人绿灯亮了，大人也确认车辆停稳、路面安全。哪句话说得对？",
+      instruction: "想一想，现在过街的条件够了吗？",
       difficultyNote: "单一条件满足：条件够了以后，选择对应动作。",
       sequence: ["路口", "🟢", "?"],
-      choices: [{ label: "走过去", value: "walk" }, { label: "继续等着", value: "keep-waiting" }, { label: "等红灯再走", value: "wait-red" }],
+      choices: [{ label: "可以和大人一起过街", value: "walk" }, { label: "只要车停就能走", value: "car-only" }, { label: "要等红灯才能走", value: "wait-red" }],
       answer: "walk",
       success: "行人绿灯亮了，还要确认车辆已停、路面安全，再和大人一起走过去。",
       retry: "绿灯表示可以走，但还是要看路。",
-      parentPrompt: "问她：条件满足以后，动作会不会改变？",
+      parentPrompt: "想再等一会儿也可以。准备过街时，你和大人会一起看什么？",
       abilityTags: ["条件判断", "规则执行"],
     },
     {
@@ -1599,15 +1623,15 @@ function makeFixPlanRounds(): RoundInput[] {
     },
     {
       level: "L4",
-      prompt: "行人绿灯亮了，大人已确认车辆停稳、路面安全，接下来可以怎么做？",
-      instruction: "条件已经满足时，要改变动作。",
-      difficultyNote: "条件满足后的行动修正：不只是停，也要在合适时行动。",
-      sequence: ["路口", "🟢", "停"],
-      choices: [{ label: "改成走过去", value: "walk" }, { label: "继续等着", value: "keep-waiting" }, { label: "等红灯再走", value: "wait-red" }],
+      prompt: "小朋友只看见车停了就想走。过斑马线前，怎样检查才周全？",
+      instruction: "找一找，哪种做法既看行人灯，也看路上的车。",
+      difficultyNote: "修正过街计划时，要同时考虑行人信号和车辆状况。",
+      sequence: ["路口", "先看灯", "走过去"],
+      choices: [{ label: "和大人看灯、看路再走", value: "walk" }, { label: "只看车停没停", value: "car-only" }, { label: "只看别人走没走", value: "people-only" }],
       answer: "walk",
       success: "行人绿灯亮了，确认安全后，可以和大人一起走过去。",
-      retry: "绿灯和红灯的动作不一样。",
-      parentPrompt: "问她：什么时候要停？什么时候可以走？",
+      retry: "先指指行人灯，再指指车。哪种做法把这两处都看到了？",
+      parentPrompt: "旁边有人走了，我们还要自己看哪里？如果还没准备好，可以怎么办？",
       abilityTags: ["规则执行", "修正计划"],
     },
     {
@@ -2531,8 +2555,8 @@ function clockTimeConversionCase(input: {
   const timeLabel = formatClockTime(input.hour, input.minute);
   return {
     level: input.level,
-    prompt: "看图和时钟，电子钟应该显示哪个时间？",
-    instruction: `图里在${input.activity}。先读钟面，再结合这个活动选择电子钟时间。`,
+    prompt: "看图和钟面，这台用 24 小时制的电子钟应该显示哪个时间？",
+    instruction: `比如，12:00 再过一小时，短针指向 1，电子钟写 13:00。图里在${input.activity}，看看这时该怎么写。`,
     sceneImage: input.sceneImage,
     clockChallenge: {
       hour: input.hour,
@@ -2615,22 +2639,22 @@ function makeSameKindRounds(): RoundInput[] {
   }));
 
   const oddCases = [
-    { items: ["🍎", "🍊", "葡萄", "小汽车"], answer: "小汽车", reason: "苹果、橘子、葡萄这三个是水果，小汽车不是水果。" },
-    { items: ["小汽车", "公交车", "飞机", "蛋糕"], answer: "蛋糕", reason: "小汽车、公交车、飞机这三个能带我们移动，蛋糕不能当交通工具。" },
-    { items: ["铅笔", "书包", "尺子", "小鱼"], answer: "小鱼", reason: "铅笔、书包、尺子这三个是学习用品，小鱼不是学习用品。" },
-    { items: ["🐱", "🐶", "🐰", "杯子"], answer: "杯子", reason: "小猫、小狗、小兔这三个是小动物，杯子不是小动物。" },
-    { items: ["⚽", "🍊", "饼干", "长木板"], answer: "长木板", reason: "足球、橘子、饼干这三个是圆圆的，长木板不是圆圆的。" },
-    { items: ["小鸟", "飞机", "小鱼", "风筝"], answer: "小鱼", reason: "小鸟、飞机、风筝这三个能在天上，小鱼不会在天上飞。" },
+    { group: "水果", items: ["🍎", "🍊", "葡萄", "小汽车"], answer: "小汽车", reason: "苹果、橘子、葡萄这三个是水果，小汽车不是水果。" },
+    { group: "交通工具", items: ["小汽车", "公交车", "飞机", "蛋糕"], answer: "蛋糕", reason: "小汽车、公交车、飞机这三个能带我们移动，蛋糕不能当交通工具。" },
+    { group: "学习用品", items: ["铅笔", "书包", "尺子", "小鱼"], answer: "小鱼", reason: "铅笔、书包、尺子这三个是学习用品，小鱼不是学习用品。" },
+    { group: "小动物", items: ["🐱", "🐶", "🐰", "杯子"], answer: "杯子", reason: "小猫、小狗、小兔这三个是小动物，杯子不是小动物。" },
+    { group: "圆圆的东西", items: ["⚽", "🍊", "饼干", "长木板"], answer: "长木板", reason: "足球、橘子、饼干这三个是圆圆的，长木板不是圆圆的。" },
+    { group: "能在天上飞的", items: ["小鸟", "飞机", "小鱼", "风筝"], answer: "小鱼", reason: "小鸟、飞机、风筝这三个能在天上，小鱼不会在天上飞。" },
   ].map((item, index) => ({
     level: index < 3 ? "L5" as AbilityLevel : "L6" as AbilityLevel,
-    prompt: "哪一个和其他几个最不一样？",
-    instruction: "用排除法，先找多数有什么共同点。",
+    prompt: `先找${item.group}。哪一个和这一组不一样？`,
+    instruction: "先指出同一组的三张，再选剩下的那一张。",
     visualGroups: [{ label: "观察台", items: item.items }],
     choices: choiceSet(item.items),
     answer: item.answer,
     success: item.reason,
     retry: "先找三个很像的，再看剩下的那个。",
-    parentPrompt: "问她：你先把哪三个放在一起？为什么剩下它？",
+    parentPrompt: "你先把哪三个放在一起？为什么？换一个分法，会选出别的吗？",
     abilityTags: ["排除法", "类别归纳"],
   }));
 

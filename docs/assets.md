@@ -1,5 +1,10 @@
 # Asset Registry And Taxonomy
 
+## 066 课程复核资源
+
+- 分蛋糕和分积木使用图库中现有的盘子、孩子、蛋糕与积木。英语比较条、菱形折线、比较纸带等精确图形沿用原有生成器，运行 PNG 与可复算的源 SVG 同时登记。本次新增 10 对、退役 21 对。数量记忆的预览直接使用人物头像和对应数量的圆点。[图面用途与修订号](../specs/066-curriculum-review-remediation/verification/exploration-variant-assets.json)
+- 4,576 条本地语音对应当前题库。中文为 Edge Xiaoxiao，英文为 Edge Jenny。与 065 相比，运行目录新增 235 条音频、退役 70 条。[媒体核验](../specs/066-curriculum-review-remediation/verification/checks.json)
+
 ## 065 queue coat variants
 
 - Six transparent 320×320 PNG portraits live in `public/images/characters/queue-065/`: `cat-silver`, `cat-cream`, `dog-chocolate`, `dog-silver`, `bear-black`, and `bear-ivory`. They are registered under the corresponding `queueCat*`, `queueDog*` and `queueBear*` keys in `imageGallery.characters`.

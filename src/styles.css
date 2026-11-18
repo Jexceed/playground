@@ -1473,6 +1473,8 @@ button:focus-visible {
 
 .visual-group {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  min-width: 0;
   align-content: start;
   gap: 10px;
   min-height: 118px;
@@ -1927,6 +1929,9 @@ button:focus-visible {
 .counting-token .kid-illustration {
   width: min(58px, 100%);
   height: min(58px, 100%);
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
 
 .visual-groups-counting-choice .counting-token .kid-illustration {
@@ -3297,7 +3302,12 @@ button:focus-visible {
 .money-stock strong {border:1px solid #afc396;border-radius:7px;padding:5px 12px;background:#eef5e2;font-size:20px;}
 .money-stock span {font-size:16px;}
 
-.activity-workspace.for-pyramid {display:grid;grid-template-columns:minmax(260px,1.15fr) minmax(200px,1fr);gap:14px;align-items:center;}
+.activity-workspace.for-pyramid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));
+  gap:14px;
+  align-items:center;
+}
 .activity-workspace.for-pyramid.is-complete {grid-template-columns:1fr;}
 .pyramid-board {position:relative;max-width:100%;margin:auto;}
 .pyramid-board>svg {position:absolute;inset:0;width:100%;height:100%;pointer-events:none;}
@@ -3372,13 +3382,13 @@ button:focus-visible {
 .activity-round[data-dense][data-kind="multiSelect"]:not([data-paired-choices]) .activity-choice-grid:not(.has-wide-options):not(.is-symbol-grid) .token-label {padding:0;}
 .parent-steps li {padding-top:4px;padding-bottom:4px;}
 .parent-step-listen {width:32px;height:32px;}
-.activity-round:is([data-paired-story],[data-paired-matching],[data-paired-choices],[data-paired-grid]) {display:grid;grid-template-columns:minmax(180px,.7fr) minmax(0,1.3fr);column-gap:14px;}
-.activity-round:is([data-paired-story],[data-paired-matching],[data-paired-choices],[data-paired-grid])>* {grid-column:1/-1;}
-.activity-round:is([data-paired-story],[data-paired-matching],[data-paired-choices],[data-paired-grid])>.activity-clues {grid-row:2;}
-.activity-round:is([data-paired-story],[data-paired-matching],[data-paired-choices],[data-paired-grid])>.activity-evidence-board {grid-column:1;grid-row:3;align-self:start;}
-.activity-round:is([data-paired-story],[data-paired-matching],[data-paired-choices],[data-paired-grid])>.activity-status-space {grid-row:4;}
-.activity-round:is([data-paired-story],[data-paired-matching],[data-paired-choices],[data-paired-grid])>.activity-actions {grid-row:5;}
-.activity-round:is([data-paired-story],[data-paired-matching],[data-paired-choices],[data-paired-grid])>.activity-footer {grid-row:6;}
+.activity-round:is([data-paired-story],[data-paired-matching],[data-paired-choices]) {display:grid;grid-template-columns:minmax(180px,.7fr) minmax(0,1.3fr);column-gap:14px;}
+.activity-round:is([data-paired-story],[data-paired-matching],[data-paired-choices])>* {grid-column:1/-1;}
+.activity-round:is([data-paired-story],[data-paired-matching],[data-paired-choices])>.activity-clues {grid-row:2;}
+.activity-round:is([data-paired-story],[data-paired-matching],[data-paired-choices])>.activity-evidence-board {grid-column:1;grid-row:3;align-self:start;}
+.activity-round:is([data-paired-story],[data-paired-matching],[data-paired-choices])>.activity-status-space {grid-row:4;}
+.activity-round:is([data-paired-story],[data-paired-matching],[data-paired-choices])>.activity-actions {grid-row:5;}
+.activity-round:is([data-paired-story],[data-paired-matching],[data-paired-choices])>.activity-footer {grid-row:6;}
 .activity-round[data-paired-story]>.activity-workspace,.activity-round[data-paired-matching]>.matching-workspace,.activity-round[data-paired-choices]>.activity-choice-grid {grid-column:2;grid-row:3;align-self:start;}
 .activity-round[data-paired-story] .parent-story-strip {grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 6px;}
 .activity-round[data-paired-matching] .matching-board {gap:54px;}
@@ -3388,9 +3398,24 @@ button:focus-visible {
 .activity-round[data-paired-choices]>.activity-choice-grid .activity-token-image {height:70px;}
 .activity-round[data-paired-choices]>.activity-choice-grid .token-label {padding:0;}
 
-.activity-round[data-paired-grid]>.activity-workspace {grid-column:2;grid-row:3;grid-template-columns:minmax(230px,1.5fr) minmax(95px,.7fr);}
+.activity-round[data-paired-grid] {
+  display:flex;
+  flex-wrap:wrap;
+  column-gap:14px;
+  align-items:flex-start;
+}
+.activity-round[data-paired-grid] > * { flex:0 0 100%; min-width:0; }
+.activity-round[data-paired-grid] > :is(.activity-question,.activity-clues) { order:-1; }
+.activity-round[data-paired-grid] > .activity-evidence-board { flex:1 1 180px; }
+.activity-round[data-paired-grid] > .activity-workspace {
+  flex:2 1 340px;
+  grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));
+}
 .activity-round[data-paired-grid][data-kind="gridPlacement"] .activity-evidence-image {max-height:180px;}
-.activity-round[data-paired-grid] .activity-token-tray {grid-template-columns:1fr;}
+.activity-round[data-paired-grid] .activity-token-tray {
+  grid-template-columns:repeat(var(--grid-tray-columns),minmax(0,1fr));
+  max-width:220px;
+}
 .construction-workspace .construction-tools {margin:6px 0;}
 .construction-workspace>.construction-tools:last-child {min-height:40px;}
 .construction-workspace>p {margin:8px 0;font-size:14px;line-height:1.5;}
@@ -3544,8 +3569,13 @@ button:focus-visible {
 .progressive-game .containment-scene .visual-token { min-width:78px; min-height:108px; }
 .progressive-game .clock-caption { min-height: 0; }
 .progressive-game[data-game="math-group-counting"] .visual-groups:has(.visual-group:nth-child(5)) { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-.progressive-game[data-game="math-group-counting"] .visual-groups:has(.visual-group:nth-child(5)) .object-row-counting { display:flex; flex-wrap:nowrap; justify-content:center; gap:8px; }
-.progressive-game[data-game="math-group-counting"] .visual-groups:has(.visual-group:nth-child(5)) .counting-token { flex:0 1 48px; width:48px; }
+.progressive-game[data-game="math-group-counting"] .visual-groups:has(.visual-group:nth-child(5)) .object-row-counting {
+  grid-template-columns:none;
+  grid-auto-flow:column;
+  grid-auto-columns:minmax(0,48px);
+  justify-content:center;
+  gap:4px;
+}
 .progressive-game .round-board-image-only .scene-image-card { height:330px; aspect-ratio:auto; }
 .progressive-game .round-board-image-only .scene-image-card img { object-fit:contain; }
 .progressive-game .round-board-image-sequence { display:grid; grid-template-columns:minmax(0, 240px) minmax(0, 1fr); align-items:center; gap:12px; min-height:0; }
@@ -3649,6 +3679,92 @@ button:focus-visible {
 .progressive-game[data-game="logic-balance-swap"] .visual-group[data-label="现在有"] { grid-column:1/-1; display:flex; align-items:center; gap:14px; min-height:0; }
 .progressive-game[data-game="logic-balance-swap"] .visual-group[data-label="1 个可以换"] .object-row { flex-wrap:nowrap; }
 .progressive-game[data-game="logic-balance-swap"] .round-board { min-height:0; }
+
+/* One source-image unit has the same displayed length on both sides of a transformation. */
+.activity-round[data-family="G05"] .single-choice {
+  grid-template-columns:repeat(auto-fit,minmax(min(100%,138px),1fr));
+}
+.activity-round[data-family="G05"] :is(.activity-evidence-image,.single-choice .activity-token-image) {
+  width:120px;
+  height:auto;
+  max-height:none;
+  aspect-ratio:1;
+  outline:1px solid #dce1d5;
+  outline-offset:-1px;
+}
+
+/* Size groups by the space available to the question, including in a desktop side-by-side layout. */
+.progressive-game .round-board:has(.visual-groups) { container: object-groups / inline-size; }
+@container object-groups (max-width: 620px) {
+  .visual-groups:has(> [data-label="右图"], > [data-label="右边"], > [data-label="天平右边"]) {
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:8px;
+  }
+  .visual-groups-counting-choice {
+    grid-template-columns:minmax(0,1fr);
+    gap:6px;
+  }
+  .visual-groups-counting-choice .visual-group {
+    grid-template-columns:32px minmax(0,1fr);
+    align-items:center;
+    gap:8px;
+  }
+  .visual-groups-counting-choice .object-row-counting {
+    grid-template-columns:repeat(5,minmax(0,44px));
+    justify-content:start;
+    gap:3px;
+  }
+  .visual-groups:has(> [data-label="右边"]) .object-row-counting {
+    grid-template-columns:repeat(auto-fit,minmax(min(100%,38px),44px));
+    gap:4px;
+  }
+  .progressive-game[data-game="math-group-counting"] .visual-groups:has(.visual-group:nth-child(5)) {
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+  .progressive-game[data-game="logic-block-height-map"] .visual-groups-compare .object-row {
+    grid-template-columns:repeat(2,minmax(0,88px));
+    justify-content:center;
+  }
+  .progressive-game[data-game="logic-balance-swap"] .visual-group:is([data-label="规则"],[data-label="1 个可以换"],[data-label="现在有"]) {
+    display:grid;
+    align-items:start;
+    gap:6px;
+  }
+  .progressive-game[data-game="logic-balance-swap"] .visual-group:is([data-label="规则"],[data-label="1 个可以换"],[data-label="现在有"]) .object-row {
+    display:grid;
+    grid-template-columns:none;
+    grid-auto-flow:column;
+    grid-auto-columns:minmax(0,84px);
+    justify-content:start;
+    gap:4px;
+  }
+  .progressive-game[data-game="logic-balance-swap"] .visual-group .object-row .visual-token {
+    min-width:0;
+    padding-inline:2px;
+  }
+  .progressive-game[data-game="logic-balance-swap"] .visual-group .kid-illustration {
+    max-width:100%;
+    object-fit:contain;
+  }
+  .progressive-game[data-game="logic-visual-match"] .visual-group[data-label="三张小卡"] .object-row {
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:6px;
+  }
+  .progressive-game[data-game="logic-visual-match"] .visual-group[data-label="三张小卡"] .mini-token-grid {
+    width:min(100%,120px);
+    display:grid;
+    grid-auto-columns:minmax(0,1fr);
+    grid-auto-flow:column;
+    align-items:center;
+    justify-items:center;
+    gap:2px;
+  }
+  .progressive-game[data-game="logic-visual-match"] .visual-group[data-label="三张小卡"] .mini-token-grid .kid-illustration {
+    width:min(100%,38px);
+    height:auto;
+    aspect-ratio:1;
+  }
+}
 .answer-choice-picture { position:relative; }
 .answer-choice-picture>.lucide-check { position:absolute; top:6px; right:6px; }
 .progressive-game[data-game="logic-three-view-blocks"]:has(.logic-choice-height) .address-cell.address-object { min-height:64px; }

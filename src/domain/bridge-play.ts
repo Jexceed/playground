@@ -1,8 +1,9 @@
 import { enlightenmentBridgeModels } from '../data/enlightenmentBridges';
+import type { BoardAttempt } from '../types';
 
 export type BridgeModel = { width: number; supports: readonly number[]; lengths: readonly number[] };
 export type BridgePlacement = Array<number | null>;
-export type BridgeAttempt = { ready: boolean; valid: boolean; feedback: string };
+export type BridgeAttempt = BoardAttempt;
 export type MeasurePoint = 'bear' | 'left-bank' | 'right-bank' | 'plank' | 'flag';
 export const BRIDGE_STAGE_WIDTH = 720;
 export const BRIDGE_PLAY_UNIT = 56;

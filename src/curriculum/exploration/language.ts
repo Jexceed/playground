@@ -5,8 +5,32 @@ import type { Activity } from '../../domain/activity';
 const listen = (a: Activity, audioText: string, locale: 'zh-CN' | 'en-US' = 'zh-CN') => { a.protocol = { kind: 'memory', observeMs: 10000, retainMs: 500, preview: [], audioText, audioLocale: locale }; return a; };
 const position = (above: boolean, n: number) => picture([...dots(n, n).objects.map(o => o.kind === 'circle' ? { ...o, y: above ? 90 : 235 } : o), rect(105, above ? 180 : 40, 110, 110, palette[0])], 320, 320);
 export const languageSets = [
-    set('E01', '词语有朋友', nine((i, s, v) => { const pairs = [['高', '低'], ['开', '关'], ['上', '下'], ['长', '短'], ['多', '少']]; if (s === 2)
-        return parent('E01', i, ['用动作说开和关', '用实物说长和短', '同一个词换个情境'][v], ['两个盒子或两条纸带'], ['家长说一个词，孩子用动作或实物表示。', '交换角色，孩子说词，家长操作。', '把这个词放进一个完整句子，说明哪里看出来。'], ['能把词和实际意义对应', '能找到相反或相关的词', '能在新情境里使用这个词']); const chosen = pairs.slice(v, v + 2 + s); return matching('E01', i, '把意思相反的词配成朋友。', chosen.map(([a], k) => card(`a${k}`, a)), chosen.map(([, b], k) => card(`b${k}`, b)), chosen.map((_, k) => [`a${k}`, `b${k}`]), '可以先做一个动作或摆出实物，再比较两个词的意思。'); })),
+    set('E01', '词语有朋友', nine((i, s, v) => {
+        if (s === 2) {
+            const activities = [
+                { title: '用动作说开和关', materials: ['能开合的盒子'],
+                    steps: ['家长说“打开”，孩子打开盒盖。家长说“关上”，孩子把盒盖合上。',
+                        '交换角色，请孩子说一个动作，让家长来做。', '家长悄悄改变盒盖的位置，请孩子说说盒子现在是开着还是关着。'],
+                    observations: ['能按听到的词打开或关上盒子', '能用“打开”或“关上”请家长做动作', '能说出盒盖现在的状态'] },
+                { title: '用实物说长和短', materials: ['一长一短两条纸带'],
+                    steps: ['把两条纸带并排摆好，一头对齐。请孩子指出长的那条。', '交换纸带的位置，再指一指哪条短。', '请孩子说说，两条纸带从哪一头对齐，哪一头多出来了。'],
+                    observations: ['能把两条纸带的一端对齐', '能在交换位置后找出短纸带', '能用纸带多出来的部分说明哪条长'] },
+                { title: '同一个词换个情境', materials: ['能开合的盒子', '一本书'],
+                    steps: ['家长说“打开盒子”，请孩子做这个动作。', '把盒子换成书。孩子对家长说一句带“打开”的话，让家长照着做。',
+                        '请孩子把书合上，再说一说，刚才打开了哪两样东西。'],
+                    observations: ['能把“打开”用在盒子上', '能换成书说出带“打开”的话', '能说出两次打开的对象'] },
+            ];
+            const {title, materials, steps, observations} = activities[v];
+            const a = parent('E01', i, title, materials, steps, observations);
+            a.revision = 2;
+            return a;
+        }
+        const pairs = [['高', '低'], ['开', '关'], ['上', '下'], ['长', '短'], ['多', '少']];
+        const chosen = pairs.slice(v, v + 2 + s);
+        return matching('E01', i, '把意思相反的词配成朋友。', chosen.map(([a], k) => card(`a${k}`, a)),
+            chosen.map(([, b], k) => card(`b${k}`, b)), chosen.map((_, k) => [`a${k}`, `b${k}`]),
+            '可以先做一个动作或摆出实物，再比较两个词的意思。');
+    })),
     set('E02', '把位置说清楚', three(i => parent('E02', i, ['给家长指路', '换个位置描述', '比较两种说法'][i], ['小玩具', '杯子', '盒子'], i === 0 ? ['把玩具放在盒子旁边，用完整句子告诉家长在哪里。', '家长只听你的话寻找玩具。', '加入一个更清楚的参照物，再说一遍。'] : i === 1 ? ['家长和孩子面对面坐，放好玩具和杯子。', '分别从自己的方向说玩具在杯子的哪边。', '换到同一方向，再比较说法为什么改变。'] : ['家长先说“那个在那里”。', '孩子指出这句话缺少哪些信息。', '补充对象、参照物和位置，让另一个人可以找到。'], ['说清对象', '说清参照物和关系', '能根据听者的疑问补充信息']))),
     set('E03', '故事接起来', nine((i, s, v) => { const stories = [['天上积起乌云', '开始下雨', '地面留下水洼', '小朋友穿雨靴出门'], ['小熊准备木块', '小熊搭起高塔', '球碰倒了高塔', '小熊换宽底座重搭'], ['小猫收到种子', '把种子种进土里', '按记录照顾小苗', '小猫观察新叶片']]; if (s === 2)
         return parent('E03', i, '先讲清故事，再想一个不同的结局。', ['屏幕上的四张故事图'], [...stories[v].map((t, k) => `第${k + 1}张：${t}。`), '按原先顺序复述一次。', '改变最后一件事，再解释为什么也说得通。'], ['事件先后清楚', '能用因为或所以连接理由', '不同结局和前面的事情有关']); const relations = [['乌云聚起来以后，开始下雨。', '下过雨后，地面留下了水洼。', '地面有水洼，小朋友穿上雨靴出门。'], ['小熊先准备木块，再用木块搭起高塔。', '高塔搭好后，被滚来的球碰倒了。', '高塔倒了以后，小熊换一个宽底座重新搭。'], ['小猫收到种子以后，把种子种进土里。', '种好以后，小猫按记录照顾长出来的小苗。', '照顾小苗一段时间后，小猫观察新长出的叶片。']]; const seq = stories[v].slice(0, 3 + s); return ordered('E03', i, '按这个故事的先后，把事件排好。', seq.map((t, k) => card(`e${k}`, t)), seq.map((_, k) => `e${k}`), '按题目给定的事件关系连接，再用自己的话讲出来。', relations[v].slice(0, seq.length - 1)); })),
@@ -31,7 +55,23 @@ export const languageSets = [
     } const correct = panels([{ title: '', drawing: symbol(v, 0) }, { title: '', drawing: symbol((v + 1) % 3, 1) }]); return listen(choice('E06', i, '听英语，找到位置关系相符的图。', [{ label: '图A', drawing: correct }, { label: '图B', drawing: panels([{ title: '', drawing: symbol((v + 1) % 3, 1) }, { title: '', drawing: symbol(v, 0) }]) }, { label: '图C', drawing: panels([{ title: '', drawing: symbol(v, 1) }, { title: '', drawing: symbol((v + 1) % 3, 0) }]) }], 0, '两个对象、颜色和左右关系都要对应。'), `The red ${['circle', 'square', 'triangle'][v]} is on the left of the blue ${['circle', 'square', 'triangle'][(v + 1) % 3]}.`, 'en-US'); })),
     set('E07', '英语里的数量位置', nine((i, s, v) => { if (s === 0)
         return listen(choice('E07', i, '听英语，选择相同数量的图。', [1, 2, 3].map(n => ({ label: `图${n}`, drawing: dots(n) })), v, '数量对应以后，再指着图卡核对一次。'), `There ${v === 0 ? 'is one circle' : `are ${['one', 'two', 'three'][v]} circles`}.`, 'en-US'); const n = v + 1; if (s === 1) {
-        const a = listen(choice('E07', i, '听英语，找出对象和位置都对应的图。', [{ label: '图A', drawing: position(true, n) }, { label: '图B', drawing: position(false, n) }, { label: '图C', drawing: position(true, n + 1) }], 0, '听清数量，再听对象在上面还是下面。'), `There ${n === 1 ? 'is one circle' : `are ${['', 'one', 'two', 'three'][n]} circles`} above the red square.`, 'en-US'); a.revision = 2; return a; } const lengths = [80 + v * 20, 145 + v * 20, 210 + v * 20]; const art = (order: number[]) => picture(order.map((k, j) => rect(45, 40 + j * 90, lengths[k], 36, palette[j])), 320, 320); return listen(choice('E07', i, '听英语比较，选出符合所有关系的图。', [{ label: '图A', drawing: art([2, 1, 0]) }, { label: '图B', drawing: art([0, 1, 2]) }, { label: '图C', drawing: art([1, 2, 0]) }], 0, '要让红条比蓝条长，蓝条又比黄条长，两条比较都成立。'), `The red bar is longer than the blue bar. The blue bar is longer than the yellow bar.`, 'en-US'); })),
+        const a = listen(choice('E07', i, '听英语，找出对象和位置都对应的图。', [{ label: '图A', drawing: position(true, n) }, { label: '图B', drawing: position(false, n) }, { label: '图C', drawing: position(true, n + 1) }], 0, '听清数量，再听对象在上面还是下面。'), `There ${n === 1 ? 'is one circle' : `are ${['', 'one', 'two', 'three'][n]} circles`} above the red square.`, 'en-US'); a.revision = 2; return a; }
+        const english = ['red', 'blue', 'yellow'], chinese = ['红', '蓝', '黄'];
+        const first = v, second = (v + 1) % 3, third = (v + 2) % 3;
+        const lengths = [210 + v * 20, 145 + v * 20, 80 + v * 20];
+        const bars = (longToShort: number[]) => picture(english.map((_, color) =>
+            rect(45, 40 + color * 90, lengths[longToShort.indexOf(color)], 36, palette[color])), 320, 320);
+        const options = [
+            { label: '图A', drawing: bars([first, second, third]) },
+            { label: '图B', drawing: bars([first, third, second]) },
+            { label: '图C', drawing: bars([second, first, third]) },
+        ];
+        const reason = `${chinese[first]}条比${chinese[second]}条长，${chinese[second]}条又比${chinese[third]}条长。两句都对上了。`;
+        const audio = `The ${english[first]} bar is longer than the ${english[second]} bar. The ${english[second]} bar is longer than the ${english[third]} bar.`;
+        const a = listen(choice('E07', i, '听英语比较，选出符合所有关系的图。', options, 0, reason), audio, 'en-US');
+        a.revision = 2;
+        return a;
+    })),
     set('E08', '把自己的想法说出来', three(i => parent('E08', i, ['说明一个选择', '回答追问', '轮流问和听'][i], ['两件孩子熟悉的玩具'], i === 0 ? ['从两件玩具里选一件。', '说清楚选的是什么、想怎样玩。', '家长追问一个原因，孩子补充说明。'] : i === 1 ? ['描述一次想再去的活动，不必说姓名或住址。', '家长问“那里有什么吸引你”。', '孩子用具体经历回答，再补充一个细节。'] : ['家长先描述自己喜欢的一种玩法。', '孩子听完后问一个和内容有关的问题。', '交换角色，练习等对方说完再回答。'], ['回应的问题和话题相关', '能说出具体原因或细节', '能听完追问再补充']))),
 ];
 // Listen-and-identify uses pictures, not written translations as the answer surface.

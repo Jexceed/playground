@@ -53,11 +53,63 @@ test('reordering preserves each drawn option, semantic answer and display letter
 });
 
 test('quantity pictures independently agree with addition, subtraction, sharing and grouping',()=>{
-  for(const r of group('math-compose-decompose').rounds){assert.equal(r.sceneImage,undefined);assert.equal(+r.answer,r.visualGroups.reduce((s,g)=>s+g.items.length,0),r.id);}
+  const parts = group('math-compose-decompose').rounds;
+  const splits = parts.filter(r => r.visualGroups[0].label === '蓝盒');
+  assert.equal(splits.length, 12);
+  for (const r of parts) {
+    assert.equal(r.sceneImage, undefined);
+    const [a, b] = r.visualGroups.map(g => g.items.length);
+    if (splits.includes(r)) {
+      const [whole, given] = r.prompt.match(/\d+/g).map(Number);
+      assert.equal(a + b, whole, r.id);
+      assert.equal(a, given, r.id);
+      assert.equal(+r.answer, whole - given, r.id);
+    } else assert.equal(+r.answer, a + b, r.id);
+  }
   for(const r of group('math-story-operations').rounds){assert.equal(r.sceneImage,undefined);assert.equal(+r.answer,r.visualGroups[0].items.length-r.visualGroups[1].items.length,r.id);}
   for(const r of group('math-fair-share').rounds){assert.equal(r.sceneImage,undefined);const [items,people]=r.visualGroups.map(g=>g.items.length);assert.equal(+r.answer,Math.floor(items/people),r.id);if(items%people)assert.match(r.instruction,/不切开/);}
   for(const r of group('math-group-counting').rounds)assert.equal(+r.answer,r.visualGroups.reduce((s,g)=>s+g.items.length,0),r.id);
   for(const r of group('math-subitize-match').rounds)assert.equal(+r.answer,r.visualGroups[0].items.filter(Boolean).length,r.id);
+});
+
+test('fair sharing accepts exactly the equal plates with too few leftovers for a further full turn', async () => {
+  const { fairShareInventory, checkFairShare } = await loadTypeScriptModule('src/domain/fair-share.ts');
+  for (const round of group('math-fair-share').rounds) {
+    const { total, children } = fairShareInventory(round);
+    const plates = [];
+    function deal(remaining) {
+      if (plates.length === children) {
+        const result = checkFairShare(total, plates);
+        assert.equal(result.ready, remaining !== total, round.id);
+        assert.equal(result.valid, remaining < children && new Set(plates).size === 1, round.id);
+        return;
+      }
+      for (let count = 0; count <= remaining; count++) {
+        plates.push(count);
+        deal(remaining - count);
+        plates.pop();
+      }
+    }
+    deal(total);
+    assert.match(state.enlightenmentPromptSpeech('math-fair-share', round), /点小朋友的盘子，每次分一块/);
+  }
+});
+
+test('the stated criterion separates each odd card and green-light choices distinguish permission from an obligation to go', () => {
+  const odd = group('logic-same-kind-detective').rounds.slice(6);
+  const groups = ['水果', '交通工具', '学习用品', '小动物', '圆圆的东西', '能在天上飞'];
+  odd.forEach((r, i) => assert.ok(r.prompt.includes(groups[i]), r.id));
+  for (const g of ['logic-condition-detective', 'logic-fix-plan']) {
+    const r = group(g).rounds[2];
+    assert.ok(r.choices.every(c => c.value !== 'keep-waiting'), r.id);
+    assert.match(r.choices.find(c => c.value === r.answer).label, /和大人/);
+    assert.match(r.parentPrompt, /等一会儿|还没准备好/);
+  }
+  for (const r of group('math-clock-time').rounds.filter(r => r.clockChallenge.mode === 'time-conversion')) {
+    assert.match(r.prompt, /24 小时制/);
+    assert.match(r.instruction, /12:00.+指向 1.+13:00/);
+    assert.notEqual(r.answer, '13:00');
+  }
 });
 
 test('a timed observation cannot silently start on navigation and interruption reopens readiness',()=>{

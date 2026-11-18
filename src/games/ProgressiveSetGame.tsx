@@ -1,6 +1,7 @@
 import { BridgePlayBoard } from "../components/BridgePlayBoard";
 import { BirdDepartureBoard } from '../components/BirdDepartureBoard';
-import { bridgePlayCopy, type BridgeAttempt } from "../domain/bridge-play";
+import { bridgePlayCopy } from "../domain/bridge-play";
+import { BlockPartitionBoard, FairShareBoard } from "../components/SharingBoards";
 import { LogicLessonBoard, LogicPicture, hasLogicPicture, LogicTaskCue, LogicRelationBoard } from "../components/LogicLessonBoard";
 import { logicLessonFor, logicTaskCueFor, logicActionRules, logicRelationFrames, type LogicLesson } from "../data/logicLessonVisuals";
 import { LogicChoicePicture, logicChoicePictureFor } from "../components/LogicChoicePicture";
@@ -12,10 +13,10 @@ import { orderStoryImage } from "../data/orderStories";
 import { GuideMascot } from "../components/GuideMascot";
 import { VisualGlyph, VisualToken, visualMetaFor, visualParts } from "../components/VisualToken";
 import { imageGallery } from "../data/imageGallery";
-import { nextEnlightenmentRoundIndex, ENLIGHTENMENT_COPY, initialObservationPhase, observationTransition, type ObservationPhase } from "../domain/enlightenment";
+import { enlightenmentPromptSpeech, nextEnlightenmentRoundIndex, ENLIGHTENMENT_COPY, initialObservationPhase, observationTransition, type ObservationPhase } from "../domain/enlightenment";
 import { publicAsset } from "../publicAsset";
 import { playTone, speak, stopSpeech } from "../speech";
-import type { GameConfig, GameRound, GraphicChallengeOption, GraphicFigure, GraphicFigureGroup } from "../types";
+import type { BoardAttempt, GameConfig, GameRound, GraphicChallengeOption, GraphicFigure, GraphicFigureGroup } from "../types";
 import { GraphicContourFigure } from '../components/GraphicContourFigure';
 import { contourArtwork, hasContourArtwork } from '../data/contourArtwork';
 
@@ -46,9 +47,9 @@ export function ProgressiveSetGame({
   const [answered, setAnswered] = useState(false);
   const [retryMessage, setRetryMessage] = useState<string | null>(null);
   const [completedOnce, setCompletedOnce] = useState(false);
-  const [bridgeAttempt, setBridgeAttempt] = useState<BridgeAttempt | null>(null);
-  const [bridgeReset, setBridgeReset] = useState(0);
-  const onBridgeChange = useCallback((attempt: BridgeAttempt) => { setBridgeAttempt(attempt); setRetryMessage(null); }, []);
+  const [boardAttempt, setBoardAttempt] = useState<BoardAttempt | null>(null);
+  const [boardReset, setBoardReset] = useState(0);
+  const onBoardChange = useCallback((attempt: BoardAttempt) => { setBoardAttempt(attempt); setRetryMessage(null); }, []);
   const [observationPhase, setObservationPhase] = useState<ObservationPhase>(() => initialObservationPhase(game.rounds[initialRoundIndex]));
   const lastRoundReadKey = useRef(0);
 
@@ -66,17 +67,19 @@ export function ProgressiveSetGame({
       setSelected(null);
       setAnswered(false);
       setRetryMessage(null);
-      setBridgeAttempt(null);
+      setBoardAttempt(null);
       setObservationPhase(initialObservationPhase(game.rounds[nextIndex]));
     }
     if (shouldReadRequestedRound) {
       const requestedRound = game.rounds[nextIndex];
-      if (requestedRound) speak(joinVoiceLine(requestedRound.prompt, requestedRound.instruction));
+      if (requestedRound) speak(enlightenmentPromptSpeech(game.id, requestedRound));
     }
-  }, [game.rounds, requestedRoundIndex, requestedRoundReadKey, roundIndex]);
+  }, [game.id, game.rounds, requestedRoundIndex, requestedRoundReadKey, roundIndex]);
 
   const round = game.rounds[roundIndex];
   const handsOnBridge = game.id === "logic-space-bridge";
+  const sharing = game.id === "math-fair-share";
+  const handsOn = handsOnBridge || sharing;
   const logicLesson = logicLessonFor(round);
   const showStoryScene = Boolean((round.sequenceStory || logicLesson) && storyTaskRound !== round.id);
   const isCorrect = answered && selected === round.answer;
@@ -117,9 +120,9 @@ export function ProgressiveSetGame({
   }
 
   function checkAnswer() {
-    if (handsOnBridge) {
-      if (!bridgeAttempt?.ready || answered) return;
-      if (bridgeAttempt.valid) {
+    if (handsOn) {
+      if (!boardAttempt?.ready || answered) return;
+      if (boardAttempt.valid) {
         setSelected(round.answer);
         setAnswered(true);
         setRetryMessage(null);
@@ -127,9 +130,9 @@ export function ProgressiveSetGame({
         playTone("success");
         speak(round.success);
       } else {
-        setRetryMessage(bridgeAttempt.feedback);
+        setRetryMessage(boardAttempt.feedback);
         playTone("error");
-        speak(bridgeAttempt.feedback);
+        speak(boardAttempt.feedback);
       }
       return;
     }
@@ -167,9 +170,18 @@ export function ProgressiveSetGame({
     setSelected(null);
     setAnswered(false);
     setRetryMessage(null);
-    setBridgeAttempt(null);
+    setBoardAttempt(null);
     setObservationPhase(initialObservationPhase(requestedRound));
-    if (requestedRound) speak(joinVoiceLine(requestedRound.prompt, requestedRound.instruction));
+    if (requestedRound) speak(enlightenmentPromptSpeech(game.id, requestedRound));
+  }
+
+  function resetBoard() {
+    stopSpeech();
+    setSelected(null);
+    setAnswered(false);
+    setRetryMessage(null);
+    setBoardAttempt(null);
+    setBoardReset(value => value + 1);
   }
 
   function resetGame() {
@@ -179,12 +191,12 @@ export function ProgressiveSetGame({
     setSelected(null);
     setAnswered(false);
     setRetryMessage(null);
-    setBridgeAttempt(null);
-    setBridgeReset(value => value + 1);
+    setBoardAttempt(null);
+    setBoardReset(value => value + 1);
     setCompletedOnce(false);
     setObservationPhase(initialObservationPhase(game.rounds[0]));
     const requestedRound = game.rounds[0];
-    if (requestedRound) speak(joinVoiceLine(requestedRound.prompt, requestedRound.instruction));
+    if (requestedRound) speak(enlightenmentPromptSpeech(game.id, requestedRound));
   }
 
   return (
@@ -209,19 +221,19 @@ export function ProgressiveSetGame({
         <GuideMascot
           onSpeak={() => {
             if (timedObservation && observationPhase === "observing") setObservationPhase("ready");
-            speak(joinVoiceLine(round.prompt, round.instruction));
+            speak(enlightenmentPromptSpeech(game.id, round));
           }}
         />
       </div>
 
-      {handsOnBridge ? <BridgePlayBoard key={`${round.id}-${bridgeReset}`} roundId={round.id} solved={isCorrect} showErrors={Boolean(retryMessage)} onChange={onBridgeChange} onReset={() => {
-        stopSpeech(); setSelected(null); setAnswered(false); setRetryMessage(null); setBridgeAttempt(null); setBridgeReset(value => value + 1);
-      }} /> : <RoundBoard
+      {handsOnBridge ? <BridgePlayBoard key={`${round.id}-${boardReset}`} roundId={round.id} solved={isCorrect} showErrors={Boolean(retryMessage)} onChange={onBoardChange} onReset={resetBoard} />
+        : sharing ? <FairShareBoard key={`${round.id}-${boardReset}`} round={round} solved={isCorrect} onChange={onBoardChange} onReset={resetBoard} />
+        : <RoundBoard
         key={round.id}
         solved={isCorrect}
         logicLesson={logicLesson}
         showStoryScene={showStoryScene}
-        onStoryStart={() => { setStoryTaskRound(round.id); speak(joinVoiceLine(round.prompt, round.instruction)); }}
+        onStoryStart={() => { setStoryTaskRound(round.id); speak(enlightenmentPromptSpeech(game.id, round)); }}
         onStoryScene={() => { stopSpeech(); setStoryTaskRound(null); }}
         gameId={game.id}
         memoryCovered={observationPhase === "answering"}
@@ -257,7 +269,7 @@ export function ProgressiveSetGame({
         </p>
       )}
 
-      {!handsOnBridge && !showStoryScene && !((round.sequenceStory || logicLesson) && isCorrect) && <div className={`choice-grid answer-grid ${round.sequenceStory ? "answer-grid-story" : ""} ${logicLesson ? "answer-grid-lesson" : ""} ${round.graphicChallenge ? "answer-grid-graphic" : ""}`}>
+      {!handsOn && !showStoryScene && !((round.sequenceStory || logicLesson) && isCorrect) && <div className={`choice-grid answer-grid ${round.sequenceStory ? "answer-grid-story" : ""} ${logicLesson ? "answer-grid-lesson" : ""} ${round.graphicChallenge ? "answer-grid-graphic" : ""}`}>
         {round.choices.map((choice) => {
           const active = selected === choice.value;
           const wrong = answered && active && choice.value !== round.answer;
@@ -294,11 +306,11 @@ export function ProgressiveSetGame({
       {!showStoryScene && <div className="control-row">
         <button type="button" onClick={resetGame}>
           <RotateCcw size={18} />
-          {handsOnBridge ? "回第1题" : "从头来"}
+          {handsOn ? "回第1题" : "从头来"}
         </button>
         {!answered && (
-          <button type="button" className="primary" disabled={handsOnBridge ? !bridgeAttempt?.ready : !selected || !canAnswer} onClick={checkAnswer} data-testid="check-answer">
-            <span>{handsOnBridge ? bridgePlayCopy.check : "看看对不对"}</span>
+          <button type="button" className="primary" disabled={handsOn ? !boardAttempt?.ready : !selected || !canAnswer} onClick={checkAnswer} data-testid="check-answer">
+            <span>{handsOnBridge ? bridgePlayCopy.check : sharing ? "分好了，看看" : "看看对不对"}</span>
           </button>
         )}
         {answered && (
@@ -345,10 +357,11 @@ function ChoiceContent({
     );
   }
 
+  const caption = /^\p{Extended_Pictographic}\uFE0F?$/u.test(label) ? labelForVoice(label) : label;
   return (
     <>
       <ChoiceCue label={label} visualValue={visualValue} />
-      <span>{label}</span>
+      <span>{caption}</span>
     </>
   );
 }
@@ -409,12 +422,6 @@ function visualCardParts(value: string) {
   return exact ? [exact] : [];
 }
 
-function joinVoiceLine(prompt: string, instruction: string) {
-  const trimmed = prompt.trim();
-  const separator = /[。？！]$/.test(trimmed) ? "" : "。";
-  return `${trimmed}${separator}${instruction}`;
-}
-
 function difficultyText(round: GameRound) {
   if (round.difficultyNote?.trim()) return round.difficultyNote;
   const label = {
@@ -467,6 +474,8 @@ function RoundBoard({
   onSubitizePeek?: () => void;
   onReviewMemory?: () => void;
 }) {
+  if (gameId === "math-compose-decompose" && round.visualGroups?.[0].label === "蓝盒")
+    return <BlockPartitionBoard round={round} solved={solved} />;
   if (logicLesson) return <LogicLessonBoard lesson={logicLesson} roundId={round.id} solved={solved} showScene={showStoryScene} onStart={onStoryStart} onScene={onStoryScene}/>;
   if (gameId === 'math-story-operations') return <BirdDepartureBoard key={round.id} round={round} />;
   if (gameId === "logic-mirror-fold" && round.visualGroups?.some(group => group.label === "镜子")) return <MirrorOrderBoard round={round} solved={solved}/>;

@@ -512,8 +512,8 @@ export const gridActivities: Activity[] = [
     "grid-blank-is-a-card",
     [
       "blue-circle",
+      "blue-square",
       null,
-      "blank-card",
       null,
       "blank-card",
       null,
@@ -524,6 +524,7 @@ export const gridActivities: Activity[] = [
     ["blue-square", "blank-card", "blue-circle"],
     { kind: "latin", tokenIds: ["blue-circle", "blue-square", "blank-card"] },
     {
+      revision: 2,
       clues: [
         "每行都有一个圆形、一个方形和一张空白卡。",
         "每列也要把这三种卡各放一次。",

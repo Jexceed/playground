@@ -5,7 +5,7 @@ small enough to turn into a Spec Kit feature.
 
 ## P0
 
-- Continue 059 from `specs/059-chapter-readability/reviews/chapter-ledger.json`: all 24 math groups/266 questions now have browser review; the other 91 groups still need full content/variant review. Per the user's 2026-10-26 corrections, prioritize the actual current Mac window and do not expand responsive layout work. Equivalent text roles in 启蒙/探索 now share sizes; keep them aligned rather than restoring the old exploration-only smaller overrides. Do not reintroduce a universal 18px minimum: auxiliary question numbers, counts and progress tags must retain the original hierarchy; remove small-print explanation layers and use concrete models/short task cues instead. Check completed markers and title/count alignment in addition to font size and overflow; those earlier measurements missed the sidebar regression. Preserve the full scope and existing younger-child activities.
+- 在真实家庭及实体触屏设备上试玩 066 修复。观察孩子能否自己辨认左右、摆完拼图和平均分配、解释不同分类依据，以及能否借助两句英语排除干扰项。118 组已做浏览器逐题复核与代表性 Mac 验收。继续沿用 059 的文字层级、侧栏已做标记和标题数量对齐要求。[066 验收记录](../specs/066-curriculum-review-remediation/verification.md)
 
 
 

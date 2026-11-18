@@ -1,0 +1,1217 @@
+{
+  "browser": "Chrome, isolated context, mouse at 1440 px and touch at 390 px",
+  "screens": [
+    {
+      "width": 390,
+      "rows": [
+        {
+          "id": "grid-blank-is-a-card",
+          "kind": "gridPlacement",
+          "complete": true,
+          "loadedImages": 8,
+          "blankAt": [
+            "cell-2"
+          ]
+        },
+        {
+          "id": "explore-number-partitions-1",
+          "kind": "multiSelect",
+          "complete": true,
+          "loadedImages": 36
+        },
+        {
+          "id": "explore-number-partitions-2",
+          "kind": "multiSelect",
+          "complete": true,
+          "loadedImages": 49
+        },
+        {
+          "id": "explore-number-partitions-3",
+          "kind": "multiSelect",
+          "complete": true,
+          "loadedImages": 62
+        },
+        {
+          "id": "explore-relations-analogies-4",
+          "kind": "matching",
+          "complete": true,
+          "loadedImages": 6
+        },
+        {
+          "id": "explore-relations-analogies-5",
+          "kind": "matching",
+          "complete": true,
+          "loadedImages": 6
+        },
+        {
+          "id": "explore-relations-analogies-6",
+          "kind": "matching",
+          "complete": true,
+          "loadedImages": 6
+        },
+        {
+          "id": "explore-relations-analogies-7",
+          "kind": "matching",
+          "complete": true,
+          "loadedImages": 8
+        },
+        {
+          "id": "explore-relations-analogies-8",
+          "kind": "matching",
+          "complete": true,
+          "loadedImages": 8
+        },
+        {
+          "id": "explore-relations-analogies-9",
+          "kind": "matching",
+          "complete": true,
+          "loadedImages": 8
+        },
+        {
+          "id": "explore-toggle-state-1",
+          "kind": "gridPlacement",
+          "complete": true,
+          "loadedImages": 14,
+          "input": [
+            1
+          ]
+        },
+        {
+          "id": "explore-toggle-state-2",
+          "kind": "gridPlacement",
+          "complete": true,
+          "loadedImages": 14,
+          "input": [
+            2
+          ]
+        },
+        {
+          "id": "explore-toggle-state-3",
+          "kind": "gridPlacement",
+          "complete": true,
+          "loadedImages": 14,
+          "input": [
+            3
+          ]
+        },
+        {
+          "id": "explore-toggle-state-4",
+          "kind": "gridPlacement",
+          "complete": true,
+          "loadedImages": 22,
+          "input": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "explore-toggle-state-5",
+          "kind": "gridPlacement",
+          "complete": true,
+          "loadedImages": 22,
+          "input": [
+            2,
+            3
+          ]
+        },
+        {
+          "id": "explore-toggle-state-6",
+          "kind": "gridPlacement",
+          "complete": true,
+          "loadedImages": 22,
+          "input": [
+            3,
+            4
+          ]
+        },
+        {
+          "id": "explore-toggle-state-7",
+          "kind": "gridPlacement",
+          "complete": true,
+          "loadedImages": 32,
+          "input": [
+            2
+          ]
+        },
+        {
+          "id": "explore-toggle-state-8",
+          "kind": "gridPlacement",
+          "complete": true,
+          "loadedImages": 32,
+          "input": [
+            3
+          ]
+        },
+        {
+          "id": "explore-toggle-state-9",
+          "kind": "gridPlacement",
+          "complete": true,
+          "loadedImages": 32,
+          "input": [
+            4
+          ]
+        },
+        {
+          "id": "explore-geometric-counts-7",
+          "kind": "singleChoice",
+          "complete": true,
+          "loadedImages": 0
+        },
+        {
+          "id": "explore-geometric-counts-8",
+          "kind": "singleChoice",
+          "complete": true,
+          "loadedImages": 0
+        },
+        {
+          "id": "explore-geometric-counts-9",
+          "kind": "singleChoice",
+          "complete": true,
+          "loadedImages": 0
+        },
+        {
+          "id": "explore-symmetry-axes-6",
+          "kind": "multiSelect",
+          "complete": true,
+          "loadedImages": 6
+        },
+        {
+          "id": "explore-fold-cut-1",
+          "kind": "parentObservation",
+          "complete": true,
+          "loadedImages": 3,
+          "materials": [
+            "正方形纸",
+            "彩笔",
+            "圆头儿童剪刀（由家长示范剪口）"
+          ],
+          "materialImages": [
+            "items/exploration/diagram-4f6bce65.png",
+            "items/exploration-art/craft-materials.png",
+            "items/exploration-art/everyday-tools.png"
+          ],
+          "steps": [
+            "把纸左右对折，摸一摸哪两条边重合。",
+            "在重合的两层外边画一个点。先猜一猜，展开以后哪里会有缺口？",
+            "家长在记号处一起剪过两层纸。展开看看缺口在哪里，再合上纸比一比。"
+          ],
+          "observations": [
+            "能说明重合的边",
+            "能先预测再操作",
+            "能用对应位置解释结果"
+          ]
+        },
+        {
+          "id": "explore-attention-search-1",
+          "kind": "multiSelect",
+          "complete": true,
+          "loadedImages": 9
+        },
+        {
+          "id": "explore-attention-search-2",
+          "kind": "multiSelect",
+          "complete": true,
+          "loadedImages": 9
+        },
+        {
+          "id": "explore-attention-search-3",
+          "kind": "multiSelect",
+          "complete": true,
+          "loadedImages": 9
+        },
+        {
+          "id": "explore-attention-search-4",
+          "kind": "multiSelect",
+          "complete": true,
+          "loadedImages": 15
+        },
+        {
+          "id": "explore-attention-search-5",
+          "kind": "multiSelect",
+          "complete": true,
+          "loadedImages": 15
+        },
+        {
+          "id": "explore-attention-search-6",
+          "kind": "multiSelect",
+          "complete": true,
+          "loadedImages": 15
+        },
+        {
+          "id": "explore-attention-search-7",
+          "kind": "multiSelect",
+          "complete": true,
+          "loadedImages": 21
+        },
+        {
+          "id": "explore-attention-search-8",
+          "kind": "multiSelect",
+          "complete": true,
+          "loadedImages": 21
+        },
+        {
+          "id": "explore-attention-search-9",
+          "kind": "multiSelect",
+          "complete": true,
+          "loadedImages": 21
+        },
+        {
+          "id": "explore-relational-quantity-memory-1",
+          "kind": "matching",
+          "complete": true,
+          "quantities": [
+            {
+              "friend": "小兔头像",
+              "count": 3
+            },
+            {
+              "friend": "小猫头像",
+              "count": 2
+            }
+          ],
+          "loadedImages": 4
+        },
+        {
+          "id": "explore-relational-quantity-memory-2",
+          "kind": "matching",
+          "complete": true,
+          "quantities": [
+            {
+              "friend": "小兔头像",
+              "count": 3
+            },
+            {
+              "friend": "小猫头像",
+              "count": 4
+            }
+          ],
+          "loadedImages": 4
+        },
+        {
+          "id": "explore-relational-quantity-memory-3",
+          "kind": "matching",
+          "complete": true,
+          "quantities": [
+            {
+              "friend": "小兔头像",
+              "count": 5
+            },
+            {
+              "friend": "小猫头像",
+              "count": 4
+            }
+          ],
+          "loadedImages": 4
+        },
+        {
+          "id": "explore-relational-quantity-memory-4",
+          "kind": "matching",
+          "complete": true,
+          "quantities": [
+            {
+              "friend": "小兔头像",
+              "count": 3
+            },
+            {
+              "friend": "小猫头像",
+              "count": 2
+            },
+            {
+              "friend": "小熊头像",
+              "count": 4
+            }
+          ],
+          "loadedImages": 6
+        },
+        {
+          "id": "explore-relational-quantity-memory-5",
+          "kind": "matching",
+          "complete": true,
+          "quantities": [
+            {
+              "friend": "小兔头像",
+              "count": 5
+            },
+            {
+              "friend": "小猫头像",
+              "count": 4
+            },
+            {
+              "friend": "小熊头像",
+              "count": 3
+            }
+          ],
+          "loadedImages": 6
+        },
+        {
+          "id": "explore-relational-quantity-memory-6",
+          "kind": "matching",
+          "complete": true,
+          "quantities": [
+            {
+              "friend": "小兔头像",
+              "count": 4
+            },
+            {
+              "friend": "小猫头像",
+              "count": 6
+            },
+            {
+              "friend": "小熊头像",
+              "count": 5
+            }
+          ],
+          "loadedImages": 6
+        },
+        {
+          "id": "explore-relational-quantity-memory-7",
+          "kind": "matching",
+          "complete": true,
+          "quantities": [
+            {
+              "friend": "小兔头像",
+              "count": 4
+            },
+            {
+              "friend": "小猫头像",
+              "count": 2
+            },
+            {
+              "friend": "小熊头像",
+              "count": 5
+            },
+            {
+              "friend": "小狗头像",
+              "count": 3
+            }
+          ],
+          "loadedImages": 8
+        },
+        {
+          "id": "explore-relational-quantity-memory-8",
+          "kind": "matching",
+          "complete": true,
+          "quantities": [
+            {
+              "friend": "小兔头像",
+              "count": 3
+            },
+            {
+              "friend": "小猫头像",
+              "count": 6
+            },
+            {
+              "friend": "小熊头像",
+              "count": 4
+            },
+            {
+              "friend": "小狗头像",
+              "count": 5
+            }
+          ],
+          "loadedImages": 8
+        },
+        {
+          "id": "explore-relational-quantity-memory-9",
+          "kind": "matching",
+          "complete": true,
+          "quantities": [
+            {
+              "friend": "小兔头像",
+              "count": 5
+            },
+            {
+              "friend": "小猫头像",
+              "count": 6
+            },
+            {
+              "friend": "小熊头像",
+              "count": 4
+            },
+            {
+              "friend": "小狗头像",
+              "count": 7
+            }
+          ],
+          "loadedImages": 8
+        },
+        {
+          "id": "explore-vocabulary-relations-7",
+          "kind": "parentObservation",
+          "complete": true,
+          "loadedImages": 1,
+          "materials": [
+            "能开合的盒子"
+          ],
+          "materialImages": [
+            "items/exploration-art/box-open.png"
+          ],
+          "steps": [
+            "家长说“打开”，孩子打开盒盖。家长说“关上”，孩子把盒盖合上。",
+            "交换角色，请孩子说一个动作，让家长来做。",
+            "家长悄悄改变盒盖的位置，请孩子说说盒子现在是开着还是关着。"
+          ],
+          "observations": [
+            "能按听到的词打开或关上盒子",
+            "能用“打开”或“关上”请家长做动作",
+            "能说出盒盖现在的状态"
+          ]
+        },
+        {
+          "id": "explore-vocabulary-relations-8",
+          "kind": "parentObservation",
+          "complete": true,
+          "loadedImages": 1,
+          "materials": [
+            "一长一短两条纸带"
+          ],
+          "materialImages": [
+            "items/exploration/diagram-9293c723.png"
+          ],
+          "steps": [
+            "把两条纸带并排摆好，一头对齐。请孩子指出长的那条。",
+            "交换纸带的位置，再指一指哪条短。",
+            "请孩子说说，两条纸带从哪一头对齐，哪一头多出来了。"
+          ],
+          "observations": [
+            "能把两条纸带的一端对齐",
+            "能在交换位置后找出短纸带",
+            "能用纸带多出来的部分说明哪条长"
+          ]
+        },
+        {
+          "id": "explore-vocabulary-relations-9",
+          "kind": "parentObservation",
+          "complete": true,
+          "loadedImages": 2,
+          "materials": [
+            "能开合的盒子",
+            "一本书"
+          ],
+          "materialImages": [
+            "items/exploration-art/box-open.png",
+            "items/book.png"
+          ],
+          "steps": [
+            "家长说“打开盒子”，请孩子做这个动作。",
+            "把盒子换成书。孩子对家长说一句带“打开”的话，让家长照着做。",
+            "请孩子把书合上，再说一说，刚才打开了哪两样东西。"
+          ],
+          "observations": [
+            "能把“打开”用在盒子上",
+            "能换成书说出带“打开”的话",
+            "能说出两次打开的对象"
+          ]
+        },
+        {
+          "id": "explore-everyday-classification-7",
+          "kind": "parentObservation",
+          "complete": true,
+          "loadedImages": 2,
+          "materials": [
+            "杯子",
+            "彩笔"
+          ],
+          "materialImages": [
+            "items/cup.png",
+            "items/exploration-art/craft-materials.png"
+          ],
+          "steps": [
+            "选一个杯子，先说平时用它做什么。",
+            "再想一种合理的新用途，比如分装画笔。",
+            "说清新用途需要满足什么条件。"
+          ],
+          "observations": [
+            "能说出杯子平时的一种用途",
+            "能想出另一种用法",
+            "能说清这种用法需要什么条件"
+          ]
+        },
+        {
+          "id": "explore-nature-growth-7",
+          "kind": "parentObservation",
+          "complete": true,
+          "loadedImages": 4,
+          "materials": [
+            "一株豆苗",
+            "透明杯",
+            "白纸",
+            "铅笔",
+            "同一株豆苗以前的记录（有就拿来）"
+          ],
+          "materialImages": [
+            "items/exploration-art/plant-growth.png",
+            "items/exploration-art/parent-materials.png",
+            "items/exploration-art/craft-materials.png",
+            "items/pencil.png",
+            null
+          ],
+          "steps": [
+            "第一次观察，看看透明杯里的豆苗，指出今天看见的一处特点。请家长帮忙写日期，画下或记下你的发现。",
+            "以前有记录吗？有就和今天的比，说一处变化。今天才开始，就猜猜下次哪里可能会变。",
+            "今天就可以点“记发现”了。另一天再看同一株豆苗，用两张带日期的记录比一比。"
+          ],
+          "observations": [
+            "能指出今天看见的一处特点",
+            "能和家长一起留下带日期的记录",
+            "能依据旧记录说变化，或说出下次想看的地方"
+          ]
+        },
+        {
+          "id": "explore-culture-world-1",
+          "kind": "parentObservation",
+          "complete": true,
+          "loadedImages": 0,
+          "materials": [
+            "家里愿意分享的节日照片或物品"
+          ],
+          "materialImages": [
+            null
+          ],
+          "steps": [
+            "选一件熟悉的节日物品，说一说在什么时候见过。",
+            "家长补充这个家庭为什么这样使用它。",
+            "把自己的经历和刚听到的信息分开说明。"
+          ],
+          "observations": [
+            "能说出什么时候见过这件物品",
+            "能复述家长补充的一件事",
+            "能分清自己的回忆和刚听来的事"
+          ]
+        },
+        {
+          "id": "explore-culture-world-3",
+          "kind": "parentObservation",
+          "complete": true,
+          "loadedImages": 1,
+          "materials": [
+            "一张儿童地图",
+            "介绍地图上同一地点生活的绘本或图片",
+            "纸和笔"
+          ],
+          "materialImages": [
+            null,
+            "items/book.png",
+            null
+          ],
+          "steps": [
+            "在地图上找到绘本或图片介绍的那个地方。",
+            "从给定图片中观察住房、衣物或交通的一处特点。",
+            "提出一个可以继续查书验证的问题，不凭一张图片概括所有人。"
+          ],
+          "observations": [
+            "能在地图上找到材料中的地点",
+            "能指出图片中生活的一处特点",
+            "能提出一个想查书核对的问题"
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "rows": [
+        {
+          "id": "grid-blank-is-a-card",
+          "kind": "gridPlacement",
+          "complete": true,
+          "loadedImages": 8,
+          "blankAt": [
+            "cell-2"
+          ]
+        },
+        {
+          "id": "explore-number-partitions-1",
+          "kind": "multiSelect",
+          "complete": true,
+          "loadedImages": 36
+        },
+        {
+          "id": "explore-number-partitions-2",
+          "kind": "multiSelect",
+          "complete": true,
+          "loadedImages": 49
+        },
+        {
+          "id": "explore-number-partitions-3",
+          "kind": "multiSelect",
+          "complete": true,
+          "loadedImages": 62
+        },
+        {
+          "id": "explore-relations-analogies-4",
+          "kind": "matching",
+          "complete": true,
+          "loadedImages": 6
+        },
+        {
+          "id": "explore-relations-analogies-5",
+          "kind": "matching",
+          "complete": true,
+          "loadedImages": 6
+        },
+        {
+          "id": "explore-relations-analogies-6",
+          "kind": "matching",
+          "complete": true,
+          "loadedImages": 6
+        },
+        {
+          "id": "explore-relations-analogies-7",
+          "kind": "matching",
+          "complete": true,
+          "loadedImages": 8
+        },
+        {
+          "id": "explore-relations-analogies-8",
+          "kind": "matching",
+          "complete": true,
+          "loadedImages": 8
+        },
+        {
+          "id": "explore-relations-analogies-9",
+          "kind": "matching",
+          "complete": true,
+          "loadedImages": 8
+        },
+        {
+          "id": "explore-toggle-state-1",
+          "kind": "gridPlacement",
+          "complete": true,
+          "loadedImages": 14,
+          "input": [
+            1
+          ]
+        },
+        {
+          "id": "explore-toggle-state-2",
+          "kind": "gridPlacement",
+          "complete": true,
+          "loadedImages": 14,
+          "input": [
+            2
+          ]
+        },
+        {
+          "id": "explore-toggle-state-3",
+          "kind": "gridPlacement",
+          "complete": true,
+          "loadedImages": 14,
+          "input": [
+            3
+          ]
+        },
+        {
+          "id": "explore-toggle-state-4",
+          "kind": "gridPlacement",
+          "complete": true,
+          "loadedImages": 22,
+          "input": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "explore-toggle-state-5",
+          "kind": "gridPlacement",
+          "complete": true,
+          "loadedImages": 22,
+          "input": [
+            2,
+            3
+          ]
+        },
+        {
+          "id": "explore-toggle-state-6",
+          "kind": "gridPlacement",
+          "complete": true,
+          "loadedImages": 22,
+          "input": [
+            3,
+            4
+          ]
+        },
+        {
+          "id": "explore-toggle-state-7",
+          "kind": "gridPlacement",
+          "complete": true,
+          "loadedImages": 32,
+          "input": [
+            2
+          ]
+        },
+        {
+          "id": "explore-toggle-state-8",
+          "kind": "gridPlacement",
+          "complete": true,
+          "loadedImages": 32,
+          "input": [
+            3
+          ]
+        },
+        {
+          "id": "explore-toggle-state-9",
+          "kind": "gridPlacement",
+          "complete": true,
+          "loadedImages": 32,
+          "input": [
+            4
+          ]
+        },
+        {
+          "id": "explore-geometric-counts-7",
+          "kind": "singleChoice",
+          "complete": true,
+          "loadedImages": 0
+        },
+        {
+          "id": "explore-geometric-counts-8",
+          "kind": "singleChoice",
+          "complete": true,
+          "loadedImages": 0
+        },
+        {
+          "id": "explore-geometric-counts-9",
+          "kind": "singleChoice",
+          "complete": true,
+          "loadedImages": 0
+        },
+        {
+          "id": "explore-symmetry-axes-6",
+          "kind": "multiSelect",
+          "complete": true,
+          "loadedImages": 6
+        },
+        {
+          "id": "explore-fold-cut-1",
+          "kind": "parentObservation",
+          "complete": true,
+          "loadedImages": 3,
+          "materials": [
+            "正方形纸",
+            "彩笔",
+            "圆头儿童剪刀（由家长示范剪口）"
+          ],
+          "materialImages": [
+            "items/exploration/diagram-4f6bce65.png",
+            "items/exploration-art/craft-materials.png",
+            "items/exploration-art/everyday-tools.png"
+          ],
+          "steps": [
+            "把纸左右对折，摸一摸哪两条边重合。",
+            "在重合的两层外边画一个点。先猜一猜，展开以后哪里会有缺口？",
+            "家长在记号处一起剪过两层纸。展开看看缺口在哪里，再合上纸比一比。"
+          ],
+          "observations": [
+            "能说明重合的边",
+            "能先预测再操作",
+            "能用对应位置解释结果"
+          ]
+        },
+        {
+          "id": "explore-attention-search-1",
+          "kind": "multiSelect",
+          "complete": true,
+          "loadedImages": 9
+        },
+        {
+          "id": "explore-attention-search-2",
+          "kind": "multiSelect",
+          "complete": true,
+          "loadedImages": 9
+        },
+        {
+          "id": "explore-attention-search-3",
+          "kind": "multiSelect",
+          "complete": true,
+          "loadedImages": 9
+        },
+        {
+          "id": "explore-attention-search-4",
+          "kind": "multiSelect",
+          "complete": true,
+          "loadedImages": 15
+        },
+        {
+          "id": "explore-attention-search-5",
+          "kind": "multiSelect",
+          "complete": true,
+          "loadedImages": 15
+        },
+        {
+          "id": "explore-attention-search-6",
+          "kind": "multiSelect",
+          "complete": true,
+          "loadedImages": 15
+        },
+        {
+          "id": "explore-attention-search-7",
+          "kind": "multiSelect",
+          "complete": true,
+          "loadedImages": 21
+        },
+        {
+          "id": "explore-attention-search-8",
+          "kind": "multiSelect",
+          "complete": true,
+          "loadedImages": 21
+        },
+        {
+          "id": "explore-attention-search-9",
+          "kind": "multiSelect",
+          "complete": true,
+          "loadedImages": 21
+        },
+        {
+          "id": "explore-relational-quantity-memory-1",
+          "kind": "matching",
+          "complete": true,
+          "quantities": [
+            {
+              "friend": "小兔头像",
+              "count": 3
+            },
+            {
+              "friend": "小猫头像",
+              "count": 2
+            }
+          ],
+          "loadedImages": 4
+        },
+        {
+          "id": "explore-relational-quantity-memory-2",
+          "kind": "matching",
+          "complete": true,
+          "quantities": [
+            {
+              "friend": "小兔头像",
+              "count": 3
+            },
+            {
+              "friend": "小猫头像",
+              "count": 4
+            }
+          ],
+          "loadedImages": 4
+        },
+        {
+          "id": "explore-relational-quantity-memory-3",
+          "kind": "matching",
+          "complete": true,
+          "quantities": [
+            {
+              "friend": "小兔头像",
+              "count": 5
+            },
+            {
+              "friend": "小猫头像",
+              "count": 4
+            }
+          ],
+          "loadedImages": 4
+        },
+        {
+          "id": "explore-relational-quantity-memory-4",
+          "kind": "matching",
+          "complete": true,
+          "quantities": [
+            {
+              "friend": "小兔头像",
+              "count": 3
+            },
+            {
+              "friend": "小猫头像",
+              "count": 2
+            },
+            {
+              "friend": "小熊头像",
+              "count": 4
+            }
+          ],
+          "loadedImages": 6
+        },
+        {
+          "id": "explore-relational-quantity-memory-5",
+          "kind": "matching",
+          "complete": true,
+          "quantities": [
+            {
+              "friend": "小兔头像",
+              "count": 5
+            },
+            {
+              "friend": "小猫头像",
+              "count": 4
+            },
+            {
+              "friend": "小熊头像",
+              "count": 3
+            }
+          ],
+          "loadedImages": 6
+        },
+        {
+          "id": "explore-relational-quantity-memory-6",
+          "kind": "matching",
+          "complete": true,
+          "quantities": [
+            {
+              "friend": "小兔头像",
+              "count": 4
+            },
+            {
+              "friend": "小猫头像",
+              "count": 6
+            },
+            {
+              "friend": "小熊头像",
+              "count": 5
+            }
+          ],
+          "loadedImages": 6
+        },
+        {
+          "id": "explore-relational-quantity-memory-7",
+          "kind": "matching",
+          "complete": true,
+          "quantities": [
+            {
+              "friend": "小兔头像",
+              "count": 4
+            },
+            {
+              "friend": "小猫头像",
+              "count": 2
+            },
+            {
+              "friend": "小熊头像",
+              "count": 5
+            },
+            {
+              "friend": "小狗头像",
+              "count": 3
+            }
+          ],
+          "loadedImages": 8
+        },
+        {
+          "id": "explore-relational-quantity-memory-8",
+          "kind": "matching",
+          "complete": true,
+          "quantities": [
+            {
+              "friend": "小兔头像",
+              "count": 3
+            },
+            {
+              "friend": "小猫头像",
+              "count": 6
+            },
+            {
+              "friend": "小熊头像",
+              "count": 4
+            },
+            {
+              "friend": "小狗头像",
+              "count": 5
+            }
+          ],
+          "loadedImages": 8
+        },
+        {
+          "id": "explore-relational-quantity-memory-9",
+          "kind": "matching",
+          "complete": true,
+          "quantities": [
+            {
+              "friend": "小兔头像",
+              "count": 5
+            },
+            {
+              "friend": "小猫头像",
+              "count": 6
+            },
+            {
+              "friend": "小熊头像",
+              "count": 4
+            },
+            {
+              "friend": "小狗头像",
+              "count": 7
+            }
+          ],
+          "loadedImages": 8
+        },
+        {
+          "id": "explore-vocabulary-relations-7",
+          "kind": "parentObservation",
+          "complete": true,
+          "loadedImages": 1,
+          "materials": [
+            "能开合的盒子"
+          ],
+          "materialImages": [
+            "items/exploration-art/box-open.png"
+          ],
+          "steps": [
+            "家长说“打开”，孩子打开盒盖。家长说“关上”，孩子把盒盖合上。",
+            "交换角色，请孩子说一个动作，让家长来做。",
+            "家长悄悄改变盒盖的位置，请孩子说说盒子现在是开着还是关着。"
+          ],
+          "observations": [
+            "能按听到的词打开或关上盒子",
+            "能用“打开”或“关上”请家长做动作",
+            "能说出盒盖现在的状态"
+          ]
+        },
+        {
+          "id": "explore-vocabulary-relations-8",
+          "kind": "parentObservation",
+          "complete": true,
+          "loadedImages": 1,
+          "materials": [
+            "一长一短两条纸带"
+          ],
+          "materialImages": [
+            "items/exploration/diagram-9293c723.png"
+          ],
+          "steps": [
+            "把两条纸带并排摆好，一头对齐。请孩子指出长的那条。",
+            "交换纸带的位置，再指一指哪条短。",
+            "请孩子说说，两条纸带从哪一头对齐，哪一头多出来了。"
+          ],
+          "observations": [
+            "能把两条纸带的一端对齐",
+            "能在交换位置后找出短纸带",
+            "能用纸带多出来的部分说明哪条长"
+          ]
+        },
+        {
+          "id": "explore-vocabulary-relations-9",
+          "kind": "parentObservation",
+          "complete": true,
+          "loadedImages": 2,
+          "materials": [
+            "能开合的盒子",
+            "一本书"
+          ],
+          "materialImages": [
+            "items/exploration-art/box-open.png",
+            "items/book.png"
+          ],
+          "steps": [
+            "家长说“打开盒子”，请孩子做这个动作。",
+            "把盒子换成书。孩子对家长说一句带“打开”的话，让家长照着做。",
+            "请孩子把书合上，再说一说，刚才打开了哪两样东西。"
+          ],
+          "observations": [
+            "能把“打开”用在盒子上",
+            "能换成书说出带“打开”的话",
+            "能说出两次打开的对象"
+          ]
+        },
+        {
+          "id": "explore-everyday-classification-7",
+          "kind": "parentObservation",
+          "complete": true,
+          "loadedImages": 2,
+          "materials": [
+            "杯子",
+            "彩笔"
+          ],
+          "materialImages": [
+            "items/cup.png",
+            "items/exploration-art/craft-materials.png"
+          ],
+          "steps": [
+            "选一个杯子，先说平时用它做什么。",
+            "再想一种合理的新用途，比如分装画笔。",
+            "说清新用途需要满足什么条件。"
+          ],
+          "observations": [
+            "能说出杯子平时的一种用途",
+            "能想出另一种用法",
+            "能说清这种用法需要什么条件"
+          ]
+        },
+        {
+          "id": "explore-nature-growth-7",
+          "kind": "parentObservation",
+          "complete": true,
+          "loadedImages": 4,
+          "materials": [
+            "一株豆苗",
+            "透明杯",
+            "白纸",
+            "铅笔",
+            "同一株豆苗以前的记录（有就拿来）"
+          ],
+          "materialImages": [
+            "items/exploration-art/plant-growth.png",
+            "items/exploration-art/parent-materials.png",
+            "items/exploration-art/craft-materials.png",
+            "items/pencil.png",
+            null
+          ],
+          "steps": [
+            "第一次观察，看看透明杯里的豆苗，指出今天看见的一处特点。请家长帮忙写日期，画下或记下你的发现。",
+            "以前有记录吗？有就和今天的比，说一处变化。今天才开始，就猜猜下次哪里可能会变。",
+            "今天就可以点“记发现”了。另一天再看同一株豆苗，用两张带日期的记录比一比。"
+          ],
+          "observations": [
+            "能指出今天看见的一处特点",
+            "能和家长一起留下带日期的记录",
+            "能依据旧记录说变化，或说出下次想看的地方"
+          ]
+        },
+        {
+          "id": "explore-culture-world-1",
+          "kind": "parentObservation",
+          "complete": true,
+          "loadedImages": 0,
+          "materials": [
+            "家里愿意分享的节日照片或物品"
+          ],
+          "materialImages": [
+            null
+          ],
+          "steps": [
+            "选一件熟悉的节日物品，说一说在什么时候见过。",
+            "家长补充这个家庭为什么这样使用它。",
+            "把自己的经历和刚听到的信息分开说明。"
+          ],
+          "observations": [
+            "能说出什么时候见过这件物品",
+            "能复述家长补充的一件事",
+            "能分清自己的回忆和刚听来的事"
+          ]
+        },
+        {
+          "id": "explore-culture-world-3",
+          "kind": "parentObservation",
+          "complete": true,
+          "loadedImages": 1,
+          "materials": [
+            "一张儿童地图",
+            "介绍地图上同一地点生活的绘本或图片",
+            "纸和笔"
+          ],
+          "materialImages": [
+            null,
+            "items/book.png",
+            null
+          ],
+          "steps": [
+            "在地图上找到绘本或图片介绍的那个地方。",
+            "从给定图片中观察住房、衣物或交通的一处特点。",
+            "提出一个可以继续查书验证的问题，不凭一张图片概括所有人。"
+          ],
+          "observations": [
+            "能在地图上找到材料中的地点",
+            "能指出图片中生活的一处特点",
+            "能提出一个想查书核对的问题"
+          ]
+        }
+      ]
+    }
+  ]
+}

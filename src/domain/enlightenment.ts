@@ -1,4 +1,12 @@
 import type { GameConfig, GameRound } from "../types";
+import { FAIR_SHARE_COPY } from "./fair-share";
+
+/** The desktop/web sharing board accepts physical placements. Other (exported) players can keep the numerical choice. */
+export function enlightenmentPromptSpeech(gameId: string, round: Pick<GameRound, "prompt" | "instruction">): string {
+  const prompt = round.prompt.trim();
+  const separator = /[。？！]$/.test(prompt) ? "" : "。";
+  return prompt + separator + round.instruction + (gameId === "math-fair-share" ? FAIR_SHARE_COPY.tap : "");
+}
 
 export type ObservationPhase = "ready" | "observing" | "answering";
 export type ObservationEvent = "start" | "hide" | "review" | "interrupt";

@@ -63,7 +63,8 @@ test('all steps and all options have distinct semantic local art; no correct-onl
       paths.add(image.src);
     }
   }
-  assert.deepEqual([...paths].filter(path=>path.includes('order-045-')).sort(),Object.values(imageGallery.items).filter(image=>image.src.includes('order-045-')).map(image=>image.src).sort(),'every registered new action has an actual task use');
+  const registeredPaths = new Set(Object.values(imageGallery.items).map(image => image.src).filter(path => path.includes('order-045-')));
+  assert.deepEqual([...paths].filter(path=>path.includes('order-045-')).sort(), [...registeredPaths].sort(), 'every registered action image has an actual task use');
   for(const path of paths){const m=await sharp('public'+path).metadata();assert.deepEqual([m.width,m.height,m.format],[600,600,'png'],path);}
 });
 

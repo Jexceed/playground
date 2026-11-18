@@ -777,7 +777,7 @@
         "motor": 2,
         "representation": "pictures",
         "prerequisites": "区分两面、会按位置编号找卡",
-        "basis": "3卡按一条翻动指令后回填全部3格"
+        "basis": "3张牌只翻动其中一张，观察其余牌是否保持原色"
       },
       {
         "rules": 1,
@@ -786,7 +786,7 @@
         "motor": 2,
         "representation": "pictures",
         "prerequisites": "能连续更新两张卡状态",
-        "basis": "4卡按两条指令连续更新，翻一次换面规则不变"
+        "basis": "4张牌中有两张各翻一次，核对两张变化后的颜色"
       },
       {
         "rules": 1,
@@ -795,7 +795,7 @@
         "motor": 2,
         "representation": "pictures",
         "prerequisites": "理解同一卡翻两次恢复原样",
-        "basis": "5卡按三条指令，其中同一卡两次；仍一条翻转规则，三步状态更新"
+        "basis": "5张牌按三次翻动推算最终牌面，同一张翻两次后复原"
       }
     ]
   },
@@ -1851,7 +1851,7 @@
         "motor": 2,
         "representation": "physical",
         "prerequisites": "能用动作/实物表示词义并说完整句",
-        "basis": "听词表演、交换角色、迁移到句子，亲子观察而非识字测试"
+        "basis": "三题分别用盒盖演示开关、对齐纸带比较长短、用同一个动词描述不同物品。"
       }
     ]
   },
@@ -2043,7 +2043,7 @@
         "motor": 1,
         "representation": "pictures",
         "prerequisites": "听懂longer than及红蓝黄，理解传递长短",
-        "basis": "听红长于蓝、蓝长于黄两比较，图上同时核对；语言与数理负荷分开记录"
+        "basis": "听两句英语比较三根色条，在图上分别核对每句提到的颜色和长度。"
       }
     ]
   },

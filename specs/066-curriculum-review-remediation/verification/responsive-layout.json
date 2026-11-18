@@ -1,0 +1,149 @@
+{
+  "widths": [
+    360,
+    390,
+    1440
+  ],
+  "rounds": 64,
+  "passed": 192,
+  "completedGridSlots": 225,
+  "failures": [],
+  "scales": [
+    {
+      "width": 1440,
+      "id": "explore-rotation-reflection-5",
+      "scale": {
+        "reference": {
+          "width": 52.5,
+          "height": 52.5
+        },
+        "choice": {
+          "width": 80.625,
+          "height": 80.625
+        }
+      }
+    },
+    {
+      "width": 1440,
+      "id": "explore-rotation-reflection-6",
+      "scale": {
+        "reference": {
+          "width": 52.5,
+          "height": 52.5
+        },
+        "choice": {
+          "width": 80.625,
+          "height": 52.5
+        }
+      }
+    },
+    {
+      "width": 360,
+      "id": "explore-rotation-reflection-5",
+      "scale": {
+        "reference": {
+          "width": 52.5,
+          "height": 52.5
+        },
+        "choice": {
+          "width": 80.625,
+          "height": 80.625
+        }
+      }
+    },
+    {
+      "width": 360,
+      "id": "explore-rotation-reflection-6",
+      "scale": {
+        "reference": {
+          "width": 52.5,
+          "height": 52.5
+        },
+        "choice": {
+          "width": 80.625,
+          "height": 52.5
+        }
+      }
+    },
+    {
+      "width": 390,
+      "id": "explore-rotation-reflection-5",
+      "scale": {
+        "reference": {
+          "width": 52.5,
+          "height": 52.5
+        },
+        "choice": {
+          "width": 80.625,
+          "height": 80.625
+        }
+      }
+    },
+    {
+      "width": 390,
+      "id": "explore-rotation-reflection-6",
+      "scale": {
+        "reference": {
+          "width": 52.5,
+          "height": 52.5
+        },
+        "choice": {
+          "width": 80.625,
+          "height": 52.5
+        }
+      }
+    }
+  ],
+  "checkedRounds": [
+    [
+      "math-counting-cardinality",
+      11,
+      18
+    ],
+    [
+      "math-group-counting",
+      10,
+      11
+    ],
+    [
+      "math-compare-equalize",
+      1,
+      12
+    ],
+    [
+      "logic-balance-swap",
+      1,
+      10
+    ],
+    [
+      "logic-difference-detective",
+      1,
+      12
+    ],
+    [
+      "logic-block-height-map",
+      10,
+      12
+    ],
+    [
+      "logic-visual-match",
+      7,
+      12
+    ],
+    [
+      "explore-recursive-composition",
+      4,
+      9
+    ],
+    [
+      "explore-grid-copy-reconstruction",
+      4,
+      6
+    ],
+    [
+      "explore-rotation-reflection",
+      5,
+      6
+    ]
+  ]
+}

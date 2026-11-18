@@ -2,6 +2,7 @@ import type { Activity, ActivityBase, ActivitySet, ActivityToken, ActivityRespon
 import type { Drawing } from "./draw";
 import { image, label } from "./draw";
 import { families } from "./families";
+import { choiceRetry } from "./choice-retry";
 export type FamilyId = keyof typeof families;
 export const authoringSolutions: Record<string, ActivityResponse> = {};
 export const authoringNotes: Record<string, {
@@ -53,6 +54,7 @@ export function choice(family: FamilyId, index: number, prompt: string, options:
         tokens: labelDisplayedChoices(stableChoiceOrder(options.map((o, j) => typeof o === 'object' ? card(`o${j}`, o.label, o.drawing) : card(`o${j}`, o)), `${family}:choice:${index}`)), answerId: `o${answerIndex}`, clues,
         illustration: illustration ? image(illustration, prompt) : undefined };
     a.hints = [clues[0] ?? '先找到图里和问题有关的部分。', reason];
+    a.retry = choiceRetry(family, index) ?? a.retry;
     authoringSolutions[a.id] = { kind: 'singleChoice', tokenId: a.answerId };
     return a;
 }

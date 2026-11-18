@@ -1,0 +1,2281 @@
+{
+  "复核日期": "2026-11-18",
+  "代码提交": "2053cb74b185",
+  "桌面": [
+    1440,
+    960
+  ],
+  "窄屏": [
+    390,
+    844
+  ],
+  "独立题目或亲子活动": 1122,
+  "桌面按题库答案或观察记录完成": 1122,
+  "人工设置的错误选项触发重试": 757,
+  "窄屏进入或准备到作答画面": 1122,
+  "未成功解码的桌面作答画面img": 0,
+  "桌面未捕获JS异常数": 0,
+  "启蒙根据数量、坐标、图形或顺序模型另行核对": 327,
+  "探索数理逻辑复核": {
+    "条目": 252,
+    "含亲子观察结构核对": true,
+    "案例": 10920,
+    "差异": 0,
+    "原脚本对旧版库存或固定措辞的误报": 13
+  },
+  "探索叠色顺序复核": {
+    "题目": 9,
+    "枚举排列": 100,
+    "差异": 0
+  },
+  "按可见预览听觉脚本或WAV采样另行核对的记忆条目": 72,
+  "共享空多选返回错误": 93,
+  "实测同一句通用错答反馈的单选": 261,
+  "构建": "通过",
+  "课程审计": {
+    "问题数": 0
+  },
+  "相关回归测试": {
+    "通过": 246,
+    "失败": 1,
+    "跳过": 0,
+    "失败用例": "scripts/order-story-completion.test.mjs:66",
+    "差异": "order-045-plant-soil.png 在注册表中有两个键，在实际使用路径集合中去重为一项。"
+  },
+  "语音文件": {
+    "检查": 4411,
+    "媒体问题": 0,
+    "清单失败": 0,
+    "生成器": "edge-tts Python package",
+    "语种与声音": {
+      "zh-CN": "zh-CN-XiaoxiaoNeural",
+      "en-US": "en-US-JennyNeural"
+    }
+  },
+  "不同题号计数": {
+    "个别或课程改进": 175,
+    "优先修复": 68,
+    "通用交互": 411
+  },
+  "操作复现": {
+    "explore-rotation-reflection-6@390": {
+      "refs": [
+        {
+          "src": "/images/items/exploration/diagram-423c4adc.png",
+          "box": [
+            145,
+            106
+          ],
+          "mode": "contain"
+        },
+        {
+          "src": "/images/items/exploration/diagram-eaadc790.png",
+          "box": [
+            145,
+            106
+          ],
+          "mode": "contain"
+        },
+        {
+          "src": "/images/items/exploration/diagram-4b668171.png",
+          "box": [
+            145,
+            106
+          ],
+          "mode": "contain"
+        },
+        {
+          "src": "/images/items/exploration/diagram-7d5130f5.png",
+          "box": [
+            145,
+            106
+          ],
+          "mode": "contain"
+        }
+      ],
+      "correct": "图C"
+    },
+    "explore-rotation-reflection-6@1440": {
+      "refs": [
+        {
+          "src": "/images/items/exploration/diagram-eaadc790.png",
+          "box": [
+            156,
+            156
+          ],
+          "mode": "contain"
+        },
+        {
+          "src": "/images/items/exploration/diagram-423c4adc.png",
+          "box": [
+            172.5,
+            106
+          ],
+          "mode": "contain"
+        },
+        {
+          "src": "/images/items/exploration/diagram-eaadc790.png",
+          "box": [
+            172.5,
+            106
+          ],
+          "mode": "contain"
+        },
+        {
+          "src": "/images/items/exploration/diagram-4b668171.png",
+          "box": [
+            172.5,
+            106
+          ],
+          "mode": "contain"
+        },
+        {
+          "src": "/images/items/exploration/diagram-7d5130f5.png",
+          "box": [
+            172.5,
+            106
+          ],
+          "mode": "contain"
+        }
+      ],
+      "correct": "图C"
+    },
+    "explore-multi-rule-classification-1@1440": {
+      "result": "再对照图和题目的条件，一步一步检查。",
+      "footer": "这次尝试 1 次 · 提示 0 次\n先跳过"
+    },
+    "logic-condition-detective-3@1440": {
+      "choice": "keep-waiting",
+      "result": "绿灯表示可以走，但还是要看路。"
+    },
+    "logic-same-kind-detective-8@1440": {
+      "choice": "飞机",
+      "result": "先找三个很像的，再看剩下的那个。"
+    },
+    "logic-same-kind-detective-11@1440": {
+      "choice": "🍊",
+      "result": "先找三个很像的，再看剩下的那个。"
+    },
+    "explore-toggle-state-9@1440": {
+      "onlyFlipped": 4,
+      "prescribed": [
+        3,
+        4,
+        3
+      ],
+      "phase": "complete"
+    },
+    "explore-toggle-state-8@1440": {
+      "onlyFlipped": 3,
+      "prescribed": [
+        2,
+        3,
+        2
+      ],
+      "phase": "complete"
+    },
+    "explore-toggle-state-7@1440": {
+      "onlyFlipped": 2,
+      "prescribed": [
+        1,
+        2,
+        1
+      ],
+      "phase": "complete"
+    },
+    "logic-fix-plan-3@1440": {
+      "choice": "keep-waiting",
+      "result": "绿灯和红灯的动作不一样。"
+    },
+    "explore-grid-copy-reconstruction-5@390": {
+      "before": {
+        "rect": [
+          465,
+          560,
+          415.359375,
+          496.359375
+        ],
+        "vw": 390,
+        "visibleAtCenter": false,
+        "chain": [
+          [
+            "activity-workspace for-grid ",
+            "visible",
+            339,
+            142,
+            0
+          ],
+          [
+            "activity-round",
+            "visible",
+            533,
+            336,
+            0
+          ],
+          [
+            "activity-game",
+            "visible",
+            547,
+            364,
+            0
+          ],
+          [
+            "game-stage",
+            "hidden",
+            547,
+            364,
+            0
+          ]
+        ]
+      },
+      "after": {
+        "rect": [
+          465,
+          560,
+          415.359375,
+          496.359375
+        ],
+        "vw": 390,
+        "visibleAtCenter": false,
+        "chain": [
+          [
+            "activity-workspace for-grid ",
+            "visible",
+            339,
+            142,
+            0
+          ],
+          [
+            "activity-round",
+            "visible",
+            533,
+            336,
+            0
+          ],
+          [
+            "activity-game",
+            "visible",
+            547,
+            364,
+            0
+          ],
+          [
+            "game-stage",
+            "hidden",
+            547,
+            364,
+            0
+          ]
+        ]
+      }
+    },
+    "logic-balance-swap-7@390": {
+      "before": {
+        "rect": [
+          468.203125,
+          554.203125,
+          320.359375,
+          414.359375
+        ],
+        "vw": 390,
+        "visibleAtCenter": false,
+        "chain": [
+          [
+            "round-board round-scene-balance",
+            "hidden",
+            549,
+            330,
+            0
+          ]
+        ]
+      },
+      "after": {
+        "rect": [
+          468.203125,
+          554.203125,
+          320.359375,
+          414.359375
+        ],
+        "vw": 390,
+        "visibleAtCenter": false,
+        "chain": [
+          [
+            "round-board round-scene-balance",
+            "hidden",
+            549,
+            330,
+            0
+          ]
+        ]
+      }
+    },
+    "explore-recursive-composition-4@390": {
+      "before": {
+        "rect": [
+          437.65625,
+          500.984375,
+          505.953125,
+          581.953125
+        ],
+        "vw": 390,
+        "visibleAtCenter": false,
+        "chain": [
+          [
+            "activity-workspace for-pyramid ",
+            "visible",
+            474,
+            336,
+            0
+          ],
+          [
+            "activity-round",
+            "visible",
+            474,
+            336,
+            0
+          ],
+          [
+            "activity-game",
+            "visible",
+            488,
+            364,
+            0
+          ],
+          [
+            "game-stage",
+            "hidden",
+            488,
+            364,
+            0
+          ]
+        ]
+      },
+      "after": {
+        "rect": [
+          437.65625,
+          500.984375,
+          505.953125,
+          581.953125
+        ],
+        "vw": 390,
+        "visibleAtCenter": false,
+        "chain": [
+          [
+            "activity-workspace for-pyramid ",
+            "visible",
+            474,
+            336,
+            0
+          ],
+          [
+            "activity-round",
+            "visible",
+            474,
+            336,
+            0
+          ],
+          [
+            "activity-game",
+            "visible",
+            488,
+            364,
+            0
+          ],
+          [
+            "game-stage",
+            "hidden",
+            488,
+            364,
+            0
+          ]
+        ]
+      }
+    }
+  },
+  "记忆局部作答重看复现": {
+    "explore-spatial-memory-4@1440": {
+      "before": "第1行第1格，小兔",
+      "after": "第1行第1格，空位",
+      "footer": "这次尝试 0 次 · 提示 0 次 · 重看 1 次\n先跳过"
+    }
+  },
+  "问题分项": [
+    {
+      "key": "01",
+      "title": "窄屏上，完成拼图必需的卡片在屏外",
+      "level": "优先修复",
+      "scope": "探索 · 图形金字塔 4–9，方格重建师 4–6",
+      "ids": [
+        "explore-recursive-composition-4",
+        "explore-recursive-composition-5",
+        "explore-recursive-composition-6",
+        "explore-recursive-composition-7",
+        "explore-recursive-composition-8",
+        "explore-recursive-composition-9",
+        "explore-grid-copy-reconstruction-4",
+        "explore-grid-copy-reconstruction-5",
+        "explore-grid-copy-reconstruction-6"
+      ]
+    },
+    {
+      "key": "02",
+      "title": "窄屏裁掉了需要计数的实物",
+      "level": "优先修复",
+      "scope": "启蒙 · 天平换一换 5–10，数一数 11–18，几个几个数 10–11",
+      "ids": [
+        "math-counting-cardinality-11",
+        "math-counting-cardinality-12",
+        "math-counting-cardinality-13",
+        "math-counting-cardinality-14",
+        "math-counting-cardinality-15",
+        "math-counting-cardinality-16",
+        "math-counting-cardinality-17",
+        "math-counting-cardinality-18",
+        "math-group-counting-10",
+        "math-group-counting-11",
+        "logic-balance-swap-5",
+        "logic-balance-swap-6",
+        "logic-balance-swap-7",
+        "logic-balance-swap-8",
+        "logic-balance-swap-9",
+        "logic-balance-swap-10"
+      ]
+    },
+    {
+      "key": "03",
+      "title": "图卡已经竖排，题目还在问左右",
+      "level": "优先修复",
+      "scope": "启蒙 · 一模一样在哪里 7–12，多一点，少一点 1–12，找不同侦探 1–12，积木楼层图 10–12，天平换一换 1–4",
+      "ids": [
+        "math-compare-equalize-1",
+        "math-compare-equalize-2",
+        "math-compare-equalize-3",
+        "math-compare-equalize-4",
+        "math-compare-equalize-5",
+        "math-compare-equalize-6",
+        "math-compare-equalize-7",
+        "math-compare-equalize-8",
+        "math-compare-equalize-9",
+        "math-compare-equalize-10",
+        "math-compare-equalize-11",
+        "math-compare-equalize-12",
+        "logic-visual-match-7",
+        "logic-visual-match-8",
+        "logic-visual-match-9",
+        "logic-visual-match-10",
+        "logic-visual-match-11",
+        "logic-visual-match-12",
+        "logic-difference-detective-1",
+        "logic-difference-detective-2",
+        "logic-difference-detective-3",
+        "logic-difference-detective-4",
+        "logic-difference-detective-5",
+        "logic-difference-detective-6",
+        "logic-difference-detective-7",
+        "logic-difference-detective-8",
+        "logic-difference-detective-9",
+        "logic-difference-detective-10",
+        "logic-difference-detective-11",
+        "logic-difference-detective-12",
+        "logic-balance-swap-1",
+        "logic-balance-swap-2",
+        "logic-balance-swap-3",
+        "logic-balance-swap-4",
+        "logic-block-height-map-10",
+        "logic-block-height-map-11",
+        "logic-block-height-map-12"
+      ]
+    },
+    {
+      "key": "04",
+      "title": "题目要求保持高度，参照图和选项却用不同的比例显示",
+      "level": "优先修复",
+      "scope": "探索 · 转一转照一照 5–6",
+      "ids": [
+        "explore-rotation-reflection-5",
+        "explore-rotation-reflection-6"
+      ]
+    },
+    {
+      "key": "05",
+      "title": "“可以做什么”把继续等待也判错",
+      "level": "优先修复",
+      "scope": "启蒙 · 条件小侦探 3，错了怎么改 3",
+      "ids": [
+        "logic-condition-detective-3",
+        "logic-fix-plan-3"
+      ]
+    },
+    {
+      "key": "06",
+      "title": "分类题提出开放问题，却只认一个分类角度",
+      "level": "优先修复",
+      "scope": "启蒙 · 同类小侦探 8、11",
+      "ids": [
+        "logic-same-kind-detective-8",
+        "logic-same-kind-detective-11"
+      ]
+    },
+    {
+      "key": "07",
+      "title": "照抄左右编号就能完成形状配对",
+      "level": "建议调整",
+      "scope": "探索 · 关系接力 4–9",
+      "ids": [
+        "explore-relations-analogies-4",
+        "explore-relations-analogies-5",
+        "explore-relations-analogies-6",
+        "explore-relations-analogies-7",
+        "explore-relations-analogies-8",
+        "explore-relations-analogies-9"
+      ]
+    },
+    {
+      "key": "08",
+      "title": "同一阶段换了题面，仍能按上一题的位置作答",
+      "level": "建议调整",
+      "scope": "探索 · 细心搜索员 1–9，分法找齐了吗 1–3",
+      "ids": [
+        "explore-number-partitions-1",
+        "explore-number-partitions-2",
+        "explore-number-partitions-3",
+        "explore-attention-search-1",
+        "explore-attention-search-2",
+        "explore-attention-search-3",
+        "explore-attention-search-4",
+        "explore-attention-search-5",
+        "explore-attention-search-6",
+        "explore-attention-search-7",
+        "explore-attention-search-8",
+        "explore-attention-search-9"
+      ]
+    },
+    {
+      "key": "09",
+      "title": "数量配对可以完全绕过记忆",
+      "level": "建议调整",
+      "scope": "探索 · 谁有几个 1–9",
+      "ids": [
+        "explore-relational-quantity-memory-1",
+        "explore-relational-quantity-memory-2",
+        "explore-relational-quantity-memory-3",
+        "explore-relational-quantity-memory-4",
+        "explore-relational-quantity-memory-5",
+        "explore-relational-quantity-memory-6",
+        "explore-relational-quantity-memory-7",
+        "explore-relational-quantity-memory-8",
+        "explore-relational-quantity-memory-9"
+      ]
+    },
+    {
+      "key": "10",
+      "title": "两句英语比较只听第一句就够了",
+      "level": "建议调整",
+      "scope": "探索 · 英语里的数量位置 7–9",
+      "ids": [
+        "explore-bilingual-concepts-7",
+        "explore-bilingual-concepts-8",
+        "explore-bilingual-concepts-9"
+      ]
+    },
+    {
+      "key": "11",
+      "title": "翻牌追问和实际动作不一致",
+      "level": "建议调整",
+      "scope": "探索 · 翻牌小机关 1–9",
+      "ids": [
+        "explore-toggle-state-1",
+        "explore-toggle-state-2",
+        "explore-toggle-state-3",
+        "explore-toggle-state-4",
+        "explore-toggle-state-5",
+        "explore-toggle-state-6",
+        "explore-toggle-state-7",
+        "explore-toggle-state-8",
+        "explore-toggle-state-9"
+      ]
+    },
+    {
+      "key": "12",
+      "title": "题名承诺数的分解，作答连续 28 次都只求和",
+      "level": "建议调整",
+      "scope": "启蒙 · 合起来，拆开来 1–28",
+      "ids": [
+        "math-compose-decompose-1",
+        "math-compose-decompose-2",
+        "math-compose-decompose-3",
+        "math-compose-decompose-4",
+        "math-compose-decompose-5",
+        "math-compose-decompose-6",
+        "math-compose-decompose-7",
+        "math-compose-decompose-8",
+        "math-compose-decompose-9",
+        "math-compose-decompose-10",
+        "math-compose-decompose-11",
+        "math-compose-decompose-12",
+        "math-compose-decompose-13",
+        "math-compose-decompose-14",
+        "math-compose-decompose-15",
+        "math-compose-decompose-16",
+        "math-compose-decompose-17",
+        "math-compose-decompose-18",
+        "math-compose-decompose-19",
+        "math-compose-decompose-20",
+        "math-compose-decompose-21",
+        "math-compose-decompose-22",
+        "math-compose-decompose-23",
+        "math-compose-decompose-24",
+        "math-compose-decompose-25",
+        "math-compose-decompose-26",
+        "math-compose-decompose-27",
+        "math-compose-decompose-28"
+      ]
+    },
+    {
+      "key": "13",
+      "title": "空白卡的教学题，所有空白卡都已经固定",
+      "level": "建议调整",
+      "scope": "探索 · 图形推理盘 6",
+      "ids": [
+        "grid-blank-is-a-card"
+      ]
+    },
+    {
+      "key": "14",
+      "title": "对折题靠极小的外形差别区分正方形和菱形",
+      "level": "建议调整",
+      "scope": "探索 · 哪里可以对折 6",
+      "ids": [
+        "explore-symmetry-axes-6"
+      ]
+    },
+    {
+      "key": "15",
+      "title": "“大小不同”容易让孩子按尺寸去重",
+      "level": "建议调整",
+      "scope": "探索 · 点线面数清楚 7–9",
+      "ids": [
+        "explore-geometric-counts-7",
+        "explore-geometric-counts-8",
+        "explore-geometric-counts-9"
+      ]
+    },
+    {
+      "key": "16",
+      "title": "题面把电子钟默认成 24 小时制",
+      "level": "建议调整",
+      "scope": "启蒙 · 时钟小管家 9–12",
+      "ids": [
+        "math-clock-time-9",
+        "math-clock-time-10",
+        "math-clock-time-11",
+        "math-clock-time-12"
+      ]
+    },
+    {
+      "key": "17",
+      "title": "观察记录要求家长评价活动里未安排的行为",
+      "level": "建议调整",
+      "scope": "探索 · 节日和生活发现 1、3，用品放对地方 7，折开会怎样 1",
+      "ids": [
+        "explore-fold-cut-1",
+        "explore-everyday-classification-7",
+        "explore-culture-world-1",
+        "explore-culture-world-3"
+      ]
+    },
+    {
+      "key": "18",
+      "title": "单张图卡在选项里变成了两个图标",
+      "level": "建议调整",
+      "scope": "启蒙 · 图形补一补 2、4，图卡少哪张 7–12，同类小侦探 7、10、11",
+      "ids": [
+        "logic-same-kind-detective-7",
+        "logic-same-kind-detective-10",
+        "logic-same-kind-detective-11",
+        "logic-matrix-puzzle-2",
+        "logic-matrix-puzzle-4",
+        "logic-part-whole-puzzle-7",
+        "logic-part-whole-puzzle-8",
+        "logic-part-whole-puzzle-9",
+        "logic-part-whole-puzzle-10",
+        "logic-part-whole-puzzle-11",
+        "logic-part-whole-puzzle-12"
+      ]
+    },
+    {
+      "key": "19",
+      "title": "题目请孩子分蛋糕，屏幕上的蛋糕只能点读",
+      "level": "课程改进",
+      "scope": "启蒙 · 公平分一分 1–13",
+      "ids": [
+        "math-fair-share-1",
+        "math-fair-share-2",
+        "math-fair-share-3",
+        "math-fair-share-4",
+        "math-fair-share-5",
+        "math-fair-share-6",
+        "math-fair-share-7",
+        "math-fair-share-8",
+        "math-fair-share-9",
+        "math-fair-share-10",
+        "math-fair-share-11",
+        "math-fair-share-12",
+        "math-fair-share-13"
+      ]
+    },
+    {
+      "key": "20",
+      "title": "操作材料或步骤没有体现变式之间的差异",
+      "level": "课程改进",
+      "scope": "探索 · 词语有朋友 7–9，变化观察册 7",
+      "ids": [
+        "explore-vocabulary-relations-7",
+        "explore-vocabulary-relations-8",
+        "explore-vocabulary-relations-9",
+        "explore-nature-growth-7"
+      ]
+    },
+    {
+      "key": "21",
+      "title": "多选题没有选择，提交也会增加一次错误尝试",
+      "level": "通用交互",
+      "scope": "探索 · 全部 93 道多选题",
+      "ids": [
+        "rules-red-round-triangle",
+        "rules-blue-or-triangle",
+        "rules-yellow-two-shapes",
+        "rules-circles-put-red-back",
+        "rules-two-color-shape-pairs",
+        "rules-exactly-one-shared-feature",
+        "explore-number-partitions-1",
+        "explore-number-partitions-2",
+        "explore-number-partitions-3",
+        "explore-number-partitions-4",
+        "explore-number-partitions-5",
+        "explore-number-partitions-6",
+        "explore-number-partitions-7",
+        "explore-number-partitions-8",
+        "explore-number-partitions-9",
+        "explore-parity-place-value-1",
+        "explore-parity-place-value-2",
+        "explore-parity-place-value-3",
+        "explore-money-shopping-7",
+        "explore-money-shopping-8",
+        "explore-money-shopping-9",
+        "explore-multi-rule-classification-1",
+        "explore-multi-rule-classification-2",
+        "explore-multi-rule-classification-3",
+        "explore-multi-rule-classification-4",
+        "explore-multi-rule-classification-5",
+        "explore-multi-rule-classification-6",
+        "explore-multi-rule-classification-7",
+        "explore-multi-rule-classification-8",
+        "explore-multi-rule-classification-9",
+        "explore-evidence-reasoning-1",
+        "explore-evidence-reasoning-2",
+        "explore-evidence-reasoning-3",
+        "explore-evidence-reasoning-4",
+        "explore-evidence-reasoning-5",
+        "explore-evidence-reasoning-6",
+        "explore-board-strategy-1",
+        "explore-board-strategy-2",
+        "explore-board-strategy-3",
+        "explore-board-strategy-4",
+        "explore-board-strategy-5",
+        "explore-board-strategy-6",
+        "explore-board-strategy-7",
+        "explore-board-strategy-8",
+        "explore-board-strategy-9",
+        "explore-symmetry-axes-1",
+        "explore-symmetry-axes-2",
+        "explore-symmetry-axes-3",
+        "explore-symmetry-axes-4",
+        "explore-symmetry-axes-5",
+        "explore-symmetry-axes-6",
+        "explore-symmetry-axes-7",
+        "explore-symmetry-axes-8",
+        "explore-symmetry-axes-9",
+        "explore-topology-relations-4",
+        "explore-topology-relations-5",
+        "explore-topology-relations-6",
+        "explore-topology-relations-7",
+        "explore-topology-relations-8",
+        "explore-topology-relations-9",
+        "explore-solid-views-count-7",
+        "explore-solid-views-count-8",
+        "explore-solid-views-count-9",
+        "explore-cube-nets-4",
+        "explore-cube-nets-5",
+        "explore-cube-nets-6",
+        "explore-visual-set-memory-1",
+        "explore-visual-set-memory-2",
+        "explore-visual-set-memory-3",
+        "explore-visual-set-memory-4",
+        "explore-visual-set-memory-5",
+        "explore-visual-set-memory-6",
+        "explore-visual-set-memory-7",
+        "explore-visual-set-memory-8",
+        "explore-visual-set-memory-9",
+        "explore-attention-search-1",
+        "explore-attention-search-2",
+        "explore-attention-search-3",
+        "explore-attention-search-4",
+        "explore-attention-search-5",
+        "explore-attention-search-6",
+        "explore-attention-search-7",
+        "explore-attention-search-8",
+        "explore-attention-search-9",
+        "explore-inhibition-switch-1",
+        "explore-inhibition-switch-2",
+        "explore-inhibition-switch-3",
+        "explore-inhibition-switch-4",
+        "explore-inhibition-switch-5",
+        "explore-inhibition-switch-6",
+        "explore-inhibition-switch-7",
+        "explore-inhibition-switch-8",
+        "explore-inhibition-switch-9"
+      ]
+    },
+    {
+      "key": "22",
+      "title": "许多错答没有给孩子一个可重试的具体动作",
+      "level": "通用交互",
+      "scope": "探索 · 261 道单选题",
+      "ids": [
+        "explore-counting-cardinality-1",
+        "explore-counting-cardinality-2",
+        "explore-counting-cardinality-3",
+        "explore-counting-cardinality-4",
+        "explore-counting-cardinality-5",
+        "explore-counting-cardinality-6",
+        "explore-counting-cardinality-7",
+        "explore-counting-cardinality-8",
+        "explore-counting-cardinality-9",
+        "explore-compare-transfer-1",
+        "explore-compare-transfer-2",
+        "explore-compare-transfer-3",
+        "explore-compare-transfer-4",
+        "explore-compare-transfer-5",
+        "explore-compare-transfer-6",
+        "explore-compare-transfer-7",
+        "explore-compare-transfer-8",
+        "explore-compare-transfer-9",
+        "explore-number-conservation-1",
+        "explore-number-conservation-2",
+        "explore-number-conservation-3",
+        "explore-number-conservation-4",
+        "explore-number-conservation-5",
+        "explore-number-conservation-6",
+        "explore-number-conservation-7",
+        "explore-number-conservation-8",
+        "explore-number-conservation-9",
+        "explore-make-break-ten-1",
+        "explore-make-break-ten-2",
+        "explore-make-break-ten-3",
+        "explore-make-break-ten-4",
+        "explore-make-break-ten-5",
+        "explore-make-break-ten-6",
+        "explore-make-break-ten-7",
+        "explore-make-break-ten-8",
+        "explore-make-break-ten-9",
+        "explore-quantity-stories-1",
+        "explore-quantity-stories-2",
+        "explore-quantity-stories-3",
+        "explore-quantity-stories-4",
+        "explore-quantity-stories-5",
+        "explore-quantity-stories-6",
+        "explore-quantity-stories-7",
+        "explore-quantity-stories-8",
+        "explore-quantity-stories-9",
+        "explore-group-share-1",
+        "explore-group-share-2",
+        "explore-group-share-3",
+        "explore-group-share-4",
+        "explore-group-share-5",
+        "explore-group-share-6",
+        "explore-group-share-7",
+        "explore-group-share-8",
+        "explore-group-share-9",
+        "explore-area-fractions-1",
+        "explore-area-fractions-2",
+        "explore-area-fractions-3",
+        "explore-area-fractions-4",
+        "explore-area-fractions-5",
+        "explore-area-fractions-6",
+        "explore-area-fractions-7",
+        "explore-area-fractions-8",
+        "explore-area-fractions-9",
+        "explore-parity-place-value-4",
+        "explore-parity-place-value-5",
+        "explore-parity-place-value-6",
+        "explore-parity-place-value-7",
+        "explore-parity-place-value-8",
+        "explore-parity-place-value-9",
+        "explore-number-sequences-1",
+        "explore-number-sequences-2",
+        "explore-number-sequences-3",
+        "explore-number-sequences-4",
+        "explore-number-sequences-5",
+        "explore-number-sequences-6",
+        "explore-number-sequences-7",
+        "explore-number-sequences-8",
+        "explore-number-sequences-9",
+        "explore-symbol-equations-1",
+        "explore-symbol-equations-2",
+        "explore-symbol-equations-3",
+        "explore-symbol-equations-4",
+        "explore-symbol-equations-5",
+        "explore-symbol-equations-6",
+        "explore-symbol-equations-7",
+        "explore-symbol-equations-8",
+        "explore-symbol-equations-9",
+        "explore-money-shopping-1",
+        "explore-money-shopping-2",
+        "explore-money-shopping-3",
+        "explore-money-shopping-4",
+        "explore-money-shopping-5",
+        "explore-money-shopping-6",
+        "explore-time-elapsed-1",
+        "explore-time-elapsed-2",
+        "explore-time-elapsed-3",
+        "explore-time-elapsed-4",
+        "explore-time-elapsed-5",
+        "explore-time-elapsed-6",
+        "explore-time-elapsed-7",
+        "explore-time-elapsed-8",
+        "explore-time-elapsed-9",
+        "explore-measurement-boundaries-1",
+        "explore-measurement-boundaries-2",
+        "explore-measurement-boundaries-3",
+        "explore-measurement-boundaries-4",
+        "explore-measurement-boundaries-5",
+        "explore-measurement-boundaries-6",
+        "explore-measurement-boundaries-7",
+        "explore-measurement-boundaries-8",
+        "explore-measurement-boundaries-9",
+        "explore-calendar-cycles-1",
+        "explore-calendar-cycles-2",
+        "explore-calendar-cycles-3",
+        "explore-calendar-cycles-4",
+        "explore-calendar-cycles-5",
+        "explore-calendar-cycles-6",
+        "explore-calendar-cycles-7",
+        "explore-calendar-cycles-8",
+        "explore-calendar-cycles-9",
+        "explore-transitive-order-7",
+        "explore-transitive-order-8",
+        "explore-transitive-order-9",
+        "explore-learn-rule-transfer-1",
+        "explore-learn-rule-transfer-2",
+        "explore-learn-rule-transfer-3",
+        "explore-learn-rule-transfer-4",
+        "explore-learn-rule-transfer-5",
+        "explore-learn-rule-transfer-6",
+        "explore-learn-rule-transfer-7",
+        "explore-learn-rule-transfer-8",
+        "explore-learn-rule-transfer-9",
+        "explore-visual-search-match-1",
+        "explore-visual-search-match-2",
+        "explore-visual-search-match-3",
+        "explore-visual-search-match-4",
+        "explore-visual-search-match-5",
+        "explore-visual-search-match-6",
+        "explore-visual-search-match-7",
+        "explore-visual-search-match-8",
+        "explore-visual-search-match-9",
+        "explore-occlusion-texture-1",
+        "explore-occlusion-texture-2",
+        "explore-occlusion-texture-3",
+        "explore-occlusion-texture-4",
+        "explore-occlusion-texture-5",
+        "explore-occlusion-texture-6",
+        "explore-occlusion-texture-7",
+        "explore-occlusion-texture-8",
+        "explore-occlusion-texture-9",
+        "explore-position-transform-1",
+        "explore-position-transform-2",
+        "explore-position-transform-3",
+        "explore-position-transform-4",
+        "explore-position-transform-5",
+        "explore-position-transform-6",
+        "explore-position-transform-7",
+        "explore-position-transform-8",
+        "explore-position-transform-9",
+        "explore-rotation-reflection-1",
+        "explore-rotation-reflection-2",
+        "explore-rotation-reflection-3",
+        "explore-rotation-reflection-4",
+        "explore-rotation-reflection-5",
+        "explore-rotation-reflection-6",
+        "explore-rotation-reflection-7",
+        "explore-rotation-reflection-8",
+        "explore-rotation-reflection-9",
+        "explore-shape-set-operations-1",
+        "explore-shape-set-operations-2",
+        "explore-shape-set-operations-3",
+        "explore-shape-set-operations-4",
+        "explore-shape-set-operations-5",
+        "explore-shape-set-operations-6",
+        "explore-shape-set-operations-7",
+        "explore-shape-set-operations-8",
+        "explore-shape-set-operations-9",
+        "explore-recursive-composition-1",
+        "explore-recursive-composition-2",
+        "explore-recursive-composition-3",
+        "explore-symbolic-color-rules-1",
+        "explore-symbolic-color-rules-2",
+        "explore-symbolic-color-rules-3",
+        "explore-symbolic-color-rules-4",
+        "explore-symbolic-color-rules-5",
+        "explore-symbolic-color-rules-6",
+        "explore-symbolic-color-rules-7",
+        "explore-symbolic-color-rules-8",
+        "explore-symbolic-color-rules-9",
+        "explore-geometric-counts-1",
+        "explore-geometric-counts-2",
+        "explore-geometric-counts-3",
+        "explore-geometric-counts-4",
+        "explore-geometric-counts-5",
+        "explore-geometric-counts-6",
+        "explore-geometric-counts-7",
+        "explore-geometric-counts-8",
+        "explore-geometric-counts-9",
+        "explore-topology-relations-1",
+        "explore-topology-relations-2",
+        "explore-topology-relations-3",
+        "explore-marker-invariants-1",
+        "explore-marker-invariants-2",
+        "explore-marker-invariants-3",
+        "explore-marker-invariants-4",
+        "explore-marker-invariants-5",
+        "explore-marker-invariants-6",
+        "explore-marker-invariants-7",
+        "explore-marker-invariants-8",
+        "explore-marker-invariants-9",
+        "explore-fold-cut-4",
+        "explore-fold-cut-5",
+        "explore-fold-cut-6",
+        "explore-fold-cut-7",
+        "explore-fold-cut-8",
+        "explore-fold-cut-9",
+        "explore-solid-views-count-4",
+        "explore-solid-views-count-5",
+        "explore-solid-views-count-6",
+        "explore-relative-perspective-1",
+        "explore-relative-perspective-2",
+        "explore-relative-perspective-3",
+        "explore-relative-perspective-4",
+        "explore-relative-perspective-5",
+        "explore-relative-perspective-6",
+        "explore-relative-perspective-7",
+        "explore-relative-perspective-8",
+        "explore-relative-perspective-9",
+        "explore-cube-nets-1",
+        "explore-cube-nets-2",
+        "explore-cube-nets-3",
+        "explore-cube-nets-7",
+        "explore-cube-nets-8",
+        "explore-cube-nets-9",
+        "explore-story-recall-1",
+        "explore-story-recall-2",
+        "explore-story-recall-3",
+        "explore-character-phonics-1",
+        "explore-character-phonics-2",
+        "explore-character-phonics-3",
+        "explore-character-phonics-4",
+        "explore-character-phonics-5",
+        "explore-character-phonics-6",
+        "explore-english-listening-1",
+        "explore-english-listening-2",
+        "explore-english-listening-3",
+        "explore-english-listening-4",
+        "explore-english-listening-5",
+        "explore-english-listening-6",
+        "explore-english-listening-7",
+        "explore-english-listening-8",
+        "explore-english-listening-9",
+        "explore-bilingual-concepts-1",
+        "explore-bilingual-concepts-2",
+        "explore-bilingual-concepts-3",
+        "explore-bilingual-concepts-4",
+        "explore-bilingual-concepts-5",
+        "explore-bilingual-concepts-6",
+        "explore-bilingual-concepts-7",
+        "explore-bilingual-concepts-8",
+        "explore-bilingual-concepts-9"
+      ]
+    },
+    {
+      "key": "23",
+      "title": "记忆题点重看或重听会清空已经摆好的内容",
+      "level": "通用交互",
+      "scope": "探索 · 99 道使用记忆流程的题或活动",
+      "ids": [
+        "memory-animal-line",
+        "memory-repeated-fruit",
+        "memory-six-positions",
+        "memory-two-groups",
+        "memory-blank-positions",
+        "memory-reverse-five",
+        "explore-visual-set-memory-1",
+        "explore-visual-set-memory-2",
+        "explore-visual-set-memory-3",
+        "explore-visual-set-memory-4",
+        "explore-visual-set-memory-5",
+        "explore-visual-set-memory-6",
+        "explore-visual-set-memory-7",
+        "explore-visual-set-memory-8",
+        "explore-visual-set-memory-9",
+        "explore-spatial-memory-1",
+        "explore-spatial-memory-2",
+        "explore-spatial-memory-3",
+        "explore-spatial-memory-4",
+        "explore-spatial-memory-5",
+        "explore-spatial-memory-6",
+        "explore-spatial-memory-7",
+        "explore-spatial-memory-8",
+        "explore-spatial-memory-9",
+        "explore-sequence-memory-1",
+        "explore-sequence-memory-2",
+        "explore-sequence-memory-3",
+        "explore-sequence-memory-4",
+        "explore-sequence-memory-5",
+        "explore-sequence-memory-6",
+        "explore-sequence-memory-7",
+        "explore-sequence-memory-8",
+        "explore-sequence-memory-9",
+        "explore-auditory-instructions-1",
+        "explore-auditory-instructions-2",
+        "explore-auditory-instructions-3",
+        "explore-auditory-instructions-4",
+        "explore-auditory-instructions-5",
+        "explore-auditory-instructions-6",
+        "explore-auditory-instructions-7",
+        "explore-auditory-instructions-8",
+        "explore-auditory-instructions-9",
+        "explore-story-recall-1",
+        "explore-story-recall-2",
+        "explore-story-recall-3",
+        "explore-story-recall-4",
+        "explore-story-recall-5",
+        "explore-story-recall-6",
+        "explore-story-recall-7",
+        "explore-story-recall-8",
+        "explore-story-recall-9",
+        "explore-inhibition-switch-1",
+        "explore-inhibition-switch-2",
+        "explore-inhibition-switch-3",
+        "explore-inhibition-switch-4",
+        "explore-inhibition-switch-5",
+        "explore-inhibition-switch-6",
+        "explore-inhibition-switch-7",
+        "explore-inhibition-switch-8",
+        "explore-inhibition-switch-9",
+        "explore-sound-rhythm-1",
+        "explore-sound-rhythm-2",
+        "explore-sound-rhythm-3",
+        "explore-sound-rhythm-4",
+        "explore-sound-rhythm-5",
+        "explore-sound-rhythm-6",
+        "explore-sound-rhythm-7",
+        "explore-sound-rhythm-8",
+        "explore-sound-rhythm-9",
+        "explore-relational-quantity-memory-1",
+        "explore-relational-quantity-memory-2",
+        "explore-relational-quantity-memory-3",
+        "explore-relational-quantity-memory-4",
+        "explore-relational-quantity-memory-5",
+        "explore-relational-quantity-memory-6",
+        "explore-relational-quantity-memory-7",
+        "explore-relational-quantity-memory-8",
+        "explore-relational-quantity-memory-9",
+        "explore-character-phonics-4",
+        "explore-character-phonics-5",
+        "explore-character-phonics-6",
+        "explore-english-listening-1",
+        "explore-english-listening-2",
+        "explore-english-listening-3",
+        "explore-english-listening-4",
+        "explore-english-listening-5",
+        "explore-english-listening-6",
+        "explore-english-listening-7",
+        "explore-english-listening-8",
+        "explore-english-listening-9",
+        "explore-bilingual-concepts-1",
+        "explore-bilingual-concepts-2",
+        "explore-bilingual-concepts-3",
+        "explore-bilingual-concepts-4",
+        "explore-bilingual-concepts-5",
+        "explore-bilingual-concepts-6",
+        "explore-bilingual-concepts-7",
+        "explore-bilingual-concepts-8",
+        "explore-bilingual-concepts-9"
+      ]
+    }
+  ],
+  "按题组实测覆盖": [
+    {
+      "阶段": "启蒙",
+      "题组": "数一数",
+      "题组编号": "math-counting-cardinality",
+      "题目数": 18,
+      "桌面到达完成": 18,
+      "桌面验证重试": 18,
+      "窄屏实测题面": 18
+    },
+    {
+      "阶段": "启蒙",
+      "题组": "一眼看出来",
+      "题组编号": "math-subitize-match",
+      "题目数": 15,
+      "桌面到达完成": 15,
+      "桌面验证重试": 15,
+      "窄屏实测题面": 15
+    },
+    {
+      "阶段": "启蒙",
+      "题组": "多一点，少一点",
+      "题组编号": "math-compare-equalize",
+      "题目数": 12,
+      "桌面到达完成": 12,
+      "桌面验证重试": 12,
+      "窄屏实测题面": 12
+    },
+    {
+      "阶段": "启蒙",
+      "题组": "合起来，拆开来",
+      "题组编号": "math-compose-decompose",
+      "题目数": 28,
+      "桌面到达完成": 28,
+      "桌面验证重试": 28,
+      "窄屏实测题面": 28
+    },
+    {
+      "阶段": "启蒙",
+      "题组": "小鸟飞走了",
+      "题组编号": "math-story-operations",
+      "题目数": 12,
+      "桌面到达完成": 12,
+      "桌面验证重试": 12,
+      "窄屏实测题面": 12
+    },
+    {
+      "阶段": "启蒙",
+      "题组": "公平分一分",
+      "题组编号": "math-fair-share",
+      "题目数": 13,
+      "桌面到达完成": 13,
+      "桌面验证重试": 13,
+      "窄屏实测题面": 13
+    },
+    {
+      "阶段": "启蒙",
+      "题组": "几个几个数",
+      "题组编号": "math-group-counting",
+      "题目数": 12,
+      "桌面到达完成": 12,
+      "桌面验证重试": 12,
+      "窄屏实测题面": 12
+    },
+    {
+      "阶段": "启蒙",
+      "题组": "时钟小管家",
+      "题组编号": "math-clock-time",
+      "题目数": 12,
+      "桌面到达完成": 12,
+      "桌面验证重试": 12,
+      "窄屏实测题面": 12
+    },
+    {
+      "阶段": "启蒙",
+      "题组": "找规律火车",
+      "题组编号": "logic-pattern-train",
+      "题目数": 18,
+      "桌面到达完成": 18,
+      "桌面验证重试": 18,
+      "窄屏实测题面": 18
+    },
+    {
+      "阶段": "启蒙",
+      "题组": "会变规则的分类机",
+      "题组编号": "logic-sorter-switch",
+      "题目数": 11,
+      "桌面到达完成": 11,
+      "桌面验证重试": 11,
+      "窄屏实测题面": 11
+    },
+    {
+      "阶段": "启蒙",
+      "题组": "停一下再行动",
+      "题组编号": "logic-stop-think",
+      "题目数": 6,
+      "桌面到达完成": 6,
+      "桌面验证重试": 6,
+      "窄屏实测题面": 6
+    },
+    {
+      "阶段": "启蒙",
+      "题组": "先做什么",
+      "题组编号": "logic-order-plan",
+      "题目数": 24,
+      "桌面到达完成": 24,
+      "桌面验证重试": 24,
+      "窄屏实测题面": 24
+    },
+    {
+      "阶段": "启蒙",
+      "题组": "故事和线索",
+      "题组编号": "logic-story-evidence",
+      "题目数": 7,
+      "桌面到达完成": 7,
+      "桌面验证重试": 7,
+      "窄屏实测题面": 7
+    },
+    {
+      "阶段": "启蒙",
+      "题组": "条件小侦探",
+      "题组编号": "logic-condition-detective",
+      "题目数": 12,
+      "桌面到达完成": 12,
+      "桌面验证重试": 12,
+      "窄屏实测题面": 12
+    },
+    {
+      "阶段": "启蒙",
+      "题组": "错了怎么改",
+      "题组编号": "logic-fix-plan",
+      "题目数": 12,
+      "桌面到达完成": 12,
+      "桌面验证重试": 12,
+      "窄屏实测题面": 12
+    },
+    {
+      "阶段": "启蒙",
+      "题组": "先处理哪一个",
+      "题组编号": "logic-priority-choice",
+      "题目数": 12,
+      "桌面到达完成": 12,
+      "桌面验证重试": 12,
+      "窄屏实测题面": 12
+    },
+    {
+      "阶段": "启蒙",
+      "题组": "按规则装书包",
+      "题组编号": "logic-rule-filter",
+      "题目数": 14,
+      "桌面到达完成": 14,
+      "桌面验证重试": 14,
+      "窄屏实测题面": 14
+    },
+    {
+      "阶段": "启蒙",
+      "题组": "谁和谁一对",
+      "题组编号": "logic-relation-pairs",
+      "题目数": 16,
+      "桌面到达完成": 16,
+      "桌面验证重试": 16,
+      "窄屏实测题面": 16
+    },
+    {
+      "阶段": "启蒙",
+      "题组": "桥怎么搭",
+      "题组编号": "logic-space-bridge",
+      "题目数": 8,
+      "桌面到达完成": 8,
+      "桌面验证重试": 0,
+      "窄屏实测题面": 8
+    },
+    {
+      "阶段": "启蒙",
+      "题组": "同类小侦探",
+      "题组编号": "logic-same-kind-detective",
+      "题目数": 12,
+      "桌面到达完成": 12,
+      "桌面验证重试": 12,
+      "窄屏实测题面": 12
+    },
+    {
+      "阶段": "启蒙",
+      "题组": "数字规律小路",
+      "题组编号": "logic-number-pattern-trail",
+      "题目数": 15,
+      "桌面到达完成": 15,
+      "桌面验证重试": 15,
+      "窄屏实测题面": 15
+    },
+    {
+      "阶段": "启蒙",
+      "题组": "地图找宝物",
+      "题组编号": "logic-address-map",
+      "题目数": 12,
+      "桌面到达完成": 12,
+      "桌面验证重试": 12,
+      "窄屏实测题面": 12
+    },
+    {
+      "阶段": "启蒙",
+      "题组": "图形补一补",
+      "题组编号": "logic-matrix-puzzle",
+      "题目数": 6,
+      "桌面到达完成": 6,
+      "桌面验证重试": 6,
+      "窄屏实测题面": 6
+    },
+    {
+      "阶段": "启蒙",
+      "题组": "方位小地图",
+      "题组编号": "logic-position-map",
+      "题目数": 12,
+      "桌面到达完成": 12,
+      "桌面验证重试": 12,
+      "窄屏实测题面": 12
+    },
+    {
+      "阶段": "启蒙",
+      "题组": "记忆小相机",
+      "题组编号": "logic-memory-camera",
+      "题目数": 12,
+      "桌面到达完成": 12,
+      "桌面验证重试": 12,
+      "窄屏实测题面": 12
+    },
+    {
+      "阶段": "启蒙",
+      "题组": "一模一样在哪里",
+      "题组编号": "logic-visual-match",
+      "题目数": 12,
+      "桌面到达完成": 12,
+      "桌面验证重试": 12,
+      "窄屏实测题面": 12
+    },
+    {
+      "阶段": "启蒙",
+      "题组": "找不同侦探",
+      "题组编号": "logic-difference-detective",
+      "题目数": 12,
+      "桌面到达完成": 12,
+      "桌面验证重试": 12,
+      "窄屏实测题面": 12
+    },
+    {
+      "阶段": "启蒙",
+      "题组": "转一转方向",
+      "题组编号": "logic-rotation-direction",
+      "题目数": 12,
+      "桌面到达完成": 12,
+      "桌面验证重试": 12,
+      "窄屏实测题面": 12
+    },
+    {
+      "阶段": "启蒙",
+      "题组": "图卡少哪张",
+      "题组编号": "logic-part-whole-puzzle",
+      "题目数": 12,
+      "桌面到达完成": 12,
+      "桌面验证重试": 12,
+      "窄屏实测题面": 12
+    },
+    {
+      "阶段": "启蒙",
+      "题组": "天平换一换",
+      "题组编号": "logic-balance-swap",
+      "题目数": 10,
+      "桌面到达完成": 10,
+      "桌面验证重试": 10,
+      "窄屏实测题面": 10
+    },
+    {
+      "阶段": "启蒙",
+      "题组": "镜子折一折",
+      "题组编号": "logic-mirror-fold",
+      "题目数": 12,
+      "桌面到达完成": 12,
+      "桌面验证重试": 12,
+      "窄屏实测题面": 12
+    },
+    {
+      "阶段": "启蒙",
+      "题组": "积木楼层图",
+      "题组编号": "logic-block-height-map",
+      "题目数": 12,
+      "桌面到达完成": 12,
+      "桌面验证重试": 12,
+      "窄屏实测题面": 12
+    },
+    {
+      "阶段": "启蒙",
+      "题组": "从哪边看",
+      "题组编号": "logic-three-view-blocks",
+      "题目数": 18,
+      "桌面到达完成": 18,
+      "桌面验证重试": 18,
+      "窄屏实测题面": 18
+    },
+    {
+      "阶段": "启蒙",
+      "题组": "路线听指令",
+      "题组编号": "logic-route-steps",
+      "题目数": 10,
+      "桌面到达完成": 10,
+      "桌面验证重试": 10,
+      "窄屏实测题面": 10
+    },
+    {
+      "阶段": "启蒙",
+      "题组": "影子配对",
+      "题组编号": "graphic-shadow-match",
+      "题目数": 8,
+      "桌面到达完成": 8,
+      "桌面验证重试": 8,
+      "窄屏实测题面": 8
+    },
+    {
+      "阶段": "启蒙",
+      "题组": "遮挡还原",
+      "题组编号": "graphic-covered-restore",
+      "题目数": 8,
+      "桌面到达完成": 8,
+      "桌面验证重试": 8,
+      "窄屏实测题面": 8
+    },
+    {
+      "阶段": "启蒙",
+      "题组": "局部找整体",
+      "题组编号": "graphic-detail-whole",
+      "题目数": 8,
+      "桌面到达完成": 8,
+      "桌面验证重试": 8,
+      "窄屏实测题面": 8
+    },
+    {
+      "阶段": "启蒙",
+      "题组": "纸片叠叠板",
+      "题组编号": "graphic-layer-overlap",
+      "题目数": 8,
+      "桌面到达完成": 8,
+      "桌面验证重试": 8,
+      "窄屏实测题面": 8
+    },
+    {
+      "阶段": "启蒙",
+      "题组": "图形密码机",
+      "题组编号": "graphic-code-machine",
+      "题目数": 8,
+      "桌面到达完成": 8,
+      "桌面验证重试": 8,
+      "窄屏实测题面": 8
+    },
+    {
+      "阶段": "启蒙",
+      "题组": "缺口补一补",
+      "题组编号": "graphic-gap-close",
+      "题目数": 8,
+      "桌面到达完成": 8,
+      "桌面验证重试": 8,
+      "窄屏实测题面": 8
+    },
+    {
+      "阶段": "探索",
+      "题组": "规则收纳盒",
+      "题组编号": "logic-rule-workshop",
+      "题目数": 6,
+      "桌面到达完成": 6,
+      "桌面验证重试": 0,
+      "窄屏实测题面": 6
+    },
+    {
+      "阶段": "探索",
+      "题组": "线索排排队",
+      "题组编号": "logic-lineup-challenge",
+      "题目数": 6,
+      "桌面到达完成": 6,
+      "桌面验证重试": 0,
+      "窄屏实测题面": 6
+    },
+    {
+      "阶段": "探索",
+      "题组": "图形推理盘",
+      "题组编号": "graphic-rule-grid",
+      "题目数": 6,
+      "桌面到达完成": 6,
+      "桌面验证重试": 0,
+      "窄屏实测题面": 6
+    },
+    {
+      "阶段": "探索",
+      "题组": "记忆摆一摆",
+      "题组编号": "logic-memory-placement",
+      "题目数": 6,
+      "桌面到达完成": 6,
+      "桌面验证重试": 0,
+      "窄屏实测题面": 6
+    },
+    {
+      "阶段": "探索",
+      "题组": "数量结构屋",
+      "题组编号": "explore-counting-cardinality",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 9,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "移一移比多少",
+      "题组编号": "explore-compare-transfer",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 9,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "变了样没变多",
+      "题组编号": "explore-number-conservation",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 9,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "分法找齐了吗",
+      "题组编号": "explore-number-partitions",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 0,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "十的好朋友",
+      "题组编号": "explore-make-break-ten",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 9,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "故事里的未知数",
+      "题组编号": "explore-quantity-stories",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 9,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "分组小管家",
+      "题组编号": "explore-group-share",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 9,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "一样大的那一份",
+      "题组编号": "explore-area-fractions",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 9,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "队伍有多长",
+      "题组编号": "explore-ordinal-queue",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 9,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "单双和数位",
+      "题组编号": "explore-parity-place-value",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 6,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "数列侦探",
+      "题组编号": "explore-number-sequences",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 9,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "图形等量换",
+      "题组编号": "explore-symbol-equations",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 9,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "小小零钱铺",
+      "题组编号": "explore-money-shopping",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 6,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "时钟往前走",
+      "题组编号": "explore-time-elapsed",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 9,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "量一量围一围",
+      "题组编号": "explore-measurement-boundaries",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 9,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "练习日历",
+      "题组编号": "explore-calendar-cycles",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 9,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "分类换个角度",
+      "题组编号": "explore-multi-rule-classification",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 0,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "关系接力",
+      "题组编号": "explore-relations-analogies",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 0,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "线索够不够",
+      "题组编号": "explore-transitive-order",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 3,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "格子里的线索",
+      "题组编号": "explore-constraint-grid",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 0,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "路线设计师",
+      "题组编号": "explore-route-constraints",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 0,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "先后有讲究",
+      "题组编号": "explore-planning-repair",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 0,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "证据说明什么",
+      "题组编号": "explore-evidence-reasoning",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 0,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "学会新规则",
+      "题组编号": "explore-learn-rule-transfer",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 9,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "翻牌小机关",
+      "题组编号": "explore-toggle-state",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 0,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "两位朋友走格子",
+      "题组编号": "explore-multi-agent-movement",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 0,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "棋盘下一步",
+      "题组编号": "explore-board-strategy",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 0,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "小岛连桥",
+      "题组编号": "explore-bridge-networks",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 0,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "图案观察员",
+      "题组编号": "explore-visual-search-match",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 9,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "遮住了什么",
+      "题组编号": "explore-occlusion-texture",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 9,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "行列规律研究",
+      "题组编号": "explore-feature-matrices",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 0,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "标记走格子",
+      "题组编号": "explore-position-transform",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 9,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "转一转照一照",
+      "题组编号": "explore-rotation-reflection",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 9,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "图形合并机",
+      "题组编号": "explore-shape-set-operations",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 9,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "图形金字塔",
+      "题组编号": "explore-recursive-composition",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 3,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "颜色密码运算",
+      "题组编号": "explore-symbolic-color-rules",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 9,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "点线面数清楚",
+      "题组编号": "explore-geometric-counts",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 9,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "哪里可以对折",
+      "题组编号": "explore-symmetry-axes",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 0,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "相碰还是相交",
+      "题组编号": "explore-topology-relations",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 3,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "小黑点的任务",
+      "题组编号": "explore-marker-invariants",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 9,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "多位图形密码",
+      "题组编号": "explore-symbol-codes",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 0,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "拼搭小工坊",
+      "题组编号": "explore-shape-assembly",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 0,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "折开会怎样",
+      "题组编号": "explore-fold-cut",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 6,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "积木的另一面",
+      "题组编号": "explore-solid-views-count",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 3,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "换个方向看左右",
+      "题组编号": "explore-relative-perspective",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 9,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "纸盒六个面",
+      "题组编号": "explore-cube-nets",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 6,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "方格重建师",
+      "题组编号": "explore-grid-copy-reconstruction",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 0,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "谁盖住了谁",
+      "题组编号": "explore-layer-order-planning",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 0,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "看过哪些朋友",
+      "题组编号": "explore-visual-set-memory",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 0,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "位置藏起来",
+      "题组编号": "explore-spatial-memory",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 0,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "顺着记倒着摆",
+      "题组编号": "explore-sequence-memory",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 0,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "听懂再行动",
+      "题组编号": "explore-auditory-instructions",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 0,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "故事留在脑海里",
+      "题组编号": "explore-story-recall",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 3,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "细心搜索员",
+      "题组编号": "explore-attention-search",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 0,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "记规则再出手",
+      "题组编号": "explore-inhibition-switch",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 0,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "声音排队",
+      "题组编号": "explore-sound-rhythm",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 0,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "谁有几个",
+      "题组编号": "explore-relational-quantity-memory",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 0,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "词语有朋友",
+      "题组编号": "explore-vocabulary-relations",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 0,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "把位置说清楚",
+      "题组编号": "explore-describe-relations",
+      "题目数": 3,
+      "桌面到达完成": 3,
+      "桌面验证重试": 0,
+      "窄屏实测题面": 3
+    },
+    {
+      "阶段": "探索",
+      "题组": "故事接起来",
+      "题组编号": "explore-story-sequence-expression",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 0,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "我的解释和办法",
+      "题组编号": "explore-creative-explanation",
+      "题目数": 3,
+      "桌面到达完成": 3,
+      "桌面验证重试": 0,
+      "窄屏实测题面": 3
+    },
+    {
+      "阶段": "探索",
+      "题组": "字音小花园",
+      "题组编号": "explore-character-phonics",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 6,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "英语听一听",
+      "题组编号": "explore-english-listening",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 9,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "英语里的数量位置",
+      "题组编号": "explore-bilingual-concepts",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 9,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "把自己的想法说出来",
+      "题组编号": "explore-conversation-self-expression",
+      "题目数": 3,
+      "桌面到达完成": 3,
+      "桌面验证重试": 0,
+      "窄屏实测题面": 3
+    },
+    {
+      "阶段": "探索",
+      "题组": "用品放对地方",
+      "题组编号": "explore-everyday-classification",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 0,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "变化观察册",
+      "题组编号": "explore-nature-growth",
+      "题目数": 9,
+      "桌面到达完成": 9,
+      "桌面验证重试": 0,
+      "窄屏实测题面": 9
+    },
+    {
+      "阶段": "探索",
+      "题组": "一起做小实验",
+      "题组编号": "explore-science-experiments",
+      "题目数": 3,
+      "桌面到达完成": 3,
+      "桌面验证重试": 0,
+      "窄屏实测题面": 3
+    },
+    {
+      "阶段": "探索",
+      "题组": "生活里的判断",
+      "题组编号": "explore-senses-social-rules",
+      "题目数": 3,
+      "桌面到达完成": 3,
+      "桌面验证重试": 0,
+      "窄屏实测题面": 3
+    },
+    {
+      "阶段": "探索",
+      "题组": "节日和生活发现",
+      "题组编号": "explore-culture-world",
+      "题目数": 3,
+      "桌面到达完成": 3,
+      "桌面验证重试": 0,
+      "窄屏实测题面": 3
+    },
+    {
+      "阶段": "探索",
+      "题组": "小手和身体挑战",
+      "题组编号": "explore-fine-motor-action",
+      "题目数": 3,
+      "桌面到达完成": 3,
+      "桌面验证重试": 0,
+      "窄屏实测题面": 3
+    },
+    {
+      "阶段": "探索",
+      "题组": "见面与告别",
+      "题组编号": "everyday-english-greetings",
+      "题目数": 4,
+      "桌面到达完成": 4,
+      "桌面验证重试": 2,
+      "窄屏实测题面": 4
+    },
+    {
+      "阶段": "探索",
+      "题组": "谢谢与抱歉",
+      "题组编号": "everyday-english-kind-words",
+      "题目数": 4,
+      "桌面到达完成": 4,
+      "桌面验证重试": 2,
+      "窄屏实测题面": 4
+    },
+    {
+      "阶段": "探索",
+      "题组": "我需要帮助",
+      "题组编号": "everyday-english-asking",
+      "题目数": 4,
+      "桌面到达完成": 4,
+      "桌面验证重试": 2,
+      "窄屏实测题面": 4
+    }
+  ]
+}

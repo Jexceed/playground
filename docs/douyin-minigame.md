@@ -9,7 +9,7 @@
   陌生人交流和儿童自由输入。
 
 小游戏使用从正式题库生成的离线快照，不复制另一套手写题目。当前资源闭包
-包含 19 张图片和 338 条本地普通话语音，共 357 个文件、9.56 MB。Cocos 功能
+包含 16 张图片和 343 条本地普通话语音，共 359 个文件、9.26 MiB。Cocos 功能
 裁剪只保留 2D、UI、遮罩、Graphics、音频和 WebGL 等必需模块。
 
 抖音快照会保留 1200×675 PNG 场景图，并把语音副本转为 32 kbps、24 kHz、
@@ -52,7 +52,7 @@ pnpm audit:voice-media
 的空包；随后验证构建产物中的 AppID、横屏声明、主场景、语音、图片、启动钩子
 和体积。开发者工具点过“编译”后，`pnpm test:douyin-minigame:devtools` 会读取
 工具编译日志，要求当前构建得到成功结果，避免只打开项目却没有编译的假通过。
-本次结果为 761 个文件、338 条 MP3、19 张 PNG、12.01 MB，输出目录为
+首次冷启动构建的存档结果为 761 个文件、338 条 MP3、19 张 PNG、12.01 MB，输出目录为
 `doyingame/build/bytedance-mini-game/`。
 
 项目构建模板基于 Cocos Creator 3.8.8 官方 `bytedance-mini-game/game.ejs`，只

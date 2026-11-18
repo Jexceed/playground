@@ -1,0 +1,7298 @@
+{
+  "base": "2053cb74b185",
+  "fields": [
+    {
+      "ids": [
+        "math-compose-decompose-2"
+      ],
+      "field": "prompt",
+      "current": "49b48c6543cb3fca2e202193fd81a6bfee39167cead716d1b67a1913f0115aaa",
+      "previous": "2 个积木和 1 个积木加起来是几个？"
+    },
+    {
+      "ids": [
+        "math-compose-decompose-2",
+        "math-compose-decompose-4",
+        "math-compose-decompose-6",
+        "math-compose-decompose-8",
+        "math-compose-decompose-11",
+        "math-compose-decompose-13",
+        "math-compose-decompose-15",
+        "math-compose-decompose-17",
+        "math-compose-decompose-19",
+        "math-compose-decompose-21",
+        "math-compose-decompose-23",
+        "math-compose-decompose-27"
+      ],
+      "field": "instruction",
+      "current": "7f265a53170219ee445ea943848e590ce1c0f8d5be1e3567a67446a9ae3719bc",
+      "previous": "先看两堆，再加起来数。"
+    },
+    {
+      "ids": [
+        "math-compose-decompose-2"
+      ],
+      "field": "visualGroups",
+      "current": "311ce5836cb9f7075379366c671e9c2ea59ed67148c4325e754f30b12ed5c676",
+      "previous": [
+        {
+          "label": "第一堆",
+          "items": [
+            "🧱",
+            "🧱"
+          ],
+          "layout": "counting"
+        },
+        {
+          "label": "第二堆",
+          "items": [
+            "🧱"
+          ],
+          "layout": "counting"
+        }
+      ]
+    },
+    {
+      "ids": [
+        "math-compose-decompose-2"
+      ],
+      "field": "success",
+      "current": "6d34724c9f455e4f49cbe41d1ace004e7cd42324e9cd7973e0e8db176b8bec75",
+      "previous": "2 和 1 加起来是 3。"
+    },
+    {
+      "ids": [
+        "math-compose-decompose-2",
+        "math-compose-decompose-4",
+        "math-compose-decompose-6",
+        "math-compose-decompose-8",
+        "math-compose-decompose-11",
+        "math-compose-decompose-13",
+        "math-compose-decompose-15",
+        "math-compose-decompose-17",
+        "math-compose-decompose-19",
+        "math-compose-decompose-21",
+        "math-compose-decompose-23",
+        "math-compose-decompose-27"
+      ],
+      "field": "retry",
+      "current": "c18ac7dd1af2d0a41a2b230b5c619d56f06434049d9719ace452df38dbf3d4ad",
+      "previous": "把两堆放在一起，从头数一遍。"
+    },
+    {
+      "ids": [
+        "math-compose-decompose-2",
+        "math-compose-decompose-4",
+        "math-compose-decompose-6",
+        "math-compose-decompose-8",
+        "math-compose-decompose-11",
+        "math-compose-decompose-13",
+        "math-compose-decompose-15",
+        "math-compose-decompose-17",
+        "math-compose-decompose-19",
+        "math-compose-decompose-21",
+        "math-compose-decompose-23",
+        "math-compose-decompose-27"
+      ],
+      "field": "parentPrompt",
+      "current": "8d8fd030a92a77bb8f96e3882574620242cd02c38cee82fe6bcf50f8453f8374",
+      "previous": "问她：还能不能换一种分法，加起来也是这个数？"
+    },
+    {
+      "ids": [
+        "math-compose-decompose-4"
+      ],
+      "field": "prompt",
+      "current": "e3a068479bc40be8aba7203b37a6923be84ab8fbb8a010c12667b450eda13fad",
+      "previous": "2 个积木和 2 个积木加起来是几个？"
+    },
+    {
+      "ids": [
+        "math-compose-decompose-4"
+      ],
+      "field": "visualGroups",
+      "current": "466b57168d8c41f2c7db4a9cbb5da427804cc6209be1f9f722bcd556bef4f194",
+      "previous": [
+        {
+          "label": "第一堆",
+          "items": [
+            "🧱",
+            "🧱"
+          ],
+          "layout": "counting"
+        },
+        {
+          "label": "第二堆",
+          "items": [
+            "🧱",
+            "🧱"
+          ],
+          "layout": "counting"
+        }
+      ]
+    },
+    {
+      "ids": [
+        "math-compose-decompose-4"
+      ],
+      "field": "success",
+      "current": "dd457d677fa751281c3ccdba567974cdb700f69518d92aeed4e097112665e407",
+      "previous": "2 和 2 加起来是 4。"
+    },
+    {
+      "ids": [
+        "math-compose-decompose-6"
+      ],
+      "field": "prompt",
+      "current": "577b14774d29d57f841f19ee4b614abe6abcabb1760d8eb5d21c763cf645a737",
+      "previous": "1 个积木和 4 个积木加起来是几个？"
+    },
+    {
+      "ids": [
+        "math-compose-decompose-6"
+      ],
+      "field": "visualGroups",
+      "current": "354609a16f5193e1a976d2d254e499f70a16ae0cf6fb304ac41be4e212e88e75",
+      "previous": [
+        {
+          "label": "第一堆",
+          "items": [
+            "🧱"
+          ],
+          "layout": "counting"
+        },
+        {
+          "label": "第二堆",
+          "items": [
+            "🧱",
+            "🧱",
+            "🧱",
+            "🧱"
+          ],
+          "layout": "counting"
+        }
+      ]
+    },
+    {
+      "ids": [
+        "math-compose-decompose-6"
+      ],
+      "field": "success",
+      "current": "e2a5d0373c276bc0ed9acae9d7080ce5237f762a8bda947ae69cdceb0f7bf503",
+      "previous": "1 和 4 加起来是 5。"
+    },
+    {
+      "ids": [
+        "math-compose-decompose-8"
+      ],
+      "field": "level",
+      "current": "6df85bf3861d5f8e8c305de91a9d84ec47e32da29f3946ca02db13dbdc80f21f",
+      "previous": "L4"
+    },
+    {
+      "ids": [
+        "math-compose-decompose-8"
+      ],
+      "field": "prompt",
+      "current": "6073fa81bf6fdb4a2109ececde1d26151493235c8130deb714105a07c6c521da",
+      "previous": "3 个积木和 2 个积木加起来是几个？"
+    },
+    {
+      "ids": [
+        "math-compose-decompose-8"
+      ],
+      "field": "visualGroups",
+      "current": "3d1ae8483c1e2d02f95c4e702ec1f61e398b58d5a8227c2c78e9c08e19277084",
+      "previous": [
+        {
+          "label": "第一堆",
+          "items": [
+            "🧱",
+            "🧱",
+            "🧱"
+          ],
+          "layout": "counting"
+        },
+        {
+          "label": "第二堆",
+          "items": [
+            "🧱",
+            "🧱"
+          ],
+          "layout": "counting"
+        }
+      ]
+    },
+    {
+      "ids": [
+        "math-compose-decompose-8"
+      ],
+      "field": "success",
+      "current": "d8fcee1938c60c91069b445ba458823a9d83bcdfdd6e31248b3f6c19117d9f46",
+      "previous": "3 和 2 加起来是 5。"
+    },
+    {
+      "ids": [
+        "math-compose-decompose-8"
+      ],
+      "field": "difficultyNote",
+      "current": "1d8e3b764a4ea7173863f6c43911e229402615a0505ea0faeff99ca34b1dbfda",
+      "previous": "中等：需要两步观察或简单比较，不能只看一个显眼线索。 比较 2 组图卡，找共同点、差异或缺失项。主要训练合成分解。"
+    },
+    {
+      "ids": [
+        "math-compose-decompose-11"
+      ],
+      "field": "prompt",
+      "current": "a2aa35facdf44f2648a402b6c34cc63eb746a158dcec060b1148a8d8da839999",
+      "previous": "2 个积木和 4 个积木加起来是几个？"
+    },
+    {
+      "ids": [
+        "math-compose-decompose-11"
+      ],
+      "field": "visualGroups",
+      "current": "7f01471ab232f301a441603f023090671f900ad9068f7272c6b4d21e4c6e77a9",
+      "previous": [
+        {
+          "label": "第一堆",
+          "items": [
+            "🧱",
+            "🧱"
+          ],
+          "layout": "counting"
+        },
+        {
+          "label": "第二堆",
+          "items": [
+            "🧱",
+            "🧱",
+            "🧱",
+            "🧱"
+          ],
+          "layout": "counting"
+        }
+      ]
+    },
+    {
+      "ids": [
+        "math-compose-decompose-11"
+      ],
+      "field": "success",
+      "current": "641dbc3efc21b0a73748ec06836b70ea49921e98db964e1f3f89f159ed4818c5",
+      "previous": "2 和 4 加起来是 6。"
+    },
+    {
+      "ids": [
+        "math-compose-decompose-13"
+      ],
+      "field": "prompt",
+      "current": "03d54c320204223d47bdf66c244fa2e1fd1e73904f430ec8e4f2ec920e04a5ea",
+      "previous": "4 个积木和 2 个积木加起来是几个？"
+    },
+    {
+      "ids": [
+        "math-compose-decompose-13"
+      ],
+      "field": "visualGroups",
+      "current": "6116f346b58a76c58cf0308591c8ad00630a81e4d5a0bf88193683ea14c30cce",
+      "previous": [
+        {
+          "label": "第一堆",
+          "items": [
+            "🧱",
+            "🧱",
+            "🧱",
+            "🧱"
+          ],
+          "layout": "counting"
+        },
+        {
+          "label": "第二堆",
+          "items": [
+            "🧱",
+            "🧱"
+          ],
+          "layout": "counting"
+        }
+      ]
+    },
+    {
+      "ids": [
+        "math-compose-decompose-13"
+      ],
+      "field": "success",
+      "current": "c4e8e9cf066d7054f9782acb314a81311152ce7c95aca88a23da32db3f6d9dd6",
+      "previous": "4 和 2 加起来是 6。"
+    },
+    {
+      "ids": [
+        "math-compose-decompose-15"
+      ],
+      "field": "prompt",
+      "current": "9989166b68035b13b4ac4b5c69ad8350d8bedd8175366967f85cac95b0e5eeb9",
+      "previous": "1 个积木和 6 个积木加起来是几个？"
+    },
+    {
+      "ids": [
+        "math-compose-decompose-15"
+      ],
+      "field": "visualGroups",
+      "current": "85e5daa77dae2352ac4399ccbcace131a0708675e16127df8840c3609f0e9c6f",
+      "previous": [
+        {
+          "label": "第一堆",
+          "items": [
+            "🧱"
+          ],
+          "layout": "counting"
+        },
+        {
+          "label": "第二堆",
+          "items": [
+            "🧱",
+            "🧱",
+            "🧱",
+            "🧱",
+            "🧱",
+            "🧱"
+          ],
+          "layout": "counting"
+        }
+      ]
+    },
+    {
+      "ids": [
+        "math-compose-decompose-15"
+      ],
+      "field": "success",
+      "current": "bc65de9176d08fe8a38cd4c84c71a5b24d74e93f46329d72aa753f69917ddb1f",
+      "previous": "1 和 6 加起来是 7。"
+    },
+    {
+      "ids": [
+        "math-compose-decompose-17"
+      ],
+      "field": "prompt",
+      "current": "a20d8c9845296f9745f7707ffa3ac3b99498e57a28b5dec72cd236bb6f97be14",
+      "previous": "3 个积木和 4 个积木加起来是几个？"
+    },
+    {
+      "ids": [
+        "math-compose-decompose-17"
+      ],
+      "field": "visualGroups",
+      "current": "720d716754e0ff507322ee5bba6967e8124497fc5b1f309a62a4cb350be50a83",
+      "previous": [
+        {
+          "label": "第一堆",
+          "items": [
+            "🧱",
+            "🧱",
+            "🧱"
+          ],
+          "layout": "counting"
+        },
+        {
+          "label": "第二堆",
+          "items": [
+            "🧱",
+            "🧱",
+            "🧱",
+            "🧱"
+          ],
+          "layout": "counting"
+        }
+      ]
+    },
+    {
+      "ids": [
+        "math-compose-decompose-17"
+      ],
+      "field": "success",
+      "current": "ec393b02acf0d41ede9fdf1e56c118500b6a9f4e87170662ba45a9f3a772fa6f",
+      "previous": "3 和 4 加起来是 7。"
+    },
+    {
+      "ids": [
+        "math-compose-decompose-19"
+      ],
+      "field": "prompt",
+      "current": "7e9b248b88a552a0684c15bd6406843a0e976606212b4a8e2e4af8e0fd13a655",
+      "previous": "5 个积木和 2 个积木加起来是几个？"
+    },
+    {
+      "ids": [
+        "math-compose-decompose-19"
+      ],
+      "field": "visualGroups",
+      "current": "c6f4454c2e025efd7483eb03797b032092fb6c34c715bafd3a8dd4755ac7e4cc",
+      "previous": [
+        {
+          "label": "第一堆",
+          "items": [
+            "🧱",
+            "🧱",
+            "🧱",
+            "🧱",
+            "🧱"
+          ],
+          "layout": "counting"
+        },
+        {
+          "label": "第二堆",
+          "items": [
+            "🧱",
+            "🧱"
+          ],
+          "layout": "counting"
+        }
+      ]
+    },
+    {
+      "ids": [
+        "math-compose-decompose-19"
+      ],
+      "field": "success",
+      "current": "d2b2643f95a3217314f43fd32e4e162cfb2f11880ad366d33fa60115be90e546",
+      "previous": "5 和 2 加起来是 7。"
+    },
+    {
+      "ids": [
+        "math-compose-decompose-21"
+      ],
+      "field": "prompt",
+      "current": "8bc95769dc1ab909847b4db651b7f476c5169fa10def2e4f76619801f084be49",
+      "previous": "2 个积木和 6 个积木加起来是几个？"
+    },
+    {
+      "ids": [
+        "math-compose-decompose-21"
+      ],
+      "field": "visualGroups",
+      "current": "a47c353a63e4063d7f268443edac1222d5dc52fee611c310478b26f5bbddc6e3",
+      "previous": [
+        {
+          "label": "第一堆",
+          "items": [
+            "🧱",
+            "🧱"
+          ],
+          "layout": "counting"
+        },
+        {
+          "label": "第二堆",
+          "items": [
+            "🧱",
+            "🧱",
+            "🧱",
+            "🧱",
+            "🧱",
+            "🧱"
+          ],
+          "layout": "counting"
+        }
+      ]
+    },
+    {
+      "ids": [
+        "math-compose-decompose-21"
+      ],
+      "field": "success",
+      "current": "562243bdf171a2df4c00f56d5c076af9d1f1de09b41a1c65279da89b38c58419",
+      "previous": "2 和 6 加起来是 8。"
+    },
+    {
+      "ids": [
+        "math-compose-decompose-23"
+      ],
+      "field": "prompt",
+      "current": "6946ce393db65ae5afe77fc6fbc25e9e35a21a98e5228ec55f2616de892e5098",
+      "previous": "4 个积木和 4 个积木加起来是几个？"
+    },
+    {
+      "ids": [
+        "math-compose-decompose-23"
+      ],
+      "field": "visualGroups",
+      "current": "e33efcba792734974c1626945907a5a60e8469d7e8e8533167d8260bbecef1ae",
+      "previous": [
+        {
+          "label": "第一堆",
+          "items": [
+            "🧱",
+            "🧱",
+            "🧱",
+            "🧱"
+          ],
+          "layout": "counting"
+        },
+        {
+          "label": "第二堆",
+          "items": [
+            "🧱",
+            "🧱",
+            "🧱",
+            "🧱"
+          ],
+          "layout": "counting"
+        }
+      ]
+    },
+    {
+      "ids": [
+        "math-compose-decompose-23"
+      ],
+      "field": "success",
+      "current": "a186e0ba4196ce85b45d8b716dcd4654240d9ca5747a111792f29d20a55f4bf4",
+      "previous": "4 和 4 加起来是 8。"
+    },
+    {
+      "ids": [
+        "math-compose-decompose-27"
+      ],
+      "field": "prompt",
+      "current": "03c473c8e1ab691187a15d0219a22af8969066de169168239f115850502c6285",
+      "previous": "4 个积木和 5 个积木加起来是几个？"
+    },
+    {
+      "ids": [
+        "math-compose-decompose-27"
+      ],
+      "field": "visualGroups",
+      "current": "546b14f77aa755a0fa10d0b5d45f29354329e903437281852f958cfd1f874992",
+      "previous": [
+        {
+          "label": "第一堆",
+          "items": [
+            "🧱",
+            "🧱",
+            "🧱",
+            "🧱"
+          ],
+          "layout": "counting"
+        },
+        {
+          "label": "第二堆",
+          "items": [
+            "🧱",
+            "🧱",
+            "🧱",
+            "🧱",
+            "🧱"
+          ],
+          "layout": "counting"
+        }
+      ]
+    },
+    {
+      "ids": [
+        "math-compose-decompose-27"
+      ],
+      "field": "success",
+      "current": "bf1c59a61616b54e928a5c9c2f68a5679101cf04284409a47bf7f9eacd5f0a4e",
+      "previous": "4 和 5 加起来是 9。"
+    },
+    {
+      "ids": [
+        "math-fair-share-1",
+        "math-fair-share-2",
+        "math-fair-share-3",
+        "math-fair-share-4",
+        "math-fair-share-5",
+        "math-fair-share-6",
+        "math-fair-share-7",
+        "math-fair-share-8",
+        "math-fair-share-9"
+      ],
+      "field": "parentPrompt",
+      "current": "7d28b2b6087907fef9753daeb128cbe8c767b860e89cbad0fbf9c6ffccb7c40b",
+      "previous": "请她用手指做轮流分的动作。"
+    },
+    {
+      "ids": [
+        "math-clock-time-9",
+        "math-clock-time-10",
+        "math-clock-time-11",
+        "math-clock-time-12"
+      ],
+      "field": "prompt",
+      "current": "ecd333e44cdd9c14258e919bd68c423d3e1dcd4362c77957b6b851a62d0fdbae",
+      "previous": "看图和时钟，电子钟应该显示哪个时间？"
+    },
+    {
+      "ids": [
+        "math-clock-time-9"
+      ],
+      "field": "instruction",
+      "current": "567d64915088dbb0f403756e6ec85f149fd71e8e7008067e85991e690a41c226",
+      "previous": "图里在吃早餐。先读钟面，再结合这个活动选择电子钟时间。"
+    },
+    {
+      "ids": [
+        "math-clock-time-10"
+      ],
+      "field": "instruction",
+      "current": "d5563424497061e084dfff955981c151ae4beeeb61800aad012bd4449247db3d",
+      "previous": "图里在吃午饭后准备睡午觉。先读钟面，再结合这个活动选择电子钟时间。"
+    },
+    {
+      "ids": [
+        "math-clock-time-11"
+      ],
+      "field": "instruction",
+      "current": "b746a8dd3d1677b2cca370ad0a2fbecc3c1cc9cc6512c7d9b031d829d076e220",
+      "previous": "图里在午睡后去玩。先读钟面，再结合这个活动选择电子钟时间。"
+    },
+    {
+      "ids": [
+        "math-clock-time-12"
+      ],
+      "field": "instruction",
+      "current": "ceb8f7f9ef572b2fdefb200d77985b708b5010b8f3b4d52be9dc4594ace11b4d",
+      "previous": "图里在吃完晚饭准备洗澡。先读钟面，再结合这个活动选择电子钟时间。"
+    },
+    {
+      "ids": [
+        "logic-condition-detective-3"
+      ],
+      "field": "prompt",
+      "current": "0714b583c423d1f3a9e33da84dbf690ea7af23ea07ad7f8f6a075094c9b4a6d9",
+      "previous": "行人绿灯亮了，车辆已停、路面安全。和大人一起可以做什么？"
+    },
+    {
+      "ids": [
+        "logic-condition-detective-3"
+      ],
+      "field": "instruction",
+      "current": "20ac653fc6440d46b21caa925f01ba33dd7a30083cfa8b2cd5cebab2b6002e3a",
+      "previous": "条件满足了，再选择行动。"
+    },
+    {
+      "ids": [
+        "logic-condition-detective-3"
+      ],
+      "field": "choices",
+      "current": "fa157e95f7c7afab6d4ab4190675146622943bd3aa2922ac20fb2089fb3db3a5",
+      "previous": [
+        {
+          "label": "继续等着",
+          "value": "keep-waiting"
+        },
+        {
+          "label": "等红灯再走",
+          "value": "wait-red"
+        },
+        {
+          "label": "走过去",
+          "value": "walk"
+        }
+      ]
+    },
+    {
+      "ids": [
+        "logic-condition-detective-3"
+      ],
+      "field": "parentPrompt",
+      "current": "898fe8c3c134015195279572cc70c29f98d674ace9e984625f4bda6e6a419fa0",
+      "previous": "问她：条件满足以后，动作会不会改变？"
+    },
+    {
+      "ids": [
+        "logic-fix-plan-3"
+      ],
+      "field": "prompt",
+      "current": "de77d220d6729a428289bbdfc13eb092702fd319d6d30ba7b6412a5112bf865d",
+      "previous": "行人绿灯亮了，大人已确认车辆停稳、路面安全，接下来可以怎么做？"
+    },
+    {
+      "ids": [
+        "logic-fix-plan-3"
+      ],
+      "field": "instruction",
+      "current": "5f42103113fb2484a1d412bc661cd9fea164bfa246be424cd0db7ee13a6a1c70",
+      "previous": "条件已经满足时，要改变动作。"
+    },
+    {
+      "ids": [
+        "logic-fix-plan-3"
+      ],
+      "field": "difficultyNote",
+      "current": "ef7dd59b9737150a9d62bf2a4770d08d491fbee343a233cda33dc05384f50ab8",
+      "previous": "条件满足后的行动修正：不只是停，也要在合适时行动。"
+    },
+    {
+      "ids": [
+        "logic-fix-plan-3"
+      ],
+      "field": "sequence",
+      "current": "cae24402aaea1a8f4e6e4819de11cde7d317e55fb81b9e1261b10588e874200b",
+      "previous": [
+        "路口",
+        "🟢",
+        "停"
+      ]
+    },
+    {
+      "ids": [
+        "logic-fix-plan-3"
+      ],
+      "field": "choices",
+      "current": "c15c474899e1537aae9c6155882862820f0edd42739cd19232bcb76a46476d44",
+      "previous": [
+        {
+          "label": "继续等着",
+          "value": "keep-waiting"
+        },
+        {
+          "label": "改成走过去",
+          "value": "walk"
+        },
+        {
+          "label": "等红灯再走",
+          "value": "wait-red"
+        }
+      ]
+    },
+    {
+      "ids": [
+        "logic-fix-plan-3"
+      ],
+      "field": "retry",
+      "current": "0ae1c193f509d4b2b81c5f6e10a250aeb47ae1a527abf0deefac3b1b23637445",
+      "previous": "绿灯和红灯的动作不一样。"
+    },
+    {
+      "ids": [
+        "logic-fix-plan-3"
+      ],
+      "field": "parentPrompt",
+      "current": "abe2a94062ddd35f8a50a0478d27dd4dbc651b385cda845c9ee4a93778ddf7f2",
+      "previous": "问她：什么时候要停？什么时候可以走？"
+    },
+    {
+      "ids": [
+        "logic-same-kind-detective-7"
+      ],
+      "field": "prompt",
+      "current": "de55770f24140d5832575ae6dc85fe3214d249ac8bf57d286ca14eb6b0bdc9e8",
+      "previous": "哪一个和其他几个最不一样？"
+    },
+    {
+      "ids": [
+        "logic-same-kind-detective-7",
+        "logic-same-kind-detective-8",
+        "logic-same-kind-detective-9",
+        "logic-same-kind-detective-10",
+        "logic-same-kind-detective-11",
+        "logic-same-kind-detective-12"
+      ],
+      "field": "instruction",
+      "current": "08ac1b85d9289e5a8012705390a8b3ba22688091dbebfd214ee88387e0ccf026",
+      "previous": "用排除法，先找多数有什么共同点。"
+    },
+    {
+      "ids": [
+        "logic-same-kind-detective-7",
+        "logic-same-kind-detective-8",
+        "logic-same-kind-detective-9",
+        "logic-same-kind-detective-10",
+        "logic-same-kind-detective-11",
+        "logic-same-kind-detective-12"
+      ],
+      "field": "parentPrompt",
+      "current": "8ed155de1529326db30a479de393ba4ad6edc7dd6d21adc67cb3584806dfef15",
+      "previous": "问她：你先把哪三个放在一起？为什么剩下它？"
+    },
+    {
+      "ids": [
+        "logic-same-kind-detective-8"
+      ],
+      "field": "prompt",
+      "current": "8060b37a8c2960c999e555430496c4ab61020eeaa0c6b490ca4e273b658026e9",
+      "previous": "哪一个和其他几个最不一样？"
+    },
+    {
+      "ids": [
+        "logic-same-kind-detective-9"
+      ],
+      "field": "prompt",
+      "current": "2f33a2f8ac5401bf8896b75ccf11b1e3919b53ef2a96ca0a50e4bbe629e4c4ad",
+      "previous": "哪一个和其他几个最不一样？"
+    },
+    {
+      "ids": [
+        "logic-same-kind-detective-10"
+      ],
+      "field": "prompt",
+      "current": "2b28b7d70a83daeb983e1e819010d7f59d5659345fabe9f7f359f21d38772438",
+      "previous": "哪一个和其他几个最不一样？"
+    },
+    {
+      "ids": [
+        "logic-same-kind-detective-11"
+      ],
+      "field": "prompt",
+      "current": "f13d02f30739f74f83b6837a2fb2a0c3d3d8ffc8928cd271597a0e10a8d5dd80",
+      "previous": "哪一个和其他几个最不一样？"
+    },
+    {
+      "ids": [
+        "logic-same-kind-detective-12"
+      ],
+      "field": "prompt",
+      "current": "17aa565531db8d5eba389de5737e5a3bac69b09a85dc2b878d0477be2fc66e1c",
+      "previous": "哪一个和其他几个最不一样？"
+    },
+    {
+      "ids": [
+        "grid-blank-is-a-card",
+        "explore-number-partitions-1",
+        "explore-number-partitions-2",
+        "explore-number-partitions-3",
+        "explore-relations-analogies-4",
+        "explore-relations-analogies-5",
+        "explore-relations-analogies-6",
+        "explore-relations-analogies-7",
+        "explore-relations-analogies-8",
+        "explore-relations-analogies-9",
+        "explore-fold-cut-1",
+        "explore-attention-search-1",
+        "explore-attention-search-2",
+        "explore-attention-search-3",
+        "explore-attention-search-4",
+        "explore-attention-search-5",
+        "explore-attention-search-6",
+        "explore-attention-search-7",
+        "explore-attention-search-8",
+        "explore-attention-search-9",
+        "explore-relational-quantity-memory-1",
+        "explore-relational-quantity-memory-2",
+        "explore-relational-quantity-memory-3",
+        "explore-relational-quantity-memory-4",
+        "explore-relational-quantity-memory-5",
+        "explore-relational-quantity-memory-6",
+        "explore-relational-quantity-memory-7",
+        "explore-relational-quantity-memory-8",
+        "explore-relational-quantity-memory-9",
+        "explore-vocabulary-relations-7",
+        "explore-vocabulary-relations-8",
+        "explore-vocabulary-relations-9",
+        "explore-bilingual-concepts-7",
+        "explore-bilingual-concepts-8",
+        "explore-bilingual-concepts-9",
+        "explore-nature-growth-7",
+        "explore-culture-world-1",
+        "explore-culture-world-3"
+      ],
+      "field": "revision",
+      "current": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35",
+      "previous": 1
+    },
+    {
+      "ids": [
+        "grid-blank-is-a-card"
+      ],
+      "field": "cells",
+      "current": "41deccdb46d6e54b020a83e9fbcd5a221fc2268d5ad05a7868920f73d51c8f8b",
+      "previous": [
+        "blue-circle",
+        null,
+        "blank-card",
+        null,
+        "blank-card",
+        null,
+        "blank-card",
+        null,
+        "blue-square"
+      ]
+    },
+    {
+      "ids": [
+        "explore-counting-cardinality-1",
+        "explore-counting-cardinality-2",
+        "explore-counting-cardinality-3",
+        "explore-counting-cardinality-4",
+        "explore-counting-cardinality-5",
+        "explore-counting-cardinality-6",
+        "explore-counting-cardinality-7",
+        "explore-counting-cardinality-8",
+        "explore-counting-cardinality-9"
+      ],
+      "field": "retry",
+      "current": "e4dfc785e01ea70a0446a2a67dd35b130acc6f3c03bb7f4049bbea76484f6c8a",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-compare-transfer-1",
+        "explore-compare-transfer-2",
+        "explore-compare-transfer-3"
+      ],
+      "field": "retry",
+      "current": "c634834a9b8bd23f2dbc966243ffcad052c902651f12189dc6acaea3805d9228",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-compare-transfer-4",
+        "explore-compare-transfer-5",
+        "explore-compare-transfer-6"
+      ],
+      "field": "retry",
+      "current": "b0b8c83f1704d4814a705a39c3086f65c0133babb51d461bd7b487561dd8451e",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-compare-transfer-7",
+        "explore-compare-transfer-8",
+        "explore-compare-transfer-9"
+      ],
+      "field": "retry",
+      "current": "05ab1c7649c578b23188d7ee6173302d47edda4ef63c38af663f3304dfa32ecb",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-number-conservation-1",
+        "explore-number-conservation-2",
+        "explore-number-conservation-3"
+      ],
+      "field": "retry",
+      "current": "2ece5c38eff3fe451f013e8f6d232e23efeaf8790dfdc147d1f217c34eef8cf1",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-number-conservation-4",
+        "explore-number-conservation-5",
+        "explore-number-conservation-6"
+      ],
+      "field": "retry",
+      "current": "66169a58b1d89f83ba4f6c836d22d89c015a3bee4d0beae85bd9cd719c68c3c0",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-number-conservation-7",
+        "explore-number-conservation-8",
+        "explore-number-conservation-9"
+      ],
+      "field": "retry",
+      "current": "41e639c3bfdfe121b7e57a1da4fe6be85d4a63f1d7533dba1028ad507be7e529",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-number-partitions-1"
+      ],
+      "field": "tokens",
+      "current": "6191f34fc132295d16594652d5c988c2d16b430d20ccbc39fde0fd2201490e72",
+      "previous": [
+        {
+          "id": "p0",
+          "label": "左0右5",
+          "image": {
+            "src": "/images/items/exploration/diagram-a9dc4c0a.png",
+            "alt": "左0右5",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 0,
+            "right": 5
+          }
+        },
+        {
+          "id": "p1",
+          "label": "左1右4",
+          "image": {
+            "src": "/images/items/exploration/diagram-242dbffb.png",
+            "alt": "左1右4",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 1,
+            "right": 4
+          }
+        },
+        {
+          "id": "p2",
+          "label": "左2右3",
+          "image": {
+            "src": "/images/items/exploration/diagram-b314b407.png",
+            "alt": "左2右3",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 2,
+            "right": 3
+          }
+        },
+        {
+          "id": "p3",
+          "label": "左3右2",
+          "image": {
+            "src": "/images/items/exploration/diagram-adf20900.png",
+            "alt": "左3右2",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 3,
+            "right": 2
+          }
+        },
+        {
+          "id": "p4",
+          "label": "左4右1",
+          "image": {
+            "src": "/images/items/exploration/diagram-f6d24565.png",
+            "alt": "左4右1",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 4,
+            "right": 1
+          }
+        },
+        {
+          "id": "p5",
+          "label": "左5右0",
+          "image": {
+            "src": "/images/items/exploration/diagram-dc6fb202.png",
+            "alt": "左5右0",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 5,
+            "right": 0
+          }
+        },
+        {
+          "id": "p6",
+          "label": "左5右1",
+          "image": {
+            "src": "/images/items/exploration/diagram-b6abfd8b.png",
+            "alt": "左5右1",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 5,
+            "right": 1
+          }
+        }
+      ]
+    },
+    {
+      "ids": [
+        "explore-number-partitions-2"
+      ],
+      "field": "tokens",
+      "current": "b67f0cccfac32f753df2e15b685c92e8b796b1a34082a8ac042110ad50e487b0",
+      "previous": [
+        {
+          "id": "p0",
+          "label": "左0右6",
+          "image": {
+            "src": "/images/items/exploration/diagram-c7227e0.png",
+            "alt": "左0右6",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 0,
+            "right": 6
+          }
+        },
+        {
+          "id": "p1",
+          "label": "左1右5",
+          "image": {
+            "src": "/images/items/exploration/diagram-b76fccab.png",
+            "alt": "左1右5",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 1,
+            "right": 5
+          }
+        },
+        {
+          "id": "p2",
+          "label": "左2右4",
+          "image": {
+            "src": "/images/items/exploration/diagram-6e2a7544.png",
+            "alt": "左2右4",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 2,
+            "right": 4
+          }
+        },
+        {
+          "id": "p3",
+          "label": "左3右3",
+          "image": {
+            "src": "/images/items/exploration/diagram-d5da75e0.png",
+            "alt": "左3右3",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 3,
+            "right": 3
+          }
+        },
+        {
+          "id": "p4",
+          "label": "左4右2",
+          "image": {
+            "src": "/images/items/exploration/diagram-5118c747.png",
+            "alt": "左4右2",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 4,
+            "right": 2
+          }
+        },
+        {
+          "id": "p5",
+          "label": "左5右1",
+          "image": {
+            "src": "/images/items/exploration/diagram-b6abfd8b.png",
+            "alt": "左5右1",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 5,
+            "right": 1
+          }
+        },
+        {
+          "id": "p6",
+          "label": "左6右0",
+          "image": {
+            "src": "/images/items/exploration/diagram-c22fa94d.png",
+            "alt": "左6右0",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 6,
+            "right": 0
+          }
+        },
+        {
+          "id": "p7",
+          "label": "左6右1",
+          "image": {
+            "src": "/images/items/exploration/diagram-a8d3cfec.png",
+            "alt": "左6右1",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 6,
+            "right": 1
+          }
+        }
+      ]
+    },
+    {
+      "ids": [
+        "explore-number-partitions-3"
+      ],
+      "field": "tokens",
+      "current": "c014f1ce6ef35f3b170d28132bd086817fb2bc4e864c017706f1b70425421f43",
+      "previous": [
+        {
+          "id": "p0",
+          "label": "左0右7",
+          "image": {
+            "src": "/images/items/exploration/diagram-e1eb0675.png",
+            "alt": "左0右7",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 0,
+            "right": 7
+          }
+        },
+        {
+          "id": "p1",
+          "label": "左1右6",
+          "image": {
+            "src": "/images/items/exploration/diagram-fb56f9b9.png",
+            "alt": "左1右6",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 1,
+            "right": 6
+          }
+        },
+        {
+          "id": "p2",
+          "label": "左2右5",
+          "image": {
+            "src": "/images/items/exploration/diagram-914fea58.png",
+            "alt": "左2右5",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 2,
+            "right": 5
+          }
+        },
+        {
+          "id": "p3",
+          "label": "左3右4",
+          "image": {
+            "src": "/images/items/exploration/diagram-ac4608af.png",
+            "alt": "左3右4",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 3,
+            "right": 4
+          }
+        },
+        {
+          "id": "p4",
+          "label": "左4右3",
+          "image": {
+            "src": "/images/items/exploration/diagram-c5a283f7.png",
+            "alt": "左4右3",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 4,
+            "right": 3
+          }
+        },
+        {
+          "id": "p5",
+          "label": "左5右2",
+          "image": {
+            "src": "/images/items/exploration/diagram-20c2995d.png",
+            "alt": "左5右2",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 5,
+            "right": 2
+          }
+        },
+        {
+          "id": "p6",
+          "label": "左6右1",
+          "image": {
+            "src": "/images/items/exploration/diagram-a8d3cfec.png",
+            "alt": "左6右1",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 6,
+            "right": 1
+          }
+        },
+        {
+          "id": "p7",
+          "label": "左7右0",
+          "image": {
+            "src": "/images/items/exploration/diagram-d10fbd18.png",
+            "alt": "左7右0",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 7,
+            "right": 0
+          }
+        },
+        {
+          "id": "p8",
+          "label": "左7右1",
+          "image": {
+            "src": "/images/items/exploration/diagram-214deff5.png",
+            "alt": "左7右1",
+            "width": 350,
+            "height": 134
+          },
+          "textOnly": false,
+          "partitionCounts": {
+            "left": 7,
+            "right": 1
+          }
+        }
+      ]
+    },
+    {
+      "ids": [
+        "explore-make-break-ten-1",
+        "explore-make-break-ten-2",
+        "explore-make-break-ten-3"
+      ],
+      "field": "retry",
+      "current": "937fad11ba306f6d1e4117c5272d799ce511fb915a10eaafacdfd9fe157728ee",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-make-break-ten-4",
+        "explore-make-break-ten-5"
+      ],
+      "field": "retry",
+      "current": "2afc1bf160cb1eed7b5dc05bc58fa4e04f199e56307ffc53e10e462152b95284",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-make-break-ten-6"
+      ],
+      "field": "retry",
+      "current": "a0e2a6ba411e8dfdee7088a51e22f45cf2a620de024425174534b6bf0c3ca0ae",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-make-break-ten-7",
+        "explore-make-break-ten-8",
+        "explore-make-break-ten-9"
+      ],
+      "field": "retry",
+      "current": "f2908771370b9b5cd422b0781ab3bfe620b868df64a8d6cfcfb0cb1b8e06ad87",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-quantity-stories-1",
+        "explore-quantity-stories-2",
+        "explore-quantity-stories-3"
+      ],
+      "field": "retry",
+      "current": "6c64155c061d58c4129b399c87bd93f4c67bc5c546e9280129004a58923f9a27",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-quantity-stories-4",
+        "explore-quantity-stories-5",
+        "explore-quantity-stories-6"
+      ],
+      "field": "retry",
+      "current": "c8971ac4094b29c01486bd7a9eaf6671fd9d7fc1f3f11082c395962cf2c466e7",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-quantity-stories-7",
+        "explore-quantity-stories-8",
+        "explore-quantity-stories-9"
+      ],
+      "field": "retry",
+      "current": "33c345417da3962af67031dde9c71f226e118057938e199beb8f51188b78bb6d",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-group-share-1",
+        "explore-group-share-2",
+        "explore-group-share-3"
+      ],
+      "field": "retry",
+      "current": "8eaf95e33e10f6fac0684a4af145692553bf68be06d0b5939a34e1fb3380cb14",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-group-share-4",
+        "explore-group-share-5",
+        "explore-group-share-6"
+      ],
+      "field": "retry",
+      "current": "6a79c0960896636f151ab8e5ea43e4b025063f65363c79f5709eeb7f6ba73ad5",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-group-share-7",
+        "explore-group-share-8",
+        "explore-group-share-9"
+      ],
+      "field": "retry",
+      "current": "8eebb8ceb123767e9422922479630b1ad821d9b24a00efa999d43265701c29cc",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-area-fractions-1",
+        "explore-area-fractions-2",
+        "explore-area-fractions-3",
+        "explore-area-fractions-4",
+        "explore-area-fractions-5",
+        "explore-area-fractions-6",
+        "explore-area-fractions-7",
+        "explore-area-fractions-8",
+        "explore-area-fractions-9"
+      ],
+      "field": "retry",
+      "current": "3b0b9de20e44363d585089399ecfae5f328f07cb18c219ab1c1872f62914007b",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-parity-place-value-4",
+        "explore-parity-place-value-5",
+        "explore-parity-place-value-6"
+      ],
+      "field": "retry",
+      "current": "e4357d6484d8e0a5b6e2ce75522b9ec8ebfce5f8a672f9d6f8ea5b6da580a4dd",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-parity-place-value-7",
+        "explore-parity-place-value-8",
+        "explore-parity-place-value-9"
+      ],
+      "field": "retry",
+      "current": "194b9b156829030ca9c02a88fdd510a29418cd90d8cf0017095e526f6b7b954b",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-number-sequences-1",
+        "explore-number-sequences-2",
+        "explore-number-sequences-3"
+      ],
+      "field": "retry",
+      "current": "e055b1180bd0156cf01cc9a4ecfacdf914037b6059ae6472662c279c766b0a0e",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-number-sequences-4",
+        "explore-number-sequences-5",
+        "explore-number-sequences-6"
+      ],
+      "field": "retry",
+      "current": "d2f810088a605a00f6072c257ea470ebd24bddf09a714bff704391fe2d01b1b4",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-number-sequences-7",
+        "explore-number-sequences-8",
+        "explore-number-sequences-9"
+      ],
+      "field": "retry",
+      "current": "034e815f80d9e340a444ff0c753603a121f86e294b7c5f0f8780f6cc2fca5a0d",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-symbol-equations-1",
+        "explore-symbol-equations-2",
+        "explore-symbol-equations-3"
+      ],
+      "field": "retry",
+      "current": "eaff350ac627e842cb879c007b8b906946000da9a8b14201a44ced558432bca3",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-symbol-equations-4",
+        "explore-symbol-equations-5",
+        "explore-symbol-equations-6"
+      ],
+      "field": "retry",
+      "current": "08023b20c708016024ef65c495d6be10e8dc4d87d09e7579dbecfb58f90c6e0c",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-symbol-equations-7",
+        "explore-symbol-equations-8",
+        "explore-symbol-equations-9"
+      ],
+      "field": "retry",
+      "current": "0ae8ad9a8f5631f9b522e107a720a8cff753b11d853e7f8e2cafcdf4644ae60b",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-money-shopping-1",
+        "explore-money-shopping-2",
+        "explore-money-shopping-3"
+      ],
+      "field": "retry",
+      "current": "c951bb860c4d114de865352ad019827119f51e51ce73297fef975ee0b5cdbb67",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-money-shopping-4",
+        "explore-money-shopping-5",
+        "explore-money-shopping-6"
+      ],
+      "field": "retry",
+      "current": "00d883c86184f61267fa0326e9e248d6d62c6d0ca27973eea562fade7e457a62",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-time-elapsed-1",
+        "explore-time-elapsed-2",
+        "explore-time-elapsed-3",
+        "explore-time-elapsed-4",
+        "explore-time-elapsed-5",
+        "explore-time-elapsed-6"
+      ],
+      "field": "retry",
+      "current": "626d4266f60b32ecc23b04d3ae7f7de1ac8e4acc885d89eeed0cb935e809dc4d",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-time-elapsed-7",
+        "explore-time-elapsed-8",
+        "explore-time-elapsed-9"
+      ],
+      "field": "retry",
+      "current": "ac4047fef1661e3cd67164443d72b9a23fd829fbb54310d37d7d8b76219918d8",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-measurement-boundaries-1",
+        "explore-measurement-boundaries-2",
+        "explore-measurement-boundaries-3",
+        "explore-measurement-boundaries-4",
+        "explore-measurement-boundaries-5",
+        "explore-measurement-boundaries-6"
+      ],
+      "field": "retry",
+      "current": "3c0f877efa4734fcf3182b4bb7b90e4cc04027a8d4ed049acf852b5a4c02bb7a",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-measurement-boundaries-7",
+        "explore-measurement-boundaries-8",
+        "explore-measurement-boundaries-9"
+      ],
+      "field": "retry",
+      "current": "4230e6a2ae54605f7e0ba505744c04bbfac903073d9e759e4b902372e70ebfa2",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-calendar-cycles-1",
+        "explore-calendar-cycles-2",
+        "explore-calendar-cycles-3"
+      ],
+      "field": "retry",
+      "current": "575ce25738919ed29313dff4e40dfa73eadb2e232f8f15d9241a53a063d9eb46",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-calendar-cycles-4",
+        "explore-calendar-cycles-5",
+        "explore-calendar-cycles-6"
+      ],
+      "field": "retry",
+      "current": "e0dd5a94c19707a5fabd97b5b254929220196af2aab5645a1ca08107957c262e",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-calendar-cycles-7",
+        "explore-calendar-cycles-8",
+        "explore-calendar-cycles-9"
+      ],
+      "field": "retry",
+      "current": "6fd05a7bbad1144c174a71d43926e564c643fc2834f061f8b35646338e89bf5d",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-relations-analogies-4"
+      ],
+      "field": "tokens",
+      "current": "3b170ea17c9b09945af3fd9549a583b0f2c998e03974a3988d9c143646e33960",
+      "previous": [
+        {
+          "id": "a0",
+          "label": "左图1",
+          "image": {
+            "src": "/images/items/exploration/diagram-6964a49.png",
+            "alt": "左图1",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "a1",
+          "label": "左图2",
+          "image": {
+            "src": "/images/items/exploration/diagram-a7d48458.png",
+            "alt": "左图2",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "a2",
+          "label": "左图3",
+          "image": {
+            "src": "/images/items/exploration/diagram-e86abf05.png",
+            "alt": "左图3",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "b0",
+          "label": "右图1",
+          "image": {
+            "src": "/images/items/exploration/diagram-4d6d100d.png",
+            "alt": "右图1",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "b1",
+          "label": "右图2",
+          "image": {
+            "src": "/images/items/exploration/diagram-776fadc4.png",
+            "alt": "右图2",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "b2",
+          "label": "右图3",
+          "image": {
+            "src": "/images/items/exploration/diagram-4db6e41.png",
+            "alt": "右图3",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        }
+      ]
+    },
+    {
+      "ids": [
+        "explore-relations-analogies-4"
+      ],
+      "field": "rightIds",
+      "current": "66456e54726f7c17a241b57e22707c0be3abad3e154039b538bdecd18a4fe5e3",
+      "previous": [
+        "b2",
+        "b0",
+        "b1"
+      ]
+    },
+    {
+      "ids": [
+        "explore-relations-analogies-5"
+      ],
+      "field": "tokens",
+      "current": "8417269635a1d3b6421d6c79784cc85b548e77b0f1f4e7c1ad487b1831bca27d",
+      "previous": [
+        {
+          "id": "a0",
+          "label": "左图1",
+          "image": {
+            "src": "/images/items/exploration/diagram-4d6d100d.png",
+            "alt": "左图1",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "a1",
+          "label": "左图2",
+          "image": {
+            "src": "/images/items/exploration/diagram-776fadc4.png",
+            "alt": "左图2",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "a2",
+          "label": "左图3",
+          "image": {
+            "src": "/images/items/exploration/diagram-4db6e41.png",
+            "alt": "左图3",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "b0",
+          "label": "右图1",
+          "image": {
+            "src": "/images/items/exploration/diagram-b5760604.png",
+            "alt": "右图1",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "b1",
+          "label": "右图2",
+          "image": {
+            "src": "/images/items/exploration/diagram-124ee1e3.png",
+            "alt": "右图2",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "b2",
+          "label": "右图3",
+          "image": {
+            "src": "/images/items/exploration/diagram-83c7c2c8.png",
+            "alt": "右图3",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        }
+      ]
+    },
+    {
+      "ids": [
+        "explore-relations-analogies-5"
+      ],
+      "field": "rightIds",
+      "current": "38c8cf6e346f25918788253fb44f264a8b4aba6188312dad634bf783496e6a90",
+      "previous": [
+        "b0",
+        "b1",
+        "b2"
+      ]
+    },
+    {
+      "ids": [
+        "explore-relations-analogies-6"
+      ],
+      "field": "tokens",
+      "current": "980f992630dfda3f5a7c775b217523b5de3fa10c02844ccd13a04b7e51b28a26",
+      "previous": [
+        {
+          "id": "a0",
+          "label": "左图1",
+          "image": {
+            "src": "/images/items/exploration/diagram-b5760604.png",
+            "alt": "左图1",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "a1",
+          "label": "左图2",
+          "image": {
+            "src": "/images/items/exploration/diagram-124ee1e3.png",
+            "alt": "左图2",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "a2",
+          "label": "左图3",
+          "image": {
+            "src": "/images/items/exploration/diagram-83c7c2c8.png",
+            "alt": "左图3",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "b0",
+          "label": "右图1",
+          "image": {
+            "src": "/images/items/exploration/diagram-6964a49.png",
+            "alt": "右图1",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "b1",
+          "label": "右图2",
+          "image": {
+            "src": "/images/items/exploration/diagram-a7d48458.png",
+            "alt": "右图2",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "b2",
+          "label": "右图3",
+          "image": {
+            "src": "/images/items/exploration/diagram-e86abf05.png",
+            "alt": "右图3",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        }
+      ]
+    },
+    {
+      "ids": [
+        "explore-relations-analogies-6"
+      ],
+      "field": "rightIds",
+      "current": "9d9b7be2c672004efcee41c3818f11be65e28f2cbcc21dcaedd2819846f48374",
+      "previous": [
+        "b0",
+        "b2",
+        "b1"
+      ]
+    },
+    {
+      "ids": [
+        "explore-relations-analogies-7"
+      ],
+      "field": "tokens",
+      "current": "84ddc8cad87a9c6cfd72c3779cfd0e31af28aa3976badf0ec36deb59a369a5bf",
+      "previous": [
+        {
+          "id": "a0",
+          "label": "左图1",
+          "image": {
+            "src": "/images/items/exploration/diagram-6964a49.png",
+            "alt": "左图1",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "a1",
+          "label": "左图2",
+          "image": {
+            "src": "/images/items/exploration/diagram-a7d48458.png",
+            "alt": "左图2",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "a2",
+          "label": "左图3",
+          "image": {
+            "src": "/images/items/exploration/diagram-e86abf05.png",
+            "alt": "左图3",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "a3",
+          "label": "左图4",
+          "image": {
+            "src": "/images/items/exploration/diagram-6964a49.png",
+            "alt": "左图4",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "b0",
+          "label": "右图1",
+          "image": {
+            "src": "/images/items/exploration/diagram-4d6d100d.png",
+            "alt": "右图1",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "b1",
+          "label": "右图2",
+          "image": {
+            "src": "/images/items/exploration/diagram-776fadc4.png",
+            "alt": "右图2",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "b2",
+          "label": "右图3",
+          "image": {
+            "src": "/images/items/exploration/diagram-4db6e41.png",
+            "alt": "右图3",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "b3",
+          "label": "右图4",
+          "image": {
+            "src": "/images/items/exploration/diagram-4d6d100d.png",
+            "alt": "右图4",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        }
+      ]
+    },
+    {
+      "ids": [
+        "explore-relations-analogies-7"
+      ],
+      "field": "rightIds",
+      "current": "35c8a3b44623ae494aa78059e7dbe4032d899d597295588cdbf71b197ebcacdb",
+      "previous": [
+        "b3",
+        "b2",
+        "b1",
+        "b0"
+      ]
+    },
+    {
+      "ids": [
+        "explore-relations-analogies-8"
+      ],
+      "field": "tokens",
+      "current": "fc0d01e65a29d91d2f22ba57d2659f50f29f4d58c92298f130590f9e32c7e929",
+      "previous": [
+        {
+          "id": "a0",
+          "label": "左图1",
+          "image": {
+            "src": "/images/items/exploration/diagram-4d6d100d.png",
+            "alt": "左图1",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "a1",
+          "label": "左图2",
+          "image": {
+            "src": "/images/items/exploration/diagram-776fadc4.png",
+            "alt": "左图2",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "a2",
+          "label": "左图3",
+          "image": {
+            "src": "/images/items/exploration/diagram-4db6e41.png",
+            "alt": "左图3",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "a3",
+          "label": "左图4",
+          "image": {
+            "src": "/images/items/exploration/diagram-4d6d100d.png",
+            "alt": "左图4",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "b0",
+          "label": "右图1",
+          "image": {
+            "src": "/images/items/exploration/diagram-b5760604.png",
+            "alt": "右图1",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "b1",
+          "label": "右图2",
+          "image": {
+            "src": "/images/items/exploration/diagram-124ee1e3.png",
+            "alt": "右图2",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "b2",
+          "label": "右图3",
+          "image": {
+            "src": "/images/items/exploration/diagram-83c7c2c8.png",
+            "alt": "右图3",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "b3",
+          "label": "右图4",
+          "image": {
+            "src": "/images/items/exploration/diagram-b5760604.png",
+            "alt": "右图4",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        }
+      ]
+    },
+    {
+      "ids": [
+        "explore-relations-analogies-8"
+      ],
+      "field": "rightIds",
+      "current": "503c38a8094ff893c1d6f0c07d89e72e19174cacebac40fad0ee71c62c192672",
+      "previous": [
+        "b0",
+        "b2",
+        "b3",
+        "b1"
+      ]
+    },
+    {
+      "ids": [
+        "explore-relations-analogies-9"
+      ],
+      "field": "tokens",
+      "current": "a01067bc76547f31968159f02e37215a070bfeb861a9d4a2647397a174447adf",
+      "previous": [
+        {
+          "id": "a0",
+          "label": "左图1",
+          "image": {
+            "src": "/images/items/exploration/diagram-b5760604.png",
+            "alt": "左图1",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "a1",
+          "label": "左图2",
+          "image": {
+            "src": "/images/items/exploration/diagram-124ee1e3.png",
+            "alt": "左图2",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "a2",
+          "label": "左图3",
+          "image": {
+            "src": "/images/items/exploration/diagram-83c7c2c8.png",
+            "alt": "左图3",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "a3",
+          "label": "左图4",
+          "image": {
+            "src": "/images/items/exploration/diagram-b5760604.png",
+            "alt": "左图4",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "b0",
+          "label": "右图1",
+          "image": {
+            "src": "/images/items/exploration/diagram-6964a49.png",
+            "alt": "右图1",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "b1",
+          "label": "右图2",
+          "image": {
+            "src": "/images/items/exploration/diagram-a7d48458.png",
+            "alt": "右图2",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "b2",
+          "label": "右图3",
+          "image": {
+            "src": "/images/items/exploration/diagram-e86abf05.png",
+            "alt": "右图3",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "b3",
+          "label": "右图4",
+          "image": {
+            "src": "/images/items/exploration/diagram-6964a49.png",
+            "alt": "右图4",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        }
+      ]
+    },
+    {
+      "ids": [
+        "explore-relations-analogies-9"
+      ],
+      "field": "rightIds",
+      "current": "e266ed017b424004d7a6e12fb8929b7059793be10829bf7a64c5fd74c054f747",
+      "previous": [
+        "b0",
+        "b2",
+        "b3",
+        "b1"
+      ]
+    },
+    {
+      "ids": [
+        "explore-transitive-order-7",
+        "explore-transitive-order-8",
+        "explore-transitive-order-9"
+      ],
+      "field": "retry",
+      "current": "785df43c6d63921cb695c276825c155f88a953eb760f66aa41e1602b3999b5bb",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-learn-rule-transfer-1",
+        "explore-learn-rule-transfer-2",
+        "explore-learn-rule-transfer-3"
+      ],
+      "field": "retry",
+      "current": "487fa333682e8c2fa670b2a27c26fc98ab9a11b35d8638f0bcb9b9d5aa872f78",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-learn-rule-transfer-4",
+        "explore-learn-rule-transfer-5",
+        "explore-learn-rule-transfer-6"
+      ],
+      "field": "retry",
+      "current": "0687f7a69ecf45313a1163fa2760aa14343f0ad79dadcddc162f13a1fccc9314",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-learn-rule-transfer-7",
+        "explore-learn-rule-transfer-8",
+        "explore-learn-rule-transfer-9"
+      ],
+      "field": "retry",
+      "current": "c256b8f7bac65223070a2c4d66550f89b31bb0017a1808881de6c91eb27b4c69",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-toggle-state-1",
+        "explore-toggle-state-2",
+        "explore-toggle-state-3",
+        "explore-toggle-state-4",
+        "explore-toggle-state-5",
+        "explore-toggle-state-6",
+        "explore-toggle-state-7",
+        "explore-toggle-state-8",
+        "explore-toggle-state-9"
+      ],
+      "field": "prompt",
+      "current": "b4e048974b826fa1f745e4b068f1778946a663fca9044a8485cd522e9c6f0e57",
+      "previous": "照着顺序，动手翻一翻。"
+    },
+    {
+      "ids": [
+        "explore-toggle-state-1",
+        "explore-toggle-state-2",
+        "explore-toggle-state-3",
+        "explore-toggle-state-4",
+        "explore-toggle-state-5",
+        "explore-toggle-state-6",
+        "explore-toggle-state-7",
+        "explore-toggle-state-8",
+        "explore-toggle-state-9"
+      ],
+      "field": "instruction",
+      "current": "923c274910d2b66c82a4ed2ab7ecc692cec25e9028e9cc6247ccf9a5dd7f3df9",
+      "previous": "看小图的顺序，点下面的大牌。"
+    },
+    {
+      "ids": [
+        "explore-toggle-state-1",
+        "explore-toggle-state-2",
+        "explore-toggle-state-3",
+        "explore-toggle-state-4",
+        "explore-toggle-state-5",
+        "explore-toggle-state-6"
+      ],
+      "field": "hints",
+      "current": "40bf165c53d61ab4601a9df1455eb1db4cb487b01b48f49a80cd89e2cf634d1f",
+      "previous": [
+        "先看开始时的牌面，再按小图从左往右翻。",
+        "同一张牌翻两次，会回到原来的样子。"
+      ]
+    },
+    {
+      "ids": [
+        "explore-toggle-state-1",
+        "explore-toggle-state-2",
+        "explore-toggle-state-3"
+      ],
+      "field": "success",
+      "current": "dc1ee4d602282cc2d275b31bc9767c8cad75d3cedffddab842fc57e133f00c2a",
+      "previous": "翻一次就换一面。同一张牌翻两次，又回到原来的样子。"
+    },
+    {
+      "ids": [
+        "explore-toggle-state-1",
+        "explore-toggle-state-2",
+        "explore-toggle-state-3"
+      ],
+      "field": "parentPrompt",
+      "current": "9641409dcbcd087ce3a547acdc90f2d3ff7ac75282d434ce07cf927fce609f7b",
+      "previous": "哪张牌翻过两次？它和开始时有什么不同？"
+    },
+    {
+      "ids": [
+        "explore-toggle-state-1",
+        "explore-toggle-state-3"
+      ],
+      "field": "illustration",
+      "current": "a6797b10c6908a14152b9fbf27835246f7365b88855f7cd8edef13022e91b22b",
+      "previous": {
+        "src": "/images/items/exploration/diagram-c13ff8a9.png",
+        "alt": "照着顺序，动手翻一翻。",
+        "width": 295,
+        "height": 125
+      }
+    },
+    {
+      "ids": [
+        "explore-toggle-state-1",
+        "explore-toggle-state-2",
+        "explore-toggle-state-3"
+      ],
+      "field": "difficulty",
+      "current": "87bbff33ac2ca4077dbd5f43d13d9db061579d2222af3e8f4eea40a769f41e49",
+      "previous": {
+        "rules": 1,
+        "steps": 1,
+        "reading": 0,
+        "motor": 2,
+        "representation": "pictures",
+        "basis": "3卡按一条翻动指令后回填全部3格",
+        "memory": 0,
+        "calibration": "design-estimate",
+        "workload": {
+          "editableCells": 3
+        }
+      }
+    },
+    {
+      "ids": [
+        "explore-toggle-state-2"
+      ],
+      "field": "illustration",
+      "current": "64f80781b8983466d1981f1f78d6ad25dbbdac193ac7275c414162ee525a6bd7",
+      "previous": {
+        "src": "/images/items/exploration/diagram-12433ad6.png",
+        "alt": "照着顺序，动手翻一翻。",
+        "width": 295,
+        "height": 125
+      }
+    },
+    {
+      "ids": [
+        "explore-toggle-state-4",
+        "explore-toggle-state-5",
+        "explore-toggle-state-6"
+      ],
+      "field": "success",
+      "current": "20a291590dd67c629961d41e1f6ba2c8c05b58965f73e3022f6c56a0b275d505",
+      "previous": "翻一次就换一面。同一张牌翻两次，又回到原来的样子。"
+    },
+    {
+      "ids": [
+        "explore-toggle-state-4",
+        "explore-toggle-state-5",
+        "explore-toggle-state-6"
+      ],
+      "field": "parentPrompt",
+      "current": "fa7202d53c2ebfc7eac53a9e360b456eafc7a813dc6c7eecba545a2f8d4bfc88",
+      "previous": "哪张牌翻过两次？它和开始时有什么不同？"
+    },
+    {
+      "ids": [
+        "explore-toggle-state-4",
+        "explore-toggle-state-6"
+      ],
+      "field": "illustration",
+      "current": "b4bb67aeb1b47b34cdee70fbaa5bd17f66cba4808801158ca5fe3c2d9d1d8ae6",
+      "previous": {
+        "src": "/images/items/exploration/diagram-e83d73eb.png",
+        "alt": "照着顺序，动手翻一翻。",
+        "width": 380,
+        "height": 125
+      }
+    },
+    {
+      "ids": [
+        "explore-toggle-state-4",
+        "explore-toggle-state-5",
+        "explore-toggle-state-6"
+      ],
+      "field": "difficulty",
+      "current": "c9067577da598b316c338e8f7ccf70a733c2de028cac2bf29bac4b1f5c756f90",
+      "previous": {
+        "rules": 1,
+        "steps": 2,
+        "reading": 0,
+        "motor": 2,
+        "representation": "pictures",
+        "basis": "4卡按两条指令连续更新，翻一次换面规则不变",
+        "memory": 0,
+        "calibration": "design-estimate",
+        "workload": {
+          "editableCells": 4
+        }
+      }
+    },
+    {
+      "ids": [
+        "explore-toggle-state-5"
+      ],
+      "field": "illustration",
+      "current": "af31edebbdee6d35437bff05a3083f66fa3f9aa78770db55be0a312dc38a875f",
+      "previous": {
+        "src": "/images/items/exploration/diagram-a86dad97.png",
+        "alt": "照着顺序，动手翻一翻。",
+        "width": 380,
+        "height": 125
+      }
+    },
+    {
+      "ids": [
+        "explore-toggle-state-7",
+        "explore-toggle-state-8",
+        "explore-toggle-state-9"
+      ],
+      "field": "difficultyNote",
+      "current": "53a54c1d40cc2a9d16b4b7d979cf6bf7ac8c10ef6719c3c95f6d25e0a561fabc",
+      "previous": "从目标倒推步骤"
+    },
+    {
+      "ids": [
+        "explore-toggle-state-7",
+        "explore-toggle-state-8",
+        "explore-toggle-state-9"
+      ],
+      "field": "hints",
+      "current": "9b6a3005d6465a1cc50493afd21299eb8947334c8db502b36df5846ea8095e68",
+      "previous": [
+        "先看开始时的牌面，再按小图从左往右翻。",
+        "同一张牌翻两次，会回到原来的样子。"
+      ]
+    },
+    {
+      "ids": [
+        "explore-toggle-state-7",
+        "explore-toggle-state-8",
+        "explore-toggle-state-9"
+      ],
+      "field": "success",
+      "current": "7e44830720c37b3c8fcf19d033e5b762e0d186c6bed70375aa4505fe405ebe69",
+      "previous": "翻一次就换一面。同一张牌翻两次，又回到原来的样子。"
+    },
+    {
+      "ids": [
+        "explore-toggle-state-7",
+        "explore-toggle-state-8",
+        "explore-toggle-state-9"
+      ],
+      "field": "parentPrompt",
+      "current": "1d79abfe2e36198f661cce5f295c275e4fa64561a8add9bf2529675dd2ce501a",
+      "previous": "哪张牌翻过两次？它和开始时有什么不同？"
+    },
+    {
+      "ids": [
+        "explore-toggle-state-7",
+        "explore-toggle-state-9"
+      ],
+      "field": "illustration",
+      "current": "5a03a82f6be80aa8038a0afbd3ba34745b46e6b4c3602f7e72efb074019dadc0",
+      "previous": {
+        "src": "/images/items/exploration/diagram-8d00fa26.png",
+        "alt": "照着顺序，动手翻一翻。",
+        "width": 465,
+        "height": 125
+      }
+    },
+    {
+      "ids": [
+        "explore-toggle-state-7",
+        "explore-toggle-state-8",
+        "explore-toggle-state-9"
+      ],
+      "field": "difficulty",
+      "current": "c64565140c9f5f7727ce1736bfef91426129e2adefce6e0e72d859d581c9e63d",
+      "previous": {
+        "rules": 1,
+        "steps": 3,
+        "reading": 0,
+        "motor": 2,
+        "representation": "pictures",
+        "basis": "5卡按三条指令，其中同一卡两次；仍一条翻转规则，三步状态更新",
+        "memory": 0,
+        "calibration": "design-estimate",
+        "workload": {
+          "editableCells": 5
+        }
+      }
+    },
+    {
+      "ids": [
+        "explore-toggle-state-8"
+      ],
+      "field": "illustration",
+      "current": "7f2101d9fef6b358c62da4965bced3f37878ec679b76ff4dc7faf1f5db986ff9",
+      "previous": {
+        "src": "/images/items/exploration/diagram-a7633f87.png",
+        "alt": "照着顺序，动手翻一翻。",
+        "width": 465,
+        "height": 125
+      }
+    },
+    {
+      "ids": [
+        "explore-visual-search-match-1",
+        "explore-visual-search-match-2",
+        "explore-visual-search-match-3",
+        "explore-visual-search-match-4",
+        "explore-visual-search-match-5",
+        "explore-visual-search-match-6",
+        "explore-visual-search-match-7",
+        "explore-visual-search-match-8",
+        "explore-visual-search-match-9"
+      ],
+      "field": "retry",
+      "current": "bdd3b527a6b5b9352b9d0fa704c1809b73ab0ec8bd80f94a6399f7b11cbe1465",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-occlusion-texture-1",
+        "explore-occlusion-texture-2",
+        "explore-occlusion-texture-3"
+      ],
+      "field": "retry",
+      "current": "702aa1de476697463969cbd9ae41b70a26f459166daf35c9295db14282f321e9",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-occlusion-texture-4",
+        "explore-occlusion-texture-5",
+        "explore-occlusion-texture-6"
+      ],
+      "field": "retry",
+      "current": "a7543e85481522c2493ae124ca27c20484a64572d82eda9ac3bf88b64dd05f14",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-occlusion-texture-7",
+        "explore-occlusion-texture-8",
+        "explore-occlusion-texture-9"
+      ],
+      "field": "retry",
+      "current": "2688ccf304f18a08f57578dc2a112ca5e69236e93a9cb018ed7b0f37bb4ce644",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-position-transform-1",
+        "explore-position-transform-2",
+        "explore-position-transform-3"
+      ],
+      "field": "retry",
+      "current": "aa508d62550ec30315bb4b7182fb2d20d482c1c97474b3bee8c8ae09a3855570",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-position-transform-4",
+        "explore-position-transform-5",
+        "explore-position-transform-6"
+      ],
+      "field": "retry",
+      "current": "23dc4b94e7483b9e296c426c2e38f4c88fba966aef4dfd8288cf77e079f6d9cb",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-position-transform-7",
+        "explore-position-transform-8",
+        "explore-position-transform-9"
+      ],
+      "field": "retry",
+      "current": "062214c9c45431ab65b43f0fbe3157d5bbffce03eb90cce78e6351fe05672076",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-rotation-reflection-1",
+        "explore-rotation-reflection-2",
+        "explore-rotation-reflection-3"
+      ],
+      "field": "retry",
+      "current": "ff00432557fffa6aa8c1ed492cf56d0168a9b9a3e127500a89468eb4415190bd",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-rotation-reflection-4"
+      ],
+      "field": "retry",
+      "current": "d1535f45f86534e1a0a9f2726c50a79e3a6051a1d7a48d5128a159395ca50e12",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-rotation-reflection-5"
+      ],
+      "field": "retry",
+      "current": "4f6989cf8a0e370ae04151d3c0bc6ea3a8a7d790e36b230b1bd59e5f51f5bac7",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-rotation-reflection-6"
+      ],
+      "field": "retry",
+      "current": "7b61682fad9acf1e0838e68bc2d39ad2cb9b60095fd610d0c1c29ebb2caa942e",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-rotation-reflection-7",
+        "explore-rotation-reflection-8",
+        "explore-rotation-reflection-9"
+      ],
+      "field": "retry",
+      "current": "eb50fd6eb97d26783ba16d9859b03d8cd391933fb8a240735903a97d661a914f",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-shape-set-operations-1",
+        "explore-shape-set-operations-2",
+        "explore-shape-set-operations-3",
+        "explore-shape-set-operations-4",
+        "explore-shape-set-operations-5",
+        "explore-shape-set-operations-6",
+        "explore-shape-set-operations-7",
+        "explore-shape-set-operations-8",
+        "explore-shape-set-operations-9"
+      ],
+      "field": "retry",
+      "current": "273231821f20e68df951df6aa7f2428df71f3f0767049237fa077f9121ad91fe",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-recursive-composition-1",
+        "explore-recursive-composition-2",
+        "explore-recursive-composition-3"
+      ],
+      "field": "retry",
+      "current": "f07e1fa07f3eca33071e971d51962aced9e9217e430ea8302f811605d59f3099",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-symbolic-color-rules-1",
+        "explore-symbolic-color-rules-2",
+        "explore-symbolic-color-rules-3",
+        "explore-symbolic-color-rules-4",
+        "explore-symbolic-color-rules-5",
+        "explore-symbolic-color-rules-6",
+        "explore-symbolic-color-rules-7",
+        "explore-symbolic-color-rules-8",
+        "explore-symbolic-color-rules-9"
+      ],
+      "field": "retry",
+      "current": "21c9940aef596b782fbf269ee0e7df6cdd439fff0e48da66f8491e73d3a538e3",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-geometric-counts-1"
+      ],
+      "field": "retry",
+      "current": "8de0a9cae9c84e95d80740cb1b503d7acdef7e9be99bc0fb967e435589f6cbb1",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-geometric-counts-2"
+      ],
+      "field": "retry",
+      "current": "7151b1fa1d321e5144527d8e40db89cd687f3cc32e3cee24afdfdef259a387e9",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-geometric-counts-3"
+      ],
+      "field": "retry",
+      "current": "f0d4b8311d9c63d95d7b13b5b5396f3f4a3e2a854ffbd96d34812854df7da3cb",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-geometric-counts-4"
+      ],
+      "field": "retry",
+      "current": "b55c75a7470d9ed14859df85f3b55ab2a4f043a97d7d91b71122a2707fcf8ae3",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-geometric-counts-5"
+      ],
+      "field": "retry",
+      "current": "9ac6e64621b1c7ad3ba9112ae3399191a428ba94f990e5ad4cb8c687c5e4eeb9",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-geometric-counts-6"
+      ],
+      "field": "retry",
+      "current": "4a1f3f50322cfc5834a3a9df7c952e70725c1a7c1ec6638113c2c0094db10411",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-geometric-counts-7",
+        "explore-geometric-counts-8",
+        "explore-geometric-counts-9"
+      ],
+      "field": "prompt",
+      "current": "3b8cea2f9e303014aefa495c1728a4e8aa97d3f2b15aa1b1edb7c05b0640d221",
+      "previous": "大小不同的长方形一共有几个？"
+    },
+    {
+      "ids": [
+        "explore-geometric-counts-7",
+        "explore-geometric-counts-8",
+        "explore-geometric-counts-9"
+      ],
+      "field": "clues",
+      "current": "211f92792159f87f6fbe2680377bd7f69a43f7502028ee80fe28cfe49d813734",
+      "previous": [
+        "正方形也算，每个不同的框只数一次。",
+        "可以先找小的，再找横着、竖着和最外面的。"
+      ]
+    },
+    {
+      "ids": [
+        "explore-geometric-counts-7"
+      ],
+      "field": "hints",
+      "current": "4bbf69567821af2a406bea9673cc8669a1bd45e4accbc6af36565d264fd8fc22",
+      "previous": [
+        "正方形也算，每个不同的框只数一次。",
+        "两个小方格，加上最外面一个大框，一共3个。"
+      ]
+    },
+    {
+      "ids": [
+        "explore-geometric-counts-7",
+        "explore-geometric-counts-8",
+        "explore-geometric-counts-9"
+      ],
+      "field": "retry",
+      "current": "5cb9bc4bb6746397cc5c01667f3629bd148438fe5d8ae07ea21755b96a0a9efa",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-geometric-counts-7"
+      ],
+      "field": "illustration",
+      "current": "a35f112057c300aa3876fc169337d51cc03d7814598ec2ca457e8c0a5105bee6",
+      "previous": {
+        "src": "/images/items/exploration/diagram-b369cd69.png",
+        "alt": "大小不同的长方形一共有几个？",
+        "width": 210,
+        "height": 125
+      }
+    },
+    {
+      "ids": [
+        "explore-geometric-counts-8"
+      ],
+      "field": "hints",
+      "current": "bc9c540da5a34b570c8ca5a14984c09720fbf62eab4b8dd26a4bfc3fd212362e",
+      "previous": [
+        "正方形也算，每个不同的框只数一次。",
+        "三个一格的、两个两格的和一个三格的，一共6个。"
+      ]
+    },
+    {
+      "ids": [
+        "explore-geometric-counts-8"
+      ],
+      "field": "illustration",
+      "current": "bae6ba06852035dc3d3f89bed45b90d57c66367d7be7c6179d016eb0d6acbedc",
+      "previous": {
+        "src": "/images/items/exploration/diagram-622554f2.png",
+        "alt": "大小不同的长方形一共有几个？",
+        "width": 295,
+        "height": 125
+      }
+    },
+    {
+      "ids": [
+        "explore-geometric-counts-9"
+      ],
+      "field": "hints",
+      "current": "a1c3eae14cd82cf140f4565cc60ced07829b6ba555d091b292c8fc9c2f8f06e5",
+      "previous": [
+        "正方形也算，每个不同的框只数一次。",
+        "四个小方格、两个横着的、两个竖着的和最外面一个，一共9个。"
+      ]
+    },
+    {
+      "ids": [
+        "explore-geometric-counts-9"
+      ],
+      "field": "illustration",
+      "current": "9c7c659b248a8317aca50d27c90bf56454d2693280e075703b8071c8691afdbe",
+      "previous": {
+        "src": "/images/items/exploration/diagram-23800258.png",
+        "alt": "大小不同的长方形一共有几个？",
+        "width": 210,
+        "height": 210
+      }
+    },
+    {
+      "ids": [
+        "explore-symmetry-axes-6"
+      ],
+      "field": "tokens",
+      "current": "731c69196ab019f71c67c94fc270a9f26ca3b4e3833d334742bc4e67d622791e",
+      "previous": [
+        {
+          "id": "axis0",
+          "label": "折线1",
+          "image": {
+            "src": "/images/items/exploration/diagram-32bca43e.png",
+            "alt": "折线1",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "axis1",
+          "label": "折线2",
+          "image": {
+            "src": "/images/items/exploration/diagram-67d1c6a0.png",
+            "alt": "折线2",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "axis2",
+          "label": "折线3",
+          "image": {
+            "src": "/images/items/exploration/diagram-d1026eeb.png",
+            "alt": "折线3",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "axis3",
+          "label": "折线4",
+          "image": {
+            "src": "/images/items/exploration/diagram-cca6799d.png",
+            "alt": "折线4",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        }
+      ]
+    },
+    {
+      "ids": [
+        "explore-symmetry-axes-6"
+      ],
+      "field": "illustration",
+      "current": "705da80eff5771b90a2c856cfc1664222f38f130c0f6046d641c362ebf6241bd",
+      "previous": {
+        "src": "/images/items/exploration/diagram-35c6f61f.png",
+        "alt": "沿哪些虚线对折，两边能完全重合？",
+        "width": 320,
+        "height": 320
+      }
+    },
+    {
+      "ids": [
+        "explore-topology-relations-1",
+        "explore-topology-relations-2",
+        "explore-topology-relations-3"
+      ],
+      "field": "retry",
+      "current": "f1102e12551423221e84fe39279f0917bb2087fc3f1e43894fec8454e54c58ab",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-marker-invariants-1",
+        "explore-marker-invariants-2",
+        "explore-marker-invariants-3",
+        "explore-marker-invariants-4",
+        "explore-marker-invariants-5",
+        "explore-marker-invariants-6",
+        "explore-marker-invariants-7",
+        "explore-marker-invariants-8",
+        "explore-marker-invariants-9"
+      ],
+      "field": "retry",
+      "current": "e436966adaa96181d802a5239819a836d2bf397050808bafd56be717d2c0d8bb",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-fold-cut-1"
+      ],
+      "field": "hints",
+      "current": "01d27cd4f4caedd49e64a5022e12b6d852112d88605874637a891895d0c89a85",
+      "previous": [
+        "把纸左右对折，摸一摸哪两条边重合。",
+        "在折好的纸上画一个点，请家长演示一个小剪口。"
+      ]
+    },
+    {
+      "ids": [
+        "explore-fold-cut-1"
+      ],
+      "field": "steps",
+      "current": "ec1b385d1cfd454aa049ab14da1b81f34665cddbfeed8e6a127f41fb0ee2f58e",
+      "previous": [
+        "把纸左右对折，摸一摸哪两条边重合。",
+        "在折好的纸上画一个点，请家长演示一个小剪口。",
+        "展开看看对应位置，再把纸合上验证。"
+      ]
+    },
+    {
+      "ids": [
+        "explore-fold-cut-4",
+        "explore-fold-cut-5",
+        "explore-fold-cut-6"
+      ],
+      "field": "retry",
+      "current": "019c09f251f6c30ef3320a45469751c81816c3df5ef4aa3f0f8850947316abed",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-fold-cut-7",
+        "explore-fold-cut-8",
+        "explore-fold-cut-9"
+      ],
+      "field": "retry",
+      "current": "0e2bd2a9e301b88e546b0142191b25c20f6601a3184148408145750a6e93dab5",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-solid-views-count-4",
+        "explore-solid-views-count-5",
+        "explore-solid-views-count-6"
+      ],
+      "field": "retry",
+      "current": "b01c983a7bf56d8ca83191fc67a9225a269e433cbca75779eba2423738ab36cf",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-relative-perspective-1",
+        "explore-relative-perspective-2",
+        "explore-relative-perspective-3"
+      ],
+      "field": "retry",
+      "current": "52133607224f378dc1ab5e80a2699b373fcaf96ce09589140e7d03379e046083",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-relative-perspective-4",
+        "explore-relative-perspective-5",
+        "explore-relative-perspective-6"
+      ],
+      "field": "retry",
+      "current": "f7a7562f520df793fd9895368db5ec26b3c6f0fa1004e6dc4dcc0580dcea2358",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-relative-perspective-7",
+        "explore-relative-perspective-8",
+        "explore-relative-perspective-9"
+      ],
+      "field": "retry",
+      "current": "2d7ca2da7c10c67a1251decae5823ec46bb6c0da718a5dec7f25a711f54d3aac",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-cube-nets-1",
+        "explore-cube-nets-2",
+        "explore-cube-nets-3",
+        "explore-cube-nets-7",
+        "explore-cube-nets-8",
+        "explore-cube-nets-9"
+      ],
+      "field": "retry",
+      "current": "516c71ac29c74acdf6b2b78047f4b344a9cb9d2de29ed96d54f7f54298b6f73e",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-story-recall-1",
+        "explore-story-recall-2",
+        "explore-story-recall-3"
+      ],
+      "field": "retry",
+      "current": "8a0b24f4f4d45197fc36e563664ae399eb2198cf78834ab9a0ed4559d7ada0c7",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-attention-search-1"
+      ],
+      "field": "tokens",
+      "current": "22c73b366cd86f1bd04b7d470125f754ea0339988bc702a8ea22b126b3578c4f",
+      "previous": [
+        {
+          "id": "c0",
+          "label": "第1张",
+          "image": {
+            "src": "/images/items/exploration/diagram-6964a49.png",
+            "alt": "第1张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c1",
+          "label": "第2张",
+          "image": {
+            "src": "/images/items/exploration/diagram-a7d48458.png",
+            "alt": "第2张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c2",
+          "label": "第3张",
+          "image": {
+            "src": "/images/items/exploration/diagram-e86abf05.png",
+            "alt": "第3张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c3",
+          "label": "第4张",
+          "image": {
+            "src": "/images/items/exploration/diagram-4d6d100d.png",
+            "alt": "第4张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c4",
+          "label": "第5张",
+          "image": {
+            "src": "/images/items/exploration/diagram-776fadc4.png",
+            "alt": "第5张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c5",
+          "label": "第6张",
+          "image": {
+            "src": "/images/items/exploration/diagram-4db6e41.png",
+            "alt": "第6张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c6",
+          "label": "第7张",
+          "image": {
+            "src": "/images/items/exploration/diagram-b5760604.png",
+            "alt": "第7张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c7",
+          "label": "第8张",
+          "image": {
+            "src": "/images/items/exploration/diagram-124ee1e3.png",
+            "alt": "第8张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c8",
+          "label": "第9张",
+          "image": {
+            "src": "/images/items/exploration/diagram-83c7c2c8.png",
+            "alt": "第9张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        }
+      ]
+    },
+    {
+      "ids": [
+        "explore-attention-search-1"
+      ],
+      "field": "expectedTokenIds",
+      "current": "60a4c8553c30c67beb65fcc70dde6c3c3fcd351839c6309e38325502caad0ec5",
+      "previous": [
+        "c0",
+        "c3",
+        "c6"
+      ]
+    },
+    {
+      "ids": [
+        "explore-attention-search-2"
+      ],
+      "field": "tokens",
+      "current": "cbb290d4683a6f97f9448a9bea17f9a03e4abd54192bdb9d77365fea3c4eb0b7",
+      "previous": [
+        {
+          "id": "c0",
+          "label": "第1张",
+          "image": {
+            "src": "/images/items/exploration/diagram-a7d48458.png",
+            "alt": "第1张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c1",
+          "label": "第2张",
+          "image": {
+            "src": "/images/items/exploration/diagram-e86abf05.png",
+            "alt": "第2张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c2",
+          "label": "第3张",
+          "image": {
+            "src": "/images/items/exploration/diagram-6964a49.png",
+            "alt": "第3张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c3",
+          "label": "第4张",
+          "image": {
+            "src": "/images/items/exploration/diagram-776fadc4.png",
+            "alt": "第4张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c4",
+          "label": "第5张",
+          "image": {
+            "src": "/images/items/exploration/diagram-4db6e41.png",
+            "alt": "第5张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c5",
+          "label": "第6张",
+          "image": {
+            "src": "/images/items/exploration/diagram-4d6d100d.png",
+            "alt": "第6张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c6",
+          "label": "第7张",
+          "image": {
+            "src": "/images/items/exploration/diagram-124ee1e3.png",
+            "alt": "第7张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c7",
+          "label": "第8张",
+          "image": {
+            "src": "/images/items/exploration/diagram-83c7c2c8.png",
+            "alt": "第8张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c8",
+          "label": "第9张",
+          "image": {
+            "src": "/images/items/exploration/diagram-b5760604.png",
+            "alt": "第9张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        }
+      ]
+    },
+    {
+      "ids": [
+        "explore-attention-search-2"
+      ],
+      "field": "expectedTokenIds",
+      "current": "afac64cf11782e3c016d7376b19454989e9eddee9af9dcb663c52bbb34c7ab96",
+      "previous": [
+        "c0",
+        "c3",
+        "c6"
+      ]
+    },
+    {
+      "ids": [
+        "explore-attention-search-3"
+      ],
+      "field": "tokens",
+      "current": "5bb2e136344a45b46331db9464b03893fd8f1a09ae3d258e61824f5290a8bcf6",
+      "previous": [
+        {
+          "id": "c0",
+          "label": "第1张",
+          "image": {
+            "src": "/images/items/exploration/diagram-e86abf05.png",
+            "alt": "第1张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c1",
+          "label": "第2张",
+          "image": {
+            "src": "/images/items/exploration/diagram-6964a49.png",
+            "alt": "第2张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c2",
+          "label": "第3张",
+          "image": {
+            "src": "/images/items/exploration/diagram-a7d48458.png",
+            "alt": "第3张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c3",
+          "label": "第4张",
+          "image": {
+            "src": "/images/items/exploration/diagram-4db6e41.png",
+            "alt": "第4张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c4",
+          "label": "第5张",
+          "image": {
+            "src": "/images/items/exploration/diagram-4d6d100d.png",
+            "alt": "第5张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c5",
+          "label": "第6张",
+          "image": {
+            "src": "/images/items/exploration/diagram-776fadc4.png",
+            "alt": "第6张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c6",
+          "label": "第7张",
+          "image": {
+            "src": "/images/items/exploration/diagram-83c7c2c8.png",
+            "alt": "第7张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c7",
+          "label": "第8张",
+          "image": {
+            "src": "/images/items/exploration/diagram-b5760604.png",
+            "alt": "第8张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c8",
+          "label": "第9张",
+          "image": {
+            "src": "/images/items/exploration/diagram-124ee1e3.png",
+            "alt": "第9张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        }
+      ]
+    },
+    {
+      "ids": [
+        "explore-attention-search-3"
+      ],
+      "field": "expectedTokenIds",
+      "current": "a451fad9eafac53855af46b04a4c5d4ea67d2177c6f61233b06e43bffe6e8660",
+      "previous": [
+        "c0",
+        "c3",
+        "c6"
+      ]
+    },
+    {
+      "ids": [
+        "explore-attention-search-4"
+      ],
+      "field": "tokens",
+      "current": "8485912683153c26e70e4550e45aa238683c637de92bd1831cb8a8eb1281e255",
+      "previous": [
+        {
+          "id": "c0",
+          "label": "第1张",
+          "image": {
+            "src": "/images/items/exploration/diagram-6964a49.png",
+            "alt": "第1张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c1",
+          "label": "第2张",
+          "image": {
+            "src": "/images/items/exploration/diagram-a7d48458.png",
+            "alt": "第2张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c2",
+          "label": "第3张",
+          "image": {
+            "src": "/images/items/exploration/diagram-e86abf05.png",
+            "alt": "第3张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c3",
+          "label": "第4张",
+          "image": {
+            "src": "/images/items/exploration/diagram-4d6d100d.png",
+            "alt": "第4张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c4",
+          "label": "第5张",
+          "image": {
+            "src": "/images/items/exploration/diagram-776fadc4.png",
+            "alt": "第5张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c5",
+          "label": "第6张",
+          "image": {
+            "src": "/images/items/exploration/diagram-4db6e41.png",
+            "alt": "第6张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c6",
+          "label": "第7张",
+          "image": {
+            "src": "/images/items/exploration/diagram-b5760604.png",
+            "alt": "第7张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c7",
+          "label": "第8张",
+          "image": {
+            "src": "/images/items/exploration/diagram-124ee1e3.png",
+            "alt": "第8张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c8",
+          "label": "第9张",
+          "image": {
+            "src": "/images/items/exploration/diagram-83c7c2c8.png",
+            "alt": "第9张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c9",
+          "label": "第10张",
+          "image": {
+            "src": "/images/items/exploration/diagram-6964a49.png",
+            "alt": "第10张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c10",
+          "label": "第11张",
+          "image": {
+            "src": "/images/items/exploration/diagram-a7d48458.png",
+            "alt": "第11张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c11",
+          "label": "第12张",
+          "image": {
+            "src": "/images/items/exploration/diagram-e86abf05.png",
+            "alt": "第12张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c12",
+          "label": "第13张",
+          "image": {
+            "src": "/images/items/exploration/diagram-4d6d100d.png",
+            "alt": "第13张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c13",
+          "label": "第14张",
+          "image": {
+            "src": "/images/items/exploration/diagram-776fadc4.png",
+            "alt": "第14张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c14",
+          "label": "第15张",
+          "image": {
+            "src": "/images/items/exploration/diagram-4db6e41.png",
+            "alt": "第15张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        }
+      ]
+    },
+    {
+      "ids": [
+        "explore-attention-search-4"
+      ],
+      "field": "expectedTokenIds",
+      "current": "c0c880813e6beeaec1c64065820b0390c1a7dfd8101aa81d7287e221f0057641",
+      "previous": [
+        "c3",
+        "c12"
+      ]
+    },
+    {
+      "ids": [
+        "explore-attention-search-5"
+      ],
+      "field": "tokens",
+      "current": "e6857eafa29c575bc109a5e7570bb93fe7bd76ba9e148ad3b15238417c701b9c",
+      "previous": [
+        {
+          "id": "c0",
+          "label": "第1张",
+          "image": {
+            "src": "/images/items/exploration/diagram-a7d48458.png",
+            "alt": "第1张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c1",
+          "label": "第2张",
+          "image": {
+            "src": "/images/items/exploration/diagram-e86abf05.png",
+            "alt": "第2张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c2",
+          "label": "第3张",
+          "image": {
+            "src": "/images/items/exploration/diagram-6964a49.png",
+            "alt": "第3张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c3",
+          "label": "第4张",
+          "image": {
+            "src": "/images/items/exploration/diagram-776fadc4.png",
+            "alt": "第4张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c4",
+          "label": "第5张",
+          "image": {
+            "src": "/images/items/exploration/diagram-4db6e41.png",
+            "alt": "第5张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c5",
+          "label": "第6张",
+          "image": {
+            "src": "/images/items/exploration/diagram-4d6d100d.png",
+            "alt": "第6张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c6",
+          "label": "第7张",
+          "image": {
+            "src": "/images/items/exploration/diagram-124ee1e3.png",
+            "alt": "第7张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c7",
+          "label": "第8张",
+          "image": {
+            "src": "/images/items/exploration/diagram-83c7c2c8.png",
+            "alt": "第8张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c8",
+          "label": "第9张",
+          "image": {
+            "src": "/images/items/exploration/diagram-b5760604.png",
+            "alt": "第9张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c9",
+          "label": "第10张",
+          "image": {
+            "src": "/images/items/exploration/diagram-a7d48458.png",
+            "alt": "第10张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c10",
+          "label": "第11张",
+          "image": {
+            "src": "/images/items/exploration/diagram-e86abf05.png",
+            "alt": "第11张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c11",
+          "label": "第12张",
+          "image": {
+            "src": "/images/items/exploration/diagram-6964a49.png",
+            "alt": "第12张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c12",
+          "label": "第13张",
+          "image": {
+            "src": "/images/items/exploration/diagram-776fadc4.png",
+            "alt": "第13张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c13",
+          "label": "第14张",
+          "image": {
+            "src": "/images/items/exploration/diagram-4db6e41.png",
+            "alt": "第14张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c14",
+          "label": "第15张",
+          "image": {
+            "src": "/images/items/exploration/diagram-4d6d100d.png",
+            "alt": "第15张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        }
+      ]
+    },
+    {
+      "ids": [
+        "explore-attention-search-5"
+      ],
+      "field": "expectedTokenIds",
+      "current": "7e4336a31a0f4eb9e5d4d7fcedcc9b1bf64a96a812527fd26f90f8cccc3d4c65",
+      "previous": [
+        "c3",
+        "c12"
+      ]
+    },
+    {
+      "ids": [
+        "explore-attention-search-6"
+      ],
+      "field": "tokens",
+      "current": "1e713f6475e79164aa205c865ef4d5b18c12debda98b4444da68ef835367fe84",
+      "previous": [
+        {
+          "id": "c0",
+          "label": "第1张",
+          "image": {
+            "src": "/images/items/exploration/diagram-e86abf05.png",
+            "alt": "第1张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c1",
+          "label": "第2张",
+          "image": {
+            "src": "/images/items/exploration/diagram-6964a49.png",
+            "alt": "第2张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c2",
+          "label": "第3张",
+          "image": {
+            "src": "/images/items/exploration/diagram-a7d48458.png",
+            "alt": "第3张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c3",
+          "label": "第4张",
+          "image": {
+            "src": "/images/items/exploration/diagram-4db6e41.png",
+            "alt": "第4张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c4",
+          "label": "第5张",
+          "image": {
+            "src": "/images/items/exploration/diagram-4d6d100d.png",
+            "alt": "第5张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c5",
+          "label": "第6张",
+          "image": {
+            "src": "/images/items/exploration/diagram-776fadc4.png",
+            "alt": "第6张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c6",
+          "label": "第7张",
+          "image": {
+            "src": "/images/items/exploration/diagram-83c7c2c8.png",
+            "alt": "第7张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c7",
+          "label": "第8张",
+          "image": {
+            "src": "/images/items/exploration/diagram-b5760604.png",
+            "alt": "第8张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c8",
+          "label": "第9张",
+          "image": {
+            "src": "/images/items/exploration/diagram-124ee1e3.png",
+            "alt": "第9张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c9",
+          "label": "第10张",
+          "image": {
+            "src": "/images/items/exploration/diagram-e86abf05.png",
+            "alt": "第10张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c10",
+          "label": "第11张",
+          "image": {
+            "src": "/images/items/exploration/diagram-6964a49.png",
+            "alt": "第11张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c11",
+          "label": "第12张",
+          "image": {
+            "src": "/images/items/exploration/diagram-a7d48458.png",
+            "alt": "第12张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c12",
+          "label": "第13张",
+          "image": {
+            "src": "/images/items/exploration/diagram-4db6e41.png",
+            "alt": "第13张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c13",
+          "label": "第14张",
+          "image": {
+            "src": "/images/items/exploration/diagram-4d6d100d.png",
+            "alt": "第14张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c14",
+          "label": "第15张",
+          "image": {
+            "src": "/images/items/exploration/diagram-776fadc4.png",
+            "alt": "第15张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        }
+      ]
+    },
+    {
+      "ids": [
+        "explore-attention-search-6"
+      ],
+      "field": "expectedTokenIds",
+      "current": "42edfd9a4502d4ce5605c4a091ed5524c681f9d28c0ad7227da37298b5019db9",
+      "previous": [
+        "c3",
+        "c12"
+      ]
+    },
+    {
+      "ids": [
+        "explore-attention-search-7"
+      ],
+      "field": "tokens",
+      "current": "5e014840483012f6263a450b9590b30d02c9c995d3aa2c66dfb94c5b57605115",
+      "previous": [
+        {
+          "id": "c0",
+          "label": "第1张",
+          "image": {
+            "src": "/images/items/exploration/diagram-6964a49.png",
+            "alt": "第1张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c1",
+          "label": "第2张",
+          "image": {
+            "src": "/images/items/exploration/diagram-a7d48458.png",
+            "alt": "第2张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c2",
+          "label": "第3张",
+          "image": {
+            "src": "/images/items/exploration/diagram-e86abf05.png",
+            "alt": "第3张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c3",
+          "label": "第4张",
+          "image": {
+            "src": "/images/items/exploration/diagram-4d6d100d.png",
+            "alt": "第4张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c4",
+          "label": "第5张",
+          "image": {
+            "src": "/images/items/exploration/diagram-776fadc4.png",
+            "alt": "第5张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c5",
+          "label": "第6张",
+          "image": {
+            "src": "/images/items/exploration/diagram-4db6e41.png",
+            "alt": "第6张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c6",
+          "label": "第7张",
+          "image": {
+            "src": "/images/items/exploration/diagram-b5760604.png",
+            "alt": "第7张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c7",
+          "label": "第8张",
+          "image": {
+            "src": "/images/items/exploration/diagram-124ee1e3.png",
+            "alt": "第8张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c8",
+          "label": "第9张",
+          "image": {
+            "src": "/images/items/exploration/diagram-83c7c2c8.png",
+            "alt": "第9张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c9",
+          "label": "第10张",
+          "image": {
+            "src": "/images/items/exploration/diagram-6964a49.png",
+            "alt": "第10张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c10",
+          "label": "第11张",
+          "image": {
+            "src": "/images/items/exploration/diagram-a7d48458.png",
+            "alt": "第11张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c11",
+          "label": "第12张",
+          "image": {
+            "src": "/images/items/exploration/diagram-e86abf05.png",
+            "alt": "第12张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c12",
+          "label": "第13张",
+          "image": {
+            "src": "/images/items/exploration/diagram-4d6d100d.png",
+            "alt": "第13张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c13",
+          "label": "第14张",
+          "image": {
+            "src": "/images/items/exploration/diagram-776fadc4.png",
+            "alt": "第14张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c14",
+          "label": "第15张",
+          "image": {
+            "src": "/images/items/exploration/diagram-4db6e41.png",
+            "alt": "第15张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c15",
+          "label": "第16张",
+          "image": {
+            "src": "/images/items/exploration/diagram-b5760604.png",
+            "alt": "第16张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c16",
+          "label": "第17张",
+          "image": {
+            "src": "/images/items/exploration/diagram-124ee1e3.png",
+            "alt": "第17张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c17",
+          "label": "第18张",
+          "image": {
+            "src": "/images/items/exploration/diagram-83c7c2c8.png",
+            "alt": "第18张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c18",
+          "label": "第19张",
+          "image": {
+            "src": "/images/items/exploration/diagram-6964a49.png",
+            "alt": "第19张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c19",
+          "label": "第20张",
+          "image": {
+            "src": "/images/items/exploration/diagram-a7d48458.png",
+            "alt": "第20张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c20",
+          "label": "第21张",
+          "image": {
+            "src": "/images/items/exploration/diagram-e86abf05.png",
+            "alt": "第21张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        }
+      ]
+    },
+    {
+      "ids": [
+        "explore-attention-search-7"
+      ],
+      "field": "expectedTokenIds",
+      "current": "39f91113c587c4b683616aa4a538082707f447089d9169a5e02226c9999438d8",
+      "previous": [
+        "c7",
+        "c8",
+        "c16",
+        "c17"
+      ]
+    },
+    {
+      "ids": [
+        "explore-attention-search-8"
+      ],
+      "field": "tokens",
+      "current": "aadf3212fc2642910d4a3d56488c4fac74b0fe062df922dce5d5c775ecb52d2e",
+      "previous": [
+        {
+          "id": "c0",
+          "label": "第1张",
+          "image": {
+            "src": "/images/items/exploration/diagram-a7d48458.png",
+            "alt": "第1张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c1",
+          "label": "第2张",
+          "image": {
+            "src": "/images/items/exploration/diagram-e86abf05.png",
+            "alt": "第2张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c2",
+          "label": "第3张",
+          "image": {
+            "src": "/images/items/exploration/diagram-6964a49.png",
+            "alt": "第3张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c3",
+          "label": "第4张",
+          "image": {
+            "src": "/images/items/exploration/diagram-776fadc4.png",
+            "alt": "第4张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c4",
+          "label": "第5张",
+          "image": {
+            "src": "/images/items/exploration/diagram-4db6e41.png",
+            "alt": "第5张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c5",
+          "label": "第6张",
+          "image": {
+            "src": "/images/items/exploration/diagram-4d6d100d.png",
+            "alt": "第6张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c6",
+          "label": "第7张",
+          "image": {
+            "src": "/images/items/exploration/diagram-124ee1e3.png",
+            "alt": "第7张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c7",
+          "label": "第8张",
+          "image": {
+            "src": "/images/items/exploration/diagram-83c7c2c8.png",
+            "alt": "第8张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c8",
+          "label": "第9张",
+          "image": {
+            "src": "/images/items/exploration/diagram-b5760604.png",
+            "alt": "第9张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c9",
+          "label": "第10张",
+          "image": {
+            "src": "/images/items/exploration/diagram-a7d48458.png",
+            "alt": "第10张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c10",
+          "label": "第11张",
+          "image": {
+            "src": "/images/items/exploration/diagram-e86abf05.png",
+            "alt": "第11张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c11",
+          "label": "第12张",
+          "image": {
+            "src": "/images/items/exploration/diagram-6964a49.png",
+            "alt": "第12张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c12",
+          "label": "第13张",
+          "image": {
+            "src": "/images/items/exploration/diagram-776fadc4.png",
+            "alt": "第13张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c13",
+          "label": "第14张",
+          "image": {
+            "src": "/images/items/exploration/diagram-4db6e41.png",
+            "alt": "第14张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c14",
+          "label": "第15张",
+          "image": {
+            "src": "/images/items/exploration/diagram-4d6d100d.png",
+            "alt": "第15张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c15",
+          "label": "第16张",
+          "image": {
+            "src": "/images/items/exploration/diagram-124ee1e3.png",
+            "alt": "第16张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c16",
+          "label": "第17张",
+          "image": {
+            "src": "/images/items/exploration/diagram-83c7c2c8.png",
+            "alt": "第17张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c17",
+          "label": "第18张",
+          "image": {
+            "src": "/images/items/exploration/diagram-b5760604.png",
+            "alt": "第18张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c18",
+          "label": "第19张",
+          "image": {
+            "src": "/images/items/exploration/diagram-a7d48458.png",
+            "alt": "第19张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c19",
+          "label": "第20张",
+          "image": {
+            "src": "/images/items/exploration/diagram-e86abf05.png",
+            "alt": "第20张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c20",
+          "label": "第21张",
+          "image": {
+            "src": "/images/items/exploration/diagram-6964a49.png",
+            "alt": "第21张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        }
+      ]
+    },
+    {
+      "ids": [
+        "explore-attention-search-8"
+      ],
+      "field": "expectedTokenIds",
+      "current": "d0fd66514a5fe3ac33ebcf44978d2ef36632b843dfbb2554f1f76b77a269c17f",
+      "previous": [
+        "c7",
+        "c8",
+        "c16",
+        "c17"
+      ]
+    },
+    {
+      "ids": [
+        "explore-attention-search-9"
+      ],
+      "field": "tokens",
+      "current": "cc32e02a6e7b9a94580e385abe6dcfc6742312f094a877bbea6c249238edd066",
+      "previous": [
+        {
+          "id": "c0",
+          "label": "第1张",
+          "image": {
+            "src": "/images/items/exploration/diagram-e86abf05.png",
+            "alt": "第1张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c1",
+          "label": "第2张",
+          "image": {
+            "src": "/images/items/exploration/diagram-6964a49.png",
+            "alt": "第2张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c2",
+          "label": "第3张",
+          "image": {
+            "src": "/images/items/exploration/diagram-a7d48458.png",
+            "alt": "第3张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c3",
+          "label": "第4张",
+          "image": {
+            "src": "/images/items/exploration/diagram-4db6e41.png",
+            "alt": "第4张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c4",
+          "label": "第5张",
+          "image": {
+            "src": "/images/items/exploration/diagram-4d6d100d.png",
+            "alt": "第5张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c5",
+          "label": "第6张",
+          "image": {
+            "src": "/images/items/exploration/diagram-776fadc4.png",
+            "alt": "第6张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c6",
+          "label": "第7张",
+          "image": {
+            "src": "/images/items/exploration/diagram-83c7c2c8.png",
+            "alt": "第7张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c7",
+          "label": "第8张",
+          "image": {
+            "src": "/images/items/exploration/diagram-b5760604.png",
+            "alt": "第8张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c8",
+          "label": "第9张",
+          "image": {
+            "src": "/images/items/exploration/diagram-124ee1e3.png",
+            "alt": "第9张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c9",
+          "label": "第10张",
+          "image": {
+            "src": "/images/items/exploration/diagram-e86abf05.png",
+            "alt": "第10张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c10",
+          "label": "第11张",
+          "image": {
+            "src": "/images/items/exploration/diagram-6964a49.png",
+            "alt": "第11张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c11",
+          "label": "第12张",
+          "image": {
+            "src": "/images/items/exploration/diagram-a7d48458.png",
+            "alt": "第12张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c12",
+          "label": "第13张",
+          "image": {
+            "src": "/images/items/exploration/diagram-4db6e41.png",
+            "alt": "第13张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c13",
+          "label": "第14张",
+          "image": {
+            "src": "/images/items/exploration/diagram-4d6d100d.png",
+            "alt": "第14张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c14",
+          "label": "第15张",
+          "image": {
+            "src": "/images/items/exploration/diagram-776fadc4.png",
+            "alt": "第15张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c15",
+          "label": "第16张",
+          "image": {
+            "src": "/images/items/exploration/diagram-83c7c2c8.png",
+            "alt": "第16张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c16",
+          "label": "第17张",
+          "image": {
+            "src": "/images/items/exploration/diagram-b5760604.png",
+            "alt": "第17张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c17",
+          "label": "第18张",
+          "image": {
+            "src": "/images/items/exploration/diagram-124ee1e3.png",
+            "alt": "第18张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c18",
+          "label": "第19张",
+          "image": {
+            "src": "/images/items/exploration/diagram-e86abf05.png",
+            "alt": "第19张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c19",
+          "label": "第20张",
+          "image": {
+            "src": "/images/items/exploration/diagram-6964a49.png",
+            "alt": "第20张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "c20",
+          "label": "第21张",
+          "image": {
+            "src": "/images/items/exploration/diagram-a7d48458.png",
+            "alt": "第21张",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        }
+      ]
+    },
+    {
+      "ids": [
+        "explore-attention-search-9"
+      ],
+      "field": "expectedTokenIds",
+      "current": "52ba518d163f2bce570eac171bdbe5776cb6b0226dd60472b7505b0456e551a5",
+      "previous": [
+        "c7",
+        "c8",
+        "c16",
+        "c17"
+      ]
+    },
+    {
+      "ids": [
+        "explore-relational-quantity-memory-1"
+      ],
+      "field": "tokens",
+      "current": "2d18e7d81c7a9dd85a61c791089f309cd7ff1911a4d652dc90643a178c9a30b1",
+      "previous": [
+        {
+          "id": "rabbit",
+          "label": "小兔",
+          "image": {
+            "src": "/images/characters/rabbit.png",
+            "alt": "小兔头像"
+          },
+          "textOnly": false
+        },
+        {
+          "id": "cat",
+          "label": "小猫",
+          "image": {
+            "src": "/images/characters/cat.png",
+            "alt": "小猫头像"
+          },
+          "textOnly": false
+        },
+        {
+          "id": "number0",
+          "label": "2",
+          "image": {
+            "src": "/images/items/exploration/diagram-ee0e54b3.png",
+            "alt": "2",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "number1",
+          "label": "3",
+          "image": {
+            "src": "/images/items/exploration/diagram-2f9a914.png",
+            "alt": "3",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "preview0",
+          "label": "小兔有2个",
+          "image": {
+            "src": "/images/items/exploration/diagram-c5ea9b2.png",
+            "alt": "小兔有2个",
+            "width": 600,
+            "height": 310
+          },
+          "textOnly": false,
+          "quantityPicture": {
+            "image": {
+              "src": "/images/characters/rabbit.png",
+              "alt": "小兔头像"
+            },
+            "count": 2
+          }
+        },
+        {
+          "id": "preview1",
+          "label": "小猫有3个",
+          "image": {
+            "src": "/images/items/exploration/diagram-25be2ee3.png",
+            "alt": "小猫有3个",
+            "width": 600,
+            "height": 310
+          },
+          "textOnly": false,
+          "quantityPicture": {
+            "image": {
+              "src": "/images/characters/cat.png",
+              "alt": "小猫头像"
+            },
+            "count": 3
+          }
+        }
+      ]
+    },
+    {
+      "ids": [
+        "explore-relational-quantity-memory-1",
+        "explore-relational-quantity-memory-2",
+        "explore-relational-quantity-memory-3",
+        "explore-relational-quantity-memory-4",
+        "explore-relational-quantity-memory-5",
+        "explore-relational-quantity-memory-6",
+        "explore-relational-quantity-memory-7",
+        "explore-relational-quantity-memory-8",
+        "explore-relational-quantity-memory-9"
+      ],
+      "field": "hints",
+      "current": "a02e14f592ffada7c8cee4fbce613f168f6c05c90bb6ceff72d379eef1d5abb6",
+      "previous": [
+        "先说说左边这张图卡的特点，再找对应关系。",
+        "这次回忆的是朋友和数量的关系，不只是认出朋友。"
+      ]
+    },
+    {
+      "ids": [
+        "explore-relational-quantity-memory-1",
+        "explore-relational-quantity-memory-2",
+        "explore-relational-quantity-memory-3",
+        "explore-relational-quantity-memory-4",
+        "explore-relational-quantity-memory-5",
+        "explore-relational-quantity-memory-6",
+        "explore-relational-quantity-memory-7",
+        "explore-relational-quantity-memory-8",
+        "explore-relational-quantity-memory-9"
+      ],
+      "field": "success",
+      "current": "869203edfba6480e651efd2d840b9f01f95240b1b017e4b17b012ee7b7d7ee6f",
+      "previous": "这次回忆的是朋友和数量的关系，不只是认出朋友。"
+    },
+    {
+      "ids": [
+        "explore-relational-quantity-memory-1",
+        "explore-relational-quantity-memory-3"
+      ],
+      "field": "expectedPairs",
+      "current": "39de6dbc624f6cbe438ac92fdccbe38ad17363642d134b987fb5f0d0e3c751de",
+      "previous": [
+        [
+          "rabbit",
+          "number0"
+        ],
+        [
+          "cat",
+          "number1"
+        ]
+      ]
+    },
+    {
+      "ids": [
+        "explore-relational-quantity-memory-2"
+      ],
+      "field": "tokens",
+      "current": "277c1e5e2c206b6d73110917fa5747075674849b800876ee883aaa013b335efe",
+      "previous": [
+        {
+          "id": "rabbit",
+          "label": "小兔",
+          "image": {
+            "src": "/images/characters/rabbit.png",
+            "alt": "小兔头像"
+          },
+          "textOnly": false
+        },
+        {
+          "id": "cat",
+          "label": "小猫",
+          "image": {
+            "src": "/images/characters/cat.png",
+            "alt": "小猫头像"
+          },
+          "textOnly": false
+        },
+        {
+          "id": "number0",
+          "label": "3",
+          "image": {
+            "src": "/images/items/exploration/diagram-2f9a914.png",
+            "alt": "3",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "number1",
+          "label": "4",
+          "image": {
+            "src": "/images/items/exploration/diagram-a3b8b7c6.png",
+            "alt": "4",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "preview0",
+          "label": "小兔有3个",
+          "image": {
+            "src": "/images/items/exploration/diagram-a1a2536c.png",
+            "alt": "小兔有3个",
+            "width": 600,
+            "height": 310
+          },
+          "textOnly": false,
+          "quantityPicture": {
+            "image": {
+              "src": "/images/characters/rabbit.png",
+              "alt": "小兔头像"
+            },
+            "count": 3
+          }
+        },
+        {
+          "id": "preview1",
+          "label": "小猫有4个",
+          "image": {
+            "src": "/images/items/exploration/diagram-8c2a9c6e.png",
+            "alt": "小猫有4个",
+            "width": 600,
+            "height": 310
+          },
+          "textOnly": false,
+          "quantityPicture": {
+            "image": {
+              "src": "/images/characters/cat.png",
+              "alt": "小猫头像"
+            },
+            "count": 4
+          }
+        }
+      ]
+    },
+    {
+      "ids": [
+        "explore-relational-quantity-memory-3"
+      ],
+      "field": "tokens",
+      "current": "cc47753c9d90285624fba6dc5ac98f3e8c81e9e08961dcc868ee2f1d5b6956f0",
+      "previous": [
+        {
+          "id": "rabbit",
+          "label": "小兔",
+          "image": {
+            "src": "/images/characters/rabbit.png",
+            "alt": "小兔头像"
+          },
+          "textOnly": false
+        },
+        {
+          "id": "cat",
+          "label": "小猫",
+          "image": {
+            "src": "/images/characters/cat.png",
+            "alt": "小猫头像"
+          },
+          "textOnly": false
+        },
+        {
+          "id": "number0",
+          "label": "4",
+          "image": {
+            "src": "/images/items/exploration/diagram-a3b8b7c6.png",
+            "alt": "4",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "number1",
+          "label": "5",
+          "image": {
+            "src": "/images/items/exploration/diagram-504d6999.png",
+            "alt": "5",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "preview0",
+          "label": "小兔有4个",
+          "image": {
+            "src": "/images/items/exploration/diagram-d111cb0b.png",
+            "alt": "小兔有4个",
+            "width": 600,
+            "height": 310
+          },
+          "textOnly": false,
+          "quantityPicture": {
+            "image": {
+              "src": "/images/characters/rabbit.png",
+              "alt": "小兔头像"
+            },
+            "count": 4
+          }
+        },
+        {
+          "id": "preview1",
+          "label": "小猫有5个",
+          "image": {
+            "src": "/images/items/exploration/diagram-a88ff330.png",
+            "alt": "小猫有5个",
+            "width": 600,
+            "height": 310
+          },
+          "textOnly": false,
+          "quantityPicture": {
+            "image": {
+              "src": "/images/characters/cat.png",
+              "alt": "小猫头像"
+            },
+            "count": 5
+          }
+        }
+      ]
+    },
+    {
+      "ids": [
+        "explore-relational-quantity-memory-4"
+      ],
+      "field": "tokens",
+      "current": "7cfe51218daaee33b4912155d75a7d8e47ec06fec409ef57326c266611d86911",
+      "previous": [
+        {
+          "id": "rabbit",
+          "label": "小兔",
+          "image": {
+            "src": "/images/characters/rabbit.png",
+            "alt": "小兔头像"
+          },
+          "textOnly": false
+        },
+        {
+          "id": "cat",
+          "label": "小猫",
+          "image": {
+            "src": "/images/characters/cat.png",
+            "alt": "小猫头像"
+          },
+          "textOnly": false
+        },
+        {
+          "id": "bear",
+          "label": "小熊",
+          "image": {
+            "src": "/images/characters/bear.png",
+            "alt": "小熊头像"
+          },
+          "textOnly": false
+        },
+        {
+          "id": "number0",
+          "label": "2",
+          "image": {
+            "src": "/images/items/exploration/diagram-ee0e54b3.png",
+            "alt": "2",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "number1",
+          "label": "3",
+          "image": {
+            "src": "/images/items/exploration/diagram-2f9a914.png",
+            "alt": "3",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "number2",
+          "label": "4",
+          "image": {
+            "src": "/images/items/exploration/diagram-a3b8b7c6.png",
+            "alt": "4",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "preview0",
+          "label": "小兔有2个",
+          "image": {
+            "src": "/images/items/exploration/diagram-c5ea9b2.png",
+            "alt": "小兔有2个",
+            "width": 600,
+            "height": 310
+          },
+          "textOnly": false,
+          "quantityPicture": {
+            "image": {
+              "src": "/images/characters/rabbit.png",
+              "alt": "小兔头像"
+            },
+            "count": 2
+          }
+        },
+        {
+          "id": "preview1",
+          "label": "小猫有3个",
+          "image": {
+            "src": "/images/items/exploration/diagram-25be2ee3.png",
+            "alt": "小猫有3个",
+            "width": 600,
+            "height": 310
+          },
+          "textOnly": false,
+          "quantityPicture": {
+            "image": {
+              "src": "/images/characters/cat.png",
+              "alt": "小猫头像"
+            },
+            "count": 3
+          }
+        },
+        {
+          "id": "preview2",
+          "label": "小熊有4个",
+          "image": {
+            "src": "/images/items/exploration/diagram-4df35b25.png",
+            "alt": "小熊有4个",
+            "width": 600,
+            "height": 310
+          },
+          "textOnly": false,
+          "quantityPicture": {
+            "image": {
+              "src": "/images/characters/bear.png",
+              "alt": "小熊头像"
+            },
+            "count": 4
+          }
+        }
+      ]
+    },
+    {
+      "ids": [
+        "explore-relational-quantity-memory-4"
+      ],
+      "field": "expectedPairs",
+      "current": "df451b2c30114e8882129f4a597952525607a74bdb416ea44905c6cd838f5877",
+      "previous": [
+        [
+          "rabbit",
+          "number0"
+        ],
+        [
+          "cat",
+          "number1"
+        ],
+        [
+          "bear",
+          "number2"
+        ]
+      ]
+    },
+    {
+      "ids": [
+        "explore-relational-quantity-memory-5"
+      ],
+      "field": "tokens",
+      "current": "86c20e52f8a81194af7f6a83d122cf0e3a058b5a1d4bfc038c4ac67ebc7c771a",
+      "previous": [
+        {
+          "id": "rabbit",
+          "label": "小兔",
+          "image": {
+            "src": "/images/characters/rabbit.png",
+            "alt": "小兔头像"
+          },
+          "textOnly": false
+        },
+        {
+          "id": "cat",
+          "label": "小猫",
+          "image": {
+            "src": "/images/characters/cat.png",
+            "alt": "小猫头像"
+          },
+          "textOnly": false
+        },
+        {
+          "id": "bear",
+          "label": "小熊",
+          "image": {
+            "src": "/images/characters/bear.png",
+            "alt": "小熊头像"
+          },
+          "textOnly": false
+        },
+        {
+          "id": "number0",
+          "label": "3",
+          "image": {
+            "src": "/images/items/exploration/diagram-2f9a914.png",
+            "alt": "3",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "number1",
+          "label": "4",
+          "image": {
+            "src": "/images/items/exploration/diagram-a3b8b7c6.png",
+            "alt": "4",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "number2",
+          "label": "5",
+          "image": {
+            "src": "/images/items/exploration/diagram-504d6999.png",
+            "alt": "5",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "preview0",
+          "label": "小兔有3个",
+          "image": {
+            "src": "/images/items/exploration/diagram-a1a2536c.png",
+            "alt": "小兔有3个",
+            "width": 600,
+            "height": 310
+          },
+          "textOnly": false,
+          "quantityPicture": {
+            "image": {
+              "src": "/images/characters/rabbit.png",
+              "alt": "小兔头像"
+            },
+            "count": 3
+          }
+        },
+        {
+          "id": "preview1",
+          "label": "小猫有4个",
+          "image": {
+            "src": "/images/items/exploration/diagram-8c2a9c6e.png",
+            "alt": "小猫有4个",
+            "width": 600,
+            "height": 310
+          },
+          "textOnly": false,
+          "quantityPicture": {
+            "image": {
+              "src": "/images/characters/cat.png",
+              "alt": "小猫头像"
+            },
+            "count": 4
+          }
+        },
+        {
+          "id": "preview2",
+          "label": "小熊有5个",
+          "image": {
+            "src": "/images/items/exploration/diagram-c05103dd.png",
+            "alt": "小熊有5个",
+            "width": 600,
+            "height": 310
+          },
+          "textOnly": false,
+          "quantityPicture": {
+            "image": {
+              "src": "/images/characters/bear.png",
+              "alt": "小熊头像"
+            },
+            "count": 5
+          }
+        }
+      ]
+    },
+    {
+      "ids": [
+        "explore-relational-quantity-memory-5"
+      ],
+      "field": "expectedPairs",
+      "current": "fdda5739b53dc971361e5db22cc5b1be6dd6c893c8466dd49df6ada319eabe35",
+      "previous": [
+        [
+          "rabbit",
+          "number0"
+        ],
+        [
+          "cat",
+          "number1"
+        ],
+        [
+          "bear",
+          "number2"
+        ]
+      ]
+    },
+    {
+      "ids": [
+        "explore-relational-quantity-memory-6"
+      ],
+      "field": "tokens",
+      "current": "b88715773e0f4287aa9fdb7cb1fe1e6510a4ac44c9c0cc8246e7ad9ad42c4397",
+      "previous": [
+        {
+          "id": "rabbit",
+          "label": "小兔",
+          "image": {
+            "src": "/images/characters/rabbit.png",
+            "alt": "小兔头像"
+          },
+          "textOnly": false
+        },
+        {
+          "id": "cat",
+          "label": "小猫",
+          "image": {
+            "src": "/images/characters/cat.png",
+            "alt": "小猫头像"
+          },
+          "textOnly": false
+        },
+        {
+          "id": "bear",
+          "label": "小熊",
+          "image": {
+            "src": "/images/characters/bear.png",
+            "alt": "小熊头像"
+          },
+          "textOnly": false
+        },
+        {
+          "id": "number0",
+          "label": "4",
+          "image": {
+            "src": "/images/items/exploration/diagram-a3b8b7c6.png",
+            "alt": "4",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "number1",
+          "label": "5",
+          "image": {
+            "src": "/images/items/exploration/diagram-504d6999.png",
+            "alt": "5",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "number2",
+          "label": "6",
+          "image": {
+            "src": "/images/items/exploration/diagram-f8f79e83.png",
+            "alt": "6",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "preview0",
+          "label": "小兔有4个",
+          "image": {
+            "src": "/images/items/exploration/diagram-d111cb0b.png",
+            "alt": "小兔有4个",
+            "width": 600,
+            "height": 310
+          },
+          "textOnly": false,
+          "quantityPicture": {
+            "image": {
+              "src": "/images/characters/rabbit.png",
+              "alt": "小兔头像"
+            },
+            "count": 4
+          }
+        },
+        {
+          "id": "preview1",
+          "label": "小猫有5个",
+          "image": {
+            "src": "/images/items/exploration/diagram-a88ff330.png",
+            "alt": "小猫有5个",
+            "width": 600,
+            "height": 310
+          },
+          "textOnly": false,
+          "quantityPicture": {
+            "image": {
+              "src": "/images/characters/cat.png",
+              "alt": "小猫头像"
+            },
+            "count": 5
+          }
+        },
+        {
+          "id": "preview2",
+          "label": "小熊有6个",
+          "image": {
+            "src": "/images/items/exploration/diagram-c1fcb520.png",
+            "alt": "小熊有6个",
+            "width": 600,
+            "height": 310
+          },
+          "textOnly": false,
+          "quantityPicture": {
+            "image": {
+              "src": "/images/characters/bear.png",
+              "alt": "小熊头像"
+            },
+            "count": 6
+          }
+        }
+      ]
+    },
+    {
+      "ids": [
+        "explore-relational-quantity-memory-6"
+      ],
+      "field": "expectedPairs",
+      "current": "ce78ca6dcea8c132fec5444a544147b95da33204f88724742d905e9cc5f6776f",
+      "previous": [
+        [
+          "rabbit",
+          "number0"
+        ],
+        [
+          "cat",
+          "number1"
+        ],
+        [
+          "bear",
+          "number2"
+        ]
+      ]
+    },
+    {
+      "ids": [
+        "explore-relational-quantity-memory-7"
+      ],
+      "field": "tokens",
+      "current": "59b90020fd80dc71c7487ae3beb55b77bb5f438a584e7fa446044808ed461a59",
+      "previous": [
+        {
+          "id": "rabbit",
+          "label": "小兔",
+          "image": {
+            "src": "/images/characters/rabbit.png",
+            "alt": "小兔头像"
+          },
+          "textOnly": false
+        },
+        {
+          "id": "cat",
+          "label": "小猫",
+          "image": {
+            "src": "/images/characters/cat.png",
+            "alt": "小猫头像"
+          },
+          "textOnly": false
+        },
+        {
+          "id": "bear",
+          "label": "小熊",
+          "image": {
+            "src": "/images/characters/bear.png",
+            "alt": "小熊头像"
+          },
+          "textOnly": false
+        },
+        {
+          "id": "dog",
+          "label": "小狗",
+          "image": {
+            "src": "/images/characters/dog.png",
+            "alt": "小狗头像"
+          },
+          "textOnly": false
+        },
+        {
+          "id": "number0",
+          "label": "2",
+          "image": {
+            "src": "/images/items/exploration/diagram-ee0e54b3.png",
+            "alt": "2",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "number1",
+          "label": "3",
+          "image": {
+            "src": "/images/items/exploration/diagram-2f9a914.png",
+            "alt": "3",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "number2",
+          "label": "4",
+          "image": {
+            "src": "/images/items/exploration/diagram-a3b8b7c6.png",
+            "alt": "4",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "number3",
+          "label": "5",
+          "image": {
+            "src": "/images/items/exploration/diagram-504d6999.png",
+            "alt": "5",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "preview0",
+          "label": "小兔有2个",
+          "image": {
+            "src": "/images/items/exploration/diagram-c5ea9b2.png",
+            "alt": "小兔有2个",
+            "width": 600,
+            "height": 310
+          },
+          "textOnly": false,
+          "quantityPicture": {
+            "image": {
+              "src": "/images/characters/rabbit.png",
+              "alt": "小兔头像"
+            },
+            "count": 2
+          }
+        },
+        {
+          "id": "preview1",
+          "label": "小猫有3个",
+          "image": {
+            "src": "/images/items/exploration/diagram-25be2ee3.png",
+            "alt": "小猫有3个",
+            "width": 600,
+            "height": 310
+          },
+          "textOnly": false,
+          "quantityPicture": {
+            "image": {
+              "src": "/images/characters/cat.png",
+              "alt": "小猫头像"
+            },
+            "count": 3
+          }
+        },
+        {
+          "id": "preview2",
+          "label": "小熊有4个",
+          "image": {
+            "src": "/images/items/exploration/diagram-4df35b25.png",
+            "alt": "小熊有4个",
+            "width": 600,
+            "height": 310
+          },
+          "textOnly": false,
+          "quantityPicture": {
+            "image": {
+              "src": "/images/characters/bear.png",
+              "alt": "小熊头像"
+            },
+            "count": 4
+          }
+        },
+        {
+          "id": "preview3",
+          "label": "小狗有5个",
+          "image": {
+            "src": "/images/items/exploration/diagram-6ffc09d4.png",
+            "alt": "小狗有5个",
+            "width": 600,
+            "height": 310
+          },
+          "textOnly": false,
+          "quantityPicture": {
+            "image": {
+              "src": "/images/characters/dog.png",
+              "alt": "小狗头像"
+            },
+            "count": 5
+          }
+        }
+      ]
+    },
+    {
+      "ids": [
+        "explore-relational-quantity-memory-7"
+      ],
+      "field": "expectedPairs",
+      "current": "e31725360e4c281c4f1e4b307ba113e0a5a3ed4db937be2b801c1729b66f50b9",
+      "previous": [
+        [
+          "rabbit",
+          "number0"
+        ],
+        [
+          "cat",
+          "number1"
+        ],
+        [
+          "bear",
+          "number2"
+        ],
+        [
+          "dog",
+          "number3"
+        ]
+      ]
+    },
+    {
+      "ids": [
+        "explore-relational-quantity-memory-8"
+      ],
+      "field": "tokens",
+      "current": "fd44884309a5d2a8c52b4fcfe736e2517078f1c9b2530d0ee6f61c64e1849af5",
+      "previous": [
+        {
+          "id": "rabbit",
+          "label": "小兔",
+          "image": {
+            "src": "/images/characters/rabbit.png",
+            "alt": "小兔头像"
+          },
+          "textOnly": false
+        },
+        {
+          "id": "cat",
+          "label": "小猫",
+          "image": {
+            "src": "/images/characters/cat.png",
+            "alt": "小猫头像"
+          },
+          "textOnly": false
+        },
+        {
+          "id": "bear",
+          "label": "小熊",
+          "image": {
+            "src": "/images/characters/bear.png",
+            "alt": "小熊头像"
+          },
+          "textOnly": false
+        },
+        {
+          "id": "dog",
+          "label": "小狗",
+          "image": {
+            "src": "/images/characters/dog.png",
+            "alt": "小狗头像"
+          },
+          "textOnly": false
+        },
+        {
+          "id": "number0",
+          "label": "3",
+          "image": {
+            "src": "/images/items/exploration/diagram-2f9a914.png",
+            "alt": "3",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "number1",
+          "label": "4",
+          "image": {
+            "src": "/images/items/exploration/diagram-a3b8b7c6.png",
+            "alt": "4",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "number2",
+          "label": "5",
+          "image": {
+            "src": "/images/items/exploration/diagram-504d6999.png",
+            "alt": "5",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "number3",
+          "label": "6",
+          "image": {
+            "src": "/images/items/exploration/diagram-f8f79e83.png",
+            "alt": "6",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "preview0",
+          "label": "小兔有3个",
+          "image": {
+            "src": "/images/items/exploration/diagram-a1a2536c.png",
+            "alt": "小兔有3个",
+            "width": 600,
+            "height": 310
+          },
+          "textOnly": false,
+          "quantityPicture": {
+            "image": {
+              "src": "/images/characters/rabbit.png",
+              "alt": "小兔头像"
+            },
+            "count": 3
+          }
+        },
+        {
+          "id": "preview1",
+          "label": "小猫有4个",
+          "image": {
+            "src": "/images/items/exploration/diagram-8c2a9c6e.png",
+            "alt": "小猫有4个",
+            "width": 600,
+            "height": 310
+          },
+          "textOnly": false,
+          "quantityPicture": {
+            "image": {
+              "src": "/images/characters/cat.png",
+              "alt": "小猫头像"
+            },
+            "count": 4
+          }
+        },
+        {
+          "id": "preview2",
+          "label": "小熊有5个",
+          "image": {
+            "src": "/images/items/exploration/diagram-c05103dd.png",
+            "alt": "小熊有5个",
+            "width": 600,
+            "height": 310
+          },
+          "textOnly": false,
+          "quantityPicture": {
+            "image": {
+              "src": "/images/characters/bear.png",
+              "alt": "小熊头像"
+            },
+            "count": 5
+          }
+        },
+        {
+          "id": "preview3",
+          "label": "小狗有6个",
+          "image": {
+            "src": "/images/items/exploration/diagram-859cb427.png",
+            "alt": "小狗有6个",
+            "width": 600,
+            "height": 310
+          },
+          "textOnly": false,
+          "quantityPicture": {
+            "image": {
+              "src": "/images/characters/dog.png",
+              "alt": "小狗头像"
+            },
+            "count": 6
+          }
+        }
+      ]
+    },
+    {
+      "ids": [
+        "explore-relational-quantity-memory-8"
+      ],
+      "field": "expectedPairs",
+      "current": "768068ee31b0524d5b81948764c3c7e2420475344fef371e6432cbee16f482e0",
+      "previous": [
+        [
+          "rabbit",
+          "number0"
+        ],
+        [
+          "cat",
+          "number1"
+        ],
+        [
+          "bear",
+          "number2"
+        ],
+        [
+          "dog",
+          "number3"
+        ]
+      ]
+    },
+    {
+      "ids": [
+        "explore-relational-quantity-memory-9"
+      ],
+      "field": "tokens",
+      "current": "7ee7050aa465a20a7f6d52f82bfd5033bac33d6a409d1251a39970bbd58c816a",
+      "previous": [
+        {
+          "id": "rabbit",
+          "label": "小兔",
+          "image": {
+            "src": "/images/characters/rabbit.png",
+            "alt": "小兔头像"
+          },
+          "textOnly": false
+        },
+        {
+          "id": "cat",
+          "label": "小猫",
+          "image": {
+            "src": "/images/characters/cat.png",
+            "alt": "小猫头像"
+          },
+          "textOnly": false
+        },
+        {
+          "id": "bear",
+          "label": "小熊",
+          "image": {
+            "src": "/images/characters/bear.png",
+            "alt": "小熊头像"
+          },
+          "textOnly": false
+        },
+        {
+          "id": "dog",
+          "label": "小狗",
+          "image": {
+            "src": "/images/characters/dog.png",
+            "alt": "小狗头像"
+          },
+          "textOnly": false
+        },
+        {
+          "id": "number0",
+          "label": "4",
+          "image": {
+            "src": "/images/items/exploration/diagram-a3b8b7c6.png",
+            "alt": "4",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "number1",
+          "label": "5",
+          "image": {
+            "src": "/images/items/exploration/diagram-504d6999.png",
+            "alt": "5",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "number2",
+          "label": "6",
+          "image": {
+            "src": "/images/items/exploration/diagram-f8f79e83.png",
+            "alt": "6",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "number3",
+          "label": "7",
+          "image": {
+            "src": "/images/items/exploration/diagram-18801950.png",
+            "alt": "7",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "preview0",
+          "label": "小兔有4个",
+          "image": {
+            "src": "/images/items/exploration/diagram-d111cb0b.png",
+            "alt": "小兔有4个",
+            "width": 600,
+            "height": 310
+          },
+          "textOnly": false,
+          "quantityPicture": {
+            "image": {
+              "src": "/images/characters/rabbit.png",
+              "alt": "小兔头像"
+            },
+            "count": 4
+          }
+        },
+        {
+          "id": "preview1",
+          "label": "小猫有5个",
+          "image": {
+            "src": "/images/items/exploration/diagram-a88ff330.png",
+            "alt": "小猫有5个",
+            "width": 600,
+            "height": 310
+          },
+          "textOnly": false,
+          "quantityPicture": {
+            "image": {
+              "src": "/images/characters/cat.png",
+              "alt": "小猫头像"
+            },
+            "count": 5
+          }
+        },
+        {
+          "id": "preview2",
+          "label": "小熊有6个",
+          "image": {
+            "src": "/images/items/exploration/diagram-c1fcb520.png",
+            "alt": "小熊有6个",
+            "width": 600,
+            "height": 310
+          },
+          "textOnly": false,
+          "quantityPicture": {
+            "image": {
+              "src": "/images/characters/bear.png",
+              "alt": "小熊头像"
+            },
+            "count": 6
+          }
+        },
+        {
+          "id": "preview3",
+          "label": "小狗有7个",
+          "image": {
+            "src": "/images/items/exploration/diagram-1996853e.png",
+            "alt": "小狗有7个",
+            "width": 600,
+            "height": 310
+          },
+          "textOnly": false,
+          "quantityPicture": {
+            "image": {
+              "src": "/images/characters/dog.png",
+              "alt": "小狗头像"
+            },
+            "count": 7
+          }
+        }
+      ]
+    },
+    {
+      "ids": [
+        "explore-relational-quantity-memory-9"
+      ],
+      "field": "expectedPairs",
+      "current": "0f6d6287fff2920a2c83d3d90c92dd235c6c3b51f8319e6368b2f7d4ea0298eb",
+      "previous": [
+        [
+          "rabbit",
+          "number0"
+        ],
+        [
+          "cat",
+          "number1"
+        ],
+        [
+          "bear",
+          "number2"
+        ],
+        [
+          "dog",
+          "number3"
+        ]
+      ]
+    },
+    {
+      "ids": [
+        "explore-vocabulary-relations-7"
+      ],
+      "field": "hints",
+      "current": "5bdd1fc22d19b1c93bc0176636b42760f9af6c278f00c3939dbccd2699b8024f",
+      "previous": [
+        "家长说一个词，孩子用动作或实物表示。",
+        "交换角色，孩子说词，家长操作。"
+      ]
+    },
+    {
+      "ids": [
+        "explore-vocabulary-relations-7"
+      ],
+      "field": "parentPrompt",
+      "current": "62c3507f296914d46f2994580676882ea47624208819577558d1c47f4c3407d6",
+      "previous": "能把词和实际意义对应；能找到相反或相关的词；能在新情境里使用这个词"
+    },
+    {
+      "ids": [
+        "explore-vocabulary-relations-7"
+      ],
+      "field": "materials",
+      "current": "784f831f1a8c51c01c785c3e63695a47f42b5aba7f42f0b65a57f36c8a5c02ec",
+      "previous": [
+        "两个盒子或两条纸带"
+      ]
+    },
+    {
+      "ids": [
+        "explore-vocabulary-relations-7"
+      ],
+      "field": "steps",
+      "current": "fbf774a744d6119bf9e34428c9ec4e01bcbf06ddb6386a8f5751e3f1f02b0e10",
+      "previous": [
+        "家长说一个词，孩子用动作或实物表示。",
+        "交换角色，孩子说词，家长操作。",
+        "把这个词放进一个完整句子，说明哪里看出来。"
+      ]
+    },
+    {
+      "ids": [
+        "explore-vocabulary-relations-7"
+      ],
+      "field": "observations",
+      "current": "9ad177cd87a4990c8cc57477f4cae496b9ed7507f5927dbcac02e8052a270f62",
+      "previous": [
+        {
+          "id": "observe-0",
+          "text": "能把词和实际意义对应"
+        },
+        {
+          "id": "observe-1",
+          "text": "能找到相反或相关的词"
+        },
+        {
+          "id": "observe-2",
+          "text": "能在新情境里使用这个词"
+        }
+      ]
+    },
+    {
+      "ids": [
+        "explore-vocabulary-relations-7"
+      ],
+      "field": "presentation",
+      "current": "9c033fdcebe2d3f952e8d693fafb350a4d2ad226fbcd90fad0d1fcb434b05c56",
+      "previous": {
+        "materialCards": [
+          {
+            "label": "两个盒子或两条纸带",
+            "image": {
+              "src": "/images/items/box.png",
+              "alt": "盒子"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "ids": [
+        "explore-vocabulary-relations-7",
+        "explore-vocabulary-relations-8",
+        "explore-vocabulary-relations-9"
+      ],
+      "field": "difficulty",
+      "current": "90151be68e106a72350775d3afd0635f85309b43849ca8e11a894375eb0a485d",
+      "previous": {
+        "rules": 2,
+        "steps": 3,
+        "reading": 0,
+        "motor": 2,
+        "representation": "physical",
+        "basis": "听词表演、交换角色、迁移到句子，亲子观察而非识字测试",
+        "memory": 0,
+        "calibration": "design-estimate",
+        "workload": {
+          "observationItems": 3
+        }
+      }
+    },
+    {
+      "ids": [
+        "explore-vocabulary-relations-8"
+      ],
+      "field": "hints",
+      "current": "a20c404abbbdc6c738f533aaafcbba372b91fc5ffdffc0beddbc03dc80cba1a9",
+      "previous": [
+        "家长说一个词，孩子用动作或实物表示。",
+        "交换角色，孩子说词，家长操作。"
+      ]
+    },
+    {
+      "ids": [
+        "explore-vocabulary-relations-8"
+      ],
+      "field": "parentPrompt",
+      "current": "30a821eec2d820d29129740fbb8955dc9ddfdd091f9e59291b0fca72d29d71e1",
+      "previous": "能把词和实际意义对应；能找到相反或相关的词；能在新情境里使用这个词"
+    },
+    {
+      "ids": [
+        "explore-vocabulary-relations-8"
+      ],
+      "field": "materials",
+      "current": "65cda9ae40ef19a004f8e2339179a8de79312a49a028ce7412e2e1568c79f999",
+      "previous": [
+        "两个盒子或两条纸带"
+      ]
+    },
+    {
+      "ids": [
+        "explore-vocabulary-relations-8"
+      ],
+      "field": "steps",
+      "current": "b95e8b8f555123aa0b249013bc513605284ad8404f78c406ae603ff5daed6f9e",
+      "previous": [
+        "家长说一个词，孩子用动作或实物表示。",
+        "交换角色，孩子说词，家长操作。",
+        "把这个词放进一个完整句子，说明哪里看出来。"
+      ]
+    },
+    {
+      "ids": [
+        "explore-vocabulary-relations-8"
+      ],
+      "field": "observations",
+      "current": "034b3b580ff9dfd24afd181bb64eab42abde7a4fe6ce9ec02b928df03a487bda",
+      "previous": [
+        {
+          "id": "observe-0",
+          "text": "能把词和实际意义对应"
+        },
+        {
+          "id": "observe-1",
+          "text": "能找到相反或相关的词"
+        },
+        {
+          "id": "observe-2",
+          "text": "能在新情境里使用这个词"
+        }
+      ]
+    },
+    {
+      "ids": [
+        "explore-vocabulary-relations-8"
+      ],
+      "field": "presentation",
+      "current": "fc887d5d3fac12618e2c71b90ec07a35b42cbbc96313271ab65eebf1deddc7c6",
+      "previous": {
+        "materialCards": [
+          {
+            "label": "两个盒子或两条纸带",
+            "image": {
+              "src": "/images/items/box.png",
+              "alt": "盒子"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "ids": [
+        "explore-vocabulary-relations-9"
+      ],
+      "field": "hints",
+      "current": "fe5f5d68f37743a2295bb85e02bc23d896f70449a3cdadd8e915c00fe5d568a3",
+      "previous": [
+        "家长说一个词，孩子用动作或实物表示。",
+        "交换角色，孩子说词，家长操作。"
+      ]
+    },
+    {
+      "ids": [
+        "explore-vocabulary-relations-9"
+      ],
+      "field": "parentPrompt",
+      "current": "71dc1d0bebacf5d585c008e202cc4d567a410d8eec0f70e659ce46ce5a3e9299",
+      "previous": "能把词和实际意义对应；能找到相反或相关的词；能在新情境里使用这个词"
+    },
+    {
+      "ids": [
+        "explore-vocabulary-relations-9"
+      ],
+      "field": "materials",
+      "current": "f41993590c7755242da9a61052385e90433a38bda80d511b52bfef9f596e6f0a",
+      "previous": [
+        "两个盒子或两条纸带"
+      ]
+    },
+    {
+      "ids": [
+        "explore-vocabulary-relations-9"
+      ],
+      "field": "steps",
+      "current": "47aaba33d73be0e90e05a68ce8e781d6dc8b111b509c128f1b97151db0bfb374",
+      "previous": [
+        "家长说一个词，孩子用动作或实物表示。",
+        "交换角色，孩子说词，家长操作。",
+        "把这个词放进一个完整句子，说明哪里看出来。"
+      ]
+    },
+    {
+      "ids": [
+        "explore-vocabulary-relations-9"
+      ],
+      "field": "observations",
+      "current": "bf71995a6cacf88a11ec322af6d06a27c92edf3425386c4edd88ef443d9cd2fc",
+      "previous": [
+        {
+          "id": "observe-0",
+          "text": "能把词和实际意义对应"
+        },
+        {
+          "id": "observe-1",
+          "text": "能找到相反或相关的词"
+        },
+        {
+          "id": "observe-2",
+          "text": "能在新情境里使用这个词"
+        }
+      ]
+    },
+    {
+      "ids": [
+        "explore-vocabulary-relations-9"
+      ],
+      "field": "presentation",
+      "current": "8e0ba0c1eaaef66c2fb33a9c5d6c7c1278baa0da1d518f1e96475d192cf764ff",
+      "previous": {
+        "materialCards": [
+          {
+            "label": "两个盒子或两条纸带",
+            "image": {
+              "src": "/images/items/box.png",
+              "alt": "盒子"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "ids": [
+        "explore-character-phonics-1",
+        "explore-character-phonics-2",
+        "explore-character-phonics-3"
+      ],
+      "field": "retry",
+      "current": "d25614367e10649a75130dd12d39120f0535f373f50abf464df6179b0ae2ed51",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-character-phonics-4",
+        "explore-character-phonics-5",
+        "explore-character-phonics-6"
+      ],
+      "field": "retry",
+      "current": "c438eb67acd3b939d4cff79c3248d32b24234ba1e79331cc362aca8f63408072",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-english-listening-1",
+        "explore-english-listening-2",
+        "explore-english-listening-3"
+      ],
+      "field": "retry",
+      "current": "8ae577945fb0b08e883db9aff8455ffcdb0c05fe01a7b0ed67afbce65b716488",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-english-listening-4",
+        "explore-english-listening-5",
+        "explore-english-listening-6"
+      ],
+      "field": "retry",
+      "current": "ee8a222e31ec1bd2a02100c79daea56f5a42786d1cb657fb388c3a5640972c78",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-english-listening-7",
+        "explore-english-listening-8",
+        "explore-english-listening-9"
+      ],
+      "field": "retry",
+      "current": "a87b454e08fe4410eaf37ba9fa38308172dc2d7d8ae81d8cffc8e2b105f457b8",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-bilingual-concepts-1",
+        "explore-bilingual-concepts-2",
+        "explore-bilingual-concepts-3"
+      ],
+      "field": "retry",
+      "current": "b6ce2e0a123df85b98748d747a93ea18625c11d84de7c3613032f53e88914986",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-bilingual-concepts-4",
+        "explore-bilingual-concepts-5",
+        "explore-bilingual-concepts-6"
+      ],
+      "field": "retry",
+      "current": "bfa181d2fd57c6cdf277a4feb2ba4b91cbcd1a1f24f6e2607ca12aded903603f",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-bilingual-concepts-7"
+      ],
+      "field": "tokens",
+      "current": "479992a0a8e8372eebafb91fc1441f2de5c48122ce853deea8000d17560185b6",
+      "previous": [
+        {
+          "id": "o2",
+          "label": "图A",
+          "image": {
+            "src": "/images/items/exploration/diagram-47a6c6ea.png",
+            "alt": "图A",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "o1",
+          "label": "图B",
+          "image": {
+            "src": "/images/items/exploration/diagram-453fcd0c.png",
+            "alt": "图B",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "o0",
+          "label": "图C",
+          "image": {
+            "src": "/images/items/exploration/diagram-93bee36e.png",
+            "alt": "图C",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        }
+      ]
+    },
+    {
+      "ids": [
+        "explore-bilingual-concepts-7"
+      ],
+      "field": "hints",
+      "current": "664f80307a942d222c9266c6942846182ac573aabfd5b22a76dfe7fa27783438",
+      "previous": [
+        "先找到图里和问题有关的部分。",
+        "要让红条比蓝条长，蓝条又比黄条长，两条比较都成立。"
+      ]
+    },
+    {
+      "ids": [
+        "explore-bilingual-concepts-7"
+      ],
+      "field": "success",
+      "current": "30e0042f3d12a9728dd46f39dce52ca9fe8c18aef1bb814189b32ec27c9cdf09",
+      "previous": "要让红条比蓝条长，蓝条又比黄条长，两条比较都成立。"
+    },
+    {
+      "ids": [
+        "explore-bilingual-concepts-7",
+        "explore-bilingual-concepts-8",
+        "explore-bilingual-concepts-9"
+      ],
+      "field": "retry",
+      "current": "bf9e06e7b073db74c398f52406f7dc3f6b8da78445d90672f9fd25f9382a34b2",
+      "previous": "再对照图和题目的条件，一步一步检查。"
+    },
+    {
+      "ids": [
+        "explore-bilingual-concepts-7",
+        "explore-bilingual-concepts-8",
+        "explore-bilingual-concepts-9"
+      ],
+      "field": "difficulty",
+      "current": "5e435ac76d353b073e322eb2aea2af983012aa8e42208c4a89daf0c26501cdac",
+      "previous": {
+        "rules": 2,
+        "steps": 2,
+        "reading": 0,
+        "motor": 1,
+        "representation": "pictures",
+        "basis": "听红长于蓝、蓝长于黄两比较，图上同时核对；语言与数理负荷分开记录",
+        "memory": 2,
+        "calibration": "design-estimate",
+        "workload": {
+          "candidates": 3
+        },
+        "languageLocale": "en-US"
+      }
+    },
+    {
+      "ids": [
+        "explore-bilingual-concepts-8"
+      ],
+      "field": "tokens",
+      "current": "f50d08dee10b448c5dcc29f4cb53f0a83b5665843716639cdcc806cf59061367",
+      "previous": [
+        {
+          "id": "o1",
+          "label": "图A",
+          "image": {
+            "src": "/images/items/exploration/diagram-f868c2f7.png",
+            "alt": "图A",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "o0",
+          "label": "图B",
+          "image": {
+            "src": "/images/items/exploration/diagram-458b8b17.png",
+            "alt": "图B",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "o2",
+          "label": "图C",
+          "image": {
+            "src": "/images/items/exploration/diagram-f64f3deb.png",
+            "alt": "图C",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        }
+      ]
+    },
+    {
+      "ids": [
+        "explore-bilingual-concepts-8"
+      ],
+      "field": "hints",
+      "current": "237f5904a6d2629fd80227675ba4602807210a89149b5a9f9b8d4ceb0ffcb796",
+      "previous": [
+        "先找到图里和问题有关的部分。",
+        "要让红条比蓝条长，蓝条又比黄条长，两条比较都成立。"
+      ]
+    },
+    {
+      "ids": [
+        "explore-bilingual-concepts-8"
+      ],
+      "field": "success",
+      "current": "91b4f093b89fd7a115c5ad1da502eea7da9b0ffd564e3d36aee162d3697e47fb",
+      "previous": "要让红条比蓝条长，蓝条又比黄条长，两条比较都成立。"
+    },
+    {
+      "ids": [
+        "explore-bilingual-concepts-8"
+      ],
+      "field": "protocol",
+      "current": "a3f2a51829f5cc1e24707c1972bea942aa6e2ea2bfd5ba1081892e7c6657030b",
+      "previous": {
+        "kind": "memory",
+        "observeMs": 10000,
+        "retainMs": 500,
+        "preview": [],
+        "audioText": "The red bar is longer than the blue bar. The blue bar is longer than the yellow bar.",
+        "audioLocale": "en-US"
+      }
+    },
+    {
+      "ids": [
+        "explore-bilingual-concepts-9"
+      ],
+      "field": "tokens",
+      "current": "1c9b12391f2c72b0639c09d75138c189a583117358cdc340de7c2de844b9e7fa",
+      "previous": [
+        {
+          "id": "o1",
+          "label": "图A",
+          "image": {
+            "src": "/images/items/exploration/diagram-47408b09.png",
+            "alt": "图A",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "o2",
+          "label": "图B",
+          "image": {
+            "src": "/images/items/exploration/diagram-8d2e1585.png",
+            "alt": "图B",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        },
+        {
+          "id": "o0",
+          "label": "图C",
+          "image": {
+            "src": "/images/items/exploration/diagram-d038a479.png",
+            "alt": "图C",
+            "width": 320,
+            "height": 320
+          },
+          "textOnly": false
+        }
+      ]
+    },
+    {
+      "ids": [
+        "explore-bilingual-concepts-9"
+      ],
+      "field": "hints",
+      "current": "96f64819a2290dc6a437853cfc0f4f6ec598ff4b5095f571431266859d461a25",
+      "previous": [
+        "先找到图里和问题有关的部分。",
+        "要让红条比蓝条长，蓝条又比黄条长，两条比较都成立。"
+      ]
+    },
+    {
+      "ids": [
+        "explore-bilingual-concepts-9"
+      ],
+      "field": "success",
+      "current": "ca33e55f08a0d4c808c3cc8289e83d6a1f0c73105442a39ce9324373efa67c07",
+      "previous": "要让红条比蓝条长，蓝条又比黄条长，两条比较都成立。"
+    },
+    {
+      "ids": [
+        "explore-bilingual-concepts-9"
+      ],
+      "field": "protocol",
+      "current": "ef9b863d1d972ea3b4a9d367bb590524c8aaf3bc2bc53e57fb39f801446e4ddd",
+      "previous": {
+        "kind": "memory",
+        "observeMs": 10000,
+        "retainMs": 500,
+        "preview": [],
+        "audioText": "The red bar is longer than the blue bar. The blue bar is longer than the yellow bar.",
+        "audioLocale": "en-US"
+      }
+    },
+    {
+      "ids": [
+        "explore-everyday-classification-7"
+      ],
+      "field": "revision",
+      "current": "4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce",
+      "previous": 2
+    },
+    {
+      "ids": [
+        "explore-everyday-classification-7"
+      ],
+      "field": "parentPrompt",
+      "current": "b9eec85cf83d567449522c5fd53b11e6b34df37c4c24f54d84a5db1430d615f7",
+      "previous": "分类有明确依据；能承认一个物品可能有多种用途；能根据场景调整选择"
+    },
+    {
+      "ids": [
+        "explore-everyday-classification-7"
+      ],
+      "field": "observations",
+      "current": "1add78de4a1bf0c2a2f2428b4021b1551fd8b181eac09cb30ec6ef8cb5d33200",
+      "previous": [
+        {
+          "id": "observe-0",
+          "text": "分类有明确依据"
+        },
+        {
+          "id": "observe-1",
+          "text": "能承认一个物品可能有多种用途"
+        },
+        {
+          "id": "observe-2",
+          "text": "能根据场景调整选择"
+        }
+      ]
+    },
+    {
+      "ids": [
+        "explore-nature-growth-7"
+      ],
+      "field": "prerequisites",
+      "current": "656d7551b76c9b75ee64c04f896c177163f466c384aa9e726326e537d7d49cc9",
+      "previous": "能用有日期记录比较具体变化并区分猜想"
+    },
+    {
+      "ids": [
+        "explore-nature-growth-7"
+      ],
+      "field": "hints",
+      "current": "e743c992824af63a0ba751c6ba8df0563d2f40389a90a219f6ffbddadf8ba94d",
+      "previous": [
+        "按日期摆好观察图片或记录。",
+        "指出两个时间点之间确实发生的变化。"
+      ]
+    },
+    {
+      "ids": [
+        "explore-nature-growth-7"
+      ],
+      "field": "parentPrompt",
+      "current": "ee6f9f47cb47995edb08646c1552018a0d1bc5a6a13e313bbeda69027892d67a",
+      "previous": "能依据记录说出先后；能指出具体变化；能区分观察和猜想"
+    },
+    {
+      "ids": [
+        "explore-nature-growth-7"
+      ],
+      "field": "materials",
+      "current": "45ed87450ae36dcb44c32af99e2c8d080fc1905de3963c391f01d6e1cd231e6a",
+      "previous": [
+        "豆苗或家长准备的种子",
+        "透明杯",
+        "纸和笔"
+      ]
+    },
+    {
+      "ids": [
+        "explore-nature-growth-7"
+      ],
+      "field": "steps",
+      "current": "ae0927a550e0ce862f49673039ee84da1d23c5dbbcdce4b6d699033855ce438a",
+      "previous": [
+        "按日期摆好观察图片或记录。",
+        "指出两个时间点之间确实发生的变化。",
+        "区分亲眼看到的和根据资料猜想的，下次再观察验证。"
+      ]
+    },
+    {
+      "ids": [
+        "explore-nature-growth-7"
+      ],
+      "field": "observations",
+      "current": "a6d9577df10c2fbd7f6d11fda4c1af390dbb706fd1a576a4be6f1cefaa221887",
+      "previous": [
+        {
+          "id": "observe-0",
+          "text": "能依据记录说出先后"
+        },
+        {
+          "id": "observe-1",
+          "text": "能指出具体变化"
+        },
+        {
+          "id": "observe-2",
+          "text": "能区分观察和猜想"
+        }
+      ]
+    },
+    {
+      "ids": [
+        "explore-nature-growth-7"
+      ],
+      "field": "presentation",
+      "current": "c7d744d24bc76947180ec039221bfd08ae9cc765dc1d1053bc862b85de2f56bd",
+      "previous": {
+        "materialCards": [
+          {
+            "label": "豆苗或家长准备的种子"
+          },
+          {
+            "label": "透明杯",
+            "image": {
+              "src": "/images/items/exploration-art/parent-materials.png",
+              "alt": "透明杯",
+              "frame": {
+                "columns": 3,
+                "rows": 3,
+                "index": 2
+              },
+              "style": "illustration"
+            }
+          },
+          {
+            "label": "纸和笔"
+          }
+        ],
+        "storyCards": [
+          {
+            "src": "/images/items/exploration-art/plant-growth.png",
+            "alt": "种子在土里",
+            "frame": {
+              "columns": 2,
+              "rows": 2,
+              "index": 0
+            },
+            "style": "illustration"
+          },
+          {
+            "src": "/images/items/exploration-art/plant-growth.png",
+            "alt": "先长出根",
+            "frame": {
+              "columns": 2,
+              "rows": 2,
+              "index": 1
+            },
+            "style": "illustration"
+          },
+          {
+            "src": "/images/items/exploration-art/plant-growth.png",
+            "alt": "小芽出土",
+            "frame": {
+              "columns": 2,
+              "rows": 2,
+              "index": 2
+            },
+            "style": "illustration"
+          },
+          {
+            "src": "/images/items/exploration-art/plant-growth.png",
+            "alt": "叶片展开",
+            "frame": {
+              "columns": 2,
+              "rows": 2,
+              "index": 3
+            },
+            "style": "illustration"
+          }
+        ]
+      }
+    },
+    {
+      "ids": [
+        "explore-nature-growth-7"
+      ],
+      "field": "difficulty",
+      "current": "2e522101097a974474ca0dfd15afb26d7a28d75536b963a53ad73a7d8d659c26",
+      "previous": {
+        "rules": 2,
+        "steps": 3,
+        "reading": 0,
+        "motor": 2,
+        "representation": "physical",
+        "basis": "按日期摆记录、比变化、区分观察猜想；实物/图片依赖家长准备",
+        "memory": 0,
+        "calibration": "design-estimate",
+        "workload": {
+          "observationItems": 3
+        }
+      }
+    },
+    {
+      "ids": [
+        "explore-culture-world-1"
+      ],
+      "field": "parentPrompt",
+      "current": "4a657442bcf34309fcdfc8d6a70c3ecd65bfeb27e13111e4eac82ac25e627541",
+      "previous": "能引用所给图片或介绍；能比较相同与不同；会提出一个有依据的问题"
+    },
+    {
+      "ids": [
+        "explore-culture-world-1"
+      ],
+      "field": "observations",
+      "current": "c89daf1276bad45e6a31685ff1fc20814f215013df1090f846a0905685f69da6",
+      "previous": [
+        {
+          "id": "observe-0",
+          "text": "能引用所给图片或介绍"
+        },
+        {
+          "id": "observe-1",
+          "text": "能比较相同与不同"
+        },
+        {
+          "id": "observe-2",
+          "text": "会提出一个有依据的问题"
+        }
+      ]
+    },
+    {
+      "ids": [
+        "explore-culture-world-3"
+      ],
+      "field": "parentPrompt",
+      "current": "5394f95e22a7e79816752bb652fb15655332b7db48e959b5f682acf3b8ab8aa6",
+      "previous": "能引用所给图片或介绍；能比较相同与不同；会提出一个有依据的问题"
+    },
+    {
+      "ids": [
+        "explore-culture-world-3"
+      ],
+      "field": "observations",
+      "current": "2ac55aceaed11d85c8a7817060abceb246230414cdf5cd77e21a9604e15e68eb",
+      "previous": [
+        {
+          "id": "observe-0",
+          "text": "能引用所给图片或介绍"
+        },
+        {
+          "id": "observe-1",
+          "text": "能比较相同与不同"
+        },
+        {
+          "id": "observe-2",
+          "text": "会提出一个有依据的问题"
+        }
+      ]
+    }
+  ],
+  "gallery": [
+    {
+      "category": "exploration",
+      "key": "diagram-c13ff8a9",
+      "current": "a6797b10c6908a14152b9fbf27835246f7365b88855f7cd8edef13022e91b22b",
+      "previous": {
+        "src": "/images/items/exploration/diagram-c13ff8a9.png",
+        "alt": "照着顺序，动手翻一翻。",
+        "width": 295,
+        "height": 125
+      }
+    },
+    {
+      "category": "exploration",
+      "key": "diagram-12433ad6",
+      "current": "64f80781b8983466d1981f1f78d6ad25dbbdac193ac7275c414162ee525a6bd7",
+      "previous": {
+        "src": "/images/items/exploration/diagram-12433ad6.png",
+        "alt": "照着顺序，动手翻一翻。",
+        "width": 295,
+        "height": 125
+      }
+    },
+    {
+      "category": "exploration",
+      "key": "diagram-e83d73eb",
+      "current": "b4bb67aeb1b47b34cdee70fbaa5bd17f66cba4808801158ca5fe3c2d9d1d8ae6",
+      "previous": {
+        "src": "/images/items/exploration/diagram-e83d73eb.png",
+        "alt": "照着顺序，动手翻一翻。",
+        "width": 380,
+        "height": 125
+      }
+    },
+    {
+      "category": "exploration",
+      "key": "diagram-a86dad97",
+      "current": "af31edebbdee6d35437bff05a3083f66fa3f9aa78770db55be0a312dc38a875f",
+      "previous": {
+        "src": "/images/items/exploration/diagram-a86dad97.png",
+        "alt": "照着顺序，动手翻一翻。",
+        "width": 380,
+        "height": 125
+      }
+    },
+    {
+      "category": "exploration",
+      "key": "diagram-8d00fa26",
+      "current": "5a03a82f6be80aa8038a0afbd3ba34745b46e6b4c3602f7e72efb074019dadc0",
+      "previous": {
+        "src": "/images/items/exploration/diagram-8d00fa26.png",
+        "alt": "照着顺序，动手翻一翻。",
+        "width": 465,
+        "height": 125
+      }
+    },
+    {
+      "category": "exploration",
+      "key": "diagram-a7633f87",
+      "current": "7f2101d9fef6b358c62da4965bced3f37878ec679b76ff4dc7faf1f5db986ff9",
+      "previous": {
+        "src": "/images/items/exploration/diagram-a7633f87.png",
+        "alt": "照着顺序，动手翻一翻。",
+        "width": 465,
+        "height": 125
+      }
+    },
+    {
+      "category": "exploration",
+      "key": "diagram-23800258",
+      "current": "9c7c659b248a8317aca50d27c90bf56454d2693280e075703b8071c8691afdbe",
+      "previous": {
+        "src": "/images/items/exploration/diagram-23800258.png",
+        "alt": "大小不同的长方形一共有几个？",
+        "width": 210,
+        "height": 210
+      }
+    },
+    {
+      "category": "exploration",
+      "key": "diagram-b369cd69",
+      "current": "a35f112057c300aa3876fc169337d51cc03d7814598ec2ca457e8c0a5105bee6",
+      "previous": {
+        "src": "/images/items/exploration/diagram-b369cd69.png",
+        "alt": "大小不同的长方形一共有几个？",
+        "width": 210,
+        "height": 125
+      }
+    },
+    {
+      "category": "exploration",
+      "key": "diagram-622554f2",
+      "current": "bae6ba06852035dc3d3f89bed45b90d57c66367d7be7c6179d016eb0d6acbedc",
+      "previous": {
+        "src": "/images/items/exploration/diagram-622554f2.png",
+        "alt": "大小不同的长方形一共有几个？",
+        "width": 295,
+        "height": 125
+      }
+    },
+    {
+      "category": "exploration",
+      "key": "diagram-32bca43e",
+      "current": null,
+      "previous": {
+        "src": "/images/items/exploration/diagram-32bca43e.png",
+        "alt": "折线1",
+        "width": 320,
+        "height": 320
+      }
+    },
+    {
+      "category": "exploration",
+      "key": "diagram-67d1c6a0",
+      "current": null,
+      "previous": {
+        "src": "/images/items/exploration/diagram-67d1c6a0.png",
+        "alt": "折线2",
+        "width": 320,
+        "height": 320
+      }
+    },
+    {
+      "category": "exploration",
+      "key": "diagram-d1026eeb",
+      "current": null,
+      "previous": {
+        "src": "/images/items/exploration/diagram-d1026eeb.png",
+        "alt": "折线3",
+        "width": 320,
+        "height": 320
+      }
+    },
+    {
+      "category": "exploration",
+      "key": "diagram-cca6799d",
+      "current": null,
+      "previous": {
+        "src": "/images/items/exploration/diagram-cca6799d.png",
+        "alt": "折线4",
+        "width": 320,
+        "height": 320
+      }
+    },
+    {
+      "category": "exploration",
+      "key": "diagram-35c6f61f",
+      "current": null,
+      "previous": {
+        "src": "/images/items/exploration/diagram-35c6f61f.png",
+        "alt": "沿哪些虚线对折，两边能完全重合？",
+        "width": 320,
+        "height": 320
+      }
+    },
+    {
+      "category": "exploration",
+      "key": "diagram-c5ea9b2",
+      "current": null,
+      "previous": {
+        "src": "/images/items/exploration/diagram-c5ea9b2.png",
+        "alt": "小兔有2个",
+        "width": 600,
+        "height": 310
+      }
+    },
+    {
+      "category": "exploration",
+      "key": "diagram-25be2ee3",
+      "current": null,
+      "previous": {
+        "src": "/images/items/exploration/diagram-25be2ee3.png",
+        "alt": "小猫有3个",
+        "width": 600,
+        "height": 310
+      }
+    },
+    {
+      "category": "exploration",
+      "key": "diagram-a1a2536c",
+      "current": null,
+      "previous": {
+        "src": "/images/items/exploration/diagram-a1a2536c.png",
+        "alt": "小兔有3个",
+        "width": 600,
+        "height": 310
+      }
+    },
+    {
+      "category": "exploration",
+      "key": "diagram-8c2a9c6e",
+      "current": null,
+      "previous": {
+        "src": "/images/items/exploration/diagram-8c2a9c6e.png",
+        "alt": "小猫有4个",
+        "width": 600,
+        "height": 310
+      }
+    },
+    {
+      "category": "exploration",
+      "key": "diagram-d111cb0b",
+      "current": null,
+      "previous": {
+        "src": "/images/items/exploration/diagram-d111cb0b.png",
+        "alt": "小兔有4个",
+        "width": 600,
+        "height": 310
+      }
+    },
+    {
+      "category": "exploration",
+      "key": "diagram-a88ff330",
+      "current": null,
+      "previous": {
+        "src": "/images/items/exploration/diagram-a88ff330.png",
+        "alt": "小猫有5个",
+        "width": 600,
+        "height": 310
+      }
+    },
+    {
+      "category": "exploration",
+      "key": "diagram-4df35b25",
+      "current": null,
+      "previous": {
+        "src": "/images/items/exploration/diagram-4df35b25.png",
+        "alt": "小熊有4个",
+        "width": 600,
+        "height": 310
+      }
+    },
+    {
+      "category": "exploration",
+      "key": "diagram-c05103dd",
+      "current": null,
+      "previous": {
+        "src": "/images/items/exploration/diagram-c05103dd.png",
+        "alt": "小熊有5个",
+        "width": 600,
+        "height": 310
+      }
+    },
+    {
+      "category": "exploration",
+      "key": "diagram-c1fcb520",
+      "current": null,
+      "previous": {
+        "src": "/images/items/exploration/diagram-c1fcb520.png",
+        "alt": "小熊有6个",
+        "width": 600,
+        "height": 310
+      }
+    },
+    {
+      "category": "exploration",
+      "key": "diagram-6ffc09d4",
+      "current": null,
+      "previous": {
+        "src": "/images/items/exploration/diagram-6ffc09d4.png",
+        "alt": "小狗有5个",
+        "width": 600,
+        "height": 310
+      }
+    },
+    {
+      "category": "exploration",
+      "key": "diagram-859cb427",
+      "current": null,
+      "previous": {
+        "src": "/images/items/exploration/diagram-859cb427.png",
+        "alt": "小狗有6个",
+        "width": 600,
+        "height": 310
+      }
+    },
+    {
+      "category": "exploration",
+      "key": "diagram-1996853e",
+      "current": null,
+      "previous": {
+        "src": "/images/items/exploration/diagram-1996853e.png",
+        "alt": "小狗有7个",
+        "width": 600,
+        "height": 310
+      }
+    },
+    {
+      "category": "exploration",
+      "key": "diagram-453fcd0c",
+      "current": null,
+      "previous": {
+        "src": "/images/items/exploration/diagram-453fcd0c.png",
+        "alt": "图B",
+        "width": 320,
+        "height": 320
+      }
+    },
+    {
+      "category": "exploration",
+      "key": "diagram-458b8b17",
+      "current": null,
+      "previous": {
+        "src": "/images/items/exploration/diagram-458b8b17.png",
+        "alt": "图A",
+        "width": 320,
+        "height": 320
+      }
+    },
+    {
+      "category": "exploration",
+      "key": "diagram-f868c2f7",
+      "current": "157b5fbfeaf386bec0864e9572fa919f3dd537649a913c80c6b9aaf829ac3caf",
+      "previous": {
+        "src": "/images/items/exploration/diagram-f868c2f7.png",
+        "alt": "图B",
+        "width": 320,
+        "height": 320
+      }
+    },
+    {
+      "category": "exploration",
+      "key": "diagram-f64f3deb",
+      "current": "ecdbdc05869e43ca9100a936f03ba0eae2e1fbc2a7096919351723524d918948",
+      "previous": {
+        "src": "/images/items/exploration/diagram-f64f3deb.png",
+        "alt": "图C",
+        "width": 320,
+        "height": 320
+      }
+    },
+    {
+      "category": "exploration",
+      "key": "diagram-d038a479",
+      "current": null,
+      "previous": {
+        "src": "/images/items/exploration/diagram-d038a479.png",
+        "alt": "图A",
+        "width": 320,
+        "height": 320
+      }
+    },
+    {
+      "category": "exploration",
+      "key": "diagram-8d2e1585",
+      "current": null,
+      "previous": {
+        "src": "/images/items/exploration/diagram-8d2e1585.png",
+        "alt": "图C",
+        "width": 320,
+        "height": 320
+      }
+    },
+    {
+      "category": "exploration",
+      "key": "diagram-ca58702b",
+      "current": "ff7e1076fcbb52100efaab1dd41f13f6df7a408f8b1f7e32e4f1f07a9c5b9868"
+    },
+    {
+      "category": "exploration",
+      "key": "diagram-e34c0dd1",
+      "current": "a61da2db3b3098c0f3f710ea2033a3e57aae0d3496f56950d78e83548e5f956a"
+    },
+    {
+      "category": "exploration",
+      "key": "diagram-40687ab0",
+      "current": "df7e2781058b53f745e1b0f15b61dc936bece09d6cada3ec98c762a910ad7c08"
+    },
+    {
+      "category": "exploration",
+      "key": "diagram-45a91bb6",
+      "current": "05222aea2fb9dd9c1de9ff434b36c6172c572665741582ac159bdaa8064b02f5"
+    },
+    {
+      "category": "exploration",
+      "key": "diagram-9e021910",
+      "current": "705da80eff5771b90a2c856cfc1664222f38f130c0f6046d641c362ebf6241bd"
+    },
+    {
+      "category": "exploration",
+      "key": "diagram-133ee586",
+      "current": "ab349dcdc59ae2884503af38729b0a97bd72d35a445a639e8db9efca4c1d5165"
+    },
+    {
+      "category": "exploration",
+      "key": "diagram-b58a535f",
+      "current": "f923815ab29c0462db05cf10919517e6b23886819c8f65f8ce59d766e2a0d459"
+    },
+    {
+      "category": "exploration",
+      "key": "diagram-5b447cad",
+      "current": "b5c6fc9775d93d1ffdf81d184b5f97393c6f35c729a180f95db02ab06dd6ed9d"
+    },
+    {
+      "category": "exploration",
+      "key": "diagram-bbfe275d",
+      "current": "a8ac2b460f5b87e2564a30e8e55dd097420f8c20be6424462ef934a30b167540"
+    },
+    {
+      "category": "exploration",
+      "key": "diagram-9293c723",
+      "current": "4c432596c205332d5d5793415d41538ac9a84878b073cd3acc5cb7d1c0b8e113"
+    }
+  ]
+}

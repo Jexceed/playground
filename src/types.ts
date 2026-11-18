@@ -9,6 +9,8 @@ export type RoundOption = {
   value: string;
 };
 
+export type BoardAttempt = { ready: boolean; valid: boolean; feedback: string };
+
 export type RoundVisualGroup = {
   label: string;
   items: string[];

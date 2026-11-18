@@ -124,6 +124,10 @@ export function evaluateActivity(
   const known = new Set(activity.tokens.map((t) => t.id));
   if (activity.kind === "multiSelect" && response.kind === "multiSelect") {
     const selected = new Set(response.tokenIds);
+    if (selected.size === 0 && activity.expectedTokenIds.length > 0) {
+      const message = activity.presentation?.evidence?.kind === "boardMove" ? ACTIVITY_COPY.selectMove : ACTIVITY_COPY.selectCards;
+      return { status: "incomplete", message };
+    }
     if (
       selected.size !== response.tokenIds.length ||
       response.tokenIds.some((id) => !known.has(id))

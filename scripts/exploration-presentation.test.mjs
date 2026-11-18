@@ -26,7 +26,14 @@ test('presentation retains all existing curriculum identities and accepts every 
       || (a.primaryFamilyId === 'E07' && a.stage === 2)
       || a.primaryFamilyId === 'N09' || (a.primaryFamilyId === 'N10' && a.stage === 3)
       || a.id === 'explore-make-break-ten-6';
-    assert.equal(a.revision, a.primaryFamilyId === 'N09' ? 3 : revised ? 2 : 1, a.id);
+    const requiresNewAttempt = ['A06','A09'].includes(a.primaryFamilyId)
+      || (a.primaryFamilyId === 'L02' && a.stage > 1)
+      || (a.primaryFamilyId === 'N04' && a.stage === 1)
+      || (['E01','E07'].includes(a.primaryFamilyId) && a.stage === 3)
+      || ['explore-nature-growth-7','explore-culture-world-1','explore-culture-world-3',
+          'explore-fold-cut-1','explore-everyday-classification-7'].includes(a.id);
+    const previousRevision = a.primaryFamilyId === 'N09' ? 3 : revised ? 2 : 1;
+    assert.equal(a.revision, previousRevision + Number(requiresNewAttempt), a.id);
     assert.equal(evaluateActivity(a, authoringSolutions[a.id]).status, a.kind === 'parentObservation' ? 'needsParentObservation' : 'correct', a.id);
   }
 });

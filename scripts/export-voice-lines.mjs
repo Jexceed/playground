@@ -9,6 +9,8 @@ const { bridgePlayVoiceLines } = await loadTypeScriptModule("src/domain/bridge-p
 const { orderStorySteps } = await loadTypeScriptModule("src/data/orderStories.ts");
 const { prepareSpeechText } = await loadTypeScriptModule("src/speech-pronunciation.ts");
 const { BIRD_DEPARTURE_COPY, birdDepartureModel, birdFlightSpeech } = await loadTypeScriptModule('src/domain/bird-departure.ts');
+const { FAIR_SHARE_COPY } = await loadTypeScriptModule('src/domain/fair-share.ts');
+const { enlightenmentPromptSpeech } = await loadTypeScriptModule('src/domain/enlightenment.ts');
 
 const tokenLabels = {
   "🍓": "草莓",
@@ -144,6 +146,7 @@ for (const game of games) {
   for (const round of game.rounds) {
     const context = `${game.id}/${round.id}`;
     add("prompt", joinVoiceLine(round.prompt, round.instruction), context);
+    if (game.id === 'math-fair-share') add('prompt', enlightenmentPromptSpeech(game.id, round), context);
     add("success", round.success, context);
     add("retry", round.retry, context);
     add("parent", round.parentPrompt, context);
@@ -173,6 +176,7 @@ for (const game of games) {
 
 for (const text of bridgePlayVoiceLines()) add("system", text, "hands-on-bridge");
 for (const text of Object.values(BIRD_DEPARTURE_COPY)) add('system', text, 'birds-departure');
+for (const text of Object.values(FAIR_SHARE_COPY)) add('system', text, 'fair-share');
 
 for (const line of activityVoiceLines(activitySets)) add(line.kind, line.text, line.context, line.locale);
 

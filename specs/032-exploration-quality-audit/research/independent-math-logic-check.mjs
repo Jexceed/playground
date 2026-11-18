@@ -36,7 +36,21 @@ for (const set of explorationSets.filter(s => /^(N|L)/.test(s.rounds[0].primaryF
    if (family === 'N10') { if (stage === 0) verifySet(a.tokens.filter(t => circles(t.image).length % 2 === 0).map(t => t.id)); else if (stage === 1) { const rs = drawing.objects.filter(o => o.kind === 'rect'); verifyValue(rs.filter(r => r.h === 180).length * 10 + rs.filter(r => r.w === 27).length); } else verifyValue(nums(a.prompt)[0] - 1); return; }
    if (family === 'N11') { const vals = text(a.illustration).filter(t => t !== '?').map(Number); verifyValue(stage === 0 ? vals[2] * 2 - vals[1] : stage === 1 ? vals[3] * 2 - vals[1] : vals[4] + (vals[1] - vals[0])); return; }
    if (family === 'N12') { const ts = text(a.illustration), circle = nums(ts[0])[0] / 2, tri = stage === 0 ? 0 : nums(ts[1])[0] - circle; verifyValue(stage === 0 ? circle : stage === 1 ? tri : circle + tri * 2); return; }
-   if (family === 'N13') { const ns = nums(a.prompt); if (stage < 2) verifyValue(stage === 0 ? ns[0] / ns[1] : ns[1] - ns[0]); else { const target = ns.at(-1); const byTotal = a.tokens.filter(t => text(t.image).map(x => nums(x)[0]).reduce((x, y) => x + y, 0) === target).map(t => t.id); diagnostics.inventoryConstraintChangesAnswer = !equal(byTotal, a.expectedTokenIds); verifySet(a.tokens.filter(t => { const ns = text(t.image).map(x => nums(x)[0]); return ns.reduce((x, y) => x + y, 0) === target && ns.filter(x => x === 5).length <= 1 && ns.filter(x => x === 1).length <= 7; }).map(t => t.id)); } return; }
+   if (family === 'N13') {
+    const amounts = nums(a.prompt);
+    if (stage < 2) verifyValue(stage === 0 ? amounts[0] / amounts[1] : amounts[1] - amounts[0]);
+    else {
+     const stock = a.prompt.match(/有(\d+)张5元纸币和(\d+)枚1元硬币/);
+     if (!stock) throw Error('Cannot read payment inventory for ' + a.id);
+     const target = amounts.at(-1);
+     const byTotal = a.tokens.filter(t => t.moneyValues.reduce((sum, value) => sum + value, 0) === target);
+     const available = byTotal.filter(t => t.moneyValues.filter(n => n === 5).length <= Number(stock[1])
+       && t.moneyValues.filter(n => n === 1).length <= Number(stock[2]));
+     diagnostics.inventoryConstraintChangesAnswer = available.length !== byTotal.length;
+     verifySet(available.map(t => t.id));
+    }
+    return;
+   }
    if (family === 'N14') { const cs = circles(a.illustration); const times = cs.map(c => { const hand = drawing.objects.filter(o => o.kind === 'line' && Math.hypot(o.x - c.x, o.y - c.y) < .01)[0]; const angle = (Math.atan2(hand.x2 - hand.x, -(hand.y2 - hand.y)) + 2 * Math.PI) % (2 * Math.PI); return Math.round(angle * 360 / Math.PI); }); if (stage < 2) { const expected = `${Math.floor(times[0] / 60)}点${times[0] % 60}分`; const actual = a.tokens.find(t => t.id === a.answerId)?.label; if (actual !== expected) issue({ clockExpected: expected, actual }); checked++; } else verifyValue((times[1] - times[0] + 720) % 720); return; }
    if (family === 'N15') { if (stage < 2) { const r = drawing.objects.find(o => o.kind === 'rect'), ticks = drawing.objects.filter(o => o.kind === 'line' && o.y2 - o.y === 15); verifyValue(r.w / (ticks[1].x - ticks[0].x)); } else { const [w, h] = text(a.illustration).map(t => nums(t)[0]); verifyValue(2 * (w + h)); } return; }
    if (family === 'N16') { const ns = nums(a.prompt); if (stage === 0) { const expected = '星期' + ['一', '二', '三', '四', '五', '六', '日'][(ns[0] - 1) % 7]; if (a.tokens.find(t => t.id === a.answerId).label !== expected) issue(expected); checked++; } else verifyValue(ns[0] + (stage === 1 ? 7 : 6)); return; }
@@ -47,8 +61,32 @@ for (const set of explorationSets.filter(s => /^(N|L)/.test(s.rounds[0].primaryF
    if (family === 'L04') { const blanks = a.cells.flatMap((t, i) => t === null ? [i] : []), ts = a.tokens.map(t => t.id); for (let state = 0; state < 3 ** blanks.length; state++) { let n = state; const vals = [...a.cells], cells = {}; for (const i of blanks) { const tokenId = ts[n % 3]; n = Math.floor(n / 3); vals[i] = tokenId; cells['cell-' + i] = { state: 'filled', tokenId }; } let correct = true; for (let r = 0; r < 3; r++) correct &&= new Set(vals.slice(r * 3, r * 3 + 3)).size === 3; for (let c = 0; c < 3; c++) correct &&= new Set([vals[c], vals[c + 3], vals[c + 6]]).size === 3; const actual = evaluateActivity(a, { kind: 'gridPlacement', cells }).status === 'correct'; if (correct !== actual) issue({ cells, correct, actual }); checked++; if (correct) alternatives++; } return; }
    if (family === 'L05') { const paths = []; function walk(node, edges, nodes) { paths.push({ node, edges, nodes }); for (const e of a.graph.edges.filter(e => !edges.includes(e.id) && (e.from === node || e.to === node))) { const next = e.from === node ? e.to : e.from; walk(next, [...edges, e.id], [...nodes, next]); } } walk(a.start, [], [a.start]); const valid = p => p.node === a.end && a.requiredEdges.every(e => p.edges.includes(e)) && a.requiredNodes.every(n => p.nodes.includes(n)) && !a.blockedEdges.some(e => p.edges.includes(e)); diagnostics.legalRouteLengths = paths.filter(valid).map(p => p.edges.length); diagnostics.legalPaths = paths.filter(valid).map(p => p.edges); const min = Math.min(...diagnostics.legalRouteLengths); if (stage === 1 && min !== a.optimalLength) issue({ shortest: min, actual: a.optimalLength }); for (const p of paths) { const correct = p.edges.length > 0 && valid(p) && (stage !== 1 || p.edges.length === min), actual = evaluateActivity(a, { kind: 'route', edgeIds: p.edges }).status === 'correct'; if (correct !== actual) issue({ p, correct, actual }); checked++; if (correct) alternatives++; } return; }
    if (family === 'L07') { if (a.observations.length !== 3) issue('missing observed goals'); checked++; return; }
-   if (family === 'L08') { const start = nums(a.prompt)[0], add = nums(a.clues[0])[0]; verifyValue((start + add) * (a.clues.some(c => c.includes('两倍')) ? 2 : 1)); return; }
-   if (family === 'L09') { const vals = drawing.objects.filter(o => o.kind === 'rect').map(o => o.fill === '#e8b64e' ? 'on' : 'off'); for (const c of a.clues) { const i = nums(c)[0] - 1; vals[i] = vals[i] === 'on' ? 'off' : 'on'; } const actual = Object.values(a.evaluation.cells); if (!equal(vals.map((x, i) => i + ':' + x), actual.map((x, i) => i + ':' + x))) issue({ vals, actual }); checked++; return; }
+   if (family === 'L08') {
+    let total = nums(a.prompt)[0];
+    for (const clue of a.clues) {
+     const add = clue.match(/添上(\d+)个/);
+     if (add) total += Number(add[1]);
+     else if (/再摆一份一样多|两倍/.test(clue)) total *= 2;
+     else throw Error('Cannot read machine step for ' + a.id);
+    }
+    verifyValue(total);
+    return;
+   }
+   if (family === 'L09') {
+    const vals = drawing.objects.filter(o => o.kind === 'rect').map(o => o.fill === '#e8b64e' ? 'on' : 'off');
+    const steps = a.clues.filter(clue => clue.includes('步'));
+    if (!steps.length) throw Error('No flip sequence for ' + a.id);
+    for (const clue of steps) {
+     const move = clue.match(/翻第(\d+)张/);
+     const card = move && Number(move[1]) - 1;
+     if (!Number.isInteger(card) || card < 0 || card >= vals.length) throw Error('Cannot read card target for ' + a.id);
+     vals[card] = vals[card] === 'on' ? 'off' : 'on';
+    }
+    const actual = vals.map((_, i) => a.evaluation.cells['cell-' + i]);
+    if (vals.some((value, i) => value !== actual[i])) issue({ vals, actual });
+    checked++;
+    return;
+   }
    if (family === 'L10') { const [r, rs] = nums(a.clues[0]), [b, bs] = nums(a.clues[1]), steps = nums(a.clues[2])[0], expected = [r + rs * steps, b - bs * steps].map(x => 'n' + x); if (!equal(expected.map((x, i) => i + ':' + x), a.evaluation.tokenIds.map((x, i) => i + ':' + x))) issue({ expected, actual: a.evaluation.tokenIds }); checked++; return; }
    if (family === 'L11') { const vals = text(a.illustration).map(x => ['●', '○'].includes(x) ? x : ''), side = stage === 2 ? 4 : 3, dirs = [[1, 0], [0, 1], [1, 1], [1, -1]]; const capture = i => { let total = 0; for (const [dx, dy] of [...dirs, ...dirs.map(([x, y]) => [-x, -y])]) { let x = i % side + dx, y = Math.floor(i / side) + dy, local = 0; while (x >= 0 && y >= 0 && x < side && y < side && vals[y * side + x] === '○') { local++; x += dx; y += dy; } if (local && x >= 0 && y >= 0 && x < side && y < side && vals[y * side + x] === '●') total += local; } return total; }; const open = vals.flatMap((v, i) => v === '' ? [i] : []), max = stage === 2 ? Math.max(...open.map(capture)) : 0; const valid = open.filter(i => stage === 2 ? capture(i) === max : dirs.some(([dx, dy]) => { for (let offset = -2; offset <= 0; offset++) { const ids = Array.from({ length: 3 }, (_, k) => { const x = i % side + (offset + k) * dx, y = Math.floor(i / side) + (offset + k) * dy; return x < 0 || y < 0 || x >= side || y >= side ? -1 : y * side + x; }); if (ids.every(p => p >= 0 && (p === i || vals[p] === '●'))) return true; } return false; })); verifySet(valid.map(i => 'p' + i)); if (valid.some(i => !a.tokens.some(t => t.id === 'p' + i))) issue({ omittedCorrectOptions: valid }); return; }
    if (family === 'L12') { const es = a.graph.edges, ns = a.graph.nodes; for (let state = 0; state < 3 ** es.length; state++) { let n = state, counts = {}, degree = Object.fromEntries(ns.map(x => [x.id, 0])), correct = true; for (const e of es) { const k = n % 3; n = Math.floor(n / 3); counts[e.id] = k; degree[e.from] += k; degree[e.to] += k; if (k < (e.fixed ?? 0)) correct = false; } correct &&= ns.every(x => degree[x.id] === x.degree); const connected = new Set([ns[0].id]); for (let i = 0; i < ns.length; i++) for (const e of es) if (counts[e.id] && (connected.has(e.from) || connected.has(e.to))) { connected.add(e.from); connected.add(e.to); } correct &&= connected.size === ns.length; const actual = evaluateActivity(a, { kind: 'network', counts }).status === 'correct'; if (correct !== actual) issue({ counts, correct, actual }); checked++; if (correct) alternatives++; } return; }
@@ -60,6 +98,9 @@ for (const set of explorationSets.filter(s => /^(N|L)/.test(s.rounds[0].primaryF
  families.push({ family, rounds, independentCases: checked, acceptedEnumerations: alternatives });
 }
 const report = { date: new Date().toISOString(), method: 'independent prompt/drawing arithmetic and exhaustive small constraint state spaces; parent observations are schema-only; voice sound quality and native UI are outside this script', roundCount: families.reduce((n, f) => n + f.rounds.length, 0), independentCases: families.reduce((n, f) => n + f.independentCases, 0), families, errors };
-writeFileSync(new URL('./independent-math-logic-results.json', import.meta.url), JSON.stringify(report, null, 2) + '\n');
+const outputFlag = process.argv.indexOf('--output');
+if (outputFlag >= 0 && !process.argv[outputFlag + 1]) throw Error('--output requires a file path');
+const output = outputFlag >= 0 ? process.argv[outputFlag + 1] : new URL('./independent-math-logic-results.json', import.meta.url);
+writeFileSync(output, JSON.stringify(report, null, 2) + '\n');
 console.log(JSON.stringify({ roundCount: report.roundCount, independentCases: report.independentCases, errorCount: errors.length }));
 if (errors.length) process.exitCode = 1;

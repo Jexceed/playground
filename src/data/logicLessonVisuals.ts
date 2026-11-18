@@ -44,7 +44,7 @@ function lesson(context:LogicFrame,evidence:LogicFrame[],resolution:LogicFrame[]
 const life: Record<string,LogicLesson> = {
  'logic-condition-detective-1':lesson(dirty,[f('手还脏着',p('snack','dirty'))],washPlan,washChoices),
  'logic-condition-detective-2':lesson(red,[f('行人红灯',p('traffic','red'))],[f('和大人停下等',p('traffic','stop'))],{stop:p('traffic','stop'),go:p('traffic','directCross'),slow:n('slowRed')}),
- 'logic-condition-detective-3':lesson(green,[f('绿灯亮，车辆已停',p('traffic','green'))],[f('和大人确认安全',p('traffic','green')),f('和大人走过去',p('traffic','cross'))],{walk:p('traffic','cross'),'keep-waiting':p('traffic','green'),'wait-red':waitRed}),
+ 'logic-condition-detective-3':lesson(green,[f('绿灯亮，车辆已停',p('traffic','green'))],[f('和大人确认安全',p('traffic','green')),f('可以和大人一起走过去',p('traffic','cross'))],{walk:p('traffic','cross'),'car-only':p('traffic','carOnly'),'wait-red':waitRed}),
  'logic-condition-detective-4':lesson(shortContext,[shortContext],[f('还差一段，木板不够长',short)],{'not-enough':textChoice,enough:textChoice,none:textChoice},'reason'),
  'logic-condition-detective-5':lesson(clean,[f('手已经洗好了',{image:clean.image})],platePlan,plateChoices),
  'logic-condition-detective-6':lesson(mixed,[f('混在一起的两类玩具',p('sorting','mixed'))],sortPlan,sortChoices),
@@ -52,7 +52,7 @@ const life: Record<string,LogicLesson> = {
  'logic-condition-detective-12':lesson(shortContext,[f('木板够不到另一岸',short)],[f('换成够长的木板',long)],extendChoices),
  'logic-fix-plan-1':lesson(ns('dirtyEating','泥手直接拿饼干吃了'),[f('手脏',p('snack','dirty')),f('直接拿饼干',p('snack','dirtyTake')),f('直接吃',p('snack','dirtyEat'))],washPlan,{'missing-wash':p('snack','wash'),'missing-plate':p('snack','dirtyPlate'),'missing-more-cookie':n('dirtyMoreCookies')}),
  'logic-fix-plan-2':lesson(ns('redAttempt','红灯时想迈步'),[f('行人红灯',p('traffic','red')),f('却想往前走',p('traffic','directCross'))],[f('先停下等',p('traffic','stop'))],{stop:p('traffic','stop'),'keep-walk':p('traffic','directCross'),'wait-red':waitRed}),
- 'logic-fix-plan-3':lesson(green,[f('绿灯亮，仍停在路边',p('traffic','green'))],[f('确认路面安全',p('traffic','green')),f('和大人走过去',p('traffic','cross'))],{walk:p('traffic','cross'),'keep-waiting':p('traffic','green'),'wait-red':waitRed}),
+ 'logic-fix-plan-3':lesson(green,[f('小朋友只看了车',p('traffic','carOnly'))],crossPlan,{walk:{images:[item('order045_traffic_look'),item('order045_traffic_green')]},'car-only':p('traffic','carOnly'),'people-only':p('traffic','waitOthers')}),
  'logic-fix-plan-4':lesson(shortContext,[f('木板另一头没有到对岸',short)],[f('木板的长度不够',short)],{'too-short':textChoice,'too-long':textChoice,'too-narrow':textChoice},'reason'),
  'logic-fix-plan-5':lesson(clean,[f('已经洗好了',{image:clean.image}),f('还在重复洗手',n('cleanWashAgain'))],platePlan,plateChoices),
  'logic-fix-plan-6':lesson(ns('mixedBox','两类玩具混装在一个盒子里'),[f('混放的结果',p('sorting','allOne'))],[f('取出后先分类',n('takeOutSort')),...putPlan],{sort:n('takeOutSort'),stuff:p('sorting','allOne'),one:p('sorting','one')}),

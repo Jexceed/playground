@@ -48,6 +48,9 @@ function materials(activity: Activity): { label: string; image?: GalleryImage }[
   if (activity.kind !== "parentObservation") return [];
   const exact: Record<string, GalleryImage> = {
     '球': items.soccer, '方盒': items.box,
+    '能开合的盒子': explorationArt.boxStates[0],
+    '一长一短两条纸带': diagram(picture([rect(35,90,250,38,'#dfbc8e'),rect(35,187,135,38,'#dfbc8e')],320,320), '左端对齐的一长一短两条纸带'),
+    '一株豆苗': explorationArt.plantGrowth[3],
     '圆柱形积木': explorationArt.parentMaterials[0],
     '三到五块方积木': explorationArt.parentMaterials[1], '大积木': explorationArt.parentMaterials[1], '不透明积木': explorationArt.parentMaterials[1],
     '透明杯': explorationArt.parentMaterials[2], '不透明袋': explorationArt.parentMaterials[3], '布袋': explorationArt.parentMaterials[3],
@@ -101,7 +104,7 @@ export function presentExploration(group: ActivitySet): ActivitySet {
     if (activity.kind === "parentObservation") {
       activity.presentation = { ...activity.presentation, materialCards: materials(activity) };
       if (family === 'E03') activity.presentation.storyCards = [explorationArt.rain, explorationArt.bearTower, explorationArt.catPlant][variant];
-      if (family === 'P02') activity.presentation.storyCards = [explorationArt.plantGrowth, explorationArt.butterflyGrowth, explorationArt.frogGrowth][variant];
+      if (family === 'P02' && variant !== 0) activity.presentation.storyCards = [explorationArt.plantGrowth, explorationArt.butterflyGrowth, explorationArt.frogGrowth][variant];
       if (family === 'E04' && variant === 0) activity.presentation.storyCards = [
         { ...characters.rabbit, alt:'小兔' }, { ...items.river, alt:'小河边' }, { ...items.apple, alt:'苹果' }, explorationArt.tools[0],
       ];
@@ -118,13 +121,6 @@ export function presentExploration(group: ActivitySet): ActivitySet {
       const stages = variant === 2 ? [explorationArt.planting[1], explorationArt.planting[2], explorationArt.planting[3]]
         : explorationArt.memoryEvents.slice(variant * 3, variant * 3 + 3);
       for (const token of activity.tokens) { const index = Number(token.id.slice(1)); token.image = stages[index]; token.textOnly = false; }
-    }
-    if (family === 'A09' && activity.protocol.kind === 'memory') {
-      for (const [index, id] of activity.protocol.preview.entries()) {
-        const token = activity.tokens.find(t => t.id === id)!;
-        const friend = activity.tokens[index];
-        token.quantityPicture = { image: friend.image, count: index + 2 + variant };
-      }
     }
   }
   return group;
