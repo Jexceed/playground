@@ -1,4 +1,9 @@
-import type { Activity } from "../domain/activity";
+import type { Activity, ActivityToken } from "../domain/activity";
+
+export function canPreviewChoiceImage(activity: Activity, token: ActivityToken): boolean {
+  return (activity.kind === "singleChoice" || token.image.style === "illustration")
+    && !token.textOnly && !token.quantityPicture && !token.moneyValues && !token.partitionCounts;
+}
 
 export function evidenceVisible(activity: Pick<Activity, "protocol">, phase: string): boolean {
   return activity.protocol.kind !== "memory" || phase === "observe";

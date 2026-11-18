@@ -1,4 +1,4 @@
-import type { Activity, ActivityResponse } from "../domain/activity";
+import { activitySlots, isBinaryGridCopy, type Activity, type ActivityResponse } from "../domain/activity";
 import {
   emptyResponse,
   evaluateActivity,
@@ -38,6 +38,7 @@ export type SessionEvent =
       type:
         | "undo"
         | "clear"
+        | "fillBlanks"
         | "submit"
         | "hint"
         | "start"
@@ -174,6 +175,13 @@ export function transitionSession(
   if (event.type === "clear") response = emptyResponse(activity);
   if (event.type === "place")
     response = placeToken(activity, response, event.slotId, event.tokenId);
+  if (event.type === "fillBlanks" && isBinaryGridCopy(activity) && response.kind === "gridPlacement") {
+    const cells = { ...response.cells };
+    for (const { id, fixedTokenId } of activitySlots(activity)) {
+      if (fixedTokenId === null && cells[id]?.state !== "filled") cells[id] = { state: "filled", tokenId: "blank" };
+    }
+    response = { kind: "gridPlacement", cells };
+  }
   if (
     event.type === "toggle" &&
     response.kind === "multiSelect" &&

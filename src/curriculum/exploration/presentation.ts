@@ -82,9 +82,17 @@ const lineTemplate = () => {
     const length = Math.hypot(x2 - x, y2 - y), dx = -(y2 - y) / length * 3, dy = (x2 - x) / length * 3;
     return { kind: 'polygon', points: [[x+dx,y+dy],[x2+dx,y2+dy],[x2-dx,y2-dy],[x-dx,y-dy]], fill:'#344555' };
   };
-  return diagram(picture([rect(60,35,180,180,'#ffffff'), text(150,25,'直线',20), thick(150,48,150,202),
-    rect(360,35,180,180,'#ffffff'),text(450,25,'折线',20),thick(388,52,505,111),thick(505,111,395,198)],600,230), '可照画的粗线模板：左边是直线，右边是折线。');
+  return diagram(picture([rect(60,35,180,180,'#ffffff'), text(150,25,'直线（从边剪入）',20), thick(150,35,150,215),
+    rect(360,35,180,180,'#ffffff'), text(450,25,'折线（从边剪入）',20), thick(360,70,492,125), thick(492,125,360,190)],600,230), '从纸边直接剪入的粗线模板：左边是通到底边的直线，右边是从左边剪入再折回左边的折线。');
 };
+
+const festivalComparisonCard = () => diagram(picture([
+  rect(40, 45, 240, 175, '#fff8ec'), text(160, 30, '吃汤圆', 22),
+  circle(160, 145, 58, '#e8cfa6'), circle(142, 134, 14, '#ffffff'), circle(178, 134, 14, '#ffffff'), circle(160, 162, 14, '#ffffff'),
+  rect(320, 45, 240, 175, '#eef6fa'), text(440, 30, '包饺子', 22),
+  circle(440, 145, 58, '#d9e8f2'),
+  { kind: 'polygon', points: [[402, 142], [440, 116], [478, 142], [462, 158], [418, 158]], fill: '#fffdf7' },
+], 600, 240), '同一节日不同家庭做法对比卡：左边是一碗圆圆的汤圆，右边是一盘弯弯的饺子。');
 
 /** Author-owned visual mappings; never render answer IDs or infer pictures from a score. */
 export function presentExploration(group: ActivitySet): ActivitySet {
@@ -110,6 +118,7 @@ export function presentExploration(group: ActivitySet): ActivitySet {
       ];
       if (family === 'E04' && variant === 2) activity.illustration = { ...imageGallery.scenes.spilledWaterRoom, width:1200, height:675 };
       if (family === 'L07') activity.illustration = nineFeatureCards();
+      if (family === 'P05' && variant === 1) activity.illustration = festivalComparisonCard();
       if (family === 'P06' && variant === 0) activity.illustration = lineTemplate();
     }
     if (family === 'N16') activity.presentation = { evidence: { kind: 'calendar' } };

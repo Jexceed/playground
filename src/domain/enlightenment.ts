@@ -1,13 +1,6 @@
 import type { GameConfig, GameRound } from "../types";
 import { FAIR_SHARE_COPY } from "./fair-share";
 
-/** The desktop/web sharing board accepts physical placements. Other (exported) players can keep the numerical choice. */
-export function enlightenmentPromptSpeech(gameId: string, round: Pick<GameRound, "prompt" | "instruction">): string {
-  const prompt = round.prompt.trim();
-  const separator = /[。？！]$/.test(prompt) ? "" : "。";
-  return prompt + separator + round.instruction + (gameId === "math-fair-share" ? FAIR_SHARE_COPY.tap : "");
-}
-
 export type ObservationPhase = "ready" | "observing" | "answering";
 export type ObservationEvent = "start" | "hide" | "review" | "interrupt";
 
@@ -17,14 +10,34 @@ export const ENLIGHTENMENT_COPY = {
   reviewMemory: "重新看图",
   hideMemory: "遮住再答",
   observeFirst: "先看一看，遮住以后再选答案。",
-  hidden: "遮住啦。现在想一想，再选答案。",
   ready: "准备好再看，图卡会显示两秒。",
   observing: "先看图，遮住后再选。",
   answering: "图卡遮住了，想一想再选。也可以再看一次。",
 } as const;
 
-export function initialObservationPhase(round: GameRound): ObservationPhase {
+export function initialObservationPhase(round: Pick<GameRound, "observation" | "memory">): ObservationPhase {
   return round.observation ? "ready" : round.memory ? "observing" : "answering";
+}
+
+const memoryObservationPrompt = {
+  prompt: "记住这些图卡。",
+  instruction: "从左往右看一遍，记好了就点“遮住再答”。",
+};
+
+export function enlightenmentPromptForPhase(round: Pick<GameRound, "prompt" | "instruction" | "memory">, phase: ObservationPhase) {
+  return round.memory && phase !== "answering" ? memoryObservationPrompt : round;
+}
+
+/** The desktop/web sharing board accepts physical placements. Other (exported) players can keep the numerical choice. */
+export function enlightenmentPromptSpeech(
+  gameId: string,
+  round: Pick<GameRound, "prompt" | "instruction" | "memory" | "observation">,
+  phase = initialObservationPhase(round),
+): string {
+  const displayed = enlightenmentPromptForPhase(round, phase);
+  const prompt = displayed.prompt.trim();
+  const separator = /[。？！]$/.test(prompt) ? "" : "。";
+  return prompt + separator + displayed.instruction + (gameId === "math-fair-share" ? FAIR_SHARE_COPY.tap : "");
 }
 
 export function observationTransition(phase: ObservationPhase, event: ObservationEvent, timed: boolean): ObservationPhase {

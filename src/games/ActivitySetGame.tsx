@@ -6,6 +6,7 @@ import {
   activityPromptSpeech,
   activitySlots,
   activitySlotLabel,
+  isBinaryGridCopy,
 } from "../domain/activity";
 import type {
   Activity,
@@ -36,7 +37,7 @@ import { CardFlipBoard, RuleMachineBoard } from '../interactions/RulePlayBoards'
 import { RULE_PLAY_COPY } from '../domain/rule-play';
 import { activityImageSources } from '../domain/activity-assets';
 import { EnglishDialogue } from '../interactions/EnglishDialogue';
-import { dialogueVisible, responsesVisible } from '../interactions/presentation-state';
+import { canPreviewChoiceImage, dialogueVisible, responsesVisible } from '../interactions/presentation-state';
 
 type Props = {
   game: ActivitySet;
@@ -188,7 +189,7 @@ function ActivityRound({
   const storyTokenIds = activity.kind === 'orderedPlacement' && activity.presentation?.evidence?.kind === 'storySequence' ? activity.presentation.evidence.tokenIds : undefined;
   const palette = activity.presentation?.pyramid?.choiceIds.map(id => tokenById.get(id)!)
     ?? (storyTokenIds ? storyTokenIds.map(id => tokenById.get(id)!) : activity.tokens);
-  const pictureTokens = palette.filter(token => token.image.style === 'illustration' && !token.textOnly && !token.quantityPicture);
+  const pictureTokens = palette.filter(token => canPreviewChoiceImage(activity, token));
   useEffect(() => { setPictureTarget(null); }, [activity.id, state.phase]);
 
   const narration = activityPromptSpeech(activity, state.phase);
@@ -253,7 +254,7 @@ function ActivityRound({
   useEffect(() => {
     if ((state.phase === "observe" && !isListening) || state.phase === "retain") stopSpeech();
     if (state.phase === "respond" && previousPhase.current === "retain")
-      void speak(ACTIVITY_COPY.recall);
+      playTone("tap");
     previousPhase.current = state.phase;
   }, [state.phase]);
 
@@ -297,9 +298,17 @@ function ActivityRound({
       dispatch({ type: "toggle", tokenId: token.id });
     else setSelectedToken(token.id);
   }
+  const binaryGrid = isBinaryGridCopy(activity);
   function put(slotId: string, tokenId = selectedToken) {
     if (!canEdit) return;
     if (!tokenId) {
+      if (binaryGrid) {
+        const current = responseValue(state.response, slotId);
+        const nextId = current.state === "filled" && current.tokenId === "filled" ? "blank" : "filled";
+        dispatch({ type: "place", slotId, tokenId: nextId });
+        playTone("tap");
+        return;
+      }
       void speak(ACTIVITY_COPY.selectFirst);
       return;
     }
@@ -307,6 +316,11 @@ function ActivityRound({
     playTone("tap");
     if ((activity.kind === "orderedPlacement" || activity.kind === "gridPlacement") && activity.tokenUse === "once")
       setSelectedToken(null);
+  }
+  function fillRemainingGridEmpty() {
+    if (!canEdit || !binaryGrid) return;
+    dispatch({ type: "fillBlanks" });
+    playTone("tap");
   }
   function submit() {
     if (activity.kind === 'parentObservation' && parentMode === 'play') { stopSpeech(); setParentMode('record'); return; }
@@ -423,18 +437,20 @@ function ActivityRound({
             data-slot-id={slot.id}
             aria-label={`${label}，${token?.label ?? "空位"}`}
             disabled={!canEdit}
-            {...(token
+            {...(token && !binaryGrid
               ? dragHandlers(token, () =>
                   selectedToken ? put(slot.id) : chooseToken(token),
                 )
               : {})}
             onClick={(event) => {
-              if (!token || event.detail === 0)
+              if (!token || binaryGrid || event.detail === 0)
                 selectedToken
                   ? put(slot.id)
-                  : token
-                    ? chooseToken(token)
-                    : put(slot.id);
+                  : binaryGrid
+                    ? put(slot.id)
+                    : token
+                      ? chooseToken(token)
+                      : put(slot.id);
             }}
             onDragOver={(event) => {
               if (canEdit) event.preventDefault();
@@ -460,7 +476,7 @@ function ActivityRound({
               dispatch({ type: "place", slotId: slot.id, tokenId: null })
             }
           >
-            <X size={12} />
+            <X size={14} />
           </button>
         )}
         {token?.image.style === 'illustration' && previewId === undefined && (state.phase === 'respond' || state.phase === 'complete') && <button
@@ -470,7 +486,7 @@ function ActivityRound({
     );
   }
   function tokenButton(token: ActivityToken, multi = false) {
-    const illustrated = token.image.style === 'illustration' && !token.textOnly && !token.quantityPicture && !token.moneyValues && !token.partitionCounts;
+    const illustrated = canPreviewChoiceImage(activity, token);
     const selected =
       multi && state.response.kind === "multiSelect"
         ? state.response.tokenIds.includes(token.id)
@@ -618,7 +634,7 @@ function ActivityRound({
             <strong>{activity.kind === "multiSelect" ? "记住出现了哪些图卡" : activity.kind === "matching" ? "看清每一组对应关系" : activity.kind === "gridPlacement" ? "看清图卡的位置" : "看清图卡的先后顺序"}</strong>
             <span>还可看 {remaining} 秒</span>
           </div>
-          <div
+          {!(activity.illustration && activity.kind === "matching" && !activity.tokens.some(t => t.quantityPicture)) && <div
             className={`activity-board ${activity.kind === "gridPlacement" ? "is-grid" : "is-order"}`}
             style={
               {
@@ -637,7 +653,7 @@ function ActivityRound({
                   : undefined,
               ),
             )}
-          </div>
+          </div>}
           <button
             type="button"
             className="activity-secondary"
@@ -659,7 +675,7 @@ function ActivityRound({
           {boardMove ? <BoardMoveBoard key={activity.id} model={boardMove} response={state.response} disabled={!canEdit} resetKey={boardPreviewReset} onToggle={tokenId => { dispatch({ type: 'toggle', tokenId }); playTone('tap'); }} />
           : numberWalk ? <NumberWalkBoard key={activity.id} model={numberWalk} clues={activity.clues} response={state.response} disabled={!canEdit} onPlace={put} />
           : cardFlip ? <CardFlipBoard model={cardFlip} response={state.response} disabled={!canEdit} onFlip={(slotId, tokenId) => { dispatch({ type: 'place', slotId, tokenId }); playTone('tap'); }} />
-          : isAdvancedActivity(activity) ? <AdvancedInteraction activity={activity} response={state.response} disabled={!canEdit} onChange={response=>dispatch({type:"response",response})} parentMode={parentMode} onParentModeChange={setParentMode}/> : activity.kind === "multiSelect" ? (
+          : isAdvancedActivity(activity) ? <AdvancedInteraction activity={activity} response={state.response} disabled={!canEdit} onChange={response=>dispatch({type:"response",response})} parentMode={parentMode} onParentModeChange={setParentMode} onPreviewToken={tokenId => setPictureTarget({ source: 'choices', key: tokenId })}/> : activity.kind === "multiSelect" ? (
             <div className={`activity-choice-grid ${activity.presentation?.compactSymbols ? 'is-symbol-grid' : ''} ${activity.tokens.some(t => (t.image.width ?? 1) / (t.image.height ?? 1) > 1.4) ? "has-wide-options" : ""}`} style={{ '--symbol-columns': activity.tokens.length > 15 ? 7 : Math.min(5, Math.ceil(Math.sqrt(activity.tokens.length))), '--mobile-symbol-columns': Math.min(4, Math.ceil(Math.sqrt(activity.tokens.length))) } as CSSProperties} aria-label="可多选的图卡">
               {activity.tokens.map((t) => tokenButton(t, true))}
             </div>
@@ -667,6 +683,9 @@ function ActivityRound({
             <div
               className={`activity-workspace ${activity.presentation?.pyramid ? 'for-pyramid' : activity.kind === "gridPlacement" ? "for-grid" : "for-order"} ${state.phase === "complete" ? "is-complete" : ""}`}
             >
+              {activity.primaryFamilyId === "G20" && (
+                <p className="layer-order-banner" aria-hidden="true">1 最底层（先放） → {slotEntries.length} 最顶层（最后盖在最上面）</p>
+              )}
               {activity.kind === 'gridPlacement' && activity.presentation?.pyramid ? <PyramidBoard activity={activity} renderSlot={(slot, column) => renderSlot(slot, undefined, column)} renderBase={id => <TokenArt token={tokenById.get(id)} />} /> : <div
                 className={`activity-board ${activity.kind === "gridPlacement" ? "is-grid" : "is-order"}`}
                 aria-label={
@@ -690,11 +709,19 @@ function ActivityRound({
                   <p className="tray-instruction">
                     {selectedToken
                       ? `已选：${tokenById.get(selectedToken)?.label}。点一个位置放进去。`
-                      : "选一张图卡，再点位置放进去；也可以拖过去。"}
+                      : binaryGrid
+                        ? "直接点格子就能放蓝格（再点切换空白格），也可以点“其余填空白”。"
+                        : "选一张图卡，再点位置放进去；也可以拖过去。"}
                     {activity.tokenUse === "unlimited" && (
                       <span>图卡可以重复用</span>
                     )}
                   </p>
+                  {binaryGrid && (
+                    <div className="grid-copy-quick-actions">
+                      <button type="button" className="activity-secondary" disabled={!canEdit} onClick={fillRemainingGridEmpty}>其余填空白</button>
+                      {selectedToken && <button type="button" className="activity-secondary" disabled={!canEdit} onClick={() => setSelectedToken(null)}>切换点格模式</button>}
+                    </div>
+                  )}
                   <div
                     className="activity-token-tray"
                     aria-label="可使用的图卡"
@@ -764,6 +791,7 @@ function ActivityRound({
                 onClick={() => dispatch({ type: "undo" })}
               >
                 <RotateCcw size={18} />
+                撤销
               </button>
               <button
                 type="button"

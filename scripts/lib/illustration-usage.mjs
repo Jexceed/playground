@@ -18,7 +18,13 @@ function renderedImages(activity) {
     presentation.evidence.cards.forEach(image => add(image, 'evidence'));
   if (presentation?.evidence?.kind === 'collection') add(presentation.evidence.image, 'evidence');
   if (presentation?.evidence?.kind === 'visualComparison')
-    presentation.evidence.panels.forEach(panel => { if (panel.kind === 'image') add(panel.image, 'evidence', panel.label); });
+    presentation.evidence.panels.forEach(panel => {
+      if (panel.kind === 'image') add(panel.image, 'evidence', panel.label);
+      if (panel.kind === 'heightPair') {
+        add(panel.taller, 'evidence', panel.label);
+        add(panel.shorter, 'evidence', panel.label);
+      }
+    });
   if (activity.kind === 'parentObservation') {
     presentation?.storyCards?.forEach(image => add(image, 'story'));
     presentation?.materialCards?.forEach(card => add(card.image, 'material', card.label));

@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { existsSync, readFileSync } from 'node:fs';
 import { loadTypeScriptModule } from './lib/load-ts-module.mjs';
+import { beforeAppealAndDifficulty } from './lib/before-curriculum-review.mjs';
 import { collectIllustrationUsage } from './lib/illustration-usage.mjs';
 
 const [{ explorationSets, explorationDrawings, authoringSolutions }, { evaluateActivity }, { imageGallery }, { evidenceVisible }, { groupExplorationGames }, { getCurriculumSection }] = await Promise.all([
@@ -15,6 +16,7 @@ test('presentation retains all existing curriculum identities and accepts every 
   assert.equal(activities.length, 597);
   assert.equal(getCurriculumSection('enlightenment').games.length, 40);
   assert.equal(getCurriculumSection('enlightenment').games.reduce((n, g) => n + g.rounds.length, 0), 489);
+  const previous = new Map(beforeAppealAndDifficulty(activities).map(a => [a.id, a]));
   for (const a of activities) {
     const revised = (['N13','G04','G09'].includes(a.primaryFamilyId) && a.stage === 3)
       || (a.primaryFamilyId === 'L05' && a.stage === 2)
@@ -33,7 +35,7 @@ test('presentation retains all existing curriculum identities and accepts every 
       || ['explore-nature-growth-7','explore-culture-world-1','explore-culture-world-3',
           'explore-fold-cut-1','explore-everyday-classification-7'].includes(a.id);
     const previousRevision = a.primaryFamilyId === 'N09' ? 3 : revised ? 2 : 1;
-    assert.equal(a.revision, previousRevision + Number(requiresNewAttempt), a.id);
+    assert.equal(previous.get(a.id).revision, previousRevision + Number(requiresNewAttempt), a.id);
     assert.equal(evaluateActivity(a, authoringSolutions[a.id]).status, a.kind === 'parentObservation' ? 'needsParentObservation' : 'correct', a.id);
   }
 });
@@ -205,12 +207,18 @@ test('rearrangement keeps the same count and time comparisons provide both exact
 });
 
 test('making-ten comparisons display the original operands without printing the result', () => {
-  const operands=[[8,5],[9,6],[10,7],[13,7],[14,8],[15,9]];
-  for(const [index,a] of activities.filter(a=>a.primaryFamilyId==='N05'&&a.stage>1).entries()){
+  const stage2Operands=[[8,5],[9,6],[8,7]];
+  for(const [index,a] of activities.filter(a=>a.primaryFamilyId==='N05'&&a.stage===2).entries()){
     const [left,right]=a.presentation.evidence.panels;
     assert.equal(left.kind,'placeValue');assert.equal(right.kind,'dots');
-    assert.deepEqual([left.tens*10+left.ones,right.count],operands[index]);
-    assert.equal(Number(left.label),operands[index][0]);
+    assert.deepEqual([left.tens*10+left.ones,right.count],stage2Operands[index]);
+    assert.equal(Number(left.label),stage2Operands[index][0]);
+  }
+  const stage3Operands=[[13,7],[15,8],[14,6]];
+  for(const [index,a] of activities.filter(a=>a.primaryFamilyId==='N05'&&a.stage===3).entries()){
+    const e=a.presentation.evidence;
+    assert.equal(e.kind,'placeValueModel');
+    assert.deepEqual([e.tens*10+e.ones,e.removeOnes],stage3Operands[index]);
   }
 });
 

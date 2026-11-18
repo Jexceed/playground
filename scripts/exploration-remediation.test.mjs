@@ -58,7 +58,7 @@ test('two-marker choices exercise both independent movement rules', () => {
     const expected=positions[a.tokens.findIndex(t=>t.id===a.answerId)];
     assert.ok(positions.some(p=>p[0]===expected[0]&&p[1]!==expected[1]),a.id);
     assert.ok(positions.some(p=>p[0]!==expected[0]&&p[1]===expected[1]),a.id);
-    assert.equal(a.revision,2);
+    assert.equal(a.revision,3);
   }
 });
 
@@ -96,7 +96,7 @@ test('pyramid cells expose and independently verify each intermediate OR/XOR res
     expected.forEach((b,i)=>{const id=a.evaluation.cells[`cell-${i}`];assert.deepEqual(bits(token(id)),b,a.id);response.cells[`cell-${i}`]={state:'filled',tokenId:id};});
     assert.equal(evaluateActivity(a,response).status,'correct');
     for(let i=0;i<expected.length;i++){const bad=a.tokens.find(t=>p.choiceIds.includes(t.id)&&JSON.stringify(bits(t))!==JSON.stringify(expected[i]));const wrong=structuredClone(response);wrong.cells[`cell-${i}`]={state:'filled',tokenId:bad.id};assert.equal(evaluateActivity(a,wrong).status,'incorrect');}
-    assert.equal(a.revision,2);
+    assert.equal(a.revision,3);
   }
 });
 
@@ -110,11 +110,11 @@ test('partial pyramid checks are support events, never completed activities or t
   assert.equal(state.phase,'respond');assert.equal(state.result.status,'incomplete');assert.equal(state.checks,1);
   assert.equal(state.evidence.at(-1).kind,'check');
   const data=new Map(),store={getItem:k=>data.get(k)??null,setItem:(k,v)=>data.set(k,v)};
-  recordActivityEvent(a.id,1,{id:'old',kind:'attempt',correct:true},store,1);
+  recordActivityEvent(a.id,2,{id:'old',kind:'attempt',correct:true},store,1);
   const current=recordActivityEvent(a.id,a.revision,{id:'check',kind:'check'},store,2).progress;
-  assert.equal(current.entries[`${a.id}@1`].correctAttempts,1);
-  assert.equal(current.entries[`${a.id}@2`].firstCompletedAt,null);
-  assert.equal(current.entries[`${a.id}@2`].checks,1);
+  assert.equal(current.entries[`${a.id}@2`].correctAttempts,1);
+  assert.equal(current.entries[`${a.id}@3`].firstCompletedAt,null);
+  assert.equal(current.entries[`${a.id}@3`].checks,1);
   assert.ok(!mergeActivityProgress({completedIds:[],completedRoundIds:[],abilityTags:[]},[{id:'test',rounds:[a]}],current).completedRoundIds.includes(a.id));
 });
 

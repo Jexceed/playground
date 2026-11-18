@@ -42,6 +42,7 @@ export function activityImageSources(activity: Activity): string[] {
   if (evidence?.kind === 'storySequence') for (const image of evidence.cards) sources.add(image.src);
   if (evidence?.kind === 'visualComparison') for (const panel of evidence.panels) {
     if (panel.kind === 'image') sources.add(panel.image.src);
+    if (panel.kind === 'heightPair') { sources.add(panel.taller.src); sources.add(panel.shorter.src); }
     if (panel.kind === 'dots') sources.add(items.patternBlueDisc.src);
   }
   for (const image of activity.presentation?.storyCards ?? []) sources.add(image.src);

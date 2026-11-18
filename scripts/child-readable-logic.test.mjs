@@ -27,11 +27,18 @@ test('047 edits only declared wording fields, preserving all identities, choices
  assert.deepEqual(withoutGallery(restoreChildReadableWording(current)),withoutGallery(baseline));
 });
 test('classification uses groups throughout speech and labels without changing the two-condition rounds',()=>{
+ const restoredById=new Map(beforeCurriculumReview(current).games.flatMap(g=>g.rounds).map(r=>[r.id,r]));
  for(let i=1;i<=8;i++){
   const r=byId.get(`logic-sorter-switch-${i}`);
   for(const text of [r.prompt,r.instruction,r.success,r.retry,r.parentPrompt,...r.choices.map(c=>c.label)])assert.doesNotMatch(text,/篮子/);
  }
- for(let i=9;i<=11;i++)assert.deepEqual(byId.get(`logic-sorter-switch-${i}`),baseline.games.find(g=>g.id==='logic-sorter-switch').rounds[i-1]);
+ for(let i=9;i<=11;i++){
+  const expected=baseline.games.find(g=>g.id==='logic-sorter-switch').rounds[i-1];
+  assert.deepEqual(restoredById.get(`logic-sorter-switch-${i}`),expected);
+  const {difficultyNote:_,...liveChildFields}=byId.get(`logic-sorter-switch-${i}`);
+  const {difficultyNote:__,...expectedChildFields}=expected;
+  assert.deepEqual(liveChildFields,expectedChildFields);
+ }
 });
 test('life bridge evidence is a concrete failed state, distinct from the successful crossing',()=>{
  const ids=['logic-condition-detective-4','logic-condition-detective-12','logic-fix-plan-4','logic-fix-plan-11','logic-priority-choice-3','logic-priority-choice-10'];

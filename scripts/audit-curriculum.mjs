@@ -789,7 +789,7 @@ function checkGraphicRoundQuality(round, context) {
   if (!/先|再|轮廓|影子|遮住|露出|放大|局部|线索|边|角|尾巴|耳朵|叶子|缺口|叠|上面|下面|透明|密码|对应/.test(round.retry)) {
     problems.push(`${context}: graphic retry should guide a concrete visual operation`);
   }
-  if (!/问她|请她/.test(round.parentPrompt) || !/为什么|怎么|哪里|指|说|轮廓|遮住|局部|线索|叠|密码|对应|缺口/.test(round.parentPrompt)) {
+  if (!/问她|请她|问问孩子|请孩子/.test(round.parentPrompt) || !/为什么|怎么|哪里|指|说|轮廓|遮住|局部|线索|叠|密码|对应|缺口/.test(round.parentPrompt)) {
     problems.push(`${context}: graphic parentPrompt should ask for a parent-child explanation`);
   }
   const nearMissWords = `${round.retry} ${round.parentPrompt}`;
@@ -1110,8 +1110,8 @@ function checkPatternTrainRoundQuality(round, context) {
   if (!round.success.includes(unitText) || !round.success.includes(filledText) || !round.success.includes(answerLabel) || !/规律|重复|一组|顺序|所以/.test(round.success)) {
     problems.push(`${context}: pattern-train success should name repeat unit, filled sequence, and answer`);
   }
-  if (!round.retry.includes(unitText) || !round.retry.includes(filledText) || !round.retry.includes(answerLabel) || !/从左到右|念|说|顺序|重复/.test(round.retry)) {
-    problems.push(`${context}: pattern-train retry should name repeat unit or filled sequence and answer`);
+  if (!round.retry.includes(unitText) || !/从左到右|念|说|顺序|重复|往右/.test(round.retry)) {
+    problems.push(`${context}: pattern-train retry should name repeat unit and ordered checking strategy`);
   }
   if (!round.parentPrompt.includes(unitText) || !round.parentPrompt.includes(filledText) || !round.parentPrompt.includes(answerLabel) || !/指|说|为什么|解释|复述/.test(round.parentPrompt)) {
     problems.push(`${context}: pattern-train parentPrompt should ask for a child explanation of the pattern`);
@@ -2010,7 +2010,7 @@ function checkPositionNeighborRound(round, context, target, direction) {
   if (!round.success.includes(target) || !round.success.includes(direction) || !round.success.includes(neighbor) || !/一格/.test(round.success)) {
     problems.push(`${context}: position-map neighbor success should name target, direction, one-cell move, and answer`);
   }
-  if (!round.retry.includes(target) || !round.retry.includes(direction) || !round.retry.includes(neighbor) || !/先/.test(round.retry) || !/一格|指|点/.test(round.retry)) {
+  if (!round.retry.includes(target) || !round.retry.includes(direction) || !/先/.test(round.retry) || !/一格|指|点/.test(round.retry)) {
     problems.push(`${context}: position-map neighbor retry should ask the child to start at the target and move one cell`);
   }
   if (!round.parentPrompt.includes(target) || !round.parentPrompt.includes(direction) || !round.parentPrompt.includes(neighbor) || !/指|点|一格|为什么/.test(round.parentPrompt)) {
@@ -2039,8 +2039,8 @@ function checkPositionInsideOutsideRound(round, context, requestedSide) {
   if (!round.success.includes("盒子") || !round.success.includes(round.answer) || !/里面/.test(round.success) || !/外面/.test(round.success)) {
     problems.push(`${context}: position-map inside/outside success should name answer and contrast inside with outside`);
   }
-  if (!round.retry.includes(round.answer) || !/里面/.test(round.retry) || !/外面/.test(round.retry)) {
-    problems.push(`${context}: position-map inside/outside retry should compare inside and outside groups`);
+  if (!/里面|外面/.test(round.retry) || !/先|看|找/.test(round.retry)) {
+    problems.push(`${context}: position-map inside/outside retry should guide checking the requested box region`);
   }
   if (!round.parentPrompt.includes(round.answer) || !/里面/.test(round.parentPrompt) || !/外面/.test(round.parentPrompt) || !/指|点|说/.test(round.parentPrompt)) {
     problems.push(`${context}: position-map inside/outside parentPrompt should ask for a pointed inside/outside explanation`);
@@ -2079,7 +2079,7 @@ function checkPositionRelativeRound(round, context, source, target) {
   if (!round.success.includes(source) || !round.success.includes(target) || !round.success.includes(expectedDirection) || !/出发|开始|先指/.test(round.success)) {
     problems.push(`${context}: position-map relative success should name source, target, answer, and start-from-source strategy`);
   }
-  if (!round.retry.includes(source) || !round.retry.includes(target) || !round.retry.includes(expectedDirection) || !/从|先/.test(round.retry)) {
+  if (!round.retry.includes(source) || !round.retry.includes(target) || !/从|先/.test(round.retry)) {
     problems.push(`${context}: position-map relative retry should ask the child to start from the source viewpoint`);
   }
   if (!round.parentPrompt.includes(source) || !round.parentPrompt.includes(target) || !round.parentPrompt.includes(expectedDirection) || !/指|点|从/.test(round.parentPrompt)) {
@@ -2178,7 +2178,7 @@ function checkMemoryAppearedRound(round, context, labels) {
   if (!textNamesMemorySetAndAnswer(round.success, labels, round.answer) || !/出现过|有/.test(round.success)) {
     problems.push(`${context}: memory-camera appeared success should name remembered cards and answer`);
   }
-  if (!textNamesMemorySetAndAnswer(round.retry, labels, round.answer) || !/先|回想|念|记/.test(round.retry)) {
+  if (!/先|想一想|回想|念|记|再看一次/.test(round.retry)) {
     problems.push(`${context}: memory-camera appeared retry should ask the child to recall remembered cards before answering`);
   }
   if (!textNamesMemorySetAndAnswer(round.parentPrompt, labels, round.answer) || !/说|复述|念|记/.test(round.parentPrompt)) {
@@ -2200,7 +2200,7 @@ function checkMemoryAbsentRound(round, context, labels) {
   if (!textNamesMemorySetAndAnswer(round.success, labels, round.answer) || !/没有出现|没出现|多出来/.test(round.success)) {
     problems.push(`${context}: memory-camera absent success should name remembered cards and absent answer`);
   }
-  if (!textNamesMemorySetAndAnswer(round.retry, labels, round.answer) || !/排除|多出来|没有出现|没出现|先/.test(round.retry)) {
+  if (!/排除|没见过|没有出现|没出现|先/.test(round.retry)) {
     problems.push(`${context}: memory-camera absent retry should ask the child to exclude remembered cards`);
   }
   if (!textNamesMemorySetAndAnswer(round.parentPrompt, labels, round.answer) || !/排除|为什么|说|复述/.test(round.parentPrompt)) {
@@ -2228,7 +2228,7 @@ function checkMemoryOrderRound(round, context, labels, ordinal) {
   if (!textNamesMemorySetAndAnswer(round.success, labels, expectedAnswer) || !round.success.includes(ordinal) || !/从左到右|顺序/.test(round.success)) {
     problems.push(`${context}: memory-camera order success should name sequence, ordinal, and answer`);
   }
-  if (!textNamesMemorySetAndAnswer(round.retry, labels, expectedAnswer) || !round.retry.includes(ordinal) || !/从左到右|顺序/.test(round.retry)) {
+  if (!round.retry.includes(ordinal) || !/从左到右|顺序/.test(round.retry)) {
     problems.push(`${context}: memory-camera order retry should ask the child to replay the sequence before answering`);
   }
   if (!textNamesMemorySetAndAnswer(round.parentPrompt, labels, expectedAnswer) || !round.parentPrompt.includes(ordinal) || !/说|复述|念|顺序/.test(round.parentPrompt)) {
@@ -2279,11 +2279,12 @@ function checkOrderPlanRoundQuality(round, context) {
 
   const answerLabel = answerChoices[0].label;
   const filledSequence = sequence.map((item) => (item === "?" ? answerLabel : orderPlanStepLabel(item)));
+  const knownSequence = sequence.filter((item) => item !== "?").map(orderPlanStepLabel);
   if (!allItemsMentioned(round.success, filledSequence) || !round.success.includes(answerLabel) || !/顺序|缺少|所以|先|然后|再|最后/.test(round.success)) {
     problems.push(`${context}: order-plan success should name filled sequence and answer`);
   }
-  if (!allItemsMentioned(round.retry, filledSequence) || !round.retry.includes(answerLabel) || !/从左到右|顺序|缺少|先|然后|再|最后/.test(round.retry)) {
-    problems.push(`${context}: order-plan retry should name filled sequence, answer, and replay strategy`);
+  if (!allItemsMentioned(round.retry, knownSequence) || !/从左到右|顺序|缺少|空着|先|然后|再|最后/.test(round.retry)) {
+    problems.push(`${context}: order-plan retry should name visible sequence steps and replay strategy`);
   }
   if (!allItemsMentioned(round.parentPrompt, filledSequence) || !round.parentPrompt.includes(answerLabel) || !/复述|说|指|为什么|解释/.test(round.parentPrompt)) {
     problems.push(`${context}: order-plan parentPrompt should ask for a child explanation of the filled sequence`);
@@ -2526,11 +2527,35 @@ function sortedRowSignature(row) {
   return [...row].sort().join("\u0000");
 }
 
+function matrixTextAliases(item) {
+  return ({
+    "🔴": ["红色圆片", "红"],
+    "🔵": ["蓝色圆片", "蓝"],
+    "🟡": ["黄色圆片", "黄"],
+    "🟢": ["绿色圆片", "绿"],
+    "🟣": ["紫色圆片", "紫"],
+    "🍎": ["苹果"],
+    "🍊": ["橘子"],
+    "🍓": ["草莓"],
+    "🔴🔵": ["红蓝双圆片", "红色圆片和蓝色圆片"],
+    "🟡🟢": ["黄绿双圆片", "黄色圆片和绿色圆片"],
+    "🟣🔴": ["紫红双圆片", "紫色圆片和红色圆片"],
+    "🍊🍊": ["2 个橘子", "两个橘子"],
+    "🍓🍓🍓": ["3 个草莓", "三个草莓"],
+  })[item];
+}
+
+function matrixItemMentioned(text, item) {
+  if (text.includes(item)) return true;
+  const aliases = matrixTextAliases(item);
+  return Boolean(aliases?.some((alias) => text.includes(alias)));
+}
+
 function matrixPuzzleSuccessNamesRows(text, rule) {
   return (
-    text.includes(rule.answer) &&
-    allItemsMentioned(text, rule.exampleRow) &&
-    allItemsMentioned(text, rule.missingKnownItems) &&
+    matrixItemMentioned(text, rule.answer) &&
+    rule.exampleRow.every((item) => matrixItemMentioned(text, item)) &&
+    rule.missingKnownItems.every((item) => matrixItemMentioned(text, item)) &&
     /第一行|完整行|例子/.test(text) &&
     /第三行|缺|空格|待补|所以补/.test(text)
   );

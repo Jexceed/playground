@@ -5,7 +5,7 @@ small enough to turn into a Spec Kit feature.
 
 ## P0
 
-- 在真实家庭及实体触屏设备上试玩 066 修复。观察孩子能否自己辨认左右、摆完拼图和平均分配、解释不同分类依据，以及能否借助两句英语排除干扰项。118 组已做浏览器逐题复核与代表性 Mac 验收。继续沿用 059 的文字层级、侧栏已做标记和标题数量对齐要求。[066 验收记录](../specs/066-curriculum-review-remediation/verification.md)
+- 在真实家庭和实体触屏设备上试玩 067 与 066。观察孩子能否独立放大选项、拿起拼板、来回切层、解释两条身高线索，以及在遮图后回忆整组和使用实际地图定位。记录年龄、所需提示与家长代点情况，继续复查 066 的左右位置和分类理由。[067 验收记录](../specs/067-curriculum-appeal-and-difficulty/verification.md) · [066 验收记录](../specs/066-curriculum-review-remediation/verification.md)
 
 
 

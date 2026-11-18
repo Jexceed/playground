@@ -92,6 +92,11 @@ export function auditActivityCurriculum(
           } else if (panel.kind === 'placeValue') {
             if (!Number.isInteger(panel.tens) || panel.tens < 0 || !Number.isInteger(panel.ones) || panel.ones < 0 || panel.ones > 9)
               problems.push(`${prefix}: invalid comparison place value`);
+          } else if (panel.kind === 'heightPair') {
+            const portraits = [panel.taller, panel.shorter];
+            if (portraits.some(image => !image?.alt?.trim() || !registered.has(image.src) || !existsSync(join('public', image.src)))
+              || panel.taller?.src === panel.shorter?.src)
+              problems.push(`${prefix}: height clues require two distinct registered, named portraits`);
           } else if (panel.kind !== 'image' || !registered.has(panel.image?.src) || !existsSync(join('public', panel.image.src)))
             problems.push(`${prefix}: missing or unregistered comparison image`);
         }

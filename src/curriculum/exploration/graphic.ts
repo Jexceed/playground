@@ -2,7 +2,7 @@ import { visibleLayerPairs } from "../../domain/layer-visibility";
 import { set, nine, choice, numeric, selection, ordered, fillGrid, parent, base, card, authoringSolutions } from './helpers';
 import { picture, text, rect, circle, line, grid, mosaic, symbol, panels, blocks, palette, transform, type Drawing, type Primitive } from './draw';
 import type { Activity } from '../../domain/activity';
-import type { ConstructionActivity, Point3, Piece } from '../../domain/advanced-activity';
+import { placedCells, type ConstructionActivity, type Point3 } from '../../domain/advanced-activity';
 import { solidTopView, facingPerson, foldedPaperScene, holePattern } from './task-diagrams';
 import { pyramidActivity } from './pyramid';
 
@@ -18,7 +18,7 @@ export function pyramidDiagram(base: number[][]): Drawing {
                 objects.push(line(x - stepX / 2 + side / 2, y + stepY, x + side / 2, y + side), line(x + stepX / 2 + side / 2, y + stepY, x + side / 2, y + side));
                 objects.push(rect(x, y, side, side, '#f0f3e9', true), text(x + side / 2, y + 49, '?', 30));
             } else {
-                const source = mosaic(base[col]);
+                const source = mosaic(base[col], Math.round(Math.sqrt(base[col].length)));
                 objects.push(...transform(source.objects, side / source.width, side / source.height, x, y));
             }
         }
@@ -27,6 +27,7 @@ export function pyramidDiagram(base: number[][]): Drawing {
 }
 
 const patterns = [[1, 0, 0, 1, 1, 0, 0, 1, 0], [0, 1, 0, 1, 1, 1, 1, 0, 0], [1, 1, 0, 0, 1, 0, 0, 1, 1]];
+const pyramidPatterns = [[1, 0, 1, 1], [0, 1, 1, 0], [1, 1, 0, 0]];
 const turn = (a: number[], n = 3) => a.map((_, k) => a[(n - 1 - k % n) * n + Math.floor(k / n)]);
 const mirror = (a: number[], n = 3) => a.map((_, k) => a[Math.floor(k / n) * n + n - 1 - k % n]);
 const flip = (a: number[], k: number) => a.map((n, i) => i === k ? 1 - n : n);
@@ -66,6 +67,54 @@ export function cubeNormals(coords: [
     }
     return coords.map((_, i) => frames.get(i)?.n ?? [0, 0, 0]);
 }
+type AssemblyPiece = [cells: Point3[], x: number, y: number, rotation: number, layer?: number];
+type AssemblyLayout = { columns: number; rows: number; layers?: number; pieces: AssemblyPiece[] };
+const square: Point3[] = [[0, 0, 0]];
+const domino: Point3[] = [[0, 0, 0], [1, 0, 0]];
+const upright: Point3[] = [[0, 0, 0], [0, 1, 0]];
+const corner: Point3[] = [...domino, [0, 1, 0]];
+const tee: Point3[] = [...domino, [2, 0, 0], [1, 1, 0]];
+
+// Each placement both defines the shaded footprint and provides one of its possible solutions.
+const assemblyLayouts: AssemblyLayout[] = [
+    { columns: 2, rows: 2, pieces: [[corner, 0, 0, 0], [square, 1, 1, 0]] },
+    { columns: 3, rows: 2, pieces: [[corner, 0, 0, 0], [corner, 1, 0, 2]] },
+    { columns: 3, rows: 3, pieces: [[corner, 0, 0, 0], [upright, 2, 0, 0], [corner, 1, 1, 3]] },
+    { columns: 4, rows: 2, pieces: [[corner, 0, 0, 0], [corner, 1, 0, 2], [domino, 3, 0, 1]] },
+    { columns: 3, rows: 3, pieces: [[tee, 0, 0, 0], [corner, 0, 1, 3], [domino, 2, 1, 1]] },
+    { columns: 2, rows: 2, layers: 2, pieces: [[corner, 0, 0, 0], [square, 1, 1, 0], [domino, 1, 0, 1, 1]] },
+];
+
+function shapeAssembly(index: number, stage: number, variant: number): ConstructionActivity {
+    const layout: AssemblyLayout = stage === 0
+        ? { columns: 2 + variant, rows: 2, pieces: Array.from({ length: 2 + variant }, (_, x) => [upright, x, 0, 0]) }
+        : assemblyLayouts[index - 3];
+    const layers = layout.layers ?? 1;
+    const pieces = layout.pieces.map(([cells], i) => ({
+        id: `p${i}`, label: String.fromCharCode(65 + i), cells, color: palette[i],
+    }));
+    const placements = layout.pieces.map(([, x, y, rotation, z = 0], i) => ({ pieceId: pieces[i].id, x, y, z, rotation }));
+    const target = pieces.flatMap((piece, i) => placedCells(piece, placements[i]));
+    const prompt = layers === 2 ? '用三块拼板，把上下两层的阴影都拼好。'
+        : ['用这些部件，刚好盖住阴影。', '转一转部件，把缺口拼完整。', '用三块拼板把阴影拼完整。'][stage];
+    const instruction = layers === 2 ? '先铺第一层，再用“摆放层”切到第二层。需要时可以转动拼板。'
+        : stage === 0 ? '先选拼板，再点阴影格放进去；点已放好的拼板可以拿起来重摆。'
+        : '先选拼板，需要时点“转一下方向”，再点阴影格自动对齐放进去。';
+    const reason = layers === 2 ? '第一层铺满了四格，第二层右边两格也有拼板，上下对齐，每个格子只盖一次。'
+        : stage === 0 ? '每个目标格都盖住了，没有重叠，也没有多出来的格子。'
+        : '不同形状的部件恰好拼满，没有重叠，也没有盖到阴影外。';
+    const activity: ConstructionActivity = {
+        ...base('G14', index, prompt, instruction, reason), kind: 'construction',
+        columns: layout.columns, rows: layout.rows, layers, pieces, target, allowRotate: stage > 0,
+    };
+    if (layers === 2) {
+        activity.hints = ['先看看第一层和第二层各有几格阴影，再选合适的拼板。', '切换两层分别看一遍。拼板有没有放错层、盖在一起或留下空格？'];
+        activity.parentPrompt = '请孩子来回切换两层，指给你看上层的拼板下面由哪些格子托着。';
+    }
+    authoringSolutions[activity.id] = { kind: 'construction', placements };
+    return activity;
+}
+
 export const graphicSets = [
     set('G01', '图案观察员', nine((i, s, v) => { const bits = patterns[v], target = s === 0 ? bits : s === 1 ? turn(bits) : mirror(bits); return fig('G01', i, s === 0 ? '找出和上面完全相同的图案。' : s === 1 ? '仔细看每个格子，找出完全相同的图案。' : '不漏掉小角落，哪张图案和上面完全一样？', mosaic(target), [mosaic(flip(target, v)), mosaic(flip(target, 8 - v)), mosaic(flip(target, 4))], '逐行对应，色块的位置、数量都一样。', mosaic(target)); })),
     set('G02', '遮住了什么', nine((i, s, v) => { if (s === 0) {
@@ -74,24 +123,24 @@ export const graphicSets = [
         return fig('G02', i, '灰色纸片下面可能是哪个完整图形？', d, [symbol((v + 1) % 3, 1), symbol((v + 2) % 3, 1)], '用露在外面的轮廓判断，颜色相同还不够。', stem);
     } const n = 4, bits = Array.from({ length: 16 }, (_, k) => s === 1 ? (v === 2 ? Math.floor(k / n) % 2 : (Math.floor(k / n) + k % n + v) % 2) : ((Math.floor(k / n) + v) % 3 === 0 ? 1 : 0)); const patch = [bits[5], bits[6], bits[9], bits[10]]; const stem = grid(bits.map((b, k) => [5, 6, 9, 10].includes(k) ? '?' : ''), 4, [], bits.map((b, k) => [5, 6, 9, 10].includes(k) ? '#d8d8d8' : b ? palette[1] : '#fffdf7')); return fig('G02', i, '选哪一块补片，能把行列里的纹理接上？', mosaic(patch, 2), [mosaic(flip(patch, 0), 2), mosaic(flip(patch, 3), 2), mosaic(patch.map(x => 1 - x), 2)], '补片的四条边都要和周围纹理对上。', stem, [s === 1 ? (v === 2 ? '每行同色，蓝白行交替。' : '蓝白格沿每行、每列交替。') : '相同的一整行保持同色，按三行一组重复。']); })),
     set('G03', '行列规律研究', nine((i, s, v) => { const ids = Array.from({ length: 9 }, (_, k) => `s${k}`), ts = ids.map((id, k) => card(id, `${['红', '蓝', '黄'][Math.floor(k / 3)]}${['圆', '方', '三角'][k % 3]}`, symbol(k % 3, Math.floor(k / 3)))); const sol = Array.from({ length: 9 }, (_, k) => ids[(s === 0 ? v : Math.floor(k / 3)) * 3 + (k % 3 + v) % 3]); return fillGrid('G03', i, '把每行每列的规律补完整。', ts, 3, sol, s === 0 ? [2, 5] : s === 1 ? [1, 5, 6] : [0, 2, 4, 6, 8], '同一行的颜色保持不变，同一列的形状也保持不变。', ['每一行颜色相同。', `从左到右依次是${[0, 1, 2].map(n => ['圆', '方', '三角'][(n + v) % 3]).join('、')}。`, ...(s > 0 ? ['从上到下依次是红、蓝、黄。'] : [])]); })),
-    set('G04', '标记走格子', nine((i, s, v) => { const n = 5, start = 1 + v, steps = 2 + v; let end: number; if (s === 0)
+    set('G04', '标记走格子', nine((i, s, v) => { const n = 5, start = s === 2 ? [2, 3, 4][v] : [3, 2, 3][v], steps = s === 2 ? [3, 3, 2][v] : [3, 4, 4][v]; let end: number; if (s === 0)
         end = (start + steps) % n;
     else {
         const t = (start + steps) % (2 * (n - 1));
         end = t < n ? t : 2 * (n - 1) - t;
-    } const draw = (p: number, q?: number) => { const d = grid(Array(n).fill(''), n); d.objects.push(circle(62.5 + p * 85 - (p === q ? 12 : 0), 62.5, 14, palette[0])); if (q !== undefined) d.objects.push(circle(62.5 + q * 85 + (p === q ? 12 : 0), 62.5, 14, palette[1])); return d; }; const second = s === 2 ? (4 - v - steps % n + n) % n : undefined; const a = fig('G04', i, '标记按规则移动，最后在哪个位置？', draw(end, second), s === 2 ? [draw(end, (second! + 1) % n), draw((end + 1) % n, second), draw((end + 1) % n, (second! + 1) % n)] : [draw((end + 1) % n, second), draw((end + n - 1) % n, second), draw(start, second)], s === 0 ? '走到最右边以后，从最左边继续数。' : s === 1 ? '红标记碰到边就反向，每一步都从上一步的位置继续。' : '红标记碰边后反向，蓝标记向左走、越过左边就回到最右边。两个位置都要对。', draw(start, s === 2 ? 4 - v : undefined), [s === 0 ? '红标记每次向右一格，走到边上就回最左。' : '红标记先向右一格一格走，碰到边就反向。', `走${steps}步。`, ...(s === 2 ? ['蓝标记同时向左走，出左边就回最右。'] : [])]); if (s === 2) { a.revision = 2; a.parentPrompt = '红标记和蓝标记要分别检查。有的选项只有一个标记的位置对了。'; } return a; })),
+    } const draw = (p: number, q?: number) => { const d = grid(Array(n).fill(''), n); d.objects.push(circle(62.5 + p * 85 - (p === q ? 12 : 0), 62.5, 14, palette[0])); if (q !== undefined) d.objects.push(circle(62.5 + q * 85 + (p === q ? 12 : 0), 62.5, 14, palette[1])); return d; }; const blueStart = [1, 1, 0][v]; const second = s === 2 ? (blueStart - steps % n + n) % n : undefined; const a = fig('G04', i, '标记按规则移动，最后在哪个位置？', draw(end, second), s === 2 ? [draw(end, (second! + 1) % n), draw((end + 1) % n, second), draw((end + 1) % n, (second! + 1) % n)] : [draw((end + 1) % n, second), draw((end + n - 1) % n, second), draw(start, second)], s === 0 ? '走到最右边以后，从最左边继续数。' : s === 1 ? '红标记碰到边就反向，每一步都从上一步的位置继续。' : '红标记碰边后反向，蓝标记向左走、越过左边就回到最右边。两个位置都要对。', draw(start, s === 2 ? blueStart : undefined), [s === 0 ? '红标记每次向右一格，走到边上就回最左。' : '红标记先向右一格一格走，碰到边就反向。', `走${steps}步。`, ...(s === 2 ? ['蓝标记同时向左走，出左边就回最右。'] : [])]); if (s === 2) { a.revision = 2; a.parentPrompt = '红标记和蓝标记要分别检查。有的选项只有一个标记的位置对了。'; } return a; })),
     set('G05', '转一转照一照', nine((i, s, v) => { const bits = patterns[v]; if (s === 1 && v > 0) {
         const small = (sx: number, sy: number) => picture(transform(mosaic(bits).objects, sx, sy, (320 - mosaic(bits).width * sx) / 2, (320 - mosaic(bits).height * sy) / 2), 320, 320);
         return fig('G05', i, v === 1 ? '把图案等比例放大，哪张只变大而没有拉扁？' : '只把图案横向拉长，上下高度保持不变。', small(.85, v === 1 ? .85 : .55), [small(.55, .85), small(.85, v === 1 ? .55 : .85), small(.55, .55)], v === 1 ? '横和竖用同样的比例放大，形状不会被拉扁。' : '只改变横向距离，上下位置和高度不变。', small(.55, .55));
     } const answer = s === 0 ? turn(bits) : s === 1 ? mirror(bits) : mirror(turn(bits)); return fig('G05', i, s === 0 ? '把图案顺时针转四分之一圈，得到哪张？' : s === 1 ? '把图案照在左右镜子里，得到哪张？' : '先顺时针转四分之一圈，再左右翻过来。', mosaic(answer), [mosaic(flip(answer, 0)), mosaic(flip(answer, 8)), mosaic(bits)], '每个色格一起变换，相邻关系和色格数量保持不变。', mosaic(bits), [s === 1 ? '这里左右翻转，上下不变。' : s === 2 ? '两次变换要按给定顺序做。' : '顺时针就是钟表指针走的方向。']); })),
     set('G06', '图形合并机', nine((i, s, v) => { const a = patterns[v], b = patterns[(v + 1) % 3], op = s === 0 ? '并起来' : s === 1 ? ['共同', '不同', '共同'][v] : ['左减右', '右减左', '左减右'][v]; const out = a.map((x, k) => op === '并起来' ? Number(!!(x || b[k])) : op === '共同' ? x & b[k] : op === '不同' ? x ^ b[k] : op === '右减左' ? b[k] * (1 - x) : x * (1 - b[k])); return fig('G06', i, `按“${op}”的规则，结果是哪张？`, mosaic(out), [mosaic(flip(out, 0)), mosaic(flip(out, 5)), mosaic(flip(out, 8))], '逐格比较，再把符合规则的格子留下。', panels([{ title: '左图', drawing: mosaic(a) }, { title: '右图', drawing: mosaic(b) }]), [op === '并起来' ? '任意一张有色的格子都留下。' : op === '共同' ? '两张都有色的格子才留下。' : op === '不同' ? '只有一张有色的格子才留下。' : op === '右减左' ? '右图有、左图没有的格子留下。' : '左图有、右图没有的格子留下。']); })),
     set('G07', '图形金字塔', nine((i, s, v) => {
-      const a = patterns[v], b = patterns[(v + 1) % 3], c = patterns[(v + 2) % 3], d = flip(a, v + 3);
+      const a = pyramidPatterns[v], b = pyramidPatterns[(v + 1) % 3], c = pyramidPatterns[(v + 2) % 3], d = flip(a, v);
       if (s > 0) return pyramidActivity(i, [a, b, c, ...(s === 2 ? [d] : [])]);
       const answer = a.map((bit, k) => Number(Boolean(bit || b[k])));
-      return fig('G07', i, '两块合成上面一块，结果是哪张？', mosaic(answer), [mosaic(flip(answer, 0)), mosaic(flip(answer, 4)), mosaic(flip(answer, 8))], '任一块有色就留下。', pyramidDiagram([a, b]), ['合并时，有颜色的格子都留下。']);
+      return fig('G07', i, '两块合成上面一块，结果是哪张？', mosaic(answer, 2), [mosaic(flip(answer, 0), 2), mosaic(flip(answer, 1), 2), mosaic(flip(answer, 3), 2)], '任一块有色就留下。', pyramidDiagram([a, b]), ['合并时，有颜色的格子都留下。']);
     })),
-    set('G08', '颜色密码运算', nine((i, s, v) => { const n = 2 + s, colors = ['红', '蓝', '黄']; const a = Array.from({ length: n }, (_, k) => (k + v) % 3), b = Array.from({ length: n }, (_, k) => (k + 1 + s) % 3), out = a.map((x, k) => (x + b[k]) % 3); const draw = (xs: number[]) => grid(xs.map(n => colors[n]), xs.length, [], xs.map(n => palette[n])); return fig('G08', i, '这是颜色密码规则，算出的图卡是哪张？', draw(out), [draw(out.map((x, k) => k === 0 ? (x + 1) % 3 : x)), draw(out.map((x, k) => k === n - 1 ? (x + 2) % 3 : x))], '先把颜色读成数字，相加，满三就减三，再换回颜色。这里是编码规则，不是调颜料。', panels([{ title: '第一排', drawing: draw(a) }, { title: '第二排', drawing: draw(b) }]), ['红代表0，蓝代表1，黄代表2。', '同一位置的两个数相加，满3就减3。']); })),
+    set('G08', '颜色密码运算', nine((i, s, v) => { const n = 2 + s, colors = ['红', '蓝', '黄']; const a = Array.from({ length: n }, (_, k) => (k + v) % 3), b = Array.from({ length: n }, (_, k) => (k + 1 + s) % 3), out = a.map((x, k) => (x + b[k]) % 3); const draw = (xs: number[]) => grid(xs.map(n => colors[n]), xs.length, [], xs.map(n => palette[n])); const rowA = draw(a), rowB = draw(b), stemW = Math.max(rowA.width + 130, 420); const stackedStem = picture([text(68, 72, '第一排', 22), ...transform(rowA.objects, 1, 1, 115, 5), text(68, 192, '第二排', 22), ...transform(rowB.objects, 1, 1, 115, 125)], stemW, 255); return fig('G08', i, '这是颜色密码规则，上下对齐相加算出的图卡是哪张？', draw(out), [draw(out.map((x, k) => k === 0 ? (x + 1) % 3 : x)), draw(out.map((x, k) => k === n - 1 ? (x + 2) % 3 : x))], '先把上下同一列的颜色读成数字相加，满三就减三，再换回颜色。这里是编码规则，不是调颜料。', stackedStem, ['红代表0，蓝代表1，黄代表2。', '上下同一列对齐的两个数相加，满3就减3。']); })),
     set('G09', '点线面数清楚', nine((i, s, v) => { let answer: number, prompt: string, art: Drawing, reason: string; if (s === 1 && v === 1)
         return numeric('G09', i, '把交点作为分界，这个十字共有几段小线段？', 4, [2, 3, 5], '两条整直线在交点处分开，每条变成两段，所以有四段小线段。', picture([line(80, 140, 520, 140), line(300, 40, 300, 240), circle(300, 140, 6, '#253243')]), { operation: 'multiply', values: [2, 2] }); if (s === 2) {
         const rows = v === 2 ? 2 : 1, columns = v === 1 ? 3 : 2, count = [3, 6, 9][v];
@@ -120,40 +169,31 @@ export const graphicSets = [
         reason = `${rows}排，每排${cols}格，一共${answer}格。`;
     } return numeric('G09', i, prompt, answer, [answer - 1, answer + 1, answer + 3], reason, art, { operation: 'identity', values: [answer] }); })),
     set('G10', '哪里可以对折', nine((i, s, v) => { const shapes = [picture([{ kind: 'polygon', points: [[160, 45], [55, 265], [265, 265]], fill: palette[1] }], 320, 320), picture([rect(60, 65, 200, 65, palette[1]), rect(127, 130, 66, 135, palette[1])], 320, 320), picture([{ kind: 'polygon', points: [[160, 35], [275, 145], [200, 145], [200, 275], [120, 275], [120, 145], [45, 145]], fill: palette[1] }], 320, 320)]; const bits = [[1, 0, 1, 1, 1, 1, 0, 1, 0], [1, 1, 1, 0, 1, 0, 1, 1, 1], [1, 0, 1, 0, 1, 0, 1, 0, 1]][v]; const shape = s === 0 ? shapes[v] : s === 1 ? (v === 0 ? picture([rect(50, 95, 220, 130, palette[1])], 320, 320) : v === 1 ? picture([rect(60, 60, 200, 200, palette[1])], 320, 320) : picture([{ kind: 'polygon', points: [[160, 35], [236, 160], [160, 285], [84, 160]], fill: palette[1] }], 320, 320)) : mosaic(bits); const w = shape.width, h = shape.height, foldLines = [[w / 2, 10, w / 2, h - 10], [10, h / 2, w - 10, h / 2], [10, 10, w - 10, h - 10], [10, h - 10, w - 10, 10]], valid = s === 0 ? [0] : s === 1 ? (v === 1 ? [0, 1, 2, 3] : [0, 1]) : v === 0 ? [0] : v === 1 ? [0, 1] : [0, 1, 2, 3]; return selection('G10', i, '沿哪些虚线对折，两边能完全重合？', foldLines.map(([x, y, x2, y2], k) => card(`axis${k}`, `折线${k + 1}`, picture([...shape.objects, line(x, y, x2, y2, true)], w, h))), valid.map(k => `axis${k}`), '要检查整个图案都重合，不能只看外轮廓或只看一个色块。', shape); })),
-    set('G11', '相碰还是相交', nine((i, s, v) => { const draw = (distance: number, inside = false) => picture([circle(120, 155, 70, '#f5d7d0'), circle(inside ? 120 : 120 + distance, 155, inside ? 25 : 55, '#c9dfef')], 320, 320); if (s === 0) {
+    set('G11', '相碰还是相交', nine((i, s, v) => { const draw = (distance: number, inside = false) => picture([{ ...circle(120, 155, 70, '#f59e8b'), fillOpacity: 0.62 }, { ...circle(inside ? 120 : 120 + distance, 155, inside ? 28 : 55, '#6da8d6'), fillOpacity: 0.58 }], 320, 320); if (s === 0) {
         const outline = symbol(v, 0);
         const option = (x: number) => picture([...outline.objects, circle(x, 155, 23, palette[1])], 320, 320);
         return fig('G11', i, '哪张图里，蓝色圆完全在红色图形里面？', option(160), [option(35), option(245)], '蓝色圆的每个部分都在红色图形内，边界没有伸出去。', undefined);
-    } const options = [draw(125), draw(95), draw(145), draw(0, true)]; return selection('G11', i, s === 1 ? ['哪些图形的边界相碰，但没有交叉？', '哪些图形的边界互相交叉？', '哪些图形完全分开？'][v] : ['哪些图中，红蓝两块作为一个整体连在一起？', '哪些图里一个图形完全包含另一个？', '哪些图里两块有重叠，但互不包含？'][v], options.map((d, k) => card(`r${k}`, `图${k + 1}`, d)), (s === 1 ? [[0], [1], [2]][v] : [[0, 1, 3], [3], [1]][v]).map(k => `r${k}`), '看清边界的关系：相碰、交叉、分开和包含是不同情况。', undefined, [v === 0 ? '看清两条边界。' : v === 1 ? '不要把中间的白色空隙忽略掉。' : '可以用手指沿边界检查。']); })),
-    set('G12', '小黑点的任务', nine((i, s, v) => { const outline = symbol(v, 2), placements: [
-        [
-            number,
-            number
-        ],
-        [
-            number,
-            number
-        ],
-        [
-            number,
-            number
-        ]
-    ] = [[160, 160], [32, 32], [160, v === 2 ? 72 : 88]], art = (k: number) => picture([...outline.objects, circle(placements[k][0], placements[k][1], 7, '#263547')], 320, 320), answer = s === 0 ? 0 : s === 1 ? 2 : 1; return fig('G12', i, ['小黑点负责标出图形里面。哪张符合这项任务？', '小黑点的中心要落在轮廓线上。哪张符合？', '小黑点负责标出图形外面。哪张符合？'][s], art(answer), [0, 1, 2].filter(k => k !== answer).map(art), '形状可以变，标记的作用不能变。要根据这次指定的任务判断。', undefined, [['点的中心要在内部。', '点的中心要在边界上。', '点的中心要在外部。'][s]]); })),
+    } const options = [draw(125), draw(95), draw(145), draw(0, true)]; const stageClues = s === 1 ? ['两圆边线刚好挨一下，没有伸进对方里面。', '两圆边线互相跨过去，中间有一块重叠。', '两圆中间留有空白，边线完全没碰到。'] : ['只要相碰、相交或装在里面，都算连成一个整体。', '小圆整个藏在大圆里面，边线也不露出去。', '两圆有一部分叠在一起，但两边都还露出一块。']; return selection('G11', i, s === 1 ? ['哪些图形的边界相碰，但没有交叉？', '哪些图形的边界互相交叉？', '哪些图形完全分开？'][v] : ['哪些图中，红蓝两块作为一个整体连在一起？', '哪些图里一个图形完全包含另一个？', '哪些图里两块有重叠，但互不包含？'][v], options.map((d, k) => card(`r${k}`, `图${k + 1}`, d)), (s === 1 ? [[0], [1], [2]][v] : [[0, 1, 3], [3], [1]][v]).map(k => `r${k}`), '看清边界的关系：相碰、交叉、分开和包含是不同情况。', undefined, [stageClues[v]]); })),
+    set('G12', '小黑点的任务', nine((i, s, v) => {
+        if (s === 2) {
+            const secondShape = (v: number): Primitive => v === 0
+                ? { ...circle(194, 160, 68, palette[1]), fillOpacity: 0.5 }
+                : v === 1
+                    ? { ...rect(136, 98, 124, 124, palette[1]), fillOpacity: 0.5 }
+                    : { kind: 'polygon', points: [[196, 86], [272, 224], [120, 224]], fill: palette[1], fillOpacity: 0.5 };
+            const pairShapes = (dotX: number, dotY: number) => picture([
+                { ...circle(122, 160, 68, palette[2]), fillOpacity: 0.55 },
+                secondShape(v),
+                circle(dotX, dotY, 7, '#263547'),
+            ], 320, 320);
+            return fig('G12', i, '小黑点负责标出两个图形重叠的地方。哪张符合这项任务？', pairShapes(164, 172), [pairShapes(82, 160), pairShapes(236, 195), pairShapes(160, 42)], '小黑点要同时在黄色图形里面，也在蓝色图形里面。', undefined, ['点的中心要落在两张图形共同盖住的区域里。']);
+        }
+        const outline = symbol(v, 2), placements: [[number, number], [number, number], [number, number]] = [[160, 160], [32, 32], [160, v === 2 ? 72 : 88]];
+        const art = (k: number) => picture([...outline.objects, circle(placements[k][0], placements[k][1], 7, '#263547')], 320, 320), answer = s === 0 ? 0 : 2;
+        return fig('G12', i, ['小黑点负责标出图形里面。哪张符合这项任务？', '小黑点的中心要落在轮廓线上。哪张符合？'][s], art(answer), [0, 1, 2].filter(k => k !== answer).map(art), '形状可以变，标记的作用不能变。要根据这次指定的任务判断。', undefined, [['点的中心要在内部。', '点的中心要在边界上。'][s]]);
+    })),
     set('G13', '多位图形密码', nine((i, s, v) => { const symbols = ['○', '□', '△'], numbers = [2 + v, 5 + v, 8 + v], seq = Array.from({ length: 3 + s }, (_, k) => (k + v) % 3); const reverse = s === 2; const ts = reverse ? symbols.map((n, k) => card(`s${k}`, n, symbol(k, 1))) : numbers.map((n, k) => card(`n${k}`, n)); return fillGrid('G13', i, reverse ? '把数字密码译回图形。' : '把图形密码译成数字。', ts, seq.length, seq.map(k => `${reverse ? 's' : 'n'}${k}`), seq.map((_, k) => k), '每一位都要用同一张对照表，不因为位置改变对应关系。', [symbols.map((n, k) => `${n}对应${numbers[k]}`).join('，')], grid(seq.map(k => reverse ? numbers[k] : symbols[k]), seq.length)); })),
-    set('G14', '拼搭小工坊', nine((i, s, v) => { if (s === 1) {
-        const l: Point3[] = [[0, 0, 0], [1, 0, 0], [0, 1, 0]], specs = v === 0 ? [{ cells: l, x: 0, y: 0, r: 0 }, { cells: [[0, 0, 0]] as Point3[], x: 1, y: 1, r: 0 }] : v === 1 ? [{ cells: l, x: 0, y: 0, r: 0 }, { cells: l, x: 1, y: 0, r: 2 }] : [{ cells: l, x: 0, y: 0, r: 0 }, { cells: [[0, 0, 0], [0, 1, 0]] as Point3[], x: 2, y: 0, r: 0 }, { cells: l, x: 1, y: 1, r: 3 }], pieces = specs.map((p, k) => ({ id: `p${k}`, label: String.fromCharCode(65 + k), cells: p.cells, color: palette[k] })), placements = specs.map((p, k) => ({ pieceId: `p${k}`, x: p.x, y: p.y, z: 0, rotation: p.r }));
-        const occupied = specs.flatMap((p, k) => { let cs = p.cells.map(c => [...c] as Point3); for (let j = 0; j < p.r; j++)
-            cs = cs.map(([x, y, z]) => [-y, x, z]); const minX = Math.min(...cs.map(c => c[0])), minY = Math.min(...cs.map(c => c[1])); return cs.map(([x, y, z]) => [x - minX + p.x, y - minY + p.y, z] as Point3); });
-        const a: ConstructionActivity = { ...base('G14', i, '转一转部件，把缺口拼完整。', '选部件，必要时转动，再把它放到阴影里。', '不同形状的部件恰好拼满，没有重叠，也没有盖到阴影外。'), kind: 'construction', columns: v === 0 ? 2 : 3, rows: v === 2 ? 3 : 2, layers: 1, pieces, target: occupied, allowRotate: true };
-        authoringSolutions[a.id] = { kind: 'construction', placements };
-        return a;
-    } const columns = 2 + v, rows = 2, layers = s === 2 ? 2 : 1; const pieces: Piece[] = [], target: Point3[] = []; const placements = []; for (let z = 0; z < layers; z++)
-        for (let x = 0; x < columns; x++) {
-            const id = `p${z * columns + x}`;
-            pieces.push({ id, label: String.fromCharCode(65 + pieces.length), cells: s === 1 ? [[0, 0, 0], [1, 0, 0]] : [[0, 0, 0], [0, 1, 0]], color: palette[pieces.length % 5] });
-            placements.push({ pieceId: id, x, y: 0, z, rotation: s === 1 ? 1 : 0 });
-            target.push([x, 0, z], [x, 1, z]);
-        } const a: ConstructionActivity = { ...base('G14', i, s === 2 ? '用部件把每一层都搭完整。' : s === 1 ? '有的部件需要转一转，再拼满阴影。' : '用这些部件，刚好盖住阴影。', '选部件，再点格子作为它的左上角。可以取下重摆。', '每个目标格都盖住了，没有重叠，也没有多出来的格子。'), kind: 'construction', columns, rows, layers, pieces, target, allowRotate: s > 0 }; authoringSolutions[a.id] = { kind: 'construction', placements }; return a; })),
+    set('G14', '拼搭小工坊', nine(shapeAssembly)),
     set('G15', '折开会怎样', nine((i, s, v) => { if (s === 0) {
         const a = parent('G15', i, ['对折找重合', '折两次找痕迹', '从折痕倒推折法'][v], ['正方形纸', '彩笔', '圆头儿童剪刀（由家长示范剪口）'], v === 0 ? ['把纸左右对折，摸一摸哪两条边重合。', '在重合的两层外边画一个点。先猜一猜，展开以后哪里会有缺口？',
             '家长在记号处一起剪过两层纸。展开看看缺口在哪里，再合上纸比一比。'] : v === 1 ? ['先左右对折，再上下对折。', '在折好的角落画记号，预测展开有几处。', '由家长演示剪口，展开后核对对称位置。'] : ['观察一张有横竖折痕的纸。', '试着说出一种能留下这些折痕的折法。', '实际折一遍，比较你的预测和结果。'], ['能说明重合的边', '能先预测再操作', '能用对应位置解释结果']);
@@ -174,13 +214,27 @@ export const graphicSets = [
         const n = heights.reduce((a, b) => a + b, 0);
         return numeric('G16', i, '每摞从地面连续向上搭，没有空洞。一共几块？', n, [n - 1, n + 1, heights.filter(n => n > 0).length], '把每摞的块数加起来，挡在后面的也不能漏掉。', panels([{ title: '积木', drawing: art }, { title: '从上面标出每摞块数', drawing: grid(heights, columns) }]), { operation: 'add', values: heights });
     } const candidates = [heights, [heights[0], heights[1] + 1, heights[2], heights[3]], [...heights.slice(0, 3), heights[3] + 1], [heights[0], heights[1], heights[2] + 1, heights[3]]]; const front = (h: number[]) => [Math.max(h[0], h[2]), Math.max(h[1], h[3])], side = (h: number[]) => [Math.max(h[2], h[3]), Math.max(h[0], h[1])]; const mask = (h: number[]) => h.map(n => n > 0); const silhouette = (h: number[]) => { const height = Math.max(...h); return mosaic(Array.from({ length: h.length * height }, (_, k) => Number(h[k % h.length] >= height - Math.floor(k / h.length))), h.length, '#405769'); }; const same = (a: unknown, b: unknown) => JSON.stringify(a) === JSON.stringify(b); const expected = candidates.flatMap((h, k) => same(front(h), front(heights)) && same(side(h), side(heights)) && same(mask(h), mask(heights)) ? [`b${k}`] : []); const a = selection('G16', i, '根据前、侧、上三个视图，哪些搭法都有可能？', candidates.map((h, k) => card(`b${k}`, `搭法${k + 1}`, blocks(h, 2, true))), expected, '从每个方向看到的轮廓都要相符。只看轮廓，有时不能确定藏在后面的高度。', panels([{ title: '从前面看', drawing: silhouette(front(heights)) }, { title: '从侧面看', drawing: silhouette(side(heights)) }, { title: '从上面看', drawing: solidTopView(heights, columns) }]), ['沿“前”和“侧”的箭头看；上视图的蓝格表示有积木。']); a.revision = 2; return a; })),
-    set('G17', '换个方向看左右', nine((i, s, v) => { const dirs = [[0, -1], [1, 0], [0, 1], [-1, 0]], d = dirs[(s + v) % 4], left = [d[1], -d[0]], onLeft = v !== 1, axis = s === 2 ? d : left, p = [160 + axis[0] * (onLeft ? 112 : -112), 160 + axis[1] * (onLeft ? 112 : -112)]; return choice('G17', i, '小朋友面向箭头。红球在小朋友自己的哪一边？', ['左边', '右边', '前面', '后面'], s === 2 ? (onLeft ? 2 : 3) : (onLeft ? 0 : 1), s === 2 ? `箭头指向小朋友面朝的方向，也就是前面；相反方向是后面。红球在小朋友的${onLeft ? '前面' : '后面'}。` : '先和小朋友朝向同一边，再判断他的左和右。画面左边不一定是他的左边。', facingPerson(d, p)); })),
+    set('G17', '换个方向看左右', nine((i, s, v) => {
+        const dirs = [[0, -1], [1, 0], [0, 1], [-1, 0]];
+        const dirIndex = s === 0 ? [0, 1, 2][v] : s === 1 ? [0, 1, 3][v] : [2, 2, 1][v];
+        const d = dirs[dirIndex], left = [d[1], -d[0]];
+        const positive = s === 0 ? v !== 1 : s === 1 ? [true, true, false][v] : [true, false, false][v];
+        const axis = s === 0 ? d : left;
+        const p = [160 + axis[0] * (positive ? 112 : -112), 160 + axis[1] * (positive ? 112 : -112)];
+        const answerIdx = s === 0 ? (positive ? 2 : 3) : (positive ? 0 : 1);
+        const reason = s === 0
+            ? `箭头指向小朋友面朝的前方，相反方向是身后。红球在小朋友的${positive ? '前面' : '后面'}。`
+            : s === 1
+                ? `先和小朋友面朝同一个方向，再伸出左手和右手判断：红球在他的${positive ? '左边' : '右边'}。`
+                : `${v === 2 ? '箭头向右，小朋友侧着站。' : '小朋友正对着你站。'}跟着他转一转，红球在他自己的${positive ? '左边' : '右边'}。`;
+        return choice('G17', i, '小朋友面向箭头。红球在小朋友自己的哪一边？', ['左边', '右边', '前面', '后面'], answerIdx, reason, facingPerson(d, p));
+    })),
     set('G18', '纸盒六个面', nine((i, s, v) => { const nets: [
         number,
         number
     ][][] = [[[1, 0], [0, 1], [1, 1], [2, 1], [1, 2], [1, 3]], [[0, 1], [1, 1], [2, 1], [3, 1], [1, 0], [1, 2]], [[0, 0], [1, 0], [1, 1], [2, 1], [2, 2], [3, 2]]]; const net = nets[v], normals = cubeNormals(net); if (new Set(normals.map(n => n.join(','))).size !== 6)
         throw Error('Invalid cube net'); const face = s % 6, opposite = normals.findIndex(n => n.every((x, j) => x === -normals[face][j])); const objects: Primitive[] = net.flatMap(([x, y], k) => [rect(60 + x * 72, 20 + y * 72, 72, 72, palette[k]), { ...text(96 + x * 72, 65 + y * 72, String.fromCharCode(65 + k), 25), color: k === 5 ? '#fffdf7' : '#253243' }]); if (s === 1)
-        return selection('G18', i, `折成盒子后，哪些面和${String.fromCharCode(65 + face)}面相邻？`, net.map((_, k) => card(`face${k}`, String.fromCharCode(65 + k))), net.flatMap((_, k) => k !== face && k !== opposite ? [`face${k}`] : []), '一个面有四个相邻面，只有正对面的那个不相邻。', picture(objects, 500, 330)); return choice('G18', i, `折成盒子后，哪个面和${String.fromCharCode(65 + face)}面相对？`, [opposite, (opposite + 1) % 6, (opposite + 2) % 6].map(k => String.fromCharCode(65 + k)), 0, '沿相邻的边折起来，面对面的两个面不会共用一条边。可以用纸折盒验证。', picture(objects, 500, 330)); })),
+        return selection('G18', i, `折成盒子后，哪些面和${String.fromCharCode(65 + face)}面相邻？`, net.map((_, k) => card(`face${k}`, String.fromCharCode(65 + k))), net.flatMap((_, k) => k !== face && k !== opposite ? [`face${k}`] : []), '一个面有四个相邻面，只有正对面的那个不相邻。', picture(objects, 500, 330)); const others = [0, 1, 2, 3, 4, 5].filter(k => k !== face && k !== opposite); return choice('G18', i, `折成盒子后，哪个面和${String.fromCharCode(65 + face)}面相对？`, [opposite, others[v % others.length], others[(v + 1) % others.length]].map(k => String.fromCharCode(65 + k)), 0, '沿相邻的边折起来，面对面的两个面不会共用一条边。可以用纸折盒验证。', picture(objects, 500, 330)); })),
     set('G19', '方格重建师', nine((i, s, v) => { const columns = s === 1 ? 4 : 3, bits = s === 1 ? Array.from({ length: 16 }, (_, k) => { const x = k % 4 - (v === 1 ? 1 : 0), y = Math.floor(k / 4) - (v === 2 ? 1 : 0); return x >= 0 && x < 3 && y >= 0 && y < 3 ? patterns[v][y * 3 + x] : 0; }) : patterns[v], sol = s === 2 ? mirror(bits) : bits; const ts = [card('filled', '蓝格', mosaic([1], 1)), card('blank', '空白格', mosaic([0], 1))]; return fillGrid('G19', i, s === 2 ? '把参照图左右翻过来，摆进方格里。' : '照着参照图，把蓝格和空白格都摆出来。', ts, columns, sol.map(x => x ? 'filled' : 'blank'), sol.map((_, k) => k), '每个格位都要对应，空白也是图案的一部分。', [s === 2 ? '左右反过来，上下不变。' : '按行找位置，模型会一直保留。'], mosaic(bits, columns)); })),
     set('G20', '谁盖住了谁', nine((i, s, v) => { const n = s === 0 ? (v === 2 ? 3 : 2) : s === 1 ? 3 : 4, positions = [[105, 100], [215, 100], [105, 210], [215, 210]], order = Array.from({ length: n }, (_, k) => (k + v) % n), names = ['红片', '蓝片', '黄片', '绿片']; const ts = Array.from({ length: n }, (_, k) => card(`p${k}`, names[k], picture([circle(160, 160, 90, palette[k])], 320, 320))); const radius = s === 1 && v === 2 ? 64 : 83; const art = picture(order.map(k => circle(positions[k][0], positions[k][1], radius, palette[k])), 320, 320); const seq = order.map(k => `p${k}`), a = ordered('G20', i, '照着遮挡图，把纸片按从底层到顶层排好。', ts, seq, '看得见的遮挡关系要对上。两片之间的重叠如果被别的纸片完全挡住，也可能无法确定它们的先后。', [], art); if (a.kind === 'orderedPlacement') {
         const rules = visibleLayerPairs(order.map(k => ({ id: `p${k}`, x: positions[k][0], y: positions[k][1], radius }))).map(([first, second]) => ({ type: 'before' as const, first, second, text: `${ts.find(t => t.id === first)!.label}放在${ts.find(t => t.id === second)!.label}下面。` }));

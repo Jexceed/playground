@@ -146,7 +146,7 @@ for (const game of games) {
   for (const round of game.rounds) {
     const context = `${game.id}/${round.id}`;
     add("prompt", joinVoiceLine(round.prompt, round.instruction), context);
-    if (game.id === 'math-fair-share') add('prompt', enlightenmentPromptSpeech(game.id, round), context);
+    if (game.id === 'math-fair-share' || round.memory) add('prompt', enlightenmentPromptSpeech(game.id, round), context);
     add("success", round.success, context);
     add("retry", round.retry, context);
     add("parent", round.parentPrompt, context);

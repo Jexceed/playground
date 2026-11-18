@@ -1,7 +1,7 @@
 import profiles from './difficulty-profiles.json';
 import type { Activity, ActivitySet, OrderRule } from '../../domain/activity';
 
-type Profile = Pick<NonNullable<Activity['difficulty']>, 'rules' | 'steps' | 'reading' | 'motor' | 'representation'> & { prerequisites: string; basis: string };
+type Profile = Pick<NonNullable<Activity['difficulty']>, 'rules' | 'steps' | 'reading' | 'motor' | 'representation'> & { prerequisites: string; basis: string; focus?: string };
 const table = profiles as Record<string, { selector: string; profiles: Profile[] }>;
 
 function memoryItems(a: Activity): number {
@@ -38,7 +38,8 @@ export function assessExploration(group: ActivitySet): ActivitySet {
     const selected = config.selector === 'activity-index' ? index : (a.stage ?? 1) - 1;
     const profile = config.profiles[selected];
     if (!profile) throw Error(`Missing activity load: ${a.id}`);
-    const { prerequisites, ...load } = profile;
+    const { prerequisites, focus, ...load } = profile;
+    if (focus) a.difficultyNote = focus;
     const workload: Record<string, number> = {};
     if (a.kind === 'singleChoice' || a.kind === 'multiSelect') workload.candidates = a.tokens.length;
     if (a.kind === 'orderedPlacement') workload.slots = a.slotCount;
@@ -50,6 +51,13 @@ export function assessExploration(group: ActivitySet): ActivitySet {
     if (a.presentation?.pyramid) workload.compositionLayers = a.presentation.pyramid.rowSizes.length;
     a.difficulty = { ...load, memory: memoryItems(a), calibration: 'design-estimate', workload };
     a.prerequisites = prerequisites;
+    if (a.primaryFamilyId === 'G14' && a.kind === 'construction' && a.layers > 1) {
+      a.difficultyNote = '按上下两层分别拼搭';
+      a.prerequisites = '能在两层之间切换，找到当前这一层要覆盖的位置';
+      a.difficulty.rules = 3;
+      a.difficulty.steps = 4;
+      a.difficulty.basis = '三块拼板覆盖两层共六格，要区分层位、检查覆盖和重叠，并观察上层由下层托住的位置。';
+    }
     if (a.id === 'explore-nature-growth-7') {
       a.prerequisites = '能指出豆苗的一处特点，可由家长代写日期。';
       a.difficulty.basis = '第一天画下或记下所见。以后用同一株豆苗的带日期记录比较变化。';

@@ -116,3 +116,47 @@ test("completion display merges evidence without converting old game-level compl
   );
   assert.deepEqual(old.completedRoundIds, []);
 });
+
+test("published curriculum changes retain old evidence and require a new attempt only for revised tasks", async () => {
+  const { activitySets } = await loadTypeScriptModule("src/curriculum/catalog.ts");
+  const { beforeAppealAndDifficulty } = await import("./lib/before-curriculum-review.mjs");
+  const oldSets = beforeAppealAndDifficulty(activitySets);
+  const current = new Map(activitySets.flatMap(set => set.rounds).map(round => [round.id, round]));
+  const store = new Store();
+  const legacy = { completedIds: [], completedRoundIds: [], abilityTags: [] };
+  const changed = new Set();
+  const entries = {};
+  for (const old of oldSets.flatMap(set => set.rounds)) {
+    const live = current.get(old.id);
+    assert.ok(live, old.id);
+    if (live.revision !== old.revision) {
+      assert.equal(live.revision, old.revision + 1, old.id);
+      changed.add(old.id);
+    }
+    const observed = old.kind === "parentObservation";
+    entries[`${old.id}@${old.revision}`] = {
+      revision: old.revision, attempts: observed ? 0 : 1, correctAttempts: observed ? 0 : 1,
+      hints: 0, reveals: 0, restarts: 0, skips: 0, firstCompletedAt: 1, lastUpdatedAt: 1,
+      recentEventIds: ["old"], ...(observed ? { observedAt: 1, observations: { first: "supported" } } : {}),
+    };
+  }
+  for (const id of ["explore-make-break-ten-6", "explore-multi-agent-movement-8", "explore-shape-assembly-9",
+    "explore-character-phonics-7", "explore-culture-world-2"]) assert.ok(changed.has(id), id);
+  for (const id of ["explore-make-break-ten-1", "explore-multi-agent-movement-7", "explore-character-phonics-1"]) {
+    assert.ok(current.has(id) && !changed.has(id), id);
+  }
+
+  store.setItem(api.ACTIVITY_PROGRESS_KEY, JSON.stringify({ schemaVersion: 1, entries }));
+  const saved = api.readActivityProgress(store);
+  assert.ok(saved.writable);
+  const displayed = api.mergeActivityProgress(legacy, activitySets, saved.progress);
+  for (const round of current.values()) assert.equal(displayed.completedRoundIds.includes(round.id), !changed.has(round.id), round.id);
+  for (const set of activitySets) assert.equal(displayed.completedIds.includes(set.id), set.rounds.every(r => !changed.has(r.id)), set.id);
+
+  const redo = current.get("explore-make-break-ten-6");
+  const updated = api.recordActivityEvent(redo.id, redo.revision, { id: "new", kind: "attempt", correct: true }, store, 2);
+  assert.ok(updated.stored);
+  assert.deepEqual(updated.progress.entries[`${redo.id}@2`], entries[`${redo.id}@2`]);
+  assert.equal(updated.progress.entries[`${redo.id}@3`].firstCompletedAt, 2);
+  assert.ok(api.mergeActivityProgress(legacy, activitySets, updated.progress).completedRoundIds.includes(redo.id));
+});

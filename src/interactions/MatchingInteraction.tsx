@@ -1,7 +1,7 @@
 import { useEffect, useLayoutEffect, useRef, useState, type CSSProperties, type PointerEvent } from "react";
 import { Maximize2, X } from "lucide-react";
 import type { MatchingActivity } from "../domain/advanced-activity";
-import { speak } from "../speech";
+import { playTone, speak } from "../speech";
 import { connectPair, disconnectPair, type MatchingResponse } from "./connection-state";
 import { ActivityTokenArt } from "./ActivityTokenArt";
 import { ImageViewer } from './ImageViewer';
@@ -68,6 +68,10 @@ export function MatchingInteraction({ activity, response, disabled, onChange }: 
     if (disabled) return;
     if (selected && isLeft(selected) !== isLeft(id)) connect(selected, id);
     else setSelected(selected === id ? null : id);
+    if (activity.primaryFamilyId === "E05" && isLeft(id)) {
+      playTone("tap");
+      return;
+    }
     void speak(token(id).speechText ?? token(id).label, token(id).speechLocale);
   };
   const hitCard = (x: number, y: number) => {

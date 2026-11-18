@@ -54,10 +54,16 @@
         "timbre": "soft"
       },
       {
-        "frequency": 440,
-        "duration": 0.45,
+        "frequency": 660,
+        "duration": 0.18,
         "gap": 0.28,
-        "timbre": "soft"
+        "timbre": "bright"
+      },
+      {
+        "frequency": 660,
+        "duration": 0.18,
+        "gap": 0.28,
+        "timbre": "bright"
       }
     ],
     "sequence-4": [
@@ -114,10 +120,10 @@
         "timbre": "soft"
       },
       {
-        "frequency": 440,
-        "duration": 0.45,
+        "frequency": 660,
+        "duration": 0.18,
         "gap": 0.28,
-        "timbre": "soft"
+        "timbre": "bright"
       }
     ],
     "sequence-7": [
@@ -134,16 +140,16 @@
         "timbre": "bright"
       },
       {
-        "frequency": 440,
-        "duration": 0.45,
-        "gap": 0.28,
-        "timbre": "soft"
-      },
-      {
         "frequency": 660,
         "duration": 0.18,
         "gap": 0.28,
         "timbre": "bright"
+      },
+      {
+        "frequency": 440,
+        "duration": 0.45,
+        "gap": 0.28,
+        "timbre": "soft"
       }
     ],
     "sequence-8": [

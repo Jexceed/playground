@@ -10,6 +10,7 @@ export type ActivityToken = { id: string; label: string; image: GalleryImage; so
 export type DialogueLine = { speaker: string; english: string; chinese: string };
 export type ComparisonPanel = { kind: 'dots'; label: string; count: number; columns: number }
   | { kind: 'placeValue'; label: string; tens: number; ones: number }
+  | { kind: 'heightPair'; label: string; taller: GalleryImage; shorter: GalleryImage }
   | { kind: 'image'; label: string; image: GalleryImage };
 export type RuleMachineEvidence = { kind: 'ruleMachine'; start: number; add: number; multiplier: 1 | 2 };
 export type CardFlipEvidence = { kind: 'cardFlip'; initial: ('off' | 'on')[]; steps: number[] };
@@ -119,6 +120,13 @@ export type GridActivity = ActivityBase & {
     | { kind: "latin"; tokenIds: string[] };
 };
 export type Activity = MultiSelectActivity | OrderedActivity | GridActivity | AdvancedActivity;
+
+export function isBinaryGridCopy(activity: Activity): boolean {
+  return activity.kind === "gridPlacement" && activity.tokenUse === "unlimited"
+    && activity.tokens.length === 2
+    && activity.tokens.some(token => token.id === "filled") && activity.tokens.some(token => token.id === "blank");
+}
+
 export type ActivitySet = Omit<GameConfig, "kind" | "rounds"> & {
   kind: "activitySet";
   rounds: Activity[];

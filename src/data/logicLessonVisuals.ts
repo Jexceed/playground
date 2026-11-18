@@ -48,18 +48,18 @@ const life: Record<string,LogicLesson> = {
  'logic-condition-detective-4':lesson(shortContext,[shortContext],[f('还差一段，木板不够长',short)],{'not-enough':textChoice,enough:textChoice,none:textChoice},'reason'),
  'logic-condition-detective-5':lesson(clean,[f('手已经洗好了',{image:clean.image})],platePlan,plateChoices),
  'logic-condition-detective-6':lesson(mixed,[f('混在一起的两类玩具',p('sorting','mixed'))],sortPlan,sortChoices),
- 'logic-condition-detective-7':lesson(river,[f('小河挡住了去路',p('bridge','river'))],bridgePlan,bridgeChoices),
+ 'logic-condition-detective-7':lesson(river,[f('小河挡住了去路',p('bridge','river')),f('胡萝卜在对岸',p('bridge','reachCarrot'))],bridgePlan,bridgeChoices),
  'logic-condition-detective-12':lesson(shortContext,[f('木板够不到另一岸',short)],[f('换成够长的木板',long)],extendChoices),
  'logic-fix-plan-1':lesson(ns('dirtyEating','泥手直接拿饼干吃了'),[f('手脏',p('snack','dirty')),f('直接拿饼干',p('snack','dirtyTake')),f('直接吃',p('snack','dirtyEat'))],washPlan,{'missing-wash':p('snack','wash'),'missing-plate':p('snack','dirtyPlate'),'missing-more-cookie':n('dirtyMoreCookies')}),
  'logic-fix-plan-2':lesson(ns('redAttempt','红灯时想迈步'),[f('行人红灯',p('traffic','red')),f('却想往前走',p('traffic','directCross'))],[f('先停下等',p('traffic','stop'))],{stop:p('traffic','stop'),'keep-walk':p('traffic','directCross'),'wait-red':waitRed}),
- 'logic-fix-plan-3':lesson(green,[f('小朋友只看了车',p('traffic','carOnly'))],crossPlan,{walk:{images:[item('order045_traffic_look'),item('order045_traffic_green')]},'car-only':p('traffic','carOnly'),'people-only':p('traffic','waitOthers')}),
+ 'logic-fix-plan-3':lesson(green,[f('绿灯亮，车辆已停，还要看信号灯和路面',p('traffic','green'))],crossPlan,{walk:{images:[item('order045_traffic_look'),item('order045_traffic_green')]},'car-only':p('traffic','carOnly'),'people-only':p('traffic','waitOthers')}),
  'logic-fix-plan-4':lesson(shortContext,[f('木板另一头没有到对岸',short)],[f('木板的长度不够',short)],{'too-short':textChoice,'too-long':textChoice,'too-narrow':textChoice},'reason'),
  'logic-fix-plan-5':lesson(clean,[f('已经洗好了',{image:clean.image}),f('还在重复洗手',n('cleanWashAgain'))],platePlan,plateChoices),
  'logic-fix-plan-6':lesson(ns('mixedBox','两类玩具混装在一个盒子里'),[f('混放的结果',p('sorting','allOne'))],[f('取出后先分类',n('takeOutSort')),...putPlan],{sort:n('takeOutSort'),stuff:p('sorting','allOne'),one:p('sorting','one')}),
  'logic-fix-plan-7':lesson(river,[f('一直站着等',p('bridge','wait')),f('岸边有够长的木板',{image:item('longPlank')})],bridgePlan,bridgeChoices),
  'logic-fix-plan-11':lesson(shortContext,[f('换来的还是同样短',short)],[f('长度没有变，仍然够不到',short)],{'not-fixed':textChoice,fixed:textChoice,'no-change':textChoice},'reason'),
  'logic-fix-plan-12':lesson(sorted,[f('已经分好的两类玩具',p('sorting','sorted'))],putPlan,putChoices),
- 'logic-priority-choice-1':lesson(dirty,[f('先看手上的泥',p('snack','dirty')),f('点心准备好了',p('snack','cookies'))],washPlatePlan,{wash:p('snack','wash'),plate:p('snack','dirtyPlate'),cookie:p('snack','dirtyTake')}),
+ 'logic-priority-choice-1':lesson(dirty,[f('先看手上的泥',p('snack','dirty')),f('盘子在旁边',p('snack','plate')),f('点心准备好了',p('snack','cookies'))],washPlatePlan,{wash:p('snack','wash'),plate:p('snack','dirtyPlate'),cookie:p('snack','dirtyTake')}),
  'logic-priority-choice-2':lesson(red,[f('来到有行人灯的路口',p('traffic','junction'))],crossPlan,{'look-light':p('traffic','look'),walk:p('traffic','directCross'),'car-stop':p('traffic','carOnly')}),
  'logic-priority-choice-3':lesson(shortContext,[shortContext],[f('长木板搭到了两岸',long)],{long:material('long'),short:material('short'),stone:dailyPicture('stone')}),
  'logic-priority-choice-4':lesson(mixed,[f('盒子打开了，玩具还混着',p('sorting','mixed'))],sortPlan,sortChoices),
@@ -68,6 +68,32 @@ const life: Record<string,LogicLesson> = {
  'logic-priority-choice-7':lesson(ns('redAttempt','车停了，行人灯仍然是红色'),[f('行人红灯',p('traffic','red')),f('有人想走',p('traffic','directCross'))],[f('先按红灯停下',p('traffic','stop'))],{'red-stop':p('traffic','stop'),'child-go':p('traffic','directCross'),'car-stop':p('traffic','carOnly')}),
  'logic-priority-choice-10':lesson(shortContext,[f('失败原因是长度不够',short)],[f('换成够长的木板',long)],extendChoices),
  'logic-priority-choice-11':lesson(sorted,[f('已经分好的两类玩具',p('sorting','sorted'))],putPlan,putChoices),
+};
+
+const evidenceCaptions: Record<string, string> = {
+  cakeCat: '小猫嘴边和爪子上有白奶油',
+  cakeDog: '小狗在垫子上睡觉，身上没有奶油',
+  cakeRabbit: '小兔抱着胡萝卜，嘴边干干净净',
+  cakeCream: '看清楚：小猫嘴边沾着白色奶油',
+  cakeKitchenContext: '大家都在厨房里，单看位置还不能乱猜',
+  cakeMissing: '桌上的蛋糕少了一块',
+  spillCup: '水杯倒在桌上，旁边没有脚印，先别怪别人',
+  spillDog: '小狗在远处垫子上睡觉',
+  spillBird: '小鸟停在窗台上',
+  flowerCat: '小猫抬起的前爪沾着黄花粉',
+  flowerRabbit: '小兔抱着胡萝卜，身上没有花粉',
+  flowerPollen: '看清楚：小猫爪子上有黄黄的花粉',
+  flowerBent: '花坛里的花弯下了腰，花瓣掉在地上',
+  mudDog: '小狗站在泥地里，四只脚都有泥巴',
+  mudCat: '小猫坐在干净垫子上，爪子干干净净',
+  mudRabbit: '小兔在草地上，脚上没有泥巴',
+  mudPaws: '看清楚：小狗脚上沾着湿泥巴',
+  mudTracks: '地上只有泥脚印，还要再看谁脚上有泥',
+  weakCat: '小猫嘴边和爪子干干净净，没有碰蛋糕的痕迹',
+  weakCatContext: '小猫只是站在门口，还不能确定是谁吃了蛋糕',
+  weakDog: '小狗安静坐在门口，没有去碰地上的玩具',
+  weakDogContext: '玩具散在地上，但小狗只是坐在门口，还不能确定是谁弄乱的',
+  weakToys: '地毯上只有散开的玩具，看不出是谁弄乱的',
 };
 
 const riverLessonIds = new Set(['logic-condition-detective-4','logic-condition-detective-12','logic-fix-plan-4','logic-fix-plan-11','logic-priority-choice-3','logic-priority-choice-10']);
@@ -81,7 +107,7 @@ export function logicLessonFor(round: GameRound): LogicLesson | undefined {
   if(!concept)continue;
   choices[value]=textChoice;
  }
- return {context:f('先看事情发生的地方',{image:scene('logic046Evidence_'+definition.scene)}),evidence:[],resolution:definition.evidenceFrames.map(key=>f(item('logic046Evidence_'+key).alt,{image:item('logic046Evidence_'+key)})),choices,kind:'reason',evidenceScene:true};
+ return {context:f('先看事情发生的地方',{image:scene('logic046Evidence_'+definition.scene)}),evidence:[],resolution:definition.evidenceFrames.map(key=>f(evidenceCaptions[key] ?? item('logic046Evidence_'+key).alt,{image:item('logic046Evidence_'+key)})),choices,kind:'reason',evidenceScene:true};
 }
 
 export type LogicTaskCue = { frames: LogicFrame[]; excluded?: LogicFrame; after?: LogicFrame };

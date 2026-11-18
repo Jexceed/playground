@@ -48,7 +48,7 @@ export const contourArtwork: Record<ContourShape, ContourArtwork> = {
     gap: { side: 'right', omit: [1, 2, 3] } },
   flower: { outline: flower(), details: [{ d: 'M 95 80 A 15 15 0 1 1 65 80 A 15 15 0 1 1 95 80 Z' }], gap: { side: 'top', omit: [0] } },
   apple: { outline: { start: [80, 48], segments: [cubic([64, 34], [42, 35], [32, 54]), cubic([20, 70], [23, 98], [41, 119]),
-    cubic([52, 132], [65, 132], [80, 126]), cubic([95, 134], [109, 131], [120, 117]), cubic([137, 98], [141, 70], [128, 53]),
+    cubic([52, 134], [67, 134], [80, 116]), cubic([93, 134], [108, 134], [120, 117]), cubic([137, 98], [141, 70], [128, 53]),
     cubic([117, 36], [98, 34], [80, 48])] },
     details: [{ d: 'M 80 46 C 80 36 84 28 89 23' }, { d: 'M 83 34 C 91 17 111 12 125 18 C 115 34 99 42 83 36 Z' }],
     gap: { side: 'top', omit: [5, 0], hideDetails: true } },

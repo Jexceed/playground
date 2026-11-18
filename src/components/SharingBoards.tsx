@@ -15,14 +15,15 @@ function Pieces({ count, item }: { count: number; item: "cupcake" | "block" }) {
 }
 
 export function BlockPartitionBoard({ round, solved }: { round: GameRound; solved: boolean }) {
-  const [blue, yellow] = round.visualGroups!;
-  const known = blue.items.length;
-  const other = yellow.items.length;
+  const [known, asked] = round.visualGroups!;
+  const boxes = known.label === "蓝盒" ? [known, asked] : [asked, known];
   return <section className="block-partition-board" aria-label="一组积木分进两个盒子">
-    <strong className="partition-total">两盒一共 {known + other} 块</strong>
+    <strong className="partition-total">两盒一共 {known.items.length + asked.items.length} 块</strong>
     <div className="block-partition-boxes">
-      <div className="block-box is-blue"><strong>蓝盒 · {known} 块</strong><Pieces item="block" count={known} /></div>
-      <div className="block-box is-yellow"><strong>黄盒 · {solved ? other : "?"} 块</strong><Pieces item="block" count={other} /></div>
+      {boxes.map(box => <div key={box.label} className={`block-box ${box.label === "蓝盒" ? "is-blue" : "is-yellow"}`}>
+        <strong>{box.label} · {box === asked && !solved ? "?" : box.items.length} 块</strong>
+        <Pieces item="block" count={box.items.length} />
+      </div>)}
     </div>
   </section>;
 }
@@ -48,10 +49,21 @@ export function FairShareBoard({ round, solved, onChange, onReset }: {
     playTone("tap");
   }
 
+  function dealOneEach() {
+    if (solved || remaining < children) return;
+    setPlates(previous => previous.map(n => n + 1));
+    playTone("tap");
+  }
+
   return <section className="fair-share-board" aria-label="把蛋糕分到小朋友的盘子里">
     <div className="share-instructions">
       <p>{FAIR_SHARE_COPY.tap}</p>
-      <button type="button" aria-label="听分蛋糕的玩法" onClick={() => void speak(FAIR_SHARE_COPY.guide)}><Volume2 size={20} /></button>
+      <div className="share-toolbar-actions">
+        <button type="button" className="share-deal-round" disabled={solved || remaining < children} onClick={dealOneEach}>
+          {FAIR_SHARE_COPY.dealRound}
+        </button>
+        <button type="button" aria-label="听分蛋糕的玩法" onClick={() => void speak(FAIR_SHARE_COPY.guide)}><Volume2 size={20} /></button>
+      </div>
     </div>
     <div className="share-tray" data-remaining={remaining}>
       <strong aria-live="polite">桌上还剩 {remaining} 块</strong>

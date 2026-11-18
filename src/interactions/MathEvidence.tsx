@@ -7,8 +7,8 @@ import { MoneyPiece } from './MoneyArt';
 import { PlaceValueBlocks } from './PlaceValueBlocks';
 import './math-evidence.css';
 
-function Objects({ count, cookie = false }: { count: number; cookie?: boolean }) {
-  return <div className="math-loose-objects" data-count={count}>{Array.from({ length: count }, (_, i) => <ActivityImage key={i} image={cookie ? imageGallery.items.cookie : imageGallery.items.patternBlueDisc} decorative />)}</div>;
+function Objects({ count, cookie = false, columns }: { count: number; cookie?: boolean; columns?: number }) {
+  return <div className="math-loose-objects" data-count={count} style={columns ? ({ '--loose-columns': columns } as CSSProperties) : undefined}>{Array.from({ length: count }, (_, i) => <ActivityImage key={i} image={cookie ? imageGallery.items.cookie : imageGallery.items.patternBlueDisc} decorative />)}</div>;
 }
 
 export function MathClock({ hour, minute, label }: { hour: number; minute: number; label: string }) {
@@ -75,7 +75,7 @@ export function MathEvidence({ evidence }: { evidence: Evidence }) {
       <div className="math-known-groups">{Array.from({ length: evidence.groups }, (_, i) => <div className="math-chip-box" key={i}><Objects count={evidence.each} /></div>)}</div>
     </div>;
     return <div className="math-sharing-model">
-      <div><strong className="math-model-label">{evidence.total} {evidence.mode === 'share' ? '块饼干' : '个圆片'}</strong><Objects count={evidence.total} cookie={evidence.mode === 'share'} /></div>
+      <div><strong className="math-model-label">{evidence.total} {evidence.mode === 'share' ? '块饼干' : '个圆片'}</strong><Objects count={evidence.total} cookie={evidence.mode === 'share'} columns={evidence.mode === 'remainder' ? evidence.capacity : undefined} /></div>
       <ArrowDown className="math-model-arrow" aria-hidden="true" />
       {evidence.mode === 'share' ? <div className="math-recipients">{Array.from({ length: evidence.people }, (_, i) => <div className="math-recipient" key={i}>
         <ActivityImage image={imageGallery.items.child} decorative /><div className="math-empty-plate"><ActivityImage image={imageGallery.items.plate} decorative /><strong>?</strong></div>

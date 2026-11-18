@@ -57,12 +57,23 @@ test('removing one marks exactly one original unit, preserves all given blocks a
   assert.equal(a.tokens.find(t=>t.id===a.answerId).label,String(n-1));
  }
 });
-test('an addend already equal to ten does not ask children to split seven into zero and seven',()=>{
- const a=rounds('N05')[5];
- assert.equal(a.prompt,'10加7等于多少？');
- assert.equal(a.tokens.find(t=>t.id===a.answerId).label,'17');
- assert.match(a.success,/已经有1个十，再加7个一，是17/);
- assert.doesNotMatch([a.prompt,a.success,...a.hints].join(''),/拆成0|先凑十|试试凑成十/);
- assert.equal(a.illustration.alt,a.prompt);
+test('making-ten and breaking-ten rounds cross ten cleanly without splitting into zero or printing answers',()=>{
+ for(const a of rounds('N05').filter(a=>a.stage===2)){
+  assert.doesNotMatch([a.prompt,a.success,...a.hints].join(''),/拆成0/);
+  assert.equal(a.illustration.alt,a.prompt);
+ }
+ const a6=rounds('N05')[5];
+ assert.equal(a6.prompt,'8加7等于多少？先试试凑成十。');
+ assert.equal(a6.tokens.find(t=>t.id===a6.answerId).label,'15');
+ assert.match(a6.success,/把7拆成2和5，先凑成十，再加剩下的，得到15/);
+ for(const a of rounds('N05').filter(a=>a.stage===3)){
+  const e=a.presentation.evidence,html=render(e),text=html.replace(/<[^>]*>/g,'');
+  assert.equal(e.kind,'placeValueModel');
+  assert.equal((html.match(/is-taken-away/g)||[]).length,e.removeOnes);
+  assert.match(text,new RegExp(`拿走 ${e.removeOnes} 小块，还剩 \\?`));
+  const expectedAnswer=String(e.tens*10+e.ones-e.removeOnes);
+  assert.equal(a.tokens.find(t=>t.id===a.answerId).label,expectedAnswer);
+  assert.ok(!text.includes(`还剩 ${expectedAnswer}`),a.id+': do not print the answer');
+ }
 });
 test('every new mathematical reference retains enlargement using the readable model rather than the former tiny bitmap',()=>{for(const a of all.filter(a=>['sharingModel','moneyExchange','clockModel','rulerModel','perimeterModel','placeValueModel','numberPattern','shapeEquations','waterModel'].includes(a.presentation?.evidence?.kind))){const html=renderToStaticMarkup(createElement(evidenceModule.ActivityEvidence,{activity:a,phase:'respond'}));assert.equal((html.match(/aria-label="放大题目图片"/g)||[]).length,1,a.id);assert.match(html,/math-zoom-scroll/);assert.match(html,/左右滑动，看看细节/);assert.doesNotMatch(html,/src="[^"]*exploration\/diagram-/);}});

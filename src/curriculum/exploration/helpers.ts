@@ -37,6 +37,7 @@ export function stableChoiceOrder<T>(values: T[], key: string): T[] {
     }
     return result;
 }
+const recentAnswerSlots = new Map<string, number[]>();
 export function labelDisplayedChoices(tokens: ActivityToken[]): ActivityToken[] {
     const marker = /^(图|方案|搭法|选项)([A-Za-z]|\d+)$/;
     if (!tokens.every(t => marker.test(t.label))) return tokens;
@@ -50,11 +51,22 @@ export function choice(family: FamilyId, index: number, prompt: string, options:
     label: string;
     drawing: Drawing;
 })[], answerIndex: number, reason: string, illustration?: Drawing, clues: string[] = []): Activity {
+    const rawTokens = options.map((o, j) => typeof o === 'object' ? card(`o${j}`, o.label, o.drawing) : card(`o${j}`, o));
+    let orderedTokens = stableChoiceOrder(rawTokens, `${family}:choice:${index}`);
+    const targetId = `o${answerIndex}`;
+    const history = recentAnswerSlots.get(family) ?? [];
+    let slot = orderedTokens.findIndex(t => t.id === targetId);
+    if (orderedTokens.length > 1 && history.length >= 2 && history[history.length - 1] === slot && history[history.length - 2] === slot) {
+        orderedTokens = rotate(orderedTokens, 1);
+        slot = orderedTokens.findIndex(t => t.id === targetId);
+    }
+    recentAnswerSlots.set(family, [...history, slot]);
+    const retryGuide = choiceRetry(family, index);
     const a = { ...base(family, index, prompt, '选出符合条件的一张图卡。', reason), kind: 'singleChoice' as const,
-        tokens: labelDisplayedChoices(stableChoiceOrder(options.map((o, j) => typeof o === 'object' ? card(`o${j}`, o.label, o.drawing) : card(`o${j}`, o)), `${family}:choice:${index}`)), answerId: `o${answerIndex}`, clues,
+        tokens: labelDisplayedChoices(orderedTokens), answerId: targetId, clues,
         illustration: illustration ? image(illustration, prompt) : undefined };
-    a.hints = [clues[0] ?? '先找到图里和问题有关的部分。', reason];
-    a.retry = choiceRetry(family, index) ?? a.retry;
+    a.hints = [clues[0] ?? '先找到图里和问题有关的部分。', clues[1] ?? retryGuide ?? '排除一个明显不符合条件的选项，再比较剩下的图卡。'];
+    a.retry = retryGuide ?? a.retry;
     authoringSolutions[a.id] = { kind: 'singleChoice', tokenId: a.answerId };
     return a;
 }
@@ -73,20 +85,22 @@ export function numeric(family: FamilyId, index: number, prompt: string, answer:
 }
 export function selection(family: FamilyId, index: number, prompt: string, tokens: ActivityToken[], expected: string[], reason: string, illustration?: Drawing, clues: string[] = []): Activity {
     const a = { ...base(family, index, prompt, '把所有符合条件的图卡选出来，再检查一次。', reason), kind: 'multiSelect' as const, tokens, expectedTokenIds: expected, clues, illustration: illustration ? image(illustration, prompt) : undefined };
-    a.hints = [clues[0] ?? '先按一个条件逐张比较。', reason];
+    a.hints = [clues[0] ?? '先按一个条件逐张比较。', clues[1] ?? '逐张对照规则检查一遍，看看有没有漏选或多选。'];
     authoringSolutions[a.id] = { kind: 'multiSelect', tokenIds: expected };
     return a;
 }
 export function ordered(family: FamilyId, index: number, prompt: string, tokens: ActivityToken[], sequence: string[], reason: string, clues: string[] = [], illustration?: Drawing): Activity {
-    const a = { ...base(family, index, prompt, '先选图卡，再按位置编号排好。也可以拖过去。', reason), kind: 'orderedPlacement' as const, tokens: rotate(tokens, index + 1), slotCount: sequence.length, tokenUse: 'once' as const, evaluation: { kind: 'sequence' as const, tokenIds: sequence }, clues, illustration: illustration ? image(illustration, prompt) : undefined };
-    a.hints = [clues[0] ?? '先找可以确定的第一个位置。', reason];
+    let tray = rotate(tokens, index + 1);
+    if (tray.length > 1 && tray.length === sequence.length && tray.every((t, k) => t.id === sequence[k])) tray = rotate(tray, 1);
+    const a = { ...base(family, index, prompt, '先选图卡，再按位置编号排好。也可以拖过去。', reason), kind: 'orderedPlacement' as const, tokens: tray, slotCount: sequence.length, tokenUse: 'once' as const, evaluation: { kind: 'sequence' as const, tokenIds: sequence }, clues, illustration: illustration ? image(illustration, prompt) : undefined };
+    a.hints = [clues[0] ?? '先找可以确定的第一个位置。', clues[1] ?? '从第 1 格往后读一遍，核对每一条先后线索是不是都满足。'];
     authoringSolutions[a.id] = { kind: 'orderedPlacement', slots: sequence.map(tokenId => ({ state: 'filled', tokenId })) };
     return a;
 }
 export function fillGrid(family: FamilyId, index: number, prompt: string, tokens: ActivityToken[], columns: number, solution: string[], blanks: number[], reason: string, clues: string[] = [], illustration?: Drawing): Activity {
     const answers = Object.fromEntries(blanks.map(i => [`cell-${i}`, solution[i]]));
     const a = { ...base(family, index, prompt, '选图卡，点问号格放进去。图卡可以重复用。', reason), kind: 'gridPlacement' as const, tokens: rotate(tokens, index + 1), columns, cells: solution.map((id, i) => blanks.includes(i) ? null : id), tokenUse: 'unlimited' as const, evaluation: { kind: 'exact' as const, cells: answers }, clues, illustration: illustration ? image(illustration, prompt) : undefined };
-    a.hints = [clues[0] ?? '先找一个线索最多的空位。', reason];
+    a.hints = [clues[0] ?? '先找一个线索最多的空位。', clues[1] ?? '把填好的格子和同行、同列或参照图再逐格核对一遍。'];
     authoringSolutions[a.id] = { kind: 'gridPlacement', cells: Object.fromEntries(Object.entries(answers).map(([id, tokenId]) => [id, { state: 'filled', tokenId }])) };
     return a;
 }
@@ -95,7 +109,7 @@ export function matching(family: FamilyId, index: number, prompt: string, left: 
     string
 ][], reason: string, illustration?: Drawing): Activity {
     const a = { ...base(family, index, prompt, '把两边有关的图卡连起来。可以拖过去，也可以两边各点一下。', reason), kind: 'matching' as const, tokens: [...left, ...right], leftIds: left.map(t => t.id), rightIds: stableChoiceOrder(right, `${family}:matching:${index}`).map(t => t.id), expectedPairs: pairs, illustration: illustration ? image(illustration, prompt) : undefined };
-    a.hints = ['先说说左边这张图卡的特点，再找对应关系。', reason];
+    a.hints = ['先说说左边这张图卡的特点，再找对应关系。', '先连最确定的一组，再把剩下的图卡一对一对核对。'];
     authoringSolutions[a.id] = { kind: 'matching', pairs };
     return a;
 }
@@ -108,7 +122,39 @@ export function parent(family: FamilyId, index: number, prompt: string, material
 }
 export const nine = (make: (index: number, stage: number, variant: number) => Activity) => Array.from({ length: 9 }, (_, i) => make(i, Math.floor(i / 3), i % 3));
 export const three = (make: (index: number) => Activity) => Array.from({ length: 3 }, (_, i) => make(i));
+// Published changes to the task, evidence a child must use, answer choices, or recall
+// protocol get their own progress key. A shuffle, clearer wording or an art repaint does not.
+const revisedActivities: Partial<Record<FamilyId, Readonly<Record<string, number>>>> = {
+    N02: { 1: 2, 2: 2, 3: 2, 4: 2, 5: 2, 6: 2, 7: 2, 8: 2, 9: 2 },
+    N05: { 6: 3, 8: 2, 9: 2 },
+    N08: { 1: 2, 2: 2, 3: 2, 4: 2, 5: 2, 6: 2, 7: 2, 8: 2, 9: 2 },
+    L03: { 7: 2, 8: 2, 9: 2 },
+    L05: { 1: 2, 2: 2, 3: 2 },
+    L10: { 8: 2 },
+    L11: { 2: 2, 3: 2, 4: 2, 5: 2, 6: 2 },
+    G04: { 1: 2, 2: 2, 4: 2, 5: 2, 7: 3, 8: 3, 9: 3 },
+    G07: { 1: 2, 2: 2, 3: 2, 4: 3, 5: 3, 6: 3, 7: 3, 8: 3, 9: 3 },
+    G12: { 7: 2, 8: 2, 9: 2 },
+    G14: { 7: 2, 8: 2, 9: 2 },
+    G17: { 1: 2, 2: 2, 3: 2, 4: 2, 5: 2, 6: 2, 7: 2, 8: 2, 9: 2 },
+    G18: { 1: 2, 8: 2, 9: 2 },
+    A02: { 7: 2, 8: 2, 9: 2 },
+    A03: { 7: 2, 8: 2, 9: 2 },
+    A08: { 3: 2, 6: 2, 7: 2 },
+    E05: { 4: 2, 5: 2, 6: 2, 7: 2, 8: 2, 9: 2 },
+    P02: { 8: 2, 9: 2 },
+    P05: { 2: 2, 3: 3 },
+};
+
 export function set(family: FamilyId, title: string, rounds: Activity[]): ActivitySet {
     const f = families[family];
-    return { id: `explore-${f.slug}`, kind: 'activitySet', world: f.world, title, subtitle: f.title, goal: f.stages.join(' → '), parentPrompt: '先让孩子操作和解释，再按需要给一点提示。', abilityTags: [f.title], level: 'L3', rounds, interactionLabel: f.targetCount === 3 ? '亲子活动' : '探索练习' };
+    const id = `explore-${f.slug}`;
+    const revisions = revisedActivities[family];
+    if (revisions) {
+        for (const round of rounds) {
+            const number = round.id.slice(id.length + 1);
+            round.revision = Math.max(round.revision, revisions[number] ?? 1);
+        }
+    }
+    return { id, kind: 'activitySet', world: f.world, title, subtitle: f.title, goal: f.stages.join(' → '), parentPrompt: '先让孩子操作和解释，再按需要给一点提示。', abilityTags: [f.title], level: 'L3', rounds, interactionLabel: f.targetCount === 3 ? '亲子活动' : '探索练习' };
 }

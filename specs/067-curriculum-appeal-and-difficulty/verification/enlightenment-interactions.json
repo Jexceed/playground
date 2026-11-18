@@ -1,0 +1,70 @@
+{
+  "build": {
+    "indexSHA256": "9fffeedd159c6647648afaab927a18abff42fcc057bf5282831defe849505d85",
+    "voiceManifestSHA256": "f03f8a2398630fb435c10974a7e2c64abbe4bce8bcad45093bdd8b5579a5381e"
+  },
+  "sceneRoundIds": [
+    "logic-story-evidence-1",
+    "logic-story-evidence-2",
+    "logic-story-evidence-3",
+    "logic-story-evidence-4",
+    "logic-story-evidence-5",
+    "logic-story-evidence-6",
+    "logic-story-evidence-7",
+    "logic-condition-detective-4",
+    "logic-condition-detective-8",
+    "logic-condition-detective-9",
+    "logic-condition-detective-10",
+    "logic-condition-detective-11",
+    "logic-condition-detective-12",
+    "logic-fix-plan-4",
+    "logic-fix-plan-8",
+    "logic-fix-plan-9",
+    "logic-fix-plan-10",
+    "logic-fix-plan-11",
+    "logic-priority-choice-3",
+    "logic-priority-choice-8",
+    "logic-priority-choice-9",
+    "logic-priority-choice-10",
+    "logic-priority-choice-12"
+  ],
+  "memoryRounds": 12,
+  "birdRounds": 12,
+  "partitionRounds": 12,
+  "voiceProvider": "edge-tts Python package",
+  "manifestEntries": 4499,
+  "runs": [
+    {
+      "width": 1280,
+      "pointer": "mouse",
+      "localPlayback": {
+        "enter": 1,
+        "jumpToObserve": 12,
+        "readObserve": 12,
+        "cover": 12,
+        "readRecall": 12,
+        "readSameRound": 12,
+        "review": 12,
+        "reset": 1,
+        "next": 1
+      },
+      "errors": []
+    },
+    {
+      "width": 390,
+      "pointer": "touch",
+      "localPlayback": {
+        "enter": 1,
+        "jumpToObserve": 12,
+        "readObserve": 12,
+        "cover": 12,
+        "readRecall": 12,
+        "readSameRound": 12,
+        "review": 12,
+        "reset": 1,
+        "next": 1
+      },
+      "errors": []
+    }
+  ]
+}

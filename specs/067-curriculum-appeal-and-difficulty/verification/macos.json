@@ -1,0 +1,21 @@
+{
+  "app": "/Applications/小小思考屋.app",
+  "binarySHA256": "f7f2115fe80a5c78c5a39acd0d2dd0dd00645f74a90d7d80e8371acead3eaa29",
+  "matchesBuiltBinary": true,
+  "strictAdHocSignatureVerified": true,
+  "nativeWindow": [
+    1280,
+    820
+  ],
+  "round": "math-story-operations-2",
+  "prompt": "树上有3只小鸟，飞走1只，还剩几只？",
+  "instruction": "先数原来有几只。每飞走一只，就往回数一个数。",
+  "animationButton": "> 让1只小鸟飞走",
+  "afterAction": [
+    "数数树上还剩几只。",
+    "回到开始，再看一次"
+  ],
+  "replayRestoredStartingState": true,
+  "returnedToOriginalRound": true,
+  "storedNavigationAndProgressPreserved": true
+}

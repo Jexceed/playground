@@ -3,8 +3,8 @@ export type { Drawing, Primitive };
 export const palette = ["#db675e", "#548cb3", "#e8b64e", "#76a784", "#a189bd", "#333f50"];
 export const text = (x: number, y: number, value: string | number, size = 28): Primitive => ({ kind: 'text', x, y, text: String(value), size });
 export const line = (x: number, y: number, x2: number, y2: number, dash = false): Extract<Primitive, { kind: 'line' }> => ({ kind: 'line', x, y, x2, y2, dash });
-export const rect = (x: number, y: number, w: number, h: number, fill = "#fffdf7", dash = false): Primitive => ({ kind: 'rect', x, y, w, h, fill, dash });
-export const circle = (x: number, y: number, r = 16, fill = palette[1]): Primitive => ({ kind: 'circle', x, y, r, fill });
+export const rect = (x: number, y: number, w: number, h: number, fill = "#fffdf7", dash = false): Extract<Primitive, { kind: 'rect' }> => ({ kind: 'rect', x, y, w, h, fill, dash });
+export const circle = (x: number, y: number, r = 16, fill = palette[1]): Extract<Primitive, { kind: 'circle' }> => ({ kind: 'circle', x, y, r, fill });
 export const picture = (objects: Primitive[], width = 600, height = 280): Drawing => ({ width, height, objects });
 export const image = (d: Drawing, alt: string) => registerExplorationImage(d, alt);
 export function label(value: string | number): Drawing { const chars = Array.from(String(value)), lines = []; for (let i = 0; i < chars.length; i += 6)
@@ -70,22 +70,25 @@ export function viewingArrow(x: number, y: number, x2: number, y2: number, label
 /** Matrix rows run back to front. Front looks toward row 0; the right side looks toward column 0. */
 export function blocks(heights: number[], columns: number, showViews = false): Drawing {
     const o: Primitive[] = [];
-    const rows = Math.ceil(heights.length / columns), s = 28;
+    const rows = Math.ceil(heights.length / columns);
+    const ux = 32, uy = 11, vx = -20, vy = 17, sz = 28;
     for (let y = 0; y < rows; y++)
         for (let x = 0; x < columns; x++)
             for (let z = 0; z < heights[y * columns + x]; z++) {
-                const px = 160 + (x - y) * s, py = 235 + (x + y) * s / 2 - z * s;
-                o.push({ kind: 'polygon', points: [[px, py - s], [px + s, py - s / 2], [px, py], [px - s, py - s / 2]], fill: '#c7dfec' }, { kind: 'polygon', points: [[px - s, py - s / 2], [px, py], [px, py + s], [px - s, py + s / 2]], fill: '#75a1be' }, { kind: 'polygon', points: [[px, py], [px + s, py - s / 2], [px + s, py + s / 2], [px, py + s]], fill: '#4e7d9d' });
+                const bx = 160 + x * ux + y * vx, by = 235 + x * uy + y * vy - z * sz;
+                o.push(
+                    { kind: 'polygon', points: [[bx, by - sz], [bx + ux, by + uy - sz], [bx + ux + vx, by + uy + vy - sz], [bx + vx, by + vy - sz]], fill: '#c7dfec' },
+                    { kind: 'polygon', points: [[bx + vx, by + vy - sz], [bx + ux + vx, by + uy + vy - sz], [bx + ux + vx, by + uy + vy], [bx + vx, by + vy]], fill: '#75a1be' },
+                    { kind: 'polygon', points: [[bx + ux + vx, by + uy + vy - sz], [bx + ux, by + uy - sz], [bx + ux, by + uy], [bx + ux + vx, by + uy + vy]], fill: '#4e7d9d' },
+                );
             }
     const points = o.flatMap(shape => shape.kind === 'polygon' ? shape.points : []);
     if (!points.length) return picture([], 160, 160);
     const xs = points.map(p => p[0]), ys = points.map(p => p[1]);
     const minX = Math.min(...xs), minY = Math.min(...ys);
     if (!showViews) return picture(transform(o, 1, 1, 12 - minX, 12 - minY), Math.max(...xs) - minX + 24, Math.max(...ys) - minY + 24);
-    // The arrows approach the two visible ground edges, so their direction
-    // stays independent of which stack happens to be tallest.
-    const frontX = 160 + (columns / 2 - rows) * s, frontY = 235 + (columns / 2 + rows) * s / 2;
-    const sideX = 160 + (columns - rows / 2) * s, sideY = 235 + (columns + rows / 2) * s / 2;
+    const frontX = 160 + (columns / 2) * ux + rows * vx, frontY = 235 + (columns / 2) * uy + rows * vy;
+    const sideX = 160 + columns * ux + (rows / 2) * vx, sideY = 235 + columns * uy + (rows / 2) * vy;
     o.push(...viewingArrow(frontX - 40, frontY + 20, frontX - 8, frontY + 4, '前', frontX - 43, frontY + 44));
     o.push(...viewingArrow(sideX + 40, sideY + 20, sideX + 8, sideY + 4, '侧', sideX + 43, sideY + 44));
     return picture(transform(o, 1, 1, 56 - minX, 12 - minY), Math.max(...xs) - minX + 112, Math.max(...ys) - minY + 72);

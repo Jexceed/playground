@@ -20,13 +20,13 @@ const [catalog, exploration, session, evaluator, activityDomain] = await Promise
 const walks = catalog.activitySets.flatMap(set => set.rounds).filter(activity => activity.primaryFamilyId === 'L10');
 const previousInstruction = '先选图卡，再按位置编号排好。也可以拖过去。';
 const instruction = '选一位朋友，再点数字格，把它放到走完的位置。';
-const expectedAnswers = [['n3', 'n7'], ['n4', 'n8'], ['n5', 'n9'], ['n4', 'n3'], ['n5', 'n4'], ['n6', 'n5'], ['n5', 'n1'], ['n6', 'n2'], ['n7', 'n3']];
+const expectedAnswers = [['n3', 'n7'], ['n4', 'n8'], ['n5', 'n9'], ['n4', 'n3'], ['n5', 'n4'], ['n6', 'n5'], ['n5', 'n1'], ['n5', 'n5'], ['n7', 'n3']];
 const empty = { kind: 'orderedPlacement', slots: [{ state: 'unfilled' }, { state: 'unfilled' }] };
 const place = (activity, state, slot, number) => session.transitionSession(activity, state, { type: 'place', slotId: `slot-${slot}`, tokenId: `n${number}` });
 const responseAt = (state, slot) => evaluator.responseValue(state.response, `slot-${slot}`);
 const hash = value => createHash('sha256').update(JSON.stringify(value)).digest('hex');
 
-function expectedModel(index) {
+function originalModel(index) {
   const variant = index % 3;
   const stage = Math.floor(index / 3);
   return {
@@ -38,17 +38,30 @@ function expectedModel(index) {
   };
 }
 
+function expectedModel(index) {
+  if (index === 7) {
+    return {
+      kind: 'numberWalk', min: 0, max: 11, turns: 3,
+      actors: [
+        { id: 'red', slotId: 'slot-0', start: 2, delta: 1 },
+        { id: 'blue', slotId: 'slot-1', start: 11, delta: -2 },
+      ],
+    };
+  }
+  return originalModel(index);
+}
+
 function solve(activity, state = session.createSession(activity)) {
   return activity.evaluation.tokenIds.reduce((current, tokenId, slot) => session.transitionSession(activity, current, {
     type: 'place', slotId: `slot-${slot}`, tokenId,
   }), state);
 }
 
-test('all nine number walks match the original starts, directions, turn counts and authored answers', () => {
+test('all nine number walks use the reviewed starts, directions, turn counts and authored answers', () => {
   assert.equal(walks.length, 9);
   walks.forEach((activity, index) => {
     assert.equal(activity.id, `explore-multi-agent-movement-${index + 1}`);
-    assert.equal(activity.revision, 1);
+    assert.equal(activity.revision, index === 7 ? 2 : 1);
     assert.equal(activity.kind, 'orderedPlacement');
     assert.equal(activity.slotCount, 2);
     assert.equal(activity.tokenUse, 'unlimited');
@@ -69,7 +82,7 @@ test('only the exact reviewed instruction and number-walk presentation change th
     if (activity.primaryFamilyId !== 'L10') continue;
     const index = Number(activity.id.split('-').at(-1)) - 1;
     assert.equal(activity.instruction, instruction, activity.id);
-    assert.deepEqual(activity.presentation, { evidence: expectedModel(index) }, activity.id);
+    assert.deepEqual(activity.presentation, { evidence: originalModel(index) }, activity.id);
     activity.instruction = previousInstruction;
     delete activity.presentation;
     changed += 1;

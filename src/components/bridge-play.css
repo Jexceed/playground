@@ -8,7 +8,7 @@
 .bridge-gap-label { position:absolute; top:0; height:24px; border-bottom:1px solid #667968; text-align:center; font-size:18px; line-height:22px; color:#374d45; pointer-events:none; }
 .bridge-gap-label::before,.bridge-gap-label::after { content:""; position:absolute; bottom:-4px; height:7px; border-left:1px solid #667968; }
 .bridge-gap-label::before { left:0; }.bridge-gap-label::after { right:0; }
-.bridge-play-bear { position:absolute; left:var(--bear-start); width:9%; height:auto; pointer-events:none; }
+.bridge-play-bear { position:absolute; left:var(--bear-start); width:8%; height:auto; pointer-events:none; }
 .bridge-bear-crossing { animation:bridge-walk 2s ease-in-out forwards; }
 @keyframes bridge-walk { from {left:var(--bear-start);} to {left:var(--bear-end);} }
 .bridge-play button:focus-visible { outline:3px solid #d69b2e; outline-offset:3px; }

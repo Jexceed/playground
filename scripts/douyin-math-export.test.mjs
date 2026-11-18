@@ -39,6 +39,21 @@ test("content digest is deterministic across non-writing exports", async () => {
   assert.equal(first.contentDigest, second.contentDigest);
 });
 
+test("offline bird instructions and speech can be followed with the two static counting groups", async () => {
+  const { games } = await readGeneratedCatalog();
+  const rounds = games.find(game => game.id === "math-story-operations").rounds;
+  assert.equal(rounds.length, 12);
+  for (const round of rounds) {
+    assert.deepEqual(round.visualGroups.map(group => group.label), ["原来", "飞走"]);
+    for (const line of [round.instruction, round.retry, round.voice.prompt.text, round.voice.retry.text]) {
+      assert.match(line, /飞走/);
+      assert.doesNotMatch(line, /按钮|先点|再点|按下|播放|动画/, round.id);
+    }
+    assert.ok(round.voice.prompt.text.includes(round.instruction), round.id);
+    assert.equal(round.voice.retry.text, round.retry);
+  }
+});
+
 test("export contract records the approved application scope", async () => {
   const generated = await readGeneratedCatalog();
   assert.equal(generated.schemaVersion, 1);

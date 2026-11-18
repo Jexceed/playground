@@ -6,7 +6,7 @@ const voiceSegments: Record<string, string[]> = {};
 const voiceKey = (text: string, locale = "zh-CN") => `${locale.toLowerCase()}|${normalizeSpeechText(text)}`;
 
 let audioContext: AudioContext | null = null;
-let preferredVoice: SpeechSynthesisVoice | null = null;
+const preferredVoices = new Map<string, SpeechSynthesisVoice | null>();
 let activeAudio: HTMLAudioElement | null = null;
 let manifestPromise: Promise<void> | null = null;
 let speechRun = 0;
@@ -33,7 +33,7 @@ export async function playRequiredAudio(input: {text?: string; src?: string; loc
 
 if (typeof window !== "undefined" && "speechSynthesis" in window) {
   window.speechSynthesis.onvoiceschanged = () => {
-    preferredVoice = null;
+    preferredVoices.clear();
     pickVoice("zh-CN");
   };
 }
@@ -231,15 +231,24 @@ declare global {
 }
 
 function pickVoice(lang: string) {
-  if (preferredVoice) return preferredVoice;
+  const normalizedLang = lang.toLowerCase();
+  if (preferredVoices.has(normalizedLang)) return preferredVoices.get(normalizedLang) ?? null;
   const voices = window.speechSynthesis.getVoices();
-  const preferredNames = ["Xiaoxiao", "Xiaoyi", "Tingting", "Meijia", "Sinji", "Li-mu", "Yu-shu"];
-  preferredVoice =
-    voices.find((voice) => preferredNames.some((name) => voice.name.includes(name))) ??
-    voices.find((voice) => voice.lang === lang) ??
-    voices.find((voice) => voice.lang.toLowerCase().startsWith("zh")) ??
-    null;
-  return preferredVoice;
+  const isZh = normalizedLang.startsWith("zh");
+  const preferredZhNames = ["Xiaoxiao", "Xiaoyi", "Tingting", "Meijia", "Sinji", "Li-mu", "Yu-shu"];
+  const preferredEnNames = ["Jenny", "Aria", "Samantha", "Ava", "Allison"];
+  const prefix = normalizedLang.split("-")[0];
+  const selected = isZh
+    ? voices.find((voice) => preferredZhNames.some((name) => voice.name.includes(name))) ??
+      voices.find((voice) => voice.lang.toLowerCase() === normalizedLang) ??
+      voices.find((voice) => voice.lang.toLowerCase().startsWith("zh")) ??
+      null
+    : voices.find((voice) => voice.lang.toLowerCase().startsWith(prefix) && preferredEnNames.some((name) => voice.name.includes(name))) ??
+      voices.find((voice) => voice.lang.toLowerCase() === normalizedLang) ??
+      voices.find((voice) => voice.lang.toLowerCase().startsWith(prefix)) ??
+      null;
+  preferredVoices.set(normalizedLang, selected);
+  return selected;
 }
 
 function normalizeSpeechText(text: string) {

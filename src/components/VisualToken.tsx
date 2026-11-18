@@ -416,6 +416,7 @@ function rasterForKind(kind: string) {
   };
   if (refined[kind]) return refined[kind];
   if (kind === "redSquare") return imageGallery.items.thinkingRedSquare;
+  if (kind === "blueSquare") return imageGallery.items.thinkingBlueSquare;
   if (kind === "yellowSquare") return imageGallery.items.thinkingYellowSquare;
   if (kind === "soilPot") return imageGallery.items.soilPot;
   if (kind === "clap") return imageGallery.items.logic046Daily_clap;

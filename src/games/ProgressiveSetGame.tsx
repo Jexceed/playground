@@ -13,7 +13,7 @@ import { orderStoryImage } from "../data/orderStories";
 import { GuideMascot } from "../components/GuideMascot";
 import { VisualGlyph, VisualToken, visualMetaFor, visualParts } from "../components/VisualToken";
 import { imageGallery } from "../data/imageGallery";
-import { enlightenmentPromptSpeech, nextEnlightenmentRoundIndex, ENLIGHTENMENT_COPY, initialObservationPhase, observationTransition, type ObservationPhase } from "../domain/enlightenment";
+import { enlightenmentPromptForPhase, enlightenmentPromptSpeech, nextEnlightenmentRoundIndex, ENLIGHTENMENT_COPY, initialObservationPhase, observationTransition, type ObservationPhase } from "../domain/enlightenment";
 import { publicAsset } from "../publicAsset";
 import { playTone, speak, stopSpeech } from "../speech";
 import type { BoardAttempt, GameConfig, GameRound, GraphicChallengeOption, GraphicFigure, GraphicFigureGroup } from "../types";
@@ -42,8 +42,9 @@ export function ProgressiveSetGame({
   // App keys this component by game.id; each mount starts on that group's saved round.
   const initialRoundIndex = Math.min(Math.max(requestedRoundIndex, 0), game.rounds.length - 1);
   const [roundIndex, setRoundIndex] = useState(initialRoundIndex);
-  const [storyTaskRound, setStoryTaskRound] = useState<string | null>(null);
+  const [storyView, setStoryView] = useState<"initial" | "scene" | "task">("initial");
   const [selected, setSelected] = useState<string | null>(null);
+  const [wrongChoice, setWrongChoice] = useState<string | null>(null);
   const [answered, setAnswered] = useState(false);
   const [retryMessage, setRetryMessage] = useState<string | null>(null);
   const [completedOnce, setCompletedOnce] = useState(false);
@@ -62,9 +63,10 @@ export function ProgressiveSetGame({
     }
     if (nextIndex !== roundIndex) {
       setCompletedOnce(false);
-      setStoryTaskRound(null);
+      setStoryView("initial");
       setRoundIndex(nextIndex);
       setSelected(null);
+      setWrongChoice(null);
       setAnswered(false);
       setRetryMessage(null);
       setBoardAttempt(null);
@@ -72,20 +74,23 @@ export function ProgressiveSetGame({
     }
     if (shouldReadRequestedRound) {
       const requestedRound = game.rounds[nextIndex];
-      if (requestedRound) speak(enlightenmentPromptSpeech(game.id, requestedRound));
+      const phase = nextIndex === roundIndex ? observationPhase : initialObservationPhase(requestedRound);
+      speak(enlightenmentPromptSpeech(game.id, requestedRound, phase));
     }
-  }, [game.id, game.rounds, requestedRoundIndex, requestedRoundReadKey, roundIndex]);
+  }, [game.id, game.rounds, requestedRoundIndex, requestedRoundReadKey, roundIndex, observationPhase]);
 
   const round = game.rounds[roundIndex];
   const handsOnBridge = game.id === "logic-space-bridge";
   const sharing = game.id === "math-fair-share";
   const handsOn = handsOnBridge || sharing;
   const logicLesson = logicLessonFor(round);
-  const showStoryScene = Boolean((round.sequenceStory || logicLesson) && storyTaskRound !== round.id);
+  const hasSeparateStoryIntro = Boolean(round.sequenceStory || (logicLesson && !logicLesson.evidenceScene));
+  const showStoryScene = storyView === "scene" || (storyView === "initial" && hasSeparateStoryIntro);
   const isCorrect = answered && selected === round.answer;
   const isLastRound = roundIndex === game.rounds.length - 1;
   const timedObservation = Boolean(round.observation);
   const canAnswer = observationPhase === "answering";
+  const displayedPrompt = enlightenmentPromptForPhase(round, observationPhase);
   const nextIndex = nextEnlightenmentRoundIndex(game, roundIndex, completedRoundIds);
 
   useEffect(() => {
@@ -116,6 +121,7 @@ export function ProgressiveSetGame({
     playTone("tap");
     if (choice) speak(logicLesson ? choice.label : labelForVoice(choice.label));
     setSelected(value);
+    setWrongChoice(null);
     setRetryMessage(null);
   }
 
@@ -124,6 +130,7 @@ export function ProgressiveSetGame({
       if (!boardAttempt?.ready || answered) return;
       if (boardAttempt.valid) {
         setSelected(round.answer);
+        setWrongChoice(null);
         setAnswered(true);
         setRetryMessage(null);
         onRoundComplete(round.id, round.abilityTags);
@@ -138,6 +145,7 @@ export function ProgressiveSetGame({
     }
     if (!selected || !canAnswer || answered) return;
     if (selected === round.answer) {
+      setWrongChoice(null);
       setAnswered(true);
       setRetryMessage(null);
       onRoundComplete(round.id, round.abilityTags);
@@ -145,6 +153,7 @@ export function ProgressiveSetGame({
       speak(round.success);
     } else {
       setAnswered(false);
+      setWrongChoice(selected);
       setRetryMessage(round.retry);
       setSelected(null);
       playTone("error");
@@ -164,10 +173,11 @@ export function ProgressiveSetGame({
       return;
     }
     const requestedRound = game.rounds[nextIndex];
-    setStoryTaskRound(null);
+    setStoryView("initial");
     setRoundIndex(nextIndex);
     onRoundIndexChange(nextIndex);
     setSelected(null);
+    setWrongChoice(null);
     setAnswered(false);
     setRetryMessage(null);
     setBoardAttempt(null);
@@ -178,6 +188,7 @@ export function ProgressiveSetGame({
   function resetBoard() {
     stopSpeech();
     setSelected(null);
+    setWrongChoice(null);
     setAnswered(false);
     setRetryMessage(null);
     setBoardAttempt(null);
@@ -185,10 +196,11 @@ export function ProgressiveSetGame({
   }
 
   function resetGame() {
-    setStoryTaskRound(null);
+    setStoryView("initial");
     setRoundIndex(0);
     onRoundIndexChange(0);
     setSelected(null);
+    setWrongChoice(null);
     setAnswered(false);
     setRetryMessage(null);
     setBoardAttempt(null);
@@ -215,13 +227,13 @@ export function ProgressiveSetGame({
               难度 {round.level}
             </span>
           </p>
-          <h3>{round.prompt}</h3>
-          <p>{round.instruction}</p>
+          <h3>{displayedPrompt.prompt}</h3>
+          <p>{displayedPrompt.instruction}</p>
         </div>
         <GuideMascot
           onSpeak={() => {
             if (timedObservation && observationPhase === "observing") setObservationPhase("ready");
-            speak(enlightenmentPromptSpeech(game.id, round));
+            speak(enlightenmentPromptSpeech(game.id, round, observationPhase));
           }}
         />
       </div>
@@ -233,8 +245,8 @@ export function ProgressiveSetGame({
         solved={isCorrect}
         logicLesson={logicLesson}
         showStoryScene={showStoryScene}
-        onStoryStart={() => { setStoryTaskRound(round.id); speak(enlightenmentPromptSpeech(game.id, round)); }}
-        onStoryScene={() => { stopSpeech(); setStoryTaskRound(null); }}
+        onStoryStart={() => { playTone("tap"); setStoryView("task"); }}
+        onStoryScene={() => { stopSpeech(); setStoryView("scene"); }}
         gameId={game.id}
         memoryCovered={observationPhase === "answering"}
         round={round}
@@ -243,18 +255,21 @@ export function ProgressiveSetGame({
         onCoverMemory={() => {
           setObservationPhase(phase => observationTransition(phase, "hide", false));
           playTone("notice");
-          speak(ENLIGHTENMENT_COPY.hidden);
+          speak(enlightenmentPromptSpeech(game.id, round, "answering"));
         }}
         onReviewMemory={answered ? undefined : () => {
           setSelected(null);
+          setWrongChoice(null);
           setRetryMessage(null);
           setObservationPhase(phase => observationTransition(phase, "review", false));
+          speak(enlightenmentPromptSpeech(game.id, round, "observing"));
         }}
         onSubitizePeek={
           timedObservation && !answered
             ? () => {
                 stopSpeech();
                 setSelected(null);
+                setWrongChoice(null);
                 setRetryMessage(null);
                 setObservationPhase(phase => observationTransition(phase, "start", true));
                 playTone("notice");
@@ -269,10 +284,10 @@ export function ProgressiveSetGame({
         </p>
       )}
 
-      {!handsOn && !showStoryScene && !((round.sequenceStory || logicLesson) && isCorrect) && <div className={`choice-grid answer-grid ${round.sequenceStory ? "answer-grid-story" : ""} ${logicLesson ? "answer-grid-lesson" : ""} ${round.graphicChallenge ? "answer-grid-graphic" : ""}`}>
+      {!handsOn && !showStoryScene && !(round.memory && !canAnswer) && !((round.sequenceStory || logicLesson) && isCorrect) && <div className={`choice-grid answer-grid ${round.sequenceStory ? "answer-grid-story" : ""} ${logicLesson ? "answer-grid-lesson" : ""} ${round.graphicChallenge ? "answer-grid-graphic" : ""}`}>
         {round.choices.map((choice) => {
           const active = selected === choice.value;
-          const wrong = answered && active && choice.value !== round.answer;
+          const wrong = !answered && wrongChoice === choice.value;
           const correct = answered && choice.value === round.answer;
           const graphicOption = round.graphicChallenge?.options.find((option) => option.value === choice.value);
           const voiceLabel = logicLesson ? choice.label : labelForVoice(choice.label);
@@ -377,9 +392,9 @@ function GraphicAnswerFigure({ letter, option }: { letter: string; option: Graph
 
 function ChoiceCue({ label, visualValue = label }: { label: string; visualValue?: string }) {
   const numericValue = Number(label);
-  if (Number.isInteger(numericValue) && numericValue > 0 && numericValue <= 10) {
+  if (Number.isInteger(numericValue) && numericValue > 0 && numericValue <= 20) {
     return (
-      <span className="choice-cue choice-number-cue" aria-hidden="true">
+      <span className={`choice-cue choice-number-cue ${numericValue > 10 ? "choice-number-cue-wide" : ""}`} aria-hidden="true">
         <span>
           {Array.from({ length: numericValue }).map((_, index) => (
             <i key={index} />
@@ -474,7 +489,7 @@ function RoundBoard({
   onSubitizePeek?: () => void;
   onReviewMemory?: () => void;
 }) {
-  if (gameId === "math-compose-decompose" && round.visualGroups?.[0].label === "蓝盒")
+  if (gameId === "math-compose-decompose" && round.visualGroups?.some(group => group.label === "蓝盒"))
     return <BlockPartitionBoard round={round} solved={solved} />;
   if (logicLesson) return <LogicLessonBoard lesson={logicLesson} roundId={round.id} solved={solved} showScene={showStoryScene} onStart={onStoryStart} onScene={onStoryScene}/>;
   if (gameId === 'math-story-operations') return <BirdDepartureBoard key={round.id} round={round} />;
@@ -544,26 +559,39 @@ function RoundBoard({
       </div>}
 
       {round.visualGroups && !(inside && outside) && (
-        <div className={visualGroupClasses(round.visualGroups)}>
-          {round.visualGroups.map((group) => (
-            <div className="visual-group" data-label={group.label} key={group.label}>
-              <strong>{group.label}</strong>
-              {group.layout === "subitize" ? (
-                <SubitizeFrame key={round.id} items={group.items} visible={subitizeVisible} ready={subitizeReady} onPeek={onSubitizePeek} />
-              ) : (
-                <div className={`object-row ${group.layout === "counting" ? "object-row-counting" : ""}`}>
-                  {group.items.map((item, index) => (
-                    group.layout === "counting" ? (
-                      <CountingToken key={`${item}-${index}`} value={item} />
-                    ) : (
-                      <VisualToken key={`${item}-${index}`} value={item} />
-                    )
-                  ))}
-                </div>
-              )}
+        <>
+          <div className={visualGroupClasses(round.visualGroups)}>
+            {round.visualGroups.map((group) => (
+              <div className="visual-group" data-label={group.label} key={group.label}>
+                <strong>{group.label}</strong>
+                {group.layout === "subitize" ? (
+                  <SubitizeFrame key={round.id} items={group.items} visible={subitizeVisible} ready={subitizeReady} onPeek={onSubitizePeek} />
+                ) : (
+                  <div className={`object-row ${group.layout === "counting" ? "object-row-counting" : ""}`}>
+                    {group.items.map((item, index) => (
+                      group.layout === "counting" ? (
+                        <CountingToken key={`${item}-${index}`} value={item} />
+                      ) : (
+                        <VisualToken key={`${item}-${index}`} value={item} />
+                      )
+                    ))}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+          {gameId === "logic-balance-swap" && round.visualGroups.some(group => group.label === "天平左边") && (
+            <div className="balance-beam-banner" aria-label="天平两边一样重">
+              <svg viewBox="0 0 360 44" aria-hidden="true">
+                <line x1="36" y1="14" x2="324" y2="14" stroke="#8b5e34" strokeWidth="6" strokeLinecap="round" />
+                <path d="M52 14 L88 14 L82 6 L58 6 Z" fill="#d97706" opacity="0.85" />
+                <path d="M272 14 L308 14 L302 6 L278 6 Z" fill="#d97706" opacity="0.85" />
+                <polygon points="180,15 162,40 198,40" fill="#475569" />
+              </svg>
+              <span>天平平平的，两边一样重</span>
             </div>
-          ))}
-        </div>
+          )}
+        </>
       )}
     </section>
   );
@@ -604,11 +632,13 @@ function ClockChallengeBoard({ challenge, hasSceneImage }: { challenge: NonNulla
               </text>
             );
           })}
+          <line className="clock-hand clock-hour-halo" x1="120" x2={hourHand.x} y1="120" y2={hourHand.y} />
           <line className="clock-hand clock-hour-hand" x1="120" x2={hourHand.x} y1="120" y2={hourHand.y} />
           <line className="clock-hand clock-minute-hand" x1="120" x2={minuteHand.x} y1="120" y2={minuteHand.y} />
           <circle className="clock-pin" cx="120" cy="120" r="7" />
         </svg>
         <div className="clock-caption">
+          {hasSceneImage && challenge.activity && <strong>{challenge.activity}</strong>}
           <span>先看时针（短针），再看分针（长针）。</span>
         </div>
       </div>
@@ -740,20 +770,21 @@ function GraphicFigureArt({ figure, fill, idPrefix, stroke }: { figure: GraphicF
   if (figure.mode === "blank") return <BlankSlot />;
   const assetSrc = graphicFigureAssetSrc(figure.shape);
   if (assetSrc && figure.mode !== "missing" && figure.mode !== "outline") {
+    const resolvedSrc = publicAsset(assetSrc);
     if (figure.mode === "shadow") {
       const maskId = `${idPrefix ?? "graphic-shadow"}-mask`;
       return (
         <>
           <defs>
             <mask id={maskId} maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse" x="0" y="0" width="120" height="120" style={{ maskType: "alpha" }}>
-              <image href={assetSrc} height="112" preserveAspectRatio="xMidYMid meet" width="112" x="4" y="4" />
+              <image href={resolvedSrc} height="112" preserveAspectRatio="xMidYMid meet" width="112" x="4" y="4" />
             </mask>
           </defs>
           <rect x="4" y="4" width="112" height="112" fill="#242424" mask={`url(#${maskId})`} />
         </>
       );
     }
-    return <image href={assetSrc} height="112" preserveAspectRatio="xMidYMid meet" width="112" x="4" y="4" />;
+    return <image href={resolvedSrc} height="112" preserveAspectRatio="xMidYMid meet" width="112" x="4" y="4" />;
   }
   return <GraphicShape shape={figure.shape} fill={fill} stroke={stroke} />;
 }

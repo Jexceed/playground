@@ -1273,14 +1273,19 @@ button:focus-visible {
   transform-origin: 120px 120px;
 }
 
+.clock-hour-halo {
+  stroke: #fffdf7;
+  stroke-width: 15;
+}
+
 .clock-hour-hand {
   stroke: #2f6f73;
-  stroke-width: 9;
+  stroke-width: 11;
 }
 
 .clock-minute-hand {
   stroke: #c24131;
-  stroke-width: 6;
+  stroke-width: 5.5;
 }
 
 .clock-pin {
@@ -1535,6 +1540,32 @@ button:focus-visible {
 .visual-groups-compare .visual-group .object-row {
   grid-template-columns: repeat(auto-fit, minmax(86px, 110px));
   justify-content: start;
+}
+
+.progressive-game[data-game="logic-block-height-map"] .visual-groups-compare .visual-group .object-row {
+  grid-template-columns: repeat(2, minmax(84px, 108px));
+  justify-content: center;
+}
+
+.balance-beam-banner {
+  display: grid;
+  justify-items: center;
+  gap: 2px;
+  margin-top: 8px;
+  padding: 6px 12px;
+  border-radius: 12px;
+  background: rgba(255, 250, 235, 0.85);
+}
+
+.balance-beam-banner svg {
+  width: min(100%, 300px);
+  height: auto;
+}
+
+.balance-beam-banner span {
+  font-size: 0.88rem;
+  font-weight: 800;
+  color: #5b4630;
 }
 
 .visual-groups-compare .visual-group .object-row .visual-token {
@@ -2237,10 +2268,24 @@ button:focus-visible {
   flex-basis: 28px;
 }
 
+.choice-number-cue-wide {
+  flex-basis: 44px;
+}
+
 .choice-number-cue span {
   display: grid;
   grid-template-columns: repeat(2, 7px);
   gap: 3px;
+}
+
+.choice-number-cue-wide span {
+  grid-template-columns: repeat(5, 6px);
+  gap: 2px;
+}
+
+.choice-number-cue-wide i {
+  width: 6px;
+  height: 6px;
 }
 
 .choice-number-cue i {
@@ -2865,7 +2910,9 @@ button:focus-visible {
 .slot-target:hover { transform:none; }
 .activity-slot .activity-token-image { width:65px; height:65px; }
 .slot-question { color:#aaa99b; font-size:29px; font-weight:700; }
-.slot-remove { position:absolute; right:-6px; top:-6px; display:grid; place-items:center; width:22px; height:22px; border-radius:50%; background:#fffdf7; border:1px solid #becbbd; color:#61756b; cursor:pointer; }
+.slot-remove { position:absolute; right:-8px; top:-8px; display:grid; place-items:center; width:30px; height:30px; border-radius:50%; background:#fffdf7; border:1px solid #becbbd; color:#61756b; cursor:pointer; z-index:2; }
+.layer-order-banner { margin:0 0 8px; padding:6px 12px; border-radius:999px; background:#fff7e2; border:1px solid #e4cc92; color:#5a4622; font-size:14px; font-weight:750; text-align:center; justify-self:center; }
+.grid-copy-quick-actions { display:flex; justify-content:center; gap:8px; margin-bottom:6px; }
 .activity-token-tray { display:grid; grid-template-columns:repeat(var(--tray-columns),minmax(0,1fr)); gap:7px; margin:6px auto 8px; }
 .activity-token-tray .activity-token { padding:5px 3px 6px; border-radius:11px; }
 .activity-token-tray .activity-token,.slot-target { touch-action:none; user-select:none; }
@@ -3427,6 +3474,9 @@ button:focus-visible {
 .activity-round[data-illustrated] .activity-board.is-order {margin-top:6px;margin-bottom:6px;}
 .picture-peek {position:absolute;top:5px;left:5px;z-index:2;display:grid;place-items:center;width:28px;height:28px;min-height:0;padding:0;border:1px solid #d8dfce;border-radius:8px;background:#fffef6ee;color:#638169;cursor:pointer;}
 .picture-peek:hover {background:#e9f1dd;transform:none;}
+.previewable-choice {position:relative;display:grid;min-width:0;}
+.activity-choice-grid.single-choice .previewable-choice>.activity-token {padding-top:34px;}
+.previewable-choice>.picture-peek {top:3px;right:4px;left:auto;width:30px;height:30px;}
 .slot-picture-peek {top:auto;left:auto;right:4px;bottom:4px;width:24px;height:24px;}
 .activity-round[data-illustrated][data-phase="complete"] .activity-board.is-order .activity-token-image {width:140px;height:140px;}
 .activity-round[data-illustrated][data-phase="complete"] .activity-board.is-order .slot-target {min-height:160px;}

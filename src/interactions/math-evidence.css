@@ -1,7 +1,7 @@
 /* Labels stay in CSS pixels; only the pictured objects scale. */
 .math-model-label { display:block; font-size:20px; line-height:1.45; text-align:center; color:#4f6358; }
 .math-model-arrow { display:block; flex-shrink:0; width:30px; height:30px; color:#82977e; margin:10px auto; }
-.math-loose-objects { display:grid; grid-template-columns:repeat(5, minmax(24px,40px)); gap:9px; justify-content:center; margin:12px auto; }
+.math-loose-objects { display:grid; grid-template-columns:repeat(var(--loose-columns, 5), minmax(24px,40px)); gap:9px; justify-content:center; margin:12px auto; }
 .math-loose-objects img { display:block; width:100%; aspect-ratio:1; object-fit:contain; }
 .math-recipients { display:grid; grid-template-columns:repeat(auto-fit,minmax(76px,1fr)); gap:8px; max-width:500px; margin:0 auto; }
 .math-recipient { display:flex; flex-direction:column; align-items:center; gap:3px; }
@@ -92,6 +92,8 @@
 .math-tens { display:flex; gap:7px; }
 .math-ten-rod { display:grid; grid-template-rows:repeat(10,1fr); width:var(--place-unit); height:calc(var(--place-unit) * 10); border:1px solid #507e92; background:linear-gradient(90deg,#aed1e4,#78a8c2 60%,#5f93ac); box-shadow:2px 2px 0 #4c758927; }
 .math-ten-rod i+i { border-top:1px solid #4c7a92; }
+.math-ten-rod i.is-taken-away { position:relative; background:#e7eef2; }
+.math-ten-rod i.is-taken-away::after { content:""; position:absolute; left:-3px; right:-3px; top:50%; height:2.5px; background:#a65647; transform:rotate(-35deg); }
 .math-ones { display:grid; grid-template-columns:repeat(5,var(--place-unit)); gap:var(--place-gap); }
 .math-ones>span { width:var(--place-unit); height:var(--place-unit); border:1px solid #bd974b; background:linear-gradient(135deg,#ffe5a5,#edc46b); box-shadow:1px 1px 0 #9a712822; }
 .math-ones>span.is-taken-away { position:relative; border-style:dashed; }
@@ -135,7 +137,7 @@
 .math-model-enlarged .math-clock-row { max-width:800px; }
 .math-model-enlarged .math-clock-row.is-single { grid-template-columns:minmax(0,420px); }
 .math-model-enlarged .math-clock-number { font-size:32px; }
-.math-model-enlarged .math-loose-objects { grid-template-columns:repeat(5,56px); gap:12px; }
+.math-model-enlarged .math-loose-objects { grid-template-columns:repeat(var(--loose-columns, 5),56px); gap:12px; }
 .math-model-enlarged .math-chip-box .math-loose-objects { grid-template-columns:repeat(2,42px); }
 .math-model-enlarged .math-recipient>img { width:82px; height:96px; }
 .math-model-enlarged .math-empty-plate { width:110px; height:64px; }
@@ -152,3 +154,11 @@
   .comparison-dialog .comparison-panel { padding:8px 4px; }
   .comparison-dialog .comparison-panel h3 { font-size:24px; }
 }
+
+.visual-comparison[data-content="heights"] { grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr)); }
+.height-relation { display:flex; align-items:center; justify-content:center; gap:8px; font-size:20px; }
+.height-relation figure { display:grid; justify-items:center; gap:4px; margin:0; }
+.height-relation img { display:block; width:60px; height:60px; object-fit:contain; }
+.height-relation figcaption { font-size:18px; font-weight:650; }
+.comparison-dialog .height-relation img { width:92px; height:92px; }
+.comparison-dialog .height-relation, .comparison-dialog .height-relation figcaption { font-size:24px; }

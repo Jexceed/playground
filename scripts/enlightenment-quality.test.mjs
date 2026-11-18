@@ -54,8 +54,9 @@ test('reordering preserves each drawn option, semantic answer and display letter
 
 test('quantity pictures independently agree with addition, subtraction, sharing and grouping',()=>{
   const parts = group('math-compose-decompose').rounds;
-  const splits = parts.filter(r => r.visualGroups[0].label === '蓝盒');
+  const splits = parts.filter(r => ['蓝盒','黄盒'].includes(r.visualGroups[0].label));
   assert.equal(splits.length, 12);
+  const boxQuestions = new Set();
   for (const r of parts) {
     assert.equal(r.sceneImage, undefined);
     const [a, b] = r.visualGroups.map(g => g.items.length);
@@ -64,8 +65,12 @@ test('quantity pictures independently agree with addition, subtraction, sharing 
       assert.equal(a + b, whole, r.id);
       assert.equal(a, given, r.id);
       assert.equal(+r.answer, whole - given, r.id);
+      const [knownBox, askedBox] = r.visualGroups.map(group => group.label);
+      assert.ok(r.prompt.includes(`${knownBox}里有 ${given} 块，${askedBox}里有几块`), r.id);
+      boxQuestions.add(JSON.stringify([whole, given, askedBox]));
     } else assert.equal(+r.answer, a + b, r.id);
   }
+  assert.equal(boxQuestions.size, splits.length, 'each partition asks a distinct quantity or box');
   for(const r of group('math-story-operations').rounds){assert.equal(r.sceneImage,undefined);assert.equal(+r.answer,r.visualGroups[0].items.length-r.visualGroups[1].items.length,r.id);}
   for(const r of group('math-fair-share').rounds){assert.equal(r.sceneImage,undefined);const [items,people]=r.visualGroups.map(g=>g.items.length);assert.equal(+r.answer,Math.floor(items/people),r.id);if(items%people)assert.match(r.instruction,/不切开/);}
   for(const r of group('math-group-counting').rounds)assert.equal(+r.answer,r.visualGroups.reduce((s,g)=>s+g.items.length,0),r.id);
@@ -148,6 +153,23 @@ test('memory options have exactly one answer supported by the visible sequence',
       assert.deepEqual(supported.map(c=>c.value),[r.answer],r.id);
     }
   }
+});
+
+test('memory camera presents and narrates the same neutral cue until the cards are covered', () => {
+  const game = group('logic-memory-camera');
+  const observeCues = new Set();
+  for (const round of game.rounds) {
+    const observe = state.enlightenmentPromptForPhase(round, 'observing');
+    const question = state.enlightenmentPromptForPhase(round, 'answering');
+    const cueSpeech = state.enlightenmentPromptSpeech(game.id, round);
+    observeCues.add(cueSpeech);
+    assert.ok(cueSpeech.includes(observe.prompt) && cueSpeech.includes(observe.instruction), round.id);
+    assert.equal(cueSpeech, state.enlightenmentPromptSpeech(game.id, round, 'observing'));
+    assert.ok(!cueSpeech.includes(round.prompt), round.id);
+    assert.equal(question.prompt, round.prompt);
+    assert.ok(state.enlightenmentPromptSpeech(game.id, round, 'answering').includes(question.prompt), round.id);
+  }
+  assert.equal(observeCues.size, 1);
 });
 
 test('missing and extra picture cards match independent multiset differences',()=>{

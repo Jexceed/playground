@@ -18,14 +18,14 @@ const lineSets=[[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]]
 function captureCount(cells,index,n){let count=0;for(const [dx,dy]of [[1,0],[-1,0],[0,1],[0,-1],[1,1],[-1,-1],[1,-1],[-1,1]]){let x=index%n+dx,y=Math.floor(index/n)+dy,ray=0;while(x>=0&&x<n&&y>=0&&y<n&&cells[y*n+x]==='white'){ray++;x+=dx;y+=dy;}if(ray&&x>=0&&x<n&&y>=0&&y<n&&cells[y*n+x]==='black')count+=ray;}return count;}
 const toggle=(a,s,id)=>session.transitionSession(a,s,{type:'toggle',tokenId:id});
 
-test('nine exact board models preserve every original stone and candidate',()=>{
+test('nine board models agree with the stones and candidates shown to the child',()=>{
  assert.equal(rounds.length,9);
  for(const [i,a]of rounds.entries()){
   const m=a.presentation.evidence;assert.equal(m.kind,'boardMove');assert.equal(m.columns,i<6?3:4);assert.equal(m.goal,i<6?'line3':'capture');assert.equal(m.cells.length,m.columns*m.columns);
   const drawing=exploration.explorationDrawings[a.illustration.src.split('/').at(-1).replace('.png','')];
   const old=drawing.objects.filter(o=>o.kind==='text').map(o=>o.text==='●'?'black':o.text==='○'?'white':null);
   assert.deepEqual(m.cells,old,a.id);assert.deepEqual(m.candidates,a.tokens.map(t=>({cell:Number(t.id.slice(1)),tokenId:t.id})));
-  assert.ok(m.candidates.every(c=>m.cells[c.cell]===null));assert.equal(a.revision,i<6?1:2);assert.equal(a.kind,'multiSelect');
+  assert.ok(m.candidates.every(c=>m.cells[c.cell]===null));assert.equal(a.revision,i===0?1:2);assert.equal(a.kind,'multiSelect');
   assert.deepEqual(Object.keys(m).sort(),['candidates','cells','columns','goal','kind']);
  }
 });

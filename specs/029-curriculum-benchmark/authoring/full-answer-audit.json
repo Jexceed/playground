@@ -314,7 +314,7 @@
     },
     {
       "id": "explore-compare-transfer-1",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 1,
@@ -349,7 +349,7 @@
     },
     {
       "id": "explore-compare-transfer-2",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 1,
@@ -384,7 +384,7 @@
     },
     {
       "id": "explore-compare-transfer-3",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 1,
@@ -419,21 +419,21 @@
     },
     {
       "id": "explore-compare-transfer-4",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 1,
         "reading": 1,
         "motor": 1,
         "representation": "pictures",
-        "basis": "左5–7、右8–12，差额加大但仍一次求差",
+        "basis": "从右侧8至12个圆点中拿走差额，使两边相等。",
         "memory": 0,
         "calibration": "design-estimate",
         "workload": {
-          "candidates": 3
+          "candidates": 4
         }
       },
-      "prerequisites": "能点数并求3–5的差额",
+      "prerequisites": "能把两边一一配对并找出多余的圆点",
       "family": "N02",
       "stage": 2,
       "kind": "singleChoice",
@@ -442,7 +442,7 @@
         "kind": "singleChoice",
         "tokenId": "o0"
       },
-      "reason": "把两边一一配对，右边多出3个，左边就补3个。",
+      "reason": "把两边一一配对，右边多出3个，拿走这3个以后两边就一样多。",
       "oracle": {
         "operation": "difference",
         "values": [
@@ -454,21 +454,21 @@
     },
     {
       "id": "explore-compare-transfer-5",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 1,
         "reading": 1,
         "motor": 1,
         "representation": "pictures",
-        "basis": "左5–7、右8–12，差额加大但仍一次求差",
+        "basis": "从右侧8至12个圆点中拿走差额，使两边相等。",
         "memory": 0,
         "calibration": "design-estimate",
         "workload": {
-          "candidates": 3
+          "candidates": 4
         }
       },
-      "prerequisites": "能点数并求3–5的差额",
+      "prerequisites": "能把两边一一配对并找出多余的圆点",
       "family": "N02",
       "stage": 2,
       "kind": "singleChoice",
@@ -477,7 +477,7 @@
         "kind": "singleChoice",
         "tokenId": "o0"
       },
-      "reason": "把两边一一配对，右边多出4个，左边就补4个。",
+      "reason": "把两边一一配对，右边多出4个，拿走这4个以后两边就一样多。",
       "oracle": {
         "operation": "difference",
         "values": [
@@ -489,21 +489,21 @@
     },
     {
       "id": "explore-compare-transfer-6",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 1,
         "reading": 1,
         "motor": 1,
         "representation": "pictures",
-        "basis": "左5–7、右8–12，差额加大但仍一次求差",
+        "basis": "从右侧8至12个圆点中拿走差额，使两边相等。",
         "memory": 0,
         "calibration": "design-estimate",
         "workload": {
-          "candidates": 3
+          "candidates": 4
         }
       },
-      "prerequisites": "能点数并求3–5的差额",
+      "prerequisites": "能把两边一一配对并找出多余的圆点",
       "family": "N02",
       "stage": 2,
       "kind": "singleChoice",
@@ -512,7 +512,7 @@
         "kind": "singleChoice",
         "tokenId": "o0"
       },
-      "reason": "把两边一一配对，右边多出5个，左边就补5个。",
+      "reason": "把两边一一配对，右边多出5个，拿走这5个以后两边就一样多。",
       "oracle": {
         "operation": "difference",
         "values": [
@@ -524,7 +524,7 @@
     },
     {
       "id": "explore-compare-transfer-7",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 2,
@@ -559,7 +559,7 @@
     },
     {
       "id": "explore-compare-transfer-8",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 2,
@@ -594,7 +594,7 @@
     },
     {
       "id": "explore-compare-transfer-9",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 2,
@@ -605,7 +605,7 @@
         "memory": 0,
         "calibration": "design-estimate",
         "workload": {
-          "candidates": 3
+          "candidates": 4
         }
       },
       "prerequisites": "理解移交使一边加一而另一边减一",
@@ -935,7 +935,7 @@
     },
     {
       "id": "explore-number-partitions-1",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 1,
@@ -970,7 +970,7 @@
     },
     {
       "id": "explore-number-partitions-2",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 1,
@@ -1006,7 +1006,7 @@
     },
     {
       "id": "explore-number-partitions-3",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 1,
@@ -1351,7 +1351,7 @@
         "reading": 1,
         "motor": 1,
         "representation": "pictures",
-        "basis": "8–10加5–7，建议路径为拆出凑十部分再加余数；不强制采用此策略",
+        "basis": "8加5、9加6、8加7都能拆出凑满十的部分，再加剩余个位。",
         "memory": 0,
         "calibration": "design-estimate",
         "workload": {
@@ -1367,7 +1367,7 @@
         "kind": "singleChoice",
         "tokenId": "o0"
       },
-      "reason": "把5拆成2和3，先凑十，再加剩下的，得到13。",
+      "reason": "把5拆成2和3，先凑成十，再加剩下的，得到13。",
       "oracle": {
         "operation": "add",
         "values": [
@@ -1386,7 +1386,7 @@
         "reading": 1,
         "motor": 1,
         "representation": "pictures",
-        "basis": "8–10加5–7，建议路径为拆出凑十部分再加余数；不强制采用此策略",
+        "basis": "8加5、9加6、8加7都能拆出凑满十的部分，再加剩余个位。",
         "memory": 0,
         "calibration": "design-estimate",
         "workload": {
@@ -1402,7 +1402,7 @@
         "kind": "singleChoice",
         "tokenId": "o0"
       },
-      "reason": "把6拆成1和5，先凑十，再加剩下的，得到15。",
+      "reason": "把6拆成1和5，先凑成十，再加剩下的，得到15。",
       "oracle": {
         "operation": "add",
         "values": [
@@ -1414,14 +1414,14 @@
     },
     {
       "id": "explore-make-break-ten-6",
-      "revision": 1,
+      "revision": 3,
       "difficulty": {
         "rules": 1,
         "steps": 2,
         "reading": 1,
         "motor": 1,
         "representation": "pictures",
-        "basis": "8–10加5–7，建议路径为拆出凑十部分再加余数；不强制采用此策略",
+        "basis": "8加5、9加6、8加7都能拆出凑满十的部分，再加剩余个位。",
         "memory": 0,
         "calibration": "design-estimate",
         "workload": {
@@ -1437,14 +1437,14 @@
         "kind": "singleChoice",
         "tokenId": "o0"
       },
-      "reason": "把7拆成0和7，先凑十，再加剩下的，得到17。",
+      "reason": "把7拆成2和5，先凑成十，再加剩下的，得到15。",
       "oracle": {
         "operation": "add",
         "values": [
-          10,
+          8,
           7
         ],
-        "answer": 17
+        "answer": 15
       }
     },
     {
@@ -1456,14 +1456,14 @@
         "reading": 1,
         "motor": 1,
         "representation": "pictures",
-        "basis": "13–15减7–9，先算十减去减数再合个位；只评分最终数",
+        "basis": "13减7、15减8、14减6。从十连条拿走6至8块，再加回原有的零散小块。",
         "memory": 0,
         "calibration": "design-estimate",
         "workload": {
           "candidates": 4
         }
       },
-      "prerequisites": "理解十和个位，能从十减去7–9",
+      "prerequisites": "知道一根十连条有十块，可以先在长条上拿走几块",
       "family": "N05",
       "stage": 3,
       "kind": "singleChoice",
@@ -1472,7 +1472,7 @@
         "kind": "singleChoice",
         "tokenId": "o0"
       },
-      "reason": "十减7剩3，再和个位的3合起来，是6。",
+      "reason": "先从一长条10里面拿走7还剩3，再和旁边的3小块合起来，是6。",
       "oracle": {
         "operation": "subtract",
         "values": [
@@ -1484,21 +1484,21 @@
     },
     {
       "id": "explore-make-break-ten-8",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 2,
         "reading": 1,
         "motor": 1,
         "representation": "pictures",
-        "basis": "13–15减7–9，先算十减去减数再合个位；只评分最终数",
+        "basis": "13减7、15减8、14减6。从十连条拿走6至8块，再加回原有的零散小块。",
         "memory": 0,
         "calibration": "design-estimate",
         "workload": {
           "candidates": 4
         }
       },
-      "prerequisites": "理解十和个位，能从十减去7–9",
+      "prerequisites": "知道一根十连条有十块，可以先在长条上拿走几块",
       "family": "N05",
       "stage": 3,
       "kind": "singleChoice",
@@ -1507,49 +1507,49 @@
         "kind": "singleChoice",
         "tokenId": "o0"
       },
-      "reason": "十减8剩2，再和个位的4合起来，是6。",
-      "oracle": {
-        "operation": "subtract",
-        "values": [
-          14,
-          8
-        ],
-        "answer": 6
-      }
-    },
-    {
-      "id": "explore-make-break-ten-9",
-      "revision": 1,
-      "difficulty": {
-        "rules": 1,
-        "steps": 2,
-        "reading": 1,
-        "motor": 1,
-        "representation": "pictures",
-        "basis": "13–15减7–9，先算十减去减数再合个位；只评分最终数",
-        "memory": 0,
-        "calibration": "design-estimate",
-        "workload": {
-          "candidates": 4
-        }
-      },
-      "prerequisites": "理解十和个位，能从十减去7–9",
-      "family": "N05",
-      "stage": 3,
-      "kind": "singleChoice",
-      "status": "correct",
-      "solution": {
-        "kind": "singleChoice",
-        "tokenId": "o0"
-      },
-      "reason": "十减9剩1，再和个位的5合起来，是6。",
+      "reason": "先从一长条10里面拿走8还剩2，再和旁边的5小块合起来，是7。",
       "oracle": {
         "operation": "subtract",
         "values": [
           15,
-          9
+          8
         ],
-        "answer": 6
+        "answer": 7
+      }
+    },
+    {
+      "id": "explore-make-break-ten-9",
+      "revision": 2,
+      "difficulty": {
+        "rules": 1,
+        "steps": 2,
+        "reading": 1,
+        "motor": 1,
+        "representation": "pictures",
+        "basis": "13减7、15减8、14减6。从十连条拿走6至8块，再加回原有的零散小块。",
+        "memory": 0,
+        "calibration": "design-estimate",
+        "workload": {
+          "candidates": 4
+        }
+      },
+      "prerequisites": "知道一根十连条有十块，可以先在长条上拿走几块",
+      "family": "N05",
+      "stage": 3,
+      "kind": "singleChoice",
+      "status": "correct",
+      "solution": {
+        "kind": "singleChoice",
+        "tokenId": "o0"
+      },
+      "reason": "先从一长条10里面拿走6还剩4，再和旁边的4小块合起来，是8。",
+      "oracle": {
+        "operation": "subtract",
+        "values": [
+          14,
+          6
+        ],
+        "answer": 8
       }
     },
     {
@@ -2184,7 +2184,7 @@
     },
     {
       "id": "explore-area-fractions-1",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 2,
@@ -2212,7 +2212,7 @@
     },
     {
       "id": "explore-area-fractions-2",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 2,
@@ -2240,7 +2240,7 @@
     },
     {
       "id": "explore-area-fractions-3",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 2,
@@ -2268,7 +2268,7 @@
     },
     {
       "id": "explore-area-fractions-4",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 2,
@@ -2296,7 +2296,7 @@
     },
     {
       "id": "explore-area-fractions-5",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 2,
@@ -2324,7 +2324,7 @@
     },
     {
       "id": "explore-area-fractions-6",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 2,
@@ -2352,7 +2352,7 @@
     },
     {
       "id": "explore-area-fractions-7",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 2,
@@ -2380,7 +2380,7 @@
     },
     {
       "id": "explore-area-fractions-8",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 2,
@@ -2408,7 +2408,7 @@
     },
     {
       "id": "explore-area-fractions-9",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 2,
@@ -2436,7 +2436,7 @@
     },
     {
       "id": "explore-ordinal-queue-1",
-      "revision": 1,
+      "revision": 3,
       "difficulty": {
         "rules": 1,
         "steps": 1,
@@ -2459,20 +2459,19 @@
         "kind": "singleChoice",
         "tokenId": "o0"
       },
-      "reason": "两边都数到小兔，小兔重复了一次。3加4再减一，是6。",
+      "reason": "从左数到小兔有3位，后面还有3位。3加3是6。",
       "oracle": {
-        "operation": "overlap",
+        "operation": "add",
         "values": [
           3,
-          4,
-          1
+          3
         ],
         "answer": 6
       }
     },
     {
       "id": "explore-ordinal-queue-2",
-      "revision": 1,
+      "revision": 3,
       "difficulty": {
         "rules": 1,
         "steps": 1,
@@ -2495,20 +2494,19 @@
         "kind": "singleChoice",
         "tokenId": "o0"
       },
-      "reason": "两边都数到小兔，小兔重复了一次。4加5再减一，是8。",
+      "reason": "从左数到小兔有4位，后面还有4位。4加4是8。",
       "oracle": {
-        "operation": "overlap",
+        "operation": "add",
         "values": [
           4,
-          5,
-          1
+          4
         ],
         "answer": 8
       }
     },
     {
       "id": "explore-ordinal-queue-3",
-      "revision": 1,
+      "revision": 3,
       "difficulty": {
         "rules": 1,
         "steps": 1,
@@ -2531,20 +2529,19 @@
         "kind": "singleChoice",
         "tokenId": "o0"
       },
-      "reason": "两边都数到小兔，小兔重复了一次。5加6再减一，是10。",
+      "reason": "从左数到小兔有5位，后面还有5位。5加5是10。",
       "oracle": {
-        "operation": "overlap",
+        "operation": "add",
         "values": [
           5,
-          6,
-          1
+          5
         ],
         "answer": 10
       }
     },
     {
       "id": "explore-ordinal-queue-4",
-      "revision": 1,
+      "revision": 3,
       "difficulty": {
         "rules": 2,
         "steps": 2,
@@ -2580,7 +2577,7 @@
     },
     {
       "id": "explore-ordinal-queue-5",
-      "revision": 1,
+      "revision": 3,
       "difficulty": {
         "rules": 2,
         "steps": 2,
@@ -2616,7 +2613,7 @@
     },
     {
       "id": "explore-ordinal-queue-6",
-      "revision": 1,
+      "revision": 3,
       "difficulty": {
         "rules": 2,
         "steps": 2,
@@ -2652,7 +2649,7 @@
     },
     {
       "id": "explore-ordinal-queue-7",
-      "revision": 1,
+      "revision": 3,
       "difficulty": {
         "rules": 2,
         "steps": 2,
@@ -2688,7 +2685,7 @@
     },
     {
       "id": "explore-ordinal-queue-8",
-      "revision": 1,
+      "revision": 3,
       "difficulty": {
         "rules": 2,
         "steps": 2,
@@ -2724,7 +2721,7 @@
     },
     {
       "id": "explore-ordinal-queue-9",
-      "revision": 1,
+      "revision": 3,
       "difficulty": {
         "rules": 2,
         "steps": 2,
@@ -2961,7 +2958,7 @@
     },
     {
       "id": "explore-parity-place-value-7",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 1,
@@ -2996,7 +2993,7 @@
     },
     {
       "id": "explore-parity-place-value-8",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 1,
@@ -3031,7 +3028,7 @@
     },
     {
       "id": "explore-parity-place-value-9",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 1,
@@ -4182,7 +4179,7 @@
         "kind": "singleChoice",
         "tokenId": "o0"
       },
-      "reason": "长针每走一个小刻度是一分钟。一共走了25个小刻度，所以经过25分钟。",
+      "reason": "长针每走一大格是5分钟，一共走了5大格，所以经过25分钟。",
       "oracle": {
         "operation": "subtract",
         "values": [
@@ -4217,7 +4214,7 @@
         "kind": "singleChoice",
         "tokenId": "o0"
       },
-      "reason": "长针每走一个小刻度是一分钟。一共走了35个小刻度，所以经过35分钟。",
+      "reason": "长针每走一大格是5分钟，一共走了7大格，所以经过35分钟。",
       "oracle": {
         "operation": "subtract",
         "values": [
@@ -4252,7 +4249,7 @@
         "kind": "singleChoice",
         "tokenId": "o0"
       },
-      "reason": "长针每走一个小刻度是一分钟。一共走了45个小刻度，所以经过45分钟。",
+      "reason": "长针每走一大格是5分钟，一共走了9大格，所以经过45分钟。",
       "oracle": {
         "operation": "subtract",
         "values": [
@@ -4791,7 +4788,7 @@
         "kind": "singleChoice",
         "tokenId": "o0"
       },
-      "reason": "第一次2号，第二次5号，第三次8号。开始那次也算一次。",
+      "reason": "第一次2号，第二次5号，第三次8号。开始那次也算第一次。",
       "oracle": {
         "operation": "add",
         "values": [
@@ -4827,7 +4824,7 @@
         "kind": "singleChoice",
         "tokenId": "o0"
       },
-      "reason": "第一次3号，第二次6号，第三次9号。开始那次也算一次。",
+      "reason": "第一次3号，第二次6号，第三次9号。开始那次也算第一次。",
       "oracle": {
         "operation": "add",
         "values": [
@@ -4863,7 +4860,7 @@
         "kind": "singleChoice",
         "tokenId": "o0"
       },
-      "reason": "第一次4号，第二次7号，第三次10号。开始那次也算一次。",
+      "reason": "第一次4号，第二次7号，第三次10号。开始那次也算第一次。",
       "oracle": {
         "operation": "add",
         "values": [
@@ -5278,7 +5275,7 @@
     },
     {
       "id": "explore-relations-analogies-4",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 1,
@@ -5319,7 +5316,7 @@
     },
     {
       "id": "explore-relations-analogies-5",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 1,
@@ -5360,7 +5357,7 @@
     },
     {
       "id": "explore-relations-analogies-6",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 1,
@@ -5401,7 +5398,7 @@
     },
     {
       "id": "explore-relations-analogies-7",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 1,
@@ -5446,7 +5443,7 @@
     },
     {
       "id": "explore-relations-analogies-8",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 1,
@@ -5491,7 +5488,7 @@
     },
     {
       "id": "explore-relations-analogies-9",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 1,
@@ -5794,21 +5791,21 @@
     },
     {
       "id": "explore-transitive-order-7",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 2,
         "reading": 2,
         "motor": 1,
         "representation": "symbols",
-        "basis": "两条比较只能形成部分顺序，判断信息不足；不是4人的排序延长",
+        "basis": "两条线索有时能在中间的朋友处接起来，有时只知道两人都比第三人高。",
         "memory": 0,
         "calibration": "design-estimate",
         "workload": {
           "candidates": 3
         }
       },
-      "prerequisites": "理解共同高于一人不能确定彼此高低",
+      "prerequisites": "能说清每一对朋友中谁比谁高",
       "family": "L03",
       "stage": 3,
       "kind": "singleChoice",
@@ -5822,49 +5819,49 @@
     },
     {
       "id": "explore-transitive-order-8",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 2,
         "reading": 2,
         "motor": 1,
         "representation": "symbols",
-        "basis": "两条比较只能形成部分顺序，判断信息不足；不是4人的排序延长",
+        "basis": "两条线索有时能在中间的朋友处接起来，有时只知道两人都比第三人高。",
         "memory": 0,
         "calibration": "design-estimate",
         "workload": {
           "candidates": 3
         }
       },
-      "prerequisites": "理解共同高于一人不能确定彼此高低",
+      "prerequisites": "能说清每一对朋友中谁比谁高",
       "family": "L03",
       "stage": 3,
       "kind": "singleChoice",
       "status": "correct",
       "solution": {
         "kind": "singleChoice",
-        "tokenId": "o2"
+        "tokenId": "o0"
       },
-      "reason": "两位都比同一位高，不能确定这两位之间谁更高。还需要比较他们的线索。",
+      "reason": "小猫比小狗高，小狗又比小兔高，顺着小狗接起来就能确定小猫比小兔高。",
       "oracle": null
     },
     {
       "id": "explore-transitive-order-9",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 2,
         "reading": 2,
         "motor": 1,
         "representation": "symbols",
-        "basis": "两条比较只能形成部分顺序，判断信息不足；不是4人的排序延长",
+        "basis": "两条线索有时能在中间的朋友处接起来，有时只知道两人都比第三人高。",
         "memory": 0,
         "calibration": "design-estimate",
         "workload": {
           "candidates": 3
         }
       },
-      "prerequisites": "理解共同高于一人不能确定彼此高低",
+      "prerequisites": "能说清每一对朋友中谁比谁高",
       "family": "L03",
       "stage": 3,
       "kind": "singleChoice",
@@ -6283,18 +6280,18 @@
     },
     {
       "id": "explore-route-constraints-1",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 1,
         "reading": 1,
         "motor": 2,
         "representation": "pictures",
-        "basis": "路径连贯到终点，2–4段链式路线，逐段动作另计",
+        "basis": "连通起点和终点的路有2至4段，另有一个死胡同，需要辨认分岔。",
         "memory": 0,
         "calibration": "design-estimate",
         "workload": {
-          "edges": 2
+          "edges": 3
         }
       },
       "prerequisites": "能认起终点并沿相邻地点走",
@@ -6314,18 +6311,18 @@
     },
     {
       "id": "explore-route-constraints-2",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 1,
         "reading": 1,
         "motor": 2,
         "representation": "pictures",
-        "basis": "路径连贯到终点，2–4段链式路线，逐段动作另计",
+        "basis": "连通起点和终点的路有2至4段，另有一个死胡同，需要辨认分岔。",
         "memory": 0,
         "calibration": "design-estimate",
         "workload": {
-          "edges": 3
+          "edges": 4
         }
       },
       "prerequisites": "能认起终点并沿相邻地点走",
@@ -6346,18 +6343,18 @@
     },
     {
       "id": "explore-route-constraints-3",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 1,
         "reading": 1,
         "motor": 2,
         "representation": "pictures",
-        "basis": "路径连贯到终点，2–4段链式路线，逐段动作另计",
+        "basis": "连通起点和终点的路有2至4段，另有一个死胡同，需要辨认分岔。",
         "memory": 0,
         "calibration": "design-estimate",
         "workload": {
-          "edges": 4
+          "edges": 5
         }
       },
       "prerequisites": "能认起终点并沿相邻地点走",
@@ -7159,7 +7156,7 @@
     },
     {
       "id": "explore-evidence-reasoning-7",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 3,
@@ -7191,7 +7188,7 @@
     },
     {
       "id": "explore-evidence-reasoning-8",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 3,
@@ -7223,7 +7220,7 @@
     },
     {
       "id": "explore-evidence-reasoning-9",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 3,
@@ -7278,7 +7275,7 @@
         "kind": "singleChoice",
         "tokenId": "o0"
       },
-      "reason": "先加2，得到4。换了起始数量，也要按同一条规则做。",
+      "reason": "先添上2个，一共有4个。起先的圆片换了，玩法还是一样。",
       "oracle": {
         "operation": "affine",
         "values": [
@@ -7314,7 +7311,7 @@
         "kind": "singleChoice",
         "tokenId": "o0"
       },
-      "reason": "先加2，得到5。换了起始数量，也要按同一条规则做。",
+      "reason": "先添上2个，一共有5个。起先的圆片换了，玩法还是一样。",
       "oracle": {
         "operation": "affine",
         "values": [
@@ -7350,7 +7347,7 @@
         "kind": "singleChoice",
         "tokenId": "o0"
       },
-      "reason": "先加2，得到6。换了起始数量，也要按同一条规则做。",
+      "reason": "先添上2个，一共有6个。起先的圆片换了，玩法还是一样。",
       "oracle": {
         "operation": "affine",
         "values": [
@@ -7386,7 +7383,7 @@
         "kind": "singleChoice",
         "tokenId": "o0"
       },
-      "reason": "先加3，得到5。换了起始数量，也要按同一条规则做。",
+      "reason": "先添上3个，一共有5个。起先的圆片换了，玩法还是一样。",
       "oracle": {
         "operation": "affine",
         "values": [
@@ -7422,7 +7419,7 @@
         "kind": "singleChoice",
         "tokenId": "o0"
       },
-      "reason": "先加3，得到6。换了起始数量，也要按同一条规则做。",
+      "reason": "先添上3个，一共有6个。起先的圆片换了，玩法还是一样。",
       "oracle": {
         "operation": "affine",
         "values": [
@@ -7458,7 +7455,7 @@
         "kind": "singleChoice",
         "tokenId": "o0"
       },
-      "reason": "先加3，得到7。换了起始数量，也要按同一条规则做。",
+      "reason": "先添上3个，一共有7个。起先的圆片换了，玩法还是一样。",
       "oracle": {
         "operation": "affine",
         "values": [
@@ -7494,7 +7491,7 @@
         "kind": "singleChoice",
         "tokenId": "o0"
       },
-      "reason": "先加4，再把总数变成两倍，得到12。换了起始数量，也要按同一条规则做。",
+      "reason": "先添上4个，再摆一份一样多的圆片，一共有12个。起先的圆片换了，玩法还是一样。",
       "oracle": {
         "operation": "affine",
         "values": [
@@ -7530,7 +7527,7 @@
         "kind": "singleChoice",
         "tokenId": "o0"
       },
-      "reason": "先加4，再把总数变成两倍，得到14。换了起始数量，也要按同一条规则做。",
+      "reason": "先添上4个，再摆一份一样多的圆片，一共有14个。起先的圆片换了，玩法还是一样。",
       "oracle": {
         "operation": "affine",
         "values": [
@@ -7566,7 +7563,7 @@
         "kind": "singleChoice",
         "tokenId": "o0"
       },
-      "reason": "先加4，再把总数变成两倍，得到16。换了起始数量，也要按同一条规则做。",
+      "reason": "先添上4个，再摆一份一样多的圆片，一共有16个。起先的圆片换了，玩法还是一样。",
       "oracle": {
         "operation": "affine",
         "values": [
@@ -7579,14 +7576,14 @@
     },
     {
       "id": "explore-toggle-state-1",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 1,
         "reading": 0,
         "motor": 2,
         "representation": "pictures",
-        "basis": "3卡按一条翻动指令后回填全部3格",
+        "basis": "3张牌只翻动其中一张，观察其余牌是否保持原色",
         "memory": 0,
         "calibration": "design-estimate",
         "workload": {
@@ -7615,19 +7612,19 @@
           }
         }
       },
-      "reason": "翻一次换一面；同一张翻两次，又回到原来。",
+      "reason": "翻过的那张牌换了颜色，其余牌还是原来的颜色。",
       "oracle": null
     },
     {
       "id": "explore-toggle-state-2",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 1,
         "reading": 0,
         "motor": 2,
         "representation": "pictures",
-        "basis": "3卡按一条翻动指令后回填全部3格",
+        "basis": "3张牌只翻动其中一张，观察其余牌是否保持原色",
         "memory": 0,
         "calibration": "design-estimate",
         "workload": {
@@ -7656,19 +7653,19 @@
           }
         }
       },
-      "reason": "翻一次换一面；同一张翻两次，又回到原来。",
+      "reason": "翻过的那张牌换了颜色，其余牌还是原来的颜色。",
       "oracle": null
     },
     {
       "id": "explore-toggle-state-3",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 1,
         "reading": 0,
         "motor": 2,
         "representation": "pictures",
-        "basis": "3卡按一条翻动指令后回填全部3格",
+        "basis": "3张牌只翻动其中一张，观察其余牌是否保持原色",
         "memory": 0,
         "calibration": "design-estimate",
         "workload": {
@@ -7697,19 +7694,19 @@
           }
         }
       },
-      "reason": "翻一次换一面；同一张翻两次，又回到原来。",
+      "reason": "翻过的那张牌换了颜色，其余牌还是原来的颜色。",
       "oracle": null
     },
     {
       "id": "explore-toggle-state-4",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 2,
         "reading": 0,
         "motor": 2,
         "representation": "pictures",
-        "basis": "4卡按两条指令连续更新，翻一次换面规则不变",
+        "basis": "4张牌中有两张各翻一次，核对两张变化后的颜色",
         "memory": 0,
         "calibration": "design-estimate",
         "workload": {
@@ -7742,19 +7739,19 @@
           }
         }
       },
-      "reason": "翻一次换一面；同一张翻两次，又回到原来。",
+      "reason": "两张不同的牌各翻了一次，这两张都换了颜色。",
       "oracle": null
     },
     {
       "id": "explore-toggle-state-5",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 2,
         "reading": 0,
         "motor": 2,
         "representation": "pictures",
-        "basis": "4卡按两条指令连续更新，翻一次换面规则不变",
+        "basis": "4张牌中有两张各翻一次，核对两张变化后的颜色",
         "memory": 0,
         "calibration": "design-estimate",
         "workload": {
@@ -7787,19 +7784,19 @@
           }
         }
       },
-      "reason": "翻一次换一面；同一张翻两次，又回到原来。",
+      "reason": "两张不同的牌各翻了一次，这两张都换了颜色。",
       "oracle": null
     },
     {
       "id": "explore-toggle-state-6",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 2,
         "reading": 0,
         "motor": 2,
         "representation": "pictures",
-        "basis": "4卡按两条指令连续更新，翻一次换面规则不变",
+        "basis": "4张牌中有两张各翻一次，核对两张变化后的颜色",
         "memory": 0,
         "calibration": "design-estimate",
         "workload": {
@@ -7832,19 +7829,19 @@
           }
         }
       },
-      "reason": "翻一次换一面；同一张翻两次，又回到原来。",
+      "reason": "两张不同的牌各翻了一次，这两张都换了颜色。",
       "oracle": null
     },
     {
       "id": "explore-toggle-state-7",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 3,
         "reading": 0,
         "motor": 2,
         "representation": "pictures",
-        "basis": "5卡按三条指令，其中同一卡两次；仍一条翻转规则，三步状态更新",
+        "basis": "5张牌按三次翻动推算最终牌面，同一张翻两次后复原",
         "memory": 0,
         "calibration": "design-estimate",
         "workload": {
@@ -7881,19 +7878,19 @@
           }
         }
       },
-      "reason": "翻一次换一面；同一张翻两次，又回到原来。",
+      "reason": "同一张牌翻两次会回到原来的颜色。只翻一次的那张换了颜色。",
       "oracle": null
     },
     {
       "id": "explore-toggle-state-8",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 3,
         "reading": 0,
         "motor": 2,
         "representation": "pictures",
-        "basis": "5卡按三条指令，其中同一卡两次；仍一条翻转规则，三步状态更新",
+        "basis": "5张牌按三次翻动推算最终牌面，同一张翻两次后复原",
         "memory": 0,
         "calibration": "design-estimate",
         "workload": {
@@ -7930,19 +7927,19 @@
           }
         }
       },
-      "reason": "翻一次换一面；同一张翻两次，又回到原来。",
+      "reason": "同一张牌翻两次会回到原来的颜色。只翻一次的那张换了颜色。",
       "oracle": null
     },
     {
       "id": "explore-toggle-state-9",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 3,
         "reading": 0,
         "motor": 2,
         "representation": "pictures",
-        "basis": "5卡按三条指令，其中同一卡两次；仍一条翻转规则，三步状态更新",
+        "basis": "5张牌按三次翻动推算最终牌面，同一张翻两次后复原",
         "memory": 0,
         "calibration": "design-estimate",
         "workload": {
@@ -7979,7 +7976,7 @@
           }
         }
       },
-      "reason": "翻一次换一面；同一张翻两次，又回到原来。",
+      "reason": "同一张牌翻两次会回到原来的颜色。只翻一次的那张换了颜色。",
       "oracle": null
     },
     {
@@ -8213,14 +8210,14 @@
         "reading": 1,
         "motor": 2,
         "representation": "symbols",
-        "basis": "4轮，红右1蓝左2，仍求两个终点，不是实际相遇时刻倒推",
+        "basis": "红每次右移一格，蓝每次左移两格，按题目次数分别找终点。第8题走三次，两人同格。",
         "memory": 0,
         "calibration": "design-estimate",
         "workload": {
           "slots": 2
         }
       },
-      "prerequisites": "能计算4轮后各位置并接受同格",
+      "prerequisites": "能分别按两种步长走，知道两人也能停在同一格",
       "family": "L10",
       "stage": 3,
       "kind": "orderedPlacement",
@@ -8243,21 +8240,21 @@
     },
     {
       "id": "explore-multi-agent-movement-8",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 2,
         "reading": 1,
         "motor": 2,
         "representation": "symbols",
-        "basis": "4轮，红右1蓝左2，仍求两个终点，不是实际相遇时刻倒推",
+        "basis": "红每次右移一格，蓝每次左移两格，按题目次数分别找终点。第8题走三次，两人同格。",
         "memory": 0,
         "calibration": "design-estimate",
         "workload": {
           "slots": 2
         }
       },
-      "prerequisites": "能计算4轮后各位置并接受同格",
+      "prerequisites": "能分别按两种步长走，知道两人也能停在同一格",
       "family": "L10",
       "stage": 3,
       "kind": "orderedPlacement",
@@ -8267,15 +8264,15 @@
         "slots": [
           {
             "state": "filled",
-            "tokenId": "n6"
+            "tokenId": "n5"
           },
           {
             "state": "filled",
-            "tokenId": "n2"
+            "tokenId": "n5"
           }
         ]
       },
-      "reason": "每走一次都更新位置。红色停在6，蓝色停在2。两个位置可以相同。",
+      "reason": "每走一次都更新位置。红色停在5，蓝色停在5。两个位置可以相同。",
       "oracle": null
     },
     {
@@ -8287,14 +8284,14 @@
         "reading": 1,
         "motor": 2,
         "representation": "symbols",
-        "basis": "4轮，红右1蓝左2，仍求两个终点，不是实际相遇时刻倒推",
+        "basis": "红每次右移一格，蓝每次左移两格，按题目次数分别找终点。第8题走三次，两人同格。",
         "memory": 0,
         "calibration": "design-estimate",
         "workload": {
           "slots": 2
         }
       },
-      "prerequisites": "能计算4轮后各位置并接受同格",
+      "prerequisites": "能分别按两种步长走，知道两人也能停在同一格",
       "family": "L10",
       "stage": 3,
       "kind": "orderedPlacement",
@@ -8342,12 +8339,12 @@
           "p2"
         ]
       },
-      "reason": "检查横、竖和两条对角线。只补一颗，已有白子不能算成黑子。",
+      "reason": "检查横、竖和两条对角线。只补一颗，已有白子挡住的位置不能下。",
       "oracle": null
     },
     {
       "id": "explore-board-strategy-2",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 2,
@@ -8358,7 +8355,7 @@
         "memory": 0,
         "calibration": "design-estimate",
         "workload": {
-          "candidates": 7
+          "candidates": 6
         }
       },
       "prerequisites": "认黑白棋，理解横竖斜三连",
@@ -8369,15 +8366,16 @@
       "solution": {
         "kind": "multiSelect",
         "tokenIds": [
-          "p5"
+          "p2",
+          "p6"
         ]
       },
-      "reason": "检查横、竖和两条对角线。只补一颗，已有白子不能算成黑子。",
+      "reason": "检查横、竖和两条对角线。只补一颗，已有白子挡住的位置不能下。",
       "oracle": null
     },
     {
       "id": "explore-board-strategy-3",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 2,
@@ -8402,53 +8400,23 @@
           "p8"
         ]
       },
-      "reason": "检查横、竖和两条对角线。只补一颗，已有白子不能算成黑子。",
+      "reason": "检查横、竖和两条对角线。只补一颗，已有白子挡住的位置不能下。",
       "oracle": null
     },
     {
       "id": "explore-board-strategy-4",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 2,
         "reading": 1,
         "motor": 2,
         "representation": "pictures",
-        "basis": "同规则加白棋干扰，空位和三连要求不变",
+        "basis": "白棋实际堵住一条原本能连三的路线，还需检查其他方向的空位。",
         "memory": 0,
         "calibration": "design-estimate",
         "workload": {
-          "candidates": 6
-        }
-      },
-      "prerequisites": "知道白棋阻断黑棋三连",
-      "family": "L11",
-      "stage": 2,
-      "kind": "multiSelect",
-      "status": "correct",
-      "solution": {
-        "kind": "multiSelect",
-        "tokenIds": [
-          "p8"
-        ]
-      },
-      "reason": "检查横、竖和两条对角线。只补一颗，已有白子不能算成黑子。",
-      "oracle": null
-    },
-    {
-      "id": "explore-board-strategy-5",
-      "revision": 1,
-      "difficulty": {
-        "rules": 2,
-        "steps": 2,
-        "reading": 1,
-        "motor": 2,
-        "representation": "pictures",
-        "basis": "同规则加白棋干扰，空位和三连要求不变",
-        "memory": 0,
-        "calibration": "design-estimate",
-        "workload": {
-          "candidates": 6
+          "candidates": 5
         }
       },
       "prerequisites": "知道白棋阻断黑棋三连",
@@ -8462,23 +8430,23 @@
           "p6"
         ]
       },
-      "reason": "检查横、竖和两条对角线。只补一颗，已有白子不能算成黑子。",
+      "reason": "检查横、竖和两条对角线。只补一颗，已有白子挡住的位置不能下。",
       "oracle": null
     },
     {
-      "id": "explore-board-strategy-6",
-      "revision": 1,
+      "id": "explore-board-strategy-5",
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 2,
         "reading": 1,
         "motor": 2,
         "representation": "pictures",
-        "basis": "同规则加白棋干扰，空位和三连要求不变",
+        "basis": "白棋实际堵住一条原本能连三的路线，还需检查其他方向的空位。",
         "memory": 0,
         "calibration": "design-estimate",
         "workload": {
-          "candidates": 6
+          "candidates": 5
         }
       },
       "prerequisites": "知道白棋阻断黑棋三连",
@@ -8489,15 +8457,47 @@
       "solution": {
         "kind": "multiSelect",
         "tokenIds": [
+          "p2",
           "p7"
         ]
       },
-      "reason": "检查横、竖和两条对角线。只补一颗，已有白子不能算成黑子。",
+      "reason": "检查横、竖和两条对角线。只补一颗，已有白子挡住的位置不能下。",
+      "oracle": null
+    },
+    {
+      "id": "explore-board-strategy-6",
+      "revision": 2,
+      "difficulty": {
+        "rules": 2,
+        "steps": 2,
+        "reading": 1,
+        "motor": 2,
+        "representation": "pictures",
+        "basis": "白棋实际堵住一条原本能连三的路线，还需检查其他方向的空位。",
+        "memory": 0,
+        "calibration": "design-estimate",
+        "workload": {
+          "candidates": 5
+        }
+      },
+      "prerequisites": "知道白棋阻断黑棋三连",
+      "family": "L11",
+      "stage": 2,
+      "kind": "multiSelect",
+      "status": "correct",
+      "solution": {
+        "kind": "multiSelect",
+        "tokenIds": [
+          "p3",
+          "p8"
+        ]
+      },
+      "reason": "检查横、竖和两条对角线。只补一颗，已有白子挡住的位置不能下。",
       "oracle": null
     },
     {
       "id": "explore-board-strategy-7",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 3,
         "steps": 3,
@@ -8530,7 +8530,7 @@
     },
     {
       "id": "explore-board-strategy-8",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 3,
         "steps": 3,
@@ -8561,7 +8561,7 @@
     },
     {
       "id": "explore-board-strategy-9",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 3,
         "steps": 3,
@@ -8621,7 +8621,7 @@
           "e3": 1
         }
       },
-      "reason": "每个岛连出的桥数和数字相同，所有小岛也连成了一个整体。",
+      "reason": "每个岛的小格都填满了，没有多搭，所有岛也连在一起了。",
       "oracle": null
     },
     {
@@ -8654,7 +8654,7 @@
           "e3": 1
         }
       },
-      "reason": "每个岛连出的桥数和数字相同，所有小岛也连成了一个整体。",
+      "reason": "每个岛的小格都填满了，没有多搭，所有岛也连在一起了。",
       "oracle": null
     },
     {
@@ -8687,7 +8687,7 @@
           "e3": 1
         }
       },
-      "reason": "每个岛连出的桥数和数字相同，所有小岛也连成了一个整体。",
+      "reason": "每个岛的小格都填满了，没有多搭，所有岛也连在一起了。",
       "oracle": null
     },
     {
@@ -8720,7 +8720,7 @@
           "e3": 1
         }
       },
-      "reason": "每个岛连出的桥数和数字相同，所有小岛也连成了一个整体。",
+      "reason": "每个岛的小格都填满了，没有多搭，所有岛也连在一起了。",
       "oracle": null
     },
     {
@@ -8753,7 +8753,7 @@
           "e3": 1
         }
       },
-      "reason": "每个岛连出的桥数和数字相同，所有小岛也连成了一个整体。",
+      "reason": "每个岛的小格都填满了，没有多搭，所有岛也连在一起了。",
       "oracle": null
     },
     {
@@ -8786,7 +8786,7 @@
           "e3": 1
         }
       },
-      "reason": "每个岛连出的桥数和数字相同，所有小岛也连成了一个整体。",
+      "reason": "每个岛的小格都填满了，没有多搭，所有岛也连在一起了。",
       "oracle": null
     },
     {
@@ -8822,7 +8822,7 @@
           "middle": 0
         }
       },
-      "reason": "每个岛连出的桥数和数字相同，所有小岛也连成了一个整体。",
+      "reason": "每个岛的小格都填满了，没有多搭，所有岛也连在一起了。",
       "oracle": null
     },
     {
@@ -8858,7 +8858,7 @@
           "middle": 0
         }
       },
-      "reason": "每个岛连出的桥数和数字相同，所有小岛也连成了一个整体。",
+      "reason": "每个岛的小格都填满了，没有多搭，所有岛也连在一起了。",
       "oracle": null
     },
     {
@@ -8894,7 +8894,7 @@
           "middle": 0
         }
       },
-      "reason": "每个岛连出的桥数和数字相同，所有小岛也连成了一个整体。",
+      "reason": "每个岛的小格都填满了，没有多搭，所有岛也连在一起了。",
       "oracle": null
     },
     {
@@ -9784,14 +9784,14 @@
     },
     {
       "id": "explore-position-transform-1",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 2,
         "reading": 0,
         "motor": 1,
         "representation": "pictures",
-        "basis": "五格红标记右行2–4步，步进与循环边界；每步次数另记",
+        "basis": "五格红标记向右走三或四步，每题都要从右边绕回左边。",
         "memory": 0,
         "calibration": "design-estimate",
         "workload": {
@@ -9812,18 +9812,18 @@
     },
     {
       "id": "explore-position-transform-2",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 2,
         "reading": 0,
         "motor": 1,
         "representation": "pictures",
-        "basis": "五格红标记右行2–4步，步进与循环边界；每步次数另记",
+        "basis": "五格红标记向右走三或四步，每题都要从右边绕回左边。",
         "memory": 0,
         "calibration": "design-estimate",
         "workload": {
-          "candidates": 4
+          "candidates": 3
         }
       },
       "prerequisites": "能从起格移动并理解越边回到另一侧",
@@ -9847,7 +9847,7 @@
         "reading": 0,
         "motor": 1,
         "representation": "pictures",
-        "basis": "五格红标记右行2–4步，步进与循环边界；每步次数另记",
+        "basis": "五格红标记向右走三或四步，每题都要从右边绕回左边。",
         "memory": 0,
         "calibration": "design-estimate",
         "workload": {
@@ -9868,18 +9868,18 @@
     },
     {
       "id": "explore-position-transform-4",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 2,
         "reading": 0,
         "motor": 1,
         "representation": "pictures",
-        "basis": "红标记右行2–4步遇边反向，状态位置与方向都需更新",
+        "basis": "五格红标记向右走三或四步，每题都会碰边折返，需要跟住当前位置和方向。",
         "memory": 0,
         "calibration": "design-estimate",
         "workload": {
-          "candidates": 4
+          "candidates": 3
         }
       },
       "prerequisites": "能保存当前方向，理解碰边反向",
@@ -9896,14 +9896,14 @@
     },
     {
       "id": "explore-position-transform-5",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 2,
         "reading": 0,
         "motor": 1,
         "representation": "pictures",
-        "basis": "红标记右行2–4步遇边反向，状态位置与方向都需更新",
+        "basis": "五格红标记向右走三或四步，每题都会碰边折返，需要跟住当前位置和方向。",
         "memory": 0,
         "calibration": "design-estimate",
         "workload": {
@@ -9931,7 +9931,7 @@
         "reading": 0,
         "motor": 1,
         "representation": "pictures",
-        "basis": "红标记右行2–4步遇边反向，状态位置与方向都需更新",
+        "basis": "五格红标记向右走三或四步，每题都会碰边折返，需要跟住当前位置和方向。",
         "memory": 0,
         "calibration": "design-estimate",
         "workload": {
@@ -9952,7 +9952,7 @@
     },
     {
       "id": "explore-position-transform-7",
-      "revision": 2,
+      "revision": 3,
       "difficulty": {
         "rules": 3,
         "steps": 3,
@@ -9980,7 +9980,7 @@
     },
     {
       "id": "explore-position-transform-8",
-      "revision": 2,
+      "revision": 3,
       "difficulty": {
         "rules": 3,
         "steps": 3,
@@ -10008,7 +10008,7 @@
     },
     {
       "id": "explore-position-transform-9",
-      "revision": 2,
+      "revision": 3,
       "difficulty": {
         "rules": 3,
         "steps": 3,
@@ -10540,7 +10540,7 @@
     },
     {
       "id": "explore-recursive-composition-1",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 1,
@@ -10568,7 +10568,7 @@
     },
     {
       "id": "explore-recursive-composition-2",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 1,
@@ -10596,7 +10596,7 @@
     },
     {
       "id": "explore-recursive-composition-3",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 1,
@@ -10624,7 +10624,7 @@
     },
     {
       "id": "explore-recursive-composition-4",
-      "revision": 2,
+      "revision": 3,
       "difficulty": {
         "rules": 2,
         "steps": 2,
@@ -10649,15 +10649,15 @@
         "cells": {
           "cell-0": {
             "state": "filled",
-            "tokenId": "pattern-110001110"
+            "tokenId": "pattern-1101"
           },
           "cell-1": {
             "state": "filled",
-            "tokenId": "pattern-100101111"
+            "tokenId": "pattern-1010"
           },
           "cell-2": {
             "state": "filled",
-            "tokenId": "pattern-010100001"
+            "tokenId": "pattern-0111"
           }
         }
       },
@@ -10666,7 +10666,7 @@
     },
     {
       "id": "explore-recursive-composition-5",
-      "revision": 2,
+      "revision": 3,
       "difficulty": {
         "rules": 2,
         "steps": 2,
@@ -10691,15 +10691,15 @@
         "cells": {
           "cell-0": {
             "state": "filled",
-            "tokenId": "pattern-100101111"
+            "tokenId": "pattern-1010"
           },
           "cell-1": {
             "state": "filled",
-            "tokenId": "pattern-010100001"
+            "tokenId": "pattern-0111"
           },
           "cell-2": {
             "state": "filled",
-            "tokenId": "pattern-110001110"
+            "tokenId": "pattern-1101"
           }
         }
       },
@@ -10708,7 +10708,7 @@
     },
     {
       "id": "explore-recursive-composition-6",
-      "revision": 2,
+      "revision": 3,
       "difficulty": {
         "rules": 2,
         "steps": 2,
@@ -10733,15 +10733,15 @@
         "cells": {
           "cell-0": {
             "state": "filled",
-            "tokenId": "pattern-010100001"
+            "tokenId": "pattern-0111"
           },
           "cell-1": {
             "state": "filled",
-            "tokenId": "pattern-110001110"
+            "tokenId": "pattern-1101"
           },
           "cell-2": {
             "state": "filled",
-            "tokenId": "pattern-100101111"
+            "tokenId": "pattern-1010"
           }
         }
       },
@@ -10750,7 +10750,7 @@
     },
     {
       "id": "explore-recursive-composition-7",
-      "revision": 2,
+      "revision": 3,
       "difficulty": {
         "rules": 2,
         "steps": 3,
@@ -10775,27 +10775,27 @@
         "cells": {
           "cell-0": {
             "state": "filled",
-            "tokenId": "pattern-110001110"
+            "tokenId": "pattern-1101"
           },
           "cell-1": {
             "state": "filled",
-            "tokenId": "pattern-100101111"
+            "tokenId": "pattern-1010"
           },
           "cell-2": {
             "state": "filled",
-            "tokenId": "pattern-010000001"
+            "tokenId": "pattern-1111"
           },
           "cell-3": {
             "state": "filled",
-            "tokenId": "pattern-010100001"
+            "tokenId": "pattern-0111"
           },
           "cell-4": {
             "state": "filled",
-            "tokenId": "pattern-110101110"
+            "tokenId": "pattern-0101"
           },
           "cell-5": {
             "state": "filled",
-            "tokenId": "pattern-100001111"
+            "tokenId": "pattern-0010"
           }
         }
       },
@@ -10804,7 +10804,7 @@
     },
     {
       "id": "explore-recursive-composition-8",
-      "revision": 2,
+      "revision": 3,
       "difficulty": {
         "rules": 2,
         "steps": 3,
@@ -10829,27 +10829,27 @@
         "cells": {
           "cell-0": {
             "state": "filled",
-            "tokenId": "pattern-100101111"
+            "tokenId": "pattern-1010"
           },
           "cell-1": {
             "state": "filled",
-            "tokenId": "pattern-010100001"
+            "tokenId": "pattern-0111"
           },
           "cell-2": {
             "state": "filled",
-            "tokenId": "pattern-110011110"
+            "tokenId": "pattern-1001"
           },
           "cell-3": {
             "state": "filled",
-            "tokenId": "pattern-110001110"
+            "tokenId": "pattern-1101"
           },
           "cell-4": {
             "state": "filled",
-            "tokenId": "pattern-100111111"
+            "tokenId": "pattern-1110"
           },
           "cell-5": {
             "state": "filled",
-            "tokenId": "pattern-010110001"
+            "tokenId": "pattern-0011"
           }
         }
       },
@@ -10858,7 +10858,7 @@
     },
     {
       "id": "explore-recursive-composition-9",
-      "revision": 2,
+      "revision": 3,
       "difficulty": {
         "rules": 2,
         "steps": 3,
@@ -10883,27 +10883,27 @@
         "cells": {
           "cell-0": {
             "state": "filled",
-            "tokenId": "pattern-010100001"
+            "tokenId": "pattern-0111"
           },
           "cell-1": {
             "state": "filled",
-            "tokenId": "pattern-110001110"
+            "tokenId": "pattern-1101"
           },
           "cell-2": {
             "state": "filled",
-            "tokenId": "pattern-100100111"
+            "tokenId": "pattern-1000"
           },
           "cell-3": {
             "state": "filled",
-            "tokenId": "pattern-100101111"
+            "tokenId": "pattern-1010"
           },
           "cell-4": {
             "state": "filled",
-            "tokenId": "pattern-010101001"
+            "tokenId": "pattern-0101"
           },
           "cell-5": {
             "state": "filled",
-            "tokenId": "pattern-110000110"
+            "tokenId": "pattern-1111"
           }
         }
       },
@@ -10935,7 +10935,7 @@
         "kind": "singleChoice",
         "tokenId": "o0"
       },
-      "reason": "先把颜色读成数字，相加，满三就减三，再换回颜色。这里是编码规则，不是调颜料。",
+      "reason": "先把上下同一列的颜色读成数字相加，满三就减三，再换回颜色。这里是编码规则，不是调颜料。",
       "oracle": null
     },
     {
@@ -10963,7 +10963,7 @@
         "kind": "singleChoice",
         "tokenId": "o0"
       },
-      "reason": "先把颜色读成数字，相加，满三就减三，再换回颜色。这里是编码规则，不是调颜料。",
+      "reason": "先把上下同一列的颜色读成数字相加，满三就减三，再换回颜色。这里是编码规则，不是调颜料。",
       "oracle": null
     },
     {
@@ -10991,7 +10991,7 @@
         "kind": "singleChoice",
         "tokenId": "o0"
       },
-      "reason": "先把颜色读成数字，相加，满三就减三，再换回颜色。这里是编码规则，不是调颜料。",
+      "reason": "先把上下同一列的颜色读成数字相加，满三就减三，再换回颜色。这里是编码规则，不是调颜料。",
       "oracle": null
     },
     {
@@ -11019,7 +11019,7 @@
         "kind": "singleChoice",
         "tokenId": "o0"
       },
-      "reason": "先把颜色读成数字，相加，满三就减三，再换回颜色。这里是编码规则，不是调颜料。",
+      "reason": "先把上下同一列的颜色读成数字相加，满三就减三，再换回颜色。这里是编码规则，不是调颜料。",
       "oracle": null
     },
     {
@@ -11047,7 +11047,7 @@
         "kind": "singleChoice",
         "tokenId": "o0"
       },
-      "reason": "先把颜色读成数字，相加，满三就减三，再换回颜色。这里是编码规则，不是调颜料。",
+      "reason": "先把上下同一列的颜色读成数字相加，满三就减三，再换回颜色。这里是编码规则，不是调颜料。",
       "oracle": null
     },
     {
@@ -11075,7 +11075,7 @@
         "kind": "singleChoice",
         "tokenId": "o0"
       },
-      "reason": "先把颜色读成数字，相加，满三就减三，再换回颜色。这里是编码规则，不是调颜料。",
+      "reason": "先把上下同一列的颜色读成数字相加，满三就减三，再换回颜色。这里是编码规则，不是调颜料。",
       "oracle": null
     },
     {
@@ -11103,7 +11103,7 @@
         "kind": "singleChoice",
         "tokenId": "o0"
       },
-      "reason": "先把颜色读成数字，相加，满三就减三，再换回颜色。这里是编码规则，不是调颜料。",
+      "reason": "先把上下同一列的颜色读成数字相加，满三就减三，再换回颜色。这里是编码规则，不是调颜料。",
       "oracle": null
     },
     {
@@ -11131,7 +11131,7 @@
         "kind": "singleChoice",
         "tokenId": "o0"
       },
-      "reason": "先把颜色读成数字，相加，满三就减三，再换回颜色。这里是编码规则，不是调颜料。",
+      "reason": "先把上下同一列的颜色读成数字相加，满三就减三，再换回颜色。这里是编码规则，不是调颜料。",
       "oracle": null
     },
     {
@@ -11159,7 +11159,7 @@
         "kind": "singleChoice",
         "tokenId": "o0"
       },
-      "reason": "先把颜色读成数字，相加，满三就减三，再换回颜色。这里是编码规则，不是调颜料。",
+      "reason": "先把上下同一列的颜色读成数字相加，满三就减三，再换回颜色。这里是编码规则，不是调颜料。",
       "oracle": null
     },
     {
@@ -12184,21 +12184,21 @@
     },
     {
       "id": "explore-marker-invariants-7",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
-        "rules": 1,
-        "steps": 1,
+        "rules": 2,
+        "steps": 2,
         "reading": 0,
         "motor": 1,
         "representation": "pictures",
-        "basis": "点中心在外，一条关系判断；第三阶没有更复杂组合条件",
+        "basis": "在圆、方形或三角形组成的叠图里，分别检查黑点是否落在两个图形的内部。",
         "memory": 0,
         "calibration": "design-estimate",
         "workload": {
-          "candidates": 3
+          "candidates": 4
         }
       },
-      "prerequisites": "理解外部并忽略形状更换",
+      "prerequisites": "能辨认每个图形的内部，再找两种图形重叠的地方",
       "family": "G12",
       "stage": 3,
       "kind": "singleChoice",
@@ -12207,26 +12207,26 @@
         "kind": "singleChoice",
         "tokenId": "o0"
       },
-      "reason": "形状可以变，标记的作用不能变。要根据这次指定的任务判断。",
+      "reason": "小黑点要同时在黄色图形里面，也在蓝色图形里面。",
       "oracle": null
     },
     {
       "id": "explore-marker-invariants-8",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
-        "rules": 1,
-        "steps": 1,
+        "rules": 2,
+        "steps": 2,
         "reading": 0,
         "motor": 1,
         "representation": "pictures",
-        "basis": "点中心在外，一条关系判断；第三阶没有更复杂组合条件",
+        "basis": "在圆、方形或三角形组成的叠图里，分别检查黑点是否落在两个图形的内部。",
         "memory": 0,
         "calibration": "design-estimate",
         "workload": {
-          "candidates": 3
+          "candidates": 4
         }
       },
-      "prerequisites": "理解外部并忽略形状更换",
+      "prerequisites": "能辨认每个图形的内部，再找两种图形重叠的地方",
       "family": "G12",
       "stage": 3,
       "kind": "singleChoice",
@@ -12235,26 +12235,26 @@
         "kind": "singleChoice",
         "tokenId": "o0"
       },
-      "reason": "形状可以变，标记的作用不能变。要根据这次指定的任务判断。",
+      "reason": "小黑点要同时在黄色图形里面，也在蓝色图形里面。",
       "oracle": null
     },
     {
       "id": "explore-marker-invariants-9",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
-        "rules": 1,
-        "steps": 1,
+        "rules": 2,
+        "steps": 2,
         "reading": 0,
         "motor": 1,
         "representation": "pictures",
-        "basis": "点中心在外，一条关系判断；第三阶没有更复杂组合条件",
+        "basis": "在圆、方形或三角形组成的叠图里，分别检查黑点是否落在两个图形的内部。",
         "memory": 0,
         "calibration": "design-estimate",
         "workload": {
-          "candidates": 3
+          "candidates": 4
         }
       },
-      "prerequisites": "理解外部并忽略形状更换",
+      "prerequisites": "能辨认每个图形的内部，再找两种图形重叠的地方",
       "family": "G12",
       "stage": 3,
       "kind": "singleChoice",
@@ -12263,7 +12263,7 @@
         "kind": "singleChoice",
         "tokenId": "o0"
       },
-      "reason": "形状可以变，标记的作用不能变。要根据这次指定的任务判断。",
+      "reason": "小黑点要同时在黄色图形里面，也在蓝色图形里面。",
       "oracle": null
     },
     {
@@ -12680,7 +12680,7 @@
         "reading": 1,
         "motor": 2,
         "representation": "pictures",
-        "basis": "2–4条竖块盖住一层目标，覆盖目标且无重叠/越界；选择位置再核验",
+        "basis": "用2至4块竖拼板覆盖单层目标，检查空格和重叠。",
         "memory": 0,
         "calibration": "design-estimate",
         "workload": {
@@ -12688,7 +12688,7 @@
           "targetCells": 4
         }
       },
-      "prerequisites": "能选部件并以左上角放入目标格",
+      "prerequisites": "能选中拼板，点阴影格放下，再比较覆盖的位置",
       "family": "G14",
       "stage": 1,
       "kind": "construction",
@@ -12724,7 +12724,7 @@
         "reading": 1,
         "motor": 2,
         "representation": "pictures",
-        "basis": "2–4条竖块盖住一层目标，覆盖目标且无重叠/越界；选择位置再核验",
+        "basis": "用2至4块竖拼板覆盖单层目标，检查空格和重叠。",
         "memory": 0,
         "calibration": "design-estimate",
         "workload": {
@@ -12732,7 +12732,7 @@
           "targetCells": 6
         }
       },
-      "prerequisites": "能选部件并以左上角放入目标格",
+      "prerequisites": "能选中拼板，点阴影格放下，再比较覆盖的位置",
       "family": "G14",
       "stage": 1,
       "kind": "construction",
@@ -12775,7 +12775,7 @@
         "reading": 1,
         "motor": 2,
         "representation": "pictures",
-        "basis": "2–4条竖块盖住一层目标，覆盖目标且无重叠/越界；选择位置再核验",
+        "basis": "用2至4块竖拼板覆盖单层目标，检查空格和重叠。",
         "memory": 0,
         "calibration": "design-estimate",
         "workload": {
@@ -12783,7 +12783,7 @@
           "targetCells": 8
         }
       },
-      "prerequisites": "能选部件并以左上角放入目标格",
+      "prerequisites": "能选中拼板，点阴影格放下，再比较覆盖的位置",
       "family": "G14",
       "stage": 1,
       "kind": "construction",
@@ -12965,22 +12965,22 @@
     },
     {
       "id": "explore-shape-assembly-7",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 3,
         "reading": 1,
         "motor": 2,
         "representation": "pictures",
-        "basis": "4–8块填两层，先选层再放置核验；每块都在单层，不声称真正三维旋转",
+        "basis": "选择三块拼板的方向与位置，覆盖单层异形目标。",
         "memory": 0,
         "calibration": "design-estimate",
         "workload": {
-          "pieces": 4,
+          "pieces": 3,
           "targetCells": 8
         }
       },
-      "prerequisites": "理解两张层面切换与部件不能重叠",
+      "prerequisites": "能按缺口选拼板，旋转后放到目标位置",
       "family": "G14",
       "stage": 3,
       "kind": "construction",
@@ -13000,45 +13000,38 @@
             "x": 1,
             "y": 0,
             "z": 0,
-            "rotation": 0
+            "rotation": 2
           },
           {
             "pieceId": "p2",
-            "x": 0,
+            "x": 3,
             "y": 0,
-            "z": 1,
-            "rotation": 0
-          },
-          {
-            "pieceId": "p3",
-            "x": 1,
-            "y": 0,
-            "z": 1,
-            "rotation": 0
+            "z": 0,
+            "rotation": 1
           }
         ]
       },
-      "reason": "每个目标格都盖住了，没有重叠，也没有多出来的格子。",
+      "reason": "不同形状的部件恰好拼满，没有重叠，也没有盖到阴影外。",
       "oracle": null
     },
     {
       "id": "explore-shape-assembly-8",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 3,
         "reading": 1,
         "motor": 2,
         "representation": "pictures",
-        "basis": "4–8块填两层，先选层再放置核验；每块都在单层，不声称真正三维旋转",
+        "basis": "选择三块拼板的方向与位置，覆盖单层异形目标。",
         "memory": 0,
         "calibration": "design-estimate",
         "workload": {
-          "pieces": 6,
-          "targetCells": 12
+          "pieces": 3,
+          "targetCells": 9
         }
       },
-      "prerequisites": "理解两张层面切换与部件不能重叠",
+      "prerequisites": "能按缺口选拼板，旋转后放到目标位置",
       "family": "G14",
       "stage": 3,
       "kind": "construction",
@@ -13055,62 +13048,41 @@
           },
           {
             "pieceId": "p1",
-            "x": 1,
-            "y": 0,
+            "x": 0,
+            "y": 1,
             "z": 0,
-            "rotation": 0
+            "rotation": 3
           },
           {
             "pieceId": "p2",
             "x": 2,
-            "y": 0,
+            "y": 1,
             "z": 0,
-            "rotation": 0
-          },
-          {
-            "pieceId": "p3",
-            "x": 0,
-            "y": 0,
-            "z": 1,
-            "rotation": 0
-          },
-          {
-            "pieceId": "p4",
-            "x": 1,
-            "y": 0,
-            "z": 1,
-            "rotation": 0
-          },
-          {
-            "pieceId": "p5",
-            "x": 2,
-            "y": 0,
-            "z": 1,
-            "rotation": 0
+            "rotation": 1
           }
         ]
       },
-      "reason": "每个目标格都盖住了，没有重叠，也没有多出来的格子。",
+      "reason": "不同形状的部件恰好拼满，没有重叠，也没有盖到阴影外。",
       "oracle": null
     },
     {
       "id": "explore-shape-assembly-9",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
-        "rules": 2,
-        "steps": 3,
+        "rules": 3,
+        "steps": 4,
         "reading": 1,
         "motor": 2,
         "representation": "pictures",
-        "basis": "4–8块填两层，先选层再放置核验；每块都在单层，不声称真正三维旋转",
+        "basis": "三块拼板覆盖两层共六格，要区分层位、检查覆盖和重叠，并观察上层由下层托住的位置。",
         "memory": 0,
         "calibration": "design-estimate",
         "workload": {
-          "pieces": 8,
-          "targetCells": 16
+          "pieces": 3,
+          "targetCells": 6
         }
       },
-      "prerequisites": "理解两张层面切换与部件不能重叠",
+      "prerequisites": "能在两层之间切换，找到当前这一层要覆盖的位置",
       "family": "G14",
       "stage": 3,
       "kind": "construction",
@@ -13128,60 +13100,25 @@
           {
             "pieceId": "p1",
             "x": 1,
-            "y": 0,
+            "y": 1,
             "z": 0,
             "rotation": 0
           },
           {
             "pieceId": "p2",
-            "x": 2,
-            "y": 0,
-            "z": 0,
-            "rotation": 0
-          },
-          {
-            "pieceId": "p3",
-            "x": 3,
-            "y": 0,
-            "z": 0,
-            "rotation": 0
-          },
-          {
-            "pieceId": "p4",
-            "x": 0,
-            "y": 0,
-            "z": 1,
-            "rotation": 0
-          },
-          {
-            "pieceId": "p5",
             "x": 1,
             "y": 0,
             "z": 1,
-            "rotation": 0
-          },
-          {
-            "pieceId": "p6",
-            "x": 2,
-            "y": 0,
-            "z": 1,
-            "rotation": 0
-          },
-          {
-            "pieceId": "p7",
-            "x": 3,
-            "y": 0,
-            "z": 1,
-            "rotation": 0
+            "rotation": 1
           }
         ]
       },
-      "reason": "每个目标格都盖住了，没有重叠，也没有多出来的格子。",
+      "reason": "第一层铺满了四格，第二层右边两格也有拼板，上下对齐，每个格子只盖一次。",
       "oracle": null
     },
     {
       "id": "explore-fold-cut-1",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 3,
@@ -13652,7 +13589,7 @@
     },
     {
       "id": "explore-solid-views-count-7",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 3,
         "steps": 3,
@@ -13682,7 +13619,7 @@
     },
     {
       "id": "explore-solid-views-count-8",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 3,
         "steps": 3,
@@ -13713,7 +13650,7 @@
     },
     {
       "id": "explore-solid-views-count-9",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 3,
         "steps": 3,
@@ -13745,259 +13682,259 @@
     },
     {
       "id": "explore-relative-perspective-1",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 2,
         "reading": 2,
         "motor": 1,
         "representation": "pictures",
-        "basis": "人物朝向后确定自己的左/右，不是屏幕左/右",
+        "basis": "以小朋友的朝向为参照，区分箭头前方和相反方向。",
         "memory": 0,
         "calibration": "design-estimate",
         "workload": {
           "candidates": 4
         }
       },
-      "prerequisites": "理解箭头代表人物朝向及自己的左右",
+      "prerequisites": "能沿箭头找到小朋友的前方",
       "family": "G17",
       "stage": 1,
-      "kind": "singleChoice",
-      "status": "correct",
-      "solution": {
-        "kind": "singleChoice",
-        "tokenId": "o0"
-      },
-      "reason": "先和小朋友朝向同一边，再判断他的左和右。画面左边不一定是他的左边。",
-      "oracle": null
-    },
-    {
-      "id": "explore-relative-perspective-2",
-      "revision": 1,
-      "difficulty": {
-        "rules": 1,
-        "steps": 2,
-        "reading": 2,
-        "motor": 1,
-        "representation": "pictures",
-        "basis": "人物朝向后确定自己的左/右，不是屏幕左/右",
-        "memory": 0,
-        "calibration": "design-estimate",
-        "workload": {
-          "candidates": 4
-        }
-      },
-      "prerequisites": "理解箭头代表人物朝向及自己的左右",
-      "family": "G17",
-      "stage": 1,
-      "kind": "singleChoice",
-      "status": "correct",
-      "solution": {
-        "kind": "singleChoice",
-        "tokenId": "o1"
-      },
-      "reason": "先和小朋友朝向同一边，再判断他的左和右。画面左边不一定是他的左边。",
-      "oracle": null
-    },
-    {
-      "id": "explore-relative-perspective-3",
-      "revision": 1,
-      "difficulty": {
-        "rules": 1,
-        "steps": 2,
-        "reading": 2,
-        "motor": 1,
-        "representation": "pictures",
-        "basis": "人物朝向后确定自己的左/右，不是屏幕左/右",
-        "memory": 0,
-        "calibration": "design-estimate",
-        "workload": {
-          "candidates": 4
-        }
-      },
-      "prerequisites": "理解箭头代表人物朝向及自己的左右",
-      "family": "G17",
-      "stage": 1,
-      "kind": "singleChoice",
-      "status": "correct",
-      "solution": {
-        "kind": "singleChoice",
-        "tokenId": "o0"
-      },
-      "reason": "先和小朋友朝向同一边，再判断他的左和右。画面左边不一定是他的左边。",
-      "oracle": null
-    },
-    {
-      "id": "explore-relative-perspective-4",
-      "revision": 1,
-      "difficulty": {
-        "rules": 1,
-        "steps": 2,
-        "reading": 2,
-        "motor": 1,
-        "representation": "pictures",
-        "basis": "朝向变体改变，但同一左右参照规则",
-        "memory": 0,
-        "calibration": "design-estimate",
-        "workload": {
-          "candidates": 4
-        }
-      },
-      "prerequisites": "能随人物朝向转换左右参照",
-      "family": "G17",
-      "stage": 2,
-      "kind": "singleChoice",
-      "status": "correct",
-      "solution": {
-        "kind": "singleChoice",
-        "tokenId": "o0"
-      },
-      "reason": "先和小朋友朝向同一边，再判断他的左和右。画面左边不一定是他的左边。",
-      "oracle": null
-    },
-    {
-      "id": "explore-relative-perspective-5",
-      "revision": 1,
-      "difficulty": {
-        "rules": 1,
-        "steps": 2,
-        "reading": 2,
-        "motor": 1,
-        "representation": "pictures",
-        "basis": "朝向变体改变，但同一左右参照规则",
-        "memory": 0,
-        "calibration": "design-estimate",
-        "workload": {
-          "candidates": 4
-        }
-      },
-      "prerequisites": "能随人物朝向转换左右参照",
-      "family": "G17",
-      "stage": 2,
-      "kind": "singleChoice",
-      "status": "correct",
-      "solution": {
-        "kind": "singleChoice",
-        "tokenId": "o1"
-      },
-      "reason": "先和小朋友朝向同一边，再判断他的左和右。画面左边不一定是他的左边。",
-      "oracle": null
-    },
-    {
-      "id": "explore-relative-perspective-6",
-      "revision": 1,
-      "difficulty": {
-        "rules": 1,
-        "steps": 2,
-        "reading": 2,
-        "motor": 1,
-        "representation": "pictures",
-        "basis": "朝向变体改变，但同一左右参照规则",
-        "memory": 0,
-        "calibration": "design-estimate",
-        "workload": {
-          "candidates": 4
-        }
-      },
-      "prerequisites": "能随人物朝向转换左右参照",
-      "family": "G17",
-      "stage": 2,
-      "kind": "singleChoice",
-      "status": "correct",
-      "solution": {
-        "kind": "singleChoice",
-        "tokenId": "o0"
-      },
-      "reason": "先和小朋友朝向同一边，再判断他的左和右。画面左边不一定是他的左边。",
-      "oracle": null
-    },
-    {
-      "id": "explore-relative-perspective-7",
-      "revision": 1,
-      "difficulty": {
-        "rules": 1,
-        "steps": 2,
-        "reading": 2,
-        "motor": 1,
-        "representation": "pictures",
-        "basis": "改问前后，仍先确定人物朝向再判断一侧；不能机械判为三规则",
-        "memory": 0,
-        "calibration": "design-estimate",
-        "workload": {
-          "candidates": 4
-        }
-      },
-      "prerequisites": "理解人物前后并与画面上下区分",
-      "family": "G17",
-      "stage": 3,
       "kind": "singleChoice",
       "status": "correct",
       "solution": {
         "kind": "singleChoice",
         "tokenId": "o2"
       },
-      "reason": "先和小朋友朝向同一边，再判断他的左和右。画面左边不一定是他的左边。",
+      "reason": "箭头指向小朋友面朝的前方，相反方向是身后。红球在小朋友的前面。",
       "oracle": null
     },
     {
-      "id": "explore-relative-perspective-8",
-      "revision": 1,
+      "id": "explore-relative-perspective-2",
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 2,
         "reading": 2,
         "motor": 1,
         "representation": "pictures",
-        "basis": "改问前后，仍先确定人物朝向再判断一侧；不能机械判为三规则",
+        "basis": "以小朋友的朝向为参照，区分箭头前方和相反方向。",
         "memory": 0,
         "calibration": "design-estimate",
         "workload": {
           "candidates": 4
         }
       },
-      "prerequisites": "理解人物前后并与画面上下区分",
+      "prerequisites": "能沿箭头找到小朋友的前方",
       "family": "G17",
-      "stage": 3,
+      "stage": 1,
       "kind": "singleChoice",
       "status": "correct",
       "solution": {
         "kind": "singleChoice",
         "tokenId": "o3"
       },
-      "reason": "先和小朋友朝向同一边，再判断他的左和右。画面左边不一定是他的左边。",
+      "reason": "箭头指向小朋友面朝的前方，相反方向是身后。红球在小朋友的后面。",
       "oracle": null
     },
     {
-      "id": "explore-relative-perspective-9",
-      "revision": 1,
+      "id": "explore-relative-perspective-3",
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 2,
         "reading": 2,
         "motor": 1,
         "representation": "pictures",
-        "basis": "改问前后，仍先确定人物朝向再判断一侧；不能机械判为三规则",
+        "basis": "以小朋友的朝向为参照，区分箭头前方和相反方向。",
         "memory": 0,
         "calibration": "design-estimate",
         "workload": {
           "candidates": 4
         }
       },
-      "prerequisites": "理解人物前后并与画面上下区分",
+      "prerequisites": "能沿箭头找到小朋友的前方",
       "family": "G17",
-      "stage": 3,
+      "stage": 1,
       "kind": "singleChoice",
       "status": "correct",
       "solution": {
         "kind": "singleChoice",
         "tokenId": "o2"
       },
-      "reason": "先和小朋友朝向同一边，再判断他的左和右。画面左边不一定是他的左边。",
+      "reason": "箭头指向小朋友面朝的前方，相反方向是身后。红球在小朋友的前面。",
+      "oracle": null
+    },
+    {
+      "id": "explore-relative-perspective-4",
+      "revision": 2,
+      "difficulty": {
+        "rules": 1,
+        "steps": 2,
+        "reading": 2,
+        "motor": 1,
+        "representation": "pictures",
+        "basis": "小朋友面朝画面的上方或侧面，需要从小朋友的左右手判断球的位置。",
+        "memory": 0,
+        "calibration": "design-estimate",
+        "workload": {
+          "candidates": 4
+        }
+      },
+      "prerequisites": "能随人物朝向转换左右参照",
+      "family": "G17",
+      "stage": 2,
+      "kind": "singleChoice",
+      "status": "correct",
+      "solution": {
+        "kind": "singleChoice",
+        "tokenId": "o0"
+      },
+      "reason": "先和小朋友面朝同一个方向，再伸出左手和右手判断：红球在他的左边。",
+      "oracle": null
+    },
+    {
+      "id": "explore-relative-perspective-5",
+      "revision": 2,
+      "difficulty": {
+        "rules": 1,
+        "steps": 2,
+        "reading": 2,
+        "motor": 1,
+        "representation": "pictures",
+        "basis": "小朋友面朝画面的上方或侧面，需要从小朋友的左右手判断球的位置。",
+        "memory": 0,
+        "calibration": "design-estimate",
+        "workload": {
+          "candidates": 4
+        }
+      },
+      "prerequisites": "能随人物朝向转换左右参照",
+      "family": "G17",
+      "stage": 2,
+      "kind": "singleChoice",
+      "status": "correct",
+      "solution": {
+        "kind": "singleChoice",
+        "tokenId": "o0"
+      },
+      "reason": "先和小朋友面朝同一个方向，再伸出左手和右手判断：红球在他的左边。",
+      "oracle": null
+    },
+    {
+      "id": "explore-relative-perspective-6",
+      "revision": 2,
+      "difficulty": {
+        "rules": 1,
+        "steps": 2,
+        "reading": 2,
+        "motor": 1,
+        "representation": "pictures",
+        "basis": "小朋友面朝画面的上方或侧面，需要从小朋友的左右手判断球的位置。",
+        "memory": 0,
+        "calibration": "design-estimate",
+        "workload": {
+          "candidates": 4
+        }
+      },
+      "prerequisites": "能随人物朝向转换左右参照",
+      "family": "G17",
+      "stage": 2,
+      "kind": "singleChoice",
+      "status": "correct",
+      "solution": {
+        "kind": "singleChoice",
+        "tokenId": "o1"
+      },
+      "reason": "先和小朋友面朝同一个方向，再伸出左手和右手判断：红球在他的右边。",
+      "oracle": null
+    },
+    {
+      "id": "explore-relative-perspective-7",
+      "revision": 2,
+      "difficulty": {
+        "rules": 1,
+        "steps": 2,
+        "reading": 2,
+        "motor": 1,
+        "representation": "pictures",
+        "basis": "前两题面对面判断左右，末题把同一方法迁移到朝右的侧面视角。",
+        "memory": 0,
+        "calibration": "design-estimate",
+        "workload": {
+          "candidates": 4
+        }
+      },
+      "prerequisites": "能想象自己和迎面或侧身的小朋友面朝同一方向",
+      "family": "G17",
+      "stage": 3,
+      "kind": "singleChoice",
+      "status": "correct",
+      "solution": {
+        "kind": "singleChoice",
+        "tokenId": "o0"
+      },
+      "reason": "小朋友正对着你站。跟着他转一转，红球在他自己的左边。",
+      "oracle": null
+    },
+    {
+      "id": "explore-relative-perspective-8",
+      "revision": 2,
+      "difficulty": {
+        "rules": 1,
+        "steps": 2,
+        "reading": 2,
+        "motor": 1,
+        "representation": "pictures",
+        "basis": "前两题面对面判断左右，末题把同一方法迁移到朝右的侧面视角。",
+        "memory": 0,
+        "calibration": "design-estimate",
+        "workload": {
+          "candidates": 4
+        }
+      },
+      "prerequisites": "能想象自己和迎面或侧身的小朋友面朝同一方向",
+      "family": "G17",
+      "stage": 3,
+      "kind": "singleChoice",
+      "status": "correct",
+      "solution": {
+        "kind": "singleChoice",
+        "tokenId": "o1"
+      },
+      "reason": "小朋友正对着你站。跟着他转一转，红球在他自己的右边。",
+      "oracle": null
+    },
+    {
+      "id": "explore-relative-perspective-9",
+      "revision": 2,
+      "difficulty": {
+        "rules": 1,
+        "steps": 2,
+        "reading": 2,
+        "motor": 1,
+        "representation": "pictures",
+        "basis": "前两题面对面判断左右，末题把同一方法迁移到朝右的侧面视角。",
+        "memory": 0,
+        "calibration": "design-estimate",
+        "workload": {
+          "candidates": 4
+        }
+      },
+      "prerequisites": "能想象自己和迎面或侧身的小朋友面朝同一方向",
+      "family": "G17",
+      "stage": 3,
+      "kind": "singleChoice",
+      "status": "correct",
+      "solution": {
+        "kind": "singleChoice",
+        "tokenId": "o1"
+      },
+      "reason": "箭头向右，小朋友侧着站。跟着他转一转，红球在他自己的右边。",
       "oracle": null
     },
     {
       "id": "explore-cube-nets-1",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 2,
@@ -14208,7 +14145,7 @@
     },
     {
       "id": "explore-cube-nets-8",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 2,
@@ -14236,7 +14173,7 @@
     },
     {
       "id": "explore-cube-nets-9",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 2,
@@ -15891,21 +15828,21 @@
     },
     {
       "id": "explore-spatial-memory-7",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 1,
         "reading": 0,
         "motor": 2,
         "representation": "pictures",
-        "basis": "仍6位置，仅空白和对象排列变化；现代码没有更复杂推断规则",
-        "memory": 6,
+        "basis": "回填九格，包含两处空白。要把每个位置同原来的内容对应起来。",
+        "memory": 9,
         "calibration": "design-estimate",
         "workload": {
-          "editableCells": 6
+          "editableCells": 9
         }
       },
-      "prerequisites": "能按2×3保持位置与对象对应",
+      "prerequisites": "能按3×3方格记住图卡所在位置，并指出空白格",
       "family": "A02",
       "stage": 3,
       "kind": "gridPlacement",
@@ -15919,11 +15856,11 @@
           },
           "cell-1": {
             "state": "filled",
-            "tokenId": "cat"
+            "tokenId": "blank"
           },
           "cell-2": {
             "state": "filled",
-            "tokenId": "blank"
+            "tokenId": "bear"
           },
           "cell-3": {
             "state": "filled",
@@ -15931,11 +15868,23 @@
           },
           "cell-4": {
             "state": "filled",
-            "tokenId": "rabbit"
+            "tokenId": "apple"
           },
           "cell-5": {
             "state": "filled",
+            "tokenId": "blank"
+          },
+          "cell-6": {
+            "state": "filled",
             "tokenId": "cat"
+          },
+          "cell-7": {
+            "state": "filled",
+            "tokenId": "bear"
+          },
+          "cell-8": {
+            "state": "filled",
+            "tokenId": "dog"
           }
         }
       },
@@ -15944,21 +15893,21 @@
     },
     {
       "id": "explore-spatial-memory-8",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 1,
         "reading": 0,
         "motor": 2,
         "representation": "pictures",
-        "basis": "仍6位置，仅空白和对象排列变化；现代码没有更复杂推断规则",
-        "memory": 6,
+        "basis": "回填九格，包含两处空白。要把每个位置同原来的内容对应起来。",
+        "memory": 9,
         "calibration": "design-estimate",
         "workload": {
-          "editableCells": 6
+          "editableCells": 9
         }
       },
-      "prerequisites": "能按2×3保持位置与对象对应",
+      "prerequisites": "能按3×3方格记住图卡所在位置，并指出空白格",
       "family": "A02",
       "stage": 3,
       "kind": "gridPlacement",
@@ -15976,19 +15925,31 @@
           },
           "cell-2": {
             "state": "filled",
-            "tokenId": "dog"
+            "tokenId": "blank"
           },
           "cell-3": {
             "state": "filled",
-            "tokenId": "blank"
+            "tokenId": "apple"
           },
           "cell-4": {
             "state": "filled",
-            "tokenId": "cat"
+            "tokenId": "rabbit"
           },
           "cell-5": {
             "state": "filled",
-            "tokenId": "bear"
+            "tokenId": "cat"
+          },
+          "cell-6": {
+            "state": "filled",
+            "tokenId": "blank"
+          },
+          "cell-7": {
+            "state": "filled",
+            "tokenId": "dog"
+          },
+          "cell-8": {
+            "state": "filled",
+            "tokenId": "apple"
           }
         }
       },
@@ -15997,21 +15958,21 @@
     },
     {
       "id": "explore-spatial-memory-9",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 1,
         "reading": 0,
         "motor": 2,
         "representation": "pictures",
-        "basis": "仍6位置，仅空白和对象排列变化；现代码没有更复杂推断规则",
-        "memory": 6,
+        "basis": "回填九格，包含两处空白。要把每个位置同原来的内容对应起来。",
+        "memory": 9,
         "calibration": "design-estimate",
         "workload": {
-          "editableCells": 6
+          "editableCells": 9
         }
       },
-      "prerequisites": "能按2×3保持位置与对象对应",
+      "prerequisites": "能按3×3方格记住图卡所在位置，并指出空白格",
       "family": "A02",
       "stage": 3,
       "kind": "gridPlacement",
@@ -16029,19 +15990,31 @@
           },
           "cell-2": {
             "state": "filled",
-            "tokenId": "rabbit"
+            "tokenId": "apple"
           },
           "cell-3": {
             "state": "filled",
-            "tokenId": "cat"
+            "tokenId": "blank"
           },
           "cell-4": {
             "state": "filled",
-            "tokenId": "blank"
+            "tokenId": "cat"
           },
           "cell-5": {
             "state": "filled",
+            "tokenId": "bear"
+          },
+          "cell-6": {
+            "state": "filled",
             "tokenId": "dog"
+          },
+          "cell-7": {
+            "state": "filled",
+            "tokenId": "blank"
+          },
+          "cell-8": {
+            "state": "filled",
+            "tokenId": "rabbit"
           }
         }
       },
@@ -16308,7 +16281,7 @@
     },
     {
       "id": "explore-sequence-memory-7",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 2,
@@ -16357,7 +16330,7 @@
     },
     {
       "id": "explore-sequence-memory-8",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 2,
@@ -16381,7 +16354,7 @@
         "slots": [
           {
             "state": "filled",
-            "tokenId": "rabbit"
+            "tokenId": "orange"
           },
           {
             "state": "filled",
@@ -16406,7 +16379,7 @@
     },
     {
       "id": "explore-sequence-memory-9",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 2,
@@ -16430,11 +16403,11 @@
         "slots": [
           {
             "state": "filled",
-            "tokenId": "cat"
+            "tokenId": "rabbit"
           },
           {
             "state": "filled",
-            "tokenId": "rabbit"
+            "tokenId": "orange"
           },
           {
             "state": "filled",
@@ -17127,7 +17100,7 @@
     },
     {
       "id": "explore-attention-search-1",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 1,
@@ -17150,7 +17123,7 @@
         "kind": "multiSelect",
         "tokenIds": [
           "c0",
-          "c3",
+          "c2",
           "c6"
         ]
       },
@@ -17159,7 +17132,7 @@
     },
     {
       "id": "explore-attention-search-2",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 1,
@@ -17181,9 +17154,9 @@
       "solution": {
         "kind": "multiSelect",
         "tokenIds": [
-          "c0",
+          "c1",
           "c3",
-          "c6"
+          "c8"
         ]
       },
       "reason": "一行一行检查，选过的再对照规则看一次。这里不比谁快。",
@@ -17191,7 +17164,7 @@
     },
     {
       "id": "explore-attention-search-3",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 1,
@@ -17214,8 +17187,8 @@
         "kind": "multiSelect",
         "tokenIds": [
           "c0",
-          "c3",
-          "c6"
+          "c1",
+          "c8"
         ]
       },
       "reason": "一行一行检查，选过的再对照规则看一次。这里不比谁快。",
@@ -17223,7 +17196,7 @@
     },
     {
       "id": "explore-attention-search-4",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 2,
@@ -17245,8 +17218,8 @@
       "solution": {
         "kind": "multiSelect",
         "tokenIds": [
-          "c3",
-          "c12"
+          "c10",
+          "c11"
         ]
       },
       "reason": "一行一行检查，选过的再对照规则看一次。这里不比谁快。",
@@ -17254,7 +17227,7 @@
     },
     {
       "id": "explore-attention-search-5",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 2,
@@ -17276,8 +17249,8 @@
       "solution": {
         "kind": "multiSelect",
         "tokenIds": [
-          "c3",
-          "c12"
+          "c5",
+          "c11"
         ]
       },
       "reason": "一行一行检查，选过的再对照规则看一次。这里不比谁快。",
@@ -17285,7 +17258,7 @@
     },
     {
       "id": "explore-attention-search-6",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 2,
@@ -17307,8 +17280,8 @@
       "solution": {
         "kind": "multiSelect",
         "tokenIds": [
-          "c3",
-          "c12"
+          "c4",
+          "c10"
         ]
       },
       "reason": "一行一行检查，选过的再对照规则看一次。这里不比谁快。",
@@ -17316,7 +17289,7 @@
     },
     {
       "id": "explore-attention-search-7",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 2,
@@ -17338,10 +17311,10 @@
       "solution": {
         "kind": "multiSelect",
         "tokenIds": [
-          "c7",
-          "c8",
-          "c16",
-          "c17"
+          "c2",
+          "c6",
+          "c17",
+          "c20"
         ]
       },
       "reason": "一行一行检查，选过的再对照规则看一次。这里不比谁快。",
@@ -17349,7 +17322,7 @@
     },
     {
       "id": "explore-attention-search-8",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 2,
@@ -17371,10 +17344,10 @@
       "solution": {
         "kind": "multiSelect",
         "tokenIds": [
-          "c7",
-          "c8",
-          "c16",
-          "c17"
+          "c9",
+          "c11",
+          "c19",
+          "c20"
         ]
       },
       "reason": "一行一行检查，选过的再对照规则看一次。这里不比谁快。",
@@ -17382,7 +17355,7 @@
     },
     {
       "id": "explore-attention-search-9",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 2,
@@ -17405,9 +17378,9 @@
         "kind": "multiSelect",
         "tokenIds": [
           "c7",
-          "c8",
-          "c16",
-          "c17"
+          "c9",
+          "c19",
+          "c20"
         ]
       },
       "reason": "一行一行检查，选过的再对照规则看一次。这里不比谁快。",
@@ -17707,7 +17680,7 @@
         "reading": 1,
         "motor": 2,
         "representation": "symbols",
-        "basis": "2声音排序，可重听声卡；文字长短标签与声音配对",
+        "basis": "先区分相反的两拍顺序，再记住一个长音接两个短音的三拍节奏。",
         "memory": 2,
         "calibration": "design-estimate",
         "workload": {
@@ -17744,7 +17717,7 @@
         "reading": 1,
         "motor": 2,
         "representation": "symbols",
-        "basis": "2声音排序，可重听声卡；文字长短标签与声音配对",
+        "basis": "先区分相反的两拍顺序，再记住一个长音接两个短音的三拍节奏。",
         "memory": 2,
         "calibration": "design-estimate",
         "workload": {
@@ -17774,18 +17747,18 @@
     },
     {
       "id": "explore-sound-rhythm-3",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 1,
         "reading": 1,
         "motor": 2,
         "representation": "symbols",
-        "basis": "2声音排序，可重听声卡；文字长短标签与声音配对",
-        "memory": 2,
+        "basis": "先区分相反的两拍顺序，再记住一个长音接两个短音的三拍节奏。",
+        "memory": 3,
         "calibration": "design-estimate",
         "workload": {
-          "slots": 2
+          "slots": 3
         }
       },
       "prerequisites": "能区分长短两种合成音及相应声卡",
@@ -17802,7 +17775,11 @@
           },
           {
             "state": "filled",
-            "tokenId": "soft"
+            "tokenId": "bright"
+          },
+          {
+            "state": "filled",
+            "tokenId": "bright"
           }
         ]
       },
@@ -17893,7 +17870,7 @@
     },
     {
       "id": "explore-sound-rhythm-6",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 1,
@@ -17925,7 +17902,7 @@
           },
           {
             "state": "filled",
-            "tokenId": "soft"
+            "tokenId": "bright"
           }
         ]
       },
@@ -17934,7 +17911,7 @@
     },
     {
       "id": "explore-sound-rhythm-7",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 1,
@@ -17966,11 +17943,11 @@
           },
           {
             "state": "filled",
-            "tokenId": "soft"
+            "tokenId": "bright"
           },
           {
             "state": "filled",
-            "tokenId": "bright"
+            "tokenId": "soft"
           }
         ]
       },
@@ -18056,7 +18033,7 @@
     },
     {
       "id": "explore-relational-quantity-memory-1",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 2,
@@ -18080,20 +18057,20 @@
         "pairs": [
           [
             "rabbit",
-            "number0"
+            "number1"
           ],
           [
             "cat",
-            "number1"
+            "number0"
           ]
         ]
       },
-      "reason": "这次回忆的是朋友和数量的关系，不只是认出朋友。",
+      "reason": "想想每位朋友身边有几个圆片，再检查你连的数量。",
       "oracle": null
     },
     {
       "id": "explore-relational-quantity-memory-2",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 2,
@@ -18125,12 +18102,12 @@
           ]
         ]
       },
-      "reason": "这次回忆的是朋友和数量的关系，不只是认出朋友。",
+      "reason": "想想每位朋友身边有几个圆片，再检查你连的数量。",
       "oracle": null
     },
     {
       "id": "explore-relational-quantity-memory-3",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 2,
@@ -18154,20 +18131,20 @@
         "pairs": [
           [
             "rabbit",
-            "number0"
+            "number1"
           ],
           [
             "cat",
-            "number1"
+            "number0"
           ]
         ]
       },
-      "reason": "这次回忆的是朋友和数量的关系，不只是认出朋友。",
+      "reason": "想想每位朋友身边有几个圆片，再检查你连的数量。",
       "oracle": null
     },
     {
       "id": "explore-relational-quantity-memory-4",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 2,
@@ -18191,11 +18168,11 @@
         "pairs": [
           [
             "rabbit",
-            "number0"
+            "number1"
           ],
           [
             "cat",
-            "number1"
+            "number0"
           ],
           [
             "bear",
@@ -18203,12 +18180,12 @@
           ]
         ]
       },
-      "reason": "这次回忆的是朋友和数量的关系，不只是认出朋友。",
+      "reason": "想想每位朋友身边有几个圆片，再检查你连的数量。",
       "oracle": null
     },
     {
       "id": "explore-relational-quantity-memory-5",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 2,
@@ -18232,7 +18209,7 @@
         "pairs": [
           [
             "rabbit",
-            "number0"
+            "number2"
           ],
           [
             "cat",
@@ -18240,16 +18217,16 @@
           ],
           [
             "bear",
-            "number2"
+            "number0"
           ]
         ]
       },
-      "reason": "这次回忆的是朋友和数量的关系，不只是认出朋友。",
+      "reason": "想想每位朋友身边有几个圆片，再检查你连的数量。",
       "oracle": null
     },
     {
       "id": "explore-relational-quantity-memory-6",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 2,
@@ -18277,20 +18254,20 @@
           ],
           [
             "cat",
-            "number1"
+            "number2"
           ],
           [
             "bear",
-            "number2"
+            "number1"
           ]
         ]
       },
-      "reason": "这次回忆的是朋友和数量的关系，不只是认出朋友。",
+      "reason": "想想每位朋友身边有几个圆片，再检查你连的数量。",
       "oracle": null
     },
     {
       "id": "explore-relational-quantity-memory-7",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 2,
@@ -18314,28 +18291,28 @@
         "pairs": [
           [
             "rabbit",
-            "number0"
-          ],
-          [
-            "cat",
-            "number1"
-          ],
-          [
-            "bear",
             "number2"
           ],
           [
-            "dog",
+            "cat",
+            "number0"
+          ],
+          [
+            "bear",
             "number3"
+          ],
+          [
+            "dog",
+            "number1"
           ]
         ]
       },
-      "reason": "这次回忆的是朋友和数量的关系，不只是认出朋友。",
+      "reason": "想想每位朋友身边有几个圆片，再检查你连的数量。",
       "oracle": null
     },
     {
       "id": "explore-relational-quantity-memory-8",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 2,
@@ -18363,24 +18340,24 @@
           ],
           [
             "cat",
-            "number1"
+            "number3"
           ],
           [
             "bear",
-            "number2"
+            "number1"
           ],
           [
             "dog",
-            "number3"
+            "number2"
           ]
         ]
       },
-      "reason": "这次回忆的是朋友和数量的关系，不只是认出朋友。",
+      "reason": "想想每位朋友身边有几个圆片，再检查你连的数量。",
       "oracle": null
     },
     {
       "id": "explore-relational-quantity-memory-9",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 2,
@@ -18404,15 +18381,15 @@
         "pairs": [
           [
             "rabbit",
-            "number0"
-          ],
-          [
-            "cat",
             "number1"
           ],
           [
-            "bear",
+            "cat",
             "number2"
+          ],
+          [
+            "bear",
+            "number0"
           ],
           [
             "dog",
@@ -18420,7 +18397,7 @@
           ]
         ]
       },
-      "reason": "这次回忆的是朋友和数量的关系，不只是认出朋友。",
+      "reason": "想想每位朋友身边有几个圆片，再检查你连的数量。",
       "oracle": null
     },
     {
@@ -18659,14 +18636,14 @@
     },
     {
       "id": "explore-vocabulary-relations-7",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 3,
         "reading": 0,
         "motor": 2,
         "representation": "physical",
-        "basis": "听词表演、交换角色、迁移到句子，亲子观察而非识字测试",
+        "basis": "三题分别用盒盖演示开关、对齐纸带比较长短、用同一个动词描述不同物品。",
         "memory": 0,
         "calibration": "design-estimate",
         "workload": {
@@ -18691,14 +18668,14 @@
     },
     {
       "id": "explore-vocabulary-relations-8",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 3,
         "reading": 0,
         "motor": 2,
         "representation": "physical",
-        "basis": "听词表演、交换角色、迁移到句子，亲子观察而非识字测试",
+        "basis": "三题分别用盒盖演示开关、对齐纸带比较长短、用同一个动词描述不同物品。",
         "memory": 0,
         "calibration": "design-estimate",
         "workload": {
@@ -18723,14 +18700,14 @@
     },
     {
       "id": "explore-vocabulary-relations-9",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 3,
         "reading": 0,
         "motor": 2,
         "representation": "physical",
-        "basis": "听词表演、交换角色、迁移到句子，亲子观察而非识字测试",
+        "basis": "三题分别用盒盖演示开关、对齐纸带比较长短、用同一个动词描述不同物品。",
         "memory": 0,
         "calibration": "design-estimate",
         "workload": {
@@ -19205,7 +19182,7 @@
     },
     {
       "id": "explore-creative-explanation-1",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 3,
@@ -19237,7 +19214,7 @@
     },
     {
       "id": "explore-creative-explanation-2",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 4,
@@ -19269,7 +19246,7 @@
     },
     {
       "id": "explore-creative-explanation-3",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 3,
@@ -19385,7 +19362,7 @@
     },
     {
       "id": "explore-character-phonics-4",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 1,
@@ -19414,7 +19391,7 @@
     },
     {
       "id": "explore-character-phonics-5",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 1,
@@ -19443,7 +19420,7 @@
     },
     {
       "id": "explore-character-phonics-6",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 1,
@@ -19472,21 +19449,21 @@
     },
     {
       "id": "explore-character-phonics-7",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 2,
         "reading": 2,
         "motor": 2,
         "representation": "symbols",
-        "basis": "3组查表配对，字母及声调均核对；不声称无表独立拼读",
-        "memory": 0,
+        "basis": "先观察三组字音配对，遮住对照表后凭记忆连线。拼音卡可听读音。",
+        "memory": 3,
         "calibration": "design-estimate",
         "workload": {
           "pairs": 3
         }
       },
-      "prerequisites": "能查汉字拼音对照表并区分声母韵母声调",
+      "prerequisites": "能在短时观察中把三个字与相应拼音配成对",
       "family": "E05",
       "stage": 3,
       "kind": "matching",
@@ -19508,26 +19485,26 @@
           ]
         ]
       },
-      "reason": "字母和声调都要核对。识读不熟时，可以先由家长带着看对照表。",
+      "reason": "声母、韵母和声调都要核对。不熟时可以点“再看一次”回看对照表。",
       "oracle": null
     },
     {
       "id": "explore-character-phonics-8",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 2,
         "reading": 2,
         "motor": 2,
         "representation": "symbols",
-        "basis": "3组查表配对，字母及声调均核对；不声称无表独立拼读",
-        "memory": 0,
+        "basis": "先观察三组字音配对，遮住对照表后凭记忆连线。拼音卡可听读音。",
+        "memory": 3,
         "calibration": "design-estimate",
         "workload": {
           "pairs": 3
         }
       },
-      "prerequisites": "能查汉字拼音对照表并区分声母韵母声调",
+      "prerequisites": "能在短时观察中把三个字与相应拼音配成对",
       "family": "E05",
       "stage": 3,
       "kind": "matching",
@@ -19549,26 +19526,26 @@
           ]
         ]
       },
-      "reason": "字母和声调都要核对。识读不熟时，可以先由家长带着看对照表。",
+      "reason": "声母、韵母和声调都要核对。不熟时可以点“再看一次”回看对照表。",
       "oracle": null
     },
     {
       "id": "explore-character-phonics-9",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 2,
         "reading": 2,
         "motor": 2,
         "representation": "symbols",
-        "basis": "3组查表配对，字母及声调均核对；不声称无表独立拼读",
-        "memory": 0,
+        "basis": "先观察三组字音配对，遮住对照表后凭记忆连线。拼音卡可听读音。",
+        "memory": 3,
         "calibration": "design-estimate",
         "workload": {
           "pairs": 3
         }
       },
-      "prerequisites": "能查汉字拼音对照表并区分声母韵母声调",
+      "prerequisites": "能在短时观察中把三个字与相应拼音配成对",
       "family": "E05",
       "stage": 3,
       "kind": "matching",
@@ -19590,7 +19567,7 @@
           ]
         ]
       },
-      "reason": "字母和声调都要核对。识读不熟时，可以先由家长带着看对照表。",
+      "reason": "声母、韵母和声调都要核对。不熟时可以点“再看一次”回看对照表。",
       "oracle": null
     },
     {
@@ -19943,7 +19920,7 @@
     },
     {
       "id": "explore-bilingual-concepts-4",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 2,
@@ -19972,7 +19949,7 @@
     },
     {
       "id": "explore-bilingual-concepts-5",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 2,
@@ -20001,7 +19978,7 @@
     },
     {
       "id": "explore-bilingual-concepts-6",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 2,
@@ -20030,14 +20007,14 @@
     },
     {
       "id": "explore-bilingual-concepts-7",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 2,
         "reading": 0,
         "motor": 1,
         "representation": "pictures",
-        "basis": "听红长于蓝、蓝长于黄两比较，图上同时核对；语言与数理负荷分开记录",
+        "basis": "听两句英语比较三根色条，在图上分别核对每句提到的颜色和长度。",
         "memory": 2,
         "calibration": "design-estimate",
         "workload": {
@@ -20054,19 +20031,19 @@
         "kind": "singleChoice",
         "tokenId": "o0"
       },
-      "reason": "要让红条比蓝条长，蓝条又比黄条长，两条比较都成立。",
+      "reason": "红条比蓝条长，蓝条又比黄条长。两句都对上了。",
       "oracle": null
     },
     {
       "id": "explore-bilingual-concepts-8",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 2,
         "reading": 0,
         "motor": 1,
         "representation": "pictures",
-        "basis": "听红长于蓝、蓝长于黄两比较，图上同时核对；语言与数理负荷分开记录",
+        "basis": "听两句英语比较三根色条，在图上分别核对每句提到的颜色和长度。",
         "memory": 2,
         "calibration": "design-estimate",
         "workload": {
@@ -20083,19 +20060,19 @@
         "kind": "singleChoice",
         "tokenId": "o0"
       },
-      "reason": "要让红条比蓝条长，蓝条又比黄条长，两条比较都成立。",
+      "reason": "蓝条比黄条长，黄条又比红条长。两句都对上了。",
       "oracle": null
     },
     {
       "id": "explore-bilingual-concepts-9",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 2,
         "reading": 0,
         "motor": 1,
         "representation": "pictures",
-        "basis": "听红长于蓝、蓝长于黄两比较，图上同时核对；语言与数理负荷分开记录",
+        "basis": "听两句英语比较三根色条，在图上分别核对每句提到的颜色和长度。",
         "memory": 2,
         "calibration": "design-estimate",
         "workload": {
@@ -20112,7 +20089,7 @@
         "kind": "singleChoice",
         "tokenId": "o0"
       },
-      "reason": "要让红条比蓝条长，蓝条又比黄条长，两条比较都成立。",
+      "reason": "黄条比红条长，红条又比蓝条长。两句都对上了。",
       "oracle": null
     },
     {
@@ -20447,7 +20424,7 @@
     },
     {
       "id": "explore-everyday-classification-7",
-      "revision": 1,
+      "revision": 3,
       "difficulty": {
         "rules": 2,
         "steps": 3,
@@ -20479,7 +20456,7 @@
     },
     {
       "id": "explore-everyday-classification-8",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 3,
@@ -20511,7 +20488,7 @@
     },
     {
       "id": "explore-everyday-classification-9",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 3,
@@ -20801,21 +20778,21 @@
     },
     {
       "id": "explore-nature-growth-7",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 3,
         "reading": 0,
         "motor": 2,
         "representation": "physical",
-        "basis": "按日期摆记录、比变化、区分观察猜想；实物/图片依赖家长准备",
+        "basis": "第一天画下或记下所见。以后用同一株豆苗的带日期记录比较变化。",
         "memory": 0,
         "calibration": "design-estimate",
         "workload": {
           "observationItems": 3
         }
       },
-      "prerequisites": "能用有日期记录比较具体变化并区分猜想",
+      "prerequisites": "能指出豆苗的一处特点，可由家长代写日期。",
       "family": "P02",
       "stage": 3,
       "kind": "parentObservation",
@@ -20833,21 +20810,21 @@
     },
     {
       "id": "explore-nature-growth-8",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 3,
         "reading": 0,
         "motor": 2,
         "representation": "physical",
-        "basis": "按日期摆记录、比变化、区分观察猜想；实物/图片依赖家长准备",
+        "basis": "观察屏幕上的生长过程图，比较不同阶段，区分能看到的变化与猜想。",
         "memory": 0,
         "calibration": "design-estimate",
         "workload": {
           "observationItems": 3
         }
       },
-      "prerequisites": "能用有日期记录比较具体变化并区分猜想",
+      "prerequisites": "能在家长帮助下比较两个阶段的具体变化",
       "family": "P02",
       "stage": 3,
       "kind": "parentObservation",
@@ -20865,21 +20842,21 @@
     },
     {
       "id": "explore-nature-growth-9",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 3,
         "reading": 0,
         "motor": 2,
         "representation": "physical",
-        "basis": "按日期摆记录、比变化、区分观察猜想；实物/图片依赖家长准备",
+        "basis": "观察屏幕上的生长过程图，比较不同阶段，区分能看到的变化与猜想。",
         "memory": 0,
         "calibration": "design-estimate",
         "workload": {
           "observationItems": 3
         }
       },
-      "prerequisites": "能用有日期记录比较具体变化并区分猜想",
+      "prerequisites": "能在家长帮助下比较两个阶段的具体变化",
       "family": "P02",
       "stage": 3,
       "kind": "parentObservation",
@@ -21089,7 +21066,7 @@
     },
     {
       "id": "explore-culture-world-1",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 1,
         "steps": 3,
@@ -21121,14 +21098,14 @@
     },
     {
       "id": "explore-culture-world-2",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 3,
         "reading": 0,
         "motor": 1,
         "representation": "physical",
-        "basis": "第2项读两份活动介绍、找同异、不把一种做法推广所有人",
+        "basis": "看屏幕上汤圆和饺子两种团圆食物，比较做法，再说想了解什么。",
         "memory": 0,
         "calibration": "design-estimate",
         "workload": {
@@ -21153,21 +21130,21 @@
     },
     {
       "id": "explore-culture-world-3",
-      "revision": 1,
+      "revision": 3,
       "difficulty": {
         "rules": 2,
         "steps": 3,
         "reading": 0,
         "motor": 1,
         "representation": "physical",
-        "basis": "第3项地图定位、据图片描述一个特征、提可查问题；儿童不要求独立阅读资料",
+        "basis": "在儿童地图上找出照片或绘本所示地点，描述附近位置，再根据生活图像提出问题。",
         "memory": 0,
         "calibration": "design-estimate",
         "workload": {
           "observationItems": 3
         }
       },
-      "prerequisites": "能在儿童地图或绘本找到指定地点",
+      "prerequisites": "能在家长帮助下从图片中找到地名，再在地图上定位",
       "family": "P05",
       "stage": 1,
       "kind": "parentObservation",
@@ -21185,7 +21162,7 @@
     },
     {
       "id": "explore-fine-motor-action-1",
-      "revision": 1,
+      "revision": 2,
       "difficulty": {
         "rules": 2,
         "steps": 3,

@@ -10,16 +10,18 @@ export function pyramidActivity(index: number, base: number[][]): Activity {
     levels.push(upper);
     lower = upper;
   }
+  const cellCount = base[0].length, columns = Math.round(Math.sqrt(cellCount));
   const expected = levels.flat(), key = (bits: number[]) => bits.join('');
+  const flipIndices = cellCount === 4 ? [0, 1, 3] : [0, 4, 8];
   const candidates = [...new Map([
     ...expected,
-    ...[0, 4, 8].map(k => expected[expected.length - 1].map((bit, i) => i === k ? 1 - bit : bit)),
-    Array(9).fill(0),
+    ...flipIndices.map(k => expected[expected.length - 1].map((bit, i) => i === k ? 1 - bit : bit)),
+    Array(cellCount).fill(0),
   ].map(bits => [key(bits), bits])).values()];
   const choices = stableChoiceOrder(candidates, `pyramid-${index}`);
   const all = [...new Map([...choices, ...base].map(bits => [key(bits), bits])).values()];
   const id = (bits: number[]) => `pattern-${key(bits)}`;
-  const tokens = all.map((bits, i) => card(id(bits), i < choices.length ? `图${i + 1}` : `底图${i - choices.length + 1}`, mosaic(bits)));
+  const tokens = all.map((bits, i) => card(id(bits), i < choices.length ? `图${i + 1}` : `底图${i - choices.length + 1}`, mosaic(bits, columns)));
   const solution = expected.map(id);
   const a = fillGrid('G07', index, '从底层往上，把金字塔每一层都补完整。', tokens, 1, solution, solution.map((_, i) => i),
     '每一层的图都对上了。中间结果摆在图上，就可以逐层检查，不必全记在脑海里。',

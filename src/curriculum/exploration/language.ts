@@ -47,7 +47,7 @@ export const languageSets = [
         return choice('E05', i, '哪张字卡和上面的字完全一样？', chars[v], 0, '看清每一笔的位置，不能只看整体有点像。', picture([text(160, 175, chars[v][0], 100)], 320, 320)); if (s === 1) {
         const words = ['妈妈', '小猫', '大米'], answers = [['妈', '马', '木'], ['猫', '苗', '毛'], ['米', '木', '来']];
         return listen(choice('E05', i, '听词语，选出其中要找的字。', answers[v], 0, `这次听到的词语是${words[v]}，要找的是${answers[v][0]}。`), `${words[v]}。请找${answers[v][0]}。`);
-    } const pairs = [[['妈', 'mā'], ['马', 'mǎ'], ['米', 'mǐ']], [['八', 'bā'], ['爸', 'bà'], ['比', 'bǐ']], [['大', 'dà'], ['打', 'dǎ'], ['地', 'dì']]][v]; return matching('E05', i, '根据对照表，把汉字和拼音配起来。', pairs.map(([a], k) => card(`h${k}`, a)), pairs.map(([, b], k) => card(`p${k}`, b)), pairs.map((_, k) => [`h${k}`, `p${k}`]), '字母和声调都要核对。识读不熟时，可以先由家长带着看对照表。', grid(pairs.map(([a, b]) => `${a} ${b}`), 3)); })),
+    } const pairs = [[['妈', 'mā'], ['马', 'mǎ'], ['米', 'mǐ']], [['八', 'bā'], ['爸', 'bà'], ['比', 'bǐ']], [['大', 'dà'], ['打', 'dǎ'], ['地', 'dì']]][v]; const a = matching('E05', i, '先记住对照表里的字和拼音，遮住后把它们配起来。', pairs.map(([ch], k) => card(`h${k}`, ch)), pairs.map(([, py], k) => card(`p${k}`, py)), pairs.map((_, k) => [`h${k}`, `p${k}`]), '声母、韵母和声调都要核对。不熟时可以点“再看一次”回看对照表。', grid(pairs.map(([ch, py]) => `${ch} ${py}`), 3)); a.instruction = '先看对照表记一记，遮住后点右边的拼音听读音，和左边的汉字连起来。'; a.protocol = { kind: 'memory', observeMs: 10000, retainMs: 800, preview: ['h0', 'h1', 'h2'] }; return a; })),
     set('E06', '英语听一听', nine((i, s, v) => { const animals = familiar('rabbit', 'cat', 'dog'); if (s === 0)
         return listen(choice('E06', i, '听英语，选出对应的小动物。', animals.map(t => ({ label: t.label, drawing: picture([text(160, 160, t.label, 50)], 320, 320) })), v, '把听到的英语词和对应的小动物连起来。'), ['rabbit', 'cat', 'dog'][v], 'en-US'); if (s === 1) {
         const shapes = ['circle', 'square', 'triangle'], colors = ['red', 'blue', 'yellow'];
@@ -72,7 +72,7 @@ export const languageSets = [
         a.revision = 2;
         return a;
     })),
-    set('E08', '把自己的想法说出来', three(i => parent('E08', i, ['说明一个选择', '回答追问', '轮流问和听'][i], ['两件孩子熟悉的玩具'], i === 0 ? ['从两件玩具里选一件。', '说清楚选的是什么、想怎样玩。', '家长追问一个原因，孩子补充说明。'] : i === 1 ? ['描述一次想再去的活动，不必说姓名或住址。', '家长问“那里有什么吸引你”。', '孩子用具体经历回答，再补充一个细节。'] : ['家长先描述自己喜欢的一种玩法。', '孩子听完后问一个和内容有关的问题。', '交换角色，练习等对方说完再回答。'], ['回应的问题和话题相关', '能说出具体原因或细节', '能听完追问再补充']))),
+    set('E08', '把自己的想法说出来', three(i => parent('E08', i, ['说明一个选择', '回答追问', '轮流问和听'][i], i === 0 ? ['两件孩子熟悉的玩具'] : [], i === 0 ? ['从两件玩具里选一件。', '说清楚选的是什么、想怎样玩。', '家长追问一个原因，孩子补充说明。'] : i === 1 ? ['描述一次想再去的活动，不必说姓名或住址。', '家长问“那里有什么吸引你”。', '孩子用具体经历回答，再补充一个细节。'] : ['家长先描述自己喜欢的一种玩法。', '孩子听完后问一个和内容有关的问题。', '交换角色，练习等对方说完再回答。'], ['回应的问题和话题相关', '能说出具体原因或细节', '能听完追问再补充']))),
 ];
 // Listen-and-identify uses pictures, not written translations as the answer surface.
 for (const group of languageSets)

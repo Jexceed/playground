@@ -18,12 +18,13 @@ export function drawingFinish(drawing) {
 }
 
 function plainObject(o) {
-  const stroke='stroke="#344555" stroke-width="2.2" stroke-linejoin="round"';
+  const stroke=`stroke="${o.color??'#344555'}" stroke-width="${o.strokeWidth??2.2}" stroke-linejoin="round"`;
+  const opacity=o.fillOpacity!==undefined?` fill-opacity="${o.fillOpacity}"`:'';
   switch(o.kind) {
-    case 'circle': return `<circle cx="${o.x}" cy="${o.y}" r="${o.r}" fill="${o.fill}" ${stroke}/>`;
-    case 'rect': return `<rect x="${o.x}" y="${o.y}" width="${o.w}" height="${o.h}" fill="${o.fill}" ${stroke} ${o.dash?'stroke-dasharray="8 6"':''}/>`;
-    case 'line': return `<line x1="${o.x}" y1="${o.y}" x2="${o.x2}" y2="${o.y2}" ${o.color?stroke.replace('#344555',o.color):stroke} ${o.dash?'stroke-dasharray="8 6"':''}/>`;
-    case 'polygon': return `<polygon points="${o.points.map(p=>p.join(',')).join(' ')}" fill="${o.fill}" ${stroke}/>`;
+    case 'circle': return `<circle cx="${o.x}" cy="${o.y}" r="${o.r}" fill="${o.fill}"${opacity} ${stroke}/>`;
+    case 'rect': return `<rect x="${o.x}" y="${o.y}" width="${o.w}" height="${o.h}" fill="${o.fill}"${opacity} ${stroke} ${o.dash?'stroke-dasharray="8 6"':''}/>`;
+    case 'line': return `<line x1="${o.x}" y1="${o.y}" x2="${o.x2}" y2="${o.y2}" ${stroke} ${o.dash?'stroke-dasharray="8 6"':''}/>`;
+    case 'polygon': return `<polygon points="${o.points.map(p=>p.join(',')).join(' ')}" fill="${o.fill}"${opacity} ${stroke}/>`;
     case 'text': return `<text x="${o.x}" y="${o.y}" font-family="PingFang SC,Heiti SC,sans-serif" font-size="${o.size??28}" fill="${o.color??'#253243'}" text-anchor="middle">${esc(o.text)}</text>`;
     default: throw Error(o.kind);
   }
@@ -90,5 +91,6 @@ export function renderExplorationSvg(drawing, {discUris = {}, personUri} = {}) {
     const xs=points.map(p=>p[0]),ys=points.map(p=>p[1]),left=Math.min(...xs),right=Math.max(...xs),top=Math.min(...ys),bottom=Math.max(...ys),side=Math.max(right-left,bottom-top)+36;
     viewBox=[(left+right-side)/2,(top+bottom-side)/2,side,side].map(n=>Math.round(n*10000)/10000).join(' ');
   }
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${drawing.width}" height="${drawing.height}" viewBox="${viewBox}"><rect width="100%" height="100%" fill="#fffdf7"/>${defs?`<defs>${defs}</defs>`:''}${prefix}${body}${suffix}</svg>`;
+  const [vbX, vbY, vbW, vbH] = viewBox.split(' ');
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${drawing.width}" height="${drawing.height}" viewBox="${viewBox}"><rect x="${vbX}" y="${vbY}" width="${vbW}" height="${vbH}" fill="#fffdf7"/>${defs?`<defs>${defs}</defs>`:''}${prefix}${body}${suffix}</svg>`;
 }

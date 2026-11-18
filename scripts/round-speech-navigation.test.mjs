@@ -18,6 +18,7 @@ test("game surface reads the requested target round instead of only the current 
   assert.match(gameSource, /requestedRoundReadKey/);
   assert.match(gameSource, /lastRoundReadKey/);
   assert.match(gameSource, /const requestedRound = game\.rounds\[nextIndex\];/);
-  assert.match(gameSource, /speak\(enlightenmentPromptSpeech\(game\.id, requestedRound\)\);/);
+  assert.match(gameSource, /const phase = nextIndex === roundIndex \? observationPhase : initialObservationPhase\(requestedRound\);/);
+  assert.match(gameSource, /speak\(enlightenmentPromptSpeech\(game\.id, requestedRound, phase\)\);/);
 });
 

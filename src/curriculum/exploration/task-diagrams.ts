@@ -57,8 +57,13 @@ export function foldedPaperScene(folds: 1 | 2, holeRow: number, holeColumn: numb
     const firstCol = panel > 0 ? 2 : 0, firstRow = panel > 1 ? 2 : 0;
     const title = panel === folds ? `折好后（${2 ** folds}层）` : panel === 0 ? '左半向右折' : '上半向下折';
     objects.push(text(panel * 300 + 150, 26, title, 24));
+    if (panel > 0) objects.push(rect(x, y, size * 4, size * 4, 'none', true));
     for (let row = firstRow; row < 4; row++) for (let col = firstCol; col < 4; col++)
       objects.push(rect(x + col * size, y + row * size, size, size, panel ? '#e5eedb' : '#fffdf7'));
+    if (panel > 0) {
+      objects.push({ ...line(x + 2 * size, y + firstRow * size, x + 2 * size, y + 4 * size), color: '#c96f32', strokeWidth: 4.5 });
+      if (panel > 1) objects.push({ ...line(x + firstCol * size, y + 2 * size, x + 4 * size, y + 2 * size), color: '#c96f32', strokeWidth: 4.5 });
+    }
     if (panel === folds) {
       objects.push(circle(x + (holeColumn + .5) * size, y + (holeRow + .5) * size, 9, palette[0]));
     } else if (panel === 0) {

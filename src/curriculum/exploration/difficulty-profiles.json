@@ -49,8 +49,9 @@
         "reading": 1,
         "motor": 1,
         "representation": "pictures",
-        "prerequisites": "能点数并求3–5的差额",
-        "basis": "左5–7、右8–12，差额加大但仍一次求差"
+        "prerequisites": "能把两边一一配对并找出多余的圆点",
+        "basis": "从右侧8至12个圆点中拿走差额，使两边相等。",
+        "focus": "从较多的一边拿走多出的圆点"
       },
       {
         "rules": 2,
@@ -146,7 +147,8 @@
         "motor": 1,
         "representation": "pictures",
         "prerequisites": "理解10可作一个整体并会拆小数",
-        "basis": "8–10加5–7，建议路径为拆出凑十部分再加余数；不强制采用此策略"
+        "basis": "8加5、9加6、8加7都能拆出凑满十的部分，再加剩余个位。",
+        "focus": "把两堆凑成十再相加"
       },
       {
         "rules": 1,
@@ -154,8 +156,9 @@
         "reading": 1,
         "motor": 1,
         "representation": "pictures",
-        "prerequisites": "理解十和个位，能从十减去7–9",
-        "basis": "13–15减7–9，先算十减去减数再合个位；只评分最终数"
+        "prerequisites": "知道一根十连条有十块，可以先在长条上拿走几块",
+        "basis": "13减7、15减8、14减6。从十连条拿走6至8块，再加回原有的零散小块。",
+        "focus": "从十里拿，再加零散的小块"
       }
     ]
   },
@@ -602,8 +605,9 @@
         "reading": 2,
         "motor": 1,
         "representation": "symbols",
-        "prerequisites": "理解共同高于一人不能确定彼此高低",
-        "basis": "两条比较只能形成部分顺序，判断信息不足；不是4人的排序延长"
+        "prerequisites": "能说清每一对朋友中谁比谁高",
+        "basis": "两条线索有时能在中间的朋友处接起来，有时只知道两人都比第三人高。",
+        "focus": "判断两条身高线索能推出什么"
       }
     ]
   },
@@ -649,7 +653,8 @@
         "motor": 2,
         "representation": "pictures",
         "prerequisites": "能认起终点并沿相邻地点走",
-        "basis": "路径连贯到终点，2–4段链式路线，逐段动作另计"
+        "basis": "连通起点和终点的路有2至4段，另有一个死胡同，需要辨认分岔。",
+        "focus": "从有岔路的路口走到终点"
       },
       {
         "rules": 6,
@@ -826,8 +831,9 @@
         "reading": 1,
         "motor": 2,
         "representation": "symbols",
-        "prerequisites": "能计算4轮后各位置并接受同格",
-        "basis": "4轮，红右1蓝左2，仍求两个终点，不是实际相遇时刻倒推"
+        "prerequisites": "能分别按两种步长走，知道两人也能停在同一格",
+        "basis": "红每次右移一格，蓝每次左移两格，按题目次数分别找终点。第8题走三次，两人同格。",
+        "focus": "求两人走完后各自的位置"
       }
     ]
   },
@@ -850,7 +856,7 @@
         "motor": 2,
         "representation": "pictures",
         "prerequisites": "知道白棋阻断黑棋三连",
-        "basis": "同规则加白棋干扰，空位和三连要求不变"
+        "basis": "白棋实际堵住一条原本能连三的路线，还需检查其他方向的空位。"
       },
       {
         "rules": 3,
@@ -1001,7 +1007,7 @@
         "motor": 1,
         "representation": "pictures",
         "prerequisites": "能从起格移动并理解越边回到另一侧",
-        "basis": "五格红标记右行2–4步，步进与循环边界；每步次数另记"
+        "basis": "五格红标记向右走三或四步，每题都要从右边绕回左边。"
       },
       {
         "rules": 2,
@@ -1010,7 +1016,7 @@
         "motor": 1,
         "representation": "pictures",
         "prerequisites": "能保存当前方向，理解碰边反向",
-        "basis": "红标记右行2–4步遇边反向，状态位置与方向都需更新"
+        "basis": "五格红标记向右走三或四步，每题都会碰边折返，需要跟住当前位置和方向。"
       },
       {
         "rules": 3,
@@ -1269,13 +1275,14 @@
         "basis": "点中心在边界，一条关系判断；精确边界判读不等于高动作负荷"
       },
       {
-        "rules": 1,
-        "steps": 1,
+        "rules": 2,
+        "steps": 2,
         "reading": 0,
         "motor": 1,
         "representation": "pictures",
-        "prerequisites": "理解外部并忽略形状更换",
-        "basis": "点中心在外，一条关系判断；第三阶没有更复杂组合条件"
+        "prerequisites": "能辨认每个图形的内部，再找两种图形重叠的地方",
+        "basis": "在圆、方形或三角形组成的叠图里，分别检查黑点是否落在两个图形的内部。",
+        "focus": "找出同时落在两种图形里的点"
       }
     ]
   },
@@ -1320,8 +1327,9 @@
         "reading": 1,
         "motor": 2,
         "representation": "pictures",
-        "prerequisites": "能选部件并以左上角放入目标格",
-        "basis": "2–4条竖块盖住一层目标，覆盖目标且无重叠/越界；选择位置再核验"
+        "prerequisites": "能选中拼板，点阴影格放下，再比较覆盖的位置",
+        "basis": "用2至4块竖拼板覆盖单层目标，检查空格和重叠。",
+        "focus": "用竖拼板盖满一层"
       },
       {
         "rules": 2,
@@ -1338,8 +1346,9 @@
         "reading": 1,
         "motor": 2,
         "representation": "pictures",
-        "prerequisites": "理解两张层面切换与部件不能重叠",
-        "basis": "4–8块填两层，先选层再放置核验；每块都在单层，不声称真正三维旋转"
+        "prerequisites": "能按缺口选拼板，旋转后放到目标位置",
+        "basis": "选择三块拼板的方向与位置，覆盖单层异形目标。",
+        "focus": "合用三块拼板填阴影"
       }
     ]
   },
@@ -1416,8 +1425,9 @@
         "reading": 2,
         "motor": 1,
         "representation": "pictures",
-        "prerequisites": "理解箭头代表人物朝向及自己的左右",
-        "basis": "人物朝向后确定自己的左/右，不是屏幕左/右"
+        "prerequisites": "能沿箭头找到小朋友的前方",
+        "basis": "以小朋友的朝向为参照，区分箭头前方和相反方向。",
+        "focus": "认出小朋友身前和身后"
       },
       {
         "rules": 1,
@@ -1426,7 +1436,8 @@
         "motor": 1,
         "representation": "pictures",
         "prerequisites": "能随人物朝向转换左右参照",
-        "basis": "朝向变体改变，但同一左右参照规则"
+        "basis": "小朋友面朝画面的上方或侧面，需要从小朋友的左右手判断球的位置。",
+        "focus": "和小朋友朝同一方向找左右"
       },
       {
         "rules": 1,
@@ -1434,8 +1445,9 @@
         "reading": 2,
         "motor": 1,
         "representation": "pictures",
-        "prerequisites": "理解人物前后并与画面上下区分",
-        "basis": "改问前后，仍先确定人物朝向再判断一侧；不能机械判为三规则"
+        "prerequisites": "能想象自己和迎面或侧身的小朋友面朝同一方向",
+        "basis": "前两题面对面判断左右，末题把同一方法迁移到朝右的侧面视角。",
+        "focus": "换到人物的位置再判断左右"
       }
     ]
   },
@@ -1594,8 +1606,9 @@
         "reading": 0,
         "motor": 2,
         "representation": "pictures",
-        "prerequisites": "能按2×3保持位置与对象对应",
-        "basis": "仍6位置，仅空白和对象排列变化；现代码没有更复杂推断规则"
+        "prerequisites": "能按3×3方格记住图卡所在位置，并指出空白格",
+        "basis": "回填九格，包含两处空白。要把每个位置同原来的内容对应起来。",
+        "focus": "记住九格中的图卡与空白"
       }
     ]
   },
@@ -1769,7 +1782,8 @@
         "motor": 2,
         "representation": "symbols",
         "prerequisites": "能区分长短两种合成音及相应声卡",
-        "basis": "2声音排序，可重听声卡；文字长短标签与声音配对"
+        "basis": "先区分相反的两拍顺序，再记住一个长音接两个短音的三拍节奏。",
+        "focus": "记住短音和长音的先后"
       },
       {
         "rules": 1,
@@ -1978,8 +1992,9 @@
         "reading": 2,
         "motor": 2,
         "representation": "symbols",
-        "prerequisites": "能查汉字拼音对照表并区分声母韵母声调",
-        "basis": "3组查表配对，字母及声调均核对；不声称无表独立拼读"
+        "prerequisites": "能在短时观察中把三个字与相应拼音配成对",
+        "basis": "先观察三组字音配对，遮住对照表后凭记忆连线。拼音卡可听读音。",
+        "focus": "遮住对照表后把汉字与拼音配对"
       }
     ]
   },
@@ -2138,8 +2153,8 @@
         "reading": 0,
         "motor": 2,
         "representation": "physical",
-        "prerequisites": "能用有日期记录比较具体变化并区分猜想",
-        "basis": "按日期摆记录、比变化、区分观察猜想；实物/图片依赖家长准备"
+        "prerequisites": "能在家长帮助下比较两个阶段的具体变化",
+        "basis": "观察屏幕上的生长过程图，比较不同阶段，区分能看到的变化与猜想。"
       }
     ]
   },
@@ -2226,7 +2241,7 @@
         "motor": 1,
         "representation": "physical",
         "prerequisites": "能在成人读图介绍下比较两种做法",
-        "basis": "第2项读两份活动介绍、找同异、不把一种做法推广所有人"
+        "basis": "看屏幕上汤圆和饺子两种团圆食物，比较做法，再说想了解什么。"
       },
       {
         "rules": 2,
@@ -2234,8 +2249,9 @@
         "reading": 0,
         "motor": 1,
         "representation": "physical",
-        "prerequisites": "能在儿童地图或绘本找到指定地点",
-        "basis": "第3项地图定位、据图片描述一个特征、提可查问题；儿童不要求独立阅读资料"
+        "prerequisites": "能在家长帮助下从图片中找到地名，再在地图上定位",
+        "basis": "在儿童地图上找出照片或绘本所示地点，描述附近位置，再根据生活图像提出问题。",
+        "focus": "把生活图片中的地方放回地图"
       }
     ]
   },

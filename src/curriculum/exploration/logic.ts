@@ -1,12 +1,11 @@
-import { set, nine, choice, numeric, selection, ordered, fillGrid, parent, base, card, authoringSolutions, authoringNotes, matching } from './helpers';
-import { picture, text, grid, dots, symbol, panels, palette } from './draw';
+import { set, nine, choice, numeric, selection, ordered, fillGrid, parent, base, card, authoringSolutions, authoringNotes, matching, stableChoiceOrder } from './helpers';
+import { grid, dots, symbol, panels, palette } from './draw';
 import { tokens as familiar } from '../pilot/tokens';
 import type { Activity } from '../../domain/activity';
 import { cardFlipStepSpeech } from '../../domain/rule-play';
 import { BOARD_MOVE_COPY } from '../../domain/board-move';
 import { ISLAND_BRIDGE_COPY } from '../../domain/island-bridges';
 import type { Graph, RouteActivity } from '../../domain/advanced-activity';
-const equation = (value: string) => picture([text(300, 135, value, 35)]);
 function withBoardMove(a: Activity, board: string[], columns: 3 | 4): Activity {
     a.instruction = BOARD_MOVE_COPY.instruction;
     a.presentation = { evidence: { kind: 'boardMove', columns, goal: columns === 3 ? 'line3' : 'capture',
@@ -24,9 +23,30 @@ function routeSolution(a: RouteActivity) { const found: string[][] = []; functio
         walk(e.from === node ? e.to : e.from, [...path, e.id]);
 } } function visitedNodes(path: string[]) { let cur = a.start; return [cur, ...path.map(id => { const e = a.graph.edges.find(e => e.id === id)!; cur = e.from === cur ? e.to : e.from; return cur; })]; } walk(a.start, []); found.sort((x, y) => x.length - y.length); if (!found.length)
     throw Error(a.id + ' has no route'); return found[0]; }
+function compareHeights(index: number, variant: number): Activity {
+    const [rabbit, cat, dog] = familiar('rabbit', 'cat', 'dog').map(token => ({ ...token.image, alt: token.label }));
+    const chain = variant === 1;
+    const pairs = [
+        [[rabbit, cat], [dog, cat]],
+        [[cat, dog], [dog, rabbit]],
+        [[dog, rabbit], [cat, rabbit]],
+    ][variant];
+    const [[first, reference], [second, last]] = pairs;
+    const other = chain ? last.alt : second.alt;
+    const premise = `${first.alt}比${reference.alt}高，${second.alt}${chain ? '又' : '也'}比${last.alt}高`;
+    const prompt = chain ? `知道${premise}。${first.alt}和${other}比，谁更高？`
+        : `只知道${premise}。谁更高：${first.alt}还是${other}？`;
+    const reason = chain ? '小猫比小狗高，小狗又比小兔高，顺着小狗接起来就能确定小猫比小兔高。'
+        : '两位都比同一位高，不能确定这两位之间谁更高。还需要比较他们的线索。';
+    const round = choice('L03', index, prompt, [`${first.alt}更高`, `${other}更高`, '现在还不能确定'], chain ? 0 : 2, reason);
+    round.presentation = { evidence: { kind: 'visualComparison', panels: pairs.map(([taller, shorter], i) => ({
+        kind: 'heightPair', label: `线索 ${i + 1}`, taller, shorter,
+    })) } };
+    return round;
+}
 const featureCards = () => Array.from({ length: 9 }, (_, k) => card(`f${k}`, `${['红', '蓝', '黄'][Math.floor(k / 3)]}色${['圆形', '方形', '三角形'][k % 3]}`, symbol(k % 3, Math.floor(k / 3))));
 export const logicSets = [
-    set('L01', '分类换个角度', nine((i, s, v) => { const ts = featureCards(); const valid = ts.filter((_, k) => s === 0 ? Math.floor(k / 3) === v : s === 1 ? k % 3 === v : Math.floor(k / 3) !== v && k % 3 !== ((v + 1) % 3)); const clues = s === 0 ? [`选出${['红', '蓝', '黄'][v]}色。`] : s === 1 ? [`选出${['圆形', '方形', '三角形'][v]}。`] : [`颜色不是${['红', '蓝', '黄'][v]}色。`, `形状不是${['圆形', '方形', '三角形'][(v + 1) % 3]}。`]; return selection('L01', i, '按这次的规则整理图卡。', ts, valid.map(t => t.id), '每一张留下的图卡都符合这次的条件。换一个条件，原来同组的图卡也可能分开。', undefined, clues); })),
+    set('L01', '分类换个角度', nine((i, s, v) => { const raw = featureCards(); const valid = raw.filter((_, k) => s === 0 ? Math.floor(k / 3) === v : s === 1 ? k % 3 === v : Math.floor(k / 3) !== v && k % 3 !== ((v + 1) % 3)); const ts = stableChoiceOrder(raw, `L01:${i}`); const clues = s === 0 ? [`选出${['红', '蓝', '黄'][v]}色。`] : s === 1 ? [`选出${['圆形', '方形', '三角形'][v]}。`] : [`颜色不是${['红', '蓝', '黄'][v]}色。`, `形状不是${['圆形', '方形', '三角形'][(v + 1) % 3]}。`]; return selection('L01', i, '按这次的规则整理图卡。', ts, valid.map(t => t.id), '每一张留下的图卡都符合这次的条件。换一个条件，原来同组的图卡也可能分开。', undefined, clues); })),
     set('L02', '关系接力', nine((i, s, v) => {
         const count = 2 + s;
         const left = Array.from({ length: count }, (_, k) => card(`a${k}`, `左图${k + 1}`, s === 0 ? dots(k + 2 + v) : symbol(k % 3, v)));
@@ -48,10 +68,9 @@ export const logicSets = [
         }
         return a;
     })),
-    set('L03', '线索够不够', nine((i, s, v) => { if (s === 2) {
-        const ts = ['小兔', '小猫', '小狗'];
-        return choice('L03', i, `只知道${ts[v]}比${ts[(v + 1) % 3]}高，${ts[(v + 2) % 3]}也比${ts[(v + 1) % 3]}高。谁更高：${ts[v]}还是${ts[(v + 2) % 3]}？`, [`${ts[v]}更高`, `${ts[(v + 2) % 3]}更高`, '现在还不能确定'], 2, '两位都比同一位高，不能确定这两位之间谁更高。还需要比较他们的线索。', equation(`${ts[v]} > ${ts[(v + 1) % 3]} < ${ts[(v + 2) % 3]}`));
-    } const ts = familiar(...['rabbit', 'cat', 'dog', 'bear'].slice(0, 3 + s)); const seq = ts.map(t => t.id); const order = [...seq.slice(v), ...seq.slice(0, v)]; const clues = order.slice(0, -1).map((id, k) => `${ts.find(t => t.id === id)!.label}在${ts.find(t => t.id === order[k + 1])!.label}前面。`); const a = ordered('L03', i, '根据线索，把队伍排好。', ts, order, '把前后关系连起来，每一条线索都能在队伍里验证。', clues); if (a.kind === 'orderedPlacement')
+    set('L03', '线索够不够', nine((i, s, v) => {
+        if (s === 2) return compareHeights(i, v);
+        const ts = familiar(...['rabbit', 'cat', 'dog', 'bear'].slice(0, 3 + s)); const seq = ts.map(t => t.id); const order = [...seq.slice(v), ...seq.slice(0, v)]; const clues = order.slice(0, -1).map((id, k) => `${ts.find(t => t.id === id)!.label}在${ts.find(t => t.id === order[k + 1])!.label}前面。`); const a = ordered('L03', i, '根据线索，把队伍排好。', ts, order, '把前后关系连起来，每一条线索都能在队伍里验证。', clues); if (a.kind === 'orderedPlacement')
         a.evaluation = { kind: 'constraints', rules: order.slice(0, -1).map((id, k) => ({ type: 'before', first: id, second: order[k + 1], text: clues[k] })) }; return a; })),
     set('L04', '格子里的线索', nine((i, s, v) => { const n = 3, ts = familiar('rabbit', 'cat', 'dog'); const solution = Array.from({ length: 9 }, (_, k) => ts[(Math.floor(k / 3) + k % 3 + v) % 3].id); const blanks = s === 0 ? [2, 7] : s === 1 ? [1, 2, 3, 7] : [1, 2, 3, 5, 6, 7]; const a = fillGrid('L04', i, '每行每列都要有三位不同的朋友。', ts, n, solution, blanks, '逐行、逐列看，小兔、小猫、小狗都各出现一次。', ['每一行每种动物只有一张。', '每一列每种动物只有一张。']); if (a.kind === 'gridPlacement')
         a.evaluation = { kind: 'latin', tokenIds: ts.map(t => t.id) }; return a; })),
@@ -60,13 +79,16 @@ export const logicSets = [
         if (s !== 1) {
             const n = 3 + v;
             graph = { nodes: Array.from({ length: n }, (_, k) => ({ id: `n${k}`, label: String.fromCharCode(65 + k), x: 300 + Math.sin(k * 2 * Math.PI / n) * 180, y: 155 - Math.cos(k * 2 * Math.PI / n) * 105 })), edges: Array.from({ length: s === 0 ? n - 1 : n }, (_, k) => ({ id: `e${k}`, from: `n${k}`, to: `n${(k + 1) % n}` })) };
-            if (s === 2) {
+            if (s === 0) {
+                const branchFrom = v % 2 === 0 ? 0 : 1;
+                graph.nodes.push({ id: `n${n}`, label: String.fromCharCode(65 + n), x: branchFrom === 0 ? 110 : 510, y: 65 });
+                graph.edges.push({ id: 'spur', from: `n${branchFrom}`, to: `n${n}` });
+                end = `n${n - 1}`;
+            } else {
                 graph.edges.push({ id: 'parallel', from: 'n0', to: 'n1', curve: 48 });
                 requiredEdges = graph.edges.map(e => e.id);
                 end = 'n1';
             }
-            else
-                end = `n${n - 1}`;
         }
         else {
             const hub = [1, 3, 4][v], upper = [2, 1, 1][v], lower = [4, 4, 2][v], detour = [3, 2, 3][v];
@@ -94,7 +116,7 @@ export const logicSets = [
     set('L06', '先后有讲究', nine((i, s, v) => { const stories = [['取花盆', '放土和种子', '轻轻浇水', '等待发芽'], ['准备画纸', '画出轮廓', '给画涂色', '把画晾干'], ['洗净水果', '把水果切块', '把果块装碗', '一起品尝']]; const steps = stories[v].slice(0, 3 + (s > 0 ? 1 : 0)); const ts = steps.map((t, k) => card(`step${k}`, t)); const clues = steps.slice(1).map((t, k) => `先${steps[k]}，再${t}。`); const a = ordered('L06', i, s === 2 ? '这次顺序弄乱了，请按先后条件修好。' : '按步骤做事，哪些事要先做？', ts, ts.map(t => t.id), '每一步的准备都已经完成，再做下一步。请再解释一条不能颠倒的关系。', clues, s === 2 ? grid([...steps].reverse(), steps.length) : undefined); if (v === 0) a.revision = 2; if (a.kind === 'orderedPlacement')
         a.evaluation = { kind: 'constraints', rules: ts.slice(1).map((t, k) => ({ type: 'before', first: ts[k].id, second: t.id, text: clues[k] })) }; return a; })),
     set('L07', '证据说明什么', nine((i, s, v) => { if (s === 2) {
-        const a = parent('L07', i, ['悄悄选一张图卡，用两条线索让家长来找。', '先给颜色线索，再补形状。家长能找到吗？', '先给形状线索，再补颜色。家长能找到吗？'][v], ['屏幕上的九张颜色形状卡'], ['家长先转身。孩子看图在心里选一张，九张都留在屏幕上，不指给家长看。', v === 0 ? '家长转回来后，孩子说一条颜色线索和一条形状线索，请家长找图卡。' : v === 1 ? '先只说颜色，请家长指出所有可能的图卡；再补上形状线索。' : '先只说形状，请家长指出所有可能的图卡；再补上颜色线索。', '最后公布选中的图卡。少说一条线索时，还有哪几张也有可能？'], ['能说出观察到的事实', '能让两条线索共同确定目标', '能解释少一条线索时为什么可能有多个答案']); a.revision = 2; return a; } const ts = featureCards(); const expected = ts.filter((_, k) => Math.floor(k / 3) === v && (s === 0 || k % 3 !== 1)).map(t => t.id); return selection('L07', i, '哪些图卡仍然有可能藏在盒子里？', ts, expected, '没有被线索排除的都还是可能的。线索不够时，不急着选唯一答案。', undefined, [`它的颜色是${['红', '蓝', '黄'][v]}色。`, ...(s === 1 ? ['它不是方形。'] : [])]); })),
+        const a = parent('L07', i, ['悄悄选一张图卡，用两条线索让家长来找。', '先给颜色线索，再补形状。家长能找到吗？', '先给形状线索，再补颜色。家长能找到吗？'][v], ['屏幕上的九张颜色形状卡'], ['家长先转身。孩子看图在心里选一张，九张都留在屏幕上，不指给家长看。', v === 0 ? '家长转回来后，孩子说一条颜色线索和一条形状线索，请家长找图卡。' : v === 1 ? '先只说颜色，请家长指出所有可能的图卡；再补上形状线索。' : '先只说形状，请家长指出所有可能的图卡；再补上颜色线索。', '最后公布选中的图卡。少说一条线索时，还有哪几张也有可能？'], ['能说出观察到的事实', '能让两条线索共同确定目标', '能解释少一条线索时为什么可能有多个答案']); a.revision = 2; return a; } const raw = featureCards(); const expected = raw.filter((_, k) => Math.floor(k / 3) === v && (s === 0 || k % 3 !== 1)).map(t => t.id); const ts = stableChoiceOrder(raw, `L07:${i}`); return selection('L07', i, '哪些图卡仍然有可能藏在盒子里？', ts, expected, '没有被线索排除的都还是可能的。线索不够时，不急着选唯一答案。', undefined, [`它的颜色是${['红', '蓝', '黄'][v]}色。`, ...(s === 1 ? ['它不是方形。'] : [])]); })),
     set('L08', '学会新规则', nine((i, s, v) => {
         const start = 2 + v, add = 2 + s, mult = s === 2 ? 2 : 1, answer = (start + add) * mult;
         const clues = [`添上${add}个圆片。`, ...(s === 2 ? ['再摆一份一样多的圆片。'] : [])];
@@ -136,7 +158,7 @@ export const logicSets = [
         a.revision = 2;
         return a;
     })),
-    set('L10', '两位朋友走格子', nine((i, s, v) => { const a = 1 + v, b = 9 + v, steps = 2 + s, redStep = 1, blueStep = s === 0 ? 1 : 2, red = a + steps * redStep, blue = b - steps * blueStep; const ts = Array.from({ length: 12 }, (_, k) => card(`n${k}`, k)); const result = ordered('L10', i, '走完以后，两位朋友分别停在哪个数字？', ts, [`n${red}`, `n${blue}`], `每走一次都更新位置。红色停在${red}，蓝色停在${blue}。两个位置可以相同。`, [`红色从${a}出发，每次向右走${redStep}格。`, `蓝色从${b}出发，每次向左走${blueStep}格。`, `同时走${steps}次。先摆红色位置，再摆蓝色位置。`], grid(Array.from({ length: 12 }, (_, k) => k), 12)); if (result.kind === 'orderedPlacement')
+    set('L10', '两位朋友走格子', nine((i, s, v) => { const meetSame = s === 2 && v === 1; const a = meetSame ? 2 : 1 + v, b = meetSame ? 11 : 9 + v, steps = meetSame ? 3 : 2 + s, redStep = 1, blueStep = s === 0 ? 1 : 2, red = a + steps * redStep, blue = b - steps * blueStep; const ts = Array.from({ length: 12 }, (_, k) => card(`n${k}`, k)); const result = ordered('L10', i, '走完以后，两位朋友分别停在哪个数字？', ts, [`n${red}`, `n${blue}`], `每走一次都更新位置。红色停在${red}，蓝色停在${blue}。两个位置可以相同。`, [`红色从${a}出发，每次向右走${redStep}格。`, `蓝色从${b}出发，每次向左走${blueStep}格。`, `同时走${steps}次。先摆红色位置，再摆蓝色位置。`], grid(Array.from({ length: 12 }, (_, k) => k), 12)); if (result.kind === 'orderedPlacement')
         result.tokenUse = 'unlimited';
         result.instruction = '选一位朋友，再点数字格，把它放到走完的位置。';
         result.presentation = { evidence: { kind: 'numberWalk', min: 0, max: 11, turns: steps, actors: [
@@ -174,8 +196,24 @@ export const logicSets = [
         if (wrong !== undefined)
             candidates.push(wrong);
         const a = selection('L11', i, '下一颗黑子放在哪里，能夹住最多白子？', candidates.map(k => card(`p${k}`, `第${k + 1}格`, grid(b.map((x, j) => j === k ? '●' : x), 4))), candidates.filter(k => captures(k) === max).map(k => `p${k}`), `沿横、竖和斜线检查，两端是黑子、中间连续白子才算夹住。这题最多夹住${max}颗，并列最多的都可以选。`, grid(b.map((n, k) => n || String(k + 1)), 4), ['横着、竖着、斜着都可以夹。每个方向夹到的白子合起来数。', '新落下的黑子和已有黑子之间，要连续夹着白子。', '空格会把夹子断开。', '找出所有夹住最多白子的落点。']); a.revision = 2; return withBoardMove(a, b, 4);
-    } const board = Array(9).fill(''); const lineSets = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]]; const target = lineSets[(s * 2 + v) % lineSets.length]; board[target[0]] = '●'; board[target[1]] = '●'; if (s > 0)
-        board[(target[2] + 1) % 9] = board[(target[2] + 1) % 9] || '○'; const open = board.flatMap((n, k) => n === '' ? [k] : []); const winners = open.filter(k => lineSets.some(xs => xs.every(x => x === k || board[x] === '●'))); return withBoardMove(selection('L11', i, '在哪些空格补一颗黑子，能连成三颗黑子？', open.map(k => card(`p${k}`, `第${k + 1}格`, grid(board.map((x, j) => j === k ? '●' : x), 3))), winners.map(k => `p${k}`), '检查横、竖和两条对角线。只补一颗，已有白子不能算成黑子。', grid(board.map((n, k) => n || String(k + 1)), 3), ['横、竖或对角线，三颗黑子连成一条直线。', '把所有能达成的空格都找出来。']), board, 3); })),
+    }
+    const board = Array(9).fill('');
+    const lineSets = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]];
+    if (s === 0) {
+        const blacks = [[0, 1], [0, 1, 3], [0, 4]][v];
+        blacks.forEach(idx => { board[idx] = '●'; });
+    } else {
+        const setups = [
+            { blacks: [0, 1, 3], whites: [2] },
+            { blacks: [0, 4, 1], whites: [8] },
+            { blacks: [2, 4, 5], whites: [6] },
+        ][v];
+        setups.blacks.forEach(idx => { board[idx] = '●'; });
+        setups.whites.forEach(idx => { board[idx] = '○'; });
+    }
+    const open = board.flatMap((n, k) => n === '' ? [k] : []);
+    const winners = open.filter(k => lineSets.some(xs => xs.every(x => x === k || board[x] === '●')));
+    return withBoardMove(selection('L11', i, '在哪些空格补一颗黑子，能连成三颗黑子？', open.map(k => card(`p${k}`, `第${k + 1}格`, grid(board.map((x, j) => j === k ? '●' : x), 3))), winners.map(k => `p${k}`), '检查横、竖和两条对角线。只补一颗，已有白子挡住的位置不能下。', grid(board.map((n, k) => n || String(k + 1)), 3), ['横、竖或对角线，三颗黑子连成一条直线。', ...(s === 1 ? ['已有白子挡住的一排连不成三颗黑子。'] : []), '把所有能达成的空格都找出来。']), board, 3); })),
     set('L12', '小岛连桥', nine((i, s, v) => { const count = s === 2 ? 6 : 4; const nodes = Array.from({ length: count }, (_, k) => ({ id: `n${k}`, label: String.fromCharCode(65 + k), x: count === 4 ? [130, 470, 470, 130][k] : [90, 300, 510, 510, 300, 90][k], y: count === 4 ? [65, 65, 235, 235][k] : [65, 65, 65, 235, 235, 235][k], degree: 0 })); const edges = nodes.map((n, k) => ({ id: `e${k}`, from: n.id, to: nodes[(k + 1) % count].id, max: 2, fixed: s === 0 && k < 2 ? 1 : s === 1 && k === v ? 1 : 0 })); if (count === 6)
         edges.push({ id: 'middle', from: 'n1', to: 'n4', max: 2, fixed: 0 }); const counts = Object.fromEntries(edges.map((e, k) => [e.id, k === v ? 2 : e.id === 'middle' ? 0 : 1])); for (const e of edges) {
         nodes.find(n => n.id === e.from)!.degree += counts[e.id];

@@ -5,6 +5,7 @@ export type Primitive = {
     y: number;
     r: number;
     fill: string;
+    fillOpacity?: number;
 } | {
     kind: "rect";
     x: number;
@@ -12,6 +13,8 @@ export type Primitive = {
     w: number;
     h: number;
     fill: string;
+    fillOpacity?: number;
+    strokeWidth?: number;
     dash?: boolean;
 } | {
     kind: "line";
@@ -20,6 +23,7 @@ export type Primitive = {
     x2: number;
     y2: number;
     color?: string;
+    strokeWidth?: number;
     dash?: boolean;
 } | {
     kind: "polygon";
@@ -28,6 +32,7 @@ export type Primitive = {
         number
     ][];
     fill: string;
+    fillOpacity?: number;
 } | {
     kind: "text";
     x: number;
