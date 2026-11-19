@@ -514,6 +514,7 @@ button:focus-visible {
 }
 
 .world-button.collapsed {
+  align-self: start;
   min-height: 40px;
   border-color: #eadfce;
   background: rgba(255, 253, 247, 0.72);
@@ -626,9 +627,8 @@ button:focus-visible {
 
 .world-button.expanded small {
   grid-area: summary;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+  white-space: normal;
+  line-height: 1.3;
 }
 
 .world-button em {
@@ -743,6 +743,32 @@ button:focus-visible {
   background: rgba(255, 253, 247, 0.88);
   font-weight: 800;
   line-height: 1.15;
+}
+
+.empty-chip-box {
+  display: grid;
+  align-content: start;
+  gap: 8px;
+}
+
+.empty-chip-box .empty-chip {
+  color: var(--muted);
+  font-size: 0.84rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.empty-search-reset {
+  justify-self: start;
+  min-height: 44px;
+  padding: 5px 10px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  color: var(--ink);
+  background: #fffdf7;
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 .game-chip > span {
@@ -3018,14 +3044,20 @@ button:focus-visible {
 .world-icon-memory::before { content:'忆'; }
 .world-icon-language::before { content:'语'; }
 .world-icon-life::before { content:'探'; }
-@media(max-width:760px){.single-choice .activity-token-image { width:95px; height:95px; }.activity-illustration { max-height:230px; }.graph-controls button { flex:1 1 40%; }.parent-activity label { display:flex; }.world-switcher { grid-template-columns:repeat(3,minmax(0,1fr)); }.world-button.expanded small { display:none; }.world-button.expanded { min-height:52px; }.world-button strong { font-size:13px; }.world-button.expanded >span:not(.world-icon) {display:flex;flex-direction:column;align-items:flex-start;gap:2px;}.world-button .world-icon{width:22px;height:22px;}.world-button{grid-template-columns:22px minmax(0,1fr);gap:4px;padding:5px;}}
+@media(max-width:760px){.single-choice .activity-token-image { width:95px; height:95px; }.activity-illustration { max-height:230px; }.graph-controls button { flex:1 1 40%; }.parent-activity label { display:flex; }.world-switcher { grid-template-columns:repeat(3,minmax(0,1fr)); }.world-button.expanded { min-height:52px; }.world-button strong { font-size:13px; }.world-button.expanded >span:not(.world-icon) {display:flex;flex-direction:column;align-items:flex-start;gap:2px;}.world-button .world-icon{width:22px;height:22px;}.world-button{grid-template-columns:22px minmax(0,1fr);gap:4px;padding:5px;}}
 
 [data-section="exploration"] .world-switcher {grid-template-columns:repeat(2,minmax(0,1fr));}
 [data-section="exploration"] .world-button {min-height:48px;grid-template-columns:23px minmax(0,1fr);padding:6px 4px;gap:3px;}
 [data-section="exploration"] .world-button .world-icon {width:23px;height:23px;}
-[data-section="exploration"] .world-button small {display:none;}
 [data-section="exploration"] .world-button >span:not(.world-icon) {display:flex;flex-direction:column;align-items:flex-start;gap:3px;}
 [data-section="exploration"] .world-button em {margin:0;}
+@media (min-width: 761px) {
+  [data-section="exploration"] .world-button.expanded {
+    grid-template-areas: "icon title" "icon count" "summary summary";
+  }
+  [data-section="exploration"] .world-button.expanded > span:not(.world-icon) { display: contents; }
+  [data-section="exploration"] .world-button.expanded .world-icon { grid-area: icon; }
+}
 @media(max-width:760px){[data-section="exploration"] .world-switcher {grid-template-columns:repeat(3,minmax(0,1fr));}.single-choice .activity-token-image {height:76px;width:90px;}.activity-illustration {max-height:180px;}}
 
 .single-choice .numeric-answer {display:grid;place-items:center;min-height:56px;font-size:28px;font-weight:750;}
@@ -3880,6 +3912,7 @@ button:focus-visible {
   .world-button strong { grid-column:1/-1;grid-row:1;white-space:normal; }
   .world-button .world-icon,.world-button.expanded .world-icon,.world-button.collapsed .world-icon { grid-column:1;grid-row:2;width:23px;height:23px; }
   .world-button em { grid-column:2;grid-row:2;justify-self:start; }
+  .world-button.expanded small { grid-area:3 / 1 / auto / -1; margin:0; }
 }
 @media(max-width:600px) {
   .visual-comparison { --comparison-dot-size:18px;--comparison-dot-gap:4px;gap:8px; }

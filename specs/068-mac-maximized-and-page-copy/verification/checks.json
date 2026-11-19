@@ -1,0 +1,211 @@
+{
+  "baseCommit": "9f7430b188ccac0c51a4a254b1c8c5550d3bb2e1",
+  "build": {
+    "indexSHA256": "9038bb2a4d87c51b3ebfc3827923c5a8d7dad7f34fe47f2cdea532d055771956",
+    "voiceManifestSHA256": "f03f8a2398630fb435c10974a7e2c64abbe4bce8bcad45093bdd8b5579a5381e"
+  },
+  "regressions": {
+    "nodeTestsPassed": 341,
+    "skipped": 0,
+    "desktopReleaseSubsetPassed": 12,
+    "groups": 118,
+    "rounds": 1122,
+    "voiceLines": 4499,
+    "voiceProvider": "edge-tts Python package",
+    "voiceFailures": 0,
+    "voiceInputsMatchPublished": true
+  },
+  "browser": {
+    "browser": "158.0.8127.36",
+    "results": [
+      {
+        "width": 1280,
+        "input": "mouse",
+        "summaries": {
+          "enlightenment": [
+            "数数、比较、分合、平均分与认钟表",
+            "规律、分类、先后顺序、方位与线索推理",
+            "影子轮廓、遮挡还原、叠合、密码与补缺口"
+          ],
+          "exploration": [
+            "数量结构、凑十数位、零钱、时间与日历",
+            "多维分类、条件排除、路线、翻牌与连桥",
+            "图形矩阵、对称旋转、折剪、拼搭与三视图",
+            "看后回忆、听记指令、声音节奏与专注搜索",
+            "词义故事、字音对应、英语听辨与日常对话",
+            "物品分类、自然生长、科学小实验与生活判断"
+          ]
+        },
+        "emptySearch": "cleared in both sections",
+        "englishMatches": [
+          "everyday-english-greetings",
+          "everyday-english-kind-words",
+          "everyday-english-asking"
+        ],
+        "observationStages": [
+          "play",
+          "record",
+          "complete"
+        ],
+        "comparisonPositions": [
+          [
+            320,
+            315
+          ],
+          [
+            645,
+            315
+          ]
+        ]
+      },
+      {
+        "width": 390,
+        "input": "touch",
+        "summaries": {
+          "enlightenment": [
+            "数数、比较、分合、平均分与认钟表",
+            "规律、分类、先后顺序、方位与线索推理",
+            "影子轮廓、遮挡还原、叠合、密码与补缺口"
+          ],
+          "exploration": [
+            "数量结构、凑十数位、零钱、时间与日历",
+            "多维分类、条件排除、路线、翻牌与连桥",
+            "图形矩阵、对称旋转、折剪、拼搭与三视图",
+            "看后回忆、听记指令、声音节奏与专注搜索",
+            "词义故事、字音对应、英语听辨与日常对话",
+            "物品分类、自然生长、科学小实验与生活判断"
+          ]
+        },
+        "emptySearch": "cleared in both sections",
+        "englishMatches": [
+          "everyday-english-greetings",
+          "everyday-english-kind-words",
+          "everyday-english-asking"
+        ],
+        "observationStages": [
+          "play",
+          "record",
+          "complete"
+        ],
+        "comparisonPositions": [
+          [
+            40,
+            358
+          ],
+          [
+            40,
+            530
+          ]
+        ]
+      }
+    ]
+  },
+  "otherSummaryWidths": [
+    {
+      "width": 320,
+      "summaries": 9
+    },
+    {
+      "width": 360,
+      "summaries": 9
+    },
+    {
+      "width": 760,
+      "summaries": 9
+    },
+    {
+      "width": 761,
+      "summaries": 9
+    },
+    {
+      "width": 1024,
+      "summaries": 9
+    },
+    {
+      "width": 1512,
+      "summaries": 9
+    }
+  ],
+  "priorBrowserSuites": {
+    "enlightenment": {
+      "originalSceneReopensPerViewport": 23,
+      "memoryRounds": 12,
+      "birdRounds": 12,
+      "partitionRounds": 12,
+      "localAudioStarts": 150
+    },
+    "exploration": [
+      {
+        "width": 1280,
+        "pictureRounds": 105,
+        "directOptionPreviews": 368,
+        "twoLayerConstructionAccepted": true,
+        "gridRestoredByOneUndo": true
+      },
+      {
+        "width": 390,
+        "pictureRounds": 105,
+        "directOptionPreviews": 368,
+        "twoLayerConstructionAccepted": true,
+        "gridRestoredByOneUndo": true
+      }
+    ]
+  },
+  "mac": {
+    "installedPath": "/Applications/小小思考屋.app",
+    "binarySHA256": "8000854449fa236b886d8c611341e4fd9e2eb0e6998a4083f4d3113384485625",
+    "matchesBuiltBinary": true,
+    "strictAdHocSignatureVerified": true,
+    "geometryPoints": {
+      "start": {
+        "AXFullScreen": false,
+        "matches": true,
+        "visibleFrame": [
+          0,
+          33,
+          1512,
+          871
+        ],
+        "window": [
+          0,
+          33,
+          1512,
+          871
+        ]
+      },
+      "restore": {
+        "AXFullScreen": false,
+        "matches": false,
+        "visibleFrame": [
+          0,
+          33,
+          1512,
+          871
+        ],
+        "window": [
+          116,
+          46,
+          1280,
+          820
+        ]
+      },
+      "remax": {
+        "AXFullScreen": false,
+        "matches": true,
+        "visibleFrame": [
+          0,
+          33,
+          1512,
+          871
+        ],
+        "window": [
+          0,
+          33,
+          1512,
+          871
+        ]
+      }
+    },
+    "nativeEmptySearchAndClear": true
+  }
+}

@@ -96,7 +96,7 @@ async function verifyWidth(browser, url, voices, width) {
       assert.ok(!(await toolbar.innerText()).includes(round.prompt), round.id);
       assert.equal(await page.locator('.answer-grid button').count(), 0);
     }
-    await hear(() => activate(button('从头来')), observe, 'reset');
+    await hear(() => activate(page.getByTestId('restart-game')), observe, 'reset');
     await activate(button('遮住再答'));
     await solve(camera.rounds[0]);
     await hear(() => activate(page.getByTestId('next-round')), observe, 'next');

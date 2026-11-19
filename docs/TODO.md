@@ -5,7 +5,7 @@ small enough to turn into a Spec Kit feature.
 
 ## P0
 
-- 在真实家庭和实体触屏设备上试玩 067 与 066。观察孩子能否独立放大选项、拿起拼板、来回切层、解释两条身高线索，以及在遮图后回忆整组和使用实际地图定位。记录年龄、所需提示与家长代点情况，继续复查 066 的左右位置和分类理由。[067 验收记录](../specs/067-curriculum-appeal-and-difficulty/verification.md) · [066 验收记录](../specs/066-curriculum-review-remediation/verification.md)
+- 在真实家庭和实体触屏设备上继续试玩 066–068。记录孩子在选题组、看图放大、拿起拼板及切层时需要哪些帮助，家长能否理解身高线索、使用地图定位并记录亲子观察。补充不同 Mac 屏幕与程序坞位置的窗口体验。[068 验收记录](../specs/068-mac-maximized-and-page-copy/verification.md) · [067 验收记录](../specs/067-curriculum-appeal-and-difficulty/verification.md) · [066 验收记录](../specs/066-curriculum-review-remediation/verification.md)
 
 
 

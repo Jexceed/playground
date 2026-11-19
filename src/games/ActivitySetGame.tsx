@@ -3,6 +3,7 @@ import { useEffect, useReducer, useRef, useState } from "react";
 import type { CSSProperties, PointerEvent as ReactPointerEvent } from "react";
 import {
   ACTIVITY_COPY,
+  activityHeadingLabel,
   activityPromptSpeech,
   activitySlots,
   activitySlotLabel,
@@ -77,7 +78,7 @@ export function ActivitySetGame(props: Props) {
       <header className="activity-game-heading">
         <div>
           <p className="eyebrow">
-            {props.game.interactionLabel === '亲子活动' ? props.game.interactionLabel : activity.stage ? ["", "先试一试", "多想一步", "组合挑战"][activity.stage] : props.game.interactionLabel} · 第 {index + 1} /{" "}
+            {activityHeadingLabel(props.game, activity)} · 第 {index + 1} /{" "}
             {props.game.rounds.length} 题
           </p>
           <h1>{props.game.title}</h1>
@@ -107,7 +108,7 @@ export function ActivitySetGame(props: Props) {
             ? "下一题"
             : allComplete
               ? "再玩一遍"
-              : "接着试一试"
+              : "补做未完成题"
         }
       />
     </section>
@@ -603,7 +604,7 @@ function ActivityRound({
           <strong>{activity.example.label}</strong>
         </div>
       )}
-      {assetError && <p role="alert">图卡没有加载好，请重新打开这个关卡。</p>}
+      {assetError && <p role="alert">图卡没有加载好，请重新选择这个题组试试。</p>}
       {!assetsReady && !assetError && <p className="muted">正在准备图卡…</p>}
       {state.phase === "ready" && !ruleMachine && (
         <div className="memory-stage memory-ready">
@@ -832,7 +833,7 @@ function ActivityRound({
               disabled={!canEdit}
               onClick={submit}
             >
-              {cardFlip ? RULE_PLAY_COPY.flipCheck : activity.kind === "parentObservation" ? parentMode === 'play' ? ACTIVITY_COPY.parentRecordNext : "记录这次活动" : activity.presentation?.pyramid ? ACTIVITY_COPY.checkPyramid : activity.kind === "multiSelect" || activity.kind === "singleChoice"
+              {cardFlip ? RULE_PLAY_COPY.flipCheck : activity.kind === "parentObservation" ? parentMode === 'play' ? ACTIVITY_COPY.parentRecordNext : "保存这次观察" : activity.presentation?.pyramid ? ACTIVITY_COPY.checkPyramid : activity.kind === "multiSelect" || activity.kind === "singleChoice"
                 ? "选好了，看看"
                 : "摆好了，看看"}
             </button>
@@ -841,9 +842,13 @@ function ActivityRound({
       </div>
       <footer className="activity-footer">
         <span>
-          这次尝试 {state.attempts} 次 · 提示 {state.hints} 次
-          {isMemory ? ` · ${isListening ? "重听" : "重看"} ${state.reveals} 次` : ""}
-          {state.checks > 0 ? ` · 中途检查 ${state.checks} 次` : ''}
+          {activity.kind === "parentObservation"
+            ? `亲子共玩观察${state.hints > 0 ? ` · 提示 ${state.hints} 次` : " · 不计对错，重在交流"}`
+            : <>
+                这次尝试 {state.attempts} 次 · 提示 {state.hints} 次
+                {isMemory ? ` · ${isListening ? "重听" : "重看"} ${state.reveals} 次` : ""}
+                {state.checks > 0 ? ` · 中途检查 ${state.checks} 次` : ''}
+              </>}
         </span>
         <button type="button" onClick={skip}>
           先跳过

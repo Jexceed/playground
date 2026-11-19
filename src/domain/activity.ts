@@ -133,6 +133,15 @@ export type ActivitySet = Omit<GameConfig, "kind" | "rounds"> & {
   interactionLabel: string;
 };
 export type CatalogGame = GameConfig | ActivitySet;
+
+export function activityHeadingLabel(game: ActivitySet, activity: Activity): string {
+  if (game.interactionLabel === "亲子活动") return game.interactionLabel;
+  if (game.interactionLabel === "看图与对话") {
+    return activity.kind === "parentObservation" ? "亲子对话" : "看图选句";
+  }
+  return activity.stage ? ["", "先试一试", "多想一步", "组合挑战"][activity.stage] : game.interactionLabel;
+}
+
 export type CatalogLocation = {
   schemaVersion: 1;
   worldId: WorldId;

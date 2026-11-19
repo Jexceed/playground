@@ -1,8 +1,19 @@
 import { curriculumSections, getCurriculumSection, type CurriculumSectionId } from "../curriculum/catalog";
-import type { CatalogLocation } from "../domain/activity";
-import type { LastPlayLocation } from "../types";
+import { activityHeadingLabel, type CatalogGame, type CatalogLocation } from "../domain/activity";
+import type { LastPlayLocation, WorldId } from "../types";
 
 export const CURRICULUM_NAVIGATION_KEY = "thinking-island-curriculum-navigation";
+
+export function filterWorldGames(games: CatalogGame[], world: WorldId, search: string): CatalogGame[] {
+  const term = search.trim();
+  return games.filter(game => {
+    if (game.world !== world) return false;
+    if (!term || [game.title, game.subtitle, game.goal].some(text => text.includes(term))) return true;
+    return game.kind === "activitySet" && (game.interactionLabel.includes(term)
+      || game.rounds.some(round => activityHeadingLabel(game, round).includes(term)));
+  });
+}
+
 type Store = Pick<Storage, "getItem" | "setItem">;
 export type CurriculumNavigation = {
   schemaVersion: 2;

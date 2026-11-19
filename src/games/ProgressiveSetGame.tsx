@@ -216,11 +216,11 @@ export function ProgressiveSetGame({
       <div className="round-toolbar">
         <div>
           <p className="eyebrow">
-            第 {roundIndex + 1} / {game.rounds.length} 题 ·{" "}
+            {game.title} · 第 {roundIndex + 1} / {game.rounds.length} 题 ·{" "}
             <span
               className="difficulty-badge"
-              title={`难度判定：${difficultyText(round)}`}
-              data-tooltip={`难度判定：${difficultyText(round)}`}
+              title={`这题练什么：${difficultyText(round)}`}
+              data-tooltip={`这题练什么：${difficultyText(round)}`}
               aria-label={`难度 ${round.level}，${difficultyText(round)}`}
               tabIndex={0}
             >
@@ -319,9 +319,9 @@ export function ProgressiveSetGame({
       </div>}
 
       {!showStoryScene && <div className="control-row">
-        <button type="button" onClick={resetGame}>
+        <button type="button" onClick={resetGame} data-testid="restart-game">
           <RotateCcw size={18} />
-          {handsOn ? "回第1题" : "从头来"}
+          回第 1 题
         </button>
         {!answered && (
           <button type="button" className="primary" disabled={handsOn ? !boardAttempt?.ready : !selected || !canAnswer} onClick={checkAnswer} data-testid="check-answer">
@@ -331,7 +331,7 @@ export function ProgressiveSetGame({
         {answered && (
           <button type="button" className="primary" disabled={!isCorrect} onClick={nextRound} data-testid="next-round"
             title={!completedOnce && nextIndex === null && nextGameTitle ? `下一组：${nextGameTitle}` : undefined}>
-            <span>{completedOnce ? "再玩一遍" : nextIndex !== null ? (isLastRound ? "去做还没完成的题" : "下一题") : nextGameTitle ? "下一组" : "完成关卡"}</span>
+            <span>{completedOnce ? "再玩一遍" : nextIndex !== null ? (isLastRound ? "去做还没完成的题" : "下一题") : nextGameTitle ? "下一组" : "完成本组"}</span>
             <ArrowRight size={18} />
           </button>
         )}
@@ -644,7 +644,7 @@ function ClockChallengeBoard({ challenge, hasSceneImage }: { challenge: NonNulla
       </div>
       {showContext && (
         <div className="clock-context-card">
-          <span>活动</span>
+          <span>生活场景</span>
           <strong>{challenge.activity}</strong>
         </div>
       )}
